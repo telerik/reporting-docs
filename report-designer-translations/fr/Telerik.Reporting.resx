@@ -1,0 +1,3069 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppearanceCategory" xml:space="preserve">
+    <value>Apparence</value>
+  </data>
+  <data name="BehaviorCategory" xml:space="preserve">
+    <value>Comportement</value>
+  </data>
+  <data name="DataCategory" xml:space="preserve">
+    <value>Données</value>
+  </data>
+  <data name="LayoutCategory" xml:space="preserve">
+    <value>Présentation</value>
+  </data>
+  <data name="StyleBackgroundColorDescr" xml:space="preserve">
+    <value>Couleur d'arrière-plan de l'élément.</value>
+  </data>
+  <data name="StyleColorDescr" xml:space="preserve">
+    <value>Couleur de premier plan utilisée pour afficher du texte et des graphismes dans l'élément.</value>
+  </data>
+  <data name="StyleBackgroundImageDescr" xml:space="preserve">
+    <value>Image d'arrière-plan utilisée pour l'élément de rapport.</value>
+  </data>
+  <data name="StyleBackgroundImageRepeat" xml:space="preserve">
+    <value>Motif répétitif pour l'image d'arrière-plan de l'élément de rapport.</value>
+  </data>
+  <data name="StyleBackgroundImageImageData" xml:space="preserve">
+    <value>Image affichée en tant qu'image d'arrière-plan.</value>
+  </data>
+  <data name="StyleBackgroundImageMIMEType" xml:space="preserve">
+    <value>Type MIME de l'image d'arrière-plan.</value>
+  </data>
+  <data name="StyleFontDescr" xml:space="preserve">
+    <value>La police utilisée pour afficher le texte.</value>
+  </data>
+  <data name="StyleFontNameDescr" xml:space="preserve">
+    <value>Nom de la police.</value>
+  </data>
+  <data name="StyleFontSizeDescr" xml:space="preserve">
+    <value>La taille en points de la police.</value>
+  </data>
+  <data name="StyleFontBoldDescr" xml:space="preserve">
+    <value>Spécifie si la police est en gras.</value>
+  </data>
+  <data name="StyleFontItalicDescr" xml:space="preserve">
+    <value>Spécifie si la police est en italique.</value>
+  </data>
+  <data name="StyleFontUnderlineDescr" xml:space="preserve">
+    <value>Spécifie si la police est soulignée.</value>
+  </data>
+  <data name="StyleFontStrikeoutDescr" xml:space="preserve">
+    <value>Spécifie si la police est barré.</value>
+  </data>
+  <data name="StyleFontStyleDescr" xml:space="preserve">
+    <value>Le style de la police.</value>
+  </data>
+  <data name="StyleBorderStyleDescr" xml:space="preserve">
+    <value>Style de bordure de l'élément.</value>
+  </data>
+  <data name="StyleDefaultBorderStyleDescr" xml:space="preserve">
+    <value>Style de bordure par défaut de l'élément.</value>
+  </data>
+  <data name="StyleTopBorderStyleDescr" xml:space="preserve">
+    <value>Le style de bordure supérieur de l'élément.</value>
+  </data>
+  <data name="StyleBottomBorderStyleDescr" xml:space="preserve">
+    <value>Le style de bordure inférieure de l'élément.</value>
+  </data>
+  <data name="StyleLeftBorderStyleDescr" xml:space="preserve">
+    <value>Style de bordure gauche de l'élément.</value>
+  </data>
+  <data name="StyleRightBorderStyleDescr" xml:space="preserve">
+    <value>Le style de bordure droit de l'élément.</value>
+  </data>
+  <data name="StyleBorderColorDescr" xml:space="preserve">
+    <value>Couleur de la bordure de l'élément.</value>
+  </data>
+  <data name="StyleDefaultBorderColorDescr" xml:space="preserve">
+    <value>Couleur de bordure par défaut de l'élément.</value>
+  </data>
+  <data name="StyleTopBorderColorDescr" xml:space="preserve">
+    <value>La couleur de bordure supérieure de l'élément.</value>
+  </data>
+  <data name="StyleBottomBorderColorDescr" xml:space="preserve">
+    <value>La couleur de bordure inférieure de l'élément.</value>
+  </data>
+  <data name="StyleLeftBorderColorDescr" xml:space="preserve">
+    <value>La couleur de bordure gauche de l'élément.</value>
+  </data>
+  <data name="StyleRightBorderColorDescr" xml:space="preserve">
+    <value>La couleur de bordure droite de l'élément.</value>
+  </data>
+  <data name="StyleBorderWidthDescr" xml:space="preserve">
+    <value>Largeur de bordure de l'élément.</value>
+  </data>
+  <data name="StyleDefaultBorderWidthDescr" xml:space="preserve">
+    <value>Largeur de bordure par défaut de l'élément.</value>
+  </data>
+  <data name="StyleTopBorderWidthDescr" xml:space="preserve">
+    <value>Largeur de bordure supérieure de l'élément.</value>
+  </data>
+  <data name="StyleBottomBorderWidthDescr" xml:space="preserve">
+    <value>Largeur de bordure inférieure de l'élément.</value>
+  </data>
+  <data name="StyleLeftBorderWidthDescr" xml:space="preserve">
+    <value>Largeur de bordure gauche de l'élément.</value>
+  </data>
+  <data name="StyleRightBorderWidthDescr" xml:space="preserve">
+    <value>Largeur de bordure droite de l'élément.</value>
+  </data>
+  <data name="StyleTextAlignDescr" xml:space="preserve">
+    <value>L'alignement horizontal du texte.</value>
+  </data>
+  <data name="StyleVerticalAlignDescr" xml:space="preserve">
+    <value>L'alignement vertical du texte.</value>
+  </data>
+  <data name="StylePaddingDescr" xml:space="preserve">
+    <value>La quantité de remplissage dans l'objet.</value>
+  </data>
+  <data name="StyleLeftPaddingDescr" xml:space="preserve">
+    <value>La quantité de rembourrage sur la gauche.</value>
+  </data>
+  <data name="StyleRightPaddingDescr" xml:space="preserve">
+    <value>La quantité de rembourrage sur la droite.</value>
+  </data>
+  <data name="StyleTopPaddingDescr" xml:space="preserve">
+    <value>La quantité de rembourrage sur le dessus.</value>
+  </data>
+  <data name="StyleBottomPaddingDescr" xml:space="preserve">
+    <value>La quantité de rembourrage sur le fond.</value>
+  </data>
+  <data name="StyleLineStyleDescr" xml:space="preserve">
+    <value>Style de ligne utilisé pour dessiner des formes.</value>
+  </data>
+  <data name="StyleLineWidthDescr" xml:space="preserve">
+    <value>Largeur de ligne utilisée pour dessiner des formes.</value>
+  </data>
+  <data name="ReportItemBaseVisibleDescr" xml:space="preserve">
+    <value>Indique si l'élément doit être masqué.</value>
+  </data>
+  <data name="ReportItemBaseParentDescr" xml:space="preserve">
+    <value>Nom de l'élément de rapport contenant.</value>
+  </data>
+  <data name="ReportItemBaseStyleNameDescr" xml:space="preserve">
+    <value>Le nom du style utilisé pour décorer l'article.</value>
+  </data>
+  <data name="ReportSectionBaseSizeDescr" xml:space="preserve">
+    <value>Taille de la section de rapport.</value>
+  </data>
+  <data name="ReportSectionPageBreakDescr" xml:space="preserve">
+    <value>Spécifie où faire un saut de page à l'égard de cette section.</value>
+  </data>
+  <data name="ReportSectionKeepTogetherDescr" xml:space="preserve">
+    <value>Spécifie que la section doit être maintenue ensemble sur une page si possible.</value>
+  </data>
+  <data name="ReportItemLocationDescr" xml:space="preserve">
+    <value>Position du coin supérieur gauche de l'élément de rapport par rapport à son conteneur.</value>
+  </data>
+  <data name="ReportItemSizeDescr" xml:space="preserve">
+    <value>Taille de l'élément de rapport.</value>
+  </data>
+  <data name="ReportItemAnchoringDescr" xml:space="preserve">
+    <value>Définit les bords du conteneur auquel un certain élément de rapport est lié. Lorsqu'un élément de rapport est ancré à un bord, la distance entre le bord le plus proche de l'élément et le bord spécifié restera constante.</value>
+  </data>
+  <data name="ReportItemDockingDescr" xml:space="preserve">
+    <value>Définit les bordures de l'élément de rapport liées au conteneur.</value>
+  </data>
+  <data name="DataBoundReportItemDataFieldDescr" xml:space="preserve">
+    <value>Nom de champ de la source de données à lier à l'élément.</value>
+  </data>
+  <data name="DataBoundReportItemFormatDescr" xml:space="preserve">
+    <value>La chaîne de mise en forme.</value>
+  </data>
+  <data name="TextBoxCanGrowDescr" xml:space="preserve">
+    <value>Détermine si une zone de texte est automatiquement redimensionnée pour tenir compte d'une longue valeur.</value>
+  </data>
+  <data name="TextBoxCanShrinkDescr" xml:space="preserve">
+    <value>Détermine si une zone de texte rétrécit pour s'adapter à une valeur plus petite.</value>
+  </data>
+  <data name="TextBoxMultilineDescr" xml:space="preserve">
+    <value>Valeur qui spécifie si les retours chariot (CRLF) stockés dans le texte d'une zone de texte doivent être traités.</value>
+  </data>
+  <data name="TextBoxValueDescr" xml:space="preserve">
+    <value>Valeur associée à la zone de texte.</value>
+  </data>
+  <data name="TextBoxWordWrapDescr" xml:space="preserve">
+    <value>Indique si une zone de texte encapsule automatiquement les mots au début de la ligne suivante si nécessaire.</value>
+  </data>
+  <data name="TextBoxTextDirectionDescr" xml:space="preserve">
+    <value>Indique si le texte est écrit de gauche à droite ou de droite à gauche.</value>
+  </data>
+  <data name="TextBoxCultureDescr" xml:space="preserve">
+    <value>Obtient ou définit les informations de culture associées à la zone de texte.</value>
+  </data>
+  <data name="ReportCultureDescr" xml:space="preserve">
+    <value>Obtient ou définit les informations de culture associées au rapport.</value>
+  </data>
+  <data name="ReportUnitOfMeasureDescr" xml:space="preserve">
+    <value>Unité de mesure par défaut du rapport.</value>
+  </data>
+  <data name="ReportPageSettingsDescr" xml:space="preserve">
+    <value>Les paramètres de page par défaut du rapport.</value>
+  </data>
+  <data name="ReportGlobalStylesDescr" xml:space="preserve">
+    <value>Collection de styles défini globalement pour le rapport.</value>
+  </data>
+  <data name="ReportWatermarkDescr" xml:space="preserve">
+    <value>Objet Watermark du rapport.</value>
+  </data>
+  <data name="ReportDataSourceDescr" xml:space="preserve">
+    <value>Source de données principale du rapport.</value>
+  </data>
+  <data name="ReportDataMemberDescr" xml:space="preserve">
+    <value>La liste spécifique dans la source de données à laquelle les éléments de section de rapport ou de détail affichent des données.</value>
+  </data>
+  <data name="ReportDataAdapterDescr" xml:space="preserve">
+    <value>Objet de l'adaptateur de données utilisé pour remplir la source de données principale du rapport.</value>
+  </data>
+  <data name="PageHeaderFooterPrintOnFirstPageDescr" xml:space="preserve">
+    <value>Spécifie si la section sera imprimée sur la première page du rapport.</value>
+  </data>
+  <data name="PageHeaderFooterPrintOnLastPageDescr" xml:space="preserve">
+    <value>Spécifie si la section sera imprimée sur la dernière page du rapport.</value>
+  </data>
+  <data name="GroupHeaderFooterPrintOnEveryPageDescr" xml:space="preserve">
+    <value>Spécifie si la section de groupe sera imprimée uniquement sur la première page sur laquelle le groupe apparaît sur ou sur chaque page sur laquelle le groupe est imprimé.</value>
+  </data>
+  <data name="GroupHeaderGroupFooterDescr" xml:space="preserve">
+    <value>Pied de page de groupe associé à cet en-tête de groupe.</value>
+  </data>
+  <data name="GroupHeaderPositionDescr" xml:space="preserve">
+    <value>La position de l'en-tête de groupe--haut, gauche ou droite.</value>
+  </data>
+  <data name="GroupHeaderGroupKeepTogetherDescr" xml:space="preserve">
+    <value>Spécifie si l'en-tête de groupe et son pied de page seront imprimés sous la forme d'un seul bloc, si possible.</value>
+  </data>
+  <data name="GroupHeaderGroupFieldsDescr" xml:space="preserve">
+    <value>Collection d'objets de champ de groupe utilisés comme critères de création de groupes dans le rapport.</value>
+  </data>
+  <data name="GroupFooterGroupHeaderDescr" xml:space="preserve">
+    <value>En-tête de groupe associé à ce pied de page de groupe.</value>
+  </data>
+  <data name="SectionPrintAtBottomDescr" xml:space="preserve">
+    <value>Spécifie si la section doit être imprimée en bas de la page.</value>
+  </data>
+  <data name="PictureBoxSizingDescr" xml:space="preserve">
+    <value>L'apparence de l'image si elle n'est pas conforme à la taille spécifiée.</value>
+  </data>
+  <data name="PictureBoxImageDataDescr" xml:space="preserve">
+    <value>Image affichée par cet élément.</value>
+  </data>
+  <data name="PictureBoxMimeTypeDescr" xml:space="preserve">
+    <value>Obtient ou définit une chaîne qui contient le type MIME (Multipurpose Internet Mail Extensions) de l'image.</value>
+  </data>
+  <data name="ReportItemBaseStyleDescr" xml:space="preserve">
+    <value>Le style de l'élément.</value>
+  </data>
+  <data name="LinePoint1Descr" xml:space="preserve">
+    <value>Point de départ de la ligne.</value>
+  </data>
+  <data name="LinePoint2Descr" xml:space="preserve">
+    <value>Point de fin de la ligne.</value>
+  </data>
+  <data name="Shape_Angle_Description" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="Shape_ShapeType_Description" xml:space="preserve">
+    <value>Forme</value>
+  </data>
+  <data name="Shape_Stretch_Description" xml:space="preserve">
+    <value>Étirer</value>
+  </data>
+  <data name="BackslantLineShapeName" xml:space="preserve">
+    <value>Ligne oblique</value>
+  </data>
+  <data name="BottomArrowShapeName" xml:space="preserve">
+    <value>Flèche inférieure</value>
+  </data>
+  <data name="CrossShapeName" xml:space="preserve">
+    <value>Croix</value>
+  </data>
+  <data name="EllipseShapeName" xml:space="preserve">
+    <value>Ellipse</value>
+  </data>
+  <data name="HexagonShapeName" xml:space="preserve">
+    <value>Hexagone</value>
+  </data>
+  <data name="HorizonatalLineShapeName" xml:space="preserve">
+    <value>Ligne horizontale</value>
+  </data>
+  <data name="LeftArrowShapeName" xml:space="preserve">
+    <value>Flèche gauche</value>
+  </data>
+  <data name="NRayStarShapeName" xml:space="preserve">
+    <value>{0}-Ray Star</value>
+  </data>
+  <data name="OctagonShapeName" xml:space="preserve">
+    <value>Octogone</value>
+  </data>
+  <data name="PentagonShapeName" xml:space="preserve">
+    <value>Pentagone</value>
+  </data>
+  <data name="PolygonShapeName" xml:space="preserve">
+    <value>{0}-Gon</value>
+  </data>
+  <data name="RightArrowShapeName" xml:space="preserve">
+    <value>Flèche droite</value>
+  </data>
+  <data name="SlantLineShapeName" xml:space="preserve">
+    <value>Ligne oblique</value>
+  </data>
+  <data name="SquareShapeName" xml:space="preserve">
+    <value>Carré</value>
+  </data>
+  <data name="TopArrowShapeName" xml:space="preserve">
+    <value>Flèche supérieure</value>
+  </data>
+  <data name="TriangleShapeName" xml:space="preserve">
+    <value>Triangle</value>
+  </data>
+  <data name="VerticalLineShapeName" xml:space="preserve">
+    <value>Ligne verticale</value>
+  </data>
+  <data name="ReportSectionHeightDescr" xml:space="preserve">
+    <value>Hauteur de la section de rapport.</value>
+  </data>
+  <data name="ReportWidthDescr" xml:space="preserve">
+    <value>La largeur du rapport.</value>
+  </data>
+  <data name="StyleSheetExportButtonText" xml:space="preserve">
+    <value>&amp;Exportation</value>
+  </data>
+  <data name="ElementCategory" xml:space="preserve">
+    <value>Éléments</value>
+  </data>
+  <data name="SettingCategory" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="ChartAppearanceDescr" xml:space="preserve">
+    <value>Paramètres visuels du graphique.</value>
+  </data>
+  <data name="ChartCustomPalettesDescr" xml:space="preserve">
+    <value>Spécifie les palettes personnalisées pour le graphique.</value>
+  </data>
+  <data name="ChartDataGroupColumnDescr" xml:space="preserve">
+    <value>Nom de la colonne de source de données (membre) qui sera utilisée pour fractionner des valeurs Y d'une colonne en plusieurs séries de graphiques.</value>
+  </data>
+  <data name="ChartDefaultTypeDescr" xml:space="preserve">
+    <value>Spécifie le type par défaut de la série de données.</value>
+  </data>
+  <data name="ChartImageFormatDescr" xml:space="preserve">
+    <value>Spécifie le format d'image dans lequel l'image est diffusée en continu.</value>
+  </data>
+  <data name="ChartLegendDescr" xml:space="preserve">
+    <value>Paramètres de légende.</value>
+  </data>
+  <data name="ChartPlotAreasDescr" xml:space="preserve">
+    <value>Spécifie la zone de traçage du graphique.</value>
+  </data>
+  <data name="ChartSeriesDescr" xml:space="preserve">
+    <value>Collection Series.</value>
+  </data>
+  <data name="ChartSeriesOrientationDescr" xml:space="preserve">
+    <value>Spécifie l'orientation de la série de graphiques sur la zone de traçage.</value>
+  </data>
+  <data name="ChartTitleDescr" xml:space="preserve">
+    <value>Titre du graphique.</value>
+  </data>
+  <data name="FiltersDescription" xml:space="preserve">
+    <value>Collection de filtres pour restreindre les données.</value>
+  </data>
+  <data name="GroupingDescription" xml:space="preserve">
+    <value>Collection d'expressions de regroupement permettant de regrouper les données.</value>
+  </data>
+  <data name="GroupsDescription" xml:space="preserve">
+    <value>Collection de groupes.</value>
+  </data>
+  <data name="ReportParametersDescription" xml:space="preserve">
+    <value>Collection de paramètres dans le rapport.</value>
+  </data>
+  <data name="SortingDescription" xml:space="preserve">
+    <value>Collection d'expressions de tri pour trier les données.</value>
+  </data>
+  <data name="ReportDocumentNameDescription" xml:space="preserve">
+    <value>Spécifie un nom de fichier lors de l'exportation du rapport vers l'un des formats d'exportation disponibles. Spécifie le nom du nœud racine dans le mappage de document.</value>
+  </data>
+  <data name="ReportPageNumberingStyleDescription" xml:space="preserve">
+    <value>Le style de numérotation de page pour le rapport..</value>
+  </data>
+  <data name="BarcodeAlignDescr" xml:space="preserve">
+    <value>Spécifie l'alignement horizontal du code-barres.</value>
+  </data>
+  <data name="BarcodeModuleDescr" xml:space="preserve">
+    <value>Spécifie la largeur de la barre la plus étroite du code-barres.</value>
+  </data>
+  <data name="DotsPerInchDescr" xml:space="preserve">
+    <value>Spécifie la résolution en points par pouce.</value>
+  </data>
+  <data name="BarcodeShowTextDescr" xml:space="preserve">
+    <value>Spécifie si le code-barres doit afficher un texte.</value>
+  </data>
+  <data name="BarcodeValueDescr" xml:space="preserve">
+    <value>Spécifie la valeur associée au code-barres.</value>
+  </data>
+  <data name="BarcodeAngleDescr" xml:space="preserve">
+    <value>Spécifie l'angle de rotation du code-barres en degrés.</value>
+  </data>
+  <data name="BarcodeStretchDescr" xml:space="preserve">
+    <value>Spécifie s'il faut étirer le code-barres horizontalement.</value>
+  </data>
+  <data name="BarcodeSymbologyDescr" xml:space="preserve">
+    <value>Spécifie la symbologie actuelle du code-barres.</value>
+  </data>
+  <data name="BarcodeChecksumDescr" xml:space="preserve">
+    <value>Spécifie s'il faut calculer une somme de contrôle pour le code-barres.</value>
+  </data>
+  <data name="CheckBoxValueDescr" xml:space="preserve">
+    <value>La valeur associée à la case à cocher.</value>
+  </data>
+  <data name="CheckBoxTrueValueDescr" xml:space="preserve">
+    <value>Le modèle de valeur correspondant à une case à cocher cochée.</value>
+  </data>
+  <data name="CheckBoxFalseValueDescr" xml:space="preserve">
+    <value>Le modèle de valeur correspondant à une case à cocher non cochée.</value>
+  </data>
+  <data name="CheckBoxIndeterminateValueDescr" xml:space="preserve">
+    <value>Le modèle de valeur correspondant à une case à cocher indéterminée.</value>
+  </data>
+  <data name="CheckBoxCheckedImageDescr" xml:space="preserve">
+    <value>L'image correspondant à une case à cocher cochée.</value>
+  </data>
+  <data name="CheckBoxUncheckedImageDescr" xml:space="preserve">
+    <value>L'image correspondant à une case à cocher non cochée.</value>
+  </data>
+  <data name="CheckBoxIndeterminateImageDescr" xml:space="preserve">
+    <value>L'image correspondant à une case à cocher indéterminée.</value>
+  </data>
+  <data name="CheckBoxTextDescr" xml:space="preserve">
+    <value>Le texte associé à la case à cocher.</value>
+  </data>
+  <data name="CheckBoxCheckAlignDescr" xml:space="preserve">
+    <value>L'alignement de la coche sur une case à cocher.</value>
+  </data>
+  <data name="TextItemBaseCanGrowDescr" xml:space="preserve">
+    <value>Détermine si un élément de texte est automatiquement redimensionné pour tenir compte d'une longue valeur.</value>
+  </data>
+  <data name="TextItemBaseCanShrinkDescr" xml:space="preserve">
+    <value>Détermine si un élément de texte rétrécit pour s'adapter à une valeur plus petite.</value>
+  </data>
+  <data name="TextItemBaseMultilineDescr" xml:space="preserve">
+    <value>Valeur qui spécifie si les retours chariot (CRLF) stockés dans le texte d'un élément de texte doivent être traités.</value>
+  </data>
+  <data name="TextItemBaseWordWrapDescr" xml:space="preserve">
+    <value>Indique si un élément de texte encapsule automatiquement les mots au début de la ligne suivante si nécessaire.</value>
+  </data>
+  <data name="TextItemBaseTextDirectionDescr" xml:space="preserve">
+    <value>Indique si le texte est écrit de gauche à droite ou de droite à gauche.</value>
+  </data>
+  <data name="TextItemBaseCultureDescr" xml:space="preserve">
+    <value>Obtient ou définit les informations de culture associées à l'élément de texte.</value>
+  </data>
+  <data name="ReportItemKeepTogetherDescr" xml:space="preserve">
+    <value>Spécifie que l'élément doit être conservé sur une même page si possible.</value>
+  </data>
+  <data name="InteractivityCategory" xml:space="preserve">
+    <value>Interactivité</value>
+  </data>
+  <data name="ReportItemBaseActionDescr" xml:space="preserve">
+    <value>Obtient ou définit une action interactive associée à cet élément de rapport.</value>
+  </data>
+  <data name="ReportItemBaseBookmarkIdDescr" xml:space="preserve">
+    <value>Obtient ou définit un ID de signet pour cet élément.</value>
+  </data>
+  <data name="ReportItemBaseDocumentMapTextDescr" xml:space="preserve">
+    <value>Obtient ou définit un texte à afficher pour cet élément dans le mappage de document.</value>
+  </data>
+  <data name="ReportItemBaseTocTextDescr" xml:space="preserve">
+    <value>Obtient ou définit un texte à afficher pour cet élément dans la table des matières.</value>
+  </data>
+  <data name="ReportItemBaseToolTipDescr" xml:space="preserve">
+    <value>Obtient ou définit l'info-bulle à afficher pour cet élément lorsqu'il est plané.</value>
+  </data>
+  <data name="ChartSkinDescr" xml:space="preserve">
+    <value>Obtient ou définit le nom de la peau du graphique.</value>
+  </data>
+  <data name="NoDataCategory" xml:space="preserve">
+    <value>Pas de données</value>
+  </data>
+  <data name="NoDataMessageDesc" xml:space="preserve">
+    <value>Le message No Data</value>
+  </data>
+  <data name="NoDataStyleDescr" xml:space="preserve">
+    <value>Le style de message sans données</value>
+  </data>
+  <data name="MapLegendPositionDescr" xml:space="preserve">
+    <value>Spécifie la position de la légende de mappage.</value>
+  </data>
+  <data name="MapTitlePositionDescr" xml:space="preserve">
+    <value>Spécifie la position du titre de la carte.</value>
+  </data>
+  <data name="MapTitleTextDescr" xml:space="preserve">
+    <value>Spécifie le texte du titre de la carte.</value>
+  </data>
+  <data name="ReportSectionWidthDescr" xml:space="preserve">
+    <value>La largeur des sections de rapport.</value>
+  </data>
+  <data name="BarcodeEncoderDescr" xml:space="preserve">
+    <value>Spécifie l'encodeur pour la valeur du code-barres</value>
+  </data>
+  <data name="StyleLineColorDescr" xml:space="preserve">
+    <value>Couleur de ligne (Stroke) utilisée pour dessiner des formes.</value>
+  </data>
+  <data name="ContainerCanShrinkDesc" xml:space="preserve">
+    <value>Indique si le conteneur encapsule automatiquement l'élément enfant si l'élément est réduit ou masqué.</value>
+  </data>
+  <data name="ReportItemBaseAccessibleDescr" xml:space="preserve">
+    <value>Obtient ou définit la description accessible pour l'élément de rapport actuel.</value>
+  </data>
+  <data name="AnchoringStyles_Bottom_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré au bord inférieur de son conteneur.</value>
+  </data>
+  <data name="AnchoringStyles_Description" xml:space="preserve">
+    <value>Spécifie comment un élément de rapport Telerik signale des ancres aux bords de son conteneur.</value>
+  </data>
+  <data name="AnchoringStyles_Left_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré sur le bord gauche de son conteneur.</value>
+  </data>
+  <data name="AnchoringStyles_None_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik n'est ancré à aucun bord de son conteneur.</value>
+  </data>
+  <data name="AnchoringStyles_Right_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré sur le bord droit de son conteneur.</value>
+  </data>
+  <data name="AnchoringStyles_Top_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré au bord supérieur de son conteneur.</value>
+  </data>
+  <data name="BackgroundRepeat_Description" xml:space="preserve">
+    <value>Indique comment une image d'arrière-plan sera répétée.</value>
+  </data>
+  <data name="BackgroundRepeat_NoRepeat_Description" xml:space="preserve">
+    <value>L'image d'arrière-plan ne sera affichée qu'une seule fois.</value>
+  </data>
+  <data name="BackgroundRepeat_RepeatX_Description" xml:space="preserve">
+    <value>L'image d'arrière-plan sera répétée horizontalement.</value>
+  </data>
+  <data name="BackgroundRepeat_RepeatY_Description" xml:space="preserve">
+    <value>L'image d'arrière-plan sera répétée verticalement.</value>
+  </data>
+  <data name="BackgroundRepeat_Repeat_Description" xml:space="preserve">
+    <value>L'image d'arrière-plan sera répétée verticalement et horizontalement.</value>
+  </data>
+  <data name="Barcode_Description" xml:space="preserve">
+    <value>Représente un élément de rapport de code-barres.</value>
+  </data>
+  <data name="BorderType_Dashed_Description" xml:space="preserve">
+    <value>Une ligne pointillée.</value>
+  </data>
+  <data name="BorderType_Description" xml:space="preserve">
+    <value>Spécifie le type d'une bordure.</value>
+  </data>
+  <data name="BorderType_Dotted_Description" xml:space="preserve">
+    <value>Une ligne pointillée.</value>
+  </data>
+  <data name="BorderType_Double_Description" xml:space="preserve">
+    <value>Une double ligne solide.</value>
+  </data>
+  <data name="BorderType_Groove_Description" xml:space="preserve">
+    <value>Une ligne rainurée pour une apparence de bordure enfoncée.</value>
+  </data>
+  <data name="BorderType_Inset_Description" xml:space="preserve">
+    <value>Une ligne encastrée pour une apparence d'élément coulé.</value>
+  </data>
+  <data name="BorderType_None_Description" xml:space="preserve">
+    <value>Pas de ligne.</value>
+  </data>
+  <data name="BorderType_Outset_Description" xml:space="preserve">
+    <value>Une ligne d'origine pour une apparence d'élément augmentée.</value>
+  </data>
+  <data name="BorderType_Ridge_Description" xml:space="preserve">
+    <value>Une ligne striée pour une apparence de bordure surélevée.</value>
+  </data>
+  <data name="BorderType_Solid_Description" xml:space="preserve">
+    <value>Une ligne solide.</value>
+  </data>
+  <data name="DockingStyle_Bottom_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré au bord inférieur de son conteneur.</value>
+  </data>
+  <data name="DockingStyle_Description" xml:space="preserve">
+    <value>Spécifie comment un Telerik signalant des docks d'élément de rapport aux bords de son conteneur.</value>
+  </data>
+  <data name="DockingStyle_Fill_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré sur toutes les arêtes de son conteneur.</value>
+  </data>
+  <data name="DockingStyle_Left_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré sur le bord gauche de son conteneur.</value>
+  </data>
+  <data name="DockingStyle_None_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik n'est pas ancré à n'importe quel bord de son conteneur.</value>
+  </data>
+  <data name="DockingStyle_Right_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré sur le bord droit de son conteneur.</value>
+  </data>
+  <data name="DockingStyle_Top_Description" xml:space="preserve">
+    <value>L'élément de rapport Telerik Reporting est ancré au bord supérieur de son conteneur.</value>
+  </data>
+  <data name="FilterOperator_BottomN_Description" xml:space="preserve">
+    <value>Bas N</value>
+  </data>
+  <data name="FilterOperator_BottomPercent_Description" xml:space="preserve">
+    <value>Bas%</value>
+  </data>
+  <data name="FilterOperator_Description" xml:space="preserve">
+    <value>Opérateur de filtre</value>
+  </data>
+  <data name="FilterOperator_Equal_Description" xml:space="preserve">
+    <value>=</value>
+  </data>
+  <data name="FilterOperator_GreaterOrEqual_Description" xml:space="preserve">
+    <value>&gt;=</value>
+  </data>
+  <data name="FilterOperator_GreaterThan_Description" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="FilterOperator_In_Description" xml:space="preserve">
+    <value>Dans</value>
+  </data>
+  <data name="FilterOperator_LessOrEqual_Description" xml:space="preserve">
+    <value>&lt;=</value>
+  </data>
+  <data name="FilterOperator_LessThan_Description" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="FilterOperator_Like_Description" xml:space="preserve">
+    <value>Comme</value>
+  </data>
+  <data name="FilterOperator_NotEqual_Description" xml:space="preserve">
+    <value>&lt;&gt;</value>
+  </data>
+  <data name="FilterOperator_NotLike_Description" xml:space="preserve">
+    <value>Pas comme</value>
+  </data>
+  <data name="FilterOperator_TopN_Description" xml:space="preserve">
+    <value>Top N</value>
+  </data>
+  <data name="FilterOperator_TopPercent_Description" xml:space="preserve">
+    <value>Haut%</value>
+  </data>
+  <data name="HorizontalAlign_Center_Description" xml:space="preserve">
+    <value>Spécifie que le texte est aligné sur le centre.</value>
+  </data>
+  <data name="HorizontalAlign_Description" xml:space="preserve">
+    <value>Spécifie l'alignement horizontal du texte dans un élément de rapport.</value>
+  </data>
+  <data name="HorizontalAlign_Justify_Description" xml:space="preserve">
+    <value>Spécifie que le texte est justifié.</value>
+  </data>
+  <data name="HorizontalAlign_Left_Description" xml:space="preserve">
+    <value>Spécifie que le texte est aligné vers la gauche.</value>
+  </data>
+  <data name="HorizontalAlign_Right_Description" xml:space="preserve">
+    <value>Spécifie que le texte est aligné vers la droite.</value>
+  </data>
+  <data name="ImageSizeMode_AutoSize_Description" xml:space="preserve">
+    <value>Agrandit ou rétrécit les bordures de l'élément image pour l'adapter à l'image.</value>
+  </data>
+  <data name="ImageSizeMode_Center_Description" xml:space="preserve">
+    <value>L'image est affichée au centre de l'élément. Si l'image est plus grande que l'élément, l'image est écrêtée.</value>
+  </data>
+  <data name="ImageSizeMode_Description" xml:space="preserve">
+    <value>Spécifie comment une image est positionnée dans un élément.</value>
+  </data>
+  <data name="ImageSizeMode_Normal_Description" xml:space="preserve">
+    <value>Agrafe l'image pour ajuster la hauteur et la largeur de l'élément.</value>
+  </data>
+  <data name="ImageSizeMode_ScaleProportional_Description" xml:space="preserve">
+    <value>Redimensionne l'image pour qu'elle corresponde à la hauteur et à la largeur de l'élément, en préservant le rapport d'aspect.</value>
+  </data>
+  <data name="ImageSizeMode_Stretch_Description" xml:space="preserve">
+    <value>Redimensionne l'image pour qu'elle corresponde à la hauteur et à la largeur de l'élément.</value>
+  </data>
+  <data name="LineStyle_Dashed_Description" xml:space="preserve">
+    <value>Une ligne pointillée.</value>
+  </data>
+  <data name="LineStyle_Description" xml:space="preserve">
+    <value>Spécifie le type d'un élément de ligne</value>
+  </data>
+  <data name="LineStyle_Dotted_Description" xml:space="preserve">
+    <value>Une ligne pointillée.</value>
+  </data>
+  <data name="LineStyle_Solid_Description" xml:space="preserve">
+    <value>Une ligne solide.</value>
+  </data>
+  <data name="UnitType_Cm_Description" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="UnitType_Description" xml:space="preserve">
+    <value>Type d'unité</value>
+  </data>
+  <data name="UnitType_Inch_Description" xml:space="preserve">
+    <value>dans</value>
+  </data>
+  <data name="UnitType_Mm_Description" xml:space="preserve">
+    <value>mm</value>
+  </data>
+  <data name="UnitType_Pica_Description" xml:space="preserve">
+    <value>PC</value>
+  </data>
+  <data name="UnitType_Pixel_Description" xml:space="preserve">
+    <value>px</value>
+  </data>
+  <data name="UnitType_Point_Description" xml:space="preserve">
+    <value>PT</value>
+  </data>
+  <data name="VerticalAlign_Bottom_Description" xml:space="preserve">
+    <value>Spécifie que l'objet est aligné vers le bas.</value>
+  </data>
+  <data name="VerticalAlign_Description" xml:space="preserve">
+    <value>Spécifie l'alignement vertical d'un objet ou d'un texte dans un élément de rapport.</value>
+  </data>
+  <data name="VerticalAlign_Middle_Description" xml:space="preserve">
+    <value>Spécifie que l'objet est aligné au milieu.</value>
+  </data>
+  <data name="VerticalAlign_Top_Description" xml:space="preserve">
+    <value>Spécifie que l'objet est aligné vers le haut.</value>
+  </data>
+  <data name="Binding_Expression_Description" xml:space="preserve">
+    <value>Obtient ou définit l'expression utilisée pour évaluer la valeur de la propriété cible spécifiée</value>
+  </data>
+  <data name="Binding_Path_Description" xml:space="preserve">
+    <value>Obtient ou définit le chemin de propriété déterminant la propriété simple/imbriquée liée à l'élément</value>
+  </data>
+  <data name="Checkbox_Description" xml:space="preserve">
+    <value>Représente un élément de rapport de case à cocher.</value>
+  </data>
+  <data name="AreaSeries_AreaStyle_Description" xml:space="preserve">
+    <value>Le style appliqué à la zone définie par les points de données de cette série.</value>
+  </data>
+  <data name="AreaSeries_ConditionalFormatting_Description" xml:space="preserve">
+    <value>Détermine les règles de mise en forme conditionnelle qui sont appliquées sur le style de la série.</value>
+  </data>
+  <data name="AreaSeries_LineType_Description" xml:space="preserve">
+    <value>Utilisez des lignes lisses, droites ou étagées pour relier les points de données.</value>
+  </data>
+  <data name="AreaSeries_MarkerSize_Description" xml:space="preserve">
+    <value>Taille des marqueurs pour les points de données.</value>
+  </data>
+  <data name="AreaSeries_MarkerType_Description" xml:space="preserve">
+    <value>Type des marqueurs pour les points de données.</value>
+  </data>
+  <data name="AreaSeries_X0_Description" xml:space="preserve">
+    <value>La coordonnée x0 (système de coordonnées cartésien) ou Angular0 (repère polaire).</value>
+  </data>
+  <data name="AreaSeries_Y0_Description" xml:space="preserve">
+    <value>Coordonnée Y0 (système de coordonnées cartésien) ou Radial0 (repère polaire).</value>
+  </data>
+  <data name="BarSeries_DataPointLabelAlignment_Description" xml:space="preserve">
+    <value>Spécifie l'alignement de l'étiquette du point de données.</value>
+  </data>
+  <data name="BarSeries_DataPointLabelConnectorConditionalFormatting_Description" xml:space="preserve">
+    <value>Détermine les règles de mise en forme conditionnelle appliquées aux connecteurs d'étiquettes de point de données.</value>
+  </data>
+  <data name="BarSeries_DataPointLabelConnectorStyle_Description" xml:space="preserve">
+    <value>Spécifie le style du connecteur d'étiquette de point de données.</value>
+  </data>
+  <data name="BarSeries_DataPointLabelOffset_Description" xml:space="preserve">
+    <value>Spécifie l'offset de l'étiquette de point de données.</value>
+  </data>
+  <data name="BarSeries_X0_Description" xml:space="preserve">
+    <value>La coordonnée x0 (système de coordonnées cartésien) ou Angular0 (repère polaire).</value>
+  </data>
+  <data name="BarSeries_Y0_Description" xml:space="preserve">
+    <value>Coordonnée Y0 (système de coordonnées cartésien) ou Radial0 (repère polaire).</value>
+  </data>
+  <data name="CartesianCoordinateSystem_XAxis_Description" xml:space="preserve">
+    <value>Spécifie l'axe horizontal.</value>
+  </data>
+  <data name="CartesianCoordinateSystem_YAxis_Description" xml:space="preserve">
+    <value>Spécifie l'axe vertical.</value>
+  </data>
+  <data name="CategoryScaleCrossAxisPosition" xml:space="preserve">
+    <value>Spécifie la valeur où l'autre axe croise l'axe actuel.</value>
+  </data>
+  <data name="CategoryScale_PositionMode_Description" xml:space="preserve">
+    <value>Spécifie comment les graduations sont positionnées par rapport aux points de données.</value>
+  </data>
+  <data name="CrossAxisPositionBase_Position_Description" xml:space="preserve">
+    <value>La position où les axes se croisent.</value>
+  </data>
+  <data name="Crosstab_Description" xml:space="preserve">
+    <value>L'élément de rapport analyse croisée affiche des résumés de données agrégés, regroupés en lignes et en colonnes.</value>
+  </data>
+  <data name="DateTimeScale_BaseUnit_Description" xml:space="preserve">
+    <value>Spécifie l'unité de base de l'échelle. L'unité de base définit l'intervalle entre les points de l'axe. Par défaut, les unités de base sont selon la plus petite différence entre deux dates dans les données.</value>
+  </data>
+  <data name="DateTimeScale_CrossAxisValue_Description" xml:space="preserve">
+    <value>Spécifie la valeur'Zero'où l'autre axe croise l'axe actuel. Appliqué lorsque l'échelle de graphe position de l'axe transversal est définie sur le mode graphe axe zéro valeur. spécifique.</value>
+  </data>
+  <data name="DateTimeScale_DataPointTicks_Description" xml:space="preserve">
+    <value>Affiche les graduations et les étiquettes sur l'axe pour chaque point du jeu de données.</value>
+  </data>
+  <data name="DateTimeScale_LabelStep_Description" xml:space="preserve">
+    <value>Spécifie l'étape/intervalle entre les étiquettes.</value>
+  </data>
+  <data name="DateTimeScale_LabelUnit_Description" xml:space="preserve">
+    <value>Spécifie l'unité pour l'intervalle/l'étape entre les étiquettes.</value>
+  </data>
+  <data name="DateTimeScale_MajorStep_Description" xml:space="preserve">
+    <value>Spécifie l'étape/intervalle entre les principales graduations/lignes de quadrillage.</value>
+  </data>
+  <data name="DateTimeScale_MajorUnit_Description" xml:space="preserve">
+    <value>Spécifie l'unité pour l'intervalle/l'étape entre les graduations principales/lignes de grille.</value>
+  </data>
+  <data name="DateTimeScale_Maximum_Description" xml:space="preserve">
+    <value>Spécifie la valeur maximale de l'axe actuel.</value>
+  </data>
+  <data name="DateTimeScale_Minimum_Description" xml:space="preserve">
+    <value>Spécifie la valeur minimale de l'axe actuel.</value>
+  </data>
+  <data name="DateTimeScale_MinorStep_Description" xml:space="preserve">
+    <value>Spécifie l'étape/intervalle pour les graduations/lignes de quadrillage mineures.</value>
+  </data>
+  <data name="DateTimeScale_MinorUnit_Description" xml:space="preserve">
+    <value>Spécifie l'unité pour l'intervalle/l'étape entre les graduations/lignes de quadrillage mineures.</value>
+  </data>
+  <data name="DateTimeScale_PositionMode_Description" xml:space="preserve">
+    <value>Spécifie comment les graduations sont positionnées par rapport aux points de données.</value>
+  </data>
+  <data name="DateTimeScale_Value_Description" xml:space="preserve">
+    <value>Spécifie la valeur où l'autre axe croise l'axe actuel.</value>
+  </data>
+  <data name="GraphAxis_LabelAngle_Description" xml:space="preserve">
+    <value>Spécifie l'angle en degrés auquel les étiquettes d'axe sont tournées.</value>
+  </data>
+  <data name="GraphAxis_LabelPlacement_Description" xml:space="preserve">
+    <value>Spécifie la position des étiquettes d'axe en fonction des valeurs min/max de l'axe complémentaire.</value>
+  </data>
+  <data name="GraphAxis_MajorGridLineStyle_Description" xml:space="preserve">
+    <value>Spécifie le style des lignes de quadrillage qui correspondent aux étapes de l'axe principal.</value>
+  </data>
+  <data name="GraphAxis_MajorTickMarkDisplayType_Description" xml:space="preserve">
+    <value>Spécifie comment afficher les graduations correspondant aux étapes de l'axe principal.</value>
+  </data>
+  <data name="GraphAxis_MaxSize_Description" xml:space="preserve">
+    <value>Spécifie la taille maximale de l'axe.</value>
+  </data>
+  <data name="GraphAxis_MinorGridLineStyle_Description" xml:space="preserve">
+    <value>Spécifie le style des lignes de quadrillage qui correspondent aux étapes de l'axe mineur.</value>
+  </data>
+  <data name="GraphAxis_MinorTickMarkDisplayType_Description" xml:space="preserve">
+    <value>Spécifie comment afficher les graduations correspondant aux étapes de l'axe mineur.</value>
+  </data>
+  <data name="GraphAxis_MinSize_Description" xml:space="preserve">
+    <value>Spécifie la taille d'axe minimale.</value>
+  </data>
+  <data name="GraphAxis_MultiLevelCategoryLabels_Description" xml:space="preserve">
+    <value>Spécifie une valeur indiquant s'il faut afficher des étiquettes d'échelle de catégorie multidimensionnelle sur un ou plusieurs niveaux.</value>
+  </data>
+  <data name="GraphAxis_Scale_Description" xml:space="preserve">
+    <value>Spécifie l'échelle de l'axe actuel.</value>
+  </data>
+  <data name="GraphAxis_Size_Description" xml:space="preserve">
+    <value>Spécifie la taille exacte de l'axe.</value>
+  </data>
+  <data name="GraphAxis_Style_Description" xml:space="preserve">
+    <value>Spécifie le style par défaut pour l'axe actuel, les graduations et les étiquettes.</value>
+  </data>
+  <data name="GraphAxis_TitlePlacement_Description" xml:space="preserve">
+    <value>Spécifie le positionnement du titre de l'axe.</value>
+  </data>
+  <data name="GraphAxis_TitleStyle_Description" xml:space="preserve">
+    <value>Spécifie le style du titre de l'axe actuel.</value>
+  </data>
+  <data name="GraphAxis_Title_Description" xml:space="preserve">
+    <value>Spécifie le titre de l'axe.</value>
+  </data>
+  <data name="GraphCoordinateSystem_Bindings_Description" xml:space="preserve">
+    <value>Obtient la collection de règles de liaison contenues dans l'élément de rapport</value>
+  </data>
+  <data name="GraphCoordinateSystem_Style_Description" xml:space="preserve">
+    <value>Spécifie le style par défaut des axes, des graduations et des étiquettes.</value>
+  </data>
+  <data name="GraphGroup_Action_Description" xml:space="preserve">
+    <value>Spécifie une action interactive associée à cet élément de rapport.</value>
+  </data>
+  <data name="GraphGroup_ChildGroups_Description" xml:space="preserve">
+    <value>Collection de groupes de graphes qui définit les enfants du groupe de graphes.</value>
+  </data>
+  <data name="GraphGroup_Label_Description" xml:space="preserve">
+    <value>Spécifie l'étiquette/expression pour les catégories dans l'axe des abscisses.</value>
+  </data>
+  <data name="GraphGroup_Visible_Description" xml:space="preserve">
+    <value>Indique si le groupe est affiché.</value>
+  </data>
+  <data name="GraphItem_Bounds_Description" xml:space="preserve">
+    <value>Spécifie les limites de l'élément de graphe.</value>
+  </data>
+  <data name="GraphItem_Height_Description" xml:space="preserve">
+    <value>Spécifie la hauteur de l'élément de graphe.</value>
+  </data>
+  <data name="GraphItem_IsInsidePlotArea_Description" xml:space="preserve">
+    <value>Spécifie si l'élément de graphe est à l'intérieur ou à l'extérieur de la zone de traçage.</value>
+  </data>
+  <data name="GraphItem_Left_Description" xml:space="preserve">
+    <value>Spécifie la position gauche de l'élément de graphe.</value>
+  </data>
+  <data name="GraphItem_Location_Description" xml:space="preserve">
+    <value>Spécifie l'emplacement de l'élément de graphe.</value>
+  </data>
+  <data name="GraphItem_Size_Description" xml:space="preserve">
+    <value>Spécifie la taille de l'élément de graphe.</value>
+  </data>
+  <data name="GraphItem_Style_Description" xml:space="preserve">
+    <value>Spécifie le style de l'élément de graphe.</value>
+  </data>
+  <data name="GraphItem_Top_Description" xml:space="preserve">
+    <value>Spécifie la position supérieure de l'élément de graphe.</value>
+  </data>
+  <data name="GraphItem_Width_Description" xml:space="preserve">
+    <value>Spécifie la largeur de l'élément de graphe.</value>
+  </data>
+  <data name="GraphLegend_Position_Description" xml:space="preserve">
+    <value>Spécifie la position de la légende.</value>
+  </data>
+  <data name="GraphLegend_TitleStyle_Description" xml:space="preserve">
+    <value>Spécifie le style du titre de la légende.</value>
+  </data>
+  <data name="GraphLegend_Title_Description" xml:space="preserve">
+    <value>Spécifie le texte du titre de la légende.</value>
+  </data>
+  <data name="GraphSeries2D_ArrangeMode_Description" xml:space="preserve">
+    <value>Obtient ou définit une valeur indiquant comment organiser la série au moment de l'exécution</value>
+  </data>
+  <data name="GraphSeries2D_X_Description" xml:space="preserve">
+    <value>X coordonnée dans le repère cartésien ou coordonnée angulaire dans le repère polaire.</value>
+  </data>
+  <data name="GraphSeries2D_Y_Description" xml:space="preserve">
+    <value>Y coordonnée dans le repère cartésien ou la coordonnée radiale dans le repère polaire.</value>
+  </data>
+  <data name="GraphSeriesBase_ColorPalette_Description" xml:space="preserve">
+    <value>Spécifie la palette de couleurs utilisée pour déterminer la couleur des séries.</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointConditionalFormatting_Description" xml:space="preserve">
+    <value>Détermine les règles de mise en forme conditionnelle qui sont appliquées sur le style du point de données.</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointLabelAngle_Description" xml:space="preserve">
+    <value>Spécifie l'angle en degrés auquel les étiquettes d'axe sont tournées.</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointLabelConditionalFormatting_Description" xml:space="preserve">
+    <value>Détermine les règles de mise en forme conditionnelle appliquées sur les étiquettes de point de données.</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointLabelStyle_Description" xml:space="preserve">
+    <value>Spécifie le style d'étiquette de point de données.</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointLabel_Description" xml:space="preserve">
+    <value>Spécifie l'étiquette du point de données.</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointStyle_Description" xml:space="preserve">
+    <value>Spécifie le style du point de données.</value>
+  </data>
+  <data name="GraphSeriesBase_LegendItem_Description" xml:space="preserve">
+    <value>Spécifie la légende de la série.</value>
+  </data>
+  <data name="GraphSeriesBase_Name_Description" xml:space="preserve">
+    <value>Spécifie le nom de la série de graphiques.</value>
+  </data>
+  <data name="GraphSeriesBase_ToolTip_Description" xml:space="preserve">
+    <value>Obtient l'instance de pointe ITool associée aux points de données.</value>
+  </data>
+  <data name="GraphSeries_ArrangeByAxis_Description" xml:space="preserve">
+    <value>Axe/direction auquel le mode d'arrangement est appliqué.</value>
+  </data>
+  <data name="GraphSeries_CategoryGroup_Description" xml:space="preserve">
+    <value>Spécifie le groupe de catégories des groupes de graphiques. Category associés à cette série de graphes.</value>
+  </data>
+  <data name="GraphSeries_CoordinateSystem_Description" xml:space="preserve">
+    <value>Spécifie le repère sur lequel la série est projetée.</value>
+  </data>
+  <data name="GraphSeries_SeriesGroup_Description" xml:space="preserve">
+    <value>Spécifie la forme de groupe de la série graphique. Series groupes associée à cette série de graphes.</value>
+  </data>
+  <data name="GraphTitle_Position_Description" xml:space="preserve">
+    <value>Spécifie la position du titre.</value>
+  </data>
+  <data name="GraphTitle_Text_Description" xml:space="preserve">
+    <value>Spécifie le texte du titre.</value>
+  </data>
+  <data name="Graph_CategoryGroups_Description" xml:space="preserve">
+    <value>Collection de groupes de graphes qui définit la hiérarchie des catégories du graphique.</value>
+  </data>
+  <data name="Graph_ColorPalette_Description" xml:space="preserve">
+    <value>Spécifie la palette de couleurs qui détermine la couleur des séries de graphiques.</value>
+  </data>
+  <data name="Graph_CoordinateSystems_Description" xml:space="preserve">
+    <value>Une collection de systèmes de coordonnées Graph.</value>
+  </data>
+  <data name="Graph_Description" xml:space="preserve">
+    <value>L'élément de rapport de graphe affiche des données détaillées, des données organisées dans des groupes de lignes ou les deux.</value>
+  </data>
+  <data name="Graph_Legend_Description" xml:space="preserve">
+    <value>Spécifie la légende du graphe.</value>
+  </data>
+  <data name="Graph_PlotAreaStyle_Description" xml:space="preserve">
+    <value>Spécifie le style de la zone de traçage.</value>
+  </data>
+  <data name="Graph_SeriesGroups_Description" xml:space="preserve">
+    <value>Collection de groupes de graphes qui définit la série du graphique.</value>
+  </data>
+  <data name="Graph_Series_Description" xml:space="preserve">
+    <value>Une collection de séries de graphes.</value>
+  </data>
+  <data name="Graph_Titles_Description" xml:space="preserve">
+    <value>Une collection de titres de graphes.</value>
+  </data>
+  <data name="GroupBase_Name_Description" xml:space="preserve">
+    <value>Obtient ou définit le nom du groupe.</value>
+  </data>
+  <data name="Group_Visible_Description" xml:space="preserve">
+    <value>Obtient ou définit une valeur indiquant si le groupe est affiché.</value>
+  </data>
+  <data name="HtmlTextBox_Description" xml:space="preserve">
+    <value>Représente un élément de rapport de zone de texte html.</value>
+  </data>
+  <data name="LegendItem_ConditionalFormatting_Description" xml:space="preserve">
+    <value>Obtient la collection des règles de mise en forme conditionnelle, associées au style de l'élément.</value>
+  </data>
+  <data name="LegendItem_MarkConditionalFormatting_Description" xml:space="preserve">
+    <value>Obtient la collection des règles de mise en forme conditionnelle, associées au style de marque.</value>
+  </data>
+  <data name="LegendItem_MarkStyle_Description" xml:space="preserve">
+    <value>Spécifie le style de marque de l'élément de légende.</value>
+  </data>
+  <data name="LegendItem_Style_Description" xml:space="preserve">
+    <value>Spécifie le style de l'élément de légende.</value>
+  </data>
+  <data name="LegendItem_Value_Description" xml:space="preserve">
+    <value>Spécifie le texte ou l'expression qui est affiché dans la légende.</value>
+  </data>
+  <data name="LineSeries_ConditionalFormatting_Description" xml:space="preserve">
+    <value>Détermine les règles de mise en forme conditionnelle qui sont appliquées sur le style de la série.</value>
+  </data>
+  <data name="LineSeries_DataPointLabelAlignment_Description" xml:space="preserve">
+    <value>Spécifie une valeur indiquant comment les étiquettes des points de données sont alignées. </value>
+  </data>
+  <data name="LineSeries_DataPointLabelOffset_Description" xml:space="preserve">
+    <value>Spécifie l'offset de l'étiquette de point de données.</value>
+  </data>
+  <data name="LineSeries_LineStyle_Description" xml:space="preserve">
+    <value>Spécifie le style de la ligne.</value>
+  </data>
+  <data name="LineSeries_LineType_Description" xml:space="preserve">
+    <value>Utilisez des lignes lisses, droites ou étagées pour relier les points de données.</value>
+  </data>
+  <data name="LineSeries_MarkerMaxSize_Description" xml:space="preserve">
+    <value>La taille des marqueurs correspondant aux données maximales</value>
+  </data>
+  <data name="LineSeries_MarkerMinSize_Description" xml:space="preserve">
+    <value>La taille des marqueurs correspondant aux données minimales</value>
+  </data>
+  <data name="LineSeries_MarkerSize_Description" xml:space="preserve">
+    <value>La taille des marqueurs.</value>
+  </data>
+  <data name="LineSeries_MarkerType_Description" xml:space="preserve">
+    <value>La forme des marqueurs.</value>
+  </data>
+  <data name="LineSeries_MaximumSize_Description" xml:space="preserve">
+    <value>La taille maximale des marqueurs/bulles.</value>
+  </data>
+  <data name="LineSeries_MinimumSize_Description" xml:space="preserve">
+    <value>La taille minimale des marqueurs/bulles.</value>
+  </data>
+  <data name="LineSeries_Size_Description" xml:space="preserve">
+    <value>La taille des marqueurs/bulles.</value>
+  </data>
+  <data name="LineSeries_SmoothLine_Description" xml:space="preserve">
+    <value>Utilisez des lignes lisses ou droites pour relier les points de données.</value>
+  </data>
+  <data name="List_Description" xml:space="preserve">
+    <value>L'élément de rapport de liste représente une disposition de formulaire libre.</value>
+  </data>
+  <data name="LogarithmicScale_Base_Description" xml:space="preserve">
+    <value>Spécifie la valeur de base du logarithme.</value>
+  </data>
+  <data name="LogarithmicScale_Maximum_Description" xml:space="preserve">
+    <value>Spécifie la valeur maximale de l'axe. Réinitialiser la propriété pour calculer automatiquement la valeur en fonction des données.</value>
+  </data>
+  <data name="LogarithmicScale_Minimum_Description" xml:space="preserve">
+    <value>Spécifie la valeur minimale de l'axe. Réinitialiser la propriété pour calculer automatiquement la valeur en fonction des données.</value>
+  </data>
+  <data name="LogarithmicScale_Value_Description" xml:space="preserve">
+    <value>Spécifie la valeur où l'autre axe croise l'axe actuel.</value>
+  </data>
+  <data name="MapItem_Bounds_Description" xml:space="preserve">
+    <value>Spécifie les limites de l'élément de mappage.</value>
+  </data>
+  <data name="MapItem_Height_Description" xml:space="preserve">
+    <value>Spécifie la hauteur de l'élément de mappage.</value>
+  </data>
+  <data name="MapItem_IsInsidePlotArea_Description" xml:space="preserve">
+    <value>Spécifie si l'élément de mappage se trouve à l'intérieur ou à l'extérieur de la zone de traçage.</value>
+  </data>
+  <data name="MapItem_Left_Description" xml:space="preserve">
+    <value>Spécifie la position gauche de l'élément de mappage.</value>
+  </data>
+  <data name="MapItem_Location_Description" xml:space="preserve">
+    <value>Spécifie l'emplacement de l'élément de mappage.</value>
+  </data>
+  <data name="MapItem_Size_Description" xml:space="preserve">
+    <value>Spécifie la taille de l'élément de mappage.</value>
+  </data>
+  <data name="MapItem_Style_Description" xml:space="preserve">
+    <value>Spécifie le style de l'élément de mappage.</value>
+  </data>
+  <data name="MapItem_Top_Description" xml:space="preserve">
+    <value>Spécifie la position supérieure de l'élément de mappage.</value>
+  </data>
+  <data name="MapItem_Width_Description" xml:space="preserve">
+    <value>Spécifie la largeur de l'élément de mappage.</value>
+  </data>
+  <data name="MapLegend_Position_Description" xml:space="preserve">
+    <value>Spécifie la position de la légende.</value>
+  </data>
+  <data name="MapLegend_TitleStyle_Description" xml:space="preserve">
+    <value>Spécifie le style du titre de la légende.</value>
+  </data>
+  <data name="MapLegend_Title_Description" xml:space="preserve">
+    <value>Spécifie le texte du titre de la légende.</value>
+  </data>
+  <data name="MapRelationPair_AnalyticalField_Description" xml:space="preserve">
+    <value>Expression qui définit le champ à partir de la source de données analytiques qui sera jumelée à un champ à partir du fichier de forme.</value>
+  </data>
+  <data name="MapRelationPair_ShapeFileField_Description" xml:space="preserve">
+    <value>Expression qui définit le champ à partir du faisceau de fichiers de formes qui sera apparié avec un champ à partir d'une source de données analytiques.</value>
+  </data>
+  <data name="MapScaleLegend_Height_Description" xml:space="preserve">
+    <value>Spécifie la hauteur de la légende de l'échelle.</value>
+  </data>
+  <data name="MapScaleLegend_ItemStyle_Description" xml:space="preserve">
+    <value>Spécifie la marque d'échelle et le style de texte.</value>
+  </data>
+  <data name="MapScaleLegend_ScaleUnits_Description" xml:space="preserve">
+    <value>Spécifie les unités de légende d'échelle</value>
+  </data>
+  <data name="MapScaleLegend_Size_Description" xml:space="preserve">
+    <value>Spécifie la taille de la légende de l'échelle de mappage.</value>
+  </data>
+  <data name="MapScaleLegend_Style_Description" xml:space="preserve">
+    <value>Spécifie le style du conteneur de l'échelle de mappage.</value>
+  </data>
+  <data name="MapScaleLegend_Width_Description" xml:space="preserve">
+    <value>Spécifie la largeur de la légende de l'échelle.</value>
+  </data>
+  <data name="Map_BingMapsTileProvider_ClientToken_Description" xml:space="preserve">
+    <value>Jeton client qui authentifie la demande.</value>
+  </data>
+  <data name="Map_BingMapsTileProvider_ImagerySet_Description" xml:space="preserve">
+    <value>Obtient ou définit l'ensemble d'images utilisé lors de la demande des images de mosaïque</value>
+  </data>
+  <data name="Map_ColorPalette_Description" xml:space="preserve">
+    <value>Spécifie la palette de couleurs qui détermine la couleur des séries cartographiques.</value>
+  </data>
+  <data name="Map_Description" xml:space="preserve">
+    <value>L'élément de rapport cartographique affiche des données cartographiques organisées en polygones et en points.</value>
+  </data>
+  <data name="Map_EsriShapeFileSourceType_FileName_Description" xml:space="preserve">
+    <value>Expression qui définit le nom du fichier de forme utilisé pour obtenir les coordonnées spatiales des points de données.</value>
+  </data>
+  <data name="Map_EsriShapeFileSourceType_RelationPairs_Description" xml:space="preserve">
+    <value>Les expressions qui correspondent aux champs d'ensemble de données analytiques aux champs de données spatiales.</value>
+  </data>
+  <data name="Map_Extent_Description" xml:space="preserve">
+    <value>Spécifie la partie affichée de la carte. Ses limites sont définies dans le système de coordonnées de la carte.</value>
+  </data>
+  <data name="Map_GenericTileProvider_Attribution_Description" xml:space="preserve">
+    <value>Obtient ou définit le texte d'attribution du fournisseur de mosaïques.</value>
+  </data>
+  <data name="Map_GenericTileProvider_LogoUrl_Description" xml:space="preserve">
+    <value>Obtient ou définit l'URL utilisée pour télécharger le logo du fournisseur de mosaïques.</value>
+  </data>
+  <data name="Map_GenericTileProvider_UrlSubdomains_Description" xml:space="preserve">
+    <value>Obtient ou définit les sous-domaines du modèle d'URL.</value>
+  </data>
+  <data name="Map_GenericTileProvider_UrlTemplate_Description" xml:space="preserve">
+    <value>Obtient ou définit le modèle d'URL utilisé pour demander les tuiles à partir du serveur de mosaïque.</value>
+  </data>
+  <data name="Map_GeoLocationGroups_Description" xml:space="preserve">
+    <value>Collection de groupes de mappage de localisation géographique définissant la hiérarchie des catégories de la carte.</value>
+  </data>
+  <data name="Map_GeoLocationMapGroup_ChildGroups_Description" xml:space="preserve">
+    <value>Collection de groupes de mappage de localisation géographique qui définit les enfants d'un groupe de groupes de mappage de localisation géographique.</value>
+  </data>
+  <data name="Map_GeoLocationMapGroup_Location_Description" xml:space="preserve">
+    <value>Spécifie l'expression qui définit l'emplacement des points de données.</value>
+  </data>
+  <data name="Map_GraticuleLine_Step_Description" xml:space="preserve">
+    <value>Spécifie l'étape de la ligne réticule.</value>
+  </data>
+  <data name="Map_GraticuleLine_Style_Description" xml:space="preserve">
+    <value>Spécifie le style de la ligne réticule.</value>
+  </data>
+  <data name="Map_Legends_Description" xml:space="preserve">
+    <value>Une collection de légendes cartographiques.</value>
+  </data>
+  <data name="Map_LocationMapSeries_GeoLocationGroup_Description" xml:space="preserve">
+    <value>Spécifie le groupe de géolocalisation de la carte. géolocalisation des groupes de cartes associés à cette série de cartes.</value>
+  </data>
+  <data name="Map_LocationProvider_Description" xml:space="preserve">
+    <value>Spécifie le fournisseur d'emplacement utilisé pour géocoder les données d'adresse.</value>
+  </data>
+  <data name="Map_MapGroupBase_Visible_Description" xml:space="preserve">
+    <value>Indique si le groupe est affiché.</value>
+  </data>
+  <data name="Map_MapGroup_Action_Description" xml:space="preserve">
+    <value>Spécifie une action interactive associée à cet élément de rapport.</value>
+  </data>
+  <data name="Map_MapGroup_ChildGroups_Description" xml:space="preserve">
+    <value>Collection de groupes de mappages qui définit les enfants du groupe de cartes.</value>
+  </data>
+  <data name="Map_MapSeriesBase_SeriesGroup_Description" xml:space="preserve">
+    <value>Spécifie le groupe de séries de la groupes de mappage. Series associée à cette série de graphes.</value>
+  </data>
+  <data name="Map_Meridians_Description" xml:space="preserve">
+    <value>Spécifie la ligne réticule des méridiens.</value>
+  </data>
+  <data name="Map_Parallels_Description" xml:space="preserve">
+    <value>Spécifie la ligne Parallels réticule.</value>
+  </data>
+  <data name="Map_PlotAreaStyle_Description" xml:space="preserve">
+    <value>Spécifie le style de la zone de traçage.</value>
+  </data>
+  <data name="Map_PointMapSeries_DataPointLabelAlignment_Description" xml:space="preserve">
+    <value>Spécifie une valeur indiquant comment les étiquettes des points de données sont alignées. </value>
+  </data>
+  <data name="Map_PointMapSeries_DataPointLabelOffset_Description" xml:space="preserve">
+    <value>Spécifie l'offset de l'étiquette de point de données.</value>
+  </data>
+  <data name="Map_PointMapSeries_Latitude_Description" xml:space="preserve">
+    <value>Expression qui définit la coordonnée de latitude pour les points de données.</value>
+  </data>
+  <data name="Map_PointMapSeries_Longitude_Description" xml:space="preserve">
+    <value>Expression qui définit la coordonnée de longitude pour les points de données.</value>
+  </data>
+  <data name="Map_PointMapSeries_MarkerMaxSize_Description" xml:space="preserve">
+    <value>Taille des marqueurs de point de données correspondant aux données maximales.</value>
+  </data>
+  <data name="Map_PointMapSeries_MarkerMinSize_Description" xml:space="preserve">
+    <value>Taille des marqueurs de point de données correspondant aux données minimales.</value>
+  </data>
+  <data name="Map_PointMapSeries_MarkerSize_Description" xml:space="preserve">
+    <value>Taille des marqueurs de points de données.</value>
+  </data>
+  <data name="Map_PointMapSeries_MarkerType_Description" xml:space="preserve">
+    <value>La forme des marqueurs.</value>
+  </data>
+  <data name="Map_PointMapSeries_MaximumSize_Description" xml:space="preserve">
+    <value>Valeur qui définit la taille maximale des marqueurs.</value>
+  </data>
+  <data name="Map_PointMapSeries_MinimumSize_Description" xml:space="preserve">
+    <value>Valeur qui définit la taille minimale des marqueurs.</value>
+  </data>
+  <data name="Map_PointMapSeries_Size_Description" xml:space="preserve">
+    <value>Expression qui définit la taille des marqueurs.</value>
+  </data>
+  <data name="Map_Projection_Description" xml:space="preserve">
+    <value>Spécifie le modèle de représentation utilisé pour projeter le globe ou la sphère céleste sur une surface</value>
+  </data>
+  <data name="Map_ScaleLegend_Description" xml:space="preserve">
+    <value>Spécifie la légende de l'échelle de mappage</value>
+  </data>
+  <data name="Map_SeriesGroups_Description" xml:space="preserve">
+    <value>Collection de groupes de mappages qui définit la série de la carte.</value>
+  </data>
+  <data name="Map_Series_Description" xml:space="preserve">
+    <value>Une collection de séries cartographiques.</value>
+  </data>
+  <data name="Map_ShapeMapGroup_ChildGroups_Description" xml:space="preserve">
+    <value>Collection du groupe de mappage de fichier Shape &lt;b&gt; &lt;/b&gt; s qui définit les enfants d'un groupe de groupes de mappage de fichier de formes.</value>
+  </data>
+  <data name="Map_ShapeMapSeries_ColorData_Description" xml:space="preserve">
+    <value>Expression qui définit le champ de couleur pour les points de données.</value>
+  </data>
+  <data name="Map_ShapeMapSeries_ColorsCount_Description" xml:space="preserve">
+    <value>Obtient ou définit le nombre de couleurs qui affichent les plages de données. La propriété n'est pas respectée lorsque le regroupement de plage est None.</value>
+  </data>
+  <data name="Map_ShapeMapSeries_DataPointLabelAlignment_Description" xml:space="preserve">
+    <value>Spécifie une valeur indiquant comment les étiquettes des points de données sont alignées. </value>
+  </data>
+  <data name="Map_ShapeMapSeries_DataPointLabelOffset_Description" xml:space="preserve">
+    <value>Spécifie l'offset de l'étiquette de point de données.</value>
+  </data>
+  <data name="Map_ShapeMapSeries_RangeGrouping_Description" xml:space="preserve">
+    <value>Spécifie comment les points de données seront regroupés dans des plages.</value>
+  </data>
+  <data name="Map_ShapeMapSeries_ShapeMapGroup_Description" xml:space="preserve">
+    <value>Spécifie le groupe de mappage de formes à partir de la carte. géolocalisation des groupes de mappage associés à cette série de mappages de formes.</value>
+  </data>
+  <data name="Map_ShapeMapSeries_SourceType_Description" xml:space="preserve">
+    <value>Propriété qui définit le type de source des données spatiales qui seront utilisées pour obtenir les coordonnées des points de données.</value>
+  </data>
+  <data name="Map_TileProvider_Description" xml:space="preserve">
+    <value>Spécifie le fournisseur de mosaïques utilisé pour extraire les tuiles de mappage.</value>
+  </data>
+  <data name="Map_Titles_Description" xml:space="preserve">
+    <value>Une collection de titres de carte.</value>
+  </data>
+  <data name="Map_WebLocationProvider_ClientToken_Description" xml:space="preserve">
+    <value>Jeton client qui authentifie la demande.</value>
+  </data>
+  <data name="Map_WebLocationProvider_ServerUrl_Description" xml:space="preserve">
+    <value>URL du serveur d'emplacement.</value>
+  </data>
+  <data name="Map_WellKnownTextSourceType_SpatialField_Description" xml:space="preserve">
+    <value>Expression qui définit les coordonnées spatiales des points de données.</value>
+  </data>
+  <data name="NavigateToBookmarkAction_TargetBookmarkId_Description" xml:space="preserve">
+    <value>Obtient ou définit le signet cible de l'action.</value>
+  </data>
+  <data name="NavigateToReportAction_ReportSource_Description" xml:space="preserve">
+    <value>Spécifie la source de rapport pour l'action.</value>
+  </data>
+  <data name="NavigateToUrlAction_Target_Description" xml:space="preserve">
+    <value>Obtient ou définit l'attribut de cible de lien.</value>
+  </data>
+  <data name="NavigateToUrlAction_Url_Description" xml:space="preserve">
+    <value>Obtient ou définit l'URL de l'action.</value>
+  </data>
+  <data name="NumericalScaleBase_DataPointTicks_Description" xml:space="preserve">
+    <value>Affiche les graduations et les étiquettes sur l'axe pour chaque point du jeu de données.</value>
+  </data>
+  <data name="NumericalScaleBase_Maximum_Description" xml:space="preserve">
+    <value>Spécifie la valeur maximale de l'axe. Réinitialiser la propriété pour calculer automatiquement la valeur en fonction des données.</value>
+  </data>
+  <data name="NumericalScaleBase_Minimum_Description" xml:space="preserve">
+    <value>Spécifie la valeur minimale de l'axe. Réinitialiser la propriété pour calculer automatiquement la valeur en fonction des données.</value>
+  </data>
+  <data name="NumericalScaleCrossAxisPosition_Value_Description" xml:space="preserve">
+    <value>Spécifie la valeur où l'autre axe croise l'axe actuel.</value>
+  </data>
+  <data name="NumericalScale_LabelStep_Description" xml:space="preserve">
+    <value>Spécifie l'étape/intervalle pour les étiquettes.</value>
+  </data>
+  <data name="NumericalScale_MajorStep_Description" xml:space="preserve">
+    <value>Spécifie l'étape/intervalle pour les graduations/lignes de quadrillage majeures.</value>
+  </data>
+  <data name="NumericalScale_MinorStep_Description" xml:space="preserve">
+    <value>Spécifie l'étape/intervalle pour les graduations/lignes de quadrillage mineures.</value>
+  </data>
+  <data name="OhlcMarks_Close_Description" xml:space="preserve">
+    <value>Point de fermeture pour un point de données OHLC.</value>
+  </data>
+  <data name="OhlcMarks_High_Description" xml:space="preserve">
+    <value>Point le plus élevé pour un point de données OHLC.</value>
+  </data>
+  <data name="OhlcMarks_Low_Description" xml:space="preserve">
+    <value>Point le plus bas pour un point de données OHLC.</value>
+  </data>
+  <data name="OhlcMarks_Open_Description" xml:space="preserve">
+    <value>Point d'ouverture d'un point de données OHLC.</value>
+  </data>
+  <data name="OhlcSeries_DataPointLabelAlignment_Description" xml:space="preserve">
+    <value>Spécifie une valeur indiquant comment les étiquettes des points de données sont alignées. </value>
+  </data>
+  <data name="OhlcSeries_DataPointLabelOffset_Description" xml:space="preserve">
+    <value>Spécifie l'offset de l'étiquette de point de données.</value>
+  </data>
+  <data name="OhlcSeries_MarkerType_Description" xml:space="preserve">
+    <value>Spécifié le type de marqueur dans une série OHLC</value>
+  </data>
+  <data name="OhlcSeries_MinMarkerWidth_Description" xml:space="preserve">
+    <value>La largeur minimale des marqueurs de points de données.</value>
+  </data>
+  <data name="OhlcSeries_Y_Description" xml:space="preserve">
+    <value>Coordonnées OHLC dans un système de coordonnées cartésien.</value>
+  </data>
+  <data name="PageBreak_After_Description" xml:space="preserve">
+    <value>Un saut de page se produit après la section rapport de rapports Telerik</value>
+  </data>
+  <data name="PageBreak_BeforeAndAfter_Description" xml:space="preserve">
+    <value>Un saut de page se produira avant et après la section rapport de rapports Telerik</value>
+  </data>
+  <data name="PageBreak_Before_Description" xml:space="preserve">
+    <value>Un saut de page se produit avant la section de rapport de rapports Telerik</value>
+  </data>
+  <data name="PageBreak_Description" xml:space="preserve">
+    <value>Spécifie où faire un saut de page, en ce qui concerne une section de rapport de rapports Telerik</value>
+  </data>
+  <data name="PageBreak_None_Description" xml:space="preserve">
+    <value>Aucun saut de page ne se produira.</value>
+  </data>
+  <data name="PageNumberingStyle_Continue_Description" xml:space="preserve">
+    <value>Les agrégations de numérotation de page et de page continuent.</value>
+  </data>
+  <data name="PageNumberingStyle_Description" xml:space="preserve">
+    <value>Spécifie le style de numérotation de page d'un rapport. N'a de sens et d'effet que lorsque le rapport fait partie d'un livre de rapport.</value>
+  </data>
+  <data name="PageNumberingStyle_ResetNumberingAndCount_Description" xml:space="preserve">
+    <value>Réinitialise à la fois la numérotation des pages et le nombre de pages.</value>
+  </data>
+  <data name="PageNumberingStyle_ResetNumbering_Description" xml:space="preserve">
+    <value>Réinitialise la numérotation de page tandis que l'agrégation de nombre de pages continue.</value>
+  </data>
+  <data name="Panel_Description" xml:space="preserve">
+    <value>Fournit un mécanisme de regroupement pour l'organisation d'éléments de rapport.</value>
+  </data>
+  <data name="PictureBox_Description" xml:space="preserve">
+    <value>Représente un élément de rapport de zone d'image pour l'affichage d'une image.</value>
+  </data>
+  <data name="PolarCoordinateSystem_AngularAxisLabelOrientation_Description" xml:space="preserve">
+    <value>Spécifie l'orientation des étiquettes de l'axe angulaire.</value>
+  </data>
+  <data name="PolarCoordinateSystem_AngularAxisStartAngle_Description" xml:space="preserve">
+    <value>Spécifie l'angle en degrés mesuré dans le sens des aiguilles d'une montre à partir de l'axe radial jusqu'au point de départ de l'axe angulaire.</value>
+  </data>
+  <data name="PolarCoordinateSystem_AngularAxisSweepAngle_Description" xml:space="preserve">
+    <value>Spécifie l'angle en degrés mesuré dans le sens des aiguilles d'une montre, du paramètre angle de départ au point de fin de l'axe angulaire.</value>
+  </data>
+  <data name="PolarCoordinateSystem_AngularAxis_Description" xml:space="preserve">
+    <value>Spécifie l'axe angulaire.</value>
+  </data>
+  <data name="PolarCoordinateSystem_InnerRadiusRatio_Description" xml:space="preserve">
+    <value>Spécifie le rapport entre le rayon interne et l'extérieur du repère. Utilisez une valeur supérieure à 0 pour créer des «beignets» comme des graphiques.</value>
+  </data>
+  <data name="PolarCoordinateSystem_RadialAxis_Description" xml:space="preserve">
+    <value>Spécifie l'axe radial.</value>
+  </data>
+  <data name="ReportBookTocPosition_AfterContent_Description" xml:space="preserve">
+    <value>Après les rapports dans le livre de rapport.</value>
+  </data>
+  <data name="ReportBookTocPosition_BeforeContent_Description" xml:space="preserve">
+    <value>Avant les rapports dans le livre de rapport.</value>
+  </data>
+  <data name="ReportBookTocPosition_Description" xml:space="preserve">
+    <value>Spécifie l'emplacement où le rapport table des matières doit être positionné dans le livre de rapports.</value>
+  </data>
+  <data name="ReportBook_TocPosition_Description" xml:space="preserve">
+    <value>Spécifie la position du rapport TOC dans le livre de rapports.</value>
+  </data>
+  <data name="ReportBook_TocReportSource_Description" xml:space="preserve">
+    <value>Spécifie la source du rapport qui sera utilisée en tant que table des matières dans le livre de rapports.</value>
+  </data>
+  <data name="ReportItemBase_Bindings_Description" xml:space="preserve">
+    <value>Obtient la collection de règles de liaison contenues dans l'élément de rapport</value>
+  </data>
+  <data name="ReportItemBase_ConditionalFormatting_Description" xml:space="preserve">
+    <value>Obtient la collection des règles de mise en forme conditionnelle, associées à cet élément.</value>
+  </data>
+  <data name="ReportParameterAvailableValues_DataSource_Description" xml:space="preserve">
+    <value>Obtient ou définit la source de données. Les mêmes sources de données sont prises en charge comme pour les éléments de données, y compris les composants de source de données de rapport Telerik.</value>
+  </data>
+  <data name="ReportParameterAvailableValues_DisplayMember_Description" xml:space="preserve">
+    <value>Obtient ou définit une chaîne qui spécifie le champ de la source de données à partir de laquelle dessiner les étiquettes de valeur.</value>
+  </data>
+  <data name="ReportParameterAvailableValues_Filters_Description" xml:space="preserve">
+    <value>Obtient une collection de filtres qui définit les expressions de filtre.</value>
+  </data>
+  <data name="ReportParameterAvailableValues_Sortings_Description" xml:space="preserve">
+    <value>Obtient une collection de tri qui définit la (les) colonne (s) de tri, ainsi que leur type et leur ordre.</value>
+  </data>
+  <data name="ReportParameterAvailableValues_ValueMember_Description" xml:space="preserve">
+    <value>Obtient ou définit une chaîne qui spécifie le champ de la source de données à partir de laquelle dessiner les valeurs.</value>
+  </data>
+  <data name="ReportParameter_AllowBlank_Description" xml:space="preserve">
+    <value>Détermine si le paramètre permet de passer une chaîne vide. Uniquement pour les paramètres de type String.</value>
+  </data>
+  <data name="ReportParameter_AllowNull_Description" xml:space="preserve">
+    <value>Détermine si le paramètre n'autorise aucune valeur à passer de son éditeur.</value>
+  </data>
+  <data name="ReportParameter_AutoRefresh_Description" xml:space="preserve">
+    <value>Détermine si le visualiseur de rapports doit mettre à jour automatiquement le rapport lorsque la valeur du paramètre est modifiée.</value>
+  </data>
+  <data name="ReportParameter_AvailableValues_Description" xml:space="preserve">
+    <value>Obtient un objet qui définit un ensemble de valeurs que le paramètre peut accepter.</value>
+  </data>
+  <data name="ReportParameter_Mergeable_Description" xml:space="preserve">
+    <value>Obtient ou définit une valeur indiquant si ce paramètre doit être fusionné avec des paramètres identiques d'autres rapports lorsque ce rapport fait partie d'un livre de rapports.</value>
+  </data>
+  <data name="ReportParameter_MultiValue_Description" xml:space="preserve">
+    <value>Détermine si le paramètre peut contenir plus d'une valeur.</value>
+  </data>
+  <data name="ReportParameter_Name_Description" xml:space="preserve">
+    <value>Obtient ou définit une chaîne qui spécifie le nom du paramètre. Utilisé pour accéder au paramètre.</value>
+  </data>
+  <data name="ReportParameter_Text_Description" xml:space="preserve">
+    <value>Obtient ou définit le texte du paramètre à afficher dans la visionneuse de rapports. Il peut s'agir d'une expression qui évalue une chaîne.</value>
+  </data>
+  <data name="ReportParameter_Type_Description" xml:space="preserve">
+    <value>Obtient ou définit le type du paramètre.</value>
+  </data>
+  <data name="ReportParameter_Value_Description" xml:space="preserve">
+    <value>Obtient ou définit la valeur du paramètre. Il peut s'agir d'une expression qui évalue un objet, une valeur des types autorisés ou IEnumerable contenant des valeurs des types autorisés.</value>
+  </data>
+  <data name="ReportParameter_Visible_Description" xml:space="preserve">
+    <value>Détermine si l'interface utilisateur du paramètre est visible.</value>
+  </data>
+  <data name="Scale_Reversed_Description" xml:space="preserve">
+    <value>Indique s'il faut organiser les valeurs dans l'ordre inverse.</value>
+  </data>
+  <data name="Scale_SpacingSlotCount_Description" xml:space="preserve">
+    <value>Détermine le nombre d'emplacements d'espace qui seront laissés autour des points de données par emplacement de catégorie, mesurés relativement à la largeur du slot de point de données: espace vide = nombre d'emplacements d'espacement * données Point_Slot largeur</value>
+  </data>
+  <data name="Shape_Description" xml:space="preserve">
+    <value>Représente un élément de rapport de forme.</value>
+  </data>
+  <data name="SortDirection_Asc_Description" xml:space="preserve">
+    <value>ASC</value>
+  </data>
+  <data name="SortDirection_Description" xml:space="preserve">
+    <value>Direction de tri</value>
+  </data>
+  <data name="SortDirection_Desc_Description" xml:space="preserve">
+    <value>DESC</value>
+  </data>
+  <data name="SortingAction_Targets_Description" xml:space="preserve">
+    <value>Obtient la liste ou définit le nom de type du rapport cible.</value>
+  </data>
+  <data name="Style_Visible_Description" xml:space="preserve">
+    <value>Obtient ou définit une valeur indiquant si l'élément de rapport est affiché.</value>
+  </data>
+  <data name="SubReport_Description" xml:space="preserve">
+    <value>Représente un élément de rapport utilisé pour incorporer un autre rapport dans le rapport en cours.</value>
+  </data>
+  <data name="SubReport_ReportSource_Description" xml:space="preserve">
+    <value>Spécifie la source du rapport.</value>
+  </data>
+  <data name="TableGroup_GroupKeepTogether_Description" xml:space="preserve">
+    <value>Indique s'il faut conserver toutes les lignes ou les colonnes qui appartiennent au groupe actuel sur une page.</value>
+  </data>
+  <data name="TableGroup_Visible_Description" xml:space="preserve">
+    <value>Obtient ou définit une valeur indiquant si le groupe est affiché.</value>
+  </data>
+  <data name="Table_Body_Description" xml:space="preserve">
+    <value>Surface du corps de la table. Le corps de la table est situé dans le coin inférieur droit. Le corps de la table affiche des données détaillées et groupées. La portée de l'expression est déterminée par les groupes les plus intimes auxquels la zone de texte appartient. Les cellules du corps de la table affichent des données de détail lorsqu'elles sont membres d'une ligne de détail et elles représentent des données agrégées lorsqu'elles sont membres d'une ligne ou d'une colonne associée à un groupe. Par défaut, les cellules d'une ligne ou d'une colonne de groupe qui contiennent des expressions simples qui n'incluent pas de fonction d'agrégation, évaluent la première valeur du groupe.</value>
+  </data>
+  <data name="Table_ColumnGroups_Description" xml:space="preserve">
+    <value>Hiérarchie de groupe de colonnes de table. fAcultatif) Les groupes de colonnes de table sont situés dans le coin supérieur droit. Cette zone est automatiquement créée lorsque vous ajoutez un groupe de colonnes. Les cellules de cette zone représentent les membres de la hiérarchie des groupes de colonnes et affichent les valeurs d'instance de groupe de colonnes.</value>
+  </data>
+  <data name="Table_ColumnHeadersPrintOnEveryPage_Description" xml:space="preserve">
+    <value>Indique si les en-têtes de groupe de colonnes sont répétés sur chaque page affichée par cette table.</value>
+  </data>
+  <data name="Table_Corner_Description" xml:space="preserve">
+    <value>Zone de coin de table. fAcultatif) Un coin de table est situé dans le coin supérieur gauche. Cette zone est automatiquement créée lorsque vous ajoutez des groupes de lignes et des groupes de colonnes à un élément de table. Dans cette zone, vous pouvez fusionner des cellules et ajouter une étiquette ou incorporer un autre élément de rapport.</value>
+  </data>
+  <data name="Table_Description" xml:space="preserve">
+    <value>L'élément de rapport de table affiche des données détaillées, des données organisées dans des groupes de lignes ou les deux.</value>
+  </data>
+  <data name="Table_RowGroups_Description" xml:space="preserve">
+    <value>Hiérarchie des groupes de lignes de tableau. fAcultatif) Les groupes de lignes de table sont situés dans le coin inférieur gauche. Cette zone est automatiquement créée lorsque vous ajoutez un groupe de lignes. Les cellules de cette zone représentent les membres de la hiérarchie des groupes de lignes et affichent les valeurs d'instance de groupe de lignes.</value>
+  </data>
+  <data name="Table_RowHeadersPrintOnEveryPage_Description" xml:space="preserve">
+    <value>Indique si les en-têtes de groupe de lignes sont répétés sur chaque page affichée par cette table.</value>
+  </data>
+  <data name="TextBox_Description" xml:space="preserve">
+    <value>Représente un élément de rapport de zone de texte.</value>
+  </data>
+  <data name="TocPosition_AfterReportFooter_Description" xml:space="preserve">
+    <value>Après la section pied de page du rapport.</value>
+  </data>
+  <data name="TocPosition_AfterReportHeader_Description" xml:space="preserve">
+    <value>Après la section d'en-tête du rapport.</value>
+  </data>
+  <data name="TocPosition_BeforeReportFooter_Description" xml:space="preserve">
+    <value>Avant la section pied de page du rapport.</value>
+  </data>
+  <data name="TocPosition_BeforeReportHeader_Description" xml:space="preserve">
+    <value>Avant la section d'en-tête du rapport.</value>
+  </data>
+  <data name="TocPosition_Description" xml:space="preserve">
+    <value>Spécifie l'emplacement où la section table des matières doit être positionnée.</value>
+  </data>
+  <data name="ToggleVisibilityAction_Targets_Description" xml:space="preserve">
+    <value>Obtient la liste ou définit le nom de type du rapport cible.</value>
+  </data>
+  <data name="UrlTarget_NewWindow_Description" xml:space="preserve">
+    <value>Ouvrir dans une nouvelle fenêtre</value>
+  </data>
+  <data name="UrlTarget_SameWindow_Description" xml:space="preserve">
+    <value>Ouvrir dans la même fenêtre</value>
+  </data>
+  <data name="TocSection_Levels_Description" xml:space="preserve">
+    <value>Collection de styles de niveau qui définit les styles pour chaque table des matières niveau.</value>
+  </data>
+  <data name="BasicItemsCategory" xml:space="preserve">
+    <value>Éléments de base</value>
+  </data>
+  <data name="CoordinateSystemCategory" xml:space="preserve">
+    <value>Système de coordonnées</value>
+  </data>
+  <data name="DataItemsCategory" xml:space="preserve">
+    <value>Éléments de données</value>
+  </data>
+  <data name="DataPointCategory" xml:space="preserve">
+    <value>Point de données</value>
+  </data>
+  <data name="DataPointLabelCategory" xml:space="preserve">
+    <value>Étiquette de point de données</value>
+  </data>
+  <data name="DataPointMarkerCategory" xml:space="preserve">
+    <value>Marqueur de point de données</value>
+  </data>
+  <data name="DataPointTooltipCategory" xml:space="preserve">
+    <value>Info-bulle de point de données</value>
+  </data>
+  <data name="ReportSourceCategory" xml:space="preserve">
+    <value>Source du rapport</value>
+  </data>
+  <data name="SpatialDataCategory" xml:space="preserve">
+    <value>Données spatiales</value>
+  </data>
+  <data name="Crosstab_Name" xml:space="preserve">
+    <value>Analyse</value>
+  </data>
+  <data name="GroupBase_Name_Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Group_Visible_Name" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="MapItem_Bounds_Name" xml:space="preserve">
+    <value>Limites</value>
+  </data>
+  <data name="MapItem_Height_Name" xml:space="preserve">
+    <value>Hauteur</value>
+  </data>
+  <data name="MapItem_IsInsidePlotArea_Name" xml:space="preserve">
+    <value>Est à l'intérieur parcelle zone</value>
+  </data>
+  <data name="MapItem_Left_Name" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="MapItem_Location_Name" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="MapItem_Size_Name" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="MapItem_Style_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="MapItem_Top_Name" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="MapItem_Width_Name" xml:space="preserve">
+    <value>Largeur</value>
+  </data>
+  <data name="MapLegend_Position_Name" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="MapLegend_TitleStyle_Name" xml:space="preserve">
+    <value>Style de titre</value>
+  </data>
+  <data name="MapLegend_Title_Name" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="MapRelationPair_AnalyticalField_Name" xml:space="preserve">
+    <value>Champ analytique</value>
+  </data>
+  <data name="MapRelationPair_ShapeFileField_Name" xml:space="preserve">
+    <value>Champ de fichier de forme</value>
+  </data>
+  <data name="MapScaleLegend_Height_Name" xml:space="preserve">
+    <value>Hauteur</value>
+  </data>
+  <data name="MapScaleLegend_ItemStyle_Name" xml:space="preserve">
+    <value>Style d'élément</value>
+  </data>
+  <data name="MapScaleLegend_ScaleUnits_Name" xml:space="preserve">
+    <value>Unités d'échelle</value>
+  </data>
+  <data name="MapScaleLegend_Size_Name" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="MapScaleLegend_Style_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="MapScaleLegend_Width_Name" xml:space="preserve">
+    <value>Largeur</value>
+  </data>
+  <data name="MapTitle_Position_Name" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="MapTitle_Text_Name" xml:space="preserve">
+    <value>Texte</value>
+  </data>
+  <data name="Map_BingMapsTileProvider_ClientToken_Name" xml:space="preserve">
+    <value>Jeton client</value>
+  </data>
+  <data name="Map_BingMapsTileProvider_ImagerySet_Name" xml:space="preserve">
+    <value>Ensemble d'imagerie</value>
+  </data>
+  <data name="Map_ColorPalette_Name" xml:space="preserve">
+    <value>Palette de couleurs</value>
+  </data>
+  <data name="Map_Culture_Name" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="Map_EsriShapeFileSourceType_FileName_Name" xml:space="preserve">
+    <value>Nom du fichier</value>
+  </data>
+  <data name="Map_EsriShapeFileSourceType_RelationPairs_Name" xml:space="preserve">
+    <value>Paires de relations</value>
+  </data>
+  <data name="Map_Extent_Name" xml:space="preserve">
+    <value>Mesure</value>
+  </data>
+  <data name="Map_GenericTileProvider_Attribution_Name" xml:space="preserve">
+    <value>Attribution</value>
+  </data>
+  <data name="Map_GenericTileProvider_LogoUrl_Name" xml:space="preserve">
+    <value>URL du logo</value>
+  </data>
+  <data name="Map_GenericTileProvider_UrlSubdomains_Name" xml:space="preserve">
+    <value>Sous-domaines d'URL</value>
+  </data>
+  <data name="Map_GenericTileProvider_UrlTemplate_Name" xml:space="preserve">
+    <value>Modèle d'URL</value>
+  </data>
+  <data name="Map_GeoLocationGroups_Name" xml:space="preserve">
+    <value>Groupes géo-localisation</value>
+  </data>
+  <data name="Map_GeoLocationMapGroup_ChildGroups_Name" xml:space="preserve">
+    <value>Groupes d'enfants</value>
+  </data>
+  <data name="Map_GeoLocationMapGroup_Location_Name" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="Map_GraticuleLine_Step_Name" xml:space="preserve">
+    <value>Étape</value>
+  </data>
+  <data name="Map_GraticuleLine_Style_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="Map_Legends_Name" xml:space="preserve">
+    <value>Légendes</value>
+  </data>
+  <data name="Map_LocationMapSeries_GeoLocationGroup_Name" xml:space="preserve">
+    <value>Geo location Group</value>
+  </data>
+  <data name="Map_LocationProvider_Name" xml:space="preserve">
+    <value>Fournisseur d'emplacement</value>
+  </data>
+  <data name="Map_MapGroupBase_Visible_Name" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="Map_MapGroup_Action_Name" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="Map_MapGroup_ChildGroups_Name" xml:space="preserve">
+    <value>Groupes d'enfants</value>
+  </data>
+  <data name="Map_MapSeriesBase_SeriesGroup_Name" xml:space="preserve">
+    <value>Groupe de séries</value>
+  </data>
+  <data name="Map_Meridians_Name" xml:space="preserve">
+    <value>Méridiens</value>
+  </data>
+  <data name="Map_Parallels_Name" xml:space="preserve">
+    <value>Parallels</value>
+  </data>
+  <data name="Map_PlotAreaStyle_Name" xml:space="preserve">
+    <value>Style de zone de traçage</value>
+  </data>
+  <data name="Map_PointMapSeries_DataPointLabelAlignment_Name" xml:space="preserve">
+    <value>Alignement des étiquettes des points de données</value>
+  </data>
+  <data name="Map_PointMapSeries_DataPointLabelOffset_Name" xml:space="preserve">
+    <value>Décalage d'étiquette de point de données</value>
+  </data>
+  <data name="Map_PointMapSeries_Latitude_Name" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="Map_PointMapSeries_Longitude_Name" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="Map_PointMapSeries_MarkerMaxSize_Name" xml:space="preserve">
+    <value>Taille maximale du marqueur</value>
+  </data>
+  <data name="Map_PointMapSeries_MarkerMinSize_Name" xml:space="preserve">
+    <value>Taille minimale du marqueur</value>
+  </data>
+  <data name="Map_PointMapSeries_MarkerSize_Name" xml:space="preserve">
+    <value>Taille du marqueur</value>
+  </data>
+  <data name="Map_PointMapSeries_MarkerType_Name" xml:space="preserve">
+    <value>Type de marqueur</value>
+  </data>
+  <data name="Map_PointMapSeries_MaximumSize_Name" xml:space="preserve">
+    <value>Taille maximale</value>
+  </data>
+  <data name="Map_PointMapSeries_MinimumSize_Name" xml:space="preserve">
+    <value>Taille minimale</value>
+  </data>
+  <data name="Map_PointMapSeries_Size_Name" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="Map_Projection_Name" xml:space="preserve">
+    <value>Projection</value>
+  </data>
+  <data name="Map_ScaleLegend_Name" xml:space="preserve">
+    <value>Légende de l'échelle</value>
+  </data>
+  <data name="Map_SeriesGroups_Name" xml:space="preserve">
+    <value>Groupes de séries</value>
+  </data>
+  <data name="Map_Series_Name" xml:space="preserve">
+    <value>Séries</value>
+  </data>
+  <data name="Map_ShapeMapGroup_ChildGroups_Name" xml:space="preserve">
+    <value>Groupes d'enfants</value>
+  </data>
+  <data name="Map_ShapeMapSeries_ColorData_Name" xml:space="preserve">
+    <value>Données de couleur</value>
+  </data>
+  <data name="Map_ShapeMapSeries_ColorsCount_Name" xml:space="preserve">
+    <value>Nombre de couleurs</value>
+  </data>
+  <data name="Map_ShapeMapSeries_DataPointLabelAlignment_Name" xml:space="preserve">
+    <value>Alignement des étiquettes des points de données</value>
+  </data>
+  <data name="Map_ShapeMapSeries_DataPointLabelOffset_Name" xml:space="preserve">
+    <value>Décalage d'étiquette de point de données</value>
+  </data>
+  <data name="Map_ShapeMapSeries_RangeGrouping_Name" xml:space="preserve">
+    <value>Regroupement de gammes</value>
+  </data>
+  <data name="Map_ShapeMapSeries_ShapeMapGroup_Name" xml:space="preserve">
+    <value>Groupe de cartes Shape</value>
+  </data>
+  <data name="Map_ShapeMapSeries_SourceType_Name" xml:space="preserve">
+    <value>Type de source</value>
+  </data>
+  <data name="Map_TileProvider_Name" xml:space="preserve">
+    <value>Fournisseur de tuiles</value>
+  </data>
+  <data name="Map_Titles_Name" xml:space="preserve">
+    <value>Titres</value>
+  </data>
+  <data name="Map_WebLocationProvider_ClientToken_Name" xml:space="preserve">
+    <value>Jeton client</value>
+  </data>
+  <data name="Map_WebLocationProvider_ServerUrl_Name" xml:space="preserve">
+    <value>URL du serveur</value>
+  </data>
+  <data name="Map_WellKnownTextSourceType_SpatialField_Name" xml:space="preserve">
+    <value>Champ spatial</value>
+  </data>
+  <data name="NavigateToBookmarkAction_TargetBookmarkId_Name" xml:space="preserve">
+    <value>ID de signet cible</value>
+  </data>
+  <data name="NavigateToReportAction_ReportSource_Name" xml:space="preserve">
+    <value>Source du rapport</value>
+  </data>
+  <data name="NavigateToUrlAction_Target_Name" xml:space="preserve">
+    <value>Cible</value>
+  </data>
+  <data name="NavigateToUrlAction_Url_Name" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="ReportBook_TocPosition_Name" xml:space="preserve">
+    <value>Position du TOC</value>
+  </data>
+  <data name="ReportBook_TocReportSource_Name" xml:space="preserve">
+    <value>Source du rapport TOC</value>
+  </data>
+  <data name="ReportItemBase_Bindings_Name" xml:space="preserve">
+    <value>Liaisons</value>
+  </data>
+  <data name="ReportItemBase_ConditionalFormatting_Name" xml:space="preserve">
+    <value>Mise en forme conditionnelle</value>
+  </data>
+  <data name="ReportParameterAvailableValues_DataSource_Name" xml:space="preserve">
+    <value>Source de données</value>
+  </data>
+  <data name="ReportParameterAvailableValues_DisplayMember_Name" xml:space="preserve">
+    <value>Afficher le membre</value>
+  </data>
+  <data name="ReportParameterAvailableValues_Filters_Name" xml:space="preserve">
+    <value>Filtres</value>
+  </data>
+  <data name="ReportParameterAvailableValues_Sortings_Name" xml:space="preserve">
+    <value>Tris</value>
+  </data>
+  <data name="ReportParameterAvailableValues_ValueMember_Name" xml:space="preserve">
+    <value>Membre value</value>
+  </data>
+  <data name="ReportParameter_AllowBlank_Name" xml:space="preserve">
+    <value>Laisser vide</value>
+  </data>
+  <data name="ReportParameter_AllowNull_Name" xml:space="preserve">
+    <value>Autoriser la valeur null</value>
+  </data>
+  <data name="ReportParameter_AutoRefresh_Name" xml:space="preserve">
+    <value>Rafraîchissement automatique</value>
+  </data>
+  <data name="ReportParameter_AvailableValues_Name" xml:space="preserve">
+    <value>Valeurs disponibles</value>
+  </data>
+  <data name="ReportParameter_Mergeable_Name" xml:space="preserve">
+    <value>Fusion</value>
+  </data>
+  <data name="ReportParameter_MultiValue_Name" xml:space="preserve">
+    <value>Valeur multiple</value>
+  </data>
+  <data name="ReportParameter_Name_Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="ReportParameter_Text_Name" xml:space="preserve">
+    <value>Texte</value>
+  </data>
+  <data name="ReportParameter_Type_Name" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ReportParameter_Value_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="ReportParameter_Visible_Name" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="Shape_Angle_Name" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="Shape_ShapeType_Name" xml:space="preserve">
+    <value>Type de forme</value>
+  </data>
+  <data name="Shape_Stretch_Name" xml:space="preserve">
+    <value>Étirer</value>
+  </data>
+  <data name="SortingAction_SortingExpression_Name" xml:space="preserve">
+    <value>Expression de tri</value>
+  </data>
+  <data name="SortingAction_Targets_Name" xml:space="preserve">
+    <value>Cibles</value>
+  </data>
+  <data name="SubReport_ReportSource_Name" xml:space="preserve">
+    <value>Source du rapport</value>
+  </data>
+  <data name="TableGroup_GroupKeepTogether_Name" xml:space="preserve">
+    <value>Groupe garder ensemble</value>
+  </data>
+  <data name="TableGroup_Visible_Name" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="Table_Body_Name" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="Table_ColumnGroups_Name" xml:space="preserve">
+    <value>Groupes de colonnes</value>
+  </data>
+  <data name="Table_ColumnHeadersPrintOnEveryPage_Name" xml:space="preserve">
+    <value>Les en-têtes de colonne impriment sur chaque page</value>
+  </data>
+  <data name="Table_Corner_Name" xml:space="preserve">
+    <value>Coin</value>
+  </data>
+  <data name="Table_Name" xml:space="preserve">
+    <value>Tableau</value>
+  </data>
+  <data name="Table_RowGroups_Name" xml:space="preserve">
+    <value>Groupes de lignes</value>
+  </data>
+  <data name="Table_RowHeadersPrintOnEveryPage_Name" xml:space="preserve">
+    <value>Les en-têtes de ligne impriment sur chaque page</value>
+  </data>
+  <data name="TocSection_Levels_Name" xml:space="preserve">
+    <value>Niveaux</value>
+  </data>
+  <data name="TocSection_Position_Description" xml:space="preserve">
+    <value>Obtient ou définit une valeur indiquant où la section doit être positionnée.</value>
+  </data>
+  <data name="TocSection_Position_Name" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="TocSection_TitleStyle_Description" xml:space="preserve">
+    <value>Obtient un objet style qui spécifie l'apparence du titre de la table des matières.</value>
+  </data>
+  <data name="TocSection_TitleStyle_Name" xml:space="preserve">
+    <value>Style de titre</value>
+  </data>
+  <data name="TocSection_Title_Description" xml:space="preserve">
+    <value>Obtient ou définit une valeur qui sera affichée en haut de la section table des matières.</value>
+  </data>
+  <data name="TocSection_Title_Name" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="ToggleVisibilityAction_DisplayExpandedMark_Description" xml:space="preserve">
+    <value>Détermine si l'élément exposant l'action sera restitué initialement avec la marque Expanded ou with Collapsed.</value>
+  </data>
+  <data name="ToggleVisibilityAction_DisplayExpandedMark_Name" xml:space="preserve">
+    <value>Afficher la marque développée</value>
+  </data>
+  <data name="ToggleVisibilityAction_Targets_Name" xml:space="preserve">
+    <value>Cibles</value>
+  </data>
+  <data name="AreaSeries_AreaStyle_Name" xml:space="preserve">
+    <value>Style de zone</value>
+  </data>
+  <data name="AreaSeries_ConditionalFormatting_Name" xml:space="preserve">
+    <value>Mise en forme conditionnelle</value>
+  </data>
+  <data name="AreaSeries_LineType_Name" xml:space="preserve">
+    <value>Type de ligne</value>
+  </data>
+  <data name="AreaSeries_MarkerSize_Name" xml:space="preserve">
+    <value>Taille du marqueur</value>
+  </data>
+  <data name="AreaSeries_MarkerType_Name" xml:space="preserve">
+    <value>Type de marqueur</value>
+  </data>
+  <data name="AreaSeries_X0_Name" xml:space="preserve">
+    <value>X0</value>
+  </data>
+  <data name="AreaSeries_Y0_Name" xml:space="preserve">
+    <value>Y0</value>
+  </data>
+  <data name="BarcodeAlign_Name" xml:space="preserve">
+    <value>Alignement de barre</value>
+  </data>
+  <data name="BarcodeAngle_Name" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="BarcodeChecksum_Name" xml:space="preserve">
+    <value>Checksum</value>
+  </data>
+  <data name="BarcodeEncoder_Name" xml:space="preserve">
+    <value>Encodeur</value>
+  </data>
+  <data name="BarcodeModule_Name" xml:space="preserve">
+    <value>Module</value>
+  </data>
+  <data name="BarcodeShowText_Name" xml:space="preserve">
+    <value>Afficher le texte</value>
+  </data>
+  <data name="BarcodeStretch_Name" xml:space="preserve">
+    <value>Étirer</value>
+  </data>
+  <data name="BarcodeSymbology_Name" xml:space="preserve">
+    <value>Symbologie</value>
+  </data>
+  <data name="BarcodeValue_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="BarSeries_DataPointLabelAlignment_Name" xml:space="preserve">
+    <value>Alignement des étiquettes des points de données</value>
+  </data>
+  <data name="BarSeries_DataPointLabelConnectorConditionalFormatting_Name" xml:space="preserve">
+    <value>Mise en forme conditionnelle du connecteur d'étiquette de point de données</value>
+  </data>
+  <data name="BarSeries_DataPointLabelConnectorStyle_Name" xml:space="preserve">
+    <value>Style de connecteur d'étiquette de point de données</value>
+  </data>
+  <data name="BarSeries_DataPointLabelOffset_Name" xml:space="preserve">
+    <value>Décalage d'étiquette de point de données</value>
+  </data>
+  <data name="BarSeries_X0_Name" xml:space="preserve">
+    <value>X0</value>
+  </data>
+  <data name="BarSeries_Y0_Name" xml:space="preserve">
+    <value>Y0</value>
+  </data>
+  <data name="CartesianCoordinateSystem_XAxis_Name" xml:space="preserve">
+    <value>XAXIS</value>
+  </data>
+  <data name="CartesianCoordinateSystem_YAxis_Name" xml:space="preserve">
+    <value>YAxis</value>
+  </data>
+  <data name="CategoryScaleCrossAxisPosition_Value_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="CategoryScale_PositionMode_Name" xml:space="preserve">
+    <value>Mode position</value>
+  </data>
+  <data name="CheckBoxCheckAlign_Name" xml:space="preserve">
+    <value>Vérifier l'alignement</value>
+  </data>
+  <data name="CheckBoxCheckedImage_Name" xml:space="preserve">
+    <value>Image cochée</value>
+  </data>
+  <data name="CheckBoxFalseValue_Name" xml:space="preserve">
+    <value>Valeur false</value>
+  </data>
+  <data name="CheckBoxIndeterminateImage_Name" xml:space="preserve">
+    <value>Image indéterminée</value>
+  </data>
+  <data name="CheckBoxIndeterminateValue_Name" xml:space="preserve">
+    <value>Valeur indéterminée</value>
+  </data>
+  <data name="CheckBoxTrueValue_Name" xml:space="preserve">
+    <value>Valeur réelle</value>
+  </data>
+  <data name="CheckBoxUncheckedImage_Name" xml:space="preserve">
+    <value>Image non cochée</value>
+  </data>
+  <data name="CheckBoxValue_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="ContainerCanShrink_Name" xml:space="preserve">
+    <value>Peut rétrécir</value>
+  </data>
+  <data name="CrossAxisPositionBase_Position_Name" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="DataBoundReportItemFormat_Name" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="DateTimeScale_BaseUnit_Name" xml:space="preserve">
+    <value>Unité de base</value>
+  </data>
+  <data name="DateTimeScale_CrossAxisValue_Name" xml:space="preserve">
+    <value>Valeur de l'axe croisé</value>
+  </data>
+  <data name="DateTimeScale_DataPointTicks_Name" xml:space="preserve">
+    <value>Tiques point de données</value>
+  </data>
+  <data name="DateTimeScale_LabelStep_Name" xml:space="preserve">
+    <value>Étape d'étiquette</value>
+  </data>
+  <data name="DateTimeScale_LabelUnit_Name" xml:space="preserve">
+    <value>Unité d'étiquette</value>
+  </data>
+  <data name="DateTimeScale_MajorStep_Name" xml:space="preserve">
+    <value>Étape majeure</value>
+  </data>
+  <data name="DateTimeScale_MajorUnit_Name" xml:space="preserve">
+    <value>Unité principale</value>
+  </data>
+  <data name="DateTimeScale_Maximum_Name" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="DateTimeScale_Minimum_Name" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="DateTimeScale_MinorStep_Name" xml:space="preserve">
+    <value>Étape mineure</value>
+  </data>
+  <data name="DateTimeScale_MinorUnit_Name" xml:space="preserve">
+    <value>Unité mineure</value>
+  </data>
+  <data name="DateTimeScale_PositionMode_Name" xml:space="preserve">
+    <value>Mode position</value>
+  </data>
+  <data name="DateTimeScale_Value_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="Filtersiption_Name" xml:space="preserve">
+    <value>Filtres</value>
+  </data>
+  <data name="GraphAxis_LabelAngle_Name" xml:space="preserve">
+    <value>Angle d'étiquette</value>
+  </data>
+  <data name="GraphAxis_LabelPlacement_Name" xml:space="preserve">
+    <value>Placement d'étiquettes</value>
+  </data>
+  <data name="GraphAxis_MajorGridLineStyle_Name" xml:space="preserve">
+    <value>Modèle de ligne de quadrillage majeur</value>
+  </data>
+  <data name="GraphAxis_MajorTickMarkDisplayType_Name" xml:space="preserve">
+    <value>Type principal d'affichage de graduation</value>
+  </data>
+  <data name="GraphAxis_MaxSize_Name" xml:space="preserve">
+    <value>Taille maximum</value>
+  </data>
+  <data name="GraphAxis_MinorGridLineStyle_Name" xml:space="preserve">
+    <value>Style de ligne de quadrillage mineur</value>
+  </data>
+  <data name="GraphAxis_MinorTickMarkDisplayType_Name" xml:space="preserve">
+    <value>Type d'affichage de graduation mineur</value>
+  </data>
+  <data name="GraphAxis_MinSize_Name" xml:space="preserve">
+    <value>Taille min</value>
+  </data>
+  <data name="GraphAxis_MultiLevelCategoryLabels_Name" xml:space="preserve">
+    <value>Étiquettes de catégorie à plusieurs niveaux</value>
+  </data>
+  <data name="GraphAxis_Scale_Name" xml:space="preserve">
+    <value>Échelle</value>
+  </data>
+  <data name="GraphAxis_Size_Name" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="GraphAxis_Style_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="GraphAxis_TitlePlacement_Name" xml:space="preserve">
+    <value>Placement de titre</value>
+  </data>
+  <data name="GraphAxis_TitleStyle_Name" xml:space="preserve">
+    <value>Style de titre</value>
+  </data>
+  <data name="GraphAxis_Title_Name" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="GraphCoordinateSystem_Bindings_Name" xml:space="preserve">
+    <value>Liaisons</value>
+  </data>
+  <data name="GraphCoordinateSystem_Style_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="GraphGroup_Action_Name" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="GraphGroup_ChildGroups_Name" xml:space="preserve">
+    <value>Groupes d'enfants</value>
+  </data>
+  <data name="GraphGroup_Label_Name" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="GraphGroup_Visible_Name" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="GraphItem_Bounds_Name" xml:space="preserve">
+    <value>Limites</value>
+  </data>
+  <data name="GraphItem_Height_Name" xml:space="preserve">
+    <value>Hauteur</value>
+  </data>
+  <data name="GraphItem_IsInsidePlotArea_Name" xml:space="preserve">
+    <value>Est à l'intérieur parcelle zone</value>
+  </data>
+  <data name="GraphItem_Left_Name" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="GraphItem_Location_Name" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="GraphItem_Size_Name" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="GraphItem_Style_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="GraphItem_Top_Name" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="GraphItem_Width_Name" xml:space="preserve">
+    <value>Largeur</value>
+  </data>
+  <data name="GraphLegend_Position_Name" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="GraphLegend_TitleStyle_Name" xml:space="preserve">
+    <value>Style de titre</value>
+  </data>
+  <data name="GraphLegend_Title_Name" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="GraphSeries2D_ArrangeMode_Name" xml:space="preserve">
+    <value>Mode d'arrangement</value>
+  </data>
+  <data name="GraphSeries2D_X_Name" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="GraphSeries2D_Y_Name" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="GraphSeriesBase_ColorPalette_Name" xml:space="preserve">
+    <value>Palette de couleurs</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointConditionalFormatting_Name" xml:space="preserve">
+    <value>Mise en forme conditionnelle de point de données</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointLabelAngle_Name" xml:space="preserve">
+    <value>Angle d'étiquette de point de données</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointLabelConditionalFormatting_Name" xml:space="preserve">
+    <value>Mise en forme conditionnelle de l'étiquette de point de données</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointLabelStyle_Name" xml:space="preserve">
+    <value>Style d'étiquette de point de données</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointLabel_Name" xml:space="preserve">
+    <value>Étiquette de point de données</value>
+  </data>
+  <data name="GraphSeriesBase_DataPointStyle_Name" xml:space="preserve">
+    <value>Style de point de données</value>
+  </data>
+  <data name="GraphSeriesBase_LegendItem_Name" xml:space="preserve">
+    <value>Élément de la légende</value>
+  </data>
+  <data name="GraphSeriesBase_Name_Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="GraphSeriesBase_ToolTip_Name" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="GraphSeries_ArrangeByAxis_Name" xml:space="preserve">
+    <value>Organiser par axe</value>
+  </data>
+  <data name="GraphSeries_CategoryGroup_Name" xml:space="preserve">
+    <value>Catégorie groupe</value>
+  </data>
+  <data name="GraphSeries_CoordinateSystem_Name" xml:space="preserve">
+    <value>Système de coordonnées</value>
+  </data>
+  <data name="GraphSeries_SeriesGroup_Name" xml:space="preserve">
+    <value>Groupe de séries</value>
+  </data>
+  <data name="GraphTitle_Position_Name" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="GraphTitle_Text_Name" xml:space="preserve">
+    <value>Texte</value>
+  </data>
+  <data name="Graph_CategoryGroups_Name" xml:space="preserve">
+    <value>Groupes de catégories</value>
+  </data>
+  <data name="Graph_ColorPalette_Name" xml:space="preserve">
+    <value>Palette de couleurs</value>
+  </data>
+  <data name="Graph_CoordinateSystems_Name" xml:space="preserve">
+    <value>Systèmes de coordonnées</value>
+  </data>
+  <data name="Graph_Culture_Name" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="Graph_Legend_Name" xml:space="preserve">
+    <value>Légende</value>
+  </data>
+  <data name="Graph_PlotAreaStyle_Name" xml:space="preserve">
+    <value>Style de zone de traçage</value>
+  </data>
+  <data name="Graph_SeriesGroups_Name" xml:space="preserve">
+    <value>Groupes de séries</value>
+  </data>
+  <data name="Graph_Series_Name" xml:space="preserve">
+    <value>Séries</value>
+  </data>
+  <data name="Graph_Titles_Name" xml:space="preserve">
+    <value>Titres</value>
+  </data>
+  <data name="GroupHeaderFooterPrintOnEveryPage_Name" xml:space="preserve">
+    <value>Imprimer sur chaque page</value>
+  </data>
+  <data name="GroupHeaderGroupKeepTogether_Name" xml:space="preserve">
+    <value>Groupe garder ensemble</value>
+  </data>
+  <data name="Groupingiption_Name" xml:space="preserve">
+    <value>Groupements</value>
+  </data>
+  <data name="Groupsiption_Name" xml:space="preserve">
+    <value>Groupes</value>
+  </data>
+  <data name="LegendItem_ConditionalFormatting_Name" xml:space="preserve">
+    <value>Mise en forme conditionnelle</value>
+  </data>
+  <data name="LegendItem_MarkConditionalFormatting_Name" xml:space="preserve">
+    <value>Marquer la mise en forme conditionnelle</value>
+  </data>
+  <data name="LegendItem_MarkStyle_Name" xml:space="preserve">
+    <value>Style de marque</value>
+  </data>
+  <data name="LegendItem_Style_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="LegendItem_Value_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="LineSeries_ConditionalFormatting_Name" xml:space="preserve">
+    <value>Mise en forme conditionnelle</value>
+  </data>
+  <data name="LineSeries_DataPointLabelAlignment_Name" xml:space="preserve">
+    <value>Alignement des étiquettes des points de données</value>
+  </data>
+  <data name="LineSeries_DataPointLabelOffset_Name" xml:space="preserve">
+    <value>Décalage d'étiquette de point de données</value>
+  </data>
+  <data name="LineSeries_LineStyle_Name" xml:space="preserve">
+    <value>Style de la ligne</value>
+  </data>
+  <data name="LineSeries_LineType_Name" xml:space="preserve">
+    <value>Type de ligne</value>
+  </data>
+  <data name="LineSeries_MarkerMaxSize_Name" xml:space="preserve">
+    <value>Taille maximale du marqueur</value>
+  </data>
+  <data name="LineSeries_MarkerMinSize_Name" xml:space="preserve">
+    <value>Taille minimale du marqueur</value>
+  </data>
+  <data name="LineSeries_MarkerSize_Name" xml:space="preserve">
+    <value>Taille du marqueur</value>
+  </data>
+  <data name="LineSeries_MarkerType_Name" xml:space="preserve">
+    <value>Type de marqueur</value>
+  </data>
+  <data name="LineSeries_MaximumSize_Name" xml:space="preserve">
+    <value>Taille maximale</value>
+  </data>
+  <data name="LineSeries_MinimumSize_Name" xml:space="preserve">
+    <value>Taille minimale</value>
+  </data>
+  <data name="LineSeries_Size_Name" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="LineSeries_SmoothLine_Name" xml:space="preserve">
+    <value>Ligne lisse</value>
+  </data>
+  <data name="LogarithmicScale_Base_Name" xml:space="preserve">
+    <value>Base</value>
+  </data>
+  <data name="LogarithmicScale_Maximum_Name" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="LogarithmicScale_Minimum_Name" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="LogarithmicScale_Value_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="NoDataMessage_Name" xml:space="preserve">
+    <value>Aucun message de données</value>
+  </data>
+  <data name="NoDataStyle_Name" xml:space="preserve">
+    <value>Aucun style de données</value>
+  </data>
+  <data name="NumericalScaleBase_DataPointTicks_Name" xml:space="preserve">
+    <value>Tiques point de données</value>
+  </data>
+  <data name="NumericalScaleBase_Maximum_Name" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="NumericalScaleBase_Minimum_Name" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="NumericalScaleCrossAxisPosition_Value_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="NumericalScale_LabelStep_Name" xml:space="preserve">
+    <value>Étape d'étiquette</value>
+  </data>
+  <data name="NumericalScale_MajorStep_Name" xml:space="preserve">
+    <value>Étape majeure</value>
+  </data>
+  <data name="NumericalScale_MinorStep_Name" xml:space="preserve">
+    <value>Étape mineure</value>
+  </data>
+  <data name="OhlcMarks_Close_Name" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="OhlcMarks_High_Name" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="OhlcMarks_Low_Name" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="OhlcMarks_Open_Name" xml:space="preserve">
+    <value>Ouvrir</value>
+  </data>
+  <data name="OhlcSeries_DataPointLabelAlignment_Name" xml:space="preserve">
+    <value>Alignement des étiquettes des points de données</value>
+  </data>
+  <data name="OhlcSeries_DataPointLabelOffset_Name" xml:space="preserve">
+    <value>Décalage d'étiquette de point de données</value>
+  </data>
+  <data name="OhlcSeries_MarkerType_Name" xml:space="preserve">
+    <value>Type de marqueur</value>
+  </data>
+  <data name="OhlcSeries_MinMarkerWidth_Name" xml:space="preserve">
+    <value>Largeur de marqueur min</value>
+  </data>
+  <data name="OhlcSeries_Y_Name" xml:space="preserve">
+    <value>OHLC</value>
+  </data>
+  <data name="PageHeaderFooterPrintOnFirstPage_Name" xml:space="preserve">
+    <value>Imprimer sur la première page</value>
+  </data>
+  <data name="PageHeaderFooterPrintOnLastPage_Name" xml:space="preserve">
+    <value>Imprimer sur la dernière page</value>
+  </data>
+  <data name="PictureBoxImageData_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="PictureBoxMimeType_Name" xml:space="preserve">
+    <value>Type MIME</value>
+  </data>
+  <data name="PictureBoxSizing_Name" xml:space="preserve">
+    <value>Dimensionnement</value>
+  </data>
+  <data name="PolarCoordinateSystem_AngularAxisLabelOrientation_Name" xml:space="preserve">
+    <value>Orientation de l'étiquette de l'axe angulaire</value>
+  </data>
+  <data name="PolarCoordinateSystem_AngularAxisStartAngle_Name" xml:space="preserve">
+    <value>Angle de départ de l'axe angulaire</value>
+  </data>
+  <data name="PolarCoordinateSystem_AngularAxisSweepAngle_Name" xml:space="preserve">
+    <value>Angle de balayage de l'axe angulaire</value>
+  </data>
+  <data name="PolarCoordinateSystem_AngularAxis_Name" xml:space="preserve">
+    <value>Axe angulaire</value>
+  </data>
+  <data name="PolarCoordinateSystem_InnerRadiusRatio_Name" xml:space="preserve">
+    <value>Rapport de rayon interne</value>
+  </data>
+  <data name="PolarCoordinateSystem_RadialAxis_Name" xml:space="preserve">
+    <value>Axe radial</value>
+  </data>
+  <data name="ReportCulture_Name" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="ReportDataSource_Name" xml:space="preserve">
+    <value>Source de données</value>
+  </data>
+  <data name="ReportDocumentNameiption_Name" xml:space="preserve">
+    <value>Nom du document</value>
+  </data>
+  <data name="ReportItemAnchoring_Name" xml:space="preserve">
+    <value>Ancrage</value>
+  </data>
+  <data name="ReportItemBaseAccessible_Name" xml:space="preserve">
+    <value>Description accessible</value>
+  </data>
+  <data name="ReportItemBaseAction_Name" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="ReportItemBaseBookmarkId_Name" xml:space="preserve">
+    <value>ID de signet</value>
+  </data>
+  <data name="ReportItemBaseDocumentMapText_Name" xml:space="preserve">
+    <value>Texte de la carte du document</value>
+  </data>
+  <data name="ReportItemBaseParent_Name" xml:space="preserve">
+    <value>Parent</value>
+  </data>
+  <data name="ReportItemBaseStyleName_Name" xml:space="preserve">
+    <value>Nom du style</value>
+  </data>
+  <data name="ReportItemBaseStyle_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="ReportItemBaseTocText_Name" xml:space="preserve">
+    <value>TOC texte</value>
+  </data>
+  <data name="ReportItemBaseToolTip_Name" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="ReportItemBaseVisible_Name" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="ReportItemDocking_Name" xml:space="preserve">
+    <value>Accueil</value>
+  </data>
+  <data name="ReportItemKeepTogether_Name" xml:space="preserve">
+    <value>Garder ensemble</value>
+  </data>
+  <data name="ReportItemLocation_Name" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="ReportItemSize_Name" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="ReportPageNumberingStyleiption_Name" xml:space="preserve">
+    <value>Style de numérotation de page</value>
+  </data>
+  <data name="ReportPageSettings_Name" xml:space="preserve">
+    <value>Paramètres de la page</value>
+  </data>
+  <data name="ReportParametersiption_Name" xml:space="preserve">
+    <value>Paramètres de rapport</value>
+  </data>
+  <data name="ReportSectionHeight_Name" xml:space="preserve">
+    <value>Hauteur</value>
+  </data>
+  <data name="ReportSectionKeepTogether_Name" xml:space="preserve">
+    <value>Garder ensemble</value>
+  </data>
+  <data name="ReportSectionPageBreak_Name" xml:space="preserve">
+    <value>Saut de page</value>
+  </data>
+  <data name="ReportUnitOfMeasure_Name" xml:space="preserve">
+    <value>Unité de mesure</value>
+  </data>
+  <data name="ReportWidth_Name" xml:space="preserve">
+    <value>Largeur</value>
+  </data>
+  <data name="Scale_Reversed_Name" xml:space="preserve">
+    <value>Inversé</value>
+  </data>
+  <data name="Scale_SpacingSlotCount_Name" xml:space="preserve">
+    <value>Nombre de fentes d'espacement</value>
+  </data>
+  <data name="SectionPrintAtBottom_Name" xml:space="preserve">
+    <value>Imprimer en bas</value>
+  </data>
+  <data name="ShapeAngle_Name" xml:space="preserve">
+    <value>Angle</value>
+  </data>
+  <data name="Sortings_Name" xml:space="preserve">
+    <value>Tris</value>
+  </data>
+  <data name="StyleBackgroundColor_Name" xml:space="preserve">
+    <value>Couleur de fond</value>
+  </data>
+  <data name="StyleBackgroundImageImageData_Name" xml:space="preserve">
+    <value>Données d'image</value>
+  </data>
+  <data name="StyleBackgroundImageMIMEType_Name" xml:space="preserve">
+    <value>Type MIME</value>
+  </data>
+  <data name="StyleBackgroundImageRepeat_Name" xml:space="preserve">
+    <value>Répéter</value>
+  </data>
+  <data name="StyleBackgroundImage_Name" xml:space="preserve">
+    <value>Image de fond</value>
+  </data>
+  <data name="StyleBorderColor_Name" xml:space="preserve">
+    <value>Couleur de la bordure</value>
+  </data>
+  <data name="StyleBorderStyle_Name" xml:space="preserve">
+    <value>Style de bordure</value>
+  </data>
+  <data name="StyleBorderWidth_Name" xml:space="preserve">
+    <value>Largeur de la bordure</value>
+  </data>
+  <data name="StyleBottomBorderColor_Name" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="StyleBottomBorderStyle_Name" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="StyleBottomBorderWidth_Name" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="StyleBottomPadding_Name" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="StyleColor_Name" xml:space="preserve">
+    <value>Couleur</value>
+  </data>
+  <data name="StyleDefaultBorderColor_Name" xml:space="preserve">
+    <value>Par défaut</value>
+  </data>
+  <data name="StyleDefaultBorderStyle_Name" xml:space="preserve">
+    <value>Par défaut</value>
+  </data>
+  <data name="StyleDefaultBorderWidth_Name" xml:space="preserve">
+    <value>Par défaut</value>
+  </data>
+  <data name="StyleFontBold_Name" xml:space="preserve">
+    <value>Gras</value>
+  </data>
+  <data name="StyleFontItalic_Name" xml:space="preserve">
+    <value>Italique</value>
+  </data>
+  <data name="StyleFontName_Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="StyleFontSize_Name" xml:space="preserve">
+    <value>Taille</value>
+  </data>
+  <data name="StyleFontStrikeout_Name" xml:space="preserve">
+    <value>Barré</value>
+  </data>
+  <data name="StyleFontStyle_Name" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="StyleFontUnderline_Name" xml:space="preserve">
+    <value>Souligner</value>
+  </data>
+  <data name="StyleFont_Name" xml:space="preserve">
+    <value>Police</value>
+  </data>
+  <data name="StyleLeftBorderColor_Name" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="StyleLeftBorderStyle_Name" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="StyleLeftBorderWidth_Name" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="StyleLeftPadding_Name" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="StyleLineColor_Name" xml:space="preserve">
+    <value>Couleur de la ligne</value>
+  </data>
+  <data name="StyleLineStyle_Name" xml:space="preserve">
+    <value>Style de la ligne</value>
+  </data>
+  <data name="StyleLineWidth_Name" xml:space="preserve">
+    <value>Largeur de la ligne</value>
+  </data>
+  <data name="StylePadding_Name" xml:space="preserve">
+    <value>Marge intérieure</value>
+  </data>
+  <data name="StyleRightBorderColor_Name" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="StyleRightBorderStyle_Name" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="StyleRightBorderWidth_Name" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="StyleRightPadding_Name" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="StyleTopBorderColor_Name" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="StyleTopBorderStyle_Name" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="StyleTopBorderWidth_Name" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="StyleTopPadding_Name" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="StyleVerticalAlign_Name" xml:space="preserve">
+    <value>Alignement vertical</value>
+  </data>
+  <data name="Style_TextAlign_Name" xml:space="preserve">
+    <value>Aligner le texte</value>
+  </data>
+  <data name="Style_Visible_Name" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="TextBoxCanGrow_Name" xml:space="preserve">
+    <value>Peut croître</value>
+  </data>
+  <data name="TextBoxCanShrink_Name" xml:space="preserve">
+    <value>Peut rétrécir</value>
+  </data>
+  <data name="TextBoxCulture_Name" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="TextBoxMultiline_Name" xml:space="preserve">
+    <value>Multiligne</value>
+  </data>
+  <data name="TextBoxValue_Name" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="TextBoxWordWrap_Name" xml:space="preserve">
+    <value>Habillage de texte</value>
+  </data>
+  <data name="TextItemBaseCanGrow_Name" xml:space="preserve">
+    <value>Peut croître</value>
+  </data>
+  <data name="TextItemBaseCanShrink_Name" xml:space="preserve">
+    <value>Peut rétrécir</value>
+  </data>
+  <data name="TextItemBaseCulture_Name" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="TextItemBaseMultiline_Name" xml:space="preserve">
+    <value>Multiligne</value>
+  </data>
+  <data name="TextItemBaseWordWrap_Name" xml:space="preserve">
+    <value>Habillage de texte</value>
+  </data>
+  <data name="DuplicateReportParameterName_Warning" xml:space="preserve">
+    <value>Le paramètre Report avec le nom'{0}'existe déjà.</value>
+  </data>
+  <data name="PresentationCategory" xml:space="preserve">
+    <value>Présentation</value>
+  </data>
+  <data name="Report_ExternalStyleSheets_Description" xml:space="preserve">
+    <value>Collection de feuilles de style externes pour le rapport.</value>
+  </data>
+  <data name="Report_ExternalStyleSheets_Name" xml:space="preserve">
+    <value>Feuilles de style externes</value>
+  </data>
+  <data name="Report_SnapGridSize_Description" xml:space="preserve">
+    <value>Définissez la taille de la grille d'alignement de la surface de conception.</value>
+  </data>
+  <data name="Report_SnapGridSize_Name" xml:space="preserve">
+    <value>Taille de la grille Snap</value>
+  </data>
+  <data name="Report_StyleSheet_Description" xml:space="preserve">
+    <value>Feuille de style associée au rapport</value>
+  </data>
+  <data name="Report_StyleSheet_Name" xml:space="preserve">
+    <value>Feuille de style</value>
+  </data>
+  <data name="AttributeSelector_PropertyName_Description" xml:space="preserve">
+    <value>Nom de la propriété à assortir.</value>
+  </data>
+  <data name="AttributeSelector_PropertyName_DisplayName" xml:space="preserve">
+    <value>Nom de la propriété</value>
+  </data>
+  <data name="DescendantSelector_Selectors_Description" xml:space="preserve">
+    <value>Collection de sélecteurs contenant les sélecteurs qui définissent le modèle de descente utilisé pour correspondre à l'élément</value>
+  </data>
+  <data name="DescendantSelector_Selectors_DisplayName" xml:space="preserve">
+    <value>Sélecteurs</value>
+  </data>
+  <data name="StyleRule_Selectors_Description" xml:space="preserve">
+    <value>Type que ce sélecteur correspond.</value>
+  </data>
+  <data name="StyleRule_Selectors_DisplayName" xml:space="preserve">
+    <value>Sélecteurs</value>
+  </data>
+  <data name="StyleSelector_StyleName_Description" xml:space="preserve">
+    <value>Nom du style que ce sélecteur correspond</value>
+  </data>
+  <data name="StyleSelector_StyleName_DisplayName" xml:space="preserve">
+    <value>Nom du style</value>
+  </data>
+  <data name="TypeSelector_Type_Description" xml:space="preserve">
+    <value>Type que ce sélecteur correspond.</value>
+  </data>
+  <data name="TypeSelector_Type_DisplayName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Binding_Expression_Name" xml:space="preserve">
+    <value>Expression</value>
+  </data>
+  <data name="Binding_Path_Name" xml:space="preserve">
+    <value>Chemin</value>
+  </data>
+  <data name="PageSettings_ColumnCount_Description" xml:space="preserve">
+    <value>Spécifie le nombre de colonnes présentes dans la section Détails du rapport.</value>
+  </data>
+  <data name="PageSettings_ColumnCount_Name" xml:space="preserve">
+    <value>Nombre de colonnes</value>
+  </data>
+  <data name="PageSettings_ColumnSpacing_Description" xml:space="preserve">
+    <value>Valeur indiquant l'espace en unités entre deux colonnes adjacentes.</value>
+  </data>
+  <data name="PageSettings_ColumnSpacing_Name" xml:space="preserve">
+    <value>Espacement des colonnes</value>
+  </data>
+  <data name="PageSettings_Landscape_Description" xml:space="preserve">
+    <value>Indiquez si la page est imprimée en orientation paysage ou portrait.</value>
+  </data>
+  <data name="PageSettings_Landscape_Name" xml:space="preserve">
+    <value>Paysage</value>
+  </data>
+  <data name="PageSettings_Margins_Description" xml:space="preserve">
+    <value>Marges pour cette page.</value>
+  </data>
+  <data name="PageSettings_Margins_Name" xml:space="preserve">
+    <value>Marges</value>
+  </data>
+  <data name="PageSettings_PaperKind_Description" xml:space="preserve">
+    <value>Type de papier pour la page.</value>
+  </data>
+  <data name="PageSettings_PaperKind_Name" xml:space="preserve">
+    <value>Type de papier</value>
+  </data>
+  <data name="PageSettings_PaperSize_Description" xml:space="preserve">
+    <value>Format de papier pour la page.</value>
+  </data>
+  <data name="PageSettings_PaperSize_Name" xml:space="preserve">
+    <value>Format de papier</value>
+  </data>
+  <data name="PageSettings_Watermarks_Description" xml:space="preserve">
+    <value>Collection de filigranes pour la page.</value>
+  </data>
+  <data name="PageSettings_Watermarks_Name" xml:space="preserve">
+    <value>Filigranes</value>
+  </data>
+  <data name="Table_KeepTogether_Name" xml:space="preserve">
+    <value>Garder ensemble</value>
+  </data>
+  <data name="PictureWatermark_Description" xml:space="preserve">
+    <value>Représente un filigrane d'image sur une page imprimable.</value>
+  </data>
+  <data name="PictureWatermark_Image_Description" xml:space="preserve">
+    <value>L'image du filigrane à imprimer sur la page.</value>
+  </data>
+  <data name="PictureWatermark_Image_Name" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="PictureWatermark_Name" xml:space="preserve">
+    <value>Filigrane d'image</value>
+  </data>
+  <data name="PictureWatermark_Sizing_Description" xml:space="preserve">
+    <value>Le mode de dimensionnement de l'image en filigrane sur la page imprimable.</value>
+  </data>
+  <data name="PictureWatermark_Sizing_Name" xml:space="preserve">
+    <value>Dimensionnement</value>
+  </data>
+  <data name="TextWatermark_Color_Description" xml:space="preserve">
+    <value>La couleur du texte de filigrane.</value>
+  </data>
+  <data name="TextWatermark_Color_Name" xml:space="preserve">
+    <value>Couleur</value>
+  </data>
+  <data name="TextWatermark_Description" xml:space="preserve">
+    <value>Représente un filigrane de texte sur une page imprimable.</value>
+  </data>
+  <data name="TextWatermark_Font_Description" xml:space="preserve">
+    <value>Les paramètres de police du texte de filigrane.</value>
+  </data>
+  <data name="TextWatermark_Font_Name" xml:space="preserve">
+    <value>Police</value>
+  </data>
+  <data name="TextWatermark_Name" xml:space="preserve">
+    <value>Filigrane de texte</value>
+  </data>
+  <data name="TextWatermark_Orientation_Description" xml:space="preserve">
+    <value>L'orientation du texte de filigrane sur la page imprimable.</value>
+  </data>
+  <data name="TextWatermark_Orientation_Name" xml:space="preserve">
+    <value>Orientation</value>
+  </data>
+  <data name="TextWatermark_Text_Description" xml:space="preserve">
+    <value>Texte du filigrane à imprimer sur la page. Le texte peut être spécifié directement sous la forme d'une chaîne littérale ou indirectement en tant qu'expression évaluée au moment de l'exécution pour chaque page imprimable.</value>
+  </data>
+  <data name="TextWatermark_Text_Name" xml:space="preserve">
+    <value>Texte</value>
+  </data>
+  <data name="Tooltip_Description" xml:space="preserve">
+    <value>Représente une classe qui définit une info-bulle affichée sur un élément de rapport ou un DataPoint.</value>
+  </data>
+  <data name="Tooltip_Name" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="Tooltip_Text_Description" xml:space="preserve">
+    <value>Texte à afficher sous forme d'info-bulle. Prend en charge les expressions et les expressions incorporées.</value>
+  </data>
+  <data name="Tooltip_Text_Name" xml:space="preserve">
+    <value>Texte</value>
+  </data>
+  <data name="Tooltip_Title_Description" xml:space="preserve">
+    <value>Texte à afficher sous la forme d'un titre d'info-bulle. Prend en charge les expressions et les expressions incorporées.</value>
+  </data>
+  <data name="Tooltip_Title_Name" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="Watermark_Description" xml:space="preserve">
+    <value>Représente un filigrane sur une page imprimable.</value>
+  </data>
+  <data name="Watermark_Name" xml:space="preserve">
+    <value>Filigrane</value>
+  </data>
+  <data name="Watermark_Opacity_Description" xml:space="preserve">
+    <value>L'opacité du filigrane lors de sa combinaison avec les autres éléments de la page imprimable.</value>
+  </data>
+  <data name="Watermark_Opacity_Name" xml:space="preserve">
+    <value>Opacité</value>
+  </data>
+  <data name="Watermark_Position_Description" xml:space="preserve">
+    <value>Position du filigrane par rapport aux autres éléments de la page imprimable.</value>
+  </data>
+  <data name="Watermark_Position_Name" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Watermark_PrintOnFirstPage_Description" xml:space="preserve">
+    <value>Valeur indiquant s'il faut imprimer le filigrane sur la première page imprimable du rapport.</value>
+  </data>
+  <data name="Watermark_PrintOnFirstPage_Name" xml:space="preserve">
+    <value>Imprimer sur la première page</value>
+  </data>
+  <data name="Watermark_PrintOnLastPage_Description" xml:space="preserve">
+    <value>Valeur indiquant s'il faut imprimer le filigrane sur la dernière page imprimable du rapport.</value>
+  </data>
+  <data name="Watermark_PrintOnLastPage_Name" xml:space="preserve">
+    <value>Imprimer sur la dernière page</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>aucun</value>
+  </data>
+</root>

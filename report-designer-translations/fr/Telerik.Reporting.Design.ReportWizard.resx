@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BandReportWizardDescription" xml:space="preserve">
+    <value>Vous guide à travers la création d'un rapport de bande.</value>
+  </data>
+  <data name="BandReportWizardName" xml:space="preserve">
+    <value>Assistant Rapport de bande</value>
+  </data>
+  <data name="BandWizard_AdjustItemsOption" xml:space="preserve">
+    <value>Ajuster les éléments de rapport pour s'adapter à l'espace disponible</value>
+  </data>
+  <data name="BandWizard_AvailableLayouts" xml:space="preserve">
+    <value>Mises en page disponibles:</value>
+  </data>
+  <data name="BandWizard_Builder_GrandTotal" xml:space="preserve">
+    <value>Grand total:</value>
+  </data>
+  <data name="BandWizard_Builder_SubTotal" xml:space="preserve">
+    <value>Sous-total:</value>
+  </data>
+  <data name="BandWizard_GenerateTotalsOption" xml:space="preserve">
+    <value>Générer des sous-totaux et des totaux globaux</value>
+  </data>
+  <data name="BandWizard_PageSettings" xml:space="preserve">
+    <value>Paramètres de la page</value>
+  </data>
+  <data name="BlankReportWizardDescription" xml:space="preserve">
+    <value>Crée un rapport vide afin que vous puissiez commencer à le construire à partir de zéro.</value>
+  </data>
+  <data name="BlankReportWizardName" xml:space="preserve">
+    <value>Rapport blanc</value>
+  </data>
+  <data name="BuildReportTransactionText" xml:space="preserve">
+    <value>Rapport de build</value>
+  </data>
+  <data name="ChooseReportLayout" xml:space="preserve">
+    <value>Choisir la disposition des rapports</value>
+  </data>
+  <data name="ChoroplethReportWizardDescription" xml:space="preserve">
+    <value>Affiche les données de rapport sous la forme d'une carte avec des zones de couleur thématique.</value>
+  </data>
+  <data name="ChoroplethReportWizardName" xml:space="preserve">
+    <value>Assistant choroplèthe</value>
+  </data>
+  <data name="CrosstabReportWizardDescription" xml:space="preserve">
+    <value>Vous guide à travers la création d'un rapport d'analyse croisée.</value>
+  </data>
+  <data name="CrosstabReportWizardName" xml:space="preserve">
+    <value>Assistant analyse croisée</value>
+  </data>
+  <data name="DataSourceFieldMappingWizardName" xml:space="preserve">
+    <value>Assistant mappage de champ source de données</value>
+  </data>
+  <data name="DataSourceWizardTransactionName" xml:space="preserve">
+    <value>Assistant source de données</value>
+  </data>
+  <data name="FieldMappings_DataSourceFields" xml:space="preserve">
+    <value>Champs de source de données</value>
+  </data>
+  <data name="FieldMappings_TemplateFields" xml:space="preserve">
+    <value>Champs de modèle</value>
+  </data>
+  <data name="GraphReportWizardDescription" xml:space="preserve">
+    <value>Guide votre grâce à la création d'une variété de graphiques.</value>
+  </data>
+  <data name="GraphReportWizardName" xml:space="preserve">
+    <value>Assistant graphique</value>
+  </data>
+  <data name="ImportReportWizardDescription" xml:space="preserve">
+    <value>Démarre l'Assistant importation de rapport pour la conversion d'un rapport à partir d'un autre format de rapport.</value>
+  </data>
+  <data name="ImportReportWizardName" xml:space="preserve">
+    <value>Assistant importation de rapports</value>
+  </data>
+  <data name="InvoiceReportWizardDescription" xml:space="preserve">
+    <value>Vous guide à travers la création d'un rapport de facturation.</value>
+  </data>
+  <data name="InvoiceReportWizardName" xml:space="preserve">
+    <value>Assistant Rapport de facturation</value>
+  </data>
+  <data name="LabelReportWizardDescription" xml:space="preserve">
+    <value>Vous guide à travers la création d'un rapport d'étiquette.</value>
+  </data>
+  <data name="LabelReportWizardName" xml:space="preserve">
+    <value>Assistant de rapport d'étiquette</value>
+  </data>
+  <data name="LeftAlignedLayoutDesc" xml:space="preserve">
+    <value>La disposition alignée à gauche place les éléments de chaque section à partir du début de la section.</value>
+  </data>
+  <data name="LeftAlignedLayoutName" xml:space="preserve">
+    <value>Aligné à gauche</value>
+  </data>
+  <data name="MapReportWizardDescription" xml:space="preserve">
+    <value>Affiche les données de rapport sur un fond géographique.</value>
+  </data>
+  <data name="MapReportWizardName" xml:space="preserve">
+    <value>Assistant carte</value>
+  </data>
+  <data name="OutlineLayoutDesc" xml:space="preserve">
+    <value>La disposition de contour arrange les éléments de gauche à droite avec les éléments de chaque groupe allant plus à droite par un décalage fixe.</value>
+  </data>
+  <data name="OutlineLayoutName" xml:space="preserve">
+    <value>Contour</value>
+  </data>
+  <data name="ProductCatalogReportWizardDescription" xml:space="preserve">
+    <value>Vous guide à travers la création d'un rapport de catalogue de produits</value>
+  </data>
+  <data name="ProductCatalogReportWizardName" xml:space="preserve">
+    <value>Assistant Rapport de catalogue de produits</value>
+  </data>
+  <data name="ReportWizardTransactionName" xml:space="preserve">
+    <value>Initialisez un nouveau rapport de bande.</value>
+  </data>
+  <data name="SteppedLayoutDesc" xml:space="preserve">
+    <value>La disposition étagée réorganise les éléments dans les colonnes afin qu'ils ne se chevauchent pas verticalement.</value>
+  </data>
+  <data name="SteppedLayoutName" xml:space="preserve">
+    <value>Marché</value>
+  </data>
+  <data name="TableReportWizardDescription" xml:space="preserve">
+    <value>Vous guide à travers la création d'un rapport de table.</value>
+  </data>
+  <data name="TableReportWizardName" xml:space="preserve">
+    <value>Assistant Tableau</value>
+  </data>
+</root>

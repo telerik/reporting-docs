@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CanConnect_ConnectionFailure" xml:space="preserve">
+    <value>Impossible de se connecter au serveur de rapports.</value>
+  </data>
+  <data name="CreateReport_ReportNameInvalidCharacters" xml:space="preserve">
+    <value>Un nom de rapport ne peut contenir aucun des caractères suivants: {0} {1}</value>
+  </data>
+  <data name="CreateReport_ReportReplaceConfirmation" xml:space="preserve">
+    <value>Un rapport portant le nom «{0}» existe déjà dans la catégorie «{1}». Voulez-vous y ajouter une nouvelle révision?</value>
+  </data>
+  <data name="CreatReport_Failed" xml:space="preserve">
+    <value>Le rapport ne peut pas être créé. Vérifiez si le serveur de rapports sélectionné a des catégories définies et si l'utilisateur connecté dispose d'autorisations suffisantes.</value>
+  </data>
+  <data name="Lock_LockedByUserError" xml:space="preserve">
+    <value>Le rapport est verrouillé par l'utilisateur «{0}».</value>
+  </data>
+  <data name="Lock_OperationFailed" xml:space="preserve">
+    <value>Échec de l'opération de verrouillage.</value>
+  </data>
+  <data name="Publish_OperationFailed" xml:space="preserve">
+    <value>L'opération de publication a échoué.</value>
+  </data>
+  <data name="Unlock_OperationFailed" xml:space="preserve">
+    <value>L'opération de déverrouillage a échoué.</value>
+  </data>
+  <data name="VerifySchemaCompatibility_Warning" xml:space="preserve">
+    <value>Ce concepteur prend en charge le schéma de définition de rapport {0:0.0} qui est plus récent que le schéma {1:0.0}, pris en charge par le serveur de rapports. Si vous souhaitez modifier et publier les modifications, vous devez utiliser le concepteur de rapports fourni avec le serveur de rapports.</value>
+  </data>
+  <data name="Ribbon_Warning_Revert" xml:space="preserve">
+    <value>Toutes les modifications apportées à la définition du rapport seront perdues. Voulez-vous continuer?</value>
+  </data>
+  <data name="Ribbon_Revert_Caption" xml:space="preserve">
+    <value>Rétablir les modifications</value>
+  </data>
+  <data name="Connection_Error" xml:space="preserve">
+    <value>Erreur lors de la connexion au serveur. S'il vous plaît vérifier l'URI du serveur et les informations d'identification</value>
+  </data>
+  <data name="Connection_Error_Uri" xml:space="preserve">
+    <value>L'URI spécifié a un format incorrect.</value>
+  </data>
+  <data name="Connection_Error_Federation" xml:space="preserve">
+    <value>Impossible de récupérer les paramètres du fournisseur externe: </value>
+  </data>
+  <data name="EditServerReportSourceDialog_ServerOption_Text" xml:space="preserve">
+    <value>Serveur</value>
+  </data>
+  <data name="EditServerReportSourceDialog_ServerOption_Description" xml:space="preserve">
+    <value>Sélectionnez un rapport ou entrez un localisateur de rapport valide (par exemple, catégorie/nom):</value>
+  </data>
+  <data name="EditServerReportSourceDialog_Text" xml:space="preserve">
+    <value>&lt; Select Server rapport &gt;</value>
+  </data>
+  <data name="OpenDialog_Header" xml:space="preserve">
+    <value>Ouvrir le rapport à partir de {0}</value>
+  </data>
+  <data name="PublishDialog_Title" xml:space="preserve">
+    <value>Publier</value>
+  </data>
+  <data name="SaveAsDialog_Header" xml:space="preserve">
+    <value>{0} un rapport dans {1}</value>
+  </data>
+  <data name="CreateReportDialog_Title" xml:space="preserve">
+    <value>Créer</value>
+  </data>
+  <data name="SaveAsFileDialog_Title" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="Disconnect_EnsureNotInUse_Warning" xml:space="preserve">
+    <value>Vous avez ouvert des rapports à partir de ce serveur. Vous devez d'abord fermer les onglets rapports.</value>
+  </data>
+  <data name="AddReportServer_Error_ReportServerAlreadyExist" xml:space="preserve">
+    <value>Le serveur de rapports'{0}'existe déjà.</value>
+  </data>
+  <data name="ContextualTab_ServerTools_Text" xml:space="preserve">
+    <value>Outils serveur</value>
+  </data>
+  <data name="ContextualTab_Server_Text" xml:space="preserve">
+    <value>Serveur</value>
+  </data>
+  <data name="ContextualTab_ReportManagement_Text" xml:space="preserve">
+    <value>Gestion des rapports</value>
+  </data>
+  <data name="ContextualTab_ReportManagement_Lock_Text" xml:space="preserve">
+    <value>Serrure</value>
+  </data>
+  <data name="ContextualTab_ReportManagement_Lock_Description" xml:space="preserve">
+    <value>Verrouillez le rapport pour l'éditer. Seulement vous serez en mesure de modifier les rapports.</value>
+  </data>
+  <data name="ContextualTab_ReportManagement_Publish_Text" xml:space="preserve">
+    <value>Publier</value>
+  </data>
+  <data name="ContextualTab_ReportManagement_Publish_Description" xml:space="preserve">
+    <value>Publier le rapport sur le serveur. Rendez vos modifications visibles à l'autre utilisateur avec des autorisations d'affichage.</value>
+  </data>
+  <data name="ContextualTab_ReportManagement_Revert_Text" xml:space="preserve">
+    <value>Revenir</value>
+  </data>
+  <data name="ContextualTab_ReportManagement_Revert_Description" xml:space="preserve">
+    <value>Rétablissez les modifications en attente et déverrouillez le rapport.</value>
+  </data>
+  <data name="ContextualTab_View_WebPreview_Text" xml:space="preserve">
+    <value>Aperçu Web</value>
+  </data>
+  <data name="ContextualTab_View_WebPreview_Description" xml:space="preserve">
+    <value>Réserver et prévisualiser le rapport en cours dans le navigateur.</value>
+  </data>
+  <data name="ConnectToServer_Label" xml:space="preserve">
+    <value>Se connecter au serveur de rapports</value>
+  </data>
+  <data name="Cancel_Button" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Category_Label" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="ConnectToServer_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ConnectToServer_LogIn" xml:space="preserve">
+    <value>Connexion</value>
+  </data>
+  <data name="ConnectToServer_LogInADFS" xml:space="preserve">
+    <value>Connexion avec les informations d'identification ADFS</value>
+  </data>
+  <data name="ConnectToServer_LogInExternal" xml:space="preserve">
+    <value>Connectez-vous avec des fournisseurs externes</value>
+  </data>
+  <data name="ConnectToServer_LogInLocal" xml:space="preserve">
+    <value>Ouvrir une session avec un compte local</value>
+  </data>
+  <data name="ConnectToServer_Or" xml:space="preserve">
+    <value>ou</value>
+  </data>
+  <data name="ConnectToServer_Password" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="ConnectToServer_RememberMe" xml:space="preserve">
+    <value>Se souvenir de moi</value>
+  </data>
+  <data name="ConnectToServer_ServerURI" xml:space="preserve">
+    <value>URI du serveur</value>
+  </data>
+  <data name="ConnectToServer_Username" xml:space="preserve">
+    <value>Nom d'utilisateur</value>
+  </data>
+  <data name="Ok_Button" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Open_Button" xml:space="preserve">
+    <value>Ouvrir</value>
+  </data>
+  <data name="Publish_Comment" xml:space="preserve">
+    <value>Commentaire :</value>
+  </data>
+  <data name="Publish_Confirmation" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir publier les modifications que vous avez apportées? Ils seront visibles pour tous les utilisateurs avec la permission appropriée.</value>
+  </data>
+  <data name="Publish_Description" xml:space="preserve">
+    <value>Publier le rapport sur le serveur</value>
+  </data>
+  <data name="Publish_KeepLocked" xml:space="preserve">
+    <value>Garder le rapport verrouillé?</value>
+  </data>
+  <data name="Publish_PublishButton" xml:space="preserve">
+    <value>Publier</value>
+  </data>
+  <data name="Report_CreatedBy" xml:space="preserve">
+    <value>Créé par</value>
+  </data>
+  <data name="Report_Label" xml:space="preserve">
+    <value>Rapport</value>
+  </data>
+  <data name="Report_LastModifiedOn" xml:space="preserve">
+    <value>Dernière modification le</value>
+  </data>
+  <data name="Report_LockedBy" xml:space="preserve">
+    <value>Verrouillé par</value>
+  </data>
+  <data name="Report_Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="SaveAs_Category" xml:space="preserve">
+    <value>Catégorie:</value>
+  </data>
+  <data name="SaveAs_Description" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="SaveAs_SaveButton" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="SaveAs_Title" xml:space="preserve">
+    <value>Titre:</value>
+  </data>
+</root>

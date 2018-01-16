@@ -1,0 +1,1281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PreviewTab_Back" xml:space="preserve">
+    <value>Revenir</value>
+  </data>
+  <data name="PreviewTab_DocumentMap" xml:space="preserve">
+    <value>Carte du document</value>
+  </data>
+  <data name="PreviewTab_Export" xml:space="preserve">
+    <value>Exporter</value>
+  </data>
+  <data name="PreviewTab_FirstPage" xml:space="preserve">
+    <value>Premier</value>
+  </data>
+  <data name="PreviewTab_Forward" xml:space="preserve">
+    <value>Avance</value>
+  </data>
+  <data name="PreviewTab_History" xml:space="preserve">
+    <value>Historique</value>
+  </data>
+  <data name="PreviewTab_LastPage" xml:space="preserve">
+    <value>Dernier</value>
+  </data>
+  <data name="PreviewTab_Navigation" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="PreviewTab_NextPage" xml:space="preserve">
+    <value>Suivante</value>
+  </data>
+  <data name="PreviewTab_PageSetup" xml:space="preserve">
+    <value>Mise en page</value>
+  </data>
+  <data name="PreviewTab_ParameterArea" xml:space="preserve">
+    <value>Zone de paramètres</value>
+  </data>
+  <data name="PreviewTab_PreviousPage" xml:space="preserve">
+    <value>Précédente</value>
+  </data>
+  <data name="PreviewTab_Print" xml:space="preserve">
+    <value>Imprimer...</value>
+  </data>
+  <data name="PreviewTab_PrintPreview" xml:space="preserve">
+    <value>Aperçu d'impression</value>
+  </data>
+  <data name="PreviewTab_Refresh" xml:space="preserve">
+    <value>Actualiser</value>
+  </data>
+  <data name="PreviewTab_ReportPreview" xml:space="preserve">
+    <value>Aperçu du rapport</value>
+  </data>
+  <data name="PreviewTab_Settings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="PreviewTab_Stop" xml:space="preserve">
+    <value>Arrêt</value>
+  </data>
+  <data name="PreviewTab_View" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="View_DataExplorer" xml:space="preserve">
+    <value>Explorateur de données</value>
+  </data>
+  <data name="PreviewTab_ViewDesign" xml:space="preserve">
+    <value>Conception</value>
+  </data>
+  <data name="PreviewTab_ViewDesignDescription" xml:space="preserve">
+    <value>Basculer en mode Design (F6)</value>
+  </data>
+  <data name="View_GroupExplorer" xml:space="preserve">
+    <value>Explorateur de groupe</value>
+  </data>
+  <data name="PreviewTab_ViewPreview" xml:space="preserve">
+    <value>Aperçu</value>
+  </data>
+  <data name="View_ReportExplorer" xml:space="preserve">
+    <value>Explorateur de rapports</value>
+  </data>
+  <data name="PreviewTab_ZoomText" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="PreviewTab_PrintGroup" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="TableTools_AddAdjacentAboveRowGroup_Text" xml:space="preserve">
+    <value>Adjacent ci-dessus</value>
+  </data>
+  <data name="TableTools_AddAdjacentAboveRowGroup_Description" xml:space="preserve">
+    <value>Adjacent ci-dessus</value>
+  </data>
+  <data name="TableTools_Add_AdjacentBelowRowGroup_Text" xml:space="preserve">
+    <value>Adjacent ci-dessous</value>
+  </data>
+  <data name="TableTools_Add_AdjacentLeftColumnGroup_Text" xml:space="preserve">
+    <value>Adjacent à gauche</value>
+  </data>
+  <data name="TableTools_Add_AdjacentLeftColumnGroup_Description" xml:space="preserve">
+    <value>Adjacent à gauche</value>
+  </data>
+  <data name="TableTools_Add_AdjacentRightColumnGroup_Text" xml:space="preserve">
+    <value>Droit adjacent</value>
+  </data>
+  <data name="TableTools_Add_AdjacentRightColumnGroup_Description" xml:space="preserve">
+    <value>Droit adjacent</value>
+  </data>
+  <data name="TableTools_Add_ChildColumnGroup_Text" xml:space="preserve">
+    <value>Groupe d'enfants</value>
+  </data>
+  <data name="TableTools_Add_ChildColumnGroup_Description" xml:space="preserve">
+    <value>Groupe d'enfants</value>
+  </data>
+  <data name="TableTools_Add_ChildRowGroup_Text" xml:space="preserve">
+    <value>Groupe d'enfants</value>
+  </data>
+  <data name="TableTools_Add_ChildRowGroup_Description" xml:space="preserve">
+    <value>Groupe d'enfants</value>
+  </data>
+  <data name="TableTools_Add_ParentColumnGroup_Text" xml:space="preserve">
+    <value>Groupe parent</value>
+  </data>
+  <data name="TableTools_Add_ParentColumnGroup_Description" xml:space="preserve">
+    <value>Groupe parent</value>
+  </data>
+  <data name="TableTools_Add_ParentRowGroup_Text" xml:space="preserve">
+    <value>Groupe parent</value>
+  </data>
+  <data name="TableTools_Add_ParentRowGroup_Description" xml:space="preserve">
+    <value>Groupe parent</value>
+  </data>
+  <data name="TableTools_AddTotalFor_ColumnGroupLeft_Text" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="TableTools_AddTotalFor_ColumnGroupLeft_Description" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="TableTools_AddTotalFor_ColumnGroupRight_Text" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="TableTools_AddTotalFor_ColumnGroupRight_Description" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="TableTools_AddTotalFor_RowGroupAbove_Text" xml:space="preserve">
+    <value>Dessus</value>
+  </data>
+  <data name="TableTools_AddTotalFor_RowGroupAbove_Description" xml:space="preserve">
+    <value>Dessus</value>
+  </data>
+  <data name="TableTools_AddTotalFor_RowGroupBelow_Text" xml:space="preserve">
+    <value>Dessous</value>
+  </data>
+  <data name="TableTools_AddTotalFor_RowGroupBelow_Description" xml:space="preserve">
+    <value>Dessous</value>
+  </data>
+  <data name="TableTools_ColumnGroup_Properties_Text" xml:space="preserve">
+    <value>Groupe de colonnes</value>
+  </data>
+  <data name="TableTools_ColumnGroup_Properties_Description" xml:space="preserve">
+    <value>Propriétés du groupe de colonnes</value>
+  </data>
+  <data name="TableTools_ColumnGroup_Delete_Text" xml:space="preserve">
+    <value>Groupe de colonnes</value>
+  </data>
+  <data name="TableTools_ColumnGroup_Delete_Description" xml:space="preserve">
+    <value>Supprimer le groupe de colonnes</value>
+  </data>
+  <data name="TableTools_ColumnDelete_Text" xml:space="preserve">
+    <value>Supprimer la colonne</value>
+  </data>
+  <data name="TableTools_ColumnDelete_Description" xml:space="preserve">
+    <value>Supprimer la colonne</value>
+  </data>
+  <data name="TableTools_RowGroup_Delete_Text" xml:space="preserve">
+    <value>Groupe de lignes</value>
+  </data>
+  <data name="TableTools_RowGroup_Delete_Description" xml:space="preserve">
+    <value>Supprimer le groupe de lignes</value>
+  </data>
+  <data name="TableTools_RowsDelete_Text" xml:space="preserve">
+    <value>Supprimer les lignes</value>
+  </data>
+  <data name="TableTools_RowsDelete_Description" xml:space="preserve">
+    <value>Supprimer les lignes</value>
+  </data>
+  <data name="TableTools_InsertColumn_InsideGroupLeft_Text" xml:space="preserve">
+    <value>Groupe intérieur-gauche</value>
+  </data>
+  <data name="TableTools_InsertColumn_InsideGroupLeft_Description" xml:space="preserve">
+    <value>Insérez la colonne à l'intérieur du groupe, à gauche de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertColumn_InsideGroupRight_Text" xml:space="preserve">
+    <value>Intérieur du groupe-droit</value>
+  </data>
+  <data name="TableTools_InsertColumn_InsideGroupRight_Description" xml:space="preserve">
+    <value>Insérez la colonne à l'intérieur du groupe, à droite de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertColumn_Left_Text" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="TableTools_InsertColumn_Left_Description" xml:space="preserve">
+    <value>Insérez la colonne à gauche de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertColumn_OutsideGroupLeft_Text" xml:space="preserve">
+    <value>Groupe extérieur-gauche</value>
+  </data>
+  <data name="TableTools_InsertColumn_OutsideGroupLeft_Description" xml:space="preserve">
+    <value>Insérez la colonne à l'extérieur du groupe, à gauche de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertColumn_OutsideGroupRight_Text" xml:space="preserve">
+    <value>Groupe extérieur-droit</value>
+  </data>
+  <data name="TableTools_InsertColumn_OutsideGroupRight_Description" xml:space="preserve">
+    <value>Insérez la colonne à l'extérieur du groupe, à droite de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertColumn_Right_Text" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="TableTools_InsertColumn_Right_Description" xml:space="preserve">
+    <value>Insérez la colonne à droite de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertRow_Above_Text" xml:space="preserve">
+    <value>Dessus</value>
+  </data>
+  <data name="TableTools_InsertRow_Above_Description" xml:space="preserve">
+    <value>Insérez la ligne au-dessus de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertRow_Below_Text" xml:space="preserve">
+    <value>Dessous</value>
+  </data>
+  <data name="TableTools_InsertRow_Below_Description" xml:space="preserve">
+    <value>Insérez la ligne sous la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertRow_InsideGroupAbove_Text" xml:space="preserve">
+    <value>Groupe intérieur-ci-dessus</value>
+  </data>
+  <data name="TableTools_InsertRow_InsideGroupAbove_Description" xml:space="preserve">
+    <value>Insérez la ligne à l'intérieur du groupe, au-dessus de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertRow_InsideGroupBelow_Text" xml:space="preserve">
+    <value>Groupe intérieur-ci-dessous</value>
+  </data>
+  <data name="TableTools_InsertRow_InsideGroupBelow_Description" xml:space="preserve">
+    <value>Insérez la ligne à l'intérieur du groupe, ci-dessous de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertRow_OutsideGroupAbove_Text" xml:space="preserve">
+    <value>Groupe extérieur-ci-dessus</value>
+  </data>
+  <data name="TableTools_InsertRow_OutsideGroupAbove_Description" xml:space="preserve">
+    <value>Insérez la ligne à l'extérieur du groupe, au-dessus de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_InsertRow_OutsideGroupBelow_Text" xml:space="preserve">
+    <value>Groupe extérieur-ci-dessous</value>
+  </data>
+  <data name="TableTools_InsertRow_OutsideGroupBelow_Description" xml:space="preserve">
+    <value>Insérez la ligne à l'extérieur du groupe, en dessous de la sélection actuelle.</value>
+  </data>
+  <data name="TableTools_CellsMerge_Text" xml:space="preserve">
+    <value>Fusionner les cellules</value>
+  </data>
+  <data name="TableTools_CellsMerge_Description" xml:space="preserve">
+    <value>Fusionner les cellules</value>
+  </data>
+  <data name="TableTools_RotateLayout_Text" xml:space="preserve">
+    <value>Rotation de la disposition</value>
+  </data>
+  <data name="TableTools_RotateLayout_Description" xml:space="preserve">
+    <value>Fait pivoter la mise en page et inverse les groupes. Ligne à la colonne et vice versa.</value>
+  </data>
+  <data name="TableTools_RowGroup_Properties_Text" xml:space="preserve">
+    <value>Groupe de lignes</value>
+  </data>
+  <data name="TableTools_RowGroup_Properties_Description" xml:space="preserve">
+    <value>Propriétés du groupe de lignes</value>
+  </data>
+  <data name="TableTools_CellsSplit_Text" xml:space="preserve">
+    <value>Cellules fractionnées</value>
+  </data>
+  <data name="TableTools_CellsSplit_Description" xml:space="preserve">
+    <value>Cellules fractionnées</value>
+  </data>
+  <data name="TextBoxExpressions_Description" xml:space="preserve">
+    <value>Modifiez l'expression de valeur.</value>
+  </data>
+  <data name="TextBoxExpressions_Text" xml:space="preserve">
+    <value>Expression...</value>
+  </data>
+  <data name="TextBoxFormat_Currency_Description" xml:space="preserve">
+    <value>Afficher la valeur en tant que devise.</value>
+  </data>
+  <data name="TextBoxFormat_Currency_Text" xml:space="preserve">
+    <value>Monnaie</value>
+  </data>
+  <data name="TextBoxFormat_DecreaseDecimal_Description" xml:space="preserve">
+    <value>Afficher une valeur moins précise en affichant moins de décimales.</value>
+  </data>
+  <data name="TextBoxFormat_DecreaseDecimal_Text" xml:space="preserve">
+    <value>Diminuer la décimale</value>
+  </data>
+  <data name="TextBoxFormat_Description" xml:space="preserve">
+    <value>Choisissez la façon dont les valeurs de la zone de texte sont affichées.</value>
+  </data>
+  <data name="TextBoxFormat_IncreaseDecimal_Description" xml:space="preserve">
+    <value>Afficher une valeur plus précise en affichant plus de décimales.</value>
+  </data>
+  <data name="TextBoxFormat_IncreaseDecimal_Text" xml:space="preserve">
+    <value>Augmenter la décimale</value>
+  </data>
+  <data name="TextBoxFormat_Number_Description" xml:space="preserve">
+    <value>Afficher la valeur en tant que nombre.</value>
+  </data>
+  <data name="TextBoxFormat_Number_Text" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="TextBoxFormat_Percent_Description" xml:space="preserve">
+    <value>Affiche la valeur en pourcentage.</value>
+  </data>
+  <data name="TextBoxFormat_Percent_Text" xml:space="preserve">
+    <value>Pour cent</value>
+  </data>
+  <data name="TextBoxFormat_Text" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="TextBoxTools_Text" xml:space="preserve">
+    <value>Outils de zone de texte</value>
+  </data>
+  <data name="PreviewTab_Zoom10" xml:space="preserve">
+    <value>10%</value>
+  </data>
+  <data name="PreviewTab_Zoom100" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="PreviewTab_Zoom150" xml:space="preserve">
+    <value>150%</value>
+  </data>
+  <data name="PreviewTab_Zoom200" xml:space="preserve">
+    <value>200%</value>
+  </data>
+  <data name="PreviewTab_Zoom25" xml:space="preserve">
+    <value>25%</value>
+  </data>
+  <data name="PreviewTab_Zoom400" xml:space="preserve">
+    <value>400%</value>
+  </data>
+  <data name="PreviewTab_Zoom50" xml:space="preserve">
+    <value>50%</value>
+  </data>
+  <data name="PreviewTab_Zoom800" xml:space="preserve">
+    <value>800%</value>
+  </data>
+  <data name="PreviewTab_ZoomDescription" xml:space="preserve">
+    <value>Zoom avant (Ctrl + signe ()). Zoom arrière (Ctrl moins signe (-))</value>
+  </data>
+  <data name="PreviewTab_ZoomFullPage" xml:space="preserve">
+    <value>Page complète</value>
+  </data>
+  <data name="PreviewTab_ZoomPageWidth" xml:space="preserve">
+    <value>Largeur de page</value>
+  </data>
+  <data name="TableTools_Add_AdjacentBelowRowGroup_Description" xml:space="preserve">
+    <value>Adjacent ci-dessous</value>
+  </data>
+  <data name="TableTools_AddGroup_Text" xml:space="preserve">
+    <value>Groupes</value>
+  </data>
+  <data name="TableTools_AddTotal_Text" xml:space="preserve">
+    <value>Totaux</value>
+  </data>
+  <data name="TableTools_Cells_Text" xml:space="preserve">
+    <value>Cellules</value>
+  </data>
+  <data name="TableTools_Add_ColumnGroup_Text" xml:space="preserve">
+    <value>Ajouter un groupe de colonnes</value>
+  </data>
+  <data name="TableTools_Delete_Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="TableTools_InsertGroup_Text" xml:space="preserve">
+    <value>Insérer un groupe</value>
+  </data>
+  <data name="TableTools_Add_RowGroup_Text" xml:space="preserve">
+    <value>Ajouter un groupe de lignes</value>
+  </data>
+  <data name="TableTools_Text" xml:space="preserve">
+    <value>Outils de table</value>
+  </data>
+  <data name="TextBoxFormat_Custom_Description" xml:space="preserve">
+    <value>Personnalisé</value>
+  </data>
+  <data name="TextBoxFormat_Custom_Text" xml:space="preserve">
+    <value>Personnalisé</value>
+  </data>
+  <data name="TextBoxFormat_Date_Description" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="TextBoxFormat_Date_Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="TextBoxFormat_Default_Description" xml:space="preserve">
+    <value>Format par défaut sans format numérique spécifique.</value>
+  </data>
+  <data name="TextBoxFormat_Default_Text" xml:space="preserve">
+    <value>Par défaut</value>
+  </data>
+  <data name="TextBoxFormat_Scientific_Description" xml:space="preserve">
+    <value>Afficher la valeur comme scientifique.</value>
+  </data>
+  <data name="TextBoxFormat_Scientific_Text" xml:space="preserve">
+    <value>Scientifique</value>
+  </data>
+  <data name="TextBoxFormat_ShortDate_Description" xml:space="preserve">
+    <value>Afficher la valeur comme date courte.</value>
+  </data>
+  <data name="TextBoxFormat_ShortDate_Text" xml:space="preserve">
+    <value>Date courte</value>
+  </data>
+  <data name="TextBoxFormat_Time_Description" xml:space="preserve">
+    <value>Afficher la valeur comme temps.</value>
+  </data>
+  <data name="TextBoxFormat_Time_Text" xml:space="preserve">
+    <value>Heure</value>
+  </data>
+  <data name="TableTools_DeleteColumn_Description" xml:space="preserve">
+    <value>Supprimer la colonne.</value>
+  </data>
+  <data name="TableTools_DeleteColumn_Text" xml:space="preserve">
+    <value>Supprimer la colonne</value>
+  </data>
+  <data name="TableTools_DeleteRow_Description" xml:space="preserve">
+    <value>Supprimer la ligne.</value>
+  </data>
+  <data name="TableTools_DeleteRow_Text" xml:space="preserve">
+    <value>Supprimer la ligne</value>
+  </data>
+  <data name="Insert_DataItems_Text" xml:space="preserve">
+    <value>Éléments de données</value>
+  </data>
+  <data name="Insert_Barcode_Description" xml:space="preserve">
+    <value>L'élément de rapport de code-barres est utilisé pour la génération automatique de codes-barres directement à partir d'une donnée numérique ou de caractère.</value>
+  </data>
+  <data name="Insert_Barcode_Text" xml:space="preserve">
+    <value>Barres</value>
+  </data>
+  <data name="Insert_Chart_Description" xml:space="preserve">
+    <value>L'élément de rapport de graphique est utilisé pour afficher un graphique sur un rapport.</value>
+  </data>
+  <data name="Insert_Chart_Text" xml:space="preserve">
+    <value>Graphique</value>
+  </data>
+  <data name="Insert_CheckBox_Description" xml:space="preserve">
+    <value>L'élément de rapport de case à cocher est utilisé pour afficher le texte et une coche sur un État.</value>
+  </data>
+  <data name="Insert_CheckBox_Text" xml:space="preserve">
+    <value>Case à cocher</value>
+  </data>
+  <data name="Insert_Crosstab_Description" xml:space="preserve">
+    <value>Insérer une analyse croisée.</value>
+  </data>
+  <data name="Insert_Crosstab_Text" xml:space="preserve">
+    <value>Analyse</value>
+  </data>
+  <data name="Insert_CrosstabTools_Text" xml:space="preserve">
+    <value>Analyse</value>
+  </data>
+  <data name="Insert_CrosstabWizard_Description" xml:space="preserve">
+    <value>L'Assistant analyse croisée vous guidera à travers le processus de création d'une analyse croisée.</value>
+  </data>
+  <data name="Insert_CrosstabWizard_Text" xml:space="preserve">
+    <value>Assistant analyse croisée</value>
+  </data>
+  <data name="Insert_CubeDataSource_Description" xml:space="preserve">
+    <value>La source de données cube permet aux éléments de données de récupérer des données d'un cube OLAP à l'aide de Microsoft Analysis Services.</value>
+  </data>
+  <data name="Insert_CubeDataSource_Text" xml:space="preserve">
+    <value>Source de données cube</value>
+  </data>
+  <data name="Insert_DataSouces_Text" xml:space="preserve">
+    <value>Sources de données</value>
+  </data>
+  <data name="Insert_HtmlTextBox_Description" xml:space="preserve">
+    <value>L'élément de rapport de zone de texte html permet d'insérer du texte au format HTML dans un rapport.</value>
+  </data>
+  <data name="Insert_HtmlTextBox_Text" xml:space="preserve">
+    <value>Zone de texte html</value>
+  </data>
+  <data name="Insert_List_Description" xml:space="preserve">
+    <value>L'élément de rapport de liste représente une disposition de formulaire libre.</value>
+  </data>
+  <data name="Insert_List_Text" xml:space="preserve">
+    <value>Liste</value>
+  </data>
+  <data name="Insert_Panel_Description" xml:space="preserve">
+    <value>L'élément de rapport du panneau est utilisé comme conteneur pour d'autres éléments, généralement pour regrouper/séparer plusieurs éléments de rapport selon certains critères.</value>
+  </data>
+  <data name="Insert_Panel_Text" xml:space="preserve">
+    <value>Panneau</value>
+  </data>
+  <data name="Insert_PictureBox_Description" xml:space="preserve">
+    <value>Représente un élément de rapport de zone d'image pour l'affichage d'une image.</value>
+  </data>
+  <data name="Insert_PictureBox_Text" xml:space="preserve">
+    <value>Boîte à images</value>
+  </data>
+  <data name="InsertReportItemsText" xml:space="preserve">
+    <value>Éléments de rapport</value>
+  </data>
+  <data name="Insert_Shape_Description" xml:space="preserve">
+    <value>L'élément de rapport Shape est utilisé pour afficher l'une des sélections de formes prédéfinies sur un rapport.</value>
+  </data>
+  <data name="Insert_Shape_Text" xml:space="preserve">
+    <value>Forme</value>
+  </data>
+  <data name="Insert_SqlDataSource_Description" xml:space="preserve">
+    <value>La source de données SQL permet aux éléments de données d'afficher les données situées dans une base de données relationnelle.</value>
+  </data>
+  <data name="Insert_SqlDataSource_Text" xml:space="preserve">
+    <value>Source de données SQL</value>
+  </data>
+  <data name="Insert_Table_Description" xml:space="preserve">
+    <value>Insérer une table.</value>
+  </data>
+  <data name="Insert_Table_Text" xml:space="preserve">
+    <value>Tableau</value>
+  </data>
+  <data name="Insert_TableTools_Text" xml:space="preserve">
+    <value>Tableau</value>
+  </data>
+  <data name="Insert_TableWizard_Description" xml:space="preserve">
+    <value>L'Assistant de table vous guidera à travers le processus de création d'une table.</value>
+  </data>
+  <data name="Insert_TableWizard_Text" xml:space="preserve">
+    <value>Assistant Tableau</value>
+  </data>
+  <data name="Insert_TextBox_Description" xml:space="preserve">
+    <value>L'élément de rapport de zone de texte est utilisé pour afficher du texte sur un rapport.</value>
+  </data>
+  <data name="Insert_TextBox_Text" xml:space="preserve">
+    <value>Zone de texte</value>
+  </data>
+  <data name="Insert_CrosstabTools_Description" xml:space="preserve">
+    <value>L'élément de rapport analyse croisée affiche des résumés de données agrégés, regroupés en lignes et en colonnes.</value>
+  </data>
+  <data name="Insert_TableTools_Description" xml:space="preserve">
+    <value>L'élément de rapport de table affiche des données détaillées, des données organisées dans des groupes de lignes ou les deux.</value>
+  </data>
+  <data name="Insert_SubReport_Description" xml:space="preserve">
+    <value>Représente un élément de rapport utilisé pour incorporer un autre rapport dans le rapport en cours.</value>
+  </data>
+  <data name="Insert_SubReport_Text" xml:space="preserve">
+    <value>Sous-rapport</value>
+  </data>
+  <data name="TableTools_ColumnGroup_Text" xml:space="preserve">
+    <value>Groupe de colonnes</value>
+  </data>
+  <data name="TableTools_RowGroup_Text" xml:space="preserve">
+    <value>Groupe de lignes</value>
+  </data>
+  <data name="InsertReportText" xml:space="preserve">
+    <value>Rapport</value>
+  </data>
+  <data name="PreviewTab_Of_Text" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="TableTools_InsertColumn_Text" xml:space="preserve">
+    <value>Insérer une colonne</value>
+  </data>
+  <data name="TableTools_InsertRow_Text" xml:space="preserve">
+    <value>Insérer une ligne</value>
+  </data>
+  <data name="TableTools_Properties_Text" xml:space="preserve">
+    <value>Propriétés</value>
+  </data>
+  <data name="TableTools_RowsColumns_Text" xml:space="preserve">
+    <value>Lignes </value>
+  </data>
+  <data name="ErrorFileCreation" xml:space="preserve">
+    <value>Le fichier ne peut pas être créé.</value>
+  </data>
+  <data name="Insert_Graph_Description" xml:space="preserve">
+    <value>Insérer un graphique.</value>
+  </data>
+  <data name="Insert_Graph_Text" xml:space="preserve">
+    <value>Graphique</value>
+  </data>
+  <data name="Insert_DataViz" xml:space="preserve">
+    <value>Visualisation des données</value>
+  </data>
+  <data name="Insert_ObjectDataSource_Description" xml:space="preserve">
+    <value>La source de données d'objet permet aux éléments de données de récupérer des données d'objets métier prédéfinis.</value>
+  </data>
+  <data name="Insert_ObjectDataSource_Text" xml:space="preserve">
+    <value>Source de données d'objet</value>
+  </data>
+  <data name="Insert_EntityDataSource_Description" xml:space="preserve">
+    <value>La source de données d'entité permet aux éléments de données de récupérer des données des modèles d'entité ADO.net prédéfinis.</value>
+  </data>
+  <data name="Insert_EntityDataSource_Text" xml:space="preserve">
+    <value>Source de données d'entité</value>
+  </data>
+  <data name="Insert_OpenAccessDataSource_Description" xml:space="preserve">
+    <value>La source de données Open Access permet aux éléments de données de récupérer les données des modèles d'accès ouvert Telerik prédéfinis.</value>
+  </data>
+  <data name="Insert_OpenAccessDataSource_Text" xml:space="preserve">
+    <value>Source de données Open Access</value>
+  </data>
+  <data name="ReadFileError" xml:space="preserve">
+    <value>Impossible de lire le fichier: {0}</value>
+  </data>
+  <data name="Graph_FormatText" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="Inser_MapWizard_Text" xml:space="preserve">
+    <value>Assistant carte</value>
+  </data>
+  <data name="Insert_MapTools_Map_Description" xml:space="preserve">
+    <value>Représente un élément de rapport qui affiche des données géocodées sur une carte.</value>
+  </data>
+  <data name="Insert_MapTools_Map_Text" xml:space="preserve">
+    <value>Carte</value>
+  </data>
+  <data name="Insert_MapTools_Description" xml:space="preserve">
+    <value>L'élément de rapport de mappage affiche des données codées géo</value>
+  </data>
+  <data name="Insert_MapTools_Text" xml:space="preserve">
+    <value>Cartes</value>
+  </data>
+  <data name="Insert_MapWizard_Description" xml:space="preserve">
+    <value>L'Assistant de mappage vous guidera à travers le processus de création d'une carte.</value>
+  </data>
+  <data name="Insert_MapWizard_Text" xml:space="preserve">
+    <value>Assistant carte</value>
+  </data>
+  <data name="BlankReportTemplateName" xml:space="preserve">
+    <value>Rapport blanc</value>
+  </data>
+  <data name="BlankReportTemplateDescription" xml:space="preserve">
+    <value>Crée un rapport à partir d'un modèle vide.</value>
+  </data>
+  <data name="TableWizardTemplate_Description" xml:space="preserve">
+    <value>Démarre l'Assistant table pour créer un rapport à l'aide de la technologie de Reporting Telerik.</value>
+  </data>
+  <data name="TableWizardTemplate_Name" xml:space="preserve">
+    <value>Assistant Tableau</value>
+  </data>
+  <data name="Insert_CsvDataSource_Description" xml:space="preserve">
+    <value>La source de données csv permet aux éléments de données de récupérer des données à partir de fichiers CSV, de flux et simplement de chaînes.</value>
+  </data>
+  <data name="Insert_CsvDataSource_Text" xml:space="preserve">
+    <value>Source de données csv</value>
+  </data>
+  <data name="Insert_MapTools_Choropleth_Description" xml:space="preserve">
+    <value>Une carte dont les zones sont colorées en fonction d'une mesure</value>
+  </data>
+  <data name="Insert_MapTools_Choropleth_Text" xml:space="preserve">
+    <value>Choroplèthe</value>
+  </data>
+  <data name="Insert_MapTools_ChoroplethWizard_Description" xml:space="preserve">
+    <value>L'Assistant choroplèthe vous guidera dans le processus de création d'un choroplèthe.</value>
+  </data>
+  <data name="Insert_MapTools_ChoroplethWizard_Text" xml:space="preserve">
+    <value>Assistant choroplèthe</value>
+  </data>
+  <data name="PreviewTab_ViewPreviewDescription" xml:space="preserve">
+    <value>Exécuter le rapport (F5)</value>
+  </data>
+  <data name="Insert_OpenClientDataSource_Description" xml:space="preserve">
+    <value>La source de données OpenEdge OpenClient permet aux éléments de données de récupérer des données d'objets clients ouverts prédéfinis OpenEdge.</value>
+  </data>
+  <data name="Insert_OpenClientDataSource_Text" xml:space="preserve">
+    <value>Source de données OpenEdge OpenClient</value>
+  </data>
+  <data name="ReportBookTab_Template_Description" xml:space="preserve">
+    <value>Un modèle vide pour créer un livre de rapports.</value>
+  </data>
+  <data name="ReportBookTab_Template_Text" xml:space="preserve">
+    <value>Livre de rapport</value>
+  </data>
+  <data name="ReportBookTab_Configure_Text" xml:space="preserve">
+    <value>Configurer</value>
+  </data>
+  <data name="ReportBookTab_ReportSourcesText" xml:space="preserve">
+    <value>Sources du rapport</value>
+  </data>
+  <data name="ReportBookTab_GroupView_Text" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="ReportBook_ContextTab_Text" xml:space="preserve">
+    <value>Livre de rapport</value>
+  </data>
+  <data name="ReportBookTab_AddReportSource_Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="ReportBookTab_AddReportSource_Description" xml:space="preserve">
+    <value>Ajoutez la source de rapport à la collection de sources de rapports du livre de rapports.</value>
+  </data>
+  <data name="ReportBookTab_DeleteReportSource_Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="ReportBookTab_DeleteReportSource_Description" xml:space="preserve">
+    <value>Supprimez la source de rapport sélectionnée de la collection sources de rapports du livre de rapports.</value>
+  </data>
+  <data name="ReportBookTab_Document_Text" xml:space="preserve">
+    <value>Nom du document</value>
+  </data>
+  <data name="ReportBookTab_DocumentName_Description" xml:space="preserve">
+    <value>Définissez le nom du document qui sera utilisé comme nom par défaut lors de l'exportation du livre de rapports.</value>
+  </data>
+  <data name="ReportBookTab_EditReportInDesigner_Text" xml:space="preserve">
+    <value>Conception</value>
+  </data>
+  <data name="ReportBookTab_EditReportInDesigner_Description" xml:space="preserve">
+    <value>Modifiez le rapport sélectionné dans le concepteur de rapports.</value>
+  </data>
+  <data name="ReportBookTab_MoveDown_Text" xml:space="preserve">
+    <value>Déplacer vers le bas</value>
+  </data>
+  <data name="ReportBookTab_MoveDown_Description" xml:space="preserve">
+    <value>Déplacez la source de rapport sélectionnée vers le bas dans la collection de sources de rapports du livre de rapports.</value>
+  </data>
+  <data name="ReportBookTab_MoveUp_Text" xml:space="preserve">
+    <value>Déplacer vers le haut</value>
+  </data>
+  <data name="ReportBookTab_MoveUp_Description" xml:space="preserve">
+    <value>Déplacez la source de rapport sélectionnée dans la collection de sources de rapports du livre de rapports.</value>
+  </data>
+  <data name="ReportBookTab_ReportSourceParameters_Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="ReportBookTab_ReportSourceParameters_Description" xml:space="preserve">
+    <value>Configurer les paramètres.</value>
+  </data>
+  <data name="ReportBookTab_Toc_ReportSource_Text" xml:space="preserve">
+    <value>Source du rapport</value>
+  </data>
+  <data name="ReportBookTab_Toc_ReportSource_Description" xml:space="preserve">
+    <value>Définissez la source de rapport qui sera utilisée comme modèle pour la table de contenu du livre de rapports.</value>
+  </data>
+  <data name="ReportBookTab_Toc_Text" xml:space="preserve">
+    <value>TOC</value>
+  </data>
+  <data name="ReportBookTab_Toc_After_Text" xml:space="preserve">
+    <value>Après les rapports</value>
+  </data>
+  <data name="ReportBookTab_Toc_After_TextDescription" xml:space="preserve">
+    <value>Afficher la table des matières du rapport après les rapports.</value>
+  </data>
+  <data name="ReportBookTab_Toc_Before_Text" xml:space="preserve">
+    <value>Avant les rapports</value>
+  </data>
+  <data name="ReportBookTab_Toc_Before_Description" xml:space="preserve">
+    <value>Afficher le rapport de la table des matières avant les rapports.</value>
+  </data>
+  <data name="DataExplorer_Caption" xml:space="preserve">
+    <value>Explorateur de données</value>
+  </data>
+  <data name="ReportBook_Definition_TRBP_Description" xml:space="preserve">
+    <value>Définition du livre de rapport Telerik</value>
+  </data>
+  <data name="ReportDefinition_TRDP_Description" xml:space="preserve">
+    <value>Package de définition de rapport Telerik</value>
+  </data>
+  <data name="ReportDefinition_TRDX_Description" xml:space="preserve">
+    <value>Telerik de définition de rapport XML (Legacy)</value>
+  </data>
+  <data name="ErrorPresenter_ToggleDetailsText_Hide" xml:space="preserve">
+    <value>Masquer les détails</value>
+  </data>
+  <data name="ErrorPresenter_ToggleDetailsText_Show" xml:space="preserve">
+    <value>Afficher les détails</value>
+  </data>
+  <data name="GroupExplorer_Caption" xml:space="preserve">
+    <value>Explorateur de groupe</value>
+  </data>
+  <data name="ItemTemplateWizard_ErrorDialog_Caption" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="FieldMappingsWizard_Name" xml:space="preserve">
+    <value>Assistant mappages de champs</value>
+  </data>
+  <data name="FieldMappingsWizard_Description" xml:space="preserve">
+    <value>Assistant qui fournit une interface permettant de mapper des champs de modèle de rapport aux champs d'une source de données.</value>
+  </data>
+  <data name="ReportDesignerOptionsGroup_Report_Designer" xml:space="preserve">
+    <value>Concepteur de rapports</value>
+  </data>
+  <data name="ReportExplorer_Caption" xml:space="preserve">
+    <value>Explorateur de rapports</value>
+  </data>
+  <data name="Error_ExtensionIsRequired" xml:space="preserve">
+    <value>L'extension est requise.</value>
+  </data>
+  <data name="Error_ProvidedFileTypeIsNotSupported" xml:space="preserve">
+    <value>Le type de fichier fourni n'est pas pris en charge: </value>
+  </data>
+  <data name="Error_LoadingDocument_UnableToUnpackageStream" xml:space="preserve">
+    <value>Impossible de dépaqueter le flux.</value>
+  </data>
+  <data name="Graph_ToggleTitle_Transaction" xml:space="preserve">
+    <value>Définir le titre du graphique</value>
+  </data>
+  <data name="Graph_ToggleTitle_DefaultTitle" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="Graph_ToggleLegend_Transaction" xml:space="preserve">
+    <value>Légende de bascule</value>
+  </data>
+  <data name="Graph_ItemPosition_None" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="Graph_ItemPosition_Top" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="Graph_ItemPosition_Left" xml:space="preserve">
+    <value>Gauche</value>
+  </data>
+  <data name="Graph_ItemPosition_Center" xml:space="preserve">
+    <value>Centre</value>
+  </data>
+  <data name="Graph_ItemPosition_Right" xml:space="preserve">
+    <value>Droite</value>
+  </data>
+  <data name="Graph_ItemPosition_Bottom" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="Graph_SeriesLabelAlignmentMenu_DataLabels" xml:space="preserve">
+    <value>Étiquettes de données</value>
+  </data>
+  <data name="Graph_ModifyDataPointLabels_Transaction" xml:space="preserve">
+    <value>Modifier les étiquettes de point de données</value>
+  </data>
+  <data name="Graph_ItemPosition_InsideEnd" xml:space="preserve">
+    <value>Extrémité intérieure</value>
+  </data>
+  <data name="Graph_ItemPosition_InsideBase" xml:space="preserve">
+    <value>Base intérieure</value>
+  </data>
+  <data name="Graph_ItemPosition_OutsideEnd" xml:space="preserve">
+    <value>Extrémité extérieure</value>
+  </data>
+  <data name="Graph_ItemPosition_Above" xml:space="preserve">
+    <value>Dessus</value>
+  </data>
+  <data name="Graph_ItemPosition_Below" xml:space="preserve">
+    <value>Dessous</value>
+  </data>
+  <data name="Graph_SeriesLabel_Show" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="Graph_Gridlines_MajorHorizontal" xml:space="preserve">
+    <value>Horizontal majeur</value>
+  </data>
+  <data name="Graph_Gridlines_MajorVertical" xml:space="preserve">
+    <value>Vertical majeur</value>
+  </data>
+  <data name="Graph_Gridlines_MinorHorizontal" xml:space="preserve">
+    <value>Horizontal mineur</value>
+  </data>
+  <data name="Graph_Gridlines_MinorVertical" xml:space="preserve">
+    <value>Vertical mineur</value>
+  </data>
+  <data name="Graph_Gridlines_MajorRadial" xml:space="preserve">
+    <value>Major radial</value>
+  </data>
+  <data name="Graph_Gridlines_MajorAngular" xml:space="preserve">
+    <value>Angulaire majeur</value>
+  </data>
+  <data name="Graph_Gridlines_MinorRadial" xml:space="preserve">
+    <value>Radial mineur</value>
+  </data>
+  <data name="Graph_Gridlines_MinorAngular" xml:space="preserve">
+    <value>Mineur angulaire</value>
+  </data>
+  <data name="Graph_ToggleAxisTitle_Transaction" xml:space="preserve">
+    <value>Basculer le titre de l'axe</value>
+  </data>
+  <data name="Graph_ToggleAxis_Transaction" xml:space="preserve">
+    <value>Basculer l'axe</value>
+  </data>
+  <data name="Graph_CoordinateSystemAlias_Primary" xml:space="preserve">
+    <value>Principal€</value>
+  </data>
+  <data name="Graph_CoordinateSystemAlias_Secondary" xml:space="preserve">
+    <value>Secondaire</value>
+  </data>
+  <data name="Graph_CoordinateSystemAlias_ByIndex" xml:space="preserve">
+    <value>Système de coordonnées #</value>
+  </data>
+  <data name="Graph_Axes_Horizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="Graph_Axes_Vertical" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="Graph_Axes_Radial" xml:space="preserve">
+    <value>Radial</value>
+  </data>
+  <data name="Graph_Axes_Angular" xml:space="preserve">
+    <value>Angulaire</value>
+  </data>
+  <data name="Map_ToggleMapTitle_Transaction" xml:space="preserve">
+    <value>Définir le titre de la carte</value>
+  </data>
+  <data name="Map_ToggleMapTitle_DefaultTitile" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="Map_ToggleLegend_Transaction" xml:space="preserve">
+    <value>Définir la légende de la carte</value>
+  </data>
+  <data name="Toolbar_GraphTools_Text" xml:space="preserve">
+    <value>Outils graphiques</value>
+  </data>
+  <data name="Graph_AddChartElements_Axes" xml:space="preserve">
+    <value>Axes</value>
+  </data>
+  <data name="Graph_AddChartElements_AxisTitles" xml:space="preserve">
+    <value>Titres de l'axe</value>
+  </data>
+  <data name="Graph_AddChartElements_ChartTitle" xml:space="preserve">
+    <value>Titre du graphique</value>
+  </data>
+  <data name="Graph_AddChartElements_Legend" xml:space="preserve">
+    <value>Légende</value>
+  </data>
+  <data name="Graph_AddChartElements_Gridlines" xml:space="preserve">
+    <value>Quadrillages</value>
+  </data>
+  <data name="Graph_RibbonContextual_ChartLayouts" xml:space="preserve">
+    <value>Mise en page des graphiques</value>
+  </data>
+  <data name="Graph_RibbonContextual_AddChartElement_Text" xml:space="preserve">
+    <value>Ajouter un élément de graphique</value>
+  </data>
+  <data name="Graph_RibbonContextual_AddChartElement_Description" xml:space="preserve">
+    <value>Ajouter un élément de graphique</value>
+  </data>
+  <data name="Graph_RibbonContextual_SwapAxes_Description" xml:space="preserve">
+    <value>Fait pivoter l'orientation du graphique en permutant les positions des axes et les valeurs X/Y de la série</value>
+  </data>
+  <data name="Graph_RibbonContextual_DesignTitle" xml:space="preserve">
+    <value>Conception</value>
+  </data>
+  <data name="Graph_RibbonContextual_ChartStyles" xml:space="preserve">
+    <value>Styles de graphique</value>
+  </data>
+  <data name="Graph_RibbonContextual_ChangeColors_Text" xml:space="preserve">
+    <value>Changer les couleurs</value>
+  </data>
+  <data name="Graph_RibbonContextual_ChangeColors_Description" xml:space="preserve">
+    <value>Modifier la couleur et le style du graphique</value>
+  </data>
+  <data name="Graph_RibbonContextual_ChangeChartType_Text" xml:space="preserve">
+    <value>Modifier le type de graphique</value>
+  </data>
+  <data name="Graph_RibbonContextual_ChangeChartType_Description" xml:space="preserve">
+    <value>Modification d'un autre type de graphique</value>
+  </data>
+  <data name="Graph_RibbonContextual_SwitchRowColumn_Description" xml:space="preserve">
+    <value>Echanger les données sur les axes</value>
+  </data>
+  <data name="Graph_RibbonContextual_Format_ShapeStyle_Text" xml:space="preserve">
+    <value>Style de forme</value>
+  </data>
+  <data name="Graph_RibbonContextual_Format_ShapeWidth_Text" xml:space="preserve">
+    <value>Largeur de la forme</value>
+  </data>
+  <data name="Graph_RibbonContextual_Format_ShapeWidth_Description" xml:space="preserve">
+    <value>Définissez la largeur de forme de l'élément SELECT.</value>
+  </data>
+  <data name="Graph_RibbonContextual_Format_ShapeOutlineColor_Text" xml:space="preserve">
+    <value>Couleur de contour de forme</value>
+  </data>
+  <data name="Graph_RibbonContextual_Format_ShapeOutlineColor_Description" xml:space="preserve">
+    <value>Définir la couleur de contour de l'élément de forme sélectionné</value>
+  </data>
+  <data name="Graph_RibbonContextual_Format_ShapeFillColor_Text" xml:space="preserve">
+    <value>Couleur de remplissage de forme</value>
+  </data>
+  <data name="Graph_RibbonContextual_Format_ShapeFillColor_Description" xml:space="preserve">
+    <value>Définir la couleur de remplissage de l'élément de forme sélectionné</value>
+  </data>
+  <data name="Graph_RibbonContextual_Format_ShapeStyle_Description" xml:space="preserve">
+    <value>Définir le style de forme de l'élément sélectionné</value>
+  </data>
+  <data name="ToolbarBuilder_RegisterInsertTabItems_Tables" xml:space="preserve">
+    <value>Inset_Table Tools_Text</value>
+  </data>
+  <data name="Insert_TableToolsGroup_Tables" xml:space="preserve">
+    <value>Tableaux</value>
+  </data>
+  <data name="Insert_ChartToolsGroup_Charts" xml:space="preserve">
+    <value>Graphiques</value>
+  </data>
+  <data name="Insert_ChartTools_Bars" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="Insert_ChartTools_ClusteredBar" xml:space="preserve">
+    <value>Barre en grappe</value>
+  </data>
+  <data name="Insert_ChartTools_StackedBar" xml:space="preserve">
+    <value>Barre empilée</value>
+  </data>
+  <data name="Insert_ChartTools_100StackedBar" xml:space="preserve">
+    <value>barre empilée de 100%</value>
+  </data>
+  <data name="Insert_ChartTools_RangeBar" xml:space="preserve">
+    <value>Barre de gamme</value>
+  </data>
+  <data name="Insert_ChartTools_ColumnGroup" xml:space="preserve">
+    <value>Colonne</value>
+  </data>
+  <data name="Insert_ChartTools_ClusteredColumn" xml:space="preserve">
+    <value>Colonne en cluster</value>
+  </data>
+  <data name="Insert_ChartTools_StackedColumn" xml:space="preserve">
+    <value>Colonne empilée</value>
+  </data>
+  <data name="Insert_ChartTools_100StackedColumn" xml:space="preserve">
+    <value>colonne empilée de 100%</value>
+  </data>
+  <data name="Insert_ChartTools_RangeColumn" xml:space="preserve">
+    <value>Colonne Range</value>
+  </data>
+  <data name="Insert_ChartTools_AreaGroup" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="Insert_ChartTools_Area" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="Insert_ChartTools_StackedArea" xml:space="preserve">
+    <value>Zone empilée</value>
+  </data>
+  <data name="Insert_ChartTools_100StackedArea" xml:space="preserve">
+    <value>zone empilée de 100%</value>
+  </data>
+  <data name="Insert_ChartTools_RangeArea" xml:space="preserve">
+    <value>Aire de répartition</value>
+  </data>
+  <data name="Insert_ChartTools_LineGroup" xml:space="preserve">
+    <value>Ligne</value>
+  </data>
+  <data name="Insert_ChartTools_Line" xml:space="preserve">
+    <value>Ligne</value>
+  </data>
+  <data name="Insert_ChartTools_StackedLine" xml:space="preserve">
+    <value>Ligne empilée</value>
+  </data>
+  <data name="Insert_ChartTools_100StackedLine" xml:space="preserve">
+    <value>ligne empilée de 100%</value>
+  </data>
+  <data name="Insert_ChartTools_LineWithMarkers" xml:space="preserve">
+    <value>Ligne avec des marqueurs</value>
+  </data>
+  <data name="Insert_ChartTools_StackedLineWithMarkers" xml:space="preserve">
+    <value>Ligne empilée avec des marqueurs</value>
+  </data>
+  <data name="Insert_ChartTools_100StackedLineWithMarkers" xml:space="preserve">
+    <value>ligne empilée de 100% avec des marqueurs</value>
+  </data>
+  <data name="Insert_ChartTools_PieGroup" xml:space="preserve">
+    <value>Tarte</value>
+  </data>
+  <data name="Insert_ChartTools_Pie" xml:space="preserve">
+    <value>Tarte</value>
+  </data>
+  <data name="Insert_ChartTools_Doughnut" xml:space="preserve">
+    <value>Beignet</value>
+  </data>
+  <data name="Insert_ChartTools_ScatterGroup" xml:space="preserve">
+    <value>Scatter</value>
+  </data>
+  <data name="Insert_ChartTools_Scatter_Text" xml:space="preserve">
+    <value>Scatter</value>
+  </data>
+  <data name="Insert_ChartTools_Scatter_Tooltip" xml:space="preserve">
+    <value>Diagramme simple de dispersion</value>
+  </data>
+  <data name="Insert_ChartTools_SmoothMarkedScatter_Text" xml:space="preserve">
+    <value>Dispersion marquée lisse</value>
+  </data>
+  <data name="Insert_ChartTools_SmoothMarkedScatter_Tooltip" xml:space="preserve">
+    <value>Diagramme de dispersion avec des lignes et des marqueurs lisses</value>
+  </data>
+  <data name="Insert_ChartTools_SmoothLinedScatter_Text" xml:space="preserve">
+    <value>Dispersion lisse doublée</value>
+  </data>
+  <data name="Insert_ChartTools_SmoothLinedScatter_Tooltip" xml:space="preserve">
+    <value>Diagramme de dispersion avec des lignes lisses</value>
+  </data>
+  <data name="Insert_ChartTools_StraightMarkedScatter_Text" xml:space="preserve">
+    <value>Scatter marqué droit</value>
+  </data>
+  <data name="Insert_ChartTools_StraightMarkedScatter_Tooltip" xml:space="preserve">
+    <value>Dispersion avec des lignes droites et des marqueurs</value>
+  </data>
+  <data name="Insert_ChartTools_StraightLinedScatter_Text" xml:space="preserve">
+    <value>Dispersion ligne droite</value>
+  </data>
+  <data name="Insert_ChartTools_StraightLinedScatter_Tooltip" xml:space="preserve">
+    <value>Diagramme de dispersion avec des lignes droites</value>
+  </data>
+  <data name="Insert_ChartTools_Bubble" xml:space="preserve">
+    <value>Bulle</value>
+  </data>
+  <data name="Insert_ChartTools_Bubble_Tooltip" xml:space="preserve">
+    <value>Diagramme de dispersion avec des marqueurs de bulle</value>
+  </data>
+  <data name="Insert_ChartTools_Candlestick_Text" xml:space="preserve">
+    <value>Chandelier</value>
+  </data>
+  <data name="Insert_ChartTools_Candlestick_Tooltip" xml:space="preserve">
+    <value>OHLC graphique avec marqueurs chandelier</value>
+  </data>
+  <data name="Insert_ChartTools_FinancialBar_Text" xml:space="preserve">
+    <value>Bar</value>
+  </data>
+  <data name="Insert_ChartTools_FinancialBar_Tooltip" xml:space="preserve">
+    <value>OHLC Chart avec marqueurs de barres</value>
+  </data>
+  <data name="Insert_ChartTools_OtherGroup" xml:space="preserve">
+    <value>Autres</value>
+  </data>
+  <data name="Insert_ChartTools_Radar_Text" xml:space="preserve">
+    <value>Radar</value>
+  </data>
+  <data name="Insert_ChartTools_RadarWithMarkers" xml:space="preserve">
+    <value>Radar avec des marqueurs</value>
+  </data>
+  <data name="Insert_ChartTools_FilledRadarText" xml:space="preserve">
+    <value>Radar rempli</value>
+  </data>
+  <data name="Insert_ChartTools_RoseRadar_Text" xml:space="preserve">
+    <value>Radar rose</value>
+  </data>
+  <data name="Insert_MapTools_MapsGroup" xml:space="preserve">
+    <value>Cartes</value>
+  </data>
+  <data name="MapTools_Contextual_Name" xml:space="preserve">
+    <value>Outils cartographiques</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_Text" xml:space="preserve">
+    <value>Conception</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_MapLayouts_Text" xml:space="preserve">
+    <value>Mise en page des cartes</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_MapLayouts_AddMapElement_Text" xml:space="preserve">
+    <value>Ajouter un élément MAP</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_MapLayouts_AddMapElement_Description" xml:space="preserve">
+    <value>Ajouter un élément MAP</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_MapStyles_Text" xml:space="preserve">
+    <value>Styles de carte</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_MapStyles_ChangeColors_Text" xml:space="preserve">
+    <value>Changer les couleurs</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_MapStyles_ChangeColors_Description" xml:space="preserve">
+    <value>Changer la couleur et le style de la carte</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_AddElement_Title_Text" xml:space="preserve">
+    <value>Titre de la carte</value>
+  </data>
+  <data name="MapTools_Contextual_DesignTab_AddElement_Legend_Text" xml:space="preserve">
+    <value>Légende</value>
+  </data>
+</root>

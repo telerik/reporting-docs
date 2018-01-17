@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessConnectionUIControl_BrowseFileDefaultExt" xml:space="preserve">
+    <value>MDB</value>
+  </data>
+  <data name="AccessConnectionUIControl_BrowseFileFilter" xml:space="preserve">
+    <value>Базы данных Microsoft Access (*. mdb; *. accdb) | *. mdb; *. accdb | Все файлы (*. *) | *. *</value>
+  </data>
+  <data name="AccessConnectionUIControl_BrowseFileTitle" xml:space="preserve">
+    <value>Выберите файл базы данных Microsoft Access</value>
+  </data>
+  <data name="AccessConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
+    <value>Объект свойств подключения должен иметь тип свойства соединения OLE DBAccess.</value>
+  </data>
+  <data name="AdoDotNetConnectionProperties_NoProperties" xml:space="preserve">
+    <value>Свойства соединения не заданы.</value>
+  </data>
+  <data name="DataConnectionAdvancedDialog_Add" xml:space="preserve">
+    <value>&amp;Добавить...</value>
+  </data>
+  <data name="DataConnectionAdvancedDialog_Description" xml:space="preserve">
+    <value>&amp;Описание</value>
+  </data>
+  <data name="DataConnectionAdvancedDialog_Remove" xml:space="preserve">
+    <value>Ремо</value>
+  </data>
+  <data name="DataConnectionAdvancedDialog_Reset" xml:space="preserve">
+    <value>&amp;Сброс</value>
+  </data>
+  <data name="DataConnectionDialog_CannotChangeSingleDataProvider" xml:space="preserve">
+    <value>Выбранный поставщик данных не может быть изменен, если доступен только один поставщик данных.</value>
+  </data>
+  <data name="DataConnectionDialog_CannotChangeSingleDataSource" xml:space="preserve">
+    <value>Выбранный источник данных не может быть изменен при наличии только одного источника данных.</value>
+  </data>
+  <data name="DataConnectionDialog_ChangeDataSourceTitle" xml:space="preserve">
+    <value>Изменение источника данных</value>
+  </data>
+  <data name="DataConnectionDialog_ShowDialogNotSupported" xml:space="preserve">
+    <value>Для отображения диалогового окна "подключение данных" нельзя использовать метод "форма. Show" ().  Используйте диалоговое окно подключения к данным. Show () вместо этого.</value>
+  </data>
+  <data name="DataConnectionDialog_CannotModifyState" xml:space="preserve">
+    <value>Состояние диалогового окна подключения данных не может быть изменено программным способом при отображении диалогового окна.</value>
+  </data>
+  <data name="DataConnectionDialog_DataSourceNoAssociation" xml:space="preserve">
+    <value>Выбранный источник данных не имеет связи с этим поставщиком данных.</value>
+  </data>
+  <data name="DataConnectionDialog_DataSourceNotFound" xml:space="preserve">
+    <value>Источник данных не найден.</value>
+  </data>
+  <data name="DataConnectionDialog_DataSourceWithShortProvider" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="DataConnectionDialog_NoDataProviderSelected" xml:space="preserve">
+    <value>Поставщик данных в данный момент не выбран.</value>
+  </data>
+  <data name="DataConnectionDialog_NoDataProvidersForDataSource" xml:space="preserve">
+    <value>Источник данных "{0}" не имеет связи ни с какими поставщиками данных.</value>
+  </data>
+  <data name="DataConnectionDialog_NoDataSourceSelected" xml:space="preserve">
+    <value>Источник данных в данный момент не выбран.</value>
+  </data>
+  <data name="DataConnectionDialog_NoDataSourcesAvailable" xml:space="preserve">
+    <value>Источники данных недоступны.</value>
+  </data>
+  <data name="DataConnectionDialog_NoHelpAvailable" xml:space="preserve">
+    <value>В этом контексте Справка недоступна.</value>
+  </data>
+  <data name="DataConnectionDialog_TestConnectionSucceeded" xml:space="preserve">
+    <value>Тестовое подключение выполнено успешно.</value>
+  </data>
+  <data name="DataConnectionDialog_TestResults" xml:space="preserve">
+    <value>Результаты тестирования</value>
+  </data>
+  <data name="DataProvider_Odbc" xml:space="preserve">
+    <value>пОставщик данных .NET Framework для ODBC</value>
+  </data>
+  <data name="DataProvider_Odbc_DataSource_Description" xml:space="preserve">
+    <value>Используйте этот выбор, чтобы указать имя пользователя ODBC или системного источника данных для подключения к драйверу ODBC через поставщик данных .NET Framework для ODBC.</value>
+  </data>
+  <data name="DataProvider_Odbc_Description" xml:space="preserve">
+    <value>Используйте этот поставщик данных для подключения к источникам данных ODBC.</value>
+  </data>
+  <data name="DataProvider_Odbc_Short" xml:space="preserve">
+    <value>ODBC</value>
+  </data>
+  <data name="DataProvider_OleDB" xml:space="preserve">
+    <value>пОставщик данных .NET Framework для OLE DB</value>
+  </data>
+  <data name="DataProvider_OleDB_AccessDataSource_Description" xml:space="preserve">
+    <value>Используйте этот выбор для подключения к файлу базы данных Microsoft Access через поставщика данных .NET Framework для OLE DB.</value>
+  </data>
+  <data name="DataProvider_OleDB_Description" xml:space="preserve">
+    <value>Используйте этот поставщик данных для подключения к источникам данных OLE DB.</value>
+  </data>
+  <data name="DataProvider_OleDB_OracleDataSource_Description" xml:space="preserve">
+    <value>Используйте этот выбор для подключения к Oracle 7,3, 8i, 9i или г с помощью собственного поставщика MSDAORA через поставщика данных .NET Framework для OLE DB.</value>
+  </data>
+  <data name="DataProvider_OleDB_Short" xml:space="preserve">
+    <value>OLE DB</value>
+  </data>
+  <data name="DataProvider_OleDB_SqlDataSource_Description" xml:space="preserve">
+    <value>Используйте этот выбор для подключения к Microsoft SQL Server 2000 или выше с помощью поставщика данных .NET Framework для OLEDB.</value>
+  </data>
+  <data name="DataProvider_Oracle" xml:space="preserve">
+    <value>пОставщик данных .NET Framework для Oracle</value>
+  </data>
+  <data name="DataProvider_Oracle_DataSource_Description" xml:space="preserve">
+    <value>Используйте этот выбор для подключения к Oracle 7,3, 8i, 9i или г. с помощью поставщика данных .NET Framework для Oracle.
+
+Использование поставщика данных .NET Framework для Oracle не рекомендуется, поскольку он устарел.</value>
+  </data>
+  <data name="DataProvider_Oracle_Description" xml:space="preserve">
+    <value>Используйте этот поставщик данных для подключения к Oracle 7,3, 8i, 9i или г.
+
+Использование поставщика данных .NET Framework для Oracle не рекомендуется, поскольку он устарел.</value>
+  </data>
+  <data name="DataProvider_Oracle_Short" xml:space="preserve">
+    <value>Клиент Oracle</value>
+  </data>
+  <data name="DataProvider_Sql" xml:space="preserve">
+    <value>пОставщик данных .NET Framework для SQL Server</value>
+  </data>
+  <data name="DataProvider_Sql_DataSource_Description" xml:space="preserve">
+    <value>Используйте этот выбор для подключения к Microsoft SQL Server 2005 или выше с помощью поставщика данных .NET Framework для SQL Server.</value>
+  </data>
+  <data name="DataProvider_Sql_Description" xml:space="preserve">
+    <value>Используйте этот поставщик данных для подключения к Microsoft SQL Server 2005 или выше.</value>
+  </data>
+  <data name="DataProvider_Sql_FileDataSource_Description" xml:space="preserve">
+    <value>Используйте этот выбор, чтобы вложить файл базы данных в локальный экземпляр Microsoft SQL Server (включая Microsoft SQL Express) с помощью поставщика данных .NET Framework для SQL Server.</value>
+  </data>
+  <data name="DataProvider_Sql_Short" xml:space="preserve">
+    <value>Клиент SQL</value>
+  </data>
+  <data name="DataSource_CannotChangeSingleDataProvider" xml:space="preserve">
+    <value>Поставщик данных по умолчанию не может быть изменен, если доступен только один поставщик данных.</value>
+  </data>
+  <data name="DataSource_DataProviderNotFound" xml:space="preserve">
+    <value>Поставщик данных не найден.</value>
+  </data>
+  <data name="DataSource_MicrosoftAccess" xml:space="preserve">
+    <value>Файл базы данных Microsoft Access</value>
+  </data>
+  <data name="DataSource_MicrosoftOdbcDsn" xml:space="preserve">
+    <value>Источник данных Microsoft ODBC</value>
+  </data>
+  <data name="DataSource_MicrosoftSqlServer" xml:space="preserve">
+    <value>Microsoft SQL Server</value>
+  </data>
+  <data name="DataSource_MicrosoftSqlServerFile" xml:space="preserve">
+    <value>Файл базы данных Microsoft SQL Server</value>
+  </data>
+  <data name="DataSource_Oracle" xml:space="preserve">
+    <value>База данных Oracle</value>
+  </data>
+  <data name="DataSource_UnspecifiedDisplayName" xml:space="preserve">
+    <value>&lt;осер&gt;</value>
+  </data>
+  <data name="OdbcConnectionUIControl_SQLAllocEnvFailed" xml:space="preserve">
+    <value>Не удалось выделить дескриптор среды ODBC.</value>
+  </data>
+  <data name="OdbcConnectionUIControl_SQLAllocConnectFailed" xml:space="preserve">
+    <value>Не удалось выделить дескриптор подключения ODBC.</value>
+  </data>
+  <data name="OdbcConnectionUIControl_SQLDriverConnectFailed" xml:space="preserve">
+    <value>Не удалось вызвать утилиту подключения драйвера ODBC.</value>
+  </data>
+  <data name="OdbcConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
+    <value>Объект свойств подключения должен иметь тип свойства подключения ODBC.</value>
+  </data>
+  <data name="OleDBAccessConnectionProperties_MustSpecifyDataSource" xml:space="preserve">
+    <value>Это подключение не может быть протестировано, так как файл базы данных не указан.</value>
+  </data>
+  <data name="OleDBConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
+    <value>Объект свойства подключения должен иметь тип OLE DBConnection свойства.</value>
+  </data>
+  <data name="OracleConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
+    <value>Объект свойств подключения должен иметь тип свойства подключения Oracle или свойства подключения OLE дборакле.</value>
+  </data>
+  <data name="SqlConnectionProperties_MustSpecifyDataSource" xml:space="preserve">
+    <value>Это подключение не может быть протестировано, так как не указано имя сервера.</value>
+  </data>
+  <data name="SqlConnectionProperties_UnsupportedSqlVersion" xml:space="preserve">
+    <value>Эта версия сервера не поддерживается.  Необходимо иметь Microsoft SQL Server 2005 или более поздней версии.</value>
+  </data>
+  <data name="SqlConnectionUIControl_BrowseFileDefaultExt" xml:space="preserve">
+    <value>МДФ</value>
+  </data>
+  <data name="SqlConnectionUIControl_BrowseFileFilter" xml:space="preserve">
+    <value>Базы данных Microsoft SQL Server (*. mdf) | *. mdf | Все файлы (*. *) | *. *</value>
+  </data>
+  <data name="SqlConnectionUIControl_BrowseFileTitle" xml:space="preserve">
+    <value>Выберите файл базы данных SQL Server</value>
+  </data>
+  <data name="SqlConnectionProperties_CannotTestNonExistentDatabase" xml:space="preserve">
+    <value>Это подключение не может быть протестировано, поскольку указанная база данных не существует или не видна указанному пользователю.</value>
+  </data>
+  <data name="SqlConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
+    <value>Объект свойств подключения должен иметь тип свойства соединения SQL или свойства соединения OLE дбскл.</value>
+  </data>
+  <data name="SqlFileConnectionProperties_CannotTestNonExistentMdf" xml:space="preserve">
+    <value>Это подключение не может быть протестировано, так как указанный файл базы данных не существует.</value>
+  </data>
+  <data name="SqlFileConnectionProperties_NoFileSpecified" xml:space="preserve">
+    <value>Файл базы данных не указан.</value>
+  </data>
+  <data name="SqlFileConnectionProperties_TimeoutReasons" xml:space="preserve">
+    <value>Распространенные причины этой проблемы включают, что сервер не установлен, служба не запущена или сервер обновляет базу данных.  Если обновление выполняется, вы сможете подключиться к базе данных по завершении обновления.</value>
+  </data>
+  <data name="SqlFileConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
+    <value>Объект свойств подключения должен иметь тип свойства подключения к файлам SQL.</value>
+  </data>
+  <data name="DataProvider_EntityFramework" xml:space="preserve">
+    <value>пОставщик данных .NET Framework для Entity Framework</value>
+  </data>
+  <data name="DataProvider_EntityFramework_DataSource_Description" xml:space="preserve">
+    <value>Используйте этот поставщик для преобразования запросов к модели данных в каноническое дерево команд. Затем дерево команд может быть потреблено поставщиком данных .NET Framework для Entity Framework.</value>
+  </data>
+  <data name="DataProvider_EntityFramework_Description" xml:space="preserve">
+    <value>Используйте этот поставщик данных для подключения к источникам данных Entity Framework.</value>
+  </data>
+  <data name="DataProvider_EntityFramework_Short" xml:space="preserve">
+    <value>Entity Framework</value>
+  </data>
+  <data name="DataSource_EntityFramework" xml:space="preserve">
+    <value>Entity Framework</value>
+  </data>
+</root>

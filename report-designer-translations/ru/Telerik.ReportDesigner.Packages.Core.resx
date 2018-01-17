@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlignTextBottomText" xml:space="preserve">
+    <value>Выравнивание текста снизу</value>
+  </data>
+  <data name="AlignTextBottomDescription" xml:space="preserve">
+    <value>Выравнивание текста по нижнему краю.</value>
+  </data>
+  <data name="AlignTextCenterText" xml:space="preserve">
+    <value>Центр</value>
+  </data>
+  <data name="AlignTextCenterDescription" xml:space="preserve">
+    <value>Центрировать текст.</value>
+  </data>
+  <data name="AlignTextLeftText" xml:space="preserve">
+    <value>Выравнивание текста по левому краю</value>
+  </data>
+  <data name="AlignTextLeftDescription" xml:space="preserve">
+    <value>Выравнивание текста по левому краю.</value>
+  </data>
+  <data name="AlignTextMiddleText" xml:space="preserve">
+    <value>Выравнивание текста по середине</value>
+  </data>
+  <data name="AlignTextMiddleDescription" xml:space="preserve">
+    <value>Выравнивание текста по середине.</value>
+  </data>
+  <data name="AlignTextRightText" xml:space="preserve">
+    <value>Выравнивание текста по правому краю</value>
+  </data>
+  <data name="AlignTextRightDescription" xml:space="preserve">
+    <value>Выравнивание текста по правому краю.</value>
+  </data>
+  <data name="AlignTextTopText" xml:space="preserve">
+    <value>Выравнивание верхнего текста</value>
+  </data>
+  <data name="AlignTextTopDescription" xml:space="preserve">
+    <value>Выравнивание текста по верхнему краю.</value>
+  </data>
+  <data name="FormatBoldText" xml:space="preserve">
+    <value>Полужирный</value>
+  </data>
+  <data name="FormatBoldDescription" xml:space="preserve">
+    <value>Сделайте выделение полужирным. (Ctrl+B)</value>
+  </data>
+  <data name="ClipboardCopy" xml:space="preserve">
+    <value>Скопировать</value>
+  </data>
+  <data name="ClipboardCut" xml:space="preserve">
+    <value>Обрезать</value>
+  </data>
+  <data name="FormatItalicText" xml:space="preserve">
+    <value>Курсив</value>
+  </data>
+  <data name="FormatItalicDescription" xml:space="preserve">
+    <value>Сделайте выделенный фрагмент курсивом. (Ctrl+I)</value>
+  </data>
+  <data name="ClipboardPaste" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="FormatStrikethroughText" xml:space="preserve">
+    <value>Зачеркнуть</value>
+  </data>
+  <data name="FormatStrikethroughDescription" xml:space="preserve">
+    <value>Рисование линии через середину текста.</value>
+  </data>
+  <data name="FormatUnderlineText" xml:space="preserve">
+    <value>Подчеркнуть</value>
+  </data>
+  <data name="FormatUnderlineDescription" xml:space="preserve">
+    <value>Подчеркивание выделенного фрагмента. (Ctrl+U)</value>
+  </data>
+  <data name="AlignBottomText" xml:space="preserve">
+    <value>Выравнивание снизу</value>
+  </data>
+  <data name="AlignBottomDescription" xml:space="preserve">
+    <value>Выравнивание выбранных элементов по нижнему краю.</value>
+  </data>
+  <data name="AlignCenterText" xml:space="preserve">
+    <value>Выровнить по центру</value>
+  </data>
+  <data name="AlignCenterDescription" xml:space="preserve">
+    <value>Выравнивание выбранных элементов по центру по вертикали.</value>
+  </data>
+  <data name="AlignLeftText" xml:space="preserve">
+    <value>По левому краю</value>
+  </data>
+  <data name="AlignLeftDescription" xml:space="preserve">
+    <value>Выравнивание выбранных элементов по левому краю.</value>
+  </data>
+  <data name="AlignMiddleDescription" xml:space="preserve">
+    <value>Выравнивание выбранных элементов по центру горизонта.</value>
+  </data>
+  <data name="AlignRightText" xml:space="preserve">
+    <value>По правому краю</value>
+  </data>
+  <data name="AlignRightDescription" xml:space="preserve">
+    <value>Выравнивание выбранных элементов вправо.</value>
+  </data>
+  <data name="AlignToGridText" xml:space="preserve">
+    <value>Выравнивание по сетке</value>
+  </data>
+  <data name="AlignToGridDescription" xml:space="preserve">
+    <value>Выравнивание выбранных элементов по сетке.</value>
+  </data>
+  <data name="AlignTopText" xml:space="preserve">
+    <value>Выравнивание по верхнему краю</value>
+  </data>
+  <data name="AlignTopDescription" xml:space="preserve">
+    <value>Выравнивание выбранных элементов по верхнему краю.</value>
+  </data>
+  <data name="BringToFrontText" xml:space="preserve">
+    <value>Довести до передней</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BringToFrontDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="CenterHorizontallyText" xml:space="preserve">
+    <value>Центрировать по горизонтали</value>
+  </data>
+  <data name="CenterHorizontallyDescription" xml:space="preserve">
+    <value>Центрировать выбранные элементы по горизонтали.</value>
+  </data>
+  <data name="CenterVerticallyText" xml:space="preserve">
+    <value>Центрировать по вертикали</value>
+  </data>
+  <data name="CenterVerticallyDescription" xml:space="preserve">
+    <value>Центрировать выбранные элементы по вертикали.</value>
+  </data>
+  <data name="HorizSpaceConcatenateText" xml:space="preserve">
+    <value>Удалите Горизонтальный интервал.</value>
+  </data>
+  <data name="HorizSpaceConcatenateDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="HorizSpaceDecreaseText" xml:space="preserve">
+    <value>Уменьшите Горизонтальный интервал.</value>
+  </data>
+  <data name="HorizSpaceDecreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="HorizSpaceIncreaseText" xml:space="preserve">
+    <value>Увеличьте Горизонтальный интервал.</value>
+  </data>
+  <data name="HorizSpaceIncreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="HorizSpaceMakeEqualText" xml:space="preserve">
+    <value>Сделайте Горизонтальный интервал равным.</value>
+  </data>
+  <data name="HorizSpaceMakeEqualDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="SendToBackText" xml:space="preserve">
+    <value>Отправить на задний</value>
+  </data>
+  <data name="SendToBackDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="VertSpaceConcatenateText" xml:space="preserve">
+    <value>Удаление вертикального интервала.</value>
+  </data>
+  <data name="VertSpaceConcatenateDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="VertSpaceDecreaseText" xml:space="preserve">
+    <value>Уменьшите интервал по вертикали.</value>
+  </data>
+  <data name="VertSpaceDecreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="VertSpaceIncreaseText" xml:space="preserve">
+    <value>Увеличьте вертикальный интервал.</value>
+  </data>
+  <data name="VertSpaceIncreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="VertSpaceMakeEqualText" xml:space="preserve">
+    <value>Сделайте вертикальный интервал равным.</value>
+  </data>
+  <data name="VertSpaceMakeEqualDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="AlignMiddleText" xml:space="preserve">
+    <value>Выравнивание по середине</value>
+  </data>
+  <data name="BorderText" xml:space="preserve">
+    <value>Граница</value>
+  </data>
+  <data name="ClipboardText" xml:space="preserve">
+    <value>Буфер обмена</value>
+  </data>
+  <data name="FormatText" xml:space="preserve">
+    <value>Формат</value>
+  </data>
+  <data name="LayoutText" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="BorderSide" xml:space="preserve">
+    <value>Сторона границы</value>
+  </data>
+  <data name="BorderSideDescription" xml:space="preserve">
+    <value>Измените сторону границы.</value>
+  </data>
+  <data name="BorderStyle" xml:space="preserve">
+    <value>Стиль границы</value>
+  </data>
+  <data name="BorderStyleDescription" xml:space="preserve">
+    <value>Измените стиль линии.</value>
+  </data>
+  <data name="BorderWidthText" xml:space="preserve">
+    <value>Ширина границ</value>
+  </data>
+  <data name="BorderWidthDescription" xml:space="preserve">
+    <value>Измените ширину границы.</value>
+  </data>
+  <data name="FormatBackgroundColorText" xml:space="preserve">
+    <value>Цвет фона</value>
+  </data>
+  <data name="FormatBackgroundColorDescription" xml:space="preserve">
+    <value>Изменение цвета фона выделенных элементов.</value>
+  </data>
+  <data name="BorderSideAll" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="BorderSideBottom" xml:space="preserve">
+    <value>Дно</value>
+  </data>
+  <data name="BorderSideLeft" xml:space="preserve">
+    <value>Лево</value>
+  </data>
+  <data name="BorderSideRight" xml:space="preserve">
+    <value>Право</value>
+  </data>
+  <data name="BorderSideText" xml:space="preserve">
+    <value>Сторона границы</value>
+  </data>
+  <data name="BorderSideTop" xml:space="preserve">
+    <value>Верх</value>
+  </data>
+  <data name="BorderStyleDashed" xml:space="preserve">
+    <value>Пунктирный</value>
+  </data>
+  <data name="BorderStyleDotted" xml:space="preserve">
+    <value>Пунктирный</value>
+  </data>
+  <data name="BorderStyleDouble" xml:space="preserve">
+    <value>Дважды</value>
+  </data>
+  <data name="BorderStyleGroove" xml:space="preserve">
+    <value>Груув</value>
+  </data>
+  <data name="BorderStyleInset" xml:space="preserve">
+    <value>Вставка</value>
+  </data>
+  <data name="BorderStyleNone" xml:space="preserve">
+    <value>Никакой</value>
+  </data>
+  <data name="BorderStyleRidge" xml:space="preserve">
+    <value>Край</value>
+  </data>
+  <data name="BorderStyleSolid" xml:space="preserve">
+    <value>Твердых</value>
+  </data>
+  <data name="BorderStyleText" xml:space="preserve">
+    <value>Стиль границы</value>
+  </data>
+  <data name="FormatFontNameText" xml:space="preserve">
+    <value>Имя шрифта</value>
+  </data>
+  <data name="FormatFontNameDescription" xml:space="preserve">
+    <value>Изменить выбранный шрифт текста.</value>
+  </data>
+  <data name="FormatFontSizeText" xml:space="preserve">
+    <value>Размер шрифта</value>
+  </data>
+  <data name="FormatFontSizeDescription" xml:space="preserve">
+    <value>Изменение размера шрифта выделенного текста.</value>
+  </data>
+  <data name="FormatForegroundColorDescription" xml:space="preserve">
+    <value>Изменение цвета выделенного текста.</value>
+  </data>
+  <data name="FormatForegroundColorText" xml:space="preserve">
+    <value>Цвет шрифта</value>
+  </data>
+  <data name="TabHome" xml:space="preserve">
+    <value>Дом</value>
+  </data>
+  <data name="TabInsert" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="TabView" xml:space="preserve">
+    <value>Посмотреть</value>
+  </data>
+  <data name="ViewDebugGroup" xml:space="preserve">
+    <value>Отстраняет неполадки</value>
+  </data>
+  <data name="ViewOutputWindow" xml:space="preserve">
+    <value>Окно вывода</value>
+  </data>
+  <data name="ViewPropertiesWindow" xml:space="preserve">
+    <value>Обозреватель свойств</value>
+  </data>
+  <data name="ViewStartupPage" xml:space="preserve">
+    <value>Стартовая страница</value>
+  </data>
+  <data name="ViewToolsGroup" xml:space="preserve">
+    <value>Инструменты</value>
+  </data>
+  <data name="ViewWindowsGroup" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="BorderStyleOutset" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="BorderColorDescription" xml:space="preserve">
+    <value>Измените цвет границы.</value>
+  </data>
+  <data name="BorderColorText" xml:space="preserve">
+    <value>Цвет границ</value>
+  </data>
+  <data name="LayoutSizeHeightDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LayoutSizeHeightText" xml:space="preserve">
+    <value>Сделать одинаковую высоту</value>
+  </data>
+  <data name="LayoutSizeToControlDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LayoutSizeToControlText" xml:space="preserve">
+    <value>Сделать тот же размер</value>
+  </data>
+  <data name="LayoutSizeToGridDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LayoutSizeToGridText" xml:space="preserve">
+    <value>Размер к сетке</value>
+  </data>
+  <data name="LayoutSizeWidthDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="LayoutSizeWidthText" xml:space="preserve">
+    <value>Сделать одинаковую ширину</value>
+  </data>
+  <data name="ClearRecentDocumentsText" xml:space="preserve">
+    <value>Очистить недавние документы</value>
+  </data>
+  <data name="NewReportText" xml:space="preserve">
+    <value>Новый отчет...</value>
+  </data>
+  <data name="OpenReportText" xml:space="preserve">
+    <value>Открыть отчет...</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>Добро пожаловать!</value>
+  </data>
+  <data name="ReadFileError" xml:space="preserve">
+    <value>Не удается прочитать файл: {0}</value>
+  </data>
+  <data name="ErrorFileCreation" xml:space="preserve">
+    <value>Ошибка при создании файла</value>
+  </data>
+  <data name="ViewDiagnosticsGroup" xml:space="preserve">
+    <value>диагностика</value>
+  </data>
+  <data name="AlignTextJustifyText" xml:space="preserve">
+    <value>Выровнить по длине</value>
+  </data>
+  <data name="AlignTextJustifyDescription" xml:space="preserve">
+    <value>Выравнивание текста.</value>
+  </data>
+  <data name="ClipboardCopyDescription" xml:space="preserve">
+    <value>Ctrl+C</value>
+  </data>
+  <data name="ClipboardCutDescription" xml:space="preserve">
+    <value>Ctrl+X</value>
+  </data>
+  <data name="ClipboardPasteDescription" xml:space="preserve">
+    <value>Ctrl+V</value>
+  </data>
+  <data name="Options_DataConnectionsGroup_Title" xml:space="preserve">
+    <value>Подключения к данным</value>
+  </data>
+  <data name="DataConnectionsOptionsModel_AddOrEditConnectionInfo_Error" xml:space="preserve">
+    <value>Проблема при создании диалогового окна подключения данных.</value>
+  </data>
+  <data name="DataConnectionsOptionsModel_RemoveDataConnectionItem_ConfirmRemove" xml:space="preserve">
+    <value>Вы действительно хотите удалить выбранное подключение к данным "{0}"?</value>
+  </data>
+  <data name="Options_GeneralGroup_Title" xml:space="preserve">
+    <value>Общий</value>
+  </data>
+  <data name="Options_SelectFolderCommand_Description" xml:space="preserve">
+    <value>Выберите каталог нового элемента по умолчанию</value>
+  </data>
+  <data name="PropertyBrowserToolWindow_Title" xml:space="preserve">
+    <value>Свойства</value>
+  </data>
+  <data name="PropertyBrowser_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="PropertyBrowser_Reset" xml:space="preserve">
+    <value>Сбросить</value>
+  </data>
+  <data name="TabData" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="Options_Browse" xml:space="preserve">
+    <value>Просмотреть...</value>
+  </data>
+  <data name="Options_DefaultWorkingDir" xml:space="preserve">
+    <value>Рабочий каталог по умолчанию:</value>
+  </data>
+  <data name="Options_DirectoryDoNotExist_Warning" xml:space="preserve">
+    <value>Указанный каталог не существует. \ r \ n вы хотите создать его сейчас?</value>
+  </data>
+  <data name="Options_RestartRequired_Warning" xml:space="preserve">
+    <value>Для применения этих изменений требуется перезапуск приложения. Перед перезапуском сохраните все открытые отчеты. Перезапустить приложение сейчас?</value>
+  </data>
+  <data name="Option_AllowMultipleInstances" xml:space="preserve">
+    <value>Разрешить несколько экземпляров</value>
+  </data>
+  <data name="Option_BuildConnection_Button" xml:space="preserve">
+    <value>Подключение сборки</value>
+  </data>
+  <data name="Option_Language" xml:space="preserve">
+    <value>Язык:</value>
+  </data>
+  <data name="Option_PreserverOpenWindows" xml:space="preserve">
+    <value>Сохранить открытые окна при выходе:</value>
+  </data>
+</root>

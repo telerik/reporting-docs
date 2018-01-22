@@ -27,7 +27,7 @@ res_type: kb
 When using HTML5 report viewer to display reports in .NET Core application an error is displayed in the viewer: "Error registering the viewer with the service. An error has occurred. The type initializer for 'Lock' threw an exception."
 
 ## Solution
-Such errors occur when the Telerik Reporting NuGet packages we provide for .NET Core projects are not compatible with the project. The packages are built against the full .NET Framework because the Reporting engine relies on the GDI+ API. Therefore, the packages will not work in the project that targets .NET Core framework as GDI+ is missing there.
+Such errors occur when Telerik Reporting NuGet packages we provide for .NET Core projects are not compatible with the project. The packages are built against the full .NET Framework because the Reporting engine relies on the GDI+ API. Therefore, the packages will not work in the project that targets .NET Core framework as GDI+ is missing there.
 
 If you wish to use the packages in .NET Core project use the following steps for creating the project:
 
@@ -43,5 +43,6 @@ When the service and the viewer are hosted in different domains it will be requi
 ## See Also
 
 [HTML5 Report Viewer in ASP.NET Core 2](https://docs.telerik.com/reporting/html5-report-viewer-asp-net-core-2)
+
 [How To: Add Telerik Reporting REST Web API to Web Application](https://docs.telerik.com/reporting/telerik-reporting-rest-host-http-service-using-web-hosting)
 

@@ -35,7 +35,7 @@ Extending the report engine of the Report Server is not supported out of the box
 			</li>
 		</ul>
 	</li>
-	<li>Register the same assembly in the corresponding application configuration files, using the snippets that could be found here
+	<li>Register the same assembly in the corresponding application configuration files, using the snippets that could be found here[a link](https://docs.telerik.com/reporting/standalone-report-designer-extending-configuration)
 		<ul>
 			<li>
 				in (Telerik Report Server installatiion folder)\Telerik.ReportServer.Web\Web.config (usually C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Web.config)

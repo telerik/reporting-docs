@@ -1,0 +1,78 @@
+# The public documentation URL, used for sitemap.xml
+url: "https://docs.telerik.com/reporting"
+
+# Exclude files which should not be in the output
+exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd,report-designer-translations]
+navigation:
+## List your directory names and order here, like this:   
+    knowledge-base:
+        title: "Knowledge Base"
+
+## The application virtual path
+baseurl: /reporting
+
+## The product name
+productName: "Telerik Reporting"
+
+## The Kendo UI version used
+cdnVersion: "2018.1.117"
+
+## The MVC Core version used
+mvcCoreVersion: "2018.1.117"
+
+## Progress NPM Registry
+registry_url: 'https://registry.npm.telerik.com/'
+
+## Assign layout and category per different paths
+defaults:
+-
+    scope:
+        path: ""
+    values:
+        layout: "page"
+        category: "default"
+        product: "reporting"
+        editable: true
+-
+    scope:
+        path: "knowledge-base"
+    values:
+        layout: "kb-page"
+
+## Kendo UI Legacy        
+type_links:
+    "kendo.Class": "/api/javascript/class"
+    "kendo.data.DataSource": "/api/javascript/data/datasource"
+    "Array": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    "Blob": "https://developer.mozilla.org/en/docs/Web/API/Blob"
+    "File": "https://developer.mozilla.org/en-US/docs/Web/API/File"
+    "Boolean": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean"
+    "Function": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function"
+    "jQuery": "http://api.jquery.com/Types/#jQuery"
+    "Promise": "http://api.jquery.com/Types/#Promise"
+    "Object": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"
+    "Number": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+    "String": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String"
+    "Date": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date"
+    "Element": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement"
+
+# Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
+# "foo": "Bar"
+
+# Feedback Form Google Sheet ID
+ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'
+
+# The google services configuration
+google_tag_manager: GTM-6X92
+google_custom_search: '001595215763381649090:zzabynuukmu'
+google_custom_kb_search: '001595215763381649090:2tjzdeu8y54'
+
+# Assets pipeline configuration
+assets:
+    cachebust: soft
+    js_compressor: uglifier
+    gzip: false
+
+## Do not edit below this line
+safe: false
+markdown: MarkdownProcessor

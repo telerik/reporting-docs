@@ -1,11 +1,11 @@
 ---
-title: Style Telerik Angular Report Viewer using Sass-Based Themes
+title: How to style Telerik Angular Report Viewer using Sass-Based Themes
 description: Apply styling, based on Kendo UI Themes Sass-Based themes and custom HTML template for the HTML5 Report Viewer
 type: how-to
-page_title: Customize Angular Report Viewer
+page_title: How to style Telerik Angular Report Viewer using Sass-Based Themes
 slug: how-to-customize-viewer-using-kendo-ui-sass-based-theme
 position: 
-tags: Styling, AngularReportViewer
+tags: styling,viewer,angular
 ticketid: 1151892
 res_type: kb
 ---

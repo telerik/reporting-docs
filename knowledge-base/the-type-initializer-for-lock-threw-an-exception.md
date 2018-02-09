@@ -1,11 +1,11 @@
 ---
-title: The type initializer for 'Lock' threw an exception error in HTML5 viewer in ASP.NET Core application
-description: 
+title: The type initializer for Lock threw an exception error in HTML5 viewer in ASP.NET Core application
+description: The type initializer for Lock threw an exception error in HTML5 viewer in ASP.NET Core application
 type: troubleshooting
-page_title: The type initializer for 'Lock' threw an exception error in HTML5 viewer in ASP.NET Core application
-slug: 
+page_title: The type initializer for Lock threw an exception error in HTML5 viewer in ASP.NET Core application
+slug: the-type-initializer-for-lock-threw-an-exception
 position: 
-tags: 
+tags: lock,html5,viewer,core
 ticketid: 1149503
 res_type: kb
 ---

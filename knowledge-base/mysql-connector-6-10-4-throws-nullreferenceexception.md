@@ -1,11 +1,11 @@
 ---
 title: MySql connector v.6.10.4 throws a NullReferenceException
-description: 
+description: When connecting to a MySQL database using MySQL Connector Net 6.10.4, a NullReferenceException is thrown
 type: troubleshooting
 page_title:  MySql connector v.6.10.4 throws a NullReferenceException
-slug: 
+slug: mysql-connector-6-10-4-throws-nullreferenceexception
 position: 
-tags: 
+tags: mysql,connector,nullreferenceexception
 ticketid: 1149427
 res_type: kb
 ---

@@ -173,14 +173,14 @@ Note that the Telerik Reporting engine expects the *ObjectDataSource* collection
 
 However, the possible workaround is available by following these steps:
 
-	1. Create one ExpandoObject with all properties that would be used later in the report;
-	2. Add it to a collection (make sure that it is the first item in the collection);
-	3. Register the ExpandoObject type in the application Main method using the following code:
+1. Create one ExpandoObject with all properties that would be used later in the report;
+2. Add it to a collection (make sure that it is the first item in the collection);
+3. Register the ExpandoObject type in the application Main method using the following code:
 
 ```CSharp
 TypeDescriptor.AddProvider(new ExpandoObjectTypeDescriptionProvider(), typeof(ExpandoObject));
 ```
-	4. Bind an ObjectDataSource to the created collection from step 2;
-	5. In the report create a Data Item with property Visible = false;
-	6. Set the DataSource of the hidden data item to be the newly created ObjectDataSource.
+4. Bind an ObjectDataSource to the created collection from step 2;
+5. In the report create a Data Item with property Visible = false;
+6. Set the DataSource of the hidden data item to be the newly created ObjectDataSource.
 

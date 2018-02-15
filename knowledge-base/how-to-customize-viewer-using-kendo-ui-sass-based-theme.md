@@ -36,9 +36,9 @@ Check out the documentation for this feature here to learn how to use it: [https
 
 Once we moved the template file, together with the styles for the template and styles of kendo theme to the **assets** folder and modified all links to point there, the application ran correctly.
 In the modified project assets folder has to contain files:
-	1. *telerikReportViewerTemplate-sass.html* which comes from node_modules/@progress/telerik-angular-report-viewer/dist/dependencies/telerikReportViewerTemplate-sass.html
-	2. *telerikReportViewer-sass.css* which comes from node_modules/@progress/telerik-angular-report-viewer/dist/dependencies/telerikReportViewer-sass.css
-	3. *all.scss* which comes from node_modules/@progress/kendo-theme-default/dist/all.css (you could use any of the other available kendo themes)
+1. *telerikReportViewerTemplate-sass.html* which comes from node_modules/@progress/telerik-angular-report-viewer/dist/dependencies/telerikReportViewerTemplate-sass.html
+2. *telerikReportViewer-sass.css* which comes from node_modules/@progress/telerik-angular-report-viewer/dist/dependencies/telerikReportViewer-sass.css
+3. *all.scss* which comes from node_modules/@progress/kendo-theme-default/dist/all.css (you could use any of the other available kendo themes)
 
 Then in **telerikReportViewerTemplate-sass.html** change the link to css to point the stylesheet in assets folder:
 

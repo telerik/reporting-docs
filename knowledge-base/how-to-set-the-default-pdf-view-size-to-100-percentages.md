@@ -34,7 +34,7 @@ The default PDF viewer zoom level could be changed in three ways:
 	* Open Acrobat Reader, navigate to *Edit menu* -> *Preferences* -> *Page Display* -> set your required Zoom percentage.
 	* Click *OK* to confirm the change.
 	* Relaunch Acrobat Reader to test
-2. Change the settings programatically with Telerik.Reporting configuration section in application configuration file
+2. Change the settings programmatically with Telerik.Reporting configuration section in application configuration file
 
 	This setting could be added to [Telerik.Reporting Configuration Section Extension Element](https://docs.telerik.com/reporting/configuring-telerik-reporting-extensions) by using *JavaScript* as name attribute and value *this.zoom=100* like the following code snippet:
 	```

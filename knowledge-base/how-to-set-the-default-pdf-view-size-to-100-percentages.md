@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product</td>
-		<td>Progress® Telerik® Reporting </td>
+		<td>Progress® Telerik® Reporting</td>
 	</tr>
 	<tr>
 		<td>Rendering Format</td>

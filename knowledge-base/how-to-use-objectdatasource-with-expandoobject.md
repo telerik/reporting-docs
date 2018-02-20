@@ -1,6 +1,6 @@
 ---
 title: How to use ObjectDataSource with ExpandoObject
-description: Fix the "The expression contains object 'PropertyName' that is not defined in the current context"  error when using ObjectDataSource with ExpandoObject
+description: Fix The expression contains object 'PropertyName' that is not defined in the current context error when using ObjectDataSource with ExpandoObject
 type: how-to
 page_title: How to use one ObjectDataSource with multiple properties with ExpandoObject
 slug: how-to-use-objectdatasource-with-expandoobject

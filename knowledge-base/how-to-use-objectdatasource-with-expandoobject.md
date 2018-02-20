@@ -28,7 +28,7 @@ As ExpandoObject uses an internal dictionary of string and object (IDictionary<s
 In order to expose ExpandoObject properties to Reporting engine, a custom TypeDescriptor needs to be provided that will determine the actual properties of the object.
 
 ```CSharp
-public class ExpandoObjectTypeDescriptionProvider : TypeDescriptionProvider
+	public class ExpandoObjectTypeDescriptionProvider : TypeDescriptionProvider
     {
         private static readonly TypeDescriptionProvider m_Default = TypeDescriptor.GetProvider(typeof(ExpandoObject));
         public ExpandoObjectTypeDescriptionProvider()
@@ -42,7 +42,7 @@ public class ExpandoObjectTypeDescriptionProvider : TypeDescriptionProvider
                        new ExpandoObjectTypeDescriptor(instance);
         }
     }
-public class ExpandoObjectTypeDescriptor : ICustomTypeDescriptor
+	public class ExpandoObjectTypeDescriptor : ICustomTypeDescriptor
     {
         private readonly IDictionary<string,object> m_Instance;
         public ExpandoObjectTypeDescriptor(dynamic instance)
@@ -177,9 +177,9 @@ However, the possible workaround is available by following these steps:
 2. Add it to a collection (make sure that it is the first item in the collection);
 3. Register the ExpandoObject type in the application Main method using the following code:
 
-```CSharp
-TypeDescriptor.AddProvider(new ExpandoObjectTypeDescriptionProvider(), typeof(ExpandoObject));
-```
+	```CSharp
+	TypeDescriptor.AddProvider(new ExpandoObjectTypeDescriptionProvider(), typeof(ExpandoObject));
+	```
 4. Bind an ObjectDataSource to the created collection from step 2;
 5. In the report create a Data Item with property Visible = false;
 6. Set the DataSource of the hidden data item to be the newly created ObjectDataSource.

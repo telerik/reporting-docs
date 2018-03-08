@@ -37,5 +37,5 @@ A sample image is shown below:
 7. Open the series editor and move the column series at the last position in the list, so it will be drawn on top of the area series.
 8. Assign the desired colors to the graph series using the graph's [ColorPalette](https://docs.telerik.com/reporting/p-telerik-reporting-graph-colorpalette) property.
 
-## Links
+## See Also
 You can download the sample .trdx report definition from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/customer-satisfaction-by-store-department.trdx?sfvrsn=e203b785_2&download=true).

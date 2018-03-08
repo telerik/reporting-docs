@@ -24,8 +24,8 @@ res_type: kb
 
 
 ## Description
-Inside [Angular Report Viewer events](https://testdocs.telerik.com/reporting/angular-report-viewer-event-binding) the **this** object will point to the report viewer object.
-This makes any Angular components' properties inaccessible using the **this** object. Consider the following example:
+Inside [Angular Report Viewer events](https://testdocs.telerik.com/reporting/angular-report-viewer-event-binding) the **this** value will point to the report viewer object.
+This makes any Angular components' properties inaccessible in report viewer events. Consider the following example:
 
 Template
 ```HTML
@@ -50,7 +50,8 @@ Component
 
 
 ## Suggested Workarounds
-It is possible to change the scope of the **reportRendered** function to the *AppComponent* scope as shown in the following example:
+It is possible to create a new bound function which wraps the **reportRendered** function.
+The new bound function has a **this** value equal to the *AppComponent*'s **this** value.
 
 Template
 ```HTML
@@ -76,3 +77,6 @@ Component
 		}
 	}
 ```
+
+## See Also
+[Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)

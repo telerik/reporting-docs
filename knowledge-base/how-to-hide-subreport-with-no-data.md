@@ -42,6 +42,5 @@ When the Subreport DataSource is not directly dependent on the main report DataS
 
 When the Subreport DataSource is directly dependent on the main report DataSource, i.e. it is set (using Bindings) with the expression '= ReportItem.DataObject', you can use another Binding (also directly on the Report referenced by the Subreport item) to set its _Visible_ property to an expression evaluated to _True_ only when the 'ReportItem.DataObject.SubreportData' is not Null/empty - for example when 'SomeFieldValue' is a single string passed from main report to the Subreport, the expression could lool like '= ReportItem.DataObject.SomeFieldValue <> ""'.
 
-
-  
-
+## Notes
+The suggested approach assumes that the Subreport has a DataSource (that could return empty data set) assigned directly to the Subreport report item. If the report DataSource is null the approach will not work as expected.

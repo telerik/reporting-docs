@@ -1,3 +1,4 @@
+---
 title: How to create waterfall chart with Graph item
 description: Create waterfall chart that shows accumulated data values using the Graph item
 type: how-to

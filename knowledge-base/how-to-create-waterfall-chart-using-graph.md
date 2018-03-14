@@ -3,7 +3,7 @@ title: How to create waterfall chart with Graph item
 description: Create waterfall chart that shows accumulated data values using the Graph item
 type: how-to
 page_title: How to create waterfall chart with the Graph item
-slug: how-to-create-waterfall-chart-with-graph-item
+slug: how-to-create-waterfall-chart-using-graph
 position: 
 tags: styling,graph,chart
 ticketid: 1157441
@@ -42,24 +42,28 @@ Total,0
 
 Note that the last column, *Total* doesn't have an explicitly set value, because it should be calculated as an aggregate of all the previous intermediate values.
 The steps, needed to produce a waterfall chart are listed below:
+
 1. Start by creating a clustered column chart with the graph wizard , as explained here: [How To: Create Column Chart](https://docs.telerik.com/reporting/graphhowtocreatecolumnchart).
 2. When arranging the graph fields, drag the **Item** field for *Categories* box and **Value** field for *Values* box.
 3. Remove the sorting from the category group to ensure the data will be ordered as it is in the data source.
 4. Select a datapoint from the produced column series and set its Y property to 
-```
-= RunningValue('graph1', Sum(Fields.Value))
-```
-and its Y0 property to 
-```
-= IIF(Fields.Item = Exec('graph1', First(Fields.Item)), 
-0, 
-IIF(Fields.Item = Exec('graph1', Last(Fields.Item)),
-0,
-RunningValue('graph1', Sum(Fields.Value))- Sum(Fields.Value)))
-```
-The latter expression checks if the datapoint represents the first or the last item and then sets its Y0 property to 0, so the datapoint will span to the horizontal axis. 
-Otherwise subtracts the current datapoint value from the accumulated sum to calculate the bottom coordinate of the datapoint.
 
+	```
+	= RunningValue('graph1', Sum(Fields.Value))
+	```
+	
+	and its Y0 property to 
+	
+	```
+	= IIF(Fields.Item = Exec('graph1', First(Fields.Item)), 
+	0, 
+	IIF(Fields.Item = Exec('graph1', Last(Fields.Item)),
+	0,
+	RunningValue('graph1', Sum(Fields.Value))- Sum(Fields.Value)))
+	```
+	
+	The latter expression checks if the datapoint represents the first or the last item and then sets its Y0 property to 0, so the datapoint will span to the horizontal axis. 
+	Otherwise subtracts the current datapoint value from the accumulated sum to calculate the bottom coordinate of the datapoint.
 5. Assign the desired colors to the graph series using [Conditional formatting](https://docs.telerik.com/reporting/styling-conditional-formatting) rules.
 
 ## See Also

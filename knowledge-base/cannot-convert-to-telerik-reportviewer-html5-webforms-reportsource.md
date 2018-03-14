@@ -34,15 +34,15 @@ Examples of setting the ReportSource of HTML5 WebForms Report Viewer:
 *C#*
 ```c#
 protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!IsPostBack)
-            {
-                Telerik.ReportViewer.Html5.WebForms.ReportSource reportSource = new Telerik.ReportViewer.Html5.WebForms.ReportSource();
-                reportSource.IdentifierType = Telerik.ReportViewer.Html5.WebForms.IdentifierType.UriReportSource;
-                reportSource.Identifier = "Report1.trdp";            
-                reportViewer1.ReportSource = reportSource;
-            }
-        }
+{
+    if (!IsPostBack)
+    {
+        Telerik.ReportViewer.Html5.WebForms.ReportSource reportSource = new Telerik.ReportViewer.Html5.WebForms.ReportSource();
+        reportSource.IdentifierType = Telerik.ReportViewer.Html5.WebForms.IdentifierType.UriReportSource;
+        reportSource.Identifier = "Report1.trdp";            
+        reportViewer1.ReportSource = reportSource;
+    }
+}
 ```
 
 *VB*

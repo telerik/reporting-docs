@@ -20,10 +20,26 @@ res_type: kb
 
 
 ## Description
-When attempting to bring up the Report Designer in  Visual Studio 2017, an error with message _'Value cannot be null. Parameter name: instance'_ is thrown.
+When attempting to bring up the Report Designer in  Visual Studio 2017, an error with message _'Value cannot be null. Parameter name: instance'_ is thrown. The Stack Trace of the error is
+```
+Instances of this error (1)
+1.		Hide Call Stack
+at System.ComponentModel.TypeDescriptor.AddAttributes(Object instance, Attribute[] attributes)
+at Microsoft.VisualStudio.Design.VSDesignSurface.CreateDesigner(IComponent component, Boolean rootDesigner)
+at System.ComponentModel.Design.DesignerHost.AddToContainerPostProcess(IComponent component, String name, IContainer containerToAddTo)
+at System.ComponentModel.Design.DesignerHost.PerformAdd(IComponent component, String name)
+at System.ComponentModel.Design.DesignerHost.System.ComponentModel.Design.IDesignerHost.CreateComponent(Type componentType, String name)
+at System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(Type type, ICollection arguments, String name, Boolean addToContainer)
+at System.ComponentModel.Design.Serialization.DesignerSerializationManager.System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance(Type type, ICollection arguments, String name, Boolean addToContainer)
+at System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.Deserialize(IDesignerSerializationManager manager, CodeTypeDeclaration declaration)
+at System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.PerformLoad(IDesignerSerializationManager manager)
+at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.PerformLoad(IDesignerSerializationManager serializationManager)
+at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.DeferredLoadHandler.Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents.OnLoadCompleted(Int32 fReload)
+```
+
 
 ## Solution
-[The error](http://docs.telerik.com/reporting/troubleshooting-upgrading#report-cannot-be-built-and-opened-in-visual-studio-report-designer) indicates that the project uses a version of _Telerik Reporting_ that is not registered in Visual Studio 2017\.  
+[The error](http://docs.telerik.com/reporting/troubleshooting-upgrading#report-cannot-be-built-and-opened-in-visual-studio-report-designer) indicates that the project uses a version of _Telerik Reporting_ that is not registered in Visual Studio 2017\. This might be due to Telerik Reporting being installed before installation of Visual Studio 2017.
 
 You should re-install Telerik Reporting with support for Visual Studio 2017.
 You can download MSI file to install Telerik Reporting as described in the [How to download Telerik Reporting installer](https://docs.telerik.com/reporting/installation-installing-from-msi#how-to-download-telerik-reporting-installer).

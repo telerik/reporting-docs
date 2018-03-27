@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 
-Telerik Reporting Excel rendering extension exports report to Excel workbook into a single worksheet in Excel workbook. How to export report content to multiple worksheets.
+Telerik Reporting Excel rendering extension exports a report into a single worksheet in Excel workbook. How to export report content to multiple worksheets.
 
 ## Solution
 

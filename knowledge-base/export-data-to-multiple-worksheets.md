@@ -16,20 +16,16 @@ res_type: kb
 		<td>Product Version</td>
 		<td>12.0 18.227</td>
 	</tr>
-	<tr>
-		<td>Product</td>
-		<td>Progress® Telerik® Reporting </td>
-	</tr>
 </table>
 
 
 ## Description
 
-A commonly asked question is how to export report content to multiple worksheets in Excel workbook.
+Telerik Reporting Excel rendering extension exports report to Excel workbook into a single worksheet in Excel workbook. How to export report content to multiple worksheets.
 
 ## Solution
 
-Report is exported to Excel workbook into a single worksheet. To export the data into multiple worksheets, add several reports to a [ReportBook](https://docs.telerik.com/reporting/designing-reports-general-explanation).
+To export the data into multiple worksheets, add several reports to a [ReportBook](https://docs.telerik.com/reporting/designing-reports-general-explanation).
 Each report in a ReportBook will occupy a separate worksheet in Excel workbook.
 
 ReportBook can be created programmatically or using [Standalone report designer](https://docs.telerik.com/reporting/standalone-report-designer).

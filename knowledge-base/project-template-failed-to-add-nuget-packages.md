@@ -1,11 +1,11 @@
 ---
-title: HTML5 viewer project template failed to add NuGet packages 
-description: A problem occurred while trying to install the NuGet package error when using HTML5 viewer project templates in Visual Studio
+title: HTML5 viewer Visual Studio item template failed to add NuGet packages 
+description: A problem occurred while trying to install the NuGet package error when using HTML5 viewer item templates in Visual Studio
 type: troubleshooting
-page_title: Error occurred while adding HTML5 Report Viewer when using Visual Studio project templates
-slug: project-template-failed-to-add-nuget-packages
+page_title: Error occurred while adding HTML5 Report Viewer when using Visual Studio item templates
+slug: item-template-failed-to-add-nuget-packages
 position: 
-tags: projecttemplates,html5viewer
+tags: itemtemplates,html5viewer
 ticketid: 1157878
 res_type: kb
 ---
@@ -24,7 +24,7 @@ res_type: kb
 
 
 ## Description
-Visual Studio project templates for adding HTML5 report viewer fail to add NuGet packages.
+Visual Studio item templates for adding HTML5 report viewer fail to add NuGet packages.
 
 ## Error Message
 An error occurred while adding an HTML page with Telerik HTML5 Report Viewer
@@ -34,7 +34,7 @@ Error: System.InvalidOperationException: A problem occurred while trying to inst
 You can try to update your NuGet client or install the packages manually.
 
 ## Cause\Possible Cause(s)
-Reporting project templates use Visual Studio service for adding NuGet packages. The service seems to be no longer active. 
+Reporting item templates use Visual Studio service for adding NuGet packages. The service seems to be no longer active. 
 The issue is logged for further investigation and improvements. The fix will be provided in the subsequent releases.
 
 ## Suggested Workarounds

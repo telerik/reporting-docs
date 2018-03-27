@@ -1,6 +1,6 @@
 ---
 title: HTML5 viewer Visual Studio item template failed to add NuGet packages 
-description: A problem occurred while trying to install the NuGet package error when using HTML5 viewer item templates in Visual Studio
+description: Error problem occurred while trying to install the NuGet package when using HTML5 viewer item templates in Visual Studio
 type: troubleshooting
 page_title: Error occurred while adding HTML5 Report Viewer when using Visual Studio item templates
 slug: item-template-failed-to-add-nuget-packages
@@ -15,10 +15,6 @@ res_type: kb
 	<tr>
 		<td>Product Version</td>
 		<td>12.0 18.227</td>
-	</tr>
-	<tr>
-		<td>Product</td>
-		<td>Progress® Telerik® Reporting </td>
 	</tr>
 </table>
 
@@ -39,7 +35,7 @@ The issue is logged for further investigation and improvements. The fix will be 
 
 ## Suggested Workarounds
 
-Download the required packages manually using NuGet package manager. Telerik Reporting ASP.NET Web API service implementation requires the following ASP.NET and third party assemblies:
+Download the required packages manually using NuGet package manager:
 
 **1. Microsoft ASP.NET 4.0**
 

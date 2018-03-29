@@ -13,6 +13,10 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
 		<td>Product Version</td>
 		<td>12.0 18.227</td>
 	</tr>

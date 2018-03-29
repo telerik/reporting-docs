@@ -37,26 +37,28 @@ Setting the height of the SubReport item to '0' would make it invisible in the r
 ### Forcing the sub-report referenced by the SubReport item to render blank/empty when there is no data
 
 + When the sub-report's data source is not directly dependent on the main report's data source, simply hiding the sub-report's ReportHeader/ReportFooter when there is no data would do. You could use [Bindings](https://docs.telerik.com/reporting/expressions-bindings) to set the ReportHeader/ReportFooter section _Visible_ property. For example:
- 1. Select sub-report ReportHeader/ReportFooter _Properties_ -> _Bindings_ -> click on the ellipses to open the Bindings editor
- 2. Click _New_ to add new Binding to the ReportHeader/ReportFooter section
- 3. Under _Property path_ choose _Visible_
- 4. Under _Expression_ type:
+	1. Select sub-report ReportHeader/ReportFooter _Properties_ -> _Bindings_ -> click on the ellipses to open the Bindings editor
+	2. Click _New_ to add new Binding to the ReportHeader/ReportFooter section
+	3. Under _Property path_ choose _Visible_
+	4. Under _Expression_ type:
+	
 		```
-		= Count(Fields.SomeFieldValue) > 0
+			= Count(Fields.SomeFieldValue) > 0
 		```
-
-+ When the sub-report's data source is directly dependent on the main report's data source, i.e. it is set (using Bindings) with an expression like
-		```
+	
++ When the sub-report's data source is directly dependent on the main report's data source, i.e. it is set (using Bindings) with an expression like:
+	```
 		= ReportItem.DataObject
+	```
+	you can use another Binding (also directly on the sub-report) to set its _Visible_ property to an expression evaluated to _True_ only when the sub-report data is not _null_/_empty_. For example, let's assume that _'SomeFieldValue'_ is a single string passed from the main report to the sub-report:
+	1. Select sub-report _Properties_ -> _Bindings_ -> click on the ellipses to open the Bindings editor
+	2. Click _New_ to add new Binding to the sub-report
+	3. Under _Property path_ choose _Visible_
+	4. Under _Expression_ type:
+	
 		```
-  you can use another Binding (also directly on the sub-report) to set its _Visible_ property to an expression evaluated to _True_ only when the sub-report data is not _null_/_empty_. For example, let's assume that _'SomeFieldValue'_ is a single string passed from the main report to the sub-report:
- 1. Select sub-report _Properties_ -> _Bindings_ -> click on the ellipses to open the Bindings editor
- 2. Click _New_ to add new Binding to the sub-report
- 2. Under _Property path_ choose _Visible_
- 3. Under _Expression_ type:
+			= ReportItem.DataObject.SomeFieldValue <> ""
 		```
-		= ReportItem.DataObject.SomeFieldValue <> ""
-		```
-
+	
 ## Notes
 The suggested approach assumes that the sub-report has a data source (that could return empty data set) assigned directly to its DataSource property. If the sub-report DataSource is null the approach will not work as expected.

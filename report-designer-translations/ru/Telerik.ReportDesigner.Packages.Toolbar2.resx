@@ -136,13 +136,13 @@
     <value>Шаблоны представления данных</value>
   </data>
   <data name="Backstage_Exit_Text" xml:space="preserve">
-    <value>Выхода</value>
+    <value>Выход</value>
   </data>
   <data name="Backstage_ExportTemplate_Text" xml:space="preserve">
     <value>Экспортировать шаблон...</value>
   </data>
   <data name="Backstage_Help_Title" xml:space="preserve">
-    <value>Помогите</value>
+    <value>Помощь</value>
   </data>
   <data name="Backstage_NewItem_Title" xml:space="preserve">
     <value>Новый</value>

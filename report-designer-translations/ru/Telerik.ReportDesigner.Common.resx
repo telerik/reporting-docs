@@ -148,7 +148,7 @@
     <value>Не удается создать уникальное имя файла</value>
   </data>
   <data name="Backstage_HelpAbout_Title" xml:space="preserve">
-    <value>О </value>
+    <value>Информация о </value>
   </data>
   <data name="ErrorDialog_Caption" xml:space="preserve">
     <value>Ошибка</value>

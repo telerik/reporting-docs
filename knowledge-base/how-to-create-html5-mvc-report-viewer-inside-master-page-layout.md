@@ -30,10 +30,10 @@ res_type: kb
 ## Description
 When using [HTML5 ASP.NET MVC Report Viewer](https://docs.telerik.com/reporting/mvc-report-viewer-extension-overview) to display reports in MVC application, by default its not specified any Layout, so it is set to null.
 
-In general, setting Layout explicitly to null might be necessary if you want to get rid of a standard layout defined in *_Layout.cshtml*. When you make *@{Layout=null}* you are explicitly saying that this your final layout so it is not nested in any master layout.
+In general, setting Layout explicitly to null might be necessary if you want to get rid of a standard layout defined in *_Layout.cshtml*. When you make *@{Layout=null}* you are explicitly saying that this is your final layout so it is not nested in any master layout.
 
 ## Solution
-In the scenario of HTML5 MVC Report Viewer, using Layout = null in order to remove the default layout inheritance in that view. This allows including the whole HTML structure of Web page using markup, i.e. styles, scripts, meta information, custom body layout etc.
+When initialize a new HTML5 MVC Report Viewer template in web application, it comes with the directive *Layout = null* in order to remove the default layout inheritance in that view. This allows including the whole HTML structure of Web page using markup, i.e. styles, scripts, meta information, custom body layout etc.
 
 So, to create a MVC web application which contains the report viewer page inside the master layout, the report viewer template (for example ReportViewer.cshtml) must have only the body part. All meta information, styles and scripts, which are referred between the opening and closing *head* tags, have to be moved in the master Layout file in order to run correctly.
 

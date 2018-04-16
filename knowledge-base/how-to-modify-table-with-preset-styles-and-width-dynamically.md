@@ -27,16 +27,15 @@ res_type: kb
 Sometimes you would like to change dynamically the Table Data Source, hence the count and names of the columns, without modifying entire Table width and using the preset Styles.
 
 ## Solution
-The first step is to create a .trdp/x report definition containing all the necessary report items, including the Table.
-Set the Width and the Styles (as StyleNames described in the StyleRules in the Report StyleSheets) of the Table. Leave only one column in the Table - we will use it to carry the Styles of the header and detail cells.
-Use the following sample code to add DataSource and the necessary columns to the Table:
+1. Create a **.TRDX** report definition containing all the necessary report items, including the Table.
+2. Set Table **Width** and **Styles** (as *StyleNames* defined in the *StyleRules* in the report *StyleSheet* property). Leave only one column in the Table - we will use it to carry the *Styles* of the header and detail cells. Check the [Creating Style Rules](https://docs.telerik.com/reporting/style-creating-style-rules) article for details on style rules.
+3. Use the following sample code to add DataSource and the necessary columns to the Table:
 
 ```csharp
 SampleCodeForTheMainMethod()
 {
-
 	.....
-	
+
 	// The collection of column names to be assigned to the Table
     IList<string> columnNames = ListWithTheNamesOfTableColumns;
 
@@ -59,7 +58,6 @@ SampleCodeForTheMainMethod()
     SerializeReport(report, newTrdxFileName);
 	
 	.....
-	
 }
 
 private static void FormatTableBasedOnColumnNames(Table table, IList<string> columnNames)

@@ -24,10 +24,139 @@ res_type: kb
 
 
 ## Description
-Sometimes you would like to change dynamically the Table Data Source, hence the count and names of the columns, without modifying entire Table width and using the preset Styles.
+Sometimes you would like to change dynamically Table *DataSource*, hence the count and names of the *Columns*, but keep the Table *Width* and *Styles*.
 
 ## Solution
-1. Create a **.TRDX** report definition containing all the necessary report items, including the Table.
+The suggested approach is to use an initial report definition containing just the outlines of the Table (and all other report items not related to the Table), to add dynamically the needed columns to the Table, and to save the modified report definition.
+
+Step by step instructions follow:
+
+1. Create in the Standalone report designer a **.TRDX** report definition containing all the necessary report items, including the Table. For example use the code of the sample deserialized *BlankReport* report below (save it as *.trdx* file):
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Report Width="4.39999993642171in" Name="BlankReport" xmlns="http://schemas.telerik.com/reporting/2017/3.0">
+  <Items>
+    <PageHeaderSection Height="0.5in" Name="pageHeaderSection1">
+      <Style BackgroundColor="128, 255, 128" />
+      <Items>
+        <TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.150000015894572in" Value="PAGE HEADER" Name="textBox4">
+          <Style TextAlign="Center" VerticalAlign="Middle" />
+        </TextBox>
+      </Items>
+    </PageHeaderSection>
+    <DetailSection Height="1.19999995827675in" Name="detail">
+      <Style BackgroundColor="128, 255, 255" />
+      <Items>
+        <Table Width="4.39992141723633in" Height="0.400000005960464in" Left="0.00003941853841146in" Top="0.399999936421712in" Name="table1" StyleName="Civic.TableNormal">
+          <Body>
+            <Cells>
+              <TableCell RowIndex="0" ColumnIndex="0" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="4.39992141723633in" Height="0.200000002980232in" Left="0in" Top="0in" Name="textBox3" StyleName="Civic.TableBody" />
+                </ReportItem>
+              </TableCell>
+            </Cells>
+            <Columns>
+              <Column Width="4.39992141723633in" />
+            </Columns>
+            <Rows>
+              <Row Height="0.200000002980232in" />
+            </Rows>
+          </Body>
+          <Corner />
+          <RowGroups>
+            <TableGroup>
+              <Groupings>
+                <Grouping />
+              </Groupings>
+            </TableGroup>
+          </RowGroups>
+          <ColumnGroups>
+            <TableGroup>
+              <ReportItem>
+                <TextBox Width="4.39992141723633in" Height="0.200000002980232in" Left="0in" Top="0in" Name="textBox1" StyleName="Civic.TableHeader" />
+              </ReportItem>
+            </TableGroup>
+          </ColumnGroups>
+        </Table>
+        <TextBox Width="3.50000063578288in" Height="0.199999968210856in" Left="0.449999650319417in" Top="0.899999936421712in" Value="OTHER DETAIL SECTION CONTENT" Name="textBox2">
+          <Style BackgroundColor="Yellow" TextAlign="Center" VerticalAlign="Middle" />
+        </TextBox>
+        <TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.10003924369812in" Value="OTHER DETAIL SECTION CONTENT" Name="textBox6">
+          <Style BackgroundColor="Yellow" TextAlign="Center" VerticalAlign="Middle" />
+        </TextBox>
+      </Items>
+    </DetailSection>
+    <PageFooterSection Height="1in" Name="pageFooterSection1">
+      <Style BackgroundColor="Lime" />
+      <Items>
+        <TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.100000063578288in" Value="PAGE FOOTER" Name="textBox5">
+          <Style TextAlign="Center" VerticalAlign="Middle" />
+        </TextBox>
+      </Items>
+    </PageFooterSection>
+  </Items>
+  <PageSettings PaperKind="Letter">
+    <Margins>
+      <MarginsU Left="1in" Right="1in" Top="1in" Bottom="1in" />
+    </Margins>
+  </PageSettings>
+  <StyleSheet>
+    <StyleRule>
+      <Style>
+        <Padding Left="2pt" Right="2pt" />
+      </Style>
+      <Selectors>
+        <TypeSelector Type="TextItemBase" />
+        <TypeSelector Type="HtmlTextBox" />
+      </Selectors>
+    </StyleRule>
+    <StyleRule>
+      <Style Color="Black">
+        <Font Name="Georgia" Size="9pt" />
+        <BorderStyle Default="Solid" />
+        <BorderColor Default="Black" />
+        <BorderWidth Default="1px" />
+      </Style>
+      <Selectors>
+        <StyleSelector Type="Table" StyleName="Civic.TableNormal" />
+      </Selectors>
+    </StyleRule>
+    <StyleRule>
+      <Style BackgroundColor="White">
+        <Font Name="Georgia" Size="9pt" />
+        <BorderStyle Default="Solid" />
+        <BorderColor Default="Black" />
+        <BorderWidth Default="1px" />
+      </Style>
+      <Selectors>
+        <DescendantSelector>
+          <Selectors>
+            <TypeSelector Type="Table" />
+            <StyleSelector Type="ReportItem" StyleName="Civic.TableBody" />
+          </Selectors>
+        </DescendantSelector>
+      </Selectors>
+    </StyleRule>
+    <StyleRule>
+      <Style BackgroundColor="LightBlue" Color="228, 238, 243" VerticalAlign="Middle">
+        <Font Name="Georgia" Size="10pt" />
+        <BorderStyle Default="Solid" />
+        <BorderColor Default="Black" />
+        <BorderWidth Default="1px" />
+      </Style>
+      <Selectors>
+        <DescendantSelector>
+          <Selectors>
+            <TypeSelector Type="Table" />
+            <StyleSelector Type="ReportItem" StyleName="Civic.TableHeader" />
+          </Selectors>
+        </DescendantSelector>
+      </Selectors>
+    </StyleRule>
+  </StyleSheet>
+</Report>
+```
 2. Set Table **Width** and **Styles** (as *StyleNames* defined in the *StyleRules* in the report *StyleSheet* property). Leave only one column in the Table - we will use it to carry the *Styles* of the header and detail cells. Check the [Creating Style Rules](https://docs.telerik.com/reporting/style-creating-style-rules) article for details on style rules.
 3. Use the following sample code to add DataSource and the necessary columns to the Table:
 

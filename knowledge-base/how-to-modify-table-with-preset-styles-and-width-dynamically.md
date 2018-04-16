@@ -31,7 +31,7 @@ The suggested approach is to use an initial report definition containing just th
 
 Step by step instructions follow:
 
-1. Create in the Standalone report designer a **.TRDX** report definition containing all the necessary report items, including the Table. For example use the code of the sample deserialized *BlankReport* report below (save it as *.trdx* file):
+1. Create in the Standalone report designer a **.TRDX** report definition containing all the necessary report items, including the Table. For example use the code of the sample deserialized *BlankReport* report below (save it as *.trdx* file). The report definition contains Style Rules that could be chosen when creating Table with the report designer *Table Wizard*:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Report Width="4.39999993642171in" Name="BlankReport" xmlns="http://schemas.telerik.com/reporting/2017/3.0">

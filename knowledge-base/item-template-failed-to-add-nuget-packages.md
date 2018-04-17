@@ -33,9 +33,9 @@ Error: System.InvalidOperationException: A problem occurred while trying to inst
 
 You can try to update your NuGet client or install the packages manually.
 
-## Cause\Possible Cause(s)
-Reporting item templates use Visual Studio service for adding NuGet packages. The service seems to be no longer active. 
-The issue is logged for further investigation and improvements. The fix will be provided in the subsequent releases.
+## Solution
+
+The fix was provided in **R1 2018 Service Pack 3** release (version 12.0.18.416) of Telerik Reporting.
 
 ## Suggested Workarounds
 

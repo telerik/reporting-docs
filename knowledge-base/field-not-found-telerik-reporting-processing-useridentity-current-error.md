@@ -30,7 +30,7 @@ res_type: kb
 ## Description
 
 For adding Reporting engine and Reporting REST service to .NET Core application we provide NuGet packages: **Telerik.Reporting** and **Telerik.Reporting.Services.AspNetCore**.
-Using those packages in the application results in an error dsipalyed in HTML5 report viewer.
+Using those packages in the application results in an error dispalyed in HTML5 report viewer.
 
 ## Error Message
 

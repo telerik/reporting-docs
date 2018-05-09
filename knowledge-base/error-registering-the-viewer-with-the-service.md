@@ -1,8 +1,8 @@
 ---
-title: Error registering the viewer with the service.
+title: Error registering the viewer with the service. Access to the path X is denied.
 description: After deploying there is an error Access to the path 'C:\Windows\TEMP\Html5DemoApp\<VERSION>\LCT\value.dat' is denied.
 type: troubleshooting
-page_title: Error registering the viewer with the service.  An error has occurred.  Access to the path 'C:\Windows\TEMP\Html5DemoApp\<VERSION>\LCT\value.dat' is denied.
+page_title: Error registering the viewer with the service. Access to the path X is denied.
 slug: error-registering-the-viewer-with-the-service
 position: 
 tags: 

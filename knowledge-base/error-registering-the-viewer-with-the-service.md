@@ -34,7 +34,7 @@ The error message "Access to the path X is denied" indicates that the [Telerik R
 ## Solution
 Test changing the default folder using the [second oveload of the FileStorage](https://docs.telerik.com/reporting/m-telerik-reporting-cache-file-filestorage--ctor-1) and passing the custom folder location. The changes need to be made in ReportsController.cs file where the setting of the Reporting REST service are defined.
 
-Make sure that the IIS process has read/write access for the folder used by the storage. You can give access to the folder from its Properties - Sharing|Security options or change the used application pool's Identity through IIS Manager.
+Make sure that the IIS process has read/write access for the folder used by the storage. To give access to the folder go to Properties - Sharing|Security options or change the used application pool's Identity through IIS Manager.
 
 In case of different instances of the application running, set a unique **HostAppId** for each instance of the Reporting REST Service. The settings must be added in the ReportsControllerBase implementation.
 Depending on the hosting environment, it should be considered the appropriate cache storage options - please check the available options in [REST Service Storage](https://docs.telerik.com/reporting/telerik-reporting-rest-service-storage).

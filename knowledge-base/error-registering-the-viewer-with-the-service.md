@@ -26,7 +26,7 @@ An error has occurred.
 
 Access to the path 'C:\Windows\TEMP\Html5DemoApp\\**VERSION**\LCT\value.dat' is denied.
 
-Where **VERSION** is the current used version of the product.
+Where **VERSION** is the current installed on the machine version of the product.
 
 ## Cause\Possible Cause(s)
 The error message "Access to the path X is denied" indicates that the [Telerik Reporting REST service](https://docs.telerik.com/reporting/telerik-reporting-rest-conception) cannot access the configured file storage. By default, user temp folder will be used as a storage which is *'C:\Windows\TEMP'* in this case. 

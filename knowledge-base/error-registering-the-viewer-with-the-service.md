@@ -17,7 +17,7 @@ res_type: kb
 		<td>Progress® Telerik® Reporting </td>
 	</tr>
 	<tr>
-		<td>Viewer</td>
+		<td>Viewers</td>
 		<td>All</td>
 	</tr>
 </table>

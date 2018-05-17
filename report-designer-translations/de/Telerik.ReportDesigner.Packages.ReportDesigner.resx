@@ -117,6 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PreviewTab_FindDescription" xml:space="preserve">
+    <value>
+Öffnet das Dialogfeld suchen, in dem das Dokument gesucht werden soll. Wenn die Suchmetadaten nicht vorbereitet sind, wird die Berichtsaktualisierung aufgerufen, um die Suchmetadaten zu sammeln.
+     </value>
+  </data>
+  <data name="PreviewTab_FindText" xml:space="preserve">
+    <value>Finden</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Description" xml:space="preserve">
+    <value>Die Webdienst-Datenquelle ermöglicht Datenelementen das Abrufen von Daten aus vordefinierten Webdiensten.</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Text" xml:space="preserve">
+    <value>Webdienst-Datenquelle</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Text" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Description" xml:space="preserve">
+    <value>Löschen Sie den Bericht, der als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
+  </data>
   <data name="PreviewTab_Back" xml:space="preserve">
     <value>Zurück</value>
   </data>
@@ -793,7 +813,7 @@
     <value>Konfigurieren</value>
   </data>
   <data name="ReportBookTab_ReportSourcesText" xml:space="preserve">
-    <value>Berichtsquellen</value>
+    <value>Berichte</value>
   </data>
   <data name="ReportBookTab_GroupView_Text" xml:space="preserve">
     <value>Vorschau</value>
@@ -805,13 +825,13 @@
     <value>Hinzufügen</value>
   </data>
   <data name="ReportBookTab_AddReportSource_Description" xml:space="preserve">
-    <value>Fügen Sie der Berichtsquellen Sammlung Bericht Quell Code hinzu.</value>
+    <value>Fügen Sie der Berichtssammlung Bericht Buch Bericht hinzu.</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Text" xml:space="preserve">
     <value>Löschen</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Description" xml:space="preserve">
-    <value>Löschen Sie die ausgewählte Berichtsquelle aus der Berichtsquellen Sammlung des Bericht Buches.</value>
+    <value>Löscht den ausgewählten Bericht aus der Bericht Sammlung des Berichts Buches.</value>
   </data>
   <data name="ReportBookTab_Document_Text" xml:space="preserve">
     <value>Dokument Name</value>
@@ -829,13 +849,13 @@
     <value>Nach unten verschieben</value>
   </data>
   <data name="ReportBookTab_MoveDown_Description" xml:space="preserve">
-    <value>Verschiebt die ausgewählte Berichtsquelle in der Berichtsquellen Sammlung des Bericht Buches nach unten.</value>
+    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach unten.</value>
   </data>
   <data name="ReportBookTab_MoveUp_Text" xml:space="preserve">
     <value>Nach oben verschieben</value>
   </data>
   <data name="ReportBookTab_MoveUp_Description" xml:space="preserve">
-    <value>Verschiebt die ausgewählte Berichtsquelle in der Berichtsquellen Sammlung des Bericht Buches nach oben.</value>
+    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach oben.</value>
   </data>
   <data name="ReportBookTab_ReportSourceParameters_Text" xml:space="preserve">
     <value>Parameter</value>
@@ -844,10 +864,10 @@
     <value>Konfigurieren von Parametern.</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Text" xml:space="preserve">
-    <value>Berichtsquelle</value>
+    <value>Set</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Description" xml:space="preserve">
-    <value>Legen Sie die Berichtsquelle fest, die als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
+    <value>Legen Sie die Berichtsdefinition fest, die als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
   </data>
   <data name="ReportBookTab_Toc_Text" xml:space="preserve">
     <value>TOC</value>

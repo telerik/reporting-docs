@@ -117,6 +117,108 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DataSource_ParametersPage_NameCannotBeEmpty" xml:space="preserve">
+    <value>El nombre del parámetro no puede estar vacío.</value>
+  </data>
+  <data name="DataSource_ParametersPage_DuplicateName" xml:space="preserve">
+    <value>Nombre de parámetro duplicado: ' {0} '.</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_LogoutMethod" xml:space="preserve">
+    <value>Método de cierre de sesión:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_LogoutUrl" xml:space="preserve">
+    <value>URL de cierre de sesión:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Method" xml:space="preserve">
+    <value>Método de login:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Password" xml:space="preserve">
+    <value>Contraseña:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Response" xml:space="preserve">
+    <value>Respuesta:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_TokenPath" xml:space="preserve">
+    <value>Ruta de token:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Url" xml:space="preserve">
+    <value>URL de login:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Username" xml:space="preserve">
+    <value>Nombre de usuario:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Body" xml:space="preserve">
+    <value>Cuerpo:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_2Step_Description" xml:space="preserve">
+    <value>Introduzca todas las propiedades necesarias para configurar la autenticación de 2 pasos.</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_2Step_Title" xml:space="preserve">
+    <value>Configurar la autenticación de 2 pasos</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Basic_Description" xml:space="preserve">
+    <value>Introduzca todas las propiedades necesarias para configurar la autenticación básica.</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Basic_Title" xml:space="preserve">
+    <value>Configurar la autenticación básica</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_AuthenticationType" xml:space="preserve">
+    <value>Tipo de autenticación:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_AuthType_2Step" xml:space="preserve">
+    <value>2-step</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_AuthType_Basic" xml:space="preserve">
+    <value>Básico</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_AuthType_None" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Body" xml:space="preserve">
+    <value>Cuerpo:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Description" xml:space="preserve">
+    <value>Configure las propiedades de la solicitud HTTP que recuperará los datos del servicio Web.</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Encoding" xml:space="preserve">
+    <value>Codificación:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Method" xml:space="preserve">
+    <value>Método:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_ServiceUrl" xml:space="preserve">
+    <value>URL del servicio:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Title" xml:space="preserve">
+    <value>Configurar solicitud de servicio Web</value>
+  </data>
+  <data name="WebServiceDataSource_Parameters_Description" xml:space="preserve">
+    <value>Especifique el nombre de parámetro, el tipo, el valor y el valor de tiempo de diseño para cada parámetro de origen de datos. El valor puede ser un valor predeterminado o una expresión para evaluar. El valor en tiempo de diseño debe ser un valor constante. Esto es necesario para recuperar el esquema de origen de datos correctamente en tiempo de diseño.</value>
+  </data>
+  <data name="WebServiceDataSource_Parameters_DesignTimeValue_Title" xml:space="preserve">
+    <value>Valor en tiempo de diseño</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Parameters_Title" xml:space="preserve">
+    <value>Configurar parámetros de solicitud</value>
+  </data>
+  <data name="WebServiceDataSource_Parameters_Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="WebServiceDataSource_Title" xml:space="preserve">
+    <value>Configurar el origen de datos del servicio web-{0}</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Parameters_Title" xml:space="preserve">
+    <value>Configurar parámetros de autenticación</value>
+  </data>
+  <data name="WebServiceDataSource_PreviewPage_Execute" xml:space="preserve">
+    <value>Descargar</value>
+  </data>
+  <data name="WebServiceDataSource_FieldIsRequired" xml:space="preserve">
+    <value>Campo es requerido.</value>
+  </data>
+  <data name="CsvDataSource_ChooseDataSourcePage_CSV_Inline_Label" xml:space="preserve">
+    <value>Introduzca CSV como texto, arrastre y suelte el archivo CSV en el área de abajo, o bien seleccione un archivo manualmente</value>
+  </data>
   <data name="CsvDataSource_ChooseDataSourcePage_UseFile" xml:space="preserve">
     <value>Utilizar un archivo CSV</value>
   </data>

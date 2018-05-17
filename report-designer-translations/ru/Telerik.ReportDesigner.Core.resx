@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="WorkbenchLoader_LanguageStrings_Updated" xml:space="preserve">
+    <value>Sprachzeichenfolgen wurden aktualisiert. Diese Änderung erfordert einen Neustart. Die Anwendung jetzt neu starten?</value>
+  </data>
+  <data name="WorkbenchLoader_CannotConnectToStartedInstance_Error" xml:space="preserve">
+    <value>Es kann keine Verbindung mit einer bereits gestarteten Instanz von {0} hergestellt werden. Schließen Sie die anderen ausgeführten Programmkopien, oder aktivieren Sie die Option, mit der mehrere Instanzen gestartet werden können.</value>
+  </data>
   <data name="DocumentEditorService_BeginEdit_CannotReadFile" xml:space="preserve">
     <value>Не удается прочитать файл: {0}</value>
   </data>

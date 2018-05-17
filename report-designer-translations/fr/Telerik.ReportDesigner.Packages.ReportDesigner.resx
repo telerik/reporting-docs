@@ -117,6 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PreviewTab_FindDescription" xml:space="preserve">
+    <value>
+Ouvre la boîte de dialogue Rechercher dans le document. Si les métadonnées de recherche ne sont pas préparées, invoque l'actualisation du rapport pour collecter les métadonnées de recherche.
+     </value>
+  </data>
+  <data name="PreviewTab_FindText" xml:space="preserve">
+    <value>Trouver</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Description" xml:space="preserve">
+    <value>La source de données du service Web permet aux éléments de données de récupérer les données des services Web prédéfinis.</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Text" xml:space="preserve">
+    <value>Source de données de service Web</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Description" xml:space="preserve">
+    <value>Löschen Sie den Bericht, der als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
+  </data>
   <data name="PreviewTab_Back" xml:space="preserve">
     <value>Revenir</value>
   </data>
@@ -793,7 +813,7 @@
     <value>Configurer</value>
   </data>
   <data name="ReportBookTab_ReportSourcesText" xml:space="preserve">
-    <value>Sources du rapport</value>
+    <value>Rapports</value>
   </data>
   <data name="ReportBookTab_GroupView_Text" xml:space="preserve">
     <value>Voir</value>
@@ -805,13 +825,13 @@
     <value>Ajouter</value>
   </data>
   <data name="ReportBookTab_AddReportSource_Description" xml:space="preserve">
-    <value>Ajoutez la source de rapport à la collection de sources de rapports du livre de rapports.</value>
+    <value>Fügen Sie der Berichtssammlung Bericht Buch Bericht hinzu.</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Text" xml:space="preserve">
     <value>Supprimer</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Description" xml:space="preserve">
-    <value>Supprimez la source de rapport sélectionnée de la collection sources de rapports du livre de rapports.</value>
+    <value>Löscht den ausgewählten Bericht aus der Bericht Sammlung des Berichts Buches.</value>
   </data>
   <data name="ReportBookTab_Document_Text" xml:space="preserve">
     <value>Nom du document</value>
@@ -829,13 +849,13 @@
     <value>Déplacer vers le bas</value>
   </data>
   <data name="ReportBookTab_MoveDown_Description" xml:space="preserve">
-    <value>Déplacez la source de rapport sélectionnée vers le bas dans la collection de sources de rapports du livre de rapports.</value>
+    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach unten.</value>
   </data>
   <data name="ReportBookTab_MoveUp_Text" xml:space="preserve">
     <value>Déplacer vers le haut</value>
   </data>
   <data name="ReportBookTab_MoveUp_Description" xml:space="preserve">
-    <value>Déplacez la source de rapport sélectionnée dans la collection de sources de rapports du livre de rapports.</value>
+    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach oben.</value>
   </data>
   <data name="ReportBookTab_ReportSourceParameters_Text" xml:space="preserve">
     <value>Paramètres</value>
@@ -844,10 +864,10 @@
     <value>Configurer les paramètres.</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Text" xml:space="preserve">
-    <value>Source du rapport</value>
+    <value>Set</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Description" xml:space="preserve">
-    <value>Définissez la source de rapport qui sera utilisée comme modèle pour la table de contenu du livre de rapports.</value>
+    <value>Legen Sie die Berichtsdefinition fest, die als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
   </data>
   <data name="ReportBookTab_Toc_Text" xml:space="preserve">
     <value>TOC</value>

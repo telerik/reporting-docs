@@ -211,7 +211,7 @@
     <value>État du concepteur de requêtes SQL</value>
   </data>
   <data name="StateWarningText" xml:space="preserve">
-    <value>La requête SQL a été éditée en dehors du concepteur de requêtes SQL. L'utilisation du concepteur de requêtes ignorera ces modifications.</value>
+    <value>La requête SQL a été éditée en dehors du concepteur de requêtes SQL ou le schéma DB a été modifié. L'utilisation du concepteur de requêtes ignorera les modifications de requête SQL.</value>
   </data>
   <data name="StateRestoringErrorText" xml:space="preserve">
     <value>Une erreur s'est produite lors de la restauration de l'état enregistré.</value>

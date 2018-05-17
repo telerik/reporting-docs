@@ -211,7 +211,7 @@
     <value>SQL-Abfrage-Designer-Zustand</value>
   </data>
   <data name="StateWarningText" xml:space="preserve">
-    <value>Die SQL-Abfrage wurde außerhalb des SQL-Abfrage-Designers bearbeitet. Durch die Verwendung des Abfrage-Designers werden diese Änderungen verworfen.</value>
+    <value>Die SQL-Abfrage wurde außerhalb des SQL-Abfrage-Designers bearbeitet, oder das DB-Schema wurde geändert. Durch die Verwendung des Abfrage-Designers werden die SQL-Abfrage Änderungen verworfen.</value>
   </data>
   <data name="StateRestoringErrorText" xml:space="preserve">
     <value>Beim Wiederherstellen des gespeicherten Zustands ist ein Fehler aufgetreten.</value>

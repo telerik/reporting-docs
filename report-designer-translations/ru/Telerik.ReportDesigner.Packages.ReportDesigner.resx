@@ -117,6 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PreviewTab_FindDescription" xml:space="preserve">
+    <value>
+Открывает диалоговое окно "Поиск" для поиска в документе. Если метаданные поиска не подготовлены, вызывает обновление отчета для сбора метаданных поиска.
+     </value>
+  </data>
+  <data name="PreviewTab_FindText" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Description" xml:space="preserve">
+    <value>Источник данных веб-службы позволяет элементам данных получать данные из предопределенных веб-служб.</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Text" xml:space="preserve">
+    <value>Источник данных веб-службы</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Description" xml:space="preserve">
+    <value>Löschen Sie den Bericht, der als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
+  </data>
   <data name="PreviewTab_Back" xml:space="preserve">
     <value>Обратно</value>
   </data>
@@ -793,7 +813,7 @@
     <value>Настройка</value>
   </data>
   <data name="ReportBookTab_ReportSourcesText" xml:space="preserve">
-    <value>Источники отчетов</value>
+    <value>Отчеты</value>
   </data>
   <data name="ReportBookTab_GroupView_Text" xml:space="preserve">
     <value>Посмотреть</value>
@@ -805,13 +825,13 @@
     <value>Добавить</value>
   </data>
   <data name="ReportBookTab_AddReportSource_Description" xml:space="preserve">
-    <value>Добавление источника отчета в коллекцию источников отчета "книга отчетов".</value>
+    <value>Fügen Sie der Berichtssammlung Bericht Buch Bericht hinzu.</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Text" xml:space="preserve">
     <value>Удалить</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Description" xml:space="preserve">
-    <value>Удаление выбранного источника отчета из коллекции источников отчета "книга отчетов".</value>
+    <value>Löscht den ausgewählten Bericht aus der Bericht Sammlung des Berichts Buches.</value>
   </data>
   <data name="ReportBookTab_Document_Text" xml:space="preserve">
     <value>Название документа</value>
@@ -829,13 +849,13 @@
     <value>Сдвинуть вниз</value>
   </data>
   <data name="ReportBookTab_MoveDown_Description" xml:space="preserve">
-    <value>Переместите выбранный источник отчета вниз в коллекцию источников отчета "книга отчетов".</value>
+    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach unten.</value>
   </data>
   <data name="ReportBookTab_MoveUp_Text" xml:space="preserve">
     <value>Сдвинуть вверх</value>
   </data>
   <data name="ReportBookTab_MoveUp_Description" xml:space="preserve">
-    <value>Переместить выбранный источник отчета в коллекцию источников отчета «книга отчетов».</value>
+    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach oben.</value>
   </data>
   <data name="ReportBookTab_ReportSourceParameters_Text" xml:space="preserve">
     <value>Параметры</value>
@@ -844,10 +864,10 @@
     <value>Настройте параметры.</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Text" xml:space="preserve">
-    <value>Источник отчета</value>
+    <value>Установить</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Description" xml:space="preserve">
-    <value>Установите источник отчета, который будет использоваться в качестве шаблона для таблицы содержимого книги отчетов.</value>
+    <value>Legen Sie die Berichtsdefinition fest, die als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
   </data>
   <data name="ReportBookTab_Toc_Text" xml:space="preserve">
     <value>TOC</value>

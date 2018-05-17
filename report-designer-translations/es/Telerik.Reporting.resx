@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TableGroup_PageBreak_Description" xml:space="preserve">
+    <value>Obtiene o establece la regla de frenado de página de las filas o columnas de representación de este grupo de tablas.</value>
+  </data>
+  <data name="TableGroup_PageBreak_Name" xml:space="preserve">
+    <value>Salto de página</value>
+  </data>
   <data name="AppearanceCategory" xml:space="preserve">
     <value>Apariencia</value>
   </data>

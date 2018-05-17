@@ -211,7 +211,7 @@
     <value>Estado del diseñador de consultas SQL</value>
   </data>
   <data name="StateWarningText" xml:space="preserve">
-    <value>La consulta SQL se editó fuera del diseñador de consultas SQL. Al utilizar el diseñador de consultas se descartarán estos cambios.</value>
+    <value>La consulta SQL se editó fuera del diseñador de consultas SQL o se modificó el esquema de dB. Al utilizar el diseñador de consultas se descartarán los cambios de consulta SQL.</value>
   </data>
   <data name="StateRestoringErrorText" xml:space="preserve">
     <value>Se ha producido un error al restaurar el estado guardado.</value>

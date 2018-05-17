@@ -117,6 +117,54 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="WebServiceDataSource_Description" xml:space="preserve">
+    <value>Представляет данные веб-службы для элементов данных.</value>
+  </data>
+  <data name="WebServiceDataSource_Name" xml:space="preserve">
+    <value>Источник данных веб-службы</value>
+  </data>
+  <data name="WebServiceDataSource_Authentication_Description" xml:space="preserve">
+    <value>Представляет данные проверки подлинности.</value>
+  </data>
+  <data name="WebServiceDataSource_Authentication_Name" xml:space="preserve">
+    <value>Проверки подлинности</value>
+  </data>
+  <data name="WebServiceDataSource_BasicAuthentication_Name" xml:space="preserve">
+    <value>Базовая аутентификация</value>
+  </data>
+  <data name="WebServiceDataSource_Body_Description" xml:space="preserve">
+    <value>Тело метода POST.</value>
+  </data>
+  <data name="WebServiceDataSource_Body_Name" xml:space="preserve">
+    <value>Содержимое</value>
+  </data>
+  <data name="WebServiceDataSource_DataEncoding_Description" xml:space="preserve">
+    <value>Кодирование данных. По умолчанию используется UTF-8.</value>
+  </data>
+  <data name="WebServiceDataSource_DataEncoding_Name" xml:space="preserve">
+    <value>Кодирование данных</value>
+  </data>
+  <data name="WebServiceDataSource_DataFormat_Description" xml:space="preserve">
+    <value>Ожидаемый формат данных ответа.</value>
+  </data>
+  <data name="WebServiceDataSource_DataFormat_Name" xml:space="preserve">
+    <value>Формат данных</value>
+  </data>
+  <data name="WebServiceDataSource_Method_Description" xml:space="preserve">
+    <value>Метод запроса HTTP.</value>
+  </data>
+  <data name="WebServiceDataSource_Method_Name" xml:space="preserve">
+    <value>Метод</value>
+  </data>
+  <data name="WebServiceDataSource_ServiceUrl_Description" xml:space="preserve">
+    <value>URL-адрес, на который отправляется запрос.</value>
+  </data>
+  <data name="WebServiceDataSource_ServiceUrl_Name" xml:space="preserve">
+    <value>URL-адрес службы</value>
+  </data>
+  <data name="WebServiceDataSource_TwoStepAuthentication_Name" xml:space="preserve">
+    <value>2-ступенчатая аутентификация</value>
+  </data>
   <data name="CalculatedField_Category" xml:space="preserve">
     <value>Вычисляемое поле</value>
   </data>

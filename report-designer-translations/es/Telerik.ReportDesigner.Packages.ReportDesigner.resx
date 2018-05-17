@@ -117,6 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PreviewTab_FindDescription" xml:space="preserve">
+    <value>
+Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos de búsqueda no están preparados, invoca refrescar informe para reunir los metadatos de búsqueda.
+     </value>
+  </data>
+  <data name="PreviewTab_FindText" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Description" xml:space="preserve">
+    <value>El origen de datos del servicio web permite que los elementos de datos recuperen datos de servicios Web predefinidos.</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Text" xml:space="preserve">
+    <value>Origen de datos del servicio Web</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Description" xml:space="preserve">
+    <value>Löschen Sie den Bericht, der als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
+  </data>
   <data name="PreviewTab_Back" xml:space="preserve">
     <value>Atrás</value>
   </data>
@@ -793,7 +813,7 @@
     <value>Configurar</value>
   </data>
   <data name="ReportBookTab_ReportSourcesText" xml:space="preserve">
-    <value>Orígenes del informe</value>
+    <value>Reportes</value>
   </data>
   <data name="ReportBookTab_GroupView_Text" xml:space="preserve">
     <value>Ver</value>
@@ -805,13 +825,13 @@
     <value>Añadir</value>
   </data>
   <data name="ReportBookTab_AddReportSource_Description" xml:space="preserve">
-    <value>Agregar origen de informe a la colección de orígenes de informes del informe.</value>
+    <value>Fügen Sie der Berichtssammlung Bericht Buch Bericht hinzu.</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Text" xml:space="preserve">
     <value>Eliminar</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Description" xml:space="preserve">
-    <value>Elimine el origen de informe seleccionado de la colección de orígenes de informes del informe.</value>
+    <value>Löscht den ausgewählten Bericht aus der Bericht Sammlung des Berichts Buches.</value>
   </data>
   <data name="ReportBookTab_Document_Text" xml:space="preserve">
     <value>Nombre del documento</value>
@@ -829,13 +849,13 @@
     <value>Bajar</value>
   </data>
   <data name="ReportBookTab_MoveDown_Description" xml:space="preserve">
-    <value>Desplace el origen del informe seleccionado hacia abajo en la colección de orígenes de informes de informe Book.</value>
+    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach unten.</value>
   </data>
   <data name="ReportBookTab_MoveUp_Text" xml:space="preserve">
     <value>Subir</value>
   </data>
   <data name="ReportBookTab_MoveUp_Description" xml:space="preserve">
-    <value>Desplace el origen del informe seleccionado en la colección de orígenes de informes de informe Book.</value>
+    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach oben.</value>
   </data>
   <data name="ReportBookTab_ReportSourceParameters_Text" xml:space="preserve">
     <value>Parámetros</value>
@@ -844,10 +864,10 @@
     <value>Configure los parámetros.</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Text" xml:space="preserve">
-    <value>Origen del informe</value>
+    <value>Configurar</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Description" xml:space="preserve">
-    <value>Defina el origen del informe que se usará como plantilla para la tabla de contenido del libro de informes.</value>
+    <value>Legen Sie die Berichtsdefinition fest, die als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
   </data>
   <data name="ReportBookTab_Toc_Text" xml:space="preserve">
     <value>TOC</value>

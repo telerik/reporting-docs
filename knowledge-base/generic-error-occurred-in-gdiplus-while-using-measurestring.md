@@ -3,9 +3,9 @@ title: “A generic error occurred in GDI+” while using MeasureString
 description: Very long strings in TextBox cause GDI+ error
 type: troubleshooting
 page_title: GDI+ error for string with more than 32000 symbols
-slug: 
+slug: generic-error-occurred-in-gdiplus-while-using-measurestring
 position: 
-tags: 
+tags: GDI+, generic error
 ticketid: 1167211
 res_type: kb
 ---

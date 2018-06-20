@@ -2,10 +2,10 @@
 title: Unmerge Crosstab row/column headers
 description: how to split group header cells in a Table/Crosstab
 type: how-to
-page_title: 
+page_title: Split Table group headers
 slug: how-to-split-group-header-cells-in-crosstab
 position: 
-tags: 
+tags: table,crosstab,row header,column header,unmerge
 ticketid: 1171917
 res_type: kb
 ---

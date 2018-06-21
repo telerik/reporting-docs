@@ -5,7 +5,7 @@ type: how-to
 page_title: Draw shapes with custom geometry
 slug: how-to-create-custom-shape
 position: 
-tags: 
+tags: customize,shape
 ticketid: 1172132
 res_type: kb
 ---
@@ -47,7 +47,7 @@ We provide also an option to create Custom Shapes. Here is how to do it.
       base.AddLines(seriesofPoints, true);
   }
 ```
-3. The [Clone()](https://docs.telerik.com/reporting/m-telerik-reporting-drawing-shapes-shapebase-clone) method should also be overridden to return the new shapeF:F
+3. The [Clone()](https://docs.telerik.com/reporting/m-telerik-reporting-drawing-shapes-shapebase-clone) method should also be overridden to return the new shape:
 ```CSharp
   public override object Clone()
   {
@@ -60,8 +60,9 @@ We provide also an option to create Custom Shapes. Here is how to do it.
   
 After the Custom Shape has been created, it can be instantiated and added to the report.  
   
-Here is a sample report demonstrating the approach.
+[Here is a sample](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/customshape.zip?sfvrsn=35af7bc9_2) demonstrating the approach.
 
 ## Notes
-The geometry of _MyCustomShape_ in the sample should be changed according to the specific requirements by modifying the **CreateShape()** method body using the functionality of the [System.Drawing namespace](https://msdn.microsoft.com/en-us/library/system.drawing(v=vs.110).aspx).  
-The project _ReportLibrary1_ should be built before previewing _Report1_ where a single _MyCustomShape_ item is added in the constructor.  
+The geometry of _MyCustomShape_ in the sample should be changed according to the specific requirements by modifying the **CreateShape()** method body using the functionality of the [System.Drawing namespace](https://msdn.microsoft.com/en-us/library/system.drawing(v=vs.110).aspx).
+
+The project _ReportLibrary1_ should be built before previewing _Report1_, where a single _MyCustomShape_ item is added in the constructor.

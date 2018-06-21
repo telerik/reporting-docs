@@ -20,11 +20,11 @@ res_type: kb
 
 
 ## Description
-Sometimes it is necessary to change dynamically the connection string of a report and/or data item. This could be done **_directly in the report definition_** using dedicated report parameters.
+Sometimes it is necessary to change dynamically the connection string of a report and/or data item.
 
 ## Solution
-Here are the steps:
-1. In the report definition introduce a new Report Parameter (for example _ConnectionStringParameter_) - the connection string will be passed to the Report via this parameter.  
+The requirement can be achieved without writing additional code, **_directly in the report definition_** using dedicated report parameters. Here are the steps:
+1. In the report definition [introduce a new Report Parameter](https://docs.telerik.com/reporting/designing-reports-parameters-adding-parameters) (for example _ConnectionStringParameter_) - the connection string will be passed to the Report via this parameter.  
 2. In the Report or other [Data item](https://docs.telerik.com/reporting/data-items) (Table, List, etc.) where the connection string is supposed to be changed dynamically introduce a new [Binding](https://docs.telerik.com/reporting/expressions-bindings) as shown below:  
   
 

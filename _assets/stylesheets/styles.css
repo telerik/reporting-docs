@@ -662,29 +662,7 @@ footer p {
   padding: 0; }
 
 #page-search .gsc-input {
-  background-image: none !important;
   padding-right: 2px;
-  text-indent: 0 !important;
-}
-
-#page-search .gsc-input::placeholder{
-  opacity: 0 !important;
-}
-
-#page-search .gsc-input::-webkit-input-placeholder {
-  opacity: 0 !important;
-}
-
-#page-search .gsc-input:-moz-placeholder { /* Firefox 18- */
-  opacity: 0 !important;
-}
-
-#page-search .gsc-input::-moz-placeholder {  /* Firefox 19+ */
-  opacity: 0 !important;
-}
-
-#page-search .gsc-input:-ms-input-placeholder {
-  opacity: 0 !important;
 }
 
 #page-search td.gsc-search-button {
@@ -702,7 +680,7 @@ footer p {
   padding: 8px 7px 7px;
 }
 
-#page-search button.gsc-search-button, #page-search .gcsc-branding {
+#page-search button.gsc-search-button {
   display: none !important;
 }
 

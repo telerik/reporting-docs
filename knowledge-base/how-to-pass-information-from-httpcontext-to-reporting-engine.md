@@ -26,7 +26,7 @@ res_type: kb
 ## Description
 Starting with version [12.0.18.416](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r1-2018-sp3-12-0-18-416), _System.Web.HttpContext.Current_ is no longer available in the report rendering thread.  
   
-Removing _HttpContext.Current_ in the report rendering thread was a necessary change. Its purpose was to allow the rendering engine to use a dedicated rendering thread queue with configurable count which will significantly improve product's performance.
+Removing _HttpContext.Current_ in the report rendering thread was a necessary change. Its purpose was to allow the rendering engine to use a dedicated rendering thread queue with configurable count, which should significantly improve product's performance.
 
 ## Solution
 To access the current user context, you can use the [Telerik.Reporting.Processing.UserIdentity.Current](https://docs.telerik.com/reporting/p-telerik-reporting-processing-useridentity-current) static property. It is also possible to use the new [UserIdentity ](https://docs.telerik.com/reporting/expressions-global-objects#useridentity)object in the expression context as a global object: _=UserIdentity_.  

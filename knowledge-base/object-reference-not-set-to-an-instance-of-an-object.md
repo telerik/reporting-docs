@@ -57,13 +57,13 @@ public void AddInSet(string key, string value)
     }
 }
 ```
-The **System.Diagnostics.Trace.WriteLine(error)** code line means that if you attach a trace listener as suggested in my previous reply the error message above will be present in the trace listener log.
+The **System.Diagnostics.Trace.WriteLine(error)** code line means that if a trace listener is attached, the error message above will be present in the trace listener log.
 
-The error message above might mean that either the file storage got corrupted, or you are using the service in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([FileStorage](https://docs.telerik.com/reporting/t-telerik-reporting-cache-file-filestorage)) is not suitable for a multiple-instance environment. Based on the observations up until now I can offer two approaches to resolve this:
+The error message above might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([FileStorage](https://docs.telerik.com/reporting/t-telerik-reporting-cache-file-filestorage)) is not suitable for a multiple-instance environment. Based on the observations up until now I can offer two approaches to resolve this:
 
 1. For *web farm environment scenario*, our recommendation is to change the storage to use a **MsSqlServerStorage** or **RedisStorage** implementation - For further reference, please check [IStorage implementation suitable for deploying in Web Farms](https://docs.telerik.com/reporting/telerik-reporting-rest-service-storage#istorage-implementation-suitable-for-deploying-in-web-farms) section of the help article.
 
-2. For *single-instance environment scenario*, our assumption is that the file storage became corrupted. You can try to reset only the report viewer storage data by going to the file storage location. By default, the REST Service is using *the current user's temporary folder*. In case you are using Telerik Report Server - the default file storage is placed in product installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data* (delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data). 
+2. For *single-instance environment scenario*, our assumption is that the file storage became corrupted. Try resetting only the report viewer storage data by going to the file storage location. By default, the REST Service is using *the current user's temporary folder*. In case of using Telerik Report Server - the default file storage is placed in product installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data* (delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data). 
 Before deleting anything, we recommend creating a back up just in case if valuable production data is already stored.
 
 

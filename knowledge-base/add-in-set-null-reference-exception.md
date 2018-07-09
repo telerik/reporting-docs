@@ -63,7 +63,7 @@ The error message above might mean that either the file storage got corrupted, o
 
 1. In **web farm environments** it is recommended to change the storage to use a **MsSqlServerStorage** or **RedisStorage** implementation. For further details check [IStorage implementation suitable for deploying in Web Farms](https://docs.telerik.com/reporting/telerik-reporting-rest-service-storage#istorage-implementation-suitable-for-deploying-in-web-farms).
 
-2. In **single-instance environments** reset the report viewer storage data by deleting the contents of the file storage location. By default, the REST Service is using *the current user's temporary folder*. In case of using Telerik Report Server the default file storage is placed in the product installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data* (delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data intact). 
+2. In **single-instance environments** reset the report viewer storage data by deleting the contents of the file storage folder. By default, the REST Service is using *the current user's temporary folder*. In case of using Telerik Report Server the default file storage is placed in the product installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data* (delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data intact). 
 We recommend creating a backup before resetting the storage.
 
 

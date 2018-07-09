@@ -1,11 +1,11 @@
 ---
-title: Object reference not set to an instance of an object
-description: System.NullReferenceException Object reference not set to an instance of an object. at Telerik.Reporting.Cache.CacheStorage.AddInSet(String key, String value)
+title: Telerik.Reporting.Cache.CacheStorage.AddInSet NullReferenceException
+description: NullReferenceException at Telerik.Reporting.Cache.CacheStorage.AddInSet(String key, String value)
 type: troubleshooting
-page_title: Object reference not set to an instance of an object
-slug: object-reference-not-set-to-an-instance-of-an-object
+page_title: AddInSet NullReferenceException
+slug: add-in-set-null-reference-exception
 position: 
-tags: ReportViewer
+tags: reportviewer,storage
 ticketid: 1173719
 res_type: kb
 ---
@@ -20,7 +20,7 @@ res_type: kb
 
 
 ## Description
-Upon deploying, sometimes the following exception occurs when the report viewer attempts to request a report for rendering:
+The following exception occurs when the report viewer attempts to request a report:
 ```
 exceptionMessage: "Object reference not set to an instance of an object."
 exceptionType: "System.NullReferenceException"
@@ -59,12 +59,12 @@ public void AddInSet(string key, string value)
 ```
 The **System.Diagnostics.Trace.WriteLine(error)** code line means that if a trace listener is attached, the error message above will be present in the trace listener log.
 
-The error message above might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([FileStorage](https://docs.telerik.com/reporting/t-telerik-reporting-cache-file-filestorage)) is not suitable for a multiple-instance environment. Based on the observations up until now I can offer two approaches to resolve this:
+The error message above might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([FileStorage](https://docs.telerik.com/reporting/t-telerik-reporting-cache-file-filestorage)) is not suitable for such environment. The issue can be approached depending on the environment specifications:
 
-1. For *web farm environment scenario*, our recommendation is to change the storage to use a **MsSqlServerStorage** or **RedisStorage** implementation - For further reference, please check [IStorage implementation suitable for deploying in Web Farms](https://docs.telerik.com/reporting/telerik-reporting-rest-service-storage#istorage-implementation-suitable-for-deploying-in-web-farms) section of the help article.
+1. In **web farm environments** it is recommended to change the storage to use a **MsSqlServerStorage** or **RedisStorage** implementation. For further details check [IStorage implementation suitable for deploying in Web Farms](https://docs.telerik.com/reporting/telerik-reporting-rest-service-storage#istorage-implementation-suitable-for-deploying-in-web-farms).
 
-2. For *single-instance environment scenario*, our assumption is that the file storage became corrupted. Try resetting only the report viewer storage data by going to the file storage location. By default, the REST Service is using *the current user's temporary folder*. In case of using Telerik Report Server - the default file storage is placed in product installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data* (delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data). 
-Before deleting anything, we recommend creating a back up just in case if valuable production data is already stored.
+2. In **single-instance environments** reset the report viewer storage data by deleting the contents of the file storage location. By default, the REST Service is using *the current user's temporary folder*. In case of using Telerik Report Server the default file storage is placed in the product installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data* (delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data intact). 
+We recommend creating a backup before resetting the storage.
 
 
 

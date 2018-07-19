@@ -29,7 +29,7 @@ The 'ObjectContent`1' type failed to serialize the response body for content typ
 
 ## Description
 An error with the above message occurs after an update from a version prior to 12.1.18.516 to version 12.1.18.516 or above.
-The exception is related to _Newtonsoft.Json_ varsion that is referred in the project.
+The exception is related to _Newtonsoft.Json_ version that is referred in the project.
 Starting with [Telerik Reporting R2 2018 (12.1.18.516)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-12-1-18-516) the assemblies and NuGet packages depending on **Newtonsoft.Json** require **9.0.1** or newer version of the NuGet package. With prior versions we needed _Newtonsoft.Json_ (_4.5.11.15520_ or later).  
 
 ## Solution

@@ -24,7 +24,7 @@ res_type: kb
 
 
 ## Description
-Telerik.Reporting.Wpf is build with Telerik UI for WPF assemblies for.NET 4.0. When using the Telerik UI for WPF assemblies build with .NET 4.5 an exception is thrown "Could not load file or assembly 'Telerik.Windows.Controls.Navigation, Version=2018.2.620.40"
+Telerik.Reporting.Wpf is build with Telerik UI for WPF assemblies for.NET 4.0. When referencing the Telerik UI for WPF assemblies build with .NET 4.5 an exception is thrown "Could not load file or assembly 'Telerik.Windows.Controls.Navigation, Version=2018.2.620.40"
 
 ## Solution
 In order to use the Telerik UI for WPF assemblies build with .NET 4.5 binding redirects are required. Here are the binding redirects needed to use the Telerik Reporting WPF Report Viewer with Telerik UI for WPF build with .NET 4.5 (2018.2.620.45). Just replace the versions with the one used in the application:

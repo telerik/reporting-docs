@@ -18,7 +18,7 @@ res_type: kb
 	</tr>
 	<tr>
 		<td>Viewer</td>
-		<td>WPF Viewer</td>
+		<td>WPF Report Viewer</td>
 	</tr>
 </table>
 

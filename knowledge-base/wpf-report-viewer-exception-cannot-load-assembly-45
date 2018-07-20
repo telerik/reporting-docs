@@ -2,8 +2,8 @@
 title: WPF Report viewer is throwing exception "Could not load file or assembly 'Telerik.Windows.Controls.Navigation, Version=2018.2.620.40"
 description: 
 type: how-to
-page_title: 
-slug: 
+page_title: WPF Report viewer is throwing exception
+slug: wpf-report-viewer-is-throwing-exception-could-not-load-assembly-45
 position: 
 tags: 
 ticketid: 1176987
@@ -14,14 +14,13 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product</td>
-		<td>Progress® Telerik® Reporting </td>
+		<td>Progress® Telerik® Reporting</td>
 	</tr>
 	<tr>
 		<td>Viewer</td>
 		<td>WPF Viewer</td>
 	</tr>
 </table>
-
 
 ## Description
 Telerik.Reporting.Wpf is build with Telerik UI for WPF assemblies for.NET 4.0. When referencing the Telerik UI for WPF assemblies build with .NET 4.5 an exception is thrown "Could not load file or assembly 'Telerik.Windows.Controls.Navigation, Version=2018.2.620.40"

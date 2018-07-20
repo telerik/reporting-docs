@@ -27,6 +27,7 @@ Telerik.Reporting.Wpf is build with Telerik UI for WPF assemblies for.NET 4.0. W
 
 ## Solution
 In order to use the Telerik UI for WPF assemblies build with .NET 4.5 binding redirects are required. Here are the binding redirects needed to use the Telerik Reporting WPF Report Viewer with Telerik UI for WPF build with .NET 4.5 (2018.2.620.45). Just replace the versions with the one used in the application:
+```
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <runtime>
@@ -62,3 +63,4 @@ In order to use the Telerik UI for WPF assemblies build with .NET 4.5 binding re
     </assemblyBinding>
   </runtime>
 ....
+```

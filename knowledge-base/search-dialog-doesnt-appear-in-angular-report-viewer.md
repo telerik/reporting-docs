@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product Version</td>
-		<td>12.1.18.516</td>
+		<td>12.1.18.516 - R3 2018</td>
 	</tr>
 	<tr>
 		<td>Product</td>
@@ -50,7 +50,7 @@ ERROR TypeError: $inputBox.kendoComboBox is not a function
 The issue was introduced due to the fact that Telerik Reporting ships a subset of Kendo UI widgets excluding the [kendoComboBox](https://www.telerik.com/kendo-ui/combobox) widget (which was indicated by the error in developer tools console).
 
 ## Solution
-The fix for this error will be introduced with the next official version of Telerik Reporting.
+The fix for this error will be introduced with the next official version (R3 2018) of Telerik Reporting.
 
 ## Suggested Workarounds
 There is a possible workaround by replacing the Kendo UI JavaScript distributed by Telerik Reporting with the content of the *telerikReportViewer.kendo.min.js* file which could be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/telerikreportviewer-kendo-min.zip?sfvrsn=af62bd98_2). 

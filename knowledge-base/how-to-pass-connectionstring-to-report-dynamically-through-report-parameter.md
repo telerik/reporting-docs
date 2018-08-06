@@ -35,9 +35,11 @@ DataSource.ConnectionString     |   Parameters.ConnectionStringParameter.V
 ```
 
 ## Notes
-The _DataSource.ConnectionString_ property is not listed in the dropdown and must be typed manually.  
+The _DataSource.ConnectionString_ property is not listed in the dropdown and must be typed manually.
 
 The proposed approach cannot be used to modify the Connection String of Report Parameter -\> AvailableValues -\> DataSource as report parameters do not expose Bindings.
+
+The same approach can be used to modify the _SelectCommand_ Property of the SqlDataSource. The _DataSource.SelectCommand_ should be set in the above code snippet in this case.
 
 ## See also
 [Changing the connection string dynamically according to runtime data](https://www.telerik.com/support/kb/reporting/details/changing-the-connection-string-dynamically-according-to-runtime-data)

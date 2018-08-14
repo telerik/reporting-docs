@@ -2,7 +2,7 @@
 title: How to style Telerik Angular Report Viewer using Sass-based themes
 description: Apply styling based on Kendo UI Sass-based themes and custom HTML template for the HTML5 Report Viewer
 type: how-to
-page_title: Error loading the report viewer's templates when using Sass-Based themes in Angular Report Viewer
+page_title: How to style Telerik Angular Report Viewer using Sass-based themes
 slug: how-to-customize-viewer-using-kendo-ui-sass-based-theme
 position: 
 tags: styling,viewer,angular
@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 In the following article are presented steps for customizing the HTML5 Report Viewer using Sass-Based themes. For information on how to customize the viewer using Less-Based themes, check our [online demos](https://demos.telerik.com/reporting/barcodes-report?&skinName=default).
-
+However, using Sass-Based approach can lead to error loading the report viewer's templates.
 
 ## Solution
 Firstly, it would be needed to add a report viewer for the Angular application. There are two approaches available:
@@ -45,7 +45,7 @@ In the modified project assets folder has to contain files:
 
 1. *telerikReportViewerTemplate-sass.html* which comes from node_modules/@progress/telerik-angular-report-viewer/dist/dependencies/telerikReportViewerTemplate-sass.html
 2. *telerikReportViewer-sass.css* which comes from node_modules/@progress/telerik-angular-report-viewer/dist/dependencies/telerikReportViewer-sass.css
-3. *all.scss* which comes from node_modules/@progress/kendo-theme-default/dist/all.css (you could use any of the other available kendo themes)
+3. *all.css* which comes from node_modules/@progress/kendo-theme-default/dist/all.css (you could use any of the other available kendo themes)
 
 Then in **telerikReportViewerTemplate-sass.html** change the link to css to point the stylesheet in assets folder:
 

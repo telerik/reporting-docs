@@ -1,5 +1,5 @@
 ---
-title: How to use information form HttpContext in Custom Report Resolver
+title: How to use information from HttpContext in Custom Report Resolver
 description: How to copy the needed information from HttpContext to UserIdentity.Context
 type: how-to
 page_title: Pass HttpContext items to reporting engine 

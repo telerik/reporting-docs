@@ -32,6 +32,4 @@ You should **remove** the corresponding code that **drills through the Actions**
 The _Html5 Report Viewer_ will automatically resolve the _ReportSource_ of the _NavigateToReport_ Action using the Custom Report Resolver, hence its connection string will be automatically modified and it is not necessary to drill through actions in the main report.  
 
 ## Notes
-Connection string can be modified run time without extra code, based on Report Parameter: [Change Connection String dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter)
-
-The code modifyint Report Parameters with _AvailableValues_ is also excessive when used in a Custom Report Resolver, as the parameter values passed from the viewer are not accessible in the _Resolve()_ method, and get updated by the Reporting engine later.
+Connection string can be modified run time without extra code, based on Report Parameter: [Change Connection String dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter).

@@ -117,6 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BarSeries_MergedDataPoints_Description" xml:space="preserve">
+    <value>Obtiene los ajustes necesarios para determinar si y por qué Autobusqueda fusionar puntos de datos.</value>
+  </data>
+  <data name="BarSeries_MergedDataPoints_Name" xml:space="preserve">
+    <value>Puntos de datos combinados</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Description" xml:space="preserve">
+    <value>Determina si y qué presentación se utilizará para la combinación de puntos de datos. El algoritmo de combinación se especifica más adelante mediante el modo umbral y el valor umbral ajustes complementarios.</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Name" xml:space="preserve">
+    <value>Modo de fusión</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Description" xml:space="preserve">
+    <value>Obtiene o establece el Autobusqueda que se usará al determinar qué puntos de datos se fusionarán. Cada Autobusqueda tiene en cuenta también el valor de la propiedad de valor umbral.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Name" xml:space="preserve">
+    <value>Modo umbral</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Description" xml:space="preserve">
+    <value>Obtiene o establece el valor de umbral al determinar qué puntos de datos se fusionarán.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Name" xml:space="preserve">
+    <value>Valor umbral</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Description" xml:space="preserve">
+    <value>Especifica el texto que se muestra como una etiqueta del elemento de leyenda correspondiente al punto de datos resultante.</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Name" xml:space="preserve">
+    <value>Etiqueta de artículo de leyenda</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Description" xml:space="preserve">
+    <value>Especifica el estilo de la línea que conecta los puntos de ambos lados de un punto de datos con un valor que falta</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Name" xml:space="preserve">
+    <value>Falta el estilo de línea de valores</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Description" xml:space="preserve">
+    <value>El estilo aplicado al área definida por los puntos de datos con valores perdidos</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Name" xml:space="preserve">
+    <value>Falta el estilo de área de valores</value>
+  </data>
   <data name="TableGroup_PageBreak_Description" xml:space="preserve">
     <value>Obtiene o establece la regla de frenado de página de las filas o columnas de representación de este grupo de tablas.</value>
   </data>

@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="WebServiceDataSource_Connection_DataSelector" xml:space="preserve">
+    <value>Selector de datos:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_DataFormat" xml:space="preserve">
+    <value>Formato de datos</value>
+  </data>
   <data name="DataSource_ParametersPage_NameCannotBeEmpty" xml:space="preserve">
     <value>El nombre del parámetro no puede estar vacío.</value>
   </data>

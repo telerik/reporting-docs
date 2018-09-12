@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ConditionalFormattingPrimaryItemSelectorDescription" xml:space="preserve">
+    <value>Choisissez l'élément principal dans lequel la mise en forme conditionnelle sera utilisée comme modèle. La mise en forme conditionnelle mise à jour sera appliquée à tous les éléments sélectionnés. Toutes les règles de mise en forme qui ne sont pas répertoriées dans l'éditeur seront supprimées.</value>
+  </data>
+  <data name="ConditionalFormattingPrimaryItemSelectorTitle" xml:space="preserve">
+    <value>Sélecteur d'élément principal</value>
+  </data>
   <data name="WebService_ParameterCollectionEditor_Columns_Type" xml:space="preserve">
     <value>Type</value>
   </data>

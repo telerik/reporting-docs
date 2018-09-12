@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ConditionalFormattingPrimaryItemSelectorDescription" xml:space="preserve">
+    <value>Wählen Sie den primären Punkt, dessen bedingte Formatierung als Vorlage verwendet wird. Die aktualisierte bedingte Formatierung wird auf alle ausgewählten Elemente angewendet. Alle Formatierungs Regeln, die nicht im Editor aufgeführt sind, werden gelöscht.</value>
+  </data>
+  <data name="ConditionalFormattingPrimaryItemSelectorTitle" xml:space="preserve">
+    <value>Primäre Artikelauswahl</value>
+  </data>
   <data name="WebService_ParameterCollectionEditor_Columns_Type" xml:space="preserve">
     <value>Typ</value>
   </data>

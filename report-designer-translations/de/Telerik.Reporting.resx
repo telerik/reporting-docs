@@ -117,6 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BarSeries_MergedDataPoints_Description" xml:space="preserve">
+    <value>Erhält die notwendigen Einstellungen, um festzustellen, ob und durch was algorythm Datenpunkte zusammenführen.</value>
+  </data>
+  <data name="BarSeries_MergedDataPoints_Name" xml:space="preserve">
+    <value>Fusionierte Datenpunkte</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Description" xml:space="preserve">
+    <value>Bestimmt, ob und welche Präsentation für die Datenpunkte verschmelzen soll. Der Merge-Algorithmus wird durch Schwellen Modus und Schwellenwert ergänzende setings weiter spezifiziert.</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Name" xml:space="preserve">
+    <value>Merge Mode</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Description" xml:space="preserve">
+    <value>Erhält oder setzt den algorythm, der bei der Bestimmung der Zusammenlegung der Datenpunkte verwendet wird. Jeder algorythm berücksichtigt auch den Wert des Schwellenwerts.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Name" xml:space="preserve">
+    <value>Schwellen Modus</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Description" xml:space="preserve">
+    <value>Erhält oder setzt den Schwellenwert bei der Bestimmung, welche Datenpunkte zusammengeführt werden sollen.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Name" xml:space="preserve">
+    <value>Schwellenwert</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Description" xml:space="preserve">
+    <value>Gibt den Text an, der als Etikett des Legenden-Artikels angezeigt wird, der dem resultierenden Datenpunkt entspricht.</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Name" xml:space="preserve">
+    <value>Legende Item Label</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Description" xml:space="preserve">
+    <value>Gibt den Stil der Zeile an, die die Punkte auf beiden Seiten eines Datenpunktes mit einem fehlenden Wert verbindet</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Name" xml:space="preserve">
+    <value>Fehlende Werte Linienstil</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Description" xml:space="preserve">
+    <value>Der Stil, der auf den von den Datenpunkten definierten Bereich mit fehlenden Werten angewendet wird</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Name" xml:space="preserve">
+    <value>Fehlende Werte Flächen Stil</value>
+  </data>
   <data name="TableGroup_PageBreak_Description" xml:space="preserve">
     <value>Ruft die Seiten Brems Regel für die Darstellungs Zeilen oder-Spalten dieser Tabellengruppe ab oder legt diese fest.</value>
   </data>

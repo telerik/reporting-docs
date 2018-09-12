@@ -117,6 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BarSeries_MergedDataPoints_Description" xml:space="preserve">
+    <value>Obtient les paramètres nécessaires pour déterminer si et par quel algorythme pour fusionner des points de données.</value>
+  </data>
+  <data name="BarSeries_MergedDataPoints_Name" xml:space="preserve">
+    <value>Points de données fusionnés</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Description" xml:space="preserve">
+    <value>Détermine si et quelle présentation doit être utilisée pour la fusion des points de données. L'algorithme de fusion est spécifié par le mode de seuil et la valeur de seuil.</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Name" xml:space="preserve">
+    <value>Mode de fusion</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Description" xml:space="preserve">
+    <value>Obtient ou définit le algorythme à utiliser lors de la détermination des points de données à fusionner. Chaque algorythme prend également en compte la valeur de la propriété de valeur seuil.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Name" xml:space="preserve">
+    <value>Mode seuil</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Description" xml:space="preserve">
+    <value>Obtient ou définit la valeur de seuil lorsque vous déterminez les points de données à fusionner.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Name" xml:space="preserve">
+    <value>Valeur seuil</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Description" xml:space="preserve">
+    <value>Spécifie le texte qui est affiché sous la forme d'une étiquette de l'élément de légende correspondant au point de données résultant.</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Name" xml:space="preserve">
+    <value>Étiquette d'élément de légende</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Description" xml:space="preserve">
+    <value>Spécifie le style de la ligne qui connecte les points des deux côtés d'un point de données avec une valeur manquante</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Name" xml:space="preserve">
+    <value>Style de ligne des valeurs manquantes</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Description" xml:space="preserve">
+    <value>Le style appliqué à la zone définie par les points de données avec des valeurs manquantes</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Name" xml:space="preserve">
+    <value>Style de zone des valeurs manquantes</value>
+  </data>
   <data name="TableGroup_PageBreak_Description" xml:space="preserve">
     <value>Obtient ou définit la règle de freinage de page pour les lignes ou les colonnes de représentation de ce groupe de tables.</value>
   </data>

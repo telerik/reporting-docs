@@ -117,6 +117,48 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BarSeries_MergedDataPoints_Description" xml:space="preserve">
+    <value>Получает параметры, необходимые для определения, если и каким алгоритм для слияния точек данных.</value>
+  </data>
+  <data name="BarSeries_MergedDataPoints_Name" xml:space="preserve">
+    <value>Объединенные точки данных</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Description" xml:space="preserve">
+    <value>Определяет, должна ли и какая презентация использоваться для слияния точек данных. Алгоритм слияния далее задается пороговым режимом и пороговым значением, дополняющим setings.</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Name" xml:space="preserve">
+    <value>Режим слияния</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Description" xml:space="preserve">
+    <value>Получает или задает алгоритм, который будет использоваться при определении точек данных для слияния. Каждый алгоритм учитывает также значение свойства порогового значения.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Name" xml:space="preserve">
+    <value>Пороговый режим</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Description" xml:space="preserve">
+    <value>Получает или задает пороговое значение при определении точек данных для слияния.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Name" xml:space="preserve">
+    <value>Пороговое значение</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Description" xml:space="preserve">
+    <value>Задает текст, который отображается в виде метки элемента легенды, соответствующего результирующей точке данных.</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Name" xml:space="preserve">
+    <value>Метка элемента легенды</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Description" xml:space="preserve">
+    <value>Задает стиль линии, соединяющей точки с обеих сторон точки данных с отсутствующим значением</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Name" xml:space="preserve">
+    <value>Отсутствующие значения стиль линии</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Description" xml:space="preserve">
+    <value>Стиль, применяемый к области, определяемой точками данных с отсутствующими значениями</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Name" xml:space="preserve">
+    <value>Стиль области отсутствующих значений</value>
+  </data>
   <data name="TableGroup_PageBreak_Description" xml:space="preserve">
     <value>Получает или задает правило торможения страницы для строк или столбцов представления этой группы таблиц.</value>
   </data>

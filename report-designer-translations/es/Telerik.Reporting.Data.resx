@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="WebServiceDataSource_DataSelector_Description" xml:space="preserve">
+    <value>La expresión selector de datos que se utilizará para consultar y filtrar los datos devueltos desde el servicio Web.</value>
+  </data>
+  <data name="WebServiceDataSource_DataSelector_Name" xml:space="preserve">
+    <value>Selector de datos</value>
+  </data>
   <data name="WebServiceDataSource_Description" xml:space="preserve">
     <value>Representa los datos de servicios web en elementos de datos.</value>
   </data>

@@ -59,6 +59,6 @@ Uri urlReferrer = (Uri)UserIdentity.Current.Context["UrlRefferer"];
 
 ## Note
 By default accessing a user’s session from a web API is not possible. Attempting to call __HttpContext.Current.Session__ will always return __Null__.
-For more information and a workaround check [Enabling session state in Web API] (https://www.wiliam.com.au/wiliam-blog/enabling-session-state-in-web-api) blog post.
+For more information and a workaround check [Enabling session state in Web API](https://www.wiliam.com.au/wiliam-blog/enabling-session-state-in-web-api) blog post.
 
-Specific solutions for MVC, Web Forms and .NET Core projects can be found in [Accessing Session Using ASP.NET Web API] (https://stackoverflow.com/questions/9594229/accessing-session-using-asp-net-web-api) Stackoverflow thread.
+Specific solutions for MVC, Web Forms and .NET Core projects can be found in [Accessing Session Using ASP.NET Web API](https://stackoverflow.com/questions/9594229/accessing-session-using-asp-net-web-api) Stackoverflow thread.

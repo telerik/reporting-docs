@@ -32,4 +32,7 @@ You should **remove** the corresponding code that **drills through the Actions**
 The _Html5 Report Viewer_ will automatically resolve the _ReportSource_ of the _NavigateToReport_ Action using the Custom Report Resolver, hence its connection string will be automatically modified and it is not necessary to drill through actions in the main report.  
 
 ## Notes
+When navigating to a Standalone designer report (.trdp, .trdx, .trbp) the paths to the reports will be resolved with respect to the application, not with respect to the main report. This may cause broken _NavigateToReport_ Actions when the report is not in the main folder of the application. To resolve the issue it will be necessary to replace the base path from the UriReportSource.Uri with the actual one (path to the application main folder).
+
+
 Connection string can be modified run time without extra code, based on Report Parameter: [Change Connection String dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter).

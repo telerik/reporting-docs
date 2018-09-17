@@ -171,8 +171,8 @@ and can be copied to the Vue application's **assets** folder (*src/assets/Report
 	npm run dev
 	```
 	
-	![HTML5 Report Viewer in Vue.js](../images/vuer-webpack.png)
+	![HTML5 Report Viewer in Vue.js](resources/vuer-webpack.png)
 	
 ## See Also
 
-[Download the final Vue.js application](../resources/vuer-webpack.zip).
+[Download the final Vue.js application](resources/vuer-webpack.zip).

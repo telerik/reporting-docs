@@ -128,22 +128,23 @@ and can be copied to the Vue application's **assets** folder (*src/assets/Report
 		return {
 		  msg: 'Welcome to Your Vue.js App'
 		}
+	  },
+	  mounted () {
+		this.$nextTick(function () {
+		  $('#reportViewer1')
+			.telerik_ReportViewer({
+			  serviceUrl: 'https://demos.telerik.com/reporting/api/reports/',
+			  reportSource: {
+				report: 'Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary'
+			  },
+			  viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
+			  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
+			  scale: 1.0,
+			  sendEmail: { enabled: true }
+			})
+		})
 	  }
 	}
-
-	$(document).ready(function () {
-	  $('#reportViewer1')
-		.telerik_ReportViewer({
-		  serviceUrl: 'https://demos.telerik.com/reporting/api/reports/',
-		  reportSource: {
-			report: 'Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary'
-		  },
-		  viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
-		  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
-		  scale: 1.0,
-		  sendEmail: { enabled: true }
-		})
-	})
 	</script>
 
 	<!-- Add "scoped" attribute to limit CSS to this component only -->

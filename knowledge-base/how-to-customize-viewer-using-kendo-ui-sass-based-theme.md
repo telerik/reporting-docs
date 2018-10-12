@@ -16,8 +16,14 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
+	<tr>
+		<td>Product Version</td>
+		<td>12.2.18.912 or lower</td>
+	</tr>
 </table>
 
+## Important note
+As of **R3 2018 SP1 release** the additional sass template is removed. From now on, the default *telerikReportViewer.html* and *telerikReportViewer.css* files are unified to work correctly with both Less and Sass Kendo themes.
 
 ## Description
 In the following article are presented steps for customizing the HTML5 Report Viewer using Sass-Based themes. For information on how to customize the viewer using Less-Based themes, check our [online demos](https://demos.telerik.com/reporting/barcodes-report?&skinName=default).

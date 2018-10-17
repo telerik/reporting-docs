@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CheckBoxText_Name" xml:space="preserve">
+    <value>Text</value>
+  </data>
   <data name="BarSeries_MergedDataPoints_Description" xml:space="preserve">
     <value>Erhält die notwendigen Einstellungen, um festzustellen, ob und durch was algorythm Datenpunkte zusammenführen.</value>
   </data>

@@ -26,21 +26,44 @@ res_type: kb
 As of **R3 2018 SP1 release** the additional sass template is removed. From now on, the default *telerikReportViewer.html* and *telerikReportViewer.css* files are unified to work correctly with both Less and Sass Kendo themes.
 
 ## Description
-In the following article are presented steps for customizing the HTML5 Report Viewer using Sass-Based themes. For information on how to customize the viewer using Less-Based themes, check our [online demos](https://demos.telerik.com/reporting/barcodes-report?&skinName=default).
-However, using Sass-Based approach can lead to error loading the report viewer's templates.
+In the following article are presented steps for configuring the Angular Report Viewer using Sass-Based themes prior to version *12.2.18.1017*.
 
 ## Solution
-Firstly, it would be needed to add a report viewer for the Angular application. There are two approaches available:
+Firstly, it would be needed to add the report viewer. We support two technologies:
 
 1. [How To: Use Angular Report Viewer with Angular CLI](https://docs.telerik.com/reporting/angular-report-how-to-use-with-angular-cli) 
 2. [How To: Use Angular Report Viewer with SystemJS](https://docs.telerik.com/reporting/angular-report-how-to-use-with-systemjs)
 
-At step 8 (or 7 from the article with SystemJS) is mentioned how to style the viewer using the desired Kendo UI theme using Sass-Based themes. Unfortunately, 'templateUrl' containing the node_modules path to the html template can cause not found template error in browser console. It appears that for custom files to be served, they need to be included in the production build. This is done via the assets property in the **.angular-cli.json** file. 
+At step 8 (or 7 from the article with SystemJS) is mentioned how to style the viewer using the desired Kendo UI theme using either Less- or Sass-Based Kendo UI themes. 
+Back to the previous versions of Telerik Reporting, we distributed a separate report viewer template called **telerikReportViewer-sass.html** which differes from the default one with various different classes of the elements in order to render the report viewer's toolbar correctly.
+
+So, the configuration at the end could be the following:
+``` HTML
+<!-- in app.component.html -->
+<tr-viewer #viewer1 
+    [containerStyle]="viewerContainerStyle"
+    [serviceUrl]="'https://demos.telerik.com/reporting/api/reports/'"
+    [templateUrl]="'\\node_modules\\@progress\\telerik-angular-report-viewer\\dist\\dependencies\\telerikReportViewerTemplate-sass.html'"
+    [reportSource]="{
+        report: 'Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null',
+        parameters: {}
+    }"
+    ...>
+</tr-viewer>
+```
+Copy the **all.css** file from the Sass-theme into **assets** folder and refer it as:
+``` HTML
+<!-- in index.html -->
+<link href="assets/all.css" rel="stylesheet" />
+```
+
+## Solution 2 (using local files instead of CDNs)
+Unfortunately, *[templateUrl]* containing the node_modules path to the html template can cause not found template error in browser console. It appears that for custom files to be served, they need to be included in the production build. This is done via the assets property in the **.angular-cli.json** file (or *.angular.json* for Angular 6 applications). 
 
 ```javascript
 "assets": [
         "assets",
-        "favicon.ico"
+         ...
 ],
 ```
 

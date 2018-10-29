@@ -27,8 +27,8 @@ res_type: kb
 After updating to R3 2018 SP1, Kendo treeview icons disappeared.
 
 ## Solution
-The icons could appear again by adding the following style to your project:
-```JavaScript
+The icons could appear again by adding the following styles to your project:
+``` StyleSheet
 .k-treeview .k-plus:before,
 .k-i-expand:before { content: "\e005"; }
 

@@ -1,5 +1,5 @@
 ---
-title: Kendo treeview icons missing in Document map area Telerik® Reporting R3 2018 SP1 (12.2.18.1017). 
+title: Kendo treeview icons missing in Document map area for Telerik® Reporting R3 2018 SP1 (12.2.18.1017). 
 page_title: Kendo treeview icons missing in Document map area after update to R3 2018 SP1
 slug: document-map-missing-treeview-icons
 position: 

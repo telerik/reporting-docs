@@ -28,8 +28,8 @@ When there is a _NavigateToReport_ Action set for any report item, the action wi
 ## Solution
 The above KB article drills through the entire report to modify the connection string of all its _Items_, _Parameters_ and _Actions_.  
 The code from the KB searches for _NavigateToReport_ Actions, and replaces recursively the connection string also in Action _ReportSources_. That is where the problem occurs.  
-You should **remove** the corresponding code that **drills through the Actions**, as it is excessive in the case of _Html5 Report Viewer_. 
-The _Html5 Report Viewer_ will automatically resolve the _ReportSource_ of the _NavigateToReport_ Action using the Custom Report Resolver, hence its connection string will be automatically modified and it is not necessary to drill through actions in the main report.  
+You should **remove** the corresponding code that **drills through the Actions**, as it is excessive in the case of _Html5 Report Viewer / REST Service_. 
+The _REST Service_ will automatically resolve the _ReportSource_ of the _NavigateToReport_ Action using the Custom Report Resolver, hence its connection string will be automatically modified and it is not necessary to drill through actions in the main report.  
 
 ## Notes
 When navigating to a Standalone designer report (.trdp, .trdx, .trbp) the paths to the reports will be resolved with respect to the application, not with respect to the main report. This may cause broken _NavigateToReport_ Actions when the report is not in the main folder of the application. To resolve the issue it will be necessary to replace the base path from the UriReportSource.Uri with the actual one (path to the application main folder).

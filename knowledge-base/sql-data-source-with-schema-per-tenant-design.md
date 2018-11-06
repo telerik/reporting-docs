@@ -19,7 +19,7 @@ res_type: kb
 The database feeding the report with data may use a schema-per-tenant design, i.e. a new schema will be added every time a new user is set up. The query for fetching the data will differ only in its 'schema' part. Here is how to avoid creating a data source for each schema/user.
 
 ## Solution
-1\. Declare the SqlDataSource that should use 'schema-per-tenant'. Set its 'ConnectionString'. Note that this can be done [Dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter). Assign the DataSource to the corresponding [Data item](https://docs.telerik.com/reporting/data-items).  
+1\. Declare the SqlDataSource that should use 'schema-per-tenant'. Set its 'ConnectionString'. Note that this can be done [dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter). Assign the DataSource to the corresponding [Data item](https://docs.telerik.com/reporting/data-items).  
 
 2\. Declare a Report Parameter (i.e. 'Schema') to provide the name of the user schema.  
 
@@ -47,4 +47,4 @@ Property path                 |   Expression
 DataSource.SelectCommand      |   = Parameters.Query.Value
 ```
 ## See Also
-[Dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter)
+[Change Connection String dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter)

@@ -29,7 +29,7 @@ It is necessary to modify correspondingly the width of the __Report__ itself, it
 This can be done for example in the constructor of the report.  
 It is important along with Report width to update also the PaperSize settings. PaperKind should be updated to 'Custom' to be able to provide custom width. If PaperKind is set to some standaard type, its standardized width will be respected in Print Preview mode. 
 
-The rest of the report items widths can be set by iterating recursively through them. The sample code below stretches the report with a factor _widthFactor = 1.5_ :
+The rest of the report items widths and locations can be set by iterating recursively through them. The sample code below stretches the report with a factor _widthFactor = 1.5_ :
 ```CSharp
 public partial class Report1 : Telerik.Reporting.Report
 {
@@ -52,19 +52,25 @@ public partial class Report1 : Telerik.Reporting.Report
         SizeU newPaperSize = new SizeU(oldPaperSize.Width * widthFactor, oldPaperSize.Height);
         this.PageSettings.PaperSize = newPaperSize;
 
-        this.SetItemWidth(this, widthFactor);
+        this.UpdateItemWidthAndLocation(this, widthFactor);
     }
 
-    private void SetItemWidth(ReportItemBase reportItem, double widthFactor)
+    private void UpdateItemWidthAndLocation(ReportItemBase reportItem, double widthFactor)
     {
         if (reportItem is ReportItem)
         {
-            ((ReportItem)reportItem).Width *= widthFactor;
+            ReportItem item = (ReportItem)reportItem;
+            item.Width *= widthFactor;
+            Unit oldItemX = item.Location.X;
+            double xValue = oldItemX.Value * widthFactor;
+            Unit newItemX = new Unit(xValue, oldItemX.Type);
+                
+            item.Location = new PointU(newItemX, item.Location.Y);
         }
 
         foreach (ReportItemBase item in reportItem.Items)
         {
-            this.SetItemWidth(item, widthFactor);
+            this.UpdateItemWidthAndLocation(item, widthFactor);
         }
     }
 }

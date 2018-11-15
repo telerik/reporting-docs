@@ -36,8 +36,8 @@ DataSource.SelectCommand      |   = Format("SELECT {0}.[Production].[Produc
                               |     FROM {0}.[Production].[Product]", Parameters.Schema.Value)
 ```
   
-The _DataSource.SelectCommand_ property is \*not\* listed in the dropdown and must be typed manually.  
-The sample code uses the _Format_ [Text function](https://docs.telerik.com/reporting/expressions-text-functions) to integrate the schema in the query string. 
+The _DataSource.SelectCommand_ property path is \*not\* listed in the dropdown and must be typed manually.  
+The sample code uses the _Format_ [Text function](https://docs.telerik.com/reporting/expressions-text-functions) to integrate the schema name in the query string. 
 
 You may provide also the entire _SelectCommand_ as a value taken from a Report parameter :
 
@@ -46,5 +46,10 @@ Property path                 |   Expression
 
 DataSource.SelectCommand      |   = Parameters.Query.Value
 ```
+
+## Notes
+* Use this technique only within trusted environment as SQL concatenation allows SQL injection.
+* Bindings are not available on the ReportParameter-s, so this technique cannot be applied on a data source feeding the available values of a ReportParameter
+
 ## See Also
 [Change Connection String dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter)

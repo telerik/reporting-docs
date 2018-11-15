@@ -24,16 +24,17 @@ res_type: kb
 
 
 ## Description
-Report settings can be modified from the client side through [report parameters](https://docs.telerik.com/reporting/designing-reports-parameters). In case the value of some report property is bound to a report parameter value, changing the value of report parameter from the client side can change the value of the report property.
+How would I dynamically change report properties / settings from the report viewer client side?
 
 ## Solution
+Report settings can be modified from the client side through [report parameters](https://docs.telerik.com/reporting/designing-reports-parameters). In case the value of some report property is bound to a report parameter value, changing the value of report parameter from the client side would change the value of the report property.
 For example, to bind *Report.PageSettings.Landscape* property to a report parameter, add [a binding](https://docs.telerik.com/reporting/expressions-bindings) into Report.Bindings collection. An example binding rule in the Edit Bindings dialog:
 ```
 Property path: PageSettings.Landscape
 Expression: = Parameters.Landscape.Value
 ```
 
-Report parameters can be changed from the client side using parameters area of the report viewer. Report parameter can also be hidden (will not appear in the viewer's parameters area) and you can pass the value to this parameter using **reportSource.parameters** collection of the viewer:
+All visible (Visible=true) report parameters can be changed from the client side using parameters area of the report viewer. Report parameter can also be hidden (will not appear in the viewer's parameters area) and you can pass the value to this parameter using **reportSource.parameters** collection of the viewer:
 
 ```JavaScript
 $("#reportViewer1")

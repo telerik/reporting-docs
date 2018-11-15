@@ -33,7 +33,7 @@ Property path: PageSettings.Landscape
 Expression: = Parameters.Landscape.Value
 ```
 
-Report parameters can be changed form the client side using parameters area of the report viewer. Report parameter can also be hidden (will not appear in the viewer's parameters area) and you can pass the value to this parameter using **reportSource.parameters** collection of the viewer:
+Report parameters can be changed from the client side using parameters area of the report viewer. Report parameter can also be hidden (will not appear in the viewer's parameters area) and you can pass the value to this parameter using **reportSource.parameters** collection of the viewer:
 
 ```JavaScript
 $("#reportViewer1")

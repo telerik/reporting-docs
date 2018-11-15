@@ -20,14 +20,14 @@ res_type: kb
 
 
 ## Description
-Sometimes it is necessary to reuse reports on different printers with different paper width instead of using different reports for each width.
-In such cases the report and its content can be adjusted to the new width programmatically to occupy the entire paper area and preserve the report layout.
+How to reuse a single report definition to print report documents on different printers having different paper widths instead of using dedicated report definitions for each width?
 
 ## Solution
-It is necessary to modify correspondingly the width of the __Report__ itself, its __PaperSize__, and __all report items__ widths.  
+In such cases the report content can be adjusted to the new width programmatically to occupy the entire paper area and preserve the report layout.
+It is necessary to modify the width of the __Report__ itself, its __PaperSize__, and __all report items__ widths.  
   
 This can be done for example in the constructor of the report.  
-It is important along with Report width to update also the PaperSize settings. PaperKind should be updated to 'Custom' to be able to provide custom width. If PaperKind is set to some standaard type, its standardized width will be respected in Print Preview mode. 
+It is important along with Report width to update also the PaperSize settings. PaperKind should be updated to 'Custom' to be able to provide custom width. If PaperKind is set to some standard type, its standardized width will be respected in Print Preview mode. 
 
 The rest of the report items widths and locations can be set by iterating recursively through them. The sample code below stretches the report with a factor _widthFactor = 1.5_ :
 ```CSharp
@@ -46,7 +46,9 @@ public partial class Report1 : Telerik.Reporting.Report
 
     private void SetReportWidth(double widthFactor)
     {
+        // This will effectively resize each report section as well
         this.Width *= widthFactor;
+	
         this.PageSettings.PaperKind = System.Drawing.Printing.PaperKind.Custom;
         SizeU oldPaperSize = this.PageSettings.PaperSize;
         SizeU newPaperSize = new SizeU(oldPaperSize.Width * widthFactor, oldPaperSize.Height);

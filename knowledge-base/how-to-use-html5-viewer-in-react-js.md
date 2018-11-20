@@ -151,7 +151,7 @@ and can be copied to the React application's **public/assets** folder. Then refe
 	![HTML5 Report Viewer in React](resources/report-viewer-in-react-app.png)
 
 ## Additional resources
-[Download the final React application](resources/report-viewer-in-react-app.zip).
+[Download the final React application](resources/telerik-report-viewer-react-app.zip).
 
 ## See Also
 [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)

@@ -89,7 +89,7 @@ Lastly, in **index.html** add a link to the all.css in order to run the global k
 ```
 
 ## Notes
-Note that when the service and the viewer are hosted in different domains it will be required to [enable CORS](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in order to enable communication between the viewer and the service.
+Note that when the service and the viewer are hosted in different domains it will be required to [enable CORS](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in order to enable communication between them.
 
 ## See Also
 [Sass-Based Themes Kendo UI](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)

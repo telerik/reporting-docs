@@ -1,42 +1,38 @@
-<script>
-  (function () {
-    var cx = {% if page.slug == 'knowledge_base' %} '{{site.google_custom_kb_search}}' {% else %} '{{site.google_custom_search}}' {% endif %};
-  var gcse = document.createElement('script');
-  gcse.async = true;
-  gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-    '//www.google.com/cse/cse.js?cx=' + cx;
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(gcse, s);
-  })();
+<form action="{{site.baseurl}}/search" method="get">
+  <div class="search-input-container">
+    <input id="local-search" placeholder="Search for &hellip;" name="q" />
+    <div id='refine-search-container'>
+        <div id='refine-search-button' class='unselectable'>
+          <span id='refine-search-label' data-bind='text: label'></span>
+          <span class='k-icon k-i-arrow-chevron-down'></span>
+        </div>
+      </div>
+      <div id="refine-search-popup" style="display: none">
+        <ul>
+          <li>
+            <label class="custom-checkbox unselectable"><input type="checkbox" data-bind="checked: documentation" {% if site.has_kb_portal != true and site.has_api_reference == false %} disabled="true" {% endif %} /><span class="k-icon k-i-check"></span>Search in Documentation</label>
+          </li>
+          {% if site.has_kb_portal %}
+          <li>
+            <label class="custom-checkbox unselectable"><input type="checkbox" data-bind="checked: kb" /><span class="k-icon k-i-check"></span>Search in Knowledge Base</label>
+          </li>
+          {% endif %}
+          {% if site.has_api_reference != false %}
+          <li>
+            <label class="custom-checkbox unselectable"><input type="checkbox" {% if page.res_type == 'api' %} disabled="true" {% endif %} data-bind="checked: api" /><span class="k-icon k-i-check"></span>Search in API Reference</label>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+  </div>
+</form>
 
+<script>
+    var gcsInstance = '{{site.gcs_engine}}';
+    var gcsKey = '{{site.gcs_api_key}}';
+    isKbPage = {% if page.res_type == 'kb' %} true {% else %} false {% endif %};
+    siteHasKbPortal = '{{ site.has_kb_portal }}';
+    hasApiReference = {% if site.has_api_reference != false %} true {% else %} false {% endif %};
 </script>
 
-<div id="page-search">
-  <script src="https://www.google.com/jsapi"></script>
-  {% javascript search %}
-
-  <script>
-    $(document).ready(function () {
-    var propertyNames = {% case page.res_type %} {% when 'kb' %} ['kb'] {% else %} ['docs', 'api', 'kb'] {% endcase %}
-    for(var i = 0; i < propertyNames.length; i++) {
-      viewModel.set(propertyNames[i], true);
-    }
-    viewModel.updateLabel();
-})
-  </script>
-
-  <div id="refine-search-popup" style="display: none">
-    <ul>
-      <li>
-        <label class="custom-checkbox unselectable"><input type="checkbox" {% if page.res_type != 'kb' and page.res_type != 'api' %} disabled="true" {% endif %} data-bind="checked: docs" /><span class="k-icon k-i-check"></span>Search in Documentation</label>
-      </li>
-      <li>
-        <label class="custom-checkbox unselectable"><input type="checkbox" {% if page.res_type == 'kb' %} disabled="true" {% endif %} data-bind="checked: kb" /><span class="k-icon k-i-check"></span>Search in Knowledge Base</label>
-      </li>
-      <li>
-        <label class="custom-checkbox unselectable"><input type="checkbox" {% if page.res_type == 'api' %} disabled="true" {% endif %} data-bind="checked: api" /><span class="k-icon k-i-check"></span>Search in API Reference</label>
-      </li>
-    </ul>
-  </div>
-  <div class="gcse-search" data-gname="google-search"></div>
-</div>
+{% javascript "search-results" %}

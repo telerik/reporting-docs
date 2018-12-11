@@ -1,44 +1,49 @@
 ---
-layout: index
+layout: default
 ---
-<div id="page-inner-content">
-    <div id="page-nav">
-        <div id="page-tree"></div>
-        <script>
-        $("#page-tree").kendoTreeView({
-            dataSource: {
-                transport: {
-                    read: {
-                        url: "{{site.baseurl}}/{{page.category}}.json",
-                        dataType: "json"
-                    }
-                },
-                schema: {
-                    model: {
-                        id: "path",
-                        children: "items",
-                        hasChildren: "items"
-                    }
-                }
-            },
-            messages: {
-                loading: " "
-            },
-            select: preventParentSelection,
-            template: navigationTemplate("{{site.baseurl}}/"),
-            dataBound: expandNavigation("{{page.url | remove_first: '/' }}")
-        });
-        </script>
+
+<div class="container-fluid headbanner">
+  <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h1>{{ page.heading }}</h1>
+    </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+    <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      {% if page.subheading %}
+      <p class="lead">
+          <span class="sticky">{{ page.subheading | replace:'\n','</span> <span class="sticky">' }}</span>
+      </p>
+      {% endif %}
+    </div>
+    </div>
+  </div>
+
+  {% if page.toc %}
+    {% include article-toc.html %}
+  {% endif %}
+  </div>
+</div>
+
+<div class="container-fluid mt-30 mb-60">
+
+  <div class="row">
+  <div class="col-lg-8 col-lg-offset-2">
+
+    <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+    {{ content }}
+    </div>
     </div>
 
-    {% if page.editable %}<a id="page-edit-link" target="_blank" href="https://github.com/telerik/reporting-docs/edit/master{{ page.url | replace: '.html','' }}.md"><span class="k-icon k-i-pencil"></span> Edit this page</a>{% endif %}
-    {% if page.kind == "api" %}<div id="markdown-toc"></div>{% endif %}
+  </div>
+  </div>
 
-    <div id="page-article">
-        <article>
-            {% if page.slug == 'knowledge_base' %}{% include kb-last-updated-articles.html %} {% else %} {{ content }} {% endif %}
-        </article>
-    </div>
-    {% if page.slug != 'knowledge_base' and page.is_main != true %}{% if site.ff-sheet-id %}{% include feedback-form.html %}{% endif %}{% endif %}
-    {% include footer.html %}
 </div>

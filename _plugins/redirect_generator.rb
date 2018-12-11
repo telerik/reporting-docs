@@ -1,4 +1,5 @@
 require 'fileutils'
+
 module Jekyll
     class RedirectGenerator < Generator
         def initialize(config)
@@ -6,32 +7,22 @@ module Jekyll
         end
 
         def generate(site)
-            Jekyll.logger.info "      Processing redirects..."
-
             site.config['redirect_pages'] = redirect_pages(site)
             site.config['redirect_directories'] = redirect_directories(site)
-
-            web_config = Page.new(site, site.source, '', 'web.config')
-            web_config.content = File.read(File.join(site.source, 'web.config'))
-            web_config.render(Hash.new, site.site_payload)
-            FileUtils.mkdir_p(site.dest)
-            File.write(File.join(site.dest, 'web.config'), web_config.output)
-
-            write_redirects(site);
-
-            site.static_files << web_config
+            config_name = site.config['nginx_host'] == true ? 'redirects.conf' : 'web.config'
+            
+            write_redirects(site, config_name)
         end
 
-        def write_redirects(site)
-            name = 'redirects.conf'
-            redirect = Page.new(site, site.source, '', name)
-            redirect.content = File.read(File.join(site.source, name))
-            redirect.render(Hash.new, site.site_payload)
+        def write_redirects(site, name)
+          config_file = Page.new(site, site.source, '', name)
+          config_file.content = File.read(File.join(site.source, name))
+          config_file.render(Hash.new, site.site_payload)
 
-            FileUtils.mkdir_p(site.dest)
-            File.write(File.join(site.dest, name), redirect.output);
+          FileUtils.mkdir_p(site.dest)
+          File.write(File.join(site.dest, name), config_file.output);
 
-            site.static_files << redirect
+          site.static_files << config_file
         end
 
         def redirect_pages(site)
@@ -43,18 +34,7 @@ module Jekyll
 
                 { 'url' => page.url, 'previous_url' => previous_url.uniq }
             end
-
-            Jekyll.logger.info "      #{pages.count} page redirects."
-
-            site.pages.each do |page|
-                if page.url =~ /[A-Z]/
-                    pages.push({
-                        'url' => page.url,
-                        'previous_url' => page.url.downcase.sub('.html', '')
-                    })
-                end
-            end
-
+            
             pages
         end
 
@@ -65,13 +45,9 @@ module Jekyll
 
             categories.each do |key, category|
                 category.each do |item|
-                    if item.has_key?('items')
-                        redirect_directories << redirect('', item)
-                    end
+                    redirect_directories << redirect('', item) if item.has_key?('items')
                 end
             end
-
-            Jekyll.logger.info "      #{redirect_directories.count} directory redirects."
 
             redirect_directories.flatten
         end
@@ -94,10 +70,7 @@ module Jekyll
             end
 
             directory['items'].each do |item|
-                if item.has_key?('items')
-                    topic = directory['items'].find { |sibling| sibling['path'] == item['path'] + '.html' }
-                    result << redirect(path, item) unless topic
-                end
+                result << redirect(path, item) if item.has_key?('items')
             end
             result
         end

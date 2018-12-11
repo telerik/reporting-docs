@@ -3,7 +3,7 @@ title: Error Unable to establish a connection to the database when the applicati
 description: Upon deploying an error message Unable to establish a connection to the database when the application is deployed has been thrown
 type: troubleshooting
 page_title: Error Unable to establish a connection to the database when the application is deployed
-slug: unable-to-establish-a-connection-to-the-database-when-the application-is-deployed
+slug: unable-to-establish-a-connection-to-the-database-when-the-application-is-deployed
 position: 
 tags: Configuration
 ticketid: 1361723

@@ -23,7 +23,7 @@ res_type: kb
 On attempt to add [Authorize] attribute above the ReportsController class, the report viewer no longer displays.
 
 ## Solution
-By design, the ReportsController methods are internally authorized except the requests for available document formats ([GET /api/reports/formats](https://docs.telerik.com/reporting/telerik-reporting-rest-general-api-get-document-formats)) and for resources ([GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/resources/{resourceId}](https://docs.telerik.com/reporting/telerik-reporting-rest-documents-api-get-document-resource)). The formats request is used only for test purposes and all resources are generated with unique random IDs.
+By design, the ReportsController methods are internally authorized except the requests for available document formats ([GET /api/reports/formats](https://docs.telerik.com/reporting/telerik-reporting-rest-general-api-get-document-formats)) and for resources. The formats request is used only for test purposes and all resources are generated with unique random IDs.
 When authorization attribute is set to the entire ReportsController, the methods not requiring authentication by default will be overridden and would require authorization token that is *not* sent by the viewer when requesting formats or resources.
 
 Thus, we can suggest two possible approaches:

@@ -34,7 +34,7 @@ You may create a custom _HttpClient_ that performs the necessary requests to the
 
 
 The code of the HttpClient :
-
+{% raw  %}
 ```CSharp
 public class ReportClient : IDisposable
     {
@@ -176,7 +176,7 @@ public class ReportClient : IDisposable
         }
     }    
 ```
-    
+{% endraw %}    
     
 Here are also the Models used :
     

@@ -26,7 +26,7 @@ res_type: kb
 ## Description
 If DocumentFormat.OpenXML version 2.7.2 or higher is referenced in an application, the OpenXML rendering extensions are not available in the report viewers or an exception is thrown when a report is being programmatically exported to any OpenXML format.
 
-The issue will be fixed in a subsequent internal build.
+**Note:** The issue is fixed in internal build **13.0.19.118**.
 
 ## Solution
 Remove the current OpenXML references:

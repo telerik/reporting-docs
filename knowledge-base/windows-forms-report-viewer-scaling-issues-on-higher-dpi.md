@@ -28,7 +28,7 @@ res_type: kb
 
 
 ## Description
-When using [Windows Forms Report Viewer](https://docs.telerik.com/reporting/winforms-report-viewer) on a machine with DPI scale factor higher than 96 (100%), Windows will stretch the application bitmap to the expected physical size. This makes the report viewer and the report content blurry or be sized incorrectly in many common usage scenarios. Also, when printing the report, the application doesn't respond (don't know about the machine's changed settings) to the changed DPI and scale it incorrectly.
+When using [Windows Forms Report Viewer](https://docs.telerik.com/reporting/winforms-report-viewer) on a machine with DPI scale factor higher than 96 (100%), Windows will resize the bitmap images in the application according to the current DPI value. This makes the report viewer and the report content blurry or be sized incorrectly in many common usage scenarios. Also, when printing the report, the application will scale the report contents incorrectly, because it cannot detect the current machine's DPI settings and the DPI value will always be reported as 96 dots per inch.
 
 ## Cause\Possible Cause(s)
 By default WinForms applications are declared as DPI Unaware. Declaring the application in which the Windows Forms Report Viewer is used as **DPI aware** application would resolve the issues. 

@@ -3,7 +3,7 @@ title: Guidance for using reports from an existing .NET Framework 4+ report libr
 description: Choose the best strategy for using the existing report definitions from a .NET Framework 4.0 class library in a .NET Core application.
 type: troubleshooting
 page_title: How to use the reports from an existing .NET Framework 4+ report library in a .NET Core application
-slug: use-existing-report-library-in-net-core-app.md
+slug: use-existing-report-library-in-net-core-app
 position: 
 tags: 
 ticketid:

@@ -35,6 +35,17 @@ module Jekyll
                 { 'url' => page.url, 'previous_url' => previous_url.uniq }
             end
             
+            if site.config['capital_casing_redirects'] == true
+              site.pages.each do |page|	
+                if page.url =~ /[A-Z]/	
+                    pages.push({	
+                        'url' => page.url,	
+                        'previous_url' => page.url.downcase.sub('.html', '')	
+                    })	
+                end	
+              end
+            end
+
             pages
         end
 

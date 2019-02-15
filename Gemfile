@@ -15,3 +15,4 @@ gem "bootstrap-sass"
 gem "oga", "~> 2.3"
 gem 'html-pipeline'
 gem 'github-markdown'
+gem 'execjs'

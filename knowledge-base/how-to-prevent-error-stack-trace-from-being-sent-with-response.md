@@ -22,7 +22,7 @@ res_type: kb
 ## Description
 In some cases it is considered a security issue when through API calls to the REST service, it is possible to view Internal Server Errors Stack Traces in the HTTP response.
 
-By default when a Web API controller throws an uncaught exception the Stack trace is translated into an HTTP response with status code 500, Internal Server Error - [Exception Handling in ASP.NET Web API](Exception%20Handling%20in%20ASP.NET%20Web%20API). 
+By default when a Web API controller throws an uncaught exception the Stack trace is translated into an HTTP response with status code 500, Internal Server Error - [Exception Handling in ASP.NET Web API](https://docs.microsoft.com/en-us/aspnet/web-api/overview/error-handling/exception-handling). 
 Therefore, the Stack trace of any server side error will be passed with the response.
 We have left the default exception-related behavior of our _ReportsController_ for debugging purposes.
 

@@ -36,7 +36,7 @@ We constantly strive to provide the best user experience to our customers. This 
 For example, in our [R1 2019](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116) release, we have significantly improved the user experience for all web report viewers by including continuous pages scroll, parameters input flexibility, and splitter for parameters and document map areas. 
 
 ## Solution
-In general, using custom HTML template or CSS for modifying the report viewer, the updated template files **should be merged manually on upgrade**. The newest template files can be found in Telerik Reporting installation folder, for example *C:\Program Files (x86)\Progress\Telerik Reporting **<VERSION>**\Html5\ReportViewer*.
+In general, using custom HTML template or CSS for modifying the report viewer, the updated template files **should be merged manually on upgrade**. The newest template files can be found in Telerik Reporting installation folder, for example *C:\Program Files (x86)\Progress\Telerik Reporting **VERSION**\Html5\ReportViewer*.
 
 After merging the newest changes, make sure that browser cache is cleared as browsers often cache html and css files to optimize the page loading. Sometimes they do not detect modified files.
 

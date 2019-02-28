@@ -24,11 +24,11 @@ res_type: kb
 
 
 ## Description
-How to hide the [SubReport](https://docs.telerik.com/reporting/report-items-sub-report) if there is no data?
+How to hide the [SubReport](../report-items-sub-report) if there is no data?
 
 ## Solution
-The Detail Section is rendered for each data record, so if there is no data, there will be no Detail Section in the SubReport.
-To hide the SubReport Header, use a [binding rule](https://docs.telerik.com/reporting/expressions-bindings) to set its **Visible** property to **True** only if there is an available data. For example:
+The reporting generation engine renders a Detail section for each data record. When there is no data, it will not produce any Detail sections.
+To hide the SubReport Header, use a [binding rule](../expressions-bindings) to set its **Visible** property to **True** only if there is an available data. For example:
 ```
 = Count(Fields.SomeFieldValue) > 0
 ```

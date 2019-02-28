@@ -2,7 +2,7 @@
 title: Selective export of reports from Html5 Viewer
 description: How to customize the export options of the viewer based on the report
 type: how-to
-page_title: Modify available rendering extensions in the Html5 Report Viewer based no report name
+page_title: Modify available rendering extensions in the Html5 Report Viewer based on report name
 slug: how-to-customize-export-options-of-html5-viewer-based-on-report
 position: 
 tags: 
@@ -48,6 +48,7 @@ You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-repo
                     renderingEnd: onRenderingEnd
                 }).data("telerik_ReportViewer");
 
+	    // get report name from the reportSource
             function onRenderingEnd(e, args) {
                 reportName = reportViewer.reportSource().report;
 
@@ -55,6 +56,7 @@ You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-repo
                     reportName = "Dashboard";
                 }
 
+	    	// bind menus if not already bound
                 if (!sideMenuBound || !largeMenuBound) {
                     setBindings();
                 }
@@ -64,8 +66,9 @@ You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-repo
                 var smallMenu = $(".trv-menu-small"),
                     sideMenu = $(".trv-side-menu").children("ul").data('kendoPanelBar'),
                     largeMenu = $(".trv-menu-large").data("kendoMenu");
-
-                if (!largeMenuBound && largeMenu) {
+		
+	    	// bind to the 'open' event of the main menu
+		if (!largeMenuBound && largeMenu) {
                     largeMenu.bind("open", function (e) {
                         hidingOptions();
                     });
@@ -73,6 +76,7 @@ You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-repo
                     largeMenuBound = true;
                 }
 
+	    	// bind to the 'expand' event of the side menu
                 if (!sideMenuBound && smallMenu) {
                     sideMenu.bind("expand", function (e) {
                         hidingOptions();
@@ -82,6 +86,7 @@ You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-repo
                 }
             }
 
+	    // get the extensions to hide based on the report name
             function hidingOptions() {
                 switch (reportName) {
                     case "Dashboard":
@@ -92,8 +97,10 @@ You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-repo
                         break;
                 }
 
+	    	// show all extensions
                 $('[data-command-parameter]').show();
 
+	    	// hide the specified extensions
                 $.each(hideOptions, function (index, item) {
                     var hiddenOption = $('[data-command-parameter="' + item + '"]');
                     if (hiddenOption && hiddenOption.length) {
@@ -103,6 +110,7 @@ You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-repo
                 });
             }
 
+	    // bind menus in case of resizing
             $(window).resize(function () {
                 setBindings();
             })
@@ -114,6 +122,4 @@ You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-repo
 ...
 ```
   
-Briefly, on _the renderingEnd_ event, the code gets the report name and binds event handlers to the 'open' event of the large menu and to the 'expand' event of the small/side menu of the viewer's toolbar, if not already bound. The event handlers call _hidingOptions()_ function that iterates over the export menu options and hides those that are not necessary - specified in the _hideOptions_ variable which is filled in a switch-case statement depending on the report name.  
-  
-Another possible workaround is to modify the report viewer and hide the export option from the report viewer toolbar. Then, you may provide a [Custom Template](https://docs.telerik.com/reporting/html5-report-viewer-customizing-providing-template) and use the [Html5 viewer's commands](https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-properties-commands).
+Briefly, on _the renderingEnd_ event, the code gets the report name and binds event handlers to the 'open' event of the main menu and to the 'expand' event of the side menu of the viewer's toolbar, if not already bound. The event handlers call _hidingOptions()_ function that iterates over the export menu options and hides those that are not necessary - specified in the _hideOptions_ variable which is filled in a switch-case statement depending on the report name.

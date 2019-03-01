@@ -28,7 +28,7 @@ How could I change DateTime parameter format?
 
 ## Solution
 Telerik Report Viewer uses [Kendo UI](https://www.telerik.com/kendo-ui) for its default template. The DateTime parameter is a [Kendo UI DatePicker widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/datepicker) 
-which supports formating the value displayed in the input. To change the format, you need to listen for [renderingEnd](https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-renderingend) event on the Telerik Report Viewer, 
+which supports formating the value displayed in the input. To change the format, you need to listen for [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) event on the Telerik Report Viewer, 
 which is fired after the report and the parameter area are loaded and rendered on the page. Then get the Kendo DatePicker widget and set the wanted format.
 For more information on date and time formats please refer to [Date Formatting](https://docs.telerik.com/kendo-ui/framework/globalization/dateformatting).
 

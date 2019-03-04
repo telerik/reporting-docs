@@ -21,8 +21,9 @@ res_type: kb
 		<td>.NET Core</td>
 	</tr>
 </table>
+
 ## Important note
-The following article is applicable to Telerik Reporting versions prior to R1 2019. It elaborates on how to host Telerik Reporting REST Service and add HTML5 Report Viewer in an [ASP.NET Core 2](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.2) web application.
+The following article is applicable to Telerik Reporting versions prior to R1 2019. It elaborates on how to host Telerik Reporting REST Service and add HTML5 Report Viewer in an ASP.NET Core 2 web application.
 
 As of [Telerik Reporting R1 2019](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116) we support report rendering runtime targeting .NET Core 2.1+ applications. For more information how to use reports in a .NET Core application for Windows and Linux platforms, please refer to [.NET Core Support](https://docs.telerik.com/reporting/use-reports-in-net-core-apps) help article.
 

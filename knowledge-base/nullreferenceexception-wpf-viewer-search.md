@@ -41,7 +41,7 @@ Custom templates need to be merged manually.
 
 ## See Also
 
-[WPF viewer manual setup](https://docs.telerik.com/reporting/wpf-report-viewer-manual-setup)
+[WPF viewer manual setup](../wpf-report-viewer-manual-setup)
 
 
 

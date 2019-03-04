@@ -24,14 +24,14 @@ res_type: kb
 
 
 ## Description
-The printing functionality of the Html5 Report Viewer uses PDF with injected custom JavaScript to force the Print dialog of the browser PDF plug-in to pop up - [Printing Reports](https://docs.telerik.com/reporting/html5-report-viewer-direct-print).  
+The printing functionality of the Html5 Report Viewer uses PDF with injected custom JavaScript to force the Print dialog of the browser PDF plug-in to pop up - [Printing Reports](../html5-report-viewer-direct-print).  
 PDF/A standards do \*not\* support JavaScript in the PDF document (check for example [PDF/A Wikipedia article](https://en.wikipedia.org/wiki/PDF/A)). Therefore, an error would be thrown when PDF rendering extension compliance level is different from the default (_None_).
 
 ## Error Message
 {"message":"","exceptionMessage":"The used Compliance Level is not supported with immediate print. The immediate print requires script inclusion.","exceptionType":"Telerik.Reporting.Services.Engine.DocumentRenderException"...}
 
 ## Solution
-The avoid the problem it is necessary to configure a second entry for PDF/A rendering using the approach explained in the [Configuring Multiple Entries for a Rendering Extension](https://docs.telerik.com/reporting/configuring-telerik-reporting-extensions#configuring-multiple-entries-for-a-rendering-extension) article section.  
+The avoid the problem it is necessary to configure a second entry for PDF/A rendering using the approach explained in the [Configuring Multiple Entries for a Rendering Extension](../configuring-telerik-reporting-extensions#configuring-multiple-entries-for-a-rendering-extension) article section.  
   
 The following configuration code will introduce a new Export entry (_PdfExport_ that will appear as 'PDF/A' under Viewer Toolbar -\> Export), and will hide the original PDF export option. The latter is used for Printing and its compliance level should be kept to _None_ (the default value) to allow JavaScript.   
   

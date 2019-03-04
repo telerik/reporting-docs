@@ -24,7 +24,7 @@ res_type: kb
 
 
 ## Description
-Reports that contain [subreport item](https://docs.telerik.com/reporting/report-items-sub-report) are failing to open in Visual Studio Report Designer.
+Reports that contain [subreport item](../report-items-sub-report) are failing to open in Visual Studio Report Designer.
 
 ## Steps to Reproduce
 1. Create new report in Visual Studio through the item template
@@ -66,4 +66,4 @@ Using **"Object instance"** when choosing a source for sub report, is a legacy a
 Our recommendation is to use the **"Type name"** option for .NET type report definitions (.CS or .VB files).
 
 ## See Also
-- [How to: Set ReportSource for SubReport](https://docs.telerik.com/reporting/report-sources-subreport#how-to-set-reportsource-for-subreport)
+- [How to: Set ReportSource for SubReport](../report-sources-subreport#how-to-set-reportsource-for-subreport)

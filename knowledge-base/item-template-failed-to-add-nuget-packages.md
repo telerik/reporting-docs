@@ -82,5 +82,5 @@ and applying the following bindingRedirects to your application configuration fi
 
 ## See Also
 
-[How To: Add Telerik Reporting REST Web API to Web Application](https://docs.telerik.com/reporting/telerik-reporting-rest-host-http-service-using-web-hosting)
+[How To: Add Telerik Reporting REST Web API to Web Application](../telerik-reporting-rest-host-http-service-using-web-hosting)
   

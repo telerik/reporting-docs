@@ -24,7 +24,7 @@ HtmlTextBox does not support all the Html tags, and an error is thrown when an u
 Sometimes it is necessary to render the tags that can be recognized by the HtmlTextBox and just ignore the rest of the markup. Here is how to achieve this.
 
 ## Solution
-Create a custom [User Function](https://docs.telerik.com/reporting/expressions-user-functions) that manipulates the markup and converts it to a text that can be parsed by the HtmlTextBox.
+Create a custom [User Function](../expressions-user-functions) that manipulates the markup and converts it to a text that can be parsed by the HtmlTextBox.
 The [HtmlFormatProvider](https://docs.telerik.com/devtools/winforms/richtexteditor/import-export/html/htmlformatprovider#using-htmlformatprovider) from Telerik UI for WinForms can be used to perform the actual conversion. Here is a sample code for the user function:  
   
 ```CSharp
@@ -62,7 +62,7 @@ _Fields.MarkUp_ should contain the markup to be converted to a value that HtmlTe
 ## Notes
 The User Function should be declared either in the current report's assembly or in _AssemblyReferences_ element nodes in _Telerik.Reporting_ section of the application configuration file.
 
-For Standalone designer the configuration file is _Telerik.ReportDesigner.exe.config_ and is typically in (_Telerik Reporting installation folder_)\Report Designer (for example _C:\Program Files (x86)\Progress\Telerik Reporting R2 2018\Report Designer_). Check also [Extending Report Designer](https://docs.telerik.com/reporting/standalone-report-designer-extending-configuration) article. The user function assembly and all its dependencies (see below) should be copied to the Standalone designer folder.
+For Standalone designer the configuration file is _Telerik.ReportDesigner.exe.config_ and is typically in (_Telerik Reporting installation folder_)\Report Designer (for example _C:\Program Files (x86)\Progress\Telerik Reporting R2 2018\Report Designer_). Check also [Extending Report Designer](../standalone-report-designer-extending-configuration) article. The user function assembly and all its dependencies (see below) should be copied to the Standalone designer folder.
 
 
 **Required assemblies not included in Telerik Reporting :**

@@ -31,21 +31,21 @@ This is mainly because of the current limitations of the framework and Visual St
 
 ## Solution
 There are two approaches to resolve the problem depending on the amount of custom code used in the report definitions.
-* If the report classes *do not* contain custom code (i.e. handlers for events like [NeedDataSource](https://docs.telerik.com/reporting/e-telerik-reporting-dataitem-needdatasource), 
-[ItemDataBound](https://docs.telerik.com/reporting/e-telerik-reporting-reportitembase-itemdatabound), etc.) or this code can be substituted
-with [conditional formatting](https://docs.telerik.com/reporting/styling-conditional-formatting)
-and [bindings](https://docs.telerik.com/reporting/expressions-bindings) in the report definition, it is recommended to use the 
-[Standalone Report Designer](https://docs.telerik.com/reporting/standalone-report-designer) to import them into a set of .trdp/.trdx reports, as explained [here](https://docs.telerik.com/reporting/standalone-report-designer-import-clr-reports).
-The .trdp/.trdx definitions now can be used through a [UriReportSource](https://docs.telerik.com/reporting/t-telerik-reporting-urireportsource) in a .NET Core application.
+* If the report classes *do not* contain custom code (i.e. handlers for events like [NeedDataSource](../e-telerik-reporting-dataitem-needdatasource), 
+[ItemDataBound](../e-telerik-reporting-reportitembase-itemdatabound), etc.) or this code can be substituted
+with [conditional formatting](../styling-conditional-formatting)
+and [bindings](../expressions-bindings) in the report definition, it is recommended to use the 
+[Standalone Report Designer](../standalone-report-designer) to import them into a set of .trdp/.trdx reports, as explained [here](../standalone-report-designer-import-clr-reports).
+The .trdp/.trdx definitions now can be used through a [UriReportSource](../t-telerik-reporting-urireportsource) in a .NET Core application.
 
 * If the custom code in the report definitions must be retained, copy the code from .cs and .designer.cs files of your reports to a new .NET Standard or .NET Core library. 
 Add references to NuGet packages for the missing classes (i.e. *System.Drawing.Common* for the **PaperKind** class) and remove all the references to VisualStudio-specific routines. 
-Once the project compiles, the report classes it contains can be used through a [TypeReportSource](https://docs.telerik.com/reporting/t-telerik-reporting-typereportsource)
-or [InstanceReportSource](https://docs.telerik.com/reporting/t-telerik-reporting-instancereportsource) in a .NET Core application.
+Once the project compiles, the report classes it contains can be used through a [TypeReportSource](../t-telerik-reporting-typereportsource)
+or [InstanceReportSource](../t-telerik-reporting-instancereportsource) in a .NET Core application.
 
 It is recommended to use the first approach and migrate the reports to .trdp or .trdx report definitions, 
 so the design-time support will be provided by the Standalone Report Designer. 
 
 ## See Also
-* [Telerik Reporting .NET Core support](https://docs.telerik.com/reporting/use-reports-in-net-core-apps)
+* [Telerik Reporting .NET Core support](../use-reports-in-net-core-apps)
 * [Port your code from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)

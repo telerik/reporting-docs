@@ -44,4 +44,4 @@ There are two possible ways to fix the error:
 2. Reference the latest Kendo UI for jQuery in your application. So, this version will be used instead of the older version provided by the Telerik Reporting REST service. According to the [Kendo UI documentation](https://docs.telerik.com/kendo-ui/intro/installation/prerequisites#supported-jquery-versions), the latest version supports jQuery 3.3.1 and this fixes the error message.
 
 ## Notes
-Another possible reason to get this error message is if the jQuery script is loaded multiple times on the page. Please make sure that jQuery script is loaded only once, and that the application meets the [viewer requirements](https://docs.telerik.com/reporting/webforms-report-viewer-controls-system-requirements).
+Another possible reason to get this error message is if the jQuery script is loaded multiple times on the page. Please make sure that jQuery script is loaded only once, and that the application meets the [viewer requirements](../webforms-report-viewer-controls-system-requirements).

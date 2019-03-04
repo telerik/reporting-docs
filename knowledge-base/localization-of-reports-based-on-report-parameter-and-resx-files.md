@@ -32,10 +32,6 @@ res_type: kb
 		<td>Visual Studio version</td>
 		<td>Visual Studio 2017</td>
 	</tr>
-	<tr>
-		<td>Preferred Language</td>
-		<td>C Sharp</td>
-	</tr>
 </table>
 
 

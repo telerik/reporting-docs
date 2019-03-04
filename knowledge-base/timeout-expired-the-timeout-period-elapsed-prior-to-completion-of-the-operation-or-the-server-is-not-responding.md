@@ -31,14 +31,14 @@ Timeout expired. The timeout period elapsed prior to completion of the operation
 
 ## Solution
 The common troubleshooting approach for connectivity issues (timeout issue) is extending the connections timeouts in SqlDataSource component. You can try the following suggestions:
-1. Test using a larger value for the [CommandTimeout](https://docs.telerik.com/reporting/p-telerik-reporting-sqldatasource-commandtimeout) property;
+1. Test using a larger value for the [CommandTimeout](../p-telerik-reporting-sqldatasource-commandtimeout) property;
 2. Test using a larger value in the connection string as well;
 3. Extend the execution timeout in the *web.config* file with even bigger value than you've set initially, for example:
 ```XML
 <httpRuntime executionTimeout="7200" />
 ```
 
-In case the report retrieves a large amount of data, you might consider filtering the data on the retrieval. We suggest to review the information in [Filtering Data](https://docs.telerik.com/reporting/data-items-filtering-data) and [Performance Considerations](https://docs.telerik.com/reporting/designing-performance) help articles and see what can be applied to the current project.
+In case the report retrieves a large amount of data, you might consider filtering the data on the retrieval. We suggest to review the information in [Filtering Data](../data-items-filtering-data) and [Performance Considerations](../designing-performance) help articles and see what can be applied to the current project.
 
 
 ## Notes

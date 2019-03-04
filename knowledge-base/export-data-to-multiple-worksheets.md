@@ -29,14 +29,14 @@ Telerik Reporting Excel rendering extension exports a report into a single works
 
 ## Solution
 
-To export the data into multiple worksheets, add several reports to a [ReportBook](https://docs.telerik.com/reporting/designing-reports-general-explanation).
+To export the data into multiple worksheets, add several reports to a [ReportBook](../designing-reports-general-explanation).
 Each report in a ReportBook will occupy a separate worksheet in Excel workbook.
 
-ReportBook can be created programmatically or using [Standalone report designer](https://docs.telerik.com/reporting/standalone-report-designer).
+ReportBook can be created programmatically or using [Standalone report designer](../standalone-report-designer).
 
 ReportBook support for Standalone designer was added in R1 2017 release. To start creating ReportBook, select **File | New** from the designer menu and choose a ReportBook report template.
 
 ## See Also
-[How to: Create a Report Book at run-time](https://docs.telerik.com/reporting/designing-reports-reportbook-creating-reportbook-run-time)
+[How to: Create a Report Book at run-time](../designing-reports-reportbook-creating-reportbook-run-time)
 
-[Design Considerations for Excel Rendering](https://docs.telerik.com/reporting/designing-reports-considerations-excel)
+[Design Considerations for Excel Rendering](../designing-reports-considerations-excel)

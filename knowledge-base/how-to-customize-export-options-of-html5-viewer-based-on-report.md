@@ -23,7 +23,7 @@ res_type: kb
 The available rendering formats are related to the REST Service and are taken from the configuration file of its project. Setting different rendering extensions in the viewer per report definition is not available out of the box. 
   
 ## Solution
-You may bind on the [renderingEnd](https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-renderingend) event of the viewer and hide the unwanted export options based on the report name (as taken from the [reportSource](https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-methods-reportsource)_.report_ property). Here is a sample code for the page with the viewer:  
+You may bind on the [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) event of the viewer and hide the unwanted export options based on the report name (as taken from the [reportSource](../html5-report-viewer-reportviewer-methods-reportsource)_.report_ property). Here is a sample code for the page with the viewer:  
   
 
 ``` Html

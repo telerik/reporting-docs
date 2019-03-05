@@ -13,10 +13,6 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
-		<td>Product Version</td>
-		<td></td>
-	</tr>
-	<tr>
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting </td>
 	</tr>
@@ -157,7 +153,7 @@ Step by step instructions follow:
   </StyleSheet>
 </Report>
 ```
-2. Set Table **Width** and **Styles** (as *StyleNames* defined in the *StyleRules* in the report *StyleSheet* property). Leave only one column in the Table - we will use it to carry the *Styles* of the header and detail cells. Check the [Creating Style Rules](https://docs.telerik.com/reporting/style-creating-style-rules) article for details on style rules.
+2. Set Table **Width** and **Styles** (as *StyleNames* defined in the *StyleRules* in the report *StyleSheet* property). Leave only one column in the Table - we will use it to carry the *Styles* of the header and detail cells. Check the [Creating Style Rules](../style-creating-style-rules) article for details on style rules.
 3. Use the following sample code to add DataSource and the necessary columns to the Table:
 
 ```csharp

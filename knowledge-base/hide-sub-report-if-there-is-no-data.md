@@ -33,3 +33,5 @@ To hide the SubReport Header, use a [binding rule](../expressions-bindings) to s
 = Count(Fields.SomeFieldValue) > 0
 ```
 In main report, set the height of the SubReport item to 0 (zero). This way it will not occupy space when there is nothing to render in the SubReport.
+
+For more available approaches, please refer to [How to hide a SubReport with no data](knowledge-base/how-to-hide-subreport-with-no-data).

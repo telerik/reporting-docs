@@ -24,7 +24,7 @@ res_type: kb
 
 
 ## Description
-Inside [Angular Report Viewer events](https://testdocs.telerik.com/reporting/angular-report-viewer-event-binding) the **this** value will point to the report viewer object.
+Inside [Angular Report Viewer events](../angular-report-viewer-event-binding) the **this** value will point to the report viewer object.
 This makes any Angular components' properties inaccessible in report viewer events. Consider the following example:
 
 Template

@@ -72,6 +72,6 @@ This setting will be respected only if the rendering machine supports metafiles 
 If the export to Microsoft Office formats fails in Azure environment, set the **useMetafile** to *false*. 
 
 ## See Also
-- [Configuring Telerik Reporting Extensions](https://docs.telerik.com/reporting/configuring-telerik-reporting-extensions)
-- [Rendering Extensions](https://docs.telerik.com/reporting/configuring-rendering-extensions)
-- [Telerik Reporting Configuration Section](https://docs.telerik.com/reporting/configuring-telerik-reporting)
+- [Configuring Telerik Reporting Extensions](../configuring-telerik-reporting-extensions)
+- [Rendering Extensions](../configuring-rendering-extensions)
+- [Telerik Reporting Configuration Section](../configuring-telerik-reporting)

@@ -19,7 +19,7 @@ res_type: kb
 The database feeding the report with data may use a schema-per-tenant design, i.e. a new schema will be added every time a new user is set up. The query for fetching the data will differ only in its 'schema' part. Here is how to avoid creating a data source for each schema/user.
 
 ## Solution
-1\. Declare the SqlDataSource that should use 'schema-per-tenant'. Set its 'ConnectionString'. Note that this can be done [dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter). Assign the DataSource to the corresponding [Data item](https://docs.telerik.com/reporting/data-items).  
+1\. Declare the SqlDataSource that should use 'schema-per-tenant'. Set its 'ConnectionString'. Note that this can be done [dynamically through a report parameter](../knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter). Assign the DataSource to the corresponding [Data item](../data-items).  
 
 2\. Declare a Report Parameter (i.e. 'Schema') to provide the name of the user schema.  
 
@@ -37,7 +37,7 @@ DataSource.SelectCommand      |   = Format("SELECT {0}.[Production].[Produc
 ```
   
 The _DataSource.SelectCommand_ property path is \*not\* listed in the dropdown and must be typed manually.  
-The sample code uses the _Format_ [Text function](https://docs.telerik.com/reporting/expressions-text-functions) to integrate the schema name in the query string. 
+The sample code uses the _Format_ [Text function](../expressions-text-functions) to integrate the schema name in the query string. 
 
 You may provide also the entire _SelectCommand_ as a value taken from a Report parameter :
 
@@ -52,4 +52,4 @@ DataSource.SelectCommand      |   = Parameters.Query.Value
 * Bindings are not available on the ReportParameter-s, so this technique cannot be applied on a data source feeding the available values of a ReportParameter
 
 ## See Also
-[Change Connection String dynamically through a report parameter](https://docs.telerik.com/reporting/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter)
+[Change Connection String dynamically through a report parameter](how-to-pass-connectionstring-to-report-dynamically-through-report-parameter)

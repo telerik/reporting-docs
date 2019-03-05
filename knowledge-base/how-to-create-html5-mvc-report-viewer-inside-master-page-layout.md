@@ -28,7 +28,7 @@ res_type: kb
 
 
 ## Description
-When using [HTML5 ASP.NET MVC Report Viewer](https://docs.telerik.com/reporting/mvc-report-viewer-extension-overview) to display reports in MVC application, by default its not specified any Layout, so it is set to null.
+When using [HTML5 ASP.NET MVC Report Viewer](../mvc-report-viewer-extension-overview) to display reports in MVC application, by default its not specified any Layout, so it is set to null.
 
 In general, setting Layout explicitly to null might be necessary if you want to get rid of a standard layout defined in *_Layout.cshtml*. When you make *@{Layout=null}* you are explicitly saying that this is your final layout so it is not nested in any master layout.
 

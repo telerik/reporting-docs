@@ -27,8 +27,8 @@ res_type: kb
 How would I dynamically change report properties / settings from the report viewer client side?
 
 ## Solution
-Report settings can be modified from the client side through [report parameters](https://docs.telerik.com/reporting/designing-reports-parameters). In case the value of some report property is bound to a report parameter value, changing the value of report parameter from the client side would change the value of the report property.
-For example, to bind *Report.PageSettings.Landscape* property to a report parameter, add [a binding](https://docs.telerik.com/reporting/expressions-bindings) into Report.Bindings collection. An example binding rule in the Edit Bindings dialog:
+Report settings can be modified from the client side through [report parameters](../designing-reports-parameters). In case the value of some report property is bound to a report parameter value, changing the value of report parameter from the client side would change the value of the report property.
+For example, to bind *Report.PageSettings.Landscape* property to a report parameter, add [a binding](../expressions-bindings) into Report.Bindings collection. An example binding rule in the Edit Bindings dialog:
 ```
 Property path: PageSettings.Landscape
 Expression: = Parameters.Landscape.Value

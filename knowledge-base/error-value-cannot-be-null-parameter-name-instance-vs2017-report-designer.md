@@ -37,10 +37,10 @@ at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.D
 
 
 ## Solution
-[The error](http://docs.telerik.com/reporting/troubleshooting-upgrading#report-cannot-be-built-and-opened-in-visual-studio-report-designer) indicates that the project uses a version of _Telerik Reporting_ that is not registered in Visual Studio 2017\. This might be due to Telerik Reporting being installed before installation of Visual Studio 2017.
+[The error](../troubleshooting-upgrading#report-cannot-be-built-and-opened-in-visual-studio-report-designer) indicates that the project uses a version of _Telerik Reporting_ that is not registered in Visual Studio 2017\. This might be due to Telerik Reporting being installed before installation of Visual Studio 2017.
 
 You should re-install Telerik Reporting with support for Visual Studio 2017.
-You can download MSI file to install Telerik Reporting as described in the [How to download Telerik Reporting installer](https://docs.telerik.com/reporting/installation-installing-from-msi#how-to-download-telerik-reporting-installer).
+You can download MSI file to install Telerik Reporting as described in the [How to download Telerik Reporting installer](../installation-installing-from-msi#how-to-download-telerik-reporting-installer).
 After downloading the installer, our recommendation is to run the MSI file per Visual Studio edition:
 
 ```
@@ -53,5 +53,5 @@ The second parameter **[edition]** is the Visual Studio edition - _Enterprise_, 
 Once Telerik Reporting is installed with support for VS2017, you can load the project in Visual Studio.  
   
 The VS Report Designer is not fully functional in VS2017 for version of Telerik Reporting prior to R1 2017\.  
-Therefore, our recommendation is to [upgrade](https://docs.telerik.com/reporting/installation-upgrading-newer-version) the project to the newest version (check our [Release History](https://www.telerik.com/support/whats-new/reporting/release-history)) by running the [Upgrade Wizard](https://docs.telerik.com/reporting/ui-upgrade-wizard).  
+Therefore, our recommendation is to [upgrade](../installation-upgrading-newer-version) the project to the newest version (check our [Release History](https://www.telerik.com/support/whats-new/reporting/release-history)) by running the [Upgrade Wizard](../ui-upgrade-wizard).  
 

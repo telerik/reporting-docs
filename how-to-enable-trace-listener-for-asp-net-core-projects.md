@@ -1,9 +1,9 @@
 ---
-title: Problems in ASP.NET Core applications
-description: How to enable Trace Listener for ASP.NET Core applications when crashing
+title: Troubleshooting reporting implementation into ASP.NET Core application
+description: How to troubleshoot errors in ASP.NET Core applications when crashing
 type: how-to
-page_title: How to enable Trace Listener for ASP.NET Core projects 
-slug: how-to-enable-trace-listener-for-asp-net-core-projects 
+page_title: How to troubleshoot errors in ASP.NET Core projects 
+slug: how-to-troubleshoot-errors-in-asp-net-core-applications 
 position: 
 tags: ASP.NET Core, Configuration
 ticketid: 1383767
@@ -28,7 +28,7 @@ res_type: kb
 
 
 ## Description
-When the application crashes while working with Telerik Reporting, the way to determine what has caused the problem is described in the following steps.
+If you are experiencing problems while working with Telerik Reporting, the right way to determine what have caused them is described in the following steps.
 
 ## Solution
 - Upgrade to the latest version of the product in case the reason for the crash has been fixed.
@@ -50,7 +50,7 @@ public static void Main(string[] args)
     }
 }
 ```
-After running the application and reproduce the error, it would be generated a *aspnetcoredemo.log* file at the root folder of the application.
+Upon running the project and reproducing the error, it will be generated an *aspnetcoredemo.log* file at the root of the application.
 
 - Other recommended troubleshooting approach is to use [Fiddler](http://www.telerik.com/fiddler) or other proxy tool to check the requests, their responses and statuses. Please create Fiddler trace (see [how to create .SAZ file](https://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/CreateSAZ)).
 

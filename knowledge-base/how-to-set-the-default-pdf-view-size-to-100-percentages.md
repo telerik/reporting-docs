@@ -36,7 +36,7 @@ The default PDF viewer zoom level could be changed in three ways:
 	* Relaunch Acrobat Reader to test
 2. Change the settings programmatically with Telerik.Reporting configuration section in application configuration file
 
-	This setting could be added to [Telerik.Reporting Configuration Section Extension Element](https://docs.telerik.com/reporting/configuring-telerik-reporting-extensions) by using *JavaScript* as name attribute and value *this.zoom=100* like the following code snippet:
+	This setting could be added to [Telerik.Reporting Configuration Section Extension Element](../configuring-telerik-reporting-extensions) by using *JavaScript* as name attribute and value *this.zoom=100* like the following code snippet:
 	```
 	<Telerik.Reporting>
 	   <extensions>
@@ -50,9 +50,9 @@ The default PDF viewer zoom level could be changed in three ways:
 		</extensions>
 	</Telerik.Reporting>
 	```
-3. With the using of the [ReportProcessor.RenderReport Method](https://docs.telerik.com/reporting/m-telerik-reporting-processing-reportprocessor-renderreport) to render the report in the specified format
+3. With the using of the [ReportProcessor.RenderReport Method](../m-telerik-reporting-processing-reportprocessor-renderreport) to render the report in the specified format
 
-	There is a parameter called **deviceInfo** that contains parameters to pass to the rendering extension. Based on the [Export Report Programmatically: Exporting a report to a single document format](https://docs.telerik.com/reporting/programmatic-exporting-report#exporting-a-report-to-a-single-document-format) example, is created the following code snippet for this case:
+	There is a parameter called **deviceInfo** that contains parameters to pass to the rendering extension. Based on the [Export Report Programmatically: Exporting a report to a single document format](../programmatic-exporting-report#exporting-a-report-to-a-single-document-format) example, is created the following code snippet for this case:
 	```CSharp
 	Telerik.Reporting.Processing.ReportProcessor reportProcessor =
 		new Telerik.Reporting.Processing.ReportProcessor();

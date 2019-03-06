@@ -33,12 +33,11 @@ For adding Reporting engine and Reporting REST service to .NET Core application 
 Using those packages in the application results in an error dispalyed in HTML5 report viewer.
 
 ## Error Message
-
+```
 Unable to get report parameters.
-
 An error has occured.
-
 Field not found: 'Telerik.Reporting.Processing.UserIdentity.Current'
+```
 
 ## Cause\Possible Cause(s)
 
@@ -46,10 +45,10 @@ It is a known issue with NuGet packages we provide for ASP.NET Core projects tha
 
 ## Solution
 
-The fix will be provided in the next internal build.
+The fix is provided in the next internal build, i.e. *12.0.18.424*.
 
 ## Suggested workarounds
 
-A temporary workaround for the error is to downgrade the packages.
+With the current version, i.e. 12.0.18.416, the workaround for the error is to downgrade the packages.
 
 

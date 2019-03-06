@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-The [HTML5 Report Viewer](https://docs.telerik.com/reporting/html5-report-viewer) is built upon HTML5, CSS, and JavaScript. This allows the viewer to be used in virtually any JavaScript framework.
+The [HTML5 Report Viewer](../html5-report-viewer) is built upon HTML5, CSS, and JavaScript. This allows the viewer to be used in virtually any JavaScript framework.
 [React](https://reactjs.org/) has been gaining a lot of traction and we would like to explore how the HTML5 Report Viewer could be implemented, together with its dependencies, in a React application.
 The solution we are about to demonstrate is a very basic approach to create a new React application, include the viewer's dependencies and lastly, display the report viewer.
 

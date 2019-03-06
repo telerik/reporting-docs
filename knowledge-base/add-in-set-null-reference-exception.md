@@ -59,9 +59,9 @@ public void AddInSet(string key, string value)
 ```
 The **System.Diagnostics.Trace.WriteLine(error)** code line means that if a trace listener is attached, the error message above will be present in the trace listener log.
 
-The error message above might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([FileStorage](https://docs.telerik.com/reporting/t-telerik-reporting-cache-file-filestorage)) is not suitable for such environment. The issue can be approached depending on the environment specifications:
+The error message above might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([FileStorage](../t-telerik-reporting-cache-file-filestorage)) is not suitable for such environment. The issue can be approached depending on the environment specifications:
 
-1. In **web farm environments** it is recommended to change the storage to use a **MsSqlServerStorage** or **RedisStorage** implementation. For further details check [IStorage implementation suitable for deploying in Web Farms](https://docs.telerik.com/reporting/telerik-reporting-rest-service-storage#istorage-implementation-suitable-for-deploying-in-web-farms).
+1. In **web farm environments** it is recommended to change the storage to use a **MsSqlServerStorage** or **RedisStorage** implementation. For further details check [IStorage implementation suitable for deploying in Web Farms](../telerik-reporting-rest-service-storage#istorage-implementation-suitable-for-deploying-in-web-farms).
 
 2. In **single-instance environments** reset the report viewer storage data by deleting the contents of the file storage folder. By default, the REST Service is using *the current user's temporary folder*. In case of using Telerik Report Server the default file storage is placed in the product installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data* (delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data intact). 
 We recommend creating a backup before resetting the storage.
@@ -69,6 +69,6 @@ We recommend creating a backup before resetting the storage.
 
 
 ## See Also
-* [REST Service Storage Overview](https://docs.telerik.com/reporting/telerik-reporting-rest-service-storage)
-* [How To: Configure MS Sql database storage](https://docs.telerik.com/reporting/telerik-reporting-rest-howto-use-mssql-storage)
-* [How to: Use Redis storage](https://docs.telerik.com/reporting/telerik-reporting-rest-howto-use-redis-storage)
+* [REST Service Storage Overview](../telerik-reporting-rest-service-storage)
+* [How To: Configure MS Sql database storage](../telerik-reporting-rest-howto-use-mssql-storage)
+* [How to: Use Redis storage](../telerik-reporting-rest-howto-use-redis-storage)

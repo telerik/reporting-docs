@@ -78,7 +78,7 @@ Then change/remove the buttons from the provided template as follows:
         </ul>
         ...
 ```
-For reference, please check [Providing Custom Templates](https://docs.telerik.com/reporting/html5-report-viewer-customizing-providing-template) help article.
+For reference, please check [Providing Custom Templates](../html5-report-viewer-customizing-providing-template) help article.
 
 2. Using custom CSS rules or JavaScript, for example:
 ``` JavaScript
@@ -91,4 +91,4 @@ $("#reportViewer1")
        }
 });
 ```
-The above code will hide Navigate Back button using the callback function set as [viewer's ready option](https://docs.telerik.com/reporting/html5-report-viewer-jquery-fn-telerik-reportviewer).
+The above code will hide Navigate Back button using the callback function set as [viewer's ready option](../html5-report-viewer-jquery-fn-telerik-reportviewer).

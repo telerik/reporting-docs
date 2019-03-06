@@ -28,7 +28,7 @@ res_type: kb
 
 
 ## Description
-The following article demonstrate how to display the Parameters area and/or Document Map area on different place than the default ones. By default, the [HTML5 Viewer's](https://docs.telerik.com/reporting/html5-report-viewer) parameters area is positioned on the right sight of the viewer and the Document Map - on the left sight.
+The following article demonstrate how to display the Parameters area and/or Document Map area on different place than the default ones. By default, the [HTML5 Viewer's](../html5-report-viewer) parameters area is positioned on the right sight of the viewer and the Document Map - on the left sight.
 
 ## Solution
 To change their location, you can customize the viewer's HTML by apply custom CSS to the viewer's elements. The provided examples are modified with custom JS and CSS rules. 
@@ -62,7 +62,7 @@ function updateDocumentMapArea(condition, marginType) {
 	}
 }
 ```
-Then apply these functions in callback function *updateUi* that will be called every time the UI needs an update (for more information, please check [the full list of options during viewer's initialization](https://docs.telerik.com/reporting/html5-report-viewer-jquery-fn-telerik-reportviewer)):
+Then apply these functions in callback function *updateUi* that will be called every time the UI needs an update (for more information, please check [the full list of options during viewer's initialization](../html5-report-viewer-jquery-fn-telerik-reportviewer)):
 ``` JavaScript
 updateUi: function (e) {
     var rv = e.data.sender;
@@ -77,4 +77,4 @@ The rest of the placements could be done by following the same logic.
 
 ## See Also
 You can download the sample application containing both approaches from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/samplecustomizinghtml5viewerparamarea.zip?sfvrsn=2bd66a3_2).
-In order to build it successfully, you will need to use the [Upgrade Wizard](https://docs.telerik.com/reporting/ui-upgrade-wizard) to upgrade/downgrade to the latest installed version on the machine.
+In order to build it successfully, you will need to use the [Upgrade Wizard](../ui-upgrade-wizard) to upgrade/downgrade to the latest installed version on the machine.

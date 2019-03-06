@@ -28,5 +28,5 @@ Credentials should not be provided as plain text. Either use the [Guest user](ht
 - Providing an access to limit number of users that would be able to modify the report, they have to be registered as CAL users. The report viewer connected to a report server would need be utilized *only by the person that provides the credentials of its associated CAL user*.
 
 ## See Also
-- [How To: Use HTML5 Report Viewer with Report Server](https://docs.telerik.com/reporting/html5-report-viewer-howto-use-it-with-reportserver)
+- [How To: Use HTML5 Report Viewer with Report Server](../html5-report-viewer-howto-use-it-with-reportserver)
 - [Integration With Report Viewers](https://docs.telerik.com/report-server/implementer-guide/integration-with-report-viewers)

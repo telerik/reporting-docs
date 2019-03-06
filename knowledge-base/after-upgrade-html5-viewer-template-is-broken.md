@@ -36,7 +36,7 @@ Scenario: Using default template and styles.
 Possible cause: If older version of the assemblies are used (since the default template comes from our assembly).
 
 ## Solution 1
-Web-based viewers are widgets, that get content produced on the server by the [Reporting REST service](https://docs.telerik.com/reporting/telerik-reporting-rest-conception). Make sure that latest assemblies are referenced in the Rest Service project.
+Web-based viewers are widgets, that get content produced on the server by the [Reporting REST service](../telerik-reporting-rest-conception). Make sure that latest assemblies are referenced in the Rest Service project.
 
 ## Possible Cause 2
 Scenario: Using custom (local) template and styles.
@@ -53,5 +53,5 @@ Possible cause: If older template is still cached by browsers
 After updating the assemblies/merging the newest changes, make sure that browser cache is cleared. Browsers often cache html and css files to optimize the page loading. Sometimes they do not detect modified files.
 
 ## See Also
-- [Styling and Appearance](https://docs.telerik.com/reporting/html5-report-viewer-styling-and-appearance)
-- [Providing Custom Templates](https://docs.telerik.com/reporting/html5-report-viewer-customizing-providing-template)
+- [Styling and Appearance](../html5-report-viewer-styling-and-appearance)
+- [Providing Custom Templates](../html5-report-viewer-customizing-providing-template)

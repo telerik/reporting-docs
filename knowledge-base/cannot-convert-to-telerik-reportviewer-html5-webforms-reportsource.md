@@ -23,11 +23,11 @@ res_type: kb
 Cannot implicitly convert type 'Telerik.Reporting.XXXReportSource' to 'Telerik.ReportViewer.Html5.WebForms.ReportSource' error when setting the ReportSource of the HTML5 WebForms Report Viewer.
 
 ## Solution
-[HTML5 WebForms Report Viewer](https://docs.telerik.com/reporting/webforms-report-viewer-controls-overview) works with a client-side report source which is of type **Telerik.ReportViewer.Html5.WebForms.ReportSource**. 
+[HTML5 WebForms Report Viewer](../webforms-report-viewer-controls-overview) works with a client-side report source which is of type **Telerik.ReportViewer.Html5.WebForms.ReportSource**. 
 
-*ReportSource.IdentifierType* property specifies which [resolver](https://docs.telerik.com/reporting/telerik-reporting-rest-service-report-resolver#overview) will be used for resolving the report description string on the server.
+*ReportSource.IdentifierType* property specifies which [resolver](../telerik-reporting-rest-service-report-resolver#overview) will be used for resolving the report description string on the server.
 
-*ReportSource.Identifier* property accepts a string that contains information about the report. This string can be a path to a TRDP or TRDX file that can be resolved by [ReportFileResolver](https://docs.telerik.com/reporting/t-telerik-reporting-services-webapi-reportfileresolver), an assembly-qualified name of the report class which can be resolved by [ReportTypeResolver](https://docs.telerik.com/reporting/t-telerik-reporting-services-webapi-reporttyperesolver) or custom information which can be resolved by [custom report resolver](https://docs.telerik.com/reporting/telerik-reporting-rest-service-report-resolver#custom-report-resolver-implementations).
+*ReportSource.Identifier* property accepts a string that contains information about the report. This string can be a path to a TRDP or TRDX file that can be resolved by [ReportFileResolver](../t-telerik-reporting-services-webapi-reportfileresolver), an assembly-qualified name of the report class which can be resolved by [ReportTypeResolver](../t-telerik-reporting-services-webapi-reporttyperesolver) or custom information which can be resolved by [custom report resolver](../telerik-reporting-rest-service-report-resolver#custom-report-resolver-implementations).
 
 Examples of setting the ReportSource of HTML5 WebForms Report Viewer:
 
@@ -58,6 +58,6 @@ End Sub
 ```
 
 ## See Also
-[How to: Set ReportSource for Report Viewers](https://docs.telerik.com/reporting/report-sources-viewers)
+[How to: Set ReportSource for Report Viewers](../report-sources-viewers)
 
 [How to display a report via InstanceReportSource in the HTML5 Viewer](https://www.telerik.com/support/kb/reporting/details/how-to-display-a-report-via-instancereportsource-in-the-html5-viewer)

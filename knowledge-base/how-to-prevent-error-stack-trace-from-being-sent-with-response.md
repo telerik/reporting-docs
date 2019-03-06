@@ -30,7 +30,7 @@ We have left the default exception-related behavior of our _ReportsController_ f
 If necessary, the exceptions can be removed from the response.
 For example, you may customize the way the Web API handles exceptions by creating an [exception filter](https://docs.microsoft.com/en-us/aspnet/web-api/overview/error-handling/exception-handling#exception-filters) and applying it to the _ReportsController_.  
   
-Alternatively, you may consider overriding the public methods of the _ReportsController_ and catch and handle the exceptions there - check [ReportsControllerBase Methods](https://docs.telerik.com/reporting/methods-t-telerik-reporting-services-webapi-reportscontrollerbase). For example, the implementation of _RegisterClient_ method may look like :  
+Alternatively, you may consider overriding the public methods of the _ReportsController_ and catch and handle the exceptions there - check [ReportsControllerBase Methods](../methods-t-telerik-reporting-services-webapi-reportscontrollerbase). For example, the implementation of _RegisterClient_ method may look like :  
   
 ```CSharp
 public override HttpResponseMessage RegisterClient()

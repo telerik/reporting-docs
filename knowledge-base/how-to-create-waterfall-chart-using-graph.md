@@ -27,7 +27,7 @@ often used to demonstrate how an initial value is affected by a series of interm
 ## Solution
 Such chart can be easily created when the data source already has the values for Y and Y0 precalculated, but in case we have only the
 intermediate values, the scenario gets a bit more challenging. The key is to use the 
-**RunningValue()** and **Exec()** [data functions](https://docs.telerik.com/reporting/expressions-data-functions), 
+**RunningValue()** and **Exec()** [data functions](../expressions-data-functions), 
 which provide aggregates calculation for a given scope.
 
 In our scenario the data would look like this:
@@ -43,7 +43,7 @@ Total,0
 Note that the last column, *Total* doesn't have an explicitly set value, because it should be calculated as an aggregate of all the previous intermediate values.
 The steps, needed to produce a waterfall chart are listed below:
 
-1. Start by creating a clustered column chart with the graph wizard , as explained here: [How To: Create Column Chart](https://docs.telerik.com/reporting/graphhowtocreatecolumnchart).
+1. Start by creating a clustered column chart with the graph wizard , as explained here: [How To: Create Column Chart](../graphhowtocreatecolumnchart).
 2. When arranging the graph fields, drag the **Item** field for *Categories* box and **Value** field for *Values* box.
 3. Remove the sorting from the category group to ensure the data will be ordered as it is in the data source.
 4. Select a datapoint from the produced column series and set its Y property to 
@@ -64,7 +64,7 @@ The steps, needed to produce a waterfall chart are listed below:
 	
 	The latter expression checks if the datapoint represents the first or the last item and then sets its Y0 property to 0, so the datapoint will span to the horizontal axis. 
 	Otherwise subtracts the current datapoint value from the accumulated sum to calculate the bottom coordinate of the datapoint.
-5. Assign the desired colors to the graph series using [Conditional formatting](https://docs.telerik.com/reporting/styling-conditional-formatting) rules.
+5. Assign the desired colors to the graph series using [Conditional formatting](../styling-conditional-formatting) rules.
 
 ## See Also
 You can download the sample .trdx report definition from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/waterfallchart.trdx?sfvrsn=d0eb9990_4&download=true).

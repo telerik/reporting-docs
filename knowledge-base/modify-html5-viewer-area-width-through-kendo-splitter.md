@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product Version</td>
-		<td>13.0.19.116+</td>
+		<td>13.0.19.116 and above</td>
 	</tr>
 	<tr>
 		<td>Product</td>
@@ -22,16 +22,16 @@ res_type: kb
 	</tr>
 	<tr>
 		<td>Report Viewer</td>
-		<td>HTML5 ASP.NET MVC</td>
+		<td>all Html5 Report Viewers</td>
 	</tr>
 </table>
 
 
 ## Description
-Sometimes it may be necessary to increase/decrease the default areas' width of the _Html5 Report Viewer_ widgets.
+Sometimes it may be necessary to increase/decrease the width of the Document Map and Parameters Area inside report viewer.
 
 ## Solution
- In the Telerik Html5 Reprot Viewer, we have added Kendo splitter for its template areas, so the user to be able to resize them. By default _Document Map_ and _Parameter_ areas have width _210px_. This value is not configurable in our Html5 Viewers. As the Telerik Report Viewer uses Kendo UI widgets for its templates, the user could change the UI as desired through the corresponding Kendo widget settings and options.  
+ In the Telerik Html5 Report Viewer, we have added Kendo splitter for its template areas. This enables the end-user to resize them using the pointing device. By default _Document Map_ and _Parameter_ areas have width _210px_. This value is not configurable in our Html5 Viewers. As the Telerik Report Viewer uses Kendo UI widgets for its templates, the user could change the UI as desired through the corresponding Kendo widget settings and options.  
   
 To modify the _Document Map_ or _Parameter_ area width you may include the following code in the [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) or [pageReady](../html5-report-viewer-reportviewer-events-pageready) event of the viewer :   
   

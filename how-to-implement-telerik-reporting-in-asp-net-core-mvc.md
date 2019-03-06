@@ -51,7 +51,7 @@ App configuration in ASP.NET Core uses the new SDK-style project and utilizes **
   ]
 }
 ```
-For more information about Telerik Reporting JSON-based configuration structure, please refer to the [Telerik Reporting Configuration Layout](https://docs.telerik.com/reporting/configuring-telerik-reporting#telerik-reporting-configuration-layout) help article.
+For more information about Telerik Reporting JSON-based configuration structure, please refer to the [Telerik Reporting Configuration Layout](../configuring-telerik-reporting#telerik-reporting-configuration-layout) help article.
 
 We have to build the configuration in *Startup.cs* as we implement a sample *ConfigurationService* class which ensures reading the **appsettings.json** as config file and used in the ReportsController constructor:
 ```CSharp
@@ -157,7 +157,7 @@ namespace AspNetCoreMvcDemo.Controllers
 }
 ```
 
-In the end, we should create the report viewer. As the [HTML5 ASP.NET MVC Report Viewer](https://docs.telerik.com/reporting/mvc-report-viewer-extension-overview) is a server-side wrapper for the [HTML5 JavaScript ReportViewer](https://docs.telerik.com/reporting/html5-report-viewer), it requires a reference to **Telerik.ReportViewer.Mvc.dll**. However, as this assembly is built against the *full .NET Framework*, the only possible approach is creating a pure HTML5 Viewer.
+In the end, we should create the report viewer. As the [HTML5 ASP.NET MVC Report Viewer](../mvc-report-viewer-extension-overview) is a server-side wrapper for the [HTML5 JavaScript ReportViewer](../html5-report-viewer), it requires a reference to **Telerik.ReportViewer.Mvc.dll**. However, as this assembly is built against the *full .NET Framework*, the only possible approach is creating a pure HTML5 Viewer.
 
 ## Notes
 The demo application could be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/aspnetcoremvcdemo.zip?sfvrsn=32676553_2).

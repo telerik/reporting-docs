@@ -52,6 +52,6 @@ For reference, check our demos located in Telerik Reporting installation folder,
 
 
 ## See Also
-Check the following links for more information:
-- [Windows Forms Application - Declaring the application as DPI-aware](../winforms-report-viewer#declaring-the-application-as-dpi-aware)
-- [Writing DPI-Aware Desktop and Win32 Applications](https://docs.microsoft.com/en-us/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows)
+[Windows Forms Application - Declaring the application as DPI-aware](../winforms-report-viewer#declaring-the-application-as-dpi-aware)
+
+[Writing DPI-Aware Desktop and Win32 Applications](https://docs.microsoft.com/en-us/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows)

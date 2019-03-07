@@ -118,7 +118,8 @@ namespace AspNetCoreMvcDemo.Controllers
     public class ReportsController : ReportsControllerBase
     {
         readonly string reportsPath = string.Empty;
- 
+ 	
+	//We use the *ConfigurationService* as a parameter for the ReportsController constructor to obtain the configuration information and to access the WebRootPath of the application.
         public ReportsController(ConfigurationService configSvc)
         {
             this.reportsPath = Path.Combine(configSvc.Environment.WebRootPath, "Reports");

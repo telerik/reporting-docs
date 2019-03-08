@@ -24,18 +24,22 @@ This KB article gives a brief description of how to show "No Data" message when 
 
 
 ## Solution
-For Report:
+**For Report:**
+
 1. Insert a textbox in the Report Header section with value: "No data".
 2. Set the textbox property of Visible to False.
 3. Add a new Conditional Formatting Rule. In the Filters section set the fields as follows:
+
 ```
 Expression: =Count(1)
 Operator: =
 Value: 0
 ```
+
 4. Go to Style of the formatting rule -> uncheck the Visibility box -> click OK -> select again the Style of the rule -> check Visible  -> OK (This step is required because the designer needs  to determine that a change has been introduced so that it re-serializes the report, otherwise the message will not change its visibility).
 
-For Subreport:
+**For Subreport:**
+
 You can display a 'No Data' message in a sub report by using the same approach as for a Report.
 If you want to hide the SubReport item and its content, then you can add a binding in the textbox item's Bindings collection like:
 ```

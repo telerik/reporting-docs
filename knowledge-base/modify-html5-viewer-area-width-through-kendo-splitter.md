@@ -1,8 +1,8 @@
 ---
 title: Modify default Document Map and Parameter areas width in Html5 Report Viewer
-description: Resize the default areas sizes through the splitter
+description: How to change the default Document Map and Parameter areas sizes on initial load in the Html5 Report Viewer with Kendo splitter
 type: how-to
-page_title: Change Side areas sizes in Html5 Viewer with the Kendo splitter
+page_title: Resize the default Document Map and Parameter areas sizes through the splitter
 slug: modify-html5-viewer-area-width-through-kendo-splitter
 position: 
 tags: 
@@ -22,16 +22,16 @@ res_type: kb
 	</tr>
 	<tr>
 		<td>Report Viewer</td>
-		<td>all Html5 Report Viewers</td>
+		<td>All Html5 Report Viewers</td>
 	</tr>
 </table>
 
 
 ## Description
-Sometimes it may be necessary to increase/decrease the width of the Document Map and Parameters Area inside report viewer.
+Sometimes it may be necessary to increase/decrease the default width of the _Document Map_ and _Parameters_ Area inside report viewer on initial load.
 
 ## Solution
- In the Telerik Html5 Report Viewer, we have added Kendo splitter for its template areas. This enables the end-user to resize them using the pointing device. By default _Document Map_ and _Parameter_ areas have width _210px_. This value is not configurable in our Html5 Viewers. As the Telerik Report Viewer uses Kendo UI widgets for its templates, the user could change the UI as desired through the corresponding Kendo widget settings and options.  
+In the Telerik Html5 Report Viewer, we have added Kendo splitter to control the sizes of the viewer's areas. This enables the end-user to resize them using the pointing device. By default _Document Map_ and _Parameter_ areas have width _210px_. This default/initial value is not configurable in our Html5 Viewers. As the Telerik Report Viewer uses Kendo UI widgets, the user could change the UI as desired through the corresponding Kendo widget settings and options.  
   
 To modify the _Document Map_ or _Parameter_ area width you may include the following code in the [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) or [pageReady](../html5-report-viewer-reportviewer-events-pageready) event of the viewer :   
   

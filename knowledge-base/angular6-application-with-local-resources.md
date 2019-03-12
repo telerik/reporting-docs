@@ -31,5 +31,6 @@ For more information, please check the [Unable to load the css file in angular 6
 The sample application could be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/sampleangular6app.zip?sfvrsn=3458f73f_2).
 
 ## See Also
-- [Angular Report Viewer](../angular-report-viewer)
-- [Telerik Reporting REST Services](../telerik-reporting-rest-conception)
+  [Angular Report Viewer](../angular-report-viewer)
+  
+  [Telerik Reporting REST Services](../telerik-reporting-rest-conception)

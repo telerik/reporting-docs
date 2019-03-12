@@ -66,4 +66,4 @@ Using **"Object instance"** when choosing a source for sub report, is a legacy a
 Our recommendation is to use the **"Type name"** option for .NET type report definitions (.CS or .VB files).
 
 ## See Also
-- [How to: Set ReportSource for SubReport](../report-sources-subreport#how-to-set-reportsource-for-subreport)
+  [How to: Set ReportSource for SubReport](../report-sources-subreport#how-to-set-reportsource-for-subreport)

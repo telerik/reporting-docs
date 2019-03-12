@@ -29,18 +29,16 @@ The [PageSettings](../properties-t-telerik-reporting-drawing-pagesettings) of th
 
 
 2. Instantiate the report, change its _PageSettings_ accordingly and wrap it in an _InstanceReportSource_ to pass it to the _ReportProcessor_ / Reporting Engine for rendering.  
-
-
-```CSharp
-report = new MyReport();
-
-// Modify report PageSettings
-report.PageSettings.PaperKind = "A3";
-report.PageSettings.Landscape = True;
-
-InstanceReportSource instanceReportSource = new InstanceReportSource();
-instanceReportSource.ReportDocument = report;
-Telerik.Reporting.Processing.ReportProcessor reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
-System.Collections.Hashtable deviceInfo = new System.Collections.Hashtable();
-Telerik.Reporting.Processing.RenderingResult result = reportProcessor.RenderReport("PDF", instanceReportSource, deviceInfo);
- ```
+  ```CSharp
+  report = new MyReport();
+  
+  // Modify report PageSettings
+  report.PageSettings.PaperKind = "A3";
+  report.PageSettings.Landscape = True;
+  
+  InstanceReportSource instanceReportSource = new InstanceReportSource();
+  instanceReportSource.ReportDocument = report;
+  Telerik.Reporting.Processing.ReportProcessor reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
+  System.Collections.Hashtable deviceInfo = new System.Collections.Hashtable();
+  Telerik.Reporting.Processing.RenderingResult result = reportProcessor.RenderReport("PDF", instanceReportSource, deviceInfo);
+  ```

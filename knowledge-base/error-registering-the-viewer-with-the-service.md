@@ -24,11 +24,11 @@ res_type: kb
 
 
 ## Error Message
+```
 Error registering the viewer with the service. 
-
 An error has occurred. 
-
 Access to the path 'C:\Windows\TEMP\\**NAME**\\**VERSION**\LCT\value.dat' is denied.
+```
 
 Where **NAME** is the name of the application and **VERSION** is the currently installed on the machine version of the product
 

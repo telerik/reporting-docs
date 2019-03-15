@@ -33,13 +33,12 @@ To overcome the problem check the [Cannot connect to a server by using the Servi
  
 Workarounds are suggested also in the [TLS 1.2 and .NET Support: How to Avoid Connection Errors](https://blogs.perficient.com/2016/04/28/tsl-1-2-and-net-support/) blog post :  
   
-"........NET 4.0\. TLS 1.2 is not supported, but if you have .NET 4.5 (or above) installed on the system then you still can opt in for TLS 1.2 even if your application framework doesn't support it. The only problem is that SecurityProtocolType in .NET 4.0 doesn't have an entry for TLS1.2, so we'd have to use a numerical representation of this enum value:
+*"...NET 4.0\. TLS 1.2 is not supported, but if you have .NET 4.5 (or above) installed on the system then you still can opt in for TLS 1.2 even if your application framework doesn't support it. The only problem is that SecurityProtocolType in .NET 4.0 doesn't have an entry for TLS1.2, so we'd have to use a numerical representation of this enum value:*
 
 ``` CSharp
-
 ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
 ```
   
-.........there is also a registry hack which forces 4.5 to use TLS 1.2 by default without enforcing it programmatically." 
+*...there is also a registry hack which forces 4.5 to use TLS 1.2 by default without enforcing it programmatically."*
 
 The workaround cannot be applied to the Standalone designer. Therefore, we introduced an improvement in the latter, starting with [Telerik Reporting R3 2018 (12.2.18.912)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2018-12-2-18-912). If you need to use the designer with Web services requiring TLS 1.2 it will be necessary to upgrade to at least this version.

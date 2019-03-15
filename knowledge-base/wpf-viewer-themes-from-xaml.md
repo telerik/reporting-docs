@@ -33,57 +33,55 @@ The themes can be referred directly in the _App.xaml_ file, or alternatively in 
 
 1. In the _App.xaml_ instead of content of the <ResourceDictionary.MergedDictionaries> element from step 4 in the [WPF Report Viewer Manual Setup](../wpf-report-viewer-manual-setup) article use the following (the example uses _Material_ theme) :
 
-``` XML
-<Application.Resources >
-.....
-  <ResourceDictionary>
-    <ResourceDictionary.MergedDictionaries>
-      <ResourceDictionary Source="Themes/Material/System.Windows.xaml" />
-      <ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.xaml" />
-      <ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Input.xaml" />
-      <ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Navigation.xaml" />
-      <ResourceDictionary Source="Themes/Material/Telerik.ReportViewer.Wpf.xaml" />
-    </ResourceDictionary.MergedDictionaries>
-     
-    // YOU MAY ADD OTHER STYLES IN THE <ResourceDictionary> TAG :
+    ``` XML
+    <Application.Resources >
     .....
-  </ResourceDictionary>
-.....
-</Application.Resources>
-```
-
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Themes/Material/System.Windows.xaml" />
+        <ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.xaml" />
+        <ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Input.xaml" />
+        <ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Navigation.xaml" />
+        <ResourceDictionary Source="Themes/Material/Telerik.ReportViewer.Wpf.xaml" />
+        </ResourceDictionary.MergedDictionaries>
+        
+        // YOU MAY ADD OTHER STYLES IN THE <ResourceDictionary> TAG :
+        .....
+    </ResourceDictionary>
+    .....
+    </Application.Resources>
+    ```
 2. In the code behind use the following code that first clears the already merged dictionaries (if any), and then adds the new ones :
-```CSHARP
-public partial class ReportViewerWindow1 : Window
-{
-    static readonly string[] dictionaries = new[]
-        {
-            "Themes/{0}/System.Windows.xaml",
-            "Themes/{0}/Telerik.Windows.Controls.xaml",
-            "Themes/{0}/Telerik.Windows.Controls.Input.xaml",
-            "Themes/{0}/Telerik.Windows.Controls.Navigation.xaml",
-            "Themes/{0}/Telerik.ReportViewer.Wpf.xaml"
-        };
- 
-    public ReportViewerWindow1()
+    ```CSHARP
+    public partial class ReportViewerWindow1 : Window
     {
-        InitializeComponent();
-        MergeResourceDictionaries("Material"); // Set the required theme name here
-    }
- 
-    static void MergeResourceDictionaries(string theme)
-    {
-        var mergedDictionaries = Application.Current.Resources.MergedDictionaries;
-        mergedDictionaries.Clear();
-        foreach (var dictionary in dictionaries)
-        {
-            var uri = string.Format(dictionary, theme);
-            mergedDictionaries.Add(new ResourceDictionary()
+        static readonly string[] dictionaries = new[]
             {
-                Source = new Uri(uri, UriKind.RelativeOrAbsolute)
-            });
+                "Themes/{0}/System.Windows.xaml",
+                "Themes/{0}/Telerik.Windows.Controls.xaml",
+                "Themes/{0}/Telerik.Windows.Controls.Input.xaml",
+                "Themes/{0}/Telerik.Windows.Controls.Navigation.xaml",
+                "Themes/{0}/Telerik.ReportViewer.Wpf.xaml"
+            };
+    
+        public ReportViewerWindow1()
+        {
+            InitializeComponent();
+            MergeResourceDictionaries("Material"); // Set the required theme name here
+        }
+    
+        static void MergeResourceDictionaries(string theme)
+        {
+            var mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+            mergedDictionaries.Clear();
+            foreach (var dictionary in dictionaries)
+            {
+                var uri = string.Format(dictionary, theme);
+                mergedDictionaries.Add(new ResourceDictionary()
+                {
+                    Source = new Uri(uri, UriKind.RelativeOrAbsolute)
+                });
+            }
         }
     }
-}
-```
-
+    ```

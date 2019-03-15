@@ -31,4 +31,4 @@ Sample _ASP.NET Web Forms_ projects :
 
 [ClientPrintingCSharp.zip](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/clientprintingcsharp.zip?sfvrsn=419df686_2)
 
-[ClientPrintingVB](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/clientprintingvb.zip?sfvrsn=6abcacde_2)
+[ClientPrintingVB.zip](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/clientprintingvb.zip?sfvrsn=6abcacde_2)

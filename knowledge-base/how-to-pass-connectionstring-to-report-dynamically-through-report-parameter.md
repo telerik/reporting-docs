@@ -28,11 +28,11 @@ The requirement can be achieved without writing additional code, **_directly in 
 1. In the report definition [introduce a new Report Parameter](../designing-reports-parameters-adding-parameters) (for example _ConnectionStringParameter_) - the connection string will be passed to the Report via this parameter.  
 2. In the Report or other [Data item](../data-items) (Table, List, etc.) where the connection string is supposed to be changed dynamically introduce a new [Binding](../expressions-bindings) as shown below:  
 
-```XML
-Property path                   |   Expression
+	```XML
+	Property path                   |   Expression
 
-DataSource.ConnectionString     |   Parameters.ConnectionStringParameter.Value
-```
+	DataSource.ConnectionString     |   Parameters.ConnectionStringParameter.Value
+	```
 
 ## Notes
 The _DataSource.ConnectionString_ property is not listed in the dropdown and must be typed manually.

@@ -31,14 +31,18 @@ After installing Telerik Reporting, the Visual Studio 2017 Toolbox does not cont
 
 ## Solution
 During the installation of Telerik Reporting on your machine, the Telerik assemblies were added to GAC. The resolution would be to load the **Telerik.Reporting.Design.Components** assembly manually from there. Here are the steps:
-1. Open a report in VS designer and open the Toolbox 
-2. Right-click over the Telerik Reporting R1 2019 -> navigate to Choose items... -> .NET Framework Components
-3. Click Browse...
-4. Navigate to:
-```
-C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Telerik.Reporting.Design.Components\v4.0_13.0.19.116__a9d7983dfcc261be
-```
 
+1. Open a report in VS designer and open the Toolbox 
+
+2. Right-click over the Telerik Reporting R1 2019 -> navigate to Choose items... -> .NET Framework Components
+
+3. Click Browse...
+
+4. Navigate to:
+
+	```
+	C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Telerik.Reporting.Design.Components\v4.0_13.0.19.116__a9d7983dfcc261be
+	```
 5. Add Telerik.Reporting.Design.Components.dll ([check this screen shot](https://www.screencast.com/t/1tbxrbJja6t)).
 
 After these steps, the wizards should be available for use.

@@ -16,6 +16,10 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting </td>
 	</tr>
+	<tr>
+		<td>Viewer</td>
+		<td>ASP.NET WebForms Report Viewer (legacy)</td>
+	</tr>
 </table>
 
 ## Solution

@@ -24,16 +24,23 @@ res_type: kb
 
 
 ## Description
+
 The error message *"Execution Timeout Expired. The timeout period elapsed prior to completion of the operation or the server is not responding."* is returned from the attempt to connect to the SQL server database.
 
 ## Error Message
+
 Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding. The statement has been terminated.
 
 ## Solution
+
 The common troubleshooting approach for connectivity issues (timeout issue) is extending the connections timeouts in SqlDataSource component. You can try the following suggestions:
+
 1. Test using a larger value for the [CommandTimeout](../p-telerik-reporting-sqldatasource-commandtimeout) property;
+
 2. Test using a larger value in the connection string as well;
+
 3. Extend the execution timeout in the *web.config* file with even bigger value than you've set initially, for example:
+
 ```XML
 <httpRuntime executionTimeout="7200" />
 ```
@@ -42,6 +49,7 @@ In case the report retrieves a large amount of data, you might consider filterin
 
 
 ## Notes
+
 If this does not help, in order to proceed we would need the following information:
 - Use [Fiddler](https://www.telerik.com/fiddler) to follow the exact requests to/responses from the REST Service. The entire error Stack Trace should be available in the corresponding response when previewed with Fiddler. Save the generated traffic as [SAZ](https://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/CreateSAZ) file.
 - Attach a [Trace Listener](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners) to the REST Service project (add the corresponding section to the project *web.config* file) to obtain information on where and why the error occurs.

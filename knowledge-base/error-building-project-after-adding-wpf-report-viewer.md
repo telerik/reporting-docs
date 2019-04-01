@@ -34,8 +34,6 @@ res_type: kb
 ## Description
 Adding a WPF Report Viewer from the Visual Studio item templates to a project results _System.Windows.Markup.XamlParseException_.
 
-
-
 ## Error Message
 ```
 _System.Windows.Markup.XamlParseException

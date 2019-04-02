@@ -31,7 +31,12 @@ Now, how to migrate the existing ASP.NET Core project from full .NET Framework b
 
 ## Solution
   
-1. Unload the project and edit .*csproj file's setting **<TargetFramework>netcoreapp2.2</TargetFramework>** and reload it back.
+1. Unload the project and edit .csproj file's setting 
+
+	```XML
+	<TargetFramework>netcoreapp2.2</TargetFramework>
+	```
+and reload it back.
 
 2. Remove the old Telerik libraries. The new Telerik Reporting libraries for .NET Core projects are available through Telerik NuGet private feed - [Telerik Reporting NuGet packages](../installation-installing-from-msi#installing-telerik-reporting).
 

@@ -41,12 +41,11 @@ The **CanShrink** property for the Name TextBox is set to true and the **CanGrow
 ![FAQ6](resources/FAQ6.png)
 
 In this last example the TextBoxes are arranged vertically into a single column, with the Name TextBox appearing twice. The layout is roughly:
-
-    ```
-    Name
-    Name
-    Summary
-    ```
+```
+Name
+Name
+Summary
+```
 
 The data for the first row Name field is blanked out. The output with  **CanShrink** true for Name and **CanGrow** true for Summary shows the Name property TextBox has shrunk and the Summary information takes its place:
 

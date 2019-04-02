@@ -30,12 +30,11 @@ Note that this solution is applicable when column headers are placed in Group He
 3. Click the **New Rule** button.
 4. Enter a condition that should be true for the row to change color. For example:
 
-```
-Expression: "=Fields.Flag"
-Operator: equal "=" 
-Value: "True"
-```
-
+	```
+	Expression: "=Fields.Flag"
+	Operator: equal "=" 
+	Value: "True"
+	```
 5. Click the **Style** button.
 6. Click the **Background** style item.
 7. Choose a background color from the drop down list or ellipses color selector. Change any other style characteristics you choose.

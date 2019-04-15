@@ -51,7 +51,7 @@ System.InvalidOperationException: Attempting to get range {X,Y}{X,Y},Merged=Fals
 ```
 
 ## Cause\Possible Cause(s)
-Usually, this error could happen as a result of incorrect report layout which might be caused by overlapping or growing items. As described in the [Design Considerations for Excel Rendering](https://docs.telerik.com/reporting/designing-reports-considerations-excel) help article, overlapped items are not allowed in Excel and may lead to unexpected results.
+Usually, this error could happen as a result of incorrect report layout which might be caused by overlapping or growing items. As described in the [Design Considerations for Excel Rendering](../designing-reports-considerations-excel) help article, overlapped items are not allowed in Excel and may lead to unexpected results.
 
 ## Solution
 Double-check for any overlapping items in the Design view of the report and please make sure that there are none. They could be found in the report surface with warning signs (yellow triangle with an exclamation mark).

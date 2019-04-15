@@ -29,7 +29,7 @@ res_type: kb
 
 ## Description
 How to fix broken report viewer layout after upgrading Telerik Reporting version?
-There are several reasons that could cause broken layout after upgrading. We can define two main scenarios:
+There are several reasons that could cause broken layout after upgrading. We can define three main scenarios:
 
 ## Possible Cause 1
 Scenario: Using default template and styles. 

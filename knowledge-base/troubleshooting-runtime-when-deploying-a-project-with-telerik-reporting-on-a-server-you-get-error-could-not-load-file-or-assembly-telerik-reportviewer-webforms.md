@@ -17,6 +17,8 @@ res_type: kb
 	</tr>
 </table>
 
+## Important
+This article is related to the obsolete [ASP.NET Web Forms Report Viewer](../asp-net-report-viewer). We strongly advice to Migrate to [Migrate to the HTML5 Viewer](https://www.telerik.com/support/kb/reporting/details/migrate-to-the-html5-viewer-from-the-old-asp.net-webforms-reportviewer-control).
 
 ## Description
 When deploying a project with Telerik Reporting on a server, you  get the following error: 

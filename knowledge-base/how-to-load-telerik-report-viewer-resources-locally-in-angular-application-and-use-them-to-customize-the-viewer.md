@@ -30,7 +30,7 @@ res_type: kb
 
 
 ## Description
-Do you want to customize the report viewer's default behavior? Let's find out how.
+Do you want to customize the report viewer's default layout and behavior? Let's find out how.
 
 ## Prerequisites
 Angular requires folder called assets to be used for serving custom files, so they could be included in the production build. This is done via the assets property in the .angular-cli.json file (or .angular.json for Angular 6+ applications).
@@ -53,10 +53,10 @@ The following three scenarios could be applied together (if all resources have t
 ### Scenario 1
 How to load viewer's script locally **(i.e. telerikReportViewer-<VERSION>.js)**?
 
-### Example
+#### Example
 I would like to change the behavior of the report viewer widget (toolbar, parameters area, document map)
 
-### How to:
+#### How to
 1. Copy the script file from *C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Html5\ReportViewer\js\telerikReportViewer-<VERSION>.js* to assets folder
 2. In *index.html* load jQuery library (required for the JS logic) and the local file itself:
   ```HTML
@@ -67,10 +67,10 @@ I would like to change the behavior of the report viewer widget (toolbar, parame
 ### Scenario 2
 How to load viewer's HTML template locally **(i.e. telerikReportViewerTemplate.html)**?
 
-### Example
+#### Example
 I would like to change the layout of the report viewer widget (hide toolbar buttons, add additional buttons, localize string resources etc.)
 
-### How to
+#### How to
 1. Copy the template file from *C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Html5\ReportViewer\templates\telerikReportViewerTemplate.html* to assets folder
 2. Load it setting **templateUrl** option of the report viewer like:
   ```JavaScript
@@ -88,10 +88,10 @@ I would like to change the layout of the report viewer widget (hide toolbar butt
 ### Scenario 3
 How to load viewer's styles locally **(i.e. telerikReportViewer.css)**?
 
-### Example
+#### Example
 I would like to change the default styling of the viewer widget.
 
-### How to
+#### How to
 1. **Important:** This depends on the template, so make sure that local **telerikReportViewerTemplate.html** is used (check Scenario 2). 
 2. Copy the stylesheet file from *C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Html5\ReportViewer\styles\telerikReportViewer.css* to assets folder
 3. Open **telerikReportViewerTemplate.html** file and change the path to the stylesheet resource from:

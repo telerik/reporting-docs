@@ -29,22 +29,22 @@ Currently, the [PictureBox](../report-items-picture-box) can hold only the forma
 ## Solution
 1.A [UserFunction](../expressions-user-functions) should be implemented through the code snippet below
 	
-	```CSharp
-	public static Bitmap ConvertToBitmap(string url)
-	{
-	    var svgDocument = Svg.SvgDocument.Open(url);
-	    svgDocument.ShapeRendering = SvgShapeRendering.Auto;
+```CSharp
+public static Bitmap ConvertToBitmap(string url)
+{
+	var svgDocument = Svg.SvgDocument.Open(url);
+	svgDocument.ShapeRendering = SvgShapeRendering.Auto;
 
-	    Bitmap bmp = svgDocument.Draw(120, 120); // Draw Bitmap in any Size you need - for example 120px x 120px
-	    return bmp;
-	}
-	```
+	Bitmap bmp = svgDocument.Draw(120, 120); // Draw Bitmap in any Size you need - for example 120px x 120px
+	return bmp;
+}
+```
 
 2. Add the user function as explained in [Extending Report Designer article](../standalone-report-designer-extending-configuration). A reference to the Svg.dll should be also added.
 
 3. Then the value of the picture box should be set to the following expression: 
 
-	```
-	= UserFunction.Custom.ConvertToBitmap(Parameters.url.Value)
-	```
-where the report parameter holds the picture destination.
+```
+= UserFunctionClassName.ConvertToBitmap(Parameters.url.Value)
+```
+where the report parameter holds the URL for the picture.

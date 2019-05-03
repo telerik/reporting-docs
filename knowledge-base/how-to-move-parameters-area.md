@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product Version</td>
-		<td>12.0.18.620</td>
+		<td>prior to R1 2019 (13.0.19.116)</td>
 	</tr>
 	<tr>
 		<td>Product</td>
@@ -26,6 +26,9 @@ res_type: kb
 	</tr>
 </table>
 
+
+## Important note
+This article is applicable for versions prior to R1 2019, e.g. till [R3 2018 SP2](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2018-sp2-12-2-18-1129), including. After R1 2019 Telerik Web Report Viewers use Kendo splitter for resizing Parameters and Document map areas. At this point, there is no way to change the Parameters Areas position.
 
 ## Description
 The following article demonstrate how to display the Parameters area and/or Document Map area on different place than the default ones. By default, the [HTML5 Viewer's](../html5-report-viewer) parameters area is positioned on the right sight of the viewer and the Document Map - on the left sight.

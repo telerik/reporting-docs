@@ -32,17 +32,19 @@ The datepicker is a (Kendo widget)[https://docs.telerik.com/kendo-ui/controls/ed
 1. Add the following script in the web page which holds the report viewer:
 
     
-     ```
+     ```HTML
      <script src="http://kendo.cdn.telerik.com/VERSION/js/cultures/kendo.culture.fr-FR.min.js"></script>
      ```
    For example:
-   ```
+   
+   ```HTML
    <script src="http://kendo.cdn.telerik.com/2019.1.115/js/cultures/kendo.culture.fr-FR.min.js"></script>
    ```  
      A list with all versions can be found [here](https://docs.telerik.com/kendo-ui/intro/installation/prerequisites).
      
 2.  Then the culture of the Kendo widget must be set through the script below which should be placed before the report viewer's initialization:
-	```
+
+	```HTML
 	<script type="text/javascript">
 		kendo.culture("fr-FR");
 	</script>

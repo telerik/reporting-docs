@@ -24,7 +24,7 @@ res_type: kb
 
 
 ## Description
-Currently, the [PictureBox](../report-items-picture-box) can hold only the formats supported by GDI+ (BMP, GIF, JPEG, EXIF, PNG, and TIFF). This KB article demonstrates how to convert SVG graphics to PNG picture and to set it as a value of the picturebox. Note that a NuGet package called [Svg](https://www.nuget.org/packages/Svg/) should be added to the project.  
+Currently, the [PictureBox](../report-items-picture-box) can hold only the formats supported by GDI+ (BMP, GIF, JPEG, EXIF, PNG, and TIFF). This KB article demonstrates how to convert SVG graphics to PNG picture and to set it as a value of the picturebox. Note that a NuGet package called [Svg](https://www.nuget.org/packages/Svg/) should be added to the project. The approach is approperiate for reports which are designed in the Standalone Designer, as well as in the Visual Studio Report Designer.
 
 ## Solution
 1.A [UserFunction](../expressions-user-functions) should be implemented through the code snippet below
@@ -40,11 +40,11 @@ public static Bitmap ConvertToBitmap(string url)
 }
 ```
 
-2. Add the user function as explained in [Extending Report Designer article](../standalone-report-designer-extending-configuration). A reference to the Svg.dll should be also added.
+2.Register the user function as explained in [Extending Report Designer article](../standalone-report-designer-extending-configuration). A reference to the Svg.dll should be also attached.
 
 3. Then the value of the picture box should be set to the following expression: 
 
 ```
 = UserFunctionClassName.ConvertToBitmap(Parameters.url.Value)
 ```
-where the report parameter holds the URL for the picture.
+Note that the report parameter holds the URL for the picture.

@@ -37,8 +37,29 @@ How to implement the Telerik Reporting engine and viewer in ASP.NET Core MVC pro
 ## Solution
 There are some specifics related to ASP.NET Core configuration that we will discuss in the beginning.  Please note that the configuration is mostly taken from the official documentation: [Configuration in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/index?view=aspnetcore-2.2).
 
-App configuration in ASP.NET Core uses the new SDK-style project and utilizes **appsettings.json** as a configuration file. To work these settings in your ASP.NET Core application, it is recommended that you only instantiate a *ConfigurationService* in your application’s *Startup* class. Then, use [the Options pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2) to access individual settings. For example, the **ConnectionStrings** setting should be configured in JSON-based format like for example:
+App configuration in ASP.NET Core uses the new SDK-style project and utilizes **appsettings.json** as a configuration file. To work these settings in your ASP.NET Core application, it is recommended that you only instantiate a *ConfigurationService* in your application’s *Startup* class. Then, use [the Options pattern](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-2.2) to configure individual settings. For example, the **ConnectionStrings** setting in JSON-based format would look like this:
 
+```JSON
+{
+  ...
+  "ConnectionStrings": {
+      "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
+  }  
+}
+```
+This type of connection string lacks information about the data provider and will use *System.Data.SqlClient* as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
+````JSON
+{
+  ...
+  "ConnectionStrings": {
+    "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
+      "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+      "providerName": "System.Data.SqlClient"
+    }
+  }
+}
+````
+The last supported type of **ConnectionStrings** configuration uses an array to provide information about each connection string:
 ```JSON
 {
   ...
@@ -51,6 +72,7 @@ App configuration in ASP.NET Core uses the new SDK-style project and utilizes **
   ]
 }
 ```
+
 For more information about Telerik Reporting JSON-based configuration structure, please refer to the [Telerik Reporting Configuration Layout](../configuring-telerik-reporting#telerik-reporting-configuration-layout) help article.
 
 We have to build the configuration in *Startup.cs* as we implement a sample *ConfigurationService* class which ensures reading the **appsettings.json** as config file and used in the ReportsController constructor:

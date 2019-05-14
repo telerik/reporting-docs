@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-The datepicker is a (Kendo widget)[https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview]. That's why the Html5 Report Viewer (or any other Web- based viewer) localization will not affect its date representation. This KB article gives a brief description of how to set another language. The example will demonstrate the date representation in French.
+The datepicker is a [Kendo widget](https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview). That's why the Html5 Report Viewer (or any other Web-based viewer) localization will not affect its date representation. This KB article gives a brief description of how to set another language. The example will demonstrate the date representation in French.
 
 ## Solution
 1. Add the following script in the web page which holds the report viewer:

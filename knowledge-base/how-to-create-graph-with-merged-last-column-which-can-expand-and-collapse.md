@@ -15,7 +15,7 @@ res_type: kb
     <tbody>
 	    <tr>
 	    	<td>Product Version</td>
-	    	<td>13.0.19.222</td>
+	    	<td>12.2.18.912+</td>
 	    </tr>
 	    <tr>
 	    	<td>Product</td>
@@ -52,7 +52,8 @@ In this [expression](../report-expressions), the value which will be set when th
 
 In this way, **+** will be shown when the columns are merged and **-** when they are expanded.
 
-4. Add a [Drillthrough Report Action](../designing-reports-interactivity-drill-through-report-links) to the textbox:  **Action** -> **Navigate to Report** -> **Select a report source** -> **URL or file** -> fill the path to the report ->**Edit Parameters:**
+4. Add a [Drillthrough Report Action](../designing-reports-interactivity-drill-through-report-links) to the textbox which will point to the same report (i.e. to itself):  **Action** -> **Navigate to Report** -> **Select a report source** -> **URL or file** -> fill the path to the report ->**Edit Parameters:**
  - **Parameter Name**: paramMerged
  - **Parameter Value**: = Parameters.paramMerged.Value = 'False'
 
+![](https://media.giphy.com/media/dVdEi7hpjbJWy0XR9Z/giphy.gif)

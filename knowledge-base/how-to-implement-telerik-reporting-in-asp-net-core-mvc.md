@@ -47,8 +47,10 @@ App configuration in ASP.NET Core uses the new SDK-style project and utilizes **
   }  
 }
 ```
+
 This type of connection string lacks information about the data provider and will use *System.Data.SqlClient* as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
-````JSON
+
+```JSON
 {
   ...
   "ConnectionStrings": {
@@ -58,8 +60,10 @@ This type of connection string lacks information about the data provider and wil
     }
   }
 }
-````
+```
+
 The last supported type of **ConnectionStrings** configuration uses an array to provide information about each connection string:
+
 ```JSON
 {
   ...
@@ -95,6 +99,7 @@ public class ConfigurationService
     }
 }
 ```
+
 If we want to inject our configuration to our controllers, we'll need to register it with the runtime. We do so via *Startup.ConfigureServices*:
 ```CSharp
 IServiceCollection services;
@@ -122,6 +127,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     ....
 }
 ```
+
 After the initial configuration is done, you can create ReportsController class which will look like:
 ```CSharp
 using System.Collections.Generic;

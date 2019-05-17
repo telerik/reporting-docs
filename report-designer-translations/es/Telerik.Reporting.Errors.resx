@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UnitParseNoDigits" xml:space="preserve">
-    <value>{0} no se puede analizar como una unidad porque no contiene valores numéricos. Los ejemplos de las secuencias válidas de la unidad son 1PT y. 5in.</value>
+    <value>{0} no se puede analizar como una unidad porque no contiene valores numéricos. Ejemplos de cadenas de unidades válidas son 1PT y. 5in.</value>
   </data>
   <data name="UnitParseNoUnit" xml:space="preserve">
-    <value>{0} no contiene una especificación de unidad. Los ejemplos de las secuencias válidas de la unidad son 1PT y. 5in.</value>
+    <value>{0} no contiene una especificación de unidad. Ejemplos de cadenas de unidades válidas son 1PT y. 5in.</value>
   </data>
   <data name="UnitParseNumericPart" xml:space="preserve">
     <value>La parte numérica de {0} no se puede analizar como una unidad de tipo {2}.</value>
@@ -136,7 +136,7 @@
     <value>El estilo con el nombre "{0}" ya está definido.</value>
   </data>
   <data name="TextParseFailedFormat" xml:space="preserve">
-    <value>No se pudo analizar el texto esperado del texto ("{0}") con el formato "{1}".</value>
+    <value>No se pudo analizar el texto esperado de texto ("{0}") con el formato "{1}".</value>
   </data>
   <data name="ToStringNone" xml:space="preserve">
     <value>(ninguno)</value>
@@ -148,12 +148,12 @@
     <value>{0} no contiene la propiedad {1}.</value>
   </data>
   <data name="InvalidColumnCount" xml:space="preserve">
-    <value>El conteo de columnas debe ser mayor o igual a 1.</value>
+    <value>El recuento de columnas debe ser mayor o igual que 1.</value>
   </data>
   <data name="InvalidColumnSpacing" xml:space="preserve">
-    <value>El espaciado de las columnas debe ser una unidad no negativa.</value>
+    <value>El espaciado entre columnas debe ser una unidad no negativa.</value>
   </data>
   <data name="MinimumSupportedFontSize" xml:space="preserve">
-    <value>El valor mínimo de tamaño de fuente admitido es {0}. Informe, objeto: {1}</value>
+    <value>El valor mínimo de tamaño de fuente admitido es {0}. Objeto de informe: {1}</value>
   </data>
 </root>

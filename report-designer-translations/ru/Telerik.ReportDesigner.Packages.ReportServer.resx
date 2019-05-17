@@ -117,20 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ForgetServer_Confirmation" xml:space="preserve">
-    <value>Sind Sie sicher, dass Sie diesen Berichtsserver Eintrag entfernen möchten?</value>
-  </data>
   <data name="CanConnect_ConnectionFailure" xml:space="preserve">
     <value>Не удается подключиться к серверу отчетов.</value>
   </data>
   <data name="CreateReport_ReportNameInvalidCharacters" xml:space="preserve">
-    <value>Имя отчета не может содержать следующие символы: {0} {1}</value>
+    <value>Имя отчета не может содержать следующие символы: {0} {0}</value>
   </data>
   <data name="CreateReport_ReportReplaceConfirmation" xml:space="preserve">
-    <value>Отчет с именем "{0}" уже существует в категории "{1}". Вы хотите добавить в него новую редакцию?</value>
+    <value>Отчет с именем "{0}" уже существует в категории "{0}". Вы хотите добавить к нему новую редакцию?</value>
   </data>
   <data name="CreatReport_Failed" xml:space="preserve">
-    <value>Отчет не может быть создан. Убедитесь, что выбранный сервер отчетов имеет определенные категории, а вошедший в систему пользователь имеет достаточные разрешения.</value>
+    <value>Отчет не может быть создан. Пожалуйста, проверьте, определены ли в выбранном отчете категории, а регистрируемые пользователи имеют достаточные разрешения.</value>
   </data>
   <data name="Lock_LockedByUserError" xml:space="preserve">
     <value>Отчет заблокирован пользователем "{0}".</value>
@@ -139,46 +136,46 @@
     <value>Сбой операции блокировки.</value>
   </data>
   <data name="Publish_OperationFailed" xml:space="preserve">
-    <value>Не удалось выполнить операцию публикации.</value>
+    <value>Публикация операции не удалась.</value>
   </data>
   <data name="Unlock_OperationFailed" xml:space="preserve">
-    <value>Не удалось разблокировать операцию.</value>
+    <value>Разблокировка операции не удалась.</value>
   </data>
   <data name="VerifySchemaCompatibility_Warning" xml:space="preserve">
-    <value>Этот конструктор поддерживает схему определения отчета {0:0.0}, которая новее схемы {1:0.0}, поддерживаемой сервером отчетов. Если требуется изменить и опубликовать изменения, необходимо использовать конструктор отчетов, поставляемый вместе с сервером отчетов.</value>
+    <value>Этот конструктор поддерживает схему определения отчета {0:0.0}, которая является более новой, чем схема {1:0.0}, поддерживаемая сервером отчета. Если вы хотите отредактировать и опубликовать изменения, вы должны использовать конструктор отчетов, который предоставляется с сервером отчета.</value>
   </data>
   <data name="Ribbon_Warning_Revert" xml:space="preserve">
-    <value>Все изменения, внесенные в определение отчета, будут утеряны. Продолжить?</value>
+    <value>Все изменения, сделанные в определении отчета, будут потеряны. Вы хотите продолжить?</value>
   </data>
   <data name="Ribbon_Revert_Caption" xml:space="preserve">
-    <value>Отменить изменения</value>
+    <value>Изменения возврата</value>
   </data>
   <data name="Connection_Error" xml:space="preserve">
-    <value>Ошибка при входе на сервер. Проверьте URI сервера и учетные данные</value>
+    <value>Ошибка при входе на сервер. Пожалуйста, проверьте сервер Ури и учетные данные</value>
   </data>
   <data name="Connection_Error_Uri" xml:space="preserve">
-    <value>Указанный URI имеет неверный формат.</value>
+    <value>Указанный Ури имеет неправильный формат.</value>
   </data>
   <data name="Connection_Error_Federation" xml:space="preserve">
-    <value>Не удается получить параметры внешнего поставщика: </value>
+    <value>Не удается получить внешние настройки поставщика: </value>
   </data>
   <data name="EditServerReportSourceDialog_ServerOption_Text" xml:space="preserve">
     <value>Сервер</value>
   </data>
   <data name="EditServerReportSourceDialog_ServerOption_Description" xml:space="preserve">
-    <value>Выберите отчет или введите допустимый локатор отчетов (например, Категория/имя):</value>
+    <value>Выберите отчет или введите действительный локатор отчета (например, Категория/имя):</value>
   </data>
   <data name="EditServerReportSourceDialog_Text" xml:space="preserve">
-    <value>&lt; Select Server отчет &gt;</value>
+    <value>&lt; Выберите Отчет Сервера &gt;</value>
   </data>
   <data name="OpenDialog_Header" xml:space="preserve">
-    <value>Открыть отчет из {0}</value>
+    <value>Открытый отчет {0}</value>
   </data>
   <data name="PublishDialog_Title" xml:space="preserve">
     <value>Опубликовать</value>
   </data>
   <data name="SaveAsDialog_Header" xml:space="preserve">
-    <value>{0} отчет в {1}</value>
+    <value>{0} отчет в {0}</value>
   </data>
   <data name="CreateReportDialog_Title" xml:space="preserve">
     <value>Создать</value>
@@ -187,19 +184,19 @@
     <value>Сохранить</value>
   </data>
   <data name="Disconnect_EnsureNotInUse_Warning" xml:space="preserve">
-    <value>Вы открыли отчеты с этого сервера. Сначала необходимо закрыть вкладки отчеты.</value>
+    <value>Вы открыли отчеты с этого сервера. Сначала вы должны закрыть вкладки отчетов.</value>
   </data>
   <data name="AddReportServer_Error_ReportServerAlreadyExist" xml:space="preserve">
-    <value>Сервер отчетов "{0}" уже существует.</value>
+    <value>Сервер отчета ' {0} ' уже существует.</value>
   </data>
   <data name="ContextualTab_ServerTools_Text" xml:space="preserve">
-    <value>Серверные средства</value>
+    <value>Серверные инструменты</value>
   </data>
   <data name="ContextualTab_Server_Text" xml:space="preserve">
     <value>Сервер</value>
   </data>
   <data name="ContextualTab_ReportManagement_Text" xml:space="preserve">
-    <value>Управление отчетами</value>
+    <value>Управление отчетом</value>
   </data>
   <data name="ContextualTab_ReportManagement_Lock_Text" xml:space="preserve">
     <value>Блокировки</value>
@@ -211,19 +208,19 @@
     <value>Опубликовать</value>
   </data>
   <data name="ContextualTab_ReportManagement_Publish_Description" xml:space="preserve">
-    <value>Опубликовать отчет на сервере. Внесите изменения, видимые другим пользователям, с разрешениями View.</value>
+    <value>Публикация отчета на сервере. Сделайте ваши изменения видимыми для других пользователей с помощью разрешений просмотра.</value>
   </data>
   <data name="ContextualTab_ReportManagement_Revert_Text" xml:space="preserve">
     <value>Вернуться</value>
   </data>
   <data name="ContextualTab_ReportManagement_Revert_Description" xml:space="preserve">
-    <value>Отменить все ожидающие изменения и разблокировать отчет.</value>
+    <value>Возвратите все отложенные изменения и разблокируйте отчет.</value>
   </data>
   <data name="ContextualTab_View_WebPreview_Text" xml:space="preserve">
-    <value>Просмотр веб-страниц</value>
+    <value>Просмотр веб-сайтов</value>
   </data>
   <data name="ContextualTab_View_WebPreview_Description" xml:space="preserve">
-    <value>Набор отложенных изменений и предварительный просмотр текущего отчета в браузере.</value>
+    <value>Отложе и предварительный просмотр текущего отчета в браузере.</value>
   </data>
   <data name="ConnectToServer_Label" xml:space="preserve">
     <value>Подключение к серверу отчетов</value>
@@ -244,10 +241,10 @@
     <value>Войдите в систему с учетными данными ADFS</value>
   </data>
   <data name="ConnectToServer_LogInExternal" xml:space="preserve">
-    <value>Вход с внешними поставщиками</value>
+    <value>Войдите в систему с внешними поставщиками</value>
   </data>
   <data name="ConnectToServer_LogInLocal" xml:space="preserve">
-    <value>Вход с локальной учетной записью</value>
+    <value>Войдите в учетную запись с локальной учетной записью</value>
   </data>
   <data name="ConnectToServer_Or" xml:space="preserve">
     <value>или</value>
@@ -259,7 +256,7 @@
     <value>Запомнить меня</value>
   </data>
   <data name="ConnectToServer_ServerURI" xml:space="preserve">
-    <value>URI сервера</value>
+    <value>Сервер Ури</value>
   </data>
   <data name="ConnectToServer_Username" xml:space="preserve">
     <value>Имя пользователя</value>
@@ -274,13 +271,13 @@
     <value>Комментарий:</value>
   </data>
   <data name="Publish_Confirmation" xml:space="preserve">
-    <value>Вы уверены, что хотите опубликовать сделанные изменения? Они будут видимы для всех пользователей с соответствующим разрешением.</value>
+    <value>Вы уверены, что хотите опубликовать сделанные вами изменения? Они будут видны всем пользователям с соответствующим разрешением.</value>
   </data>
   <data name="Publish_Description" xml:space="preserve">
-    <value>Опубликовать отчет на сервере</value>
+    <value>Публикация отчета на сервере</value>
   </data>
   <data name="Publish_KeepLocked" xml:space="preserve">
-    <value>Сохранить отчет заблокирован?</value>
+    <value>Хранить отчет заблокирован?</value>
   </data>
   <data name="Publish_PublishButton" xml:space="preserve">
     <value>Опубликовать</value>
@@ -311,5 +308,8 @@
   </data>
   <data name="SaveAs_Title" xml:space="preserve">
     <value>Название:</value>
+  </data>
+  <data name="ForgetServer_Confirmation" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить запись сервера отчета?</value>
   </data>
 </root>

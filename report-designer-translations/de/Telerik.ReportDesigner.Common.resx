@@ -121,46 +121,47 @@
     <value>Noch nicht</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_OneSecondAgo" xml:space="preserve">
-    <value>vor einer Sekunde</value>
+    <value>Vor einer Sekunde vor einer Sekunde</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_SecondsAgo" xml:space="preserve">
-    <value>vor 0 Sekunden</value>
+    <value>{0} Sekunden vor</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_MinuteAgo" xml:space="preserve">
-    <value>vor einer Minute</value>
+    <value>Vor einer Minute</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_MinutesAgo" xml:space="preserve">
-    <value>vor 0 Stunden</value>
+    <value>{0} Minuten</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_HourAgo" xml:space="preserve">
-    <value>vor einer Stunde</value>
+    <value>Vor einer Stunde</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_HoursAgo" xml:space="preserve">
-    <value>vor {0} Stunden</value>
+    <value>{0} Stunden vor</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_Yesterday" xml:space="preserve">
     <value>gestern</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_DaysAgo" xml:space="preserve">
-    <value>vor {0} Tage</value>
+    <value>{0} Tage</value>
   </data>
   <data name="PathUtils_CreateUniqueFileName_CannotCreateUniqueFileName" xml:space="preserve">
-    <value>Eindeutigen Dateinamen kann nicht erstellt werden</value>
+    <value>Kann keinen eindeutigen Dateinamen erstellen</value>
   </data>
   <data name="Backstage_HelpAbout_Title" xml:space="preserve">
-    <value>Über </value>
+    <value>über </value>
   </data>
   <data name="ErrorDialog_Caption" xml:space="preserve">
     <value>Fehler</value>
   </data>
-  <data name="DialogsFont_Name" xml:space="preserve">
-    <value>Segoe UI</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DialogsFont_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="FontSize_Error_Invalid" xml:space="preserve">
-    <value>Ungültiger Schriftgradwert: </value>
+    <value>Ungültiger Schriftgrößenwert: </value>
   </data>
   <data name="ReportBookCmd_SetTocPlacement_Transaction" xml:space="preserve">
-    <value>TOC-Position festlegen</value>
+    <value>TOC-Position einstellen</value>
   </data>
   <data name="ReportBook_ContextMenu_DeleteReportSource_Text" xml:space="preserve">
     <value>Löschen</value>
@@ -172,9 +173,9 @@
     <value>Nach oben verschieben</value>
   </data>
   <data name="ReportBookDesign_Empty" xml:space="preserve">
-    <value>Das Berichts Buch ist leer.</value>
+    <value>Das Berichtsbuch ist leer.</value>
   </data>
-  <data name="ReportBookDesign_Font_Name" xml:space="preserve">
-    <value>Segoe UI</value>
+  <data name="ReportBookDesign_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PropertyList_NOTE" xml:space="preserve">
-    <value>Nota:</value>
+    <value>nota:</value>
   </data>
   <data name="MenuItem_FallBack_Text" xml:space="preserve">
     <value>(ninguno)</value>
@@ -130,16 +130,17 @@
     <value>Editor de reglas de estilo</value>
   </data>
   <data name="MapWizard_SetupShapesSourcePage_FilesFilter_Shape" xml:space="preserve">
-    <value>Archivos de forma</value>
+    <value>Los archivos Shape</value>
   </data>
-  <data name="MapWizard_SetupShapesSourcePage_FilesFilter_All" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MapWizard_SetupShapesSourcePage_FilesFilter_All" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="Wizards_ChooseDataSource_AvailableDataSources" xml:space="preserve">
     <value>Fuentes de datos disponibles:</value>
   </data>
   <data name="Wizards_ChooseDataSource_SelectedDataSource" xml:space="preserve">
-    <value>Origen de datos seleccionado:</value>
+    <value>Fuente de datos seleccionada:</value>
   </data>
   <data name="Wizards_ChooseDataSource_AddNewDataSource" xml:space="preserve">
     <value>&amp;Agregar nuevo origen de datos...</value>
@@ -148,25 +149,28 @@
     <value>Página:</value>
   </data>
   <data name="StyleRulesEditor_Export_Text" xml:space="preserve">
-    <value>&amp;Exportación</value>
+    <value>&amp;exportar</value>
   </data>
   <data name="CsvDataSourceWizard_FileDialogFilter_AllFiles" xml:space="preserve">
     <value>Todos los archivos</value>
   </data>
   <data name="CsvDataSourceWizard_FileDialogFilter_CsvFiles" xml:space="preserve">
-    <value>Archivos CSV</value>
+    <value>Los archivos CSV</value>
   </data>
   <data name="CsvDataSourceWizard_FileDialogFilter_TextFiles" xml:space="preserve">
     <value>Archivos de texto</value>
   </data>
+  <data name="JsonDataSourceWizard_FileDialogFilter_JsonFiles" xml:space="preserve">
+    <value>Los archivos JSON</value>
+  </data>
   <data name="Wizard_ChooseDataSource_Description" xml:space="preserve">
-    <value>Elija el origen de datos al que desea conectarse o crear uno nuevo.</value>
+    <value>Elija el origen de datos al que le gustaría conectarse o cree uno nuevo.</value>
   </data>
   <data name="Wizard_ChooseDataSource_Title" xml:space="preserve">
-    <value>Elegir origen de datos</value>
+    <value>Elija origen de datos</value>
   </data>
   <data name="NoDataSource" xml:space="preserve">
-    <value>(sin origen de datos)</value>
+    <value>(Sin origen de datos)</value>
   </data>
   <data name="PageSettings_Margins" xml:space="preserve">
     <value>Márgenes</value>
@@ -181,10 +185,10 @@
     <value>Arriba</value>
   </data>
   <data name="PageSettings_Margins_Right" xml:space="preserve">
-    <value>Derecha</value>
+    <value>Derecho</value>
   </data>
   <data name="PageSettings_Paper" xml:space="preserve">
-    <value>Papel</value>
+    <value>examen</value>
   </data>
   <data name="PageSettings_Height" xml:space="preserve">
     <value>altura</value>
@@ -196,7 +200,7 @@
     <value>Tamaño</value>
   </data>
   <data name="PageSettings_PrintOnContinuousPaper" xml:space="preserve">
-    <value>Impresión en papel continuo (rollo)</value>
+    <value>Imprima en papel continuo (rollo)</value>
   </data>
   <data name="PageSettings_Portrait" xml:space="preserve">
     <value>Retrato</value>
@@ -220,10 +224,10 @@
     <value>Propiedades</value>
   </data>
   <data name="ReportParameterEditor_ValidateParameter_Warning" xml:space="preserve">
-    <value>Especifique un nombre para el parámetro Report!</value>
+    <value>Por favor, especifique un nombre para el parámetro de informe!</value>
   </data>
   <data name="StyleRuleEditor_ValidateStyleRule_Warning" xml:space="preserve">
-    <value>Proporcione un selector de estilo para la regla de estilo.</value>
+    <value>Por favor, proporcione un selector de estilo para la regla de estilo.</value>
   </data>
   <data name="ExpressionBuilder_Text" xml:space="preserve">
     <value>Editar expresión</value>
@@ -232,12 +236,12 @@
     <value>&amp;Nuevo</value>
   </data>
   <data name="PropertyList_Button_Delete" xml:space="preserve">
-    <value>&amp;Eliminar</value>
+    <value>&amp;tachar</value>
   </data>
   <data name="PropertyList_Button_MoveUp" xml:space="preserve">
     <value>Subir</value>
   </data>
   <data name="PropertyList_Button_MoveDown" xml:space="preserve">
-    <value>Mover hacia Abajo</value>
+    <value>Bajar</value>
   </data>
 </root>

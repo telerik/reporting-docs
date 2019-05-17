@@ -118,46 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AlignTextBottomText" xml:space="preserve">
-    <value>Aligner le texte en bas</value>
+    <value>Aligner le fond du texte</value>
   </data>
   <data name="AlignTextBottomDescription" xml:space="preserve">
-    <value>Alignez le texte vers le bas.</value>
+    <value>Alignez le texte en bas.</value>
   </data>
   <data name="AlignTextCenterText" xml:space="preserve">
     <value>Centre</value>
   </data>
   <data name="AlignTextCenterDescription" xml:space="preserve">
-    <value>Le texte central.</value>
+    <value>Centrer le texte.</value>
   </data>
   <data name="AlignTextLeftText" xml:space="preserve">
     <value>Aligner le texte à gauche</value>
   </data>
   <data name="AlignTextLeftDescription" xml:space="preserve">
-    <value>Aligner le texte vers la gauche.</value>
+    <value>Alignez le texte vers la gauche.</value>
   </data>
   <data name="AlignTextMiddleText" xml:space="preserve">
     <value>Aligner le texte au milieu</value>
   </data>
   <data name="AlignTextMiddleDescription" xml:space="preserve">
-    <value>Aligner le texte au milieu.</value>
+    <value>Alignez le texte au milieu.</value>
   </data>
   <data name="AlignTextRightText" xml:space="preserve">
     <value>Aligner le texte à droite</value>
   </data>
   <data name="AlignTextRightDescription" xml:space="preserve">
-    <value>Aligner le texte vers la droite.</value>
+    <value>Alignez le texte vers la droite.</value>
   </data>
   <data name="AlignTextTopText" xml:space="preserve">
-    <value>Aligner le texte en haut</value>
+    <value>Aligner le haut du texte</value>
   </data>
   <data name="AlignTextTopDescription" xml:space="preserve">
-    <value>Aligner le texte vers le haut.</value>
+    <value>Alignez le texte en haut.</value>
   </data>
   <data name="FormatBoldText" xml:space="preserve">
     <value>Gras</value>
   </data>
   <data name="FormatBoldDescription" xml:space="preserve">
-    <value>Rendre la sélection audacieuse. (Ctrl B)</value>
+    <value>Faites la sélection en gras. (CTRL + B)</value>
   </data>
   <data name="ClipboardCopy" xml:space="preserve">
     <value>Copier</value>
@@ -169,7 +169,7 @@
     <value>Italique</value>
   </data>
   <data name="FormatItalicDescription" xml:space="preserve">
-    <value>Faites la sélection en italique. (Ctrl i)</value>
+    <value>Faites la sélection en italique. (CTRL + I)</value>
   </data>
   <data name="ClipboardPaste" xml:space="preserve">
     <value>Coller</value>
@@ -178,19 +178,19 @@
     <value>Barré</value>
   </data>
   <data name="FormatStrikethroughDescription" xml:space="preserve">
-    <value>Tracer la ligne au milieu du texte.</value>
+    <value>Tracez la ligne à travers le milieu du texte.</value>
   </data>
   <data name="FormatUnderlineText" xml:space="preserve">
     <value>Souligner</value>
   </data>
   <data name="FormatUnderlineDescription" xml:space="preserve">
-    <value>Soulignez la sélection. (Ctrl U)</value>
+    <value>Soulignez la sélection. (CTRL + U)</value>
   </data>
   <data name="AlignBottomText" xml:space="preserve">
-    <value>Aligner le fond</value>
+    <value>Aligner le bas</value>
   </data>
   <data name="AlignBottomDescription" xml:space="preserve">
-    <value>Aligner les éléments sélectionnés vers le bas.</value>
+    <value>Alignez les éléments sélectionnés vers le bas.</value>
   </data>
   <data name="AlignCenterText" xml:space="preserve">
     <value>Aligner au centre</value>
@@ -205,103 +205,104 @@
     <value>Alignez les éléments sélectionnés vers la gauche.</value>
   </data>
   <data name="AlignMiddleDescription" xml:space="preserve">
-    <value>Aligner les éléments sélectionnés sur le centre horizonal.</value>
+    <value>Alignez les éléments sélectionnés sur le centre horizontal.</value>
   </data>
   <data name="AlignRightText" xml:space="preserve">
     <value>Aligner à droite</value>
   </data>
   <data name="AlignRightDescription" xml:space="preserve">
-    <value>Aligner les éléments sélectionnés vers la droite.</value>
+    <value>Alignez les éléments sélectionnés vers la droite.</value>
   </data>
   <data name="AlignToGridText" xml:space="preserve">
     <value>Aligner sur la grille</value>
   </data>
   <data name="AlignToGridDescription" xml:space="preserve">
-    <value>Aligner les éléments sélectionnés sur la grille.</value>
+    <value>Alignez les éléments sélectionnés sur la grille.</value>
   </data>
   <data name="AlignTopText" xml:space="preserve">
     <value>Aligner le haut</value>
   </data>
   <data name="AlignTopDescription" xml:space="preserve">
-    <value>Aligner les éléments sélectionnés vers le haut.</value>
+    <value>Alignez les éléments sélectionnés vers le haut.</value>
   </data>
   <data name="BringToFrontText" xml:space="preserve">
-    <value>Apporter à l'avant</value>
+    <value>Apportez à l’avant</value>
   </data>
-  <data name="BringToFrontDescription" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BringToFrontDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="CenterHorizontallyText" xml:space="preserve">
     <value>Centrer horizontalement</value>
   </data>
   <data name="CenterHorizontallyDescription" xml:space="preserve">
-    <value>Centrez les éléments sélectionnés horizontalement.</value>
+    <value>Centrer les éléments sélectionnés horizontalement.</value>
   </data>
   <data name="CenterVerticallyText" xml:space="preserve">
     <value>Centrer verticalement</value>
   </data>
   <data name="CenterVerticallyDescription" xml:space="preserve">
-    <value>Centrez les éléments sélectionnés verticalement.</value>
+    <value>Centrer les éléments sélectionnés verticalement.</value>
   </data>
   <data name="HorizSpaceConcatenateText" xml:space="preserve">
-    <value>Supprimer l'espacement horizontal.</value>
+    <value>Supprimer l’espacement horizontal.</value>
   </data>
-  <data name="HorizSpaceConcatenateDescription" xml:space="preserve">
+  <data name="HorizSpaceConcatenateDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="HorizSpaceDecreaseText" xml:space="preserve">
-    <value>Diminuer l'espacement horizontal.</value>
+    <value>Diminuez l’espacement horizontal.</value>
   </data>
-  <data name="HorizSpaceDecreaseDescription" xml:space="preserve">
+  <data name="HorizSpaceDecreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="HorizSpaceIncreaseText" xml:space="preserve">
-    <value>Augmenter l'espacement horizontal.</value>
+    <value>Augmentez l’espacement horizontal.</value>
   </data>
-  <data name="HorizSpaceIncreaseDescription" xml:space="preserve">
+  <data name="HorizSpaceIncreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="HorizSpaceMakeEqualText" xml:space="preserve">
-    <value>Faire un espacement horizontal égal.</value>
+    <value>Rendre l’espacement horizontal égal.</value>
   </data>
-  <data name="HorizSpaceMakeEqualDescription" xml:space="preserve">
+  <data name="HorizSpaceMakeEqualDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="SendToBackText" xml:space="preserve">
-    <value>Envoyer à dos</value>
+    <value>Envoyer à l’arrière</value>
   </data>
-  <data name="SendToBackDescription" xml:space="preserve">
+  <data name="SendToBackDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="VertSpaceConcatenateText" xml:space="preserve">
-    <value>Supprimer l'espacement vertical.</value>
+    <value>Supprimer l’espacement vertical.</value>
   </data>
-  <data name="VertSpaceConcatenateDescription" xml:space="preserve">
+  <data name="VertSpaceConcatenateDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="VertSpaceDecreaseText" xml:space="preserve">
-    <value>Diminuer l'espacement vertical.</value>
+    <value>Diminuez l’espacement vertical.</value>
   </data>
-  <data name="VertSpaceDecreaseDescription" xml:space="preserve">
+  <data name="VertSpaceDecreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="VertSpaceIncreaseText" xml:space="preserve">
-    <value>Augmentez l'espacement vertical.</value>
+    <value>Augmentez l’espacement vertical.</value>
   </data>
-  <data name="VertSpaceIncreaseDescription" xml:space="preserve">
+  <data name="VertSpaceIncreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="VertSpaceMakeEqualText" xml:space="preserve">
-    <value>Faire l'espacement vertical égal.</value>
+    <value>Rendre l’espacement vertical égal.</value>
   </data>
-  <data name="VertSpaceMakeEqualDescription" xml:space="preserve">
+  <data name="VertSpaceMakeEqualDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="AlignMiddleText" xml:space="preserve">
     <value>Aligner le milieu</value>
   </data>
   <data name="BorderText" xml:space="preserve">
-    <value>Bordure</value>
+    <value>Bord</value>
   </data>
   <data name="ClipboardText" xml:space="preserve">
     <value>Presse-papiers</value>
@@ -328,13 +329,13 @@
     <value>Largeur de la bordure</value>
   </data>
   <data name="BorderWidthDescription" xml:space="preserve">
-    <value>Changez la largeur de la bordure.</value>
+    <value>Modifiez la largeur de la bordure.</value>
   </data>
   <data name="FormatBackgroundColorText" xml:space="preserve">
     <value>Couleur de fond</value>
   </data>
   <data name="FormatBackgroundColorDescription" xml:space="preserve">
-    <value>Modifier la couleur d'arrière-plan des éléments sélectionnés.</value>
+    <value>Modifiez la couleur d’arrière-plan des éléments sélectionnés.</value>
   </data>
   <data name="BorderSideAll" xml:space="preserve">
     <value>Tous</value>
@@ -376,7 +377,7 @@
     <value>Ridge</value>
   </data>
   <data name="BorderStyleSolid" xml:space="preserve">
-    <value>Solide</value>
+    <value>solide</value>
   </data>
   <data name="BorderStyleText" xml:space="preserve">
     <value>Style de bordure</value>
@@ -388,13 +389,13 @@
     <value>Modifiez la police de texte sélectionnée.</value>
   </data>
   <data name="FormatFontSizeText" xml:space="preserve">
-    <value>Taille de police</value>
+    <value>Taille de la police</value>
   </data>
   <data name="FormatFontSizeDescription" xml:space="preserve">
     <value>Modifiez la taille de police de texte sélectionnée.</value>
   </data>
   <data name="FormatForegroundColorDescription" xml:space="preserve">
-    <value>Changez la couleur du texte sélectionné.</value>
+    <value>Changez la couleur de texte sélectionnée.</value>
   </data>
   <data name="FormatForegroundColorText" xml:space="preserve">
     <value>Couleur de police</value>
@@ -435,25 +436,25 @@
   <data name="BorderColorText" xml:space="preserve">
     <value>Couleur de la bordure</value>
   </data>
-  <data name="LayoutSizeHeightDescription" xml:space="preserve">
+  <data name="LayoutSizeHeightDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="LayoutSizeHeightText" xml:space="preserve">
     <value>Faire la même hauteur</value>
   </data>
-  <data name="LayoutSizeToControlDescription" xml:space="preserve">
+  <data name="LayoutSizeToControlDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="LayoutSizeToControlText" xml:space="preserve">
     <value>Faire la même taille</value>
   </data>
-  <data name="LayoutSizeToGridDescription" xml:space="preserve">
+  <data name="LayoutSizeToGridDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="LayoutSizeToGridText" xml:space="preserve">
     <value>Taille à la grille</value>
   </data>
-  <data name="LayoutSizeWidthDescription" xml:space="preserve">
+  <data name="LayoutSizeWidthDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="LayoutSizeWidthText" xml:space="preserve">
@@ -487,37 +488,37 @@
     <value>Justifier le texte.</value>
   </data>
   <data name="ClipboardCopyDescription" xml:space="preserve">
-    <value>Ctrl C</value>
+    <value>CTRL + C</value>
   </data>
   <data name="ClipboardCutDescription" xml:space="preserve">
-    <value>Ctrl X</value>
+    <value>CTRL + X</value>
   </data>
   <data name="ClipboardPasteDescription" xml:space="preserve">
-    <value>Ctrl V</value>
+    <value>CTRL + V</value>
   </data>
   <data name="Options_DataConnectionsGroup_Title" xml:space="preserve">
     <value>Connexions de données</value>
   </data>
   <data name="DataConnectionsOptionsModel_AddOrEditConnectionInfo_Error" xml:space="preserve">
-    <value>Problème lors de la création de dialogue connexions de données.</value>
+    <value>Problème lors de la création de connexions de données dialogue.</value>
   </data>
   <data name="DataConnectionsOptionsModel_RemoveDataConnectionItem_ConfirmRemove" xml:space="preserve">
-    <value>Êtes-vous sûr de vouloir supprimer la connexion de données sélectionnée "{0}"?</value>
+    <value>Êtes-vous sûr de vouloir supprimer la connexion de données sélectionnée «{0}»?</value>
   </data>
   <data name="Options_GeneralGroup_Title" xml:space="preserve">
     <value>Général</value>
   </data>
   <data name="Options_SelectFolderCommand_Description" xml:space="preserve">
-    <value>Sélectionner un nouveau répertoire d'éléments par défaut</value>
+    <value>Sélectionner le répertoire de nouvel élément par défaut</value>
   </data>
   <data name="PropertyBrowserToolWindow_Title" xml:space="preserve">
     <value>Propriétés</value>
   </data>
-  <data name="PropertyBrowser_Font_Name" xml:space="preserve">
-    <value>Segoe UI</value>
+  <data name="PropertyBrowser_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="PropertyBrowser_Reset" xml:space="preserve">
-    <value>Réinitialiser</value>
+    <value>réinitialiser</value>
   </data>
   <data name="TabData" xml:space="preserve">
     <value>Données</value>
@@ -529,10 +530,10 @@
     <value>Répertoire de travail par défaut:</value>
   </data>
   <data name="Options_DirectoryDoNotExist_Warning" xml:space="preserve">
-    <value>Le répertoire spécifié n'existe pas. \ r \ n voulez-vous le créer maintenant?</value>
+    <value>Le répertoire spécifié n’existe pas. \ r \ n voulez-vous le créer maintenant?</value>
   </data>
   <data name="Options_RestartRequired_Warning" xml:space="preserve">
-    <value>Le redémarrage de l'application est nécessaire pour appliquer ces modifications. Avant de redémarrer, enregistrez les rapports ouverts. Redémarrer l'application maintenant?</value>
+    <value>Le redémarrage de l’application est nécessaire pour appliquer ces modifications. Avant de redémarrer, enregistrez les rapports ouverts. Redémarrer l’application maintenant?</value>
   </data>
   <data name="Option_AllowMultipleInstances" xml:space="preserve">
     <value>Autoriser plusieurs instances</value>
@@ -541,9 +542,9 @@
     <value>Créer une connexion</value>
   </data>
   <data name="Option_Language" xml:space="preserve">
-    <value>Langue:</value>
+    <value>langage:</value>
   </data>
   <data name="Option_PreserverOpenWindows" xml:space="preserve">
-    <value>Conserver les fenêtres ouvertes à la sortie:</value>
+    <value>Conserver les fenêtres ouvertes sur la sortie:</value>
   </data>
 </root>

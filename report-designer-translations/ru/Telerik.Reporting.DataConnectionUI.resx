@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AccessConnectionUIControl_BrowseFileDefaultExt" xml:space="preserve">
-    <value>MDB</value>
+    <value>Mdb</value>
   </data>
   <data name="AccessConnectionUIControl_BrowseFileFilter" xml:space="preserve">
-    <value>Базы данных Microsoft Access (*. mdb; *. accdb) | *. mdb; *. accdb | Все файлы (*. *) | *. *</value>
+    <value>Базы данных Microsoft Access (*. МДБ; *. accdb) | *. МДБ; *. accdb | Все файлы (*. *) | *. *</value>
   </data>
   <data name="AccessConnectionUIControl_BrowseFileTitle" xml:space="preserve">
     <value>Выберите файл базы данных Microsoft Access</value>
   </data>
   <data name="AccessConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Объект свойств подключения должен иметь тип свойства соединения OLE DBAccess.</value>
+    <value>Объект свойств соединения должен быть типа OLE DBAccess свойства соединения.</value>
   </data>
   <data name="AdoDotNetConnectionProperties_NoProperties" xml:space="preserve">
-    <value>Свойства соединения не заданы.</value>
+    <value>Свойства соединения не установлены.</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Add" xml:space="preserve">
     <value>&amp;Добавить...</value>
@@ -139,25 +139,25 @@
     <value>&amp;Описание</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Remove" xml:space="preserve">
-    <value>Ремо</value>
+    <value>Ремо и ве</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Reset" xml:space="preserve">
     <value>&amp;Сброс</value>
   </data>
   <data name="DataConnectionDialog_CannotChangeSingleDataProvider" xml:space="preserve">
-    <value>Выбранный поставщик данных не может быть изменен, если доступен только один поставщик данных.</value>
+    <value>Выбранный поставщик данных не может быть изменен при наличии только одного поставщика данных.</value>
   </data>
   <data name="DataConnectionDialog_CannotChangeSingleDataSource" xml:space="preserve">
-    <value>Выбранный источник данных не может быть изменен при наличии только одного источника данных.</value>
+    <value>Выбранный источник данных не может быть изменен, когда имеется только один источник данных.</value>
   </data>
   <data name="DataConnectionDialog_ChangeDataSourceTitle" xml:space="preserve">
     <value>Изменение источника данных</value>
   </data>
   <data name="DataConnectionDialog_ShowDialogNotSupported" xml:space="preserve">
-    <value>Для отображения диалогового окна "подключение данных" нельзя использовать метод "форма. Show" ().  Используйте диалоговое окно подключения к данным. Show () вместо этого.</value>
+    <value>Вы не можете использовать форму. Показать диалог () метод, чтобы показать диалог данных связи.  Используйте диалоговое окно связи данных. Show () вместо.</value>
   </data>
   <data name="DataConnectionDialog_CannotModifyState" xml:space="preserve">
-    <value>Состояние диалогового окна подключения данных не может быть изменено программным способом при отображении диалогового окна.</value>
+    <value>Состояние диалогового соединения данных не может быть программно модифицированным при видимом диалоге.</value>
   </data>
   <data name="DataConnectionDialog_DataSourceNoAssociation" xml:space="preserve">
     <value>Выбранный источник данных не имеет связи с этим поставщиком данных.</value>
@@ -166,92 +166,92 @@
     <value>Источник данных не найден.</value>
   </data>
   <data name="DataConnectionDialog_DataSourceWithShortProvider" xml:space="preserve">
-    <value>{0} ({1})</value>
+    <value>{0} ({0})</value>
   </data>
   <data name="DataConnectionDialog_NoDataProviderSelected" xml:space="preserve">
-    <value>Поставщик данных в данный момент не выбран.</value>
+    <value>В настоящее время не выбран поставщик данных.</value>
   </data>
   <data name="DataConnectionDialog_NoDataProvidersForDataSource" xml:space="preserve">
-    <value>Источник данных "{0}" не имеет связи ни с какими поставщиками данных.</value>
+    <value>Источник данных ' {0} ' не имеет связи ни с какими поставщиками данных.</value>
   </data>
   <data name="DataConnectionDialog_NoDataSourceSelected" xml:space="preserve">
-    <value>Источник данных в данный момент не выбран.</value>
+    <value>В настоящее время не выбран источник данных.</value>
   </data>
   <data name="DataConnectionDialog_NoDataSourcesAvailable" xml:space="preserve">
-    <value>Источники данных недоступны.</value>
+    <value>Источники данных отсутствуют.</value>
   </data>
   <data name="DataConnectionDialog_NoHelpAvailable" xml:space="preserve">
-    <value>В этом контексте Справка недоступна.</value>
+    <value>В этом контексте не имеется никакой помощи.</value>
   </data>
   <data name="DataConnectionDialog_TestConnectionSucceeded" xml:space="preserve">
-    <value>Тестовое подключение выполнено успешно.</value>
+    <value>Тестового подключения удалось.</value>
   </data>
   <data name="DataConnectionDialog_TestResults" xml:space="preserve">
     <value>Результаты тестирования</value>
   </data>
   <data name="DataProvider_Odbc" xml:space="preserve">
-    <value>пОставщик данных .NET Framework для ODBC</value>
+    <value>Рамочный провайдер данных .NET для ODBC</value>
   </data>
   <data name="DataProvider_Odbc_DataSource_Description" xml:space="preserve">
-    <value>Используйте этот выбор, чтобы указать имя пользователя ODBC или системного источника данных для подключения к драйверу ODBC через поставщик данных .NET Framework для ODBC.</value>
+    <value>Используйте этот выбор для указания имени пользователя или системного источника данных ODBC для подключения к водителю ODBC с помощью рамочного поставщика данных .NET для ODBC.</value>
   </data>
   <data name="DataProvider_Odbc_Description" xml:space="preserve">
     <value>Используйте этот поставщик данных для подключения к источникам данных ODBC.</value>
   </data>
   <data name="DataProvider_Odbc_Short" xml:space="preserve">
-    <value>ODBC</value>
+    <value>Odbc</value>
   </data>
   <data name="DataProvider_OleDB" xml:space="preserve">
-    <value>пОставщик данных .NET Framework для OLE DB</value>
+    <value>Поставщик данных в рамках .NET для OLE DB</value>
   </data>
   <data name="DataProvider_OleDB_AccessDataSource_Description" xml:space="preserve">
-    <value>Используйте этот выбор для подключения к файлу базы данных Microsoft Access через поставщика данных .NET Framework для OLE DB.</value>
+    <value>Используйте этот выбор для подключения к файлу базы данных Microsoft Access через поставщика данных в рамках .NET для OLE DB.</value>
   </data>
   <data name="DataProvider_OleDB_Description" xml:space="preserve">
     <value>Используйте этот поставщик данных для подключения к источникам данных OLE DB.</value>
   </data>
   <data name="DataProvider_OleDB_OracleDataSource_Description" xml:space="preserve">
-    <value>Используйте этот выбор для подключения к Oracle 7,3, 8i, 9i или г с помощью собственного поставщика MSDAORA через поставщика данных .NET Framework для OLE DB.</value>
+    <value>Используйте этот выбор для подключения к Oracle 7,3, 8i, 9i или 10G с использованием родного провайдера MSDAORA через провайдера .NET в рамках поставщика данных для OLE DB.</value>
   </data>
   <data name="DataProvider_OleDB_Short" xml:space="preserve">
-    <value>OLE DB</value>
+    <value>ОЛЕ ДБ</value>
   </data>
   <data name="DataProvider_OleDB_SqlDataSource_Description" xml:space="preserve">
-    <value>Используйте этот выбор для подключения к Microsoft SQL Server 2000 или выше с помощью поставщика данных .NET Framework для OLEDB.</value>
+    <value>Используйте этот выбор для подключения к Microsoft SQL Server 2000 или выше с помощью поставщика данных в рамках программы .NET для компании ОЛЕБР.</value>
   </data>
   <data name="DataProvider_Oracle" xml:space="preserve">
-    <value>пОставщик данных .NET Framework для Oracle</value>
+    <value>Провайдер рамочного данных .NET для Oracle</value>
   </data>
   <data name="DataProvider_Oracle_DataSource_Description" xml:space="preserve">
-    <value>Используйте этот выбор для подключения к Oracle 7,3, 8i, 9i или г. с помощью поставщика данных .NET Framework для Oracle.
+    <value>Используйте этот выбор для подключения к Oracle 7,3, 8i, 9i или 10G с использованием рамочного поставщика данных .NET для Oracle.
 
-Использование поставщика данных .NET Framework для Oracle не рекомендуется, поскольку он устарел.</value>
+Использование рамочного поставщика данных .NET для Oracle не рекомендуется, поскольку оно устарето.</value>
   </data>
   <data name="DataProvider_Oracle_Description" xml:space="preserve">
-    <value>Используйте этот поставщик данных для подключения к Oracle 7,3, 8i, 9i или г.
+    <value>Используйте этот поставщик данных для подключения к Oracle 7,3, 8i, 9i или 10G.
 
-Использование поставщика данных .NET Framework для Oracle не рекомендуется, поскольку он устарел.</value>
+Использование рамочного поставщика данных .NET для Oracle не рекомендуется, поскольку оно устарето.</value>
   </data>
   <data name="DataProvider_Oracle_Short" xml:space="preserve">
     <value>Клиент Oracle</value>
   </data>
   <data name="DataProvider_Sql" xml:space="preserve">
-    <value>пОставщик данных .NET Framework для SQL Server</value>
+    <value>Провайдер рамочного данных .NET для SQL Server</value>
   </data>
   <data name="DataProvider_Sql_DataSource_Description" xml:space="preserve">
-    <value>Используйте этот выбор для подключения к Microsoft SQL Server 2005 или выше с помощью поставщика данных .NET Framework для SQL Server.</value>
+    <value>Воспользуйтесь этой подборкой для подключения к Microsoft SQL Server 2005 или выше с помощью поставщика рамочных данных .NET для SQL Server.</value>
   </data>
   <data name="DataProvider_Sql_Description" xml:space="preserve">
     <value>Используйте этот поставщик данных для подключения к Microsoft SQL Server 2005 или выше.</value>
   </data>
   <data name="DataProvider_Sql_FileDataSource_Description" xml:space="preserve">
-    <value>Используйте этот выбор, чтобы вложить файл базы данных в локальный экземпляр Microsoft SQL Server (включая Microsoft SQL Express) с помощью поставщика данных .NET Framework для SQL Server.</value>
+    <value>Используйте этот выбор для прикрепления файла базы данных к локальную Microsoft SQL Server (в том числе Microsoft SQL Express) с использованием рамочного поставщика данных .NET для SQL Server.</value>
   </data>
   <data name="DataProvider_Sql_Short" xml:space="preserve">
     <value>Клиент SQL</value>
   </data>
   <data name="DataSource_CannotChangeSingleDataProvider" xml:space="preserve">
-    <value>Поставщик данных по умолчанию не может быть изменен, если доступен только один поставщик данных.</value>
+    <value>Поставщик данных по умолчанию не может быть изменен при наличии только одного поставщика данных.</value>
   </data>
   <data name="DataSource_DataProviderNotFound" xml:space="preserve">
     <value>Поставщик данных не найден.</value>
@@ -275,72 +275,72 @@
     <value>&lt;осер&gt;</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLAllocEnvFailed" xml:space="preserve">
-    <value>Не удалось выделить дескриптор среды ODBC.</value>
+    <value>Не удалось выделить ручку среды ODBC.</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLAllocConnectFailed" xml:space="preserve">
-    <value>Не удалось выделить дескриптор подключения ODBC.</value>
+    <value>Не удалось выделить ручку соединения ODBC.</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLDriverConnectFailed" xml:space="preserve">
-    <value>Не удалось вызвать утилиту подключения драйвера ODBC.</value>
+    <value>Не удалось вызвать утилиты подключения драйвера ODBC.</value>
   </data>
   <data name="OdbcConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Объект свойств подключения должен иметь тип свойства подключения ODBC.</value>
+    <value>Объект свойств соединения должен быть типа ODBC соединения свойств.</value>
   </data>
   <data name="OleDBAccessConnectionProperties_MustSpecifyDataSource" xml:space="preserve">
-    <value>Это подключение не может быть протестировано, так как файл базы данных не указан.</value>
+    <value>Это соединение не может быть протестировано, так как файл базы данных не указан.</value>
   </data>
   <data name="OleDBConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Объект свойства подключения должен иметь тип OLE DBConnection свойства.</value>
+    <value>Объект свойств соединения должен быть типа OLE DBConnection свойства.</value>
   </data>
   <data name="OracleConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Объект свойств подключения должен иметь тип свойства подключения Oracle или свойства подключения OLE дборакле.</value>
+    <value>Объект свойств соединения должен быть типа свойства Oracle подключения или OLE DBOracle подключение свойства.</value>
   </data>
   <data name="SqlConnectionProperties_MustSpecifyDataSource" xml:space="preserve">
-    <value>Это подключение не может быть протестировано, так как не указано имя сервера.</value>
+    <value>Это соединение не может быть проверено, потому что не было указано имя сервера.</value>
   </data>
   <data name="SqlConnectionProperties_UnsupportedSqlVersion" xml:space="preserve">
-    <value>Эта версия сервера не поддерживается.  Необходимо иметь Microsoft SQL Server 2005 или более поздней версии.</value>
+    <value>Эта версия сервера не поддерживается.  Вы должны иметь Microsoft SQL Server 2005 или позже.</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileDefaultExt" xml:space="preserve">
-    <value>МДФ</value>
+    <value>Мдф</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileFilter" xml:space="preserve">
-    <value>Базы данных Microsoft SQL Server (*. mdf) | *. mdf | Все файлы (*. *) | *. *</value>
+    <value>Базы данных Microsoft SQL Server (*. МДФ) | *. МДФ | Все файлы (*. *) | *. *</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileTitle" xml:space="preserve">
     <value>Выберите файл базы данных SQL Server</value>
   </data>
   <data name="SqlConnectionProperties_CannotTestNonExistentDatabase" xml:space="preserve">
-    <value>Это подключение не может быть протестировано, поскольку указанная база данных не существует или не видна указанному пользователю.</value>
+    <value>Это соединение не может быть проверено, потому что указанной базы данных не существует или не видна указанному пользователю.</value>
   </data>
   <data name="SqlConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Объект свойств подключения должен иметь тип свойства соединения SQL или свойства соединения OLE дбскл.</value>
+    <value>Объект свойств соединения должен быть типа SQL соединения свойства или OLE DBSql соединения свойства.</value>
   </data>
   <data name="SqlFileConnectionProperties_CannotTestNonExistentMdf" xml:space="preserve">
-    <value>Это подключение не может быть протестировано, так как указанный файл базы данных не существует.</value>
+    <value>Эта связь не может быть проверена, поскольку указанный файл базы данных не существует.</value>
   </data>
   <data name="SqlFileConnectionProperties_NoFileSpecified" xml:space="preserve">
     <value>Файл базы данных не указан.</value>
   </data>
   <data name="SqlFileConnectionProperties_TimeoutReasons" xml:space="preserve">
-    <value>Распространенные причины этой проблемы включают, что сервер не установлен, служба не запущена или сервер обновляет базу данных.  Если обновление выполняется, вы сможете подключиться к базе данных по завершении обновления.</value>
+    <value>Общие причины этой проблемы включают в себя то, что сервер не установлен, служба не запущена или сервер модернизирует базу данных.  Если обновление в процессе, вы сможете подключиться к базе данных, когда обновление завершено.</value>
   </data>
   <data name="SqlFileConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Объект свойств подключения должен иметь тип свойства подключения к файлам SQL.</value>
+    <value>Объект свойств соединения должен быть типа SQL-файла свойства соединения.</value>
   </data>
   <data name="DataProvider_EntityFramework" xml:space="preserve">
-    <value>пОставщик данных .NET Framework для Entity Framework</value>
+    <value>Рамочный провайдер данных .NET для инфраструктуры сущностей</value>
   </data>
   <data name="DataProvider_EntityFramework_DataSource_Description" xml:space="preserve">
-    <value>Используйте этот поставщик для преобразования запросов к модели данных в каноническое дерево команд. Затем дерево команд может быть потреблено поставщиком данных .NET Framework для Entity Framework.</value>
+    <value>Используйте этот поставщик для преобразования запросов в отношении модели данных в каноническое дерево команд. После этого дерево командования может быть поглощена рамочного поставщика данных .NET для фреймворка сущностей.</value>
   </data>
   <data name="DataProvider_EntityFramework_Description" xml:space="preserve">
-    <value>Используйте этот поставщик данных для подключения к источникам данных Entity Framework.</value>
+    <value>Используйте этот поставщик данных для подключения к источникам данных фреймворк сущностей.</value>
   </data>
   <data name="DataProvider_EntityFramework_Short" xml:space="preserve">
-    <value>Entity Framework</value>
+    <value>Фреймворк сущностей</value>
   </data>
   <data name="DataSource_EntityFramework" xml:space="preserve">
-    <value>Entity Framework</value>
+    <value>Фреймворк сущностей</value>
   </data>
 </root>

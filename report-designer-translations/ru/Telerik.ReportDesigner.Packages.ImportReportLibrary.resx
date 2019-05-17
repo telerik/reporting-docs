@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="WarnCancelImportInProgress" xml:space="preserve">
-    <value>"выполняется импорт. \ r \ n вы действительно хотите отменить операцию?"</value>
+    <value>"Импорт в прогрессе. \ r \ n вы уверены, что хотите отменить операцию?"</value>
   </data>
   <data name="Log_Error" xml:space="preserve">
     <value>Ошибка</value>
@@ -136,21 +136,21 @@
     <value>Ошибка</value>
   </data>
   <data name="FilePage_SaveDialogFilter" xml:space="preserve">
-    <value>Telerik файлы отчетов (* {0}) | * {0} | Все файлы (*. *) | *. *</value>
+    <value>Файлы отчета телэрика (* {0}) | * {0} | Все файлы (*. *) | *. *</value>
   </data>
   <data name="FilePage_CellValidating_AlreadyExist" xml:space="preserve">
-    <value>Указанный файл уже существует и предназначен только для чтения.
+    <value>Указанный файл уже существует и используется только для чтения.
 Пожалуйста, выберите другое имя файла.</value>
   </data>
   <data name="FilePage_CellValidating_Replace" xml:space="preserve">
-    <value>{0} уже существует.
-Заменить его?</value>
+    <value>уже существует {0}.
+Вы хотите, чтобы заменить его?</value>
   </data>
   <data name="ImportReportWizard_Caption" xml:space="preserve">
-    <value>Мастер импорта отчетов</value>
+    <value>Мастер отчета о импорте</value>
   </data>
   <data name="NetReportLibraryOpenHandler_Filter" xml:space="preserve">
-    <value>БИблиотека отчетов .NET (* {0}) | * {0}</value>
+    <value>Библиотека отчетов .NET (* {0}) | * {0}</value>
   </data>
   <data name="ProjectPage_NoReportsAvailable" xml:space="preserve">
     <value>Нет доступных отчетов</value>
@@ -162,7 +162,7 @@
     <value>Нет доступных отчетов</value>
   </data>
   <data name="ReportTreeView_EmptyNamespace" xml:space="preserve">
-    <value>[пустое пространство имен]</value>
+    <value>[Пустое пространство имен]</value>
   </data>
   <data name="ReportTreeView_Node_Uses" xml:space="preserve">
     <value>Использует</value>
@@ -174,10 +174,10 @@
     <value>Имя файла не может быть пустым</value>
   </data>
   <data name="ValidateOutputFileForReport_ErrorAlreadyExist" xml:space="preserve">
-    <value>Имя файла уже существует в списке ожидающих отчетов.</value>
+    <value>Имя файла уже существует в списке ожидающих отчета.</value>
   </data>
   <data name="Log_FileName" xml:space="preserve">
-    <value>Импорт репорт_ {0: ииии'-'мм'-'дд'т'ххммсс}. log</value>
+    <value>Импорт Репорт_ {0: Шиа-'MM'-'Dd'trhmspa}. log</value>
   </data>
   <data name="Log_Warning_CancelExport" xml:space="preserve">
     <value>Импорт отменен пользователем</value>
@@ -186,16 +186,16 @@
     <value>Импорт приостановлен</value>
   </data>
   <data name="Log_Info_Resumed" xml:space="preserve">
-    <value>Импорт возобновился</value>
+    <value>Импорт возобновлен</value>
   </data>
   <data name="Log_Info_Started" xml:space="preserve">
-    <value>Импорт начался</value>
+    <value>Импорт начат</value>
   </data>
   <data name="Log_Info_Completed" xml:space="preserve">
     <value>Импорт завершен</value>
   </data>
   <data name="Log_Error_Failed" xml:space="preserve">
-    <value>Сбой при импорте</value>
+    <value>Импорт не удался</value>
   </data>
   <data name="Log_Info_Completed_Report" xml:space="preserve">
     <value>Отчет: {0}</value>

@@ -117,31 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PreviewTab_FindDescription" xml:space="preserve">
-    <value>
-Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos de búsqueda no están preparados, invoca refrescar informe para reunir los metadatos de búsqueda.
-     </value>
-  </data>
-  <data name="PreviewTab_FindText" xml:space="preserve">
-    <value>Buscar</value>
-  </data>
-  <data name="Insert_WebServiceDataSource_Description" xml:space="preserve">
-    <value>El origen de datos del servicio web permite que los elementos de datos recuperen datos de servicios Web predefinidos.</value>
-  </data>
-  <data name="Insert_WebServiceDataSource_Text" xml:space="preserve">
-    <value>Origen de datos del servicio Web</value>
-  </data>
-  <data name="ReportBookTab_Toc_Delete_Text" xml:space="preserve">
-    <value>Eliminar</value>
-  </data>
-  <data name="ReportBookTab_Toc_Delete_Description" xml:space="preserve">
-    <value>Löschen Sie den Bericht, der als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
-  </data>
   <data name="PreviewTab_Back" xml:space="preserve">
     <value>Atrás</value>
   </data>
   <data name="PreviewTab_DocumentMap" xml:space="preserve">
-    <value>Mapa de documentos</value>
+    <value>Mapa del documento</value>
   </data>
   <data name="PreviewTab_Export" xml:space="preserve">
     <value>Exportar</value>
@@ -156,7 +136,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Historial</value>
   </data>
   <data name="PreviewTab_LastPage" xml:space="preserve">
-    <value>Último</value>
+    <value>Pasado</value>
   </data>
   <data name="PreviewTab_Navigation" xml:space="preserve">
     <value>Navegación</value>
@@ -174,7 +154,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Anterior</value>
   </data>
   <data name="PreviewTab_Print" xml:space="preserve">
-    <value>Print...</value>
+    <value>Impresión...</value>
   </data>
   <data name="PreviewTab_PrintPreview" xml:space="preserve">
     <value>Vista Previa de Impresión</value>
@@ -195,19 +175,19 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Ver</value>
   </data>
   <data name="View_DataExplorer" xml:space="preserve">
-    <value>Explorador de datos</value>
+    <value>El explorador de datos</value>
   </data>
   <data name="PreviewTab_ViewDesign" xml:space="preserve">
     <value>Diseño</value>
   </data>
   <data name="PreviewTab_ViewDesignDescription" xml:space="preserve">
-    <value>Cambiar a la vista Diseño (F6)</value>
+    <value>Cambiar a la vista de diseño (F6)</value>
   </data>
   <data name="View_GroupExplorer" xml:space="preserve">
-    <value>Explorador de grupos</value>
+    <value>El explorador de grupo</value>
   </data>
   <data name="PreviewTab_ViewPreview" xml:space="preserve">
-    <value>Vista Previa</value>
+    <value>Vista previa</value>
   </data>
   <data name="View_ReportExplorer" xml:space="preserve">
     <value>Explorador de informes</value>
@@ -225,7 +205,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Adyacente arriba</value>
   </data>
   <data name="TableTools_Add_AdjacentBelowRowGroup_Text" xml:space="preserve">
-    <value>Adyacentes</value>
+    <value>Adyacente a continuación</value>
   </data>
   <data name="TableTools_Add_AdjacentLeftColumnGroup_Text" xml:space="preserve">
     <value>Adyacente a la izquierda</value>
@@ -234,22 +214,22 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Adyacente a la izquierda</value>
   </data>
   <data name="TableTools_Add_AdjacentRightColumnGroup_Text" xml:space="preserve">
-    <value>Adyacente a la derecha</value>
+    <value>Adyacente derecha</value>
   </data>
   <data name="TableTools_Add_AdjacentRightColumnGroup_Description" xml:space="preserve">
-    <value>Adyacente a la derecha</value>
+    <value>Adyacente derecha</value>
   </data>
   <data name="TableTools_Add_ChildColumnGroup_Text" xml:space="preserve">
-    <value>Grupo secundario</value>
+    <value>Grupo infantil</value>
   </data>
   <data name="TableTools_Add_ChildColumnGroup_Description" xml:space="preserve">
-    <value>Grupo secundario</value>
+    <value>Grupo infantil</value>
   </data>
   <data name="TableTools_Add_ChildRowGroup_Text" xml:space="preserve">
-    <value>Grupo secundario</value>
+    <value>Grupo infantil</value>
   </data>
   <data name="TableTools_Add_ChildRowGroup_Description" xml:space="preserve">
-    <value>Grupo secundario</value>
+    <value>Grupo infantil</value>
   </data>
   <data name="TableTools_Add_ParentColumnGroup_Text" xml:space="preserve">
     <value>Grupo de padres</value>
@@ -270,28 +250,28 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Izquierda</value>
   </data>
   <data name="TableTools_AddTotalFor_ColumnGroupRight_Text" xml:space="preserve">
-    <value>Derecha</value>
+    <value>Derecho</value>
   </data>
   <data name="TableTools_AddTotalFor_ColumnGroupRight_Description" xml:space="preserve">
-    <value>Derecha</value>
+    <value>Derecho</value>
   </data>
   <data name="TableTools_AddTotalFor_RowGroupAbove_Text" xml:space="preserve">
-    <value>Encima</value>
+    <value>encima</value>
   </data>
   <data name="TableTools_AddTotalFor_RowGroupAbove_Description" xml:space="preserve">
-    <value>Encima</value>
+    <value>encima</value>
   </data>
   <data name="TableTools_AddTotalFor_RowGroupBelow_Text" xml:space="preserve">
-    <value>Debajo</value>
+    <value>abajo de</value>
   </data>
   <data name="TableTools_AddTotalFor_RowGroupBelow_Description" xml:space="preserve">
-    <value>Debajo</value>
+    <value>abajo de</value>
   </data>
   <data name="TableTools_ColumnGroup_Properties_Text" xml:space="preserve">
     <value>Grupo de columnas</value>
   </data>
   <data name="TableTools_ColumnGroup_Properties_Description" xml:space="preserve">
-    <value>Propiedades del grupo de columnas</value>
+    <value>Propiedades de grupo de columnas</value>
   </data>
   <data name="TableTools_ColumnGroup_Delete_Text" xml:space="preserve">
     <value>Grupo de columnas</value>
@@ -300,10 +280,10 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Eliminar grupo de columnas</value>
   </data>
   <data name="TableTools_ColumnDelete_Text" xml:space="preserve">
-    <value>Eliminar Columna</value>
+    <value>Eliminar columna</value>
   </data>
   <data name="TableTools_ColumnDelete_Description" xml:space="preserve">
-    <value>Eliminar Columna</value>
+    <value>Eliminar columna</value>
   </data>
   <data name="TableTools_RowGroup_Delete_Text" xml:space="preserve">
     <value>Grupo de filas</value>
@@ -318,13 +298,13 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Eliminar Filas</value>
   </data>
   <data name="TableTools_InsertColumn_InsideGroupLeft_Text" xml:space="preserve">
-    <value>Dentro del grupo-izquierda</value>
+    <value>Grupo interior-izquierda</value>
   </data>
   <data name="TableTools_InsertColumn_InsideGroupLeft_Description" xml:space="preserve">
     <value>Inserte la columna dentro del grupo, a la izquierda de la selección actual.</value>
   </data>
   <data name="TableTools_InsertColumn_InsideGroupRight_Text" xml:space="preserve">
-    <value>Grupo interior-derecha</value>
+    <value>Dentro del grupo-derecha</value>
   </data>
   <data name="TableTools_InsertColumn_InsideGroupRight_Description" xml:space="preserve">
     <value>Inserte la columna dentro del grupo, a la derecha de la selección actual.</value>
@@ -342,25 +322,25 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Inserte la columna fuera del grupo, a la izquierda de la selección actual.</value>
   </data>
   <data name="TableTools_InsertColumn_OutsideGroupRight_Text" xml:space="preserve">
-    <value>Fuera del grupo-derecho</value>
+    <value>Grupo exterior-derecho</value>
   </data>
   <data name="TableTools_InsertColumn_OutsideGroupRight_Description" xml:space="preserve">
     <value>Inserte la columna fuera del grupo, a la derecha de la selección actual.</value>
   </data>
   <data name="TableTools_InsertColumn_Right_Text" xml:space="preserve">
-    <value>Derecha</value>
+    <value>Derecho</value>
   </data>
   <data name="TableTools_InsertColumn_Right_Description" xml:space="preserve">
-    <value>Inserte la columna a la derecha de la selección actual.</value>
+    <value>Insertar columna a la derecha de la selección actual.</value>
   </data>
   <data name="TableTools_InsertRow_Above_Text" xml:space="preserve">
-    <value>Encima</value>
+    <value>encima</value>
   </data>
   <data name="TableTools_InsertRow_Above_Description" xml:space="preserve">
-    <value>Inserte la fila sobre la selección actual.</value>
+    <value>Inserte la fila por encima de la selección actual.</value>
   </data>
   <data name="TableTools_InsertRow_Below_Text" xml:space="preserve">
-    <value>Debajo</value>
+    <value>abajo de</value>
   </data>
   <data name="TableTools_InsertRow_Below_Description" xml:space="preserve">
     <value>Inserte la fila debajo de la selección actual.</value>
@@ -369,7 +349,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Dentro del grupo-arriba</value>
   </data>
   <data name="TableTools_InsertRow_InsideGroupAbove_Description" xml:space="preserve">
-    <value>Inserte la fila dentro del grupo, arriba de la selección actual.</value>
+    <value>Inserte la fila dentro del grupo, encima de la selección actual.</value>
   </data>
   <data name="TableTools_InsertRow_InsideGroupBelow_Text" xml:space="preserve">
     <value>Dentro del grupo-abajo</value>
@@ -378,10 +358,10 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Inserte la fila dentro del grupo, debajo de la selección actual.</value>
   </data>
   <data name="TableTools_InsertRow_OutsideGroupAbove_Text" xml:space="preserve">
-    <value>Fuera del grupo-arriba</value>
+    <value>Grupo exterior-arriba</value>
   </data>
   <data name="TableTools_InsertRow_OutsideGroupAbove_Description" xml:space="preserve">
-    <value>Inserte la fila fuera del grupo, arriba de la selección actual.</value>
+    <value>Inserte la fila fuera del grupo, encima de la selección actual.</value>
   </data>
   <data name="TableTools_InsertRow_OutsideGroupBelow_Text" xml:space="preserve">
     <value>Fuera del grupo-abajo</value>
@@ -405,19 +385,19 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Grupo de filas</value>
   </data>
   <data name="TableTools_RowGroup_Properties_Description" xml:space="preserve">
-    <value>Propiedades del grupo de filas</value>
+    <value>Propiedades de grupo de filas</value>
   </data>
   <data name="TableTools_CellsSplit_Text" xml:space="preserve">
-    <value>Celdas divididas</value>
+    <value>Células partidas</value>
   </data>
   <data name="TableTools_CellsSplit_Description" xml:space="preserve">
-    <value>Celdas divididas</value>
+    <value>Células partidas</value>
   </data>
   <data name="TextBoxExpressions_Description" xml:space="preserve">
     <value>Edite la expresión de valor.</value>
   </data>
   <data name="TextBoxExpressions_Text" xml:space="preserve">
-    <value>Expresión...</value>
+    <value>expresión...</value>
   </data>
   <data name="TextBoxFormat_Currency_Description" xml:space="preserve">
     <value>Mostrar el valor como moneda.</value>
@@ -426,16 +406,16 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Moneda</value>
   </data>
   <data name="TextBoxFormat_DecreaseDecimal_Description" xml:space="preserve">
-    <value>Mostrar un valor menos preciso mostrando menos posiciones decimales.</value>
+    <value>Mostrar menos valor exacto mostrando menos decimales.</value>
   </data>
   <data name="TextBoxFormat_DecreaseDecimal_Text" xml:space="preserve">
     <value>Disminuir decimal</value>
   </data>
   <data name="TextBoxFormat_Description" xml:space="preserve">
-    <value>Elija cómo se muestran los valores del cuadro de texto.</value>
+    <value>Elija cómo se muestran los valores en el cuadro de texto.</value>
   </data>
   <data name="TextBoxFormat_IncreaseDecimal_Description" xml:space="preserve">
-    <value>Mostrar un valor más preciso mostrando más lugares decimales.</value>
+    <value>Mostrar un valor más preciso mostrando más decimales.</value>
   </data>
   <data name="TextBoxFormat_IncreaseDecimal_Text" xml:space="preserve">
     <value>Aumentar decimal</value>
@@ -459,7 +439,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Herramientas de cuadro de texto</value>
   </data>
   <data name="PreviewTab_Zoom10" xml:space="preserve">
-    <value>10%</value>
+    <value>10</value>
   </data>
   <data name="PreviewTab_Zoom100" xml:space="preserve">
     <value>1</value>
@@ -471,7 +451,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>200%</value>
   </data>
   <data name="PreviewTab_Zoom25" xml:space="preserve">
-    <value>25%</value>
+    <value>25</value>
   </data>
   <data name="PreviewTab_Zoom400" xml:space="preserve">
     <value>400%</value>
@@ -483,7 +463,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>800%</value>
   </data>
   <data name="PreviewTab_ZoomDescription" xml:space="preserve">
-    <value>Zoom in (Ctrl + signo ()). Zoom out (Ctrl menos signo (-))</value>
+    <value>Acercar (CTRL + signo más (+)). Alejar (CTRL + signo menos (-))</value>
   </data>
   <data name="PreviewTab_ZoomFullPage" xml:space="preserve">
     <value>Página completa</value>
@@ -492,7 +472,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Ancho de página</value>
   </data>
   <data name="TableTools_Add_AdjacentBelowRowGroup_Description" xml:space="preserve">
-    <value>Adyacentes</value>
+    <value>Adyacente a continuación</value>
   </data>
   <data name="TableTools_AddGroup_Text" xml:space="preserve">
     <value>Grupos</value>
@@ -570,79 +550,79 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Elementos de datos</value>
   </data>
   <data name="Insert_Barcode_Description" xml:space="preserve">
-    <value>El elemento de informe de código de barras se utiliza para la generación automática de códigos de barras directamente a partir de datos numéricos o caracteres.</value>
+    <value>El elemento de informe de código de barras se utiliza para la generación automática de códigos de barras directamente desde datos numéricos o de caracteres.</value>
   </data>
   <data name="Insert_Barcode_Text" xml:space="preserve">
     <value>Barras</value>
   </data>
   <data name="Insert_Chart_Description" xml:space="preserve">
-    <value>El elemento de informe de gráfico se utiliza para mostrar un gráfico en un informe.</value>
+    <value>El elemento de informe gráfico se utiliza para mostrar un gráfico en un informe.</value>
   </data>
   <data name="Insert_Chart_Text" xml:space="preserve">
     <value>Gráfico</value>
   </data>
   <data name="Insert_CheckBox_Description" xml:space="preserve">
-    <value>El elemento de informe de la casilla de verificación se utiliza para mostrar el texto y una marca de verificación en un informe.</value>
+    <value>El elemento de informe de la casilla de verificación se utiliza para mostrar tanto el texto como una marca de verificación en un informe.</value>
   </data>
   <data name="Insert_CheckBox_Text" xml:space="preserve">
     <value>Casilla de verificación</value>
   </data>
   <data name="Insert_Crosstab_Description" xml:space="preserve">
-    <value>Inserte cruzadas.</value>
+    <value>Inserte la tabulación cruzada.</value>
   </data>
   <data name="Insert_Crosstab_Text" xml:space="preserve">
-    <value>Cruzadas</value>
+    <value>Referencias cruzadas</value>
   </data>
   <data name="Insert_CrosstabTools_Text" xml:space="preserve">
-    <value>Cruzadas</value>
+    <value>Referencias cruzadas</value>
   </data>
   <data name="Insert_CrosstabWizard_Description" xml:space="preserve">
-    <value>El Asistente de cruzadas le guiará a través del proceso de creación de un cruzadas.</value>
+    <value>El Asistente de crosstab le guiará a través del proceso de creación de una tabla cruzada.</value>
   </data>
   <data name="Insert_CrosstabWizard_Text" xml:space="preserve">
-    <value>Cruzadas Wizard</value>
+    <value>Asistente de crosstab</value>
   </data>
   <data name="Insert_CubeDataSource_Description" xml:space="preserve">
-    <value>El origen de datos del cubo permite que los elementos de datos recuperen datos de un cubo OLAP mediante Microsoft Analysis Services.</value>
+    <value>El origen de datos Cube permite que los elementos de datos recuperen datos de un cubo OLAP mediante Microsoft Analysis Services.</value>
   </data>
   <data name="Insert_CubeDataSource_Text" xml:space="preserve">
-    <value>Origen de datos del cubo</value>
+    <value>Fuente de datos de cubo</value>
   </data>
   <data name="Insert_DataSouces_Text" xml:space="preserve">
-    <value>Orígenes de datos</value>
+    <value>Fuentes de datos</value>
   </data>
   <data name="Insert_HtmlTextBox_Description" xml:space="preserve">
-    <value>El elemento de informe del cuadro de texto HTML permite insertar texto con formato HTML en un informe.</value>
+    <value>El elemento de informe cuadro de texto HTML permite insertar texto con formato HTML en un informe.</value>
   </data>
   <data name="Insert_HtmlTextBox_Text" xml:space="preserve">
     <value>Cuadro de texto HTML</value>
   </data>
   <data name="Insert_List_Description" xml:space="preserve">
-    <value>El elemento de informe de lista representa un diseño de formulario libre.</value>
+    <value>El elemento de informe de lista representa un diseño de forma libre.</value>
   </data>
   <data name="Insert_List_Text" xml:space="preserve">
     <value>Lista</value>
   </data>
   <data name="Insert_Panel_Description" xml:space="preserve">
-    <value>El elemento de informe del panel se utiliza como contenedor para otros elementos, por lo general para agrupar/separar varios elementos de informe según algunos criterios.</value>
+    <value>El elemento de informe del panel se utiliza como contenedor para otros elementos, normalmente para agrupar/separar varios elementos de informe según algunos criterios.</value>
   </data>
   <data name="Insert_Panel_Text" xml:space="preserve">
-    <value>Panel</value>
+    <value>comité</value>
   </data>
   <data name="Insert_PictureBox_Description" xml:space="preserve">
     <value>Representa un elemento de informe de cuadro de imagen para mostrar una imagen.</value>
   </data>
   <data name="Insert_PictureBox_Text" xml:space="preserve">
-    <value>Cuadro de imagen</value>
+    <value>Picture Box</value>
   </data>
   <data name="InsertReportItemsText" xml:space="preserve">
-    <value>Artículos de informe</value>
+    <value>Elementos de informe</value>
   </data>
   <data name="Insert_Shape_Description" xml:space="preserve">
-    <value>El elemento de informe de forma se utiliza para mostrar una selección de formas predefinidas en un informe.</value>
+    <value>El elemento de informe forma se utiliza para mostrar una de una selección de formas predefinidas en un informe.</value>
   </data>
   <data name="Insert_Shape_Text" xml:space="preserve">
-    <value>Forma</value>
+    <value>figura</value>
   </data>
   <data name="Insert_SqlDataSource_Description" xml:space="preserve">
     <value>El origen de datos SQL permite que los elementos de datos muestren datos ubicados en una base de datos relacional.</value>
@@ -651,7 +631,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Origen de datos SQL</value>
   </data>
   <data name="Insert_Table_Description" xml:space="preserve">
-    <value>Insertar tabla.</value>
+    <value>Inserte la tabla.</value>
   </data>
   <data name="Insert_Table_Text" xml:space="preserve">
     <value>Tabla</value>
@@ -660,28 +640,28 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Tabla</value>
   </data>
   <data name="Insert_TableWizard_Description" xml:space="preserve">
-    <value>El Asistente de tabla le guiará a través del proceso de creación de una tabla.</value>
+    <value>El Asistente para tablas le guiará a través del proceso de creación de una tabla.</value>
   </data>
   <data name="Insert_TableWizard_Text" xml:space="preserve">
     <value>Asistente para tablas</value>
   </data>
   <data name="Insert_TextBox_Description" xml:space="preserve">
-    <value>El elemento de informe del cuadro de texto se utiliza para mostrar texto en un informe.</value>
+    <value>El elemento de informe cuadro de texto se utiliza para mostrar texto en un informe.</value>
   </data>
   <data name="Insert_TextBox_Text" xml:space="preserve">
     <value>Textbox</value>
   </data>
   <data name="Insert_CrosstabTools_Description" xml:space="preserve">
-    <value>El elemento de informe cruzadas muestra resúmenes de datos agregados, agrupados en filas y columnas.</value>
+    <value>El elemento de informe crosstab muestra resúmenes de datos agregados, agrupados en filas y columnas.</value>
   </data>
   <data name="Insert_TableTools_Description" xml:space="preserve">
-    <value>El elemento de informe de tabla muestra los datos de detalle, los datos organizados en grupos de filas o ambos.</value>
+    <value>El elemento de informe de tabla muestra datos de detalle, datos organizados en grupos de filas o ambos.</value>
   </data>
   <data name="Insert_SubReport_Description" xml:space="preserve">
-    <value>Representa un elemento de informe utilizado para incrustar otro informe en el informe actual.</value>
+    <value>Representa un elemento de informe que se utiliza para incrustar otro informe en el informe actual.</value>
   </data>
   <data name="Insert_SubReport_Text" xml:space="preserve">
-    <value>Informe secundario</value>
+    <value>Subinforme</value>
   </data>
   <data name="TableTools_ColumnGroup_Text" xml:space="preserve">
     <value>Grupo de columnas</value>
@@ -690,7 +670,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Grupo de filas</value>
   </data>
   <data name="InsertReportText" xml:space="preserve">
-    <value>Informe</value>
+    <value>Reporte</value>
   </data>
   <data name="PreviewTab_Of_Text" xml:space="preserve">
     <value>de</value>
@@ -705,7 +685,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Propiedades</value>
   </data>
   <data name="TableTools_RowsColumns_Text" xml:space="preserve">
-    <value>Filas </value>
+    <value>Filas y columnas</value>
   </data>
   <data name="ErrorFileCreation" xml:space="preserve">
     <value>No se puede crear el archivo.</value>
@@ -714,28 +694,28 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Insertar gráfico.</value>
   </data>
   <data name="Insert_Graph_Text" xml:space="preserve">
-    <value>Gráfico</value>
+    <value>curva</value>
   </data>
   <data name="Insert_DataViz" xml:space="preserve">
     <value>Visualización de datos</value>
   </data>
   <data name="Insert_ObjectDataSource_Description" xml:space="preserve">
-    <value>El origen de datos de objeto permite que los elementos de datos recuperen datos de objetos empresariales predefinidos.</value>
+    <value>El origen de datos de objeto permite que los elementos de datos recuperen datos de objetos de negocio predefinidos.</value>
   </data>
   <data name="Insert_ObjectDataSource_Text" xml:space="preserve">
     <value>Origen de datos de objeto</value>
   </data>
   <data name="Insert_EntityDataSource_Description" xml:space="preserve">
-    <value>El origen de datos de entidad permite que los elementos de datos recuperen datos de modelos de entidad ADO.net predefinidos.</value>
+    <value>El origen de datos de entidad permite que los elementos de datos recuperen datos de modelos de entidad ADO.NET predefinidos.</value>
   </data>
   <data name="Insert_EntityDataSource_Text" xml:space="preserve">
     <value>Origen de datos de entidad</value>
   </data>
   <data name="Insert_OpenAccessDataSource_Description" xml:space="preserve">
-    <value>El origen de datos OpenAccess permite que los elementos de datos recuperen datos de los modelos predefinidos de OpenAcess Telerik.</value>
+    <value>La fuente de datos OpenAccess permite que los elementos de datos recuperen datos de modelos OpenAcess de Telerik predefinidos.</value>
   </data>
   <data name="Insert_OpenAccessDataSource_Text" xml:space="preserve">
-    <value>Origen de datos de acceso abierto</value>
+    <value>Abrir fuente de datos de acceso</value>
   </data>
   <data name="ReadFileError" xml:space="preserve">
     <value>No se puede leer el archivo: {0}</value>
@@ -744,13 +724,13 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Formato</value>
   </data>
   <data name="Inser_MapWizard_Text" xml:space="preserve">
-    <value>Asistente para mapas</value>
+    <value>Asistente de mapa</value>
   </data>
   <data name="Insert_MapTools_Map_Description" xml:space="preserve">
     <value>Representa un elemento de informe que muestra datos geocodificados en un mapa.</value>
   </data>
   <data name="Insert_MapTools_Map_Text" xml:space="preserve">
-    <value>Mapa</value>
+    <value>plano</value>
   </data>
   <data name="Insert_MapTools_Description" xml:space="preserve">
     <value>El elemento de informe de mapa muestra datos geo codificados</value>
@@ -762,7 +742,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>El Asistente de mapas le guiará a través del proceso de creación de un mapa.</value>
   </data>
   <data name="Insert_MapWizard_Text" xml:space="preserve">
-    <value>Asistente para mapas</value>
+    <value>Asistente de mapa</value>
   </data>
   <data name="BlankReportTemplateName" xml:space="preserve">
     <value>Informe en blanco</value>
@@ -771,34 +751,34 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Crea un informe a partir de una plantilla en blanco.</value>
   </data>
   <data name="TableWizardTemplate_Description" xml:space="preserve">
-    <value>Inicia el Asistente de tabla para crear un informe utilizando la tecnología de informes Telerik.</value>
+    <value>Inicia el Asistente para tablas para crear un informe mediante la tecnología Telerik Reporting.</value>
   </data>
   <data name="TableWizardTemplate_Name" xml:space="preserve">
     <value>Asistente para tablas</value>
   </data>
   <data name="Insert_CsvDataSource_Description" xml:space="preserve">
-    <value>El origen de datos CSV permite a los elementos de datos recuperar datos de archivos CSV, secuencias y simplemente cadenas.</value>
+    <value>El origen de datos CSV permite que los elementos de datos recuperen datos de archivos CSV, secuencias y simplemente cadenas.</value>
   </data>
   <data name="Insert_CsvDataSource_Text" xml:space="preserve">
-    <value>Origen de datos CSV</value>
+    <value>Fuente de datos CSV</value>
   </data>
   <data name="Insert_MapTools_Choropleth_Description" xml:space="preserve">
     <value>Un mapa cuyas áreas están coloreadas dependiendo de una medida</value>
   </data>
   <data name="Insert_MapTools_Choropleth_Text" xml:space="preserve">
-    <value>Choropleth</value>
+    <value>Coropletas</value>
   </data>
   <data name="Insert_MapTools_ChoroplethWizard_Description" xml:space="preserve">
     <value>El Asistente de Choropleth le guiará a través del proceso de creación de un Choropleth.</value>
   </data>
   <data name="Insert_MapTools_ChoroplethWizard_Text" xml:space="preserve">
-    <value>Choropleth Wizard</value>
+    <value>Asistente de choropleth</value>
   </data>
   <data name="PreviewTab_ViewPreviewDescription" xml:space="preserve">
     <value>Ejecutar el informe (F5)</value>
   </data>
   <data name="Insert_OpenClientDataSource_Description" xml:space="preserve">
-    <value>El origen de datos OpenEdge OpenClient permite que los elementos de datos recuperen datos de objetos de cliente abierto predefinidos OpenEdge.</value>
+    <value>La fuente de datos OpenEdge de OpenClient permite que los elementos de datos recuperen datos de objetos OpenEdge Open Client predefinidos.</value>
   </data>
   <data name="Insert_OpenClientDataSource_Text" xml:space="preserve">
     <value>OpenEdge OpenClient fuente de datos</value>
@@ -807,7 +787,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Una plantilla vacía para crear un libro de informes.</value>
   </data>
   <data name="ReportBookTab_Template_Text" xml:space="preserve">
-    <value>Libro de informes</value>
+    <value>Informe del libro</value>
   </data>
   <data name="ReportBookTab_Configure_Text" xml:space="preserve">
     <value>Configurar</value>
@@ -819,25 +799,25 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Ver</value>
   </data>
   <data name="ReportBook_ContextTab_Text" xml:space="preserve">
-    <value>Libro de informes</value>
+    <value>Informe del libro</value>
   </data>
   <data name="ReportBookTab_AddReportSource_Text" xml:space="preserve">
-    <value>Añadir</value>
+    <value>Agregar</value>
   </data>
   <data name="ReportBookTab_AddReportSource_Description" xml:space="preserve">
-    <value>Fügen Sie der Berichtssammlung Bericht Buch Bericht hinzu.</value>
+    <value>Agregar informe a la colección de informes del libro de informes.</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Text" xml:space="preserve">
     <value>Eliminar</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Description" xml:space="preserve">
-    <value>Löscht den ausgewählten Bericht aus der Bericht Sammlung des Berichts Buches.</value>
+    <value>Elimine el informe seleccionado de la colección de informes del libro de informes.</value>
   </data>
   <data name="ReportBookTab_Document_Text" xml:space="preserve">
     <value>Nombre del documento</value>
   </data>
   <data name="ReportBookTab_DocumentName_Description" xml:space="preserve">
-    <value>Defina el nombre del documento que se usará como nombre predeterminado al exportar el libro de informes.</value>
+    <value>Establezca el nombre del documento que se utilizará como nombre predeterminado al exportar el libro de informes.</value>
   </data>
   <data name="ReportBookTab_EditReportInDesigner_Text" xml:space="preserve">
     <value>Diseño</value>
@@ -849,13 +829,13 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Bajar</value>
   </data>
   <data name="ReportBookTab_MoveDown_Description" xml:space="preserve">
-    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach unten.</value>
+    <value>Mueva el informe seleccionado hacia abajo en la colección de informes del libro de informes.</value>
   </data>
   <data name="ReportBookTab_MoveUp_Text" xml:space="preserve">
     <value>Subir</value>
   </data>
   <data name="ReportBookTab_MoveUp_Description" xml:space="preserve">
-    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach oben.</value>
+    <value>Mueva el informe seleccionado hacia arriba en la colección de informes del libro de informes.</value>
   </data>
   <data name="ReportBookTab_ReportSourceParameters_Text" xml:space="preserve">
     <value>Parámetros</value>
@@ -867,34 +847,40 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Configurar</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Description" xml:space="preserve">
-    <value>Legen Sie die Berichtsdefinition fest, die als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
+    <value>Establezca definición de informe que se usará como plantilla para la tabla de contenido del libro de informes.</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Text" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Description" xml:space="preserve">
+    <value>Elimine el informe utilizado como plantilla para la tabla de contenido del libro de informes.</value>
   </data>
   <data name="ReportBookTab_Toc_Text" xml:space="preserve">
-    <value>TOC</value>
+    <value>Toc</value>
   </data>
   <data name="ReportBookTab_Toc_After_Text" xml:space="preserve">
-    <value>Después de informes</value>
+    <value>Después de los informes</value>
   </data>
   <data name="ReportBookTab_Toc_After_TextDescription" xml:space="preserve">
-    <value>Mostrar el libro de informes TOC después de los informes.</value>
+    <value>Mostrar el índice del libro de informe después de los informes.</value>
   </data>
   <data name="ReportBookTab_Toc_Before_Text" xml:space="preserve">
     <value>Antes de los informes</value>
   </data>
   <data name="ReportBookTab_Toc_Before_Description" xml:space="preserve">
-    <value>Mostrar el libro de informes TOC antes de los informes.</value>
+    <value>Mostrar el índice del libro de informes antes de los reportes.</value>
   </data>
   <data name="DataExplorer_Caption" xml:space="preserve">
-    <value>Explorador de datos</value>
+    <value>El explorador de datos</value>
   </data>
   <data name="ReportBook_Definition_TRBP_Description" xml:space="preserve">
-    <value>Telerik informe de la definición del libro</value>
+    <value>La definición del libro de informes de Telerik</value>
   </data>
   <data name="ReportDefinition_TRDP_Description" xml:space="preserve">
-    <value>Paquete de definición de informe Telerik</value>
+    <value>El paquete de definición de informes de Telerik</value>
   </data>
   <data name="ReportDefinition_TRDX_Description" xml:space="preserve">
-    <value>Telerik de definición de informe XML (Legacy)</value>
+    <value>La definición de informe de Telerik XML</value>
   </data>
   <data name="ErrorPresenter_ToggleDetailsText_Hide" xml:space="preserve">
     <value>Ocultar detalles</value>
@@ -903,7 +889,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Mostrar detalles</value>
   </data>
   <data name="GroupExplorer_Caption" xml:space="preserve">
-    <value>Explorador de grupos</value>
+    <value>El explorador de grupo</value>
   </data>
   <data name="ItemTemplateWizard_ErrorDialog_Caption" xml:space="preserve">
     <value>Error</value>
@@ -930,7 +916,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>No se puede desempaquetar la secuencia.</value>
   </data>
   <data name="Graph_ToggleTitle_Transaction" xml:space="preserve">
-    <value>Definir título de gráfico</value>
+    <value>Establecer el título del gráfico</value>
   </data>
   <data name="Graph_ToggleTitle_DefaultTitle" xml:space="preserve">
     <value>Título</value>
@@ -951,43 +937,43 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Centro</value>
   </data>
   <data name="Graph_ItemPosition_Right" xml:space="preserve">
-    <value>Derecha</value>
+    <value>Derecho</value>
   </data>
   <data name="Graph_ItemPosition_Bottom" xml:space="preserve">
     <value>Abajo</value>
   </data>
   <data name="Graph_SeriesLabelAlignmentMenu_DataLabels" xml:space="preserve">
-    <value>Etiquetas de datos</value>
+    <value>Las etiquetas de datos</value>
   </data>
   <data name="Graph_ModifyDataPointLabels_Transaction" xml:space="preserve">
     <value>Modificar etiquetas de punto de datos</value>
   </data>
   <data name="Graph_ItemPosition_InsideEnd" xml:space="preserve">
-    <value>Extremo interior</value>
+    <value>Inside end</value>
   </data>
   <data name="Graph_ItemPosition_InsideBase" xml:space="preserve">
-    <value>Base interior</value>
+    <value>Inside base</value>
   </data>
   <data name="Graph_ItemPosition_OutsideEnd" xml:space="preserve">
     <value>Extremo exterior</value>
   </data>
   <data name="Graph_ItemPosition_Above" xml:space="preserve">
-    <value>Encima</value>
+    <value>encima</value>
   </data>
   <data name="Graph_ItemPosition_Below" xml:space="preserve">
-    <value>Debajo</value>
+    <value>abajo de</value>
   </data>
   <data name="Graph_SeriesLabel_Show" xml:space="preserve">
-    <value>Mostrar</value>
+    <value>Mostrar...</value>
   </data>
   <data name="Graph_Gridlines_MajorHorizontal" xml:space="preserve">
-    <value>Horizontal importante</value>
+    <value>Mayor horizontal</value>
   </data>
   <data name="Graph_Gridlines_MajorVertical" xml:space="preserve">
-    <value>Vertical importante</value>
+    <value>Major vertical</value>
   </data>
   <data name="Graph_Gridlines_MinorHorizontal" xml:space="preserve">
-    <value>Menor horizontal</value>
+    <value>Horizontal menor</value>
   </data>
   <data name="Graph_Gridlines_MinorVertical" xml:space="preserve">
     <value>Vertical menor</value>
@@ -996,7 +982,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Mayor radial</value>
   </data>
   <data name="Graph_Gridlines_MajorAngular" xml:space="preserve">
-    <value>Angular principal</value>
+    <value>Angular mayor</value>
   </data>
   <data name="Graph_Gridlines_MinorRadial" xml:space="preserve">
     <value>Radial menor</value>
@@ -1005,7 +991,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Angular menor</value>
   </data>
   <data name="Graph_ToggleAxisTitle_Transaction" xml:space="preserve">
-    <value>Alternar título de eje</value>
+    <value>Alternar el título del eje</value>
   </data>
   <data name="Graph_ToggleAxis_Transaction" xml:space="preserve">
     <value>Alternar eje</value>
@@ -1014,7 +1000,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Principal</value>
   </data>
   <data name="Graph_CoordinateSystemAlias_Secondary" xml:space="preserve">
-    <value>Secundaria</value>
+    <value>secundario</value>
   </data>
   <data name="Graph_CoordinateSystemAlias_ByIndex" xml:space="preserve">
     <value>Sistema de coordenadas #</value>
@@ -1026,10 +1012,10 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Vertical</value>
   </data>
   <data name="Graph_Axes_Radial" xml:space="preserve">
-    <value>Radial</value>
+    <value>radial</value>
   </data>
   <data name="Graph_Axes_Angular" xml:space="preserve">
-    <value>Angular</value>
+    <value>angular</value>
   </data>
   <data name="Map_ToggleMapTitle_Transaction" xml:space="preserve">
     <value>Establecer el título del mapa</value>
@@ -1038,16 +1024,16 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Título</value>
   </data>
   <data name="Map_ToggleLegend_Transaction" xml:space="preserve">
-    <value>Definir leyenda del mapa</value>
+    <value>Establecer la leyenda del mapa</value>
   </data>
   <data name="Toolbar_GraphTools_Text" xml:space="preserve">
-    <value>Herramientas gráficas</value>
+    <value>Herramientas de gráficos</value>
   </data>
   <data name="Graph_AddChartElements_Axes" xml:space="preserve">
     <value>Ejes</value>
   </data>
   <data name="Graph_AddChartElements_AxisTitles" xml:space="preserve">
-    <value>Títulos de AXIS</value>
+    <value>Títulos de eje</value>
   </data>
   <data name="Graph_AddChartElements_ChartTitle" xml:space="preserve">
     <value>Título del gráfico</value>
@@ -1068,7 +1054,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Agregar elemento de gráfico</value>
   </data>
   <data name="Graph_RibbonContextual_SwapAxes_Description" xml:space="preserve">
-    <value>Gira la orientación del gráfico intercambiando las posiciones de los ejes y los valores X/y de la serie</value>
+    <value>Rota la orientación del gráfico intercambiando las posiciones de los ejes y los valores X/Y de la serie</value>
   </data>
   <data name="Graph_RibbonContextual_DesignTitle" xml:space="preserve">
     <value>Diseño</value>
@@ -1080,40 +1066,40 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Cambiar colores</value>
   </data>
   <data name="Graph_RibbonContextual_ChangeColors_Description" xml:space="preserve">
-    <value>Cambiar el color y el estilo del gráfico</value>
+    <value>Cambie el color y el estilo del gráfico</value>
   </data>
   <data name="Graph_RibbonContextual_ChangeChartType_Text" xml:space="preserve">
     <value>Cambiar tipo de gráfico</value>
   </data>
   <data name="Graph_RibbonContextual_ChangeChartType_Description" xml:space="preserve">
-    <value>Cambiar a otro tipo de gráfico</value>
+    <value>Cambie a un tipo de gráfico diferente</value>
   </data>
   <data name="Graph_RibbonContextual_SwitchRowColumn_Description" xml:space="preserve">
-    <value>Intercambiar los datos sobre los ejes</value>
+    <value>Intercambia los datos sobre los ejes</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeStyle_Text" xml:space="preserve">
-    <value>Estilo de la forma</value>
+    <value>Estilo de forma</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeWidth_Text" xml:space="preserve">
-    <value>Anchura de la forma</value>
+    <value>Ancho de forma</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeWidth_Description" xml:space="preserve">
-    <value>Defina el ancho de la forma del elemento Select.</value>
+    <value>Establezca el ancho de la forma del elemento seleccionado.</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeOutlineColor_Text" xml:space="preserve">
     <value>Color de contorno de forma</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeOutlineColor_Description" xml:space="preserve">
-    <value>Establecer el color de contorno del elemento de forma seleccionado</value>
+    <value>Establezca el color de contorno del elemento de forma seleccionado</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeFillColor_Text" xml:space="preserve">
     <value>Color de relleno de forma</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeFillColor_Description" xml:space="preserve">
-    <value>Establecer el color de relleno del elemento de forma seleccionado</value>
+    <value>Establezca el color de relleno del elemento de forma seleccionado</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeStyle_Description" xml:space="preserve">
-    <value>Establecer el estilo de forma del elemento seleccionado</value>
+    <value>Establezca el estilo de forma de elemento seleccionado</value>
   </data>
   <data name="ToolbarBuilder_RegisterInsertTabItems_Tables" xml:space="preserve">
     <value>Inset_Table Tools_Text</value>
@@ -1122,10 +1108,10 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Tablas</value>
   </data>
   <data name="Insert_ChartToolsGroup_Charts" xml:space="preserve">
-    <value>Cartas</value>
+    <value>tablas</value>
   </data>
   <data name="Insert_ChartTools_Bars" xml:space="preserve">
-    <value>Bar</value>
+    <value>barrote</value>
   </data>
   <data name="Insert_ChartTools_ClusteredBar" xml:space="preserve">
     <value>Barra agrupada</value>
@@ -1137,7 +1123,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>100% barra apilada</value>
   </data>
   <data name="Insert_ChartTools_RangeBar" xml:space="preserve">
-    <value>Barra de la gama</value>
+    <value>Range bar</value>
   </data>
   <data name="Insert_ChartTools_ColumnGroup" xml:space="preserve">
     <value>Columna</value>
@@ -1152,7 +1138,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>100% columna apilada</value>
   </data>
   <data name="Insert_ChartTools_RangeColumn" xml:space="preserve">
-    <value>Columna Range</value>
+    <value>Columna de rango</value>
   </data>
   <data name="Insert_ChartTools_AreaGroup" xml:space="preserve">
     <value>Área</value>
@@ -1167,7 +1153,7 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>100% área apilada</value>
   </data>
   <data name="Insert_ChartTools_RangeArea" xml:space="preserve">
-    <value>Área de la gama</value>
+    <value>Área de alcance</value>
   </data>
   <data name="Insert_ChartTools_LineGroup" xml:space="preserve">
     <value>Línea</value>
@@ -1191,70 +1177,70 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>100% línea apilada con marcadores</value>
   </data>
   <data name="Insert_ChartTools_PieGroup" xml:space="preserve">
-    <value>Pastel</value>
+    <value>tarta</value>
   </data>
   <data name="Insert_ChartTools_Pie" xml:space="preserve">
-    <value>Pastel</value>
+    <value>tarta</value>
   </data>
   <data name="Insert_ChartTools_Doughnut" xml:space="preserve">
-    <value>Donut</value>
+    <value>dona</value>
   </data>
   <data name="Insert_ChartTools_ScatterGroup" xml:space="preserve">
-    <value>Dispersión</value>
+    <value>esparcir</value>
   </data>
   <data name="Insert_ChartTools_Scatter_Text" xml:space="preserve">
-    <value>Dispersión</value>
+    <value>esparcir</value>
   </data>
   <data name="Insert_ChartTools_Scatter_Tooltip" xml:space="preserve">
-    <value>Gráfico de dispersión simple</value>
+    <value>Simple gráfico de dispersión</value>
   </data>
   <data name="Insert_ChartTools_SmoothMarkedScatter_Text" xml:space="preserve">
-    <value>Dispersión marcada lisa</value>
+    <value>Smooth marcado Scatter</value>
   </data>
   <data name="Insert_ChartTools_SmoothMarkedScatter_Tooltip" xml:space="preserve">
-    <value>Gráfico de dispersión con líneas y marcadores lisos</value>
+    <value>Gráfico de dispersión con líneas y marcadores suaves</value>
   </data>
   <data name="Insert_ChartTools_SmoothLinedScatter_Text" xml:space="preserve">
-    <value>Dispersión alineada lisa</value>
+    <value>Dispersión lisa forrada</value>
   </data>
   <data name="Insert_ChartTools_SmoothLinedScatter_Tooltip" xml:space="preserve">
-    <value>Gráfico de dispersión con líneas lisas</value>
+    <value>Gráfico de dispersión con líneas suaves</value>
   </data>
   <data name="Insert_ChartTools_StraightMarkedScatter_Text" xml:space="preserve">
-    <value>Dispersión recta marcada</value>
+    <value>Scatter con marcado recto</value>
   </data>
   <data name="Insert_ChartTools_StraightMarkedScatter_Tooltip" xml:space="preserve">
     <value>Dispersión con líneas rectas y marcadores</value>
   </data>
   <data name="Insert_ChartTools_StraightLinedScatter_Text" xml:space="preserve">
-    <value>Dispersión recta alineada</value>
+    <value>Línea recta Scatter</value>
   </data>
   <data name="Insert_ChartTools_StraightLinedScatter_Tooltip" xml:space="preserve">
     <value>Gráfico de dispersión con líneas rectas</value>
   </data>
   <data name="Insert_ChartTools_Bubble" xml:space="preserve">
-    <value>Burbuja</value>
+    <value>burbuja</value>
   </data>
   <data name="Insert_ChartTools_Bubble_Tooltip" xml:space="preserve">
     <value>Gráfico de dispersión con marcadores de burbuja</value>
   </data>
   <data name="Insert_ChartTools_Candlestick_Text" xml:space="preserve">
-    <value>Candelabro</value>
+    <value>candelero</value>
   </data>
   <data name="Insert_ChartTools_Candlestick_Tooltip" xml:space="preserve">
-    <value>Carta OHLC con marcadores de candelero</value>
+    <value>Gráfico OHLC con marcadores de velas</value>
   </data>
   <data name="Insert_ChartTools_FinancialBar_Text" xml:space="preserve">
-    <value>Bar</value>
+    <value>barrote</value>
   </data>
   <data name="Insert_ChartTools_FinancialBar_Tooltip" xml:space="preserve">
-    <value>Carta OHLC con marcadores de barra</value>
+    <value>Gráfico OHLC con marcadores de barras</value>
   </data>
   <data name="Insert_ChartTools_OtherGroup" xml:space="preserve">
     <value>Otros</value>
   </data>
   <data name="Insert_ChartTools_Radar_Text" xml:space="preserve">
-    <value>Radar</value>
+    <value>radar</value>
   </data>
   <data name="Insert_ChartTools_RadarWithMarkers" xml:space="preserve">
     <value>Radar con marcadores</value>
@@ -1275,13 +1261,13 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Diseño</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapLayouts_Text" xml:space="preserve">
-    <value>Esquemas de mapa</value>
+    <value>Diseños de mapa</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapLayouts_AddMapElement_Text" xml:space="preserve">
-    <value>Agregar elemento Map</value>
+    <value>Agregar elemento de mapa</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapLayouts_AddMapElement_Description" xml:space="preserve">
-    <value>Agregar elemento Map</value>
+    <value>Agregar elemento de mapa</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapStyles_Text" xml:space="preserve">
     <value>Estilos de mapa</value>
@@ -1290,12 +1276,32 @@ Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos 
     <value>Cambiar colores</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapStyles_ChangeColors_Description" xml:space="preserve">
-    <value>Cambiar el color y el estilo del mapa</value>
+    <value>Cambie el color y el estilo del mapa</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_AddElement_Title_Text" xml:space="preserve">
     <value>Título del mapa</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_AddElement_Legend_Text" xml:space="preserve">
     <value>Leyenda</value>
+  </data>
+  <data name="PreviewTab_FindDescription" xml:space="preserve">
+    <value>
+Abre el cuadro de diálogo Buscar para buscar en el documento. Si los metadatos de búsqueda no están preparados, invoca la actualización de informes para recopilar los metadatos de búsqueda.
+     </value>
+  </data>
+  <data name="PreviewTab_FindText" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Description" xml:space="preserve">
+    <value>El origen de datos del servicio web permite que los elementos de datos recuperen datos de servicios Web predefinidos.</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Text" xml:space="preserve">
+    <value>Origen de datos de servicio Web</value>
+  </data>
+  <data name="Insert_JsonDataSource_Description" xml:space="preserve">
+    <value>El origen de datos JSON permite que los elementos de datos recuperen datos de una cadena o un archivo JSON.</value>
+  </data>
+  <data name="Insert_JsonDataSource_Text" xml:space="preserve">
+    <value>Origen de datos JSON</value>
   </data>
 </root>

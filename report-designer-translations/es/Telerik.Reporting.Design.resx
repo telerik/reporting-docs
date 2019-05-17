@@ -117,137 +117,125 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ConditionalFormattingPrimaryItemSelectorDescription" xml:space="preserve">
-    <value>Elija el elemento principal cuyo formato condicional se usará como plantilla. El formato condicional actualizado se aplicará a todos los elementos seleccionados. Todas las reglas de formato que no se enumeran en el editor se eliminarán.</value>
-  </data>
-  <data name="ConditionalFormattingPrimaryItemSelectorTitle" xml:space="preserve">
-    <value>Selector de elementos primarios</value>
-  </data>
-  <data name="WebService_ParameterCollectionEditor_Columns_Type" xml:space="preserve">
-    <value>Tipo</value>
-  </data>
-  <data name="ContextMenuItem_DetailSectionProperties" xml:space="preserve">
-    <value>Eigenschaften des Detail Abschnitts</value>
-  </data>
   <data name="DesignTab" xml:space="preserve">
     <value>Diseño</value>
   </data>
   <data name="PreviewTab" xml:space="preserve">
-    <value>Vista Previa</value>
+    <value>Vista previa</value>
   </data>
   <data name="HtmlPreviewViewTab" xml:space="preserve">
-    <value>Vista previa HTML</value>
+    <value>HTML Preview</value>
   </data>
   <data name="CommandSetDelete" xml:space="preserve">
-    <value>Eliminar elementos de informe {0}</value>
+    <value>Eliminar {0} elementos de informe</value>
   </data>
   <data name="CommandSetCut" xml:space="preserve">
-    <value>Cortar elementos de informe {0}</value>
+    <value>Cortar {0} elementos de informe</value>
   </data>
   <data name="CommandSetPaste" xml:space="preserve">
     <value>Pegar elementos de informe</value>
   </data>
   <data name="CommandSetSendToBack" xml:space="preserve">
-    <value>Enviar elementos de informe {0} al respaldo</value>
+    <value>Envíe {0} elementos de informe a la parte posterior</value>
   </data>
   <data name="CommandSetBringToFront" xml:space="preserve">
-    <value>Traer elementos de informe {0} al frente</value>
+    <value>Traiga {0} elementos de informe al frente</value>
   </data>
   <data name="CommandSetCenterX" xml:space="preserve">
-    <value>Centro horizontal de los elementos de informe {0}</value>
+    <value>Centro horizontal de {0} elementos de informe</value>
   </data>
   <data name="CommandSetCenterY" xml:space="preserve">
     <value>Centro vertical de {0} elementos de informe</value>
   </data>
   <data name="CommandSetFormatSpacing" xml:space="preserve">
-    <value>Formato de elementos de informe {0} (espaciado)</value>
+    <value>Formato {0} elementos de informe (espaciado)</value>
   </data>
   <data name="CommandSetSize" xml:space="preserve">
-    <value>Tamaño de los elementos de informe {0}</value>
+    <value>Tamaño {0} elementos de informe</value>
   </data>
   <data name="CommandSetSizeToGrid" xml:space="preserve">
-    <value>Tamaño de los elementos de informe {0} a cuadrícula</value>
+    <value>Tamaño {0} elementos de informe a la cuadrícula</value>
   </data>
   <data name="CommandSetAlignByPrimary" xml:space="preserve">
-    <value>Formato de elementos de informe {0} (alineación)</value>
+    <value>Formato {0} elementos de informe (alineación)</value>
   </data>
   <data name="CommandSetAlignToGrid" xml:space="preserve">
-    <value>Alinear elementos de informe {0} con cuadrícula</value>
+    <value>Alinear {0} elementos de informe a la cuadrícula</value>
   </data>
   <data name="CommandSetFontStyle" xml:space="preserve">
-    <value>Cambiar el estilo de fuente de los elementos de informe {0}</value>
+    <value>Cambiar el estilo de fuente de {0} elementos de informe</value>
   </data>
   <data name="SetItemsStrikethrough" xml:space="preserve">
-    <value>Alterar la decoración tachado de {0} elementos de informe</value>
+    <value>Modifique la decoración tachado de {0} elementos de informe</value>
   </data>
   <data name="SetItemsUnderline" xml:space="preserve">
-    <value>Modificar subrayado de decoración de {0} elementos de informe</value>
+    <value>Alterar el subrayado de la decoración de {0} elementos de informe</value>
   </data>
   <data name="SetItemsItalic" xml:space="preserve">
-    <value>Alter decoration cursiva de {0} elementos de informe</value>
+    <value>Modifique la decoración cursiva de {0} elementos de informe</value>
   </data>
   <data name="SetItemsBold" xml:space="preserve">
-    <value>Modificar la decoración en negrita de {0} elementos de informe</value>
+    <value>Modifique la decoración en negrita de {0} elementos de informe</value>
   </data>
   <data name="SetItemsFontSize" xml:space="preserve">
-    <value>Cambiar el tamaño de fuente de los elementos de informe {0}</value>
+    <value>Cambiar el tamaño de fuente de {0} elementos de informe</value>
   </data>
   <data name="SetItemsFontName" xml:space="preserve">
-    <value>Cambiar el nombre de fuente de los elementos de informe {0}</value>
+    <value>Cambie el nombre de fuente de {0} elementos de informe</value>
   </data>
   <data name="SetItemsTextHorizontalAlign" xml:space="preserve">
-    <value>Cambiar la alineación horizontal de texto de {0} elementos de informe</value>
+    <value>Cambiar el texto alineado horizontal de {0} elementos de informe</value>
   </data>
   <data name="SetItemsTextVerticalAlign" xml:space="preserve">
-    <value>Cambiar la alineación vertical de los elementos de informe {0}</value>
+    <value>Cambiar la alineación vertical de {0} elementos de informe</value>
   </data>
   <data name="SetItemsColor" xml:space="preserve">
     <value>Cambiar el color de los elementos de informe {0}</value>
   </data>
   <data name="SetItemsBackgroundColor" xml:space="preserve">
-    <value>Cambiar el color de fondo de los elementos de informe {0}</value>
+    <value>Cambiar el color de fondo de {0} elementos de informe</value>
   </data>
   <data name="SetItemBorder" xml:space="preserve">
-    <value>Establecer el borde de {0}</value>
+    <value>Establezca el borde de {0}</value>
   </data>
   <data name="SetItemsBorder" xml:space="preserve">
     <value>Cambiar el borde de {0}</value>
   </data>
   <data name="SetItemStrikethrough" xml:space="preserve">
-    <value>Alterar la decoración tachado de {0}</value>
+    <value>Alterar el tachado de la decoración de {0}</value>
   </data>
   <data name="SetItemUnderline" xml:space="preserve">
-    <value>Modificar subrayado de la decoración de {0}</value>
+    <value>Alterar el subrayado de la decoración de {0}</value>
   </data>
   <data name="SetItemItalic" xml:space="preserve">
-    <value>Alter decoración cursiva de {0}</value>
+    <value>Alter decoration Italic de {0}</value>
   </data>
   <data name="SetItemBold" xml:space="preserve">
-    <value>Alter decoration Bold de {0}</value>
+    <value>Modifique la decoración en negrita de {0}</value>
   </data>
   <data name="SetItemFontSize" xml:space="preserve">
-    <value>Cambiar el tamaño de fuente de {0}</value>
+    <value>Cambie el tamaño de fuente de {0}</value>
   </data>
   <data name="SetItemFontName" xml:space="preserve">
-    <value>Cambiar el nombre de fuente de {0}</value>
+    <value>Cambie el nombre de la fuente {0}</value>
   </data>
   <data name="SetItemTextHorizontalAlign" xml:space="preserve">
-    <value>Cambiar alineación horizontal de texto de {0}</value>
+    <value>Cambiar el texto alineado horizontal de {0}</value>
   </data>
   <data name="SetItemTextVerticalAlign" xml:space="preserve">
-    <value>Cambiar la alineación vertical de {0}</value>
+    <value>Cambie la alineación vertical de {0}</value>
   </data>
   <data name="SetItemColor" xml:space="preserve">
-    <value>Cambiar el color de {0}</value>
+    <value>Cambie el color de {0}</value>
   </data>
   <data name="SetItemBackgroundColor" xml:space="preserve">
-    <value>Cambiar el color de fondo de {0}</value>
+    <value>Cambie el color de fondo de {0}</value>
   </data>
   <data name="SetItemsNumericFormat" xml:space="preserve">
-    <value>Cambiar el formato numérico de los elementos de informe {0}</value>
+    <value>Cambiar el formato numérico de {0} elementos de informe</value>
   </data>
   <data name="SetItemNumericFormat" xml:space="preserve">
-    <value>Cambiar el formato numérico de {0}</value>
+    <value>Cambie el formato numérico de {0}</value>
   </data>
   <data name="CommandSetJustify" xml:space="preserve">
     <value>Justificar {0} elementos de informe</value>
@@ -259,40 +247,40 @@
     <value>Agregar encabezado de informe</value>
   </data>
   <data name="CommandSetGroupHeaderFooter" xml:space="preserve">
-    <value>Agregar encabezado/pie de grupo</value>
+    <value>Agregar encabezado de grupo/pie de página</value>
   </data>
   <data name="CommandSetAddDetailReport" xml:space="preserve">
     <value>Agregar informe detallado</value>
   </data>
   <data name="CommandSetAddReportFooter" xml:space="preserve">
-    <value>Agregar pie de informe</value>
+    <value>Agregar pie de página del informe</value>
   </data>
   <data name="CommandSetAddPageFooter" xml:space="preserve">
-    <value>Agregar pie de página</value>
+    <value>Añadir pie de página</value>
   </data>
   <data name="BehaviorServiceResizeItem" xml:space="preserve">
-    <value>Redimensionar {0}</value>
+    <value>Cambiar el tamaño {0}</value>
   </data>
   <data name="BehaviorServiceResizeItems" xml:space="preserve">
-    <value>Cambiar el tamaño de los elementos de informe {0}</value>
+    <value>Redimensionar {0} elementos de informe</value>
   </data>
   <data name="ParentItemDesignerDrawGridDescr" xml:space="preserve">
-    <value>Indica si se debe o no dibujar la cuadrícula de posicionamiento.</value>
+    <value>Indica si se dibuja o no la rejilla de posicionamiento.</value>
   </data>
   <data name="ParentItemDesignerSnapToGridDescr" xml:space="preserve">
-    <value>Determina si los controles deben ajustarse a la cuadrícula de posicionamiento.</value>
+    <value>Determina si los controles deben acoplarse a la cuadrícula de posicionamiento.</value>
   </data>
   <data name="ParentItemDesignerGridSizeDescr" xml:space="preserve">
-    <value>Determina el tamaño de la cuadrícula de posicionamiento.</value>
+    <value>Determina el tamaño de la rejilla de posicionamiento.</value>
   </data>
   <data name="DesignerBatchCreateTool" xml:space="preserve">
-    <value>Agregar {0}</value>
+    <value>Agregue {0}</value>
   </data>
   <data name="FailedToCreateComponent" xml:space="preserve">
-    <value>No se pudo crear el componente ' {0} '.  El mensaje de error sigue: \n ' {1} '</value>
+    <value>No se pudo crear el componente ' {0} '.  El siguiente mensaje de error: \n ' {1} '</value>
   </data>
   <data name="BehaviorServiceCopyItem" xml:space="preserve">
-    <value>Copiar y mover {0}</value>
+    <value>Copie y mueva {0}</value>
   </data>
   <data name="BehaviorServiceCopyItems" xml:space="preserve">
     <value>Copiar y mover {0} elementos</value>
@@ -304,13 +292,13 @@
     <value>Mover {0} elementos</value>
   </data>
   <data name="TextEditorServiceChangeItemText" xml:space="preserve">
-    <value>Definir texto de propiedad de {0}</value>
+    <value>Establecer el texto de la propiedad de {0}</value>
   </data>
   <data name="StyleClipboardServicePasteStyle" xml:space="preserve">
-    <value>Pegar estilo en {0} elementos</value>
+    <value>Pegar estilo en los elementos {0}</value>
   </data>
   <data name="ResetStyle" xml:space="preserve">
-    <value>Restablecer el estilo de {0} elementos</value>
+    <value>Restablecer estilo de {0} elementos</value>
   </data>
   <data name="SelectToolStripMenuItem" xml:space="preserve">
     <value>Seleccione ' {0} '</value>
@@ -322,7 +310,7 @@
     <value>Cortar</value>
   </data>
   <data name="ContextMenuDeleteSeries" xml:space="preserve">
-    <value>Eliminar serie</value>
+    <value>Delete series</value>
   </data>
   <data name="ContextMenuPaste" xml:space="preserve">
     <value>Pegar</value>
@@ -340,7 +328,7 @@
     <value>Agregar nuevo grupo</value>
   </data>
   <data name="ContextMenuBringToFront" xml:space="preserve">
-    <value>Llevar al frente</value>
+    <value>Traer al frente</value>
   </data>
   <data name="ContextMenuSendToBack" xml:space="preserve">
     <value>Enviar a la parte posterior</value>
@@ -352,37 +340,37 @@
     <value>Diseño</value>
   </data>
   <data name="DesignerBeginDragNotCalled" xml:space="preserve">
-    <value>¡ no se llama al diseñador Begin Drag!</value>
+    <value>¡ El diseñador comienza Drag no se llama!</value>
   </data>
   <data name="DragDropDragComponents" xml:space="preserve">
-    <value>Arrastrar y arrastrar componentes {0}</value>
+    <value>Arrastre los componentes soltar y arrastrar {0}</value>
   </data>
   <data name="DragDropMoveComponent" xml:space="preserve">
-    <value>Arrastrar Drop y mover {0} componente</value>
+    <value>Arrastre el componente Drop y Move {0}</value>
   </data>
   <data name="DragDropMoveComponents" xml:space="preserve">
-    <value>Arrastrar Drop y mover {0} componentes</value>
+    <value>Arrastre los componentes soltar y mover {0}</value>
   </data>
   <data name="DragDropSizeComponent" xml:space="preserve">
-    <value>Arrastrar Drop y el tamaño {0} componente</value>
+    <value>Arrastre el componente Drop y size {0}</value>
   </data>
   <data name="DragDropSizeComponents" xml:space="preserve">
-    <value>Arrastrar y colocar componentes de tamaño {0}</value>
+    <value>Arrastre los componentes Drop y size {0}</value>
   </data>
   <data name="DragDropDropComponents" xml:space="preserve">
-    <value>Arrastrar y soltar componentes {0}</value>
+    <value>Arrastre los componentes Drop y Drop {0}</value>
   </data>
   <data name="ControlLocationDescr" xml:space="preserve">
     <value>Determina la ubicación de un componente en la bandeja</value>
   </data>
   <data name="TrayAutoArrange" xml:space="preserve">
-    <value>Auto Organizar iconos en bandeja de componentes</value>
+    <value>Organizar automáticamente los iconos en la bandeja de componentes</value>
   </data>
   <data name="TrayLineUpIcons" xml:space="preserve">
-    <value>Alinear iconos en bandeja de componentes</value>
+    <value>Alinee los iconos en la bandeja de componentes</value>
   </data>
   <data name="TrayShowLargeIcons" xml:space="preserve">
-    <value>Cambiar tamaño de iconos en bandeja de componentes</value>
+    <value>Cambie el tamaño de los iconos en la bandeja de componentes</value>
   </data>
   <data name="ReportDesignerTraySizeDescr" xml:space="preserve">
     <value>Determina el tamaño de la bandeja de componentes.</value>
@@ -397,19 +385,19 @@
     <value>Tabla de Contenidos</value>
   </data>
   <data name="ReportFooterMenuItem" xml:space="preserve">
-    <value>Pie de informe</value>
+    <value>Pie de página del informe</value>
   </data>
   <data name="ReportHeaderMenuItem" xml:space="preserve">
     <value>Encabezado de informe</value>
   </data>
   <data name="DataSourceNode" xml:space="preserve">
-    <value>Origen de datos</value>
+    <value>Fuente de datos</value>
   </data>
   <data name="NoDataSourceNode" xml:space="preserve">
-    <value>Ningún origen de datos</value>
+    <value>Ninguna fuente de datos</value>
   </data>
   <data name="StyleContextMenuItem" xml:space="preserve">
-    <value>Estilo...</value>
+    <value>moda...</value>
   </data>
   <data name="StyleCopyContextMenuItem" xml:space="preserve">
     <value>Copiar estilo</value>
@@ -421,22 +409,22 @@
     <value>Restablecer estilo</value>
   </data>
   <data name="EditItemStyleText" xml:space="preserve">
-    <value>Editar estilo ' {0} '</value>
+    <value>Edite el estilo ' {0} '</value>
   </data>
   <data name="BackslantLineShapeName" xml:space="preserve">
-    <value>Línea de inclinación</value>
+    <value>Backslant line</value>
   </data>
   <data name="BottomArrowShapeName" xml:space="preserve">
     <value>Flecha inferior</value>
   </data>
   <data name="CrossShapeName" xml:space="preserve">
-    <value>Cruz</value>
+    <value>santiguarse</value>
   </data>
   <data name="EllipseShapeName" xml:space="preserve">
-    <value>Elipse</value>
+    <value>elipse</value>
   </data>
   <data name="HexagonShapeName" xml:space="preserve">
-    <value>Hexágono</value>
+    <value>hexágono</value>
   </data>
   <data name="HorizontalLineShapeName" xml:space="preserve">
     <value>Línea horizontal</value>
@@ -448,16 +436,16 @@
     <value>{0}-Ray Star</value>
   </data>
   <data name="OctagonShapeName" xml:space="preserve">
-    <value>Octágono</value>
+    <value>octágono</value>
   </data>
   <data name="PentagonShapeName" xml:space="preserve">
-    <value>Pentágono</value>
+    <value>pentágono</value>
   </data>
   <data name="RightArrowShapeName" xml:space="preserve">
     <value>Flecha derecha</value>
   </data>
   <data name="SlantLineShapeName" xml:space="preserve">
-    <value>Línea inclinada</value>
+    <value>Slant line</value>
   </data>
   <data name="SquareShapeName" xml:space="preserve">
     <value>Cuadrado</value>
@@ -466,19 +454,19 @@
     <value>Flecha superior</value>
   </data>
   <data name="TriangleShapeName" xml:space="preserve">
-    <value>Triángulo</value>
+    <value>triángulo</value>
   </data>
   <data name="VeriticalLineShapeName" xml:space="preserve">
     <value>Línea vertical</value>
   </data>
   <data name="ShowPageGuides" xml:space="preserve">
-    <value>Muestra u oculta las guías de área imprimibles de la página.</value>
+    <value>Muestra u oculta las guías de área imprimible de página.</value>
   </data>
   <data name="EditItemsStyleText" xml:space="preserve">
-    <value>Editar estilo de un componente {0}</value>
+    <value>Edite el estilo del componente {0}</value>
   </data>
   <data name="ContextMenuDataExplorer" xml:space="preserve">
-    <value>Explorador de datos</value>
+    <value>El explorador de datos</value>
   </data>
   <data name="ContextMenuReportExplorer" xml:space="preserve">
     <value>Explorador de informes</value>
@@ -487,13 +475,13 @@
     <value>Ver</value>
   </data>
   <data name="OutlineLayoutDesc" xml:space="preserve">
-    <value>El diseño de contornos organiza elementos de izquierda a derecha con los elementos de cada grupo que van más a la derecha mediante un desvío fijo.</value>
+    <value>El diseño de contorno organiza los elementos de izquierda a derecha con los elementos de cada grupo que van más allá a la derecha mediante un desplazamiento fijo.</value>
   </data>
   <data name="OutlineLayoutName" xml:space="preserve">
     <value>Esquema</value>
   </data>
   <data name="SteppedLayoutDesc" xml:space="preserve">
-    <value>El diseño escalonado organiza elementos en columnas para que no se superpongan verticalmente.</value>
+    <value>El diseño escalonado organiza los elementos en columnas para que no se solapen verticalmente.</value>
   </data>
   <data name="SteppedLayoutName" xml:space="preserve">
     <value>Caminó</value>
@@ -511,31 +499,31 @@
     <value>Asistente para orígenes de datos</value>
   </data>
   <data name="ContextMenuGroupExplorer" xml:space="preserve">
-    <value>Explorador de grupos</value>
+    <value>El explorador de grupo</value>
   </data>
   <data name="SetItemShapeColor" xml:space="preserve">
-    <value>Cambiar el color de forma de {0}</value>
+    <value>Cambiar el color de la forma de {0}</value>
   </data>
   <data name="SetItemShapeStyle" xml:space="preserve">
     <value>Cambiar el estilo de forma de {0}</value>
   </data>
   <data name="SetItemShapeWidth" xml:space="preserve">
-    <value>Cambiar el ancho de forma de {0}</value>
+    <value>Cambie el ancho de la forma de {0}</value>
   </data>
   <data name="SetItemsShapeColor" xml:space="preserve">
-    <value>Cambiar el color de la forma de los elementos de informe {0}.</value>
+    <value>Cambiar el color de forma de {0} elementos de informe.</value>
   </data>
   <data name="SetItemsShapeStyle" xml:space="preserve">
-    <value>Cambiar el estilo de forma de los elementos de informe {0}.</value>
+    <value>Cambiar el estilo de forma de {0} elementos de informe.</value>
   </data>
   <data name="SetItemsShapeWidth" xml:space="preserve">
-    <value>Cambiar el ancho de forma de los elementos de informe {0}.</value>
+    <value>Cambiar el ancho de forma de {0} elementos de informe.</value>
   </data>
   <data name="Style" xml:space="preserve">
     <value>Estilo</value>
   </data>
   <data name="ContextMenuText" xml:space="preserve">
-    <value>Text...</value>
+    <value>enviar mensajes de texto...</value>
   </data>
   <data name="ContextMenuTitleStyle" xml:space="preserve">
     <value>Estilo de título...</value>
@@ -556,34 +544,34 @@
     <value>X...</value>
   </data>
   <data name="ContextMenuY" xml:space="preserve">
-    <value>...</value>
+    <value>Y...</value>
   </data>
   <data name="ContextMenuHide" xml:space="preserve">
     <value>Ocultar</value>
   </data>
   <data name="ContextMenuTitle" xml:space="preserve">
-    <value>Título...</value>
+    <value>título...</value>
   </data>
   <data name="ContextMenuHideMajorGridLines" xml:space="preserve">
-    <value>Ocultar líneas de cuadrícula principales</value>
+    <value>Ocultar líneas de rejilla principales</value>
   </data>
   <data name="ContextMenuHideMinorGridLines" xml:space="preserve">
-    <value>Ocultar líneas de cuadrícula menores</value>
+    <value>Ocultar líneas de rejilla secundarias</value>
   </data>
   <data name="ContextMenuShowMajorGridLines" xml:space="preserve">
-    <value>Mostrar líneas de cuadrícula principales</value>
+    <value>Mostrar líneas de rejilla principales</value>
   </data>
   <data name="ContextMenuShowMinorGridLines" xml:space="preserve">
-    <value>Mostrar líneas de cuadrícula menores</value>
+    <value>Mostrar líneas de rejilla menores</value>
   </data>
   <data name="ContextMenuShow" xml:space="preserve">
-    <value>Mostrar</value>
+    <value>Mostrar...</value>
   </data>
   <data name="ContextMenuConditionalFormatting" xml:space="preserve">
     <value>Formato condicional...</value>
   </data>
   <data name="ContextMenuExpression" xml:space="preserve">
-    <value>Expresión...</value>
+    <value>expresión...</value>
   </data>
   <data name="ContextMenuCoordinates" xml:space="preserve">
     <value>Coordenadas</value>
@@ -595,16 +583,16 @@
     <value>Y0...</value>
   </data>
   <data name="ContextMenuSwitchRowColumn" xml:space="preserve">
-    <value>Fila/columna del interruptor</value>
+    <value>Cambiar fila/columna</value>
   </data>
   <data name="ContextMenuSwapAxes" xml:space="preserve">
-    <value>Ejes de intercambio</value>
+    <value>Intercambiar ejes</value>
   </data>
   <data name="ContextMenuDelete" xml:space="preserve">
     <value>Eliminar...</value>
   </data>
   <data name="ContextMenuAddGraphSeries" xml:space="preserve">
-    <value>Agregar serie gráfica...</value>
+    <value>Agregar serie de gráficos...</value>
   </data>
   <data name="ContextMenuDataPointConditionalFormatting" xml:space="preserve">
     <value>Formato condicional de punto de datos...</value>
@@ -616,28 +604,28 @@
     <value>Advertencia</value>
   </data>
   <data name="Expression" xml:space="preserve">
-    <value>Expresión</value>
+    <value>expresión</value>
   </data>
   <data name="BindingFormPropertyPath" xml:space="preserve">
-    <value>Ruta de la propiedad</value>
+    <value>Ruta de acceso de propiedad</value>
   </data>
   <data name="BindingFormText" xml:space="preserve">
     <value>Editar enlaces</value>
   </data>
   <data name="ContextMenuLatitude" xml:space="preserve">
-    <value>Latitud...</value>
+    <value>latitud...</value>
   </data>
   <data name="ContextMenuLongitude" xml:space="preserve">
-    <value>Longitud...</value>
+    <value>longitud...</value>
   </data>
   <data name="ContextMenuChoropleth" xml:space="preserve">
-    <value>Choropleth</value>
+    <value>Coropletas</value>
   </data>
   <data name="ContextMenuChoroplethColorData" xml:space="preserve">
     <value>Datos de color</value>
   </data>
   <data name="ContextMenuValue" xml:space="preserve">
-    <value>Valor...</value>
+    <value>tasar...</value>
   </data>
   <data name="CustomActionParametersFormText" xml:space="preserve">
     <value>Editar parámetros de acción personalizados</value>
@@ -649,7 +637,7 @@
     <value>Niveles...</value>
   </data>
   <data name="ContextMenuTocTitle" xml:space="preserve">
-    <value>Título...</value>
+    <value>título...</value>
   </data>
   <data name="ContextMenuTocTitleStyle" xml:space="preserve">
     <value>Estilo de título...</value>
@@ -667,16 +655,16 @@
     <value>&amp;Eliminar columnas y grupos asociados</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteColumnsOnly" xml:space="preserve">
-    <value>Eliminar </value>
+    <value>Solo eliminar y columnas</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteGroup" xml:space="preserve">
     <value>Eliminar grupo</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteGroupAndRelatedItems" xml:space="preserve">
-    <value>&amp;Eliminar grupo y filas y columnas relacionadas</value>
+    <value>&amp;Eliminar el grupo y las filas y columnas relacionadas</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteGroupOnly" xml:space="preserve">
-    <value>Eliminar </value>
+    <value>Eliminar y agrupar solo</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteRows" xml:space="preserve">
     <value>Eliminar Filas</value>
@@ -685,10 +673,10 @@
     <value>&amp;Eliminar filas y grupos asociados</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteRowsOnly" xml:space="preserve">
-    <value>Eliminar </value>
+    <value>Eliminar y filas solo</value>
   </data>
   <data name="DesignView_Pan_Tooltip" xml:space="preserve">
-    <value>Pan</value>
+    <value>cacerola</value>
   </data>
   <data name="DesignView_ShowDimensions_Tooltip" xml:space="preserve">
     <value>Mostrar cotas</value>
@@ -700,10 +688,10 @@
     <value>Mostrar marcas de agua</value>
   </data>
   <data name="DesignView_SnapToGrid_Tooltip" xml:space="preserve">
-    <value>Ajustar a cuadrícula</value>
+    <value>Ajustar a la rejilla</value>
   </data>
   <data name="DesignView_SnapToSnapLines_Tooltip" xml:space="preserve">
-    <value>Ajustar a las líneas de ajuste</value>
+    <value>Ajustar para ajustar las líneas</value>
   </data>
   <data name="DesignView_Zoom_Tooltip" xml:space="preserve">
     <value>Zoom</value>
@@ -715,7 +703,7 @@
     <value>&amp;Vale</value>
   </data>
   <data name="ExternalStyleSheet_Columns_Kind_Header" xml:space="preserve">
-    <value>Tipo</value>
+    <value>amable</value>
   </data>
   <data name="ExternalStyleSheet_Columns_Kind_Tooltip" xml:space="preserve">
     <value>La forma en que se resuelve la hoja de estilos externa</value>
@@ -727,7 +715,7 @@
     <value>Editar filtros</value>
   </data>
   <data name="FiltersEditor_Comments" xml:space="preserve">
-    <value>Si escribe el carácter "7" en la celda Value, de forma predeterminada, esto se evalúa como la cadena "7". Para comparar una expresión numérica con el número 7, utilice la sintaxis de la expresión que comienza con un signo igual: = 7. Al previsualizar un informe, es posible que se vea un error en tiempo de ejecución a partir de que los errores de coincidencia de tipo de datos son similares a: "no se pueden comparar los datos de Types System. Int32 y System. String".</value>
+    <value>Si escribe el carácter "7" en la celda valor, de forma predeterminada, esto se evalúa como la cadena "7". Para comparar una expresión numérica con el número 7, utilice la sintaxis de la expresión que comienza con un signo igual: = 7. Al previsualizar un informe, es posible que vea un error en tiempo de ejecución de las discrepancias de tipo de datos es similar a: "no se puede comparar datos de tipos System. Int32 y System. String."</value>
   </data>
   <data name="FormatBuilder_CategoryGroup_Label" xml:space="preserve">
     <value>Categoría</value>
@@ -751,16 +739,16 @@
     <value>Descripción</value>
   </data>
   <data name="FormatBuilder_Editor_DecimalPlaces_Label" xml:space="preserve">
-    <value>Lugares decimales:</value>
+    <value>Decimales:</value>
   </data>
   <data name="FormatBuilder_NumberOptions_UseDigitGrouping" xml:space="preserve">
-    <value>Utilizar agrupación de dígitos</value>
+    <value>Utilice la agrupación de dígitos</value>
   </data>
   <data name="FormatBuilder_OptionsGroup_Label" xml:space="preserve">
     <value>Opciones</value>
   </data>
   <data name="FormatBuilder_PreviewGroup_Label" xml:space="preserve">
-    <value>Vista Previa</value>
+    <value>Vista previa</value>
   </data>
   <data name="FormatBuilder_ScientificOptions_Label" xml:space="preserve">
     <value>Especificador científico:</value>
@@ -769,7 +757,7 @@
     <value>Format Builder</value>
   </data>
   <data name="FormattingRuleEditor_AmpStyleInitEditor" xml:space="preserve">
-    <value>&amp;Estilo...</value>
+    <value>&amp;moda...</value>
   </data>
   <data name="FormattingRuleEditor_EditFormattingRuleStart" xml:space="preserve">
     <value>Editar regla de formato...</value>
@@ -778,19 +766,19 @@
     <value>Vista previa:</value>
   </data>
   <data name="GraphItemPositionEditor_Absolute" xml:space="preserve">
-    <value>absoluta</value>
+    <value>absoluto</value>
   </data>
   <data name="GraphItemPositionEditor_Center" xml:space="preserve">
     <value>centro</value>
   </data>
   <data name="GroupExplorer_Detail" xml:space="preserve">
-    <value>Detalle</value>
+    <value>detalle</value>
   </data>
   <data name="GroupingsEditor_Caption" xml:space="preserve">
     <value>Editar agrupación</value>
   </data>
   <data name="MapRelationsEditor_Caption" xml:space="preserve">
-    <value>Editar pares de relaciones de mapa</value>
+    <value>Editar pares de relación de mapa</value>
   </data>
   <data name="ParametersEditor_Caption" xml:space="preserve">
     <value>Editar parámetros</value>
@@ -802,7 +790,7 @@
     <value>Ninguno</value>
   </data>
   <data name="ReportSourcesEditor_Caption" xml:space="preserve">
-    <value>Fuentes de informe...</value>
+    <value>Fuentes de reporte...</value>
   </data>
   <data name="SortingsEditor_Caption" xml:space="preserve">
     <value>Editar ordenación</value>
@@ -817,10 +805,10 @@
     <value>&amp;Color:</value>
   </data>
   <data name="StyleBuilder_BackgroundPanel_ImageData_Label" xml:space="preserve">
-    <value>Datos de la imagen:</value>
+    <value>Datos de imagen:</value>
   </data>
   <data name="StyleBuilder_BackgroundPanel_Label" xml:space="preserve">
-    <value>&amp;Fondo:</value>
+    <value>&amp;formación:</value>
   </data>
   <data name="StyleBuilder_BackgroundPanel_MimeType_Label" xml:space="preserve">
     <value>Tipo MIME:</value>
@@ -847,7 +835,7 @@
     <value>Izquierda:</value>
   </data>
   <data name="StyleBuilder_EdgesPanel_Padding_Label" xml:space="preserve">
-    <value>Acolchado:</value>
+    <value>guata:</value>
   </data>
   <data name="StyleBuilder_EdgesPanel_ResetButton_Text" xml:space="preserve">
     <value>Resetear</value>
@@ -907,7 +895,7 @@
     <value>Color:</value>
   </data>
   <data name="StyleBuilder_TextPanel_Font_Label" xml:space="preserve">
-    <value>&amp;Fuente:</value>
+    <value>&amp;pila:</value>
   </data>
   <data name="StyleBuilder_TextPanel_Horizontal_Label" xml:space="preserve">
     <value>Horizontal:</value>
@@ -922,7 +910,7 @@
     <value>Tamaño:</value>
   </data>
   <data name="StyleBuilder_TextPanel_Strikeout_Checkbox" xml:space="preserve">
-    <value>Tachado</value>
+    <value>ponche</value>
   </data>
   <data name="StyleBuilder_TextPanel_Underline_Checkbox" xml:space="preserve">
     <value>Subrayar</value>
@@ -934,7 +922,7 @@
     <value>Texto</value>
   </data>
   <data name="StylePasteContextMenuItem_Tooltip" xml:space="preserve">
-    <value>Utilice CTRL pegar estilo para varios elementos.</value>
+    <value>Use Ctrl + pegar estilo para varios elementos.</value>
   </data>
   <data name="TypeExplorerDialog_SelectType" xml:space="preserve">
     <value>Seleccione el tipo: </value>
@@ -955,7 +943,7 @@
     <value>Grupos de categorías</value>
   </data>
   <data name="SeriesGroups" xml:space="preserve">
-    <value>Grupos de series</value>
+    <value>Series Groups</value>
   </data>
   <data name="ReportExplorer_Titles" xml:space="preserve">
     <value>Títulos</value>
@@ -964,10 +952,10 @@
     <value>Leyendas</value>
   </data>
   <data name="ReportExplorer_Angular" xml:space="preserve">
-    <value>Angular</value>
+    <value>angular</value>
   </data>
   <data name="ReportExplorer_Radial" xml:space="preserve">
-    <value>Radial</value>
+    <value>radial</value>
   </data>
   <data name="GeolocationGroups" xml:space="preserve">
     <value>Grupos de geolocalización</value>
@@ -979,7 +967,7 @@
     <value>Estilos</value>
   </data>
   <data name="ReportExplorer_NoReport" xml:space="preserve">
-    <value>(sin informe)</value>
+    <value>(Sin informe)</value>
   </data>
   <data name="ReportExplorer_Legend" xml:space="preserve">
     <value>Leyenda</value>
@@ -1015,7 +1003,7 @@
     <value>Agrupación</value>
   </data>
   <data name="DataExplorer_Column_Filter" xml:space="preserve">
-    <value>Filtro</value>
+    <value>Filtrar</value>
   </data>
   <data name="DataExplorer_Column_Sorting" xml:space="preserve">
     <value>Clasificación</value>
@@ -1036,7 +1024,7 @@
     <value>Elemento</value>
   </data>
   <data name="ContextMenu_ConditionalFormatting" xml:space="preserve">
-    <value>Formato condicional..</value>
+    <value>Formato condicional...</value>
   </data>
   <data name="GroupExplorer_Column_Label" xml:space="preserve">
     <value>Etiqueta</value>
@@ -1045,37 +1033,37 @@
     <value>Seleccionar</value>
   </data>
   <data name="ContextMenu_Table_Above" xml:space="preserve">
-    <value>Encima</value>
+    <value>encima</value>
   </data>
   <data name="ContextMenu_Table_AddGroup" xml:space="preserve">
     <value>Agregar grupo</value>
   </data>
   <data name="ContextMenu_Table_AddTotal" xml:space="preserve">
-    <value>Agregar total</value>
+    <value>Añadir total</value>
   </data>
   <data name="ContextMenu_Table_AdjacentAbove" xml:space="preserve">
     <value>Adyacente arriba</value>
   </data>
   <data name="ContextMenu_Table_AdjacentBelow" xml:space="preserve">
-    <value>Adyacentes</value>
+    <value>Adyacente a continuación</value>
   </data>
   <data name="ContextMenu_Table_AdjacentLeft" xml:space="preserve">
     <value>Adyacente a la izquierda</value>
   </data>
   <data name="ContextMenu_Table_AdjacentRight" xml:space="preserve">
-    <value>Adyacente a la derecha</value>
+    <value>Adyacente derecha</value>
   </data>
   <data name="ContextMenu_Table_After" xml:space="preserve">
     <value>Después</value>
   </data>
   <data name="ContextMenu_Table_Before" xml:space="preserve">
-    <value>Antes</value>
+    <value>antes que</value>
   </data>
   <data name="ContextMenu_Table_Below" xml:space="preserve">
-    <value>Debajo</value>
+    <value>abajo de</value>
   </data>
   <data name="ContextMenu_Table_ChildGroup" xml:space="preserve">
-    <value>Grupo secundario</value>
+    <value>Grupo infantil</value>
   </data>
   <data name="ContextMenu_Table_Column" xml:space="preserve">
     <value>Columna</value>
@@ -1093,7 +1081,7 @@
     <value>Eliminar Filas</value>
   </data>
   <data name="ContextMenu_Table_GroupProperties" xml:space="preserve">
-    <value>Propiedades del grupo</value>
+    <value>Propiedades de grupo</value>
   </data>
   <data name="ContextMenu_Table_InsertColumn" xml:space="preserve">
     <value>Insertar columna</value>
@@ -1108,10 +1096,10 @@
     <value>Dentro del grupo-abajo</value>
   </data>
   <data name="ContextMenu_Table_InsideGroupLeft" xml:space="preserve">
-    <value>Dentro del grupo-izquierda</value>
+    <value>Grupo interior-izquierda</value>
   </data>
   <data name="ContextMenu_Table_InsideGroupRight" xml:space="preserve">
-    <value>Grupo interior-derecha</value>
+    <value>Dentro del grupo-derecha</value>
   </data>
   <data name="ContextMenu_Table_Left" xml:space="preserve">
     <value>Izquierda</value>
@@ -1120,7 +1108,7 @@
     <value>Combinar Celdas</value>
   </data>
   <data name="ContextMenu_Table_OutsideGroupAbove" xml:space="preserve">
-    <value>Fuera del grupo-arriba</value>
+    <value>Grupo exterior-arriba</value>
   </data>
   <data name="ContextMenu_Table_OutsideGroupBelow" xml:space="preserve">
     <value>Fuera del grupo-abajo</value>
@@ -1129,13 +1117,13 @@
     <value>Grupo exterior-izquierda</value>
   </data>
   <data name="ContextMenu_Table_OutsideGroupRight" xml:space="preserve">
-    <value>Fuera del grupo-derecho</value>
+    <value>Grupo exterior-derecho</value>
   </data>
   <data name="ContextMenu_Table_ParentGroup" xml:space="preserve">
     <value>Grupo de padres</value>
   </data>
   <data name="ContextMenu_Table_Right" xml:space="preserve">
-    <value>Derecha</value>
+    <value>Derecho</value>
   </data>
   <data name="ContextMenu_Table_RotateLayout" xml:space="preserve">
     <value>Rotar diseño</value>
@@ -1147,40 +1135,40 @@
     <value>Grupo de filas</value>
   </data>
   <data name="ContextMenu_Table_SplitCells" xml:space="preserve">
-    <value>Celdas divididas</value>
+    <value>Células partidas</value>
   </data>
   <data name="StyleRulesEditor_Export_Text" xml:space="preserve">
-    <value>&amp;Exportación</value>
+    <value>&amp;exportar</value>
   </data>
   <data name="FileDialog_Filter_AllFiles" xml:space="preserve">
     <value>Todos los archivos</value>
   </data>
   <data name="StyleRuleCollectionEditor_FileName" xml:space="preserve">
-    <value>Nueva hoja de estilos de informes de Telerik</value>
+    <value>Nueva hoja de estilo de informes de Telerik</value>
   </data>
   <data name="ContextMenuItem_AddChildGeoLocationMapGroup" xml:space="preserve">
-    <value>Agregar grupo de mapa de ubicación del niño geo</value>
+    <value>Agregar grupo de mapas de ubicación geográfica secundaria</value>
   </data>
   <data name="ContextMenuItem_AddChildShapeMapGroup" xml:space="preserve">
-    <value>Agregar grupo de mapas de formas infantiles</value>
+    <value>Agregar grupo de asignación de forma secundaria</value>
   </data>
   <data name="ContextMenuItem_AddParentGeoLocationMapGroup" xml:space="preserve">
-    <value>Agregar grupo de mapa de ubicación del geo padre</value>
+    <value>Agregar grupo de mapas de ubicación geográfica principal</value>
   </data>
   <data name="ContextMenuItem_AddParentShapeMapGroup" xml:space="preserve">
-    <value>Agregar grupo de mapas de formas padre</value>
+    <value>Agregar grupo de mapa de forma principal</value>
   </data>
   <data name="ContextMenuItem_DeleteGeoLocationMapGroup" xml:space="preserve">
     <value>Eliminar grupo de mapas de ubicación geográfica</value>
   </data>
   <data name="ContextMenuItem_DeleteGeoLocationMapGroup_Warning" xml:space="preserve">
-    <value>¿desea eliminar el grupo seleccionado?</value>
+    <value>¿Eliminar el grupo seleccionado?</value>
   </data>
   <data name="ContextMenuItem_DeleteShapeMapGroup" xml:space="preserve">
     <value>Eliminar grupo de mapas de formas</value>
   </data>
   <data name="ContextMenuItem_DeleteShapeMapGroup_Warning" xml:space="preserve">
-    <value>¿desea eliminar el grupo seleccionado?</value>
+    <value>¿Eliminar el grupo seleccionado?</value>
   </data>
   <data name="ContextMenuItem_AddChildMapGroup" xml:space="preserve">
     <value>Agregar grupo de mapas secundarios</value>
@@ -1192,7 +1180,7 @@
     <value>Eliminar grupo de mapas</value>
   </data>
   <data name="ContextMenuItem_DeleteMapGroup_Warning" xml:space="preserve">
-    <value>¿desea eliminar el grupo seleccionado?</value>
+    <value>¿Eliminar el grupo seleccionado?</value>
   </data>
   <data name="ContextMenuItem_AddChildGroup" xml:space="preserve">
     <value>Agregar grupo secundario</value>
@@ -1213,19 +1201,19 @@
     <value>Eliminar grupo</value>
   </data>
   <data name="ContextMenuItem_DeleteGroup_Warning" xml:space="preserve">
-    <value>¿desea eliminar el grupo seleccionado?</value>
+    <value>¿Eliminar el grupo seleccionado?</value>
   </data>
   <data name="ContextMenuItem_DeleteParameter" xml:space="preserve">
     <value>Eliminar parámetro</value>
   </data>
   <data name="ContextMenuItem_DeleteParamete_Warning" xml:space="preserve">
-    <value>¿desea eliminar el parámetro seleccionado?</value>
+    <value>¿Eliminar el parámetro seleccionado?</value>
   </data>
   <data name="ContextMenuItem_DeleteStyleRule" xml:space="preserve">
     <value>Eliminar regla de estilo</value>
   </data>
   <data name="ContextMenuItem_DeleteStyleRule_Warning" xml:space="preserve">
-    <value>¿desea eliminar la regla de estilo seleccionada?</value>
+    <value>¿Eliminar la regla de estilo seleccionada?</value>
   </data>
   <data name="ContextMenuItem_EditParameter" xml:space="preserve">
     <value>Editar parámetro</value>
@@ -1240,10 +1228,13 @@
     <value>Editar hoja de estilos</value>
   </data>
   <data name="ContextMenuItem_GroupProperties" xml:space="preserve">
-    <value>Propiedades del grupo</value>
+    <value>Propiedades de grupo</value>
+  </data>
+  <data name="ContextMenuItem_DetailSectionProperties" xml:space="preserve">
+    <value>Detalle sección propiedades</value>
   </data>
   <data name="ContextMenuItem_Watermarks" xml:space="preserve">
-    <value>Marcas</value>
+    <value>Filigranas</value>
   </data>
   <data name="EditActionDialog_ChooseAction" xml:space="preserve">
     <value>Elija una acción</value>
@@ -1252,22 +1243,22 @@
     <value>Ninguno</value>
   </data>
   <data name="EditActionDialog_Action_ToggleVisibility" xml:space="preserve">
-    <value>Activar visibilidad</value>
+    <value>Alternar visibilidad</value>
   </data>
   <data name="EditActionDialog_Action_Sorting" xml:space="preserve">
     <value>Clasificación</value>
   </data>
   <data name="EditActionDialog_Action_NavigateToURL" xml:space="preserve">
-    <value>Desplácese a URL</value>
+    <value>Navegue a la dirección URL</value>
   </data>
   <data name="EditActionDialog_Action_Custom" xml:space="preserve">
     <value>Personalizado</value>
   </data>
   <data name="EditActionDialog_Action_NavigateToReport" xml:space="preserve">
-    <value>Desplácese hasta informe</value>
+    <value>Navegue hasta notificar</value>
   </data>
   <data name="EditActionDialog_Action_NavigateToBookmark" xml:space="preserve">
-    <value>Desplácese hasta marcador</value>
+    <value>Navegue hasta Bookmark</value>
   </data>
   <data name="EditActionDialog_ActionSetup" xml:space="preserve">
     <value>Configuración de acción</value>
@@ -1276,13 +1267,13 @@
     <value>Origen del informe seleccionado:</value>
   </data>
   <data name="EditActionDialog_SelectReportSource" xml:space="preserve">
-    <value>Seleccionar un origen de informe</value>
+    <value>Seleccione un origen de informe</value>
   </data>
   <data name="EditActionDialog_TargetBookmarkID" xml:space="preserve">
-    <value>ID de marcador de destino</value>
+    <value>IDENTIFICADOR de marcador de destino</value>
   </data>
   <data name="EditActionDialog_SameWindow" xml:space="preserve">
-    <value>Misma ventana</value>
+    <value>La misma ventana</value>
   </data>
   <data name="EditActionDialog_NewWindow" xml:space="preserve">
     <value>Nueva ventana</value>
@@ -1291,34 +1282,34 @@
     <value>URL de destino</value>
   </data>
   <data name="EditActionDialog_LinkTarget" xml:space="preserve">
-    <value>Destino de vínculo</value>
+    <value>Vincular destino</value>
   </data>
   <data name="EditActionDialog_ToggleTargets" xml:space="preserve">
-    <value>Alternar destinos</value>
+    <value>Alternar objetivos</value>
   </data>
   <data name="EditActionDialog_SelectToggleTargets" xml:space="preserve">
-    <value>Seleccionar destinos de alternar</value>
+    <value>Seleccione alternar objetivos</value>
   </data>
   <data name="EditActionDialog_ToggleMarkInitiallyExpanded" xml:space="preserve">
-    <value>Marca de alternancia expandida inicialmente</value>
+    <value>La marca de alternancia se expandió inicialmente</value>
   </data>
   <data name="EditActionDialog_SortTargets" xml:space="preserve">
-    <value>Ordenar destinos</value>
+    <value>Ordene los objetivos</value>
   </data>
   <data name="EditActionDialog_SelectSortTargets" xml:space="preserve">
-    <value>Seleccionar destinos de ordenación</value>
+    <value>Seleccione ordenar objetivos</value>
   </data>
   <data name="EditActionDialog_SortExpression" xml:space="preserve">
     <value>Expresión de ordenación</value>
   </data>
   <data name="EditActionDialog_SelectParameters" xml:space="preserve">
-    <value>Seleccionar parámetros</value>
+    <value>Seleccione los parámetros</value>
   </data>
   <data name="EditActionDialog_NoActionWillBeTriggered" xml:space="preserve">
-    <value>No se desencadenará ninguna acción</value>
+    <value>No se activará ninguna acción</value>
   </data>
   <data name="EditActionDialog_NavigateToReport" xml:space="preserve">
-    <value>Desplácese hasta informe</value>
+    <value>Navegue hasta notificar</value>
   </data>
   <data name="EditActionDialog_Text" xml:space="preserve">
     <value>Editar acción</value>
@@ -1336,13 +1327,13 @@
     <value>Elija una fuente</value>
   </data>
   <data name="EditReportSourceDialog_ObjectInstance" xml:space="preserve">
-    <value>Instancia de objeto (Legacy)</value>
+    <value>Instancia de objeto (heredado)</value>
   </data>
   <data name="EditReportSourceDialog_TypeName" xml:space="preserve">
     <value>Nombre de tipo</value>
   </data>
   <data name="EditReportSourceDialog_XxmlMarkup" xml:space="preserve">
-    <value>Marcado XML</value>
+    <value>El marcado XML</value>
   </data>
   <data name="EditReportSourceDialog_UrlToFile" xml:space="preserve">
     <value>URL o archivo</value>
@@ -1351,28 +1342,28 @@
     <value>Ninguno</value>
   </data>
   <data name="EditReportSourceDialog_SourceSetup" xml:space="preserve">
-    <value>Configuración de origen</value>
+    <value>La configuración de origen</value>
   </data>
   <data name="EditReportSourceDialog_Text" xml:space="preserve">
-    <value>Editar origen del informe</value>
+    <value>Editar origen de informe</value>
   </data>
   <data name="EditTypeReportSourceControl_Description" xml:space="preserve">
     <value>Permite cargar un documento de informe desde un nombre calificado de ensamblado.</value>
   </data>
   <data name="EditTypeReportSourceControl_Text" xml:space="preserve">
-    <value>Configurar un tipo de informe fuente:</value>
+    <value>Configurar un origen de informe de tipo:</value>
   </data>
   <data name="EditTypeReportSourceControl_SelectReportType_" xml:space="preserve">
-    <value>Seleccione un tipo de informe:</value>
+    <value>Seleccione un tipo de reporte:</value>
   </data>
   <data name="EditUriReportSourceControl_Description" xml:space="preserve">
-    <value>Permite cargar un documento de informe desde un identificador URI válido.</value>
+    <value>Permite cargar un documento de informe desde un URI válido.</value>
   </data>
   <data name="EditUriReportSourceControl_Text" xml:space="preserve">
-    <value>Configurar un origen de informes de URI:</value>
+    <value>Configurar un origen de informe URI:</value>
   </data>
   <data name="EditUriReportSourceControl_SelectFile" xml:space="preserve">
-    <value>Seleccione un archivo o ingrese una URL válida:</value>
+    <value>Seleccione un archivo o introduzca una URL válida:</value>
   </data>
   <data name="EditXmlReportSourceControl_Description" xml:space="preserve">
     <value>Permite cargar un documento de informe desde un marcado XML.</value>
@@ -1381,10 +1372,10 @@
     <value>Configurar un origen de informe XML:</value>
   </data>
   <data name="EditXmlReportSourceControl_EnterXml" xml:space="preserve">
-    <value>Especifique un marcado XML de informe:</value>
+    <value>Escriba un marcado XML de informe:</value>
   </data>
   <data name="SelectReportDocument" xml:space="preserve">
-    <value>Seleccionar documento de informe</value>
+    <value>Seleccione documento de informe</value>
   </data>
   <data name="SelectFile" xml:space="preserve">
     <value>
@@ -1394,7 +1385,7 @@ Seleccione un archivo</value>
     <value>Archivos de informe</value>
   </data>
   <data name="Null" xml:space="preserve">
-    <value>null</value>
+    <value>nulo</value>
   </data>
   <data name="ActionEditor_EditAction" xml:space="preserve">
     <value>Editar acción</value>
@@ -1403,19 +1394,19 @@ Seleccione un archivo</value>
     <value>Editar acción en</value>
   </data>
   <data name="SortingActionTargetsEditor_Title" xml:space="preserve">
-    <value>Editar destinos de acción de ordenación</value>
+    <value>Editar objetivos de acción de ordenación</value>
   </data>
   <data name="SortingActionTargetsEditor_Description_PartOne" xml:space="preserve">
-    <value>Los elementos/grupos de datos que desea ordenar deben estar en el mismo o en el ámbito de datos secundario según el elemento actual. Ejemplo: para ordenar una fila asociada al grupo anidado, el elemento de informe debe estar en una fila asociada con el grupo primario o superior en la jerarquía de contención.</value>
+    <value>Los elementos o grupos de datos que desea ordenar deben estar en el mismo ámbito de datos o secundario según el elemento actual. Ejemplo: para ordenar una fila asociada a un grupo anidado, el elemento de informe debe estar en una fila asociada con el grupo primario o superior en la jerarquía de contención.</value>
   </data>
   <data name="ActionTargetsEditor_Description_PartTwo" xml:space="preserve">
     <value>Si un elemento o un grupo no está en la lista de destino, compruebe que tiene un nombre válido.</value>
   </data>
   <data name="ToggleVisibilityTargetsEditor_Title" xml:space="preserve">
-    <value>Editar destinos de visibilidad de conmutación</value>
+    <value>Editar alternar objetivos de visibilidad</value>
   </data>
   <data name="ToggleVisibilityTargetsEditor_Description" xml:space="preserve">
-    <value>Los elementos/grupos de informes que desea mostrar u ocultar deben estar en el mismo o en el ámbito de datos secundario según el elemento actual. Ejemplo: para ocultar una fila asociada al grupo anidado, el elemento de informe debe estar en una fila asociada con el grupo primario o superior en la jerarquía de contención.</value>
+    <value>Los elementos o grupos de informes que desea mostrar u ocultar deben estar en el mismo ámbito de datos o secundario según el elemento actual. Ejemplo: para ocultar una fila asociada al grupo anidado, el elemento de informe debe estar en una fila asociada con el grupo primario o superior en la jerarquía de contención.</value>
   </data>
   <data name="ActionTargetsEditor_Columns_ItemGroup" xml:space="preserve">
     <value>Artículo/grupo</value>
@@ -1433,7 +1424,7 @@ Seleccione un archivo</value>
     <value>Valor</value>
   </data>
   <data name="Alias" xml:space="preserve">
-    <value>Alias</value>
+    <value>alias</value>
   </data>
   <data name="DataFieldMappingCollectionEditor_Title" xml:space="preserve">
     <value>Editar asignaciones</value>
@@ -1451,37 +1442,37 @@ Seleccione un archivo</value>
     <value>Alias de campo duplicado:</value>
   </data>
   <data name="LocationContext_GetObjectDefinitions_Location" xml:space="preserve">
-    <value>Obtiene la ubicación (latitud/longitud) de la instancia de punto de datos actual (mapa específico).</value>
+    <value>Obtiene la ubicación (latitud/longitud) de la instancia actual del punto de datos (específico del mapa).</value>
   </data>
   <data name="LocationContext_GetObjectDefinitions_Latitude" xml:space="preserve">
-    <value>Obtiene la latitud de la instancia de punto de datos actual (mapa específico).</value>
+    <value>Obtiene la latitud de la instancia actual del punto de datos (específica del mapa).</value>
   </data>
   <data name="LocationContext_GetObjectDefinitions_Longitude" xml:space="preserve">
-    <value>Obtiene la longitud de la instancia de punto de datos actual (mapa específico).</value>
+    <value>Obtiene la longitud de la instancia actual del punto de datos (específica del mapa).</value>
   </data>
   <data name="Operator" xml:space="preserve">
     <value>Operador</value>
   </data>
   <data name="FormattingRuleEditor_Comment" xml:space="preserve">
-    <value>Si escribe el carácter "7" en la celda Value, de forma predeterminada, esto se evalúa como la cadena "7". Para comparar una expresión numérica con el número 7, utilice la sintaxis de la expresión que comienza con un signo igual: = 7. Al previsualizar un informe, es posible que se vea un error en tiempo de ejecución a partir de que los errores de coincidencia de tipo de datos son similares a: "no se pueden comparar los datos de Types System. Int32 y System. String".</value>
+    <value>Si escribe el carácter "7" en la celda valor, de forma predeterminada, esto se evalúa como la cadena "7". Para comparar una expresión numérica con el número 7, utilice la sintaxis de la expresión que comienza con un signo igual: = 7. Al previsualizar un informe, es posible que vea un error en tiempo de ejecución de las discrepancias de tipo de datos es similar a: "no se puede comparar datos de tipos System. Int32 y System. String."</value>
   </data>
   <data name="Duplicate" xml:space="preserve">
     <value>Duplicar</value>
   </data>
   <data name="ShapeLegendItemContext_GetObjectDefinitions_RangeMinExpression_Description" xml:space="preserve">
-    <value>Determina el valor mínimo del rango de datos correspondiente (serie de mapas de formas específico).</value>
+    <value>Determina el valor mínimo del rango de datos respectivo (específico de la serie de mapas de formas).</value>
   </data>
   <data name="ShapeLegendItemContext_GetObjectDefinitions_RangeMaxExpression_Description" xml:space="preserve">
-    <value>Determina el valor máximo del rango de datos correspondiente (serie de mapas de formas específico).</value>
+    <value>Determina el valor máximo del rango de datos respectivo (específico de la serie de mapas de formas).</value>
   </data>
   <data name="MapRelationPairCollectionEditor_Columns_AnalyticalField" xml:space="preserve">
     <value>Campo analítico</value>
   </data>
   <data name="MapRelationPairCollectionEditor_Columns_ShapefileField" xml:space="preserve">
-    <value>Shapefile campo</value>
+    <value>Shapefile Field</value>
   </data>
   <data name="NoneTreeAdapter_SelectingNone" xml:space="preserve">
-    <value>Al seleccionar ' none ' se borra el enlace actual.</value>
+    <value>Al seleccionar ' ninguno ' se borra el enlace actual.</value>
   </data>
   <data name="ParameterCollectionEditor_Columns_ParameterName" xml:space="preserve">
     <value>Nombre del Parámetro</value>
@@ -1490,9 +1481,18 @@ Seleccione un archivo</value>
     <value>Valor de parámetro</value>
   </data>
   <data name="SqlDataSourceParameterCollectionEditor_Columns_DbType" xml:space="preserve">
-    <value>Tipo de dB</value>
+    <value>Tipo de base de datos</value>
   </data>
   <data name="None" xml:space="preserve">
-    <value>ninguno</value>
+    <value>ninguna</value>
+  </data>
+  <data name="WebService_ParameterCollectionEditor_Columns_Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="ConditionalFormattingPrimaryItemSelectorDescription" xml:space="preserve">
+    <value>Elija el elemento principal cuyo formato condicional se usará como plantilla. El formato condicional actualizado se aplicará a todos los elementos seleccionados. Todas las reglas de formato que no se enumeran en el editor se eliminarán.</value>
+  </data>
+  <data name="ConditionalFormattingPrimaryItemSelectorTitle" xml:space="preserve">
+    <value>Selector de elementos primarios</value>
   </data>
 </root>

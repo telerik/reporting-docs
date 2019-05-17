@@ -118,39 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="WarnCancelImportInProgress" xml:space="preserve">
-    <value>"importer en cours. \ r \ n êtes-vous sûr de vouloir annuler l'opération?"</value>
+    <value>"Import en cours. \ r \ n êtes-vous sûr de vouloir annuler l’opération?"</value>
   </data>
   <data name="Log_Error" xml:space="preserve">
     <value>Erreur</value>
   </data>
   <data name="Log_Info" xml:space="preserve">
-    <value>D'</value>
+    <value>info</value>
   </data>
   <data name="Log_Warning" xml:space="preserve">
-    <value>AVERTISSEMENT</value>
+    <value>alerte</value>
   </data>
   <data name="FilePage_LocationTextBox_PathError" xml:space="preserve">
-    <value>Le chemin n'est pas au format correct</value>
+    <value>Path n’est pas dans le format correct</value>
   </data>
   <data name="FilePage_ErrorMessageBox_Caption" xml:space="preserve">
     <value>Erreur</value>
   </data>
   <data name="FilePage_SaveDialogFilter" xml:space="preserve">
-    <value>Fichiers de rapport Telerik (* {0}) | * {0} | Tous les fichiers (*. *) | *. *</value>
+    <value>Fichiers de rapport Telerik (* {0}) | * {0} | Tous les fichiers (*.*) | *. *</value>
   </data>
   <data name="FilePage_CellValidating_AlreadyExist" xml:space="preserve">
     <value>Le fichier spécifié existe déjà et est en lecture seule.
-Veuillez choisir un nom de fichier différent.</value>
+Veuillez choisir un autre nom de fichier.</value>
   </data>
   <data name="FilePage_CellValidating_Replace" xml:space="preserve">
     <value>{0} existe déjà.
 Voulez-vous le remplacer?</value>
   </data>
   <data name="ImportReportWizard_Caption" xml:space="preserve">
-    <value>Assistant importation de rapports</value>
+    <value>Assistant importation de rapport</value>
   </data>
   <data name="NetReportLibraryOpenHandler_Filter" xml:space="preserve">
-    <value>bIbliothèque de rapports .net (* {0}) | * {0}</value>
+    <value>Bibliothèque de rapports .NET (* {0}) | * {0}</value>
   </data>
   <data name="ProjectPage_NoReportsAvailable" xml:space="preserve">
     <value>Aucun rapport disponible</value>
@@ -162,7 +162,7 @@ Voulez-vous le remplacer?</value>
     <value>Aucun rapport disponible</value>
   </data>
   <data name="ReportTreeView_EmptyNamespace" xml:space="preserve">
-    <value>[espace de noms vide]</value>
+    <value>[Espace de noms vide]</value>
   </data>
   <data name="ReportTreeView_Node_Uses" xml:space="preserve">
     <value>Utilise</value>
@@ -174,28 +174,28 @@ Voulez-vous le remplacer?</value>
     <value>Le nom du fichier ne peut pas être vide</value>
   </data>
   <data name="ValidateOutputFileForReport_ErrorAlreadyExist" xml:space="preserve">
-    <value>Le nom du fichier existe déjà dans la liste des rapports en attente.</value>
+    <value>Le nom de fichier existe déjà dans la liste des rapports en attente.</value>
   </data>
   <data name="Log_FileName" xml:space="preserve">
-    <value>Import Report {0: yyyy'-'MM'-'dd'T'HHmmss}. log</value>
+    <value>Import Report_ {0: YYYY'-YYYY'-'MM'-'DD’T’HH-'Dd’t’hhmmss}. log</value>
   </data>
   <data name="Log_Warning_CancelExport" xml:space="preserve">
-    <value>Importation annulée par l'utilisateur</value>
+    <value>Importation annulée par l’utilisateur</value>
   </data>
   <data name="Log_Info_Paused" xml:space="preserve">
     <value>Importation en pause</value>
   </data>
   <data name="Log_Info_Resumed" xml:space="preserve">
-    <value>Reprise de l'importation</value>
+    <value>Reprise de l’importation</value>
   </data>
   <data name="Log_Info_Started" xml:space="preserve">
     <value>Import démarré</value>
   </data>
   <data name="Log_Info_Completed" xml:space="preserve">
-    <value>Importation terminée</value>
+    <value>Importation complète</value>
   </data>
   <data name="Log_Error_Failed" xml:space="preserve">
-    <value>Échec de l'importation</value>
+    <value>Échec de l’importation</value>
   </data>
   <data name="Log_Info_Completed_Report" xml:space="preserve">
     <value>Rapport: {0}</value>

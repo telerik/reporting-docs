@@ -118,31 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UnitParseNoDigits" xml:space="preserve">
-    <value>{0} ne peut pas être analysé en tant qu'unité car il ne contient pas de valeurs numériques. Les exemples de chaînes d'unités valides sont 1PT et. 5in.</value>
+    <value>{0} ne peut pas être analysé en tant qu’unité, car il ne contient pas de valeurs numériques. Des exemples de chaînes d’unités valides sont 1PT et. 5in.</value>
   </data>
   <data name="UnitParseNoUnit" xml:space="preserve">
-    <value>{0} ne contient pas de spécification unitaire. Les exemples de chaînes d'unités valides sont 1PT et. 5in.</value>
+    <value>{0} ne contient pas de spécification unitaire. Des exemples de chaînes d’unités valides sont 1PT et. 5in.</value>
   </data>
   <data name="UnitParseNumericPart" xml:space="preserve">
-    <value>La partie numérique de {0} ne peut pas être analysée en tant qu'unité de type {2}.</value>
+    <value>La portion numérique de {0} ne peut pas être analysée comme une unité de type {2}.</value>
   </data>
   <data name="InvalidUnitType" xml:space="preserve">
-    <value>Type d'unité non valide.</value>
+    <value>Type d’unité non valide.</value>
   </data>
   <data name="InvalidArgumentType" xml:space="preserve">
     <value>{0} doit être de type {1}</value>
   </data>
   <data name="GlobalStyleAlreadyDefined" xml:space="preserve">
-    <value>Le style avec le nom «{0}» est déjà défini.</value>
+    <value>Le style avec le nom "{0}" est déjà défini.</value>
   </data>
   <data name="TextParseFailedFormat" xml:space="preserve">
-    <value>Impossible d'analyser le texte attendu ("{0}") au format "{1}".</value>
+    <value>Impossible d’analyser le texte attendu du texte ("{0}") au format "{1}".</value>
   </data>
   <data name="ToStringNone" xml:space="preserve">
     <value>(aucun)</value>
   </data>
   <data name="ReportItemBaseNotChild" xml:space="preserve">
-    <value>'Child'n'est pas un élément de rapport enfant de ce parent.</value>
+    <value>«Enfant» n’est pas un élément de rapport enfant de ce parent.</value>
   </data>
   <data name="DataBinderPropNotFound" xml:space="preserve">
     <value>{0} ne contient pas de propriété {1}.</value>
@@ -151,9 +151,9 @@
     <value>Le nombre de colonnes doit être supérieur ou égal à 1.</value>
   </data>
   <data name="InvalidColumnSpacing" xml:space="preserve">
-    <value>L'espacement des colonnes doit être une unité non négative.</value>
+    <value>L’espacement des colonnes doit être une unité non négative.</value>
   </data>
   <data name="MinimumSupportedFontSize" xml:space="preserve">
-    <value>La valeur de taille de police prise en charge minimale est {0}. Objet Report: {1}</value>
+    <value>La valeur de taille de police minimale supportée est {0}. Objet de rapport: {1}</value>
   </data>
 </root>

@@ -117,57 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CheckBoxText_Name" xml:space="preserve">
-    <value>Текст</value>
-  </data>
-  <data name="BarSeries_MergedDataPoints_Description" xml:space="preserve">
-    <value>Получает параметры, необходимые для определения, если и каким алгоритм для слияния точек данных.</value>
-  </data>
-  <data name="BarSeries_MergedDataPoints_Name" xml:space="preserve">
-    <value>Объединенные точки данных</value>
-  </data>
-  <data name="MergedDataPoints_MergeMode_Description" xml:space="preserve">
-    <value>Определяет, должна ли и какая презентация использоваться для слияния точек данных. Алгоритм слияния далее задается пороговым режимом и пороговым значением, дополняющим setings.</value>
-  </data>
-  <data name="MergedDataPoints_MergeMode_Name" xml:space="preserve">
-    <value>Режим слияния</value>
-  </data>
-  <data name="MergedDataPoints_ThresholdMode_Description" xml:space="preserve">
-    <value>Получает или задает алгоритм, который будет использоваться при определении точек данных для слияния. Каждый алгоритм учитывает также значение свойства порогового значения.</value>
-  </data>
-  <data name="MergedDataPoints_ThresholdMode_Name" xml:space="preserve">
-    <value>Пороговый режим</value>
-  </data>
-  <data name="MergedDataPoints_ThresholdValue_Description" xml:space="preserve">
-    <value>Получает или задает пороговое значение при определении точек данных для слияния.</value>
-  </data>
-  <data name="MergedDataPoints_ThresholdValue_Name" xml:space="preserve">
-    <value>Пороговое значение</value>
-  </data>
-  <data name="MergedDataPoints_LegendItemLabel_Description" xml:space="preserve">
-    <value>Задает текст, который отображается в виде метки элемента легенды, соответствующего результирующей точке данных.</value>
-  </data>
-  <data name="MergedDataPoints_LegendItemLabel_Name" xml:space="preserve">
-    <value>Метка элемента легенды</value>
-  </data>
-  <data name="LineSeries_MissingValuesLineStyle_Description" xml:space="preserve">
-    <value>Задает стиль линии, соединяющей точки с обеих сторон точки данных с отсутствующим значением</value>
-  </data>
-  <data name="LineSeries_MissingValuesLineStyle_Name" xml:space="preserve">
-    <value>Отсутствующие значения стиль линии</value>
-  </data>
-  <data name="AreaSeries_MissingValuesAreaStyle_Description" xml:space="preserve">
-    <value>Стиль, применяемый к области, определяемой точками данных с отсутствующими значениями</value>
-  </data>
-  <data name="AreaSeries_MissingValuesAreaStyle_Name" xml:space="preserve">
-    <value>Стиль области отсутствующих значений</value>
-  </data>
-  <data name="TableGroup_PageBreak_Description" xml:space="preserve">
-    <value>Получает или задает правило торможения страницы для строк или столбцов представления этой группы таблиц.</value>
-  </data>
-  <data name="TableGroup_PageBreak_Name" xml:space="preserve">
-    <value>Разрыв страницы</value>
-  </data>
   <data name="AppearanceCategory" xml:space="preserve">
     <value>Внешний вид</value>
   </data>
@@ -181,10 +130,10 @@
     <value>Расположение</value>
   </data>
   <data name="StyleBackgroundColorDescr" xml:space="preserve">
-    <value>Цвет фона элемента.</value>
+    <value>Фоновый цвет элемента.</value>
   </data>
   <data name="StyleColorDescr" xml:space="preserve">
-    <value>Цвет переднего плана, используемый для отображения текста и рисунков в элементе.</value>
+    <value>Цвет переднего плана, используемый для отображения текста и графики в элементе.</value>
   </data>
   <data name="StyleBackgroundImageDescr" xml:space="preserve">
     <value>Фоновое изображение, используемое для элемента отчета.</value>
@@ -193,58 +142,58 @@
     <value>Повторяющийся шаблон для фонового изображения элемента отчета.</value>
   </data>
   <data name="StyleBackgroundImageImageData" xml:space="preserve">
-    <value>Изображение, отображаемое в виде фонового изображения.</value>
+    <value>Изображение, отображаемое в качестве фонового изображения.</value>
   </data>
   <data name="StyleBackgroundImageMIMEType" xml:space="preserve">
-    <value>Тип MIME фонового изображения.</value>
+    <value>Тип пантомимы фонового изображения.</value>
   </data>
   <data name="StyleFontDescr" xml:space="preserve">
     <value>Шрифт, используемый для отображения текста.</value>
   </data>
   <data name="StyleFontNameDescr" xml:space="preserve">
-    <value>Имя шрифта.</value>
+    <value>Название шрифта.</value>
   </data>
   <data name="StyleFontSizeDescr" xml:space="preserve">
     <value>Размер в точках шрифта.</value>
   </data>
   <data name="StyleFontBoldDescr" xml:space="preserve">
-    <value>Указывает, является ли шрифт полужирным.</value>
+    <value>Определяет, является ли шрифт жирным.</value>
   </data>
   <data name="StyleFontItalicDescr" xml:space="preserve">
-    <value>Указывает, является ли шрифт курсивом.</value>
+    <value>Определяет, является ли шрифт курсивом.</value>
   </data>
   <data name="StyleFontUnderlineDescr" xml:space="preserve">
-    <value>Указывает, является ли шрифт подчеркиванием.</value>
+    <value>Указывает, подчеркивается ли шрифт.</value>
   </data>
   <data name="StyleFontStrikeoutDescr" xml:space="preserve">
-    <value>Указывает, является ли шрифт вычеркиванием.</value>
+    <value>Определяет, является ли шрифт зачершним.</value>
   </data>
   <data name="StyleFontStyleDescr" xml:space="preserve">
     <value>Стиль шрифта.</value>
   </data>
   <data name="StyleBorderStyleDescr" xml:space="preserve">
-    <value>Стиль границы элемента.</value>
+    <value>Пограничный стиль предмета.</value>
   </data>
   <data name="StyleDefaultBorderStyleDescr" xml:space="preserve">
-    <value>Стиль границы элемента по умолчанию.</value>
+    <value>По умолчанию границы стиль элемента.</value>
   </data>
   <data name="StyleTopBorderStyleDescr" xml:space="preserve">
-    <value>Стиль верхнего края элемента.</value>
+    <value>Верхний стиль границы элемента.</value>
   </data>
   <data name="StyleBottomBorderStyleDescr" xml:space="preserve">
-    <value>Стиль нижней границы элемента.</value>
+    <value>Нижняя граница стиль элемента.</value>
   </data>
   <data name="StyleLeftBorderStyleDescr" xml:space="preserve">
-    <value>Стиль левой границы элемента.</value>
+    <value>Левый пограничный стиль элемента.</value>
   </data>
   <data name="StyleRightBorderStyleDescr" xml:space="preserve">
-    <value>Стиль правой границы элемента.</value>
+    <value>Правый пограничный стиль предмета.</value>
   </data>
   <data name="StyleBorderColorDescr" xml:space="preserve">
-    <value>Цвет границы элемента.</value>
+    <value>Окрас границы элемента.</value>
   </data>
   <data name="StyleDefaultBorderColorDescr" xml:space="preserve">
-    <value>Цвет границы по умолчанию для элемента.</value>
+    <value>Цвет границы элемента по умолчанию.</value>
   </data>
   <data name="StyleTopBorderColorDescr" xml:space="preserve">
     <value>Верхний цвет границы элемента.</value>
@@ -253,10 +202,10 @@
     <value>Цвет нижней границы элемента.</value>
   </data>
   <data name="StyleLeftBorderColorDescr" xml:space="preserve">
-    <value>Цвет левого края элемента.</value>
+    <value>Цвет левой границы элемента.</value>
   </data>
   <data name="StyleRightBorderColorDescr" xml:space="preserve">
-    <value>Правый цвет границы элемента.</value>
+    <value>Правый пограничный цвет предмета.</value>
   </data>
   <data name="StyleBorderWidthDescr" xml:space="preserve">
     <value>Ширина границы элемента.</value>
@@ -268,109 +217,109 @@
     <value>Верхняя ширина границы элемента.</value>
   </data>
   <data name="StyleBottomBorderWidthDescr" xml:space="preserve">
-    <value>Ширина нижней границы элемента.</value>
+    <value>Нижняя граница ширины элемента.</value>
   </data>
   <data name="StyleLeftBorderWidthDescr" xml:space="preserve">
-    <value>Ширина левой границы элемента.</value>
+    <value>Левая граница ширины элемента.</value>
   </data>
   <data name="StyleRightBorderWidthDescr" xml:space="preserve">
-    <value>Ширина правой границы элемента.</value>
+    <value>Правая граница ширины элемента.</value>
   </data>
   <data name="StyleTextAlignDescr" xml:space="preserve">
-    <value>Выравнивание текста по горизонтали.</value>
+    <value>Горизонтальное выравнивание текста.</value>
   </data>
   <data name="StyleVerticalAlignDescr" xml:space="preserve">
-    <value>Выравнивание текста по вертикали.</value>
+    <value>Вертикальное выравнивание текста.</value>
   </data>
   <data name="StylePaddingDescr" xml:space="preserve">
-    <value>Объем заполнения внутри объекта.</value>
+    <value>Количество набивки внутри объекта.</value>
   </data>
   <data name="StyleLeftPaddingDescr" xml:space="preserve">
-    <value>Количество отступов слева.</value>
+    <value>Количество набивки слева.</value>
   </data>
   <data name="StyleRightPaddingDescr" xml:space="preserve">
-    <value>Количество отступов справа.</value>
+    <value>Количество набивки справа.</value>
   </data>
   <data name="StyleTopPaddingDescr" xml:space="preserve">
-    <value>Количество обивка на вершине.</value>
+    <value>Количество набивки сверху.</value>
   </data>
   <data name="StyleBottomPaddingDescr" xml:space="preserve">
-    <value>Количество заполнения снизу.</value>
+    <value>Количество набивки на дно.</value>
   </data>
   <data name="StyleLineStyleDescr" xml:space="preserve">
-    <value>Стиль линий, используемый для рисования фигур.</value>
+    <value>Стиль линии, используемый для рисования фигур.</value>
   </data>
   <data name="StyleLineWidthDescr" xml:space="preserve">
-    <value>Ширина линии, используемая для рисования фигур.</value>
+    <value>Ширина линии используется для рисования фигур.</value>
   </data>
   <data name="ReportItemBaseVisibleDescr" xml:space="preserve">
-    <value>Указывает, должен ли элемент быть скрытым.</value>
+    <value>Указывает, должен ли элемент быть скрыт.</value>
   </data>
   <data name="ReportItemBaseParentDescr" xml:space="preserve">
     <value>Имя содержащего элемента отчета.</value>
   </data>
   <data name="ReportItemBaseStyleNameDescr" xml:space="preserve">
-    <value>Имя стиля, используемого для декорирования элемента.</value>
+    <value>Название стиля, используемого для декорирования предмета.</value>
   </data>
   <data name="ReportSectionBaseSizeDescr" xml:space="preserve">
-    <value>Размер раздела отчета.</value>
+    <value>Размер секции отчета.</value>
   </data>
   <data name="ReportSectionPageBreakDescr" xml:space="preserve">
-    <value>Указывает, где сделать разрыв страницы по отношению к этому разделу.</value>
+    <value>Определяет, где сделать страницу перерыва в отношении этого раздела.</value>
   </data>
   <data name="ReportSectionKeepTogetherDescr" xml:space="preserve">
-    <value>Указывает, что раздел следует хранить вместе на одной странице, если это возможно.</value>
+    <value>Указывает, что раздел следует держать вместе на одной странице, если это возможно.</value>
   </data>
   <data name="ReportItemLocationDescr" xml:space="preserve">
-    <value>Положение верхнего левого угла элемента отчета относительно его контейнера.</value>
+    <value>Положение верхнего левого угла элемента отчета по отношению к его контейнеру.</value>
   </data>
   <data name="ReportItemSizeDescr" xml:space="preserve">
     <value>Размер элемента отчета.</value>
   </data>
   <data name="ReportItemAnchoringDescr" xml:space="preserve">
-    <value>Определяет границы контейнера, к которому привязан определенный элемент отчета. Если элемент отчета привязан к кромке, расстояние между ближайшим краем элемента и заданным краем останется неизменным.</value>
+    <value>Определяет края контейнера, к которому привязан определенный элемент отчета. Когда элемент отчета закреплен на краю, расстояние между ближайшим краем элемента и указанным краем останется неизменным.</value>
   </data>
   <data name="ReportItemDockingDescr" xml:space="preserve">
-    <value>Определяет границы элемента отчета, привязанные к контейнеру.</value>
+    <value>Определяет, какие границы элемента отчета привязаны к контейнеру.</value>
   </data>
   <data name="DataBoundReportItemDataFieldDescr" xml:space="preserve">
-    <value>Имя поля из источника данных для привязки к элементу.</value>
+    <value>Название поля из источника данных для привязки к элементу.</value>
   </data>
   <data name="DataBoundReportItemFormatDescr" xml:space="preserve">
     <value>Строка форматирования.</value>
   </data>
   <data name="TextBoxCanGrowDescr" xml:space="preserve">
-    <value>Определяет, будет ли текстовое поле автоматически изменять размер для размещения длительного значения.</value>
+    <value>Определяет, будет ли текстовый ящик автоматически изменяем для размещения длинного значения.</value>
   </data>
   <data name="TextBoxCanShrinkDescr" xml:space="preserve">
-    <value>Определяет, сжимается ли текстовое поле в соответствии с меньшим значением.</value>
+    <value>Определяет, уменьшается ли текстовая коробка, чтобы соответствовать меньшей стоимости.</value>
   </data>
   <data name="TextBoxMultilineDescr" xml:space="preserve">
-    <value>Значение, указывающее, следует ли обработать возврат каретки (CRLF), хранящийся в тексте текстового поля.</value>
+    <value>Значение, указывающее, следует ли обрабатывать возвраты каретки (CRЛФ), хранящиеся в тексте текстового ящика.</value>
   </data>
   <data name="TextBoxValueDescr" xml:space="preserve">
-    <value>Значение, связанное с текстовым полем.</value>
+    <value>Значение, связанное с текстовой коробкой.</value>
   </data>
   <data name="TextBoxWordWrapDescr" xml:space="preserve">
-    <value>Указывает, будет ли текстовое поле автоматически переносить слова в начало следующей строки при необходимости.</value>
+    <value>Указывает, автоматически ли текстовый ящик заворачивает слова в начало следующей строки, когда это необходимо.</value>
   </data>
   <data name="TextBoxTextDirectionDescr" xml:space="preserve">
-    <value>Указывает, написан ли текст слева направо или справа налево.</value>
+    <value>Указывает, пишется ли текст слева направо или справа налево.</value>
   </data>
   <data name="TextBoxCultureDescr" xml:space="preserve">
-    <value>Получает или задает сведения о культуре, связанные с текстовым полем.</value>
+    <value>Получает или устанавливает информацию о культуре, связанную с текстовой коробкой.</value>
   </data>
   <data name="ReportCultureDescr" xml:space="preserve">
-    <value>Получает или задает сведения о культуре, связанные с отчетом.</value>
+    <value>Получает или устанавливает информацию о культуре, связанную с отчетом.</value>
   </data>
   <data name="ReportUnitOfMeasureDescr" xml:space="preserve">
-    <value>Единица измерения по умолчанию отчета.</value>
+    <value>Единица измерения отчета по умолчанию.</value>
   </data>
   <data name="ReportPageSettingsDescr" xml:space="preserve">
-    <value>Параметры страницы отчета по умолчанию.</value>
+    <value>Настройки страницы по умолчанию в отчете.</value>
   </data>
   <data name="ReportGlobalStylesDescr" xml:space="preserve">
-    <value>Коллекция стилей, определяемая глобально для отчета.</value>
+    <value>Коллекция стилей, определяемых глобально для отчета.</value>
   </data>
   <data name="ReportWatermarkDescr" xml:space="preserve">
     <value>Объект водяного знака отчета.</value>
@@ -379,55 +328,55 @@
     <value>Основной источник данных отчета.</value>
   </data>
   <data name="ReportDataMemberDescr" xml:space="preserve">
-    <value>Конкретный список в источнике данных, для которого отображаются данные в отчете или в разделе сведений.</value>
+    <value>Конкретный список в источнике данных, на котором отображаются данные в отчете или деталях раздела.</value>
   </data>
   <data name="ReportDataAdapterDescr" xml:space="preserve">
     <value>Объект адаптера данных, используемый для заполнения основного источника данных отчета.</value>
   </data>
   <data name="PageHeaderFooterPrintOnFirstPageDescr" xml:space="preserve">
-    <value>Указывает, будет ли раздел печататься на первой странице отчета.</value>
+    <value>Определяет, будет ли раздел напечатан на первой странице отчета.</value>
   </data>
   <data name="PageHeaderFooterPrintOnLastPageDescr" xml:space="preserve">
-    <value>Указывает, будет ли раздел печататься на последней странице отчета.</value>
+    <value>Определяет, будет ли раздел напечатан на последней странице отчета.</value>
   </data>
   <data name="GroupHeaderFooterPrintOnEveryPageDescr" xml:space="preserve">
-    <value>Указывает, будет ли раздел группы печататься только на первой странице, на которой отображается группа, или на каждой странице, на которой печатается группа.</value>
+    <value>Определяет, будет ли раздел группы напечатан только на первой странице, на которой отображается группа, или на каждой странице, на которой печатается группа.</value>
   </data>
   <data name="GroupHeaderGroupFooterDescr" xml:space="preserve">
-    <value>Нижний колонтитул группы, связанный с этим заголовком группы.</value>
+    <value>Колонтитул группы, связанный с этой группой заголовка.</value>
   </data>
   <data name="GroupHeaderPositionDescr" xml:space="preserve">
-    <value>Положение заголовка группы--вверху, слева или справа.</value>
+    <value>Положение заголовка группы-сверху, влево или вправо.</value>
   </data>
   <data name="GroupHeaderGroupKeepTogetherDescr" xml:space="preserve">
-    <value>Указывает, будет ли заголовок группы и нижний колонтитул будут напечатаны как единый блок на той же странице, если это возможно.</value>
+    <value>Определяет, будет ли заголовок группы и его колонтитулом печататься как единый блок на той же странице, если это возможно.</value>
   </data>
   <data name="GroupHeaderGroupFieldsDescr" xml:space="preserve">
-    <value>Коллекция объектов поля группы, используемых в качестве критериев для создания групп в отчете.</value>
+    <value>Коллекция объектов групповых полей, используемых в качестве критериев для создания групп в отчете.</value>
   </data>
   <data name="GroupFooterGroupHeaderDescr" xml:space="preserve">
-    <value>Заголовок группы, связанный с этим нижним колонтитулом группы.</value>
+    <value>Заголовок группы, связанный с этой группой колонтитулом.</value>
   </data>
   <data name="SectionPrintAtBottomDescr" xml:space="preserve">
-    <value>Указывает, следует ли печатать раздел в нижней части страницы.</value>
+    <value>Указывает, должен ли раздел быть напечатан в нижней части страницы.</value>
   </data>
   <data name="PictureBoxSizingDescr" xml:space="preserve">
-    <value>Внешний вид изображения, если он не соответствует заданному размеру.</value>
+    <value>Внешний вид изображения, если он не соответствует указанному размеру.</value>
   </data>
   <data name="PictureBoxImageDataDescr" xml:space="preserve">
-    <value>Изображение, отображаемое данным элементом.</value>
+    <value>Изображение, отображаное в этом элементе.</value>
   </data>
   <data name="PictureBoxMimeTypeDescr" xml:space="preserve">
-    <value>Получает или задает строку, содержащую универсальный тип расширения почты Интернета (MIME) образа.</value>
+    <value>Получает или устанавливает строку, которая содержит изображения в многоцелевой Интернет по почте расширений (МИМ) типа.</value>
   </data>
   <data name="ReportItemBaseStyleDescr" xml:space="preserve">
-    <value>Стиль элемента.</value>
+    <value>Стиль предмета.</value>
   </data>
   <data name="LinePoint1Descr" xml:space="preserve">
-    <value>Начальная точка линии.</value>
+    <value>Точка старта линии.</value>
   </data>
   <data name="LinePoint2Descr" xml:space="preserve">
-    <value>Конечная точка линии.</value>
+    <value>Конечный пункт линии.</value>
   </data>
   <data name="Shape_Angle_Description" xml:space="preserve">
     <value>Угол</value>
@@ -436,16 +385,16 @@
     <value>Формы</value>
   </data>
   <data name="Shape_Stretch_Description" xml:space="preserve">
-    <value>Растянуть</value>
+    <value>Стрейч</value>
   </data>
   <data name="BackslantLineShapeName" xml:space="preserve">
-    <value>Линия наклона</value>
+    <value>Линия обратной наклонной</value>
   </data>
   <data name="BottomArrowShapeName" xml:space="preserve">
     <value>Нижняя стрелка</value>
   </data>
   <data name="CrossShapeName" xml:space="preserve">
-    <value>Креста</value>
+    <value>Крест</value>
   </data>
   <data name="EllipseShapeName" xml:space="preserve">
     <value>Эллипс</value>
@@ -457,10 +406,10 @@
     <value>Горизонтальная линия</value>
   </data>
   <data name="LeftArrowShapeName" xml:space="preserve">
-    <value>Стрелка влево</value>
+    <value>Левая стрелка</value>
   </data>
   <data name="NRayStarShapeName" xml:space="preserve">
-    <value>{0}-звезда лучей</value>
+    <value>{0}-Ray Star</value>
   </data>
   <data name="OctagonShapeName" xml:space="preserve">
     <value>Восьмиугольник</value>
@@ -469,13 +418,13 @@
     <value>Пентагон</value>
   </data>
   <data name="PolygonShapeName" xml:space="preserve">
-    <value>{0}-Пн</value>
+    <value>{0}-Гон</value>
   </data>
   <data name="RightArrowShapeName" xml:space="preserve">
-    <value>Стрелка вправо</value>
+    <value>Правая стрелка</value>
   </data>
   <data name="SlantLineShapeName" xml:space="preserve">
-    <value>Наклонная линия</value>
+    <value>Линия наклонной</value>
   </data>
   <data name="SquareShapeName" xml:space="preserve">
     <value>Квадрат</value>
@@ -505,202 +454,202 @@
     <value>Настройки</value>
   </data>
   <data name="ChartAppearanceDescr" xml:space="preserve">
-    <value>Графические параметры диаграммы.</value>
+    <value>Диаграмма визуальных настроек.</value>
   </data>
   <data name="ChartCustomPalettesDescr" xml:space="preserve">
-    <value>Задает настраиваемые палитры для диаграммы.</value>
+    <value>Определяет пользовательские палитры для диаграммы.</value>
   </data>
   <data name="ChartDataGroupColumnDescr" xml:space="preserve">
-    <value>Имя столбца источника данных (элемента), который будет использоваться для разбиения значений Y из одного столбца на несколько рядов диаграммы.</value>
+    <value>Название столбца источника данных (участника), который будет использоваться для разделения значений Y из одной колонки на несколько серий диаграмм.</value>
   </data>
   <data name="ChartDefaultTypeDescr" xml:space="preserve">
-    <value>Задает тип набора данных по умолчанию.</value>
+    <value>Определяет тип серии данных по умолчанию.</value>
   </data>
   <data name="ChartImageFormatDescr" xml:space="preserve">
-    <value>Указывает формат изображения, в котором выполняется потоковая передача изображения.</value>
+    <value>Определяет формат изображения, в котором происходит потоковую передачу изображения.</value>
   </data>
   <data name="ChartLegendDescr" xml:space="preserve">
     <value>Параметры легенды.</value>
   </data>
   <data name="ChartPlotAreasDescr" xml:space="preserve">
-    <value>Определяет область построения диаграммы.</value>
+    <value>Определяет область участка диаграммы.</value>
   </data>
   <data name="ChartSeriesDescr" xml:space="preserve">
     <value>Коллекция серий.</value>
   </data>
   <data name="ChartSeriesOrientationDescr" xml:space="preserve">
-    <value>Задает ориентацию рядов диаграммы в области построения.</value>
+    <value>Определяет ориентацию серии диаграмм на область сюжета.</value>
   </data>
   <data name="ChartTitleDescr" xml:space="preserve">
-    <value>Название диаграммы.</value>
+    <value>Заголовок диаграммы.</value>
   </data>
   <data name="FiltersDescription" xml:space="preserve">
-    <value>Коллекция фильтров для ограничения данных.</value>
+    <value>Сбор фильтров для ограничения данных.</value>
   </data>
   <data name="GroupingDescription" xml:space="preserve">
-    <value>Коллекция выражений группирования, по которым группируются данные.</value>
+    <value>Сбор выражений группирования с целью группирования данных.</value>
   </data>
   <data name="GroupsDescription" xml:space="preserve">
     <value>Коллекция групп.</value>
   </data>
   <data name="ReportParametersDescription" xml:space="preserve">
-    <value>Коллекция параметров в отчете.</value>
+    <value>Набор параметров в отчете.</value>
   </data>
   <data name="SortingDescription" xml:space="preserve">
-    <value>Коллекция выражений сортировки для сортировки данных.</value>
+    <value>Сбор сортировочных выражений для сортировки данных.</value>
   </data>
   <data name="ReportDocumentNameDescription" xml:space="preserve">
-    <value>Задает имя файла при экспорте отчета в один из доступных форматов экспорта. Указывает имя корневого узла в схеме документа.</value>
+    <value>Определяет имя файла при экспорте отчета в один из доступных форматов экспорта. Указывает имя корневого узла в карте документа.</value>
   </data>
   <data name="ReportPageNumberingStyleDescription" xml:space="preserve">
-    <value>Стиль нумерации страниц для отчета..</value>
+    <value>Стиль нумерации страниц отчета..</value>
   </data>
   <data name="BarcodeAlignDescr" xml:space="preserve">
-    <value>Задает выравнивание штрих-кода по горизонтали.</value>
+    <value>Определяет горизонтальное выравнивание штрихкода.</value>
   </data>
   <data name="BarcodeModuleDescr" xml:space="preserve">
-    <value>Задает ширину самой узкой полосы штрих-кода.</value>
+    <value>Определяет ширину самого узкий бара в штрих-коде.</value>
   </data>
   <data name="DotsPerInchDescr" xml:space="preserve">
     <value>Определяет разрешение в точках на дюйм.</value>
   </data>
   <data name="BarcodeShowTextDescr" xml:space="preserve">
-    <value>Указывает, должен ли штрих-код отображать текст.</value>
+    <value>Определяет, должен ли штрих-код отображать текст.</value>
   </data>
   <data name="BarcodeValueDescr" xml:space="preserve">
-    <value>Задает значение, связанное со штрих-кодом.</value>
+    <value>Определяет значение, связанное со штрих-кодом.</value>
   </data>
   <data name="BarcodeAngleDescr" xml:space="preserve">
-    <value>Задает угол поворота штрих-кода в градусах.</value>
+    <value>Определяет угол вращения штрих-кода в градусах.</value>
   </data>
   <data name="BarcodeStretchDescr" xml:space="preserve">
-    <value>Указывает, следует ли растягивать штрих-код по горизонтали.</value>
+    <value>Определяет, следует ли растянуть штрих-код горизонтально.</value>
   </data>
   <data name="BarcodeSymbologyDescr" xml:space="preserve">
-    <value>Определяет текущую символику штрих-кода.</value>
+    <value>Определяет текущую символиологию штрихкода.</value>
   </data>
   <data name="BarcodeChecksumDescr" xml:space="preserve">
-    <value>Указывает, следует ли вычислять контрольную сумму для штрих-кода.</value>
+    <value>Определяет, следует ли вычислить флажок для штрихкода.</value>
   </data>
   <data name="CheckBoxValueDescr" xml:space="preserve">
-    <value>Значение, связанное с флажком.</value>
+    <value>Значение, связанное с проверкой Box.</value>
   </data>
   <data name="CheckBoxTrueValueDescr" xml:space="preserve">
-    <value>Шаблон значения, соответствующий установленному флажку.</value>
+    <value>Шаблон значения, соответствующий проверку флажок.</value>
   </data>
   <data name="CheckBoxFalseValueDescr" xml:space="preserve">
-    <value>Шаблон значения, соответствующий непроверяемому флажку.</value>
+    <value>Шаблон значения, соответствующий флажок "флажок".</value>
   </data>
   <data name="CheckBoxIndeterminateValueDescr" xml:space="preserve">
-    <value>Шаблон значения, соответствующий неопределенному флажку.</value>
+    <value>Шаблон значения, соответствующий неопределенного чека Box.</value>
   </data>
   <data name="CheckBoxCheckedImageDescr" xml:space="preserve">
-    <value>Изображение, соответствующее установленному флажку.</value>
+    <value>Изображение, соответствующее проверку флажок.</value>
   </data>
   <data name="CheckBoxUncheckedImageDescr" xml:space="preserve">
-    <value>Изображение, соответствующее непроверяемому флажку.</value>
+    <value>Изображение, соответствующее флажок "флажок".</value>
   </data>
   <data name="CheckBoxIndeterminateImageDescr" xml:space="preserve">
-    <value>Изображение, соответствующее неопределенному флажку.</value>
+    <value>Изображение, соответствующее неопределенный флажок.</value>
   </data>
   <data name="CheckBoxTextDescr" xml:space="preserve">
-    <value>Текст, связанный с флажком.</value>
+    <value>Текст, связанный с проверкой Box.</value>
   </data>
   <data name="CheckBoxCheckAlignDescr" xml:space="preserve">
-    <value>Выравнивание флажка на флажке.</value>
+    <value>Выравнивание чека на флажок.</value>
   </data>
   <data name="TextItemBaseCanGrowDescr" xml:space="preserve">
-    <value>Определяет, будет ли автоматически изменен размер текстового элемента для размещения длительного значения.</value>
+    <value>Определяет, будет ли элемент текста автоматически изменяем для размещения длинного значения.</value>
   </data>
   <data name="TextItemBaseCanShrinkDescr" xml:space="preserve">
-    <value>Определяет, сжимается ли текстовый элемент в соответствии с меньшим значением.</value>
+    <value>Определяет, подходит ли элемент текста в соответствии с меньшим значением.</value>
   </data>
   <data name="TextItemBaseMultilineDescr" xml:space="preserve">
-    <value>Значение, указывающее, следует ли обработать возврат каретки (CRLF), хранящийся в тексте текстового элемента.</value>
+    <value>Значение, указывающее, следует ли обрабатывать возвраты каретки (CRЛФ), хранящиеся в тексте текстового элемента.</value>
   </data>
   <data name="TextItemBaseWordWrapDescr" xml:space="preserve">
-    <value>Указывает, будет ли текстовый элемент автоматически переносить слова в начало следующей строки при необходимости.</value>
+    <value>Указывает, автоматически ли элемент текста заворачивает слова в начало следующей строки при необходимости.</value>
   </data>
   <data name="TextItemBaseTextDirectionDescr" xml:space="preserve">
-    <value>Указывает, написан ли текст слева направо или справа налево.</value>
+    <value>Указывает, пишется ли текст слева направо или справа налево.</value>
   </data>
   <data name="TextItemBaseCultureDescr" xml:space="preserve">
-    <value>Получает или задает сведения о культуре, связанные с элементом текста.</value>
+    <value>Получает или устанавливает информацию о культуре, связанную с текстом элемента.</value>
   </data>
   <data name="ReportItemKeepTogetherDescr" xml:space="preserve">
-    <value>Указывает, что элемент должен содержаться вместе на одной странице, если это возможно.</value>
+    <value>Указывает, что элемент должен храниться вместе на одной странице, если это возможно.</value>
   </data>
   <data name="InteractivityCategory" xml:space="preserve">
     <value>Интерактивность</value>
   </data>
   <data name="ReportItemBaseActionDescr" xml:space="preserve">
-    <value>Получает или задает интерактивное действие, связанное с этим элементом отчета.</value>
+    <value>Получает или устанавливает интерактивное действие, связанное с этим пунктом отчета.</value>
   </data>
   <data name="ReportItemBaseBookmarkIdDescr" xml:space="preserve">
-    <value>Получает или задает идентификатор закладки для этого элемента.</value>
+    <value>Получает или устанавливает идентификатор закладки для этого элемента.</value>
   </data>
   <data name="ReportItemBaseDocumentMapTextDescr" xml:space="preserve">
-    <value>Получает или задает текст, отображаемый для данного элемента в схеме документа.</value>
+    <value>Получает или устанавливает текст для отображения для этого элемента в карте документа.</value>
   </data>
   <data name="ReportItemBaseTocTextDescr" xml:space="preserve">
-    <value>Получает или задает текст, отображаемый для данного элемента в оглавлении.</value>
+    <value>Получает или устанавливает текст, который будет отображаться для этого элемента в таблице содержимого.</value>
   </data>
   <data name="ReportItemBaseToolTipDescr" xml:space="preserve">
-    <value>Получает или задает подсказку, отображаемую для этого элемента при зависании.</value>
+    <value>Получает или устанавливает подсказки, которые будут отображаться для этого элемента, когда завис.</value>
   </data>
   <data name="ChartSkinDescr" xml:space="preserve">
-    <value>Получает или задает имя обложки диаграммы.</value>
+    <value>Получает или устанавливает название кожи диаграммы.</value>
   </data>
   <data name="NoDataCategory" xml:space="preserve">
     <value>Нет данных</value>
   </data>
   <data name="NoDataMessageDesc" xml:space="preserve">
-    <value>Сообщение "нет данных"</value>
+    <value>Сообщение нет данных</value>
   </data>
   <data name="NoDataStyleDescr" xml:space="preserve">
-    <value>Стиль сообщения "нет данных"</value>
+    <value>Нет стиля сообщений данных</value>
   </data>
   <data name="MapLegendPositionDescr" xml:space="preserve">
     <value>Определяет положение легенды карты.</value>
   </data>
   <data name="MapTitlePositionDescr" xml:space="preserve">
-    <value>Определяет положение заголовка карты.</value>
+    <value>Определяет положение названия карты.</value>
   </data>
   <data name="MapTitleTextDescr" xml:space="preserve">
-    <value>Задает текст названия карты.</value>
+    <value>Определяет текст названия карты.</value>
   </data>
   <data name="ReportSectionWidthDescr" xml:space="preserve">
     <value>Ширина разделов отчета.</value>
   </data>
   <data name="BarcodeEncoderDescr" xml:space="preserve">
-    <value>Задает кодировщик для значения штрих-кода</value>
+    <value>Определяет кодировщик для значения штрихкода</value>
   </data>
   <data name="StyleLineColorDescr" xml:space="preserve">
-    <value>Цвет линии (штрих), используемый для рисования фигур.</value>
+    <value>Цвет линии (инсульт) используется для рисования фигур.</value>
   </data>
   <data name="ContainerCanShrinkDesc" xml:space="preserve">
-    <value>Указывает, будет ли контейнер автоматически обтекать дочерний элемент, если элемент был сокращен или скрыт.</value>
+    <value>Указывает, автоматически ли контейнер обертывает дочерний элемент, если элемент сбыл или скрыт.</value>
   </data>
   <data name="ReportItemBaseAccessibleDescr" xml:space="preserve">
-    <value>Получает или задает доступное описание для текущего элемента отчета.</value>
+    <value>Получает или устанавливает доступное описание для текущего элемента отчета.</value>
   </data>
   <data name="AnchoringStyles_Bottom_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem привязан к нижнему краю контейнера.</value>
+    <value>Телерик отчетность Репортитем крепится к нижнему краю его контейнера.</value>
   </data>
   <data name="AnchoringStyles_Description" xml:space="preserve">
-    <value>Указывает, как Telerik отчетов ReportItem якоря к краям его контейнера.</value>
+    <value>Указывает, как Телерик сообщает Репортитем якоря к краям своего контейнера.</value>
   </data>
   <data name="AnchoringStyles_Left_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem привязан к левому краю контейнера.</value>
+    <value>Телерик отчетность Репортитем закреплена на левом краю его контейнера.</value>
   </data>
   <data name="AnchoringStyles_None_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem не привязан к какому-либо краю контейнера.</value>
+    <value>Телерик отчетность Репортитем не привязан к какой-либо край его контейнера.</value>
   </data>
   <data name="AnchoringStyles_Right_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem привязан к правому краю контейнера.</value>
+    <value>Телерик отчетности Репортитем крепится на правый край его контейнера.</value>
   </data>
   <data name="AnchoringStyles_Top_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem привязан к верхнему краю контейнера.</value>
+    <value>Телерик отчетности Репортитем крепится к верхней кромки своего контейнера.</value>
   </data>
   <data name="BackgroundRepeat_Description" xml:space="preserve">
     <value>Указывает, как будет повторяться фоновое изображение.</value>
@@ -709,22 +658,22 @@
     <value>Фоновое изображение будет отображаться только один раз.</value>
   </data>
   <data name="BackgroundRepeat_RepeatX_Description" xml:space="preserve">
-    <value>Фоновое изображение будет повторяться по горизонтали.</value>
+    <value>Фоновое изображение будет повторяться горизонтально.</value>
   </data>
   <data name="BackgroundRepeat_RepeatY_Description" xml:space="preserve">
-    <value>Фоновое изображение будет повторяться по вертикали.</value>
+    <value>Фоновое изображение будет повторяться вертикально.</value>
   </data>
   <data name="BackgroundRepeat_Repeat_Description" xml:space="preserve">
-    <value>Фоновое изображение будет повторяться по вертикали и горизонтали.</value>
+    <value>Фоновое изображение будет повторяться вертикально и горизонтально.</value>
   </data>
   <data name="Barcode_Description" xml:space="preserve">
-    <value>Представляет элемент отчета штрих-кода.</value>
+    <value>Представляет элемент отчета о штрихкоде.</value>
   </data>
   <data name="BorderType_Dashed_Description" xml:space="preserve">
     <value>Пунктирная линия.</value>
   </data>
   <data name="BorderType_Description" xml:space="preserve">
-    <value>Задает тип границы.</value>
+    <value>Определяет тип границы.</value>
   </data>
   <data name="BorderType_Dotted_Description" xml:space="preserve">
     <value>Пунктирная линия.</value>
@@ -733,49 +682,49 @@
     <value>Двойная сплошная линия.</value>
   </data>
   <data name="BorderType_Groove_Description" xml:space="preserve">
-    <value>Рифленая линия для появления затонувшей границы.</value>
+    <value>Рифленая линия на затонувший пограничный вид.</value>
   </data>
   <data name="BorderType_Inset_Description" xml:space="preserve">
-    <value>Линия вставки для появления затонувшего элемента.</value>
+    <value>Вставка линии для появления затонувшего элемента.</value>
   </data>
   <data name="BorderType_None_Description" xml:space="preserve">
     <value>Нет линии.</value>
   </data>
   <data name="BorderType_Outset_Description" xml:space="preserve">
-    <value>Начальная линия для внешнего вида поднятого элемента.</value>
+    <value>Строка начала для поднятого внешнего вида элемента.</value>
   </data>
   <data name="BorderType_Ridge_Description" xml:space="preserve">
-    <value>Ребристая линия для приподнятого внешнего вида границы.</value>
+    <value>Ребристых линии для поднял вид границы.</value>
   </data>
   <data name="BorderType_Solid_Description" xml:space="preserve">
     <value>Сплошная линия.</value>
   </data>
   <data name="DockingStyle_Bottom_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem прикрепляется к нижнему краю контейнера.</value>
+    <value>Телерик отчетности Репортитем состыковался с нижней кромкой своего контейнера.</value>
   </data>
   <data name="DockingStyle_Description" xml:space="preserve">
-    <value>Указывает, как Telerik отчетов ReportItem доки к краям его контейнера.</value>
+    <value>Определяет, как Телерик отчетности Репортитем доки к краям своего контейнера.</value>
   </data>
   <data name="DockingStyle_Fill_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem прикрепляется ко всем краям контейнера.</value>
+    <value>Телерик отчетности Репортитем пристыкован ко всем краям его контейнера.</value>
   </data>
   <data name="DockingStyle_Left_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem прикрепляется к левому краю контейнера.</value>
+    <value>Телерик отчетности Репортитем состыковался с левым краем своего контейнера.</value>
   </data>
   <data name="DockingStyle_None_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem не прикреплен к какому-либо краю контейнера.</value>
+    <value>Телерик отчетности Репортитем не пристыкован к любой край его контейнера.</value>
   </data>
   <data name="DockingStyle_Right_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem прикрепляется к правому краю контейнера.</value>
+    <value>Телерик отчетности Репортитем состыковался с правой кромки своего контейнера.</value>
   </data>
   <data name="DockingStyle_Top_Description" xml:space="preserve">
-    <value>Telerik Reporting ReportItem прикрепляется к верхнему краю контейнера.</value>
+    <value>Телерик отчетности Репортитем состыковался с верхнего края его контейнера.</value>
   </data>
   <data name="FilterOperator_BottomN_Description" xml:space="preserve">
     <value>Нижний N</value>
   </data>
   <data name="FilterOperator_BottomPercent_Description" xml:space="preserve">
-    <value>Нижней%</value>
+    <value>Нижней части</value>
   </data>
   <data name="FilterOperator_Description" xml:space="preserve">
     <value>Оператор фильтра</value>
@@ -811,46 +760,46 @@
     <value>Топ N</value>
   </data>
   <data name="FilterOperator_TopPercent_Description" xml:space="preserve">
-    <value>Верхней%</value>
+    <value>Топ</value>
   </data>
   <data name="HorizontalAlign_Center_Description" xml:space="preserve">
     <value>Указывает, что текст выравнивается по центру.</value>
   </data>
   <data name="HorizontalAlign_Description" xml:space="preserve">
-    <value>Задает выравнивание текста по горизонтали в элементе отчета.</value>
+    <value>Указывает горизонтальное выравнивание текста в пункте отчета.</value>
   </data>
   <data name="HorizontalAlign_Justify_Description" xml:space="preserve">
-    <value>Указывает, что текст является обоснованным.</value>
+    <value>Указывает, что текст оправдан.</value>
   </data>
   <data name="HorizontalAlign_Left_Description" xml:space="preserve">
-    <value>Указывает, что текст выравнивается по левому краю.</value>
+    <value>Указывает, что текст выравнивается влево.</value>
   </data>
   <data name="HorizontalAlign_Right_Description" xml:space="preserve">
-    <value>Указывает, что текст выравнивается по правому краю.</value>
+    <value>Указывает, что текст выравнивается вправо.</value>
   </data>
   <data name="ImageSizeMode_AutoSize_Description" xml:space="preserve">
-    <value>Увеличение или уменьшение границ элемента изображения в соответствии с изображением.</value>
+    <value>Увеличивается или сжимается границы элемента изображения, чтобы соответствовать изображению.</value>
   </data>
   <data name="ImageSizeMode_Center_Description" xml:space="preserve">
     <value>Изображение отображается в центре элемента. Если изображение больше, чем элемент, изображение обрезается.</value>
   </data>
   <data name="ImageSizeMode_Description" xml:space="preserve">
-    <value>Определяет расположение изображения в элементе.</value>
+    <value>Определяет, как изображение располагается внутри элемента.</value>
   </data>
   <data name="ImageSizeMode_Normal_Description" xml:space="preserve">
-    <value>Обрезает изображение в соответствии с высотой и шириной элемента.</value>
+    <value>Зажимы изображения, чтобы соответствовать высоте и ширине элемента.</value>
   </data>
   <data name="ImageSizeMode_ScaleProportional_Description" xml:space="preserve">
-    <value>Изменяет размер изображения в соответствии с высотой и шириной элемента, сохраняя пропорции.</value>
+    <value>Сопротивление изображения в соответствии с высотой и шириной элемента, сохраняя пропорции.</value>
   </data>
   <data name="ImageSizeMode_Stretch_Description" xml:space="preserve">
-    <value>Изменяет размер изображения в соответствии с высотой и шириной элемента.</value>
+    <value>Сопротивление изображения в соответствии с высотой и шириной элемента.</value>
   </data>
   <data name="LineStyle_Dashed_Description" xml:space="preserve">
     <value>Пунктирная линия.</value>
   </data>
   <data name="LineStyle_Description" xml:space="preserve">
-    <value>Указывает тип элемента строки</value>
+    <value>Определяет тип элемента строки</value>
   </data>
   <data name="LineStyle_Dotted_Description" xml:space="preserve">
     <value>Пунктирная линия.</value>
@@ -859,55 +808,55 @@
     <value>Сплошная линия.</value>
   </data>
   <data name="UnitType_Cm_Description" xml:space="preserve">
-    <value>см</value>
+    <value>См</value>
   </data>
   <data name="UnitType_Description" xml:space="preserve">
-    <value>Тип устройства</value>
+    <value>Тип блока</value>
   </data>
   <data name="UnitType_Inch_Description" xml:space="preserve">
     <value>в</value>
   </data>
   <data name="UnitType_Mm_Description" xml:space="preserve">
-    <value>мм</value>
+    <value>Мм</value>
   </data>
   <data name="UnitType_Pica_Description" xml:space="preserve">
-    <value>ПК</value>
+    <value>Пк</value>
   </data>
   <data name="UnitType_Pixel_Description" xml:space="preserve">
     <value>рх</value>
   </data>
   <data name="UnitType_Point_Description" xml:space="preserve">
-    <value>PT</value>
+    <value>Pt</value>
   </data>
   <data name="VerticalAlign_Bottom_Description" xml:space="preserve">
-    <value>Указывает, что объект выравнивается по нижнему краю.</value>
+    <value>Указывает, что объект выровнен по дну.</value>
   </data>
   <data name="VerticalAlign_Description" xml:space="preserve">
-    <value>Задает вертикальное выравнивание объекта или текста в элементе отчета.</value>
+    <value>Определяет вертикальное выравнивание объекта или текста в элементе отчета.</value>
   </data>
   <data name="VerticalAlign_Middle_Description" xml:space="preserve">
-    <value>Указывает, что объект выравнивается по середине.</value>
+    <value>Указывает, что объект выровнен по центру.</value>
   </data>
   <data name="VerticalAlign_Top_Description" xml:space="preserve">
-    <value>Указывает, что объект выравнивается по верхнему краю.</value>
+    <value>Указывает, что объект выравнивается по верху.</value>
   </data>
   <data name="Binding_Expression_Description" xml:space="preserve">
-    <value>Возвращает или задает выражение, используемое для вычисления значения заданного целевого свойства</value>
+    <value>Получает или устанавливает выражение, используемое для оценки значения указанного свойства объекта</value>
   </data>
   <data name="Binding_Path_Description" xml:space="preserve">
-    <value>Получает или задает путь к свойству, определяющий привязанное свойство простого/вложенного элемента</value>
+    <value>Получает или устанавливает путь собственности, определяющий связанные простые/вложенные свойства элемента</value>
   </data>
   <data name="Checkbox_Description" xml:space="preserve">
-    <value>Представляет элемент отчета флажок.</value>
+    <value>Представляет элемент отчета в окне проверки.</value>
   </data>
   <data name="AreaSeries_AreaStyle_Description" xml:space="preserve">
-    <value>Стиль, применяемый к области, определяемой точками данных этого ряда.</value>
+    <value>Стиль, применемый в области, определяемой точками данных этой серии.</value>
   </data>
   <data name="AreaSeries_ConditionalFormatting_Description" xml:space="preserve">
-    <value>Определяет правила условного форматирования, применяемые к стилю рядов.</value>
+    <value>Определяет правила условного форматирования, применяемые в стиле серии.</value>
   </data>
   <data name="AreaSeries_LineType_Description" xml:space="preserve">
-    <value>Используйте плавные, прямые или ступенчатые линии для соединения точек данных.</value>
+    <value>Используйте гладкие, прямые или ступенные строки для подключения точек данных.</value>
   </data>
   <data name="AreaSeries_MarkerSize_Description" xml:space="preserve">
     <value>Размер маркеров для точек данных.</value>
@@ -916,313 +865,346 @@
     <value>Тип маркеров для точек данных.</value>
   </data>
   <data name="AreaSeries_X0_Description" xml:space="preserve">
-    <value>Координата (Декартовая система координат) или ангулар0 (Полярная система координат).</value>
+    <value>X0 (Картезианская система координат) или Angular0 (Полярная система координат) координируют.</value>
   </data>
   <data name="AreaSeries_Y0_Description" xml:space="preserve">
-    <value>Координата Y0 (Декартовая система координат) или радиал0 (Полярная система координат).</value>
+    <value>Y0 (Картезианская система координат) или Radial0 (Полярная система координат) координируют.</value>
   </data>
   <data name="BarSeries_DataPointLabelAlignment_Description" xml:space="preserve">
-    <value>Задает выравнивание метки точки данных.</value>
+    <value>Определяет выравнивание метки точки данных.</value>
   </data>
   <data name="BarSeries_DataPointLabelConnectorConditionalFormatting_Description" xml:space="preserve">
-    <value>Определяет правила условного форматирования, применяемые к соединителям меток точек данных.</value>
+    <value>Определяет правила условного форматирования, применяемые на разъемы точечном метки данных.</value>
   </data>
   <data name="BarSeries_DataPointLabelConnectorStyle_Description" xml:space="preserve">
-    <value>Задает стиль соединителя меток точек данных.</value>
+    <value>Определяет стиль соединителя метки точки данных.</value>
   </data>
   <data name="BarSeries_DataPointLabelOffset_Description" xml:space="preserve">
-    <value>Задает смещение метки точки данных.</value>
+    <value>Указывает смещение метки точки данных.</value>
   </data>
   <data name="BarSeries_X0_Description" xml:space="preserve">
-    <value>Координата (Декартовая система координат) или ангулар0 (Полярная система координат).</value>
+    <value>X0 (Картезианская система координат) или Angular0 (Полярная система координат) координируют.</value>
   </data>
   <data name="BarSeries_Y0_Description" xml:space="preserve">
-    <value>Координата Y0 (Декартовая система координат) или радиал0 (Полярная система координат).</value>
+    <value>Y0 (Картезианская система координат) или Radial0 (Полярная система координат) координируют.</value>
+  </data>
+  <data name="BarSeries_MergedDataPoints_Description" xml:space="preserve">
+    <value>Получает необходимые настройки, чтобы определить, если и по какому альгориоритм слить точки данных.</value>
+  </data>
+  <data name="BarSeries_MergedDataPoints_Name" xml:space="preserve">
+    <value>Объединение точек данных</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Description" xml:space="preserve">
+    <value>Определяет, будет ли и какая презентация использоваться для слияния точек данных. Алгоритм слияния далее указан пороговый режим и пороговое значение дополнительных сейв.</value>
+  </data>
+  <data name="MergedDataPoints_MergeMode_Name" xml:space="preserve">
+    <value>Режим слияния</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Description" xml:space="preserve">
+    <value>Получает или устанавливает альгороритм, который будет использоваться при определении, какие точки данных, чтобы получить объединены. Каждый альгороритм учитывает также значение свойства порогового значения.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdMode_Name" xml:space="preserve">
+    <value>Пороговый режим</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Description" xml:space="preserve">
+    <value>Получает или устанавливает пороговое значение при определении, какие данные указывают на слияние.</value>
+  </data>
+  <data name="MergedDataPoints_ThresholdValue_Name" xml:space="preserve">
+    <value>Пороговое значение</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Description" xml:space="preserve">
+    <value>Определяет текст, который отображается в виде метки элемента легенды, соответствующего результирующей точке данных.</value>
+  </data>
+  <data name="MergedDataPoints_LegendItemLabel_Name" xml:space="preserve">
+    <value>Метка элемента легенды</value>
   </data>
   <data name="CartesianCoordinateSystem_XAxis_Description" xml:space="preserve">
-    <value>Задает горизонтальную ось.</value>
+    <value>Определяет горизонтальную ось.</value>
   </data>
   <data name="CartesianCoordinateSystem_YAxis_Description" xml:space="preserve">
-    <value>Задает вертикальную ось.</value>
+    <value>Определяет вертикальную ось.</value>
   </data>
   <data name="CategoryScaleCrossAxisPosition" xml:space="preserve">
-    <value>Задает значение, при котором другая ось пересекает текущую ось.</value>
+    <value>Определяет значение, при котором другая ось пересекает текущую ось.</value>
   </data>
   <data name="CategoryScale_PositionMode_Description" xml:space="preserve">
-    <value>Указывает, как позиционные обозначения расположены по отношению к точкам данных.</value>
+    <value>Определяет, как помечает отметьте метки по отношению к точкам данных.</value>
   </data>
   <data name="CrossAxisPositionBase_Position_Description" xml:space="preserve">
-    <value>Положение, в котором пересекаются оси.</value>
+    <value>Место, где топоры пересекаются.</value>
   </data>
   <data name="Crosstab_Description" xml:space="preserve">
-    <value>В перекрестном элементе отчета отображаются сводные сводные данные, сгруппированные по строкам и столбцам.</value>
+    <value>Элемент отчета Кросбиг отображает агрегированные сводки данных, сгруппированные в строки и столбцы.</value>
   </data>
   <data name="DateTimeScale_BaseUnit_Description" xml:space="preserve">
-    <value>Задает базовую единицу для масштаба. Базовая единица определяет интервал между точками на оси. По умолчанию базовые единицы измерения задаются в соответствии с наименьшей разницей между любыми двумя датами в данных.</value>
+    <value>Определяет базовую единицу шкалы. Базовый блок определяет интервал между точками оси. По умолчанию базовые единицы в соответствии с наименьшей разницей между любыми двумя датами в данных.</value>
   </data>
   <data name="DateTimeScale_CrossAxisValue_Description" xml:space="preserve">
-    <value>Указывает значение "ноль", когда другая ось пересекает текущую ось. Применяется в том случае, если для параметра "масштаб графика" перекрестной оси задан режим нулевого значения. конкретный.</value>
+    <value>Определяет значение «ноль», когда другая ось пересекает текущую ось. Прикладной когда шкала диаграммы перекрестное положение оси установлена к Диаграмма оси Zero значение режим. специфическое.</value>
   </data>
   <data name="DateTimeScale_DataPointTicks_Description" xml:space="preserve">
-    <value>Показывает тики и метки на оси для каждой точки в наборе данных.</value>
+    <value>Отображает тики и метки на оси для каждой точки в наборе данных.</value>
   </data>
   <data name="DateTimeScale_LabelStep_Description" xml:space="preserve">
-    <value>Указывает шаг/интервал между метками.</value>
+    <value>Определяет шаг/интервал между этикетками.</value>
   </data>
   <data name="DateTimeScale_LabelUnit_Description" xml:space="preserve">
-    <value>Задает единицу измерения интервала/шага между метками.</value>
+    <value>Определяет единицу для интервала/шага между этикетками.</value>
   </data>
   <data name="DateTimeScale_MajorStep_Description" xml:space="preserve">
-    <value>Указывает шаг/интервал между основными линиями тиков/сетки.</value>
+    <value>Определяет шаг/интервал между основными клещами/линиями сетки.</value>
   </data>
   <data name="DateTimeScale_MajorUnit_Description" xml:space="preserve">
-    <value>Задает единицу измерения интервала/шага между основными линиями линий.</value>
+    <value>Определяет единицу для интервала/шага между основными клещами/линиями сетки.</value>
   </data>
   <data name="DateTimeScale_Maximum_Description" xml:space="preserve">
-    <value>Задает максимальное значение для текущей оси.</value>
+    <value>Определяет максимальное значение для текущей оси.</value>
   </data>
   <data name="DateTimeScale_Minimum_Description" xml:space="preserve">
-    <value>Задает минимальное значение для текущей оси.</value>
+    <value>Определяет минимальное значение для текущей оси.</value>
   </data>
   <data name="DateTimeScale_MinorStep_Description" xml:space="preserve">
-    <value>Указывает шаг/интервал для незначительных тиков/линий сетки.</value>
+    <value>Определяет шаг/интервал для незначительных тиков/линий сетки.</value>
   </data>
   <data name="DateTimeScale_MinorUnit_Description" xml:space="preserve">
-    <value>Задает единицу измерения интервала/шага между незначительными тиками/линиями сетки.</value>
+    <value>Определяет единицу для интервала/шага между незначительными клещами/линиями сетки.</value>
   </data>
   <data name="DateTimeScale_PositionMode_Description" xml:space="preserve">
-    <value>Определяет расположение делений меток относительно точек данных.</value>
+    <value>Определяет, как тиковые метки размещаются по отношению к точкам данных.</value>
   </data>
   <data name="DateTimeScale_Value_Description" xml:space="preserve">
-    <value>Задает значение, при котором другая ось пересекает текущую ось.</value>
+    <value>Определяет значение, при котором другая ось пересекает текущую ось.</value>
   </data>
   <data name="GraphAxis_LabelAngle_Description" xml:space="preserve">
-    <value>Задает угол поворота меток осей в градусах.</value>
+    <value>Определяет угол в градусах, на которых вращаются метки оси.</value>
   </data>
   <data name="GraphAxis_LabelPlacement_Description" xml:space="preserve">
-    <value>Определяет положение меток осей в соответствии с дополнительными значениями min/max оси.</value>
+    <value>Определяет положение меток оси в соответствии с дополнительными значениями оси ' min/max.</value>
   </data>
   <data name="GraphAxis_MajorGridLineStyle_Description" xml:space="preserve">
-    <value>Задает стиль линий сетки, соответствующих шагам основных осей.</value>
+    <value>Определяет стиль линий сетки, которые соответствуют основным ступеням оси.</value>
   </data>
   <data name="GraphAxis_MajorTickMarkDisplayType_Description" xml:space="preserve">
-    <value>Указывает, как отображать деления, соответствующие основным шагам оси.</value>
+    <value>Определяет, как отобразить отметьте метки, которые соответствуют основным шагам оси.</value>
   </data>
   <data name="GraphAxis_MaxSize_Description" xml:space="preserve">
-    <value>Задает максимальный размер оси.</value>
+    <value>Определяет максимальный размер оси.</value>
   </data>
   <data name="GraphAxis_MinorGridLineStyle_Description" xml:space="preserve">
-    <value>Задает стиль линий сетки, соответствующих шагам второстепенной оси.</value>
+    <value>Определяет стиль линий сетки, которые соответствуют незначительным ступеням оси.</value>
   </data>
   <data name="GraphAxis_MinorTickMarkDisplayType_Description" xml:space="preserve">
-    <value>Указывает, как отображать деления, соответствующие шагам второстепенной оси.</value>
+    <value>Определяет, как отобразить отметьте метки, которые соответствуют незначительным ступеням оси.</value>
   </data>
   <data name="GraphAxis_MinSize_Description" xml:space="preserve">
-    <value>Задает минимальный размер оси.</value>
+    <value>Определяет минимальный размер оси.</value>
   </data>
   <data name="GraphAxis_MultiLevelCategoryLabels_Description" xml:space="preserve">
-    <value>Задает значение, указывающее, следует ли отображать многомерные метки масштаба категории на одном или нескольких уровнях.</value>
+    <value>Указывает значение, указывающее, следует ли отображать многомерные метки масштаба на одном или нескольких уровнях.</value>
   </data>
   <data name="GraphAxis_Scale_Description" xml:space="preserve">
-    <value>Задает масштаб для текущей оси.</value>
+    <value>Определяет масштаб текущей оси.</value>
   </data>
   <data name="GraphAxis_Size_Description" xml:space="preserve">
-    <value>Задает точный размер оси.</value>
+    <value>Определяет точный размер оси.</value>
   </data>
   <data name="GraphAxis_Style_Description" xml:space="preserve">
-    <value>Задает стиль по умолчанию для текущей оси, делений и меток.</value>
+    <value>Определяет стиль по умолчанию для текущей оси, отметьте метки и метки.</value>
   </data>
   <data name="GraphAxis_TitlePlacement_Description" xml:space="preserve">
-    <value>Задает размещение заголовка оси.</value>
+    <value>Определяет расположение названия оси.</value>
   </data>
   <data name="GraphAxis_TitleStyle_Description" xml:space="preserve">
-    <value>Задает стиль для заголовка текущей оси.</value>
+    <value>Определяет стиль для названия текущей оси.</value>
   </data>
   <data name="GraphAxis_Title_Description" xml:space="preserve">
-    <value>Задает заголовок оси.</value>
+    <value>Определяет название оси.</value>
   </data>
   <data name="GraphCoordinateSystem_Bindings_Description" xml:space="preserve">
-    <value>Получает коллекцию правил привязки, содержащихся в элементе отчета</value>
+    <value>Получает сбор обязательных правил, содержащихся в пункте отчета</value>
   </data>
   <data name="GraphCoordinateSystem_Style_Description" xml:space="preserve">
-    <value>Задает стиль по умолчанию для осей, делений и меток.</value>
+    <value>Определяет стиль по умолчанию для осей, отметьте метки и метки.</value>
   </data>
   <data name="GraphGroup_Action_Description" xml:space="preserve">
-    <value>Указывает интерактивное действие, связанное с этим элементом отчета.</value>
+    <value>Указывает интерактивное действие, связанное с этим пунктом отчета.</value>
   </data>
   <data name="GraphGroup_ChildGroups_Description" xml:space="preserve">
-    <value>Коллекция групп графиков, определяющая дочерние группы графа.</value>
+    <value>Собрание групп графа, определяющее детей группы графа.</value>
   </data>
   <data name="GraphGroup_Label_Description" xml:space="preserve">
-    <value>Задает метку/выражение для категорий в оси категорий.</value>
+    <value>Определяет метку/выражение для категорий в оси категории.</value>
   </data>
   <data name="GraphGroup_Visible_Description" xml:space="preserve">
     <value>Указывает, отображается ли группа.</value>
   </data>
   <data name="GraphItem_Bounds_Description" xml:space="preserve">
-    <value>Задает границы элемента диаграммы.</value>
+    <value>Определяет границы элемента графа.</value>
   </data>
   <data name="GraphItem_Height_Description" xml:space="preserve">
-    <value>Указывает высоту элемента диаграммы.</value>
+    <value>Определяет высоту элемента графа.</value>
   </data>
   <data name="GraphItem_IsInsidePlotArea_Description" xml:space="preserve">
-    <value>Указывает, находится ли элемент диаграммы внутри или вне области построения.</value>
+    <value>Определяет, находится ли элемент графа внутри участка или за его пределами.</value>
   </data>
   <data name="GraphItem_Left_Description" xml:space="preserve">
-    <value>Задает левое положение элемента диаграммы.</value>
+    <value>Определяет левую позицию элемента графа.</value>
   </data>
   <data name="GraphItem_Location_Description" xml:space="preserve">
-    <value>Указывает местоположение элемента диаграммы.</value>
+    <value>Определяет местоположение элемента графа.</value>
   </data>
   <data name="GraphItem_Size_Description" xml:space="preserve">
-    <value>Задает размер элемента диаграммы.</value>
+    <value>Определяет размер элемента графа.</value>
   </data>
   <data name="GraphItem_Style_Description" xml:space="preserve">
-    <value>Задает стиль элемента диаграммы.</value>
+    <value>Определяет стиль элемента графа.</value>
   </data>
   <data name="GraphItem_Top_Description" xml:space="preserve">
-    <value>Указывает верхнюю позицию элемента диаграммы.</value>
+    <value>Определяет верхнюю позицию элемента графа.</value>
   </data>
   <data name="GraphItem_Width_Description" xml:space="preserve">
-    <value>Задает ширину элемента диаграммы.</value>
+    <value>Определяет ширину элемента графа.</value>
   </data>
   <data name="GraphLegend_Position_Description" xml:space="preserve">
-    <value>Задает положение легенды.</value>
+    <value>Определяет положение легенды.</value>
   </data>
   <data name="GraphLegend_TitleStyle_Description" xml:space="preserve">
-    <value>Задает стиль заголовка легенды.</value>
+    <value>Определяет стиль названия легенды.</value>
   </data>
   <data name="GraphLegend_Title_Description" xml:space="preserve">
-    <value>Задает текст заголовка легенды.</value>
+    <value>Определяет текст названия легенды.</value>
   </data>
   <data name="GraphSeries2D_ArrangeMode_Description" xml:space="preserve">
-    <value>Получает или задает значение, указывающее, как упорядочить ряды во время выполнения</value>
+    <value>Получает или устанавливает значение, указывающее, как организовать серию во время выполнения</value>
   </data>
   <data name="GraphSeries2D_X_Description" xml:space="preserve">
-    <value>Координата X в декартовой системе координат или угловая координата в полярной системе координат.</value>
+    <value>X координирует в декартовой системе координат или угловых координатах в полярной системе координат.</value>
   </data>
   <data name="GraphSeries2D_Y_Description" xml:space="preserve">
-    <value>Координата Y в декартовой системе координат или радиальная координата в полярной системе координат.</value>
+    <value>Y координируют в декартовой системе координат или радиальных координатах в полярной системе координат.</value>
   </data>
   <data name="GraphSeriesBase_ColorPalette_Description" xml:space="preserve">
-    <value>Задает цветовую палитру, используемую для определения цветов рядов.</value>
+    <value>Определяет цветовую палитру, которая используется для определения цветов серии.</value>
   </data>
   <data name="GraphSeriesBase_DataPointConditionalFormatting_Description" xml:space="preserve">
-    <value>Определяет правила условного форматирования, применяемые к стилю точки данных.</value>
+    <value>Определяет правила условного форматирования, применяемые в стиле точки данных.</value>
   </data>
   <data name="GraphSeriesBase_DataPointLabelAngle_Description" xml:space="preserve">
-    <value>Задает угол поворота меток осей в градусах.</value>
+    <value>Определяет угол в градусах, на которых вращаются метки оси.</value>
   </data>
   <data name="GraphSeriesBase_DataPointLabelConditionalFormatting_Description" xml:space="preserve">
-    <value>Определяет правила условного форматирования, применяемые к меткам точек данных.</value>
+    <value>Определяет правила условного форматирования, применяемые на этикетках точки данных.</value>
   </data>
   <data name="GraphSeriesBase_DataPointLabelStyle_Description" xml:space="preserve">
-    <value>Задает стиль меток точек данных.</value>
+    <value>Определяет стиль метки точки данных.</value>
   </data>
   <data name="GraphSeriesBase_DataPointLabel_Description" xml:space="preserve">
-    <value>Задает метку точки данных.</value>
+    <value>Определяет метку точки данных.</value>
   </data>
   <data name="GraphSeriesBase_DataPointStyle_Description" xml:space="preserve">
-    <value>Задает стиль точки данных.</value>
+    <value>Определяет стиль точки данных.</value>
   </data>
   <data name="GraphSeriesBase_LegendItem_Description" xml:space="preserve">
-    <value>Задает легенду ряда.</value>
+    <value>Определяет легенду сериала.</value>
   </data>
   <data name="GraphSeriesBase_Name_Description" xml:space="preserve">
-    <value>Указывает имя рядов диаграммы.</value>
+    <value>Определяет название серии графа.</value>
   </data>
   <data name="GraphSeriesBase_ToolTip_Description" xml:space="preserve">
-    <value>Получает экземпляр Tip ITool, связанный с точками данных.</value>
+    <value>Получает Инкул подсказка экземпляр, связанный с точками данных.</value>
   </data>
   <data name="GraphSeries_ArrangeByAxis_Description" xml:space="preserve">
-    <value>Ось/направление, к которому применяется режим упорядочения.</value>
+    <value>Ось/направление, к которому применяется режим аранжировать.</value>
   </data>
   <data name="GraphSeries_CategoryGroup_Description" xml:space="preserve">
-    <value>Указывает группу категорий из графа. группы категорий, связанные с этой серией диаграмм.</value>
+    <value>Определяет группу категорий из графа. группы категорий, связанные с этой серией графиков.</value>
   </data>
   <data name="GraphSeries_CoordinateSystem_Description" xml:space="preserve">
-    <value>Определяет систему координат, на которой проецируется ряд.</value>
+    <value>Определяет систему координат, на которой проецируется серия.</value>
   </data>
   <data name="GraphSeries_SeriesGroup_Description" xml:space="preserve">
-    <value>Задает группу рядов, которая формирует диаграмму группы Series.</value>
+    <value>Указывает, что Группа серий формирует диаграмму. серии ГУПС, связанные с этой серии графа.</value>
   </data>
   <data name="GraphTitle_Position_Description" xml:space="preserve">
-    <value>Задает положение заголовка.</value>
+    <value>Определяет положение заголовка.</value>
   </data>
   <data name="GraphTitle_Text_Description" xml:space="preserve">
-    <value>Задает текст заголовка.</value>
+    <value>Определяет текст для заголовка.</value>
   </data>
   <data name="Graph_CategoryGroups_Description" xml:space="preserve">
-    <value>Коллекция групп графиков, определяющая иерархию категорий графа.</value>
+    <value>Собрание групп графа, которое определяет иерархию категорий графа.</value>
   </data>
   <data name="Graph_ColorPalette_Description" xml:space="preserve">
-    <value>Задает цветовую палитру, определяющую цвета рядов диаграммы.</value>
+    <value>Определяет цветовую палитру, которая определяет цвета серии графиков.</value>
   </data>
   <data name="Graph_CoordinateSystems_Description" xml:space="preserve">
     <value>Коллекция систем координат графа.</value>
   </data>
   <data name="Graph_Description" xml:space="preserve">
-    <value>Элемент отчета "Диаграмма" отображает подробные данные, данные, упорядоченные по группам строк, или и те и другие.</value>
+    <value>Элемент отчета о графике отображает подробные данные, данные, организованные в группах строк или обоих.</value>
   </data>
   <data name="Graph_Legend_Description" xml:space="preserve">
-    <value>Задает легенду графа.</value>
+    <value>Определяет легенду графа.</value>
   </data>
   <data name="Graph_PlotAreaStyle_Description" xml:space="preserve">
-    <value>Задает стиль области построения.</value>
+    <value>Определяет стиль участка области.</value>
   </data>
   <data name="Graph_SeriesGroups_Description" xml:space="preserve">
-    <value>Коллекция групп графиков, определяющая серию графа.</value>
+    <value>Сборник групп графа, который определяет серию графа.</value>
   </data>
   <data name="Graph_Series_Description" xml:space="preserve">
-    <value>Коллекция диаграммных рядов.</value>
+    <value>Коллекция серии графиков.</value>
   </data>
   <data name="Graph_Titles_Description" xml:space="preserve">
-    <value>Коллекция заголовков графов.</value>
+    <value>Сборник названий графов.</value>
   </data>
   <data name="GroupBase_Name_Description" xml:space="preserve">
-    <value>Возвращает или задает имя группы.</value>
+    <value>Получает или устанавливает название группы.</value>
   </data>
   <data name="Group_Visible_Description" xml:space="preserve">
-    <value>Получает или задает значение, указывающее, отображается ли группа.</value>
+    <value>Получает или устанавливает значение, указывающее, отображается ли группа.</value>
   </data>
   <data name="HtmlTextBox_Description" xml:space="preserve">
-    <value>Представляет элемент отчета текстового поля HTML.</value>
+    <value>Представляет элемент отчета HTML текстового ящика.</value>
   </data>
   <data name="LegendItem_ConditionalFormatting_Description" xml:space="preserve">
-    <value>Получает коллекцию правил условного форматирования, связанных с стилем элемента.</value>
+    <value>Получает набор правил условного форматирования, связанный с стилем элемента.</value>
   </data>
   <data name="LegendItem_MarkConditionalFormatting_Description" xml:space="preserve">
-    <value>Получает коллекцию правил условного форматирования, связанных с стилем метки.</value>
+    <value>Получает коллекцию условных форматирования правил, связанных с стилем знака.</value>
   </data>
   <data name="LegendItem_MarkStyle_Description" xml:space="preserve">
-    <value>Задает стиль обозначения элемента легенды.</value>
+    <value>Определяет стиль знака элемента легенды.</value>
   </data>
   <data name="LegendItem_Style_Description" xml:space="preserve">
-    <value>Задает стиль элемента легенды.</value>
+    <value>Определяет стиль элемента легенды.</value>
   </data>
   <data name="LegendItem_Value_Description" xml:space="preserve">
-    <value>Задает текст или выражение, отображаемые в условных обозначениях.</value>
+    <value>Определяет текст или выражение, отображаемое в легенде.</value>
   </data>
   <data name="LineSeries_ConditionalFormatting_Description" xml:space="preserve">
-    <value>Определяет правила условного форматирования, применяемые к стилю рядов.</value>
+    <value>Определяет правила условного форматирования, применяемые в стиле серии.</value>
   </data>
   <data name="LineSeries_DataPointLabelAlignment_Description" xml:space="preserve">
-    <value>Задает значение, указывающее, как метки точек данных должны быть выровнены. </value>
+    <value>Указывает значение, указывающее, как метки данных указывают на выравнивание. </value>
   </data>
   <data name="LineSeries_DataPointLabelOffset_Description" xml:space="preserve">
-    <value>Задает смещение метки точки данных.</value>
+    <value>Указывает смещение метки точки данных.</value>
   </data>
   <data name="LineSeries_LineStyle_Description" xml:space="preserve">
-    <value>Задает стиль линии.</value>
+    <value>Определяет стиль линии.</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Description" xml:space="preserve">
+    <value>Определяет стиль строки, соединяющей точки по обе стороны точки данных с отсутствующий значением</value>
   </data>
   <data name="LineSeries_LineType_Description" xml:space="preserve">
-    <value>Используйте плавные, прямые или ступенчатые линии для соединения точек данных.</value>
+    <value>Используйте гладкие, прямые или ступенные строки для подключения точек данных.</value>
   </data>
   <data name="LineSeries_MarkerMaxSize_Description" xml:space="preserve">
     <value>Размер маркеров, которые соответствуют максимальным данным</value>
   </data>
   <data name="LineSeries_MarkerMinSize_Description" xml:space="preserve">
-    <value>Размер маркеров, соответствующий минимальным данным</value>
+    <value>Размер маркеров, которые соответствуют минимальным данным</value>
   </data>
   <data name="LineSeries_MarkerSize_Description" xml:space="preserve">
     <value>Размер маркеров.</value>
@@ -1240,181 +1222,181 @@
     <value>Размер маркеров/пузырей.</value>
   </data>
   <data name="LineSeries_SmoothLine_Description" xml:space="preserve">
-    <value>Используйте гладкие или прямые линии для соединения точек данных.</value>
+    <value>Для подключения точек данных используйте гладкие или прямые линии.</value>
   </data>
   <data name="List_Description" xml:space="preserve">
-    <value>Элемент отчета списка представляет макет свободной формы.</value>
+    <value>Элемент отчета о списке представляет собой макет свободной формы.</value>
   </data>
   <data name="LogarithmicScale_Base_Description" xml:space="preserve">
-    <value>Указывает базовое значение логарифма.</value>
+    <value>Определяет базовую величину логарифма.</value>
   </data>
   <data name="LogarithmicScale_Maximum_Description" xml:space="preserve">
-    <value>Задает максимальное значение оси. Сброс свойства для автоматического вычисления значения на основе данных.</value>
+    <value>Задает ось максимальное значение. Сброс свойства для автоматического расчета значения на основе данных.</value>
   </data>
   <data name="LogarithmicScale_Minimum_Description" xml:space="preserve">
-    <value>Задает минимальное значение оси. Сброс свойства для автоматического вычисления значения на основе данных.</value>
+    <value>Определяет минимальное значение оси. Сброс свойства для автоматического расчета значения на основе данных.</value>
   </data>
   <data name="LogarithmicScale_Value_Description" xml:space="preserve">
-    <value>Задает значение, при котором другая ось пересекает текущую ось.</value>
+    <value>Определяет значение, при котором другая ось пересекает текущую ось.</value>
   </data>
   <data name="MapItem_Bounds_Description" xml:space="preserve">
-    <value>Задает границы элемента карты.</value>
+    <value>Определяет границы элемента карты.</value>
   </data>
   <data name="MapItem_Height_Description" xml:space="preserve">
-    <value>Указывает высоту элемента карты.</value>
+    <value>Определяет высоту элемента карты.</value>
   </data>
   <data name="MapItem_IsInsidePlotArea_Description" xml:space="preserve">
-    <value>Указывает, находится ли элемент карты внутри или вне области построения.</value>
+    <value>Определяет, находится ли элемент карты в области или вне участка.</value>
   </data>
   <data name="MapItem_Left_Description" xml:space="preserve">
     <value>Указывает левую позицию элемента карты.</value>
   </data>
   <data name="MapItem_Location_Description" xml:space="preserve">
-    <value>Указывает местоположение элемента карты.</value>
+    <value>Определяет местоположение элемента карты.</value>
   </data>
   <data name="MapItem_Size_Description" xml:space="preserve">
     <value>Определяет размер элемента карты.</value>
   </data>
   <data name="MapItem_Style_Description" xml:space="preserve">
-    <value>Задает стиль элемента карты.</value>
+    <value>Определяет стиль элемента карты.</value>
   </data>
   <data name="MapItem_Top_Description" xml:space="preserve">
-    <value>Указывает верхнюю позицию элемента карты.</value>
+    <value>Определяет верхнюю позицию элемента карты.</value>
   </data>
   <data name="MapItem_Width_Description" xml:space="preserve">
-    <value>Задает ширину элемента карты.</value>
+    <value>Определяет ширину элемента карты.</value>
   </data>
   <data name="MapLegend_Position_Description" xml:space="preserve">
-    <value>Задает положение легенды.</value>
+    <value>Определяет положение легенды.</value>
   </data>
   <data name="MapLegend_TitleStyle_Description" xml:space="preserve">
-    <value>Задает стиль заголовка легенды.</value>
+    <value>Определяет стиль названия легенды.</value>
   </data>
   <data name="MapLegend_Title_Description" xml:space="preserve">
-    <value>Задает текст заголовка легенды.</value>
+    <value>Определяет текст названия легенды.</value>
   </data>
   <data name="MapRelationPair_AnalyticalField_Description" xml:space="preserve">
-    <value>Выражение, определяющее поле из источника аналитических данных, которое будет сопоставляться с полем из файла Shape.</value>
+    <value>Выражение, которое определяет поле из аналитического источника данных, которое будет сопровождаться полем из файла формы.</value>
   </data>
   <data name="MapRelationPair_ShapeFileField_Description" xml:space="preserve">
-    <value>Выражение, определяющее поле из набора файлов фигур, которое будет сопоставляться с полем из источника аналитических данных.</value>
+    <value>Выражение, которое определяет поле из комплекта файла формы, который будет согласован с полем из аналитического источника данных.</value>
   </data>
   <data name="MapScaleLegend_Height_Description" xml:space="preserve">
-    <value>Задает высоту легенды масштаба.</value>
+    <value>Определяет высоту легенды масштаба.</value>
   </data>
   <data name="MapScaleLegend_ItemStyle_Description" xml:space="preserve">
-    <value>Задает метку масштаба и стиль текста.</value>
+    <value>Указывает масштаб знака и текста.</value>
   </data>
   <data name="MapScaleLegend_ScaleUnits_Description" xml:space="preserve">
-    <value>Указывает единицы измерения легенды масштаба</value>
+    <value>Определяет единицы масштаба легенды</value>
   </data>
   <data name="MapScaleLegend_Size_Description" xml:space="preserve">
-    <value>Определяет размер легенды масштаба карты.</value>
+    <value>Определяет размер карты масштаб легенды.</value>
   </data>
   <data name="MapScaleLegend_Style_Description" xml:space="preserve">
-    <value>Задает стиль контейнера масштаба карты.</value>
+    <value>Определяет стиль карты в масштабе контейнера.</value>
   </data>
   <data name="MapScaleLegend_Width_Description" xml:space="preserve">
-    <value>Задает ширину легенды масштаба.</value>
+    <value>Определяет ширину легенды масштаба.</value>
   </data>
   <data name="Map_BingMapsTileProvider_ClientToken_Description" xml:space="preserve">
-    <value>Токен клиента, который выполняет проверку подлинности запроса.</value>
+    <value>Маркер клиента, который проверяет подлинность запроса.</value>
   </data>
   <data name="Map_BingMapsTileProvider_ImagerySet_Description" xml:space="preserve">
-    <value>Получает или задает набор изображений, используемый при запросе изображений мозаики</value>
+    <value>Получает или устанавливает набор снимков, используемый при запросе изображений плитки</value>
   </data>
   <data name="Map_ColorPalette_Description" xml:space="preserve">
-    <value>Задает цветовую палитру, определяющую цвета ряда карт.</value>
+    <value>Определяет цветовую палитру, которая определяет цвета карты серии.</value>
   </data>
   <data name="Map_Description" xml:space="preserve">
-    <value>Элемент отчета Map отображает картографические данные, упорядоченные по полигонам и точкам.</value>
+    <value>В пункте отчета карты отображаются картографические данные, организованные в полигонами и точках.</value>
   </data>
   <data name="Map_EsriShapeFileSourceType_FileName_Description" xml:space="preserve">
-    <value>Выражение, определяющее имя файла формы, используемого для получения пространственных координат точек данных.</value>
+    <value>Выражение, которое определяет название файла формы, используемого для получения пространственных координат для точек данных.</value>
   </data>
   <data name="Map_EsriShapeFileSourceType_RelationPairs_Description" xml:space="preserve">
-    <value>Выражения, совпадающие с полями набора аналитических данных и полями пространственных данных.</value>
+    <value>Выражения, которые совпадают с аналитическими данными, устанавлите поля пространственных полей данных.</value>
   </data>
   <data name="Map_Extent_Description" xml:space="preserve">
-    <value>Указывает отображаемую часть карты. Его пределы определяются в системе координат карты.</value>
+    <value>Определяет отображаемые части карты. Его пределы определяются в системе координат карты.</value>
   </data>
   <data name="Map_GenericTileProvider_Attribution_Description" xml:space="preserve">
-    <value>Получает или задает текст атрибуции поставщика плитки.</value>
+    <value>Получает или устанавливает текст атрибуции поставщика плитки.</value>
   </data>
   <data name="Map_GenericTileProvider_LogoUrl_Description" xml:space="preserve">
-    <value>Получает или задает URL-адрес, используемый для загрузки эмблемы поставщика плитки.</value>
+    <value>Получает или устанавливает URL, используемый для загрузки логотипа плитки поставщика.</value>
   </data>
   <data name="Map_GenericTileProvider_UrlSubdomains_Description" xml:space="preserve">
-    <value>Получает или задает поддомены для шаблона URL-адреса.</value>
+    <value>Получает или устанавливает поддомены для шаблона URL.</value>
   </data>
   <data name="Map_GenericTileProvider_UrlTemplate_Description" xml:space="preserve">
-    <value>Получает или задает шаблон URL-адреса, используемый для запроса плитки с сервера мозаики.</value>
+    <value>Получает или устанавливает шаблон URL, используемый для запроса плитки от сервера плитки.</value>
   </data>
   <data name="Map_GeoLocationGroups_Description" xml:space="preserve">
-    <value>Коллекция географических групп геолокации, которая определяет иерархию категорий карты.</value>
+    <value>Коллекция групп географических карт геолокации, которая определяет категорию иерархии карты.</value>
   </data>
   <data name="Map_GeoLocationMapGroup_ChildGroups_Description" xml:space="preserve">
-    <value>Коллекция географических групп геолокации, определяющая дочерние группы группы карт геолокации географического местоположения.</value>
+    <value>Коллекция ГЕО расположение группы карт, которая определяет детей гео местоположение группы группа.</value>
   </data>
   <data name="Map_GeoLocationMapGroup_Location_Description" xml:space="preserve">
-    <value>Задает выражение, определяющее расположение точек данных.</value>
+    <value>Определяет выражение, определяющее местоположение точек данных.</value>
   </data>
   <data name="Map_GraticuleLine_Step_Description" xml:space="preserve">
-    <value>Указывает шаг сетки линии.</value>
+    <value>Указывает на шаг в благодарный линии.</value>
   </data>
   <data name="Map_GraticuleLine_Style_Description" xml:space="preserve">
-    <value>Задает стиль линии сетки.</value>
+    <value>Определяет стиль в каждой из этих линий.</value>
   </data>
   <data name="Map_Legends_Description" xml:space="preserve">
-    <value>Коллекция легенд карты.</value>
+    <value>Сборник легенд карты.</value>
   </data>
   <data name="Map_LocationMapSeries_GeoLocationGroup_Description" xml:space="preserve">
-    <value>Указывает группу геолокации на карте. географические группы геолокации, связанные с этим набором карт.</value>
+    <value>Определяет группу геолокации из Map. Geo Карта расположения группы, связанные с этой картой серии.</value>
   </data>
   <data name="Map_LocationProvider_Description" xml:space="preserve">
-    <value>Указывает поставщика местоположения, используемого для геокодирования данных адреса.</value>
+    <value>Определяет поставщика расположения, используемого для геокода адресно-данных.</value>
   </data>
   <data name="Map_MapGroupBase_Visible_Description" xml:space="preserve">
     <value>Указывает, отображается ли группа.</value>
   </data>
   <data name="Map_MapGroup_Action_Description" xml:space="preserve">
-    <value>Указывает интерактивное действие, связанное с этим элементом отчета.</value>
+    <value>Указывает интерактивное действие, связанное с этим пунктом отчета.</value>
   </data>
   <data name="Map_MapGroup_ChildGroups_Description" xml:space="preserve">
-    <value>Коллекция групп сопоставления, определяющая дочерние группы сопоставления.</value>
+    <value>Коллекция карт групп, определяющая детей группы Map.</value>
   </data>
   <data name="Map_MapSeriesBase_SeriesGroup_Description" xml:space="preserve">
-    <value>Задает группу рядов из сопоставления. Series группы, связанных с этой серией диаграмм.</value>
+    <value>Определяет группу серий из Map. серии ГУПС, связанных с этой серией графиков.</value>
   </data>
   <data name="Map_Meridians_Description" xml:space="preserve">
-    <value>Указывает сетки линию меридианов.</value>
+    <value>Определяет благодарно линию меридианов.</value>
   </data>
   <data name="Map_Parallels_Description" xml:space="preserve">
-    <value>Указывает линию параллелей сетки.</value>
+    <value>Определяет параллели с благодарно линией.</value>
   </data>
   <data name="Map_PlotAreaStyle_Description" xml:space="preserve">
-    <value>Задает стиль области построения.</value>
+    <value>Определяет стиль участка области.</value>
   </data>
   <data name="Map_PointMapSeries_DataPointLabelAlignment_Description" xml:space="preserve">
-    <value>Задает значение, указывающее, как метки точек данных должны быть выровнены. </value>
+    <value>Указывает значение, указывающее, как метки данных указывают на выравнивание. </value>
   </data>
   <data name="Map_PointMapSeries_DataPointLabelOffset_Description" xml:space="preserve">
-    <value>Задает смещение метки точки данных.</value>
+    <value>Указывает смещение метки точки данных.</value>
   </data>
   <data name="Map_PointMapSeries_Latitude_Description" xml:space="preserve">
-    <value>Выражение, определяющее координаты широты для точек данных.</value>
+    <value>Выражение, которое определяет координаты широты для точек данных.</value>
   </data>
   <data name="Map_PointMapSeries_Longitude_Description" xml:space="preserve">
-    <value>Выражение, определяющее координаты долготы для точек данных.</value>
+    <value>Выражение, которое определяет координаты долготы для точек данных.</value>
   </data>
   <data name="Map_PointMapSeries_MarkerMaxSize_Description" xml:space="preserve">
-    <value>Размер маркеров точек данных, которые соответствуют максимальным данным.</value>
+    <value>Размер маркеров точки данных, которые соответствуют максимальным данным.</value>
   </data>
   <data name="Map_PointMapSeries_MarkerMinSize_Description" xml:space="preserve">
-    <value>Размер маркеров точек данных, которые соответствуют минимальным данным.</value>
+    <value>Размер маркеров точки данных, которые соответствуют минимальным данным.</value>
   </data>
   <data name="Map_PointMapSeries_MarkerSize_Description" xml:space="preserve">
-    <value>Размер маркеров точек данных.</value>
+    <value>Размер маркеров точки данных.</value>
   </data>
   <data name="Map_PointMapSeries_MarkerType_Description" xml:space="preserve">
     <value>Форма маркеров.</value>
@@ -1426,325 +1408,325 @@
     <value>Значение, определяющее минимальный размер маркеров.</value>
   </data>
   <data name="Map_PointMapSeries_Size_Description" xml:space="preserve">
-    <value>Выражение, определяющее размер маркеров.</value>
+    <value>Выражение, которое определяет размер маркеров.</value>
   </data>
   <data name="Map_Projection_Description" xml:space="preserve">
-    <value>Определяет модель представления, используемую для проецирования глобуса или небесной сферы на поверхность</value>
+    <value>Указывает модель представления, используемая для проецировать земной шар или небесную сферу на поверхность</value>
   </data>
   <data name="Map_ScaleLegend_Description" xml:space="preserve">
     <value>Определяет легенду масштаба карты</value>
   </data>
   <data name="Map_SeriesGroups_Description" xml:space="preserve">
-    <value>Коллекция групп сопоставления, определяющая серию карты.</value>
+    <value>Коллекция карт группы, которая определяет серию Map.</value>
   </data>
   <data name="Map_Series_Description" xml:space="preserve">
-    <value>Коллекция серии карт.</value>
+    <value>Коллекция карт серии.</value>
   </data>
   <data name="Map_ShapeMapGroup_ChildGroups_Description" xml:space="preserve">
-    <value>Коллекция &lt;б&gt; группы карт &lt;/б&gt; s, определяющая дочерние группы сопоставления файлов фигур.</value>
+    <value>Коллекция файла карты &lt;Б&gt; формы группы &lt;/Б&gt; s, которая определяет детей формы группы файлов Map группы.</value>
   </data>
   <data name="Map_ShapeMapSeries_ColorData_Description" xml:space="preserve">
-    <value>Выражение, определяющее поле цвета для точек данных.</value>
+    <value>Выражение, которое определяет цветовое поле для точек данных.</value>
   </data>
   <data name="Map_ShapeMapSeries_ColorsCount_Description" xml:space="preserve">
-    <value>Получает или задает количество цветов, которые показывают диапазоны данных. Свойство не соблюдается, если группирование диапазонов — None.</value>
+    <value>Получает или устанавливает Кол-во цветов, которые показывают диапазоны данных. Свойство не соблюдается, когда диапазон Группировка нет.</value>
   </data>
   <data name="Map_ShapeMapSeries_DataPointLabelAlignment_Description" xml:space="preserve">
-    <value>Задает значение, указывающее, как метки точек данных должны быть выровнены. </value>
+    <value>Указывает значение, указывающее, как метки данных указывают на выравнивание. </value>
   </data>
   <data name="Map_ShapeMapSeries_DataPointLabelOffset_Description" xml:space="preserve">
-    <value>Задает смещение метки точки данных.</value>
+    <value>Указывает смещение метки точки данных.</value>
   </data>
   <data name="Map_ShapeMapSeries_RangeGrouping_Description" xml:space="preserve">
-    <value>Указывает, как точки данных будут сгруппированы в диапазонах.</value>
+    <value>Определяет, как точки данных будут группироваться в диапазоны.</value>
   </data>
   <data name="Map_ShapeMapSeries_ShapeMapGroup_Description" xml:space="preserve">
-    <value>Задает группу сопоставления фигур из сопоставления. географические группы геолокации, связанные с этим набором карт фигур.</value>
+    <value>Определяет группу Map группы из Map. географические группы геолокации, связанные с этой серией карт формы.</value>
   </data>
   <data name="Map_ShapeMapSeries_SourceType_Description" xml:space="preserve">
-    <value>Свойство, определяющее тип источника пространственных данных, которые будут использоваться для получения координат точек данных.</value>
+    <value>Свойство, определяющее исходный тип пространственных данных, которые будут использоваться для получения координат для точек данных.</value>
   </data>
   <data name="Map_TileProvider_Description" xml:space="preserve">
-    <value>Указывает поставщика плитки, используемого для извлечения плиток карты.</value>
+    <value>Указывает, что поставщик плитки используется для извлечения плитки карты.</value>
   </data>
   <data name="Map_Titles_Description" xml:space="preserve">
-    <value>Коллекция названий карт.</value>
+    <value>Сборник названий карт.</value>
   </data>
   <data name="Map_WebLocationProvider_ClientToken_Description" xml:space="preserve">
-    <value>Токен клиента, который выполняет проверку подлинности запроса.</value>
+    <value>Маркер клиента, который проверяет подлинность запроса.</value>
   </data>
   <data name="Map_WebLocationProvider_ServerUrl_Description" xml:space="preserve">
-    <value>URL-адрес сервера расположения.</value>
+    <value>URL-адрес сервера местоположения.</value>
   </data>
   <data name="Map_WellKnownTextSourceType_SpatialField_Description" xml:space="preserve">
-    <value>Выражение, определяющее пространственные координаты точек данных.</value>
+    <value>Выражение, которое определяет пространственные координаты точек данных.</value>
   </data>
   <data name="NavigateToBookmarkAction_TargetBookmarkId_Description" xml:space="preserve">
-    <value>Получает или задает целевую закладку действия.</value>
+    <value>Получает или устанавливает целевую закладку действия.</value>
   </data>
   <data name="NavigateToReportAction_ReportSource_Description" xml:space="preserve">
-    <value>Указывает источник отчета для действия.</value>
+    <value>Определяет источник отчета для действия.</value>
   </data>
   <data name="NavigateToUrlAction_Target_Description" xml:space="preserve">
-    <value>Получает или задает атрибут целевого объекта Link.</value>
+    <value>Получает или устанавливает атрибут целевого показателя ссылки.</value>
   </data>
   <data name="NavigateToUrlAction_Url_Description" xml:space="preserve">
-    <value>Получает или задает URL-адрес действия.</value>
+    <value>Получает или устанавливает URL действия.</value>
   </data>
   <data name="NumericalScaleBase_DataPointTicks_Description" xml:space="preserve">
-    <value>Показывает тики и метки на оси для каждой точки в наборе данных.</value>
+    <value>Отображает тики и метки на оси для каждой точки в наборе данных.</value>
   </data>
   <data name="NumericalScaleBase_Maximum_Description" xml:space="preserve">
-    <value>Задает максимальное значение оси. Сброс свойства для автоматического вычисления значения на основе данных.</value>
+    <value>Задает ось максимальное значение. Сброс свойства для автоматического расчета значения на основе данных.</value>
   </data>
   <data name="NumericalScaleBase_Minimum_Description" xml:space="preserve">
-    <value>Задает минимальное значение оси. Сброс свойства для автоматического вычисления значения на основе данных.</value>
+    <value>Определяет минимальное значение оси. Сброс свойства для автоматического расчета значения на основе данных.</value>
   </data>
   <data name="NumericalScaleCrossAxisPosition_Value_Description" xml:space="preserve">
-    <value>Задает значение, при котором другая ось пересекает текущую ось.</value>
+    <value>Определяет значение, при котором другая ось пересекает текущую ось.</value>
   </data>
   <data name="NumericalScale_LabelStep_Description" xml:space="preserve">
-    <value>Задает шаг/интервал для меток.</value>
+    <value>Определяет шаг/интервал для меток.</value>
   </data>
   <data name="NumericalScale_MajorStep_Description" xml:space="preserve">
-    <value>Указывает шаг/интервал для основных линий тиков/сетки.</value>
+    <value>Определяет шаг/интервал для основных тиков/линий сетки.</value>
   </data>
   <data name="NumericalScale_MinorStep_Description" xml:space="preserve">
-    <value>Указывает шаг/интервал для незначительных тиков/линий сетки.</value>
+    <value>Определяет шаг/интервал для незначительных тиков/линий сетки.</value>
   </data>
   <data name="OhlcMarks_Close_Description" xml:space="preserve">
-    <value>Точка закрытия для точки данных OHLC.</value>
+    <value>Заключительная точка для точки данных OHLC.</value>
   </data>
   <data name="OhlcMarks_High_Description" xml:space="preserve">
-    <value>Высшая точка для точки данных OHLC.</value>
+    <value>Наивысшая точка для точки данных OHLC.</value>
   </data>
   <data name="OhlcMarks_Low_Description" xml:space="preserve">
     <value>Самая низкая точка для точки данных OHLC.</value>
   </data>
   <data name="OhlcMarks_Open_Description" xml:space="preserve">
-    <value>Точка открывания для точки данных OHLC.</value>
+    <value>Точка открытия для точки данных OHLC.</value>
   </data>
   <data name="OhlcSeries_DataPointLabelAlignment_Description" xml:space="preserve">
-    <value>Задает значение, указывающее, как метки точек данных должны быть выровнены. </value>
+    <value>Указывает значение, указывающее, как метки данных указывают на выравнивание. </value>
   </data>
   <data name="OhlcSeries_DataPointLabelOffset_Description" xml:space="preserve">
-    <value>Задает смещение метки точки данных.</value>
+    <value>Указывает смещение метки точки данных.</value>
   </data>
   <data name="OhlcSeries_MarkerType_Description" xml:space="preserve">
     <value>Указан тип маркера в серии OHLC</value>
   </data>
   <data name="OhlcSeries_MinMarkerWidth_Description" xml:space="preserve">
-    <value>Минимальная ширина маркеров точек данных.</value>
+    <value>Минимальная ширина маркеров точки данных.</value>
   </data>
   <data name="OhlcSeries_Y_Description" xml:space="preserve">
-    <value>OHLC координаты в декартовой системе координат.</value>
+    <value>OHLC координирует в декартовой системе координат.</value>
   </data>
   <data name="PageBreak_After_Description" xml:space="preserve">
-    <value>Разрыв страницы будет происходить после Telerik отчетов репортсектион</value>
+    <value>Разрыв страницы будет происходить после того, как Телерик докладная Секция</value>
   </data>
   <data name="PageBreak_BeforeAndAfter_Description" xml:space="preserve">
-    <value>Разрыв страницы будет происходить до и после Telerik отчетности репортсектион</value>
+    <value>Разрыв страницы будет происходить до и после доклада Телерик отчетности</value>
   </data>
   <data name="PageBreak_Before_Description" xml:space="preserve">
-    <value>Разрыв страницы будет происходить до Telerik отчетов репортсектион</value>
+    <value>Разрыв страницы будет происходить до того, как репортаж Телэрика</value>
   </data>
   <data name="PageBreak_Description" xml:space="preserve">
-    <value>Указывает, где сделать разрыв страницы в отношении Telerik отчетов репортсектион</value>
+    <value>Указывает, где сделать страницу перерыв, в отношении Телерик отчетности репортажи</value>
   </data>
   <data name="PageBreak_None_Description" xml:space="preserve">
-    <value>Разрыв страницы не будет происходить.</value>
+    <value>Разрыв страницы не произойдет.</value>
   </data>
   <data name="PageNumberingStyle_Continue_Description" xml:space="preserve">
-    <value>Нумерация страниц и агрегации счетчиков страниц продолжаются.</value>
+    <value>Продолжается нумерация страниц и агрегирование оценок страниц.</value>
   </data>
   <data name="PageNumberingStyle_Description" xml:space="preserve">
-    <value>Задает стиль нумерации страниц отчета. Имеет смысл и эффект только тогда, когда отчет является частью книги отчетов.</value>
+    <value>Определяет стиль нумерации страниц отчета. Имеет смысл и эффект только тогда, когда отчет является частью книги отчета.</value>
   </data>
   <data name="PageNumberingStyle_ResetNumberingAndCount_Description" xml:space="preserve">
-    <value>Сбрасывает нумерацию страниц и количество страниц.</value>
+    <value>Сброс как нумерации страниц, так и подсчета страниц.</value>
   </data>
   <data name="PageNumberingStyle_ResetNumbering_Description" xml:space="preserve">
-    <value>Сбрасывает нумерацию страниц, пока продолжается агрегация счетчиков страниц.</value>
+    <value>Сброс страницы нумерации при агрегировании подсчета страниц продолжается.</value>
   </data>
   <data name="Panel_Description" xml:space="preserve">
-    <value>Предоставляет механизм группирования для упорядочивания элементов отчета.</value>
+    <value>Обеспечивает механизм группирования для организации элементов отчета.</value>
   </data>
   <data name="PictureBox_Description" xml:space="preserve">
-    <value>Представляет элемент отчета окна рисунка для отображения изображения.</value>
+    <value>Представляет элемент отчета о окне изображения для отображения изображения.</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxisLabelOrientation_Description" xml:space="preserve">
-    <value>Задает ориентацию меток угловых осей.</value>
+    <value>Определяет ориентацию угловых меток оси.</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxisStartAngle_Description" xml:space="preserve">
-    <value>Задает угол в градусах, измеряемый по часовой стрелке от радиальной оси до начальной точки угловой оси.</value>
+    <value>Определяет угол в градусах, измеряемых по часовой стрелке от радиальной оси до начальной точки угловой оси.</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxisSweepAngle_Description" xml:space="preserve">
-    <value>Задает угол в градусах, измеряемый по часовой стрелке от параметра "начальный угол" до конечной точки угловой оси.</value>
+    <value>Определяет угол в градусах, измеряемых по часовой стрелке от параметра угла старта до точки окончания углового оси.</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxis_Description" xml:space="preserve">
-    <value>Задает угловую ось.</value>
+    <value>Определяет угловую ось.</value>
   </data>
   <data name="PolarCoordinateSystem_InnerRadiusRatio_Description" xml:space="preserve">
-    <value>Определяет отношение между внутренним и внешним радиусом системы координат. Используйте значение больше 0, чтобы создать "кольцевой", как графики.</value>
+    <value>Определяет соотношение между внутренним и внешним радиусом системы координат. Используйте значение больше 0 для создания "кольцевой", как графики.</value>
   </data>
   <data name="PolarCoordinateSystem_RadialAxis_Description" xml:space="preserve">
-    <value>Задает радиальную ось.</value>
+    <value>Определяет радиальную ось.</value>
   </data>
   <data name="ReportBookTocPosition_AfterContent_Description" xml:space="preserve">
-    <value>После отчетов в книге отчетов.</value>
+    <value>После докладов в книге отчетов.</value>
   </data>
   <data name="ReportBookTocPosition_BeforeContent_Description" xml:space="preserve">
-    <value>Перед отчетами в книге отчетов.</value>
+    <value>Перед отчетами в книге отчета.</value>
   </data>
   <data name="ReportBookTocPosition_Description" xml:space="preserve">
-    <value>Указывает, где должен быть расположен отчет оглавления в книге отчетов.</value>
+    <value>Определяет, где таблица содержимого должна быть расположена в книге отчетов.</value>
   </data>
   <data name="ReportBook_TocPosition_Description" xml:space="preserve">
-    <value>Указывает положение отчета оглавления в книге отчетов.</value>
+    <value>Определяет положение отчета ТОС в книге отчетов.</value>
   </data>
   <data name="ReportBook_TocReportSource_Description" xml:space="preserve">
-    <value>Указывает источник отчета, который будет использоваться в качестве оглавления в книге отчетов.</value>
+    <value>Определяет источник отчета, который будет использоваться в качестве ТВВ в книге отчетов.</value>
   </data>
   <data name="ReportItemBase_Bindings_Description" xml:space="preserve">
-    <value>Получает коллекцию правил привязки, содержащихся в элементе отчета</value>
+    <value>Получает сбор обязательных правил, содержащихся в пункте отчета</value>
   </data>
   <data name="ReportItemBase_ConditionalFormatting_Description" xml:space="preserve">
-    <value>Получает коллекцию правил условного форматирования, связанных с этим элементом.</value>
+    <value>Получает коллекцию условных правил форматирования, связанных с этим пунктом.</value>
   </data>
   <data name="ReportParameterAvailableValues_DataSource_Description" xml:space="preserve">
-    <value>Получает или задает источник данных. Поддерживаются те же источники данных, что и для элементов данных, включая компоненты источника данных Telerik Reporting.</value>
+    <value>Получает или устанавливает источник данных. Такие же источники данных поддерживаются и для элементов данных, в том числе для компонентов источника отчетности Telerik.</value>
   </data>
   <data name="ReportParameterAvailableValues_DisplayMember_Description" xml:space="preserve">
-    <value>Получает или задает строку, указывающую поле источника данных, из которого следует нарисовать Метки значений.</value>
+    <value>Получает или устанавливает строку, указывающая поле источника данных, из которого следует нарисовать метки значения.</value>
   </data>
   <data name="ReportParameterAvailableValues_Filters_Description" xml:space="preserve">
-    <value>Возвращает коллекцию фильтров, определяющую выражение (ы) фильтра.</value>
+    <value>Получает коллекцию фильтров, которая определяет выражение фильтра (s).</value>
   </data>
   <data name="ReportParameterAvailableValues_Sortings_Description" xml:space="preserve">
-    <value>Получает коллекцию сортировки, определяющую столбцы сортировки, а также их тип и порядок.</value>
+    <value>Получает сортировочную коллекцию, которая определяет тип столбца (s), и их вид и порядок.</value>
   </data>
   <data name="ReportParameterAvailableValues_ValueMember_Description" xml:space="preserve">
-    <value>Получает или задает строку, указывающую поле источника данных, из которого следует нарисовать значения.</value>
+    <value>Получает или устанавливает строку, указывающая поле источника данных, из которого следует рисовать значения.</value>
   </data>
   <data name="ReportParameter_AllowBlank_Description" xml:space="preserve">
-    <value>Определяет, позволяет ли параметру передавать пустую строку. Только для параметров типа String.</value>
+    <value>Определяет, допускает ли параметр пустую строку. Только для параметров типа строки.</value>
   </data>
   <data name="ReportParameter_AllowNull_Description" xml:space="preserve">
-    <value>Определяет, позволяет ли параметр не передавать значение из его редактора.</value>
+    <value>Определяет, не дает ли параметр значение, которое передается от редактора.</value>
   </data>
   <data name="ReportParameter_AutoRefresh_Description" xml:space="preserve">
-    <value>Определяет, должно ли средство просмотра отчетов автоматически обновлять отчет при изменении значения параметра.</value>
+    <value>Определяет, следует ли обозревателю отчета автоматически обновлять отчет при изменения значения параметра.</value>
   </data>
   <data name="ReportParameter_AvailableValues_Description" xml:space="preserve">
-    <value>Получает объект, который определяет набор значений, из которых может принимать параметр.</value>
+    <value>Получает объект, определяющий набор значений, который может принять параметр.</value>
   </data>
   <data name="ReportParameter_Mergeable_Description" xml:space="preserve">
-    <value>Получает или задает значение, указывающее, следует ли объединять этот параметр с идентичными параметрами из других отчетов, если этот отчет является частью книги отчетов.</value>
+    <value>Получает или устанавливает значение, указывающее, должен ли этот параметр быть объединен с идентичными параметрами из других отчетов, когда этот отчет является частью книги отчетов.</value>
   </data>
   <data name="ReportParameter_MultiValue_Description" xml:space="preserve">
-    <value>Определяет, может ли параметр содержать более одного значения.</value>
+    <value>Определяет, может ли параметр удерживать более одного значения.</value>
   </data>
   <data name="ReportParameter_Name_Description" xml:space="preserve">
-    <value>Получает или задает строку, указывающую имя параметра. Используется для доступа к параметру.</value>
+    <value>Получает или устанавливает строку, указывающая имя параметра. Используется для доступа к параметру.</value>
   </data>
   <data name="ReportParameter_Text_Description" xml:space="preserve">
-    <value>Получает или задает текст для параметра, отображаемого в средстве просмотра отчетов. Может быть выражением, которое вычисляется в строку.</value>
+    <value>Получает или устанавливает текст для параметра, отображаемых в просмотрителе отчета. Может быть выражением, которое оценивается в строку.</value>
   </data>
   <data name="ReportParameter_Type_Description" xml:space="preserve">
-    <value>Возвращает или задает тип параметра.</value>
+    <value>Получает или устанавливает тип параметра.</value>
   </data>
   <data name="ReportParameter_Value_Description" xml:space="preserve">
-    <value>Получает или задает значение параметра. Может быть выражением, которое вычисляется для объекта, значения разрешенных типов или IEnumerable, содержащего значения разрешенных типов.</value>
+    <value>Получает или устанавливает значение параметра. Может быть выражением, которое оценивает объект, значение разрешных типов или Иенумерабле, содержащие значения разрешных типов.</value>
   </data>
   <data name="ReportParameter_Visible_Description" xml:space="preserve">
-    <value>Определяет, является ли пользовательский интерфейс параметра видимым.</value>
+    <value>Определяет, виден ли пользовательский интерфейс параметра.</value>
   </data>
   <data name="Scale_Reversed_Description" xml:space="preserve">
-    <value>Указывает, следует ли упорядочить значения в обратном порядке.</value>
+    <value>Указывает, следует ли расположить значения в обратном порядке.</value>
   </data>
   <data name="Scale_SpacingSlotCount_Description" xml:space="preserve">
-    <value>Определяет количество слотов пространства, которые будут оставлены вокруг точек данных в слоте категории, измеренных относительно ширины гнезда точки данных: пустое пространство = количество интервалов * данные поинт_слот ширины</value>
+    <value>Определяет количество слотов пространства, которые будут оставлены вокруг точек данных в категории слот, измеряемый относительно ширины слота точки данных: пустое пространство = интервал слот * данные Поинт_слот ширина</value>
   </data>
   <data name="Shape_Description" xml:space="preserve">
-    <value>Представляет элемент отчета фигуры.</value>
+    <value>Представляет элемент отчета о форме.</value>
   </data>
   <data name="SortDirection_Asc_Description" xml:space="preserve">
-    <value>ASC</value>
+    <value>Asc</value>
   </data>
   <data name="SortDirection_Description" xml:space="preserve">
-    <value>Направление сортировки</value>
+    <value>Сортировать направление</value>
   </data>
   <data name="SortDirection_Desc_Description" xml:space="preserve">
     <value>Desc</value>
   </data>
   <data name="SortingAction_Targets_Description" xml:space="preserve">
-    <value>Получает список или задает имя типа целевого отчета.</value>
+    <value>Получает список или устанавливает имя типа целевого отчета.</value>
   </data>
   <data name="Style_Visible_Description" xml:space="preserve">
-    <value>Получает или задает значение, указывающее, отображается ли элемент отчета.</value>
+    <value>Получает или устанавливает значение, указывающее, отображается ли элемент отчета.</value>
   </data>
   <data name="SubReport_Description" xml:space="preserve">
     <value>Представляет элемент отчета, используемый для встраивания другого отчета в текущий отчет.</value>
   </data>
   <data name="SubReport_ReportSource_Description" xml:space="preserve">
-    <value>Указывает источник отчета.</value>
+    <value>Определяет источник отчета.</value>
   </data>
   <data name="TableGroup_GroupKeepTogether_Description" xml:space="preserve">
-    <value>Указывает, следует ли хранить все строки или столбцы, принадлежащие текущей группе, на одной странице.</value>
+    <value>Указывает, следует ли сохранять все строки или столбцы, принадлежащие текущей группе, на одной странице.</value>
   </data>
   <data name="TableGroup_Visible_Description" xml:space="preserve">
-    <value>Получает или задает значение, указывающее, отображается ли группа.</value>
+    <value>Получает или устанавливает значение, указывающее, отображается ли группа.</value>
   </data>
   <data name="Table_Body_Description" xml:space="preserve">
-    <value>Область тела стола. Тело таблицы находится в правом нижнем углу. В теле таблицы отображаются сведения и сгруппированные данные. Область выражения определяется внутренними группами, к которым принадлежит текстовое поле. Ячейки в теле таблицы отображают подробные данные, когда они являются членами строки детализации и представляют собой статистические данные, когда они являются членами строки или столбца, связанного с группой. По умолчанию ячейки в строке или столбце группы, содержащие простые выражения, которые не включают агрегатную функцию, оцениваются как первое значение в группе.</value>
+    <value>Площадь тела стола. Корпус таблицы расположен в правом нижнем углу. Таблица Body отображает детализированные и сгруппированные данные. Рамки выражения определяются самыми сокровенными группами, к которым принадлежит текстовая коробка. Ячейки в теле таблицы отображают подробные данные, когда они являются членами строки детализации, и представляют собой агрегированные данные, когда они являются членами строки или столбца, связанного с группой. По умолчанию ячейки в строке группы или столбце, содержащие простые выражения, не включающие агрегированные функции, оценивают первое значение в группе.</value>
   </data>
   <data name="Table_ColumnGroups_Description" xml:space="preserve">
-    <value>Иерархия групп столбцов таблицы. ФАкультативного) Группы столбцов таблицы расположены в правом верхнем углу. Эта область автоматически создается при добавлении группы столбцов. Ячейки в этой области представляют элементы иерархии групп столбцов и отображают значения экземпляров группы столбцов.</value>
+    <value>Иерархия столбца группы таблиц. Дополнительный Группы столбцов таблицы расположены в правом верхнем углу. Эта область автоматически создается при добавлении группы столбцов. Ячейки в этой области представляют элементы иерархии групп столбцов и отображают значения экземпляра группы столбцов.</value>
   </data>
   <data name="Table_ColumnHeadersPrintOnEveryPage_Description" xml:space="preserve">
-    <value>Указывает, повторяются ли заголовки группы столбцов на каждой странице, которая отображается в этой таблице.</value>
+    <value>Указывает, повторяются ли заголовки групп столбцов на каждой странице, что отображается в этой таблице.</value>
   </data>
   <data name="Table_Corner_Description" xml:space="preserve">
-    <value>Область угла таблицы. ФАкультативного) Угол таблицы находится в верхнем левом углу. Эта область автоматически создается при добавлении в элемент таблицы как групп строк, так и групп столбцов. В этой области можно объединить ячейки и добавить метку или внедрить другой элемент отчета.</value>
+    <value>Уголок стола. Дополнительный Угол таблицы расположен в верхнем левом углу. Эта область автоматически создается при добавлении групп строк и столбцов в элемент таблицы. В этой области можно объединять ячейки и добавлять этикетку или вставлять другой элемент отчета.</value>
   </data>
   <data name="Table_Description" xml:space="preserve">
-    <value>Элемент отчета таблицы отображает подробные данные, данные, упорядоченные по группам строк, или и те, и другие.</value>
+    <value>Элемент отчета таблицы отображает подробные данные, данные, организованные в группах строк, или обоих.</value>
   </data>
   <data name="Table_RowGroups_Description" xml:space="preserve">
-    <value>Иерархия групп строк таблицы. ФАкультативного) Группы строк таблицы расположены в нижнем левом углу. Эта область автоматически создается при добавлении группы строк. Ячейки в этой области представляют элементы иерархии групп строк и отображают значения экземпляров группы строк.</value>
+    <value>Таблица строки группы иерархии. Дополнительный Группы таблицы строк расположены на нижнем левом углу. Эта область автоматически создается при добавлении группы строк. Ячейки в этой области представляют членов иерархии групп строк и значений отображения строки группы.</value>
   </data>
   <data name="Table_RowHeadersPrintOnEveryPage_Description" xml:space="preserve">
-    <value>Указывает, повторяются ли заголовки групп строк на каждой странице, которая отображается в этой таблице.</value>
+    <value>Указывает, повторяются ли заголовки строки группы на каждой странице, что отображается в этой таблице.</value>
   </data>
   <data name="TextBox_Description" xml:space="preserve">
-    <value>Представляет элемент отчета текстового поля.</value>
+    <value>Представляет элемент отчета текстового ящика.</value>
   </data>
   <data name="TocPosition_AfterReportFooter_Description" xml:space="preserve">
-    <value>После раздела нижнего колонтитула отчета.</value>
+    <value>После доклада колонтитулом разделе.</value>
   </data>
   <data name="TocPosition_AfterReportHeader_Description" xml:space="preserve">
     <value>После раздела заголовка отчета.</value>
   </data>
   <data name="TocPosition_BeforeReportFooter_Description" xml:space="preserve">
-    <value>До раздела нижнего колонтитула отчета.</value>
+    <value>Перед колонтитулом раздела отчета.</value>
   </data>
   <data name="TocPosition_BeforeReportHeader_Description" xml:space="preserve">
-    <value>Перед Секцией заголовка отчета.</value>
+    <value>Перед разделом заголовка отчета.</value>
   </data>
   <data name="TocPosition_Description" xml:space="preserve">
-    <value>Указывает место расположения раздела оглавления.</value>
+    <value>Определяет, где следует расположить раздел Таблица содержимого.</value>
   </data>
   <data name="ToggleVisibilityAction_Targets_Description" xml:space="preserve">
-    <value>Получает список или задает имя типа целевого отчета.</value>
+    <value>Получает список или устанавливает имя типа целевого отчета.</value>
   </data>
   <data name="UrlTarget_NewWindow_Description" xml:space="preserve">
     <value>Открыть в новом окне</value>
   </data>
   <data name="UrlTarget_SameWindow_Description" xml:space="preserve">
-    <value>Открыть в том же окне</value>
+    <value>Откройте в том же окне</value>
   </data>
   <data name="TocSection_Levels_Description" xml:space="preserve">
-    <value>Коллекция стилей уровней, определяющая стили для каждого уровня оглавления.</value>
+    <value>Коллекция стилей уровня, которая определяет стили для каждого уровня содержимого таблицы.</value>
   </data>
   <data name="BasicItemsCategory" xml:space="preserve">
     <value>Основные элементы</value>
@@ -1765,7 +1747,7 @@
     <value>Маркер точки данных</value>
   </data>
   <data name="DataPointTooltipCategory" xml:space="preserve">
-    <value>Подсказка точки данных</value>
+    <value>Подсказка данных точечность</value>
   </data>
   <data name="ReportSourceCategory" xml:space="preserve">
     <value>Источник отчета</value>
@@ -1774,7 +1756,7 @@
     <value>Пространственные данные</value>
   </data>
   <data name="Crosstab_Name" xml:space="preserve">
-    <value>Перекрестный</value>
+    <value>Перекрестного</value>
   </data>
   <data name="GroupBase_Name_Name" xml:space="preserve">
     <value>Имя</value>
@@ -1783,13 +1765,13 @@
     <value>Видимый</value>
   </data>
   <data name="MapItem_Bounds_Name" xml:space="preserve">
-    <value>Границы</value>
+    <value>Границ</value>
   </data>
   <data name="MapItem_Height_Name" xml:space="preserve">
     <value>Высота</value>
   </data>
   <data name="MapItem_IsInsidePlotArea_Name" xml:space="preserve">
-    <value>Внутренняя область печати</value>
+    <value>Есть внутренняя площадь участка</value>
   </data>
   <data name="MapItem_Left_Name" xml:space="preserve">
     <value>Лево</value>
@@ -1813,7 +1795,7 @@
     <value>Положение</value>
   </data>
   <data name="MapLegend_TitleStyle_Name" xml:space="preserve">
-    <value>Стиль заголовка</value>
+    <value>Название стиль</value>
   </data>
   <data name="MapLegend_Title_Name" xml:space="preserve">
     <value>Название</value>
@@ -1831,7 +1813,7 @@
     <value>Стиль элемента</value>
   </data>
   <data name="MapScaleLegend_ScaleUnits_Name" xml:space="preserve">
-    <value>Единицы масштабирования</value>
+    <value>Блоки масштаба</value>
   </data>
   <data name="MapScaleLegend_Size_Name" xml:space="preserve">
     <value>Размер</value>
@@ -1852,7 +1834,7 @@
     <value>Токен клиента</value>
   </data>
   <data name="Map_BingMapsTileProvider_ImagerySet_Name" xml:space="preserve">
-    <value>Набор изображений</value>
+    <value>Набор снимков</value>
   </data>
   <data name="Map_ColorPalette_Name" xml:space="preserve">
     <value>Цветовая палитра</value>
@@ -1870,19 +1852,19 @@
     <value>Степени</value>
   </data>
   <data name="Map_GenericTileProvider_Attribution_Name" xml:space="preserve">
-    <value>Присвоения</value>
+    <value>Атрибуции</value>
   </data>
   <data name="Map_GenericTileProvider_LogoUrl_Name" xml:space="preserve">
-    <value>URL-адрес логотипа</value>
+    <value>Логотип URL</value>
   </data>
   <data name="Map_GenericTileProvider_UrlSubdomains_Name" xml:space="preserve">
-    <value>Субдомены URL</value>
+    <value>Поддомены URL</value>
   </data>
   <data name="Map_GenericTileProvider_UrlTemplate_Name" xml:space="preserve">
-    <value>Шаблон URL-адреса</value>
+    <value>Шаблон URL</value>
   </data>
   <data name="Map_GeoLocationGroups_Name" xml:space="preserve">
-    <value>Географические группы геолокации</value>
+    <value>ГЕО расположение групп</value>
   </data>
   <data name="Map_GeoLocationMapGroup_ChildGroups_Name" xml:space="preserve">
     <value>Дочерние группы</value>
@@ -1900,10 +1882,10 @@
     <value>Легенды</value>
   </data>
   <data name="Map_LocationMapSeries_GeoLocationGroup_Name" xml:space="preserve">
-    <value>Географическая группа</value>
+    <value>ГЕО расположение группы</value>
   </data>
   <data name="Map_LocationProvider_Name" xml:space="preserve">
-    <value>Поставщик местоположения</value>
+    <value>Поставщик геолокации</value>
   </data>
   <data name="Map_MapGroupBase_Visible_Name" xml:space="preserve">
     <value>Видимый</value>
@@ -1915,22 +1897,22 @@
     <value>Дочерние группы</value>
   </data>
   <data name="Map_MapSeriesBase_SeriesGroup_Name" xml:space="preserve">
-    <value>Группа рядов</value>
+    <value>Группа серий</value>
   </data>
   <data name="Map_Meridians_Name" xml:space="preserve">
-    <value>Меридианов</value>
+    <value>Меридианы</value>
   </data>
   <data name="Map_Parallels_Name" xml:space="preserve">
-    <value>Parallels</value>
+    <value>Параллели</value>
   </data>
   <data name="Map_PlotAreaStyle_Name" xml:space="preserve">
-    <value>Стиль области печати</value>
+    <value>Стиль участка площади</value>
   </data>
   <data name="Map_PointMapSeries_DataPointLabelAlignment_Name" xml:space="preserve">
-    <value>Выравнивание меток точек данных</value>
+    <value>Выравнивание метки точки данных</value>
   </data>
   <data name="Map_PointMapSeries_DataPointLabelOffset_Name" xml:space="preserve">
-    <value>Смещение метки точки данных</value>
+    <value>Смещение точки метки данных</value>
   </data>
   <data name="Map_PointMapSeries_Latitude_Name" xml:space="preserve">
     <value>Широта</value>
@@ -1939,10 +1921,10 @@
     <value>Долгота:</value>
   </data>
   <data name="Map_PointMapSeries_MarkerMaxSize_Name" xml:space="preserve">
-    <value>Максимальный размер маркера</value>
+    <value>Маркер максимальный размер</value>
   </data>
   <data name="Map_PointMapSeries_MarkerMinSize_Name" xml:space="preserve">
-    <value>Минимальный размер маркера</value>
+    <value>Маркер мин размер</value>
   </data>
   <data name="Map_PointMapSeries_MarkerSize_Name" xml:space="preserve">
     <value>Размер маркера</value>
@@ -1963,10 +1945,10 @@
     <value>Проекции</value>
   </data>
   <data name="Map_ScaleLegend_Name" xml:space="preserve">
-    <value>Легенда масштаба</value>
+    <value>Шкала легенда</value>
   </data>
   <data name="Map_SeriesGroups_Name" xml:space="preserve">
-    <value>Группы рядов</value>
+    <value>Группы серий</value>
   </data>
   <data name="Map_Series_Name" xml:space="preserve">
     <value>Серии</value>
@@ -1975,22 +1957,22 @@
     <value>Дочерние группы</value>
   </data>
   <data name="Map_ShapeMapSeries_ColorData_Name" xml:space="preserve">
-    <value>Цветовые данные</value>
+    <value>Цветные данные</value>
   </data>
   <data name="Map_ShapeMapSeries_ColorsCount_Name" xml:space="preserve">
-    <value>Количество цветов</value>
+    <value>Цвета графа</value>
   </data>
   <data name="Map_ShapeMapSeries_DataPointLabelAlignment_Name" xml:space="preserve">
-    <value>Выравнивание меток точек данных</value>
+    <value>Выравнивание метки точки данных</value>
   </data>
   <data name="Map_ShapeMapSeries_DataPointLabelOffset_Name" xml:space="preserve">
-    <value>Смещение метки точки данных</value>
+    <value>Смещение точки метки данных</value>
   </data>
   <data name="Map_ShapeMapSeries_RangeGrouping_Name" xml:space="preserve">
-    <value>Группирование диапазонов</value>
+    <value>Группировка диапазона</value>
   </data>
   <data name="Map_ShapeMapSeries_ShapeMapGroup_Name" xml:space="preserve">
-    <value>Группа карт фигур</value>
+    <value>Группа карт формы</value>
   </data>
   <data name="Map_ShapeMapSeries_SourceType_Name" xml:space="preserve">
     <value>Тип источника</value>
@@ -2023,37 +2005,37 @@
     <value>Url</value>
   </data>
   <data name="ReportBook_TocPosition_Name" xml:space="preserve">
-    <value>Положение оглавления</value>
+    <value>Позиция ТОС</value>
   </data>
   <data name="ReportBook_TocReportSource_Name" xml:space="preserve">
-    <value>Источник отчета TOC</value>
+    <value>Источник отчета ТОС</value>
   </data>
   <data name="ReportItemBase_Bindings_Name" xml:space="preserve">
     <value>Привязки</value>
   </data>
   <data name="ReportItemBase_ConditionalFormatting_Name" xml:space="preserve">
-    <value>Условное форматирование</value>
+    <value>Условная форматирование</value>
   </data>
   <data name="ReportParameterAvailableValues_DataSource_Name" xml:space="preserve">
     <value>Источник данных</value>
   </data>
   <data name="ReportParameterAvailableValues_DisplayMember_Name" xml:space="preserve">
-    <value>Отобразить элемент</value>
+    <value>Дисплей участника</value>
   </data>
   <data name="ReportParameterAvailableValues_Filters_Name" xml:space="preserve">
     <value>Фильтры</value>
   </data>
   <data name="ReportParameterAvailableValues_Sortings_Name" xml:space="preserve">
-    <value>Сортировок</value>
+    <value>Нам</value>
   </data>
   <data name="ReportParameterAvailableValues_ValueMember_Name" xml:space="preserve">
-    <value>Член значения</value>
+    <value>Значение участника</value>
   </data>
   <data name="ReportParameter_AllowBlank_Name" xml:space="preserve">
-    <value>Разрешить пустой</value>
+    <value>Разрешить бланк</value>
   </data>
   <data name="ReportParameter_AllowNull_Name" xml:space="preserve">
-    <value>Разрешить null</value>
+    <value>Разрешить нулевую</value>
   </data>
   <data name="ReportParameter_AutoRefresh_Name" xml:space="preserve">
     <value>Автоматическое обновление</value>
@@ -2062,10 +2044,10 @@
     <value>Доступные значения</value>
   </data>
   <data name="ReportParameter_Mergeable_Name" xml:space="preserve">
-    <value>Слияние</value>
+    <value>Мержеабле</value>
   </data>
   <data name="ReportParameter_MultiValue_Name" xml:space="preserve">
-    <value>Множественное значение</value>
+    <value>Multi значение</value>
   </data>
   <data name="ReportParameter_Name_Name" xml:space="preserve">
     <value>Имя</value>
@@ -2089,13 +2071,13 @@
     <value>Тип фигуры</value>
   </data>
   <data name="Shape_Stretch_Name" xml:space="preserve">
-    <value>Растянуть</value>
+    <value>Стрейч</value>
   </data>
   <data name="SortingAction_SortingExpression_Name" xml:space="preserve">
-    <value>Выражение сортировки</value>
+    <value>Сортировка выражений</value>
   </data>
   <data name="SortingAction_Targets_Name" xml:space="preserve">
-    <value>Целей</value>
+    <value>Цели</value>
   </data>
   <data name="SubReport_ReportSource_Name" xml:space="preserve">
     <value>Источник отчета</value>
@@ -2110,10 +2092,10 @@
     <value>Содержимое</value>
   </data>
   <data name="Table_ColumnGroups_Name" xml:space="preserve">
-    <value>Группы столбцов</value>
+    <value>Столбца группы</value>
   </data>
   <data name="Table_ColumnHeadersPrintOnEveryPage_Name" xml:space="preserve">
-    <value>Заголовки столбцов печатаются на каждой странице</value>
+    <value>Колонка заголовки печать на каждой странице</value>
   </data>
   <data name="Table_Corner_Name" xml:space="preserve">
     <value>Углу</value>
@@ -2125,43 +2107,43 @@
     <value>Группы строк</value>
   </data>
   <data name="Table_RowHeadersPrintOnEveryPage_Name" xml:space="preserve">
-    <value>Заголовки строк печатаются на каждой странице</value>
+    <value>Строка заголовки печать на каждой странице</value>
   </data>
   <data name="TocSection_Levels_Name" xml:space="preserve">
-    <value>Уровнях</value>
+    <value>Уровней</value>
   </data>
   <data name="TocSection_Position_Description" xml:space="preserve">
-    <value>Получает или задает значение, указывающее, где должен быть расположен раздел.</value>
+    <value>Получает или устанавливает значение, указывающее, где должен быть расположен раздел.</value>
   </data>
   <data name="TocSection_Position_Name" xml:space="preserve">
     <value>Положение</value>
   </data>
   <data name="TocSection_TitleStyle_Description" xml:space="preserve">
-    <value>Возвращает объект Style, задающий внешний вид заголовка оглавления.</value>
+    <value>Получает объект Style, определяющий внешний вид таблицы содержимого заголовка.</value>
   </data>
   <data name="TocSection_TitleStyle_Name" xml:space="preserve">
-    <value>Стиль заголовка</value>
+    <value>Название стиль</value>
   </data>
   <data name="TocSection_Title_Description" xml:space="preserve">
-    <value>Получает или задает значение, которое будет отображаться в верхней части раздела оглавление.</value>
+    <value>Получает или устанавливает значение, которое будет отображаться в верхней части таблицы содержимого раздела.</value>
   </data>
   <data name="TocSection_Title_Name" xml:space="preserve">
     <value>Название</value>
   </data>
   <data name="ToggleVisibilityAction_DisplayExpandedMark_Description" xml:space="preserve">
-    <value>Определяет, будет ли элемент, представляя действие, отображаться изначально с развернутым или свернутым знаком.</value>
+    <value>Определяет, если элемент подвергая действие будет отображаться первоначально с расширенной или с свернутой отметки.</value>
   </data>
   <data name="ToggleVisibilityAction_DisplayExpandedMark_Name" xml:space="preserve">
-    <value>Отображать развернутый знак</value>
+    <value>Дисплей расширенный Марк</value>
   </data>
   <data name="ToggleVisibilityAction_Targets_Name" xml:space="preserve">
-    <value>Целей</value>
+    <value>Цели</value>
   </data>
   <data name="AreaSeries_AreaStyle_Name" xml:space="preserve">
-    <value>Стиль области</value>
+    <value>Стиль зоны</value>
   </data>
   <data name="AreaSeries_ConditionalFormatting_Name" xml:space="preserve">
-    <value>Условное форматирование</value>
+    <value>Условная форматирование</value>
   </data>
   <data name="AreaSeries_LineType_Name" xml:space="preserve">
     <value>Тип линии</value>
@@ -2179,13 +2161,13 @@
     <value>Y0</value>
   </data>
   <data name="BarcodeAlign_Name" xml:space="preserve">
-    <value>Выравнивание по стержню</value>
+    <value>Панель выравнивания</value>
   </data>
   <data name="BarcodeAngle_Name" xml:space="preserve">
     <value>Угол</value>
   </data>
   <data name="BarcodeChecksum_Name" xml:space="preserve">
-    <value>Контрольной</value>
+    <value>Контрольной суммы</value>
   </data>
   <data name="BarcodeEncoder_Name" xml:space="preserve">
     <value>Кодировщик</value>
@@ -2197,7 +2179,7 @@
     <value>Показать текст</value>
   </data>
   <data name="BarcodeStretch_Name" xml:space="preserve">
-    <value>Растянуть</value>
+    <value>Стрейч</value>
   </data>
   <data name="BarcodeSymbology_Name" xml:space="preserve">
     <value>Символы</value>
@@ -2206,16 +2188,16 @@
     <value>Значение</value>
   </data>
   <data name="BarSeries_DataPointLabelAlignment_Name" xml:space="preserve">
-    <value>Выравнивание меток точек данных</value>
+    <value>Выравнивание метки точки данных</value>
   </data>
   <data name="BarSeries_DataPointLabelConnectorConditionalFormatting_Name" xml:space="preserve">
-    <value>Условное форматирование соединителя метки точки данных</value>
+    <value>Разъем метки точки данных условная форматирование</value>
   </data>
   <data name="BarSeries_DataPointLabelConnectorStyle_Name" xml:space="preserve">
-    <value>Стиль соединителя меток точек данных</value>
+    <value>Стиль соединителя метки точки данных</value>
   </data>
   <data name="BarSeries_DataPointLabelOffset_Name" xml:space="preserve">
-    <value>Смещение метки точки данных</value>
+    <value>Смещение точки метки данных</value>
   </data>
   <data name="BarSeries_X0_Name" xml:space="preserve">
     <value>X0</value>
@@ -2224,10 +2206,10 @@
     <value>Y0</value>
   </data>
   <data name="CartesianCoordinateSystem_XAxis_Name" xml:space="preserve">
-    <value>Xaxis</value>
+    <value>XAxis</value>
   </data>
   <data name="CartesianCoordinateSystem_YAxis_Name" xml:space="preserve">
-    <value>Osь</value>
+    <value>YAxis</value>
   </data>
   <data name="CategoryScaleCrossAxisPosition_Value_Name" xml:space="preserve">
     <value>Значение</value>
@@ -2239,28 +2221,31 @@
     <value>Проверить выравнивание</value>
   </data>
   <data name="CheckBoxCheckedImage_Name" xml:space="preserve">
-    <value>Проверенное изображение</value>
+    <value>Проверено изображение</value>
   </data>
   <data name="CheckBoxFalseValue_Name" xml:space="preserve">
-    <value>Значение false</value>
+    <value>Ложное значение</value>
   </data>
   <data name="CheckBoxIndeterminateImage_Name" xml:space="preserve">
-    <value>Неопределенное изображение</value>
+    <value>Неопределенного изображения</value>
   </data>
   <data name="CheckBoxIndeterminateValue_Name" xml:space="preserve">
-    <value>Неопределенное значение</value>
+    <value>Неопределенного значения</value>
   </data>
   <data name="CheckBoxTrueValue_Name" xml:space="preserve">
     <value>Истинное значение</value>
   </data>
   <data name="CheckBoxUncheckedImage_Name" xml:space="preserve">
-    <value>Непроверяемое изображение</value>
+    <value>Неконтролируемая картинка</value>
   </data>
   <data name="CheckBoxValue_Name" xml:space="preserve">
     <value>Значение</value>
   </data>
+  <data name="CheckBoxText_Name" xml:space="preserve">
+    <value>Текст</value>
+  </data>
   <data name="ContainerCanShrink_Name" xml:space="preserve">
-    <value>Может сжиматься</value>
+    <value>Может сокращаться</value>
   </data>
   <data name="CrossAxisPositionBase_Position_Name" xml:space="preserve">
     <value>Положение</value>
@@ -2269,37 +2254,37 @@
     <value>Формат</value>
   </data>
   <data name="DateTimeScale_BaseUnit_Name" xml:space="preserve">
-    <value>Базовый блок</value>
+    <value>Базовая единица</value>
   </data>
   <data name="DateTimeScale_CrossAxisValue_Name" xml:space="preserve">
-    <value>Значение поперечной оси</value>
+    <value>Кросс-значение оси</value>
   </data>
   <data name="DateTimeScale_DataPointTicks_Name" xml:space="preserve">
-    <value>Тики точек данных</value>
+    <value>Клещи точки данных</value>
   </data>
   <data name="DateTimeScale_LabelStep_Name" xml:space="preserve">
-    <value>Шаг метки</value>
+    <value>Шаг этикетки</value>
   </data>
   <data name="DateTimeScale_LabelUnit_Name" xml:space="preserve">
-    <value>Единица этикетки</value>
+    <value>Группа этикеток</value>
   </data>
   <data name="DateTimeScale_MajorStep_Name" xml:space="preserve">
-    <value>Главный шаг</value>
+    <value>Большой шаг</value>
   </data>
   <data name="DateTimeScale_MajorUnit_Name" xml:space="preserve">
-    <value>Основной блок</value>
+    <value>Основная группа</value>
   </data>
   <data name="DateTimeScale_Maximum_Name" xml:space="preserve">
-    <value>Максимальное</value>
+    <value>Максимальная</value>
   </data>
   <data name="DateTimeScale_Minimum_Name" xml:space="preserve">
-    <value>Минимум</value>
+    <value>Минимальный</value>
   </data>
   <data name="DateTimeScale_MinorStep_Name" xml:space="preserve">
-    <value>Малый шаг</value>
+    <value>Незначительный шаг</value>
   </data>
   <data name="DateTimeScale_MinorUnit_Name" xml:space="preserve">
-    <value>Дополнительный блок</value>
+    <value>Малая единица</value>
   </data>
   <data name="DateTimeScale_PositionMode_Name" xml:space="preserve">
     <value>Режим позиции</value>
@@ -2314,31 +2299,31 @@
     <value>Угол метки</value>
   </data>
   <data name="GraphAxis_LabelPlacement_Name" xml:space="preserve">
-    <value>Размещение меток</value>
+    <value>Размещение этикеток</value>
   </data>
   <data name="GraphAxis_MajorGridLineStyle_Name" xml:space="preserve">
-    <value>Стиль основной линии сетки</value>
+    <value>Основные стиль линии сетки</value>
   </data>
   <data name="GraphAxis_MajorTickMarkDisplayType_Name" xml:space="preserve">
-    <value>Тип отображения основных тиковых меток</value>
+    <value>Основные тик Марк дисплей Тип</value>
   </data>
   <data name="GraphAxis_MaxSize_Name" xml:space="preserve">
     <value>Максимальный размер</value>
   </data>
   <data name="GraphAxis_MinorGridLineStyle_Name" xml:space="preserve">
-    <value>Вспомогательный стиль линий сетки</value>
+    <value>Малая сетка линия стиль</value>
   </data>
   <data name="GraphAxis_MinorTickMarkDisplayType_Name" xml:space="preserve">
-    <value>Тип отображения небольшого тика</value>
+    <value>Незначительные тик Марк дисплей Тип</value>
   </data>
   <data name="GraphAxis_MinSize_Name" xml:space="preserve">
-    <value>Минимальный размер</value>
+    <value>Мин размер</value>
   </data>
   <data name="GraphAxis_MultiLevelCategoryLabels_Name" xml:space="preserve">
-    <value>Метки нескольких уровней категории</value>
+    <value>Multi уровня категории этикетки</value>
   </data>
   <data name="GraphAxis_Scale_Name" xml:space="preserve">
-    <value>Масштаба</value>
+    <value>Масштаб</value>
   </data>
   <data name="GraphAxis_Size_Name" xml:space="preserve">
     <value>Размер</value>
@@ -2347,10 +2332,10 @@
     <value>Стиль</value>
   </data>
   <data name="GraphAxis_TitlePlacement_Name" xml:space="preserve">
-    <value>Размещение титров</value>
+    <value>Размещение названия</value>
   </data>
   <data name="GraphAxis_TitleStyle_Name" xml:space="preserve">
-    <value>Стиль заголовка</value>
+    <value>Название стиль</value>
   </data>
   <data name="GraphAxis_Title_Name" xml:space="preserve">
     <value>Название</value>
@@ -2374,13 +2359,13 @@
     <value>Видимый</value>
   </data>
   <data name="GraphItem_Bounds_Name" xml:space="preserve">
-    <value>Границы</value>
+    <value>Границ</value>
   </data>
   <data name="GraphItem_Height_Name" xml:space="preserve">
     <value>Высота</value>
   </data>
   <data name="GraphItem_IsInsidePlotArea_Name" xml:space="preserve">
-    <value>Внутренняя область печати</value>
+    <value>Есть внутренняя площадь участка</value>
   </data>
   <data name="GraphItem_Left_Name" xml:space="preserve">
     <value>Лево</value>
@@ -2404,7 +2389,7 @@
     <value>Положение</value>
   </data>
   <data name="GraphLegend_TitleStyle_Name" xml:space="preserve">
-    <value>Стиль заголовка</value>
+    <value>Название стиль</value>
   </data>
   <data name="GraphLegend_Title_Name" xml:space="preserve">
     <value>Название</value>
@@ -2422,16 +2407,16 @@
     <value>Цветовая палитра</value>
   </data>
   <data name="GraphSeriesBase_DataPointConditionalFormatting_Name" xml:space="preserve">
-    <value>Условное форматирование точки данных</value>
+    <value>Точка данных условная форматирование</value>
   </data>
   <data name="GraphSeriesBase_DataPointLabelAngle_Name" xml:space="preserve">
     <value>Угол метки точки данных</value>
   </data>
   <data name="GraphSeriesBase_DataPointLabelConditionalFormatting_Name" xml:space="preserve">
-    <value>Условное форматирование метки точки данных</value>
+    <value>Метка точки данных условная форматирование</value>
   </data>
   <data name="GraphSeriesBase_DataPointLabelStyle_Name" xml:space="preserve">
-    <value>Стиль меток точек данных</value>
+    <value>Стиль метки точки данных</value>
   </data>
   <data name="GraphSeriesBase_DataPointLabel_Name" xml:space="preserve">
     <value>Метка точки данных</value>
@@ -2452,13 +2437,13 @@
     <value>Упорядочить по оси</value>
   </data>
   <data name="GraphSeries_CategoryGroup_Name" xml:space="preserve">
-    <value>Группа категорий</value>
+    <value>Категория группа</value>
   </data>
   <data name="GraphSeries_CoordinateSystem_Name" xml:space="preserve">
     <value>Система координат</value>
   </data>
   <data name="GraphSeries_SeriesGroup_Name" xml:space="preserve">
-    <value>Группа рядов</value>
+    <value>Группа серий</value>
   </data>
   <data name="GraphTitle_Position_Name" xml:space="preserve">
     <value>Положение</value>
@@ -2482,10 +2467,10 @@
     <value>Надпись</value>
   </data>
   <data name="Graph_PlotAreaStyle_Name" xml:space="preserve">
-    <value>Стиль области печати</value>
+    <value>Стиль участка площади</value>
   </data>
   <data name="Graph_SeriesGroups_Name" xml:space="preserve">
-    <value>Группы рядов</value>
+    <value>Группы серий</value>
   </data>
   <data name="Graph_Series_Name" xml:space="preserve">
     <value>Серии</value>
@@ -2500,19 +2485,19 @@
     <value>Группа держать вместе</value>
   </data>
   <data name="Groupingiption_Name" xml:space="preserve">
-    <value>Групп</value>
+    <value>Группы</value>
   </data>
   <data name="Groupsiption_Name" xml:space="preserve">
     <value>Группы</value>
   </data>
   <data name="LegendItem_ConditionalFormatting_Name" xml:space="preserve">
-    <value>Условное форматирование</value>
+    <value>Условная форматирование</value>
   </data>
   <data name="LegendItem_MarkConditionalFormatting_Name" xml:space="preserve">
-    <value>Пометить условное форматирование</value>
+    <value>Марк условный форматирование</value>
   </data>
   <data name="LegendItem_MarkStyle_Name" xml:space="preserve">
-    <value>Марка стиля</value>
+    <value>Марк стиль</value>
   </data>
   <data name="LegendItem_Style_Name" xml:space="preserve">
     <value>Стиль</value>
@@ -2521,25 +2506,28 @@
     <value>Значение</value>
   </data>
   <data name="LineSeries_ConditionalFormatting_Name" xml:space="preserve">
-    <value>Условное форматирование</value>
+    <value>Условная форматирование</value>
   </data>
   <data name="LineSeries_DataPointLabelAlignment_Name" xml:space="preserve">
-    <value>Выравнивание меток точек данных</value>
+    <value>Выравнивание метки точки данных</value>
   </data>
   <data name="LineSeries_DataPointLabelOffset_Name" xml:space="preserve">
-    <value>Смещение метки точки данных</value>
+    <value>Смещение точки метки данных</value>
   </data>
   <data name="LineSeries_LineStyle_Name" xml:space="preserve">
-    <value>Стиль линий</value>
+    <value>Стиль линии</value>
+  </data>
+  <data name="LineSeries_MissingValuesLineStyle_Name" xml:space="preserve">
+    <value>Отсутствующие значения линии стиль</value>
   </data>
   <data name="LineSeries_LineType_Name" xml:space="preserve">
     <value>Тип линии</value>
   </data>
   <data name="LineSeries_MarkerMaxSize_Name" xml:space="preserve">
-    <value>Максимальный размер маркера</value>
+    <value>Маркер максимальный размер</value>
   </data>
   <data name="LineSeries_MarkerMinSize_Name" xml:space="preserve">
-    <value>Минимальный размер маркера</value>
+    <value>Маркер мин размер</value>
   </data>
   <data name="LineSeries_MarkerSize_Name" xml:space="preserve">
     <value>Размер маркера</value>
@@ -2563,40 +2551,40 @@
     <value>Базы</value>
   </data>
   <data name="LogarithmicScale_Maximum_Name" xml:space="preserve">
-    <value>Максимальное</value>
+    <value>Максимальная</value>
   </data>
   <data name="LogarithmicScale_Minimum_Name" xml:space="preserve">
-    <value>Минимум</value>
+    <value>Минимальный</value>
   </data>
   <data name="LogarithmicScale_Value_Name" xml:space="preserve">
     <value>Значение</value>
   </data>
   <data name="NoDataMessage_Name" xml:space="preserve">
-    <value>Нет сообщения данных</value>
+    <value>Нет сообщений данных</value>
   </data>
   <data name="NoDataStyle_Name" xml:space="preserve">
     <value>Нет стиля данных</value>
   </data>
   <data name="NumericalScaleBase_DataPointTicks_Name" xml:space="preserve">
-    <value>Тики точек данных</value>
+    <value>Клещи точки данных</value>
   </data>
   <data name="NumericalScaleBase_Maximum_Name" xml:space="preserve">
-    <value>Максимальное</value>
+    <value>Максимальная</value>
   </data>
   <data name="NumericalScaleBase_Minimum_Name" xml:space="preserve">
-    <value>Минимум</value>
+    <value>Минимальный</value>
   </data>
   <data name="NumericalScaleCrossAxisPosition_Value_Name" xml:space="preserve">
     <value>Значение</value>
   </data>
   <data name="NumericalScale_LabelStep_Name" xml:space="preserve">
-    <value>Шаг метки</value>
+    <value>Шаг этикетки</value>
   </data>
   <data name="NumericalScale_MajorStep_Name" xml:space="preserve">
-    <value>Главный шаг</value>
+    <value>Большой шаг</value>
   </data>
   <data name="NumericalScale_MinorStep_Name" xml:space="preserve">
-    <value>Малый шаг</value>
+    <value>Незначительный шаг</value>
   </data>
   <data name="OhlcMarks_Close_Name" xml:space="preserve">
     <value>Закрыть</value>
@@ -2611,10 +2599,10 @@
     <value>Открыть</value>
   </data>
   <data name="OhlcSeries_DataPointLabelAlignment_Name" xml:space="preserve">
-    <value>Выравнивание меток точек данных</value>
+    <value>Выравнивание метки точки данных</value>
   </data>
   <data name="OhlcSeries_DataPointLabelOffset_Name" xml:space="preserve">
-    <value>Смещение метки точки данных</value>
+    <value>Смещение точки метки данных</value>
   </data>
   <data name="OhlcSeries_MarkerType_Name" xml:space="preserve">
     <value>Тип маркера</value>
@@ -2623,10 +2611,10 @@
     <value>Минимальная ширина маркера</value>
   </data>
   <data name="OhlcSeries_Y_Name" xml:space="preserve">
-    <value>OHLC знаки</value>
+    <value>OHLC Маркс</value>
   </data>
   <data name="PageHeaderFooterPrintOnFirstPage_Name" xml:space="preserve">
-    <value>Печатать на первой странице</value>
+    <value>Печать на первой странице</value>
   </data>
   <data name="PageHeaderFooterPrintOnLastPage_Name" xml:space="preserve">
     <value>Печать на последней странице</value>
@@ -2635,19 +2623,19 @@
     <value>Значение</value>
   </data>
   <data name="PictureBoxMimeType_Name" xml:space="preserve">
-    <value>Тип MIME</value>
+    <value>Тип пантомимы</value>
   </data>
   <data name="PictureBoxSizing_Name" xml:space="preserve">
     <value>Размеров</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxisLabelOrientation_Name" xml:space="preserve">
-    <value>Угловая ориентация метки оси</value>
+    <value>Угловая ориентация лейбла Axis</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxisStartAngle_Name" xml:space="preserve">
-    <value>Угловой начальный угол оси</value>
+    <value>Угловой угол старта оси</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxisSweepAngle_Name" xml:space="preserve">
-    <value>Угловой угол сдвига оси</value>
+    <value>Угловой Подметательный угол оси</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxis_Name" xml:space="preserve">
     <value>Угловая ось</value>
@@ -2668,7 +2656,7 @@
     <value>Название документа</value>
   </data>
   <data name="ReportItemAnchoring_Name" xml:space="preserve">
-    <value>Крепления</value>
+    <value>Привязка</value>
   </data>
   <data name="ReportItemBaseAccessible_Name" xml:space="preserve">
     <value>Доступное описание</value>
@@ -2680,19 +2668,19 @@
     <value>Идентификатор закладки</value>
   </data>
   <data name="ReportItemBaseDocumentMapText_Name" xml:space="preserve">
-    <value>Текст карты документа</value>
+    <value>Текст документа карты</value>
   </data>
   <data name="ReportItemBaseParent_Name" xml:space="preserve">
     <value>Родитель</value>
   </data>
   <data name="ReportItemBaseStyleName_Name" xml:space="preserve">
-    <value>Имя стиля</value>
+    <value>Название стиля</value>
   </data>
   <data name="ReportItemBaseStyle_Name" xml:space="preserve">
     <value>Стиль</value>
   </data>
   <data name="ReportItemBaseTocText_Name" xml:space="preserve">
-    <value>Текст оглавления</value>
+    <value>Текст ТОС</value>
   </data>
   <data name="ReportItemBaseToolTip_Name" xml:space="preserve">
     <value>Подсказка</value>
@@ -2701,10 +2689,10 @@
     <value>Видимый</value>
   </data>
   <data name="ReportItemDocking_Name" xml:space="preserve">
-    <value>Док</value>
+    <value>Закрепления</value>
   </data>
   <data name="ReportItemKeepTogether_Name" xml:space="preserve">
-    <value>Держаться вместе</value>
+    <value>Хранить вместе</value>
   </data>
   <data name="ReportItemLocation_Name" xml:space="preserve">
     <value>Местоположение</value>
@@ -2716,7 +2704,7 @@
     <value>Стиль нумерации страниц</value>
   </data>
   <data name="ReportPageSettings_Name" xml:space="preserve">
-    <value>Параметры страницы</value>
+    <value>Настройки страницы</value>
   </data>
   <data name="ReportParametersiption_Name" xml:space="preserve">
     <value>Параметры отчета</value>
@@ -2725,7 +2713,7 @@
     <value>Высота</value>
   </data>
   <data name="ReportSectionKeepTogether_Name" xml:space="preserve">
-    <value>Держаться вместе</value>
+    <value>Хранить вместе</value>
   </data>
   <data name="ReportSectionPageBreak_Name" xml:space="preserve">
     <value>Разрыв страницы</value>
@@ -2737,10 +2725,10 @@
     <value>Ширина</value>
   </data>
   <data name="Scale_Reversed_Name" xml:space="preserve">
-    <value>Вспять</value>
+    <value>Обратный</value>
   </data>
   <data name="Scale_SpacingSlotCount_Name" xml:space="preserve">
-    <value>Количество интервалов между слотами</value>
+    <value>Интервал слот Кол</value>
   </data>
   <data name="SectionPrintAtBottom_Name" xml:space="preserve">
     <value>Печать снизу</value>
@@ -2749,7 +2737,7 @@
     <value>Угол</value>
   </data>
   <data name="Sortings_Name" xml:space="preserve">
-    <value>Сортировок</value>
+    <value>Нам</value>
   </data>
   <data name="StyleBackgroundColor_Name" xml:space="preserve">
     <value>Цвет фона</value>
@@ -2758,7 +2746,7 @@
     <value>Данные изображения</value>
   </data>
   <data name="StyleBackgroundImageMIMEType_Name" xml:space="preserve">
-    <value>Тип MIME</value>
+    <value>Тип пантомимы</value>
   </data>
   <data name="StyleBackgroundImageRepeat_Name" xml:space="preserve">
     <value>Повторить</value>
@@ -2812,7 +2800,7 @@
     <value>Размер</value>
   </data>
   <data name="StyleFontStrikeout_Name" xml:space="preserve">
-    <value>Зачеркнутый</value>
+    <value>Проигрыша</value>
   </data>
   <data name="StyleFontStyle_Name" xml:space="preserve">
     <value>Стиль</value>
@@ -2839,7 +2827,7 @@
     <value>Цвет линии</value>
   </data>
   <data name="StyleLineStyle_Name" xml:space="preserve">
-    <value>Стиль линий</value>
+    <value>Стиль линии</value>
   </data>
   <data name="StyleLineWidth_Name" xml:space="preserve">
     <value>Ширина линии</value>
@@ -2872,7 +2860,7 @@
     <value>Верх</value>
   </data>
   <data name="StyleVerticalAlign_Name" xml:space="preserve">
-    <value>Выравнивание по вертикали</value>
+    <value>Вертикальное выравнивание</value>
   </data>
   <data name="Style_TextAlign_Name" xml:space="preserve">
     <value>Выравнивание текста</value>
@@ -2881,88 +2869,88 @@
     <value>Видимый</value>
   </data>
   <data name="TextBoxCanGrow_Name" xml:space="preserve">
-    <value>Может расти</value>
+    <value>Может вырасти</value>
   </data>
   <data name="TextBoxCanShrink_Name" xml:space="preserve">
-    <value>Может сжиматься</value>
+    <value>Может сокращаться</value>
   </data>
   <data name="TextBoxCulture_Name" xml:space="preserve">
     <value>Культуры</value>
   </data>
   <data name="TextBoxMultiline_Name" xml:space="preserve">
-    <value>Многострочного</value>
+    <value>Многострочный</value>
   </data>
   <data name="TextBoxValue_Name" xml:space="preserve">
     <value>Значение</value>
   </data>
   <data name="TextBoxWordWrap_Name" xml:space="preserve">
-    <value>Перенос текста</value>
+    <value>Обертывание текста</value>
   </data>
   <data name="TextItemBaseCanGrow_Name" xml:space="preserve">
-    <value>Может расти</value>
+    <value>Может вырасти</value>
   </data>
   <data name="TextItemBaseCanShrink_Name" xml:space="preserve">
-    <value>Может сжиматься</value>
+    <value>Может сокращаться</value>
   </data>
   <data name="TextItemBaseCulture_Name" xml:space="preserve">
     <value>Культуры</value>
   </data>
   <data name="TextItemBaseMultiline_Name" xml:space="preserve">
-    <value>Многострочного</value>
+    <value>Многострочный</value>
   </data>
   <data name="TextItemBaseWordWrap_Name" xml:space="preserve">
-    <value>Перенос текста</value>
+    <value>Обертывание текста</value>
   </data>
   <data name="DuplicateReportParameterName_Warning" xml:space="preserve">
-    <value>Параметр отчета с именем "{0}" уже существует.</value>
+    <value>Параметр отчета с именем ' {0} ' уже существует.</value>
   </data>
   <data name="PresentationCategory" xml:space="preserve">
     <value>Презентации</value>
   </data>
   <data name="Report_ExternalStyleSheets_Description" xml:space="preserve">
-    <value>Коллекция внешних таблиц стилей для отчета.</value>
+    <value>Собрание внешних таблиц типа для отчета.</value>
   </data>
   <data name="Report_ExternalStyleSheets_Name" xml:space="preserve">
-    <value>Внешние таблицы стилей</value>
+    <value>Внешние листы стиля</value>
   </data>
   <data name="Report_SnapGridSize_Description" xml:space="preserve">
-    <value>Задайте размер сетки привязки для поверхности конструктора.</value>
+    <value>Установите размер сетки оснастки поверхности конструкции.</value>
   </data>
   <data name="Report_SnapGridSize_Name" xml:space="preserve">
-    <value>Размер сетки привязки</value>
+    <value>Размер оснастки Grid</value>
   </data>
   <data name="Report_StyleSheet_Description" xml:space="preserve">
-    <value>Таблица стилей, связанная с отчетом</value>
+    <value>Лист стилей, связанный с отчетом</value>
   </data>
   <data name="Report_StyleSheet_Name" xml:space="preserve">
-    <value>Таблица стилей</value>
+    <value>Лист стилей</value>
   </data>
   <data name="AttributeSelector_PropertyName_Description" xml:space="preserve">
-    <value>Имя свойства для сопоставления.</value>
+    <value>Название свойства для соответствия.</value>
   </data>
   <data name="AttributeSelector_PropertyName_DisplayName" xml:space="preserve">
-    <value>Имя свойства</value>
+    <value>Название свойства</value>
   </data>
   <data name="DescendantSelector_Selectors_Description" xml:space="preserve">
-    <value>Коллекция селекторов, содержащая селекторы, определяющие шаблон по убыванию, используемый для сопоставления элемента</value>
+    <value>Коллекция селекторов, содержащая селекторы, которые определяют шаблон отклонения, используемый для соответствия элементу</value>
   </data>
   <data name="DescendantSelector_Selectors_DisplayName" xml:space="preserve">
-    <value>Селекторы</value>
+    <value>Селекторов</value>
   </data>
   <data name="StyleRule_Selectors_Description" xml:space="preserve">
-    <value>Тип, соответствующий селектору.</value>
+    <value>Тип, что этот селектор матчей.</value>
   </data>
   <data name="StyleRule_Selectors_DisplayName" xml:space="preserve">
-    <value>Селекторы</value>
+    <value>Селекторов</value>
   </data>
   <data name="StyleSelector_StyleName_Description" xml:space="preserve">
-    <value>Имя стиля, который соответствует селектору</value>
+    <value>Название стиля, что этот селектор матчей</value>
   </data>
   <data name="StyleSelector_StyleName_DisplayName" xml:space="preserve">
-    <value>Имя стиля</value>
+    <value>Название стиля</value>
   </data>
   <data name="TypeSelector_Type_Description" xml:space="preserve">
-    <value>Тип, соответствующий селектору.</value>
+    <value>Тип, что этот селектор матчей.</value>
   </data>
   <data name="TypeSelector_Type_DisplayName" xml:space="preserve">
     <value>Тип</value>
@@ -2974,19 +2962,19 @@
     <value>Путь</value>
   </data>
   <data name="PageSettings_ColumnCount_Description" xml:space="preserve">
-    <value>Указывает, сколько столбцов присутствует в разделе сведений отчета.</value>
+    <value>Определяет, сколько столбцов присутствует в разделе детализации отчета.</value>
   </data>
   <data name="PageSettings_ColumnCount_Name" xml:space="preserve">
-    <value>Количество столбцов</value>
+    <value>Кол-во столбцов</value>
   </data>
   <data name="PageSettings_ColumnSpacing_Description" xml:space="preserve">
-    <value>Значение, указывающее пространство в единицах между двумя соседними столбцами.</value>
+    <value>Значение, указывающее пространство в единицах между двумя соседними колоннами.</value>
   </data>
   <data name="PageSettings_ColumnSpacing_Name" xml:space="preserve">
-    <value>Интервал между столбцами</value>
+    <value>Интервал столбца</value>
   </data>
   <data name="PageSettings_Landscape_Description" xml:space="preserve">
-    <value>Укажите, печатается ли страница в альбомной или книжной ориентации.</value>
+    <value>Укажите, печатается ли страница в пейзажной или портретной ориентации.</value>
   </data>
   <data name="PageSettings_Landscape_Name" xml:space="preserve">
     <value>Горизонтальный</value>
@@ -2998,10 +2986,10 @@
     <value>Поля</value>
   </data>
   <data name="PageSettings_PaperKind_Description" xml:space="preserve">
-    <value>Вид бумаги для страницы.</value>
+    <value>Бумажный вид для страницы.</value>
   </data>
   <data name="PageSettings_PaperKind_Name" xml:space="preserve">
-    <value>Вид бумаги</value>
+    <value>Бумажный вид</value>
   </data>
   <data name="PageSettings_PaperSize_Description" xml:space="preserve">
     <value>Размер бумаги для страницы.</value>
@@ -3010,28 +2998,28 @@
     <value>Размер бумаги</value>
   </data>
   <data name="PageSettings_Watermarks_Description" xml:space="preserve">
-    <value>Коллекция водяных знаков для страницы.</value>
+    <value>Коллекция водяных знаков для этой страницы.</value>
   </data>
   <data name="PageSettings_Watermarks_Name" xml:space="preserve">
-    <value>Водяные</value>
+    <value>Водяные знаки</value>
   </data>
   <data name="Table_KeepTogether_Name" xml:space="preserve">
-    <value>Держаться вместе</value>
+    <value>Хранить вместе</value>
   </data>
   <data name="PictureWatermark_Description" xml:space="preserve">
-    <value>Представляет водяной знак рисунка на печатаемой странице.</value>
+    <value>Представляет водяной знак изображения на странице для печати.</value>
   </data>
   <data name="PictureWatermark_Image_Description" xml:space="preserve">
-    <value>Изображение водяного знака для печати на странице.</value>
+    <value>Изображение водяного знака, напечатанного на странице.</value>
   </data>
   <data name="PictureWatermark_Image_Name" xml:space="preserve">
     <value>Изображение</value>
   </data>
   <data name="PictureWatermark_Name" xml:space="preserve">
-    <value>Изображение водяного знака</value>
+    <value>Водяной знак</value>
   </data>
   <data name="PictureWatermark_Sizing_Description" xml:space="preserve">
-    <value>Режим калибровки изображения водяного знака на печатаемой странице.</value>
+    <value>Режим калибровки изображения водяного знака на странице для печати.</value>
   </data>
   <data name="PictureWatermark_Sizing_Name" xml:space="preserve">
     <value>Размеров</value>
@@ -3043,78 +3031,108 @@
     <value>Цвет Кепча</value>
   </data>
   <data name="TextWatermark_Description" xml:space="preserve">
-    <value>Представляет текстовый водяной знак на печатаемой странице.</value>
+    <value>Представляет текстовый водяной знак на странице для печати.</value>
   </data>
   <data name="TextWatermark_Font_Description" xml:space="preserve">
-    <value>Параметры шрифта текста водяного знака.</value>
+    <value>Настройки шрифта в тексте водяного знака.</value>
   </data>
   <data name="TextWatermark_Font_Name" xml:space="preserve">
     <value>Шрифт</value>
   </data>
   <data name="TextWatermark_Name" xml:space="preserve">
-    <value>Текст водяного знака</value>
+    <value>Водяной знак</value>
   </data>
   <data name="TextWatermark_Orientation_Description" xml:space="preserve">
-    <value>Ориентация текста водяного знака на печатаемой странице.</value>
+    <value>Ориентация текста водяного знака на странице печати.</value>
   </data>
   <data name="TextWatermark_Orientation_Name" xml:space="preserve">
     <value>Ориентация</value>
   </data>
   <data name="TextWatermark_Text_Description" xml:space="preserve">
-    <value>Текст водяного знака, который будет напечатан на странице. Текст может быть указан либо непосредственно в виде строкового литерала, либо косвенно в виде выражения, которое вычисляется во время выполнения для каждой печатаемой страницы.</value>
+    <value>Текст водяного знака, который должен быть напечатан на странице. Текст может быть указан либо непосредственно как строка буквально или косвенно как выражение, которое оценивается во время выполнения для каждой страницы печати.</value>
   </data>
   <data name="TextWatermark_Text_Name" xml:space="preserve">
     <value>Текст</value>
   </data>
   <data name="Tooltip_Description" xml:space="preserve">
-    <value>Представляет класс, определяющий подсказку, отображаемую над элементом отчета или точкой.</value>
+    <value>Представляет класс, который определяет подсказки, отображаемые над пунктом отчета или datadint.</value>
   </data>
   <data name="Tooltip_Name" xml:space="preserve">
     <value>Подсказка</value>
   </data>
   <data name="Tooltip_Text_Description" xml:space="preserve">
-    <value>Текст, отображаемый в виде всплывающей подсказки. Поддерживает выражения и внедренные выражения.</value>
+    <value>Текст, который будет отображаться как текст подсказки. Поддерживает выражения и встроенные выражения.</value>
   </data>
   <data name="Tooltip_Text_Name" xml:space="preserve">
     <value>Текст</value>
   </data>
   <data name="Tooltip_Title_Description" xml:space="preserve">
-    <value>Текст, отображаемый в виде заголовка подсказки. Поддерживает выражения и внедренные выражения.</value>
+    <value>Текст, который будет отображаться как заголовок подсказки. Поддерживает выражения и встроенные выражения.</value>
   </data>
   <data name="Tooltip_Title_Name" xml:space="preserve">
     <value>Название</value>
   </data>
   <data name="Watermark_Description" xml:space="preserve">
-    <value>Представляет водяной знак на печатаемой странице.</value>
+    <value>Представляет водяной знак на странице для печати.</value>
   </data>
   <data name="Watermark_Name" xml:space="preserve">
-    <value>Водяной</value>
+    <value>Водяной знак</value>
   </data>
   <data name="Watermark_Opacity_Description" xml:space="preserve">
-    <value>Непрозрачность водяного знака при объединении его с другими элементами на печатаемой странице.</value>
+    <value>Непрозрачность водяного знака при его комбинирования с другими элементами на странице для печати.</value>
   </data>
   <data name="Watermark_Opacity_Name" xml:space="preserve">
     <value>Непрозрачность</value>
   </data>
   <data name="Watermark_Position_Description" xml:space="preserve">
-    <value>Положение водяного знака относительно других элементов на печатаемой странице.</value>
+    <value>Положение водяного знака относительно других элементов на странице для печати.</value>
   </data>
   <data name="Watermark_Position_Name" xml:space="preserve">
     <value>Положение</value>
   </data>
   <data name="Watermark_PrintOnFirstPage_Description" xml:space="preserve">
-    <value>Значение, указывающее, следует ли печатать водяной знак на первой печатаемой странице отчета.</value>
+    <value>Значение, указывающее, следует ли печатать водяной знак на первой печатной странице отчета.</value>
   </data>
   <data name="Watermark_PrintOnFirstPage_Name" xml:space="preserve">
-    <value>Печатать на первой странице</value>
+    <value>Печать на первой странице</value>
   </data>
   <data name="Watermark_PrintOnLastPage_Description" xml:space="preserve">
-    <value>Значение, указывающее, следует ли печатать водяной знак на последней печатаемой странице отчета.</value>
+    <value>Значение, указывающее, следует ли печатать водяной знак на последней странице печати отчета.</value>
   </data>
   <data name="Watermark_PrintOnLastPage_Name" xml:space="preserve">
     <value>Печать на последней странице</value>
   </data>
   <data name="None" xml:space="preserve">
-    <value>ни</value>
+    <value>Ни один</value>
+  </data>
+  <data name="TableGroup_PageBreak_Description" xml:space="preserve">
+    <value>Получает или устанавливает правило взлома страницы для строк представления этой таблицы группы или столбцов.</value>
+  </data>
+  <data name="TableGroup_PageBreak_Name" xml:space="preserve">
+    <value>Разрыв страницы</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Description" xml:space="preserve">
+    <value>Стиль применительно к области, определяемой точками данных с отсутствующий значениями</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Name" xml:space="preserve">
+    <value>Недостающие значения площадь стиль</value>
+  </data>
+  <data name="Reporting_Language_Description" xml:space="preserve">
+    <value>Настройка текущего локализиваемого языка. Для выбранного языка сохраняются все изменения на локалируемых свойствах.</value>
+  </data>
+  <data name="Reporting_Language_Name" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Reporting_Localizable_Description" xml:space="preserve">
+    <value>Верно, если текущий отчет является локалицизуемым. Отчет может содержать конкретные значения языковых свойств. Если установлен на ложный все ранее сохраненные конкретные значения языковых свойств удаляются и сохраняются только выбранные в настоящее время языковые значения.</value>
+  </data>
+  <data name="Reporting_Localizable_Name" xml:space="preserve">
+    <value>Локализуемые</value>
+  </data>
+  <data name="Localization.OnDisableWarningCaption" xml:space="preserve">
+    <value>Удаление ресурсов языков</value>
+  </data>
+  <data name="Localization.OnDisableWarningMessage" xml:space="preserve">
+    <value>Отключение локализации будет постоянно удалять все языковые ресурсы, за исключением выбранных в настоящее время. Вы уверены, что хотите отключить локализацию?</value>
   </data>
 </root>

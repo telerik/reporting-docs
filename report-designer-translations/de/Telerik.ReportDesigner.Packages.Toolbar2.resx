@@ -130,16 +130,16 @@
     <value>Schließen</value>
   </data>
   <data name="Backstage_Computer" xml:space="preserve">
-    <value>Computer</value>
+    <value>computer</value>
   </data>
   <data name="Backstage_DataPresentationTemplates" xml:space="preserve">
-    <value>Präsentationsvorlagen für Daten</value>
+    <value>Datenpräsentation</value>
   </data>
   <data name="Backstage_Exit_Text" xml:space="preserve">
-    <value>Ausfahrt</value>
+    <value>ausgang</value>
   </data>
   <data name="Backstage_ExportTemplate_Text" xml:space="preserve">
-    <value>Vorlage exportieren...</value>
+    <value>Export Template ...</value>
   </data>
   <data name="Backstage_Help_Title" xml:space="preserve">
     <value>Hilfe</value>
@@ -157,16 +157,16 @@
     <value>Aktuelle Dokumente</value>
   </data>
   <data name="Backstage_ReportServers" xml:space="preserve">
-    <value>Berichtsserver</value>
+    <value>Bericht Server</value>
   </data>
   <data name="Backstage_ReportTemplates" xml:space="preserve">
     <value>Berichtsvorlagen</value>
   </data>
   <data name="Backstage_SaveAll_Text" xml:space="preserve">
-    <value>Alle speichern</value>
+    <value>Alle retten</value>
   </data>
   <data name="Backstage_SaveAs_Text" xml:space="preserve">
-    <value>Speichern unter...</value>
+    <value>Save As ...</value>
   </data>
   <data name="Backstage_SaveAs_Title" xml:space="preserve">
     <value>Speichern unter</value>
@@ -178,6 +178,6 @@
     <value>Benutzervorlagen</value>
   </data>
   <data name="OpenItemModel_ClearRecendDocuments" xml:space="preserve">
-    <value>Zuletzt verwendete Dokumente löschen</value>
+    <value>Klare Dokumente aus jüngster Zeit</value>
   </data>
 </root>

@@ -117,103 +117,103 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="WorkbenchLoader_LanguageStrings_Updated" xml:space="preserve">
-    <value>Sprachzeichenfolgen wurden aktualisiert. Diese Änderung erfordert einen Neustart. Die Anwendung jetzt neu starten?</value>
-  </data>
-  <data name="WorkbenchLoader_CannotConnectToStartedInstance_Error" xml:space="preserve">
-    <value>Es kann keine Verbindung mit einer bereits gestarteten Instanz von {0} hergestellt werden. Schließen Sie die anderen ausgeführten Programmkopien, oder aktivieren Sie die Option, mit der mehrere Instanzen gestartet werden können.</value>
-  </data>
   <data name="DocumentEditorService_BeginEdit_CannotReadFile" xml:space="preserve">
-    <value>Datei kann nicht gelesen werden: {0}</value>
+    <value>Datei nicht lesen: {0}</value>
   </data>
   <data name="DocumentEditorService_BeginEdit_UnsupportedFileType" xml:space="preserve">
-    <value>Nicht unterstützter Dateityp: {0}</value>
+    <value>Nicht unterstützte Dateiart: {0}</value>
   </data>
   <data name="DocumentEditorService_ShowDocument_DocumentAlreadyOpened" xml:space="preserve">
     <value>Das Dokument ' {0} ' ist bereits geöffnet.</value>
   </data>
   <data name="DocumentManager_CanWrite_Error" xml:space="preserve">
-    <value>Kann nicht schreiben, um </value>
+    <value>Kann nicht schreiben </value>
   </data>
   <data name="DocumentManager_GetDocumentOrThrowIfMissing_Error" xml:space="preserve">
     <value>Dokument nicht gefunden: </value>
   </data>
   <data name="DocumentManager_LoadData_DetectedChangesNotSavedProperly" xml:space="preserve">
-    <value>{0} hat festgestellt, dass Änderungen vorhanden sind, die bei der letzten Änderung der folgenden Datei nicht ordnungsgemäß gespeichert wurden:</value>
+    <value>das? {0} festgestellt, dass es Änderungen gibt, die beim letzten Mal, als die folgende Datei geändert wurde, nicht richtig gespeichert wurden:</value>
   </data>
   <data name="DocumentManager_LoadData_DocumentAutoRecover" xml:space="preserve">
-    <value>Automatische Dokumentwiederherstellung</value>
+    <value>Dokument Auto neu aufstellung</value>
   </data>
   <data name="DocumentManager_LoadData_RecoverChanges" xml:space="preserve">
-    <value>Möchten Sie die Änderungen wiederherstellen?</value>
+    <value>Wollen Sie die Änderungen wieder herstellen?</value>
   </data>
   <data name="DocumentManager_LoadData_RecoverChangesCancel" xml:space="preserve">
-    <value>• "Nein" wird das Dokument auf den zuletzt gespeicherten Zustand zurücksetzen. </value>
+    <value>? ? Nein? Wird das Dokument in den zuletzt gespeicherten Zustand zurückfallen.</value>
   </data>
   <data name="DocumentManager_LoadData_RecoverChangesConfirm" xml:space="preserve">
-    <value>• "Yes" wird die ungespeicherten Änderungen wiederherstellen. Sie können die Änderungen später verwerfen, indem Sie das Dokument nicht speichern.</value>
+    <value>? ? ja? Wird die nicht gespeicherten Änderungen wiederherstellen. Sie können die Änderungen später ablegen, indem Sie das Dokument nicht speichern.</value>
   </data>
   <data name="DocumentManager_NotifyDocumentChangedFromOutside_Reload" xml:space="preserve">
-    <value>Möchten Sie es neu laden?</value>
+    <value>Wollen Sie es neu laden?</value>
   </data>
   <data name="DocumentManager_NotifyDocumentChangedFromOutside_ReloadAndLoseChanges" xml:space="preserve">
-    <value>Möchten Sie es erneut laden und die im Quell-Editor vorgenommenen Änderungen verlieren?</value>
+    <value>Möchten Sie es neu laden und die Änderungen im Quelleditor verlieren?</value>
   </data>
   <data name="DocumentManager_NotifyDocumentChangedFromOutside_Warning" xml:space="preserve">
-    <value>Diese Datei wurde außerhalb des Quell-Editors geändert.</value>
+    <value>Diese Datei wurde außerhalb des Quelleditors geändert.</value>
   </data>
   <data name="DocumentManager_RegisterDocument_DocumentIsAlreadyOpened" xml:space="preserve">
     <value>Das Dokument ' {0} ' ist bereits geöffnet.</value>
   </data>
   <data name="DocumentManager_SaveToDifferentFile_WriteProtectedFileCaption" xml:space="preserve">
-    <value>Speichern der schreibgeschützten Datei</value>
+    <value>Speichern von Schreibgeschützte Datei</value>
   </data>
   <data name="DocumentManager_SaveToDifferentFile_WriteProtectedFileMsg" xml:space="preserve">
-    <value>Die Datei ' {0} ' kann nicht gespeichert werden, da Sie von einem anderen Benutzer gesperrt ist. 
+    <value>Die Datei ' {0} ' kann nicht gespeichert werden, weil sie von einem anderen Benutzer gesperrt wird. 
 
-Möchten Sie die Datei an einem anderen Speicherort speichern?</value>
+Möchten Sie die Datei an einem anderen Ort speichern?</value>
   </data>
   <data name="DocumentManager_ShowSaveDocumentDialog_Save" xml:space="preserve">
-    <value>' {0} ' speichern?</value>
+    <value>Speichern ' {0} '?</value>
   </data>
   <data name="EditorFactoryManager_BeginEdit_Error" xml:space="preserve">
-    <value>Fehler beim Öffnen der Datei
+    <value>Fehler öffnende Datei
 {0}</value>
   </data>
   <data name="FileOpenService_BuildChooseFileFilter_AllFiles" xml:space="preserve">
     <value>Alle Dateien (*. *) | *. *</value>
   </data>
   <data name="FileOpenService_BuildChooseFileFilter_AllSupported" xml:space="preserve">
-    <value>Alle unterstützten ({0}) | {1}</value>
+    <value>Alle Unterstützer ({0}) | {1}</value>
   </data>
   <data name="FileSaveService_CreateFile_Caption" xml:space="preserve">
     <value>Datei erstellen</value>
   </data>
   <data name="FileSaveService_SaveAsFile_Caption" xml:space="preserve">
-    <value>Datei speichern unter</value>
+    <value>Datei speichern als</value>
   </data>
   <data name="FileService_IsValidDestinationPath_RemoveInvalidRecentFolder" xml:space="preserve">
-    <value>Der Ordner ' {0} ' ist nicht vorhanden. Möchten Sie Sie aus der Liste "zuletzt verwendete Ordner" entfernen?</value>
+    <value>Ordner ' {0} ' existiert nicht. Möchten Sie es aus der Liste der letzten Ordner entfernen?</value>
   </data>
   <data name="ItemManager_CreateFile_Error" xml:space="preserve">
-    <value>Datei "{0}" kann nicht erstellt werden</value>
+    <value>Kann keine Datei erstellen {0}</value>
   </data>
   <data name="ItemManager_CreateTemplateInstance_InvalidFileName" xml:space="preserve">
-    <value>Ungültiger Dateiname: {0}</value>
+    <value>Ungültige Dateiname: {0}</value>
   </data>
   <data name="ItemManager_OpenRecentItem_RemoveInvalidRecentDocument" xml:space="preserve">
-    <value>Die Datei ' {0} ' konnte nicht geöffnet werden. Möchten Sie Sie aus der Liste "zuletzt verwendete" entfernen?</value>
+    <value>Datei ' {0} ' konnte nicht geöffnet werden. Möchten Sie ihn aus der Liste streichen?</value>
   </data>
   <data name="WorkbenchHost_RunCore_AppResourceMergeError" xml:space="preserve">
-    <value>Beim Zusammenführen der Ressourcenwörterbücher ist ein Fehler aufgetreten. Stellen Sie sicher, dass sich keine Assemblys mit Telerik-Steuerelementen für WPF im gleichen Verzeichnis wie die ausführbare Datei der Anwendung befinden.</value>
+    <value>Während der Zusammenführung der Ressourcen-Wörterbücher ist ein Fehler aufgetreten. Vergewissern Sie sich, dass sich keine Baugruppen mit Telerik Controls für WPF im selben Verzeichnis befinden wie die ausführbare Anwendung.</value>
   </data>
   <data name="WorkbenchHost_RunCore_ErrorRestarting" xml:space="preserve">
     <value>Ein Fehler ist aufgetreten. Neustart...</value>
   </data>
   <data name="WorkbenchHost_RunCore_FatalErrorClosing" xml:space="preserve">
-    <value>Schwerwiegender Fehler in Workbench. Jetzt schließen...</value>
+    <value>Fataler Fehler in der Werkbank. Jetzt schließen ...</value>
   </data>
   <data name="WorkbenchLoader_BeginLoad_Error" xml:space="preserve">
-    <value>Beim Laden der Workbench des Berichts-Designers ist ein Fehler aufgetreten.</value>
+    <value>Beim Laden der Werkbank des Reporters ist ein Fehler aufgetreten.</value>
+  </data>
+  <data name="WorkbenchLoader_CannotConnectToStartedInstance_Error" xml:space="preserve">
+    <value>Kann sich nicht mit einer bereits begonnenen Instanz von {0} verbinden. Bitte schließen Sie die anderen laufenden Programmkopien oder aktivieren Sie die Option, die es erlaubt, mehrere Instanzen zu starten.</value>
+  </data>
+  <data name="WorkbenchLoader_LanguageStrings_Updated" xml:space="preserve">
+    <value>Sprachsaiten wurden aktualisiert. Diese Änderung erfordert einen Neustart. Jetzt die Bewerbung neu starten?</value>
   </data>
 </root>

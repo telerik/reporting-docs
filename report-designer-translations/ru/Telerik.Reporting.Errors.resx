@@ -118,42 +118,42 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UnitParseNoDigits" xml:space="preserve">
-    <value>не удается выполнить синтаксический анализ {0} как единицу измерения, поскольку он не содержит числовых значений. Примерами допустимых строк единиц измерения являются 1pt и. 5in.</value>
+    <value>{0} не может использоваться как единица, так как она не содержит числовых значений. Примерами действительных строк единицы являются 1pt и. 5in.</value>
   </data>
   <data name="UnitParseNoUnit" xml:space="preserve">
-    <value>{0} не содержит спецификацию единицы измерения. Примерами допустимых строк единиц измерения являются 1pt и. 5in.</value>
+    <value>{0} не содержит спецификации единицы. Примерами действительных строк единицы являются 1pt и. 5in.</value>
   </data>
   <data name="UnitParseNumericPart" xml:space="preserve">
-    <value>Числовая часть {0} не может быть проанализирована как единица типа {2}.</value>
+    <value>Числовую часть {0} нельзя считать единицей типа {0}.</value>
   </data>
   <data name="InvalidUnitType" xml:space="preserve">
-    <value>Неверный тип единицы измерения.</value>
+    <value>Недопустимый тип единицы.</value>
   </data>
   <data name="InvalidArgumentType" xml:space="preserve">
-    <value>{0} должен иметь тип {1}</value>
+    <value>{0} должно быть типа {0}</value>
   </data>
   <data name="GlobalStyleAlreadyDefined" xml:space="preserve">
     <value>Стиль с именем "{0}" уже определен.</value>
   </data>
   <data name="TextParseFailedFormat" xml:space="preserve">
-    <value>Не удалось разобрать текст ("{0}") ожидаемый текст в формате "{1}".</value>
+    <value>Не удалось разобрать текст ("{0}") ожидаемого текста в формате "{0}".</value>
   </data>
   <data name="ToStringNone" xml:space="preserve">
-    <value>ни)</value>
+    <value>никто</value>
   </data>
   <data name="ReportItemBaseNotChild" xml:space="preserve">
-    <value>"дочерний элемент" не является дочерним элементом отчета этого родительского элемента.</value>
+    <value>"Ребенок" не является дочерним пунктом отчета этого родителя.</value>
   </data>
   <data name="DataBinderPropNotFound" xml:space="preserve">
-    <value>{0} не содержит свойство {1}.</value>
+    <value>{0} не содержит свойство {0}.</value>
   </data>
   <data name="InvalidColumnCount" xml:space="preserve">
-    <value>Число столбцов должно быть больше или равно 1.</value>
+    <value>Кол-во столбца должен быть больше или равен 1.</value>
   </data>
   <data name="InvalidColumnSpacing" xml:space="preserve">
-    <value>Интервал между столбцами должен быть неотрицательным.</value>
+    <value>Интервал столбца должен быть неотрицательным блоком.</value>
   </data>
   <data name="MinimumSupportedFontSize" xml:space="preserve">
-    <value>Минимальное поддерживаемое значение размера шрифта — {0}. Объект отчета: {1}</value>
+    <value>Минимальное поддерживаемая величина размера шрифта — {0}. Объект отчета: {1}</value>
   </data>
 </root>

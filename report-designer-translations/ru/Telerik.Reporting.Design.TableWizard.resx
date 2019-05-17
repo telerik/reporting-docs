@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CrosstabWizard_Title" xml:space="preserve">
-    <value>Перекрестный мастер</value>
+    <value>Мастер перекрестного удара</value>
   </data>
   <data name="ArrangeCrosstabPage_AggregateRequired_Warning" xml:space="preserve">
-    <value>Если указана одна или несколько групп столбцов,
-необходимо указать соответствующую агрегатную функцию
-для каждого значения детализации перекрестной таблицы.</value>
+    <value>Когда указана одна или несколько групп столбцов,
+необходимо указать соответствующую агрегированные функции
+для каждой детали значения попереудара.</value>
   </data>
   <data name="ArrangeButtons_Add_Text" xml:space="preserve">
     <value>Добавить</value>
@@ -138,70 +138,70 @@
     <value>Сдвинуть вниз</value>
   </data>
   <data name="ArrangeCrosstabPage_CreateColumnGroups_Instruction" xml:space="preserve">
-    <value>Перетащите сюда поля источника данных, чтобы создать группы столбцов.</value>
+    <value>Перетащите поля источника данных для создания групп столбцов.</value>
   </data>
   <data name="ArrangeCrosstabPage_RowGroups_Text" xml:space="preserve">
     <value>Группы строк</value>
   </data>
   <data name="ArrangeCrosstabPage_CreateRowGroups_Instruction" xml:space="preserve">
-    <value>Перетащите сюда поля источника данных, чтобы создать группы строк.</value>
+    <value>Перетащите поля источника данных здесь, чтобы создать ряд групп.</value>
   </data>
   <data name="ArrangeCrosstabPage_DetailValues_Text" xml:space="preserve">
-    <value>Значения подробностей</value>
+    <value>Значения детализации</value>
   </data>
   <data name="ArrangeCrosstabPage_ChooseFunctionButton_Text" xml:space="preserve">
     <value>Функции</value>
   </data>
   <data name="ArrangeCrosstabPage_AddDetailValues_Instruction" xml:space="preserve">
-    <value>Перетащите здесь поля источника данных для отображения в виде значений выносных элементов.</value>
+    <value>Перетащите поля исходных данных здесь для отображения как значений детализации.</value>
   </data>
   <data name="ArrangeCrosstabPage_Description" xml:space="preserve">
-    <value>Упорядочить поля источника данных для группирования данных и отображения значений выносных элементов.</value>
+    <value>Упорядочивать поля исходных данных для группировать данные и отображать значения детализации.</value>
   </data>
   <data name="ArrangeCrosstabPage_Title" xml:space="preserve">
     <value>Упорядочить поля</value>
   </data>
   <data name="ArrangeCrosstabPage_ColumnGroups_Text" xml:space="preserve">
-    <value>Группы столбцов</value>
+    <value>Столбца группы</value>
   </data>
   <data name="ArrangeCrosstabPage_DataSourceFields_Text" xml:space="preserve">
-    <value>Поля источника данных</value>
+    <value>Поля исходных данных</value>
   </data>
   <data name="ArrangeTablePage_Title" xml:space="preserve">
     <value>Упорядочить поля</value>
   </data>
   <data name="ArrangeTablePage_Description" xml:space="preserve">
-    <value>Упорядочить поля источника данных для отображения в виде столбцов таблицы.</value>
+    <value>Упорядочить поля исходных данных для отображения в виде столбцов таблицы.</value>
   </data>
   <data name="ArrangeTablePage_AddTableColumns_Instruction" xml:space="preserve">
-    <value>Перетащите здесь поля источника данных для отображения в виде столбцов таблицы.</value>
+    <value>Перетащите поля источника данных здесь для отображения в виде столбцов таблицы.</value>
   </data>
   <data name="ArrangeTablePage_TableColumns_Text" xml:space="preserve">
     <value>Столбцы таблицы</value>
   </data>
   <data name="ArrangeTablePage_DataSourceFields_Text" xml:space="preserve">
-    <value>Поля источника данных</value>
+    <value>Поля исходных данных</value>
   </data>
   <data name="Wizards_CreateGroupTotals_Name" xml:space="preserve">
     <value>Сумма</value>
   </data>
   <data name="ChooseLayoutPage_Title" xml:space="preserve">
-    <value>Выберите макет</value>
+    <value>Выбрать макет</value>
   </data>
   <data name="ChooseLayoutPage_Description" xml:space="preserve">
-    <value>Выберите, показывать ли промежуточные итоги и общие итоги и их размещение.</value>
+    <value>Выберите, следует ли отображать итоговые значения и общие итоги и их размещение.</value>
   </data>
   <data name="ChooseLayoutPage_NoTotals_Text" xml:space="preserve">
-    <value>Нет промежуточных итогов и общих итогов</value>
+    <value>Нет итоговых значений и суммарные итоги</value>
   </data>
   <data name="ChooseLayoutPage_SteppedLayout_Text" xml:space="preserve">
-    <value>Ступенчатый макет, промежуточные итоги выше</value>
+    <value>Шагнутый макет, промежуточные итоги выше</value>
   </data>
   <data name="ChooseLayoutPage_BlockedLayoutAbove_Text" xml:space="preserve">
-    <value>Заблокированная компоновка, промежуточные итоги выше</value>
+    <value>Заблокированный макет, промежуточные итоги выше</value>
   </data>
   <data name="ChooseLayoutPage_BlockedLayoutBelow_Text" xml:space="preserve">
-    <value>Заблокированная компоновка, промежуточные итоги ниже</value>
+    <value>Заблокированный макет, промежуточные итоги ниже</value>
   </data>
   <data name="DataSourcePage_DataSourcesList_Text" xml:space="preserve">
     <value>Источники данных</value>
@@ -210,13 +210,13 @@
     <value>Детали!</value>
   </data>
   <data name="DataSourcePage_AddNewDataSourceButton_Text" xml:space="preserve">
-    <value>&amp;Добавить новый источник данных...</value>
+    <value>&amp;Добавление источника новых данных...</value>
   </data>
   <data name="DataSourcePage_Description" xml:space="preserve">
-    <value>Выберите источник данных, к которому вы хотите подключиться, или создайте новый.</value>
+    <value>Выберите источник данных, который вы хотели бы подключить или создать новый.</value>
   </data>
   <data name="DataSourcePage_Title" xml:space="preserve">
-    <value>Выбор источника данных</value>
+    <value>Выберите источник данных</value>
   </data>
   <data name="StylesPage_NormalStyle_Text" xml:space="preserve">
     <value>Нормальный</value>
@@ -225,7 +225,7 @@
     <value>Голубой опал</value>
   </data>
   <data name="StylesPage_ApexStyle_Text" xml:space="preserve">
-    <value>Apex</value>
+    <value>Вершине</value>
   </data>
   <data name="StylesPage_AspectStyle_Text" xml:space="preserve">
     <value>Аспект</value>
@@ -237,7 +237,7 @@
     <value>Корпоративных</value>
   </data>
   <data name="StylesPage_OfficeStyle_Text" xml:space="preserve">
-    <value>Office</value>
+    <value>Офис</value>
   </data>
   <data name="StylesPage_SolsticeStyle_Text" xml:space="preserve">
     <value>Солнцестояния</value>
@@ -246,10 +246,10 @@
     <value>Резюме</value>
   </data>
   <data name="SummaryInfoPage_Description" xml:space="preserve">
-    <value>Перед началом генерации просмотрите следующие сводные данные.</value>
+    <value>Перед началом генерации просмотрите следующую сводку информации.</value>
   </data>
   <data name="SummaryInfoPage_Title" xml:space="preserve">
-    <value>Сводка по обзору</value>
+    <value>Краткий обзор</value>
   </data>
   <data name="TableWizard_Title" xml:space="preserve">
     <value>Мастер таблиц</value>

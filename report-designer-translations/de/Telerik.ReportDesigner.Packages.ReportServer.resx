@@ -117,68 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ForgetServer_Confirmation" xml:space="preserve">
-    <value>Sind Sie sicher, dass Sie diesen Berichtsserver Eintrag entfernen möchten?</value>
-  </data>
   <data name="CanConnect_ConnectionFailure" xml:space="preserve">
-    <value>Es kann keine Verbindung zum Berichts Server hergestellt werden.</value>
+    <value>Kann sich nicht mit dem Report Server verbinden.</value>
   </data>
   <data name="CreateReport_ReportNameInvalidCharacters" xml:space="preserve">
-    <value>Ein Berichtsname darf keines der folgenden Zeichen enthalten: {0} {1}</value>
+    <value>Ein Berichtsname kann keine der folgenden characters:{0}{1} enthalten.</value>
   </data>
   <data name="CreateReport_ReportReplaceConfirmation" xml:space="preserve">
-    <value>Ein Bericht mit dem Namen "{0}" ist bereits in der Kategorie "{1}" vorhanden. Möchten Sie eine neue Revision hinzufügen?</value>
+    <value>Ein Bericht mit dem Namen "{0}" existiert bereits in der Kategorie "{1}". Wollen Sie eine neue Revision hinzufügen?</value>
   </data>
   <data name="CreatReport_Failed" xml:space="preserve">
-    <value>Der Bericht kann nicht erstellt werden. Überprüfen Sie, ob für den ausgewählten Berichtsserver Kategorien definiert sind und der angemeldete Benutzer über ausreichende Berechtigungen verfügt.</value>
+    <value>Der Bericht kann nicht erstellt werden. Bitte prüfen Sie, ob der ausgewählte Berichtsserver Kategorien definiert hat und der eingeloggte Benutzer über ausreichende Berechtigungen verfügt.</value>
   </data>
   <data name="Lock_LockedByUserError" xml:space="preserve">
     <value>Der Bericht wird vom Benutzer "{0}" gesperrt.</value>
   </data>
   <data name="Lock_OperationFailed" xml:space="preserve">
-    <value>Der Sperrvorgang ist fehlgeschlagen.</value>
+    <value>Sperroperation gescheitert.</value>
   </data>
   <data name="Publish_OperationFailed" xml:space="preserve">
-    <value>Der Veröffentlichungsvorgang ist fehlgeschlagen.</value>
+    <value>Publizieren Sie Operation gescheitert.</value>
   </data>
   <data name="Unlock_OperationFailed" xml:space="preserve">
-    <value>Der Unlock-Vorgang ist fehlgeschlagen.</value>
+    <value>Der Betrieb ist fehlgeschlagen.</value>
   </data>
   <data name="VerifySchemaCompatibility_Warning" xml:space="preserve">
-    <value>Dieser Designer unterstützt das berichtsdefinitionsschema {0:0.0}, das neuer ist als das Schema {1:0.0}, das vom Berichts Server unterstützt wird. Wenn Sie die Änderungen bearbeiten und veröffentlichen möchten, müssen Sie den Berichts-Designer verwenden, der mit dem Berichts Server bereitgestellt wird.</value>
+    <value>Dieser Designer unterstützt das Berichtsdefinitionsschema {0:0.0}, das neuer ist als das Schema {1:0.0}, unterstützt vom Report Server. Wenn Sie die Änderungen bearbeiten und veröffentlichen wollen, müssen Sie den Report Designer verwenden, der mit dem Report Server zur Verfügung gestellt wird.</value>
   </data>
   <data name="Ribbon_Warning_Revert" xml:space="preserve">
-    <value>Alle Änderungen, die an der Berichtsdefinition vorgenommen werden, gehen verloren. Möchten Sie den Vorgang fortsetzen?</value>
+    <value>Alle Änderungen an der Berichtsdefinition gehen verloren. Wollen Sie weitermachen?</value>
   </data>
   <data name="Ribbon_Revert_Caption" xml:space="preserve">
-    <value>Änderungen rückgängig machen</value>
+    <value>Umkehrgeschänderungen</value>
   </data>
   <data name="Connection_Error" xml:space="preserve">
-    <value>Fehler beim Anmelden beim Server. Überprüfen Sie den Server-URI und die Anmeldeinformationen</value>
+    <value>Fehler beim Loggen auf dem Server. Bitte überprüfen Sie die Server-URI und die Zugangsdaten</value>
   </data>
   <data name="Connection_Error_Uri" xml:space="preserve">
-    <value>Der angegebene URI weist ein falsches Format auf.</value>
+    <value>Die angegebene URI hat ein falsches Format.</value>
   </data>
   <data name="Connection_Error_Federation" xml:space="preserve">
-    <value>Externe Anbietereinstellungen können nicht abgerufen werden: </value>
+    <value>Kann die Einstellungen externer Anbieter nicht abrufen: </value>
   </data>
   <data name="EditServerReportSourceDialog_ServerOption_Text" xml:space="preserve">
     <value>Server</value>
   </data>
   <data name="EditServerReportSourceDialog_ServerOption_Description" xml:space="preserve">
-    <value>Wählen Sie einen Bericht aus oder geben Sie einen gültigen Report Locator ein (z.b. Kategorie/Name):</value>
+    <value>Wählen Sie einen Bericht oder geben Sie einen gültigen Berichtslokator ein (z.B. Kategory/Name):</value>
   </data>
   <data name="EditServerReportSourceDialog_Text" xml:space="preserve">
-    <value>&lt; Select Server-bericht &gt;</value>
+    <value>&lt;Wählen Sie Server Report&gt;</value>
   </data>
   <data name="OpenDialog_Header" xml:space="preserve">
-    <value>Bericht von {0} öffnen</value>
+    <value>Offener Bericht von {0}</value>
   </data>
   <data name="PublishDialog_Title" xml:space="preserve">
     <value>Veröffentlichen</value>
   </data>
   <data name="SaveAsDialog_Header" xml:space="preserve">
-    <value>{0} ein Bericht in {1}</value>
+    <value>{0} a report in {1}</value>
   </data>
   <data name="CreateReportDialog_Title" xml:space="preserve">
     <value>Erstellen</value>
@@ -187,10 +184,10 @@
     <value>Speichern</value>
   </data>
   <data name="Disconnect_EnsureNotInUse_Warning" xml:space="preserve">
-    <value>Sie haben Berichte von diesem Server geöffnet. Zuerst müssen Sie die Registerkarte "Berichte" schließen.</value>
+    <value>Sie haben Berichte von diesem Server geöffnet. Zuerst müssen Sie die Meldungen schließen.</value>
   </data>
   <data name="AddReportServer_Error_ReportServerAlreadyExist" xml:space="preserve">
-    <value>Der Berichtsserver ' {0} ' ist bereits vorhanden.</value>
+    <value>Der Report-Server ' {0} ' existiert bereits.</value>
   </data>
   <data name="ContextualTab_ServerTools_Text" xml:space="preserve">
     <value>Server Tools</value>
@@ -199,34 +196,34 @@
     <value>Server</value>
   </data>
   <data name="ContextualTab_ReportManagement_Text" xml:space="preserve">
-    <value>Berichtsverwaltung</value>
+    <value>Report Management</value>
   </data>
   <data name="ContextualTab_ReportManagement_Lock_Text" xml:space="preserve">
-    <value>Sperre</value>
+    <value>schloß</value>
   </data>
   <data name="ContextualTab_ReportManagement_Lock_Description" xml:space="preserve">
-    <value>Sperren Sie den Bericht für die Bearbeitung. Nur Sie werden in der Lage sein, die Berichte zu bearbeiten.</value>
+    <value>Sperren Sie den Bericht zur Bearbeitung. Nur Sie können die Berichte bearbeiten.</value>
   </data>
   <data name="ContextualTab_ReportManagement_Publish_Text" xml:space="preserve">
     <value>Veröffentlichen</value>
   </data>
   <data name="ContextualTab_ReportManagement_Publish_Description" xml:space="preserve">
-    <value>Bericht auf dem Server veröffentlichen. Machen Sie die Änderungen für andere Benutzer mit Sicht Berechtigungen sichtbar.</value>
+    <value>Bericht an den Server übergeben. Machen Sie Ihre Änderungen für andere Benutzer mit View-Berechtigungen sichtbar.</value>
   </data>
   <data name="ContextualTab_ReportManagement_Revert_Text" xml:space="preserve">
-    <value>Zurück</value>
+    <value>zurückkehren</value>
   </data>
   <data name="ContextualTab_ReportManagement_Revert_Description" xml:space="preserve">
-    <value>Alle ausstehenden Änderungen rückgängig machen und den Bericht entsperren.</value>
+    <value>Wiederverlegen Sie alle anhängigen Änderungen und öffnen Sie den Bericht.</value>
   </data>
   <data name="ContextualTab_View_WebPreview_Text" xml:space="preserve">
     <value>Web-Vorschau</value>
   </data>
   <data name="ContextualTab_View_WebPreview_Description" xml:space="preserve">
-    <value>Zurückstellen und Vorschau des aktuellen Berichts im Browser.</value>
+    <value>Regal und Vorschau des aktuellen Berichts im Browser.</value>
   </data>
   <data name="ConnectToServer_Label" xml:space="preserve">
-    <value>Herstellen einer Verbindung mit dem Berichtsserver</value>
+    <value>Verbindung zum Report-Server</value>
   </data>
   <data name="Cancel_Button" xml:space="preserve">
     <value>Abbrechen</value>
@@ -241,13 +238,13 @@
     <value>Login</value>
   </data>
   <data name="ConnectToServer_LogInADFS" xml:space="preserve">
-    <value>Anmelden mit ADFS-Anmeldeinformationen</value>
+    <value>Melden Sie sich bei ADFS-Zertifikaten an</value>
   </data>
   <data name="ConnectToServer_LogInExternal" xml:space="preserve">
-    <value>Einloggen mit externen Providern</value>
+    <value>Anmelden bei externen Anbietern</value>
   </data>
   <data name="ConnectToServer_LogInLocal" xml:space="preserve">
-    <value>Anmelden mit lokalem Konto</value>
+    <value>Anmelden bei lokalen Konto</value>
   </data>
   <data name="ConnectToServer_Or" xml:space="preserve">
     <value>oder</value>
@@ -259,7 +256,7 @@
     <value>Daten speichern</value>
   </data>
   <data name="ConnectToServer_ServerURI" xml:space="preserve">
-    <value>Server-URI</value>
+    <value>Server URI</value>
   </data>
   <data name="ConnectToServer_Username" xml:space="preserve">
     <value>Benutzername</value>
@@ -274,19 +271,19 @@
     <value>Kommentar:</value>
   </data>
   <data name="Publish_Confirmation" xml:space="preserve">
-    <value>Sind Sie sicher, dass Sie die vorgenommenen Änderungen veröffentlichen möchten? Sie sind für alle Benutzer mit entsprechender Berechtigung sichtbar.</value>
+    <value>Sind Sie sicher, dass Sie die von Ihnen vorgenommenen Änderungen veröffentlichen wollen? Sie werden für alle Nutzer mit entsprechender Genehmigung sichtbar sein.</value>
   </data>
   <data name="Publish_Description" xml:space="preserve">
-    <value>Veröffentlichen des Berichts auf dem Server</value>
+    <value>Bericht an den Server übergeben</value>
   </data>
   <data name="Publish_KeepLocked" xml:space="preserve">
-    <value>Bericht gesperrt lassen?</value>
+    <value>Bericht gesperrt?</value>
   </data>
   <data name="Publish_PublishButton" xml:space="preserve">
     <value>Veröffentlichen</value>
   </data>
   <data name="Report_CreatedBy" xml:space="preserve">
-    <value>Erstellt von</value>
+    <value>Erstellt</value>
   </data>
   <data name="Report_Label" xml:space="preserve">
     <value>Bericht</value>
@@ -295,7 +292,7 @@
     <value>Zuletzt geändert am</value>
   </data>
   <data name="Report_LockedBy" xml:space="preserve">
-    <value>Gesperrt durch</value>
+    <value>Gesperrt</value>
   </data>
   <data name="Report_Name" xml:space="preserve">
     <value>Name</value>
@@ -304,12 +301,15 @@
     <value>Kategorie:</value>
   </data>
   <data name="SaveAs_Description" xml:space="preserve">
-    <value>Beschreibung:</value>
+    <value>beschreibung:</value>
   </data>
   <data name="SaveAs_SaveButton" xml:space="preserve">
     <value>Speichern</value>
   </data>
   <data name="SaveAs_Title" xml:space="preserve">
-    <value>Titel:</value>
+    <value>titel:</value>
+  </data>
+  <data name="ForgetServer_Confirmation" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie diesen Report-Serveraufzeichnung löschen wollen?</value>
   </data>
 </root>

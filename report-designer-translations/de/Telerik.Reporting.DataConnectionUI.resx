@@ -118,49 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AccessConnectionUIControl_BrowseFileDefaultExt" xml:space="preserve">
-    <value>MDB</value>
+    <value>Mdb</value>
   </data>
   <data name="AccessConnectionUIControl_BrowseFileFilter" xml:space="preserve">
-    <value>Microsoft Access-Datenbanken (*. mdb; *. accdb) | *. mdb; *. accdb | Alle Dateien (*. *) | *. *</value>
+    <value>Microsoft Access Databases (* .mdb; * .accdb) | * .mdb; * .accdb | Alle Dateien (*. *) | *. *</value>
   </data>
   <data name="AccessConnectionUIControl_BrowseFileTitle" xml:space="preserve">
-    <value>Microsoft Access-Datenbankdatei auswählen</value>
+    <value>Wählen Sie Microsoft Access Database Datei</value>
   </data>
   <data name="AccessConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Das Verbindungseigenschaftenobjekt muss vom Typ OLE dbaccess-Verbindungseigenschaften sein.</value>
+    <value>Das Verbindungsobjekt muss vom Typ Ole DBAccess Connection Properties sein.</value>
   </data>
   <data name="AdoDotNetConnectionProperties_NoProperties" xml:space="preserve">
-    <value>Es wurden keine Verbindungseigenschaften festgelegt.</value>
+    <value>Es wurden keine Verbindungseigenschaften gesetzt.</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Add" xml:space="preserve">
-    <value>&amp;Hinzufügen...</value>
+    <value>&amp;hinzufügen...</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Description" xml:space="preserve">
-    <value>&amp;Beschreibung</value>
+    <value>&amp;beschreibung</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Remove" xml:space="preserve">
-    <value>Remo</value>
+    <value>Remo &amp; ve</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Reset" xml:space="preserve">
-    <value>&amp;Zurück</value>
+    <value>&amp;neu stellen</value>
   </data>
   <data name="DataConnectionDialog_CannotChangeSingleDataProvider" xml:space="preserve">
-    <value>Der ausgewählte Datenanbieter kann nicht geändert werden, wenn nur ein Datenanbieter verfügbar ist.</value>
+    <value>Der ausgewählte Datenanbieter kann nicht geändert werden, wenn nur ein Datenanbieter zur Verfügung steht.</value>
   </data>
   <data name="DataConnectionDialog_CannotChangeSingleDataSource" xml:space="preserve">
-    <value>Die ausgewählte Datenquelle kann nicht geändert werden, wenn nur eine Datenquelle verfügbar ist.</value>
+    <value>Die ausgewählte Datenquelle kann nicht geändert werden, wenn nur eine Datenquelle zur Verfügung steht.</value>
   </data>
   <data name="DataConnectionDialog_ChangeDataSourceTitle" xml:space="preserve">
     <value>Datenquelle ändern</value>
   </data>
   <data name="DataConnectionDialog_ShowDialogNotSupported" xml:space="preserve">
-    <value>Sie können die Form. ShowDialog ()-Methode nicht verwenden, um das datenverbindungsdialogfeld anzuzeigen.  Verwenden Sie stattdessen datenverbindungsdialogfeld. Show ().</value>
+    <value>Sie können die Methode Form.Show Dialog () nicht verwenden, um den Datenverbindungsdialog anzuzeigen.  Verwenden Sie stattdessen Data Connection Dialog.Show ().</value>
   </data>
   <data name="DataConnectionDialog_CannotModifyState" xml:space="preserve">
-    <value>Der datenverbindungsdialogfeld-Status kann nicht programmgesteuert geändert werden, wenn das Dialogfeld sichtbar ist.</value>
+    <value>Der Dialogzustand der Datenverbindung kann nicht programmatisch geändert werden, wenn der Dialog sichtbar ist.</value>
   </data>
   <data name="DataConnectionDialog_DataSourceNoAssociation" xml:space="preserve">
-    <value>Die ausgewählte Datenquelle hat keine Zuordnung zu diesem Datenanbieter.</value>
+    <value>Die ausgewählte Datenquelle hat keine Verbindung zu diesem Datenanbieter.</value>
   </data>
   <data name="DataConnectionDialog_DataSourceNotFound" xml:space="preserve">
     <value>Die Datenquelle wurde nicht gefunden.</value>
@@ -169,178 +169,178 @@
     <value>{0} ({1})</value>
   </data>
   <data name="DataConnectionDialog_NoDataProviderSelected" xml:space="preserve">
-    <value>Derzeit ist kein Datenanbieter ausgewählt.</value>
+    <value>Zur Zeit wird kein Datenanbieter ausgewählt.</value>
   </data>
   <data name="DataConnectionDialog_NoDataProvidersForDataSource" xml:space="preserve">
-    <value>Die {0}-Datenquelle hat keine Zuordnung zu Datenanbietern.</value>
+    <value>Die ' {0} '-Datenquelle hat keine Verbindung zu Datenanbietern.</value>
   </data>
   <data name="DataConnectionDialog_NoDataSourceSelected" xml:space="preserve">
-    <value>Derzeit ist keine Datenquelle ausgewählt.</value>
+    <value>Zur Zeit wird keine Datenquelle ausgewählt.</value>
   </data>
   <data name="DataConnectionDialog_NoDataSourcesAvailable" xml:space="preserve">
-    <value>Es sind keine Datenquellen verfügbar.</value>
+    <value>Es liegen keine Datenquellen vor.</value>
   </data>
   <data name="DataConnectionDialog_NoHelpAvailable" xml:space="preserve">
-    <value>In diesem Zusammenhang ist keine Hilfe verfügbar.</value>
+    <value>In diesem Zusammenhang gibt es keine Hilfe.</value>
   </data>
   <data name="DataConnectionDialog_TestConnectionSucceeded" xml:space="preserve">
-    <value>Test Verbindung erfolgreich.</value>
+    <value>Testverbindung gelungen.</value>
   </data>
   <data name="DataConnectionDialog_TestResults" xml:space="preserve">
     <value>Testergebnisse</value>
   </data>
   <data name="DataProvider_Odbc" xml:space="preserve">
-    <value>.NET Framework-Datenanbieter für ODBC</value>
+    <value>.NET Framework Data Provider for ODBC</value>
   </data>
   <data name="DataProvider_Odbc_DataSource_Description" xml:space="preserve">
-    <value>Verwenden Sie diese Auswahl, um einen ODBC-Benutzer-oder Systemdatenquellen Namen anzugeben, um über den .NET Framework-Datenanbieter für ODBC eine Verbindung mit einem ODBC-Treiber herzustellen.</value>
+    <value>Verwenden Sie diese Auswahl, um einen ODBC-Benutzer-oder Systemdaten-Quellnamen anzugeben, um sich über den .NET-Framework-Data-Provider für ODBC mit einem ODBC-Treiber zu verbinden.</value>
   </data>
   <data name="DataProvider_Odbc_Description" xml:space="preserve">
-    <value>Verwenden Sie diesen Datenanbieter, um eine Verbindung mit ODBC-Datenquellen herzustellen.</value>
+    <value>Nutzen Sie diesen Datenanbieter, um sich mit ODBC-Datenquellen zu verbinden.</value>
   </data>
   <data name="DataProvider_Odbc_Short" xml:space="preserve">
-    <value>ODBC</value>
+    <value>Odbc</value>
   </data>
   <data name="DataProvider_OleDB" xml:space="preserve">
-    <value>.NET Framework-Datenanbieter für OLE DB</value>
+    <value>.NET Framework Data Provider für die OLE DB</value>
   </data>
   <data name="DataProvider_OleDB_AccessDataSource_Description" xml:space="preserve">
-    <value>Verwenden Sie diese Auswahl, um eine Verbindung mit einer Microsoft Access-Datenbankdatei über den .NET Framework-Datenanbieter für OLE DB herzustellen.</value>
+    <value>Nutzen Sie diese Auswahl, um sich über den .NET-Framework-Data-Provider für die OLE DB mit einer Microsoft Access-Datenbank-Datei zu verbinden.</value>
   </data>
   <data name="DataProvider_OleDB_Description" xml:space="preserve">
-    <value>Verwenden Sie diesen Datenanbieter, um eine Verbindung mit OLE DB-Datenquellen herzustellen.</value>
+    <value>Nutzen Sie diesen Datenanbieter, um sich mit OLE DB-Datenquellen zu verbinden.</value>
   </data>
   <data name="DataProvider_OleDB_OracleDataSource_Description" xml:space="preserve">
-    <value>Verwenden Sie diese Auswahl, um eine Verbindung mit Oracle 7,3, 8i, 9i oder 10G mithilfe des nativen MSDAORA-Anbieters über den .NET Framework-Datenprovider für OLE DB herzustellen.</value>
+    <value>Nutzen Sie diese Auswahl, um sich über den .NET Framework Data Provider für OLE DB mit Oracle 7.3, 8i, 9i oder 10g zu verbinden.</value>
   </data>
   <data name="DataProvider_OleDB_Short" xml:space="preserve">
     <value>OLE DB</value>
   </data>
   <data name="DataProvider_OleDB_SqlDataSource_Description" xml:space="preserve">
-    <value>Verwenden Sie diese Auswahl, um eine Verbindung mit Microsoft SQL Server 2000 oder höher mithilfe des .NET Framework-Datenanbieters für OLEDB herzustellen.</value>
+    <value>Nutzen Sie diese Auswahl, um sich mit dem .NET-Framework-Datenanbieter für OLEDB oder höher zu verbinden.</value>
   </data>
   <data name="DataProvider_Oracle" xml:space="preserve">
-    <value>.NET Framework-Datenanbieter für Oracle</value>
+    <value>.NET Framework Data Provider for Oracle</value>
   </data>
   <data name="DataProvider_Oracle_DataSource_Description" xml:space="preserve">
-    <value>Verwenden Sie diese Auswahl, um eine Verbindung mit Oracle 7,3, 8i, 9i oder 10G mithilfe des .NET Framework-Datenanbieters für Oracle herzustellen.
+    <value>Nutzen Sie diese Auswahl, um sich mit dem .NET Framework Data Provider für Oracle mit Oracle 7.3, 8i, 9i oder 10g zu verbinden.
 
-Die Verwendung des .NET Framework-Datenanbieters für Oracle wird nicht empfohlen, da er veraltet ist.</value>
+Die Verwendung des .NET Framework Data Provider für Oracle wird nicht empfohlen, da er veraltet ist.</value>
   </data>
   <data name="DataProvider_Oracle_Description" xml:space="preserve">
-    <value>Verwenden Sie diesen Datenprovider, um eine Verbindung zu Oracle 7,3, 8i, 9i oder 10G herzustellen.
+    <value>Verwenden Sie diesen Datenanbieter, um sich mit Oracle 7.3, 8i, 9i oder 10g zu verbinden.
 
-Die Verwendung des .NET Framework-Datenanbieters für Oracle wird nicht empfohlen, da er veraltet ist.</value>
+Die Verwendung des .NET Framework Data Provider für Oracle wird nicht empfohlen, da er veraltet ist.</value>
   </data>
   <data name="DataProvider_Oracle_Short" xml:space="preserve">
-    <value>Oracle-Client</value>
+    <value>Oracle Client</value>
   </data>
   <data name="DataProvider_Sql" xml:space="preserve">
-    <value>.NET Framework-Datenanbieter für SQL Server</value>
+    <value>.NET Framework Data Provider for SQL Server</value>
   </data>
   <data name="DataProvider_Sql_DataSource_Description" xml:space="preserve">
-    <value>Verwenden Sie diese Auswahl, um eine Verbindung mit Microsoft SQL Server 2005 oder höher mithilfe des .NET Framework-Datenanbieters für SQL Server herzustellen.</value>
+    <value>Nutzen Sie diese Auswahl, um sich mit dem .NET-Framework-Data-Provider für SQL Server zu verbinden.</value>
   </data>
   <data name="DataProvider_Sql_Description" xml:space="preserve">
-    <value>Verwenden Sie diesen Datenanbieter, um eine Verbindung mit Microsoft SQL Server 2005 oder höher herzustellen.</value>
+    <value>Verwenden Sie diesen Datenanbieter, um sich mit Microsoft SQL Server 2005 oder höher zu verbinden.</value>
   </data>
   <data name="DataProvider_Sql_FileDataSource_Description" xml:space="preserve">
-    <value>Verwenden Sie diese Auswahl, um eine Datenbankdatei mit dem .NET Framework-Datenanbieter für SQL Server an eine lokale Microsoft SQL Server-Instanz (einschließlich Microsoft SQL Express) anzufügen.</value>
+    <value>Verwenden Sie diese Auswahl, um eine Datenbank-Datei an eine lokale Microsoft SQL-Server-Instanz (einschließlich Microsoft SQL Express) zu anhängen, indem Sie den .NET Framework Data Provider für SQL Server verwenden.</value>
   </data>
   <data name="DataProvider_Sql_Short" xml:space="preserve">
-    <value>SQL-Client</value>
+    <value>Sql Client</value>
   </data>
   <data name="DataSource_CannotChangeSingleDataProvider" xml:space="preserve">
-    <value>Der Standarddatenanbieter kann nicht geändert werden, wenn nur ein Datenanbieter verfügbar ist.</value>
+    <value>Der Standard-Datenanbieter kann nicht geändert werden, wenn nur ein Datenanbieter verfügbar ist.</value>
   </data>
   <data name="DataSource_DataProviderNotFound" xml:space="preserve">
     <value>Der Datenanbieter wurde nicht gefunden.</value>
   </data>
   <data name="DataSource_MicrosoftAccess" xml:space="preserve">
-    <value>Microsoft Access-Datenbankdatei</value>
+    <value>Microsoft Access Database File</value>
   </data>
   <data name="DataSource_MicrosoftOdbcDsn" xml:space="preserve">
-    <value>Microsoft ODBC-Datenquelle</value>
+    <value>Microsoft ODBC Data Source</value>
   </data>
   <data name="DataSource_MicrosoftSqlServer" xml:space="preserve">
     <value>Microsoft SQL Server</value>
   </data>
   <data name="DataSource_MicrosoftSqlServerFile" xml:space="preserve">
-    <value>Microsoft SQL Server-Datenbankdatei</value>
+    <value>Microsoft SQL Server Database Datei</value>
   </data>
   <data name="DataSource_Oracle" xml:space="preserve">
-    <value>Oracle-Datenbank</value>
+    <value>Oracle Database</value>
   </data>
   <data name="DataSource_UnspecifiedDisplayName" xml:space="preserve">
     <value>&lt;other&gt;</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLAllocEnvFailed" xml:space="preserve">
-    <value>ODBC-Umgebungshandle konnte nicht reserviert werden.</value>
+    <value>Es ist nicht möglich, ODBC-Umgebungsgriff zuzuweisen.</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLAllocConnectFailed" xml:space="preserve">
-    <value>ODBC-Verbindungshandle konnte nicht reserviert werden.</value>
+    <value>Es ist nicht möglich, ODBC-Verbindungsgriff zuzuweisen.</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLDriverConnectFailed" xml:space="preserve">
-    <value>Das ODBC-Treiber Verbindungs Dienstprogramm konnte nicht aufgerufen werden.</value>
+    <value>Es ist nicht möglich, das ODBC-Treiber-Verbindungsprogramm anzurufen.</value>
   </data>
   <data name="OdbcConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Das Verbindungseigenschaftenobjekt muss vom Typ ODBC-Verbindungseigenschaften sein.</value>
+    <value>Das Verbindungsobjekt muss vom Typ Odbc Connection Properties sein.</value>
   </data>
   <data name="OleDBAccessConnectionProperties_MustSpecifyDataSource" xml:space="preserve">
-    <value>Diese Verbindung kann nicht getestet werden, da keine Datenbankdatei angegeben wurde.</value>
+    <value>Diese Verbindung kann nicht getestet werden, da keine Datenbank-Datei angegeben wurde.</value>
   </data>
   <data name="OleDBConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Das Verbindungseigenschaftenobjekt muss vom Typ OLE DbConnection-Eigenschaften sein.</value>
+    <value>Das Verbindungsobjekt muss vom Typ Ole DBConnection Properties sein.</value>
   </data>
   <data name="OracleConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Das Verbindungseigenschaftenobjekt muss vom Typ Oracle-Verbindungseigenschaften oder OLE dboracle-Verbindungseigenschaften sein.</value>
+    <value>Das Verbindungsobjekt muss vom Typ Oracle Connection Properties oder Ole DBOracle Connection Properties sein.</value>
   </data>
   <data name="SqlConnectionProperties_MustSpecifyDataSource" xml:space="preserve">
     <value>Diese Verbindung kann nicht getestet werden, da kein Servername angegeben wurde.</value>
   </data>
   <data name="SqlConnectionProperties_UnsupportedSqlVersion" xml:space="preserve">
-    <value>Diese Server Version wird nicht unterstützt.  Sie müssen über Microsoft SQL Server 2005 oder höher verfügen.</value>
+    <value>Diese Server-Version wird nicht unterstützt.  Sie müssen Microsoft SQL Server 2005 oder später haben.</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileDefaultExt" xml:space="preserve">
-    <value>MDF</value>
+    <value>Mdf</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileFilter" xml:space="preserve">
-    <value>Microsoft SQL Server-Datenbanken (*. MDF) | *. MDF | Alle Dateien (*. *) | *. *</value>
+    <value>Microsoft SQL Server Databases (* .mdf) | * .mdf | Alle Dateien (*. *) | *. *</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileTitle" xml:space="preserve">
-    <value>SQL Server-Datenbankdatei auswählen</value>
+    <value>Wählen Sie die SQL-Server-Datenbank</value>
   </data>
   <data name="SqlConnectionProperties_CannotTestNonExistentDatabase" xml:space="preserve">
-    <value>Diese Verbindung kann nicht getestet werden, da die angegebene Datenbank nicht vorhanden ist oder für den angegebenen Benutzer nicht sichtbar ist.</value>
+    <value>Diese Verbindung kann nicht getestet werden, weil die angegebene Datenbank nicht existiert oder für den angegebenen Benutzer nicht sichtbar ist.</value>
   </data>
   <data name="SqlConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Das Verbindungseigenschaftenobjekt muss vom Typ SQL-Verbindungseigenschaften oder OLE DBSql-Verbindungseigenschaften sein.</value>
+    <value>Das Verbindungsobjekt muss vom Typ Sql Connection Properties oder Ole DBSql Connection Properties sein.</value>
   </data>
   <data name="SqlFileConnectionProperties_CannotTestNonExistentMdf" xml:space="preserve">
-    <value>Diese Verbindung kann nicht getestet werden, da die angegebene Datenbankdatei nicht vorhanden ist.</value>
+    <value>Diese Verbindung kann nicht getestet werden, da die angegebene Datenbank-Datei nicht existiert.</value>
   </data>
   <data name="SqlFileConnectionProperties_NoFileSpecified" xml:space="preserve">
     <value>Es wurde keine Datenbankdatei angegeben.</value>
   </data>
   <data name="SqlFileConnectionProperties_TimeoutReasons" xml:space="preserve">
-    <value>Häufige Gründe für dieses Problem sind, dass der Server nicht installiert ist, der Dienst nicht gestartet wird oder der Server die Datenbank aktualisiert.  Wenn ein Upgrade in Bearbeitung ist, können Sie nach Abschluss der Aktualisierung eine Verbindung mit der Datenbank herstellen.</value>
+    <value>Häufige Gründe für dieses Problem sind, dass der Server nicht installiert ist, der Dienst nicht gestartet wird oder der Server Ihre Datenbank aktualisiert.  Wenn ein Upgrade in Arbeit ist, können Sie sich mit der Datenbank verbinden, wenn das Upgrade abgeschlossen ist.</value>
   </data>
   <data name="SqlFileConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>Das Verbindungseigenschaftenobjekt muss vom Typ SQL-Datei Verbindungseigenschaften sein.</value>
+    <value>Das Verbindungsobjekt muss vom Typ Sql File Connection-Eigenschaften sein.</value>
   </data>
   <data name="DataProvider_EntityFramework" xml:space="preserve">
-    <value>.NET Framework-Datenanbieter für Entity Framework</value>
+    <value>.NET Framework Data Provider for Entity Framework</value>
   </data>
   <data name="DataProvider_EntityFramework_DataSource_Description" xml:space="preserve">
-    <value>Verwenden Sie diesen Anbieter, um Abfragen für ein Datenmodell in eine kanonische Befehlsstruktur umzuwandeln. Die Befehlsstruktur kann dann von einem .NET Framework-Datenanbieter für Entity Framework verwendet werden.</value>
+    <value>Verwenden Sie diesen Provider, um Abfragen gegen ein Datenmodell in einen kanonischen Befehlsbaum umzuwandeln. Der Befehlsbaum kann dann von einem .NET-Framework-Datenanbieter für das Entity Framework verbraucht werden.</value>
   </data>
   <data name="DataProvider_EntityFramework_Description" xml:space="preserve">
-    <value>Verwenden Sie diesen Datenanbieter, um eine Verbindung zu Entity Framework-Datenquellen herzustellen.</value>
+    <value>Nutzen Sie diesen Datenanbieter, um sich mit Entity Framework Datenquellen zu verbinden.</value>
   </data>
   <data name="DataProvider_EntityFramework_Short" xml:space="preserve">
-    <value>Entity Framework</value>
+    <value>Gesamtendes Rahmenwerk</value>
   </data>
   <data name="DataSource_EntityFramework" xml:space="preserve">
-    <value>Entity Framework</value>
+    <value>Gesamtendes Rahmenwerk</value>
   </data>
 </root>

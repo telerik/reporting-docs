@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UnitParseNoDigits" xml:space="preserve">
-    <value>{0} ne peut pas être analysé en tant qu'unité car il ne contient pas de valeurs numériques. Les exemples de chaînes d'unités valides sont 1PT et. 5in.</value>
+    <value>{0} ne peut pas être analysé en tant qu’unité, car il ne contient pas de valeurs numériques. Des exemples de chaînes d’unités valides sont 1PT et. 5in.</value>
   </data>
   <data name="UnitParseNoUnit" xml:space="preserve">
-    <value>{0} ne contient pas de spécification unitaire. Les exemples de chaînes d'unités valides sont 1PT et. 5in.</value>
+    <value>{0} ne contient pas de spécification unitaire. Des exemples de chaînes d’unités valides sont 1PT et. 5in.</value>
   </data>
   <data name="UnitParseNumericPart" xml:space="preserve">
-    <value>La partie numérique de {0} ne peut pas être analysée en tant qu'unité de type {2}.</value>
+    <value>La portion numérique de {0} ne peut pas être analysée comme une unité de type {2}.</value>
   </data>
   <data name="InvalidUnitType" xml:space="preserve">
-    <value>Type d'unité non valide.</value>
+    <value>Type d’unité non valide.</value>
   </data>
   <data name="InvalidArgumentType" xml:space="preserve">
     <value>{0} doit être de type {1}.</value>
@@ -136,25 +136,25 @@
     <value>Seule la technologie Windows Forms View est prise en charge.</value>
   </data>
   <data name="InvalidRootComponentType" xml:space="preserve">
-    <value>Le composant racine n'est pas un rapport.</value>
+    <value>Le composant racine n’est pas un rapport.</value>
   </data>
   <data name="ParentlessReportItem" xml:space="preserve">
-    <value>L'élément de rapport parent est null.</value>
+    <value>Le parent de l’élément de rapport est null.</value>
   </data>
   <data name="InvalidGridSize" xml:space="preserve">
     <value>Taille de grille non valide.</value>
   </data>
   <data name="CommandSetError" xml:space="preserve">
-    <value>Une erreur s'est produite lors du traitement de cette commande.
+    <value>Une erreur s’est produite lors du traitement de cette commande.
 {0}</value>
   </data>
   <data name="DeleteGroupInsteadOfSection" xml:space="preserve">
-    <value>Vous devez supprimer le groupe'{0}'pour supprimer la section'{1}'.</value>
+    <value>Vous devez supprimer le groupe' {0} 'pour supprimer la section' {1} '.</value>
   </data>
   <data name="DataSourceAlreadyAssigned" xml:space="preserve">
     <value>Seuls les champs de la source de données actuelle «{0}» sont autorisés.</value>
   </data>
   <data name="ItemsCannotBeAddedInLocalizationMode" xml:space="preserve">
-    <value>Les éléments ne peuvent pas être ajoutés en mode de localisation. Affectez à la propriété Language la valeur (Default) pour ajouter des éléments.</value>
+    <value>Les éléments ne peuvent pas être ajoutés en mode de localisation. Affectez à la propriété Language du rapport la valeur (par défaut) pour ajouter des éléments.</value>
   </data>
 </root>

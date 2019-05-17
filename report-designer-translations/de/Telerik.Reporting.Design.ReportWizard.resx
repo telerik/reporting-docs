@@ -118,124 +118,124 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BandReportWizardDescription" xml:space="preserve">
-    <value>Führt Sie durch das Erstellen eines Band Berichts.</value>
+    <value>Führt euch durch die Erstellung eines Band-Reports.</value>
   </data>
   <data name="BandReportWizardName" xml:space="preserve">
-    <value>Band Berichts-Assistent</value>
+    <value>Bandbericht Wizard</value>
   </data>
   <data name="BandWizard_AdjustItemsOption" xml:space="preserve">
-    <value>Anpassen von Berichtselementen an den verfügbaren Speicherplatz</value>
+    <value>Berichtsgegenstände anpassen, um Platz zu passen</value>
   </data>
   <data name="BandWizard_AvailableLayouts" xml:space="preserve">
     <value>Verfügbare Layouts:</value>
   </data>
   <data name="BandWizard_Builder_GrandTotal" xml:space="preserve">
-    <value>Gesamtsumme:</value>
+    <value>gesamtsumme:</value>
   </data>
   <data name="BandWizard_Builder_SubTotal" xml:space="preserve">
-    <value>Zwischensumme:</value>
+    <value>Sub-total:</value>
   </data>
   <data name="BandWizard_GenerateTotalsOption" xml:space="preserve">
-    <value>Generieren von Zwischensummen und Gesamtsummen</value>
+    <value>Generieren Sie Unter-und Großsummen</value>
   </data>
   <data name="BandWizard_PageSettings" xml:space="preserve">
     <value>Seiteneinstellungen</value>
   </data>
   <data name="BlankReportWizardDescription" xml:space="preserve">
-    <value>Erstellt einen leeren Bericht, damit Sie ihn neu erstellen können.</value>
+    <value>Erstellt einen leeren Bericht, so dass Sie damit beginnen können, ihn von Grund auf zu bauen.</value>
   </data>
   <data name="BlankReportWizardName" xml:space="preserve">
-    <value>Leerer Bericht</value>
+    <value>Blanker Bericht</value>
   </data>
   <data name="BuildReportTransactionText" xml:space="preserve">
     <value>Bericht erstellen</value>
   </data>
   <data name="ChooseReportLayout" xml:space="preserve">
-    <value>Berichts Layout auswählen</value>
+    <value>Wählen Sie das Layout des Berichts</value>
   </data>
   <data name="ChoroplethReportWizardDescription" xml:space="preserve">
-    <value>Zeigt Berichtsdaten als Karte mit thematisch gefärbten Bereichen an.</value>
+    <value>Zeigt die Daten als Karte mit thematisch gefärbten Flächen an.</value>
   </data>
   <data name="ChoroplethReportWizardName" xml:space="preserve">
-    <value>Choroplethenkarten-Assistent</value>
+    <value>Choropleth Assistent</value>
   </data>
   <data name="CrosstabReportWizardDescription" xml:space="preserve">
-    <value>Führt Sie durch das Erstellen eines Kreuztabellenberichts.</value>
+    <value>Führt Sie durch die Erstellung eines Crosstab-Berichts.</value>
   </data>
   <data name="CrosstabReportWizardName" xml:space="preserve">
-    <value>Kreuztabellen-Assistent</value>
+    <value>Crosstab Wizard</value>
   </data>
   <data name="DataSourceFieldMappingWizardName" xml:space="preserve">
-    <value>Datenquellenfeld-Zuordnungs-Assistent</value>
+    <value>Daten-Quelle-Feld-Mapping-Assistent</value>
   </data>
   <data name="DataSourceWizardTransactionName" xml:space="preserve">
-    <value>Datenquellen-Assistent</value>
+    <value>Data Source Wizard</value>
   </data>
   <data name="FieldMappings_DataSourceFields" xml:space="preserve">
-    <value>Datenquellenfelder</value>
+    <value>Datenquellen</value>
   </data>
   <data name="FieldMappings_TemplateFields" xml:space="preserve">
-    <value>Vorlagenfelder</value>
+    <value>Vorlagen</value>
   </data>
   <data name="GraphReportWizardDescription" xml:space="preserve">
-    <value>Führt Sie durch das Erstellen einer Vielzahl von Diagrammen.</value>
+    <value>Führt Sie durch die Erstellung einer Vielzahl von Charts.</value>
   </data>
   <data name="GraphReportWizardName" xml:space="preserve">
-    <value>Diagramm-Assistent</value>
+    <value>Graph Wizard</value>
   </data>
   <data name="ImportReportWizardDescription" xml:space="preserve">
-    <value>Startet den Import Berichts-Assistenten zum Konvertieren eines Berichts aus einem anderen Berichtsformat.</value>
+    <value>Startet den Import-Report-Assistenten für die Konvertierung eines Berichts aus einem anderen Berichtsformat.</value>
   </data>
   <data name="ImportReportWizardName" xml:space="preserve">
-    <value>Assistent zum Importieren von Berichten</value>
+    <value>Import-Report-Assistenten</value>
   </data>
   <data name="InvoiceReportWizardDescription" xml:space="preserve">
-    <value>Führt Sie durch das Erstellen eines Rechnungsberichts.</value>
+    <value>Führt Sie durch die Erstellung eines Rechnungsberichts.</value>
   </data>
   <data name="InvoiceReportWizardName" xml:space="preserve">
-    <value>Rechnungsbericht-Assistent</value>
+    <value>Rechnungsbericht Wizard</value>
   </data>
   <data name="LabelReportWizardDescription" xml:space="preserve">
-    <value>Führt Sie durch das Erstellen eines etikettenberichts.</value>
+    <value>Führt Sie durch die Erstellung eines Label-Berichts.</value>
   </data>
   <data name="LabelReportWizardName" xml:space="preserve">
-    <value>Etikettenberichts-Assistent</value>
+    <value>Etikettenbericht Wizard</value>
   </data>
   <data name="LeftAlignedLayoutDesc" xml:space="preserve">
-    <value>Mit dem linksbündig angeordneten Layout werden Elemente in jedem Abschnitt beginnend mit dem Anfang des Abschnitts platziert.</value>
+    <value>Das Layout der linken Ausgleichung platziert die Elemente in jedem Abschnitt, die vom Anfang des Abschnitts an beginnen.</value>
   </data>
   <data name="LeftAlignedLayoutName" xml:space="preserve">
-    <value>Linksbündig</value>
+    <value>Linke ausgerichtet</value>
   </data>
   <data name="MapReportWizardDescription" xml:space="preserve">
-    <value>Zeigt Berichtsdaten vor einem geographischen Hintergrund an.</value>
+    <value>Zeigt die Daten vor einem geographischen Hintergrund an.</value>
   </data>
   <data name="MapReportWizardName" xml:space="preserve">
-    <value>Karten-Assistent</value>
+    <value>Map Wizard</value>
   </data>
   <data name="OutlineLayoutDesc" xml:space="preserve">
-    <value>Das Gliederungs Layout ordnet Elemente von links nach rechts an, wobei die Elemente jeder Gruppe weiter nach rechts durch einen festen Offset gehen.</value>
+    <value>Das Umrisslayout ordnet die Elemente von links nach rechts an, wobei die Gegenstände jeder Gruppe durch einen festen Offset weiter nach rechts gehen.</value>
   </data>
   <data name="OutlineLayoutName" xml:space="preserve">
     <value>Kontur</value>
   </data>
   <data name="ProductCatalogReportWizardDescription" xml:space="preserve">
-    <value>Führt Sie durch Erstellen eines Produktkatalog Berichts</value>
+    <value>Führt Sie durch die Erstellung eines Produktkatalog-Berichts</value>
   </data>
   <data name="ProductCatalogReportWizardName" xml:space="preserve">
-    <value>Produktkatalog-Berichts-Assistent</value>
+    <value>Produktkatalog-Reportassistent</value>
   </data>
   <data name="ReportWizardTransactionName" xml:space="preserve">
-    <value>Einen neuen Band Bericht initialisieren.</value>
+    <value>Initialisieren Sie einen neuen Bandbericht.</value>
   </data>
   <data name="SteppedLayoutDesc" xml:space="preserve">
-    <value>Das Stufen Layout ordnet Elemente in Spalten an, sodass Sie sich nicht vertikal überlappen.</value>
+    <value>Das gestufte Layout ordnet die Elemente in Spalten so an, dass sie sich nicht vertikal überschneiden.</value>
   </data>
   <data name="SteppedLayoutName" xml:space="preserve">
     <value>Trat</value>
   </data>
   <data name="TableReportWizardDescription" xml:space="preserve">
-    <value>Führt Sie durch das Erstellen eines Tabellenberichts.</value>
+    <value>Führt Sie durch die Erstellung eines Tabellenberichts.</value>
   </data>
   <data name="TableReportWizardName" xml:space="preserve">
     <value>Tabellenassistent</value>

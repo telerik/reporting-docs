@@ -118,46 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AccessConnectionUIControl_BrowseFileDefaultExt" xml:space="preserve">
-    <value>MDB</value>
+    <value>Mdb</value>
   </data>
   <data name="AccessConnectionUIControl_BrowseFileFilter" xml:space="preserve">
-    <value>Bases de datos de Microsoft Access (*. mdb; *. accdb) | *. mdb; *. accdb | Todos los archivos (*. *) | *. *</value>
+    <value>Bases de datos de Microsoft Access (*. mdb; *. accdb) | *. mdb; *. accdb | Todos los archivos (*.*) | *.*</value>
   </data>
   <data name="AccessConnectionUIControl_BrowseFileTitle" xml:space="preserve">
-    <value>Seleccione el archivo de base de datos de Microsoft Access</value>
+    <value>Seleccione Archivo de base de datos de Microsoft Access</value>
   </data>
   <data name="AccessConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>El objeto de propiedades de conexión debe tener las propiedades de conexión de tipo OLE DBAccess.</value>
+    <value>El objeto de propiedades de conexión debe ser de tipo OLE DBAccess conexión propiedades.</value>
   </data>
   <data name="AdoDotNetConnectionProperties_NoProperties" xml:space="preserve">
     <value>No se han establecido propiedades de conexión.</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Add" xml:space="preserve">
-    <value>&amp;Add...</value>
+    <value>&amp;agregar...</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Description" xml:space="preserve">
-    <value>&amp;Descripción</value>
+    <value>&amp;descripción</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Remove" xml:space="preserve">
-    <value>Remo</value>
+    <value>Remo &amp; ve</value>
   </data>
   <data name="DataConnectionAdvancedDialog_Reset" xml:space="preserve">
-    <value>&amp;RESET</value>
+    <value>&amp;volver a poner</value>
   </data>
   <data name="DataConnectionDialog_CannotChangeSingleDataProvider" xml:space="preserve">
-    <value>El proveedor de datos seleccionado no se puede cambiar cuando sólo hay un proveedor de datos disponible.</value>
+    <value>El proveedor de datos seleccionado no se puede cambiar cuando solo hay un proveedor de datos disponible.</value>
   </data>
   <data name="DataConnectionDialog_CannotChangeSingleDataSource" xml:space="preserve">
-    <value>El origen de datos seleccionado no se puede cambiar cuando sólo hay un origen de datos disponible.</value>
+    <value>El origen de datos seleccionado no se puede cambiar cuando solo hay un origen de datos disponible.</value>
   </data>
   <data name="DataConnectionDialog_ChangeDataSourceTitle" xml:space="preserve">
     <value>Cambiar origen de datos</value>
   </data>
   <data name="DataConnectionDialog_ShowDialogNotSupported" xml:space="preserve">
-    <value>No se puede utilizar el método de diálogo de formulario. Mostrar () para mostrar el cuadro de diálogo de conexión de datos.  Utilice el diálogo de conexión de datos. Mostrar () en su lugar.</value>
+    <value>No puede utilizar el método Form. show Dialog () para mostrar el cuadro de diálogo de conexión de datos.  Utilice la conexión de datos Dialog. Show () en su lugar.</value>
   </data>
   <data name="DataConnectionDialog_CannotModifyState" xml:space="preserve">
-    <value>El estado del cuadro de diálogo de conexión de datos no se puede modificar mediante programación cuando el diálogo es visible.</value>
+    <value>El estado del cuadro de diálogo de conexión de datos no se puede modificar mediante programación cuando el cuadro de diálogo está visible.</value>
   </data>
   <data name="DataConnectionDialog_DataSourceNoAssociation" xml:space="preserve">
     <value>El origen de datos seleccionado no tiene ninguna asociación con este proveedor de datos.</value>
@@ -169,13 +169,13 @@
     <value>{0} ({1})</value>
   </data>
   <data name="DataConnectionDialog_NoDataProviderSelected" xml:space="preserve">
-    <value>Actualmente no se ha seleccionado ningún proveedor de datos.</value>
+    <value>Actualmente no hay ningún proveedor de datos seleccionado.</value>
   </data>
   <data name="DataConnectionDialog_NoDataProvidersForDataSource" xml:space="preserve">
     <value>El origen de datos ' {0} ' no tiene ninguna asociación con ningún proveedor de datos.</value>
   </data>
   <data name="DataConnectionDialog_NoDataSourceSelected" xml:space="preserve">
-    <value>Actualmente no se ha seleccionado ningún origen de datos.</value>
+    <value>Actualmente no hay ningún origen de datos seleccionado.</value>
   </data>
   <data name="DataConnectionDialog_NoDataSourcesAvailable" xml:space="preserve">
     <value>No hay fuentes de datos disponibles.</value>
@@ -184,59 +184,59 @@
     <value>No hay ayuda disponible en este contexto.</value>
   </data>
   <data name="DataConnectionDialog_TestConnectionSucceeded" xml:space="preserve">
-    <value>La conexión de prueba tuvo éxito.</value>
+    <value>Conexión de prueba satisfactoria.</value>
   </data>
   <data name="DataConnectionDialog_TestResults" xml:space="preserve">
     <value>Resultados de la prueba</value>
   </data>
   <data name="DataProvider_Odbc" xml:space="preserve">
-    <value>pRoveedor de datos de .NET Framework para ODBC</value>
+    <value>Proveedor de datos de .NET Framework para ODBC</value>
   </data>
   <data name="DataProvider_Odbc_DataSource_Description" xml:space="preserve">
-    <value>Utilice esta selección para especificar un usuario ODBC o un nombre de origen de datos del sistema para conectarse a un controlador ODBC a través del proveedor de datos de .NET Framework para ODBC.</value>
+    <value>Use esta selección para especificar un usuario ODBC o un nombre de origen de datos del sistema para conectarse a un controlador ODBC a través del proveedor de datos de .NET Framework para ODBC.</value>
   </data>
   <data name="DataProvider_Odbc_Description" xml:space="preserve">
     <value>Utilice este proveedor de datos para conectarse a orígenes de datos ODBC.</value>
   </data>
   <data name="DataProvider_Odbc_Short" xml:space="preserve">
-    <value>ODBC</value>
+    <value>Odbc</value>
   </data>
   <data name="DataProvider_OleDB" xml:space="preserve">
-    <value>pRoveedor de datos de .NET Framework para OLE DB</value>
+    <value>Proveedor de datos de .NET Framework para OLE DB</value>
   </data>
   <data name="DataProvider_OleDB_AccessDataSource_Description" xml:space="preserve">
-    <value>Utilice esta selección para conectarse a un archivo de base de datos de Microsoft Access mediante el proveedor de datos de .NET Framework para OLE DB.</value>
+    <value>Utilice esta selección para conectarse a un archivo de base de datos de Microsoft Access a través del proveedor de datos de .NET Framework para OLE DB.</value>
   </data>
   <data name="DataProvider_OleDB_Description" xml:space="preserve">
     <value>Utilice este proveedor de datos para conectarse a orígenes de datos OLE DB.</value>
   </data>
   <data name="DataProvider_OleDB_OracleDataSource_Description" xml:space="preserve">
-    <value>Utilice esta selección para conectarse a Oracle 7,3, 8i, 9i o 10g utilizando el proveedor nativo de MSDAORA a través del proveedor de datos de .NET Framework para OLE DB.</value>
+    <value>Utilice esta selección para conectarse a Oracle 7,3, 8i, 9i o 10g mediante el proveedor nativo de MSDAORA a través del proveedor de datos de .NET Framework para OLE DB.</value>
   </data>
   <data name="DataProvider_OleDB_Short" xml:space="preserve">
     <value>OLE DB</value>
   </data>
   <data name="DataProvider_OleDB_SqlDataSource_Description" xml:space="preserve">
-    <value>Utilice esta selección para conectarse a Microsoft SQL Server 2000 o superior utilizando el proveedor de datos de .NET Framework para OleDb.</value>
+    <value>Utilice esta selección para conectarse a Microsoft SQL Server 2000 o superior mediante el proveedor de datos de .NET Framework para OLEDB.</value>
   </data>
   <data name="DataProvider_Oracle" xml:space="preserve">
-    <value>pRoveedor de datos de .NET Framework para Oracle</value>
+    <value>Proveedor de datos de .NET Framework para Oracle</value>
   </data>
   <data name="DataProvider_Oracle_DataSource_Description" xml:space="preserve">
-    <value>Utilice esta selección para conectarse a Oracle 7,3, 8i, 9i o 10g utilizando el proveedor de datos de .NET Framework para Oracle.
+    <value>Utilice esta selección para conectarse a Oracle 7,3, 8i, 9i o 10g mediante el proveedor de datos de .NET Framework para Oracle.
 
-No se recomienda utilizar el proveedor de datos de .NET Framework para Oracle porque está siendo obsoleto.</value>
+No se recomienda usar el proveedor de datos de .NET Framework para Oracle porque está en desuso.</value>
   </data>
   <data name="DataProvider_Oracle_Description" xml:space="preserve">
     <value>Utilice este proveedor de datos para conectarse a Oracle 7,3, 8i, 9i o 10g.
 
-No se recomienda utilizar el proveedor de datos de .NET Framework para Oracle porque está siendo obsoleto.</value>
+No se recomienda usar el proveedor de datos de .NET Framework para Oracle porque está en desuso.</value>
   </data>
   <data name="DataProvider_Oracle_Short" xml:space="preserve">
-    <value>Cliente Oracle</value>
+    <value>Cliente de Oracle</value>
   </data>
   <data name="DataProvider_Sql" xml:space="preserve">
-    <value>pRoveedor de datos de .NET Framework para SQL Server</value>
+    <value>Proveedor de datos de .NET Framework para SQL Server</value>
   </data>
   <data name="DataProvider_Sql_DataSource_Description" xml:space="preserve">
     <value>Utilice esta selección para conectarse a Microsoft SQL Server 2005 o superior mediante el proveedor de datos de .NET Framework para SQL Server.</value>
@@ -245,13 +245,13 @@ No se recomienda utilizar el proveedor de datos de .NET Framework para Oracle po
     <value>Utilice este proveedor de datos para conectarse a Microsoft SQL Server 2005 o superior.</value>
   </data>
   <data name="DataProvider_Sql_FileDataSource_Description" xml:space="preserve">
-    <value>Utilice esta selección para anexar un archivo de base de datos a una instancia local de Microsoft SQL Server (incluido Microsoft SQL Express) mediante el proveedor de datos de .NET Framework para SQL Server.</value>
+    <value>Utilice esta selección para adjuntar un archivo de base de datos a una instancia local de Microsoft SQL Server (incluido Microsoft SQL Express) mediante el proveedor de datos de .NET Framework para SQL Server.</value>
   </data>
   <data name="DataProvider_Sql_Short" xml:space="preserve">
     <value>Cliente SQL</value>
   </data>
   <data name="DataSource_CannotChangeSingleDataProvider" xml:space="preserve">
-    <value>El proveedor de datos predeterminado no se puede cambiar cuando sólo hay un proveedor de datos disponible.</value>
+    <value>El proveedor de datos predeterminado no se puede cambiar cuando solo hay un proveedor de datos disponible.</value>
   </data>
   <data name="DataSource_DataProviderNotFound" xml:space="preserve">
     <value>No se encontró el proveedor de datos.</value>
@@ -275,10 +275,10 @@ No se recomienda utilizar el proveedor de datos de .NET Framework para Oracle po
     <value>&lt;other&gt;</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLAllocEnvFailed" xml:space="preserve">
-    <value>Error al asignar el identificador del entorno ODBC.</value>
+    <value>No se pudo asignar el identificador de entorno ODBC.</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLAllocConnectFailed" xml:space="preserve">
-    <value>Error al asignar el identificador de conexión ODBC.</value>
+    <value>No se pudo asignar el identificador de conexión ODBC.</value>
   </data>
   <data name="OdbcConnectionUIControl_SQLDriverConnectFailed" xml:space="preserve">
     <value>No se pudo llamar a la utilidad de conexión del controlador ODBC.</value>
@@ -290,10 +290,10 @@ No se recomienda utilizar el proveedor de datos de .NET Framework para Oracle po
     <value>Esta conexión no se puede probar porque no se ha especificado ningún archivo de base de datos.</value>
   </data>
   <data name="OleDBConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>El objeto de propiedades de conexión debe ser de tipo propiedades OLE DbConnection.</value>
+    <value>El objeto de propiedades de conexión debe ser de tipo OLE DBConnection propiedades.</value>
   </data>
   <data name="OracleConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>El objeto de propiedades de conexión debe ser de tipo propiedades de conexión de Oracle o propiedades de conexión OLE DBOracle.</value>
+    <value>El objeto de propiedades de conexión debe ser de tipo propiedades de conexión de Oracle o propiedades de conexión de OLE DBOracle.</value>
   </data>
   <data name="SqlConnectionProperties_MustSpecifyDataSource" xml:space="preserve">
     <value>Esta conexión no se puede probar porque no se ha especificado ningún nombre de servidor.</value>
@@ -302,19 +302,19 @@ No se recomienda utilizar el proveedor de datos de .NET Framework para Oracle po
     <value>Esta versión del servidor no es compatible.  Debe tener Microsoft SQL Server 2005 o posterior.</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileDefaultExt" xml:space="preserve">
-    <value>MDF</value>
+    <value>Mdf</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileFilter" xml:space="preserve">
-    <value>Bases de datos de Microsoft SQL Server (*. MDF) | *. MDF | Todos los archivos (*. *) | *. *</value>
+    <value>Bases de datos de Microsoft SQL Server (*. MDF) | *. MDF | Todos los archivos (*.*) | *.*</value>
   </data>
   <data name="SqlConnectionUIControl_BrowseFileTitle" xml:space="preserve">
-    <value>Seleccionar archivo de base de datos de SQL Server</value>
+    <value>Seleccione Archivo de base de datos de SQL Server</value>
   </data>
   <data name="SqlConnectionProperties_CannotTestNonExistentDatabase" xml:space="preserve">
     <value>Esta conexión no se puede probar porque la base de datos especificada no existe o no está visible para el usuario especificado.</value>
   </data>
   <data name="SqlConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
-    <value>El objeto de propiedades de conexión debe ser de tipo propiedades de conexión SQL o propiedades de conexión OLE DBSql.</value>
+    <value>El objeto de propiedades de conexión debe ser de tipo propiedades de conexión de SQL o propiedades de conexión de OLE DBSql.</value>
   </data>
   <data name="SqlFileConnectionProperties_CannotTestNonExistentMdf" xml:space="preserve">
     <value>Esta conexión no se puede probar porque el archivo de base de datos especificado no existe.</value>
@@ -323,16 +323,16 @@ No se recomienda utilizar el proveedor de datos de .NET Framework para Oracle po
     <value>No se especificó ningún archivo de base de datos.</value>
   </data>
   <data name="SqlFileConnectionProperties_TimeoutReasons" xml:space="preserve">
-    <value>Las razones comunes para este problema incluyen que el servidor no está instalado, el servicio no se inicia o el servidor está actualizando su base de datos.  Si una actualización está en proceso, podrá conectarse a la base de datos cuando finalice la actualización.</value>
+    <value>Las razones comunes de este problema incluyen que el servidor no está instalado, el servicio no se inicia o el servidor está actualizando la base de datos.  Si una actualización está en proceso, podrá conectarse a la base de datos cuando finalice la actualización.</value>
   </data>
   <data name="SqlFileConnectionUIControl_InvalidConnectionProperties" xml:space="preserve">
     <value>El objeto de propiedades de conexión debe ser de tipo propiedades de conexión de archivo SQL.</value>
   </data>
   <data name="DataProvider_EntityFramework" xml:space="preserve">
-    <value>pRoveedor de datos de .NET Framework para Entity Framework</value>
+    <value>Proveedor de datos de .NET Framework para Entity Framework</value>
   </data>
   <data name="DataProvider_EntityFramework_DataSource_Description" xml:space="preserve">
-    <value>Utilice este proveedor para transformar las consultas contra un modelo de datos en un árbol de comandos canónico. El árbol de comandos puede ser consumido por un proveedor de datos de .NET Framework para la entidad Framework.</value>
+    <value>Utilice este proveedor para transformar las consultas en un modelo de datos en un árbol de comandos canónico. A continuación, un proveedor de datos de .NET Framework puede consumir el árbol de comandos para Entity Framework.</value>
   </data>
   <data name="DataProvider_EntityFramework_Description" xml:space="preserve">
     <value>Utilice este proveedor de datos para conectarse a orígenes de datos de Entity Framework.</value>

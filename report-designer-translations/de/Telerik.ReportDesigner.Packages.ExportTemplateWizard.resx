@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="TemplateWizardMissingItemTitle" xml:space="preserve">
-    <value>[Fehlt] </value>
+    <value>[MISSING] </value>
   </data>
   <data name="TemplateWizardMissingItemTooltip" xml:space="preserve">
-    <value>Der Bericht fehlt. Wenn Sie den Vorgang fortsetzen, wird er nicht in die Vorlage aufgenommen.</value>
+    <value>Der Bericht fehlt. Wenn Sie fortfahren, wird es nicht in der Vorlage enthalten sein.</value>
   </data>
   <data name="TemplateWizardOptionPageTitle" xml:space="preserve">
-    <value>Vorlagenoptionen auswählen</value>
+    <value>Wählen Sie Vorlagen</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplateDescription" xml:space="preserve">
     <value>Beschreibung der Vorlage:</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplateName" xml:space="preserve">
-    <value>Vorlagenname:</value>
+    <value>Name der Vorlage:</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplatePreviewImage" xml:space="preserve">
-    <value>Vorschau Bild: (empfohlene Größe: 64x64)</value>
+    <value>Vorschau-Bild: (Empfohlene Größe: 64x64)</value>
   </data>
   <data name="TemplateWizardRequiredField" xml:space="preserve">
     <value>Pflichtfeld</value>
@@ -142,46 +142,47 @@
     <value>Auswählen</value>
   </data>
   <data name="TemplateWizardSuccess" xml:space="preserve">
-    <value>Bereit. Die Vorlage wurde erfolgreich erstellt.</value>
+    <value>fertig. Die Vorlage ist erfolgreich erstellt.</value>
   </data>
   <data name="TemplateWizardTemplateAlreadyExistsCaption" xml:space="preserve">
     <value>Vorlage erstellen</value>
   </data>
   <data name="TemplateWizardTitle" xml:space="preserve">
-    <value>Assistent zum Exportieren von Vorlagen</value>
+    <value>Export-Vorlagen-Assistent</value>
   </data>
   <data name="TemplateWizardSelectReport" xml:space="preserve">
     <value>Bericht auswählen</value>
   </data>
   <data name="TemplateWizardSelectSourceDescription" xml:space="preserve">
-    <value>Wählen Sie vorlagenquelle aus, die in die Vorlage eingeschlossen werden soll. In der Liste sind nur offene Dokumente enthalten.</value>
+    <value>Wählen Sie die Vorlagen-Quelle aus, um sie in die Vorlage einzufügen. In der Liste sind nur offene Dokumente enthalten.</value>
   </data>
   <data name="TemplateWizardSelectSourceTitle" xml:space="preserve">
-    <value>Vorlagenquelle auswählen</value>
+    <value>Template-Quelle auswählen</value>
   </data>
   <data name="TemplateWizardUseCurrentReport" xml:space="preserve">
-    <value>Aktuellen Bericht verwenden</value>
+    <value>Aktueller Bericht nutzen</value>
   </data>
-  <data name="TemplateWizardOptionPageDescription" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TemplateWizardOptionPageDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="TemplateWizardTemplateBuildFailed" xml:space="preserve">
-    <value>Vorlagenerstellung fehlgeschlagen.</value>
+    <value>Vorlage gebaut gescheitert.</value>
   </data>
   <data name="TemplateWizardTemplateAlreadyExistsText" xml:space="preserve">
-    <value>Die Vorlage mit dem Namen ' {0} ' ist bereits vorhanden.
-Möchten Sie Sie ersetzen?</value>
+    <value>Vorlage mit dem Namen ' {0} ' existiert bereits.
+Wollen Sie ihn ersetzen?</value>
   </data>
   <data name="TemplateWizardBrowseButtonText" xml:space="preserve">
     <value>Stöbern</value>
   </data>
   <data name="TemplateWizardInvalidImage" xml:space="preserve">
-    <value>Das Bild ist ungültig.</value>
+    <value>Image ist nicht gültig.</value>
   </data>
   <data name="TemplateWizardOptionsStartFieldMappingWizard" xml:space="preserve">
-    <value>Starten Sie den Feldzuordnungsassistenten jedes Mal, wenn die aktuelle Vorlage geöffnet wird.</value>
+    <value>Starten Sie den Feld Mapping-Assistent jedes Mal, wenn die aktuelle Vorlage geöffnet wird.</value>
   </data>
   <data name="StartFieldMappingWizard_Title" xml:space="preserve">
-    <value>Feld Zuordnungs Assistent</value>
+    <value>Feld-Mappings Zauberer</value>
   </data>
 </root>

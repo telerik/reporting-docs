@@ -117,51 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PropertyBrowser_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="AlignTextBottomText" xml:space="preserve">
-    <value>Выравнивание текста снизу</value>
+    <value>Выравнивание нижнего текста</value>
   </data>
   <data name="AlignTextBottomDescription" xml:space="preserve">
-    <value>Выравнивание текста по нижнему краю.</value>
+    <value>Выравнивание текста на дно.</value>
   </data>
   <data name="AlignTextCenterText" xml:space="preserve">
     <value>Центр</value>
   </data>
   <data name="AlignTextCenterDescription" xml:space="preserve">
-    <value>Центрировать текст.</value>
+    <value>Текст центра.</value>
   </data>
   <data name="AlignTextLeftText" xml:space="preserve">
-    <value>Выравнивание текста по левому краю</value>
+    <value>Выравнивание текста влево</value>
   </data>
   <data name="AlignTextLeftDescription" xml:space="preserve">
-    <value>Выравнивание текста по левому краю.</value>
+    <value>Выравнивание текста влево.</value>
   </data>
   <data name="AlignTextMiddleText" xml:space="preserve">
-    <value>Выравнивание текста по середине</value>
+    <value>Выравнивание текста посередине</value>
   </data>
   <data name="AlignTextMiddleDescription" xml:space="preserve">
-    <value>Выравнивание текста по середине.</value>
+    <value>Выравнивание текста по центру.</value>
   </data>
   <data name="AlignTextRightText" xml:space="preserve">
-    <value>Выравнивание текста по правому краю</value>
+    <value>Выравнивание права текста</value>
   </data>
   <data name="AlignTextRightDescription" xml:space="preserve">
-    <value>Выравнивание текста по правому краю.</value>
+    <value>Выравнивание текста вправо.</value>
   </data>
   <data name="AlignTextTopText" xml:space="preserve">
     <value>Выравнивание верхнего текста</value>
   </data>
   <data name="AlignTextTopDescription" xml:space="preserve">
-    <value>Выравнивание текста по верхнему краю.</value>
+    <value>Выравнивание текста к верху.</value>
   </data>
   <data name="FormatBoldText" xml:space="preserve">
     <value>Полужирный</value>
   </data>
   <data name="FormatBoldDescription" xml:space="preserve">
-    <value>Сделайте выделение полужирным. (Ctrl+B)</value>
+    <value>Сделайте выделение жирным. (CTRL + B)</value>
   </data>
   <data name="ClipboardCopy" xml:space="preserve">
     <value>Скопировать</value>
@@ -173,7 +169,7 @@
     <value>Курсив</value>
   </data>
   <data name="FormatItalicDescription" xml:space="preserve">
-    <value>Сделайте выделенный фрагмент курсивом. (Ctrl+I)</value>
+    <value>Сделать выбор курсивом. (CTRL + I)</value>
   </data>
   <data name="ClipboardPaste" xml:space="preserve">
     <value>Вставить</value>
@@ -182,34 +178,34 @@
     <value>Зачеркнуть</value>
   </data>
   <data name="FormatStrikethroughDescription" xml:space="preserve">
-    <value>Рисование линии через середину текста.</value>
+    <value>Нарисуйте линию через середину текста.</value>
   </data>
   <data name="FormatUnderlineText" xml:space="preserve">
     <value>Подчеркнуть</value>
   </data>
   <data name="FormatUnderlineDescription" xml:space="preserve">
-    <value>Подчеркивание выделенного фрагмента. (Ctrl+U)</value>
+    <value>Подчеркните выделение. (CTRL + U)</value>
   </data>
   <data name="AlignBottomText" xml:space="preserve">
     <value>Выравнивание снизу</value>
   </data>
   <data name="AlignBottomDescription" xml:space="preserve">
-    <value>Выравнивание выбранных элементов по нижнему краю.</value>
+    <value>Выравнивание выбранных элементов снизу.</value>
   </data>
   <data name="AlignCenterText" xml:space="preserve">
     <value>Выровнить по центру</value>
   </data>
   <data name="AlignCenterDescription" xml:space="preserve">
-    <value>Выравнивание выбранных элементов по центру по вертикали.</value>
+    <value>Выравнивание выбранных элементов с вертикальным центром.</value>
   </data>
   <data name="AlignLeftText" xml:space="preserve">
     <value>По левому краю</value>
   </data>
   <data name="AlignLeftDescription" xml:space="preserve">
-    <value>Выравнивание выбранных элементов по левому краю.</value>
+    <value>Выравнивание выбранных элементов влево.</value>
   </data>
   <data name="AlignMiddleDescription" xml:space="preserve">
-    <value>Выравнивание выбранных элементов по центру горизонта.</value>
+    <value>Выравнивание выбранных элементов в горизонтальный Center.</value>
   </data>
   <data name="AlignRightText" xml:space="preserve">
     <value>По правому краю</value>
@@ -221,88 +217,89 @@
     <value>Выравнивание по сетке</value>
   </data>
   <data name="AlignToGridDescription" xml:space="preserve">
-    <value>Выравнивание выбранных элементов по сетке.</value>
+    <value>Выравнивание выбранных элементов с сеткой.</value>
   </data>
   <data name="AlignTopText" xml:space="preserve">
-    <value>Выравнивание по верхнему краю</value>
+    <value>Выровнять верхний</value>
   </data>
   <data name="AlignTopDescription" xml:space="preserve">
-    <value>Выравнивание выбранных элементов по верхнему краю.</value>
+    <value>Выравнивание выбранных элементов к началу.</value>
   </data>
   <data name="BringToFrontText" xml:space="preserve">
-    <value>Довести до передней</value>
+    <value>Довести до фронта</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BringToFrontDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="CenterHorizontallyText" xml:space="preserve">
-    <value>Центрировать по горизонтали</value>
+    <value>Центр горизонтально</value>
   </data>
   <data name="CenterHorizontallyDescription" xml:space="preserve">
-    <value>Центрировать выбранные элементы по горизонтали.</value>
+    <value>Центр выбранных элементов горизонтально.</value>
   </data>
   <data name="CenterVerticallyText" xml:space="preserve">
-    <value>Центрировать по вертикали</value>
+    <value>Центр вертикально</value>
   </data>
   <data name="CenterVerticallyDescription" xml:space="preserve">
-    <value>Центрировать выбранные элементы по вертикали.</value>
+    <value>Центр выбранных элементов по вертикали.</value>
   </data>
   <data name="HorizSpaceConcatenateText" xml:space="preserve">
-    <value>Удалите Горизонтальный интервал.</value>
+    <value>Удалите горизонтальное расстояние.</value>
   </data>
   <data name="HorizSpaceConcatenateDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="HorizSpaceDecreaseText" xml:space="preserve">
-    <value>Уменьшите Горизонтальный интервал.</value>
+    <value>Уменьшение горизонтального интервала.</value>
   </data>
   <data name="HorizSpaceDecreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="HorizSpaceIncreaseText" xml:space="preserve">
-    <value>Увеличьте Горизонтальный интервал.</value>
+    <value>Увеличьте горизонтальное расстояние.</value>
   </data>
   <data name="HorizSpaceIncreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="HorizSpaceMakeEqualText" xml:space="preserve">
-    <value>Сделайте Горизонтальный интервал равным.</value>
+    <value>Сделайте горизонтальное расстояние между равными.</value>
   </data>
   <data name="HorizSpaceMakeEqualDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="SendToBackText" xml:space="preserve">
-    <value>Отправить на задний</value>
+    <value>Отправить обратно</value>
   </data>
   <data name="SendToBackDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="VertSpaceConcatenateText" xml:space="preserve">
-    <value>Удаление вертикального интервала.</value>
+    <value>Удалите вертикальное расстояние.</value>
   </data>
   <data name="VertSpaceConcatenateDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="VertSpaceDecreaseText" xml:space="preserve">
-    <value>Уменьшите интервал по вертикали.</value>
+    <value>Уменьшить вертикальное расстояние.</value>
   </data>
   <data name="VertSpaceDecreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="VertSpaceIncreaseText" xml:space="preserve">
-    <value>Увеличьте вертикальный интервал.</value>
+    <value>Увеличьте вертикальное расстояние.</value>
   </data>
   <data name="VertSpaceIncreaseDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="VertSpaceMakeEqualText" xml:space="preserve">
-    <value>Сделайте вертикальный интервал равным.</value>
+    <value>Сделать вертикальное расстояние равным.</value>
   </data>
   <data name="VertSpaceMakeEqualDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="AlignMiddleText" xml:space="preserve">
-    <value>Выравнивание по середине</value>
+    <value>Выравнивание среднего</value>
   </data>
   <data name="BorderText" xml:space="preserve">
     <value>Граница</value>
@@ -317,10 +314,10 @@
     <value>Расположение</value>
   </data>
   <data name="BorderSide" xml:space="preserve">
-    <value>Сторона границы</value>
+    <value>Пограничная сторона</value>
   </data>
   <data name="BorderSideDescription" xml:space="preserve">
-    <value>Измените сторону границы.</value>
+    <value>Измените пограничную сторону.</value>
   </data>
   <data name="BorderStyle" xml:space="preserve">
     <value>Стиль границы</value>
@@ -332,13 +329,13 @@
     <value>Ширина границ</value>
   </data>
   <data name="BorderWidthDescription" xml:space="preserve">
-    <value>Измените ширину границы.</value>
+    <value>Изменение ширины границы.</value>
   </data>
   <data name="FormatBackgroundColorText" xml:space="preserve">
     <value>Цвет фона</value>
   </data>
   <data name="FormatBackgroundColorDescription" xml:space="preserve">
-    <value>Изменение цвета фона выделенных элементов.</value>
+    <value>Измените выбранные элементы фонового цвета.</value>
   </data>
   <data name="BorderSideAll" xml:space="preserve">
     <value>Все</value>
@@ -353,7 +350,7 @@
     <value>Право</value>
   </data>
   <data name="BorderSideText" xml:space="preserve">
-    <value>Сторона границы</value>
+    <value>Пограничная сторона</value>
   </data>
   <data name="BorderSideTop" xml:space="preserve">
     <value>Верх</value>
@@ -365,7 +362,7 @@
     <value>Пунктирный</value>
   </data>
   <data name="BorderStyleDouble" xml:space="preserve">
-    <value>Дважды</value>
+    <value>Двухместный</value>
   </data>
   <data name="BorderStyleGroove" xml:space="preserve">
     <value>Груув</value>
@@ -389,16 +386,16 @@
     <value>Имя шрифта</value>
   </data>
   <data name="FormatFontNameDescription" xml:space="preserve">
-    <value>Изменить выбранный шрифт текста.</value>
+    <value>Изменить выбранный текст шрифта.</value>
   </data>
   <data name="FormatFontSizeText" xml:space="preserve">
     <value>Размер шрифта</value>
   </data>
   <data name="FormatFontSizeDescription" xml:space="preserve">
-    <value>Изменение размера шрифта выделенного текста.</value>
+    <value>Изменение размера шрифта выбранного текста.</value>
   </data>
   <data name="FormatForegroundColorDescription" xml:space="preserve">
-    <value>Изменение цвета выделенного текста.</value>
+    <value>Изменение цвета выбранного текста.</value>
   </data>
   <data name="FormatForegroundColorText" xml:space="preserve">
     <value>Цвет шрифта</value>
@@ -419,10 +416,10 @@
     <value>Окно вывода</value>
   </data>
   <data name="ViewPropertiesWindow" xml:space="preserve">
-    <value>Обозреватель свойств</value>
+    <value>Браузер свойств</value>
   </data>
   <data name="ViewStartupPage" xml:space="preserve">
-    <value>Стартовая страница</value>
+    <value>Страница запуска</value>
   </data>
   <data name="ViewToolsGroup" xml:space="preserve">
     <value>Инструменты</value>
@@ -443,7 +440,7 @@
     <value />
   </data>
   <data name="LayoutSizeHeightText" xml:space="preserve">
-    <value>Сделать одинаковую высоту</value>
+    <value>Сделать ту же высоту</value>
   </data>
   <data name="LayoutSizeToControlDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
@@ -461,10 +458,10 @@
     <value />
   </data>
   <data name="LayoutSizeWidthText" xml:space="preserve">
-    <value>Сделать одинаковую ширину</value>
+    <value>Сделать ту же ширину</value>
   </data>
   <data name="ClearRecentDocumentsText" xml:space="preserve">
-    <value>Очистить недавние документы</value>
+    <value>Очистить последние документы</value>
   </data>
   <data name="NewReportText" xml:space="preserve">
     <value>Новый отчет...</value>
@@ -476,10 +473,10 @@
     <value>Добро пожаловать!</value>
   </data>
   <data name="ReadFileError" xml:space="preserve">
-    <value>Не удается прочитать файл: {0}</value>
+    <value>Не удается прочесть файл: {0}</value>
   </data>
   <data name="ErrorFileCreation" xml:space="preserve">
-    <value>Ошибка при создании файла</value>
+    <value>Создание файла ошибки</value>
   </data>
   <data name="ViewDiagnosticsGroup" xml:space="preserve">
     <value>диагностика</value>
@@ -488,34 +485,37 @@
     <value>Выровнить по длине</value>
   </data>
   <data name="AlignTextJustifyDescription" xml:space="preserve">
-    <value>Выравнивание текста.</value>
+    <value>Оправдать текст.</value>
   </data>
   <data name="ClipboardCopyDescription" xml:space="preserve">
-    <value>Ctrl+C</value>
+    <value>CTRL + C</value>
   </data>
   <data name="ClipboardCutDescription" xml:space="preserve">
-    <value>Ctrl+X</value>
+    <value>CTRL + X</value>
   </data>
   <data name="ClipboardPasteDescription" xml:space="preserve">
-    <value>Ctrl+V</value>
+    <value>CTRL + V</value>
   </data>
   <data name="Options_DataConnectionsGroup_Title" xml:space="preserve">
-    <value>Подключения к данным</value>
+    <value>Соединения данных</value>
   </data>
   <data name="DataConnectionsOptionsModel_AddOrEditConnectionInfo_Error" xml:space="preserve">
-    <value>Проблема при создании диалогового окна подключения данных.</value>
+    <value>Проблема при создании диалога данных соединения.</value>
   </data>
   <data name="DataConnectionsOptionsModel_RemoveDataConnectionItem_ConfirmRemove" xml:space="preserve">
-    <value>Вы действительно хотите удалить выбранное подключение к данным "{0}"?</value>
+    <value>Вы уверены, что хотите удалить выбранное подключение к данным "{0}"?</value>
   </data>
   <data name="Options_GeneralGroup_Title" xml:space="preserve">
     <value>Общий</value>
   </data>
   <data name="Options_SelectFolderCommand_Description" xml:space="preserve">
-    <value>Выберите каталог нового элемента по умолчанию</value>
+    <value>Выберите по умолчанию новый каталог элементов</value>
   </data>
   <data name="PropertyBrowserToolWindow_Title" xml:space="preserve">
     <value>Свойства</value>
+  </data>
+  <data name="PropertyBrowser_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="PropertyBrowser_Reset" xml:space="preserve">
     <value>Сбросить</value>
@@ -533,18 +533,18 @@
     <value>Указанный каталог не существует. \ r \ n вы хотите создать его сейчас?</value>
   </data>
   <data name="Options_RestartRequired_Warning" xml:space="preserve">
-    <value>Для применения этих изменений требуется перезапуск приложения. Перед перезапуском сохраните все открытые отчеты. Перезапустить приложение сейчас?</value>
+    <value>Для применения этих изменений требуется перезагрузка приложения. Перед перезапуском сохраните любые открытые отчеты. Перезапустить приложение сейчас?</value>
   </data>
   <data name="Option_AllowMultipleInstances" xml:space="preserve">
     <value>Разрешить несколько экземпляров</value>
   </data>
   <data name="Option_BuildConnection_Button" xml:space="preserve">
-    <value>Подключение сборки</value>
+    <value>Построение соединения</value>
   </data>
   <data name="Option_Language" xml:space="preserve">
     <value>Язык:</value>
   </data>
   <data name="Option_PreserverOpenWindows" xml:space="preserve">
-    <value>Сохранить открытые окна при выходе:</value>
+    <value>Сохранение открытых окон при выходе:</value>
   </data>
 </root>

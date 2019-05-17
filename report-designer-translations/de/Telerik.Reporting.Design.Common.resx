@@ -118,21 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PropertyList_NOTE" xml:space="preserve">
-    <value>Beachten:</value>
+    <value>notiz:</value>
   </data>
   <data name="MenuItem_FallBack_Text" xml:space="preserve">
     <value>(keiner)</value>
   </data>
   <data name="ReportParameterEditor_Caption" xml:space="preserve">
-    <value>Berichts Parameter-Editor</value>
+    <value>Report-Parameter-Editor</value>
   </data>
   <data name="StyleRuleEditor_Caption" xml:space="preserve">
-    <value>Stil Regel-Editor</value>
+    <value>Style Rule Editor</value>
   </data>
   <data name="MapWizard_SetupShapesSourcePage_FilesFilter_Shape" xml:space="preserve">
-    <value>Shape-Dateien</value>
+    <value>Gestalt</value>
   </data>
-  <data name="MapWizard_SetupShapesSourcePage_FilesFilter_All" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MapWizard_SetupShapesSourcePage_FilesFilter_All" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="Wizards_ChooseDataSource_AvailableDataSources" xml:space="preserve">
@@ -142,13 +143,13 @@
     <value>Ausgewählte Datenquelle:</value>
   </data>
   <data name="Wizards_ChooseDataSource_AddNewDataSource" xml:space="preserve">
-    <value>&amp;Neue Datenquelle hinzufügen...</value>
+    <value>&amp;Neue Datenquelle hinzufügen ...</value>
   </data>
   <data name="Wizards_ReportConfigurator_PageNumberTextBox" xml:space="preserve">
     <value>Seite:</value>
   </data>
   <data name="StyleRulesEditor_Export_Text" xml:space="preserve">
-    <value>&amp;Export</value>
+    <value>&amp;exportieren</value>
   </data>
   <data name="CsvDataSourceWizard_FileDialogFilter_AllFiles" xml:space="preserve">
     <value>Alle Dateien</value>
@@ -157,16 +158,19 @@
     <value>CSV-Dateien</value>
   </data>
   <data name="CsvDataSourceWizard_FileDialogFilter_TextFiles" xml:space="preserve">
-    <value>Text Dateien</value>
+    <value>Textdateien</value>
+  </data>
+  <data name="JsonDataSourceWizard_FileDialogFilter_JsonFiles" xml:space="preserve">
+    <value>JSON Files</value>
   </data>
   <data name="Wizard_ChooseDataSource_Description" xml:space="preserve">
-    <value>Wählen Sie die Datenquelle aus, mit der Sie eine Verbindung herstellen möchten, oder erstellen Sie eine neue.</value>
+    <value>Wählen Sie die Datenquelle, mit der Sie sich verbinden möchten, oder erstellen Sie eine neue.</value>
   </data>
   <data name="Wizard_ChooseDataSource_Title" xml:space="preserve">
-    <value>Datenquelleauswählen</value>
+    <value>Wählen Sie Datenquelle</value>
   </data>
   <data name="NoDataSource" xml:space="preserve">
-    <value>(keine Datenquelle)</value>
+    <value>(Keine Datenquelle)</value>
   </data>
   <data name="PageSettings_Margins" xml:space="preserve">
     <value>Ränder</value>
@@ -184,7 +188,7 @@
     <value>Rechts</value>
   </data>
   <data name="PageSettings_Paper" xml:space="preserve">
-    <value>Papier</value>
+    <value>papier</value>
   </data>
   <data name="PageSettings_Height" xml:space="preserve">
     <value>Höhe</value>
@@ -196,7 +200,7 @@
     <value>Größe</value>
   </data>
   <data name="PageSettings_PrintOnContinuousPaper" xml:space="preserve">
-    <value>Druck auf Endlospapier (Rollen)</value>
+    <value>Druck auf kontinuierlichem (Rollen-) Papier</value>
   </data>
   <data name="PageSettings_Portrait" xml:space="preserve">
     <value>Hochformat</value>
@@ -220,10 +224,10 @@
     <value>Eigenschaften</value>
   </data>
   <data name="ReportParameterEditor_ValidateParameter_Warning" xml:space="preserve">
-    <value>Geben Sie einen Namen für den Berichtsparameter an!</value>
+    <value>Bitte geben Sie einen Namen für den Bericht-Parameter an!</value>
   </data>
   <data name="StyleRuleEditor_ValidateStyleRule_Warning" xml:space="preserve">
-    <value>Geben Sie eine Stilauswahl für die Stilregel an.</value>
+    <value>Bitte geben Sie einen Stilwähler für die Stilregel an.</value>
   </data>
   <data name="ExpressionBuilder_Text" xml:space="preserve">
     <value>Ausdruck bearbeiten</value>
@@ -232,7 +236,7 @@
     <value>&amp;Neu</value>
   </data>
   <data name="PropertyList_Button_Delete" xml:space="preserve">
-    <value>&amp;Löschen</value>
+    <value>&amp;streichen</value>
   </data>
   <data name="PropertyList_Button_MoveUp" xml:space="preserve">
     <value>Nach oben verschieben</value>

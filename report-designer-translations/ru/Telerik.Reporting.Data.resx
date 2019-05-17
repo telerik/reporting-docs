@@ -117,146 +117,92 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="WebServiceDataSource_DataSelector_Description" xml:space="preserve">
-    <value>Выражение выбора данных, которое будет использоваться для запроса и фильтрации данных, возвращаемых из веб-службы.</value>
-  </data>
-  <data name="WebServiceDataSource_DataSelector_Name" xml:space="preserve">
-    <value>Селектор данных</value>
-  </data>
-  <data name="WebServiceDataSource_Description" xml:space="preserve">
-    <value>Представляет данные веб-службы для элементов данных.</value>
-  </data>
-  <data name="WebServiceDataSource_Name" xml:space="preserve">
-    <value>Источник данных веб-службы</value>
-  </data>
-  <data name="WebServiceDataSource_Authentication_Description" xml:space="preserve">
-    <value>Представляет данные проверки подлинности.</value>
-  </data>
-  <data name="WebServiceDataSource_Authentication_Name" xml:space="preserve">
-    <value>Проверки подлинности</value>
-  </data>
-  <data name="WebServiceDataSource_BasicAuthentication_Name" xml:space="preserve">
-    <value>Базовая аутентификация</value>
-  </data>
-  <data name="WebServiceDataSource_Body_Description" xml:space="preserve">
-    <value>Тело метода POST.</value>
-  </data>
-  <data name="WebServiceDataSource_Body_Name" xml:space="preserve">
-    <value>Содержимое</value>
-  </data>
-  <data name="WebServiceDataSource_DataEncoding_Description" xml:space="preserve">
-    <value>Кодирование данных. По умолчанию используется UTF-8.</value>
-  </data>
-  <data name="WebServiceDataSource_DataEncoding_Name" xml:space="preserve">
-    <value>Кодирование данных</value>
-  </data>
-  <data name="WebServiceDataSource_DataFormat_Description" xml:space="preserve">
-    <value>Ожидаемый формат данных ответа.</value>
-  </data>
-  <data name="WebServiceDataSource_DataFormat_Name" xml:space="preserve">
-    <value>Формат данных</value>
-  </data>
-  <data name="WebServiceDataSource_Method_Description" xml:space="preserve">
-    <value>Метод запроса HTTP.</value>
-  </data>
-  <data name="WebServiceDataSource_Method_Name" xml:space="preserve">
-    <value>Метод</value>
-  </data>
-  <data name="WebServiceDataSource_ServiceUrl_Description" xml:space="preserve">
-    <value>URL-адрес, на который отправляется запрос.</value>
-  </data>
-  <data name="WebServiceDataSource_ServiceUrl_Name" xml:space="preserve">
-    <value>URL-адрес службы</value>
-  </data>
-  <data name="WebServiceDataSource_TwoStepAuthentication_Name" xml:space="preserve">
-    <value>2-ступенчатая аутентификация</value>
-  </data>
   <data name="CalculatedField_Category" xml:space="preserve">
-    <value>Вычисляемое поле</value>
+    <value>Вычисляно поле</value>
   </data>
   <data name="CalculatedField_DataType_Description" xml:space="preserve">
-    <value>Получает или задает тип данных вычисляемого поля</value>
+    <value>Получает или устанавливает тип данных расчетно поля</value>
   </data>
   <data name="CalculatedField_Expression_Description" xml:space="preserve">
-    <value>Получает или задает выражение вычисляемого поля</value>
+    <value>Получает или устанавливает выражение рассчитанного поля</value>
   </data>
   <data name="CalculatedField_Name_Description" xml:space="preserve">
-    <value>Получает или задает имя вычисляемого поля</value>
+    <value>Получает или устанавливает имя расчетного поля</value>
   </data>
   <data name="CsvDataSource_Columns_Description" xml:space="preserve">
-    <value>Хранит определение для каждого столбца данных таблицы CSV</value>
+    <value>Определение хранилищ для каждого столбца данных таблицы КПV</value>
   </data>
   <data name="CsvDataSource_CommentToken_Description" xml:space="preserve">
-    <value>Символ, используемый для комментариев в CSV-документе.</value>
+    <value>Символ, используемый для комментариев в документе КПВ.</value>
   </data>
   <data name="CsvDataSource_ConsecutiveFieldSeparatorsAsOne_Description" xml:space="preserve">
-    <value>Обрабатывать последовательные разделители полей как один в CSV-документе.</value>
+    <value>Рассматривать последовательных полевых сепараторов как один в документе КПВ.</value>
   </data>
   <data name="CsvDataSource_ConsecutiveRecordSeparatorsAsOne_Description" xml:space="preserve">
-    <value>Обрабатывать последовательные разделители записей как один в CSV-документе.</value>
+    <value>Рассматривать последовательные делители записей как один в документе СБВ.</value>
   </data>
   <data name="CsvDataSource_DateTimeFormat_Description" xml:space="preserve">
-    <value>Формат, используемый при синтаксическом анализе дат.</value>
+    <value>Формат, используемый при разборе дат.</value>
   </data>
   <data name="CsvDataSource_DecimalSeparator_Description" xml:space="preserve">
-    <value>Десятичный разделитель, используемый при анализе чисел.</value>
+    <value>Десятичный сепаратор используется при разборе чисел.</value>
   </data>
   <data name="CsvDataSource_Description" xml:space="preserve">
-    <value>Представляет CSV-документ для элементов данных.</value>
+    <value>Представляет документ СБВ к элементам данных.</value>
   </data>
   <data name="CsvDataSource_EscapeFormat_Description" xml:space="preserve">
-    <value>Escape-формат CSV-документа.</value>
+    <value>Формат побега из документа КПV.</value>
   </data>
   <data name="CsvDataSource_FieldSeparators_Description" xml:space="preserve">
-    <value>Набор символов, используемых в качестве разделителей полей</value>
+    <value>Набор символов, используемых в качестве полевых сепараторов (деограничители)</value>
   </data>
   <data name="CsvDataSource_HasHeaders_Description" xml:space="preserve">
-    <value>Параметр, указывающий, имеет ли CSV-документ строку заголовка.</value>
+    <value>Параметр, указывающее, есть ли в документе СБV заголовок строки.</value>
   </data>
   <data name="CsvDataSource_Quote_Description" xml:space="preserve">
-    <value>Символ, используемый для экранирования.</value>
+    <value>Символ, используемый для побега.</value>
   </data>
   <data name="CsvDataSource_RecordSeparators_Description" xml:space="preserve">
-    <value>Набор символов, используемых в качестве разделителей записей.</value>
+    <value>Набор символов, используемых в качестве записи сепараторов.</value>
   </data>
   <data name="CsvDataSource_Source_Description" xml:space="preserve">
-    <value>Источник CSV-документа.</value>
+    <value>Источник документа КПВ.</value>
   </data>
   <data name="CsvDataSource_ThousandSeparator_Description" xml:space="preserve">
-    <value>Разделитель тысяч, используемый при разборе чисел.</value>
+    <value>Тысяча сепараторов, используемых при разборе чисел.</value>
   </data>
   <data name="CubeDataSource_ConnectionString_Description" xml:space="preserve">
-    <value>Строка подключения, используемая для подключения к базе данных OLAP.</value>
+    <value>Строка соединения, используемая для подключения к базе данных OLAP.</value>
   </data>
   <data name="CubeDataSource_Description" xml:space="preserve">
     <value>Представляет куб OLAP для элементов данных.</value>
   </data>
   <data name="CubeDataSource_Mappings_Description" xml:space="preserve">
-    <value>Коллекция сопоставлений для имен полей источника данных.</value>
+    <value>Сбор отображения для названий полей источника данных.</value>
   </data>
   <data name="CubeDataSource_Parameters_Description" xml:space="preserve">
-    <value>Коллекция параметров, передаваемых в инструкцию MDX SELECT.</value>
+    <value>Коллекция параметров перешла к отбору MDX выписке.</value>
   </data>
   <data name="CubeDataSource_SelectCommand_Description" xml:space="preserve">
-    <value>Инструкция MDX SELECT для выполнения в кубе OLAP.</value>
+    <value>MDX выберите оператор для выполнения против куба OLAP.</value>
   </data>
   <data name="DataCategory" xml:space="preserve">
     <value>Данные</value>
   </data>
   <data name="DataColumn_Name_Description" xml:space="preserve">
-    <value>Получает или задает имя определения поля. Используется для доступа к полю в выражениях.</value>
+    <value>Получает или устанавливает имя определения поля. Используется для доступа к полю в выражениях.</value>
   </data>
   <data name="DataColumn_Type_Description" xml:space="preserve">
-    <value>Получает или задает тип поля.</value>
+    <value>Получает или устанавливает тип поля.</value>
   </data>
   <data name="DataFieldMapping_Alias_Description" xml:space="preserve">
-    <value>Псевдоним поля из сопоставления.</value>
+    <value>Псевдоним поля из картографирования.</value>
   </data>
   <data name="DataFieldMapping_Name_Description" xml:space="preserve">
-    <value>Имя поля из сопоставления.</value>
+    <value>Название поля из картографирования.</value>
   </data>
   <data name="DataSourceParameter_Name_Description" xml:space="preserve">
-    <value>Имя параметра.</value>
+    <value>Название параметра.</value>
   </data>
   <data name="DataSourceParameter_Value_Description" xml:space="preserve">
     <value>Значение параметра.</value>
@@ -265,28 +211,28 @@
     <value>Источники данных</value>
   </data>
   <data name="DataSource_CalculatedFields_Description" xml:space="preserve">
-    <value>Получает коллекцию вычисляемых полей</value>
+    <value>Получает расчетно-сбор полей</value>
   </data>
   <data name="EntityDataSource_ConnectionString_Description" xml:space="preserve">
-    <value>Строка подключения, используемая для подключения к данным.</value>
+    <value>Строка соединения, используемая для подключения к данным.</value>
   </data>
   <data name="EntityDataSource_ContextMember_Description" xml:space="preserve">
-    <value>Элемент контекста, используемый для подключения к данным.</value>
+    <value>Участник контекста, используемый для подключения к данным.</value>
   </data>
   <data name="EntityDataSource_Context_Description" xml:space="preserve">
     <value>Контекст, используемый для подключения к данным.</value>
   </data>
   <data name="EntityDataSource_Description" xml:space="preserve">
-    <value>Представляет модель данных сущности для элементов данных.</value>
+    <value>Представляет модель данных сущностей для элементов данных.</value>
   </data>
   <data name="ObjectDataSourceBase_Parameters_Description" xml:space="preserve">
-    <value>Возвращает коллекцию с параметрами источника данных.</value>
+    <value>Получает коллекцию с параметрами исходных данных.</value>
   </data>
   <data name="ObjectDataSourceParameter_DataType_Description" xml:space="preserve">
     <value>Тип данных параметра.</value>
   </data>
   <data name="ObjectDataSource_DataMember_Description" xml:space="preserve">
-    <value>Элемент источника данных, используемый для подключения к данным.</value>
+    <value>Член источника данных, используемый для подключения к данным.</value>
   </data>
   <data name="ObjectDataSource_DataSource_Description" xml:space="preserve">
     <value>Объект источника данных, используемый для подключения к данным.</value>
@@ -295,34 +241,34 @@
     <value>Представляет бизнес-объект для элементов данных.</value>
   </data>
   <data name="OpenAccessDataSource_ConnectionString_Description" xml:space="preserve">
-    <value>Строка подключения, используемая для подключения к данным.</value>
+    <value>Строка соединения, используемая для подключения к данным.</value>
   </data>
   <data name="OpenAccessDataSource_Description" xml:space="preserve">
     <value>Представляет модель данных открытого доступа к элементам данных.</value>
   </data>
   <data name="OpenAccessDataSource_ObjectContextMember_Description" xml:space="preserve">
-    <value>Элемент контекста объекта, используемый для подключения к данным.</value>
+    <value>Член контекста объекта используется для подключения к данным.</value>
   </data>
   <data name="OpenAccessDataSource_ObjectContext_Description" xml:space="preserve">
     <value>Контекст объекта, используемый для подключения к данным.</value>
   </data>
   <data name="OpenAccessDataSource_ProviderName_Description" xml:space="preserve">
-    <value>Имя управляемого поставщика, используемого для подключения к данным.</value>
+    <value>Имя управляемого поставщика, используемое для подключения к данным.</value>
   </data>
   <data name="OpenClientConnection_SessionModel_Description" xml:space="preserve">
-    <value>Модель сеанса, поддерживаемая режимом работы сервера приложений.</value>
+    <value>Модель сеанса поддерживается операционным режимом App Server.</value>
   </data>
   <data name="OpenClientDataSource_Connection_Description" xml:space="preserve">
-    <value>Элемент источника данных, используемый для подключения к данным.</value>
+    <value>Член источника данных, используемый для подключения к данным.</value>
   </data>
   <data name="OpenClientDataSource_DataSourceType_Description" xml:space="preserve">
     <value>Объект источника данных, используемый для подключения к данным.</value>
   </data>
   <data name="OpenClientDataSource_DataTable_Description" xml:space="preserve">
-    <value>Имя таблицы данных, используемой из возвращаемого набора данных. Применимо только в том случае, если процедура извлекает набор данных.</value>
+    <value>Название таблицы данных для использования из возвращного набора данных. Применимо только в том случае, если процедура извлекает набор данных.</value>
   </data>
   <data name="OpenClientDataSource_Description" xml:space="preserve">
-    <value>Представляет компонент извлечения данных опенедже OpenClient.NET.</value>
+    <value>Представляет компонент поиска данных OpenEdge OpenClient.NET.</value>
   </data>
   <data name="OpenClientDataSource_Procedure_Description" xml:space="preserve">
     <value>Процедура, используемая для извлечения данных.</value>
@@ -334,22 +280,22 @@
     <value>Время ожидания в секундах перед завершением попытки извлечения данных.</value>
   </data>
   <data name="SqlDataSource_ConnectionString_Description" xml:space="preserve">
-    <value>Строка подключения, используемая для подключения к данным.</value>
+    <value>Строка соединения, используемая для подключения к данным.</value>
   </data>
   <data name="SqlDataSource_Description" xml:space="preserve">
     <value>Представляет базу данных SQL для элементов данных.</value>
   </data>
   <data name="SqlDataSource_Parameters_Description" xml:space="preserve">
-    <value>Коллекция с параметрами источника данных.</value>
+    <value>Коллекция с параметрами исходных данных.</value>
   </data>
   <data name="SqlDataSource_ProviderName_Description" xml:space="preserve">
-    <value>Имя управляемого поставщика, используемого для подключения к данным.</value>
+    <value>Имя управляемого поставщика, используемое для подключения к данным.</value>
   </data>
   <data name="SqlDataSource_SelectCommandType_Description" xml:space="preserve">
-    <value>Указывает способ интерпретации команды SELECT.</value>
+    <value>Показывает, как следует интерпретировать отборную команду.</value>
   </data>
   <data name="SqlDataSource_SelectCommand_Description" xml:space="preserve">
-    <value>Инструкция SQL SELECT или хранимая процедура для выполнения.</value>
+    <value>SQL выберите выписка или сохраненной процедуры для выполнения.</value>
   </data>
   <data name="CalculatedField_DataType_Name" xml:space="preserve">
     <value>Тип данных</value>
@@ -367,19 +313,19 @@
     <value>Маркер комментария</value>
   </data>
   <data name="CsvDataSource_ConsecutiveFieldSeparatorsAsOne_Name" xml:space="preserve">
-    <value>Последовательные разделители полей как один</value>
+    <value>Последовательных полевых сепараторов как один</value>
   </data>
   <data name="CsvDataSource_ConsecutiveRecordSeparatorsAsOne_Name" xml:space="preserve">
-    <value>Последовательные разделители записей как один</value>
+    <value>Последовательные записи сепараторов как один</value>
   </data>
   <data name="CsvDataSource_DateTimeFormat_Name" xml:space="preserve">
-    <value>Формат даты и времени</value>
+    <value>Формат даты времени</value>
   </data>
   <data name="CsvDataSource_DecimalSeparator_Name" xml:space="preserve">
-    <value>Десятичный разделитель</value>
+    <value>Десятичный сепаратор</value>
   </data>
   <data name="CsvDataSource_EscapeFormat_Name" xml:space="preserve">
-    <value>Escape-формат</value>
+    <value>Побег формат</value>
   </data>
   <data name="CsvDataSource_FieldSeparators_Name" xml:space="preserve">
     <value>Полевые сепараторы</value>
@@ -388,28 +334,28 @@
     <value>Имеет заголовки</value>
   </data>
   <data name="CsvDataSource_Name" xml:space="preserve">
-    <value>Источник данных CSV</value>
+    <value>Источник данных СБВ</value>
   </data>
   <data name="CsvDataSource_Quote_Name" xml:space="preserve">
     <value>Цитата</value>
   </data>
   <data name="CsvDataSource_RecordSeparators_Name" xml:space="preserve">
-    <value>Рекордные сепараторы</value>
+    <value>Разделители записей</value>
   </data>
   <data name="CsvDataSource_Source_Name" xml:space="preserve">
     <value>Источник</value>
   </data>
   <data name="CsvDataSource_ThousandSeparator_Name" xml:space="preserve">
-    <value>Тысяча сепаратора</value>
+    <value>Тысяча сепараторов</value>
   </data>
   <data name="CubeDataSource_ConnectionString_Name" xml:space="preserve">
-    <value>Строка подключения</value>
+    <value>Строка соединения</value>
   </data>
   <data name="CubeDataSource_Mappings_Name" xml:space="preserve">
     <value>Отображения</value>
   </data>
   <data name="CubeDataSource_Name" xml:space="preserve">
-    <value>Источник данных куба</value>
+    <value>Источник данных Cube</value>
   </data>
   <data name="CubeDataSource_Parameters_Name" xml:space="preserve">
     <value>Параметры</value>
@@ -436,19 +382,19 @@
     <value>Значение</value>
   </data>
   <data name="DataSource_CalculatedFields_Name" xml:space="preserve">
-    <value>Вычисляемые поля</value>
+    <value>Вычисляно поля</value>
   </data>
   <data name="EntityDataSource_ConnectionString_Name" xml:space="preserve">
-    <value>Строка подключения</value>
+    <value>Строка соединения</value>
   </data>
   <data name="EntityDataSource_ContextMember_Name" xml:space="preserve">
-    <value>Элемент контекста</value>
+    <value>Член контекста</value>
   </data>
   <data name="EntityDataSource_Context_Name" xml:space="preserve">
     <value>Контексте</value>
   </data>
   <data name="EntityDataSource_Name" xml:space="preserve">
-    <value>Источник данных сущности</value>
+    <value>Источник данных сущностей</value>
   </data>
   <data name="ObjectDataSourceBase_Parameters_Name" xml:space="preserve">
     <value>Параметры</value>
@@ -457,22 +403,22 @@
     <value>Тип данных</value>
   </data>
   <data name="ObjectDataSource_DataMember_Name" xml:space="preserve">
-    <value>Элемент данных</value>
+    <value>Член данных</value>
   </data>
   <data name="ObjectDataSource_DataSource_Name" xml:space="preserve">
     <value>Источник данных</value>
   </data>
   <data name="ObjectDataSource_Name" xml:space="preserve">
-    <value>Источник данных объекта</value>
+    <value>Источник данных объектов</value>
   </data>
   <data name="OpenAccessDataSource_ConnectionString_Name" xml:space="preserve">
-    <value>Строка подключения</value>
+    <value>Строка соединения</value>
   </data>
   <data name="OpenAccessDataSource_Name" xml:space="preserve">
-    <value>Открыть источник данных Access</value>
+    <value>Источник данных открытого доступа</value>
   </data>
   <data name="OpenAccessDataSource_ObjectContextMember_Name" xml:space="preserve">
-    <value>Элемент контекста объекта</value>
+    <value>Член контекста объекта</value>
   </data>
   <data name="OpenAccessDataSource_ObjectContext_Name" xml:space="preserve">
     <value>Контекст объекта</value>
@@ -493,22 +439,22 @@
     <value>Таблица данных</value>
   </data>
   <data name="OpenClientDataSource_Name" xml:space="preserve">
-    <value>Открыть источник данных клиента</value>
+    <value>Откройте источник данных клиента</value>
   </data>
   <data name="OpenClientDataSource_Procedure_Name" xml:space="preserve">
     <value>Процедуры</value>
   </data>
   <data name="SqlDataSourceParameter_DbType_Name" xml:space="preserve">
-    <value>Тип БД</value>
+    <value>Тип DB</value>
   </data>
   <data name="SqlDataSource_CommandTimeout_Name" xml:space="preserve">
     <value>Тайм-аут команды</value>
   </data>
   <data name="SqlDataSource_ConnectionString_Name" xml:space="preserve">
-    <value>Строка подключения</value>
+    <value>Строка соединения</value>
   </data>
   <data name="SqlDataSource_Name" xml:space="preserve">
-    <value>Источник данных SQL</value>
+    <value>SQL источник данных</value>
   </data>
   <data name="SqlDataSource_Parameters_Name" xml:space="preserve">
     <value>Параметры</value>
@@ -523,6 +469,90 @@
     <value>Выберите команду</value>
   </data>
   <data name="NoDataSource" xml:space="preserve">
-    <value>(нет источника данных)</value>
+    <value>(Нет источника данных)</value>
+  </data>
+  <data name="WebServiceDataSource_Description" xml:space="preserve">
+    <value>Представляет данные веб-службы к элементам данных.</value>
+  </data>
+  <data name="WebServiceDataSource_Name" xml:space="preserve">
+    <value>Источник данных веб-сервиса</value>
+  </data>
+  <data name="WebServiceDataSource_Authentication_Description" xml:space="preserve">
+    <value>Представляет данные аутентификации.</value>
+  </data>
+  <data name="WebServiceDataSource_Authentication_Name" xml:space="preserve">
+    <value>Проверки подлинности</value>
+  </data>
+  <data name="WebServiceDataSource_BasicAuthentication_Name" xml:space="preserve">
+    <value>Базовая аутентификация</value>
+  </data>
+  <data name="WebServiceDataSource_Body_Description" xml:space="preserve">
+    <value>Тело метода POST.</value>
+  </data>
+  <data name="WebServiceDataSource_Body_Name" xml:space="preserve">
+    <value>Содержимое</value>
+  </data>
+  <data name="WebServiceDataSource_DataEncoding_Description" xml:space="preserve">
+    <value>Кодирование данных. По умолчанию — UTF-8.</value>
+  </data>
+  <data name="WebServiceDataSource_DataEncoding_Name" xml:space="preserve">
+    <value>Кодирование данных</value>
+  </data>
+  <data name="WebServiceDataSource_DataFormat_Description" xml:space="preserve">
+    <value>Ожидаемый формат данных ответа.</value>
+  </data>
+  <data name="WebServiceDataSource_DataFormat_Name" xml:space="preserve">
+    <value>Формат данных</value>
+  </data>
+  <data name="WebServiceDataSource_DataSelector_Description" xml:space="preserve">
+    <value>Выражение селектора данных, которое будет использоваться для запроса и фильтрации данных, возвращающих из веб-службы.</value>
+  </data>
+  <data name="WebServiceDataSource_DataSelector_Name" xml:space="preserve">
+    <value>Селектор данных</value>
+  </data>
+  <data name="WebServiceDataSource_Method_Description" xml:space="preserve">
+    <value>Метод запроса.</value>
+  </data>
+  <data name="WebServiceDataSource_Method_Name" xml:space="preserve">
+    <value>Метод</value>
+  </data>
+  <data name="WebServiceDataSource_ServiceUrl_Description" xml:space="preserve">
+    <value>URL, на который направлен запрос.</value>
+  </data>
+  <data name="WebServiceDataSource_ServiceUrl_Name" xml:space="preserve">
+    <value>URL сервиса</value>
+  </data>
+  <data name="WebServiceDataSource_Source_Description" xml:space="preserve">
+    <value>Локальный источник данных.</value>
+  </data>
+  <data name="WebServiceDataSource_Source_Name" xml:space="preserve">
+    <value>Источник</value>
+  </data>
+  <data name="WebServiceDataSource_IgnoreResponseErrors_Description" xml:space="preserve">
+    <value>Обрабатывает любые ошибки ответа, как если бы данные не возвращаются из веб-службы.</value>
+  </data>
+  <data name="WebServiceDataSource_IgnoreResponseErrors_Name" xml:space="preserve">
+    <value>Игнорирование ошибок ответа</value>
+  </data>
+  <data name="WebServiceDataSource_TwoStepAuthentication_Name" xml:space="preserve">
+    <value>2-ступенчатый аутентификация</value>
+  </data>
+  <data name="JsonDataSource_Name" xml:space="preserve">
+    <value>Источник данных JSON</value>
+  </data>
+  <data name="JsonDataSource_Description" xml:space="preserve">
+    <value>Представляет данные JSON для элементов данных.</value>
+  </data>
+  <data name="JsonDataSource_Source_Description" xml:space="preserve">
+    <value>Локальный источник данных.</value>
+  </data>
+  <data name="JsonDataSource_Source_Name" xml:space="preserve">
+    <value>Источник</value>
+  </data>
+  <data name="JsonDataSource_DataSelector_Description" xml:space="preserve">
+    <value>Выражение селектора данных, которое будет использоваться для запроса и фильтрации данных JSON.</value>
+  </data>
+  <data name="JsonDataSource_DataSelector_Name" xml:space="preserve">
+    <value>Селектор данных</value>
   </data>
 </root>

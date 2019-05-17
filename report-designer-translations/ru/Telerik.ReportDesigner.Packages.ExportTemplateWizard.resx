@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="TemplateWizardMissingItemTitle" xml:space="preserve">
-    <value>[Отсутствует] </value>
+    <value>ОТСУТСТВУЕТ </value>
   </data>
   <data name="TemplateWizardMissingItemTooltip" xml:space="preserve">
-    <value>Отчет отсутствует. Если продолжить, то он не будет включен в шаблон.</value>
+    <value>Отчет отсутствует. Если вы продолжите его не будет включен в шаблон.</value>
   </data>
   <data name="TemplateWizardOptionPageTitle" xml:space="preserve">
-    <value>Выбор параметров шаблона</value>
+    <value>Выберите параметры шаблона</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplateDescription" xml:space="preserve">
     <value>Описание шаблона:</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplateName" xml:space="preserve">
-    <value>Имя шаблона:</value>
+    <value>Название шаблона:</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplatePreviewImage" xml:space="preserve">
-    <value>Предварительный просмотр изображения: (рекомендованный размер: 64x64)</value>
+    <value>Изображение предварительного просмотра: (восстановительный размер: 64 x64)</value>
   </data>
   <data name="TemplateWizardRequiredField" xml:space="preserve">
     <value>Обязательное поле</value>
@@ -142,47 +142,47 @@
     <value>Селектировать</value>
   </data>
   <data name="TemplateWizardSuccess" xml:space="preserve">
-    <value>Готовы. Шаблон успешно создан.</value>
+    <value>Готов. Шаблон успешно создан.</value>
   </data>
   <data name="TemplateWizardTemplateAlreadyExistsCaption" xml:space="preserve">
-    <value>Создать шаблон</value>
+    <value>Создание шаблона</value>
   </data>
   <data name="TemplateWizardTitle" xml:space="preserve">
-    <value>Мастер экспорта шаблонов</value>
+    <value>Экспорт шаблон Мастер</value>
   </data>
   <data name="TemplateWizardSelectReport" xml:space="preserve">
     <value>Выберите отчет</value>
   </data>
   <data name="TemplateWizardSelectSourceDescription" xml:space="preserve">
-    <value>Выберите источник шаблона для включения в шаблон. В список включаются только открытые документы.</value>
+    <value>Выберите источник шаблона для включения в шаблон. В список включены только открытые документы.</value>
   </data>
   <data name="TemplateWizardSelectSourceTitle" xml:space="preserve">
-    <value>Выбор источника шаблона</value>
+    <value>Выберите источник шаблона</value>
   </data>
   <data name="TemplateWizardUseCurrentReport" xml:space="preserve">
-    <value>Использовать текущий отчет</value>
+    <value>Использование текущего отчета</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TemplateWizardOptionPageDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="TemplateWizardTemplateBuildFailed" xml:space="preserve">
-    <value>Сбой при построении шаблона.</value>
+    <value>Построение шаблона не удалось.</value>
   </data>
   <data name="TemplateWizardTemplateAlreadyExistsText" xml:space="preserve">
-    <value>Шаблон с именем "{0}" уже существует.
-Заменить его?</value>
+    <value>Шаблон с именем ' {0} ' уже существует.
+Вы хотите, чтобы заменить его?</value>
   </data>
   <data name="TemplateWizardBrowseButtonText" xml:space="preserve">
     <value>Просмотреть</value>
   </data>
   <data name="TemplateWizardInvalidImage" xml:space="preserve">
-    <value>Недопустимое изображение.</value>
+    <value>Изображение не является действительным.</value>
   </data>
   <data name="TemplateWizardOptionsStartFieldMappingWizard" xml:space="preserve">
-    <value>Запустите мастер сопоставления полей каждый раз при открытии текущего шаблона.</value>
+    <value>Запустите мастер картирования полей каждый раз, когда будет открыт текущий шаблон.</value>
   </data>
   <data name="StartFieldMappingWizard_Title" xml:space="preserve">
-    <value>Мастер сопоставления полей</value>
+    <value>Мастер полевых отображения</value>
   </data>
 </root>

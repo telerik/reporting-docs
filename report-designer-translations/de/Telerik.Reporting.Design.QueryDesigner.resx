@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutoDetectModeWarningText" xml:space="preserve">
-    <value>Wenn Sie zur automatischen Erkennung wechseln, werden die von Ihnen vorgenommenen Änderungen verworfen!</value>
+    <value>Der Umstieg auf Auto Detect wird die von Ihnen vorgenommenen Änderungen verwerfen!</value>
   </data>
   <data name="Operator" xml:space="preserve">
     <value>Operator</value>
@@ -130,13 +130,13 @@
     <value>Warnung</value>
   </data>
   <data name="TitleRelatedFields" xml:space="preserve">
-    <value>Verwandte Felder</value>
+    <value>Weitere Bereiche</value>
   </data>
   <data name="AutoDetectButtonText" xml:space="preserve">
-    <value>Automatische Erkennung</value>
+    <value>Auto erkennt</value>
   </data>
   <data name="JoinType" xml:space="preserve">
-    <value>Verknüpfungstyp</value>
+    <value>Join Type</value>
   </data>
   <data name="LeftTable" xml:space="preserve">
     <value>Linke Tabelle</value>
@@ -145,7 +145,7 @@
     <value>Beziehungen</value>
   </data>
   <data name="StatusLoadingDbSchema" xml:space="preserve">
-    <value>Datenbankmetadaten werden geladen...</value>
+    <value>Laden Datenbank Metadaten ...</value>
   </data>
   <data name="Table" xml:space="preserve">
     <value>Tabelle</value>
@@ -157,43 +157,43 @@
     <value>Schema ist nicht verfügbar.</value>
   </data>
   <data name="LeftJoinField" xml:space="preserve">
-    <value>Linkes Verknüpfungsfeld</value>
+    <value>Linksaußen Feld</value>
   </data>
   <data name="RightTable" xml:space="preserve">
-    <value>Rechte Tabelle</value>
+    <value>Rechts</value>
   </data>
   <data name="TitleSelectedFields" xml:space="preserve">
     <value>Ausgewählte Felder</value>
   </data>
   <data name="RightJoinField" xml:space="preserve">
-    <value>Rechtes Verknüpfungsfeld</value>
+    <value>Richtiges Spielfeld</value>
   </data>
   <data name="TitleDatabaseView" xml:space="preserve">
     <value>Datenbankansicht</value>
   </data>
   <data name="DefaultSchema" xml:space="preserve">
-    <value>[Standard Schema]</value>
+    <value>[Standard-Schema]</value>
   </data>
   <data name="ColumnNameOperator" xml:space="preserve">
     <value>Operator</value>
   </data>
   <data name="WarningRelationIsNotComplete" xml:space="preserve">
-    <value>Eine Relation muss die linke und Rechte Tabelle angeben. Geben Sie beide Tabellen an, oder entfernen Sie diese Beziehung.</value>
+    <value>In einem Verhältnis müssen linke und rechte Tabelle angegeben werden. Geben Sie beide Tabellen an oder entfernen Sie diese Beziehung.</value>
   </data>
   <data name="ErrorUnrelatedTables" xml:space="preserve">
-    <value>Sie haben nicht verknüpfte Tabellen: </value>
+    <value>Sie haben nicht verwandte Tabellen: </value>
   </data>
   <data name="ButtonAddText" xml:space="preserve">
     <value>Hinzufügen</value>
   </data>
   <data name="ErrorEmptySelectClause" xml:space="preserve">
-    <value>Wählen Sie Tabellenspalten aus.</value>
+    <value>Bitte wählen Sie die Tabellenspalten.</value>
   </data>
   <data name="ErrorInvalidProperty" xml:space="preserve">
-    <value>Ungültige oder fehlende Eigenschaft</value>
+    <value>Ungültiges oder fehlendes Eigentum</value>
   </data>
   <data name="Alias" xml:space="preserve">
-    <value>Alias</value>
+    <value>alias</value>
   </data>
   <data name="FieldName" xml:space="preserve">
     <value>Feldname</value>
@@ -202,34 +202,34 @@
     <value>Filter</value>
   </data>
   <data name="ParameterName" xml:space="preserve">
-    <value>Parameter Name</value>
+    <value>Name Parameter</value>
   </data>
   <data name="PreviewValue" xml:space="preserve">
-    <value>Vorschauwert</value>
+    <value>Vorschau-Wert</value>
   </data>
   <data name="StateWarningCaption" xml:space="preserve">
-    <value>SQL-Abfrage-Designer-Zustand</value>
+    <value>SQL Query Designer State</value>
   </data>
   <data name="StateWarningText" xml:space="preserve">
-    <value>Die SQL-Abfrage wurde außerhalb des SQL-Abfrage-Designers bearbeitet, oder das DB-Schema wurde geändert. Durch die Verwendung des Abfrage-Designers werden die SQL-Abfrage Änderungen verworfen.</value>
+    <value>Die SQL-Abfrage wurde außerhalb des SQL-Query-Designers oder des DB-Schemas geändert. Mit dem Query-Designer werden die SQL-Abfrage-Änderungen verworfen.</value>
   </data>
   <data name="StateRestoringErrorText" xml:space="preserve">
-    <value>Beim Wiederherstellen des gespeicherten Zustands ist ein Fehler aufgetreten.</value>
+    <value>Bei der Wiederherstellung des gespeicherten Zustandes ist ein Fehler aufgetreten.</value>
   </data>
   <data name="StateRestoringErrorCaption" xml:space="preserve">
-    <value>Wiederherstellen des Statusfehlers</value>
+    <value>Staatsfehler wiederherstellen</value>
   </data>
   <data name="JoinTypeIsNotSelected" xml:space="preserve">
-    <value>Verknüpfungstyp ist nicht ausgewählt.</value>
+    <value>Der Join-Typ ist nicht ausgewählt.</value>
   </data>
   <data name="Parameters_Error_ProviderNamedParameters" xml:space="preserve">
     <value>Der ausgewählte Anbieter unterstützt keine benannten Parameter.</value>
   </data>
   <data name="Parameter_Error_PreviewValueIsRequired" xml:space="preserve">
-    <value>Filter vorschauwert erforderlich</value>
+    <value>Filtervorschau-Wert ist erforderlich</value>
   </data>
   <data name="Filter_Error_FieldNameIsRequired" xml:space="preserve">
-    <value>Der Name des Filter Felds ist erforderlich.</value>
+    <value>Filterfeldname ist erforderlich.</value>
   </data>
   <data name="Relations_Error_ConditionIsRequired" xml:space="preserve">
     <value>Beziehungsfelder sind erforderlich.</value>

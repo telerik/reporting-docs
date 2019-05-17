@@ -117,59 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="WorkbenchLoader_LanguageStrings_Updated" xml:space="preserve">
-    <value>Sprachzeichenfolgen wurden aktualisiert. Diese Änderung erfordert einen Neustart. Die Anwendung jetzt neu starten?</value>
-  </data>
-  <data name="WorkbenchLoader_CannotConnectToStartedInstance_Error" xml:space="preserve">
-    <value>Es kann keine Verbindung mit einer bereits gestarteten Instanz von {0} hergestellt werden. Schließen Sie die anderen ausgeführten Programmkopien, oder aktivieren Sie die Option, mit der mehrere Instanzen gestartet werden können.</value>
-  </data>
   <data name="DocumentEditorService_BeginEdit_CannotReadFile" xml:space="preserve">
-    <value>Не удается прочитать файл: {0}</value>
+    <value>Не удается прочесть файл: {0}</value>
   </data>
   <data name="DocumentEditorService_BeginEdit_UnsupportedFileType" xml:space="preserve">
     <value>Неподдерживаемый тип файла: {0}</value>
   </data>
   <data name="DocumentEditorService_ShowDocument_DocumentAlreadyOpened" xml:space="preserve">
-    <value>Документ "{0}" уже открыт.</value>
+    <value>Документ ' {0} ' уже открыт.</value>
   </data>
   <data name="DocumentManager_CanWrite_Error" xml:space="preserve">
-    <value>Не удается записать в </value>
+    <value>Не могу писать, чтобы </value>
   </data>
   <data name="DocumentManager_GetDocumentOrThrowIfMissing_Error" xml:space="preserve">
     <value>Документ не найден: </value>
   </data>
   <data name="DocumentManager_LoadData_DetectedChangesNotSavedProperly" xml:space="preserve">
-    <value>{0} обнаружил, что есть изменения, которые не были сохранены должным образом при последнем изменении следующего файла:</value>
+    <value>Teh? {0} обнаружено, что есть изменения, которые не были сохранены должным образом в последний раз, когда был изменен следующий файл:</value>
   </data>
   <data name="DocumentManager_LoadData_DocumentAutoRecover" xml:space="preserve">
-    <value>Автоматическое восстановление документов</value>
+    <value>Документ автоматическое восстановление</value>
   </data>
   <data name="DocumentManager_LoadData_RecoverChanges" xml:space="preserve">
     <value>Вы хотите восстановить изменения?</value>
   </data>
   <data name="DocumentManager_LoadData_RecoverChangesCancel" xml:space="preserve">
-    <value>• "нет" вернет документ к последнему сохраненному состоянию. </value>
+    <value>? ? Нет? возвратят документ к последнему сохраненным состоянию.?</value>
   </data>
   <data name="DocumentManager_LoadData_RecoverChangesConfirm" xml:space="preserve">
-    <value>• "Yes" восстановит несохраненные изменения. Впоследствии можно отменить изменения, не сохранив документ.</value>
+    <value>? ? Да? восстановят несохраненные изменения.? Позже вы можете отбросить изменения, не сохраняя документ.</value>
   </data>
   <data name="DocumentManager_NotifyDocumentChangedFromOutside_Reload" xml:space="preserve">
     <value>Вы хотите перезагрузить его?</value>
   </data>
   <data name="DocumentManager_NotifyDocumentChangedFromOutside_ReloadAndLoseChanges" xml:space="preserve">
-    <value>Вы хотите перезагрузить его и потерять изменения, сделанные в редакторе исходного кода?</value>
+    <value>Вы хотите перезагрузить его и потерять изменения, сделанные в исходном редакторе?</value>
   </data>
   <data name="DocumentManager_NotifyDocumentChangedFromOutside_Warning" xml:space="preserve">
-    <value>Этот файл был изменен за пределами редактора исходного кода.</value>
+    <value>Этот файл был изменен за пределами исходного редактора.</value>
   </data>
   <data name="DocumentManager_RegisterDocument_DocumentIsAlreadyOpened" xml:space="preserve">
-    <value>Документ "{0}" уже открыт.</value>
+    <value>Документ ' {0} ' уже открыт.</value>
   </data>
   <data name="DocumentManager_SaveToDifferentFile_WriteProtectedFileCaption" xml:space="preserve">
-    <value>Сохранение файла, защищенного от записи</value>
+    <value>Сохранить файл защищенный от записи</value>
   </data>
   <data name="DocumentManager_SaveToDifferentFile_WriteProtectedFileMsg" xml:space="preserve">
-    <value>Невозможно сохранить файл "{0}", поскольку он заблокирован другим пользователем. 
+    <value>Файл ' {0} ' не может быть сохранен, поскольку он заблокирован другим пользователем. 
 
 Вы хотите сохранить файл в другом месте?</value>
   </data>
@@ -177,7 +171,7 @@
     <value>Сохранить ' {0} '?</value>
   </data>
   <data name="EditorFactoryManager_BeginEdit_Error" xml:space="preserve">
-    <value>Ошибка при открытии файла
+    <value>Файл открытия ошибок
 {0}</value>
   </data>
   <data name="FileOpenService_BuildChooseFileFilter_AllFiles" xml:space="preserve">
@@ -187,13 +181,13 @@
     <value>Все поддерживаемые ({0}) | {1}</value>
   </data>
   <data name="FileSaveService_CreateFile_Caption" xml:space="preserve">
-    <value>Создать файл</value>
+    <value>Создание файла</value>
   </data>
   <data name="FileSaveService_SaveAsFile_Caption" xml:space="preserve">
-    <value>Сохранить файл как</value>
+    <value>Сохранить файл, как</value>
   </data>
   <data name="FileService_IsValidDestinationPath_RemoveInvalidRecentFolder" xml:space="preserve">
-    <value>Папка "{0}" не существует. Удалить его из списка последних папок?</value>
+    <value>Папка ' {0} ' не существует. Вы хотите удалить его из списка недавних папок?</value>
   </data>
   <data name="ItemManager_CreateFile_Error" xml:space="preserve">
     <value>Не удается создать файл {0}</value>
@@ -202,18 +196,24 @@
     <value>Недопустимое имя файла: {0}</value>
   </data>
   <data name="ItemManager_OpenRecentItem_RemoveInvalidRecentDocument" xml:space="preserve">
-    <value>Не удалось открыть файл "{0}". Удалить его из последнего списка?</value>
+    <value>Файл ' {0} ' не может быть открыт. Вы хотите удалить его из недавнего списка?</value>
   </data>
   <data name="WorkbenchHost_RunCore_AppResourceMergeError" xml:space="preserve">
-    <value>Произошла ошибка при слиянии словарей ресурсов. Убедитесь, что сборки с элементами управления Telerik для WPF не находятся в том же каталоге, что и исполняемый файл приложения.</value>
+    <value>При слиянии словарей ресурса произошла ошибка. Убедитесь, что никакие сборки с элементами управления Telerik для WPF не находятся в том же каталоге, что и исполняемый файл.</value>
   </data>
   <data name="WorkbenchHost_RunCore_ErrorRestarting" xml:space="preserve">
-    <value>Произошла ошибка. Перезапуск...</value>
+    <value>Произошла ошибка. Перезагрузки...</value>
   </data>
   <data name="WorkbenchHost_RunCore_FatalErrorClosing" xml:space="preserve">
-    <value>Неустранимая ошибка в Workbench. Теперь закрытие...</value>
+    <value>Фатальная ошибка на рабочем месте. Теперь закрытие...</value>
   </data>
   <data name="WorkbenchLoader_BeginLoad_Error" xml:space="preserve">
-    <value>Произошла ошибка при загрузке инструментального средства конструктора отчетов</value>
+    <value>При загрузке верстака отчета дизайнера произошла ошибка</value>
+  </data>
+  <data name="WorkbenchLoader_CannotConnectToStartedInstance_Error" xml:space="preserve">
+    <value>Не удается подключиться к уже начатому экземпляре {0}. Пожалуйста, закройте другой запуск программы копии или включить опцию, которая позволяет начать несколько экземпляров.</value>
+  </data>
+  <data name="WorkbenchLoader_LanguageStrings_Updated" xml:space="preserve">
+    <value>Строки языка обновлены. Это изменение требует перезагрузки. Перезапустить приложение сейчас?</value>
   </data>
 </root>

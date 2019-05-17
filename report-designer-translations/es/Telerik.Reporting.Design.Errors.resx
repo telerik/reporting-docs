@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UnitParseNoDigits" xml:space="preserve">
-    <value>{0} no se puede analizar como una unidad porque no contiene valores numéricos. Los ejemplos de las secuencias válidas de la unidad son 1PT y. 5in.</value>
+    <value>{0} no se puede analizar como una unidad porque no contiene valores numéricos. Ejemplos de cadenas de unidades válidas son 1PT y. 5in.</value>
   </data>
   <data name="UnitParseNoUnit" xml:space="preserve">
-    <value>{0} no contiene una especificación de unidad. Los ejemplos de las secuencias válidas de la unidad son 1PT y. 5in.</value>
+    <value>{0} no contiene una especificación de unidad. Ejemplos de cadenas de unidades válidas son 1PT y. 5in.</value>
   </data>
   <data name="UnitParseNumericPart" xml:space="preserve">
     <value>La parte numérica de {0} no se puede analizar como una unidad de tipo {2}.</value>
@@ -133,28 +133,28 @@
     <value>{0} debe ser del tipo {1}.</value>
   </data>
   <data name="InvalidViewTechnologyType" xml:space="preserve">
-    <value>Sólo se admite la tecnología de vista de formularios Windows Forms.</value>
+    <value>Solo se admite la tecnología de vista de Windows Forms.</value>
   </data>
   <data name="InvalidRootComponentType" xml:space="preserve">
     <value>El componente raíz no es un informe.</value>
   </data>
   <data name="ParentlessReportItem" xml:space="preserve">
-    <value>Elemento de informe padre es NULL.</value>
+    <value>El elemento primario del informe es nulo.</value>
   </data>
   <data name="InvalidGridSize" xml:space="preserve">
     <value>Tamaño de cuadrícula no válido.</value>
   </data>
   <data name="CommandSetError" xml:space="preserve">
     <value>Se ha producido un error al procesar este comando.
-{0}</value>
+{ 0 }</value>
   </data>
   <data name="DeleteGroupInsteadOfSection" xml:space="preserve">
     <value>Debe eliminar el grupo ' {0} ' para eliminar la sección ' {1} '.</value>
   </data>
   <data name="DataSourceAlreadyAssigned" xml:space="preserve">
-    <value>Sólo se permiten los campos del origen de datos actual ' {0} '.</value>
+    <value>Solo se permiten los campos del origen de datos actual ' {0} '.</value>
   </data>
   <data name="ItemsCannotBeAddedInLocalizationMode" xml:space="preserve">
-    <value>Los elementos no se pueden agregar en el modo de localización. Establezca la propiedad Language (predeterminada) para agregar elementos.</value>
+    <value>Los elementos no se pueden agregar en el modo de localización. Establezca la propiedad Language del informe en (predeterminado) para agregar elementos.</value>
   </data>
 </root>

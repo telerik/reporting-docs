@@ -118,124 +118,124 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BandReportWizardDescription" xml:space="preserve">
-    <value>Руководство по созданию отчета группы.</value>
+    <value>Проведет вас через создание отчета группы.</value>
   </data>
   <data name="BandReportWizardName" xml:space="preserve">
-    <value>Мастер ленточных отчетов</value>
+    <value>Band доклад мастера</value>
   </data>
   <data name="BandWizard_AdjustItemsOption" xml:space="preserve">
-    <value>Настройка элементов отчета в соответствии с доступным пространством</value>
+    <value>Настройка элементов отчета с учетом доступного пространства</value>
   </data>
   <data name="BandWizard_AvailableLayouts" xml:space="preserve">
     <value>Доступные макеты:</value>
   </data>
   <data name="BandWizard_Builder_GrandTotal" xml:space="preserve">
-    <value>Всего:</value>
+    <value>Общий итог:</value>
   </data>
   <data name="BandWizard_Builder_SubTotal" xml:space="preserve">
-    <value>Промежуточный итог:</value>
+    <value>Суб-Итого:</value>
   </data>
   <data name="BandWizard_GenerateTotalsOption" xml:space="preserve">
-    <value>Создать промежуточные итоги и общие итоги</value>
+    <value>Генерировать суб-итоговые и грандиозные итоги</value>
   </data>
   <data name="BandWizard_PageSettings" xml:space="preserve">
-    <value>Параметры страницы</value>
+    <value>Настройки страницы</value>
   </data>
   <data name="BlankReportWizardDescription" xml:space="preserve">
-    <value>Создает пустой отчет, чтобы можно было начать построение с нуля.</value>
+    <value>Создает пустой отчет, чтобы вы могли начать строить его с нуля.</value>
   </data>
   <data name="BlankReportWizardName" xml:space="preserve">
     <value>Пустой отчет</value>
   </data>
   <data name="BuildReportTransactionText" xml:space="preserve">
-    <value>Отчет о построении</value>
+    <value>Отчет о сборки</value>
   </data>
   <data name="ChooseReportLayout" xml:space="preserve">
-    <value>Выбор макета отчета</value>
+    <value>Выбрать макет отчета</value>
   </data>
   <data name="ChoroplethReportWizardDescription" xml:space="preserve">
-    <value>Отображает данные отчета в виде карты с тематически окрашенными областями.</value>
+    <value>Отображает данные отчета как карту с тематически окрашенными областями.</value>
   </data>
   <data name="ChoroplethReportWizardName" xml:space="preserve">
-    <value>Мастер Картограмма</value>
+    <value>Чороплетый волшебник</value>
   </data>
   <data name="CrosstabReportWizardDescription" xml:space="preserve">
-    <value>Руководство по созданию перекрестного отчета.</value>
+    <value>Проведет вас через создание отчета Кросудара.</value>
   </data>
   <data name="CrosstabReportWizardName" xml:space="preserve">
-    <value>Перекрестный мастер</value>
+    <value>Мастер перекрестного удара</value>
   </data>
   <data name="DataSourceFieldMappingWizardName" xml:space="preserve">
-    <value>Мастер сопоставления полей источника данных</value>
+    <value>Мастер по картографированию полей данных</value>
   </data>
   <data name="DataSourceWizardTransactionName" xml:space="preserve">
     <value>Мастер источника данных</value>
   </data>
   <data name="FieldMappings_DataSourceFields" xml:space="preserve">
-    <value>Поля источника данных</value>
+    <value>Поля исходных данных</value>
   </data>
   <data name="FieldMappings_TemplateFields" xml:space="preserve">
-    <value>Поля шаблона</value>
+    <value>Поля шаблонов</value>
   </data>
   <data name="GraphReportWizardDescription" xml:space="preserve">
-    <value>Руководство по созданию различных диаграмм.</value>
+    <value>Направляет ваш через создание различных диаграмм.</value>
   </data>
   <data name="GraphReportWizardName" xml:space="preserve">
-    <value>Мастер диаграмм</value>
+    <value>Мастер графики</value>
   </data>
   <data name="ImportReportWizardDescription" xml:space="preserve">
-    <value>Запускает мастер импорта отчетов для преобразования отчета из другого формата отчетов.</value>
+    <value>Запускает мастер отчета по импорту для преобразования отчета из другого формата отчета.</value>
   </data>
   <data name="ImportReportWizardName" xml:space="preserve">
-    <value>Мастер импорта отчетов</value>
+    <value>Мастер отчета о импорте</value>
   </data>
   <data name="InvoiceReportWizardDescription" xml:space="preserve">
-    <value>Руководство по созданию отчета по накладной.</value>
+    <value>Проведет вас через создание отчета по накладной.</value>
   </data>
   <data name="InvoiceReportWizardName" xml:space="preserve">
-    <value>Мастер отчетов по накладным</value>
+    <value>Мастер отчета по накладной</value>
   </data>
   <data name="LabelReportWizardDescription" xml:space="preserve">
-    <value>Руководство по созданию отчета по метке.</value>
+    <value>Проведет вас через создание отчета о этикетке.</value>
   </data>
   <data name="LabelReportWizardName" xml:space="preserve">
-    <value>Мастер создания отчетов по меткам</value>
+    <value>Мастер доклад этикетке</value>
   </data>
   <data name="LeftAlignedLayoutDesc" xml:space="preserve">
-    <value>Выровненный по левому краю макет размещает элементы в каждом разделе, начиная с начала раздела.</value>
+    <value>Макет слева выровнен помещает элементы в каждом разделе, начиная от начала раздела.</value>
   </data>
   <data name="LeftAlignedLayoutName" xml:space="preserve">
-    <value>Выравнивание по левому краю</value>
+    <value>Левая выровненные</value>
   </data>
   <data name="MapReportWizardDescription" xml:space="preserve">
-    <value>Отображает данные отчета относительно географического фона.</value>
+    <value>Отображает данные отчета на географическом фоне.</value>
   </data>
   <data name="MapReportWizardName" xml:space="preserve">
-    <value>Мастер карт</value>
+    <value>Мастер карты</value>
   </data>
   <data name="OutlineLayoutDesc" xml:space="preserve">
-    <value>Макет структуры упорядочивает элементы слева направо с элементами каждой группы, идущими дальше вправо по фиксированному смещению.</value>
+    <value>Схема расположения схемы организует элементы слева направо с элементами каждой группы, идя дальше вправо по фиксированное смещение.</value>
   </data>
   <data name="OutlineLayoutName" xml:space="preserve">
-    <value>Структуры</value>
+    <value>Контур</value>
   </data>
   <data name="ProductCatalogReportWizardDescription" xml:space="preserve">
-    <value>Руководство по созданию отчета по каталогу продуктов</value>
+    <value>Проведет вас через создание отчета по каталогу продуктов</value>
   </data>
   <data name="ProductCatalogReportWizardName" xml:space="preserve">
-    <value>Мастер отчетов по каталогу продуктов</value>
+    <value>Каталог продуктов доклад мастера</value>
   </data>
   <data name="ReportWizardTransactionName" xml:space="preserve">
-    <value>Инициализация нового отчета группы.</value>
+    <value>Инициализировать новый отчет группы.</value>
   </data>
   <data name="SteppedLayoutDesc" xml:space="preserve">
-    <value>Ступенчатый макет упорядочивает элементы в столбцах, чтобы они не перекрывались по вертикали.</value>
+    <value>Ступенно разметка организует элементы в столбцах так, чтобы они не перекрываются вертикально.</value>
   </data>
   <data name="SteppedLayoutName" xml:space="preserve">
-    <value>Вышел</value>
+    <value>Ступил</value>
   </data>
   <data name="TableReportWizardDescription" xml:space="preserve">
-    <value>Руководство по созданию табличного отчета.</value>
+    <value>Проведет вас через создание отчета таблицы.</value>
   </data>
   <data name="TableReportWizardName" xml:space="preserve">
     <value>Мастер таблиц</value>

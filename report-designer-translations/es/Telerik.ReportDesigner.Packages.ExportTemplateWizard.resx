@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="TemplateWizardMissingItemTitle" xml:space="preserve">
-    <value>[Falta] </value>
+    <value>FALTA </value>
   </data>
   <data name="TemplateWizardMissingItemTooltip" xml:space="preserve">
     <value>Falta el informe. Si continúa, no se incluirá en la plantilla.</value>
   </data>
   <data name="TemplateWizardOptionPageTitle" xml:space="preserve">
-    <value>Seleccionar opciones de plantilla</value>
+    <value>Seleccione opciones de plantilla</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplateDescription" xml:space="preserve">
     <value>Descripción de la plantilla:</value>
@@ -133,7 +133,7 @@
     <value>Nombre de la plantilla:</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplatePreviewImage" xml:space="preserve">
-    <value>Vista previa de la imagen: (tamaño recomendado: 64x64)</value>
+    <value>Imagen de vista previa: (tamaño recomendado: 64x64)</value>
   </data>
   <data name="TemplateWizardRequiredField" xml:space="preserve">
     <value>Campo obligatorio</value>
@@ -142,7 +142,7 @@
     <value>Seleccionar</value>
   </data>
   <data name="TemplateWizardSuccess" xml:space="preserve">
-    <value>Listo. La plantilla se crea correctamente.</value>
+    <value>preparado. La plantilla se ha creado correctamente.</value>
   </data>
   <data name="TemplateWizardTemplateAlreadyExistsCaption" xml:space="preserve">
     <value>Crear plantilla</value>
@@ -154,23 +154,24 @@
     <value>Seleccionar reporte</value>
   </data>
   <data name="TemplateWizardSelectSourceDescription" xml:space="preserve">
-    <value>Seleccione fuente de plantilla que se incluirá en la plantilla. Sólo los documentos abiertos se incluyen en la lista.</value>
+    <value>Seleccione el origen de la plantilla para incluirlo en la plantilla. Solo los documentos abiertos se incluyen en la lista.</value>
   </data>
   <data name="TemplateWizardSelectSourceTitle" xml:space="preserve">
-    <value>Seleccionar fuente de plantilla</value>
+    <value>Seleccione fuente de plantilla</value>
   </data>
   <data name="TemplateWizardUseCurrentReport" xml:space="preserve">
-    <value>Usar informe actual</value>
+    <value>Utilice el informe actual</value>
   </data>
-  <data name="TemplateWizardOptionPageDescription" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TemplateWizardOptionPageDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="TemplateWizardTemplateBuildFailed" xml:space="preserve">
-    <value>Error en la compilación de plantillas.</value>
+    <value>Error al compilar la plantilla.</value>
   </data>
   <data name="TemplateWizardTemplateAlreadyExistsText" xml:space="preserve">
-    <value>Ya existe la plantilla con el nombre ' {0} '.
-¿Desea reemplazarlo?</value>
+    <value>Ya existe una plantilla con el nombre ' {0} '.
+¿Quieres reemplazarlo?</value>
   </data>
   <data name="TemplateWizardBrowseButtonText" xml:space="preserve">
     <value>Navegar</value>
@@ -179,7 +180,7 @@
     <value>La imagen no es válida.</value>
   </data>
   <data name="TemplateWizardOptionsStartFieldMappingWizard" xml:space="preserve">
-    <value>Inicie el Asistente para asignación de campos cada vez que se abra la plantilla actual.</value>
+    <value>Inicie el Asistente de asignación de campos cada vez que se abra la plantilla actual.</value>
   </data>
   <data name="StartFieldMappingWizard_Title" xml:space="preserve">
     <value>Asistente para asignaciones de campos</value>

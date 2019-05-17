@@ -118,39 +118,39 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="WarnCancelImportInProgress" xml:space="preserve">
-    <value>"importar en curso. \ r \ n ¿está seguro de que desea cancelar la operación?"</value>
+    <value>"Importar en progreso. \ r \ n ¿está seguro de que desea cancelar la operación?"</value>
   </data>
   <data name="Log_Error" xml:space="preserve">
-    <value>Error</value>
+    <value>error</value>
   </data>
   <data name="Log_Info" xml:space="preserve">
-    <value>Información</value>
+    <value>info</value>
   </data>
   <data name="Log_Warning" xml:space="preserve">
-    <value>ADVERTENCIA</value>
+    <value>aviso</value>
   </data>
   <data name="FilePage_LocationTextBox_PathError" xml:space="preserve">
-    <value>La ruta no está en el formato correcto</value>
+    <value>Path no está en formato correcto</value>
   </data>
   <data name="FilePage_ErrorMessageBox_Caption" xml:space="preserve">
     <value>Error</value>
   </data>
   <data name="FilePage_SaveDialogFilter" xml:space="preserve">
-    <value>Archivos de informe Telerik (* {0}) | * {0} | Todos los archivos (*. *) | *. *</value>
+    <value>Archivos de informe de Telerik (* {0}) | * {0} | Todos los archivos (*.*) | *.*</value>
   </data>
   <data name="FilePage_CellValidating_AlreadyExist" xml:space="preserve">
-    <value>El archivo especificado ya existe y es de sólo lectura.
+    <value>El archivo especificado ya existe y es de solo lectura.
 Por favor, elija un nombre de archivo diferente.</value>
   </data>
   <data name="FilePage_CellValidating_Replace" xml:space="preserve">
     <value>{0} ya existe.
-¿Desea reemplazarlo?</value>
+¿Quieres reemplazarlo?</value>
   </data>
   <data name="ImportReportWizard_Caption" xml:space="preserve">
-    <value>Asistente para informes de importación</value>
+    <value>Asistente para importar informes</value>
   </data>
   <data name="NetReportLibraryOpenHandler_Filter" xml:space="preserve">
-    <value>BIblioteca de informes .net (* {0}) | * {0}</value>
+    <value>Biblioteca de informes de .NET (* {0}) | * {0}</value>
   </data>
   <data name="ProjectPage_NoReportsAvailable" xml:space="preserve">
     <value>No hay informes disponibles</value>
@@ -162,7 +162,7 @@ Por favor, elija un nombre de archivo diferente.</value>
     <value>No hay informes disponibles</value>
   </data>
   <data name="ReportTreeView_EmptyNamespace" xml:space="preserve">
-    <value>[espacio de nombres vacío]</value>
+    <value>[Espacio de nombres vacío]</value>
   </data>
   <data name="ReportTreeView_Node_Uses" xml:space="preserve">
     <value>Utiliza</value>
@@ -171,31 +171,31 @@ Por favor, elija un nombre de archivo diferente.</value>
     <value>Usado por</value>
   </data>
   <data name="ValidateOutputFileForReport_ErrorEmpty" xml:space="preserve">
-    <value>El nombre del archivo no puede estar vacío</value>
+    <value>El nombre de archivo no puede estar vacío</value>
   </data>
   <data name="ValidateOutputFileForReport_ErrorAlreadyExist" xml:space="preserve">
-    <value>El nombre del archivo ya existe en la lista de informes pendientes.</value>
+    <value>El nombre de archivo ya existe en la lista de informes pendientes.</value>
   </data>
   <data name="Log_FileName" xml:space="preserve">
-    <value>Import Report_ {0: yyyy'-'MM'-'dd'T'HHmmss}. log</value>
+    <value>Import Report_ {0: yyyy'-' MM'-' Dd't'hhmmss}. log</value>
   </data>
   <data name="Log_Warning_CancelExport" xml:space="preserve">
     <value>Importación cancelada por el usuario</value>
   </data>
   <data name="Log_Info_Paused" xml:space="preserve">
-    <value>Importación en pausa</value>
+    <value>Importar en pausa</value>
   </data>
   <data name="Log_Info_Resumed" xml:space="preserve">
-    <value>Importación reanudada</value>
+    <value>La importación reanudó</value>
   </data>
   <data name="Log_Info_Started" xml:space="preserve">
     <value>Importación iniciada</value>
   </data>
   <data name="Log_Info_Completed" xml:space="preserve">
-    <value>Importación completa</value>
+    <value>Importe completo</value>
   </data>
   <data name="Log_Error_Failed" xml:space="preserve">
-    <value>Error de importación</value>
+    <value>La importación falló</value>
   </data>
   <data name="Log_Info_Completed_Report" xml:space="preserve">
     <value>Informe: {0}</value>
@@ -207,7 +207,7 @@ Por favor, elija un nombre de archivo diferente.</value>
     <value>Error: {0}</value>
   </data>
   <data name="Log_Info_Started_Exporting" xml:space="preserve">
-    <value>Exportar informe</value>
+    <value>Exportar el informe</value>
   </data>
   <data name="Log_Info_Started_Report" xml:space="preserve">
     <value>Informe: {0}</value>

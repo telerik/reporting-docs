@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PropertyList_NOTE" xml:space="preserve">
-    <value>Note:</value>
+    <value>note:</value>
   </data>
   <data name="MenuItem_FallBack_Text" xml:space="preserve">
     <value>(aucun)</value>
   </data>
   <data name="ReportParameterEditor_Caption" xml:space="preserve">
-    <value>Éditeur de paramètres de rapport</value>
+    <value>Editeur de paramètres de rapport</value>
   </data>
   <data name="StyleRuleEditor_Caption" xml:space="preserve">
     <value>Éditeur de règles de style</value>
@@ -132,7 +132,8 @@
   <data name="MapWizard_SetupShapesSourcePage_FilesFilter_Shape" xml:space="preserve">
     <value>Fichiers Shape</value>
   </data>
-  <data name="MapWizard_SetupShapesSourcePage_FilesFilter_All" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MapWizard_SetupShapesSourcePage_FilesFilter_All" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="Wizards_ChooseDataSource_AvailableDataSources" xml:space="preserve">
@@ -148,7 +149,7 @@
     <value>Page :</value>
   </data>
   <data name="StyleRulesEditor_Export_Text" xml:space="preserve">
-    <value>&amp;Exportation</value>
+    <value>&amp;exporter</value>
   </data>
   <data name="CsvDataSourceWizard_FileDialogFilter_AllFiles" xml:space="preserve">
     <value>Tous les fichiers</value>
@@ -159,6 +160,9 @@
   <data name="CsvDataSourceWizard_FileDialogFilter_TextFiles" xml:space="preserve">
     <value>Fichiers texte</value>
   </data>
+  <data name="JsonDataSourceWizard_FileDialogFilter_JsonFiles" xml:space="preserve">
+    <value>Fichiers JSON</value>
+  </data>
   <data name="Wizard_ChooseDataSource_Description" xml:space="preserve">
     <value>Choisissez la source de données à laquelle vous souhaitez vous connecter ou créez-en une nouvelle.</value>
   </data>
@@ -166,7 +170,7 @@
     <value>Choisir la source de données</value>
   </data>
   <data name="NoDataSource" xml:space="preserve">
-    <value>(aucune source de données)</value>
+    <value>(Aucune source de données)</value>
   </data>
   <data name="PageSettings_Margins" xml:space="preserve">
     <value>Marges</value>
@@ -184,7 +188,7 @@
     <value>Droite</value>
   </data>
   <data name="PageSettings_Paper" xml:space="preserve">
-    <value>Papier</value>
+    <value>papier</value>
   </data>
   <data name="PageSettings_Height" xml:space="preserve">
     <value>Hauteur</value>
@@ -193,7 +197,7 @@
     <value>Largeur</value>
   </data>
   <data name="PageSettings_Size" xml:space="preserve">
-    <value>Grandeur</value>
+    <value>Taille</value>
   </data>
   <data name="PageSettings_PrintOnContinuousPaper" xml:space="preserve">
     <value>Impression sur papier continu (rouleau)</value>
@@ -205,7 +209,7 @@
     <value>Paysage</value>
   </data>
   <data name="Button_OK" xml:space="preserve">
-    <value>&amp;Bien</value>
+    <value>&amp;D'accord</value>
   </data>
   <data name="Button_Cancel" xml:space="preserve">
     <value>&amp;Annuler</value>
@@ -226,13 +230,13 @@
     <value>Veuillez fournir un sélecteur de style pour la règle de style.</value>
   </data>
   <data name="ExpressionBuilder_Text" xml:space="preserve">
-    <value>Modifier l'expression</value>
+    <value>Modifier l’expression</value>
   </data>
   <data name="PropertyList_Button_New" xml:space="preserve">
     <value>&amp;Nouveau</value>
   </data>
   <data name="PropertyList_Button_Delete" xml:space="preserve">
-    <value>&amp;Supprimer</value>
+    <value>&amp;supprimer</value>
   </data>
   <data name="PropertyList_Button_MoveUp" xml:space="preserve">
     <value>Déplacer vers le haut</value>

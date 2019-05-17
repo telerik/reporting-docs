@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="TemplateWizardMissingItemTitle" xml:space="preserve">
-    <value>[Manque] </value>
+    <value>MANQUE </value>
   </data>
   <data name="TemplateWizardMissingItemTooltip" xml:space="preserve">
     <value>Le rapport est manquant. Si vous continuez, il ne sera pas inclus dans le modèle.</value>
   </data>
   <data name="TemplateWizardOptionPageTitle" xml:space="preserve">
-    <value>Sélectionner les options du modèle</value>
+    <value>Sélectionnez les options de modèle</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplateDescription" xml:space="preserve">
-    <value>Template Description:</value>
+    <value>Description du modèle:</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplateName" xml:space="preserve">
     <value>Nom du modèle:</value>
   </data>
   <data name="TemplateWizardOptionsPageTemplatePreviewImage" xml:space="preserve">
-    <value>Preview image: (taille recommandé: 64x64)</value>
+    <value>Image de prévisualisation: (taille Recomended: 64x64)</value>
   </data>
   <data name="TemplateWizardRequiredField" xml:space="preserve">
     <value>Champ obligatoire</value>
@@ -142,7 +142,7 @@
     <value>Sélectionner</value>
   </data>
   <data name="TemplateWizardSuccess" xml:space="preserve">
-    <value>Prêt. Le modèle est créé avec succès.</value>
+    <value>préparer. Le modèle est créé avec succès.</value>
   </data>
   <data name="TemplateWizardTemplateAlreadyExistsCaption" xml:space="preserve">
     <value>Créer un modèle</value>
@@ -154,7 +154,7 @@
     <value>Sélectionner un rapport</value>
   </data>
   <data name="TemplateWizardSelectSourceDescription" xml:space="preserve">
-    <value>Sélectionnez la source du modèle à inclure dans le modèle. Seuls les documents ouverts sont inclus dans la liste.</value>
+    <value>Sélectionnez la source de modèle à inclure dans le modèle. Seuls les documents ouverts sont inclus dans la liste.</value>
   </data>
   <data name="TemplateWizardSelectSourceTitle" xml:space="preserve">
     <value>Sélectionner la source du modèle</value>
@@ -162,24 +162,25 @@
   <data name="TemplateWizardUseCurrentReport" xml:space="preserve">
     <value>Utiliser le rapport actuel</value>
   </data>
-  <data name="TemplateWizardOptionPageDescription" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TemplateWizardOptionPageDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
   <data name="TemplateWizardTemplateBuildFailed" xml:space="preserve">
-    <value>Échec de la génération du modèle.</value>
+    <value>Échec de la génération de modèle.</value>
   </data>
   <data name="TemplateWizardTemplateAlreadyExistsText" xml:space="preserve">
-    <value>Le modèle avec le nom'{0}'existe déjà.
+    <value>Le modèle avec le nom' {0} 'existe déjà.
 Voulez-vous le remplacer?</value>
   </data>
   <data name="TemplateWizardBrowseButtonText" xml:space="preserve">
     <value>Parcourir</value>
   </data>
   <data name="TemplateWizardInvalidImage" xml:space="preserve">
-    <value>L'image n'est pas valide.</value>
+    <value>L’image n’est pas valide.</value>
   </data>
   <data name="TemplateWizardOptionsStartFieldMappingWizard" xml:space="preserve">
-    <value>Démarrez l'Assistant mappage de champs chaque fois que le modèle actuel est ouvert.</value>
+    <value>Démarrez l’Assistant de mappage de champ chaque fois que le modèle actuel est ouvert.</value>
   </data>
   <data name="StartFieldMappingWizard_Title" xml:space="preserve">
     <value>Assistant mappages de champs</value>

@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CrosstabWizard_Title" xml:space="preserve">
-    <value>Assistant analyse croisée</value>
+    <value>Assistant de tableau croisé</value>
   </data>
   <data name="ArrangeCrosstabPage_AggregateRequired_Warning" xml:space="preserve">
-    <value>Lorsqu'un ou plusieurs groupes de colonnes sont spécifiés,
-vous devez spécifier une fonction d'agrégation appropriée
-pour chaque valeur de détail de l'analyse croisée.</value>
+    <value>Lorsqu’il y a un ou plusieurs groupes de colonnes spécifiés,
+vous devez spécifier une fonction d’agrégation appropriée
+pour chaque valeur de détail du tableau croisé.</value>
   </data>
   <data name="ArrangeButtons_Add_Text" xml:space="preserve">
     <value>Ajouter</value>
@@ -138,28 +138,28 @@ pour chaque valeur de détail de l'analyse croisée.</value>
     <value>Déplacer vers le bas</value>
   </data>
   <data name="ArrangeCrosstabPage_CreateColumnGroups_Instruction" xml:space="preserve">
-    <value>Faites glisser les champs source de données ici pour créer des groupes de colonnes.</value>
+    <value>Faites glisser les champs de source de données ici pour créer des groupes de colonnes.</value>
   </data>
   <data name="ArrangeCrosstabPage_RowGroups_Text" xml:space="preserve">
     <value>Groupes de lignes</value>
   </data>
   <data name="ArrangeCrosstabPage_CreateRowGroups_Instruction" xml:space="preserve">
-    <value>Faites glisser les champs source de données ici pour créer des groupes de lignes.</value>
+    <value>Faites glisser les champs de source de données ici pour créer des groupes de lignes.</value>
   </data>
   <data name="ArrangeCrosstabPage_DetailValues_Text" xml:space="preserve">
     <value>Valeurs de détail</value>
   </data>
   <data name="ArrangeCrosstabPage_ChooseFunctionButton_Text" xml:space="preserve">
-    <value>Fonction</value>
+    <value>fonction</value>
   </data>
   <data name="ArrangeCrosstabPage_AddDetailValues_Instruction" xml:space="preserve">
-    <value>Faites glisser les champs source de données ici pour afficher les valeurs de détail.</value>
+    <value>Faites glisser les champs de source de données ici pour les afficher en tant que valeurs de détail.</value>
   </data>
   <data name="ArrangeCrosstabPage_Description" xml:space="preserve">
-    <value>Organiser les champs source de données pour regrouper les données et afficher les valeurs de détail.</value>
+    <value>Organisez les champs de source de données pour regrouper les données et afficher les valeurs détaillées.</value>
   </data>
   <data name="ArrangeCrosstabPage_Title" xml:space="preserve">
-    <value>Organiser les champs</value>
+    <value>Réorganiser les champs</value>
   </data>
   <data name="ArrangeCrosstabPage_ColumnGroups_Text" xml:space="preserve">
     <value>Groupes de colonnes</value>
@@ -168,13 +168,13 @@ pour chaque valeur de détail de l'analyse croisée.</value>
     <value>Champs de source de données</value>
   </data>
   <data name="ArrangeTablePage_Title" xml:space="preserve">
-    <value>Organiser les champs</value>
+    <value>Réorganiser les champs</value>
   </data>
   <data name="ArrangeTablePage_Description" xml:space="preserve">
-    <value>Organiser les champs de source de données à afficher sous forme de colonnes de table.</value>
+    <value>Organiser les champs de source de données à afficher en tant que colonnes de table.</value>
   </data>
   <data name="ArrangeTablePage_AddTableColumns_Instruction" xml:space="preserve">
-    <value>Faites glisser les champs de source de données ici pour afficher les colonnes de table.</value>
+    <value>Faites glisser les champs de source de données ici pour les afficher sous forme de colonnes de table.</value>
   </data>
   <data name="ArrangeTablePage_TableColumns_Text" xml:space="preserve">
     <value>Colonnes de table</value>
@@ -186,13 +186,13 @@ pour chaque valeur de détail de l'analyse croisée.</value>
     <value>Total</value>
   </data>
   <data name="ChooseLayoutPage_Title" xml:space="preserve">
-    <value>Choisir la disposition</value>
+    <value>Choisir la mise en page</value>
   </data>
   <data name="ChooseLayoutPage_Description" xml:space="preserve">
-    <value>Indiquez s'il faut afficher les sous-totaux et les totaux globaux, ainsi que leur placement.</value>
+    <value>Indiquez si vous souhaitez afficher les sous-totaux et les totaux généraux, ainsi que leur placement.</value>
   </data>
   <data name="ChooseLayoutPage_NoTotals_Text" xml:space="preserve">
-    <value>Pas de sous-totaux et de totaux</value>
+    <value>Pas de sous-totaux et de grands totaux</value>
   </data>
   <data name="ChooseLayoutPage_SteppedLayout_Text" xml:space="preserve">
     <value>Mise en page étagée, sous-totaux ci-dessus</value>
@@ -201,13 +201,13 @@ pour chaque valeur de détail de l'analyse croisée.</value>
     <value>Disposition bloquée, sous-totaux ci-dessus</value>
   </data>
   <data name="ChooseLayoutPage_BlockedLayoutBelow_Text" xml:space="preserve">
-    <value>Disposition bloquée, sous-totaux ci-dessous</value>
+    <value>Mise en page bloquée, sous-totaux inférieurs</value>
   </data>
   <data name="DataSourcePage_DataSourcesList_Text" xml:space="preserve">
     <value>Sources de données</value>
   </data>
   <data name="DataSourcePage_Details_Text" xml:space="preserve">
-    <value>Détails !</value>
+    <value>Détails</value>
   </data>
   <data name="DataSourcePage_AddNewDataSourceButton_Text" xml:space="preserve">
     <value>&amp;Ajouter une nouvelle source de données...</value>
@@ -225,31 +225,31 @@ pour chaque valeur de détail de l'analyse croisée.</value>
     <value>Opale bleue</value>
   </data>
   <data name="StylesPage_ApexStyle_Text" xml:space="preserve">
-    <value>Apex</value>
+    <value>sommet</value>
   </data>
   <data name="StylesPage_AspectStyle_Text" xml:space="preserve">
-    <value>Aspect</value>
+    <value>aspect</value>
   </data>
   <data name="StylesPage_CivicStyle_Text" xml:space="preserve">
-    <value>Civique</value>
+    <value>civique</value>
   </data>
   <data name="StylesPage_CorporateStyle_Text" xml:space="preserve">
-    <value>Entreprise</value>
+    <value>d'entreprise</value>
   </data>
   <data name="StylesPage_OfficeStyle_Text" xml:space="preserve">
-    <value>Bureau</value>
+    <value>bureau</value>
   </data>
   <data name="StylesPage_SolsticeStyle_Text" xml:space="preserve">
-    <value>Solstice</value>
+    <value>solstice</value>
   </data>
   <data name="SummaryInfoPage_SummaryLabel_Text" xml:space="preserve">
     <value>Résumé</value>
   </data>
   <data name="SummaryInfoPage_Description" xml:space="preserve">
-    <value>Examinez les informations récapitulatives suivantes avant le démarrage de la génération.</value>
+    <value>Examinez les informations récapitulatives suivantes avant le début de la génération.</value>
   </data>
   <data name="SummaryInfoPage_Title" xml:space="preserve">
-    <value>Résumé de l'examen</value>
+    <value>Résumé de la revue</value>
   </data>
   <data name="TableWizard_Title" xml:space="preserve">
     <value>Assistant Tableau</value>

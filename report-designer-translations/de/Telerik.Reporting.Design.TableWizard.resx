@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CrosstabWizard_Title" xml:space="preserve">
-    <value>Kreuztabellen-Assistent</value>
+    <value>Crosstab Wizard</value>
   </data>
   <data name="ArrangeCrosstabPage_AggregateRequired_Warning" xml:space="preserve">
     <value>Wenn eine oder mehrere Spaltengruppen angegeben sind,
 Sie sollten eine entsprechende Aggregatfunktion angeben
-für jeden Detail Wert der Kreuztabelle.</value>
+Für jeden Detailwert des Crosstab.</value>
   </data>
   <data name="ArrangeButtons_Add_Text" xml:space="preserve">
     <value>Hinzufügen</value>
@@ -138,49 +138,49 @@ für jeden Detail Wert der Kreuztabelle.</value>
     <value>Nach unten verschieben</value>
   </data>
   <data name="ArrangeCrosstabPage_CreateColumnGroups_Instruction" xml:space="preserve">
-    <value>Ziehen Sie datenquellenfelder hierher, um Spaltengruppen zu erstellen.</value>
+    <value>Ziehen Sie hier Datenquellfelder, um Spaltengruppen zu erstellen.</value>
   </data>
   <data name="ArrangeCrosstabPage_RowGroups_Text" xml:space="preserve">
-    <value>Zeilengruppen</value>
+    <value>Reihengruppen</value>
   </data>
   <data name="ArrangeCrosstabPage_CreateRowGroups_Instruction" xml:space="preserve">
-    <value>Ziehen Sie datenquellenfelder hierher, um Zeilengruppen zu erstellen.</value>
+    <value>Ziehen Sie hier Datenquellfelder, um Datensatzgruppen zu erstellen.</value>
   </data>
   <data name="ArrangeCrosstabPage_DetailValues_Text" xml:space="preserve">
-    <value>Detail Werte</value>
+    <value>Detailwerte</value>
   </data>
   <data name="ArrangeCrosstabPage_ChooseFunctionButton_Text" xml:space="preserve">
-    <value>Funktion</value>
+    <value>funktion</value>
   </data>
   <data name="ArrangeCrosstabPage_AddDetailValues_Instruction" xml:space="preserve">
-    <value>Ziehen Sie datenquellenfelder hierher, um als Detailwerte anzuzeigen.</value>
+    <value>Ziehen Sie hier Datenquellfelder, um sie als Detailwerte anzuzeigen.</value>
   </data>
   <data name="ArrangeCrosstabPage_Description" xml:space="preserve">
-    <value>Ordnen Sie datenquellenfelder an, um Daten zu gruppieren und Detailwerte anzuzeigen.</value>
+    <value>Ordnen Sie Datenquellfelder ein, um Daten zu gruppieren und Detailwerte anzuzeigen.</value>
   </data>
   <data name="ArrangeCrosstabPage_Title" xml:space="preserve">
-    <value>Felder anordnen</value>
+    <value>Feld anrichten</value>
   </data>
   <data name="ArrangeCrosstabPage_ColumnGroups_Text" xml:space="preserve">
-    <value>Spaltengruppen</value>
+    <value>Kolumnengruppen</value>
   </data>
   <data name="ArrangeCrosstabPage_DataSourceFields_Text" xml:space="preserve">
-    <value>Datenquellenfelder</value>
+    <value>Datenquelle</value>
   </data>
   <data name="ArrangeTablePage_Title" xml:space="preserve">
-    <value>Felder anordnen</value>
+    <value>Feld anrichten</value>
   </data>
   <data name="ArrangeTablePage_Description" xml:space="preserve">
-    <value>Ordnen Sie datenquellenfelder an, die als Tabellenspalten angezeigt werden sollen.</value>
+    <value>Ordnen Sie Datenquellfelder, die als Tabellenspalten angezeigt werden.</value>
   </data>
   <data name="ArrangeTablePage_AddTableColumns_Instruction" xml:space="preserve">
-    <value>Ziehen Sie datenquellenfelder hierher, um Sie als Tabellenspalten anzuzeigen.</value>
+    <value>Ziehen Sie hier Datenquellfelder, um sie als Tabellenspalten anzuzeigen.</value>
   </data>
   <data name="ArrangeTablePage_TableColumns_Text" xml:space="preserve">
-    <value>Tabellenspalten</value>
+    <value>Tischkolumnen</value>
   </data>
   <data name="ArrangeTablePage_DataSourceFields_Text" xml:space="preserve">
-    <value>Datenquellenfelder</value>
+    <value>Datenquelle</value>
   </data>
   <data name="Wizards_CreateGroupTotals_Name" xml:space="preserve">
     <value>Gesamt</value>
@@ -189,19 +189,19 @@ für jeden Detail Wert der Kreuztabelle.</value>
     <value>Layout wählen</value>
   </data>
   <data name="ChooseLayoutPage_Description" xml:space="preserve">
-    <value>Wählen Sie aus, ob Teilergebnisse und Gesamtsummen sowie deren Platzierung angezeigt werden sollen.</value>
+    <value>Wählen Sie, ob Unter-und Großsummen und deren Platzierung angezeigt werden sollen.</value>
   </data>
   <data name="ChooseLayoutPage_NoTotals_Text" xml:space="preserve">
-    <value>Keine Zwischensummen und Gesamtsummen</value>
+    <value>Keine Unterzahl und große Summe</value>
   </data>
   <data name="ChooseLayoutPage_SteppedLayout_Text" xml:space="preserve">
-    <value>Stufen Layout, Zwischensummen oben</value>
+    <value>Schrittes Layout, Unterzahl oben</value>
   </data>
   <data name="ChooseLayoutPage_BlockedLayoutAbove_Text" xml:space="preserve">
-    <value>Blockiertes Layout, Teilergebnisse oben</value>
+    <value>Blockierte Anlage, Unterzahl oben</value>
   </data>
   <data name="ChooseLayoutPage_BlockedLayoutBelow_Text" xml:space="preserve">
-    <value>Blockiertes Layout, Zwischensummen unten</value>
+    <value>Blockierte Anlage, Untertotale unten</value>
   </data>
   <data name="DataSourcePage_DataSourcesList_Text" xml:space="preserve">
     <value>Datenquellen</value>
@@ -210,13 +210,13 @@ für jeden Detail Wert der Kreuztabelle.</value>
     <value>Details</value>
   </data>
   <data name="DataSourcePage_AddNewDataSourceButton_Text" xml:space="preserve">
-    <value>&amp;Neue Datenquelle hinzufügen...</value>
+    <value>&amp;Neue Datenquelle hinzufügen ...</value>
   </data>
   <data name="DataSourcePage_Description" xml:space="preserve">
-    <value>Wählen Sie die Datenquelle aus, mit der Sie eine Verbindung herstellen möchten, oder erstellen Sie eine neue.</value>
+    <value>Wählen Sie die Datenquelle, mit der Sie sich verbinden möchten, oder erstellen Sie eine neue.</value>
   </data>
   <data name="DataSourcePage_Title" xml:space="preserve">
-    <value>Auswählen einer Datenquelle</value>
+    <value>Wählen Sie eine Datenquelle</value>
   </data>
   <data name="StylesPage_NormalStyle_Text" xml:space="preserve">
     <value>Normal</value>
@@ -225,31 +225,31 @@ für jeden Detail Wert der Kreuztabelle.</value>
     <value>Blauer Opal</value>
   </data>
   <data name="StylesPage_ApexStyle_Text" xml:space="preserve">
-    <value>Apex</value>
+    <value>spitze</value>
   </data>
   <data name="StylesPage_AspectStyle_Text" xml:space="preserve">
-    <value>Aspekt</value>
+    <value>gesichtspunkt</value>
   </data>
   <data name="StylesPage_CivicStyle_Text" xml:space="preserve">
-    <value>Civic</value>
+    <value>bürger-</value>
   </data>
   <data name="StylesPage_CorporateStyle_Text" xml:space="preserve">
-    <value>Corporate</value>
+    <value>körperschaftlich</value>
   </data>
   <data name="StylesPage_OfficeStyle_Text" xml:space="preserve">
-    <value>Office</value>
+    <value>Büro</value>
   </data>
   <data name="StylesPage_SolsticeStyle_Text" xml:space="preserve">
-    <value>Solstice</value>
+    <value>sonnenwende</value>
   </data>
   <data name="SummaryInfoPage_SummaryLabel_Text" xml:space="preserve">
     <value>Zusammenfassung</value>
   </data>
   <data name="SummaryInfoPage_Description" xml:space="preserve">
-    <value>Überprüfen Sie die folgenden Zusammenfassungsinformationen, bevor die Generierung beginnt.</value>
+    <value>Bevor die Generation beginnt, lesen Sie die folgenden zusammenfassenden Informationen.</value>
   </data>
   <data name="SummaryInfoPage_Title" xml:space="preserve">
-    <value>Zusammenfassung der Überprüfung</value>
+    <value>Rezension Zusammenfassung</value>
   </data>
   <data name="TableWizard_Title" xml:space="preserve">
     <value>Tabellenassistent</value>

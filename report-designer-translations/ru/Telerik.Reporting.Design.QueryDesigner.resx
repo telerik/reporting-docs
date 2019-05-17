@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutoDetectModeWarningText" xml:space="preserve">
-    <value>Переключение на автоматическое обнаружение приведет к отмене внесенных изменений!</value>
+    <value>Переключение на автоматическое обнаружение будет отбросить изменения, которые вы сделали!</value>
   </data>
   <data name="Operator" xml:space="preserve">
     <value>Оператор</value>
@@ -130,16 +130,16 @@
     <value>Предупреждение</value>
   </data>
   <data name="TitleRelatedFields" xml:space="preserve">
-    <value>Связанные поля</value>
+    <value>Смежные области</value>
   </data>
   <data name="AutoDetectButtonText" xml:space="preserve">
     <value>Автоматическое обнаружение</value>
   </data>
   <data name="JoinType" xml:space="preserve">
-    <value>Тип соединения</value>
+    <value>Регистрация типа</value>
   </data>
   <data name="LeftTable" xml:space="preserve">
-    <value>Левая таблица</value>
+    <value>Левый стол</value>
   </data>
   <data name="TitleRelationships" xml:space="preserve">
     <value>Отношения</value>
@@ -157,7 +157,7 @@
     <value>Схема недоступна.</value>
   </data>
   <data name="LeftJoinField" xml:space="preserve">
-    <value>Левое поле соединения</value>
+    <value>Левая регистрация поле</value>
   </data>
   <data name="RightTable" xml:space="preserve">
     <value>Правый стол</value>
@@ -166,19 +166,19 @@
     <value>Выбранные поля</value>
   </data>
   <data name="RightJoinField" xml:space="preserve">
-    <value>Правое поле соединения</value>
+    <value>Право присоединиться к полю</value>
   </data>
   <data name="TitleDatabaseView" xml:space="preserve">
     <value>Представление базы данных</value>
   </data>
   <data name="DefaultSchema" xml:space="preserve">
-    <value>[схема по умолчанию]</value>
+    <value>[Схема по умолчанию]</value>
   </data>
   <data name="ColumnNameOperator" xml:space="preserve">
     <value>Оператор</value>
   </data>
   <data name="WarningRelationIsNotComplete" xml:space="preserve">
-    <value>Отношения должны указывать левую и правую таблицу. Укажите обе таблицы или удалите эту связь.</value>
+    <value>Отношения должны указывать левый и правый стол. Укажите обе таблицы или удалите это соотношение.</value>
   </data>
   <data name="ErrorUnrelatedTables" xml:space="preserve">
     <value>У вас есть несвязанные таблицы: </value>
@@ -187,10 +187,10 @@
     <value>Добавить</value>
   </data>
   <data name="ErrorEmptySelectClause" xml:space="preserve">
-    <value>Выберите столбцы таблицы.</value>
+    <value>Пожалуйста, выберите таблицы столбцов.</value>
   </data>
   <data name="ErrorInvalidProperty" xml:space="preserve">
-    <value>Недопустимое или отсутствующее свойство</value>
+    <value>Недопустимое или отсутствующий объект</value>
   </data>
   <data name="Alias" xml:space="preserve">
     <value>Псевдоним</value>
@@ -202,36 +202,36 @@
     <value>Фильтры</value>
   </data>
   <data name="ParameterName" xml:space="preserve">
-    <value>Имя параметра</value>
+    <value>Наименование параметра</value>
   </data>
   <data name="PreviewValue" xml:space="preserve">
-    <value>Предварительное значение</value>
+    <value>Значение предварительного просмотра</value>
   </data>
   <data name="StateWarningCaption" xml:space="preserve">
-    <value>Состояние конструктора запросов SQL</value>
+    <value>Состояние конструктора SQL запроса</value>
   </data>
   <data name="StateWarningText" xml:space="preserve">
-    <value>Запрос SQL был отредактирован вне конструктора запросов SQL или изменена схема БД. Использование конструктора запросов приведет к отмене изменений запроса SQL.</value>
+    <value>SQL-запрос был отредактирован вне конструктора SQL-запроса или была изменена схема DB. С помощью конструктора запросов будет Выбросьте изменения запроса SQL.</value>
   </data>
   <data name="StateRestoringErrorText" xml:space="preserve">
-    <value>Произошла ошибка при восстановлении сохраненного состояния.</value>
+    <value>При восстановлении сохраненных состояния произошла ошибка.</value>
   </data>
   <data name="StateRestoringErrorCaption" xml:space="preserve">
-    <value>Ошибка восстановления состояния</value>
+    <value>Восстановление государственной ошибки</value>
   </data>
   <data name="JoinTypeIsNotSelected" xml:space="preserve">
     <value>Тип соединения не выбран.</value>
   </data>
   <data name="Parameters_Error_ProviderNamedParameters" xml:space="preserve">
-    <value>Выбранный поставщик не поддерживает именованные параметры.</value>
+    <value>Выбранный поставщик не поддерживает названные параметры.</value>
   </data>
   <data name="Parameter_Error_PreviewValueIsRequired" xml:space="preserve">
-    <value>Требуется предварительное значение фильтра</value>
+    <value>Значение предварительного просмотра фильтра необходимо</value>
   </data>
   <data name="Filter_Error_FieldNameIsRequired" xml:space="preserve">
-    <value>Требуется имя поля фильтра.</value>
+    <value>Необходимо наименование поля фильтра.</value>
   </data>
   <data name="Relations_Error_ConditionIsRequired" xml:space="preserve">
-    <value>Поля связи являются обязательными.</value>
+    <value>Поля связи требуются.</value>
   </data>
 </root>

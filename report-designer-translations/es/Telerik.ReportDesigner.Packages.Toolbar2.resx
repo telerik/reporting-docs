@@ -124,19 +124,19 @@
     <value>Navegar</value>
   </data>
   <data name="Backstage_CloseAll_Text" xml:space="preserve">
-    <value>Cerrar todos</value>
+    <value>Cierre todos los</value>
   </data>
   <data name="Backstage_Close_Text" xml:space="preserve">
     <value>Cerrar</value>
   </data>
   <data name="Backstage_Computer" xml:space="preserve">
-    <value>Ordenador</value>
+    <value>computador</value>
   </data>
   <data name="Backstage_DataPresentationTemplates" xml:space="preserve">
     <value>Plantillas de presentación de datos</value>
   </data>
   <data name="Backstage_Exit_Text" xml:space="preserve">
-    <value>Salida</value>
+    <value>salir</value>
   </data>
   <data name="Backstage_ExportTemplate_Text" xml:space="preserve">
     <value>Exportar plantilla...</value>
@@ -157,16 +157,16 @@
     <value>Documentos recientes</value>
   </data>
   <data name="Backstage_ReportServers" xml:space="preserve">
-    <value>Servidores de informes</value>
+    <value>Los servidores de informes</value>
   </data>
   <data name="Backstage_ReportTemplates" xml:space="preserve">
-    <value>Plantillas de informes</value>
+    <value>Plantillas de informe</value>
   </data>
   <data name="Backstage_SaveAll_Text" xml:space="preserve">
-    <value>Guardar todos</value>
+    <value>Guardar todo</value>
   </data>
   <data name="Backstage_SaveAs_Text" xml:space="preserve">
-    <value>Guardar como...</value>
+    <value>guardar como...</value>
   </data>
   <data name="Backstage_SaveAs_Title" xml:space="preserve">
     <value>Guardar como</value>
@@ -178,6 +178,6 @@
     <value>Plantillas de usuario</value>
   </data>
   <data name="OpenItemModel_ClearRecendDocuments" xml:space="preserve">
-    <value>Borrar documentos recientes</value>
+    <value>Borre los documentos recientes</value>
   </data>
 </root>

@@ -117,18 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ConditionalFormattingPrimaryItemSelectorDescription" xml:space="preserve">
-    <value>Выберите основной элемент, условное форматирование которого будет использоваться в качестве шаблона. Обновленное условное форматирование будет применено ко всем выбранным элементам. Все правила форматирования, не перечисленные в редакторе, будут удалены.</value>
-  </data>
-  <data name="ConditionalFormattingPrimaryItemSelectorTitle" xml:space="preserve">
-    <value>Селектор основного элемента</value>
-  </data>
-  <data name="WebService_ParameterCollectionEditor_Columns_Type" xml:space="preserve">
-    <value>Тип</value>
-  </data>
-  <data name="ContextMenuItem_DetailSectionProperties" xml:space="preserve">
-    <value>Eigenschaften des Detail Abschnitts</value>
-  </data>
   <data name="DesignTab" xml:space="preserve">
     <value>Дизайн</value>
   </data>
@@ -136,142 +124,142 @@
     <value>Предварительный просмотр</value>
   </data>
   <data name="HtmlPreviewViewTab" xml:space="preserve">
-    <value>Предварительный просмотр в формате HTML</value>
+    <value>HTML предварительный просмотр</value>
   </data>
   <data name="CommandSetDelete" xml:space="preserve">
-    <value>Удалить {0} элементов отчета</value>
+    <value>Удаление элементов отчета {0}</value>
   </data>
   <data name="CommandSetCut" xml:space="preserve">
     <value>Вырезать {0} элементов отчета</value>
   </data>
   <data name="CommandSetPaste" xml:space="preserve">
-    <value>Вставка элементов отчета</value>
+    <value>Вставить элементы отчета</value>
   </data>
   <data name="CommandSetSendToBack" xml:space="preserve">
-    <value>Отправка {0} элементов отчета на задний</value>
+    <value>Отправка элементов отчета {0} на задний</value>
   </data>
   <data name="CommandSetBringToFront" xml:space="preserve">
-    <value>Вывести {0} элементов отчета на передний</value>
+    <value>Вывести элементы отчета {0} на передний</value>
   </data>
   <data name="CommandSetCenterX" xml:space="preserve">
-    <value>Центр по горизонтали {0} элементов отчета</value>
+    <value>Горизонтальный центр {0} элементов отчета</value>
   </data>
   <data name="CommandSetCenterY" xml:space="preserve">
     <value>Вертикальный центр {0} элементов отчета</value>
   </data>
   <data name="CommandSetFormatSpacing" xml:space="preserve">
-    <value>Форматирование {0} элементов отчета (интервал)</value>
+    <value>Формат {0} элементов отчета (интервал)</value>
   </data>
   <data name="CommandSetSize" xml:space="preserve">
     <value>Размер {0} элементов отчета</value>
   </data>
   <data name="CommandSetSizeToGrid" xml:space="preserve">
-    <value>Размер {0} элементов отчета в сетку</value>
+    <value>Размер {0} сообщайте о номенклатур в сетку</value>
   </data>
   <data name="CommandSetAlignByPrimary" xml:space="preserve">
-    <value>Форматирование {0} элементов отчета (выравнивание)</value>
+    <value>Формат {0} элементов отчета (выравнивание)</value>
   </data>
   <data name="CommandSetAlignToGrid" xml:space="preserve">
-    <value>Выравнивание {0} элементов отчета по сетке</value>
+    <value>Выравнивание элементов отчета {0} к сетке</value>
   </data>
   <data name="CommandSetFontStyle" xml:space="preserve">
-    <value>Изменить стиль шрифта {0} элементов отчета</value>
+    <value>Изменение стиля шрифта {0} элементов отчета</value>
   </data>
   <data name="SetItemsStrikethrough" xml:space="preserve">
-    <value>Изменить зачеркивание элементов отчета {0}</value>
+    <value>Измените художественное оформление вычершно {0} элементов отчета</value>
   </data>
   <data name="SetItemsUnderline" xml:space="preserve">
-    <value>Изменить подчеркнутое украшение элементов отчета {0}</value>
+    <value>Изменить украшение подчеркивание {0} элементов отчета</value>
   </data>
   <data name="SetItemsItalic" xml:space="preserve">
-    <value>Изменить оформление курсивом {0} элементов отчета</value>
+    <value>Измените украшение курсивом {0} элементов отчета</value>
   </data>
   <data name="SetItemsBold" xml:space="preserve">
-    <value>Изменить оформление полужирным шрифтом {0} элементов отчета</value>
+    <value>Альтер-декор смелый из {0} элементов отчета</value>
   </data>
   <data name="SetItemsFontSize" xml:space="preserve">
-    <value>Изменение размера шрифта для элементов отчета {0}</value>
+    <value>Изменение размера шрифта {0} элементов отчета</value>
   </data>
   <data name="SetItemsFontName" xml:space="preserve">
-    <value>Изменить имя шрифта для элементов отчета {0}</value>
+    <value>Изменение имени шрифта {0} элементов отчета</value>
   </data>
   <data name="SetItemsTextHorizontalAlign" xml:space="preserve">
-    <value>Изменить выравнивание текста по горизонтали {0} элементов отчета</value>
+    <value>Изменение горизонтального выравнивания элементов отчета {0}</value>
   </data>
   <data name="SetItemsTextVerticalAlign" xml:space="preserve">
-    <value>Изменение выравнивания по вертикали для элементов отчета {0}</value>
+    <value>Изменение вертикального выравнивания элементов отчета {0}</value>
   </data>
   <data name="SetItemsColor" xml:space="preserve">
-    <value>Изменить цвет элементов отчета {0}</value>
+    <value>Изменение цвета элементов отчета {0}</value>
   </data>
   <data name="SetItemsBackgroundColor" xml:space="preserve">
     <value>Изменение цвета фона {0} элементов отчета</value>
   </data>
   <data name="SetItemBorder" xml:space="preserve">
-    <value>Задать границу {0}</value>
+    <value>Установите границу {0}</value>
   </data>
   <data name="SetItemsBorder" xml:space="preserve">
-    <value>Изменить границу {0}</value>
+    <value>Изменение границы {0}</value>
   </data>
   <data name="SetItemStrikethrough" xml:space="preserve">
-    <value>Изменить зачеркивание отделке {0}</value>
+    <value>Измените художественное оформление зачернутой {0}</value>
   </data>
   <data name="SetItemUnderline" xml:space="preserve">
-    <value>Изменить подчеркивание украшения {0}</value>
+    <value>Изменить украшение подчеркивание {0}</value>
   </data>
   <data name="SetItemItalic" xml:space="preserve">
-    <value>Изменить оформление курсивом {0}</value>
+    <value>Изменение курсив декора {0}</value>
   </data>
   <data name="SetItemBold" xml:space="preserve">
-    <value>Изменить оформление полужирным шрифтом {0}</value>
+    <value>Альтер-украшение смелое из {0}</value>
   </data>
   <data name="SetItemFontSize" xml:space="preserve">
-    <value>Изменить размер шрифта {0}</value>
+    <value>Изменение размера шрифта {0}</value>
   </data>
   <data name="SetItemFontName" xml:space="preserve">
-    <value>Изменить имя шрифта {0}</value>
+    <value>Изменение имени шрифта {0}</value>
   </data>
   <data name="SetItemTextHorizontalAlign" xml:space="preserve">
-    <value>Изменить выравнивание текста по горизонтали {0}</value>
+    <value>Изменение горизонтального выравнивания текста {0}</value>
   </data>
   <data name="SetItemTextVerticalAlign" xml:space="preserve">
-    <value>Изменить выравнивание по вертикали {0}</value>
+    <value>Изменение вертикального выравнивания {0}</value>
   </data>
   <data name="SetItemColor" xml:space="preserve">
-    <value>Изменить цвет {0}</value>
+    <value>Изменение цвета {0}</value>
   </data>
   <data name="SetItemBackgroundColor" xml:space="preserve">
-    <value>Изменить цвет фона {0}</value>
+    <value>Изменение фонового цвета {0}</value>
   </data>
   <data name="SetItemsNumericFormat" xml:space="preserve">
     <value>Изменение числового формата элементов отчета {0}</value>
   </data>
   <data name="SetItemNumericFormat" xml:space="preserve">
-    <value>Изменить числовой формат {0}</value>
+    <value>Изменение числового формата {0}</value>
   </data>
   <data name="CommandSetJustify" xml:space="preserve">
-    <value>Выравнивание {0} элементов отчета</value>
+    <value>Обоснование {0} элементов отчета</value>
   </data>
   <data name="CommandSetAddPageHeader" xml:space="preserve">
     <value>Добавить заголовок страницы</value>
   </data>
   <data name="CommandSetAddReportHeader" xml:space="preserve">
-    <value>Добавить заголовок отчета</value>
+    <value>Добавление заголовка отчета</value>
   </data>
   <data name="CommandSetGroupHeaderFooter" xml:space="preserve">
-    <value>Добавление верхнего/нижнего колонтитула группы</value>
+    <value>Добавить группа заголовок/колонтитул</value>
   </data>
   <data name="CommandSetAddDetailReport" xml:space="preserve">
-    <value>Добавить подробный отчет</value>
+    <value>Добавление подробного отчета</value>
   </data>
   <data name="CommandSetAddReportFooter" xml:space="preserve">
-    <value>Добавить нижний колонтитул отчета</value>
+    <value>Добавить нижний колонтитул</value>
   </data>
   <data name="CommandSetAddPageFooter" xml:space="preserve">
-    <value>Добавление нижнего колонтитула страницы</value>
+    <value>Добавить нижний колонтитул страницы</value>
   </data>
   <data name="BehaviorServiceResizeItem" xml:space="preserve">
-    <value>Изменить размер {0}</value>
+    <value>Изменение размера {0}</value>
   </data>
   <data name="BehaviorServiceResizeItems" xml:space="preserve">
     <value>Изменение размера элементов отчета {0}</value>
@@ -280,7 +268,7 @@
     <value>Указывает, следует ли рисовать сетку позиционирования.</value>
   </data>
   <data name="ParentItemDesignerSnapToGridDescr" xml:space="preserve">
-    <value>Определяет, должны ли элементы управления привязываться к сетке позиционирования.</value>
+    <value>Определяет, следует ли привязка элементов управления к сетке позиционирования.</value>
   </data>
   <data name="ParentItemDesignerGridSizeDescr" xml:space="preserve">
     <value>Определяет размер сетки позиционирования.</value>
@@ -289,31 +277,31 @@
     <value>Добавить {0}</value>
   </data>
   <data name="FailedToCreateComponent" xml:space="preserve">
-    <value>Не удалось создать компонент "{0}".  Следующее сообщение об ошибке: \n ' {1} '</value>
+    <value>Не удалось создать компонент ' {0} '.  Сообщение об ошибке следующим образом: \ n ' {1} '</value>
   </data>
   <data name="BehaviorServiceCopyItem" xml:space="preserve">
     <value>Копирование и перемещение {0}</value>
   </data>
   <data name="BehaviorServiceCopyItems" xml:space="preserve">
-    <value>Копирование и перемещение {0} элементов</value>
+    <value>Копирование и перемещение элементов {0}</value>
   </data>
   <data name="BehaviorServiceMoveItem" xml:space="preserve">
     <value>Переместить {0}</value>
   </data>
   <data name="BehaviorServiceMoveItems" xml:space="preserve">
-    <value>Переместить {0} элементов</value>
+    <value>Перемещение элементов {0}</value>
   </data>
   <data name="TextEditorServiceChangeItemText" xml:space="preserve">
-    <value>Задание текста свойства {0}</value>
+    <value>Набор свойств текст {0}</value>
   </data>
   <data name="StyleClipboardServicePasteStyle" xml:space="preserve">
-    <value>Вставка стиля в {0} элементов</value>
+    <value>Вставить стиль на {0} элементов</value>
   </data>
   <data name="ResetStyle" xml:space="preserve">
     <value>Сброс стиля {0} элементов</value>
   </data>
   <data name="SelectToolStripMenuItem" xml:space="preserve">
-    <value>Выберите "{0}"</value>
+    <value>Выберите ' {0} '</value>
   </data>
   <data name="ContextMenuCopy" xml:space="preserve">
     <value>Скопировать</value>
@@ -331,16 +319,16 @@
     <value>Свойства</value>
   </data>
   <data name="ContextMenuViewCode" xml:space="preserve">
-    <value>Просмотр кода</value>
+    <value>Посмотреть код</value>
   </data>
   <data name="SectionToolStripMenuItem" xml:space="preserve">
-    <value>раздел "{0}"</value>
+    <value>раздел ' {0} '</value>
   </data>
   <data name="AddGroupToolStripMenuItem" xml:space="preserve">
     <value>Добавить новую группу</value>
   </data>
   <data name="ContextMenuBringToFront" xml:space="preserve">
-    <value>Довести до передней</value>
+    <value>Довести до фронта</value>
   </data>
   <data name="ContextMenuSendToBack" xml:space="preserve">
     <value>Отправить на задний</value>
@@ -352,52 +340,52 @@
     <value>Дизайн</value>
   </data>
   <data name="DesignerBeginDragNotCalled" xml:space="preserve">
-    <value>Конструктор начать перетаскивание не вызывается!</value>
+    <value>Конструктор начать перетащить не называется!</value>
   </data>
   <data name="DragDropDragComponents" xml:space="preserve">
-    <value>Перетащите перетаскивание и перетащите компоненты {0}</value>
+    <value>Перетащите компоненты Drop и перетащите {0}</value>
   </data>
   <data name="DragDropMoveComponent" xml:space="preserve">
-    <value>Перетащить и переместить компонент {0}</value>
+    <value>Перетаскивание и перемещение компонента {0}</value>
   </data>
   <data name="DragDropMoveComponents" xml:space="preserve">
-    <value>Перетаскивание и перемещение компонентов {0}</value>
+    <value>Перетащите компоненты Drop и переместите {0}</value>
   </data>
   <data name="DragDropSizeComponent" xml:space="preserve">
-    <value>Перетащить компонент "перетаскивание" и "размер" {0}</value>
+    <value>Перетащите компонент перетаскивания и размер {0}</value>
   </data>
   <data name="DragDropSizeComponents" xml:space="preserve">
-    <value>Перетаскивание компонентов и их размер {0}</value>
+    <value>Перетащите компоненты перетаскивания и размер {0}</value>
   </data>
   <data name="DragDropDropComponents" xml:space="preserve">
-    <value>Перетаскивание компонентов {0} и Drop</value>
+    <value>Перетащите компоненты Drop и Drop {0}</value>
   </data>
   <data name="ControlLocationDescr" xml:space="preserve">
-    <value>Определяет расположение компонента в лотке</value>
+    <value>Определяет местоположение компонента в лотке</value>
   </data>
   <data name="TrayAutoArrange" xml:space="preserve">
-    <value>Автоматическое упорядочивание значков в лотке компонентов</value>
+    <value>Автоматическое упорядочивать иконки в компоненте лоток</value>
   </data>
   <data name="TrayLineUpIcons" xml:space="preserve">
-    <value>Выстроились значки в лоток компонента</value>
+    <value>Выстраиваются иконки в компонент лоток</value>
   </data>
   <data name="TrayShowLargeIcons" xml:space="preserve">
-    <value>Переключатель размер значков в компонентном лотке</value>
+    <value>Переключатель размер иконки в компонент лоток</value>
   </data>
   <data name="ReportDesignerTraySizeDescr" xml:space="preserve">
-    <value>Определяет размер лотка компонента.</value>
+    <value>Определяет размер компонента лотка.</value>
   </data>
   <data name="PageFooterMenuItem" xml:space="preserve">
-    <value>Нижний колонтитул страницы</value>
+    <value>Титульный лист</value>
   </data>
   <data name="PageHeaderMenuItem" xml:space="preserve">
     <value>Заголовок страницы</value>
   </data>
   <data name="TocMenuItem" xml:space="preserve">
-    <value>Оглавление</value>
+    <value>Таблица содержимого</value>
   </data>
   <data name="ReportFooterMenuItem" xml:space="preserve">
-    <value>Нижний колонтитул отчета</value>
+    <value>Нижний колонтитул</value>
   </data>
   <data name="ReportHeaderMenuItem" xml:space="preserve">
     <value>Заголовок отчета</value>
@@ -418,19 +406,19 @@
     <value>Вставить стиль</value>
   </data>
   <data name="StyleResetContextMenuItem" xml:space="preserve">
-    <value>Сбросить стиль</value>
+    <value>Стиль сброса</value>
   </data>
   <data name="EditItemStyleText" xml:space="preserve">
-    <value>Изменить стиль "{0}"</value>
+    <value>Изменить стиль ' {0} '</value>
   </data>
   <data name="BackslantLineShapeName" xml:space="preserve">
-    <value>Линия наклона</value>
+    <value>Линия обратной наклонной</value>
   </data>
   <data name="BottomArrowShapeName" xml:space="preserve">
     <value>Нижняя стрелка</value>
   </data>
   <data name="CrossShapeName" xml:space="preserve">
-    <value>Креста</value>
+    <value>Крест</value>
   </data>
   <data name="EllipseShapeName" xml:space="preserve">
     <value>Эллипс</value>
@@ -442,10 +430,10 @@
     <value>Горизонтальная линия</value>
   </data>
   <data name="LeftArrowShapeName" xml:space="preserve">
-    <value>Стрелка влево</value>
+    <value>Левая стрелка</value>
   </data>
   <data name="NRayStarShapeName" xml:space="preserve">
-    <value>{0}-звезда лучей</value>
+    <value>{0}-Ray Star</value>
   </data>
   <data name="OctagonShapeName" xml:space="preserve">
     <value>Восьмиугольник</value>
@@ -454,10 +442,10 @@
     <value>Пентагон</value>
   </data>
   <data name="RightArrowShapeName" xml:space="preserve">
-    <value>Стрелка вправо</value>
+    <value>Правая стрелка</value>
   </data>
   <data name="SlantLineShapeName" xml:space="preserve">
-    <value>Наклонная линия</value>
+    <value>Линия наклонной</value>
   </data>
   <data name="SquareShapeName" xml:space="preserve">
     <value>Квадрат</value>
@@ -472,61 +460,61 @@
     <value>Вертикальная линия</value>
   </data>
   <data name="ShowPageGuides" xml:space="preserve">
-    <value>Отображение или скрытие направляющих области для печати страниц.</value>
+    <value>Показывает или скрывает страницы печати области гидов.</value>
   </data>
   <data name="EditItemsStyleText" xml:space="preserve">
     <value>Изменить стиль компонента {0}</value>
   </data>
   <data name="ContextMenuDataExplorer" xml:space="preserve">
-    <value>Обозреватель данных</value>
+    <value>Исследователь данных</value>
   </data>
   <data name="ContextMenuReportExplorer" xml:space="preserve">
-    <value>Обозреватель отчетов</value>
+    <value>Отчет исследователь</value>
   </data>
   <data name="ContextMenuView" xml:space="preserve">
     <value>Посмотреть</value>
   </data>
   <data name="OutlineLayoutDesc" xml:space="preserve">
-    <value>Макет структуры упорядочивает элементы слева направо с элементами каждой группы, идущими дальше вправо по фиксированному смещению.</value>
+    <value>Схема расположения схемы организует элементы слева направо с элементами каждой группы, идя дальше вправо по фиксированное смещение.</value>
   </data>
   <data name="OutlineLayoutName" xml:space="preserve">
-    <value>Структуры</value>
+    <value>Контур</value>
   </data>
   <data name="SteppedLayoutDesc" xml:space="preserve">
-    <value>Ступенчатый макет упорядочивает элементы в столбцах, чтобы они не перекрывались по вертикали.</value>
+    <value>Ступенно разметка организует элементы в столбцах так, чтобы они не перекрываются вертикально.</value>
   </data>
   <data name="SteppedLayoutName" xml:space="preserve">
-    <value>Вышел</value>
+    <value>Ступил</value>
   </data>
   <data name="LeftAlignedLayoutDesc" xml:space="preserve">
-    <value>Выровненный по левому краю макет размещает элементы в каждом разделе, начиная с начала раздела.</value>
+    <value>Макет слева выровнен помещает элементы в каждом разделе, начиная от начала раздела.</value>
   </data>
   <data name="LeftAlignedLayoutName" xml:space="preserve">
-    <value>Выравнивание по левому краю</value>
+    <value>Левая выровненные</value>
   </data>
   <data name="ReportWizardTransactionName" xml:space="preserve">
-    <value>Мастер отчетов</value>
+    <value>Мастер отчета</value>
   </data>
   <data name="DataSourceWizardTransactionName" xml:space="preserve">
     <value>Мастер источника данных</value>
   </data>
   <data name="ContextMenuGroupExplorer" xml:space="preserve">
-    <value>Обозреватель групп</value>
+    <value>Группа Explorer</value>
   </data>
   <data name="SetItemShapeColor" xml:space="preserve">
-    <value>Изменить цвет фигуры {0}</value>
+    <value>Изменение формы цвета {0}</value>
   </data>
   <data name="SetItemShapeStyle" xml:space="preserve">
-    <value>Изменить стиль формы {0}</value>
+    <value>Изменить стиль фигуры {0}</value>
   </data>
   <data name="SetItemShapeWidth" xml:space="preserve">
-    <value>Изменить ширину формы {0}</value>
+    <value>Изменение ширины формы {0}</value>
   </data>
   <data name="SetItemsShapeColor" xml:space="preserve">
-    <value>Изменение цвета фигуры для элементов отчета {0}.</value>
+    <value>Изменение цвета формы {0} элементов отчета.</value>
   </data>
   <data name="SetItemsShapeStyle" xml:space="preserve">
-    <value>Изменение стиля формы для элементов отчета {0}.</value>
+    <value>Измените стиль элементов отчета {0}.</value>
   </data>
   <data name="SetItemsShapeWidth" xml:space="preserve">
     <value>Изменение ширины формы элементов отчета {0}.</value>
@@ -538,7 +526,7 @@
     <value>Текст...</value>
   </data>
   <data name="ContextMenuTitleStyle" xml:space="preserve">
-    <value>Стиль заголовка...</value>
+    <value>Название стиль...</value>
   </data>
   <data name="ContextMenuChangeChartType" xml:space="preserve">
     <value>Изменить тип диаграммы...</value>
@@ -568,19 +556,19 @@
     <value>Скрыть основные линии сетки</value>
   </data>
   <data name="ContextMenuHideMinorGridLines" xml:space="preserve">
-    <value>Скрыть вспомогательные линии сетки</value>
+    <value>Скрыть незначительные линии сетки</value>
   </data>
   <data name="ContextMenuShowMajorGridLines" xml:space="preserve">
     <value>Показать основные линии сетки</value>
   </data>
   <data name="ContextMenuShowMinorGridLines" xml:space="preserve">
-    <value>Показать вспомогательные линии сетки</value>
+    <value>Показать незначительные сетки линии</value>
   </data>
   <data name="ContextMenuShow" xml:space="preserve">
     <value>Показать...</value>
   </data>
   <data name="ContextMenuConditionalFormatting" xml:space="preserve">
-    <value>Условное форматирование...</value>
+    <value>Условная форматирование...</value>
   </data>
   <data name="ContextMenuExpression" xml:space="preserve">
     <value>Выражение...</value>
@@ -589,28 +577,28 @@
     <value>Координаты</value>
   </data>
   <data name="ContextMenuX0" xml:space="preserve">
-    <value>...</value>
+    <value>X0...</value>
   </data>
   <data name="ContextMenuY0" xml:space="preserve">
     <value>Y0...</value>
   </data>
   <data name="ContextMenuSwitchRowColumn" xml:space="preserve">
-    <value>Переключить строку/столбец</value>
+    <value>Переключатель строки/столбца</value>
   </data>
   <data name="ContextMenuSwapAxes" xml:space="preserve">
-    <value>Поменять оси</value>
+    <value>Оси подкачки</value>
   </data>
   <data name="ContextMenuDelete" xml:space="preserve">
     <value>Удалить...</value>
   </data>
   <data name="ContextMenuAddGraphSeries" xml:space="preserve">
-    <value>Добавить серию диаграмм...</value>
+    <value>Добавить граф серии...</value>
   </data>
   <data name="ContextMenuDataPointConditionalFormatting" xml:space="preserve">
-    <value>Условное форматирование точки данных...</value>
+    <value>Точка данных условная форматирование...</value>
   </data>
   <data name="ContextMenuChangeSeriesChartType" xml:space="preserve">
-    <value>Изменить тип диаграммы рядов...</value>
+    <value>Изменить тип диаграммы серии...</value>
   </data>
   <data name="ContextMenuWarning" xml:space="preserve">
     <value>Предупреждение</value>
@@ -619,10 +607,10 @@
     <value>Выражение</value>
   </data>
   <data name="BindingFormPropertyPath" xml:space="preserve">
-    <value>Путь к свойству</value>
+    <value>Путь собственности</value>
   </data>
   <data name="BindingFormText" xml:space="preserve">
-    <value>Редактирование привязок</value>
+    <value>Привязки редактирования</value>
   </data>
   <data name="ContextMenuLatitude" xml:space="preserve">
     <value>Широта...</value>
@@ -631,61 +619,61 @@
     <value>Долгота...</value>
   </data>
   <data name="ContextMenuChoropleth" xml:space="preserve">
-    <value>Картограмма</value>
+    <value>Чороплете</value>
   </data>
   <data name="ContextMenuChoroplethColorData" xml:space="preserve">
-    <value>Цветовые данные</value>
+    <value>Цветные данные</value>
   </data>
   <data name="ContextMenuValue" xml:space="preserve">
     <value>Значение...</value>
   </data>
   <data name="CustomActionParametersFormText" xml:space="preserve">
-    <value>Изменение параметров настраиваемого действия</value>
+    <value>Редактировать параметры пользовательских действий</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Имя</value>
   </data>
   <data name="ContextMenuLevels" xml:space="preserve">
-    <value>Уровнях...</value>
+    <value>Уровней...</value>
   </data>
   <data name="ContextMenuTocTitle" xml:space="preserve">
     <value>Название...</value>
   </data>
   <data name="ContextMenuTocTitleStyle" xml:space="preserve">
-    <value>Стиль заголовка...</value>
+    <value>Название стиль...</value>
   </data>
   <data name="CalculatedFieldEditor_Caption" xml:space="preserve">
-    <value>Редактирование вычисляемых полей</value>
+    <value>Редактировать Вычисляно поля</value>
   </data>
   <data name="DataSourceParameterEditor_Caption" xml:space="preserve">
-    <value>Редактировать параметры</value>
+    <value>Параметры редактирования</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteColumns" xml:space="preserve">
-    <value>Удалить столбцы</value>
+    <value>Удаление столбцов</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteColumnsAndAssociatedGroups" xml:space="preserve">
-    <value>&amp;Удаление столбцов и связанных групп</value>
+    <value>&amp;Удаление столбцов и ассоциированных групп</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteColumnsOnly" xml:space="preserve">
-    <value>Удалить </value>
+    <value>Удаление и столбцы только</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteGroup" xml:space="preserve">
     <value>Удалить группу</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteGroupAndRelatedItems" xml:space="preserve">
-    <value>&amp;Удаление группы и связанных строк и столбцов</value>
+    <value>&amp;Удаление группы и смежных строк и столбцов</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteGroupOnly" xml:space="preserve">
-    <value>Удалить </value>
+    <value>Удаление и группировать только</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteRows" xml:space="preserve">
-    <value>Удалить строки</value>
+    <value>Удаление строк</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteRowsAndAssociatedGroups" xml:space="preserve">
-    <value>&amp;Удаление строк и связанных групп</value>
+    <value>&amp;Удаление строк и ассоциированных групп</value>
   </data>
   <data name="DeleteTableGroupDialog_DeleteRowsOnly" xml:space="preserve">
-    <value>Удалить </value>
+    <value>Только удаление и строки</value>
   </data>
   <data name="DesignView_Pan_Tooltip" xml:space="preserve">
     <value>Пан</value>
@@ -715,19 +703,19 @@
     <value>&amp;Хорошо</value>
   </data>
   <data name="ExternalStyleSheet_Columns_Kind_Header" xml:space="preserve">
-    <value>Рода</value>
+    <value>Вид</value>
   </data>
   <data name="ExternalStyleSheet_Columns_Kind_Tooltip" xml:space="preserve">
-    <value>Способ разрешения внешней таблицы стилей</value>
+    <value>Способ решения листа внешнего стиля</value>
   </data>
   <data name="ExternalStyleSheet_Columns_Name_Tooltip" xml:space="preserve">
-    <value>Имя внешней таблицы стилей</value>
+    <value>Название листа внешнего стиля</value>
   </data>
   <data name="FiltersEditor_Caption" xml:space="preserve">
-    <value>Редактирование фильтров</value>
+    <value>Редактировать фильтры</value>
   </data>
   <data name="FiltersEditor_Comments" xml:space="preserve">
-    <value>Если ввести символ "7" в ячейке "значение", по умолчанию это вычисляется как строка "7". Чтобы сравнить числовое выражение с числом 7, используйте синтаксис выражения, начинающийся со знака равенства: = 7. При предварительном просмотре отчета может возникнуть ошибка во время выполнения из-за несовпадений типов данных аналогично: "не удается сравнить данные типов System. Int32 и System. String".</value>
+    <value>При вводе персонажа "7" в ячейку значения по умолчанию это вычисляет строку "7". Для сравнения числового выражения с числом 7 используйте синтаксис выражения, который начинается с равного знака: = 7. При предварительном просмотре отчета можно увидеть ошибку времени, допущена в несовпадения типов данных, аналогично: «не удается сравнивать данные типов System. Int32 и System. строка».</value>
   </data>
   <data name="FormatBuilder_CategoryGroup_Label" xml:space="preserve">
     <value>Категория</value>
@@ -739,7 +727,7 @@
     <value>Формат:</value>
   </data>
   <data name="FormatBuilder_Custom_Numeric" xml:space="preserve">
-    <value>Числовое</value>
+    <value>Числовые</value>
   </data>
   <data name="FormatBuilder_Custom_ValueType_Text" xml:space="preserve">
     <value>Тип значения:</value>
@@ -754,7 +742,7 @@
     <value>Десятичные места:</value>
   </data>
   <data name="FormatBuilder_NumberOptions_UseDigitGrouping" xml:space="preserve">
-    <value>Использовать группировку цифр</value>
+    <value>Использование цифр группировки</value>
   </data>
   <data name="FormatBuilder_OptionsGroup_Label" xml:space="preserve">
     <value>Опции</value>
@@ -766,34 +754,34 @@
     <value>Научный спецификатор:</value>
   </data>
   <data name="FormatEditor_Caption" xml:space="preserve">
-    <value>Конструктор форматов</value>
+    <value>Строитель формата</value>
   </data>
   <data name="FormattingRuleEditor_AmpStyleInitEditor" xml:space="preserve">
     <value>&amp;Стиль...</value>
   </data>
   <data name="FormattingRuleEditor_EditFormattingRuleStart" xml:space="preserve">
-    <value>Изменить правило форматирования...</value>
+    <value>Править форматированием...</value>
   </data>
   <data name="FormattingRuleEditor_PreviewGroup_Caption" xml:space="preserve">
     <value>Предварительный просмотр:</value>
   </data>
   <data name="GraphItemPositionEditor_Absolute" xml:space="preserve">
-    <value>абсолютной</value>
+    <value>Абсолютной</value>
   </data>
   <data name="GraphItemPositionEditor_Center" xml:space="preserve">
-    <value>центр</value>
+    <value>Центр</value>
   </data>
   <data name="GroupExplorer_Detail" xml:space="preserve">
-    <value>Подробно</value>
+    <value>Детали</value>
   </data>
   <data name="GroupingsEditor_Caption" xml:space="preserve">
-    <value>Редактировать группирование</value>
+    <value>Группировка редактирования</value>
   </data>
   <data name="MapRelationsEditor_Caption" xml:space="preserve">
-    <value>Изменить пары отношений сопоставления</value>
+    <value>Редактировать пары карты отношения</value>
   </data>
   <data name="ParametersEditor_Caption" xml:space="preserve">
-    <value>Редактировать параметры</value>
+    <value>Параметры редактирования</value>
   </data>
   <data name="ReportCollectionEditor_Caption" xml:space="preserve">
     <value>Отчеты...</value>
@@ -805,7 +793,7 @@
     <value>Источники отчета...</value>
   </data>
   <data name="SortingsEditor_Caption" xml:space="preserve">
-    <value>Редактировать сортировку</value>
+    <value>Редактировать сортировка</value>
   </data>
   <data name="SortingsEditor_Direction_Header" xml:space="preserve">
     <value>Направление</value>
@@ -823,7 +811,7 @@
     <value>&amp;Фон:</value>
   </data>
   <data name="StyleBuilder_BackgroundPanel_MimeType_Label" xml:space="preserve">
-    <value>Тип MIME:</value>
+    <value>Тип пантомимы:</value>
   </data>
   <data name="StyleBuilder_BackgroundPanel_Repeat_Label" xml:space="preserve">
     <value>Повторить:</value>
@@ -835,7 +823,7 @@
     <value>По умолчанию</value>
   </data>
   <data name="StyleBuilder_EdgesPanel_Borders_Label" xml:space="preserve">
-    <value>Границ:</value>
+    <value>Границы:</value>
   </data>
   <data name="StyleBuilder_EdgesPanel_Bottom_Label" xml:space="preserve">
     <value>Нижней:</value>
@@ -844,10 +832,10 @@
     <value>Цвет:</value>
   </data>
   <data name="StyleBuilder_EdgesPanel_Left_Label" xml:space="preserve">
-    <value>Слева:</value>
+    <value>Левой:</value>
   </data>
   <data name="StyleBuilder_EdgesPanel_Padding_Label" xml:space="preserve">
-    <value>Обивка:</value>
+    <value>Заполнение:</value>
   </data>
   <data name="StyleBuilder_EdgesPanel_ResetButton_Text" xml:space="preserve">
     <value>Сбросить</value>
@@ -892,7 +880,7 @@
     <value>Ширина:</value>
   </data>
   <data name="StyleBuilder_LineStyle_Text" xml:space="preserve">
-    <value>Стиль линий</value>
+    <value>Стиль линии</value>
   </data>
   <data name="StyleBuilder_MultiPanel_Preview_Label" xml:space="preserve">
     <value>Предварительный просмотр:</value>
@@ -922,7 +910,7 @@
     <value>Размер:</value>
   </data>
   <data name="StyleBuilder_TextPanel_Strikeout_Checkbox" xml:space="preserve">
-    <value>Зачеркнутый</value>
+    <value>Проигрыша</value>
   </data>
   <data name="StyleBuilder_TextPanel_Underline_Checkbox" xml:space="preserve">
     <value>Подчеркнуть</value>
@@ -934,7 +922,7 @@
     <value>Текст</value>
   </data>
   <data name="StylePasteContextMenuItem_Tooltip" xml:space="preserve">
-    <value>Используйте Ctrl вставить стиль для нескольких элементов.</value>
+    <value>Используйте Ctrl + вставить стиль для нескольких элементов.</value>
   </data>
   <data name="TypeExplorerDialog_SelectType" xml:space="preserve">
     <value>Выберите тип: </value>
@@ -943,7 +931,7 @@
     <value>Группы строк</value>
   </data>
   <data name="ColumnGroups" xml:space="preserve">
-    <value>Группы столбцов</value>
+    <value>Столбца группы</value>
   </data>
   <data name="CoordinateSystems" xml:space="preserve">
     <value>Системы координат</value>
@@ -955,7 +943,7 @@
     <value>Группы категорий</value>
   </data>
   <data name="SeriesGroups" xml:space="preserve">
-    <value>Группы рядов</value>
+    <value>Группы серий</value>
   </data>
   <data name="ReportExplorer_Titles" xml:space="preserve">
     <value>Названия</value>
@@ -979,16 +967,16 @@
     <value>Стили</value>
   </data>
   <data name="ReportExplorer_NoReport" xml:space="preserve">
-    <value>(нет отчета)</value>
+    <value>(Нет отчета)</value>
   </data>
   <data name="ReportExplorer_Legend" xml:space="preserve">
     <value>Надпись</value>
   </data>
   <data name="GroupExplorerControl_EmptyLabel" xml:space="preserve">
-    <value>Выберите элемент отчета в конструкторе, чтобы отобразить иерархию групп.</value>
+    <value>Выберите элемент отчета в конструкторе для отображения групповой иерархии.</value>
   </data>
   <data name="GroupExplorerControl_TableGroups" xml:space="preserve">
-    <value>Группы таблиц</value>
+    <value>Таблицы групп</value>
   </data>
   <data name="GroupExplorerControl_LayoutMode" xml:space="preserve">
     <value>Режим компоновки</value>
@@ -1027,7 +1015,7 @@
     <value>Заголовка</value>
   </data>
   <data name="DataExplorer_Column_Footer" xml:space="preserve">
-    <value>Колонтитул</value>
+    <value>Нижний колонтитул</value>
   </data>
   <data name="DataExplorer_Groups" xml:space="preserve">
     <value>Группы</value>
@@ -1036,7 +1024,7 @@
     <value>Позиция</value>
   </data>
   <data name="ContextMenu_ConditionalFormatting" xml:space="preserve">
-    <value>Условное форматирование..</value>
+    <value>Условная форматирование...</value>
   </data>
   <data name="GroupExplorer_Column_Label" xml:space="preserve">
     <value>Этикетка</value>
@@ -1051,55 +1039,55 @@
     <value>Добавить Группу</value>
   </data>
   <data name="ContextMenu_Table_AddTotal" xml:space="preserve">
-    <value>Добавить итог</value>
+    <value>Добавить всего</value>
   </data>
   <data name="ContextMenu_Table_AdjacentAbove" xml:space="preserve">
     <value>Смежные выше</value>
   </data>
   <data name="ContextMenu_Table_AdjacentBelow" xml:space="preserve">
-    <value>Прилегающих ниже</value>
+    <value>Рядом ниже</value>
   </data>
   <data name="ContextMenu_Table_AdjacentLeft" xml:space="preserve">
-    <value>Смежный левый</value>
+    <value>Смежные левые</value>
   </data>
   <data name="ContextMenu_Table_AdjacentRight" xml:space="preserve">
-    <value>Смежное право</value>
+    <value>Прилегающая правая</value>
   </data>
   <data name="ContextMenu_Table_After" xml:space="preserve">
     <value>После</value>
   </data>
   <data name="ContextMenu_Table_Before" xml:space="preserve">
-    <value>До</value>
+    <value>Перед</value>
   </data>
   <data name="ContextMenu_Table_Below" xml:space="preserve">
     <value>Ниже</value>
   </data>
   <data name="ContextMenu_Table_ChildGroup" xml:space="preserve">
-    <value>Дочерняя группа</value>
+    <value>Детская группа</value>
   </data>
   <data name="ContextMenu_Table_Column" xml:space="preserve">
     <value>Столбец</value>
   </data>
   <data name="ContextMenu_Table_ColumnGroup" xml:space="preserve">
-    <value>Группа столбцов</value>
+    <value>Группа колонок</value>
   </data>
   <data name="ContextMenu_Table_DeleteColumns" xml:space="preserve">
-    <value>Удалить столбцы</value>
+    <value>Удаление столбцов</value>
   </data>
   <data name="ContextMenu_Table_DeleteGroup" xml:space="preserve">
     <value>Удалить группу</value>
   </data>
   <data name="ContextMenu_Table_DeleteRows" xml:space="preserve">
-    <value>Удалить строки</value>
+    <value>Удаление строк</value>
   </data>
   <data name="ContextMenu_Table_GroupProperties" xml:space="preserve">
-    <value>Свойства группы</value>
+    <value>Групповые свойства</value>
   </data>
   <data name="ContextMenu_Table_InsertColumn" xml:space="preserve">
     <value>Вставить столбец</value>
   </data>
   <data name="ContextMenu_Table_InsertRow" xml:space="preserve">
-    <value>Вставка строки</value>
+    <value>Вставить строку</value>
   </data>
   <data name="ContextMenu_Table_InsideGroupAbove" xml:space="preserve">
     <value>Внутри группы-выше</value>
@@ -1108,7 +1096,7 @@
     <value>Внутри группы-ниже</value>
   </data>
   <data name="ContextMenu_Table_InsideGroupLeft" xml:space="preserve">
-    <value>Внутри группы-слева</value>
+    <value>Внутри группы-левая</value>
   </data>
   <data name="ContextMenu_Table_InsideGroupRight" xml:space="preserve">
     <value>Внутри группы-справа</value>
@@ -1117,10 +1105,10 @@
     <value>Лево</value>
   </data>
   <data name="ContextMenu_Table_MergeCells" xml:space="preserve">
-    <value>Объединить ячейки</value>
+    <value>Слияние ячеек</value>
   </data>
   <data name="ContextMenu_Table_OutsideGroupAbove" xml:space="preserve">
-    <value>Вне группы-выше</value>
+    <value>Внешняя группа-выше</value>
   </data>
   <data name="ContextMenu_Table_OutsideGroupBelow" xml:space="preserve">
     <value>Внешняя группа-ниже</value>
@@ -1129,7 +1117,7 @@
     <value>Внешняя группа-левая</value>
   </data>
   <data name="ContextMenu_Table_OutsideGroupRight" xml:space="preserve">
-    <value>Внешняя группа-справа</value>
+    <value>Внешняя группа-правая</value>
   </data>
   <data name="ContextMenu_Table_ParentGroup" xml:space="preserve">
     <value>Родительская группа</value>
@@ -1138,7 +1126,7 @@
     <value>Право</value>
   </data>
   <data name="ContextMenu_Table_RotateLayout" xml:space="preserve">
-    <value>Повернуть компоновку</value>
+    <value>Схема поворота</value>
   </data>
   <data name="ContextMenu_Table_Row" xml:space="preserve">
     <value>Строки</value>
@@ -1147,7 +1135,7 @@
     <value>Группа строк</value>
   </data>
   <data name="ContextMenu_Table_SplitCells" xml:space="preserve">
-    <value>Разделить ячейки</value>
+    <value>Сплит-клетки</value>
   </data>
   <data name="StyleRulesEditor_Export_Text" xml:space="preserve">
     <value>&amp;Экспорт</value>
@@ -1156,46 +1144,46 @@
     <value>Все файлы</value>
   </data>
   <data name="StyleRuleCollectionEditor_FileName" xml:space="preserve">
-    <value>Новая таблица стилей отчетов Telerik</value>
+    <value>Новый лист отчетности в стиле Телерик</value>
   </data>
   <data name="ContextMenuItem_AddChildGeoLocationMapGroup" xml:space="preserve">
-    <value>Добавить дочернюю группу карт гео-местоположения</value>
+    <value>Добавить ребенка Geo расположение карта группы</value>
   </data>
   <data name="ContextMenuItem_AddChildShapeMapGroup" xml:space="preserve">
-    <value>Добавить дочернюю группу карт фигур</value>
+    <value>Добавить дочерний состав группы Map</value>
   </data>
   <data name="ContextMenuItem_AddParentGeoLocationMapGroup" xml:space="preserve">
-    <value>Добавить родительскую группу карт геолокации</value>
+    <value>Добавление родительской группы Геокарта местоположения</value>
   </data>
   <data name="ContextMenuItem_AddParentShapeMapGroup" xml:space="preserve">
-    <value>Добавить родительскую группу карт фигур</value>
+    <value>Добавление родительской группы карты формы</value>
   </data>
   <data name="ContextMenuItem_DeleteGeoLocationMapGroup" xml:space="preserve">
-    <value>Удалить географическое местоположение группы карт</value>
+    <value>Удаление группы географических карт геолокации</value>
   </data>
   <data name="ContextMenuItem_DeleteGeoLocationMapGroup_Warning" xml:space="preserve">
-    <value>Удалить выбранную группу?</value>
+    <value>Удалить выбраную группу?</value>
   </data>
   <data name="ContextMenuItem_DeleteShapeMapGroup" xml:space="preserve">
-    <value>Удалить группу карт фигур</value>
+    <value>Удаление группы карт формы</value>
   </data>
   <data name="ContextMenuItem_DeleteShapeMapGroup_Warning" xml:space="preserve">
-    <value>Удалить выбранную группу?</value>
+    <value>Удалить выбраную группу?</value>
   </data>
   <data name="ContextMenuItem_AddChildMapGroup" xml:space="preserve">
-    <value>Добавить дочернюю группу карт</value>
+    <value>Добавление группы дочерних карт</value>
   </data>
   <data name="ContextMenuItem_AddParentMapGroup" xml:space="preserve">
-    <value>Добавить родительскую группу карт</value>
+    <value>Добавление родительской группы Map</value>
   </data>
   <data name="ContextMenuItem_DeleteMapGroup" xml:space="preserve">
-    <value>Удалить группу карт</value>
+    <value>Удаление группы Map</value>
   </data>
   <data name="ContextMenuItem_DeleteMapGroup_Warning" xml:space="preserve">
-    <value>Удалить выбранную группу?</value>
+    <value>Удалить выбраную группу?</value>
   </data>
   <data name="ContextMenuItem_AddChildGroup" xml:space="preserve">
-    <value>Добавить дочернюю группу</value>
+    <value>Добавление дочернего группы</value>
   </data>
   <data name="ContextMenuItem_AddGroup" xml:space="preserve">
     <value>Добавить новую группу</value>
@@ -1204,7 +1192,7 @@
     <value>Добавить параметр</value>
   </data>
   <data name="ContextMenuItem_AddParentGroup" xml:space="preserve">
-    <value>Добавить родительскую группу</value>
+    <value>Добавление родительской группы</value>
   </data>
   <data name="ContextMenuItem_AddStyleRule" xml:space="preserve">
     <value>Добавить правило стиля</value>
@@ -1213,7 +1201,7 @@
     <value>Удалить группу</value>
   </data>
   <data name="ContextMenuItem_DeleteGroup_Warning" xml:space="preserve">
-    <value>Удалить выбранную группу?</value>
+    <value>Удалить выбраную группу?</value>
   </data>
   <data name="ContextMenuItem_DeleteParameter" xml:space="preserve">
     <value>Удалить параметр</value>
@@ -1228,22 +1216,25 @@
     <value>Удалить выбранное правило стиля?</value>
   </data>
   <data name="ContextMenuItem_EditParameter" xml:space="preserve">
-    <value>Изменить параметр</value>
+    <value>Параметр редактирования</value>
   </data>
   <data name="ContextMenuItem_EditParameters" xml:space="preserve">
-    <value>Редактировать параметры</value>
+    <value>Параметры редактирования</value>
   </data>
   <data name="ContextMenuItem_EditStyleRule" xml:space="preserve">
-    <value>Изменить правило стиля</value>
+    <value>Правило редактирования стилей</value>
   </data>
   <data name="ContextMenuItem_EditStyleSheet" xml:space="preserve">
-    <value>Редактировать таблицу стилей</value>
+    <value>Лист редактирования стилей</value>
   </data>
   <data name="ContextMenuItem_GroupProperties" xml:space="preserve">
-    <value>Свойства группы</value>
+    <value>Групповые свойства</value>
+  </data>
+  <data name="ContextMenuItem_DetailSectionProperties" xml:space="preserve">
+    <value>Свойства детали раздела</value>
   </data>
   <data name="ContextMenuItem_Watermarks" xml:space="preserve">
-    <value>Водяные</value>
+    <value>Водяные знаки</value>
   </data>
   <data name="EditActionDialog_ChooseAction" xml:space="preserve">
     <value>Выберите действие</value>
@@ -1258,16 +1249,16 @@
     <value>Сортировки</value>
   </data>
   <data name="EditActionDialog_Action_NavigateToURL" xml:space="preserve">
-    <value>Перейти к URL-адресу</value>
+    <value>Перейдите к URL-адресу</value>
   </data>
   <data name="EditActionDialog_Action_Custom" xml:space="preserve">
     <value>Сделать по заказу</value>
   </data>
   <data name="EditActionDialog_Action_NavigateToReport" xml:space="preserve">
-    <value>Перейти к отчету</value>
+    <value>Перейдите к отчету</value>
   </data>
   <data name="EditActionDialog_Action_NavigateToBookmark" xml:space="preserve">
-    <value>Перейти к закладке</value>
+    <value>Перейдите к закладку</value>
   </data>
   <data name="EditActionDialog_ActionSetup" xml:space="preserve">
     <value>Настройка действий</value>
@@ -1276,52 +1267,52 @@
     <value>Выбранный источник отчета:</value>
   </data>
   <data name="EditActionDialog_SelectReportSource" xml:space="preserve">
-    <value>Выбор источника отчета</value>
+    <value>Выберите источник отчета</value>
   </data>
   <data name="EditActionDialog_TargetBookmarkID" xml:space="preserve">
     <value>Идентификатор целевой закладки</value>
   </data>
   <data name="EditActionDialog_SameWindow" xml:space="preserve">
-    <value>Же окне</value>
+    <value>То же окно</value>
   </data>
   <data name="EditActionDialog_NewWindow" xml:space="preserve">
     <value>Новое окно</value>
   </data>
   <data name="EditActionDialog_TargetURL" xml:space="preserve">
-    <value>Целевой URL-адрес</value>
+    <value>Целевой URL</value>
   </data>
   <data name="EditActionDialog_LinkTarget" xml:space="preserve">
-    <value>Цель ссылки</value>
+    <value>Целевая ссылка</value>
   </data>
   <data name="EditActionDialog_ToggleTargets" xml:space="preserve">
-    <value>Переключение целей</value>
+    <value>Цели переключения</value>
   </data>
   <data name="EditActionDialog_SelectToggleTargets" xml:space="preserve">
-    <value>Выберите переключатель цели</value>
+    <value>Выберите цели переключения</value>
   </data>
   <data name="EditActionDialog_ToggleMarkInitiallyExpanded" xml:space="preserve">
-    <value>Разметка переключателя первоначально развернута</value>
+    <value>Переключение знака первоначально расширен</value>
   </data>
   <data name="EditActionDialog_SortTargets" xml:space="preserve">
-    <value>Сортировать цели</value>
+    <value>Сортировка целей</value>
   </data>
   <data name="EditActionDialog_SelectSortTargets" xml:space="preserve">
-    <value>Выберите целевые объекты сортировки</value>
+    <value>Выберите цели сортировки</value>
   </data>
   <data name="EditActionDialog_SortExpression" xml:space="preserve">
     <value>Сортировать выражения</value>
   </data>
   <data name="EditActionDialog_SelectParameters" xml:space="preserve">
-    <value>Выбор параметров</value>
+    <value>Выберите параметры</value>
   </data>
   <data name="EditActionDialog_NoActionWillBeTriggered" xml:space="preserve">
-    <value>Никакие действия не будут активированы</value>
+    <value>Никакие действия не будут срабатывать</value>
   </data>
   <data name="EditActionDialog_NavigateToReport" xml:space="preserve">
-    <value>Перейти к отчету</value>
+    <value>Перейдите к отчету</value>
   </data>
   <data name="EditActionDialog_Text" xml:space="preserve">
-    <value>Изменить действие</value>
+    <value>Редактировать действия</value>
   </data>
   <data name="EditActionDialog_Parameters" xml:space="preserve">
     <value>Параметры</value>
@@ -1330,22 +1321,22 @@
     <value>Предоставляет экземпляр документа отчета для источника отчета.</value>
   </data>
   <data name="EditReportSourceDialog_EditParameters" xml:space="preserve">
-    <value>Редактировать параметры</value>
+    <value>Параметры редактирования</value>
   </data>
   <data name="EditReportSourceDialog_ChooseSource" xml:space="preserve">
     <value>Выберите источник</value>
   </data>
   <data name="EditReportSourceDialog_ObjectInstance" xml:space="preserve">
-    <value>Экземпляр объекта (устаревший)</value>
+    <value>Экземпляр объекта (наследие)</value>
   </data>
   <data name="EditReportSourceDialog_TypeName" xml:space="preserve">
     <value>Имя типа</value>
   </data>
   <data name="EditReportSourceDialog_XxmlMarkup" xml:space="preserve">
-    <value>XML-разметка</value>
+    <value>XML разметки</value>
   </data>
   <data name="EditReportSourceDialog_UrlToFile" xml:space="preserve">
-    <value>URL-адрес или файл</value>
+    <value>URL или файл</value>
   </data>
   <data name="EditReportSourceDialog_None" xml:space="preserve">
     <value>Никакой</value>
@@ -1354,10 +1345,10 @@
     <value>Настройка источника</value>
   </data>
   <data name="EditReportSourceDialog_Text" xml:space="preserve">
-    <value>Изменить источник отчета</value>
+    <value>Редактировать источник отчета</value>
   </data>
   <data name="EditTypeReportSourceControl_Description" xml:space="preserve">
-    <value>Позволяет загрузить документ отчета из полного имени сборки.</value>
+    <value>Позволяет загружать документ отчета из квалифицированное имя сборки.</value>
   </data>
   <data name="EditTypeReportSourceControl_Text" xml:space="preserve">
     <value>Настройка источника отчета типа:</value>
@@ -1366,25 +1357,25 @@
     <value>Выберите тип отчета:</value>
   </data>
   <data name="EditUriReportSourceControl_Description" xml:space="preserve">
-    <value>Позволяет загрузить документ отчета из допустимого URI.</value>
+    <value>Позволяет загружать документ отчета из действительного Ури.</value>
   </data>
   <data name="EditUriReportSourceControl_Text" xml:space="preserve">
-    <value>Настройка источника отчета URI:</value>
+    <value>Настройка источника отчета Ури:</value>
   </data>
   <data name="EditUriReportSourceControl_SelectFile" xml:space="preserve">
-    <value>Выберите файл или введите допустимый URL-адрес:</value>
+    <value>Выберите файл или введите действительный URL:</value>
   </data>
   <data name="EditXmlReportSourceControl_Description" xml:space="preserve">
-    <value>Позволяет загрузить документ отчета из XML-разметки.</value>
+    <value>Позволяет загружать документ отчета из разметки XML.</value>
   </data>
   <data name="EditXmlReportSourceControl_Text" xml:space="preserve">
     <value>Настройка источника отчета XML:</value>
   </data>
   <data name="EditXmlReportSourceControl_EnterXml" xml:space="preserve">
-    <value>Введите XML-разметку отчета:</value>
+    <value>Введите отчет разметки XML:</value>
   </data>
   <data name="SelectReportDocument" xml:space="preserve">
-    <value>Выбор документа отчета</value>
+    <value>Выберите отчет о документе</value>
   </data>
   <data name="SelectFile" xml:space="preserve">
     <value>
@@ -1394,37 +1385,37 @@
     <value>Файлы отчетов</value>
   </data>
   <data name="Null" xml:space="preserve">
-    <value>NULL</value>
+    <value>Null</value>
   </data>
   <data name="ActionEditor_EditAction" xml:space="preserve">
-    <value>Изменить действие</value>
+    <value>Редактировать действия</value>
   </data>
   <data name="ActionEditor_EditActionOn" xml:space="preserve">
-    <value>Изменить действие на</value>
+    <value>Редактировать действие на</value>
   </data>
   <data name="SortingActionTargetsEditor_Title" xml:space="preserve">
-    <value>Изменение целей действия сортировки</value>
+    <value>Изменение сортировки целей действий</value>
   </data>
   <data name="SortingActionTargetsEditor_Description_PartOne" xml:space="preserve">
-    <value>Элементы данных/группы, которые требуется сортировать, должны находиться в той же или дочерней области данных в соответствии с текущим элементом. Пример: чтобы отсортировать строку, связанную с вложенной группой, элемент отчета должен быть в строке, связанной с родительской группой или выше в иерархии вложения.</value>
+    <value>Элементы/группы данных, которые вы хотите сортировать, должны находиться в одной и той же области данных для детей в соответствии с текущим пунктом. Пример: для сортировки строки, связанной с вложенной группой, элемент отчета должен быть в строке, связанной с родительской группой или выше в иерархии сдерживания.</value>
   </data>
   <data name="ActionTargetsEditor_Description_PartTwo" xml:space="preserve">
-    <value>Если элемент или группа не находятся в целевом списке, убедитесь, что он имеет допустимое имя.</value>
+    <value>Если элемент или группа не находятся в целевом списке, убедитесь, что он имеет действительное имя.</value>
   </data>
   <data name="ToggleVisibilityTargetsEditor_Title" xml:space="preserve">
-    <value>Редактировать цели видимости переключателя</value>
+    <value>Цели редактирования переключения видимости</value>
   </data>
   <data name="ToggleVisibilityTargetsEditor_Description" xml:space="preserve">
-    <value>Элементы или группы отчета, которые требуется отобразить или скрыть, должны находиться в одной или дочерней области данных в соответствии с текущим элементом. Пример: чтобы скрыть строку, связанную с вложенной группой, элемент отчета должен быть в строке, связанной с родительской группой или выше в иерархии вложения.</value>
+    <value>Элементы/группы отчета, которые вы хотите показать или скрыть, должны находиться в одной и той же области данных для детей в соответствии с текущим пунктом. Пример: чтобы скрыть строку, связанную с вложенной группой, элемент отчета должен быть в строке, связанной с родительской группой или выше в иерархии сдерживания.</value>
   </data>
   <data name="ActionTargetsEditor_Columns_ItemGroup" xml:space="preserve">
     <value>Номенклатура/Группа</value>
   </data>
   <data name="CalculatedFieldCollectionEditor_Validation_Error" xml:space="preserve">
-    <value>Имя вычисляемого поля не может быть пустым.</value>
+    <value>Расчетное название поля не может быть пустым.</value>
   </data>
   <data name="CalculatedFieldCollectionEditor_Validation_DuplicateError" xml:space="preserve">
-    <value>Повторяющееся имя вычисляемого поля:</value>
+    <value>Дублировать вычисляное название поля:</value>
   </data>
   <data name="CalculatedFieldCollectionEditor_Columns_DataType" xml:space="preserve">
     <value>Тип данных</value>
@@ -1436,52 +1427,52 @@
     <value>Псевдоним</value>
   </data>
   <data name="DataFieldMappingCollectionEditor_Title" xml:space="preserve">
-    <value>Редактирование сопоставлений</value>
+    <value>Редактировать сопоставления</value>
   </data>
   <data name="DataFieldMappingCollectionEditor_Validate_NameEmptyError" xml:space="preserve">
-    <value>Имя поля не может быть пустым.</value>
+    <value>Название поля не может быть пустым.</value>
   </data>
   <data name="DataFieldMappingCollectionEditor_Validate_AliasEmptyError" xml:space="preserve">
     <value>Псевдоним поля не может быть пустым.</value>
   </data>
   <data name="DataFieldMappingCollectionEditor_Validate_DuplicateFieldName" xml:space="preserve">
-    <value>Повторяющееся имя поля:</value>
+    <value>Дублированное название поля:</value>
   </data>
   <data name="DataFieldMappingCollectionEditor_Validate_DuplicateFieldAlias" xml:space="preserve">
-    <value>Повторяющийся псевдоним поля:</value>
+    <value>Дубликат поля псевдонима:</value>
   </data>
   <data name="LocationContext_GetObjectDefinitions_Location" xml:space="preserve">
-    <value>Получает расположение (Широта/Долгота) текущего экземпляра точки данных (специфическая карта).</value>
+    <value>Получает местоположение (Широта/Долгота) текущего экземпляра точки данных (специфическая карта).</value>
   </data>
   <data name="LocationContext_GetObjectDefinitions_Latitude" xml:space="preserve">
-    <value>Получает широту текущего экземпляра точки данных (конкретную карту).</value>
+    <value>Получает широту текущего экземпляра точки данных (конкретная карта).</value>
   </data>
   <data name="LocationContext_GetObjectDefinitions_Longitude" xml:space="preserve">
-    <value>Получает долготу текущего экземпляра точки данных (конкретная карта).</value>
+    <value>Получает долготу текущего экземпляра точки данных (специфическая карта).</value>
   </data>
   <data name="Operator" xml:space="preserve">
     <value>Оператор</value>
   </data>
   <data name="FormattingRuleEditor_Comment" xml:space="preserve">
-    <value>Если ввести символ "7" в ячейке "значение", по умолчанию это вычисляется как строка "7". Чтобы сравнить числовое выражение с числом 7, используйте синтаксис выражения, начинающийся со знака равенства: = 7. При предварительном просмотре отчета может возникнуть ошибка во время выполнения из-за несовпадений типов данных аналогично: "не удается сравнить данные типов System. Int32 и System. String".</value>
+    <value>При вводе персонажа "7" в ячейку значения по умолчанию это вычисляет строку "7". Для сравнения числового выражения с числом 7 используйте синтаксис выражения, который начинается с равного знака: = 7. При предварительном просмотре отчета можно увидеть ошибку времени, допущена в несовпадения типов данных, аналогично: «не удается сравнивать данные типов System. Int32 и System. строка».</value>
   </data>
   <data name="Duplicate" xml:space="preserve">
     <value>Дублировать</value>
   </data>
   <data name="ShapeLegendItemContext_GetObjectDefinitions_RangeMinExpression_Description" xml:space="preserve">
-    <value>Определяет минимальное значение соответствующего диапазона данных (специфическая серия карт фигур).</value>
+    <value>Определяет минимальное значение соответствующего диапазона данных (конкретная серия карт формы).</value>
   </data>
   <data name="ShapeLegendItemContext_GetObjectDefinitions_RangeMaxExpression_Description" xml:space="preserve">
-    <value>Определяет максимальное значение соответствующего диапазона данных (специфическая серия карт фигур).</value>
+    <value>Определяет максимальную величину соответствующего диапазона данных (конкретная серия карт формы).</value>
   </data>
   <data name="MapRelationPairCollectionEditor_Columns_AnalyticalField" xml:space="preserve">
     <value>Аналитическое поле</value>
   </data>
   <data name="MapRelationPairCollectionEditor_Columns_ShapefileField" xml:space="preserve">
-    <value>Поле шейп-файла</value>
+    <value>Шапефиле Филд</value>
   </data>
   <data name="NoneTreeAdapter_SelectingNone" xml:space="preserve">
-    <value>При выборе "None" текущая привязка очищается.</value>
+    <value>Выбор «нет» очищает текущий переплет.</value>
   </data>
   <data name="ParameterCollectionEditor_Columns_ParameterName" xml:space="preserve">
     <value>Имя Параметра</value>
@@ -1490,9 +1481,18 @@
     <value>Значение параметра</value>
   </data>
   <data name="SqlDataSourceParameterCollectionEditor_Columns_DbType" xml:space="preserve">
-    <value>Тип БД</value>
+    <value>Тип DB</value>
   </data>
   <data name="None" xml:space="preserve">
-    <value>ни</value>
+    <value>Ни один</value>
+  </data>
+  <data name="WebService_ParameterCollectionEditor_Columns_Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="ConditionalFormattingPrimaryItemSelectorDescription" xml:space="preserve">
+    <value>Выберите первичный элемент, который в качестве шаблона будет использоваться условным форматированием. Обновленный условный форматирование будет применен ко всем выбранным элементам. Все правила форматирования, не перечисленные в редакторе, будут удалены.</value>
+  </data>
+  <data name="ConditionalFormattingPrimaryItemSelectorTitle" xml:space="preserve">
+    <value>Селектор первичного элемента</value>
   </data>
 </root>

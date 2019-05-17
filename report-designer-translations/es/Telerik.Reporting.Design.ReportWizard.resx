@@ -118,52 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BandReportWizardDescription" xml:space="preserve">
-    <value>Le guía a través de la creación de un informe de banda.</value>
+    <value>Le guiará a través de la creación de un informe de banda.</value>
   </data>
   <data name="BandReportWizardName" xml:space="preserve">
-    <value>Asistente para informes de bandas</value>
+    <value>Asistente de informe de banda</value>
   </data>
   <data name="BandWizard_AdjustItemsOption" xml:space="preserve">
-    <value>Ajustar elementos de informe para ajustar el espacio disponible</value>
+    <value>Ajuste los elementos de informe para ajustar el espacio disponible</value>
   </data>
   <data name="BandWizard_AvailableLayouts" xml:space="preserve">
     <value>Diseños disponibles:</value>
   </data>
   <data name="BandWizard_Builder_GrandTotal" xml:space="preserve">
-    <value>Gran total:</value>
+    <value>total:</value>
   </data>
   <data name="BandWizard_Builder_SubTotal" xml:space="preserve">
-    <value>Sub-total:</value>
+    <value>Subtotal:</value>
   </data>
   <data name="BandWizard_GenerateTotalsOption" xml:space="preserve">
-    <value>Generar sub-totales y grandes totales</value>
+    <value>Genere subtotales y grandes totales</value>
   </data>
   <data name="BandWizard_PageSettings" xml:space="preserve">
     <value>Configuración de página</value>
   </data>
   <data name="BlankReportWizardDescription" xml:space="preserve">
-    <value>Crea un informe vacío para que pueda empezar a construirlo desde cero.</value>
+    <value>Crea un informe vacío para que pueda empezar a construarlo desde cero.</value>
   </data>
   <data name="BlankReportWizardName" xml:space="preserve">
     <value>Informe en blanco</value>
   </data>
   <data name="BuildReportTransactionText" xml:space="preserve">
-    <value>Informe de compilación</value>
+    <value>Generar informe</value>
   </data>
   <data name="ChooseReportLayout" xml:space="preserve">
-    <value>Elegir diseño de informe</value>
+    <value>Elija diseño de informe</value>
   </data>
   <data name="ChoroplethReportWizardDescription" xml:space="preserve">
-    <value>Muestra los datos del informe como un mapa con áreas de colores temáticos.</value>
+    <value>Muestra los datos del informe como un mapa con áreas de colores temáticamente.</value>
   </data>
   <data name="ChoroplethReportWizardName" xml:space="preserve">
-    <value>Choropleth Wizard</value>
+    <value>Asistente de choropleth</value>
   </data>
   <data name="CrosstabReportWizardDescription" xml:space="preserve">
-    <value>Le guía a través de la creación de un informe cruzadas.</value>
+    <value>Le guiará a través de la creación de un informe crosstab.</value>
   </data>
   <data name="CrosstabReportWizardName" xml:space="preserve">
-    <value>Cruzadas Wizard</value>
+    <value>Asistente de crosstab</value>
   </data>
   <data name="DataSourceFieldMappingWizardName" xml:space="preserve">
     <value>Asistente para asignación de campos de origen de datos</value>
@@ -172,34 +172,34 @@
     <value>Asistente para orígenes de datos</value>
   </data>
   <data name="FieldMappings_DataSourceFields" xml:space="preserve">
-    <value>Campos de origen de datos</value>
+    <value>Los campos de origen de datos</value>
   </data>
   <data name="FieldMappings_TemplateFields" xml:space="preserve">
-    <value>Campos de plantilla</value>
+    <value>Los campos de plantilla</value>
   </data>
   <data name="GraphReportWizardDescription" xml:space="preserve">
     <value>Guía a través de la creación de una variedad de gráficos.</value>
   </data>
   <data name="GraphReportWizardName" xml:space="preserve">
-    <value>Asistente para gráficos</value>
+    <value>El Asistente de gráficos</value>
   </data>
   <data name="ImportReportWizardDescription" xml:space="preserve">
-    <value>Inicia el Asistente para el informe de importación para convertir un informe de otro formato de informes.</value>
+    <value>Inicia el Asistente para importar informes para convertir un informe de otro formato de informe.</value>
   </data>
   <data name="ImportReportWizardName" xml:space="preserve">
-    <value>Asistente para informes de importación</value>
+    <value>Asistente para importar informes</value>
   </data>
   <data name="InvoiceReportWizardDescription" xml:space="preserve">
-    <value>Le guía a través de la creación de un informe de factura.</value>
+    <value>Le guiará a través de la creación de un informe factura.</value>
   </data>
   <data name="InvoiceReportWizardName" xml:space="preserve">
-    <value>Asistente para informes de facturas</value>
+    <value>Asistente para informe de facturas</value>
   </data>
   <data name="LabelReportWizardDescription" xml:space="preserve">
-    <value>Le guía a través de la creación de un informe de etiqueta.</value>
+    <value>Le guiará a través de la creación de un informe Label.</value>
   </data>
   <data name="LabelReportWizardName" xml:space="preserve">
-    <value>Asistente para informes de etiquetas</value>
+    <value>Asistente para informe de etiquetas</value>
   </data>
   <data name="LeftAlignedLayoutDesc" xml:space="preserve">
     <value>El diseño alineado a la izquierda coloca los elementos en cada sección a partir del principio de la sección.</value>
@@ -208,34 +208,34 @@
     <value>Alineado a la izquierda</value>
   </data>
   <data name="MapReportWizardDescription" xml:space="preserve">
-    <value>Muestra los datos del informe contra un fondo geográfico.</value>
+    <value>Muestra los datos del informe en un fondo geográfico.</value>
   </data>
   <data name="MapReportWizardName" xml:space="preserve">
-    <value>Asistente para mapas</value>
+    <value>Asistente de mapa</value>
   </data>
   <data name="OutlineLayoutDesc" xml:space="preserve">
-    <value>El diseño de contornos organiza elementos de izquierda a derecha con los elementos de cada grupo que van más a la derecha mediante un desvío fijo.</value>
+    <value>El diseño de contorno organiza los elementos de izquierda a derecha con los elementos de cada grupo que van más allá a la derecha mediante un desplazamiento fijo.</value>
   </data>
   <data name="OutlineLayoutName" xml:space="preserve">
     <value>Esquema</value>
   </data>
   <data name="ProductCatalogReportWizardDescription" xml:space="preserve">
-    <value>Le guía a través de la creación de un informe de catálogo de productos</value>
+    <value>Le guiará a través de la creación de un informe catálogo de productos</value>
   </data>
   <data name="ProductCatalogReportWizardName" xml:space="preserve">
-    <value>Asistente para informes de catálogo de productos</value>
+    <value>Asistente de informe de catálogo de productos</value>
   </data>
   <data name="ReportWizardTransactionName" xml:space="preserve">
     <value>Inicializar un nuevo informe de banda.</value>
   </data>
   <data name="SteppedLayoutDesc" xml:space="preserve">
-    <value>El diseño escalonado organiza elementos en columnas para que no se superpongan verticalmente.</value>
+    <value>El diseño escalonado organiza los elementos en columnas para que no se solapen verticalmente.</value>
   </data>
   <data name="SteppedLayoutName" xml:space="preserve">
     <value>Caminó</value>
   </data>
   <data name="TableReportWizardDescription" xml:space="preserve">
-    <value>Le guía a través de la creación de un informe de tabla.</value>
+    <value>Le guiará a través de la creación de un informe tabla.</value>
   </data>
   <data name="TableReportWizardName" xml:space="preserve">
     <value>Asistente para tablas</value>

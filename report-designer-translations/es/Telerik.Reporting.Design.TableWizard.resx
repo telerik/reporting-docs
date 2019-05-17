@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CrosstabWizard_Title" xml:space="preserve">
-    <value>Cruzadas Wizard</value>
+    <value>Asistente de crosstab</value>
   </data>
   <data name="ArrangeCrosstabPage_AggregateRequired_Warning" xml:space="preserve">
     <value>Cuando hay uno o más grupos de columnas especificados,
 debe especificar una función de agregado adecuada
-para cada valor del detalle del cruzadas.</value>
+para cada valor de detalle de la tabulación cruzada.</value>
   </data>
   <data name="ArrangeButtons_Add_Text" xml:space="preserve">
     <value>Agregar</value>
   </data>
   <data name="ArrangeButtons_Remove_Text" xml:space="preserve">
-    <value>Quitar</value>
+    <value>Eliminar</value>
   </data>
   <data name="ArrangeButtons_MoveUp_Text" xml:space="preserve">
     <value>Subir</value>
@@ -150,7 +150,7 @@ para cada valor del detalle del cruzadas.</value>
     <value>Valores de detalle</value>
   </data>
   <data name="ArrangeCrosstabPage_ChooseFunctionButton_Text" xml:space="preserve">
-    <value>Función</value>
+    <value>funcionar</value>
   </data>
   <data name="ArrangeCrosstabPage_AddDetailValues_Instruction" xml:space="preserve">
     <value>Arrastre los campos de origen de datos aquí para mostrarlos como valores de detalle.</value>
@@ -171,7 +171,7 @@ para cada valor del detalle del cruzadas.</value>
     <value>Organizar campos</value>
   </data>
   <data name="ArrangeTablePage_Description" xml:space="preserve">
-    <value>Organizar los campos de origen de datos para mostrarlos como columnas de tabla.</value>
+    <value>Organice los campos de origen de datos para mostrarlos como columnas de tabla.</value>
   </data>
   <data name="ArrangeTablePage_AddTableColumns_Instruction" xml:space="preserve">
     <value>Arrastre los campos de origen de datos aquí para mostrarlos como columnas de tabla.</value>
@@ -186,25 +186,25 @@ para cada valor del detalle del cruzadas.</value>
     <value>Total</value>
   </data>
   <data name="ChooseLayoutPage_Title" xml:space="preserve">
-    <value>Elegir diseño</value>
+    <value>Elija diseño</value>
   </data>
   <data name="ChooseLayoutPage_Description" xml:space="preserve">
-    <value>Elija si desea mostrar subtotales y grandes totales y su ubicación.</value>
+    <value>Elija si desea mostrar los subtotales y los totales generales, y su ubicación.</value>
   </data>
   <data name="ChooseLayoutPage_NoTotals_Text" xml:space="preserve">
     <value>No hay subtotales y grandes totales</value>
   </data>
   <data name="ChooseLayoutPage_SteppedLayout_Text" xml:space="preserve">
-    <value>Diseño escalonado, subtotales anteriores</value>
+    <value>Diseño escalonado, subtotales por encima</value>
   </data>
   <data name="ChooseLayoutPage_BlockedLayoutAbove_Text" xml:space="preserve">
-    <value>Diseño bloqueado, subtotales anteriores</value>
+    <value>Diseño bloqueado, subtotales por encima</value>
   </data>
   <data name="ChooseLayoutPage_BlockedLayoutBelow_Text" xml:space="preserve">
-    <value>Diseño bloqueado, subtotales por debajo</value>
+    <value>Diseño bloqueado, subtotales debajo</value>
   </data>
   <data name="DataSourcePage_DataSourcesList_Text" xml:space="preserve">
-    <value>Orígenes de datos</value>
+    <value>Fuentes de datos</value>
   </data>
   <data name="DataSourcePage_Details_Text" xml:space="preserve">
     <value>Detalles</value>
@@ -213,43 +213,43 @@ para cada valor del detalle del cruzadas.</value>
     <value>&amp;Agregar nuevo origen de datos...</value>
   </data>
   <data name="DataSourcePage_Description" xml:space="preserve">
-    <value>Elija el origen de datos al que desea conectarse o crear uno nuevo.</value>
+    <value>Elija el origen de datos al que le gustaría conectarse o cree uno nuevo.</value>
   </data>
   <data name="DataSourcePage_Title" xml:space="preserve">
-    <value>Elegir un origen de datos</value>
+    <value>Elija un origen de datos</value>
   </data>
   <data name="StylesPage_NormalStyle_Text" xml:space="preserve">
     <value>Normal</value>
   </data>
   <data name="StylesPage_BlueOpalStyle_Text" xml:space="preserve">
-    <value>Ópalo azul</value>
+    <value>Blue Opal</value>
   </data>
   <data name="StylesPage_ApexStyle_Text" xml:space="preserve">
-    <value>Ápice</value>
+    <value>cumbre</value>
   </data>
   <data name="StylesPage_AspectStyle_Text" xml:space="preserve">
-    <value>Aspecto</value>
+    <value>aspecto</value>
   </data>
   <data name="StylesPage_CivicStyle_Text" xml:space="preserve">
-    <value>Civic</value>
+    <value>cívico</value>
   </data>
   <data name="StylesPage_CorporateStyle_Text" xml:space="preserve">
-    <value>Corporativa</value>
+    <value>corporativo</value>
   </data>
   <data name="StylesPage_OfficeStyle_Text" xml:space="preserve">
-    <value>Oficina</value>
+    <value>función</value>
   </data>
   <data name="StylesPage_SolsticeStyle_Text" xml:space="preserve">
-    <value>Solsticio</value>
+    <value>solsticio</value>
   </data>
   <data name="SummaryInfoPage_SummaryLabel_Text" xml:space="preserve">
     <value>Resumen</value>
   </data>
   <data name="SummaryInfoPage_Description" xml:space="preserve">
-    <value>Revise la siguiente información resumida antes de que comience la generación.</value>
+    <value>Revise la siguiente información de Resumen antes de que comience la generación.</value>
   </data>
   <data name="SummaryInfoPage_Title" xml:space="preserve">
-    <value>Resumen de la revisión</value>
+    <value>Resumen de revisión</value>
   </data>
   <data name="TableWizard_Title" xml:space="preserve">
     <value>Asistente para tablas</value>

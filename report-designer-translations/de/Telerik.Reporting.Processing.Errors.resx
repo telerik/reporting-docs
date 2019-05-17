@@ -118,9 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="NoRuntimeItemDefined" xml:space="preserve">
-    <value>Für das {0}-Element ist kein Laufzeitelement definiert.</value>
+    <value>Kein Laufzeitpunkt ist für {0}-Punkt definiert</value>
   </data>
   <data name="RenderingFormatNotAvailable" xml:space="preserve">
-    <value>das {0}-Rendering-Format ist nicht verfügbar.</value>
+    <value>{0} Rendering-Format ist nicht verfügbar.</value>
   </data>
 </root>

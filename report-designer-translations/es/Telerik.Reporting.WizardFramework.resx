@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CancelWizard_Warning" xml:space="preserve">
-    <value>¿confirma que desea cancelar este asistente?</value>
+    <value>¿Está seguro de que desea cancelar este asistente?</value>
   </data>
   <data name="Unexpected_Error" xml:space="preserve">
     <value>Se ha producido un error inesperado.</value>
@@ -130,12 +130,12 @@
     <value>Cancelar</value>
   </data>
   <data name="Finish" xml:space="preserve">
-    <value>&amp;Fin &gt; &gt; |</value>
+    <value>&amp;Finish &gt; &gt; |</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>&amp;Siguiente &gt;</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>&lt; </value>
+    <value>&lt; &amp; Back</value>
   </data>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutoDetectModeWarningText" xml:space="preserve">
-    <value>Le passage à la détection automatique éliminera les changements que vous avez faits!</value>
+    <value>Le passage à la détection automatique défausse les modifications que vous avez apportées!</value>
   </data>
   <data name="Operator" xml:space="preserve">
     <value>Opérateur</value>
@@ -127,7 +127,7 @@
     <value>Mode manuel</value>
   </data>
   <data name="AutoDetectModeWarningCaption" xml:space="preserve">
-    <value>Avertissement</value>
+    <value>Attention</value>
   </data>
   <data name="TitleRelatedFields" xml:space="preserve">
     <value>Domaines connexes</value>
@@ -154,46 +154,46 @@
     <value>Champ</value>
   </data>
   <data name="ErrorNoSchemaAvailable" xml:space="preserve">
-    <value>Le schéma n'est pas disponible.</value>
+    <value>Le schéma n’est pas disponible.</value>
   </data>
   <data name="LeftJoinField" xml:space="preserve">
     <value>Champ de jointure gauche</value>
   </data>
   <data name="RightTable" xml:space="preserve">
-    <value>Table de droite</value>
+    <value>Table droite</value>
   </data>
   <data name="TitleSelectedFields" xml:space="preserve">
     <value>Champs sélectionnés</value>
   </data>
   <data name="RightJoinField" xml:space="preserve">
-    <value>Champ de jointure droite</value>
+    <value>Zone de jointure droite</value>
   </data>
   <data name="TitleDatabaseView" xml:space="preserve">
     <value>Vue de base de données</value>
   </data>
   <data name="DefaultSchema" xml:space="preserve">
-    <value>[schéma par défaut]</value>
+    <value>[Schéma par défaut]</value>
   </data>
   <data name="ColumnNameOperator" xml:space="preserve">
     <value>Opérateur</value>
   </data>
   <data name="WarningRelationIsNotComplete" xml:space="preserve">
-    <value>Une relation doit spécifier la table gauche et droite. Spécifiez les deux tables ou supprimez cette relation.</value>
+    <value>Une relation doit spécifier la table de gauche et de droite. Spécifiez les deux tables ou supprimez cette relation.</value>
   </data>
   <data name="ErrorUnrelatedTables" xml:space="preserve">
-    <value>Vous avez des tables non liées: </value>
+    <value>Vous avez des tables indépendantes: </value>
   </data>
   <data name="ButtonAddText" xml:space="preserve">
     <value>Ajouter</value>
   </data>
   <data name="ErrorEmptySelectClause" xml:space="preserve">
-    <value>Veuillez sélectionner les colonnes de table.</value>
+    <value>Veuillez sélectionner les colonnes du tableau.</value>
   </data>
   <data name="ErrorInvalidProperty" xml:space="preserve">
-    <value>Propriété non valide ou manquante</value>
+    <value>Propriété invalide ou manquante</value>
   </data>
   <data name="Alias" xml:space="preserve">
-    <value>Alias</value>
+    <value>faux nom</value>
   </data>
   <data name="FieldName" xml:space="preserve">
     <value>Nom du champ</value>
@@ -205,33 +205,33 @@
     <value>Nom du paramètre</value>
   </data>
   <data name="PreviewValue" xml:space="preserve">
-    <value>Aperçu de la valeur</value>
+    <value>Valeur de prévisualisation</value>
   </data>
   <data name="StateWarningCaption" xml:space="preserve">
     <value>État du concepteur de requêtes SQL</value>
   </data>
   <data name="StateWarningText" xml:space="preserve">
-    <value>La requête SQL a été éditée en dehors du concepteur de requêtes SQL ou le schéma DB a été modifié. L'utilisation du concepteur de requêtes ignorera les modifications de requête SQL.</value>
+    <value>La requête SQL a été modifiée en dehors du concepteur de requêtes SQL ou le schéma de base de données a été modifié. L’utilisation du concepteur de requêtes défausse les modifications de requête SQL.</value>
   </data>
   <data name="StateRestoringErrorText" xml:space="preserve">
-    <value>Une erreur s'est produite lors de la restauration de l'état enregistré.</value>
+    <value>Une erreur s’est produite lors de la restauration de l’état enregistré.</value>
   </data>
   <data name="StateRestoringErrorCaption" xml:space="preserve">
-    <value>Restaurer l'erreur d'État</value>
+    <value>Restauration de l’erreur d’État</value>
   </data>
   <data name="JoinTypeIsNotSelected" xml:space="preserve">
-    <value>Le type de jointure n'est pas sélectionné.</value>
+    <value>Le type de jointure n’est pas sélectionné.</value>
   </data>
   <data name="Parameters_Error_ProviderNamedParameters" xml:space="preserve">
     <value>Le fournisseur sélectionné ne prend pas en charge les paramètres nommés.</value>
   </data>
   <data name="Parameter_Error_PreviewValueIsRequired" xml:space="preserve">
-    <value>La valeur de prévisualisation du filtre est requise</value>
+    <value>La valeur d’aperçu du filtre est requise</value>
   </data>
   <data name="Filter_Error_FieldNameIsRequired" xml:space="preserve">
     <value>Le nom du champ de filtre est requis.</value>
   </data>
   <data name="Relations_Error_ConditionIsRequired" xml:space="preserve">
-    <value>Les champs de relation sont requis.</value>
+    <value>Les champs de relation sont obligatoires.</value>
   </data>
 </root>

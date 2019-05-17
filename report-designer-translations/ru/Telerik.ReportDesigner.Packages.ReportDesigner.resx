@@ -117,31 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PreviewTab_FindDescription" xml:space="preserve">
-    <value>
-Открывает диалоговое окно "Поиск" для поиска в документе. Если метаданные поиска не подготовлены, вызывает обновление отчета для сбора метаданных поиска.
-     </value>
-  </data>
-  <data name="PreviewTab_FindText" xml:space="preserve">
-    <value>Найти</value>
-  </data>
-  <data name="Insert_WebServiceDataSource_Description" xml:space="preserve">
-    <value>Источник данных веб-службы позволяет элементам данных получать данные из предопределенных веб-служб.</value>
-  </data>
-  <data name="Insert_WebServiceDataSource_Text" xml:space="preserve">
-    <value>Источник данных веб-службы</value>
-  </data>
-  <data name="ReportBookTab_Toc_Delete_Text" xml:space="preserve">
-    <value>Удалить</value>
-  </data>
-  <data name="ReportBookTab_Toc_Delete_Description" xml:space="preserve">
-    <value>Löschen Sie den Bericht, der als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
-  </data>
   <data name="PreviewTab_Back" xml:space="preserve">
     <value>Обратно</value>
   </data>
   <data name="PreviewTab_DocumentMap" xml:space="preserve">
-    <value>Карта документа</value>
+    <value>Карта документов</value>
   </data>
   <data name="PreviewTab_Export" xml:space="preserve">
     <value>Экспортировать</value>
@@ -168,13 +148,13 @@
     <value>Настройка страницы</value>
   </data>
   <data name="PreviewTab_ParameterArea" xml:space="preserve">
-    <value>Область параметров</value>
+    <value>Площадь параметра</value>
   </data>
   <data name="PreviewTab_PreviousPage" xml:space="preserve">
     <value>Предходная</value>
   </data>
   <data name="PreviewTab_Print" xml:space="preserve">
-    <value>Печать...</value>
+    <value>Печати...</value>
   </data>
   <data name="PreviewTab_PrintPreview" xml:space="preserve">
     <value>Предварительный просмотр печати</value>
@@ -195,22 +175,22 @@
     <value>Посмотреть</value>
   </data>
   <data name="View_DataExplorer" xml:space="preserve">
-    <value>Обозреватель данных</value>
+    <value>Исследователь данных</value>
   </data>
   <data name="PreviewTab_ViewDesign" xml:space="preserve">
     <value>Дизайн</value>
   </data>
   <data name="PreviewTab_ViewDesignDescription" xml:space="preserve">
-    <value>Переключение в режим конструктора (F6)</value>
+    <value>Переключиться на дизайн View (F6)</value>
   </data>
   <data name="View_GroupExplorer" xml:space="preserve">
-    <value>Обозреватель групп</value>
+    <value>Группа Explorer</value>
   </data>
   <data name="PreviewTab_ViewPreview" xml:space="preserve">
     <value>Предварительный просмотр</value>
   </data>
   <data name="View_ReportExplorer" xml:space="preserve">
-    <value>Обозреватель отчетов</value>
+    <value>Отчет исследователь</value>
   </data>
   <data name="PreviewTab_ZoomText" xml:space="preserve">
     <value>Увеличить</value>
@@ -225,31 +205,31 @@
     <value>Смежные выше</value>
   </data>
   <data name="TableTools_Add_AdjacentBelowRowGroup_Text" xml:space="preserve">
-    <value>Прилегающих ниже</value>
+    <value>Рядом ниже</value>
   </data>
   <data name="TableTools_Add_AdjacentLeftColumnGroup_Text" xml:space="preserve">
-    <value>Смежный левый</value>
+    <value>Смежные левые</value>
   </data>
   <data name="TableTools_Add_AdjacentLeftColumnGroup_Description" xml:space="preserve">
-    <value>Смежный левый</value>
+    <value>Смежные левые</value>
   </data>
   <data name="TableTools_Add_AdjacentRightColumnGroup_Text" xml:space="preserve">
-    <value>Смежное право</value>
+    <value>Прилегающая правая</value>
   </data>
   <data name="TableTools_Add_AdjacentRightColumnGroup_Description" xml:space="preserve">
-    <value>Смежное право</value>
+    <value>Прилегающая правая</value>
   </data>
   <data name="TableTools_Add_ChildColumnGroup_Text" xml:space="preserve">
-    <value>Дочерняя группа</value>
+    <value>Детская группа</value>
   </data>
   <data name="TableTools_Add_ChildColumnGroup_Description" xml:space="preserve">
-    <value>Дочерняя группа</value>
+    <value>Детская группа</value>
   </data>
   <data name="TableTools_Add_ChildRowGroup_Text" xml:space="preserve">
-    <value>Дочерняя группа</value>
+    <value>Детская группа</value>
   </data>
   <data name="TableTools_Add_ChildRowGroup_Description" xml:space="preserve">
-    <value>Дочерняя группа</value>
+    <value>Детская группа</value>
   </data>
   <data name="TableTools_Add_ParentColumnGroup_Text" xml:space="preserve">
     <value>Родительская группа</value>
@@ -288,16 +268,16 @@
     <value>Ниже</value>
   </data>
   <data name="TableTools_ColumnGroup_Properties_Text" xml:space="preserve">
-    <value>Группа столбцов</value>
+    <value>Группа колонок</value>
   </data>
   <data name="TableTools_ColumnGroup_Properties_Description" xml:space="preserve">
-    <value>Свойства группы столбцов</value>
+    <value>Столбец группы свойства</value>
   </data>
   <data name="TableTools_ColumnGroup_Delete_Text" xml:space="preserve">
-    <value>Группа столбцов</value>
+    <value>Группа колонок</value>
   </data>
   <data name="TableTools_ColumnGroup_Delete_Description" xml:space="preserve">
-    <value>Удалить группу столбцов</value>
+    <value>Удаление группы столбцов</value>
   </data>
   <data name="TableTools_ColumnDelete_Text" xml:space="preserve">
     <value>Удалить Столбец</value>
@@ -309,112 +289,112 @@
     <value>Группа строк</value>
   </data>
   <data name="TableTools_RowGroup_Delete_Description" xml:space="preserve">
-    <value>Удалить группу строк</value>
+    <value>Удаление строки группы</value>
   </data>
   <data name="TableTools_RowsDelete_Text" xml:space="preserve">
-    <value>Удалить строки</value>
+    <value>Удаление строк</value>
   </data>
   <data name="TableTools_RowsDelete_Description" xml:space="preserve">
-    <value>Удалить строки</value>
+    <value>Удаление строк</value>
   </data>
   <data name="TableTools_InsertColumn_InsideGroupLeft_Text" xml:space="preserve">
-    <value>Внутри группы-слева</value>
+    <value>Внутри группы-левая</value>
   </data>
   <data name="TableTools_InsertColumn_InsideGroupLeft_Description" xml:space="preserve">
-    <value>Вставьте столбец внутри группы слева от текущего выделения.</value>
+    <value>Вставить столбец внутри группы, слева от текущего выделения.</value>
   </data>
   <data name="TableTools_InsertColumn_InsideGroupRight_Text" xml:space="preserve">
     <value>Внутри группы-справа</value>
   </data>
   <data name="TableTools_InsertColumn_InsideGroupRight_Description" xml:space="preserve">
-    <value>Вставьте столбец внутри группы, справа от текущего выделения.</value>
+    <value>Вставить столбец внутри группы, справа от текущего выбора.</value>
   </data>
   <data name="TableTools_InsertColumn_Left_Text" xml:space="preserve">
     <value>Лево</value>
   </data>
   <data name="TableTools_InsertColumn_Left_Description" xml:space="preserve">
-    <value>Вставка столбца слева от текущего выделения.</value>
+    <value>Вставить столбец слева от текущего выбора.</value>
   </data>
   <data name="TableTools_InsertColumn_OutsideGroupLeft_Text" xml:space="preserve">
     <value>Внешняя группа-левая</value>
   </data>
   <data name="TableTools_InsertColumn_OutsideGroupLeft_Description" xml:space="preserve">
-    <value>Вставка столбца за пределами группы слева от текущего выделения.</value>
+    <value>Вставить колонку за пределами группы, слева от текущего выбора.</value>
   </data>
   <data name="TableTools_InsertColumn_OutsideGroupRight_Text" xml:space="preserve">
-    <value>Внешняя группа-справа</value>
+    <value>Внешняя группа-правая</value>
   </data>
   <data name="TableTools_InsertColumn_OutsideGroupRight_Description" xml:space="preserve">
-    <value>Вставка столбца вне группы справа от текущего выделения.</value>
+    <value>Вставить столбец за пределы группы, справа от текущего выбора.</value>
   </data>
   <data name="TableTools_InsertColumn_Right_Text" xml:space="preserve">
     <value>Право</value>
   </data>
   <data name="TableTools_InsertColumn_Right_Description" xml:space="preserve">
-    <value>Вставка столбца справа от текущего выделения.</value>
+    <value>Вставить столбец справа от текущего выбора.</value>
   </data>
   <data name="TableTools_InsertRow_Above_Text" xml:space="preserve">
     <value>Выше</value>
   </data>
   <data name="TableTools_InsertRow_Above_Description" xml:space="preserve">
-    <value>Вставить строку над текущим выделением.</value>
+    <value>Вставьте строку выше текущего выбора.</value>
   </data>
   <data name="TableTools_InsertRow_Below_Text" xml:space="preserve">
     <value>Ниже</value>
   </data>
   <data name="TableTools_InsertRow_Below_Description" xml:space="preserve">
-    <value>Вставить строку под текущим выделением.</value>
+    <value>Вставьте строку ниже текущего выделения.</value>
   </data>
   <data name="TableTools_InsertRow_InsideGroupAbove_Text" xml:space="preserve">
     <value>Внутри группы-выше</value>
   </data>
   <data name="TableTools_InsertRow_InsideGroupAbove_Description" xml:space="preserve">
-    <value>Вставка строки внутри группы, над текущим выделением.</value>
+    <value>Вставьте строку внутри группы, выше текущего отбора.</value>
   </data>
   <data name="TableTools_InsertRow_InsideGroupBelow_Text" xml:space="preserve">
     <value>Внутри группы-ниже</value>
   </data>
   <data name="TableTools_InsertRow_InsideGroupBelow_Description" xml:space="preserve">
-    <value>Вставка строки внутри группы, ниже текущего выделения.</value>
+    <value>Вставьте строку внутри группы, ниже текущего выделения.</value>
   </data>
   <data name="TableTools_InsertRow_OutsideGroupAbove_Text" xml:space="preserve">
-    <value>Вне группы-выше</value>
+    <value>Внешняя группа-выше</value>
   </data>
   <data name="TableTools_InsertRow_OutsideGroupAbove_Description" xml:space="preserve">
-    <value>Вставка строки за пределами группы, над текущим выделением.</value>
+    <value>Вставьте строку вне группы, выше текущего отбора.</value>
   </data>
   <data name="TableTools_InsertRow_OutsideGroupBelow_Text" xml:space="preserve">
     <value>Внешняя группа-ниже</value>
   </data>
   <data name="TableTools_InsertRow_OutsideGroupBelow_Description" xml:space="preserve">
-    <value>Вставка строки за пределами группы, ниже текущего выделения.</value>
+    <value>Вставьте строку вне группы, ниже текущего отбора.</value>
   </data>
   <data name="TableTools_CellsMerge_Text" xml:space="preserve">
-    <value>Объединить ячейки</value>
+    <value>Слияние ячеек</value>
   </data>
   <data name="TableTools_CellsMerge_Description" xml:space="preserve">
-    <value>Объединить ячейки</value>
+    <value>Слияние ячеек</value>
   </data>
   <data name="TableTools_RotateLayout_Text" xml:space="preserve">
-    <value>Повернуть компоновку</value>
+    <value>Схема поворота</value>
   </data>
   <data name="TableTools_RotateLayout_Description" xml:space="preserve">
-    <value>Поворот макета и инвертирование групп. Строка в столбец и наоборот.</value>
+    <value>Поворачивает макет и переворачивает группы. Строка в столбец и наоборот.</value>
   </data>
   <data name="TableTools_RowGroup_Properties_Text" xml:space="preserve">
     <value>Группа строк</value>
   </data>
   <data name="TableTools_RowGroup_Properties_Description" xml:space="preserve">
-    <value>Свойства группы строк</value>
+    <value>Строка группа свойства</value>
   </data>
   <data name="TableTools_CellsSplit_Text" xml:space="preserve">
-    <value>Разделить ячейки</value>
+    <value>Сплит-клетки</value>
   </data>
   <data name="TableTools_CellsSplit_Description" xml:space="preserve">
-    <value>Разделить ячейки</value>
+    <value>Сплит-клетки</value>
   </data>
   <data name="TextBoxExpressions_Description" xml:space="preserve">
-    <value>Измените выражение значения.</value>
+    <value>Редактирование выражения значения.</value>
   </data>
   <data name="TextBoxExpressions_Text" xml:space="preserve">
     <value>Выражение...</value>
@@ -426,22 +406,22 @@
     <value>Валюта</value>
   </data>
   <data name="TextBoxFormat_DecreaseDecimal_Description" xml:space="preserve">
-    <value>Показать менее точное значение, показывая меньше десятичных разрядов.</value>
+    <value>Отображение менее точного значения, показывая меньшее количество знаков после запятой.</value>
   </data>
   <data name="TextBoxFormat_DecreaseDecimal_Text" xml:space="preserve">
-    <value>Уменьшить десятичное число</value>
+    <value>Уменьшение десятичного</value>
   </data>
   <data name="TextBoxFormat_Description" xml:space="preserve">
-    <value>Выберите способ отображения значений в текстовом поле.</value>
+    <value>Выберите, как отображаются значения в текстовом окне.</value>
   </data>
   <data name="TextBoxFormat_IncreaseDecimal_Description" xml:space="preserve">
-    <value>Показать более точное значение, показывая больше десятичных знаков.</value>
+    <value>Покажите более точное значение, показывая больше знаков после запятой.</value>
   </data>
   <data name="TextBoxFormat_IncreaseDecimal_Text" xml:space="preserve">
-    <value>Увеличить десятичную</value>
+    <value>Увеличение десятичного</value>
   </data>
   <data name="TextBoxFormat_Number_Description" xml:space="preserve">
-    <value>Отображать значение как число.</value>
+    <value>Отображение значения как числа.</value>
   </data>
   <data name="TextBoxFormat_Number_Text" xml:space="preserve">
     <value>Число</value>
@@ -456,10 +436,10 @@
     <value>Формат</value>
   </data>
   <data name="TextBoxTools_Text" xml:space="preserve">
-    <value>Инструменты текстового поля</value>
+    <value>Инструменты для текстовых коробок</value>
   </data>
   <data name="PreviewTab_Zoom10" xml:space="preserve">
-    <value>10%</value>
+    <value>10</value>
   </data>
   <data name="PreviewTab_Zoom100" xml:space="preserve">
     <value>100%</value>
@@ -471,7 +451,7 @@
     <value>200%</value>
   </data>
   <data name="PreviewTab_Zoom25" xml:space="preserve">
-    <value>25%</value>
+    <value>25</value>
   </data>
   <data name="PreviewTab_Zoom400" xml:space="preserve">
     <value>400%</value>
@@ -483,7 +463,7 @@
     <value>800%</value>
   </data>
   <data name="PreviewTab_ZoomDescription" xml:space="preserve">
-    <value>Увеличить (Ctrl + Sign ()). Уменьшить (Ctrl минус знак (-))</value>
+    <value>Увеличить (CTRL + плюс знак (+)). Уменьшить масштаб (CTRL + минус знак (-))</value>
   </data>
   <data name="PreviewTab_ZoomFullPage" xml:space="preserve">
     <value>Полная страница</value>
@@ -492,7 +472,7 @@
     <value>Ширина страницы</value>
   </data>
   <data name="TableTools_Add_AdjacentBelowRowGroup_Description" xml:space="preserve">
-    <value>Прилегающих ниже</value>
+    <value>Рядом ниже</value>
   </data>
   <data name="TableTools_AddGroup_Text" xml:space="preserve">
     <value>Группы</value>
@@ -504,19 +484,19 @@
     <value>Клетки</value>
   </data>
   <data name="TableTools_Add_ColumnGroup_Text" xml:space="preserve">
-    <value>Добавить группу столбцов</value>
+    <value>Добавить столбец группы</value>
   </data>
   <data name="TableTools_Delete_Text" xml:space="preserve">
     <value>Удалить</value>
   </data>
   <data name="TableTools_InsertGroup_Text" xml:space="preserve">
-    <value>Вставка группы</value>
+    <value>Вставить группу</value>
   </data>
   <data name="TableTools_Add_RowGroup_Text" xml:space="preserve">
-    <value>Добавить группу строк</value>
+    <value>Добавить строку группы</value>
   </data>
   <data name="TableTools_Text" xml:space="preserve">
-    <value>Инструменты таблицы</value>
+    <value>Таблица инструменты</value>
   </data>
   <data name="TextBoxFormat_Custom_Description" xml:space="preserve">
     <value>Сделать по заказу</value>
@@ -531,13 +511,13 @@
     <value>Дата</value>
   </data>
   <data name="TextBoxFormat_Default_Description" xml:space="preserve">
-    <value>Формат по умолчанию без определенного числового формата.</value>
+    <value>Формат по умолчанию без определенного формата номера.</value>
   </data>
   <data name="TextBoxFormat_Default_Text" xml:space="preserve">
     <value>По умолчанию</value>
   </data>
   <data name="TextBoxFormat_Scientific_Description" xml:space="preserve">
-    <value>Отображать значение как научное.</value>
+    <value>Отображение значения как научного.</value>
   </data>
   <data name="TextBoxFormat_Scientific_Text" xml:space="preserve">
     <value>Научных</value>
@@ -549,19 +529,19 @@
     <value>Короткая Дата</value>
   </data>
   <data name="TextBoxFormat_Time_Description" xml:space="preserve">
-    <value>Отображать значение как время.</value>
+    <value>Отображение значения как времени.</value>
   </data>
   <data name="TextBoxFormat_Time_Text" xml:space="preserve">
     <value>Время</value>
   </data>
   <data name="TableTools_DeleteColumn_Description" xml:space="preserve">
-    <value>Удалить столбец.</value>
+    <value>Удаление столбца.</value>
   </data>
   <data name="TableTools_DeleteColumn_Text" xml:space="preserve">
-    <value>Удалить столбец</value>
+    <value>Удаление столбца</value>
   </data>
   <data name="TableTools_DeleteRow_Description" xml:space="preserve">
-    <value>Удалить строку.</value>
+    <value>Удаление строки.</value>
   </data>
   <data name="TableTools_DeleteRow_Text" xml:space="preserve">
     <value>Удалить Строку</value>
@@ -570,10 +550,10 @@
     <value>Элементы данных</value>
   </data>
   <data name="Insert_Barcode_Description" xml:space="preserve">
-    <value>Элемент отчета штрих-кода используется для автоматической генерации штрихкодов непосредственно из числовых или символьных данных.</value>
+    <value>Элемент отчета о штрихкоде используется для автоматического генерирования штрихкодов непосредственно из числовых или символов данных.</value>
   </data>
   <data name="Insert_Barcode_Text" xml:space="preserve">
-    <value>Штрих</value>
+    <value>Штрихкодов</value>
   </data>
   <data name="Insert_Chart_Description" xml:space="preserve">
     <value>Элемент отчета диаграммы используется для отображения диаграммы в отчете.</value>
@@ -582,76 +562,76 @@
     <value>График</value>
   </data>
   <data name="Insert_CheckBox_Description" xml:space="preserve">
-    <value>Элемент отчета "флажок" используется для отображения как текста, так и флажка в отчете.</value>
+    <value>Элемент отчета «флажок» используется для отображения текста и чека в отчете.</value>
   </data>
   <data name="Insert_CheckBox_Text" xml:space="preserve">
     <value>Флажок</value>
   </data>
   <data name="Insert_Crosstab_Description" xml:space="preserve">
-    <value>Вставка перекрестной таблицы.</value>
+    <value>Вставить Кросудар.</value>
   </data>
   <data name="Insert_Crosstab_Text" xml:space="preserve">
-    <value>Перекрестный</value>
+    <value>Перекрестного</value>
   </data>
   <data name="Insert_CrosstabTools_Text" xml:space="preserve">
-    <value>Перекрестный</value>
+    <value>Перекрестного</value>
   </data>
   <data name="Insert_CrosstabWizard_Description" xml:space="preserve">
-    <value>Мастер перекрестных передач поможет вам в процессе создания перекрестной таблицы.</value>
+    <value>Мастер перекрестного удара проведет вас через процесс создания перекрестного удара.</value>
   </data>
   <data name="Insert_CrosstabWizard_Text" xml:space="preserve">
-    <value>Перекрестный мастер</value>
+    <value>Мастер перекрестного удара</value>
   </data>
   <data name="Insert_CubeDataSource_Description" xml:space="preserve">
-    <value>Источник данных куба позволяет элементам данных получать данные из куба OLAP с помощью служб аналитики Майкрософт.</value>
+    <value>Источник данных Cube позволяет элементам данных извлекать данные из куба OLAP с помощью служб анализа Майкрософт.</value>
   </data>
   <data name="Insert_CubeDataSource_Text" xml:space="preserve">
-    <value>Источник данных куба</value>
+    <value>Источник данных Cube</value>
   </data>
   <data name="Insert_DataSouces_Text" xml:space="preserve">
     <value>Источники данных</value>
   </data>
   <data name="Insert_HtmlTextBox_Description" xml:space="preserve">
-    <value>Элемент отчета в текстовом поле HTML позволяет вставлять в отчет текст, отформатированный в формате HTML.</value>
+    <value>Элемент отчета HTML текстовая коробка позволяет вставить HTML-форматированный текст в отчет.</value>
   </data>
   <data name="Insert_HtmlTextBox_Text" xml:space="preserve">
-    <value>Текстовое поле HTML</value>
+    <value>Текстовая коробка HTML</value>
   </data>
   <data name="Insert_List_Description" xml:space="preserve">
-    <value>Элемент отчета списка представляет макет свободной формы.</value>
+    <value>Элемент отчета о списке представляет собой макет свободной формы.</value>
   </data>
   <data name="Insert_List_Text" xml:space="preserve">
     <value>Список</value>
   </data>
   <data name="Insert_Panel_Description" xml:space="preserve">
-    <value>Элемент отчета Panel используется в качестве контейнера для других элементов, обычно для группирования/разделения нескольких элементов отчета по некоторым критериям.</value>
+    <value>Элемент отчета группы используется в качестве контейнера для других элементов, обычно для группировать/отделить несколько элементов отчета по некоторым критериям.</value>
   </data>
   <data name="Insert_Panel_Text" xml:space="preserve">
     <value>Панели</value>
   </data>
   <data name="Insert_PictureBox_Description" xml:space="preserve">
-    <value>Представляет элемент отчета окна рисунка для отображения изображения.</value>
+    <value>Представляет элемент отчета о окне изображения для отображения изображения.</value>
   </data>
   <data name="Insert_PictureBox_Text" xml:space="preserve">
-    <value>Фоторамка</value>
+    <value>Коробка для фото</value>
   </data>
   <data name="InsertReportItemsText" xml:space="preserve">
     <value>Элементы отчета</value>
   </data>
   <data name="Insert_Shape_Description" xml:space="preserve">
-    <value>Элемент отчета Shape используется для отображения одного из выбранных предварительно определенных фигур в отчете.</value>
+    <value>Элемент отчета о форме используется для отображения одного из выбора предопределенных фигур в отчете.</value>
   </data>
   <data name="Insert_Shape_Text" xml:space="preserve">
     <value>Формы</value>
   </data>
   <data name="Insert_SqlDataSource_Description" xml:space="preserve">
-    <value>Источник данных SQL позволяет элементам данных отображать данные, расположенные в реляционной базе данных.</value>
+    <value>SQL источник данных позволяет элементам данных отображать данные, расположенные в реляционной базе данных.</value>
   </data>
   <data name="Insert_SqlDataSource_Text" xml:space="preserve">
-    <value>Источник данных SQL</value>
+    <value>SQL источник данных</value>
   </data>
   <data name="Insert_Table_Description" xml:space="preserve">
-    <value>Вставка таблицы.</value>
+    <value>Вставить таблицу.</value>
   </data>
   <data name="Insert_Table_Text" xml:space="preserve">
     <value>Таблица</value>
@@ -660,31 +640,31 @@
     <value>Таблица</value>
   </data>
   <data name="Insert_TableWizard_Description" xml:space="preserve">
-    <value>Мастер таблиц проведет вас через процесс создания таблицы.</value>
+    <value>Мастер таблицы проведет вас через процесс создания таблицы.</value>
   </data>
   <data name="Insert_TableWizard_Text" xml:space="preserve">
     <value>Мастер таблиц</value>
   </data>
   <data name="Insert_TextBox_Description" xml:space="preserve">
-    <value>Элемент отчета текстового поля используется для отображения текста в отчете.</value>
+    <value>Элемент отчета по текстовому ящику используется для отображения текста в отчете.</value>
   </data>
   <data name="Insert_TextBox_Text" xml:space="preserve">
     <value>Текстовое Поле</value>
   </data>
   <data name="Insert_CrosstabTools_Description" xml:space="preserve">
-    <value>В перекрестном элементе отчета отображаются сводные сводные данные, сгруппированные по строкам и столбцам.</value>
+    <value>Элемент отчета Кросбиг отображает агрегированные сводки данных, сгруппированные в строки и столбцы.</value>
   </data>
   <data name="Insert_TableTools_Description" xml:space="preserve">
-    <value>Элемент отчета таблицы отображает подробные данные, данные, упорядоченные по группам строк, или и те, и другие.</value>
+    <value>Элемент отчета таблицы отображает подробные данные, данные, организованные в группах строк, или обоих.</value>
   </data>
   <data name="Insert_SubReport_Description" xml:space="preserve">
     <value>Представляет элемент отчета, используемый для встраивания другого отчета в текущий отчет.</value>
   </data>
   <data name="Insert_SubReport_Text" xml:space="preserve">
-    <value>Подчиненный отчет</value>
+    <value>Sub отчет</value>
   </data>
   <data name="TableTools_ColumnGroup_Text" xml:space="preserve">
-    <value>Группа столбцов</value>
+    <value>Группа колонок</value>
   </data>
   <data name="TableTools_RowGroup_Text" xml:space="preserve">
     <value>Группа строк</value>
@@ -699,19 +679,19 @@
     <value>Вставить столбец</value>
   </data>
   <data name="TableTools_InsertRow_Text" xml:space="preserve">
-    <value>Вставка строки</value>
+    <value>Вставить строку</value>
   </data>
   <data name="TableTools_Properties_Text" xml:space="preserve">
     <value>Свойства</value>
   </data>
   <data name="TableTools_RowsColumns_Text" xml:space="preserve">
-    <value>Строк </value>
+    <value>Строки и столбцы</value>
   </data>
   <data name="ErrorFileCreation" xml:space="preserve">
     <value>Файл не может быть создан.</value>
   </data>
   <data name="Insert_Graph_Description" xml:space="preserve">
-    <value>Вставка графа.</value>
+    <value>Вставить граф.</value>
   </data>
   <data name="Insert_Graph_Text" xml:space="preserve">
     <value>График</value>
@@ -720,49 +700,49 @@
     <value>Визуализация данных</value>
   </data>
   <data name="Insert_ObjectDataSource_Description" xml:space="preserve">
-    <value>Источник данных Object позволяет элементам данных получать данные из предопределенных бизнес-объектов.</value>
+    <value>Источник данных объектов позволяет элементам данных извлекать данные из заранее определенных бизнес-объектов.</value>
   </data>
   <data name="Insert_ObjectDataSource_Text" xml:space="preserve">
-    <value>Источник данных объекта</value>
+    <value>Источник данных объектов</value>
   </data>
   <data name="Insert_EntityDataSource_Description" xml:space="preserve">
-    <value>Источник данных сущности позволяет элементам данных получать данные из предопределенных моделей сущностей ADO.NET.</value>
+    <value>Источник данных сущности позволяет элементам данных извлекать данные из предопределенных моделей сущностей ADO.NET.</value>
   </data>
   <data name="Insert_EntityDataSource_Text" xml:space="preserve">
-    <value>Источник данных сущности</value>
+    <value>Источник данных сущностей</value>
   </data>
   <data name="Insert_OpenAccessDataSource_Description" xml:space="preserve">
-    <value>Источник данных опенакцесс позволяет элементам данных получать данные из предопределенных моделей Telerik опенацесс.</value>
+    <value>Источник данных OpenAccess позволяет элементам данных извлекать данные из предопределенных моделей Telerik OpenAcess.</value>
   </data>
   <data name="Insert_OpenAccessDataSource_Text" xml:space="preserve">
-    <value>Открыть источник данных Access</value>
+    <value>Источник данных открытого доступа</value>
   </data>
   <data name="ReadFileError" xml:space="preserve">
-    <value>Не удается прочитать файл: {0}</value>
+    <value>Не удается прочесть файл: {0}</value>
   </data>
   <data name="Graph_FormatText" xml:space="preserve">
     <value>Формат</value>
   </data>
   <data name="Inser_MapWizard_Text" xml:space="preserve">
-    <value>Мастер карт</value>
+    <value>Мастер карты</value>
   </data>
   <data name="Insert_MapTools_Map_Description" xml:space="preserve">
-    <value>Представляет элемент отчета, отображающий геокодированные данные на карте.</value>
+    <value>Представляет элемент отчета, который отображает геозакодированные данные на карте.</value>
   </data>
   <data name="Insert_MapTools_Map_Text" xml:space="preserve">
     <value>Карта</value>
   </data>
   <data name="Insert_MapTools_Description" xml:space="preserve">
-    <value>Элемент отчета Map отображает гео-закодированные данные</value>
+    <value>Элемент отчета Map отображает геозакодированные данные</value>
   </data>
   <data name="Insert_MapTools_Text" xml:space="preserve">
     <value>Карты</value>
   </data>
   <data name="Insert_MapWizard_Description" xml:space="preserve">
-    <value>Мастер сопоставления проведет вас через процесс создания карты.</value>
+    <value>Мастер карты проведет вас через процесс создания карты.</value>
   </data>
   <data name="Insert_MapWizard_Text" xml:space="preserve">
-    <value>Мастер карт</value>
+    <value>Мастер карты</value>
   </data>
   <data name="BlankReportTemplateName" xml:space="preserve">
     <value>Пустой отчет</value>
@@ -771,43 +751,43 @@
     <value>Создает отчет из пустого шаблона.</value>
   </data>
   <data name="TableWizardTemplate_Description" xml:space="preserve">
-    <value>Запускает мастер таблиц для создания отчета с использованием технологии Telerik Reporting.</value>
+    <value>Запускает мастер таблицы для создания отчета с помощью технологии отчетности Telerik.</value>
   </data>
   <data name="TableWizardTemplate_Name" xml:space="preserve">
     <value>Мастер таблиц</value>
   </data>
   <data name="Insert_CsvDataSource_Description" xml:space="preserve">
-    <value>Источник данных CSV позволяет элементам данных получать данные из CSV-файлов, потоков и просто строк.</value>
+    <value>Источник данных СБВ позволяет элементам данных извлекать данные из файлов СБВ, потоков и просто строк.</value>
   </data>
   <data name="Insert_CsvDataSource_Text" xml:space="preserve">
-    <value>Источник данных CSV</value>
+    <value>Источник данных СБВ</value>
   </data>
   <data name="Insert_MapTools_Choropleth_Description" xml:space="preserve">
     <value>Карта, области которой окрашены в зависимости от меры</value>
   </data>
   <data name="Insert_MapTools_Choropleth_Text" xml:space="preserve">
-    <value>Картограмма</value>
+    <value>Чороплете</value>
   </data>
   <data name="Insert_MapTools_ChoroplethWizard_Description" xml:space="preserve">
-    <value>Мастер Картограмма проведет вас через процесс создания Картограмма.</value>
+    <value>Мастер Чороплеth проведет вас через процесс создания Чороплета.</value>
   </data>
   <data name="Insert_MapTools_ChoroplethWizard_Text" xml:space="preserve">
-    <value>Мастер Картограмма</value>
+    <value>Чороплетый волшебник</value>
   </data>
   <data name="PreviewTab_ViewPreviewDescription" xml:space="preserve">
-    <value>Запуск отчета (F5)</value>
+    <value>Запустить отчет (F5)</value>
   </data>
   <data name="Insert_OpenClientDataSource_Description" xml:space="preserve">
-    <value>Источник данных опенедже опенклиент позволяет элементам данных получать данные из предопределенных опенедже открытых клиентских объектов.</value>
+    <value>Исходный источник данных OpenEdge позволяет элементам данных извлекать данные из предопределенных объектов открытого клиента OpenEdge.</value>
   </data>
   <data name="Insert_OpenClientDataSource_Text" xml:space="preserve">
-    <value>Источник данных опенедже опенклиент</value>
+    <value>OpenEdge OpenClient источник данных</value>
   </data>
   <data name="ReportBookTab_Template_Description" xml:space="preserve">
     <value>Пустой шаблон для создания книги отчетов.</value>
   </data>
   <data name="ReportBookTab_Template_Text" xml:space="preserve">
-    <value>Книга отчета</value>
+    <value>Отчет о книге</value>
   </data>
   <data name="ReportBookTab_Configure_Text" xml:space="preserve">
     <value>Настройка</value>
@@ -819,124 +799,130 @@
     <value>Посмотреть</value>
   </data>
   <data name="ReportBook_ContextTab_Text" xml:space="preserve">
-    <value>Книга отчета</value>
+    <value>Отчет о книге</value>
   </data>
   <data name="ReportBookTab_AddReportSource_Text" xml:space="preserve">
     <value>Добавить</value>
   </data>
   <data name="ReportBookTab_AddReportSource_Description" xml:space="preserve">
-    <value>Fügen Sie der Berichtssammlung Bericht Buch Bericht hinzu.</value>
+    <value>Добавление отчета в коллекцию отчетов о книге отчетов.</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Text" xml:space="preserve">
     <value>Удалить</value>
   </data>
   <data name="ReportBookTab_DeleteReportSource_Description" xml:space="preserve">
-    <value>Löscht den ausgewählten Bericht aus der Bericht Sammlung des Berichts Buches.</value>
+    <value>Удаление выбранного отчета из коллекции отчета «книга отчета».</value>
   </data>
   <data name="ReportBookTab_Document_Text" xml:space="preserve">
     <value>Название документа</value>
   </data>
   <data name="ReportBookTab_DocumentName_Description" xml:space="preserve">
-    <value>Задайте имя документа, которое будет использоваться в качестве имени по умолчанию при экспорте книги отчетов.</value>
+    <value>Установите имя документа, которое будет использоваться в качестве имени по умолчанию при экспорте книги отчетов.</value>
   </data>
   <data name="ReportBookTab_EditReportInDesigner_Text" xml:space="preserve">
     <value>Дизайн</value>
   </data>
   <data name="ReportBookTab_EditReportInDesigner_Description" xml:space="preserve">
-    <value>Изменение выбранного отчета в конструкторе отчетов.</value>
+    <value>Отредактируйте выбранный отчет в конструкторе отчета.</value>
   </data>
   <data name="ReportBookTab_MoveDown_Text" xml:space="preserve">
     <value>Сдвинуть вниз</value>
   </data>
   <data name="ReportBookTab_MoveDown_Description" xml:space="preserve">
-    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach unten.</value>
+    <value>Перемещение выбранного отчета в коллекцию отчетов о книге отчетов.</value>
   </data>
   <data name="ReportBookTab_MoveUp_Text" xml:space="preserve">
     <value>Сдвинуть вверх</value>
   </data>
   <data name="ReportBookTab_MoveUp_Description" xml:space="preserve">
-    <value>Verschiebt den ausgewählten Bericht in der Bericht Sammlung des Berichts Buchs nach oben.</value>
+    <value>Переместить выбранный отчет в коллекцию отчетов о книге отчета.</value>
   </data>
   <data name="ReportBookTab_ReportSourceParameters_Text" xml:space="preserve">
     <value>Параметры</value>
   </data>
   <data name="ReportBookTab_ReportSourceParameters_Description" xml:space="preserve">
-    <value>Настройте параметры.</value>
+    <value>Настройка параметров.</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Text" xml:space="preserve">
     <value>Установить</value>
   </data>
   <data name="ReportBookTab_Toc_ReportSource_Description" xml:space="preserve">
-    <value>Legen Sie die Berichtsdefinition fest, die als Vorlage für die Inhaltstabelle des Berichts Buches verwendet wird.</value>
+    <value>Определение отчета Set, которое будет использоваться в качестве шаблона для таблицы содержимого отчета.</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Text" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="ReportBookTab_Toc_Delete_Description" xml:space="preserve">
+    <value>Удаление отчета, используемого в качестве шаблона для таблицы содержимого отчета.</value>
   </data>
   <data name="ReportBookTab_Toc_Text" xml:space="preserve">
-    <value>TOC</value>
+    <value>Оглавления</value>
   </data>
   <data name="ReportBookTab_Toc_After_Text" xml:space="preserve">
     <value>После отчетов</value>
   </data>
   <data name="ReportBookTab_Toc_After_TextDescription" xml:space="preserve">
-    <value>Отображение оглавления книги отчетов после отчетов.</value>
+    <value>Показать отчет о книге «Топ» после отчетов.</value>
   </data>
   <data name="ReportBookTab_Toc_Before_Text" xml:space="preserve">
     <value>Перед отчетами</value>
   </data>
   <data name="ReportBookTab_Toc_Before_Description" xml:space="preserve">
-    <value>Отображение оглавления книги отчетов перед отчетами.</value>
+    <value>Показать отчет о книге ТВВ перед отчетами.</value>
   </data>
   <data name="DataExplorer_Caption" xml:space="preserve">
-    <value>Обозреватель данных</value>
+    <value>Исследователь данных</value>
   </data>
   <data name="ReportBook_Definition_TRBP_Description" xml:space="preserve">
-    <value>Telerik определение книги отчетов</value>
+    <value>Телерик доклад книга определение</value>
   </data>
   <data name="ReportDefinition_TRDP_Description" xml:space="preserve">
-    <value>Пакет определения отчета Telerik</value>
+    <value>Пакет определения отчета телерик</value>
   </data>
   <data name="ReportDefinition_TRDX_Description" xml:space="preserve">
-    <value>Telerik определение отчета XML (наследие)</value>
+    <value>Телерик доклад определение XML</value>
   </data>
   <data name="ErrorPresenter_ToggleDetailsText_Hide" xml:space="preserve">
-    <value>Скрыть сведения</value>
+    <value>Скрыть детали</value>
   </data>
   <data name="ErrorPresenter_ToggleDetailsText_Show" xml:space="preserve">
-    <value>Показать подробности</value>
+    <value>Показать детали</value>
   </data>
   <data name="GroupExplorer_Caption" xml:space="preserve">
-    <value>Обозреватель групп</value>
+    <value>Группа Explorer</value>
   </data>
   <data name="ItemTemplateWizard_ErrorDialog_Caption" xml:space="preserve">
     <value>Ошибка</value>
   </data>
   <data name="FieldMappingsWizard_Name" xml:space="preserve">
-    <value>Мастер сопоставления полей</value>
+    <value>Мастер полевых отображения</value>
   </data>
   <data name="FieldMappingsWizard_Description" xml:space="preserve">
-    <value>Мастер, предоставляющий интерфейс для сопоставления полей шаблона отчета с полями из источника данных.</value>
+    <value>Мастер, предоставляющий интерфейс для картографирования полей шаблонов отчетов в поля из источника данных.</value>
   </data>
   <data name="ReportDesignerOptionsGroup_Report_Designer" xml:space="preserve">
-    <value>Конструктор отчетов</value>
+    <value>Доклад дизайнера</value>
   </data>
   <data name="ReportExplorer_Caption" xml:space="preserve">
-    <value>Обозреватель отчетов</value>
+    <value>Отчет исследователь</value>
   </data>
   <data name="Error_ExtensionIsRequired" xml:space="preserve">
-    <value>Требуется расширение.</value>
+    <value>Расширение не требуется.</value>
   </data>
   <data name="Error_ProvidedFileTypeIsNotSupported" xml:space="preserve">
-    <value>Предоставленный тип файла не поддерживается: </value>
+    <value>При условии, что тип файла не поддерживается: </value>
   </data>
   <data name="Error_LoadingDocument_UnableToUnpackageStream" xml:space="preserve">
-    <value>Не удается распакетировать поток.</value>
+    <value>Невозможно распаковке потока.</value>
   </data>
   <data name="Graph_ToggleTitle_Transaction" xml:space="preserve">
-    <value>Задать заголовок диаграммы</value>
+    <value>Установить заголовок диаграммы</value>
   </data>
   <data name="Graph_ToggleTitle_DefaultTitle" xml:space="preserve">
     <value>Название</value>
   </data>
   <data name="Graph_ToggleLegend_Transaction" xml:space="preserve">
-    <value>Переключить легенду</value>
+    <value>Легенда переключения</value>
   </data>
   <data name="Graph_ItemPosition_None" xml:space="preserve">
     <value>Никакой</value>
@@ -957,10 +943,10 @@
     <value>Дно</value>
   </data>
   <data name="Graph_SeriesLabelAlignmentMenu_DataLabels" xml:space="preserve">
-    <value>Подписи данных</value>
+    <value>Метки данных</value>
   </data>
   <data name="Graph_ModifyDataPointLabels_Transaction" xml:space="preserve">
-    <value>Изменение меток точек данных</value>
+    <value>Изменение меток точки данных</value>
   </data>
   <data name="Graph_ItemPosition_InsideEnd" xml:space="preserve">
     <value>Внутренний конец</value>
@@ -969,7 +955,7 @@
     <value>Внутренняя база</value>
   </data>
   <data name="Graph_ItemPosition_OutsideEnd" xml:space="preserve">
-    <value>Наружный конец</value>
+    <value>Внешний конец</value>
   </data>
   <data name="Graph_ItemPosition_Above" xml:space="preserve">
     <value>Выше</value>
@@ -987,13 +973,13 @@
     <value>Основные вертикальные</value>
   </data>
   <data name="Graph_Gridlines_MinorHorizontal" xml:space="preserve">
-    <value>Малая горизонтальная</value>
+    <value>Незначительные горизонтальные</value>
   </data>
   <data name="Graph_Gridlines_MinorVertical" xml:space="preserve">
     <value>Малая вертикаль</value>
   </data>
   <data name="Graph_Gridlines_MajorRadial" xml:space="preserve">
-    <value>Основные радиальные</value>
+    <value>Майор радиальный</value>
   </data>
   <data name="Graph_Gridlines_MajorAngular" xml:space="preserve">
     <value>Основные угловые</value>
@@ -1005,19 +991,19 @@
     <value>Незначительные угловые</value>
   </data>
   <data name="Graph_ToggleAxisTitle_Transaction" xml:space="preserve">
-    <value>Переключить заголовок оси</value>
+    <value>Название оси переключения</value>
   </data>
   <data name="Graph_ToggleAxis_Transaction" xml:space="preserve">
-    <value>Переключить ось</value>
+    <value>Ось переключения</value>
   </data>
   <data name="Graph_CoordinateSystemAlias_Primary" xml:space="preserve">
     <value>Основной</value>
   </data>
   <data name="Graph_CoordinateSystemAlias_Secondary" xml:space="preserve">
-    <value>Среднего</value>
+    <value>Вторичного</value>
   </data>
   <data name="Graph_CoordinateSystemAlias_ByIndex" xml:space="preserve">
-    <value>TO DO</value>
+    <value>Система координат #</value>
   </data>
   <data name="Graph_Axes_Horizontal" xml:space="preserve">
     <value>Горизантальный</value>
@@ -1032,25 +1018,25 @@
     <value>Угловой</value>
   </data>
   <data name="Map_ToggleMapTitle_Transaction" xml:space="preserve">
-    <value>Задать название карты</value>
+    <value>Набор название карты</value>
   </data>
   <data name="Map_ToggleMapTitle_DefaultTitile" xml:space="preserve">
     <value>Название</value>
   </data>
   <data name="Map_ToggleLegend_Transaction" xml:space="preserve">
-    <value>Установить легенду карты</value>
+    <value>Установите легенду карты</value>
   </data>
   <data name="Toolbar_GraphTools_Text" xml:space="preserve">
-    <value>Графические инструменты</value>
+    <value>Графический инструмент</value>
   </data>
   <data name="Graph_AddChartElements_Axes" xml:space="preserve">
     <value>Осей</value>
   </data>
   <data name="Graph_AddChartElements_AxisTitles" xml:space="preserve">
-    <value>Заголовки осей</value>
+    <value>Титулы Axis</value>
   </data>
   <data name="Graph_AddChartElements_ChartTitle" xml:space="preserve">
-    <value>Заголовок диаграммы</value>
+    <value>Название диаграммы</value>
   </data>
   <data name="Graph_AddChartElements_Legend" xml:space="preserve">
     <value>Надпись</value>
@@ -1062,13 +1048,13 @@
     <value>Макеты диаграмм</value>
   </data>
   <data name="Graph_RibbonContextual_AddChartElement_Text" xml:space="preserve">
-    <value>Добавить элемент диаграммы</value>
+    <value>Добавление элемента диаграммы</value>
   </data>
   <data name="Graph_RibbonContextual_AddChartElement_Description" xml:space="preserve">
-    <value>Добавить элемент диаграммы</value>
+    <value>Добавление элемента диаграммы</value>
   </data>
   <data name="Graph_RibbonContextual_SwapAxes_Description" xml:space="preserve">
-    <value>Поворачивает ориентацию диаграммы путем замены позиций осей и значений X/Y ряда</value>
+    <value>Вращает ориентацию диаграммы путем замены осей позиций и значений серии ' X/Y</value>
   </data>
   <data name="Graph_RibbonContextual_DesignTitle" xml:space="preserve">
     <value>Дизайн</value>
@@ -1077,7 +1063,7 @@
     <value>Стили диаграмм</value>
   </data>
   <data name="Graph_RibbonContextual_ChangeColors_Text" xml:space="preserve">
-    <value>Изменение цветов</value>
+    <value>Изменение цвета</value>
   </data>
   <data name="Graph_RibbonContextual_ChangeColors_Description" xml:space="preserve">
     <value>Изменение цвета и стиля диаграммы</value>
@@ -1086,37 +1072,37 @@
     <value>Изменение типа диаграммы</value>
   </data>
   <data name="Graph_RibbonContextual_ChangeChartType_Description" xml:space="preserve">
-    <value>Переход на другой тип диаграммы</value>
+    <value>Изменение диаграммы другого типа</value>
   </data>
   <data name="Graph_RibbonContextual_SwitchRowColumn_Description" xml:space="preserve">
-    <value>Замена данных по осям</value>
+    <value>Обмен данными по осям</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeStyle_Text" xml:space="preserve">
-    <value>Стиль фигуры</value>
+    <value>Стиль формы</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeWidth_Text" xml:space="preserve">
     <value>Ширина формы</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeWidth_Description" xml:space="preserve">
-    <value>Задайте ширину формы элемента SELECT.</value>
+    <value>Установите ширину формы выбора элемента.</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeOutlineColor_Text" xml:space="preserve">
-    <value>Цвет контура фигуры</value>
+    <value>Цвет контура формы</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeOutlineColor_Description" xml:space="preserve">
-    <value>Установка выбранного цвета контура элемента фигуры</value>
+    <value>Задать выбранный элемент формы контура цвета</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeFillColor_Text" xml:space="preserve">
-    <value>Цвет заливки формы</value>
+    <value>Цвет заполнения формы</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeFillColor_Description" xml:space="preserve">
-    <value>Установка цвета заливки выбранного элемента формы</value>
+    <value>Набор выбранной формы элемента заполнения цвета</value>
   </data>
   <data name="Graph_RibbonContextual_Format_ShapeStyle_Description" xml:space="preserve">
-    <value>Задание стиля формы выбранного элемента</value>
+    <value>Настройка выбранного элемента формы стиля</value>
   </data>
   <data name="ToolbarBuilder_RegisterInsertTabItems_Tables" xml:space="preserve">
-    <value>Инсет_табле тулс_текст</value>
+    <value>Инсет_табле Тулс_текст</value>
   </data>
   <data name="Insert_TableToolsGroup_Tables" xml:space="preserve">
     <value>Таблицы</value>
@@ -1128,13 +1114,13 @@
     <value>Бар</value>
   </data>
   <data name="Insert_ChartTools_ClusteredBar" xml:space="preserve">
-    <value>Кластеризованный бар</value>
+    <value>Кластерный бар</value>
   </data>
   <data name="Insert_ChartTools_StackedBar" xml:space="preserve">
-    <value>Гистограмма с накоплением</value>
+    <value>Штабелироваться бар</value>
   </data>
   <data name="Insert_ChartTools_100StackedBar" xml:space="preserve">
-    <value>100% штабелироваться бар</value>
+    <value>100% стек бар</value>
   </data>
   <data name="Insert_ChartTools_RangeBar" xml:space="preserve">
     <value>Диапазон бар</value>
@@ -1143,13 +1129,13 @@
     <value>Столбец</value>
   </data>
   <data name="Insert_ChartTools_ClusteredColumn" xml:space="preserve">
-    <value>Кластеризованный столбец</value>
+    <value>Кластерированные колонки</value>
   </data>
   <data name="Insert_ChartTools_StackedColumn" xml:space="preserve">
-    <value>Столбец с накоплением</value>
+    <value>Штабелироваться колонка</value>
   </data>
   <data name="Insert_ChartTools_100StackedColumn" xml:space="preserve">
-    <value>100% сложенный столбец</value>
+    <value>100% столбца с накоплением</value>
   </data>
   <data name="Insert_ChartTools_RangeColumn" xml:space="preserve">
     <value>Столбец диапазона</value>
@@ -1161,10 +1147,10 @@
     <value>Пространство</value>
   </data>
   <data name="Insert_ChartTools_StackedArea" xml:space="preserve">
-    <value>Область с накоплением</value>
+    <value>Площадь с накоплением</value>
   </data>
   <data name="Insert_ChartTools_100StackedArea" xml:space="preserve">
-    <value>100% сложенная площадь</value>
+    <value>100% с накоплением площади</value>
   </data>
   <data name="Insert_ChartTools_RangeArea" xml:space="preserve">
     <value>Область диапазона</value>
@@ -1176,19 +1162,19 @@
     <value>Линии</value>
   </data>
   <data name="Insert_ChartTools_StackedLine" xml:space="preserve">
-    <value>Линия с накоплением</value>
+    <value>Штабелироваться линия</value>
   </data>
   <data name="Insert_ChartTools_100StackedLine" xml:space="preserve">
-    <value>100% сложенная линия</value>
+    <value>100% с накоплением линии</value>
   </data>
   <data name="Insert_ChartTools_LineWithMarkers" xml:space="preserve">
     <value>Линия с маркерами</value>
   </data>
   <data name="Insert_ChartTools_StackedLineWithMarkers" xml:space="preserve">
-    <value>Сгруппированная линия с маркерами</value>
+    <value>Стек линия с маркерами</value>
   </data>
   <data name="Insert_ChartTools_100StackedLineWithMarkers" xml:space="preserve">
-    <value>100% сложенная линия с маркерами</value>
+    <value>100% с накоплением линии с маркерами</value>
   </data>
   <data name="Insert_ChartTools_PieGroup" xml:space="preserve">
     <value>Пирог</value>
@@ -1200,34 +1186,34 @@
     <value>Пончик</value>
   </data>
   <data name="Insert_ChartTools_ScatterGroup" xml:space="preserve">
-    <value>Scatter</value>
+    <value>Разброс</value>
   </data>
   <data name="Insert_ChartTools_Scatter_Text" xml:space="preserve">
-    <value>Scatter</value>
+    <value>Разброс</value>
   </data>
   <data name="Insert_ChartTools_Scatter_Tooltip" xml:space="preserve">
-    <value>Простая точечная диаграмма</value>
+    <value>Простая диаграмма рассеивания</value>
   </data>
   <data name="Insert_ChartTools_SmoothMarkedScatter_Text" xml:space="preserve">
-    <value>Гладкий маркированный разброс</value>
+    <value>Гладкая помеченные скаттер</value>
   </data>
   <data name="Insert_ChartTools_SmoothMarkedScatter_Tooltip" xml:space="preserve">
-    <value>Точечная диаграмма с плавными линиями и маркерами</value>
+    <value>Точечная диаграмма с гладкими линиями и маркерами</value>
   </data>
   <data name="Insert_ChartTools_SmoothLinedScatter_Text" xml:space="preserve">
-    <value>Гладкая линия рассеяния</value>
+    <value>Гладкая облицованная скаттер</value>
   </data>
   <data name="Insert_ChartTools_SmoothLinedScatter_Tooltip" xml:space="preserve">
-    <value>Точечная диаграмма с плавными линиями</value>
+    <value>Точечная диаграмма с гладкими линиями</value>
   </data>
   <data name="Insert_ChartTools_StraightMarkedScatter_Text" xml:space="preserve">
-    <value>Прямой маркированный разброс</value>
+    <value>Прямая маркированы разброс</value>
   </data>
   <data name="Insert_ChartTools_StraightMarkedScatter_Tooltip" xml:space="preserve">
-    <value>Разброс с прямыми линиями и маркерами</value>
+    <value>Точечная с прямыми линиями и маркерами</value>
   </data>
   <data name="Insert_ChartTools_StraightLinedScatter_Text" xml:space="preserve">
-    <value>Прямая линия рассеяния</value>
+    <value>Прямая Облицовка точечная</value>
   </data>
   <data name="Insert_ChartTools_StraightLinedScatter_Tooltip" xml:space="preserve">
     <value>Точечная диаграмма с прямыми линиями</value>
@@ -1236,19 +1222,19 @@
     <value>Пузырь</value>
   </data>
   <data name="Insert_ChartTools_Bubble_Tooltip" xml:space="preserve">
-    <value>Точечная диаграмма с пузырьковой маркировкой</value>
+    <value>Точечная диаграмма с пузырьками маркеров</value>
   </data>
   <data name="Insert_ChartTools_Candlestick_Text" xml:space="preserve">
     <value>Свечи</value>
   </data>
   <data name="Insert_ChartTools_Candlestick_Tooltip" xml:space="preserve">
-    <value>Диаграмма OHLC с маркерами свечей</value>
+    <value>Диаграмма OHLC с подсвечником маркеров</value>
   </data>
   <data name="Insert_ChartTools_FinancialBar_Text" xml:space="preserve">
     <value>Бар</value>
   </data>
   <data name="Insert_ChartTools_FinancialBar_Tooltip" xml:space="preserve">
-    <value>Диаграмма OHLC с маркерами стержня</value>
+    <value>Диаграмма OHLC с маркеры бара</value>
   </data>
   <data name="Insert_ChartTools_OtherGroup" xml:space="preserve">
     <value>Другой</value>
@@ -1263,13 +1249,13 @@
     <value>Заполненный радар</value>
   </data>
   <data name="Insert_ChartTools_RoseRadar_Text" xml:space="preserve">
-    <value>Роза радар</value>
+    <value>Роуз радар</value>
   </data>
   <data name="Insert_MapTools_MapsGroup" xml:space="preserve">
     <value>Карты</value>
   </data>
   <data name="MapTools_Contextual_Name" xml:space="preserve">
-    <value>Инструменты карты</value>
+    <value>Инструменты Map</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_Text" xml:space="preserve">
     <value>Дизайн</value>
@@ -1278,16 +1264,16 @@
     <value>Макеты карт</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapLayouts_AddMapElement_Text" xml:space="preserve">
-    <value>Добавить элемент карты</value>
+    <value>Добавление элемента карты</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapLayouts_AddMapElement_Description" xml:space="preserve">
-    <value>Добавить элемент карты</value>
+    <value>Добавление элемента карты</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapStyles_Text" xml:space="preserve">
-    <value>Стили карты</value>
+    <value>Стили карт</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapStyles_ChangeColors_Text" xml:space="preserve">
-    <value>Изменение цветов</value>
+    <value>Изменение цвета</value>
   </data>
   <data name="MapTools_Contextual_DesignTab_MapStyles_ChangeColors_Description" xml:space="preserve">
     <value>Изменение цвета и стиля карты</value>
@@ -1297,5 +1283,25 @@
   </data>
   <data name="MapTools_Contextual_DesignTab_AddElement_Legend_Text" xml:space="preserve">
     <value>Надпись</value>
+  </data>
+  <data name="PreviewTab_FindDescription" xml:space="preserve">
+    <value>
+Открывает Поиск диалога для поиска в документе. Если поисковые метаданные не подготовлены, вызывает обновление отчетов для сбора поисковых метаданных.
+     </value>
+  </data>
+  <data name="PreviewTab_FindText" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Description" xml:space="preserve">
+    <value>Источник данных веб-службы позволяет элементам данных извлекать данные из предопределенных веб-сервисов.</value>
+  </data>
+  <data name="Insert_WebServiceDataSource_Text" xml:space="preserve">
+    <value>Источник данных веб-сервиса</value>
+  </data>
+  <data name="Insert_JsonDataSource_Description" xml:space="preserve">
+    <value>Источник данных JSON позволяет элементам данных получать данные из строки или файла JSON.</value>
+  </data>
+  <data name="Insert_JsonDataSource_Text" xml:space="preserve">
+    <value>Источник данных JSON</value>
   </data>
 </root>

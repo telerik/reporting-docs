@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ForgetServer_Confirmation" xml:space="preserve">
-    <value>Sind Sie sicher, dass Sie diesen Berichtsserver Eintrag entfernen möchten?</value>
-  </data>
   <data name="CanConnect_ConnectionFailure" xml:space="preserve">
     <value>Impossible de se connecter au serveur de rapports.</value>
   </data>
@@ -127,22 +124,22 @@
     <value>Un nom de rapport ne peut contenir aucun des caractères suivants: {0} {1}</value>
   </data>
   <data name="CreateReport_ReportReplaceConfirmation" xml:space="preserve">
-    <value>Un rapport portant le nom «{0}» existe déjà dans la catégorie «{1}». Voulez-vous y ajouter une nouvelle révision?</value>
+    <value>Un rapport avec le nom «{0}» existe déjà dans la catégorie «{1}». Voulez-vous y ajouter une nouvelle révision?</value>
   </data>
   <data name="CreatReport_Failed" xml:space="preserve">
-    <value>Le rapport ne peut pas être créé. Vérifiez si le serveur de rapports sélectionné a des catégories définies et si l'utilisateur connecté dispose d'autorisations suffisantes.</value>
+    <value>Le rapport ne peut pas être créé. Veuillez vérifier si le serveur de rapports sélectionné a des catégories définies et que l’utilisateur connecté dispose d’autorisations suffisantes.</value>
   </data>
   <data name="Lock_LockedByUserError" xml:space="preserve">
-    <value>Le rapport est verrouillé par l'utilisateur «{0}».</value>
+    <value>Le rapport est verrouillé par l’utilisateur «{0}».</value>
   </data>
   <data name="Lock_OperationFailed" xml:space="preserve">
-    <value>Échec de l'opération de verrouillage.</value>
+    <value>Échec de l’opération de verrouillage.</value>
   </data>
   <data name="Publish_OperationFailed" xml:space="preserve">
-    <value>L'opération de publication a échoué.</value>
+    <value>Échec de l’opération de publication.</value>
   </data>
   <data name="Unlock_OperationFailed" xml:space="preserve">
-    <value>L'opération de déverrouillage a échoué.</value>
+    <value>L’opération de déverrouillage a échoué.</value>
   </data>
   <data name="VerifySchemaCompatibility_Warning" xml:space="preserve">
     <value>Ce concepteur prend en charge le schéma de définition de rapport {0:0.0} qui est plus récent que le schéma {1:0.0}, pris en charge par le serveur de rapports. Si vous souhaitez modifier et publier les modifications, vous devez utiliser le concepteur de rapports fourni avec le serveur de rapports.</value>
@@ -154,10 +151,10 @@
     <value>Rétablir les modifications</value>
   </data>
   <data name="Connection_Error" xml:space="preserve">
-    <value>Erreur lors de la connexion au serveur. S'il vous plaît vérifier l'URI du serveur et les informations d'identification</value>
+    <value>Erreur lors de la journalisation sur le serveur. Veuillez vérifier l’URI du serveur et les informations d’identification</value>
   </data>
   <data name="Connection_Error_Uri" xml:space="preserve">
-    <value>L'URI spécifié a un format incorrect.</value>
+    <value>L’URI spécifié a un format incorrect.</value>
   </data>
   <data name="Connection_Error_Federation" xml:space="preserve">
     <value>Impossible de récupérer les paramètres du fournisseur externe: </value>
@@ -166,10 +163,10 @@
     <value>Serveur</value>
   </data>
   <data name="EditServerReportSourceDialog_ServerOption_Description" xml:space="preserve">
-    <value>Sélectionnez un rapport ou entrez un localisateur de rapport valide (par exemple, catégorie/nom):</value>
+    <value>Sélectionnez un rapport ou entrez un localisateur de rapport valide (c.-à-d. catégorie/nom):</value>
   </data>
   <data name="EditServerReportSourceDialog_Text" xml:space="preserve">
-    <value>&lt; Select Server rapport &gt;</value>
+    <value>&lt; Select Server Rapport &gt;</value>
   </data>
   <data name="OpenDialog_Header" xml:space="preserve">
     <value>Ouvrir le rapport à partir de {0}</value>
@@ -187,13 +184,13 @@
     <value>Enregistrer</value>
   </data>
   <data name="Disconnect_EnsureNotInUse_Warning" xml:space="preserve">
-    <value>Vous avez ouvert des rapports à partir de ce serveur. Vous devez d'abord fermer les onglets rapports.</value>
+    <value>Vous avez ouvert des rapports à partir de ce serveur. Vous devez d’abord fermer les onglets des rapports.</value>
   </data>
   <data name="AddReportServer_Error_ReportServerAlreadyExist" xml:space="preserve">
-    <value>Le serveur de rapports'{0}'existe déjà.</value>
+    <value>Le serveur de rapports' {0} 'existe déjà.</value>
   </data>
   <data name="ContextualTab_ServerTools_Text" xml:space="preserve">
-    <value>Outils serveur</value>
+    <value>Outils de serveur</value>
   </data>
   <data name="ContextualTab_Server_Text" xml:space="preserve">
     <value>Serveur</value>
@@ -202,28 +199,28 @@
     <value>Gestion des rapports</value>
   </data>
   <data name="ContextualTab_ReportManagement_Lock_Text" xml:space="preserve">
-    <value>Serrure</value>
+    <value>fermer à clé</value>
   </data>
   <data name="ContextualTab_ReportManagement_Lock_Description" xml:space="preserve">
-    <value>Verrouillez le rapport pour l'éditer. Seulement vous serez en mesure de modifier les rapports.</value>
+    <value>Verrouillez le rapport pour modification. Vous seul serez en mesure de modifier les rapports.</value>
   </data>
   <data name="ContextualTab_ReportManagement_Publish_Text" xml:space="preserve">
     <value>Publier</value>
   </data>
   <data name="ContextualTab_ReportManagement_Publish_Description" xml:space="preserve">
-    <value>Publier le rapport sur le serveur. Rendez vos modifications visibles à l'autre utilisateur avec des autorisations d'affichage.</value>
+    <value>Publiez le rapport sur le serveur. Apportez vos modifications visibles à d’autres utilisateurs avec des autorisations d’affichage.</value>
   </data>
   <data name="ContextualTab_ReportManagement_Revert_Text" xml:space="preserve">
-    <value>Revenir</value>
+    <value>revenir</value>
   </data>
   <data name="ContextualTab_ReportManagement_Revert_Description" xml:space="preserve">
-    <value>Rétablissez les modifications en attente et déverrouillez le rapport.</value>
+    <value>Annulez les modifications en attente et déverrouillez le rapport.</value>
   </data>
   <data name="ContextualTab_View_WebPreview_Text" xml:space="preserve">
     <value>Aperçu Web</value>
   </data>
   <data name="ContextualTab_View_WebPreview_Description" xml:space="preserve">
-    <value>Réserver et prévisualiser le rapport en cours dans le navigateur.</value>
+    <value>Réserver et prévisualiser le rapport actuel dans le navigateur.</value>
   </data>
   <data name="ConnectToServer_Label" xml:space="preserve">
     <value>Se connecter au serveur de rapports</value>
@@ -241,13 +238,13 @@
     <value>Connexion</value>
   </data>
   <data name="ConnectToServer_LogInADFS" xml:space="preserve">
-    <value>Connexion avec les informations d'identification ADFS</value>
+    <value>Connexion avec les informations d’identification ADFS</value>
   </data>
   <data name="ConnectToServer_LogInExternal" xml:space="preserve">
     <value>Connectez-vous avec des fournisseurs externes</value>
   </data>
   <data name="ConnectToServer_LogInLocal" xml:space="preserve">
-    <value>Ouvrir une session avec un compte local</value>
+    <value>Se connecter avec un compte local</value>
   </data>
   <data name="ConnectToServer_Or" xml:space="preserve">
     <value>ou</value>
@@ -274,7 +271,7 @@
     <value>Commentaire :</value>
   </data>
   <data name="Publish_Confirmation" xml:space="preserve">
-    <value>Êtes-vous sûr de vouloir publier les modifications que vous avez apportées? Ils seront visibles pour tous les utilisateurs avec la permission appropriée.</value>
+    <value>Êtes-vous sûr de vouloir publier les modifications que vous avez apportées? Ils seront visibles pour tous les utilisateurs disposant d’une autorisation appropriée.</value>
   </data>
   <data name="Publish_Description" xml:space="preserve">
     <value>Publier le rapport sur le serveur</value>
@@ -304,12 +301,15 @@
     <value>Catégorie:</value>
   </data>
   <data name="SaveAs_Description" xml:space="preserve">
-    <value>Description:</value>
+    <value>description:</value>
   </data>
   <data name="SaveAs_SaveButton" xml:space="preserve">
     <value>Enregistrer</value>
   </data>
   <data name="SaveAs_Title" xml:space="preserve">
-    <value>Titre:</value>
+    <value>titre:</value>
+  </data>
+  <data name="ForgetServer_Confirmation" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir supprimer cet enregistrement du serveur de rapports?</value>
   </data>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="NoRuntimeItemDefined" xml:space="preserve">
-    <value>No se define ningún elemento en tiempo de ejecución para {0} elemento</value>
+    <value>No se define ningún elemento de tiempo de ejecución para {0} elemento</value>
   </data>
   <data name="RenderingFormatNotAvailable" xml:space="preserve">
     <value>el formato de representación {0} no está disponible.</value>

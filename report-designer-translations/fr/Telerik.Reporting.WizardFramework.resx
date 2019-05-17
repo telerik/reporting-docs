@@ -121,21 +121,21 @@
     <value>Êtes-vous sûr de vouloir annuler cet Assistant?</value>
   </data>
   <data name="Unexpected_Error" xml:space="preserve">
-    <value>Une erreur inattendue s'est produite.</value>
+    <value>Une erreur inattendue s’est produite.</value>
   </data>
   <data name="Error_Occurred" xml:space="preserve">
-    <value>Une erreur s'est produite.</value>
+    <value>Une erreur s’est produite.</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Annuler</value>
   </data>
   <data name="Finish" xml:space="preserve">
-    <value>&amp;Terminer &gt; &gt; |</value>
+    <value>&amp;Finition &gt; &gt; |</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>&amp;Suivant &gt;</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>&lt; Précédent</value>
+    <value>&lt; &amp; Back</value>
   </data>
 </root>

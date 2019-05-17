@@ -118,19 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PropertyList_NOTE" xml:space="preserve">
-    <value>Обратите:</value>
+    <value>Примечание:</value>
   </data>
   <data name="MenuItem_FallBack_Text" xml:space="preserve">
-    <value>ни)</value>
+    <value>никто</value>
   </data>
   <data name="ReportParameterEditor_Caption" xml:space="preserve">
     <value>Редактор параметров отчета</value>
   </data>
   <data name="StyleRuleEditor_Caption" xml:space="preserve">
-    <value>Редактор правил стилей</value>
+    <value>Редактор правил стиля</value>
   </data>
   <data name="MapWizard_SetupShapesSourcePage_FilesFilter_Shape" xml:space="preserve">
-    <value>Файлы форм</value>
+    <value>Файлы формы</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="MapWizard_SetupShapesSourcePage_FilesFilter_All" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -143,7 +143,7 @@
     <value>Выбранный источник данных:</value>
   </data>
   <data name="Wizards_ChooseDataSource_AddNewDataSource" xml:space="preserve">
-    <value>&amp;Добавить новый источник данных...</value>
+    <value>&amp;Добавление источника новых данных...</value>
   </data>
   <data name="Wizards_ReportConfigurator_PageNumberTextBox" xml:space="preserve">
     <value>Страница:</value>
@@ -155,19 +155,22 @@
     <value>Все файлы</value>
   </data>
   <data name="CsvDataSourceWizard_FileDialogFilter_CsvFiles" xml:space="preserve">
-    <value>CSV-файлы</value>
+    <value>Файлы СБВ</value>
   </data>
   <data name="CsvDataSourceWizard_FileDialogFilter_TextFiles" xml:space="preserve">
     <value>Текстовые файлы</value>
   </data>
+  <data name="JsonDataSourceWizard_FileDialogFilter_JsonFiles" xml:space="preserve">
+    <value>JSON файлы</value>
+  </data>
   <data name="Wizard_ChooseDataSource_Description" xml:space="preserve">
-    <value>Выберите источник данных, к которому вы хотите подключиться, или создайте новый.</value>
+    <value>Выберите источник данных, который вы хотели бы подключить или создать новый.</value>
   </data>
   <data name="Wizard_ChooseDataSource_Title" xml:space="preserve">
-    <value>Выбор источника данных</value>
+    <value>Выберите источник данных</value>
   </data>
   <data name="NoDataSource" xml:space="preserve">
-    <value>(нет источника данных)</value>
+    <value>(Нет источника данных)</value>
   </data>
   <data name="PageSettings_Margins" xml:space="preserve">
     <value>Поля</value>
@@ -197,7 +200,7 @@
     <value>Размер</value>
   </data>
   <data name="PageSettings_PrintOnContinuousPaper" xml:space="preserve">
-    <value>Печать на непрерывной (рулонной) бумаге</value>
+    <value>Печать на непрерывной (рулон) бумаге</value>
   </data>
   <data name="PageSettings_Portrait" xml:space="preserve">
     <value>Портрет</value>
@@ -212,7 +215,7 @@
     <value>&amp;Отмена</value>
   </data>
   <data name="PageSettings_Text" xml:space="preserve">
-    <value>Параметры страницы</value>
+    <value>Настройки страницы</value>
   </data>
   <data name="PageSettings_Orientation" xml:space="preserve">
     <value>Ориентация</value>
@@ -224,10 +227,10 @@
     <value>Укажите имя параметра отчета!</value>
   </data>
   <data name="StyleRuleEditor_ValidateStyleRule_Warning" xml:space="preserve">
-    <value>Укажите селектор стиля для правила стиля.</value>
+    <value>Просьба предоставить селектор стиля для правила стиля.</value>
   </data>
   <data name="ExpressionBuilder_Text" xml:space="preserve">
-    <value>Изменить выражение</value>
+    <value>Редактировать выражение</value>
   </data>
   <data name="PropertyList_Button_New" xml:space="preserve">
     <value>&amp;Новые функции</value>

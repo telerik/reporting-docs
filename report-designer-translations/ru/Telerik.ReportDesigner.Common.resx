@@ -117,18 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DialogsFont_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="ReportBookDesign_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
   <data name="DateTimeUtils_FormatTimeRelative_NotYet" xml:space="preserve">
     <value>Еще нет</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_OneSecondAgo" xml:space="preserve">
-    <value>одна секунда назад</value>
+    <value>одну секунду назад</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_SecondsAgo" xml:space="preserve">
     <value>{0} секунд назад</value>
@@ -146,7 +139,7 @@
     <value>{0} часов назад</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_Yesterday" xml:space="preserve">
-    <value>вчера</value>
+    <value>Вчера</value>
   </data>
   <data name="DateTimeUtils_FormatTimeRelative_DaysAgo" xml:space="preserve">
     <value>{0} дней назад</value>
@@ -160,11 +153,15 @@
   <data name="ErrorDialog_Caption" xml:space="preserve">
     <value>Ошибка</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DialogsFont_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="FontSize_Error_Invalid" xml:space="preserve">
     <value>Недопустимое значение размера шрифта: </value>
   </data>
   <data name="ReportBookCmd_SetTocPlacement_Transaction" xml:space="preserve">
-    <value>Задать положение оглавления</value>
+    <value>Установить положение ТОС</value>
   </data>
   <data name="ReportBook_ContextMenu_DeleteReportSource_Text" xml:space="preserve">
     <value>Удалить</value>
@@ -177,5 +174,8 @@
   </data>
   <data name="ReportBookDesign_Empty" xml:space="preserve">
     <value>Книга отчета пуста.</value>
+  </data>
+  <data name="ReportBookDesign_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
 </root>

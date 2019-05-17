@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ForgetServer_Confirmation" xml:space="preserve">
-    <value>Sind Sie sicher, dass Sie diesen Berichtsserver Eintrag entfernen möchten?</value>
-  </data>
   <data name="CanConnect_ConnectionFailure" xml:space="preserve">
     <value>No se puede conectar al servidor de informes.</value>
   </data>
@@ -127,52 +124,52 @@
     <value>Un nombre de informe no puede contener ninguno de los siguientes caracteres: {0} {1}</value>
   </data>
   <data name="CreateReport_ReportReplaceConfirmation" xml:space="preserve">
-    <value>Un informe con el nombre "{0}" ya existe en la categoría "{1}". ¿desea agregar una nueva revisión?</value>
+    <value>Ya existe un informe con el nombre "{0}" en la categoría "{1}". ¿Desea agregarle una nueva revisión?</value>
   </data>
   <data name="CreatReport_Failed" xml:space="preserve">
-    <value>No se puede crear el informe. Compruebe si el servidor de informes seleccionado tiene categorías definidas y el usuario que ha iniciado la sesión tiene permisos suficientes.</value>
+    <value>No se puede crear el informe. Compruebe si el servidor de informes seleccionado tiene categorías definidas y el usuario que ha iniciado sesión tiene permisos suficientes.</value>
   </data>
   <data name="Lock_LockedByUserError" xml:space="preserve">
     <value>El informe está bloqueado por el usuario "{0}".</value>
   </data>
   <data name="Lock_OperationFailed" xml:space="preserve">
-    <value>Error en la operación de bloqueo.</value>
+    <value>Falló la operación de bloqueo.</value>
   </data>
   <data name="Publish_OperationFailed" xml:space="preserve">
     <value>Error en la operación de publicación.</value>
   </data>
   <data name="Unlock_OperationFailed" xml:space="preserve">
-    <value>La operación de desbloqueo falló.</value>
+    <value>Error en la operación de desbloqueo.</value>
   </data>
   <data name="VerifySchemaCompatibility_Warning" xml:space="preserve">
-    <value>Este diseñador admite el esquema de definición de informe {0:0.0}, que es más reciente que el esquema {1:0.0}, admitido por el servidor de informes. Si desea editar y publicar los cambios, debe utilizar el diseñador de informes proporcionado con el servidor de informes.</value>
+    <value>Este diseñador admite el esquema de definición de informe {0:0.0}, que es más reciente que el esquema {1:0.0}, admitido por el servidor de informes. Si desea editar y publicar los cambios, debe usar el diseñador de informes que se proporciona con el servidor de informes.</value>
   </data>
   <data name="Ribbon_Warning_Revert" xml:space="preserve">
-    <value>Se perderán todos los cambios realizados en la definición del informe. ¿desea continuar?</value>
+    <value>Se perderán todos los cambios realizados en la definición del informe. ¿Quieres continuar?</value>
   </data>
   <data name="Ribbon_Revert_Caption" xml:space="preserve">
-    <value>Revertir cambios</value>
+    <value>Revertir los cambios</value>
   </data>
   <data name="Connection_Error" xml:space="preserve">
-    <value>Error al iniciar la sesión en el servidor. Compruebe el identificador URI y las credenciales del servidor</value>
+    <value>Error al iniciar sesión en el servidor. Por favor, compruebe el URI del servidor y las credenciales</value>
   </data>
   <data name="Connection_Error_Uri" xml:space="preserve">
-    <value>El identificador URI especificado tiene un formato incorrecto.</value>
+    <value>El URI especificado tiene un formato incorrecto.</value>
   </data>
   <data name="Connection_Error_Federation" xml:space="preserve">
-    <value>No se puede recuperar la configuración externa del proveedor: </value>
+    <value>No se puede recuperar la configuración del proveedor externo: </value>
   </data>
   <data name="EditServerReportSourceDialog_ServerOption_Text" xml:space="preserve">
     <value>Servidor</value>
   </data>
   <data name="EditServerReportSourceDialog_ServerOption_Description" xml:space="preserve">
-    <value>Seleccione un informe o introduzca un localizador de informes válido (es decir, categoría/nombre):</value>
+    <value>Seleccione un informe o introduzca un localizador de informes válido (por ejemplo, categoría/nombre):</value>
   </data>
   <data name="EditServerReportSourceDialog_Text" xml:space="preserve">
-    <value>&lt; &gt; Informe de servidor &gt;</value>
+    <value>&lt; Select Server Report &gt;</value>
   </data>
   <data name="OpenDialog_Header" xml:space="preserve">
-    <value>Abrir informe desde {0}</value>
+    <value>Abra el informe de {0}</value>
   </data>
   <data name="PublishDialog_Title" xml:space="preserve">
     <value>Publicar</value>
@@ -187,10 +184,10 @@
     <value>Guardar</value>
   </data>
   <data name="Disconnect_EnsureNotInUse_Warning" xml:space="preserve">
-    <value>Ha abierto informes desde este servidor. Primero hay que cerrar las fichas de informes.</value>
+    <value>Ha abierto informes desde este servidor. Primero tienes que cerrar las pestañas de informes.</value>
   </data>
   <data name="AddReportServer_Error_ReportServerAlreadyExist" xml:space="preserve">
-    <value>Ya existe el servidor de informes ' {0} '.</value>
+    <value>El servidor de informes ' {0} ' ya existe.</value>
   </data>
   <data name="ContextualTab_ServerTools_Text" xml:space="preserve">
     <value>Herramientas de servidor</value>
@@ -202,31 +199,31 @@
     <value>Gestión de informes</value>
   </data>
   <data name="ContextualTab_ReportManagement_Lock_Text" xml:space="preserve">
-    <value>Cerradura</value>
+    <value>cerradura</value>
   </data>
   <data name="ContextualTab_ReportManagement_Lock_Description" xml:space="preserve">
-    <value>Bloquee el informe para editarlo. Sólo usted podrá editar los informes.</value>
+    <value>Bloquee el informe para editarlo. Solo usted podrá editar los informes.</value>
   </data>
   <data name="ContextualTab_ReportManagement_Publish_Text" xml:space="preserve">
     <value>Publicar</value>
   </data>
   <data name="ContextualTab_ReportManagement_Publish_Description" xml:space="preserve">
-    <value>Publicar el informe en el servidor. Haga que los cambios sean visibles para otros usuarios con permisos de vista.</value>
+    <value>Publique el informe en el servidor. Haga que los cambios sean visibles para otros usuarios con permisos de vista.</value>
   </data>
   <data name="ContextualTab_ReportManagement_Revert_Text" xml:space="preserve">
-    <value>Revertir</value>
+    <value>volver</value>
   </data>
   <data name="ContextualTab_ReportManagement_Revert_Description" xml:space="preserve">
-    <value>Revertir cualquier cambio pendiente y desbloquear el informe.</value>
+    <value>Revierta los cambios pendientes y desbloquee el informe.</value>
   </data>
   <data name="ContextualTab_View_WebPreview_Text" xml:space="preserve">
-    <value>Vista previa de la web</value>
+    <value>Vista previa Web</value>
   </data>
   <data name="ContextualTab_View_WebPreview_Description" xml:space="preserve">
-    <value>Archivar y previsualizar el informe actual en el navegador.</value>
+    <value>Shelve y previsualice el informe actual en el navegador.</value>
   </data>
   <data name="ConnectToServer_Label" xml:space="preserve">
-    <value>Conectarse al servidor de informes</value>
+    <value>Conéctese al servidor de informes</value>
   </data>
   <data name="Cancel_Button" xml:space="preserve">
     <value>Cancelar</value>
@@ -241,13 +238,13 @@
     <value>Iniciar sesión</value>
   </data>
   <data name="ConnectToServer_LogInADFS" xml:space="preserve">
-    <value>Inicie sesión con credenciales ADFS</value>
+    <value>Inicie sesión con credenciales de ADFS</value>
   </data>
   <data name="ConnectToServer_LogInExternal" xml:space="preserve">
     <value>Inicie sesión con proveedores externos</value>
   </data>
   <data name="ConnectToServer_LogInLocal" xml:space="preserve">
-    <value>Iniciar sesión con cuenta local</value>
+    <value>Inicie sesión con la cuenta local</value>
   </data>
   <data name="ConnectToServer_Or" xml:space="preserve">
     <value>o</value>
@@ -274,22 +271,22 @@
     <value>Comentario:</value>
   </data>
   <data name="Publish_Confirmation" xml:space="preserve">
-    <value>¿está seguro de que desea publicar los cambios realizados? Serán visibles para todos los usuarios con el permiso apropiado.</value>
+    <value>¿Está seguro de que desea publicar los cambios que ha realizado? Serán visibles para todos los usuarios con el permiso apropiado.</value>
   </data>
   <data name="Publish_Description" xml:space="preserve">
-    <value>Publicar el informe en el servidor</value>
+    <value>Publique el informe en el servidor</value>
   </data>
   <data name="Publish_KeepLocked" xml:space="preserve">
-    <value>¿mantener el informe cerrado?</value>
+    <value>¿Mantener el reporte bloqueado?</value>
   </data>
   <data name="Publish_PublishButton" xml:space="preserve">
     <value>Publicar</value>
   </data>
   <data name="Report_CreatedBy" xml:space="preserve">
-    <value>Creado por</value>
+    <value>creado por</value>
   </data>
   <data name="Report_Label" xml:space="preserve">
-    <value>Informe</value>
+    <value>Reporte</value>
   </data>
   <data name="Report_LastModifiedOn" xml:space="preserve">
     <value>Última modificación el</value>
@@ -304,12 +301,15 @@
     <value>Categoría:</value>
   </data>
   <data name="SaveAs_Description" xml:space="preserve">
-    <value>Descripción:</value>
+    <value>descripción:</value>
   </data>
   <data name="SaveAs_SaveButton" xml:space="preserve">
     <value>Guardar</value>
   </data>
   <data name="SaveAs_Title" xml:space="preserve">
-    <value>Título:</value>
+    <value>título:</value>
+  </data>
+  <data name="ForgetServer_Confirmation" xml:space="preserve">
+    <value>¿Está seguro de que desea quitar este registro del servidor de informes?</value>
   </data>
 </root>

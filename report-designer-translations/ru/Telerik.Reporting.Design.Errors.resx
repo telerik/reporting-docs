@@ -118,43 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="UnitParseNoDigits" xml:space="preserve">
-    <value>не удается выполнить синтаксический анализ {0} как единицу измерения, поскольку он не содержит числовых значений. Примерами допустимых строк единиц измерения являются 1pt и. 5in.</value>
+    <value>{0} не может использоваться как единица, так как она не содержит числовых значений. Примерами действительных строк единицы являются 1pt и. 5in.</value>
   </data>
   <data name="UnitParseNoUnit" xml:space="preserve">
-    <value>{0} не содержит спецификацию единицы измерения. Примерами допустимых строк единиц измерения являются 1pt и. 5in.</value>
+    <value>{0} не содержит спецификации единицы. Примерами действительных строк единицы являются 1pt и. 5in.</value>
   </data>
   <data name="UnitParseNumericPart" xml:space="preserve">
-    <value>Числовая часть {0} не может быть проанализирована как единица типа {2}.</value>
+    <value>Числовую часть {0} нельзя считать единицей типа {0}.</value>
   </data>
   <data name="InvalidUnitType" xml:space="preserve">
-    <value>Неверный тип единицы измерения.</value>
+    <value>Недопустимый тип единицы.</value>
   </data>
   <data name="InvalidArgumentType" xml:space="preserve">
-    <value>{0} должен иметь тип {1}.</value>
+    <value>{0} должно быть типа {0}.</value>
   </data>
   <data name="InvalidViewTechnologyType" xml:space="preserve">
-    <value>Поддерживается только технология представления Windows Forms.</value>
+    <value>Поддерживается только технология просмотра форм Windows.</value>
   </data>
   <data name="InvalidRootComponentType" xml:space="preserve">
-    <value>Корневой компонент не является отчетом.</value>
+    <value>Корневая составляющая не является отчетом.</value>
   </data>
   <data name="ParentlessReportItem" xml:space="preserve">
-    <value>Родительский элемент отчета имеет значение null.</value>
+    <value>Родитель элемента отчета является недействительным.</value>
   </data>
   <data name="InvalidGridSize" xml:space="preserve">
-    <value>Неверный размер сетки.</value>
+    <value>Недопустимый размер сетки.</value>
   </data>
   <data name="CommandSetError" xml:space="preserve">
-    <value>Произошла ошибка при обработке этой команды.
+    <value>При обработке этой команды произошла ошибка.
 {0}</value>
   </data>
   <data name="DeleteGroupInsteadOfSection" xml:space="preserve">
-    <value>Необходимо удалить группу ' {0} ', чтобы удалить раздел "{1}".</value>
+    <value>Удалите группу ' {0} ', чтобы удалить раздел ' {0} '.</value>
   </data>
   <data name="DataSourceAlreadyAssigned" xml:space="preserve">
-    <value>Разрешены только поля из текущего источника данных "{0}".</value>
+    <value>Допускаются только поля из текущего источника данных ' {0} '.</value>
   </data>
   <data name="ItemsCannotBeAddedInLocalizationMode" xml:space="preserve">
-    <value>Невозможно добавить элементы в режиме локализации. Задайте для свойства Language значение (по умолчанию) для добавления элементов.</value>
+    <value>Элементы нельзя добавлять в режиме локализации. Настройка языкового свойства отчета (по умолчанию) для добавления элементов.</value>
   </data>
 </root>

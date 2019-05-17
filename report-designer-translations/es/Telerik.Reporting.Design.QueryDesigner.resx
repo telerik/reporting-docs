@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AutoDetectModeWarningText" xml:space="preserve">
-    <value>¡ cambiar a detección automática descartará los cambios realizados!</value>
+    <value>¡ Cambiar a detección automática descartará los cambios que haya realizado!</value>
   </data>
   <data name="Operator" xml:space="preserve">
     <value>Operador</value>
@@ -130,7 +130,7 @@
     <value>Advertencia</value>
   </data>
   <data name="TitleRelatedFields" xml:space="preserve">
-    <value>Campos relacionados</value>
+    <value>Los campos relacionados</value>
   </data>
   <data name="AutoDetectButtonText" xml:space="preserve">
     <value>Detección automática</value>
@@ -157,28 +157,28 @@
     <value>El esquema no está disponible.</value>
   </data>
   <data name="LeftJoinField" xml:space="preserve">
-    <value>Campo de Unión izquierdo</value>
+    <value>Campo de Unión izquierda</value>
   </data>
   <data name="RightTable" xml:space="preserve">
-    <value>Mesa derecha</value>
+    <value>Tabla derecha</value>
   </data>
   <data name="TitleSelectedFields" xml:space="preserve">
-    <value>Campos seleccionados</value>
+    <value>Los campos seleccionados</value>
   </data>
   <data name="RightJoinField" xml:space="preserve">
-    <value>Campo de Unión derecho</value>
+    <value>Campo de Unión derecha</value>
   </data>
   <data name="TitleDatabaseView" xml:space="preserve">
     <value>Vista de base de datos</value>
   </data>
   <data name="DefaultSchema" xml:space="preserve">
-    <value>[esquema predeterminado]</value>
+    <value>[Esquema predeterminado]</value>
   </data>
   <data name="ColumnNameOperator" xml:space="preserve">
     <value>Operador</value>
   </data>
   <data name="WarningRelationIsNotComplete" xml:space="preserve">
-    <value>Las relaciones deben especificar la tabla izquierda y derecha. Especifique ambas tablas o elimine esta relación.</value>
+    <value>Una relación debe especificar la tabla izquierda y derecha. Especifique ambas tablas o quite esta relación.</value>
   </data>
   <data name="ErrorUnrelatedTables" xml:space="preserve">
     <value>Tiene tablas no relacionadas: </value>
@@ -187,13 +187,13 @@
     <value>Agregar</value>
   </data>
   <data name="ErrorEmptySelectClause" xml:space="preserve">
-    <value>Por favor, seleccione columnas de tabla.</value>
+    <value>Seleccione las columnas de la tabla.</value>
   </data>
   <data name="ErrorInvalidProperty" xml:space="preserve">
-    <value>Propiedad no válida o faltante</value>
+    <value>Propiedad no válida o ausente</value>
   </data>
   <data name="Alias" xml:space="preserve">
-    <value>Alias</value>
+    <value>alias</value>
   </data>
   <data name="FieldName" xml:space="preserve">
     <value>nombre del campo</value>
@@ -205,19 +205,19 @@
     <value>Nombre de parámetro</value>
   </data>
   <data name="PreviewValue" xml:space="preserve">
-    <value>Vista previa del valor</value>
+    <value>Valor de vista previa</value>
   </data>
   <data name="StateWarningCaption" xml:space="preserve">
     <value>Estado del diseñador de consultas SQL</value>
   </data>
   <data name="StateWarningText" xml:space="preserve">
-    <value>La consulta SQL se editó fuera del diseñador de consultas SQL o se modificó el esquema de dB. Al utilizar el diseñador de consultas se descartarán los cambios de consulta SQL.</value>
+    <value>La consulta SQL se editó fuera del diseñador de consultas SQL o se modificó el esquema de base de datos. Mediante el diseñador de consultas se descartarán los cambios de consulta SQL.</value>
   </data>
   <data name="StateRestoringErrorText" xml:space="preserve">
     <value>Se ha producido un error al restaurar el estado guardado.</value>
   </data>
   <data name="StateRestoringErrorCaption" xml:space="preserve">
-    <value>Restablecer el error de estado</value>
+    <value>Restaurar error de estado</value>
   </data>
   <data name="JoinTypeIsNotSelected" xml:space="preserve">
     <value>El tipo de Unión no está seleccionado.</value>
@@ -226,12 +226,12 @@
     <value>El proveedor seleccionado no admite parámetros con nombre.</value>
   </data>
   <data name="Parameter_Error_PreviewValueIsRequired" xml:space="preserve">
-    <value>Se requiere el valor de vista previa del filtro</value>
+    <value>El valor de previsualización del filtro es necesario</value>
   </data>
   <data name="Filter_Error_FieldNameIsRequired" xml:space="preserve">
-    <value>Se requiere el nombre del campo de filtro.</value>
+    <value>Se requiere el nombre del campo filter.</value>
   </data>
   <data name="Relations_Error_ConditionIsRequired" xml:space="preserve">
-    <value>Se requieren campos de relación.</value>
+    <value>Los campos de relación son obligatorios.</value>
   </data>
 </root>

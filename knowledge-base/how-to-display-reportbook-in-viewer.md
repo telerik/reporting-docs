@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-This article demonstrates the three approaches for displaying ReportBook in an application. It is applicable for any application types. Depending on the report viewer, there might be different approaches for setting the viewer's ReportSource, all of them can be reviewed in [How to: Set ReportSource for Report Viewers](../report-sources-viewers) help article.
+This article demonstrates the three approaches for displaying ReportBook in an application. It is applicable for any application type. Depending on the report viewer, there might be different approaches for setting the viewer's ReportSource, all of them can be reviewed in [How to: Set ReportSource for Report Viewers](../report-sources-viewers) help article.
 
 ## Solution
 1. ReportBook can be created in Standalone report designer first using Report Book report template. The output will be a .TRBP file that can be passed to report viewer's report source as [UriReportSource](../t-telerik-reporting-urireportsource).

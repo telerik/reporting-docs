@@ -20,6 +20,10 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
+	<tr>
+		<td>Report Viewers</td>
+		<td>HTML5 Report Viewer, HTML5 ASP.NET MVC Report Viewer, HTML5 ASP.NET Web Forms Report Viewer, Angular Report Viewer</td>
+	</tr>
 </table>
 
 
@@ -70,7 +74,7 @@ displayed report page. To achieve that follow these steps:
             });
     });
   ```
-4. Subscribe to the viewer's pageReady and updateUi events and set the Viewer hight based on the report page content:
+4. Subscribe to the viewer's pageReady event and set the Viewer hight based on the report page content:
 
   ```JavaScript
   $(document).ready(function () {
@@ -80,11 +84,6 @@ displayed report page. To achieve that follow these steps:
               reportSource: {
                   report: "Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary"
               },
-              // Resize the Viewer if the Parameters area is toggled. 
-              // This listener could be the skip if the Parameters area position is set to the Left or to the Right
-              updateUi: function (e, args) {
-                  resizeViewer();
-              },
               //Resize the viewer when the page is ready
               pageReady: function (e, args) {
                   resizeViewer();
@@ -92,16 +91,9 @@ displayed report page. To achieve that follow these steps:
           });
 
         function resizeViewer() {
-            var pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2, // Calcolate the report page height
-                parametersAreaDom = $(".trv-parameters-area"),
-                parametersAreaVisible = !parametersAreaDom.hasClass("k-state-collapsed"),//
-                parametersAreaVertical = parametersAreaDom.hasClass("-vertical"),
+            var pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2, // Calculate the report page height
                 viewer = $("#reportViewer1"),
                 viewerHeight = viewer.height();
-
-            if (parametersAreaVisible && parametersAreaVertical) {
-                pageHeight += 140;
-            }
 
             if (viewerHeight !== pageHeight ) {
                 viewer.height(pageHeight);

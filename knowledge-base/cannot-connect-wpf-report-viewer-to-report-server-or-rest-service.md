@@ -1,11 +1,11 @@
 ---
-title: Cannot connect WPF ReportViewer to Report Server or REST Service
-description: On attempt to connect WPF ReportViewer to an engine of remote type, i.e. Report Server or REST Service, an error "The assembly Telerik.Reporting.Services.HttpClient.dll cannot be loaded." occurs.
+title: Cannot connect WPF/WinForms ReportViewer to Report Server or REST Service
+description: On attempt to connect WPF or WinForms ReportViewer to an engine of remote type, i.e. Report Server or REST Service, an error "The assembly Telerik.Reporting.Services.HttpClient.dll cannot be loaded." occurs.
 type: troubleshooting
-page_title: Cannot connect WPF ReportViewer to Report Server or REST Service
-slug: cannot-connect-wpf-report-viewer-to-report-server-or-rest-service
+page_title: Cannot connect WPF/WinForms ReportViewer to Report Server or REST Service
+slug: cannot-connect-wpf-or-winforms-report-viewer-to-report-server-or-rest-service
 position: 
-tags: WPFViewer, RestService, ReportServer
+tags: WPFViewer, WinFormsVIewer, RestService, ReportServer
 ticketid: 1407838
 res_type: kb
 ---
@@ -19,24 +19,24 @@ res_type: kb
 	    </tr>
        <tr>
 	    	<td>Project Type</td>
-	    	<td>WPF application</td>
+	    	<td>WPF and WinForms applications</td>
 	    </tr>
       <tr>
 	    	<td>Viewer</td>
-	    	<td>WPF Report Viewer</td>
+	    	<td>WPF/WinForms Report Viewer</td>
 	    </tr>
     </tbody>
 </table>
 
 
 ## Description
-On attempt to connect WPF ReportViewer to an engine of remote type, i.e. Report Server or REST Service, the following error occurs: 
+On attempt to connect WPF or WinForms ReportViewer to an engine of remote type, i.e. [Report Server](https://docs.telerik.com/report-server/introduction) or [REST Service](../telerik-reporting-rest-conception), the following error occurs: 
 ```
 The assembly Telerik.Reporting.Services.HttpClient.dll cannot be loaded.
 ```
 
 ## Solution
-The Telerik.Reporting.Services.HttpClient.dll is required if the selected engine is of remote type (REST Service or Report Server). Please make sure that you have added a reference to this assembly to the current project.
+The *Telerik.Reporting.Services.HttpClient.dll* is required if the selected engine is of remote type (REST Service or Report Server). Please make sure that you have added a reference to this assembly to the current project.
 
 It could be found in Telerik Reporting installation directory. For example *C:\Program Files (x86)\Progress\Telerik Reporting **VERSION**\Bin\Telerik.Reporting.Services.HttpClient.dll*.
 
@@ -47,3 +47,7 @@ As a side note, we strongly suggest using the [Telerik Report Viewer Window Item
 ](../wpf-report-viewer-howto-use-it-with-reportserver)
 
 [How To: Use WPF Report Viewer With REST Service](../wpf-report-viewer-howto-use-it-with-rest-service)
+
+[How To: Use Windows Forms Report Viewer With REST Service](../winforms-viewer-howto-use-it-with-rest-service)
+
+[How To: Use Windows Forms Report Viewer With Report Server](../winforms-viewer-howto-use-it-with-reportserver)

@@ -5,8 +5,8 @@ type: troubleshooting
 page_title: How to pass multivalue parameters from URL query string with web service data source
 slug: passing-multivalue-parameters-from-url-query-string-with-web-service-data-source
 position: 
-tags: 
-ticketid: Html5WebFormsReportViewer, ReportParameters, WebServiceDataSource
+tags: Html5WebFormsReportViewer, ReportParameters, WebServiceDataSource
+ticketid: 
 res_type: kb
 ---
 

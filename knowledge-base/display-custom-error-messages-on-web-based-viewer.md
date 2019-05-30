@@ -37,7 +37,7 @@ An error has occurred while resolving X data source: An error occurred while inv
 ## Solution
 Messages displayed by the HTML5-based Report Viewers are separated into two "categories". While the string "Unable to get report parameters." is a client-side message, the rest of the message is server-side one.
 
-To change the client side text, you might use the approach demonstrated in the [Localization](../html5-report-viewer-localization) article and change the corresponding value. However, this would not remove the server-side message. To change the entire message, the following code snippet could be used:
+To change the client side text, use the approach demonstrated in the [Localization](../html5-report-viewer-localization) article and change the corresponding value. However, this won't remove the server-side message. To change the entire message, use the following code snippet:
 
 ``` JavaScript
 // Use this logic if you want to change the error message content. Based on the browser culture, you can change the text to different languages.

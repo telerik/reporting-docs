@@ -34,9 +34,9 @@ telerik_reportViewer is not a function
 Page containing an HTML5 Viewer must load only once jQuery library of version greater than 1.9.1 (according to the [Kendo UI requirements](http://docs.kendoui.com/getting-started/javascript-dependencies#jquery-version)). For more information, please check [HTML5 Viewer Requirements](../html5-report-viewer-system-requirements) help article.
 
 Such error can occur if:
-	- jQuery is not loaded;
-	- jQuery is loaded more than once and with different version;
-	- jQuery is loaded at later stage in the page life cycle.
+- jQuery is not loaded;
+- jQuery is loaded more than once and with different version;
+- jQuery is loaded at later stage in the page life cycle.
 
 ## Solution
 Check if the link to jQuery is loaded before the viewer's script. 

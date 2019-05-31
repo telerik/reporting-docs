@@ -382,7 +382,7 @@
     <value>Ángulo</value>
   </data>
   <data name="Shape_ShapeType_Description" xml:space="preserve">
-    <value>figura</value>
+    <value>Forma</value>
   </data>
   <data name="Shape_Stretch_Description" xml:space="preserve">
     <value>Estirar</value>
@@ -394,13 +394,13 @@
     <value>Flecha inferior</value>
   </data>
   <data name="CrossShapeName" xml:space="preserve">
-    <value>santiguarse</value>
+    <value>Cruz</value>
   </data>
   <data name="EllipseShapeName" xml:space="preserve">
-    <value>elipse</value>
+    <value>Elipse</value>
   </data>
   <data name="HexagonShapeName" xml:space="preserve">
-    <value>hexágono</value>
+    <value>Hexágono</value>
   </data>
   <data name="HorizonatalLineShapeName" xml:space="preserve">
     <value>Línea horizontal</value>
@@ -412,10 +412,10 @@
     <value>{0}-Ray Star</value>
   </data>
   <data name="OctagonShapeName" xml:space="preserve">
-    <value>octágono</value>
+    <value>Octágono</value>
   </data>
   <data name="PentagonShapeName" xml:space="preserve">
-    <value>pentágono</value>
+    <value>Pentágono</value>
   </data>
   <data name="PolygonShapeName" xml:space="preserve">
     <value>{0}-Gon</value>
@@ -433,7 +433,7 @@
     <value>Flecha superior</value>
   </data>
   <data name="TriangleShapeName" xml:space="preserve">
-    <value>triángulo</value>
+    <value>Triángulo</value>
   </data>
   <data name="VerticalLineShapeName" xml:space="preserve">
     <value>Línea vertical</value>
@@ -748,13 +748,13 @@
     <value>&lt;</value>
   </data>
   <data name="FilterOperator_Like_Description" xml:space="preserve">
-    <value>como</value>
+    <value>Como</value>
   </data>
   <data name="FilterOperator_NotEqual_Description" xml:space="preserve">
     <value>&lt;&gt;</value>
   </data>
   <data name="FilterOperator_NotLike_Description" xml:space="preserve">
-    <value>no gustar</value>
+    <value>No como</value>
   </data>
   <data name="FilterOperator_TopN_Description" xml:space="preserve">
     <value>Top N</value>
@@ -1765,7 +1765,7 @@
     <value>Visible</value>
   </data>
   <data name="MapItem_Bounds_Name" xml:space="preserve">
-    <value>límites</value>
+    <value>Límites</value>
   </data>
   <data name="MapItem_Height_Name" xml:space="preserve">
     <value>altura</value>
@@ -1840,7 +1840,7 @@
     <value>Paleta de colores</value>
   </data>
   <data name="Map_Culture_Name" xml:space="preserve">
-    <value>cultura</value>
+    <value>Cultura</value>
   </data>
   <data name="Map_EsriShapeFileSourceType_FileName_Name" xml:space="preserve">
     <value>Nombre de Archivo</value>
@@ -1849,7 +1849,7 @@
     <value>Pares de relación</value>
   </data>
   <data name="Map_Extent_Name" xml:space="preserve">
-    <value>grado</value>
+    <value>Grado</value>
   </data>
   <data name="Map_GenericTileProvider_Attribution_Name" xml:space="preserve">
     <value>Atribución</value>
@@ -1942,7 +1942,7 @@
     <value>Tamaño</value>
   </data>
   <data name="Map_Projection_Name" xml:space="preserve">
-    <value>proyección</value>
+    <value>Proyección</value>
   </data>
   <data name="Map_ScaleLegend_Name" xml:space="preserve">
     <value>Scale Legend</value>
@@ -2098,7 +2098,7 @@
     <value>Encabezados de columna imprimir en cada página</value>
   </data>
   <data name="Table_Corner_Name" xml:space="preserve">
-    <value>acaparar</value>
+    <value>Esquina</value>
   </data>
   <data name="Table_Name" xml:space="preserve">
     <value>Tabla</value>
@@ -2170,7 +2170,7 @@
     <value>Checksum</value>
   </data>
   <data name="BarcodeEncoder_Name" xml:space="preserve">
-    <value>codificador</value>
+    <value>Codificador</value>
   </data>
   <data name="BarcodeModule_Name" xml:space="preserve">
     <value>Módulo</value>
@@ -2275,10 +2275,10 @@
     <value>Unidad principal</value>
   </data>
   <data name="DateTimeScale_Maximum_Name" xml:space="preserve">
-    <value>mayor</value>
+    <value>Máximo</value>
   </data>
   <data name="DateTimeScale_Minimum_Name" xml:space="preserve">
-    <value>mínimo</value>
+    <value>Mínimo</value>
   </data>
   <data name="DateTimeScale_MinorStep_Name" xml:space="preserve">
     <value>Paso menor</value>
@@ -2323,7 +2323,7 @@
     <value>Etiquetas de categoría multinivel</value>
   </data>
   <data name="GraphAxis_Scale_Name" xml:space="preserve">
-    <value>quitar las escamas</value>
+    <value>Escala</value>
   </data>
   <data name="GraphAxis_Size_Name" xml:space="preserve">
     <value>Tamaño</value>
@@ -2359,7 +2359,7 @@
     <value>Visible</value>
   </data>
   <data name="GraphItem_Bounds_Name" xml:space="preserve">
-    <value>límites</value>
+    <value>Límites</value>
   </data>
   <data name="GraphItem_Height_Name" xml:space="preserve">
     <value>altura</value>
@@ -2461,7 +2461,7 @@
     <value>Sistemas de coordenadas</value>
   </data>
   <data name="Graph_Culture_Name" xml:space="preserve">
-    <value>cultura</value>
+    <value>Cultura</value>
   </data>
   <data name="Graph_Legend_Name" xml:space="preserve">
     <value>Leyenda</value>
@@ -2548,13 +2548,13 @@
     <value>Línea lisa</value>
   </data>
   <data name="LogarithmicScale_Base_Name" xml:space="preserve">
-    <value>abyecto</value>
+    <value>Base</value>
   </data>
   <data name="LogarithmicScale_Maximum_Name" xml:space="preserve">
-    <value>mayor</value>
+    <value>Máximo</value>
   </data>
   <data name="LogarithmicScale_Minimum_Name" xml:space="preserve">
-    <value>mínimo</value>
+    <value>Mínimo</value>
   </data>
   <data name="LogarithmicScale_Value_Name" xml:space="preserve">
     <value>Valor</value>
@@ -2569,10 +2569,10 @@
     <value>Los ticks de punto de datos</value>
   </data>
   <data name="NumericalScaleBase_Maximum_Name" xml:space="preserve">
-    <value>mayor</value>
+    <value>Máximo</value>
   </data>
   <data name="NumericalScaleBase_Minimum_Name" xml:space="preserve">
-    <value>mínimo</value>
+    <value>Mínimo</value>
   </data>
   <data name="NumericalScaleCrossAxisPosition_Value_Name" xml:space="preserve">
     <value>Valor</value>
@@ -2626,7 +2626,7 @@
     <value>Tipo MIME</value>
   </data>
   <data name="PictureBoxSizing_Name" xml:space="preserve">
-    <value>cola</value>
+    <value>Tamaño</value>
   </data>
   <data name="PolarCoordinateSystem_AngularAxisLabelOrientation_Name" xml:space="preserve">
     <value>Orientación de etiqueta de eje angular</value>
@@ -2647,7 +2647,7 @@
     <value>Eje radial</value>
   </data>
   <data name="ReportCulture_Name" xml:space="preserve">
-    <value>cultura</value>
+    <value>Cultura</value>
   </data>
   <data name="ReportDataSource_Name" xml:space="preserve">
     <value>Fuente de datos</value>
@@ -2689,10 +2689,10 @@
     <value>Visible</value>
   </data>
   <data name="ReportItemDocking_Name" xml:space="preserve">
-    <value>acoplamiento</value>
+    <value>Acoplamiento</value>
   </data>
   <data name="ReportItemKeepTogether_Name" xml:space="preserve">
-    <value>mantenerse juntos</value>
+    <value>Mantener juntos</value>
   </data>
   <data name="ReportItemLocation_Name" xml:space="preserve">
     <value>Ubicación</value>
@@ -2713,7 +2713,7 @@
     <value>altura</value>
   </data>
   <data name="ReportSectionKeepTogether_Name" xml:space="preserve">
-    <value>mantenerse juntos</value>
+    <value>Mantener juntos</value>
   </data>
   <data name="ReportSectionPageBreak_Name" xml:space="preserve">
     <value>Salto de página</value>
@@ -2764,5 +2764,375 @@
     <value>Ancho del borde</value>
   </data>
   <data name="StyleBottomBorderColor_Name" xml:space="preserve">
-    <value>Abajo</value>
-  </dat
+    <value>Parte inferior</value>
+  </data>
+  <data name="StyleBottomBorderStyle_Name" xml:space="preserve">
+    <value>Parte inferior</value>
+  </data>
+  <data name="StyleBottomBorderWidth_Name" xml:space="preserve">
+    <value>Parte inferior</value>
+  </data>
+  <data name="StyleBottomPadding_Name" xml:space="preserve">
+    <value>Parte inferior</value>
+  </data>
+  <data name="StyleColor_Name" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="StyleDefaultBorderColor_Name" xml:space="preserve">
+    <value>predeterminado</value>
+  </data>
+  <data name="StyleDefaultBorderStyle_Name" xml:space="preserve">
+    <value>predeterminado</value>
+  </data>
+  <data name="StyleDefaultBorderWidth_Name" xml:space="preserve">
+    <value>predeterminado</value>
+  </data>
+  <data name="StyleFontBold_Name" xml:space="preserve">
+    <value>Negrita</value>
+  </data>
+  <data name="StyleFontItalic_Name" xml:space="preserve">
+    <value>Cursiva</value>
+  </data>
+  <data name="StyleFontName_Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="StyleFontSize_Name" xml:space="preserve">
+    <value>Tamaño</value>
+  </data>
+  <data name="StyleFontStrikeout_Name" xml:space="preserve">
+    <value>Tachado</value>
+  </data>
+  <data name="StyleFontStyle_Name" xml:space="preserve">
+    <value>Estilo</value>
+  </data>
+  <data name="StyleFontUnderline_Name" xml:space="preserve">
+    <value>Subrayar</value>
+  </data>
+  <data name="StyleFont_Name" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="StyleLeftBorderColor_Name" xml:space="preserve">
+    <value>Izquierda</value>
+  </data>
+  <data name="StyleLeftBorderStyle_Name" xml:space="preserve">
+    <value>Izquierda</value>
+  </data>
+  <data name="StyleLeftBorderWidth_Name" xml:space="preserve">
+    <value>Izquierda</value>
+  </data>
+  <data name="StyleLeftPadding_Name" xml:space="preserve">
+    <value>Izquierda</value>
+  </data>
+  <data name="StyleLineColor_Name" xml:space="preserve">
+    <value>Color de Línea</value>
+  </data>
+  <data name="StyleLineStyle_Name" xml:space="preserve">
+    <value>Estilo de Línea</value>
+  </data>
+  <data name="StyleLineWidth_Name" xml:space="preserve">
+    <value>Ancho de línea</value>
+  </data>
+  <data name="StylePadding_Name" xml:space="preserve">
+    <value>Relleno</value>
+  </data>
+  <data name="StyleRightBorderColor_Name" xml:space="preserve">
+    <value>Derecho</value>
+  </data>
+  <data name="StyleRightBorderStyle_Name" xml:space="preserve">
+    <value>Derecho</value>
+  </data>
+  <data name="StyleRightBorderWidth_Name" xml:space="preserve">
+    <value>Derecho</value>
+  </data>
+  <data name="StyleRightPadding_Name" xml:space="preserve">
+    <value>Derecho</value>
+  </data>
+  <data name="StyleTopBorderColor_Name" xml:space="preserve">
+    <value>Arriba</value>
+  </data>
+  <data name="StyleTopBorderStyle_Name" xml:space="preserve">
+    <value>Arriba</value>
+  </data>
+  <data name="StyleTopBorderWidth_Name" xml:space="preserve">
+    <value>Arriba</value>
+  </data>
+  <data name="StyleTopPadding_Name" xml:space="preserve">
+    <value>Arriba</value>
+  </data>
+  <data name="StyleVerticalAlign_Name" xml:space="preserve">
+    <value>Alinear verticalmente</value>
+  </data>
+  <data name="Style_TextAlign_Name" xml:space="preserve">
+    <value>Texto alinear</value>
+  </data>
+  <data name="Style_Visible_Name" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="TextBoxCanGrow_Name" xml:space="preserve">
+    <value>Puede crecer</value>
+  </data>
+  <data name="TextBoxCanShrink_Name" xml:space="preserve">
+    <value>¿Puede reducir</value>
+  </data>
+  <data name="TextBoxCulture_Name" xml:space="preserve">
+    <value>Cultura</value>
+  </data>
+  <data name="TextBoxMultiline_Name" xml:space="preserve">
+    <value>Multilínea</value>
+  </data>
+  <data name="TextBoxValue_Name" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="TextBoxWordWrap_Name" xml:space="preserve">
+    <value>Ceñir texto</value>
+  </data>
+  <data name="TextItemBaseCanGrow_Name" xml:space="preserve">
+    <value>Puede crecer</value>
+  </data>
+  <data name="TextItemBaseCanShrink_Name" xml:space="preserve">
+    <value>¿Puede reducir</value>
+  </data>
+  <data name="TextItemBaseCulture_Name" xml:space="preserve">
+    <value>Cultura</value>
+  </data>
+  <data name="TextItemBaseMultiline_Name" xml:space="preserve">
+    <value>Multilínea</value>
+  </data>
+  <data name="TextItemBaseWordWrap_Name" xml:space="preserve">
+    <value>Ceñir texto</value>
+  </data>
+  <data name="DuplicateReportParameterName_Warning" xml:space="preserve">
+    <value>El parámetro de informe con el nombre ' {0} ' ya existe.</value>
+  </data>
+  <data name="PresentationCategory" xml:space="preserve">
+    <value>Presentación</value>
+  </data>
+  <data name="Report_ExternalStyleSheets_Description" xml:space="preserve">
+    <value>Colección de hojas de estilos externas para el informe.</value>
+  </data>
+  <data name="Report_ExternalStyleSheets_Name" xml:space="preserve">
+    <value>Hojas de estilo externas</value>
+  </data>
+  <data name="Report_SnapGridSize_Description" xml:space="preserve">
+    <value>Establezca el tamaño de cuadrícula de referencia de superficie de diseño.</value>
+  </data>
+  <data name="Report_SnapGridSize_Name" xml:space="preserve">
+    <value>Ajustar tamaño de rejilla</value>
+  </data>
+  <data name="Report_StyleSheet_Description" xml:space="preserve">
+    <value>Hoja de estilos asociada al informe</value>
+  </data>
+  <data name="Report_StyleSheet_Name" xml:space="preserve">
+    <value>Hoja de estilo</value>
+  </data>
+  <data name="AttributeSelector_PropertyName_Description" xml:space="preserve">
+    <value>El nombre de la propiedad que coincida.</value>
+  </data>
+  <data name="AttributeSelector_PropertyName_DisplayName" xml:space="preserve">
+    <value>Nombre de propiedad</value>
+  </data>
+  <data name="DescendantSelector_Selectors_Description" xml:space="preserve">
+    <value>Colección de selectores que contiene los selectores que definen el patrón de descendencia utilizado para coincidir con el elemento</value>
+  </data>
+  <data name="DescendantSelector_Selectors_DisplayName" xml:space="preserve">
+    <value>Selectores</value>
+  </data>
+  <data name="StyleRule_Selectors_Description" xml:space="preserve">
+    <value>El tipo que coincide con este selector.</value>
+  </data>
+  <data name="StyleRule_Selectors_DisplayName" xml:space="preserve">
+    <value>Selectores</value>
+  </data>
+  <data name="StyleSelector_StyleName_Description" xml:space="preserve">
+    <value>El nombre del estilo que coincide con este selector</value>
+  </data>
+  <data name="StyleSelector_StyleName_DisplayName" xml:space="preserve">
+    <value>Nombre de estilo</value>
+  </data>
+  <data name="TypeSelector_Type_Description" xml:space="preserve">
+    <value>El tipo que coincide con este selector.</value>
+  </data>
+  <data name="TypeSelector_Type_DisplayName" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Binding_Expression_Name" xml:space="preserve">
+    <value>Expresión</value>
+  </data>
+  <data name="Binding_Path_Name" xml:space="preserve">
+    <value>Ruta</value>
+  </data>
+  <data name="PageSettings_ColumnCount_Description" xml:space="preserve">
+    <value>Especifica el número de columnas presentes en la sección de detalles del informe.</value>
+  </data>
+  <data name="PageSettings_ColumnCount_Name" xml:space="preserve">
+    <value>Recuento de columnas</value>
+  </data>
+  <data name="PageSettings_ColumnSpacing_Description" xml:space="preserve">
+    <value>Valor que indica el espacio en unidades entre dos columnas adyacentes.</value>
+  </data>
+  <data name="PageSettings_ColumnSpacing_Name" xml:space="preserve">
+    <value>Espaciado de columna</value>
+  </data>
+  <data name="PageSettings_Landscape_Description" xml:space="preserve">
+    <value>Indique si la página está impresa en orientación horizontal o vertical.</value>
+  </data>
+  <data name="PageSettings_Landscape_Name" xml:space="preserve">
+    <value>Paisaje</value>
+  </data>
+  <data name="PageSettings_Margins_Description" xml:space="preserve">
+    <value>Márgenes para esta página.</value>
+  </data>
+  <data name="PageSettings_Margins_Name" xml:space="preserve">
+    <value>Márgenes</value>
+  </data>
+  <data name="PageSettings_PaperKind_Description" xml:space="preserve">
+    <value>Tipo de papel para la página.</value>
+  </data>
+  <data name="PageSettings_PaperKind_Name" xml:space="preserve">
+    <value>Papel tipo</value>
+  </data>
+  <data name="PageSettings_PaperSize_Description" xml:space="preserve">
+    <value>Tamaño de papel para la página.</value>
+  </data>
+  <data name="PageSettings_PaperSize_Name" xml:space="preserve">
+    <value>Tamaño del papel</value>
+  </data>
+  <data name="PageSettings_Watermarks_Description" xml:space="preserve">
+    <value>Colección de marcas de agua de la página.</value>
+  </data>
+  <data name="PageSettings_Watermarks_Name" xml:space="preserve">
+    <value>Filigranas</value>
+  </data>
+  <data name="Table_KeepTogether_Name" xml:space="preserve">
+    <value>Mantener juntos</value>
+  </data>
+  <data name="PictureWatermark_Description" xml:space="preserve">
+    <value>Representa una marca de agua de imagen en una página imprimible.</value>
+  </data>
+  <data name="PictureWatermark_Image_Description" xml:space="preserve">
+    <value>La imagen de la marca de agua que se imprimirá en la página.</value>
+  </data>
+  <data name="PictureWatermark_Image_Name" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="PictureWatermark_Name" xml:space="preserve">
+    <value>Imagen marca de agua</value>
+  </data>
+  <data name="PictureWatermark_Sizing_Description" xml:space="preserve">
+    <value>El modo de dimensionamiento de la imagen de marca de agua en la página imprimible.</value>
+  </data>
+  <data name="PictureWatermark_Sizing_Name" xml:space="preserve">
+    <value>Tamaño</value>
+  </data>
+  <data name="TextWatermark_Color_Description" xml:space="preserve">
+    <value>El color del texto de la marca de agua.</value>
+  </data>
+  <data name="TextWatermark_Color_Name" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="TextWatermark_Description" xml:space="preserve">
+    <value>Representa una marca de agua de texto en una página imprimible.</value>
+  </data>
+  <data name="TextWatermark_Font_Description" xml:space="preserve">
+    <value>La configuración de fuente del texto de marca de agua.</value>
+  </data>
+  <data name="TextWatermark_Font_Name" xml:space="preserve">
+    <value>Fuente</value>
+  </data>
+  <data name="TextWatermark_Name" xml:space="preserve">
+    <value>Texto marca de agua</value>
+  </data>
+  <data name="TextWatermark_Orientation_Description" xml:space="preserve">
+    <value>La orientación del texto de la marca de agua en la página imprimible.</value>
+  </data>
+  <data name="TextWatermark_Orientation_Name" xml:space="preserve">
+    <value>Orientación</value>
+  </data>
+  <data name="TextWatermark_Text_Description" xml:space="preserve">
+    <value>El texto de la marca de agua que se imprimirá en la página. El texto se puede especificar directamente como un literal de cadena o indirectamente como una expresión que se evalúa en tiempo de ejecución para cada página imprimible.</value>
+  </data>
+  <data name="TextWatermark_Text_Name" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="Tooltip_Description" xml:space="preserve">
+    <value>Representa una clase que define una información sobre herramientas que se muestra sobre un elemento de informe o un punto de datos.</value>
+  </data>
+  <data name="Tooltip_Name" xml:space="preserve">
+    <value>Tooltip</value>
+  </data>
+  <data name="Tooltip_Text_Description" xml:space="preserve">
+    <value>Texto que se mostrará como texto de información sobre herramientas. Admite expresiones y expresiones incrustadas.</value>
+  </data>
+  <data name="Tooltip_Text_Name" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="Tooltip_Title_Description" xml:space="preserve">
+    <value>Texto que se mostrará como título de información sobre herramientas. Admite expresiones y expresiones incrustadas.</value>
+  </data>
+  <data name="Tooltip_Title_Name" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="Watermark_Description" xml:space="preserve">
+    <value>Representa una marca de agua en una página imprimible.</value>
+  </data>
+  <data name="Watermark_Name" xml:space="preserve">
+    <value>Marca de agua</value>
+  </data>
+  <data name="Watermark_Opacity_Description" xml:space="preserve">
+    <value>La opacidad de la marca de agua al combinarla con los demás elementos de la página imprimible.</value>
+  </data>
+  <data name="Watermark_Opacity_Name" xml:space="preserve">
+    <value>Opacidad</value>
+  </data>
+  <data name="Watermark_Position_Description" xml:space="preserve">
+    <value>La posición de la marca de agua en relación con los demás elementos de la página imprimible.</value>
+  </data>
+  <data name="Watermark_Position_Name" xml:space="preserve">
+    <value>Posición</value>
+  </data>
+  <data name="Watermark_PrintOnFirstPage_Description" xml:space="preserve">
+    <value>Valor que indica si se imprime la marca de agua en la primera página imprimible del informe.</value>
+  </data>
+  <data name="Watermark_PrintOnFirstPage_Name" xml:space="preserve">
+    <value>Imprimir en la primera página</value>
+  </data>
+  <data name="Watermark_PrintOnLastPage_Description" xml:space="preserve">
+    <value>Valor que indica si se imprime la marca de agua en la última página imprimible del informe.</value>
+  </data>
+  <data name="Watermark_PrintOnLastPage_Name" xml:space="preserve">
+    <value>Imprimir en la última página</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Ninguno</value>
+  </data>
+  <data name="TableGroup_PageBreak_Description" xml:space="preserve">
+    <value>Obtiene o establece la regla de interrupción de página para las filas o columnas de representación de este grupo de tablas.</value>
+  </data>
+  <data name="TableGroup_PageBreak_Name" xml:space="preserve">
+    <value>Salto de página</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Description" xml:space="preserve">
+    <value>El estilo aplicado al área definida por los puntos de datos con valores faltantes</value>
+  </data>
+  <data name="AreaSeries_MissingValuesAreaStyle_Name" xml:space="preserve">
+    <value>Estilo de área de valores faltantes</value>
+  </data>
+  <data name="Reporting_Language_Description" xml:space="preserve">
+    <value>Establezca el idioma localizable actual. Todos los cambios en las propiedades localizables se guardan para el idioma seleccionado.</value>
+  </data>
+  <data name="Reporting_Language_Name" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="Reporting_Localizable_Description" xml:space="preserve">
+    <value>True si el informe actual es localizable. El informe puede contener valores de propiedades de idioma específicos. Si se establece en false, se eliminan todos los valores de propiedades de idioma específicos guardados anteriormente y solo se conservan los valores de idioma seleccionados actualmente.</value>
+  </data>
+  <data name="Reporting_Localizable_Name" xml:space="preserve">
+    <value>Localizable</value>
+  </data>
+  <data name="Localization.OnDisableWarningCaption" xml:space="preserve">
+    <value>Eliminar recursos de idiomas</value>
+  </data>
+  <data name="Localization.OnDisableWarningMessage" xml:space="preserve">
+    <value>Al deshabilitar la localización, se eliminarán permanentemente todos los recursos de idioma excepto los seleccionados actualmente. ¿Está seguro de que desea deshabilitar la localización?</value>
+  </data>
+</root>

@@ -515,7 +515,7 @@
     <value>Свойства</value>
   </data>
   <data name="PropertyBrowser_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+    <value>Arial</value>
   </data>
   <data name="PropertyBrowser_Reset" xml:space="preserve">
     <value>Сбросить</value>

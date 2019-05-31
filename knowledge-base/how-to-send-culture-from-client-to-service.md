@@ -31,7 +31,7 @@ res_type: kb
 How to pass the desired culture through an AJAX call from the HTML5 Report Viewer client to the server
 
 ## Solution
-The culture that is respected server side is taken from the *deviceInfo["CurrentCulture"]* property. If this property is not provided, the culture would be taken from the culture settings of the server. Currently, this property could be modified in the event [jQuery.ajaxPrefilter](http://api.jquery.com/jquery.ajaxprefilter/) that changes the options of the AJAX request before sending it. The culture is added only in the request for [creating the document](../telerik-reporting-rest-documents-api-request-document). The following code adds a handler for the *jQuery.ajaxPrefilter* event that sets the culture to the desired one. The *PlaceCultureStringHere* variable should be a string representing a valid culture.
+The culture that is respected server side is taken from the *deviceInfo["CurrentCulture"]* and *deviceInfo["CurrentUICulture"]* properies. If any of these properties are not provided, its value will be taken from the culture settings of the server. Currently, the properties could be modified in the event [jQuery.ajaxPrefilter](http://api.jquery.com/jquery.ajaxprefilter/) that changes the options of the AJAX request before sending it. The culture is added only in the request for [creating the document](../telerik-reporting-rest-documents-api-request-document). The following code adds a handler for the *jQuery.ajaxPrefilter* event that sets the culture to the desired one. The *PlaceCultureStringHere* variable should be a string representing a valid culture.
 
 ```javascript
 <script>
@@ -43,6 +43,7 @@ The culture that is respected server side is taken from the *deviceInfo["Current
       if (isDocumentsUrl) {
           var d = JSON.parse(originalOptions.data);
           d.deviceInfo["CurrentCulture"] = PlaceCultureStringHere;
+          d.deviceInfo["CurrentUICulture"] = PlaceCultureStringHere;
           options.data = JSON.stringify(d);
       }
   });

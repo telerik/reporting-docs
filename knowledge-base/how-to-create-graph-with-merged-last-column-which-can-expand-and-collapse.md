@@ -56,4 +56,7 @@ In this way, **+** will be shown when the columns are merged and **-** when they
  - **Parameter Name**: paramMerged
  - **Parameter Value**: = Parameters.paramMerged.Value = 'False'
 
-![](https://media.giphy.com/media/dVdEi7hpjbJWy0XR9Z/giphy.gif)
+The result will be:
+![](resources/MergedColumn.PNG)
+
+![](resources/Collapsed.PNG)

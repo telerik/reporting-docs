@@ -39,6 +39,7 @@ To change the default behavior of the Uri class which un-escapes percent encoded
   <uri>  
     <schemeSettings>  
       <add name="http" genericUriParserOptions="DontUnescapePathDotsAndSlashes"/>
+      <add name="https" genericUriParserOptions="DontUnescapePathDotsAndSlashes"/>
     </schemeSettings>  
   </uri>  
 </configuration>

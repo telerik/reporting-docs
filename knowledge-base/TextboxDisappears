@@ -25,4 +25,4 @@ res_type: kb
 If the **TextBox** is located in some of the corners of the Page Header or Page Footer, it will disappear or its content will be cut when its **KeepTogether** property is set to * *False* *.
 
 ## Solution
-Set the **KeepTogether** property of the Textbox to True.
+Set the **KeepTogether** property of the **Textbox** to **True**.

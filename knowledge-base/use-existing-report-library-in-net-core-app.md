@@ -36,7 +36,8 @@ There are two approaches to resolve the problem depending on the amount of custo
 with [conditional formatting](../styling-conditional-formatting)
 and [bindings](../expressions-bindings) in the report definition, it is recommended to use the 
 [Standalone Report Designer](../standalone-report-designer) to import them into a set of .trdp/.trdx reports, as explained [here](../standalone-report-designer-import-clr-reports).
-The .trdp/.trdx definitions now can be used through a [UriReportSource](../t-telerik-reporting-urireportsource) in a .NET Core application.
+If the report uses class library assemblies that contain [user functions](../expressions-user-functions) or provide data for [ObjectDataSource](../objectdatasource) instances, their projects need to be migrated to .NET Standard. This way the Standalone Report Designer will be able to load the assemblies and provide design-time support for them.
+The produced .trdp/.trdx definitions can be used through a [UriReportSource](../t-telerik-reporting-urireportsource) in a .NET Core application.
 
 * If the custom code in the report definitions must be retained, copy the code from .cs and .designer.cs files of your reports to a new .NET Standard or .NET Core library. 
 Add references to NuGet packages for the missing classes (i.e. *System.Drawing.Common* for the **PaperKind** class) and remove all the references to VisualStudio-specific routines. 

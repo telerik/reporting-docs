@@ -46,15 +46,28 @@ and reload it back.
 
   ```JavaScript
   //appsettings.json
-  "ConnectionStrings": [
-    {
-      "name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
+  //Supported ConnectionStrings section configurations:
+  "ConnectionStrings": {
+    //This connection string will use System.Data.SqlClient as data provider invariant name.
+    //"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
+    
+    //This connection string explicitly states the data provider invariant name - mandatory for databases other than MSSQL Server.
+    "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
       "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
       "providerName": "System.Data.SqlClient"
     }
-  ]
+  }
+
+  //This type of connection string configuration is also supported.
+  //"ConnectionStrings": [
+  //  {
+  //    "name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
+  //    "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+  //    "providerName": "System.Data.SqlClient"
+  //  }
+  //]
   ```
-5. I need to mention that **appsettings.json** would be respected if there is an additional configuration included in **Startup.cs**. In our demos, we provide a new class named ConfigurationService which ensure reading the appsettings.json as config file and used in the ReportsController constructor:
+5. In order to load the configuration from the **appsettings.json** file, an additional instance of type ConfigurationService needs to be created in **Startup.cs**. This class will add the appsettings.json as configuration file and will be used later in the ReportsController constructor:
 
   ```CSharp
   public class ConfigurationService
@@ -77,4 +90,4 @@ and reload it back.
   ```
   
 ## Notes
-A sample demo could be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/core2-2withembedservice.zip?sfvrsn=bbac0990_2).
+A sample demo can be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/core2-2withembedservice.zip?sfvrsn=bbac0990_2).

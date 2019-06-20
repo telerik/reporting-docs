@@ -1,9 +1,9 @@
 ---
 title: Steps on how to add ObjectDataSource in a report designed in the Standalone Designer
-description: This KB article lists all of the required steps to add ObjectDataSource Compontent in the Standalone Designer.
+description: This KB article lists all of the required steps to add ObjectDataSource Component in the Standalone Designer.
 type: how-to
-page_title: Adding ObejectDataSource in the Standalone Designer
-slug: adding-obejectdatasiurce-in-the-standalone-designer
+page_title: Adding ObjectDataSource in the Standalone Designer
+slug: adding-obejectdatasource-in-the-standalone-designer
 position: 
 tags: 
 ticketid: 1407612
@@ -23,7 +23,7 @@ res_type: kb
 
 ## Solution
 1. Open **Visual Studio** and create a new **Class Library**.
-2. Add the following piece of code from [How to: Bind to a BusinessObject article](../object-data-source-how-to-bind-to-business-object). Add the necessary Using-s. 
+2. Add the following piece of code from [How to: Bind to a BusinessObject article](../object-data-source-how-to-bind-to-business-object).
 
 ```CSharp
 class Product

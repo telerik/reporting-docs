@@ -28,134 +28,19 @@ res_type: kb
 ```CSharp
 class Product
 {
-    public string Name { get; set; }
-    public string ProductNumber { get; set; }
-    public decimal ListPrice { get; set; }
-    public int ProductModelID { get; set; }
-    public string Color { get; set; }
+ . . .
 }
  
 [DataObject]
 class Products
 {
-    const string SelectCommandText =
-            "SELECT Name, ProductNumber, ListPrice, ProductModelID, Color" +
-            "  FROM Production.Product" +
-            "  WHERE ProductModelID is not NULL" +
-            "    AND Color is not NULL";
- 
-    const string ConnectionString =
-            "Data Source=(local)\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True";
- 
-    [DataObjectMethod(DataObjectMethodType.Select)]
-    public DataTable GetDataTableSource()
-    {
-        DataTable dataTable = new DataTable();
-        SqlDataAdapter dataAdapter;
-        using (dataAdapter = new SqlDataAdapter(SelectCommandText, ConnectionString))
-        {
-            dataAdapter.Fill(dataTable);
-        }
-        return dataTable;
-    }
- 
-    [DataObjectMethod(DataObjectMethodType.Select)]
-    public IDataAdapter GetDataAdapterSource()
-    {
-        return new SqlDataAdapter(SelectCommandText, ConnectionString);
-    }
- 
-    [DataObjectMethod(DataObjectMethodType.Select)]
-    public DataView GetDataViewSource(string name)
-    {
-        SqlDataAdapter dataAdapter = new SqlDataAdapter(SelectCommandText, ConnectionString);
-        DataTable dataTable = new DataTable();
- 
-        dataAdapter.Fill(dataTable);
- 
-        DataView dataView = dataTable.DefaultView;
-        dataView.RowFilter = string.Format("Name like '%{0}%'", name);
- 
-        return dataView;
-    }
- 
-    [DataObjectMethod(DataObjectMethodType.Select)]
-    public Product[] GetArraySource()
-    {
-        return this.GetAllProducts().ToArray();
-    }
- 
-    [DataObjectMethod(DataObjectMethodType.Select)]
-    public ArrayList GetArrayListSource()
-    {
-        ArrayList arrayList = new ArrayList();
-        foreach (var product in this.GetAllProducts())
-        {
-            arrayList.Add(product);
-        }
-        return arrayList;
-    }
- 
-    [DataObjectMethod(DataObjectMethodType.Select)]
-    public List<Product> GetAllProducts()
-    {
-        SqlConnection connection = new SqlConnection(ConnectionString);
-        SqlCommand command = new SqlCommand(SelectCommandText, connection);
-        SqlDataReader reader = null;
-        List<Product> products = new List<Product>();
- 
-        try
-        {
-            connection.Open();
- 
-            reader = command.ExecuteReader();
- 
-            while (reader.Read())
-            {
-                products.Add(new Product()
-                {
-                    Name = reader.GetString(0),
-                    ProductNumber = reader.GetString(1),
-                    ListPrice = reader.GetDecimal(2),
-                    ProductModelID = reader.GetInt32(3),
-                    Color = reader.GetString(4)
-                });
-            }
-        }
-        catch
-        {
-            // Handle exception.
-        }
-        finally
-        {
-            if (reader != null)
-            {
-                reader.Close();
-            }
-            connection.Close();
-        }
-        return products;
-    }
- 
-    // Gets products bellow a specified max price.
-    [DataObjectMethod(DataObjectMethodType.Select)]
-    public IList<Product> GetProducts(decimal maxPrice)
-    {
-        return this.GetAllProducts().FindAll(product => product.ListPrice <= maxPrice);
-    }
- 
-    // Gets products of specific model and a color.
-    [DataObjectMethod(DataObjectMethodType.Select)]
-    public IList<Product> GetProducts(int productModelID, string color)
-    {
-        return this.GetAllProducts().FindAll(product => (product.ProductModelID == productModelID && product.Color == color));
-    }
+  . . .
 }
 ```
 
 3. Run the project and close it.
-4. Copy the built assembly to clipboard - navigate to the project folder -> bin -> Debug and copy the dll file.
-5. Navigate to the installation folder of the report designer (for example: * *C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Report Designer* *) and paste the .dll file.
+4. Copy the built assembly to clipboard - navigate to the project folder -> **bin** -> **Debug** and copy the dll file.
+5. Navigate to the installation folder of the Report designer (for example: *C:\Program Files (x86)\Progress\Telerik Reporting R1 2019\Report Designer* ) and paste the .dll file.
 6. Open the **Telerik.ReportDesigner.exe.config** file through an editor and add a reference for the assembly. For example:
 
 ```

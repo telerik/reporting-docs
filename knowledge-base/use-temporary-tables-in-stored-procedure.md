@@ -23,7 +23,6 @@ res_type: kb
 
 ## Description
 The SqlDataSource uses the standard ADO.NET data provider to load the report data and metadata. 
-Before SQL Server 2016, the mean for obtaining the data schema of a temporary table is the FMTONLY setting.
 As of SQL Server 2016 Temporary Tables can be replaced with the better performing Memory-Optimized Tables. This includes mechanism allowing you to get the schema of temporary objects correctly. The FMTONLY setting is deprecated. For more details, please check Using Memory-Optimized Tables to Replace SQL Server Temp Tables and Table Variables.
 
 ## Solution
@@ -82,7 +81,7 @@ BEGIN
 END;
 ```
 
-**For MSSQL Engines after SQL Server 2016 (even 2014)**
+**For MSSQL Engines after SQL Server 2014**
 You can use memory optimized tables, where the data schema can be obtained correctly when you work with SQL Server 2016.
 USE AdventureWorks
 
@@ -109,6 +108,3 @@ SET NOCOUNT ON;
 END
 GO
 ```
-
-If you consider working with SQL Server 2016, you may also find interesting Faster temp table and table variable by using memory optimization.
-

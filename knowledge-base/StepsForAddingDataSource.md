@@ -3,7 +3,7 @@ title: Steps on how to add ObjectDataSource in a report designed in the Standalo
 description: This KB article lists all of the required steps to add ObjectDataSource Component in the Standalone Designer.
 type: how-to
 page_title: Adding ObjectDataSource in the Standalone Designer
-slug: adding-obejectdatasource-in-the-standalone-designer
+slug: steps-on-how-to-add-objectdatadource-in-a-report-designed-in-the-standalone-designer
 position: 
 tags: 
 ticketid: 1407612

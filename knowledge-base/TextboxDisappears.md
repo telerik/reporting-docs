@@ -2,7 +2,7 @@
 title: TextBox Disappears 
 description: If the textbox is located at the corner of the Page Header or Page Footer it might disappear
 type: troubleshooting
-page_title: TextBox disappears when it is in the Page header or Page Footer
+page_title: TextBox disappears when it is in the Page Header or Page Footer
 slug: textbox-diappers-when-it-is-in-the-page-header-or-page-footer
 position: 
 tags: 

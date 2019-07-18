@@ -42,4 +42,4 @@ This KB article lists the required steps for setting MS Access Database and usin
 8. Add *ID*, *First Name*, *Last Name* and *Job Title* fields in it.
 9. Insert a [Picture box](../report-items-picture-box) to display the images.
 10. Click on **Preview** -> **Print Preview** to check the result.
-![](resources/list-of-employees.png.png)
+![](resources/list-of-employees.png)

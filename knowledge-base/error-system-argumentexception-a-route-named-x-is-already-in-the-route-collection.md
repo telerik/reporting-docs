@@ -14,10 +14,6 @@ res_type: kb
 <table>
     <tbody>
 	    <tr>
-	    	<td>Product Version</td>
-	    	<td>13.1.19.618</td>
-	    </tr>
-	    <tr>
 	    	<td>Product</td>
 	    	<td>Progress® Telerik® Reporting</td>
 	    </tr>

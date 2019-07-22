@@ -36,6 +36,8 @@ Go to [Downloads for Progress® Telerik® Reporting](https://www.telerik.com/acc
 Telerik_Reporting_VERSION_TRIAL.msi
 Telerik_Reporting_VERSION_DEV.msi
 ```
+
+![Latest Internal Build Download page](resources/download-lib.png)
   
 ## Is the LIB suitable for Production?
 The Latest Internal Builds are intended to be used for development purposes only and they are not recommended for production purposes as these distributions have not gone through the complete QA process.

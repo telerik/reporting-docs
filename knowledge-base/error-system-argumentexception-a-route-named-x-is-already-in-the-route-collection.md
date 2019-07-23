@@ -43,9 +43,8 @@ The most common reasons are renaming the project files or having duplicate using
 
 ## Solution
 1. In case of experiencing the issue locally
-Delete the project's **bin** directory and then clean and rebuild the solution. Here, you can find more suggestions related to this Rest API error: [A route named “x” is already in the route collection. Route names must be unique. Exception with ASP.NET MVC 3](https://stackoverflow.com/questions/10986909/a-route-named-x-is-already-in-the-route-collection-route-names-must-be-unique).
-
-Check if there is only one routes registering. For example in the Application_Start() method of Global.asax.cs.
+	- Delete the project's **bin** directory and then clean and rebuild the solution. Here, you can find more suggestions related to this Rest API error: [A route named “x” is already in the route collection. Route names must be unique. Exception with ASP.NET MVC 3](https://stackoverflow.com/questions/10986909/a-route-named-x-is-already-in-the-route-collection-route-names-must-be-unique). 
+	- Check if there is only one routes registering. For example in the Application_Start() method of Global.asax.cs.
 
 2. In case of publishing the application to Azure environment
     - On the Visual Studio publish screen go to Settings

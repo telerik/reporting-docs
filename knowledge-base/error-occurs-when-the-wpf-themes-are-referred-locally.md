@@ -1,8 +1,9 @@
 ---
 title: An Error Occurs When the WPF Themes are Referred Locally
-description: The WPF themes cannot be referred locally from a folder in the project
+description: The WPF themes cannot be referred locally from a folder in the project with error message: "*An error occurred while finding the resource dictionary "/Themes/Office2016/Telerik.ReportViewer.Wpf.xaml". WinCont App.xaml*
+"
 type: troubleshooting
-page_title: 
+page_title: An Error Occurs When the WPF Themes are Referred Locally
 slug: error-occurs-when-the-wpf-themes-are-referred-locally
 position: 
 tags: WPF

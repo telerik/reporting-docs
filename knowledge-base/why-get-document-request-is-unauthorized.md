@@ -1,8 +1,8 @@
 ---
-title: Why the request to "/api/reports/clients/{some GUID}/instances/{some GUID}/documents/{some GUID} is not authorized"
-description: Vulnerability tests result in "Sensitive Information Disclosure via API Response", "Internal Path Disclosure" or similar on "/api/reports/clients/{some GUID}/instances/{some GUID}/documents/{some GUID}"
+title: Why the request to "/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId} is not authorized"
+description: Vulnerability tests result in "Sensitive Information Disclosure via API Response", "Internal Path Disclosure" or similar on "/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}"
 type: troubleshooting
-page_title: Unauthorized request "/api/reports/clients/{some GUID}/instances/{some GUID}/documents/{some GUID}"
+page_title: Unauthorized request "/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}"
 slug: why-get-document-request-is-unauthorized
 position: 
 tags: 

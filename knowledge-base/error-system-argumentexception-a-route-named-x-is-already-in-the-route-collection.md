@@ -1,6 +1,6 @@
 ---
-title: System.ArgumentException A route named X is already in the route collection. Route names must be unique. Parameter name name
-description: In an ASP.NET MVC application an error Getting an error System.ArgumentException A route named X is already in the route collection. Route names must be unique. Parameter name name is thrown
+title: System.ArgumentException A route named X is already in the route collection.
+description: In an ASP.NET MVC application an error of type System.ArgumentException is thrown
 type: troubleshooting
 page_title: Getting an error System.ArgumentException A route named X is already in the route collection. Route names must be unique. Parameter name name
 slug: error-system-argumentexception-a-route-named-x-is-already-in-the-route-collection

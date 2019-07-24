@@ -44,4 +44,4 @@ Check if the link to jQuery is loaded before the viewer's script.
 The recommended approach is to add the viewer using the [VS item template](../html5-report-viewer-quick-start#telerik-html5-report-viewer-item-template). The VS item template will add all required viewer resources to the page in the correct order.
 
 ## Notes
-Check the examples under Telerik Reporting installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Reporting **VERISON**\Examples\CSharp|VB*. The web-based viewers are implemented in the *Html5Demo*, *MvcDemo*, and *WebFormsDemo* projects.
+Check the examples under Telerik Reporting installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Reporting VERISON\Examples\CSharp|VB*. The web-based viewers are implemented in the *Html5Demo*, *MvcDemo*, and *WebFormsDemo* projects.

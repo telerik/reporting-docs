@@ -38,7 +38,7 @@ The assembly Telerik.Reporting.Services.HttpClient.dll cannot be loaded.
 ## Solution
 The *Telerik.Reporting.Services.HttpClient.dll* is required if the selected engine is of remote type (REST Service or Report Server). Please make sure that you have added a reference to this assembly to the current project.
 
-It could be found in Telerik Reporting installation directory. For example *C:\Program Files (x86)\Progress\Telerik Reporting **VERSION**\Bin\Telerik.Reporting.Services.HttpClient.dll*.
+It could be found in Telerik Reporting installation directory. For example *C:\Program Files (x86)\Progress\Telerik Reporting VERSION\Bin\Telerik.Reporting.Services.HttpClient.dll*.
 
 As a side note, we strongly suggest using the [Telerik Report Viewer Window Item Template](../wpf-report-viewer-embedding-the-viewer) to create a window and host the report viewer in it. It will automatically add all required references and verify if all resources needed are added to the project.
 

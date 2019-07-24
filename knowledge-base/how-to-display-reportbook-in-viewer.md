@@ -33,7 +33,7 @@ This article demonstrates the three approaches for displaying ReportBook in an a
       report: "ReportBook1.trbp"
   }
   ```
-2. Create a ReportBook by inheriting *Telerik.Reporting.ReportBook* class and adding the required ReportSources to it. An example of it is provided in ReportBook.cs file located in product installation folder *(C:\Program Files (x86)\Progress\Telerik Reporting **VERSION**\Examples\CSharp\ReportLibrary\ReportBook)*. Created ReportBook can be passed to the report viewer's report source as [TypeReportSource](../t-telerik-reporting-typereportsource).
+2. Create a ReportBook by inheriting *Telerik.Reporting.ReportBook* class and adding the required ReportSources to it. An example of it is provided in ReportBook.cs file located in product installation folder *(C:\Program Files (x86)\Progress\Telerik Reporting __VERSION__\Examples\CSharp\ReportLibrary\ReportBook)*. Created ReportBook can be passed to the report viewer's report source as [TypeReportSource](../t-telerik-reporting-typereportsource).
 
 3. *(not recommended)* ReportBook can be created at run-time: [How to: Create a Report Book at run-time](../designing-reports-reportbook-creating-reportbook-run-time). This approach is only valid when you need to create/modify report definitions at run-time. The created instance of the ReportBook can be passed to the viewer's report source using [InstanceReportSource](../t-telerik-reporting-instancereportsource). This approach relies on [custom report resolver logic](../telerik-reporting-rest-custom-report-resolver) to add the reports into the report book and return the new instance of the report book. For example:
 

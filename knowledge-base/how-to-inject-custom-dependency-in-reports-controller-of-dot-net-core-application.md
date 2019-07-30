@@ -50,12 +50,10 @@ public class ProductRepository : IProductRepository
         return this.context.Product.Take(20).ToList();
     }
 }
-```
-  
-In this case you may use [Custom Resolver](../telerik-reporting-rest-custom-report-resolver) (e.g. **CustomReportResolver**) for resolving the TRDP reports and add the DataSource at run time after instantiating the report. For the purpose it will be necessary to :  
+```  
+In this case you may use [Custom Resolver](../telerik-reporting-rest-custom-report-resolver) for resolving the TRDP reports and add the DataSource at run-time after instantiating the report. For the purpose it will be necessary to :  
 
 1) Change the **Configure** method of the **Startup** class to pass the **IProductRepository** with the **ReportsController**, for example like :  
-  
 
 ```CSharp
 public void ConfigureServices(IServiceCollection services)
@@ -73,11 +71,8 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     this.services.AddTransient(ctx => new ReportsController(new ConfigurationService(env), (IProductRepository)svc.ImplementationInstance));
     ...
 }
-```
-  
+```  
 2)  Pass a second parameter of **IProductRepository** in the **ReportsController**. Note that you can have only one constructor of the **ReportsController** (seems to be a limitation of the framework), hence you need to modify the existing constructor of the controller to receive the second parameter and pass it to the custom resolver :  
-  
-
 
 ```CSharp
 public ReportsController(ConfigurationService configSvc, IProductRepository productRepository)
@@ -86,8 +81,7 @@ public ReportsController(ConfigurationService configSvc, IProductRepository prod
     var resolver = new CustomReportResolver(productRepository);
     ...
 }
-```
-  
+```  
 3) In the **CustomReportResolver** introduce a constructor that receives the repository and use the repository as required :  
   
 ```CSharp

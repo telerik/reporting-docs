@@ -26,13 +26,11 @@ res_type: kb
 
 ## Description
 
-Data validation is vital to ensure the data is clean, correct and useful. Therefore, running validation on your data as it is ingested means you can be confident with the results.
+Sometimes we need to validate the input data so that it will match our requirements and rules. The validation could be on the Client or on the Server. The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer](../html5-report-viewer) based on the value of another report parameter. If you want to see this feature implemented on the Server-side, vote for it on our public [Portal](https://feedback.telerik.com/reporting/1424141-server-side-parameters-validation).The approach could be applied to any other HTML5 Web Report Viewer and with little customization to validate different scenarios.
 
 ## Solution
 
-The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer](../html5-report-viewer) based on the value of another report parameter. If you want to see this feature implemented on the Server-side, vote for it [here](https://feedback.telerik.com/reporting/1424141-server-side-parameters-validation).The approach could be applied to any other HTML5 Web Report Viewer.
-
-1. Start by creating custom parameter editors by defining them through the [ParameterEditors method](https://docs.telerik.com/reporting/m-telerik-reportviewer-mvc-ireportviewerbuilder-parametereditors) when creating the report viewer widget:
+1. Start by creating custom parameter editors by defining them through the [ParameterEditors method](../m-telerik-reportviewer-mvc-ireportviewerbuilder-parametereditors) when creating the report viewer widget:
 
     ```
     @(Html.TelerikReporting().ReportViewer()
@@ -50,10 +48,10 @@ The following guide shows how to apply Client-side validation on a report parame
     )
     ```
   
-    *Note:* You’ll need to create a [custom editor](https://docs.telerik.com/reporting/html5-mvc-report-viewer-customizing-custom-parameters-editor) for each parameter type that will be validating.
+    *Note:* You’ll need to create a [custom editor](../html5-mvc-report-viewer-customizing-custom-parameters-editor) for each parameter type that will be validating.
   
 2. In this example, we have a single select editor with available values and a number parameter that has to be validated based on the first parameter value. That means that we are going to need a combobox editor and simple input editor.
-In this case, we have both UI elements that we are needing to represent our editors. The first one will be a [Kendo ComboBox widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox), which we have from the [Telerik Reporting](https://docs.telerik.com/reporting/html5-report-viewer-widget-requirements) scripts and
+In this case, we have both UI elements that we are needing to represent our editors. The first one will be a [Kendo ComboBox widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox), which we have from the [Telerik Reporting](../html5-report-viewer-widget-requirements) scripts and
 simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you wish to use some Kendo widget, that is not included in a subset of the used by default Kendo UI widgets from Telerik Reporting, you need to add manually the scripts for the additional widget or add [kendo.all.js](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service):
 
 3. Create the editors and apply the validation on [input change](https://api.jquery.com/change/):
@@ -142,4 +140,4 @@ simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you 
   
 
 ## See Also
-[Cascading (dependent) parameters](https://docs.telerik.com/reporting/designing-reports-parameters#cascading-dependent-parameters)
+[Cascading (dependent) parameters](../designing-reports-parameters#cascading-dependent-parameters)

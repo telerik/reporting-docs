@@ -26,11 +26,11 @@ res_type: kb
 
 ## Description
 
-Client-side validation on a report parameter based on the value of another report parameter
+Data validation is vital to ensure the data is clean, correct and useful. Therefore, running validation on your data as it is ingested means you can be confident with the results.
 
 ## Solution
 
-The following guide shows how to validate a report parameter in [HTML5 ASP.NET MVC Report Viewer](../html5-report-viewer). The approach could be applied to any other Web Report Viewer.
+The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer](../html5-report-viewer) based on the value of another report parameter. If you want to see this feature implemented on the Server-side, vote for it [here](https://feedback.telerik.com/reporting/1424141-server-side-parameters-validation).The approach could be applied to any other HTML5 Web Report Viewer.
 
 1. Start by creating custom parameter editors by defining them through the [ParameterEditors method](https://docs.telerik.com/reporting/m-telerik-reportviewer-mvc-ireportviewerbuilder-parametereditors) when creating the report viewer widget:
 
@@ -56,12 +56,12 @@ The following guide shows how to validate a report parameter in [HTML5 ASP.NET M
 In this case, we have both UI elements that we are needing to represent our editors. The first one will be a [Kendo ComboBox widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox), which we have from the [Telerik Reporting](https://docs.telerik.com/reporting/html5-report-viewer-widget-requirements) scripts and
 simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you wish to use some Kendo widget, that is not included in a subset of the used by default Kendo UI widgets from Telerik Reporting, you need to add manually the scripts for the additional widget or add [kendo.all.js](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service):
 
-3. Create the editors and applay the validation on [input change](https://api.jquery.com/change/):
+3. Create the editors and apply the validation on [input change](https://api.jquery.com/change/):
 
     ```
     var basedParameterName = "Parent", //The parameter name that will be used for validaion
-            basedParameterValue,
-            validatingParameter;
+            parentParameterValue,
+            childParameter;
 
         function createSingleSelectEditor(placeholder, options) {
             var kendoComboBoxElement = $(placeholder).html('<div></div>'),
@@ -75,9 +75,9 @@ simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you 
 
                 if (parameter.name === basedParameterName) {
                     //Save the value
-                    basedParameterValue = val;
-                    //Trigger change event on the validatingParameter to fire the validation
-                    validatingParameter.trigger("change");
+                    parentParameterValue = val;
+                    //Trigger change event on the childParameter to fire the validation
+                    childParameter.trigger("change");
                 }
             }
 
@@ -86,9 +86,9 @@ simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you 
 
                     parameter = param;
 
-                    //Find the parameter based on its name if you have more then one parameter of this type
+                    //Find the parameter based on its name if you have more than one parameter of this type
                     if (parameter.name === basedParameterName) {
-                        basedParameterValue = parameter.value;
+                        parentParameterValue = parameter.value;
                     }
 
                     kendoComboBox = $(kendoComboBoxElement).kendoComboBox({
@@ -112,9 +112,9 @@ simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you 
             function onChange() {
                 var val = parseInt(inputElement.val());
                 // Validate the input value.
-                if (basedParameterValue >= val) {
+                if (parentParameterValue >= val) {
                     validation.find(".trv-parameter-error-message")
-                        .html("The value should be greater than " + basedParameterValue);
+                        .html("The value should be greater than " + parentParameterValue);
                     inputElement.addClass("k-invalid");
                     validation.show();
                 } else {
@@ -131,7 +131,7 @@ simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you 
 
                     placeholder.html('<input type="text" value="' + parameter.value + '" class="k-textbox" />');
                     inputElement = placeholder.find("input");
-                    validatingParameter = inputElement;
+                    childParameter = inputElement;
                     //Using a jQuery to detect changes in the input value
                     placeholder.on("change", "input", onChange);
                 }

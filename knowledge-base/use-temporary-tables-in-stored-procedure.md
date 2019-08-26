@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 The SqlDataSource uses the standard ADO.NET data provider to load the report data and metadata. 
-As of SQL Server 2016 Temporary Tables can be replaced with the better performing Memory-Optimized Tables. This includes mechanism allowing you to get the schema of temporary objects correctly. The FMTONLY setting is deprecated. For more details, please check Using Memory-Optimized Tables to Replace SQL Server Temp Tables and Table Variables.
+As of SQL Server 2016 Temporary Tables can be replaced with the better performing Memory-Optimized Tables. This includes mechanism allowing you to get the schema of temporary objects correctly. The FMTONLY setting is deprecated. For more details, please check [Using Memory-Optimized Tables to Replace SQL Server Temp Tables and Table Variables](https://www.sqlshack.com/using-memory-optimized-tables-to-replace-sql-server-temp-tables-and-table-variables/).
 
 ## Solution
 **For Cursor Variables:**

@@ -41,13 +41,15 @@ This KB article explains the steps to create a graph whose last column contains 
 ```
 =IIf(Parameters.paramMerged.Value = "True", 5, 120)
 ```
-In this [expression](../report-expressions), the value which will be set when the report parameter is *True* is 5 and stands for the number of Series (with highest values) that will be separately displayed - the rest will be merged. 120 stands for the value of the columns that will be shown when we would like to display all the Series in the Graph - it should be bigger than the total number of columns.
+In this [expression](../report-expressions), the value which will be set when the report parameter is *True* is 5 and stands for the number of Series (with highest values) that will be separately displayed - the rest will be merged. 120 stands for the value of the columns that will be shown when we would like to display all the Series in the Graph - it should be bigger than the total number of columns. 
+
 3) Add a textbox and set its **Value** as follows:
 
 ```
 = IIf(Parameters.paramMerged.Value = 'True', "+", "-")
 ```
 In this way, **+** will be shown when the columns are merged and **-** when they are expanded.
+
 4) Add a [Drillthrough Report Action](../designing-reports-interactivity-drill-through-report-links) to the textbox which will point to the same report (i.e. to itself):  **Action** -> **Navigate to Report** -> **Select a report source** -> **URL or file** -> fill the path to the report ->**Edit Parameters:**
  - **Parameter Name**: paramMerged
  - **Parameter Value**: = Parameters.paramMerged.Value = 'False'

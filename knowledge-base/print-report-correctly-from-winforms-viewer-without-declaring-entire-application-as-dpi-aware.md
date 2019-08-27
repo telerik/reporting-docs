@@ -1,8 +1,8 @@
 ---
-title: How to display/print report correctly from Windows Forms Viewer without declaring the entire application as DPI-aware
+title: How to Display/Print Report Correctly from Windows Forms Viewer without Declaring the Entire Application as DPI-aware
 description: What can we do to print and display Telerik reports correctly in WinForms application that should not be declared as DPI-aware
 type: how-to
-page_title: Display/print report correctly from Windows Forms Viewer without declaring the entire application as DPI-aware
+page_title: Display/Print Report Correctly from Windows Forms Viewer without Declaring the Entire Application as DPI-aware
 slug: print-report-correctly-from-winforms-viewer-without-declaring-entire-application-as-dpi-aware
 position: 
 tags: 
@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-When the Windows Forms Viewer is used in a WinForms application that is not DPI-aware, when printing or previewing a report it may be incorrectly scaled.
+When the [Windows Forms Viewer](../winforms-report-viewer) is used in a WinForms application that is not DPI-aware, when printing or previewing a report it may be incorrectly scaled.
 
 The recommended solution is to set the application to DPI-aware as explained in [Declaring the application as DPI-aware](../winforms-report-viewer#declaring-the-application-as-dpi-aware) article section.
 However, this may result in the distortion of other controls in the application.
@@ -35,5 +35,5 @@ However, this may result in the distortion of other controls in the application.
   
 3. You may test to run the application not declared as DPI-aware on a machine with Windows 10 Anniversary Update, where Windows runtime has improved the UX for Windows Forms applications that are not declared as DPI-aware. We cannot guarantee the report will be displayed as expected.  
   
-4. Another option (*not recommended*) is to set the 'OutputFormat' attribute of [ImageInteractive Device Information Settings](../device-information-settings-imageinteractive) to 'PNG' (the default is 'EMF'). In this case the zooming will not work well, as the report will be rendered as raster image (as opposed to vector image). This setting will take effect for reports displayed in _Interactive_ mode in the Windows Forms Report Viewer.  
+4. Another option, which is more suitable for printing the document rather than previewing it due to raster zoom, is to set the 'OutputFormat' attribute of [ImageInteractive Device Information Settings](../device-information-settings-imageinteractive) to 'PNG' (the default is 'EMF'). In this case the zooming will not work well, as the report will be rendered as raster image (as opposed to vector image). This setting will take effect for reports displayed in _Interactive_ mode in the Windows Forms Report Viewer.  
 The same approach can be applied for _PrintPreview_ mode and _Printing_ from the viewer by setting 'OutputFormat' to 'PNG' in the [Image Device Information Settings](../device-information-settings-image) (extensions _IMAGEPrintPreview_ and _IMAGEPrint_).

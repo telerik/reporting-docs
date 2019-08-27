@@ -1,8 +1,8 @@
 ---
-title: How to refer Telerik Reporting assemblies in projects hosted in version control repository when only one/few developers hold licenses
+title: How to Refer Telerik Reporting Assemblies in Projects Hosted in Version Control Repository when only One/Few Developers Hold Licenses
 description: Solution won't compile to other developers in the team that are not licensed for Telerik Reporting
 type: how-to
-page_title: How to refer Telerik Reporting assemblies in version control repository with limited number of licenses
+page_title: How to Refer Telerik Reporting Assemblies in Version Control Repository with Limited Number of Licenses
 slug: how-to-refer-telerik-reporting-assemblies-in-version-control-repository-with-limited-number-of-licenses
 position: 
 tags: 

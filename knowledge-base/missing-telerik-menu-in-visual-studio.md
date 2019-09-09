@@ -32,4 +32,4 @@ If the above does not help solving your problem, please follow these steps to ge
 1.	Open __Developer Command prompt__ for Visual Studio 20xx under __Administrative rights__. 
 2.	Execute the command __devenv /log %userprofile%\desktop\ActivityLog.xml__. This will start Visual Studio and create logs on your Desktop. 
 3.	Reproduce the problem 
-4.	Attach the __Activitylog__ files when you contact our support. 
+4.	Attach the __Activitylog__ files when you contact our support.  

@@ -3,7 +3,7 @@ title: The report cannot be built and opened in Visual Studio Report Designer
 description: The report cannot be built and opened in Visual Studio Report Designer
 type: troubleshooting
 page_title: The report cannot be built and opened in Visual Studio Report Designer
-slug: report-cannot-be0built-and-opened-in-vs-report-designer
+slug: report-cannot-be-built-and-opened-in-vs-report-designer
 position: 
 tags: vs designer
 res_type: kb

@@ -18,7 +18,7 @@ res_type: kb
 
 
 ## Description
-The Visual Studio Report Designer does not display anything when trying to open a report.
+The Visual Studio Report Designer does not display anything when trying to open a report. 
 
 ## Solution
 1.	Run the [Upgrade Wizard](../ui-upgrade-wizard). Restart Visual Studio. 

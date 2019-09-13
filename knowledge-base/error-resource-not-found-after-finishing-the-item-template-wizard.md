@@ -1,8 +1,8 @@
 ---
 title: Error 404 Resource not found
-description: After finishing the item template wizard for creating HTML5-based report viewer with either separate hosing of the Reporting REST Service or Report Server connection, an error 404 is thrown in the browser console.
+description: After creating an HTML5-based report viewer with separate Reporting REST Service or Report Server with the Visual Studio item template wizard, a 404 error is thrown in the browser console.
 type: troubleshooting
-page_title: Error 404 Resource not found after creating a HTML-based Report Viewer using the item template wizard
+page_title: Error 404 Resource not found after creating an HTML-based Report Viewer using the item template wizard
 slug: error-resource-not-found-after-finishing-the-item-template-wizard
 position: 
 tags: HTML5Viewer, MVCReportViewer, RESTService, WebFormsViewer, AngularViewer
@@ -36,7 +36,7 @@ When you create solution structure where the Report Viewer and the Reporting RES
 ## Steps to Reproduce
 The error might occur in two cases:
 1. In case there is a REST service already configured on a different host. In 'Configure reporting engine' dialog, choosing Rest service option and "Use existing REST service" where you enter a valid REST service URI.
-2. In case you are configuring the viewer to work with Report Server reports.  In 'Configure reporting engine' dialog, choosing Report Server option where you enter a valid Report Server URI.
+2. In case you are configuring the viewer to work with Report Server.  In 'Configure reporting engine' dialog, choosing Report Server option where you enter a valid Report Server URI.
 
 ## Error Message
 ```HTML
@@ -53,7 +53,7 @@ jquery-3.3.1.min.js:2 Uncaught TypeError: jQuery(...).telerik_ReportViewer is no
 ```
 
 ## Cause\Possible Cause(s)
-This issue is caused by the fact that since [Telerik Reporting R2 2019 (13.1.19.514)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2019-13-1-19-514) release, the viewer dependencies are served from the service.
+This issue is caused by the fact that since [Telerik Reporting R2 2019 (13.1.19.514)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2019-13-1-19-514) release, the viewer dependencies are served by the service.
 
 ## Solution
 As this is caused by a relative path to the resource, you can just reference the absolute path to the report viewer script, e.g. replace the generated script path with the following:
@@ -61,9 +61,6 @@ As this is caused by a relative path to the resource, you can just reference the
 ```HTML
 <script src="http(s)://yourservicehost:port/api/reports/resources/js/telerikReportViewer"></script>
 ```
-
-## Notes
-We consider this as a bug and it is logged in our public feedback portal for fixing: [The generated HTML5 Report Viewer is not loading by following this article: https://docs.telerik.com/reporting/html5-report-viewer-howto-use-it-with-reportserver](https://feedback.telerik.com/reporting/1428783-the-generated-html5-report-viewer-is-not-loading-by-following-this-article-https-docs-telerik-com-reporting-html5-report-viewer-howto-use-it-with-reportserver)
 
 ## See Also
 - [How To: Use HTML5 Report Viewer With REST Service](../html5-report-viewer-quick-start)

@@ -21,6 +21,7 @@ res_type: kb
 The Visual Studio Report Designer does not display anything when trying to open a report. 
 
 ## Solution
-1.	Run the [Upgrade Wizard](../ui-upgrade-wizard). Restart Visual Studio. 
-2.	If the report cannot be loaded by the Visual Studio Report Designer, navigate to the definition of the __InitializeComponent__ report method. As a result, you will see the Designer report class. 
-3.	If the Designer report class is not visible, refer to the KB article on [Visual Studio Report Designer being blank](/visual-studio-report-designer-is-blank). 
+1.	Run the [Upgrade Wizard](../ui-upgrade-wizard). 
+2.	Restart Visual Studio. 
+3.	If the report cannot be loaded by the Visual Studio Report Designer, navigate to the definition of the __InitializeComponent__ report method. As a result, you will see the Designer report class. 
+4.	If the Designer report class is not visible, refer to the KB article on [Visual Studio Report Designer being blank](/visual-studio-report-designer-is-blank). 

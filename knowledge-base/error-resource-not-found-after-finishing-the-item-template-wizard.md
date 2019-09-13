@@ -30,13 +30,13 @@ res_type: kb
 
 
 ## Description
-This article elaborates on an error for not found resource after creating a new HTML5-based report viewer using [the built-in item template wizard](https://docs.telerik.com/reporting/html5-report-viewer-quick-start). 
-When it comes to hosting the Report Viewer and Reporting REST Service (or Report Server) on different domains, the generated script reference has a relative path trying to find the resource within the viewer application host. Instead, it should try to get the resource from the REST Service host.
+This article elaborates on an error for not found telerikReportViewer script after creating a new HTML5-based report viewer using [the built-in item template wizard](../html5-report-viewer-quick-start). 
+When you create solution structure where the Report Viewer and the Reporting REST Service's hosts are separated, the generated telerikReportViewer script is referenced by relative path. The path is evaluated at run-time against the viewer application host. Instead, it should try to get the resource from the REST Service host. The same applies for scenario where the viewer connects to the Report Server to get the reports.
 
 ## Steps to Reproduce
 The error might occur in two cases:
-1. In case there is a REST service already configured on a different host. On 'Configure reporting engine' step of the item template wizard, choosing Rest service option and "Use existing REST service" where you enter a valid REST service URI.
-2. In case you are configuring the viewer to work with Report Server reports.  On 'Configure reporting engine' step of the item template wizard, choosing Report Server option where you enter a valid Report Server URI.
+1. In case there is a REST service already configured on a different host. In 'Configure reporting engine' dialog, choosing Rest service option and "Use existing REST service" where you enter a valid REST service URI.
+2. In case you are configuring the viewer to work with Report Server reports.  In 'Configure reporting engine' dialog, choosing Report Server option where you enter a valid Report Server URI.
 
 ## Error Message
 ```HTML
@@ -66,5 +66,5 @@ As this is caused by a relative path to the resource, you can just reference the
 We consider this as a bug and it is logged in our public feedback portal for fixing: [The generated HTML5 Report Viewer is not loading by following this article: https://docs.telerik.com/reporting/html5-report-viewer-howto-use-it-with-reportserver](https://feedback.telerik.com/reporting/1428783-the-generated-html5-report-viewer-is-not-loading-by-following-this-article-https-docs-telerik-com-reporting-html5-report-viewer-howto-use-it-with-reportserver)
 
 ## See Also
-- [How To: Use HTML5 Report Viewer With REST Service](https://docs.telerik.com/reporting/html5-report-viewer-quick-start)
-- [How To: Use HTML5 Report Viewer With Report Server](https://docs.telerik.com/reporting/html5-report-viewer-howto-use-it-with-reportserver)
+- [How To: Use HTML5 Report Viewer With REST Service](../html5-report-viewer-quick-start)
+- [How To: Use HTML5 Report Viewer With Report Server](../html5-report-viewer-howto-use-it-with-reportserver)

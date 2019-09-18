@@ -41,12 +41,12 @@ Configuration of the WebServiceDataSource in the report :
   "Surname": @surname
 }
 ```
-
-![](resources/CDR.png)
-
+![](resources/CDR.png
 5. In the **Configure request parameters**, add a parameter for the header and to set the **Value** and **Design-Time Value** of the report parameters.
+
 ![](resources/CDP.png)
 
 
 ## Notes
 The Content-Type Header parameter that is necessary - it is case-sensitive. The parameters passed through the body of the POST request should be Inline parameters.
+The demo application could be downloaded from [here](LINK).

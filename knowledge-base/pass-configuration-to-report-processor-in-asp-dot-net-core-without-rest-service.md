@@ -34,7 +34,7 @@ If you want to export a report in ASP.NET Core application with the [ReportProce
 For example, when the report uses external user functions, their assembly should be registered in the __telerikReporting__ section of the configuration file - [Extending Expressions](../expressions-extending-expressions).
 
 ## Solution
-  1. You need to create a code which ensures reading the __appsettings.json__ as a configuration file. For example with the following class :  
+1. You need to create a code which ensures reading the __appsettings.json__ as a configuration file. For example with the following class :  
   
 ```CSharp
 public class ConfigurationService
@@ -55,8 +55,7 @@ public class ConfigurationService
     }
 }
 ```
-  
- 2. Then you need to put the above service in the container in the _Startup.cs_ -\> _ConfigureServices_ class, like :  
+2. Then you need to put the above service in the container in the _Startup.cs_ -\> _ConfigureServices_ class, like :  
   
 
 ```CSharp
@@ -75,8 +74,8 @@ public void ConfigureServices(IServiceCollection services)
 ```
   
 For details on the above settings you may check [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](https://docs.telerik.com/reporting/knowledge-base/how-to-implement-telerik-reporting-in-asp-net-core-mvc).  
-  
- 3. The next step is to use the _ReportProcessor_ with its overload specific for .NET Standard that takes as an argument the configuration - in an MVC controller you may do it like the following :  
+
+3. The next step is to use the _ReportProcessor_ with its overload specific for .NET Standard that takes as an argument the configuration - in an MVC controller you may do it like the following :  
   
 
 ```CSharp

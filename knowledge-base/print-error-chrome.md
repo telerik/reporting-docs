@@ -24,7 +24,9 @@ res_type: kb
 
 
 ## Description
-After the Google Chrome update to version 77.0.3865.75, the print dialog doesn't open. In this article, you can find a workaround which makes possible downloading the report as a PDF file.
+After the Google Chrome update to version 77.0.3865.75, the print dialog doesn't open. 
+The printing functionality of all web viewers is based on PDF rendering and invoking the browsers PDF plug-in printing functionality. Note that for security reasons an application that is running in a browser cannot access directly the machine resources, e.g. printers. These are technical restrictions imposed by the browse and beyond the Telerik Reporting control.
+Additionally, Google Chrome has also an available public thread on the topic: [Chrome 77, pdf auto print dialog](https://support.google.com/chrome/thread/14107571?hl=en). 
 
 ## Solution
 The issue is resolved in the [R3 2019](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2019-13-2-19-918) release where the print button of the HTML5 Report Viewer renders the report for print purposes and opens it in a new browser tab. The auto-print script is still embedded in the document, but Google Chrome will wait for user interaction in order to show its print dialog.

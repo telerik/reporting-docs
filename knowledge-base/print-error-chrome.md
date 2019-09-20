@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 After the Google Chrome update to version 77.0.3865.75, the print dialog doesn't open. 
-The printing functionality of all web viewers is based on PDF rendering and invoking the browsers PDF plug-in printing functionality. Note that for security reasons an application that is running in a browser cannot access directly the machine resources, e.g. printers. These are technical restrictions imposed by the browse and beyond the Telerik Reporting control.
+The printing functionality of all web viewers is based on PDF rendering and invoking the browsers PDF plug-in printing functionality. Note that for security reasons an application that is running in a browser cannot access directly the machine resources, e.g. printers. These are technical restrictions imposed by the browser and beyond the Telerik Reporting control.
 Additionally, Google Chrome has also an available public thread on the topic: [Chrome 77, pdf auto print dialog](https://support.google.com/chrome/thread/14107571?hl=en). 
 
 ## Solution

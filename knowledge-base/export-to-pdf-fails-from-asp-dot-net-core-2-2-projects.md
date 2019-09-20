@@ -43,6 +43,6 @@ The __InProcess__ hosting is new in ASP.NET Core 2.2 - check for example [ASP.NE
 <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
 ```
 
-2. Use .NET Core 2.1 - InProcess hosting is not available there, hence the problem does not exist
+2. Use .NET Core 2.1 - _InProcess_ hosting is not available there, hence the problem does not exist.
 
-3. Use .NET Core 3.0 - The problem is fixed there
+3. Use .NET Core 3.0 - The problem is fixed in this version.

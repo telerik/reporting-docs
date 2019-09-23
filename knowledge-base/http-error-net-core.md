@@ -35,4 +35,4 @@ The error message appears when **InProcess** hosting is used in .NET Core 2.2 ap
 ```
 2. Upgrade to .NET Core 3.0 or downgrade to .NET Core 2.1.
 
-Note that in .NET Core 3.0 the problem has been solved. The problem does not exist also in .NET Core 2.1.
+Note that in .NET Core 2.1 the problem does not exist and in .NET Core 3.0 the problem has been solved. 

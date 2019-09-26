@@ -33,10 +33,10 @@ The issue is resolved in the [R3 2019](https://www.telerik.com/support/whats-new
 
 
 ## Workaround for the HTML5-based Report Viewers
-This workaround was proposed by one of our users- check the post from **Thanh** in [Print Dialog doesn't appear in Google Chrome 77.0.3865.75](https://feedback.telerik.com/reporting/1429337-print-dialog-doesn-t-appear-in-google-chrome-77-0-3865-75) thread. It allows you to triger the print dialog on **Print** click.
+This workaround was proposed by one of our users- check the post from **Thanh** in [Print Dialog doesn't appear in Google Chrome 77.0.3865.75](https://feedback.telerik.com/reporting/1429337-print-dialog-doesn-t-appear-in-google-chrome-77-0-3865-75) thread. It allows you to triger the print dialog on **Print** click. Our user **Naumand** updated it, so the same functionality is achieved in Firefox. 
 Here are the required steps:
 1) Add a reference to the [Print.js](https://printjs.crabbly.com/) third party library in the viewer's page (above the reference to the viewer's JavaScript file).
-2) Copy the **telerikReportViewer-x.x.x.x.js** file locally and refer it in the page from the local source. For example, if the viewer is copied to the folder "(base application folder)/ReportViewer" the references may look like:
+2) Copy the **telerikReportViewer-x.x.x.x.js** file locally and refer it in the page from the local source. For example, if the viewer is copied to the folder _"(base application folder)/ReportViewer"_ the references may look like:
 
 ```JavaScript
 <head>
@@ -59,9 +59,20 @@ function printDesktop(src) {
 Change it to:
 
 ```JavaScript
-function printDesktop(src) {
-    printJS({ printable: src, type: 'pdf', showModal: true });
-}
+trv.printManager = function () {
+   var iframe;
+   function printDesktop(src) {
+       if (window.navigator.userAgent.toLowerCase().indexOf("chrome") > -1) {
+           printJS({ printable: src, type: 'pdf', showModal: true });
+       } else {
+           if (!iframe) {
+               iframe = document.createElement("IFRAME");
+               iframe.style = "position:absolute; left: -10000px; top: -10000px;";
+           }
+           iframe.src = src;
+           document.body.appendChild(iframe);
+       }
+   }
 ```
 
 
@@ -86,43 +97,32 @@ This workaround was also provided by one of our user **Michael** in the Feedback
 
 ```JavaScript
 <div>
-        <form runat="server">
-            <telerik:ReportViewer
-                ID="reportViewer1"
-                Width="1300px"
-                Height="900px"
-                EnableAccessibility="false"
-                runat="server">
-            <ReportSource IdentifierType="UriReportSource" Identifier="SampleReport.trdp">
-            </ReportSource>
-           <sendemail enabled="false" />
-            </telerik:ReportViewer>
-        </form>
+<form runat="server">
+    <telerik:ReportViewer
+        ID="reportViewer1"
+        Width="1300px"
+        Height="900px"
+        EnableAccessibility="false"
+        runat="server">
+    <ReportSource IdentifierType="UriReportSource" Identifier="SampleReport.trdp">
+    </ReportSource>
+   <sendemail enabled="false" />
+    </telerik:ReportViewer>
+ </form>
 
-        <script type="text/javascript">
-            ReportViewer.prototype.PrintReport = function () {
-
-                switch (this.defaultPrintFormat) {
-
-                    case "Default":
-
-                        this.DefaultPrint();
-
-                        break;
-
-                    case "PDF":
-
-                        this.PrintAs("PDF");
-
-                        previewFrame = document.getElementById(this.previewFrameID);
-
-                        previewFrame.onload = function () { previewFrame.contentDocument.execCommand("print", true, null); }
-
-                        break;
-
-                }
-
-            };
-        </script>
-    </div>
+<script type="text/javascript">
+    ReportViewer.prototype.PrintReport = function () {
+        switch (this.defaultPrintFormat) {
+            case "Default":
+                this.DefaultPrint();
+                break;
+            case "PDF":
+                this.PrintAs("PDF");
+                previewFrame = document.getElementById(this.previewFrameID);
+                previewFrame.onload = function () { previewFrame.contentDocument.execCommand("print", true, null); }
+                break;
+        }
+    };
+</script>
+</div>
 ```

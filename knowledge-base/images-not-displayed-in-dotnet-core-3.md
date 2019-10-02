@@ -35,13 +35,22 @@ __"Synchronous operations are disallowed. Call WriteAsync or set AllowSynchronou
 In .NET Core 3 by default __Synchronous operations are disallowed__. Synchronous operations are necessary to download resources such as images used in the reports.
 
 ## Solution
-The Synchronous operations need to be manually allowed, for example by setting the __AllowSynchronousIO__ to __True__ in the container services. This can be done by adding the following code in the __ConfigureServices__ method of the __Startup.cs__ file.
+The Synchronous operations need to be manually allowed, for example by setting the __AllowSynchronousIO__ to __True__ in the container services. This can be done by adding the following code in the __ConfigureServices__ method of the __Startup.cs__ file for __IIS__.
 ```CSharp
 this.services.Configure<IISServerOptions>(options =>
 {
         options.AllowSynchronousIO = true;
  });
 ```
-
+For __Kestrel__ you may use code like the following:
+```CSharp
+public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+     WebHost.CreateDefaultBuilder(args)
+         .UseStartup<Startup>()
+         .ConfigureKestrel((context, options) =>
+         {
+             options.AllowSynchronousIO = true;
+         })
+```
 ## See Also
 [Manual Setup of HTML5 Report Viewer in an ASP.NET Core 3+ application](../manual-setup-of-html5-report-viewer-in-asp-net-core-3)

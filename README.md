@@ -6,7 +6,7 @@ publish: false
 
 # Telerik Reporting Public Documentation
 
-Welcome to the GitHub repository for [Telerik Reporting](https://www.telerik.com/reporting) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik Reporting Documentation at [docs.telerik.com/reporting](https://docs.telerik.com/reporting). If you've arrived here wanting to search and use our docs, head over to [docs.telerik.com/reporting](https://docs.telerik.com/reporting) where our content is prettified and searchable.
+Welcome to the GitHub repository for [Progress Telerik Reporting](https://www.telerik.com/reporting) documentation. This repository contains the source content — written in Markdown — that we use to power the Telerik Reporting Documentation at [docs.telerik.com/reporting](https://docs.telerik.com/reporting). If you've arrived here wanting to search and use our docs, head over to [docs.telerik.com/reporting](https://docs.telerik.com/reporting) where our content is prettified and searchable.
 
 We believe that the documentation for a product is at its best when the content is a collaboration between the builders and consumers of that product. As such, this documentation is both public, and open sourced under and MIT license (see below). That means you can clone this repository, or read the docs offline.
 
@@ -69,7 +69,7 @@ The Telerik Reporting Documentation is licensed under an MIT license. This licen
 
 ### MIT License
 
-Copyright (c) 2012-2018 Telerik EAD
+Copyright (c) 2012-2018 Progress Software EAD
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software" ), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

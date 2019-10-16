@@ -69,7 +69,7 @@ The Telerik Reporting Documentation is licensed under an MIT license. This licen
 
 ### MIT License
 
-Copyright (c) 2012-2018 Progress Software EAD
+Copyright (c) 2012-2019 Progress Software EAD
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software" ), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

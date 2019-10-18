@@ -1,8 +1,8 @@
 ---
-title: HTML5 Viewer: Export Operations Fail with ERR_CONNECTION_RESET HTTP Error 504
+title: HTML5 Viewer Export Operations Fail with ERR_CONNECTION_RESET HTTP Error 504
 description: HTML5 Viewer export operations fail with ERR_CONNECTION_RESET HTTP Error 504
 type: troubleshooting
-page_title: HTML5 Viewer: Export Operations Fail with ERR_CONNECTION_RESET HTTP Error 504
+page_title: HTML5 Viewer Export Operations Fail with ERR_CONNECTION_RESET HTTP Error 504
 slug: html5-viewer-export-operations-fail-with-err_connection_reset_error_504
 position: 
 tags: reportviewer,export,http errror

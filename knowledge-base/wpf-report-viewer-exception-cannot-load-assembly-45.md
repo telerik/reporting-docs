@@ -54,7 +54,7 @@ In order to use the Telerik UI for WPF assemblies build with .NET 4.5 binding re
                          newVersion="2018.2.620.45"/>
       </dependentAssembly>
       <dependentAssembly>
-        <assemblyIdentity name="Telerik.Windows.Controls.Data"
+        <assemblyIdentity name="Telerik.Windows.Data"
                           publicKeyToken="5803cfa389c90ce7"
                           culture="neutral" />
         <bindingRedirect oldVersion="2018.2.620.40"

@@ -33,7 +33,7 @@ The issue is resolved in the [R3 2019](https://www.telerik.com/support/whats-new
 
 
 ## Workaround for the HTML5-based Report Viewers
-This workaround was proposed by one of our users- check the post from **Thanh** in [Print Dialog doesn't appear in Google Chrome 77.0.3865.75](https://feedback.telerik.com/reporting/1429337-print-dialog-doesn-t-appear-in-google-chrome-77-0-3865-75) thread. It allows you to triger the print dialog on **Print** click. Our user **Naumand** updated it, so the same functionality is achieved in Firefox. 
+This workaround was proposed by one of our users- check the post from **Thanh** in [Print Dialog doesn't appear in Google Chrome 77.0.3865.75](https://feedback.telerik.com/reporting/1429337-print-dialog-doesn-t-appear-in-google-chrome-77-0-3865-75) thread. It allows you to trigger the print dialog on **Print** click. Our user **Naumand** updated it, so the same functionality is achieved in Firefox. 
 Here are the required steps:
 1) Add a reference to the [Print.js](https://printjs.crabbly.com/) third party library in the viewer's page (above the reference to the viewer's JavaScript file).
 2) Copy the **telerikReportViewer-x.x.x.x.js** file locally and refer it in the page from the local source. For example, if the viewer is copied to the folder _"(base application folder)/ReportViewer"_ the references may look like:

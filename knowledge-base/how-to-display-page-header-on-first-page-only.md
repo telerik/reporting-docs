@@ -26,13 +26,13 @@ res_type: kb
 
 
 ## Description
-In most cases, the [Report Header](https://docs.telerik.com/reporting/designing-reports-creating-report-headers-and-footers) is used to display information like a Cover Page. However, in some cases it is possible to display only the [Page Header](https://docs.telerik.com/reporting/designing-reports-creating-page-headers-and-footers). See the below solution for details on how-to accomplish this.
+In most cases, the [Report Header](https://docs.telerik.com/reporting/designing-reports-creating-report-headers-and-footers) is used to display information like a Cover Page. However, in rare cases it may be desirable to display only the [Page Header](https://docs.telerik.com/reporting/designing-reports-creating-page-headers-and-footers). See the below solution for details on how-to accomplish this.
 
 ## Solution
-In the PageHeaderSection Properties create a [Binding Expression](https://docs.telerik.com/reporting/expressions-bindings) for the Visibility Property. This will show or hide the Page Header based on the value of the [Page Number](https://docs.telerik.com/reporting/expressions-page-functions#pagenumber) Function. The Expression will look like the below.
+In the Page Header Properties create a [Binding Expression](https://docs.telerik.com/reporting/expressions-bindings) for the Visible Property. This will show or hide the Page Header based on the value of the [Page Number](https://docs.telerik.com/reporting/expressions-page-functions#pagenumber) Function. The Expression will look like the below.
 
 ```
-    // Will evaluate as If PageNumber is Less Than 2, Visibility = True Else Visibility = False
+    // Will evaluate as If PageNumber is Less Than 2, Visible = True Else Visible = False
     = IIF(PageNumber < 2, True, False)
 ```
 

@@ -28,7 +28,9 @@ In some scenarios with alternating table row colors, it is necessary on each new
 The Reporting engine uses the GDI to calculate the space occupied by report elements. This functionality is not exposed in the Reporting API. Therefore, it is necessary to use [System.Reflection](https://docs.microsoft.com/en-us/dotnet/api/system.reflection?view=netframework-4.8) to modify the color of the items in a table row based on their position on the page.
 This can be done in the [ItemDataBinding event](../e-telerik-reporting-reportitembase-itemdatabinding) of a Page section (e.g. _PageHeader_). The main idea is to get the actual measured height of the table row (here we need reflection as these properties are not exposed) and calculate whether it will fit on the current page or needs to be transferred to the next page with its background color reset.
 
-For simplicity in the code we assume that all the measures are in inches. 
+For simplicity in the code we assume that:
+* all the measures are in inches 
+* the Table starts at vertical position 0 in its container section
 
 ```CSharp
 namespace ReportLibrary1
@@ -46,7 +48,7 @@ namespace ReportLibrary1
     /// </summary>
     public partial class Report1 : Telerik.Reporting.Report
     {
-        const int columnHeaderRowCount = 1;
+        const int columnHeaderRowCount = 1;// This value should be tuned according to your setup
         readonly Color mainColor = Color.Red;
         readonly Color secondaryColor = Color.DarkCyan;
 
@@ -102,13 +104,13 @@ namespace ReportLibrary1
             {
                 var row = processingTable.Rows[rowIndex];
                 var textBox = (Telerik.Reporting.Processing.TextBox)row.GetCell(0).Item;
-                tableColumnHeaderHeight = GetMeasuredHeight(textBox);
+                tableColumnHeaderHeight += GetMeasuredHeight(textBox);
             }
 
             // assumes all sizes are in the same Units (inch)
             float pageSectionsHeight = this.pageFooterSection1.Height.Value + this.pageHeaderSection1.Height.Value;
             float usablePageHeight = this.PageSettings.PaperSize.Height.Value - this.PageSettings.Margins.Top.Value - this.PageSettings.Margins.Bottom.Value;
-            float availableHeight = usablePageHeight - pageSectionsHeight - tableColumnHeaderHeight;
+            float availableHeight = usablePageHeight - pageSectionsHeight - tableColumnHeaderHeight;//here we assume that the Table starts at vertical position 0 in its container section
 
             float heightOccupiedByTable = 0f;
             for (; rowIndex < processingTable.Rows.Count; rowIndex++)
@@ -143,14 +145,14 @@ namespace ReportLibrary1
                 heightProp = TypeDescriptor.GetProperties(m)["Height"];
             }
 
-            return Unit.Mm((long)heightProp.GetValue(m) / 100.0).ChangeType(UnitType.Inch).Value;
+            return Unit.Mm((long)heightProp.GetValue(m) / 100.0).ChangeType(UnitType.Inch).Value;// the Measurements are internally kept in hundreds of millimeters, hence the division
         }
     }
 }
 ```
 
-The first for-cycle in the __pageHeaderSection1_ItemDataBinding__ event handler is used to skip the table headers. Their count should be known apriori and is stored in the _columnHeaderRowCount_ field of the report class.  
-The second for-cycle is the one that iterates over the data rows and their items (only _TextBoxes_ for simplicity) and sets their background color. All table rows (header and detail) are stored in the same collection, therefore we use the same indexer for the two cycles.  
-The [PropertyDescriptor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertydescriptor?view=netframework-4.8) _heightProp_ stores the measured height of the TextBox in the corresponding table cell. The height is returned by the _GetMeasuredHeight_ method in inches.
-The height of the rows is accumulated until the total height exceeds the available height of the page (_availableHeight_). At this point the row should be transferred to a new page and its color should be reset - controlled by the Boolean field _useMainColor_.  
-The _processingReportInstance_ field is used to avoid multiple identical modifications of the same report item properties. 
+* The first for-cycle in the __pageHeaderSection1_ItemDataBinding__ event handler is used to skip the table headers. Their count should be known apriori and is stored in the _columnHeaderRowCount_ field of the report class.  
+* The second for-cycle is the one that iterates over the data rows and their items (only _TextBoxes_ for simplicity) and sets their background color. All table rows (header and detail) are stored in the same collection, therefore we use the same indexer for the two cycles.  
+* The [PropertyDescriptor](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertydescriptor?view=netframework-4.8) _heightProp_ stores the measured height of the TextBox in the corresponding table cell. The height is returned by the _GetMeasuredHeight_ method in inches.
+* The height of the rows is accumulated until the total height exceeds the available height of the page (_availableHeight_). At this point the row should be transferred to a new page and its color should be reset - controlled by the Boolean field _useMainColor_.  
+* The _processingReportInstance_ field is used to avoid multiple identical modifications of the same processing report instance properties. 

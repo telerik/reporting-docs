@@ -1,5 +1,5 @@
 ---
-title: How To: Programmatically Create a Master-Detail Report Using SubReport Item
+title: How To Programmatically Create a Master-Detail Report Using SubReport Item
 description: Create a Master-Detail Report using a SubReport Item using only code.
 type: how-to
 page_title: Create a Master-Detail Report Using SubReport Item Programmatically

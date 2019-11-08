@@ -1,5 +1,5 @@
 ---
-title: How To: Display Page Header on First Page Only
+title: How To Display Page Header on First Page Only
 description: Use a Binding Expression to Display the Page Header only on the First Page
 type: how-to
 page_title: Displaying the Page Header on Only the First Page

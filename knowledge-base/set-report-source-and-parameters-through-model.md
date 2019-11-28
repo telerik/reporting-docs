@@ -86,3 +86,5 @@ public class ReportModel
  
 Note that this is in case you use the default MapRoute : url: "{controller}/{action}/{id}". It can be found in App_Start/RouteConfig.cs or in Global.asax file in the MVC project. With another routing may not work this way.
  Then the URL might look: http://localhost:XXXXX/Home/Report/SampleReport?parameter1=Item3&parameter2=Value3
+ 
+The demo application could be downloaded from [here](LINK).

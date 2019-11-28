@@ -2,7 +2,7 @@
 title: Pass parameter value to MVC report viewer
 description: Sometimes you need to set the report source and report parameters from the Home Controller or you can also query them in the URL
 type: how-to
-page_title: How to set the report source and report parameters from the controller in ASP .NET MVC project through a model?
+page_title: How to set the report source and report parameters from the controller in ASP.NET MVC project through a model?
 slug: set-report-source-and-parameters-through-model
 position: 
 tags: HTML5 MVC Report Viewer
@@ -21,19 +21,15 @@ res_type: kb
 			<td>Report Viewer</td>
 			<td>HTML5 ASP.NET MVC</td>
 		</tr>
-		<tr>
-			<td>.Net Framework</td>
-			<td>Version 4.6.2</td>
-		</tr>
 	</tbody>
 </table>
 
 
 ## Description
-This article shows how to set the report source and report parameters from the controller in ASP .NET MVC project through a model. The attached project demonstrates the following approach:
+This article shows how to set the report source and report parameters from the controller in ASP.NET MVC project through a model. The attached project demonstrates the following approach:
 
 ## Solution
-1. The report contains 2 [report parameters](../designing-reports-parameters)- **Parameter1** and **Parameter2**. The initial value of the first one is Item1 and of the second one is Value1.
+1. The report contains 2 [report parameters](../designing-reports-parameters)- **Parameter1** and **Parameter2**. The initial value of the first one is "Item1" and of the second one is "Value1".
 
 2. Add a new Model called **ReportModel**. It has 2 properties - a string which holds the **ReportName** and **Dictionary** for the parameters:
 
@@ -48,7 +44,7 @@ public class ReportModel
 
 4. Add the **Model** namespace through a using.
 
-5. Change the **ActionResult** method of the page which contains of the report viewer as follows:
+5. Change the **ActionResult** method of the page which contains the report viewer as follows:
 
 
   ``` C#
@@ -87,4 +83,6 @@ public class ReportModel
             return View("Index", reportModel);
         }
   ```
-  Then the URL might look: http://localhost:XXXXX/Home/Report/SampleReport?parameter1=Item3&parameter2=Value3
+ 
+Note that this is in case you use the default MapRoute : url: "{controller}/{action}/{id}". It can be found in App_Start/RouteConfig.cs or in Global.asax file in the MVC project. With another routing may not work this way.
+ Then the URL might look: http://localhost:XXXXX/Home/Report/SampleReport?parameter1=Item3&parameter2=Value3

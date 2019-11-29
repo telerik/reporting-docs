@@ -37,7 +37,7 @@ use the following [Binding](../expressions-bindings) in the table:
     Property path: DataSource.Source
     Expression: Parameters.Parameter1.Value
 
-The same approach can be applied if the datasource is assigned to the report. In this case, the Binding has to be added to the report.
+The same approach can be applied if the datasource is assigned to the report or any other [data item](../data-items). In this case, the Binding has to be added to the report/ data item.
 
 ## Notes
 The demo report can be downloaded from [here](https://github.com/telerik/reporting-samples/tree/master/SetJsonThroughReportParameter).

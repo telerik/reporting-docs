@@ -40,23 +40,23 @@ Workaround 2 demonstrated in Report2:
 
 1) Add a [CSV DataSource](../csvdatasource-component) (with **Group**, **Item** and **Value** fields) but don't set it to be the datasource of the report;
 
-2) Add a table that displays only the **Item** and **Value** fields.
+2) Add a table through the Table Wizard -> set its DataSource to the csvDataSource -> add only the **Item** and **Value** fields.
 
 3) Right-click over the table -> **Add group** -> **Row group -  Parent Group**;
 
-4) Set the **Expression** to be "=Fields.Group";
+	- Set the **Expression** to be "=Fields.Group";
 
-5) Mark **Add Header** -> **OK**;
+	- Mark **Add Header** -> **OK**;
 
-6) Right-click over the table -> **Insert row** -> **Outside Group Above**;
+4) Right-click over the table -> **Insert row** -> **Outside Group Above**;
 
-7) Move the headers of the table over "= Fields.Value" and "= Fields.Item";
+	- Move the headers of the table in the new empty row over "= Fields.Value" and "= Fields.Item";
 
-8) Right-click over the table -> **Insert Column** -> **Right**;
+5) Right-click over the table -> **Insert Column** -> **Right**;
 
-9) Merge the upper header and set its **Value** to be  "=Fields.Group";
+	- Merge the upper header and set its **Value** to be  "=Fields.Group";
 
-10) Remove the unnecessary column of the group (**Delete column only**) and row;
+6) Remove the unnecessary column of the group (**Delete column only**) and row;
 
 Note that the limitation of this solution is that if you set the property **ColumneHeadersPrintOnEveryPage** will not work as expected.
 

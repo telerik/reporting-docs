@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-The attached project demonstrates using a REST WebService with Post Method for the WebServiceDataSource.  The Service returns a *Person* with 2 properties: *Name* and *Surname*.
+The attached project demonstrates using a REST WebService with Post Method for the WebServiceDataSource.  The Service returns a *Person* with  *Name* and *Surname*.
 
 ## Solution
 Configuration of the [WebServiceDataSource](../webservicedatasource-component) in the report :

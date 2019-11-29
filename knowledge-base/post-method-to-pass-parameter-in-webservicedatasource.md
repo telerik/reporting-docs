@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-The attached project demonstrates using a REST WebService with Post Method for the WebServiceDataSource.  The Service returns a *Person* with 2 properties: *Name* and *Surname* (this will be used for the MultiValue report parameter).
+The attached project demonstrates using a REST WebService with Post Method for the WebServiceDataSource.  The Service returns a *Person* with 2 properties: *Name* and *Surname*.
 
 ## Solution
 Configuration of the WebServiceDataSource in the report :
@@ -41,12 +41,12 @@ Configuration of the WebServiceDataSource in the report :
   "Surname": @surname
 }
 ```
-![](resources/CDR.png
+![](resources/CDR.png)
 5. In the **Configure request parameters**, add a parameter for the header and to set the **Value** and **Design-Time Value** of the report parameters.
 
 ![](resources/CDP.png)
 
 
 ## Notes
-The Content-Type Header parameter that is necessary - it is case-sensitive. The parameters passed through the body of the POST request should be Inline parameters.
-The demo application could be downloaded from [here](LINK).
+The Content-Type Header parameter that is necessary is case-sensitive. The parameters passed through the body of the POST request should be Inline parameters.
+The demo application could be downloaded from [here](https://github.com/telerik/reporting-samples/tree/master/PostMethodWebServiceDataSource).

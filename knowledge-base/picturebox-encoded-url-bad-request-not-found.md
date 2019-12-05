@@ -16,6 +16,10 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
+	<tr>
+		<td>Framework</td>
+		<td>.NET 4.0</td>
+	</tr>
 </table>
 
 ## Problem
@@ -32,7 +36,7 @@ will be sent to the server as:
 Depending on the route congiguration of the web application serving the request the result may vary from a 40x error response to a 200 OK result which contains data for an entirely different query.
 
 ## Solution
-To change the default behavior of the Uri class which un-escapes percent encoded path delimiters, use a configuration file setting for each desired URL scheme in the client application:
+To change the default behavior of the Uri class which un-escapes percent encoded path delimiters, use a configuration file setting for each desired URL scheme in the client application. The configuration setting is only applicable to .NET Framework 4.0.
 
 `````
 <configuration>  

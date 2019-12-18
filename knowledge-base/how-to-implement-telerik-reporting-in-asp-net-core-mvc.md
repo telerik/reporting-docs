@@ -83,9 +83,6 @@ We have to build the configuration in *Startup.cs* as we implement a sample *Con
 ```CSharp
 public class ConfigurationService
 {
-    public IConfiguration Configuration { get; private set; }
- 
-    public IHostingEnvironment Environment { get; private set; }
     public ConfigurationService(IHostingEnvironment environment)
     {
         this.Environment = environment;
@@ -97,7 +94,11 @@ public class ConfigurationService
  
         this.Configuration = config;
     }
-}
+    
+    public IConfiguration Configuration { get; private set; }
+ 
+    public IHostingEnvironment Environment { get; private set; }
+}  
 ```
 
 If we want to inject our configuration to our controllers, we'll need to register it with the runtime. We do so via *Startup.ConfigureServices*:
@@ -115,74 +116,54 @@ public void ConfigureServices(IServiceCollection services)
         options.MinimumSameSitePolicy = SameSiteMode.None;
     });
     this.services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-    this.services.AddSingleton<ConfigurationService>();
-}
-```
 
-In order to have access to *WebRootPath* in the ReportsController (I assume that the reports will be stored at *wwwroot/Reports* directory), we need to register it with the runtime. We do so via *Startup.Configure*:
-```CSharp
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-{
-    this.services.AddTransient(ctx => new ReportsController(new ConfigurationService(env)));
-    ....
+    // Configure dependencies for ReportServiceConfiguration.
+    services.TryAddSingleton<ConfigurationService>(sp => new ConfigurationService(sp.GetService<IHostingEnvironment>()));
+    services.TryAddScoped<IReportResolver>(sp =>
+      new ReportTypeResolver().AddFallbackResolver(new ReportFileResolver(
+        Path.Combine(sp.GetRequiredService<ConfigurationService>().Environment.WebRootPath, "Reports"))));
+    services.TryAddScoped<IReportServiceConfiguration>(sp =>
+      new ReportServiceConfiguration
+      {
+        ReportingEngineConfiguration = sp.GetRequiredService<ConfigurationService>().Configuration,
+        HostAppId = "Html5DemoAppCore",
+        Storage = new FileStorage(),
+        ReportResolver = sp.GetRequiredService<IReportResolver>()
+      });
 }
 ```
 
 After the initial configuration is done, you can create ReportsController class which will look like:
-```CSharp
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Mail;
-using Microsoft.AspNetCore.Mvc;
-using Telerik.Reporting.Cache.File;
-using Telerik.Reporting.Services;
-using Telerik.Reporting.Services.AspNetCore;
- 
+```CSharp 
 namespace AspNetCoreMvcDemo.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using System.Net;
+    using System.Net.Mail;
+    using Telerik.Reporting.Services;
+    using Telerik.Reporting.Services.AspNetCore;
+
     [Route("api/reports")]
     public class ReportsController : ReportsControllerBase
     {
-        readonly string reportsPath = string.Empty;
- 	
-	//We use the *ConfigurationService* as a parameter for the ReportsController constructor to obtain the configuration information and to access the WebRootPath of the application.
-        public ReportsController(ConfigurationService configSvc)
+        public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
+            : base(reportServiceConfiguration)
         {
-            this.reportsPath = Path.Combine(configSvc.Environment.WebRootPath, "Reports");
- 
-            this.ReportServiceConfiguration = new ReportServiceConfiguration
-            {
-                ReportingEngineConfiguration = configSvc.Configuration,
-                HostAppId = "Html5DemoAppCore",
-                Storage = new FileStorage(),
-                ReportResolver = new ReportTypeResolver()
-                                    .AddFallbackResolver(new ReportFileResolver(this.reportsPath)),
-            };
-        }
- 
-        [HttpGet("reportlist")]
-        public IEnumerable<string> GetReports()
-        {
-            return Directory
-                .GetFiles(this.reportsPath)
-                .Select(path =>
-                    Path.GetFileName(path));
-        }
-        protected override HttpStatusCode SendMailMessage(MailMessage mailMessage)
-        {
-            throw new System.NotImplementedException("This method should be implemented in order to send mail messages");
-            //using (var smtpClient = new SmtpClient("smtp01.mycompany.com", 25))
-            //{
-            //    smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-            //    smtpClient.EnableSsl = false;
- 
-            //    smtpClient.Send(mailMessage);
-            //}
-            //return HttpStatusCode.OK;
         }
     }
+	
+	protected override HttpStatusCode SendMailMessage(MailMessage mailMessage)
+	{
+      throw new System.NotImplementedException("This method should be implemented in order to send mail messages");
+      //using (var smtpClient = new SmtpClient("smtp01.mycompany.com", 25))
+      //{
+      //    smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+      //    smtpClient.EnableSsl = false;
+
+      //    smtpClient.Send(mailMessage);
+      //}
+      //return HttpStatusCode.OK;
+	}
 }
 ```
 

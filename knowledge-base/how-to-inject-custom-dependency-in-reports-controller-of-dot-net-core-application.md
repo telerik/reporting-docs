@@ -53,32 +53,55 @@ public class ProductRepository : IProductRepository
 ```  
 In this case you may use [Custom Resolver](../telerik-reporting-rest-custom-report-resolver) for resolving the TRDP reports and add the DataSource at run-time after instantiating the report. For the purpose it will be necessary to :  
 
-1) Change the **Configure** method of the **Startup** class to pass the **IProductRepository** with the **ReportsController**, for example like :  
+1) Implement a sample *ConfigurationService* class:
+```CSharp
+public class ConfigurationService
+{
+    public ConfigurationService(IHostingEnvironment environment)
+    {
+        this.Environment = environment;
+ 
+        var configFileName = System.IO.Path.Combine(environment.ContentRootPath, "appsettings.json");
+        var config = new ConfigurationBuilder()
+                        .AddJsonFile(configFileName, true)
+                        .Build();
+ 
+        this.Configuration = config;
+    }
+    
+    public IConfiguration Configuration { get; private set; }
+ 
+    public IHostingEnvironment Environment { get; private set; }
+}  
+```
+
+2) Change the **ConfigureServices** method of the **Startup** class to register **ConfigurationService** and **IProductRepository**, for example like :  
 
 ```CSharp
 public void ConfigureServices(IServiceCollection services)
 {
-    this.services = services;
-    this.services.AddDbContext<...>(options => ...);
+    services.AddDbContext<...>(options => ...);
     ...
-    this.services.AddScoped<IProductRepository, ProductRepository>();
-    ...
-}
-
-public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-{
-    var svc = this.services.FirstOrDefault(s => s.ServiceType == typeof(IProductRepository));
-    this.services.AddTransient(ctx => new ReportsController(new ConfigurationService(env), (IProductRepository)svc.ImplementationInstance));
-    ...
+    services.AddScoped<IProductRepository, ProductRepository>();
+    ...	
+	// Configure dependencies for ReportServiceConfiguration.
+    services.TryAddSingleton<ConfigurationService>(sp => new ConfigurationService(sp.GetService<IHostingEnvironment>()));
+    services.TryAddScoped<IReportResolver, CustomReportResolver>();
+    services.TryAddScoped<IReportServiceConfiguration>(sp =>
+      new ReportServiceConfiguration
+      {
+        ReportingEngineConfiguration = sp.GetRequiredService<ConfigurationService>().Configuration,
+        HostAppId = "Html5DemoAppCore",
+        Storage = new FileStorage(),
+        ReportResolver = sp.GetRequiredService<IReportResolver>()
+      });
 }
 ```  
-2)  Pass a second parameter of **IProductRepository** in the **ReportsController**. Note that you can have only one constructor of the **ReportsController** (seems to be a limitation of the framework), hence you need to modify the existing constructor of the controller to receive the second parameter and pass it to the custom resolver :  
+2)  Pass a second parameter of **IProductRepository** in the constructor of **ReportsController**. Note that you can have only one constructor of the **ReportsController** (seems to be a limitation of the framework), hence you need to modify the existing constructor of the controller to receive the second parameter and pass it to the custom resolver :  
 
 ```CSharp
-public ReportsController(ConfigurationService configSvc, IProductRepository productRepository)
+public ReportsController(IReportServiceConfiguration reportServiceConfiguration, IProductRepository productRepository)
 {
-    ...
-    var resolver = new CustomReportResolver(productRepository);
     ...
 }
 ```  

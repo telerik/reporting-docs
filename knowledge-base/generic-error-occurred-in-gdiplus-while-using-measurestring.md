@@ -33,3 +33,5 @@ Instead of TextBox use a **List** data item with a single TextBox inside. The Da
 The DataMember of the ObjectDataSource should return a single record when the Text is less than 32000 symbols.  
 When the Text length is in the interval (32000, 64000\] symbols the Text should be split in two data records, and so on. 
 This way the Text will be displayed in the appropriate number of TextBoxes (with less that 32000 symbols) depending on its length.
+
+Sample C# and VB ReportLibrary projects demonstrating the approach can be found in [our GitHub samples](https://github.com/telerik/reporting-samples/tree/master/DisplayTextWithMoreThan3200symbols). You need to build the projects and preview the Reports with the Visual Studio Report Designer. Select the text option for the Report Parameter value to see the large text that is displayed in a List component in a series of dynamically generated TextBoxes.

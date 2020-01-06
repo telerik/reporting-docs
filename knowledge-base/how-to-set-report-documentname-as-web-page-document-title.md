@@ -22,11 +22,11 @@ res_type: kb
 
 
 ## Description
-The article explains how to set the Document Title that will appear in the browser tab of the Web Page hosting the [Html5 Report Viewer](../html5-report-viewer) or any of its wrappers to the _DocumentName_ of the Report. The referred sample project is built with the [Html5 Web Forms Viewer](../webforms-report-viewer-controls-overview).
+The article explains how to set the Document Title that will appear in the browser tab of the Web Page hosting the [Html5 Report Viewer](../html5-report-viewer) or any of its wrappers to the __DocumentName__ of the Report. The referred sample project is built with the [Html5 Web Forms Viewer](../webforms-report-viewer-controls-overview).
 
 ## Solution
 1. If the Report already has [Document Map](../designing-reports-document-map) go to the next step.
-Otherwise, in the report definition set the [DocumentMapText](../p-telerik-reporting-reportitembase-documentmaptext) property of a report item (e.g. _TextBox_) to a valid value. The _DocumentMapText_ will introduce _Document Map_ in the Report. This way the __DocumentName__ of the Report would be included in the __bookmarkNodes__ collection of the __args__ object of the [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) event of the viewer. 
+Otherwise, in the report definition set the [DocumentMapText](../p-telerik-reporting-reportitembase-documentmaptext) property of a report item (e.g. _TextBox_) to a valid value. The __DocumentMapText__ will introduce __Document Map__ in the Report. This way the __DocumentName__ of the Report would be included in the __bookmarkNodes__ collection of the __args__ object of the [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) event of the viewer. 
 2. In the event handler of __renderingEnd__ the name of the Report can be taken from __args.bookmarkNodes__ and assigned to the title of the document:
 ```JavaScript
 function OnRenderingEnd(e, args) {

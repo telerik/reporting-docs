@@ -1,6 +1,6 @@
 ---
 title: Switch Reports Displayed in Kendo MVC Modal Window
-description: How to switch reports effectively in an Html5 MVC Report Viewer hosted in a Kendo MVC modal window
+description: How to switch reports effectively in Html5 MVC Report Viewer hosted in Kendo MVC modal window
 type: how-to
 page_title: Display different reports in Kendo modal window
 slug: how-to-switch-reports-in-kendo-mvc-modal-window

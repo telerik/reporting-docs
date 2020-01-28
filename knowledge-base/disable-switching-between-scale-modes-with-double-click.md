@@ -1,8 +1,8 @@
 ---
-title: Disable double click zooming for Telerik Reporting Html5 Report Viewer
+title: Disable Double Click Zooming for Telerik Reporting Html5 Report Viewer
 description: By default double click switches between the scale modes of the viewer. Here we explain how to disable this behavior.
 type: how-to
-page_title: Disable switching between scale modes with double click.
+page_title: Disable Switching Between Scale Modes on Double Click.
 slug: disable-switching-between-scale-modes-with-double-click.
 position: 
 tags: 

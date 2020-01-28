@@ -25,7 +25,7 @@ res_type: kb
 The Preview button of the Html5 Viewer's Parameters area is displayed when at least one of the Report paramters is Visible. By design, the button is displayed at the bottom of the area. The article elaborates on how to move the Preview button at the top of the parameter editors.
 
 ## Solution
-You need to add CSS styles that modify the default position of the button and the content in the viewer's Parameters area. The Preview button is positioned in the footer of the area and can be selected by '.trv-parameters-area.preview .trv-parameters-area-footer'. The parameter editors themselves are localted in the content part of the area and can be selected by '.trv-report-viewer .trv-parameters-area.preview .trv-parameters-area-content'. Here is sample code for the page hosting the Html5 Viewer with Preview button on the top of the Parameter's area:
+You need to add CSS styles that modify the default position of the button and the content in the viewer's Parameters area. The Preview button is positioned in the footer of the area and can be selected by '.trv-parameters-area.preview .trv-parameters-area-footer'. The parameter editors themselves are located in the content part of the area and can be selected by '.trv-report-viewer .trv-parameters-area.preview .trv-parameters-area-content'. Here is sample code for the page hosting the Html5 Viewer with Preview button at the top of the Parameter's area:
 ```HTML
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">

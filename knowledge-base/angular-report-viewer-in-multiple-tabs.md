@@ -1,6 +1,6 @@
 ---
 title: Angular Report Viewer in Multiple Tabs
-description: Sometimes when you want to display the report viewers in different tabs only in the first tab the report is rendered.
+description: When displaying Angular report viewer in different tabs it renders in the first tab only
 type: how-to
 page_title: How to Display Angular Report Viewer in Multiple Tabs
 slug: angular-report-viewer-in-multiple-tabs
@@ -26,7 +26,7 @@ Sometimes when you want to display the Angular Report Viewer in multiple tabs on
 
 ## Solution
 You need to use [lazy loading](https://material.angular.io/components/tabs/overview#lazy-loading) for the tab's content:
-```
+```JavaScript
 mat-tab-group [(selectedIndex)]="selectedTab">
              <mat-tab label="Tab Rpt Works">
                 <ng-template matTabContent>
@@ -46,8 +46,11 @@ By default, the tab contents are eagerly loaded. Eagerly loaded tabs will initia
 
 ## Sample Application
 The demo application could be downloaded from [here](https://github.com/telerik/reporting-samples/tree/master/AngularReportViewerInMultipleTabs). 
-Firstly open **MyRestService** project and run the [Upgrade Wizard](../ui-upgrade-wizard). Rebuild the project to recover the required
-references and packages. Start the application. After that open the Angular project and run
+1. Open **MyRestService** project and run the [Upgrade Wizard](../ui-upgrade-wizard).
+2. Rebuild the project to recover the required
+references and packages. 
+3. Start the application. 
+4. Open the Angular project and run:
 ```
 npm install 
 ```

@@ -22,18 +22,18 @@ res_type: kb
 
 
 ## Description
-This KB articles show how to achieve [alternating style rows](../how-to-display-alternating-style-rows) 
-when there is a [grouping in the table](../reporting/data-items-how-to-add-groups-to-table-item-and-crosstab-item) and the group's content is expandable.
+This KB articles shows how to achieve [alternating style rows](./how-to-display-alternating-style-rows) 
+when there is a [grouping in the table](../data-items-how-to-add-groups-to-table-item-and-crosstab-item) and the group's content is expandable.
 
 ## Solution
 In the [demo report](https://github.com/telerik/reporting-samples/tree/master/Applying%20Conditional%20Formatting%20Rule%20to%20Expandable%20Area) the following approach is applied:
-1. Add a [CSV DataSource](../reporting/csvdatasource-component) with **Group** and **Item** columns;
+1. Add a [CSV DataSource](../csvdatasource-component) with **Group** and **Item** columns;
 
-2. Add a table that displays only the items and [add a row group](.reporting/data-items-how-to-add-groups-to-table-item-and-crosstab-item) based on "=Fields.Group"
+2. Add a table that displays only the items and [add a row group](../data-items-how-to-add-groups-to-table-item-and-crosstab-item) based on "=Fields.Group"
 
-3. Set the [Toggle Visibility action](.reporting/designing-reports-interactivity-how-to-add-drilldown-action) on "=Fields.Group";
+3. Set the [Toggle Visibility action](../designing-reports-interactivity-how-to-add-drilldown-action) on "=Fields.Group";
 
-4. Set [Conditional Formatting](.reporting/styling-conditional-formatting) to "=Fields.Group" cell:
+4. Set [Conditional Formatting](../styling-conditional-formatting) to "=Fields.Group" cell:
 
 **Expression**: =RowNumber()%2
 
@@ -47,4 +47,4 @@ In the [demo report](https://github.com/telerik/reporting-samples/tree/master/Ap
 
 **Operator**: =
 
-**Valu**e: =0
+**Value** =0

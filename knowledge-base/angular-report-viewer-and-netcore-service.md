@@ -39,3 +39,14 @@ This KB article demonstrates how to create a .NET Core 3 project which will be u
 
 ## See Also
 The sample project can be found in our [Git Hub repository](https://github.com/telerik/reporting-samples/tree/master/Angular%20with%20.NET%20Core3%20Service).
+1. Firstly, run
+```
+dotnet build
+```
+
+after that: 
+```
+dotnet run
+```
+
+

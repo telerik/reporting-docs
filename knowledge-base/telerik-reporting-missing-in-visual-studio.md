@@ -25,11 +25,10 @@ res_type: kb
 Sometimes you are unable to add any Telerik Reporting items in Visual Studio. This articles provides steps on how to solve this issue.
 
 ## Cause\Possible Cause(s)
-A possible reason for the issue can be the **Telerik Reporting** and/or **Telerik.CommonPackage** extensions might be disabled or they are not installed. 
+A possible reason for the issue can be that the **Telerik Reporting** and/or **Telerik.CommonPackage** extensions might be disabled or they are not installed. 
 
 ## Visual Studio 2019
-Navigate to **Extensions** -> **Manage Extensions**. Then under **Installed**, there should be both aforementioned extensions 
-and they should be **Enabled**. 
+Navigate to **Extensions** -> **Manage Extensions**. Under **Installed**,  find the aforementioned extensions and mark them as **Enabled**. 
 
 If there aren't any Telerik extensions, locate the **Telerik.Reporting.VsX.vsix** under
 ```
@@ -38,8 +37,7 @@ If there aren't any Telerik extensions, locate the **Telerik.Reporting.VsX.vsix*
  and run it. It should install all necessary extensions.
 
 ## Visual Studio 2017 and 2015
-Navigating to **Tools** -> **Extensions and Updates**. Then under **Installed**, there should be both aforementioned extensions 
-and they should be **Enabled**. 
+Navigating to **Tools** -> **Extensions and Updates**. Under **Installed**,  find the aforementioned extensions and mark them as **Enabled**. 
 
 If there aren't any Telerik extensions, locate the **Telerik.Reporting.VsX.vsix** under
 ```

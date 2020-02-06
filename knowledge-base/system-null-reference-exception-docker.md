@@ -2,7 +2,7 @@
 title: Docker Container Error System.NullReferenceException Object reference not set to an instance of an object
 description: Such error might be thrown in docker for Linux 
 type: troubleshooting
-page_title: Docker Container: System.NullReferenceException: Object reference not set to an instance of an object. at Telerik.Reporting.Drawing.FontExtensions.ToGdiFont(IFont font)
+page_title: Docker Container Error System.NullReferenceException Object reference not set to an instance of an object. at Telerik.Reporting.Drawing.FontExtensions.ToGdiFont(IFont font)
 slug: system- null-reference-exception-docker
 position: 
 tags: 

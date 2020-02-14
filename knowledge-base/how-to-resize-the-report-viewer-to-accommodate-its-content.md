@@ -106,3 +106,59 @@ displayed report page. To achieve that follow these steps:
         }
   });
   ```
+  
+  Steps for the MVC wrapper for HTML5 report viewer would be as following:
+  
+  1. The same
+  
+  2. The same
+  
+  3. Set the viewer's page mode to the single page.
+  ```C#
+  @(Html.TelerikReporting().ReportViewer()
+                    .Id("reportViewer1")
+...
+                    .PageMode(PageMode.SinglePage)
+
+
+)
+```
+  
+  4. Subscribe to the viewer's pageReady event and set the viewer's height based on the report page content:
+  ```C#
+  @(Html.TelerikReporting().ReportViewer()
+                    .Id("reportViewer1")
+...
+                    .PageMode(PageMode.SinglePage)
+                    .ClientEvents(
+                events => events
+                    .PageReady("onPageReady")
+                    )
+               
+)
+```
+
+```JavaScript
+<script type="text/javascript">
+        
+        function onPageReady() {
+            resizeViewer();
+        }
+
+        function resizeViewer() {
+          var pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2, // Calculate the report page height
+              viewer = $("#reportViewer1"),
+              viewerHeight = viewer.height();
+
+          if (viewerHeight !== pageHeight ) {
+              viewer.height(pageHeight);
+              var documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
+              documentMapSplitter.resize(true);
+
+              var parameterSplitter = $(".trv-parameters-splitter").data("kendoSplitter");
+              parameterSplitter.resize(true);
+          }
+      }
+
+</script>
+```

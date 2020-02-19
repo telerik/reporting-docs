@@ -1,5 +1,5 @@
 ---
-title: Angular Report Viewer and .NET Core 3 service
+title: Using .NET Core 3 Project as a Service in Angular Report Viewer
 description: Using .NET Core 3 as a service in Angular Report Viewer
 type: how-to
 page_title: How to Create Angular Report Viewer with .NET Core 3 Service
@@ -39,7 +39,7 @@ This KB article demonstrates how to create a .NET Core 3 project which will be u
 
 ## See Also
 The sample project can be found in our [Git Hub repository](https://github.com/telerik/reporting-samples/tree/master/Angular%20with%20.NET%20Core3%20Service).
-1. Firstly, run
+Run
 ```
 dotnet build
 ```

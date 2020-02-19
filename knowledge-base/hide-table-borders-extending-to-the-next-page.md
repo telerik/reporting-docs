@@ -2,7 +2,7 @@
 title: Hide table borders extending to the next page
 description: How to hide table borders that extend to the end of the page
 type: how-to
-page_title: Remove extra table borders when the table is paged
+page_title: Remove Extra Table Borders When the Table Is Paged
 slug: hide-table-borders-extending-to-the-next-page
 position: 
 tags: 
@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-By design, the borders of the [Table item](https://docs.telerik.com/reporting/table-working-with-table-cross-table-list-items) will be drawn to the end of the page to indicate that the table is continued to the next page.
+By design, the borders of the [Table item](../table-working-with-table-cross-table-list-items) will be drawn to the end of the page to indicate that the table is continued to the next page.
 When the table is paged vertically the vertical borders will be extended to the bottom of the page. When the table is paged horizontally 
 the horizontal borders will be extended to the right end of the page.
 
@@ -36,4 +36,4 @@ In this case, only the borders of each cell (TextBox item) will be visualized.
 
 ## See Also
 
-[Using Styles to Customize Reports](https://docs.telerik.com/reporting/style-using-styles-to-customize-reports)
+[Using Styles to Customize Reports](../style-using-styles-to-customize-reports)

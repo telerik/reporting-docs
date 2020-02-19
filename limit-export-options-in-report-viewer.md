@@ -56,7 +56,7 @@ The example below shows an XML-based configuration file that hides the RTF rende
 </configuration>
 ```
 
-.NET Core applications support a JSON-based file named **appSettings.json** for storing information about configurations. 
+.NET Core applications support a JSON-based file usually named **appSettings.json** for storing information about configurations. 
 For .NET Core console applications both configuration types are supported, but appSettings.json has precedence over app.config. The 
 example below shows an JSON-based configuration file that hides the RTF rendering extension:
 

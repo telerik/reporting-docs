@@ -1,6 +1,6 @@
 ---
 title: Integration between Chart (HTML5) and HTML5 Web Forms Report Viewer
-description: Combine Chart (HTML5) and HTML5 Web Forms Report Viewer in one web page
+description: Combine RadHtmlChart for ASP.NET AJAX and HTML5 Web Forms Report Viewer in one web page
 type: how-to
 page_title: How to Integrate Chart (HTML5) and HTML5 Web Forms Report Viewer
 slug: combine-chart-and-report-viewer
@@ -23,10 +23,10 @@ res_type: kb
 
 ## Description
 This article demonstrates how to combine the [Chart (HTML5)](https://www.telerik.com/products/aspnet-ajax/html-chart.aspx) component 
-from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer](./webforms-report-viewer-controls-overview) in one page.
+from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer](../webforms-report-viewer-controls-overview) in one page.
 
 ## Solution
-1. Load all Kendo scripts on the page and disable the once embedded in the AJAX DLLs:
+1. Load all Kendo scripts on the page and disable the those embedded in the AJAX DLLs:
 
 ```
 <head runat="server">
@@ -60,7 +60,7 @@ from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer](./webfo
 </telerik:RadHtmlChart>
 ```
 
-3. Add the Telerik Reporting Viewer:
+3. Add the Telerik Report Viewer:
 
 ```
 <telerik:ReportViewer

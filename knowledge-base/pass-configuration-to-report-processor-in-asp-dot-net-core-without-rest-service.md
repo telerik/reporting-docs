@@ -75,11 +75,24 @@ public void ConfigureServices(IServiceCollection services)
   
 For details on the above settings you may check [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](https://docs.telerik.com/reporting/knowledge-base/how-to-implement-telerik-reporting-in-asp-net-core-mvc).  
 
-3. The next step is to use the _ReportProcessor_ with its overload specific for .NET Standard that takes as an argument the configuration - in an MVC controller you may do it like the following :  
-  
+3. The next step is to use the _ReportProcessor_ with its overload specific for .NET Standard that takes as an argument the configuration - in an MVC controller you may inject it in the constructor of the controller:  
+
+```CSharp
+private readonly ConfigurationService configuration;
+
+public HomeController(ConfigurationService configuration)
+{
+    this.configuration = configuration;
+}
+```
+
+or alternatively, take it from the HttpContext:
 
 ```CSharp
 var configuration = this.HttpContext.RequestServices.GetService(typeof(ConfigurationService)) as ConfigurationService;
-ReportProcessor reportProcessor = new ReportProcessor(configuration.Configuration);
 ```
 
+and use it like:
+```CSharp
+ReportProcessor reportProcessor = new ReportProcessor(configuration.Configuration);
+```

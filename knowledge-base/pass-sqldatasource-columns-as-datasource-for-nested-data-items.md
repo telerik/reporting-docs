@@ -22,11 +22,8 @@ res_type: kb
 
 
 ## Description
-When you need to pass data from a [SqlDataSource](../sqldatasource) to its nested [data item](../data-items), you need to pass 
-all of the data. This is due to the fact that SqlDataSource can return only a single DataTable. Even if the query returns a DataSet, 
-only the first of the tables will be used - [Selecting Data with the SqlDataSource component](../sql-data-source-selecting-data). 
-In some cases, this may significantly deteriorate the performance.  
-The general approach for binding child DataSource to parent data is explained in the 
+When you need to pass data from a [SqlDataSource](../sqldatasource) bound to a data item to its nested [data item](../data-items), you need to pass all of the data. This is due to the fact that SqlDataSource can return only a single DataTable. Even if the query returns a DataSet, only the first of the tables will be used - [Selecting Data with the SqlDataSource component](../sql-data-source-selecting-data). In some cases, this may significantly deteriorate the performance.  
+The general approach for binding the DataSource of the child data item to parent data is explained in the 
 _Use DataObject as a datasource for nested data items (Table, List, Crosstab, Graph)_ section of 
 [How to use the ReportItem.DataObject property in expressions](../data-items-how-to-use-data-object) article. 
 
@@ -50,8 +47,7 @@ DataSource.Source	|	=ReportItem.DataObject.JSONOUT
 
 ## Design Time Support
 The above Binding will replace the design time _JsonDataSource_ -> _Source_ property of the JsonDataSource attached to the 
-child data item. Therefore, you may assign a dummy JSON data with the same schema (in the particular case the schema of the 
-_ProductSubcategory_ table) to the child DataSource for design purposes. This will allow you to use the 
+child data item. Therefore, you may assign a dummy JSON data with the same schema (in the particular case the schema of the _ProductSubcategory_ table) to the child data item's DataSource for design purposes. This will allow you to use the 
 [Fields](../expressions-global-objects#fields) Global Object to easily design the layout of the nested data item.
 
 ## Notes

@@ -1,5 +1,5 @@
 ---
-title: How to Use Part of the Columns from a Parent SqlDataSource as DataSource for Nested Data Items
+title: How to Use a Single SQL DataSet in Master-Detail scenario
 description: When a parent data item is bound to a SqlDataSource you may still use part of the returned columns as DataSource for child data items
 type: how-to
 page_title: How to Pass SqlDataSource Columns as DataSource for Nested Data Items
@@ -22,15 +22,15 @@ res_type: kb
 
 
 ## Description
-When you need to pass data from a [SqlDataSource](../sqldatasource) bound to a data item to its nested [data item](../data-items), you need to pass all of the data. This is due to the fact that SqlDataSource can return only a single DataTable. Even if the query returns a DataSet, only the first of the tables will be used - [Selecting Data with the SqlDataSource component](../sql-data-source-selecting-data). In some cases, this may significantly deteriorate the performance.  
+When you need to pass data from a [SqlDataSource](../sqldatasource) bound to a data item to its child [data item](../data-items), for example in the Master-Detail scenario, you need to pass all of the data. This is due to the fact that SqlDataSource can return only a single DataTable. Even if the query returns a DataSet, only the first of the tables will be used - [Selecting Data with the SqlDataSource component](../sql-data-source-selecting-data). In some cases, this may significantly deteriorate the performance.  
 The general approach for binding the DataSource of the child data item to parent data is explained in the 
 _Use DataObject as a datasource for nested data items (Table, List, Crosstab, Graph)_ section of 
 [How to use the ReportItem.DataObject property in expressions](../data-items-how-to-use-data-object) article. 
 
 ## Suggested Workarounds
 MS SQL Server 2016 introduced the [JSON functions](https://docs.microsoft.com/en-us/sql/relational-databases/json/json-data-sql-server?view=sql-server-ver15) 
-that enable you to combine classic relational columns with columns that contain documents formatted as JSON text. This way you may 
-compose a query that returns the main data item data as regular columns of a DataTable, and the data for the child data item converted 
+that enable you to combine classic relational columns with columns that contain data formatted as JSON text. This way you may 
+compose a query that returns the main data as regular columns of a DataTable, and the data for the child data item converted 
 into a single JSON field. Here is a sample query:
 ```SQL
 select c.ProductCategoryId, c.Name, 
@@ -38,8 +38,8 @@ select c.ProductCategoryId, c.Name,
 from Production.ProductCategory c
 ```
 The fields _ProductCategoryId_ and _Name_ can be used for the main data item. The field _JSONOUT_ can be used as a _Source_ for a 
-[JsonDataSource](../jsondatasource-component) providing data to the nested data item. This source that will become available only in 
-runtime can be [bound](../expressions-bindings) to the child data item DataSource property with the following Expression:
+[JsonDataSource](../jsondatasource-component) providing data to the nested data item. This source that will become available only at 
+runtime can be [bound](../expressions-bindings) to the DataSource property of the child data item with the following Expression:
 ```
 Property path		|	Expression
 DataSource.Source	|	=ReportItem.DataObject.JSONOUT

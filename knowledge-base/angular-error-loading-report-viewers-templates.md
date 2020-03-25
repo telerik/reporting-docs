@@ -1,8 +1,8 @@
 ---
-title: Error Loading the Report Viewer's Templates. (trvTemplateUrl = https://localhost:44332/api/reports/resources/templates/telerikReportViewerTemplate-html).
-description: After upgrading to 14.0.20.219 or later you may experience 'Error loading the report viewer's templates' in Angular Report Viewer
+title: Error Loading the Report Viewers Templates. (trvTemplateUrl = https://localhost:44332/api/reports/resources/templates/telerikReportViewerTemplate-html).
+description: After upgrading to 14.0.20.219 or later you may experience <Error loading the report viewers templates> in Angular Report Viewer
 type: troubleshooting
-page_title: 'Error loading the report viewer's templates' in Angular following upgrade
+page_title: Error loading the report viewers templates in Angular following upgrade
 slug: angular-error-loading-report-viewers-templates
 position: 
 tags: 

@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="EditInstanceReportSourceControl_Label" xml:space="preserve">
+    <value>Sélectionnez une instance d’objet De rapport :</value>
+  </data>
+  <data name="EditInstanceReportSourceControl_Warning" xml:space="preserve">
+    <value>Cette option n’est prise en charge que pour{0}WPF et Win Forms Report Viewers en mode Embedded.</value>
+  </data>
   <data name="DesignTab" xml:space="preserve">
     <value>Conception</value>
   </data>

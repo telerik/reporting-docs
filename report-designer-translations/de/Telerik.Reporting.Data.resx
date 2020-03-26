@@ -80,4 +80,485 @@
               <xsd:attribute name="alias" type="xsd:string" />
               <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
-  
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WebServiceDataSource_RequestTimeout_Description" xml:space="preserve">
+    <value>Die Zeitspanne in Sekunden, die gewartet werden soll, bevor die Anforderung überschritten wird.</value>
+  </data>
+  <data name="WebServiceDataSource_RequestTimeout_Name" xml:space="preserve">
+    <value>Anforderungs-Zeitüberschreitung</value>
+  </data>
+  <data name="WebServiceDataSource_Source_Description" xml:space="preserve">
+    <value>Die lokale Datenquelle.</value>
+  </data>
+  <data name="WebServiceDataSource_Source_Name" xml:space="preserve">
+    <value>Quelle</value>
+  </data>
+  <data name="WebServiceDataSource_IgnoreResponseErrors_Description" xml:space="preserve">
+    <value>Behandelt alle Antwortfehler so, als würden keine Daten vom Webdienst zurückgegeben.</value>
+  </data>
+  <data name="WebServiceDataSource_IgnoreResponseErrors_Name" xml:space="preserve">
+    <value>Ignorieren von Antwortfehlern</value>
+  </data>
+  <data name="JsonDataSource_Name" xml:space="preserve">
+    <value>JSON-Datenquelle</value>
+  </data>
+  <data name="JsonDataSource_Description" xml:space="preserve">
+    <value>Stellt JSON-Daten für Datenelemente dar.</value>
+  </data>
+  <data name="JsonDataSource_Source_Description" xml:space="preserve">
+    <value>Die lokale Datenquelle.</value>
+  </data>
+  <data name="JsonDataSource_Source_Name" xml:space="preserve">
+    <value>Quelle</value>
+  </data>
+  <data name="JsonDataSource_DataSelector_Description" xml:space="preserve">
+    <value>Der Datenauswahlausdruck, der zum Abfragen und Filtern der JSON-Daten verwendet wird.</value>
+  </data>
+  <data name="JsonDataSource_DataSelector_Name" xml:space="preserve">
+    <value>Datenauswahl</value>
+  </data>
+  <data name="WebServiceDataSource_DataSelector_Description" xml:space="preserve">
+    <value>Der Daten Wähler-Ausdruck, mit dem die vom Web-Dienst zurückgesandten Daten abgefragt und gefiltert werden.</value>
+  </data>
+  <data name="WebServiceDataSource_DataSelector_Name" xml:space="preserve">
+    <value>Datenauswahl</value>
+  </data>
+  <data name="WebServiceDataSource_Description" xml:space="preserve">
+    <value>Stellt Webdienst Daten für Datenelemente dar.</value>
+  </data>
+  <data name="WebServiceDataSource_Name" xml:space="preserve">
+    <value>Webdienst-Datenquelle</value>
+  </data>
+  <data name="WebServiceDataSource_Authentication_Description" xml:space="preserve">
+    <value>Stellt Authentifizierungsdaten dar.</value>
+  </data>
+  <data name="WebServiceDataSource_Authentication_Name" xml:space="preserve">
+    <value>Authentifizierung</value>
+  </data>
+  <data name="WebServiceDataSource_BasicAuthentication_Name" xml:space="preserve">
+    <value>Standardauthentifizierung</value>
+  </data>
+  <data name="WebServiceDataSource_Body_Description" xml:space="preserve">
+    <value>Der Hauptteil der Post-Methode.</value>
+  </data>
+  <data name="WebServiceDataSource_Body_Name" xml:space="preserve">
+    <value>Körper</value>
+  </data>
+  <data name="WebServiceDataSource_DataEncoding_Description" xml:space="preserve">
+    <value>Datenkodierung. Der Standardwert ist UTF-8.</value>
+  </data>
+  <data name="WebServiceDataSource_DataEncoding_Name" xml:space="preserve">
+    <value>Datenkodierung</value>
+  </data>
+  <data name="WebServiceDataSource_DataFormat_Description" xml:space="preserve">
+    <value>Das erwartete Datenformat der Antwort.</value>
+  </data>
+  <data name="WebServiceDataSource_DataFormat_Name" xml:space="preserve">
+    <value>Daten Format</value>
+  </data>
+  <data name="WebServiceDataSource_Method_Description" xml:space="preserve">
+    <value>HTTP-Request-Methode.</value>
+  </data>
+  <data name="WebServiceDataSource_Method_Name" xml:space="preserve">
+    <value>Methode</value>
+  </data>
+  <data name="WebServiceDataSource_ServiceUrl_Description" xml:space="preserve">
+    <value>Der URL, an den die Anforderung gesendet wird.</value>
+  </data>
+  <data name="WebServiceDataSource_ServiceUrl_Name" xml:space="preserve">
+    <value>Dienst-URL</value>
+  </data>
+  <data name="WebServiceDataSource_TwoStepAuthentication_Name" xml:space="preserve">
+    <value>2-stufige Authentifizierung</value>
+  </data>
+  <data name="CalculatedField_Category" xml:space="preserve">
+    <value>Berechnetes Feld</value>
+  </data>
+  <data name="CalculatedField_DataType_Description" xml:space="preserve">
+    <value>Ruft den Datentyp des berechneten Felds ab oder legt diesen fest.</value>
+  </data>
+  <data name="CalculatedField_Expression_Description" xml:space="preserve">
+    <value>Ruft den Ausdruck des berechneten Felds ab oder legt diesen fest.</value>
+  </data>
+  <data name="CalculatedField_Name_Description" xml:space="preserve">
+    <value>Ruft den Namen des berechneten Felds ab oder legt diesen fest.</value>
+  </data>
+  <data name="CsvDataSource_Columns_Description" xml:space="preserve">
+    <value>Speichert die Definition für jede Spalte der CSV-Tabellendaten</value>
+  </data>
+  <data name="CsvDataSource_CommentToken_Description" xml:space="preserve">
+    <value>Das Symbol, das für Kommentare im CSV-Dokument verwendet wird.</value>
+  </data>
+  <data name="CsvDataSource_ConsecutiveFieldSeparatorsAsOne_Description" xml:space="preserve">
+    <value>Behandeln Sie aufeinanderfolgende Feldtrennzeichen als eine im CSV-Dokument.</value>
+  </data>
+  <data name="CsvDataSource_ConsecutiveRecordSeparatorsAsOne_Description" xml:space="preserve">
+    <value>Behandeln Sie aufeinanderfolgende Datensatztrennzeichen als eine im CSV-Dokument.</value>
+  </data>
+  <data name="CsvDataSource_DateTimeFormat_Description" xml:space="preserve">
+    <value>Das beim Analysieren von Datumsangaben verwendete Format.</value>
+  </data>
+  <data name="CsvDataSource_DecimalSeparator_Description" xml:space="preserve">
+    <value>Das beim Analysieren von Zahlen verwendete Dezimaltrennzeichen.</value>
+  </data>
+  <data name="CsvDataSource_Description" xml:space="preserve">
+    <value>Stellt ein CSV-Dokument für Datenelemente dar.</value>
+  </data>
+  <data name="CsvDataSource_EscapeFormat_Description" xml:space="preserve">
+    <value>Das Escape-Format des CSV-Dokuments.</value>
+  </data>
+  <data name="CsvDataSource_FieldSeparators_Description" xml:space="preserve">
+    <value>Der Zeichensatz, der als Feldtrennzeichen (Begrenzer) verwendet wird</value>
+  </data>
+  <data name="CsvDataSource_HasHeaders_Description" xml:space="preserve">
+    <value>Die Einstellung, die angibt, ob das CSV-Dokument über eine Kopfzeile verfügt.</value>
+  </data>
+  <data name="CsvDataSource_Quote_Description" xml:space="preserve">
+    <value>Das zum entkommen verwendete Symbol.</value>
+  </data>
+  <data name="CsvDataSource_RecordSeparators_Description" xml:space="preserve">
+    <value>Der Satz von Zeichen, die als Datensatztrennzeichen verwendet werden.</value>
+  </data>
+  <data name="CsvDataSource_Source_Description" xml:space="preserve">
+    <value>Die Quelle des CSV-Dokuments.</value>
+  </data>
+  <data name="CsvDataSource_ThousandSeparator_Description" xml:space="preserve">
+    <value>Das tausend Trennzeichen, das beim Analysieren von Zahlen verwendet wird.</value>
+  </data>
+  <data name="CubeDataSource_ConnectionString_Description" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge, mit der eine Verbindung mit der OLAP-Datenbank hergestellt wird.</value>
+  </data>
+  <data name="CubeDataSource_Description" xml:space="preserve">
+    <value>Stellt einen OLAP-Cube für Datenelemente dar.</value>
+  </data>
+  <data name="CubeDataSource_Mappings_Description" xml:space="preserve">
+    <value>Auflistung von Zuordnungen für die Datenquellen Feldnamen.</value>
+  </data>
+  <data name="CubeDataSource_Parameters_Description" xml:space="preserve">
+    <value>Auflistung von Parametern, die an die MDX-SELECT-Anweisung übergeben werden.</value>
+  </data>
+  <data name="CubeDataSource_SelectCommand_Description" xml:space="preserve">
+    <value>Die MDX-SELECT-Anweisung, die für den OLAP-Cube ausgeführt werden soll.</value>
+  </data>
+  <data name="DataCategory" xml:space="preserve">
+    <value>Daten</value>
+  </data>
+  <data name="DataColumn_Name_Description" xml:space="preserve">
+    <value>Ruft den Namen der Felddefinition ab oder legt diesen fest. Wird verwendet, um in Ausdrücken auf das Feld zuzugreifen.</value>
+  </data>
+  <data name="DataColumn_Type_Description" xml:space="preserve">
+    <value>Ruft den Typ des Felds ab oder legt diesen fest.</value>
+  </data>
+  <data name="DataFieldMapping_Alias_Description" xml:space="preserve">
+    <value>Der Alias des Felds aus der Zuordnung.</value>
+  </data>
+  <data name="DataFieldMapping_Name_Description" xml:space="preserve">
+    <value>Der Name des Felds aus der Zuordnung.</value>
+  </data>
+  <data name="DataSourceParameter_Name_Description" xml:space="preserve">
+    <value>Der Name des Parameters.</value>
+  </data>
+  <data name="DataSourceParameter_Value_Description" xml:space="preserve">
+    <value>Der Wert des Parameters.</value>
+  </data>
+  <data name="DataSources_Category" xml:space="preserve">
+    <value>Datenquellen</value>
+  </data>
+  <data name="DataSource_CalculatedFields_Description" xml:space="preserve">
+    <value>Ruft die Auflistung berechneter Felder ab.</value>
+  </data>
+  <data name="EntityDataSource_ConnectionString_Description" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge, mit der eine Verbindung mit Daten hergestellt wird.</value>
+  </data>
+  <data name="EntityDataSource_ContextMember_Description" xml:space="preserve">
+    <value>Das Kontextelement, mit dem eine Verbindung mit Daten hergestellt wird.</value>
+  </data>
+  <data name="EntityDataSource_Context_Description" xml:space="preserve">
+    <value>Der Kontext, der zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="EntityDataSource_Description" xml:space="preserve">
+    <value>Stellt ein Entitätsdatenmodell für Datenelemente dar.</value>
+  </data>
+  <data name="ObjectDataSourceBase_Parameters_Description" xml:space="preserve">
+    <value>Ruft eine Auflistung mit den datenquellenparametern ab.</value>
+  </data>
+  <data name="ObjectDataSourceParameter_DataType_Description" xml:space="preserve">
+    <value>Der Datentyp des Parameters.</value>
+  </data>
+  <data name="ObjectDataSource_DataMember_Description" xml:space="preserve">
+    <value>Das Datenquellenelement, das zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="ObjectDataSource_DataSource_Description" xml:space="preserve">
+    <value>Das Datenquellenobjekt, das zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="ObjectDataSource_Description" xml:space="preserve">
+    <value>Stellt ein Geschäftsobjekt für Datenelemente dar.</value>
+  </data>
+  <data name="OpenAccessDataSource_ConnectionString_Description" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge, mit der eine Verbindung mit Daten hergestellt wird.</value>
+  </data>
+  <data name="OpenAccessDataSource_Description" xml:space="preserve">
+    <value>Stellt ein Open Access-Datenmodell für Datenelemente dar.</value>
+  </data>
+  <data name="OpenAccessDataSource_ObjectContextMember_Description" xml:space="preserve">
+    <value>Der Objektkontext Member, der zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="OpenAccessDataSource_ObjectContext_Description" xml:space="preserve">
+    <value>Der Objektkontext, der zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="OpenAccessDataSource_ProviderName_Description" xml:space="preserve">
+    <value>Der Name des verwalteten Anbieters, der zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="OpenClientConnection_SessionModel_Description" xml:space="preserve">
+    <value>Sitzungsmodell, das vom Betriebsmodus des App-Servers unterstützt wird.</value>
+  </data>
+  <data name="OpenClientDataSource_Connection_Description" xml:space="preserve">
+    <value>Das Datenquellenelement, das zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="OpenClientDataSource_DataSourceType_Description" xml:space="preserve">
+    <value>Das Datenquellenobjekt, das zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="OpenClientDataSource_DataTable_Description" xml:space="preserve">
+    <value>Der Name der Datentabelle, die aus dem zurückgegebenen Dataset verwendet werden soll. Nur anwendbar, wenn die Prozedur Datensätze abruft.</value>
+  </data>
+  <data name="OpenClientDataSource_Description" xml:space="preserve">
+    <value>Stellt eine OPenEdge OpenClient.NET-Datenabruf Komponente dar.</value>
+  </data>
+  <data name="OpenClientDataSource_Procedure_Description" xml:space="preserve">
+    <value>Die Prozedur, die zum Abrufen der Daten verwendet wird.</value>
+  </data>
+  <data name="SqlDataSourceParameter_DbType_Description" xml:space="preserve">
+    <value>Der Datentyp des Parameters.</value>
+  </data>
+  <data name="SqlDataSource_CommandTimeout_Description" xml:space="preserve">
+    <value>Die Wartezeit in Sekunden, bevor der Versuch zum Abrufen von Daten beendet wird.</value>
+  </data>
+  <data name="SqlDataSource_ConnectionString_Description" xml:space="preserve">
+    <value>Die Verbindungszeichenfolge, mit der eine Verbindung mit Daten hergestellt wird.</value>
+  </data>
+  <data name="SqlDataSource_Description" xml:space="preserve">
+    <value>Stellt eine SQL-Datenbank für Datenelemente dar.</value>
+  </data>
+  <data name="SqlDataSource_Parameters_Description" xml:space="preserve">
+    <value>-Auflistung mit datenquellenparametern.</value>
+  </data>
+  <data name="SqlDataSource_ProviderName_Description" xml:space="preserve">
+    <value>Der Name des verwalteten Anbieters, der zum Herstellen einer Verbindung mit Daten verwendet wird.</value>
+  </data>
+  <data name="SqlDataSource_SelectCommandType_Description" xml:space="preserve">
+    <value>Gibt an, wie der SELECT-Befehl interpretiert werden soll.</value>
+  </data>
+  <data name="SqlDataSource_SelectCommand_Description" xml:space="preserve">
+    <value>Die SQL-SELECT-Anweisung oder die gespeicherte Prozedur, die ausgeführt werden soll.</value>
+  </data>
+  <data name="CalculatedField_DataType_Name" xml:space="preserve">
+    <value>Datentyp</value>
+  </data>
+  <data name="CalculatedField_Expression_Name" xml:space="preserve">
+    <value>Ausdruck</value>
+  </data>
+  <data name="CalculatedField_Name_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CsvDataSource_Columns_Name" xml:space="preserve">
+    <value>Spalten</value>
+  </data>
+  <data name="CsvDataSource_CommentToken_Name" xml:space="preserve">
+    <value>Kommentar Token</value>
+  </data>
+  <data name="CsvDataSource_ConsecutiveFieldSeparatorsAsOne_Name" xml:space="preserve">
+    <value>Aufeinanderfolgende Feldtrennzeichen als eine</value>
+  </data>
+  <data name="CsvDataSource_ConsecutiveRecordSeparatorsAsOne_Name" xml:space="preserve">
+    <value>Aufeinander folgende Datensatztrennzeichen als eine</value>
+  </data>
+  <data name="CsvDataSource_DateTimeFormat_Name" xml:space="preserve">
+    <value>Datum Zeit Format</value>
+  </data>
+  <data name="CsvDataSource_DecimalSeparator_Name" xml:space="preserve">
+    <value>Dezimaltrennzeichen</value>
+  </data>
+  <data name="CsvDataSource_EscapeFormat_Name" xml:space="preserve">
+    <value>Escape-Format</value>
+  </data>
+  <data name="CsvDataSource_FieldSeparators_Name" xml:space="preserve">
+    <value>Feldtrennzeichen</value>
+  </data>
+  <data name="CsvDataSource_HasHeaders_Name" xml:space="preserve">
+    <value>Hat Kopfzeilen</value>
+  </data>
+  <data name="CsvDataSource_Name" xml:space="preserve">
+    <value>CSV-Datenquelle</value>
+  </data>
+  <data name="CsvDataSource_Quote_Name" xml:space="preserve">
+    <value>Angebot</value>
+  </data>
+  <data name="CsvDataSource_RecordSeparators_Name" xml:space="preserve">
+    <value>Datensatztrennzeichen</value>
+  </data>
+  <data name="CsvDataSource_Source_Name" xml:space="preserve">
+    <value>Quelle</value>
+  </data>
+  <data name="CsvDataSource_ThousandSeparator_Name" xml:space="preserve">
+    <value>Tausend Separator</value>
+  </data>
+  <data name="CubeDataSource_ConnectionString_Name" xml:space="preserve">
+    <value>Verbindungszeichenfolge</value>
+  </data>
+  <data name="CubeDataSource_Mappings_Name" xml:space="preserve">
+    <value>Zuordnungen</value>
+  </data>
+  <data name="CubeDataSource_Name" xml:space="preserve">
+    <value>Cube-Datenquelle</value>
+  </data>
+  <data name="CubeDataSource_Parameters_Name" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="CubeDataSource_SelectCommand_Name" xml:space="preserve">
+    <value>Select-Befehl</value>
+  </data>
+  <data name="DataColumn_Name_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DataColumn_Type_Name" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="DataFieldMapping_Alias_Name" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="DataFieldMapping_Name_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DataSourceParameter_Name_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DataSourceParameter_Value_Name" xml:space="preserve">
+    <value>Wert</value>
+  </data>
+  <data name="DataSource_CalculatedFields_Name" xml:space="preserve">
+    <value>Berechnete Felder</value>
+  </data>
+  <data name="EntityDataSource_ConnectionString_Name" xml:space="preserve">
+    <value>Verbindungszeichenfolge</value>
+  </data>
+  <data name="EntityDataSource_ContextMember_Name" xml:space="preserve">
+    <value>Context-Member</value>
+  </data>
+  <data name="EntityDataSource_Context_Name" xml:space="preserve">
+    <value>Kontext</value>
+  </data>
+  <data name="EntityDataSource_Name" xml:space="preserve">
+    <value>Entitätsdaten Quelle</value>
+  </data>
+  <data name="ObjectDataSourceBase_Parameters_Name" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="ObjectDataSourceParameter_DataType_Name" xml:space="preserve">
+    <value>Datentyp</value>
+  </data>
+  <data name="ObjectDataSource_DataMember_Name" xml:space="preserve">
+    <value>Datenelement</value>
+  </data>
+  <data name="ObjectDataSource_DataSource_Name" xml:space="preserve">
+    <value>Datenquelle</value>
+  </data>
+  <data name="ObjectDataSource_Name" xml:space="preserve">
+    <value>Objektdatenquelle</value>
+  </data>
+  <data name="OpenAccessDataSource_ConnectionString_Name" xml:space="preserve">
+    <value>Verbindungszeichenfolge</value>
+  </data>
+  <data name="OpenAccessDataSource_Name" xml:space="preserve">
+    <value>Open Access-Datenquelle</value>
+  </data>
+  <data name="OpenAccessDataSource_ObjectContextMember_Name" xml:space="preserve">
+    <value>Objektkontext Element</value>
+  </data>
+  <data name="OpenAccessDataSource_ObjectContext_Name" xml:space="preserve">
+    <value>Objektkontext</value>
+  </data>
+  <data name="OpenAccessDataSource_ProviderName_Name" xml:space="preserve">
+    <value>Anbieter Name</value>
+  </data>
+  <data name="OpenClientConnection_SessionModel_Name" xml:space="preserve">
+    <value>Sitzungsmodell</value>
+  </data>
+  <data name="OpenClientDataSource_Connection_Name" xml:space="preserve">
+    <value>Verbindung</value>
+  </data>
+  <data name="OpenClientDataSource_DataSourceType_Name" xml:space="preserve">
+    <value>Datenquellentyp</value>
+  </data>
+  <data name="OpenClientDataSource_DataTable_Name" xml:space="preserve">
+    <value>Datentabelle</value>
+  </data>
+  <data name="OpenClientDataSource_Name" xml:space="preserve">
+    <value>Client Datenquelle öffnen</value>
+  </data>
+  <data name="OpenClientDataSource_Procedure_Name" xml:space="preserve">
+    <value>Verfahren</value>
+  </data>
+  <data name="SqlDataSourceParameter_DbType_Name" xml:space="preserve">
+    <value>DB-Typ</value>
+  </data>
+  <data name="SqlDataSource_CommandTimeout_Name" xml:space="preserve">
+    <value>Befehls Timeout</value>
+  </data>
+  <data name="SqlDataSource_ConnectionString_Name" xml:space="preserve">
+    <value>Verbindungszeichenfolge</value>
+  </data>
+  <data name="SqlDataSource_Name" xml:space="preserve">
+    <value>SQL-Datenquelle</value>
+  </data>
+  <data name="SqlDataSource_Parameters_Name" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="SqlDataSource_ProviderName_Name" xml:space="preserve">
+    <value>Anbieter Name</value>
+  </data>
+  <data name="SqlDataSource_SelectCommandType_Name" xml:space="preserve">
+    <value>Befehlstyp auswählen</value>
+  </data>
+  <data name="SqlDataSource_SelectCommand_Name" xml:space="preserve">
+    <value>Select-Befehl</value>
+  </data>
+  <data name="NoDataSource" xml:space="preserve">
+    <value>(keine Datenquelle)</value>
+  </data>
+</root>

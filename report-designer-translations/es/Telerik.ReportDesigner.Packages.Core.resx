@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PropertyBrowser_Font_Name" xml:space="preserve">
+    <value>Segoe UI</value>
+  </data>
   <data name="AlignTextBottomText" xml:space="preserve">
     <value>Alinear fondo de texto</value>
   </data>
@@ -513,9 +516,6 @@
   </data>
   <data name="PropertyBrowserToolWindow_Title" xml:space="preserve">
     <value>Propiedades</value>
-  </data>
-  <data name="PropertyBrowser_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value>Arial</value>
   </data>
   <data name="PropertyBrowser_Reset" xml:space="preserve">
     <value>Resetear</value>

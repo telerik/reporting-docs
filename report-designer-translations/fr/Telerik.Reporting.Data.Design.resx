@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="WebServiceDataSource_PreviewDataSourcePage_DownloadLabel" xml:space="preserve">
+    <value>Cliquez sur 'Télécharger' pour prévisualiser les résultats de la source de données...</value>
+  </data>
+  <data name="JsonDataSource_PreviewPage_Execute" xml:space="preserve">
+    <value>Aperçu</value>
+  </data>
+  <data name="JsonDataSource_PreviewDataSourcePage_PreviewLabel" xml:space="preserve">
+    <value>Cliquez sur 'Aperçu' pour prévisualiser les résultats de la source de données...</value>
+  </data>
   <data name="CsvDataSource_ChooseDataSourcePage_UseFile" xml:space="preserve">
     <value>Utiliser un fichier CSV externe</value>
   </data>

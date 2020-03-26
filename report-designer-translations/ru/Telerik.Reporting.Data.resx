@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="WebServiceDataSource_RequestTimeout_Description" xml:space="preserve">
+    <value>Промежуток времени в секундах, чтобы ждать, прежде чем запрос тайм-аут.</value>
+  </data>
+  <data name="WebServiceDataSource_RequestTimeout_Name" xml:space="preserve">
+    <value>Время ожидания запроса</value>
+  </data>
   <data name="CalculatedField_Category" xml:space="preserve">
     <value>Вычисляно поле</value>
   </data>

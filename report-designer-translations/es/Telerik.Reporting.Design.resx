@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="EditInstanceReportSourceControl_Label" xml:space="preserve">
+    <value>Seleccione una instancia del objeto Report:</value>
+  </data>
+  <data name="EditInstanceReportSourceControl_Warning" xml:space="preserve">
+    <value>Esta opción solo se admite paravisores de informes {0}WPF y Win Forms en modo incrustado.</value>
+  </data>
   <data name="DesignTab" xml:space="preserve">
     <value>Diseño</value>
   </data>

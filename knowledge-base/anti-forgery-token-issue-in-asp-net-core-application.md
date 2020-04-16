@@ -30,10 +30,16 @@ res_type: kb
 
 
 ## Description
-When adding the following line of code in the *Startup.cs* file, the report won't load and an error would be thrown.
+When adding any of the following lines of code in the *Startup.cs* file, the report won't load and an error would be thrown.
 
+```CSharp
+services.AddMvc(options => 
+	options.Filters.Add(new Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute()));
 ```
-services.AddMvc(options => { options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); });
+or
+```CSharp
+services.AddControllersWithViews(options => 
+	options.Filters.Add(new Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute()));
 ```
 
 ## Steps to Reproduce
@@ -47,7 +53,6 @@ Implement the anti-forgery token. For example, in ASP.NET Core MVC application, 
     }
 }
 ```
-
 then add it to each request header:
 ```JavaScript
 <script type="text/javascript">
@@ -69,14 +74,35 @@ Failed to load resource: the server responded with a status of 400 (Bad Request)
 Uncaught (in promise) Invalid clientID
 ```
 
-## Solution
-Replace this configuration:
+## Solutions
+1. The 'AutoValidateAntiforgeryToken' is recommended by Microsoft for non-API scenarios. In the approach that requires manually adding anti-forgery attributes, if the developer forgets the attribute there will be no error and the Controller/Action will not be protected. For that reason, the automatic approach is generally less error-prone and easier to maintain, especially if there are large number of Controllers and Actions that need this protection. The 'AutoValidateAntiforgeryToken' can be used with the ReportsController, provided that you do one of the following things:
+* Add the [IgnoreAntiforgeryToken](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to the ReportsController, for example:
+```CSharp
+[Route("api/reports")]
+[IgnoreAntiforgeryToken]
+public class ReportsController : ReportsControllerBase
+{
+	...
+}
 ```
+* Override [all ReportsController public methods](../methods-t-telerik-reporting-services-webapi-reportscontrollerbase) and add the [IgnoreAntiforgeryToken](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to them. You may skip the 'GET' HTTP methods.
+```CSharp
+[IgnoreAntiforgeryToken]
+public override IActionResult RegisterClient()
+{
+    return base.RegisterClient();
+}
+```
+
+2. Remove the auto anti-forgery configuration and decorate each controller or action that has to be protected against anti-forgery with
+the attribute [AutoValidateAntiforgeryToken](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.autovalidateantiforgerytokenattribute?view=aspnetcore-3.1) or [ValidateAntiforgeryToken](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.validateantiforgerytokenattribute?view=aspnetcore-3.1).
+For the first step, you need to replace the following configuration, or its equivallent:
+```CSharp
 services.AddMvc(options => { options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); });
 ```
 
 with this:
-```
+```CSharp
  services.AddMvc();
  services.AddAntiforgery(options => options.HeaderName = "__RequestVerificationToken");
 ```

@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-When setting up a Web Report Designer in an application it is very useful to be able to test whether the necessasry Web Designenr Service 
+When setting up a Web Report Designer in an application it is very useful to be able to test whether the necessasry Web Designer Service 
 configured by default in the __ReportDesignerController__ is working. Just as you can perform the 
 [Get request to 'api/reports/formats'](../telerik-reporting-rest-general-api-get-document-formats) for the Telerik Reporting REST 
 Service.

@@ -66,7 +66,7 @@ namespace NameSpace
             , Telerik.Reporting.Processing.EvaluateHeaderFooterExpressions evalHeaderFooterCallback)
         {
             if (ShouldCountOnly(renderingContext))
-            { // I do not report page count since it does not make any sense.
+            { // Our custom rendering extension format (XML) does not have pages, so we do not need to count pages.
                 return true;
             }
 
@@ -105,7 +105,7 @@ Consider the following points:
 it will fail without this code:
 ```C#
 if (ShouldCountOnly(renderingContext))
-{ // I do not report page count since it does not make any sense.
+{ // Our custom rendering extension format (XML) does not have pages, so we do not need to count pages.
     return true;
 }
 ```

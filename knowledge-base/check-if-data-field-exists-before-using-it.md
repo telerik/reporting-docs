@@ -22,8 +22,8 @@ res_type: kb
 
 
 ## Description
-In some scenarios, part of the fields used to design a report may not be available runtime. This will cause an exception in 
-the report stating that the corresponding field is not defined in the current scope.
+In some scenarios, part of the fields used to design a report may not be available at runtime. This will cause an exception in 
+the report stating that the corresponding field is not defined in the current scope. The error message will be displayed in a red rectangle replacing the corresponding report item. The error rectangle cannot be customized and its size cannot be controlled. This may cause additional issues in report rendering as extra horizontal page breaks that may lead to report documents with more than the expected number of pages.
 
 ## Solution
 Create a [User Function](../expressions-user-functions) that returns the data field when it exists, and a default value when 

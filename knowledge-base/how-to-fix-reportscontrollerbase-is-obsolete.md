@@ -1,6 +1,6 @@
 ---
 title: How to fix: ReportsControllerBase is obsolete
-description: Such error can appear in .NET Core application after upgrade
+description: Such warning can appear in .NET Core application after upgrade
 type: troubleshooting
 page_title: How to Fix: ReportsControllerBase is Obsolete
 slug: how-to-fix-reportscontrollerbase-is-obsolete
@@ -26,7 +26,8 @@ res_type: kb
 
 
 ## Description
-In [R1 2020](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2020-14-0-20-115) we made some improvements and now we inherit the [ReportsControllerBase](../t-telerik-reporting-services-webapi-reportscontrollerbase) type and inject the configuration settings in the constructor. 
+In [R1 2020](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2020-14-0-20-115) we made some improvements and now you can use Dependency Injection and pass the configuration settings in the constructor of the ReportsController.
+
 
 ## Error Message
  ReportsControllerBase is obsolete
@@ -45,4 +46,4 @@ public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
 
 2. Set this configuration as described in step 4 of [Setup the Startup.cs file for the Reports service](../telerik-reporting-rest-service-aspnetcore-mvc-core3#setup-the-startup-cs-file-for-the-reports-service).
 
-You can also check our .NET Core demo project which can be found at C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Examples\CSharp\Asp.NetCoreDemo
+You can also check our .NET Core demo project which can be found in C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Examples\CSharp\Asp.NetCoreDemo

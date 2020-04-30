@@ -22,6 +22,8 @@ res_type: kb
 
 
 ## Solution
-After the license is purchased you need to download the Telerik Reporting DEV installer from your [Telerik account -> Downloads](https://www.telerik.com/account/my-downloads). 
+After the license is purchased you need to download the Telerik Reporting DEV installer from your [Telerik account -> Downloads](https://www.telerik.com/account/product-download?product=REPORTING). 
 You can refer to this help article - [How to download Telerik Reporting installer](../installation-system-requirements#how-to-download-telerik-reporting-installer). 
 The installer will replace the trial version. Choose **Purchase** from **Licence** dropdown menu and you will be able to download the .msi file.
+
+You may also check [Upgrading Trial to Purchase](../installation-trial-license-limitation#upgrading-trial-to-purchase) section.

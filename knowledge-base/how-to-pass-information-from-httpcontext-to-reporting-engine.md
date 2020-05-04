@@ -14,7 +14,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product Version</td>
-		<td>from 12.1 18.620</td>
+		<td>12.1 18.620 - 13.0.19.222</td>
 	</tr>
 	<tr>
 		<td>Product</td>
@@ -26,6 +26,8 @@ res_type: kb
 	</tr>
 </table>
 
+## Important Note
+From [R1 2019 SP1 (13.0.19.222)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-sp1-13-0-19-222) the HttpContext may be accessed directly in the Custom Report Resolver.
 
 ## Description
 Starting with [R1 2018 SP3 12.0.18.416](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r1-2018-sp3-12-0-18-416) version, _System.Web.HttpContext.Current_ is no longer available in the report rendering thread.  

@@ -31,9 +31,15 @@ When installing Telerik Reporting, the Standalone report designer also includes 
 
 ## Solution
 
-Below is a sample of the user configuration and the file is located at `%LocalAppData%\Progress_Software_Corpora\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj\[TELERIK_REPORTING_VERSION]\user.config` 
+Below is a sample of the user configuration and the file location.
 
-````xml
+### File Location
+
+`%LocalAppData%\Progress_Software_Corpora\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj\[TELERIK_REPORTING_VERSION]\user.config`
+
+### Sample Configuration
+
+````XML
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
     <configSections>
@@ -166,6 +172,7 @@ Below is a sample of the user configuration and the file is located at `%LocalAp
     </userSettings>
 </configuration>
 ````
+
 
 ## Notes
 

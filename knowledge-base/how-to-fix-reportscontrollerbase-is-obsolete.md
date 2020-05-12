@@ -2,7 +2,7 @@
 title: How to fix ReportsControllerBase is obsolete warning
 description: Such warning can appear in .NET Core application after upgrade
 type: troubleshooting
-page_title: How to Fix: ReportsControllerBase is Obsolete
+page_title: How to Fix ReportsControllerBase is Obsolete Warning
 slug: how-to-fix-reportscontrollerbase-is-obsolete
 position: 
 tags: ASP.NET Core, HTML5Viewer

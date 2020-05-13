@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Table_FreezeColumnHeaders_Description" xml:space="preserve">
+    <value>Указывает, должны ли заголовки групп столбцов оставаться видимыми при вертикальном прокрутке данных этой таблицы.</value>
+  </data>
+  <data name="Table_FreezeRowHeaders_Description" xml:space="preserve">
+    <value>Указывает, должны ли заголовки групп строк оставаться видимыми при прокрутке горизонтально через данные этой таблицы.</value>
+  </data>
+  <data name="Table_FreezeColumnHeaders_Name" xml:space="preserve">
+    <value>Замораживание заголовки столбцов</value>
+  </data>
+  <data name="Table_FreezeRowHeaders_Name" xml:space="preserve">
+    <value>Заморозить строки заголовки</value>
+  </data>
   <data name="AppearanceCategory" xml:space="preserve">
     <value>Внешний вид</value>
   </data>

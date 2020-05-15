@@ -86,13 +86,14 @@ To run the example:
 ```
 
 ##Know issues
-Several thing that you should keep in mind when using Telerik Web Report Designer in your projects.
+Several things that you should keep in mind when using Telerik Web Report Designer in your projects.
 
-1.Note that the [Telerik Web Report Designer](https://docs.telerik.com/reporting/web-report-designer#prerequisites) does not support theming. 
+1.[Telerik Web Report Designer](https://docs.telerik.com/reporting/web-report-designer#prerequisites) does not support theming. 
 The Web Designer is built to use a customize version of Kendo SASS Default theme. The Designer loads all styles that are required by itself.
-There is no additional option that could prevent it.
+There is no additional option that could prevent it. The required styles are added to the body header of the document. If the application
+uses other Kendo theme, there will be conflicts between the two themes.
 ```
-2. Because the Telerik Web Report Designer loads all required styles when the widget is loaded and in the latest version there is no check,
+2. Because the Telerik Web Report Designer loads all required styles, when the designer widget is created, and in the latest version there is no check,
 if the resources are already loaded, you will need to clean up the duplicated resources. See designer.component.ts in the demo project for more details. 
 ```
 

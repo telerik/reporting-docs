@@ -24,7 +24,7 @@ res_type: kb
 ## Description
 Utilizing reporting solution in UWP both with a WebView with integrated fully functional [Telerik HTML5 Report Viewer](https://docs.telerik.com/reporting/html5-report-viewer) and creating report document by invoking [Telerik Reporting REST Service](https://docs.telerik.com/reporting/telerik-reporting-rest-conception) endpoints.
 ## Solution
-Download the example projects from this [link](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/Telerik.Reporting.UWP.Examples.zip). The projects require the latest official release R2 2020.
+Download the example projects from this [link](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/Telerik.Reporting.UWP.Examples.zip) or review the [GitHub report](https://github.com/telerik/reporting-samples/tree/master/Telerik.Reporting.UWP.Examples). The projects require the latest official Telerik Reporting R2 2020.
 
 The solution contains 5 projects:
 ⋅⋅* Unordered
@@ -39,7 +39,8 @@ The solution contains 5 projects:
 5. ServiceClient - a simple client for the Telerik Reporting REST service to export a PDF document on a button click.```
 
 ## See Also
-[Example solution](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/Telerik.Reporting.UWP.Examples.zip)
+[Example solution GitHub report](https://github.com/telerik/reporting-samples/tree/master/Telerik.Reporting.UWP.Examples)
+[Example solution archive](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/Telerik.Reporting.UWP.Examples.zip)
 [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.webview?view=winrt-19041)
 [WebView.AddWebAllowedObject(String, Object) Method.](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject?view=winrt-19041#Windows_UI_Xaml_Controls_WebView_AddWebAllowedObject_System_String_System_Object_)
 [Telerik Reporting REST Service](https://docs.telerik.com/reporting/telerik-reporting-rest-conception)

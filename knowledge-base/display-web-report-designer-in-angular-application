@@ -89,7 +89,7 @@ To run the example:
 Several things that you should keep in mind when using Telerik Web Report Designer in your projects.
 
 1.[Telerik Web Report Designer](https://docs.telerik.com/reporting/web-report-designer#prerequisites) does not support theming. 
-The Web Designer is built to use a customize version of Kendo SASS Default theme. The Designer loads all styles that are required by itself.
+The Web Designer is built to use a customized version of Kendo SASS Default theme. The Designer loads all styles that are required by itself.
 There is no additional option that could prevent it. The required styles are added to the body header of the document. If the application
 uses other Kendo theme, there will be conflicts between the two themes.
 ```
@@ -98,7 +98,7 @@ if the resources are already loaded, you will need to clean up the duplicated re
 ```
 
 3. Telerik Web Report Designer could not be integrated in angular application together with Angular Telerik Report Viewer. 
-That`s way this article shows how to use the Telerik Web Report Designer in angular application with jQuery-based HTML5 Telerik Report Viewer.
+That`s why this article shows how to use the Telerik Web Report Designer in angular application with jQuery-based HTML5 Telerik Report Viewer.
 ```
 
 ## See Also

@@ -53,7 +53,7 @@ in the main html page of the application. In the demo project linked below, this
   </head>
 ```
 
-2. Declare jQuery in the component were the Telerik Web Report Designer will be initialized
+2. Declare jQuery in the component where the Telerik Web Report Designer will be initialized
 ``` TypeScript
 declare var $: any;
 ```
@@ -85,7 +85,7 @@ To run the example:
 - npm start
 ```
 
-##Know issues
+##Known issues
 Several things that you should keep in mind when using Telerik Web Report Designer in your projects.
 
 1.[Telerik Web Report Designer](https://docs.telerik.com/reporting/web-report-designer#prerequisites) does not support theming. 

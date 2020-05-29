@@ -43,19 +43,6 @@ class HideOption {
     }
 }
 
-import * as $ from 'jquery';
-
-class HideOption {
-
-    reportName: string;
-    formatsToHide = [];
-
-    constructor(reportName: string, formatsToHide: any) {
-        this.reportName = reportName;
-        this.formatsToHide = formatsToHide;
-    }
-}
-
 export class ExportOptionsHider {
 
     public static instance : ExportOptionsHider;

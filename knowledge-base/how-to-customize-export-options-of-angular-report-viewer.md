@@ -57,8 +57,8 @@ export class ExportOptionsHider {
     private sideMenuBound = false;
     private reportSource = "";
     private hideOptions = [
-        new HideOption("Telerik.Reporting.Examples.CSharp.Dashboard", ["XLSX"]),
-        new HideOption("Telerik.Reporting.Examples.CSharp.ReportCatalog", ["PDF", "XLSX"])
+        new HideOption("Dashboard.trdp", ["XLSX"]),
+        new HideOption("ReportCatalog.trdp", ["PDF", "XLSX"])
     ];
 
     public update(reportSource: string){

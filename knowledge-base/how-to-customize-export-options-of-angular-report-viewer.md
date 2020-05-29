@@ -43,22 +43,44 @@ class HideOption {
     }
 }
 
+import * as $ from 'jquery';
+
+class HideOption {
+
+    reportName: string;
+    formatsToHide = [];
+
+    constructor(reportName: string, formatsToHide: any) {
+        this.reportName = reportName;
+        this.formatsToHide = formatsToHide;
+    }
+}
+
 export class ExportOptionsHider {
 
-    largeMenuBound = false;
-    sideMenuBound = false;
-    reportSource = "";
-    hideOptions = [
+    public static instance : ExportOptionsHider;
+    public static init(){
+        if(!ExportOptionsHider.instance){
+            ExportOptionsHider.instance = new ExportOptionsHider();
+        }
+        ExportOptionsHider.instance.bindEvents();
+    }
+
+    private largeMenuBound = false;
+    private sideMenuBound = false;
+    private reportSource = "";
+    private hideOptions = [
         new HideOption("Telerik.Reporting.Examples.CSharp.Dashboard", ["XLSX"]),
         new HideOption("Telerik.Reporting.Examples.CSharp.ReportCatalog", ["PDF", "XLSX"])
     ];
 
-    update(){
+    public update(reportSource: string){
+        this.reportSource = reportSource;
         // show all extensions
         $('[data-command-parameter]').show();
     }
 
-    bindEvents() {
+    private bindEvents() {
         const sideMenu = $(".trv-side-menu").children("ul").data('kendoPanelBar');
         const largeMenu = $(".trv-menu-large").data("kendoMenu");
         const smallMenu = $(".trv-menu-small");
@@ -66,7 +88,7 @@ export class ExportOptionsHider {
         // bind to the 'open' event of the main menu
         if (!this.largeMenuBound && largeMenu) {
             largeMenu.bind("open", () => {
-                this.hideOptionsHandler();
+                this.hideUnwantedOptions();
             });
 
             this.largeMenuBound = true;
@@ -75,15 +97,14 @@ export class ExportOptionsHider {
         // bind to the 'expand' event of the side menu
         if (!this.sideMenuBound && smallMenu) {
             sideMenu.bind("expand", () => {
-                this.hideOptionsHandler();
+                this.hideUnwantedOptions();
             });
 
             this.sideMenuBound = true;
         }
     }
 
-    hideOptionsHandler() {
-        console.log("hide export options for" + this.reportSource);
+    private hideUnwantedOptions() {
         this.hideOptions.forEach((hideOption) => {
             if (this.reportSource.startsWith(hideOption.reportName)) {
                 hideOption.formatsToHide.forEach((item) => {
@@ -109,22 +130,17 @@ export class ExportOptionsHider {
 Handle the events in the component
 ``` TypeScript
 .....
-    exportOptionsHider: ExportOptionsHider;
-
     @HostListener('window:resize', ['$event'])
-    onResize(event) {
-        this.exportOptiosnHider.bindEvents();
+    onResize() {
+        ExportOptionsHider.init();  
     }
 
     ready() {
-        console.log('ready');
-        this.exportOptionsHider = new ExportOptionsHider();
-        this.exportOptionsHider.bindEvents();
+        ExportOptionsHider.init();
     }
 
     onRenderingEnd(e, args): void {
-        this.exportOptionsHider.reportSource = e.target.reportSource().report;
-        this.exportOptionsHider.update();
+        ExportOptionsHider.instance.update(e.target.reportSource().report);
     }
 ```
-Briefly, on _the renderingEnd_ event, the code gets the report name. On ready and window size change we bind the event handlers to the 'open' event of the main menu and to the 'expand' event of the side menu of the viewer's toolbar, if not already bound. The event handlers call _hideOptionsHandler()_ that iterates over the export menu options and hides those that are not necessary - specified in the _hideOptions_ property..
+On _the renderingEnd_ event, the code gets the report name. On Report Viewer ready and Window resize we bind the event handlers to the 'open' event of the main menu and to the 'expand' event of the side menu of the viewer's toolbar, if not already bound. The event handlers call _hideUnwantedOptions()_ that iterates over the export menu options and hides those that are not necessary - specified in the _hideOptions_ array.

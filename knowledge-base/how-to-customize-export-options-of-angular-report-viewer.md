@@ -95,7 +95,7 @@ export class ExportOptionsHider {
         this.hideOptions.forEach((hideOption) => {
             if (this.reportSource.startsWith(hideOption.reportName)) {
                 hideOption.formatsToHide.forEach((item) => {
-                    var hiddenOption = $('[data-command-parameter="' + item + '"]');
+                    const hiddenOption = $('[data-command-parameter="' + item + '"]');
                     if (hiddenOption && hiddenOption.length) {
                         hiddenOption.hide();
                     }

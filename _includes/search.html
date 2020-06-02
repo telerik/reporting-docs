@@ -31,7 +31,7 @@
     var gcsInstance = '{{site.gcs_engine}}';
     var gcsKey = '{{site.gcs_api_key}}';
     isKbPage = {% if page.res_type == 'kb' %} true {% else %} false {% endif %};
-    siteHasKbPortal = '{{ site.has_kb_portal }}';
+    siteHasKbPortal = {% if site.has_kb_portal == true %} true {% else %} false {% endif %};
     hasApiReference = {% if site.has_api_reference != false %} true {% else %} false {% endif %};
 </script>
 

@@ -1,5 +1,5 @@
 ---
-title: Selective export of reports from Html5 Viewer
+title: Filter export options based on the selected report in the Html5 Report Viewer
 description: How to customize the export options of the viewer based on the report
 type: how-to
 page_title: Modify available rendering extensions in the Html5 Report Viewer based on report name

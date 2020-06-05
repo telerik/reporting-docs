@@ -25,7 +25,7 @@ You may want to have the _Document Map_ tree expanded by default on the initial 
 ## Solution
 The _DocumentMap_ area is a [Kendo UI TreeView](https://docs.telerik.com/kendo-ui/api/javascript/ui/treeview) widget. It may contain multiple nested nodes that are collapsed by default. Expanding initially all nodes is not supported out of the box.   
   
-You may get the _Kendo treeView_ widget and expand its nodes, for example with the [expand](https://docs.telerik.com/kendo-ui/api/javascript/ui/treeview/methods/expand) method. It will be necessary to iterate over all the nodes of the _Document Map_, for example using recursion - _AllExpand_ function in the code below.
+You may get the _Kendo treeView_ widget and expand its nodes, for example with the [expand](https://docs.telerik.com/kendo-ui/api/javascript/ui/treeview/methods/expand) method. It will be necessary to iterate over all the nodes of the _Document Map_, for example using recursion - _expandAllNodes_ function in the code below.
 For expanding the nodes you may use the [RenderingEnd ](../html5-report-viewer-reportviewer-events-renderingend) event of the viewer, where the _args.documentMapAvailable_ property specifies whether the report has a _Document Map_ set.
 Here is a sample code :  
   
@@ -33,21 +33,23 @@ Here is a sample code :
 ```JavaScript
 <script type="text/javascript">
   ...
-  function AllExpand(treeview, e) {
-    var Nodes = $(e).find("li");
-    if (Nodes.length > 0) {
-        treeview.expand(Nodes);
-        for (var i = 0; i < Nodes.length; i++) {
-            AllExpand(treeview, Nodes[i]);
+  function expandAllNodes(treeview, e) {
+    var nodes = $(e).find("li");
+    if (nodes.length > 0) {
+        treeview.expand(nodes);
+        for (var i = 0; i < nodes.length; i++) {
+            expandAllNodes(treeview, nodes[i]);
         }
     }
+    
     return;
   }
 
   function onRenderingEnd(e, args) {
     if (args.documentMapAvailable) {
-        var kendoTreeView = $("#reportViewer1-documentMap").data("kendoTreeView");
-        AllExpand(kendoTreeView, kendoTreeView.element);
+    	var documentMapSelector = "#" + $("#reportViewer1").attr("data-selector") + "-documentMap";
+        var kendoTreeView = $(documentMapSelector).data("kendoTreeView");
+        expandAllNodes(kendoTreeView, kendoTreeView.element);
     }
   }
 

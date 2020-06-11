@@ -47,6 +47,7 @@ gcs_api_key: 'AIzaSyCcGn_7eOPUgwFwAVq1GuypE_IknfYCCtE'
 
 edit_repo_url: https://github.com/telerik/reporting-docs/edit/master
 product: "Telerik Reporting"
+product_url: https://www.telerik.com/reporting
 platform: reporting
 download: http://www.telerik.com/products/reporting/download.aspx
 nav:

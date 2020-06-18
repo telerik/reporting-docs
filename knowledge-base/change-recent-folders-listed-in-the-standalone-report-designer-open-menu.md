@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description
 
-When installing Telerik Reporting, the Standalone report designer also includes a user configuration for the user experience. This can used to manipulate Recent Folders, Recent Documents or Connection String. See the following solution for how to do this.
+When installing Telerik Reporting, the Standalone report designer also includes a user configuration for the user experience. This can be used to manipulate Recent Folders, Recent Documents or Connection String. See the following solution for how to do this.
 
 ## Solution
 

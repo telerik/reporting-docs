@@ -42,7 +42,7 @@ this.services.Configure<IISServerOptions>(options =>
         options.AllowSynchronousIO = true;
  });
 ```
-For __Kestrel__ you may use code like the following:
+For __Kestrel__ you may use code like the following in the __Program.cs__ file:
 ```CSharp
 public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
      WebHost.CreateDefaultBuilder(args)

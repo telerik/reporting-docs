@@ -15,7 +15,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product</td>
-		<td>Progress® Telerik® Reporting R3 2018</td>
+		<td>Progress® Telerik® Reporting R2 2020</td>
 	</tr>
 	<tr>
 		<td>Framework</td>
@@ -85,18 +85,18 @@ The following guide assumes previous knowledge of Vue.js:
 
 	```
 	<head>
-	  <link href="http://kendo.cdn.telerik.com/2018.2.620/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
-	  <link href="http://kendo.cdn.telerik.com/2018.2.620/styles/kendo.default.min.css" rel="stylesheet" id="skin-css" />
+	  <link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.common.min.css" rel="stylesheet" />
+	  <link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.default.min.css" rel="stylesheet" />
 	...
 	```
 	
 6. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the
-HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R3 2018\Html5\ReportViewer\js\telerikReportViewer.kendo-12.2.18.912.min.js*) 
+HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R2 2020\Html5\ReportViewer\js\telerikReportViewer.kendo-14.1.20.618.min.js*) 
 and can be copied to the Vue application's **assets** folder (*src/assets/ReportViewer/js*). Then reference it in **App.vue**:
 
 	```
 	<script>
-	import './assets/ReportViewer/js/telerikReportViewer.kendo-12.2.18.912.min.js'
+	import './assets/ReportViewer/js/telerikReportViewer.kendo-14.1.20.618.min.js'
 	...
 	```
 	
@@ -107,9 +107,9 @@ and can be copied to the Vue application's **assets** folder (*src/assets/Report
 	src/components/ReportViewer.vue	
 	```
 
-7. Add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R3 2018\Html5\ReportViewer\js*) to **assets** (*src/assets/ReportViewer/js*).
+7. Add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R2 2020\Html5\ReportViewer\js*) to **assets** (*src/assets/ReportViewer/js*).
 
-8. Create a new report viewer component and configure the routes accordingly. The new component would contain the following template, scripts, and styles:
+8. Create a new report viewer component and configure the routes accordingly. The new component contains a *div* element to hold the report viewer object and applies CSS to this element. The component calls the **telerik_ReportViewer** method to create the report viewer with the specified configuration options. It is important that the **serviceUrl** option points to the URL of a working [Reporting REST Service](../https://docs.telerik.com/reporting/telerik-reporting-rest-conception). How to implement this service is described [here](../telerik-reporting-rest-service-aspnetcore-mvc-core3).
 
 	```
 	<template>
@@ -120,7 +120,7 @@ and can be copied to the Vue application's **assets** folder (*src/assets/Report
 	</template>
 
 	<script>
-	import '../assets/ReportViewer/js/telerikReportViewer-12.2.18.912.min.js'
+	import '../assets/ReportViewer/js/telerikReportViewer-14.1.20.618.min.js'
 
 	export default {
 	  name: 'ReportViewer',
@@ -133,7 +133,7 @@ and can be copied to the Vue application's **assets** folder (*src/assets/Report
 		this.$nextTick(function () {
 		  $('#reportViewer1')
 			.telerik_ReportViewer({
-			  serviceUrl: 'https://demos.telerik.com/reporting/api/reports/',
+			  serviceUrl: 'http://my.service.url/api/reports/',
 			  reportSource: {
 				report: 'Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary'
 			  },

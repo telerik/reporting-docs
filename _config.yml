@@ -3,7 +3,6 @@ url: "https://docs.telerik.com/reporting"
 
 # KB portal info
 has_kb_portal: true
-old_kb_portal_link: https://www.telerik.com/support/kb/reporting
 
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd,report-designer-translations]

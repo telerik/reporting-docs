@@ -31,7 +31,7 @@ The requirement can be achieved without writing additional code, **_directly in 
 	```XML
 	Property path                   |   Expression
 
-	DataSource.ConnectionString     |   Parameters.ConnectionStringParameter.Value
+	DataSource.ConnectionString     |   = Parameters.ConnectionStringParameter.Value
 	```
 
 ## Notes

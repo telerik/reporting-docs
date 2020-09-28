@@ -42,7 +42,7 @@ The same approach can be applied for .NET Core MVC 3.0 project.
 - Telerik.WebReportDesigner.Services
 - Microsoft.AspNetCore.Mvc.NewtonsoftJson
 
-2. Add a folder with the reports.
+2. Add a folder with the TRDP / TRDX reports.
 
 3. Add the **ReportDesignerController**:
 ```CSharp

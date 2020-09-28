@@ -1,6 +1,6 @@
 ---
-title: How to Avoid Warning in Excel The number in the cell is formatted as text or preceded by an apostrophe
-description: The number in the cell is formatted as text or preceded by an apostrophe warning appears in Excel might appear if you exported integer values which are indicated as String
+title: How to Avoid Warning in Excel - The number in the cell is formatted as text or preceded by an apostrophe
+description: The number in the cell is formatted as text or preceded by an apostrophe. This warning might appear in Excel if you exported integer values which are indicated as String
 type: how-to
 page_title: The number in the cell is formatted as text or preceded by an apostrophe.
 slug: number-in-the-cell-is-formatted-as-text-or-preceded-by-an-apostrophe
@@ -26,7 +26,7 @@ This article shows how to avod the warning in Excel indicating that **"The numbe
 which appears if you exported integer values which are indicated as String in the report.
 
 ## Solution
-1. Create a [User Function](../expressions-user-functions) that will return the records with the right data type:
+1. Create a [User Function](../expressions-user-functions) that will return the records with the correct data type:
 ```CSharp
 public static class ReturnTypeClass
 {
@@ -49,6 +49,8 @@ For example, if you are using the Standalone designer, you will need to add this
 	</AssemblyReferences>
 </Telerik.Reporting>
 ```
+
+Note that if you render the report in an application, the function must be registered in the configuration file of the application.
 
 3. Set the user function as a value of the field to return it value with the right data type:
 ```

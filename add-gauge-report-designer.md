@@ -15,7 +15,7 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product Version</td>
-			<td></td>
+			<td>all</td>
 		</tr>
 		<tr>
 			<td>Product</td>
@@ -25,7 +25,10 @@ res_type: kb
 </table>
 
 ## Description
-You may need to add a dynamic gauge that represents a specific value. Telerik Report Designer does not have a built-in Gauge control. You can add an image instead.   
+I need to add a dynamic gauge that represents a specific value to my report.
+
+## Solution
+Telerik Report Designer does not have a built-in Gauge control. You can add an image instead.   
 
 ## Suggested Workaround
 As a workaround, you can use another tool to render the gauge with the desired value, for example, [RadGauge for ASP.NET AJAX](https://demos.telerik.com/aspnet-ajax/gauge/examples/overview/defaultcs.aspx).

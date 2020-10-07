@@ -1,8 +1,8 @@
 ---
-title: How to Pass Custom Headers Along with Report Viewer's REST API Calls from Angular Application
-description: Add Custom Headers to Angular Report Viewer's REST API Calls
+title: How to Pass Custom Headers Along with Report Viewer REST API Calls from Angular Application
+description: Add Custom Headers to Angular Report Viewer REST API Calls
 type: how-to
-page_title: Pass Custom Headers Along with the Angular Report Viewer's REST API Calls
+page_title: Pass Custom Headers Along with the Angular Report Viewer REST API Calls
 slug: custom-headers-with-reportviewer-rest-api-calls
 position: 
 tags: 
@@ -37,7 +37,7 @@ That's why you cannot add custom headers the Angular way - via the HTTP intercep
 The Angular Report Viewer comes with out-of-the-box support for an [*authenticationToken* option](https://docs.telerik.com/reporting/angular-report-viewer-api-options). 
 This option adds an *Authorization* header for every request to the REST service.
 
-### Solution 2 (unvervified)
+### Solution 2 (unverified)
 The second solution is to add the custom headers to the REST API calls of the Angular Report Viewer with *jQuery*. 
 
 >**Note**

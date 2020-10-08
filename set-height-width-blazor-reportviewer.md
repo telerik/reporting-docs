@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-How to set the height and width of the ReportViewer component?
+This article describes how to set the height and width of the ReportViewer component.
 
 ## Solution
 The Blazor Report Viewer is nested inside a `div` element and will resize itself based on the `div`'s width and height. 

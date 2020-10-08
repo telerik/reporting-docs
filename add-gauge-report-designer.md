@@ -28,7 +28,7 @@ res_type: kb
 I need to add a dynamic gauge that represents a specific value to my report.
 
 ## Solution
-Telerik Report Designer does not have a built-in Gauge control. You can add an image instead.   
+Telerik Report Designer does not have a built-in Gauge control. You can use an image instead.   
 
 ## Suggested Workaround
 As a workaround, you can use another tool to render the gauge with the desired value, for example, [RadGauge for ASP.NET AJAX](https://demos.telerik.com/aspnet-ajax/gauge/examples/overview/defaultcs.aspx).

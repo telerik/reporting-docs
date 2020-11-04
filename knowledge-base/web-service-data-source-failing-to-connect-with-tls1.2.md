@@ -26,6 +26,15 @@ When using a WebServiceDataSource with such Web sources there may appear a probl
 
 _The client and server cannot communicate, because they do not possess a common algorithm_
 
+## Error Message
+An error occurred while sending the request.  
+------------- InnerException -------------  
+The underlying connection was closed: An unexpected error occurred on a send.  
+------------- InnerException -------------  
+Unable to read data from the transport connection: An existing connection was forcibly closed by the remote  
+host.  
+------------- InnerException -------------  
+An existing connection was forcibly closed by the remote host  
 
 ## Suggested Workarounds
   

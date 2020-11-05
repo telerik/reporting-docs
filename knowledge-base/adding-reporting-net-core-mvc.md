@@ -43,6 +43,7 @@ The same approach can be applied for .NET Core MVC 3.0 project.
 2. Add a folder with the reports.
 
 3. Add the **ReportsController**:
+
 ```CSharp
 namespace WebApplication1.Controllers
 {
@@ -76,8 +77,8 @@ namespace WebApplication1.Controllers
     }
 }
 ```
-
 4. Add a new class named **ConfigurationHelper**:
+
 ```CSharp
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -96,8 +97,8 @@ namespace WebApplication1
     }
 }
 ```
-
 5. Add the required configurations in the **Startup.cs** from [Setup the Startup.cs file for the Reports service](../telerik-reporting-rest-service-aspnetcore-mvc-core3#setup-the-startup-cs-file-for-the-reports-service):
+
 ```CSharp
 public class Startup
 {
@@ -159,8 +160,8 @@ public class Startup
 }
 
 ```
-
 6. The view has to look as follows:
+
 ```Javascript
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -264,9 +265,9 @@ public class Startup
     </script>
 }
 ```
-
 7. If you are using [SQL DataSource](../sqldatasource) with Shared connection string, add a connection string in appsettings.json file:
-```
+
+```Javascript
 "ConnectionStrings": [
   {
     "name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",

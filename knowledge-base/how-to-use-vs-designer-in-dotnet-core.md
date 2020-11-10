@@ -40,29 +40,32 @@ a .NET Core ClassLibrary project.
 ## Suggested Workaround
 The CSharp code of a report definition is identical in .NET Framework and in .NET Core. For that reason, it is possible to link the report definition files hosted in 
 a .NET Core ClassLibrary project to the corresponding files hosted in a .NET Framework ReportLibrary project. This way, all the changes made with the Visual Studio Report
-Designer to the report in the .NET Framework project will be automatically transferred to the .NET Core project. 
+Designer to the report in the .NET Framework project will be automatically applied to the .NET Core project. 
 
 Lets assume that we already have a ReportLibrary project in .NET Framework. Here are the necessary steps to link it to a .NET Core ClassLibrary project:
 
-1. Create a new .NET Core 3.1 ClassLibrary project. You may delete the default CS file. Add references to the following assembllies/NuGet packages in it. 
+1. Create a new .NET Core 3.1 ClassLibrary project. You may delete the default CS file usually named _Class1.cs_. 
+
+2. Add references to the following assembllies/NuGet packages in the project: 
 
     * __Telerik.Reporting__ - defines the needed report definition elements
     * __System.Resources.Extensions__ - needed to resolve the resources from the RESX file
 
-2. Add an existing CS report file to the .NET Core project through the _Add_ -> _Existing Item..._ option of the project context menu. 
+3. Add the corresponding CS report file from the .NET Framework project to the .NET Core project through the _Add_ -> _Existing Item..._ option of the project context menu. 
 ![alt text](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/addexistingitem.png?sfvrsn=a3ec3f95_2 "Add Existing Item") 
 
-When selecting the CS file make sure to select _Add As Link_ from the _Add Existing Item_ wizard. The corresponding DESIGNER.CS file will be added automatically. 
+When selecting the CS file make sure to select __Add As Link__ from the _Add Existing Item_ wizard. The corresponding DESIGNER.CS file will be added automatically. 
 
 ![alt text](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/addaslink.png?sfvrsn=b5e4fd9f_2 "Add As Link") 
 
-3. Add in the same way also the RESX file of the report definition. 
+4. Add in the same way also the RESX file of the report definition. 
 
-4. Reference the .NET Core ClassLibrary project in your .NET Core project hosting the Telerik Reporting engine. Pass the 
+5. Reference the .NET Core ClassLibrary project in your .NET Core project hosting the Telerik Reporting engine. Pass the 
 [AssemblyQualifiedName](https://docs.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=netcore-3.1) of the report class to the Reporting engine. Use 
 [TypeReportSourceResolver](../t-telerik-reporting-services-typereportsourceresolver) for resolving your reports in a Telerik Reporting REST Service. 
 
-Here is a link to a sample solution in our GitHub repo - [VS Designer in .NET Core](https://github.com/telerik/reporting-samples/tree/master/VS%20designer%20Core)
+A demo solution demonstrating the approach may be found in our GitHub repo - 
+[VS Designer in .NET Core](https://github.com/telerik/reporting-samples/tree/master/VS%20designer%20Core)
 
 ## See Also
 [Make Visual Studio designer work with .NET Core](https://feedback.telerik.com/reporting/1383925-make-visual-studio-designer-work-with-net-core-a-k-a-sdk-style-projects)

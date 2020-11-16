@@ -46,7 +46,7 @@ Lets assume that we already have a ReportLibrary project in .NET Framework. Here
 
 1. Create a new .NET Core 3.1 ClassLibrary project. You may delete the default CS file usually named _Class1.cs_. 
 
-2. Add references to the following assembllies/NuGet packages in the project: 
+2. Add references to the following assemblies/NuGet packages in the project: 
 
     * __Telerik.Reporting__ - defines the needed report definition elements
     * __System.Resources.Extensions__ - needed to resolve the resources from the RESX file

@@ -33,7 +33,7 @@ res_type: kb
 Currently, the .NET Core frameworks do not support the design time components we need for the [Visual Studio Report Designer](../ui-report-designer). Without these components 
 we cannot provide a quality design-time experience. 
 
-This KB article describes a workaround for using the Visual Studio Report Designer to edit C Sharp reprots hosted in 
+This KB article describes a workaround for using the Visual Studio Report Designer to edit C Sharp reports hosted in 
 a .NET Core ClassLibrary project.
 
 

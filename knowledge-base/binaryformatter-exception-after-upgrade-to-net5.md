@@ -24,7 +24,7 @@ res_type: kb
 ## Description
 The following error: **Error registering the viewer with the service.
 An error has occurred.
-BinaryFormatter serialization and deserialization are disabled within this application** might be thrown after upgrade to .NET 5 in .NET Core or Blazor Projects.
+BinaryFormatter serialization and deserialization are disabled within this application** might be thrown after upgrade to .NET 5 from .NET Core or Blazor Projects.
 
 ## Error Message
 Error registering the viewer with the service.
@@ -33,7 +33,7 @@ BinaryFormatter serialization and deserialization are disabled within this appli
 
 ## Cause\Possible Cause(s)
 We are currently working on building and distributing our packages built against  .NET 5.
-They are expected to be available in the R1 2021 Release of Reporting that is coming in the middle of January.
+They are expected to be available in R1 2021 that is coming in the middle of January.
 You can find further information in [.Net 5.0 support of Desktop ReportViewers and Reports generation WEB service](https://feedback.telerik.com/reporting/1489782-net-5-0-support-of-desktop-reportviewers-and-reports-generation-web-service)
 feature request or at [Remove BinaryFormatter from the shared framework in .NET 5](https://github.com/dotnet/runtime/issues/29976) GitHub thread.
 

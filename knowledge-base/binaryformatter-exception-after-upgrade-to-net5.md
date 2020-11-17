@@ -1,5 +1,5 @@
 ---
-title: BinaryFormatter serialization and deserialization are disabled within this application is thrown in .NET5
+title: .NET5 projects may throw the error: BinaryFormatter serialization and deserialization are disabled within this application
 description: BinaryFormatter serialization and deserialization are disabled within this application after upgrade to .NET5
 type: troubleshooting
 page_title: BinaryFormatter serialization and deserialization are disabled within this application is thrown in .NET5
@@ -16,6 +16,7 @@ res_type: kb
 		<tr>
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
+			<td>Up to R3 2020</td>
 		</tr>
 	</tbody>
 </table>
@@ -39,7 +40,7 @@ feature request or at [Remove BinaryFormatter from the shared framework in .NET 
 
 
 ## Suggested Workarounds
-Add this line of code to the project file:
+Add the following lines of code to the **csproj** file:
 ```
 <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>

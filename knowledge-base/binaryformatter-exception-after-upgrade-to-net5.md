@@ -1,5 +1,5 @@
 ---
-title: .NET5 projects may throw the error: BinaryFormatter serialization and deserialization are disabled within this application
+title: NET5 projects may throw the error BinaryFormatter serialization and deserialization are disabled within this application
 description: BinaryFormatter serialization and deserialization are disabled within this application after upgrade to .NET5
 type: troubleshooting
 page_title: BinaryFormatter serialization and deserialization are disabled within this application is thrown in .NET5

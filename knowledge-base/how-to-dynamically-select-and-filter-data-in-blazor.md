@@ -14,10 +14,6 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
-			<td>14.2.20.1021</td>
-		</tr>
-		<tr>
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
@@ -32,7 +28,7 @@ The Telerik Report Viewer makes it easy to let your user select the report they 
 
 We will be doing the following steps in the **Index.razor** file of the **BlazorHtml5Demo** project.
 
-**1.** Add the following code inside the **body** tag:
+1. Add the following code inside the **body** tag:
 
 ```Razor
 <div id="invoiceIdSelector">
@@ -48,7 +44,7 @@ We will be doing the following steps in the **Index.razor** file of the **Blazor
 ```
 This is all the setup that we need for our **changeId** function that will be doing the actual work.
 
-**2.** Now add this code inside the **@code** block:
+2. Now add this code inside the **@code** block:
 ```Csharp
  async void changeId(ChangeEventArgs e)
     {
@@ -57,10 +53,8 @@ This is all the setup that we need for our **changeId** function that will be do
         await reportViewer1.SetReportSourceAsync(rso);
     }
 ```
-In the changeId function we retrieve the viewer's **ReportSourceOptions** and then we set the **OrderNumber** parameter the value of in the event argument.
+In the **changeId** function we retrieve the viewer's **ReportSourceOptions** and then we set the **OrderNumber** parameter the value of in the event argument.
 Finally we update the ReportSourceOptions. Because we are retrieving a value from an asynchronous method, we have to use the **await** keyword our method calls and flag the method with the **async** keyword.
-
-And that's all that we needed the code we needed to allow the user to select and filter the data.
 
 
 ## See Also

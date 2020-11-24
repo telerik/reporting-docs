@@ -64,16 +64,13 @@ with [Bindings](../expressions-bindings) through the following [Expression](../r
 Property path	|	Expression
 DataSource	|	= ReportItem.Parent is Null ? ReportItem.DataSource : ReportItem.Parent.DataObject.List
 ```
-This way, if the Report doesn't have a parent, like in the case of the main report, the default _DataSource_ will be the _JsonDataSource_ assigned as a property, otherwise, 
-the _List_ field of the parent report will become the new subreport data source.  
+This way, if the Report doesn't have a parent, like the root report of the hierarchy representation, the default _DataSource_ will be the _JsonDataSource_ assigned as a property, otherwise, the _List_ field of the parent report will become the corresponding data source for each child report in the hierarchy representation.  
 The _SubReport_ item has a [ReportSource](../report-sources-subreport) set both directly as a property, and with the following _Binding_:
 ```
 Property path		|	Expression
 ReportSource.Uri	|	= Fields("List") is Null ? Null : "HierarchyFromNestedCollections.trdp"
 ```
-The above expression modifies the _ReportSource_ so that when there is no more field "List" in the parent report DataSource the _SubReport_ not to be rendered, which will be
-the bottom of the recursion. The direct setting of the _ReportSource_ property is needed in order to create the _ReportSource_ object before modifying its _Uri_ property with 
-the _Binding_. Otherwise, the _ReportSource_ object will be _Null_, which will result in an exception in the above _Binding_.
+The above expression modifies the _ReportSource_ so that when there is no more field "List" in the parent report _DataSource_ a next level subreport is not generated, which will be the bottom of the recursion. The direct setting of the _ReportSource_ property is needed in order to create the _ReportSource_ object before modifying its _Uri_ property with the _Binding_. Otherwise, the _ReportSource_ object will be _Null_, which will result in an exception in the above _Binding_.
 
 ## Solution 2
 Another approach is suggested in the [How do I displaying recursive data?](https://www.telerik.com/forums/how-do-i-displaying-recursive-data) Forum thread. The updated example 

@@ -1,6 +1,6 @@
 ---
-title: Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 MVC Report Viewer
-description: This KB article gives a brief description of how to set another language of the Kendo date picker in HTML5 MVC Report Viewer.
+title: How to set another language of the Kendo date picker in HTML5 MVC Report Viewer
+description: This KB article gives a brief description of how to set another language of the Kendo date picker in HTML5 MVC Report Viewer
 type: how-to
 page_title: How to change the culture of the datepicker in HTML5 Report Viewer
 slug: how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer
@@ -39,7 +39,7 @@ This KB article gives a brief description of how to set another language. The ex
 
     
      ```HTML
-     <script src="http://kendo.cdn.telerik.com/VERSION/js/cultures/kendo.culture.fr-FR.min.js"></script>
+     <script src="http://kendo.cdn.telerik.com/VERSION/js/cultures/kendo.culture.[culture-identifier].min.js"></script>
      ```
    For example:
    

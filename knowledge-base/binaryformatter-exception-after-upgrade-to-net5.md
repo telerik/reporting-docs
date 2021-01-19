@@ -27,6 +27,9 @@ The following error: **Error registering the viewer with the service.
 An error has occurred.
 BinaryFormatter serialization and deserialization are disabled within this application** might be thrown after upgrade to .NET 5 from .NET Core or Blazor Projects.
 
+## Solution
+Telerik Reporting R1 2021 and beyond does not use the unsafe **BinaryFormatter**, therefore the issue is no longer present. 
+
 ## Error Message
 Error registering the viewer with the service.
 An error has occurred.

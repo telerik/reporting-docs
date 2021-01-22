@@ -120,6 +120,10 @@
   <data name="PropertyBrowser_Font_Name" xml:space="preserve">
     <value>Segoe UI</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PropertyBrowser_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value>Segoe UI</value>
+  </data>
   <data name="AlignTextBottomText" xml:space="preserve">
     <value>Aligner le fond du texte</value>
   </data>
@@ -231,7 +235,6 @@
   <data name="BringToFrontText" xml:space="preserve">
     <value>Apportez à l’avant</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BringToFrontDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
@@ -516,9 +519,6 @@
   </data>
   <data name="PropertyBrowserToolWindow_Title" xml:space="preserve">
     <value>Propriétés</value>
-  </data>
-  <data name="PropertyBrowser_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
   </data>
   <data name="PropertyBrowser_Reset" xml:space="preserve">
     <value>réinitialiser</value>

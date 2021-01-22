@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ReportExplorer_CrossSectionItems" xml:space="preserve">
+    <value>Articles transcoupés</value>
+  </data>
+  <data name="PictureBoxValueFileDialogDescription" xml:space="preserve">
+    <value>Fichiers d’images</value>
+  </data>
+  <data name="WarningHorizontalMarginsShouldBeLessThanPaperWidth" xml:space="preserve">
+    <value>Les marges horizontales doivent être inférieures à la largeur du papier.</value>
+  </data>
+  <data name="WarningReportIsTooWideToFitHorizontallyInASingleColumn" xml:space="preserve">
+    <value>Le rapport est trop large pour s’insérer horizontalement dans une seule colonne.</value>
+  </data>
+  <data name="WarningReportIsTooWideToFitHorizontallyOnASinglePage" xml:space="preserve">
+    <value>Le rapport est trop large pour s’insérer horizontalement sur une seule page.</value>
+  </data>
+  <data name="WarningReportWidthIsLessThanOneColumn" xml:space="preserve">
+    <value>La largeur du rapport est inférieure à une colonne. Le rapport rendu se développera horizontalement pour remplir la largeur de la colonne.</value>
+  </data>
+  <data name="WarningReportWidthIsLessThanThePaperWidth" xml:space="preserve">
+    <value>La largeur du rapport est inférieure à la largeur du papier. Le rapport rendu se développera horizontalement pour remplir la largeur du papier.</value>
+  </data>
+  <data name="WarningVerticalMarginsShouldBeLessThanPaperHeight" xml:space="preserve">
+    <value>Les marges verticales doivent être inférieures à la hauteur du papier.</value>
+  </data>
+  <data name="WarningPageSectionsTotalHeightShouldBeLessThanThePaperHeight" xml:space="preserve">
+    <value>La hauteur totale des sections de page devrait être inférieure à la hauteur de papier disponible.</value>
+  </data>
+  <data name="ErrorBeginMarginCannotBeGreaterThanBeginSectionHeight" xml:space="preserve">
+    <value>La valeur de la marge {0} ne peut pas être supérieure à la hauteur de la section Begin {1}.</value>
+  </data>
+  <data name="ErrorEndMarginCannotBeGreaterThanEndSectionHeight" xml:space="preserve">
+    <value>La valeur de la marge {0} ne peut pas être supérieure à la hauteur de la section {1}.</value>
+  </data>
   <data name="EditInstanceReportSourceControl_Label" xml:space="preserve">
     <value>Sélectionnez une instance d’objet De rapport :</value>
   </data>

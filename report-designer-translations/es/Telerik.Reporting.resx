@@ -117,6 +117,81 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackgroundOverlay_Name" xml:space="preserve">
+    <value>Superposición de fondo</value>
+  </data>
+  <data name="BackgroundOverlayOffsetDescr" xml:space="preserve">
+    <value>Representa el desplazamiento de la esquina superior izquierda del informe.</value>
+  </data>
+  <data name="BackgroundOverlay_Description" xml:space="preserve">
+    <value>Representa una imagen de superposición de fondo en la superficie de diseño o en una página imprimible.</value>
+  </data>
+  <data name="BackgroundOverlayOffsetName" xml:space="preserve">
+    <value>Compensar</value>
+  </data>
+  <data name="FiltersName" xml:space="preserve">
+    <value>Filtros</value>
+  </data>
+  <data name="PictureBoxValueTypeBase64Image" xml:space="preserve">
+    <value>Imagen codificada en Base64</value>
+  </data>
+  <data name="PictureBoxValueTypeInlineImage" xml:space="preserve">
+    <value>Imagen en línea</value>
+  </data>
+  <data name="PictureBoxValueTypeSvgMarkup" xml:space="preserve">
+    <value>Marcado SVG</value>
+  </data>
+  <data name="BackgroundOverlayRenderInReportDocumentDescr" xml:space="preserve">
+    <value>Valor que indica si la superposición en segundo plano debe representarse en el documento de informe de salida.</value>
+  </data>
+  <data name="BackgroundOverlayRenderInReportDocumentName" xml:space="preserve">
+    <value>Renderizar en el documento de informe</value>
+  </data>
+  <data name="CrossSectionItemDescription" xml:space="preserve">
+    <value>Representa un elemento de sección transversal.</value>
+  </data>
+  <data name="CrossSectionItemName" xml:space="preserve">
+    <value>Elemento de sección transversal</value>
+  </data>
+  <data name="EndSectionDescription" xml:space="preserve">
+    <value>Especifica la sección de informe en la que finaliza el elemento de sección transversal.</value>
+  </data>
+  <data name="EndSectionName" xml:space="preserve">
+    <value>Sección Final</value>
+  </data>
+  <data name="BeginSectionDescription" xml:space="preserve">
+    <value>Especifica la sección de informe desde la que comienza el elemento de sección transversal.</value>
+  </data>
+  <data name="BeginSectionName" xml:space="preserve">
+    <value>Sección De inicio</value>
+  </data>
+  <data name="CrossSectionItemTypeDescr" xml:space="preserve">
+    <value>Especifica el tipo del elemento de sección transversal.</value>
+  </data>
+  <data name="CrossSectionItemTypeName" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="CrossSectionItemPositionDescr" xml:space="preserve">
+    <value>La posición del elemento de sección transversal en relación con los demás elementos de la página.</value>
+  </data>
+  <data name="CrossSectionItemPositionName" xml:space="preserve">
+    <value>Posición</value>
+  </data>
+  <data name="BeginMarginDescription" xml:space="preserve">
+    <value>El margen superior del elemento de sección transversal, medido desde la parte superior de su sección de inicio.</value>
+  </data>
+  <data name="BeginMarginName" xml:space="preserve">
+    <value>Margen de inicio</value>
+  </data>
+  <data name="EndMarginDescription" xml:space="preserve">
+    <value>El margen inferior del elemento de sección transversal, medido desde la parte inferior de su Sección Final</value>
+  </data>
+  <data name="EndMarginName" xml:space="preserve">
+    <value>Margen final</value>
+  </data>
+  <data name="ActionsAreNotSupportedOnCSI" xml:space="preserve">
+    <value>Los elementos de sección transversal no admiten acciones.</value>
+  </data>
   <data name="Table_FreezeColumnHeaders_Description" xml:space="preserve">
     <value>Indica si los encabezados del grupo de columnas deben permanecer visibles mientras se desplaza verticalmente por los datos de esta tabla.</value>
   </data>

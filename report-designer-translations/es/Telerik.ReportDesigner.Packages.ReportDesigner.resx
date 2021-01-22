@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Insert_CrossSectionItem_Description" xml:space="preserve">
+    <value>El elemento de sección transversal se utiliza para mostrar una primitiva gráfica (línea o rectángulo) a través de una o más secciones de informe.</value>
+  </data>
+  <data name="Insert_CrossSectionItem_Text" xml:space="preserve">
+    <value>Elemento de sección transversal</value>
+  </data>
   <data name="PreviewTab_Back" xml:space="preserve">
     <value>Atrás</value>
   </data>

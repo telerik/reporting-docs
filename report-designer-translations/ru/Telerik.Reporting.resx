@@ -117,6 +117,81 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackgroundOverlay_Name" xml:space="preserve">
+    <value>Справочная накладка</value>
+  </data>
+  <data name="BackgroundOverlayOffsetDescr" xml:space="preserve">
+    <value>Представляет смещение из верхнего левого угла отчета.</value>
+  </data>
+  <data name="BackgroundOverlay_Description" xml:space="preserve">
+    <value>Представляет собой фоновое наложение изображения на поверхности конструкции или на печатаемой странице.</value>
+  </data>
+  <data name="BackgroundOverlayOffsetName" xml:space="preserve">
+    <value>Смещение</value>
+  </data>
+  <data name="FiltersName" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="PictureBoxValueTypeBase64Image" xml:space="preserve">
+    <value>Базовое изображение, закодированное на базе64</value>
+  </data>
+  <data name="PictureBoxValueTypeInlineImage" xml:space="preserve">
+    <value>Inline изображение</value>
+  </data>
+  <data name="PictureBoxValueTypeSvgMarkup" xml:space="preserve">
+    <value>Разметка SVG</value>
+  </data>
+  <data name="BackgroundOverlayRenderInReportDocumentDescr" xml:space="preserve">
+    <value>Значение, указывающее на то, следует ли визуализировать фоновую накладку в документе отчета о выводе.</value>
+  </data>
+  <data name="BackgroundOverlayRenderInReportDocumentName" xml:space="preserve">
+    <value>Рендер в отчете документа</value>
+  </data>
+  <data name="CrossSectionItemDescription" xml:space="preserve">
+    <value>Представляет собой поперечный элемент.</value>
+  </data>
+  <data name="CrossSectionItemName" xml:space="preserve">
+    <value>Пункт поперечного сечения</value>
+  </data>
+  <data name="EndSectionDescription" xml:space="preserve">
+    <value>Уточняется раздел отчета, на котором заканчивается пункт сечения.</value>
+  </data>
+  <data name="EndSectionName" xml:space="preserve">
+    <value>Конец раздела</value>
+  </data>
+  <data name="BeginSectionDescription" xml:space="preserve">
+    <value>Уточняется раздел отчета, из которого начинается поперечный элемент.</value>
+  </data>
+  <data name="BeginSectionName" xml:space="preserve">
+    <value>Начало раздела</value>
+  </data>
+  <data name="CrossSectionItemTypeDescr" xml:space="preserve">
+    <value>Определяет тип поперечного элемента.</value>
+  </data>
+  <data name="CrossSectionItemTypeName" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="CrossSectionItemPositionDescr" xml:space="preserve">
+    <value>Положение поперечного элемента по сравнению с другими элементами на странице.</value>
+  </data>
+  <data name="CrossSectionItemPositionName" xml:space="preserve">
+    <value>Положение</value>
+  </data>
+  <data name="BeginMarginDescription" xml:space="preserve">
+    <value>Верхний предел поперечного сечения, измеренный с верхней части его начала раздела.</value>
+  </data>
+  <data name="BeginMarginName" xml:space="preserve">
+    <value>Начать маржу</value>
+  </data>
+  <data name="EndMarginDescription" xml:space="preserve">
+    <value>Нижняя маржа поперечного сечения, измеренная из нижней части конечного раздела</value>
+  </data>
+  <data name="EndMarginName" xml:space="preserve">
+    <value>Конец маржи</value>
+  </data>
+  <data name="ActionsAreNotSupportedOnCSI" xml:space="preserve">
+    <value>Действия не поддерживаются поперечных элементов.</value>
+  </data>
   <data name="Table_FreezeColumnHeaders_Description" xml:space="preserve">
     <value>Указывает, должны ли заголовки групп столбцов оставаться видимыми при вертикальном прокрутке данных этой таблицы.</value>
   </data>

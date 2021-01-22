@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ReportExplorer_CrossSectionItems" xml:space="preserve">
+    <value>Elementos de sección transversal</value>
+  </data>
+  <data name="PictureBoxValueFileDialogDescription" xml:space="preserve">
+    <value>Archivos de imagen</value>
+  </data>
+  <data name="WarningHorizontalMarginsShouldBeLessThanPaperWidth" xml:space="preserve">
+    <value>Los márgenes horizontales deben ser inferiores al ancho del papel.</value>
+  </data>
+  <data name="WarningReportIsTooWideToFitHorizontallyInASingleColumn" xml:space="preserve">
+    <value>El informe es demasiado ancho para caber horizontalmente en una sola columna.</value>
+  </data>
+  <data name="WarningReportIsTooWideToFitHorizontallyOnASinglePage" xml:space="preserve">
+    <value>El informe es demasiado amplio para caber horizontalmente en una sola página.</value>
+  </data>
+  <data name="WarningReportWidthIsLessThanOneColumn" xml:space="preserve">
+    <value>El ancho del informe es menor que una columna. El informe representado crecerá horizontalmente para rellenar el ancho de la columna.</value>
+  </data>
+  <data name="WarningReportWidthIsLessThanThePaperWidth" xml:space="preserve">
+    <value>El ancho del informe es menor que el ancho del papel. El informe renderizado crecerá horizontalmente para rellenar el ancho del papel.</value>
+  </data>
+  <data name="WarningVerticalMarginsShouldBeLessThanPaperHeight" xml:space="preserve">
+    <value>Los márgenes verticales deben ser inferiores a la altura del papel.</value>
+  </data>
+  <data name="WarningPageSectionsTotalHeightShouldBeLessThanThePaperHeight" xml:space="preserve">
+    <value>La altura total de las secciones de página debe ser inferior a la altura del papel disponible.</value>
+  </data>
+  <data name="ErrorBeginMarginCannotBeGreaterThanBeginSectionHeight" xml:space="preserve">
+    <value>El valor de Margen de inicio no {0} puede ser mayor que el alto de la {1} de sección de inicio.</value>
+  </data>
+  <data name="ErrorEndMarginCannotBeGreaterThanEndSectionHeight" xml:space="preserve">
+    <value>El valor de Margen final no {0} puede ser mayor que la altura de la {1} Sección final.</value>
+  </data>
   <data name="EditInstanceReportSourceControl_Label" xml:space="preserve">
     <value>Seleccione una instancia del objeto Report:</value>
   </data>

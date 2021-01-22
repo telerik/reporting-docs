@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ReportExplorer_CrossSectionItems" xml:space="preserve">
+    <value>Поперечные элементы</value>
+  </data>
+  <data name="PictureBoxValueFileDialogDescription" xml:space="preserve">
+    <value>Файлы изображений</value>
+  </data>
+  <data name="WarningHorizontalMarginsShouldBeLessThanPaperWidth" xml:space="preserve">
+    <value>Горизонтальные поля должны быть меньше ширины бумаги.</value>
+  </data>
+  <data name="WarningReportIsTooWideToFitHorizontallyInASingleColumn" xml:space="preserve">
+    <value>Отчет слишком широк, чтобы горизонтально поместиться в одну колонку.</value>
+  </data>
+  <data name="WarningReportIsTooWideToFitHorizontallyOnASinglePage" xml:space="preserve">
+    <value>Отчет слишком широк, чтобы горизонтально поместиться на одной странице.</value>
+  </data>
+  <data name="WarningReportWidthIsLessThanOneColumn" xml:space="preserve">
+    <value>Ширина отчета составляет менее одного столбца. Отрисоваемый отчет будет расти горизонтально, чтобы заполнить ширину столбца.</value>
+  </data>
+  <data name="WarningReportWidthIsLessThanThePaperWidth" xml:space="preserve">
+    <value>Ширина отчета меньше ширины бумаги. Отрисоваемый отчет будет расти горизонтально, чтобы заполнить ширину бумаги.</value>
+  </data>
+  <data name="WarningVerticalMarginsShouldBeLessThanPaperHeight" xml:space="preserve">
+    <value>Вертикальная маржа должна быть меньше высоты бумаги.</value>
+  </data>
+  <data name="WarningPageSectionsTotalHeightShouldBeLessThanThePaperHeight" xml:space="preserve">
+    <value>Общая высота разделов страницы должна быть меньше доступной высоты бумаги.</value>
+  </data>
+  <data name="ErrorBeginMarginCannotBeGreaterThanBeginSectionHeight" xml:space="preserve">
+    <value>Значение начала маржи {0} может быть больше, чем высота раздела {1}.</value>
+  </data>
+  <data name="ErrorEndMarginCannotBeGreaterThanEndSectionHeight" xml:space="preserve">
+    <value>Значение конечной маржи {0} может быть больше, чем высота конечного раздела {1}.</value>
+  </data>
   <data name="EditInstanceReportSourceControl_Label" xml:space="preserve">
     <value>Выберите экземпляр объекта отчета:</value>
   </data>

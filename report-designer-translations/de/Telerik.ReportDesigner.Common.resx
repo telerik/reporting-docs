@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DialogsFont_Name" xml:space="preserve">
-    <value>Segoe UI</value>
-  </data>
-  <data name="ReportBookDesign_Font_Name" xml:space="preserve">
-    <value>Segoe UI</value>
-  </data>
   <data name="DateTimeUtils_FormatTimeRelative_NotYet" xml:space="preserve">
     <value>Noch nicht</value>
   </data>
@@ -159,10 +153,6 @@
   <data name="ErrorDialog_Caption" xml:space="preserve">
     <value>Fehler</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DialogsFont_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value>Arial</value>
-  </data>
   <data name="FontSize_Error_Invalid" xml:space="preserve">
     <value>Ungültiger Schriftgrößenwert: </value>
   </data>
@@ -181,7 +171,10 @@
   <data name="ReportBookDesign_Empty" xml:space="preserve">
     <value>Das Berichtsbuch ist leer.</value>
   </data>
-  <data name="ReportBookDesign_Font_Name" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value>Arial</value>
+  <data name="DialogsFont_Name" xml:space="preserve">
+    <value>Segoe UI</value>
+  </data>
+  <data name="ReportBookDesign_Font_Name" xml:space="preserve">
+    <value>Segoe UI</value>
   </data>
 </root>

@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Insert_CrossSectionItem_Description" xml:space="preserve">
+    <value>L’élément transversale est utilisé pour afficher un primitif graphique (ligne ou rectangle) à travers une ou plusieurs sections de rapport.</value>
+  </data>
+  <data name="Insert_CrossSectionItem_Text" xml:space="preserve">
+    <value>Article transcoupe</value>
+  </data>
   <data name="PreviewTab_Back" xml:space="preserve">
     <value>Revenir</value>
   </data>

@@ -117,6 +117,81 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackgroundOverlay_Name" xml:space="preserve">
+    <value>Superposition d’arrière-plan</value>
+  </data>
+  <data name="BackgroundOverlayOffsetDescr" xml:space="preserve">
+    <value>Représente le décalage à partir du coin supérieur gauche du rapport.</value>
+  </data>
+  <data name="BackgroundOverlay_Description" xml:space="preserve">
+    <value>Représente une image de superposition d’arrière-plan sur la surface de conception ou sur une page imprimable.</value>
+  </data>
+  <data name="BackgroundOverlayOffsetName" xml:space="preserve">
+    <value>Compenser</value>
+  </data>
+  <data name="FiltersName" xml:space="preserve">
+    <value>Filtres</value>
+  </data>
+  <data name="PictureBoxValueTypeBase64Image" xml:space="preserve">
+    <value>Image codée base64</value>
+  </data>
+  <data name="PictureBoxValueTypeInlineImage" xml:space="preserve">
+    <value>Image en ligne</value>
+  </data>
+  <data name="PictureBoxValueTypeSvgMarkup" xml:space="preserve">
+    <value>Balisage SVG</value>
+  </data>
+  <data name="BackgroundOverlayRenderInReportDocumentDescr" xml:space="preserve">
+    <value>Valeur indiquant si la superposition d’arrière-plan doit être rendue dans le document du rapport de sortie.</value>
+  </data>
+  <data name="BackgroundOverlayRenderInReportDocumentName" xml:space="preserve">
+    <value>Rendre dans le document de rapport</value>
+  </data>
+  <data name="CrossSectionItemDescription" xml:space="preserve">
+    <value>Représente un élément trans-section.</value>
+  </data>
+  <data name="CrossSectionItemName" xml:space="preserve">
+    <value>Article trans-section</value>
+  </data>
+  <data name="EndSectionDescription" xml:space="preserve">
+    <value>Spécifie la section de rapport sur laquelle l’élément transcoupe se termine.</value>
+  </data>
+  <data name="EndSectionName" xml:space="preserve">
+    <value>Section de fin</value>
+  </data>
+  <data name="BeginSectionDescription" xml:space="preserve">
+    <value>Spécifie la section de rapport à partir de laquelle l’élément transcoupe commence.</value>
+  </data>
+  <data name="BeginSectionName" xml:space="preserve">
+    <value>Commencer la section</value>
+  </data>
+  <data name="CrossSectionItemTypeDescr" xml:space="preserve">
+    <value>Spécifie le type d’élément transse.</value>
+  </data>
+  <data name="CrossSectionItemTypeName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CrossSectionItemPositionDescr" xml:space="preserve">
+    <value>La position de l’élément transcoupe par rapport aux autres éléments de la page.</value>
+  </data>
+  <data name="CrossSectionItemPositionName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="BeginMarginDescription" xml:space="preserve">
+    <value>La marge supérieure de l’élément cross-section, mesurée à partir du haut de sa section Begin.</value>
+  </data>
+  <data name="BeginMarginName" xml:space="preserve">
+    <value>Commencer la marge</value>
+  </data>
+  <data name="EndMarginDescription" xml:space="preserve">
+    <value>La marge inférieure de l’élément cross-section, mesurée à partir du bas de sa section d’extrémité</value>
+  </data>
+  <data name="EndMarginName" xml:space="preserve">
+    <value>Marge de fin</value>
+  </data>
+  <data name="ActionsAreNotSupportedOnCSI" xml:space="preserve">
+    <value>Les actions ne sont pas prises en charge par des éléments transse.</value>
+  </data>
   <data name="Table_FreezeColumnHeaders_Description" xml:space="preserve">
     <value>Indique si les en-têtes du groupe de colonne doivent rester visibles tout en faisant défiler verticalement les données de ce tableau.</value>
   </data>

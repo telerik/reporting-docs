@@ -159,7 +159,6 @@
   <data name="ErrorDialog_Caption" xml:space="preserve">
     <value>Ошибка</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="FontSize_Error_Invalid" xml:space="preserve">
     <value>Недопустимое значение размера шрифта: </value>
   </data>

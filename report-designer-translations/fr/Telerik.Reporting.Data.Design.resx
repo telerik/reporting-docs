@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DesignerParametersPage_Value_Tooltip" xml:space="preserve">
+    <value>Valeur constante (expressions non prises en charge)</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_TreatConsecutiveRecordSeparatorsAsOne" xml:space="preserve">
+    <value>Traiter les séparateurs records consécutifs comme un</value>
+  </data>
   <data name="WebServiceDataSource_PreviewDataSourcePage_DownloadLabel" xml:space="preserve">
     <value>Cliquez sur 'Télécharger' pour prévisualiser les résultats de la source de données...</value>
   </data>

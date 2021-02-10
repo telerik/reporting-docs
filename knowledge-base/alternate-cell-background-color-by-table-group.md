@@ -1,5 +1,5 @@
 ---
-title: Alternate cell background color by table group
+title: Alternate Cell Background Color by Table Group
 description: How to change the cell background color based on table group
 type: how-to
 page_title: Alternate cell background color by table group
@@ -28,12 +28,12 @@ res_type: kb
 ## Description
 What [Conditional Formatting](../styling-conditional-formatting) may be used to alternate the detail cell background color based on table groups?  
 
-For alternating detail rows in a table, you may use _Conditional Formatting_ based on the following [Expression](../report-expressions) and set different colors for 
+For alternating detail rows in a table, you may use __Conditional Formatting__ based on the following [Expression](../report-expressions) and set different colors for 
 odd and even rows:
 ```
 RowNumber()%2
 ```  
-
+The '%' is the remainder after division operator.
 The straight-forward idea based on the above solution is to set the _Expression_ to depend on the group:
 ```
 =RowNumber('groupName')%2

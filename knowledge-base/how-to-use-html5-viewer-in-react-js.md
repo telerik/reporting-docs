@@ -88,7 +88,7 @@ and can be copied to the React application's **public/assets** folder. Then refe
               .telerik_ReportViewer({
                   serviceUrl: 'https://demos.telerik.com/reporting/api/reports/',
                   reportSource: {
-                      report: 'Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary'
+                      report: 'ReportBook.trbp'
                   },
                   scale: 1.0,
                   viewMode: 'INTERACTIVE',

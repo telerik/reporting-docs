@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ReportSkipBlankPagesDescription" xml:space="preserve">
+    <value>Valor que determina si las páginas sin contenido significativo deben ser salidas.</value>
+  </data>
+  <data name="Report_SkipBlankPagesProperty_Name" xml:space="preserve">
+    <value>Omitir páginas en blanco</value>
+  </data>
   <data name="BackgroundOverlay_Name" xml:space="preserve">
     <value>Superposición de fondo</value>
   </data>

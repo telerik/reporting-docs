@@ -1,9 +1,9 @@
 ---
-title: How to Retrieve the Connection Strings from Environment Variables
-description: This article explains how to get the connection string from environment variable
+title: How to Retrieve the Oracle Connection Strings from Environment Variables
+description: This article explains how to get the Oracle connection string from environment variable in .NET Core 
 type: troubleshooting
-page_title: Retrieving the Connection Strings from Environment Variables
-slug: how-to-retrieve-the-connection-strings-from-environment-variables
+page_title: Retrieving the Connection Strings from Environment Variables in .NET Core 
+slug: how-to-retrieve-the-oracle-connection-strings-from-environment-variables
 position: 
 tags: 
 ticketid: 1504053
@@ -22,10 +22,10 @@ res_type: kb
 
 
 ## Description
-In order to retrieve the connection strings from environment variables, the keys there must be formatted in a specific way, so they can be read from the underlying IConfiguration. 
+In order to retrieve the connection strings from environment variables, the keys there must be formatted in a specific way, so they can be read from the underlying **IConfiguration**. 
 
 ## Solution
-A single key-value pair is not sufficient to define the Oracle connection string and provider name, so environment should hold two separate entries - one for the connection string and one - for the provider name. I tested it on my side and managed to connect to our test Oracle database using the following code snippet:
+A single key-value pair is not sufficient to define the Oracle connection string and provider name, so environment should hold two separate entries - one for the connection string and one - for the provider name:
  
  ```CSharp
  /// <summary>
@@ -43,9 +43,9 @@ A single key-value pair is not sufficient to define the Oracle connection string
         }
 ```
 
-The first two lines just set the environment variables that contain information about the connection and provider name. Please note the specific colon character (:)that acts as a delimiter between the keys hierarchy. I used MyOracleApp_ as a prefix by which my environment variables will be filtered from the rest.
+The first two lines just set the environment variables that contain information about the connection and provider name. Note the specific colon character (:)that acts as a delimiter between the keys hierarchy. **MyOracleApp_** is used as a prefix by which the environment variables will be filtered from the rest.
 
-The method ResolveSpecificReportingConfiguration must be called in the Startup.cs like this:
+The method **ResolveSpecificReportingConfiguration** must be called in the **Startup.cs** like this:
 
  ```CSharp
 // Configure dependencies for ReportsController.
@@ -61,8 +61,6 @@ The method ResolveSpecificReportingConfiguration must be called in the Startup.c
                                            new UriReportSourceResolver(reportsPath))
                 });
 ```
-
-Please replace the OracleConn string with PtmsConnection to make it work on your end and let us know if you need further assistance.
 
 
 

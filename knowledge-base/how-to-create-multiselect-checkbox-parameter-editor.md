@@ -28,9 +28,9 @@ Custom parameter editors are defined through the **parameterEditors** [(Report V
 
 Each editor is an object which contains two methods: **match** and **createEditor**.
 
-The **match** method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name, allowNull, availableValues, multiValue, type and etc.
+The **match** method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name, allowNull, availableValues, multiValue, type, etc.
 
-The main work for creating and utilizing the parameter editor is done in the **createEditor** method. Its purpose is to create the parameter editor UI and wire it to the **parameterChanged** callback when a new value is selected. The return result is a new object containing the **beginEdit** method which is ttry point for creating the editor from the viewer.
+The main work for creating and utilizing the parameter editor is done in the **createEditor** method. Its purpose is to create the parameter editor UI and wire it to the **parameterChanged** callback when a new value is selected. The return result is a new object containing the **beginEdit** method which is the entry point for creating the editor from the viewer.
 
 The following example illustrates how to use the [Kendo CheckBoxGroup](https://docs.telerik.com/kendo-ui/controls/editors/checkboxgroup/overview) widget for a multi parameter value parameter editor which also has available values.
 

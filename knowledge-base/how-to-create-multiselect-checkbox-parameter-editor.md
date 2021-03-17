@@ -5,7 +5,7 @@ type: how-to
 page_title: How to Create MultiSelect CheckBox Parameter Editor
 slug: how-to-create-multiselect-checkbox-parameter-editor
 position: 
-tags: 
+tags: html5, report viewer
 ticketid: 1507365
 res_type: kb
 ---
@@ -49,7 +49,7 @@ The following example illustrates how to use the [Kendo CheckBoxGroup](https://d
             return Boolean(parameter.availableValues) && parameter.multivalue;
         }
 
-        function createCustomEditor(placeholder, options) {
+        function createEditorFunction(placeholder, options) {
             let checkboxGroupElement = $(placeholder).html("<ul></ul>");
             let valueChangedCallback = options.parameterChanged;
             let parameter;
@@ -89,7 +89,7 @@ The following example illustrates how to use the [Kendo CheckBoxGroup](https://d
                     },
                     parameterEditors: [{
                         match: matchFunction,
-                        createEditor: createCustomEditor
+                        createEditor: createEditorFunction
                     }],
                     viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
                     scaleMode: telerikReportViewer.ScaleModes.FIT_PAGE,
@@ -100,6 +100,8 @@ The following example illustrates how to use the [Kendo CheckBoxGroup](https://d
 
         });
 ```
+![CheckBoxGroup Preview](resources/CBGroup.PNG)
+
 
 ## See Also
 [What's new in Kendo UI for jQuery](https://www.telerik.com/blogs/whats-new-kendo-ui-jquery-r1-2021) 

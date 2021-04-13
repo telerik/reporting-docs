@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-For clarity, I will explain the requirement in a particular context, as coming from a user.
+For clarity, I will explain the requirement in a particular context, as requested by a user.  
 When generating a report that displays the list of movements for a list of accounts, it's possible (and quite frequent) for a single account to require multiple pages for 
 printing. In order to help the users understand what they are seeing and potentially quickly find errors in their external documents (for instance, bank statement), it is 
 convenient to print on the bottom of each page the total credit, debit amount up to this point in the printout. The above should only be displayed when a group is printed on
@@ -31,7 +31,7 @@ multiple pages and not on the last page.
 Here is how this can be done with Telerik Reporting.
 
 ## Solution
-Next, you may find two [custom user aggregate functions](../expressions-user-aggregate-functions) that may be used to accomplish the requirement. The first one is for the 
+Next, you may find two [custom user aggregate functions](../expressions-user-aggregate-functions) that can be used to accomplish the requirement. The first one is for the 
 [Page Header](../designing-reports-creating-page-headers-and-footers):
 ```CSharp
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageHeaderSumFromPrevPage")]
@@ -187,5 +187,5 @@ Format("Account {0} continues on next page. Value transitioning to next page: {1
 PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account))),
 "")
 ```
-This expression compares the last 'account' values for the detail and the group footer scopes on the same page, and types the message when they differ, or there is no group 
-footer on the page.
+This expression compares the last 'account' values for the detail and the group footer scopes on the same page, and types the message that the account continues on the next page and the accummulated sum when they differ, or there is no group footer on the page.  
+A sample report definition and a ClassLibrary project wiht the custom aggregate functions demonstrating the approach may be found in our reporting samples GitHub repo - [Summary per page](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page).

@@ -26,12 +26,67 @@ For clarity, I will explain the requirement in a particular context, as requeste
 When generating a report that displays the list of movements for a list of accounts, it's possible (and quite frequent) for a single account to require multiple pages for 
 printing. In order to help the users understand what they are seeing and potentially quickly find errors in their external documents (for instance, bank statement), it is 
 convenient to print on the bottom of each page the total credit, debit amount up to this point in the printout. The above should only be displayed when a group is printed on
-multiple pages and not on the last page.
+multiple pages and the current one is not the last page.
 
 Here is how this can be done with Telerik Reporting.
 
 ## Solution
-Next, you may find two [custom user aggregate functions](../expressions-user-aggregate-functions) that can be used to accomplish the requirement. The first one is for the 
+Next, you may find two [custom user aggregate functions](../expressions-user-aggregate-functions) that can be used to accomplish the requirement. 
+
+The fields in the classes need to be static, because for each page we create a new instance of the aggregate and we need to preserve the data from all pages. On the other hand the fields are marked with _[ThreadStatic]_ so that if two report renderings occur simultaneously (like in a web application) they do not interfere.
+
+The first aggregate is for the Page Footer:
+```CSharp
+[AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageFooterSumUntilNow")]
+class PageFooterSumUntilNow : IAggregateFunction
+{
+    [ThreadStatic]
+    static decimal result;
+
+    [ThreadStatic]
+    static string currentGroupByValue;
+
+    public void Accumulate(object[] values)
+    {
+        // The aggregate function expects one parameter
+        object value = values[0];
+
+        // null values are not aggregated
+        if (null == value)
+        {
+            return;
+        }
+
+
+        var groupByValue = (string)values[1];
+
+        if (groupByValue != currentGroupByValue)
+        {
+            currentGroupByValue = groupByValue;
+            result = 0M;
+        }
+
+        result += (decimal)value;
+    }
+
+    public object GetValue()
+    {
+        return result;
+    }
+
+    public void Init()
+    {
+    }
+
+    public void Merge(IAggregateFunction aggregateFunction)
+    {
+    }
+}
+```
+The aggregate _PageFooterSumUntilNow_ accummulates the corresponding value (the first argument) inside the group (grouped by the second argument) up to 
+the current point, which is the end of the group or the end of the current page when the group finishes on the current page. 
+
+The second custom aggregate is for the 
 [Page Header](../designing-reports-creating-page-headers-and-footers):
 ```CSharp
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageHeaderSumFromPrevPage")]
@@ -113,58 +168,8 @@ class PageHeaderSumFromPrevPage : IAggregateFunction
 }
 ```
 The aggregate _PageHeaderSumFromPrevPage_ accumulates the corresponding 
-value (the first argument) inside the group (grouped by the second argument) up to the end of the previous page. The current page is provided as the third argument.
-
-The second custom aggregate is for the Page Footer:
-```CSharp
-[AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageFooterSumUntilNow")]
-class PageFooterSumUntilNow : IAggregateFunction
-{
-    [ThreadStatic]
-    static decimal result;
-
-    [ThreadStatic]
-    static string currentGroupByValue;
-
-    public void Accumulate(object[] values)
-    {
-        // The aggregate function expects one parameter
-        object value = values[0];
-
-        // null values are not aggregated
-        if (null == value)
-        {
-            return;
-        }
-
-
-        var groupByValue = (string)values[1];
-
-        if (groupByValue != currentGroupByValue)
-        {
-            currentGroupByValue = groupByValue;
-            result = 0M;
-        }
-
-        result += (decimal)value;
-    }
-
-    public object GetValue()
-    {
-        return result;
-    }
-
-    public void Init()
-    {
-    }
-
-    public void Merge(IAggregateFunction aggregateFunction)
-    {
-    }
-}
-```
-The aggregate _PageFooterSumUntilNow_ accummulates the corresponding value (the first argument) inside the group (grouped by the second argument) up to 
-the current point, which is the end of the group or the end of the current page when the group finishes on the current page. 
+value (the first argument) inside the group (grouped by the second argument) up to the end of the previous page. The current page is provided as the third argument. 
+The idea derives from the page footer aggregate, but we take into account that the accumulation of the current page's data needs to be postponed after the current page hence we need the page number to be passed as well.  
 
 The Page Header aggregate may be used only in a page section as it requires the PageNumber that is available only there. For example, in the following 
 [Expression](../designing-reports-item-binding-expressions) inside the Page Header section:

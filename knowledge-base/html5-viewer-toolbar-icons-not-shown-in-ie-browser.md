@@ -38,7 +38,7 @@ The problem is related to caching - in some versions of IE (see _Notes_ section)
 
 ## Suggested Workarounds
 Upgrade the Internet Explorer browser. Check for an appropriate version under _Notes_ section.
-
+If you are using the `telerikReportViewerTemplate.html` template, try switching to the FontAwesome template, `telerikReportViewerTemplate-FA.html`
 ## Notes
 * IE version that did not experience the problem on our side :
     + 11.1155.15063.0.

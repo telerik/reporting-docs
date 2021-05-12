@@ -109,7 +109,7 @@ and can be copied to the Vue application's **assets** folder (*src/assets/Report
 
 7. Add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R2 2020\Html5\ReportViewer\js*) to **assets** (*src/assets/ReportViewer/js*).
 
-8. Create a new report viewer component and configure the routes accordingly. The new component contains a *div* element to hold the report viewer object and applies CSS to this element. The component calls the **telerik_ReportViewer** method to create the report viewer with the specified configuration options. It is important that the **serviceUrl** option points to the URL of a working [Reporting REST Service](../https://docs.telerik.com/reporting/telerik-reporting-rest-conception). How to implement this service is described [here](../telerik-reporting-rest-service-aspnetcore-mvc-core3).
+8. Create a new report viewer component and configure the routes accordingly. The new component contains a *div* element to hold the report viewer object and applies CSS to this element. The component calls the **telerik_ReportViewer** method to create the report viewer with the specified configuration options. It is important that the **serviceUrl** option points to the URL of a working [Reporting REST Service](../telerik-reporting-rest-conception). How to implement this service is described [here](../telerik-reporting-rest-service-aspnetcore-mvc-core3).
 
 	```
 	<template>

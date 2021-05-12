@@ -66,7 +66,7 @@ The following guide assumes previous knowledge of React:
 4. Create new **assets** folder inside **public** and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js*).
 Refer the path to the file in **index.html** as:
     ```
-    <script src="./assets/telerikReportViewer-15.0.21.120.min.js"></script>
+    <script src="/assets/telerikReportViewer-15.0.21.120.min.js"></script>
     ```
 	
 5. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the
@@ -74,7 +74,7 @@ HTML5 Report Viewer. The subset is available in the Telerik Reporting installati
 and can be copied to the React application's **public/assets** folder. Then reference it in **index.html**:
 
 	```
-	<script src="./assets/telerikReportViewer.kendo-15.0.21.120.min.js"></script>
+	<script src="/assets/telerikReportViewer.kendo-15.0.21.120.min.js"></script>
 	```
 
 6. Create a new report viewer component (*components/ReportViewer.js*) and configure the routes accordingly. The new component would contain the following template, scripts, and styles:

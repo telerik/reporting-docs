@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Map_GenericTileProvider_UserAgent_Name" xml:space="preserve">
+    <value>Agente de usuario</value>
+  </data>
+  <data name="Map_GenericTileProvider_UserAgent_Description" xml:space="preserve">
+    <value>El valor de encabezado del Agente de usuario que se usará al enviar solicitudes a los servidores de proveedores de teselas.</value>
+  </data>
+  <data name="RuntimeSettingsDescription" xml:space="preserve">
+    <value>Colección que contiene la configuración de representación de exportación específica del informe.</value>
+  </data>
+  <data name="Report_RuntimeSettingsProperty_Name" xml:space="preserve">
+    <value>Configuración de tiempo de ejecución</value>
+  </data>
   <data name="ReportSkipBlankPagesDescription" xml:space="preserve">
     <value>Valor que determina si las páginas sin contenido significativo deben ser salidas.</value>
   </data>

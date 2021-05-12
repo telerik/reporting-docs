@@ -117,6 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Map_GenericTileProvider_UserAgent_Name" xml:space="preserve">
+    <value>Агент пользователя</value>
+  </data>
+  <data name="Map_GenericTileProvider_UserAgent_Description" xml:space="preserve">
+    <value>Значение заголовка агента пользователя, которое будет использоваться при отправке запросов на серверы поставщика плитки.</value>
+  </data>
+  <data name="RuntimeSettingsDescription" xml:space="preserve">
+    <value>Коллекция, содержащая настройки рендеринга экспорта с конкретными отчетами.</value>
+  </data>
+  <data name="Report_RuntimeSettingsProperty_Name" xml:space="preserve">
+    <value>Настройки времени выполнения</value>
+  </data>
   <data name="ReportSkipBlankPagesDescription" xml:space="preserve">
     <value>Значение определения того, должны ли страницы без значительного содержимого быть выходными.</value>
   </data>

@@ -69,6 +69,9 @@ namespace NameSpace
             { // Our custom rendering extension format (XML) does not have pages, so we do not need to count pages.
                 return true;
             }
+	    
+	    // The purpose of this method call is to evaluate the Expressions on the page sections of the only page that we have
+	    evalHeaderFooterCallback(1, 1, report);
 
             var stream = createStreamCallback("report/CustomExtensionName", "xml", Encoding.UTF8, "application/xml");
 
@@ -109,6 +112,12 @@ if (ShouldCountOnly(renderingContext))
     return true;
 }
 ```
+* If the report has [Page Header/Footer](../designing-reports-creating-page-headers-and-footers) and report items with [Expressions](../report-expressions) in them, we need to call the following method in order to evaluate the Expressions:
+```C#
+evalHeaderFooterCallback(1, 1, report);
+```
+In the above code, we assume that the XML document contains only one page. Hence, the arguments are page '__1__' from a total of __1__ page and the __report__. If we don't call the method, the raw Expressions will be displayed as content of the report items in the page sections.  
+It is up to the implementor of the custom rendering extension to specify how many pages there will be in the final document and what should be the content of each page section. This is the main reason for the Page Header/Footer evaluation to happen separately from the other sections' content.
 * Create a stream for storing the rendered document. The name of the stream should be formed as 
 "report/{extension name from the config file}", for example, in this case, it should be "report/CustomExtensionName". Here is 
 the relevant code from the above snippet:

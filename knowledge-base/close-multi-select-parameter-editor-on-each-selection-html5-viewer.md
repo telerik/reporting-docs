@@ -22,10 +22,10 @@ res_type: kb
 
 
 ## Description
-The multi-select parameter editor in the Html5Report Viewer is a [Kendo Multiselect widget](../../kendo-ui/api/javascript/ui/multiselect) .Generally, you may control 
+The multi-select parameter editor in the Html5 Report Viewer is a [Kendo Multiselect widget](../../kendo-ui/api/javascript/ui/multiselect) .Generally, you may control 
 whether its popup with the available values is opened or closed. In some cases, it is required that the popup closes on each item selection. 
 The implementation of the Html5 Viewer doesn't include this functionality and the popup with the available values stays opened until the user clicks outside the popup area.  
-The reason for this is that if the _AutoRefresh_ of the corresponding Report Parameter is _True_ and the popup closes on each item select, the report would be 
+The reason for this is that if the __AutoRefresh__ of the corresponding Report Parameter is __True__ and the popup closes on each item select, the report would be 
 automatically refreshed on each item selection, which may be overhead.
 
 ## Suggested Workarounds

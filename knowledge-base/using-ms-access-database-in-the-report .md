@@ -31,7 +31,7 @@ This article lists the required steps for setting MS Access Database and using i
 ## Solution
 1. Create a sample database in **Access**:
 ![](resources/AccessDB.png)
-2. [Create a new report](../reporting/creating-the-report) and insert **SQL Data Source**.
+2. [Create a new report](../creating-the-report) and insert **SQL Data Source**.
 3. Click on **Build new data connection** and select **OleDB Data Provider** from the dropdown.
 4. The data source has to be a **Microsoft Access Database File (OLE DB)**.
 5. Browse to the file’s location. 

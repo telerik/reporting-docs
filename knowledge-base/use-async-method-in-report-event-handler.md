@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 The report rendering is synchronous process as the items need to be rendered in order. __Async/Await__ have been introduced with C# 5.0 and .NET Framework 4.5. 
-Reporting engine code is written in .NET 4 and the report events are not marked as _async_. That is why it is not possible to use _await_ inside the report events.  
+Reporting engine code targets .NET 4 and the report events are not marked as _async_. That is why it is not possible to use _await_ inside the report events.  
 If you already have _async_ methods, for example, for fetching data and you want to use them as data providers for you reports, you may use the approach 
 described in this article.
 

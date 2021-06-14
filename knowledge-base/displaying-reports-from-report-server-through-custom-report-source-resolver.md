@@ -22,11 +22,13 @@ res_type: kb
 
 
 ## Description
-Sometimes you want to avoid adding the Report Server credentials in the initialization of the viewer. This can be done by the usage of Custom Report Source Resolver.
+Sometimes you want to avoid adding the Report Server's credentials in the initialization of the viewer. This can be done by the usage of [Custom Report Source Resolver](../telerik-reporting-rest-custom-report-resolver).
 
 ## Solution
-1. You need to add references to 
-2. The CRSR:
+1. You need to add references to the **Telerik.ReportServer.Services.Models** assembly.
+
+2. In the Resolve method of the CustomReportSourceResolver, firstly, you should create a setting for the Report Server connection. Then based on the passed category and report name from the viewer, you need to get the report from the Report Server and return it as an InstanceReportSource. Eventually, the CustomReportSourceResolver has to look as follows:
+
 ```CSharp
  public class CustomReportSourceResolver : IReportSourceResolver
  {
@@ -38,7 +40,7 @@ Sometimes you want to avoid adding the Report Server credentials in the initiali
 
          var settings = new Telerik.ReportServer.HttpClient.Settings()
          {
-             BaseAddress = "http://ntodorova:83/"
+             BaseAddress = "http://localhost:83/"
          };
          Telerik.Reporting.Report report = null;
 
@@ -79,4 +81,3 @@ Sometimes you want to avoid adding the Report Server credentials in the initiali
      }
  }
 ```
-3. 

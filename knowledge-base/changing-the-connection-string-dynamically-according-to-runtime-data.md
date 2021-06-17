@@ -331,6 +331,7 @@ Class ReportConnectionStringManager
     End Sub
 End Class
 ````
+
 In order to set the connection strings at run-time you have to instantiate the ReportConnectionStringManager with the new connection string you want to use. Then you have invoke the UpdateReportSource with a <a href="/t-telerik-reporting-reportsource" target="_blank">ReportSource</a>. This method returns an updated ReportSource with the new connection string. The updated ReportSource then can be used for ReportViewer.ReportSource or for <a href="/t-telerik-reporting-processing-reportprocessor" target="_blank">ReportProcessor</a>. For example check out the following check out the following sample:
 
 ````C#

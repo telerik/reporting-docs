@@ -1,5 +1,5 @@
 ---
-title: Changing the connection string dynamically according to runtime data - Telerik Reporting - KB
+title: Changing the connection string dynamically according to runtime data
 description: Changing the connection string dynamically according to runtime data.
 page_title: Changing the connection string dynamically according to runtime data
 type: how-to
@@ -8,11 +8,9 @@ tags: telerik reporting, report items, export reports, deliver reports to any ap
 res_type: kb
 ---
 
-# Changing the connection string dynamically according to runtime data
-
 ## Important Notes
 
-The recommended approach for modifying the connection string dynamically is through dedicated Report Parameter - check <a href="/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter" target="_blank">Change Connection String dynamically through a report parameter</a> KB article.
+The recommended approach for modifying the connection string dynamically is through dedicated Report Parameter - check <a href="/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter" target="_blank">Change Connection String dynamically through a report parameter</a> KB article.
 
 The approach in the current article is suitable for viewers using embedded Reporting engine, e.g. Desktop Viewers and the obsolete ASP.NET Web Forms Report Viewer.
 

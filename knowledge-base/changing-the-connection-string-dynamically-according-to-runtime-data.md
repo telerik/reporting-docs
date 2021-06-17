@@ -2,7 +2,8 @@
 title: Changing the connection string dynamically according to runtime data - Telerik Reporting - KB
 description: Changing the connection string dynamically according to runtime data.
 page_title: Changing the connection string dynamically according to runtime data
-type: troubleshooting
+type: how-to
+slug: changing-the-connection-string-dynamically-according-to-runtime-data
 tags: telerik reporting, report items, export reports, deliver reports to any application, creating reports, accessing and managing data
 res_type: kb
 ---

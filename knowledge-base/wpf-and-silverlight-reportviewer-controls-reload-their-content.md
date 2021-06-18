@@ -16,8 +16,8 @@ When you interact with the container of the WPF|Silverlight ReportViewer like ch
 ## Solution
  Telerik UI for WPF and Telerik UI for Silverlight provide RadTabControl allowing you to preserve the content on interaction with tabs:   
 
-- <a href="http://docs.telerik.com/devtools/silverlight/controls/radtabcontrol/overview2" target="_blank">Telerik UI for Silverlight RadTabControl</a>
-- <a href="http://docs.telerik.com/devtools/wpf/controls/radtabcontrol/overview2" target="_blank">Telerik UI for WPF RadTabControl</a>
+- <a href="../../devtools/silverlight/controls/radtabcontrol/overview2" target="_blank">Telerik UI for Silverlight RadTabControl</a>
+- <a href="../../devtools/wpf/controls/radtabcontrol/overview2" target="_blank">Telerik UI for WPF RadTabControl</a>
 
- More details about the required settings are available in <a href="http://docs.telerik.com/devtools/wpf/controls/radtabcontrol/howto/how-to-keep-content" target="_blank">RadTabControl: How to Keep the Content State</a>.
+ More details about the required settings are available in <a href="../../devtools/wpf/controls/radtabcontrol/howto/how-to-keep-content" target="_blank">RadTabControl: How to Keep the Content State</a>.
 

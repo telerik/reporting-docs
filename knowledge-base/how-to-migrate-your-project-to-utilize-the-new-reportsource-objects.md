@@ -9,25 +9,25 @@ res_type: kb
    
 # Description
 
-Telerik Reporting is an embedded reporting engine developed on top of Microsoft’s .NET framework. As such the reports are CLR objects and  can be used from the developers following the basic concepts of the programming language and the .NET platform. With the introduction of the XML report definition the reports can exist not only as CLR types and objects in the memory but as XML markup stored in different ways (file, database, etc.). As we do not want to limit the users to work with only objects or files the need for a unified way for referencing reports in the applications emerged - [Report Sources](../report-sources).  
+Telerik Reporting is an embedded reporting engine developed on top of Microsoft’s .NET framework. As such the reports are CLR objects and can be used by the developers following the basic concepts of the programming language and the .NET platform. With the introduction of the XML report definition the reports can exist not only as CLR types and objects in the memory but as XML markup stored in different ways (file, database, etc.). As we do not want to limit the users to work with only objects or files the need for a unified way for referencing reports in the applications emerged - [Report Sources](../report-sources).  
    
 
-While the pre-Q2 2012 reports still work we strongly advice to migrate your applications to the new concept.  This article describes the affected APIs of Telerik Reporting and what steps to be taken in order to start using the new ReportSource objects.  
+While the pre-Q2 2012 reports still work we strongly advise migrating your applications to the new concept.  This article describes the affected APIs of Telerik Reporting and what steps to be taken in order to start using the new ReportSource objects.  
    
 
 The available report sources are:  
  
-- [InstanceReportSource](../t-telerik-reporting-instancereportsource) - This report source is used when you have a reference to an existing Report object and covers most of the existing scenarios including the SubReport item, the WinForms, WPF and ASP<span>.</span>NET viewers and the programmatic rendering of report using the [ReportProcessor](../t-telerik-reporting-processing-reportprocessor) ([RenderReport Method](../overload-telerik-reporting-processing-reportprocessor-renderreport) and  [PrintReport Method](../m-telerik-reporting-processing-reportprocessor-printreport)).
+- [InstanceReportSource](../t-telerik-reporting-instancereportsource) - This report source is used when you have a reference to an existing Report object and covers most of the existing scenarios including the SubReport item, the WinForms, WPF and ASP<span>.</span>NET viewers and the programmatic rendering of the report using the [ReportProcessor](../t-telerik-reporting-processing-reportprocessor) ([RenderReport Method](../overload-telerik-reporting-processing-reportprocessor-renderreport) and  [PrintReport Method](../m-telerik-reporting-processing-reportprocessor-printreport)).
 - [TypeReportSource](https://docs.telerik.com/reporting/t-telerik-reporting-typereportsource) - The reports created with Visual Studio are usually stored as .NET classes. To access a .net class declaratively you can use the [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) of the type. Referencing reports using their assembly qualified type name is already used in the NavigateToReportAction, ASP<span>.</span>NET and Silverlight viewers.
 - [UriReportSource](../t-telerik-reporting-urireportsource) - The URI report source allows you to load a report document either from a file path or from an Url.
 - [XmlReportSource](../t-telerik-reporting-xmlreportsource) - The report source allows you to load a report from XML markup (in the form of String, Stream or TextReader).
 
  
-In general the report source represents a pointer to the report (object reference, assembly qualified type name, an URI to a file or XML markup) and [parameters](../p-telerik-reporting-reportsource-parameters). When provided, the values of the ReportSource parameters are applied to the Report parameters at run-time. Prior Q2 2012, these Report parameters were part of the [NavigateToReportAction](../t-telerik-reporting-navigatetoreportaction) (drill-through action) and the [SubReport](../report-items-sub-report) item (master-detail scenario).
+In general, the report source represents a pointer to the report (object reference, assembly qualified type name, a URI to a file or XML markup) and [parameters](../p-telerik-reporting-reportsource-parameters). When provided, the values of the ReportSource parameters are applied to the Report parameters at run-time. Prior to Q2 2012, these Report parameters were part of the [NavigateToReportAction](../t-telerik-reporting-navigatetoreportaction) (drill-through action) and the [SubReport](../report-items-sub-report) item (master-detail scenario).
  
 ## Subreport
  
-The following properties of the SubReport item are now obsolete and when used the compiler will generate the following warnings:
+The properties below of the SubReport item are now obsolete and when used the compiler will generate the following warnings:
 
 - Telerik.Reporting.SubReport.ReportSource property is now of type Telerik.Reporting.ReportSource. Please, use Telerik.Reporting.InstanceReportSource to build existing reports.
 - Telerik.Reporting.SubReport.Parameters property is now obsolete. Please, set a Telerik.Reporting.InstanceReportSource object for the Telerik.Reporting.SubReport.ReportSource property instead and add the parameters to its Parameters collection.
@@ -93,14 +93,12 @@ subReport1.ReportSource = instanceReportSource1
    
  
 ## NavigateToReportAction
-   
 
 The following properties of the NavigateToReportAction are now obsolete and when used the compiler will generate the following warnings:  
 
 - Telerik.Reporting.NavigateToReportAction.ReportDocumentType property is now obsolete. Please use the Telerik.Reporting.NavigateToReportAction.ReportSource property instead with a Telerik.Reporting.TypeReportSource object to build existing reports.
 - Telerik.Reporting.NavigateToReportAction.Parameters property is now obsolete. Please, set a Telerik.Reporting.TypeReportSource object for the Telerik.Reporting.NavigateToReportAction.ReportSource property instead and add the parameters to its Parameters collection.
 
-   
 
 Here is a sample snippet that shows how to specify a report for [NavigateToReportAction](../t-telerik-reporting-navigatetoreportaction) and its corresponding report parameters:  
    
@@ -381,6 +379,7 @@ instanceReportSource.ReportDocument = report1
 Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", instanceReportSource, Nothing)
 ```
 # Conclusion
+
 In this article we list all API changes in Q2 2012 version of Telerik Reporting regarding the new Report Sources.  As shown there is no conceptual difference between the old and new approach as all existing scenarios have direct match of a report source: report instance - [InstanceReportSource](../t-telerik-reporting-instancereportsource) + report instance; type name - [TypeReportSource](../t-telerik-reporting-typereportsource) + type name. Note that you are not limited to these two types of report source and you can easily mix any according to your needs.
 
 The sole purpose of the changes is to extend the existing functionality and fit the XML report definition in the reporting engine while preserving the backwards compatibility. What’s more editing a report in the VS report designer will use the new objects instead of the obsolete properties when saving.

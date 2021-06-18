@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 In the forum thread [Export to XML](https://www.telerik.com/forums/export-to-xml) you can find a sample implementation of custom 
-rendering extension. Here we explain some important requirements that you need to meet in order for the rendering extension 
+XML rendering extension. Here we explain some important requirements that you need to meet in order for the rendering extension 
 to work as expected. 
 
 ## Solution
@@ -43,7 +43,8 @@ In the configuration file of the application, it is necessary to register the Cu
 
 Here is sample code of the _NameSpace.CustomRenderingExtension_ type implementing the 
 [IRenderingExtension](../t-telerik-reporting-processing-irenderingextension) interface, adapted from the example in the above 
-forum thread.
+forum thread. The _XmlReportWriter_ is the class that renders the report items in the custom XML format. Its implementation 
+can be found in the sample from the forum thread.
 ```C#
 namespace NameSpace
 {

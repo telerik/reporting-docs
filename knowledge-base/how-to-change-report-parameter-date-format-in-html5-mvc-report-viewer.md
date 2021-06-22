@@ -13,7 +13,7 @@ Change the default **DateTime** report parameter format in HTML5 MVC Report View
 
 ## Solution
 
-In Telerik Reporting the default element for editing DateTime Paremeters is kendoDatePicker. Its default DateTime format depends on the [culture](../designing-reports-report-globalization) settings of the environment.
+In Telerik Reporting the default element for editing DateTime Parameters is kendoDatePicker. Its default DateTime format depends on the [culture](../designing-reports-report-globalization) settings of the environment.
 
 There are two major ways to change the default DateTime Parameter format that we would describe in this article.
 
@@ -76,9 +76,9 @@ The following script shows how the ReportViewer description would look like in t
 
 2. Create **custom parameter editor** for the DateTime Parameter.
 
-Details on how to create custom parameter editor could be found in [this help article](../html5-report-viewer-howto-custom-parameter-editor).
+Details on how to create custom parameter editor could be found in the article [How to Create a Custom Parameter Editor](../html5-report-viewer-howto-custom-parameter-editor).
 
-The following script section should be added (in the head section) to the ReportViewer .cshtml file
+The following script section should be added (in the head section) to the **ReportViewer.cshtml** file
 
 
 ```html
@@ -126,7 +126,7 @@ The following script section should be added (in the head section) to the Report
 ```
 
 
-The property *ParameterEditors* of the ReportViewer should be set in the body section of the ReportViewer .cshtml file, and it will look like this
+The property *ParameterEditors* of the ReportViewer should be set in the body section of the **ReportViewer.cshtml file**, and it will look like this
 
 ```cs
 <body>
@@ -150,6 +150,3 @@ The property *ParameterEditors* of the ReportViewer should be set in the body se
     )
 </body>
 ```
-
-
-

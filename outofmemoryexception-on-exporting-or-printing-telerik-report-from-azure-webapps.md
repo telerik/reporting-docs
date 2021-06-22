@@ -9,9 +9,10 @@ res_type: kb
 
  
 ## Problem
- GDI+ error or OutOfMemoryException on exporting or printing Telerik report from Azure Web Apps.  
+GDI+ error or OutOfMemoryException occurs when you try to export or print Telerik report from Azure Web Apps.  
+ 
 ## Description   
- Exporting Telerik reports to PDF and Excel formats deployed to Azure Web Apps may result in OutOfMemoryException. The reason for the error is that Windows Azure Web Apps restricts application access to some system resources, including GDI API, and rendering extensions such as PDF would not be able to produce a document.  
+ Exporting Telerik reports to PDF and Excel formats deployed to Azure Web Apps may result in **OutOfMemoryException**. The reason for the error is that Windows Azure Web Apps restricts application access to some system resources, including GDI API, and rendering extensions such as PDF would not be able to produce a document.  
   
  The issue affects also the print operation, which relies on the PDF rendering mechanism.  
   

@@ -9,7 +9,7 @@ res_type: kb
 
   
 ## Description  
- "*The path is not of a legal form.*" error message on processing a Telerik Report in a project targeting **.NET 4.6.2 framework**.  
+**The path is not of a legal form** error message on processing a Telerik Report in a project targeting **.NET 4.6.2 framework**.  
   
  The Exception occurs on processing a Telerik Report that contains a resourced specified by file path e.g. ='C:\Pictures\MyImage.png.' used as **PictureBox.Value** property.  
   

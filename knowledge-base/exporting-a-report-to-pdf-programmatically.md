@@ -8,13 +8,10 @@ tags: styling and formatting reports
 res_type: kb
 ---
 
-## HOW-TO
-
-Export a report to PDF programmatically. 
    
 ## DESCRIPTION
 
-Sometimes it is needed to export a report directly to PDF, without the need to go through the web viewer.
+This article explains how to export a report to PDF without the need to go through the web viewer.
 
 ## SOLUTION
 

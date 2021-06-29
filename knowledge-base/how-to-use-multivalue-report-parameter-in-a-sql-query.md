@@ -7,8 +7,8 @@ slug: how-to-use-multivalue-report-parameter-in-a-sql-query
 res_type: kb
 ---
 
-## Problem    
-How to use MultiValue Report Parameter in a SQL query.  
+## Description    
+This KB article explains how to use MultiValue Report Parameter in a SQL query.  
   
 ## Solution 
 
@@ -20,7 +20,7 @@ A multivalue report parameter's value is evaluated as an **array of objects** - 
     SELECT * from HumanResources.Department
     WHERE (COALESCE(@SelectedValues,Null) IS NULL) OR DepartmentID IN (@SelectedValues)
     ```
-    On configuring s SqlDataSource component with the above Text command, you can map directly the @SelectedValues SQL parameter to a multivalue report parameter - [SqlDataSource Wizard](../sqldatasource-wizard) (step 4).  
+    On configuring SqlDataSource component with the above Text command, you can map directly the @SelectedValues SQL parameter to a multivalue report parameter - [SqlDataSource Wizard](../sqldatasource-wizard) (step 4).  
 
     >Note
     > </br>
@@ -28,7 +28,7 @@ A multivalue report parameter's value is evaluated as an **array of objects** - 
 
 - The value has to be processed to be used in a **SQL StoredProcedure command**.   
 
-    For example, from the report you can pass a string containing the coma-separated values. The SQL parameter expected by the stored procedure can be an *nvarchar*. The *nvarchar* value can be split in the SQL query:  
+    For example, from the report, you can pass a string containing the comma-separated values. The SQL parameter expected by the stored procedure can be an *nvarchar*. The *nvarchar* value can be split in the SQL query:  
 
 ```sql
 USE AdventureWorks
@@ -81,7 +81,7 @@ BEGIN
 END
 GO
 ``` 
-The above is an example of stored procedure and a function splitting a string by a given character.  
+The above is an example of a stored procedure and a function splitting a string by a given character.  
   
 
  On configuring the SqlDataSource component, you can join the selected values of the multivalue report parameter into a single string by using the [Join built-in function](../expressions-text-functions):  

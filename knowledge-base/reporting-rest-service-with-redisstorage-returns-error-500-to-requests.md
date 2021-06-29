@@ -13,7 +13,7 @@ Reporting REST service with RedisStorage returns error 500. As a result on cache
 
 ## Solution   
   
- Details how to configure the RedisStorage are available in [How to: Use Redis storage](../telerik-reporting-rest-howto-use-redis-storage).   
+ Details on how to configure the RedisStorage are available in [How to: Use Redis storage](../telerik-reporting-rest-howto-use-redis-storage).   
 
  Note that the Redis storage requires *StackExchange.Redis.StrongName.dll*,and *Telerik.Reporting.Cache.StackExchangeRedis.dll* built against *StackExchange.Redis.StrongName.dll v1.0.316.0*.   
  If you use a newer version of S*tackExchange.Redis.StrongName.dll*, you will need a [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys%28v=vs.110%29.aspx) for the assembly in the Reporting REST service project's configuration file.  

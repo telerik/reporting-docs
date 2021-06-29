@@ -18,7 +18,7 @@ For more details, check [How to: Set a No Data Message](../report-structure-d
 If the report's DataSource retrieves no records, static sections like [ReportHeaderSection](../designing-reports-understanding-report-structure)and [static groups' sections](../data-items-grouping-data) are rendered, allowing you to add a message and display it.  
 For example, you can add a TextBox item in the ReportHeaderSection and set its Visible property to false. By using [conditional formatting](../styling-conditional-formatting), you can make the TextBox item visible in case an expression like "=Count(1)==0" points there are no visualized data records by the report.
 - **For Sub Report.**  
-You can display a 'NoDataMessage' in the sub report by using the same approach as **For a Report**.  
+You can display a 'NoDataMessage' in the subreport by using the same approach as **For a Report**.  
  If you want to hide the SubReport item and its content, then you can add a binding in the TextBox item's Bindings collection like:  
 
 ```

@@ -7,7 +7,6 @@ slug: exporting-a-report-to-pdf-programmatically
 tags: styling and formatting reports
 res_type: kb
 ---
-
    
 ## DESCRIPTION
 
@@ -17,7 +16,7 @@ This article explains how to export a report to PDF without the need to go throu
 
 You can use the following code snippet to programmatically export the report into **PDF** format from a Web Site or Web Application project:  
    
-````C# 
+````cs
 void ExportToPDF(Telerik.Reporting.Report reportToExport)
     {
         ReportProcessor reportProcessor = new ReportProcessor();
@@ -40,9 +39,9 @@ void ExportToPDF(Telerik.Reporting.Report reportToExport)
   
         Response.BinaryWrite(result.DocumentBytes);
         Response.End();
-    }
+    }    
 ````
-````VB
+````vb
 Sub ExportToPDF(ByVal reportToExport As Telerik.Reporting.Report)   
    
         Dim reportProcessor As New ReportProcessor()
@@ -61,3 +60,4 @@ Sub ExportToPDF(ByVal reportToExport As Telerik.Reporting.Report)
         Response.End()   
     End Sub
 ````
+

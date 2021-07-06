@@ -8,12 +8,12 @@ res_type: kb
 ---
 
     
-## How-to  
-Change Sub Report based on Main Report's Data.  
+## Description  
+This article explains how to change the report source of the SubReport based on Main Report's Data.  
   
 ## Solution  
 
-You can use a [user function](../expressions-user-functions) in a [binding](../expressions-bindings) to the SubReport item's ReportSource property. The function should return a valid [ReportSource object](../report-sources) that wraps a report - the sub report.
+You can use a [user function](../expressions-user-functions) in a [binding](../expressions-bindings) to the SubReport item's ReportSource property. The function should return a valid [ReportSource object](../report-sources) that wraps a report - the subreport.
 
 For example, the following user function:    
 
@@ -30,8 +30,10 @@ public static ReportSource SetReportSource(string field)
   }
 ```
   
-The binding in the main report's settings:
+You should set the following Binding to the SubReport item in the Main report:
 
-```cs
-this.subReport1.Bindings.Add(new Telerik.Reporting.Binding("ReportSource", "= SetReportSource(Fields.MainReportFieldX)"));
-```
+**Property path:** ReportSource
+
+**Expression:** = SetReportSource(Fields.MainReportFieldX
+
+

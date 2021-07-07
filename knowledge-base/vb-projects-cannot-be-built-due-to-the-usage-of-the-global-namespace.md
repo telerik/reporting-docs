@@ -45,5 +45,5 @@ For more details, please check [How to: Change the Namespace for an Application
 
 > Note
 > <br /> 
-> If the above changes do not resolve the listed errors, double-check if the required Telerik Reporting assemblies are referenced, and run the [Upgrade Wizard](http://docs.telerik.com/reporting/ui-upgrade-wizard) to update all settings.
+> If the above changes do not resolve the listed errors, double-check if the required Telerik Reporting assemblies are referenced, and run the [Upgrade Wizard](../ui-upgrade-wizard) to update all settings.
 

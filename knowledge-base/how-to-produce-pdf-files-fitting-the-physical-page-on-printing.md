@@ -51,7 +51,7 @@ For the purpose:
 </configuration>
 ```
   
-**Note**
+> **Note**
 > <br/>
 > The scaling mechanism of PDF Readers is out of the scope of the reporting engine. 
 

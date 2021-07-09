@@ -17,17 +17,17 @@ Set the Type of the [ReportParameter](../t-telerik-reporting-reportparameter) t
 When using Guid [DataSourceParameter](../t-telerik-reporting-datasourceparameter) and its value is set to a [ReportParameter](../t-telerik-reporting-reportparameter), create an [User Function](../expressions-user-functions) to handle the conversion:  
 
 
-```cs
+````cs
 public static Guid ConvertToGuid(string guid)
 {
            return new Guid(guid);
 }
-```
-```vb
+````
+````vb
 Public Shared Function ConvertToGuid(guid As String) As Guid
     Return New Guid(guid)
 End Function
-```
+````
    
 
 Finally, set the value for the [DataSourceParameter](../t-telerik-reporting-datasourceparameter):   

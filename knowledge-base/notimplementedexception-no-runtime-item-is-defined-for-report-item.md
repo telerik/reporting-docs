@@ -35,5 +35,5 @@ The problem is related to changes in Telerik.Reporting.dll introduced in Q1 2013
 ## Solution 
 
 You are allowed to distribute Telerik Reporting assemblies required for running the application. This excludes design-time assemblies provided by your Telerik Reporting installation.
-For more details, check [Telerik Reporting License Agreement](/purchase/license-agreement/reporting-dlw-s) - 4. License for Redistribution.
+For more details, check [Telerik Reporting License Agreement](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s) - 4. License for Redistribution.
 

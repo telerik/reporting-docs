@@ -8,7 +8,8 @@ res_type: kb
 ---
 
  ## Solution 
- Telerik Reporting OpenXML rendering extensions (XLSX, DOCX and PPTX) are build with  [Open XML SDK 2.0 for Microsoft Office](../installation-deploying-openxml) (DocumentFormat.OpenXml.dll v.2.0.5022.0). Still if needed you can use newer Open XML SDK version. Just add binding redirect into your configuration file to point that you are using a newer version:  
+ 
+Telerik Reporting OpenXML rendering extensions (XLSX, DOCX and PPTX) are build with  [Open XML SDK 2.0 for Microsoft Office](../installation-deploying-openxml) (DocumentFormat.OpenXml.dll v.2.0.5022.0). Still if needed you can use newer Open XML SDK version. Just add binding redirect into your configuration file to point that you are using a newer version:  
 
 ```xml
 <configuration>
@@ -26,7 +27,7 @@ res_type: kb
 ...
 ```
 
- In newer versions the DocumentFormat.OpenXml assembly the **PublicKeyToken** is changed. Thus if you are using DocumentFormat.OpenXml of version 2.7.2.0 you have to reference **Telerik.Reporting.OpenXmlRendering.2.7.2.** For even newer versions add the required binding redirect as shown in the following example configuration for DocumentFormat.OpenXml 2.8.1.0:  
+In newer versions the DocumentFormat.OpenXml assembly the **PublicKeyToken** is changed. Thus if you are using DocumentFormat.OpenXml of version 2.7.2.0 you have to reference **Telerik.Reporting.OpenXmlRendering.2.7.2.** For even newer versions add the required binding redirect as shown in the following example configuration for DocumentFormat.OpenXml 2.8.1.0:  
 
 ```xml
 <configuration>

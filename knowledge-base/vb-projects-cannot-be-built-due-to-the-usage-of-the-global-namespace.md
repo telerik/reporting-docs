@@ -34,16 +34,17 @@ Changing the line as follows should resolve the error:
 Me.TextBox1 = New Global.Telerik.Reporting.TextBox()
 ```  
 
-The issue is that changing a setting of report will cause the Reporting engine to re-serialize the code in the report's *Designer.VB* file without the custom Global namespace.  
+The issue is that changing a setting of the report will cause the Reporting engine to re-serialize the code in the report's *Designer.VB* file without the custom Global namespace.  
   
 ## Solution  
 
 Open the project's Properties in Visual Studio and remove the Root Namespace, leave it blank. This will let you skip the Global namespace on specifying types.  
 
-For more details, please check [How to: Change the Namespace for an Application (Visual Basic)](https://msdn.microsoft.com/en-us/library/xedasdww%28v=vs.100%29.aspx) msdn article.
+For more details, please check [How to: Change the Namespace for an Application (Visual Basic)](https://
+dn.microsoft.com/en-us/library/xedasdww%28v=vs.100%29.aspx) MSDN article.
     
 
-> Note
-> <br /> 
-> If the above changes do not resolve the listed errors, double-check if the required Telerik Reporting assemblies are referenced, and run the [Upgrade Wizard](../ui-upgrade-wizard) to update all settings.
+## Note
+
+If the above changes do not resolve the listed errors, double-check if the required Telerik Reporting assemblies are referenced, and run the [Upgrade Wizard](../ui-upgrade-wizard) to update all settings.
 

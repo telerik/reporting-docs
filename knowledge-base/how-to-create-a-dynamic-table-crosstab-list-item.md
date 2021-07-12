@@ -7,13 +7,10 @@ slug: how-to-create-a-dynamic-table-crosstab-list-item
 res_type: kb
 ---
 
-## How-to  
-
-How to Create a Dynamic Table/Crosstab/List item.  
   
 ## Description
 
-In different scenarios data may not have exact schema to be used for designing a report. In such cases you can use the fact that the [Table/List/Crosstab item](../table-working-with-table-cross-table-list-items) can visualize 3D data.
+In different scenarios, data may not an have exact schema to be used for designing a report. In such cases, you can use the fact that the [Table/List/Crosstab item](../table-working-with-table-cross-table-list-items) can visualize 3D data.
 
 - [Basic Concepts](../table-understanding-table-items)
 - [Understanding Crosstab Areas](../table-understanding-crosstab-areas)
@@ -22,7 +19,7 @@ In different scenarios data may not have exact schema to be used for designing a
   
 ## Solution
 
-The idea is to create a data source describing the data in terms of columns, rows and content, which should result in a flatten tabular representation of data like:
+The idea is to create a data source describing the data in terms of columns, rows and content, which should result in a flattened tabular representation of data like:
 
 ```
 columnName,rowIndex,cellContent
@@ -38,9 +35,7 @@ Then you can add a Table/List/Crosstab item with dynamic row and column groups b
 
 The attached demo report illustrates the settings. The report can be previewed in the [Standalone Report Designer](../standalone-report-designer) of Telerik Reporting R1 2017 and newer.
 
-> Note
-> <br />
->Other scenarios requiring you to create or modify a report at run-time are discussed in [Modifying or Creating a report at Run-Time](./modifying-or-creating-a-report-at-run-time).
+Note the scenarios requiring you to create or modify a report at run-time are discussed in [Modifying or Creating a report at Run-Time](./modifying-or-creating-a-report-at-run-time).
 
-## Additional resources
+## Demo
 [Download the sample report](resources/reportdynamiccolumns.zip).

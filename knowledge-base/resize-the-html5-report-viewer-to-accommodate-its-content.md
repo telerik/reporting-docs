@@ -16,7 +16,7 @@ When the report page displayed in the HTML5 Report Viewer is too long, a vertic
 The default behavior of the viewer can be changed so the viewer is resized automatically in order to accommodate the currently displayed report page. To achieve that follow these steps:  
   
 
-1. **Remove** the default report viewer container styles if they are present in your application:  
+1. Remove the default report viewer container styles if they are present in your application:  
 
 ```css
 #reportViewer1 {

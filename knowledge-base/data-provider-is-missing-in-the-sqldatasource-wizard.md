@@ -12,7 +12,7 @@ The [SqlDataSource component](../sqldatasource) would list and work with any [A
 registered on the device. The list with ADO.NET providers is taken as described in [Obtaining the DbProviderFactory](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory) article and lists all of the provider factories registered in the **machine.config**.
   
    
-For instance if MySQL provider is not registered correctly, but shows in Visual
+For instance, if MySQL provider is not registered correctly, but shows in Visual
 Studio, this means its installation has only registered it in Visual Studio and you can open
 **devenv.exe.config** to get the provider details and add it manually to
 the config file of the standalone designer

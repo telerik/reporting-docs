@@ -9,13 +9,11 @@ res_type: kb
 
 ## Description 
 
-Configure the CSV rendering extension  
+By default, the **CSV rendering extension** generates plain text files, without any formatting, and the first row contains the headers for all columns. You may choose whether to have this header row or not.   
    
 ## Solution
-
- By default, the **CSV rendering extension** generates plain text files, without **any** formatting, and the first row contains the headers for all columns (you may choose whether to have this header row or not).  
    
- In Telerik Reporting, **device information settings** are used to pass rendering parameters to a rendering extension. You can specify device information settings in a variety of ways. You can use the &lt;Telerik.Reporting&gt; configuration section to specify the rendering parameters globally. Programmatically, you can use the [ReportProcessor.RenderReport()](../m-telerik-reporting-processing-reportprocessor-renderreport) method. For more information about specifying rendering parameters globally, see [Configuring Telerik Reporting](../configuring-telerik-reporting).  
+In Telerik Reporting, **device information settings** are used to pass rendering parameters to a rendering extension. You can specify device information settings in a variety of ways. You can use the &lt;Telerik.Reporting&gt; configuration section to specify the rendering parameters globally. Programmatically, you can use the [ReportProcessor.RenderReport()](../m-telerik-reporting-processing-reportprocessor-renderreport) method. For more information about specifying rendering parameters globally, see [Configuring Telerik Reporting](../configuring-telerik-reporting).  
    
  The example below shows a sample application [configuration file](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/) (App.config or Web.config depending on whether it is a desktop or a web application) in which we modify the original CSV rendering extension settings to generate a CSV file without the header row (**NoHeader = True**) and all TextBox items that contain static text (not an expression) skipped (**NoStaticText = True**):  
    
@@ -84,9 +82,7 @@ With the given device information settings, the result will be:
 32,Montreal,H1Y 2H5  
 ```
 
-> **Note**
-> <br />
-> JSON-based configuration files can also be configured, see [extensions Element](../configuring-telerik-reporting-extensions).
+Note that JSON-based configuration files can also be configured, see [extensions Element](../configuring-telerik-reporting-extensions).
 
 ## See Also  
  

@@ -7,19 +7,16 @@ slug: telerik-reporting-toolbox-items-are-missing
 res_type: kb
 ---
   
-## Problem  
 
-After installing Telerik Reporting, the Visual Studio Toolbox does not contain any Telerik Reporting items.  
-  
 ## Description  
-Certain issues related to the Toolbox:
+After installing Telerik Reporting, some problems related to the Visual Studio Toolbox might appear. For example:
 
 1. Toolbox items for Telerik Reporting are missing in Visual Studio;
 2. It takes too much time to load a Toolbox on each Visual Studio launch;
 3. Toolbox items are duplicated on each Visual Studio launch.
 
 
-The above mentioned problems are usually caused by the absence of the **Microsoft.VisualStudio.IDE.ToolboxControlsInstaller.ToolboxInstallerPackage** when loading the studio or by some incorrect registry settings that cause this package to crash unexpectedly while loading toolbox items.  
+The above-mentioned problems are usually caused by the absence of the **Microsoft.VisualStudio.IDE.ToolboxControlsInstaller.ToolboxInstallerPackage** when loading the studio or by some incorrect registry settings that cause this package to crash unexpectedly while loading toolbox items.  
   
 ## Solution   
   

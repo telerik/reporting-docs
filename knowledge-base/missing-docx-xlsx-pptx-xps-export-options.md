@@ -25,16 +25,10 @@ The **XPS** rendering extension requires the **Telerik.Reporting.XpsRendering.dl
 - If the project uses a viewer that operates via [Telerik Reporting Service](../telerik-reporting-services), the assembly references must be added in the service project's configuration file;
 - If the project uses a desktop viewer or the [obsolete ASP.NET WebForms ReportViewer control](../asp-net-report-viewer), assembly references must be added in the viewer project's configuration file;
 - If you are testing the design-time preview in the [Standalone Report Designer](../standalone-report-designer), it is configured to let export in DOCX, PPTX, XLSX and XPS without additional settings;
-- If you are testing the design-time preview in [Visual Studio Report Designer](../ui-report-designer), you may not have all export options, unless OpenXML SDK 2.0 is installed on the machine, or if OpenXML SDK 2.5 or greater is installed and you manually add binding redirect for DocumentFormat.OpenXml.dll assembly in the corresponding *devenev.exe.config* file (Visual Studio configuration file). On [installing](../installation-installing-from-msi), Telerik Reporting assemblies are automatically registered in the machine's GAC and the design-preview will load them automatically.  
+- If you are testing the design-time preview in [Visual Studio Report Designer](../ui-report-designer), you may not have all export options, unless OpenXML SDK 2.0 is installed on the machine, or if OpenXML SDK 2.5 or greater is installed and you manually add a binding redirect for DocumentFormat.OpenXml.dll assembly in the corresponding *devenev.exe.config* file (Visual Studio configuration file). During the [installation](../installation-installing-from-msi), Telerik Reporting assemblies are automatically registered in the machine's GAC and the design-preview will load them automatically.  
 
-    If you do not want to install OpenXML SDK, copy **DocumentFormat.OpenXml.dll** next to the corresponding **devenv.exe** (Visual Studio exe).
+If you do not want to install OpenXML SDK, copy **DocumentFormat.OpenXml.dll** next to the corresponding **devenv.exe** (Visual Studio exe).
 
- On deploying the application, verify that the above listed assemblies are copied in the **bin folder**. For the purpose, select the references in Visual Studio and set their **CopyLocal** to **true**. 
-
-
-> Note
-> <br>
-> If you are interested in limiting the export options, please check [Limit export options in ReportViewer to certain format only](/support/kb/reporting/deliver-reports-to-any-application/details/limit-export-options-in-reportviewer-to-certain-format-only).  
- If you are deploying in Azure with OpenXML SDK 2.5, you may need an additional configuration file listing the binding redirects from your application - [WebRole starts cycling after deploying to Windows Azure](/support/kb/reporting/details/webrole-starts-cycling-after-deploying-to-windows-azure).
+ On deploying the application, verify that the above-listed assemblies are copied in the **bin folder**. For this purpose, select the references in Visual Studio and set their **CopyLocal** to **true**. 
 
 

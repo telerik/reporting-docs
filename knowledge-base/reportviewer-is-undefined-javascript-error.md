@@ -9,17 +9,17 @@ res_type: kb
 
 > **NOTE**
 > <br/>
-> This article relates only to the [Legacry Report Viewer](../asp-net-report-viewer). You may be looking for [HTML5 Report Viewer Troubleshooting](../html5-viewer-troubleshooting)
+> This article relates only to the [Legacy Report Viewer](../asp-net-report-viewer). You may be looking for [HTML5 Report Viewer Troubleshooting](../html5-viewer-troubleshooting)
 
 ## Description 
 
-The following javascript error is  thrown, when opening a page containing the web ReportViewer control:  
+The following JavaScript error is  thrown, when opening a page containing an HTML5-based ReportViewer control:  
    
 ***'ReportViewer' is undefined***  
      
 ## Solution   
 
- This error usually indicates that the ReportViewer control has not been able to load its resources for some reason - JavaScript, CSS and images. It could be due to one of the following things:  
+This error usually indicates that the ReportViewer control has not been able to load its resources for some reason - JavaScript, CSS and images. It could be due to one of the following things:  
    
  
 1. Missing preCondition attribute of the report viewer handler's registration in the **&lt;system.webServer&gt;&lt;handlers&gt;** section, when the application is hosted on **IIS7**, i.e. the handler should look like this:  
@@ -40,9 +40,9 @@ The following javascript error is  thrown, when opening a page containing the we
  **http://devmachine/MyApplication/Telerik.ReportViewer.axd?name=Resources.ReportViewer.js&optype=Resource&version=x.x.x.x**  
    
 
- This should give a more detailed information about the error.
+ This should give more detailed information about the error.
 
-5. If authorization is used, it is possible that this somehow restricts the access to the http handler used by the viewer. Please, add the following **&lt;location&gt;** element to your **web.config** to make sure the handler is accessible at all times:  
+5. If authorization is used, it is possible that this somehow restricts the access to the HTTP handler used by the viewer. Please, add the following **&lt;location&gt;** element to your **web.config** to make sure the handler is accessible at all times:  
    
  ```xml
  <location path="Telerik.ReportViewer.axd">   

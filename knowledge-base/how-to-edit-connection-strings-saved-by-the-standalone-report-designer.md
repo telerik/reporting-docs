@@ -8,9 +8,7 @@ res_type: kb
 ---
 
 ## Description
- How to edit connection strings saved by the standalone Report Designer
-
- Predefined connection strings are saved in the standalone Report Designer configuration file (*Telerik.ReportDesigner.exe.config*) and can be edited directly from there. Any other connection strings used in the designer are stored locally on the user's computer in XML file.
+This article lists the required steps to edit connection strings saved by the Standalone Report Designer. Basically, the predefined connection strings are saved in the Standalone Report Designer configuration file (*Telerik.ReportDesigner.exe.config*) and can be edited directly from there. Any other connection strings used in the designer are stored locally on the user's computer in an XML file.
 
 ## Solution
 The configuration file storing the user's application settings can be found at:  
@@ -20,7 +18,7 @@ The configuration file storing the user's application settings can be found at:
 
 For example, Telerik Reporting **R1 2021** user's application configuration file would be placed in:   
 
-*C:\Users\Stef\AppData\Local\Progress_Software_Corpora\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj\15.0.21.120\user.config.*
+*C:\Users\MyUserName\AppData\Local\Progress_Software_Corpora\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj\15.0.21.120\user.config.*
   
 > Note 
 ><br>

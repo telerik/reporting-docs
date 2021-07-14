@@ -30,12 +30,12 @@ res_type: kb
 
 ## Description
 
-When exporting a report with bookmarks to PDF in R2 2021 and R2 SP1 2021, the produced PDF does have the report's bookmarks generated.
+When exporting a report with bookmarks to PDF in R2 2021 and R2 SP1 2021, the produced PDF does not have the report's bookmarks generated.
 
 ## Suggested Workarounds
 
 There are three approaches that can be used to ensure that the produced PDF will have bookmarks:
- - The *first* and *second* workaround involve setting a property of the device info:
+ - The first and second workaround involve setting a property of the device info:
    ```cs
             var reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
 
@@ -59,4 +59,4 @@ There are three approaches that can be used to ensure that the produced PDF will
                 fs.Write(result.DocumentBytes, 0, result.DocumentBytes.Length);
             }
    ```
-  - The *third* approach is adding a **TOC** section to the report. When the report has a TOC section, the produced PDF is with generated bookmarks - [How to Add a Table of Contents to Report Book](../table-of-contents-report-book).
+  - The third approach is adding a **TOC** section to the report. When the report has a TOC section, the produced PDF is with generated bookmarks - [How to Add a Table of Contents to Report Book](../table-of-contents-report-book).

@@ -9,7 +9,7 @@ res_type: kb
  
 ## Description
 
- With the new .NET Framework (4.5), a new way to handle parallel programming has been added - with the help of the **Task&lt;&gt;** class and the keywords **async** and **await**, parallel programming has become much easier. This raises the question, how can these features be used with Telerik Reporting?
+With the new .NET Framework (4.5), a new way to handle parallel programming has been added - with the help of the **Task&lt;&gt;** class and the keywords **async** and **await**, parallel programming has become much easier. This raises the question, how can these features be used with Telerik Reporting?
  
 ## Solution  
 

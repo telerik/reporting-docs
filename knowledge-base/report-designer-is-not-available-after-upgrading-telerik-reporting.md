@@ -10,7 +10,7 @@ res_type: kb
 ## Problem
 After upgrading Telerik Reporting and opening an existing report (created with the previous version) in VS design mode, the following errors occur:
  
-***“Unable to load one or more of the requested types”*** or ***"Telerik.Reporting.Drawing.Unit cannot be converted to type Telerik.Reporting.Drawing.Unit** **"***  
+**Unable to load one or more of the requested types** or **Telerik.Reporting.Drawing.Unit cannot be converted to type Telerik.Reporting.Drawing.Unit**  
    
  ## Description  
  A possible reason for this problem is that your project uses "*stale*" assemblies from the previous Telerik Reporting version, which do not match the new DLL versions. In other words, the assemblies from the older missing version are still in your project's ***bin*** folder, and these assemblies do not comply with the new ones, leading to the error above.   

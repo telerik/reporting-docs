@@ -8,9 +8,6 @@ tags: telerik reporting
 res_type: kb
 ---
   
-## HOW-TO
-
-Convert reports from various versions of CrystalReports.
   
 ## DESCRIPTION
 

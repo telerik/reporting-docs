@@ -13,7 +13,7 @@ Images are Shrunk in DOCX, XLSX, PPTX formats on Mac machines.
   
 ## Solution
 
-The Graph, Map and Barcode items are rendered as **EMF** in OpenXML formats like DOCX, XLSX, PPTX. On Mac machines the images may appear shrunk. To avoid the issue, you can force the rendering engine to create Bitmap images instead of EMF by setting the corresponding rendering extension's **UseMetafile** parameter.  
+The Graph, Map and Barcode items are rendered as **EMF** in OpenXML formats like DOCX, XLSX, PPTX. On Mac machines, the images may appear shrunk. To avoid the issue, you can force the rendering engine to create Bitmap images instead of EMF by setting the corresponding rendering extension's **UseMetafile** parameter.  
  
 For more details about the settings: 
 - [Telerik Reporting Configuration Section](../configuring-telerik-reporting)
@@ -22,10 +22,11 @@ For more details about the settings:
 - [DOCX](../device-information-settings-word) rendering extension's parameters
 - [XLSX](../device-information-settings-excel-2007) rendering extension's parameters
 
- An example of the settings:  
+You can see example of the settings below: 
 
+For .NET Framework projects
 ```XML
-<!-- For Viewers and Reporting REST and WCF services -->
+<!-- web.config/app.config -->
 <configuration>
     <configSections>
         <section
@@ -49,7 +50,22 @@ For more details about the settings:
 </configuration>
 ```
 
-> **Note** 
-> <br/>
-> DOCX/PPTX/XLSX rendering extensions require **Telerik.Reporting.OpenXmlRendering.dll** and [Open XML SDK 2.0 for Microsoft Office](../installation-deploying-openxml)(*DocumentFormat.OpenXml.dll v.2.0.5022.0* or above with proper [binding redirect](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element?redirectedfrom=MSDN)).
+For .NET Core projects:
+```JavaScript
+"telerikReporting": {
+    "extensions": [
+      {
+        "name": "DOCX",
+        "parameters": [
+          {
+            "Name": "UseMetafile",
+            "Value": "false"
+          }
+        ]
+      }
+    ]
+  }
+```
+
+Note that DOCX/PPTX/XLSX rendering extensions require **Telerik.Reporting.OpenXmlRendering.dll** and [Open XML SDK 2.0 for Microsoft Office](../installation-deploying-openxml)(**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above with proper [binding redirect](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element?redirectedfrom=MSDN)).
 

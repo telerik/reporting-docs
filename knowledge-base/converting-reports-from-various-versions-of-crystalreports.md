@@ -39,7 +39,7 @@ If you do not have this version installed, you can still use the converter if yo
 1.Examine the Global Assembly Cache (C:\WINDOWS\assembly) to check which version of Crystal Reports you have installed.
 2.Modify the following code snippet accordingly, depending on the version you use and insert it in your configuration file (e.g. for VS2010 on 32 bit machine it is located in **C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe.config**. For 64 bit Windows you should look in the **C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe.config**.
 
-````
+```
 <configuration>  
   <runtime>  
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -62,7 +62,7 @@ If you do not have this version installed, you can still use the converter if yo
     </assemblyBinding>  
   </runtime>  
 </configuration>
-````
+```
 
 where **newVersion** is the version of Crystal Reports that **you are using** and **oldVersion** is the version mentioned in the "New Report Wizard".
 
@@ -71,7 +71,7 @@ where **newVersion** is the version of Crystal Reports that **you are using** an
 
 Here you can find some presets of the binding redirections you need according to the **Crystal Reports** version yo have installed:
 
-````XIR2
+```
 <configuration>  
   <runtime>  
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -94,8 +94,9 @@ Here you can find some presets of the binding redirections you need according to
     </assemblyBinding>  
   </runtime>  
 </configuration>
-````
-````2008
+```
+
+```
 <configuration>  
   <runtime>  
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -118,8 +119,9 @@ Here you can find some presets of the binding redirections you need according to
     </assemblyBinding>  
   </runtime>  
 </configuration> 
-````
-````BasicForVS2008
+```
+
+```
 <configuration>  
   <runtime>  
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -142,4 +144,4 @@ Here you can find some presets of the binding redirections you need according to
     </assemblyBinding>  
   </runtime>  
 </configuration>
-````
+```

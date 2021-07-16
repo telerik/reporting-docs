@@ -25,9 +25,11 @@ res_type: kb
 Sometimes you want to avoid adding the Report Server's credentials in the initialization of the viewer. This can be done by the usage of [Custom Report Source Resolver](../telerik-reporting-rest-custom-report-resolver).
 
 ## Solution
-1. You need to add references to the **Telerik.ReportServer.Services.Models** assembly.
+In this scenario, you need to render the reports in a custom Reporting REST Service rather than in the Report Server. You will need a Custom ReportSource Resolver, in which to download the report definition from the server and return it wrapped in the proper server-side [ReportSource](./report-sources).
 
-2. In the Resolve method of the CustomReportSourceResolver, firstly, you should create a setting for the Report Server connection. Then based on the passed category and report name from the viewer, you need to get the report from the Report Server and return it as an InstanceReportSource. Eventually, the CustomReportSourceResolver has to look as follows:
+1. You need to add references to the **Telerik.ReportServer.Services.Models** and **Telerik.ReportServer.HttpClient** assemblies that are distributed with the Report Server assembly.
+
+2. In the **Resolve** method of the CustomReportSourceResolver, firstly, you should create a setting for the Report Server connection. Then based on the passed category and report name from the viewer, you need to get the report from the Report Server and return it as an InstanceReportSource:
 
 ```CSharp
  public class CustomReportSourceResolver : IReportSourceResolver
@@ -46,7 +48,7 @@ Sometimes you want to avoid adding the Report Server's credentials in the initia
 
          using (var rsClient = new ReportServerClient(settings))
          {
-             rsClient.Login("Nelci", "mypass");
+             rsClient.Login("myusername", "mypass");
              var categories = rsClient.GetCategories();
              var myCategoryId = categories.Where(item => item.Name == categoryName).First().Id;
              var reportInfos = rsClient.GetReportInfosInCategory(myCategoryId);

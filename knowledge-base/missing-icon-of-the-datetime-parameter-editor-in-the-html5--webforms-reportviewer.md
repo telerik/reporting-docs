@@ -25,9 +25,9 @@ In the browser's console (**F12 Developer Tools**) you will see an error related
   
 ## Solution 
 
-**1.**  Replace the HTML5 ASP.NET WebForms ReportViewer with the [HTML5 Javascript Viewer](../html5-report-viewer). It is the same viewer, where settings will have to be applied in JavaScript instead of C#|VB<span>.</span>NET.
+1. Replace the HTML5 ASP.NET WebForms ReportViewer with the [HTML5 Javascript Viewer](../html5-report-viewer). It is the same viewer, where settings will have to be applied in JavaScript instead of C#|VB<span>.</span>NET.
 
-**2.**  Load the correct Telerik Kendo UI CSS and JS files before creating the HTML5 ASP.NET WebForms ReportViewer. For example, in the &lt;head&gt; element of the page with the viewer load the CSS and JS files required by the viewer:  
+2. Load the correct Telerik Kendo UI CSS and JS files before creating the HTML5 ASP.NET WebForms ReportViewer. For example, in the &lt;head&gt; element of the page with the viewer load the CSS and JS files required by the viewer:  
 
 ```html
 <head>

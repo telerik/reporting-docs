@@ -1,15 +1,27 @@
 ---
 title: Handling errors occurring in a Custom Resolver used by a Reporting REST Service
-description: Handling errors occurring in a Custom Resolver used by a Reporting REST Service.
+description: Handle errors occuring as a result of using custom report resolver used with the reporting rest service by overriding the GetParameters request.
 type: how-to
-page_title: Handling errors occurring in a Custom Resolver used by a Reporting REST Service
+page_title: Catch errors thrown by the Reporting REST Service
 slug: handling-errors-occurring-in-a-custom-resolver-used-by-a-reporting-rest-service
 res_type: kb
 ---
 
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Report Viewer</td>
+		<td>Any of the HTML5-based Report Viewers</td>
+	</tr>
+</table>
+
 ## Description
 
-Handling errors occurring in a Custom Resolver used by a Reporting REST Service  
+Handling errors occurring in a Custom Resolver used by a Reporting REST Service. In this article, we will explain how to handle errors that fire due to errors with the report's processing and errors that cause the report processing to not start altogether. 
 
 ## Solution
 

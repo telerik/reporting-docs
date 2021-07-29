@@ -1,6 +1,6 @@
 ---
 title: Handling errors occurring in a Custom Resolver used by a Reporting REST Service
-description: Handle errors occuring as a result of using custom report resolver used with the reporting rest service by overriding the GetParameters request.
+description: Handle errors occurring as a result of using a custom report resolver used with the reporting rest service by overriding the GetParameters request.
 type: how-to
 page_title: Catch errors thrown by the Reporting REST Service
 slug: handling-errors-occurring-in-a-custom-resolver-used-by-a-reporting-rest-service
@@ -15,7 +15,7 @@ res_type: kb
 	</tr>
 	<tr>
 		<td>Report Viewer</td>
-		<td>Any of the HTML5-based Report Viewers</td>
+		<td>HTML5-based Report Viewers</td>
 	</tr>
 </table>
 

@@ -1,11 +1,23 @@
 ---
 title: Error handling in Reports and Report Viewers
-description: Error handling in Reports and Report Viewers.
+description: Handling errors occuring during the report document generation and errors related to the instance processin them such as Report Viewers and the ReportProcessor class used for processing reports.
 type: how-to
-page_title: Error handling in Reports and Report Viewers
+page_title: Handle errors thrown during the report document generation and errors thrown by report viewers or the ReportProcessor class
 slug: error-handling-in-reports-and-report-viewers
 res_type: kb
 ---
+
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Report Viewer</td>
+		<td>Any Report Viewer</td>
+	</tr>
+</table>
   
 ## Description
 
@@ -33,6 +45,7 @@ The report's Error event has information about the processing element throwing t
         - **WPF ReportViewer**: [Error event](../e-telerik-reportviewer-wpf-reportviewer-error) and [localization resources](../report-viewer-localization2);  
 
         - **Silverlight ReportViewer**: [Error event](../e-telerik-reportviewer-silverlight-reportviewer-error) and [localization resources](../report-viewer-localization3);
+
 3. **Errors related to the  functionality of the instance processing the report (Report Viewers or ReportProcessor)**.
     - If the error is not breaking the execution of the application, you will be able to use the Error event and localization resources of the corresponding Report Viewer, or the ReportProcessor instance.
     - More serious problems will have to be handled on application level. For example, if there is a configuration problem with the HTML5 Viewer, you can catch requests and response and redirect to an error page.

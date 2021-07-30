@@ -73,9 +73,4 @@ config.Routes.MapHttpRoute(
     routeTemplate: "api/{controller}/{action}");
 ```
   
->Note
-><br>
 > The actual routes for the used Telerik Reporting version can be extracted from the **GlobalConfiguration.Configuration** after using the **ReportsControllerConfiguration.RegisterRoutes** method.
-
-
-

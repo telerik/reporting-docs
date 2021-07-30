@@ -2,7 +2,7 @@
 title: Cannot implicitly convert type 'Telerik.Reporting.XXXReportSource' error 
 description: Cannot implicitly convert type 'Telerik.Reporting.XXXReportSource' to 'Telerik.ReportViewer.Html5.WebForms.ReportSource' error when using HTML5 WebForms Report Viewer.
 type: how-to
-page_title: Cannot implicitly convert type 'Telerik.Reporting.XXXReportSource' to 'Telerik.ReportViewer.Html5.WebForms.ReportSource' error when using HTML5 WebForms Report Viewer
+page_title: Cannot use 'Telerik.Reporting.XXXReportSource' for the ReportSource of a HTML5 WebForms Report Viewer
 slug: cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error
 res_type: kb
 ---

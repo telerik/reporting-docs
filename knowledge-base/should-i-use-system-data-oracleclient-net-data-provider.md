@@ -15,6 +15,8 @@ res_type: kb
 ## Solution
 We recommend the usage of the Oracle Data Provider for .NET/ODP.NET. More .NET data providers and how they can be used for connecting to an Oracle database can be found in the <a href="https://www.connectionstrings.com/oracle/" target="_blank">Oracle connection strings</a> article.  
    
-You may also check out [Data provider is missing in the SqlDataSource wizard](../details/data-provider-is-missing-in-the-sqldatasource-wizard).  
+You may also check out [Data provider is missing in the SqlDataSource wizard](./data-provider-is-missing-in-the-sqldatasource-wizard).  
 
-Note that each .NET data provider has its own specification how to read SQL queries. If you use SQL parameters, please check the valid syntax for typing parameters in the SQL query. 
+## Notes
+
+Each .NET data provider has its own specification how to read SQL queries. If you use *SQL parameters*, please check the valid syntax for typing parameters in the SQL query. 

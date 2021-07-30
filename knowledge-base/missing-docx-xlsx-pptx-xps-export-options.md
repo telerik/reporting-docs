@@ -1,13 +1,19 @@
 ---
 title: Missing DOCX, XLSX, PPTX, XPS export options in viewers or "X rendering format is not available" error message
-description: Missing DOCX, XLSX, PPTX, XPS export options in viewers or "X rendering format is not available" error message.
+description: Trying to export a report to a rendering format is failing due to that rendering format not being available..
 type: how-to
 page_title: Missing DOCX, XLSX, PPTX, XPS export options in viewers or "X rendering format is not available" error message
 slug: missing-docx-xlsx-pptx-xps-export-options
 res_type: kb
 ---
 
-## Problem
+## Description
+
+Trying to export a report to a rendering format is failing due to that rendering format not being available.
+
+Usually, this is related to not having Telerik Reporting rendering format specific assemblies not being referenced in the project or the rendering format being unavailable altogether due limitations in .NET Core projects - [.NET Core Support](../use-reports-in-net-core-apps)
+
+## Error Message
 Missing DOCX, XLSX, PPTX, XPS export options.  
 If you export programmatically, the error message will be: **"X rendering format is not available"**, where X is DOCX, XLSX, PPTX, XPS.  
   

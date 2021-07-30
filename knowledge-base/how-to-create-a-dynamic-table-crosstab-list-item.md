@@ -35,7 +35,9 @@ Then you can add a Table/List/Crosstab item with dynamic row and column groups b
 
 The attached demo report illustrates the settings. The report can be previewed in the [Standalone Report Designer](../standalone-report-designer) of Telerik Reporting R1 2017 and newer.
 
-Note the scenarios requiring you to create or modify a report at run-time are discussed in [Modifying or Creating a report at Run-Time](./modifying-or-creating-a-report-at-run-time).
+> **Note**
+> <br/>
+> The scenarios requiring you to create or modify a report at run-time are discussed in [Modifying or Creating a report at Run-Time](./modifying-or-creating-a-report-at-run-time).
 
 ## Demo
 [Download the sample report](resources/reportdynamiccolumns.zip).

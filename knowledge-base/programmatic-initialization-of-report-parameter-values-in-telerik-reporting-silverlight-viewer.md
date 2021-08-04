@@ -7,6 +7,22 @@ slug: programmatic-initialization-of-report-parameter-values-in-telerik-reportin
 res_type: kb
 ---
 
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Project Type</td>
+		<td>Silverlight Application</td>
+	</tr>
+	<tr>
+		<td>Report Viewer</td>
+		<td>Silverlight viewer</td>
+	</tr>
+</table>
+
 ## Description
 
 Usually, one may control the report appearance and the data it displays through report parameters. The Silverlight report viewer, offers built-in user interface that enables end users to interact with the reports. Still, there are cases when one may further need to control the report definition according to a custom logic that runs in the client application. However, since we have introduced the [Silverlight Report Viewer](../silverlight-report-viewer-embedding-the-silverlight-viewer), the greatest challenge our clients have faced is that there is no direct access to the report definition in the Silverlight application.

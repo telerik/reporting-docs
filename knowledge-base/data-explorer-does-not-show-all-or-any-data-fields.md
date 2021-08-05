@@ -1,17 +1,23 @@
 ---
 title: Data Explorer does not show all or any data fields
-description: Data Explorer does not show all or any data fields.
-type: how-to
-page_title: Data Explorer does not show all or any data fields
+description: After configuring a data source component, the Data Explorer lists only the direct properties of the wrapped data object. These properties must be public, and must have a proper getter.
+type: troubleshooting
+page_title: The fields of the Data Explorer are missing
 slug: data-explorer-does-not-show-all-or-any-data-fields
 res_type: kb
 ---
 
-## Description
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting Report Designers</td>
+	</tr>
+</table>
 
-[Data Explorer](../ui-data-explorer) does not show all or any data fields.  
+## Description  
   
- After configuring a data source component, the Data Explorer lists only the *direct* properties of the wrapped data object. These properties must be *public*, and must have a proper *getter*.  
+ After configuring a data source component, the [Data Explorer](../ui-data-explorer) lists only the *direct* properties of the wrapped data object. These properties must be *public*, and must have a proper *getter*.  
   
 Cases in which the Data Explorer does not load all or any fields:  
 

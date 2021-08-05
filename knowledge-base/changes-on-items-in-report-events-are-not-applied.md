@@ -1,15 +1,22 @@
 ---
 title: Changes on items in report events are not applied
-description: Changes on items in report events are not applied.
+description: Modifying report items in report events does not work.
 type: how-to
-page_title: Changes on items in report events are not applied
+page_title: Editing report items in report events does not take effect
 slug: changes-on-items-in-report-events-are-not-applied
 res_type: kb
 ---
 
-## Description
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+</table>
 
-Changes on items in report events are not applied.  
+
+## Description 
 
 In Telerik Reporting versions **prior to R3 2016**, all changes in events were accepted, even these applied on items' definitions. When items' definitions are modified in events, changes are applied on all consecutive processing elements with an expected result.  
   
@@ -63,19 +70,10 @@ The recommended approach is to use the *expression engine* and to avoid custom c
 3. [User functions](../expressions-user-functions) to set properties of items, when the [built-in functions](../expressions-reference) are not sufficient.
 
 The usage of the expression engine assures items will be modified at the right moment.  
-  
-Interesting help articles related to binding data via expressions and modifying reports:  
+ 
+## Notes
 
-- [How to use the ReportItem.DataObject property in expressions](../data-items-how-to-use-data-object)
-- [How to Databind to Collection Properties](./how-to-databind-to-collection-properties)
-- [How to bind Sub Report to Main Report's Data](./how-to-bind-sub-report-to-main-report-s-data)
-- [Change Sub Report based on Main Report's Data](./change-sub-report-based-on-main-report-s-data)
-- [Changing the connection string dynamically according to runtime data](./changing-the-connection-string-dynamically-according-to-runtime-data) (the same approach can be used if you need to change data sources and to modify the report structure at run-time).
-
-> **Note:** 
-> <br />
-> If you have many legacy reports and changing the code in events in all of them is not an option, you could give up on the property **resolution optimization** and turn it **off**. To do so, apply the following settings in [Telerik.Reporting configuration section](../configuring-telerik-reporting#telerik-reporting-configuration-section) in application configuration file:  
-
+If you have many legacy reports and changing the code in events in all of them is not an option, you could give up on the property **resolution optimization** and turn it **off**. To do so, apply the following settings in [Telerik.Reporting configuration section](../configuring-telerik-reporting#telerik-reporting-configuration-section) in application configuration file:  
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -94,4 +92,11 @@ Interesting help articles related to binding data via expressions and modifying 
    
 </configuration>
 ```
-  
+
+## See Also
+
+- [How to use the ReportItem.DataObject property in expressions](../data-items-how-to-use-data-object)
+- [How to Databind to Collection Properties](./how-to-databind-to-collection-properties)
+- [How to bind Sub Report to Main Report's Data](./how-to-bind-sub-report-to-main-report-s-data)
+- [Change Sub Report based on Main Report's Data](./change-sub-report-based-on-main-report-s-data)
+- [Changing the connection string dynamically according to runtime data](./changing-the-connection-string-dynamically-according-to-runtime-data) (the same approach can be used if you need to change data sources and to modify the report structure at run-time).

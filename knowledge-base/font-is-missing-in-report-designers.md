@@ -7,6 +7,24 @@ slug: font-is-missing-in-report-designers
 res_type: kb
 ---
 
+## Environment
+<table>
+	<tbody>
+      <tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Product Version</td>
+			<td>All</td>
+		</tr>
+      <tr>
+			<td>Report Designer</td>
+			<td>All</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Description
 
 A font is missing in the Report Designers

@@ -1,24 +1,30 @@
 ---
 title: Do I need to use a Data Source component?
-description: Do I need to use a Data Source component?.
+description: Data source components are a *declarative* way to specify how data can be retrieved. The reporting engine creates data objects and executes their data retrieval methods based on the data source component's settings.
 type: how-to
-page_title: Do I need to use a Data Source component?
+page_title: When to use a Data Source component
 slug: do-i-need-to-use-a-data-source-component
+tags: Data Sources
 res_type: kb
 ---
 
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Description
- 
-Do I need to use a [Data Source component](../connecting-to-data-data-source-components)?  
   
-## Solution   
+The Telerik Reporting [Data Source components](../connecting-to-data-data-source-components) allow you to connect report items (e.g. Report, Table/Crosstab/List and Graph) to different types of data sources such as database or middle-tier business objects, without additional code. Note that they should not be confused with the .NET Data Sources available in the Visual Studio.
+
+Telerik Reporting Data Source Components are intended to specify *declaratively* how to retrieve data for Data Items but do not contain any data themselves. Their purpose is only to specify the means how to obtain it (e.g. in the case of SqlDataSource - by executing a SQL query against a database, in the case of ObjectDataSource - by invoking a method/property of a custom business object, etc.). You can view the Data Source Components as wrappers for your data that can only read it and cannot modify it.
   
-Reports are processed and rendered on the server machine.  
-  
-Data source components are a *declarative* way to specify how data can be retrieved. The reporting engine creates data objects and executes their data retrieval methods based on the data source component's settings.  
-  
-For example, the purpose of the *ObjectDataSource* component is to provide data to the report in a declarative manner. The *ObjectDataSource.DataSource property* should be the [assembly qualified name or Type](https://docs.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?redirectedfrom=MSDN&view=net-5.0#System_Type_AssemblyQualifiedName) of the data access layer (class), The Reporting engine will use *System.Reflection* to create an instance of the class by using its default constructor, and to execute its method specified by the *ObjectDataSource.DataMember property*.   
-  
+## Solution    
   
  Having the above into account:  
 

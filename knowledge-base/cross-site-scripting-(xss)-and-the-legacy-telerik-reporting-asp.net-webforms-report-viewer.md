@@ -1,11 +1,29 @@
 ---
 title: Cross-site scripting (XSS) and the legacy Telerik Reporting ASP.NET WebForms Report Viewer
-description: Cross-site scripting (XSS) and the legacy Telerik Reporting ASP.NET WebForms Report Viewer.
+description: Cross-site scripting (XSS) with low impact is possible through the Telerik.ReportViewer.WebForms.dll in Telerik Reporting ASP.NET WebForms ReportViewer.
 type: how-to
-page_title: Cross-site scripting (XSS) and the legacy Telerik Reporting ASP.NET WebForms Report Viewer
+page_title: The legacy Telerik Reporting ASP.NET WebForms Report Viewer is vulnerable to cross-site scripting (XSS)
 slug: cross-site-scripting-(xss)-and-the-legacy-telerik-reporting-asp.net-webforms-report-viewer
 res_type: kb
 ---
+
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product Versions</td>
+			<td>Up to R1 2017 SP2</td>
+		</tr>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+    	<tr>
+			<td>Report Viewer</td>
+			<td>Legacy ASP.NET WebForms Report Viewer</td>
+		</tr>
+	</tbody>
+</table>
 
 ## Description  
   

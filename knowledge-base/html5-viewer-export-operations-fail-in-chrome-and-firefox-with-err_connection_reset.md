@@ -1,8 +1,8 @@
 ---
 title: Export operations fail in Chrome and Firefox with ERR_CONNECTION_RESET
-description: Export operations fail in Chrome and Firefox with ERR_CONNECTION_RESET.
+description: Export operations initiated through the HTML5 Viewer results in ERR\_CONNECTION\_RESET error in Firefox and Chrome browsers when Telerik UI for ASP.NET AJAX RadCompression is *enabled.
 type: how-to
-page_title: Export operations fail in Chrome and Firefox with ERR_CONNECTION_RESET
+page_title: ERR_CONNECTION_RESET error is thrown on trying to export a report to another rendering format
 slug: html5-viewer-export-operations-fail-in-chrome-and-firefox-with-err_connection_reset
 res_type: kb
 ---
@@ -12,18 +12,42 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product</td>
-			<td>Progress® Telerik® Reporting HTML5 Report Viewer</td>
+			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Application Type/td>
+			<td>Web Application</td>
+		</tr>
+		<tr>
+			<td>Report Viewer</td>
+			<td>HTML5 Report Viewer</td>
+		</tr>
+		<tr>
+			<td>Browsers</td>
+			<td>Google Chrome, Firefox</td>
+		</tr>		
 	</tbody>
 </table>
 
+## Error Message
+
+**ERR_CONNECTION_RESET** error message.
+
+**This site can't be reached.**
+
+The connection was reset.
+
+## Cause
+
+**Telerik UI for ASP.NET AJAX RadCompression** is *enabled* for the Reporting REST Service endpoint. 
+
 ## Description
 
-Export operations initiated through the HTML5 Viewer result in **ERR\_CONNECTION\_RESET** error in **Firefox** and **Chrome** browsers when **Telerik UI for ASP.NET AJAX RadCompression** is *enabled*.  
+Export operations initiated through the HTML5 Viewer results in **ERR\_CONNECTION\_RESET** error in **Firefox** and **Chrome** browsers when **Telerik UI for ASP.NET AJAX RadCompression** is *enabled*.  
   
 ## Solution  
 
-The **RadCompression** must be disabled for request to the Reporting REST service ([WebAPI based](../telerik-reporting-rest-conception)) in order documents bytes to be received by the client(viewer).  
+Disable the **RadCompression** to the [Reporting REST service](../telerik-reporting-rest-conception)(WebAPI based) to receive documents bytes in the client (Viewer).  
 
 ```xml
 <configuration>

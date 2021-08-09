@@ -15,7 +15,7 @@ res_type: kb
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
 		<tr>
-			<td>Application Type/td>
+			<td>Application Type</td>
 			<td>Web Application</td>
 		</tr>
 		<tr>

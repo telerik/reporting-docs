@@ -11,7 +11,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product</td>
-		<td>Progress® Telerik® Reporting HtmlTextBox</td>
+		<td>Progress® Telerik® Reporting</td>
 	</tr>
 </table>
 
@@ -32,6 +32,6 @@ An *"#ERROR# An error occurred while parsing EntityName."* occurs at the place o
   
 The input can be escaped:  
 
-- In the data-retrieval method;
+- In the data-retrieval method. This will warry between data bases. For example, with SQL Server 2016 (13.x) and later, [STRING_ESCAPE](https://docs.microsoft.com/en-us/sql/t-sql/functions/string-escape-transact-sql?view=sql-server-ver15) can be used.
 - In the expression with the [HtmlEncode utility function](../expressions-utility-functions);
-- In a [custom function](../expressions-user-functions) used in the **HtmlTextBox.Value** property's expression.
+- In a [custom function](../expressions-user-functions) used in the **HtmlTextBox.Value** property's expression through a binding.

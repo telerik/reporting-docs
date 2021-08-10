@@ -1,7 +1,7 @@
 ---
 title: Hosting the Reporting REST Service in Medium Trust environment leads to a permission error.
-description: A permissions-related error is thrown in the report viewer when trying the Reporting REST service is hosted in Medium Trust environment.
-type: how-to
+description: A *Hosting with Medium Trust* - '**Request for the permission of type 'System.Security.Permissions.SecurityPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' failed.**' error is thrown in the report viewer when the Reporting REST service is being hosted in a Medium Trust environment.
+type: troubleshooting
 page_title: Medium Trust environment breaks the Reporting REST Service
 slug: hosting-with-medium-trust-request-for-permission-failed
 res_type: kb
@@ -30,7 +30,7 @@ res_type: kb
 
 *Hosting with Medium Trust: "**Request for the permission of type 'System.Security.Permissions.SecurityPermission, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' failed.**"*  
 
-## Possible Cause
+## Cause
   
 The [Reporting REST Service](../telerik-reporting-rest-conception) is not designed to operate in *Medium Trust* environment. 
 

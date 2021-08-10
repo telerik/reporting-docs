@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Report Designer is Blank
-description: On opening a CS report in the VS Designer, the report is blank.
+description: On opening a CS report in the VS Designer, the report is empty.
 type: how-to
 page_title: The Opened in Visual Studio Designer Report is Blank
 slug: visual-studio-report-designer-is-blank

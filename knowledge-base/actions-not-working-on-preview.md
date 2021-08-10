@@ -1,6 +1,6 @@
 ---
 title: Actions not working on Preview
-description: Some or all report item actions may not work on previewing the report. A couple of scenario under which this could occur are explained in this article.
+description: Some or all report item actions may not work on previewing the report. A couple of scenarios, under which this could occur, are explained in this article.
 type: how-to
 page_title: Unable to use interactive actions when previewing the report
 slug: actions-not-working-on-preview

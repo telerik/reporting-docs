@@ -49,4 +49,4 @@ Removing the problematic item from the report's definition or setting non-zero v
   
 ## Notes
 
-Setting Table/Cross/List item's Width(Height) properties to 0 should be avoided. If the requirement is to hide the item, you can use item's **Visible** property instead. Setting the *Visible* property to **False** will hide the item in the rendered report.*
+Setting Table/Cross/List item's Width(Height) properties to 0 should be avoided. If the requirement is to hide the item, you can use item's **Visible** property instead. Setting the *Visible* property to **False** will hide the item in the rendered report.

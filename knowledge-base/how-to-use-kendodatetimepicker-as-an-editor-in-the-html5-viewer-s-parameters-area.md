@@ -1,6 +1,6 @@
 ---
 title: How to use kendoDateTimePicker as an editor in the HTML5 Viewer's Parameters Area
-description: A frequently asked question is how to replace the default kendoDatePicker with kendoDateTimePicker widget.
+description: How to replace the default kendoDatePicker with kendoDateTimePicker widget.
 type: how-to
 page_title: Implementing the kendoDateTimePicker editor in the HTML5 Viewer's Parameters Area
 slug: how-to-use-kendodatetimepicker-as-an-editor-in-the-html5-viewer-s-parameters-area
@@ -39,7 +39,7 @@ Telerik **kendoDateTimePicker** widget is not included in the Kendo UI JavaScrip
 
 You will have to replace the Kendo UI subset with the full Kendo UI JavaScript e.g. *kendo.all.min.js*.  
   
-Then, you may use the following pattern for plunging custom editors:  
+## Solution
 
 ```html
 <script type="text/javascript">

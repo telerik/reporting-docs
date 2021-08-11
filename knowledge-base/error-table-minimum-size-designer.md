@@ -1,24 +1,43 @@
 ---
-title: Error 'Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}' in Report Designer
-description: Error 'Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}' in Report Designer.
+title: Error 'Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}' in Report Designer.
+description: The Report Designer does not allow setting a table row's/column's height/width to a value lower than 10px.
 type: how-to
-page_title: Error 'Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}' in Report Designer
+page_title: Error is thrown when a table's row or column has a width or height less than 10px.
 slug: error-table-minimum-size-designer
 res_type: kb
 ---
 
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Report Item</td>
+		<td>Table/Crosstab/List Report Item</td>
+	</tr>
+</table>
+
 ## Description
 
-Possible reasons for this error are the following:  
+Trying to set a width or height sizing of less than 10px on table/crosstab/list row or column results in the *Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}* error. Usually, such error occurs when user try to make a row or column not visible by basically reducing its width or height(or both) to zero. The correct way to hide a row or a column is through [Conditional Formatting](../styling-conditional-formatting) or a [Binding](../expressions-bindings) to the **Visible** property.
+
+
+## Possible Causes 
   
-1. The report contains a [Table/Cross/List item](../table-working-with-table-cross-table-list-items) with Width or/and Height properties  set to 0.   
+- The report contains a [Table/Cross/List item](../table-working-with-table-cross-table-list-items) with Width or/and Height properties  set to 0.   
  Setting Table/CrossTab/List item's size properties to zero values in Report Designers was possible in versions prior to [R3 2016 SP1](../release-history/telerik-reporting-r3-2016-sp1-(version-10-2-16-1025)). Upgrading the report from earlier version to **R3 2016 SP1** will result in the mentioned error in the design view if the report contained Table/Cross/List item with **zero** width or/and height.  
   
-2. Table/Cross/List item was created programmatically and its width or/and height was set to 0.
+- Table/Cross/List item was created programmatically and its width or/and height was set to 0.
 
-3. The code for generating Table/Cross/List item in the **Report.Designer.cs(vb)** file was modified and zero values were inserted manually for item's width(height).  
+- The code for generating Table/Cross/List item in the **Report.Designer.cs(vb)** file was modified and zero values were inserted manually for item's width(height).  
   
-4. Table/CrossTab item is nested inside another table's cell using Table/CrossTab Wizard. This is a known issue, a workaround is to first create two tables separately and then nest one table inside another table's cell.
+- Table/CrossTab item is nested inside another table's cell using Table/CrossTab Wizard. This is a known issue, a workaround is to first create two tables separately and then nest one table inside another table's cell.
+
+## Error Message
+
+*Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}*
   
 ## Solution 
   
@@ -28,7 +47,6 @@ Removing the problematic item from the report's definition or setting non-zero v
   
 2. Open report's **.Designer.cs(vb)** file, locate the code for setting item's [Size property](../p-telerik-reporting-reportitem-size) and set Width and Height to values greater than 0.  
   
-  
-> **Note** 
-> <br/>
-> Setting Table/Cross/List item's Width(Height) properties to 0 should be avoided. If the requirement is to hide the item, you can use item's **Visible** property instead. Setting the *Visible* property to **False** will hide the item in the rendered report.*
+## Notes
+
+Setting Table/Cross/List item's Width(Height) properties to 0 should be avoided. If the requirement is to hide the item, you can use item's **Visible** property instead. Setting the *Visible* property to **False** will hide the item in the rendered report.*

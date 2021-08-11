@@ -1,11 +1,27 @@
 ---
 title: How to Expand the PDF Reader's Bookmarks pane on opening a PDF file produced by Telerik Reporting
-description: How to Expand the PDF Reader's Bookmarks pane on opening a PDF file produced by Telerik Reporting.
+description: How to Open the PDF Reader's Bookmarks pane when opening a PDF file created using Telerik Reporting.
 type: how-to
-page_title: How to Expand the PDF Reader's Bookmarks pane on opening a PDF file produced by Telerik Reporting
+page_title: How to Display the PDF Reader's Bookmarks pane wgen a PDF created with Telerik Reporting is opened
 slug: how-to-expand-the-pdf-reader-s-bookmarks-pane-on-opening-a-pdf-file-produced-by-telerik-reporting
 res_type: kb
 ---
+
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Rendering Format</td>
+		<td>PDF</td>
+	</tr>
+	<tr>
+		<td>3rd Party Application</td>
+		<td>Adobe Acrobat, Adobe Reader</td>
+	</tr>
+</table>
 
 ## Description
   
@@ -13,13 +29,13 @@ When you create Telerik Reports you can provide internal navigation in the repor
   
 ## Solution
 
-The Adobe JavaScript you need is as follows:
+- The Adobe JavaScript that is needed is as follows:
 
 ```js
 app.execMenuItem('ShowHideBookmarks')
 ```
 
-To add it in the PDF file that will be produced by Telerik Reporting, you need to pass it through the [JavaScript device setting of the PDF rendering mechanism](../device-information-settings-pdf).  
+- To add it in the PDF file that will be produced by Telerik Reporting, you need to pass it through the [JavaScript device setting of the PDF rendering mechanism](../device-information-settings-pdf).  
   
  This can be done by: 
 - When you [export programmatically](../programmatic-exporting-report) - pass the Adobe JavaScipt as a device info ([Set rendering parameters programmatically](../configuring-telerik-reporting-extensions#set-rendering-parameters-programmatically)):  
@@ -62,5 +78,7 @@ deviceInfo.Add("JavaScript",  "app.execMenuItem('ShowHideBookmarks')")
 ```
 
 In the above code snippet, you need to replace **x.x.x.x** with your version of Telerik Reporting e.g. **15.1.21.512**.
+
+## Notes
 
 The configuration settings valid for your Telerik Reporting version can be checked in the local help resources (CHM file) of the corresponding version.

@@ -1,26 +1,39 @@
 ---
-title: How to use ReportSource objects with ReportBook
-description: How to use ReportSource objects with ReportBook.
-type: how-to
-page_title: How to use ReportSource objects with ReportBook
+title: Adding reports to a ReportBook displays a warning in Visual Studio
+description: Correctly providng ReportSource objects to the ReportBook before and after R1 2017.
+type: troubleshooting
+page_title: Visual Studio shows a warning when adding reports to a ReportBook
 slug: how-to-use-reportsource-objects-with-reportbook
 res_type: kb
 ---
 
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+ 	<tr>
+		<td>Versions</td>
+		<td>R1 2017 and newer</td>
+	</tr>
+ 	<tr>
+		<td>Report Item</td>
+		<td>Report Book</td>
+	</tr>
+</table>
+
 ## Description
- 
-Adding reports to [ReportBook](../designing-reports-general-explanation) shows a warning in **Visual Studio**.  
-*"The Reports property is now obsolete. Please, use ReportSources property instead."*
- 
-## Solution  
-  
+
 As of the **R1 2017** release, adding reports to the [ReportBook.Reports](../p-telerik-reporting-reportbook-reports) collection is **obsolete** - [API Breaking Changes](../upgrade-path-2017-r1#api-breaking-changes).  
   
-To allow integration with Standalone Designer, ReportBook was updated to use [ReportSource](../report-sources) objects for adding the reports.  
+To allow integration with Standalone Designer, [ReportBook](../designing-reports-general-explanation) was updated to use [ReportSource](../report-sources) objects for adding the reports.  
   
-An updated approach includes adding the necessary **ReportSources** to the [**ReportBook.ReportSources**](../p-telerik-reporting-reportbook-reportsources) collection.     
+An updated approach includes adding the necessary **ReportSources** to the [**ReportBook.ReportSources**](../p-telerik-reporting-reportbook-reportsources) collection.
+ 
+## Solution       
   
-- **pre R1 2017**
+### Solution for adding reports to a ReportBook *before* the R1 2017 release.
 
  ````C#
  Telerik.Reporting.ReportBook reportBook = new ReportBook();
@@ -33,7 +46,7 @@ An updated approach includes adding the necessary **ReportSources** to the [**Re
  reportBook.Reports.Add(report)
  ````
 
-- **R1 2017 and later**  
+### Solution for adding reports to a ReportBook *after* the R1 2017 release. 
 
 ````C#
 Telerik.Reporting.ReportBook reportBook = new ReportBook();

@@ -49,3 +49,5 @@ If you are using the HTML5 Viewer and Reporting REST WebAPI based service, to se
 [How To Enable HTTPS In ASP.NET Web API](https://www.c-sharpcorner.com/article/how-to-enable-https-in-asp-net-web-api/)
 
 [Working with SSL in Web API](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/working-with-ssl-in-web-api)
+
+[How to use information from HttpContext in Custom Report Resolver](./how-to-pass-information-from-httpcontext-to-reporting-engine)

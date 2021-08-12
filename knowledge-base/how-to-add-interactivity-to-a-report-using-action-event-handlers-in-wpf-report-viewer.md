@@ -1,8 +1,8 @@
 ---
-title: How to add interactivity to a report using action event handlers in WPF report viewer
-description: How to add interactivity to a report using action event handlers in WPF report viewer.
+title: How to add interactivity to a report using action event handlers in WPF Report Viewer.
+description: Implementing interactivity in the report through action event handlers in the WPF report viewer.
 type: how-to
-page_title: How to add interactivity to a report using action event handlers in WPF report viewer
+page_title: Using action event handlers in WPF report viewer to implement interactivity in the report.
 slug: how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer
 res_type: kb
 ---
@@ -12,21 +12,24 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product</td>
-			<td>Progress® Telerik® Reporting WPF Report Viewer</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
+		<tbody>
+		<tr>
+			<td>Report Viewer</td>
+			<td>WPF Report Viewer</td>
 		</tr>
 	</tbody>
 </table>
 
 ## Desciption
 
-Handle interactive action events in Telerik Report Viewers.  
-  
-## Solution
-
 The report viewers provide handlers for three types of events that are associated with interactive actions – **Executing**, **Enter** and **Leave**. In this article we will show how to use these events to add more interactivity and allow further customization for your reports. We will use the **CSharp.NetFramework.WpfIntegrationDemo** project that is shipped with your Telerik Reporting installation and is part of the **CSharp.ReportExamples.VSxxxx**  solution that can be found at the following path - *C:\Program Files (x86)\Progress\\<Version\>\Examples\CSharp*.   
   
-The report we chose for this example is part of our **ReportingLibrary** and is called *PopulationDensity*. It displays a *choropleth* based on the world population by countries. We will show how to change the colors and display an informational tooltip for the country under the mouse cursor, using a [Custom](../designing-reports-interactivity-custom-action) action. Additionally, we will show you how to cancel a [NavigateToUrl](../designing-reports-interactivity-hyperlinks) action before it is executed, depending on a confirmation dialog. 
-
+The report we chose for this example is part of our **ReportingLibrary** and is called *PopulationDensity*. It displays a *choropleth* based on the world population by countries. We will show how to change the colors and display an informational tooltip for the country under the mouse cursor, using a [Custom](../designing-reports-interactivity-custom-action) action. Additionally, we will show you how to cancel a [NavigateToUrl](../designing-reports-interactivity-hyperlinks) action before it is executed, depending on a confirmation dialog.  
+  
+## Solution 
 
 - Start Visual Studio, open the solution file and locate the **CSharp.ReportLibrary** project. Navigate to **Choropleth/PopulationDensity.cs** file and open it. Add the following code snippet in the report *constructor* right after the **InitializeComponent()** call:
     
@@ -45,11 +48,9 @@ shapeMapSeries1.SeriesGroup.Action = customAction;
 ```
 
 
-  
-
 This code modifies the report definition, adding **NavigateToUrlAction** instance to the title text box and **CustomAction** instance with four parameters to the **ShapeMap** series group, which means that every data point (every shape in the choropleth) will trigger a custom action. 
 
-Please note that modifying the report definition programmatically is not recommended and we use it here for demonstration purpose - otherwise we strongly advise to use the Report Designer for such tasks.
+> Please note that modifying the report definition programmatically is not recommended and we use it here for demonstration purpose - otherwise we strongly advise to use the Report Designer for such tasks.
 
 - Open the **CSharp.NetFramework.WpfIntegrationDemo** project and locate **Window1.xaml.cs** file. Add the following two private fields to the **Window1** body (we will explain about them later):
     
@@ -58,7 +59,7 @@ System.Windows.Media.Brush fillBrush;
 System.Windows.Media.Brush stroke;
 ```
 
-Add the following code snippet in the report viewer *constructor* after **InitializeComponent()** line:
+- Add the following code snippet in the report viewer *constructor* after **InitializeComponent()** line:
     
 
 ```cs
@@ -69,11 +70,11 @@ this .ReportViewer1.ReportSource = new Telerik.Reporting.TypeReportSource()
 this .ReportViewer1.InteractiveActionEnter += Choropleth_ActionEnter;
 this .ReportViewer1.InteractiveActionLeave += Choropleth_ActionLeave;
 this .ReportViewer1.InteractiveActionExecuting += Choropleth_ActionExecuting;
-```
-This code block sets the report viewer's **ReportSource** property and creates the handlers to the interactive actions.
 
-- To create the method for the **Choropleth\_ActionEnter**  handler, add the following code snippet to the **.cs** file:
-    
+// This code block sets the report viewer's ReportSource property and creates the handlers to the interactive actions.
+```
+
+- To create the method for the **Choropleth\_ActionEnter**  handler, add the following code snippet to the **.cs** file:    
 
 ```cs
 void Choropleth_ActionEnter( object sender, Telerik.ReportViewer.Wpf.InteractiveActionEventArgs args)
@@ -116,7 +117,7 @@ string GetCountryInfo(System.Collections.Generic.IDictionary< string , object > 
 ```
 
 
- This code is executed when the mouse enters the interactive action area. Since it is fired for every action, we need to check the **ReportItemName** value so our code will react accordingly. If we are hovering over the title text box, the action element will be of **System.Windows.Controls.Border** type and we can setup the bottom border line, underscoring the text.
+This code is executed when the mouse enters the interactive action area. Since it is fired for every action, we need to check the **ReportItemName** value so our code will react accordingly. If we are hovering over the title text box, the action element will be of **System.Windows.Controls.Border** type and we can setup the bottom border line, underscoring the text.
       
 
 In any other case, the event should be raised when the cursor is over a *map data point*, which means that the current element will be of a **System.Windows.Shapes.Path** type. The current shape fill and stroke is preserved in the fields created earlier so they will be restored when the mouse cursor leaves the current shape. The action in the arguments is cast to **CustomAction** and the current element’s tooltip is set to the output of the **GetCountryInfo()** method.
@@ -146,9 +147,9 @@ void Choropleth_ActionLeave( object sender, Telerik.ReportViewer.Wpf.Interactive
          }
      }
 }
-```
 
-The code here restores the default state of the framework elements, changed during the Choropleth\_ActionEnter  event.
+// The code here restores the default state of the framework elements, changed during the Choropleth\_ActionEnter  event.
+```
 
 - To create the method for the **Choropleth\_ActionExecuting**  handler, add the following code snippet to the **.cs** file:
     
@@ -178,9 +179,11 @@ void Choropleth_ActionExecuting( object sender, Telerik.ReportViewer.Wpf.Interac
 
 Again, we need to check the **ReportItemName** property to be sure which report item raised the event. If the action is triggered from the title text box, the viewer will display a confirmation box and its result will be assigned to the **Cancel** property, so the **NavigateToUrl** action will not be executed if Cancel is set to **true**. However, when using a CustomAction, the Cancel property doesn’t affect the workflow, so in this case we will display a confirmation box with some details and will open a browser window, navigating to a wiki page of the current country, whose name is obtained through the *CustomAction parameters*.
 
-- When you're done, run the project and hover your mouse over the choropleth. It should look like the one below:
+### When you're done, run the project and hover your mouse over the choropleth. It should look like the one below:
 
 ![Choropleth](resources/customactionswpfviewer_choropleth.PNG)
+
+## Notes
 
 In this article we demonstrated how to add interactivity and customizations to a report with a few lines of code. This approach can be used in all the current report viewers with slight modifications due to the rendering technology.
 

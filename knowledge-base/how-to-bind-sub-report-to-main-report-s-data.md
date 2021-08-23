@@ -1,11 +1,23 @@
 ---
 title: How to bind Sub Report to Main Report's Data
-description: How to bind Sub Report to Main Report's Data.
+description: How to make the Sub Report use the Main Report's Data.
 type: how-to
-page_title: How to bind Sub Report to Main Report's Data
+page_title: How to send data to the Sub Report from Main Report's Data Object 
 slug: how-to-bind-sub-report-to-main-report-s-data
 res_type: kb
 ---
+
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+   <tr>
+		<td>Report Item</td>
+		<td>SubReport</td>
+	</tr>
+</table>
 
 ## Description
 
@@ -30,9 +42,11 @@ Expression: =ReportItem.DataObject
 Property path: DataSource
 Expression: =ReportItem.Parent.Parent.DataObject
 ```  
+
+## Notes
+In case you need to display data in a tabular format, another approach for organizing the main report's layout can be found in [How to Databind to Collection Properties](../how-to-databind-to-collection-properties). 
+
 ## See also  
-More details can be found in [How to use the ReportItem.DataObject property in expressions]../data-items-how-to-use-data-object). 
 
-In case you need to display data in a tabular format, another approach for organizing the main report's layout can be found in [How to Databind to Collection Properties](../how-to-databind-to-collection-properties).  
-
-
+[How to use the ReportItem.DataObject property in expressions](../data-items-how-to-use-data-object). 
+ 

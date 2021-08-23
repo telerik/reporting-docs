@@ -30,6 +30,6 @@ The result PDF file rendered on the server is returned with **Content-Dispositi
 
 Note that the confirmation of the print operation cannot be avoided due to security restrictions.
 
-[MVC WebForms Client Print Example](/resources/mvc_webforms_clientprint.zip)
+[MVC WebForms Client Print Example](/knowledge-base/resources/mvc_webforms_clientprint.zip)
 
-[VB Client Print Example](/resources/clientprintingvb.zip)
+[VB Client Print Example](/knowledge-base/resources/clientprintingvb.zip)

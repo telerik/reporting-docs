@@ -42,7 +42,7 @@ Make the following are correctly set up:
 
 ## Notes
 
-To debug the data access layer while using the Visual Studio Report Designer, you have to open another Visual Studio instance, select **Debug-&gt;Attach** **to process** to debug another instance of *devenv.exe* and select **Debug-&gt;Exception...** to enable  the** First Chance Exceptions**.  
+To debug the data access layer while using the Visual Studio Report Designer, you have to open another Visual Studio instance, select **Debug-&gt;Attach** **to process** to debug another instance of *devenv.exe* and select **Debug-&gt;Exception...** to enable  the **First Chance Exceptions**.  
  
 ## See Also
 

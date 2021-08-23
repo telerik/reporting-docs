@@ -51,26 +51,25 @@ Switzerland,Zurich,47.3798,8.5283,30
 4. On the **Arrange Map Fields** page drag **City** field to **Categories** (location) box, **Lat** and **Long** fields to **Latitude** and **Longitude** boxes respectively and Value field to Size box.
 5. When you click Finish, your report will display all the points from the data source onto the map, so we will create a report parameter that will help us to view the data for each country.
 
-Add new report parameter called paramCountry and set its **AvailableValues** properties as follows: 
-- DataSource: csvData
-- DisplayMember: =Fields.Country
-- ValueMember: =Fields.Country
-- AutoRefresh: True 
-- Value to France and Visible to True so it has some initial state.
+6. Add new report parameter called paramCountry and set its **AvailableValues** properties as follows: 
+- **DataSource**: csvData
+- **DisplayMember**: =Fields.Country
+- **ValueMember**: =Fields.Country
+- **AutoRefresh**: True 
+- **Value** to France and **Visible** to True so it has some initial state.
 
-Add new Filter in map’s Filters collection and set its Expression to =Fields.Country, Operator to "=" (without quotes) and Value to Parameters.paramCountry.Value. 
+7. Add new Filter in map’s **Filters** collection and set it as  **Expression** to =Fields.Country, **Operator** to "=" (without quotes) and **Value** to =Parameters.paramCountry.Value. 
 
 If you preview the report, it should see your map and the parameter above. Changing the parameter values you will notice that the map extent changes accordingly. The extent is dynamically calculated for Germany and France but for Switzerland it defaults to ‘whole world’, because in our data Switzerland has only one point.
 
- Add two new PointMapSeries instances to the map’s Series collection. They will contain the virtual points that are positioned on the same parallel or meridian with the real point, ensuring a valid extent. Keep in mind that the meridians converge at the Poles so your extent won’t cover the same area everywhere on Earth. However, Mercator projection we use “stretches” the globe near the Poles so it’s up to you to determine the offset of the virtual points. In our case we will position the virtual points at 1 degree east and west from the real point, so set the series properties as follows:  Latitude: =Fields.Lat, Longitude: =Fields.Long-1 (respectively Fields.Long+1 for the second series).
+8. Add two new [PointMapSeries](./t-telerik-reporting-pointmapseries) instances to the map’s Series collection. They will contain the virtual points that are positioned on the same parallel or meridian with the real point, ensuring a valid extent. Keep in mind that the meridians converge at the Poles so your extent won’t cover the same area everywhere on Earth. However, Mercator projection we use “stretches” the globe near the Poles so it’s up to you to determine the offset of the virtual points. In our case we will position the virtual points at 1 degree east and west from the real point, so set the series properties as follows:  Latitude: =Fields.Lat, Longitude: =Fields.Long-1 (respectively Fields.Long+1 for the second series).
 
 If you now preview the report, you will see that when selecting Switzerland, the map doesn’t show the whole world but an area around Zurich instead. However, it’s a good idea to add this extra offset only when there is a single member in the current group, so you can change the Longitude expressions of the virtual series to =Fields.Long - (IIF(Exec('map1', Count(Fields.City)) = 1, 1, 0)). Additionally you can make the virtual datapoints invisible and apply some additional styling to your report so finally it would look like this:
-[photo]
-In this article we demonstrated how to set the Map item extent dynamically and provide a proper zoom level when having only one data point shown on the map. You can download the above example as a .trdx report from here.
-
-
+![Map Preview](resources/mapextentwithonedatapoint.png)
 
 
 ## See Also
-Map structure
-Map - connecting to data
+[Map](./reporting/mapstructure)
+
+[PointMapSeries Class](./t-telerik-reporting-pointmapseries)
+

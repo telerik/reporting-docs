@@ -1,12 +1,23 @@
 ---
 title: Telerik Reporting Toolbox items are missing
-description: Telerik Reporting Toolbox items are missing.
+description: Visual Studio does not show the Telerik Reporting Toolbox items.
 type: how-to
-page_title: Telerik Reporting Toolbox items are missing
+page_title: Telerik Reporting Toolbox items are not present
 slug: telerik-reporting-toolbox-items-are-missing
 res_type: kb
 ---
   
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+   <tr>
+		<td>Report Designer</td>
+		<td>Visual Studio Report Designer</td>
+	</tr>
+</table>    
 
 ## Description  
 After installing Telerik Reporting, some problems related to the Visual Studio Toolbox might appear. For example:

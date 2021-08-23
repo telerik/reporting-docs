@@ -1,13 +1,23 @@
 ---
 title: Should I use System.Data.OracleClient .NET data provider to retrieve data for reports from an Oracle database?
-description: Should I use System.Data.OracleClient .NET data provider to retrieve data for reports from an Oracle database?. 
+description: Which .NET data provider should I use to retrieve data for reports from an Oracle database?. 
 type: how-to
-page_title: Should I use System.Data.OracleClient .NET data provider to retrieve data for reports from an Oracle database?
+page_title: The System.Data.OracleClient .NET data provider is deprecated, use the Oracle Data Provider for .NET/ODP.NET instead.
 slug: should-i-use-system-data-oracleclient-net-data-provider
 res_type: kb
 ---
 
-
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+   <tr>
+		<td>Report Item</td>
+		<td>SqlDataSource Component</td>
+	</tr>
+</table>
   
 ## Description  
 **System.Data.OracleClient** is a Microsoft .NET data provider allowing you to connect to an Oracle database. The provider is deprecated and it should not be used - <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/oracle-and-adonet" target="_blank">Oracle and ADO.NET</a>.

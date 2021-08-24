@@ -14,6 +14,7 @@ This article lists the required steps for printing a report directly on the clie
 ## Solution
 
 The existing print functionality in web viewers is based on the following:
+
 1. The report is exported in PDF format;
 2. On rendering the PDF document, the reporting engine injects Adobe Javascript that forces the used PDF reader to open its Print dialog;
 3. The PDF file is sent to the client in the browser in a hidden frame, where the browser must have properly configured and enabled PDF plugin to load the PDF file in the browser window;

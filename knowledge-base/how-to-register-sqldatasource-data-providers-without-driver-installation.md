@@ -1,24 +1,34 @@
 ---
-title: How to register SqlDataSource data providers without driver installation
+title: Registering SqlDataSource data providers without installing driver
 description: No need to install a driver when you register SQLDataSource. See how to register a .Net Framework data provider without installing its driver. 
 type: how-to
-page_title: Register .Net Framework data provider without installing its driver
+page_title: Registering .Net Framework data provider without installing its driver
 slug: how-to-register-sqldatasource-data-providers-without-driver-installation
 res_type: kb
 category: knowledge-base
 ---
- 
-## DESCRIPTION
+
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product Version</td>
+			<td>All</td>
+		</tr>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
+</table>
+
+## Description
 You need to register a .Net Framework data provider for Telerik Reports without installing its driver.
 
-## SOLUTION
-Telerik Reporting allows fetching data from a variety of data sources (details in <a href="/connecting-to-data-data-source-components" target="_blank">this help article</a>). The <a href="/sqldatasource" target="_blank">SqlDataSource component</a> would list and work with any ADO.NET provider that is correctly registered on the device.
+Telerik Reporting allows fetching data from a variety of data sources (details in <a href="/connecting-to-data-data-source-components" target="_blank">this help article</a>). The <a href="/sqldatasource" target="_blank">SqlDataSource component</a> would list and work with any ADO.NET provider that is correctly registered on the device. The usual way of registering .Net Framework data providers is through installing the corresponding driver. Installation would typically add the required information about the data provider in the *machine.config* file, and store the necessary assemblies in the *Global Assembly Cache (GAC)*. More information on registering .Net Framework data providers could be found in <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory" target="_blank">this MSDN article</a>.
 
-The usual way of registering .Net Framework data providers is through installing the corresponding driver. Installation would typically add the required information about the data provider in the *machine.config* file, and store the necessary assemblies in the *Global Assembly Cache (GAC)*. More information on registering .Net Framework data providers could be found in <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory" target="_blank">this MSDN article</a>.
-
-In order to feed data to the reports, without installing and registering the ADO.NET providers, you can follow the steps below.
-
-As an example, we will configure **Npgsql** - a **.Net Framework Data Provider for Postgresql Server** (version 3.2.1.0), to be used in the Standalone designer.
+## Solution
+In order to feed data to the reports, without installing and registering the ADO.NET providers, you can follow the steps below. As an example, we will configure **Npgsql** - a **.Net Framework Data Provider for Postgresql Server** (version 3.2.1.0), to be used in the Standalone designer.
 
 1. Store the required assemblies in the Standalone designer application hosting folder, the **"appFolder"** in the example, or in a subfolder there. We have used the **bin** subfolder, and therefore configured accordingly the section \<*probing privatePath=”bin”*\>. Alternatively, the assemblies could be stored side by side with the designer (.*exe* file). In this case the \<*probing*\> section could be omitted, and the corresponding paths (in the *href* attribure of the \<*codeBase*\> element) in the configuration file should be updated.
 2. Register the following assemblies, which include the Data provider and its external dependencies, in the Standalone designer's *.config* (i.e. **Telerik.ReportDesigner.exe.config**) section \<*runtime*\> \<*assemblyBinding*\>. 
@@ -65,8 +75,11 @@ The metadata should be provided in the \<*assemblyIdentity*\> and \<*codeBase*\>
 </runtime>
 ```
 
-The list of dependencies might be different if you use a different version of **Npgsql** data provider.
-3. Register the data provider (**Npgsql**) in the Standalone designer's .*config* (i.e. **Telerik.ReportDesigner.exe.config**) section \<*system.data*\> \<*DbProviderFactories*\>.
+> **Note**
+> <br>
+> The list of dependencies might be different if you use a different version of **Npgsql** data provider.
+
+3. Register the data provider (**Npgsql**) in the Standalone designer's *.config* (i.e. **Telerik.ReportDesigner.exe.config**) section \<*system.data*\> \<*DbProviderFactories*\>.
 
 ```
 <system.data>
@@ -83,11 +96,11 @@ The list of dependencies might be different if you use a different version of *
 
 With this set up, the Standalone designer should successfully find the data provider and grant access to the information stored in the corresponding databases.
 
-## Notes for Visual Studio Telerik Report Designer
-Registering new data providers in the <a href="/ui-report-designer" target="_blank">VS Telerik Report Designer</a> would require the same configuration code to be added to the VS .*config* file (i.e. **devenv.exe.config**) that could be found in *(VS\_installation\_folder)/Common7/IDE*, which would become also the **"appFolder"**.
+## Notes
+Registering new data providers in the <a href="/ui-report-designer" target="_blank">Visual Studio Telerik Report Designer</a> would require the same configuration code to be added to the Visual Studio *.config* file (i.e. **devenv.exe.config**). It can be found in *(VS\_installation\_folder)/Common7/IDE*, which would become also the **"appFolder"**.
 
-# See Also
-<a href="/connecting-to-data-data-source-components" target="_blank">Data Source components.</a>
-<a href="/sqldatasource" target="_blank">SqlDataSource components.</a>
-<a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory" target="_blank">Obtaining a DbProviderFactory according to MSDN.</a>
-<a href="/ui-report-designer" target="_blank">Visual Studio Telerik Report Designer.</a>
+## See Also
+- <a href="/connecting-to-data-data-source-components" target="_blank">Data Source components.</a>
+- <a href="/sqldatasource" target="_blank">SqlDataSource components.</a>
+- <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory" target="_blank">Obtaining a DbProviderFactory according to MSDN.</a>
+- <a href="/ui-report-designer" target="_blank">Visual Studio Telerik Report Designer.</a>

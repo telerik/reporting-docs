@@ -12,12 +12,12 @@ category: knowledge-base
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
-			<td>All</td>
-		</tr>
-		<tr>
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Report Item</td>
+			<td>SqlDataSource Component</td>
 		</tr>
 	</tbody>
 </table>

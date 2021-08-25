@@ -1,8 +1,8 @@
 ---
-title: Migrate to the HTML5 Viewer from the old ASP.NET WebForms ReportViewer control
-description: Replace the old ASP.NET WebForms ReportViewer control with the HTML5 Viewer.
+title: Upgrade your ASP.NET WebForms ReportViewer control to the new HTML5 Report Viewer.
+description: Replace the old ASP.NET WebForms ReportViewer control with the HTML5 Report Viewer.
 type: how-to
-page_title: Start using the HTML5 Viewer instead of the old ASP.NET WebForms ReportViewer control
+page_title: Switch to using the HTML5 Viewer instead of the old ASP.NET WebForms ReportViewer control
 slug: migrate-to-the-html5-viewer-from-the-old-asp.net-webforms-reportviewer-control
 res_type: kb
 ---
@@ -28,7 +28,7 @@ res_type: kb
   
 ## Description
 
-> The **old ASP.NET ReportViewer control is obsolete** as of [Telerik Reporting Q3 2015](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-(version-9-2-15-930)).  
+> The **ASP.NET ReportViewer control is obsolete** as of [Telerik Reporting Q3 2015](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-(version-9-2-15-930)).  
   
 In **Q3 2013** we introduced the HTML5 Report Viewer which is suitable for any web application and it will be further developed. It is recommended to use the HTML5 Viewer of the latest available Telerik Reporting version.  
   

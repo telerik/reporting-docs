@@ -1,8 +1,8 @@
 ---
-title: Report Designer Preview is not working when using ObjectDataSource
+title: Report Designer Preview is not working when using ObjectDataSource inside Visual Studio.
 description: Preview the report in the Visual Studio Designer is not working when using ObjectDataSource.
 type: troubleshooting
-page_title: Reports using ObjectDataSource cannot be opened with the Visual Studio Designer
+page_title: Reports using ObjectDataSource cannot be opened with the Visual Studio Designer.
 slug: visual-studio-preview-is-not-working-when-using-objectdatasource
 res_type: kb
 ---
@@ -21,20 +21,24 @@ res_type: kb
 
 ## Description
 
-Generally, the Visual Studio Report Designer operates *inside* the Visual Studio application. Thus, when previewing a report the report constructor is executed in the context of the Visual Studio application and all the configuration settings are obtained from the Visual Studio's **devenv.exe.config** file. If not taken upon consideration, this might lead to two major issues - *ConnectionStrings* and *AssemblyReferences* mismatch.   
+As the Visual Studio Report Designer operates *inside* Visual Studio, when previewing a report there, the report constructor is executed in the context of the Visual Studio application and all the configuration settings are obtained from the Visual Studio's **devenv.exe.config** file.. If not taken upon consideration, this might lead to two major issues - *ConnectionStrings* and *AssemblyReferences* mismatch.   
 
 ## Solution
 
-Make the following are correctly set up:
+Make sure the following are correctly set up:
 
 - Connection Strings
 
-    As described in MSDN, the [ConfigurationManager.ConnectionStrings property](https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager.connectionstrings?redirectedfrom=MSDN&view=net-5.0#System_Configuration_ConfigurationManager_ConnectionStrings) gets the *ConnectionStringsSection* data for the current application's default configuration. Generally in case of Visual Studio this is devenv.exe.config. The [SqlDataSource component](../sqldatasource) is particularly designed to use the current's project configuration file. However, if your custom data access layer (DAL) is reading the **ConfigurationManager**.ConnectionStrings from the report that is previewed you get all connection strings defined in the devenv.exe.config file. In order to avoid the error you have several options:  
+  As described in MSDN, the [ConfigurationManager.ConnectionStrings property](https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager.connectionstrings?redirectedfrom=MSDN&view=net-5.0#System_Configuration_ConfigurationManager_ConnectionStrings) gets the *ConnectionStringsSection* data for the current application's default configuration. 
+  
+  In case of Visual Studio, this is *devenv.exe.config*. The [SqlDataSource component](../sqldatasource) is particularly designed to use the current's project configuration file. However, if your custom Data Access Layer (DAL) is reading the **ConfigurationManager**.ConnectionStrings from the report that is previewed you get all connection strings defined in the devenv.exe.config file. In order to avoid the error you have several options:  
 
-    1. Hard code the ConnectionString in you DAL;
-    2. Use an actual application to view your reports in runtime instead of the Previews;
-    3. Add the required ConnectionString in devenv.exe.config;
-    4. Use the SqlDataSource instead that will resolve the ConnectionStrings in the reports projects.
+    1. Hard code the ConnectionString in your Data Access Layer(**DAL**);
+    2. Use a desktop application with a report viewer(WinForms/WPF) to view your reports in runtime instead of the VS Previews;
+    3. Add the required **ConnectionString** in **devenv.exe.config**;
+    4. Use the [SqlDataSource](../sqldatasource) component instead of the [ObjectDataSource](../objectdatasource) component. The SqlDataSource component will resolve the *ConnectionStrings* in the reports projects.
+
+> For VS 2017 and higher, the devenv.exe.config's default location is C:\Program Files (x86)\Microsoft Visual Studio\*year*\Professional|Community\Common7\IDE.
 
 - Assembly References
 
@@ -42,9 +46,15 @@ Make the following are correctly set up:
 
 ## Notes
 
-To debug the data access layer while using the Visual Studio Report Designer, you have to open another Visual Studio instance, select **Debug-&gt;Attach** **to process** to debug another instance of *devenv.exe* and select **Debug-&gt;Exception...** to enable  the **First Chance Exceptions**.  
+To debug the data access layer while using the Visual Studio Report Designer, you may do the following:
+
+- Open another Visual Studio instance
+- Select **Debug-&gt;Attach** **to process** to debug another instance of *devenv.exe* 
+- Select **Debug-&gt;Exception...** to enable  the **First Chance Exceptions**.  
  
 ## See Also
+
+[The Connection Strings Reference](https://www.connectionstrings.com/)
 
 [Visual Studio Problems](../troubleshooting-visual-studio-problems)
 

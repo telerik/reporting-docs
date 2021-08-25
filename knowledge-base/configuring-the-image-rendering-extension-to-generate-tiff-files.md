@@ -1,8 +1,8 @@
 ---
 title: Configuring the Image Rendering Extension to generate TIFF files
-description: Editing the Image Rendering Extension to render TIFF files.
+description: Modify the Image Rendering Extension to generate high resolution (300 x 300 dpi) images and register four new formats that use the CCITT G3/G4, RLE and None compressions.
 type: how-to
-page_title: Modifying the Image Rendering Extension to produce TIFF files
+page_title: Edit the Image Rendering Extension to produce TIFF files
 slug: configuring-the-image-rendering-extension-to-generate-tiff-files
 res_type: kb
 ---

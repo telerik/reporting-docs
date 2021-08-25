@@ -1,8 +1,8 @@
 ---
-title: Error is thrown on attempt to add Report Viewer control on to the page.
+title: Failed to setup service when adding Report Viewer control on the page.
 description: Attempting to add a Report Viewer control on the design surface of a WebForm leads to an error being thrown.
 type: troubleshooting
-page_title: Trying to add a Report Viewer control in a Web Site projects leads to an error
+page_title: Trying to add a Report Viewer control in a Web Site projects leads to InvalidCastException error.
 slug: error-in-web-site-project-failed-to-setup-service-system-invalidcastexception
 position: 
 tags: 

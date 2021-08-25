@@ -1,8 +1,8 @@
 ---
-title: The styles of the web report viewer's toolbar are messed up.
-description: The styles of the web report viewer's toolbar do not show up as expected.
+title: The styles of the ASP.NET Report Viewer's toolbar are messed up.
+description: Making sure the styles of the ASP.NET Report Viewer are loaded correctly.
 type: troubleshooting
-page_title: The styles of the web report viewer's toolbar are incorrect.
+page_title: Troubleshooting what causes incorrect styling of the toolbar of the ASP.NET Report Viewer.
 slug: the-styles-of-the-web-report-viewer-s-toolbar-are-messed-up
 res_type: kb
 ---
@@ -23,7 +23,7 @@ res_type: kb
 	</tbody>
 </table>
 
- ## Description
+## Description
 
 The Legacy ASP.NET Report Viewer's styles are messed up on loading the report viewer in the browser.
    

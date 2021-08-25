@@ -1,6 +1,6 @@
 ---
-title: Error is thrown on browsers not supporting promises.
-description: Loading the report viewer on a browser that does not support promises leads to an error.
+title: Promise is undefined error on loading the Report Viewer in the browser.
+description: Loading the report viewer on a browser that does not support promises leads to 'Promise is undefined error'.
 type: troubleshooting
 page_title: The HTML5 Report Viewer cannot be previewed in browsers with no promises support. 
 slug: error-promise-is-undefined
@@ -30,7 +30,7 @@ res_type: kb
 
 ## Cause
 
-The error appears in browser when you load a page with the HTML5 Report Viewer on it.
+The error appears in the browser when you load a page with the HTML5 Report Viewer on it.
   
 The error indicates that the tested browser does not have support for promises.  
 

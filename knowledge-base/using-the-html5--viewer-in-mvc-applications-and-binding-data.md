@@ -1,0 +1,47 @@
+---
+title: Using the HTML5 Viewer in MVC applications and binding data
+description: This article explains how to use the  the HTML5 Viewer in MVC applications and binding data.
+type: how-to
+page_title: How to Use the HTML5 Viewer in MVC Applications and Binding Data
+slug: using-the-html5--viewer-in-mvc-applications-and-binding-data
+position: 
+tags: 
+ticketid: 1532522
+res_type: kb
+---
+
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
+</table>
+
+
+## Description
+In the MVC architectures, data can be transferred between views and controllers via model.
+A frequently asked question is how to use the modified data object for reports displayed by the HTML5 Report Viewer.
+
+In general, the HTML5 Viewer and Reporting REST service use a client-server architecture, for which the project with the HTML5 Report Viewer appears as a client for the Reporting REST service, even if the service is added in the same project as the viewer.
+
+The HTML5 Report Viewer sends only short JSON serialized string messages to the Reporting REST Service. The messages include details what report and resources to be processed and rendered on the server, and then delivered to the client by the service.
+
+
+
+## Solution
+The MVC application can allow users to modify and save data on the server. Once data is on the server, reports can retrieve it via data source component like SqlDataSource, ObjectDataSource and etc.
+The attached demo project illustrates the scenario. The data source is a text file that is updated by the MVC application. When data is saved back in the text file, it can be pulled by the report requested in preview by the HTML5 Viewer hosted in the MVC application.
+
+General information:
+The purpose of data source components on designing reports is to let you specify how data to be retrieved in a declarative manner. When a report is processed, the Reporting engine uses the information from data source components how to retrieve data from the server and creates the needed data objects on its own.
+
+Other scenarios requiring you to create or modify reports at run-time based on data are covered by How to display a report via InstanceReportSource in the HTML5 Viewer.
+
+## Demo
+links
+
+## See Also
+links

@@ -23,7 +23,7 @@ category: knowledge-base
 </table>
 
 ## Description
-You need to register a .Net Framework data provider for Telerik Reports without installing its driver.
+How can I register a .Net Framework data provider for Telerik Reporting without installing its driver?
 
 Telerik Reporting allows fetching data from a variety of data sources (details in <a href="/connecting-to-data-data-source-components" target="_blank">this help article</a>). The <a href="/sqldatasource" target="_blank">SqlDataSource component</a> would list and work with any ADO.NET provider that is correctly registered on the device. The usual way of registering .Net Framework data providers is through installing the corresponding driver. Installation would typically add the required information about the data provider in the *machine.config* file, and store the necessary assemblies in the *Global Assembly Cache (GAC)*. More information on registering .Net Framework data providers could be found in <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory" target="_blank">this MSDN article</a>.
 

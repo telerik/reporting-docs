@@ -25,22 +25,6 @@ res_type: kb
 The ability to print a report is widely used feature that a Reporting product cannot go without. The ReportViewers we provide for viewing the reports, come with a **Print** button that takes care of this automatically. However, in case one might want to be in control over the printing - use the exposed methods.  
    
 ## Solution
-   
- ### Legacy ASP.NET Report Viewer  
-   
- To print a report through the Legacy ASP.NET ReportViewer, you need to use the built-in print functionality. It depends on the **Adobe Acrobat Reader PDF plugin** (you need it installed to take advantage of true print and not the browsers' printing capabilities) and you have the option to select a printer from a list.   
-   
-
-On the client side, you can invoke the print through the ReportViewer client object's *PrintReport()* method:  
-   
-```html
-<form id="form1" runat="server">      
-        <telerik:ReportViewer runat="server" id="ReportViewer1"></telerik:ReportViewer>                       
-    <script type="text/javascript"> 
-        <%=ReportViewer1.ClientID %>.PrintReport(); 
-    </script>        
-</form> 
-```
 
  ### HTML5 Report Viewers
 
@@ -69,6 +53,22 @@ On the client side, you can invoke the print through the ReportViewer client obj
  ReportProcessor reportProcessor = new ReportProcessor();
  reportProcessor.PrintReport(new TypeReportSource() { TypeName = typeof(BarcodesReport).AssemblyQualifiedName }, new PrinterSettings());
 ``` 
+
+ ### Legacy ASP.NET Report Viewer  
+   
+ To print a report through the Legacy ASP.NET ReportViewer, you need to use the built-in print functionality. It depends on the **Adobe Acrobat Reader PDF plugin** (you need it installed to take advantage of true print and not the browsers' printing capabilities) and you have the option to select a printer from a list.   
+   
+
+On the client side, you can invoke the print through the ReportViewer client object's *PrintReport()* method:  
+   
+```html
+<form id="form1" runat="server">      
+        <telerik:ReportViewer runat="server" id="ReportViewer1"></telerik:ReportViewer>                       
+    <script type="text/javascript"> 
+        <%=ReportViewer1.ClientID %>.PrintReport(); 
+    </script>        
+</form> 
+```
    
 ## See Also
 

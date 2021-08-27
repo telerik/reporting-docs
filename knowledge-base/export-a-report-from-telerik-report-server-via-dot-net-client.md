@@ -19,15 +19,22 @@ res_type: kb
     
 ## Description
 
-[Telerik Report Server](https://www.telerik.com/report-server) has its REST API exposed, allowing you to consume resources from third-party applications as an administrator, after logging in. You can find *examples* with JavaScript client in the REST API section of the online documentation:  
+[Telerik Report Server](https://www.telerik.com/report-server) has its REST API exposed, allowing you to consume resources from third-party applications as an administrator, after logging in. You can find examples with JavaScript client in the REST API section of the online documentation:  
 
-- [Login](../../report-server/implementer-guide/apis/rest-api/examples/javascript/login) and saving the access token for further usage;
-- [Resources](../../report-server/implementer-guide/apis/rest-api/examples/javascript/get-resources) - listing resources like reports available on the Report Server;
-- [Export](../../report-server/implementer-guide/apis/rest-api/examples/javascript/export) a report by getting its ID first. 
+- [Login and saving the access token for further usage](../../report-server/implementer-guide/apis/rest-api/examples/javascript/login)
+- [Resources - listing resources like reports available on the Report Server](../../report-server/implementer-guide/apis/rest-api/examples/javascript/get-resources)
+- [Export a report by getting its ID first](../../report-server/implementer-guide/apis/rest-api/examples/javascript/export) 
   
-## Solution
+The same JavaScript client can be written as a .NET client that executes requests and handles their response in code. 
 
-The same JavaScript client can be written as a .NET client that executes requests and handles their response in code:  
+The following solution demonstrates the following:
+
+- How to Login to the Report Server through the .NET client;
+- How to get a collection of all reports available on the report serve through the .NET client;
+- How to export a report available on the report server through the .NET client;
+- How to download the exported document through the .NET client;
+
+## Solution
 
 ```cs
 class Program
@@ -142,3 +149,5 @@ Please note that this is not an end solution, but an example illustrating how to
 ## See Also
 
 [REST API Reference](../../report-server/implementer-guide/apis/rest-api/api-reference)
+
+[Displaying Reports From Report Server Through Custom Report Source Resolver](./displaying-reports-from-report-server-through-custom-report-source-resolver)

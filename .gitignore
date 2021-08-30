@@ -23,9 +23,11 @@ _site
 _tempconfig.yml
 bs-config.js
 build-docs.sh
+CODEOWNERS
 copy_content.sh
 copy_local.sh
 Dockerfile
+exclude.txt
 Gemfile
 Gemfile.lock
 install-npm.sh

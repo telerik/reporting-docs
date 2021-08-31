@@ -1,16 +1,31 @@
 ---
 title: How to edit connection strings saved by the Standalone Report Designer?
-description: How to edit connection strings saved by the Standalone Report Designer?.
+description: How to modify connection strings saved by the Standalone Report Designer?.
 type: how-to
-page_title: How to edit connection strings saved by the Standalone Report Designer?
+page_title: How to make changes to connection strings saved by the Standalone Report Designer?
 slug: how-to-edit-connection-strings-saved-by-the-standalone-report-designer
 res_type: kb
 ---
 
-## Description
-This article lists the required steps to edit connection strings saved by the Standalone Report Designer. Basically, the predefined connection strings are saved in the Standalone Report Designer configuration file (*Telerik.ReportDesigner.exe.config*) and can be edited directly from there. Any other connection strings used in the designer are stored locally on the user's computer in an XML file.
+## Environment
 
-## Solution
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Report Designer</td>
+		<td>Standalone Report Designer</td>
+	</tr>
+</table>
+
+## Description
+
+This article lists the required steps to edit connection strings saved by the Standalone Report Designer. 
+
+The predefined connection strings are saved in the Standalone Report Designer configuration file (*Telerik.ReportDesigner.exe.config*) and can be edited directly from there. Any other connection strings used in the designer are stored locally on the user's computer in an XML file.
+
 The configuration file storing the user's application settings can be found at:  
    
 %localAppData%\Progress_Software_Corpora\Telerik.ReportDesigner.*\\\<version>\user.config.
@@ -20,11 +35,11 @@ For example, Telerik Reporting **R1 2021** user's application configuration file
 
 *C:\Users\MyUserName\AppData\Local\Progress_Software_Corpora\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj\15.0.21.120\user.config.*
   
-> Note 
-><br>
->From **Q2 2018** until **R1 2019** , the Progress_Software_Corpora folder is named **Telerik_EAD**, and prior to Q2 2018 the folder is named **Telerik_AD**. 
+> From **Q2 2018** until **R1 2019** , the Progress_Software_Corpora folder is named **Telerik_EAD**, and prior to Q2 2018 the folder is named **Telerik_AD**. 
+
+## Solution
   
-The file has the following structure:  
+The *config* file has the following structure:  
 
  ```xml
  <?xml version="1.0" encoding="utf-8"?>

@@ -1,7 +1,7 @@
 ---
 title: The path is not of a legal form error message on processing a Telerik Report in a project targeting .NET 4.6.2 framework
 description: The path is not of a legal form error is thrown when previewing a Telerik Report in a project targeting .NET 4.6.2 framework
-type: how-to
+type: troubleshooting
 page_title: The path is not of a legal form error is displayed on rendering a Telerik Report in a project targeting .NET 4.6.2 framework
 slug: the-path-is-not-of-a-legal-form-error-message-on-processing-a-telerik-report-net462-framework
 res_type: kb

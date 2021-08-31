@@ -13,6 +13,10 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
+	<tr>
+		<td>Framework</td>
+		<td>.NET Framework 4.5 and higher</td>
+	</tr>
 </table>
  
 ## Description

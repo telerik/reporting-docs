@@ -1,22 +1,34 @@
 ---
 title: Resize the HTML5 Report Viewer to accommodate its content
-description: Resize the HTML5 Report Viewer to accommodate its content.
+description: Set HTML5 Report Viewer sizing that accommodates its content.
 type: how-to
-page_title: Resize the HTML5 Report Viewer to accommodate its content
+page_title: Edit HTML5 Report Viewer size to accommodate its content
 slug: resize-the-html5-report-viewer-to-accommodate-its-content
 res_type: kb
 ---
 
+## Environment
+
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Report Viewer</td>
+		<td>HTML5-based Report Viewers</td>
+	</tr>
+</table>
+
 ## Description 
   
 When the report page displayed in the HTML5 Report Viewer is too long, a vertical scrollbar appears inside the viewer. This behavior aids in viewer-exclusive webpages, but may not look perfect in more complex user applications which might have their own containers with scrollbars, or even a scrollbar appearing in the browser. Multiple scrollbars inside a single webpage may deteriorate the overall user experience.  
+
+The default behavior of the viewer can be changed so the viewer is resized automatically in order to accommodate the currently displayed report page. To achieve that follow these steps from the solution below.
   
 ## Solution   
-  
-The default behavior of the viewer can be changed so the viewer is resized automatically in order to accommodate the currently displayed report page. To achieve that follow these steps:  
-  
-
-1. Remove the default report viewer container styles if they are present in your application:  
+ 
+- Remove the default report viewer container styles if they are present in your application:  
 
 ```css
 #reportViewer1 {
@@ -30,7 +42,7 @@ The default behavior of the viewer can be changed so the viewer is resized autom
 }
 ```
 
-2. Add the following styles to the page:  
+- Add the following styles to the page:  
 
 ```css
 .trv-report-viewer div.trv-content-wrapper,
@@ -57,7 +69,7 @@ The default behavior of the viewer can be changed so the viewer is resized autom
 }
 ```
 
-3. Subscribe to the viewer's **updateUi** event and set the pages area style dynamically:
+- Subscribe to the viewer's **updateUi** event and set the pages area style dynamically:
     
 ```js
 $(document).ready(function () {
@@ -76,6 +88,7 @@ $(document).ready(function () {
         });
 });
 ``` 
+
 Where the **updatePagesAreaMargin** function definition is:
     
 ```js

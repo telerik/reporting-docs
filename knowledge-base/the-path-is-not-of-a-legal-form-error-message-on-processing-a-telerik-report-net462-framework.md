@@ -1,20 +1,32 @@
 ---
 title: The path is not of a legal form error message on processing a Telerik Report in a project targeting .NET 4.6.2 framework
-description: The path is not of a legal form error message on processing a Telerik Report in a project targeting .NET 4.6.2 framework
+description: The path is not of a legal form error is thrown when previewing a Telerik Report in a project targeting .NET 4.6.2 framework
 type: how-to
-page_title: The path is not of a legal form error message on processing a Telerik Report in a project targeting .NET 4.6.2 framework
+page_title: The path is not of a legal form error is displayed on rendering a Telerik Report in a project targeting .NET 4.6.2 framework
 slug: the-path-is-not-of-a-legal-form-error-message-on-processing-a-telerik-report-net462-framework
 res_type: kb
 ---
 
-  
-## Description  
-**The path is not of a legal form** error message on processing a Telerik Report in a project targeting **.NET 4.6.2 framework**.  
-  
- The Exception occurs on processing a Telerik Report that contains a resourced specified by file path e.g. ='C:\Pictures\MyImage.png.' used as **PictureBox.Value** property.  
-  
- The stack trace looks as follows:  
+## Environment
+<table>
+    <tbody>
+	    <tr>
+	    	<td>Product</td>
+	    	<td>Progress® Telerik® Reporting</td>
+	    </tr>
+      <tr>
+	    	<td>Framework</td>
+	    	<td>.NET Framework 4.6.2</td>
+	    </tr>
+    </tbody>
+</table>
 
+  
+## Description
+
+**The path is not of a legal form** error message is thrown on processing a [Telerik.Reporting.Report](../t-telerik-reporting-report) in a project targeting **.NET 4.6.2 framework**.    
+   
+## Error Message
 
 `
 An exception has occurred while processing 'pictureBox' item:
@@ -33,11 +45,13 @@ System.InvalidOperationException: Invalid image data. ---> System.ArgumentExcept
    at Telerik.Reporting.Processing.ProcessingElement.Process(IDataMember dataContext)
 `
 
-  
-  
+## Cause 
+
+ The Exception occurs on processing a Telerik Report that contains a resourced specified by file path e.g. ='C:\Pictures\MyImage.png.' used as **PictureBox.Value** property.
+    
 ## Solution
 
- Add the following setting in the running application's configuration file, in the runtime section:  
+ Add the following setting in the running application's configuration file, in the **runtime** section:  
 
 ```html
 <runtime>
@@ -45,7 +59,11 @@ System.InvalidOperationException: Invalid image data. ---> System.ArgumentExcept
 </runtime>
 ```
 
+## Notes
+
  The setting will be applied only to the running application. It lets file paths to be specified as before .NET 4.6.2 framework without getting *System.ArgumentException*.  
-  
- For more details, please check <a href="https://msdn.microsoft.com/en-us/library/system.appcontext%28v=vs.110%29.aspx" target="_blank">AppContext Class (msdn)</a>
+ 
+## See Also
+
+<a href="https://docs.microsoft.com/en-us/dotnet/api/system.appcontext?redirectedfrom=MSDN&view=net-5.0" target="_blank">AppContext Class</a>
 

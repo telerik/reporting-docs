@@ -1,13 +1,27 @@
 ---
 title: How to use MultiValue Report Parameter in a SQL query
-description: How to use MultiValue Report Parameter in a SQL query. 
+description: Passing a MultiValue Report Parameter as SQL parameter value in a SQL query. 
 type: how-to
-page_title: How to use MultiValue Report Parameter in a SQL query
+page_title: Using MultiValue Report Parameter in a SQL query
 slug: how-to-use-multivalue-report-parameter-in-a-sql-query
 res_type: kb
 ---
 
+## Environment
+
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Report Item</td>
+		<td>SqlDataSource</td>
+	</tr>
+</table>
+
 ## Description    
+
 This KB article explains how to use MultiValue Report Parameter in a SQL query.  
   
 ## Solution 
@@ -20,13 +34,12 @@ A multivalue report parameter's value is evaluated as an **array of objects** - 
     SELECT * from HumanResources.Department
     WHERE (COALESCE(@SelectedValues,Null) IS NULL) OR DepartmentID IN (@SelectedValues)
     ```
-    On configuring SqlDataSource component with the above Text command, you can map directly the @SelectedValues SQL parameter to a multivalue report parameter - [SqlDataSource Wizard](../sqldatasource-wizard) (step 4).  
+    
+ On configuring SqlDataSource component with the above Text command, you can map directly the @SelectedValues SQL parameter to a multivalue report parameter - [SqlDataSource Wizard](../sqldatasource-wizard) (step 4).  
 
-    >Note
-    > </br>
-    > The *COALESCE* function is used as the multivalue parameter cannot be evaluated directly against NULL.
+> The *COALESCE* function is used as the multivalue parameter cannot be evaluated directly against NULL.
 
-- The value has to be processed to be used in a **SQL StoredProcedure command**.   
+- The value has to be processed in order to be used in a **SQL StoredProcedure command**.   
 
     For example, from the report, you can pass a string containing the comma-separated values. The SQL parameter expected by the stored procedure can be an *nvarchar*. The *nvarchar* value can be split in the SQL query:  
 
@@ -83,6 +96,7 @@ GO
 ``` 
 The above is an example of a stored procedure and a function splitting a string by a given character.  
   
+## Notes
 
  On configuring the SqlDataSource component, you can join the selected values of the multivalue report parameter into a single string by using the [Join built-in function](../expressions-text-functions):  
   
@@ -92,5 +106,8 @@ The above is an example of a stored procedure and a function splitting a string 
        Join(',',Parameters.SelectedValues.Value))
 ```
 
+## See Also
 
+[Using Parameters with the SqlDataSource component](../sql-data-source-using-parameters)
 
+[Configuring Stored Procedure with Temporary Tables](./use-temporary-tables-in-stored-procedure)

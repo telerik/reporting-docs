@@ -15,6 +15,10 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
+	<tr>
+		<td>Report Viewer</td>
+		<td>HTML5-based Report Viewers</td>
+	</tr>
 </table>
   
 ## Description  

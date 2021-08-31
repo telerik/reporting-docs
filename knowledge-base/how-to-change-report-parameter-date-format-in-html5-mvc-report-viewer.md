@@ -1,24 +1,32 @@
 ---
 title: How to change report parameter date format in HTML5 MVC Report Viewer
-description: How to change report parameter date format in HTML5 MVC Report Viewer.
+description: How to modify report parameter date format in HTML5 MVC Report Viewer.
 type: how-to
-page_title: How to change report parameter date format in HTML5 MVC Report Viewer
+page_title: How to edit report parameter date format in HTML5 MVC Report Viewer
 slug: how-to-change-report-parameter-date-format-in-html5-mvc-report-viewer
 res_type: kb
 ---
 
+## Environment
+
+<table>
+    <tbody>
+	    <tr>
+	    	<td>Product</td>
+	    	<td>Progress® Telerik® Reporting</td>
+	    </tr>
+      <tr>
+	    	<td>Report Viewer</td>
+	    	<td>HTML5 MVC Report Viewer</td>
+	    </tr>
+    </tbody>
+</table>
+
 ## Description
 
-Change the default **DateTime** report parameter format in HTML5 MVC Report Viewer
+There are two major ways to change the default **DateTime** Parameter format that we would describe in this article.
 
-## Solution
-
-In Telerik Reporting the default element for editing DateTime Parameters is kendoDatePicker. Its default DateTime format depends on the [culture](../designing-reports-report-globalization) settings of the environment.
-
-There are two major ways to change the default DateTime Parameter format that we would describe in this article.
-
-
-1. Change **kendoDatePicker** format.
+## Solution 1 - Change kendoDatePicker format
 
 With this approach the new date format is assigned to the **kendoDatePicker** through the **UpdateUi** event. Since the event is raised multiple times during ReportViewer lifecycle, a flag is used to indicate whether date format change is necessary, to avoid calling the *setDateFormat* function on each UpdateUi raising.
 
@@ -74,9 +82,7 @@ The following script shows how the ReportViewer description would look like in t
     </body>
 ```
 
-2. Create **custom parameter editor** for the DateTime Parameter.
-
-Details on how to create custom parameter editor could be found in the article [How to Create a Custom Parameter Editor](../html5-report-viewer-howto-custom-parameter-editor).
+## Solution 2 - Create a custom parameter editor for the DateTime Parameter.
 
 The following script section should be added (in the head section) to the **ReportViewer.cshtml** file
 
@@ -150,3 +156,11 @@ The property *ParameterEditors* of the ReportViewer should be set in the body se
     )
 </body>
 ```
+
+## Notes
+
+In Telerik Reporting ,the default element for editing DateTime Parameters is **kendoDatePicker**. Its default DateTime format depends on the [culture](../designing-reports-report-globalization) settings of the environment.
+
+## See Also
+
+[How to Create a Custom Parameter Editor](../html5-report-viewer-howto-custom-parameter-editor).

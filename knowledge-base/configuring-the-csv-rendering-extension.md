@@ -1,21 +1,33 @@
 ---
 title: Configuring the CSV Rendering Extension
-description: Configuring the CSV Rendering Extension.
+description: Modifying the CSV Rendering Extension.
 type: how-to
-page_title: Configuring the CSV Rendering Extension
+page_title: Setting the CSV Rendering Extension Device Info Settings
 slug: configuring-the-csv-rendering-extension
 res_type: kb
 ---
 
+## Environment
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Rendering Format</td>
+		<td>CSV</td>
+	</tr>
+</table>
+
 ## Description 
 
 By default, the **CSV rendering extension** generates plain text files, without any formatting, and the first row contains the headers for all columns. You may choose whether to have this header row or not.   
+
+In Telerik Reporting, **device information settings** are used to pass rendering parameters to a rendering extension. You can specify device information settings in a variety of ways. You can use the &lt;Telerik.Reporting&gt; configuration section to specify the rendering parameters globally. Programmatically, you can use the [ReportProcessor.RenderReport()](../m-telerik-reporting-processing-reportprocessor-renderreport) method. For more information about specifying rendering parameters globally, see [Configuring Telerik Reporting](../configuring-telerik-reporting).  
    
 ## Solution
    
-In Telerik Reporting, **device information settings** are used to pass rendering parameters to a rendering extension. You can specify device information settings in a variety of ways. You can use the &lt;Telerik.Reporting&gt; configuration section to specify the rendering parameters globally. Programmatically, you can use the [ReportProcessor.RenderReport()](../m-telerik-reporting-processing-reportprocessor-renderreport) method. For more information about specifying rendering parameters globally, see [Configuring Telerik Reporting](../configuring-telerik-reporting).  
-   
- The example below shows a sample application [configuration file](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/) (App.config or Web.config depending on whether it is a desktop or a web application) in which we modify the original CSV rendering extension settings to generate a CSV file without the header row (**NoHeader = True**) and all TextBox items that contain static text (not an expression) skipped (**NoStaticText = True**):  
+ The example below shows a sample application [configuration file](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/) (App.config or Web.config depending on whether it is a desktop or a web application) in which we modify the original CSV rendering extension settings to generate a CSV file without the header row (**NoHeader = True**) and all TextBox items that contain **static text** (not an expression) skipped (**NoStaticText = True**):  
    
  ```XML
  <?xml version="1.0"?> 
@@ -45,7 +57,7 @@ In Telerik Reporting, **device information settings** are used to pass rendering
 </configuration> 
  ```
    
- If the report exported with default settings looked like this:  
+- If the report exported with default settings looked like this:  
    
 ```csv
 addressIDCaptionTextBox1,cityCaptionTextBox1,postalCodeCaptionTextBox1,textBox1,cityDataTextBox,postalCodeDataTextBox  
@@ -64,7 +76,7 @@ AddressID,City,PostalCode,31,Ottawa,K4B 1T7
 AddressID,City,PostalCode,32,Montreal,H1Y 2H5  
 ```
    
-With the given device information settings, the result will be:  
+- With the given device information settings, the result will be:  
    
 ```csv
 20,Bothell,98011  
@@ -82,13 +94,12 @@ With the given device information settings, the result will be:
 32,Montreal,H1Y 2H5  
 ```
 
-Note that JSON-based configuration files can also be configured, see [extensions Element](../configuring-telerik-reporting-extensions).
+> JSON-based configuration files can also be configured, see [extensions Element](../configuring-telerik-reporting-extensions).
 
 ## See Also  
  
-- For detailed overview on Telerik Reporting configuration, please review [Configuring Telerik Reporting](../configuring-telerik-reporting)
-- For full list of available Device parameters on Telerik rendering extensions, review [Device Information Settings](../device-information-settings)
-- For additional information regarding the configuration files, see [Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/)
+- [Configuring Telerik Reporting](../configuring-telerik-reporting)
 
- 
+- [Device Information Settings](../device-information-settings)
 
+- [Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/)

@@ -8,6 +8,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -30,10 +31,14 @@ Telerik Reporting provides mechanisms for custom handling errors, where you can 
 1. **Errors related to processing items, which do not lead to breaking the report document's generation.**  
 
     - If these errors are not handled, the report will be processed and rendered, but there might be **red error messages** in the report at the place of the items which failed being processed.
+    
     - Such errors can be caught in the [report's Error event](../t-telerik-reporting-erroreventhandler). If a report is created as a **TRDX|TRDP** file, you can [deserialize](../programmatic-xml-serialization#deserialize-report-definition-from-xml-file)|[unpackage](../report-packaging-trdp#unpackaging)the file and subscribe the report instance to its Error event.  
 The report's Error event has information about the processing element throwing the exception(sender), and provides arguments allowing you to read the exception and cancel the further processing. If you throw a custom exception in the Error event, the further processing will be stopped, and if you use a Report Viewer, you will receive the custom error message in the viewer's preview.
+
 2. **Errors related to processing items, leading to breaking the report document's generation.**
+
     - If these errors are not handled, the report will not be further processed. If you use a Report Viewer, and error will be displayed in viewer's preview.
+    
     - Such errors can be caught through the instance processing the report  such as a [Report Viewer](../report-viewers-overview) or a [ReportProcessor](../t-telerik-reporting-processing-reportprocessor).   
 
         The [ReportProcessor has an Error event](../e-telerik-reporting-processing-reportprocessor-error) allowing you to handle general problems with reports without breaking the application. All Report Viewers have Error events allowing you to customize the error message and to handle it in code. Standard error messages are included in the localization resources of viewers:  
@@ -47,7 +52,9 @@ The report's Error event has information about the processing element throwing t
         - **Silverlight ReportViewer**: [Error event](../e-telerik-reportviewer-silverlight-reportviewer-error) and [localization resources](../report-viewer-localization3);
 
 3. **Errors related to the  functionality of the instance processing the report (Report Viewers or ReportProcessor)**.
+    
     - If the error is not breaking the execution of the application, you will be able to use the Error event and localization resources of the corresponding Report Viewer, or the ReportProcessor instance.
+    
     - More serious problems will have to be handled on application level. For example, if there is a configuration problem with the HTML5 Viewer, you can catch requests and response and redirect to an error page.
 
 ## See Also

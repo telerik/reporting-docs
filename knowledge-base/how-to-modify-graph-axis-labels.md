@@ -1,8 +1,8 @@
 ---
-title: Modifing Graph Axis labels
-description: Customize the Axis label
+title: Modifing Graph Axis Labels Based on the Scale Type
+description: Customize the Axis label of a Graph in a report
 type: how-to
-page_title: How to Modify Graph Axis Labels
+page_title: How to Modify Graph Axis Labels Based on the Scale Type
 slug: how-to-modify-graph-axis-labels
 position: 
 tags: graph
@@ -17,17 +17,22 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Report element</td>
+			<td>Graph</td>
+		</tr>
 	</tbody>
 </table>
 
 
 ## Description
-This article explains how to customize the Axis labels when using a Graph item.
+This article explains how to customize the Axis labels when using a Graph item. For example, if you want to use a special expression for the category sccale or apply special formatting for other scale types.
 
-## Solution
+## Solution For Category Scale
 For Category Scale, using [CategoryGroup.Label](./p-telerik-reporting-graphgroup-label) property would be most useful to modify the labels.
 You can set the value of this property to an [expression](./report-expressions) that will be evaluated at runtime.
 
+## Solution For Other Scales
 Other types of Scale, such as **Numerical**, **DateTime** and **Logarithmic** Scales, calculate their range based on the data minimum and maximum values and show ticks and labels according to the determined base/major/minor units.
 
 Labels of those scale types can be formatted using [GraphAxis.LabelFormat](./p-telerik-reporting-graphaxis-labelformat) property. This property accepts a formatting string.

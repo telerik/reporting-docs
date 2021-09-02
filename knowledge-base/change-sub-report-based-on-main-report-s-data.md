@@ -1,15 +1,30 @@
 ---
 title: Change Sub Report based on Main Report's Data
-description: Change Sub Report based on Main Report's Data.
+description: Edit Sub Report based on Main Report's Data.
 type: how-to
-page_title: Change Sub Report based on Main Report's Data
+page_title: Modify Sub Report based on Main Report's Data
 slug: change-sub-report-based-on-main-report-s-data
 res_type: kb
 ---
 
-    
+## Environment
+
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Report Item</td>
+			<td>SubReport</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Description  
-This article explains how to change the report source of the SubReport based on Main Report's Data.  
+
+This article explains how to change the ReportSource of the SubReport based on Main Report's Data.  
   
 ## Solution  
 
@@ -34,6 +49,8 @@ You should set the following Binding to the SubReport item in the Main report:
 
 **Property path:** ReportSource
 
-**Expression:** = SetReportSource(Fields.MainReportFieldX
+**Expression:** = SetReportSource(Fields.MainReportFieldX)
 
+## See Also
 
+[Extending Reporting Engine with User Functions](../expressions-user-functions#extending-reporting-engine-with-user-functions)

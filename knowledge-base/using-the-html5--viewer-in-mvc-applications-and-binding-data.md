@@ -3,10 +3,10 @@ title: Using the HTML5 Viewer in MVC applications and binding data
 description: This article explains how to use the  the HTML5 Viewer in MVC applications and binding data.
 type: how-to
 page_title: How to Use the HTML5 Viewer in MVC Applications and Binding Data
-slug: using-the-html5--viewer-in-mvc-applications-and-binding-data
+slug: using-the-html5-viewer-in-mvc-applications-and-binding-data
 position: 
 tags: 
-ticketid: 1532522
+ticketid: 
 res_type: kb
 ---
 

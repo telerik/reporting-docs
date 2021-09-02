@@ -81,6 +81,6 @@ Object reference not set to an instance of an object.
 
 > A fix is provided in **Telerik Reporting R1 2017 SP2 version 11.0.17.406** and newer releases. 
 
-If you need to upgrade, MSI files for installing Telerik Reporting can be found in[your Telerik account](/account/)- Downloads - Reporting - MSI.  
+If you need to upgrade, MSI files for installing Telerik Reporting can be found in [your Telerik account](https://www.telerik.com/account/) -> Downloads -> Reporting -> MSI.  
  
 For more details, check [Installing Telerik Reporting](../installation-installing-from-msi) and the changes mentioned in the corresponding [Upgrade Path](../upgradepathoverview) article.

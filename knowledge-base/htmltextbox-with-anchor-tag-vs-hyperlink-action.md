@@ -7,6 +7,17 @@ slug: htmltextbox-with-anchor-tag-vs-hyperlink-action
 res_type: kb
 ---
 
+## Environment
+
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Description
 
 A frequently asked question is how to add links in documents produced by Telerik Reporting and which rendering formats will keep the link clickable.  
@@ -19,7 +30,7 @@ A frequently asked question is how to add links in documents produced by Telerik
 
 Telerik Reporting rendering mechanisms use native objects for the selected media.   
   
-When a report is rendered in **HTML** for a web viewer, you can provide clickable links by using an *HtmlTextBox* item with **Anchor tag** in its value. The link will **not** remain clickable if you export in other format.  
+When a report is rendered in **HTML** for a web viewer, you can provide clickable links by using an *HtmlTextBox* item with **Anchor tag** in its value. The link will **not** remain clickable if you export the report in another rendering format.  
   
 Our recommendation is to use a **Hyperlink Action**, which will let the item be clickable in **HTML, PDF, DOCX, XLSX, PPTX formats**.  
   

@@ -1,21 +1,34 @@
 ---
 title: Using the WPF Report Viewer in an MVVM scenario
-description: Using the WPF Report Viewer in an MVVM scenario.
+description: How to use the WPF Report Viewer in an MVVM scenario.
 type: how-to
-page_title: Using the WPF Report Viewer in an MVVM scenario
+page_title: Implementing the WPF Report Viewer in an MVVM scenario
 slug: using-the-wpf-report-viewer-in-an-mvvm-scenario
 res_type: kb
 ---
 
+## Environment
+
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Report Viewer</td>
+			<td>WPF</td>
+		</tr>
+	</tbody>
+</table>
+
 ## Description    
-Using the WPF Report Viewer in an MVVM scenario.  
+
+Only dependency properties of the WPF Report Viewer control, designed for the WPF technology, can be bound to properties of a model. A model can have a **ReportSource** property bound to the viewer's ReportSource.  
   
 ## Solution  
-
-Only dependency properties of the WPF Report Viewer control, designed for the WPF technology, can be bound to properties of a model. A model can have a ReportSource property bound to the viewer's ReportSource.  
   
-
-Consider the following example of a model:  
+- Consider the following example of a model:  
 
 ```cs
 class ViewModel : INotifyPropertyChanged
@@ -63,8 +76,7 @@ class ViewModel : INotifyPropertyChanged
 }
 ```
   
-
-The above model can be related to the WPF ReportViewer as follows:  
+- The above model can be related to the WPF ReportViewer as follows:  
 
 ```XML
 <Window.DataContext>
@@ -82,9 +94,10 @@ The above model can be related to the WPF ReportViewer as follows:
 </Grid>
 ```
   
-  
-## Note:
+## Notes
 
 Reports have a general purpose and can be reused in different types of projects. Reports do not have dependency properties. If you need to change the data in a report, on trigger the change event of other control you can update [data items](../data-items)' DataSource properties in code. Then update the model's ReportSource in order to refresh the viewer. 
 
+## See Also
 
+[ReportSource Class](../t-telerik-reporting-reportsource)

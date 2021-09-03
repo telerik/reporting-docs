@@ -1,7 +1,7 @@
 ---
 title: Error 'Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}' in Report Designer.
 description: The Report Designer does not allow setting a table row's/column's height/width to a value lower than 10px.
-type: how-to
+type: troubleshooting
 page_title: Error is thrown when a table's row or column has a width or height less than 10px.
 slug: error-table-minimum-size-designer
 res_type: kb

@@ -24,6 +24,10 @@ res_type: kb
 	</tr>
 </table>
 
+## Description
+
+As of  Telerik Reporting R2 2017, the [HTML5 Viewer](../html5-report-viewer) works only in browsers supporting promises. Trying to load a page with a HTML5 Report Viewer in it on a browser that does not support promises, will lead to the described error.
+
 ## Error Message
 
 *"Error: 'Promise' is undefined"*.  
@@ -34,11 +38,7 @@ The error appears in the browser when you load a page with the HTML5 Report View
   
 The error indicates that the tested browser does not have support for promises.  
 
-Please check [HTML5 Viewer: Important Settings](../html5-report-viewer-system-requirements#important-settings) and the requirements for *promises*.   
-
-## Description
-
-As of  Telerik Reporting R2 2017, the [HTML5 Viewer](../html5-report-viewer) works only in browsers supporting promises. Trying to load a page with a HTML5 Report Viewer in it on a browser that does not support promises, will lead to the described error.  
+Please check [HTML5 Viewer: Important Settings](../html5-report-viewer-system-requirements#important-settings) and the requirements for *promises*.     
   
 ## Solution
 

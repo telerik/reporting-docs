@@ -37,4 +37,4 @@ complete successfully and you can try upgrading to a newer version, or repairing
 
 ## See Also
 
-[How to register SqlDataSource data providers without driver installation](./accessing-and-managing-data/details/how-to-register-sqldatasource-data-providers-without-driver-installation)
+[How to register SqlDataSource data providers without driver installation](./how-to-register-sqldatasource-data-providers-without-driver-installation)

@@ -1,8 +1,8 @@
 ---
 title: Set Map extent dynamically when showing a single data point
-description: Explains how to set map extent dynamically when showing a single data point
+description: Explains how to set map extent dynamically when showing a single data point by using different number of data points
 type: how-to
-page_title: How to Set the Map Extent Dynamically When Showing a Single Data Point
+page_title: How to Create Report with Map and Set Extent Dynamically Based on the Number of Data Points
 slug: how-to-set-the-map-extent-dynamically-when-showing-a-single-data-point
 position: 
 tags: map
@@ -17,19 +17,19 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Report Items</td>
+			<td>Map, CSV DataSource, Expression</td>
+		</tr>
 	</tbody>
 </table>
 
 
 ## Description
-The article explains how to set the map extent dynamically when showing a single data point.
-
-
-## Solution
 One of the most common problems that users encounter when working with the [Map](./mapstructure) item is how to set the map zoom level when there is only one data point displayed.
-
 The Map item doesn’t provide a way to directly set the zoom level, because it depends on the used tile provider and the current map extent. The item automatically calculates its extent based on the displayed data points and it needs at least two points with different coordinates to determine this extent (hence the appropriate zoom level). In case there is only one data point present, the engine fallbacks to the default extent dimensions and shows the whole world. The Map item, being a part of a reporting product, is designed to show a couple of data points, visualizing ratios and measures using size, color, etc. – that’s why such a feature, which is more common for a mapping tool, is not supported out-of-the-box.
 
+## Solution
 One solution to the problem is to preprocess the data in the data source and make sure every [GeoLocation](./t-telerik-reporting-geolocationmapgroup) group would have at least two members (points) with different coordinates, which means that a virtual (non-existent) points have to be added to the data set. For better results these virtual points should be two – for each of both sides of the original point, so it will remain in the center of the viewport.
 
 This approach can be easy to develop if your data is a collection of business objects, but it gets more complicated when your data is coming from a database, which is a more common scenario. This means that it will be more reasonable to setup the Map item so it can handle such a scenario. In short, this approach involves adding two more series, each one containing a virtual data point that is offset from the coordinates of the original data point. To create such a report, follow the steps described below:

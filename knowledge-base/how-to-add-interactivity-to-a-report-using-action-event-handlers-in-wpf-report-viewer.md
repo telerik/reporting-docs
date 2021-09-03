@@ -25,9 +25,17 @@ res_type: kb
 
 ## Desciption
 
-The report viewers provide handlers for three types of events that are associated with interactive actions – **Executing**, **Enter** and **Leave**. In this article we will show how to use these events to add more interactivity and allow further customization for your reports. We will use the **CSharp.NetFramework.WpfIntegrationDemo** project that is shipped with your Telerik Reporting installation and is part of the **CSharp.ReportExamples.VSxxxx**  solution that can be found at the following path - *C:\Program Files (x86)\Progress\\<Version\>\Examples\CSharp*.   
+The report viewers provide handlers for three types of events that are associated with interactive actions – **Executing**, **Enter** and **Leave**. 
+
+In this article we will show how to use these events to add more interactivity and allow further customization for your reports.
+
+We will use the **CSharp.NetFramework.WpfIntegrationDemo** project that is shipped with your Telerik Reporting installation and is part of the **CSharp.ReportExamples.VSxxxx** solution that can be found at the following path:
+
+*C:\Program Files (x86)\Progress\\<Version\>\Examples\CSharp*.   
   
-The report we chose for this example is part of our **ReportingLibrary** and is called *PopulationDensity*. It displays a *choropleth* based on the world population by countries. We will show how to change the colors and display an informational tooltip for the country under the mouse cursor, using a [Custom](../designing-reports-interactivity-custom-action) action. Additionally, we will show you how to cancel a [NavigateToUrl](../designing-reports-interactivity-hyperlinks) action before it is executed, depending on a confirmation dialog.  
+The report we chose for this example is part of our **ReportingLibrary** and is called *PopulationDensity*. It displays a *choropleth* based on the world population by countries. We will show how to change the colors and display an informational tooltip for the country under the mouse cursor, using a [Custom](../designing-reports-interactivity-custom-action) action.
+
+Additionally, we will show you how to cancel a [NavigateToUrl](../designing-reports-interactivity-hyperlinks) action before it is executed, depending on a confirmation dialog.  
   
 ## Solution 
 

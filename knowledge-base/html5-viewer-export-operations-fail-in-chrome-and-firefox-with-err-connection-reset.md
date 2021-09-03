@@ -1,9 +1,9 @@
 ---
 title: Export operations fail in Chrome and Firefox with ERR_CONNECTION_RESET
-description: Export operations initiated through the HTML5 Viewer results in ERR\_CONNECTION\_RESET error in Firefox and Chrome browsers when Telerik UI for ASP.NET AJAX RadCompression is *enabled.
+description: Export operations initiated through the HTML5 Viewer results in ERR\_CONNECTION\_RESET error in Firefox and Chrome browsers when Telerik UI for ASP.NET AJAX RadCompression is enabled.
 type: how-to
 page_title: ERR_CONNECTION_RESET error is thrown on trying to export a report to another rendering format
-slug: html5-viewer-export-operations-fail-in-chrome-and-firefox-with-err_connection_reset
+slug: html5-viewer-export-operations-fail-in-chrome-and-firefox-with-err-connection-reset
 res_type: kb
 ---
 
@@ -29,21 +29,24 @@ res_type: kb
 	</tbody>
 </table>
 
-## Error Message
-
-**ERR_CONNECTION_RESET** error message.
-
-**This site can't be reached.**
-
-The connection was reset.
-
-## Cause
-
-**Telerik UI for ASP.NET AJAX RadCompression** is *enabled* for the Reporting REST Service endpoint. 
 
 ## Description
 
-Export operations initiated through the HTML5 Viewer results in **ERR\_CONNECTION\_RESET** error in **Firefox** and **Chrome** browsers when **Telerik UI for ASP.NET AJAX RadCompression** is *enabled*.  
+Export operations initiated through the HTML5 Viewer results in **ERR\_CONNECTION\_RESET** error in **Firefox** and **Chrome** browsers when **Telerik UI for ASP.NET AJAX RadCompression** is *enabled*. 
+
+## Error Message
+
+```
+ERR_CONNECTION_RESET
+
+This site can't be reached.
+
+The connection was reset.
+```
+
+## Cause
+
+**Telerik UI for ASP.NET AJAX RadCompression** is *enabled* for the Reporting REST Service endpoint.  
   
 ## Solution  
 

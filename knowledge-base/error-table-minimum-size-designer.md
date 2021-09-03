@@ -23,6 +23,9 @@ res_type: kb
 
 Trying to set a width or height sizing of less than 10px on table/crosstab/list row or column results in the *Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}* error. Usually, such error occurs when user try to make a row or column not visible by basically reducing its width or height(or both) to zero. The correct way to hide a row or a column is through [Conditional Formatting](../styling-conditional-formatting) or a [Binding](../expressions-bindings) to the **Visible** property.
 
+## Error Message
+
+*Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}*
 
 ## Possible Causes 
   
@@ -34,10 +37,6 @@ Trying to set a width or height sizing of less than 10px on table/crosstab/list 
 - The code for generating Table/Cross/List item in the **Report.Designer.cs(vb)** file was modified and zero values were inserted manually for item's width(height).  
   
 - Table/CrossTab item is nested inside another table's cell using Table/CrossTab Wizard. This is a known issue, a workaround is to first create two tables separately and then nest one table inside another table's cell.
-
-## Error Message
-
-*Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}*
   
 ## Solution 
   

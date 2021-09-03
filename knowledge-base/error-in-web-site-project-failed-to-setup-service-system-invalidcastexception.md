@@ -10,6 +10,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -27,9 +28,11 @@ res_type: kb
 	</tbody>
 </table>
 
-## Possible Cause
+## Description
 
-Web Site projects handle assembly references differently, which is the major reason Telerik Reporting not to provide design time support for Web Site projects.
+Attempting to add a Report Viewer control on the design surface of a WebForm leads to an error being thrown.
+
+For example, attempting to drag the HTML5 ASP.NET WebForms ReportViewer from the VS Toolbox onto a **WebForm.aspx** page in **Design mode**, will result in the described error.
 
 ## Error Message
 
@@ -42,11 +45,9 @@ System.InvalidCastException: Unable to cast COM object of type 'System.__ComObje
    at Telerik.ReportViewer.Html5.WebForms.Design.InitialConfigHelper.ConfigureFirstTime(IServiceProvider serviceProvider)
 ```
 
-## Description
+## Possible Cause
 
-Attempting to add a Report Viewer control on the design surface of a WebForm leads to an error being thrown.
-
-For example, attempting to drag the HTML5 ASP.NET WebForms ReportViewer from the VS Toolbox onto a **WebForm.aspx** page in **Design mode**, will result in the described error.
+Web Site projects handle assembly references differently, which is the major reason Telerik Reporting not to provide design time support for Web Site projects.
 
 ## Solution
 
@@ -58,4 +59,6 @@ The recommended approach is to use reports designed with the [Standalone Report 
 
 ## Notes
 
-The automatic upgrade feature is not designed to work with Web Site projects as well. Web Site projects must be upgraded manually - [Upgrading Telerik Reporting Projects](../installation-upgrading-newer-version).
+The automatic upgrade feature is not designed to work with Web Site projects as well. 
+
+Web Site projects must be upgraded manually - [Upgrading Telerik Reporting Projects](../installation-upgrading-newer-version).

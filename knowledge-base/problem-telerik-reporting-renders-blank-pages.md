@@ -1,15 +1,24 @@
 ---
-title: How to Avoid Blank Pages in PrintPreview
-description: Avoid blank pages in PrintPreview
-page_title: How to Avoid Blank Pages in PrintPreview
+title: Avoid Blank Pages in PrintPreview
+description: Avoid unwanted blank pages that can appear in the rendered report preview
+page_title: Remove Blank Pages from PrintPreview
 type: troubleshooting
 slug: problem-telerik-reporting-renders-blank-pages
-tags: telerik reporting
 res_type: kb
+category: knowledge-base
 ---
 
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
+</table>
 
-## DESCRIPTION
+## Description
 
 In PrintPreview mode, the report engine might render blank pages. Note that the pages are not actually blank. Rather there is some content that cannot fit on the current page and is carried over to the next page. There are several cases when this happens:
 
@@ -21,7 +30,7 @@ In PrintPreview mode, the report engine might render blank pages. Note that the 
 
 Since often the background color (white in most cases) of the item that is carried over to the next page is the same as the background of the report/sections the page seems to be blank.
 
-## SOLUTION
+## Solution
 
 Note that Telerik Reporting engine skips the generated blank pages by default, after version **R1 2021 SP1 (15.0.21.224)**. Use the property <a href="/p-telerik-reporting-report-skipblankpages" target="_blank">Report.SkipBlankPages</a> to control this behavior.
 
@@ -36,5 +45,7 @@ For example, if the first page contains the ReportHeader or another section, the
 Setting the **KeepTogether** property of the Section to **false** allows page breaks in the section. Reporting items and sections have KeepTogether properties, and groups have GroupKeepTogether property.
 
 In the case of a layout with a Table/List/Crosstab item, the paging mechanism does not apply page breaks in a row's content. Improvements for such layouts are applied in R2 2016. In previous versions, you can replace the Table item with TextBox items or a SubReport item loading external report to achieve a similar layout.
+
+## See Also
 
 **More details and suggestions can be found in <a href="/designing-reports-page-layout-rendering-understanding-pagination" target="_blank">Understanding Pagination</a>**.

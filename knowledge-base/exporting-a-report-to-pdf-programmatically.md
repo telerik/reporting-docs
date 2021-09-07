@@ -6,13 +6,24 @@ type: how-to
 slug: exporting-a-report-to-pdf-programmatically
 tags: styling and formatting reports
 res_type: kb
+category: knowledge-base
 ---
+
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
+</table>
    
-## DESCRIPTION
+## Description
 
 This article explains how to export a report to PDF without the need to go through the web viewer.
 
-## SOLUTION
+## Solution
 
 You can use the following code snippet to programmatically export the report into **PDF** format from a Web Site or Web Application project:  
    

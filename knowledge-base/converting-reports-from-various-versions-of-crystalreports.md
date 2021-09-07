@@ -1,13 +1,13 @@
 ---
 title: Converting reports from various versions of CrystalReports
-description: Converting reports from various versions of CrystalReports
+description: Convert reports from different versions of CrystalReports, using the Telerik Converter.
 type: how-to
-page_title: Converting reports from various versions of CrystalReports
+page_title: Convert reports from various versions of CrystalReports
 slug: converting-reports-from-various-versions-of-crystalreports
 tags: telerik reporting
 res_type: kb
+category: knowledge-base
 ---
-
 
 ## Environment
 <table>
@@ -37,7 +37,7 @@ If you do not have this version installed, you can still use the converter if yo
 ## Solution
 
 1.Examine the Global Assembly Cache (C:\WINDOWS\assembly) to check which version of Crystal Reports you have installed.
-2.Modify the following code snippet accordingly, depending on the version you use and insert it in your configuration file (e.g. for VS2010 on 32 bit machine it is located in **C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe.config**. For 64 bit Windows you should look in the **C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe.config**.
+2.Modify the following code snippet accordingly, depending on the version you use and insert it in your configuration file (e.g. for VS2010 on 32 bit machine it is located in **C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe.config**. For 64 bit Windows you should look in the **C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv.exe.config**, where **newVersion** is the version of Crystal Reports that **you are using** and **oldVersion** is the version mentioned in the "New Report Wizard".
 
 ```
 <configuration>  
@@ -63,8 +63,6 @@ If you do not have this version installed, you can still use the converter if yo
   </runtime>  
 </configuration>
 ```
-
-where **newVersion** is the version of Crystal Reports that **you are using** and **oldVersion** is the version mentioned in the "New Report Wizard".
 
 3.Restart Visual Studio.
 4.Add new Telerik Report to your project and start the Report Wizard. On its second step, select "Convert from existing report".

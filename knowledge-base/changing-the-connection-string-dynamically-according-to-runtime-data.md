@@ -1,22 +1,36 @@
 ---
 title: Changing the connection string dynamically according to runtime data
-description: Changing the connection string dynamically according to runtime data.
-page_title: Changing the connection string dynamically according to runtime data
+description: Dynamically change the connection string, based on runtime data.
+page_title: Change the connection string dynamically for different data during runtime
 type: how-to
 slug: changing-the-connection-string-dynamically-according-to-runtime-data
-tags: telerik reporting, report items, export reports, deliver reports to any application, creating reports, accessing and managing data
 res_type: kb
+category: knowledge-base
 ---
 
-## Important Notes
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Report Viewer</td>
+			<td>Desktop Viewer</td>
+		</tr>
+	</tbody>
+</table>
 
-The recommended approach for modifying the connection string dynamically is through dedicated Report Parameter - check <a href="/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter" target="_blank">Change Connection String dynamically through a report parameter</a> KB article.
+## Description
 
-The approach in the current article is suitable for viewers using embedded Reporting engine, e.g. Desktop Viewers and the obsolete ASP.NET Web Forms Report Viewer.
+The approach described in the **solution** section below is suitable for viewers using embedded Reporting engine, e.g. Desktop Viewers and the obsolete ASP.NET Web Forms Report Viewer.
+
+In other cases, the recommended approach for modifying the connection string dynamically is through dedicated Report Parameter - check <a href="/knowledge-base/how-to-pass-connectionstring-to-report-dynamically-through-report-parameter" target="_blank">Change Connection String dynamically through a report parameter</a> KB article.
 
 For the viewers using the Telerik Reporting REST Service check the <a href="/knowledge-base/navigate-to-report-not-working-when-custom-report-resolver-changes-connectionstring-dynamically" target="_blank">Action NavigateToReport does not work after updating the Connection String dynamically in a Custom Report Resolver</a> KB article.
 
-## Description
+## Solution
 
 Telerik Reporting can resolve and work with named connection strings provided in the application configuration file (web.config or app.config). Thus providing the required connection string with the same name in the application configuration file should be enough for most of the scenarios. Still if this is not applicable for your scenario and you have to provide the connection strings in runtime you can use the following example:
 

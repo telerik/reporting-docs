@@ -16,12 +16,12 @@ res_type: kb
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
 		<tr>
-			<td>Application Type</td>
-			<td>Any Application</td>
-		</tr>
-		<tr>
 			<td>Version</td>
 			<td>Q2 2012 and newer</td>
+		</tr>
+	        <tr>
+			<td>Report Viewers</td>
+			<td>WinForms, WPF, ASP.NET</td>
 		</tr>
 	</tbody>
 </table>

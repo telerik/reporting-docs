@@ -1,16 +1,26 @@
 ---
 title: Previewing a report definition that uses an external assembly
-description: Previewing a report definition that uses an external assembly
+description: Preview report definition with user-defined functions or CLR objects defined in an external assembly
 type: how-to
-page_title: Previewing a report definition that uses an external assembly
-tags: deploy to web desktop cloud, telerik reporting
+page_title: Preview report definition, which uses an external assembly with user-defined functions or CLR objects
 slug: deploying-trdx-(xml-report-definition)-that-uses-external-assembly
 res_type: kb
+category: knowledge-base
 ---
 
-## HOW-TO
+## Environment
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
+</table>
 
-Preview a report definition containing expressions with user-defined functions or other custom CLR objects coming from an external assembly. The application has to be configured to load the external assembly.
+## Description
+
+Previewing a report definition containing expressions with user-defined functions or other custom CLR objects coming from an external assembly. The application has to be configured to load the external assembly.
   
 ## Solution with User-defined functions
 

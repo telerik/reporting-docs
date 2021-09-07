@@ -86,11 +86,11 @@ If using older versions of Visual Studio, you can check if the ActivityLog.xml l
 
 - If there are no such records, it is likely that the following key is missing:
 
-  - In a **32-bit** Windows:  
+ - In a **32-bit** Windows:  
 
  "HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\VisualStudio\10.0\Packages\{2c298b35-07da-45f1-96a3-be55d91c8d7a}"
 
-  - In a **64-bit** Windows: 
+ - In a **64-bit** Windows: 
 
  "HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\10.0\Packages\{2c298b35-07da-45f1-96a3-be55d91c8d7a}"
 

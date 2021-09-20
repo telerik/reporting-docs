@@ -29,9 +29,10 @@ res_type: kb
 The article explains how to customize the appearance of the [WPF Report Viewer](../wpf-report-viewer-intro)
 
 ## Suggested Workarounds
+We'll demonstrate two approaches of using custom commands by the WPF Report Viewer, each one of them executed by clicking a dedicated button on the report viewer's toolbar. In our demo we'll modify the report viewer template for the _Office 2019_ theme, which by default is located at _(TelerikReporting_Installation_Folder)\Wpf\Themes\Office2019\Telerik.ReportViewer.Wpf.xaml_. 
 Make sure you merge the resource dictionaries from the XAML files rather than from the default _Telerik.ReportViewer.Wpf.Themes_ assembly. See the article section [Setting Customizable Implicit Style for the WPF Report Viewer Example](../wpf-report-viewer-implicit-styles#setting-customizable-implicit-style-for-the-wpf-report-viewer-example) for details. The reason is that we need to modify the XAML files to add new controls and functionality to the viewer.
 
-Let's add two new buttons in the viewer's toolbar in _Telerik.ReportViewer.Wpf.xaml_ file of the corresponding theme:
+Let's add two new buttons to the viewer's markup, as shown below::
 ```XAML
 <ResourceDictionary
     ...
@@ -56,8 +57,8 @@ Let's add two new buttons in the viewer's toolbar in _Telerik.ReportViewer.Wpf.x
                                     <telerikNav:RadToolBarSeparator />
                                     
                                     <!-- the new Buttons in the ReportViewer's Toolbar -->
-                                    <Button x:Name="CustomA" Command="{Binding Path=MyCommand, RelativeSource={RelativeSource AncestorType=Window}}">Main Window Command</Button>
-                                    <Button x:Name="CustomB" Command="local:CustomReportViewerCommands.MyCommand" CommandParameter="Param AAA">RoutedUICommand</Button>
+                                    <Button x:Name="CustomCommandAButton" Command="{Binding Path=MyCommand, RelativeSource={RelativeSource AncestorType=Window}}">Main Window Command</Button>
+                                    <Button x:Name="CustomCommandBButton" Command="local:CustomReportViewerCommands.MyCommand" CommandParameter="Param AAA">RoutedUICommand</Button>
 									                  
                                     <telerikNav:RadToolBarSeparator />
                                     ...
@@ -73,7 +74,7 @@ Let's add two new buttons in the viewer's toolbar in _Telerik.ReportViewer.Wpf.x
 </ResourceDictionary>
 ```
 
-1. You may bind the custom control to a property of the main window "Window1" hosting the ReportViewer - the _CustomA_ button "Main Window Command" in the above example. Here is how the code behind related to the new custom functionality may look like:
+1. You may bind the custom control to a property of the main window "Window1" hosting the ReportViewer - the _CustomCommandAButton_ button "Main Window Command" in the above example. Here is how the code behind related to the new custom functionality may look like:
 
 ```C#
 namespace CSharp.NetFramework.WpfIntegrationDemo
@@ -98,7 +99,7 @@ namespace CSharp.NetFramework.WpfIntegrationDemo
 
         private void OnMyCommandExecuted(object obj)
         {
-            MessageBox.Show("OnMyCommandExecuted");
+            // YOUR CUSTOM CODE HERE
         }
 
         public DelegateCommand MyCommand { get; set; }
@@ -111,7 +112,7 @@ namespace CSharp.NetFramework.WpfIntegrationDemo
 The main drawback of this approach is that you couple the viewer's template with the particular window _Window1_, which in most cases is not desired.
 
 2. The better approach is to use the [RoutedUICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.routeduicommand?view=net-5.0). 
-This is applied to the second custom button _CustomB_ "RoutedUICommand" in the example. Note that you may easily send parameters with this approach. 
+This is applied to the second custom button _CustomCommandBButton_ "RoutedUICommand" in the example. Note that you may easily send parameters with this approach. 
 Here is the sample code for the _CustomReportViewerCommands_ class. Note that in the XAML you need to register the Namespace of the class:
 
 ```C#
@@ -134,10 +135,10 @@ namespace CSharp.NetFramework.WpfIntegrationDemo
 
         private static void OnMyCommandExecuted(object sender, ExecutedRoutedEventArgs e)
         {
-            MessageBox.Show($"Routed Command Executed with parameter {(string)e.Parameter}!");
+	    // YOUR CUSTOM CODE HERE. You may get the command parameter value from 'e.Parameter'
         }
     }
 }
 ```
 
-The sample implementations display message boxes for our demo purposes. You need to implement the proper logic depending on the exact requirements.
+You need to implement the proper logic to replace the placeholders denoted with "// YOUR CUSTOM CODE HERE" depending on the exact requirements.

@@ -7,7 +7,7 @@ slug: how-to-change-reporting-rest-web-api-routes-registered-by-default
 res_type: kb
 ---
 
- ## Environment
+## Environment
  
 <table>
     <tbody>

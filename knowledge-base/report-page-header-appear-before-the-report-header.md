@@ -21,4 +21,4 @@ res_type: kb
 
 ## Description
 
-A report can be viewed as "document content", consisting of detail, report header and footer sections. Similar to Word, document content is centered on the screen with page header and footer sections above and below the content. Page headers and footers are not related to the report itself, but are relative to the margins of the report's media, i.e. to the paper or screen and contain page numbers, document dates, etc.
+A report can be viewed as "document content", consisting of detail, [report header and footer sections](../designing-reports-creating-report-headers-and-footers). Similar to Word, the document content is centered on the screen with [page header and footer sections](../designing-reports-creating-page-headers-and-footers) above and below the content. Page headers and footers are not related to the report itself, but are relative to the margins of the report's media, i.e. to the paper or screen and contain page numbers, document dates, etc. More details on the report sections may be found in the [Report Structure article](../designing-reports-understanding-report-structure).

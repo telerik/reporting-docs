@@ -32,7 +32,7 @@ The error below is thrown when tring to connect to MySQL Database through the SQ
 Connection unsuccessfull.Check the connection string and try again. Keyword not supported:'port'.
 
 ## Cause\Possible Cause(s)
-The issue is caused by an issue in the SQL DataSource Wizard that doesn't provide the correct Data Provider name. 
+The problem is caused by an issue in the SQL DataSource Wizard that doesn't provide the correct Data Provider name. 
 In the wizard on the first page, the **Data Provider** must be **MySql.Data.MySqlClient**, but the option is limited only to MySql.Data. 
 Since the engine cannot determine the type of the data provider by that name, it falls back to **System.Data.SqlClient** and claims that "Port" is not a supported keyword.
 

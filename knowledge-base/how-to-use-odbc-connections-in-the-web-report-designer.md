@@ -26,8 +26,7 @@ res_type: kb
 
 
 ## Description
-ODBC connections are supported in the [Web Report Designer](./web-report-designer) as long as the System.Data.ODBC classes are supported in .NET Core 3.1 and up and out-of-the-box 
-for .NET Framework applications. 
+The ODBC connections are supported in the [Web Report Designer](./web-report-designer). For .NET Framework applications this comes out-of-the-box. In .NET Core 3.1+ they are supported as long as the System.Data.ODBC classes are supported.
 
 ## Solution for .NET Core applications
 The **System.Data.ODBC** is not part of the framework, but is supported through .NET Platform Extensions.
@@ -55,7 +54,7 @@ We advise to do that somewhere in the application start, or (even better) in the
 ```    
     
 
-The explains [How to register a DbProviderFactory in a .NET Core project](./how-to-register-db-provider-factory-in-net-core-project) KB article explains how to register a DbProviderFactory instance in .NET Core apps.
+The [How to register a DbProviderFactory in a .NET Core project](./how-to-register-db-provider-factory-in-net-core-project) KB article explains how to register a DbProviderFactory instance in .NET Core apps.
 
 ## Solution for .NET Framework applications
 If you use the Web Report Designer in .NET Framework app, there should not be any problems with ODBC connections whatsoever,

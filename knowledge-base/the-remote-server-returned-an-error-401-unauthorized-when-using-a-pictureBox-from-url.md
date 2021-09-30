@@ -35,7 +35,7 @@ The remote server returned an error:(401) Unauthorized.
 
 ## Solution
 
-You can to create a [User Function](.expressions-user-functions) that will download the image after authorizing, and returns it (e.g. as type [Bitmap](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.bitmap?view=netframework-4.8)) for the picture box value.
+You have to create a [User Function](.expressions-user-functions) that will download the image after authorizing, and returns it (e.g. as type [Bitmap](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.bitmap?view=netframework-4.8)) for the picture box value.
 
 The User Function (without authorization) might look as follows:
 
@@ -47,12 +47,11 @@ public static Bitmap GetImage(string url)
     System.IO.Stream responseStream = response.GetResponseStream();
  
     Bitmap bitmap = new Bitmap(responseStream);
- 
     return bitmap;
 }
 ```
 
-Note that it will be necessary to authorize the request to successfully download the image from the URL.
+Another option is to return the image as byte[]. Note that it will be necessary to authorize the request to successfully download the image from the URL.
 
 ## See Also
 - [PictureBox](./report-items-picture-box)

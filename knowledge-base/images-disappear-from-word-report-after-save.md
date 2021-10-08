@@ -17,14 +17,17 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Export Format</td>
+			<td>DOCX</td>
+		</tr>
 	</tbody>
 </table>
 
 
 ## Description
 You may experience the issue when you re-save the generated DOCX report using Microsoft Word.
-After some pages, the images may disappear and be substituted by the below error message.
-This does not occur on ReportViewer but only after saving the DOCX file and opening with Word.
+After some pages, the images may start being substituted by the below error message.
 
 ## Error Message
 "The linked image cannot be displayed. The file may have been moved, renamed, or deleted. Verify that the link points to the correct file and location."
@@ -45,3 +48,6 @@ DOCX file without the images on the last pages as they haven't been loaded.
 
 ## Solution
 Make sure that the Microsoft Word application has opened the entire document before saving the DOCX file.
+
+## Note
+The issue does not occur in any Telerik ReportViewer but only after saving the DOCX file and opening with Word.

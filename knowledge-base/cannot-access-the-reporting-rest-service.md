@@ -13,10 +13,6 @@ res_type: kb
 ## Environment
 <table>
 	<tr>
-		<td>Product Version</td>
-		<td>12.2.18.1017</td>
-	</tr>
-	<tr>
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
@@ -43,8 +39,15 @@ If the response to the above request is not as expected, then check [How To: Add
 
 
 ## Notes
-Тhe recommended troubleshooting approach is to use [Fiddler](https://www.telerik.com/fiddler) or other proxy tool to check the requests, their responses and statuses. Information about requests and responses content can be seen in *Fiddler -> Inspectors -> Request/Response -> Raw tabs*. This will let you check requests to the Reporting REST service and if the URLs are correct (if relative paths are resolved correctly).
+Тhe recommended troubleshooting approach is to use [Fiddler Jam](https://www.telerik.com/fiddler-jam) or other proxy tool to check the requests, their responses and statuses.
+
+This will let you check requests to the Reporting REST service and whether the URLs are correct (if relative paths are resolved correctly).
 Relative paths may need adjustment depending on how the application is hosted.
 
-If the problem persists, create a [SAZ file](https://docs.telerik.com/fiddler/Save-And-Load-Traffic/Tasks/CreateSAZ) recorded by Fiddler while running the application. After you generate the log file, archive it and attach it to a support ticket. 
+If the problem persists, [record a log](../../fiddler-jam/get-started/recording-a-log) with **Fiddler Jam** while running the application and [share the log as a link](../../fiddler-jam/get-started/submitting-a-log) with us in a support ticket.
 
+To help troubleshoot the issue, you may also record a trace listener log:
+
+- For ASP.NET Core application, see the [Troubleshooting reporting implementation into ASP.NET Core application](./how-to-troubleshoot-errors-in-asp-net-core-applications) article.
+
+- For .NET Framework application, see the [Create and Initialize Trace Listeners](https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners) MS Docs article.

@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-Let's describe the problem with a simple scenario. Assume that you have to create a report for workers where you need to calculate the total hours per pay week for each. 
+Let's describe the problem with a simple scenario. Assume that you have to create a report for workers where you need to calculate the total hours per workweek for each. 
 If this total is greater than 40 hrs/week, then its value becomes 40 hrs and the rest of the hours are passed as overtime hours. 
 Both the total and the overtime hours for the particular group/scope can be easily calculated with an [Expression](../report-expressions).
 The problem comes if you need to sum the values of the overtime total hours in the Summary of the report. That said, to create a total of the tolal overtime hours for 
@@ -34,7 +34,7 @@ in the data source and are rather calculated in an _Expression_, hence utilizing
 
 ## Solution
 You need to create a [Custom Aggregate Function](../expressions-user-aggregate-functions) that accumulates the overtime hours from the groups. 
-Here is a sample implementation for the case when workers reports are grouped by weeks:
+Here is a sample implementation for the case when workers' reports are grouped by weeks:
 
 ```C#
 using System;
@@ -45,7 +45,7 @@ namespace CustomAggregates
 {
     public class TotalOvertimeHours : IAggregateFunction
     {
-        private Dictionary<long, TimeSpan> WorkTimeByWeek;
+        private Dictionary<long, TimeSpan> workTimeByWeek;
 
         public void Accumulate(object[] values)
         {
@@ -53,13 +53,13 @@ namespace CustomAggregates
             var workTime = (TimeSpan)values[1];
 
             TimeSpan weekWorkTime;
-            if (!WorkTimeByWeek.TryGetValue(week, out weekWorkTime))
+            if (!this.workTimeByWeek.TryGetValue(week, out weekWorkTime))
             {
-                WorkTimeByWeek.Add(week, workTime);
+                this.workTimeByWeek.Add(week, workTime);
             }
             else
             {
-                WorkTimeByWeek[week] = weekWorkTime + workTime;
+                this.workTimeByWeek[week] = weekWorkTime + workTime;
             }
         }
 
@@ -67,7 +67,7 @@ namespace CustomAggregates
         {
             TimeSpan regularWorkHoursPerWeek = new TimeSpan(40, 0, 0);
             TimeSpan result = new TimeSpan();
-            foreach (var value in WorkTimeByWeek.Values)
+            foreach (var value in this.workTimeByWeek.Values)
             {
                 if (value > regularWorkHoursPerWeek)
                 {
@@ -80,22 +80,22 @@ namespace CustomAggregates
 
         public void Init()
         {
-            this.WorkTimeByWeek = new Dictionary<long, TimeSpan>();
+            this.workTimeByWeek = new Dictionary<long, TimeSpan>();
         }
 
         public void Merge(IAggregateFunction aggregateFunction)
         {
             var otherAggregateFunction = (TotalOvertimeHours)aggregateFunction;
-            foreach (var pair in otherAggregateFunction.WorkTimeByWeek)
+            foreach (var pair in otherAggregateFunction.workTimeByWeek)
             {
                 TimeSpan weekWorkTime;
-                if (!WorkTimeByWeek.TryGetValue(pair.Key, out weekWorkTime))
+                if (!this.workTimeByWeek.TryGetValue(pair.Key, out weekWorkTime))
                 {
-                    WorkTimeByWeek.Add(pair.Key, pair.Value);
+                    this.workTimeByWeek.Add(pair.Key, pair.Value);
                 }
                 else
                 {
-                    WorkTimeByWeek[pair.Key] = weekWorkTime + pair.Value;
+                    this.workTimeByWeek[pair.Key] = weekWorkTime + pair.Value;
                 }
             }
         }
@@ -111,9 +111,9 @@ Here is how you need to call the custom aggregate in an _Expression_:
 = TotalOvertimeHours(Fields.Week, Fields.WorkTime)
 ```
 
-The first argument is the grouping value, in the sample, this is the week number. The second argument is the field that we aggregate, in this case, 
-the working hours field in the data record.
+- The first argument is the grouping value, in the sample, this is the week number.
+- The second argument is the field that we aggregate, in this case, the working hours field in the data record.
 
-Note that you need also to include a reference to the assembly with the custom aggregate function in the configuration file of tha application 
-hosting the Reporting engine. For example, for the Standalone designer you need to include the reference in its config file as explained in the
+> Note that you need also to include a reference to the assembly with the custom aggregate function in the configuration file of the application 
+hosting the Reporting engine. For example, for the Standalone designer you need to include the reference in its _.config_ file as explained in the
 article [Extending Report Designer](https://docs.telerik.com/reporting/standalone-report-designer-extending-configuration).

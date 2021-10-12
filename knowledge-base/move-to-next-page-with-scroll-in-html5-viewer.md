@@ -16,6 +16,7 @@ res_type: kb
 		<tr>
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
+			<td>HTML5 Report Viewer and all its wrappers</td>
 		</tr>
 	</tbody>
 </table>
@@ -27,13 +28,12 @@ If you would like to switch to the next page with the Scrollbar also in SINGLE_P
 
 ## Suggested Workarounds
 You may use the dedicated commands of the viewer __goToPrevPage__ and __goToNextPage__ for switching between the pages - see the 
-[viewer commands](../html5-report-viewer-reportviewer-properties-commands). Note that the viewer's scroll is on the element with CSS class __trv-page-container__. 
+[viewer commands](../html5-report-viewer-reportviewer-properties-commands).  
+> Note that the viewer's scroll is on the element with CSS class __trv-page-container__.  
+
 You need to be sure that the [reportViewer](../html5-report-viewer-jquery-fn-telerik-reportviewer) has already been created and the report document rendered 
-so that this element exists.  
-For example, you may attach an event handler for the 'scroll' event to this element in the 
-[renderingEnd event of the viewer](../html5-report-viewer-reportviewer-events-renderingend). The Stackoverflow thread 
-[How to check if a DIV is scrolled all the way to the bottom with jQuery](https://stackoverflow.com/questions/5828275/how-to-check-if-a-div-is-scrolled-all-the-way-to-the-bottom-with-jquery) 
-explains how to detect when the DIV is scrolled to the bottom. Here is the sample implementation of the event handler:  
+so that the element with CSS class __trv-page-container__ exists. For example, you may attach an event handler for the 'scroll' event to this element in the 
+[renderingEnd event of the viewer](../html5-report-viewer-reportviewer-events-renderingend). Here is the sample implementation of the event handler:  
 
 ```JavaScript
 function onRenderingEnd(e, args) {
@@ -56,3 +56,7 @@ function onRenderingEnd(e, args) {
     })
 }
 ```
+
+## See Also
+The Stackoverflow thread 
+[How to check if a DIV is scrolled all the way to the bottom with jQuery](https://stackoverflow.com/questions/5828275/how-to-check-if-a-div-is-scrolled-all-the-way-to-the-bottom-with-jquery) explains how to detect when the DIV is scrolled to the bottom. 

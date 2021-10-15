@@ -28,7 +28,9 @@ res_type: kb
 
 ## Description
 
-The error is displayed in the browser console when the report viewer tries to load and a message in the report viewer that the Reporting REST Service cannot be accessed.
+The error is displayed in the browser console when the report viewer loads. 
+
+'The Reporting REST Service cannot be accessed' message appears in the report viewer.
 
 ## Error Message
 

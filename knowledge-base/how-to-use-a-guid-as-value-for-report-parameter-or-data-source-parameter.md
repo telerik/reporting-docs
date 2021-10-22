@@ -7,7 +7,7 @@ slug: how-to-use-a-guid-as-value-for-report-parameter-or-data-source-parameter-
 res_type: kb
 ---
  
- ## Environment
+## Environment
 <table>
     <tbody>
 	    <tr>

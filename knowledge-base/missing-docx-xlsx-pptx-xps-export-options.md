@@ -49,7 +49,7 @@ Usually, this is related to not having Telerik Reporting rendering format specif
   
 ### DOCX/PPTX/XLSX
  
-  **DOCX/PPTX/XLSX** rendering extensions are OpenXML formats and they require **Telerik.Reporting.OpenXmlRendering.dll** and [Open XML SDK 2.0 for Microsoft Office]            (../installation-deploying-openxml) (**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above).   
+  **DOCX/PPTX/XLSX** rendering extensions are OpenXML formats and they require **Telerik.Reporting.OpenXmlRendering.dll** and [Open XML SDK 2.0 for Microsoft Office](../installation-deploying-openxml) (**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above).   
   
  If you are using DocumentFormat.OpenXml of version  2.5.5631.0, you will need binding redirect for the DocumentFormat.OpenXml.dll assembly - [Deploy Telerik Reporting with newer OpenXML SDK version](./deploy-telerik-reporting-with-newer-openxml-sdk-version).   
   

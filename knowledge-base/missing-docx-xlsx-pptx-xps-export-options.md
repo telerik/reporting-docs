@@ -43,11 +43,11 @@ Usually, this is related to not having Telerik Reporting rendering format specif
 
 ## Solution
 
- ### XPS
+### XPS
 
   The **XPS** rendering extension requires the **Telerik.Reporting.XpsRendering.dll** assembly.   
   
- ### DOCX/PPTX/XLSX
+### DOCX/PPTX/XLSX
  
   **DOCX/PPTX/XLSX** rendering extensions are OpenXML formats and they require **Telerik.Reporting.OpenXmlRendering.dll** and [Open XML SDK 2.0 for Microsoft Office]            (../installation-deploying-openxml) (**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above).   
   

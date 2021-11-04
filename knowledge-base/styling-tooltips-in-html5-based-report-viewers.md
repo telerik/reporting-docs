@@ -109,10 +109,10 @@ In case you need a custom solution for your tooltips, you can create your own on
  - First, declare the __jQuery UI__ library in your **html** page. Here is a link to a CDN source:
 
 ```html
-<script src="https://code.jquery.com/ui/1.13.0-rc.3/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 ```
 
-If the above link becomes non-functional, consider replacing it with a working one. Here is a link to the [jQuery CDN – Latest Stable Versions](https://code.jquery.com/).
+If the above link becomes non-functional, consider replacing it with a working one. Here is a link to the [jQuery UI – Releases](https://releases.jquery.com/ui/).
 
  - Then you need to subscribe to an appropriate event that will be raised from the report viewer. In this case the [pageReady()](../html5-report-viewer-reportviewer-events-pageready) event is suitable, because all the content will be ready and we can select the report items by their data-tooltip attributes. We’ll also add a handler to the [viewerToolTipOpening()](../html5-report-viewer-reportviewer-events-viewertooltipopening) event and explain its usage later:
     

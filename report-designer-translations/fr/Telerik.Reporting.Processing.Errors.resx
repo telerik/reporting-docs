@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="NoPageToDisplay" xml:space="preserve">
+    <value>L’ensemble de données actuel présenté dans le rapport n’a produit aucun contenu significatif, de sorte qu’aucune page n’a été générée. Si vous avez besoin de voir l’intégralité du contenu du rapport, y compris les pages vierges, veuillez contacter l’auteur du rapport.</value>
+  </data>
   <data name="NoRuntimeItemDefined" xml:space="preserve">
     <value>Aucun élément d’exécution n’est défini pour {0} élément</value>
   </data>

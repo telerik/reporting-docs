@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="NoPageToDisplay" xml:space="preserve">
+    <value>Текущий набор данных, представленный в докладе, не содержит какого-либо существенного содержания, поэтому страницы не были созданы. Если вам нужно просмотреть все содержимое отчета, включая пустые страницы, обратитесь к автору отчета.</value>
+  </data>
   <data name="NoRuntimeItemDefined" xml:space="preserve">
     <value>Элемент выполнения не определен для элемента {0}</value>
   </data>

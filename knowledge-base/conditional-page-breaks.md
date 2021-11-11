@@ -35,9 +35,11 @@ This is desired for the different group instances but sometimes you want to rend
   
 [PageBreak enum values](../t-telerik-reporting-pagebreak) are as follows:  
   
+- None
 
-| None    <br> | Before   <br> |  After    <br> | BeforeAndAfter   <br> |
-| --- | --- | --- | --- |
+- Before
 
+- After
 
+- BeforeAndAfter   
 

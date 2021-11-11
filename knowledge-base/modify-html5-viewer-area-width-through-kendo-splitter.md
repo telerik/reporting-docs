@@ -39,9 +39,9 @@ To modify the _Document Map_ or _Parameter_ area width you may include the follo
 ```JavaScript
 var splitter = $("#reportViewerId").find(".k-splitter").data("kendoSplitter")
 
-splitter.options.panes[0].size = "350px";// use array index 2 for Parameter area and 0 for Document Map area
+splitter.options.panes[0].size = "350px";// use array index 1 for Parameter area and 0 for Document Map area
 
 splitter.resize(true);
 ```
   
-The above code will resize the _Document Map_ area to the wanted size (_350px_). To resize the _Parameter_ area use index 2 (two).
+The above code will resize the _Document Map_ area to the wanted size (_350px_). To resize the _Parameters_ area use index 1 (one).

@@ -44,4 +44,4 @@ splitter.options.panes[0].size = "350px";// use array index 1 for Parameter area
 splitter.resize(true);
 ```
   
-The above code will resize the _Document Map_ area to the wanted size (_350px_). To resize the _Parameter_ area use index 2 (two).
+The above code will resize the _Document Map_ area to the wanted size (_350px_). To resize the _Parameters_ area use index 1 (one).

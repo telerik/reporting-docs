@@ -36,7 +36,7 @@ You need to add the following code in the head section of the page with the view
 The localization script replaces the default messages in the widget prototype with their equivalent translations. The above script refers to 'bg-BG' culture, i.e. the 
 Bulgarian language. For other languages, the file has to be named by following the __kendo.messages.\<language>.min.js__ convention. You may check the available translations in 
 the [Kendo GitHub repository](https://github.com/telerik/kendo-ui-core/tree/master/src/messages).
-The meta tag with the encoding is needed in order to display the toolbar messages' special symbols correctly in the most of the languages.
+The meta tag with the encoding is needed in order to display the toolbar messages' special symbols correctly in most languages.
 
 ## See Also
 - [Localization of the Html5 Report Viewer](../html5-report-viewer-localization) 

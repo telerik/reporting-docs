@@ -25,7 +25,7 @@ Previewing a report definition containing expressions with user-defined functio
 
 Without extending the application to load the external assembly, you will get the following error *"The expression contains object* 'MyReportExtensionsLibrary' *that is not defined in the current context."*
 
-The avoid the error:
+To avoid the error, follow the next steps:
 
 - Add the Telerik.Reporting configuration section to the \<configSections\> element. Notice that the section type attribute may differ according to the version. For the exact details check <a href="/configuring-telerik-reporting" target="_blank">Telerik Reporting Configuration Section</a> in the .chm help file for your version.
 

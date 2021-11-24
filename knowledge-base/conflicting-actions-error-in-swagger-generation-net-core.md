@@ -1,5 +1,5 @@
 ---
-title: Swagger generation conflicting actions error in .NET Core
+title: Failed to load API definition is displayed on the Swagger Generation page
 description: Swagger requires actions to have unique methods/paths.
 type: troubleshooting
 page_title: Conflicting method/path combination for actions in Swagger Generation
@@ -63,10 +63,7 @@ There is a confliction method/path in ReportDesignerController. Swagger requires
 ```cs
  public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddRazorPages()
-                .AddNewtonsoftJson();
-   
+		...
             services.AddSwaggerGen(c => {
                 c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
                 c.IgnoreObsoleteActions();
@@ -80,12 +77,6 @@ There is a confliction method/path in ReportDesignerController. Swagger requires
 - For .NET 6, configure the Swagger Generation in **Program.cs**
 
 ```cs
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllersWithViews().AddNewtonsoftJson();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c => {
     c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
     c.IgnoreObsoleteActions();

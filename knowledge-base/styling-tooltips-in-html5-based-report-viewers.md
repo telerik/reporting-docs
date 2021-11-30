@@ -106,13 +106,14 @@ You can provide styling for the tooltips in the **html**/**cshtml** page of your
 
 In case you need a custom solution for your tooltips, you can create your own ones, using the information provided in the **data-tooltip** attributes of the report viewer content. In the following example we will show you how to create tooltips using [jQueryUI Tooltip](https://jqueryui.com/tooltip/) widget:
     
- - First, declare the __jQuery UI__ library in your **html** page. Here is a link to a CDN source:
+ - First, declare the __jQuery UI__ library and the corresponding __CSS Styles__ in your **html** page. Here is a link to a CDN source:
 
 ```html
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
 ```
 
-If the above link becomes non-functional, consider replacing it with a working one. Here is a link to the [jQuery UI – Releases](https://releases.jquery.com/ui/).
+If the above links become non-functional, consider replacing them with working ones. Here is a link to the [jQuery UI – Releases](https://releases.jquery.com/ui/).
 
  - Then you need to subscribe to an appropriate event that will be raised from the report viewer. In this case the [pageReady()](../html5-report-viewer-reportviewer-events-pageready) event is suitable, because all the content will be ready and we can select the report items by their data-tooltip attributes. We’ll also add a handler to the [viewerToolTipOpening()](../html5-report-viewer-reportviewer-events-viewertooltipopening) event and explain its usage later:
     

@@ -99,7 +99,7 @@ public class ReportingController : Controller
 ```
 
 ## Notes
-The sample project can be found in our GitHub repository.
+The sample project can be found in our [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/Setting%20Report%20of%20WebReporDesigner%20Dinamically).
 
 ## See Also
 [Web Report Designer](./web-report-designer)

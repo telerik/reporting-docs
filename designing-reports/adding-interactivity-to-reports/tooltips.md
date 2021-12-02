@@ -33,10 +33,10 @@ The HTML5 Viewer (JavaScript, MVC and WebForms), WinForms ReportViewer and WPF R
 
 # See Also
 
- * [Styling Tooltips in HTML5-based Report Viewers]({%slug telerikreporting/knowledge-base/styling-tooltips-in-html5-based-report-viewers%})
+ * [Styling Tooltips in HTML5-based Report Viewers](../../knowledge-base/styling-tooltips-in-html5-based-report-viewers)
  
- * [How to add interactivity to a report using action event handlers in WPF Report Viewer]({%slug telerikreporting/knowledge-base/how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer%})
+ * [How to add interactivity to a report using action event handlers in WPF Report Viewer](../../knowledge-base/how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer)
  
- * [How to add interactivity to a report using action event handlers in HTML5-based report viewers]({%slug telerikreporting/knowledge-base/how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers%})
+ * [How to add interactivity to a report using action event handlers in HTML5-based report viewers](../../knowledge-base/how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers)
  
- * [How to add interactivity to a report using action event handlers in WinForms Report Viewer]({%slug telerikreporting/knowledge-base/how-to-add-interactivity-to-a-report-using-action-event-handlers-in-winforms-report-viewer%})
+ * [How to add interactivity to a report using action event handlers in WinForms Report Viewer](../../knowledge-base/how-to-add-interactivity-to-a-report-using-action-event-handlers-in-winforms-report-viewer)

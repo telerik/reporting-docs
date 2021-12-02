@@ -5,14 +5,426 @@ url: "https://docs.telerik.com/reporting"
 has_kb_portal: true
 
 # Exclude files which should not be in the output
-exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd,report-designer-translations]
-exclude_navigation: [knowledge-base/*]
+exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd,TodorReadme.txt,report-designer-translations,_assetsApi]
+exclude_navigation: ["knowledge-base/*","for-more-help/*","quickstart/*","welcome-to-telerik-reporting!/*"]
 navigation:
 ## List your directory names and order here, like this:   
-    knowledge-base:
+    getting-started:
         position: 1100
+        title: "Getting Started"
+    upgrade:
+        position: 2100
+        title: "Upgrade"
+    designing-reports:
+        position: 3100
+        title: "Designing Reports"  
+    designing-reports/report-designer-tools:
+        position: 1000
+        title: "Report Designer Tools"
+    designing-reports/report-designer-tools/web-report-designer:
+        position: 1000
+        title: "Web Report Designer"
+    designing-reports/report-designer-tools/web-report-designer/tools:
+        position: 1000
+        title: "Tools"
+    designing-reports/report-designer-tools/web-report-designer/tools/table:
+        position: 1000
+        title: "Table"    
+    designing-reports/report-designer-tools/desktop-designers:
+        position: 1100
+        title: "Desktop Designers"    
+    designing-reports/report-designer-tools/desktop-designers/standalone-report-designer:
+        position: 1000
+        title: "Standalone Report Designer"  
+    designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration:
+        position: 1000
+        title: "Configuration"  
+    designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer:
+        position: 1100
+        title: "Visual Studio Report Designer"
+    designing-reports/report-designer-tools/desktop-designers/tools:
+        position: 1200
+        title: "Tools" 
+    designing-reports/report-designer-tools/desktop-designers/tools/report-wizards:
+        position: 1000
+        title: "Report Wizards"
+    designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard:
+        position: 1000
+        title: "Band Report Wizard"
+    designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards:
+        position: 1100
+        title: "Data Source Wizards"
+    designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard:
+        position: 1100
+        title: "SqlDataSource Wizards"    
+    designing-reports/converting-reports-from-other-reporting-solutions:
+        position: 1100
+        title: "Converting Reports from Other Reporting Solutions"
+    designing-reports/report-structure:
+        position: 1200
+        title: "Report Structure"
+    designing-reports/report-structure/table:
+        position: 1000
+        title: "Table/Crosstab/List"    
+    designing-reports/report-structure/graph:
+        position: 1100
+        title: "Graph"
+    designing-reports/report-structure/graph/chart-types:
+        position: 1000
+        title: "Chart Types"
+    designing-reports/report-structure/graph/chart-types/area-charts:
+        position: 1000
+        title: "Area Charts"
+    designing-reports/report-structure/graph/chart-types/bar-charts:
+        position: 1100
+        title: "Bar Charts"
+    designing-reports/report-structure/graph/chart-types/column-charts:
+        position: 1200
+        title: "Column Charts"
+    designing-reports/report-structure/graph/chart-types/line-charts:
+        position: 1300
+        title: "Line Charts"
+    designing-reports/report-structure/graph/chart-types/pie-charts:
+        position: 1400
+        title: "Pie Charts"
+    designing-reports/report-structure/graph/chart-types/polar-charts:
+        position: 1500
+        title: "Polar Charts"
+    designing-reports/report-structure/graph/chart-types/range-charts:
+        position: 1600
+        title: "Range Charts"
+    designing-reports/report-structure/graph/chart-types/scatter-charts:
+        position: 1700
+        title: "Scatter Charts"    
+    designing-reports/report-structure/graph/chart-types/ohlc-charts:
+        position: 1800
+        title: "OHLC Charts"
+    designing-reports/report-structure/graph/formatting-a-graph:
+        position: 1100
+        title: "Formatting a Graph"
+    designing-reports/report-structure/graph/how-to:
+        position: 1200
+        title: "How To"
+    designing-reports/report-structure/map:
+        position: 1200
+        title: "Map"
+    designing-reports/report-structure/map/structure:
+        position: 1000
+        title: "Structure"    
+    designing-reports/report-structure/map/formatting-a-map:
+        position: 1100
+        title: "Formatting a Map"
+    designing-reports/report-structure/map/how-to:
+        position: 1200
+        title: "How To"
+    designing-reports/report-structure/htmltextbox:
+        position: 1300
+        title: "HtmlTextBox"
+    designing-reports/report-structure/barcode:
+        position: 1400
+        title: "Barcode"
+    designing-reports/report-structure/barcode/barcode-types:
+        position: 1500
+        title: "Barcode Types"    
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes:
+        position: 1500
+        title: "2D Barcodes"     
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code:
+        position: 1000
+        title: "QR Code"     
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes/swiss-qr-code:
+        position: 1100
+        title: "Swiss QR Code"
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417:
+        position: 1200
+        title: "PDF417"
+    designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix:
+        position: 1300
+        title: "Data Matrix"
+    designing-reports/report-structure/how-to:
+        position: 1500
+        title: "How To"
+    designing-reports/connecting-to-data:
+        position: 1300
+        title: "Connecting to Data"
+    designing-reports/connecting-to-data/data-source-components:
+        position: 1000
+        title: "Data Source Components"
+    designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
+        position: 1000
+        title: "SqlDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
+        position: 1100
+        title: "CsvDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
+        position: 1200
+        title: "WebServiceDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
+        position: 1300
+        title: "ObjectDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to:
+        position: 1500
+        title: "How To"
+    designing-reports/connecting-to-data/data-source-components/entitydatasource-component:
+        position: 1400
+        title: "EntityDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component:
+        position: 1500
+        title: "OpenAccessDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/cubedatasource-component:
+        position: 1600
+        title: "CubeDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/openclientdatasource-component:
+        position: 1700
+        title: "OpenClientDataSource Component"
+    designing-reports/connecting-to-data/data-items:
+        position: 1100
+        title: "Data Items"
+    designing-reports/connecting-to-data/data-items/filtering-data:
+        position: 1000
+        title: "Filtering Data"    
+    designing-reports/connecting-to-data/data-items/ordering-data:
+        position: 1100
+        title: "Ordering Data" 
+    designing-reports/connecting-to-data/data-items/grouping-data:
+        position: 1200
+        title: "Grouping Data" 
+    designing-reports/connecting-to-data/expressions:
+        position: 1200
+        title: "Expressions"
+    designing-reports/connecting-to-data/expressions/using-expressions:
+        position: 1000
+        title: "Using Expressions"
+    designing-reports/connecting-to-data/expressions/expressions-reference:
+        position: 1100
+        title: "Expressions Reference"
+    designing-reports/connecting-to-data/expressions/expressions-reference/functions:
+        position: 1500
+        title: "Functions"
+    designing-reports/connecting-to-data/expressions/extending-expressions:
+        position: 1200
+        title: "Extending Expressions"
+    designing-reports/connecting-to-data/report-parameters:
+        position: 1300
+        title: "Report Parameters"
+    designing-reports/connecting-to-data/troubleshooting:
+        position: 1400
+        title: "Troubleshooting"
+    designing-reports/adding-interactivity-to-reports:
+        position: 1400
+        title: "Adding Interactivity to Reports"
+    designing-reports/adding-interactivity-to-reports/bookmarks:
+        position: 1000
+        title: "Bookmarks"
+    designing-reports/adding-interactivity-to-reports/actions:
+        position: 1100
+        title: "Actions"
+    designing-reports/adding-interactivity-to-reports/actions/sorting-action:
+        position: 1100
+        title: "Sorting Action"
+                # There is SLASH \ in the article names
+                # D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\sorting-action\sorting-multiple-items\groups.md
+    designing-reports/adding-interactivity-to-reports/actions/how-to:
+        position: 1200
+        title: "How To"
+                # D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\how-to\how-to-add-a-drilldown\toggle-visibility-action.md
+                # D:\Work\reporting-docs\designing-reports\adding-interactivity-to-reports\actions\how-to\how-to-add-a-drillthrough\navigate-to-report-action.md
+    designing-reports/adding-interactivity-to-reports/document-map:
+        position: 1200
+        title: "Document Map"
+    designing-reports/adding-interactivity-to-reports/table-of-contents:
+        position: 1300
+        title: "Table of Contents"     
+    designing-reports/styling-reports:
+        position: 1500
+        title: "Styling Reports"  
+    designing-reports/rendering-and-paging:
+        position: 1600
+        title: "Rendering and Paging"
+    designing-reports/rendering-and-paging/design-considerations-for-report-rendering:
+        position: 1500
+        title: "Design Considerations for Report Rendering"
+    designing-reports/report-sources:
+        position: 1700
+        title: "Report Sources" 
+    designing-reports/report-book:
+        position: 1800
+        title: "Report Book" 
+    using-reports-in-applications:
+        position: 4100
+        title: "Using reports in applications"
+    using-reports-in-applications/display-reports-in-applications:
+        position: 1000
+        title: "Display Reports in Applications"
+    using-reports-in-applications/display-reports-in-applications/web-application:
+        position: 1000
+        title: "Web Application"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer:
+        position: 1000
+        title: "HTML5 Report Viewer"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing:
+        position: 1000
+        title: "Customizing"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance:
+        position: 1500
+        title: "Styling and Appearance"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference:
+        position: 1200
+        title: "API Reference"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer:
+        position: 1000
+        title: "ReportViewer"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events:
+        position: 1000
+        title: "Events"    
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods:
+        position: 1100
+        title: "Methods"    
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties:
+        position: 1200
+        title: "Properties"    
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace:
+        position: 1200
+        title: "telerikReportViewer Namespace"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer:
+        position: 1100
+        title: "HTML5 ASP.NET MVC Report Viewer"   
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing:
+        position: 1500
+        title: "Customizing"
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer:
+        position: 1200
+        title: "HTML5 ASP.NET Web Forms Report Viewer" 
+    using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
+        position: 1500
+        title: "Customizing"    
+    using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer:
+        position: 1300
+        title: "Angular Report Viewer" 
+    using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing:
+        position: 1200
+        title: "Customizing"     
+    using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
+        position: 1400
+        title: "API Reference"    
+    using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer:
+        position: 1400
+        title: "Blazor Report Viewer"     
+    using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer:
+        position: 1500
+        title: "ASP.NET Web Forms Report Viewer"
+    using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state:
+        position: 1500
+        title: "Design Considerations for Out-proc Session State"
+    using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting:
+        position: 1600
+        title: "Troubleshooting" 
+    using-reports-in-applications/display-reports-in-applications/windows-forms-application:
+        position: 1100
+        title: "Windows Forms Application"    
+    using-reports-in-applications/display-reports-in-applications/windows-forms-application/troubleshooting:
+        position: 1500
+        title: "Troubleshooting"  
+    using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application:
+        position: 1150
+        title: "WinUI 3 Desktop Application"        
+    using-reports-in-applications/display-reports-in-applications/wpf-application:
+        position: 1200
+        title: "WPF Application"
+    using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting:
+        position: 1500
+        title: "Troubleshooting"    
+    using-reports-in-applications/display-reports-in-applications/silverlight-application:
+        position: 1300
+        title: "Silverlight Application" 
+    using-reports-in-applications/display-reports-in-applications/silverlight-application/troubleshooting:
+        position: 1500
+        title: "Troubleshooting" 
+    using-reports-in-applications/host-the-report-engine-remotely:
+        position: 1100
+        title: "Host the Report Engine Remotely"
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services:
+        position: 1200
+        title: "Telerik Reporting REST Services"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation:
+        position: 1000
+        title: "ASP.NET Web API Implementation"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation:
+        position: 1100
+        title: "ASP.NET Core Web API Implementation"      
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation:
+        position: 1200
+        title: "ServiceStack Implementation"      
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver:
+        position: 1300
+        title: "REST Service Report Source Resolver"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage:
+        position: 1400
+        title: "REST Service Storage"      
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference:
+        position: 1500
+        title: "REST API Reference"     
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api:
+        position: 1000
+        title: "Clients API"     
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api:
+        position: 1100
+        title: "Report Parameters API"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api:
+        position: 1200
+        title: "Report Instances API"
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api:
+        position: 1300
+        title: "Documents API"     
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api:
+        position: 1400
+        title: "General API"    
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities:
+        position: 1500
+        title: "JSON Entities"
+    using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service:
+        position: 1400
+        title: "Telerik Reporting WCF Service"    
+    using-reports-in-applications/call-the-report-engine-via-apis:
+        position: 1200
+        title: "Call the Report Engine via APIs"
+    using-reports-in-applications/export-and-configure:
+        position: 1300
+        title: "Export and Configure"
+    using-reports-in-applications/export-and-configure/configure-the-report-engine:
+        position: 1000
+        title: "Configure the Report Engine"    
+    using-reports-in-applications/export-and-configure/configure-the-export-formats:
+        position: 1100
+        title: "Configure the Export Formats"   
+                #D:\Work\reporting-docs\using-reports-in-applications\export-and-configure\configure-the-export-formats\wpfxaml\wpfxamlinteractive-device-information-settings.md
+    using-reports-in-applications/export-and-configure/cache-management:
+        position: 1200
+        title: "Cache Management"    
+    using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls:
+        position: 1400
+        title: "Other ReportViewer Controls"    
+    using-reports-in-applications/program-the-report-definition:
+        position: 1400
+        title: "Program the Report Definition"
+    using-reports-in-applications/program-the-report-definition/report-events:
+        position: 1500
+        title: "Report Events"
+    troubleshooting:
+        position: 5100
+        title: "Troubleshooting"
+    knowledge-base:
+        position: 6100
         title: "Knowledge Base"
-
+    for-more-help:
+        position: 6100
+        title: "Not to be shown-for-more-help"
+    quickstart:
+        position: 6100
+        title: "Not to be shown-quickstart"
+    api:
+        position: 7100
+        title: "API Reference"
 ## The application virtual path
 baseurl: /reporting
 
@@ -32,9 +444,23 @@ defaults:
         category: "default"
         product: "reporting"
         editable: true
-
+-
+    scope:
+        path: "api"
+    values:
+        kind: "api"
+        res_type: "api"
+        description_suffix: "- Save development time with the complete Telerik Reporting reference listing publicly available classes, methods, and properties."
+        title_suffix: "Telerik Reporting API Reference"
+        
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
+suiteversion: "15.1.21.616"
+kendosubsetversion: "kendo version 12234"
+buildversion: " build 1"
+KB_Configure_the_Image_Rendering_Extension_to_Generate_TIFF_Files: "TIFF 345"
+KB-converting-reports-from-various-versions-of-crystalreports: "Crystal 123"
+KB-converting-reports-from-various-versions-of-activereports: "Active 123"
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'
@@ -50,6 +476,9 @@ product: "Telerik Reporting"
 product_url: https://www.telerik.com/reporting
 platform: reporting
 download: http://www.telerik.com/products/reporting/download.aspx
+
+api_reference_url: "api/"
+
 nav:
   "Demos": https://demos.telerik.com/reporting
   "Release History": https://www.telerik.com/support/whats-new/reporting/release-history

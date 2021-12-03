@@ -64,8 +64,8 @@ Report parameters values can be passed from the report source object. Each repor
 
  * [How to: Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
 
- * [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})  
+ * [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})
  
- * [ReportSource](/reporting/api/Telerik.Reporting.ReportSource)   
+ * [ReportSource](/reporting/api/Telerik.Reporting.ReportSource)
  
- * [ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor) 
+ * [ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor)

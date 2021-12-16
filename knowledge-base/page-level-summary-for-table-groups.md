@@ -1,6 +1,6 @@
 ---
 title: Page Level Summary for Table Groups Data
-description: 
+description: Display summary per page for table groups
 type: how-to
 page_title: Page Aggregates for Table Groups
 slug: page-level-summary-for-table-groups
@@ -28,8 +28,8 @@ For example, the number and count of the pages taken by the Table Group.
 ## Suggested Workarounds
 The [scope](../expressions-scope) that may be provided in the _PageExec_ and other (Page Functions)[../expressions-page-functions] should be linked to a report item, 
 for example, a TextBox. The Table Groups are not directly related to report items and that's why the page aggregates cannot be based on the Table Group scope. That said, you 
-cannot provide the name of the Table Group as a scope for a Page function.
-There are two approaches to work arounds this limitation.
+cannot provide the name of the Table Group as a scope for a [Page Function](../expressions-page-functions).
+There are two approaches to work around this limitation.
 
 1. You may replace the Table Groups with [Report Groups](../data-items-how-to-add-groups-to-report-item). The Report groups are associated with a dedicated report item. 
 For example, you may place the table in the Report Group Header section, and [Bind](../expressions-bindings) its DataSource to the parent's DataSource, that would be 

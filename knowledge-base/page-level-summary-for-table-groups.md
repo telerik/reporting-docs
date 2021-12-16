@@ -26,7 +26,7 @@ The requirement is to display a summary per page in a Page section for the data 
 For example, the number and count of the pages taken by the Table Group.
 
 ## Suggested Workarounds
-The [scope](../expressions-scope) that may be provided in the _PageExec_ and other (Page Functions)[../expressions-page-functions] should be linked to a report item, 
+The [scope](../expressions-scope) that may be provided in the _PageExec_ and other [Page Functions](../expressions-page-functions) should be linked to a report item, 
 for example, a TextBox. The Table Groups are not directly related to report items and that's why the page aggregates cannot be based on the Table Group scope. That said, you 
 cannot provide the name of the Table Group as a scope for a [Page Function](../expressions-page-functions).
 There are two approaches to work around this limitation.
@@ -41,3 +41,16 @@ A sample based on this approch may be found in the [PageAggregateFromTableWithRe
 as the original group. This parent group will generate a new report item that spans the entire group. You may use this new item's name in the _scope_ of the Page Functions. 
 You may delete the content of this item and make it very small. It should be visible in order for the Expression to consider it though. A sample based on this approch may be 
 found in the [PageAggregateFromTableWithParentTableGroup.trdp](resources/PageAggregateFromTableWithParentTableGroup.trdp) demo report.
+
+## See Also
++ [Table Groups](../data-items-how-to-add-groups-to-table-item-and-crosstab-item)
+
++ [Page Functions](../expressions-page-functions)
+
++ [Report Groups](../data-items-how-to-add-groups-to-report-item)
+
++ [Expression Scope](../expressions-scope)
+
++ Demo Report [PageAggregateFromTableWithReportGroup.trdp](resources/PageAggregateFromTableWithReportGroup.trdp)
+
++ Demo Report [PageAggregateFromTableWithParentTableGroup.trdp](resources/PageAggregateFromTableWithParentTableGroup.trdp)

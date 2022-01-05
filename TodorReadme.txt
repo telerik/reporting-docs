@@ -171,6 +171,8 @@ relative links with {%slug ...%} don't work for KB articles - "...\designing-rep
 
 
 
+When the article finishes with code snippet, there should be at least 2 LINES after the last snippet
+
 
 
 file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-sources-viewers.aml - links to sections at the end of the article (go to section link) not working

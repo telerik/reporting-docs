@@ -3,7 +3,7 @@ title: Upgrade issues with ObjectDataSource Component after Telerik Reporting R3
 description: Upgrade error with the ObjectDataSource Component after upgrading to R3 2016 or newer.
 type: troubleshooting
 page_title: The ObjectDataSource Component does not work after upgrading to R3 2016
-slug: upgrade-issues-with-objectdatasource-after-r3-2016
+slug: telerik-reporting-r3-2016---upgrade-issues-with-objectdatasource-component
 res_type: kb
 ---
 

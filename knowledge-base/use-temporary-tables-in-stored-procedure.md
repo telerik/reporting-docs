@@ -3,7 +3,7 @@ title: Configuring Stored Procedure with Temporary Tables
 description: This articles explains how to use temporary tables in the stored procedure to retrieve the schema. 
 type: how-to
 page_title: Configuring Stored Procedure with Temporary Tables for use with SqlDataSource component or Cursor Variable
-slug: configuring-stored-procedure-with-temporary-tables
+slug: use-temporary-tables-in-stored-procedure
 position: 
 tags: 
 ticketid: 1410174

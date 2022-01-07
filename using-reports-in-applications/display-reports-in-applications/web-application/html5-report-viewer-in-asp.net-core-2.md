@@ -191,7 +191,7 @@ namespace WebApplication1.Controllers
 </html>
 ````
 
-   >note The reference to the report viewer's JavaScript file ( *telerikReportViewer-x.x.x.x.min.js* )                 should be updated to the corresponding version of the Reporting NuGet package.               
+   >The reference to the report viewer's JavaScript file ( *telerikReportViewer-x.x.x.x.min.js* )                 should be updated to the corresponding version of the Reporting NuGet package.               
 
 1. Set the launchSettings.json launchUrl to the new HTML page.             
 

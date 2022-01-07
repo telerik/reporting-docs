@@ -50,7 +50,7 @@ Additionally the xaml file with the corresponding Report Viewer theme has to be 
 
 * Telerik.ReportViewer.Wpf.xaml
 
->note You should not set Application Theme using the StyleManager when using implicit styles.           
+>You should not set Application Theme using the StyleManager when using implicit styles.           
 
 ## Basing styles on an existing Report Viewer theme
 

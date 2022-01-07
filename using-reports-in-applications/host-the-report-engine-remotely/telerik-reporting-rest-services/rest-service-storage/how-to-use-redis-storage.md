@@ -31,14 +31,14 @@ Telerik Reporting uses __StackExchange.Redis__  client library to access a Redis
 1. For projects using StackExchange.Redis.StrongName version 1.0.320 up to version 1.2.7:                 
    + In your application project add reference to the                        [StackExchange.Redis.StrongName](https://www.nuget.org/packages/StackExchange.Redis.StrongName)                        (not to be mistaken with StackExchange.Redis) NuGet package with version 1.0.320 or greater.                       This will add a dll reference to StackExchange.Redis.StrongName.dll version 1.0.316.0 or greater.                     
 
-   >note When using greater version, a  [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)  should be added in the application configuration file to the currently referenced dll version.                       
+   >When using greater version, a  [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)  should be added in the application configuration file to the currently referenced dll version.                       
 
    + Add reference to the                       __Telerik.Reporting.Cache.StackExchangeRedis__                        library located in the {Telerik Reportng installation folder}/Bin folder.                     
 
 1. For projects using StackExchange.Redis version 2.0.601 or greater:                 
    + In your application project add reference to the                        [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis)                        NuGet package with version 2.0.601 or greater.                       This will add a dll reference to StackExchange.Redis.dll.                     
 
-   >note When using greater version, a  [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)  should be added in the application configuration file to the currently referenced dll version.                       
+   >When using greater version, a  [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)  should be added in the application configuration file to the currently referenced dll version.                       
 
    + Add reference to the                       __Telerik.Reporting.Cache.StackExchangeRedis.2__                        library located in the {Telerik Reportng installation folder}/Bin/netstandard2.0 folder.                     
 

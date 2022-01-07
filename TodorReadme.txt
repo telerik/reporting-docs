@@ -13,12 +13,6 @@ msbuild /p:LatestBinariesPath="D:\Work\MdDocs\Examples\CSharp\.NET Framework\Htm
 
 REMAINING:
 
-
-embedded-report-engine.md   - code snippet in the middle not closed
-
-
-
-
 how to pass the real tokes to _config.yml
 
 how to use tokens in code snippets (CDATA)
@@ -66,6 +60,7 @@ seems like the other paragraphs in the generated MD file   -	There are missing p
 
 relative links with {%slug ...%} in ">note " don't work - "...\designing-reports\localizing-reports.md", "..\rendering-and-paging\design-considerations-for-report-rendering\
 ANOTHER EXAMPLE: ">note You can change the field delimiter to any character that you want, by changing the device information settings. For more information, see [CSV Device Information Settings](../../../using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings)."
+----Fixed with only ">" or "> " rather than ">note " or ">tip "
 
 relative links with {%slug ...%} don't work for KB articles - "...\designing-reports\converting-reports-from-other-reporting-solutions\overview.md"
 

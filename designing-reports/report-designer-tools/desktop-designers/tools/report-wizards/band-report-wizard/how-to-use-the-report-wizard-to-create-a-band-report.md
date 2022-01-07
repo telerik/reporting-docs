@@ -42,7 +42,7 @@ To create a new report with this wizard:
 
    + Click the __Query Builder__  button.                 
 
-   >note The Query Builder is part of Visual Studio and is available only in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). As of Telerik Reporting Q3 2014 SQL queries can be built in the Standalone Designer with the [Query Designer in the Standalone Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}).                   If you are using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) use the following select query and click Next:                 
+   >The Query Builder is part of Visual Studio and is available only in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). As of Telerik Reporting Q3 2014 SQL queries can be built in the Standalone Designer with the [Query Designer in the Standalone Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}).                   If you are using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) use the following select query and click Next:                 
 
     
       ````sql
@@ -64,7 +64,7 @@ INNER JOIN Production.ProductPhoto ON Production.ProductProductPhoto.ProductPhot
 
    + The __Configure Data Source Command__                    step would show the generated statement. Clicking the                   __Next__  button would lead you to                   the __Preview Data Source Results__                    step, where you can preview the data. Click finish to return                   to the __Choose Data Source__  page                   of the Report Wizard. On the next page choose                   __Standard Report Type__  and click the                   __Next__  button.                 
 
-   >note The [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) article provides additional steps how to use parameterized SQL query.                   
+   >The [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) article provides additional steps how to use parameterized SQL query.                   
 
 * The __Design Data Layout__  page               of the Report Wizard allows you to assign database fields               to sections of the report. The Report Wizard automatically               places and formats the database fields in the appropriate               report sections.             
 
@@ -80,7 +80,7 @@ INNER JOIN Production.ProductPhoto ON Production.ProductProductPhoto.ProductPhot
 
 * On the __Choose Report Style__                page of the Report Wizard select "Civic" from the               __Style Sheets__  list on the left               side of the page. Notice the style changes in the Preview               portion on the right side of the page.             The initial report layout appears in the design view. 
 
-   >note Notice that the wizard has automatically provided:
+   >Notice that the wizard has automatically provided:
 * Data bound fields in the detail section of the report.
 * Styled page and column titles.
 * A page footer with standard date and page number output.>

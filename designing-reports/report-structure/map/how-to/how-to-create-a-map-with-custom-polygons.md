@@ -29,7 +29,7 @@ This topic explains how to create a map that shows custom-defined shapes. The Ma
               New Mexico;POLYGON((-109.065510 37.006785,-109.051777 31.332360,-108.208414 31.333407,-108.208493 31.783783,-106.528509 31.783783,-106.645607 31.896072,-106.614021 31.921719,-106.621574 31.971244,-106.638054 31.982311,-106.618623 32.000556,-103.064750 32.000519,-103.041428 36.500404,-103.002656 36.500529,-103.002220 36.999981,-109.065510 37.006785))
             
 
-    >tip Note that the WKT consists of closed polygons (i.e. the last point coincides with the first one) that are enumerated in a counter-clockwise order.                 See the                  [OGC 10-032r8 ](https://portal.opengeospatial.org/files/?artifact_id=56866)                  specification for more information.               
+    >Note that the WKT consists of closed polygons (i.e. the last point coincides with the first one) that are enumerated in a counter-clockwise order.                 See the                  [OGC 10-032r8 ](https://portal.opengeospatial.org/files/?artifact_id=56866)                  specification for more information.               
 
     Click __Next__  when ready.             
 

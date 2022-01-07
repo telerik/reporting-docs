@@ -54,7 +54,7 @@ Furthermore, each of the steps listed above allows you additional configuration 
 
 * The client session expires within a particular time, which can be configured.                 That said, within a single client session, the same request will always return the same cached resource.               
 
-   >note An exception is the [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%})                   endpoint, which can enforce regeneration to support the Refresh Report                   functionality. To achieve that, add a useCache = false setting to the request's body.                 
+   >An exception is the [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%})                   endpoint, which can enforce regeneration to support the Refresh Report                   functionality. To achieve that, add a useCache = false setting to the request's body.                 
 
 * In some scenarios, you need to share the service with more than one app.           For these, you may need to turn on            [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors) .         
 

@@ -51,9 +51,9 @@ When the application is hosted on IIS 7+, the handler of the report viewer shoul
         Assembly="Telerik.ReportViewer.WebForms, Version=x.x.x.xxxx, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" %>
 ````
 
-   >note Note that the version of an assembly is specified in each  __```<SafeControl>```__  tag. Make sure that you input the correct version you use before proceeding.
+   >Note that the version of an assembly is specified in each  __```<SafeControl>```__  tag. Make sure that you input the correct version you use before proceeding.
 
-   >note The ReportViewer uses the session state to preserve the report instance assigned to its Report property during page postbacks and for some other design reasons as well. Thus have in mind that you should enable session state on your SharePoint server.
+   >The ReportViewer uses the session state to preserve the report instance assigned to its Report property during page postbacks and for some other design reasons as well. Thus have in mind that you should enable session state on your SharePoint server.
 
 # See Also
 

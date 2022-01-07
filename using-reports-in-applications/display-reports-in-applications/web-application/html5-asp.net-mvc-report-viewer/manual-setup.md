@@ -58,7 +58,7 @@ The following steps produce a view with settings similar to these of the local M
 <!DOCTYPE html>
 ````
 
-    >tip The above DOCTYPE directive should be considered with your custom requirements. More details about the used in the tutorial settings for the page can be found in the                      [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx)  MSDN article.                   
+    >The above DOCTYPE directive should be considered with your custom requirements. More details about the used in the tutorial settings for the page can be found in the                      [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx)  MSDN article.                   
 
 1. Initialize the browser’s viewport in the ```<head>``` element:
 
@@ -79,7 +79,7 @@ The following steps produce a view with settings similar to these of the local M
 }
 ````
 
-    >tip jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded from elsewhere in the application                     (layout page, section or bundle).                   
+    >jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded from elsewhere in the application                     (layout page, section or bundle).                   
 
 1. Add references to Telerik Kendo UI scripts and styles in the ```<head>``` element:
 
@@ -98,7 +98,7 @@ The following steps produce a view with settings similar to these of the local M
    + __Newtonsoft.Json, Version 9.0.0.0 or higher__ 
     assemblies and set their __Copy Local__  properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__ .                 
 
-    >tip Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
+    >Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
 1. Update the __web.config__  file in the __Views__  folder to                   include the __Telerik.Reporting__  and __Telerik.ReportViewer.Mvc__                    namespaces:                 
 
@@ -116,7 +116,7 @@ The following steps produce a view with settings similar to these of the local M
   </system.web.webPages.razor>
 ````
 
-    >tip Without registering the  __Telerik.Reporting__  and  __Telerik.ReportViewer.Mvc__                      namespaces you will need to use  [using Directive](https://msdn.microsoft.com/en-us/library/sf0df423.aspx)  in the view.                   
+    >Without registering the  __Telerik.Reporting__  and  __Telerik.ReportViewer.Mvc__                      namespaces you will need to use  [using Directive](https://msdn.microsoft.com/en-us/library/sf0df423.aspx)  in the view.                   
 
 1. Add references to the HTML5 Report Viewer’s JavaScript file in the view:                 
 
@@ -201,9 +201,9 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 End Code
 ````
 
-    >tip The above example uses deferred loading of the viewer to allow scripts to be handled properly,                     in case jQuery is not yet loaded on the page at the time the view is created.                     The used relative paths must be considered with the project's structure.                   
+    >The above example uses deferred loading of the viewer to allow scripts to be handled properly,                     in case jQuery is not yet loaded on the page at the time the view is created.                     The used relative paths must be considered with the project's structure.                   
 
-    >tip The viewer's  __ReportSource__  has 4 overloads allowing to specify report declaratively in code.                     The generated report's string description is sent and handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                     The above example uses UriReportSource and a path to TRDP file (report created in the Standalone Report Designer).                     This string description will be handled automatically by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver) .                   
+    >The viewer's  __ReportSource__  has 4 overloads allowing to specify report declaratively in code.                     The generated report's string description is sent and handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                     The above example uses UriReportSource and a path to TRDP file (report created in the Standalone Report Designer).                     This string description will be handled automatically by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver) .                   
 
 1. Render the deferred initialization statement for the Report Viewer scripts (remember that they must be rendered after jQuery):                   In case that you do not need the script tag to be rendered just set to false the default argument.                 
 
@@ -234,7 +234,7 @@ End Code
 </style>
 ````
 
-    >tip                   The above CSS rule will be applied on the ```<div>``` element holding the viewer object.                  The HTML elements building the viewer object will be sized based on the size of this container ```<div>``` element.                  To make the viewer fit in other container use relative position, and provide witdh and height values.                
+    >                  The above CSS rule will be applied on the ```<div>``` element holding the viewer object.                  The HTML elements building the viewer object will be sized based on the size of this container ```<div>``` element.                  To make the viewer fit in other container use relative position, and provide witdh and height values.                
 
 1. Open the layout page and call the *RenderSection*  helper method in the                   *```<head>```*  element. The method must be called for each named section in the view with the viewer -                   *scripts section*  and *styles section* .                 
 

@@ -48,7 +48,7 @@ In this article we are going to review the process of creating a report which re
 
 1. Now that the binding for the data source is set we can start writing expressions in the Table cells to display the books data.               Note that for the book authors we are using a Join() built-in function. The *authors*  value is an array of strings and we would like to show all of the               contained strings concatenated by a comma.             
 
-    >tip When using Bindings for the DataSource the data schema will not be available at design-time. It is required to write the data fields in expressions manually                 according to the used web service API.               
+    >When using Bindings for the DataSource the data schema will not be available at design-time. It is required to write the data fields in expressions manually                 according to the used web service API.               
 
   
 

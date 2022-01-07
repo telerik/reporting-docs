@@ -24,7 +24,7 @@ The __CSV Data Source Wizard__  allows you to create a new or edit an existing  
 
   ![Csv Data Source Wizard 2](images/DataSources/CsvDataSourceWizard2.png)
 
-   >note Note that if the same symbol, for example semicolon, is selected for both field and record separators this is not considered to be                 a valid CSV format. A warning will be displayed and moving forward will not be possible.               
+   >Note that if the same symbol, for example semicolon, is selected for both field and record separators this is not considered to be                 a valid CSV format. A warning will be displayed and moving forward will not be possible.               
 
 1. __Escape Format__ Choose the Escape format that is most suitable for the CSV document.               If Quotes or QuotesMixed is checked the Quote option also must be configured.               If the CSV document has comments enter the symbol which marks the start of a comment.               If nothing is set the document is considered to not have comments.             For more information regarding the Escape formats please check [CsvDataSource Escape Formats]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats%}).               
 

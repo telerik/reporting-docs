@@ -29,7 +29,7 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 <%@ServiceHost Service="Telerik.Reporting.Service.ReportService, Telerik.Reporting.Service, Version=x.x.x.x, Culture=neutral, PublicKeyToken=A9D7983DFCC261BE" %>
 ````
 
-   >note The code sample have the version listed as Version=x.x.x.x,               and you should change that with the exact assembly version               you use before proceeding.             
+   >The code sample have the version listed as Version=x.x.x.x,               and you should change that with the exact assembly version               you use before proceeding.             
 
 1. Register the Reporting Service endpoints in the web.config:
 

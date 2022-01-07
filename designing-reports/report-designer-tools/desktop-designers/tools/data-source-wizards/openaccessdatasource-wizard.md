@@ -20,18 +20,18 @@ After the __OpenAccessDataSource__  wizard appears you have to perform the follo
 
 1. __Save the connection string__ This step appears only if you have specified a new connection string in the previous one. Choose *"Yes, save the connection with the following name"*  to store the connection string in the application configuration file under a               specific name. Type a name for the connection or use the provided default name if applicable.             
 
-   >note Saving the connection string in the application configuration file simplifies the process of maintaining your application if                 the database connection changes. In the event of a change in the database connection you can edit the connection string in the                 application configuration file as opposed to editing the source code and having to recompile your application.               
+   >Saving the connection string in the application configuration file simplifies the process of maintaining your application if                 the database connection changes. In the event of a change in the database connection you can edit the connection string in the                 application configuration file as opposed to editing the source code and having to recompile your application.               
 
 1. __Choose an object context__ In this step you have to specify an existing __OpenAccessContext__  that is responsible for accessing your entity               data model. The available __OpenAccessContext__  types are organized in a hierarchical manner grouped by namespace:             
 
-   >note If the desired  __OpenAccessContext__  type does not appear in the list make sure the current project is built and                 all necessary project references are added.               
+   >If the desired  __OpenAccessContext__  type does not appear in the list make sure the current project is built and                 all necessary project references are added.               
 
 1. __Choose an object context member__ In this step you have to specify a member of the chosen __OpenAccessContext__  that is responsible for data               retrieval. You can choose either a property that returns the desired entities directly or a method that               executes some business logic against the __Open Access__  model to obtain the required data for the report.             
 
-   >note If the chosen member does not have any parameters, this is the last step of the wizard. However, if                 the specified member is a method with parameters, the next step allows you to configure those parameters.               
+   >If the chosen member does not have any parameters, this is the last step of the wizard. However, if                 the specified member is a method with parameters, the next step allows you to configure those parameters.               
 
 1. __Configure data source parameters__ Each argument of the selected method corresponds to a data source parameter. This step allows you to               specify for each parameter a constant value, an expression, or create a new __ReportParameter__  and the expression               will be set automatically to it.             
 
-   >note The names and types of the defined parameters should match exactly the arguments of the selected method.                 In case this requirement is not fulfilled the  __OpenAccessDataSource__  component will not be able to resolve or call                 correctly the method and will raise an exception at runtime.               
+   >The names and types of the defined parameters should match exactly the arguments of the selected method.                 In case this requirement is not fulfilled the  __OpenAccessDataSource__  component will not be able to resolve or call                 correctly the method and will raise an exception at runtime.               
 
 This is the last step of the wizard. After pressing the __Finish__  button the wizard will configure the           __OpenAccessDataSource__  component with the specified settings and close.         

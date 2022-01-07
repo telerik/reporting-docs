@@ -32,7 +32,7 @@ Adding gridlines makes it easier to view and evaluate data within your graph.
 
 1. Click the gridlines that you want to modify.    The selected gridlines properties are listed in the __Property Browser__ .
 
-    >tip                     If you are using the standalone report designer you can take advantage of the ribbon format and graph tools.                
+    >                    If you are using the standalone report designer you can take advantage of the ribbon format and graph tools.                
 
 1. Setup the gridlines properties according to your requirements.                 
 

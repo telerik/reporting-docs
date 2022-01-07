@@ -105,7 +105,7 @@ The design time editor supports two modes:
 
 1. Interactive (__Design view__ ) - you can select a portion of the text and make it bold, change its font, size, color, etc.               using appropriate controls like comboboxes and buttons (WYSIWYG editor). Internally, the designer generates a               valid HTML source and stores it in the Value property of the item. Adding embedded expressions is possible, but               the entire HTML value cannot be an expression. You can switch to __HTML view__  at any time if needed.             
 
-   >note Pressing the Enter key inserts a new paragraph or new list item depending on the current context.                 Note that it does NOT insert ```<br />``` (new line). To insert new line, use the button on the toolbar)                 
+   >Pressing the Enter key inserts a new paragraph or new list item depending on the current context.                 Note that it does NOT insert ```<br />``` (new line). To insert new line, use the button on the toolbar)                 
 
   ![Html Text Box Design View](images/HtmlTextBox_DesignView.png)
 

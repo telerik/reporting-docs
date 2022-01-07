@@ -38,7 +38,7 @@ The following actions are performed on displaying a report in the HTML5 Report V
 
 The communication between the HTML5 Viewer and Reporting REST Service happens via AJAX requests.           More details about the type of each request to the service can be found in the           [REST API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%}).          
 
->note If you connect a [WinForms ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%}) or             [WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service%}) to a Reporting REST Service instance,             there will be a new ClientId generated on each request sent by the desktop viewer.           
+>If you connect a [WinForms ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%}) or             [WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service%}) to a Reporting REST Service instance,             there will be a new ClientId generated on each request sent by the desktop viewer.           
 
 ## 
 
@@ -52,6 +52,6 @@ Important cache management related properties of the IReportServiceConfiguration
 
 * __[ReportSharingTimeout](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration#Telerik_Reporting_Services_IReportServiceConfiguration_ReportSharingTimeout) property__ Gets or sets a value in minutes indicating how long a rendered report document from a client will be available to be reused,               by the current and other clients which request the same report, with the same report parameter values, and in the same rendering format.               When a report is rendered once for a given set of report parameter values, it can be reused for the               time set as ReportSharingTimeout. Setting the ReportSharingTimeout to zero (default) will cause each client request for a report to produce a               new report document instead of reusing an already rendered document.             
 
-   >note When you navigate to reports via [NavigateToReportAction]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})                 the Reporting engine always creates a new instance of the target report.               
+   >When you navigate to reports via [NavigateToReportAction]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})                 the Reporting engine always creates a new instance of the target report.               
 
 

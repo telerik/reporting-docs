@@ -45,7 +45,7 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
 </configuration>
 ````
 
->note  [Redirecting Assembly Versions](http://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx)  is a standard .NET technique for resolving assembly versions conflicts.  __Visual Studio 2013__  allows automatic binding redirects. For more details check MSDN:  [How to: Enable and Disable Automatic Binding Redirection](http://msdn.microsoft.com/en-us/library/2fc472t2(v=vs.110).aspx) .           
+> [Redirecting Assembly Versions](http://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx)  is a standard .NET technique for resolving assembly versions conflicts.  __Visual Studio 2013__  allows automatic binding redirects. For more details check MSDN:  [How to: Enable and Disable Automatic Binding Redirection](http://msdn.microsoft.com/en-us/library/2fc472t2(v=vs.110).aspx) .           
 
 ## How to add the WPF ReportViewer to the toolbox
 

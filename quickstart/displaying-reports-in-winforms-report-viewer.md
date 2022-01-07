@@ -52,7 +52,7 @@ __How to display a report in the Windows Forms Report Viewer:__
 
 1. In the Properties Window for the report viewer, open the __ReportSource__  dialog, select               __Instance Report Source__  and select the report we created in the class library.             
 
-   >note Once an instance report                 is selected, notice that a component representing the report appears in                 the tray below Windows form designer. The component allows you to                 access the properties of the report in your report viewing application,                 providing access to report parameters, styles and page                 settings.               
+   >Once an instance report                 is selected, notice that a component representing the report appears in                 the tray below Windows form designer. The component allows you to                 access the properties of the report in your report viewing application,                 providing access to report parameters, styles and page                 settings.               
 
 1. Add a call to the RefreshReport() method of the viewer in the form Load event:             
 

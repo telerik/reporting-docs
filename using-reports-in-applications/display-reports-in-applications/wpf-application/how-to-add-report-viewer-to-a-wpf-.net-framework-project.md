@@ -52,7 +52,7 @@ If the selected engine is __REST Service__  additionally it will do the followin
 
 * 
 
-   >note In some cases the solution must be rebuilt in order to invalidate the NuGet packages and start the REST service project correctly.               
+   >In some cases the solution must be rebuilt in order to invalidate the NuGet packages and start the REST service project correctly.               
 
 # See Also
 

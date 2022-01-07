@@ -82,9 +82,9 @@ End Class
 
     The provided sample implementation will resolve .trdp|.trdx report definitions from the               /*Reports*  subfolder of the hosting ASP.NET application root. Another option is to reference               a reports library and provide report                [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)                from the service clients.             
 
-    >tip Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.               
+    >Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.               
 
-    >tip The above implementation uses the  [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage)                  method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default                  __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                 specify a folder, and it is recommended for usage in production environment.               
+    >The above implementation uses the  [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage)                  method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default                  __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                 specify a folder, and it is recommended for usage in production environment.               
 
         __To configure the Telerik Reporting REST service from the application configuration file__ , set the value of the                [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)  property to an instance of the                [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)  class.             
 

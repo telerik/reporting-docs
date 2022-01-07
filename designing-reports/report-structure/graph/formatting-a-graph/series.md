@@ -34,7 +34,7 @@ Each data point has graphical representation in accordance with the selected cha
 
 1. Set the type of the marker from the drop-down menu. Set the __MarkerSize__  properties if necessary.                 
 
-    >tip Note that only the marker types that form a closed contour support  __BackgroundImage__ . The markers                   that consists only of lines (i.e.  __X__ ,  __Plus__ ,  __Minus__ )                   will not render a background image if set.                 
+    >Note that only the marker types that form a closed contour support  __BackgroundImage__ . The markers                   that consists only of lines (i.e.  __X__ ,  __Plus__ ,  __Minus__ )                   will not render a background image if set.                 
 
 ## Formatting data point labels
 

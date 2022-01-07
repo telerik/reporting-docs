@@ -26,7 +26,7 @@ You can connect to a SQL database using the Telerik         __SqlDataSource__  c
 
 1. Click __Build New Data Connection__  to add the connection string to the SQL database:             
 
-    >tip The  __Data provider__  drop-down lists the installed and registered on the machine .NET data providers.                 The .NET data provider determines the syntax of connection string, the syntax of SQL query,                 and what ADO.NET classes will be used by the SqlDataSource component to create a connection and to execute the SQL command.               The .NET data provider must be considered with the type of the SQL database you intend to use.
+    >The  __Data provider__  drop-down lists the installed and registered on the machine .NET data providers.                 The .NET data provider determines the syntax of connection string, the syntax of SQL query,                 and what ADO.NET classes will be used by the SqlDataSource component to create a connection and to execute the SQL command.               The .NET data provider must be considered with the type of the SQL database you intend to use.
 
    1. Open the __Data provider__  drop-down and select the .NET data provider suitable for the target SQL database.                 
 
@@ -42,7 +42,7 @@ You can connect to a SQL database using the Telerik         __SqlDataSource__  c
 
    + __Select or enter a database name:__  The option depends on the selected .NET data provider and the required attributes for building the connection string.                       If the option is visible, enter a valid database on the server e.g. __AdventureWorks__  (MSSQL database used by Telerik Reporting local examples).                     At the end, click __Test connection__  to verify that your connection works.                   Click __OK__ . You should see the connection string's attributes written in the __Connection string__  text-box.                 
 
-   >note Not all connection strings can be built with the  __Connection Properties__  dialog,                     and in such cases the  __Build...__  button remains disbled. The connection string will have to be typed manually.                   
+   >Not all connection strings can be built with the  __Connection Properties__  dialog,                     and in such cases the  __Build...__  button remains disbled. The connection string will have to be typed manually.                   
     For our tutorial we will connect to AdventureWorks database installed on MSSQL server instance:
    1. Select __Build new data connection__ .                 
 
@@ -72,7 +72,7 @@ You can connect to a SQL database using the Telerik         __SqlDataSource__  c
    + __Stored Procedure:__  Use this option to select a stored procedure existing in the connected SQL database.                   If the stored procedure is not discovered, you can type its name manually e.g. *dbo.GetNotes* .                 
     In this tutorial we will use the __Select Statement__  option. Type the following SQL query:                 SELECT * FROM [HumanResources].[Department] WHERE [HumanResources].[Department].[DepartmentID]=@ID
 
-    >tip If the SQL query returns more than one set of data, only the first result will be used.Test running the SQL query on the SQL server database to verify the syntax.
+    >If the SQL query returns more than one set of data, only the first result will be used.Test running the SQL query on the SQL server database to verify the syntax.
 
 1. If the entered SQL query contains SQL parameters, recognizable by the .NET data provider, clicking the Next button will navigate you to the               __Configure data source parameters__  step. You should see listed the recognized SQL parameters and their DbType in a grid.               In the Value column you can specify static value, report parameter, field, or other expression which once evaluated will be passed to the SQL query.                 In this tutorial we use a parameterized SQL query and you should see the __Configure data source parameters__  window of the wizard.               There must be one row in the grid:             
    + __Name__  showing the SQL parameter's name, written in TSQL: __@ID__ ;                 

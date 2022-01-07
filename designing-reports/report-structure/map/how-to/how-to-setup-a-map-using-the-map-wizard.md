@@ -61,7 +61,7 @@ AND PC.Name = 'Bikes'
 
 1. In the next page you have to select the fields which will be used to build the map charts.             
 
-    >tip Since the map will use a Location Provider, there is no need to provide the  __Latitude__  and  __Longitude__  coordinates by yourself, so you can                 left these boxes empty and just define a location group, which will set the geocoding string.               
+    >Since the map will use a Location Provider, there is no need to provide the  __Latitude__  and  __Longitude__  coordinates by yourself, so you can                 left these boxes empty and just define a location group, which will set the geocoding string.               
 
    + Select the __Pie Chart__  radiobutton from the *Datapoints type*  box.                 
 

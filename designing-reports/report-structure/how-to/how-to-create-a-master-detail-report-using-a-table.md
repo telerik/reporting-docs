@@ -76,5 +76,5 @@ Click the Preview button to preview the report.           Notice that product nu
 
   ![Master Detail Table 0002](images/MasterDetailTable0002.png)
 
->note The same report layout can be created with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).           
+>The same report layout can be created with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).           
 

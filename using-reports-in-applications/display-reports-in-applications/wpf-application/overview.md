@@ -60,7 +60,7 @@ In order to use the WPF Report Viewer, you need a WPF application.           In
 
 * .NET Framework 4 or above.             
 
-   >note .NET Framework 4  __Client Profile__  is not supported               
+   >.NET Framework 4  __Client Profile__  is not supported               
 
 * (optional) Expression Blend             
 

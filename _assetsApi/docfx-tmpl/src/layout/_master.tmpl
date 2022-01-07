@@ -1,0 +1,57 @@
+﻿{{!include(/^styles/.*/)}}
+{{!include(/^fonts/.*/)}}
+{{!include(favicon.ico)}}
+{{!include(logo.svg)}}
+{{!include(search-stopwords.json)}}
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  {{>partials/head}}
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    {{^_disableNavbar}}
+    {{>partials/navbar}}
+    {{/_disableNavbar}}
+    <div id="wrapper">
+      <header>
+        {{^_disableBreadcrumb}}
+        {{>partials/breadcrumb}}
+        {{/_disableBreadcrumb}}
+      </header>
+      {{#_enableSearch}}
+      <div class="container-fluid body-content">
+        {{>partials/searchResults}}
+      </div>
+      {{/_enableSearch}}
+      <div role="main" class="container-fluid body-content hide-when-search">
+      {{^_disableToc}}
+        {{>partials/toc}}
+        <div class="article row grid-right">
+      {{/_disableToc}}
+      {{#_disableToc}}
+        <div class="article row grid">
+        {{/_disableToc}}
+          {{#_disableAffix}}
+          <div class="col-md-12">
+          {{/_disableAffix}}
+          {{^_disableAffix}}
+          <div class="col-md-9">
+          {{>partials/docsearch}}
+          {{/_disableAffix}}
+            <article class="content wrap" id="_content" data-uid="{{uid}}">
+                {{!body}}
+            </article>
+          </div>
+          {{^_disableAffix}}
+          {{>partials/affix}}
+          {{/_disableAffix}}
+        </div>
+      </div>
+	  <div id="push"></div>
+    </div>
+		{{^_disableFooter}}
+      {{>partials/footer}}
+      {{/_disableFooter}}
+    {{>partials/scripts}}
+	<script src="https://da189i1jfloii.cloudfront.net/js/kinvey-html5-sdk-3.10.1.min.js"></script>
+  </body>
+</html>

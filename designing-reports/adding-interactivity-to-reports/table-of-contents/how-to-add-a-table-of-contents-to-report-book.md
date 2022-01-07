@@ -10,7 +10,7 @@ position: 4
 
 # How to Add a Table of Contents to Report Book
 
-You can add a table of contents to the report book and click on entries in the table of contents to jump         to specific areas within any report.       
+You can add a table of contents to the report book and click on entries in the table of contents to jump to specific areas within any report.       
 
 ## Adding a table of contents to a Report Book
 

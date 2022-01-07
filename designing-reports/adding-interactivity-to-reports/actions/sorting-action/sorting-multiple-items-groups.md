@@ -11,7 +11,6 @@ position: 6
 # Sorting Multiple Items/Groups
 
 
-
 Prerequisites:       
 
 * Reporting installation with the Examples feature          			
@@ -24,13 +23,12 @@ The examples are located in (Replace: Reporting X with your installation version
 
 * Visual Studio Integrated Designer – %PROGRAMFILES(x86)%\Reporting X\Examples\CSharp\         			
 
-## 
 
 Add an interactive sorting button to a parent for all targets item to enable a user to click the item adorner and sort the target data items/groups by the selected expression.          	
 
 1. Open in report design view the Dashboard example report.         		
 
-1. Select item to which you want to add an interactive sorting button.          		The selected item should be parent to the target groups/data items.         		For this how to use the report header section text box with Quaterly Sales text.         		
+1. Select item to which you want to add an interactive sorting button. The selected item should be parent to the target groups/data items. For this how to use the report header section text box with Quaterly Sales text.         		
 
 1. From __Properties window__  open the __Actions__  editor.         		
 
@@ -50,7 +48,7 @@ Add an interactive sorting button to a parent for all targets item to enable a u
 
 1. Click __OK__ .         		
 
-1. In Sort expressions drop-down select the field or write expression for which you are defining a sorting action          		In this case you have to use =Sum(Fields.LineTotal)         		Specifying a sort expression is required.
+1. In Sort expressions drop-down select the field or write expression for which you are defining a sorting action In this case you have to use =Sum(Fields.LineTotal) Specifying a sort expression is required.
 
 1. Click __OK__ .         		
 

@@ -10,7 +10,7 @@ position: 3
 
 # How to Add a Table group to Document Map
 
-A user can click items in the document map to jump      	to areas within a report.
+A user can click items in the document map to jump to areas within a report.
 
 ## Adding a Table group to document map
 

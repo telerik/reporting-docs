@@ -10,7 +10,7 @@ position: 1
 
 # How to Add a Report Item to Document Map
 
-You can add a document map, which acts like a table of contents. A user can click items in the document map to jump      	to areas within a report.
+You can add a document map, which acts like a table of contents. A user can click items in the document map to jump to areas within a report.
 
 ## Adding a report item to document map
 

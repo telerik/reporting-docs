@@ -10,9 +10,9 @@ position: 0
 
 # Display Reports in Applications Overview
 
-We provide UI components called Report Viewers that you can use to display reports in applications. The Report Viewers cover various technologies         (Angular, HTML5/JS, WPF, ASP.NET, Windows Forms, etc.) and allow you to display a report document in the application's UI and to interact with it.       
+We provide UI components called Report Viewers that you can use to display reports in applications. The Report Viewers cover various technologies (Angular, HTML5/JS, WPF, ASP.NET, Windows Forms, etc.) and allow you to display a report document in the application's UI and to interact with it.       
 
-This document provides a brief overview of the different Telerik Report Viewer flavors. If you are interested in the Report Viewer for a specific technology,         follow the corresponding link to learn more.         
+This document provides a brief overview of the different Telerik Report Viewer flavors. If you are interested in the Report Viewer for a specific technology, follow the corresponding link to learn more.         
 
 ## Report Viewers Overview
 
@@ -49,7 +49,7 @@ This document provides a brief overview of the different Telerik Report Viewer f
   The WinForms Report Viewer is suitable for WinForms and WPF projects. The viewer is built with standard Microsoft controls. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](http://www.telerik.com/report-server).             
 
 * [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})  
-  The WPF Report Viewer is suitable for WPF and WinForms projects. The viewer is built with Telerik UI for WPF controls providing better               look and feel, and functionality. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](http://www.telerik.com/report-server).             
+  The WPF Report Viewer is suitable for WPF and WinForms projects. The viewer is built with Telerik UI for WPF controls providing better look and feel, and functionality. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](http://www.telerik.com/report-server).             
 
 * [Silverlight Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})  
   The Silverlight Report Viewer is suitable for Silverlight projects. The viewer is built with Telerik UI for Silverlight controls providing better look and feel, and functionality. The viewer operates as a client of [Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}).             

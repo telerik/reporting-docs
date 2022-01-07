@@ -11,8 +11,7 @@ position: 5
 # Table Header Freezing
 
 
-
-Freezing the table headers prevents the row and column headers of a table from scrolling out of view while examining extensive data of a report document.         All HTML5-based report viewers provide support for freezing in Interactive rendering mode and all report designers provide support for enabling the functionality.         Header freezing is supported also in Web Report Designer Preview mode.       
+Freezing the table headers prevents the row and column headers of a table from scrolling out of view while examining extensive data of a report document. All HTML5-based report viewers provide support for freezing in Interactive rendering mode and all report designers provide support for enabling the functionality. Header freezing is supported also in Web Report Designer Preview mode.       
 
 ## Settings in the Report Designers
 
@@ -40,7 +39,7 @@ The HTML5 Viewer automatically applies the freeze functionality in __[Interactiv
 
 If the cells of the table headers have no or transparent background color, in order to preserve readability, their parent's background color           is applied to them while scrolling.         
 
-When *PageBreak*  is set to a group, FreezeRowHeaders and FreezeColumnHeaders will work only if           *RowHeadersPrintOnEveryPage*  and *ColumnHeadersPrintOnEveryPage* , respectively, are also set to true.           Otherwise, the headers will be frozen only on the first page.         
+When *PageBreak*  is set to a group, FreezeRowHeaders and FreezeColumnHeaders will work only if *RowHeadersPrintOnEveryPage*  and *ColumnHeadersPrintOnEveryPage* , respectively, are also set to true. Otherwise, the headers will be frozen only on the first page.         
 
 Even though the List report item has FreezeRowHeaders and FreezeColumnHeaders in the Properties pane, it doesn't have any headers           and therefore, this feature is not applicable to it.         
 

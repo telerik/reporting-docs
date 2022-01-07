@@ -28,4 +28,4 @@ Report Books can be created either at design-time or on the fly at run-time. Fol
 
   ![](images/reportbook2.png)
 
-1. Select the ReportViewer control and click on the ellipsis of its "ReportSource" property in the Properties Window and choose object instance.             The report book component that you added in the previous step should be listed under the "Select Report Document" dialog.           
+1. Select the ReportViewer control and click on the ellipsis of its "ReportSource" property in the Properties Window and choose object instance. The report book component that you added in the previous step should be listed under the "Select Report Document" dialog.           

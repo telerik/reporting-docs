@@ -13,7 +13,7 @@ position: 2
 
 ## Report Book Paging
 
-Reports are displayed in the order they were added to the     	report book, each report starting on a new page. The way pages are counted (the evaluation of the 'PageNumber' global object) may be different in the context of a report book compared to counting pages in a single report. The Report class has a property of type __PageNumberingStyle__  that will let you control the behavior of page counting in the context of a report book.
+Reports are displayed in the order they were added to the report book, each report starting on a new page. The way pages are counted (the evaluation of the 'PageNumber' global object) may be different in the context of a report book compared to counting pages in a single report. The Report class has a property of type __PageNumberingStyle__ that will let you control the behavior of page counting in the context of a report book.
 
 >note The  __PageNumberingStyle__  property has meaning and effect only when the report is part of a report book.
 

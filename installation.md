@@ -14,13 +14,13 @@ position: 3
 
 Telerik Reporting supports several approaches for installing the product.       
 
-*  [                 Downloading Telerik Control Panel               ](http://www.telerik.com/blogs/optimizing-use-of-the-telerik-control-panel) −To download and install the Control Panel, log into your              [Telerik account](https://www.telerik.com/account/) . Telerik Control Panel uses the product MSI file.           
+*  [Downloading Telerik Control Panel](http://www.telerik.com/blogs/optimizing-use-of-the-telerik-control-panel) − To download and install the Control Panel, log into your[Telerik account](https://www.telerik.com/account/). Telerik Control Panel uses the product MSI file.           
 
-*  [                 Using the Telerik NuGet private feed               ](https://nuget.telerik.com/v3/index.json) −The Telerik Reporting NuGet packages contain the libraries for .NET Core projects, the Reporting Engine, and the implementation of the             [Reporting REST WebAPI-based service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) where you can use the packages             with the standard .NET 4.6.1 framework. The NuGet packages do not include design-time support. To install the Telerik Reporting NuGet packages, log into your              [Telerik account](https://www.telerik.com/account/) .           
+*  [Using the Telerik NuGet private feed](https://nuget.telerik.com/v3/index.json) −The Telerik Reporting NuGet packages contain the libraries for.NET Core projects, the Reporting Engine, and the implementation of the[Reporting REST WebAPI-based service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) where you can use the packages with the standard.NET 4.6.1 framework. The NuGet packages do not include design-time support. To install the Telerik Reporting NuGet packages, log into your [Telerik account](https://www.telerik.com/account/).           
 
-   >note The legacy https://nuget.telerik.com/nuget server will be deprecated. Make sure to switch to the new               https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client.             For more information on how to add a NuGet feed, refer to the              [official Microsoft documentation](https://www.visualstudio.com/en-us/docs/package/nuget/consume) .           
+   >note The legacy https://nuget.telerik.com/nuget server will be deprecated. Make sure to switch to the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client. For more information on how to add a NuGet feed, refer to the [official Microsoft documentation](https://www.visualstudio.com/en-us/docs/package/nuget/consume).           
 
-* Using the MSI installer−MSI files handle the automatic local installation of the product and its storing into a             __Program Files__  > __Progress__  folder. They also create the necessary             virtual folders and projects, and provide all required files for developing with Telerik Reporting.           
+* Using the MSI installer−MSI files handle the automatic local installation of the product and its storing into a __Program Files__  > __Progress__  folder. They also create the necessary virtual folders and projects, and provide all required files for developing with Telerik Reporting.           
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Telerik Reporting supports several approaches for installing the product.
 
 To install Telerik Reporting through the MSI automatic installer file:         
 
-1. Log into your                [Telerik account](https://www.telerik.com/account) .             
+1. Log into your [Telerik account](https://www.telerik.com/account).             
 
 1. Click the __Downloads__  tab to view the available trial and commercial products.             
 
@@ -40,15 +40,15 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. Download the automatic installation MSI file.
 
-1. When the download completes, run `                 Telerik_Reporting_[suiteversion].msi               ` and follow the instructions of the Wizzard.             
+1. When the download completes, run ` Telerik_Reporting_[suiteversion].msi ` and follow the instructions of the Wizzard.             
 
 To access internal builds:         
 
-1. Log into your                [Telerik account](https://www.telerik.com/account) .             
+1. Log into your [Telerik account](https://www.telerik.com/account).             
 
-1. For the latest internal builds, navigate to __Latest Internal Build__  under __Downloads__ .               For internal builds from earlier releases, select the respective Telerik Reporting version.             
+1. For the latest internal builds, navigate to __Latest Internal Build__  under __Downloads__. For internal builds from earlier releases, select the respective Telerik Reporting version.             
 
->note The  __Downloads__  page lists previously downloaded products. For any missing products or product versions,             contact the Sales team through the support ticketing system by submitting a              [__General Feedback__](https://www.telerik.com/account/support-tickets/general-feedback)  thread.           
+>note The  __Downloads__  page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [__General Feedback__](https://www.telerik.com/account/support-tickets/general-feedback)  thread.           
 
 
 ## Installing Telerik Reporting
@@ -59,19 +59,19 @@ To access internal builds:
 
 1. In the next customization dialog, select the desired features.             
 
-   + If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the                   __Examples__  dialog option will be installed but the configuration files for the application will not have valid connection strings.                   However, you can still access the working demos on the                    [                       Telerik Reporting Demos page                     ](http://demos.telerik.com/reporting) .                 
+   + If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the __Examples__  dialog option will be installed but the configuration files for the application will not have valid connection strings. However, you can still access the working demos on the [Telerik Reporting Demos page](http://demos.telerik.com/reporting).                 
 
-   + To set up the examples and the used connection string, select __Examples Setup__ . All local SQL Server 2005+ instances are supported.                 
+   + To set up the examples and the used connection string, select __Examples Setup__. All local SQL Server 2005+ instances are supported.                 
 
-   + The examples use the MS SQL Server  [AdventureWorks database](http://msdn.microsoft.com/en-us/library/ms124659%28SQL.100%29.aspx) .                   Unless already available on your machine, the AdventureWorks database will also be deployed locally.                 
+   + The examples use the MS SQL Server [AdventureWorks database](http://msdn.microsoft.com/en-us/library/ms124659%28SQL.100%29.aspx). Unless already available on your machine, the AdventureWorks database will also be deployed locally.                 
 
-   + Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to                   __[InstallDir]/Examples/Data/AdventureWorks OLTP__ .                   For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';`                   statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                   
+   + Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to __[InstallDir]/Examples/Data/AdventureWorks OLTP__. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                   
 
   ![](images/installWizard2.png)
 
-1. (Applicable only if __Examples Setup__  was selected) In the __Setup Wizard__  dialog, select your               __Database Server__  and the authentication for the connection.               The Wizard detects all running instances and lists them in the input field.             
+1. (Applicable only if __Examples Setup__  was selected) In the __Setup Wizard__  dialog, select your __Database Server__  and the authentication for the connection. The Wizard detects all running instances and lists them in the input field.             
 
-   >note To enable the Wizard to detect all running SQL Server instances, run the                  [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx) .                 
+   >note To enable the Wizard to detect all running SQL Server instances, run the [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).                 
 
   ![](images/installWizard3.png)
 
@@ -79,23 +79,23 @@ To access internal builds:
 
 By default, the Wizard installs Telerik Reporting in the following locations:         
 
-* For 64-bit machines, in `                 C:\Program Files\Progress\Telerik Reporting {{site.suiteversion}}`.             
+* For 64-bit machines, in ` C:\Program Files\Progress\Telerik Reporting {{site.suiteversion}}`.             
 
-* For 32-bit machines, in `                 C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}`.             
+* For 32-bit machines, in ` C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}`.             
 
-The assemblies targeting different versions of .NET are placed in separate folders, as shown in the list below:         
+The assemblies targeting different versions of.NET are placed in separate folders, as shown in the list below:         
 
-* .NET Framework - *\Bin* 
+*.NET Framework - *\Bin* 
 
-* .NET Standard - *\Bin\netstandard2.0* 
+*.NET Standard - *\Bin\netstandard2.0* 
 
-* .NET Core - *\Bin\netcoreapp3.1* 
+*.NET Core - *\Bin\netcoreapp3.1* 
 
-* .NET 5 - *\Bin\net5.0*  and *\Bin\net5.0-windows* 
+*.NET 5 - *\Bin\net5.0*  and *\Bin\net5.0-windows* 
 
-* .NET 6 - *\Bin\net6.0*  and *\Bin\net6.0-windows* 
+*.NET 6 - *\Bin\net6.0*  and *\Bin\net6.0-windows* 
 
->important Since .NET 6 is currently available as a Preview, compiling a .NET 6 application requires installing the latest              [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)  and using              [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/)              , or allowing to use the previews of the .NET SDK in the  __Tools/Environment/Preview Features__  in Visual Studio 2019.           
+>important Since.NET 6 is currently available as a Preview, compiling a.NET 6 application requires installing the latest [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)  and using [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/), or allowing to use the previews of the.NET SDK in the  __Tools/Environment/Preview Features__  in Visual Studio 2019.           
 
 
 The following tables describe the folder structure for the redistributable assemblies.         
@@ -112,8 +112,6 @@ The following tables describe the folder structure for the redistributable assem
 |`...Progress\Telerik Reporting{{site.suiteversion}}\Bin\net6.0-windows`|* `Telerik.ReportViewer.WinForms.dll`<br/>* `Telerik.ReportViewer.Wpf.dll`<br/>* `Telerik.ReportViewer.Wpf.Themes.dll`|
 
 
-
-
 The following table describes the folder structure for the installed samples.         
 
 
@@ -125,8 +123,6 @@ The following table describes the folder structure for the installed samples.
 |`...Progress\Telerik Reporting{{site.suiteversion}}\Examples\VB`|The VB example solutions|
 
 
-
-
 The following table describes the folder structure for the Standalone Report Designer.         
 
 
@@ -134,8 +130,6 @@ The following table describes the folder structure for the Standalone Report Des
 | ------ | ------ |
 |`...Progress\Telerik Reporting{{site.suiteversion}}\Report Designer`|The Standalone Report Designer.|
 |`...Progress\Telerik Reporting{{site.suiteversion}}\Report Designer\Examples`|The example reports|
-
-
 
 
 The following table describes the folder structure for miscellaneous ReportViewers files.         
@@ -148,14 +142,10 @@ The following table describes the folder structure for miscellaneous ReportViewe
 |`...Progress\Telerik Reporting{{site.suiteversion}}\Wpf\Themes`|WPF Report Viewer themes|
 
 
-
-
 The following table describes the folder structure for miscellaneous administrative utilities.         
 
 
 | Directory | Description |
 | ------ | ------ |
 |`...Progress\Telerik Reporting{{site.suiteversion}}\Tools`|The Database Cache Configurator|
-
-
 

@@ -11,7 +11,6 @@ position: 5
 # Sorting Report Details
 
 
-
 Prerequisites:       
 
 * Reporting installation with the Examples feature          			
@@ -24,7 +23,6 @@ The examples are located in (Replace: Reporting X with your installation version
 
 * Visual Studio Integrated Designer – %PROGRAMFILES(x86)%\Reporting X\Examples\CSharp\         			
 
-## 
 
 Add an interactive sorting button to a page, group or report header item to enable a user to click the item adorner and sort the report details by the selected expression.          	
 
@@ -44,7 +42,7 @@ Add an interactive sorting button to a page, group or report header item to enab
 
 1. Click __OK__ .         		
 
-1. In Sort expressions drop-down select the field or write expression for which you are defining a sorting action          		For our example set the expression to =Fields.OrderQty         		Specifying a sort expression is required.
+1. In Sort expressions drop-down select the field or write expression for which you are defining a sorting action For our example set the expression to =Fields.OrderQty Specifying a sort expression is required.
 
 1. Click __OK__ .         		
 

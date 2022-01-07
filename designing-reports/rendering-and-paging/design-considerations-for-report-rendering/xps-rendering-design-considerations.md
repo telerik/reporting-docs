@@ -11,7 +11,6 @@ position: 7
 # XPS Rendering Design Considerations
 
 
-
 The XPS Rendering Extension of Telerik Reporting produces XPS files that comply with version 1.0 of the XML Paper Specification.
 
 An XPS document is a paginated set of related pages. The pages have a fixed layout, are organized into one or more fixed documents, and stored according to the Open Packaging Conventions. The file can be opened with the built-in XPS viewer in Windows Vista or later.  

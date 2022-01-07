@@ -12,15 +12,15 @@ position: 2
 
 
 
-Pagination refers to the number of pages within a report and how report items are arranged on these pages. Pagination varies         depending on the used renderer, page break and keep-together options you configure the report to use.       
+Pagination refers to the number of pages within a report and how report items are arranged on these pages. Pagination varies depending on the used renderer, page break and keep-together options you configure the report to use.       
 
-A successfully designed report that         is optimized for the renderer that you plan to use to deliver your report, requires understanding of the rules used to control pagination.       
+A successfully designed report that is optimized for the renderer that you plan to use to deliver your report, requires understanding of the rules used to control pagination.       
 
 This topic discusses the impact of the physical page size and the report layout on how page break renderers render the report.
 
 ## Page Setup
 
-When you render a report you can specify page setup options at run-time or design-time. Some of these options can be changed           by the user using the Page Setup dialog. Page setup options apply to all report output types.         
+When you render a report you can specify page setup options at run-time or design-time. Some of these options can be changed by the user using the Page Setup dialog. Page setup options apply to all report output types.         
 
 ### Page Settings
 
@@ -38,7 +38,6 @@ The PageSettings property of the Report object allows you to customize the follo
 | __BackgroundColor, BackgroundImage__ |Define color or image that is applied on the whole physical page and repeats for each physical page.|
 | __BorderStyle, BorderWidth, BorderColor__ |Define style, width and color for the border that can be drawn around the space available for content in the physical page. The space is defined by the                     PaperKind, PaperSize, Landscape and Margins properties.|
 | __Watermarks__ |Typically used to designate a document's status e.g. draft or for internal distribution only. They are commingled with the report content, making them next to impossible to ignore|
-
 
 
 

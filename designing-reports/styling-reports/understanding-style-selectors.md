@@ -11,7 +11,6 @@ position: 1
 # Understanding Style Selectors
 
 
-
 Style Selectors are used to define how a style will be applied globally to items in a report. Each Style Rule that you create (either in code or using the StyleRule Collection Editor) must be created as one of the following four selectors:
 
 * __TypeSelector__ 
@@ -26,7 +25,7 @@ Style Selectors are used to define how a style will be applied globally to item
 
 ### TypeSelector
 
-A __TypeSelector__  applies to all report items of a particular type, for example a __Telerik.Reporting.TextBox__  or a __Telerik.Reporting.PageFooterSection__ .
+A __TypeSelector__  applies to all report items of a particular type, for example a __Telerik.Reporting.TextBox__  or a __Telerik.Reporting.PageFooterSection__.
 
 
 When a style is defined as a __TypeSelector__ , the formatting for that style is automatically applied to all items on the report that match the type.
@@ -35,7 +34,7 @@ When a style is defined as a __TypeSelector__ , the formatting for that style is
 
 An __AttributeSelector__  applies to all report items with a particular attribute (such as Color=Red). 
 
-Using an __AttributeSelector__ Style Rule, you could specify that any report item on the report that has children (for example. where the value of the __HasChildren__  property is equal to __True__ ) should be __Bold__ .
+Using an __AttributeSelector__ Style Rule, you could specify that any report item on the report that has children (for example. where the value of the __HasChildren__  property is equal to __True__ ) should be __Bold__.
 
 ### StyleSelector
 
@@ -43,11 +42,11 @@ A __StyleSelector__  applies to all report items with a particular style name. W
 
 ### DescendantSelector
 
-A __DescendantSelector__  applies to all parent/child report item combinations. The actual Style Rule for the child can be specified by any type of __Selector__ . 
+A __DescendantSelector__  applies to all parent/child report item combinations. The actual Style Rule for the child can be specified by any type of __Selector__. 
 
-For example, you can specify that any __TextBox__  that exists inside of a __ReportHeaderSection__  should have a particular style using a __TypeSelector__  within the __DescendantSelector__ . 
+For example, you can specify that any __TextBox__  that exists inside of a __ReportHeaderSection__  should have a particular style using a __TypeSelector__  within the __DescendantSelector__. 
 
-Alternatively, you can create multiple __StyleSelector__ Style Rules with the same Name and that descend from different report item types, such as __DetailSection__  or __GroupSection__ . Report items with this Name value in their __StyleName__  property will apply the correct style based on where they are placed in the report , even if they are moved.
+Alternatively, you can create multiple __StyleSelector__ Style Rules with the same Name and that descend from different report item types, such as __DetailSection__  or __GroupSection__. Report items with this Name value in their __StyleName__  property will apply the correct style based on where they are placed in the report , even if they are moved.
 
 # See Also
 

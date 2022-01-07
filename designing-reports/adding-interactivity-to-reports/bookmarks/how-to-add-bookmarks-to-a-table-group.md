@@ -10,7 +10,7 @@ position: 3
 
 # How to Add Bookmarks to a Table group
 
-Add bookmarks to a report when you want to provide a customized table of contents or      	to provide customized internal navigation in the report. Typically, you add bookmarks to locations in      	the report to which you want to direct users. You can create your own strings to use as bookmarks,      	or, for groups, you can set the bookmark to the group expression. After you create bookmarks,      	you can add report items that the user     	can click to go to each bookmark. These items are typically text boxes or images. 
+Add bookmarks to a report when you want to provide a customized table of contents or to provide customized internal navigation in the report. Typically, you add bookmarks to locations in the report to which you want to direct users. You can create your own strings to use as bookmarks, or, for groups, you can set the bookmark to the group expression. After you create bookmarks, you can add report items that the user can click to go to each bookmark. These items are typically text boxes or images. 
 
 ## Adding a bookmark to a Table group
 

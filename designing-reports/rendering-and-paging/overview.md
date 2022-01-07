@@ -12,26 +12,26 @@ position: 0
 
 
 
-Telerik Reporting includes a set of rendering extensions (also referred to as renderers) for exporting reports to different formats. Each 				renderer applies set of rules when rendering reports. When exporting a report to file formats such as PDF which uses pagination based on 				physical page size, you might need to alter the layout of the report, so the exported report looks and prints correctly after the rules 				for the specific rendering extension are applied. 			
+Telerik Reporting includes a set of rendering extensions (also referred to as renderers) for exporting reports to different formats. Each renderer applies set of rules when rendering reports. When exporting a report to file formats such as PDF which uses pagination based on physical page size, you might need to alter the layout of the report, so the exported report looks and prints correctly after the rules for the specific rendering extension are applied. 			
 
-Getting satisfactory results for exported reports is often a continuous and repetative process; you create and preview the report in 				Report Designer, export the report to the preferred format, review the exported report, and then make changes to the report back in the 				Report Designer. 			
+Getting satisfactory results for exported reports is often a continuous and repetative process; you create and preview the report in Report Designer, export the report to the preferred format, review the exported report, and then make changes to the report back in the Report Designer. 			
 
 ## Rendering extensions
 
-Telerik Reporting includes a set of renderers that you can use to export reports to different formats. By default Telerik Reporting outputs 					reports in the following formats: Image, PDF, HTML5, MHTML, Excel 97-2003, XLSX, PPTX, DOCX, RTF, XAML and CSV. 				
+Telerik Reporting includes a set of renderers that you can use to export reports to different formats. By default Telerik Reporting outputs reports in the following formats: Image, PDF, HTML5, MHTML, Excel 97-2003, XLSX, PPTX, DOCX, RTF, XAML and CSV. 				
 
 
 | Extension Name | Description |
 | ------ | ------ |
-|PDF|Renders a report in the Adobe Acrobat Reader. The format is shown as Acrobat (PDF) File in the Export drop-down of the 								Report Viewers toolbar.|
+|PDF|Renders a report in the Adobe Acrobat Reader. The format is shown as Acrobat (PDF) File in the Export drop-down of the Report Viewers toolbar.|
 |XLS|Renders a report in Microsoft Excel. The report opens in Microsoft Excel 97 or later.|
-|CSV|The Comma-Separated Value (CSV) rendering extension renders reports as a flattened representation 							of data from a report in a standardized, plain-text format that is easily readable and exchangeable with 							many applications.  The report opens in a viewing tool associated with CSV file formats.|
+|CSV|The Comma-Separated Value (CSV) rendering extension renders reports as a flattened representation of data from a report in a standardized, plain-text format that is easily readable and exchangeable with many applications.  The report opens in a viewing tool associated with CSV file formats.|
 |RTF|Renders a report in Rich Text Format. The report opens in Microsoft Word 97 or later.|
-|XPS|Renders a report in XML Paper Specification (XPS) format - electronic representation of digital documents based on XML. 								The report opens in Microsoft XPS Viewer.|
-|DOCX|Renders a report in Microsoft Word 2007 format (also known as OpenXML) - it is a zipped, XML-based file format developed by 								Microsoft for representing word processing documents.|
-|XLSX|Renders a report in Microsoft Excel 2007 format (also known as OpenXML) - it is a zipped, XML-based file format developed by 								Microsoft for representing spreadsheets.|
-|PPTX|Renders a report in Microsoft PowerPoint 2007 format (also known as OpenXML) - it is a zipped, XML-based file format developed by 								Microsoft for presentations.|
-|MHTML|Renders a report in MHTML. The report opens in Internet Explorer. The format is shown as Web Archive in the Export drop-down of 								the Report Viewers toolbar.|
+|XPS|Renders a report in XML Paper Specification (XPS) format - electronic representation of digital documents based on XML. The report opens in Microsoft XPS Viewer.|
+|DOCX|Renders a report in Microsoft Word 2007 format (also known as OpenXML) - it is a zipped, XML-based file format developed by Microsoft for representing word processing documents.|
+|XLSX|Renders a report in Microsoft Excel 2007 format (also known as OpenXML) - it is a zipped, XML-based file format developed by Microsoft for representing spreadsheets.|
+|PPTX|Renders a report in Microsoft PowerPoint 2007 format (also known as OpenXML) - it is a zipped, XML-based file format developed by Microsoft for presentations.|
+|MHTML|Renders a report in MHTML. The report opens in Internet Explorer. The format is shown as Web Archive in the Export drop-down of the Report Viewers toolbar.|
 |IMAGE|Renders a report in image format with [physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}). 								The format is shown as TIFF in the Export drop-down of the Report Viewers toolbar.|
 |IMAGEInteractive|Renders a report in image format with [interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).|
 |HTML5|Renders a report in XHTML 1.1 compliant HTML with[physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}). 								(This is a multi-stream rendering extension and should be only used with 								 [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__))|
@@ -50,7 +50,7 @@ For more information on the rendering extensions, refer to [Design Consideration
 
 ## Rendering Behaviors
 
-There are three types of 					renderers: 				
+There are three types of renderers: 				
 
 * __Data__  renderers: CSV renderer. 						
 

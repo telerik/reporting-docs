@@ -41,4 +41,4 @@ If a report's DataSource is reset or set to NULL, the report preview will show t
 
  * [NoDataStyle](/reporting/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_NoDataStyle)
 
- * [How to show 'No Data Message' or hide an item in case of No data (KB)](../../knowledge-base/how-to-show-no-data-message-or-hide-an-item-in-case-of-no-data)  
+ * [How to show 'No Data Message' or hide an item in case of No data (KB)]({%slug how-to-show-no-data-message-or-hide-an-item-in-case-of-no-data%})  

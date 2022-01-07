@@ -28,7 +28,6 @@ __Telerik Reporting__  uses a dedicated cache management system to store and cac
 
 >important The cache settings mentioned in this article are not obligatory, and they do not apply to the              __HTML5 Viewer__  or its Angular, WebForms and MVC wrappers. Details about the Cache Storage of the Reporting REST             Service that works with the HTML5 Viewer are available in             [Cache Management: HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%}).           
 
-
 ## 
 
 ## Cache Management
@@ -44,7 +43,6 @@ Such cache management implementation offers the following key benefits:
   ![](images/SessionState/sessionmanagement2.png)
 
 # See Also
-
 
  * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
 

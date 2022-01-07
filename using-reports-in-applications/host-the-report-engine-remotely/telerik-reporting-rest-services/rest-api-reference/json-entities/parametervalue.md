@@ -16,15 +16,12 @@ Represents a single value of the parameter available values.
 
 ## 
 
-	
+    
           {
             ‘name’: ‘Sofia’,
             ‘value’: 1
           }
         
-
-
-
 
 >caption Fields
 
@@ -32,6 +29,5 @@ Represents a single value of the parameter available values.
 | ------ | ------ | ------ | ------ |
 |`name`|`String`|`true`|The name of the parameter name-value pair|
 |`value`|`Array / Boolean / Date / Number / String`|`true`|The value of the parameter name-value pair|
-
 
 

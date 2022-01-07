@@ -39,5 +39,3 @@ Requirements for using __Telerik Reporting REST ServiceStack service__  in an ap
 >note The  __Telerik Reporting ServiceStack REST Service__  should be the only ServiceStack based Web Service in a project, as all ServiceStack services have  [a single AppHost per AppDomain](                 http://mono.servicestack.net/ServiceStack.Hello/#AppHost               ) .           
 
 
-# See Also
-

@@ -90,124 +90,120 @@ The other way to localize the WPF __Report Viewer__  in a more flexible manner i
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationSnippetStart}}
 ````C#
-	        class CustomResources : Telerik.ReportViewer.Wpf.ITextResources
-	        {
-	            public string AllFiles
-	            {
-	                get
-	                {
-	                    return "Todos Archivos";
-	                }
-	            }
-	            public string BackToolTip
-	            {
-	                get
-	                {
-	                    return "Navega hacia atrás";
-	                }
-	            }
-	            public string CurrentPageToolTip
-	            {
-	                get
-	                {
-	                    return "Página corriente";
-	                }
-	            }
-	
-	            //...... Implement the rest of the properties ...... 
-	        }
+class CustomResources : Telerik.ReportViewer.Wpf.ITextResources
+{
+    public string AllFiles
+    {
+        get
+        {
+            return "Todos Archivos";
+        }
+    }
+    public string BackToolTip
+    {
+        get
+        {
+            return "Navega hacia atrás";
+        }
+    }
+    public string CurrentPageToolTip
+    {
+        get
+        {
+            return "Página corriente";
+        }
+    }
+
+    //...... Implement the rest of the properties ......
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationSnippetStart}}
 ````VB.NET
-	    Class CustomResources
-	        Implements Telerik.ReportViewer.Wpf.ITextResources
-	
-	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
-	            Get
-	                Return "Todos Archivos"
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
-	            Get
-	                Return "Navega hacia atrás"
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
-	            Get
-	                Return "Página corriente"
-	            End Get
-	        End Property
-	
-	        '...... Implement the rest of the properties ......
-	    End Class
+Class CustomResources
+    Implements Telerik.ReportViewer.Wpf.ITextResources
+
+    Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
+        Get
+            Return "Todos Archivos"
+        End Get
+    End Property
+
+    Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
+        Get
+            Return "Navega hacia atrás"
+        End Get
+    End Property
+
+    Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
+        Get
+            Return "Página corriente"
+        End Get
+    End Property
+
+    '...... Implement the rest of the properties ......
+End Class
 ````
-
-
 
 Instead of a hard-coded string the property can be set in a method/contructor or to be created a method that returns string and implements a cutsom logic,           for example retreives the resource key from a database.         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.cs region=InterfaceLocalizationUsingMethodsSnippetStart}}
 ````C#
-	        class CustomTextResources : Telerik.ReportViewer.Wpf.ITextResources
-	        {
-	
-	            public string AllFiles
-	            {
-	                get
-	                {
-	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles);
-	                }
-	            }
-	
-	            public string BackToolTip
-	            {
-	                get
-	                {
-	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip);
-	                }
-	            }
-	
-	            public string CurrentPageToolTip
-	            {
-	                get
-	                {
-	                    return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip);
-	                }
-	            }
-	
-	            //...... Implement the rest of the properties ......
-	        }
+class CustomTextResources : Telerik.ReportViewer.Wpf.ITextResources
+{
+
+    public string AllFiles
+    {
+        get
+        {
+            return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles);
+        }
+    }
+
+    public string BackToolTip
+    {
+        get
+        {
+            return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip);
+        }
+    }
+
+    public string CurrentPageToolTip
+    {
+        get
+        {
+            return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip);
+        }
+    }
+
+    //...... Implement the rest of the properties ......
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationUsingMethodsSnippetStart}}
 ````VB.NET
-	    Class CustomTextResources
-	        Implements Telerik.ReportViewer.Wpf.ITextResources
-	
-	        Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
-	            Get
-	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
-	            Get
-	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip)
-	            End Get
-	        End Property
-	
-	        Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
-	            Get
-	                Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip)
-	            End Get
-	        End Property
-	
-	        '...... Implement the rest of the properties ......
-	    End Class
+Class CustomTextResources
+    Implements Telerik.ReportViewer.Wpf.ITextResources
+
+    Public ReadOnly Property AllFiles() As String Implements ReportViewer.Wpf.ITextResources.AllFiles
+        Get
+            Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.AllFiles)
+        End Get
+    End Property
+
+    Public ReadOnly Property BackToolTip() As String Implements ReportViewer.Wpf.ITextResources.BackToolTip
+        Get
+            Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.BackToolTip)
+        End Get
+    End Property
+
+    Public ReadOnly Property CurrentPageToolTip() As String Implements ReportViewer.Wpf.ITextResources.CurrentPageToolTip
+        Get
+            Return SqlHelper.GetViewerKeyFromDb(TextResourcesEnum.CurrentPageToolTip)
+        End Get
+    End Property
+
+    '...... Implement the rest of the properties ......
+End Class
 ````
-
-
 
 ## Related articles
 
@@ -220,7 +216,6 @@ Instead of a hard-coded string the property can be set in a method/contructor or
 [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
 
 # See Also
-
 
 # See Also
 

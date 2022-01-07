@@ -14,7 +14,6 @@ position: 1
 
 >note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
-
 ## Assign report to the viewer in design time
 
 To use Telerik Reports in web application, you need the Web report viewer:
@@ -26,25 +25,23 @@ To use Telerik Reports in web application, you need the Web report viewer:
    >note The http handler is automatically registered in the web.config only when the report viewer control is dropped from                 the Toolbox to the design surface of a web form. If you drop the report viewer in the text editor (source view) or add it to the web                 form programatically, you should manually register the http handler using the xml markup below, where x.x.x.x is your Telerik Reporting assembly version.
 >In the __```<system.web>```\```<httpHandlers>```__  section:             
 
-	
+    
       ````XML
 <system.web>
 ....
-	<httpHandlers>
-	      <add path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"/>
-	</httpHandlers>
+    <httpHandlers>
+          <add path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"/>
+    </httpHandlers>
 ....
 </system.web>
 ````
 
 In the __```<system.webServer>```\```<handlers>```__  section:               
 
-	
+    
     ````XML
- <system.webServer> 		<handlers> 			<add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode"/> 		</handlers> 		<validation validateIntegratedModeConfiguration="false"/> </system.webServer>
+<system.webServer>         <handlers>             <add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode"/>         </handlers>         <validation validateIntegratedModeConfiguration="false"/> </system.webServer>
 ````
-
-
 
 1. Add reference to the class library that contains your reports in the web application/site.
 
@@ -58,32 +55,29 @@ In the __Page_Load__  event handler you create an instance report source and set
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSource}}
 ````C#
-	        protected void Page_Load(object sender, EventArgs e)
-	        {
-	            if (!IsPostBack)
-	            {
-	                var typeReportSource = new Telerik.Reporting.TypeReportSource();
-	                typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
-	                this.ReportViewer1.ReportSource = typeReportSource;
-	            }
-	        }
+protected void Page_Load(object sender, EventArgs e)
+{
+    if (!IsPostBack)
+    {
+        var typeReportSource = new Telerik.Reporting.TypeReportSource();
+        typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
+        this.ReportViewer1.ReportSource = typeReportSource;
+    }
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSource}}
 ````VB
-	    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-	        If Not IsPostBack Then
-	            Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
-	            typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
-	            ReportViewer1.ReportSource = typeReportSource
-	            ReportViewer1.RefreshReport()
-	        End If
-	    End Sub
+Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    If Not IsPostBack Then
+        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
+        typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
+        ReportViewer1.ReportSource = typeReportSource
+        ReportViewer1.RefreshReport()
+    End If
+End Sub
 ````
 
-
-
 # See Also
-
 
  * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})[](66CD7D60-7708-42D5-8BB4-506676E8679E)
 

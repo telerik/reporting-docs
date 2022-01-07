@@ -44,7 +44,6 @@ If the new Telerik Reporting version is a major release, it will be installed ne
 
 >note Visual Studio Toolbox loads only the updates from the latest Telerik Reporting version that is installed on your computer.             However, you will be able to work with the item and project templates from all Telerik Reporting versions that are installed             on your computer.           
 
-
 ## Upgrading Projects Automatically
 
 To automatically upgrade your project to a later Telerik Reporting version, use the           [Telerik Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).         
@@ -55,7 +54,6 @@ To automatically upgrade your project to a later Telerik Reporting version, use 
 * .NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:
 * The references to the Telerik Reporting assemblies or NuGet packages
 * The Htm5 Report Viewer scripts>>
-
 
 ## Upgrading Website Projects Manually
 

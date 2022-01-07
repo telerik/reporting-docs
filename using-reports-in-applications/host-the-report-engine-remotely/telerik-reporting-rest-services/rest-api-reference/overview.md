@@ -22,12 +22,9 @@ The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD opera
 
 * DELETE deletes a resource at a specified URI.
 
-
-
 The API represent resources as hierarchical URIs in order to force the clients to use certain request sequence.
 
 ## The reports API exposes following methods:
-
 
 | Action | HTTP method | Relative URI |
 | ------ | ------ | ------ |
@@ -47,8 +44,4 @@ The API represent resources as hierarchical URIs in order to force the clients t
 | [Release Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/release-document%})|DELETE|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}|
 | [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})|GET|/api/reports/format|
 
-
-
-
-# See Also
 

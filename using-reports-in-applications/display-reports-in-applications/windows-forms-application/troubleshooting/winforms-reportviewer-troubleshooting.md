@@ -28,5 +28,4 @@ The WinForms ReportViewer control uses Image rendering to display content.      
 
 The WinForms ReportViewer control requires  [Microsoft.AspNet.WebApi.Client](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/4.0.30506)  suitable for .NET4 that can be installed via  [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console) .           For more details, please check [How To: Use Windows Forms Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%}).         
 
-# See Also
 

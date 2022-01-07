@@ -48,7 +48,6 @@ The Map series can share existing GeoLocation, ShapeMap and Series groups.
 
 >note Although the Map series share common properties, a  __ShapeMapSeries__  can only use and share a  __ShapeMap groups__ .             The  __LocationMapSeries__  (PointMap, PieMap and ColumnMap) can only use and share a  __GeoLocation groups__ .           
 
-
 ## Map Title
 
 The Map Title is a report item used to set a header over a report item. It could be moved to a various position for a better visual effect.         
@@ -68,8 +67,6 @@ The  [MapScaleLegend](/reporting/api/Telerik.Reporting.MapScaleLegend)  shows th
 ## Projection
 
 The projection is the representation model used to project the globe or celestial sphere on a surface. The projected coordinate system is defined           on a flat two-dimensional surface and it is always based on a geographic coordinate system that represents a sphere or spheroid.           In such a coordinate system, the locations are identified by a __x/y__  coordinates with the origin at the center of the grid.           Each position has two values that reference it to that central location - one for the horizontal and one for the vertical position.           The map item supports the following projections:         
-
-
 
 *  [Mercator Projection](http://en.wikipedia.org/wiki/Mercator_projection)  - a conformal map projection of which the meridians are drawn parallel to each other and the parallels of latitude               are straight lines whose distance from each other increases with their distance from the equator.             
 
@@ -98,6 +95,5 @@ The [Location Provider]({%slug telerikreporting/designing-reports/report-structu
 The Map item is not designed for scenarios where great precision is needed. The processing engine works with float numbers for performance reasons, which limits the data points precision to ~0.00001. Such difference in decimal degrees, measured as latitude at the equator, gives a distance of ~1.1 meters. If the coordinates of the data points are closer than that distance, they may be rendered overlapped.         
 
 # See Also
-
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})

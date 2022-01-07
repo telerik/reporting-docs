@@ -16,19 +16,17 @@ position: 2
 
 Sets the current key shortcuts map, used when the report viewer is in accessible mode.         
 
-	
+    
 ````js
-            var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-            reportViewer.accessibilityKeyMap(
-            {
-                CONFIRM_KEY: 32,
-                CONTENT_AREA_KEY: 82, //R
-                DOCUMENT_MAP_AREA_KEY: 77, //M
-                MENU_AREA_KEY: 85, //U
-                PARAMETERS_AREA_KEY: 80 //P
-            });
+var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+reportViewer.accessibilityKeyMap(
+{
+    CONFIRM_KEY: 32,
+    CONTENT_AREA_KEY: 82, //R
+    DOCUMENT_MAP_AREA_KEY: 77, //M
+    MENU_AREA_KEY: 85, //U
+    PARAMETERS_AREA_KEY: 80 //P
+});
 ````
-
-
 
 The default values for the viewer's accessibility key map can be found           [here](55754fd3-073a-411b-bc58-42bfecefbc5b#accessibility-key-map).         

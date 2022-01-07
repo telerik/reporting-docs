@@ -18,9 +18,6 @@ There are two types of barcodes according to their dimensions:
 
 The linear (one-dimensional) barcodes are made up of lines and spaces of various widths that create specific patterns. The Barcode item currently supports the following one-dimensional barcode types:         
 
-
-
-
 | Barcode | Description |
 | ------ | ------ |
 |Codabar|(aka Ames Code/USD-4/NW-7/2 of 7 Code): Used in libraries and blood banks|
@@ -47,13 +44,9 @@ The linear (one-dimensional) barcodes are made up of lines and spaces of various
 |UPC Supplement 2|Used to indicate magazines and newspaper issue numbers|
 |UPC Supplement 5|Used to mark suggested retail price of book|
 
-
-
-
 ## Matrix (2D) barcodes
 
 The matrix code is a two-dimensional way for representing information. It can also be referred to as a 2D barcode or simply a 2D code.           It is similar to the linear (one-dimensional) barcode, but can represent more data per unit area. The Barcode item currently supports the following 2D barcodes:         
-
 
 | Barcode | Description |
 | ------ | ------ |
@@ -62,8 +55,4 @@ The matrix code is a two-dimensional way for representing information. It can al
 |PDF147|A stacked linear 2D barcode used by U.S. Postal Services, Department of Homeland Security, airline industry and others. More info [here]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417/overview%}).|
 |DataMatrix|2D barcode mostly used to mark smaller areas due to its high data density. Recommended by the US Electronic Industries Alliance. More info [here]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview%})|
 
-
-
-
-# See Also
 

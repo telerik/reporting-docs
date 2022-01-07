@@ -22,7 +22,7 @@ Returns: object, with properties:
 
 * *scaleMode* 
 
-	
+    
 ````js
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 var scale = reportViewer.scale();

@@ -14,7 +14,6 @@ position: 1
 
 >note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
-
 ## 
 
 The goal is to change the value of a TextBox item in the report, according to the selected value in a DropDownList:
@@ -31,28 +30,25 @@ The goal is to change the value of a TextBox item in the report, according to th
 
   ![](images/OutProc3.png)
 
-1. Attach the __SelectedIndexChanged__  event handler of the __DropDownList__ . In the event handler, get the report assigned to the viewer        			(in the example the ReportSource is __InstanceReportSource__ )         		and set the value of the report parameter to the selected item of the __DropDownList__ :
+1. Attach the __SelectedIndexChanged__  event handler of the __DropDownList__ . In the event handler, get the report assigned to the viewer                    (in the example the ReportSource is __InstanceReportSource__ )                 and set the value of the report parameter to the selected item of the __DropDownList__ :
 
-	
+    
       ````C#
-				protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-				{
-					 InstanceReportSource reportsource = (InstanceReportSource)this.ReportViewer1.ReportSource;
-                     Report report = (Report)reportsource.ReportDocument;
-                     report.ReportParameters["Year"].Value = ((DropDownList)sender).SelectedItem.Value;
-                     ReportViewer1.RefreshReport();
-				}
+protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+{
+     InstanceReportSource reportsource = (InstanceReportSource)this.ReportViewer1.ReportSource;
+     Report report = (Report)reportsource.ReportDocument;
+     report.ReportParameters["Year"].Value = ((DropDownList)sender).SelectedItem.Value;
+     ReportViewer1.RefreshReport();
+}
 ````
 ````VB.NET
-				Protected Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
-					 Dim reportsource As InstanceReportSource = DirectCast(Me.ReportViewer1.ReportSource, InstanceReportSource)
-                     Dim report As Report = DirectCast(reportsource.ReportDocument, Report)
-                     report.ReportParameters("Year").Value = DirectCast(sender, DropDownList).SelectedItem.Value
-                     ReportViewer1.RefreshReport()
-				End Sub
+Protected Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
+     Dim reportsource As InstanceReportSource = DirectCast(Me.ReportViewer1.ReportSource, InstanceReportSource)
+     Dim report As Report = DirectCast(reportsource.ReportDocument, Report)
+     report.ReportParameters("Year").Value = DirectCast(sender, DropDownList).SelectedItem.Value
+     ReportViewer1.RefreshReport()
+End Sub
 ````
 
-
-
-# See Also
 

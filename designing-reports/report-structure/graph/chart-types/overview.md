@@ -22,7 +22,6 @@ You can change the chart type after you have created it. For more information, s
 
 Examples of many of these types of charts are available as sample reports in the local demos located under [InstallDir]\Examples.
 
-
 | Chart type | Display ratio data | Display stock data | Display linear data | Display multi-value data |
 | ------ | ------ | ------ | ------ | ------ |
 | [Bar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})|||  <br/>  ! [checkmark](images/checkmark.gif)||
@@ -38,8 +37,4 @@ Examples of many of these types of charts are available as sample reports in the
 | [Sparklines]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines%})|  <br/>  ! [checkmark](images/checkmark.gif)|  <br/>  ! [checkmark](images/checkmark.gif)|  <br/>  ! [checkmark](images/checkmark.gif)|  <br/>  ! [checkmark](images/checkmark.gif)|
 | [OHLC Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})||  <br/>  ! [checkmark](images/checkmark.gif)|  <br/>  ! [checkmark](images/checkmark.gif)|  <br/>  ! [checkmark](images/checkmark.gif|
 
-
-
-
-# See Also
 

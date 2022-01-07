@@ -16,9 +16,9 @@ position: 7
 
 Stops sending keep alive requests to the server, if keep client alive was enabled.         
 
-	
+    
 ````js
-            var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-            reportViewer.dispose();
+var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+reportViewer.dispose();
 ````
 

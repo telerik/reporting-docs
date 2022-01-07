@@ -26,9 +26,8 @@ In this article we will show you how to create a Polar chart using the Graph ite
 
    1. Set the query to the following one:
 
-	
+    
       ````sql
-
 SELECT SOD.LineTotal, SOH.OrderDate, PC.Name AS Category
 FROM Sales.SalesOrderHeader AS SOH
 INNER JOIN Sales.SalesOrderDetail AS SOD ON SOH.SalesOrderID = SOD.SalesOrderID
@@ -36,9 +35,6 @@ INNER JOIN Production.Product AS P ON SOD.ProductID = P.ProductID
 INNER JOIN Production.ProductSubcategory AS PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
 INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.ProductCategoryID
 ````
-
-
-
 
    1. You can click on __Execute Query...__  just to check if everything is OK with the database connection.                   Click __Finish__  when you are ready.                 
 
@@ -80,5 +76,4 @@ INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.Product
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
 
-# See Also
 

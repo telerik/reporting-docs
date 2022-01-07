@@ -36,5 +36,4 @@ The secondary axis can also appear on the right or top of the graph.            
 
 1. For the second one (applied to the second Y axis) - set the position to AtMaximum.                This will force it to cross the X axis at its maximum value which should be on the right end of the axis scale.             
 
-# See Also
 

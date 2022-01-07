@@ -18,13 +18,9 @@ All the keywords and their values are case insensitive where applicable.
 
 ## Embedded Report Engine
 
-
 | Keyword | Value |
 | ------ | ------ |
 |`Engine`|Embedde|
-
-
-
 
 __Example:__ `engine=embedded`
 
@@ -32,24 +28,21 @@ You can use a  [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Comm
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsEmbeddedReportEngineConnectionSnippet}}
 ````C#
-	        private void SetEmbeddedReportEngineConnection(object sender, System.EventArgs e)
-	        {
-	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.EmbeddedConnectionInfo().ConnectionString;
-	            //if the ReportEngineConnection property is set to null or empty string, it will use the EmbeddedConnectionInfo by default. 
-	        }
+private void SetEmbeddedReportEngineConnection(object sender, System.EventArgs e)
+{
+    this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.EmbeddedConnectionInfo().ConnectionString;
+    //if the ReportEngineConnection property is set to null or empty string, it will use the EmbeddedConnectionInfo by default.
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsEmbeddedReportEngineConnectionSnippet}}
 ````VB
-	    Private Sub SetEmbeddedReportEngineConnection(sender As Object, e As System.EventArgs)
-	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.EmbeddedConnectionInfo().ConnectionString
-	        'if the ReportEngineConnection property is set to null or empty string, it will use the EmbeddedReportEngineConnectionInfo by default.
-	    End Sub
+Private Sub SetEmbeddedReportEngineConnection(sender As Object, e As System.EventArgs)
+    Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.EmbeddedConnectionInfo().ConnectionString
+    'if the ReportEngineConnection property is set to null or empty string, it will use the EmbeddedReportEngineConnectionInfo by default.
+End Sub
 ````
 
-
-
 ## Report Server Engine
-
 
 | Keyword | Value |
 | ------ | ------ |
@@ -60,31 +53,25 @@ You can use a  [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Comm
 |`Timeout`| *optional* ; The timeout for rendering a document measured in seconds. The default value is 100 seconds. Value of 0 indicates no expiration.|
 |`KeepClientAlive`| *optional True/False* . Sets whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__ . The default value is True|
 
-
-
-
 __Example:__ `engine=ReportServer;uri=http://localhost:83;username=admin;password=pass;timeout=30;keepClientAlive=true`
 
 You can use a  [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  instance to help you create the connection string.         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsReportServerReportEngineConnectionSnippet}}
 ````C#
-	        private void SetReportServerReportEngineConnection(object sender, System.EventArgs e)
-	        {
-	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString;
-	        }
+private void SetReportServerReportEngineConnection(object sender, System.EventArgs e)
+{
+    this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString;
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsReportServerReportEngineConnectionSnippet}}
 ````VB
-	    Private Sub SetReportServerReportEngineConnection(sender As Object, e As System.EventArgs)
-	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString
-	    End Sub
+Private Sub SetReportServerReportEngineConnection(sender As Object, e As System.EventArgs)
+    Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.ReportServerConnectionInfo("http://reportserver:83", "user", "pass", 20).ConnectionString
+End Sub
 ````
 
-
-
 ## REST Service Engine
-
 
 | Keyword | Value |
 | ------ | ------ |
@@ -95,28 +82,23 @@ You can use a  [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.
 |`Timeout`| *optional* ; The timeout for rendering a document measured in seconds. The default value is 100 seconds. Value of 0 indicates no expiration.|
 |`KeepClientAlive`| *optional True/False* . Sets whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__ . The default value is True|
 
-
-
-
 __Example:__ `engine=RestService;uri=http://localhost:18103/api/reports;token=authToken;useDefaultCredentials=true;timeout=30;keepClientAlive=true`
 
 You can use a  [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)  instance to help you create the connection string.         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsRestServiceReportEngineConnectionSnippet}}
 ````C#
-	        private void SetRestServiceReportEngineConnection(object sender, System.EventArgs e)
-	        {
-	            this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString;
-	        }
+private void SetRestServiceReportEngineConnection(object sender, System.EventArgs e)
+{
+    this.reportViewer1.ReportEngineConnection = new Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString;
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsRestServiceReportEngineConnectionSnippet}}
 ````VB
-	    Private Sub SetRestServiceReportEngineConnection(sender As Object, e As System.EventArgs)
-	        Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString
-	    End Sub
+Private Sub SetRestServiceReportEngineConnection(sender As Object, e As System.EventArgs)
+    Me.ReportViewer1.ReportEngineConnection = New Telerik.ReportViewer.Common.RestServiceConnectionInfo("http://servicehost:83/api/reports", "authToken", 20).ConnectionString
+End Sub
 ````
-
-
 
 # See Also
  * [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)  * [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  * [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo) 

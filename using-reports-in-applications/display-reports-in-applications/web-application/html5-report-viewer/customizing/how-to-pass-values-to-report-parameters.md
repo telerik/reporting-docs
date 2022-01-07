@@ -20,12 +20,11 @@ To give an example we will use the Invoice report from our examples and will upd
 
 >tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
-
 1. Add a new html page CustomParameters.html to the CSharp.Html5Demo or VB.Html5Demo project.
 
 1. Add the references to all required JavaScript libraries and stylesheets:
 
-	
+    
     ````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -51,76 +50,66 @@ To give an example we will use the Invoice report from our examples and will upd
 </head>
 ````
 
-
-
 1. Add the custom parameter UI - a dropdown selector with a few values:
 
-	
+    
     ````html
-    <div id="invoiceIdSelector">
-        <label for="invoiceId">Invoices</label>
-        <select id="invoiceId" title="Select the Invoice ID">
-            <option value="SO51081">SO51081</option>
-            <option value="SO51082" selected="selected">SO51082</option>
-            <option value="SO51083">SO51083</option>
-        </select>
-    </div>
+<div id="invoiceIdSelector">
+    <label for="invoiceId">Invoices</label>
+    <select id="invoiceId" title="Select the Invoice ID">
+        <option value="SO51081">SO51081</option>
+        <option value="SO51082" selected="selected">SO51082</option>
+        <option value="SO51083">SO51083</option>
+    </select>
+</div>
 ````
-
-
 
 1. Add the ReportViewer placeholder
 
-	
+    
     ````html
-    <div id="reportViewer1">
-        loading...
-    </div>
+<div id="reportViewer1">
+    loading...
+</div>
 ````
-
-
 
 1. Now initialize the report viewer. We will use the minimal set of all                   [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).                   Please note how the value from the custom UI is used to set the __OrderNumber__  report parameter initially:                 
 
-	
+    
     ````js
-        $(document).ready(function () {
-            $("#reportViewer1").telerik_ReportViewer({
-                serviceUrl: "api/reports/",
-                reportSource: {
-                    report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary",
-                    parameters: { OrderNumber: $('#invoiceId option:selected').val() }
-                },
-                ready: function () {
-                    //this.refreshReport();
-                }
-            });
-        });
+$(document).ready(function () {
+    $("#reportViewer1").telerik_ReportViewer({
+        serviceUrl: "api/reports/",
+        reportSource: {
+            report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary",
+            parameters: { OrderNumber: $('#invoiceId option:selected').val() }
+        },
+        ready: function () {
+            //this.refreshReport();
+        }
+    });
+});
 ````
-
-
 
 1. Add code that updates the ReportSource parameters collection with the selected __Invoice Id__  from                   the dropdown box:                 
 
-	
+    
     ````js
-            $('#invoiceId').change(function () {
-                var viewer = $("#reportViewer1").data("telerik_ReportViewer");
-                viewer.reportSource({
-                    report: viewer.reportSource().report,
-                    parameters: { OrderNumber: $(this).val() } 
-                });
-                //setting the HTML5 Viewer's reportSource, causes a refresh automatically
-                //if you need to force a refresh for other case, use:
-                //viewer.refreshReport();
-            });
+$('#invoiceId').change(function () {
+    var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+    viewer.reportSource({
+        report: viewer.reportSource().report,
+        parameters: { OrderNumber: $(this).val() }
+    });
+    //setting the HTML5 Viewer's reportSource, causes a refresh automatically
+    //if you need to force a refresh for other case, use:
+    //viewer.refreshReport();
+});
 ````
-
-
 
 1. The HTML page that we have just created should looks like this:
 
-	
+    
     ````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -163,14 +152,14 @@ To give an example we will use the Invoice report from our examples and will upd
                     reportSource: {
                         report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary",
                         parameters: { OrderNumber: $('#invoiceId option:selected').val() }
-                    },                    
+                    },
               });
           });
             $('#invoiceId').change(function () {
                 var viewer = $("#reportViewer1").data("telerik_ReportViewer");
                 viewer.reportSource({
                     report: viewer.reportSource().report,
-                    parameters: { OrderNumber: $(this).val() } 
+                    parameters: { OrderNumber: $(this).val() }
                 });
                 //setting the HTML5 Viewer's reportSource, causes a refresh automatically
                 //if you need to force a refresh for other case, use:
@@ -181,6 +170,8 @@ To give an example we will use the Invoice report from our examples and will upd
 </html>
 ````
 
-
-
 1. Run the project and verify that the __Invoice Id__  selection really updates the report.                 
+
+# See Also
+
+ * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})

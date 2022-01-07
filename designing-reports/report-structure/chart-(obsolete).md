@@ -16,12 +16,9 @@ position: 16
 
 >note The Chart item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item.             The Graph item is most often used for building powerful OLAP/Pivot charts.           The Chart item is not supported in .NET Core projects and in projects deployed on Azure.           
 
-
 The Chart report item is used to display a chart on a report. It is business-oriented item with a           focus on development productivity and ease-of-use. It allows you to rapidly build appealing charts           that represent data in a people-friendly manner.           
 
   ![Sparkline Chart\Sparkline Chart](images/Graph/SparklineChart.png)
-
-
 
 You can bind the Chart item:
 
@@ -31,22 +28,20 @@ You can bind the Chart item:
 
 When you are in the event, you should work with the processing chart item i.e.:
 
-	
+    
 ````C#
-			private void chart1_NeedDataSource(object sender, System.EventArgs e)
-			{
-				Telerik.Reporting.Processing.Chart procChart = (Telerik.Reporting.Processing.Chart)sender;
-				procChart.DataSource = your_datasource;
-			}
+private void chart1_NeedDataSource(object sender, System.EventArgs e)
+{
+    Telerik.Reporting.Processing.Chart procChart = (Telerik.Reporting.Processing.Chart)sender;
+    procChart.DataSource = your_datasource;
+}
 ````
 ````VB.NET
-			Private Sub chart1_NeedDataSource(sender As Object, e As System.EventArgs)
-				Dim procChart As Telerik.Reporting.Processing.Chart = DirectCast(sender, Telerik.Reporting.Processing.Chart)
-				procChart.DataSource = your_datasource
-			End Sub
+Private Sub chart1_NeedDataSource(sender As Object, e As System.EventArgs)
+    Dim procChart As Telerik.Reporting.Processing.Chart = DirectCast(sender, Telerik.Reporting.Processing.Chart)
+    procChart.DataSource = your_datasource
+End Sub
 ````
-
-
 
 The formatting of the Chart report item is managed by a large number of properties.           To customize the Chart report item, right-click the chart and select Properties from           the context menu to use the Chart Wizard.         
 
@@ -71,7 +66,6 @@ The Chart item offers numerous features including:
 * [Styling](2CFC6F7D-0B66-4C30-B744-65B05C2A78C7) [](http://www.telerik.com/help/aspnet/chart/introduction.html) 
 
 # See Also
-
 
 # See Also
 

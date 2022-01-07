@@ -26,12 +26,10 @@ The master report will contain only a simple listing of product categories.
 
 1. Enter the SQL statement below and click the __Next__  button.             
 
-	
+    
       ````SQL
-			SELECT ProductCategoryID, Name FROM Production.ProductCategory
+SELECT ProductCategoryID, Name FROM Production.ProductCategory
 ````
-
-
 
 1. In the __Design Data Layout__  page of the wizard add the __Name__  column               to the detail section and click the Next button. Continue taking the defaults until you finish the Wizard.             
 
@@ -45,20 +43,18 @@ The master report will contain only a simple listing of product categories.
 
 1. Enter the following SQL statement and Finish the DataSource wizard.
 
-	
+    
       ````SQL
-				SELECT 
-					P.Name,ProductID,ProductNumber,PC.ProductCategoryID
-				FROM 
-					Production.Product P,
-					Production.ProductSubcategory PS,
-					Production.ProductCategory PC
-				WHERE 
-					P.ProductSubcategoryID=PS.ProductSubcategoryID
-					AND PS.ProductCategoryID=PC.ProductCategoryID
+SELECT
+    P.Name,ProductID,ProductNumber,PC.ProductCategoryID
+FROM
+    Production.Product P,
+    Production.ProductSubcategory PS,
+    Production.ProductCategory PC
+WHERE
+    P.ProductSubcategoryID=PS.ProductSubcategoryID
+    AND PS.ProductCategoryID=PC.ProductCategoryID
 ````
-
-
 
 1. In the __Arrange Fields__  page of the Table Wizard add the __ProductNumber__  and __Name__  fields               to the Table Columns and click the Next button. Continue taking the defaults until you finish the wizard.             
 

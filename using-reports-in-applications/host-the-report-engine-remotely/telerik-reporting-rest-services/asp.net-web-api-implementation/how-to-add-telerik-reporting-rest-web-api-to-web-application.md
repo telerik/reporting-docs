@@ -28,7 +28,7 @@ The project has a preconfigured implementation of reports controller that uses t
 
 1. (Only for Empty Web Application / Web Forms Application) Install the                    [Microsoft.AspNet.WebApi.WebHost 4.0.30506](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.WebHost/4.0.30506)                    NuGet package.                   Besides the required assemblies this will add the necessary handlers for version 4.0.30506 to the Web.config:                 
 
-	
+    
     ````xml
 <handlers>
       <remove name="ExtensionlessUrlHandler-ISAPI-4.0_32bit" />
@@ -40,18 +40,14 @@ The project has a preconfigured implementation of reports controller that uses t
     </handlers>
 ````
 
-
-
     >tip The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use  __newer version of Microsoft.AspNet.WebApi.WebHost (e.g. WebAPI 2)__                      you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version.                     To do this, add the following binding redirects to your web.config and replace 5.1.0.0 with the exact version:                   
 
-	
+    
     ````xml
 <?xml version="1.0" encoding="utf-8" ?><configuration>  <runtime>    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">      <dependentAssembly>        <assemblyIdentity name="System.Web.Http" culture="neutral" publicKeyToken="31bf3856ad364e35"/>        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>      </dependentAssembly>      <dependentAssembly>        <assemblyIdentity name="System.Net.Http.Formatting" culture="neutral" publicKeyToken="31bf3856ad364e35"/>        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>      </dependentAssembly>    </assemblyBinding>  </runtime></configuration>
 ````
 
  [Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget)  will add the required binding redirects automatically, if you use it to update the NuGet packages.                   
-
-
 
 1. Make sure that the project has the following assembly references:
    + Newtonsoft.Json.dll                     
@@ -64,7 +60,6 @@ The project has a preconfigured implementation of reports controller that uses t
 
    + System.Net.Http.Formatting.dll                     
 
-
 1. [Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});                 
 
 1. (Only for Empty Web Application) Add new item "Global Application Class";
@@ -73,58 +68,49 @@ The project has a preconfigured implementation of reports controller that uses t
 
 {{source=CodeSnippets\MvcCS\Global.asax.cs region=ReportsControllerConfiguration_RegisterRoutes}}
 ````c#
-	        protected void Application_Start()
-	        {
-	            ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration);
+protected void Application_Start()
+{
+    ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration);
 ````
 {{source=CodeSnippets\MvcVB\Global.asax.vb region=ReportsControllerConfiguration_RegisterRoutes}}
 ````vb
-	    Sub Application_Start()
-	        ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration)
+Sub Application_Start()
+    ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration)
 ````
-
-
 
 1. Run the application.
 
 1. To verify whether the service works correctly you can make a request                   for the available document formats using the following URL:                 
 
-
-
 | __http://localhost: [portnumber]/api/reports/formats__|
-
 
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).                 
 
     >tip The call to  __http://localhost:[portnumber]/api/reports/formats__  does not require authorization by design, as this request is for test purposes, i.e. to check whether the REST Service is running.                   
-
-
 
 1. Enable  [Cross-Origin Resource Sharing (CORS).](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  (*optional* )                 
    1. Add __Microsoft.AspNet.WebApi.Cors__  NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages.                     
 
    1. Add the following code at the beginning of the __Global.Application_Start__  (Global.asax) method:                     
 
-	
+    
       ````c#
-
 GlobalConfiguration.Configuration.EnableCors();
 ````
 ````vb
-
 GlobalConfiguration.Configuration.EnableCors();
 ````
-
-
-
 
    1. Add the following attribute to the __ReportsController__  class (requires reference to __System.Web.Http.Cors__ ):                     
 
-	
+    
       ````c#
-                      [EnableCors(origins:"*", headers:"*", methods:"*")]
+[EnableCors(origins:"*", headers:"*", methods:"*")]
 ````
 ````vb
-                      <EnableCors(origins:"*", headers:"*", methods:"*")>
+<EnableCors(origins:"*", headers:"*", methods:"*")>
 ````
 
+# See Also
+
+ * [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})

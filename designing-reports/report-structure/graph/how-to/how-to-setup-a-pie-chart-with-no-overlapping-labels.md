@@ -26,10 +26,7 @@ The __Pie chart__  uses  [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)
 
 1. Make sure the  [DataPointLabelConnectorStyle](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelConnectorStyle)  has its                __Visible__  property set to __true__ . Also, for better design experience, the connector is drawn               only when the distance between the data point and the label is more than one                [line spacing](https://msdn.microsoft.com/en-us/library/system.windows.media.fontfamily.linespacing(v=vs.110).aspx)                              , measured by its label's font.               If needed, you can also adjust the connector offset                using the __Padding__  property. The __Bottom__  represents the offset from the pie, and                the __Top__  represents the offset from the label. The __Left__  and __Right__                values are not respected. Additionally you can set the __LineColor__  and __LineStyle__  according               to your needs.           
 
-
-
 >note The  *OutsideColumn*  value of  __DataPointLabelAlignment__  property is respected only when applied on BarSeries using a                Polar coordinate system. When applied on another series type or Cartesian coordinate system, the engine falls back to  *OutsideEnd*  value.              The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their                 [DataPointLabelAngle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelAngle)  set to a multiple of 360 degrees (i.e. 0, 360, etc.).              
-
 
 The image below shows how a Pie Chart would look when the properties in question are set properly.                           
 

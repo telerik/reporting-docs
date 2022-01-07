@@ -32,7 +32,6 @@ This section describes the common settings for one-dimensional barcodes.
 
 1. Code128 can represent both ASCII characters and non-ASCII control characters. Normally the barcode report item inserts automatically               the appropriate control characters in order to conform to the Code128 specification. However certain applications might require manual               insertion of certain control characters, such as the functional characters: FNC1-FNC4. For this purpose the barcode report item assigns               special Unicode values to these control characters outside the normal 0-127 ASCII code range. The following table lists all Code128 control               characters and their corresponding Unicode values:             
 
-
 >caption Code 128 Control Characters
 
 | Control Character | Hexadecimal | Decimal |
@@ -50,36 +49,27 @@ This section describes the common settings for one-dimensional barcodes.
 |Start C|FE|254|
 |Stop|FF|255|
 
-
-
-
-
-
 For example, the following code inserts the FNC4 control character in the middle of a barcode:
 
-	
+    
 ````C#
-				this.barcode1.Value = "ABCD" + "\u00FA" + "1234";
+this.barcode1.Value = "ABCD" + "\u00FA" + "1234";
 ````
 ````VB.NET
-				me.barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
+me.barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
 ````
-
-
 
 ## Additional information on GS1-128
 
 GS1-128 is a special case of Code128. The only difference between GS1-128 and           Code 128 is that GS1-128 inserts the FNC1 control character at the beginning of the           barcode in order to conform to the GS1-128 specification. If you have a multi-part           GS1-128 barcode which requires the FNC1 control character as a delimiter between           the different parts, you should insert it manually:         
 
-	
+    
 ````C#
-			this.barcode1.Value = "1234" + "\u00F7" + "5678";
+this.barcode1.Value = "1234" + "\u00F7" + "5678";
 ````
 ````VB.NET
-			me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
+me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
 ````
-
-
 
 # See Also
  * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  * [Encoder](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)  * [BarAlign](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign)  * [Checksum](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum)  * [Module](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module)  * [Stretch](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch)  * [Angle](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle)  * [Telerik.Reporting.Barcodes.Encoder1D](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D)  * [ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText) 

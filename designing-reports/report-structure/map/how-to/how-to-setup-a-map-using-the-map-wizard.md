@@ -16,7 +16,6 @@ In this how-to article we will show you how to create a Map which will present t
 
 >important This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.           If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.           For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.         
 
-
 ## 
 
 1. Start the Map Wizard:
@@ -28,15 +27,13 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
 
-
 1. On the __Choose Data Source__  page, add new               __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ :             
    + Set the connection string to the demo AdventureWorks database.
 
    + Paste the following query in the *Select Statement*  box:                 
 
-	
+    
       ````sql
-
 SELECT
 PS.Name AS ProductSubCategory,
 SP.Name + ', ' + CR.Name AS State,
@@ -58,18 +55,13 @@ AND DATEPART(YEAR, SOH.OrderDate) IN (2003, 2004)
 AND PC.Name = 'Bikes'
 ````
 
-
-
-
    + You can click on __Execute Query...__  just to check if everything is OK with the database connection.                   Click __Finish__  when you are ready.                 
-
 
 1. In the *Available data sources*  list you should see the datasource you've already created.               Select it and click __Next__ .             
 
 1. In the next page you have to select the fields which will be used to build the map charts.             
 
     >tip Since the map will use a Location Provider, there is no need to provide the  __Latitude__  and  __Longitude__  coordinates by yourself, so you can                 left these boxes empty and just define a location group, which will set the geocoding string.               
-
 
    + Select the __Pie Chart__  radiobutton from the *Datapoints type*  box.                 
 
@@ -90,12 +82,9 @@ AND PC.Name = 'Bikes'
 
   ![Map Pie Chart Done](images/Map/MapPieChart_Done.png)
 
-
-
 In this example we demonstrated how to setup a Map item from scratch, how to add PieChart series to it and how to initialize and           use the __Location Provider__ . All the described steps are valid for both           [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})           and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and           can be reproduced with code as well.         
 
 # See Also
-
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

@@ -12,26 +12,22 @@ position: 2
 
 
 
-Telerik Reporting supplies __report item__  components that are placed in the report designer to build report        	content: 
+Telerik Reporting supplies __report item__  components that are placed in the report designer to build report            content: 
 
 ## 
 
-
 | Report item | Description |
 | ------ | ------ |
-| [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})|The TextBox displays text in the report, can be styled to a specific visual appearance, <br/>  	can be configured to grow/shrink, formatted for specific data types (e.g. date time) and can be multi-line.|
-| [HtmlTextBox]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%})|The HtmlTextBox item allows developers to insert HTML-formatted text into a report. You can specify the HTML <br/>   	value at design time (either through a WYSIWYG editor or through an expression editor), or retrieve it from a data <br/>   	source using expression that evaluates to correctly formatted HTML.|
-| [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%})|The PictureBox allows you to place images in the report. It supports only image formats supported by GDI+ <br/>   	( __BMP__ , __GIF__ , __JPEG__ , __EXIF__ , __PNG__ and __TIFF__ ).|
-| [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%})|The Panel report item is used as a container for other items, usually to group/separate multiple report <br/>   	items by some criteria.|
-| [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%})|The SubReport report item lets you display one report within another report. This allows you to compose <br/>   	complex reports from disparate report sources.|
-| [Table]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})|The Table items is used to display fields from a dataset either as detail data or as grouped data in a <br/>   	grid or free-form layout. Telerik Reporting provides three items that can be used as templates and you can add <br/>   	them directly from the Toolbox: __Table__ , __Crosstab__ , and __List__ .|
-| [CheckBox]({%slug telerikreporting/designing-reports/report-structure/checkbox%})|This report item displays a check mark (small picture) and a Text field (same as the text in TextBox). <br/>   	It can be styled to a specific visual appearance, can be configured to grow/shrink, the text can be formatted <br/>   	for specific data types (e.g. date time) and can be multi-line. The Check mark and Text can be aligned vertically <br/>   	and horizontally. There are three predefined check mark images, but they can be replaced with others.|
-| [Chart]({%slug telerikreporting/designing-reports/report-structure/chart-(obsolete)%})|The chart lets you display data in a visually compelling way. The chart can bind to live data and display <br/>   	in many popular chart types, e.g. __Bar__ , __Pie__ , __Gantt__ , __Line__ , __Area__ , __Bubble__ , etc.|
-| [BarCode]({%slug telerikreporting/designing-reports/report-structure/barcode/overview%})|The Barcode report item is used for automatic barcode generation directly from a numeric or character data <br/>   	without need of any barcode font being installed in the end user's PC.|
+| [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})|The TextBox displays text in the report, can be styled to a specific visual appearance, <br/>      can be configured to grow/shrink, formatted for specific data types (e.g. date time) and can be multi-line.|
+| [HtmlTextBox]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%})|The HtmlTextBox item allows developers to insert HTML-formatted text into a report. You can specify the HTML <br/>       value at design time (either through a WYSIWYG editor or through an expression editor), or retrieve it from a data <br/>       source using expression that evaluates to correctly formatted HTML.|
+| [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%})|The PictureBox allows you to place images in the report. It supports only image formats supported by GDI+ <br/>       ( __BMP__ , __GIF__ , __JPEG__ , __EXIF__ , __PNG__ and __TIFF__ ).|
+| [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%})|The Panel report item is used as a container for other items, usually to group/separate multiple report <br/>       items by some criteria.|
+| [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%})|The SubReport report item lets you display one report within another report. This allows you to compose <br/>       complex reports from disparate report sources.|
+| [Table]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})|The Table items is used to display fields from a dataset either as detail data or as grouped data in a <br/>       grid or free-form layout. Telerik Reporting provides three items that can be used as templates and you can add <br/>       them directly from the Toolbox: __Table__ , __Crosstab__ , and __List__ .|
+| [CheckBox]({%slug telerikreporting/designing-reports/report-structure/checkbox%})|This report item displays a check mark (small picture) and a Text field (same as the text in TextBox). <br/>       It can be styled to a specific visual appearance, can be configured to grow/shrink, the text can be formatted <br/>       for specific data types (e.g. date time) and can be multi-line. The Check mark and Text can be aligned vertically <br/>       and horizontally. There are three predefined check mark images, but they can be replaced with others.|
+| [Chart]({%slug telerikreporting/designing-reports/report-structure/chart-(obsolete)%})|The chart lets you display data in a visually compelling way. The chart can bind to live data and display <br/>       in many popular chart types, e.g. __Bar__ , __Pie__ , __Gantt__ , __Line__ , __Area__ , __Bubble__ , etc.|
+| [BarCode]({%slug telerikreporting/designing-reports/report-structure/barcode/overview%})|The Barcode report item is used for automatic barcode generation directly from a numeric or character data <br/>       without need of any barcode font being installed in the end user's PC.|
 | [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%})|The Shape item displays visual primitives in the report including ellipse, vertical/horizontal/slanting lines, and triangles|
-
-
-
 
 ## Definition item versus Processing item
 
@@ -42,7 +38,6 @@ The Report Definition item is created during the first stage of the [Report Life
 Let’s illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code will be generated within the InitalizeComponent method of the report class.
 
 >note The  __InitializeComponent__  method initializes (creates) a Report and its child items.It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
-
 
 This object will later serve as the definition for creating a concrete instance of the TextBox for each row form the data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example Telerik.Reporting.TextBox.
 

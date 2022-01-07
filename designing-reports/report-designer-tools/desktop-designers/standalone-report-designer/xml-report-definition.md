@@ -62,7 +62,6 @@ The schema version is used by the Standalone Report Designer to identify support
 
 The XML schema versioning prior to 2017 R3 is incremental.           To check when specific XML schema version is introduced see the following table:         
 
-
 | Schema | Introduced in release |
 | ------ | ------ |
 |v1|2012 Q1|
@@ -81,14 +80,10 @@ The XML schema versioning prior to 2017 R3 is incremental.           To check wh
 |http://schemas.telerik.com/reporting/2012/4.1|2016 R3|
 |http://schemas.telerik.com/reporting/2012/4.2|2017 R|
 
-
-
-
 From 2017 R3 on, the version numbering corresponds with the product release it was introduced in.           The format is:           http://schemas.telerik.com/reporting/[year]/[release].[sp]
 
 For example, the version introduced in 2017 R3 will look as following: http://schemas.telerik.com/reporting/2017/3.0 
 
 # See Also
-
 
  * [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) * [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager) 

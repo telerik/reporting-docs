@@ -32,14 +32,10 @@ These functions return a running count of the current data scope occurrences    
 
 To get a running count in a parent group's occurrences,         the function should be combined with Exec function usage.         For example, in the setup above, the expression =Exec("Year", RowNumber("DataItemName"))         used in the "Month" scope will get evaluated to 1, 1, 1,.., 1 for all 12 occurrences         of the "Month" scope inside the first instance of the "Year" scope and then to 2, 2, 2...         for the second occurrence of the "Year" data scope.         
 
-
 | Function | Description |
 | ------ | ------ |
 | __RowNumber(scope)__ |Returns a running count of all rows inside the current instance of the specified parameter scope.|
 | __ColumnNumber(scope)__ |Returns a running count of all columns inside the current instance of the specified parameter scope|
-
-
-
 
 >note Data scope functions cannot be nested.Data scope functions are evaluated on-demand. This means that in some cases             (using  __RowNumber()__  /  __ColumnNumber()__  functions) their results             might vary according to the order of report actions execution.           
 

@@ -18,38 +18,26 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 
 ## 
 
-
 | Chart | Series Groups | Categories Groups | Coordinate Systems | Series |
 | ------ | ------ | ------ | ------ | ------ |
 | __ [Area]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/how-to-create-area-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: None or {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: Empty or {expression}
 
-
 ||
-
-
 
 |Type: Cartesian|
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
 
-
 ||
-
-
 
 |Type: AreaSeries|
 |CoordinateSystem: CS1|
@@ -57,39 +45,27 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |Y: {expression}
 
-
 |   |   |
 | ------ | ------ |
 |
 | __ [Bar]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/how-to-create-bar-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: None or {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: Empty or {expression}
 
-
 ||
-
-
 
 |Type: Cartesian|
 |Name: CS1|
 |X axis: NumericalScale|
 |Y axis: CategoryScale
 
-
 ||
-
-
 
 |Type: BarSeries|
 |CoordinateSystem: CS1|
@@ -97,39 +73,27 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |X: {expression}
 
-
 |   |   |
 | ------ | ------ |
 |
 | __ [Column]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/how-to-create-column-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: None or {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: Empty or {expression}
 
-
 ||
-
-
 
 |Type: Cartesian|
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
 
-
 ||
-
-
 
 |Type: BarSeries|
 |CoordinateSystem: CS1|
@@ -137,39 +101,27 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |Y: {expression}
 
-
 |   |   |
 | ------ | ------ |
 |
 | __ [Line]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/how-to-create-line-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: None or {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: Empty or {expression}
 
-
 ||
-
-
 
 |Type: Cartesian|
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
 
-
 ||
-
-
 
 |Type: LineSeries|
 |CoordinateSystem: CS1|
@@ -177,39 +129,27 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |Y: {expression}
 
-
 |   |   |
 | ------ | ------ |
 |
 | __ [Pie]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/how-to-create-pie-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: None or {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: Empty or {expression}
 
-
 ||
-
-
 
 |Type: Polar|
 |Name: CS1|
 |X axis: NumericalScale|
 |Y axis: CategoryScale
 
-
 ||
-
-
 
 |Type: BarSeries|
 |CoordinateSystem: CS1|
@@ -217,39 +157,27 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |X: {expression}
 
-
 |   |   |
 | ------ | ------ |
 |
 | __ [Polar]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/how-to-create-polar-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: None or {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: Empty or {expression}
 
-
 ||
-
-
 
 |Type: Polar|
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
 
-
 ||
-
-
 
 |Type: BarSeries|
 |CoordinateSystem: CS1|
@@ -257,39 +185,27 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |Y: {expression}
 
-
 |   |   |
 | ------ | ------ |
 |
 | __ [Range]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/how-to-create-range-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: None or {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: Empty or {expression}
 
-
 ||
-
-
 
 |Type: Cartesian|
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
 
-
 ||
-
-
 
 |Type: AreaSeries/BarSeries|
 |CoordinateSystem: CS1|
@@ -298,39 +214,27 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Y: {expression}|
 |Y0: {expression}
 
-
 |   |   |
 | ------ | ------ |
 |
 | __ [Scatter]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-scatter-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: None
 
-
 ||
-
-
 
 |Type: Cartesian|
 |Name: CS1|
 |X axis: NumericalScale|
 |Y axis: NumericalScale
 
-
 ||
-
-
 
 |Type: LineSeries|
 |CoordinateSystem: CS1|
@@ -340,39 +244,27 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |X: {expression}|
 |Y: {expression}
 
-
 |   |   |
 | ------ | ------ |
 |
 | __ [Bubble]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-bubble-chart%})__|
 
-
-
 |Name: SG1|
 |Grouping: {expression}
 
-
 ||
-
-
 
 |Name: CG1|
 |Grouping: None
 
-
 ||
-
-
 
 |Type: Cartesian|
 |Name: CS1|
 |X axis: NumericalScale|
 |Y axis: NumericalScale
 
-
 ||
-
-
 
 |Type: LineSeries|
 |CoordinateSystem: CS1|
@@ -383,11 +275,6 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Y: {expression}|
 |Size: {expression}
 
-
 ||
 
-
-
-
-# See Also
 

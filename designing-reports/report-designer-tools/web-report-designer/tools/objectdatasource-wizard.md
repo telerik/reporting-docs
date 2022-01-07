@@ -24,74 +24,70 @@ In this example, we will use a .NET Standard 2.0 Class Library which is suitable
 
 1. Add a new class named __Car__  which will contain the model of the car.             
 
-	
+    
       ````c#
-                   public class Car
-                    {
-                        string manufacturer;
-                        string model;
-                        int year;
-                        string imageUrl;
-                        ArrayList availableColor;
-                        public Car(string manufacturer, string model, int year, string imageUrl, string[] availableColor)
-                        {
-                            this.manufacturer = manufacturer;
-                            this.model = model;
-                            this.year = year;
-                            this.imageUrl = imageUrl;
-                            this.AvailableColor = new ArrayList(availableColor);
-                        }
-                        public string Model
-                        {
-                            get { return this.model; }
-                            set { this.model = value; }
-                        }
-                        public string Manufacturer
-                        {
-                            get { return this.manufacturer; }
-                            set { this.manufacturer = value; }
-                        }
-                        public int Year
-                        {
-                            get { return this.year; }
-                            set { this.year = value; }
-                        }
-                        public string ImageUrl
-                        {
-                            get { return this.imageUrl; }
-                            set { this.imageUrl = value; }
-                        }
-                        public ArrayList AvailableColor
-                        {
-	                        get { return this.availableColor; }
-	                        set { this.availableColor = value; }
-                        }
-                    }
+public class Car
+ {
+     string manufacturer;
+     string model;
+     int year;
+     string imageUrl;
+     ArrayList availableColor;
+     public Car(string manufacturer, string model, int year, string imageUrl, string[] availableColor)
+     {
+         this.manufacturer = manufacturer;
+         this.model = model;
+         this.year = year;
+         this.imageUrl = imageUrl;
+         this.AvailableColor = new ArrayList(availableColor);
+     }
+     public string Model
+     {
+         get { return this.model; }
+         set { this.model = value; }
+     }
+     public string Manufacturer
+     {
+         get { return this.manufacturer; }
+         set { this.manufacturer = value; }
+     }
+     public int Year
+     {
+         get { return this.year; }
+         set { this.year = value; }
+     }
+     public string ImageUrl
+     {
+         get { return this.imageUrl; }
+         set { this.imageUrl = value; }
+     }
+     public ArrayList AvailableColor
+     {
+         get { return this.availableColor; }
+         set { this.availableColor = value; }
+     }
+ }
 ````
-
-
 
 1. Add another class named __Cars__ . It will contain a list with cars.             
 
-	
+    
       ````c#
-                public class Cars : List<Car>
-                  {
-                      public Cars()
-                      {
-                          Car car;
-                          car = new Car("Honda", "NSX GT", 2003, "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
-                              , new string[] { "Black", "Red", "White", "Orange" });
-                          this.Add(car);
-                          car = new Car("Nissan", "Skyline R34 GT-R", 2005, "http://www.telerik.com/images/reporting/cars/EVLR34_1.jpg"
-                              , new string[] { "Black", "White" });
-                          this.Add(car);
-                          ...
-                      }
-                  }
+public class Cars : List<Car>
+  {
+      public Cars()
+      {
+          Car car;
+          car = new Car("Honda", "NSX GT", 2003, "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
+              , new string[] { "Black", "Red", "White", "Orange" });
+          this.Add(car);
+          car = new Car("Nissan", "Skyline R34 GT-R", 2005, "http://www.telerik.com/images/reporting/cars/EVLR34_1.jpg"
+              , new string[] { "Black", "White" });
+          this.Add(car);
+          ...
+      }
+  }
 ````
-
-
 
 1. Build the project.             
 
@@ -107,39 +103,37 @@ When started, the application that hosts the Web Report Designer will try to res
 
    + For .NET Core applications, this is done in the __appsettings.json__  file:             
 
-	
+    
       ````js
-             "telerikReporting": {
-                 "assemblyReferences": [
-                    {
-                      "name": "CarObjects"
-                    }
-                  ]
-                 }
+"telerikReporting": {
+    "assemblyReferences": [
+       {
+         "name": "CarObjects"
+       }
+     ]
+    }
 ````
 
 Another option is by custom implementation of the   [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-3.1)             interface.         
 
    + For .NET Framework projects, the configuration should be added to the __web.config__  file.             
 
-	
+    
       ````xml
-                    <configuration> 
-	                    <configSections>
-		                    <section name="Telerik.Reporting"
-                                 type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-                                 allowLocation="true" 
-                                 allowDefinition="Everywhere" />
-	                    </configSections>
-	                    <Telerik.Reporting>
-		                    <AssemblyReferences>
-			                    <add name="CarObjects"/>
-		                    </AssemblyReferences>
-	                    </Telerik.Reporting>
-                    </configuration>
+<configuration>
+    <configSections>
+        <section name="Telerik.Reporting"
+             type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
+             allowLocation="true"
+             allowDefinition="Everywhere" />
+    </configSections>
+    <Telerik.Reporting>
+        <AssemblyReferences>
+            <add name="CarObjects"/>
+        </AssemblyReferences>
+    </Telerik.Reporting>
+</configuration>
 ````
-
-
 
 We are ready with the configuration. Now let's step to the wizard.         
 
@@ -166,7 +160,6 @@ As a final step, let's display the data from the ObjectDataSource in the report.
 1. Drag the fields from the __Explorer__  tab to the report and hit  __Preview__ .             
 
 # See Also
-
 
  * [ObjectDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
 

@@ -14,7 +14,6 @@ position: 10
 
 ## Access built-in utility functions
 
-
 | Function | Parameters | Description |
 | ------ | ------ | ------ |
 | __Array(args)__ |args (Object [])|Returns an array of the passed object instances.                 For example: *=Array("item1","item2")* will return object [] {"item1", "item2"}|
@@ -23,8 +22,4 @@ position: 10
 | __HtmlDecode(value)__ |value (String)|Converts a string that has been HTML-encoded into a decoded string.                 For example: *=HtmlDecode("&amp;Telerik")* will return &Telerik|
 | __Uri(uriString,uriKind)__ |uriString (string)uriKind (string) *optional, the default is RelativeOrAbsolute* |Returns an instance of *System.Uri* For example: *=Uri("c:\temp\myFile.json", "absolute")* will return *new Uri("c:\temp\myFile.json", System.UriKind.Absolute)*|
 
-
-
-
-# See Also
 

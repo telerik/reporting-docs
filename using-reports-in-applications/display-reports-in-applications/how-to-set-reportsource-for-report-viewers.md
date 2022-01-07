@@ -52,29 +52,25 @@ The specified report is processed locally on the same machine where the ReportVi
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
   ````C#
-	            var uriReportSource = new Telerik.Reporting.UriReportSource();
-	
-	            // Specifying an URL or a file path
-	            uriReportSource.Uri = "SampleReport.trdp";
-	
-	            // Adding the initial parameter values
-	            uriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
+var uriReportSource = new Telerik.Reporting.UriReportSource();
+
+// Specifying an URL or a file path
+uriReportSource.Uri = "SampleReport.trdp";
+
+// Adding the initial parameter values
+uriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
 ````
-
-
 
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateUriReportSourceSnippet}}
   ````VB
-	        Dim uriReportSource As New Telerik.Reporting.UriReportSource()
-	
-	        ' Specifying an URL or a file path
-	        uriReportSource.Uri = "SampleReport.trdp"
-	
-	        ' Adding the initial parameter values
-	        uriReportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
+Dim uriReportSource As New Telerik.Reporting.UriReportSource()
+
+' Specifying an URL or a file path
+uriReportSource.Uri = "SampleReport.trdp"
+
+' Adding the initial parameter values
+uriReportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
 ````
-
-
 
 ## Set up Report Viewers that operate via Telerik Reporting Services
 
@@ -120,21 +116,21 @@ __Setting the Client-Side ReportSource:__
 
 * __[HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})__ The HTML5 Viewer is a client-side widget that has a __client-side reportSource__ .               The __reportSource.report__  part is a string - the *report description string*                that can be a path to a TRDP or TRDX file, an assembly qualified name               of a report class, or other custom information set via string. For example:             
 
-	
+    
       ````html
-reportSource: { 
-			report: "Dashboard.trdp",
-			parameters: { CultureID: "en" }
+reportSource: {
+            report: "Dashboard.trdp",
+            parameters: { CultureID: "en" }
               }
 ````
 
 or
 
-	
+    
       ````html
-reportSource: { 
-			report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-			parameters: { CultureID: "en" }
+reportSource: {
+            report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+            parameters: { CultureID: "en" }
               }
 ````
 
@@ -154,40 +150,38 @@ The *report description string*  is sent to the [Telerik Reporting REST service]
 
 {{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
   ````c#
-	@{
-	    var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
-	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
-	}
-	
-	@(
-	    Html.TelerikReporting().ReportViewer()
-	        .Id("reportViewer1")
-	        .ServiceUrl("/api/reports/")
-	        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-	        .ReportSource(typeReportSource)
-	        .ViewMode(ViewMode.Interactive)
-	        .ScaleMode(ScaleMode.Specific)
-	        .Scale(1.0)
-	)
+@{
+    var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
+    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
+}
+
+@(
+    Html.TelerikReporting().ReportViewer()
+        .Id("reportViewer1")
+        .ServiceUrl("/api/reports/")
+        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+        .ReportSource(typeReportSource)
+        .ViewMode(ViewMode.Interactive)
+        .ScaleMode(ScaleMode.Specific)
+        .Scale(1.0)
+)
 ````
-
-
 
 {{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
   ````vb.net
-	@Code
-	    Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
-	    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
-	
-	    Html.TelerikReporting().ReportViewer() _
-	        .Id("reportViewer1") _
-	        .ServiceUrl("/api/reports/") _
-	        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-	        .ReportSource(typeReportSource) _
-	        .ViewMode(ViewMode.Interactive) _
-	        .ScaleMode(ScaleMode.Specific) _
-	        .Scale(1.0)
-	End Code
+@Code
+    Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
+    typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
+
+    Html.TelerikReporting().ReportViewer() _
+        .Id("reportViewer1") _
+        .ServiceUrl("/api/reports/") _
+        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+        .ReportSource(typeReportSource) _
+        .ViewMode(ViewMode.Interactive) _
+        .ScaleMode(ScaleMode.Specific) _
+        .Scale(1.0)
+End Code
 ````
 
 To display another report or to update the *client parameters* ' values of the current HTML5 Viewer object,               you can update the HTML5 Viewer's reportSource by using the viewer object's [reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})               method in JavaScript.  Or you can recreate the HTML5 ASP.NET MVC ReportViewer.             
@@ -202,20 +196,20 @@ To display another report or to update the *client parameters* ' values of the c
 
    + The  [Telerik.ReportViewer.Html5.WebForms.ReportSource.IdentifierType](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportSource#Telerik_ReportViewer_Html5_WebForms_ReportSource_IdentifierType)  property                   hints which resolver can be used for resolving the report description string on the server.                 __Example of setting the client-side ReportSource in code-behind:__ 
 
-	
+    
       ````c#
-                var clientReportSource = new Telerik.ReportViewer.Html5.WebForms.ReportSource();
-                clientReportSource.IdentifierType = IdentifierType.TypeReportSource;
-                clientReportSource.Identifier = typeof(ReportCatalog).AssemblyQualifiedName;//or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
-                clientReportSource.Parameters.Add("Parameter1", 123);
-                reportViewer1.ReportSource = clientReportSource;
+var clientReportSource = new Telerik.ReportViewer.Html5.WebForms.ReportSource();
+clientReportSource.IdentifierType = IdentifierType.TypeReportSource;
+clientReportSource.Identifier = typeof(ReportCatalog).AssemblyQualifiedName;//or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
+clientReportSource.Parameters.Add("Parameter1", 123);
+reportViewer1.ReportSource = clientReportSource;
 ````
 ````vb.net
-              Dim clientReportSource As New Telerik.ReportViewer.Html5.WebForms.ReportSource
-              clientReportSource.IdentifierType = Telerik.ReportViewer.Html5.WebForms.IdentifierType.TypeReportSource
-              clientReportSource.Identifier = GetType(ReportCatalog).AssemblyQualifiedName 'or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
-              clientReportSource.Parameters.Add("Parameter1", 123)
-              reportViewer1.ReportSource = clientReportSource
+Dim clientReportSource As New Telerik.ReportViewer.Html5.WebForms.ReportSource
+clientReportSource.IdentifierType = Telerik.ReportViewer.Html5.WebForms.IdentifierType.TypeReportSource
+clientReportSource.Identifier = GetType(ReportCatalog).AssemblyQualifiedName 'or <namespace>.<class>, <assembly> e.g. "MyReports.Report1, MyReportsLibrary"
+clientReportSource.Parameters.Add("Parameter1", 123)
+reportViewer1.ReportSource = clientReportSource
 ````
 
 __Example of setting the client-side ReportSource via mark-up:__ 
@@ -230,21 +224,21 @@ __Example of setting the client-side ReportSource via mark-up:__
 
    1. Click __Edit Parameters__  button - __Edit Parameters__  dialog appears. Click __New__ .                   In the __Parameter Name__  column select the name of a report parameter in the report.                   In the __Parameter Value__ , type or select the value to pass to the parameter in the report.                 
 
-	
+    
       ````html
-    <form runat="server">
-        <telerik:ReportViewer Width="" Height=""
-            ID="reportViewer1"
-            runat="server">
-            <ReportSource 
-                IdentifierType="TypeReportSource" 
-                Identifier="Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-                <Parameters>
-                    <telerik:Parameter Name="Parameter1" Value="123" />
-                </Parameters>
-            </ReportSource>
-        </telerik:ReportViewer>
-    </form>
+<form runat="server">
+    <telerik:ReportViewer Width="" Height=""
+        ID="reportViewer1"
+        runat="server">
+        <ReportSource
+            IdentifierType="TypeReportSource"
+            Identifier="Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+            <Parameters>
+                <telerik:Parameter Name="Parameter1" Value="123" />
+            </Parameters>
+        </ReportSource>
+    </telerik:ReportViewer>
+</form>
 ````
 
 To display another report or to update the *client parameters* ' values of the current HTML5 Viewer object,               you can update the HTML5 Viewer's reportSource by using the viewer object's [reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})               method in JavaScript. Or you can recreate the HTML5 WebForms ReportViewer.             
@@ -271,7 +265,6 @@ To display another report or to update the *client parameters* ' values of the c
 
 >important  [Telerik Report Server](http://www.telerik.com/report-server) 's REST Service can use only its built-in Report Source Resolver, capable of handling client-side UriReportSource into a server-side UriReportSource on the server             ([Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})).             Reports must be [serialized in TRDX files]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) or             [packaged in TRDP files]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) which can be published on Telerik Report Server             - [Working with Report Server Reports]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports%}).           Thus the  __client-side ReportSource is limited to UriReportSource__ ,             where the  *report description string*  must be in a format:  __[CategoryName]/[ReportNameWithoutFileExtension]__              e.g. "Samples/Dashboard" which will request the Dashboard.trdx|trdp file that is published on Telerik Report Server under the "Samples" category.           
 
-
 The following Report Viewers are designed to work as clients of  [Telerik Report Server](http://www.telerik.com/report-server) :         
 
 * __HTML5 Report Viewer__                - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__                (go to section [link](1d2ff87d-335f-4640-be56-e2737220a8c9#HTML5ViewerClientReportSource))             
@@ -287,7 +280,6 @@ The following Report Viewers are designed to work as clients of  [Telerik Report
 These Report Viewers do not have direct access to Telerik Reporting Engine. Reports are processed and rendered on a remote machine where Telerik Report Server is running,           and the content is delivered to the client by __Telerik Report Server's REST Service__ .         
 
 # See Also
-
 
  * [How to: Implement and use custom IReportResolver (Reporting WCF Service's Report Resolver)]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%})
 

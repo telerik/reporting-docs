@@ -28,21 +28,18 @@ The following list describes the prerequisites for this tutorial:
 
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__  file               of the project hosting the Reporting REST service:             
 
-	
+    
       ````xml
 <connectionStrings>
-	 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-	            connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-	            providerName="System.Data.SqlClient" />
+     <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
+                connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
+                providerName="System.Data.SqlClient" />
 </connectionStrings>
 ````
-
-
 
 ## Using Angular Report Viewer in Angular application
 
 >tip All paths and url links in the described steps must be adapted according             to your project setup.           
-
 
 ###Steps:
 
@@ -50,56 +47,44 @@ The following list describes the prerequisites for this tutorial:
 
 1. Install  [jQuery](https://www.npmjs.com/package/jquery)  by using the following command:                 
 
-	
+    
     ````powershell
 npm install jquery
 ````
 
-
-
 1. Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):
 
-	
+    
     ````js
 "scripts": [ "../node_modules/jquery/dist/jquery.js" ]
 ````
 
-
-
 1. Install the Telerik Angular Report Viewer NPM package by running:                 
 
-	
+    
     ````powershell
 npm install @progress/telerik-angular-report-viewer
 ````
 
-
-
     >tip If you receive a  *403 Forbidden Error* , you need to register and login at                      [npmjs.com](https://www.npmjs.com/) before performing this step.                   
 
-	
+    
     ````powershell
 npm login --registry=https://registry.npmjs.org --scope=@progress
 ````
 
-
-
-
-
 1. Once installed, import the TelerikReportingModule in  [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity) :                 
 
-	
+    
     ````js
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 ...
 imports: [TelerikReportingModule]
 ````
 
-
-
 1. Add the desired report viewer container style using a property of the AppComponent class:
 
-	
+    
     ````js
 export class AppComponent {
   viewerContainerStyle = {
@@ -111,13 +96,11 @@ export class AppComponent {
 }
 ````
 
-
-
 1. Use the report viewer selector in the AppComponent template:
 
-	
+    
     ````HTML
-<tr-viewer 
+<tr-viewer
     [containerStyle]="viewerContainerStyle"
     [serviceUrl]="'http://myrestserviceurl/api/reports'"
     [reportSource]="{
@@ -134,39 +117,32 @@ export class AppComponent {
 
 1. Style the viewer using the desired Kendo UI theme (еither using  [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)  or  [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) ):                     Add references to the Less-based CSS files in the ```<head>``` element of index.html:
 
-	
+    
     ````html
-<!-- The required Less-based styles -->                  
+<!-- The required Less-based styles -->
 <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
 <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
-
-
 
     >tip To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ( [Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes) ).                   
 
     If you use the __styleUrls__  attribute to reference the CSS, it is required to set                   the view encapsulation to __None__ :                 
 
-	
+    
     ````js
 import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   encapsulation: ViewEncapsulation.None
 ````
 
-
-
 1. Run the application:
 
-	
+    
     ````powershell
 ng serve
 ````
 
-
-
 # See Also
-
 
 # See Also
 

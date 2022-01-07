@@ -19,7 +19,6 @@ position: 8
 *  [Guidance for using reports from an existing .NET Framework 4+ report library in a .NET Core application](https://docs.telerik.com/reporting/knowledge-base/use-existing-report-library-in-net-core-app) 
 *  [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](https://docs.telerik.com/reporting/knowledge-base/how-to-implement-telerik-reporting-in-asp-net-core-mvc) >
 
-
 In case you are not familiar with ASP.NET Core, check it out on the  [official page](https://www.asp.net/core) .       
 
 Telerik Reporting ASP.NET Core packages are available as of Telerik Reporting R3 2016 SP1 release.         They are built against the __full .NET Framework__ .       
@@ -62,7 +61,7 @@ Telerik Reporting relies on the ConfigurationManager to resolve named connection
 
    1. Change the PropertyGroup section to look like:                 
 
-	
+    
       ````html
 <PropertyGroup>
   <TargetFramework>net461</TargetFramework>
@@ -81,7 +80,6 @@ ASP.NET Core does not support references to assemblies, but instead works with N
 *  __Microsoft.AspNetCore__ 
 *  __Microsoft.AspNetCore.Mvc__ >
 
-
 To setup the Reporting REST service download __Telerik.Reporting__            and __Telerik.Reporting.Services.AspNetCore__            NuGet packages from the private Telerik NuGet feed at            [https://nuget.telerik.com/nuget](https://nuget.telerik.com/nuget) .           How to add a NuGet feed is explained in            [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume) 
 
  [Telerik account](https://www.telerik.com/account)  is required to access the private repository.         
@@ -98,7 +96,7 @@ For Office OpenXML document formats (XLSX, DOCX and PPTX) install the           
 
 1. Implement a Reports controller. Right-click on the __Controllers__                folder and add a new item: Add - New item - __Web API Controller Class__  item.               Name it ReportsController. This will be our Telerik Reporting REST service in the project.             Inherit the __ReportsControllerBase__  type               and provide proper settings for ReportSourceResolver and Storage.               This is how a basic implementation of the controller should look like:             
 
-	
+    
       ````c#
 namespace WebApplication1.Controllers
 {
@@ -137,8 +135,6 @@ namespace WebApplication1.Controllers
 }
 ````
 
-
-
 ## Adding the HTML5 Report Viewer
 
 1. To set up a folder for the reports, right-click on *wwwroot*  and select __Add > New Folder__ .               Name the folder __Reports__  and add sample reports in TRDP format. Find the sample reports in               *{Telerik Reporting installation path}\Report Designer\Examples*                Note that the name of the folder is considered with the folder path used by the UriReportSourceResolver in the ReportsController.             This tutorial will use __Barcodes Report.trdp__  in all examples.             
@@ -147,58 +143,58 @@ namespace WebApplication1.Controllers
 
 1. Add the HTML5 Report Viewer. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.             The complete report viewer page should look like this:
 
-	
+    
       ````html
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <meta charset="utf-8" /> 
-    <title></title> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
-    <link href="http://cdn.kendostatic.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" /> 
-    <link href="http://cdn.kendostatic.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" /> 
-    <script src="telerikReportViewer.kendo-<token>buildversion</token>"></script> 
-    <script src="/api/reports/resources/js/telerikReportViewer-<token>buildversion</token>"></script> 
-    <style> 
-        #reportViewer1 { 
-            position: absolute; 
-            left: 5px; 
-            right: 5px; 
-            top: 50px; 
-            bottom: 5px; 
-            overflow: hidden; 
-            font-family: Verdana, Arial; 
-        } 
-    </style> 
-</head> 
-<body> 
-    <div id="reportViewer1"> 
-        loading... 
-    </div> 
-    <script> 
-        $(document).ready(function () { 
-            $("#reportViewer1") 
-                .telerik_ReportViewer({ 
-                    serviceUrl: "api/reports/", 
-                    reportSource: { 
-                        //report: "Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary", 
-                        report: "Barcodes Report.trdp", 
-                        parameters: {} 
-                    }, 
-                    viewMode: telerikReportViewer.ViewModes.INTERACTIVE, 
-                    scaleMode: telerikReportViewer.ScaleModes.SPECIFIC, 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link href="http://cdn.kendostatic.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
+    <script src="telerikReportViewer.kendo-<token>buildversion</token>"></script>
+    <script src="/api/reports/resources/js/telerikReportViewer-<token>buildversion</token>"></script>
+    <style>
+        #reportViewer1 {
+            position: absolute;
+            left: 5px;
+            right: 5px;
+            top: 50px;
+            bottom: 5px;
+            overflow: hidden;
+            font-family: Verdana, Arial;
+        }
+    </style>
+</head>
+<body>
+    <div id="reportViewer1">
+        loading...
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#reportViewer1")
+                .telerik_ReportViewer({
+                    serviceUrl: "api/reports/",
+                    reportSource: {
+                        //report: "Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary",
+                        report: "Barcodes Report.trdp",
+                        parameters: {}
+                    },
+                    viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
+                    scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
                     scale: 1.0
-                }); 
-        }); 
-    </script> 
-</body> 
+                });
+        });
+    </script>
+</body>
 </html>
 ````
-
-
 
    >note The reference to the report viewer's JavaScript file ( *telerikReportViewer-x.x.x.x.min.js* )                 should be updated to the corresponding version of the Reporting NuGet package.               
 
 1. Set the launchSettings.json launchUrl to the new HTML page.             
 
 1. Finally, run the project to see the report.             
+
+

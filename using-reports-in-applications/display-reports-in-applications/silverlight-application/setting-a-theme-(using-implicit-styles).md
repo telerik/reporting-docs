@@ -52,7 +52,6 @@ Additionally the xaml file with the corresponding Report Viewer theme has to be 
 
 >note You should not set Application Theme using the StyleManager when using implicit styles.           
 
-
 ## Basing styles on an existing Report Viewer theme
 
 Currently to change an existing Report Viewer theme you can simply copy the original theme and edit the copy. All the styles that are part of the Report Viewer can be found in the respective xaml file. If you need to edit existing Silverlight UI Controls please check the respective article for more information:            [Telerik UI for Silverlight - Setting a Theme (Using Implicit Styles)](http://www.telerik.com/help/silverlight/styling-apperance-implicit-styles-overview.html) 
@@ -71,23 +70,23 @@ We will apply implicit styles for the Vista theme in our example project.
 
 * The next step is to merge these ResourceDictionaries in the App.xaml file:
 
-	
+    
       ````XML
-     <Application x:Class="SilverlightApplication1.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             >
-      <Application.Resources>
-        <ResourceDictionary>
-          <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="/SilverlightApplication1;component/Themes/System.Windows.xaml"/>
-            <ResourceDictionary Source="/SilverlightApplication1;component/Themes/Telerik.Windows.Controls.xaml"/>
-            <ResourceDictionary Source="/SilverlightApplication1;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
-            <ResourceDictionary Source="/SilverlightApplication1;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-            <ResourceDictionary Source="/SilverlightApplication1;component/Themes/Telerik.ReportViewer.Silverlight.xaml"/>
-          </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-      </Application.Resources>
-    </Application>
+<Application x:Class="SilverlightApplication1.App"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        >
+ <Application.Resources>
+   <ResourceDictionary>
+     <ResourceDictionary.MergedDictionaries>
+       <ResourceDictionary Source="/SilverlightApplication1;component/Themes/System.Windows.xaml"/>
+       <ResourceDictionary Source="/SilverlightApplication1;component/Themes/Telerik.Windows.Controls.xaml"/>
+       <ResourceDictionary Source="/SilverlightApplication1;component/Themes/Telerik.Windows.Controls.Input.xaml"/>
+       <ResourceDictionary Source="/SilverlightApplication1;component/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+       <ResourceDictionary Source="/SilverlightApplication1;component/Themes/Telerik.ReportViewer.Silverlight.xaml"/>
+     </ResourceDictionary.MergedDictionaries>
+   </ResourceDictionary>
+ </Application.Resources>
+</Application>
 ````
 

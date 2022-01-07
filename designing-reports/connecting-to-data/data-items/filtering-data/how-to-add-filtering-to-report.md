@@ -40,36 +40,28 @@ To add filters to the Report use the following steps:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewFilterSnippet}}
 ````C#
-	
-	            Telerik.Reporting.Filter filter1 = new Telerik.Reporting.Filter();
-	            filter1.Expression = "=Fields.ProductID";
-	            filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan;
-	            filter1.Value = "=10";
-	
-	            report1.Filters.Add(filter1);
-	
+Telerik.Reporting.Filter filter1 = new Telerik.Reporting.Filter();
+filter1.Expression = "=Fields.ProductID";
+filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan;
+filter1.Value = "=10";
+
+report1.Filters.Add(filter1);
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewFilterSnippet}}
 ````VB
-	
-	        Dim filter1 As New Telerik.Reporting.Filter()
-	        filter1.Expression = "=Fields.ProductID"
-	        filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan
-	        filter1.Value = "=10"
-	
-	        report1.Filters.Add(filter1)
-	
+Dim filter1 As New Telerik.Reporting.Filter()
+filter1.Expression = "=Fields.ProductID"
+filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan
+filter1.Value = "=10"
+
+report1.Filters.Add(filter1)
 ````
-
-
 
 ## 
 
 >tip The Report can have a complex structure due to added groups.             You can filter data per group by using the corresponding group's Filters collection.           The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the             Report's structure and the each group's properties.           
 
-
 # See Also
-
 
  * [Report](/reporting/api/Telerik.Reporting.Report) 
 

@@ -43,5 +43,3 @@ To delete a Calculated Field, use the Delete Button
 >note Names must be unique in the datasource and the expression for a calculated                   field cannot contain aggregates, RowNumber or ColumnNumber global functions.                 
 
 
-# See Also
-

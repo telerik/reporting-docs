@@ -18,13 +18,11 @@ The boxes on the top row represent the report items contained in a Graph series.
 
 >note  __Example:__ The LegendItem Mark consists of two parts - a line and a marker. The color of the mark line is set by the LineSeries' line color.           The color of the marker and its line properties are affected by the DataPointStyle definition.         Please note that setting a conditional formatting that changes the line style on the Line/Area series definition will affect the line style of the legend marker,           but setting a similar conditional formatting on the DataPoint will not affect the LegendItem's marker style and it will be only applied on the DataPoint style.         
 
-
 ##   
 
   ![Style Resolving Fallback Algorithm](images/Graph/StyleResolvingFallbackAlgorithm.png)
 
 # See Also
-
 
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 

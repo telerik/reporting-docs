@@ -16,7 +16,6 @@ Below is a list of all available report viewer events.
 
 ## Events
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __ready__ | *function();*  *optional;* A callback function that will be called when the viewer content has been loaded from the template and is ready to display reports                 or perform any other operations on it. The function is executed in the context of the ReportViewer object that is available through                 the __this__ object.|
@@ -35,8 +34,5 @@ Below is a list of all available report viewer events.
 | __interactiveActionEnter__ | *function(e, args);optional;* A callback function that will be called when the mouse cursor enters the area of an interactive action.|
 | __interactiveActionLeave__ | *function(e, args);optional;* A callback function that will be called when the mouse cursor leaves the area of an interactive action.|
 | __viewerToolTipOpening__ | *function(e, args);optional;* A callback function that will be called when a tooltip is being opened|
-
-
-
 
 For more details on each event and its arguments/return value, please refer to the           [HTML5 Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)%}).         

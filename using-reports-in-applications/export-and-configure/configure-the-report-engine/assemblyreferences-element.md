@@ -16,32 +16,26 @@ Defines a collection of assembly references that are used from Reporting Engine 
 
 XML-based configuration file:
 
-	
+    
 ````xml
-    	<assemblyReferences>
-        	<add />
-        	<clear />
-        	<remove />
-		</assemblyReferences>
+<assemblyReferences>
+    <add />
+    <clear />
+    <remove />
+</assemblyReferences>
 ````
-
-
 
 JSON-based configuration file:
 
-	
+    
 ````js
-    "assemblyReferences": [
-    ],
+"assemblyReferences": [
+],
 ````
-
-
 
 ## Attributes and Elements
 
 The following sections describe attributes, child elements, and parent elements.
-
-
 
 |   |   |
 | ------ | ------ |
@@ -49,16 +43,13 @@ Attributes|None|
 |Child Elements|*  __add__ - Optional element. Adds an assembly reference to the collection.<br/>*  __clear__ - Optional element. Removes all references to inherited assembly names,<br/>                  allowing only the references that are added by the current add element.<br/>*  __remove__ - Optional element. Removes a reference to an inherited assembly name from<br/>                  the collection.|
 |Parent Elements|*  __configuration__ - Specifies the root element in every configuration file that is used by<br/>                  the common language runtime and the .NET Framework applications.<br/>*  __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses|
 
-
-
-
 ## Example
 
 The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly           assembly as source for user functions. In this example it would also search for assemblies in MyDir and           SubDir application base subdirectories as we have explicitly instructed that via the ```<probing>``` Element.           This is not mandatory, and when not specified, it would search in the application base, which is the root           location where the application is being executed.         
 
 XML-based configuration file:
 
-	
+    
 ````xml
 <?xml version="1.0"?>
 <configuration>
@@ -67,43 +58,37 @@ XML-based configuration file:
     </configSections>
     <runtime>
     <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-    	  <probing privatePath="MyDir; MyDir2\SubDir"/>
+          <probing privatePath="MyDir; MyDir2\SubDir"/>
     </assemblyBinding>
- 	  </runtime>
-	  <Telerik.Reporting>
-		  <assemblyReferences>
-			  <add name="MyUserFunctionsAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
-    	</assemblyReferences>
- 	  </Telerik.Reporting>
+       </runtime>
+      <Telerik.Reporting>
+          <assemblyReferences>
+              <add name="MyUserFunctionsAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
+        </assemblyReferences>
+       </Telerik.Reporting>
    ...
 </configuration>
 ````
 
-
-
 JSON-based configuration file:
 
-	
+    
 ````js
-          "telerikReporting": {
-            "assemblyReferences": [
-                {
-                  "name": "MyUserFunctionsAssembly",
-                  "version": "1.0.0.0",
-                  "culture": "neutral",
-                  "publicKeyToken": "null"
-                }
-              ]
-          }
+"telerikReporting": {
+  "assemblyReferences": [
+      {
+        "name": "MyUserFunctionsAssembly",
+        "version": "1.0.0.0",
+        "culture": "neutral",
+        "publicKeyToken": "null"
+      }
+    ]
+}
 ````
-
-
 
 >important When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`             element of configuration file. Failing to do so will result in a              [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)              with following text:  *Configuration system failed to initialize* .           
 
-
 # See Also
-
 
 # See Also
 

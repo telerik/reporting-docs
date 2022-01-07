@@ -70,9 +70,8 @@ Although the fastest and most convenient way to get a working HTML5 viewer in yo
 
 1. Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) article to get your HTML5 viewer working.                   Examine the produced HTML page and especially the section that configures the viewer:                 
 
-	
+    
     ````javascript
-
 $("#reportViewer1")
 .telerik_ReportViewer({
 serviceUrl: "/api/reports/",
@@ -86,21 +85,16 @@ CultureID: "en"
 });
 ````
 
-
-
-
 1. Locate the line that sets the service URL: `serviceUrl: "/api/reports/",`.                   Comment it out or replace it with the following code:                 
 
-	
+    
     ````javascript
-
 reportServer: {
 url: "http://yourReportServerUrl:port",
 username: null,
 password: null
 },
 ````
-
 
     Substitute the `yourReportServerUrl:port` with the actual url of your Report Server instance along with the port if needed.                   Specifying the username and password can be omitted (in this case the Report Server's Guest account will be used) or can be set to an                   actual account, defined in Report Server.                 
 
@@ -110,9 +104,8 @@ password: null
 
 1. The initialization should look like the following:                 
 
-	
+    
     ````javascript
-
 $("#reportViewer1")
 .telerik_ReportViewer({
 reportServer: {
@@ -132,15 +125,11 @@ ReportYear: 2004
 });
 ````
 
-
-
-
 1. Run the project and you should see the configured in the previous step report appearing in the Report Viewer. If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 
 
 ## Troubleshooting
 
 The most common reasons for failure are related with the authentication against Report Server. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
-
 
 | Problem | Cause |
 | ------ | ------ |
@@ -150,11 +139,7 @@ The most common reasons for failure are related with the authentication against 
 |The viewer loads the template, but displays a message`Unable to get report parameters. Access denied.`|Make sure that the user account has permissions to read the specified report and category.|
 |The viewer doesn't load any page and there is only a label saying __loading...__ in the top left page corner.|Check the Fiddler log for a request to the`/Token`URL.                 This is the request that should obtain the token used to authenticate the user account. When found, check the Response headers and look for the error code below:<br/>* `HTTP/1.1 502 Fiddler - DNS Lookup Failed`- make sure you have set the Report Server URL correctly.<br/>* `HTTP/1.1 400 Bad Request`- check if the built-in Guest user is __Enabled__ and has __Read__ permissions for configured report|
 
-
-
-
 # See Also
-
 
  * [How To: Use HTML5 Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
 

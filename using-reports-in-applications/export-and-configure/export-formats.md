@@ -24,14 +24,9 @@ If you want to set rendering extension parameters for a specific report or rende
 
 >caution For Windows applications the configuration file is called app.config and for ASP.NET applications – web.config. For more information             about configuring a .NET application, see               [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/) .           
 
-
 >caution All configuration settings on Telerik Reporting engine are applied only at runtime, not in design-time.
 
-
 The following table describes the rendering extensions that are included with Telerik Reporting:
-
-
-
 
 | Extension Name | Description | Optional Settings | Type |
 | ------ | ------ | ------ | ------ |
@@ -54,9 +49,6 @@ The following table describes the rendering extensions that are included with Te
 |XAMLInteractive|Renders a report in XAML for Silverlight with [interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).                 (This is a multi-stream rendering extension and should be only used with                   [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__) ). __Telerik internal use only__ .|-|Telerik.Reporting.XamlRendering.SilverlightReportInteractive, Telerik.Reporting, Version= __x.x.x.x__ ,                 Culture=neutral, PublicKeyToken=a9d7983dfcc261be|
 |WPFXAML|Renders a report in XAML for WPF with [physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).                 (This is a multi-stream rendering extension and should be only used with                   [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__) ).|-|Telerik.Reporting.XamlRendering.WpfReport, Telerik.Reporting, Version= __x.x.x.x__ , Culture=neutral,                 PublicKeyToken=a9d7983dfcc261be|
 |WPFXAMLInteractive|Renders a report in XAML for WPF with [interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).                 (This is a multi-stream rendering extension and should be only used with                   [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__) ). __Telerik internal use only__ .|-|Telerik.Reporting.XamlRendering.WpfReportInteractive, Telerik.Reporting, Version= __x.x.x.x__ ,                 Culture=neutral, PublicKeyToken=a9d7983dfcc261b|
-
-
-
 
 >note Replace the  __x.x.x.x__  version number above with the version of Telerik Reporting assembly that you are using.
 

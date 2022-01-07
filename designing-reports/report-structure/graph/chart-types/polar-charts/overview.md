@@ -32,5 +32,4 @@ The following image displays a Rose polar chart:
 
 # See Also
 
-
  * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries) 

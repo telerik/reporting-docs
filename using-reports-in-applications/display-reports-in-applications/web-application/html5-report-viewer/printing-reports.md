@@ -34,9 +34,7 @@ The print functionality requires:
 
 >important In  __Google Chrome 77+__  [printing is allowed only in response to a user gesture](https://pdfium.googlesource.com/pdfium.git/+/2021804f1b414c97667c03d7ab19daf66f6a19ef) .             This prevents the print dialog opening automatically when a PDF is embedded in a web page             and the user needs to click on the print button manually to invoke the print preview dialog.           
 
-
 >important In  __Firefox 19+__  the default viewing option for PDF files is the  __PDF.js__ ,             which is not added as a plug-in and Firefox does not expose the content type viewing preferences -  [Firefox bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=840439) .             Thus the Adobe PDF plug-in is always active whether or not it is the preferred viewing option.             To ensure the print operation in Firefox will be accomplished, clicking the print button would             export the report to PDF which will be printed with the available client viewing tools.           
-
 
 By default the viewer widget tries to use the PDF plug-in of the browser for printing. When it is not available           or not supported, the widget falls back to exporting to a PDF file containing a special 'print'           script. The purpose of this script is to open the Print dialog of the PDF reader right after the file has been opened.         
 
@@ -44,22 +42,20 @@ You can manually control the printing behavior through the           [printMode]
 
 You can also implement a custom logic for dynamically specifying the print mode. For example:
 
-	
+    
 ````js
-          // Force the viewer to always use the PDF plug-in for printing in Chrome browser.
-          // In the other browsers the report document will be downloaded as a PDF file:
-           var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase()) 
-              ? telerikReportViewer.PrintModes.FORCE_PDF_PLUGIN 
-              : telerikReportViewer.PrintModes.FORCE_PDF_FILE;
-           $("#reportViewer1")
-               .telerik_ReportViewer({
-                   serviceUrl: "../api/reports/",
-                   templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
-                   reportSource: { report: "product catalog.trdp" },
-                   printMode: printMode
-            });
+// Force the viewer to always use the PDF plug-in for printing in Chrome browser.
+// In the other browsers the report document will be downloaded as a PDF file:
+ var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase())
+    ? telerikReportViewer.PrintModes.FORCE_PDF_PLUGIN
+    : telerikReportViewer.PrintModes.FORCE_PDF_FILE;
+ $("#reportViewer1")
+     .telerik_ReportViewer({
+         serviceUrl: "../api/reports/",
+         templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
+         reportSource: { report: "product catalog.trdp" },
+         printMode: printMode
+  });
 ````
-
-
 
 where x.x.x.x is the version of Telerik Reporting (e.g. 8.1.14.618).

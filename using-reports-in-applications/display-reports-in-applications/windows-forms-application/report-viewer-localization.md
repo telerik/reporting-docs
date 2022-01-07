@@ -40,11 +40,11 @@ If you follow the recommended practice of placing as many resources as possible 
 
 __The Report Viewer__  uses the following naming convention when searching for localized __RESX__  resource files in the main application folder:
 
-* The names of the __RESX__  localization resource files should have the following format:*Telerik.ReportViewer.WinForms.Resources.[culture].resx* Here “__[culture]__ ” is the name of the culture for the specified localization resource. For example, to provide a localization resource          	for the French Belgian culture, the corresponding resource file should be named as follows:*Telerik.ReportViewer.WinForms.Resources.fr-BE.resx* 
+* The names of the __RESX__  localization resource files should have the following format:*Telerik.ReportViewer.WinForms.Resources.[culture].resx* Here “__[culture]__ ” is the name of the culture for the specified localization resource. For example, to provide a localization resource              for the French Belgian culture, the corresponding resource file should be named as follows:*Telerik.ReportViewer.WinForms.Resources.fr-BE.resx* 
 
-* Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should  	be named as follows:*Telerik.ReportViewer.WinForms.Resources.fr.resx* 
+* Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should      be named as follows:*Telerik.ReportViewer.WinForms.Resources.fr.resx* 
 
-* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the  		__Report Viewer__ . In that case the resource file should be named as follows:*Telerik.ReportViewer.WinForms.Resources.resx* 
+* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the          __Report Viewer__ . In that case the resource file should be named as follows:*Telerik.ReportViewer.WinForms.Resources.resx* 
 
 As described above, if for example the current UI culture is set to French Belgian, the __Report Viewer__  will search for localized __RESX__  resource files inside the main application folder in the following order:
 
@@ -78,7 +78,7 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
 ## Distributing an Application with a Localized Report Viewer
 
-In order to distribute an application that uses __Telerik Reporting__          	with a localized __Report Viewer__ , one should distribute all of the required          	localization __RESX__  resource files, in addition to the main application assemblies.          	For __Windows Forms Applications__  the __RESX__          	files should be placed in the same directory, where the application is installed.
+In order to distribute an application that uses __Telerik Reporting__              with a localized __Report Viewer__ , one should distribute all of the required              localization __RESX__  resource files, in addition to the main application assemblies.              For __Windows Forms Applications__  the __RESX__              files should be placed in the same directory, where the application is installed.
 
 ## Related articles
 
@@ -87,7 +87,6 @@ In order to distribute an application that uses __Telerik Reporting__          	
 [How to Add report viewer to a Windows Forms' .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
 
 # See Also
-
 
 # See Also
 

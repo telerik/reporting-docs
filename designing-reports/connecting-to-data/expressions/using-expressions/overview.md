@@ -28,5 +28,4 @@ In Telerik Reporting, expressions are used throughout the report       definitio
 
 * [Report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/report-parameters%})
 
-# See Also
 

@@ -20,11 +20,9 @@ The data field names for this data source are __case-sensitive__ . It is require
 
 >important In order to preview reports which use the WebServiceDataSource component it is required to reference the  __Telerik.Reporting.WebServiceDataSource__  DLL or the corresponding NuGet package           in your application.         
 
-
 ## Configuring the Component
 
 __Web Service Request Configuration:__ 
-
 
 | Setting | Description |
 | ------ | ------ |
@@ -37,43 +35,28 @@ __Web Service Request Configuration:__
 |Body|The body of the POST method. Applicable only for POST HTTP request method.|
 |Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.                 The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields                 with the expression result or static value|
 
-
-
-
 __Inline Data String Configuration:__ 
-
 
 | Setting | Description |
 | ------ | ------ |
 |Source|The inline data string containing the data. Required if Service URL or external data file is not set.Setting both Service URL and inline data string at the same time will reduce network load during design-time as no HTTP requests will be made while the report is designed.                 Instead the inline data will be used for any design-time operations. The Service URL will be used only at run-time                 (this includes data source preview and report preview operations).|
 |Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})|
 
-
-
-
 __External Data File Configuration:__ 
-
 
 | Setting | Description |
 | ------ | ------ |
 |Source|The external data file containing the data. The URI to the file might be relative or absolute. Required if Service URL or inline data string is not set.Setting both Service URL and external data file at the same time will reduce network load during design-time as no HTTP requests will be made while the report is designed.                 Instead the external data file will be used for any design-time operations. The Service URL will be used only at run-time                 (this includes data source preview and report preview operations).|
 |Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})|
 
-
-
-
 ## Basic Authentication Settings
 
 Below are listed the available settings for Basic authentication. The authentication scheme is defined in            [The 'Basic' HTTP Authentication Scheme (RFC 7617)](https://tools.ietf.org/html/rfc7617) . This scheme transmits credentials as username/password pairs, encoded using base64.         
-
 
 | Setting | Description |
 | ------ | ------ |
 |Username|The username used to authenticate. Required.|
 |Password|The password used to authenticate|
-
-
-
 
 ## 2-Step (Bearer) Authentication Settings
 
@@ -84,8 +67,6 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 *  [Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/) 
 
 >note  [Authorization Code Request](https://www.oauth.com/oauth2-servers/access-tokens/authorization-code-request/)  is not supported since it requires user interaction in a browser window, which is not applicable to all Reporting use cases.           
-
-
 
 | Setting | Description |
 | ------ | ------ |
@@ -100,15 +81,11 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 |Logout Method|Specifies the HTTP request method used for the Logout URL.|
 |Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.                 The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields                 with the expression result or static value|
 
-
-
-
 ## Cookie-Based Authentication
 
 It is possible to leverage the 2-Step Authentication mechanism above in order to retrieve a session cookie from the server which will authenticate subsequent requests.           In this scenario first a request will be sent to the server for authentication purposes and the response should contain the generated cookie for the authenticated user.           If the cookie domain and path matches the Web Service Data Source Service URL the cookie will be sent in the following data retrieval request.         
 
 >note When using cookie-based authentication, consider using '()' as value for the  __Token Path__  when configuring the 2-step authentication.            This will ensure that no token is found in the login-response and no token will be included in the subsequent requests.
-
 
 ## Supported developer platforms
 
@@ -119,6 +96,5 @@ It is possible to leverage the 2-Step Authentication mechanism above in order to
 * .NET Standard 2.0 and above             
 
 # See Also
-
 
  * [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%})

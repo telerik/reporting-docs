@@ -18,16 +18,12 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 1. Add a new SqlDatasource component for the graph with the following query:             
 
-	
+    
       ````sql
-
 SELECT DISTINCT YEAR(OrderDate) AS Year
 FROM         Sales.SalesOrderHeader
 ORDER BY Year
 ````
-
-
-
 
 1. Rename the data source to __yearDataSource__ .             
 
@@ -41,14 +37,10 @@ ORDER BY Year
 
 1. Change the WHERE clause in the following way:             
 
-	
+    
       ````sql
-
 WHERE  (YEAR(SOH.OrderDate) = @Year)
 ````
-
-
-
 
 1. Set __Configure data source parameters__  dialog in the following way:               
 

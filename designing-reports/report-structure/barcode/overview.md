@@ -48,36 +48,34 @@ The Barcode item is used for automatic barcode generation directly from a numeri
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Common_Settings}}
 ````cs
-	            var encoder = new Telerik.Reporting.Barcodes.Code128AEncoder();
-	
-	            // Set any specific encoder settings...
-	            encoder.ShowText = false; // The default value is true.
-	
-	            this.barcode1.Encoder = encoder;
-	            this.barcode1.Angle = 90;
-	            this.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
-	            this.barcode1.Checksum = true;
-	            this.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3);
-	            this.barcode1.Stretch = false;
-	            this.barcode1.Value = "1234567890";
+var encoder = new Telerik.Reporting.Barcodes.Code128AEncoder();
+
+// Set any specific encoder settings...
+encoder.ShowText = false; // The default value is true.
+
+this.barcode1.Encoder = encoder;
+this.barcode1.Angle = 90;
+this.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
+this.barcode1.Checksum = true;
+this.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3);
+this.barcode1.Stretch = false;
+this.barcode1.Value = "1234567890";
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Common_Settings}}
 ````vbnet
-	        Dim encoder = New Telerik.Reporting.Barcodes.Code128AEncoder()
-	
-	        ' Set any specific encoder settings...
-	        encoder.ShowText = False 'The default value is True
-	
-	        Me.barcode1.Encoder = encoder
-	        Me.barcode1.Angle = 90
-	        Me.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left
-	        Me.barcode1.Checksum = True
-	        Me.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3)
-	        Me.barcode1.Stretch = False
-	        Me.barcode1.Value = "1234567890"
+Dim encoder = New Telerik.Reporting.Barcodes.Code128AEncoder()
+
+' Set any specific encoder settings...
+encoder.ShowText = False 'The default value is True
+
+Me.barcode1.Encoder = encoder
+Me.barcode1.Angle = 90
+Me.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left
+Me.barcode1.Checksum = True
+Me.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3)
+Me.barcode1.Stretch = False
+Me.barcode1.Value = "1234567890"
 ````
-
-
 
 # See Also
  * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  * [Encoder](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)  * [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  * [Module](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module)  * [Stretch](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch)  * [BarAlign](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign)  * [Angle](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle)  * [Checksum](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum) 

@@ -30,5 +30,4 @@ The following image shows an example of a stacked area chart:
 
 # See Also
 
-
  * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [AreaSeries](/reporting/api/Telerik.Reporting.AreaSeries)  * [ArrangeMode](/reporting/api/Telerik.Reporting.GraphSeries2D#Telerik_Reporting_GraphSeries2D_ArrangeMode)  * [SmoothLine](/reporting/api/Telerik.Reporting.AreaSeries#Telerik_Reporting_AreaSeries_SmoothLine) 

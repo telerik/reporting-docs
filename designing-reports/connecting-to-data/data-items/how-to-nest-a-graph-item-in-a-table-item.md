@@ -28,9 +28,8 @@ We will use the __AdventureWorks__  sample database and the [Telerik Report Desi
 
 1. Start the CrossTab Wizard and create a new DataSource with the following select statement:
 
-	
+    
     ````sql
-
 SELECT
 C.FirstName + ' ' + COALESCE (C.MiddleName, '') + ' ' + C.LastName AS SalesPersonName
 , YEAR(SOH.OrderDate) as OrderYear
@@ -45,9 +44,6 @@ INNER JOIN Production.ProductCategory AS PC ON PC.ProductCategoryID = PSC.Produc
 INNER JOIN HumanResources.Employee AS E ON E.EmployeeID = SP.SalesPersonID
 INNER JOIN Person.Contact AS C ON C.ContactID = E.ContactID
 ````
-
-
-
 
 1. On the following page add the __SalesPersonName__  field to the __RowGroups__  box,               __OrderYear__  to the __Column Groups__  box and the               __CategoryName__  field to the __Detail Values__  box,               where it will be automatically changed to __Count(CategoryName)__ .               After the wizard ends, you can make some design adjustments to the generated crosstab to make it look better.             
 
@@ -76,7 +72,6 @@ You can download the described report as a __.trdx__  report definition from the
 The same approach is used in the __Product Sales__  example report which is shipped with the Telerik Reporting installation.           This report displays the monthly sales trend using a line chart for the product subcategories and a column chart for the total fields.           You can see the report in action if you have a valid connection to the __AdventureWorks__  sample database.         
 
 # See Also
-
 
  * [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})
 

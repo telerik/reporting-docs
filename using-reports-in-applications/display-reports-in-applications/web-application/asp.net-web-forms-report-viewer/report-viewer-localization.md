@@ -14,7 +14,6 @@ position: 2
 
 >note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
-
 In the Web Report Viewer, localized resources are stored in separate __RESX__  resource files and loaded according to the current UI culture settings. To understand how localized resources are loaded, it is useful to think of them as being organized in a hierarchical manner.
 
 ## Types of Resources in the Hierarchy
@@ -43,13 +42,13 @@ If you follow the recommended practice of placing as many resources as possible 
 
 __The Report Viewer__  uses the following naming convention when searching for localized __RESX__  resource files in the main application folder:
 
-* The names of the __RESX__  localization resource files should have the following format:*Telerik.ReportViewer.WebForms.Resources.[culture].resx* Here “__[culture]__ ” is the name of the culture for the specified localization resource. For example, to provide a localization resource          	for the French Belgian culture, the corresponding resource file should be named as follows:*Telerik.ReportViewer.WebForms.Resources.fr-BE.resx* 
+* The names of the __RESX__  localization resource files should have the following format:*Telerik.ReportViewer.WebForms.Resources.[culture].resx* Here “__[culture]__ ” is the name of the culture for the specified localization resource. For example, to provide a localization resource              for the French Belgian culture, the corresponding resource file should be named as follows:*Telerik.ReportViewer.WebForms.Resources.fr-BE.resx* 
 
-* Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should  	be named as follows:*Telerik.ReportViewer.WebForms.Resources.fr.resx* 
+* Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should      be named as follows:*Telerik.ReportViewer.WebForms.Resources.fr.resx* 
 
-* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the  		__Report Viewer__ . In that case the resource file should be named as follows:*Telerik.ReportViewer.WebForms.Resources.resx* 
+* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the          __Report Viewer__ . In that case the resource file should be named as follows:*Telerik.ReportViewer.WebForms.Resources.resx* 
 
-As described above, if for example the current UI culture is set to French Belgian, the        		__Report Viewer__  will search for localized __RESX__         	resource files inside the main application folder in the following order:
+As described above, if for example the current UI culture is set to French Belgian, the                __Report Viewer__  will search for localized __RESX__             resource files inside the main application folder in the following order:
 
 1. Telerik.ReportViewer.WebForms.Resources. __fr-BE__  .resx
 
@@ -83,10 +82,9 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
 ## Distributing an Application with a Localized Report Viewer
 
-In order to distribute an application that uses __Telerik Reporting__         		with a localized __Report Viewer__ , one should distribute all of the required          	localization __RESX__  resource files, in addition to the main application assemblies. For __Web Sites__           	and __Web Applications__  the localization __RESX__  resource          	files should be placed in the "App_GlobalResources" folder. In case of Precompiled website, place the __RESX__           	file in the __bin__  folder.
+In order to distribute an application that uses __Telerik Reporting__                 with a localized __Report Viewer__ , one should distribute all of the required              localization __RESX__  resource files, in addition to the main application assemblies. For __Web Sites__               and __Web Applications__  the localization __RESX__  resource              files should be placed in the "App_GlobalResources" folder. In case of Precompiled website, place the __RESX__               file in the __bin__  folder.
 
 # See Also
-
 
 # See Also
 

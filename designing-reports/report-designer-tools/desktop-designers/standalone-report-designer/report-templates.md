@@ -24,15 +24,11 @@ Use the Export Template wizard to create new templates from reports that are cur
 
 1. In the __Select Template Options__  step, select options for your template:             
 
-
 | Template Options | Description |
 | ------ | ------ |
 |Template name|Specifies the name for the template to display in the __New__ menu option -> Available Templates in the File menu.|
 |Template description|Specifies a description of the template to display in the __New__ menu option -> Available Templates in the File menu.|
 |Preview Image|Select the icon to use for the template in the __New__ menu option -> Available Templates in the File menu. Click the __Browse__ button to browse for the desired image file. The selected icon file is included in the template when it is exported|
-
-
-
 
 1. Click __Finish__ . If the template name you have specified already exists, you would be asked to override it.             
 

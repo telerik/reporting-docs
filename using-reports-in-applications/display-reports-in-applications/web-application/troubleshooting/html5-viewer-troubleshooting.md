@@ -16,7 +16,6 @@ The article provides troubleshooting for commonly met issues with the HTML5 View
 
 >tip The recommended troubleshooting approach for the HTML5 Viewer is to use             [Fiddler](http://www.telerik.com/fiddler)  or other proxy tool to check the requests, their responses and statuses.            With Fiddler, information about requests and responses content can be seen in Fiddler - Inspectors - Request/Response - Raw tabs.            This will let you check requests to the Reporting REST service and determine if its URLs are correct and the relative paths are resolved correctly.           Relative paths may need adjustment depending on how the application is hosted -  [ASP.NET Web Project Paths](https://msdn.microsoft.com/en-us/library/ms178116.aspx) .         Another option to troubleshoot web applications is to use            [Fiddler Jam](http://www.telerik.com/fiddler) . It installs as a browser extension and collects logs for requests and responses performed in the browser.           The logs are securely stored and later can be shared with a third party for examination through a simple URL.           Fiddler Jam is being actively developed and might be a better choice than Fiddler in terms of deployment and integration.         
 
-
 The HTML5 Viewer displays content rendered through the [           Reporting HTML Rendering mechanism         ]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).       
 
 ## Error loading the report viewer's templates. (Template = /api/reports/resources/templates/telerikReportViewerTemplate-html).
@@ -53,5 +52,4 @@ The HTML5 Viewer is an HTML/CSS/JS widget, which gets content produced on the se
 
 The HTML5 WebForms ReportViewer is a wrapper of the HTML5 JavaScript Viewer.           The wrapper renders the JavaScript object in the page and registers scipts at the end of the page.           To update the viewer in the page, you can use its [exposed Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})           or you can make a full post-back to recreate the viewer object.         
 
-# See Also
 

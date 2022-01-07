@@ -18,25 +18,22 @@ This article explains how to attach client event handlers to an WebForms wrapper
 
 To attach a client event handler you have to set the appropriate ClientEvents tag as shown below:         
 
-	
+    
 ````xml
-        <telerik:ReportViewer
-            ID="reportViewer1"
-            runat="server">
-            <ClientEvents RenderingBegin="onRenderingBegin" />
+<telerik:ReportViewer
+    ID="reportViewer1"
+    runat="server">
+    <ClientEvents RenderingBegin="onRenderingBegin" />
 ````
 ````js
-          <script>
-            function onRenderingBegin() {
-                console.log("rendering begin!");
-            }
-          </script>
+<script>
+  function onRenderingBegin() {
+      console.log("rendering begin!");
+  }
+</script>
 ````
 
-
-
 The following table lists the available client events:         
-
 
 |  __Event__  |  __Description__  |
 | ------ | ------ |
@@ -57,8 +54,4 @@ The following table lists the available client events:
 |SendEmailBegin|Occurs before the report is exported and the E-mail message is sent. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)%})|
 |SendEmailEnd|Occurs after the report is exported and before the E-mail message is sent. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)%}|
 
-
-
-
-# See Also
 

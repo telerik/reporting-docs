@@ -12,14 +12,13 @@ position: 0
 
 
 
-Expressions in a report can contain functions. Functions are predefined formulas that perform calculations by using specific values,      	called arguments, in a particular order. Functions can be used to perform simple or complex calculations. The structure of a function      	begins with the function name, followed by an opening parenthesis, the arguments for the function separated by commas, and a closing      	parenthesis.
+Expressions in a report can contain functions. Functions are predefined formulas that perform calculations by using specific values,          called arguments, in a particular order. Functions can be used to perform simple or complex calculations. The structure of a function          begins with the function name, followed by an opening parenthesis, the arguments for the function separated by commas, and a closing          parenthesis.
 
-Arguments can be field references, numbers, text, and logical values such as TRUE or FALSE. Arguments can also be constants, formulas,     	or other functions. The arguments that you enter must produce a valid value for that argument. For example, if the formula is      	multiplying two integers, the result cannot be a text string.
+Arguments can be field references, numbers, text, and logical values such as TRUE or FALSE. Arguments can also be constants, formulas,         or other functions. The arguments that you enter must produce a valid value for that argument. For example, if the formula is          multiplying two integers, the result cannot be a text string.
 
-Telerik Reporting provides many built-in functions and also lets you create user-defined functions. The     	categories of built-in functions are listed on this page.     	
+Telerik Reporting provides many built-in functions and also lets you create user-defined functions. The         categories of built-in functions are listed on this page.         
 
 # See Also
-
 
  * [Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
 

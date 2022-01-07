@@ -28,19 +28,18 @@ The following image displays a plain range chart with one range area series:
 
 ## Design Considerations for Range Charts
 
-* Range chart types require two values per data point. These values represent a high value and a low value that define    			the range for each data point. 
+* Range chart types require two values per data point. These values represent a high value and a low value that define                the range for each data point. 
 
-* If only one value is specified, the range chart will display as if it were a regular area/bar/column chart, with    			one value per data point.
+* If only one value is specified, the range chart will display as if it were a regular area/bar/column chart, with                one value per data point.
 
-* Range charts are often used to graph data that contains minimum and maximum values for each category group in    			the dataset.
+* Range charts are often used to graph data that contains minimum and maximum values for each category group in                the dataset.
 
 * Displaying markers on each data point is not recommended for a range chart.
 
-* Like the area chart, in a plain range chart, if the values in multiple series are similar, the series will overlap.    			In this scenario, you may want to use a column range or bar range chart instead of a plain range chart.
+* Like the area chart, in a plain range chart, if the values in multiple series are similar, the series will overlap.                In this scenario, you may want to use a column range or bar range chart instead of a plain range chart.
 
 * Gantt charts can be created using a range bar chart.
 
 # See Also
-
 
  * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [RangeAreaSeries](/reporting/api/Telerik.Reporting.RangeAreaSeries)  * [RangeBarSeries](/reporting/api/Telerik.Reporting.RangeBarSeries) 

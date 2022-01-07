@@ -16,27 +16,23 @@ position: 0
 
 The *ReportViewer*  object is created through the [jQuery.fn.telerik_ReportViewer()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) function:                    
 
-	
+    
 ````js
-            $("#reportViewer1").telerik_ReportViewer({
-              serviceUrl: "../api/reports/",
-              templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
-              reportSource: { report: "product catalog.trdp", parameters: {CultureID: "en"} }
-            });
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "../api/reports/",
+  templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
+  reportSource: { report: "product catalog.trdp", parameters: {CultureID: "en"} }
+});
 ````
-
-
 
 where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8.1.14.618).
 
 To get the *ReportViewer*  object from the target HTML element:         
 
-	
+    
 ````js
-            var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 ````
-
-
 
 ## Report viewer methods
 
@@ -56,13 +52,13 @@ Checking the command state is especially useful if you are implementing your own
 
 Additionally you can change the state of the report viewer in your event handler if needed through the report viewer methods or commands.            Consider the following snippet:         
 
-	
+    
 ````js
-            // $(handler) is jQuery's shorthand for $(document).ready(handler)
-            $(function () {
-              var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-              reportViewer.commands.goToPage.exec(2);
-              reportViewer.scale(1.5);
-            });
+// $(handler) is jQuery's shorthand for $(document).ready(handler)
+$(function () {
+  var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+  reportViewer.commands.goToPage.exec(2);
+  reportViewer.scale(1.5);
+});
 ````
 

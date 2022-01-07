@@ -22,35 +22,32 @@ Below is an example that illustrates how to provide data source to the __Report_
 
 ## 
 
-	
+    
 ````cs
 private void Report1_NeedDataSource(object  sender, System.EventArgs e)
 {
-	string sql =
-	@"SELECT Production.Product.Name, Production.Product.ProductNumber FROM Production.Product";
-	string connectionString =
-	"Data Source=(local)\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True";
-	SqlDataAdapter adapter = new SqlDataAdapter(sql, connectionString);
-	DataSet dataSet = new DataSet();
-	adapter.Fill(dataSet);
-	(sender as Telerik.Reporting.Processing.Report).DataSource = dataSet;
+    string sql =
+    @"SELECT Production.Product.Name, Production.Product.ProductNumber FROM Production.Product";
+    string connectionString =
+    "Data Source=(local)\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True";
+    SqlDataAdapter adapter = new SqlDataAdapter(sql, connectionString);
+    DataSet dataSet = new DataSet();
+    adapter.Fill(dataSet);
+    (sender as Telerik.Reporting.Processing.Report).DataSource = dataSet;
 }
 ````
 ````vb.net
 Private Sub Report1_NeedDataSource(ByVal  sender As Object, ByVal e As System.EventArgs)
-	Dim sql As String = "SELECT Production.Product.Name, Production.Product.ProductNumber FROM Production.Product"
-	Dim connectionString As String = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"
-	Dim adapter As New SqlDataAdapter(sql, connectionString)
-	Dim dataSet As New DataSet()
-	adapter.Fill(dataSet)
-	TryCast(sender, Telerik.Reporting.Processing.Report).DataSource = dataSet
+    Dim sql As String = "SELECT Production.Product.Name, Production.Product.ProductNumber FROM Production.Product"
+    Dim connectionString As String = "Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=True"
+    Dim adapter As New SqlDataAdapter(sql, connectionString)
+    Dim dataSet As New DataSet()
+    adapter.Fill(dataSet)
+    TryCast(sender, Telerik.Reporting.Processing.Report).DataSource = dataSet
 End Sub
 ````
 
-
-
 # See Also
-
 
  * [Connecting to Data]({%slug telerikreporting/designing-reports/connecting-to-data/overview%})
 

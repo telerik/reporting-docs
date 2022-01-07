@@ -26,7 +26,7 @@ Here are the exact steps taken:
 
 1. Use the markup below for your ToolsFile.xml file
 
-	
+    
       ````xml
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
@@ -77,42 +77,34 @@ Here are the exact steps taken:
 </root>
 ````
 
-
-
 1. Since the inline text-decoration css property is not supported, disable the                             __FixUlBoldItalic__  filter:                         
 
-	
+    
       ````C#
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic);````
 ````VB
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.FixUlBoldItalic)````
 
-
-
-
 1. Since __HtmlTextBox__  works with font tags, disable the __ConvertFontToSpan__  filter,                             which converts the non __XHTML__  compliant Font tags with Span tags                         
 
-	
+    
       ````C#
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);````
 ````VB
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)````
 
-
-
-
 1. Strip the HTML formatting from pasted content, because the user could paste non well formed content                             which could break the __HtmlTextBox__  and the export to PDF feature. To do that set the __StripFormattingOptions__                              property to __"All"__  or __"AllExceptNewLines"__ .                         
 
 1. Use the following custom content filter, which will remove unsupported __HTML__  tags. Supported                             tags are: FONT, STRONG, B, EM, I, U, A, OL, UL, SUB, SUP, LI, DIV, SPAN, P, BR, CENTER.                         
 
-	
+    
       ````XML
-    <telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
-    </telerik:RadEditor>
+<telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">
+</telerik:RadEditor>
 ````
 ````JavaScript
 <script type="text/javascript">
-  	ReportingFilter = function()
+      ReportingFilter = function()
 {
     ReportingFilter.initializeBase(this);
     this.set_isDom(false);
@@ -146,9 +138,6 @@ ReportingFilter.registerClass('ReportingFilter', Telerik.Web.UI.Editor.Filter);
 </script>
 ````
 
-
-
 1. The __ConvertToXhtml__  filter should be enabled (default state).                         
 
-# See Also
 

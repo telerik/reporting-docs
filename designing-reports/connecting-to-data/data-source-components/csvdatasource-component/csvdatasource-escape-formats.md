@@ -16,9 +16,6 @@ The available Escape formats for the CsvDataSource component are None, Backslash
 
 ## 
 
-
-
-
 | Escape format | Description |
 | ------ | ------ |
 |None|No symbols are escaped.|
@@ -27,8 +24,4 @@ The available Escape formats for the CsvDataSource component are None, Backslash
 |Quotes|Excel uses single or double quotes to embed escaped text (in accordance to RFC 4180). Single or double quotes are escaped with second single or double quotes.|
 |QuotesMixed|Some files use a mixed escaping format -  fields are embedded in quotes (Excel like), quotes (single or double) are escaped with backslash (Unix like).                  Backslash is escaped with a second backslash|
 
-
-
-
-# See Also
 

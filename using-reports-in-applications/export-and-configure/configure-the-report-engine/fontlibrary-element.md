@@ -20,9 +20,7 @@ This element is respected only when the PDF rendering extension is used in .NET 
 
 The following sections describe attributes, child elements, and parent elements.
 
-
 >caption ```<fontLibrary>``` element
-
 
 |   |   |
 | ------ | ------ |
@@ -30,20 +28,12 @@ Attributes| __useDefaultLocations__ - determines if the system's default font lo
 |Child Elements|*  __add__ - Optional element. Adds a font location to the collection.|
 |Parent Elements|*  __configuration__ - Specifies the root element in every configuration file that is used by                     the common language runtime and the .NET Framework applications.<br/>*  __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses|
 
-
-
-
-
 >caption ```<add>``` element
-
 
 |Attribut|
 
-
-
 | __path__ |Required attribute. Specifies the path to a fonts folder. The path can be absolute or relative to the current application folder.|
 | __searchSubfolders__ |Required attribute. Determines if the subfolders of the specified path will be recursively traversed.
-
 
 |   |   |
 | ------ | ------ |
@@ -51,53 +41,45 @@ Attributes| __useDefaultLocations__ - determines if the system's default font lo
 |Child elements|None|
 |Parent element| __fontLibrary__|
 
-
-
-
 ## Example
 
 The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares a folder to be for used for font resolving.         
 
 XML-based configuration file:
 
-	
+    
 ````xml
 <?xml version="1.0"?>
 <configuration>
    ...
-	<Telerik.Reporting>
+    <Telerik.Reporting>
     <fontLibrary useDefaultLocations ="false">
       <fontLocations>
         <add path="/usr/customFonts/trueType" searchSubfolders="true"></add>
       </fontLocations>
-    </fontLibrary> 	
+    </fontLibrary>
   </Telerik.Reporting>
    ...
 </configuration>
 ````
 
-
-
 JSON-based configuration file:
 
-	
+    
 ````js
-  "telerikReporting": {
-    "fontLibrary": {
-      "useDefaultLocations": "false",
-      "fontLocations": [
-        {
-          "path": "/usr/customFonts/trueType",
-          "searchSubfolders": "true"
-        }
-      ]
-    }
+"telerikReporting": {
+  "fontLibrary": {
+    "useDefaultLocations": "false",
+    "fontLocations": [
+      {
+        "path": "/usr/customFonts/trueType",
+        "searchSubfolders": "true"
+      }
+    ]
   }
+}
 ````
 
-
-
 # See Also
-
 
  * [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})

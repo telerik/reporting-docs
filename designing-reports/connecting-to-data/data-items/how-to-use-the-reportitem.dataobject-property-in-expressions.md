@@ -24,7 +24,7 @@ The DataObject implements  [IDataObject](/reporting/api/Telerik.Reporting.Proces
 
 For example:       
 
-	
+    
 ````c#
 public class Phone
  {
@@ -37,22 +37,20 @@ public class Phone
 ````
 ````vb.net
 Public Class Phone
-	Public Property Number() As String
-		Get
-			Return _Number
-		End Get
-		Set
-			_Number = Value
-		End Set
-	End Property
-	Private _Number As String
-	Public Function GetFormattedNumber() As String
-		Return Number.Replace(" ", "-")
-	End Function
+    Public Property Number() As String
+        Get
+            Return _Number
+        End Get
+        Set
+            _Number = Value
+        End Set
+    End Property
+    Private _Number As String
+    Public Function GetFormattedNumber() As String
+        Return Number.Replace(" ", "-")
+    End Function
 End Class
 ````
-
-
 
 If the data object above is bound to a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), __=ReportItem.DataObject.RawData__  will return the exact data object of type __Phone__ .           This allows you to use the GetFormattedNumber method in an expression by calling __=ReportItem.DataObject.RawData.GetFormattedNumber()__ ,           or use a property of the type e.g., __=ReportItem.DataObject.RawData.Number__ .         
 
@@ -60,13 +58,9 @@ If the data object above is bound to a [data item]({%slug telerikreporting/desig
 
 In the context of data item ReportItem.DataObject references the parent's data item data.           Thus the ReportItem.DataObject.MyField retrieves the MyField data from the parent data item datasource.           This way you can make use of of the datasource relations capability.           For example when SqlDataSourceReport is set to the report and SqlDataSourceTable is set to a table.           You can bind the SqlDataSourceTable datasource parameter to a SqlDataSourceReport data field as shown in the following datasource parameter example:         
 
-
 | Name | Type | Value |
 | ------ | ------ | ------ |
 |@MyParameter|string|= ReportItem.DataObject.MyFiel|
-
-
-
 
 ## 
 
@@ -82,56 +76,45 @@ When complicated logic should be applied or .NET framework routines need to be u
 
 1. Put the following text in the SqlDataSource's SelectCommand value:
 
-	
+    
       ````sql
-
 select Contact.*
 from Person.Contact
 where Contact.AdditionalContactInfo is not null
 ````
 
-
-
-
 1. Place two textboxes on your report’s detail section.
 
 1. Set the first textbox's expression to
 
-
-
 |=Fields.FirstNam|
-
-
-
 
 1. Switch to code window and place the following code snippet:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.cs region=ReportItemDataObjectGetContactInfo}}
   ````C#
-	        public static string GetContactInfo(object sender)
-	        {
-	            var dataObject = (Telerik.Reporting.Processing.IDataObject)sender;
-	            var contactInfo = dataObject["AdditionalContactInfo"] as string;
-	            var xDoc = System.Xml.Linq.XDocument.Parse(contactInfo);
-	            var telephones = xDoc.Root
-	                                 .Elements()
-	                                 .Where(elem => elem.Name.LocalName == "telephoneNumber")
-	                                 .Select(elem => elem.Value);
-	            return string.Format("{0}{1}'s telephones: {2}", dataObject["Title"], dataObject["LastName"], string.Join("; ", telephones));
-	        }
+public static string GetContactInfo(object sender)
+{
+    var dataObject = (Telerik.Reporting.Processing.IDataObject)sender;
+    var contactInfo = dataObject["AdditionalContactInfo"] as string;
+    var xDoc = System.Xml.Linq.XDocument.Parse(contactInfo);
+    var telephones = xDoc.Root
+                         .Elements()
+                         .Where(elem => elem.Name.LocalName == "telephoneNumber")
+                         .Select(elem => elem.Value);
+    return string.Format("{0}{1}'s telephones: {2}", dataObject["Title"], dataObject["LastName"], string.Join("; ", telephones));
+}
 ````
-
-
 
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.vb region=ReportItemDataObjectGetContactInfo}}
   ````VB
-	    Public Shared Function GetContactInfo(sender As Object) As String
-	        Dim dataObject = DirectCast(sender, Telerik.Reporting.Processing.IDataObject)
-	        Dim contactInfo = TryCast(dataObject("AdditionalContactInfo"), String)
-	        Dim xDoc = System.Xml.Linq.XDocument.Parse(contactInfo)
-	        Dim telephones = xDoc.Root.Elements().Where(Function(elem) elem.Name.LocalName = "telephoneNumber").[Select](Function(elem) elem.Value)
-	        Return String.Format("{0}{1}'s telephones: {2}", dataObject("Title"), dataObject("LastName"), String.Join("; ", telephones))
-	    End Function
+Public Shared Function GetContactInfo(sender As Object) As String
+    Dim dataObject = DirectCast(sender, Telerik.Reporting.Processing.IDataObject)
+    Dim contactInfo = TryCast(dataObject("AdditionalContactInfo"), String)
+    Dim xDoc = System.Xml.Linq.XDocument.Parse(contactInfo)
+    Dim telephones = xDoc.Root.Elements().Where(Function(elem) elem.Name.LocalName = "telephoneNumber").[Select](Function(elem) elem.Value)
+    Return String.Format("{0}{1}'s telephones: {2}", dataObject("Title"), dataObject("LastName"), String.Join("; ", telephones))
+End Function
 ````
 
 In this step we process the passed data argument as IDataObject, retrieving the fields by name.
@@ -141,12 +124,7 @@ In this step we process the passed data argument as IDataObject, retrieving the 
 1. Set the second textbox's expression to the user defined function you created in __step 6__  and pass the __ReportItem.DataObject__  as its argument.
             The function name is __YourNamespace.GetContactInfo(data)__  , so your expression should look like this:
 
-
-
 |= YourNamespace.GetContactInfo(ReportItem.DataObject|
-
-
-
 
 1. Preview or run your report. The second textbox now should show the concatenated person names and telephone numbers.
 
@@ -166,65 +144,39 @@ The following screenshot shows the expected report output that should be created
 
 1. Add an SqlDataSource as a report's DataSource and set its SelectCommand property to:
 
-	
+    
       ````sql
-
 select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.SafetyStockLevel
 from Production.Product
 where Product.Color is not null
 order by Product.Name, Product.Color
 ````
 
-
-
-
 1. Place two textboxes on your report's detail section and set their expressions to
-
-
 
 |= Fields.Nam|
 
-
 and
 
-
-
 |= Fields.Colo|
-
 
 respectively.             
 
 1. Add a report group using either the report's context menu or the Group Explorer and set its grouping to
 
-
-
 |= Fields.SafetyStockLeve|
-
-
-
 
 1. Place a textbox on report's group header and set its expression to
 
-
-
 |= 'SafetyStockLevel: '+Fields.SafetyStockLeve|
-
-
-
 
 1. Add a crosstab to your report's group header and create a row or column group with the expression
 
-
-
 |= Fields.Colo|
-
 
 as a grouping expression. Set the detail textbox's expression to             
 
-
-
 |= Count(Fields.Color|
-
 
 Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report,               so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab).             
 
@@ -237,4 +189,5 @@ Alternatively you may use the crosstab wizard choosing the SqlDataSource used fo
 1. Preview or start your report. You should now see the products information listed in the details section for every group and a summary info about the products colors summarized in the group headers.
 
 >note This approach might also be used when you need to have page breaks in a  __Table, Crosstab__  or  __List__ .             Because having page breaks in these data items’ groups is not supported by design, you can create a report group,             add and bind a data item in the report group header and set the report group footer section  __PageBreak__  property as required.           
+
 

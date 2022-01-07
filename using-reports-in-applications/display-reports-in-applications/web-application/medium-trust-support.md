@@ -34,9 +34,7 @@ Telerik Reporting works in Medium Trust environment with the following except
 
 >note When running Telerik Reports in Medium Trust, one should always set the ReportViewer.Report property in code behind. Otherwise the ReportConverter class is used, which requires more permissions than are granted in Medium Trust level.
 
-
 # See Also
-
 
  * [ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
 

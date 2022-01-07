@@ -36,19 +36,14 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 1. Include the connection string in the web.config file which is nececssary because of the added named connection string to the report.               If the report uses an embedded connection, you do not have to add it again to the Visual Studio project.               The connection string looks similar to the following:             
 
-	
+    
       ````xml
-
 <connectionStrings>
 <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
 connectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
 providerName="System.Data.SqlClient"/>
 </connectionStrings>
-
 ````
-
-
-
 
 ## Previewing the Result
 

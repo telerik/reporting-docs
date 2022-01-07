@@ -22,48 +22,39 @@ The accessibility routines capture the keyboard events to provide shortcut key a
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsViewerAccessibilityKeyMapSnippet}}
 ````C#
-	        private void SetToolbarShortcutKey()
-	        {
-	            //substituting the default 'M' key to access the toolbar with 'T'
-	            this.reportViewer1.EnableAccessibility = true;
-	            var keyMap = this.reportViewer1.AccessibilityKeyMap;
-	            keyMap.Remove((int)Keys.M);
-	            keyMap[(int)Keys.T] = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY;
-	        }
+private void SetToolbarShortcutKey()
+{
+    //substituting the default 'M' key to access the toolbar with 'T'
+    this.reportViewer1.EnableAccessibility = true;
+    var keyMap = this.reportViewer1.AccessibilityKeyMap;
+    keyMap.Remove((int)Keys.M);
+    keyMap[(int)Keys.T] = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY;
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsViewerAccessibilityKeyMapSnippet}}
 ````VB
-	
-	    Private Sub SetToolbarShortcutKey()
-	        ' substituting the default 'M' key to access the toolbar with 'T'
-	        Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
-	        map.Remove(CType(Keys.M, Integer))
-	        map(CType(Keys.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
-	        Me.ReportViewer1.AccessibilityKeyMap = map
-	    End Sub
+Private Sub SetToolbarShortcutKey()
+    ' substituting the default 'M' key to access the toolbar with 'T'
+    Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
+    map.Remove(CType(Keys.M, Integer))
+    map(CType(Keys.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
+    Me.ReportViewer1.AccessibilityKeyMap = map
+End Sub
 ````
-
-
 
 All the accessibility messages and labels support localization. You can modify them, following the procedure, described           [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}).         
 
 >note Please note that the meta-information, added to the report content when the accessibility is enabled, might result in a small performance penalty,             especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
 
-
 ## Supported accessibility features in WinForms report viewer
 
 The WinForms report viewer supports the following important accessibility features:         
-
-
 
 |   |   |
 | ------ | ------ |
  __Comprehensive keyboard support__ |Includes navigation between and into report viewer areas (menu/toolbar, parameters, document map, contents) using                 shortcut keys, TAB or arrow keys where possible. The toolbar commands and expandable items are toggled on ENTER.                 The same key mapping is applied to document map and parameters areas.The default shortcut keys for navigation between the viewer areas are:<br/>*  __Ctrl+Alt+M__ - menu/toolbar area<br/>*  __Ctrl+Alt+P__ - parameters area (if visible)<br/>*  __Ctrl+Alt+D__ - document map area (if visible)<br/>*  __Ctrl+Alt+C__ - report viewer contents area (the report currently rendered in the viewer)If needed, the default key mapping can be changed, using the report viewer's API method                   [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.WinForms#Telerik_ReportViewer_WinForms_AccessibilityKeyMap) .                 The key, assigned for navigation between the areas, is always used together with CTRL and ALT key modifiers.|
 | __Dynamically generated descriptions for report viewer areas__ |The report viewer areas provide additional textual details that reflect the currently presented information.                 This applies to the state of the menu buttons (enabled, disabled, expandable, etc.),                 the parameters state and their selected values, the currently selected node from document map and the rendered report.                 This information refreshes dynamically with every change that occurs in the viewer                 - for example when a new page is loaded or when an exception is thrown while processing the report.|
 | __Textual description to a non-textual items__ |In a rendered report all graphic items like images, maps and charts provide additional information about their contents.                 Tables and crosstabs provide such information about the currently focused cell, marking the current row, column and value.                 These details are visible and recognizable by the most popular screen readers to help users with visual disabilities better understand the presented report.                 A comprehensive list with the supported report items features can be found in the next section|
-
-
-
 
 ## Supported accessibility features in rendered report contents
 

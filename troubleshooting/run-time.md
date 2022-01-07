@@ -20,19 +20,19 @@ This error might occur if you are using website and you have the           repor
 
 This exception might surface if you try to use objects which           do not implement ISerializable for a Report/Data Item data source. For example, if           this is an IList, you can try using a List instead as shown in our            [cars example](http://demos.telerik.com/reporting/list-bound-report) .           You can also use the NeedDataSource event of the report and assign the data source to the "processing report", thus avoiding any need for serialization/deserialization.           Another approach is to use a DataSet/DataTable:         
 
-	
+    
 ````C#
-			DataTable dt = new DataTable();
-			DataColumn col = new DataColumn("ColumnName", typeof(string));
-			//....
-			dt.Columns.Add(col);
-			foreach (object Item in MyIList)
-			{
-				DataRow row = dt.NewRow();
-				row["ColumnName"] = Item;
-				//.....
-				dt.Rows.Add(row);
-			}
+DataTable dt = new DataTable();
+DataColumn col = new DataColumn("ColumnName", typeof(string));
+//....
+dt.Columns.Add(col);
+foreach (object Item in MyIList)
+{
+    DataRow row = dt.NewRow();
+    row["ColumnName"] = Item;
+    //.....
+    dt.Rows.Add(row);
+}
 ````
 
          
@@ -58,17 +58,15 @@ There are three cases in which this error message occurs:
 
 1. Check if the web report viewer's http handler is registered in the web.config file. If the app is deployed on IIS7 and setup to work in integrated mode,                make sure preCondition attribute is present at the end of Telerik.ReportViewer handler:             
 
-	
+    
       ````XML
-							<add 
-								name="Telerik.ReportViewer.axd_*" 
-								type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" 
-								path="Telerik.ReportViewer.axd" verb="*" 
-								preCondition="integratedMode"
-							/>
+<add
+    name="Telerik.ReportViewer.axd_*"
+    type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
+    path="Telerik.ReportViewer.axd" verb="*"
+    preCondition="integratedMode"
+/>
 ````
-
-
 
 1. Check if the report viewer's styles are registered on the page. This can be accomplished with http debugging proxy like Fiddler.
 

@@ -32,32 +32,29 @@ When you configure the ObjectDataSource component the settings below are obligat
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=SampleDataSource}}
 ````C#
-	        class Product
-	        {
-	            //properties
-	        }
-	
-	
-	        [DataObject]
-	        class Products
-	        {
-	            //objects
-	        }
+class Product
+{
+    //properties
+}
+
+
+[DataObject]
+class Products
+{
+    //objects
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=SampleDataSource}}
 ````VB
-	    Class Product
-	        'properties
-	    End Class
-	
-	    <DataObject()>
-	    Class Products
-	        'objects
-	    End Class
-	
+Class Product
+    'properties
+End Class
+
+<DataObject()>
+Class Products
+    'objects
+End Class
 ````
-
-
 
 1. Build the project and close it.
 
@@ -77,7 +74,7 @@ For security reasons the ObjectDataSource can resolve only types that are declar
 
    1. Add an                   [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})                   in __Telerik.Reporting__  section of application configuration file:                 
 
-	
+    
       ````xml
 <?xml version="1.0"?>
 <configuration>
@@ -85,11 +82,11 @@ For security reasons the ObjectDataSource can resolve only types that are declar
         <section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
     </configSections>
     ...
-	  <Telerik.Reporting>
-		  <assemblyReferences>
-			  <add name="yourAssemblyName"/>
-    	</assemblyReferences>
- 	  </Telerik.Reporting>
+      <Telerik.Reporting>
+          <assemblyReferences>
+              <add name="yourAssemblyName"/>
+        </assemblyReferences>
+       </Telerik.Reporting>
    ...
 </configuration>
 ````

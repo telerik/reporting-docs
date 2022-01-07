@@ -38,7 +38,7 @@ Almost any chart type can be used for a sparkline chart:
 
 ## Data Bars
 
-Data bars typically represent a single data point, though they can represent multiple data points,        	just like regular bar charts. They often contain several series with no category, or have series grouping.
+Data bars typically represent a single data point, though they can represent multiple data points,            just like regular bar charts. They often contain several series with no category, or have series grouping.
 
 You can make data bar versions of these full charts:
 
@@ -47,6 +47,5 @@ You can make data bar versions of these full charts:
 * __Column Charts__ : Clustered, stacked and 100% stacked column charts. Column charts can be either sparklines or data bars.
 
 # See Also
-
 
  * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [AreaSeries](/reporting/api/Telerik.Reporting.AreaSeries)  * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  * [LineSeries](/reporting/api/Telerik.Reporting.LineSeries)  * [RangeAreaSeries](/reporting/api/Telerik.Reporting.RangeAreaSeries)  * [RangeBarSeries](/reporting/api/Telerik.Reporting.RangeBarSeries) 

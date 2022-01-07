@@ -16,7 +16,7 @@ Mail message
 
 ## 
 
-	
+    
           {
           'from': 'john.doe@mycompany.com',
           'to': 'jane.doe@mycompany.com',
@@ -25,9 +25,6 @@ Mail message
           'body': 'my mail body',
           }
         
-
-
-
 
 >caption Fields
 
@@ -38,6 +35,5 @@ Mail message
 |`cc`|`string`|`false`||
 |`subject`|`string`|`false`||
 |`body`|`string`|`false`||
-
 
 

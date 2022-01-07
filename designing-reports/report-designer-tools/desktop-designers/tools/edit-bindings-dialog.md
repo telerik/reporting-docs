@@ -43,5 +43,3 @@ To delete a Binding object, use the Delete Button.
 >note Not all item properties support expression bindings. Please refer to the                 API reference to check if a property supports binding.               
 
 
-# See Also
-

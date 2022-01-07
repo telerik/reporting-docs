@@ -34,11 +34,11 @@ Conceptually, they both use the same multidimensional data model:
 
 ## Category group hierarchy
 
-The CategoryGroups hierarchy defines the data points in the Graph series. For example, suppose you have a group by product categories in the CategoryGroups hierarchy. The number of different categories will determine how many data points the series will have at runtime. If the product categories consist of 'Accessories', 'Bikes', 'Components' and 'Clothing' categories, the series in the Graph will have four data points.       	
+The CategoryGroups hierarchy defines the data points in the Graph series. For example, suppose you have a group by product categories in the CategoryGroups hierarchy. The number of different categories will determine how many data points the series will have at runtime. If the product categories consist of 'Accessories', 'Bikes', 'Components' and 'Clothing' categories, the series in the Graph will have four data points.           
 
 ## Series group hierarchy
 
-The SeriesGroups hierarchy defines the series at runtime. For example, suppose you have a group by the Year field in the SeriesGroups hierarchy. The number of different years will determine how many series will appear on the Graph. If the Year field contains the years 2001, 2002, 2003, and 2004, the Graph will display four series for every series definition bound to this group.       	
+The SeriesGroups hierarchy defines the series at runtime. For example, suppose you have a group by the Year field in the SeriesGroups hierarchy. The number of different years will determine how many series will appear on the Graph. If the Year field contains the years 2001, 2002, 2003, and 2004, the Graph will display four series for every series definition bound to this group.           
 
 ## Series Data
 
@@ -52,5 +52,4 @@ Depending on the series type the Graph item can visualize one or more measures:
 
 * __Line__  series including all derived subtypes (Scatter, etc.) allows to identify the correlation between three different measures.
 
-# See Also
 

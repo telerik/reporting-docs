@@ -18,7 +18,6 @@ A legend always contains one or more legend items, where each legend item consis
 
 >important When using a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) , the legend items depend on its            [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount)  property.         
 
-
 You can format a legend with the Legends properties.         Click the legend to change the legend position, size, title and items style, background color and borders.       
 
 You cannot add images, extra columns or other supplementary items to the legend.       
@@ -33,7 +32,6 @@ You can change the legend items text by changing the Map.MapSeries Legend [Expre
 
 >important When using a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) , the LegendItem.Value expression allows the usage             of two specific references: `RangeMin` and `RangeMax`, that determine the minimum and maximum values             of the respective data range.           
 
-
 ## Changing the Color of a Legend Item
 
 The colored box displayed for each legend item is inherited from the fill color of its corresponding series.           If you want to change the color displayed in a legend item, you will have to change the color of the corresponding series.           For more information, see [Series]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series%}).         
@@ -43,7 +41,6 @@ The colored box displayed for each legend item is inherited from the fill color 
 You can change the legend items text style by selecting the legend and with __Property Browser__  change __Style__  properties.         
 
 >note If you are using the Standalone Report Designer you can take advantage of the ribbon format and map tools.           
-
 
 1. Click the map legend that you want to change.    The selected legend properties are listed in the __Property Browser__ .                 
 

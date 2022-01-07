@@ -16,7 +16,6 @@ Use the Conversion functions to convert a value from one data type to another. C
 
 ## 
 
-
 | Function | Description |
 | ------ | ------ |
 | __CBool(expression)__ |Converts an expression to Boolean value.|
@@ -25,8 +24,4 @@ Use the Conversion functions to convert a value from one data type to another. C
 | __CDate(expression)__ |Converts an expression to Date value.|
 | __CStr(expression)__ |Converts an expression to string value|
 
-
-
-
-# See Also
 

@@ -14,7 +14,6 @@ position: 4
 
 ## parameter
 
-
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
 | __availableValues__ |array of name-value pairs ( {name: …, value: ….}* )|represents a list of predefined parameter values and their labels|
@@ -31,8 +30,4 @@ position: 4
 | __type__ | __telerikReportViewer.ParameterTypes__ |specifies the type of the parameter|
 | __value__ |object|specifies the value of the paramete|
 
-
-
-
-# See Also
 

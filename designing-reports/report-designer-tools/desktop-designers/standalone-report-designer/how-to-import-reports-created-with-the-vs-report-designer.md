@@ -18,9 +18,7 @@ Should you need to import your existing reports created with the Visual Studio R
 
 >warning Default constructor is required and due to XML format restrictions Report and Item event handlers and methods can not be imported.             Custom code like properties, events, methods, instantiated data objects will not be serialized along with the settings of the report.           
 
-
 >important In general, Telerik Reports are  *Telerik.Reporting.Report*  objects which can be serialized in TRDX files, or compressed TRDP files.             The XML definition has a schema version that is updated in case of API changes in the released reporting functionality.             It is important to use a version of Standalone Report Designer that matches the version of Telerik Reporting assemblies used to create the .NET report definition.             For more information, please refer to [XML Report Definition]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/xml-report-definition%}) ( *XML Schema Versioning*  section).             This guarantees that you are using the same version of Telerik Reporting engine to create and process reports.           
-
 
 1. (Optional) If the target report depends on external assemblies for data source, user function or custom aggregate, first you have to               reference those assemblies in the configuration file. For more information see: [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
 

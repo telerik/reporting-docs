@@ -18,7 +18,6 @@ When you work in [Standalone Report Designer]({%slug telerikreporting/designing-
 
 ## 
 
-
 | Description | Key Combination |
 | ------ | ------ |
 |Opens the backstage New report view.|CTRL+N|
@@ -48,6 +47,5 @@ When you work in [Standalone Report Designer]({%slug telerikreporting/designing-
 |Zoom in on map view area when a map viewport is selected.|CTRL+Plus sign (+)|
 |Zoom out on map view area when a map viewport is selected.|CTRL+Minus sign (-)|
 |Close the current report tab.|CTRL+F|
-
 
 

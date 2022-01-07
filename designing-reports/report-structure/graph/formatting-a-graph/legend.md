@@ -32,7 +32,6 @@ You can change the legend items text style by selecting the legend and with __Pr
 
 >note If you are using the standalone report designer you can take advantage of the graph tools in the ribbon's Design and Format tabs.           
 
-
 1. Click the graph legend that you want to change.    The selected legend properties are listed in the __Property Browser__ .                 
 
 1. In the __Style property__ , click the __Edit Collection (…) button__ .                     The Edit style dialog opens.                 
@@ -82,3 +81,6 @@ The legend can be absolutely or automatically sized.           If the Height or 
 * Relatively positioned - Center, LeftTop, LeftCenter, LeftBottom, RightTop, RightCenter, RightBottom:             The width is absolute if set, otherwise the legend can grow horizontally.               The legend can stretch up to the PlotArea width when IsInsidePlotArea = True and no more than half of the graph width when IsInsidePlotArea = False.             The height is taken into account, only if all items can fit in the provided space.               Otherwise the legend grows vertically, stretching to the limits of the graph at maximum.             The ordering of the items is "down then across", forming columns.             
 
 * Relatively positioned - TopLeft, TopCenter, TopRight, BottomLeft, BottomCenter, BottomRight:             The height is absolute if set, otherwise the legend can grow vertically.               The legend can stretch up to the PlotArea height when IsInsidePlotArea = True and no more than half of the graph height when IsInsidePlotArea = False.             The width is taken into account, only if all items can fit in the provided space.               Otherwise the legend grows horizontally, stretching to the limits of the graph at maximum.             The ordering of the items is "across then down", forming rows.             
+
+# See Also
+ * [GraphLegend](/reporting/api/Telerik.Reporting.GraphLegend)  * [Legend](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Legend) 

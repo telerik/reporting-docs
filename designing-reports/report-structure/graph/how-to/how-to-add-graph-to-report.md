@@ -34,8 +34,7 @@ The simplest way to add a __Graph__  item to your report is to run the Graph Wiz
 
 ## To insert a graph to a report
 
->note Graph item for direct insertion is only available in the Visual Studio report designer.For the     		standalone report designer, please use a Graph wizard for the specific chart type.
-
+>note Graph item for direct insertion is only available in the Visual Studio report designer.For the             standalone report designer, please use a Graph wizard for the specific chart type.
 
 1. Open the Visual Studio toolbox and select Graph item from the *Telerik Reporting*  tab.
 
@@ -46,3 +45,5 @@ The simplest way to add a __Graph__  item to your report is to run the Graph Wiz
 1. Set the DataSource property to one of the available [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
 
 1. Set up a Coordinate System with its x-axis and y-axis.
+
+

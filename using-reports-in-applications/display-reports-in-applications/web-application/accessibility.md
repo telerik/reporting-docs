@@ -28,21 +28,15 @@ The accessibility script supports localization. You can modify its message and l
 
 >note Please note that all the dynamically provided markup, added when the accessibility is enabled,             might result in a small performance penalty, especially on machines with outdated hardware.             For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
 
-
 ## Supported accessibility features in HTML5-based viewers
 
 Our HTML5-based report viewers support the following important accessibility features:         
-
-
 
 |   |   |
 | ------ | ------ |
  __Comprehensive keyboard support__ |Includes navigation between and into report viewer areas (menu, parameters, document map, contents) using                 shortcut keys, TAB or arrow keys where possible. The menu commands and expandable menu items are toggled on ENTER.                 The same key mapping is applied to document map and parameters areas.The default shortcut keys for navigation between the viewer areas are:<br/>*  __Ctrl+Alt+M__ - menu area<br/>*  __Ctrl+Alt+P__ - parameters area (if visible). To navigate to the parameters area splitbar, press __Shift + Tab__ or __Tab__ based on the parameters area position<br/>*  __Ctrl+Alt+D__ - document map area (if visible). To navigate the document map area splitbar, press __Shift + Tab__ or __Tab__ based on the document map area position<br/>*  __Ctrl+Alt+C__ - report viewer contents area (the report currently rendered in the viewer)If needed, the default key mapping can be changed, using the report viewer's API method [accessibilityKeyMap(keyMap)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap(keymap)%}).|
 | __Dynamically generated descriptions for report viewer areas__ |The report viewer areas provide additional textual details that reflect the currently presented information.                 This applies to the state of the menu buttons (enabled, disabled, expandable, etc.),                 the parameters state and their selected values, the currently selected node from document map and the rendered report.                 This information refreshes dynamically with every change that occurs in the viewer                 - for example when a new page is loaded or when an exception is thrown while processing the report.|
 | __Textual description to a non-textual items__ |In a rendered report all graphic items like images, maps and charts provide additional information about their contents.                 Tables and crosstabs provide such information about the currently focused cell, marking the current row, column and value.                 These details are visible and recognizable by the most popular screen readers to help users with visual disabilities                 better understand the presented report. A comprehensive list with the supported report items features can be found in the next section|
-
-
-
 
 ## Supported accessibility features in HTML5-rendered report contents
 
@@ -70,7 +64,6 @@ For example, if a report contains a __TextBox__  with `Value = "Sorts by Categor
 
 Most of the currently known issues are due to the fact that the widely used screen readers behave differently with different browsers.           Additionally, the most common browsers support accessible content to a various extent.           The following table shows the known issues by browser and screen reader (where applicable):         
 
-
 | Browser | Screen reader | Description |
 | ------ | ------ | ------ |
 |Firefox 55.0.3+|-| __Export__ menu item cannot be toggled through keyboard.|
@@ -79,8 +72,5 @@ Most of the currently known issues are due to the fact that the widely used scre
 |Chrome|JAWS|Document map items are not read.|
 |Chrome|JAWS|Toggle visibility actions are not executed.|
 |Internet Explorer, Edge|Narrator|Document map items are not read|
-
-
-
 
 Note that software vendors consistently upgrade and improve their products, so any of the above issues can be fixed by a third-party program update.         

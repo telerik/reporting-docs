@@ -26,9 +26,8 @@ In this article we will show you how to create a Line chart using the Graph item
 
    1. Set the query to the following one:
 
-	
+    
       ````sql
-
 SELECT PC.Name AS ProductCategory, SOD.LineTotal, SOH.OrderDate
 FROM Production.Product AS P
 INNER JOIN Production.ProductSubcategory AS PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
@@ -36,9 +35,6 @@ INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.Product
 INNER JOIN Sales.SalesOrderDetail AS SOD ON P.ProductID = SOD.ProductID
 INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
 ````
-
-
-
 
    1. You can click on __Execute Query...__  just to check if everything is OK with the database connection.                   Click __Finish__  when you are ready.                 
 
@@ -78,5 +74,4 @@ INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
 
-# See Also
 

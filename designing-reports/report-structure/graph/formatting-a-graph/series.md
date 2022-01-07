@@ -22,7 +22,6 @@ The Area and the Line series have an additional pair of properties named respect
 
 >note For example, if the series DataPoints have its  __Style.LineWidth__  property set to  __5pt__ , this will             affect the line width of the DataPoint markers and the legend item marker. But if the legend item's  __MarkStyle.LineWidth__  property             is set to  __2pt__ , then the legend item marker will be drawn with 2pt wide line, because the series's style property will be overriden.           
 
-
 ## Formatting data points
 
 Each data point has graphical representation in accordance with the selected chart type. Its styling can be set through the            __DataPointStyle__  property and changed in runtime using the __DataPointConditionalFormatting__  property.           In most cases, depending on the chart type, the shape of the data point can be changed as well using the            [MarkerType](/reporting/api/Telerik.Reporting.LineSeries#Telerik_Reporting_LineSeries_MarkerType)  enumeration.         
@@ -36,8 +35,6 @@ Each data point has graphical representation in accordance with the selected cha
 1. Set the type of the marker from the drop-down menu. Set the __MarkerSize__  properties if necessary.                 
 
     >tip Note that only the marker types that form a closed contour support  __BackgroundImage__ . The markers                   that consists only of lines (i.e.  __X__ ,  __Plus__ ,  __Minus__ )                   will not render a background image if set.                 
-
-
 
 ## Formatting data point labels
 
@@ -95,7 +92,6 @@ You can select a palette or define a custom palette. Custom palettes are report-
 
 >note             The built-in series are only available in the standalone report designer.          
 
-
 1. Click the chart series that you want to change.    The ribbon context tab __Graph Tools.Design__  is activated.                 
 
 1. In the __Chart Style__  group. Select a color palette from the                   __Change Colors__  dropdown.                 
@@ -126,7 +122,6 @@ If you are using a custom color palette, you can change the order of the colors 
 1. Set appropriately __BaseColor, MaxLightness and MinLightness properties__ .                 
 
 # See Also
-
 
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 

@@ -38,36 +38,28 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewFilterSnippet}}
 ````C#
-	
-	            Telerik.Reporting.Filter filter1 = new Telerik.Reporting.Filter();
-	            filter1.Expression = "=Fields.ProductID";
-	            filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan;
-	            filter1.Value = "=10";
-	
-	            table1.Filters.Add(filter1);
-	
+Telerik.Reporting.Filter filter1 = new Telerik.Reporting.Filter();
+filter1.Expression = "=Fields.ProductID";
+filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan;
+filter1.Value = "=10";
+
+table1.Filters.Add(filter1);
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewFilterSnippet}}
 ````VB
-	
-	        Dim filter1 As New Telerik.Reporting.Filter()
-	        filter1.Expression = "=Fields.ProductID"
-	        filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan
-	        filter1.Value = "=10"
-	
-	        table1.Filters.Add(filter1)
-	
+Dim filter1 As New Telerik.Reporting.Filter()
+filter1.Expression = "=Fields.ProductID"
+filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan
+filter1.Value = "=10"
+
+table1.Filters.Add(filter1)
 ````
-
-
 
 ## 
 
 >tip The Table/Crosstab/List item has a complex [structure]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%}) built by Rows and Column groups,             where each group has its own Filters.             If you need to limit column, add filters to the corresponding column groups. If you need to limit rows, add filters to the corresponding row groups.           The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the             Table/Crosstab/List item's Row and Column groups.           
 
-
 # See Also
-
 
  * [Table](/reporting/api/Telerik.Reporting.Table) 
 

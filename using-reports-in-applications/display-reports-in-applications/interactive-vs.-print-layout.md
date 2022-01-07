@@ -26,13 +26,11 @@ The paging mechanism of the __Interactive View__  is based on soft page breaks, 
 
 >note The Interactive layout is the default report layout which users see. You can control the default layout via the ViewMode             property of the respective report viewer. In Interactive preview items like the Table/List/Crosstab are rendered into a single continuous page.           
 
-
 ## Print Preview
 
 The paging in __Print Preview__  layout is calculated based on the page settings           (see [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})).           When the report width is less than the page width specified in the page settings the report will grow horizontally to match the width of the page           which may lead to the differences between design-time and print preview.           When the report width is larger than the page width each logical page will cause a horizontal overflow and will continue on the next physical page.           During the preparation of the report for printing, the latest state of the report will be printed, such as expanded/collapsed Crosstab categories.           The __Print Preview__  is not interactive, it is dedicated only for printing.         
 
 # See Also
-
 
  * [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})
 

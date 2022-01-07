@@ -23,14 +23,12 @@ You can use a report designer of your choice - the described approach is valid f
 
    + In Visual Studio Report Designer: *File - New Project - Telerik Report Library [VERSION] - Blank Report* .                 
 
-
 1. Add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) by:               double-clicking on the SqlDataSource item in the VS Toolbox for VS Report Designer,               or on the SqlDataSource in the __Data tab__  of the Stabndalone Report Designer.               This should start the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}).             
 
 1. On the “*Choose Data Connection* ” page, you need to either select an existing connection to the               __AdventureWorks__  database, or create a new one by specifying the SqlClient Data Provider and a valid               connection string to an AdventureWorks database.                 On the "*Data Connection options* " page, the newly created connection string can be saved by name in the current project's CONFIG file               or it can be embedded with all details in the __SqlDataSource.ConnectionString property__     On the "*Configure Data Source Command* " page, paste the following SQL query in the “*Select Statement* ” window:             
 
-	
+    
     ````sql
-
 SELECT
 PC.Name AS ProductCategory
 , PS.Name AS ProductSubCategory
@@ -48,7 +46,6 @@ ON P.ProductID = SOD.ProductID
 INNER JOIN Sales.SalesOrderHeader AS SOH
 ON SOD.SalesOrderID = SOH.SalesOrderID
 ````
-
 
     Click Next, and then on __Execute Query...__  button to make sure that everything is fine with your data connection and data is fetched from               the database. Click __Finish__  when you are ready. This will close the __SqlDataSource Wizard__ .             
 
@@ -77,8 +74,6 @@ ON SOD.SalesOrderID = SOH.SalesOrderID
 1. To see what the __Graph Wizard__  has done, you can examine the Graph’s                [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups) .               You will notice that the Graph wizard created one __CategoryGroup__  instance for the product categories and has added               a child group to it for the product subcategories - __CategoryGroups -> ChildGroups__ . The wizard has also created a                [ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction)                and set its  [Targets](/reporting/api/Telerik.Reporting.ToggleVisibilityAction#Telerik_Reporting_ToggleVisibilityAction_Targets)                to the __ProductSubCategoryGroup__ , providing the ability to show or hide this group by clicking its parent’s toggle mark.               Initially the __ProductSubCategoryGroup.Visible property__  is set to false to provide more compact view.               The expanded view of the Graph’s __CategoryGroups__  should look like this:               
 
   ![How To Add Drill Down Action 6 Expanded Category Groups](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_6_ExpandedCategoryGroups.png)
-
-
 
 __In conclusion:__ 
 

@@ -14,13 +14,8 @@ position: 6
 
 ## parameterEditor
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __beginEdit(parameter)__ |creates the editor UI and populates it with the parameter settings<br/>* paramete|
 
-
-
-
-# See Also
 

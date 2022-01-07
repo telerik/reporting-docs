@@ -18,7 +18,7 @@ Clears the current reportSource from the viewer internal state and from its pers
 
 Returns: a reference for the reportViewer object.
 
-	
+    
 ````html
 <input id="buttonChangeReportSource" type="submit" value="Change Report Source" />
 ````
@@ -31,7 +31,4 @@ $(document).ready(function () {
 });
 ````
 
-
-
-# See Also
 

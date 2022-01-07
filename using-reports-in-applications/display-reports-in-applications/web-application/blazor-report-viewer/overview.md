@@ -38,5 +38,4 @@ The Blazor viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/
 
 1. The complete example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting __Version__ \Examples\CSharp\.             
 
-# See Also
 

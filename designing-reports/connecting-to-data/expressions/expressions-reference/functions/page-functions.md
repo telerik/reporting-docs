@@ -14,14 +14,13 @@ position: 7
 
 >note Page aggregates should be used in page sections only (Page Header, Page Footer).           Page aggregates are supported in page oriented formats only: IMAGE (TIFF, EMF, BMP, JPEG, GIF, Print),           PDF, PPTX, DOCX, RTF, XPS.         
 
-
 ## PageExec
 
 The __PageExec(scope, aggregateFunction)__  function executes the specified aggregate function           in the given scope. It can be used in the page header or page footer of the report. In order           to specify the scope in which the aggregate would be evaluated, you need to specify the __Name__  of a Group, Section,           or Report Item as a string parameter of the function.         
 
 It takes two parameters:
 
-* __scope__  – determines which data objects are included in the PageExec accumulation. For each instance of the               Group/Section/Report Item with the specified __Name__  that occurs on the current page, its data object is accumulated.             
+* __scope__  – determines which data objects are included in the PageExec accumulation. For each instance of the               Report Group/Section/Item with the specified __Name__  that occurs on the current page, its data object is accumulated.              __Table/List/Crosstab/Graph Groups__  cannot be used as __scope__  for Page Functions. For workaround, see the KB article                [Page Level Summary for Table Groups Data](https://docs.telerik.com/reporting/knowledge-base/page-level-summary-for-table-groups) 
 
 * __aggregateFunction__  – the aggregate that is accumulated for each page. The expression used as an argument of the aggregate function is               evaluated against the collected data objects.             
 
@@ -59,7 +58,6 @@ The PageNumber function has an overload which takes a PageExec function as a sin
   ![Reset Page Last First](images/ResetPageLastFirst.png)
 
 >warning Using PageNumber or PageCount functions inside conditional statements implemented with the             [Conditional and Null-coalescing operators]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators%})             ( __?:__  and  __??__ ) may prevent these functions from executing for a particular page.             This will disrupt the current page sequence and the functions may produce unexpected results.             In this case it is recommended to use the [Conditional Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions%}) instead of the above operators.           
-
 
 ## PageCount
 

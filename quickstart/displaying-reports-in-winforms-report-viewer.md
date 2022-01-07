@@ -28,7 +28,6 @@ You need to specify how the report is created to let the Reporting engine know h
 
 >important Reports are always processed and rendered on the server machine.
 
-
 Once you have a properly configured Report Source, you can use it for a Telerik Report Viewer           or to [process a report programmatically]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}).           For displaying a Report in a Report Viewer see the list of available Telerik Reporting viewers in           [Using Telerik Reporting in Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}).         
 
 ## Example
@@ -57,20 +56,18 @@ __How to display a report in the Windows Forms Report Viewer:__
 
 1. Add a call to the RefreshReport() method of the viewer in the form Load event:             
 
-	
+    
       ````C#
-		private void MainForm_Load(object sender, System.EventArgs e)
-        {
-            this.reportViewer1.RefreshReport();
-        }
+private void MainForm_Load(object sender, System.EventArgs e)
+{
+    this.reportViewer1.RefreshReport();
+}
 ````
 ````VB.NET
-		 Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-              Me.reportViewer1.RefreshReport()
-         End Sub
+Private Sub MainForm_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+     Me.reportViewer1.RefreshReport()
+End Sub
 ````
-
-
 
 1. Copy the connection string which you saved in the application configuration file (app.config) of the report class               library, to the configuration file of your windows forms project. By default there is               no app.config so you can create a new one from Add -> New Item.             
 

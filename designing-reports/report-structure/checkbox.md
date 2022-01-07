@@ -16,8 +16,6 @@ The CheckBox report item is used to display both text and a check mark on a repo
 
   ![](images/checkboxitem1.jpg)
 
-
-
 ## Growing and Shrinking
 
 By default, CheckBox items are a set size. If you want to allow a CheckBox to expand vertically based on its contents,           set the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)  property to True (default value).           If you want to allow a CheckBox to shrink based on its contents set the            [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)  property to           True (default value is False). The CheckBox would always grow to accomodate the first line of text even when CanGrow is False.         
@@ -29,10 +27,6 @@ The text part of the Checkbox report item supports [             embedded      
 A view where each CheckBox is initialized with CheckAlign varying from TopLeft to BottomRight:   
 
   ![](images/checkboxitem2.jpg)
-
-
-
-
 
 The check mark image depends on the value set in the __Value__  property. By default it would accept  =true or =false. At design time the __Value__  property can be initialized with an expression which later at runtime is evaluated to one of the System.Windows.Forms.CheckState values e.g.:         
 
@@ -59,10 +53,6 @@ In such case it is more convenient to use those values directly instead of tryin
 And here is the final result:  
 
   ![](images/CheckBoxEval3.png)
-
-
-
-
 
 # See Also
  * [Telerik.Reporting.CheckBox](/reporting/api/Telerik.Reporting.CheckBox)  * [CheckAlign](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)  * [CheckedImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckedImage)  * [UncheckedImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_UncheckedImage)  * [FalseValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_FalseValue)  * [IndeterminateImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_IndeterminateImage)  * [IndeterminateValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_IndeterminateValue)  * [Text](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_Text)  * [TrueValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_TrueValue) 

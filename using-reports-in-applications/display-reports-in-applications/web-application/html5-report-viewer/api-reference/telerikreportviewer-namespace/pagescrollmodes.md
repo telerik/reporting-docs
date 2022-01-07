@@ -14,13 +14,11 @@ position: 2
 
 ## telerikReportViewer.PageModes
 
-
 |   |   |
 | ------ | ------ |
  Member name |
 | ------ |
 |SINGLE_PAGE|
 |CONTINUOUS_SCROL|
-
 
 

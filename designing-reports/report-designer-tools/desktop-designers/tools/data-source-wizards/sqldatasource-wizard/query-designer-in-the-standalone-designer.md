@@ -38,7 +38,6 @@ Standalone Report Designer provides both a graphical query designer and a text-b
 
 >important Please note that Telerik Data Access is a discontinued product and its            [supported databases list](http://docs.telerik.com/data-access/developer-guide-integration-prerequisities#access-to-a-relational-database)            will not be appended. The versions of the supported database drivers will not be updated as well.         
 
-
 ## 
 
 The following figure shows the graphical query designer.

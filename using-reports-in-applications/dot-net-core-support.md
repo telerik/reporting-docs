@@ -24,7 +24,6 @@ Telerik Reporting provides a set of assemblies and NuGet packages designed for .
 
 The following NuGet packages are required.           When using our *NuGet*  packages, the required dependencies are resolved automatically.           Otherwise, they need to be manually added to the project.         
 
-
 | Package name | Version |
 | ------ | ------ |
 |Microsoft.Extensions.Configuration|2.1.2001|
@@ -43,9 +42,6 @@ The following NuGet packages are required.           When using our *NuGet*  pac
 |System.Text.Encoding.CodePages|4.5.2000|
 |System.Threading.AccessControl|4.5.2000|
 |sqlite-net-pcl|1.7.302-bet|
-
-
-
 
 ## Implemented Features and Limitations
 
@@ -71,30 +67,26 @@ Supported functionalities:
 
 When deploying to a Linux machine, make sure it has installed the library            [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)            , which is a Mono implementation of GDI+ API for non-Windows operating systems. The following snippet performs an update and installs the necessary libraries on Ubuntu/Debian:         
 
-	
+    
 ````
-            sudo apt-get update
-            sudo apt-get install libc6-dev
-            sudo apt-get install libgdiplus
+sudo apt-get update
+sudo apt-get install libc6-dev
+sudo apt-get install libgdiplus
 ````
-
-
 
 Since __libgdiplus__  is not a perfect replacement for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping and aligning.           These problems mostly affect the [Image rendering extension]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}) hence it is not recommended to be used.           The following JSON configuration snippet will hide it from the list of the available rendering extensions:         
 
-	
+    
 ````js
-            "telerikReporting": {
-              "extensions": [
-                {
-                  "name": "IMAGE",
-                  "visible": "false"
-                }
-              ]
-            }
+"telerikReporting": {
+  "extensions": [
+    {
+      "name": "IMAGE",
+      "visible": "false"
+    }
+  ]
+}
 ````
-
-
 
 The fonts used in the reports should be installed on the Linux machine, otherwise the font substitution algorithm will replace them with a system font.            When rendering a PDF document, the fonts get resolved only if they are listed in the [```<privateFonts>```]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})            configuration element.         
 
@@ -104,12 +96,10 @@ The fonts used in the reports should be installed on the Linux machine, otherwis
 
 1. Install  [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)  using  [Homebrew](https://brew.sh/) 
 
-	
+    
       ````
-                brew install mono-libgdiplus
+brew install mono-libgdiplus
 ````
-
-
 
 1. Create your .NET Core application (or copy an existing one from a Windows machine).
 
@@ -119,9 +109,9 @@ The fonts used in the reports should be installed on the Linux machine, otherwis
 
 1. Build
 
-	
+    
       ````
-                  dotnet build
+dotnet build
 ````
 
 and run the application. When running in debug mode Visual Studio Code will ask to add debug configuration to launch.json.
@@ -130,18 +120,16 @@ and run the application. When running in debug mode Visual Studio Code will ask 
 
 Telerik Reporting can be used in a Docker image if it meets the GDI+ requirements.            The __microsoft/windowsservercore__  images distributed by Microsoft contain the graphics library, but their size is significantly bigger compared to the size of the dotnet runtime in a Linux container.            Such container only needs the __libgdiplus__  and its accompanying libraries installed, which can be done through the following *dockerfile*  snippet:         
 
-	
+    
 ````
-            FROM microsoft/dotnet:2.1-runtime AS base 
-            RUN apt-get update \ 
-                && apt-get install -y --allow-unauthenticated \ 
-                    libc6-dev \ 
-                    libgdiplus \ 
-                    libx11-dev \ 
-                && rm -rf /var/lib/apt/lists/*
+FROM microsoft/dotnet:2.1-runtime AS base
+RUN apt-get update \
+    && apt-get install -y --allow-unauthenticated \
+        libc6-dev \
+        libgdiplus \
+        libx11-dev \
+    && rm -rf /var/lib/apt/lists/*
 ````
-
-
 
 Having these three libraries installed ensures that Telerik Reporting will run on the produced Docker image.         
 
@@ -154,7 +142,6 @@ Telerik Reporting ships with a ready-made .NET Core examples that demonstrate ho
 An example project is available in the Telerik Reporting installation directory            *\Examples\CSharp\Asp.NetCoreDemo*  subfolder.         
 
 # See Also
-
 
  * [How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
 

@@ -22,7 +22,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 
 * Provide us with a log file containing detailed information about the Standalone Report Designer crash.               To create the log file, turn on tracing for the Standalone Report Designer and perform the actions which caused the crash.               Below is the XML you need to add to the __Telerik.ReportDesigner(.x86).exe.config__  file to enable tracing:             
 
-	
+    
       ````xml
 <?xml version ="1.0"?>
 <configuration>
@@ -30,7 +30,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
           <listeners>
-            <add name="myListener" type="System.Diagnostics.TextWriterTraceListener" initializeData="c:\temp\StandaloneDesigner.LOG" />              
+            <add name="myListener" type="System.Diagnostics.TextWriterTraceListener" initializeData="c:\temp\StandaloneDesigner.LOG" />
             <remove name="Default" />
           </listeners>
         </trace>
@@ -50,5 +50,4 @@ After you generate the log files from the above steps, archive them and attach t
 
 Please refer to the information from the following KB article:  [The report cannot be opened in the Standalone Report Designer](./knowledge-base/report-cannot-be-opened-in-standalone-report-designer) 
 
-# See Also
 

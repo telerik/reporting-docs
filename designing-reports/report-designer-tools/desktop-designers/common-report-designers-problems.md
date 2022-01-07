@@ -22,5 +22,4 @@ The desktop Report Designers need the assembly *Microsoft.mshtml*  for the HtmlT
 
 The Reporting engine and the Telerik Reporting REST Services work correctly also on Windows Server Operating Systems.            Hence, the  Windows Server OS can be used for deploying Telerik Reporting projects. For designing reports it is            necessary to use Windows OS editions for personal computers like Windows 10.         
 
-# See Also
 

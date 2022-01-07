@@ -24,10 +24,6 @@ Each filter rule is made up of an __Expression__ , __Operator__ and __Value__ .
 
 * __Value__ can be a literal value, "```<blank>```" or an expression defined in the                             [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).                         
 
-
-
-
-
 |   |   |
 | ------ | ------ |
  __Operator__ | __Description__ |
@@ -44,9 +40,6 @@ Each filter rule is made up of an __Expression__ , __Operator__ and __Value__ .
 |Bottom N|Returns the bottom N ranked records, where N is an Integer.At first the records are ordered by the __Expression__ in descending order and then the rank is assigned.                                 If two or more records tie for a rank, each tied records receives the same rank and the filter may return more than                                 the exact count specified in __Value.__ If __Expression__ is blank the filter returns the exact number of records specified by __Value. __ For example "Bottom N 5" returns exactly five records.|
 |Top %|Returns the top N percentage of ranked records.At first the records are ordered by the __Expression__ in descending order and then the rank is assigned.                                 The N is calculated as a percentage of the maximum rank.                                 If two or more records tie for a rank, each tied records receives the same rank and the filter may return more than                                 the exact percent specified in __Value.__ If __Expression__ is blank the filter returns the percentage of total records specified in __Value.__ If the report has an initial 1000 records and the filter is "Top % 5", 50 records                                 are returned.|
 |Bottom %|Returns the bottom N percentage of ranked records.At first the records are ordered by the __Expression__ in descending order and then the rank is assigned.                                 The N is calculated as a percentage of the maximum rank.                                 If two or more records tie for a rank, each tied records receives the same rank and the filter may return more than                                 the exact percent specified in __Value.__ If __Expression__ is blank the filter returns the percentage of total records specified in __Value.__ If the report has an initial 1000 records and the filter is "Bottom % 5", 50                                 records are returned|
-
-
-
 
 ## Filters used at the Group and Report Level
 

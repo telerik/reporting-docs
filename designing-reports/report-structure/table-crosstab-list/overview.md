@@ -36,7 +36,6 @@ You can continue to develop a Table, crossTab, or List by adding any table featu
 
 >caution [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections ([PageHeaderSection/PageFooterSection]({%slug telerikreporting/designing-reports/overview%})), because the latter are processed             after the report data has been processed. At this moment the report data source is not available anymore.           
 
-
 ## Context Menu
 
 When you click on a Table/Crosstab cell, you select a TextBox item. Although this is standard TextBox report item, when it is in the context of a Table/Crosstab/List item, its context menu would show settings for the Table/Crosstab/List item besides the [usual TextBox item's attributes it shows]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}).            To see an option you need to click either on an item or on the row/column handlers (the gray rectangles appearing when the whole Table item is selected). The Context Menu is functionally dependent on where exactly you click, and offers possible actions that are allowed and you can take (see image below).           

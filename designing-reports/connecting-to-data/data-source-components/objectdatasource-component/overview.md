@@ -54,7 +54,6 @@ Any of the following data sources can be assigned to the DataSource property of 
 
 # See Also
 
-
  * [Connecting the ObjectDataSource component to a Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
 
  * [How to add ObjectDataSource in a report designed in the Standalone Designer?](https://docs.telerik.com/reporting/knowledge-base/steps-on-how-to-add-objectdatadource-in-a-report-designed-in-the-standalone-designer)

@@ -16,12 +16,12 @@ position: 4
 
 Binds event handlers to the specified event.         
 
-	
+    
 ````js
-            function onPageReady(e) {
-              console.log('page ready!');
-            }
-            var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-            reportViewer.bind(telerikReportViewer.Events.PAGE_READY, onPageReady);
+function onPageReady(e) {
+  console.log('page ready!');
+}
+var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+reportViewer.bind(telerikReportViewer.Events.PAGE_READY, onPageReady);
 ````
 

@@ -30,5 +30,4 @@ This section elaborates on the most common errors which occur when using the Bar
 
   ![barcode-errors-invalid-content-length](images/Barcodes/barcode-errors-invalid-content-length.png)
 
-# See Also
 

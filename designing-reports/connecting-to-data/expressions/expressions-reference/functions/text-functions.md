@@ -16,7 +16,6 @@ Use Text functions to manipulate the text in your report. Text functions can use
 
 ## String manipulation:
 
-
 | Function | Description |
 | ------ | ------ |
 | __Format(format, value)__ |Formats the value using the specified format string. Example:`=Format(' LineTotal: {0} ', Fields.LineTotal)`. Detailed information about<br/>              date and time format specifiers can be found in  [Standard Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings) and  [Custom Date and Time Format Strings](https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) articles.|
@@ -37,8 +36,4 @@ Use Text functions to manipulate the text in your report. Text functions can use
 | __TrimEnd(string)__ |Removes all occurrences of white space characters from the end of this instance.|
 | __TrimStart(string)__ |Removes all occurrences of white space characters from the beginning of this instance|
 
-
-
-
-# See Also
 

@@ -24,23 +24,21 @@ After the __ObjectDataSource__  wizard appears you have to perform the following
 
    >note When the  __"Show data components only"__  check box is checked, only the types marked with the DataObjectAttribute                     are listed. This is useful for distinguishing the types appropriate for data binding from the regular ones.                   
 
-	
+    
       ````c#
-        [System.ComponentModel.DataObject()]
-        public class Cars : List<Car>;
-        {
-        ....
-        }
+[System.ComponentModel.DataObject()]
+public class Cars : List<Car>;
+{
+....
+}
 ````
 ````vb
-        <System.ComponentModel.DataObject> _
-        Public Class Cars
-        Inherits List(Of Car)
-        ....
-        End Class
+<System.ComponentModel.DataObject> _
+Public Class Cars
+Inherits List(Of Car)
+....
+End Class
 ````
-
-
 
    + __Existing data source components__ This tab lists all existing components in the current report that can be used with the __ObjectDataSource__                    component. That includes all components from the component tray in the designer that are not data source                   components themselves.                 
 
@@ -74,62 +72,56 @@ After the __ObjectDataSource__  wizard appears you have to perform the following
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=DataMethodSnippet}}
   ````C#
-	
-	        [System.ComponentModel.DataObject]
-	        public class Cars : System.Collections.Generic.List<Car>
-	        {
-	            [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
-	            public System.Collections.Generic.List<Car> GetCarsByYear(int year)
-	            {
-	                // TODO: Implement your specific business logic here.
-	                return new System.Collections.Generic.List<Car>();
-	            }
-	
-	            [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
-	            public System.Collections.Generic.List<Car> GetCarsByColor(string color)
-	            {
-	                // TODO: Implement your specific business logic here.
-	                return new System.Collections.Generic.List<Car>();
-	            }
-	
-	            [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
-	            public System.Collections.Generic.List<Car> GetCars(int year, string color)
-	            {
-	                // TODO: Implement your specific business logic here.
-	                return new System.Collections.Generic.List<Car>();
-	            }
-	        }
-	
+[System.ComponentModel.DataObject]
+public class Cars : System.Collections.Generic.List<Car>
+{
+    [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
+    public System.Collections.Generic.List<Car> GetCarsByYear(int year)
+    {
+        // TODO: Implement your specific business logic here.
+        return new System.Collections.Generic.List<Car>();
+    }
+
+    [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
+    public System.Collections.Generic.List<Car> GetCarsByColor(string color)
+    {
+        // TODO: Implement your specific business logic here.
+        return new System.Collections.Generic.List<Car>();
+    }
+
+    [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
+    public System.Collections.Generic.List<Car> GetCars(int year, string color)
+    {
+        // TODO: Implement your specific business logic here.
+        return new System.Collections.Generic.List<Car>();
+    }
+}
 ````
-
-
 
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=DataMethodSnippet}}
   ````VB
-	
-	    <System.ComponentModel.DataObject()>
-	    Public Class Cars
-	        Inherits System.Collections.Generic.List(Of Car)
-	
-	        <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
-	        Public Function GetCarsByYear(ByVal year As Integer) As System.Collections.Generic.List(Of Car)
-	            ' TODO: Implement your specific business logic here.
-	            Return New System.Collections.Generic.List(Of Car)
-	        End Function
-	
-	        <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
-	        Public Function GetCarsByColor(ByVal color As String) As System.Collections.Generic.List(Of Car)
-	            ' TODO: Implement your specific business logic here.
-	            Return New System.Collections.Generic.List(Of Car)
-	        End Function
-	
-	        <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
-	        Public Function GetCars(ByVal year As Integer, ByVal color As String) As System.Collections.Generic.List(Of Car)
-	            ' TODO: Implement your specific business logic here.
-	            Return New System.Collections.Generic.List(Of Car)
-	        End Function
-	    End Class
-	
+<System.ComponentModel.DataObject()>
+Public Class Cars
+    Inherits System.Collections.Generic.List(Of Car)
+
+    <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
+    Public Function GetCarsByYear(ByVal year As Integer) As System.Collections.Generic.List(Of Car)
+        ' TODO: Implement your specific business logic here.
+        Return New System.Collections.Generic.List(Of Car)
+    End Function
+
+    <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
+    Public Function GetCarsByColor(ByVal color As String) As System.Collections.Generic.List(Of Car)
+        ' TODO: Implement your specific business logic here.
+        Return New System.Collections.Generic.List(Of Car)
+    End Function
+
+    <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
+    Public Function GetCars(ByVal year As Integer, ByVal color As String) As System.Collections.Generic.List(Of Car)
+        ' TODO: Implement your specific business logic here.
+        Return New System.Collections.Generic.List(Of Car)
+    End Function
+End Class
 ````
 
 When the __"Show data components only"__  check box from the previous step is not checked, all public members of the Cars business object type                   are listed. When the check box is checked, only the methods with the                   __DataObjectMethodAttribute__  attribute appear in the list. This is especially useful for filtering only the methods                   that are appropriate for data binding.                 
@@ -141,7 +133,6 @@ When the __"Show data components only"__  check box from the previous step is no
    >note The names and types of the defined parameters should match exactly the arguments of the selected method. In case this requirement is not                 fulfilled the  __ObjectDataSource__  component will not be able to resolve or call correctly the method and will raise an                 exception at runtime.               This is the last step of the wizard. After pressing the __Finish__                button the wizard will create the __ObjectDataSource__  component with the               specified settings. In case you are using               [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), the wizard will automatically add the necessary                [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) element in report's project configuration file. If the configuration file               does not exist, it will be created prior to populating and added to the current project. If the configuration file is under source control, it will be checked out.               After finishing the above operations, the wizard will close and return the user to the designer.             
 
 # See Also
-
 
  * [Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
 

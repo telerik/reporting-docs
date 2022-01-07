@@ -28,20 +28,18 @@ The following walk through demonstrates how to create a Master-Detail report usi
 
 1. Setup the data connection to the AdventureWorks database, save it so it can be used later when creating               the master report and click Next. Enter the following SQL statement and Finish the DataSource wizard.             
 
-	
+    
       ````SQL
-				SELECT 
-					P.Name,ProductID,ProductNumber,PC.ProductCategoryID
-				FROM 
-					Production.Product P,
-					Production.ProductSubcategory PS,
-					Production.ProductCategory PC
-				WHERE 
-					P.ProductSubcategoryID=PS.ProductSubcategoryID
-					AND PS.ProductCategoryID=PC.ProductCategoryID
+SELECT
+    P.Name,ProductID,ProductNumber,PC.ProductCategoryID
+FROM
+    Production.Product P,
+    Production.ProductSubcategory PS,
+    Production.ProductCategory PC
+WHERE
+    P.ProductSubcategoryID=PS.ProductSubcategoryID
+    AND PS.ProductCategoryID=PC.ProductCategoryID
 ````
-
-
 
 1. Remove the page header and page footer sections. Open the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%})               and add the __ProductNumber__  and __Name__  fields to the               detail section of the report.             
 
@@ -79,12 +77,10 @@ The master report will contain only a simple listing of product categories.
 
 1. Enter the SQL statement below and click the __Next__  button.             
 
-	
+    
       ````SQL
-			SELECT ProductCategoryID,Name FROM Production.ProductCategory
+SELECT ProductCategoryID,Name FROM Production.ProductCategory
 ````
-
-
 
 1. In the __Design Data Layout__  page of the wizard add the __Name__  column               to the detail section and click the Next button. Continue taking the defaults until you finish the Wizard.             
 

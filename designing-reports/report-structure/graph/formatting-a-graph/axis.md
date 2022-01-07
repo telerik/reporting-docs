@@ -30,7 +30,6 @@ Additionally you can choose not to render the axis elements, so the axis validat
 
 >note When you work with discrete values - DatetimeScale, NumericalScale, LogarithmicScale,             you need at least two data points to have a properly calculated axis range and visible data.             Setting the Scale's Minimum and Maximum properties can resolve issues related to insufficient data.             To have the axis range set based on data, you can use the approach from             [How to: Use Bindings to Control the Coordinate System Properties]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties%}).           
 
-
 ## Format Axis Labels as Dates or Currencies
 
 When a numeric value is added to the y-axis, by default, the chart does not format the number before displaying it.           If your numeric field is a sales figure, consider formatting the numbers as currencies to increase the readability of the chart.         
@@ -84,6 +83,5 @@ In some cases, especially when using a __Logarithmic Scale__ , it is useful to h
 Please note that using this feature means that some of the scale properties like __MajorStep__ ,           __MinorStep__  and __LabelStep__  will not be respected, since the step will not be calculated.         
 
 # See Also
-
 
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) * [GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)  * [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)  * [LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)  * [Scale](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_Scale)  * [Scale](/reporting/api/Telerik.Reporting.Scale)  * [MajorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MajorStep)  * [MinorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MinorStep) 

@@ -18,17 +18,13 @@ Sets the report source.
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __rs__ |an object with properties:<br/>*  *report* - the report. For more information please see jQuery.fn.telerik_ReportViewer’s reportSource option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options);<br/>*  *parameters* - an object with properties that names are the report parameters’ ids and values - the report parameters’ values|
 
-
-
-
 Returns: the current *ReportViewer*  object.         
 
-	
+    
 ````js
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.reportSource({

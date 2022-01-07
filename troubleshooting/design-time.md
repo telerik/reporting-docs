@@ -22,35 +22,31 @@ The most reliable way to specify a report for the ReportViewer is to do this pro
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSource}}
 ````C#
-	        protected void Page_Load(object sender, EventArgs e)
-	        {
-	            if (!IsPostBack)
-	            {
-	                var typeReportSource = new Telerik.Reporting.TypeReportSource();
-	                typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
-	                this.ReportViewer1.ReportSource = typeReportSource;
-	            }
-	        }
+protected void Page_Load(object sender, EventArgs e)
+{
+    if (!IsPostBack)
+    {
+        var typeReportSource = new Telerik.Reporting.TypeReportSource();
+        typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
+        this.ReportViewer1.ReportSource = typeReportSource;
+    }
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSource}}
 ````VB
-	    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-	        If Not IsPostBack Then
-	            Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
-	            typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
-	            ReportViewer1.ReportSource = typeReportSource
-	            ReportViewer1.RefreshReport()
-	        End If
-	    End Sub
+Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+    If Not IsPostBack Then
+        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
+        typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
+        ReportViewer1.ReportSource = typeReportSource
+        ReportViewer1.RefreshReport()
+    End If
+End Sub
 ````
-
-
 
 ## A multi-column report shows fine when using Preview, but when used as a subreport, it shows as a one-column report only.
 
 The multi-column functionality is intended to be used only in the main           report because all report sections (excluding Page sections) are rendered in           a column-wise layout, thus the report can be only one column wide.         
-
-
 
 ## 'The type or namespace name 'Telerik' could not be found (are you missing a using directive or an assembly reference?)' Error on build.
 
@@ -58,5 +54,4 @@ Double-check if the project has references to Telerik Reporting assemblies,     
 
 If Telerik Reporting assemblies are referenced and updated, verify that the project targets .NET4+ framework Full Profile version.
 
-# See Also
 

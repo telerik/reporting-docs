@@ -66,7 +66,6 @@ For Pie Charts with lots of data points the best approach might be to use a comb
 
 >note The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their              [DataPointLabelAngle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelAngle)  set to a multiple of  __2*π__  radians in degrees (i.e. 0, 360, etc.).           
 
-
 ## Merging Small Slices on a Pie Chart
 
 Based on the data, a pie chart may produce too many slices, resulting in unreadable data presentation.           To overcome this, slices that are determined insignificant based on particular criteria can be merged into a single dedicated slice on the pie chart.         
@@ -80,6 +79,5 @@ By default, the merged slice is labeled in the chart’s legend as __Others__ . 
 The styling of the merged data point, its label or the corresponding legend item can be customized using the corresponding Conditional Formatting property using the Filter:                      = IsMergedData() | Operator.Equals | = True           
 
 # See Also
-
 
  * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  * [DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle)  * [DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel)  * [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) 

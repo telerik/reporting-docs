@@ -18,7 +18,6 @@ The __SqlDataSource__  component enables data items to display data located in a
 
 The __SqlDataSource__  component uses __ADO.NET__  classes to interact           with any database supported by __ADO.NET__ . This includes, but is not limited to:         
 
-
 | Provider Name | Invariant Name | Description |
 | ------ | ------ | ------ |
 |SqlClient Data Provider|System.Data.SqlClient|.Net Framework Data Provider for SqlServer|
@@ -27,9 +26,6 @@ The __SqlDataSource__  component uses __ADO.NET__  classes to interact          
 |Odbc Data Provider|System.Data.Odbc|.Net Framework Data Provider for Odbc|
 |MySQL Data Provider|MySql.Data.MySqlClient|.Net Framework Data Provider for MySQL|
 |Oracle Data Provider for .NET|Oracle.DataAccess.Client|Oracle Data Provider for .NE|
-
-
-
 
 ## Supported developer platforms
 

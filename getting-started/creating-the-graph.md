@@ -22,9 +22,8 @@ The controls which the __Report Header__  and the __Report Footer__  contain are
 
 1. Add a new SQL Datasource component for the graph with the following query:             
 
-	
+    
       ````sql
-
 SELECT
 P.Name AS ProductName, SOD.LineTotal / 1000 AS LineTotal,
 SOH.OrderDate,
@@ -40,9 +39,6 @@ INNER JOIN HumanResources.Employee AS E  ON E.EmployeeID = SP.SalesPersonID
 INNER JOIN Person.Contact AS C           ON C.ContactID = E.ContactID
 WHERE     (YEAR(SOH.OrderDate) = 2002)
 ````
-
-
-
 
 1. Rename the datasource to __graphDataSource__ .             
 
@@ -74,17 +70,13 @@ WHERE     (YEAR(SOH.OrderDate) = 2002)
 
 1. From the __Properties__  grid, select the __Color Palette__  option to set the colors for each bar series:             
 
-	````
-
-              Color [A=255, R=0, G=105, B=104],
-              Color [A=255, R=88, G=168, B=35],
-              Color [A=255, R=137, G=203, B=42],
-              Color [A=255, R=34, G=181, B=115],
-              Color [A=255, R=32, G=176, B=212]
-            
+    ````
+Color [A=255, R=0, G=105, B=104],
+Color [A=255, R=88, G=168, B=35],
+Color [A=255, R=137, G=203, B=42],
+Color [A=255, R=34, G=181, B=115],
+Color [A=255, R=32, G=176, B=212]
 ````
-
-
 
 1. Add the title of the graph by inserting a __TextBox__  with __Value__  "Top 5 Stores". Put Shapes next to the text.             
 

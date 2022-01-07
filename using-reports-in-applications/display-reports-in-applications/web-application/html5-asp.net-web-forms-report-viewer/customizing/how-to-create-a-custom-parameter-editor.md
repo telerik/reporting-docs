@@ -20,52 +20,48 @@ Custom parameter editors are defined through the ParameterEditors element when c
 
 The following example illustrates how to use the Kendo DropDownList widget for a           single parameter value parameter editor which also has available values:         
 
-	
+    
 ````js
-    function createSingleSelectEditor(placeholder, options) {
-                var dropDownElement = $(placeholder).html('<div></div>');
-                var parameter,
-                      valueChangedCallback = options.parameterChanged,
-                      dropDownList;
-                function onChange() {
-                    var val = dropDownList.value();
-                    valueChangedCallback(parameter, val);
-                }
-                return {
-                    beginEdit: function (param) {
-                        parameter = param;
-                        $(dropDownElement).kendoDropDownList({
-                            dataTextField: "name",
-                            dataValueField: "value",
-                            value: parameter.value,
-                            dataSource: parameter.availableValues,
-                            change: onChange
-                        });
-                        dropDownList = $(dropDownElement).data("kendoDropDownList");
-                    }
-                };
+function createSingleSelectEditor(placeholder, options) {
+            var dropDownElement = $(placeholder).html('<div></div>');
+            var parameter,
+                  valueChangedCallback = options.parameterChanged,
+                  dropDownList;
+            function onChange() {
+                var val = dropDownList.value();
+                valueChangedCallback(parameter, val);
             }
+            return {
+                beginEdit: function (param) {
+                    parameter = param;
+                    $(dropDownElement).kendoDropDownList({
+                        dataTextField: "name",
+                        dataValueField: "value",
+                        value: parameter.value,
+                        dataSource: parameter.availableValues,
+                        change: onChange
+                    });
+                    dropDownList = $(dropDownElement).data("kendoDropDownList");
+                }
+            };
+        }
 ````
 ````xml
-          </telerik:ReportViewer>
-          ....
-              <ParameterEditors SingleSelectEditor="createSingleSelectEditor"/>
-        </telerik:ReportViewer>
+</telerik:ReportViewer>
+....
+    <ParameterEditors SingleSelectEditor="createSingleSelectEditor"/>
+</telerik:ReportViewer>
 ````
-
-
 
 The viewer is using a special Kendo subset that contains only the required widgets and the DropDownList            widget is not part of the subset, additionally the viewer adds jQuery but this happens late in the            viewer initialisation. Thus add the following tags to the web page head element as shown in the            following code snippet:         
 
-	
+    
 ````xml
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.all.min.js"></script>
-                <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" id="commonCss" />
-                <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" id="skinCss" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.all.min.js"></script>
+<link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" id="commonCss" />
+<link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" id="skinCss" />
 ````
-
-
 
 If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor.           Each custom editor requires two JavaScript functions provided as attributes: __MatchFunction__  and __CreateEditorFunction__ .         
 
@@ -75,55 +71,51 @@ The main work for creating and utilizing the parameter editor is done in the __c
 
 The following example illustrates how to use the Kendo DropDownList widget for a           boolean single parameter value parameter editor which also has available values:         
 
-	
+    
 ````js
-            function customMatch(parameter) {
-                return Boolean(parameter.availableValues)
-                    && !parameter.multivalue
-                    && parameter.type === telerikReportViewer.ParameterTypes.BOOLEAN;
-            }
-            function createCustomEditor(placeholder, options) {
-                var dropDownElement = $(placeholder).html('<div></div>');
-                var parameter,
-                      valueChangedCallback = options.parameterChanged,
-                      dropDownList;
-                function onChange() {
-                    var val = dropDownList.value();
-                    valueChangedCallback(parameter, val);
-                }
-                return {
-                    beginEdit: function (param) {
-                        parameter = param;
-                        $(dropDownElement).kendoDropDownList({
-                            dataTextField: "name",
-                            dataValueField: "value",
-                            value: parameter.value,
-                            dataSource: parameter.availableValues,
-                            change: onChange
-                        });
-                        dropDownList = $(dropDownElement).data("kendoDropDownList");
-                    }
-                };
-            }
+function customMatch(parameter) {
+    return Boolean(parameter.availableValues)
+        && !parameter.multivalue
+        && parameter.type === telerikReportViewer.ParameterTypes.BOOLEAN;
+}
+function createCustomEditor(placeholder, options) {
+    var dropDownElement = $(placeholder).html('<div></div>');
+    var parameter,
+          valueChangedCallback = options.parameterChanged,
+          dropDownList;
+    function onChange() {
+        var val = dropDownList.value();
+        valueChangedCallback(parameter, val);
+    }
+    return {
+        beginEdit: function (param) {
+            parameter = param;
+            $(dropDownElement).kendoDropDownList({
+                dataTextField: "name",
+                dataValueField: "value",
+                value: parameter.value,
+                dataSource: parameter.availableValues,
+                change: onChange
+            });
+            dropDownList = $(dropDownElement).data("kendoDropDownList");
+        }
+    };
+}
 ````
-
-
 
 Passing the parameter editor to the viewer:         
 
-	
+    
 ````xml
-          </telerik:ReportViewer>
-          ....
-              <ParameterEditors>
-                <CustomEditors>
-                    <telerik:CustomParameterEditor MatchFunction="customMatch" CreateEditorFunction="createCustomEditor"></telerik:CustomParameterEditor>
-                </CustomEditors>
-            </ParameterEditors>
-        </telerik:ReportViewer>
+</telerik:ReportViewer>
+....
+    <ParameterEditors>
+      <CustomEditors>
+          <telerik:CustomParameterEditor MatchFunction="customMatch" CreateEditorFunction="createCustomEditor"></telerik:CustomParameterEditor>
+      </CustomEditors>
+  </ParameterEditors>
+</telerik:ReportViewer>
 ````
-
-
 
 >tip You can use any other custom UI covering the requirements of the CreateEditorFunction method.
 

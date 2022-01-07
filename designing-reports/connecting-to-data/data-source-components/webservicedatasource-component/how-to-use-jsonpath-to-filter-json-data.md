@@ -20,18 +20,18 @@ Very often the JSON data returned from a web service contains a single parent ob
 
 Example:         
 
-	
+    
 ````js
-{ 
+{
   "store": {
-    "book": [ 
-      { 
+    "book": [
+      {
         "category": "reference",
         "author": "Nigel Rees",
         "title": "Sayings of the Century",
         "price": 8.95
       },
-      { 
+      {
         "category": "fiction",
         "author": "Evelyn Waugh",
         "title": "Sword of Honour",
@@ -42,22 +42,20 @@ Example:
 }
 ````
 
-
-
 JSONPath: __$.store.book__ 
 
 Result:         
 
-	
+    
 ````js
-[ 
-  { 
+[
+  {
     "category": "reference",
     "author": "Nigel Rees",
     "title": "Sayings of the Century",
     "price": 8.95
   },
-  { 
+  {
     "category": "fiction",
     "author": "Evelyn Waugh",
     "title": "Sword of Honour",
@@ -66,26 +64,24 @@ Result:
 ]
 ````
 
-
-
 ## Filter Arrays
 
 In other scenarios it might be useful to filter the JSON data in order to display only objects matching specific criteria.         
 
 Example:         
 
-	
+    
 ````js
-{ 
+{
   "store": {
-    "book": [ 
-      { 
+    "book": [
+      {
         "category": "reference",
         "author": "Nigel Rees",
         "title": "Sayings of the Century",
         "price": 8.95
       },
-      { 
+      {
         "category": "fiction",
         "author": "Evelyn Waugh",
         "title": "Sword of Honour",
@@ -96,16 +92,14 @@ Example:
 }
 ````
 
-
-
 JSONPath: __$.store.book[?(@.price<10)]__ 
 
 Result:         
 
-	
+    
 ````js
-[ 
-  { 
+[
+  {
     "category": "reference",
     "author": "Nigel Rees",
     "title": "Sayings of the Century",

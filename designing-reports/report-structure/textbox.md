@@ -30,15 +30,13 @@ By default, TextBox items are a set size. If you want to allow a TextBox to expa
 
 You can use the  [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)            property to change the text orientation in a TextBox item. This can help you create           more readable reports, support locale-specific text orientation, fit more columns on a printed report that           has fixed page size, and create reports with a better graphical appeal. The layout of the tilted text starts from the very           corner of the item's client rectangle and fits the text until finished. This produces short initial text lines which can be avoided            if desired by adding some empty lines at the beginning of the text/expression:         
 
-	
+    
 ````cs
-             this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
+this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
 ````
 ````vb
-            Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
+Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
 ````
-
-
 
 The item grows vertically enough to accommodate a full tilted line from the left to the right edge.           This might produce significant growth of the item, specifically for angles closer to 90 degrees.           To avoid that, you may set the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)            property to false. For the angles 90 and 270 degrees, the item will grow until the whole text gets fitted on a single line.           This also can be controlled using the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)            property.         
 
@@ -83,18 +81,14 @@ Information on using the expression editor is available in the [Edit Expression 
 
 >note Pressing the Enter key inserts a new line in the expression. Enclose the new line within double quotes ("") to              insert a new line in the string resulting from the evaluated expression.           
 
-
   
 
   ![](images/UI014.png)
-
-
 
 ## Embedded expressions
 
 The item supports [embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}) for mail merge functionality. Embedded expressions give you the freedom to get and insert data-driven information directly into the text box report item to produce customized reports and mail merging.         
 
 # See Also
-
 
  * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) * [TextBox](/reporting/api/Telerik.Reporting.TextBox)  * [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)  * [Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)  * [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox) 

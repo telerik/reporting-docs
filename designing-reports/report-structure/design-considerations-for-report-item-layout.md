@@ -24,9 +24,7 @@ __[Telerik Reporting R3 2016](http://www.telerik.com/support/whats-new/reporting
 
 >note Report items can grow vertically even when their  __CanGrow__  property is set to false.             This behavior can be observed when the report item height is smaller than the report item font height, which causes the item to grow             vertically in order to accommodate at least a single line of text with the specified font style.           
 
-
 >important Page sections do not collapse or expand based on their content. For more details, check             [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})(Page Header and Footer sections).           
-
 
 ## Visibility
 
@@ -76,12 +74,9 @@ This rendering behavior will affect how report item borders are rendered accordi
 
 >important Setting  __BorderStyle__  and  __BorderWidth__  properties of report item to conflicting values             (for example: BorderStyle=Solid, BorderWidth: 0px) can produce unexpected result in some rendering formats.             To hide the border, set BorderStyle=None. Otherwise, the width of the border needs to be set greater than 0.           
 
-
 >note Some borders and lines might be thicker or disappear on report's preview. The reason for this is that GDI component installed on the              machine uses anti-aliasing that softens sharp edges so they appear less jagged when rendered on the display.           The GDI component works together with the display driver software to determine which pixels will be turned on to show the line on a particular display.             That is why some lines can be missing or be thinner/thicker when zoom is applied.           The general suggestion is to set the border/line width to minimum 2px which can be rendered on a machine with 96dpi resolution.             Using pixels instead of points is also recommended as a more media oriented unit.           
 
-
 # See Also
-
 
  * [How to Layout Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
 

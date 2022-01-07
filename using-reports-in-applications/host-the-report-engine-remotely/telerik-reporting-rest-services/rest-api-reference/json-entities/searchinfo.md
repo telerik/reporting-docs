@@ -16,7 +16,7 @@ The info object passed to the report engine to perform a search.
 
 ## 
 
-	
+    
           {
             "searchToken": "foo",
             "matchCase": false,
@@ -24,9 +24,6 @@ The info object passed to the report engine to perform a search.
             "useRegularExpressions": true
           }
         
-
-
-
 
 >caption Fields
 
@@ -36,6 +33,5 @@ The info object passed to the report engine to perform a search.
 |`matchCase`|`boolean`|`true`|Determines if the search is case-sensitive.|
 |`matchWholeWord`|`boolean`|`true`|Determines if the search will consider only words. Internally uses the following regular expression:`(?<=\W|^)(token)(?=\W|$).`|
 |`useRegularExpressions`|`boolean`|`true`|Determines if the search should be performed using regular expressions to match the passed token.|
-
 
 

@@ -14,7 +14,6 @@ position: 0
 
 ## telerikReportViewer.Events
 
-
 |   |   |
 | ------ | ------ |
  Member name |
@@ -34,6 +33,5 @@ position: 0
 |VIEWER_TOOLTIP_OPENING|
 |SEND_EMAIL_BEGIN|
 |SEND_EMAIL_EN|
-
 
 

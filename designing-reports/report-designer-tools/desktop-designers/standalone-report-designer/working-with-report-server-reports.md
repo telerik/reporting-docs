@@ -72,7 +72,6 @@ Use this procedure to save a report to the server.
 
 >important When the report is saved the changes are saved on the server but your changes are still not visible to the other users.             You must publish the report before others can see your changes.           
 
-
 ## Publish a report
 
 Use this procedure to publish a report that is already locked in the designer.         
@@ -109,10 +108,8 @@ Use this procedure to save a report that is already opened from another location
 
 >important When the report is saved the changes are saved on the server but your changes are still not visible to the other users.             You must publish the report before others can see your changes.           
 
-
 ## Reference another report stored in the server
 
-Another report from the server can be referenced using *[CategoryName]/[ReportName]*  path for the URI,         	for example: *Samples/Product Sales* .         	If the report's category is omitted then the category from the master report is inferred.         	A reference to another report can be used either by the SubReport item or in a NavigateToReport action.         
+Another report from the server can be referenced using *[CategoryName]/[ReportName]*  path for the URI,             for example: *Samples/Product Sales* .             If the report's category is omitted then the category from the master report is inferred.             A reference to another report can be used either by the SubReport item or in a NavigateToReport action.         
 
-# See Also
 

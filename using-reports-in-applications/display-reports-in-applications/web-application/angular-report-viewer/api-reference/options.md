@@ -16,7 +16,6 @@ Below is a list of all options available during initialization.
 
 ## Options
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __id__ | *string* , *optional* ; Sets the unique identifier of the ReportViewer instance. If not specified,                 the __id__ of the target HTML element will be used (if such is set). The id of the ReportViewer is used to identify the client                 session of the viewer when __persistSession__ is enabled (true);|
@@ -31,7 +30,6 @@ Below is a list of all options available during initialization.
 | __pageMode__ | *string* , *optional* ;                 Sets if the report is displayed in Single page or Continuous scroll mode. The available values are:<br/>*  *“SINGLE_PAGE”* - only one page is loaded in the view port;<br/>*  *“CONTINUOUS_SCROLL”* - more than one page could be loaded in the view port;Default value is: *'CONTINUOUS_SCROLL'* .|
 | __persistSession__ | *boolean* | *optional* . Sets whether the viewer’s client session                 to be persisted between the page’s refreshes(ex. postback). The session is stored in the browser’s  [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) and is available                 for the duration of the page session. A page session lasts for as long as the browser is open and survives over page reloads and restores.                 Opening a page in a new tab or window will cause a new session to be initiated.The viewer’s state is persisted in the global sessionStorage object under a key defined by the viewer’s __id__ .                 In order to enable the correct session to be loaded on the next page reload please use the same __id__ as in the first load. This means that if you need to persist the client session between page reloads you should                 set the viewer’s __id__ (or the id of the target element) to a constant value that should not be changed dynamically                 during the page lifecycle.Default Value is: *false* ;|
 | __parameters__ | *object* , *optional* ;                 Allows user to defined parameters options for the report parameters|
-
 
  Option | Description |
 | ------ | ------ |
@@ -48,7 +46,6 @@ Below is a list of all options available during initialization.
    +  *“COMBO_BOX”* - uses [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) widget as an editor;
 
    +  *“LIST_VIEW”* - uses [Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview) widget as an editor;Default value is: *'LIST_VIEW'* 
-
 
 |   |   |
 | ------ | ------ |
@@ -67,6 +64,5 @@ Below is a list of all options available during initialization.
 | __searchMetadataOnDemand__ | *boolean* , *optional* .                 Determines whether the search metadata will be delivered on demand __(true)__ or by default __(false)__ .Default value: *false* ;|
 | __initialPageAreaImageUrl__ | *string* , *optional* .                 The image URL for the PageArea background image. Used only when the parameter values are missing or invalid.                 The image should be in __PNG__ , __GIF__ , or __JPG__ file format.|
 | __keepClientAlive__ | *boolean* | *optional* . Determines whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__ .Default Value is: *true* |
-
 
 

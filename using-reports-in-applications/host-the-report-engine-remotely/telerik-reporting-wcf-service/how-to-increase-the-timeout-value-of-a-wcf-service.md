@@ -12,30 +12,27 @@ position: 5
 
 
 
-To avoid timeouts when using the Telerik Reporting WCF Service, one should set several attributes     	on the client and server side.        
+To avoid timeouts when using the Telerik Reporting WCF Service, one should set several attributes         on the client and server side.        
 
 ## Timeouts on server binding
 
-	
+    
 ````xml
 <bindings>
    <basicHttpBinding>
         <binding name="BasicHttpsBindingConfig" maxReceivedMessageSize="2147483647" maxBufferSize="2147483647"
          receiveTimeout="00:10:00" sendTimeout="00:10:00">
-		<readerQuotas maxArrayLength="2147483647" maxStringContentLength="2147483647"/>
+        <readerQuotas maxArrayLength="2147483647" maxStringContentLength="2147483647"/>
         </binding>
    </basicHttpBinding>
 </bindings>
 ````
 
-
-
 >note The number 2,147,483,647 is the max value of a 32 bit signed integer.
-
 
 ## Timeouts on client binding
 
-	
+    
 ````c#
 ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
     {
@@ -51,15 +48,13 @@ ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
     }
 ````
 
-
-
 For more information, see [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%}).
 
 ## Timeouts when hosted in ASP.NET
 
-When a WCF service is hosted in IIS/ASP.NET, another setting would also control the lifetime of the request:  			 [ExecutionTimeout](/reporting/api/System.Web.Configuration.HttpRuntimeSection#System_Web_Configuration_HttpRuntimeSection_ExecutionTimeout) . 			
+When a WCF service is hosted in IIS/ASP.NET, another setting would also control the lifetime of the request:               [ExecutionTimeout](/reporting/api/System.Web.Configuration.HttpRuntimeSection#System_Web_Configuration_HttpRuntimeSection_ExecutionTimeout) .             
 
-	
+    
 ````XML
 <configuration>
   <system.web>
@@ -68,7 +63,4 @@ When a WCF service is hosted in IIS/ASP.NET, another setting would also control 
 </configuration>
 ````
 
-
-
-# See Also
 

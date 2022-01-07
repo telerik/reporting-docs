@@ -48,46 +48,42 @@ Selecting a Cross-section item can be done through the [Report Explorer]({%slug 
 
 >note The Cross-section item has complete design-time support in Standalone Report Designer and Visual Studio Report Designer. The Web Report Designer currently provides basic designing capabilities and some of the properties of the Cross-section item cannot be edited through the dedicated property editors.
 
-
 The Cross-section item can be added programmatically to a report with the following code:         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CrossSectionItemSnippets.cs region=CreateAndInitializeCrossSectionItemSnippet}}
 ````c#
-	        void CreateAndInitializeCrossSectionItem()
-	        {
-	            var reportGroup = report.Groups[0];
-	
-	            var crossSectionItem = new CrossSectionItem();
-	            report.Items.Add(crossSectionItem);
-	
-	            crossSectionItem.BeginSection = reportGroup.GroupHeader;
-	            crossSectionItem.BeginMargin = Drawing.Unit.Cm(0.5);
-	            crossSectionItem.EndSection = reportGroup.GroupFooter;
-	            crossSectionItem.EndMargin = Drawing.Unit.Cm(0.5);
-	
-	            crossSectionItem.Left = Drawing.Unit.Cm(1);
-	            crossSectionItem.Width = Drawing.Unit.Cm(1);
-	        }
-	
+void CreateAndInitializeCrossSectionItem()
+{
+    var reportGroup = report.Groups[0];
+
+    var crossSectionItem = new CrossSectionItem();
+    report.Items.Add(crossSectionItem);
+
+    crossSectionItem.BeginSection = reportGroup.GroupHeader;
+    crossSectionItem.BeginMargin = Drawing.Unit.Cm(0.5);
+    crossSectionItem.EndSection = reportGroup.GroupFooter;
+    crossSectionItem.EndMargin = Drawing.Unit.Cm(0.5);
+
+    crossSectionItem.Left = Drawing.Unit.Cm(1);
+    crossSectionItem.Width = Drawing.Unit.Cm(1);
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CrossSectionItemSnippets.vb region=CreateAndInitializeCrossSectionItemSnippet}}
 ````vb.net
-	    Private Sub CreateAndInitializeCrossSectionItemSnippet()
-	        Dim reportGroup = report.Groups(0)
-	        Dim crossSectionItem = New Telerik.Reporting.CrossSectionItem()
-	        report.Items.Add(crossSectionItem)
-	
-	        crossSectionItem.BeginSection = reportGroup.GroupHeader
-	        crossSectionItem.BeginMargin = Telerik.Reporting.Drawing.Unit.Cm(0.5)
-	        crossSectionItem.EndSection = reportGroup.GroupFooter
-	        crossSectionItem.EndMargin = Telerik.Reporting.Drawing.Unit.Cm(0.5)
-	
-	        crossSectionItem.Left = Telerik.Reporting.Drawing.Unit.Cm(1)
-	        crossSectionItem.Width = Telerik.Reporting.Drawing.Unit.Cm(1)
-	    End Sub
+Private Sub CreateAndInitializeCrossSectionItemSnippet()
+    Dim reportGroup = report.Groups(0)
+    Dim crossSectionItem = New Telerik.Reporting.CrossSectionItem()
+    report.Items.Add(crossSectionItem)
+
+    crossSectionItem.BeginSection = reportGroup.GroupHeader
+    crossSectionItem.BeginMargin = Telerik.Reporting.Drawing.Unit.Cm(0.5)
+    crossSectionItem.EndSection = reportGroup.GroupFooter
+    crossSectionItem.EndMargin = Telerik.Reporting.Drawing.Unit.Cm(0.5)
+
+    crossSectionItem.Left = Telerik.Reporting.Drawing.Unit.Cm(1)
+    crossSectionItem.Width = Telerik.Reporting.Drawing.Unit.Cm(1)
+End Sub
 ````
-
-
 
 The order of assignments is important, because settings any *Location* - or *Size* -related properties           would iterate through the sections of the report, determining which of its sections should be assigned to the *BeginSection*  and *EndSection*  properties,           and also set the corresponding margins. That's why the item needs to be added to the Report's Items collection first and then assign its section-related properties.         
 
@@ -102,6 +98,5 @@ The Cross-section item is designed to aid the production of form-type reports an
 The Cross-section item is not supported in all rendering extensions. Please check the corresponding "Design Considerations" article to ensure if it is supported for a given rendering extension.         
 
 # See Also
-
 
  * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})

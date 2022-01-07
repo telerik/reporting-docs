@@ -52,7 +52,6 @@ Additionally the xaml file with the corresponding Report Viewer theme has to be 
 
 >note You should not set Application Theme using the StyleManager when using implicit styles.           
 
-
 ## Basing styles on an existing Report Viewer theme
 
 Currently to change an existing Report Viewer theme you can simply copy the original theme and edit the copy.            All the styles that are part of the Report Viewer can be found in the respective XAML file.            If you need to edit existing WPF UI Controls please check the respective article for more information:            [Telerik UI for WPF - Setting a Theme (Using Implicit Styles)](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html) 
@@ -69,25 +68,23 @@ We will apply embedded implicit styles for the Fluent theme in our example proje
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\App.xaml}}
   ````XML
-	<Application x:Class="WpfApplication1.App"
-	         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-	         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	         StartupUri="MainWindow.xaml">
-	    <Application.Resources>
-	        <ResourceDictionary>
-	            <ResourceDictionary.MergedDictionaries>
-	                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/System.Windows.xaml" />
-	                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.xaml" />
-	                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.Input.xaml" />
-	                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.Navigation.xaml" />
-	                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.ReportViewer.Wpf.xaml" />
-	            </ResourceDictionary.MergedDictionaries>
-	        </ResourceDictionary>
-	    </Application.Resources>
-	</Application>
+<Application x:Class="WpfApplication1.App"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/System.Windows.xaml" />
+                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.xaml" />
+                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.Input.xaml" />
+                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.Navigation.xaml" />
+                <ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.ReportViewer.Wpf.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
 ````
-
-
 
 ## Setting Customizable Implicit Style for the WPF Report Viewer Example
 
@@ -101,23 +98,23 @@ We will apply implicit styles for the Vista theme in our example project. Having
 
 * The next step is to merge these ResourceDictionaries in the App.xaml file:
 
-	
+    
       ````XML
-     <Application x:Class="WpfApplication1.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="MainWindow.xaml">
-      <Application.Resources>
-        <ResourceDictionary>
-          <ResourceDictionary.MergedDictionaries>
-            <ResourceDictionary Source="/Themes/System.Windows.xaml"/>
-            <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.xaml"/>
-            <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Input.xaml"/>
-            <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
-            <ResourceDictionary Source="/Themes/Telerik.ReportViewer.Wpf.xaml"/>
-          </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-      </Application.Resources>
-    </Application>
+<Application x:Class="WpfApplication1.App"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        StartupUri="MainWindow.xaml">
+ <Application.Resources>
+   <ResourceDictionary>
+     <ResourceDictionary.MergedDictionaries>
+       <ResourceDictionary Source="/Themes/System.Windows.xaml"/>
+       <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.xaml"/>
+       <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Input.xaml"/>
+       <ResourceDictionary Source="/Themes/Telerik.Windows.Controls.Navigation.xaml"/>
+       <ResourceDictionary Source="/Themes/Telerik.ReportViewer.Wpf.xaml"/>
+     </ResourceDictionary.MergedDictionaries>
+   </ResourceDictionary>
+ </Application.Resources>
+</Application>
 ````
 

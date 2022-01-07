@@ -22,11 +22,7 @@ The Panel item can be used to organize the layout of a report and allow items to
 
 >note A Panel acts as a container for items that you either create in it or drag into it. If you draw a Panel around an item that already exists in the Report Designer,             the Panel will not act as its container.           
 
-
-
-
 # See Also
-
 
  * [Organizing the Report Layout via Panel item]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 

@@ -16,7 +16,6 @@ Use Math functions to manipulate the numeric values of your data. Math functions
 
 ## 
 
-
 | Function | Description |
 | ------ | ------ |
 | __Abs(number)__ |Returns the absolute value of a specified number.|
@@ -44,8 +43,4 @@ Use Math functions to manipulate the numeric values of your data. Math functions
 | __Tanh(angle)__ |Returns the hyperbolic tangent of the specified angle.|
 | __Truncate(number)__ |Calculates the integral part of a specified number|
 
-
-
-
-# See Also
 

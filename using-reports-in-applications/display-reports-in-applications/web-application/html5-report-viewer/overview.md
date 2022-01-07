@@ -26,8 +26,6 @@ It has built-in support for end-user interactions such as drill-down and drill-t
 
 The toolbar of the HTML5 report viewer provides basic functionality for interacting with the currently-loaded report:         
 
-
-
 |   |   |
 | ------ | ------ |
 |Navigate back/forward in history|
@@ -42,9 +40,6 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 ||Toggles the parameters area|
 ||Scale the pages for best viewing experience including __full page__ , __page width__ or __custom scale factor__ .|
 ||Toggles the search window widget that allows searching in report contents. Check the [search article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search%})for more information|
-
-
-
 
 ## Report Parameters
 
@@ -83,7 +78,6 @@ The purpose of the HTML5 Report Viewer is to display Telerik Reports and allow t
 The HTML5 Report Viewer's content is rendered in __DIV__  elements.           The report in the viewer is rendered through the HTML rendering mechanism based on the           [Design Considerations for HTML Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).         
 
 # See Also
-
 
  * [Requirements and Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%})
 

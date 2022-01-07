@@ -14,7 +14,6 @@ position: 4
 
 ## telerikReportViewer.ParameterTypes
 
-
 |   |   |
 | ------ | ------ |
  Member name |
@@ -24,6 +23,5 @@ position: 4
 |STRING|
 |DATETIME|
 |BOOLEA|
-
 
 

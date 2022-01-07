@@ -20,34 +20,31 @@ The accessibility features are enabled or disabled using a Boolean dependency pr
 
 >warning The accessibility routines access the report viewer parts through the theme template  __Telerik.ReportViewer.Wpf.xaml__ .              In case you have modified the template, the accessibility features might be affected or disabled.           
 
-
 The accessibility routines capture the keyboard events to provide shortcut key access to the viewer areas.           It is possible some of these shortcuts to interfere with the designed application behavior.           In this case the keys mapping can be changed through the property            [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.Wpf#Telerik_ReportViewer_Wpf_AccessibilityKeyMap) ,           which provides access to the internal dictionary of keycodes and shortcut definitions.           The code snippets below demonstrate how to change the default shortcut for navigating to the menu area:         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window2.xaml.cs region=WpfViewerAccessibilityKeyMapSnippet}}
 ````C#
-	        private void SetToolbarShortcutKey()
-	        {
-	            //Note that the accessibility classes are accessible after the report viewer loads its template, so this code should be called in or after Loaded event
-	            var keyMap = this.reportViewer1.AccessibilityKeyMap;
-	            keyMap.Remove((int)System.Windows.Input.Key.M);
-	            keyMap[(int)System.Windows.Input.Key.N] = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY;
-	            this.reportViewer1.AccessibilityKeyMap = keyMap;
-	        }
+private void SetToolbarShortcutKey()
+{
+    //Note that the accessibility classes are accessible after the report viewer loads its template, so this code should be called in or after Loaded event
+    var keyMap = this.reportViewer1.AccessibilityKeyMap;
+    keyMap.Remove((int)System.Windows.Input.Key.M);
+    keyMap[(int)System.Windows.Input.Key.N] = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY;
+    this.reportViewer1.AccessibilityKeyMap = keyMap;
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window2.xaml.vb region=WpfViewerAccessibilityKeyMapSnippet}}
 ````VB
-	    Private Sub SetToolbarShortcutKey()
-	
-	        'Note that the accessibility classes are accessible after the report viewer loads its template, so this code should be called in or after Loaded event
-	        Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
-	        map.Remove(CType(Input.Key.M, Integer))
-	        map(CType(Input.Key.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
-	        Me.ReportViewer1.AccessibilityKeyMap = map
-	
-	    End Sub
+Private Sub SetToolbarShortcutKey()
+
+    'Note that the accessibility classes are accessible after the report viewer loads its template, so this code should be called in or after Loaded event
+    Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
+    map.Remove(CType(Input.Key.M, Integer))
+    map(CType(Input.Key.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
+    Me.ReportViewer1.AccessibilityKeyMap = map
+
+End Sub
 ````
-
-
 
 Since the accessibility uses the theme template, the modification of the accessibility key map must be done after the template is loaded.           We recommend using the report viewer's            [Loaded](https://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.loaded(v=vs.110).aspx)                      event handler.         
 
@@ -55,21 +52,15 @@ All the accessibility messages and labels support localization. You can modify t
 
 >note Please note that the additional markup, added to the report content when the accessibility is enabled, might result in a small performance penalty,             especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
 
-
 ## Supported accessibility features in WPF report viewer
 
 The WPF report viewer supports the following important accessibility features:         
-
-
 
 |   |   |
 | ------ | ------ |
  __Comprehensive keyboard support__ |Includes navigation between and into report viewer areas (menu/toolbar, parameters, document map, contents) using                 shortcut keys, TAB or arrow keys where possible. The toolbar commands and expandable items are toggled on ENTER.                 The same key mapping is applied to document map and parameters areas.The default shortcut keys for navigation between the viewer areas are:<br/>*  __Ctrl+Alt+M__ - menu/toolbar area<br/>*  __Ctrl+Alt+P__ - parameters area (if visible)<br/>*  __Ctrl+Alt+D__ - document map area (if visible)<br/>*  __Ctrl+Alt+C__ - report viewer contents area (the report currently rendered in the viewer)If needed, the default key mapping can be changed, using the report viewer's API method                   [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.Wpf#Telerik_ReportViewer_Wpf_AccessibilityKeyMap) .                 The key, assigned for navigation between the areas, is always used together with CTRL and ALT key modifiers.|
 | __Dynamically generated descriptions for report viewer areas__ |The report viewer areas provide additional textual details that reflect the currently presented information.                 This applies to the state of the menu buttons (enabled, disabled, expandable, etc.),                 the parameters state and their selected values, the currently selected node from document map and the rendered report.                 This information refreshes dynamically with every change that occurs in the viewer                 - for example when a new page is loaded or when an exception is thrown while processing the report.|
 | __Textual description to a non-textual items__ |In a rendered report all graphic items like images, maps and charts provide additional information about their contents.                 Tables and crosstabs provide such information about the currently focused cell, marking the current row, column and value.                 These details are visible and recognizable by the most popular screen readers to help users with visual disabilities better understand the presented report.                 A comprehensive list with the supported report items features can be found in the next section|
-
-
-
 
 ## Supported accessibility features in rendered report contents
 

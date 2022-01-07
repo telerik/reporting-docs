@@ -40,3 +40,5 @@ You can connect to a Microsoft Access database using the Telerik        SqlDataS
 1. To test your query, click __Next__ , and then             click __Execute Query__ 
 
 1. Click __Finish__ . The Wizard would close and the SqlDataSource              component would be ready for usage by the data items.
+
+

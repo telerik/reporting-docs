@@ -18,7 +18,6 @@ The HTML5 Report Viewer is built with customization in mind. This means that the
 
 # See Also
 
-
  * [Templates Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%})
 
  * [Templates Structure]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure%})

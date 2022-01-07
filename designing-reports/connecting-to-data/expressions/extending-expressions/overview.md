@@ -16,26 +16,24 @@ Expressions can easily be extended by providing user functions written in any .N
 
 In order to expose your custom functions, so they can be utilized by the Reporting engine,       you have to add a reference to the assembly they are defined in.        The reference is added under the AssemblyReferences configuration section in the application's configuration file.       
 
-	
+    
 ````XML
-      <configuration>
-			<configSections>
-				<section
-				    name="Telerik.Reporting"
-				    type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
-				    allowLocation="true"
-				    allowDefinition="Everywhere"/>
-		    </configSections>
-		    …
-		     <Telerik.Reporting>
-				<AssemblyReferences>
-					<add name="MyCustomAssembly" version="1.0.0.0" />
-				</AssemblyReferences>
-			 </Telerik.Reporting>
-      </configuration>
+<configuration>
+      <configSections>
+          <section
+              name="Telerik.Reporting"
+              type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
+              allowLocation="true"
+              allowDefinition="Everywhere"/>
+      </configSections>
+      …
+       <Telerik.Reporting>
+          <AssemblyReferences>
+              <add name="MyCustomAssembly" version="1.0.0.0" />
+          </AssemblyReferences>
+       </Telerik.Reporting>
+</configuration>
 ````
-
-
 
 ## In This Section
 
@@ -43,5 +41,4 @@ In order to expose your custom functions, so they can be utilized by the Reporti
 
 * [User Aggregate functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})
 
-# See Also
 

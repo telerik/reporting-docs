@@ -26,7 +26,7 @@ The main work for creating and utilizing the parameter editor is done in the __c
 
 The following example illustrates how to use the Kendo DropDownList widget for a           single parameter value parameter editor which also has available values:         
 
-	
+    
 ````js
 {
       match: function (parameter) {
@@ -60,54 +60,48 @@ The following example illustrates how to use the Kendo DropDownList widget for a
 }
 ````
 
-
-
 Passing the parameter editor to the viewer:         
 
-	
+    
 ````js
 <script type="text/javascript">
       $("#reportViewer1")
-        	.telerik_ReportViewer({           
-            	parameterEditors: [
-                	{
-                    	match: function (parameter) {
-                        	return Boolean(parameter.availableValues) && !parameter.multivalue;
-                    	},
-                    	createEditor: function (placeholder, options)  {
-                        	var dropDownElement = $(placeholder).html('<div></div>'),
-                            	      parameter,
-                            	      valueChangedCallback = options.parameterChanged,
-                            	      dropDownList;
-                                  	function onChange() {
-                                 	var val = dropDownList.value();
-                                	valueChangedCallback(parameter, val);
-                                 	}
-                        	return {
-                            	beginEdit: function (param) {
-                                	parameter = param;
-                                	$(dropDownElement).kendoDropDownList({
-                                    	dataTextField: "name",
-                                    	dataValueField: "value",
+            .telerik_ReportViewer({
+                parameterEditors: [
+                    {
+                        match: function (parameter) {
+                            return Boolean(parameter.availableValues) && !parameter.multivalue;
+                        },
+                        createEditor: function (placeholder, options)  {
+                            var dropDownElement = $(placeholder).html('<div></div>'),
+                                      parameter,
+                                      valueChangedCallback = options.parameterChanged,
+                                      dropDownList;
+                                      function onChange() {
+                                     var val = dropDownList.value();
+                                    valueChangedCallback(parameter, val);
+                                     }
+                            return {
+                                beginEdit: function (param) {
+                                    parameter = param;
+                                    $(dropDownElement).kendoDropDownList({
+                                        dataTextField: "name",
+                                        dataValueField: "value",
                                       value: parameter.value,
-                                    	dataSource: parameter.availableValues,
-                                    	change: onChange
-                                	});
-                                	dropDownList = $(dropDownElement).data("kendoDropDownList");
-                            	}
+                                        dataSource: parameter.availableValues,
+                                        change: onChange
+                                    });
+                                    dropDownList = $(dropDownElement).data("kendoDropDownList");
+                                }
                             };
-                    	}
+                        }
                   }]
-        	});   	 
+            });
 </script>
 ````
 
-
-
 >tip You can use any other custom UI covering the requirements of the createEditor method.
 
-
 # See Also
-
 
  * [How To: Pass Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-pass-values-to-report-parameters%})

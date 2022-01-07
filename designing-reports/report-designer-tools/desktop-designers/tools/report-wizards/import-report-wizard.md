@@ -26,11 +26,9 @@ To start the report conversion:
 
    + __Right-click__  the project context menu and select                 __Add | New Item | Telerik Report__ .                 Enter a name for the report class and click the __Add__  button to close the dialog. The Import Report Wizard opens.               
 
-
 |  __Step__  |  __Description__  |
 | ------ | ------ |
 | __Report Converter Page__ |Choose from a list of the available converters.|
 | __Report Conversion Summary__ |This page lets you review the conversion summary.<br/>            Click Finish to continue with the report setup|
-
 
 

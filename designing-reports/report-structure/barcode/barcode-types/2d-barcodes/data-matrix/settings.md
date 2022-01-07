@@ -46,26 +46,24 @@ Determines character encoding used to encode the barcode contents. By default it
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_DataMatrixEncoder_Settings}}
 ````cs
-	            var encoder = new Telerik.Reporting.Barcodes.DataMatrixEncoder();
-	
-	            encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii;
-	            encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto;
-	            encoder.TextEncoding = System.Text.UTF8Encoding.UTF8;
-	
-	            this.barcode1.Encoder = encoder;
+var encoder = new Telerik.Reporting.Barcodes.DataMatrixEncoder();
+
+encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii;
+encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto;
+encoder.TextEncoding = System.Text.UTF8Encoding.UTF8;
+
+this.barcode1.Encoder = encoder;
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_DataMatrixEncoder_Settings}}
 ````vbnet
-	        Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
-	
-	        encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
-	        encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto
-	        encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
-	
-	        Me.barcode1.Encoder = encoder
+Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
+
+encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
+encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto
+encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
+
+Me.barcode1.Encoder = encoder
 ````
-
-
 
 # See Also
  * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  * [Telerik.Reporting.Barcodes.DataMatrixEncoder](/reporting/api/Telerik.Reporting.Barcodes.DataMatrixEncoder)  * [Encodation](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_Encodation)  * [SymbolSize](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_SymbolSize) 

@@ -22,7 +22,6 @@ Example:Fields.ProductID           - returns the value of the field ProductID in
 
 >note If the data source field name is not a valid name in terms             of programming languages (contains spaces, punctuation marks, etc.)             enclose its name in square brackets, for example =Fields.[My Column];             Because brackets are special characters, you must use a back slash             ('\') to escape the bracket, if it is part of a data field name.             For example, a data field named `Field[1]` would be referenced as             `Fields.[Field\[1\]]`.           
 
-
 Another option of accessing the values in the fields           collection is the global function           [Fields(fieldName)]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).         
 
 ## Parameters
@@ -42,7 +41,6 @@ The current page number that can be used only in page header and footer.
 The total number of pages in the report that can be used           only in page header and footer.         
 
 >note The page numbering behavior in a report contained in a             report book may be controlled through the  [PageNumberingStyle](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_PageNumberingStyle)              property.           
-
 
 ## RenderingFormat
 

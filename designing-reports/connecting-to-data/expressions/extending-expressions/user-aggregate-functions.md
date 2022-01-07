@@ -28,106 +28,100 @@ Apply  [AggregateFunctionAttribute](/reporting/api/Telerik.Reporting.Expressions
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\IAggregateFunctionSnippets.cs region=AggregateFunctionImplementation}}
 ````C#
-	
-	    [AggregateFunction(Description = "Concatenation aggregate. Output: (value1, value2, ...)", Name = "Concatenate")]
-	    class ConcatenateAggregate : IAggregateFunction
-	    {
-	        string result;
-	
-	        public void Accumulate(object[] values)
-	        {
-	            // The aggregate function expects one parameter
-	            object value = values[0];
-	
-	            // null values are not aggregated
-	            if (null == value)
-	            {
-	                return;
-	            }
-	
-	            // The actual accumulation
-	            if (this.result.Length > 0)
-	            {
-	                result += ", ";
-	            }
-	            this.result += value.ToString();
-	        }
-	
-	        public object GetValue()
-	        {
-	            return string.Format("({0})", this.result);
-	        }
-	
-	        public void Init()
-	        {
-	            // Add aggregate function initialization code here if needed
-	            this.result = string.Empty;
-	        }
-	
-	        public void Merge(IAggregateFunction aggregateFunction)
-	        {
-	            ConcatenateAggregate aggregate = (ConcatenateAggregate)aggregateFunction;
-	
-	            if (aggregate.result.Length > 0)
-	            {
-	                if (this.result.Length > 0)
-	                {
-	                    result += ", ";
-	                }
-	                this.result += aggregate.result;
-	            }
-	        }
-	    }
-	
+[AggregateFunction(Description = "Concatenation aggregate. Output: (value1, value2, ...)", Name = "Concatenate")]
+class ConcatenateAggregate : IAggregateFunction
+{
+    string result;
+
+    public void Accumulate(object[] values)
+    {
+        // The aggregate function expects one parameter
+        object value = values[0];
+
+        // null values are not aggregated
+        if (null == value)
+        {
+            return;
+        }
+
+        // The actual accumulation
+        if (this.result.Length > 0)
+        {
+            result += ", ";
+        }
+        this.result += value.ToString();
+    }
+
+    public object GetValue()
+    {
+        return string.Format("({0})", this.result);
+    }
+
+    public void Init()
+    {
+        // Add aggregate function initialization code here if needed
+        this.result = string.Empty;
+    }
+
+    public void Merge(IAggregateFunction aggregateFunction)
+    {
+        ConcatenateAggregate aggregate = (ConcatenateAggregate)aggregateFunction;
+
+        if (aggregate.result.Length > 0)
+        {
+            if (this.result.Length > 0)
+            {
+                result += ", ";
+            }
+            this.result += aggregate.result;
+        }
+    }
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\IAggregateFunctionSnippets.vb region=AggregateFunctionImplementation}}
 ````VB
-	
-	<AggregateFunction(Description:="Concatenation aggregate. Output: (value1, value2, ...)", Name:="Concatenate")> _
-	Class ConcatenateAggregate
-	    Implements IAggregateFunction
-	    Private result As String
-	
-	    Public Sub Accumulate(ByVal values As Object()) Implements IAggregateFunction.Accumulate
-	        ' The aggregate function expects one parameter
-	        Dim value As Object = values(0)
-	
-	        ' null values are not aggregated
-	        If value Is Nothing Then
-	            Return
-	        End If
-	
-	        ' The actual accumulation
-	        If Me.result.Length > 0 Then
-	            result += ", "
-	        End If
-	        Me.result += value.ToString()
-	    End Sub
-	
-	    Public Function GetValue() As Object Implements IAggregateFunction.GetValue
-	        Return String.Format("({0})", Me.result)
-	    End Function
-	
-	    Public Sub Init() Implements IAggregateFunction.Init
-	        ' Add aggregate function initialization code here if needed
-	        Me.result = String.Empty
-	    End Sub
-	
-	    Public Sub Merge(ByVal aggregateFunction As IAggregateFunction) Implements IAggregateFunction.Merge
-	        Dim aggregate As ConcatenateAggregate = DirectCast(aggregateFunction, ConcatenateAggregate)
-	
-	        If aggregate.result.Length > 0 Then
-	            If Me.result.Length > 0 Then
-	                result += ", "
-	            End If
-	            Me.result += aggregate.result
-	        End If
-	    End Sub
-	End Class
-	
+<AggregateFunction(Description:="Concatenation aggregate. Output: (value1, value2, ...)", Name:="Concatenate")> _
+Class ConcatenateAggregate
+    Implements IAggregateFunction
+    Private result As String
+
+    Public Sub Accumulate(ByVal values As Object()) Implements IAggregateFunction.Accumulate
+        ' The aggregate function expects one parameter
+        Dim value As Object = values(0)
+
+        ' null values are not aggregated
+        If value Is Nothing Then
+            Return
+        End If
+
+        ' The actual accumulation
+        If Me.result.Length > 0 Then
+            result += ", "
+        End If
+        Me.result += value.ToString()
+    End Sub
+
+    Public Function GetValue() As Object Implements IAggregateFunction.GetValue
+        Return String.Format("({0})", Me.result)
+    End Function
+
+    Public Sub Init() Implements IAggregateFunction.Init
+        ' Add aggregate function initialization code here if needed
+        Me.result = String.Empty
+    End Sub
+
+    Public Sub Merge(ByVal aggregateFunction As IAggregateFunction) Implements IAggregateFunction.Merge
+        Dim aggregate As ConcatenateAggregate = DirectCast(aggregateFunction, ConcatenateAggregate)
+
+        If aggregate.result.Length > 0 Then
+            If Me.result.Length > 0 Then
+                result += ", "
+            End If
+            Me.result += aggregate.result
+        End If
+    End Sub
+End Class
 ````
-
-
 
 ## Invoking a Custom Aggregate Function
 

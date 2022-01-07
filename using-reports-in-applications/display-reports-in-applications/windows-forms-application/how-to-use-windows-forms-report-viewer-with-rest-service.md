@@ -54,8 +54,6 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
     >tip When the                      [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewerBase#Telerik_ReportViewer_WinForms_ReportViewerBase_ReportEngineConnection)                      property has  __Engine__  set to  *RestService* ,                     the viewer will serialize the report source identifier property                     ( __URI__  for                      [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource) ,                      __TypeName__  for                      [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource) ,                      __ReportDocument__  for                      [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource)  and                      __XML__  for                      [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) ) and send it to the service resolver.                   The  *REST service*  will use the  __ReportResolver__  instances included in its                      [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Service.ReportServiceConfiguration)  to resolve the report by the provided identifier.                     However, the  *REST service* 's default implementation includes only                      [ReportFileResolver](/reporting/api/Telerik.Reporting.Service.ReportFileResolver)  and                      [ReportTypeResolver](/reporting/api/Telerik.Reporting.Service.ReportTypeResolver) ,                     so you need to provide a                     [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) if you use another type of                      [ReportSource](/reporting/api/Telerik.Reporting.ReportSource) .                   
 
-
-
 1. In this scenario we will use a  [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource) .                   Select the __URL or file__  radio button. Enter the path and the name of the report you want to display.                     If needed, you can setup the report source parameters using the dialog, invoked by pressing the __Edit Parameters__  button.                 
 
 1. Click __OK__  when ready. The dialog will close and the resulting report source will be populated as a value of the __ReportSource__  property.                 
@@ -66,18 +64,13 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 The following table shows the most common reasons for failure when using the Telerik Reporting REST Service. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
 
-
 | Problem | Cause |
 | ------ | ------ |
 |The viewer displays the message:`A problem occurred while registering client.`|Check if the REST service is active and running - the easiest way is to make a request for the available document formats, as explained [ here ]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%}).|
 |The viewer displays the message:`System.OperationCanceledException: *{ReportName}* report cannot be resolved.`|Make sure the URL or type name specified in the __report source__ property is valid and can be resolved by the REST service.|
 |The viewer displays the message:`System.Net.WebException: The remote name could not be resolved: {name}`|Make sure that the address specified in the connection string exists and represents a valid and running REST service instance|
 
-
-
-
 # See Also
-
 
  * [How to Use Windows Forms Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%})
 

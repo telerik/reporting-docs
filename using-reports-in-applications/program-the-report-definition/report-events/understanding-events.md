@@ -26,7 +26,6 @@ Let's illustrate this with an example. While in design-time, if you add a TextBo
 
 >note The  __InitializeComponent__  method initializes (creates) a Report and its             child items. It is a special method recognized and parsed by the Report Designer in order to display the report in             design-time.           
 
-
 This object will later serve as the definition for creating a concrete instance of the TextBox for each row from the           data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example           Telerik.Reporting.TextBox.         
 
 In order to programmatically change the report definition before rendering a report you need to place your code in the constructor of the report,            right after the InitializeComponent call (if present).         
@@ -43,12 +42,10 @@ After the processing item has been data bound the __ItemDataBound__  event      
 
 >important Report Events are not intended to be used as a place/time to modify the report definition.             As of  __Q3 2016__  any changes on the report items' definitions             in processing stage events will not make effective change in the resulting report.             Report definition properties are read and cached when the report processing gets started.             In previous versions changes may take effect, resulting in changed output for all processing items              processed after the event handler execution.           
 
-
 ## Report Rendering
 
 After processing is over, the processed report is ready for rendering in one of the available formats, see [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}).           There are no events triggered during this stage of the report generation.         
 
 # See Also
-
 
  * [Understanding the Report Lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})

@@ -18,16 +18,16 @@ This article explains how to attach client event handlers to an MVC ReportViewer
 
 To attach a client event handler you have to set the appropriate __ClientEvents__  widget method as shown below:         
 
-	
+    
 ````js
-          <script>
-            function onRenderingBegin() {
-                console.log("rendering begin!");
-            }
-            function onRenderingEnd() {
-                console.log("rendering end!");
-            }
-          </script>
+<script>
+  function onRenderingBegin() {
+      console.log("rendering begin!");
+  }
+  function onRenderingEnd() {
+      console.log("rendering end!");
+  }
+</script>
 ````
 ````xml
 @(Html.TelerikReporting().ReportViewer()
@@ -41,10 +41,7 @@ To attach a client event handler you have to set the appropriate __ClientEvents_
 )
 ````
 
-
-
 The following table list the available client events:         
-
 
 |  __Event__  |  __Description__  |
 | ------ | ------ |
@@ -65,8 +62,4 @@ The following table list the available client events:
 |SendEmailBegin|Occurs before the report is exported and the E-mail message is sent. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)%})|
 |SendEmailEnd|Occurs after the report is exported and before the E-mail message is sent. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)%}|
 
-
-
-
-# See Also
 

@@ -44,17 +44,15 @@ To create a new report with this wizard:
 
    >note The Query Builder is part of Visual Studio and is available only in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). As of Telerik Reporting Q3 2014 SQL queries can be built in the Standalone Designer with the [Query Designer in the Standalone Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}).                   If you are using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) use the following select query and click Next:                 
 
-	
+    
       ````sql
-        SELECT Production.Product.Name, Production.Product.ProductNumber, Production.Product.ReorderPoint,
-        Production.ProductPhoto.ThumbNailPhoto, Production.ProductInventory.Quantity
-        FROM Production.Product
-        INNER JOIN Production.ProductInventory ON Production.Product.ProductID = Production.ProductInventory.ProductID
-        INNER JOIN Production.ProductProductPhoto ON Production.Product.ProductID = Production.ProductProductPhoto.ProductID
-        INNER JOIN Production.ProductPhoto ON Production.ProductProductPhoto.ProductPhotoID = Production.ProductPhoto.ProductPhotoID
+SELECT Production.Product.Name, Production.Product.ProductNumber, Production.Product.ReorderPoint,
+Production.ProductPhoto.ThumbNailPhoto, Production.ProductInventory.Quantity
+FROM Production.Product
+INNER JOIN Production.ProductInventory ON Production.Product.ProductID = Production.ProductInventory.ProductID
+INNER JOIN Production.ProductProductPhoto ON Production.Product.ProductID = Production.ProductProductPhoto.ProductID
+INNER JOIN Production.ProductPhoto ON Production.ProductProductPhoto.ProductPhotoID = Production.ProductPhoto.ProductPhotoID
 ````
-
-
 
    + In the __Add Table__  dialog select                   "Product", "ProductInventory", "ProductPhoto" and "ProductProductPhoto"                   from the list of tables. Note: You can hold down the control key                   and click each of the tables to select them all at one time.                 
 

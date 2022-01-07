@@ -31,58 +31,53 @@ This article will explain how to configure an MSSQL database for report engine s
 
    1. In case you want to cleanup the storage tables in an existing database, use the button *Clear cache data* .                 
 
-
 1. Configure your Telerik Reporting REST Service to use the database storage we just prepared. You may do this in the configuration file of the project               as elaborated in the article [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}), or when instantiating the                [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration) . Here are samples for both scenarios:             
    + Through code when passing  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration)                    instance to the REST Service. The __ReportSourceResolver__  and __Storage__  configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface for more details.                 
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=MSSqlReportsControllerImplementation}}
   ````C#
-	    public class MSSqlReportsController : ReportsControllerBase
-	    {
-	        static readonly ReportServiceConfiguration configurationInstance =
-	            new ReportServiceConfiguration
-	            {
-	                HostAppId = "Application1",
-	                ReportSourceResolver = new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))
-	                    .AddFallbackResolver(new TypeReportSourceResolver()),
-	                Storage = new Telerik.Reporting.Cache.MsSqlServerStorage("Data Source=(local)\\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI"),
-	            };
-	
-	        public MSSqlReportsController()
-	        {
-	            this.ReportServiceConfiguration = configurationInstance;
-	        }
-	    }
+public class MSSqlReportsController : ReportsControllerBase
+{
+    static readonly ReportServiceConfiguration configurationInstance =
+        new ReportServiceConfiguration
+        {
+            HostAppId = "Application1",
+            ReportSourceResolver = new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))
+                .AddFallbackResolver(new TypeReportSourceResolver()),
+            Storage = new Telerik.Reporting.Cache.MsSqlServerStorage("Data Source=(local)\\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI"),
+        };
+
+    public MSSqlReportsController()
+    {
+        this.ReportServiceConfiguration = configurationInstance;
+    }
+}
 ````
-
-
 
 {{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=MSSqlReportsControllerImplementation}}
   ````VB
-	Public Class MSSqlReportsController
-	    Inherits ReportsControllerBase
-	
-	    Shared ReadOnly configurationInstance As ReportServiceConfiguration
-	
-	    Shared Sub New()
-	        Dim resolver = New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports")) _
-	                       .AddFallbackResolver(New TypeReportSourceResolver())
-	
-	        Dim reportServiceConfiguration As New ReportServiceConfiguration()
-	        reportServiceConfiguration.HostAppId = "Application1"
-	        reportServiceConfiguration.ReportSourceResolver = resolver
-	        reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.MsSqlServerStorage("Data Source=(local)\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI")
-	        configurationInstance = reportServiceConfiguration
-	    End Sub
-	
-	    Public Sub New()
-	        Me.ReportServiceConfiguration = configurationInstance
-	    End Sub
-	
-	End Class
+Public Class MSSqlReportsController
+    Inherits ReportsControllerBase
+
+    Shared ReadOnly configurationInstance As ReportServiceConfiguration
+
+    Shared Sub New()
+        Dim resolver = New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports")) _
+                       .AddFallbackResolver(New TypeReportSourceResolver())
+
+        Dim reportServiceConfiguration As New ReportServiceConfiguration()
+        reportServiceConfiguration.HostAppId = "Application1"
+        reportServiceConfiguration.ReportSourceResolver = resolver
+        reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.MsSqlServerStorage("Data Source=(local)\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI")
+        configurationInstance = reportServiceConfiguration
+    End Sub
+
+    Public Sub New()
+        Me.ReportServiceConfiguration = configurationInstance
+    End Sub
+
+End Class
 ````
-
-
 
    + Through a configuration file:                 
 
@@ -90,31 +85,29 @@ This article will explain how to configure an MSSQL database for report engine s
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
   ````C#
-	    public class ReportsController : ReportsControllerBase
-	    {
-	        static Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration configSectionConfigurationInstance =
-	            new Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration();
-	
-	        public ReportsController()
-	        {
-	            this.ReportServiceConfiguration = configSectionConfigurationInstance;
-	        }
-	    }
+public class ReportsController : ReportsControllerBase
+{
+    static Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration configSectionConfigurationInstance =
+        new Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration();
+
+    public ReportsController()
+    {
+        this.ReportServiceConfiguration = configSectionConfigurationInstance;
+    }
+}
 ````
-
-
 
 {{source=CodeSnippets\MvcVB\Controllers\ReportsControllerConfigSection.vb region=ReportsControllerConfigSectionImplementation}}
   ````VB
-	    Public Class ReportsController
-	        Inherits ReportsControllerBase
-	
-	        Shared configSectionConfigurationInstance As New Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration()
-	
-	        Public Sub New()
-	            Me.ReportServiceConfiguration = configSectionConfigurationInstance
-	        End Sub
-	    End Class
+Public Class ReportsController
+    Inherits ReportsControllerBase
+
+    Shared configSectionConfigurationInstance As New Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration()
+
+    Public Sub New()
+        Me.ReportServiceConfiguration = configSectionConfigurationInstance
+    End Sub
+End Class
 ````
 
 The properties from the initialization block would override the values obtained from the configuration file.                     
@@ -123,7 +116,7 @@ The properties from the initialization block would override the values obtained 
 
    + XML-based configuration file:
 
-	
+    
       ````xml
 <configuration>
   ...
@@ -136,41 +129,42 @@ The properties from the initialization block would override the values obtained 
           <parameter name="commandTimeout" value="60" />
         </parameters>
       </storage>
-	  ...	  
+      ...
       </restReportService>
-	  ...
+      ...
   </Telerik.Reporting>
   ...
 </configuration>
 ````
 
-
-
    + JSON-based configuration file:
 
-	
+    
       ````js
-  "telerikReporting": {          
-    "restReportService": {
-      "hostAppId": "Application1",
-      "reportResolver": {
-        "provider": "type"
-      },
-      "storage": {
-        "provider": "MSSQLServer",
-        "parameters": [
-          {
-            "name": "connectionString",
-            "value": "Data Source=(local)\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI"
-          },
-		  {
-            "name": "commandTimeout",
-            "value": 60
-          }
-        ]
-      }
+"telerikReporting": {
+  "restReportService": {
+    "hostAppId": "Application1",
+    "reportResolver": {
+      "provider": "type"
     },
-	...
-  }
+    "storage": {
+      "provider": "MSSQLServer",
+      "parameters": [
+        {
+          "name": "connectionString",
+          "value": "Data Source=(local)\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI"
+        },
+        {
+          "name": "commandTimeout",
+          "value": 60
+        }
+      ]
+    }
+  },
+  ...
+}
 ````
 
+# See Also
+
+ * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})

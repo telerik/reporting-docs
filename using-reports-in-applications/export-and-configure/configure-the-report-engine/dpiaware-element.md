@@ -30,14 +30,13 @@ The default value of the __dpiAwareness__  attribute is *PROCESS_DPI_UNAWARE_NOT
 
 >important This API function is available on Windows Vista and newer operating systems. If Telerik Reporting is used on a machine with older OS, the DPI awareness would not be set and report rendering might produce unexpected results.           
 
-
 __Example__ 
 
 The following snippet shows how to set the current application's DPI awareness to PROCESS_SYSTEM_DPI_AWARE.         
 
 XML-based configuration file:
 
-	
+    
 ````xml
 <Telerik.Reporting>
 ...
@@ -45,20 +44,16 @@ XML-based configuration file:
 </Telerik.Reporting>
 ````
 
-
-
 JSON-based configuration file:
 
-	
+    
 ````js
-          "telerikReporting": {
-            "dpiAware": {
-              "dpiAwareness": "PROCESS_SYSTEM_DPI_AWARE"
-            }
-          }
+"telerikReporting": {
+  "dpiAware": {
+    "dpiAwareness": "PROCESS_SYSTEM_DPI_AWARE"
+  }
+}
 ````
-
-
 
 ## DPI Awareness in Report Viewers
 

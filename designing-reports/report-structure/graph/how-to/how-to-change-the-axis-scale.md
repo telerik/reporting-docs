@@ -49,5 +49,3 @@ You can customize the scale to better meet your needs. When the values that are 
 >note The Scale settings are reset to  __Category Scale__ , when you use the Report Designer to change the Graph or specific Series Chart Type.           
 
 
-# See Also
-

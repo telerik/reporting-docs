@@ -80,5 +80,4 @@ The Visual Studio Report Designer features also *Properties Explorer* ,         
 
 # See Also
 
-
  * [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%})

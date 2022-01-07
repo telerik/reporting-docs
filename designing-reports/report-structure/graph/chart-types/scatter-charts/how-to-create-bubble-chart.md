@@ -24,9 +24,8 @@ In this article we will show you how to create a Bubble chart using the Graph it
 
    1. Set the __query__  to the following one:                 
 
-	
+    
       ````sql
-
 SELECT Sales.SalesOrderHeader.SubTotal, Person.Contact.FirstName+ ' '+ Person.Contact.LastName as [Name],
 Sales.SalesOrderHeader.OrderDate
 FROM  HumanResources.Employee
@@ -34,9 +33,6 @@ INNER JOIN Sales.SalesPerson ON HumanResources.Employee.EmployeeID = Sales.Sales
 INNER JOIN Sales.SalesOrderHeader ON Sales.SalesPerson.SalesPersonID = Sales.SalesOrderHeader.SalesPersonID
 INNER JOIN Person.Contact ON HumanResources.Employee.ContactID = Person.Contact.ContactID
 ````
-
-
-
 
    1. You can click on __Execute Query...__  just to check if everything is OK with the database connection.                   Click __Finish__  when you are ready.                 
 
@@ -82,5 +78,4 @@ INNER JOIN Person.Contact ON HumanResources.Employee.ContactID = Person.Contact.
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
 
-# See Also
 

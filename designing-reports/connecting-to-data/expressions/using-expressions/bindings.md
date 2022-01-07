@@ -18,20 +18,19 @@ For example, you can bind the Style.BackgroundColor property of a TextBox item t
 
 When constructing a Binding instance with Binding constructor, you must specify:
 
-* the name of the property to bind; alternatively a period-delimited 		  	navigation path can be used to reference a property down the object 		  	hierarchy. For example the following navigation paths define valid 		  	properties:
+* the name of the property to bind; alternatively a period-delimited               navigation path can be used to reference a property down the object               hierarchy. For example the following navigation paths define valid               properties:
 
    + "DataSource"
 
    + "Style.BackgroundColor"
 
-   + "Style.Font.Name"Only write-enabled properties can be set through binding 			expressions, so read-only properties are not suitable for 			data-binding.Note: Not all item properties support expression bindings. 			Please refer to the API reference to check if a property  			supports binding.
+   + "Style.Font.Name"Only write-enabled properties can be set through binding             expressions, so read-only properties are not suitable for             data-binding.Note: Not all item properties support expression bindings.             Please refer to the API reference to check if a property              supports binding.
 
 * an expression that will return the value for the property when evaluated at runtime.  
 
   ![](images/UI/Bindings.png)
 
 # See Also
-
 
  * [Telerik.Reporting.Binding](/reporting/api/Telerik.Reporting.Binding) 
 

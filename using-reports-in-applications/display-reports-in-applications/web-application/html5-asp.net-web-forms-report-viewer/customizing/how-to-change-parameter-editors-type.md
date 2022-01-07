@@ -20,25 +20,21 @@ The parameters editors types are defined through the Parameters element when cre
 
 The following example illustrates how to set the Parameters method to the Telerik Report Viewer widget.         
 
-	
+    
 ````xml
-          <telerik:ReportViewer Width="" Height="" EnableAccessibility="false"
-            ID="reportViewer1"
-            runat="server">
-            ...
-            <Parameters>
-                <Editors SingleSelect="ComboBox" MultiSelect="ComboBox"></Editors>
-            </Parameters>
-        </telerik:ReportViewer>
+<telerik:ReportViewer Width="" Height="" EnableAccessibility="false"
+  ID="reportViewer1"
+  runat="server">
+  ...
+  <Parameters>
+      <Editors SingleSelect="ComboBox" MultiSelect="ComboBox"></Editors>
+  </Parameters>
+</telerik:ReportViewer>
 ````
-
-
 
 >tip The Telerik Report Viewer Parameters element is optional. If it is not used, the Telerik Report Viewer will fall back to the default values.         
 
-
 # See Also
-
 
  * [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})
 

@@ -24,5 +24,4 @@ Each series data-representation is formed by both the Category and Series groups
 
 Performing this action will interchange the CategoryGroups and SeriesGroups hierarchies of the selected graph.         
 
-# See Also
 

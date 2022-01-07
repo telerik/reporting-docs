@@ -16,7 +16,6 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 
 ## Options
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __id__ | *string* , *optional* ; Sets the unique identifier of the ReportViewer instance. If not specified,                 the __id__ of the target HTML element will be used (if such is set). The id of the ReportViewer is used to identify the client                 session of the viewer when __persistSession__ is enabled (true);|
@@ -35,7 +34,6 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 | __persistSession__ | *boolean* , *optional* . Sets whether the viewer’s client session                 to be persisted between the page’s refreshes(ex. postback). The session is stored in the browser’s  [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) and is available                 for the duration of the page session. A page session lasts for as long as the browser is open and survives over page reloads and restores.                 Opening a page in a new tab or window will cause a new session to be initiated.The viewer’s state is persisted in the global sessionStorage object under a key defined by the viewer’s __id__ .                 In order to enable the correct session to be loaded on the next page reload please use the same __id__ as in the first load. This means that if you need to persist the client session between page reloads you should                 set the viewer’s __id__ (or the id of the target element) to a constant value that should not be changed dynamically                 during the page lifecycle.Default Value is: *false* ;|
 | __parameters__ | *object* , *optional* ;                 Allows the user to define options for the report parameters|
 
-
  Option | Description |
 | ------ | ------ |
 | __editors__ | *object* , *optional* ; Allows user to define editors type for the report parameters. The available editors are:
@@ -52,20 +50,17 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 
    +  *“LIST_VIEW”* - uses [Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview) widget as an editor;Default value is: *'LIST_VIEW'* 
 
-	
+    
 ````js
-                      $("#reportViewer1").telerik_ReportViewer({
-                        ...
-                        parameters: {
-                          editors: {
-                            multiSelect: telerikReportViewer.ParameterEditorTypes.COMBO_BOX,
-                          }
-                        }
-                      });
+$("#reportViewer1").telerik_ReportViewer({
+  ...
+  parameters: {
+    editors: {
+      multiSelect: telerikReportViewer.ParameterEditorTypes.COMBO_BOX,
+    }
+  }
+});
 ````
-
-
-
 
 |   |   |
 | ------ | ------ |
@@ -98,36 +93,28 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 | __interactiveActionEnter__ | *function(e, args);optional;* A callback function that will be called when                 the mouse cursor enters the area of an interactive action.|
 | __interactiveActionLeave__ | *function(e, args);optional;* A callback function that will be called                 when the mouse cursor leaves the area of an interactive action|
 
-
-
-
 ## Examples
 
 To create a ReportViewer:
 
-	
+    
 ````js
-          $("#reportViewer1").telerik_ReportViewer({
-            serviceUrl: "../api/reports/",
-            templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
-            reportSource: { report: "product catalog.trdp" }
-          });
+$("#reportViewer1").telerik_ReportViewer({
+  serviceUrl: "../api/reports/",
+  templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
+  reportSource: { report: "product catalog.trdp" }
+});
 ````
-
-
 
 where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 8.1.14.618).
 
 To get the __ReportViewer__  object from the HTML element:         
 
-	
+    
 ````js
-          var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 ````
 
-
-
 # See Also
-
 
  * [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})

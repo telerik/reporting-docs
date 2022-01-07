@@ -14,7 +14,6 @@ position: 1
 
 >important The following article guides you how to use Blazor Report Viewer in a            [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)            web application.         
 
-
 ## Prerequisites
 
 *  [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
@@ -31,57 +30,49 @@ position: 1
 
 1. Make sure app configuration inside the __Configure__  method of the __Startup.cs__                can serve static files:             
 
-	
+    
       ````c#
 app.UseStaticFiles();
 ````
 
-
-
 1. Add JavaScript dependencies to the __head__  element of the               __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly):             
 
-	
+    
       ````html
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    @* For Reports service hosted in the same project: *@
-    <script src="/api/reports/resources/js/telerikReportViewer"></script>
-    @* For Reports service hosted in another application / Report Server use absolute URI: *@
-    @*<script src="https://demos.telerik.com/report-server/api/reports/resources/js/telerikReportViewer"></script>*@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+@* For Reports service hosted in the same project: *@
+<script src="/api/reports/resources/js/telerikReportViewer"></script>
+@* For Reports service hosted in another application / Report Server use absolute URI: *@
+@*<script src="https://demos.telerik.com/report-server/api/reports/resources/js/telerikReportViewer"></script>*@
 ````
-
-
 
 1. Add                [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)                to the __head__  element of the               __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly).               The Razor syntax for a server application differs and you need to escape the __@__  symbol as __@@__ :             
 
-	
+    
       ````html
-    <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
+<link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
 ````
 
 Alternatively you can use the                [Kendo UI Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)                (Kendo UI Less-Based Themes are not compatible with Telerik UI for Blazor and should not be used together):             
 
-	
+    
       ````html
-    <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
-    <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
-
-
 
 1. Add the dedicated __interop.js__  dependency at the end of the __body__  element of the               __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly):             
 
-	
+    
       ````
-    <script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
-    @* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
-    @*<script src="_content/Telerik.ReportViewer.Blazor.Trial/interop.js" defer></script>*@
+<script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
+@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
+@*<script src="_content/Telerik.ReportViewer.Blazor.Trial/interop.js" defer></script>*@
 ````
-
-
 
 1. If using Reports web service (either locally hosted or in another application) use the following snippet to place the viewer component in               a razor page like __Pages/Index.razor__ . Note that when referencing the Reports service from another application               the ServiceUrl setting should be the absolute URI to the service. Remember to set the actual __ReportSource__  along with eventual parameters:             
 
-	
+    
       ````
 @page "/"
 @using Telerik.ReportViewer.Blazor
@@ -103,11 +94,9 @@ Alternatively you can use the                [Kendo UI Less-Based Themes](https:
               Scale="1.0" />
 ````
 
-
-
 1. If displaying reports from a Report Server instance use the following snippet to place the viewer component in               a razor page like __Pages/Index.razor__ . Remember to set the actual __ReportServer__                and __ReportSource__  settings:             
 
-	
+    
       ````
 @page "/"
 @using Telerik.ReportViewer.Blazor
@@ -127,8 +116,6 @@ Alternatively you can use the                [Kendo UI Less-Based Themes](https:
               ScaleMode="@(ScaleMode.Specific)"
               Scale="1.0" />
 ````
-
-
 
 1. Use the rest of the parameters exposed on the Blazor viewer component to setup its appearance and behavior as desired.             
 

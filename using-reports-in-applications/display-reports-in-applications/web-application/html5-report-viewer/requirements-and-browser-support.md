@@ -44,12 +44,10 @@ position: 1
 
 * The viewer depends on the Promise object and will not load successfully if it is not available. Check  [Promises/A+](https://promisesaplus.com/) .               Most modern browsers have native implementation and support for this object (see Browser Compatibility at  [Promise - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) ).               If Promise object is not detected, the viewer will try to load a Promise polyfill from  [Polyfill.io](https://polyfill.io)  as CDN:  [https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise](https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise) .               If the browser security does not allow dynamic script loading or the client computer has no               internet access, the CDN script might fail loading. In this case, you should load a Promises/A+ JS implementation               of choice into your application. For example you can load locally the same polyfill we use:             
 
-	
+    
       ````XML
-
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
 ````
-
 
 If you want to make sure that there are no Internet connection problems and the CDN service cannot be               reached for some reason, download the content of the JavaScript file               (open   [ https://cdn.polyfill.io/v2/polyfill.min.js ]( https://cdn.polyfill.io/v2/polyfill.min.js )                 in the browser that does not support promise natively, for example, IE) and serve it as a local JS file.              
 

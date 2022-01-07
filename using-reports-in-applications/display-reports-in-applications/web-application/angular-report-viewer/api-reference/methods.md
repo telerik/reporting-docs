@@ -16,19 +16,16 @@ position: 2
 
 Each method can be called using a reference to the report viewer component.         
 
-	
+    
 ````TypeScript
 <tr-viewer #viewer1
 ...
 <button (click)="viewer1.refreshReport()">Refresh</button>
 ````
 
-
-
 The example above refreshes the report viewer.         
 
 The following table lists the available methods:         
-
 
 |  __Method__  |  __Description__  |
 | ------ | ------ |
@@ -47,7 +44,6 @@ The following table lists the available methods:
 | __setAuthenticationToken(token: string)__ |Sets the authentication token. __Parameters__ : token: string __Returns__ : the current ReportViewer object.|
 | __getAccessibilityKeyMap(): JSON__ |Gets the shortcut keys used when the report viewer is in accessible mode (has its enableAccessibility set to true. The keys in the map are listed below|
 
-
  Key | Default Value | Description |
 | ------ | ------ | ------ |
 |CONFIRM_KEY|13 *('enter')* |Key for triggering the actions in the report content and previewing the report from the __Preview__ button in parameters area, if available.|
@@ -56,12 +52,10 @@ The following table lists the available methods:
 |PARAMETERS_AREA_KEY|80 *('p')* |Key for moving the focus to the parameters area, if visible.|
 |DOCUMENT_MAP_AREA_KEY|68 *('d')* |Key for moving the focus to the document map area, if visible.
 
-
 |   |   |
 | ------ | ------ |
 |
 | __setAccessibilityKeyMap(keyMap: JSON)__ |Sets the shortcut keys used when the report viewer is in accessible mode.                 It is recommended to set the new key map when the report rendering is complete,                 because the accessibility routines require the report viewer template to be loaded. __Parameters__ : keyMap: JSON|
 | __dispose()__ |Stops sending keep alive requests to the server, if keep client alive was enabled|
-
 
 

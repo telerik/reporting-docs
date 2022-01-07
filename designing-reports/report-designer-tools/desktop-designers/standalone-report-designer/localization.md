@@ -30,7 +30,6 @@ If the resources are modified or the Report Designer language            is chan
 
 # See Also
 
-
 # See Also
 
  * [Windows Language Packs](https://support.microsoft.com/en-us/help/14236/language-packs)

@@ -14,14 +14,11 @@ position: 4
 
 ## Request
 
-	
+    
           GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/pages/{pageNumber}
         
 
-
-
 __Path parameters__ 
-
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
@@ -30,11 +27,7 @@ __Path parameters__
 |`documentId`|String|ID of the report document. Returned from [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%}).|
 |`pageNumber`|Number|An integer representing the number of the requested page|
 
-
-
-
 ## Response
-
 
 | HTTP Status Code | Description |
 | ------ | ------ |
@@ -43,22 +36,17 @@ __Path parameters__
 |`410 Gone`|The specified clientId cannot be found (expired).|
 |`404 Not Found`|The specified instanceId or documentId or pageNumber cannot be found|
 
-
-
-
 __Response Body__ 
 
 [PageInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/pageinfo%}) - a single page content.         
 
 ## Sample
 
-	
+    
           GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/pages/1 HTTP/1.1
         
 
-
-
-	
+    
           HTTP/1.1 202 Accepted
 
           {

@@ -18,28 +18,31 @@ This tutorial elaborates how to implement the SendMailMessage method of the [Rep
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=SendMailMessage_Implementation}}
 ````C#
-	        protected override HttpStatusCode SendMailMessage(MailMessage mailMessage)
-	        {
-	            using (var smtpClient = new SmtpClient("smtp.companyname.com", 25))
-	            {
-	                smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-	                smtpClient.EnableSsl = true;
-	                smtpClient.Send(mailMessage);
-	            }
-	
-	            return HttpStatusCode.OK;
-	        }
+protected override HttpStatusCode SendMailMessage(MailMessage mailMessage)
+{
+    using (var smtpClient = new SmtpClient("smtp.companyname.com", 25))
+    {
+        smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
+        smtpClient.EnableSsl = true;
+        smtpClient.Send(mailMessage);
+    }
+
+    return HttpStatusCode.OK;
+}
 ````
 {{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=SendMailMessage_Implementation}}
 ````VB
-	    Protected Overrides Function SendMailMessage(ByVal mailMessage As MailMessage) As HttpStatusCode
-	        Using smtpClient = New SmtpClient("smtp.companyname.com", 25)
-	            smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network
-	            smtpClient.EnableSsl = True
-	            smtpClient.Send(mailMessage)
-	        End Using
-	
-	        Return HttpStatusCode.OK
-	    End Function
+Protected Overrides Function SendMailMessage(ByVal mailMessage As MailMessage) As HttpStatusCode
+    Using smtpClient = New SmtpClient("smtp.companyname.com", 25)
+        smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network
+        smtpClient.EnableSsl = True
+        smtpClient.Send(mailMessage)
+    End Using
+
+    Return HttpStatusCode.OK
+End Function
 ````
 
+# See Also
+
+ * [Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%})

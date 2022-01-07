@@ -34,30 +34,25 @@ The following steps produce an HTML page with settings similar to these of the l
 
 >note You must adapt all path references in the steps below              to your project setup. For more information, refer to the               [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)              MSDN article.           
 
-
 1. Create an HTML5 page:
 
-	
+    
     ````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>    
-    <title>Telerik HTML5 Report Viewer</title>  
+<head>
+    <title>Telerik HTML5 Report Viewer</title>
 </head>
-<body>    
+<body>
 </body>
 </html>
 ````
 
-
-
     >tip The above DOCTYPE directive must reflect your custom requirements.                     You can find more details about the page settings used in this tutorial in the                      [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx)  MSDN article.                   
-
-
 
 1. Initialize the browser’s viewport in the ```<head>``` element:
 
-	
+    
     ````html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 ````
@@ -66,42 +61,34 @@ The following steps produce an HTML page with settings similar to these of the l
 
 1. Add a reference to jQuery in the ```<head>``` element:
 
-	
+    
     ````html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 ````
 
-
-
     >tip jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
-
-
 
 1. Add references to the Telerik Kendo UI styles in the ```<head>``` element:
 
-	
+    
     ````html
-<!-- the required Kendo styles -->                  
+<!-- the required Kendo styles -->
 <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
 <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
-
-
 1. Add references to the HTML5 Report Viewer JavaScript file in the ```<head>``` element:
 
-	
+    
     ````html
 <script src="/api/reports/resources/js/telerikReportViewer"></script>
 ````
-
-
 
     >tip The report viewer JavaScript must be referenced after any other Kendo widgets or bundles.                   
 
     If no Kendo widgets are utilized in the page, the report viewer will register a custom Kendo                     subset to enable the required Kendo widgets. The subset is served from the report service.                     If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:                 
 
-	
+    
     ````html
                   <!--
 <script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.core.min.js"></script>
@@ -141,34 +128,30 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 -->
 ````
 
-
-
 1. Add a ```<div>``` element to the ```<body>``` element that will serve as a placeholder for the viewer’s widget.                   The ```<div>``` element's ID attribute serves as a key(Id) for the viewer object.                   Its content (*loading...* ) will be displayed while the viewer’s content is being loaded (from the template). :                 
 
-	
+    
     ````html
 <div id="reportViewer1" class="k-widget">
     loading...
 </div>
 ````
 
-
-
 1. Add the following script element at the bottom of the ```<body>``` element and create the HTML5 Report Viewer widget for the reportViewer1 ```<div>```                  element that we just added:
 
-	
+    
     ````js
 <script type="text/javascript">
         $("#reportViewer1")
             .telerik_ReportViewer({
                 serviceUrl: "/api/reports/",
                 //templateUrl: /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html
-                reportSource: { 
-					report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-					parameters: {
-						CultureID: "en"
-					}
-				}
+                reportSource: {
+                    report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+                    parameters: {
+                        CultureID: "en"
+                    }
+                }
             });
 </script>
 ````
@@ -177,11 +160,9 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 
     >tip The viewer's  __reportSource__  consists of report and parameters attributes,                     where  __report__  is the string description of the report that will be displayed, and                      __parameters__  is a collection of parameter keys and values that will be sent to the report.                     The report's string description is handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                       The above example uses the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  of a report's type (report created in Visual Studio Report Designer).                     This string description will be handled automatically by the   [ReportTypeResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver) .                   
 
-
-
 1. Make the viewer fill the entire browser window. Add the following style to the ```<head>``` element:
 
-	
+    
     ````html
 <style>
         #reportViewer1 {
@@ -196,15 +177,11 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 </style>
 ````
 
-
-
     >tip The above CSS rule will be applied on the ```<div>``` element holding the viewer object.                     The HTML elements building the viewer object will be sized based on the size of this container ```<div>``` element.                     To make the viewer fit in other container, use  *position:relative*  and provide width and height values.                   
-
-
 
 1. The HTML page that we have just created should look like this:
 
-	
+    
     ````html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -235,18 +212,16 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
         $("#reportViewer1")
             .telerik_ReportViewer({
                 serviceUrl: "/api/reports/",
-                reportSource: { 
-					report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-					parameters: {
-						CultureID: "en"
-					}
-				}
+                reportSource: {
+                    report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+                    parameters: {
+                        CultureID: "en"
+                    }
+                }
             });
     </script>
 </body>
 </html>
 ````
-
-
 
 1. Run the project and navigate to the page with the HTML5 Report Viewer that we have just created.

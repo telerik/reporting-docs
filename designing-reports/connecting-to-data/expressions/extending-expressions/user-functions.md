@@ -20,27 +20,17 @@ There are two ways to utilize user functions:
 
 1. When any __public static__  (__Public Shared__  in               VB.NET) method is part of the current report class. In this case they can be invoked from an expression by their name,               specifying the necessary parameters in the braces:             
 
-
-
 |   |   |
 | ------ | ------ |
  __Invoking an User Function from the same report class__ |
 |= ResolveUrl("~/Images/Logo.jpg"|
 
-
-
-
 1. When any __public static__  (__Public Shared__  in VB.NET)               method reside in a loaded assembly. In this case they can be invoked from an expression by their fully qualified name, including the full               namespace and the name of the type they belong to, and specifying the necessary parameters in the braces:             
-
-
 
 |   |   |
 | ------ | ------ |
  __Invoking an User Function from loaded assembly__ |
 |= Telerik.Reporting.Report.Report1.ResolveUrl("~/Images/Logo.jpg"|
-
-
-
 
 If the loaded assembly contains many __public static__  (__Public Shared__            in VB.NET) methods, this might produce some clutter in the Edit Expression dialog, when browsing for existing user functions.           In order to overcome this problem, you can use the IsVisible attribute to hide any methods, which are not intended to be used           as user functions. See the code example below:         
 
@@ -48,35 +38,31 @@ __Example:__
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.cs region=UserFunctionsAttributeIsVisibleSnippet}}
 ````C#
-	    
-	    public class Report1 : Telerik.Reporting.Report
-	    {
-	        //...
-	        [Function(IsVisible = false)]
-	        public static System.Drawing.Image ResolveUrl(string relativeUrl)
-	        {
-	            string path = System.Web.HttpContext.Current.Server.MapPath(relativeUrl);
-	            return System.Drawing.Image.FromFile(path);
-	        }
-	        //...
-	    }
-	    
+public class Report1 : Telerik.Reporting.Report
+{
+    //...
+    [Function(IsVisible = false)]
+    public static System.Drawing.Image ResolveUrl(string relativeUrl)
+    {
+        string path = System.Web.HttpContext.Current.Server.MapPath(relativeUrl);
+        return System.Drawing.Image.FromFile(path);
+    }
+    //...
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeIsVisibleSnippet}}
 ````VB
-	Public Class Report1
-	    Inherits Telerik.Reporting.Report
-	    '...
-	    <[Function](IsVisible:=False)> _
-	    Public Shared Function ResolveUrl(relativeUrl As String) As System.Drawing.Image
-	        Dim path As String = System.Web.HttpContext.Current.Server.MapPath(relativeUrl)
-	        Return System.Drawing.Image.FromFile(path)
-	    End Function
-	    '...
-	End Class
+Public Class Report1
+    Inherits Telerik.Reporting.Report
+    '...
+    <[Function](IsVisible:=False)> _
+    Public Shared Function ResolveUrl(relativeUrl As String) As System.Drawing.Image
+        Dim path As String = System.Web.HttpContext.Current.Server.MapPath(relativeUrl)
+        Return System.Drawing.Image.FromFile(path)
+    End Function
+    '...
+End Class
 ````
-
-
 
 ## Providing metadata for functions
 
@@ -96,37 +82,28 @@ __Example:__
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.cs region=UserFunctionsAttributeSnippet}}
 ````C#
-	    
-	    public static class MyUserFunctions
-	    {
-	        [Function(Category = "My Functions", Namespace = "My", Description = "Say Hi")]
-	        public static string Greet(string name)
-	        {
-	            return string.Format("Hello, {0}", name);
-	        }
-	    }
-	
+public static class MyUserFunctions
+{
+    [Function(Category = "My Functions", Namespace = "My", Description = "Say Hi")]
+    public static string Greet(string name)
+    {
+        return string.Format("Hello, {0}", name);
+    }
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeSnippet}}
 ````VB
-	Public NotInheritable Class MyUserFunctions
-	    <[Function](Category:="My Functions", [Namespace]:="My", Description:="Say Hi")> _
-	    Public Shared Function Greet(name As String) As String
-	        Return String.Format("Hello, {0}", name)
-	    End Function
-	End Class
+Public NotInheritable Class MyUserFunctions
+    <[Function](Category:="My Functions", [Namespace]:="My", Description:="Say Hi")> _
+    Public Shared Function Greet(name As String) As String
+        Return String.Format("Hello, {0}", name)
+    End Function
+End Class
 ````
-
-
 
 To invoke this function, set the following expression:
 
-
-
 |= My.Greet("John Doe"|
-
-
-
 
 ## Extending Reporting Engine with User Functions
 

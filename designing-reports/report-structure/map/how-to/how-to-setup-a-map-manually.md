@@ -40,7 +40,6 @@ In case your data source can provide geographical coordinates to be used for the
 
 # See Also
 
-
  * [How to Add Map to Report]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-map-to-report%})
 
  * [How to Setup a Map Using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})

@@ -16,8 +16,6 @@ In the Chart item the sorting is performed at data item level and sets       the
 
 ## Adding sorting to Table/Crosstab data item using Report Designer
 
-
-
 1. In the[Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})
 
 1. Click the Sorting ellipsis.
@@ -38,21 +36,20 @@ For each sort expression, follow these steps:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ChartSnippets.cs region=AddNewSortSnippet}}
 ````C#
-	
-	            Telerik.Reporting.Sorting sorting1 = new Telerik.Reporting.Sorting();
-	            sorting1.Expression = "=Fields.ProductID";
-	            sorting1.Direction = Telerik.Reporting.SortDirection.Asc;
-	
-	            chart1.Sortings.Add(sorting1);
-	
+Telerik.Reporting.Sorting sorting1 = new Telerik.Reporting.Sorting();
+sorting1.Expression = "=Fields.ProductID";
+sorting1.Direction = Telerik.Reporting.SortDirection.Asc;
+
+chart1.Sortings.Add(sorting1);
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ChartSnippets.vb region=AddNewSortSnippet}}
 ````VB
-	
-	        Dim sorting1 As New Telerik.Reporting.Sorting()
-	        sorting1.Expression = "=Fields.ProductID"
-	        sorting1.Direction = Telerik.Reporting.SortDirection.Asc
-	
-	        chart1.Sortings.Add(sorting1)
+Dim sorting1 As New Telerik.Reporting.Sorting()
+sorting1.Expression = "=Fields.ProductID"
+sorting1.Direction = Telerik.Reporting.SortDirection.Asc
+
+chart1.Sortings.Add(sorting1)
 ````
 
+# See Also
+ * [Chart](/reporting/api/Telerik.Reporting.Chart)  * [Sorting](/reporting/api/Telerik.Reporting.Sorting)  * [SortingCollection](/reporting/api/Telerik.Reporting.SortingCollection) 

@@ -22,8 +22,6 @@ The Group Explorer allows you to easily apply grouping, sorting and filtering t
 
 The Group Explorer can be accessed from the context menu View | Group Explorer when right-clicking the area next to the report design surface.         
 
-
-
 When a Table/Crosstab item is selected, the Group Explorer dialog layout changes to show you the Row and Column Groups:  
 
   ![](images/GroupExplorerStandardMode.PNG)
@@ -31,8 +29,6 @@ When a Table/Crosstab item is selected, the Group Explorer dialog layout changes
 When a Graph item is selected, the Group Explorer will show you the Series and Categories Groups.
 
 When a Map item is selected, the Group Explorer will show you the Series and Geolocation Groups.
-
-
 
 It does not show the Static groups by default, except for Report groups, but you can enable them from the "Display Mode" button           by selecting the "Extended Mode" option:           
 

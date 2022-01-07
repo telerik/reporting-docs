@@ -52,8 +52,6 @@ The image above shows the major UI elements in the Standalone Report Designer:
 
 * [Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}) (not shown on the image above):               Appears on right click and conditionally displays content depending on the area that was right-clicked.             
 
-
-
 ## Additional UI Elements
 
 Additionally, the Standalone Report Designer includes the following helpful elements:         

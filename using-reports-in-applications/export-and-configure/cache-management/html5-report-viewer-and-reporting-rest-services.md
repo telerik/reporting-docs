@@ -40,7 +40,6 @@ The communication between the HTML5 Viewer and Reporting REST Service happens vi
 
 >note If you connect a [WinForms ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%}) or             [WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service%}) to a Reporting REST Service instance,             there will be a new ClientId generated on each request sent by the desktop viewer.           
 
-
 ## 
 
 On each interaction with the report in the HTML5 Viewer, the service accesses the cache storage provided           in the service's configuration (ReportServiceConfiguration property).           The current client ID, instance ID and document ID are used to locate the correct           resources for the report and return them to the viewer.         
@@ -55,5 +54,4 @@ Important cache management related properties of the IReportServiceConfiguration
 
    >note When you navigate to reports via [NavigateToReportAction]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})                 the Reporting engine always creates a new instance of the target report.               
 
-# See Also
 

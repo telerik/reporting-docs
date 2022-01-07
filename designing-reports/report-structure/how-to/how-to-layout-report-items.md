@@ -26,8 +26,6 @@ In Visual Studio:
 
 1. Drag the report item from the Toolbox to the report's design surface. Alternatively,               you may select the section of the report where you want the report item to appear by clicking               the section header, and then double-click the report item in the Toolbox. Or you can select the               report item in the toolbox and draw a bounding rectangle to indicate the area that the report item should occupy.             
 
-
-
 In the Standalone Designer:
 
 1. Open the report in design view.             
@@ -55,7 +53,6 @@ Move the mouse over the report item until you see the cross hair cursor (see ima
 To remove blank vertical space in a container (report section or panel item), whenever you control the visibility of report items in runtime,           set its respective height to a very small value (e.g. 1mm). Section/Panel item can grow to accommodate their children but cannot shrink/take space that is           no longer occupied. If you want a section/panel to shrink only at runtime you can set its Height property in the report constructor.           Place the Height property assignment code just after the IntializeComponent() method call.         
 
 # See Also
-
 
  * [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})
 

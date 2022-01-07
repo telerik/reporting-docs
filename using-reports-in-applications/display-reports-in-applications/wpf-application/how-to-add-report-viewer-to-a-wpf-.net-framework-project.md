@@ -53,3 +53,13 @@ If the selected engine is __REST Service__  additionally it will do the followin
 * 
 
    >note In some cases the solution must be rebuilt in order to invalidate the NuGet packages and start the REST service project correctly.               
+
+# See Also
+
+ * [How to Add  manually report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%})
+
+ * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+
+ * [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
+
+ * [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})

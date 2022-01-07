@@ -24,26 +24,24 @@ Changing the the value of the cacheDefinitionProperties can be done in the appli
 
 XML-based configuration file:
 
-	
+    
 ````xml
-	      <Telerik.Reporting>
-            <processing cacheDefinitionProperties="false" />
-        </Telerik.Reporting>
+<Telerik.Reporting>
+  <processing cacheDefinitionProperties="false" />
+</Telerik.Reporting>
 ````
-
-
 
 JSON-based configuration file:
 
-	
+    
 ````js
-  "telerikReporting": {
-      "processing": [
-        {
-          "cacheDefinitionProperties": "false"
-        }
-      ]
-    }
+"telerikReporting": {
+    "processing": [
+      {
+        "cacheDefinitionProperties": "false"
+      }
+    ]
   }
+}
 ````
 

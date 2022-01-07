@@ -16,19 +16,13 @@ Public interface for retrieving available document formats.
 
 ## Request
 
-	GET /api/reports/formats
-
-
+    GET /api/reports/formats
 
 ## Response
-
 
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Available document formats retrieved successfull|
-
-
-
 
 __Response Body__ 
 
@@ -36,11 +30,9 @@ An array containing [FormatInfo]({%slug telerikreporting/using-reports-in-applic
 
 ## Sample
 
-	GET /api/reports/formats HTTP/1.1
+    GET /api/reports/formats HTTP/1.1
 
-
-
-	
+    
           Response Message
           HTTP/1.1 200 OK
 

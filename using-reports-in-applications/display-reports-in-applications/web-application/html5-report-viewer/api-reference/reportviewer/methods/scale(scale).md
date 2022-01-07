@@ -18,17 +18,13 @@ Sets the scale factor and scale mode. For more information please see jQuery.fn.
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __scale__ |object with properties:<br/>*  *scale* <br/>*  *scaleMode*|
 
-
-
-
 Returns: the current *ReportViewer*  object.         
 
-	
+    
 ````js
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.scale({

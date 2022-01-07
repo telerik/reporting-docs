@@ -60,7 +60,6 @@ __Chart__  – use the __DataGroupColumn__  to define the name of the field to g
 
 # See Also
 
-
  * [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
 
  * [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})

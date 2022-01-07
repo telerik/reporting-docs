@@ -14,12 +14,10 @@ position: 7
 
 ## command
 
-
 | Method | Description |
 | ------ | ------ |
 | __exec__ |The method that actually triggers the command.|
 | __enabled__ |Returns a bool value and can be used to find in what state the UI associated with the command should be.|
 | __checked__ |Returns a bool value and can be used to find in what state the UI associated with the command should be|
-
 
 

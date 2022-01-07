@@ -14,22 +14,16 @@ position: 3
 
 ## Request
 
-	
+    
 ````
-            GET /api/reports/clients/sessionTimeout
+GET /api/reports/clients/sessionTimeout
 ````
-
-
 
 ## Response
-
 
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Successfully retrieved the clients session timeou|
-
-
-
 
 __Response Body__ 
 
@@ -37,16 +31,13 @@ The body contains the clients session timeout in seconds
 
 ## Sample
 
-	
+    
 ````
-                GET /api/reports/clients/sessionTimeout HTTP/1.1
+GET /api/reports/clients/sessionTimeout HTTP/1.1
 ````
 ````
-                HTTP/1.1 200 OK
-                {"clientSessionTimeout":900}
+HTTP/1.1 200 OK
+{"clientSessionTimeout":900}
 ````
 
-
-
-# See Also
 

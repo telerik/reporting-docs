@@ -16,7 +16,7 @@ Bookmark node representing a node in a document map.
 
 ## 
 
-	
+    
           {
             ‘id’: ‘Bikes’,
             ‘text’: ‘Bikes’,
@@ -24,11 +24,7 @@ Bookmark node representing a node in a document map.
             ‘items’: [ { ‘id’: ‘Bikes’, ‘text’: ‘Bikes’, ‘page’: 3 } ]
           }
 
-
         
-
-
-
 
 >caption Fields
 
@@ -38,6 +34,5 @@ Bookmark node representing a node in a document map.
 |`text`|`String`|`false`|The text to be displayed|
 |`page`|`Number`|`true`|An integer representing the number of the target page|
 |`items`|`Array`|`false`|An array of String elements representing the IDs of the child bookmark nodes in the document map|
-
 
 

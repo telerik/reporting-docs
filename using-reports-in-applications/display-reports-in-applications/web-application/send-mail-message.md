@@ -20,7 +20,6 @@ By default the send mail message button is hidden.           This is because the
 
 >note Please note that Angular Report Viewer requires setting the  __templateUrl__               option to an HTML template specifically designed for send mail message functionality to work properly, i.e.               __telerikReportViewerTemplate-ng.html__  which comes from              node_modules/@progress/telerik-angular-report-viewer/dist/dependencies/telerikReportViewerTemplate-ng.html.           
 
-
 ## Send Mail Message Dialog  
 
   ![send-mail-msg-dialog](images/HTML5ReportViewer/send-mail-msg-dialog.png)
@@ -40,6 +39,5 @@ The dialog consists of the following components:
 * __Body input__  (Optional) - The MailMessage body             
 
 # See Also
-
 
  * [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%})[](c578f366-93da-4dd1-8972-6efbc5a1790b#sendEmailOption)

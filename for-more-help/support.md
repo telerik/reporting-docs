@@ -16,15 +16,15 @@ position: 0
 
 You can contact Telerik support with a technical question by using your account on Telerik.com:
 
- [http://www.telerik.com/account/support-tickets.aspx](http://www.telerik.com/account/support-tickets.aspx) . 				
+ [http://www.telerik.com/account/support-tickets.aspx](http://www.telerik.com/account/support-tickets.aspx) .                 
 
-An alternative is to post your question in the 					 [public forums](http://www.telerik.com/community/forums.aspx)  and ask our community for help. 				
+An alternative is to post your question in the                      [public forums](http://www.telerik.com/community/forums.aspx)  and ask our community for help.                 
 
-You can also send us comments on any topic in this help file by clicking the __Send Comments__  link displayed at the top and bottom of the page. 				
+You can also send us comments on any topic in this help file by clicking the __Send Comments__  link displayed at the top and bottom of the page.                 
 
-Alternatively, you can send an e-mail to  [documentation@telerik.com](mailto:documentation@Telerik.com)  with feedback or inquiries concerning our manuals. 				
+Alternatively, you can send an e-mail to  [documentation@telerik.com](mailto:documentation@Telerik.com)  with feedback or inquiries concerning our manuals.                 
 
-The full list with online resources we keep to aid your development is available in the 					 [Support Center](http://www.telerik.com/support.aspx)  and includes: 				
+The full list with online resources we keep to aid your development is available in the                      [Support Center](http://www.telerik.com/support.aspx)  and includes:                 
 
 *  [Forums](http://www.telerik.com/community/forums/reporting.aspx) 
 
@@ -42,7 +42,7 @@ The full list with online resources we keep to aid your development is available
 
 *  [Webinars](http://www.telerik.com/support/webinars.aspx) 
 
-This is also the place where you can 				
+This is also the place where you can                 
 
 *  [Contact our Support Team directly](http://www.telerik.com/oldaccount/support-tickets/available-support-list.aspx) 
 

@@ -18,9 +18,9 @@ Gets the viewer’s current page that is displayed.
 
 Returns: integer:         
 
-	
+    
 ````js
-            var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-            var currentPage = reportViewer.currentPage();
+var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+var currentPage = reportViewer.currentPage();
 ````
 

@@ -20,7 +20,6 @@ Use these functions to calculate date and time values. Their default format is d
 
 The following table lists the available date and time functions with sample output.         
 
-
 | Function | Description | Example | Sample Output |
 | ------ | ------ | ------ | ------ |
 | __Now()__ |Returns the current date and time on the computer processing the report, expressed as the local time.| [=Now()]|24-Sep-20 11:10|
@@ -37,8 +36,4 @@ The following table lists the available date and time functions with sample outp
 | __AddSeconds(date, seconds)__ |Returns a new DateTime that adds the specified number of seconds to the value of the specified date.| [=AddSeconds(Now(), 50)]|24-Sep-20 11:55:48|
 | __AddMilliseconds(date, milliseconds)__ |Returns a new DateTime that adds the specified number of milliseconds to the value of the specified date.| [=AddMilliseconds(Now(), 50)]|24-Sep-20 11:57:1|
 
-
-
-
-# See Also
 

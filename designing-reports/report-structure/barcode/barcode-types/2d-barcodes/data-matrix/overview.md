@@ -28,7 +28,6 @@ Data Matrix barcode is a two-dimensional type of code used widely in industry fo
 
 The size of the Data Matrix code depends on module size, length and type of its contents. The contents type determines if the encoded value contains only numerical characters or includes ASCII or Unicode characters.           The following table shows the correlation between the content type, content length and matrix size:         
 
-
 | Count of numerical characters | Count of ASCII characters | Matrix size |
 | ------ | ------ | ------ |
 |6|3|10x10|
@@ -42,8 +41,4 @@ The size of the Data Matrix code depends on module size, length and type of its 
 |88|64|26x26|
 |124|91|32x3|
 
-
-
-
-# See Also
 

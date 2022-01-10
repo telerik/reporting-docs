@@ -10,9 +10,7 @@ position: 4
 
 # How to Add filtering to Graph item
 
-
-
-This topic illustrates how to add filters to a Graph item's Filters using the Report Designer or Report API,         where the filtering occurs after data is retrieved by the report.       
+This topic illustrates how to add filters to a Graph item's Filters using the Report Designer or Report API, where the filtering occurs after data is retrieved by the report.       
 
 If you need to filter data on retrieval, see [Using Parameters with Data Source objects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%})
 
@@ -55,7 +53,7 @@ filter1.Value = "=10"
 graph1.Filters.Add(filter1)
 ````
 
-> The Graph item has a complex [structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) built by CategoryGroups and SeriesGroups collections, where each collection has its own Filters.             If you need to limit slots, filter the CategoryGroups collection. If you need to filter dynamically created series, filter the SeriesGroups collection.           The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the            Graph item's Series and Categories groups.           
+> The Graph item has a complex [structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) built by CategoryGroups and SeriesGroups collections, where each collection has its own Filters. If you need to limit slots, filter the CategoryGroups collection. If you need to filter dynamically created series, filter the SeriesGroups collection. The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the Graph item's Series and Categories groups.           
 
 # See Also
 

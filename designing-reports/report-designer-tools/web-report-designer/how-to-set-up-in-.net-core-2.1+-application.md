@@ -36,11 +36,11 @@ When you use NuGet packages, you may add only the __Telerik.WebReportDesigner.Se
 
 If you don't use NuGet packages, along with the above assemblies, you need to add also all their dependencies manually to the project.         
 
->note If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the            [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)            and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions,            see [Deploying Open XML](25b584e0-8dd7-4cfd-8878-ffe5e0a95ad4#deploying_open_xml_sdk_for_ms_office).       
+> If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the            [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)            and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions,            see [Deploying Open XML](25b584e0-8dd7-4cfd-8878-ffe5e0a95ad4#deploying_open_xml_sdk_for_ms_office).       
 
 ## Add Required Settings in the Startup.cs file
 
->note Some of the Visual Studio template projects may have the required settings already added by default. In other .NET Core 2.1 Web projects you may need              to add manually some or all of the settings.           
+> Some of the Visual Studio template projects may have the required settings already added by default. In other .NET Core 2.1 Web projects you may need              to add manually some or all of the settings.           
 
 1. Inject the                 [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0)                  and                   [IHostingEnvironment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment?view=aspnetcore-2.1)             in the constructor of the Startup class. We will need them later to get the configuration settings and the relative paths:             
 

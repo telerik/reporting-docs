@@ -46,8 +46,6 @@ and selecting one of those choices, starts the respective wizard:
 
 * [OpenClientDataSource Wizard]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/how-to-configure-the-openclientdatasource-component%})
 
-## 
-
 There are two ways to start the Data Source wizard:
 
 1. From the DataSource property of a data report item             
@@ -69,3 +67,4 @@ There are two ways to start the Data Source wizard:
    + The Data Source Wizard is started                   
 
   ![](images/DataSourceWizard3.png)
+

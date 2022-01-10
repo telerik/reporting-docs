@@ -55,3 +55,4 @@ To make the best choice of data item to use for displaying report data,         
           of aggregated information at a glance in a visual format.
 
 *  __Map__  . The Map item enables you to represent geospatial related data on top of the world map.
+

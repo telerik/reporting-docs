@@ -12,13 +12,11 @@ position: 4
 
 
 
->important The cache settings mentioned in this article are not obligatory, and they do not apply to the            __HTML5 Viewer__  or its Angular, WebForms and MVC wrappers. Details about the Cache Storage of the Reporting REST           Service that works with the HTML5 Viewer are available in           [Cache Management: HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})           and [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).         
+> The cache settings mentioned in this article are not obligatory, and they do not apply to the            __HTML5 Viewer__  or its Angular, WebForms and MVC wrappers. Details about the Cache Storage of the Reporting REST           Service that works with the HTML5 Viewer are available in           [Cache Management: HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})           and [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).         
 
 Except the preconfigured cache providers, additional providers can be used. To do that create a __MyCache__  class that implements         the Telerik.Reporting.Cache.Interfaces.ICache interface. Then implement the Telerik.Reporting.Cache.Interfaces.ICacheProvider         interface and its only method should return a new instance of the __MyCache__  class.       
 
->important The cache provider should have a parameterless constructor in order to be instantiated by the Reporting engine.         
-
-## 
+> The cache provider should have a parameterless constructor in order to be instantiated by the Reporting engine.         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CustomCacheProviderSnippets.cs region=CustomCacheProviderImplementation}}
 ````C#
@@ -140,3 +138,4 @@ To register this new provider set the __provider__  attribute of the "Cache" ele
  * [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
 
  * [Configuring the Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})
+

@@ -65,4 +65,3 @@ Below is a list of all options available during initialization.
 | __initialPageAreaImageUrl__ | *string* , *optional* .                 The image URL for the PageArea background image. Used only when the parameter values are missing or invalid.                 The image should be in __PNG__ , __GIF__ , or __JPG__ file format.|
 | __keepClientAlive__ | *boolean* | *optional* . Determines whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__ .Default Value is: *true* |
 
-

@@ -138,3 +138,4 @@ End Function
 # See Also
 
  * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) * [Shape](/reporting/api/Telerik.Reporting.Shape)  * [ShapeType](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType)  * [Stretch](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch) 
+

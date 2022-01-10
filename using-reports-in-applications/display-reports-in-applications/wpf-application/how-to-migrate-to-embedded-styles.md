@@ -16,8 +16,6 @@ With Telerik Reporting R2 2018 SP1 we have introduces implicit XAML styles embed
 
 Migration to embedded XAML styles is only possible for the default implicit XAML styles, that haven't been previously modified.       
 
-## 
-
 1. Add assembly reference to Telerik.ReportViewer.Wpf.Themes.               
 
 1. Update the following XAML styles in the Application.xaml or App.xaml to use the embedded implicit XAML styles:               
@@ -52,4 +50,5 @@ Migration to embedded XAML styles is only possible for the default implicit XAML
 </Application>
 ````
 
-1. Delete the above XAML files from the project.               
+1. Delete the above XAML files from the project.
+

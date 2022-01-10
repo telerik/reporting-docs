@@ -12,8 +12,6 @@ position: 2
 
 
 
-## 
-
 Occurs before exporting the report.
 
 Parameters:
@@ -37,3 +35,4 @@ $(function () {
 ````
 
 ## Event Binding
+

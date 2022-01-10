@@ -47,6 +47,4 @@ An array containing [FormatInfo]({%slug telerikreporting/using-reports-in-applic
             {"name":"DOCX","localizedName":"Word Document"},
             {"name":"XPS","localizedName":"XPS Document"}
           ]
-        
-
 

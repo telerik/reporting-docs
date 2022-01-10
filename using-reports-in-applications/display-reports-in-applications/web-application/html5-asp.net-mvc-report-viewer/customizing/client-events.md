@@ -14,8 +14,6 @@ position: 6
 
 This article explains how to attach client event handlers to an MVC ReportViewer instance.
 
-## 
-
 To attach a client event handler you have to set the appropriate __ClientEvents__  widget method as shown below:         
 
     

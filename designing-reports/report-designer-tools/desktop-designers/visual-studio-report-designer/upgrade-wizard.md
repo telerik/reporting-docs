@@ -12,8 +12,6 @@ position: 3
 
 
 
-## 
-
 The __Upgrade Wizard__  will guide you through the process of upgrading Telerik Reporting projects to a newer           (or older) version of Telerik Reporting. This wizard will upgrade the following:         
 
 * The references to Telerik Reporting assemblies to the selected version
@@ -26,9 +24,9 @@ The __Upgrade Wizard__  will guide you through the process of upgrading Telerik 
 
 The wizard __will not__  change any code, namespaces, nor will it remove obsolete properties, events           and methods. You may need to manually update your code after this wizard completes.         
 
->warning Web Site projects are not supported by the Upgrade Wizard. In Web Sites assembly references are handled differently,             and our recommendation is to upgrade manually or to turn the project into a Web Application that can be upgraded automatically -  [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx) .           
+> Web Site projects are not supported by the Upgrade Wizard. In Web Sites assembly references are handled differently,             and our recommendation is to upgrade manually or to turn the project into a Web Application that can be upgraded automatically -  [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx) .           
 
->warning .NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:           
+> .NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:           
 * The references to the Telerik Reporting assemblies or NuGet packages
 * The Htm5 Report Viewer scripts>
 
@@ -58,4 +56,5 @@ Once your solution is opened in the IDE, it would notify you with "File Modifica
 
 This wizard __will not__  change any of your current code. As a result __you may receive compilation errors and/or warnings__  for properties, methods and events marked as obsolete. In this case a manual update of your code           is required. The  [Release Notes](http://www.telerik.com/products/reporting/whats-new/release-history.aspx)  contain the complete list of obsolete and deleted properties, methods and events including information           on what to be used instead, and why. Please, review the release notes of all Telerik Reporting versions starting from the version you           upgraded from to the version you upgraded to, including the ones in between for information on how to update your project.         
 
-Feel free to contact us via the  [support ticketing system](http://www.telerik.com/account/support-tickets/available-support-list.aspx)  in case you still experience problems after the upgrade, and we           will help you resolve any remaining issues. It will be faster and easier if you package your solution/project as a ZIP file and           send it to Telerik, together with information on the errors/warnings you see.         
+Feel free to contact us via the  [support ticketing system](http://www.telerik.com/account/support-tickets/available-support-list.aspx)  in case you still experience problems after the upgrade, and we           will help you resolve any remaining issues. It will be faster and easier if you package your solution/project as a ZIP file and           send it to Telerik, together with information on the errors/warnings you see.
+

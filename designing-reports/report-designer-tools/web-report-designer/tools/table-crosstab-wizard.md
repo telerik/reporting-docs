@@ -34,4 +34,5 @@ This wizard guides you through the process of adding a Table or a Crosstab 
 
    + __Layout__  - there are four different layouts to select from (available only in the Crosstab Wizard).                 
 
-   + __Style__  - select a pre-defined style sheet that will be applied to the new Table or Crosstab item.                 
+   + __Style__  - select a pre-defined style sheet that will be applied to the new Table or Crosstab item.
+

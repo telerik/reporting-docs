@@ -36,9 +36,7 @@ Standalone Report Designer provides both a graphical query designer and a text-b
 
 *  [PostgreSQL](http://docs.telerik.com/data-access/developers-guide/database-specifics/postgresql/database-specifics-postgresql-overview) 
 
->important Please note that Telerik Data Access is a discontinued product and its            [supported databases list](http://docs.telerik.com/data-access/developer-guide-integration-prerequisities#access-to-a-relational-database)            will not be appended. The versions of the supported database drivers will not be updated as well.         
-
-## 
+> Please note that Telerik Data Access is a discontinued product and its            [supported databases list](http://docs.telerik.com/data-access/developer-guide-integration-prerequisities#access-to-a-relational-database)            will not be appended. The versions of the supported database drivers will not be updated as well.         
 
 The following figure shows the graphical query designer.
 
@@ -143,7 +141,5 @@ You can group the data and use aggregates after the data is retrieved using the 
 Clicking OK the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) Select Statement will be replaced with the currently generated SQL query.           The OK button is only enabled if the query is valid.         
 
 The Query Designer keeps the current setup state, however if you modify the SQL query outside the Query Designer and then use           the Query Designer, the Query Designer will override the SQL query manually made modification.         
-
-## 
 
 

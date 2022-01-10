@@ -155,7 +155,7 @@ JSON-based configuration file:
 }
 ````
 
->caution The code samples have the version listed as Version=x.x.x.x, and you should change that with the exact assembly version you                         use before proceeding.                     
+> The code samples have the version listed as Version=x.x.x.x, and you should change that with the exact assembly version you                         use before proceeding.                     
 
 ## Set rendering parameters programmatically
 

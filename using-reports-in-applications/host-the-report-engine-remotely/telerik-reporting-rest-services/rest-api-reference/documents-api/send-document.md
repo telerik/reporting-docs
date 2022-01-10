@@ -55,6 +55,4 @@ __Request Body__
 
     
           HTTP/1.1 200 OK
-        
-
 

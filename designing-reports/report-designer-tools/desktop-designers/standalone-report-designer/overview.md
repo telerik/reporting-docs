@@ -94,4 +94,5 @@ Additionally, the Standalone Report Designer includes the following helpful elem
 
    + Select two report items and change their HorizontalAlignment by clicking __Left__  , __Center__  , __Right__  , or __Stretch__  .                 
 
-   + Select two report items and change their VerticalAlignment by clicking __Top__  , __Center__  , __Bottom__  , or __Stretch__  .                 You can also change alignment by moving an element on the design surface. 
+   + Select two report items and change their VerticalAlignment by clicking __Top__  , __Center__  , __Bottom__  , or __Stretch__  .                 You can also change alignment by moving an element on the design surface.
+

@@ -52,4 +52,5 @@ The proposed product catalog template allows the items to be grouped in two-leve
 
   ![Product Catalog Wizard 6 Summary](images/Templates/ProductCatalog/ProductCatalogWizard_6_Summary.png)
 
-1. When you are all set, you can click Finish and the designer will load the produced product catalog report, ready to be used.               If you have setup the data sources and field mappings properly, you should just click __Preview__  and your catalog will be displayed.             
+1. When you are all set, you can click Finish and the designer will load the produced product catalog report, ready to be used.               If you have setup the data sources and field mappings properly, you should just click __Preview__  and your catalog will be displayed.
+

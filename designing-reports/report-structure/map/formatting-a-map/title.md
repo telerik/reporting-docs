@@ -38,3 +38,4 @@ The Map item can have one or more titles.         By default the map item have o
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+

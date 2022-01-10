@@ -71,3 +71,4 @@ Me.barcode1.Encoder = encoder
 
 # See Also
  * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  * [Telerik.Reporting.Barcodes.QRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder)  * [ApplicationIndicator](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ApplicationIndicator)  * [ECI](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ECI)  * [ErrorCorrectionLevel](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ErrorCorrectionLevel)  * [FNC1](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_FNC1)  * [Mode](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_Mode)  * [Version](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_Version) 
+

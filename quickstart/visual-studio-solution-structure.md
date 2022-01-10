@@ -51,4 +51,5 @@ To create report you start by creating a report library           to contain you
 
 1. The __Choose Report Type__  dialog opens. Select the report type, enter a name for the report               class and click the __OK__  button to close the dialog.             
 
-1. The appropriate Report Wizard will appear automatically to               help you select data and design your report quickly. For more information see [How to use the Report Wizard to create a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report%}).             
+1. The appropriate Report Wizard will appear automatically to               help you select data and design your report quickly. For more information see [How to use the Report Wizard to create a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report%}).
+

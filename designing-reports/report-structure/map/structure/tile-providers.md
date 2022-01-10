@@ -27,3 +27,4 @@ The  [TileProvider](/reporting/api/Telerik.Reporting.TileProvider)  class is use
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+

@@ -18,7 +18,7 @@ To give an example we will use the Invoice report from our local examples and wi
 
 ## Pass values to report parameters
 
->tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
+> All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
 1. We are going to use one of our demo Visual Studio reports. For this purpose the demo ReportLibrary project should be built beforehand (see below).                   Create a new ASP.NET MVC 4+ Empty Project and add reference to *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\bin\[configuration directory]\CSharp|VB.ReportLibrary.dll* .                   The exact [configuration directory] name depends on the project 'Build' configuration. It could be 'Debug', 'Release', etc.                 
 
@@ -248,3 +248,4 @@ $('#invoiceId').change(function () {
 # See Also
 
  * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+

@@ -35,4 +35,5 @@ The Telerik Reporting engine includes the following data source objects:
 
 * [OpenClientDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview%})
 
-* [OpenAccessDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview%})- Enables you to connect to [Telerik Data Access (DISCONTINUED)](http://www.telerik.com/data-access) 
+* [OpenAccessDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview%})- Enables you to connect to [Telerik Data Access (DISCONTINUED)](http://www.telerik.com/data-access)
+

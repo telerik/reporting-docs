@@ -12,8 +12,6 @@ position: 0
 
 
 
-## 
-
 A callback function that will be called when the viewer content has been loaded from the template and is ready to display reports           or perform any other operations on it. The function is executed in the context of the ReportViewer object that is available through           the __this__  object.         
 
     
@@ -31,3 +29,4 @@ $(function () {
 ````
 
 ## Event Binding
+

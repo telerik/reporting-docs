@@ -12,8 +12,6 @@ position: 0
 
 
 
-## 
-
 You can contact Telerik support with a technical question by using your account on Telerik.com:
 
  [http://www.telerik.com/account/support-tickets.aspx](http://www.telerik.com/account/support-tickets.aspx) .                 
@@ -48,4 +46,5 @@ This is also the place where you can
 
 *  [Submit a General Feedback question](http://www.telerik.com/oldaccount/support-tickets/general-feedback.aspx) 
 
-*  [Send a Presales Enquiry](http://www.telerik.com/oldaccount/support-tickets/presales-inquiry.aspx) 
+*  [Send a Presales Enquiry](http://www.telerik.com/oldaccount/support-tickets/presales-inquiry.aspx)
+

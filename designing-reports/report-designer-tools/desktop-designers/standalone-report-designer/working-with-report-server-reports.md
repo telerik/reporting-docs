@@ -70,7 +70,7 @@ Use this procedure to save a report to the server.
 
 1. Click on the Save option or use the Ctrl+S shortcut to Save the report.             
 
->important When the report is saved the changes are saved on the server but your changes are still not visible to the other users.             You must publish the report before others can see your changes.           
+> When the report is saved the changes are saved on the server but your changes are still not visible to the other users.             You must publish the report before others can see your changes.           
 
 ## Publish a report
 
@@ -106,7 +106,7 @@ Use this procedure to save a report that is already opened from another location
 
 1. Select category and report name from the opened dialog.             
 
->important When the report is saved the changes are saved on the server but your changes are still not visible to the other users.             You must publish the report before others can see your changes.           
+> When the report is saved the changes are saved on the server but your changes are still not visible to the other users.             You must publish the report before others can see your changes.           
 
 ## Reference another report stored in the server
 

@@ -101,3 +101,4 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
 1. Click the __Preview__  button to view the report. Scroll through             the report pages to find records that have images.             
 
   ![](images/QuickStart033.png)
+

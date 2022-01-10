@@ -104,3 +104,4 @@ Preview the result by clicking __Preview__  > __PrintPreview__ .
 ## See Also
 
 * [Understanding Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
+

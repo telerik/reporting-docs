@@ -42,8 +42,6 @@ If the current application has to be declared as DPI-aware, an additional elemen
 
 # See Also
 
-# See Also
-
  * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
 
  * [How to Add manually report viewer to a Windows Forms' .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%})[](66CD7D60-7708-42D5-8BB4-506676E8679E)
@@ -51,3 +49,4 @@ If the current application has to be declared as DPI-aware, an additional elemen
  * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 
  * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
+

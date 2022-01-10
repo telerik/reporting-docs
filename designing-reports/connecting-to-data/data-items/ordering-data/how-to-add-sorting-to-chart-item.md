@@ -53,3 +53,4 @@ chart1.Sortings.Add(sorting1)
 
 # See Also
  * [Chart](/reporting/api/Telerik.Reporting.Chart)  * [Sorting](/reporting/api/Telerik.Reporting.Sorting)  * [SortingCollection](/reporting/api/Telerik.Reporting.SortingCollection) 
+

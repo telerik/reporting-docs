@@ -18,7 +18,7 @@ To give an example we will use the Invoice report from our examples and will upd
 
 ## Pass values to report parameters
 
->tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
+> All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
 1. Create a new ASP.NET Web Forms Empty Project.                   We are going to use one of our demo Visual Studio reports. For this purpose add a new Telrik Report Library project to the solution from the VS item templates, name it *Charp|VB.ReportLibrary* , add the existing __Invoice.cs__  report and its subreport __SalesOrderDetails.cs__  from *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Invoice*  folder and built the *Charp|VB.ReportLibrary*  project. Add reference to the ReportLibrary project in the Web Forms project.                 
 
@@ -190,3 +190,4 @@ $('#invoiceId').change(function () {
 # See Also
 
  * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+

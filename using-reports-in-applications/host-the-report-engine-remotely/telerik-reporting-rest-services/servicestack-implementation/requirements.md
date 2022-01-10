@@ -14,8 +14,6 @@ position: 1
 
 Requirements for using __Telerik Reporting REST ServiceStack service__  in an application.       
 
-## 
-
 1. Telerik Reports must be accessible by the application hosting the Reporting REST ServiceStack service.             
 
 1. Telerik Reporting ASP.NET ServiceStack service implementation requires               the following ASP.NET and third party assemblies.             
@@ -36,6 +34,6 @@ Requirements for using __Telerik Reporting REST ServiceStack service__  in an ap
 
    + [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) requires                   __Telerik.Reporting.Adomd.dll__  and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})                   (*Microsoft.AnalysisServices.AdomdClient.dll*  v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%})).                 
 
->note The  __Telerik Reporting ServiceStack REST Service__  should be the only ServiceStack based Web Service in a project, as all ServiceStack services have  [a single AppHost per AppDomain](                 http://mono.servicestack.net/ServiceStack.Hello/#AppHost               ) .           
+> The  __Telerik Reporting ServiceStack REST Service__  should be the only ServiceStack based Web Service in a project, as all ServiceStack services have  [a single AppHost per AppDomain](                 http://mono.servicestack.net/ServiceStack.Hello/#AppHost               ) .           
 
 

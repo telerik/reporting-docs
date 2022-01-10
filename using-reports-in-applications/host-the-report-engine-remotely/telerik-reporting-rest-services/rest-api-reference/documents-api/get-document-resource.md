@@ -49,6 +49,4 @@ resource file (image, etc.)
           HTTP/1.1 200 OK
           
           file-content
-        
-
 

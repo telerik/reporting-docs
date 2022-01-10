@@ -12,8 +12,6 @@ position: 8
 
 
 
-## 
-
 Occurs after printing the report.
 
 Parameters:
@@ -40,3 +38,4 @@ $(function () {
 ````
 
 ## Event Binding
+

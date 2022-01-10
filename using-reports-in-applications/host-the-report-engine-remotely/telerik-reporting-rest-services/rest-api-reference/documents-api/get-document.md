@@ -50,6 +50,4 @@ The document content bytes as attachment.
           Content-Disposition: attachment; filename=ProductCatalog.pdf
 
           bytes
-        
-
 

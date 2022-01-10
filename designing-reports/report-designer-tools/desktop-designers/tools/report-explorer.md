@@ -23,3 +23,4 @@ The __Report Explorer__  can be accessed from the [context menu]({%slug telerikr
   
 
   ![](images/UI003.png)
+

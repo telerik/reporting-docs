@@ -52,3 +52,4 @@ In this article we explained how to use the Graph Wizard to create a candlestick
  * [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})
 
  * [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%})
+

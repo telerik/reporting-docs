@@ -35,4 +35,5 @@ Below is a list of all available report viewer events.
 | __interactiveActionLeave__ | *function(e, args);optional;* A callback function that will be called when the mouse cursor leaves the area of an interactive action.|
 | __viewerToolTipOpening__ | *function(e, args);optional;* A callback function that will be called when a tooltip is being opened|
 
-For more details on each event and its arguments/return value, please refer to the           [HTML5 Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)%}).         
+For more details on each event and its arguments/return value, please refer to the           [HTML5 Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)%}).
+

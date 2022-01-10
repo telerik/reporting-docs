@@ -12,8 +12,6 @@ position: 1
 
 
 
-## 
-
 When you configure the __SqlDataSource__  component, you set the __ProviderName__  property to the type of database (the default is __System.Data.SqlClient__ )           and the __ConnectionString__  property to a connection string that includes information           required to connect to the database. The contents of a connection string differ depending on what type of           database the data source component is accessing. For example, the __System.Data.SqlClient__            provider requires a server name, database (catalog) name, and information about how to authenticate the user           when connecting to __SQL Server__ . For information on valid connection strings, see the           __ConnectionString__  property topics for the __SqlConnection__ ,           __OracleConnection__ , __OleDbConnection__ , and __OdbcConnection__  classes.         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=ConnectionStringSnippet}}
@@ -70,4 +68,5 @@ The __SqlDataSource__  component retrieves data using a SQL statement defined th
 SELECT CustomerID, CompanyName FROM Customers WHERE City = @City
 ````
 
-You can create parameter objects that specify where the command should get parameter values from at run time.           You can also use expressions which values will be evaluated when processing the report or pass specific values           programmatically.         
+You can create parameter objects that specify where the command should get parameter values from at run time.           You can also use expressions which values will be evaluated when processing the report or pass specific values           programmatically.
+

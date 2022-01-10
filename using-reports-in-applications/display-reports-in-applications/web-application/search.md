@@ -46,4 +46,5 @@ The dialog relies on search metadata, which is obtained from every rendering res
 
 ## Important Notes
 
-The complex data items like Graph and Map provide metadata for each data point label, axis label, title and legend, but since these complex items are rendered           in one SVG container, they will be entirely highlighted even when the search token matches any of their composite parts.         
+The complex data items like Graph and Map provide metadata for each data point label, axis label, title and legend, but since these complex items are rendered           in one SVG container, they will be entirely highlighted even when the search token matches any of their composite parts.
+

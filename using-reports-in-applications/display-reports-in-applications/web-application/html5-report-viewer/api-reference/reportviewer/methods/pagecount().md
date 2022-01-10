@@ -12,8 +12,6 @@ position: 8
 
 
 
-## 
-
 Gets the total page count of viewer’s currently displayed report.         
 
 Returns: integer:         

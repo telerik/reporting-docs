@@ -12,8 +12,6 @@ position: 7
 
 
 
-## 
-
 Stops sending keep alive requests to the server, if keep client alive was enabled.         
 
     

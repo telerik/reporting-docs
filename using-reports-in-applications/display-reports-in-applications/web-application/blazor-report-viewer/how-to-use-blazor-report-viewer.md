@@ -12,7 +12,7 @@ position: 1
 
 
 
->important The following article guides you how to use Blazor Report Viewer in a            [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)            web application.         
+> The following article guides you how to use Blazor Report Viewer in a            [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)            web application.         
 
 ## Prerequisites
 
@@ -119,4 +119,5 @@ Alternatively you can use the                [Kendo UI Less-Based Themes](https:
 
 1. Use the rest of the parameters exposed on the Blazor viewer component to setup its appearance and behavior as desired.             
 
-1. Finally, run the project to see the rendered report.             
+1. Finally, run the project to see the rendered report.
+

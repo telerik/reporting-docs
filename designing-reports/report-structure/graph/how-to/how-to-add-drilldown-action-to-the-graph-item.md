@@ -88,3 +88,4 @@ To learn how to add more actions and set them up manually, you can look at the f
 * [How to Add a Drilldown/Toggle Visibility Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action%})
 
 * [Graph Item Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/graph-item-actions%})
+

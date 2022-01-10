@@ -64,7 +64,7 @@ For Pie Charts with lots of data points the best approach might be to use a comb
 
   ![Outside Column Pie Chart](images/Graph/OutsideColumnPieChart.png)
 
->note The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their              [DataPointLabelAngle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelAngle)  set to a multiple of  __2*π__  radians in degrees (i.e. 0, 360, etc.).           
+> The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their              [DataPointLabelAngle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelAngle)  set to a multiple of  __2*π__  radians in degrees (i.e. 0, 360, etc.).           
 
 ## Merging Small Slices on a Pie Chart
 
@@ -81,3 +81,4 @@ The styling of the merged data point, its label or the corresponding legend item
 # See Also
 
  * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  * [DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle)  * [DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel)  * [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) 
+

@@ -64,3 +64,4 @@ Report items are used in the report depending on the data that should be display
  * [How to Add/Remove Report Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header-&-footer-sections%})
 
  * [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header-&-footer-sections%})
+

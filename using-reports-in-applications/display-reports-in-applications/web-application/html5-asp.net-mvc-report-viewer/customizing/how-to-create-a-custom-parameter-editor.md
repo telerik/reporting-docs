@@ -14,8 +14,6 @@ position: 4
 
 The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.       
 
-## 
-
 Custom parameter editors are defined through the ParameterEditors method when creating the report viewer widget.           Check out the following list with the available parameter editors:         
 
 The following example illustrates how to use the Kendo DropDownList widget for a           single parameter value parameter editor which also has available values:         
@@ -113,8 +111,9 @@ Passing the parameter editor to the viewer:
 )
 ````
 
->tip You can use any other custom UI covering the requirements of the createEditor method.
+> You can use any other custom UI covering the requirements of the createEditor method.
 
 # See Also
 
  * [How To: Pass Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-pass-values-to-report-parameters%})
+

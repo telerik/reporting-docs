@@ -14,7 +14,7 @@ position: 0
 
 This document provides a brief overview of the legacy ASP.NET Web Forms Report Viewer.       
 
->note If you are building a new project, we strongly recommend you to use         the latest Web Forms Report Viewer - the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).          It includes a lot of improvements and new features.       
+> If you are building a new project, we strongly recommend you to use         the latest Web Forms Report Viewer - the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).          It includes a lot of improvements and new features.       
 
 ## Overview
 
@@ -22,7 +22,7 @@ The ASP.NET ReportViewer is designed to render __Telerik Reports__  within ASP.N
 
   ![](images/AspNetViewer.png)
 
->caution The ASP.NET Report Viewer uses  __ASP.NET Session__  and  __ASP.NET Cache__  to preserve the report instance assigned to             its  __Report__  property during page postbacks and for some design reasons as well, so              __Session__  must be enabled at all times.           
+> The ASP.NET Report Viewer uses  __ASP.NET Session__  and  __ASP.NET Cache__  to preserve the report instance assigned to             its  __Report__  property during page postbacks and for some design reasons as well, so              __Session__  must be enabled at all times.           
 
 The ASP.NET Report Viewer has the following useful features:         
 
@@ -58,7 +58,7 @@ The ASP.NET Report Viewer has the following useful features:
 
 The ASP.NET ReportViewer control is a composite of standard ASP.NET Web Server controls.         
 
->note The ASP.NET ReportViewer comes with four predefined skins: Default, WebBlue, Original and Office2007. The ASP.NET ReportViewer control's toolbar is immutable.             To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the ASP.NET ReportViewer [Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/client-side-api%}).           
+> The ASP.NET ReportViewer comes with four predefined skins: Default, WebBlue, Original and Office2007. The ASP.NET ReportViewer control's toolbar is immutable.             To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the ASP.NET ReportViewer [Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/client-side-api%}).           
 
 The purpose of the ASP.NET ReportViewer control is to display Telerik Reports and allow the user to interact with them.           Reports are processed and rendered on the server. Reports and their content are delivered to the client through the           __Telerik.ReportViewer.axd__  handler.         
 
@@ -79,3 +79,4 @@ The ASP.NET ReportViewer control's content is rendered in __IFRAME__  elements. 
  * [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
 
  * [Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/client-side-api%})
+

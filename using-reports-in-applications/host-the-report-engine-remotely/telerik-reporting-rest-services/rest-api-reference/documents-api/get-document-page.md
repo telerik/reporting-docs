@@ -53,6 +53,4 @@ __Response Body__
             ‘pageReady’: false,
             ‘pageNumber’: 1
           }
-        
-
 

@@ -14,11 +14,9 @@ position: 5
 
 This topic explains how to show the page scroll mode button in the HTML5 Viewer Toolbar Area       
 
-## 
-
 There are a few steps that should be done.
 
->tip All path references in the article should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation -             [Installation Directories](6E821131-83F3-45A4-BB6E-1530223D1E38#directories-and-asemblies).           
+> All path references in the article should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation -             [Installation Directories](6E821131-83F3-45A4-BB6E-1530223D1E38#directories-and-asemblies).           
 
 ## Step 1:
 
@@ -75,3 +73,4 @@ Add buttons elements in your local template. There are two different elements th
 # See Also
 
  * [Styling and Appearance]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%})
+

@@ -14,8 +14,6 @@ position: 1
 
 The article elaborates on how to localize the messages displayed by the Angular Report Viewer.
 
-## 
-
 1. To localize the report viewer, create a new TypeScript file *stringResources.ts* :
 
     

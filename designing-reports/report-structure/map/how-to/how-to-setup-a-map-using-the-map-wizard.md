@@ -14,9 +14,7 @@ position: 1
 
 In this how-to article we will show you how to create a Map which will present the sales distribution by products among several states         using the __Adventure Works__  sample database and the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).       
 
->important This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.           If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.           For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.         
-
-## 
+> This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.           If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.           For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.         
 
 1. Start the Map Wizard:
    + If you create a new report, select the __Map Wizard__  icon from the __Available Templates__  page.                   
@@ -91,3 +89,4 @@ In this example we demonstrated how to setup a Map item from scratch, how to add
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})
+

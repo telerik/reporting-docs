@@ -16,8 +16,6 @@ When the values in a chart vary widely from series to series, or when you have m
 
 To help distinguish the data that is plotted along the secondary axis, you can change the chart type for just one of the series.         For example, you could change one series to a line type.       
 
-## 
-
 To complete the following procedures, you must have an existing chart.
 
 1. Select the Graph item and locate the __CoordinateSystems__  property in the property grid. Click on the ellipsis button to                open the __CoordinateSystems__  collection editor.             

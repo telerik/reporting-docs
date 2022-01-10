@@ -14,8 +14,6 @@ position: 0
 
 Bookmark node representing a node in a document map.       
 
-## 
-
     
           {
             ‘id’: ‘Bikes’,
@@ -34,5 +32,4 @@ Bookmark node representing a node in a document map.
 |`text`|`String`|`false`|The text to be displayed|
 |`page`|`Number`|`true`|An integer representing the number of the target page|
 |`items`|`Array`|`false`|An array of String elements representing the IDs of the child bookmark nodes in the document map|
-
 

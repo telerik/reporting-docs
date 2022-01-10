@@ -14,8 +14,6 @@ position: 11
 
 Calculated fields can be used to create new values         that do not exist in the data source. For example, a calculated field         can represent a new value, a constant, an expression value, user defined         function or even a report parameter, or an existing field that is converted         to a different datatype.       
 
-## 
-
 You specify a calculated field manually by creating an           expression. To open the Edit Calculated Fields dialog:         
 
 * Right click on the target DataSource component and select the Properties option from the context menu.             
@@ -26,7 +24,7 @@ You specify a calculated field manually by creating an           expression. To 
 
 The dialog accepts __Name__ , __DataType__  and           __Expression__ .         
 
->note Names must be unique in the datasource and the expression for a calculated             field cannot contain aggregates.           
+> Names must be unique in the datasource and the expression for a calculated             field cannot contain aggregates.           
 
 Examples:
 

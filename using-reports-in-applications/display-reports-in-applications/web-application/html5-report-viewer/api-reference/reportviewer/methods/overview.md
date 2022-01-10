@@ -12,8 +12,6 @@ position: 0
 
 
 
-## 
-
 | Method | Description |
 | ------ | ------ |
 | [accessibilityKeyMap()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap()%})|Gets the shortcut keys used when the report viewer is in accessible mode (has its enableAccessibility set to __true__ . The keys in the map are listed below|
@@ -46,5 +44,4 @@ position: 0
 | [viewMode(vm)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode(vm)%})|Sets the view mode and automatically reloads the current report (if any) into the new view;|
 | [pageMode()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()%})|Gets the current page mode. For more information please see jQuery.fn.telerik_ReportViewer’s pageMode option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).|
 | [pageMode(psm)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode(psm)%})|Sets the page mode and automatically reloads the current report (if any) into the new view|
-
 

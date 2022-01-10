@@ -14,7 +14,7 @@ position: 2
 
 This article describes the steps required to host the __Telerik Reporting ServiceStack REST Service__          implementation on top of the classic __ASP.NET__  hosting infrastructure supported by the         __IIS__  (Internet Information Services) server.       
 
->note Telerik Reporting ServiceStack assembly requires  __V3__  of the ServiceStack framework.         
+> Telerik Reporting ServiceStack assembly requires  __V3__  of the ServiceStack framework.         
 
 ## How to host the ServiceStack implementation of Telerik Reporting REST service in IIS:
 
@@ -180,3 +180,4 @@ End Sub
  * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})
 
  * [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})
+

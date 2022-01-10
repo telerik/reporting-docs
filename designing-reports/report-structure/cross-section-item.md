@@ -46,7 +46,7 @@ Since the Cross-section item can refer to more than one report sections, its par
 
 Selecting a Cross-section item can be done through the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) tool window or by clicking on the graphical primitive the item displays.           If its *Type*  is set to __Line__ , the item's selectable area is on both sides of the displayed vertical line and spans to at least 6 pixels.           If the item's *Type*  is set to __Rectangle__ , the selectable area can be any of its sides, again spanning to at least 6 pixels.         
 
->note The Cross-section item has complete design-time support in Standalone Report Designer and Visual Studio Report Designer. The Web Report Designer currently provides basic designing capabilities and some of the properties of the Cross-section item cannot be edited through the dedicated property editors.
+> The Cross-section item has complete design-time support in Standalone Report Designer and Visual Studio Report Designer. The Web Report Designer currently provides basic designing capabilities and some of the properties of the Cross-section item cannot be edited through the dedicated property editors.
 
 The Cross-section item can be added programmatically to a report with the following code:         
 
@@ -100,3 +100,4 @@ The Cross-section item is not supported in all rendering extensions. Please chec
 # See Also
 
  * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+

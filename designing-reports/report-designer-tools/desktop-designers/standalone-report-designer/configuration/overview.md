@@ -115,3 +115,4 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
  * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
 
  * [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
+

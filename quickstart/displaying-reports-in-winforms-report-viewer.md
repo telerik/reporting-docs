@@ -12,8 +12,6 @@ position: 2
 
 
 
-## 
-
 You can design reports in:         
 
 * Visual Studio Report Designer: The result is a class (type) inheriting *Telerik.Reporting.Report* ;             
@@ -26,7 +24,7 @@ You can design reports in:
 
 You need to specify how the report is created to let the Reporting engine know how to process it.           For the purpose you need to use a [Report Source object]({%slug telerikreporting/designing-reports/report-sources/overview%}).           Report sources can be server-side or client-side, which is determined by the processing instance           (a Telerik Reporting Viewer or a ReportProcessor instance).         
 
->important Reports are always processed and rendered on the server machine.
+> Reports are always processed and rendered on the server machine.
 
 Once you have a properly configured Report Source, you can use it for a Telerik Report Viewer           or to [process a report programmatically]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}).           For displaying a Report in a Report Viewer see the list of available Telerik Reporting viewers in           [Using Telerik Reporting in Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}).         
 
@@ -76,3 +74,4 @@ End Sub
 1. Press __F5__  to run the report.                
 
   ![](images/QuickStart037.png)
+

@@ -14,8 +14,6 @@ position: 4
 
 The __Web Service Data Source Wizard__  allows you to create a new or edit an existing         __WebServiceDataSource__  component based on several settings.         After the wizard appears you have to perform the following steps:       
 
-## 
-
 1. __Configure data retrieval__ Setup the properties of the HTTP request which will retrieve data from the web service:               
 
   ![Web Service Data Source Request](images/DataSources/WebServiceDataSourceRequest.png)
@@ -81,3 +79,4 @@ And/or reference an external data file:
 # See Also
 
  * [Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
+

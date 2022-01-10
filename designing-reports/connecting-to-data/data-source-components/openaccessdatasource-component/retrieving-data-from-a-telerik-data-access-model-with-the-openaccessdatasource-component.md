@@ -18,8 +18,6 @@ This section discusses various techniques for retrieving data from a __Telerik D
 
   ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
-## 
-
 The simplest approach to extract entities from a __Telerik Data Access Model__  is to bind the __OpenAccessDataSource__  component            directly to an auto-generated property of the model, as shown in the sample code below:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=PropertyBindingSnippet}}

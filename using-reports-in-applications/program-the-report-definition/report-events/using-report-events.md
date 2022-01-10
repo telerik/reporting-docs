@@ -12,8 +12,6 @@ position: 2
 
 
 
-## 
-
 The __Report__  object exposes these events:         
 
 | Event | Description |

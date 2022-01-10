@@ -47,3 +47,4 @@ When all the properties are set, the __LocationMapSeries__  instance should look
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [Add ShapeMapSeries to the Map item]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
+

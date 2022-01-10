@@ -16,8 +16,6 @@ In this article we will show you how to create a Line chart using the Graph item
 
   ![Line Chart\Line Chart](images/Graph/LineChart.png)
 
-## 
-
 1. Add a new graph item to the report.
 
    1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ .                 

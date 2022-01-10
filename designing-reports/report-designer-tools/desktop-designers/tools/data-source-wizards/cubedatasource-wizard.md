@@ -14,8 +14,6 @@ position: 8
 
 After the __CubeDataSource__  wizard appears you have to perform the following steps:       
 
-## 
-
 1. __Choose your data connection__ In this step you have to specify a data connection for the __CubeDataSource__                component. There are two possible options for specifying the data connection:             
 
    + __Choose an existing data connection__  - selecting this option allows                   you to specify an existing data connection stored in the configuration file of the current                   project from the drop-down list.                 
@@ -46,4 +44,5 @@ After the __CubeDataSource__  wizard appears you have to perform the following s
 
    >The default fields returned by an  __MDX__  query often are too long and                 might need to be escaped when used in expressions. To overcome this it is advised to always                 specify shorter and more descriptive aliases for them.               
 
-1. __Preview data source results__ You can preview the result set returned by the __CubeDataSource__  before               completing the wizard. Click *"Execute Query"*  to execute the               __MDX__  query and display the retrieved data.             If the data source has parameters the wizard displays a pop-up dialog before each preview which               allows you to enter the parameter values.             This is the last step of the wizard. After pressing *"Finish"*  the               wizard will configure the __CubeDataSource__  component with the specified               settings and close.             
+1. __Preview data source results__ You can preview the result set returned by the __CubeDataSource__  before               completing the wizard. Click *"Execute Query"*  to execute the               __MDX__  query and display the retrieved data.             If the data source has parameters the wizard displays a pop-up dialog before each preview which               allows you to enter the parameter values.             This is the last step of the wizard. After pressing *"Finish"*  the               wizard will configure the __CubeDataSource__  component with the specified               settings and close.
+

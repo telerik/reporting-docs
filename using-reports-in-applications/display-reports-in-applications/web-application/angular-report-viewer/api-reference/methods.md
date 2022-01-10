@@ -12,8 +12,6 @@ position: 2
 
 
 
-## 
-
 Each method can be called using a reference to the report viewer component.         
 
     
@@ -57,5 +55,4 @@ The following table lists the available methods:
 |
 | __setAccessibilityKeyMap(keyMap: JSON)__ |Sets the shortcut keys used when the report viewer is in accessible mode.                 It is recommended to set the new key map when the report rendering is complete,                 because the accessibility routines require the report viewer template to be loaded. __Parameters__ : keyMap: JSON|
 | __dispose()__ |Stops sending keep alive requests to the server, if keep client alive was enabled|
-
 

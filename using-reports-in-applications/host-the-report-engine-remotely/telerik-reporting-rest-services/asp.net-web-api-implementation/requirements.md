@@ -14,8 +14,6 @@ position: 1
 
 Requirements for using __Telerik Reporting REST WebAPI service__  in an application.       
 
-## 
-
 1. Telerik Reports must be accessible by the application hosting the Reporting REST WebAPI service.             
 
 1. Telerik Reporting ASP.NET Web API service implementation requires               the following ASP.NET and third party assemblies.             

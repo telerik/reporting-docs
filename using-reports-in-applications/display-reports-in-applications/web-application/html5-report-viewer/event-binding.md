@@ -67,5 +67,5 @@ $(function () {
 
 To __unbind all event handlers__  from the event just call the unbind method with only one argument, the event name.         
 
->tip You can unbind anonymous event handlers by calling the unbind method with one argument.           
+> You can unbind anonymous event handlers by calling the unbind method with one argument.
 

@@ -12,8 +12,6 @@ position: 9
 
 
 
-## 
-
 Gets the current page mode. For more information please see jQuery.fn.telerik_ReportViewer’s pageMode option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).         
 
 Returns: string.

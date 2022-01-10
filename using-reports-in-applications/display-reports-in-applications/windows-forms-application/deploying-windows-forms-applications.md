@@ -14,8 +14,6 @@ position: 5
 
 This article describes how to deploy Windows Forms Application that use Telerik Reporting.
 
-## 
-
 During the installation of Telerik Reporting on your machine, the Telerik assemblies were added to GAC.           When deploying a Windows Forms Application project the assemblies from the GAC are not copied           automatically so you need to make sure the assemblies physically exist in the bin           folder of your application:         
 
 __Required assemblies:__ 

@@ -75,3 +75,4 @@ The article lists the properties of the interactive action, available in        
  * [interactiveActionEnter event handler]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)%})
 
  * [interactiveActionLeave event handler]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)%})
+

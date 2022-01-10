@@ -12,8 +12,6 @@ position: 6
 
 
 
-## 
-
 This article describes the limitations and requirements for deploying Web application containing Telerik Reporting on a web host that requires Medium Trust permission level.
 
 If you plan on deploying web application under Medium Trust level, first get acquainted with what Medium Trust is and how to use it - more info in " [ASP.NET Trust Levels and Policy Files](http://msdn.microsoft.com/en-us/library/wyts434y.aspx) " and " [Use Medium Trust in ASP.NET](http://msdn2.microsoft.com/en-us/library/ms998341.aspx) " documents in MSDN.         
@@ -32,7 +30,7 @@ Telerik Reporting works in Medium Trust environment with the following except
 
 * Shapes and barcodes with transparent colors are rendered in PNG format, which is not supported by Internet Explorer 6 browser.
 
->note When running Telerik Reports in Medium Trust, one should always set the ReportViewer.Report property in code behind. Otherwise the ReportConverter class is used, which requires more permissions than are granted in Medium Trust level.
+> When running Telerik Reports in Medium Trust, one should always set the ReportViewer.Report property in code behind. Otherwise the ReportConverter class is used, which requires more permissions than are granted in Medium Trust level.
 
 # See Also
 
@@ -45,3 +43,4 @@ Telerik Reporting works in Medium Trust environment with the following except
  * [Deploying Web ReportViewer in SharePoint]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-reportviewer-in-sharepoint%})
 
  * [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
+

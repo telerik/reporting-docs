@@ -14,8 +14,6 @@ position: 2
 
 The available Escape formats for the CsvDataSource component are None, Backslash and BackslashAlternative, Quotes and QuotesMixed.          Unix style programs use backslashes for escaping only the symbol followed by the backslash.          Excel and other programs that follow the RFC 4180 standard use a text qualifier to embed the whole field.          The text qualifier usually is single quote or double quotes, but can be other symbol as well (according to RFC 4180 only double quotes have to be used).        
 
-## 
-
 | Escape format | Description |
 | ------ | ------ |
 |None|No symbols are escaped.|

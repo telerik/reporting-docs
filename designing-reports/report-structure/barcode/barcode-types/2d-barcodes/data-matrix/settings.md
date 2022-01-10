@@ -69,3 +69,4 @@ Me.barcode1.Encoder = encoder
  * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  * [Telerik.Reporting.Barcodes.DataMatrixEncoder](/reporting/api/Telerik.Reporting.Barcodes.DataMatrixEncoder)  * [Encodation](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_Encodation)  * [SymbolSize](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_SymbolSize) 
 
  * [TextEncoding](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding)
+

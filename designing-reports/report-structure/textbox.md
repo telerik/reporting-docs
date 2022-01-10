@@ -79,7 +79,7 @@ The screenshot below shows a __TextBox__  with the in-place editor active.
 
 Information on using the expression editor is available in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}) article.         
 
->note Pressing the Enter key inserts a new line in the expression. Enclose the new line within double quotes ("") to              insert a new line in the string resulting from the evaluated expression.           
+> Pressing the Enter key inserts a new line in the expression. Enclose the new line within double quotes ("") to              insert a new line in the string resulting from the evaluated expression.           
 
   
 
@@ -92,3 +92,4 @@ The item supports [embedded expressions]({%slug telerikreporting/designing-repor
 # See Also
 
  * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) * [TextBox](/reporting/api/Telerik.Reporting.TextBox)  * [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)  * [Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)  * [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox) 
+

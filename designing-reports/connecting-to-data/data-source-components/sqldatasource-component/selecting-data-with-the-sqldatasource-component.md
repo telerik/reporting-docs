@@ -12,11 +12,9 @@ position: 2
 
 
 
-## 
-
 You can specify a SQL query for the __SqlDataSource__  component to execute by setting its           __SelectCommand__  property.         
 
->note If the SQL query returns more than one result sets, only the first set will be used.
+> If the SQL query returns more than one result sets, only the first set will be used.
 
 The following example demonstrates a SQL query that retrieves           a result set consisting of the names of all the persons in the __Contact__  table from the           __AdventureWorks__  sample database:         
 
@@ -66,4 +64,5 @@ sqlDataSource.SelectCommand = "GetAllContacts"
 sqlDataSource.SelectCommandType = SqlDataSourceCommandType.StoredProcedure
 ````
 
-At run time, the __SqlDataSource__  component submits the text in the __SelectCommand__  property to the database, and the database returns the result of the SQL query or stored procedure           back to the __SqlDataSource__  component. Any data items that are bound to the data source           component display the result set on your report.         
+At run time, the __SqlDataSource__  component submits the text in the __SelectCommand__  property to the database, and the database returns the result of the SQL query or stored procedure           back to the __SqlDataSource__  component. Any data items that are bound to the data source           component display the result set on your report.
+

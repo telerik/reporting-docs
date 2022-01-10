@@ -48,7 +48,7 @@ This message can appear after upgrading to a newer version of Telerik Reporting 
 
 More details about the settings required by the WPF ReportViewer are available in [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).         
 
->important [Telerik Reporting Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) will update only references to Telerik Reporting assemblies and configuration settings.             You will have to manually update the related  __Telerik.ReportViewer.Wpf.xaml__  files, and Telerik UI             for WPF XAML files distributed by Telerik Reporting. This includes manual update of Telerik UI for WPF assemblies distributed by Telerik Reporting.           If you use Telerik UI for WPF as a separate product, you can run  [Telerik UI for WPF Upgrade Wizard](http://docs.telerik.com/devtools/wpf/visual-studio-extensions/for-wpf-vs-extensions-upgrading)  which will update Telerik UI for WPF assembly references and XAML resources automatically.           
+> [Telerik Reporting Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) will update only references to Telerik Reporting assemblies and configuration settings.             You will have to manually update the related  __Telerik.ReportViewer.Wpf.xaml__  files, and Telerik UI             for WPF XAML files distributed by Telerik Reporting. This includes manual update of Telerik UI for WPF assemblies distributed by Telerik Reporting.           If you use Telerik UI for WPF as a separate product, you can run  [Telerik UI for WPF Upgrade Wizard](http://docs.telerik.com/devtools/wpf/visual-studio-extensions/for-wpf-vs-extensions-upgrading)  which will update Telerik UI for WPF assembly references and XAML resources automatically.           
 
 ## "Cannot resolve dependency to assembly 'Telerik.Windows.XXXX...'." error on running the application.
 
@@ -58,4 +58,5 @@ More details about the settings required by the WPF ReportViewer are available i
 
 ## The report in the WPF ReportViewer is messed or different than the design-time preview.
 
-The WPF ReportViewer displays the report rendered in XAML format. External styles may affect the produced XAML that contains standard elements like Canvas, TextBlock and etc.           Test excluding styles to check if they change the displayed content, or test exporting in a format like PDF.         
+The WPF ReportViewer displays the report rendered in XAML format. External styles may affect the produced XAML that contains standard elements like Canvas, TextBlock and etc.           Test excluding styles to check if they change the displayed content, or test exporting in a format like PDF.
+

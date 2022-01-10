@@ -16,8 +16,6 @@ When you work in [Standalone Report Designer]({%slug telerikreporting/designing-
 
 [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})          provides many right-click menus for quick access to frequently used dialog boxes and commands.         Right-click menus are dynamic and may contain different options, depending on the user configuration and the currently selected objects.       
 
-## 
-
 | Description | Key Combination |
 | ------ | ------ |
 |Opens the backstage New report view.|CTRL+N|
@@ -47,5 +45,4 @@ When you work in [Standalone Report Designer]({%slug telerikreporting/designing-
 |Zoom in on map view area when a map viewport is selected.|CTRL+Plus sign (+)|
 |Zoom out on map view area when a map viewport is selected.|CTRL+Minus sign (-)|
 |Close the current report tab.|CTRL+F|
-
 

@@ -133,3 +133,4 @@ The SVG images are rendered in vector format where the rendering extension suppo
  * [PictureBox](/reporting/api/Telerik.Reporting.PictureBox) 
 
  * [Sizing](/reporting/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing) 
+

@@ -14,8 +14,6 @@ position: 7
 
 This article describes how to deploy WPF Application that use Telerik Reporting.
 
-## 
-
 To deploy a WPF Application project containing [WPF report viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) used to deliver           reports produced by Telerik Reporting you need to make sure the assemblies physically exist           in the bin folder of your application:         
 
 __Required assemblies:__ 

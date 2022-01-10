@@ -217,10 +217,9 @@ End Class
 
 # See Also
 
-# See Also
-
  * [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120))
 
  * [WPF Globalization and Localization Overview](http://msdn.microsoft.com/en-us/library/ms788718(v=VS.85).aspx)
 
  * [Create satellite assemblies for .NET apps](https://docs.microsoft.com/en-us/dotnet/core/extensions/create-satellite-assemblies)
+

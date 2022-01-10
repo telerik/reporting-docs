@@ -30,3 +30,4 @@ Reports can contain report headers and footers. By default, new reports are crea
 
 # See Also
  * [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  * [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection) 
+

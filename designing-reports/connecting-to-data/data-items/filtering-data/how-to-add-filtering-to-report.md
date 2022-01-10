@@ -57,9 +57,7 @@ filter1.Value = "=10"
 report1.Filters.Add(filter1)
 ````
 
-## 
-
->tip The Report can have a complex structure due to added groups.             You can filter data per group by using the corresponding group's Filters collection.           The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the             Report's structure and the each group's properties.           
+> The Report can have a complex structure due to added groups.             You can filter data per group by using the corresponding group's Filters collection.           The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the             Report's structure and the each group's properties.           
 
 # See Also
 
@@ -70,3 +68,4 @@ report1.Filters.Add(filter1)
  * [FilterCollection](/reporting/api/Telerik.Reporting.FilterCollection) 
 
  * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
+

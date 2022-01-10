@@ -20,4 +20,3 @@ position: 7
 | __enabled__ |Returns a bool value and can be used to find in what state the UI associated with the command should be.|
 | __checked__ |Returns a bool value and can be used to find in what state the UI associated with the command should be|
 
-

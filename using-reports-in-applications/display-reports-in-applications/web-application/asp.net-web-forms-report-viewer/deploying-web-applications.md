@@ -12,11 +12,9 @@ position: 7
 
 
 
->note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+> This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
 This article describes how to deploy Web Applications that use Telerik Reporting on a production server.
-
-## 
 
 During the installation of Telerik Reporting on your machine, the Telerik assemblies           were added to GAC. When deploying a Web Application project the assemblies from the GAC           are not copied automatically so you need to make sure the assemblies physically exist in the           __bin__  folder of your application.         
 

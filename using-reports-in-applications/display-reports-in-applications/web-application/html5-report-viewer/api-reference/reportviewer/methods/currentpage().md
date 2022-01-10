@@ -12,8 +12,6 @@ position: 6
 
 
 
-## 
-
 Gets the viewer’s current page that is displayed.         
 
 Returns: integer:         

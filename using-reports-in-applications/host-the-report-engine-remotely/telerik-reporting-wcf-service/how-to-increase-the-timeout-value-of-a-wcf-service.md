@@ -28,7 +28,7 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 </bindings>
 ````
 
->note The number 2,147,483,647 is the max value of a 32 bit signed integer.
+> The number 2,147,483,647 is the max value of a 32 bit signed integer.
 
 ## Timeouts on client binding
 

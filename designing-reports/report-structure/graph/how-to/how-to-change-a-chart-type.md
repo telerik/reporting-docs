@@ -25,3 +25,4 @@ When multiple series are displayed on a graph, you may want to change the chart 
 1. In the __Change Chart Type__  dialog box, select a chart type from the list.
 
 1. When you are done, click OK.
+

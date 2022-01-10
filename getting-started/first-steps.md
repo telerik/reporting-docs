@@ -79,3 +79,4 @@ The Getting Started guide includes the following articles:
 * [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
 
 * [How to Add Column Graph]({%slug telerikreporting/getting-started/how-to-add-column-graph%})
+

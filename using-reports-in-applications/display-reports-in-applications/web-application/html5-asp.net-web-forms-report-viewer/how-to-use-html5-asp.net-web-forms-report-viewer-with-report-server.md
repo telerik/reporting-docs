@@ -69,3 +69,4 @@ After finishing, the item template automatically do the following:
  * [How To: Use HTML5 ASP.NET Web Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
 
  * [How to: Add New Project Items](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))
+

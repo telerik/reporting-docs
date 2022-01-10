@@ -59,3 +59,4 @@ To apply the Style of report items dynamically Telerik Reporting uses Filter exp
  * [How to Add filtering to Table item and Crosstab item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-table-item-and-crosstab-item%})
 
  * [How to Add filtering to Graph item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item%})
+

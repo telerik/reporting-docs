@@ -32,7 +32,7 @@ Before you continue, make sure that the following prerequisites are met:
 
 The following steps produce an HTML page with settings similar to these of the local Html5Demo project           installed by default under __[TelerikReporting_InstallDir]\Examples__ :         
 
->note You must adapt all path references in the steps below              to your project setup. For more information, refer to the               [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)              MSDN article.           
+> You must adapt all path references in the steps below              to your project setup. For more information, refer to the               [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx)              MSDN article.           
 
 1. Create an HTML5 page:
 
@@ -225,3 +225,4 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 ````
 
 1. Run the project and navigate to the page with the HTML5 Report Viewer that we have just created.
+

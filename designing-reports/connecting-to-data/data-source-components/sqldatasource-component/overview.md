@@ -33,4 +33,5 @@ The __SqlDataSource__  component uses __ADO.NET__  classes to interact          
 
 * .NET Core 2.0 and above             
 
-* .NET Standard 2.0 and above             
+* .NET Standard 2.0 and above
+

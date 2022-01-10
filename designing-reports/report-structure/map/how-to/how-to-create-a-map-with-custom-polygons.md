@@ -60,3 +60,4 @@ In this article we demonstrated how to display custom-shaped polygons using     
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [How to Add ShapeMapSeries to the Map Item]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
+

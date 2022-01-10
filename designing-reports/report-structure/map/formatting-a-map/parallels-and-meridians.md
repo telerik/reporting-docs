@@ -48,3 +48,4 @@ You can change the parallels and meridians style by selecting the property and u
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+

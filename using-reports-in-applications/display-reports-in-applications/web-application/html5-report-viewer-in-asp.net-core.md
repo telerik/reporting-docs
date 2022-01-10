@@ -12,7 +12,7 @@ position: 7
 
 
 
->important The following article applies to .NET Core projects that target the  __full .NET Framework 4.0+__ .         If the project targets .NET Core 2.1+ please refer to the following articles:         
+> The following article applies to .NET Core projects that target the  __full .NET Framework 4.0+__ .         If the project targets .NET Core 2.1+ please refer to the following articles:         
 * [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%})
 *  [Using Telerik Reporting in .NET Core Applications](https://www.telerik.com/blogs/using-telerik-reporting-in-net-core-applications) 
 * [Manual Setup of HTML5 Report Viewer in an ASP.NET Core 2+ application.]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
@@ -33,7 +33,7 @@ If you need to have your ASP.NET Core Application targeting more platforms,     
 
 More details about hosting the Reporting REST Service are available in           [How to Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})           and [How to Self Host Telerik Reporting REST Web API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api%}).         
 
->warning You might exprience issues with displaying images in the report if using ASP.NET Core  __1.1.0__  due to the way the requests are handled.             It is recommended to upgrade to a newer version of ASP.NET Core -  [.NET Core releases](https://github.com/dotnet/core/releases) 
+> You might exprience issues with displaying images in the report if using ASP.NET Core  __1.1.0__  due to the way the requests are handled.             It is recommended to upgrade to a newer version of ASP.NET Core -  [.NET Core releases](https://github.com/dotnet/core/releases) 
 
 ## Prerequisites
 

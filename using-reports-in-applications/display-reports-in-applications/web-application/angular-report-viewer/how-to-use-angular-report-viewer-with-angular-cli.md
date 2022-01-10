@@ -39,7 +39,7 @@ The following list describes the prerequisites for this tutorial:
 
 ## Using Angular Report Viewer in Angular application
 
->tip All paths and url links in the described steps must be adapted according             to your project setup.           
+> All paths and url links in the described steps must be adapted according             to your project setup.           
 
 ###Steps:
 
@@ -144,6 +144,5 @@ ng serve
 
 # See Also
 
-# See Also
-
  * [Make sure the service address is correct and enable CORS](https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service)
+

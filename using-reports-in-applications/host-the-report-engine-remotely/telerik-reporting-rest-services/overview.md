@@ -16,7 +16,7 @@ The Telerik Reporting REST service provides an Application Programming Interface
 
 The primary usage of the service is in the         [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) ecosystem.         It leverages the pure client-side implementation of the viewer.       
 
->note You can use the Reporting REST service in a JavaScript application without the viewer.           Refer to the telerikReportViewer.ServiceClient class in the JavaScript API.         
+> You can use the Reporting REST service in a JavaScript application without the viewer.           Refer to the telerikReportViewer.ServiceClient class in the JavaScript API.         
 
 The service has several implementations targeting different         web service frameworks which are described in this chapter.       
 

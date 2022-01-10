@@ -10,22 +10,37 @@ position: 0
 
 # Using Expressions Overview
 
+This document provides a brief overview of all topics that we cover in the *Using Expressions* documentation section. With Telerik Reporting, you can use expressions to control multiple aspects of a report such as:       
 
+* The content           
 
-In Telerik Reporting, expressions are used throughout the report       definition to specify or calculate values for parameters, filters, report       item properties, group and sort definitions, text box properties, bookmarks,       document maps, dynamic page header and footer content, images,       and dynamic data source definitions. In the next topics provides examples       of the many places you can use expressions to vary the content or       appearance of a report. This list is not comprehensive.
+* The style and appearance           
 
-## In This Section
+* The behavior           
 
-* [Expressions property values]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties%})
+The following approaches allow you to control these report aspects:       
 
-* [Embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%})
+## Use an expression as a value for an item’s property
 
-* [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
+You can use an [expression as a value for an item’s property]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties%}). This allows you to easily customize your report.         
 
-* [Conditional formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%})
+## Embed expressions in a string literal
 
-* [Grouping/Filtering/Sorting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/grouping,-filtering-and-sorting%})
+Another way to customize your report is to use [Embedded Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}) so that you can blend text with expressions.         
 
-* [Report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/report-parameters%})
+## Bind an expression to a report item property
 
+Telerik Reporting allows you to [bind a report item’s property to an expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}). Use this approach if the property that you are interested in doesn’t support expression values by default.         
+
+## Use conditional formatting to apply various report styles
+
+Design your reports so that [different styles are applied]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) based on the data in the report. This is possible when you use an expression instead of a static value for the style properties of a report item.         
+
+## Use expressions as criteria for grouping, filtering, and sorting
+
+You can write expressions and use them to [group, filter, or sort data]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/grouping,-filtering-and-sorting%}).         
+
+## Combine values from multiple columns and use them as parameter values
+
+You can use an expression to combine values from multiple columns and use the result as [a value or a label for a parameter]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/grouping,-filtering-and-sorting%}).
 

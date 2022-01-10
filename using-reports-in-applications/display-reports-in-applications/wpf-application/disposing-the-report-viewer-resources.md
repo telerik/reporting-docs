@@ -26,9 +26,8 @@ In this scenario the WPF Report Viewer is hosted in a            [RadTabItem](ht
 
 In this scenario the WPF Report Viewer is hosted in a            [RadTabItem](https://docs.telerik.com/devtools/wpf/api/telerik.windows.controls.radtabitem)            that is being removed from its            [RadTabControl](https://docs.telerik.com/devtools/wpf/controls/radtabcontrol/overview2)            host.           Since the owner window is not closed, the disposal routine is not called and the report viewer doesn't release the occupied memory, because it holds a reference to its owner window.           In this scenario it is necessary to call the method  [DisposeViewerResources](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_DisposeViewerResources)  and make sure           the property  [AutoDisposeModel](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_AutoDisposeModel)  is set to its default value __true__ .           The disposal method can be called on            [Unloaded](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelement.unloaded)             event of either the viewer or the RadTabItem host.         
 
-## 
-
 The scenarios above are a few of the available variations of embedding the WPF Report Viewer in another control.            It is always advised to examine the memory consumption of the application and use the explicit methods of disposing the viewer resources if necessary.         
 
 # See Also
  * [AutoDisposeModel](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_AutoDisposeModel)  * [DisposeViewerResources](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_DisposeViewerResources)  * [DisposeModel](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_DisposeModel) 
+

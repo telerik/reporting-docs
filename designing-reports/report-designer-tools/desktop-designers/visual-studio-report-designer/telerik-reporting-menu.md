@@ -24,8 +24,9 @@ The __Telerik Reporting menu__  can be accessed whenever an area of the report d
 
 The "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%})" option is always available, while the other options are available __only when__  you are editing a Telerik Report in the Report Designer.       
 
->caution If the report designer is opened, but still only the "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%})" is visible, make sure the Report Designer is the active window i.e. it has focus.         
+> If the report designer is opened, but still only the "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%})" is visible, make sure the Report Designer is the active window i.e. it has focus.         
 
   
 
   ![TelerikVSMenu](images/TelerikVSMenu.png)
+

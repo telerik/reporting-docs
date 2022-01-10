@@ -44,4 +44,5 @@ Disregarding the data, which consists of the actual encoded data, along with the
 
   ![barcode-qrcode-blankspace](images/Barcodes/barcode-qrcode-blankspace.png)
 
-* __Data__ The data occupies all available modules, not occupied by any of the formatting data segments mentioned above.               If the data is smaller than the capacity of the remaining modules, it is padded, in order to ensure that all modules are used.               Additionally, the data consists of the actual encoded data, entered by the user, and the error correction bits, calculated on               that data.             
+* __Data__ The data occupies all available modules, not occupied by any of the formatting data segments mentioned above.               If the data is smaller than the capacity of the remaining modules, it is padded, in order to ensure that all modules are used.               Additionally, the data consists of the actual encoded data, entered by the user, and the error correction bits, calculated on               that data.
+

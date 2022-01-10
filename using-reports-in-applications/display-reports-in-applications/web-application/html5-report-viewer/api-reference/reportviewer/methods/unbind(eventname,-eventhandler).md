@@ -12,8 +12,6 @@ position: 17
 
 
 
-## 
-
 Unbinds event handlers from the specified event.         
 
     

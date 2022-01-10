@@ -46,7 +46,7 @@ However, the  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) 
 
 The Map series can share existing GeoLocation, ShapeMap and Series groups.
 
->note Although the Map series share common properties, a  __ShapeMapSeries__  can only use and share a  __ShapeMap groups__ .             The  __LocationMapSeries__  (PointMap, PieMap and ColumnMap) can only use and share a  __GeoLocation groups__ .           
+> Although the Map series share common properties, a  __ShapeMapSeries__  can only use and share a  __ShapeMap groups__ .             The  __LocationMapSeries__  (PointMap, PieMap and ColumnMap) can only use and share a  __GeoLocation groups__ .           
 
 ## Map Title
 
@@ -97,3 +97,4 @@ The Map item is not designed for scenarios where great precision is needed. The 
 # See Also
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+

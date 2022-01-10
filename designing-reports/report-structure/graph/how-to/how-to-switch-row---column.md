@@ -14,8 +14,6 @@ position: 11
 
 Each series data-representation is formed by both the Category and Series groups.         The CategoryGroups hierarchy defines the data points and the SeriesGroups hierarchy defines the runtime instances.        
 
-## 
-
 ###To switch the SeriesGroups and CategoryGroups of a Graph
 
 1. Select the graph in the designer.

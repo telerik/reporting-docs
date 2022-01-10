@@ -12,7 +12,7 @@ position: 8
 
 
 
->note The legacy https://nuget.telerik.com/nuget server will be deprecated. Make sure to switch to the new            https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client.         
+> The legacy https://nuget.telerik.com/nuget server will be deprecated. Make sure to switch to the new            https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client.         
 
 Telerik provides NuGet packages from private NuGet feed.          The article elaborates on how to add the Telerik NuGet feed to the Visual Studio NuGet package manager.        
 
@@ -21,8 +21,6 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 * Visual Studio 2010 or newer.
 
 * Valid Telerik Reporting trial or paid license.
-
-## 
 
 ###Setup
 

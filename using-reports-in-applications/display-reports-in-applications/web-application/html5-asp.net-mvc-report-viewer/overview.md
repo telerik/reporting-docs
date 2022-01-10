@@ -34,4 +34,5 @@ The extension is based on the [HTML5 Report Viewer]({%slug telerikreporting/usin
 
 ## Examples
 
-You can find a complete sample project with the HTML5 MVC Report Viewer in the Telerik Reporting installation path. For example,           __C:\Program Files (x86)\Progress\Telerik Reporting {VERSION}\Examples\CSharp\MvcDemo__ .         
+You can find a complete sample project with the HTML5 MVC Report Viewer in the Telerik Reporting installation path. For example,           __C:\Program Files (x86)\Progress\Telerik Reporting {VERSION}\Examples\CSharp\MvcDemo__ .
+

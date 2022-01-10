@@ -14,8 +14,6 @@ position: 1
 
 The following example illustrates how to use a __DataTable__  as the        source for an __ObjectDataSource__  component. The code below additionally        creates a calculated field that can be used in the report definition in        the same way as a regular field.
 
-## 
-
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=HowToBindToDataTableSnippet}}
 ````C#
 void Form2_Load(object sender, EventArgs e)

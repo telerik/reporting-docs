@@ -12,8 +12,6 @@ position: 3
 
 
 
-## 
-
 The various report __Section__  objects expose these events:         
 
 | Event | Description |
@@ -23,7 +21,7 @@ The various report __Section__  objects expose these events:
 
 In ItemDataBinding and ItemDataBound events use the "sender" argument of the event handler to get a           reference to the section object. From the section object you can reference any of the items the section contains,           i.e. TextBoxes, PictureBoxes, etc. You can also use the section DataObject property to access the data fields           for the section.         
 
->tip Be aware that the "sender" section object is of type              __Telerik.Reporting.Processing.ReportItemBase__ , not the             definition item  __Telerik.Reporting.ReportItemBase__ .           
+> Be aware that the "sender" section object is of type              __Telerik.Reporting.Processing.ReportItemBase__ , not the             definition item  __Telerik.Reporting.ReportItemBase__ .           
 
 The example below demonstrates getting a reference to the detail section of the report and finding a specific           TextBox within the section. The example also shows retrieving data source column values for the section and           using it to alter the TextBox. 
 

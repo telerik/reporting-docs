@@ -12,8 +12,6 @@ position: 0
 
 
 
-## 
-
 The *ReportViewer*  object is created through the [jQuery.fn.telerik_ReportViewer()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) function:                    
 
     

@@ -14,8 +14,6 @@ position: 0
 
 The SQL Data Source Wizard allows you to create a new or edit an existing SqlDataSource component in the Telerik Web Report Designer.         This article describes the SQL Data Source Wizard that you can invoke from the Report Designer toolbox.       
 
-## 
-
 1. __Choose data connection__ Select an existing connection from the list of connections or specify a new connection.               The __Select from existing data connections__  option has a drop-down list               with the available predefined connection strings, for example:             
 
    + Local connection strings from the application configuration file and the                    [ISettingsStorage](/reporting/api/Telerik.WebReportDesigner.Services.ISettingsStorage) .                 

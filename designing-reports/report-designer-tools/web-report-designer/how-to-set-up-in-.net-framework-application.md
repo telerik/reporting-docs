@@ -26,7 +26,7 @@ The following list describes the prerequisites for this guide:
 
 When you use NuGet packages, the dependencies will be automatically resolved . Otherwise, you need to add them manually to the project.           For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).         
 
->note If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the              [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)              and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions,             see [Deploying Open XML](25b584e0-8dd7-4cfd-8878-ffe5e0a95ad4#deploying_open_xml_sdk_for_ms_office).           
+> If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the              [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)              and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions,             see [Deploying Open XML](25b584e0-8dd7-4cfd-8878-ffe5e0a95ad4#deploying_open_xml_sdk_for_ms_office).           
 
 ## Setting up the Report Designer REST service:
 

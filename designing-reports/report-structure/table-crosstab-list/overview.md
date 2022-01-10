@@ -34,7 +34,7 @@ Of course, you are not limited to your initial template choice. As you add grou
 
 You can continue to develop a Table, crossTab, or List by adding any table feature. Table features include displaying detail data or aggregates for grouped data on rows and columns. You can create nested groups, independent adjacent groups, or recursive groups. You can filter and sort grouped data, and easily combine groups by including multiple group expressions in a group definition.
 
->caution [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections ([PageHeaderSection/PageFooterSection]({%slug telerikreporting/designing-reports/overview%})), because the latter are processed             after the report data has been processed. At this moment the report data source is not available anymore.           
+> [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections ([PageHeaderSection/PageFooterSection]({%slug telerikreporting/designing-reports/overview%})), because the latter are processed             after the report data has been processed. At this moment the report data source is not available anymore.           
 
 ## Context Menu
 
@@ -59,3 +59,4 @@ Choosing a dynamic group from the           [             Group             Expl
 [Understanding Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
 
 [Understanding table Cells, Rows and Columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})
+

@@ -12,8 +12,6 @@ position: 15
 
 
 
-## 
-
 The event occurs before a tooltip is opened, providing the ability to cancel its opening.
 
 Parameters:

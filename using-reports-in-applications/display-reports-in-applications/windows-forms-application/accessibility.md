@@ -44,7 +44,7 @@ End Sub
 
 All the accessibility messages and labels support localization. You can modify them, following the procedure, described           [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}).         
 
->note Please note that the meta-information, added to the report content when the accessibility is enabled, might result in a small performance penalty,             especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
+> Please note that the meta-information, added to the report content when the accessibility is enabled, might result in a small performance penalty,             especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
 
 ## Supported accessibility features in WinForms report viewer
 
@@ -82,6 +82,5 @@ For example, if a report contains a __TextBox__  with `Value = "Sorts by Categor
 
 * When a disabled toolbar button is selected, its accessible properties are not output to the screen reader.             
 
-* When the focus is within a multiselect parameter, the current item state (checked/unchecked) is not output to the screen reader.             
-
+* When the focus is within a multiselect parameter, the current item state (checked/unchecked) is not output to the screen reader.
 

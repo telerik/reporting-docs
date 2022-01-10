@@ -61,3 +61,4 @@ The [Web Report Designer]({%slug telerikreporting/designing-reports/report-desig
 * The Web Report Designer works with TRDP and TRDX report definitions
 
 * There is a built-in report previewer
+

@@ -66,8 +66,6 @@ After finishing, the item template automatically do the following:
 
 Although the fastest and most convenient way to get a working HTML5 viewer in your application is to use the Visual Studio item templates,           the same result can be achieved using manual configuration.         
 
-###
-
 1. Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) article to get your HTML5 viewer working.                   Examine the produced HTML page and especially the section that configures the viewer:                 
 
     
@@ -146,3 +144,4 @@ The most common reasons for failure are related with the authentication against 
  * [Telerik Report Server](http://docs.telerik.com/report-server/introduction)
 
  * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
+

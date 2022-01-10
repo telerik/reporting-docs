@@ -28,8 +28,6 @@ To create a new report with this wizard:
 
    + Select the __Band Report Wizard__  option from the list and click __OK__ .               
 
-## 
-
 * On the __Choose Data Source page__  of the               Report Wizard, select __Add New Data Source.__ 
 
 * The [DataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}) is started. Select the __[SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})__                icon and click the OK button.             
@@ -91,4 +89,5 @@ From here you can continue with the following quickstart tutorials:
 
 * [How to extend a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-extend-a-band-report%}) -               to include [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}), [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%}) and [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report items.               This topic also introduces in-place editing, copying               and pasting styles, using the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) and [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}).             
 
-* [Displaying Reports in WinForms Report Viewer]({%slug telerikreporting/quickstart/displaying-reports-in-winforms-report-viewer%}) - to create               Windows application to display the reports.             
+* [Displaying Reports in WinForms Report Viewer]({%slug telerikreporting/quickstart/displaying-reports-in-winforms-report-viewer%}) - to create               Windows application to display the reports.
+

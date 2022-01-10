@@ -72,3 +72,4 @@ There are three cases in which this error message occurs:
 
 1. Check for global styles defined in the application which affect the page with the report viewer and conflict with the report viewer's styles.
             Remove any style declarations from the page. Make sure the global style rules do not affect HTML elements directly, but are applied through the CssClass property.
+

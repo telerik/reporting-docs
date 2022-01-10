@@ -20,7 +20,7 @@ The styles of the series items relate and affect each other in a hierarchical wa
 
 The Area and the Line series have an additional pair of properties named respectively AreaStyle/LineStyle and ConditionalFormatting.           They affect the way the series is drawn, defining the line color, style and width, and the background color for the Area Series.         
 
->note For example, if the series DataPoints have its  __Style.LineWidth__  property set to  __5pt__ , this will             affect the line width of the DataPoint markers and the legend item marker. But if the legend item's  __MarkStyle.LineWidth__  property             is set to  __2pt__ , then the legend item marker will be drawn with 2pt wide line, because the series's style property will be overriden.           
+> For example, if the series DataPoints have its  __Style.LineWidth__  property set to  __5pt__ , this will             affect the line width of the DataPoint markers and the legend item marker. But if the legend item's  __MarkStyle.LineWidth__  property             is set to  __2pt__ , then the legend item marker will be drawn with 2pt wide line, because the series's style property will be overriden.           
 
 ## Formatting data points
 
@@ -90,7 +90,7 @@ You can select a palette or define a custom palette. Custom palettes are report-
 
 ###To change the series using a built-in color palette
 
->note             The built-in series are only available in the standalone report designer.          
+>             The built-in series are only available in the standalone report designer.          
 
 1. Click the chart series that you want to change.    The ribbon context tab __Graph Tools.Design__  is activated.                 
 
@@ -128,3 +128,4 @@ If you are using a custom color palette, you can change the order of the colors 
  * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 
  * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) * [GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries) 
+

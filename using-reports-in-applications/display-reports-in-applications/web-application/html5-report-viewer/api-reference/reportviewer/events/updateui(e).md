@@ -12,8 +12,6 @@ position: 11
 
 
 
-## 
-
 Parameters:
 
 | Parameter | Description |
@@ -34,3 +32,4 @@ $(function () {
 ````
 
 ## Event Binding
+

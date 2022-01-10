@@ -75,7 +75,7 @@ Report groups are defined by adding __Group__  objects to the report’s __Group
 
 1. Click Ok twice to close the Edit Grouping and Group Collection dialogs.
 
->note You can add a group to the Report item by using the grouping pane in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) as well. To do so right click on the detail and select  __Add Parent Group__ . If there are existing groups, you can create Parent or Child groups by right clicking on any of the existing groups. 
+> You can add a group to the Report item by using the grouping pane in the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) as well. To do so right click on the detail and select  __Add Parent Group__ . If there are existing groups, you can create Parent or Child groups by right clicking on any of the existing groups. 
 
 ## Edit a group in a Report using Report Designer
 
@@ -184,3 +184,4 @@ report1.Groups.Add(group1)
  * [Report](/reporting/api/Telerik.Reporting.Report) 
 
  * [Groups](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_Groups) 
+

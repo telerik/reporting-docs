@@ -16,8 +16,6 @@ In this article we will show you how to create a Column chart using the Graph it
 
   ![Column Chart\Column Chart](images/Graph/ColumnChart.png)
 
-## 
-
 1. Add a new graph item to the report.
 
    1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ .                 

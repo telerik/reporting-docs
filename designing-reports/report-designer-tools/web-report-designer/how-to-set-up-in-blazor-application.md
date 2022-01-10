@@ -12,7 +12,7 @@ position: 2
 
 
 
->important The following article guides you how to use the Blazor Web Report Designer in a                      [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)                      web application.                 
+> The following article guides you how to use the Blazor Web Report Designer in a                      [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)                      web application.                 
 
 ## Prerequisites
 
@@ -149,4 +149,5 @@ public class ReportDesignerController : ReportDesignerControllerBase
                    PropertiesArea="new PropertiesAreaOptions() { Layout = PropertiesAreaLayout.Categorized }" />
 ````
 
-1. The __Report__  option will instruct the designer to look for *SampleReport.trdp*  inside                             __wwwroot/Reports__  on first load.                             You can create this report definition in the folder or omit the __Report__  option above.                             Finally, run the project.                         
+1. The __Report__  option will instruct the designer to look for *SampleReport.trdp*  inside                             __wwwroot/Reports__  on first load.                             You can create this report definition in the folder or omit the __Report__  option above.                             Finally, run the project.
+

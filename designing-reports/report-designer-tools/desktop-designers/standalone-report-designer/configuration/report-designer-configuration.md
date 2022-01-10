@@ -54,10 +54,9 @@ This section lets you specify the working directory of the Report Designer via a
 </Telerik.ReportDesigner>
 ````
 
-## 
-
 # See Also
 
  * [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%})
 
  * [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
+

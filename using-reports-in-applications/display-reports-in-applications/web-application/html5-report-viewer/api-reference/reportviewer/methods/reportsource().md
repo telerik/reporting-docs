@@ -12,8 +12,6 @@ position: 12
 
 
 
-## 
-
 Gets the current report source - report and parameters.
 
 Returns: an object with properties:

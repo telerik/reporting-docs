@@ -12,8 +12,6 @@ position: 19
 
 
 
-## 
-
 Sets the view mode and automatically reloads the current report (if any) into the new view.
 
 Parameters:

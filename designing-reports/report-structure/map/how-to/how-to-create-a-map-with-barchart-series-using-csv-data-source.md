@@ -14,9 +14,7 @@ position: 7
 
 In this how-to article we will show you how to create a Map which will present the          [countries with the most medals won in Olympic Games](http://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table)           divided by their continental          [Association of National Olympic Committees](http://www.olympic.org/ioc-governance-national-olympic-committees) .         We will also add some interactivity to the report, giving the user the option to choose which countries to be displayed         on the map, highlighting the currently selected country and displaying an additional chart with         detailed information about it. We will be using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})         to demonstrate how such a complex report can be done without writing any code.       
 
->important This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.           If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.           For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.         
-
-## 
+> This article assumes that you have obtained a valid  __Location Provider key__  to authenticate your geocoding requests.           If you don't want to use a location provider, you need to provide the geographical coordinates of your points yourself and setup the MapSeries accordingly.           For more information please take a look at the [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) article.         
 
 1. Start the Map Wizard:
    + If you create a new report, select the __Map Wizard__  icon from the __Available Templates__  page.                   
@@ -196,3 +194,4 @@ You can download this example report as a __.trdx__  report definition from the 
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})
+

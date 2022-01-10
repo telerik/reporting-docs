@@ -28,7 +28,7 @@ In the most cases the solution is to set the Scale step properties to be automat
 
 Additionally you can choose not to render the axis elements, so the axis validation will not occur. For labels you can set their           __LabelPlacement__  to __None__ , for major and minor ticks you can set their __TickMarkDisplayType__            to __None__  and for the grid lines you can change their __Style.Visible__  property to __False__ .         
 
->note When you work with discrete values - DatetimeScale, NumericalScale, LogarithmicScale,             you need at least two data points to have a properly calculated axis range and visible data.             Setting the Scale's Minimum and Maximum properties can resolve issues related to insufficient data.             To have the axis range set based on data, you can use the approach from             [How to: Use Bindings to Control the Coordinate System Properties]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties%}).           
+> When you work with discrete values - DatetimeScale, NumericalScale, LogarithmicScale,             you need at least two data points to have a properly calculated axis range and visible data.             Setting the Scale's Minimum and Maximum properties can resolve issues related to insufficient data.             To have the axis range set based on data, you can use the approach from             [How to: Use Bindings to Control the Coordinate System Properties]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties%}).           
 
 ## Format Axis Labels as Dates or Currencies
 
@@ -85,3 +85,4 @@ Please note that using this feature means that some of the scale properties like
 # See Also
 
  * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) * [GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)  * [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)  * [LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)  * [Scale](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_Scale)  * [Scale](/reporting/api/Telerik.Reporting.Scale)  * [MajorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MajorStep)  * [MinorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MinorStep) 
+

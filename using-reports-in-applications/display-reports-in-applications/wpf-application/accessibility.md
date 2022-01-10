@@ -18,7 +18,7 @@ Telerik Reporting aims to provide a reporting solution accessible to a wider use
 
 The accessibility features are enabled or disabled using a Boolean dependency property named           __EnableAccessibility__ . When the property is set to __true__ , the XAML renderer produces enriched markup for the report content           and the report viewer controls’ behavior is changed so they respond differently to the user’s input. The default value of this property is __false__ .           This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__            is set to __true__ , the exported PDF will be created according to            [               PDF/UA (ISO standard 14289-1)             ](https://en.wikipedia.org/wiki/PDF/UA)            specification.         
 
->warning The accessibility routines access the report viewer parts through the theme template  __Telerik.ReportViewer.Wpf.xaml__ .              In case you have modified the template, the accessibility features might be affected or disabled.           
+> The accessibility routines access the report viewer parts through the theme template  __Telerik.ReportViewer.Wpf.xaml__ .              In case you have modified the template, the accessibility features might be affected or disabled.           
 
 The accessibility routines capture the keyboard events to provide shortcut key access to the viewer areas.           It is possible some of these shortcuts to interfere with the designed application behavior.           In this case the keys mapping can be changed through the property            [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.Wpf#Telerik_ReportViewer_Wpf_AccessibilityKeyMap) ,           which provides access to the internal dictionary of keycodes and shortcut definitions.           The code snippets below demonstrate how to change the default shortcut for navigating to the menu area:         
 
@@ -50,7 +50,7 @@ Since the accessibility uses the theme template, the modification of the accessi
 
 All the accessibility messages and labels support localization. You can modify them, following the procedure, described           [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}).         
 
->note Please note that the additional markup, added to the report content when the accessibility is enabled, might result in a small performance penalty,             especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
+> Please note that the additional markup, added to the report content when the accessibility is enabled, might result in a small performance penalty,             especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
 
 ## Supported accessibility features in WPF report viewer
 
@@ -88,6 +88,5 @@ For example, if a report contains a __TextBox__  with `Value = "Sorts by Categor
 
 * When a disabled toolbar button is selected, its accessible properties are not output to the screen reader.             
 
-* When the focus is within a multiselect parameter, the current item state (checked/unchecked) is not output to the screen reader.             
-
+* When the focus is within a multiselect parameter, the current item state (checked/unchecked) is not output to the screen reader.
 

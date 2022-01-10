@@ -35,4 +35,3 @@ To create a new report with the wizard:
 | __Choose Report Layout__ |Choose from a list of predefined layouts to quickly structure the reports visual representation. See the __Description__ and __Preview__ window to get a rough idea of how the report will be laid out.<br/>            Select the __Adjust report items to fit available space__ checkbox to have columns take all the horizontal area available. Unselect this checkbox if you want to add other columns by hand later and need the columns to take less horizontal space.<br/>            Check the __Generate sub-totals__ to have subtotals created at group footers. Appropriate functions are used based on the data type of the column, i.e. Sum() for numeric Count() for other types.|
 | __Choose Report Style__ |Select from a predefined list of report styles to give your report a polished look. The preview widow provides  a general idea of what a finished report will look like|
 
-

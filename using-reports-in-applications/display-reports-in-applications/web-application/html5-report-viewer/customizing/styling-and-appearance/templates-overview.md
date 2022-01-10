@@ -14,8 +14,6 @@ position: 1
 
 The article elaborates on the structure of the HTML template file of the HTML5 Report Viewer.         The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation -         [Installation Directories](6E821131-83F3-45A4-BB6E-1530223D1E38#directories-and-asemblies).       
 
-## 
-
 The default viewer's template is divided into 3 areas:
 
 * the Pages Area that is responsible for displaying the report pages, viewer’s status and error messages;
@@ -50,4 +48,5 @@ If such function exists, it is invoked onto the HTML element (that owns the data
 
 * __templates__  - an object that contains all templates loaded for the current report viewer instance.               The id of the template is used as a property’s name, and the value is the template HTML content.             
 
-Using this completely declarative approach of describing the viewer’s layout and behavior allows users to easily tweak any parts of it           by simply modifying the templates. Following the above pattern, one can create its own data-role and extend the default viewer behavior.         
+Using this completely declarative approach of describing the viewer’s layout and behavior allows users to easily tweak any parts of it           by simply modifying the templates. Following the above pattern, one can create its own data-role and extend the default viewer behavior.
+

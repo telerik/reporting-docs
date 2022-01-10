@@ -31,3 +31,4 @@ Depending on where the Sorting is applied – to a data item or a group – it m
 * A sorting applied to a data item sets the order of the detail data thus resulting on the order of appearance of the detail rows (including the DetailSection and detail groups). As the First and Last aggregate functions depend on the order of the data they operate with, they may return different values depending on the data items’ sorting.
 
 * A sorting applied to a group sets the order of the members of this group thus resulting on the order of appearance of the rows/columns depending on if this is a row or column group.
+

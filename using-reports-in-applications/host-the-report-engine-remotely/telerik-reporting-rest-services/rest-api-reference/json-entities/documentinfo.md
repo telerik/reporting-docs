@@ -14,8 +14,6 @@ position: 1
 
 Document info indicating the status of the document resource.       
 
-## 
-
     
           {
             ‘documentReady’: true,
@@ -52,5 +50,4 @@ Document info indicating the status of the document resource.
 |`pageCount`|`Number`|`true`|An integer representing the count of the physical pages that are currently available|
 |`documentMapAvailable`|`Boolean`|`false`|Indicates whether document map is available to be displayed|
 |`bookmarkNodes`|`Array`|`false`|An array of[BookmarkNode]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/bookmarknode%})objects supporting the document map and the NavigateToBookmark interactive action|
-
 

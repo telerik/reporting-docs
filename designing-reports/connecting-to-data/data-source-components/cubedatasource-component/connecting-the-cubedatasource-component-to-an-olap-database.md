@@ -14,8 +14,6 @@ position: 2
 
 When you configure a __CubeDataSource__  you set the __ConnectionString__                  property to a connection string that includes information required to connect to the database. Specifying an                 appropriate connection string requires at least a server name and database (catalog) name. For information on                 valid connection strings see the __ConnectionString__  property topic for the __AdomdConnection__  class.             
 
-## 
-
 The sample code below illustrates how to connect a __CubeDataSource__  component to                     the __Adventure Works DW 2008R2__  sample database:                 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CubeDataSourceSnippets.cs region=ConnectionStringSnippet}}

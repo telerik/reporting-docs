@@ -88,11 +88,10 @@ Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode
 
 # See Also
 
-# See Also
-
  * [          Swiss Implementation Guidelines QR-bill (PDF)
         ](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
 
  * [Telerik.Reporting.Barcodes.SwissQRBillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRBillData) 
 
- * [Telerik.Reporting.Barcodes.SwissQRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder) 
+ * [Telerik.Reporting.Barcodes.SwissQRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder)
+

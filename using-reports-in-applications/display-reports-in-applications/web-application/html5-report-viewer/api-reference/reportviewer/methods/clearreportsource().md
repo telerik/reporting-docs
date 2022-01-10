@@ -12,8 +12,6 @@ position: 5
 
 
 
-## 
-
 Clears the current reportSource from the viewer internal state and from its persisted session in the browser. Called in order to force the viewer to respect the newly set reportSource on a server postback.         
 
 Returns: a reference for the reportViewer object.

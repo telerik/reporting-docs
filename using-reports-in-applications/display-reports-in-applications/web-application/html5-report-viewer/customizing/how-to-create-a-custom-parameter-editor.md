@@ -14,8 +14,6 @@ position: 3
 
 The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.       
 
-## 
-
 Custom parameter editors are defined through the parameterEditors ([Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})) array passed as an option when creating the report viewer widget.           Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration.         
 
 Each editor is an object which contains two methods: __match__  and __createEditor__ .         
@@ -100,8 +98,9 @@ Passing the parameter editor to the viewer:
 </script>
 ````
 
->tip You can use any other custom UI covering the requirements of the createEditor method.
+> You can use any other custom UI covering the requirements of the createEditor method.
 
 # See Also
 
  * [How To: Pass Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-pass-values-to-report-parameters%})
+

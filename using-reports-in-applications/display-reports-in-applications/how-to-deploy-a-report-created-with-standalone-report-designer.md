@@ -123,3 +123,4 @@ The only thing left to do is assign the resulting report sources to the report v
  * [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
 
  * [Previewing a report definition that uses an external assembly](http://www.telerik.com/support/kb/reporting/report-viewers/deploying-trdx-that-uses-external-assembly.aspx)
+

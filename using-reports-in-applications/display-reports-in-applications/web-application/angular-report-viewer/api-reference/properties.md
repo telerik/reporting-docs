@@ -53,4 +53,3 @@ The following table is a list of all commands:
 |toggleSideMenu|none|Shows or hides the side menu.|
 |toggleSearchDialog|none|Shows or hides the search dialog|
 
-

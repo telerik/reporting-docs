@@ -14,8 +14,6 @@ position: 1
 
 In this article we will show you how to create a Scatter chart using the __Graph item__  in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).       
 
-## 
-
 1. Add a new graph item to the report.
 
    1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ .                 

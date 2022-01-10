@@ -14,8 +14,6 @@ position: 1
 
 The CSV Data Source Wizard allows you to create a new or edit an existing CsvDataSource component in the Telerik         Web Report Designer. This article describes the steps you can follow after the wizard appears, after being invoked         from the Report Designer toolbox.       
 
-## 
-
 1. __Choose a CSV source__ Select how the CSV source should be retrieved for the component.             
 
    + __Upload CSV file__  from the local computer                 

@@ -20,8 +20,6 @@ This event is meant to be used only for providing data source to the report. Onc
 
 Below is an example that illustrates how to provide data source to the __Report__  item using the         __Report.NeedDataSource__  event.       
 
-## 
-
     
 ````cs
 private void Report1_NeedDataSource(object  sender, System.EventArgs e)
@@ -60,3 +58,4 @@ End Sub
  * [OpenAccessDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview%})
 
  * [CubeDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%})
+

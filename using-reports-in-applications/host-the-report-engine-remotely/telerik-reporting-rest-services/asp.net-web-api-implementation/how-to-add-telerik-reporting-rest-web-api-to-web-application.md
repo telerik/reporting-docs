@@ -114,3 +114,4 @@ GlobalConfiguration.Configuration.EnableCors();
 # See Also
 
  * [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
+

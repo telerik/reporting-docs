@@ -14,8 +14,6 @@ position: 7
 
 After the EntityDataSource wizard appears you have to perform the following steps:
 
-## 
-
 1. __Choose your data connection__ In this step you have to specify a data connection for the __EntityDataSource__  component.               There are two possible options for specifying the data connection:             
 
    + __Choose an existing data connection__  – selecting this option allows you to                   specify an existing data connection stored in the configuration file of the current                   project from the drop-down list.                 
@@ -46,4 +44,5 @@ After the EntityDataSource wizard appears you have to perform the following step
 
    >Specifying design time values for the parameters is necessary because the designer might need to execute the                 methods in order to populate the schema displayed in the  __Data Explorer__  tool window and the  __Edit Expression__  dialog. These values do not affect the execution of the methods at runtime however.               
 
-This is the last step of the wizard. After pressing the __Finish__  button the wizard will configure the           __EntityDataSource__  component with the specified settings and close.         
+This is the last step of the wizard. After pressing the __Finish__  button the wizard will configure the           __EntityDataSource__  component with the specified settings and close.
+

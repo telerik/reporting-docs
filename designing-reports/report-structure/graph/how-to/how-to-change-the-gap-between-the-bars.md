@@ -16,8 +16,6 @@ Normally the gap is automatically calculated based on the data and chart area.  
 
 This property defines the ratio between the empty space per single data slot and the space that the datapoints will occupy when placed in it.         The processing engine calculates how many data slots will be created on the axis, depending on the used scale and groupings.         Then, using the formula `Empty Space = SpacingSlotCount * DataPoint_SlotWidth` (where the         `DataPoint_SlotWidth` is the width of a single data point), the engine calculates the empty space         for each slot. Half of the empty space is placed at the beginning of the slot, the other half is placed at the end and the data points         are arranged in the remaining space, adjacent to each other.       
 
-## 
-
 The following pictures show how the column chart would look like with different values for the            [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount)  property:         
 
 |  <br/>  ! [Category Scale Spacing Slot Count 1](images/Graph/CategoryScale_SpacingSlotCount_1.png)|  <br/>  ! [Category Scale Spacing Slot Count 1a](images/Graph/CategoryScale_SpacingSlotCount_1a.png|
@@ -50,10 +48,9 @@ To change the __Scale.SpacingSlotCount__  property, follow these steps:
 
 # See Also
 
-# See Also
-
  * [How to: change the space between chart's series](http://www.telerik.com/support/kb/reporting/details/how-to-change-the-space-between-charts-series)
 
  * [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) 
 
- * [Scale](/reporting/api/Telerik.Reporting.Scale) 
+ * [Scale](/reporting/api/Telerik.Reporting.Scale)
+

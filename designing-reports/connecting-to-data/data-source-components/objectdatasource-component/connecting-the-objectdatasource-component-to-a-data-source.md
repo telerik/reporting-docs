@@ -14,8 +14,6 @@ position: 1
 
 The purpose of the ObjectDataSource component is to provide business objects data to data items in a declarative manner.         The  [ObjectDataSource.DataSource](https://docs.telerik.com/reporting/p-telerik-reporting-objectdatasource-datasource)  property should be the  [assembly qualified name](https://msdn.microsoft.com/en-us/library/30wyt9tk)  or the Type of the data access layer (class),         where the reporting engine will use *System.Reflection*  to create the instance of the class         by using its default constructor, and to execute its method specified by the *ObjectDataSource.DataMember*  property.       
 
-## 
-
 When you configure the ObjectDataSource component the settings below are obligatory to avoid runtime error due to failed data retrieval:
 
 * Visual Studio is a 32-bit application, so the report designer is restricted to x86 mode even on x64 platforms, which prevents               the [ObjectDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard%}) from discovering any types from x64 assemblies. The solution is to use different platform configurations: for "__Debug__ "               builds it is best to use "__Any CPU__ ", while for "__Release__ " builds you can use "__x64__ " instead.             
@@ -109,4 +107,5 @@ The additional attributes like __version__ , __culture__  and __publicKeyToken__
 
 ## Sample
 
-Sample report that uses Object DataSource can be found at the installation folder of Telerik Reporting:               C:\Program Files (x86)\Progress\Telerik Reporting __{Version}__ \Examples\CSharp\ReportLibrary\DataBinding             
+Sample report that uses Object DataSource can be found at the installation folder of Telerik Reporting:               C:\Program Files (x86)\Progress\Telerik Reporting __{Version}__ \Examples\CSharp\ReportLibrary\DataBinding
+

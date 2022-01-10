@@ -55,9 +55,7 @@ filter1.Value = "=10"
 table1.Filters.Add(filter1)
 ````
 
-## 
-
->tip The Table/Crosstab/List item has a complex [structure]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%}) built by Rows and Column groups,             where each group has its own Filters.             If you need to limit column, add filters to the corresponding column groups. If you need to limit rows, add filters to the corresponding row groups.           The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the             Table/Crosstab/List item's Row and Column groups.           
+> The Table/Crosstab/List item has a complex [structure]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%}) built by Rows and Column groups,             where each group has its own Filters.             If you need to limit column, add filters to the corresponding column groups. If you need to limit rows, add filters to the corresponding row groups.           The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the             Table/Crosstab/List item's Row and Column groups.           
 
 # See Also
 
@@ -68,3 +66,4 @@ table1.Filters.Add(filter1)
  * [FilterCollection](/reporting/api/Telerik.Reporting.FilterCollection) 
 
  * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
+

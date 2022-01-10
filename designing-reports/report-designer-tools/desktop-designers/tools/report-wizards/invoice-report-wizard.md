@@ -46,4 +46,5 @@ Invoices are one of the most common business documents, that’s why their prepa
 
   ![Invoice Wizard 5 Summary](images/Templates/Invoice/InvoiceWizard_5_Summary.png)
 
-1. When you are all set, you can click Finish and the designer will load the produced invoice report, ready to be used.                If you have setup the data sources and field mappings properly, you should just click __Preview__  and your invoice will be displayed.             
+1. When you are all set, you can click Finish and the designer will load the produced invoice report, ready to be used.                If you have setup the data sources and field mappings properly, you should just click __Preview__  and your invoice will be displayed.
+

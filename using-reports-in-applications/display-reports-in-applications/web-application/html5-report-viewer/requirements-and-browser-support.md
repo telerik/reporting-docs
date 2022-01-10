@@ -118,3 +118,4 @@ List of Browsers covering the above requirements includes:
    + Internet Explorer 10+ for Windows Phone
 
    + BlackBerry 7.0+ touchscreen devices
+

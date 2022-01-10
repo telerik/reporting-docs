@@ -26,7 +26,7 @@ The accessibility script captures the keyboard events to provide shortcut key ac
 
 The accessibility script supports localization. You can modify its message and label strings, following the procedure, described           [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}).         
 
->note Please note that all the dynamically provided markup, added when the accessibility is enabled,             might result in a small performance penalty, especially on machines with outdated hardware.             For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
+> Please note that all the dynamically provided markup, added when the accessibility is enabled,             might result in a small performance penalty, especially on machines with outdated hardware.             For best experience we recommend to enable the accessibility features conditionally according to your user's needs.           
 
 ## Supported accessibility features in HTML5-based viewers
 
@@ -73,4 +73,5 @@ Most of the currently known issues are due to the fact that the widely used scre
 |Chrome|JAWS|Toggle visibility actions are not executed.|
 |Internet Explorer, Edge|Narrator|Document map items are not read|
 
-Note that software vendors consistently upgrade and improve their products, so any of the above issues can be fixed by a third-party program update.         
+Note that software vendors consistently upgrade and improve their products, so any of the above issues can be fixed by a third-party program update.
+

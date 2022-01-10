@@ -16,8 +16,6 @@ The easiest way to create a Graph is with our [graph wizard]({%slug telerikrepor
 
 If you choose not to use the graph wizard and you want to create graphs by yourself our         recommendation is to review [Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})          and [Connecting to Data]({%slug telerikreporting/designing-reports/report-structure/graph/connecting-to-data%}) help articles.         Then check out the following table that shows the basic configuration for each chart type:       
 
-## 
-
 | Chart | Series Groups | Categories Groups | Coordinate Systems | Series |
 | ------ | ------ | ------ | ------ | ------ |
 | __ [Area]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/how-to-create-area-chart%})__|

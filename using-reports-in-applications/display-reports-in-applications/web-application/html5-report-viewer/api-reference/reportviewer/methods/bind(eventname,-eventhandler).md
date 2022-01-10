@@ -12,8 +12,6 @@ position: 4
 
 
 
-## 
-
 Binds event handlers to the specified event.         
 
     

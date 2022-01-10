@@ -14,8 +14,6 @@ position: 3
 
 You can specify an __MDX__  query for the __CubeDataSource__                  component to execute by setting its __SelectCommand__  property.             
 
-## 
-
 The following example demonstrates an __MDX__  query that retrieves a result                     set consisting of product sales grouped by category and subcategory:                 
 
     

@@ -12,7 +12,7 @@ position: 6
 
 
 
->note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
+> This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
 ## Accessing the client-side report viewer object
 
@@ -34,5 +34,4 @@ The __ReportViewer__  control creates a client-side object with the __ClientID__
 |PrintAs(format)| __format:__ <br/>*  __"PDF":__ uses the Adobe PDF Reader add-on.<br/>*  __"Default":__ uses the default printing capabilities of the browser.|Forces the viewer to print the document according to the specified print *format* .|
 |ShowDocumentMap()||Shows the DocumentMap|
 |HideDocumentMap()||Hides the DocumentMa|
-
 

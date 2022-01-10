@@ -63,3 +63,4 @@ Preview the result by clicking __Preview__  > __PrintPreview__ .
 * [First Steps]({%slug telerikreporting/getting-started/first-steps%})
 
 * [Creating the Demo Report]({%slug telerikreporting/getting-started/creating-the-demo-report%})
+

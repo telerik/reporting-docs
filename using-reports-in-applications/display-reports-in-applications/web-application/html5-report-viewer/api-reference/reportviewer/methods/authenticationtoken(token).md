@@ -12,8 +12,6 @@ position: 3
 
 
 
-## 
-
 Sets the authentication token.
 
 Parameters:

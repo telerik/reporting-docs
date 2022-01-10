@@ -24,7 +24,7 @@ The __Interactive View__  is a logical layout that removes the strict restrictio
 
 The paging mechanism of the __Interactive View__  is based on soft page breaks, where the report is optimized for screen-based viewing and delivery. In other           words, you could have a two-page long table which to appear in a single continuous form on the client with a vertical scroll bar           (logical layout); when printed, the table will print on two separate sheets of paper (print layout).         
 
->note The Interactive layout is the default report layout which users see. You can control the default layout via the ViewMode             property of the respective report viewer. In Interactive preview items like the Table/List/Crosstab are rendered into a single continuous page.           
+> The Interactive layout is the default report layout which users see. You can control the default layout via the ViewMode             property of the respective report viewer. In Interactive preview items like the Table/List/Crosstab are rendered into a single continuous page.           
 
 ## Print Preview
 
@@ -35,3 +35,4 @@ The paging in __Print Preview__  layout is calculated based on the page settings
  * [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})
 
  * [Design Considerations for Report Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%})
+

@@ -14,9 +14,7 @@ position: 4
 
 The __CubeDataSource__  component supports parameterized __MDX__          queries by associating the parameters you add to the __Parameters__  collection with         placeholders in the query. Parameter values can be evaluated with any expression which conforms to the         common expression syntax supported by the reporting engine. This grants you a great deal of flexibility         on how you can supply your __MDX__  queries with parameters. For example, you can         bind an __MDX__  query parameter directly to a report parameter.       
 
->note The [CubeDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard%}) can detect parameters listed           in the MDX query, and it will ask you to provide values for them at  __Configure Data Source Parameters__  step.         
-
-## 
+> The [CubeDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard%}) can detect parameters listed           in the MDX query, and it will ask you to provide values for them at  __Configure Data Source Parameters__  step.         
 
 When creating a parameterized query, you identify the parameter name by prefixing the name with the           *"@"*  character. For example, *"@Year"*  would           be a valid parameter name. __MDX__  supports only parameters for literal or scalar           values. To create a parameter that references a member, set, or tuple, you would have to use a function           such as __StrToMember__  or __StrToSet__ . To illustrate this,           let us define a simple __MDX__  query that selects product sales grouped by category           and subcategory, and define a slicing axis by year, where the chosen year is specified as a parameter.           Since the *"@Year"*  parameter is passed as a string literal value, we need           to use the __StrToMember__  function to convert that value to a valid member of           the cube as shown below:         
 

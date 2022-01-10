@@ -16,7 +16,7 @@ There are particular settings that can be applied to the Telerik Reporting engin
 
 __.NET Core applications__  provide another way of storing configuration - a key-value JSON-based file named         __appSettings.json__ .         For __.NET Core console applications__  both configuration types are supported,         but __appSettings.json__  has precedence over __app.config__ .         __ASP.NET Core applications__  no longer use *web.config*  so the configuration should be set to any of the supported          [key-value based files](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2) .       
 
->important For more information about configuring a .NET application, see            [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/) .         
+> For more information about configuring a .NET application, see            [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/) .         
 
 ## Telerik Reporting Configuration Layout
 
@@ -191,3 +191,4 @@ The JSON-based configuration structure used in __appSettings.json__  or other ke
  * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
 
  * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
+

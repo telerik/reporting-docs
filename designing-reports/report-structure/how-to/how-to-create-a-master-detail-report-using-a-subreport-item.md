@@ -106,5 +106,5 @@ This next set of steps ties both reports together using a SubReport to display t
 
   ![](images/MasterDetail0016.png)
 
->The same report layout can be created with the Standalone Report Designer, where sub reports can be specified             by path to a TRDX file or by directly placing the sub report's XML in the provided SubReport.ReportSource editor.           
+>The same report layout can be created with the Standalone Report Designer, where sub reports can be specified             by path to a TRDX file or by directly placing the sub report's XML in the provided SubReport.ReportSource editor.
 

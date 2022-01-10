@@ -62,4 +62,5 @@ A row is either static or dynamic. A static row is not associated to a group. Wh
 
 A dynamic row is associated to one or more groups. A dynamic row renders once for every unique group value for the           innermost group. Cells in a dynamic row are scoped to the innermost row group and column group to which the cell belongs.         
 
-Dynamic detail rows are associated with the details group that is automatically created when you add a table or list           to the design surface. By definition, the details group is the innermost group for a table. Cells in detail rows display           detail data.         
+Dynamic detail rows are associated with the details group that is automatically created when you add a table or list           to the design surface. By definition, the details group is the innermost group for a table. Cells in detail rows display           detail data.
+

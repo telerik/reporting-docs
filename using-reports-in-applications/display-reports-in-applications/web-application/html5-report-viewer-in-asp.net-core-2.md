@@ -12,7 +12,7 @@ position: 8
 
 
 
->important The following article applies to .NET Core projects that target the  __full .NET Framework 4.0+__ .         If the project targets .NET Core 2.1+ please refer to the following articles:         
+> The following article applies to .NET Core projects that target the  __full .NET Framework 4.0+__ .         If the project targets .NET Core 2.1+ please refer to the following articles:         
 * [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%})
 *  [Using Telerik Reporting in .NET Core Applications](https://www.telerik.com/blogs/using-telerik-reporting-in-net-core-applications) 
 * [Manual Setup of HTML5 Report Viewer in an ASP.NET Core 2+ application.]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
@@ -76,7 +76,7 @@ For another *.NET Framework*  (for example *4.7.1* ) the value should be changed
 
 ASP.NET Core does not support references to assemblies, but instead works with NuGet packages.         
 
->important If the project refers  __Microsoft.AspNetCore.All__  package the latter should be removed from  *Dependencies->NuGet*  - right click on the package and select 'Remove'.           In this case the following packages should be added manually to the project - right click on the project and select 'Manage NuGet Packages...':           
+> If the project refers  __Microsoft.AspNetCore.All__  package the latter should be removed from  *Dependencies->NuGet*  - right click on the package and select 'Remove'.           In this case the following packages should be added manually to the project - right click on the project and select 'Manage NuGet Packages...':           
 *  __Microsoft.AspNetCore__ 
 *  __Microsoft.AspNetCore.Mvc__ >
 

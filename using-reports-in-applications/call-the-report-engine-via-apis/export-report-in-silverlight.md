@@ -18,7 +18,7 @@ To specify that you want to render the report we use the          [Telerik.Repor
 
 Since we’ve used an asynchronous method and we do not know when the render would finish, we need to handle the          [Telerik.Reporting.Service.SilverlightClient.ReportServiceClient.RenderCompleted](/reporting/api/Telerik.Reporting.Service.SilverlightClient.ReportServiceClient#Telerik_Reporting_Service_SilverlightClient_ReportServiceClient_RenderCompleted)            event. In the RenderCompleted event we get the result from the rendering and decide what to do with it -  in this case write down the report.       
 
->note We invoke the       [ShowDialog](http://msdn.microsoft.com/en-us/library/system.windows.controls.savefiledialog.showdialog(VS.95).aspx)        method prior to having the rendered report, because the dialog box, can only be called from user-initiated code, such as a button Click event. If ShowDialog is called from code that is not user-initiated, a SecurityException is thrown.         
+> We invoke the       [ShowDialog](http://msdn.microsoft.com/en-us/library/system.windows.controls.savefiledialog.showdialog(VS.95).aspx)        method prior to having the rendered report, because the dialog box, can only be called from user-initiated code, such as a button Click event. If ShowDialog is called from code that is not user-initiated, a SecurityException is thrown.         
 
     
 ````C#
@@ -94,3 +94,4 @@ End Class
 
 # See Also
  * [Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/reporting/api/Telerik.Reporting.Service.SilverlightClient.ReportServiceClient) 
+

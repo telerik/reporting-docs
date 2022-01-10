@@ -31,4 +31,3 @@ To start the report conversion:
 | __Report Converter Page__ |Choose from a list of the available converters.|
 | __Report Conversion Summary__ |This page lets you review the conversion summary.<br/>            Click Finish to continue with the report setup|
 
-

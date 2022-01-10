@@ -36,11 +36,11 @@ When you use NuGet packages, you may add only the __Telerik.WebReportDesigner.Se
 
 If you don't use NuGet packages, along with the above assemblies, you need to add also all their dependencies manually to the project.         
 
->note If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the              [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)              and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions,             see [Deploying Open XML](25b584e0-8dd7-4cfd-8878-ffe5e0a95ad4#deploying_open_xml_sdk_for_ms_office).           
+> If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the              [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)              and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions,             see [Deploying Open XML](25b584e0-8dd7-4cfd-8878-ffe5e0a95ad4#deploying_open_xml_sdk_for_ms_office).           
 
 ## Add Required Settings in the Startup.cs file
 
->note Some of the Visual Studio template projects, like .NET 5 Web API project, have the required settings already added             by default. In the empty .NET Core 3.1 and .NET 5 Web projects you need to add manually the settings.           
+> Some of the Visual Studio template projects, like .NET 5 Web API project, have the required settings already added             by default. In the empty .NET Core 3.1 and .NET 5 Web projects you need to add manually the settings.           
 
 1. The __ConfigureServices__  method inside the __Startup.cs__  in the project               should be modified in order to enable the Web Report Designer Service functionality. Make sure the application                is configured for WebAPI controllers and call the *AddNewtonsoftJson*                to place the NewtonsoftJson serialization:             
 
@@ -211,6 +211,5 @@ Find the complete example setup of the Web Report Designer in a .NET Core 3.1 ap
 
 # See Also
 
-# See Also
-
  * [YouTube video "How to set up a Telerik Web Report Designer in .NET 5?"](https://www.youtube.com/watch?v=6HXU-3awhis)
+

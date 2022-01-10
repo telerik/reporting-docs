@@ -24,7 +24,7 @@ Telerik Reporting WCF Service exposes two contracts:
 
 * The  [Telerik.Reporting.Service.IResourceService](/reporting/api/Telerik.Reporting.Service.IResourceService)                - all its exposed operations should be accessed through HTTP GET request only             
 
->warning The default  __Telerik Reporting WCF Service__  implementation uses ASP.NET Session in order to store various resources such as report pages             and images. When ran out of web context (e.g. self-hosted service), it uses internal session storage. To make your own implementation, create your own service class derived from  [ReportServiceBase](/reporting/api/Telerik.Reporting.Service.ReportServiceBase)              and override its  [GetState](/reporting/api/Telerik.Reporting.Service.ReportServiceBase#Telerik_Reporting_Service_ReportServiceBase_GetState_System_String_)  and  [SetState](/reporting/api/Telerik.Reporting.Service.ReportServiceBase#Telerik_Reporting_Service_ReportServiceBase_SetState_System_String_System_Object_)  methods.           
+> The default  __Telerik Reporting WCF Service__  implementation uses ASP.NET Session in order to store various resources such as report pages             and images. When ran out of web context (e.g. self-hosted service), it uses internal session storage. To make your own implementation, create your own service class derived from  [ReportServiceBase](/reporting/api/Telerik.Reporting.Service.ReportServiceBase)              and override its  [GetState](/reporting/api/Telerik.Reporting.Service.ReportServiceBase#Telerik_Reporting_Service_ReportServiceBase_GetState_System_String_)  and  [SetState](/reporting/api/Telerik.Reporting.Service.ReportServiceBase#Telerik_Reporting_Service_ReportServiceBase_SetState_System_String_System_Object_)  methods.           
 
 The service main purpose is to provide access for the Silverlight Report Viewer to the reporting engine. There are 3 methods of Telerik.Reporting.Service.IReportService that may be of interest to you:         
 
@@ -51,3 +51,4 @@ For more information on deploying a Silverlight application that utilizes Teleri
  * [How to Enable SSL for Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-enable-ssl-for-telerik-reporting-wcf-service%})
 
  * [How to Implement and use custom IReportResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%})
+

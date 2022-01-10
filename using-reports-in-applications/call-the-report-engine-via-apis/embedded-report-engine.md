@@ -120,7 +120,7 @@ If Not result.HasErrors Then
 End If
 ````
 
->note When you export programmatically to  __XPS__ , you should use a separate STA thread which is             required by the underlying WPF UI elements that we use to create the XAML representation of the report.           
+> When you export programmatically to  __XPS__ , you should use a separate STA thread which is             required by the underlying WPF UI elements that we use to create the XAML representation of the report.           
 
 ## Exporting a report to a multi document format
 
@@ -235,3 +235,4 @@ End Function
 
 # See Also
  * [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) 
+

@@ -60,6 +60,4 @@ When the return status is `Accepted/Created` the body contains a document identi
           HTTP/1.1 202 Accepted
 
           “5x3a”
-        
-
 

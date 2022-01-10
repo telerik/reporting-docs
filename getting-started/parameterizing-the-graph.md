@@ -14,8 +14,6 @@ position: 7
 
 This article is part of the Demo report guide on getting started with Telerik Reporting.         It demonstrates how to add a report parameter and change the __graphDataSource__  of the graph         so that the user can select a year based on which the graph will display the top five stores.       
 
-## 
-
 1. Add a new SqlDatasource component for the graph with the following query:             
 
     
@@ -79,3 +77,4 @@ Preview the result by clicking __Preview__  > __PrintPreview__ .
 * [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
 
 * [Integrating the Report in .NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
+

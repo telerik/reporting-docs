@@ -14,8 +14,6 @@ position: 6
 
 After the __OpenAccessDataSource__  wizard appears you have to perform the following steps:       
 
-## 
-
 1. __Choose your data connection__ In this step you have to specify a data connection for the __OpenAccessDataSource__  component. Choose an               existing connection from the list or click *"New Connection"*  to create a new connection to your               database. The *"Connection String"*  text area displays a read-only information about the selected               connection string.             
 
 1. __Save the connection string__ This step appears only if you have specified a new connection string in the previous one. Choose *"Yes, save the connection with the following name"*  to store the connection string in the application configuration file under a               specific name. Type a name for the connection or use the provided default name if applicable.             
@@ -34,4 +32,5 @@ After the __OpenAccessDataSource__  wizard appears you have to perform the follo
 
    >The names and types of the defined parameters should match exactly the arguments of the selected method.                 In case this requirement is not fulfilled the  __OpenAccessDataSource__  component will not be able to resolve or call                 correctly the method and will raise an exception at runtime.               
 
-This is the last step of the wizard. After pressing the __Finish__  button the wizard will configure the           __OpenAccessDataSource__  component with the specified settings and close.         
+This is the last step of the wizard. After pressing the __Finish__  button the wizard will configure the           __OpenAccessDataSource__  component with the specified settings and close.
+

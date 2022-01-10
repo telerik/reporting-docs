@@ -32,10 +32,9 @@ The most important characteristics of the Swiss QR barcode are listed below:
 
 # See Also
 
-# See Also
-
  * [          Swiss Implementation Guidelines QR-bill (PDF)
         ](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
 
  * [          Swiss QR Code validator
         ](https://www.swiss-qr-invoice.org/validator/)
+

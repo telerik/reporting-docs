@@ -53,6 +53,4 @@ __Response Body__
             ‘PageCount’: 2,
             ‘DocumentMapAvailable’: false,
           }
-        
-
 

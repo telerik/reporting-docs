@@ -21,4 +21,3 @@ position: 2
 |SINGLE_PAGE|
 |CONTINUOUS_SCROL|
 
-

@@ -22,8 +22,6 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
 ## Configuring the WPF Report Viewer to work with REST Service
 
-###
-
 1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
 
 1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__  property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection dialog should appear:                   
@@ -64,7 +62,7 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
 1. Build and run your application. If your settings are configured correctly, you should see the report displayed in the report viewer of your WPF application.                   If not, check the                   [Troubleshooting](#Troubleshooting) section below.                 
 
->important When setting  [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection)  with code, make sure you call             the  [RefreshReport](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_RefreshReport) () method             or set the  [ReportSource](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportSource)  property afterwards,             so the connection's new value will be respected.           
+> When setting  [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection)  with code, make sure you call             the  [RefreshReport](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_RefreshReport) () method             or set the  [ReportSource](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportSource)  property afterwards,             so the connection's new value will be respected.           
 
 ## Troubleshooting
 
@@ -81,3 +79,4 @@ The following table shows the most common reasons for failure when using the Tel
  * [How to Use WPF Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%})
 
  * [How to Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) * [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)  * [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  * [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo) 
+

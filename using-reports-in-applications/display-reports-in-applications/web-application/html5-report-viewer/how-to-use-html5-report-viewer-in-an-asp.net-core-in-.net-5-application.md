@@ -98,6 +98,5 @@ A full example can be found in the installation folder of Telerik Reporting: C:\
 
 # See Also
 
-# See Also
-
  * [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)
+

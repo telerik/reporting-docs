@@ -53,4 +53,3 @@ For example, consider the simplified data in the example diagram below. The data
 
   ![](images/DesignGrouping013.png)
 
-

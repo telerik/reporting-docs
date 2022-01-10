@@ -55,3 +55,4 @@ Instead, you can create __templates__  with initial settings like configured dat
 [Use DataObject as a datasource for nested data items (data-binding via expressions)](50936e55-b122-4378-8abd-4031e7ae713d#DataObjectAsDataSource)
 
  * [How to Databind to Collection Properties (data-binding via expressions)](http://www.telerik.com/support/kb/reporting/details/how-to-databind-to-collection-properties)
+

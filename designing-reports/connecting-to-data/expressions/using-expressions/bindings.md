@@ -35,3 +35,4 @@ When constructing a Binding instance with Binding constructor, you must specify:
  * [Telerik.Reporting.Binding](/reporting/api/Telerik.Reporting.Binding) 
 
  * [Telerik.Reporting.BindingCollection](/reporting/api/Telerik.Reporting.BindingCollection) 
+

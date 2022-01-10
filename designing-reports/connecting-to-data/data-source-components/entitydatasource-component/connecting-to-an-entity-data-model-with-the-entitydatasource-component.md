@@ -18,8 +18,6 @@ This section discusses how to connect the __EntityDataSource__  component to an 
 
   ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
-## 
-
 The simplest way to configure __EntityDataSource__  in __Report Designer__  is to use            the [EntityDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%}). That wizard is started automatically when you create a new __EntityDataSource__ , but you can invoke            it manually at any time from the context menu associated with the data source by choosing __"Configure"__ :
 
   
@@ -134,6 +132,6 @@ Dim report As New Report1()
 report.DataSource = entityDataSource
 ````
 
->note The names and types of the parameters in the  __Parameters__  collection should match exactly the names and      types of the method arguments. In case this requirement is not fulfilled the  __EntityDataSource__  component will      not be able to resolve or call correctly the method and will raise an exception at runtime.
+> The names and types of the parameters in the  __Parameters__  collection should match exactly the names and      types of the method arguments. In case this requirement is not fulfilled the  __EntityDataSource__  component will      not be able to resolve or call correctly the method and will raise an exception at runtime.
 
 

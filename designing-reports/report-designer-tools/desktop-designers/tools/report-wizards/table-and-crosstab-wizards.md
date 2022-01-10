@@ -24,6 +24,5 @@ __Step 3:__  Arrange Fields (Table Wizard is on the right. It allows for adding 
 
 __Step 4:__  Choose Layout.       
 
-__Step 5:__  Choose Style and Finish the wizard.       
-
+__Step 5:__  Choose Style and Finish the wizard.
 

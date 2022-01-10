@@ -43,3 +43,4 @@ To achieve better appearance, the Map item can define a [Tile Provider]({%slug t
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+

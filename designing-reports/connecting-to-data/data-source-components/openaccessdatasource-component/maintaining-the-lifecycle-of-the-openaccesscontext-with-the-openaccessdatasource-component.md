@@ -18,8 +18,6 @@ This section discusses how to maintain the lifecycle of the __OpenAccessContext_
 
   ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
-## 
-
 One possible approach to connect to a __Telerik Data Access Model__  without using the __OpenAccessDataSource__  component            is to create a custom business object with a method that retrieves the necessary entities for the report.            The sample code below defines a method that retrieves information about all products:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=SampleObjectSnippet}}

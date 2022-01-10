@@ -41,4 +41,5 @@ export class AppComponent {
 }
 ````
 
-For a complete list of event handler options please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}).         
+For a complete list of event handler options please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}).
+

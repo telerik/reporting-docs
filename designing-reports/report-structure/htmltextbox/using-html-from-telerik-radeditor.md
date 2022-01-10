@@ -14,8 +14,6 @@ position: 2
 
 The __HtmlTextBox__  works with text formatting options only                 (a subset of HTML tags and CSS attributes), which are available for the sole purpose of styling                 labels and headers. The unsupported tags/css attributes have to be filtered in order to avoid exceptions.                 The purpose of this article is to outline how to accomplish this when the __HTML__                  data entry tool is  [RadEditor for ASP.NET AJAX.](http://www.telerik.com/products/aspnet-ajax/editor.aspx) 
 
-## 
-
 Two things should be considered:                 
 
 * limit the options in the RadEditor's toolbar

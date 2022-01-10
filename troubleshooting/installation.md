@@ -50,4 +50,5 @@ __Solution.__
 
 __Cause.__            The [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) as well as all Telerik Reporting Wizards and Designers           are not designed to handle website projects because websites handle assembly references in a diffreent way.         
 
-__Solution.__            Manually add viewers or upgrade the website. Design reports in an external `ClassLibrary` project           that is referenced by the website project. For more information, refer to the article on           [upgrading Telerik Reporting projects]({%slug telerikreporting/upgrade/overview%}).         
+__Solution.__            Manually add viewers or upgrade the website. Design reports in an external `ClassLibrary` project           that is referenced by the website project. For more information, refer to the article on           [upgrading Telerik Reporting projects]({%slug telerikreporting/upgrade/overview%}).
+

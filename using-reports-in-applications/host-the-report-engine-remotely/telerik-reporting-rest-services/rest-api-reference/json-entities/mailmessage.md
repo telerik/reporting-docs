@@ -14,8 +14,6 @@ position: 8
 
 Mail message        
 
-## 
-
     
           {
           'from': 'john.doe@mycompany.com',
@@ -35,5 +33,4 @@ Mail message
 |`cc`|`string`|`false`||
 |`subject`|`string`|`false`||
 |`body`|`string`|`false`||
-
 

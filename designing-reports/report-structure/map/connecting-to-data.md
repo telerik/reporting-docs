@@ -40,10 +40,11 @@ The ShapeMapSeries, used in the Choropleth map, does not use the series group hi
 
 When working with map series,           it is often useful to have a way to determine the current data point coordinates and display them on a label or use them in conditional formatting rule.           The evaluation engine provides a way to do so using the special expression `"= Location"`.           The evaluation result is an instance of type  [Location](/reporting/api/Telerik.Reporting.Location)            and its `Longitude` and `Latitude` properties can be accessed directly.           Also, when the selected component in the report designer is  [MapSeriesBase](/reporting/api/Telerik.Reporting.MapSeriesBase) ,           the __Edit Expression dialog__  will include three *Location*            entries in its *Fields*  collection: *Location* ,           *Location.Latitude*  and *Location.Longitude* .         
 
->important When using  __ShapeMapSeries__  that obtain their geospatial information from a  __ShapeFile__ ,             the processing engine will automatically generate two virtual fields in the resulting composite data set:             `"Location.Latitude"` and `"Location.Longitude"` that serve the same purpose - to use the             coordinates of the data point centroid in expressions.           
+> When using  __ShapeMapSeries__  that obtain their geospatial information from a  __ShapeFile__ ,             the processing engine will automatically generate two virtual fields in the resulting composite data set:             `"Location.Latitude"` and `"Location.Longitude"` that serve the same purpose - to use the             coordinates of the data point centroid in expressions.           
 
 # See Also
 
  * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
  * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+

@@ -30,9 +30,10 @@ Note that anchoring and docking are really effective only when the container can
 
 * A PictureBoxitem with auto sizing enabled (PictureBox.SizingMode= AutoSize) can grow to fit the bigger image when needed.
 
->note 
+> 
 
 Anchor and Dock both require parent item to have KeepTogether turned on (KeepTogether=true). They cannot work with KeepTogether=false, as they are bound to the container in some way.
 
 # See Also
  * [Anchoring](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Anchoring)  * [Docking](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Docking) 
+

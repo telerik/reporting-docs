@@ -12,9 +12,7 @@ position: 0
 
 
 
->note This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
-
-## 
+> This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
 The ReportViewer control uses the __ASP.NET session state__  to preserve the report instance that is displayed,           between page postbacks and different viewer operations. The session state, however, can be configured to run in different modes.           By default it uses the memory of the worker process (InProc mode) and the report instance stays intact. However, in some cases           it is more appropriate to use a __StateServer, SqlServer or Custom__  session state mode. All of these modes are referred to as out-proc           session state modes. The biggest difference between the two modes is that the session variables have to be serialized and deserialized           when the session state is preserved and restored. In this case the serialization process imposes the following limitations which have to           be considered when designing Telerik reports:         
 
@@ -119,3 +117,4 @@ More info about the differences between different state modes you can find in th
  * [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%})
 
  * [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
+

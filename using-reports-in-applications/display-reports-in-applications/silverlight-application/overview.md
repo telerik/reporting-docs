@@ -16,8 +16,6 @@ The Silverlight Report Viewer allows developers to deliver reports produced by 
 
   ![](images/SilverlightViewer1.png)
 
-## 
-
 The toolbar on the Silverlight Report Viewer provides basic functionality for interacting with the currently-loaded report:
 
 * Navigate back in history
@@ -58,8 +56,6 @@ The toolbar on the Silverlight Report Viewer provides basic functionality for i
 
 *  [Telerik.ReportViewer.Silverlight.ReportViewer.UseNativePrinting](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_UseNativePrinting)                - Specifies whether to use native Silverlight printing or [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print%}). Default value is true.             
 
-## 
-
 In order to use our Silverlight Report Viewer, you need a Silverlight application. In order to create such, you need the following tools installed:
 
 ## System Requirements
@@ -72,13 +68,13 @@ In order to use our Silverlight Report Viewer, you need a Silverlight applicati
 
 * (optional) Expression Blend
 
->note The Silverlight ReportViewer requires the Telerik Reporting WCF Service. For more information: [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}).           
+> The Silverlight ReportViewer requires the Telerik Reporting WCF Service. For more information: [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}).           
 
 ## How it works
 
 The Silverlight ReportViewer control is a composite of Telerik UI for Silverlight controls.           The viewer's functionality resides in Telerik.ReportViewer.Silverlight.dll and the viewer's UI in Telerik.ReportViewer.Silverlight.xaml.         
 
->note The Silverlight ReportViewer control's template can be modified trough the corresponding theme's [ Telerik.ReportViewer.Silverlight.xaml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/setting-a-theme-(using-implicit-styles)%}) file             and the Silverlight  [ReportViewer](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer) .           
+> The Silverlight ReportViewer control's template can be modified trough the corresponding theme's [ Telerik.ReportViewer.Silverlight.xaml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/setting-a-theme-(using-implicit-styles)%}) file             and the Silverlight  [ReportViewer](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer) .           
 
 The purpose of the Silverlight ReportViewer control is to display Telerik Reports and allow the user to interact with them.            Reports are processed and rendered on the server where __Telerik Reporting engine__  and            __Telerik WCF service__  run. The __Telerik Reporting WCF Service__  serves reports           to the Silverlight ReportViewer, and is responsible for managing the reports state and their resources as images.           The report in the viewer is rendered as standard XAML elements, as Canvas and TextBlock,           through Telerik Reporting XAML for Silverlight rendering mechanism.         
 
@@ -87,3 +83,4 @@ The purpose of the Silverlight ReportViewer control is to display Telerik Report
  * [How to Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%})
 
  * [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%})
+

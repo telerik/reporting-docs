@@ -12,6 +12,5 @@ position: 1
 
 
 
-## 
-
 The Telerik Forum,           [http://www.telerik.com/community/forums.aspx](http://www.telerik.com/community/forums.aspx) , is a hub to communicate and consult with other Telerik community members.
+

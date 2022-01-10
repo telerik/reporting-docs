@@ -148,3 +148,4 @@ An example project is available in the Telerik Reporting installation directory 
  * [How to Add report viewer to a Windows Forms' .NET Core project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project%})
 
  * [How to Add report viewer to a WPF .NET Core project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
+

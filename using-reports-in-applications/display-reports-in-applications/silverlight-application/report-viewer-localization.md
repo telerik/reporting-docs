@@ -228,10 +228,9 @@ End Class
 
 # See Also
 
-# See Also
-
  * [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
 
  * [Silverlight Globalization and Localization Overview](http://msdn.microsoft.com/en-us/library/cc838238(v=vs.95).aspx)
 
  * [Security and Localized Satellite Assemblies](http://msdn2.microsoft.com/en-us/library/ff8dk041(VS.71).aspx)
+

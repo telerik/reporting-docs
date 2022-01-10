@@ -30,7 +30,7 @@ You can also use the LegendItem's ConditionalFormatting and MarkConditionalForma
 
 You can change the legend items text style by selecting the legend and with __Property Browser__  change __Style__  properties.         
 
->note If you are using the standalone report designer you can take advantage of the graph tools in the ribbon's Design and Format tabs.           
+> If you are using the standalone report designer you can take advantage of the graph tools in the ribbon's Design and Format tabs.           
 
 1. Click the graph legend that you want to change.    The selected legend properties are listed in the __Property Browser__ .                 
 
@@ -84,3 +84,4 @@ The legend can be absolutely or automatically sized.           If the Height or 
 
 # See Also
  * [GraphLegend](/reporting/api/Telerik.Reporting.GraphLegend)  * [Legend](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Legend) 
+

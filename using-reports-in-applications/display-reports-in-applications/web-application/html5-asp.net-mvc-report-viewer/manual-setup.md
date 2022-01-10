@@ -47,7 +47,7 @@ Depending on the used Visual Studio project template CSS and JS files can be lin
 
 The following steps produce a view with settings similar to these of the local MvcDemo project,           installed by default under __[TelerikReporting_InstallDir]\Examples__ .           The structure used in this tutorial is view that uses a layout page.         
 
->tip All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
+> All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
 1. Create new ASP.NET MVC 4|5 Web Application.
 

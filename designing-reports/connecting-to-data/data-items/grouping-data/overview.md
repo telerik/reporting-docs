@@ -14,8 +14,6 @@ position: 0
 
 In Telerik Reporting, data items can aggregate and summarize data, display         it in visual hierarchies or create different views, thus helping the user/         decision maker understand and analyze data in a more efficient manner.       
 
-## 
-
 In Telerik Reporting, groups are named sets of data that are bound to           a data item. You specify groups by defining their names and grouping           criteria (expression).         
 
 To create a grouping expression you add Grouping objects to the           __Grouping__  collection. The set of group           expressions can be a single data field reference or a combination of           multiple expressions. At runtime, group expressions are combined and           applied together to the data.         
@@ -63,3 +61,4 @@ __Chart__  – use the __DataGroupColumn__  to define the name of the field to g
  * [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
 
  * [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})
+

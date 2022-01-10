@@ -18,8 +18,6 @@ This section discusses how to maintain the lifecycle of the __ObjectContext/DbCo
 
   ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
-## 
-
 One possible approach to connect to an __Entity Data Model__  without using the __EntityDataSource__  component            is to create a custom business object with a method that retrieves the necessary entities for the report.            The sample code below defines a method that retrieves information about all products:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=SampleObjectSnippet}}

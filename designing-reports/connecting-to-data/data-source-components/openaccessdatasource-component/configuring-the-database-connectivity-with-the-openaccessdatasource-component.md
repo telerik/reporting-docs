@@ -18,8 +18,6 @@ This section discusses how to specify a database connection to the __OpenAccessD
 
   ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
-## 
-
 Strictly speaking, it is not necessary to specify a database connection when working with the            __OpenAccessDataSource__  component. Simply specifying an __OpenAccessContext__  and a member is enough to connect to            the __Telerik Data Access Model__ , because the __OpenAccessContext__  is already configured to access the database. The            following code snippet shows the minimum code necessary to setup the __OpenAccessDataSource__  component:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=PropertyBindingSnippet}}
@@ -85,7 +83,7 @@ openAccessDataSource.ObjectContext = GetType(AdventureWorksEntities)
 openAccessDataSource.ObjectContextMember = "Products"
 ````
 
->note Specifying an inline connection string directly to the  __ConnectionString__  property of the       __OpenAccessDataSource__  component is not recommended, because it might be difficult to maintain all your reports      later, when that connection string changes. The recommended approach is to always specify the name of an      existing connection string stored in the configuration file. When specifying a connection string form a      configuration file it is important to understand which configuration file is used at design-time or when      running the report in production. For example, let us consider the following simplified structure of a      business application:  
+> Specifying an inline connection string directly to the  __ConnectionString__  property of the       __OpenAccessDataSource__  component is not recommended, because it might be difficult to maintain all your reports      later, when that connection string changes. The recommended approach is to always specify the name of an      existing connection string stored in the configuration file. When specifying a connection string form a      configuration file it is important to understand which configuration file is used at design-time or when      running the report in production. For example, let us consider the following simplified structure of a      business application:  
 
   ![](images/DataSources/BusinessApplicationStructure.png)The above schema assumes that the different parts of the business application are represented as      separate projects in the solution, each with its own configuration file. Initially, when you create the       __Telerik Data Access Model__  in the  __Business Logic__  project, the connection string is stored automatically in the      configuration file of that project. Later, when creating new reports in the  __Report Library__  project, you need      to add the connection string to the configuration file of that project, because this is where  __Report Designer__      searches for existing connection strings. Finally, when deploying your application or web site in production,     you need to add the connection string to the configuration file of your  __Main Application__ .
 

@@ -12,8 +12,6 @@ position: 0
 
 
 
-## 
-
 The Visual Studio Report Designer is dedicated to editing CLR/type report definitions (i.e. CS or VB files) in the Visual Studio environment.            The Visual Studio designer is available only under __.NET framework__ .            Due to technical limitations we do not yet provide one for *.NET Core* .
 
 To start/open the designer, double click on an existing CS/VB file containing the report definition or right click on it and select "View Designer".            If there is no such file, you may create it using the Add --> New Item --> Telerik Report *version*             (from the *Reporting*  menu of the wizard).
@@ -81,3 +79,4 @@ The Visual Studio Report Designer features also *Properties Explorer* ,         
 # See Also
 
  * [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%})
+

@@ -63,6 +63,4 @@ When the return status is `OK` the response body contains a JSON array of [Searc
             "id":"a082030a03fa4e349abe183d161a35ea",
             "page":1
           }
-        
-
 

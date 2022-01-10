@@ -12,8 +12,6 @@ position: 5
 
 
 
-## 
-
 Occurs after the report is exported and before the E-mail message is sent.
 
 Parameters:
@@ -41,3 +39,4 @@ $(function () {
 ````
 
 ## Event Binding
+

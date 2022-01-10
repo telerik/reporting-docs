@@ -12,8 +12,6 @@ position: 2
 
 
 
-## 
-
 Behavior can be added to HTML DOM elements either with *data-*  attributes or through the [commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}) property of the report viewer.         
 
 The *data-*  attributes give a lot of flexibility to the application since commands can be attached to HTML elements            only by adding a *data-command*  attribute along with a *data-target-report-viewer*  to target the specific report viewer            (since there can exist multiple report viewers on a single page):         
@@ -77,4 +75,5 @@ The following table is a list of all available commands for the *data-command*  
 | __Word Document__ |DOCX|
 | __XPS Document__ |XP|
 
-Depending on the report and the history of browsed reports some of the buttons might be disabled and others toggled.            The commands automatically keep track of their state, but if custom widgets are used this state will not be displayed properly.            Therefore a disabledButtonClass and checkedButtonClass can be provided to the report viewer upon initialization -            these classes will be added when the custom button is disabled or toggled, respectively.         
+Depending on the report and the history of browsed reports some of the buttons might be disabled and others toggled.            The commands automatically keep track of their state, but if custom widgets are used this state will not be displayed properly.            Therefore a disabledButtonClass and checkedButtonClass can be provided to the report viewer upon initialization -            these classes will be added when the custom button is disabled or toggled, respectively.
+

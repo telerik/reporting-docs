@@ -57,3 +57,4 @@ To remove blank vertical space in a container (report section or panel item), wh
  * [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})
 
  * [Design Considerations for Report Item Layout]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
+

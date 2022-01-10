@@ -40,4 +40,5 @@ By default, cells in a Table row and column group areas represent group member
 
 Cells in the Table corner are created when there are both row and column group areas. You can merge cells in this area            to create a label or embed another report item.           
 
-Cells in the Table body area can display detail data when the cell is in a detail row or column and aggregated group            data when the cell is in a group row or column. The scope for the data in a cell is the intersection of the innermost row            group and innermost column group to which the cell belongs.           
+Cells in the Table body area can display detail data when the cell is in a detail row or column and aggregated group            data when the cell is in a group row or column. The scope for the data in a cell is the intersection of the innermost row            group and innermost column group to which the cell belongs.
+

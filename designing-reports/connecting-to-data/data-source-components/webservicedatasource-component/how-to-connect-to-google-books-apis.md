@@ -57,3 +57,4 @@ In this article we are going to review the process of creating a report which re
 1. Preview the report to see the results.  
 
   ![Google Books Preview](images/DataSources/GoogleBooksPreview.png)
+

@@ -16,8 +16,6 @@ The Windows Forms Report Viewer is designed to render Telerik __Reports__  withi
 
   ![](images/WinFormsViewer.png)
 
-## 
-
 The toolbar on the Windows Forms Report Viewer provides basic functionality for interacting with the currently-loaded report:
 
 * Navigate back in history
@@ -54,13 +52,13 @@ The toolbar on the Windows Forms Report Viewer provides basic functionality for 
 
 * Show/Hide document map
 
->note .NET Framework  __Client Profile__  is not supported.           
+> .NET Framework  __Client Profile__  is not supported.           
 
 ## How it works
 
 The Windows Forms ReportViewer control is a composite of standard Windows Forms controls.         
 
->note The Windows Forms ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the Windows Forms  [ReportViewer](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer) .           
+> The Windows Forms ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the Windows Forms  [ReportViewer](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer) .           
 
 The purpose of the Windows Forms ReportViewer control is to display Telerik Reports and allow the user to interact with them.           Reports are processed and rendered on the client machine. The report in the viewer is rendered through Telerik Reporting IMAGE rendering mechanism based on the           [Design Considerations for Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}).         
 
@@ -109,3 +107,4 @@ The following table lists the keyboard and mouse commands used in Windows Forms 
  * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
 
  * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+

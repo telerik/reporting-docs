@@ -18,8 +18,6 @@ This section discusses various techniques for retrieving data from an __Entity D
 
   ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
-## 
-
 The simplest approach to extract entities from an __Entity Data Model__  is to bind the __EntityDataSource__  component            directly to an auto-generated property of the model, as shown in the sample code below:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=PropertyBindingSnippet}}

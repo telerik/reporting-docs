@@ -30,4 +30,5 @@ The WebForms viewer works like the HTML5 Viewer in a client-server pair with the
 
 ## Browser Support
 
-The control is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) thus you should conform         to the HTML5 Report Viewer [Browser Support](143e5c03-e69d-416f-9ac0-85c397b22b8e#BrowserSupport).       
+The control is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) thus you should conform         to the HTML5 Report Viewer [Browser Support](143e5c03-e69d-416f-9ac0-85c397b22b8e#BrowserSupport).
+

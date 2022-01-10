@@ -14,8 +14,6 @@ position: 2
 
 The article elaborates on the templates included in the HTML template file of the HTML5 Report Viewer.
 
-## 
-
 By default the HTML5 Report Viewer does not have any content; instead the entire markup is provided through templates.
 
 All report viewer templates are supplied by a single page markup:
@@ -48,5 +46,5 @@ The templates are recognized by well-known identifiers supplied by the __id__  a
 
 All templates depend on the HTML5 Report Viewer and Kendo UI css styles for the styling and appearance.         
 
->note The default templates distributed with the Telerik HTML5 Report Viewer provide a base (reference) implementation             of the report viewer’s content that can be modified according to the needs.           
+> The default templates distributed with the Telerik HTML5 Report Viewer provide a base (reference) implementation             of the report viewer’s content that can be modified according to the needs.
 

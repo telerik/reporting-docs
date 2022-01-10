@@ -166,3 +166,4 @@ As a final step, let's display the data from the ObjectDataSource in the report.
  * [
         Connecting the ObjectDataSource component to a Data Source from desktop report designer
       ]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
+

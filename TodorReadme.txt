@@ -17,6 +17,8 @@ how to pass the real tokes to _config.yml
 
 how to use tokens in code snippets (CDATA)
 
+meta data is not displayed in the API Reference
+
 
 images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	https://testdocs.telerik.com/reporting/designing-reports/report-structure/graph/chart-types/overview
 used only in 1 file - do it manually:
@@ -107,8 +109,6 @@ Code	File	Line	Column
 
 
 
-
-Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
 
 
 Feedback:
@@ -441,3 +441,6 @@ ANOTHER EXAMPLE: ">note You can change the field delimiter to any character that
 http://localhost:1589/reporting/designing-reports/connecting-to-data/expressions/using-expressions/overview - nothing to do with the original article https://docs.telerik.com/reporting/designing-reports-item-binding-expressions
 reason: folders D:\Work\2018\Hotfix\Documentation\Help\Content\Expressions and D:\Work\2018\Hotfix\Documentation\Help\Content have both the same article "designing-reports-item-binding-expressions". The correct one is from "D:\Work\2018\Hotfix\Documentation\Help\Content"
 Renamed the other one (.aml to .aml111) so that it is not found.
+
+
+Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly

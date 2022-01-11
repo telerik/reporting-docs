@@ -38,15 +38,17 @@ Report reportName.trdp/x cannot be resolved.
 
 - The service does not have permissions for the folder used to store the report definitions and thus the reports cannot be resolved.
 
-- If the application with the reporting web service is deployed on Azure with **lower** than **Basic** [App Service plan](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/).
+- If the application with the reporting web service is deployed in an environment that heavily restricts the GDI APIs. An example of such a case would an Azure environment with **lower** than **Basic** [App Service plan](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/).
 
-- If the application with the reporting web service is run on a Linux system.  
+- If the application with the reporting web service is running on a Linux system. This is because the GDI APIs are not available **at all** on Linux and substitite libraries must be installed in order for the reports to be rendered.  
 
 ## Solution
 
 - Make sure that the path used by the ReportSourceResolvers is correct in every environment under which the reporting service is run and that the folder with the reports is accessible.
 
-- If the application is to be deployed on Azure, make sure that the app service plan offers the required GDI+ APIs required in order for the service to be able to render the reports. From what we know, the GDI+ APIs are currently available in **Basic and highe** [App Service plans](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/), and even these implementations have some GDI API restrictions that affect the image rendering.
+- The problem may be related to folder permissions to access the folder. For example, make sure that the "**Copy to output directory**" setting of the report file is set to **True**. This setting may be configured by selecting the file inside Visual Studio. It should be inside the **Properties** window of that file.
+
+- If the application is to be deployed on Azure, make sure that the app service plan offers the required GDI+ APIs required in order for the service to be able to render the reports. From what we know, the GDI+ APIs are currently available in **Basic and higher** [App Service plans](https://azure.microsoft.com/en-us/pricing/details/app-service/windows/), and even these implementations have some GDI API restrictions that affect the image rendering.
 
 - If the service will be used to render reports under Linux, the [libgdiplus library](https://www.mono-project.com/docs/gui/libgdiplus/) must be installed on that machine. The following code may be used to install the necessary libraries:
 

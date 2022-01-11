@@ -432,7 +432,7 @@ $(function () {
             }
             
             top += $(e).position().top;
-        })
+          })
           $('.sidetoc').scrollTop(top - 50);
 
           if ($('footer').is(':visible')) {
@@ -443,15 +443,29 @@ $(function () {
           setSideNavPosition();
       }
 
+      var delayFunction;
       function registerTocEvents() {
-          $('.toc .nav > li > .expand-stub').click(function (e) {
-              $(e.target).parent().toggleClass(expanded);
-          });
-          $('.toc .nav > li > .expand-stub + a:not([href])').click(function (e) {
-              $(e.target).parent().toggleClass(expanded);
-          });
-          $('#toc_filter_input').on('input', function (e) {
-              var val = this.value;
+        $('.toc .nav > li > .expand-stub').click(function (e) {
+            $(e.target).parent().toggleClass(expanded);
+        });
+        $('.toc .nav > li > .expand-stub + a:not([href])').click(function (e) {
+            $(e.target).parent().toggleClass(expanded);
+        });
+        
+
+        function filterNavItem(name, text) {
+          if (!text) return true;
+          if (name && name.toLowerCase().indexOf(text.toLowerCase()) > -1) return true;
+          return false;
+      }
+
+        $('#toc_filter_input').on('input', function (e) {
+          if (delayFunction) {
+              clearTimeout(delayFunction);
+          }
+          
+          var val = this.value;
+          delayFunction = setTimeout(function() {
               if (val === '') {
                   // Clear 'filtered' class
                   $('#toc li').removeClass(filtered).removeClass(hide);
@@ -460,7 +474,7 @@ $(function () {
 
               // Get leaf nodes
               $('#toc li>a').filter(function (i, e) {
-                  return $(e).siblings().length === 0
+                  return $(e).siblings().length === 0;
               }).each(function (i, anchor) {
                   var text = $(anchor).attr('title');
                   var parent = $(anchor).parent();
@@ -468,7 +482,7 @@ $(function () {
                   for (var i = 0; i < parentNodes.length; i++) {
                       var parentText = $(parentNodes[i]).children('a').attr('title');
                       if (parentText) text = parentText + '.' + text;
-                  };
+                  }
                   if (filterNavItem(text, val)) {
                       parent.addClass(show);
                       parent.removeClass(hide);
@@ -478,7 +492,7 @@ $(function () {
                   }
               });
               $('#toc li>a').filter(function (i, e) {
-                  return $(e).siblings().length > 0
+                  return $(e).siblings().length > 0;
               }).each(function (i, anchor) {
                   var parent = $(anchor).parent();
                   if (parent.find('li.show').length > 0) {
@@ -490,16 +504,11 @@ $(function () {
                       parent.removeClass(show);
                       parent.removeClass(filtered);
                   }
-              })
-
-              function filterNavItem(name, text) {
-                  if (!text) return true;
-                  if (name && name.toLowerCase().indexOf(text.toLowerCase()) > -1) return true;
-                  return false;
-              }
-          });
-      }
-
+              });
+          }, 500);
+        });
+    }
+    
       function loadToc() {
           var tocPath = $("meta[property='docfx\\:tocrel']").attr("content");
           if (!tocPath) {
@@ -528,7 +537,7 @@ $(function () {
                   $(e).breakWord();
               });
 
-              $('#sidetoc .sidetoc').prepend(" <span style='text-transform:  uppercase;text-transform: uppercase;transition: background-color .1s, padding .1s, font-weight .1s;font-weight: 500;color: #4b4e52 !important;font-size: 15px;font-family: &quot;Roboto&quot;, Helvetica, Arial, sans-serif;line-height: 1.4em;text-overflow:  ellipsis;'><a href='/devtools/document-processing/introduction.html' style='margin-left: 10px; color: #4b4e52 !important;'>Documentation</a></span>")
+              $('#sidetoc .sidetoc').prepend(" <span style='text-transform:  uppercase;text-transform: uppercase;transition: background-color .1s, padding .1s, font-weight .1s;font-weight: 500;color: #4b4e52 !important;font-size: 15px;font-family: &quot;Roboto&quot;, Helvetica, Arial, sans-serif;line-height: 1.4em;text-overflow:  ellipsis;'><a href='/reporting/introduction.html' style='margin-left: 10px; color: #4b4e52 !important;'>Documentation</a></span>")
 
               renderSidebar();
               $('input#toc_filter_input').attr('placeholder', 'Filter');

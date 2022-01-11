@@ -1,1 +1,1 @@
-﻿{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}} | Telerik Document Processing API Reference
+﻿{{#title}}{{title}}{{/title}}{{^title}}{{>partials/title}}{{/title}} {{#_appTitle}}| {{_appTitle}} {{/_appTitle}} - Telerik Reporting API Reference Documentation

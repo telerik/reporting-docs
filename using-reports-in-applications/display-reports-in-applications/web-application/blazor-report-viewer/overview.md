@@ -28,7 +28,7 @@ The Blazor Viewer is a component which can be used in Blazor applications. It is
 
    +  [jQuery 3.2.1+](https://jquery.com/download/) 
 
-1. References to                 [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) .             (Alternatively, the                [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)                can be used instead, but they are not compatible with Telerik UI for Blazor.)             
+1. References to                 [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes).             (Alternatively, the                [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)                can be used instead, but they are not compatible with Telerik UI for Blazor.)             
 
 ## Browser Support
 

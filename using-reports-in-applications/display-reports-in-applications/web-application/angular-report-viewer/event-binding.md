@@ -21,7 +21,7 @@ To attach an event handler to the viewer, specify the name of your function when
     
 ````HTML
 <tr-viewer
-    ...
+ ...
     [ready]="myReadyHandler"
     [viewerToolTipOpening]="myViewerToolTipOpeningHandler">
 </tr-viewer>

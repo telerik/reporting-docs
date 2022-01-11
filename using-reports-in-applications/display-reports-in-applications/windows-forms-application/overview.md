@@ -52,13 +52,13 @@ The toolbar on the Windows Forms Report Viewer provides basic functionality for 
 
 * Show/Hide document map
 
-> .NET Framework  __Client Profile__  is not supported.           
+>.NET Framework  __Client Profile__  is not supported.           
 
 ## How it works
 
 The Windows Forms ReportViewer control is a composite of standard Windows Forms controls.         
 
-> The Windows Forms ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the Windows Forms  [ReportViewer](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer) .           
+> The Windows Forms ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the Windows Forms  [ReportViewer](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer).           
 
 The purpose of the Windows Forms ReportViewer control is to display Telerik Reports and allow the user to interact with them.           Reports are processed and rendered on the client machine. The report in the viewer is rendered through Telerik Reporting IMAGE rendering mechanism based on the           [Design Considerations for Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}).         
 
@@ -98,13 +98,19 @@ The following table lists the keyboard and mouse commands used in Windows Forms 
 |End|Scrolls the view right|Scrolls the view to the next page|
 |+ (Plus)|n/a|Zooms in|
 |- (Minus)|n/a|Zooms out|
-|F|n/a|Opens the search dialo|
+|F|n/a|Opens the search dialog|
 
 # See Also
 
- * [How to Add report viewer to a Windows Forms' .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
+ 
 
- * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
+* [How to Add report viewer to a Windows Forms'.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
 
- * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+ 
+
+* [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
+
+ 
+
+* [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 

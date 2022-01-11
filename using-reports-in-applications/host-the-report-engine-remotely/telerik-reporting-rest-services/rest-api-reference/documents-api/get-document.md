@@ -24,7 +24,7 @@ __Path parameters__
 | ------ | ------ | ------ |
 |`clientId`|String|ID of the service client. Returned from [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}).|
 |`instanceId`|String|ID of the report instance. Returned from [Resolve Report Instance]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance%}).|
-|`documentId`|String|ID of the report document. Returned from [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%})|
+|`documentId`|String|ID of the report document. Returned from [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%}).|
 
 ## Response
 
@@ -32,7 +32,7 @@ __Path parameters__
 | ------ | ------ |
 |`200 OK`|Document is downloaded as an attachment.|
 |`410 Gone`|The specified clientId cannot be found (expired).|
-|`404 Not Found`|The specified instanceId or documentId cannot be found|
+|`404 Not Found`|The specified instanceId or documentId cannot be found.|
 
 __Response Body__ 
 

@@ -80,7 +80,7 @@ void Chart_NeedDataSource(object sender, System.EventArgs e)
 {
     var processingChart = (Telerik.Reporting.Processing.Chart)sender;
     var chartDef = (Telerik.Reporting.Chart)processingChart.ItemDefinition;
-    // . . .
+    //...
 }
 ````
 
@@ -96,7 +96,7 @@ End Sub
 Private Sub Chart1_NeedDataSource(sender As System.Object, e As System.EventArgs)
     Dim processingChart = DirectCast(sender, Telerik.Reporting.Processing.Chart)
     Dim chartDef = DirectCast(sender, Telerik.Reporting.Chart)
-    ' ...
+    '...
 End Sub
 ````
 
@@ -108,13 +108,23 @@ More info about the differences between different state modes you can find in th
 
 # See Also
 
- * [ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
+ 
 
- * [How to Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%})
+* [ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
 
- * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/report-viewer-localization%})
+ 
 
- * [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%})
+* [How to Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%})
 
- * [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
+ 
+
+* [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/report-viewer-localization%})
+
+ 
+
+* [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%})
+
+ 
+
+* [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
 

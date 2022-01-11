@@ -38,7 +38,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Requirements:
 
-* The Web Report Designer can be integrated in any ASP.NET Web Application, both               under __.NET Framework 4.5.1+__  or __.NET Core 2.1+__ .             
+* The Web Report Designer can be integrated in any ASP.NET Web Application, both               under __.NET Framework 4.5.1+__  or __.NET Core 2.1+__.             
 
 * The following NuGet packages are required:             
 
@@ -66,11 +66,15 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
    + webReportDesignerTheme.css stylesheet.
 
-* The web report designer in our example is stylized using                [Roboto font](https://fonts.google.com/specimen/Roboto) . A link to a font of your               preference can be added before creating the Web Designer widget on the page.             
+* The web report designer in our example is stylized using                [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your               preference can be added before creating the Web Designer widget on the page.             
 
 # See Also
 
- * [How to set up in .NET Core 2.1+ application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application%})
+ 
 
- * [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
+* [How to set up in.NET Core 2.1+ application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application%})
+
+ 
+
+* [How to set up in.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
 

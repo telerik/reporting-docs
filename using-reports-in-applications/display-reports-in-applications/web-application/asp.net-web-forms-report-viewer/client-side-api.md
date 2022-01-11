@@ -31,7 +31,7 @@ The __ReportViewer__  control creates a client-side object with the __ClientID__
 |CanMoveToPage(pageNumber)| __pageNumber__ : the number of the page to which you want to navigate.|Checks whether is possible to navigate to a specific page.|
 |RefreshReport()|N/A|Refreshes the report.|
 |ExportReport(format)|The available formats are listed in the [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})article.|Exports the document to one of the specified formats.|
-|PrintAs(format)| __format:__ <br/>*  __"PDF":__ uses the Adobe PDF Reader add-on.<br/>*  __"Default":__ uses the default printing capabilities of the browser.|Forces the viewer to print the document according to the specified print *format* .|
+|PrintAs(format)| __format:__ <br/>*  __"PDF":__ uses the Adobe PDF Reader add-on.<br/>*  __"Default":__ uses the default printing capabilities of the browser.|Forces the viewer to print the document according to the specified print *format*.|
 |ShowDocumentMap()||Shows the DocumentMap|
-|HideDocumentMap()||Hides the DocumentMa|
+|HideDocumentMap()||Hides the DocumentMap|
 

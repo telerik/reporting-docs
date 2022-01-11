@@ -18,7 +18,7 @@ Delivering a Telerik Report to the end user is a process involving several stage
 
 ## Report Definition
 
-The Report Definition is created during the first stage of the life cycle. This is the actual .NET class           that represents the report. It is an instance of __Telerik.Reporting.Report__  or an instance of a subclass of the            __Telerik.Reporting.Report__  and contains information           about report items and their properties. Each item contained in the report gets added to a tree structure formed            from the Items property of the Report (the root) and the Items properties of its child items.            Additionally, if you are using the Visual Studio Report Designer,           for each added report item, by default the newly added item is also added as a private field of the report definition class,           in order to be easily accessible after the InitializeComponent method call.         
+The Report Definition is created during the first stage of the life cycle. This is the actual.NET class           that represents the report. It is an instance of __Telerik.Reporting.Report__  or an instance of a subclass of the            __Telerik.Reporting.Report__  and contains information           about report items and their properties. Each item contained in the report gets added to a tree structure formed            from the Items property of the Report (the root) and the Items properties of its child items.            Additionally, if you are using the Visual Studio Report Designer,           for each added report item, by default the newly added item is also added as a private field of the report definition class,           in order to be easily accessible after the InitializeComponent method call.         
 
 Let's illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report           that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code           will be generated within the InitalizeComponent method of the report class.         
 
@@ -30,7 +30,7 @@ In order to programmatically change the report definition before rendering a rep
 
 ## Report Processing
 
-The second stage of the report life cycle involves combining the __report definition__            with the __data source__ . The processing engine performs all grouping, sorting and           filtering calculations and iterates over all records from the data source and creates the appropriate           __processing items__  based on the item definitions created earlier and the actual data.           Based on the original item definition (e.g. Telerik.Reporting.TextBox) and the actual data in the current           record a new item instance is created. This item is called a __processing item__             (e.g. Telerik.Reporting.Processing.TextBox)           and bears all characteristics of its definition item, but it is bound to the respective data field from the current           record. While the definition TextBox's Value property may contain something like "=Fields.FirstName", the processing           item's Value property will be equal to "John".         
+The second stage of the report life cycle involves combining the __report definition__            with the __data source__. The processing engine performs all grouping, sorting and           filtering calculations and iterates over all records from the data source and creates the appropriate           __processing items__  based on the item definitions created earlier and the actual data.           Based on the original item definition (e.g. Telerik.Reporting.TextBox) and the actual data in the current           record a new item instance is created. This item is called a __processing item__             (e.g. Telerik.Reporting.Processing.TextBox)           and bears all characteristics of its definition item, but it is bound to the respective data field from the current           record. While the definition TextBox's Value property may contain something like "=Fields.FirstName", the processing           item's Value property will be equal to "John".         
 
 The Processing Engine provides the developer a way to intervene in this process. Just before the           processing item is bound to data, the __ItemDataBinding__  event of its corresponding definition item           is raised. By subscribing a listener for this event, the developer can modify the newly created processing item before it gets data-bound           (i.e., definition expressions processed and result applied to the processing item).           The __processing item instance__  is exposed to the event handler methods as            the __sender__  parameter.         
 
@@ -46,5 +46,7 @@ After processing is over, the processed report is ready for rendering in one of 
 
 # See Also
 
- * [Understanding the Report Lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})
+ 
+
+* [Understanding the Report Lifecycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%})
 

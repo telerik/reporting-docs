@@ -20,7 +20,7 @@ The following image shows an example of a candlestick OHLC chart:
 
 ## OHLC chart types
 
-The look of the OHLC series markers can be changed in order to cover the two most used types of OHLC charts - __candlestick__  and __bar__ .            The following screenshots show the marker types with the explanational tooltip.         
+The look of the OHLC series markers can be changed in order to cover the two most used types of OHLC charts - __candlestick__  and __bar__.            The following screenshots show the marker types with the explanational tooltip.         
 
 * __Candlestick marker__   
 
@@ -32,5 +32,9 @@ The look of the OHLC series markers can be changed in order to cover the two mos
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [OhlcSeries](/reporting/api/Telerik.Reporting.OhlcSeries) 
+ 
+
+* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
+
+* [OhlcSeries](/reporting/api/Telerik.Reporting.OhlcSeries)
 

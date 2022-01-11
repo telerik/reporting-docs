@@ -19,7 +19,7 @@ Returns: an object with properties:
 | Property | Description |
 | ------ | ------ |
 | __report__ |the report. For more information please see jQuery.fn.telerik_ReportViewer’s reportSource option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).|
-| __parameters__ |an object with properties that names are the report parameters’ ids and values - the report parameters’ values|
+| __parameters__ |an object with properties that names are the report parameters’ ids and values - the report parameters’ values.|
 
     
 ````js

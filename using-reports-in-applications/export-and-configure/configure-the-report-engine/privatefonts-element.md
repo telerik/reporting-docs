@@ -14,9 +14,9 @@ position: 6
 
 Defines a collection that allows the Reporting Engine to use a private version         of an existing font without the requirement to install the font on the host machine.         If the font is already installed the installed font is used.       
 
->  __Known issue with the Windows Platform:__ If you order the fonts in the PrivateFontCollection first regular then bold           the GDI+ measure string size for bold font style is incorrect.            This is observed in Windows 8.1 and newer and may lead to unexpected rendering and aligning issues.           For more information see            [               Wrong Measurements from MeasureString             ](               https://github.com/Microsoft/DirectXTK/issues/34             ) .          __Known issue with Azure:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services.           If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in             [               PrivateFontCollection is not working             ](               https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working             ) .         
+>  __Known issue with the Windows Platform:__ If you order the fonts in the PrivateFontCollection first regular then bold           the GDI+ measure string size for bold font style is incorrect.            This is observed in Windows 8.1 and newer and may lead to unexpected rendering and aligning issues.           For more information see            [               Wrong Measurements from MeasureString             ](               https://github.com/Microsoft/DirectXTK/issues/34             ).          __Known issue with Azure:__ The required.NET API for handling private fonts is making GDI calls that are blocked in Azure App Services.           If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in             [               PrivateFontCollection is not working             ](               https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working             ).         
 
->  __Known issue with PDF rendering in .NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the  __privateFonts__            element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font,            used in the report, is not available.         
+>  __Known issue with PDF rendering in.NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the  __privateFonts__            element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font,            used in the report, is not available.         
 
 The private fonts are used for all rendering extensions. Still the font rendering on the client         computer depends on the viewer configuration and document format specifications:       
 
@@ -39,11 +39,11 @@ The following sections describe attributes, child elements, and parent elements.
 | ------ | ------ |
 Attributes|None|
 |Child Elements|*  __add__ - Optional element. Adds a font to the collection.|
-|Parent Elements|*  __configuration__ - Specifies the root element in every configuration file that is used by<br/>                  the common language runtime and the .NET Framework applications.<br/>*  __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses|
+|Parent Elements|*  __configuration__ - Specifies the root element in every configuration file that is used by<br/>                  the common language runtime and the.NET Framework applications.<br/>*  __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.|
 
 >caption ```<add>``` element
 
-|Attribut|
+|Attribute|
 
 | __fontFamily__ |The attribute is required and case sensitive.|
 | __path__ |The attribute is required and is permitted to specify relative or absolute path information.
@@ -58,7 +58,7 @@ Attributes|None|
 | ------ | ------ |
 |
 |Child elements|None|
-|Parent element| __privateFonts__|
+|Parent element| __privateFonts__ |
 
 ## Example
 
@@ -70,7 +70,7 @@ XML-based configuration file:
 ````xml
 <?xml version="1.0"?>
 <configuration>
-   ...
+...
     <Telerik.Reporting>
         <privateFonts>
         <add fontFamily="Courier New" path="CourBI.ttf" fontStyle="Bold, Italic" />
@@ -78,7 +78,7 @@ XML-based configuration file:
             <add fontFamily="Courier New" path="CourI.ttf" fontStyle="Italic" />
         </privateFonts>
      </Telerik.Reporting>
-   ...
+...
 </configuration>
 ````
 
@@ -108,7 +108,11 @@ JSON-based configuration file:
 
 # See Also
 
- * [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+ 
 
- * [Overview]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
+* [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+
+ 
+
+* [Overview]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})
 

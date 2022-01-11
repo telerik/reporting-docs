@@ -12,14 +12,14 @@ position: 0
 
 
 
-The __OpenAccessDataSource__  component enables data items to connect to an __Telerik Data Access Model__ . This allows         seamless integration of __Telerik Reporting__  with applications or web sites that utilize __Telerik Data Access__ .         There are several main benefits when using the __OpenAccessDataSource__  component for connecting to a         __Telerik Data Access Model__ :       
+The __OpenAccessDataSource__  component enables data items to connect to an __Telerik Data Access Model__. This allows         seamless integration of __Telerik Reporting__  with applications or web sites that utilize __Telerik Data Access__.         There are several main benefits when using the __OpenAccessDataSource__  component for connecting to a         __Telerik Data Access Model__ :       
 
 *  __Dedicated design-time support__  : the __OpenAccessDataSource__  component has its own set of design-time editors,
             tool windows, and a configuration wizard. In addition to this, __OpenAccessDataSource__  adds
-            support for entity schema in __Data Explorer__  and live data preview of the report in __Report Designer__  .
+            support for entity schema in __Data Explorer__  and live data preview of the report in __Report Designer__.
 
 *  __Configuring database connectivity__  : the __OpenAccessDataSource__  component
-            offers an additional level of control over the database connectivity of the __Telerik Data Access Model__  . You can
+            offers an additional level of control over the database connectivity of the __Telerik Data Access Model__. You can
             specify a connection string or a named connection from the configuration file of the main application or web site.
             That ensures __OpenAccessDataSource__  can establish a valid database connection both at design-time and when
             running the report in production.
@@ -31,6 +31,6 @@ The __OpenAccessDataSource__  component enables data items to connect to an __Te
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above             
+*.NET Framework 4.0 and above             
 
 

@@ -17,9 +17,9 @@ Each [report item]({%slug telerikreporting/designing-reports/report-structure/ov
 | Event | Description |
 | ------ | ------ |
 | __ItemDataBinding__ |Fires just before the item is bound to data.|
-| __ItemDataBound__ |Fires just after the item is bound to data|
+| __ItemDataBound__ |Fires just after the item is bound to data.|
 
-> The [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) report item exposes one additional event:              __NeedDataSource__ . This event fires when the SubReport.ReportSource does not have data source bound to it.           
+> The [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) report item exposes one additional event:              __NeedDataSource__. This event fires when the SubReport.ReportSource does not have data source bound to it.           
 
 Let us demonstrate this with a simple example. Suppose that we have a TextBox containing the job position of an employee.           Assume that the TextBox's Value property equals "=Fields.Title", where Title is a column from the data source containing values like            "Team Leader", "Senior Developer", "Junior Developer", "Quality Assurance", etc. For the sake of our example, suppose that we would            like to color all developers in Blue.
 
@@ -54,5 +54,7 @@ End Sub
 
 # See Also
 
- * [Access Report Items Programmatically]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically%})
+ 
+
+* [Access Report Items Programmatically]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically%})
 

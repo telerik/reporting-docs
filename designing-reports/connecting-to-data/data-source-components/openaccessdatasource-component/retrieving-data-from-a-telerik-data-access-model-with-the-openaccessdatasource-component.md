@@ -93,7 +93,7 @@ Dim report As New Report1()
 report.DataSource = openAccessDataSource
 ````
 
-Another common problem is related to the lazy loading feature of __Telerik Data Access__ . For example, let us            consider the following expression that obtains the category of a given product
+Another common problem is related to the lazy loading feature of __Telerik Data Access__. For example, let us            consider the following expression that obtains the category of a given product
 
 =Fields.ProductSubcategory.ProductCategory.Name
 
@@ -148,10 +148,10 @@ Partial Class AdventureWorksEntities
                      From product In productSubcategory.Products
                      Select New ReportData With
                      {
-                         .CategoryName = productCategory.Name,
-                         .SubcategoryName = productSubcategory.Name,
-                         .ProductName = product.Name,
-                         .ListPrice = product.ListPrice
+                      .CategoryName = productCategory.Name,
+                      .SubcategoryName = productSubcategory.Name,
+                      .ProductName = product.Name,
+                      .ListPrice = product.ListPrice
                      }
 
         Return result.ToList()

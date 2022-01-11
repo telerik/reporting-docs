@@ -26,25 +26,25 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 First, you need to create a new ASP.NET Core project:         
 
-1. Open __Visual Studio 2019__ .             
+1. Open __Visual Studio 2019__.             
 
-1. From the __File__  menu, select __New > Project__ .             
+1. From the __File__  menu, select __New > Project__.             
 
-1. In the __Add a new Project__  dialog select __ASP.NET Core Web Application__  project template.               Choose a name and location for the project and click __Create__ .             
+1. In the __Add a new Project__  dialog select __ASP.NET Core Web Application__  project template.               Choose a name and location for the project and click __Create__.             
 
-1. In the __Create a new ASP.NET Core web application__  dialog               select from the drop downs __.NET Core__  and __ASP.NET Core 3.1__  or later.               Next, from the list of templates select __Empty__  project template and click __Create__ .             
+1. In the __Create a new ASP.NET Core web application__  dialog               select from the drop downs __.NET Core__  and __ASP.NET Core 3.1__  or later.               Next, from the list of templates select __Empty__  project template and click __Create__.             
 
 ## Add Report Definitions
 
 In this tutorial, the resulting service will use the sample report definitions deployed with the Telerik Reporting product installer:         
 
-1. Find the sample reports in               *{Telerik Reporting installation path}\Report Designer\Examples* .             
+1. Find the sample reports in               *{Telerik Reporting installation path}\Report Designer\Examples*.             
 
 1. Add a new folder to your solution called __Reports__  and copy all sample reports into it.             
 
 1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the               requested reports from this project folder.             
 
-> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})             or the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available             in .NET Core projects.           Existing .NET Framework report libraries can be migrated to declarative report definitions as well. The other available approach is designing reports             in a separate Telerik Report Library created against .NET Framework 4.0+ which later must be migrated to a .NET Standard or .NET Core library.             For more information, please refer to              [Guidance for using reports from an existing .NET Framework 4+ report library in a .NET Core application](knowledge-base/use-existing-report-library-in-net-core-app)              knowledge based article. Design-time support is not yet provided for .Net Core Telerik Report Library (Class Library) projects storing the report definitions.           
+> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})             or the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available             in.NET Core projects.           Existing.NET Framework report libraries can be migrated to declarative report definitions as well. The other available approach is designing reports             in a separate Telerik Report Library created against.NET Framework 4.0+ which later must be migrated to a.NET Standard or.NET Core library.             For more information, please refer to              [Guidance for using reports from an existing.NET Framework 4+ report library in a.NET Core application](knowledge-base/use-existing-report-library-in-net-core-app)              knowledge based article. Design-time support is not yet provided for.Net Core Telerik Report Library (Class Library) projects storing the report definitions.           
 
 ## Add the required dependencies
 
@@ -54,7 +54,7 @@ This guide applies the recommended NuGet package references approach to add the 
 
 1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the               __Telerik.Reporting.OpenXmlRendering__  (or __Telerik.Reporting.OpenXmlRendering.Trial__ )               NuGet package.             
 
-> The recommended way of adding the necessary dependencies is to use the             [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})             and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project             bringing easier dependency management.           Alternatively, the assemblies are available in the  __\Bin\netcoreapp3.1\__              folder of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies             listed in the Requirements section of the [](aee150e8-e29d-4739-b8b9-d8a973982efc#requirements) section             and also the following dependency packages:              [Microsoft.AspNetCore.Mvc.NewtonsoftJson version 5.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/)              and              [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/) .             Note that you need the last reference only to enable the Office OpenXML document formats.           The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called              [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)              instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.           
+> The recommended way of adding the necessary dependencies is to use the             [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})             and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project             bringing easier dependency management.           Alternatively, the assemblies are available in the  __\Bin\netcoreapp3.1\__              folder of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies             listed in the Requirements section of the [](aee150e8-e29d-4739-b8b9-d8a973982efc#requirements) section             and also the following dependency packages:              [Microsoft.AspNetCore.Mvc.NewtonsoftJson version 5.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/)              and              [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).             Note that you need the last reference only to enable the Office OpenXML document formats.           The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called              [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)              instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.           
 
 ## Setup the Startup.cs file for the Reports service
 
@@ -90,7 +90,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
-    // ...
+    //...
 });
 ````
 
@@ -98,16 +98,16 @@ app.UseEndpoints(endpoints =>
 
 The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine Settings           that provide flexibility of the deployed application. It utilizes the            [IConfiguration interface](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0)            for this purpose.         
 
-.NET Core applications provide a new way of storing the configuration - a            [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-3.1)            file named by default __appSettings.json__ . The default ReportingEngineConfiguration:         
+.NET Core applications provide a new way of storing the configuration - a            [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-3.1)            file named by default __appSettings.json__. The default ReportingEngineConfiguration:         
 
     
 ````C#
 ReportingEngineConfiguration = sp.GetService<IConfiguration>()
 ````
 
-will be initialized from __appSettings.json__  or           __appsettings.{EnvironmentName}.json__ .         
+will be initialized from __appSettings.json__  or           __appsettings.{EnvironmentName}.json__.         
 
-To activate JSON file configuration with a different name, for example, __reportingAppSettings.json__ ,           call the            [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/)            extension method on an instance of            [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder) .         
+To activate JSON file configuration with a different name, for example, __reportingAppSettings.json__,           call the            [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/)            extension method on an instance of            [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder).         
 
 In this guide we will create a helper class loading the json-formatted setting:         
 
@@ -121,8 +121,8 @@ static class ConfigurationHelper
     {
         var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
         return new ConfigurationBuilder()
-            .AddJsonFile(reportingConfigFileName, true)
-            .Build();
+         .AddJsonFile(reportingConfigFileName, true)
+         .Build();
     }
 }
 ````
@@ -132,7 +132,7 @@ Finally, all configurations should be placed in the JSON configuraion file (add 
     
 ````html
 {
-  ...
+...
   "ConnectionStrings": {
     "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
   }
@@ -144,7 +144,7 @@ The above type of connection string lacks information about the data provider an
     
 ````html
 {
-  ...
+...
   "ConnectionStrings": {
     "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
       "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
@@ -161,7 +161,7 @@ The last supported type of __ConnectionStrings__  configuration uses an array to
     
 ````html
 {
-  ...
+...
   "ConnectionStrings": [
     {
       "name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
@@ -174,9 +174,9 @@ The last supported type of __ConnectionStrings__  configuration uses an array to
 
 ## Setting up the REST service
 
-1. Create folder __Controllers__ .               Right-click on the project name and select __Add > New folder__ .               Name it __Controllers__ .             
+1. Create folder __Controllers__.               Right-click on the project name and select __Add > New folder__.               Name it __Controllers__.             
 
-1. Implement a Reports controller. Right-click on the __Controllers__                folder and add a new item: __Add > New item > Web API Controller Class__  item.               Name it __ReportsController__ . This will be our Telerik Reporting REST service in the project.             
+1. Implement a Reports controller. Right-click on the __Controllers__                folder and add a new item: __Add > New item > Web API Controller Class__  item.               Name it __ReportsController__. This will be our Telerik Reporting REST service in the project.             
 
 1. Inherit the  [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  type               and inject the configuration settings in the constructor.               This is how a basic implementation of the controller should look like:             
 
@@ -213,11 +213,11 @@ namespace AspNetCoreDemo.Controllers
 
 ## Test the service implementation
 
-To ensure that the service operates, run the application and navigate to           URL __{applicationRoot}/api/reports/formats__ .           It should return a JSON representing the supported rendering extensions.         
+To ensure that the service operates, run the application and navigate to           URL __{applicationRoot}/api/reports/formats__.           It should return a JSON representing the supported rendering extensions.         
 
 ## Enable Cross-Origin Resource Sharing (CORS) (Optional)
 
-You may need to enable  [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) , for example, if you use the REST Service from clients hosted in different domains.         
+You may need to enable  [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), for example, if you use the REST Service from clients hosted in different domains.         
 
 Add the following code to the *ConfigureServices*  method of the            *Startup.cs*  file to add a new CORS policy for the REST Service:         
 
@@ -228,8 +228,8 @@ services.AddCors(corsOption => corsOption.AddPolicy(
   corsBuilder =>
   {
   corsBuilder.AllowAnyOrigin()
-  .AllowAnyMethod()
-  .AllowAnyHeader();
+.AllowAnyMethod()
+.AllowAnyHeader();
   }));
 ````
 

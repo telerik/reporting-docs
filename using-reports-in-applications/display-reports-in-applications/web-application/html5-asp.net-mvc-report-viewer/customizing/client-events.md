@@ -31,10 +31,10 @@ To attach a client event handler you have to set the appropriate __ClientEvents_
 @(Html.TelerikReporting().ReportViewer()
         // each deferred script will be rendered at the place of TelerikReporting().DeferredScripts().
         //.Deferred()
-        .ClientEvents(
+     .ClientEvents(
                 events => events
-                    .RenderingBegin("onRenderingBegin")
-                    .RenderingEnd("onRenderingEnd")
+                 .RenderingBegin("onRenderingBegin")
+                 .RenderingEnd("onRenderingEnd")
                     )
 )
 ````
@@ -58,6 +58,6 @@ The following table list the available client events:
 |InteractiveActionLeave|Occurs when the mouse cursor leaves the area of an interactive action. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)%})|
 |ViewerToolTipOpening|Occurs before a tooltip is opened, providing the ability to cancel its opening. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)%})|
 |SendEmailBegin|Occurs before the report is exported and the E-mail message is sent. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)%})|
-|SendEmailEnd|Occurs after the report is exported and before the E-mail message is sent. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)%}|
+|SendEmailEnd|Occurs after the report is exported and before the E-mail message is sent. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)%})|
 
 

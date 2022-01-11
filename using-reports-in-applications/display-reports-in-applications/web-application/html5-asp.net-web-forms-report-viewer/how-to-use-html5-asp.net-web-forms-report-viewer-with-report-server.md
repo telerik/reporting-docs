@@ -20,7 +20,7 @@ The quickest way to add a HTML5 Web Forms Report Viewer to your web project is w
 
 1. The project must target                [                   ASP.NET 4.0 Web Forms                 ](http://www.asp.net/web-forms)                or newer framework.             
 
-1. Installed and running                [                   Telerik Report Server                 ](https://docs.telerik.com/report-server/introduction) .             
+1. Installed and running                [                   Telerik Report Server                 ](https://docs.telerik.com/report-server/introduction).             
 
 1. Report Server's built-in __Guest__  user should be enabled.             
 
@@ -28,9 +28,9 @@ The quickest way to add a HTML5 Web Forms Report Viewer to your web project is w
 
 ## Configuring the HTML5 WebForms Report Viewer to work with Report Server using Item Templates
 
-The VS item template will integrate HTML5 WebForms Report Viewer in an .aspx page           and will connect to the             [Telerik Report Server](https://docs.telerik.com/report-server/introduction)             to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
+The VS item template will integrate HTML5 WebForms Report Viewer in an.aspx page           and will connect to the             [Telerik Report Server](https://docs.telerik.com/report-server/introduction)             to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
 
-* To start the item template wizard, in __Solution Explorer__ , select the target project. On the               __Project menu__ , click __Add -> New Item__ . In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category. Select __Telerik Web Forms Report Viewer Form__  item.             
+* To start the item template wizard, in __Solution Explorer__, select the target project. On the               __Project menu__, click __Add -> New Item__. In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category. Select __Telerik Web Forms Report Viewer Form__  item.             
 
 * You will be prompted to accept building the project. Click 'OK'.             
 
@@ -60,13 +60,17 @@ After finishing, the item template automatically do the following:
 
 * Configures the NuGet packages, if nessesary.             
 
-* Adds an __ASPX page with the configured HTML5 WebForms Report Viewer__ .             
+* Adds an __ASPX page with the configured HTML5 WebForms Report Viewer__.             
 
 * Displays a __summary log__  that list all of the made changes.             
 
 # See Also
 
- * [How To: Use HTML5 ASP.NET Web Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
+ 
 
- * [How to: Add New Project Items](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))
+* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
+
+ 
+
+* [How to: Add New Project Items](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))
 

@@ -28,7 +28,7 @@ To complete the following procedures, you must have an existing chart.
 
 The secondary axis can also appear on the right or top of the graph.            This is controlled by defining where the secondary axis crosses the shared axis.            For the example below assume that X is the shared axis and there are two Y axes.         
 
-1. For the __Scale__  of the shared __X axis__  you have to add two __CrossAxisPositions__ .             
+1. For the __Scale__  of the shared __X axis__  you have to add two __CrossAxisPositions__.             
 
 1. The first will be applied to the first Y axis - leave the position to Auto (the default).             
 

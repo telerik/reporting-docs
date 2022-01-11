@@ -12,7 +12,7 @@ position: 1
 
 
 
-The old ASP.NET WebForms ReportViewer control is obsolete as of  [Telerik Reporting Q3 2015](http://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-version-9-2-15-930) .         The main reasons for this decision: the viewer uses extensively IFRAME and TABLE elements in its structure,         the viewer uses the ASP.NET Session to preserve resources between requests, the viewer is suitable only for WebForms projects.       
+The old ASP.NET WebForms ReportViewer control is obsolete as of  [Telerik Reporting Q3 2015](http://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-version-9-2-15-930).         The main reasons for this decision: the viewer uses extensively IFRAME and TABLE elements in its structure,         the viewer uses the ASP.NET Session to preserve resources between requests, the viewer is suitable only for WebForms projects.       
 
 The  article discusses how to troubleshoot comonly met issues result the above listed reasons.
 
@@ -32,17 +32,17 @@ The old ASP.NET WebForms ReportViewer depends on the ASP.NET Session.           
 
 The old ASP.NET WebForms ReportViewer displays content delivered by its Telerik.ReportViewer.axd handler.           Verify the handler is registered in both *system.Web*  and *system.webServer*  sections -           [How to: Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%}),           and that the viewer is added in a valid [AJAX Scenario]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%}).         
 
-In case of using Visual Studio 2013 or greater version,  [disable the BrowserLink feature.](http://www.asp.net/visual-studio/overview/2013/using-browser-link) .         
+In case of using Visual Studio 2013 or greater version,  [disable the BrowserLink feature.](http://www.asp.net/visual-studio/overview/2013/using-browser-link).         
 
 ## The old ASP.NET Webforms ReportViewer does not display reports or the page area is messed on iPad or other mobile device.
 
-The old ASP.NET WebForms ReportViewer displays content via IFRAME and TABLE elements in browser.           This may result in unexpected layout in modern HTML5-compliant browsers.           The solution is to use an older DOCTYPE declaration -  [Blank report in ASP.NET ReportViewer on iPad/iPhone](http://www.telerik.com/support/kb/reporting/details/blank-report-in-asp.net-reportviewer-on-ipad-iphone) .         
+The old ASP.NET WebForms ReportViewer displays content via IFRAME and TABLE elements in browser.           This may result in unexpected layout in modern HTML5-compliant browsers.           The solution is to use an older DOCTYPE declaration -  [Blank report in ASP.NET ReportViewer on iPad/iPhone](http://www.telerik.com/support/kb/reporting/details/blank-report-in-asp.net-reportviewer-on-ipad-iphone).         
 
 ## The styles of the ASP.NET WebForms ReportViewer's toolbar and content are messed up.
 
-The old ASP.NET WebForms ReportViewer displays content delivered by its Telerik.ReportViewer.axd handler.           Check if the handler is registered correctly and if the browser's proxy and security settings allow it to deliver content -  [The styles of the web report viewer's toolbar are messed up](http://www.telerik.com/support/kb/reporting/details/the-styles-of-the-web-report-viewer-s-toolbar-are-messed-up) .         
+The old ASP.NET WebForms ReportViewer displays content delivered by its Telerik.ReportViewer.axd handler.           Check if the handler is registered correctly and if the browser's proxy and security settings allow it to deliver content -  [The styles of the web report viewer's toolbar are messed up](http://www.telerik.com/support/kb/reporting/details/the-styles-of-the-web-report-viewer-s-toolbar-are-messed-up).         
 
-In case of using authorization, verify that the Telerik.ReportViewer.axd handler's path is allowed for the user -  [HOW TO: Control Authorization Permissions in an ASP.NET Application](https://support.microsoft.com/en-us/kb/316871) .         
+In case of using authorization, verify that the Telerik.ReportViewer.axd handler's path is allowed for the user -  [HOW TO: Control Authorization Permissions in an ASP.NET Application](https://support.microsoft.com/en-us/kb/316871).         
 
 ## The ASP.NET WebForms ReportViewer does not display a report that uses Table/List/Crosstab item in Internet Explorer.
 

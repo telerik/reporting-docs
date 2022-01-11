@@ -14,7 +14,7 @@ position: 0
 
 You can contact Telerik support with a technical question by using your account on Telerik.com:
 
- [http://www.telerik.com/account/support-tickets.aspx](http://www.telerik.com/account/support-tickets.aspx) .                 
+ [http://www.telerik.com/account/support-tickets.aspx](http://www.telerik.com/account/support-tickets.aspx).                 
 
 An alternative is to post your question in the                      [public forums](http://www.telerik.com/community/forums.aspx)  and ask our community for help.                 
 

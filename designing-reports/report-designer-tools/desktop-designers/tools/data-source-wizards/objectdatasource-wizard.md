@@ -48,7 +48,7 @@ End Class
 
    + __Choose a data source member__  – selecting this option allows you to specify a member of the business object                   that is responsible for data retrieval. The list of displayed members is contextual and depends on the selection                   from the previous step:                 
 
-   + __When a business object type is chosen__ , the list of available                       members is the following:                     
+   + __When a business object type is chosen__, the list of available                       members is the following:                     
 
    + All public instance constructors                         
 
@@ -60,13 +60,13 @@ End Class
 
    + All public static (shared in VB.NET) methods                         
 
-   + __When a business object component is chosen__ , the list of available members                       is the following:                     
+   + __When a business object component is chosen__, the list of available members                       is the following:                     
 
    + All public instance properties                         
 
    + All public instance methods                         
 
-   + __When the "Show data components only" check box is checked__ , only the methods that are marked                       with the __DataObjectMethodAttribute__  attribute are listed, and only if the specified type of the data method                       is __DataObjectMethodType.Select__ .                     Here are some sample Cars class methods:
+   + __When the "Show data components only" check box is checked__, only the methods that are marked                       with the __DataObjectMethodAttribute__  attribute are listed, and only if the specified type of the data method                       is __DataObjectMethodType.Select__.                     Here are some sample Cars class methods:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=DataMethodSnippet}}
   ````C#
@@ -132,9 +132,15 @@ When the __"Show data components only"__  check box from the previous step is no
 
 # See Also
 
- * [Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
+ 
 
- * [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})
+* [Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
 
- * [Data Source Components Problems]({%slug telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems%})
+ 
+
+* [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})
+
+ 
+
+* [Data Source Components Problems]({%slug telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems%})
 

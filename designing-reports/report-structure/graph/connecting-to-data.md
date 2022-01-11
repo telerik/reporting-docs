@@ -26,11 +26,11 @@ One way to think about how a Graph item works is to compare it to a Table item:
 
 Conceptually, they both use the same multidimensional data model:
 
-* The __ColumnGroups__  in the __Table__  are identical to the __CategoryGroups__  of the __Graph__ .
+* The __ColumnGroups__  in the __Table__  are identical to the __CategoryGroups__  of the __Graph__.
 
-* The __RowGroups__  in the __Table__  are identical to the __SeriesGroups__  of the __Graph__ .
+* The __RowGroups__  in the __Table__  are identical to the __SeriesGroups__  of the __Graph__.
 
-* The __Cells__  in the __Table__ ’s body definition are identical to the __Series__  definitions of the __Graph__ .
+* The __Cells__  in the __Table__ ’s body definition are identical to the __Series__  definitions of the __Graph__.
 
 ## Category group hierarchy
 
@@ -46,7 +46,7 @@ The Graph item series displays aggregated data to visualize one or more measures
 
 Depending on the series type the Graph item can visualize one or more measures:
 
-* __Bar__ , __Area__  series including all derived subtypes (Pie, Doughnut, Bar, Column, etc.) represent single measures;
+* __Bar__, __Area__  series including all derived subtypes (Pie, Doughnut, Bar, Column, etc.) represent single measures;
 
 * Range series (Range Bar and Range Area) emphasize on the distance between two values/measures;
 

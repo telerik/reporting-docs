@@ -23,7 +23,7 @@ FROM         Sales.SalesOrderHeader
 ORDER BY Year
 ````
 
-1. Rename the data source to __yearDataSource__ .             
+1. Rename the data source to __yearDataSource__.             
 
 1. Right-click outside the report. Select __Report Parameters__  to add the [report parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) of the year.             
 
@@ -31,7 +31,7 @@ ORDER BY Year
 
   ![RP](images/RP.PNG)
 
-1. Right-click __graphDataSource__ . Select __Configure__  and click __Next__                until the __Configure data source command__  is displayed.             
+1. Right-click __graphDataSource__. Select __Configure__  and click __Next__                until the __Configure data source command__  is displayed.             
 
 1. Change the WHERE clause in the following way:             
 
@@ -50,11 +50,11 @@ WHERE  (YEAR(SOH.OrderDate) = @Year)
 
    + __Value__ : 2002As a result, the year that will be displayed by default will be 2002.
 
-1. Click __Next__  and __Finish__ .             
+1. Click __Next__  and __Finish__.             
 
 ## Previewing the Result
 
-Preview the result by clicking __Preview__  > __PrintPreview__ .           
+Preview the result by clicking __Preview__  > __PrintPreview__.           
 
   ![Report Parameter Preview](images/ReportParameterPreview.PNG)
 
@@ -76,5 +76,5 @@ Preview the result by clicking __Preview__  > __PrintPreview__ .
 
 * [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
 
-* [Integrating the Report in .NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
+* [Integrating the Report in.NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
 

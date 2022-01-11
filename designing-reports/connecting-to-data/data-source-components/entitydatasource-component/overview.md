@@ -12,11 +12,11 @@ position: 0
 
 
 
-The __EntityDataSource__  component enables data items to connect to an  [ADO.NET Entity Data Model](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/entity-data-model) .          This allows seamless integration of __Telerik Reporting__  with applications or web sites that utilize          the  [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview) . There are several main benefits when using the __EntityDataSource__           component for connecting to an __Entity Data Model__ :
+The __EntityDataSource__  component enables data items to connect to an  [ADO.NET Entity Data Model](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/entity-data-model).          This allows seamless integration of __Telerik Reporting__  with applications or web sites that utilize          the  [ADO.NET Entity Framework](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview). There are several main benefits when using the __EntityDataSource__           component for connecting to an __Entity Data Model__ :
 
 *  __Dedicated design-time support:__  the __EntityDataSource__  component has its own set of design-time editors,
     tool windows, and a configuration wizard. In addition to this, __EntityDataSource__  adds support for entity schema
-    in __Data Explorer__  and live data preview of the report in __Report Designer__  .
+    in __Data Explorer__  and live data preview of the report in __Report Designer__.
 
 *  __Configuring database connectivity:__  the __EntityDataSource__  component offers an additional level of 
     control over the database connectivity of the Entity Data Model. You can specify a connection string or a named 
@@ -49,6 +49,6 @@ End Class
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above             
+*.NET Framework 4.0 and above             
 
 

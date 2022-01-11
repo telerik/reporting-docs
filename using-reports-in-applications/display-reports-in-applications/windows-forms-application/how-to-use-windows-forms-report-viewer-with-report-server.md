@@ -36,7 +36,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
    + *REST Service*  - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
 
    + *Report Server*  - the reports will be processed and rendered at the machine that hosts configured and running                        [Telerik Report Server ](http://docs.telerik.com/report-server/introduction)  instance.                     
-    Select *Report Server* .                 
+    Select *Report Server*.                 
 
 1. In __Report Server URL__  textbox enter the address and port (if needed) of the machine that hosts the Report Server instance.                 
 
@@ -68,11 +68,21 @@ The most common reasons for failure are related with the authentication against 
 | ------ | ------ |
 |The viewer displays the message:`A problem occurred while registering client.`|Check if the supplied username and password are valid and the user's state is __Enabled__ in Report Server.|
 |The viewer displays the message:`System.OperationCanceledException: *{ReportName}* report cannot be found`|Make sure the URL specified in the report source __report__ is valid and such a category and report exist in Report Server.|
-|The viewer displays the message:`System.Net.WebException: The remote name could not be resolved: {server name}`|Make sure that the server specified in the connection string exists and has a valid and running Report Server instance|
+|The viewer displays the message:`System.Net.WebException: The remote name could not be resolved: {server name}`|Make sure that the server specified in the connection string exists and has a valid and running Report Server instance.|
 
 # See Also
 
- * [How to Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%})
+ 
 
- * [How to Use Windows Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%}) * [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)  * [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  * [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo) 
+* [How to Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%})
+
+ 
+
+* [How to Use Windows Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%}) 
+
+* [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)  
+
+* [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  
+
+* [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)
 

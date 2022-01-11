@@ -18,7 +18,7 @@ This section discusses how to connect the __EntityDataSource__  component to an 
 
   ![](images/DataSources/EntityDataSourceAdventureWorksEntityModel.png)
 
-The simplest way to configure __EntityDataSource__  in __Report Designer__  is to use            the [EntityDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%}). That wizard is started automatically when you create a new __EntityDataSource__ , but you can invoke            it manually at any time from the context menu associated with the data source by choosing __"Configure"__ :
+The simplest way to configure __EntityDataSource__  in __Report Designer__  is to use            the [EntityDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard%}). That wizard is started automatically when you create a new __EntityDataSource__, but you can invoke            it manually at any time from the context menu associated with the data source by choosing __"Configure"__ :
 
   
 
@@ -49,7 +49,7 @@ Dim report As New Report1()
 report.DataSource = entityDataSource
 ````
 
-The above code snippet connects the __EntityDataSource__  component to the __AdventureWorksEntities__             context and retrieves the information for all products from the __Products__  auto-generated property. Instead of specifying a type you can assign a live instance of the __ObjectContext/DbContext__ . In this case however it is            your responsibility to destroy that __ObjectContext/DbContext__  instance when done with the report:           
+The above code snippet connects the __EntityDataSource__  component to the __AdventureWorksEntities__             context and retrieves the information for all products from the __Products__  auto-generated property. Instead of specifying a type you can assign a live instance of the __ObjectContext/DbContext__. In this case however it is            your responsibility to destroy that __ObjectContext/DbContext__  instance when done with the report:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=InstanceBindingSnippet}}
 ````C#

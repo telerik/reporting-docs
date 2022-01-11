@@ -22,12 +22,12 @@ To start the report conversion:
 
 * Visual Studio:           
 
-   + Create a new class library or use an existing one.                 Verify that the targeted .NET framework version is .NET4(+), Full profile as Client profile is not supported.               
+   + Create a new class library or use an existing one.                 Verify that the targeted.NET framework version is.NET4(+), Full profile as Client profile is not supported.               
 
-   + __Right-click__  the project context menu and select                 __Add | New Item | Telerik Report__ .                 Enter a name for the report class and click the __Add__  button to close the dialog. The Import Report Wizard opens.               
+   + __Right-click__  the project context menu and select                 __Add | New Item | Telerik Report__.                 Enter a name for the report class and click the __Add__  button to close the dialog. The Import Report Wizard opens.               
 
 |  __Step__  |  __Description__  |
 | ------ | ------ |
 | __Report Converter Page__ |Choose from a list of the available converters.|
-| __Report Conversion Summary__ |This page lets you review the conversion summary.<br/>            Click Finish to continue with the report setup|
+| __Report Conversion Summary__ |This page lets you review the conversion summary.<br/>            Click Finish to continue with the report setup.|
 

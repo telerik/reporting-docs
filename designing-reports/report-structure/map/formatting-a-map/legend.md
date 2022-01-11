@@ -16,7 +16,7 @@ When the data appearing in a map chart contains multiple variables, the chart ma
 
 A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series,         and a text string that describes the series.       
 
-> When using a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) , the legend items depend on its            [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount)  property.         
+> When using a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries), the legend items depend on its            [ColorsCount](/reporting/api/Telerik.Reporting.ShapeMapSeries#Telerik_Reporting_ShapeMapSeries_ColorsCount)  property.         
 
 You can format a legend with the Legends properties.         Click the legend to change the legend position, size, title and items style, background color and borders.       
 
@@ -30,7 +30,7 @@ Items are ordered in the legend according to the order that they are processed b
 
 You can change the legend items text by changing the Map.MapSeries Legend [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         
 
-> When using a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) , the LegendItem.Value expression allows the usage             of two specific references: `RangeMin` and `RangeMax`, that determine the minimum and maximum values             of the respective data range.           
+> When using a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries), the LegendItem.Value expression allows the usage             of two specific references: `RangeMin` and `RangeMax`, that determine the minimum and maximum values             of the respective data range.           
 
 ## Changing the Color of a Legend Item
 
@@ -42,9 +42,9 @@ You can change the legend items text style by selecting the legend and with __Pr
 
 > If you are using the Standalone Report Designer you can take advantage of the ribbon format and map tools.           
 
-1. Click the map legend that you want to change.    The selected legend properties are listed in the __Property Browser__ .                 
+1. Click the map legend that you want to change.    The selected legend properties are listed in the __Property Browser__.                 
 
-1. In the __Style property__ , click the __Edit Collection (…) button__ . The Edit style dialog opens.                                       Modify the style properties as required.                 
+1. In the __Style property__, click the __Edit Collection (…) button__. The Edit style dialog opens.                                       Modify the style properties as required.                 
 
 1. When you are done, click OK.                 
 
@@ -58,15 +58,15 @@ You can move the legend to one of twelve different positions when the legend is 
 
 ###Reposition the Legend:
 
-1. Click the legend area.    The legend properties are listed in the __Property Browser__ ;                 
+1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
 1. In the __Misc__  section select a value for the Position property.                 
 
 ###Move the Legend Inside the Plot area:
 
-1. Click the legend area.    The legend properties are listed in the __Property Browser__ ;                 
+1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
-1. In the __Misc__  section set the __IsInsideThePlotArea property__  to __True__ .                 
+1. In the __Misc__  section set the __IsInsideThePlotArea property__  to __True__.                 
 
 ## Displaying Legend Items Horizontally
 
@@ -83,9 +83,17 @@ The legend can be absolutely or automatically sized.           If the Height or 
 * Relatively positioned - TopLeft, TopCenter, TopRight, BottomLeft, BottomCenter, BottomRight:             The height is absolute if set, otherwise the legend can grow vertically.               The legend can stretch up to the PlotArea height when IsInsidePlotArea = True and no more than half of the map height when IsInsidePlotArea = False.             The width is taken into account, only if all items can fit in the provided space.               Otherwise the legend grows horizontally, stretching to the limits of the map at maximum.             The ordering of the items is "across then down", forming rows.             
 
 # See Also
- * [MapLegend](/reporting/api/Telerik.Reporting.MapLegend)  * [Legends](/reporting/api/Telerik.Reporting.Map#Telerik_Reporting_Map_Legends) 
+ 
 
- * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [MapLegend](/reporting/api/Telerik.Reporting.MapLegend)  
 
- * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Legends](/reporting/api/Telerik.Reporting.Map#Telerik_Reporting_Map_Legends) 
+
+ 
+
+* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+
+ 
+
+* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

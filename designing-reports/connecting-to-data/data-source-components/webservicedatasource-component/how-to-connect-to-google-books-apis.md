@@ -16,11 +16,11 @@ In this article we are going to review the process of creating a report which re
 
 ## Create a report and retrieve data from the Google Books APIs.
 
-1. To connect to Google Books APIs first we need to get access to the API. There are multiple ways to achieve this described in                [Using the API](https://developers.google.com/books/docs/v1/using) .               For this how-to we are going to acquire and use an API key according to the Google Books APIs documentation.               
+1. To connect to Google Books APIs first we need to get access to the API. There are multiple ways to achieve this described in                [Using the API](https://developers.google.com/books/docs/v1/using).               For this how-to we are going to acquire and use an API key according to the Google Books APIs documentation.               
 
   ![Google Books Api Key](images/DataSources/GoogleBooksApiKey.png)
 
-1. After the API key is acquired we need to enable the Google Books API inside the Library menu or follow the direct link:                [Google Books API](https://console.developers.google.com/apis/library/books.googleapis.com) .             
+1. After the API key is acquired we need to enable the Google Books API inside the Library menu or follow the direct link:                [Google Books API](https://console.developers.google.com/apis/library/books.googleapis.com).             
 
 1. Create a new report using the report designer of your choice. We are going to use the Standalone Report Designer for this article.
 
@@ -36,7 +36,7 @@ In this article we are going to review the process of creating a report which re
 
   ![Google Books Params](images/DataSources/GoogleBooksParams.png)
 
-1. Preview data source results. Click the __Download__  button to retrieve the data according to the current settings and design-time parameters.               The preview shows raw JSON data returned from the service. When the service returns a JSON array, the preview displays multiple rows of raw data.               The Google Books API returns a single JSON object containing *items* , *kind* , and               *totalItems*  properties. What we are interested in is the *items*  property which contains an array of the returned books               filtered by our search terms.               
+1. Preview data source results. Click the __Download__  button to retrieve the data according to the current settings and design-time parameters.               The preview shows raw JSON data returned from the service. When the service returns a JSON array, the preview displays multiple rows of raw data.               The Google Books API returns a single JSON object containing *items*, *kind*, and               *totalItems*  properties. What we are interested in is the *items*  property which contains an array of the returned books               filtered by our search terms.               
 
   ![Google Books Download](images/DataSources/GoogleBooksDownload.png)
 

@@ -20,7 +20,7 @@ The following walk through demonstrates how to create a Master-Detail report usi
 
   ![](images/MasterDetail0000.png)
 
-1. Add a new Telerik Report item to the project via __Add New item - Reporting - Telerik Reporting [VERSION] Wizard - Blank Report, and name it DetailReport__ .             
+1. Add a new Telerik Report item to the project via __Add New item - Reporting - Telerik Reporting [VERSION] Wizard - Blank Report, and name it DetailReport__.             
 
 1. Click on the report selector (upper left corner of design surface) to select the report.             
 
@@ -53,7 +53,7 @@ This next set of steps creates a report parameter and a filter that uses the rep
 
 1. In the __Property Window__  navigate to the __ReportParameters__                property and click the ellipses.             
 
-1. In the ReportParameter Collection Editor click the __Add__  button. In the Name property               for the parameter enter __ProductCategoryID__ . Enter zero for the __Value__  property.               
+1. In the ReportParameter Collection Editor click the __Add__  button. In the Name property               for the parameter enter __ProductCategoryID__. Enter zero for the __Value__  property.               
 
   ![](images/MasterDetail0011.png)
 
@@ -71,7 +71,7 @@ The master report will contain only a simple listing of product categories.
 
 1. Add a new report item to the project and name it MasterReport.             
 
-1. The [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) will display automatically, when you select               __Telerik Report [VERSION] Wizard - Band Report Wizard__ .             
+1. The [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) will display automatically, when you select               __Telerik Report [VERSION] Wizard - Band Report Wizard__.             
 
 1. On __Choose Data Source__  page of the wizard, click __Add New Data Source__  button and select               [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). On the __Choose Your Data Connection__  page of the wizard,               select the saved database connection you created for the detail report. Click the __Next__  button.             
 
@@ -98,7 +98,7 @@ This next set of steps ties both reports together using a SubReport to display t
 
 1. Click the __New__  button to define a parameter.             
 
-1. Set the __Parameter Name__  to __ProductCategoryID__  and the parameter value to __=Fields.ProductCategoryID__ .             
+1. Set the __Parameter Name__  to __ProductCategoryID__  and the parameter value to __=Fields.ProductCategoryID__.             
 
 1. Click the __OK__  button to close the parameters dialog and click __OK__                once again to close the Report Source dialog.               
 

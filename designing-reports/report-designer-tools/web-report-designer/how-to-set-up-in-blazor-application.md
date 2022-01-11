@@ -18,7 +18,7 @@ position: 2
 
 *  [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
 
-* Existing ASP.NET Core 3.1, .NET 5, or .NET 6 Blazor Server or WebAssembly application                         
+* Existing ASP.NET Core 3.1,.NET 5, or.NET 6 Blazor Server or WebAssembly application                         
 
 * The designer consumes reports generated and served from a running REST Service.                             Such can be referenced from another application or it can be hosted locally in the Blazor application as described below.                         
 
@@ -34,9 +34,9 @@ public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllers();
     services.AddRazorPages()
-        .AddNewtonsoftJson();
+     .AddNewtonsoftJson();
     services.AddServerSideBlazor();
-    ...
+ ...
 ````
 
 1. Add the required services in the __ConfigureServices__  method. The sample configuration below                             uses the __Reports__  folder in the __WebRootPath__  to open and save report definitions.                             It is required to create the __Reports__  folder manually under __wwwroot__                              and optionally add some report definitions inside.                         
@@ -67,7 +67,7 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();
-    ...
+ ...
 });
 ````
 
@@ -78,7 +78,7 @@ app.UseEndpoints(endpoints =>
 app.UseStaticFiles();
 ````
 
-1. Implement a Report Designer controller. Add a __Controllers__  folder to the application                             and right-click on it to add a new __Web API Controller Class__  item.                             Name it *ReportDesignerController* . This will be the Telerik Web Report Designer REST service in the                             project.                         
+1. Implement a Report Designer controller. Add a __Controllers__  folder to the application                             and right-click on it to add a new __Web API Controller Class__  item.                             Name it *ReportDesignerController*. This will be the Telerik Web Report Designer REST service in the                             project.                         
 
     
       ````c#
@@ -108,7 +108,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js"></script>
 <script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
-<script src="/api/reportdesigner/designerresources/js/webReportDesigner- {{site.buildversion}} .min.js/"></script>
+<script src="/api/reportdesigner/designerresources/js/webReportDesigner- {{site.buildversion}}.min.js/"></script>
 ````
 
 1. Add                              [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)                              to the __head__  element of the                             __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly).                             The Razor syntax for a server application differs and you need to escape the __@__  symbol as __@@__ :                         
@@ -127,7 +127,7 @@ public class ReportDesignerController : ReportDesignerControllerBase
 @*<script src="_content/Telerik.WebReportDesigner.Blazor.Trial/telerikWebReportDesignerInterop.js" defer></script>*@
 ````
 
-1. Use the following snippet to place the designer component in a razor page like __Pages/Index.razor__ .                         
+1. Use the following snippet to place the designer component in a razor page like __Pages/Index.razor__.                         
 
     
       ````

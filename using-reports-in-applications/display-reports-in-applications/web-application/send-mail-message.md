@@ -40,5 +40,7 @@ The dialog consists of the following components:
 
 # See Also
 
- * [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%})[](c578f366-93da-4dd1-8972-6efbc5a1790b#sendEmailOption)
+ 
+
+* [Implement Send Mail Message]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message%})[](c578f366-93da-4dd1-8972-6efbc5a1790b#sendEmailOption)
 

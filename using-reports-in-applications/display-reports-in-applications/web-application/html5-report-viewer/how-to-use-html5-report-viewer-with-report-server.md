@@ -18,7 +18,7 @@ The quickest way to add a HTML5 Report Viewer to your web project is with the   
 
 1. Review the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).             
 
-1. Installed and running                [Telerik Report Server ](https://docs.telerik.com/report-server/introduction) .             
+1. Installed and running                [Telerik Report Server ](https://docs.telerik.com/report-server/introduction).             
 
 1. Report Server's built-in __Guest__  user should be enabled.             
 
@@ -26,9 +26,9 @@ The quickest way to add a HTML5 Report Viewer to your web project is with the   
 
 ## Configuring the HTML5 Report Viewer to work with Report Server using Item Templates
 
-The VS item template will integrate HTML5 Report Viewer in a .html page           and will connect to the            [Telerik Report Server](https://docs.telerik.com/report-server/introduction)            to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
+The VS item template will integrate HTML5 Report Viewer in a.html page           and will connect to the            [Telerik Report Server](https://docs.telerik.com/report-server/introduction)            to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
 
-* To start the item template wizard, in __Solution Explorer__ , select the target project. On the               __Project menu__ , click __Add -> New Item__ . In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category. Select __Telerik HTML5 Report Viewer Page__  item.             
+* To start the item template wizard, in __Solution Explorer__, select the target project. On the               __Project menu__, click __Add -> New Item__. In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category. Select __Telerik HTML5 Report Viewer Page__  item.             
 
 * You will be prompted to accept building the project. Click 'OK'.             
 
@@ -58,7 +58,7 @@ After finishing, the item template automatically do the following:
 
 * Configures the NuGet packages, if nessesary.             
 
-* Adds a __HTML page with the configured HTML5 Report Viewer__ .             
+* Adds a __HTML page with the configured HTML5 Report Viewer__.             
 
 * Displays a __summary log__  that list all of the made changes.             
 
@@ -135,13 +135,19 @@ The most common reasons for failure are related with the authentication against 
 |The page shows the message:`The report server URL is not specified`or`Error loading the report viewer's templates`|The reportServer's __url__ property is empty or invalid.|
 |The report viewer loads the template, but displays a message`"Error creating report instance`or`Unable to get report parameters.                 Report ' *Category* / *Report* ' cannot be resolved.`|Check again the report source's __report__ arguments and make sure the category name and the report name exist in Report Server.|
 |The viewer loads the template, but displays a message`Unable to get report parameters. Access denied.`|Make sure that the user account has permissions to read the specified report and category.|
-|The viewer doesn't load any page and there is only a label saying __loading...__ in the top left page corner.|Check the Fiddler log for a request to the`/Token`URL.                 This is the request that should obtain the token used to authenticate the user account. When found, check the Response headers and look for the error code below:<br/>* `HTTP/1.1 502 Fiddler - DNS Lookup Failed`- make sure you have set the Report Server URL correctly.<br/>* `HTTP/1.1 400 Bad Request`- check if the built-in Guest user is __Enabled__ and has __Read__ permissions for configured report|
+|The viewer doesn't load any page and there is only a label saying __loading...__ in the top left page corner.|Check the Fiddler log for a request to the`/Token`URL.                 This is the request that should obtain the token used to authenticate the user account. When found, check the Response headers and look for the error code below:<br/>* `HTTP/1.1 502 Fiddler - DNS Lookup Failed`- make sure you have set the Report Server URL correctly.<br/>* `HTTP/1.1 400 Bad Request`- check if the built-in Guest user is __Enabled__ and has __Read__ permissions for configured report.|
 
 # See Also
 
- * [How To: Use HTML5 Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
+ 
 
- * [Telerik Report Server](http://docs.telerik.com/report-server/introduction)
+* [How To: Use HTML5 Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
 
- * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
+ 
+
+* [Telerik Report Server](http://docs.telerik.com/report-server/introduction)
+
+ 
+
+* [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
 

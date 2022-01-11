@@ -16,7 +16,7 @@ The  [WebServiceDataSource](/reporting/api/Telerik.Reporting.WebServiceDataSourc
 
 The web service may omit properties with empty values in the data response to save bandwidth. The result is that not all of the objects have the same list of properties.         Due to this no errors will be shown in the report if an undefined data field name is used inside an expression.       
 
-The data field names for this data source are __case-sensitive__ . It is required to use the correct data field names in expressions, otherwise no data will be shown.       
+The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.       
 
 > In order to preview reports which use the WebServiceDataSource component it is required to reference the  __Telerik.Reporting.WebServiceDataSource__  DLL or the corresponding NuGet package           in your application.         
 
@@ -27,40 +27,40 @@ __Web Service Request Configuration:__
 | Setting | Description |
 | ------ | ------ |
 |Service URL|The URL the request is sent to. Returns the data from the web service. Required if inline data string or external data file is not set. __The service URL should not contain any query parameters. Query parameters can be configured in the next wizard page.__ |
-|IgnoreResponseErrors|When set to *true* treats any response errors as if no data is returned from the web service.                 Default is *false* .|
+|IgnoreResponseErrors|When set to *true* treats any response errors as if no data is returned from the web service.                 Default is *false*.|
 |Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data returned from the web service. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 |Authentication|The authentication type. Basic and 2-step (Bearer) authentication are supported. 2-step (Bearer) authentication mode can be used for the OAuth 2.0                 authorization framework. Additional information is available in the following sections.|
 |Encoding|Data encoding. Default is UTF-8.|
 |Method|HTTP request method. GET and POST are the supported methods.|
 |Body|The body of the POST method. Applicable only for POST HTTP request method.|
-|Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.                 The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields                 with the expression result or static value|
+|Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.                 The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields                 with the expression result or static value.|
 
 __Inline Data String Configuration:__ 
 
 | Setting | Description |
 | ------ | ------ |
 |Source|The inline data string containing the data. Required if Service URL or external data file is not set.Setting both Service URL and inline data string at the same time will reduce network load during design-time as no HTTP requests will be made while the report is designed.                 Instead the inline data will be used for any design-time operations. The Service URL will be used only at run-time                 (this includes data source preview and report preview operations).|
-|Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})|
+|Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 
 __External Data File Configuration:__ 
 
 | Setting | Description |
 | ------ | ------ |
 |Source|The external data file containing the data. The URI to the file might be relative or absolute. Required if Service URL or inline data string is not set.Setting both Service URL and external data file at the same time will reduce network load during design-time as no HTTP requests will be made while the report is designed.                 Instead the external data file will be used for any design-time operations. The Service URL will be used only at run-time                 (this includes data source preview and report preview operations).|
-|Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})|
+|Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 
 ## Basic Authentication Settings
 
-Below are listed the available settings for Basic authentication. The authentication scheme is defined in            [The 'Basic' HTTP Authentication Scheme (RFC 7617)](https://tools.ietf.org/html/rfc7617) . This scheme transmits credentials as username/password pairs, encoded using base64.         
+Below are listed the available settings for Basic authentication. The authentication scheme is defined in            [The 'Basic' HTTP Authentication Scheme (RFC 7617)](https://tools.ietf.org/html/rfc7617). This scheme transmits credentials as username/password pairs, encoded using base64.         
 
 | Setting | Description |
 | ------ | ------ |
 |Username|The username used to authenticate. Required.|
-|Password|The password used to authenticate|
+|Password|The password used to authenticate.|
 
 ## 2-Step (Bearer) Authentication Settings
 
-Below are listed the available settings for 2-step (Bearer) authentication. The Bearer authentication scheme is defined in            [The OAuth 2.0 Authorization Framework: Bearer Token Usage (RFC 6750)](https://tools.ietf.org/html/rfc6750) . Bearer tokens can be used to access OAuth 2.0-protected resources.           The WebServiceDataSource component supports the following OAuth 2.0 authorization mechanisms out-of-the-box:         
+Below are listed the available settings for 2-step (Bearer) authentication. The Bearer authentication scheme is defined in            [The OAuth 2.0 Authorization Framework: Bearer Token Usage (RFC 6750)](https://tools.ietf.org/html/rfc6750). Bearer tokens can be used to access OAuth 2.0-protected resources.           The WebServiceDataSource component supports the following OAuth 2.0 authorization mechanisms out-of-the-box:         
 
 *  [Password Grant](https://www.oauth.com/oauth2-servers/access-tokens/password-grant/) 
 
@@ -79,7 +79,7 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 |Token Path|This is a __regular expression__ that allows to retrieve the authentication or session key from the response received via the Login URL.                 For example, when the Login URL returns a JSON response containing the authentication token in the form: *{"access_token":"cbm9W3MeTeVPuO5CIq_DTvG5KbzydpRQ","token_type":"bearer","expires_in":1799,"userName":"demouser",".issued":"Tue, 15 May 2018 08:42:32 GMT",".expires":"Tue, 15 May 2018 09:12:32 GMT"}* the token path regular expression to retrieve the token would be: *(?:"access_token":")(.*?)(?:")*  __Leaving this field empty will include the entire login-reponse as token.__ |
 |Logout URL|This URL is called if the resource features a lockout for having too many sessions open. Refresh the report and try again after successfully logging out.|
 |Logout Method|Specifies the HTTP request method used for the Logout URL.|
-|Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.                 The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields                 with the expression result or static value|
+|Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.                 The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields                 with the expression result or static value.|
 
 ## Cookie-Based Authentication
 
@@ -89,13 +89,15 @@ It is possible to leverage the 2-Step Authentication mechanism above in order to
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above             
+*.NET Framework 4.0 and above             
 
-* .NET Core 2.0 and above             
+*.NET Core 2.0 and above             
 
-* .NET Standard 2.0 and above             
+*.NET Standard 2.0 and above             
 
 # See Also
 
- * [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%})
+ 
+
+* [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%})
 

@@ -16,7 +16,7 @@ In the Silverlight Report Viewer, localized resources are stored in separate __
 
 ## Types of Resources in the Hierarchy
 
-* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the __Report Viewer__  .
+* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the __Report Viewer__.
 
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, French ("fr") is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 
@@ -44,13 +44,13 @@ __The Report Viewer__  uses the following naming convention when searching for 
 
 * Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should      be named as follows:*Telerik.ReportViewer.Silverlight.TextResources.fr.resx* 
 
-* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the          __Report Viewer__ . In that case the resource file should be named as follows:*Telerik.ReportViewer.Silverlight.TextResources.resx* 
+* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the          __Report Viewer__. In that case the resource file should be named as follows:*Telerik.ReportViewer.Silverlight.TextResources.resx* 
 
 As described above, if for example the current UI culture is set to French Belgian, the __Report Viewer__  will search for localized __RESX__  resource files inside the main application folder in the following order:
 
-1. Telerik.ReportViewer.Silverlight.TextResources. __fr-BE__  .resx
+1. Telerik.ReportViewer.Silverlight.TextResources. __fr-BE__.resx
 
-1. Telerik.ReportViewer.Silverlight.TextResources. __fr__  .resx
+1. Telerik.ReportViewer.Silverlight.TextResources. __fr__.resx
 
 1. Telerik.ReportViewer.Silverlight.TextResources.resx
 
@@ -70,7 +70,7 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
    1. __Copy to Output Directory:__  "*Copy if newer* " or "*Copy always* "
 
-1. Open the __RESX__  resource file in the __Visual Studio Resource Editor__  . Enter the required 
+1. Open the __RESX__  resource file in the __Visual Studio Resource Editor__. Enter the required 
 resource strings ([TextResources](/reporting/api/Telerik.ReportViewer.Silverlight.TextResources)) 
 to translate the __Report Viewer__  to the desired language.
 
@@ -89,13 +89,13 @@ fr;fr-BE
 
 1. Reload and build the project
 
-1. Repeat steps from 1 to 3 for each desired translation of the __Report Viewer__  . Steps 4 to 7 can be performed at the end only once.
+1. Repeat steps from 1 to 3 for each desired translation of the __Report Viewer__. Steps 4 to 7 can be performed at the end only once.
 
-1. Compile and run the project. When viewing a __Telerik Report__  , the __Report Viewer__  should be translated according to the current UI culture.
+1. Compile and run the project. When viewing a __Telerik Report__, the __Report Viewer__  should be translated according to the current UI culture.
 
 ## Distributing an Application with a Localized Report Viewer
 
-In order to distribute an application that uses __Telerik Reporting__              with a localized __Report Viewer__ , one should distribute all of the required              localization __RESX__  resource files, in addition to the main application assemblies.              For __Silverlight Applications__  the __RESX__              files should be placed in the "Localization" folder.
+In order to distribute an application that uses __Telerik Reporting__              with a localized __Report Viewer__, one should distribute all of the required              localization __RESX__  resource files, in addition to the main application assemblies.              For __Silverlight Applications__  the __RESX__              files should be placed in the "Localization" folder.
 
 ## Localization Using the ITextResources interface
 
@@ -128,7 +128,7 @@ public class CustomResources : Telerik.ReportViewer.Silverlight.ITextResources
         }
     }
 
-    //...... Implement the rest of the properties ......
+    //...... Implement the rest of the properties......
 }
 ````
 {{source=CodeSnippets\SilverlightVB\API\Telerik\ReportViewer\Silverlight\Localization\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationSnippetStart}}
@@ -154,7 +154,7 @@ Public Class CustomResources
         End Get
     End Property
 
-    '...... Implement the rest of the properties ......
+    '...... Implement the rest of the properties......
 End Class
 ````
 
@@ -188,7 +188,7 @@ public class CustomTextResources : Telerik.ReportViewer.Silverlight.ITextResourc
         }
     }
 
-    //...... Implement the rest of the properties ......
+    //...... Implement the rest of the properties......
 }
 ````
 {{source=CodeSnippets\SilverlightVB\API\Telerik\ReportViewer\Silverlight\Localization\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationUsingMethodsSnippetStart}}
@@ -214,7 +214,7 @@ Public Class CustomTextResources
         End Get
     End Property
 
-    '...... Implement the rest of the properties ......
+    '...... Implement the rest of the properties......
 End Class
 ````
 
@@ -228,9 +228,15 @@ End Class
 
 # See Also
 
- * [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
+ 
 
- * [Silverlight Globalization and Localization Overview](http://msdn.microsoft.com/en-us/library/cc838238(v=vs.95).aspx)
+* [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
 
- * [Security and Localized Satellite Assemblies](http://msdn2.microsoft.com/en-us/library/ff8dk041(VS.71).aspx)
+ 
+
+* [Silverlight Globalization and Localization Overview](http://msdn.microsoft.com/en-us/library/cc838238(v=vs.95).aspx)
+
+ 
+
+* [Security and Localized Satellite Assemblies](http://msdn2.microsoft.com/en-us/library/ff8dk041(VS.71).aspx)
 

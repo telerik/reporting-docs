@@ -18,7 +18,7 @@ The context menu will conditionally display items depending on the area of the 
 
 *  __Style:__  Invokes the Edit Style dialog for the right-clicked item.  From here you can set the Text, Background, Edges and Line style for the report items, sections or the report as a whole.
 
-*  __Copy, Paste, Reset Style:__  To copy the style from one item in the report, right-click a report item and select __Copy Style__  , then right-click another report item and select __Paste Style__  .  Right-click and select __Reset Style__  to restore an items previous style before the paste.
+*  __Copy, Paste, Reset Style:__  To copy the style from one item in the report, right-click a report item and select __Copy Style__, then right-click another report item and select __Paste Style__.  Right-click and select __Reset Style__  to restore an items previous style before the paste.
 
 *  __Page Header, Page Footer, Report Header:__  and __Report Footer__  : These menu items can be toggled on and off to create and remove respective sections in the report.
 

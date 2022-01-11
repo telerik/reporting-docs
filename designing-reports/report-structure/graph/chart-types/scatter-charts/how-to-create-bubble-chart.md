@@ -16,7 +16,7 @@ In this article we will show you how to create a Bubble chart using the Graph it
 
 1. Add a new graph item to the report.
 
-   1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ .                 
+   1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.                 
 
    1. Set the connection string to the demo AdventureWorks database.
 
@@ -46,21 +46,21 @@ INNER JOIN Person.Contact ON HumanResources.Employee.ContactID = Person.Contact.
 
    1. Set the __Name__  to *categoryGroup1* 
 
-1. Open __CoordinateSystems__  collection editor and __Add__  a new __CartesianCoordinateSystem__ .             
+1. Open __CoordinateSystems__  collection editor and __Add__  a new __CartesianCoordinateSystem__.             
 
-   1. Leave the __Name__  to *cartesianCoordinateSystem1* .                 
+   1. Leave the __Name__  to *cartesianCoordinateSystem1*.                 
 
-   1. Set the __XAxis__  to __New Axis with Numerical Scale__ .                 
+   1. Set the __XAxis__  to __New Axis with Numerical Scale__.                 
 
-   1. Set the __YAxis__  to __New Axis with Numerical Scale__ .                 
+   1. Set the __YAxis__  to __New Axis with Numerical Scale__.                 
 
-1. Open __Series__  collection editor and __Add__  new __LineSeries__ .             
+1. Open __Series__  collection editor and __Add__  new __LineSeries__.             
 
-   1. Set the __CategoryGroup__  to __categoryGroup1__ .                 
+   1. Set the __CategoryGroup__  to __categoryGroup1__.                 
 
-   1. Set the __SeriesGroup__  to __seriesGroup1__ .                 
+   1. Set the __SeriesGroup__  to __seriesGroup1__.                 
 
-   1. Set the __CoordinateSystem__  to __cartesianCoordinateSystem1__ .                 
+   1. Set the __CoordinateSystem__  to __cartesianCoordinateSystem1__.                 
 
    1. Set the __X__  value to *=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))* 
 
@@ -68,11 +68,11 @@ INNER JOIN Person.Contact ON HumanResources.Employee.ContactID = Person.Contact.
 
    1. Set the __Size__  expression to *=Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0)) - Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))* 
 
-   1. Set the __LineStyle.Visible__  to __False__ .                 
+   1. Set the __LineStyle.Visible__  to __False__.                 
 
-   1. Set the __DataPointStyle.Visible__  to __True__ .                 
+   1. Set the __DataPointStyle.Visible__  to __True__.                 
 
-   1. Set the __MarkerType__  to __Circle__ .                 
+   1. Set the __MarkerType__  to __Circle__.                 
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
 

@@ -32,19 +32,19 @@ The properties that define the behavior of the Cross-section item are listed bel
 
 The properties that define the appearance of the Cross-section item are listed below:         
 
-* __Type__  - this property defines the type graphical primitive rendered by the cross-section item.               It can be *Line*  or *Rectangle* . The default value is *Line* .             
+* __Type__  - this property defines the type graphical primitive rendered by the cross-section item.               It can be *Line*  or *Rectangle*. The default value is *Line*.             
 
-* __Position__  - this property defines whether the cross-section item will be rendered under the rest of the report items or on top of them.               It can be set to *Behind*  or *Front* . The default value is *Behind* .             
+* __Position__  - this property defines whether the cross-section item will be rendered under the rest of the report items or on top of them.               It can be set to *Behind*  or *Front*. The default value is *Behind*.             
 
-The  [Location](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location)  and            [Size](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size)  properties are calculated based on the           *BeginSection* , *BeginMargin* , *EndSection*  and *EndMargin*  properties.           Changing the values of the  [Location](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location) - or            [Size](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size) -related property like            [Top](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Top) ,            [Left](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Left) ,            [Width](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Width)  or            [Height](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Height)  will recalculate the values of           *BeginSection* , *BeginMargin* , *EndSection*  and *EndMargin*  properties.         
+The  [Location](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location)  and            [Size](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size)  properties are calculated based on the           *BeginSection*, *BeginMargin*, *EndSection*  and *EndMargin*  properties.           Changing the values of the  [Location](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location) - or            [Size](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size) -related property like            [Top](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Top),            [Left](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Left),            [Width](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Width)  or            [Height](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Height)  will recalculate the values of           *BeginSection*, *BeginMargin*, *EndSection*  and *EndMargin*  properties.         
 
-In most scenarios the *Begin-*  and *End*  sections would have matching types and hierarchy levels, i.e.            *ReportHeader - ReportFooter, GroupHeader - GroupFooter* . Choosing mismatching sections can produce unexpected rendering results.         
+In most scenarios the *Begin-*  and *End*  sections would have matching types and hierarchy levels, i.e.            *ReportHeader - ReportFooter, GroupHeader - GroupFooter*. Choosing mismatching sections can produce unexpected rendering results.         
 
 ## Instantiation and Design-Time Support
 
 Since the Cross-section item can refer to more than one report sections, its parent is the  [Report](/reporting/api/Telerik.Reporting.Report)  item.           Hence the Cross-section item can be dragged from the designer's toolbox onto the designer surface without selecting any report section first.           When the Cross-section item is moved or resized on the report designer surface, its Begin- and End-related properties are automatically calculated based on its current location and size and displayed in the Properties window.         
 
-Selecting a Cross-section item can be done through the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) tool window or by clicking on the graphical primitive the item displays.           If its *Type*  is set to __Line__ , the item's selectable area is on both sides of the displayed vertical line and spans to at least 6 pixels.           If the item's *Type*  is set to __Rectangle__ , the selectable area can be any of its sides, again spanning to at least 6 pixels.         
+Selecting a Cross-section item can be done through the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) tool window or by clicking on the graphical primitive the item displays.           If its *Type*  is set to __Line__, the item's selectable area is on both sides of the displayed vertical line and spans to at least 6 pixels.           If the item's *Type*  is set to __Rectangle__, the selectable area can be any of its sides, again spanning to at least 6 pixels.         
 
 > The Cross-section item has complete design-time support in Standalone Report Designer and Visual Studio Report Designer. The Web Report Designer currently provides basic designing capabilities and some of the properties of the Cross-section item cannot be edited through the dedicated property editors.
 
@@ -99,5 +99,7 @@ The Cross-section item is not supported in all rendering extensions. Please chec
 
 # See Also
 
- * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+ 
+
+* [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
 

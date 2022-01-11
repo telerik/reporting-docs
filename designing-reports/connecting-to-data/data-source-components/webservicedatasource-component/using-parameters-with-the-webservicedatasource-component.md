@@ -14,15 +14,15 @@ position: 3
 
 The __WebServiceDataSource__  component can request data in JSON format from a running web service.         It requires the base URL of the servcie specified in the __Service URL__  property.         The WebServiceDataSource can take parameters. The supported data source parameter types are:       
 
-* __Inline Parameters__ The values of this parameter type replace the corresponding part of the *Service URL* ,             and can be included in the body of a POST request.           
+* __Inline Parameters__ The values of this parameter type replace the corresponding part of the *Service URL*,             and can be included in the body of a POST request.           
 
-   + *Using Inline Parameters in Service Url* In the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}), the Service URL can be provided as                 __constantUrl__ , for example:                 
+   + *Using Inline Parameters in Service Url* In the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}), the Service URL can be provided as                 __constantUrl__, for example:                 
 
   ![Web Service Data Source Urlx 750](images/WebServiceDataSourceUrlx750.png)In the next step of the Wizard it is necessary to set the run-time and the design-time values for the parameter:                 
 
   ![Web Service Data Source Inline Parameterx 750](images/WebServiceDataSourceInlineParameterx750.png)The final request made by the WebServiceDataSource component to the web service with the design-time                 parameter value as captured by                  [Fiddler](https://www.telerik.com/download/fiddler)                  will look like:                 
 
-  ![Web Service Data Source Inline Parameter Request Urlx 750](images/WebServiceDataSourceInlineParameterRequestUrlx750.png)The entire Service URL can also be set to a WebServiceDataSource parameter, for example to                 __@serviceUrl__ . This allows for larger flexibility in using different end-points of a Web Service,                 or even different Web Services for the same data item.               
+  ![Web Service Data Source Inline Parameter Request Urlx 750](images/WebServiceDataSourceInlineParameterRequestUrlx750.png)The entire Service URL can also be set to a WebServiceDataSource parameter, for example to                 __@serviceUrl__. This allows for larger flexibility in using different end-points of a Web Service,                 or even different Web Services for the same data item.               
 
    + *Using Inline Parameters in the Body of the POST request* The single-value parameter should be surrounded by quotation marks. The multi-value parameter is provided as it is.                 For example, in the next set-up, *@name*  is a single-value parameter and                 *@surname*  is a multi-value parameter:                 
 
@@ -32,7 +32,7 @@ The __WebServiceDataSource__  component can request data in JSON format from a r
 
   ![Web Service Data Source Inline Parameter Request Url Bodyx 750](images/WebServiceDataSourceInlineParameterRequestUrlBodyx750.png)
 
-* __Query Parameters__ The query type parameters will be automatically concatenated to the Service URL. The final URL will be in the format           __serviceUrl__ For example, in a Web Api project to call the Action *GetWithQueryParameters(int id, string category)*              the default service URL will be *http://localhost:50160/api/data/GetWithQueryParameters* .             The images display how to set the query parameters in the Web Service Data Source Wizard of the Report Designer:             
+* __Query Parameters__ The query type parameters will be automatically concatenated to the Service URL. The final URL will be in the format           __serviceUrl__ For example, in a Web Api project to call the Action *GetWithQueryParameters(int id, string category)*              the default service URL will be *http://localhost:50160/api/data/GetWithQueryParameters*.             The images display how to set the query parameters in the Web Service Data Source Wizard of the Report Designer:             
 
   ![Web Service Data Source Query Parameterx 750](images/WebServiceDataSourceQueryParameterx750.png)and how will the generated final URL for the design-time parameter values look in Fiddler:             
 
@@ -52,5 +52,7 @@ The __WebServiceDataSource__  component can request data in JSON format from a r
 
 # See Also
 
- * [Using Parameters with Data Source objects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%})
+ 
+
+* [Using Parameters with Data Source objects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%})
 

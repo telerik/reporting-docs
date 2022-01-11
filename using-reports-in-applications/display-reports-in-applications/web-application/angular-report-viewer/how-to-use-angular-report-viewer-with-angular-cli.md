@@ -12,7 +12,7 @@ position: 1
 
 
 
-This tutorial demonstrates how to add the Angular Report Viewer component to a         new Angular application. The app's settings are similar to the settings of the local Angular demo project         installed by default under __[TelerikReporting_InstallDir]\Examples\Angular\CLI__ .       
+This tutorial demonstrates how to add the Angular Report Viewer component to a         new Angular application. The app's settings are similar to the settings of the local Angular demo project         installed by default under __[TelerikReporting_InstallDir]\Examples\Angular\CLI__.       
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ The following list describes the prerequisites for this tutorial:
 
 * Review the Angular Report Viewer [Requirements](e05255e3-dbe4-41b1-8d08-6de0fed3868c#Requirements).             
 
-*  [Angular CLI](https://cli.angular.io/) .             
+*  [Angular CLI](https://cli.angular.io/).             
 
 * A running application that hosts a Reporting REST service at address /api/reports. For more information, see               [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).             
 
@@ -52,7 +52,7 @@ The following list describes the prerequisites for this tutorial:
 npm install jquery
 ````
 
-1. Add a reference to jQuery in the scripts array of the .angular-cli.json (as of Angular 6 the file is renamed to angular.json):
+1. Add a reference to jQuery in the scripts array of the.angular-cli.json (as of Angular 6 the file is renamed to angular.json):
 
     
     ````js
@@ -66,7 +66,7 @@ npm install jquery
 npm install @progress/telerik-angular-report-viewer
 ````
 
-    >If you receive a  *403 Forbidden Error* , you need to register and login at                      [npmjs.com](https://www.npmjs.com/) before performing this step.                   
+    >If you receive a  *403 Forbidden Error*, you need to register and login at                      [npmjs.com](https://www.npmjs.com/) before performing this step.                   
 
     
     ````powershell
@@ -144,5 +144,7 @@ ng serve
 
 # See Also
 
- * [Make sure the service address is correct and enable CORS](https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service)
+ 
+
+* [Make sure the service address is correct and enable CORS](https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service)
 

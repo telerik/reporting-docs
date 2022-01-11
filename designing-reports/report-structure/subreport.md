@@ -24,13 +24,13 @@ The SubReport report item lets you display one report within another report. It 
 
 ## SubReport Height Issues
 
-To remove blank vertical space in the detail section of a __SubReport__ , set the Height of                the __SubReport.ReportSource__ __DetailSection__  to the height of the              tallest item. Sections can grow to accommodate their children but cannot shrink to hide empty space. If you want the              detail section to shrink only at runtime you can set the Height property of the DetailSection in the report constructor.              Place the __Height__  property assignment code just after the IntializeComponent() method call.
+To remove blank vertical space in the detail section of a __SubReport__, set the Height of                the __SubReport.ReportSource__ __DetailSection__  to the height of the              tallest item. Sections can grow to accommodate their children but cannot shrink to hide empty space. If you want the              detail section to shrink only at runtime you can set the Height property of the DetailSection in the report constructor.              Place the __Height__  property assignment code just after the IntializeComponent() method call.
 
 ## Passing Parameters to a SubReport
 
-1. Click the subreport item that you want to change.    The selected subreport properties are listed in the __Property Browser__ .
+1. Click the subreport item that you want to change.    The selected subreport properties are listed in the __Property Browser__.
 
-1. In the __ReportSource property__ , click the __Edit Collection (…) button__ .                         __Load a Report From__  window opens.                     
+1. In the __ReportSource property__, click the __Edit Collection (…) button__.                         __Load a Report From__  window opens.                     
 
 1. Click __Edit Parameters__  button to add a parameter.                          __Edit Parameters__  window opens.                     
 
@@ -40,7 +40,7 @@ To remove blank vertical space in the detail section of a __SubReport__ , set th
 
 1. __Parameter Value__  combobox allows you to enter value directly, create an "```<Expression>```" or a "```<New Report Parameter>```".                     
 
-1. When you are done, click __OK__ .                     
+1. When you are done, click __OK__.                     
 
   
 
@@ -48,13 +48,23 @@ To remove blank vertical space in the detail section of a __SubReport__ , set th
 
 # See Also
 
- * [How to configure a ReportSource for a SubReport]({%slug telerikreporting/designing-reports/report-sources/how-to-set-reportsource-for-subreport%})
+ 
 
- * [How to create a Master-Detail report using a SubReport]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
+* [How to configure a ReportSource for a SubReport]({%slug telerikreporting/designing-reports/report-sources/how-to-set-reportsource-for-subreport%})
 
- * [How to bind a SubReport to the parent report's data](https://www.telerik.com/support/kb/reporting/details/how-to-bind-sub-report-to-main-report-s-data)
+ 
 
- * [SubReport](/reporting/api/Telerik.Reporting.SubReport) 
+* [How to create a Master-Detail report using a SubReport]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
 
- * [ReportSource](/reporting/api/Telerik.Reporting.SubReport#Telerik_Reporting_SubReport_ReportSource) 
+ 
+
+* [How to bind a SubReport to the parent report's data](https://www.telerik.com/support/kb/reporting/details/how-to-bind-sub-report-to-main-report-s-data)
+
+ 
+
+* [SubReport](/reporting/api/Telerik.Reporting.SubReport) 
+
+ 
+
+* [ReportSource](/reporting/api/Telerik.Reporting.SubReport#Telerik_Reporting_SubReport_ReportSource)
 

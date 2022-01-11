@@ -24,7 +24,7 @@ The following list describes the prerequisites for this guide:
 
 1. Update the *Microsoft.AspNet.WebApi.WebHost*  NuGet package to version 5.2.7 or later.           
 
-When you use NuGet packages, the dependencies will be automatically resolved . Otherwise, you need to add them manually to the project.           For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).         
+When you use NuGet packages, the dependencies will be automatically resolved. Otherwise, you need to add them manually to the project.           For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).         
 
 > If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the              [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/)              and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions,             see [Deploying Open XML](25b584e0-8dd7-4cfd-8878-ffe5e0a95ad4#deploying_open_xml_sdk_for_ms_office).           
 
@@ -32,7 +32,7 @@ When you use NuGet packages, the dependencies will be automatically resolved . O
 
 The REST service works as a backend and is responsible for storage operations like creating, opening, or saving report definitions.            The following steps describe how to configure it:         
 
-1. Implement a Report Designer controller. Right-click on the __Controllers__                folder and add a new item: __Add__  > __New item__  > __Web API Controller Class__  item.               Name it __ReportDesignerController__ . This will be our Telerik Web Report Designer REST service in the               project.             
+1. Implement a Report Designer controller. Right-click on the __Controllers__                folder and add a new item: __Add__  > __New item__  > __Web API Controller Class__  item.               Name it __ReportDesignerController__. This will be our Telerik Web Report Designer REST service in the               project.             
 
 1. Inherit the  [ReportDesignerControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase)  type               and setup the `ReportServiceConfiguration` instance. Notice that there is another configuration               instance named `ReportDesignerServiceConfiguration`, which will initialize the definition storage.               This is the class, responsible for opening, saving etc. the report definitions. This is how a basic               implementation of the controller should look like:             
 
@@ -93,7 +93,7 @@ namespace CSharp.MvcDemo.Controllers
 
 ## Adding the Web Report Designer:
 
-1. Navigate to __Views__  -> __Home__  and add a new CSHTML Page for the Web Report Designer. Name the file __Index.cshtml__ .               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
+1. Navigate to __Views__  -> __Home__  and add a new CSHTML Page for the Web Report Designer. Name the file __Index.cshtml__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
 
     
       ````html
@@ -133,7 +133,7 @@ namespace CSharp.MvcDemo.Controllers
 </html>
 ````
 
-The *ReportDesignerController*  we added above is configured to search for its reports in a sub-folder                named __Reports__ .               The Report Designer widget we just configured will try to load a report named __SampleReport.trdp__ .               Add a new folder named __Reports__  to the solution and add an existing report named __SampleReport.trdp__  in it.             
+The *ReportDesignerController*  we added above is configured to search for its reports in a sub-folder                named __Reports__.               The Report Designer widget we just configured will try to load a report named __SampleReport.trdp__.               Add a new folder named __Reports__  to the solution and add an existing report named __SampleReport.trdp__  in it.             
 
 1. Register the *ReportsControllerConfiguration*  and *ReportDesignerControllerConfiguration*  routes in                the `Application_Start()` method of the __Global.asax__  file.               It is important to register them before the default routes as shown below:             
 

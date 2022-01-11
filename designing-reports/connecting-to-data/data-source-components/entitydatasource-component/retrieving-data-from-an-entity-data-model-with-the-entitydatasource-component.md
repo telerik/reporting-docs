@@ -93,7 +93,7 @@ Dim report As New Report1()
 report.DataSource = entityDataSource
 ````
 
-Another common problem is related to the lazy loading feature of the  [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx) . For example, let us            consider the following expression that obtains the category of a given product
+Another common problem is related to the lazy loading feature of the  [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/aa697427%28VS.80%29.aspx). For example, let us            consider the following expression that obtains the category of a given product
 
 =Fields.ProductSubcategory.ProductCategory.Name
 
@@ -156,10 +156,10 @@ Partial Class AdventureWorksEntities
                      From product In productSubcategory.Products
                      Select New ReportData With
                      {
-                         .CategoryName = productCategory.Name,
-                         .SubcategoryName = productSubcategory.Name,
-                         .ProductName = product.Name,
-                         .ListPrice = product.ListPrice
+                      .CategoryName = productCategory.Name,
+                      .SubcategoryName = productSubcategory.Name,
+                      .ProductName = product.Name,
+                      .ListPrice = product.ListPrice
                      }
 
         Return result.ToList()

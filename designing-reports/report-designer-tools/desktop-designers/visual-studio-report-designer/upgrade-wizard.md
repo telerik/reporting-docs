@@ -24,9 +24,9 @@ The __Upgrade Wizard__  will guide you through the process of upgrading Telerik 
 
 The wizard __will not__  change any code, namespaces, nor will it remove obsolete properties, events           and methods. You may need to manually update your code after this wizard completes.         
 
-> Web Site projects are not supported by the Upgrade Wizard. In Web Sites assembly references are handled differently,             and our recommendation is to upgrade manually or to turn the project into a Web Application that can be upgraded automatically -  [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx) .           
+> Web Site projects are not supported by the Upgrade Wizard. In Web Sites assembly references are handled differently,             and our recommendation is to upgrade manually or to turn the project into a Web Application that can be upgraded automatically -  [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx).           
 
-> .NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:           
+>.NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:           
 * The references to the Telerik Reporting assemblies or NuGet packages
 * The Htm5 Report Viewer scripts>
 

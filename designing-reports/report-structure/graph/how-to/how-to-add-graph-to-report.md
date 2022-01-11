@@ -12,7 +12,7 @@ position: 0
 
 
 
-The simplest way to add a __Graph__  item to your report is to run the Graph Wizard for Visual Studio report designer or to run          a *new Bar* , *Column* , *Area* , *Line* ,          *Pie* , *Scatter* , or *Others*  chart wizard in the standalone designer.          After you add a Graph item to the design surface, you can click the chart elements to edit the selected element's properties in the          *Properties*  grid or in the standalone Report Designer you can use the ribbon tools.               
+The simplest way to add a __Graph__  item to your report is to run the Graph Wizard for Visual Studio report designer or to run          a *new Bar*, *Column*, *Area*, *Line*,          *Pie*, *Scatter*, or *Others*  chart wizard in the standalone designer.          After you add a Graph item to the design surface, you can click the chart elements to edit the selected element's properties in the          *Properties*  grid or in the standalone Report Designer you can use the ribbon tools.               
 
 ## To add a graph to a report by using the Visual Studio report designer Graph Wizard
 

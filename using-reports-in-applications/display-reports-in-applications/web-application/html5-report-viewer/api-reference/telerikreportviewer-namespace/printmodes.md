@@ -20,5 +20,5 @@ position: 3
 | ------ |
 |AUTO_SELECT|
 |FORCE_PDF_PLUGIN|
-|FORCE_PDF_FIL|
+|FORCE_PDF_FILE|
 

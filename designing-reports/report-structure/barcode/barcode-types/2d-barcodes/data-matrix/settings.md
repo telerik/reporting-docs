@@ -26,7 +26,7 @@ The following table shows the supported encodations and provides information abo
 
 * __Text__  - Used primarily for lower-case alphanumerics.               The lower-case alphanumeric characters use 5.33 bits.               The upper-case and special characters use 10.66 bits.             
 
-* __X12__  - Uses the characters from                [ANSI X12 EDI data set](https://edi3.dicentral.com/ansi-x12) .               Each character takes 5.33 bits.             
+* __X12__  - Uses the characters from                [ANSI X12 EDI data set](https://edi3.dicentral.com/ansi-x12).               Each character takes 5.33 bits.             
 
 * __EDIFACT__  - Used to encode ASCII values in the 32-94 range.               Each character takes 6 bits.             
 
@@ -36,7 +36,7 @@ The following table shows the supported encodations and provides information abo
 
 ## SymbolSize
 
-Sets the symbol size and shape of the generated barcode. It can be automatically determined using           __SquareAuto__  or __RectangleAuto__ ,           or specific like __Square32x32__  or __Rectangle16x48__ .         
+Sets the symbol size and shape of the generated barcode. It can be automatically determined using           __SquareAuto__  or __RectangleAuto__,           or specific like __Square32x32__  or __Rectangle16x48__.         
 
 ## TextEncoding
 
@@ -66,7 +66,17 @@ Me.barcode1.Encoder = encoder
 ````
 
 # See Also
- * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  * [Telerik.Reporting.Barcodes.DataMatrixEncoder](/reporting/api/Telerik.Reporting.Barcodes.DataMatrixEncoder)  * [Encodation](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_Encodation)  * [SymbolSize](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_SymbolSize) 
+ 
 
- * [TextEncoding](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding)
+* [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  
+
+* [Telerik.Reporting.Barcodes.DataMatrixEncoder](/reporting/api/Telerik.Reporting.Barcodes.DataMatrixEncoder)  
+
+* [Encodation](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_Encodation)  
+
+* [SymbolSize](/reporting/api/Telerik.Reporting.Barcodes.DataMatrix#Telerik_Reporting_Barcodes_DataMatrix_SymbolSize) 
+
+ 
+
+* [TextEncoding](https://docs.microsoft.com/en-us/dotnet/api/system.text.encoding)
 

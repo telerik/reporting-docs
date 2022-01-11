@@ -18,13 +18,13 @@ Columns are specified using the  [ColumnCount](/reporting/api/Telerik.Reporting.
 
 Page width minus sum of left and right margins minus ColumnSpacing * (ColumnCount - 1). The result should be divided to the ColumnCount.
 
-> Columns are only applied when you view a report in  __Print Preview__ , print a report or export it to a page oriented format.A report with multi-column report layout used as a SubReport would be rendered as a single column report layout.
+> Columns are only applied when you view a report in  __Print Preview__, print a report or export it to a page oriented format.A report with multi-column report layout used as a SubReport would be rendered as a single column report layout.
 
 ## Setup multi-column report layout
 
 1. In the Properties window expand the __PageSettings__  property of the report.
 
-1. Change the __ColumnCount__  property to __4__  .
+1. Change the __ColumnCount__  property to __4__.
 
 1. Set __ColumnSpacing__  if needed.
 
@@ -62,5 +62,7 @@ The following specifics are visible from the preview:
 
 # See Also
 
- * [How to: Create Multi-Column Report - Across the Page and Then Down](http://www.telerik.com/support/kb/reporting/details/how-to-create-multi-column-report---across-the-page-and-then-down)
+ 
+
+* [How to: Create Multi-Column Report - Across the Page and Then Down](http://www.telerik.com/support/kb/reporting/details/how-to-create-multi-column-report---across-the-page-and-then-down)
 

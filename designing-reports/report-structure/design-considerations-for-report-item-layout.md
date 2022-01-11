@@ -78,7 +78,11 @@ This rendering behavior will affect how report item borders are rendered accordi
 
 # See Also
 
- * [How to Layout Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
+ 
 
- * [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})
+* [How to Layout Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
+
+ 
+
+* [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})
 

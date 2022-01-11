@@ -26,10 +26,10 @@ With the HtmlTextBox report item, you can:
 
 * Set an alignment value for any individual string of text.           
 
-For the full list with special entities like "?" and TAB and their expression, refer to this          [w3.org page](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent) .       
+For the full list with special entities like "?" and TAB and their expression, refer to this          [w3.org page](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent).       
 
 >  __Known Limitations:__ 
-* The HtmlTextBox works with the -text formatting options only- .
+* The HtmlTextBox works with the -text formatting options only-.
 * The HtmlTextbox is rendered as plain text with no formatting in Excel.
 * RTL (Right to Left) is not supported.
 * The HyperLink (```<A>``` tag) is interactive (acts as an actual hyperlink) only under an HTML rendering extension. To add links in PDF, XLSX, DOCX, PPTX files               and HTML, XAML, IMAGE renderings for the different Report Viewers, you can use a[Hyperlink Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%}).
@@ -71,7 +71,7 @@ You can style the text with the following CSS attributes:
 
 * color
 
-> When you import text that contains HTML markup, the data is always parsed by the HtmlTextBox first. Because             only a subset of HTML tags is supported, the HTML that is shown in the rendered report may differ from your             original HTML.           Also according to the HTML specification (and the general XML specification as well) the "&", "```<" and ">```"             characters are considered special (markup delimiters), so they need to be encoded in order to be treated as regular             text. For example the "&" character can be escaped with the "& amp;" entity. You can find more information on the subject in                 [this w3.org article](http://www.w3.org/TR/REC-xml/#syntax) .           
+> When you import text that contains HTML markup, the data is always parsed by the HtmlTextBox first. Because             only a subset of HTML tags is supported, the HTML that is shown in the rendered report may differ from your             original HTML.           Also according to the HTML specification (and the general XML specification as well) the "&", "```<" and ">```"             characters are considered special (markup delimiters), so they need to be encoded in order to be treated as regular             text. For example the "&" character can be escaped with the "& amp;" entity. You can find more information on the subject in                 [this w3.org article](http://www.w3.org/TR/REC-xml/#syntax).           
 
 Any other HTML markup tags will be ignored during report processing. If the HTML represented by the expression in the           HtmlTextBox is not well formed, the HtmlTextBox would throw an exception. All HTML tags are case-insensitive.         
 
@@ -113,10 +113,14 @@ The design time editor supports two modes:
 
   ![Html Text Box Html View](images/HtmlTextBox_HtmlView.png)
 
-> MultiLine and TextWrap concepts are always true for HtmlTextBox.The  __subscript__  and  __superscript__  tags can be nested (i.e. ```<sub>```subscript1```<sub>```subscript2```</sub>``````</sub>```),             resulting in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggles the  __subscript__  or  __superscript__  feature,             so if nested tags are needed, the appropriate code should be added manually using the editor's  __Html view__ .           
+> MultiLine and TextWrap concepts are always true for HtmlTextBox.The  __subscript__  and  __superscript__  tags can be nested (i.e. ```<sub>```subscript1```<sub>```subscript2```</sub>``````</sub>```),             resulting in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggles the  __subscript__  or  __superscript__  feature,             so if nested tags are needed, the appropriate code should be added manually using the editor's  __Html view__.           
 # See Also
 
- * [HtmlTextBox with Anchor tag vs Hyperlink Action](http://www.telerik.com/support/kb/reporting/report-items/details/htmltextbox-with-anchor-tag-vs-hyperlink-action)
 
- * [HtmlTextBox: #ERROR# An error occurred while parsing EntityName](http://www.telerik.com/support/kb/reporting/report-items/details/htmltextbox-an-error-occurred-while-parsing-entityname)
+
+* [HtmlTextBox with Anchor tag vs Hyperlink Action](http://www.telerik.com/support/kb/reporting/report-items/details/htmltextbox-with-anchor-tag-vs-hyperlink-action)
+
+
+
+* [HtmlTextBox: #ERROR# An error occurred while parsing EntityName](http://www.telerik.com/support/kb/reporting/report-items/details/htmltextbox-an-error-occurred-while-parsing-entityname)
 ````

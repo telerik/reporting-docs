@@ -18,8 +18,8 @@ The following table lists the device information settings for rendering in IMAGE
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-|OutputFormat|String|Defines the output format of the produced image. Supported formats are: __BMP__ , __EMF__ , __EMFPLUS__ , __GIF__ , __JPEG__ , __PNG__ .|
-|TextRenderingHint|string|Sets the rendering mode for text using a  [TextRenderingHint](https://msdn.microsoft.com/en-us/library/ssazt6bs(v=vs.110).aspx) enumeration member. The default value depends on the machine settings - if it has  [ClearType](https://www.microsoft.com/en-us/Typography/ClearTypeInfo.aspx) enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting.                 If text rendering hinting is not supported, the __SystemDefault__ value will be used|
+|OutputFormat|String|Defines the output format of the produced image. Supported formats are: __BMP__, __EMF__, __EMFPLUS__, __GIF__, __JPEG__, __PNG__.|
+|TextRenderingHint|string|Sets the rendering mode for text using a  [TextRenderingHint](https://msdn.microsoft.com/en-us/library/ssazt6bs(v=vs.110).aspx) enumeration member. The default value depends on the machine settings - if it has  [ClearType](https://www.microsoft.com/en-us/Typography/ClearTypeInfo.aspx) enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting.                 If text rendering hinting is not supported, the __SystemDefault__ value will be used.|
 
 For a detailed example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).         
 
@@ -72,7 +72,11 @@ JSON-based configuration file:
 
 # See Also
 
- * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
+ 
 
- * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
+* [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
+
+ 
+
+* [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
 

@@ -17,7 +17,6 @@ how to pass the real tokes to _config.yml
 
 how to use tokens in code snippets (CDATA)
 
-meta data is not displayed in the API Reference
 
 
 images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	https://testdocs.telerik.com/reporting/designing-reports/report-structure/graph/chart-types/overview
@@ -444,3 +443,7 @@ Renamed the other one (.aml to .aml111) so that it is not found.
 
 
 Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi\api\index.md - change this file accordingly
+
+
+meta data is not displayed in the API Reference
+fixed by adding the XMLs along with the DLLs

@@ -12,7 +12,7 @@ position: 2
 
 
 
-The Blazor Report Viewer exposes events as properties of the __ClientEventsOptions__  object. The JavaScript API of the event handlers is available in          [HTML5 Report Viewer Events](https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-ready) .       
+The Blazor Report Viewer exposes events as properties of the __ClientEventsOptions__  object. The JavaScript API of the event handlers is available in          [HTML5 Report Viewer Events](https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-ready).       
 
 ## Bind to a report viewer event
 
@@ -21,7 +21,7 @@ To attach an event handler to the viewer, specify the name of the event handler 
     
 ````c#
 <ReportViewer
-    ...
+ ...
     ClientEvents="@(new ClientEventsOptions() {
         ExportBegin = "trvEventHandlers.exportBegin",
         ExportEnd = "trvEventHandlers.exportEnd"

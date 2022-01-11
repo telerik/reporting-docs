@@ -216,7 +216,9 @@ table1.RowGroups.Add(group1)
 
 # See Also
  
- * [Table](/reporting/api/Telerik.Reporting.Table)  * [ColumnGroups](/reporting/api/Telerik.Reporting.Table#Telerik_Reporting_Table_ColumnGroups)
+ * [Table](/reporting/api/Telerik.Reporting.Table)  
+ 
+ * [ColumnGroups](/reporting/api/Telerik.Reporting.Table#Telerik_Reporting_Table_ColumnGroups)
  
  * [RowGroups](/reporting/api/Telerik.Reporting.Table#Telerik_Reporting_Table_RowGroups) 
 

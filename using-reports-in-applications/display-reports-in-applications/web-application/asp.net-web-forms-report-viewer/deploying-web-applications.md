@@ -34,7 +34,7 @@ These assemblies add up to the core reporting functionality and should be used o
 
 * The Telerik Reporting WCF Service (if needed) requires               __Telerik.Reporting.Service__  assembly (Telerik.Reporting.Service.dll)             
 
-* [Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})               requires __Telerik.Reporting.Cache.Database.dll__  and __Telerik Data Access__ .             
+* [Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%})               requires __Telerik.Reporting.Cache.Database.dll__  and __Telerik Data Access__.             
 
 * [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) requires               __Telerik.Reporting.Adomd.dll__  and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})               (*Microsoft.AnalysisServices.AdomdClient.dll*  v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%})).             
 

@@ -16,6 +16,6 @@ position: 6
 
 | Parameter | Description |
 | ------ | ------ |
-| __beginEdit(parameter)__ |creates the editor UI and populates it with the parameter settings<br/>* paramete|
+| __beginEdit(parameter)__ |creates the editor UI and populates it with the parameter settings<br/>* parameter|
 
 

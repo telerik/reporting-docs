@@ -38,8 +38,8 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 ||Toggles the document map area|
 ||Toggles the send email window that allows sending a report as an attachment, with specific paramaters, to a list of users.                 Check the [send email message article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%})for more information.|
 ||Toggles the parameters area|
-||Scale the pages for best viewing experience including __full page__ , __page width__ or __custom scale factor__ .|
-||Toggles the search window widget that allows searching in report contents. Check the [search article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search%})for more information|
+||Scale the pages for best viewing experience including __full page__, __page width__ or __custom scale factor__.|
+||Toggles the search window widget that allows searching in report contents. Check the [search article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search%})for more information.|
 
 ## Report Parameters
 
@@ -47,9 +47,9 @@ The parameters pane provides intuitive UI for user input. The HTML5-based Report
 
 List of the default widgets for different report parameters' types:         
 
-* DateTime:                 [Kendo UI DatePicker widget](https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview) . Even though the time part cannot be selected via the Kendo UI DatePicker widget UI               it is still passed to the report engine as a default time part (12:00:00 AM) with the DateTime value.               If needed, the viewer can be [customized]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview%}) to use a               Kendo UI DateTimePicker or another widget which allows selecting the time part explicitly.             When a DateTime value is selected in the parameters area of the HTML5 Report Viewer               it is interpreted as UTC DateTime on the server where the report is processed and rendered.               For example, entering 1/1/2000 12:00:00 AM in a DateTimePicker report parameter widget and rendering the report               will result in the following DateTime value on the server and in the rendered report - 1/1/2000 12:00:00 AM               considered as a UTC time.             
+* DateTime:                 [Kendo UI DatePicker widget](https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview). Even though the time part cannot be selected via the Kendo UI DatePicker widget UI               it is still passed to the report engine as a default time part (12:00:00 AM) with the DateTime value.               If needed, the viewer can be [customized]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview%}) to use a               Kendo UI DateTimePicker or another widget which allows selecting the time part explicitly.             When a DateTime value is selected in the parameters area of the HTML5 Report Viewer               it is interpreted as UTC DateTime on the server where the report is processed and rendered.               For example, entering 1/1/2000 12:00:00 AM in a DateTimePicker report parameter widget and rendering the report               will result in the following DateTime value on the server and in the rendered report - 1/1/2000 12:00:00 AM               considered as a UTC time.             
 
-* Integer | Float | String:                [Kendo UI ListView widget](https://docs.telerik.com/kendo-ui/controls/data-management/listview/overview) . The default editor could be easily changed to                [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox)  (for single select parameters) and                [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect)  (for multi select parameters) editors. For more information, check __parameters__  option in                [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) article.             
+* Integer | Float | String:                [Kendo UI ListView widget](https://docs.telerik.com/kendo-ui/controls/data-management/listview/overview). The default editor could be easily changed to                [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox)  (for single select parameters) and                [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect)  (for multi select parameters) editors. For more information, check __parameters__  option in                [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) article.             
 
 When at least one [report parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) has its Visible property           turned on a parameter area is shown as part of the report viewer. This helps the report developer to easily provide input method           for the end users. Based on the type of the parameters, a suitable editor UI is created. Parameter layout on the parameter area           is formatted automatically. The order is determined by the order in which parameters appear in the           [ReportParameters collection editor]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor%}).           The end user can enter or select values in the editors.         
 
@@ -63,7 +63,7 @@ To add links to the document map, you set the __DocumentMapText__  property of t
 
 ## Page Modes
 
-The [page modes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) are two. __Continuous scrolling__  and            __Single page__ . The Single page mode renders only one page in the view port. This mode does not hinder the browser            with a lot of DOM objects, actions or event listeners, but limits the report data that user could read.
+The [page modes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) are two. __Continuous scrolling__  and            __Single page__. The Single page mode renders only one page in the view port. This mode does not hinder the browser            with a lot of DOM objects, actions or event listeners, but limits the report data that user could read.
 
 The Continuous scroll mode gives the user the ability to read all report pages at once. When the report is ready,           in the viewport are rendered N number of pages to fill in the visible part of your report viewer. Each next or previous page will be loaded on demand if the user scrolls up or down.           If the user navigates to 5th page for example, in the DOM tree will be rendered all pages that are visible in the viewport,           before and after the wanted page, plus all their actions and event listeners. All other pages, that are out of the visible part,           will not be loaded. On their place will be added skeleton pages, that will be replaced with the actual page, only if the user scrolls to them.         
 
@@ -79,13 +79,23 @@ The HTML5 Report Viewer's content is rendered in __DIV__  elements.           Th
 
 # See Also
 
- * [Requirements and Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%})
+ 
 
- * [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
+* [Requirements and Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%})
 
- * [How to Use HTML5 Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
+ 
 
- * [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})
+* [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
 
- * [How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
+ 
+
+* [How to Use HTML5 Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
+
+ 
+
+* [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})
+
+ 
+
+* [How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
 

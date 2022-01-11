@@ -19,5 +19,5 @@ position: 2
  Member name |
 | ------ |
 |SINGLE_PAGE|
-|CONTINUOUS_SCROL|
+|CONTINUOUS_SCROLL|
 

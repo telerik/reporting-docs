@@ -18,7 +18,7 @@ Parameters:
 
 | Parameter | Description |
 | ------ | ------ |
-| __vm__ |string; the view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options)|
+| __vm__ |string; the view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options);|
 
 Returns: the current *ReportViewer*  object.         
 

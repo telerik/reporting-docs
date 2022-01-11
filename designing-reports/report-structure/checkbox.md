@@ -55,5 +55,23 @@ And here is the final result:
   ![](images/CheckBoxEval3.png)
 
 # See Also
- * [Telerik.Reporting.CheckBox](/reporting/api/Telerik.Reporting.CheckBox)  * [CheckAlign](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)  * [CheckedImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckedImage)  * [UncheckedImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_UncheckedImage)  * [FalseValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_FalseValue)  * [IndeterminateImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_IndeterminateImage)  * [IndeterminateValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_IndeterminateValue)  * [Text](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_Text)  * [TrueValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_TrueValue) 
+ 
+
+* [Telerik.Reporting.CheckBox](/reporting/api/Telerik.Reporting.CheckBox)  
+
+* [CheckAlign](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)  
+
+* [CheckedImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckedImage)  
+
+* [UncheckedImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_UncheckedImage)  
+
+* [FalseValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_FalseValue)  
+
+* [IndeterminateImage](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_IndeterminateImage)  
+
+* [IndeterminateValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_IndeterminateValue)  
+
+* [Text](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_Text)  
+
+* [TrueValue](/reporting/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_TrueValue)
 

@@ -16,5 +16,5 @@ The __CubeDataSource__  component enables data items to retrieve data from an   
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
+*.NET Framework 4.0 and above
 

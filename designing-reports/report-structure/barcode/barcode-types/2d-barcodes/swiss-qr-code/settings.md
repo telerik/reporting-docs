@@ -38,7 +38,7 @@ The Creditor property contains information about the *Payable To*  data entity.
 
 * __IBAN__  - mandatory field that must pass the validation check for an IBAN identifier.                 
 
-* __IBANType__  - mandatory field determining the type of the IBAN field. Supported values: *IBAN/QRIBAN* . The default value is *IBAN* .                 
+* __IBANType__  - mandatory field determining the type of the IBAN field. Supported values: *IBAN/QRIBAN*. The default value is *IBAN*.                 
 
 * __Name__  - mandatory field determining the Creditor name, 70 characters max.                 
 
@@ -60,13 +60,13 @@ The Payment property contains information about the *Payment*  data entity.
 
 * __AlternativeProcedure2__  - non-mandatory field representing the second of the two elements containing specific information about the alternative procedures applied to the bill.                 
 
-* __Amount__  - mandatory field containing the amount of money to be paid. Maximum 12 digits, including the decimals. The default value is *0.01* .                 
+* __Amount__  - mandatory field containing the amount of money to be paid. Maximum 12 digits, including the decimals. The default value is *0.01*.                 
 
-* __Currency__  - mandatory field determining the amount currency. Supported values: *CHF/EUR* . The default value is *CHF* .                 
+* __Currency__  - mandatory field determining the amount currency. Supported values: *CHF/EUR*. The default value is *CHF*.                 
 
-* __Reference__  - a field determining the payment reference number. It can be empty or null when the __ReferenceType__  field is set to *NON* . Length: [5 - 25] characters.                 
+* __Reference__  - a field determining the payment reference number. It can be empty or null when the __ReferenceType__  field is set to *NON*. Length: [5 - 25] characters.                 
 
-* __ReferenceType__  - mandatory field determining the type of the payment reference number. Supported values: *NON/SCOR/QRR* . The default value is *NON* .                 
+* __ReferenceType__  - mandatory field determining the type of the payment reference number. Supported values: *NON/SCOR/QRR*. The default value is *NON*.                 
 
 * __StructuredBillInfo__  - non-mandatory field containing coded information for automated booking of the payment. 140 characters max.                 
 
@@ -76,7 +76,7 @@ Determines the size of the quiet zone (quiet area) - unprinted border around the
 
 ## ValidateBillData
 
-Determines whether the data provided in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property will be validated, or not.           If set to __false__ , the data will not be validated.           If set to __true__ , the data will be validated under the following conditions:         
+Determines whether the data provided in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property will be validated, or not.           If set to __false__, the data will not be validated.           If set to __true__, the data will be validated under the following conditions:         
 
 * At design-time the validation will be performed only if the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property contains static values, i.e. its fields must not contain any expression.             
 
@@ -84,14 +84,20 @@ Determines whether the data provided in the  [BillData](/reporting/api/Telerik.R
 
 ## ValueFromBillData
 
-Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  property will obtain its value from the data configured in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property, or not.           If set to __true__ , the data will be constructed from the fields in the *BillData*  property.           If set to __false__ , the *BillData*  fields will not be respected and the barcode item will encode the raw data used in the *Value*  field.         
+Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  property will obtain its value from the data configured in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property, or not.           If set to __true__, the data will be constructed from the fields in the *BillData*  property.           If set to __false__, the *BillData*  fields will not be respected and the barcode item will encode the raw data used in the *Value*  field.         
 
 # See Also
 
- * [          Swiss Implementation Guidelines QR-bill (PDF)
+ 
+
+* [          Swiss Implementation Guidelines QR-bill (PDF)
         ](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
 
- * [Telerik.Reporting.Barcodes.SwissQRBillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRBillData) 
+ 
 
- * [Telerik.Reporting.Barcodes.SwissQRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder)
+* [Telerik.Reporting.Barcodes.SwissQRBillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRBillData) 
+
+ 
+
+* [Telerik.Reporting.Barcodes.SwissQRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder)
 

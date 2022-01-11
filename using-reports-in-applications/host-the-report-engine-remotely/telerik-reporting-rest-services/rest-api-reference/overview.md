@@ -42,6 +42,6 @@ The API represent resources as hierarchical URIs in order to force the clients t
 | [Get Document Resource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource%})|GET|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/resources/{resourceId}|
 | [Apply Interactive Action on Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/apply-interactive-action-on-document%})|PUT|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/actions/{actionId}|
 | [Release Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/release-document%})|DELETE|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}|
-| [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})|GET|/api/reports/format|
+| [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})|GET|/api/reports/formats|
 
 

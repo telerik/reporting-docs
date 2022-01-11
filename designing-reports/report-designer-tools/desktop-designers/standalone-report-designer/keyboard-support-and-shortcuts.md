@@ -44,5 +44,5 @@ When you work in [Standalone Report Designer]({%slug telerikreporting/designing-
 |Zoom out.|CTRL+Minus sign (-)|
 |Zoom in on map view area when a map viewport is selected.|CTRL+Plus sign (+)|
 |Zoom out on map view area when a map viewport is selected.|CTRL+Minus sign (-)|
-|Close the current report tab.|CTRL+F|
+|Close the current report tab.|CTRL+F4|
 

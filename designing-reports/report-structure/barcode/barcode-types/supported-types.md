@@ -42,7 +42,7 @@ The linear (one-dimensional) barcodes are made up of lines and spaces of various
 |UPC A|Used with consumer products in U.S., 12 characters|
 |UPC E|Short version of UPC symbol, 6 characters|
 |UPC Supplement 2|Used to indicate magazines and newspaper issue numbers|
-|UPC Supplement 5|Used to mark suggested retail price of book|
+|UPC Supplement 5|Used to mark suggested retail price of books|
 
 ## Matrix (2D) barcodes
 
@@ -53,6 +53,6 @@ The matrix code is a two-dimensional way for representing information. It can al
 |QR Code|One of the most popular 2D barcodes with wide commercial application. More info [here]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code/overview%}).|
 |Swiss QR Code|A barcode based on the QR symbology used exclusively in Switzerland payment slips named QR-bill. More info [here]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview%}).|
 |PDF147|A stacked linear 2D barcode used by U.S. Postal Services, Department of Homeland Security, airline industry and others. More info [here]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417/overview%}).|
-|DataMatrix|2D barcode mostly used to mark smaller areas due to its high data density. Recommended by the US Electronic Industries Alliance. More info [here]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview%})|
+|DataMatrix|2D barcode mostly used to mark smaller areas due to its high data density. Recommended by the US Electronic Industries Alliance. More info [here]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview%}).|
 
 

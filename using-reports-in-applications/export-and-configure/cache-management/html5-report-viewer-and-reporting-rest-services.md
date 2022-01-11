@@ -12,7 +12,7 @@ position: 0
 
 
 
-The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is a client-side widget         served by a running instance of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).         The state of the report displayed in the viewer is preserved between requests by the __Reporting REST Service__          and having reports' __cache storage is obligatory__ .       
+The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is a client-side widget         served by a running instance of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).         The state of the report displayed in the viewer is preserved between requests by the __Reporting REST Service__          and having reports' __cache storage is obligatory__.       
 
 To configure the Reporting REST service cache you can choose         between the available storage implementations - [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).         The cache storage settings must be considered with the type of hosting of the Reporting REST Service.       
 

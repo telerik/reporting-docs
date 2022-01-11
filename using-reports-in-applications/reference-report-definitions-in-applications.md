@@ -32,7 +32,7 @@ For more details and examples on the different report sources, please refer to  
 
 When the report engine is embedded in the current application (i.e. the *Telerik.Reporting*  assembly is referenced)           it is possible to use the Report Processor to manually render           ( [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) )           or print           ( [PrintReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_) )           a report. For this purpose it is required to pass an argument of ReportSource type which uniquely identifies the report.         
 
-For this example we will use a TypeReportSource. The TypeReportSource specifies the report by its  [Assembly Qualified Name](https://docs.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname) . The Reporting Engine uses  [Reflection](https://docs.microsoft.com/en-us/dotnet/api/system.reflection)  to create an instance of the report class through its default parameterless constructor.         
+For this example we will use a TypeReportSource. The TypeReportSource specifies the report by its  [Assembly Qualified Name](https://docs.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname). The Reporting Engine uses  [Reflection](https://docs.microsoft.com/en-us/dotnet/api/system.reflection)  to create an instance of the report class through its default parameterless constructor.         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Export_Single_Stream_Snippet}}
 ````C#
@@ -134,5 +134,7 @@ End If
 
 # See Also
 
- * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+ 
+
+* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
 

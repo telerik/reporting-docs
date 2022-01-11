@@ -28,7 +28,7 @@ The goal is to change the value of a TextBox item in the report, according to th
 
   ![](images/OutProc3.png)
 
-1. Attach the __SelectedIndexChanged__  event handler of the __DropDownList__ . In the event handler, get the report assigned to the viewer                    (in the example the ReportSource is __InstanceReportSource__ )                 and set the value of the report parameter to the selected item of the __DropDownList__ :
+1. Attach the __SelectedIndexChanged__  event handler of the __DropDownList__. In the event handler, get the report assigned to the viewer                    (in the example the ReportSource is __InstanceReportSource__ )                 and set the value of the report parameter to the selected item of the __DropDownList__ :
 
     
       ````C#

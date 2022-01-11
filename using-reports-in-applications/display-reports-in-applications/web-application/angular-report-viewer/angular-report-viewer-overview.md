@@ -44,7 +44,7 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 1. Required references to Telerik Kendo UI styles:
 
-   +  [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) ; or                 
+   +  [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or                 
 
    +  [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) 
 
@@ -54,7 +54,11 @@ The Angular viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting
 
 # See Also
 
- * [How to Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
+ 
 
- * [How to Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})
+* [How to Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
+
+ 
+
+* [How to Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})
 

@@ -16,7 +16,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 ## Setting the Header and the Title
 
-1. Click __pageHeaderSection__ .             
+1. Click __pageHeaderSection__.             
 
 1. From the __Properties__  grid, select __Style__  > __BackgroundColor__                and set the __0, 105, 104__  color.             
 
@@ -28,9 +28,9 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
    + __Style > Font__  should be Segoe UI.                 
 
-   + __Style > Font Color__  set to __White__ .                 
+   + __Style > Font Color__  set to __White__.                 
 
-1. Add a [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%}) between the textboxes. Set the __ShapeType__  to be               __Vertical Line__  and the __LineColor__  property to be __White__ .             
+1. Add a [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%}) between the textboxes. Set the __ShapeType__  to be               __Vertical Line__  and the __LineColor__  property to be __White__.             
 
 ## Adding the Logo
 
@@ -40,7 +40,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 ## Previewing the Result
 
-Preview the result by clicking __Preview__  > __PrintPreview__ .           
+Preview the result by clicking __Preview__  > __PrintPreview__.           
 
   ![Page Header](images/PageHeader.PNG)
 
@@ -52,7 +52,7 @@ Preview the result by clicking __Preview__  > __PrintPreview__ .
 
 * [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
 
-* [Integrating the Report in .NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
+* [Integrating the Report in.NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
 
 * [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
 

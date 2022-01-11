@@ -20,7 +20,7 @@ __Solution.__            Run the installer as administrator or from an admin acc
 
 If the Telerik Reporting installer fails,           generate an installer log to identify the reason for the problem which occurred:         
 
-1. Open a command prompt window by clicking __Start__ . In the prompt, type               `cmd`. Press `Enter`.             
+1. Open a command prompt window by clicking __Start__. In the prompt, type               `cmd`. Press `Enter`.             
 
 1. Navigate to the folder in which the Telerik Reporting installer is located.
 
@@ -32,7 +32,7 @@ If the Telerik Reporting installer fails,           generate an installer log to
 
 __Description.__            The project throws a `The report is now obsolete. Please use the ReportSource property instead.` error.         
 
-__Solution.__            This message may appear in projects which use a Telerik Reporting Q2 2012 or later version.           For more information, refer to the article on            [               migrating your project to utilize the new ReportSource objects             ](http://www.telerik.com/support/kb/reporting/details/how-to-migrate-your-project-to-utilize-the-new-reportsource-objects) .         
+__Solution.__            This message may appear in projects which use a Telerik Reporting Q2 2012 or later version.           For more information, refer to the article on            [               migrating your project to utilize the new ReportSource objects             ](http://www.telerik.com/support/kb/reporting/details/how-to-migrate-your-project-to-utilize-the-new-reportsource-objects).         
 
 ## An error message about object of type XXX that cannot be converted to type XXX occurs
 

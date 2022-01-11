@@ -12,7 +12,7 @@ position: 1
 
 
 
-This article explains the steps needed to integrate the WinUI report viewer to a .NET 5 project. 
+This article explains the steps needed to integrate the WinUI report viewer to a.NET 5 project. 
 
 ## Prerequisites:
 
@@ -20,13 +20,13 @@ This article explains the steps needed to integrate the WinUI report viewer to a
 
 * Windows 10 SDK 10.0.18362 or newer
 
-* .NET 5 project
+*.NET 5 project
 
 ## Use the example projects as a reference
 
-Since R3 2021 the examples we distribute along with our product contain two new projects:           __CSharp.Net5.WinUIIntegrationDemo__  and __CSharp.Net5.WinUIIntegrationDemo (Package)__ .           These projects are designed as a showcase of our WinUI report viewer and can be used as a reference when configuring the viewer in your own WinUI application.         
+Since R3 2021 the examples we distribute along with our product contain two new projects:           __CSharp.Net5.WinUIIntegrationDemo__  and __CSharp.Net5.WinUIIntegrationDemo (Package)__.           These projects are designed as a showcase of our WinUI report viewer and can be used as a reference when configuring the viewer in your own WinUI application.         
 
-The project __CSharp.Net5.WinUIIntegrationDemo.csproj__  targets .NET 5 and contains the references to the necessary Nuget packages.           This project also contains the XAML files that configure the application and the window that will host the ReportViewer control.           The project __CSharp.Net5.WinUIIntegrationDemo.wapproj__  is a Windows Application Packaging Project and specifies which project will be packed as .appx and loaded for execution.         
+The project __CSharp.Net5.WinUIIntegrationDemo.csproj__  targets.NET 5 and contains the references to the necessary Nuget packages.           This project also contains the XAML files that configure the application and the window that will host the ReportViewer control.           The project __CSharp.Net5.WinUIIntegrationDemo.wapproj__  is a Windows Application Packaging Project and specifies which project will be packed as.appx and loaded for execution.         
 
 These projects are not included in our CSharp.ReportExamples.sln file as the rest of the example projects, because building a WinUI application would require a specific configuration           of the development machine and that might ruin the smooth "getting started" experience we want to deliver to our users.           In order to run the WinUI example projects, make sure the prerequisites above are met and follow the steps below:         
 

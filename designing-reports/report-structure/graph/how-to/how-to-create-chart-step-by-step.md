@@ -18,7 +18,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 
 | Chart | Series Groups | Categories Groups | Coordinate Systems | Series |
 | ------ | ------ | ------ | ------ | ------ |
-| __ [Area]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/how-to-create-area-chart%})__|
+| __ [Area]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/how-to-create-area-chart%})__ |
 
 |Name: SG1|
 |Grouping: None or {expression}
@@ -46,7 +46,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |   |   |
 | ------ | ------ |
 |
-| __ [Bar]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/how-to-create-bar-chart%})__|
+| __ [Bar]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/how-to-create-bar-chart%})__ |
 
 |Name: SG1|
 |Grouping: None or {expression}
@@ -74,7 +74,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |   |   |
 | ------ | ------ |
 |
-| __ [Column]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/how-to-create-column-chart%})__|
+| __ [Column]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/how-to-create-column-chart%})__ |
 
 |Name: SG1|
 |Grouping: None or {expression}
@@ -102,7 +102,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |   |   |
 | ------ | ------ |
 |
-| __ [Line]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/how-to-create-line-chart%})__|
+| __ [Line]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/how-to-create-line-chart%})__ |
 
 |Name: SG1|
 |Grouping: None or {expression}
@@ -130,7 +130,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |   |   |
 | ------ | ------ |
 |
-| __ [Pie]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/how-to-create-pie-chart%})__|
+| __ [Pie]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/how-to-create-pie-chart%})__ |
 
 |Name: SG1|
 |Grouping: None or {expression}
@@ -158,7 +158,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |   |   |
 | ------ | ------ |
 |
-| __ [Polar]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/how-to-create-polar-chart%})__|
+| __ [Polar]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/how-to-create-polar-chart%})__ |
 
 |Name: SG1|
 |Grouping: None or {expression}
@@ -186,7 +186,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |   |   |
 | ------ | ------ |
 |
-| __ [Range]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/how-to-create-range-chart%})__|
+| __ [Range]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/how-to-create-range-chart%})__ |
 
 |Name: SG1|
 |Grouping: None or {expression}
@@ -215,7 +215,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |   |   |
 | ------ | ------ |
 |
-| __ [Scatter]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-scatter-chart%})__|
+| __ [Scatter]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-scatter-chart%})__ |
 
 |Name: SG1|
 |Grouping: {expression}
@@ -245,7 +245,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |   |   |
 | ------ | ------ |
 |
-| __ [Bubble]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-bubble-chart%})__|
+| __ [Bubble]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-bubble-chart%})__ |
 
 |Name: SG1|
 |Grouping: {expression}

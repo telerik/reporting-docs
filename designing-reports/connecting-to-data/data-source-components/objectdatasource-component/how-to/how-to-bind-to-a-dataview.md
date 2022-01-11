@@ -14,7 +14,7 @@ position: 2
 
 The following example illustrates how to use a __DataView__  as the source       for an __ObjectDataSource__  component.
 
-The sample code below shows how to pass a __DataView__       object to the __DataSource__       property of the __ObjectDataSource__  component. __DataView__  is usually used when we       want to work only with a subset of data from the __DataTable__ . Additionally a       sample calculated field is added that can be used in the report definition in       the same way as a regular field.      
+The sample code below shows how to pass a __DataView__       object to the __DataSource__       property of the __ObjectDataSource__  component. __DataView__  is usually used when we       want to work only with a subset of data from the __DataTable__. Additionally a       sample calculated field is added that can be used in the report definition in       the same way as a regular field.      
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=HowToBindToDataViewSnippet}}
 ````C#

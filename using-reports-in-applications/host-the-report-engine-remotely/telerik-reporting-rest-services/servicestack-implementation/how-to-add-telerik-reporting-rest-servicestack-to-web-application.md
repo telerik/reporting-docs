@@ -18,7 +18,7 @@ This article describes the steps required to host the __Telerik Reporting Servic
 
 ## How to host the ServiceStack implementation of Telerik Reporting REST service in IIS:
 
-1. Create a new __ASP.NET Empty Web Application__ .             
+1. Create a new __ASP.NET Empty Web Application__.             
 
 1. Install the                [                   ServiceStack 3.9.70.0                 ](                   https://www.nuget.org/packages/ServiceStack/3.9.70                 )                NuGet package.             
 
@@ -36,7 +36,7 @@ This article describes the steps required to host the __Telerik Reporting Servic
 
    + Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports.                   The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll*  v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});                 
 
-1. Create a new class which derives from                [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase) .               It could be called *ReportsHost*  for example:             
+1. Create a new class which derives from                [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase).               It could be called *ReportsHost*  for example:             
    + Set the  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)                    property. The __ReportSourceResolver__  and __Storage__  configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface                   for more details.                 
     Here is a sample implementation with the setup:             
 
@@ -48,7 +48,7 @@ public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBa
     {
         var reportsPath = System.Web.HttpContext.Current.Server.MapPath(@"~\Reports");
         var resolver = new Telerik.Reporting.Services.UriReportSourceResolver(reportsPath)
-            .AddFallbackResolver(new Telerik.Reporting.Services.TypeReportSourceResolver());
+         .AddFallbackResolver(new Telerik.Reporting.Services.TypeReportSourceResolver());
 
         var reportServiceConfiguration = new Telerik.Reporting.Services.ReportServiceConfiguration();
         reportServiceConfiguration.HostAppId = "Application1";
@@ -68,7 +68,7 @@ Public Class ReportsHost
     Public Sub New()
         Dim reportsPath = System.Web.HttpContext.Current.Server.MapPath("~\Reports")
         Dim resolver = New UriReportSourceResolver(reportsPath) _
-                       .AddFallbackResolver(New TypeReportSourceResolver())
+                    .AddFallbackResolver(New TypeReportSourceResolver())
 
         Dim reportServiceConfiguration = New ReportServiceConfiguration()
         reportServiceConfiguration.HostAppId = "Application1"
@@ -80,13 +80,13 @@ Public Class ReportsHost
 End Class
 ````
 
-    The provided sample implementation will resolve .trdp|.trdx report definitions from the               /*Reports*  subfolder of the hosting ASP.NET application root. Another option is to reference               a reports library and provide report                [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)                from the service clients.             
+    The provided sample implementation will resolve.trdp|.trdx report definitions from the               /*Reports*  subfolder of the hosting ASP.NET application root. Another option is to reference               a reports library and provide report                [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)                from the service clients.             
 
     >Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.               
 
     >The above implementation uses the  [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage)                  method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default                  __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                 specify a folder, and it is recommended for usage in production environment.               
 
-        __To configure the Telerik Reporting REST service from the application configuration file__ , set the value of the                [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)  property to an instance of the                [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)  class.             
+        __To configure the Telerik Reporting REST service from the application configuration file__, set the value of the                [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)  property to an instance of the                [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)  class.             
 
 {{source=CodeSnippets\MvcCS\ServiceStack\ReportsHostConfigSection.cs region=ReportsHostConfigSectionImplementation}}
 ````C#
@@ -168,16 +168,26 @@ End Sub
 
 1. To verify whether the service works correctly you can make a sample request               for the available document formats using the following url:             
 
-| __http://localhost: [portnumber]/api/reports/formats__|
+| __http://localhost: [portnumber]/api/reports/formats__ |
 
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).             
 
 # See Also
- * [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver)  * [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver) 
+ 
 
- * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver)  
 
- * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})
+* [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver) 
 
- * [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})
+ 
+
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+
+ 
+
+* [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})
+
+ 
+
+* [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})
 

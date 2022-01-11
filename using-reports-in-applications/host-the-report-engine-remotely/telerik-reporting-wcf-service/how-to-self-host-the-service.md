@@ -205,6 +205,6 @@ End Class
 http://localhost:54321/reportservice/resources/export?format=PDF&report=YourNameSpace.Report1,YourNameSpace&deviceInfo={}&parameterValues={}
 ````
 
-    This will call the __IResourceService__ . Export operation that                  will render the report in __PDF__  with no deviceInfo or parameterValues.                  When completed, a PDF document will be sent back to the browser.               
+    This will call the __IResourceService__. Export operation that                  will render the report in __PDF__  with no deviceInfo or parameterValues.                  When completed, a PDF document will be sent back to the browser.               
 
 

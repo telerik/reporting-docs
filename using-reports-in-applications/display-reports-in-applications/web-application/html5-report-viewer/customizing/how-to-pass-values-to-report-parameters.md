@@ -34,8 +34,8 @@ To give an example we will use the Invoice report from our examples and will upd
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
     <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
-    <script src="/ReportViewer/js/telerikReportViewer.kendo- {{site.buildversion}} .min.js"></script>
-    <script src="/ReportViewer/js/telerikReportViewer- {{site.buildversion}} .min.js"></script>
+    <script src="/ReportViewer/js/telerikReportViewer.kendo- {{site.buildversion}}.min.js"></script>
+    <script src="/ReportViewer/js/telerikReportViewer- {{site.buildversion}}.min.js"></script>
     <style>
         #reportViewer1 {
             position: absolute;
@@ -120,7 +120,7 @@ $('#invoiceId').change(function () {
     <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
     <link href="https://kendo.cdn.telerik.com/token>kendosubsetversion</token>/styles/kendo.blueopal.min.css" rel="stylesheet" />
     <script src="/ReportViewer/js/telerikReportViewer.kendo.<token>buildversion</token>.min.js"></script>
-    <script src="ReportViewer/js/telerikReportViewer- {{site.buildversion}} .min.js"></script>
+    <script src="ReportViewer/js/telerikReportViewer- {{site.buildversion}}.min.js"></script>
     <style>
         #reportViewer1 {
             position: absolute;
@@ -174,5 +174,7 @@ $('#invoiceId').change(function () {
 
 # See Also
 
- * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+ 
+
+* [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
 

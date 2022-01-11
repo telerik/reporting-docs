@@ -44,11 +44,11 @@ The proposed product catalog template allows the items to be grouped in two-leve
 
   ![Product Catalog Wizard 4 Field Mapping Done](images/Templates/ProductCatalog/ProductCatalogWizard_4_FieldMapping_Done.png)
 
-1. Once you are done mapping the fields, click Next to go to the __Preview page__ . It shows a live preview of your report               with some sample data to illustrate how the actual report would look like. You can change the various settings according to the selected               layout and the changes will be shown on the right.               
+1. Once you are done mapping the fields, click Next to go to the __Preview page__. It shows a live preview of your report               with some sample data to illustrate how the actual report would look like. You can change the various settings according to the selected               layout and the changes will be shown on the right.               
 
   ![Product Catalog Wizard 5 Preview](images/Templates/ProductCatalog/ProductCatalogWizard_5_Preview.png)
 
-1. Once you are done styling the report, click Next to go to the __Summary page__ . It displays a brief information about               the selected layout, data scenario and the defined mappings. It will also display a message if you are missing some mandatory mapping so you could go back and fix it if it is not intentional.               
+1. Once you are done styling the report, click Next to go to the __Summary page__. It displays a brief information about               the selected layout, data scenario and the defined mappings. It will also display a message if you are missing some mandatory mapping so you could go back and fix it if it is not intentional.               
 
   ![Product Catalog Wizard 6 Summary](images/Templates/ProductCatalog/ProductCatalogWizard_6_Summary.png)
 

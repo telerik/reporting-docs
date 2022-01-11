@@ -45,5 +45,19 @@ report.Items.Add(DirectCast(detail, ReportItemBase)
 ````
 
 # See Also
- * [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  * [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)  * [DetailSection](/reporting/api/Telerik.Reporting.DetailSection)  * [GroupHeaderSection](/reporting/api/Telerik.Reporting.GroupHeaderSection)  * [GroupFooterSection](/reporting/api/Telerik.Reporting.GroupFooterSection)  * [PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)  * [PageFooterSection](/reporting/api/Telerik.Reporting.PageFooterSection) 
+ 
+
+* [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  
+
+* [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)  
+
+* [DetailSection](/reporting/api/Telerik.Reporting.DetailSection)  
+
+* [GroupHeaderSection](/reporting/api/Telerik.Reporting.GroupHeaderSection)  
+
+* [GroupFooterSection](/reporting/api/Telerik.Reporting.GroupFooterSection)  
+
+* [PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)  
+
+* [PageFooterSection](/reporting/api/Telerik.Reporting.PageFooterSection)
 

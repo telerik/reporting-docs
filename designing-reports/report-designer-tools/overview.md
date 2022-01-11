@@ -20,7 +20,7 @@ This document gives a brief overview of the available Report Designers.
 
 [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) is a standalone desktop application that features an easy to use environment:         
 
-* The executable file starting the application is __Telerik.ReportDesigner.exe__ . By default it will be deployed upon installation of the product in               '(*Telerik Reporting installation folder* )\Report Designer' folder. For example,                'C:\Program Files (x86)\Progress\Telerik Reporting R3 2019\Report Designer'.             
+* The executable file starting the application is __Telerik.ReportDesigner.exe__. By default it will be deployed upon installation of the product in               '(*Telerik Reporting installation folder* )\Report Designer' folder. For example,                'C:\Program Files (x86)\Progress\Telerik Reporting R3 2019\Report Designer'.             
 
 * Does not require Visual Studio;             
 
@@ -42,13 +42,13 @@ This document gives a brief overview of the available Report Designers.
 
 [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) is a report authoring tool that runs in Visual Studio:         
 
-* Works with .NET type report definitions (.CS or .VB files):             
+* Works with.NET type report definitions (.CS or.VB files):             
 
    + More difficult to maintain - the project should be built every time a report definition is modified and you should go through the                   [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) when upgrading your Telerik Reporting installation;                 
 
    + Support for report events, still Telerik Reporting provides other declarative means to handle most of the complex tasks.                   For more information see [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%});                 
 
-* The Visual Studio Report Designer opens automatically upon double-click of a .CS/.VB report definition inheriting from Telerik.Reporting.Report.                You need to have the corresponding version of Telerik Reporting installed on the machine.             
+* The Visual Studio Report Designer opens automatically upon double-click of a.CS/.VB report definition inheriting from Telerik.Reporting.Report.                You need to have the corresponding version of Telerik Reporting installed on the machine.             
 
 * Due to Visual Studio assembly caching mechanism, the designer preview is not guaranteed, when using               [ObjectDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}),                [EntityDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview%}) or                [OpenAccessDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview%}).             
 

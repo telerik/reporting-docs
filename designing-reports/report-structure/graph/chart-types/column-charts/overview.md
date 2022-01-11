@@ -20,11 +20,11 @@ The following image shows a typical column chart:
 
 ## Column Chart Variations
 
-* __Clustered Column Chart__ . The basic column chart type used to display a series as a set of vertical bars that are grouped by category.             
+* __Clustered Column Chart__. The basic column chart type used to display a series as a set of vertical bars that are grouped by category.             
 
-* __Stacked Column Chart__ . A column chart where multiple series are stacked vertically.               Stacked column charts are used to compare contributions of values to a total across categories. If there is only               one series in your chart, the stacked column chart will display the same as a column chart.             
+* __Stacked Column Chart__. A column chart where multiple series are stacked vertically.               Stacked column charts are used to compare contributions of values to a total across categories. If there is only               one series in your chart, the stacked column chart will display the same as a column chart.             
 
-* __100% Stacked Column Chart__ . A column chart where multiple series are stacked vertically               to fit 100% of the chart area. 100% Stacked Column Charts are used when you have three or more data series and want               to compare distributions within categories, and at the same time display the differences between categories. Each column               bar represents 100% of the amounts for that category. If there is only one series in your chart, all the column bars will               fit to 100% of the chart area.             
+* __100% Stacked Column Chart__. A column chart where multiple series are stacked vertically               to fit 100% of the chart area. 100% Stacked Column Charts are used when you have three or more data series and want               to compare distributions within categories, and at the same time display the differences between categories. Each column               bar represents 100% of the amounts for that category. If there is only one series in your chart, all the column bars will               fit to 100% of the chart area.             
 
 ## Design Considerations for Column Charts
 
@@ -36,5 +36,9 @@ The following image shows a typical column chart:
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries) 
+ 
+
+* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
+
+* [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)
 

@@ -14,7 +14,7 @@ position: 1
 
 Before utilizing the __CubeDataSource__  component in your reports you need to configure         your report class library for using __Microsoft Analysis Services__  first:       
 
-1. __Install the Microsoft ADOMD.NET client data provider__ : The __CubeDataSource__  component requires the __Microsoft ADOMD.NET__                client data provider to be installed on your machine. The present version of __Telerik Reporting__  is compiled against the __ADOMD.NET__  provider for               __SQL Server 2008 R2__ .             
+1. __Install the Microsoft ADOMD.NET client data provider__ : The __CubeDataSource__  component requires the __Microsoft ADOMD.NET__                client data provider to be installed on your machine. The present version of __Telerik Reporting__  is compiled against the __ADOMD.NET__  provider for               __SQL Server 2008 R2__.             
 
 1. __Add the required assembly references to your project:__  You need to add               the following assembly references to your report class library:             
 
@@ -22,7 +22,7 @@ Before utilizing the __CubeDataSource__  component in your reports you need to c
 
    + __Telerik.Reporting.Adomd__  - this is the __Telerik Reporting__  provider assembly for __ADOMD.NET__  which                   is located in the *"Bin"*  subdirectory of your __Telerik Reporting__  installation.                 
 
-1. __Add an assembly binding redirect if necessary:__  The current version               of __Telerik Reporting__  uses __ADOMD.NET__  for               __SQL Server 2008 R2__ . Please, verify that the version of the               __Microsoft.AnalysisServices.AdomdClient__  assembly is *"10.0.0.0"* . If you have a greater version of that assembly you need to add               an appropriate assembly binding redirect in the configuration file of the start application as illustrated below:             
+1. __Add an assembly binding redirect if necessary:__  The current version               of __Telerik Reporting__  uses __ADOMD.NET__  for               __SQL Server 2008 R2__. Please, verify that the version of the               __Microsoft.AnalysisServices.AdomdClient__  assembly is *"10.0.0.0"*. If you have a greater version of that assembly you need to add               an appropriate assembly binding redirect in the configuration file of the start application as illustrated below:             
 
     
       ````xml

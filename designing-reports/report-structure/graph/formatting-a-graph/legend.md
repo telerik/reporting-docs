@@ -16,7 +16,7 @@ When the data appearing in a chart contains multiple variables(series), the char
 
 A legend always contains one or more legend items, where each legend item consists of a colored box that represents the series,         and a text string that describes the series.       
 
-You can format a legend with the Graph item's __Legend properties__ .         Click the legend to change the legend placement(Location and IsInsidePloatArea), Size, Title and items Style. The Title property can be an expression       
+You can format a legend with the Graph item's __Legend properties__.         Click the legend to change the legend placement(Location and IsInsidePloatArea), Size, Title and items Style. The Title property can be an expression       
 
 You cannot add images, extra columns or other supplementary items to the legend.       
 
@@ -32,9 +32,9 @@ You can change the legend items text style by selecting the legend and with __Pr
 
 > If you are using the standalone report designer you can take advantage of the graph tools in the ribbon's Design and Format tabs.           
 
-1. Click the graph legend that you want to change.    The selected legend properties are listed in the __Property Browser__ .                 
+1. Click the graph legend that you want to change.    The selected legend properties are listed in the __Property Browser__.                 
 
-1. In the __Style property__ , click the __Edit Collection (…) button__ .                     The Edit style dialog opens.                 
+1. In the __Style property__, click the __Edit Collection (…) button__.                     The Edit style dialog opens.                 
 
 1. When you are done, click OK.                 
 
@@ -50,7 +50,7 @@ You can change the legend items text by changing each Graph.Series LegendItem pr
 
 The legend is always connected to a series.           If a legend item appears in the legend but the corresponding series is not displayed in the chart,           the most likely cause is that the series does not contain any values.           You can remove this series in order to remove the legend item from the legend.           To remove a series from your chart, you have to setup a [Filter]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}) for the corrensponding SeriesGroup.         
 
-To visually hide a Legened Item, you can use the __Graph.Series.LegendItem.Style.Visible property__ .         
+To visually hide a Legened Item, you can use the __Graph.Series.LegendItem.Style.Visible property__.         
 
 ## Positioning the Legend
 
@@ -58,15 +58,15 @@ You can move the legend to one of twelve different positions when the legend is 
 
 ###Reposition the Legend:
 
-1. Click the legend area.    The legend properties are listed in the __Property Browser__ ;                 
+1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
 1. In the __Misc__  section select a value for the Position property.                 
 
 ###Move the Legend Inside the Plot area:
 
-1. Click the legend area.    The legend properties are listed in the __Property Browser__ ;                 
+1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
-1. In the __Misc__  section set the __IsInsideThePlotArea property__  to __True__ .                 
+1. In the __Misc__  section set the __IsInsideThePlotArea property__  to __True__.                 
 
 ## Displaying Legend Items Horizontally
 
@@ -83,5 +83,9 @@ The legend can be absolutely or automatically sized.           If the Height or 
 * Relatively positioned - TopLeft, TopCenter, TopRight, BottomLeft, BottomCenter, BottomRight:             The height is absolute if set, otherwise the legend can grow vertically.               The legend can stretch up to the PlotArea height when IsInsidePlotArea = True and no more than half of the graph height when IsInsidePlotArea = False.             The width is taken into account, only if all items can fit in the provided space.               Otherwise the legend grows horizontally, stretching to the limits of the graph at maximum.             The ordering of the items is "across then down", forming rows.             
 
 # See Also
- * [GraphLegend](/reporting/api/Telerik.Reporting.GraphLegend)  * [Legend](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Legend) 
+ 
+
+* [GraphLegend](/reporting/api/Telerik.Reporting.GraphLegend)  
+
+* [Legend](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Legend)
 

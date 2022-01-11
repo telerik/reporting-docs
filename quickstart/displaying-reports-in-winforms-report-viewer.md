@@ -14,11 +14,11 @@ position: 2
 
 You can design reports in:         
 
-* Visual Studio Report Designer: The result is a class (type) inheriting *Telerik.Reporting.Report* ;             
+* Visual Studio Report Designer: The result is a class (type) inheriting *Telerik.Reporting.Report*;             
 
 * Standalone Report Designer: The result is a TRDX|TRDP file containing a serialiesed *Telerik.Reporting.Report*  object;             
 
-* In code: The result is an instance of *Telerik.Reporting.Report* ,               that is created at run-time or it is a result from modifying an already designed report;             
+* In code: The result is an instance of *Telerik.Reporting.Report*,               that is created at run-time or it is a result from modifying an already designed report;             
 
 * In a text/XML editor: the result is a *Telerik.Reporting.Report*  object represented in XML,               the same as the content of a TRDX file produced by the Standalone Report Designer;             
 
@@ -34,7 +34,7 @@ __How to display a report in the Windows Forms Report Viewer:__
 
 1. Prerequisite: Create a Telerik Report by using the Report Designer integrated in Visual Studio -               [How To: Use the Report Wizard to create a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report%}).             
 
-1. Select __File | New | Project__  from the Visual Studio File menu.  Select the __Windows Application__                project, give it a name and location. Verify that the targeted .NET framework version is .NET4+, Full profile as Client profile is not supported.               Click the OK button to close the dialog.               
+1. Select __File | New | Project__  from the Visual Studio File menu.  Select the __Windows Application__                project, give it a name and location. Verify that the targeted.NET framework version is.NET4+, Full profile as Client profile is not supported.               Click the OK button to close the dialog.               
 
   ![](images/QuickStart034.png)
 

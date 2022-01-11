@@ -42,7 +42,7 @@ Invoices are one of the most common business documents, that’s why their prepa
 
   ![Invoice Wizard 4 Field Mapping Done](images/Templates/Invoice/InvoiceWizard_4_FieldMapping_Done.png)
 
-1. Once you are done mapping the fields, click Next to go to the __Summary page__ . It displays a brief information about               the selected layout, data scenario and the defined mappings. It will also display a message if you are missing some mandatory mapping so you could go back and fix it if it is not intentional.               
+1. Once you are done mapping the fields, click Next to go to the __Summary page__. It displays a brief information about               the selected layout, data scenario and the defined mappings. It will also display a message if you are missing some mandatory mapping so you could go back and fix it if it is not intentional.               
 
   ![Invoice Wizard 5 Summary](images/Templates/Invoice/InvoiceWizard_5_Summary.png)
 

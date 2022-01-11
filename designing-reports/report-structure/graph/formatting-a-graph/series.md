@@ -20,7 +20,7 @@ The styles of the series items relate and affect each other in a hierarchical wa
 
 The Area and the Line series have an additional pair of properties named respectively AreaStyle/LineStyle and ConditionalFormatting.           They affect the way the series is drawn, defining the line color, style and width, and the background color for the Area Series.         
 
-> For example, if the series DataPoints have its  __Style.LineWidth__  property set to  __5pt__ , this will             affect the line width of the DataPoint markers and the legend item marker. But if the legend item's  __MarkStyle.LineWidth__  property             is set to  __2pt__ , then the legend item marker will be drawn with 2pt wide line, because the series's style property will be overriden.           
+> For example, if the series DataPoints have its  __Style.LineWidth__  property set to  __5pt__, this will             affect the line width of the DataPoint markers and the legend item marker. But if the legend item's  __MarkStyle.LineWidth__  property             is set to  __2pt__, then the legend item marker will be drawn with 2pt wide line, because the series's style property will be overriden.           
 
 ## Formatting data points
 
@@ -28,13 +28,13 @@ Each data point has graphical representation in accordance with the selected cha
 
 ###To change the data point shape in a series where it's applicable: 
 
-1. On the design surface, click on the series.                     The selected bar series properties are listed in the __Property Browser__ .                 
+1. On the design surface, click on the series.                     The selected bar series properties are listed in the __Property Browser__.                 
 
 1. Locate the __MarkerType__   property in the __Data Point Marker__  section.                     If the property doesn't exist for the selected series (e.g. Bar/Column), the data point shape cannot be changed.
 
 1. Set the type of the marker from the drop-down menu. Set the __MarkerSize__  properties if necessary.                 
 
-    >Note that only the marker types that form a closed contour support  __BackgroundImage__ . The markers                   that consists only of lines (i.e.  __X__ ,  __Plus__ ,  __Minus__ )                   will not render a background image if set.                 
+    >Note that only the marker types that form a closed contour support  __BackgroundImage__. The markers                   that consists only of lines (i.e.  __X__,  __Plus__,  __Minus__ )                   will not render a background image if set.                 
 
 ## Formatting data point labels
 
@@ -50,7 +50,7 @@ Series labels default locations are:
 
 1. Create a graph with bar series.
 
-1. On the design surface, click on the bar series    The selected bar series properties are listed in the __Property Browser__ .                 
+1. On the design surface, click on the bar series    The selected bar series properties are listed in the __Property Browser__.                 
 
 1. In the __Data Point Label__  section select a value for the DataPointLabelAlignment property                 
 
@@ -60,7 +60,7 @@ Series labels default locations are:
 
 1. Create / select a graph.
 
-1. On the design surface, click on the desired series    The selected series properties are listed in the __Property Browser__ .                 
+1. On the design surface, click on the desired series    The selected series properties are listed in the __Property Browser__.                 
 
 1. In the __Data Point Label__  section set a value for the DataPointLabelAngle property.                     The value must be an integer in the 0 - 360 range and represents the rotation angle in degrees.                   Default value is 0.                 
 
@@ -68,7 +68,7 @@ Series labels default locations are:
 
 1. Create / select a graph.
 
-1. On the design surface, click on the desired series    The selected series properties are listed in the __Property Browser__ .                 
+1. On the design surface, click on the desired series    The selected series properties are listed in the __Property Browser__.                 
 
 1. In the __Data Point Label__  section select and edit the DataPointLabelStyle property.                 
 
@@ -76,7 +76,7 @@ Series labels default locations are:
 
 1. Create / select a graph.
 
-1. On the design surface, click on the desired series    The selected series properties are listed in the __Property Browser__ .                 
+1. On the design surface, click on the desired series    The selected series properties are listed in the __Property Browser__.                 
 
 1. In the __Data Point Label__  section select and edit the DataPointLabelConditionalFormatting collection.                 
 
@@ -98,34 +98,42 @@ You can select a palette or define a custom palette. Custom palettes are report-
 
 ###To define custom color palette:
 
-1. Click the chart series that you want to change.    The selected axis properties are listed in the __Property Browser__ .                 
+1. Click the chart series that you want to change.    The selected axis properties are listed in the __Property Browser__.                 
 
-1. In the __Appearance__  group. Set the __ColorPalette property__  to -                   __Color Palette__ .                 
+1. In the __Appearance__  group. Set the __ColorPalette property__  to -                   __Color Palette__.                 
 
-1. In the __Colors property__ , click the __Edit Collection (…) button__ .                   The Color Collection Editor opens.                 
+1. In the __Colors property__, click the __Edit Collection (…) button__.                   The Color Collection Editor opens.                 
 
 1. Click __Add__  to add a color and select a color from the drop-down.                 
 
 1. Click __Add__  to add more colors to the palette.                 
 
-1. When you are done, click __OK__ .                 
+1. When you are done, click __OK__.                 
 
 If you are using a custom color palette, you can change the order of the colors to change the color of different series.
 
 ###            To define custom __monochromatic palette__ :
           
 
-1. Click the chart series that you want to change.    The selected axis properties are listed in the __Property Browser__ .                 
+1. Click the chart series that you want to change.    The selected axis properties are listed in the __Property Browser__.                 
 
-1. In the __Appearance__  group. Set the ColorPalette property to -                   __Monochromatic Palette__ .                 
+1. In the __Appearance__  group. Set the ColorPalette property to -                   __Monochromatic Palette__.                 
 
-1. Set appropriately __BaseColor, MaxLightness and MinLightness properties__ .                 
+1. Set appropriately __BaseColor, MaxLightness and MinLightness properties__.                 
 
 # See Also
 
- * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
+ 
 
- * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
+* [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 
- * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) * [GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries) 
+ 
+
+* [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
+
+ 
+
+* [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) 
+
+* [GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries)
 

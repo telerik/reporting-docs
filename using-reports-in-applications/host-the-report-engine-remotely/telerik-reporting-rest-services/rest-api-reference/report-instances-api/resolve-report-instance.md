@@ -22,7 +22,7 @@ __Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
-|`clientId`|String|ID of the service client. Returned from [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%})|
+|`clientId`|String|ID of the service client. Returned from [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}).|
 
 __Request Body__ 
 
@@ -35,7 +35,7 @@ __Request Body__
 |`201 Created`|Report instance successfully created|
 |`400 BadRequest`|No report name is specified|
 |`404 Not Found`|The specified report name cannot be resolved / Parameter values are not valid|
-|`410  Gone`|The specified clientId cannot be found (expired|
+|`410  Gone`|The specified clientId cannot be found (expired)|
 
 __Response Body__ 
 

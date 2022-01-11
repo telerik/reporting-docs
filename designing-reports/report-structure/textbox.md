@@ -18,7 +18,7 @@ The TextBox report item is used to display text on a report. This screenshot sho
 
 TextBox can display literal text for titles, descriptions, and labels, or dynamic text based on expressions. Every         cell in a Table or CrossTab also contains a TextBox, which can be formatted the same way as stand-alone TextBoxes in your report.         The expressions in a TextBox can contain literal text, point to a database field or calculate data.       
 
-Use a Panel item when you want to control the TextBox layout and dependency with other report items. For more information,         see  [Panel](/reporting/api/Telerik.Reporting.Panel) .       
+Use a Panel item when you want to control the TextBox layout and dependency with other report items. For more information,         see  [Panel](/reporting/api/Telerik.Reporting.Panel).       
 
 In order to format separate chunks of text (i.e. different words) or insert HTML-formatted text into a report, use the          [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox)  report item.       
 
@@ -48,7 +48,7 @@ Before you apply a format, you should consider the following:
 
 * By default, numbers are formatted to reflect the cultural settings on the client computer. Use formatting strings               to specify how numbers are displayed so that formatting is consistent regardless of where the person who is viewing the               report is located.             
 
-* The formats provided on the Number page are a subset of the .NET Framework standard numeric format strings. To               format a number or date using a custom format that is not shown in the dialog box, you can use any .NET Framework format               strings for numbers or dates. For more information about custom format strings, see the  [Formatting Types](http://msdn.microsoft.com/en-us/library/fbxft59x%28VS.95%29.aspx)                topic on MSDN.             
+* The formats provided on the Number page are a subset of the.NET Framework standard numeric format strings. To               format a number or date using a custom format that is not shown in the dialog box, you can use any.NET Framework format               strings for numbers or dates. For more information about custom format strings, see the  [Formatting Types](http://msdn.microsoft.com/en-us/library/fbxft59x%28VS.95%29.aspx)                topic on MSDN.             
 
 * If a custom format string has been specified, it has a higher priority over default settings that are               culture-specific. For example, suppose you set a custom format string of "#,###" to show the number 1234 as 1,234. This               may have different meaning to users in different parts of the world. Before specifying a custom format, consider how the               chosen format will affect users of different cultures viewing the report.             
 
@@ -91,5 +91,15 @@ The item supports [embedded expressions]({%slug telerikreporting/designing-repor
 
 # See Also
 
- * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) * [TextBox](/reporting/api/Telerik.Reporting.TextBox)  * [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)  * [Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)  * [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox) 
+ 
+
+* [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
+
+* [TextBox](/reporting/api/Telerik.Reporting.TextBox)  
+
+* [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)  
+
+* [Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)  
+
+* [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox)
 

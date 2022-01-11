@@ -34,7 +34,7 @@ Binding image data to a PictureBox report item is straight-forward. When you use
 
 Alternatively, one can drag a PictureBox item onto the design surface and use an expression to set its Value           property to an existing field from the data source.         
 
-While the methods above are quickest to get an image onto your report, one doesn’t have to bind directly to a           database field with an image column. The type of the PictureBox.Value property is  [Object](http://msdn2.microsoft.com/en-us/library/system.object(VS.71).aspx)            which allows for versatile data binding. The Value property accepts objects of type  [Image](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx)  and strings. The string can be expression or string literal. The expression should evaluate to            [Image](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx) , byte array, relative or absolute            [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx)  or a string representing a Base64-encoded image. The string literal can also be a relative or absolute            [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx)  or a string representing a Base64-encoded image.         
+While the methods above are quickest to get an image onto your report, one doesn’t have to bind directly to a           database field with an image column. The type of the PictureBox.Value property is  [Object](http://msdn2.microsoft.com/en-us/library/system.object(VS.71).aspx)            which allows for versatile data binding. The Value property accepts objects of type  [Image](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx)  and strings. The string can be expression or string literal. The expression should evaluate to            [Image](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx), byte array, relative or absolute            [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx)  or a string representing a Base64-encoded image. The string literal can also be a relative or absolute            [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx)  or a string representing a Base64-encoded image.         
 
 * __Binding to a Binary Image__ You can directly assign a reference to an  [Image](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx)                 to the Value property of a PictureBox:             
 
@@ -80,7 +80,7 @@ End Function
 
 and set the Value of the PictureBox item to the correct expression: =LoadImage(Fields.YourImagePathColumn).             
 
-* __Binding to an Expression/URI/Base64-encoded image/SVG markup__ Alternatively you can assign a string value to the Value property of a PictureBox. This string value can be either an                [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}),               an  [URI](http://en.wikipedia.org/wiki/URI)                a string representing a Base64-encoded image,               or a valid SVG markup.               Both __absolute__  and __relative__  URIs are supported.               When binding to a data field with an expression, the Value property will accept both __binary and string data fields__ .               For optimization the engine initially checks the length of the string value. If it is less than 80 characters, the value is                considered to be an URI. Otherwise the string is tested whether it is SVG markup (if its first 256 characters contain                __<svg__ ) or a Base64-encoded string. In case the string is neither a valid SVG nor Base64-encoded string,                the engine will still accept the string as URI and will try to instantiate an image from it. In other words, your data source                column may store the image object, its Base64 string representation, an SVG markup or a relative or absolute                __URI__  pointing to the image:             
+* __Binding to an Expression/URI/Base64-encoded image/SVG markup__ Alternatively you can assign a string value to the Value property of a PictureBox. This string value can be either an                [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}),               an  [URI](http://en.wikipedia.org/wiki/URI)                a string representing a Base64-encoded image,               or a valid SVG markup.               Both __absolute__  and __relative__  URIs are supported.               When binding to a data field with an expression, the Value property will accept both __binary and string data fields__.               For optimization the engine initially checks the length of the string value. If it is less than 80 characters, the value is                considered to be an URI. Otherwise the string is tested whether it is SVG markup (if its first 256 characters contain                __<svg__ ) or a Base64-encoded string. In case the string is neither a valid SVG nor Base64-encoded string,                the engine will still accept the string as URI and will try to instantiate an image from it. In other words, your data source                column may store the image object, its Base64 string representation, an SVG markup or a relative or absolute                __URI__  pointing to the image:             
 
     
       ````c#
@@ -109,28 +109,42 @@ __Sizing Property modes:__
 | Name | Description |
 | ------ | ------ |
 |AutoSize|The __PictureBox item__ size is adjusted to that of the image it contains.|
-|Center|The image is displayed in the center of the __PictureBox item__ . If the image is larger than the __PictureBox item__ , the outside edges are clipped.|
-|Normal|The image is placed in the upper-left corner of the __PictureBox item__ . The image is clipped if it's larger than the __PictureBox item__ which contains it.|
-|Stretch|The image within the __PictureBox item__ is stretched or shrunk as appropriate to fit the size of the __PictureBox item__ .|
-|ScaleProportional|The image is sized proportionally (without clipping), so that it's best fitted to the __PictureBox item__ .<br/>              If the height and width ratio of the __PictureBox item__ is the same as the image's ratio it will be resized<br/>              to exactly fit into the __PictureBox item__ . Otherwise the closest fitting side (height or width) of the<br/>              image will be sized to the item and the other side (height or width) of the image sized proportionally (leaving empty space)|
+|Center|The image is displayed in the center of the __PictureBox item__. If the image is larger than the __PictureBox item__, the outside edges are clipped.|
+|Normal|The image is placed in the upper-left corner of the __PictureBox item__. The image is clipped if it's larger than the __PictureBox item__ which contains it.|
+|Stretch|The image within the __PictureBox item__ is stretched or shrunk as appropriate to fit the size of the __PictureBox item__.|
+|ScaleProportional|The image is sized proportionally (without clipping), so that it's best fitted to the __PictureBox item__.<br/>              If the height and width ratio of the __PictureBox item__ is the same as the image's ratio it will be resized<br/>              to exactly fit into the __PictureBox item__. Otherwise the closest fitting side (height or width) of the<br/>              image will be sized to the item and the other side (height or width) of the image sized proportionally (leaving empty space).|
 
-The PictureBox image is rendered depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary.           For example, if you are using an 120dpi image in your PictureBox with __Sizing__  set to           *AutoSize*  or *Normal*  and the machine settings are set to 96dpi,           the image would look smaller due to the higher amount of pixels per inch. If you want your image to be resized appropriately, its           __Sizing__  should be set to *Stretch*  or *ScaleProportional* .         
+The PictureBox image is rendered depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary.           For example, if you are using an 120dpi image in your PictureBox with __Sizing__  set to           *AutoSize*  or *Normal*  and the machine settings are set to 96dpi,           the image would look smaller due to the higher amount of pixels per inch. If you want your image to be resized appropriately, its           __Sizing__  should be set to *Stretch*  or *ScaleProportional*.         
 
-The SVG images are rendered in vector format where the rendering extension supports it. On the designer surface and in image formats the SVG contents are rendered as EMF (Enhanced Metafile) which is also a vector format           and preserves the lossless scaling. In HTML formats the SVG markup is rendered as-is, since all modern browsers support SVG contents.            In OpenXML-based rendering extensions (DOCX, XLSX, PPTX, RTF) the SVG is rendered in vector format by default, but can be rendered in raster format if the deviceInfo setting *UseMetafile*  is set to __false__ .           In the rest of the rendering extensions the SVG is rendered as raster image, but the item's size is always taken into account to ensure highest rendering quality.         
+The SVG images are rendered in vector format where the rendering extension supports it. On the designer surface and in image formats the SVG contents are rendered as EMF (Enhanced Metafile) which is also a vector format           and preserves the lossless scaling. In HTML formats the SVG markup is rendered as-is, since all modern browsers support SVG contents.            In OpenXML-based rendering extensions (DOCX, XLSX, PPTX, RTF) the SVG is rendered in vector format by default, but can be rendered in raster format if the deviceInfo setting *UseMetafile*  is set to __false__.           In the rest of the rendering extensions the SVG is rendered as raster image, but the item's size is always taken into account to ensure highest rendering quality.         
 
 # See Also
 
- * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
+ 
 
- * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
+* [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
 
- * [Types of Bitmaps](http://msdn.microsoft.com/en-us/library/at62haz6.aspx)
+ 
 
- * [Images, Bitmaps, and Metafiles](http://msdn.microsoft.com/en-us/library/3ke1f63h.aspx)
+* [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
 
- * [Scalable Vector Graphics (SVG)](https://www.w3.org/TR/SVG/)
+ 
 
- * [PictureBox](/reporting/api/Telerik.Reporting.PictureBox) 
+* [Types of Bitmaps](http://msdn.microsoft.com/en-us/library/at62haz6.aspx)
 
- * [Sizing](/reporting/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing) 
+ 
+
+* [Images, Bitmaps, and Metafiles](http://msdn.microsoft.com/en-us/library/3ke1f63h.aspx)
+
+ 
+
+* [Scalable Vector Graphics (SVG)](https://www.w3.org/TR/SVG/)
+
+ 
+
+* [PictureBox](/reporting/api/Telerik.Reporting.PictureBox) 
+
+ 
+
+* [Sizing](/reporting/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing)
 

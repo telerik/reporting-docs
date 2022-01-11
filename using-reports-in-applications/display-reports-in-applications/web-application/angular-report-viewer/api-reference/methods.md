@@ -40,7 +40,7 @@ The following table lists the available methods:
 | __pageCount(): number__ |Gets the total page count of viewer’s currently displayed report. __Returns__ : number.|
 | __currentPage(): number__ |Gets the viewer’s current page that is displayed. __Returns__ : number.|
 | __setAuthenticationToken(token: string)__ |Sets the authentication token. __Parameters__ : token: string __Returns__ : the current ReportViewer object.|
-| __getAccessibilityKeyMap(): JSON__ |Gets the shortcut keys used when the report viewer is in accessible mode (has its enableAccessibility set to true. The keys in the map are listed below|
+| __getAccessibilityKeyMap(): JSON__ |Gets the shortcut keys used when the report viewer is in accessible mode (has its enableAccessibility set to true. The keys in the map are listed below:|
 
  Key | Default Value | Description |
 | ------ | ------ | ------ |
@@ -54,5 +54,5 @@ The following table lists the available methods:
 | ------ | ------ |
 |
 | __setAccessibilityKeyMap(keyMap: JSON)__ |Sets the shortcut keys used when the report viewer is in accessible mode.                 It is recommended to set the new key map when the report rendering is complete,                 because the accessibility routines require the report viewer template to be loaded. __Parameters__ : keyMap: JSON|
-| __dispose()__ |Stops sending keep alive requests to the server, if keep client alive was enabled|
+| __dispose()__ |Stops sending keep alive requests to the server, if keep client alive was enabled.|
 

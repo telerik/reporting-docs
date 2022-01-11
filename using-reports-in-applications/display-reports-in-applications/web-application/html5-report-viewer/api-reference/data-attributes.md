@@ -58,9 +58,9 @@ The following table is a list of all available commands for the *data-command*  
 | __telerik_ReportViewer_zoomOut__ |Zoom out the report|
 | __telerik_ReportViewer_toggleZoomMode__ |Change the zoom mode of the report|
 | __telerik_ReportViewer_toggleSideMenu__ |Show or hide the side menu|
-| __telerik_ReportViewer_toggleSearchDialog__ |Show or hide the search dialo|
+| __telerik_ReportViewer_toggleSearchDialog__ |Show or hide the search dialog|
 
-* The export command requires one additional parameter, *data-command-parameter* , which will specify the export format.            The full list of all allowed *data-command-parameter*  values:         
+* The export command requires one additional parameter, *data-command-parameter*, which will specify the export format.            The full list of all allowed *data-command-parameter*  values:         
 
 | Label | Command Parameter |
 | ------ | ------ |
@@ -73,7 +73,7 @@ The following table is a list of all available commands for the *data-command*  
 | __TIFF File__ |IMAGE|
 | __Web Archive__ |MHTML|
 | __Word Document__ |DOCX|
-| __XPS Document__ |XP|
+| __XPS Document__ |XPS|
 
 Depending on the report and the history of browsed reports some of the buttons might be disabled and others toggled.            The commands automatically keep track of their state, but if custom widgets are used this state will not be displayed properly.            Therefore a disabledButtonClass and checkedButtonClass can be provided to the report viewer upon initialization -            these classes will be added when the custom button is disabled or toggled, respectively.
 

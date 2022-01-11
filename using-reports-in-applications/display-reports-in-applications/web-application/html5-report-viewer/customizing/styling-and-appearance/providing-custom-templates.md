@@ -14,7 +14,7 @@ position: 3
 
 The article elaborates how to use a customized HTML template for the HTML5 Report Viewer.
 
-> All path references in the article should be adapted according           to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) .         The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation -           [Installation Directories](6E821131-83F3-45A4-BB6E-1530223D1E38#directories-and-asemblies).         
+> All path references in the article should be adapted according           to your project setup. For more information please refer to the MSDN article            [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx).         The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation -           [Installation Directories](6E821131-83F3-45A4-BB6E-1530223D1E38#directories-and-asemblies).         
 
 If you have custom HTML template you should provide it to the telerik_ReportViewer plugin’s options:
 
@@ -39,7 +39,7 @@ The HTML template file is an HTML page while the templates are HTML document fra
     <body>
         <template id="trv-report-viewer">
             <div class="trv-report-viewer" >
-                ...
+             ...
             </div>
         </template>
     </body>

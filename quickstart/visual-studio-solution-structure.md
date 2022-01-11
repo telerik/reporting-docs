@@ -28,7 +28,7 @@ Your system must have the following installed to use this tutorial:
 
 ## Visual Studio Solution Structure
 
-In case you choose to use the Visual Studio Report Designer and store your reports as .NET classes, the most efficient way to structure your           reporting solution is to first create a class library that contains your reports.           Then you can reference that class library in applications that view the reports.           You can have any number of Windows or Web viewing applications which are re-using the same class library.           This solution structure decouples your program logic from the report and its data.         
+In case you choose to use the Visual Studio Report Designer and store your reports as.NET classes, the most efficient way to structure your           reporting solution is to first create a class library that contains your reports.           Then you can reference that class library in applications that view the reports.           You can have any number of Windows or Web viewing applications which are re-using the same class library.           This solution structure decouples your program logic from the report and its data.         
 
 In the example solution below "MyReportSolution" there are three projects.         
 
@@ -47,7 +47,7 @@ In the example solution below "MyReportSolution" there are three projects.
 
 To create report you start by creating a report library           to contain your report and a web, windows or Silverlight application to display the report.           Generally it's possible to put the report definition and viewer in the           same application but this route is not recommended.         
 
-1. Select __File | New | Project__  from               the Visual Studio File menu.  Select the __Telerik Report Library__                project, give it a name and location. Verify that the targeted .NET Framework version is .NET4+, Full profile as Client profile is not supported.               Click the OK button to close the dialog.             
+1. Select __File | New | Project__  from               the Visual Studio File menu.  Select the __Telerik Report Library__                project, give it a name and location. Verify that the targeted.NET Framework version is.NET4+, Full profile as Client profile is not supported.               Click the OK button to close the dialog.             
 
 1. The __Choose Report Type__  dialog opens. Select the report type, enter a name for the report               class and click the __OK__  button to close the dialog.             
 

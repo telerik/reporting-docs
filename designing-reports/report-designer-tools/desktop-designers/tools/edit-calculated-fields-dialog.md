@@ -30,7 +30,7 @@ by clicking on the ellipsis of the __CalculatedFields__  property.
 
   ![](images/CalculatedFields.png)
 
-The dialog accepts __Name__ , __DataType__  and __Expression__ .           
+The dialog accepts __Name__, __DataType__  and __Expression__.           
 
 ## Edit a Calculated Field
 

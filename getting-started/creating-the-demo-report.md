@@ -18,7 +18,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 1. Run the Standalone Designer (__Telerik.ReportDesigner.exe__ ).             
 
-1. Click __New__  > __Blank Report__  and choose a destination for saving the report.             Each newly created report renders the __pageHeaderSection__ , __detailSection__ ,               __pageFooterSection__  sections.               The report also provides the __Report Header__  and __Report Footer__  sections which are hidden by default.               
+1. Click __New__  > __Blank Report__  and choose a destination for saving the report.             Each newly created report renders the __pageHeaderSection__, __detailSection__,               __pageFooterSection__  sections.               The report also provides the __Report Header__  and __Report Footer__  sections which are hidden by default.               
 
   ![initialview](images/initialview.PNG)
 
@@ -32,7 +32,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 * [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
 
-* [Integrating the Report in .NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
+* [Integrating the Report in.NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
 
 * [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
 

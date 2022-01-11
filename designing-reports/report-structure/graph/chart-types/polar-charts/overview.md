@@ -20,11 +20,11 @@ The following image displays a Rose polar chart:
 
 ## Polar Chart Variations
 
-* __Line Polar Chart__ . A polar chart in which the data points are connected by a line.
+* __Line Polar Chart__. A polar chart in which the data points are connected by a line.
 
-* __Area Polar Chart__ . A polar chart in which the data points are connected by a line with the area below the line filled with color.
+* __Area Polar Chart__. A polar chart in which the data points are connected by a line with the area below the line filled with color.
 
-* __Rose Polar Chart__ . A polar chart in which the data points are represented by bars drawn in a polar coordinate system.
+* __Rose Polar Chart__. A polar chart in which the data points are represented by bars drawn in a polar coordinate system.
 
 ## Design Considerations for Polar Charts
 
@@ -32,5 +32,9 @@ The following image displays a Rose polar chart:
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries) 
+ 
+
+* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
+
+* [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)
 

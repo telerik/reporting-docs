@@ -55,7 +55,7 @@ Requirements for using __Telerik Reporting REST WebAPI service__  in an applicat
 </configuration>
 ````
 
-1. Optional assemblies:             These assemblies add up to the __Telerik Reporting Engine__  functionality and should be used only if you need the specific feature.               They are responsible for additional support formats or retrieving data from an OLAP cube. The asseblies must be deployed along with the               application that hosts the __Telerik Reporting REST WebAPI Service__ .             
+1. Optional assemblies:             These assemblies add up to the __Telerik Reporting Engine__  functionality and should be used only if you need the specific feature.               They are responsible for additional support formats or retrieving data from an OLAP cube. The asseblies must be deployed along with the               application that hosts the __Telerik Reporting REST WebAPI Service__.             
 
    + XPS rendering extension requires __Telerik.Reporting.XpsRendering__  assembly (Telerik.Reporting.XpsRendering.dll).                 
 

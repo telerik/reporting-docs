@@ -12,7 +12,7 @@ position: 0
 
 
 
-This implementation of the Reporting REST service is based on the          [ASP.NET Core framework](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) .         It is the Microsoft approach for building web applications on the          [.NET Core Framework](https://msdn.microsoft.com/netframework/) .       
+This implementation of the Reporting REST service is based on the          [ASP.NET Core framework](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core).         It is the Microsoft approach for building web applications on the          [.NET Core Framework](https://msdn.microsoft.com/netframework/).       
 
 ## Utilization
 

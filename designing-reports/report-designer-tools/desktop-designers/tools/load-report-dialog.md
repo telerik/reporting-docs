@@ -44,5 +44,15 @@ Reports can be stored in different locations and in different formats so use the
 
 # See Also
 
- * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) * [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)  * [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource)  * [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource)  * [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) 
+ 
+
+* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) 
+
+* [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)  
+
+* [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource)  
+
+* [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource)  
+
+* [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)
 

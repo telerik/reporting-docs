@@ -20,7 +20,7 @@ The quickest way to add a HTML5 Web Forms Report Viewer to your web project is w
 
 1. The project must target                [                   ASP.NET 4.0 MVC                 ](https://dotnet.microsoft.com/apps/aspnet/mvc)                or newer framework.             
 
-1. Installed and running                [                   Telerik Report Server                 ](https://docs.telerik.com/report-server/introduction) .             
+1. Installed and running                [                   Telerik Report Server                 ](https://docs.telerik.com/report-server/introduction).             
 
 1. Report Server's built-in __Guest__  user should be enabled.             
 
@@ -28,9 +28,9 @@ The quickest way to add a HTML5 Web Forms Report Viewer to your web project is w
 
 ## Configuring the HTML5 MVC Report Viewer to work with Report Server using Item Templates
 
-The VS item template will integrate HTML5 MVC Report Viewer in a .cshtml page           and will connect to the            [Telerik Report Server](https://docs.telerik.com/report-server/introduction)            to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
+The VS item template will integrate HTML5 MVC Report Viewer in a.cshtml page           and will connect to the            [Telerik Report Server](https://docs.telerik.com/report-server/introduction)            to process and render reports.           The following describes what steps you should perform in order to add it in your application:         
 
-* To start the item template wizard, in __Solution Explorer__ , select the target project. On the               __Project menu__ , click __Add -> New Item__ . In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category. Select __Telerik MVC Report Viewer View__  item.             
+* To start the item template wizard, in __Solution Explorer__, select the target project. On the               __Project menu__, click __Add -> New Item__. In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category. Select __Telerik MVC Report Viewer View__  item.             
 
 * You will be prompted to accept building the project. Click 'OK'.             
 
@@ -60,11 +60,11 @@ After finishing, the item template automatically do the following:
 
 * Configures the NuGet packages, if nessesary.             
 
-* Adds a __CSHTML page with the configured HTML5 MVC Report Viewer__ .             
+* Adds a __CSHTML page with the configured HTML5 MVC Report Viewer__.             
 
 * Displays a __summary log__  that list all of the made changes.             
 
-To display the newly added MVC page, you will need to use your own MVC controller's action returning the view. Note that the auto-generated           ReportsController is an            [ApiController](https://msdn.microsoft.com/en-us/library/system.web.http.apicontroller(v=vs.118).aspx) .           You can use the following steps to add an action (e.g. 'Reports') returning the desired view (e.g. 'Reports.cshtml'),           for example to the HomeController.         
+To display the newly added MVC page, you will need to use your own MVC controller's action returning the view. Note that the auto-generated           ReportsController is an            [ApiController](https://msdn.microsoft.com/en-us/library/system.web.http.apicontroller(v=vs.118).aspx).           You can use the following steps to add an action (e.g. 'Reports') returning the desired view (e.g. 'Reports.cshtml'),           for example to the HomeController.         
 
 1. Move the auto-generated View file (i.e. 'ReportViewerView1.cshtml') from the main folder to the 'View' folder of the chosen Controller ('View/Home' for this example);             
 
@@ -72,7 +72,11 @@ To display the newly added MVC page, you will need to use your own MVC controlle
 
 # See Also
 
- * [How To: Use HTML5 ASP.NET MVC Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
+ 
 
- * [How to: Add New Project Items](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))
+* [How To: Use HTML5 ASP.NET MVC Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
+
+ 
+
+* [How to: Add New Project Items](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))
 

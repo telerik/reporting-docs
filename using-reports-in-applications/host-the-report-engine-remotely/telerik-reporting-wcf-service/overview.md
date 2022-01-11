@@ -14,7 +14,7 @@ position: 0
 
 ## Overview
 
-Telerik Reporting WCF Service enables the           remote access to the  [ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor) . The service           acts as a communication interface between the client programs and the reporting engine. The service is responsible for managing the reports state and resources.           
+Telerik Reporting WCF Service enables the           remote access to the  [ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor). The service           acts as a communication interface between the client programs and the reporting engine. The service is responsible for managing the reports state and resources.           
 
   ![](images/WCFService.png)
 
@@ -32,11 +32,11 @@ The service main purpose is to provide access for the Silverlight Report Viewer 
 
 * __IList```<ExtensionInfo>```__  [Telerik.Reporting.Service.IReportService.ListRenderingExtensions](/reporting/api/Telerik.Reporting.Service.IReportService#Telerik_Reporting_Service_IReportService_ListRenderingExtensions)                - returns all rendering extensions available for the report service.             
 
-*  [Telerik.Reporting.Service.IReportService.Render](/reporting/api/Telerik.Reporting.Service.IReportService#Telerik_Reporting_Service_IReportService_Render_System_String_System_String_Telerik_Reporting_Service_NameValueDictionary_Telerik_Reporting_Service_NameValueDictionary_) __(string format, string report, NameValueDictionary deviceInfo, NameValueDictionary parameters)__                - renders the specified __report__  (assembly               qualified type name) in the specified __format__                (see ListRenderingExtensions operation above), with the given               __[deviceInfo]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})__                settings and __parameter values__ .             
+*  [Telerik.Reporting.Service.IReportService.Render](/reporting/api/Telerik.Reporting.Service.IReportService#Telerik_Reporting_Service_IReportService_Render_System_String_System_String_Telerik_Reporting_Service_NameValueDictionary_Telerik_Reporting_Service_NameValueDictionary_) __(string format, string report, NameValueDictionary deviceInfo, NameValueDictionary parameters)__                - renders the specified __report__  (assembly               qualified type name) in the specified __format__                (see ListRenderingExtensions operation above), with the given               __[deviceInfo]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})__                settings and __parameter values__.             
 
 ## Deploying the service
 
-The __Telerik Reporting WCF Service__  is a standard WCF service and is compatible with all hosted models described in the  [Hosting Services](http://msdn.microsoft.com/en-us/library/ms730158) .         
+The __Telerik Reporting WCF Service__  is a standard WCF service and is compatible with all hosted models described in the  [Hosting Services](http://msdn.microsoft.com/en-us/library/ms730158).         
 
 [Telerik Reporting configuration settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) must be applied in the service project configuration file.
 
@@ -44,11 +44,19 @@ For more information on deploying a Silverlight application that utilizes Teleri
 
 # See Also
 
- * [How to Add Telerik Reporting WCF Service to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-add-telerik-reporting-wcf-service-to-web-application%})
+ 
 
- * [How to Self Host the Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-self-host-the-service%})
+* [How to Add Telerik Reporting WCF Service to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-add-telerik-reporting-wcf-service-to-web-application%})
 
- * [How to Enable SSL for Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-enable-ssl-for-telerik-reporting-wcf-service%})
+ 
 
- * [How to Implement and use custom IReportResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%})
+* [How to Self Host the Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-self-host-the-service%})
+
+ 
+
+* [How to Enable SSL for Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-enable-ssl-for-telerik-reporting-wcf-service%})
+
+ 
+
+* [How to Implement and use custom IReportResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%})
 

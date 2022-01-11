@@ -16,7 +16,7 @@ The quickest way to add a Windows Form Report Viewer to your Windows Form projec
 
 ## Telerik Report Viewer Form Item Template
 
-The item template is available in the            [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)            dialog box under the __Windows Form category__ .         
+The item template is available in the            [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)            dialog box under the __Windows Form category__.         
 
 This item template will do the following:         
 
@@ -42,11 +42,19 @@ If the current application has to be declared as DPI-aware, an additional elemen
 
 # See Also
 
- * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
+ 
 
- * [How to Add manually report viewer to a Windows Forms' .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%})[](66CD7D60-7708-42D5-8BB4-506676E8679E)
+* [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
 
- * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+ 
 
- * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
+* [How to Add manually report viewer to a Windows Forms'.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%})[](66CD7D60-7708-42D5-8BB4-506676E8679E)
+
+ 
+
+* [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+
+ 
+
+* [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
 

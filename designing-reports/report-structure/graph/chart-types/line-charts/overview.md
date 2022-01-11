@@ -22,11 +22,11 @@ The following image displays a line chart that contains three series.
 
   ![Line Types](images/Graph/LineTypes.png)
 
-* __Straight Line Chart__ .               A line chart that uses straight lines to connect the data points.             
+* __Straight Line Chart__.               A line chart that uses straight lines to connect the data points.             
 
-* __Smooth Line Chart__ .               A line chart that uses curved lines instead of regular ones.             
+* __Smooth Line Chart__.               A line chart that uses curved lines instead of regular ones.             
 
-* __Stepped Line Chart__ .               A line chart that uses horizontal and vertical lines to connect the data points, creating a step-like strcuture.             
+* __Stepped Line Chart__.               A line chart that uses horizontal and vertical lines to connect the data points, creating a step-like strcuture.             
 
 ## Design Considerations for Line Charts
 
@@ -38,5 +38,9 @@ The following image displays a line chart that contains three series.
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [LineSeries](/reporting/api/Telerik.Reporting.LineSeries) 
+ 
+
+* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
+
+* [LineSeries](/reporting/api/Telerik.Reporting.LineSeries)
 

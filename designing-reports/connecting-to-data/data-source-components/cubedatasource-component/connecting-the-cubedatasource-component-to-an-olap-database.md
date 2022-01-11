@@ -35,7 +35,7 @@ cubeDataSource.SelectCommand = "select non empty { [Measures].[Sales Amount] } o
                                "from [Adventure Works]"
 ````
 
-Instead of setting connection strings as property settings in the __CubeDataSource__                      object, you can store them centrally as part of your application's configuration settings using the                     __connectionStrings__  configuration element. This enables you to manage connection                     strings independently of your reports, including encrypting them using __Protected Configuration__ . The following example shows how to connect to the __Adventure Works DW 2008R2__  sample database using a connection string which stored in the __connectionStrings__  configuration element named __MyAdventureWorksDW__ :                 
+Instead of setting connection strings as property settings in the __CubeDataSource__                      object, you can store them centrally as part of your application's configuration settings using the                     __connectionStrings__  configuration element. This enables you to manage connection                     strings independently of your reports, including encrypting them using __Protected Configuration__. The following example shows how to connect to the __Adventure Works DW 2008R2__  sample database using a connection string which stored in the __connectionStrings__  configuration element named __MyAdventureWorksDW__ :                 
 
     
 ````xml

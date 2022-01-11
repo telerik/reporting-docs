@@ -20,9 +20,9 @@ To give an example we will use the Invoice report from our examples and will upd
 
 > All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
-1. Create a new ASP.NET Web Forms Empty Project.                   We are going to use one of our demo Visual Studio reports. For this purpose add a new Telrik Report Library project to the solution from the VS item templates, name it *Charp|VB.ReportLibrary* , add the existing __Invoice.cs__  report and its subreport __SalesOrderDetails.cs__  from *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Invoice*  folder and built the *Charp|VB.ReportLibrary*  project. Add reference to the ReportLibrary project in the Web Forms project.                 
+1. Create a new ASP.NET Web Forms Empty Project.                   We are going to use one of our demo Visual Studio reports. For this purpose add a new Telrik Report Library project to the solution from the VS item templates, name it *Charp|VB.ReportLibrary*, add the existing __Invoice.cs__  report and its subreport __SalesOrderDetails.cs__  from *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Invoice*  folder and built the *Charp|VB.ReportLibrary*  project. Add reference to the ReportLibrary project in the Web Forms project.                 
 
-1. Then use the                    [HTML5 Web Forms Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})    Name the web page with the viewer                   __InvoiceParameters.aspx__ . On __'Configure report source'__  step                    select __'Existing report definition'__ , then select                    __'Select type report definition created in Visual Studio'__  and browse                    *Invoice*  report class.                     Finish the wizard.
+1. Then use the                    [HTML5 Web Forms Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})    Name the web page with the viewer                   __InvoiceParameters.aspx__. On __'Configure report source'__  step                    select __'Existing report definition'__, then select                    __'Select type report definition created in Visual Studio'__  and browse                    *Invoice*  report class.                     Finish the wizard.
 
 1. Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__                    in the project's web.config file. For example:                 
 
@@ -189,5 +189,7 @@ $('#invoiceId').change(function () {
 
 # See Also
 
- * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+ 
+
+* [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
 

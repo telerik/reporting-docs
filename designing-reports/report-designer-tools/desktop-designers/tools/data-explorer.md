@@ -23,7 +23,7 @@ The Data Explorer window lists the data source columns and calculated fields def
 
   ![](images/UI004.png)
 
-The Data Explorer Toolbar contains two buttons - __Edit Calculated Fields__  and __Refresh__ .           Clicking on the __Edit Calculated Fields__  button would show the __Edit Calculated Fields dialog__            which allows you to __Add__  or __Delete__  new Calculated Fields. Please see           [Calculated Fields]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields%}) topic for more information           
+The Data Explorer Toolbar contains two buttons - __Edit Calculated Fields__  and __Refresh__.           Clicking on the __Edit Calculated Fields__  button would show the __Edit Calculated Fields dialog__            which allows you to __Add__  or __Delete__  new Calculated Fields. Please see           [Calculated Fields]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields%}) topic for more information           
 
   ![](images/DataExplorerCalculatedField.png)
 

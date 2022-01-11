@@ -22,7 +22,7 @@ The master report will contain only a simple listing of product categories.
 
 1. The __Choose Report Type__  dialog opens. Select __Band Report Wizard__  and enter a name for the report class.             
 
-1. On the __Choose Data Source__  page of the Band Report Wizard, click the __Add New Data Source__  button and select the               [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). On the __Choose Your Data Connection__  page of the wizard,               setup the data connection to the AdventureWorks database, save it so it can be used later when creating               the Table item, and click __Next__ .             
+1. On the __Choose Data Source__  page of the Band Report Wizard, click the __Add New Data Source__  button and select the               [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). On the __Choose Your Data Connection__  page of the wizard,               setup the data connection to the AdventureWorks database, save it so it can be used later when creating               the Table item, and click __Next__.             
 
 1. Enter the SQL statement below and click the __Next__  button.             
 
@@ -39,7 +39,7 @@ SELECT ProductCategoryID, Name FROM Production.ProductCategory
 
 1. Drag the __Table Wizard__  item from the Visual Studio Toolbox to the detail section of the report.             
 
-1. On the __Choose Data Source__  page of the Table Wizard, click the __Add New Data Source__  button and select the               [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). On the __Choose Your Data Connection__  page of the wizard,               select the already created data connection and click __Next__ .             
+1. On the __Choose Data Source__  page of the Table Wizard, click the __Add New Data Source__  button and select the               [SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). On the __Choose Your Data Connection__  page of the wizard,               select the already created data connection and click __Next__.             
 
 1. Enter the following SQL statement and Finish the DataSource wizard.
 

@@ -18,7 +18,7 @@ Parameters:
 
 | Parameter | Description |
 | ------ | ------ |
-| __scale__ |object with properties:<br/>*  *scale* <br/>*  *scaleMode*|
+| __scale__ |object with properties:<br/>*  *scale* <br/>*  *scaleMode* |
 
 Returns: the current *ReportViewer*  object.         
 

@@ -22,9 +22,9 @@ When you configure the ObjectDataSource component the settings below are obligat
 
 ## Creating the DataSource
 
-1. Open __Visual Studio__  and create a new   [Class Library](https://docs.microsoft.com/en-us/cpp/mfc/class-library-overview?view=vs-2019) .             
+1. Open __Visual Studio__  and create a new   [Class Library](https://docs.microsoft.com/en-us/cpp/mfc/class-library-overview?view=vs-2019).             
 
-   >The Standalone Report Designer is a WPF application built against .NET Framework 4.0.                 For that reason, it cannot load and resolve classes from assemblies built against .NET Standard 2.1, .NET Core and .NET5.                 You can see the                  [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)  which explains how and when the assemblies can be loaded in different framework versions.               
+   >The Standalone Report Designer is a WPF application built against.NET Framework 4.0.                 For that reason, it cannot load and resolve classes from assemblies built against.NET Standard 2.1,.NET Core and.NET5.                 You can see the                  [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)  which explains how and when the assemblies can be loaded in different framework versions.               
 
 1. Add the following piece of code from [How to Bind to a BusinessObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject%}).             
 
@@ -79,23 +79,23 @@ For security reasons the ObjectDataSource can resolve only types that are declar
     <configSections>
         <section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
     </configSections>
-    ...
+ ...
       <Telerik.Reporting>
           <assemblyReferences>
               <add name="yourAssemblyName"/>
         </assemblyReferences>
        </Telerik.Reporting>
-   ...
+...
 </configuration>
 ````
 
-The additional attributes like __version__ , __culture__  and __publicKeyToken__  are not mandatory,               because the .NET runtime can resolve the assembly only by its name.             After modifying the configuration file the application needs to be restarted so the new configuration settings will be read again.             
+The additional attributes like __version__, __culture__  and __publicKeyToken__  are not mandatory,               because the.NET runtime can resolve the assembly only by its name.             After modifying the configuration file the application needs to be restarted so the new configuration settings will be read again.             
 
 ## Using the ObjectDataSource in the Report
 
 1. Open the Report Designer and [create a new report]({%slug telerikreporting/getting-started/creating-the-demo-report%}).             
 
-1. Navigate to __Data__  and click __Object Data Source__ .             
+1. Navigate to __Data__  and click __Object Data Source__.             
 
 1. Select from the __Available data source types__  and follow the Wizard instructions until the process is completed.             
 

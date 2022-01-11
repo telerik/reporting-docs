@@ -45,7 +45,7 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
 </configuration>
 ````
 
-> [Redirecting Assembly Versions](http://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx)  is a standard .NET technique for resolving assembly versions conflicts.  __Visual Studio 2013__  allows automatic binding redirects. For more details check MSDN:  [How to: Enable and Disable Automatic Binding Redirection](http://msdn.microsoft.com/en-us/library/2fc472t2(v=vs.110).aspx) .           
+> [Redirecting Assembly Versions](http://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx)  is a standard.NET technique for resolving assembly versions conflicts.  __Visual Studio 2013__  allows automatic binding redirects. For more details check MSDN:  [How to: Enable and Disable Automatic Binding Redirection](http://msdn.microsoft.com/en-us/library/2fc472t2(v=vs.110).aspx).           
 
 ## How to add the WPF ReportViewer to the toolbox
 
@@ -59,7 +59,7 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
 
 1. Click *OK* 
 
-1. Create a new *WPF Application*  project in Visual Studio. Target .NET Framework 4.0 or higher.             
+1. Create a new *WPF Application*  project in Visual Studio. Target.NET Framework 4.0 or higher.             
 
 1. Add references to the following *Telerik UI for WPF*  NoXaml assemblies:             
    + *Telerik.Windows.Controls.dll* 
@@ -69,7 +69,7 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
    + *Telerik.Windows.Controls.Navigation.dll* 
 
    + *Telerik.Windows.Data.dll* 
-    In case you are still not prepared to migrate to Implicit Styling you can use the binaries that include the xaml.               However you will still have to merge all the xaml files mentioned in the next step, otherwise the Report Viewer will not show up as it will have no style.                 In case Telerik UI for WPF is used only for the report viewer, reference the               Telerik UI for WPF assemblies available with Telerik Reporting.               They are internally unlocked for the WPF Report Viewer but can only be used               with the report viewer. The .NET Framework assemblies containing *Telerik UI for WPF*  are located in               %programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework).                 The WPF ReportViewer is build with the latest official release of Telerik UI for WPF.               In this way we provide trouble free upgrade for most of the users.               This means that you can use the latest version of Telerik UI for WPF in your project               and report viewer.                 It is possible that the Telerik UI for WPF assemblies have a greater version               (service pack or internal build) than the one with which the WPF report viewer               control targets. In this case assembly binding               redirects are required (see [Binding Redirects](e34dad8d-92f7-491e-903d-53cc2654d61c#binding-redirects) topic below).             
+    In case you are still not prepared to migrate to Implicit Styling you can use the binaries that include the xaml.               However you will still have to merge all the xaml files mentioned in the next step, otherwise the Report Viewer will not show up as it will have no style.                 In case Telerik UI for WPF is used only for the report viewer, reference the               Telerik UI for WPF assemblies available with Telerik Reporting.               They are internally unlocked for the WPF Report Viewer but can only be used               with the report viewer. The.NET Framework assemblies containing *Telerik UI for WPF*  are located in               %programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework).                 The WPF ReportViewer is build with the latest official release of Telerik UI for WPF.               In this way we provide trouble free upgrade for most of the users.               This means that you can use the latest version of Telerik UI for WPF in your project               and report viewer.                 It is possible that the Telerik UI for WPF assemblies have a greater version               (service pack or internal build) than the one with which the WPF report viewer               control targets. In this case assembly binding               redirects are required (see [Binding Redirects](e34dad8d-92f7-491e-903d-53cc2654d61c#binding-redirects) topic below).             
 
 1. The Telerik UI for WPF xaml files are located in               %programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Wpf\Themes).             
 
@@ -200,5 +200,7 @@ End Class
 
 # See Also
 
- * [How to Add report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
+ 
+
+* [How to Add report viewer to a WPF.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
 

@@ -22,7 +22,7 @@ position: 1
 
 * The report viewer consumes reports generated and served from a running Reports Web Service.               Such can be referenced from another application or Telerik Report Server instance               ,or it can be hosted locally in a Blazor Server application.              
 
-* Blazor WebAssembly applications are executed directly on the browser UI thread.               In other words, Blazor WebAssembly are stictly client-side applications and the Reports Web Service cannot be hosted in the same project.               When using Blazor WebAssembly, the Reports Web Service has to be hosted in a separate project or                 [Telerik Report Server](https://www.telerik.com/report-server)  may be used.               For more information, see                [Blazor WebAssembly vs. Server](https://www.telerik.com/faqs/blazor-ui/what-is-the-difference-between-blazor-webassembly-vs-server) .               To host the Reporting Service locally, please follow the approach from either the [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}) or the [How to Host Reports Service in ASP.NET Core in .NET 5]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}) articles.             
+* Blazor WebAssembly applications are executed directly on the browser UI thread.               In other words, Blazor WebAssembly are stictly client-side applications and the Reports Web Service cannot be hosted in the same project.               When using Blazor WebAssembly, the Reports Web Service has to be hosted in a separate project or                 [Telerik Report Server](https://www.telerik.com/report-server)  may be used.               For more information, see                [Blazor WebAssembly vs. Server](https://www.telerik.com/faqs/blazor-ui/what-is-the-difference-between-blazor-webassembly-vs-server).               To host the Reporting Service locally, please follow the approach from either the [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}) or the [How to Host Reports Service in ASP.NET Core in.NET 5]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}) articles.             
 
 ## Adding the HTML5 Report Viewer component
 
@@ -70,7 +70,7 @@ Alternatively you can use the                [Kendo UI Less-Based Themes](https:
 @*<script src="_content/Telerik.ReportViewer.Blazor.Trial/interop.js" defer></script>*@
 ````
 
-1. If using Reports web service (either locally hosted or in another application) use the following snippet to place the viewer component in               a razor page like __Pages/Index.razor__ . Note that when referencing the Reports service from another application               the ServiceUrl setting should be the absolute URI to the service. Remember to set the actual __ReportSource__  along with eventual parameters:             
+1. If using Reports web service (either locally hosted or in another application) use the following snippet to place the viewer component in               a razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application               the ServiceUrl setting should be the absolute URI to the service. Remember to set the actual __ReportSource__  along with eventual parameters:             
 
     
       ````
@@ -94,7 +94,7 @@ Alternatively you can use the                [Kendo UI Less-Based Themes](https:
               Scale="1.0" />
 ````
 
-1. If displaying reports from a Report Server instance use the following snippet to place the viewer component in               a razor page like __Pages/Index.razor__ . Remember to set the actual __ReportServer__                and __ReportSource__  settings:             
+1. If displaying reports from a Report Server instance use the following snippet to place the viewer component in               a razor page like __Pages/Index.razor__. Remember to set the actual __ReportServer__                and __ReportSource__  settings:             
 
     
       ````

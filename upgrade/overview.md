@@ -18,7 +18,7 @@ Specific changes and dependencies for each major Telerik Reporting release are l
 
 ## General Workflow
 
-1. Check for any new features, fixes, breaking or dependency changes in the Telerik Reporting                [Release History](https://www.telerik.com/support/whats-new/reporting/release-history) .             
+1. Check for any new features, fixes, breaking or dependency changes in the Telerik Reporting                [Release History](https://www.telerik.com/support/whats-new/reporting/release-history).             
 
 1. Install the desired Telerik Reporting version by using the Telerik Control Panel or               [through the MSI installer file]({%slug telerikreporting/installation%}).             
 
@@ -49,15 +49,15 @@ If the new Telerik Reporting version is a major release, it will be installed ne
 To automatically upgrade your project to a later Telerik Reporting version, use the           [Telerik Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).         
 
 > 
-* The Telerik Upgrade Wizzard does not support website projects.                 Websites handle assembly references in a different way.                 For more information, refer to the article on [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx) .                 To upgrade your website project automatically, transform it into a web application or[manually upgrade your website project](62C373FC-EF77-4C07-9494-E67DACF6748E#upgrading-website-projects-manually).
+* The Telerik Upgrade Wizzard does not support website projects.                 Websites handle assembly references in a different way.                 For more information, refer to the article on [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx).                 To upgrade your website project automatically, transform it into a web application or[manually upgrade your website project](62C373FC-EF77-4C07-9494-E67DACF6748E#upgrading-website-projects-manually).
 * Website, WPF, and Silverlight projects which use the WPF and Silverlight ReportViewers but do not have separately purchased                 Telerik UI for WPF and Telerik UI for Silverlight products, can only be updated manually.
-* .NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:
+*.NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:
 * The references to the Telerik Reporting assemblies or NuGet packages
 * The Htm5 Report Viewer scripts>>
 
 ## Upgrading Website Projects Manually
 
-1. In __Solution Explorer__ , click the __Show All Files__                button.             
+1. In __Solution Explorer__, click the __Show All Files__                button.             
 
 1. Select __Delete all__  to remove all Telerik Reporting assemblies from the __Bin__                folder.             
 
@@ -89,13 +89,13 @@ To automatically upgrade your project to a later Telerik Reporting version, use 
 
 Apart from website projects, you can also manually upgrade class library projects, desktop and web applications.         
 
-1. In __Solution Explorer__ , click the __Show All Files__  button.             
+1. In __Solution Explorer__, click the __Show All Files__  button.             
 
 1. Open __References__  and locate the references to the previous Telerik Reporting assemblies.               Service Pack assemblies are marked with yellow exclamation marks which show that the assemblies cannot be located.               This is normal behavior and indicates that you have an uninstalled the version to which they belong.             
 
 1. Select the old assemblies that you identified in the previous step and click __Delete__                to remove them. Remember the names of the deleted assemblies.             
 
-1. Right-click __References__  and select __Add Reference__ .             
+1. Right-click __References__  and select __Add Reference__.             
 
 1. Select __Add all__  to add all required references to the new Telerik Reporting assembly versions.               They correspond to the ones that you deleted in the previous step. As a result, the newly added references appear in               __References__  without the yellow exclamation marks which means that they are valid.             
 

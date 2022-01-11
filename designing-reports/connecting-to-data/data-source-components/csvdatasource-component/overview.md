@@ -25,7 +25,7 @@ Multiple formats are supported through configuring the CsvDataSource settings.
 |Record separators (row delimiters)|Configures the list of separators by which the document is split to records (rows) based on a delimiter.|
 |Escape format|Defines how the special symbols are escaped, like field and record separators and the escape symbols themselves.                 For more information please check [CsvDataSource Escape Formats]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats%})|
 |Quote|Configures the text qualifier if Quotes (RFC 4180 standard is applied to the CSV document) or Quotes Mixed (same as Quotes, but the escape symbol is escaped with backslash) Escape format is used.|
-|Comment token|Through providing a comment token for the CsvDataSource comments can be supported and omitted from the data output|
+|Comment token|Through providing a comment token for the CsvDataSource comments can be supported and omitted from the data output.|
 
 ## CsvDataSource data format settings
 
@@ -37,14 +37,14 @@ Below are listed the available settings for formatting the data retrieved from t
 |Decimal separator|Configures the decimal separator when parsing numbers.|
 |Thousand separator|Configures the thousand separator when parsing numbers.|
 |DateTime format|A  [Custom Date and Time Format String](https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx) which configures the format of the date and time when parsing date and time strings to DateTime data field values.                 A custom format string consists of one or more custom date and time format specifiers. For more information on date and time format specifiers                 please refer to the  [Custom Date and Time Format Strings](https://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx) MSDN article.For example, to correctly parse the string "12-30-11" to a valid DateTime you need to use the following DateTime format: "MM-dd-yy".                  If the date string does not conform to the specified DateTime format, the DateTime field will appear empty in the Data Preview window.|
-|Columns|Configures the column - data type mapping|
+|Columns|Configures the column - data type mapping.|
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above             
+*.NET Framework 4.0 and above             
 
-* .NET Core 2.0 and above             
+*.NET Core 2.0 and above             
 
-* .NET Standard 2.0 and above             
+*.NET Standard 2.0 and above             
 
 

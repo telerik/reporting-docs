@@ -16,7 +16,7 @@ This article explains the specific QR code settings.
 
 ## Version
 
-This is an integer value, in the range from __1__  to __40__ , representing              the desired barcode version. Usually, higher versions are used do accommodate larger amounts of data.             If this property is not set, the encoder internally calculates the lowest possible version and uses it instead.         
+This is an integer value, in the range from __1__  to __40__, representing              the desired barcode version. Usually, higher versions are used do accommodate larger amounts of data.             If this property is not set, the encoder internally calculates the lowest possible version and uses it instead.         
 
 ## Error Correction Level
 
@@ -70,5 +70,21 @@ Me.barcode1.Encoder = encoder
 ````
 
 # See Also
- * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  * [Telerik.Reporting.Barcodes.QRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder)  * [ApplicationIndicator](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ApplicationIndicator)  * [ECI](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ECI)  * [ErrorCorrectionLevel](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ErrorCorrectionLevel)  * [FNC1](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_FNC1)  * [Mode](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_Mode)  * [Version](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_Version) 
+ 
+
+* [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  
+
+* [Telerik.Reporting.Barcodes.QRCodeEncoder](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder)  
+
+* [ApplicationIndicator](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ApplicationIndicator)  
+
+* [ECI](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ECI)  
+
+* [ErrorCorrectionLevel](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_ErrorCorrectionLevel)  
+
+* [FNC1](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_FNC1)  
+
+* [Mode](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_Mode)  
+
+* [Version](/reporting/api/Telerik.Reporting.Barcodes.QRCodeEncoder#Telerik_Reporting_Barcodes_QRCodeEncoder_Version)
 

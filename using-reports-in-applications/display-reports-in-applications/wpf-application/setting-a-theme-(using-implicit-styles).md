@@ -60,7 +60,7 @@ Currently to change an existing Report Viewer theme you can simply copy the orig
 
 We will apply embedded implicit styles for the Fluent theme in our example project.           The embedded implicit styles are upgradable with the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).         
 
-* Replace the referenced Telerik UI for WPF assemblies with assemblies from the Binaries.NoXaml folder.               If the Telerik UI for WPF assemblies are only used for the report viewer,               use Telerik UI for WPF assemblies available with the local demos.               They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer.               The .NET Framework assemblies containing *Telerik UI for WPF*  are located in               %programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework).             
+* Replace the referenced Telerik UI for WPF assemblies with assemblies from the Binaries.NoXaml folder.               If the Telerik UI for WPF assemblies are only used for the report viewer,               use Telerik UI for WPF assemblies available with the local demos.               They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer.               The.NET Framework assemblies containing *Telerik UI for WPF*  are located in               %programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework).             
 
 * Add reference to the Telerik.ReportViewer.Wpf.Themes assembly.             
 

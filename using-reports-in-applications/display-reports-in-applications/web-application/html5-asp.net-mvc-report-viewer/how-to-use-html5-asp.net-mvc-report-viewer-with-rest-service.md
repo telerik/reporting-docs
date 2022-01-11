@@ -22,19 +22,19 @@ The following list describes the prerequisites for this tutorial:
 
 1. The project must target                [                   ASP.NET 4.0 MVC                 ](https://dotnet.microsoft.com/apps/aspnet/mvc)                or newer framework.             
 
-1. Adapt all path references in the described steps according to the project setup.               For more information, please refer to the MSDN article                [ASP.NET Web Project Paths](https://docs.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)) .             
+1. Adapt all path references in the described steps according to the project setup.               For more information, please refer to the MSDN article                [ASP.NET Web Project Paths](https://docs.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)).             
 
 ## Telerik MVC Report Viewer View Item Template
 
 After a successful [installation of Telerik Reporting]({%slug telerikreporting/installation%}),            you have access to the Telerik item templates. The item template does the following for you:           
 
-* adds a .cshtml page with the MVC Report Viewer to your project             
+* adds a.cshtml page with the MVC Report Viewer to your project             
 
 * references an existing or adds a new [Telerik Reporting REST WebAPI Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})
 
 The following steps describe how to add the template:         
 
-1. To start the item template wizard, in __Solution Explorer__ , select the target project. On the               __Project menu__ , click __Add -> New Item__ . In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category and select the __Telerik MVC Report Viewer View__  item.             
+1. To start the item template wizard, in __Solution Explorer__, select the target project. On the               __Project menu__, click __Add -> New Item__. In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category and select the __Telerik MVC Report Viewer View__  item.             
 
 1. Accept the project build prompt. Click 'OK'.             
 
@@ -48,13 +48,13 @@ The following steps describe how to add the template:
 
   ![item-template-reporting-engine-rest](images/item-template-reporting-engine-rest.png)
 
-   1. __Configure report source__  - this step adds a report definition for the report viewer. If you selected the                   __Create new REST service__  option in the previous step, you will have to choose one of the following three options.                   If you, however, selected the __Use existing REST service__  option, you can select only an __Existing report definition__ .                 
+   1. __Configure report source__  - this step adds a report definition for the report viewer. If you selected the                   __Create new REST service__  option in the previous step, you will have to choose one of the following three options.                   If you, however, selected the __Use existing REST service__  option, you can select only an __Existing report definition__.                 
 
    + __Sample report definition__  - this option will create a sample report definition which will be shown in the new                       report viewer. It will be placed in a newly created folder called __Reports__  at the root of the application. It can be either modified                       or changed with another.                     
 
    + __New report definition__  - this option will create a new report definition that will be opened for editing in                       the respective report designer. On the right side of the dialog there are two possible options:                     
 
-   + __TRDP report definition__  - creates a TRDP file with the entered __Report name__ .                         
+   + __TRDP report definition__  - creates a TRDP file with the entered __Report name__.                         
 
    + __Type report definition__  - creates a CS|VB file with the entered __Report name__                            either in an existing report library project or in a newly created one.                         
 
@@ -78,11 +78,11 @@ After finishing, the item template automatically does the following:
 
 * Registers the service routes in WebApiConfig.cs.             
 
-* Adds a __CSHTML page with the configured HTML5 MVC Report Viewer__ .             
+* Adds a __CSHTML page with the configured HTML5 MVC Report Viewer__.             
 
 * Displays a __summary log__  with all changes.             
 
-To display the newly added MVC page, you need to use your own MVC controller's action returning the view. Note that the auto-generated            ReportsController is an             [ApiController](https://msdn.microsoft.com/en-us/library/system.web.http.apicontroller(v=vs.118).aspx) .           You can use the following steps to add an action (e.g. 'Reports') returning the desired view (e.g. 'Reports.cshtml'),            for example to the HomeController.         
+To display the newly added MVC page, you need to use your own MVC controller's action returning the view. Note that the auto-generated            ReportsController is an             [ApiController](https://msdn.microsoft.com/en-us/library/system.web.http.apicontroller(v=vs.118).aspx).           You can use the following steps to add an action (e.g. 'Reports') returning the desired view (e.g. 'Reports.cshtml'),            for example to the HomeController.         
 
 1. Move the auto-generated View file (i.e. 'ReportViewerView1.cshtml') from the main folder to the 'View' folder of the chosen Controller ('View/Home' for this example);             
 
@@ -92,13 +92,19 @@ To display the newly added MVC page, you need to use your own MVC controller's a
 
 ## Examples
 
-You can find the complete example setup in Telerik Reporting installation path. For example,           __C:\Program Files (x86)\Progress\Telerik Reporting {VERSION}\Examples\CSharp\MvcDemo__ .         
+You can find the complete example setup in Telerik Reporting installation path. For example,           __C:\Program Files (x86)\Progress\Telerik Reporting {VERSION}\Examples\CSharp\MvcDemo__.         
 
 # See Also
 
- * [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server%})
+ 
 
- * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
+* [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server%})
 
- * [Getting Started with ASP.NET MVC](http://www.asp.net/mvc/overview/getting-started/introduction/getting-started)
+ 
+
+* [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
+
+ 
+
+* [Getting Started with ASP.NET MVC](http://www.asp.net/mvc/overview/getting-started/introduction/getting-started)
 

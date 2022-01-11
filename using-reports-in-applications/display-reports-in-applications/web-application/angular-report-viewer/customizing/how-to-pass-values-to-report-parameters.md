@@ -32,7 +32,7 @@ import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-v
 ...
 export class AppComponent {
     @ViewChild('viewer1') viewer: TelerikReportViewerComponent;
-    ...
+ ...
     onButtonClick(param: string) {
         var rs = {
             report: 'Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null',
@@ -48,7 +48,11 @@ export class AppComponent {
 
 # See Also
 
- * [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
+ 
 
- * [How To: Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})
+* [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
+
+ 
+
+* [How To: Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})
 

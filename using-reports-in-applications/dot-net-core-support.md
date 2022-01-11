@@ -12,15 +12,15 @@ position: 7
 
 
 
-This article explains how to use reports in a .NET Core application for Windows, Linux, and macOS platforms.
+This article explains how to use reports in a.NET Core application for Windows, Linux, and macOS platforms.
 
-Telerik Reporting provides a set of assemblies and NuGet packages designed for .NET Core projects.         The NuGets are available in the          [Telerik NuGet feed](https://docs.telerik.com/reporting/add-the-telerik-private-nuget-feed-to-visual-studio).         Additionally, thе assemblies are available in the Telerik Reporting installation directory         __\Bin\netstandard2.0\__  and          __\Bin\netcoreapp3.1\__  folders.         The assemblies target .NET Standard 2.0 and the desktop viewers target .NET Core 3.1, which ensures compatibility with a greater variety of frameworks and applications.         The NuGet packages resolve the external dependencies to provide better dependency management and code portability.       
+Telerik Reporting provides a set of assemblies and NuGet packages designed for.NET Core projects.         The NuGets are available in the          [Telerik NuGet feed](https://docs.telerik.com/reporting/add-the-telerik-private-nuget-feed-to-visual-studio).         Additionally, thе assemblies are available in the Telerik Reporting installation directory         __\Bin\netstandard2.0\__  and          __\Bin\netcoreapp3.1\__  folders.         The assemblies target.NET Standard 2.0 and the desktop viewers target.NET Core 3.1, which ensures compatibility with a greater variety of frameworks and applications.         The NuGet packages resolve the external dependencies to provide better dependency management and code portability.       
 
 ## Requirements
 
 * ASP.NET Core 2.1 or newer for web projects
 
-* .NET Core 3.1 or newer for desktop projects
+*.NET Core 3.1 or newer for desktop projects
 
 The following NuGet packages are required.           When using our *NuGet*  packages, the required dependencies are resolved automatically.           Otherwise, they need to be manually added to the project.         
 
@@ -41,19 +41,19 @@ The following NuGet packages are required.           When using our *NuGet*  pac
 |System.Security.Permissions|4.5.2000|
 |System.Text.Encoding.CodePages|4.5.2000|
 |System.Threading.AccessControl|4.5.2000|
-|sqlite-net-pcl|1.7.302-bet|
+|sqlite-net-pcl|1.7.302-beta|
 
 ## Implemented Features and Limitations
 
-On Windows, the reporting engine still relies on GDI+ library because it provides the fastest and most convenient way to process text, which is essential to the product.           In Windows environment .NET Core runtime manages to resolve the GDI+ calls natively, but for Linux and macOS a set of libraries should be installed (see below).           Most of the processing and rendering features that work on Windows using .NET Framework 4 or higher, are also supported in .NET Core projects with the new .NET Standard assemblies.         
+On Windows, the reporting engine still relies on GDI+ library because it provides the fastest and most convenient way to process text, which is essential to the product.           In Windows environment.NET Core runtime manages to resolve the GDI+ calls natively, but for Linux and macOS a set of libraries should be installed (see below).           Most of the processing and rendering features that work on Windows using.NET Framework 4 or higher, are also supported in.NET Core projects with the new.NET Standard assemblies.         
 
-As a down-side, the report item designers are not .NET Standard-compatible, hence no design-time support in Visual Studio is available and type reports are not supported.           Our recommendation is to [convert]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer%}) such reports to .trdx/.trdp definitions with the Standalone Report Designer            or these classes can be used as runtime-created report instances.           Report definitions, created in Visual Studio, can be used as report instances in            .NET Core applications, but their code must not include any calls to CodeDOM-specific classes like ResourceManager.         
+As a down-side, the report item designers are not.NET Standard-compatible, hence no design-time support in Visual Studio is available and type reports are not supported.           Our recommendation is to [convert]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer%}) such reports to.trdx/.trdp definitions with the Standalone Report Designer            or these classes can be used as runtime-created report instances.           Report definitions, created in Visual Studio, can be used as report instances in         .NET Core applications, but their code must not include any calls to CodeDOM-specific classes like ResourceManager.         
 
 Supported functionalities:
 
 * All rendering extensions except MHTML (HTML archive), XPS (XML Paper Specification) and XLS (Microsoft Excel 97 - 2003).             
 
-* HTML, PDF and OpenXML-based renderings are supported on __Linux/macOS__ .               Due to graphics library incompatibilities, in some cases, Graph-based items in the OpenXML renderings are incorrectly displayed.             
+* HTML, PDF and OpenXML-based renderings are supported on __Linux/macOS__.               Due to graphics library incompatibilities, in some cases, Graph-based items in the OpenXML renderings are incorrectly displayed.             
 
 * All report items except the obsolete Chart item are supported.             
 
@@ -65,7 +65,7 @@ Supported functionalities:
 
 ## Using Telerik Reporting in Applications on Linux Platform
 
-When deploying to a Linux machine, make sure it has installed the library            [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)            , which is a Mono implementation of GDI+ API for non-Windows operating systems. The following snippet performs an update and installs the necessary libraries on Ubuntu/Debian:         
+When deploying to a Linux machine, make sure it has installed the library            [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)         , which is a Mono implementation of GDI+ API for non-Windows operating systems. The following snippet performs an update and installs the necessary libraries on Ubuntu/Debian:         
 
     
 ````
@@ -92,7 +92,7 @@ The fonts used in the reports should be installed on the Linux machine, otherwis
 
 ## Using Telerik Reporting in Applications on macOS Platform
 
-1. Install  [.NET Core for macOS](https://dotnet.microsoft.com/download) .
+1. Install  [.NET Core for macOS](https://dotnet.microsoft.com/download).
 
 1. Install  [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)  using  [Homebrew](https://brew.sh/) 
 
@@ -101,7 +101,7 @@ The fonts used in the reports should be installed on the Linux machine, otherwis
 brew install mono-libgdiplus
 ````
 
-1. Create your .NET Core application (or copy an existing one from a Windows machine).
+1. Create your.NET Core application (or copy an existing one from a Windows machine).
 
 1. Add __nuget.config__  file with path to your NuGet repository.
 
@@ -137,15 +137,21 @@ If you need to use Telerik Reporting in a Windows container, you need to target 
 
 ## Examples
 
-Telerik Reporting ships with a ready-made .NET Core examples that demonstrate how to show the sample reports in an ASP.NET Core, WinForms Core and WPF Core application.            The ASP.NET Core demo also shows how to inject an __appsettings.json__  configuration file to the controller            and how to initialize a WebHostBuilder so it runs under Windows and Linux.                    
+Telerik Reporting ships with a ready-made.NET Core examples that demonstrate how to show the sample reports in an ASP.NET Core, WinForms Core and WPF Core application.            The ASP.NET Core demo also shows how to inject an __appsettings.json__  configuration file to the controller            and how to initialize a WebHostBuilder so it runs under Windows and Linux.                    
 
 An example project is available in the Telerik Reporting installation directory            *\Examples\CSharp\Asp.NetCoreDemo*  subfolder.         
 
 # See Also
 
- * [How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
+ 
 
- * [How to Add report viewer to a Windows Forms' .NET Core project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project%})
+* [How to Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
 
- * [How to Add report viewer to a WPF .NET Core project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
+ 
+
+* [How to Add report viewer to a Windows Forms'.NET Core project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project%})
+
+ 
+
+* [How to Add report viewer to a WPF.NET Core project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
 

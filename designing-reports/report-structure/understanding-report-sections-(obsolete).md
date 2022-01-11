@@ -22,13 +22,19 @@ The following table presents a summary of the section types and their usage:
 | __Detail__ |This section is printed once for every row in the data source. This is where you place the report items that make up <br/>       the main body of the report.|
 | __Group Footer__ |This section is printed at the end of each group of records. Use a group footer to print summary information for a <br/>       group. Similar to the Group Header section, you should always use aggregate functions for the databound items that are <br/>       calculated for the group data.|
 | __Report Footer__ |This section is printed just once, at the end of the report. Use the report footer to print report totals or <br/>       other summary information for the entire report. Similar to the Report Header section, you should always use aggregate <br/>       functions for the databound items that are calculated for the entire report data.|
-| __Page Footer__ |This section is printed at the end of every page. Use a page footer to print page numbers<br/>    or per-page information. Similar to the Page Header Section you cannot use databound items, but can access the PageNumber and <br/>    PageCount objects. It is possible to suppress the printing of the Page Footer section on the first and last page of a report, but <br/>    the space taken up would always be reserved no matter whether it is visible|
+| __Page Footer__ |This section is printed at the end of every page. Use a page footer to print page numbers<br/>    or per-page information. Similar to the Page Header Section you cannot use databound items, but can access the PageNumber and <br/>    PageCount objects. It is possible to suppress the printing of the Page Footer section on the first and last page of a report, but <br/>    the space taken up would always be reserved no matter whether it is visible.|
 
 # See Also
 
- * [How to Add/Remove Report Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header-&-footer-sections%})
+ 
 
- * [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header-&-footer-sections%})
+* [How to Add/Remove Report Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header-&-footer-sections%})
 
- * [How to Create Group Headers and Footers (obsolete)]({%slug telerikreporting/designing-reports/report-structure/how-to-create-group-headers-and-footers-(obsolete)%})
+ 
+
+* [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header-&-footer-sections%})
+
+ 
+
+* [How to Create Group Headers and Footers (obsolete)]({%slug telerikreporting/designing-reports/report-structure/how-to-create-group-headers-and-footers-(obsolete)%})
 

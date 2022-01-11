@@ -51,5 +51,5 @@ The following table is a list of all commands:
 |zoom|zoom ratio|Zoom with a specified ratio.|
 |toggleZoomMode|none|Changes the zoom mode of the report.|
 |toggleSideMenu|none|Shows or hides the side menu.|
-|toggleSearchDialog|none|Shows or hides the search dialog|
+|toggleSearchDialog|none|Shows or hides the search dialog.|
 

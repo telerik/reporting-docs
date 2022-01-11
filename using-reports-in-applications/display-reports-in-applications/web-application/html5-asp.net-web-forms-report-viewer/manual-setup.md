@@ -31,11 +31,11 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
 </connectionStrings>
 ````
 
-* (Optional) Telerik Kendo UI custom distribution for Telerik Reporting (located in {Telerik Reporting installation path}\Html5\ReportViewer\js) or Kendo UI mainstream distribution downloaded locally or via  [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn) . You must load only one version of Telerik Kendo UI styles and scripts on the page.               For more information see [](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements)If Kendo UI is not provided HTTPHandler will provide the required Kendo UI styles and scripts.             
+* (Optional) Telerik Kendo UI custom distribution for Telerik Reporting (located in {Telerik Reporting installation path}\Html5\ReportViewer\js) or Kendo UI mainstream distribution downloaded locally or via  [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn). You must load only one version of Telerik Kendo UI styles and scripts on the page.               For more information see [](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements)If Kendo UI is not provided HTTPHandler will provide the required Kendo UI styles and scripts.             
 
 ## Using HTML5 ASP.NET Web Forms Report Viewer in a web application
 
-The following steps produce a view with settings similar to these of the local WebFormsDemo project,           installed by default under __[TelerikReporting_InstallDir]\Examples__ .           The structure used in this tutorial is a WebForm that does not use a Master page.         
+The following steps produce a view with settings similar to these of the local WebFormsDemo project,           installed by default under __[TelerikReporting_InstallDir]\Examples__.           The structure used in this tutorial is a WebForm that does not use a Master page.         
 
 > All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
@@ -49,7 +49,7 @@ The following steps produce a view with settings similar to these of the local W
    + __Telerik.ReportViewer.Html5.WebForms__ 
 
    + __Newtonsoft.Json, Version 9.0.0.0 or higher__ 
-    assemblies and set their __Copy Local__  properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__ .                 
+    assemblies and set their __Copy Local__  properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__.                 
 
     >Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
@@ -71,7 +71,7 @@ The following steps produce a view with settings similar to these of the local W
 
     The viewport META tag is used to control layout on mobile browsers.    
 
-1. (Optional) The default viewer implementation depends externally on __jQuery__ .                   Add link to jQuery in the ```<head>``` element:                 
+1. (Optional) The default viewer implementation depends externally on __jQuery__.                   Add link to jQuery in the ```<head>``` element:                 
 
     
     ````html
@@ -137,7 +137,7 @@ kendo.mobile.min.js - optional, if gestures/touch support is required
 
 1. Set the viewer width and height.                 
 
-1. (Optional) If you set the viewer's __Deferred__  to __true__ , render the deferred initialization                   statement for the Report Viewer (remember that they must be rendered after jQuery):                 
+1. (Optional) If you set the viewer's __Deferred__  to __true__, render the deferred initialization                   statement for the Report Viewer (remember that they must be rendered after jQuery):                 
 
     
     ````xml

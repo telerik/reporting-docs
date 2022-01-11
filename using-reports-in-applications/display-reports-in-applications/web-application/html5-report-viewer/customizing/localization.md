@@ -12,7 +12,7 @@ position: 2
 
 
 
-The article elaborates on how to localize the messages displayed by the HTML5 Report Viewer. This feature is available since version  [R2 2018 SP1 (12.1.18.620)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620) .       
+The article elaborates on how to localize the messages displayed by the HTML5 Report Viewer. This feature is available since version  [R2 2018 SP1 (12.1.18.620)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620).       
 
 1. To localize the report viewer messages, create a new JavaScript file using the following code snippet:
 
@@ -181,7 +181,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 }(window.telerikReportViewer = window.telerikReportViewer || {}, jQuery));
 ````
 
-1. Specify the name of the file using the following convention:resources.__[culture]__ .js             where *[culture]*  is the name of the culture for the specified localization resource.               For example, to provide a localization resource for the French Belgian culture, the corresponding resource file could be named as follows:             *resources.fr-BE.js* 
+1. Specify the name of the file using the following convention:resources.__[culture]__.js             where *[culture]*  is the name of the culture for the specified localization resource.               For example, to provide a localization resource for the French Belgian culture, the corresponding resource file could be named as follows:             *resources.fr-BE.js* 
 
 1. Add the newly created JavaScript file to the ```<head>``` element of the page between jQuery and telerikReportViewer.js files:             
 
@@ -198,7 +198,11 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 # See Also
 
- * [Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%})
+ 
 
- * [Localizing the Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization%})
+* [Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%})
+
+ 
+
+* [Localizing the Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization%})
 

@@ -82,7 +82,7 @@ Sub Application_Start()
 
 1. To verify whether the service works correctly you can make a request                   for the available document formats using the following URL:                 
 
-| __http://localhost: [portnumber]/api/reports/formats__|
+| __http://localhost: [portnumber]/api/reports/formats__ |
 
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).                 
 
@@ -113,5 +113,7 @@ GlobalConfiguration.Configuration.EnableCors();
 
 # See Also
 
- * [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
+ 
+
+* [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
 

@@ -14,9 +14,9 @@ position: 6
 
 The  [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager)          serializes the report definition in XML and with a zip compression packages the definition and its resources.         The resources are in their native format and archived for better performance.         This way the definition is faster to handle and more compact.         This is the default report document format for the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).       
 
-## Packaging .TRDX report definition
+## Packaging.TRDX report definition
 
-The following sample code snipped demonstrates how to package a predefined .TRDX (XML) report definition:
+The following sample code snipped demonstrates how to package a predefined.TRDX (XML) report definition:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromXmlReportSnippet}}
 ````C#
@@ -60,7 +60,7 @@ End Using
 
 ## Unpackaging
 
-The following sample code snipped demonstrates how to unpackage a predefined .TRDP report definition:
+The following sample code snipped demonstrates how to unpackage a predefined.TRDP report definition:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=UnpackageTrdpSnippet}}
 ````C#
@@ -80,5 +80,7 @@ End Using
 
 # See Also
 
- * [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})
+ 
+
+* [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})
 

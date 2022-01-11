@@ -23,7 +23,7 @@ GET /api/reports/clients/sessionTimeout
 
 | HTTP Status Code | Description |
 | ------ | ------ |
-|`200 OK`|Successfully retrieved the clients session timeou|
+|`200 OK`|Successfully retrieved the clients session timeout|
 
 __Response Body__ 
 

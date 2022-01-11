@@ -41,7 +41,7 @@ or it can specify a global connection string that can be used by all reports cre
 </connectionStrings>
 ````
 
-For more information, see          [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx) .        
+For more information, see          [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx).        
 
 ## Default Configuration
 
@@ -108,11 +108,19 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
 
 # See Also
 
- * [Report Designer Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration%})
+ 
 
- * [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
+* [Report Designer Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration%})
 
- * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+ 
 
- * [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
+* [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
+
+ 
+
+* [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+
+ 
+
+* [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
 

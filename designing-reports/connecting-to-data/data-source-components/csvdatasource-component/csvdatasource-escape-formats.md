@@ -20,6 +20,6 @@ The available Escape formats for the CsvDataSource component are None, Backslash
 |Backslash|Unix style programs use backslashes for escaping both field and record separators. Backslash is escaped with a second backslash.|
 |BackslashAlternative|Some Unix style programs use backslashes for escaping field separators, but for escaping record separators can use \r\n instead of backslash.                  Backslash is escaped with a second backslash.|
 |Quotes|Excel uses single or double quotes to embed escaped text (in accordance to RFC 4180). Single or double quotes are escaped with second single or double quotes.|
-|QuotesMixed|Some files use a mixed escaping format -  fields are embedded in quotes (Excel like), quotes (single or double) are escaped with backslash (Unix like).                  Backslash is escaped with a second backslash|
+|QuotesMixed|Some files use a mixed escaping format -  fields are embedded in quotes (Excel like), quotes (single or double) are escaped with backslash (Unix like).                  Backslash is escaped with a second backslash.|
 
 

@@ -52,6 +52,6 @@ The multi-column functionality is intended to be used only in the main          
 
 Double-check if the project has references to Telerik Reporting assemblies,           and if the references CopyLocal is set to true in the Visual Studio Property grid.           In case you recently updated your Telerik Reporting installation, run the           [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) in all related projects in Visual Studio.         
 
-If Telerik Reporting assemblies are referenced and updated, verify that the project targets .NET4+ framework Full Profile version.
+If Telerik Reporting assemblies are referenced and updated, verify that the project targets.NET4+ framework Full Profile version.
 
 

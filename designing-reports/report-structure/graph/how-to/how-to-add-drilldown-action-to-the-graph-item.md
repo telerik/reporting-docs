@@ -21,7 +21,7 @@ You can use a report designer of your choice - the described approach is valid f
 1. Start the report designer and create a new report:             
    + In Standalone Report Designer: *File - New - Blank Report;* 
 
-   + In Visual Studio Report Designer: *File - New Project - Telerik Report Library [VERSION] - Blank Report* .                 
+   + In Visual Studio Report Designer: *File - New Project - Telerik Report Library [VERSION] - Blank Report*.                 
 
 1. Add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) by:               double-clicking on the SqlDataSource item in the VS Toolbox for VS Report Designer,               or on the SqlDataSource in the __Data tab__  of the Stabndalone Report Designer.               This should start the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}).             
 
@@ -47,7 +47,7 @@ INNER JOIN Sales.SalesOrderHeader AS SOH
 ON SOD.SalesOrderID = SOH.SalesOrderID
 ````
 
-    Click Next, and then on __Execute Query...__  button to make sure that everything is fine with your data connection and data is fetched from               the database. Click __Finish__  when you are ready. This will close the __SqlDataSource Wizard__ .             
+    Click Next, and then on __Execute Query...__  button to make sure that everything is fine with your data connection and data is fetched from               the database. Click __Finish__  when you are ready. This will close the __SqlDataSource Wizard__.             
 
 1. Select the report in the Report Designer and increase its Width to 11in. Open the report's               [PageSettings properties]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}) and set:             
    + Landscape to True
@@ -63,15 +63,15 @@ ON SOD.SalesOrderID = SOH.SalesOrderID
   ![How To Add Drill Down Action 3 Select Clustered Column](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_3_SelectClusteredColumn.png)
     This will bring up the __Graph Wizard__  which will do the rest of the work for you.             
 
-1. Select the data source you’ve created in __step 3__  and click __Next__ .                 On the “*Arrange graph fields* ” page, drag the __ProductCategory__  and               __ProductSubCategory__  fields consecutively to the “*Categories* ” box.               The wizard will determine the master-detail relations between them and will create automatically the toggle visibility actions.                 To display the sales amount by year, expand the __OrderDate__  field and drag its __Year__  field               to the “*Series* ” box.                 At last, drag the __LineTotal__  field to the *Values*                box, where it will be displayed as __Sum(LineTotal)__ , as the __Sum()__  is the default aggregate function.                 Now the “*Arrange graph fields* ” page should look like the one shown below:               
+1. Select the data source you’ve created in __step 3__  and click __Next__.                 On the “*Arrange graph fields* ” page, drag the __ProductCategory__  and               __ProductSubCategory__  fields consecutively to the “*Categories* ” box.               The wizard will determine the master-detail relations between them and will create automatically the toggle visibility actions.                 To display the sales amount by year, expand the __OrderDate__  field and drag its __Year__  field               to the “*Series* ” box.                 At last, drag the __LineTotal__  field to the *Values*                box, where it will be displayed as __Sum(LineTotal)__, as the __Sum()__  is the default aggregate function.                 Now the “*Arrange graph fields* ” page should look like the one shown below:               
 
   ![How To Add Drill Down Action 4 Arrange Graph Fields](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_4_ArrangeGraphFields.png)
 
-1. Your chart is done. When you click __Finish__ , you will see the graph displaying the product categories grouped by year.               You can increase the Graph item in Width for better preview. When you click on __Preview__ , you will see that every category               has a small toggle mark that shows its subcategories when clicked, as shown below:               
+1. Your chart is done. When you click __Finish__, you will see the graph displaying the product categories grouped by year.               You can increase the Graph item in Width for better preview. When you click on __Preview__, you will see that every category               has a small toggle mark that shows its subcategories when clicked, as shown below:               
 
   ![How To Add Drill Down Action 5 Drill Down Graph](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_5_DrillDownGraph.png)
 
-1. To see what the __Graph Wizard__  has done, you can examine the Graph’s                [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups) .               You will notice that the Graph wizard created one __CategoryGroup__  instance for the product categories and has added               a child group to it for the product subcategories - __CategoryGroups -> ChildGroups__ . The wizard has also created a                [ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction)                and set its  [Targets](/reporting/api/Telerik.Reporting.ToggleVisibilityAction#Telerik_Reporting_ToggleVisibilityAction_Targets)                to the __ProductSubCategoryGroup__ , providing the ability to show or hide this group by clicking its parent’s toggle mark.               Initially the __ProductSubCategoryGroup.Visible property__  is set to false to provide more compact view.               The expanded view of the Graph’s __CategoryGroups__  should look like this:               
+1. To see what the __Graph Wizard__  has done, you can examine the Graph’s                [CategoryGroups](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_CategoryGroups).               You will notice that the Graph wizard created one __CategoryGroup__  instance for the product categories and has added               a child group to it for the product subcategories - __CategoryGroups -> ChildGroups__. The wizard has also created a                [ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction)                and set its  [Targets](/reporting/api/Telerik.Reporting.ToggleVisibilityAction#Telerik_Reporting_ToggleVisibilityAction_Targets)                to the __ProductSubCategoryGroup__, providing the ability to show or hide this group by clicking its parent’s toggle mark.               Initially the __ProductSubCategoryGroup.Visible property__  is set to false to provide more compact view.               The expanded view of the Graph’s __CategoryGroups__  should look like this:               
 
   ![How To Add Drill Down Action 6 Expanded Category Groups](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_6_ExpandedCategoryGroups.png)
 

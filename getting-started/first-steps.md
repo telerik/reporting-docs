@@ -14,7 +14,7 @@ position: 0
 
 Welcome to the Demo report guide on getting started with Telerik Reporting!       
 
-This guide creates a use case scenario which demonstrates how to create, set up, and publish a         sample Demo report. In the report, we demonstrate how to create it, add datasource to it, visualize the data through a table and graph,         as well as how to style the report and its items. Finally, we will show how to display the report in .NET Application through the Html5 Report Viewer.       
+This guide creates a use case scenario which demonstrates how to create, set up, and publish a         sample Demo report. In the report, we demonstrate how to create it, add datasource to it, visualize the data through a table and graph,         as well as how to style the report and its items. Finally, we will show how to display the report in.NET Application through the Html5 Report Viewer.       
 
 Each major step, from installing the product and creating the         report to adding the column graph and integrating the report in the Visual Studio application,         is explained in a separate article as part of the complete guide.       
 
@@ -46,9 +46,9 @@ The Getting Started guide includes the following articles:
 
 ## Installing Telerik Reporting
 
-1. Log in to your                [Telerik account](https://www.telerik.com/account)  and click on __Downloads__ .             
+1. Log in to your                [Telerik account](https://www.telerik.com/account)  and click on __Downloads__.             
 
-1. Select __Progress Telerik Reporting__ .             
+1. Select __Progress Telerik Reporting__.             
 
 1. Click __Latest public version__  or __Latest internal build__  to download the MSI installation file.             
 
@@ -74,7 +74,7 @@ The Getting Started guide includes the following articles:
 
 * [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
 
-* [Integrating the Report in .NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
+* [Integrating the Report in.NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
 
 * [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
 

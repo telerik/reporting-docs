@@ -20,7 +20,7 @@ The service includes default report resolvers that are capable to resolve IRepor
 
 The report resolvers implement the IReportResolver interface. This interface has only one method Resolve with a string argument - the report description. In custom resolver implementations you should use that description as you like in order to map it to IReportDocument instance.       
 
-If you use the Silverlight report viewer the report description is provided by the __ReportViewer.Report property__ .       
+If you use the Silverlight report viewer the report description is provided by the __ReportViewer.Report property__.       
 
 ## Extending Telerik Reporting WCF service with custom IReportResolver implementation:
 
@@ -195,11 +195,11 @@ End Class
 
 ###Hosting Telerik.Reporting.Service.ReportService subclass in IIS.
 
-1. Add .svc file (e.g. ReportService.svc) to reference your Telerik.Reporting.Service.ReportService subclass. The file would contain the following line only:                     
+1. Add.svc file (e.g. ReportService.svc) to reference your Telerik.Reporting.Service.ReportService subclass. The file would contain the following line only:                     
 
     
     ````XML
-<%@ServiceHost Service="CSharp.SilverlightDemo.Web.CustomReportService , CSharp.SilverlightDemo.Web" %>
+<%@ServiceHost Service="CSharp.SilverlightDemo.Web.CustomReportService, CSharp.SilverlightDemo.Web" %>
 ````
 
 1. Register the Reporting Service endpoints with service name your Telerik.Reporting.Service.ReportService subclass  in the web.config:                     
@@ -248,6 +248,6 @@ End Class
 </configuration>
 ````
 
-The custom resolver's Resolve method is called on each interaction with the report in the Silverlight ReportViewer e.g.,             changing report parameters' values or hitting refresh. To avoid unexpected results the recommended             [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) to work with are __UriReportSource__              and __TypeReportSource__ .           
+The custom resolver's Resolve method is called on each interaction with the report in the Silverlight ReportViewer e.g.,             changing report parameters' values or hitting refresh. To avoid unexpected results the recommended             [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) to work with are __UriReportSource__              and __TypeReportSource__.           
 
 

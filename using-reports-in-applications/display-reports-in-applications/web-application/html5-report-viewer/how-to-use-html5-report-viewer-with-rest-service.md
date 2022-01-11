@@ -24,9 +24,9 @@ For full control, manually configure the REST service and add HTML5 Report Viewe
 
 ## Telerik HTML5 Report Viewer Page Item Template
 
-The item template adds .html page with HTML5 Report Viewer           and if needed enables the [Telerik Reporting REST WebAPI Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).           The following describes the item template wizard steps:         
+The item template adds.html page with HTML5 Report Viewer           and if needed enables the [Telerik Reporting REST WebAPI Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).           The following describes the item template wizard steps:         
 
-* To start the item template wizard, in __Solution Explorer__ , select the target project. On the               __Project menu__ , click __Add -> New Item__ . In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category and select the __Telerik HTML5 Report Viewer Page__  item.             
+* To start the item template wizard, in __Solution Explorer__, select the target project. On the               __Project menu__, click __Add -> New Item__. In the                [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)                dialog box, navigate to the __Web__  category and select the __Telerik HTML5 Report Viewer Page__  item.             
 
 * Accept the project build prompt. Click 'OK'.             
 
@@ -46,7 +46,7 @@ The item template adds .html page with HTML5 Report Viewer           and if need
 
    + __New report definition__  - this option will create a new report definition that will be opened for editing in                       the respective report designer. On the right side of the dialog there are two possible options:                     
 
-   + __TRDP report definition__  - will create a TRDP file with the entered __Report name__ .                         
+   + __TRDP report definition__  - will create a TRDP file with the entered __Report name__.                         
 
    + __Type report definition__  - will create a CS|VB file with the entered __Report name__                            either in an existing report library project or in a newly created one.                         
 
@@ -70,19 +70,23 @@ After finishing, the item template automatically does the following:
 
 * Registers the service routes in the WebApiConfig.cs.             
 
-* Adds a __HTML page with the configured HTML5 Report Viewer__ .             
+* Adds a __HTML page with the configured HTML5 Report Viewer__.             
 
 * Displays a __summary log__  that lists all of the made changes.             
 
 ## Examples
 
-You can find the complete example setup in the Telerik Reporting installation path. For example,           __C:\Program Files (x86)\Progress\Telerik Reporting {VERSION}\Examples\CSharp\Html5Demo__ .         
+You can find the complete example setup in the Telerik Reporting installation path. For example,           __C:\Program Files (x86)\Progress\Telerik Reporting {VERSION}\Examples\CSharp\Html5Demo__.         
 
 > If there are no examples in the Telerik Reporting installation path, you need to [run the setup](6E821131-83F3-45A4-BB6E-1530223D1E38#installingReporting)             and enable the  *Examples*  feature.           
 
 # See Also
 
- * [How To: Use HTML5 Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
+ 
 
- * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
+* [How To: Use HTML5 Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
+
+ 
+
+* [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
 

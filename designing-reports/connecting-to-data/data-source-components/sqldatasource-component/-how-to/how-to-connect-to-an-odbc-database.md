@@ -24,7 +24,7 @@ You can use the Telerik SqlDataSource component to connect to any        ODBC–
 
 1. In the __Add Connection__  dialog box,              click __Change__  to display the Change Data Source dialog box.
 
-1. In the __Change Data Source__  dialog box,              click Microsoft ODBC Data Source, and then click __OK__ .
+1. In the __Change Data Source__  dialog box,              click Microsoft ODBC Data Source, and then click __OK__.
 
 1. The __Add Connection__  dialog box is displayed.             If you have an existing ODBC data source, click __Use user or system data source name__  and select an existing ODBC data source from the list.
 
@@ -34,12 +34,12 @@ You can use the Telerik SqlDataSource component to connect to any        ODBC–
 
 1. Click __Test connection__  to verify the connection to the ODBC data             source, and then close the __Add Connection__  dialog box to return to the             Configure Data Source wizard.
 
-1. Click __Next__  and Select the __Yes, save this connection…__  check box. Enter a name for your connection for when the connection is stored              in the application configuration file, and then click __Next__ .
+1. Click __Next__  and Select the __Yes, save this connection…__  check box. Enter a name for your connection for when the connection is stored              in the application configuration file, and then click __Next__.
 
 1. Select the database table, view, or stored procedure from which             to retrieve results or specify your own SQL statement.
 
-1. To test your query, click __Next__ , and              then click __Execute Query__ .
+1. To test your query, click __Next__, and              then click __Execute Query__.
 
-1. Click __Finish__ . The Wizard would close              and the SqlDataSource component would be ready for use by the data items
+1. Click __Finish__. The Wizard would close              and the SqlDataSource component would be ready for use by the data items
 
 

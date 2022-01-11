@@ -16,11 +16,11 @@ The quickest way to add a WPF Report Viewer to your WPF project is with the __Te
 
 ## Telerik Report Viewer Window Item Template
 
-The item template is available in the             [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)             dialog box under the __WPF category__ .         
+The item template is available in the             [Add New Item](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)             dialog box under the __WPF category__.         
 
 This item template will do the following:         
 
-* Build the project and check that the project is using a compatible .NET version.             
+* Build the project and check that the project is using a compatible.NET version.             
 
 * Open the Add New Report Viewer dialog to choose a report definition for the report viewer.             
 
@@ -32,7 +32,7 @@ This item template will do the following:
 
 * Add a Window with WPF Report Viewer.             
 
-* Setup the viewer's [connection]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) depending on selected __engine type__ .             
+* Setup the viewer's [connection]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) depending on selected __engine type__.             
 
 * Show a summary log that list all of the made changes.             
 
@@ -56,11 +56,19 @@ If the selected engine is __REST Service__  additionally it will do the followin
 
 # See Also
 
- * [How to Add  manually report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%})
+ 
 
- * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+* [How to Add  manually report viewer to a WPF.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%})
 
- * [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
+ 
 
- * [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
+* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+
+ 
+
+* [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
+
+ 
+
+* [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
 

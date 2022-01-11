@@ -91,7 +91,7 @@ RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan);````
 ````VB
 RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)````
 
-1. Strip the HTML formatting from pasted content, because the user could paste non well formed content                             which could break the __HtmlTextBox__  and the export to PDF feature. To do that set the __StripFormattingOptions__                              property to __"All"__  or __"AllExceptNewLines"__ .                         
+1. Strip the HTML formatting from pasted content, because the user could paste non well formed content                             which could break the __HtmlTextBox__  and the export to PDF feature. To do that set the __StripFormattingOptions__                              property to __"All"__  or __"AllExceptNewLines"__.                         
 
 1. Use the following custom content filter, which will remove unsupported __HTML__  tags. Supported                             tags are: FONT, STRONG, B, EM, I, U, A, OL, UL, SUB, SUP, LI, DIV, SPAN, P, BR, CENTER.                         
 

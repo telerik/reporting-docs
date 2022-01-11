@@ -22,12 +22,16 @@ Reports can contain report headers and footers. By default, new reports are crea
 
 1. Right-click on any section header in the report, or in the empty space around the sections.
 
-1. Select __Report Header__  or __Report Footer__  .
+1. Select __Report Header__  or __Report Footer__.
 
   
 
   ![](images/ReportDesign006.png)
 
 # See Also
- * [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  * [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection) 
+ 
+
+* [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  
+
+* [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)
 

@@ -20,11 +20,11 @@ The following image displays a plain range chart with one range area series:
 
 ## Range Chart Variations
 
-* __Column range__ . The column range chart uses columns to represent the range.
+* __Column range__. The column range chart uses columns to represent the range.
 
-* __Bar range__ . The bar range chart uses bars to represent the range. 
+* __Bar range__. The bar range chart uses bars to represent the range. 
 
-* __Smooth range__ . A smooth range chart uses curved lines to connect data points rather than straight ones.
+* __Smooth range__. A smooth range chart uses curved lines to connect data points rather than straight ones.
 
 ## Design Considerations for Range Charts
 
@@ -42,5 +42,11 @@ The following image displays a plain range chart with one range area series:
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [RangeAreaSeries](/reporting/api/Telerik.Reporting.RangeAreaSeries)  * [RangeBarSeries](/reporting/api/Telerik.Reporting.RangeBarSeries) 
+ 
+
+* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
+
+* [RangeAreaSeries](/reporting/api/Telerik.Reporting.RangeAreaSeries)  
+
+* [RangeBarSeries](/reporting/api/Telerik.Reporting.RangeBarSeries)
 

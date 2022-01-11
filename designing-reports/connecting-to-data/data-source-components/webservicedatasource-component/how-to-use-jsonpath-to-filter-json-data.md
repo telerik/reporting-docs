@@ -12,7 +12,7 @@ position: 1
 
 
 
-In this article we are going to discuss how to use JSONPath expressions in the Data Selector in order to query and filter JSON data returned from the web service.         For a complete overview of the JSONPath syntax please refer to           [JSONPath - XPath for JSON](http://goessner.net/articles/JsonPath/) .       
+In this article we are going to discuss how to use JSONPath expressions in the Data Selector in order to query and filter JSON data returned from the web service.         For a complete overview of the JSONPath syntax please refer to           [JSONPath - XPath for JSON](http://goessner.net/articles/JsonPath/).       
 
 ## Bind to Inner Objects
 

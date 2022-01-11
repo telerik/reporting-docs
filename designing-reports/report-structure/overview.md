@@ -28,7 +28,7 @@ The styling of the report items may be reused in stylesheets. If a report uses s
 
 The __Telerik Report__  consists of several different sections that may contain report items.               Each report section represents specific area on the report page, and defines how to render the report items that belong to it. Every section is               an instance of the  [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase)  class.               The __Height__  property defines the space that a section occupies on the page. Other specific properties such as __PrintOnFirstPage__                and __PrintOnLastPage__  define the particular section's behavior.             
 
-When a new Telerik Report is added to a project, it is initially divided into three sections - __PageHeader__ , __Detail__                and __PageFooter__ . The section type specifies how the items inside will be rendered, their rendering order and               how many times they will be rendered when the report is data bound.             
+When a new Telerik Report is added to a project, it is initially divided into three sections - __PageHeader__, __Detail__                and __PageFooter__. The section type specifies how the items inside will be rendered, their rendering order and               how many times they will be rendered when the report is data bound.             
 
 The following table presents a summary of the section types and their usage (in the default order of appearance in the report document):
 
@@ -41,7 +41,7 @@ The following table presents a summary of the section types and their usage (in 
 | __Detail__ |This section is printed once for every row in the data source. This is where you place the report items that constitute                     the main body of the report. The detailed information will be displayed in this section.|
 | __Group Footer__ |This section is printed at the end of each group of records. Use a group footer to print summary information for a                     group. Similar to the Group Header section, you should always use aggregate functions for the databound items that are                     calculated for the group data.|
 | __Report Footer__ |This section is printed just once, at the end of the report.                      If there is Page Footer on the last page, the Report Footer will be rendered before it.                     If there is TOC section, you may specify its position with respect to Report Footer (e.g. Before or After).                     Use the report footer to print report totals or other summary information for the entire report.                      Similar to the Report Header section, you should always use aggregate                     functions for the databound items that are calculated for the entire report data.|
-| __Page Footer__ |This section is printed at the end of every page.                     Use a page footer to print page numbers or per-page information. This section and                     its items are processed by the corresponding rendering extension after the report data has been processed.                     Therefore, the same implications listed for the Page Header apply also to the Page Footer section.It is possible to hide this section for particular pages using [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%})expression over the __Style.Visible__ property. For example, you may hide it on all even pages. To hide it on first and/or                      last pages there are dedicated Boolean properties called __PrintOnFirstPage__ and __PrintOnLastPage__ .                      Hiding the section leads to freeing page space for the rest of the report content. Keep in mind that setting the PrintOnLastPage to true may lead                      to unintuitive pagination of the section preceding the last PageFooter. This occurs because determining the last page number and hiding the last                      PageFooter are interdependent when the last non-PageFooter section would fit in the space regularly occupied from the PageFooter. For example,                      this may be observed when replacing the last PageFooter section with a ReportFooter section|
+| __Page Footer__ |This section is printed at the end of every page.                     Use a page footer to print page numbers or per-page information. This section and                     its items are processed by the corresponding rendering extension after the report data has been processed.                     Therefore, the same implications listed for the Page Header apply also to the Page Footer section.It is possible to hide this section for particular pages using [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%})expression over the __Style.Visible__ property. For example, you may hide it on all even pages. To hide it on first and/or                      last pages there are dedicated Boolean properties called __PrintOnFirstPage__ and __PrintOnLastPage__.                      Hiding the section leads to freeing page space for the rest of the report content. Keep in mind that setting the PrintOnLastPage to true may lead                      to unintuitive pagination of the section preceding the last PageFooter. This occurs because determining the last page number and hiding the last                      PageFooter are interdependent when the last non-PageFooter section would fit in the space regularly occupied from the PageFooter. For example,                      this may be observed when replacing the last PageFooter section with a ReportFooter section.|
 
 ### Report Groups
 
@@ -57,11 +57,19 @@ Report items are used in the report depending on the data that should be display
 
 # See Also
 
- * [How to Layout Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
+ 
 
- * [How to Add groups to Report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%})
+* [How to Layout Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
 
- * [How to Add/Remove Report Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header-&-footer-sections%})
+ 
 
- * [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header-&-footer-sections%})
+* [How to Add groups to Report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%})
+
+ 
+
+* [How to Add/Remove Report Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header-&-footer-sections%})
+
+ 
+
+* [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header-&-footer-sections%})
 

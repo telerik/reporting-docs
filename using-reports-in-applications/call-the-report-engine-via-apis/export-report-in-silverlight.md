@@ -93,5 +93,7 @@ End Class
 ````
 
 # See Also
- * [Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/reporting/api/Telerik.Reporting.Service.SilverlightClient.ReportServiceClient) 
+ 
+
+* [Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/reporting/api/Telerik.Reporting.Service.SilverlightClient.ReportServiceClient)
 

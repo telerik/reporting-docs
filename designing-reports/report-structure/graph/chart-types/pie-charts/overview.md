@@ -20,7 +20,7 @@ The following image displays a pie chart with a legend:
 
 ## Pie Chart Variations
 
-* __Doughnut__ . A pie chart that has an open space in the center. The Pie Chart property that controls the width of the open space               is the                 [PolarCoordinateSystem.InnerRadiusRatio](https://docs.telerik.com/reporting/p-telerik-reporting-polarcoordinatesystem-innerradiusratio) .             
+* __Doughnut__. A pie chart that has an open space in the center. The Pie Chart property that controls the width of the open space               is the                 [PolarCoordinateSystem.InnerRadiusRatio](https://docs.telerik.com/reporting/p-telerik-reporting-polarcoordinatesystem-innerradiusratio).             
 
 ## Design Considerations for Pie Charts
 
@@ -38,7 +38,7 @@ Pie charts represent proportions of the total. As a result, it is common to form
 
 1. Select the series by clicking anywhere on the pie.
 
-1. Set __DataPointLabelStyle.Visible__  property of the series from the *Properties*  window to __true__ .             
+1. Set __DataPointLabelStyle.Visible__  property of the series from the *Properties*  window to __true__.             
 
 1. Set __DataPointLabel__  property of the series to an expression adjusted to your specific needs similar to the following one: *=Sum(Fields.LineTotal)/Exec('graph1', Sum(Fields.LineTotal))*  where '*graph1* ' is the name of the Graph item.             
 
@@ -60,7 +60,7 @@ By default, the layout engine will try to arrange the data labels so they do not
 
 * Set the  [DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelOffset)  to a greater value               so the labels will be arranged around a circle with a bigger radius.             
 
-For Pie Charts with lots of data points the best approach might be to use a combination of the above-mentioned approaches.           The following image shows a chart series that has its            [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)  set to __OutsideColumn__ ,            [DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelOffset)  set to __0.5cm__            and  [DataPointLabelConnectorStyle](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelConnectorStyle) __.Visible__            set to __true__ .           
+For Pie Charts with lots of data points the best approach might be to use a combination of the above-mentioned approaches.           The following image shows a chart series that has its            [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)  set to __OutsideColumn__,            [DataPointLabelOffset](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelOffset)  set to __0.5cm__            and  [DataPointLabelConnectorStyle](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelConnectorStyle) __.Visible__            set to __true__.           
 
   ![Outside Column Pie Chart](images/Graph/OutsideColumnPieChart.png)
 
@@ -72,13 +72,23 @@ Based on the data, a pie chart may produce too many slices, resulting in unreada
 
 The merging setup is controlled by the  [Telerik.Reporting.BarSeries.MergedDataPoints](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_MergedDataPoints)  property            found under the Layout properties category of the bar series.         
 
-To turn on the merge logic, change the  [Telerik.Reporting.MergedDataPoints.MergeMode](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_MergeMode)  property            from __None__  to __SingleSlice__ . Next thing is to choose between four different modes (algorithms)            for splitting the slices (or data points) to significant ones and small ones. This is controlled from the             [Telerik.Reporting.MergedDataPoints.ThresholdMode](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_ThresholdMode)  property values,            which can be found in the  [Telerik.Reporting.ThresholdMode](/reporting/api/Telerik.Reporting.ThresholdMode)  enumeration.           Based on the chosen mode, an appropriate  [Telerik.Reporting.MergedDataPoints.ThresholdValue](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_ThresholdValue)  should be set.           The value of each slice being considered for merging is evaluated over the  [Telerik.Reporting.BarSeries.X](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_X)  property.            [Telerik.Reporting.MergedDataPoints.ThresholdMode](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_ThresholdMode)  supports expressions.            The expression must evaluate to the needed number type.         
+To turn on the merge logic, change the  [Telerik.Reporting.MergedDataPoints.MergeMode](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_MergeMode)  property            from __None__  to __SingleSlice__. Next thing is to choose between four different modes (algorithms)            for splitting the slices (or data points) to significant ones and small ones. This is controlled from the             [Telerik.Reporting.MergedDataPoints.ThresholdMode](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_ThresholdMode)  property values,            which can be found in the  [Telerik.Reporting.ThresholdMode](/reporting/api/Telerik.Reporting.ThresholdMode)  enumeration.           Based on the chosen mode, an appropriate  [Telerik.Reporting.MergedDataPoints.ThresholdValue](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_ThresholdValue)  should be set.           The value of each slice being considered for merging is evaluated over the  [Telerik.Reporting.BarSeries.X](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_X)  property.            [Telerik.Reporting.MergedDataPoints.ThresholdMode](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_ThresholdMode)  supports expressions.            The expression must evaluate to the needed number type.         
 
-By default, the merged slice is labeled in the chart’s legend as __Others__ . You can change this by setting the             [Telerik.Reporting.MergedDataPoints.LegendItemLabel](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_LegendItemLabel) . It supports expressions.         
+By default, the merged slice is labeled in the chart’s legend as __Others__. You can change this by setting the             [Telerik.Reporting.MergedDataPoints.LegendItemLabel](/reporting/api/Telerik.Reporting.MergedDataPoints#Telerik_Reporting_MergedDataPoints_LegendItemLabel). It supports expressions.         
 
 The styling of the merged data point, its label or the corresponding legend item can be customized using the corresponding Conditional Formatting property using the Filter:                      = IsMergedData() | Operator.Equals | = True           
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  * [DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle)  * [DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel)  * [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) 
+ 
+
+* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
+
+* [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  
+
+* [DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle)  
+
+* [DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel)  
+
+* [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)
 

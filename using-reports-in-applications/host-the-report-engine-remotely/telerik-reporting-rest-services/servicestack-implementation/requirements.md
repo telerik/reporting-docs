@@ -26,7 +26,7 @@ Requirements for using __Telerik Reporting REST ServiceStack service__  in an ap
 
    +  [                       Newtonsoft.Json.dll                     ](                       http://json.codeplex.com/                     )                    4.5.1.0 (latest available via NuGet is recommended)                 
 
-1. Optional:             These assemblies add up to the __Telerik Reporting Engine__  functionality and should be used only if you need the specific feature.               They are responsible for additional support formats or retrieving data from an OLAP cube. The asseblies must be deployed along with the               application that hosts the __Telerik Reporting REST ServiceStack Service__ .             
+1. Optional:             These assemblies add up to the __Telerik Reporting Engine__  functionality and should be used only if you need the specific feature.               They are responsible for additional support formats or retrieving data from an OLAP cube. The asseblies must be deployed along with the               application that hosts the __Telerik Reporting REST ServiceStack Service__.             
 
    + XPS rendering extension requires __Telerik.Reporting.XpsRendering__  assembly (Telerik.Reporting.XpsRendering.dll).                 
 
@@ -34,6 +34,6 @@ Requirements for using __Telerik Reporting REST ServiceStack service__  in an ap
 
    + [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) requires                   __Telerik.Reporting.Adomd.dll__  and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})                   (*Microsoft.AnalysisServices.AdomdClient.dll*  v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%})).                 
 
-> The  __Telerik Reporting ServiceStack REST Service__  should be the only ServiceStack based Web Service in a project, as all ServiceStack services have  [a single AppHost per AppDomain](                 http://mono.servicestack.net/ServiceStack.Hello/#AppHost               ) .           
+> The  __Telerik Reporting ServiceStack REST Service__  should be the only ServiceStack based Web Service in a project, as all ServiceStack services have  [a single AppHost per AppDomain](                 http://mono.servicestack.net/ServiceStack.Hello/#AppHost               ).           
 
 

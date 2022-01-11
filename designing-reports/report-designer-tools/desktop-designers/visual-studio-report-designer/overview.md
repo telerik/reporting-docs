@@ -12,15 +12,15 @@ position: 0
 
 
 
-The Visual Studio Report Designer is dedicated to editing CLR/type report definitions (i.e. CS or VB files) in the Visual Studio environment.            The Visual Studio designer is available only under __.NET framework__ .            Due to technical limitations we do not yet provide one for *.NET Core* .
+The Visual Studio Report Designer is dedicated to editing CLR/type report definitions (i.e. CS or VB files) in the Visual Studio environment.            The Visual Studio designer is available only under __.NET framework__.            Due to technical limitations we do not yet provide one for *.NET Core*.
 
 To start/open the designer, double click on an existing CS/VB file containing the report definition or right click on it and select "View Designer".            If there is no such file, you may create it using the Add --> New Item --> Telerik Report *version*             (from the *Reporting*  menu of the wizard).
 
 The Telerik Report Designer has the following elements:
 
-* [Telerik Reporting Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu%}): The menu lets you run the               [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}),               [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}),               [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}),               [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) and               [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}). It is accessible through the *Telerik Menu --> Reporting*  for Visual Studio versions up to 2017. For Visual Studio 2019 through the *Extensions Menu --> Telerik --> Reporting* .             
+* [Telerik Reporting Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu%}): The menu lets you run the               [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}),               [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}),               [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}),               [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) and               [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}). It is accessible through the *Telerik Menu --> Reporting*  for Visual Studio versions up to 2017. For Visual Studio 2019 through the *Extensions Menu --> Telerik --> Reporting*.             
 
-* __Design Views Buttons:__  Use these buttons to switch               between __Design__ , __Preview__  and               __HTML__  view mode of the report.             
+* __Design Views Buttons:__  Use these buttons to switch               between __Design__, __Preview__  and               __HTML__  view mode of the report.             
 
 * __Report selector button:__  Located in the upper left hand of the report designer. Clicking this button makes the report active in the __Properties__  window.             
 
@@ -42,7 +42,7 @@ The Telerik Report Designer has the following elements:
 
   ![](images/snapGrid.png)
 
-   + __Show/hide the snap grid__  button switches on or off the displayed __snap grid__ .                   The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap*                    or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel.                   Here is a workspace showing the snap grid turned on:                   
+   + __Show/hide the snap grid__  button switches on or off the displayed __snap grid__.                   The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap*                    or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel.                   Here is a workspace showing the snap grid turned on:                   
 
   ![](images/snapGrid1.png)
 
@@ -70,13 +70,15 @@ The Telerik Report Designer has the following elements:
 
   ![](images/layoutToolbar.png)
 
-   + Select two report items and change their HorizontalAlignment by clicking __Left__  , __Center__  , __Right__  , or __Stretch__  .                 
+   + Select two report items and change their HorizontalAlignment by clicking __Left__, __Center__, __Right__, or __Stretch__.                 
 
-   + Select two report items and change their VerticalAlignment by clicking __Top__  , __Center__  , __Bottom__  , or __Stretch__  .                 You can also change alignment by moving an element on the design surface. 
+   + Select two report items and change their VerticalAlignment by clicking __Top__, __Center__, __Bottom__, or __Stretch__.                 You can also change alignment by moving an element on the design surface. 
 
-The Visual Studio Report Designer features also *Properties Explorer* ,            [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}),            [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) and [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}).            The first one is displayed by default in the Visual Studio. The other three can be opened from the Telerik Menu.         
+The Visual Studio Report Designer features also *Properties Explorer*,            [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}),            [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) and [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}).            The first one is displayed by default in the Visual Studio. The other three can be opened from the Telerik Menu.         
 
 # See Also
 
- * [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%})
+ 
+
+* [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%})
 

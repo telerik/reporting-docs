@@ -14,7 +14,7 @@ position: 3
 
 When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how to enable SSL for the Telerik Reporting WCF service.
 
-The solution is to configure corresponding bindings to use  [Transport security mode](http://msdn.microsoft.com/en-us/library/ms729700(v=vs.110).aspx) . Use the  [bindingConfiguration property](http://msdn.microsoft.com/en-us/library/system.servicemodel.configuration.serviceendpointelement.bindingconfiguration.aspx)  inside your endpoint definition to point to your custom bindings.       
+The solution is to configure corresponding bindings to use  [Transport security mode](http://msdn.microsoft.com/en-us/library/ms729700(v=vs.110).aspx). Use the  [bindingConfiguration property](http://msdn.microsoft.com/en-us/library/system.servicemodel.configuration.serviceendpointelement.bindingconfiguration.aspx)  inside your endpoint definition to point to your custom bindings.       
 
 > To run your application using HTTPS the application must be hosted on a server supporting SSL. The Visual Studio Development Server, also known as Cassini, does not support SSL. for more details about configuring your IIS hosted application to use SSL, please refer to  [How to: Configure an IIS-hosted WCF service with SSL](http://msdn.microsoft.com/en-us/library/hh556232(v=vs.110).aspx) 
 
@@ -77,7 +77,7 @@ The entire HTTPS-enabled system.serviceModel section of web.config is below:
     </system.serviceModel>
 ````
 
-> The service can be tested after browsing the .svc file using HTTPS. If you want to show the service wsdl content set the ReportServiceBehavior             <serviceMetadata httpsGetEnabled="true" />              
+> The service can be tested after browsing the.svc file using HTTPS. If you want to show the service wsdl content set the ReportServiceBehavior             <serviceMetadata httpsGetEnabled="true" />              
 
 ## Related topics:
 

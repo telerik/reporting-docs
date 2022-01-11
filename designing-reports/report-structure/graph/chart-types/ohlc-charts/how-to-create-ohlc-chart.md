@@ -18,7 +18,7 @@ In this article we will show you how to create an OHLC chart using the Graph ite
 
 ## Create an OHLC chart using the Graph Wizard
 
-1. The Graph Wizard provides a fast and efficient way to create complex charts. The wizard starts every time you start creating a new graph in               [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or               [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). In this scenario we will use the __Standalone Report Designer__ , but the steps are applicable to both designers.                 Start the designer and open or create a new report. Select the report section in which the Graph item will be placed.               From the *Insert*  tab find *Charts*  section and select *Scatter*  menu.               Its *Financial*  group has two items - __Candlestick__  and __Bar__ , which provide               the same functionality, but produce different series markers. In this how-to article we'll create a series with candlestick markers.             
+1. The Graph Wizard provides a fast and efficient way to create complex charts. The wizard starts every time you start creating a new graph in               [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or               [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). In this scenario we will use the __Standalone Report Designer__, but the steps are applicable to both designers.                 Start the designer and open or create a new report. Select the report section in which the Graph item will be placed.               From the *Insert*  tab find *Charts*  section and select *Scatter*  menu.               Its *Financial*  group has two items - __Candlestick__  and __Bar__, which provide               the same functionality, but produce different series markers. In this how-to article we'll create a series with candlestick markers.             
 
 1. In a real-world application the data would be retrieved from a database, but here we'll use some sample data as a CSV data source.               Create a new CSV data source and paste the following text as content:             
 
@@ -41,15 +41,21 @@ In this article we will show you how to create an OHLC chart using the Graph ite
 
 1. Format the axis labels, set their angle and add additional styling if necessary. Your chart should look like the one below:               
 
-  ![graph-howto-create-ohlc-chart](images/Graph/graph-howto-create-ohlc-chart.png)    The marker width is automatically calculated based on two properties. The first property is the X scale's                [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) .               The second property is series'  [MinMarkerWidth](/reporting/api/Telerik.Reporting.OhlcSeries#Telerik_Reporting_OhlcSeries_MinMarkerWidth) , which determines the minimum width of the marker, measured in                [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit) , i.e. 10px, 1cm, etc.               By default the wizard sets the __MinMarkerWidth__  to 6px.                 Note the gaps between 07.07.2017 and 10.07.2017 where there are no data points. Since you are using a DateTime field to create the categories, the wizard               will automatically create a  [DateTimeScale](/reporting/api/Telerik.Reporting.DateTimeScale)  scale for your X axis. The DateTime scale represents the values in a continuous domain -               that's why you see axis labels for 08.07.2017 and 09.07.2017 even if there are no data for these dates.               In case you do not want to have such gaps, you should use a  [CategoryScale](/reporting/api/Telerik.Reporting.CategoryScale)  for your X axis.             
+  ![graph-howto-create-ohlc-chart](images/Graph/graph-howto-create-ohlc-chart.png)    The marker width is automatically calculated based on two properties. The first property is the X scale's                [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount).               The second property is series'  [MinMarkerWidth](/reporting/api/Telerik.Reporting.OhlcSeries#Telerik_Reporting_OhlcSeries_MinMarkerWidth), which determines the minimum width of the marker, measured in                [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit), i.e. 10px, 1cm, etc.               By default the wizard sets the __MinMarkerWidth__  to 6px.                 Note the gaps between 07.07.2017 and 10.07.2017 where there are no data points. Since you are using a DateTime field to create the categories, the wizard               will automatically create a  [DateTimeScale](/reporting/api/Telerik.Reporting.DateTimeScale)  scale for your X axis. The DateTime scale represents the values in a continuous domain -               that's why you see axis labels for 08.07.2017 and 09.07.2017 even if there are no data for these dates.               In case you do not want to have such gaps, you should use a  [CategoryScale](/reporting/api/Telerik.Reporting.CategoryScale)  for your X axis.             
 
 In this article we explained how to use the Graph Wizard to create a candlestick series, presenting stock prices over a period of time.           
 
 # See Also
 
- * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
+ 
 
- * [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})
+* [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 
- * [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%})
+ 
+
+* [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})
+
+ 
+
+* [Overview]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%})
 

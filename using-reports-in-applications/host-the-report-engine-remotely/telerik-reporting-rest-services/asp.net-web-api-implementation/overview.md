@@ -12,7 +12,7 @@ position: 0
 
 
 
-This implementation of the Reporting REST service is based on the          [ASP.NET Web API framework](http://www.asp.net/web-api) .         It is the Microsoft approach for building RESTful applications on the          [.NET Framework](http://msdn.microsoft.com/netframework/) .       
+This implementation of the Reporting REST service is based on the          [ASP.NET Web API framework](http://www.asp.net/web-api).         It is the Microsoft approach for building RESTful applications on the          [.NET Framework](http://msdn.microsoft.com/netframework/).       
 
 ## Utilization
 

@@ -16,7 +16,7 @@ In the WPF Report Viewer, localized resources are stored in separate __RESX__  
 
 ## Types of Resources in the Hierarchy
 
-* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the __Report Viewer__  .
+* At the top of the hierarchy sit the fallback resources for the default UI culture, which is English ("en") by default. These are the only resources that do not have their own file. They are stored directly in the assembly of the __Report Viewer__.
 
 * Below the fallback resources are the resources for any neutral cultures. A neutral culture is associated with a language but not a region. For example, French ("fr") is a neutral culture. Note that the fallback resources are also for a neutral culture, but a special one.
 
@@ -44,13 +44,13 @@ __The Report Viewer__  uses the following naming convention when searching for 
 
 * Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should               be named as follows:             *Telerik.ReportViewer.WPF.TextResources.fr.resx* 
 
-* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the               __Report Viewer__ . In that case the resource file should be named as follows:             *Telerik.ReportViewer.WPF.TextResources.resx* 
+* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the               __Report Viewer__. In that case the resource file should be named as follows:             *Telerik.ReportViewer.WPF.TextResources.resx* 
 
 As described above, if for example the current UI culture is set to French Belgian, the __Report Viewer__  will search for localized __RESX__  resource files inside the main application folder in the following order:         
 
-1. Telerik.ReportViewer.WPF.TextResources. __fr-BE__  .resx
+1. Telerik.ReportViewer.WPF.TextResources. __fr-BE__.resx
 
-1. Telerik.ReportViewer.WPF.TextResources. __fr__  .resx
+1. Telerik.ReportViewer.WPF.TextResources. __fr__.resx
 
 1. Telerik.ReportViewer.WPF.TextResources.resx
 
@@ -72,17 +72,17 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
    1. __Copy to Output Directory:__  "*Copy if newer* " or "*Copy always* "
               
 
-1. Open the __RESX__  resource file in the __Visual Studio Resource Editor__  . Enter the required
+1. Open the __RESX__  resource file in the __Visual Studio Resource Editor__. Enter the required
             resource strings ([TextResources](/reporting/api/Telerik.ReportViewer.Wpf.TextResources))
             to translate the __Report Viewer__  to the desired language.
 
-1. Repeat steps from 1 to 3 for each desired translation of the __Report Viewer__  .
+1. Repeat steps from 1 to 3 for each desired translation of the __Report Viewer__.
 
-1. Compile and run the project. When viewing a __Telerik Report__  , the __Report Viewer__  should be translated according to the current UI culture.
+1. Compile and run the project. When viewing a __Telerik Report__, the __Report Viewer__  should be translated according to the current UI culture.
 
 ## Distributing an Application with a Localized Report Viewer
 
-In order to distribute an application that uses __Telerik Reporting__            with a localized __Report Viewer__ , one should distribute all of the required           localization __RESX__  resource files, in addition to the main application assemblies.           For __WPF Applications__  the __RESX__            files should be placed in the same directory, where the application is installed.         
+In order to distribute an application that uses __Telerik Reporting__            with a localized __Report Viewer__, one should distribute all of the required           localization __RESX__  resource files, in addition to the main application assemblies.           For __WPF Applications__  the __RESX__            files should be placed in the same directory, where the application is installed.         
 
 ## Localization Using the ITextResources interface
 
@@ -114,7 +114,7 @@ class CustomResources : Telerik.ReportViewer.Wpf.ITextResources
         }
     }
 
-    //...... Implement the rest of the properties ......
+    //...... Implement the rest of the properties......
 }
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationSnippetStart}}
@@ -140,7 +140,7 @@ Class CustomResources
         End Get
     End Property
 
-    '...... Implement the rest of the properties ......
+    '...... Implement the rest of the properties......
 End Class
 ````
 
@@ -175,7 +175,7 @@ class CustomTextResources : Telerik.ReportViewer.Wpf.ITextResources
         }
     }
 
-    //...... Implement the rest of the properties ......
+    //...... Implement the rest of the properties......
 }
 ````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\InterfaceLocalizationSnippets.vb region=InterfaceLocalizationUsingMethodsSnippetStart}}
@@ -201,7 +201,7 @@ Class CustomTextResources
         End Get
     End Property
 
-    '...... Implement the rest of the properties ......
+    '...... Implement the rest of the properties......
 End Class
 ````
 
@@ -211,15 +211,21 @@ End Class
 
 [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
 
-[How to Add report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
+[How to Add report viewer to a WPF.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
 
 [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
 
 # See Also
 
- * [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120))
+ 
 
- * [WPF Globalization and Localization Overview](http://msdn.microsoft.com/en-us/library/ms788718(v=VS.85).aspx)
+* [Hierarchical Organization of Resources for Localization](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/756hydy4(v=vs.120))
 
- * [Create satellite assemblies for .NET apps](https://docs.microsoft.com/en-us/dotnet/core/extensions/create-satellite-assemblies)
+ 
+
+* [WPF Globalization and Localization Overview](http://msdn.microsoft.com/en-us/library/ms788718(v=VS.85).aspx)
+
+ 
+
+* [Create satellite assemblies for.NET apps](https://docs.microsoft.com/en-us/dotnet/core/extensions/create-satellite-assemblies)
 

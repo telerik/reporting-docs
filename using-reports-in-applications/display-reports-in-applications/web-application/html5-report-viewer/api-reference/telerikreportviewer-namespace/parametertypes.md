@@ -22,5 +22,5 @@ position: 4
 |FLOAT|
 |STRING|
 |DATETIME|
-|BOOLEA|
+|BOOLEAN|
 

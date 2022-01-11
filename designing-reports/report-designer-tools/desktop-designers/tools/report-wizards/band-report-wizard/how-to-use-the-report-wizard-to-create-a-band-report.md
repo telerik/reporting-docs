@@ -22,11 +22,11 @@ To create a new report with this wizard:
 
 * Visual Studio:           
 
-   + Create a new class library or use an existing one.                 Verify that the targeted .NET framework version is .NET4(+), Full profile as Client profile is not supported.               
+   + Create a new class library or use an existing one.                 Verify that the targeted.NET framework version is.NET4(+), Full profile as Client profile is not supported.               
 
-   + __Right-click__  the project context menu and select                 __Add | New Item | Telerik Report__ .                 Enter a name for the report class and click the __Add__  button to close the dialog. Select report wizard form opens.               
+   + __Right-click__  the project context menu and select                 __Add | New Item | Telerik Report__.                 Enter a name for the report class and click the __Add__  button to close the dialog. Select report wizard form opens.               
 
-   + Select the __Band Report Wizard__  option from the list and click __OK__ .               
+   + Select the __Band Report Wizard__  option from the list and click __OK__.               
 
 * On the __Choose Data Source page__  of the               Report Wizard, select __Add New Data Source.__ 
 
@@ -34,7 +34,7 @@ To create a new report with this wizard:
 
 * On the __Choose Your Data Connection__  page               select a connection for the AdventureWorks database from the drop               down list. If there is no existing connection, choose a data provider and click               __Browse__  to create a new connection.               When done click the __Next__  button.             
 
-* __The Save the Connection String__  step               appears, where you can save the connection string in the application               configuration file if you want with the name you want. Click __Next__ .             
+* __The Save the Connection String__  step               appears, where you can save the connection string in the application               configuration file if you want with the name you want. Click __Next__.             
 
 * The __Configure Data Source Command__                step will display next.             
 

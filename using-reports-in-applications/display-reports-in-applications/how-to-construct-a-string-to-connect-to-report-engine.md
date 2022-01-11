@@ -20,7 +20,7 @@ All the keywords and their values are case insensitive where applicable.
 
 | Keyword | Value |
 | ------ | ------ |
-|`Engine`|Embedde|
+|`Engine`|Embedded|
 
 __Example:__ `engine=embedded`
 
@@ -47,11 +47,11 @@ End Sub
 | Keyword | Value |
 | ------ | ------ |
 |`Engine`|ReportServer|
-|`Uri`| *required* ; The URI of the Report Server instance|
-|`Username`| *optional* ; The user name used to connect to Report Server. If omitted, the __Guest__ account will be used, if it is enabled.|
-|`Password`| *optional* ; The password associated with the user name.|
-|`Timeout`| *optional* ; The timeout for rendering a document measured in seconds. The default value is 100 seconds. Value of 0 indicates no expiration.|
-|`KeepClientAlive`| *optional True/False* . Sets whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__ . The default value is True|
+|`Uri`| *required*; The URI of the Report Server instance|
+|`Username`| *optional*; The user name used to connect to Report Server. If omitted, the __Guest__ account will be used, if it is enabled.|
+|`Password`| *optional*; The password associated with the user name.|
+|`Timeout`| *optional*; The timeout for rendering a document measured in seconds. The default value is 100 seconds. Value of 0 indicates no expiration.|
+|`KeepClientAlive`| *optional True/False*. Sets whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__. The default value is True.|
 
 __Example:__ `engine=ReportServer;uri=http://localhost:83;username=admin;password=pass;timeout=30;keepClientAlive=true`
 
@@ -76,11 +76,11 @@ End Sub
 | Keyword | Value |
 | ------ | ------ |
 |`Engine`|RestService|
-|`Uri`| *required* ; The URI of the REST Service instance.|
-|`Token`| *optional* ; If provided, a *Bearer* token will be set in the *Authorization* header for every request to the REST service.|
-|`UseDefaultCredentials`| *optional, True/False* ; If provided, the client will send the default credentials with its requests. The default value is *False* .|
-|`Timeout`| *optional* ; The timeout for rendering a document measured in seconds. The default value is 100 seconds. Value of 0 indicates no expiration.|
-|`KeepClientAlive`| *optional True/False* . Sets whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__ . The default value is True|
+|`Uri`| *required*; The URI of the REST Service instance.|
+|`Token`| *optional*; If provided, a *Bearer* token will be set in the *Authorization* header for every request to the REST service.|
+|`UseDefaultCredentials`| *optional, True/False*; If provided, the client will send the default credentials with its requests. The default value is *False*.|
+|`Timeout`| *optional*; The timeout for rendering a document measured in seconds. The default value is 100 seconds. Value of 0 indicates no expiration.|
+|`KeepClientAlive`| *optional True/False*. Sets whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__. The default value is True.|
 
 __Example:__ `engine=RestService;uri=http://localhost:18103/api/reports;token=authToken;useDefaultCredentials=true;timeout=30;keepClientAlive=true`
 
@@ -101,5 +101,11 @@ End Sub
 ````
 
 # See Also
- * [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)  * [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  * [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo) 
+ 
+
+* [EmbeddedConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.EmbeddedConnectionInfo)  
+
+* [ReportServerConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.ReportServerConnectionInfo)  
+
+* [RestServiceConnectionInfo](/reporting/api/Telerik.ReportViewer.Common.RestServiceConnectionInfo)
 

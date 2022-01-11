@@ -24,10 +24,10 @@ All viewer related classes are supplied by a single CSS stylesheet referenced in
 ````js
 <script type="text/javascript">
         $("#reportViewer1")
-            .telerik_ReportViewer({
+         .telerik_ReportViewer({
                 serviceUrl: "/api/reports/",
                 templateUrl: /ReportViewer/templates/telerikReportViewerTemplate-x.x.x.x.html
-                ......
+             ......
             });
 </script>
 ````
@@ -48,7 +48,7 @@ While these classes provide layout settings the HTML5 Report Viewer depends on t
 
 The default template depends on Telerik Web UI font, that is provided by the Reporting REST service.         
 
-Additionally we provide a template that depends on  [Font Awesome](http://fortawesome.github.io/Font-Awesome/)  for the menu icons.           Font Awesome is not part of the Telerik HTML5 Report Viewer distribution and could be obtained from            [http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/) .         
+Additionally we provide a template that depends on  [Font Awesome](http://fortawesome.github.io/Font-Awesome/)  for the menu icons.           Font Awesome is not part of the Telerik HTML5 Report Viewer distribution and could be obtained from            [http://fortawesome.github.io/Font-Awesome/](http://fortawesome.github.io/Font-Awesome/).         
 
 > Please note that you are not required nor limited to use our font or Font Awesome.             The distributed templates provide only a base/reference implementation of the report viewer’s content             that can be modified according to your needs.           
 
@@ -58,9 +58,9 @@ In order to use Font Awesome you have to specify the font awesome template. The 
 ````js
 <script type="text/javascript">
         $("#reportViewer1")
-            .telerik_ReportViewer({
+         .telerik_ReportViewer({
                 templateUrl: /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html
-                ....
+             ....
 </script>
 ````
 
@@ -73,7 +73,11 @@ The default viewer template and stylesheet depend on CSS media queries to adapt 
 
 # See Also
 
- * [HTML5 Report Viewer - Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+ 
 
- * [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})
+* [HTML5 Report Viewer - Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+
+ 
+
+* [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})
 

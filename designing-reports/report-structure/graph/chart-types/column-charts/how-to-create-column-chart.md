@@ -18,7 +18,7 @@ In this article we will show you how to create a Column chart using the Graph it
 
 1. Add a new graph item to the report.
 
-   1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ .                 
+   1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.                 
 
    1. Set the connection string to the demo AdventureWorks database.
 
@@ -52,23 +52,23 @@ INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.Product
 
    1. Set the __Name__  to *categoryGroup1* 
 
-1. Open                __CoordinateSystems__  collection editor and __Add__  a new __CartesianCoordinateSystem__ .             
+1. Open                __CoordinateSystems__  collection editor and __Add__  a new __CartesianCoordinateSystem__.             
 
-   1. Leave the __Name__  to *cartesianCoordinateSystem1* .                 
+   1. Leave the __Name__  to *cartesianCoordinateSystem1*.                 
 
-   1. Set the __XAxis__  to __New Axis with Category Scale__ .                 
+   1. Set the __XAxis__  to __New Axis with Category Scale__.                 
 
-   1. Set the __YAxis__  to __New Axis with Numerical Scale__ .                 
+   1. Set the __YAxis__  to __New Axis with Numerical Scale__.                 
 
-1. Open __Series__  collection editor and __Add__  new __BarSeries__ .             
+1. Open __Series__  collection editor and __Add__  new __BarSeries__.             
 
-   1. Set the __CategoryGroup__  to __categoryGroup1__ .                 
+   1. Set the __CategoryGroup__  to __categoryGroup1__.                 
 
-   1. Set the __SeriesGroup__  to __seriesGroup1__ .                 
+   1. Set the __SeriesGroup__  to __seriesGroup1__.                 
 
-   1. Set the __CoordinateSystem__  to __cartesianCoordinateSystem1__ .                 
+   1. Set the __CoordinateSystem__  to __cartesianCoordinateSystem1__.                 
 
-   1. Leave the __ArrangeMode__  to __Clustered__ .                 
+   1. Leave the __ArrangeMode__  to __Clustered__.                 
 
    1. Set the __Y__  value to *=IsNull(Sum(Fields.LineTotal), 0) / 1000.0* 
 

@@ -62,7 +62,7 @@ Use the report design created in [Creating a Simple Report]({%slug telerikrepor
 
    + Double-click "ReorderPoint" from the bottom middle list to add it to the expression.               
 
-   + Add to the expression at the top of the dialog so the complete expression reads "= Fields.ReorderPoint * .5". This rule will fire when the quantity of a product falls below half of the ReorderPoint value. Click __OK__  to close the __Edit Expression__  dialog.                 
+   + Add to the expression at the top of the dialog so the complete expression reads "= Fields.ReorderPoint *.5". This rule will fire when the quantity of a product falls below half of the ReorderPoint value. Click __OK__  to close the __Edit Expression__  dialog.                 
 
   ![](images/QuickStart026.png)
 

@@ -70,5 +70,17 @@ Me.barcode1.Encoder = encoder
 ````
 
 # See Also
- * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  * [Telerik.Reporting.Barcodes.PDF417Encoder](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder)  * [Columns](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#Telerik_Reporting_Barcodes_PDF417Encoder_Columns)  * [Encoding](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#Telerik_Reporting_Barcodes_PDF417Encoder_Encoding)  * [ErrorCorrectionLevel](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#Telerik_Reporting_Barcodes_PDF417Encoder_ErrorCorrectionLevel)  * [Rows](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#Telerik_Reporting_Barcodes_PDF417Encoder_Rows) 
+ 
+
+* [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  
+
+* [Telerik.Reporting.Barcodes.PDF417Encoder](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder)  
+
+* [Columns](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#Telerik_Reporting_Barcodes_PDF417Encoder_Columns)  
+
+* [Encoding](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#Telerik_Reporting_Barcodes_PDF417Encoder_Encoding)  
+
+* [ErrorCorrectionLevel](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#Telerik_Reporting_Barcodes_PDF417Encoder_ErrorCorrectionLevel)  
+
+* [Rows](/reporting/api/Telerik.Reporting.Barcodes.PDF417Encoder#Telerik_Reporting_Barcodes_PDF417Encoder_Rows)
 

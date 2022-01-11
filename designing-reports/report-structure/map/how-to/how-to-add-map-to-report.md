@@ -34,7 +34,11 @@ The simplest way to add a __Map__  item to your report is to run the Map Wizard.
 
 # See Also
 
- * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+ 
 
- * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+
+ 
+
+* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

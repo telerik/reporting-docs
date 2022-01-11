@@ -26,7 +26,7 @@ When connecting the WPF Report Viewer to Telerik Report Server or Telerik Report
           (System.Net.Http.HttpResponseMessage, System.Collections.Generic.IEnumerable`1<System.Net.Http.Formatting.MediaTypeFormatter>)' failed.
         
 
-The most common reason for this exception is an incorrect version of the web client assemblies. The viewer requires the            [Microsoft.AspNet.WebApi.Client](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/4.0.30506)            NuGet package. The assemblies required by the viewer can be installed via Visual Studio NuGet Package Manager or            [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console) .           For more details, please check the following article:            [How To: Use WPF Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%}).         
+The most common reason for this exception is an incorrect version of the web client assemblies. The viewer requires the            [Microsoft.AspNet.WebApi.Client](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/4.0.30506)            NuGet package. The assemblies required by the viewer can be installed via Visual Studio NuGet Package Manager or            [Visual Studio Package Manager Console](https://docs.nuget.org/consume/package-manager-console).           For more details, please check the following article:            [How To: Use WPF Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%}).         
 
 ## The WPF ReportViewer is not visible on running the application.
 
@@ -34,7 +34,7 @@ As of Telerik Reporting Q1 2014, the WPF ReportViewer control uses implicit styl
 
 More details about the settings required by the WPF ReportViewer are available in            [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).         
 
-Other possible causes for the issue are described in the following article:            [Missing Controls in the UI](https://docs.telerik.com/devtools/wpf/common-information/troubleshooting/invisible-controls) .         
+Other possible causes for the issue are described in the following article:            [Missing Controls in the UI](https://docs.telerik.com/devtools/wpf/common-information/troubleshooting/invisible-controls).         
 
 ## The WPF application cannot be built.
 
@@ -52,7 +52,7 @@ More details about the settings required by the WPF ReportViewer are available i
 
 ## "Cannot resolve dependency to assembly 'Telerik.Windows.XXXX...'." error on running the application.
 
-The WPf ReportViewer control is built against a specific version of Telerik UI for WPF on each official release. Please check the dependencies           for the used Telerik Reporting version - [WPF Dependenices per release]({%slug telerikreporting/upgrade/overview%}). You can           update assembly references accordingly or add  [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx) .         
+The WPf ReportViewer control is built against a specific version of Telerik UI for WPF on each official release. Please check the dependencies           for the used Telerik Reporting version - [WPF Dependenices per release]({%slug telerikreporting/upgrade/overview%}). You can           update assembly references accordingly or add  [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx).         
 
 More details about the settings required by the WPF ReportViewer are available in [WPF ReportViewer: Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}).         
 

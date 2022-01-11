@@ -28,19 +28,23 @@ The supported map types are:
 
   ![Map Pie Chart](images/Map/MapPieChart.png)
 
-* __Column__  - identical to the __Pie chart type__ , with the only difference that the analytical               data is presented using the Graph's [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}). A more advanced example               that shows how to create such a map and add some additional extras, can be found               [here]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%}).               
+* __Column__  - identical to the __Pie chart type__, with the only difference that the analytical               data is presented using the Graph's [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}). A more advanced example               that shows how to create such a map and add some additional extras, can be found               [here]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%}).               
 
   ![Map Column Chart](images/Map/MapColumnChart.png)
 
 *  [Choropleth](http://en.wikipedia.org/wiki/Choropleth_map)                 - a thematic map that uses graded color differences to display a               measure over predefined regions or areas. It is one of the most popular ways to visualize how a measure varies across               a geographic area. An example how to create a Choropleth map can be found                [here]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%}).             
 
-  ![Choropleth Chart Type](images/Map/Choropleth/Choropleth_ChartType.png)The Choropleth item is basically a [Map item ]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%}) with a special kind of series and groups.               To create a choropleth map, there is no need to configure a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})               or use a  [GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup)  to obtain the coordinates of the data points.               Instead, it uses a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries)  instance, whose major distinction from the               other Map series is that they define the source which will be used to provide the spatial data. This source can be either a string, formatted               in compliance with the                [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text)                standards, or an                [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile) .             
+  ![Choropleth Chart Type](images/Map/Choropleth/Choropleth_ChartType.png)The Choropleth item is basically a [Map item ]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%}) with a special kind of series and groups.               To create a choropleth map, there is no need to configure a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})               or use a  [GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup)  to obtain the coordinates of the data points.               Instead, it uses a  [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries)  instance, whose major distinction from the               other Map series is that they define the source which will be used to provide the spatial data. This source can be either a string, formatted               in compliance with the                [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text)                standards, or an                [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile).             
 
 To achieve better appearance, the Map item can define a [Tile Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}) which will           draw an image of the requested map extent as a background layer onto the plot area.         
 
 # See Also
 
- * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+ 
 
- * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+
+ 
+
+* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

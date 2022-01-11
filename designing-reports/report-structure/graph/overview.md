@@ -14,7 +14,7 @@ position: 0
 
 The Graph item is a native Telerik Reporting item allowing you to generate different chart objects         - [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}). Graphs enable you to present         large volumes of aggregated information at a glance in a visual format.       
 
-> As of Telerik Reporting Q1 2013 the Chart item is superseded by the more advanced  __Graph item__ .           The Graph item is a data item most often used for building powerful OLAP/Pivot charts.           The Graph item provides powerful mechanisms for using expressions for data points,           conditional formatting and styling options, including interactivity.         The old Chart item is obsolete as of Q2 2013.
+> As of Telerik Reporting Q1 2013 the Chart item is superseded by the more advanced  __Graph item__.           The Graph item is a data item most often used for building powerful OLAP/Pivot charts.           The Graph item provides powerful mechanisms for using expressions for data points,           conditional formatting and styling options, including interactivity.         The old Chart item is obsolete as of Q2 2013.
 
 The Graph item can be bound to a single data object, where you can control what data and how it is visualized through Telerik Reporting Expression engine.           The Graph item has rich design-time support allowing you to create different charts and to add series of different type.           A chart produced by the graph item can have multiple and different series and coordinate systems.         
 
@@ -30,7 +30,11 @@ The Graph item can be bound to a single data object, where you can control what 
 
 # See Also
 
- * [Graph Item Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/graph-item-actions%})
+ 
 
- * [Tooltips]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/tooltips%})
+* [Graph Item Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/graph-item-actions%})
+
+ 
+
+* [Tooltips]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/tooltips%})
 

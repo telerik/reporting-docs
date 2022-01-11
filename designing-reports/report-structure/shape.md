@@ -128,7 +128,7 @@ Shape CreateShape()
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb region=CreateCustomShapeSnippet}}
 ````vb.net
 Private Function CreateShape() As Shape
-    Dim shape = New Telerik.Reporting.Shape() With {.ShapeType = New CustomShapeType(), .Size = New Drawing.SizeU(Drawing.Unit.Cm(2), Drawing.Unit.Cm(2)), .Location = New Drawing.PointU(Drawing.Unit.Cm(1), Drawing.Unit.Cm(1))}
+    Dim shape = New Telerik.Reporting.Shape() With {.ShapeType = New CustomShapeType(),.Size = New Drawing.SizeU(Drawing.Unit.Cm(2), Drawing.Unit.Cm(2)),.Location = New Drawing.PointU(Drawing.Unit.Cm(1), Drawing.Unit.Cm(1))}
     shape.Style.Color = System.Drawing.Color.Green
     shape.Style.LineWidth = Drawing.Unit.Pixel(5)
     Return shape
@@ -137,5 +137,13 @@ End Function
 
 # See Also
 
- * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) * [Shape](/reporting/api/Telerik.Reporting.Shape)  * [ShapeType](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType)  * [Stretch](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch) 
+ 
+
+* [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
+
+* [Shape](/reporting/api/Telerik.Reporting.Shape)  
+
+* [ShapeType](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType)  
+
+* [Stretch](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch)
 

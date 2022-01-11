@@ -39,6 +39,6 @@ The size of the Data Matrix code depends on module size, length and type of its 
 |60|43|22x22|
 |72|52|24x24|
 |88|64|26x26|
-|124|91|32x3|
+|124|91|32x32|
 
 

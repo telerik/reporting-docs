@@ -20,19 +20,19 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 1. From the bar, select __Insert__  > __Barcode__  to add a Barcode item.             
 
-1. Place the [https://docs.telerik.com/reporting/report-items-barcode-general]() link in the __Value__                field of the __Barcode__ .             
+1. Place the [https://docs.telerik.com/reporting/report-items-barcode-general]() link in the __Value__                field of the __Barcode__.             
 
 1. Set the __BackgroundColor__  of the footer to 242, 242, 242.             
 
 ## Previewing the Result
 
-Preview the result by clicking __Preview__  > __PrintPreview__ .           
+Preview the result by clicking __Preview__  > __PrintPreview__.           
 
   ![Footer Added](images/FooterAdded.PNG)
 
 ## Next Steps
 
-* [Integrating the Report in .NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
+* [Integrating the Report in.NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
 
 * [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
 

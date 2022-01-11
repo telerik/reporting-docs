@@ -46,6 +46,6 @@ You can customize the scale to better meet your needs. When the values that are 
 
 1. Remove the corresponding field from the series definition. If you have selected the X axis, remove the __Series.X/X0__  expression.               If you have selected the Y axis, remove the __Series.Y/Y0__  expression.                The entries (labels and tick marks for the category axis) are determined by the fields used in the CategoryGroups.Groupings expression.             
 
-> The Scale settings are reset to  __Category Scale__ , when you use the Report Designer to change the Graph or specific Series Chart Type.           
+> The Scale settings are reset to  __Category Scale__, when you use the Report Designer to change the Graph or specific Series Chart Type.           
 
 

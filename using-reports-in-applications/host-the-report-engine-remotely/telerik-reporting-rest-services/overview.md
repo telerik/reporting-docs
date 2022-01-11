@@ -38,7 +38,7 @@ To access these report generation assets, a client host issues a set of requests
 
 The following steps describe how the Reporting REST service serves a client's request:             
 
-1. The client of the service requests a report by a JSON object called a __client report source__ .                 
+1. The client of the service requests a report by a JSON object called a __client report source__.                 
 
 1. The service resolves the request to a                   [.NET  report source]({%slug telerikreporting/designing-reports/report-sources/overview%}). To do that, it uses a                   [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                 
 
@@ -48,7 +48,7 @@ The following steps describe how the Reporting REST service serves a client's re
 
 ## Configuration Hints
 
-You can configure the report service in the application's           configuration file - either .config or .json for the different service implementations. For more details, see           [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).         
+You can configure the report service in the application's           configuration file - either.config or.json for the different service implementations. For more details, see           [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).         
 
 Furthermore, each of the steps listed above allows you additional configuration and customization, for example:           
 
@@ -56,7 +56,7 @@ Furthermore, each of the steps listed above allows you additional configuration 
 
    >An exception is the [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%})                   endpoint, which can enforce regeneration to support the Refresh Report                   functionality. To achieve that, add a useCache = false setting to the request's body.                 
 
-* In some scenarios, you need to share the service with more than one app.           For these, you may need to turn on            [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors) .         
+* In some scenarios, you need to share the service with more than one app.           For these, you may need to turn on            [Cross-Origin Resource Sharing](http://www.w3.org/TR/cors).         
 
 * If all new report requests get executed simultaneously, the host will get overloaded.           To avoid this, the service executes the report generation requests in a task queue.           The count of the simultaneously rendered reports is           [configurable]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).           
 

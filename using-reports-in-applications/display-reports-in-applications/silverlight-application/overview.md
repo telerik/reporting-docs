@@ -50,7 +50,7 @@ The toolbar on the Silverlight Report Viewer provides basic functionality for i
 
 ## Silverlight report viewer specific properties
 
-*  [Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_ReportServiceUri)                - the location of the report service - absolute or relative  [Uri](http://msdn.microsoft.com/en-us/library/system.uri%28VS.95%29.aspx) .               If the uri is absolute, the same instance is returned. If the uri is relative,               a new absolute Uri based on the combination of Source of the current application and the given relative uri is created. The Source usually points to the application package (XAP).             
+*  [Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_ReportServiceUri)                - the location of the report service - absolute or relative  [Uri](http://msdn.microsoft.com/en-us/library/system.uri%28VS.95%29.aspx).               If the uri is absolute, the same instance is returned. If the uri is relative,               a new absolute Uri based on the combination of Source of the current application and the given relative uri is created. The Source usually points to the application package (XAP).             
 
 *  [Telerik.ReportViewer.Silverlight.ReportViewer.Report](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_Report)                - the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)  of the Report type for the viewer to display;             
 
@@ -74,13 +74,17 @@ In order to use our Silverlight Report Viewer, you need a Silverlight applicati
 
 The Silverlight ReportViewer control is a composite of Telerik UI for Silverlight controls.           The viewer's functionality resides in Telerik.ReportViewer.Silverlight.dll and the viewer's UI in Telerik.ReportViewer.Silverlight.xaml.         
 
-> The Silverlight ReportViewer control's template can be modified trough the corresponding theme's [ Telerik.ReportViewer.Silverlight.xaml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/setting-a-theme-(using-implicit-styles)%}) file             and the Silverlight  [ReportViewer](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer) .           
+> The Silverlight ReportViewer control's template can be modified trough the corresponding theme's [ Telerik.ReportViewer.Silverlight.xaml]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/setting-a-theme-(using-implicit-styles)%}) file             and the Silverlight  [ReportViewer](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer).           
 
 The purpose of the Silverlight ReportViewer control is to display Telerik Reports and allow the user to interact with them.            Reports are processed and rendered on the server where __Telerik Reporting engine__  and            __Telerik WCF service__  run. The __Telerik Reporting WCF Service__  serves reports           to the Silverlight ReportViewer, and is responsible for managing the reports state and their resources as images.           The report in the viewer is rendered as standard XAML elements, as Canvas and TextBlock,           through Telerik Reporting XAML for Silverlight rendering mechanism.         
 
 # See Also
 
- * [How to Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%})
+ 
 
- * [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%})
+* [How to Add report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%})
+
+ 
+
+* [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%})
 

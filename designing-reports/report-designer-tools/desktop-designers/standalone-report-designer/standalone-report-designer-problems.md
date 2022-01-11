@@ -26,7 +26,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
       ````xml
 <?xml version ="1.0"?>
 <configuration>
-    ...
+ ...
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
           <listeners>

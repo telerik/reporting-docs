@@ -46,15 +46,15 @@ function createSingleSelectEditor(placeholder, options) {
 ````
 ````xml
 @(Html.TelerikReporting().ReportViewer()
-        .Id("reportViewer1")
-        .ParameterEditors(
+     .Id("reportViewer1")
+     .ParameterEditors(
                     editors => editors
-                        .SingleSelectEditor("createSingleSelectEditor")
+                     .SingleSelectEditor("createSingleSelectEditor")
             )
 )
 ````
 
-If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor.           Each custom editor requires two JavaScript functions provided as attributes: __MatchFunction__  and __CreateEditorFunction__ .         
+If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor.           Each custom editor requires two JavaScript functions provided as attributes: __MatchFunction__  and __CreateEditorFunction__.         
 
 The __customMatch__  method accepts a report parameter to be edited as an argument and returns a boolean value which indicates           whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name,           allowNull, availableValues, multiValue, type and etc.         
 
@@ -99,10 +99,10 @@ Passing the parameter editor to the viewer:
     
 ````xml
 @(Html.TelerikReporting().ReportViewer()
-        .Id("reportViewer1")
-        .ParameterEditors(
+     .Id("reportViewer1")
+     .ParameterEditors(
                     editors => editors
-                        .CustomEditors(new CustomParameterEditor
+                     .CustomEditors(new CustomParameterEditor
                         {
                             MatchFunction = "customMatch",
                             CreateEditorFunction = "createCustomEditor"
@@ -115,5 +115,7 @@ Passing the parameter editor to the viewer:
 
 # See Also
 
- * [How To: Pass Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-pass-values-to-report-parameters%})
+ 
+
+* [How To: Pass Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-pass-values-to-report-parameters%})
 

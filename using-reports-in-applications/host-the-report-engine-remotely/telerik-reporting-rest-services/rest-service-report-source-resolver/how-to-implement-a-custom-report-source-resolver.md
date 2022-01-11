@@ -12,11 +12,11 @@ position: 1
 
 
 
-This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__ .         In this example, the resolver purpose will be to return a  [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)  with an XML         report definition obtained from an SQL Server database.       
+This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__.         In this example, the resolver purpose will be to return a  [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)  with an XML         report definition obtained from an SQL Server database.       
 
 ## How to implement a custom report source resolver:
 
-1. Create a class which implements the  [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)                interface. Its  [Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_)                 method will be called whenever the engine needs to create a                [ReportSource](/reporting/api/Telerik.Reporting.ReportSource)  instance based on the parameter named *report* .               The value of the *report*  parameter will be initialized with the value of the __Report__  property of the report viewer's ReportSource object.             
+1. Create a class which implements the  [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)                interface. Its  [Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_)                 method will be called whenever the engine needs to create a                [ReportSource](/reporting/api/Telerik.Reporting.ReportSource)  instance based on the parameter named *report*.               The value of the *report*  parameter will be initialized with the value of the __Report__  property of the report viewer's ReportSource object.             
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_Implementation}}
 ````C#
@@ -96,8 +96,8 @@ public class CustomResolverReportsController : ReportsControllerBase
     static CustomResolverReportsController()
     {
         var resolver = new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))
-            .AddFallbackResolver(new TypeReportSourceResolver()
-                .AddFallbackResolver(new CustomReportSourceResolver()));
+         .AddFallbackResolver(new TypeReportSourceResolver()
+             .AddFallbackResolver(new CustomReportSourceResolver()));
 
         configurationInstance = new ReportServiceConfiguration
         {
@@ -122,8 +122,8 @@ Public Class CustomResolverReportsController
 
     Shared Sub New()
         Dim resolver = New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports")) _
-                       .AddFallbackResolver(New TypeReportSourceResolver() _
-                                            .AddFallbackResolver(New CustomReportSourceResolver()))
+                    .AddFallbackResolver(New TypeReportSourceResolver() _
+                                         .AddFallbackResolver(New CustomReportSourceResolver()))
 
         Dim reportServiceConfiguration As New ReportServiceConfiguration()
         reportServiceConfiguration.HostAppId = "Application1"
@@ -163,13 +163,13 @@ GO
 CREATE DATABASE [Reports]
 CONTAINMENT = NONE
 ON  PRIMARY
-( NAME = N'Reports', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports.mdf' , SIZE = 4096KB ,
+( NAME = N'Reports', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports.mdf', SIZE = 4096KB ,
 
 MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )
 LOG ON
-( NAME = N'Reports_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports_log.ldf' , SIZE = 1024KB
+( NAME = N'Reports_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports_log.ldf', SIZE = 1024KB
 
-, MAXSIZE = 2048GB , FILEGROWTH = 10%)
+, MAXSIZE = 2048GB, FILEGROWTH = 10%)
 GO
 USE [Reports]
 GO
@@ -180,7 +180,7 @@ CREATE TABLE [dbo].[Reports](
 GO
 ````
 
-1. To enter some data into the database you can manually edit the __Reports__  table.               XML report definitions can be obtained from the sample __.trdx__  report files installed               together with the product and are located in               __[Telerik_Reporting_Install_Dir]\Report Designer\Examples__ .                 In newer versions, all sample reports of the Standalone Report Designer are in TRDP format. You can use the               *Standalone Report Designer - File - Save As*  option to convert them to TRDX files.             
+1. To enter some data into the database you can manually edit the __Reports__  table.               XML report definitions can be obtained from the sample __.trdx__  report files installed               together with the product and are located in               __[Telerik_Reporting_Install_Dir]\Report Designer\Examples__.                 In newer versions, all sample reports of the Standalone Report Designer are in TRDP format. You can use the               *Standalone Report Designer - File - Save As*  option to convert them to TRDX files.             
 
 ## How to implement and use custom IReportSourceResolver with fallback mechanism:
 
@@ -256,7 +256,7 @@ public class CustomResolverWithFallbackReportsController : ReportsControllerBase
     static CustomResolverWithFallbackReportsController()
     {
         var resolver = new CustomReportSourceResolverWithFallBack(new TypeReportSourceResolver()
-                .AddFallbackResolver(new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))));
+             .AddFallbackResolver(new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))));
 
         configurationInstance = new ReportServiceConfiguration
         {
@@ -281,7 +281,7 @@ Public Class CustomResolverWithFallbackReportsController
 
     Shared Sub New()
         Dim resolver = New CustomReportSourceResolverWithFallBack(New TypeReportSourceResolver() _
-                .AddFallbackResolver(New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))))
+             .AddFallbackResolver(New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))))
 
         Dim reportServiceConfiguration As New ReportServiceConfiguration()
         reportServiceConfiguration.HostAppId = "Application1"

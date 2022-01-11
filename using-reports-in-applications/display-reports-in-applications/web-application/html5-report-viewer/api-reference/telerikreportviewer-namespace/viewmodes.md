@@ -19,5 +19,5 @@ position: 1
  Member name |
 | ------ |
 |INTERACTIVE|
-|PRINT_PREVIE|
+|PRINT_PREVIEW|
 

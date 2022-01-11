@@ -58,7 +58,7 @@ In order to use the WinUI report viewer, you need a WinUI 3 desktop application
 
 * Windows 10 SDK 10.0.18362 or later installed.
 
-Visual Studio 2019 and Visual Studio 2019 Preview have known issues when building WinUI applications targeting .NET 5, while having .NET 6 SDK installed on the machine.           For a smooth development experience we recommend using Visual Studio 2022 and .NET 6 SDK Preview 6 or later. Otherwise you might need to deinstall .NET 6 SDK in order to build WinUI 3 applications.         
+Visual Studio 2019 and Visual Studio 2019 Preview have known issues when building WinUI applications targeting.NET 5, while having.NET 6 SDK installed on the machine.           For a smooth development experience we recommend using Visual Studio 2022 and.NET 6 SDK Preview 6 or later. Otherwise you might need to deinstall.NET 6 SDK in order to build WinUI 3 applications.         
 
 ## How it works
 
@@ -78,13 +78,17 @@ Currently the WinUI Report Viewer does not provide the following functionalities
 
 * Localization of the report viewer.
 
-* Modifying the report viewer template through a dedicated .xaml file.             
+* Modifying the report viewer template through a dedicated.xaml file.             
 
 The missing functionalities will be gradually added when possible, given that the current state of the WinUI 3 platform development allows it.
 
 # See Also
 
- * [Windows UI Library (WinUI)](https://docs.microsoft.com/en-us/windows/apps/winui/)
+ 
 
- * [Install tools for Windows app development](https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment#required-workloads-and-components)
+* [Windows UI Library (WinUI)](https://docs.microsoft.com/en-us/windows/apps/winui/)
+
+ 
+
+* [Install tools for Windows app development](https://docs.microsoft.com/en-us/windows/apps/windows-app-sdk/set-up-your-development-environment#required-workloads-and-components)
 

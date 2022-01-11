@@ -18,19 +18,19 @@ This property defines the ratio between the empty space per single data slot and
 
 The following pictures show how the column chart would look like with different values for the            [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount)  property:         
 
-|  <br/>  ! [Category Scale Spacing Slot Count 1](images/Graph/CategoryScale_SpacingSlotCount_1.png)|  <br/>  ! [Category Scale Spacing Slot Count 1a](images/Graph/CategoryScale_SpacingSlotCount_1a.png|
+|  <br/>  ! [Category Scale Spacing Slot Count 1](images/Graph/CategoryScale_SpacingSlotCount_1.png)|  <br/>  ! [Category Scale Spacing Slot Count 1a](images/Graph/CategoryScale_SpacingSlotCount_1a.png)|
 
 The default value of __1__  produces an empty space which size is equal to a single data point's width.         
 
 >caption 
 
-|  <br/>  ! [Category Scale Spacing Slot Count 0](images/Graph/CategoryScale_SpacingSlotCount_0.png)|  <br/>  ! [Category Scale Spacing Slot Count 0a](images/Graph/CategoryScale_SpacingSlotCount_0a.png|
+|  <br/>  ! [Category Scale Spacing Slot Count 0](images/Graph/CategoryScale_SpacingSlotCount_0.png)|  <br/>  ! [Category Scale Spacing Slot Count 0a](images/Graph/CategoryScale_SpacingSlotCount_0a.png)|
 
-When the value is set to __0__ , the data points will occupy all the available slot width.         
+When the value is set to __0__, the data points will occupy all the available slot width.         
 
 >caption 
 
-|  <br/>  ! [Category Scale Spacing Slot Count 3](images/Graph/CategoryScale_SpacingSlotCount_3.png)|  <br/>  ! [Category Scale Spacing Slot Count 3a](images/Graph/CategoryScale_SpacingSlotCount_3a.png|
+|  <br/>  ! [Category Scale Spacing Slot Count 3](images/Graph/CategoryScale_SpacingSlotCount_3.png)|  <br/>  ! [Category Scale Spacing Slot Count 3a](images/Graph/CategoryScale_SpacingSlotCount_3a.png)|
 
 A higher value (in this case __3__ ) leaves more empty space around the data points, making them thinner.         
 
@@ -48,9 +48,15 @@ To change the __Scale.SpacingSlotCount__  property, follow these steps:
 
 # See Also
 
- * [How to: change the space between chart's series](http://www.telerik.com/support/kb/reporting/details/how-to-change-the-space-between-charts-series)
+ 
 
- * [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) 
+* [How to: change the space between chart's series](http://www.telerik.com/support/kb/reporting/details/how-to-change-the-space-between-charts-series)
 
- * [Scale](/reporting/api/Telerik.Reporting.Scale)
+ 
+
+* [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) 
+
+ 
+
+* [Scale](/reporting/api/Telerik.Reporting.Scale)
 

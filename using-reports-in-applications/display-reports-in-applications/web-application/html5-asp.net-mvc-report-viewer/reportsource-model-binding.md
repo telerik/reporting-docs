@@ -33,28 +33,28 @@ Then you can use it directly when you are initializing the report viewer:
 {{source=CodeSnippets\MvcCS\Views\Home\SimpleModelBinding.cshtml region=Example}}
 ````c#
 @(Html.TelerikReporting().ReportViewer()
-       .Id("reportViewer1")
-       .ServiceUrl("/api/reports/")
-       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-       .ReportSource(Model)
-       .ViewMode(ViewMode.Interactive)
-       .ScaleMode(ScaleMode.Specific)
-       .Scale(1.0)
-       .PersistSession(false)
+    .Id("reportViewer1")
+    .ServiceUrl("/api/reports/")
+    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+    .ReportSource(Model)
+    .ViewMode(ViewMode.Interactive)
+    .ScaleMode(ScaleMode.Specific)
+    .Scale(1.0)
+    .PersistSession(false)
 )
 ````
 {{source=CodeSnippets\MvcVB\Views\Home\SimpleModelBinding.vbhtml region=Example}}
 ````vb.net
 @Code
     Html.TelerikReporting().ReportViewer() _
-    .Id("reportViewer1") _
-    .ServiceUrl("/api/reports/") _
-    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-    .ReportSource(Model) _
-    .ViewMode(ViewMode.Interactive) _
-    .ScaleMode(ScaleMode.Specific) _
-    .Scale(1.0) _
-    .PersistSession(False)
+ .Id("reportViewer1") _
+ .ServiceUrl("/api/reports/") _
+ .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+ .ReportSource(Model) _
+ .ViewMode(ViewMode.Interactive) _
+ .ScaleMode(ScaleMode.Specific) _
+ .Scale(1.0) _
+ .PersistSession(False)
 End Code
 ````
 
@@ -83,28 +83,28 @@ Once you have the model you should create your own logic to populate it (note th
 {{source=CodeSnippets\MvcCS\Views\Home\AdvancedModelBinding.cshtml region=Example}}
 ````c#
 @(Html.TelerikReporting().ReportViewer()
-       .Id("reportViewer1")
-       .ServiceUrl("/api/reports/")
-       .TemplateUrl(Model.TemplateUri)
-       .ReportSource(Model.ReportSource)
-       .ViewMode(ViewMode.Interactive)
-       .ScaleMode(ScaleMode.Specific)
-       .Scale(1.0)
-       .PersistSession(false)
+    .Id("reportViewer1")
+    .ServiceUrl("/api/reports/")
+    .TemplateUrl(Model.TemplateUri)
+    .ReportSource(Model.ReportSource)
+    .ViewMode(ViewMode.Interactive)
+    .ScaleMode(ScaleMode.Specific)
+    .Scale(1.0)
+    .PersistSession(false)
 )
 ````
 {{source=CodeSnippets\MvcVB\Views\Home\AdvancedModelBinding.vbhtml region=Example}}
 ````vb.net
 @Code
     Html.TelerikReporting().ReportViewer() _
-    .Id("reportViewer1") _
-    .ServiceUrl("/api/reports/") _
-    .TemplateUrl(Model.TemplateUri) _
-    .ReportSource(Model.ReportSource) _
-    .ViewMode(ViewMode.Interactive) _
-    .ScaleMode(ScaleMode.Specific) _
-    .Scale(1.0) _
-    .PersistSession(False)
+ .Id("reportViewer1") _
+ .ServiceUrl("/api/reports/") _
+ .TemplateUrl(Model.TemplateUri) _
+ .ReportSource(Model.ReportSource) _
+ .ViewMode(ViewMode.Interactive) _
+ .ScaleMode(ScaleMode.Specific) _
+ .Scale(1.0) _
+ .PersistSession(False)
 End Code
 ````
 
@@ -115,28 +115,28 @@ There are cases when the supported report sources (Type and Uri) will not be eno
 {{source=CodeSnippets\MvcCS\Views\Home\CustomModelBinding.cshtml region=Example1}}
 ````c#
 @(Html.TelerikReporting().ReportViewer()
-       .Id("reportViewer1")
-       .ServiceUrl("/api/reports/")
-       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-       .ReportSource("73")
-       .ViewMode(ViewMode.Interactive)
-       .ScaleMode(ScaleMode.Specific)
-       .Scale(1.0)
-       .PersistSession(false)
+    .Id("reportViewer1")
+    .ServiceUrl("/api/reports/")
+    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+    .ReportSource("73")
+    .ViewMode(ViewMode.Interactive)
+    .ScaleMode(ScaleMode.Specific)
+    .Scale(1.0)
+    .PersistSession(false)
 )
 ````
 {{source=CodeSnippets\MvcVB\Views\Home\CustomModelBinding.vbhtml region=Example1}}
 ````vb.net
 @Code
     Html.TelerikReporting().ReportViewer() _
-    .Id("reportViewer1") _
-    .ServiceUrl("/api/reports/") _
-    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-    .ReportSource("73") _
-    .ViewMode(ViewMode.Interactive) _
-    .ScaleMode(ScaleMode.Specific) _
-    .Scale(1.0) _
-    .PersistSession(False)
+ .Id("reportViewer1") _
+ .ServiceUrl("/api/reports/") _
+ .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+ .ReportSource("73") _
+ .ViewMode(ViewMode.Interactive) _
+ .ScaleMode(ScaleMode.Specific) _
+ .Scale(1.0) _
+ .PersistSession(False)
 End Code
 ````
 
@@ -145,28 +145,28 @@ You can also add parameters, like this:
 {{source=CodeSnippets\MvcCS\Views\Home\CustomModelBinding.cshtml region=Example2}}
 ````c#
 @(Html.TelerikReporting().ReportViewer()
-       .Id("reportViewer1")
-       .ServiceUrl("/api/reports/")
-       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-       .ReportSource("73", new Dictionary<string, object>() { { "parameter1", "value1" }, { "parameter2", "value2" } })
-       .ViewMode(ViewMode.Interactive)
-       .ScaleMode(ScaleMode.Specific)
-       .Scale(1.0)
-       .PersistSession(false)
+    .Id("reportViewer1")
+    .ServiceUrl("/api/reports/")
+    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+    .ReportSource("73", new Dictionary<string, object>() { { "parameter1", "value1" }, { "parameter2", "value2" } })
+    .ViewMode(ViewMode.Interactive)
+    .ScaleMode(ScaleMode.Specific)
+    .Scale(1.0)
+    .PersistSession(false)
 )
 ````
 {{source=CodeSnippets\MvcVB\Views\Home\CustomModelBinding.vbhtml region=Example2}}
 ````vb.net
 @Code
     Html.TelerikReporting().ReportViewer() _
-    .Id("reportViewer1") _
-    .ServiceUrl("/api/reports/") _
-    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-    .ReportSource("73", New Dictionary(Of String, Object)() From {{"parameter1", "value1"}, {"parameter2", "value2"}}) _
-    .ViewMode(ViewMode.Interactive) _
-    .ScaleMode(ScaleMode.Specific) _
-    .Scale(1.0) _
-    .PersistSession(False)
+ .Id("reportViewer1") _
+ .ServiceUrl("/api/reports/") _
+ .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+ .ReportSource("73", New Dictionary(Of String, Object)() From {{"parameter1", "value1"}, {"parameter2", "value2"}}) _
+ .ViewMode(ViewMode.Interactive) _
+ .ScaleMode(ScaleMode.Specific) _
+ .Scale(1.0) _
+ .PersistSession(False)
 End Code
 ````
 
@@ -175,28 +175,28 @@ The view can also be strongly typed:
 {{source=CodeSnippets\MvcCS\Views\Home\AdvancedCustomModelBinding.cshtml region=Example}}
 ````c#
 @(Html.TelerikReporting().ReportViewer()
-       .Id("reportViewer1")
-       .ServiceUrl("/api/reports/")
-       .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-       .ReportSource(Model.ReportSource, Model.Parameters)
-       .ViewMode(ViewMode.Interactive)
-       .ScaleMode(ScaleMode.Specific)
-       .Scale(1.0)
-       .PersistSession(false)
+    .Id("reportViewer1")
+    .ServiceUrl("/api/reports/")
+    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+    .ReportSource(Model.ReportSource, Model.Parameters)
+    .ViewMode(ViewMode.Interactive)
+    .ScaleMode(ScaleMode.Specific)
+    .Scale(1.0)
+    .PersistSession(false)
 )
 ````
 {{source=CodeSnippets\MvcVB\Views\Home\AdvancedCustomModelBinding.vbhtml region=Example}}
 ````vb.net
 @Code
     Html.TelerikReporting().ReportViewer() _
-    .Id("reportViewer1") _
-    .ServiceUrl("/api/reports/") _
-    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-    .ReportSource(Model.ReportSource, Model.Parameters) _
-    .ViewMode(ViewMode.Interactive) _
-    .ScaleMode(ScaleMode.Specific) _
-    .Scale(1.0) _
-    .PersistSession(False)
+ .Id("reportViewer1") _
+ .ServiceUrl("/api/reports/") _
+ .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+ .ReportSource(Model.ReportSource, Model.Parameters) _
+ .ViewMode(ViewMode.Interactive) _
+ .ScaleMode(ScaleMode.Specific) _
+ .Scale(1.0) _
+ .PersistSession(False)
 End Code
 ````
 
@@ -234,7 +234,7 @@ Class ModelBindingReportSourceResolver
         End If
 
         Return New Telerik.Reporting.InstanceReportSource() With {
-            .ReportDocument = report
+         .ReportDocument = report
         }
     End Function
 End Class

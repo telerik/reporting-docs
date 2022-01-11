@@ -23,7 +23,7 @@ POST /api/reports/clients
 
 | HTTP Status Code | Description |
 | ------ | ------ |
-|`200 OK`|Client registered successfull|
+|`200 OK`|Client registered successfully|
 
 __Response Body__ 
 

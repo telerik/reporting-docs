@@ -24,13 +24,13 @@ The Standalone Report Designer is part of the Telerik Reporting package. It is a
 
 * __From the Windows Start menu:__ 
 
-   1. Open the Start menu, click __All Programs__ , then click  __Telerik__  and then                   click __Reporting__ .                 
+   1. Open the Start menu, click __All Programs__, then click  __Telerik__  and then                   click __Reporting__.                 
 
-   1. Click __Report Designer__ .                 
+   1. Click __Report Designer__.                 
 
    1. The Standalone Report Designer opens, and you can create or open a report.                 
 
-* __From another desktop application:__ Developers can enable users to start the Standalone Report Designer from another .NET desktop application. This is possible with the .NET Framework                [                   Process.Start                 ](                   http://msdn.microsoft.com/en-us/library/vstudio/system.diagnostics.process.start                 )  Method.               Optionally, the Standalone Report Designer accepts an argument path to a report document, which will be opened with the report designer.                To provide a report definition for editing in the report designer, developers can use the                [                   Process.Start (String, String)                 ](                   http://msdn.microsoft.com/en-us/library/vstudio/h6ak8zt5                 )  Method.             
+* __From another desktop application:__ Developers can enable users to start the Standalone Report Designer from another.NET desktop application. This is possible with the.NET Framework                [                   Process.Start                 ](                   http://msdn.microsoft.com/en-us/library/vstudio/system.diagnostics.process.start                 )  Method.               Optionally, the Standalone Report Designer accepts an argument path to a report document, which will be opened with the report designer.                To provide a report definition for editing in the report designer, developers can use the                [                   Process.Start (String, String)                 ](                   http://msdn.microsoft.com/en-us/library/vstudio/h6ak8zt5                 )  Method.             
 
 ## Major UI Elements in the Standalone Report Designer  
 
@@ -48,7 +48,7 @@ The image above shows the major UI elements in the Standalone Report Designer:
 
 * __Component Tray:__  Shows the [                 DataSource components               ]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) that are used in this report.             
 
-* __View Mode Buttons:__  Use these buttons to switch               between the __Design__ , __Preview__  view.             
+* __View Mode Buttons:__  Use these buttons to switch               between the __Design__, __Preview__  view.             
 
 * [Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}) (not shown on the image above):               Appears on right click and conditionally displays content depending on the area that was right-clicked.             
 
@@ -56,7 +56,7 @@ The image above shows the major UI elements in the Standalone Report Designer:
 
 Additionally, the Standalone Report Designer includes the following helpful elements:         
 
-* __Tooltip__ : This is a UI element that includes various buttons that are designed to ease you while you design reports.               The __Tooltip__ , which is shown on the image below, is placed in the lower-left corner of the design surface.               
+* __Tooltip__ : This is a UI element that includes various buttons that are designed to ease you while you design reports.               The __Tooltip__, which is shown on the image below, is placed in the lower-left corner of the design surface.               
 
   ![report-designer-toolstrip](images/Designer/report-designer-toolstrip.png)You will find the following buttons in the __Tooltip__ :
 
@@ -64,7 +64,7 @@ Additionally, the Standalone Report Designer includes the following helpful elem
 
   ![](images/snapGrid.png)
 
-   + __Show/hide the snap grid__  button switches on or off the displayed __snap grid__ .                   The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap*                    or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel.                   Here is a workspace showing the snap grid turned on:                   
+   + __Show/hide the snap grid__  button switches on or off the displayed __snap grid__.                   The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap*                    or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel.                   Here is a workspace showing the snap grid turned on:                   
 
   ![](images/snapGrid1.png)
 
@@ -84,7 +84,7 @@ Additionally, the Standalone Report Designer includes the following helpful elem
 
    + __Turn On/Off Pan__  - this option allows you to switch between drag and pan mode in designer.                   When enabled, the cursor is changed to a hand and clicking and dragging on the designer surface will move the report contents. This tool is useful when working on higher zoom levels.                 
 
-* __Show/Hide the Report Map__  - In the lower-right corner of the design surface, click on the magnifying glass to show or hide               the __Report Map__ . This element is especially useful when you have zoomed the report and want to focus on a specific element. To hide the map, click on the design surface to have it closed.               
+* __Show/Hide the Report Map__  - In the lower-right corner of the design surface, click on the magnifying glass to show or hide               the __Report Map__. This element is especially useful when you have zoomed the report and want to focus on a specific element. To hide the map, click on the design surface to have it closed.               
 
   ![](images/snapGrid4.png)
 
@@ -92,7 +92,7 @@ Additionally, the Standalone Report Designer includes the following helpful elem
 
   ![standalone-designer-align-controls](images/Designer/standalone-designer-align-controls.png)
 
-   + Select two report items and change their HorizontalAlignment by clicking __Left__  , __Center__  , __Right__  , or __Stretch__  .                 
+   + Select two report items and change their HorizontalAlignment by clicking __Left__, __Center__, __Right__, or __Stretch__.                 
 
-   + Select two report items and change their VerticalAlignment by clicking __Top__  , __Center__  , __Bottom__  , or __Stretch__  .                 You can also change alignment by moving an element on the design surface.
+   + Select two report items and change their VerticalAlignment by clicking __Top__, __Center__, __Bottom__, or __Stretch__.                 You can also change alignment by moving an element on the design surface.
 

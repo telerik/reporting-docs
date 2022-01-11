@@ -16,11 +16,11 @@ This article will explain how to use          [Redis storage](http://redis.io/) 
 
 ## Adding the necessary dependencies
 
-Telerik Reporting uses __StackExchange.Redis__  client library to access a Redis database.           When adding a reference to __Telerik.Reporting.Cache.StackExchangeRedis__ , the version of StackExchange.Redis client must be considered,           because version 2.0+ introduces breaking changes and is not compatible with previous versions.         
+Telerik Reporting uses __StackExchange.Redis__  client library to access a Redis database.           When adding a reference to __Telerik.Reporting.Cache.StackExchangeRedis__, the version of StackExchange.Redis client must be considered,           because version 2.0+ introduces breaking changes and is not compatible with previous versions.         
 
 * Telerik.Reporting.Cache.StackExchangeRedis assembly depends on StackExchange.Redis.StrongName version 1.0.320 up to version 1.2.7.             
 
-* Telerik.Reporting.Cache.StackExchangeRedis.2 depends on StackExchange.Redis version 2.0.601 or greater.               It is built against .NET Standard 2.0 and it can be used in projects targeting .NET Framework 4.6.1+ or .NET Core 2.0+             
+* Telerik.Reporting.Cache.StackExchangeRedis.2 depends on StackExchange.Redis version 2.0.601 or greater.               It is built against.NET Standard 2.0 and it can be used in projects targeting.NET Framework 4.6.1+ or.NET Core 2.0+             
 
 ###Using the Telerik NuGet repository:
 
@@ -48,7 +48,11 @@ Where needed in your application create an instance of the            [RedisStor
 
 # See Also
 
- * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
+ 
 
- * [REST Report Service Configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
+* [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
+
+ 
+
+* [REST Report Service Configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
 

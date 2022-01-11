@@ -22,7 +22,7 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 
    + Assemblies with Telerik Reports to be exposed through the Reporting Service
 
-1. Add .svc file (e.g. __ReportService.svc__ )             to reference the              [Telerik.Reporting.Service.ReportService](/reporting/api/Telerik.Reporting.Service.ReportService) .             The file would contain the following line only:           
+1. Add.svc file (e.g. __ReportService.svc__ )             to reference the              [Telerik.Reporting.Service.ReportService](/reporting/api/Telerik.Reporting.Service.ReportService).             The file would contain the following line only:           
 
     
       ````XML
@@ -36,7 +36,7 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
     
       ````XML
 <configuration>
-    ...
+ ...
     <system.serviceModel>
         <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />
         <services>
@@ -76,7 +76,7 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
             </endpointBehaviors>
         </behaviors>
     </system.serviceModel>
-    ...
+ ...
 </configuration>
 ````
 

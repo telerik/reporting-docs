@@ -18,7 +18,7 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 
 1. On an elevated console (“Run as administrator”), execute the following command for example to allow the running user to listen on port 8080:             
 
-|netsh http add urlacl url=http://+:8080/ user=DOMAIN\use|
+|netsh http add urlacl url=http://+:8080/ user=DOMAIN\user|
 
 1. On Visual Studio, create a “Console Application” project;
 
@@ -100,17 +100,21 @@ End Class
 
 1. To verify whether the service works correctly you can make a sample request               for the available document formats using the following URL:             
 
-| __http://localhost: [portnumber]/api/reports/formats__|
+| __http://localhost: [portnumber]/api/reports/formats__ |
 
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).             
 
 1. When you are finished self-hosting, be sure to delete the reservation:             
 
-|netsh http delete urlacl url=http://+:8080|
+|netsh http delete urlacl url=http://+:8080/|
 
 # See Also
 
- * [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
+ 
 
- * [Hosting ASP.NET Web API](http://www.asp.net/web-api/overview/hosting-aspnet-web-api)
+* [Localization]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization%})
+
+ 
+
+* [Hosting ASP.NET Web API](http://www.asp.net/web-api/overview/hosting-aspnet-web-api)
 

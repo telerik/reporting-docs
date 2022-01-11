@@ -20,11 +20,11 @@ To give an example we will use the Invoice report from our local examples and wi
 
 > All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
-1. We are going to use one of our demo Visual Studio reports. For this purpose the demo ReportLibrary project should be built beforehand (see below).                   Create a new ASP.NET MVC 4+ Empty Project and add reference to *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\bin\[configuration directory]\CSharp|VB.ReportLibrary.dll* .                   The exact [configuration directory] name depends on the project 'Build' configuration. It could be 'Debug', 'Release', etc.                 
+1. We are going to use one of our demo Visual Studio reports. For this purpose the demo ReportLibrary project should be built beforehand (see below).                   Create a new ASP.NET MVC 4+ Empty Project and add reference to *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\bin\[configuration directory]\CSharp|VB.ReportLibrary.dll*.                   The exact [configuration directory] name depends on the project 'Build' configuration. It could be 'Debug', 'Release', etc.                 
 
-1. Then use the                    [HTML5 MVC Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})    Name the view with the viewer                   __InvoiceParameters.cshtml|vbhtml__ . On __'Configure report source'__                     step select __'Existing report definition'__ , then select                    __'Select type report definition created in Visual Studio'__  and browse                    *Invoice*  report class.                      Finish the wizard.
+1. Then use the                    [HTML5 MVC Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})    Name the view with the viewer                   __InvoiceParameters.cshtml|vbhtml__. On __'Configure report source'__                     step select __'Existing report definition'__, then select                    __'Select type report definition created in Visual Studio'__  and browse                    *Invoice*  report class.                      Finish the wizard.
 
-1. Add MVC Controller item under the project's __Controller__  folder and name it                   __HomeController.cs|vb__ , and add an ActionResult method named __InvoiceParameters__ .                   Move the InvoiceParameters.cshtml|vbhtml file under the newly added __Views\Home__  folder.                     Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__                    in the project's web.config file. For example:                 
+1. Add MVC Controller item under the project's __Controller__  folder and name it                   __HomeController.cs|vb__, and add an ActionResult method named __InvoiceParameters__.                   Move the InvoiceParameters.cshtml|vbhtml file under the newly added __Views\Home__  folder.                     Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__                    in the project's web.config file. For example:                 
 
     
     ````xml
@@ -152,16 +152,16 @@ public ActionResult InvoiceParameters()
 Public Function InvoiceParameters() As ActionResult
     Dim invoices = New List(Of InvoiceModel)() From { _
         New InvoiceModel() With { _
-            .Id = 0, _
-            .Value = "SO51081" _
+         .Id = 0, _
+         .Value = "SO51081" _
         }, _
         New InvoiceModel() With { _
-            .Id = 1, _
-            .Value = "SO51082" _
+         .Id = 1, _
+         .Value = "SO51082" _
         }, _
         New InvoiceModel() With { _
-            .Id = 2, _
-            .Value = "SO51083" _
+         .Id = 2, _
+         .Value = "SO51083" _
         } _
     }
 
@@ -186,7 +186,7 @@ End Function
 @ModelType MyMVCProject.InvoiceViewModel
 <div id="invoiceIdSelector">
   @Html.LabelFor(Function(m) m.SelectedInvoiceId)
-  @Html.DropDownListFor(Function(m) m.SelectedInvoiceId, Model.InvoiceItems, New With { Key .id = "invoiceId", Key .title = "Select the Invoice ID" })
+  @Html.DropDownListFor(Function(m) m.SelectedInvoiceId, Model.InvoiceItems, New With { Key.id = "invoiceId", Key.title = "Select the Invoice ID" })
 </div>
 ````
 
@@ -201,13 +201,13 @@ End Function
 
 @(
     Html.TelerikReporting().ReportViewer()
-        .Id("reportViewer1")
-        .ServiceUrl("/api/reports/")
-        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-        .ReportSource(typeReportSource)
-        .ViewMode(ViewMode.Interactive)
-        .ScaleMode(ScaleMode.Specific)
-        .Scale(1.0)
+     .Id("reportViewer1")
+     .ServiceUrl("/api/reports/")
+     .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+     .ReportSource(typeReportSource)
+     .ViewMode(ViewMode.Interactive)
+     .ScaleMode(ScaleMode.Specific)
+     .Scale(1.0)
 )
 ````
 {{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
@@ -217,13 +217,13 @@ End Function
     typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
 
     Html.TelerikReporting().ReportViewer() _
-        .Id("reportViewer1") _
-        .ServiceUrl("/api/reports/") _
-        .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-        .ReportSource(typeReportSource) _
-        .ViewMode(ViewMode.Interactive) _
-        .ScaleMode(ScaleMode.Specific) _
-        .Scale(1.0)
+     .Id("reportViewer1") _
+     .ServiceUrl("/api/reports/") _
+     .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+     .ReportSource(typeReportSource) _
+     .ViewMode(ViewMode.Interactive) _
+     .ScaleMode(ScaleMode.Specific) _
+     .Scale(1.0)
 End Code
 ````
 
@@ -247,5 +247,7 @@ $('#invoiceId').change(function () {
 
 # See Also
 
- * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
+ 
+
+* [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
 

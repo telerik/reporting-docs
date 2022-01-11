@@ -108,7 +108,7 @@ xmlReportSource.Xml = "<?xml version='1.0' encoding='utf-8'?>" &
 xmlReportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
 ````
 
-* __Deserialize the XML report definition from a TRDX file__ :             If working with CLR types and objects is your thing, you can deserialize the XML report definition and proceed               following the basic concepts of the programming language and the .NET platform. For example you can create an InstanceReportSource and               and set its ReportDocument property to the deserialized report object. See [Serialize Report Definition in XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) for more information.             
+* __Deserialize the XML report definition from a TRDX file__ :             If working with CLR types and objects is your thing, you can deserialize the XML report definition and proceed               following the basic concepts of the programming language and the.NET platform. For example you can create an InstanceReportSource and               and set its ReportDocument property to the deserialized report object. See [Serialize Report Definition in XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) for more information.             
 
 * __Unpackaging the XML report definition from a TRDP file__ :             If you need to obtain a Telerik Report instance in code from a TRDP file, you can unpackage the content in code. Then create an InstanceReportSource and               set its ReportDocument property to the unpackaged report object. See [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) for more information.             
 
@@ -116,11 +116,19 @@ The only thing left to do is assign the resulting report sources to the report v
 
 # See Also
 
- * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
+ 
 
- * [Reference Report Definitions in Applications]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})
+* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
 
- * [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
+ 
 
- * [Previewing a report definition that uses an external assembly](http://www.telerik.com/support/kb/reporting/report-viewers/deploying-trdx-that-uses-external-assembly.aspx)
+* [Reference Report Definitions in Applications]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})
+
+ 
+
+* [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
+
+ 
+
+* [Previewing a report definition that uses an external assembly](http://www.telerik.com/support/kb/reporting/report-viewers/deploying-trdx-that-uses-external-assembly.aspx)
 

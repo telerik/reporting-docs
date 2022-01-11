@@ -12,11 +12,11 @@ position: 2
 
 
 
-The current article elaborates on how to setup a Map without using the __Map Wizard__ . The described approach is         applicable when using the __Visual Studio Report Designer__ 
+The current article elaborates on how to setup a Map without using the __Map Wizard__. The described approach is         applicable when using the __Visual Studio Report Designer__ 
 
 1. Open the Visual Studio toolbox and select the Map item from the *Telerik Reporting*  tab.                 
 
-1. Click on the design surface where you want the upper-left corner of the map.                     The map item is initialized on the selected design surface with default values for                    [IProjection](/reporting/api/Telerik.Reporting.IProjection)                    and  [ITileProvider](/reporting/api/Telerik.Reporting.ITileProvider) .                 
+1. Click on the design surface where you want the upper-left corner of the map.                     The map item is initialized on the selected design surface with default values for                    [IProjection](/reporting/api/Telerik.Reporting.IProjection)                    and  [ITileProvider](/reporting/api/Telerik.Reporting.ITileProvider).                 
 
 1. Set your Data Source to one of the available [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).                 
 
@@ -38,11 +38,19 @@ In case your data source can provide geographical coordinates to be used for the
 
 # See Also
 
- * [How to Add Map to Report]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-map-to-report%})
+ 
 
- * [How to Setup a Map Using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
+* [How to Add Map to Report]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-map-to-report%})
 
- * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+ 
 
- * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [How to Setup a Map Using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
+
+ 
+
+* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+
+ 
+
+* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

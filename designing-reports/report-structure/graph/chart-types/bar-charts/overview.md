@@ -20,11 +20,11 @@ The following image shows a typical bar chart. The bar chart is well suited for 
 
 ## Bar Chart Variations
 
-* __Clustered Bar Chart__ . A bar chart used to display series as sets of horizontal bars.
+* __Clustered Bar Chart__. A bar chart used to display series as sets of horizontal bars.
 
-* __Stacked Bar Chart__ . A bar chart where multiple series are stacked vertically.                   Stacked bar charts are used to compare contributions of values to a total across categories. If there is only                    one series in your chart, the stacked column chart will  display the same as a column chart.                   
+* __Stacked Bar Chart__. A bar chart where multiple series are stacked vertically.                   Stacked bar charts are used to compare contributions of values to a total across categories. If there is only                    one series in your chart, the stacked column chart will  display the same as a column chart.                   
 
-* __100% Stacked Bar Chart__ . A bar chart where multiple series are stacked vertically to fit 100%                   of the chart area. 100% Stacked Bar Charts are used when you have three or more data series and want to compare distributions                    within categories, and at the same time display the differences between categories. Each bar represents 100% of the amounts                    for that category. If there is only one series in your chart, all the bars will fit to 100% of the chart area.               
+* __100% Stacked Bar Chart__. A bar chart where multiple series are stacked vertically to fit 100%                   of the chart area. 100% Stacked Bar Charts are used when you have three or more data series and want to compare distributions                    within categories, and at the same time display the differences between categories. Each bar represents 100% of the amounts                    for that category. If there is only one series in your chart, all the bars will fit to 100% of the chart area.               
 
 ## Design Considerations for Bar Charts
 
@@ -40,5 +40,15 @@ The following image shows a typical bar chart. The bar chart is well suited for 
 
 # See Also
 
- * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  * [ArrangeMode](/reporting/api/Telerik.Reporting.GraphSeries2D#Telerik_Reporting_GraphSeries2D_ArrangeMode)  * [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)  * [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) 
+ 
+
+* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
+
+* [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  
+
+* [ArrangeMode](/reporting/api/Telerik.Reporting.GraphSeries2D#Telerik_Reporting_GraphSeries2D_ArrangeMode)  
+
+* [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)  
+
+* [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount)
 

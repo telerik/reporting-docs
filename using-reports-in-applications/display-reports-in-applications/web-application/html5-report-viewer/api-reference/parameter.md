@@ -28,6 +28,6 @@ position: 4
 | __name__ |string|specifies the name of the parameter editor|
 | __text__ |string|specifies the text for the parameter editor|
 | __type__ | __telerikReportViewer.ParameterTypes__ |specifies the type of the parameter|
-| __value__ |object|specifies the value of the paramete|
+| __value__ |object|specifies the value of the parameter|
 
 

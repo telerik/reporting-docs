@@ -20,11 +20,11 @@ Before using the database cache provider it is necessary to install the shared d
 
 -InstallDir-\Tools\DatabaseCacheConfigurator.exe
 
-where __InstallDir__  is the installation directory of __Telerik Reporting__ .         
+where __InstallDir__  is the installation directory of __Telerik Reporting__.         
 
   ![](images/SessionState/sessionmanagement3.png)
 
-Choose the desired target backend from the drop-down list and specify the connection string to the database being created in the text         block below. It is recommended that the database specified in the connection string is different from your production database. Click the         "Create schema" button to configure the database. The __Database Cache Configuration Tool__  can be used to create a new database         or reconfigure an existing one, if the database schema has changed from the previous release of __Telerik Reporting__ .       
+Choose the desired target backend from the drop-down list and specify the connection string to the database being created in the text         block below. It is recommended that the database specified in the connection string is different from your production database. Click the         "Create schema" button to configure the database. The __Database Cache Configuration Tool__  can be used to create a new database         or reconfigure an existing one, if the database schema has changed from the previous release of __Telerik Reporting__.       
 
 Two cache providers are available:
 
@@ -48,7 +48,7 @@ Two cache providers are available:
 
 Here the "ProviderName" parameter specifies the __ADO.NET__  provider, and the "ConnectionString" specifies the connection string to the database.           
 
-* __Telerik Data Access__  cache provider.             Add the requires reference to             *Telerik.OpenAccess.dll* ,             *Telerik.OpenAccess.35.Extensions.dll*  and             *Telerik.OpenAccess.Runtime.dll* .             It is necessary to configure the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first and then use the following XML snippet to             configure this provider in application’s configuration file:           
+* __Telerik Data Access__  cache provider.             Add the requires reference to             *Telerik.OpenAccess.dll*,             *Telerik.OpenAccess.35.Extensions.dll*  and             *Telerik.OpenAccess.Runtime.dll*.             It is necessary to configure the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first and then use the following XML snippet to             configure this provider in application’s configuration file:           
 
     
       ````xml
@@ -93,9 +93,15 @@ Here the "BackendName" parameter specifies the name of the chosen backend. Compl
 
 # See Also
 
- * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
+ 
 
- * [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
+* [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
 
- * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+ 
+
+* [Configuring the File Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider%})
+
+ 
+
+* [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
 

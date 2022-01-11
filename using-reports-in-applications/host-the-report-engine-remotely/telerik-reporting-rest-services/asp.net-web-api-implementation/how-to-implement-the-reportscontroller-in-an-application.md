@@ -48,7 +48,7 @@ public class ReportsController : ReportsControllerBase
         {
             HostAppId = "Application1",
             ReportSourceResolver = new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))
-                .AddFallbackResolver(new TypeReportSourceResolver()),
+             .AddFallbackResolver(new TypeReportSourceResolver()),
             Storage = new Telerik.Reporting.Cache.File.FileStorage(),
         };
 
@@ -88,7 +88,7 @@ Public Class ReportsController
     Shared Sub New()
 
         Dim resolver = New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports")) _
-                       .AddFallbackResolver(New TypeReportSourceResolver())
+                    .AddFallbackResolver(New TypeReportSourceResolver())
 
         Dim reportServiceConfiguration As New ReportServiceConfiguration()
         reportServiceConfiguration.HostAppId = "Application1"
@@ -117,7 +117,7 @@ Public Class ReportsController
     End Function
 ````
 
- [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  inherits                    [System.Web.Http.ApiController](http://msdn.microsoft.com/en-us/library/system.web.http.apicontroller.aspx)                    and implements all necessary API actions.                 The provided sample implementation will resolve .trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root.                   Other option is to reference a reports library and provide report                    [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)                    from the service clients.                 
+ [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  inherits                    [System.Web.Http.ApiController](http://msdn.microsoft.com/en-us/library/system.web.http.apicontroller.aspx)                    and implements all necessary API actions.                 The provided sample implementation will resolve.trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root.                   Other option is to reference a reports library and provide report                    [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)                    from the service clients.                 
 
    >Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.                   
 

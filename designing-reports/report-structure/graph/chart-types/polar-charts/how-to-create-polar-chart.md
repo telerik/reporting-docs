@@ -18,7 +18,7 @@ In this article we will show you how to create a Polar chart using the Graph ite
 
 1. Add a new graph item to the report.
 
-   1. Set the __DataSource__  property to a new                   __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ .                 
+   1. Set the __DataSource__  property to a new                   __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.                 
 
    1. Set the connection string to the demo AdventureWorks database.
 
@@ -52,23 +52,23 @@ INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.Product
 
    1. Set the __Name__  to *categoryGroup1* 
 
-1. Open __CoordinateSystems__  collection editor and __Add__  a new __PolarCoordinateSystem__ .             
+1. Open __CoordinateSystems__  collection editor and __Add__  a new __PolarCoordinateSystem__.             
 
-   1. Leave the __Name__  to *polarCoordinateSystem1* .                 
+   1. Leave the __Name__  to *polarCoordinateSystem1*.                 
 
-   1. Set the __RadialAxis__  to __New Axis Logarithmic Scale__ .                 
+   1. Set the __RadialAxis__  to __New Axis Logarithmic Scale__.                 
 
-   1. Set the __AngularAxis__  to __New Axis with Category Scale__ .                 
+   1. Set the __AngularAxis__  to __New Axis with Category Scale__.                 
 
-1. Open __Series__  collection editor and __Add__  new __BarSeries__ .             
+1. Open __Series__  collection editor and __Add__  new __BarSeries__.             
 
-   1. Set the __CategoryGroup__  to __categoryGroup1__ .                 
+   1. Set the __CategoryGroup__  to __categoryGroup1__.                 
 
-   1. Set the __SeriesGroup__  to __seriesGroup1__ .                 
+   1. Set the __SeriesGroup__  to __seriesGroup1__.                 
 
-   1. Set the __CoordinateSystem__  to __polarCoordinateSystem1__ .                 
+   1. Set the __CoordinateSystem__  to __polarCoordinateSystem1__.                 
 
-   1. Set the __ArrangeMode__  to __Clustered__ .                 
+   1. Set the __ArrangeMode__  to __Clustered__.                 
 
    1. Set the __Y__  value to *=IsNull(Sum(Fields.LineTotal), 0) / 1000.0* 
 

@@ -18,7 +18,11 @@ Details about the Map item's elements can be found in the [Map Overview]({%slug 
 
 # See Also
 
- * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+ 
 
- * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+
+ 
+
+* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

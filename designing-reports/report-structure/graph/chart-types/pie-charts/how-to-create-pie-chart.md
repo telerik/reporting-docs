@@ -18,7 +18,7 @@ In this article we will show you how to create a Pie chart using the Graph item.
 
 1. Add a new graph item to the report.
 
-   1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ .                 
+   1. Set the __DataSource__  property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.                 
 
    1. Set the connection string to the demo AdventureWorks database.
 
@@ -48,27 +48,27 @@ INNER JOIN Sales.Store AS S ON CU.CustomerID = S.CustomerID
 
    1. Set the __Name__  to *categoryGroup1* 
 
-1. Open                __CoordinateSystems__  collection editor and __Add__  a new __PolarCoordinateSystem__ .             
+1. Open                __CoordinateSystems__  collection editor and __Add__  a new __PolarCoordinateSystem__.             
 
-   1. Leave the __Name__  to *polarCoordinateSystem1* .                 
+   1. Leave the __Name__  to *polarCoordinateSystem1*.                 
 
-   1. Set the __RadialAxis__  to __New Axis with Category Scale__ .                 
+   1. Set the __RadialAxis__  to __New Axis with Category Scale__.                 
 
    1. Expand RadialAxis node.Expand Scale node.Set SpacingSlotCount to 0.Expand the axis Style node.Set Visible to False.
 
-   1. Set the __AngularAxis__  to __New Axis with Numerical Scale__ .                 
+   1. Set the __AngularAxis__  to __New Axis with Numerical Scale__.                 
 
    1. Expand AngularAxis node.Expand the axis Style node.Set Visible to False.
 
-1. Open __Series__  collection editor and __Add__  new __BarSeries__ .             
+1. Open __Series__  collection editor and __Add__  new __BarSeries__.             
 
-   1. Set the __CategoryGroup__  to __categoryGroup1__ .                 
+   1. Set the __CategoryGroup__  to __categoryGroup1__.                 
 
-   1. Set the __SeriesGroup__  to __seriesGroup1__ .                 
+   1. Set the __SeriesGroup__  to __seriesGroup1__.                 
 
-   1. Set the __CoordinateSystem__  to __polarCoordinateSystem1__ .                 
+   1. Set the __CoordinateSystem__  to __polarCoordinateSystem1__.                 
 
-   1. Set the __ArrangeMode__  to __Stacked100__ .                 
+   1. Set the __ArrangeMode__  to __Stacked100__.                 
 
    1. Set the __X__  value to *=Sum(Fields.SubTotal)* 
 

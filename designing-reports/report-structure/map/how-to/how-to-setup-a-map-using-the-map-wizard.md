@@ -55,7 +55,7 @@ AND PC.Name = 'Bikes'
 
    + You can click on __Execute Query...__  just to check if everything is OK with the database connection.                   Click __Finish__  when you are ready.                 
 
-1. In the *Available data sources*  list you should see the datasource you've already created.               Select it and click __Next__ .             
+1. In the *Available data sources*  list you should see the datasource you've already created.               Select it and click __Next__.             
 
 1. In the next page you have to select the fields which will be used to build the map charts.             
 
@@ -72,21 +72,27 @@ AND PC.Name = 'Bikes'
 
   ![Arrange Map Fields](images/Map/ArrangeMapFields.png)    Once the mandatory fields are set up, the __Next__  button will get enabled and you can go to the next page.             
 
-1. On the __Choose a location provider__  page you have to select the location provider that will be used to geocode               the __State__  field that was dragged in the *Categories (location)*  box on the previous page.               Currently the supported providers are                [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)                ,                [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)                and                [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider) .               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token*  box, as shown below:               
+1. On the __Choose a location provider__  page you have to select the location provider that will be used to geocode               the __State__  field that was dragged in the *Categories (location)*  box on the previous page.               Currently the supported providers are                [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)             ,                [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)                and                [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token*  box, as shown below:               
 
   ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
 
-1. When you click __Finish__ , the Wizard will create the definition of the Map item, show it in the designer               and will start to request the geocode and tiles information from the providers asynchronously. Initially it will take a few seconds to fetch               all the data from the geocoding service, but the following requests should be executed faster. The tiles, needed to prepare the map background,               will be displayed as they arrive, but the map will stay responsive and you can examine and change its definition.               When finished, your map should look like this:               
+1. When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer               and will start to request the geocode and tiles information from the providers asynchronously. Initially it will take a few seconds to fetch               all the data from the geocoding service, but the following requests should be executed faster. The tiles, needed to prepare the map background,               will be displayed as they arrive, but the map will stay responsive and you can examine and change its definition.               When finished, your map should look like this:               
 
   ![Map Pie Chart Done](images/Map/MapPieChart_Done.png)
 
-In this example we demonstrated how to setup a Map item from scratch, how to add PieChart series to it and how to initialize and           use the __Location Provider__ . All the described steps are valid for both           [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})           and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and           can be reproduced with code as well.         
+In this example we demonstrated how to setup a Map item from scratch, how to add PieChart series to it and how to initialize and           use the __Location Provider__. All the described steps are valid for both           [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})           and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and           can be reproduced with code as well.         
 
 # See Also
 
- * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+ 
 
- * [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 
- * [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})
+ 
+
+* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+
+ 
+
+* [Location Providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%})
 

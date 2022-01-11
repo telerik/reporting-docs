@@ -16,9 +16,9 @@ HTML5-based report viewers provides the capability to search in report contents.
 
 ## Controlling Search Behavior
 
-The behavior of the search dialog depends on the __searchMetadataOnDemand__  property.           Its default value is __false__ , which means that by default the processing engine will include search metadata in the rendering result of every           report processing. As a result, the search dialog will be able to perform a search in report contents immediately.           This metadata is stored in the memory, so for a very huge reports it could cause a performance drawback.         
+The behavior of the search dialog depends on the __searchMetadataOnDemand__  property.           Its default value is __false__, which means that by default the processing engine will include search metadata in the rendering result of every           report processing. As a result, the search dialog will be able to perform a search in report contents immediately.           This metadata is stored in the memory, so for a very huge reports it could cause a performance drawback.         
 
-If the __searchMetadataOnDemand__  property is set to           __true__ , the processing engine will not include the search metadata in the rendering result set. This metadata will be fetched "on demand",           which will occur when the search dialog is shown. In this case the currently loaded in the viewer report will be processed once again to obtain the metadata and pass it           to the search dialog.         
+If the __searchMetadataOnDemand__  property is set to           __true__, the processing engine will not include the search metadata in the rendering result set. This metadata will be fetched "on demand",           which will occur when the search dialog is shown. In this case the currently loaded in the viewer report will be processed once again to obtain the metadata and pass it           to the search dialog.         
 
 ## Search dialog  
 

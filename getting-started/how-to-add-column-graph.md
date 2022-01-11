@@ -16,7 +16,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 1. Click on the Report Header section and then go to __Insert__  > __Bar__  > __Clustered Bar__                to add the new graph next to the pie chart.             
 
-1. From __Graph Wizard__ , use the __graphDataSource__ , then drag __StoreName__  to __Categories__ ,               __OrderDate__  to __Series__ , and __Sum(LineTotal)__  to __Values__ .             
+1. From __Graph Wizard__, use the __graphDataSource__, then drag __StoreName__  to __Categories__,               __OrderDate__  to __Series__, and __Sum(LineTotal)__  to __Values__.             
 
 1. Sort and filter the series groups and the category groups. You can also set specific colors through the __Color palette__  option.             Set the series groups in the folowing way:             
 
@@ -36,7 +36,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 ## Previewing the Result
 
-Preview the result by clicking __Preview__  > __PrintPreview__ .           
+Preview the result by clicking __Preview__  > __PrintPreview__.           
 
   ![FinalGS](images/FinalGS.PNG)
 
@@ -54,13 +54,13 @@ Preview the result by clicking __Preview__  > __PrintPreview__ .
 
 * [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
 
-* [Integrating the Report in .NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
+* [Integrating the Report in.NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
 
 * [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
 
 ## Demo project
 
-You can find the full project in our  [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/FirstStepsProject) .         
+You can find the full project in our  [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/FirstStepsProject).         
 
 ## See Also
 

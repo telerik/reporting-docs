@@ -47,6 +47,8 @@ You can connect to a SQL database using the Telerik __SqlDataSource__  component
      At the end, click __Test connection__ to verify that your connection works. Click __OK__. You should see the connection string's attributes written in the __Connection string__ text-box.                 
 
      >Not all connection strings can be built with the __Connection Properties__ dialog, and in such cases the __Build...__ button remains disbled. The connection string will have to be typed manually.                   
+   
+   
    For our tutorial we will connect to AdventureWorks database installed on MSSQL server instance:
 	
    1. Select __Build new data connection__.                 
@@ -67,30 +69,34 @@ You can connect to a SQL database using the Telerik __SqlDataSource__  component
 
    1. Click the __OK__ button, and in the __Connection string__ text-box you should see a string like *Data Source=(local)\sqlexpress;Initial Catalog=AdventureWorks;Integrated Security=True* or *Data Source=(local)\sqlexpress;Initial Catalog=AdventureWorks;User ID=admin;Password=admin123* 
 
-1. Click __Next__ to continue to the __Data Connection Options__  dialog. Where you can:     
+1. Click __Next__ to continue to the __Data Connection Options__ dialog. Where you can:     
         
    + Select __Use a shared connection__, which option saves the connection string by the name typed in the __Alias__ box, in the current project's CONFIG file, under the __connectionStrings element__. 
      
 	 This will let you reuse the connection string for other SqlDataSource components. The Reporting Engine uses a [ConfigurationManager(msdn)](https://msdn.microsoft.com/en-us/library/system.configuration.configurationmanager(v=vs.110).aspx) to search connection strings by name in the current project's configuration file.                 
 
-   + Select __Embed in the report definition__, which option saves the connection string the way it is written in the __Connection string__ text-box as __SqlDataSource.ConnectionString property__.                 
+   + Select __Embed in the report definition__, which option saves the connection string the way it is written in the __Connection string__ text-box as __SqlDataSource.ConnectionString property__.   
+   
    For the purpose of this tutorial, we will use the __Use a shared connection__ option. Type __AdventureWorksConnection__ as *Alias*.  
    
    Click __Next__.             
 
 1. Follows the __Configure data source command__ dialog.       
       
-   + __Select Statement:__ Use this option to type a standard SQL query. You can use the __Query Builder__  button to design the SQL query through the available UI.  
+   + __Select Statement:__ Use this option to type a standard SQL query. You can use the __Query Builder__ button to design the SQL query through the available UI.  
    
      The Visual Studio Report Designer uses the IDE's Query Builder, where the Standalone Report Designer uses its own implementation of a [Query Builder]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}).                 
 
    + __Stored Procedure:__ Use this option to select a stored procedure existing in the connected SQL database. If the stored procedure is not discovered, you can type its name manually e.g. *dbo.GetNotes*.     
    
-   In this tutorial we will use the __Select Statement__ option. Type the following SQL query: SELECT * FROM [HumanResources].[Department] WHERE [HumanResources].[Department].[DepartmentID]=@ID
+   In this tutorial we will use the __Select Statement__ option. Type the following SQL query:  
+   
+   SELECT * FROM [HumanResources].[Department] WHERE [HumanResources].[Department].[DepartmentID]=@ID
 
    >If the SQL query returns more than one set of data, only the first result will be used.Test running the SQL query on the SQL server database to verify the syntax.
 
 1. If the entered SQL query contains SQL parameters, recognizable by the.NET data provider, clicking the Next button will navigate you to the __Configure data source parameters__ step. You should see listed the recognized SQL parameters and their DbType in a grid. In the Value column you can specify static value, report parameter, field, or other expression which once evaluated will be passed to the SQL query.  
+
    In this tutorial we use a parameterized SQL query and you should see the __Configure data source parameters__ window of the wizard. There must be one row in the grid:    
    
    + __Name__ showing the SQL parameter's name, written in TSQL: __@ID__;                 
@@ -109,7 +115,6 @@ You can connect to a SQL database using the Telerik __SqlDataSource__  component
 
 # See Also
  
-
 * [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})
 
 * [Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})

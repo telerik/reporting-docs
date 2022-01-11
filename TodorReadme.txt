@@ -21,90 +21,7 @@ how to use tokens in code snippets (CDATA)
 
 images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	https://testdocs.telerik.com/reporting/designing-reports/report-structure/graph/chart-types/overview
 used only in 1 file - do it manually:
-https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/55523035
-
-
-
-Branch Development\MdDocs
-Once the converter generates the mapping between SandCastle article ID and the new MD article address, the tool should update the corresponding IDs in the API Reference of our code files
-OR
-replace them manually - 40 in 24 files. Search by "<conceptualLink target"
-Example that worked locally, from Telerik.Reporting.xml after build:
-"
-<member name="P:Telerik.Reporting.CheckBox.Text">
-    <summary>
-    Gets or sets the current text (aka label) in the check box.
-    </summary>
-    <value>
-    A <see cref="T:System.String"/> started with "=" is interpreted as
-    an expression to calculate the real data,
-    otherwise - literal string. 
-    
-	Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.  -------------- OLD
-	
-	Supports <a href="../designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions">embedded expressions</a> also. ----------- NEW - WORKS
-	
-    </value>
-</member>
-"
-Implement this change for all occurrencies above:
-
-DONE - 27 * 	"e7d7b24c-decd-45c2-91b4-0f2b9e28271c"					>	embedded expressions						>	https://testdocs.telerik.com/reporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions
-
-DONE - 1  *	"2DCC7E20-E4CA-497D-B4C1-841CC2E9D19E#text-orientation"	>	Text Box - Text Orientation					>	https://testdocs.telerik.com/reporting/designing-reports/report-structure/textbox## Text Orientation
-
-DONE - 7  *	"935C2C81-69FB-4EE7-B104-C317A615D294"					>	Rendering Extensions						>	https://testdocs.telerik.com/reporting/using-reports-in-applications/export-and-configure/export-formats
-
-DONE - 2  *	"5f8e6a6f-1160-4d59-9554-fe3a14e2a286"					>	Configuring the Database Cache Provider		>	https://testdocs.telerik.com/reporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider
-
-DONE - 3  *	"7B7459C1-F91D-4220-BC72-68804CD6B554"					>	Device Information Settings					>	https://testdocs.telerik.com/reporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview
-
-the occurrencies are:
-Code	File	Line	Column
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\CheckBox.cs	27	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\DataItem.cs	145	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Drawing\TextWatermark.cs	23	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\Axis\GraphAxis.cs	389	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphGroup.cs	56	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphLegend.cs	33	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphSeriesBase.cs	34	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphSeriesBase.cs	138	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphSeriesBase.cs	253	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphTitle.cs	24	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also. 	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Group.cs	151	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Group.cs	176	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Group.cs	195	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\IDesignTimeInterfaces.cs	30	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Map\Groups\GeoLocationMapGroup.cs	26	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Map\MapLegend.cs	22	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Map\MapTitle.cs	19	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportItemBase.cs	446	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportItemBase.cs	488	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportItemBase.cs	524	22
-        /// <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expression</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportParameterAvailableValues.cs	32	13
-        /// <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expression</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportParameterAvailableValues.cs	53	13
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also. 	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Table\TableGroup.cs	124	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Table\TableGroup.cs	149	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Table\TableGroup.cs	168	22
-        /// More info on the Angle property behavior can be found at <conceptualLink target="2DCC7E20-E4CA-497D-B4C1-841CC2E9D19E#text-orientation">Text Box - Text Orientation</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\TextItemBase.cs	23	70
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ToolTip.cs	45	22
-        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ToolTip.cs	76	22
-        /// See <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Processing.ReportProcessor\ReportProcessor.RenderReport.cs	78	17
-        /// See <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Processing.ReportProcessor\ReportProcessor.RenderReport.cs	94	17
-        /// See <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Processing.ReportProcessor\ReportProcessor.RenderReport.cs	117	17
-        /// See <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Processing.ReportProcessor\ReportProcessor.RenderReport.cs	138	17
-        /// See also: <conceptualLink target="5f8e6a6f-1160-4d59-9554-fe3a14e2a286">Configuring the Database Cache Provider</conceptualLink></remarks>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Services.Engine\CacheFactory.cs	41	23
-        /// <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.AspNetCore\CreateDocumentArgs.cs	16	13
-        /// <conceptualLink target="7B7459C1-F91D-4220-BC72-68804CD6B554">Device Information Settings</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.AspNetCore\CreateDocumentArgs.cs	26	13
-        /// <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.ServiceStack\DocumentsService.cs	41	13
-        /// <conceptualLink target="7B7459C1-F91D-4220-BC72-68804CD6B554">Device Information Settings</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.ServiceStack\DocumentsService.cs	50	13
-        /// See also:. <conceptualLink target="5f8e6a6f-1160-4d59-9554-fe3a14e2a286">Configuring the Database Cache Provider</conceptualLink></remarks>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.WebApi\CacheFactory.cs	48	24
-        /// <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.WebApi\CreateDocumentArgs.cs	15	13
-        /// <conceptualLink target="7B7459C1-F91D-4220-BC72-68804CD6B554">Device Information Settings</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.WebApi\CreateDocumentArgs.cs	24	13
-
-
-
-
+https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/55523035 - doesn't work
 
 
 
@@ -447,3 +364,82 @@ Merge TOC of documentation and API reference - D:\Work\reporting-docs\_assetsApi
 
 meta data is not displayed in the API Reference
 fixed by adding the XMLs along with the DLLs
+
+
+Branch Development\MdDocs
+Once the converter generates the mapping between SandCastle article ID and the new MD article address, the tool should update the corresponding IDs in the API Reference of our code files
+OR
+replace them manually - 40 in 24 files. Search by "<conceptualLink target"
+Example that worked locally, from Telerik.Reporting.xml after build:
+"
+<member name="P:Telerik.Reporting.CheckBox.Text">
+    <summary>
+    Gets or sets the current text (aka label) in the check box.
+    </summary>
+    <value>
+    A <see cref="T:System.String"/> started with "=" is interpreted as
+    an expression to calculate the real data,
+    otherwise - literal string. 
+    
+	Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.  -------------- OLD
+	
+	Supports <a href="../designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions">embedded expressions</a> also. ----------- NEW - WORKS
+	
+    </value>
+</member>
+"
+Implement this change for all occurrencies above:
+
+DONE - 27 * 	"e7d7b24c-decd-45c2-91b4-0f2b9e28271c"					>	embedded expressions						>	https://testdocs.telerik.com/reporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions
+
+DONE - 1  *	"2DCC7E20-E4CA-497D-B4C1-841CC2E9D19E#text-orientation"	>	Text Box - Text Orientation					>	https://testdocs.telerik.com/reporting/designing-reports/report-structure/textbox## Text Orientation
+
+DONE - 7  *	"935C2C81-69FB-4EE7-B104-C317A615D294"					>	Rendering Extensions						>	https://testdocs.telerik.com/reporting/using-reports-in-applications/export-and-configure/export-formats
+
+DONE - 2  *	"5f8e6a6f-1160-4d59-9554-fe3a14e2a286"					>	Configuring the Database Cache Provider		>	https://testdocs.telerik.com/reporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider
+
+DONE - 3  *	"7B7459C1-F91D-4220-BC72-68804CD6B554"					>	Device Information Settings					>	https://testdocs.telerik.com/reporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview
+
+the occurrencies are:
+Code	File	Line	Column
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\CheckBox.cs	27	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\DataItem.cs	145	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Drawing\TextWatermark.cs	23	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\Axis\GraphAxis.cs	389	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphGroup.cs	56	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphLegend.cs	33	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphSeriesBase.cs	34	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphSeriesBase.cs	138	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphSeriesBase.cs	253	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Graph\GraphTitle.cs	24	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also. 	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Group.cs	151	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Group.cs	176	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Group.cs	195	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\IDesignTimeInterfaces.cs	30	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Map\Groups\GeoLocationMapGroup.cs	26	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Map\MapLegend.cs	22	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Map\MapTitle.cs	19	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportItemBase.cs	446	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportItemBase.cs	488	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportItemBase.cs	524	22
+        /// <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expression</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportParameterAvailableValues.cs	32	13
+        /// <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expression</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ReportParameterAvailableValues.cs	53	13
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also. 	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Table\TableGroup.cs	124	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Table\TableGroup.cs	149	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\Table\TableGroup.cs	168	22
+        /// More info on the Angle property behavior can be found at <conceptualLink target="2DCC7E20-E4CA-497D-B4C1-841CC2E9D19E#text-orientation">Text Box - Text Orientation</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\TextItemBase.cs	23	70
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ToolTip.cs	45	22
+        /// Supports <conceptualLink target="e7d7b24c-decd-45c2-91b4-0f2b9e28271c">embedded expressions</conceptualLink> also.	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Model\ToolTip.cs	76	22
+        /// See <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Processing.ReportProcessor\ReportProcessor.RenderReport.cs	78	17
+        /// See <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Processing.ReportProcessor\ReportProcessor.RenderReport.cs	94	17
+        /// See <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Processing.ReportProcessor\ReportProcessor.RenderReport.cs	117	17
+        /// See <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Processing.ReportProcessor\ReportProcessor.RenderReport.cs	138	17
+        /// See also: <conceptualLink target="5f8e6a6f-1160-4d59-9554-fe3a14e2a286">Configuring the Database Cache Provider</conceptualLink></remarks>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting\Services.Engine\CacheFactory.cs	41	23
+        /// <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.AspNetCore\CreateDocumentArgs.cs	16	13
+        /// <conceptualLink target="7B7459C1-F91D-4220-BC72-68804CD6B554">Device Information Settings</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.AspNetCore\CreateDocumentArgs.cs	26	13
+        /// <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.ServiceStack\DocumentsService.cs	41	13
+        /// <conceptualLink target="7B7459C1-F91D-4220-BC72-68804CD6B554">Device Information Settings</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.ServiceStack\DocumentsService.cs	50	13
+        /// See also:. <conceptualLink target="5f8e6a6f-1160-4d59-9554-fe3a14e2a286">Configuring the Database Cache Provider</conceptualLink></remarks>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.WebApi\CacheFactory.cs	48	24
+        /// <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.WebApi\CreateDocumentArgs.cs	15	13
+        /// <conceptualLink target="7B7459C1-F91D-4220-BC72-68804CD6B554">Device Information Settings</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.WebApi\CreateDocumentArgs.cs	24	13
+

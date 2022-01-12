@@ -16,13 +16,13 @@ position: 6
 
 ## Accessing the client-side report viewer object
 
-The __ReportViewer__  control creates a client-side object with the __ClientID__  of the viewer. You can obtain reference to it by using the following JavaScript code:
+The __ReportViewer__ control creates a client-side object with the __ClientID__ of the viewer. You can obtain reference to it by using the following JavaScript code:
 
 *var viewer = ```<%=ReportViewer1.ClientID%>```* 
 
 ## Client API
 
-|  __Member__  |  __Parameters__  |  __Description__  |
+|  __Member__ |  __Parameters__ |  __Description__ |
 | ------ | ------ | ------ |
 |PrintReport()|N/A|Starts printing of the document. Uses the Adobe PDF Reader browser plug-in if available. Otherwise it exports the report to PDF.|
 |set_CurrentPage(pageNumber)| __pageNumber:__ number of the page(starts from 1).|Specifies the number of the page which has to be displayed in the viewer.|

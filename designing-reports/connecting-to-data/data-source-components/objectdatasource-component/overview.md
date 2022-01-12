@@ -22,25 +22,25 @@ Any of the following data sources can be assigned to the DataSource property of 
 
 * Any component that implements __[IListSource](http://msdn.microsoft.com/en-us/library/system.componentmodel.ilistsource.aspx)__,               including __[DataTable](http://msdn.microsoft.com/en-us/library/system.data.datatable(VS.80).aspx)__,               __[DataSet](http://msdn.microsoft.com/en-us/library/system.data.dataset.aspx)__ and DataView             
 
-* Any component that implements __[IDbDataAdapter](http://msdn.microsoft.com/en-us/library/system.data.idbdataadapter.aspx)__,               including __SqlDataAdapter__  and __OleDbDataAdapter__ 
+* Any component that implements __[IDbDataAdapter](http://msdn.microsoft.com/en-us/library/system.data.idbdataadapter.aspx)__,               including __SqlDataAdapter__ and __OleDbDataAdapter__ 
 
 * System.Type which represents the type of the business object             
 
 ## Requirements for the DataSource
 
-* If the __DataSource__  reference contains more than one table, you must set           the __DataMember__  property to a string that specifies the table to bind to.         For example, if the DataSource is a DataSet or DataViewManager that contains three           tables named __Customers__, __Orders__, and __OrderDetails__, you need to specify the table to           bind to.         
+* If the __DataSource__ reference contains more than one table, you must set           the __DataMember__ property to a string that specifies the table to bind to.         For example, if the DataSource is a DataSet or DataViewManager that contains three           tables named __Customers__, __Orders__, and __OrderDetails__, you need to specify the table to           bind to.         
 
-* If the name of the __DataMember__  (i.e. the table to bind to) is not specified, __the first Table of the DataSet__  will be bound to the __DataSource__.         
+* If the name of the __DataMember__ (i.e. the table to bind to) is not specified, __the first Table of the DataSet__ will be bound to the __DataSource__.         
 
-* If the __DataSource__  references a strongly typed array of objects           (business objects) these objects must contain public properties.         
+* If the __DataSource__ references a strongly typed array of objects           (business objects) these objects must contain public properties.         
 
-* If the __DataSource__  is a business object,           the __DataMember__  property           specifies the name of the method which should be invoked to retrieve the data.         
+* If the __DataSource__ is a business object,           the __DataMember__ property           specifies the name of the method which should be invoked to retrieve the data.         
 
-* If the __DataMember__  property is not specified, the constructor of the type will be invoked.             
+* If the __DataMember__ property is not specified, the constructor of the type will be invoked.             
 
-* If the constructor or the method contains arguments they can be specified through the __Parameters__  collection of the __ObjectDataSource__  component.         
+* If the constructor or the method contains arguments they can be specified through the __Parameters__ collection of the __ObjectDataSource__ component.         
 
-* You can also bind to an __ArrayList__. A feature of the __ArrayList__  is that it           can contain objects of multiple types. The __ObjectDataSource__  component binds to           such a list despite the types of items in it. The only requirement is that they           provide public properties with the same names as they are used in the           expressions.         
+* You can also bind to an __ArrayList__. A feature of the __ArrayList__ is that it           can contain objects of multiple types. The __ObjectDataSource__ component binds to           such a list despite the types of items in it. The only requirement is that they           provide public properties with the same names as they are used in the           expressions.         
 
 * Already instantiated data objects do not have to be wrapped in a data source component.           Instantiated data objects can be set directly to data items' DataSource properties.         
 

@@ -12,7 +12,7 @@ position: 3
 
 
 
-To create a report item in code, instantiate a report item object, set its properties, and add it to the Items collection of the section where you wish the control to appear. For example, this code will add two __TextBox__  report items to a report:
+To create a report item in code, instantiate a report item object, set its properties, and add it to the Items collection of the section where you wish the control to appear. For example, this code will add two __TextBox__ report items to a report:
 
     
 ````C#

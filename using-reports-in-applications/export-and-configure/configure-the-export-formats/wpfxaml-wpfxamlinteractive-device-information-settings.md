@@ -18,7 +18,7 @@ This rendering extension is used by the WPF Report Viewer and by default is not 
 
 ## WPFXAML/WPFXAMLInteractive Device Information Settings
 
-|  __Name__  |  __Type__  |  __Description__  |
+|  __Name__ |  __Type__ |  __Description__ |
 | ------ | ------ | ------ |
 |StartPage|Integer|The first page of the report to render. A value of __0__ indicates that all pages are rendered.|
 |EndPage|Integer|The last page of the report to render.|

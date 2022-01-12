@@ -47,7 +47,7 @@ The following list describes each area:
             expressions that do not include an aggregate function, evaluate to the first value in the group. In the figure, the cells display the
             aggregate totals and grand totals for line totals for all sales order.
 
-When the report runs, column groups expand to the right for as many columns as there are unique values for a group expression. Row           groups expand down the page. For more information see [             Understanding             table cells, rows and columns           ]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%}).         
+When the report runs, column groups expand to the right for as many columns as there are unique values for a group expression. Row           groups expand down the page. For more information see [          Understanding             table cells, rows and columns        ]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%}).         
 
 The following figure shows the CrossTab in Preview.
 

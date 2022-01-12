@@ -18,7 +18,7 @@ The [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/d
 
 To show a report created with the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you have the following options:         
 
-* __Use [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)__  and a path to the TRDX|TRDP file:             
+* __Use [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)__ and a path to the TRDX|TRDP file:             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
   ````C#
@@ -42,7 +42,7 @@ uriReportSource.Uri = "SampleReport.trdp"
 uriReportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
 ````
 
-* __Use [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)__  and read the plain XML of a TRDX file:             
+* __Use [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)__ and read the plain XML of a TRDX file:             
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateXmlReportSourceSnippet}}
   ````C#

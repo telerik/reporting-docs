@@ -12,13 +12,13 @@ position: 2
 
 
 
-Telerik Reporting supplies __report item__  components that are placed in the report designer to build report            content: 
+Telerik Reporting supplies __report item__ components that are placed in the report designer to build report            content: 
 
 | Report item | Description |
 | ------ | ------ |
 | [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})|The TextBox displays text in the report, can be styled to a specific visual appearance, <br/>      can be configured to grow/shrink, formatted for specific data types (e.g. date time) and can be multi-line.|
 | [HtmlTextBox]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%})|The HtmlTextBox item allows developers to insert HTML-formatted text into a report. You can specify the HTML <br/>       value at design time (either through a WYSIWYG editor or through an expression editor), or retrieve it from a data <br/>       source using expression that evaluates to correctly formatted HTML.|
-| [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%})|The PictureBox allows you to place images in the report. It supports only image formats supported by GDI+ <br/>       ( __BMP__, __GIF__, __JPEG__, __EXIF__, __PNG__ and __TIFF__ ).|
+| [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%})|The PictureBox allows you to place images in the report. It supports only image formats supported by GDI+ <br/>       (__BMP__, __GIF__, __JPEG__, __EXIF__, __PNG__ and __TIFF__).|
 | [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%})|The Panel report item is used as a container for other items, usually to group/separate multiple report <br/>       items by some criteria.|
 | [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%})|The SubReport report item lets you display one report within another report. This allows you to compose <br/>       complex reports from disparate report sources.|
 | [Table]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})|The Table items is used to display fields from a dataset either as detail data or as grouped data in a <br/>       grid or free-form layout. Telerik Reporting provides three items that can be used as templates and you can add <br/>       them directly from the Toolbox: __Table__, __Crosstab__, and __List__.|
@@ -31,17 +31,17 @@ Telerik Reporting supplies __report item__  components that are placed in the 
 
 ### Report Definition
 
-The Report Definition item is created during the first stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}). This is the actual.NET class that represents the report. It is always a subclass __Telerik.Reporting.Report__  and contains information about report items and their properties. Report items are represented by the private fields of the report class.
+The Report Definition item is created during the first stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}). This is the actual.NET class that represents the report. It is always a subclass __Telerik.Reporting.Report__ and contains information about report items and their properties. Report items are represented by the private fields of the report class.
 
 Let’s illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code will be generated within the InitalizeComponent method of the report class.
 
-> The  __InitializeComponent__  method initializes (creates) a Report and its child items.It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
+> The  __InitializeComponent__ method initializes (creates) a Report and its child items.It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
 
 This object will later serve as the definition for creating a concrete instance of the TextBox for each row form the data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example Telerik.Reporting.TextBox.
 
 ### Report Processing
 
-The second stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}) involves combining the __report definition__  with the __data source__. The processing engine performs all grouping, sorting and filtering calculations and iterates over all rows from the data source and creates the appropriate __processing items__  based on the item definitions created earlier and the actual data. Based on the original item definition (Telerik.Reporting.TextBox for example) and the actual data in the current data row a new item is created. This item is known as a __processing item__  (Telerik.Reporting.Processing.TextBox for example) and bears all characteristics of its definition item, but it is bound to the respective data field from the current data row. While the definition TextBox’s Value property may contain something like “=Fields.FirstName”, the processing item’s Value property will be equal to “John”.
+The second stage of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}) involves combining the __report definition__ with the __data source__. The processing engine performs all grouping, sorting and filtering calculations and iterates over all rows from the data source and creates the appropriate __processing items__ based on the item definitions created earlier and the actual data. Based on the original item definition (Telerik.Reporting.TextBox for example) and the actual data in the current data row a new item is created. This item is known as a __processing item__ (Telerik.Reporting.Processing.TextBox for example) and bears all characteristics of its definition item, but it is bound to the respective data field from the current data row. While the definition TextBox’s Value property may contain something like “=Fields.FirstName”, the processing item’s Value property will be equal to “John”.
 
-The Processing Engine provides the developer with a way to intervene in this process. Just before the processing item is bound to data, the __ItemDataBinding__  event of its definition item is raised. After the processing item has been data bound the __ItemDataBound__  event is raised. By subscribing a listener for those events, the developer can modify the default behavior at run-time. The *sender*  parameter of the event handler methods is in fact the __processing report item__.
+The Processing Engine provides the developer with a way to intervene in this process. Just before the processing item is bound to data, the __ItemDataBinding__ event of its definition item is raised. After the processing item has been data bound the __ItemDataBound__ event is raised. By subscribing a listener for those events, the developer can modify the default behavior at run-time. The *sender*  parameter of the event handler methods is in fact the __processing report item__.
 

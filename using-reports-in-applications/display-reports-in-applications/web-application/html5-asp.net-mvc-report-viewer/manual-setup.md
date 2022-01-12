@@ -20,9 +20,9 @@ This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in ASP.
 
 * A running application that hosts a Reporting REST service at address /api/reports. For more information, see               [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).             
 
-* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__                in the folder used by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)                in the Reporting REST service implementation.             
+* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__             in the folder used by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)                in the Reporting REST service implementation.             
 
-* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__  file               of the project hosting the Reporting REST service:             
+* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file               of the project hosting the Reporting REST service:             
 
     
       ````xml
@@ -69,7 +69,7 @@ The following steps produce a view with settings similar to these of the local M
 
     The viewport META tag is used to control layout on mobile browsers.    
 
-1. The default viewer implementation depends externally on __jQuery__.                   Create a section named __scripts__  and add link to jQuery in the view:                 
+1. The default viewer implementation depends externally on __jQuery__.                   Create a section named __scripts__ and add link to jQuery in the view:                 
 
     
     ````html
@@ -96,11 +96,11 @@ The following steps produce a view with settings similar to these of the local M
    + __Telerik.ReportViewer.Mvc__ 
 
    + __Newtonsoft.Json, Version 9.0.0.0 or higher__ 
-    assemblies and set their __Copy Local__  properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__.                 
+    assemblies and set their __Copy Local__ properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__.                 
 
     >Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
-1. Update the __web.config__  file in the __Views__  folder to                   include the __Telerik.Reporting__  and __Telerik.ReportViewer.Mvc__                    namespaces:                 
+1. Update the __web.config__ file in the __Views__ folder to                   include the __Telerik.Reporting__ and __Telerik.ReportViewer.Mvc__                 namespaces:                 
 
     
     ````html
@@ -116,7 +116,7 @@ The following steps produce a view with settings similar to these of the local M
   </system.web.webPages.razor>
 ````
 
-    >Without registering the  __Telerik.Reporting__  and  __Telerik.ReportViewer.Mvc__                      namespaces you will need to use  [using Directive](https://msdn.microsoft.com/en-us/library/sf0df423.aspx)  in the view.                   
+    >Without registering the  __Telerik.Reporting__ and  __Telerik.ReportViewer.Mvc__                   namespaces you will need to use  [using Directive](https://msdn.microsoft.com/en-us/library/sf0df423.aspx)  in the view.                   
 
 1. Add references to the HTML5 Report Viewer’s JavaScript file in the view:                 
 
@@ -182,7 +182,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
     .PersistSession(false)
     .EnableAccessibility(false)
     .Deferred()
-       )
+    )
 ````
 {{source=CodeSnippets\MvcVB\Views\Home\Index.vbhtml region=RazorExample}}
 ````vb.net
@@ -203,7 +203,7 @@ End Code
 
     >The above example uses deferred loading of the viewer to allow scripts to be handled properly,                     in case jQuery is not yet loaded on the page at the time the view is created.                     The used relative paths must be considered with the project's structure.                   
 
-    >The viewer's  __ReportSource__  has 4 overloads allowing to specify report declaratively in code.                     The generated report's string description is sent and handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                     The above example uses UriReportSource and a path to TRDP file (report created in the Standalone Report Designer).                     This string description will be handled automatically by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver).                   
+    >The viewer's  __ReportSource__ has 4 overloads allowing to specify report declaratively in code.                     The generated report's string description is sent and handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                     The above example uses UriReportSource and a path to TRDP file (report created in the Standalone Report Designer).                     This string description will be handled automatically by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver).                   
 
 1. Render the deferred initialization statement for the Report Viewer scripts (remember that they must be rendered after jQuery):                   In case that you do not need the script tag to be rendered just set to false the default argument.                 
 

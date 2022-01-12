@@ -28,16 +28,16 @@ In case you need to host it locally, follow the article [How to Host Reports Ser
 
 ## Adding the HTML5 Report Viewer
 
-1. This tutorial uses the __Barcodes Report.trdp__  report definitions file               that must be located in a __Reports__  folder inside the project.             
+1. This tutorial uses the __Barcodes Report.trdp__ report definitions file               that must be located in a __Reports__ folder inside the project.             
 
-1. Make sure that the app configuration inside the __Configure__  method of the __Startup.cs__                can serve static files:             
+1. Make sure that the app configuration inside the __Configure__ method of the __Startup.cs__             can serve static files:             
 
     
       ````c#
 app.UseStaticFiles();
 ````
 
-1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on *wwwroot*  and __Add > New Item... > HTML Page__.               Name the file __index.html__  and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               By default, the necessary Report Viewer scripts and styles are served by the REST Service.             The complete report viewer page should look like this:
+1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on *wwwroot*  and __Add > New Item... > HTML Page__.               Name the file __index.html__ and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               By default, the necessary Report Viewer scripts and styles are served by the REST Service.             The complete report viewer page should look like this:
 
     
       ````html

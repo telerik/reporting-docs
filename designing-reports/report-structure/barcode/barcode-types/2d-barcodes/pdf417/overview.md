@@ -22,7 +22,7 @@ The PDF417 barcode has the following structure:
 
   ![barcode pdf 417 structure](images/Barcodes/barcode-pdf417-structure.png)
 
-The __Data codewords__  are located in the middle section of the barcode and include the following sections:         
+The __Data codewords__ are located in the middle section of the barcode and include the following sections:         
 
 1. The length indicator cluster (each cluster contains 17 modules), which signifies the total length of the data code words. 
 
@@ -32,9 +32,9 @@ The __Data codewords__  are located in the middle section of the barcode and inc
 
 1. Padding cluster(s) – since a rectangular matrix is allocated for the data code words, it may become necessary               to pad the data, and add one or more clusters, in order to fill any gaps in the available matrix.             
 
-The __Left Row Indicator__  codewords, as well as the __Right Row Indicator__            codewords help the decoder locate each row. Essentially the row indicators represent an encoding of the row number.         
+The __Left Row Indicator__ codewords, as well as the __Right Row Indicator__         codewords help the decoder locate each row. Essentially the row indicators represent an encoding of the row number.         
 
-The __Start__  and __Stop__  patterns are present on each row in the PDF417.           The signal when the data and row indicators start and end. Each start/stop cluster is identical for each row.         
+The __Start__ and __Stop__ patterns are present on each row in the PDF417.           The signal when the data and row indicators start and end. Each start/stop cluster is identical for each row.         
 
 Additionally, there is a minimum of two modules on each side of the PDF417 barcode, dedicated to the quiet zone.           This gives space and separates the barcode from other visual elements on the page, allowing the reader to more reliably detect it.         
 

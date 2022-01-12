@@ -50,15 +50,15 @@ function createSingleSelectEditor(placeholder, options) {
      .ParameterEditors(
                     editors => editors
                      .SingleSelectEditor("createSingleSelectEditor")
-            )
+         )
 )
 ````
 
-If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor.           Each custom editor requires two JavaScript functions provided as attributes: __MatchFunction__  and __CreateEditorFunction__.         
+If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor.           Each custom editor requires two JavaScript functions provided as attributes: __MatchFunction__ and __CreateEditorFunction__.         
 
-The __customMatch__  method accepts a report parameter to be edited as an argument and returns a boolean value which indicates           whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name,           allowNull, availableValues, multiValue, type and etc.         
+The __customMatch__ method accepts a report parameter to be edited as an argument and returns a boolean value which indicates           whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name,           allowNull, availableValues, multiValue, type and etc.         
 
-The main work for creating and utilizing the parameter editor is done in the __createCustomEditor__  method.           Its purpose is to create the parameter editor UI and wire it to the __parameterChanged__  callback when a new value is selected.           The return result is a new object containing the __beginEdit__  method which is the entry point for creating the editor from the viewer.         
+The main work for creating and utilizing the parameter editor is done in the __createCustomEditor__ method.           Its purpose is to create the parameter editor UI and wire it to the __parameterChanged__ callback when a new value is selected.           The return result is a new object containing the __beginEdit__ method which is the entry point for creating the editor from the viewer.         
 
 The following example illustrates how to use the Kendo DropDownList widget for a           boolean single parameter value parameter editor which also has available values:         
 
@@ -107,7 +107,7 @@ Passing the parameter editor to the viewer:
                             MatchFunction = "customMatch",
                             CreateEditorFunction = "createCustomEditor"
                         })
-            )
+         )
 )
 ````
 

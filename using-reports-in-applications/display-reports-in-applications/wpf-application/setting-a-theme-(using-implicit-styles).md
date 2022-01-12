@@ -22,7 +22,7 @@ With the official Q1 2014 release of Telerik Reporting you will have to disable 
 
 You will find the XAML files with the implicit styles in {Telerik Reporting installation path}/Wpf.       
 
-* __Themes__  – implicit styles friendly XAML.           
+* __Themes__ – implicit styles friendly XAML.           
 
 This article explains details on using implicit styles with the WPF Report Viewer and covers the following topics:       
 
@@ -34,7 +34,7 @@ This article explains details on using implicit styles with the WPF Report Viewe
 
 ## Applying Report Viewer theme globally in your application
 
-The newly included Themes folder lists resource dictionaries by theme name.            These resource dictionaries contain implicit styles and relevant needed resources.           They can be merged in the resources of your application (in App.xaml) and as a result will be applied implicitly on any Report Viewer           that does not have a __local__  Style set.          
+The newly included Themes folder lists resource dictionaries by theme name.            These resource dictionaries contain implicit styles and relevant needed resources.           They can be merged in the resources of your application (in App.xaml) and as a result will be applied implicitly on any Report Viewer           that does not have a __local__ Style set.          
 
 For the WPF Report Viewer you need to add these xaml files for the selected theme:         
 
@@ -92,9 +92,9 @@ We will apply implicit styles for the Vista theme in our example project. Having
 
 * Replace the referenced Telerik UI for WPF assemblies with assemblies from the Binaries.NoXaml folder.               If the Telerik UI for WPF assemblies are only used for the report viewer,               use Telerik UI for WPF assemblies available with the local demos.               They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer.               The Telerik UI for WPF assemblies are located in               %programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Examples\CSharp\WpfDemo\bin).             
 
-* Create a Themes folder in your project and copy the corresponding XAML files (Telerik UI for WPF) from __Themes.Implicit/../Vista/../Themes/__  folder.
+* Create a Themes folder in your project and copy the corresponding XAML files (Telerik UI for WPF) from __Themes.Implicit/../Vista/../Themes/__ folder.
 
-* In the Themes folder of the project add the respective Report Viewer theme (in our case Vista) from __WPF/Themes__  folder.
+* In the Themes folder of the project add the respective Report Viewer theme (in our case Vista) from __WPF/Themes__ folder.
 
 * The next step is to merge these ResourceDictionaries in the App.xaml file:
 

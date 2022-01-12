@@ -18,9 +18,9 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
 
 * Review the HTML5 Report Viewer [System Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).             
 
-* Copy of the "Product Catalog.trdx" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__                in the folder used by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)                in the Reporting REST service implementation.             
+* Copy of the "Product Catalog.trdx" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__             in the folder used by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver)                in the Reporting REST service implementation.             
 
-* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__  file               of the project hosting the Reporting REST service:             
+* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file               of the project hosting the Reporting REST service:             
 
     
       ````xml
@@ -49,7 +49,7 @@ The following steps produce a view with settings similar to these of the local W
    + __Telerik.ReportViewer.Html5.WebForms__ 
 
    + __Newtonsoft.Json, Version 9.0.0.0 or higher__ 
-    assemblies and set their __Copy Local__  properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__.                 
+    assemblies and set their __Copy Local__ properties to true in Visual Studio.                   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__.                 
 
     >Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
@@ -137,7 +137,7 @@ kendo.mobile.min.js - optional, if gestures/touch support is required
 
 1. Set the viewer width and height.                 
 
-1. (Optional) If you set the viewer's __Deferred__  to __true__, render the deferred initialization                   statement for the Report Viewer (remember that they must be rendered after jQuery):                 
+1. (Optional) If you set the viewer's __Deferred__ to __true__, render the deferred initialization                   statement for the Report Viewer (remember that they must be rendered after jQuery):                 
 
     
     ````xml

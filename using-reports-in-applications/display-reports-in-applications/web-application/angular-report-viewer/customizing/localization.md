@@ -40,7 +40,7 @@ The file can contain all or only part of the string resources which would be loc
 import { StringResources } from './stringResources';
 ````
 
-1. Implement __AfterViewInit__  and extend the viewer object with the string resources for the desired culture:             
+1. Implement __AfterViewInit__ and extend the viewer object with the string resources for the desired culture:             
 
     
       ````js

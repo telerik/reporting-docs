@@ -12,7 +12,7 @@ position: 2
 
 
 
-The __JSON Data Source Wizard__  allows you to create a new or edit an existing         __JsonDataSource__  component based on several settings.         After the wizard appears you have to perform the following steps:       
+The __JSON Data Source Wizard__ allows you to create a new or edit an existing         __JsonDataSource__ component based on several settings.         After the wizard appears you have to perform the following steps:       
 
 1. __Choose a JSON Source__ Choose between external file or inline string.  
 

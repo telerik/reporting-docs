@@ -30,9 +30,9 @@ The following image shows a typical column chart:
 
 * Column charts are most commonly used to show comparisons between groups. If more than three series are               present on the chart, consider using a stacked column chart.             
 
-* In a column chart, you have less space for category axis labels to display horizontally. If you have longer               category labels, consider using a bar chart or changing the rotation angle of the label through the               __LabelAngle__  property of the axis.             
+* In a column chart, you have less space for category axis labels to display horizontally. If you have longer               category labels, consider using a bar chart or changing the rotation angle of the label through the               __LabelAngle__ property of the axis.             
 
-* If there are a lot of data points in your dataset relative to the size of your chart, the size of the columns               and the spacing between them are reduced. To modify the width of the columns in a chart consider changing the               __SpacingSlotCount__  property of the __category__  axis scale. By default the               value is 1 which indicates equal widths of the column and the free space. The greater the value is the more free space               is reserved between the columns.             
+* If there are a lot of data points in your dataset relative to the size of your chart, the size of the columns               and the spacing between them are reduced. To modify the width of the columns in a chart consider changing the               __SpacingSlotCount__ property of the __category__ axis scale. By default the               value is 1 which indicates equal widths of the column and the free space. The greater the value is the more free space               is reserved between the columns.             
 
 # See Also
 

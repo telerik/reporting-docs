@@ -198,13 +198,13 @@ End Class
 
 1. Run the application – the Windows console will appear and when the "Ready…"               message appears the service is ready to operate.               
 
-1. To test the self-hosted Telerik Reporting WCF Service we use the Export                    operation for the Resource Service (__Telerik.Reporting.Service.IResourceService__ ).                    As it is dedicated to be used by __HTTP GET__  request we will use a web browser                    application as a client. Open any web browser and type the next address:          
+1. To test the self-hosted Telerik Reporting WCF Service we use the Export                    operation for the Resource Service (__Telerik.Reporting.Service.IResourceService__).                    As it is dedicated to be used by __HTTP GET__ request we will use a web browser                    application as a client. Open any web browser and type the next address:          
 
     
     ````
 http://localhost:54321/reportservice/resources/export?format=PDF&report=YourNameSpace.Report1,YourNameSpace&deviceInfo={}&parameterValues={}
 ````
 
-    This will call the __IResourceService__. Export operation that                  will render the report in __PDF__  with no deviceInfo or parameterValues.                  When completed, a PDF document will be sent back to the browser.               
+    This will call the __IResourceService__. Export operation that                  will render the report in __PDF__ with no deviceInfo or parameterValues.                  When completed, a PDF document will be sent back to the browser.               
 
 

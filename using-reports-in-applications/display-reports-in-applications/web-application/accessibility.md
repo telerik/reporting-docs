@@ -12,13 +12,13 @@ position: 9
 
 
 
-Telerik Reporting aims to provide a reporting solution accessible to a wider user audience.         This includes users with motor control restrictions and ones working with assistive technologies.         In our product we follow the recommended practices in          [Section 508 of the Rehabilitation Act](http://www.section508.gov/)          and          [             Web Content Accessibility Guidelines (WCAG) 2.0           ](https://www.w3.org/TR/WCAG20/), building our web content according to standards set by          [             WAI-ARIA           ](https://www.w3.org/TR/wai-aria-practices/).       
+Telerik Reporting aims to provide a reporting solution accessible to a wider user audience.         This includes users with motor control restrictions and ones working with assistive technologies.         In our product we follow the recommended practices in          [Section 508 of the Rehabilitation Act](http://www.section508.gov/)          and          [          Web Content Accessibility Guidelines (WCAG) 2.0        ](https://www.w3.org/TR/WCAG20/), building our web content according to standards set by          [          WAI-ARIA        ](https://www.w3.org/TR/wai-aria-practices/).       
 
 ## Setting up accessibility features in HTML5-based viewers
 
-The accessibility features are enabled or disabled using an optional boolean parameter named __enableAccessibility__            (the exact letter casing varies among the HTML5-based viewers). The default value of this property is __false__            (no additional accessibility markup is emitted). This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__            is set to __true__, the exported PDF will be created according to            [               PDF/UA (ISO standard 14289-1)             ](https://en.wikipedia.org/wiki/PDF/UA)            specification.         
+The accessibility features are enabled or disabled using an optional boolean parameter named __enableAccessibility__         (the exact letter casing varies among the HTML5-based viewers). The default value of this property is __false__         (no additional accessibility markup is emitted). This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__         is set to __true__, the exported PDF will be created according to            [            PDF/UA (ISO standard 14289-1)          ](https://en.wikipedia.org/wiki/PDF/UA)            specification.         
 
-The accessibility codebase is part of the           *telerikReportViewer.{product version}.js*  file.           This file can be found in the __\bin\js__  subfolder of the Telerik Reporting installation folder.           The product also provides a minified version of the script, which can be used in production environments.         
+The accessibility codebase is part of the           *telerikReportViewer.{product version}.js*  file.           This file can be found in the __\bin\js__ subfolder of the Telerik Reporting installation folder.           The product also provides a minified version of the script, which can be used in production environments.         
 
 The accessibility script operates using the DOM elements from the           [viewer template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}),           so if you have modified the template, you will probably need to apply changes to the accessibility part of the script as well.         
 
@@ -40,25 +40,25 @@ Our HTML5-based report viewers support the following important accessibility fea
 
 ## Supported accessibility features in HTML5-rendered report contents
 
-All the report items have a property called  [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription).           The property value is an expression and it determines what will be the accessibility label when the report is rendered.           Its value is set as an            [               alternate text             ](https://www.w3schools.com/tags/att_img_alt.asp)  for images in __PictureBox__  items and as an accessible label for the other elements. According to            [               ARIA specifications             ](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)         , the attribute that should be used in scenarios, where no text labeling element is available, is            [               aria-label             ](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label).         
+All the report items have a property called  [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription).           The property value is an expression and it determines what will be the accessibility label when the report is rendered.           Its value is set as an            [            alternate text          ](https://www.w3schools.com/tags/att_img_alt.asp)  for images in __PictureBox__ items and as an accessible label for the other elements. According to            [            ARIA specifications          ](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA)         , the attribute that should be used in scenarios, where no text labeling element is available, is            [            aria-label          ](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label).         
 
-The value of           __aria-label__            attribute is created using the following pattern: `{type} {additional information} {description} `:         
+The value of           __aria-label__         attribute is created using the following pattern: `{type} {additional information} {description} `:         
 
-* __{type}__  is a placeholder that contains the type name of the currently rendered element - "Details section", "Text box", "Table", etc.               The report item names are localizable and can be substituted with any appropriate strings, even with empty values, if there is no need to include the report item name in the label.             
+* __{type}__ is a placeholder that contains the type name of the currently rendered element - "Details section", "Text box", "Table", etc.               The report item names are localizable and can be substituted with any appropriate strings, even with empty values, if there is no need to include the report item name in the label.             
 
-* __{additional information}__  is intended to give some meaningful information about the context where the current item is in, or about its additional properties.               The cases where it is most useful, are:             
+* __{additional information}__ is intended to give some meaningful information about the context where the current item is in, or about its additional properties.               The cases where it is most useful, are:             
 
    + - if the current item has some interactive action set, this token will contain the type of the action.                 
 
-   + - if the current item is __Table__  or __Crosstab__, the token will contain information about the row and column count.                 
+   + - if the current item is __Table__ or __Crosstab__, the token will contain information about the row and column count.                 
 
-   + - if the current item is nested in a __Table__  or __Crosstab__, the token will contain information                   about the current cell's row and column zero-based index.                   Additionally, if the cell is used as a header, this information will be also included in the label.                 
+   + - if the current item is nested in a __Table__ or __Crosstab__, the token will contain information                   about the current cell's row and column zero-based index.                   Additionally, if the cell is used as a header, this information will be also included in the label.                 
 
    + - if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked).                 
 
-* __{description}__  provides relevant information about the current item contents. Its value is evaluated using the item's               *AccessibleDescription*  property and if it is empty, falls back to the item's               *Value*  or *Text*  property, whichever is available.             
+* __{description}__ provides relevant information about the current item contents. Its value is evaluated using the item's               *AccessibleDescription*  property and if it is empty, falls back to the item's               *Value*  or *Text*  property, whichever is available.             
 
-For example, if a report contains a __TextBox__  with `Value = "Sorts by Category"`,           that performs a sorting action and is nested in a table's first (header) row and third column,           the generated *aria-label*  value will be:           *Text box. Performs a sorting action. Column header. Column 2 Row 0. Sorts by Category.* 
+For example, if a report contains a __TextBox__ with `Value = "Sorts by Category"`,           that performs a sorting action and is nested in a table's first (header) row and third column,           the generated *aria-label*  value will be:           *Text box. Performs a sorting action. Column header. Column 2 Row 0. Sorts by Category.* 
 
 ## Known issues
 

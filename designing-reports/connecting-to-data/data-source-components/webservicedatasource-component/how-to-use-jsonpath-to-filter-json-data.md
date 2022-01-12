@@ -37,7 +37,7 @@ Example:
         "title": "Sword of Honour",
         "price": 12.99
       }
-    ]
+ ]
   }
 }
 ````
@@ -87,7 +87,7 @@ Example:
         "title": "Sword of Honour",
         "price": 12.99
       }
-    ]
+ ]
   }
 }
 ````

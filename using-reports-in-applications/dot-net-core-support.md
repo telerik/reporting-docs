@@ -14,7 +14,7 @@ position: 7
 
 This article explains how to use reports in a.NET Core application for Windows, Linux, and macOS platforms.
 
-Telerik Reporting provides a set of assemblies and NuGet packages designed for.NET Core projects.         The NuGets are available in the          [Telerik NuGet feed](https://docs.telerik.com/reporting/add-the-telerik-private-nuget-feed-to-visual-studio).         Additionally, thе assemblies are available in the Telerik Reporting installation directory         __\Bin\netstandard2.0\__  and          __\Bin\netcoreapp3.1\__  folders.         The assemblies target.NET Standard 2.0 and the desktop viewers target.NET Core 3.1, which ensures compatibility with a greater variety of frameworks and applications.         The NuGet packages resolve the external dependencies to provide better dependency management and code portability.       
+Telerik Reporting provides a set of assemblies and NuGet packages designed for.NET Core projects.         The NuGets are available in the          [Telerik NuGet feed](https://docs.telerik.com/reporting/add-the-telerik-private-nuget-feed-to-visual-studio).         Additionally, thе assemblies are available in the Telerik Reporting installation directory         __\Bin\netstandard2.0\__ and          __\Bin\netcoreapp3.1\__ folders.         The assemblies target.NET Standard 2.0 and the desktop viewers target.NET Core 3.1, which ensures compatibility with a greater variety of frameworks and applications.         The NuGet packages resolve the external dependencies to provide better dependency management and code portability.       
 
 ## Requirements
 
@@ -74,7 +74,7 @@ sudo apt-get install libc6-dev
 sudo apt-get install libgdiplus
 ````
 
-Since __libgdiplus__  is not a perfect replacement for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping and aligning.           These problems mostly affect the [Image rendering extension]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}) hence it is not recommended to be used.           The following JSON configuration snippet will hide it from the list of the available rendering extensions:         
+Since __libgdiplus__ is not a perfect replacement for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping and aligning.           These problems mostly affect the [Image rendering extension]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}) hence it is not recommended to be used.           The following JSON configuration snippet will hide it from the list of the available rendering extensions:         
 
     
 ````js
@@ -84,7 +84,7 @@ Since __libgdiplus__  is not a perfect replacement for the Windows graphics libr
       "name": "IMAGE",
       "visible": "false"
     }
-  ]
+]
 }
 ````
 
@@ -103,9 +103,9 @@ brew install mono-libgdiplus
 
 1. Create your.NET Core application (or copy an existing one from a Windows machine).
 
-1. Add __nuget.config__  file with path to your NuGet repository.
+1. Add __nuget.config__ file with path to your NuGet repository.
 
-1. Add a section in __appsettings.json__  for font fallback.
+1. Add a section in __appsettings.json__ for font fallback.
 
 1. Build
 
@@ -118,7 +118,7 @@ and run the application. When running in debug mode Visual Studio Code will ask 
 
 ## Containerize Telerik Reporting
 
-Telerik Reporting can be used in a Docker image if it meets the GDI+ requirements.            The __microsoft/windowsservercore__  images distributed by Microsoft contain the graphics library, but their size is significantly bigger compared to the size of the dotnet runtime in a Linux container.            Such container only needs the __libgdiplus__  and its accompanying libraries installed, which can be done through the following *dockerfile*  snippet:         
+Telerik Reporting can be used in a Docker image if it meets the GDI+ requirements.            The __microsoft/windowsservercore__ images distributed by Microsoft contain the graphics library, but their size is significantly bigger compared to the size of the dotnet runtime in a Linux container.            Such container only needs the __libgdiplus__ and its accompanying libraries installed, which can be done through the following *dockerfile*  snippet:         
 
     
 ````
@@ -137,7 +137,7 @@ If you need to use Telerik Reporting in a Windows container, you need to target 
 
 ## Examples
 
-Telerik Reporting ships with a ready-made.NET Core examples that demonstrate how to show the sample reports in an ASP.NET Core, WinForms Core and WPF Core application.            The ASP.NET Core demo also shows how to inject an __appsettings.json__  configuration file to the controller            and how to initialize a WebHostBuilder so it runs under Windows and Linux.                    
+Telerik Reporting ships with a ready-made.NET Core examples that demonstrate how to show the sample reports in an ASP.NET Core, WinForms Core and WPF Core application.            The ASP.NET Core demo also shows how to inject an __appsettings.json__ configuration file to the controller            and how to initialize a WebHostBuilder so it runs under Windows and Linux.                    
 
 An example project is available in the Telerik Reporting installation directory            *\Examples\CSharp\Asp.NetCoreDemo*  subfolder.         
 

@@ -22,19 +22,19 @@ You can use shapes to create visual effects within a report. You can set display
 
 The properties that define the behavior of the Cross-section item are listed below:
 
-* __BeginSection__  - this property defines the report section from which the cross-section item will start. It can be any instance of                [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase)  class: PageHeader, ReportHeader or GroupHeader.             
+* __BeginSection__ - this property defines the report section from which the cross-section item will start. It can be any instance of                [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase)  class: PageHeader, ReportHeader or GroupHeader.             
 
-* __BeginMargin__  - this property defines the offset from the top of the __BeginSection__  measured in                [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit) s.               The offset will be preserved if the __BeginSection__  changes its size at runtime.             
+* __BeginMargin__ - this property defines the offset from the top of the __BeginSection__ measured in                [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit) s.               The offset will be preserved if the __BeginSection__ changes its size at runtime.             
 
-* __EndSection__  - this property defines the report section at which the cross-section item will end. It also can be any instance of                [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase)  class: PageFooter, ReportFooter or GroupFooter.             
+* __EndSection__ - this property defines the report section at which the cross-section item will end. It also can be any instance of                [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase)  class: PageFooter, ReportFooter or GroupFooter.             
 
-* __EndMargin__  - this property defines the offset from the bottom of the __EndSection__  measured in                [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit) s.               The offset will be preserved if the __EndSection__  changes its size at runtime.             
+* __EndMargin__ - this property defines the offset from the bottom of the __EndSection__ measured in                [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit) s.               The offset will be preserved if the __EndSection__ changes its size at runtime.             
 
 The properties that define the appearance of the Cross-section item are listed below:         
 
-* __Type__  - this property defines the type graphical primitive rendered by the cross-section item.               It can be *Line*  or *Rectangle*. The default value is *Line*.             
+* __Type__ - this property defines the type graphical primitive rendered by the cross-section item.               It can be *Line*  or *Rectangle*. The default value is *Line*.             
 
-* __Position__  - this property defines whether the cross-section item will be rendered under the rest of the report items or on top of them.               It can be set to *Behind*  or *Front*. The default value is *Behind*.             
+* __Position__ - this property defines whether the cross-section item will be rendered under the rest of the report items or on top of them.               It can be set to *Behind*  or *Front*. The default value is *Behind*.             
 
 The  [Location](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location)  and            [Size](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size)  properties are calculated based on the           *BeginSection*, *BeginMargin*, *EndSection*  and *EndMargin*  properties.           Changing the values of the  [Location](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location) - or            [Size](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size) -related property like            [Top](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Top),            [Left](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Left),            [Width](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Width)  or            [Height](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Height)  will recalculate the values of           *BeginSection*, *BeginMargin*, *EndSection*  and *EndMargin*  properties.         
 

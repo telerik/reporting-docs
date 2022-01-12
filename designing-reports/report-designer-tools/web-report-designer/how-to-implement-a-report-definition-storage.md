@@ -16,7 +16,7 @@ This article describes how to use the Web Report Designer to design reports that
 
 ## Overview
 
-Out-of-the-box we provide a __FileDefinitionStorage__  that is configured to use the file system.           To open reports stored differently, you need to implement the __IDefinitionStorage__  interface.           This will enable the web designer to load reports from a custom location, such as a database, cloud, in-memory, etc.         
+Out-of-the-box we provide a __FileDefinitionStorage__ that is configured to use the file system.           To open reports stored differently, you need to implement the __IDefinitionStorage__ interface.           This will enable the web designer to load reports from a custom location, such as a database, cloud, in-memory, etc.         
 
 > The Web Report Designer previews the reports in [Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}). The latter              utilizes a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to render the reports. The             [client-side reportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()%}) sent by the web designer is resolved to a              [server-side ReportSource](ec135f09-4a4d-43df-aa5a-e6bca0190d87#ReportSourcesOptions) by the  *Resolve*  method of the              Reporting REST Service [ReportSource Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}). The ReportSource resolver is supposed to read               report definitions created with the web report designer. For that reason, in the most of the cases when creating custom               *IDefinitionStorage*  it will be necessary to create also a              [custom ReportSource resolver](e5868213f-b3dd-4110-93d8-a8bf0739778b) that is able to read the              report definitions from the storage and return them as valid server-side ReportSources.         
 
@@ -87,5 +87,5 @@ public ReportDesignerController()
 }
 ````
 
-The __BaseDir__  property sets the base path for the reports and the resources they reference. For example,       CSV or JSON files used in CsvDataSource and JsonDataSource components.
+The __BaseDir__ property sets the base path for the reports and the resources they reference. For example,       CSV or JSON files used in CsvDataSource and JsonDataSource components.
 

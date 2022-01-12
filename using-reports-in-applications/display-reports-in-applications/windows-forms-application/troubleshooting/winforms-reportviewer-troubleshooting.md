@@ -14,7 +14,7 @@ position: 0
 
 The article provides troubleshooting for commonly met issues with the Windows Forms ReportViewer control.
 
-The Windows Forms ReportViewer displays content rendered through the [           Reporting Image Rendering nmechanism         ]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}).       
+The Windows Forms ReportViewer displays content rendered through the [        Reporting Image Rendering nmechanism      ]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}).       
 
 ## Report is not displayed by the viewer.
 

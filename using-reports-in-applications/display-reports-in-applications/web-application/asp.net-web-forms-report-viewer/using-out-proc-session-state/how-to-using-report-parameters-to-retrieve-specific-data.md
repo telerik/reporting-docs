@@ -59,7 +59,7 @@ End Function
 
   ![](images/OutProc5.png)
 
-1. Setting the report __DataSource__  to the GetData method in the __NeedDataSource__  event handler of the report:
+1. Setting the report __DataSource__ to the GetData method in the __NeedDataSource__ event handler of the report:
 
     
       ````C#
@@ -76,7 +76,7 @@ Private Sub Report2_NeedDataSource(ByVal sender As System.Object, ByVal e As Sys
 End Sub
 ````
 
-1. Attach the __SelectedIndexChanged__  event handler of the __DropDownList__. In the event handler, get the report assigned to the viewer                    (in the example the ReportSource is __InstanceReportSource__ )                 and set the value of the report parameter to the selected item of the __DropDownList__ :
+1. Attach the __SelectedIndexChanged__ event handler of the __DropDownList__. In the event handler, get the report assigned to the viewer                    (in the example the ReportSource is __InstanceReportSource__)                 and set the value of the report parameter to the selected item of the __DropDownList__ :
 
     
       ````C#

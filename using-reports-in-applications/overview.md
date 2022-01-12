@@ -60,29 +60,29 @@ Telerik Report Server is a server-based platform powered by Telerik Reporting th
 
 Connect the Report Viewer to the Telerik Report Server’s engine:             
 
-* [How To: Use HTML5 Report Viewer With Report Server ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
+* [How To: Use HTML5 Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
 
-* [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server  ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server%})
+* [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server%})
 
-* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With Report Server   ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-report-server%})
+* [How To: Use HTML5 ASP.NET Web Forms Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-report-server%})
 
-* [How To: Use Windows Forms Report Viewer With Report Server ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%})
+* [How To: Use Windows Forms Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%})
 
-* [How To: Use WPF Report Viewer With Report Server ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%})
+* [How To: Use WPF Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%})
 
 ## How to generate custom reports
 
 [Program the Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/overview%}) section provides information for advanced report            authors on how to generate reports programmatically using the provided API:         
 
-* [How To Create Report Programmatically ]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/create-report-programmatically%})
+* [How To Create Report Programmatically]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/create-report-programmatically%})
 
-* [How To Access Report Items Programmatically ]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically%})
+* [How To Access Report Items Programmatically]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically%})
 
-* [How To Use Report Events ]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%})
+* [How To Use Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%})
 
-* [How To Package Report Definition ]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%})
+* [How To Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%})
 
-* [How To Serialize Report Definition in XML ]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%})
+* [How To Serialize Report Definition in XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%})
 
 ## Next steps
 

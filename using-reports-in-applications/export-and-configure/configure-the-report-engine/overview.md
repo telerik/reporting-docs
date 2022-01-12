@@ -12,9 +12,9 @@ position: 0
 
 
 
-There are particular settings that can be applied to the Telerik Reporting engine          to influence its behavior or extend it. These are defined in the application's configuration file.         For __Windows and WPF applications__  the configuration file is called __app.config__  and for         __ASP.NET applications__  – __web.config__.         This configuration file is XML-based and its content is divided into sections.       
+There are particular settings that can be applied to the Telerik Reporting engine          to influence its behavior or extend it. These are defined in the application's configuration file.         For __Windows and WPF applications__ the configuration file is called __app.config__ and for         __ASP.NET applications__ – __web.config__.         This configuration file is XML-based and its content is divided into sections.       
 
-__.NET Core applications__  provide another way of storing configuration - a key-value JSON-based file named         __appSettings.json__.         For __.NET Core console applications__  both configuration types are supported,         but __appSettings.json__  has precedence over __app.config__.         __ASP.NET Core applications__  no longer use *web.config*  so the configuration should be set to any of the supported          [key-value based files](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2).       
+__.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named         __appSettings.json__.         For __.NET Core console applications__ both configuration types are supported,         but __appSettings.json__ has precedence over __app.config__.         __ASP.NET Core applications__ no longer use *web.config*  so the configuration should be set to any of the supported          [key-value based files](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2).       
 
 > For more information about configuring a.NET application, see            [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/).         
 
@@ -22,7 +22,7 @@ __.NET Core applications__  provide another way of storing configuration - a key
 
 __Telerik Reporting root element__ 
 
-The root element of the configuration is named __```<Telerik.Reporting>```__  in XML-based configuration files and __"telerikReporting"__  in JSON-based configuration files.           All the settings of the Reporting engine are nested in this root element.         
+The root element of the configuration is named __```<Telerik.Reporting>```__ in XML-based configuration files and __"telerikReporting"__ in JSON-based configuration files.           All the settings of the Reporting engine are nested in this root element.         
 
 |   |   |
 | ------ | ------ |
@@ -32,9 +32,9 @@ Attributes|No attributes are defined for this element|
 
 ## XML-based Configuration
 
-The snippets in this section show the ```<Telerik.Reporting>``` configuration used in XML-based configuration files like __app.config__  and __web.config__.         
+The snippets in this section show the ```<Telerik.Reporting>``` configuration used in XML-based configuration files like __app.config__ and __web.config__.         
 
-The settings for the Telerik Reporting engine are stored in a custom configuration section called *Telerik.Reporting*.           The declaration of this section has to be included in a __```<configSections>```__  element which should be the __first child element__            of __```<configuration>```__, like this:         
+The settings for the Telerik Reporting engine are stored in a custom configuration section called *Telerik.Reporting*.           The declaration of this section has to be included in a __```<configSections>```__ element which should be the __first child element__         of __```<configuration>```__, like this:         
 
     
 ````xml
@@ -100,7 +100,7 @@ The custom configuration section's content:
 
 ## JSON-based Configuration
 
-The JSON-based configuration structure used in __appSettings.json__  or other key-value based files looks like this:         
+The JSON-based configuration structure used in __appSettings.json__ or other key-value based files looks like this:         
 
     
 ````js
@@ -113,9 +113,9 @@ The JSON-based configuration structure used in __appSettings.json__  or other ke
             "name": null,
             "value": null
           }
-        ]
+     ]
       }
-    ],
+ ],
     "cache": {
       "provider": null,
       "providers": [
@@ -126,9 +126,9 @@ The JSON-based configuration structure used in __appSettings.json__  or other ke
               "Name": null,
               "Value": null
             }
-          ]
+       ]
         }
-      ]
+   ]
     },
     "restReportService": {
       "hostAppId": null,
@@ -142,7 +142,7 @@ The JSON-based configuration structure used in __appSettings.json__  or other ke
             "name": null,
             "value": null
           }
-        ]
+     ]
       },
       "storage": {
         "provider": null,
@@ -151,7 +151,7 @@ The JSON-based configuration structure used in __appSettings.json__  or other ke
             "name": null,
             "value": null
           }
-        ]
+     ]
       }
     },
     "assemblyReferences": [
@@ -160,14 +160,14 @@ The JSON-based configuration structure used in __appSettings.json__  or other ke
         "version": null,
         "culture": null
       }
-    ],
+ ],
     "privateFonts": [
       {
         "fontFamily": null,
         "path": null,
         "fontStyle": null
       }
-    ],
+ ],
     "fontLibrary":{
       "useDefaultLocations": "true",
       "fontLocations": [
@@ -175,7 +175,7 @@ The JSON-based configuration structure used in __appSettings.json__  or other ke
           "path": null,
           "searchSubfolders": null
         }
-      ]
+   ]
     },
     "dpiAware": {
       "dpiAwareness": null

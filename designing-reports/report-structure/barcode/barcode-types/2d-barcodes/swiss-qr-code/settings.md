@@ -24,51 +24,51 @@ This compound property contains the data needed to construct the correctly forma
 
 The Creditor property contains information about the *Payable To*  data entity.             
 
-* __Address__  - Determines the Creditor address fields, shown below in alphabetical order:                 
+* __Address__ - Determines the Creditor address fields, shown below in alphabetical order:                 
 
-   + __City__  - mandatory field, 35 characters max.                     
+   + __City__ - mandatory field, 35 characters max.                     
 
-   + __Country__  - mandatory field, containing the 2-letter country code as defined by ISO 3166-1.                     
+   + __Country__ - mandatory field, containing the 2-letter country code as defined by ISO 3166-1.                     
 
-   + __House Number__  - non-mandatory field.                     
+   + __House Number__ - non-mandatory field.                     
 
-   + __Postal code__  - mandatory field, 16 characters max.                     
+   + __Postal code__ - mandatory field, 16 characters max.                     
 
-   + __Street__  - non-mandatory field.                     
+   + __Street__ - non-mandatory field.                     
 
-* __IBAN__  - mandatory field that must pass the validation check for an IBAN identifier.                 
+* __IBAN__ - mandatory field that must pass the validation check for an IBAN identifier.                 
 
-* __IBANType__  - mandatory field determining the type of the IBAN field. Supported values: *IBAN/QRIBAN*. The default value is *IBAN*.                 
+* __IBANType__ - mandatory field determining the type of the IBAN field. Supported values: *IBAN/QRIBAN*. The default value is *IBAN*.                 
 
-* __Name__  - mandatory field determining the Creditor name, 70 characters max.                 
+* __Name__ - mandatory field determining the Creditor name, 70 characters max.                 
 
 ### Debtor
 
 The Debtor property contains information about the *Payable By*  data entity.             
 
-* __Address__  - Determines the Debtor address fields, following the same rules as the Creditor address fields, listed above.                 
+* __Address__ - Determines the Debtor address fields, following the same rules as the Creditor address fields, listed above.                 
 
-* __Name__  - mandatory field determining the Debtor name, 70 characters max.                 
+* __Name__ - mandatory field determining the Debtor name, 70 characters max.                 
 
 ### Payment
 
 The Payment property contains information about the *Payment*  data entity.             
 
-* __AdditionalInfo__  - non-mandatory field containing additional information about the bill recipient.                 
+* __AdditionalInfo__ - non-mandatory field containing additional information about the bill recipient.                 
 
-* __AlternativeProcedure1__  - non-mandatory field representing the first of the two elements containing specific information about the alternative procedures applied to the bill.                 
+* __AlternativeProcedure1__ - non-mandatory field representing the first of the two elements containing specific information about the alternative procedures applied to the bill.                 
 
-* __AlternativeProcedure2__  - non-mandatory field representing the second of the two elements containing specific information about the alternative procedures applied to the bill.                 
+* __AlternativeProcedure2__ - non-mandatory field representing the second of the two elements containing specific information about the alternative procedures applied to the bill.                 
 
-* __Amount__  - mandatory field containing the amount of money to be paid. Maximum 12 digits, including the decimals. The default value is *0.01*.                 
+* __Amount__ - mandatory field containing the amount of money to be paid. Maximum 12 digits, including the decimals. The default value is *0.01*.                 
 
-* __Currency__  - mandatory field determining the amount currency. Supported values: *CHF/EUR*. The default value is *CHF*.                 
+* __Currency__ - mandatory field determining the amount currency. Supported values: *CHF/EUR*. The default value is *CHF*.                 
 
-* __Reference__  - a field determining the payment reference number. It can be empty or null when the __ReferenceType__  field is set to *NON*. Length: [5 - 25] characters.                 
+* __Reference__ - a field determining the payment reference number. It can be empty or null when the __ReferenceType__ field is set to *NON*. Length: [5 - 25] characters.                 
 
-* __ReferenceType__  - mandatory field determining the type of the payment reference number. Supported values: *NON/SCOR/QRR*. The default value is *NON*.                 
+* __ReferenceType__ - mandatory field determining the type of the payment reference number. Supported values: *NON/SCOR/QRR*. The default value is *NON*.                 
 
-* __StructuredBillInfo__  - non-mandatory field containing coded information for automated booking of the payment. 140 characters max.                 
+* __StructuredBillInfo__ - non-mandatory field containing coded information for automated booking of the payment. 140 characters max.                 
 
 ## QuietZone
 
@@ -90,8 +90,8 @@ Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode
 
  
 
-* [          Swiss Implementation Guidelines QR-bill (PDF)
-        ](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
+* [       Swiss Implementation Guidelines QR-bill (PDF)
+     ](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
 
  
 

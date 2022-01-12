@@ -38,7 +38,7 @@ Specify and resolve the templateUrl path of the HTML5 Viewer widget option to th
 
 Add buttons elements in your local template. There are two different elements that have to be added.
 
-* For desktop screens.             Copy the following element in the __ul__  element with id attribute __trv-main-menu-ul__ 
+* For desktop screens.             Copy the following element in the __ul__ element with id attribute __trv-main-menu-ul__ 
 
    + For default template
 
@@ -54,7 +54,7 @@ Add buttons elements in your local template. There are two different elements th
 <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i></a></li>
 ````
 
-* For mobile screensCopy the following element in __ul__  element with id attribute __trv-side-menu-ul__ 
+* For mobile screensCopy the following element in __ul__ element with id attribute __trv-side-menu-ul__ 
 
    + For default template
 

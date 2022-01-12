@@ -16,9 +16,9 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 1. Navigate to the installation folder. For example, C:\Program Files (x86)\Progress\Telerik Reporting __{VERSION}__ \Report Designer.             
 
-1. Run the Standalone Designer (__Telerik.ReportDesigner.exe__ ).             
+1. Run the Standalone Designer (__Telerik.ReportDesigner.exe__).             
 
-1. Click __New__  > __Blank Report__  and choose a destination for saving the report.             Each newly created report renders the __pageHeaderSection__, __detailSection__,               __pageFooterSection__  sections.               The report also provides the __Report Header__  and __Report Footer__  sections which are hidden by default.               
+1. Click __New__ > __Blank Report__ and choose a destination for saving the report.             Each newly created report renders the __pageHeaderSection__, __detailSection__,               __pageFooterSection__ sections.               The report also provides the __Report Header__ and __Report Footer__ sections which are hidden by default.               
 
   ![initialview](images/initialview.PNG)
 

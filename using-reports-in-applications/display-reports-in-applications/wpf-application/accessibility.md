@@ -16,7 +16,7 @@ Telerik Reporting aims to provide a reporting solution accessible to a wider use
 
 ## Setting up accessibility features in WPF viewer
 
-The accessibility features are enabled or disabled using a Boolean dependency property named           __EnableAccessibility__. When the property is set to __true__, the XAML renderer produces enriched markup for the report content           and the report viewer controls’ behavior is changed so they respond differently to the user’s input. The default value of this property is __false__.           This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__            is set to __true__, the exported PDF will be created according to            [               PDF/UA (ISO standard 14289-1)             ](https://en.wikipedia.org/wiki/PDF/UA)            specification.         
+The accessibility features are enabled or disabled using a Boolean dependency property named           __EnableAccessibility__. When the property is set to __true__, the XAML renderer produces enriched markup for the report content           and the report viewer controls’ behavior is changed so they respond differently to the user’s input. The default value of this property is __false__.           This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__         is set to __true__, the exported PDF will be created according to            [            PDF/UA (ISO standard 14289-1)          ](https://en.wikipedia.org/wiki/PDF/UA)            specification.         
 
 > The accessibility routines access the report viewer parts through the theme template  __Telerik.ReportViewer.Wpf.xaml__.              In case you have modified the template, the accessibility features might be affected or disabled.           
 
@@ -64,25 +64,25 @@ The WPF report viewer supports the following important accessibility features:
 
 ## Supported accessibility features in rendered report contents
 
-All the report items have a property called  [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription).           The property value is an expression and it determines what will be the accessibility label when the report is rendered.           Its value is set as a meta-information label that is output to the screen readers through the standard            [               Windows Automation API             ](https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).         
+All the report items have a property called  [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription).           The property value is an expression and it determines what will be the accessibility label when the report is rendered.           Its value is set as a meta-information label that is output to the screen readers through the standard            [            Windows Automation API          ](https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).         
 
 The value of this label is created using the following pattern: `{type} {additional information} {description} `:         
 
-* __{type}__  is a placeholder that contains the type name of the currently rendered element - "Details section", "Text box", "Table", etc.               The report item names are localizable and can be substituted with any appropriate strings, even with empty values, if there is no need to include the report item name in the label.             
+* __{type}__ is a placeholder that contains the type name of the currently rendered element - "Details section", "Text box", "Table", etc.               The report item names are localizable and can be substituted with any appropriate strings, even with empty values, if there is no need to include the report item name in the label.             
 
-* __{additional information}__  is intended to give some meaningful information about the context where the current item is in, or about its additional properties.               The cases where it is most useful, are:             
+* __{additional information}__ is intended to give some meaningful information about the context where the current item is in, or about its additional properties.               The cases where it is most useful, are:             
 
    + - if the current item has some interactive action set, this token will contain the type of the action.                 
 
-   + - if the current item is __Table__  or __Crosstab__, the token will contain information about the row and column count.                 
+   + - if the current item is __Table__ or __Crosstab__, the token will contain information about the row and column count.                 
 
-   + - if the current item is nested in a __Table__  or __Crosstab__, the token will contain information                   about the current cell's row and column __zero-based index__.                   Additionally, if the cell is used as a header, this information will be also included in the label.                 
+   + - if the current item is nested in a __Table__ or __Crosstab__, the token will contain information                   about the current cell's row and column __zero-based index__.                   Additionally, if the cell is used as a header, this information will be also included in the label.                 
 
    + - if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked).                 
 
-* __{description}__  provides relevant information about the current item contents. Its value is evaluated using the item's               *AccessibleDescription*  property and if it is empty, falls back to the item's               *Value*  or *Text*  property, whichever is available.             
+* __{description}__ provides relevant information about the current item contents. Its value is evaluated using the item's               *AccessibleDescription*  property and if it is empty, falls back to the item's               *Value*  or *Text*  property, whichever is available.             
 
-For example, if a report contains a __TextBox__  with `Value = "Sorts by Category"`,           that performs a sorting action and is nested in a table's first (header) row and third column,           the generated *accessibility label*  value will be:           *Text box. Performs a sorting action. Column header. Column 2 Row 0. Sorts by Category.* 
+For example, if a report contains a __TextBox__ with `Value = "Sorts by Category"`,           that performs a sorting action and is nested in a table's first (header) row and third column,           the generated *accessibility label*  value will be:           *Text box. Performs a sorting action. Column header. Column 2 Row 0. Sorts by Category.* 
 
 ## Known issues
 

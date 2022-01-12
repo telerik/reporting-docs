@@ -16,7 +16,7 @@ position: 3
 
 To use Telerik Reports in Windows Forms application, you need the Windows Forms report viewer:
 
-1. Drag the __ReportViewer__  control from the __Toolbox__  to the form design surface.  
+1. Drag the __ReportViewer__ control from the __Toolbox__ to the form design surface.  
 
   ![](images/ReportViewer.png)
 
@@ -24,13 +24,13 @@ To use Telerik Reports in Windows Forms application, you need the Windows Forms 
 
 1. Build the application
 
-1. Set the __ReportSource__  for the report viewer. For more information, see[How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
+1. Set the __ReportSource__ for the report viewer. For more information, see[How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
 
-1. To run the report in the viewer, call __ReportViewer.RefreshReport()__  from your application code __.__  
+1. To run the report in the viewer, call __ReportViewer.RefreshReport()__ from your application code __.__ 
 
 ## Assign report to the viewer programmatically
 
-In the __Form_Load__  event handler you create an instance report source and set its __ReportDocument__            property to a report instance. Next assign the instance report source to the __ReportSource__  property of the viewer.           Finally call __ReportViewer.RefreshReport().__ 
+In the __Form_Load__ event handler you create an instance report source and set its __ReportDocument__         property to a report instance. Next assign the instance report source to the __ReportSource__ property of the viewer.           Finally call __ReportViewer.RefreshReport().__ 
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=Winviewer_SetReportSource}}
 ````C#

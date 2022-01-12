@@ -22,13 +22,13 @@ By default, CheckBox items are a set size. If you want to allow a CheckBox to ex
 
 ## Embedded expressions
 
-The text part of the Checkbox report item supports [             embedded             expressions           ]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) for mail merge functionality. Embedded expressions give you the freedom to get and insert data-driven           information directly into the CheckBox.Text property to produce customized reports and mail merging.         
+The text part of the Checkbox report item supports [          embedded             expressions        ]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) for mail merge functionality. Embedded expressions give you the freedom to get and insert data-driven           information directly into the CheckBox.Text property to produce customized reports and mail merging.         
 
 A view where each CheckBox is initialized with CheckAlign varying from TopLeft to BottomRight:   
 
   ![](images/checkboxitem2.jpg)
 
-The check mark image depends on the value set in the __Value__  property. By default it would accept  =true or =false. At design time the __Value__  property can be initialized with an expression which later at runtime is evaluated to one of the System.Windows.Forms.CheckState values e.g.:         
+The check mark image depends on the value set in the __Value__ property. By default it would accept  =true or =false. At design time the __Value__ property can be initialized with an expression which later at runtime is evaluated to one of the System.Windows.Forms.CheckState values e.g.:         
 
 =IsNull(Fields.Quantity, 0) > 100 which would return true or false and would check and uncheck the check mark respectively.         
 

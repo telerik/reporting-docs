@@ -101,17 +101,17 @@ JSON-based configuration file:
           "Name": "DocumentAuthor",
           "Value": "John Doe"
         }
-      ]
+   ]
     }
-  ]
+]
 }
 ````
 
 ## Configuring Multiple Entries for a Rendering Extension
 
-You can specify multiple instances of a single rendering extension to vary rendering behavior. If you configure multiple instances,                     make sure that each extension __name__  is unique. Then you can use the rendering extension programmatically by                     using the extension name to identify which particular instance to use for a particular rendering operation.                 
+You can specify multiple instances of a single rendering extension to vary rendering behavior. If you configure multiple instances,                     make sure that each extension __name__ is unique. Then you can use the rendering extension programmatically by                     using the extension name to identify which particular instance to use for a particular rendering operation.                 
 
-You should also specify the __description__  attribute of the Extension element. The string you specify for                     __description__  will be visible to users in the list of export options for the report. If you are configuring                     multiple versions of the same extension, be sure to provide a value for the __description__. Otherwise, all                     versions of the extension will have the same export option name.                 
+You should also specify the __description__ attribute of the Extension element. The string you specify for                     __description__ will be visible to users in the list of export options for the report. If you are configuring                     multiple versions of the same extension, be sure to provide a value for the __description__. Otherwise, all                     versions of the extension will have the same export option name.                 
 
 The following example illustrates how to use the default Image rendering extension (which produces TIFF output) alongside a second                     instance that outputs reports in EMF. Notice that the extension name distinguishes one instance from the other:                 
 
@@ -149,9 +149,9 @@ JSON-based configuration file:
           "Name": "TiffCompression",
           "Value": "ccitt4"
         }
-      ]
+   ]
     }
-  ]
+]
 }
 ````
 

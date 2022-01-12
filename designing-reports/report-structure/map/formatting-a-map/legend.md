@@ -38,7 +38,7 @@ The colored box displayed for each legend item is inherited from the fill color 
 
 ## Changing the Text Style of a Legend Item
 
-You can change the legend items text style by selecting the legend and with __Property Browser__  change __Style__  properties.         
+You can change the legend items text style by selecting the legend and with __Property Browser__ change __Style__ properties.         
 
 > If you are using the Standalone Report Designer you can take advantage of the ribbon format and map tools.           
 
@@ -60,13 +60,13 @@ You can move the legend to one of twelve different positions when the legend is 
 
 1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
-1. In the __Misc__  section select a value for the Position property.                 
+1. In the __Misc__ section select a value for the Position property.                 
 
 ###Move the Legend Inside the Plot area:
 
 1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
-1. In the __Misc__  section set the __IsInsideThePlotArea property__  to __True__.                 
+1. In the __Misc__ section set the __IsInsideThePlotArea property__ to __True__.                 
 
 ## Displaying Legend Items Horizontally
 

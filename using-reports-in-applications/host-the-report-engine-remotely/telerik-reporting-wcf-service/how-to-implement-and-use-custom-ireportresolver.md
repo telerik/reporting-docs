@@ -248,6 +248,6 @@ End Class
 </configuration>
 ````
 
-The custom resolver's Resolve method is called on each interaction with the report in the Silverlight ReportViewer e.g.,             changing report parameters' values or hitting refresh. To avoid unexpected results the recommended             [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) to work with are __UriReportSource__              and __TypeReportSource__.           
+The custom resolver's Resolve method is called on each interaction with the report in the Silverlight ReportViewer e.g.,             changing report parameters' values or hitting refresh. To avoid unexpected results the recommended             [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) to work with are __UriReportSource__           and __TypeReportSource__.           
 
 

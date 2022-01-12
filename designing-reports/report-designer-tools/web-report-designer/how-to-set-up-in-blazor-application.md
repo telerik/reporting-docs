@@ -24,9 +24,9 @@ position: 2
 
 ## Adding the Report Designer REST service and configuration
 
-1. Use NuGet package manager to add the __Telerik.WebReportDesigner.Services__  package. This will also resolve                             other dependencies automatically. For more information, see                             [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).                         
+1. Use NuGet package manager to add the __Telerik.WebReportDesigner.Services__ package. This will also resolve                             other dependencies automatically. For more information, see                             [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).                         
 
-1. Add required settings in the Startup.cs file.The __ConfigureServices__  method inside the __Startup.cs__  in the project                             should be modified in order to enable the Web Report Designer REST service. Make sure the application                             is configured for WebAPI controllers and call the *AddNewtonsoftJson*                              to enable the required NewtonsoftJson serialization:                         
+1. Add required settings in the Startup.cs file.The __ConfigureServices__ method inside the __Startup.cs__ in the project                             should be modified in order to enable the Web Report Designer REST service. Make sure the application                             is configured for WebAPI controllers and call the *AddNewtonsoftJson*                              to enable the required NewtonsoftJson serialization:                         
 
     
       ````c#
@@ -39,7 +39,7 @@ public void ConfigureServices(IServiceCollection services)
  ...
 ````
 
-1. Add the required services in the __ConfigureServices__  method. The sample configuration below                             uses the __Reports__  folder in the __WebRootPath__  to open and save report definitions.                             It is required to create the __Reports__  folder manually under __wwwroot__                              and optionally add some report definitions inside.                         
+1. Add the required services in the __ConfigureServices__ method. The sample configuration below                             uses the __Reports__ folder in the __WebRootPath__ to open and save report definitions.                             It is required to create the __Reports__ folder manually under __wwwroot__                           and optionally add some report definitions inside.                         
 
     
       ````c#
@@ -60,7 +60,7 @@ services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDe
 ...
 ````
 
-1. Make sure the endpoints configuration inside the __Configure__  method of the                             __Startup.cs__  are configured for API controllers by adding the following line in the                             lambda expression argument:                         
+1. Make sure the endpoints configuration inside the __Configure__ method of the                             __Startup.cs__ are configured for API controllers by adding the following line in the                             lambda expression argument:                         
 
     
       ````c#
@@ -71,14 +71,14 @@ app.UseEndpoints(endpoints =>
 });
 ````
 
-1. If not already present, add this line to the __Configure__  method of the __Startup.cs__                              to assure that the application can serve static files:                         
+1. If not already present, add this line to the __Configure__ method of the __Startup.cs__                           to assure that the application can serve static files:                         
 
     
       ````c#
 app.UseStaticFiles();
 ````
 
-1. Implement a Report Designer controller. Add a __Controllers__  folder to the application                             and right-click on it to add a new __Web API Controller Class__  item.                             Name it *ReportDesignerController*. This will be the Telerik Web Report Designer REST service in the                             project.                         
+1. Implement a Report Designer controller. Add a __Controllers__ folder to the application                             and right-click on it to add a new __Web API Controller Class__ item.                             Name it *ReportDesignerController*. This will be the Telerik Web Report Designer REST service in the                             project.                         
 
     
       ````c#
@@ -99,9 +99,9 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 ## Adding the Blazor Web Report Designer component
 
-1. Add NuGet package reference to the __Telerik.WebReportDesigner.Blazor__                              package hosted on the Progress Telerik proprietary NuGet feed.                             Make sure you have the needed NuGet feed added to VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).                         
+1. Add NuGet package reference to the __Telerik.WebReportDesigner.Blazor__                           package hosted on the Progress Telerik proprietary NuGet feed.                             Make sure you have the needed NuGet feed added to VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).                         
 
-1. Add JavaScript dependencies to the __head__  element of the                             __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly):                         
+1. Add JavaScript dependencies to the __head__ element of the                             __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly):                         
 
     
       ````html
@@ -111,14 +111,14 @@ public class ReportDesignerController : ReportDesignerControllerBase
 <script src="/api/reportdesigner/designerresources/js/webReportDesigner- {{site.buildversion}}.min.js/"></script>
 ````
 
-1. Add                              [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)                              to the __head__  element of the                             __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly).                             The Razor syntax for a server application differs and you need to escape the __@__  symbol as __@@__ :                         
+1. Add                              [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)                              to the __head__ element of the                             __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly).                             The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__ :                         
 
     
       ````html
 <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
 ````
 
-1. Add the dedicated __telerikWebReportDesignerInterop.js__  dependency at the end of the __body__  element of the                             __Pages/_Host.cshtml__  (Blazor Server) or __wwwroot/index.html__  (Blazor WebAssembly):                         
+1. Add the dedicated __telerikWebReportDesignerInterop.js__ dependency at the end of the __body__ element of the                             __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly):                         
 
     
       ````
@@ -149,5 +149,5 @@ public class ReportDesignerController : ReportDesignerControllerBase
                    PropertiesArea="new PropertiesAreaOptions() { Layout = PropertiesAreaLayout.Categorized }" />
 ````
 
-1. The __Report__  option will instruct the designer to look for *SampleReport.trdp*  inside                             __wwwroot/Reports__  on first load.                             You can create this report definition in the folder or omit the __Report__  option above.                             Finally, run the project.
+1. The __Report__ option will instruct the designer to look for *SampleReport.trdp*  inside                             __wwwroot/Reports__ on first load.                             You can create this report definition in the folder or omit the __Report__ option above.                             Finally, run the project.
 

@@ -16,7 +16,7 @@ The following table lists the device information settings for rendering in XPS f
 
 ## XPS Device Information Settings
 
-|  __Name__  |  __Type__  |  __Description__  |
+|  __Name__ |  __Type__ |  __Description__ |
 | ------ | ------ | ------ |
 |StartPage|Integer|The first page of the report to render. A value of __0__ indicates that all pages are rendered.|
 |EndPage|Integer|The last page of the report to render.|

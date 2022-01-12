@@ -30,7 +30,7 @@ The service can be used from the [HTML5 Report Viewer]({%slug telerikreporting/u
 
 The current ServiceStack implementation is based on            [ServiceStack](https://servicestack.net/)            V3 __(3.9.70.0)__ 
 
-> The  __Telerik Reporting ServiceStack REST Service__  should be the only ServiceStack based Web Service in a project, as all ServiceStack services have  [a single AppHost per AppDomain](                 http://mono.servicestack.net/ServiceStack.Hello/#AppHost               ).           
+> The  __Telerik Reporting ServiceStack REST Service__ should be the only ServiceStack based Web Service in a project, as all ServiceStack services have  [a single AppHost per AppDomain](              http://mono.servicestack.net/ServiceStack.Hello/#AppHost            ).           
 
 # See Also
 

@@ -46,5 +46,5 @@ An array containing [FormatInfo]({%slug telerikreporting/using-reports-in-applic
             {"name":"IMAGE","localizedName":"TIFF file"},
             {"name":"DOCX","localizedName":"Word Document"},
             {"name":"XPS","localizedName":"XPS Document"}
-          ]
+       ]
 

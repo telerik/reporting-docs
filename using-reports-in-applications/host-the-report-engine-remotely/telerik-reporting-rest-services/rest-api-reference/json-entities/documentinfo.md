@@ -30,14 +30,14 @@ Document info indicating the status of the document resource.
                       ‘text’: ‘Bikes’,
                       ‘page’: 3,
                     }
-                  ]
+               ]
                 },
                 {
                   ‘id’: ‘Bikes’,
                   ‘text’: ‘Bikes’,
                   ‘page’: 3,
                 },
-              ],
+           ],
           }
 
         

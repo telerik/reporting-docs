@@ -14,7 +14,7 @@ position: 8
 
 This article elaborates on how to setup the viewer for printing reports.         
 
-The printing functionality is based on rendering the report in PDF format with special settings so when           the PDF file opens in a browser, the PDF plug-in's __Print dialog__  is directly invoked.         
+The printing functionality is based on rendering the report in PDF format with special settings so when           the PDF file opens in a browser, the PDF plug-in's __Print dialog__ is directly invoked.         
 
 The print functionality requires:
 
@@ -30,9 +30,9 @@ The print functionality requires:
 
 * (Internet Explorer only) ActiveX Filtering should be disabled.
 
-> In  __Google Chrome 77+__  [printing is allowed only in response to a user gesture](https://pdfium.googlesource.com/pdfium.git/+/2021804f1b414c97667c03d7ab19daf66f6a19ef).             This prevents the print dialog opening automatically when a PDF is embedded in a web page             and the user needs to click on the print button manually to invoke the print preview dialog.           
+> In  __Google Chrome 77+__ [printing is allowed only in response to a user gesture](https://pdfium.googlesource.com/pdfium.git/+/2021804f1b414c97667c03d7ab19daf66f6a19ef).             This prevents the print dialog opening automatically when a PDF is embedded in a web page             and the user needs to click on the print button manually to invoke the print preview dialog.           
 
-> In  __Firefox 19+__  the default viewing option for PDF files is the  __PDF.js__,             which is not added as a plug-in and Firefox does not expose the content type viewing preferences -  [Firefox bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=840439).             Thus the Adobe PDF plug-in is always active whether or not it is the preferred viewing option.             To ensure the print operation in Firefox will be accomplished, clicking the print button would             export the report to PDF which will be printed with the available client viewing tools.           
+> In  __Firefox 19+__ the default viewing option for PDF files is the  __PDF.js__,             which is not added as a plug-in and Firefox does not expose the content type viewing preferences -  [Firefox bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=840439).             Thus the Adobe PDF plug-in is always active whether or not it is the preferred viewing option.             To ensure the print operation in Firefox will be accomplished, clicking the print button would             export the report to PDF which will be printed with the available client viewing tools.           
 
 By default the viewer widget tries to use the PDF plug-in of the browser for printing. When it is not available           or not supported, the widget falls back to exporting to a PDF file containing a special 'print'           script. The purpose of this script is to open the Print dialog of the PDF reader right after the file has been opened.         
 

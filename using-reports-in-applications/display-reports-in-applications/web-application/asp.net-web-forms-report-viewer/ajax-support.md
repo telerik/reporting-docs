@@ -16,13 +16,13 @@ position: 5
 
 The main idea of Ajax requests is the elimination of full-page postbacks. In contrast, only the relevant parts of the           page are updated, without a disturbing refresh. The markup that is transferred between the client machine and the server is reduced            dramatically, which results in a significant performance improvement.
 
-The Web ReportViewer can work both __Telerik RadAjax__  and the native __ASP.NET AJAX__  frameworks.          Generally you do not have to apply ajax for the Web ReportViewer itself as all its commands are issued through an http handler          and update only the report/report parameters areas and not the entire page.
+The Web ReportViewer can work both __Telerik RadAjax__ and the native __ASP.NET AJAX__ frameworks.          Generally you do not have to apply ajax for the Web ReportViewer itself as all its commands are issued through an http handler          and update only the report/report parameters areas and not the entire page.
 
 So when might you need to use ajax in conjunction with the web report viewer? A valid case is when you want to change the         Report on another control action e.g. button click.
 
 ## Issue Ajax Request through Telerik RadAjaxManager
 
-Add the instance of the ReportViewer to a __RadAjaxManager__  control.                  You can optionally provide it with a loading panel, as shown below:             
+Add the instance of the ReportViewer to a __RadAjaxManager__ control.                  You can optionally provide it with a loading panel, as shown below:             
 
     
 ````XML

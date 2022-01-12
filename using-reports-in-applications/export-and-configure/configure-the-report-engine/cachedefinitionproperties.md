@@ -40,7 +40,7 @@ JSON-based configuration file:
       {
         "cacheDefinitionProperties": "false"
       }
-    ]
+ ]
   }
 }
 ````

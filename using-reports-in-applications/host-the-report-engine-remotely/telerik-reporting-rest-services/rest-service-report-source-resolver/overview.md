@@ -22,7 +22,7 @@ The Reporting REST Service's ReportSourceResolver handles reports on the server.
 
 The Reporting REST Service's resolver is used when resolving information for a report on the server,           which includes:         
 
-* Getting information about the report's __ReportParameters__  collection;             
+* Getting information about the report's __ReportParameters__ collection;             
 
 * Returning a valid __server-side Report Source__;             
 

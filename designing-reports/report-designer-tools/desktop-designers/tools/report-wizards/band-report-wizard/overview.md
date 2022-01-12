@@ -18,17 +18,17 @@ To create a new report with the wizard:
 
 * Standalone Report Designer:           
 
-   + Select __File | New |__  from the Telerik Report Designer File menu;               __Click__  on the Band Report Wizard template. Create file dialog opens;               Choose a file name and directory. Click __Save__  and the Band Report Wizard opens.               
+   + Select __File | New |__ from the Telerik Report Designer File menu;               __Click__ on the Band Report Wizard template. Create file dialog opens;               Choose a file name and directory. Click __Save__ and the Band Report Wizard opens.               
 
 * Visual Studio:           
 
    + Create a new class library or use an existing one.                 Verify that the targeted.NET framework version is.NET4(+), Full profile as Client profile is not supported.               
 
-   + __Right-click__  the project context menu and select                 __Add | New Item | Telerik Report__.                 Enter a name for the report class and click the __Add__  button to close the dialog. Select report wizard form opens.               
+   + __Right-click__ the project context menu and select                 __Add | New Item | Telerik Report__.                 Enter a name for the report class and click the __Add__ button to close the dialog. Select report wizard form opens.               
 
-   + Select the __Band Report Wizard__  option from the list and click __OK__.               
+   + Select the __Band Report Wizard__ option from the list and click __OK__.               
 
-|  __Step__  |  __Description__  |
+|  __Step__ |  __Description__ |
 | ------ | ------ |
 | __Choose Data Source__ |This page lets you use an existing data source from a list of data sources<br/>            or add new Data Source. If you choose to create new data source, click the __Add New Data Source__ button to start the [Data Source Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}). It will walk you through an additional set<br/>            of steps and when finished will return you to the Report Wizard so you can continue.|
 | __Design Data Layout__ |Lets you select data columns from the data source and have them placed in the report heading and the detail sections of the report. You can also choose columns to group data by.<br/>            Select from a list located on the left in the dialog titled __Available Fields__.<br/>            Use the __Report__, __Group__ and __Detail__ buttons to add the selected column from the __Available Fields__ to the respective list of __Displayed Fields__.<br/>            Use the __Remove__ button to move fields from the __Displayed Fields__ list back to the __Available Fields__ list.  Use the up and down arrow buttons to reorder the columns in the report __.__ |

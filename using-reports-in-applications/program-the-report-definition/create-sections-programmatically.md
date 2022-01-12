@@ -12,21 +12,21 @@ position: 2
 
 
 
-To create sections in code, instantiate the appropriate object, set its properties, and add it to the __Report__  object's __Items__  collection. The objects you will need to work with are:
+To create sections in code, instantiate the appropriate object, set its properties, and add it to the __Report__ object's __Items__ collection. The objects you will need to work with are:
 
-*  __DetailSection__  - for a detail section
+*  __DetailSection__ - for a detail section
 
-*  __GroupHeaderSection__  - for a group header
+*  __GroupHeaderSection__ - for a group header
 
-*  __GroupFooterSection__  - for a group footer
+*  __GroupFooterSection__ - for a group footer
 
-*  __PageHeaderSection__  - for a page header
+*  __PageHeaderSection__ - for a page header
 
-*  __PageFooterSection__  - for a page footer
+*  __PageFooterSection__ - for a page footer
 
-*  __ReportHeaderSection__  - for a report header
+*  __ReportHeaderSection__ - for a report header
 
-*  __ReportFooterSection__  - for a report footer
+*  __ReportFooterSection__ - for a report footer
 
 For example, this code creates a detail section and adds it to the report:
 

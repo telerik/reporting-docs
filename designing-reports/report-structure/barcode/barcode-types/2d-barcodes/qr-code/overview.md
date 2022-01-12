@@ -12,7 +12,7 @@ position: 0
 
 
 
-QR code (abbreviated from __Quick Response Code__ ) is the trademark for a type of matrix barcode         first designed for the automotive industry in Japan. The QR Code system has become popular outside the automotive industry due to its         fast readability and greater storage capacity compared to standard UPC barcodes.       
+QR code (abbreviated from __Quick Response Code__) is the trademark for a type of matrix barcode         first designed for the automotive industry in Japan. The QR Code system has become popular outside the automotive industry due to its         fast readability and greater storage capacity compared to standard UPC barcodes.       
 
 A QR code consists of black modules (square dots) arranged in a square grid on a white background, which can be read by an imaging device         (such as a camera) and processed using Reed–Solomon error correction until the image can be appropriately interpreted. The required data         are then extracted from patterns present in both horizontal and vertical components of the image.       
 

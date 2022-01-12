@@ -22,7 +22,7 @@ In this example, we will use a.NET Standard 2.0 Class Library which is suitable 
 
 1. Open Visual Studio and create a new.NET Standard 2.0 Class Library. Name the project __CarObjects__.             
 
-1. Add a new class named __Car__  which will contain the model of the car.             
+1. Add a new class named __Car__ which will contain the model of the car.             
 
     
       ````c#
@@ -101,7 +101,7 @@ When started, the application that hosts the Web Report Designer will try to res
 
 1. In order to use the custom assembly for ObjectDataSource, it needs to be registered in the application's configuration file.         
 
-   + For.NET Core applications, this is done in the __appsettings.json__  file:             
+   + For.NET Core applications, this is done in the __appsettings.json__ file:             
 
     
       ````js
@@ -110,13 +110,13 @@ When started, the application that hosts the Web Report Designer will try to res
        {
          "name": "CarObjects"
        }
-     ]
+  ]
     }
 ````
 
 Another option is by custom implementation of the   [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-3.1)             interface.         
 
-   + For.NET Framework projects, the configuration should be added to the __web.config__  file.             
+   + For.NET Framework projects, the configuration should be added to the __web.config__ file.             
 
     
       ````xml
@@ -139,25 +139,25 @@ We are ready with the configuration. Now let's step to the wizard.
 
 ## Adding the ObjectDataSource through the Wizard
 
-Once you have registered the assembly, run the Web Report Designer project. Go to the __Components__  tab and           click on __Object Data Source__. Follow the steps below to complete Wizard.         
+Once you have registered the assembly, run the Web Report Designer project. Go to the __Components__ tab and           click on __Object Data Source__. Follow the steps below to complete Wizard.         
 
-1. __Choose a business object__ The selected business object type's assembly-qualified name will be stored in the data source component's DataSource property.             In this screen, expand __CarObjects__  and select __Cars__. Click on __Next__.             
+1. __Choose a business object__ The selected business object type's assembly-qualified name will be stored in the data source component's DataSource property.             In this screen, expand __CarObjects__ and select __Cars__. Click on __Next__.             
 
 1. __Choose a data member__ The business object instance will be created using its default constructor. You have the option to specify a different constructor or a data member (method or property) that will return the data.             Here, you need to keep the default option- __Use the default constructor__. Click on __Next__.             
 
 1. __Configure data source parameters__ In this step, you can specify default value or expression and design-time value for data source parameters.             In this scenario, this step will be skipped because the selected default constructor does not have any parameters.             
 
-1. __Preview data source results__ During data preview the business object will be called using the configured design-time parameter values if such are specified.              This is the last step of the wizard. After pressing __Finish__  the wizard will configure the ObjectDataSource component with the specified settings and close.             
+1. __Preview data source results__ During data preview the business object will be called using the configured design-time parameter values if such are specified.              This is the last step of the wizard. After pressing __Finish__ the wizard will configure the ObjectDataSource component with the specified settings and close.             
 
 ## Displaying the Data
 
 As a final step, let's display the data from the ObjectDataSource in the report.          
 
-1. From the __Explorer__  tab, click on the Report.             
+1. From the __Explorer__ tab, click on the Report.             
 
-1. Then, from the Properties pane, go to __Data__  -> __DataSource__  and select the ObjectDataSource.             
+1. Then, from the Properties pane, go to __Data__ -> __DataSource__ and select the ObjectDataSource.             
 
-1. Drag the fields from the __Explorer__  tab to the report and hit  __Preview__.             
+1. Drag the fields from the __Explorer__ tab to the report and hit  __Preview__.             
 
 # See Also
 
@@ -169,5 +169,5 @@ As a final step, let's display the data from the ObjectDataSource in the report.
 
 * [
         Connecting the ObjectDataSource component to a Data Source from desktop report designer
-      ]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
+   ]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
 

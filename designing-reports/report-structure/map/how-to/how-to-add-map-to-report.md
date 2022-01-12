@@ -12,7 +12,7 @@ position: 0
 
 
 
-The simplest way to add a __Map__  item to your report is to run the Map Wizard.         After you add a Map item to the design surface, you can click its elements to edit the selected element's properties in the         *Properties*  grid. Additionally in the Standalone Report Designer you can use the Ribbon tools.       
+The simplest way to add a __Map__ item to your report is to run the Map Wizard.         After you add a Map item to the design surface, you can click its elements to edit the selected element's properties in the         *Properties*  grid. Additionally in the Standalone Report Designer you can use the Ribbon tools.       
 
 ## To add a map to a report by using the Visual Studio Report Designer Map Wizard
 

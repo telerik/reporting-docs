@@ -28,7 +28,7 @@ You can also use the LegendItem's ConditionalFormatting and MarkConditionalForma
 
 ## Changing the Text Style of a Legend Item
 
-You can change the legend items text style by selecting the legend and with __Property Browser__  change __Style__  properties.         
+You can change the legend items text style by selecting the legend and with __Property Browser__ change __Style__ properties.         
 
 > If you are using the standalone report designer you can take advantage of the graph tools in the ribbon's Design and Format tabs.           
 
@@ -44,7 +44,7 @@ Items are ordered in the legend according to the order that their corresponding 
 
 ## Changing the Text of a Legend Item
 
-You can change the legend items text by changing each Graph.Series LegendItem properties. The __LegendItem.Value property__  can be set via [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         
+You can change the legend items text by changing each Graph.Series LegendItem properties. The __LegendItem.Value property__ can be set via [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}).         
 
 ## Removing Extra Legend Items
 
@@ -60,13 +60,13 @@ You can move the legend to one of twelve different positions when the legend is 
 
 1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
-1. In the __Misc__  section select a value for the Position property.                 
+1. In the __Misc__ section select a value for the Position property.                 
 
 ###Move the Legend Inside the Plot area:
 
 1. Click the legend area.    The legend properties are listed in the __Property Browser__;                 
 
-1. In the __Misc__  section set the __IsInsideThePlotArea property__  to __True__.                 
+1. In the __Misc__ section set the __IsInsideThePlotArea property__ to __True__.                 
 
 ## Displaying Legend Items Horizontally
 

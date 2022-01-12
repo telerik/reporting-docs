@@ -50,11 +50,11 @@ The schema version is used by the Standalone Report Designer to identify support
 
    1. Right-click the report.                         
 
-   1. Select __Open with...__  option.                         
+   1. Select __Open with...__ option.                         
 
    1. Choose a zip manager. For example, the free 7-Zip application.                         
 
-   1. Use an application such as Notepad in which you can view the XML to open the __definition.xml__  file.                     
+   1. Use an application such as Notepad in which you can view the XML to open the __definition.xml__ file.                     
 
 1. Check the xmlns attribute part of the Report element               It should look like this: http://schemas.telerik.com/reporting/2017/3.1.               The above xmlns attribute means that this definition is introduced in 2017 R3 SP1.               For more information see [the following section](#xml-schema-versioning)
 

@@ -25,7 +25,7 @@ Let us demonstrate this with a simple example. Suppose that we have a TextBox co
 
 First we need to attach to the TextBox's ItemDataBinding event. Double-click the event in the property grid           and an event handler method will be automatically generated for you.         
 
-As explained in [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) topic, the           __sender__  argument is in fact the __processing__  TextBox that           has already been data bound. The method will be called for each data row, i.e. for each employee we have in the           data source. So the only thing we have left to do is cast the sender, check the position, and do the coloring if           needed:         
+As explained in [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) topic, the           __sender__ argument is in fact the __processing__ TextBox that           has already been data bound. The method will be called for each data row, i.e. for each employee we have in the           data source. So the only thing we have left to do is cast the sender, check the position, and do the coloring if           needed:         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddTextBoxItemDataBindingSnippet}}
 ````C#

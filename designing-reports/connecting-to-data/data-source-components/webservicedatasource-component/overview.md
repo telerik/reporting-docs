@@ -18,7 +18,7 @@ The web service may omit properties with empty values in the data response to sa
 
 The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.       
 
-> In order to preview reports which use the WebServiceDataSource component it is required to reference the  __Telerik.Reporting.WebServiceDataSource__  DLL or the corresponding NuGet package           in your application.         
+> In order to preview reports which use the WebServiceDataSource component it is required to reference the  __Telerik.Reporting.WebServiceDataSource__ DLL or the corresponding NuGet package           in your application.         
 
 ## Configuring the Component
 
@@ -85,7 +85,7 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 
 It is possible to leverage the 2-Step Authentication mechanism above in order to retrieve a session cookie from the server which will authenticate subsequent requests.           In this scenario first a request will be sent to the server for authentication purposes and the response should contain the generated cookie for the authenticated user.           If the cookie domain and path matches the Web Service Data Source Service URL the cookie will be sent in the following data retrieval request.         
 
-> When using cookie-based authentication, consider using '()' as value for the  __Token Path__  when configuring the 2-step authentication.            This will ensure that no token is found in the login-response and no token will be included in the subsequent requests.
+> When using cookie-based authentication, consider using '()' as value for the  __Token Path__ when configuring the 2-step authentication.            This will ensure that no token is found in the login-response and no token will be included in the subsequent requests.
 
 ## Supported developer platforms
 

@@ -18,11 +18,11 @@ The Graph item can have one or more titles.            By default the graph item
 
 1. Click the graph that you want to change.    The selected graph properties are listed in the __Property Browser__.
 
-1. In the __Titles property__, click the __Edit Collection (…) button__.                     The __GraphTitle Collection Editor__  opens.                 
+1. In the __Titles property__, click the __Edit Collection (…) button__.                     The __GraphTitle Collection Editor__ opens.                 
 
-1. Click __Add__  to add a title and set the Text property.                  
+1. Click __Add__ to add a title and set the Text property.                  
 
-1. Click __Add__  to add more colors to the palette.                 
+1. Click __Add__ to add more colors to the palette.                 
 
 1. When you are done, click __OK__.                 
 

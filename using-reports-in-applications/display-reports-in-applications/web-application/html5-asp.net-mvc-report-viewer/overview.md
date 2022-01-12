@@ -22,11 +22,11 @@ The viewer works like the HTML5 Report Viewer in a client-server pair with the [
 
 ## Requirements
 
-* The ASP.NET MVC Report Viewer is built on and requires                [                   ASP.NET MVC 4                 ](http://www.asp.net/mvc/mvc4)                or newer framework.             
+* The ASP.NET MVC Report Viewer is built on and requires                [                ASP.NET MVC 4              ](http://www.asp.net/mvc/mvc4)                or newer framework.             
 
 * A reference to __Telerik.ReportViewer.Mvc.dll__ 
 
-* The ASP.NET MVC Report Viewer is a server-side wrapper of the [                 HTML5 JavaScript Report Viewer               ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and you should conform to the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).               The CSS and JS files must be loaded on the page before creating the HTML5 Viewer.             
+* The ASP.NET MVC Report Viewer is a server-side wrapper of the [              HTML5 JavaScript Report Viewer            ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and you should conform to the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).               The CSS and JS files must be loaded on the page before creating the HTML5 Viewer.             
 
 ## Browser Support
 

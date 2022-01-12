@@ -16,7 +16,7 @@ This article will explain how to use          [Redis storage](http://redis.io/) 
 
 ## Adding the necessary dependencies
 
-Telerik Reporting uses __StackExchange.Redis__  client library to access a Redis database.           When adding a reference to __Telerik.Reporting.Cache.StackExchangeRedis__, the version of StackExchange.Redis client must be considered,           because version 2.0+ introduces breaking changes and is not compatible with previous versions.         
+Telerik Reporting uses __StackExchange.Redis__ client library to access a Redis database.           When adding a reference to __Telerik.Reporting.Cache.StackExchangeRedis__, the version of StackExchange.Redis client must be considered,           because version 2.0+ introduces breaking changes and is not compatible with previous versions.         
 
 * Telerik.Reporting.Cache.StackExchangeRedis assembly depends on StackExchange.Redis.StrongName version 1.0.320 up to version 1.2.7.             
 
@@ -33,18 +33,18 @@ Telerik Reporting uses __StackExchange.Redis__  client library to access a Redis
 
    >When using greater version, a  [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)  should be added in the application configuration file to the currently referenced dll version.                       
 
-   + Add reference to the                       __Telerik.Reporting.Cache.StackExchangeRedis__                        library located in the {Telerik Reportng installation folder}/Bin folder.                     
+   + Add reference to the                       __Telerik.Reporting.Cache.StackExchangeRedis__                     library located in the {Telerik Reportng installation folder}/Bin folder.                     
 
 1. For projects using StackExchange.Redis version 2.0.601 or greater:                 
    + In your application project add reference to the                        [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis)                        NuGet package with version 2.0.601 or greater.                       This will add a dll reference to StackExchange.Redis.dll.                     
 
    >When using greater version, a  [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)  should be added in the application configuration file to the currently referenced dll version.                       
 
-   + Add reference to the                       __Telerik.Reporting.Cache.StackExchangeRedis.2__                        library located in the {Telerik Reportng installation folder}/Bin/netstandard2.0 folder.                     
+   + Add reference to the                       __Telerik.Reporting.Cache.StackExchangeRedis.2__                     library located in the {Telerik Reportng installation folder}/Bin/netstandard2.0 folder.                     
 
 ## Using the Redis storage
 
-Where needed in your application create an instance of the            [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage)            class. It takes as a parameter an __StackExchange.Redis.ConnectionMultiplexer__            object which should be reused for the application lifetime. See            [(StackExchange.Redis) Basic Usage](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Basics.md)  for more information.         
+Where needed in your application create an instance of the            [RedisStorage](/reporting/api/Telerik.Reporting.Cache.StackExchangeRedis.RedisStorage)            class. It takes as a parameter an __StackExchange.Redis.ConnectionMultiplexer__         object which should be reused for the application lifetime. See            [(StackExchange.Redis) Basic Usage](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Basics.md)  for more information.         
 
 # See Also
 

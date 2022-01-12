@@ -12,7 +12,7 @@ position: 3
 
 
 
-The various report __Section__  objects expose these events:         
+The various report __Section__ objects expose these events:         
 
 | Event | Description |
 | ------ | ------ |

@@ -22,13 +22,13 @@ Page width minus sum of left and right margins minus ColumnSpacing * (ColumnCoun
 
 ## Setup multi-column report layout
 
-1. In the Properties window expand the __PageSettings__  property of the report.
+1. In the Properties window expand the __PageSettings__ property of the report.
 
-1. Change the __ColumnCount__  property to __4__.
+1. Change the __ColumnCount__ property to __4__.
 
-1. Set __ColumnSpacing__  if needed.
+1. Set __ColumnSpacing__ if needed.
 
-1. Resize the report to match the desired width of the columns. You can do this visually or by setting the __Width__  property of the report in the Properties window.
+1. Resize the report to match the desired width of the columns. You can do this visually or by setting the __Width__ property of the report in the Properties window.
 
 1. Resize any report items so that they are not greater than the width of the report.
 

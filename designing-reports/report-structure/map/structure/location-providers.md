@@ -14,9 +14,9 @@ position: 2
 
 ## Location Providers
 
-The __Location Provider__  matches the addresses or locations with geographical coordinates (latitude and longitude).           It is used in conjunction with the GeoLocation groups which is used to provide the geocoding request in order to retrieve the data point coordinates.           When you make a geocoding request, the response returns one or more location resources that contain location information ordered by relevance.           The more detailed information is used in the request, the more accurate the results will be.         
+The __Location Provider__ matches the addresses or locations with geographical coordinates (latitude and longitude).           It is used in conjunction with the GeoLocation groups which is used to provide the geocoding request in order to retrieve the data point coordinates.           When you make a geocoding request, the response returns one or more location resources that contain location information ordered by relevance.           The more detailed information is used in the request, the more accurate the results will be.         
 
-For example, if you are looking for *Vienna, Austria*, you need to provide the country name as well, because otherwise the first returned result would be *Vienna, VA, United States*.           That's why concatenating a city name with a state/region name and a country name will result in a more accurate geocoding.           The location providers requires a valid key to authenticate the requests, so the user should fill it in in the __ClientToken__  property.         
+For example, if you are looking for *Vienna, Austria*, you need to provide the country name as well, because otherwise the first returned result would be *Vienna, VA, United States*.           That's why concatenating a city name with a state/region name and a country name will result in a more accurate geocoding.           The location providers requires a valid key to authenticate the requests, so the user should fill it in in the __ClientToken__ property.         
 
 Supported location providers are:         
 

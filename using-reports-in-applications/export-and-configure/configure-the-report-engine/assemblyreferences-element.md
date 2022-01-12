@@ -82,7 +82,7 @@ JSON-based configuration file:
         "culture": "neutral",
         "publicKeyToken": "null"
       }
-    ]
+ ]
 }
 ````
 

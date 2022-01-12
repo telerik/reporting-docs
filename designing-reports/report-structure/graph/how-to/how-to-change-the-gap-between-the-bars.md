@@ -20,7 +20,7 @@ The following pictures show how the column chart would look like with different 
 
 |  <br/>  ! [Category Scale Spacing Slot Count 1](images/Graph/CategoryScale_SpacingSlotCount_1.png)|  <br/>  ! [Category Scale Spacing Slot Count 1a](images/Graph/CategoryScale_SpacingSlotCount_1a.png)|
 
-The default value of __1__  produces an empty space which size is equal to a single data point's width.         
+The default value of __1__ produces an empty space which size is equal to a single data point's width.         
 
 >caption 
 
@@ -32,17 +32,17 @@ When the value is set to __0__, the data points will occupy all the available sl
 
 |  <br/>  ! [Category Scale Spacing Slot Count 3](images/Graph/CategoryScale_SpacingSlotCount_3.png)|  <br/>  ! [Category Scale Spacing Slot Count 3a](images/Graph/CategoryScale_SpacingSlotCount_3a.png)|
 
-A higher value (in this case __3__ ) leaves more empty space around the data points, making them thinner.         
+A higher value (in this case __3__) leaves more empty space around the data points, making them thinner.         
 
 ## Changing the SpacingSlotCount property
 
-To change the __Scale.SpacingSlotCount__  property, follow these steps:         
+To change the __Scale.SpacingSlotCount__ property, follow these steps:         
 
 1. On the design surface select the target axis.             
 
-1. In the __Misc__  section select the __Scale.SpacingSlotCount__  property, as shown in the image below.             
+1. In the __Misc__ section select the __Scale.SpacingSlotCount__ property, as shown in the image below.             
 
-1. Modify the property according to your requirements, i.e. in order to increase the empty space, increase the __SpacingSlotCount__  value.               
+1. Modify the property according to your requirements, i.e. in order to increase the empty space, increase the __SpacingSlotCount__ value.               
 
   ![Graph Axis Spacing Slot Count Selected](images/Graph/GraphAxis_SpacingSlotCount_Selected.png)
 

@@ -22,9 +22,9 @@ Before you continue, make sure that the following prerequisites are met:
 
 1. A running application that hosts a Reporting REST service at address */api/reports*. For more information, see               [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).             
 
-1. A reference from the project that hosts the Reporting REST service to the Reports Library located in the               __[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Bin__  folder.              
+1. A reference from the project that hosts the Reporting REST service to the Reports Library located in the               __[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Bin__ folder.              
 
-1. A script with the custom Telerik Kendo UI distribution for Telerik Reporting               (located in the __[TelerikReporting_InstallDir]\Html5\ReportViewer\js__  folder)               or with the mainstream Kendo UI distribution downloaded locally or via the                [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn).             
+1. A script with the custom Telerik Kendo UI distribution for Telerik Reporting               (located in the __[TelerikReporting_InstallDir]\Html5\ReportViewer\js__ folder)               or with the mainstream Kendo UI distribution downloaded locally or via the                [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn).             
 
    >You must load only one version of Telerik Kendo UI styles and scripts on the page.                 For more information see [](143e5c03-e69d-416f-9ac0-85c397b22b8e#KendoWidgetsRequirements).               
 
@@ -128,7 +128,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 -->
 ````
 
-1. Add a ```<div>``` element to the ```<body>``` element that will serve as a placeholder for the viewer’s widget.                   The ```<div>``` element's ID attribute serves as a key(Id) for the viewer object.                   Its content (*loading...* ) will be displayed while the viewer’s content is being loaded (from the template). :                 
+1. Add a ```<div>``` element to the ```<body>``` element that will serve as a placeholder for the viewer’s widget.                   The ```<div>``` element's ID attribute serves as a key(Id) for the viewer object.                   Its content (*loading...*) will be displayed while the viewer’s content is being loaded (from the template). :                 
 
     
     ````html
@@ -158,7 +158,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 
     where x.x.x.x is the HTML5 ReportViewer/Telerik Reporting version (e.g. {{site.buildversion}}).                   The relative paths that you use must reflect the project's structure.                     The default template is using TelerikWebUI icons. If you prefer a template with *FontAwesome*  icons, you have to set the                    templateUrl option to /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html                 
 
-    >The viewer's  __reportSource__  consists of report and parameters attributes,                     where  __report__  is the string description of the report that will be displayed, and                      __parameters__  is a collection of parameter keys and values that will be sent to the report.                     The report's string description is handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                       The above example uses the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  of a report's type (report created in Visual Studio Report Designer).                     This string description will be handled automatically by the   [ReportTypeResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver).                   
+    >The viewer's  __reportSource__ consists of report and parameters attributes,                     where  __report__ is the string description of the report that will be displayed, and                      __parameters__ is a collection of parameter keys and values that will be sent to the report.                     The report's string description is handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                       The above example uses the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  of a report's type (report created in Visual Studio Report Designer).                     This string description will be handled automatically by the   [ReportTypeResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver).                   
 
 1. Make the viewer fill the entire browser window. Add the following style to the ```<head>``` element:
 

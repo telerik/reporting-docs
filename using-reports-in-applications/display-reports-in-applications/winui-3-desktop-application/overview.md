@@ -40,7 +40,7 @@ The toolbar of the WPF report viewer provides basic functionality for interacti
 
 * Page settings
 
-* Print Preview: switches between __Logical__  and __Physical__  page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.             
+* Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.             
 
 * Print
 

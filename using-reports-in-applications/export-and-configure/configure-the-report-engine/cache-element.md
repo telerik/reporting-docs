@@ -82,9 +82,9 @@ JSON-based configuration file:
             "name": "BasePath",
             "value": "c:\\MyDataCache"
           }
-        ]
+     ]
       }
-    ]
+ ]
   }
 }
 ````

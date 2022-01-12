@@ -12,7 +12,7 @@ position: 0
 
 
 
-Integrate the Angular Report Viewer component in your Angular applications regardless of the module loader that you use         (__WebPack__  or __SystemJS__ ).       
+Integrate the Angular Report Viewer component in your Angular applications regardless of the module loader that you use         (__WebPack__ or __SystemJS__).       
 
 The Angular component is built on top of the         [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is the base for all Web-technologies report viewers as well.       
 

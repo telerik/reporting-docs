@@ -35,7 +35,7 @@ In order to expose your data, so it can be utilized by the Object/OpenAccess/Ent
 </configuration>
 ````
 
-The section should be added to the designer configuration file, __Telerik.ReportDesigner.exe.config__  that can be found in           the Report Designer folder, which is the root location where the application is being executed.            By default this is '(*Telerik Reporting installation folder* )\Report Designer'.           The Report Designer would also search the assembly itself in this base folder.         
+The section should be added to the designer configuration file, __Telerik.ReportDesigner.exe.config__ that can be found in           the Report Designer folder, which is the root location where the application is being executed.            By default this is '(*Telerik Reporting installation folder*)\Report Designer'.           The Report Designer would also search the assembly itself in this base folder.         
 
 To instruct the Report Designer to look for assemblies in other locations as well, use the            [```<probing>``` Element](http://msdn.microsoft.com/en-US/library/823z9h8w%28v=vs.80%29). For more information, see            [Locating the Assembly through Codebases or Probing](http://msdn.microsoft.com/en-US/library/15hyw9x3%28v=vs.100%29) :         
 

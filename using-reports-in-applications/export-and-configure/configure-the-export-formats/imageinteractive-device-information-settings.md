@@ -64,9 +64,9 @@ JSON-based configuration file:
           "Name": "TextRenderingHint",
           "Value": "AntiAliasGridFit"
         }
-      ]
+   ]
     }
-  ]
+]
 }
 ````
 

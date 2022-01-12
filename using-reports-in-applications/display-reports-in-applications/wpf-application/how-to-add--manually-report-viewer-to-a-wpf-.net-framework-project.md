@@ -20,7 +20,7 @@ Setting a DataContext to a parent element of ReportViewer leads to BindingExpres
 
 ## Binding Redirects
 
-In case you use *Telerik UI for WPF*  version greater           than the __latest official release__ (service pack or internal build) you have to redirect all assemblies required           by the *Telerik WPF ReportViewer*  to their latest versions.           To do this, add the following __bindingRedirects__  to your           __app.config__  and replace the "__2010.1.421.35__ "           with the exact version of *Telerik UI for WPF*  assemblies:         
+In case you use *Telerik UI for WPF*  version greater           than the __latest official release__ (service pack or internal build) you have to redirect all assemblies required           by the *Telerik WPF ReportViewer*  to their latest versions.           To do this, add the following __bindingRedirects__ to your           __app.config__ and replace the "__2010.1.421.35__ "           with the exact version of *Telerik UI for WPF*  assemblies:         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\WpfViewerBindings.xml}}
 ````XML
@@ -45,7 +45,7 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
 </configuration>
 ````
 
-> [Redirecting Assembly Versions](http://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx)  is a standard.NET technique for resolving assembly versions conflicts.  __Visual Studio 2013__  allows automatic binding redirects. For more details check MSDN:  [How to: Enable and Disable Automatic Binding Redirection](http://msdn.microsoft.com/en-us/library/2fc472t2(v=vs.110).aspx).           
+> [Redirecting Assembly Versions](http://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx)  is a standard.NET technique for resolving assembly versions conflicts.  __Visual Studio 2013__ allows automatic binding redirects. For more details check MSDN:  [How to: Enable and Disable Automatic Binding Redirection](http://msdn.microsoft.com/en-us/library/2fc472t2(v=vs.110).aspx).           
 
 ## How to add the WPF ReportViewer to the toolbox
 
@@ -73,9 +73,9 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
 
 1. The Telerik UI for WPF xaml files are located in               %programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Wpf\Themes).             
 
-1. Drag and drop the __ReportViewer__  control from the toolbox               in a WPF window. If the ReportViewer is not available in the toolbox, you can               add it using the instructions from the __How to add the WPF ReportViewer to the toolbox__  topic below.             
+1. Drag and drop the __ReportViewer__ control from the toolbox               in a WPF window. If the ReportViewer is not available in the toolbox, you can               add it using the instructions from the __How to add the WPF ReportViewer to the toolbox__ topic below.             
 
-1. Add reference to the following __Telerik.Reporting__  assemblies in your project:                           
+1. Add reference to the following __Telerik.Reporting__ assemblies in your project:                           
    + *Telerik.Reporting.dll* 
 
    + *Telerik.ReportViewer.Wpf.dll* 
@@ -104,9 +104,9 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
 </Application>
 ````
 
-    For the above sample we have used the Fluent theme. The WPF Report Viewer supports all the Telerik UI for WPF themes.               In order to style the viewer with another theme, change the above XAML snippet               __Fluent__  with the desired theme name.             
+    For the above sample we have used the Fluent theme. The WPF Report Viewer supports all the Telerik UI for WPF themes.               In order to style the viewer with another theme, change the above XAML snippet               __Fluent__ with the desired theme name.             
 
-1. Set the __ReportSource__  for the report viewer. For more information, see [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}).               This can be done either declaratively or programmatically:             
+1. Set the __ReportSource__ for the report viewer. For more information, see [How to Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}).               This can be done either declaratively or programmatically:             
    + Specifying a report source declaratively, we would use type report source for this example:                 
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window1.xaml}}

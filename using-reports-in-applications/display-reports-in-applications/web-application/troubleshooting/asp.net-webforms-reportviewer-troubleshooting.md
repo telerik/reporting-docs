@@ -16,7 +16,7 @@ The old ASP.NET WebForms ReportViewer control is obsolete as of  [Telerik Report
 
 The  article discusses how to troubleshoot comonly met issues result the above listed reasons.
 
-The old ASP.NET WebForms ReportViewer displays content rendered through the [           Reporting HTML Rendering nmechanism         ]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).       
+The old ASP.NET WebForms ReportViewer displays content rendered through the [        Reporting HTML Rendering nmechanism      ]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).       
 
 ## Report is unavailable or session has expired error message
 
@@ -26,7 +26,7 @@ Other possible reasons for getting a session Expired message are discussed in th
 
 ## Reports do not display data or changes applied in events.
 
-The old ASP.NET WebForms ReportViewer depends on the ASP.NET Session.           Depending on the  [session state mode](https://msdn.microsoft.com/en-us/library/ms178586.aspx)  of the application reports may require           additional settings - [Design Considerations for Out-proc Session State ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview%}).         
+The old ASP.NET WebForms ReportViewer depends on the ASP.NET Session.           Depending on the  [session state mode](https://msdn.microsoft.com/en-us/library/ms178586.aspx)  of the application reports may require           additional settings - [Design Considerations for Out-proc Session State]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview%}).         
 
 ## The old ASP.NET Webforms ReportViewer does not display reports after refresh.
 

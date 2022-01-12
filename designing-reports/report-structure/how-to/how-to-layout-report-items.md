@@ -30,7 +30,7 @@ In the Standalone Designer:
 
 1. Open the report in design view.             
 
-1. Click the __Insert__  tab of the ribbon.             
+1. Click the __Insert__ tab of the ribbon.             
 
 1. Select the report item that you want to place and click on it.             
 

@@ -30,7 +30,7 @@ Represents a report parameter with its value and settings.
             ‘availableValues’: [
                     {‘name’: ‘Sofia’, ‘value’: ‘Sofia’}
                     {‘name’: ‘Berlin’, ‘value’: ‘Berlin’}
-            ],
+         ],
             ‘value’: ‘Sofia’
             ‘label’: ‘Sofia’,
           }

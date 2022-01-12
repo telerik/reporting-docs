@@ -14,7 +14,7 @@ position: 2
 
 ## Cannot create an object of type 'Telerik.Reporting.Report' from its string representation 'MyNameSpace.MyClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null' for the 'Report' property.
 
-This error might occur if you are using website and you have the           report class in the website directly. This is due to the fact that when           using a website, after rebuild the following will always be different           and it will not match with the originally assigned report:           App_Code.__unch8s_n__.           Thus we recommend following our [             best practices           ](66CD7D60-7708-42D5-8BB4-506676E8679E) and have the report in a separate class library that           is referenced in the aplication/website.         
+This error might occur if you are using website and you have the           report class in the website directly. This is due to the fact that when           using a website, after rebuild the following will always be different           and it will not match with the originally assigned report:           App_Code.__unch8s_n__.           Thus we recommend following our [          best practices        ](66CD7D60-7708-42D5-8BB4-506676E8679E) and have the report in a separate class library that           is referenced in the aplication/website.         
 
 ## Unable to serialize the session state. In 'StateServer' and 'SQLServer' mode, ASP.NET will serialize the session state objects, and as a result non-serializable objects or MarshalByRef objects are not permitted. The same restriction applies if similar serialization is done by the custom session state store in 'Custom' mode.
 

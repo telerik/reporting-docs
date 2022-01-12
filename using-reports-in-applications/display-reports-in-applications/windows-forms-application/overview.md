@@ -12,7 +12,7 @@ position: 0
 
 
 
-The Windows Forms Report Viewer is designed to render Telerik __Reports__  within Windows Forms projects.         
+The Windows Forms Report Viewer is designed to render Telerik __Reports__ within Windows Forms projects.         
 
   ![](images/WinFormsViewer.png)
 
@@ -40,7 +40,7 @@ The toolbar on the Windows Forms Report Viewer provides basic functionality for 
 
 * Page Setup (set paper kind, orientation, margins)
 
-* Print Preview: switches between __Logical__  and __Physical__  page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.             
+* Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.             
 
 * Print
 
@@ -52,7 +52,7 @@ The toolbar on the Windows Forms Report Viewer provides basic functionality for 
 
 * Show/Hide document map
 
->.NET Framework  __Client Profile__  is not supported.           
+>.NET Framework  __Client Profile__ is not supported.           
 
 ## How it works
 
@@ -64,7 +64,7 @@ The purpose of the Windows Forms ReportViewer control is to display Telerik Repo
 
 ## Declaring the application as DPI-aware
 
-When using Windows Forms ReportViewer on a machine with Windows Vista and later operating system and DPI scale factor higher than 96, the form content           (labels, buttons, rendered report image, etc. ) might be rendered fuzzy, pixelated and with other visual artifacts.           This is because the application in which you are using the Windows Forms Report Viewer is not declared as DPI aware. The recommended approach for declaring an application           as DPI aware is adding a __dpiAware__  element to its application manifest, as shown below:         
+When using Windows Forms ReportViewer on a machine with Windows Vista and later operating system and DPI scale factor higher than 96, the form content           (labels, buttons, rendered report image, etc.) might be rendered fuzzy, pixelated and with other visual artifacts.           This is because the application in which you are using the Windows Forms Report Viewer is not declared as DPI aware. The recommended approach for declaring an application           as DPI aware is adding a __dpiAware__ element to its application manifest, as shown below:         
 
     
 ````xml
@@ -79,7 +79,7 @@ When using Windows Forms ReportViewer on a machine with Windows Vista and later 
 
 Since Windows 10 Anniversary Update, the Windows runtime has improved the UX for Windows Forms applications that are not declared as DPI-aware. Unfortunately in some cases this behavior leads to incorrect calculation of interactive item positions. We recommend always declaring the Windows Forms application as DPI-aware.         
 
-You can read more about writing DPI-aware desktop applications            [               here.             ](               https://msdn.microsoft.com/en-us/library/windows/desktop/dn469266(v=vs.85).aspx             ) 
+You can read more about writing DPI-aware desktop applications            [            here.          ](            https://msdn.microsoft.com/en-us/library/windows/desktop/dn469266(v=vs.85).aspx          ) 
 
 ## Keyboard shortcuts
 

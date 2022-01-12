@@ -12,7 +12,7 @@ position: 1
 
 
 
-To create a Telerik report in code, you need to instantiate a __Telerik.Reporting.Report__  object and set its properties. For example, this code will create a report and set up its data source:
+To create a Telerik report in code, you need to instantiate a __Telerik.Reporting.Report__ object and set its properties. For example, this code will create a report and set up its data source:
 
     
 ````C#

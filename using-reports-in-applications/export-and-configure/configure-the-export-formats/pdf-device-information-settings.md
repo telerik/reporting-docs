@@ -16,14 +16,14 @@ The following table lists the device information settings for rendering in PDF f
 
 ## PDF Device Information Settings
 
-|  __Name__  |  __Type__  |  __Description__  |
+|  __Name__ |  __Type__ |  __Description__ |
 | ------ | ------ | ------ |
 |ComplianceLevel|String|The PDF/A compliance level. The supported values are __None__, __PDF/A-1b__, __PDF/A-2b__ and __PDF/A-3b__.                 Default value: None. If EnableAccessibility is set to True, due to incompatibility the ComplianceLevel metadata is ignored.|
-|EnableAccessibility|Boolean|Determines if the PDF will be generated in accordance to  [                     PDF/UA (ISO standard 14289-1)                   ](https://en.wikipedia.org/wiki/PDF/UA) specification.|
+|EnableAccessibility|Boolean|Determines if the PDF will be generated in accordance to  [                  PDF/UA (ISO standard 14289-1)                ](https://en.wikipedia.org/wiki/PDF/UA) specification.|
 |SignCertFilename|String|The name of a certificate file. Absolute and relative paths are supported.|
 |SignCertPassword|String|The password required to access the X.509 certificate data.|
 |SignLocation|String|(Optional) The CPU host name or physical location of the signing.|
-|SignReason|String|(Optional) The reason for the signing, such as ( I agree … ).|
+|SignReason|String|(Optional) The reason for the signing, such as (I agree …).|
 |SignContactInfo|String|(Optional) Information provided by the signer to enable a recipient to contact the signer to verify the signature; for example, a phone number.|
 |OwnerPassword|String|If specified the document will be encrypted and owner or user password will be required to open the document.|
 |UserPassword|String|If owner password is specified the document will be encrypted and password will be required to open the document. User password gives read only permissions.|
@@ -37,7 +37,7 @@ The following table lists the device information settings for rendering in PDF f
 |DocumentCreator|String|The document creator. The default value is Telerik Reporting product name and version.|
 |DocumentSubject|String|The subject of the document.|
 |DocumentKeywords|String|Keywords associated with the document.|
-|DocumentNaturalLanguage|String|A language identifier in accordance to  [RFC 1766 ](https://www.ietf.org/rfc/rfc1766.txt) that specifies the natural language for all text in the document. If absent, the language will be retrieved from report's culture. Example value: __en-US__.|
+|DocumentNaturalLanguage|String|A language identifier in accordance to  [RFC 1766](https://www.ietf.org/rfc/rfc1766.txt) that specifies the natural language for all text in the document. If absent, the language will be retrieved from report's culture. Example value: __en-US__.|
 |UseSvgVectorRendering|Boolean|Determines if the SVG images will be rendered using vector-based or raster-based graphic primitives.                 The vector-based rendering preserves the image quality regardless the current zoom, but does not support all SVG elements.                 The raster-based rendering can be used with every SVG image but produces a bitmap which does not preserve its quality when zooming in/out in the PDF document.                 Default value: __true__.|
 |ViewerHideToolbar|Boolean|A flag specifying whether to hide the viewer application’s tool bars when the document is active. Default value: __false__.|
 |ViewerHideMenubar|Boolean|A flag specifying whether to hide the viewer application’s menu bar when the document is active. Default value: __false__.|

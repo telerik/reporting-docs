@@ -12,7 +12,7 @@ position: 3
 
 
 
-The __WebServiceDataSource__  component can request data in JSON format from a running web service.         It requires the base URL of the servcie specified in the __Service URL__  property.         The WebServiceDataSource can take parameters. The supported data source parameter types are:       
+The __WebServiceDataSource__ component can request data in JSON format from a running web service.         It requires the base URL of the servcie specified in the __Service URL__ property.         The WebServiceDataSource can take parameters. The supported data source parameter types are:       
 
 * __Inline Parameters__ The values of this parameter type replace the corresponding part of the *Service URL*,             and can be included in the body of a POST request.           
 

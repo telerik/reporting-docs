@@ -12,11 +12,11 @@ position: 2
 
 
 
-The Blazor Report Viewer exposes events as properties of the __ClientEventsOptions__  object. The JavaScript API of the event handlers is available in          [HTML5 Report Viewer Events](https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-ready).       
+The Blazor Report Viewer exposes events as properties of the __ClientEventsOptions__ object. The JavaScript API of the event handlers is available in          [HTML5 Report Viewer Events](https://docs.telerik.com/reporting/html5-report-viewer-reportviewer-events-ready).       
 
 ## Bind to a report viewer event
 
-To attach an event handler to the viewer, specify the name of the event handler function in the __ClientEventsOptions__  object.           The function name should be fully qualified, e.g. "*window.trvEventHandlers.exportBegin* ",           or just "*trvEventHandlers.exportBegin* " (the "*window* " qualifier is optional).           The event handler functions should be implemented inside *wwwroot/index.html*  (Blazor WebAssembly) or           *Pages/_Host.cshtml*  (Blazor Server).           For example, we can attach handlers to the __ExportBegin__  and           __ExportEnd__  events of the viewer:         
+To attach an event handler to the viewer, specify the name of the event handler function in the __ClientEventsOptions__ object.           The function name should be fully qualified, e.g. "*window.trvEventHandlers.exportBegin* ",           or just "*trvEventHandlers.exportBegin* " (the "*window* " qualifier is optional).           The event handler functions should be implemented inside *wwwroot/index.html*  (Blazor WebAssembly) or           *Pages/_Host.cshtml*  (Blazor Server).           For example, we can attach handlers to the __ExportBegin__ and           __ExportEnd__ events of the viewer:         
 
     
 ````c#

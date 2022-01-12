@@ -12,7 +12,7 @@ position: 0
 
 
 
-The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is a client-side widget         served by a running instance of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).         The state of the report displayed in the viewer is preserved between requests by the __Reporting REST Service__          and having reports' __cache storage is obligatory__.       
+The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is a client-side widget         served by a running instance of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).         The state of the report displayed in the viewer is preserved between requests by the __Reporting REST Service__       and having reports' __cache storage is obligatory__.       
 
 To configure the Reporting REST service cache you can choose         between the available storage implementations - [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).         The cache storage settings must be considered with the type of hosting of the Reporting REST Service.       
 
@@ -24,7 +24,7 @@ The following actions are performed on displaying a report in the HTML5 Report V
 
 1. The client-side report source (report description as a string and parameters collection in a JSON formatted string) is sent to the Reporting REST service               in a request for information about visible parameters;             
 
-1. The Reporting REST service resolves the received string description to a valid server-side report source object               through its [report source resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) set in the               service's configuration. Then the service returns JSON serialized information about               the report's __ReportParameters__  collection. The HTML5 Viewer generates its Parameters Area               based on the information for visible report parameters, their types and default|initial values;             
+1. The Reporting REST service resolves the received string description to a valid server-side report source object               through its [report source resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) set in the               service's configuration. Then the service returns JSON serialized information about               the report's __ReportParameters__ collection. The HTML5 Viewer generates its Parameters Area               based on the information for visible report parameters, their types and default|initial values;             
 
 1. The client-side report source (report description as a string and parameters collection in a JSON formatted string) is sent to the Reporting REST service               in a request for registering the report instance on the server;             
 

@@ -18,9 +18,9 @@ Use the Export Template wizard to create new templates from reports that are cur
 
 1. Start the Report Designer and open a report that you would like to use as report template. Navigate to File menu and click __Export Template...__ 
 
-1. The __Export Template Wizard__  is started. Navigate to second step __Select Template Source__  where you select the item that you want to export. You can select only one item. Click __Next__.             
+1. The __Export Template Wizard__ is started. Navigate to second step __Select Template Source__ where you select the item that you want to export. You can select only one item. Click __Next__.             
 
-1. In the __Select Template Options__  step, select options for your template:             
+1. In the __Select Template Options__ step, select options for your template:             
 
 | Template Options | Description |
 | ------ | ------ |

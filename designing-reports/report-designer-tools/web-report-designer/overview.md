@@ -22,15 +22,15 @@ The Web Report Designer consists of the following areas:
 
   ![Web Report Designer With Dashboard Report](images/Designer/web-report-designer-dashboard.png)
 
-* __Design surface__  - shows the design layout of the report. Provides tools for selecting, moving,               resizing and editing the report items.             
+* __Design surface__ - shows the design layout of the report. Provides tools for selecting, moving,               resizing and editing the report items.             
 
-* __Menu area__  - provides buttons for creating a new report and opening, saving or previewing an               already existing one. Also, allows switching between loaded reports and shows their save state.             
+* __Menu area__ - provides buttons for creating a new report and opening, saving or previewing an               already existing one. Also, allows switching between loaded reports and shows their save state.             
 
-* __Properties area__  - displays the properties of the selected report item. In case multiple items               are selected, shows only the properties that are marked as "mergeable", in other words properties               that can be applied to all items in the current selection. The list of the properties can be               organized in categories or in alphabetical order.             
+* __Properties area__ - displays the properties of the selected report item. In case multiple items               are selected, shows only the properties that are marked as "mergeable", in other words properties               that can be applied to all items in the current selection. The list of the properties can be               organized in categories or in alphabetical order.             
 
-* __Components__  - lists the available report components that can be added to the report. The items are               organized in groups based on their type. The area supports two kinds of layout - grid and list.               List is the default view.             
+* __Components__ - lists the available report components that can be added to the report. The items are               organized in groups based on their type. The area supports two kinds of layout - grid and list.               List is the default view.             
 
-* __Explorer__  - represents the report structure in a tree-like view. Allows the selection of the visual               and non-visual report components and configures their properties.             
+* __Explorer__ - represents the report structure in a tree-like view. Allows the selection of the visual               and non-visual report components and configures their properties.             
 
 ## How it works
 
@@ -38,7 +38,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Requirements:
 
-* The Web Report Designer can be integrated in any ASP.NET Web Application, both               under __.NET Framework 4.5.1+__  or __.NET Core 2.1+__.             
+* The Web Report Designer can be integrated in any ASP.NET Web Application, both               under __.NET Framework 4.5.1+__ or __.NET Core 2.1+__.             
 
 * The following NuGet packages are required:             
 
@@ -50,9 +50,9 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * Web browser that supports                [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher;               Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.             
 
-*  [jQuery](http://jquery.com/download/) __3.3.1__  or later.             
+*  [jQuery](http://jquery.com/download/) __3.3.1__ or later.             
 
-*  [Kendo UI](http://www.kendoui.com/)  __kendosubsetversion__  or later.             
+*  [Kendo UI](http://www.kendoui.com/)  __kendosubsetversion__ or later.             
 
 * Telerik Report Viewer script. By default, it is requested from the service.             
 
@@ -60,7 +60,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * All other scripts and styles will be provided by the Web Report Designer service               when the designer widget is loaded. The list of loaded resources:             
 
-   +  [jQuery UI](https://jqueryui.com/) __1.12.1__  library.                   We recommend using the version of jQuery UI subset that is                   served by the Web Report Designer service because it includes a fix related to                   the dragging and dropping components.                 The subset includes Draggable, Droppable, Resizable and their dependencies.                 
+   +  [jQuery UI](https://jqueryui.com/) __1.12.1__ library.                   We recommend using the version of jQuery UI subset that is                   served by the Web Report Designer service because it includes a fix related to                   the dragging and dropping components.                 The subset includes Draggable, Droppable, Resizable and their dependencies.                 
 
    + webReportDesigner.min.css stylesheet.
 

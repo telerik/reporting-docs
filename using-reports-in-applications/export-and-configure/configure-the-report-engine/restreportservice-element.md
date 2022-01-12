@@ -12,7 +12,7 @@ position: 5
 
 
 
-The __restReportService__  element specifies the configuration settings for the REST report service.         In order for this element to be respected the corresponding Reports service implementation should pass a          [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)          instance instead of a          [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration)          instance. For example, initializing the           [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)  for the           [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  instance would look like this:       
+The __restReportService__ element specifies the configuration settings for the REST report service.         In order for this element to be respected the corresponding Reports service implementation should pass a          [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)          instance instead of a          [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration)          instance. For example, initializing the           [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)  for the           [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  instance would look like this:       
 
     
 ````c#
@@ -112,7 +112,7 @@ JSON-based configuration file:
           "name": "directory",
           "value": "c:\\temp"
         }
-      ]
+   ]
     }
   },
 }

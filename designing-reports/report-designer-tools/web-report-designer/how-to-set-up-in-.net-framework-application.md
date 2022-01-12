@@ -32,7 +32,7 @@ When you use NuGet packages, the dependencies will be automatically resolved. Ot
 
 The REST service works as a backend and is responsible for storage operations like creating, opening, or saving report definitions.            The following steps describe how to configure it:         
 
-1. Implement a Report Designer controller. Right-click on the __Controllers__                folder and add a new item: __Add__  > __New item__  > __Web API Controller Class__  item.               Name it __ReportDesignerController__. This will be our Telerik Web Report Designer REST service in the               project.             
+1. Implement a Report Designer controller. Right-click on the __Controllers__             folder and add a new item: __Add__ > __New item__ > __Web API Controller Class__ item.               Name it __ReportDesignerController__. This will be our Telerik Web Report Designer REST service in the               project.             
 
 1. Inherit the  [ReportDesignerControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase)  type               and setup the `ReportServiceConfiguration` instance. Notice that there is another configuration               instance named `ReportDesignerServiceConfiguration`, which will initialize the definition storage.               This is the class, responsible for opening, saving etc. the report definitions. This is how a basic               implementation of the controller should look like:             
 
@@ -93,7 +93,7 @@ namespace CSharp.MvcDemo.Controllers
 
 ## Adding the Web Report Designer:
 
-1. Navigate to __Views__  -> __Home__  and add a new CSHTML Page for the Web Report Designer. Name the file __Index.cshtml__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
+1. Navigate to __Views__ -> __Home__ and add a new CSHTML Page for the Web Report Designer. Name the file __Index.cshtml__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
 
     
       ````html
@@ -133,9 +133,9 @@ namespace CSharp.MvcDemo.Controllers
 </html>
 ````
 
-The *ReportDesignerController*  we added above is configured to search for its reports in a sub-folder                named __Reports__.               The Report Designer widget we just configured will try to load a report named __SampleReport.trdp__.               Add a new folder named __Reports__  to the solution and add an existing report named __SampleReport.trdp__  in it.             
+The *ReportDesignerController*  we added above is configured to search for its reports in a sub-folder                named __Reports__.               The Report Designer widget we just configured will try to load a report named __SampleReport.trdp__.               Add a new folder named __Reports__ to the solution and add an existing report named __SampleReport.trdp__ in it.             
 
-1. Register the *ReportsControllerConfiguration*  and *ReportDesignerControllerConfiguration*  routes in                the `Application_Start()` method of the __Global.asax__  file.               It is important to register them before the default routes as shown below:             
+1. Register the *ReportsControllerConfiguration*  and *ReportDesignerControllerConfiguration*  routes in                the `Application_Start()` method of the __Global.asax__ file.               It is important to register them before the default routes as shown below:             
 
     
       ````html
@@ -150,7 +150,7 @@ protected void Application_Start()
 }
 ````
 
-1. In case the reports shown in the viewer need access to a database, add the necessary connection strings to the __web.config__  file.             
+1. In case the reports shown in the viewer need access to a database, add the necessary connection strings to the __web.config__ file.             
 
 1. Finally, run the project to preview the web designer.             
 

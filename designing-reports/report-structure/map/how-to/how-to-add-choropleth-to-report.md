@@ -12,7 +12,7 @@ position: 3
 
 
 
-The simplest way to add a __Choropleth__  map to your report is to run the Choropleth Wizard.         After the Map item is added to the design surface, you can click its elements to edit the selected element's properties in the         *Properties*  grid. Additionally in the Standalone Report Designer you can use the Ribbon tools.       
+The simplest way to add a __Choropleth__ map to your report is to run the Choropleth Wizard.         After the Map item is added to the design surface, you can click its elements to edit the selected element's properties in the         *Properties*  grid. Additionally in the Standalone Report Designer you can use the Ribbon tools.       
 
 ## To add a choropleth map to a report by using the Visual Studio Report Designer Choropleth Wizard
 

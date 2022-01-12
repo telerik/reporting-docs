@@ -16,7 +16,7 @@ position: 4
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| __availableValues__ |array of name-value pairs ( {name: …, value: ….}* )|represents a list of predefined parameter values and their labels|
+| __availableValues__ |array of name-value pairs ({name: …, value: ….}*)|represents a list of predefined parameter values and their labels|
 | __multivalue__ |boolean|specifies whether the parameter can hold more than one value|
 | __allowBlank__ |boolean|specifies whether the parameter allows an empty string to be passed. Only for parameters of type string|
 | __allowNull__ |boolean|specifies whether the parameter allows a <null> value to be passed from its editor|

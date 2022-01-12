@@ -24,7 +24,7 @@ The default viewer's template is divided into 3 areas:
 
 Besides these three areas the viewer template contains top and side menus that provide the basic tools for navigating           into the reports when the viewer is rendered on desktop or mobile devices.         
 
-All these elements of the HTML5 Report Viewer are provided through the __trv-report-viewer__            template and are loaded dynamically during the initialization of the __telerik_ReportViewer__  widget.         
+All these elements of the HTML5 Report Viewer are provided through the __trv-report-viewer__         template and are loaded dynamically during the initialization of the __telerik_ReportViewer__ widget.         
 
 While loading the template content, the widget looks for elements marked with the data-role attribute and maps its           value to a jQuery plugin function that provides the element behavior. For example:         
 
@@ -42,11 +42,11 @@ jQuery.fn.telerik_ReportViewer_ParametersArea(options)
 
 If such function exists, it is invoked onto the HTML element (that owns the data-role attribute) passing an options object with the following properties:         
 
-* __controller__  - a telerikReportViewer.ReportViewerController object that is responsible for the basic viewer operations;             
+* __controller__ - a telerikReportViewer.ReportViewerController object that is responsible for the basic viewer operations;             
 
-* __commands__  - a telerikReportViewer.CommandSet object that contains all commands;             
+* __commands__ - a telerikReportViewer.CommandSet object that contains all commands;             
 
-* __templates__  - an object that contains all templates loaded for the current report viewer instance.               The id of the template is used as a property’s name, and the value is the template HTML content.             
+* __templates__ - an object that contains all templates loaded for the current report viewer instance.               The id of the template is used as a property’s name, and the value is the template HTML content.             
 
 Using this completely declarative approach of describing the viewer’s layout and behavior allows users to easily tweak any parts of it           by simply modifying the templates. Following the above pattern, one can create its own data-role and extend the default viewer behavior.
 

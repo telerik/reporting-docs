@@ -12,7 +12,7 @@ position: 7
 
 
 
-__FontLibrary__  configuration element specifies the folders that will be used by the rendering engine when searching for a specific font.       
+__FontLibrary__ configuration element specifies the folders that will be used by the rendering engine when searching for a specific font.       
 
 This element is respected only when the PDF rendering extension is used in.NET Core applications under __Linux / MacOS__.         The element is not respected in applications that run on Windows machine or when other than PDF rendering extension is used.       
 
@@ -75,7 +75,7 @@ JSON-based configuration file:
         "path": "/usr/customFonts/trueType",
         "searchSubfolders": "true"
       }
-    ]
+ ]
   }
 }
 ````

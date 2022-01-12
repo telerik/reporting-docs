@@ -12,7 +12,7 @@ position: 4
 
 
 
-The __Web Service Data Source Wizard__  allows you to create a new or edit an existing         __WebServiceDataSource__  component based on several settings.         After the wizard appears you have to perform the following steps:       
+The __Web Service Data Source Wizard__ allows you to create a new or edit an existing         __WebServiceDataSource__ component based on several settings.         After the wizard appears you have to perform the following steps:       
 
 1. __Configure data retrieval__ Setup the properties of the HTTP request which will retrieve data from the web service:               
 
@@ -49,7 +49,7 @@ And/or reference an external data file:
 
   ![Google Books Params](images/DataSources/GoogleBooksParams.png)
 
-1. __Basic Authentication__   
+1. __Basic Authentication__ 
 
   ![Web Service Data Source Basic Authentication](images/DataSources/WebServiceDataSourceBasicAuthentication.png)
 
@@ -58,7 +58,7 @@ And/or reference an external data file:
 |Username|The username used to authenticate. Required.|
 |Password|The password used to authenticate.|
 
-1. __2-Step Authentication__   
+1. __2-Step Authentication__ 
 
   ![Web Service Data Source 2 Step Auth](images/DataSources/WebServiceDataSource2StepAuth.png)
 

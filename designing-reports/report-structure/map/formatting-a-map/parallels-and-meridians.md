@@ -24,13 +24,13 @@ Both parallels and meridians define a step that determines the density of their 
 
 1. Expand the __Parallels/Meridians property__.               
 
-1. Select the __Step__  property and set it to the desired value.               
+1. Select the __Step__ property and set it to the desired value.               
 
 1. When you are done, press __Enter__.               
 
 ##Graticule Style
 
-You can change the parallels and meridians style by selecting the property and using the __Property Browser__  change Style properties.         
+You can change the parallels and meridians style by selecting the property and using the __Property Browser__ change Style properties.         
 
 ###To change the Parallels or Meridians style:
 

@@ -12,7 +12,7 @@ position: 2
 
 
 
-The __Telerik Reporting menu__  can be accessed whenever an area of the report designer is selected. From here you can call:       
+The __Telerik Reporting menu__ can be accessed whenever an area of the report designer is selected. From here you can call:       
 
 * [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) - allows you to see the structure of the report and to select any item in the report. This menu item is available only when you're in the context of the report designer.           
 
@@ -22,7 +22,7 @@ The __Telerik Reporting menu__  can be accessed whenever an area of the report d
 
 * [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) - the Group Explorer is an aid to navigating report/table groups. The Group Explorer allows you to see the structure of the groups, to select them and change the respective Grouping, Sorting and Filtering. This menu item is available only when you're in the context of the report designer.           
 
-The "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%})" option is always available, while the other options are available __only when__  you are editing a Telerik Report in the Report Designer.       
+The "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%})" option is always available, while the other options are available __only when__ you are editing a Telerik Report in the Report Designer.       
 
 > If the report designer is opened, but still only the "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%})" is visible, make sure the Report Designer is the active window i.e. it has focus.         
 

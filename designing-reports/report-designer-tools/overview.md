@@ -20,7 +20,7 @@ This document gives a brief overview of the available Report Designers.
 
 [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) is a standalone desktop application that features an easy to use environment:         
 
-* The executable file starting the application is __Telerik.ReportDesigner.exe__. By default it will be deployed upon installation of the product in               '(*Telerik Reporting installation folder* )\Report Designer' folder. For example,                'C:\Program Files (x86)\Progress\Telerik Reporting R3 2019\Report Designer'.             
+* The executable file starting the application is __Telerik.ReportDesigner.exe__. By default it will be deployed upon installation of the product in               '(*Telerik Reporting installation folder*)\Report Designer' folder. For example,                'C:\Program Files (x86)\Progress\Telerik Reporting R3 2019\Report Designer'.             
 
 * Does not require Visual Studio;             
 

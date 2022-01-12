@@ -16,13 +16,13 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 
 1. Required assembly references:
 
-   + __System.ServiceModel.dll__  assembly               
+   + __System.ServiceModel.dll__ assembly               
 
-   + __Telerik.Reporting.Service.dll__  assembly               
+   + __Telerik.Reporting.Service.dll__ assembly               
 
    + Assemblies with Telerik Reports to be exposed through the Reporting Service
 
-1. Add.svc file (e.g. __ReportService.svc__ )             to reference the              [Telerik.Reporting.Service.ReportService](/reporting/api/Telerik.Reporting.Service.ReportService).             The file would contain the following line only:           
+1. Add.svc file (e.g. __ReportService.svc__)             to reference the              [Telerik.Reporting.Service.ReportService](/reporting/api/Telerik.Reporting.Service.ReportService).             The file would contain the following line only:           
 
     
       ````XML

@@ -12,7 +12,7 @@ position: 1
 
 
 
-The following table lists the device information settings for rendering in __IMAGE__, __IMAGEPrintPreview__  and __IMAGEPrint__  formats.       
+The following table lists the device information settings for rendering in __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats.       
 
 ## Image Device Information Settings
 
@@ -30,7 +30,7 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 ## Example
 
-The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__  and __IMAGEPrint__  formats.         
+The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats.         
 
 XML-based configuration file:
 
@@ -84,7 +84,7 @@ JSON-based configuration file:
           "Name": "TiffCompression",
           "Value": "RLE"
         }
-      ]
+   ]
     },
     {
       "name": "IMAGEPrintPreview",
@@ -93,7 +93,7 @@ JSON-based configuration file:
           "Name": "OutputFormat",
           "Value": "JOEG"
         }
-      ]
+   ]
     },
     {
       "name": "IMAGEPrint",
@@ -114,9 +114,9 @@ JSON-based configuration file:
           "Name": "DpiY",
           "Value": "1200"
         },
-      ]
+   ]
     }
-  ]
+]
 }
 ````
 

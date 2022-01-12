@@ -12,7 +12,7 @@ position: 8
 
 
 
-The Edit Filters dialog allows you to specify which records will be displayed. The dialog populates the __Filters__  collection. See the example below that displays only records where the first four characters of the "Name" field must be "Tour" and the "FinishedGoodsFlag" field must be True.
+The Edit Filters dialog allows you to specify which records will be displayed. The dialog populates the __Filters__ collection. See the example below that displays only records where the first four characters of the "Name" field must be "Tour" and the "FinishedGoodsFlag" field must be True.
 
   
 

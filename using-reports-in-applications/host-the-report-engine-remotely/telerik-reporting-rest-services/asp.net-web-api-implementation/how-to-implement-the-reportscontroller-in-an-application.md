@@ -14,14 +14,14 @@ position: 4
 
 The Telerik Reporting REST Web API service is represented by the abstract  [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)          class. This abstract class requires  [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)          and  [IStorage](/reporting/api/Telerik.Reporting.Cache.Interfaces.IStorage)  implementations.         In order to add the reports controller to your application follow the steps:       
 
-1. Add references to the following Telerik Reporting assemblies (required)               and set their __Copy Local__  properties to true in Visual Studio:             
+1. Add references to the following Telerik Reporting assemblies (required)               and set their __Copy Local__ properties to true in Visual Studio:             
    + Telerik.Reporting                 
 
    + Telerik.Reporting.Services.WebApi (located in the installation Bin folder)                 
 
     >Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
-1. Add references to the following Telerik Reporting assemblies (optional)               and set their __Copy Local__  properties to true in Visual Studio:             
+1. Add references to the following Telerik Reporting assemblies (optional)               and set their __Copy Local__ properties to true in Visual Studio:             
    + Telerik.Reporting.Cache.Database.dll - only if  [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage)  caching mechanism is intended.                   For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).                   The assembly has dependencies on Telerik Data Access which can be checked in the version                   corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});                 
 
    + Telerik.Reporting.OpenXmlRendering - depends on [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}). Required if you need to export in OpenXML formats (DOCX, PPTX, XLSX);                 
@@ -33,7 +33,7 @@ The Telerik Reporting REST Web API service is represented by the abstract  [Repo
     >Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
 1. Inherit this base class in your hosting application (usually in the Controllers folder of a MVC application).                 __ReportsControllerBase configuration in code:__ 
-   + Set the  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)                    property. The __ReportSourceResolver__  and __Storage__  configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface                   for more details.                 
+   + Set the  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)                    property. The __ReportSourceResolver__ and __Storage__ configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface                   for more details.                 
 
 {{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementation}}
   ````C#
@@ -121,7 +121,7 @@ Public Class ReportsController
 
    >Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.                   
 
-   >The above implementation uses the  [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage)                      method in order to create a storage object instance. All Visual Studio item templates for adding the Reporting REST service use the default                      __FileStorage__  constructor. The second overload of the FileStorage constructor allows you to                     specify a folder, and it is recommended for usage in production environment.                   
+   >The above implementation uses the  [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage)                      method in order to create a storage object instance. All Visual Studio item templates for adding the Reporting REST service use the default                      __FileStorage__ constructor. The second overload of the FileStorage constructor allows you to                     specify a folder, and it is recommended for usage in production environment.                   
         __ReportsControllerBase configuration in configuration file:__ 
    + To configure the Telerik Reporting REST service from the application configuration file, set the value of the                    [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration)  property to an instance of the                    [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration)  class.                 
 
@@ -152,7 +152,7 @@ Public Class ReportsController
 End Class
 ````
 
-   + Then add the __restReportService__  configuration element containing the service settings to the                   [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).                 
+   + Then add the __restReportService__ configuration element containing the service settings to the                   [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).                 
 
 {{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
   ````XML

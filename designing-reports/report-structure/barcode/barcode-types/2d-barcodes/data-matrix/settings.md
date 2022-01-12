@@ -20,23 +20,23 @@ The encodation determines the type of contents encoded by the Data Matrix barcod
 
 The following table shows the supported encodations and provides information about their restrictions and data storing requirements:
 
-* __ASCII__  - allowed characters include double digit numerics and all values from the ASCII table.               The double digit numerics use 4 bits. The ASCII values in the 0-127 range use 8 bits. The ASCII values in 128-255 range use 16 bits.             
+* __ASCII__ - allowed characters include double digit numerics and all values from the ASCII table.               The double digit numerics use 4 bits. The ASCII values in the 0-127 range use 8 bits. The ASCII values in 128-255 range use 16 bits.             
 
-* __C40__  - Used primarily for upper-case alphanumerics.               The upper-case alphanumeric characters use 5.33 bits.               The lower-case and special characters use 10.66 bits.             
+* __C40__ - Used primarily for upper-case alphanumerics.               The upper-case alphanumeric characters use 5.33 bits.               The lower-case and special characters use 10.66 bits.             
 
-* __Text__  - Used primarily for lower-case alphanumerics.               The lower-case alphanumeric characters use 5.33 bits.               The upper-case and special characters use 10.66 bits.             
+* __Text__ - Used primarily for lower-case alphanumerics.               The lower-case alphanumeric characters use 5.33 bits.               The upper-case and special characters use 10.66 bits.             
 
-* __X12__  - Uses the characters from                [ANSI X12 EDI data set](https://edi3.dicentral.com/ansi-x12).               Each character takes 5.33 bits.             
+* __X12__ - Uses the characters from                [ANSI X12 EDI data set](https://edi3.dicentral.com/ansi-x12).               Each character takes 5.33 bits.             
 
-* __EDIFACT__  - Used to encode ASCII values in the 32-94 range.               Each character takes 6 bits.             
+* __EDIFACT__ - Used to encode ASCII values in the 32-94 range.               Each character takes 6 bits.             
 
-* __Base256__  - Used to encode characters in the whole ASCII range.               Each character takes 8 bits.             
+* __Base256__ - Used to encode characters in the whole ASCII range.               Each character takes 8 bits.             
 
-* __AsciiGS1__  - Used to encode FNC1 characters in the ASCII range             
+* __AsciiGS1__ - Used to encode FNC1 characters in the ASCII range             
 
 ## SymbolSize
 
-Sets the symbol size and shape of the generated barcode. It can be automatically determined using           __SquareAuto__  or __RectangleAuto__,           or specific like __Square32x32__  or __Rectangle16x48__.         
+Sets the symbol size and shape of the generated barcode. It can be automatically determined using           __SquareAuto__ or __RectangleAuto__,           or specific like __Square32x32__ or __Rectangle16x48__.         
 
 ## TextEncoding
 

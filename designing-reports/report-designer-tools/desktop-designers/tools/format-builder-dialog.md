@@ -12,7 +12,7 @@ position: 14
 
 
 
-The Format Builder dialog allows you to apply formating to the TextBox and CheckBox items. You can open that dialog either from the property grid of those  items or from their [context menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}), by selecting the __Format__  menu item.
+The Format Builder dialog allows you to apply formating to the TextBox and CheckBox items. You can open that dialog either from the property grid of those  items or from their [context menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}), by selecting the __Format__ menu item.
 
 The expression values are handled differently depending on what type of formatting you have assigned.For example, if you choose Currency formatting, Telerik Reporting will automatically  convert 3 into $3.00; if you choose Date formatting it would convert 3/1 to March 1; if you choose Percent formatting, it would change 0.3 to 30% etc.
 

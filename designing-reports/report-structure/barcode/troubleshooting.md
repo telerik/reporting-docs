@@ -22,7 +22,7 @@ This section elaborates on the most common errors which occur when using the Bar
 
   ![barcode-errors-large-size](images/Barcodes/barcode-errors-large-size.png)
 
-* When ShowText is set to __true__  and the size of the text exceeds the bounds of the Barcode item an error             message is rendered to indicate the problem. In this case it is recommended to change the font size, pick another font or increase the size of the item.             
+* When ShowText is set to __true__ and the size of the text exceeds the bounds of the Barcode item an error             message is rendered to indicate the problem. In this case it is recommended to change the font size, pick another font or increase the size of the item.             
 
   ![barcode-errors-large-text](images/Barcodes/barcode-errors-large-text.png)
 

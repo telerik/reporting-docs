@@ -30,7 +30,7 @@ For any persisting issues, either:
 
 * Refer to the article on               [troubeshooting installation and upgrade issues]({%slug telerikreporting/troubleshooting/installation%})               in Telerik Reporting, or             
 
-* Send the issue through the                [                   dedicated Telerik Reporting support system                 ](https://www.telerik.com/support/reporting)                together with your project or solution in a `.zip` file.             
+* Send the issue through the                [                dedicated Telerik Reporting support system              ](https://www.telerik.com/support/reporting)                together with your project or solution in a `.zip` file.             
 
 ## Major and Minor Releases
 
@@ -57,13 +57,13 @@ To automatically upgrade your project to a later Telerik Reporting version, use 
 
 ## Upgrading Website Projects Manually
 
-1. In __Solution Explorer__, click the __Show All Files__                button.             
+1. In __Solution Explorer__, click the __Show All Files__             button.             
 
-1. Select __Delete all__  to remove all Telerik Reporting assemblies from the __Bin__                folder.             
+1. Select __Delete all__ to remove all Telerik Reporting assemblies from the __Bin__             folder.             
 
-1. From the __References__  tab on the __Property Pages__  of the website,               remove all references to Telerik Reporting assemblies. Remember the names of the deleted assemblies.             
+1. From the __References__ tab on the __Property Pages__ of the website,               remove all references to Telerik Reporting assemblies. Remember the names of the deleted assemblies.             
 
-1. Select __Add all__  to add all required references to the new Telerik Reporting assembly versions.               They correspond to the ones that you deleted in the previous step.             
+1. Select __Add all__ to add all required references to the new Telerik Reporting assembly versions.               They correspond to the ones that you deleted in the previous step.             
 
 1. Open the `web.config` file and update all version numbers to the new one in the following               instances:             
 
@@ -83,21 +83,21 @@ To automatically upgrade your project to a later Telerik Reporting version, use 
 
 1. Rebuild all updated projects.             
 
-1. If compilation errors or warnings occur, review the               __[Release History](https://www.telerik.com/support/whats-new/reporting/release-history)__               section for any obsolete or deleted properties, methods,               and events, and handle these according to the instructions in the section.               Review the release history for all releases between the previous and the latest version you installed.             
+1. If compilation errors or warnings occur, review the               __[Release History](https://www.telerik.com/support/whats-new/reporting/release-history)__            section for any obsolete or deleted properties, methods,               and events, and handle these according to the instructions in the section.               Review the release history for all releases between the previous and the latest version you installed.             
 
 ## Upgrading Other Projects Manually
 
 Apart from website projects, you can also manually upgrade class library projects, desktop and web applications.         
 
-1. In __Solution Explorer__, click the __Show All Files__  button.             
+1. In __Solution Explorer__, click the __Show All Files__ button.             
 
-1. Open __References__  and locate the references to the previous Telerik Reporting assemblies.               Service Pack assemblies are marked with yellow exclamation marks which show that the assemblies cannot be located.               This is normal behavior and indicates that you have an uninstalled the version to which they belong.             
+1. Open __References__ and locate the references to the previous Telerik Reporting assemblies.               Service Pack assemblies are marked with yellow exclamation marks which show that the assemblies cannot be located.               This is normal behavior and indicates that you have an uninstalled the version to which they belong.             
 
-1. Select the old assemblies that you identified in the previous step and click __Delete__                to remove them. Remember the names of the deleted assemblies.             
+1. Select the old assemblies that you identified in the previous step and click __Delete__             to remove them. Remember the names of the deleted assemblies.             
 
-1. Right-click __References__  and select __Add Reference__.             
+1. Right-click __References__ and select __Add Reference__.             
 
-1. Select __Add all__  to add all required references to the new Telerik Reporting assembly versions.               They correspond to the ones that you deleted in the previous step. As a result, the newly added references appear in               __References__  without the yellow exclamation marks which means that they are valid.             
+1. Select __Add all__ to add all required references to the new Telerik Reporting assembly versions.               They correspond to the ones that you deleted in the previous step. As a result, the newly added references appear in               __References__ without the yellow exclamation marks which means that they are valid.             
 
 1. Open the `web.config/app.config` file and update all version numbers to the new one in the following               instances:             
 
@@ -129,5 +129,5 @@ Apart from website projects, you can also manually upgrade class library project
 
 1. Rebuild all updated projects.             
 
-1. If compilation errors or warnings occur, review the                [Release History section                 ](https://www.telerik.com/support/whats-new/reporting/release-history)                for any obsolete or deleted properties, methods,               and events, and handle these according to the instructions in the section.               Review the release history for all releases between the previous and the latest version you installed.
+1. If compilation errors or warnings occur, review the                [Release History section              ](https://www.telerik.com/support/whats-new/reporting/release-history)                for any obsolete or deleted properties, methods,               and events, and handle these according to the instructions in the section.               Review the release history for all releases between the previous and the latest version you installed.
 

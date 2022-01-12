@@ -25,7 +25,7 @@ The example above refreshes the report viewer.
 
 The following table lists the available methods:         
 
-|  __Method__  |  __Description__  |
+|  __Method__ |  __Description__ |
 | ------ | ------ |
 | __refreshReport()__ |Reloads/refreshes the current report. __Returns__ : the current ReportViewer object.|
 | __getReportSource(): any__ |Gets the current ReportSource - report and parameters. __Returns__ : object with properties:<br/>* report: string<br/>* parameters: JSON|

@@ -18,17 +18,17 @@ To create a new report with the wizard:
 
 * Standalone Report Designer:           
 
-   + Select __File | New |__  from the Telerik Report Designer File menu;               __Click__  on the Label Report Wizard template. Create file dialog opens;               Choose a file name and directory. Click __Save__  and the Import Report Wizard opens.               
+   + Select __File | New |__ from the Telerik Report Designer File menu;               __Click__ on the Label Report Wizard template. Create file dialog opens;               Choose a file name and directory. Click __Save__ and the Import Report Wizard opens.               
 
 * Visual Studio:           
 
    + Create a new class library or use an existing one.                 Verify that the targeted.NET framework version is.NET4(+), Full profile as Client profile is not supported.               
 
-   + __Right-click__  the project context menu and select                 __Add | New Item | Telerik Report__.                 Enter a name for the report class and click the __Add__  button to close the dialog. Select report wizard form opens.               
+   + __Right-click__ the project context menu and select                 __Add | New Item | Telerik Report__.                 Enter a name for the report class and click the __Add__ button to close the dialog. Select report wizard form opens.               
 
-   + Select the __Label Report Wizard__  option from the list and click __OK__.               
+   + Select the __Label Report Wizard__ option from the list and click __OK__.               
 
-|  __Step__  |  __Description__  |
+|  __Step__ |  __Description__ |
 | ------ | ------ |
 | __Design Data Layout__ |Use the Categories and the Labels list controls to choose from a list of predefined label layouts to quickly structure the reports visual representation.<br/>            See the Label Information and Preview boxes to get a rough idea of how the report will be laid out.|
 | __Choose Data Source__ |This page lets you use an existing data source from a list of data sources<br/>            or add new Data Source. If you choose to create new data source, click the __Add New Data Source__ button to start the [Data Source Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}). It will walk you through an additional set<br/>            of steps and when finished will return you to the Report Wizard so you can continue.|

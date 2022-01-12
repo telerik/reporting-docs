@@ -18,7 +18,7 @@ The __Edit Grouping__ dialog controls how sets of records are broken out and dis
 
   ![](images/UI020.png)
 
-You can arrive at the __Edit Grouping__ dialog by  clicking on the ellipsis in the __Report.Groups__  property. 
+You can arrive at the __Edit Grouping__ dialog by  clicking on the ellipsis in the __Report.Groups__ property. 
 
 ## Using the Edit Grouping Dialog
 

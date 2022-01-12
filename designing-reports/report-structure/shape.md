@@ -60,7 +60,7 @@ __ShapeType Property modes:__
 
 * Cross           
 
-The Shape report item supports creating a custom shapes programmatically. The following code snippet shows how to inherit the          [ShapeBase](/reporting/api/Telerik.Reporting.Drawing.Shapes.ShapeBase)  class and provide a custom set of __PointF__  array         that will form the shape. The points coordinates are relative and do not depend on the item's size or position in the report.       
+The Shape report item supports creating a custom shapes programmatically. The following code snippet shows how to inherit the          [ShapeBase](/reporting/api/Telerik.Reporting.Drawing.Shapes.ShapeBase)  class and provide a custom set of __PointF__ array         that will form the shape. The points coordinates are relative and do not depend on the item's size or position in the report.       
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CustomShapeClassDeclarationSnippet}}
 ````c#
@@ -107,7 +107,7 @@ Class CustomShapeType
 End Class
 ````
 
-The Shape item can be created at runtime and added to a report item container (section, panel, etc.).          The snippet below shows how to instantiate a Shape item of __CustomShape__  type:       
+The Shape item can be created at runtime and added to a report item container (section, panel, etc.).          The snippet below shows how to instantiate a Shape item of __CustomShape__ type:       
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CreateCustomShapeSnippet}}
 ````c#

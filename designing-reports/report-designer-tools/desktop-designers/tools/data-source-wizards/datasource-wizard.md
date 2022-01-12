@@ -52,7 +52,7 @@ There are two ways to start the Data Source wizard:
 
    + Select the DataSource property of a data report item (Report, Table/Crosstab/List, Chart)                 
 
-   + Click on the __Add New Data Source__  link.                 
+   + Click on the __Add New Data Source__ link.                 
 
    + The Data Source Wizard is started                   
 
@@ -60,9 +60,9 @@ There are two ways to start the Data Source wizard:
 
 1. From the [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}),               [Table and CrossTab Wizards]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards%}),               Graph Wizard or Map Wizard:             
 
-   + Navigate to __Choose Data Source__  page of the Wizard                 
+   + Navigate to __Choose Data Source__ page of the Wizard                 
 
-   + click the __Add New Data Source__  button                 
+   + click the __Add New Data Source__ button                 
 
    + The Data Source Wizard is started                   
 

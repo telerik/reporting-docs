@@ -18,7 +18,7 @@ Use the table to display fields from a dataset either as detail data or as group
 
 ## OverView
 
-* __Table:__  Use a table item to display detail data, organize the data in row groups, or both. The Table contains three columns with a table header row and a details row for data. The following figure shows the initial table template, selected on the design surface:                 
+* __Table:__ Use a table item to display detail data, organize the data in row groups, or both. The Table contains three columns with a table header row and a details row for data. The following figure shows the initial table template, selected on the design surface:                 
 
   ![](images/table1.png)
 
@@ -26,7 +26,7 @@ Use the table to display fields from a dataset either as detail data or as group
 
   ![](images/table2.png)
 
-* __List:__  Use a list item to create a free-form layout. You are not limited to a grid layout, but can place fields freely inside the list. You can use a list to design a form for displaying many dataset fields or as a container to display multiple data regions side by side for grouped data. For example, you can define a group for a list; add a table, chart, and image; and display values in table and graphic form for each group value.                 
+* __List:__ Use a list item to create a free-form layout. You are not limited to a grid layout, but can place fields freely inside the list. You can use a list to design a form for displaying many dataset fields or as a container to display multiple data regions side by side for grouped data. For example, you can define a group for a list; add a table, chart, and image; and display values in table and graphic form for each group value.                 
 
   ![](images/table3.png)
 
@@ -48,7 +48,7 @@ When you select several cells which belong to a single dynamic (or static) grou
 
 ## Table Group Editor
 
-Choosing a dynamic group from the           [             Group             Explorer           ]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), shows a context menu which allows you to alter the           properties of the selected group. Choosing Group properties option,           would open a "Edit Table Group" dialog from which you can control           Filters, Grouping and Sorting along with specifying GroupKeepTogether.           
+Choosing a dynamic group from the           [          Group             Explorer        ]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), shows a context menu which allows you to alter the           properties of the selected group. Choosing Group properties option,           would open a "Edit Table Group" dialog from which you can control           Filters, Grouping and Sorting along with specifying GroupKeepTogether.           
 
   ![](images/TableGroupEditor.png)
 

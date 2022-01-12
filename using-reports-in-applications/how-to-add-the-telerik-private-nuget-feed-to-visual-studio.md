@@ -26,9 +26,9 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 
 1. Open Visual Studio.             
 
-1. Go to __Tools__  > __NuGet Package Manager__  > __Package Manager Settings__, select __Package Manager Sources__  and then click the __+__  button.             
+1. Go to __Tools__ > __NuGet Package Manager__ > __Package Manager Settings__, select __Package Manager Sources__ and then click the __+__ button.             
 
-1. Choose feed __Name__, set the feed __URL__  to: __https://nuget.telerik.com/v3/index.json__  and click __OK__.             
+1. Choose feed __Name__, set the feed __URL__ to: __https://nuget.telerik.com/v3/index.json__ and click __OK__.             
 >caption Figure 1: Visual Studio NuGet Package Manager and Telerik NuGet Feed:
 
   
@@ -37,15 +37,15 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 
 1. Create or load your project.             
 
-1. Go to __Tools__  > __NuGet Package Manager__  > __Manage NuGet Packages for solution__.             
+1. Go to __Tools__ > __NuGet Package Manager__ > __Manage NuGet Packages for solution__.             
 
-1. In the upper right-hand corner of the __Manage Packages for Solution__  window, select the Telerik __Package source__  that you just added.             
+1. In the upper right-hand corner of the __Manage Packages for Solution__ window, select the Telerik __Package source__ that you just added.             
 
-1. Choose the __Online / Browse__  list of packages (depending on your VS version).             
+1. Choose the __Online / Browse__ list of packages (depending on your VS version).             
 
 1. Enter your Telerik credentials in the Windows Authentication dialog (e.g., user: my.name@my.company.com and password: myPassPhraseForTelerikDotCom).             
 
-1. Enter your credentials only once by selecting the __Remember my password__  checkbox.             
+1. Enter your credentials only once by selecting the __Remember my password__ checkbox.             
 >caption Figure 2: Enter your Telerik.com credentials to access the Telerik NuGet feed:
 
   

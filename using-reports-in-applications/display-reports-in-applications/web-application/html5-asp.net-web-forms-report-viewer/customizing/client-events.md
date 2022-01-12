@@ -33,7 +33,7 @@ To attach a client event handler you have to set the appropriate ClientEvents ta
 
 The following table lists the available client events:         
 
-|  __Event__  |  __Description__  |
+|  __Event__ |  __Description__ |
 | ------ | ------ |
 |RenderingBegin|Occurs before rendering the report. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)%})|
 |RenderingEnd|Occurs after rendering the report. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%})|

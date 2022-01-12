@@ -68,17 +68,17 @@ The Selected Fields pane displays the selected columns to include in the query. 
 
 The following options are available:             
 
-* __Delete__  Deletes the selected field from the fields collection.                 
+* __Delete__ Deletes the selected field from the fields collection.                 
 
-* __Move Up and Move Down__  Moves fields up or down the fields list.                   The fields are added to the query in the order they appear in the Selected fields list.                 
+* __Move Up and Move Down__ Moves fields up or down the fields list.                   The fields are added to the query in the order they appear in the Selected fields list.                 
 
 The following columns are displayed:
 
-* __Table__  Displays the field table name.                 
+* __Table__ Displays the field table name.                 
 
-* __Field__  Displays the field name.                 
+* __Field__ Displays the field name.                 
 
-* __Alias__  The alias to use for the field.                   Alias will be automatically generated if the last added field name is already in use.                   Additionally field aliases can be changed or added manually.                 
+* __Alias__ The alias to use for the field.                   Alias will be automatically generated if the last added field name is already in use.                   Additionally field aliases can be changed or added manually.                 
 
 ### Relationships Pane
 
@@ -86,25 +86,25 @@ The Relationships pane displays the join relationships.               The relati
 
 The following options are available:             
 
-* __Manual Mode/Auto Detect__  Toggles the auto detect feature that automatically creates relationships between tables.                   If auto detect is turned on, the query designer creates relationships from foreign keys in tables;                   otherwise, you must create the relationships manually.                   When you select tables in the Database view pane, auto detect automatically attempts to create relationships.                   If you turn on auto detect after you have manually created joins, those joins will be discarded.                 
+* __Manual Mode/Auto Detect__ Toggles the auto detect feature that automatically creates relationships between tables.                   If auto detect is turned on, the query designer creates relationships from foreign keys in tables;                   otherwise, you must create the relationships manually.                   When you select tables in the Database view pane, auto detect automatically attempts to create relationships.                   If you turn on auto detect after you have manually created joins, those joins will be discarded.                 
 
-* __Add Relationship__  Adds a relationship to the Relationship list.                 If auto detect is turned on, the tables from which columns are used in the query are automatically added to the Relationship list.                   When auto detect identifies that two tables are related, one table is added to the Left Table column, the other the Right Table column,                   and an inner join is created between them.                   Each relationship generates a JOIN clause in the query.                   If the tables are not related, all of them are listed in Left Table column and the Join Type column                   indicates the tables are not related to other tables.                   When auto detect is turned on, you cannot manually add relationships between tables that auto detect determines are unrelated.                 If in manual mode, you can add and change relationships between tables.                   Click Related Fields cell to specify the fields to use to join the two tables.                 When using multiple relationships in a query, one of the tables in each relationship,                   except the first one, must be referenced in a proceeding relationships.                 
+* __Add Relationship__ Adds a relationship to the Relationship list.                 If auto detect is turned on, the tables from which columns are used in the query are automatically added to the Relationship list.                   When auto detect identifies that two tables are related, one table is added to the Left Table column, the other the Right Table column,                   and an inner join is created between them.                   Each relationship generates a JOIN clause in the query.                   If the tables are not related, all of them are listed in Left Table column and the Join Type column                   indicates the tables are not related to other tables.                   When auto detect is turned on, you cannot manually add relationships between tables that auto detect determines are unrelated.                 If in manual mode, you can add and change relationships between tables.                   Click Related Fields cell to specify the fields to use to join the two tables.                 When using multiple relationships in a query, one of the tables in each relationship,                   except the first one, must be referenced in a proceeding relationships.                 
 
-* __Delete__  Deletes the selected relation from the relationships collection.                 
+* __Delete__ Deletes the selected relation from the relationships collection.                 
 
-* __Move Up and Move Down__  Moves relations up or down the filter list.                   The relations are added to the query in the order they appear in the Relations list.                   Still the SQL query builder may reorder the relations to create a correct SQL statement.                 
+* __Move Up and Move Down__ Moves relations up or down the filter list.                   The relations are added to the query in the order they appear in the Relations list.                   Still the SQL query builder may reorder the relations to create a correct SQL statement.                 
 
 The following columns are available:             
 
-* __Left Table__  Displays the name of the first table that is part of a join relationship.                 
+* __Left Table__ Displays the name of the first table that is part of a join relationship.                 
 
-* __Join Type__  Displays the type of SQL JOIN statement that is used in the automatically generated query.                   By default, if a foreign key constraint is detected, INNER JOIN is used.                   Other joins types can be LEFT JOIN, RIGHT JOIN or FULL OUTER JOIN.                   If none of these join types apply, the Join Type column displays Unrelated.                   No CROSS JOIN joins are created for unrelated tables;                   instead, you must manually create relationships by joining columns in the left and right tables.                 
+* __Join Type__ Displays the type of SQL JOIN statement that is used in the automatically generated query.                   By default, if a foreign key constraint is detected, INNER JOIN is used.                   Other joins types can be LEFT JOIN, RIGHT JOIN or FULL OUTER JOIN.                   If none of these join types apply, the Join Type column displays Unrelated.                   No CROSS JOIN joins are created for unrelated tables;                   instead, you must manually create relationships by joining columns in the left and right tables.                 
 
-* __Right Table__  Displays the name of the second table that is part of a join relationship.                 
+* __Right Table__ Displays the name of the second table that is part of a join relationship.                 
 
-* __Join Fields__  Lists the pairs of joined fields, if a relationship has multiple join conditions the pairs of joined fields are separated by commas (,).                 
+* __Join Fields__ Lists the pairs of joined fields, if a relationship has multiple join conditions the pairs of joined fields are separated by commas (,).                 
 
-* __Related Fields__                    Displays the relationships between the tables.                   Clicking a Related Fields cell while in manual mode opens a dialog box in which to add and modify relationships between tables.                   You chose the fields in the right and left tables to join.                   You can join multiple fields from the left table and the right table to specify multiple join conditions in a relationship.                   The two fields that join the left and right tables do not need to have the same name. The joined fields must have compatible data types.                 
+* __Related Fields__                 Displays the relationships between the tables.                   Clicking a Related Fields cell while in manual mode opens a dialog box in which to add and modify relationships between tables.                   You chose the fields in the right and left tables to join.                   You can join multiple fields from the left table and the right table to specify multiple join conditions in a relationship.                   The two fields that join the left and right tables do not need to have the same name. The joined fields must have compatible data types.                 
 
 ### Filters Pane
 
@@ -112,19 +112,19 @@ The Filters pane displays the criteria that are used to limit the number of rows
 
 The following columns are displayed:
 
-* __Field Name__  Displays the name of the field to apply the criteria to.                 
+* __Field Name__ Displays the name of the field to apply the criteria to.                 
 
-* __Operator__  The operator to use to in the filter expression.                 
+* __Operator__ The operator to use to in the filter expression.                 
 
-* __Parameter name__  The parameter name to add to the query.                 
+* __Parameter name__ The parameter name to add to the query.                 
 
-* __Preview value__  The value to use for the Data Preview Pane.                 
+* __Preview value__ The value to use for the Data Preview Pane.                 
 
 The following options are available:             
 
-* __Add__  Add new filter to the filters collection.                 __Delete__  Deletes the selected filter from the filters collection.                 
+* __Add__ Add new filter to the filters collection.                 __Delete__ Deletes the selected filter from the filters collection.                 
 
-* __Move Up and Move Down__  Moves fields up or down the filter list.                   The filters are added to the query in the order they appear in the Filters list.                 
+* __Move Up and Move Down__ Moves fields up or down the filter list.                   The filters are added to the query in the order they appear in the Filters list.                 
 
 ### Data Preview Pane
 

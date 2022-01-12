@@ -28,11 +28,11 @@ First, you need to create a new ASP.NET Core project:
 
 1. Open __Visual Studio 2017 Update 3 or later__.             
 
-1. From the __File__  menu, select __New__  > __Project__.             
+1. From the __File__ menu, select __New__ > __Project__.             
 
-1. In the __New Project__  dialog, expand __Installed > Visual C# > Web__,               and select __ASP.NET Core Web Application__  project template.               Choose a name for the project and click __OK__.             
+1. In the __New Project__ dialog, expand __Installed > Visual C# > Web__,               and select __ASP.NET Core Web Application__ project template.               Choose a name for the project and click __OK__.             
 
-1. On the __New ASP.NET Core Web Application dialog__                select from the drop downs __.NET Core__  and __ASP.NET Core 2.1__.               Next, from the list of templates select __API__.             
+1. On the __New ASP.NET Core Web Application dialog__             select from the drop downs __.NET Core__ and __ASP.NET Core 2.1__.               Next, from the list of templates select __API__.             
 
 ## Add Report Definitions
 
@@ -40,7 +40,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 1. Locate the sample reports in               *{Telerik Reporting installation path}\Report Designer\Examples*.             
 
-1. Add a new folder to your solution called __Reports__  and copy all sample reports into it.             
+1. Add a new folder to your solution called __Reports__ and copy all sample reports into it.             
 
 1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions               for the requested reports from this project folder.             
 
@@ -50,11 +50,11 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 This guide applies the recommended NuGet package references approach to add the dependencies:         
 
-1. Reference the __Telerik.Reporting.Services.AspNetCore__  (or __Telerik.Reporting.Services.AspNetCore.Trial__ ) package.             
+1. Reference the __Telerik.Reporting.Services.AspNetCore__ (or __Telerik.Reporting.Services.AspNetCore.Trial__) package.             
 
-1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the               __Telerik.Reporting.OpenXmlRendering__  (or __Telerik.Reporting.OpenXmlRendering.Trial__ )               NuGet package.             
+1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the               __Telerik.Reporting.OpenXmlRendering__ (or __Telerik.Reporting.OpenXmlRendering.Trial__)               NuGet package.             
 
-> The Telerik Reporting engine and services assemblies are built against  __.NET Standard 2.0 framework__              where applicable, which ensures compatibility with a greater variety of frameworks and applications.           The recommended way of adding the necessary dependencies is to use the             [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})             and reference the dependencies as NuGet packages. This would also add all indirect dependencies to your project             bringing easier dependency management.           Alternatively, the assemblies are available in the  __\Bin\netstandard2.0\__              folder of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies             listed in the Requirements section of the [](aee150e8-e29d-4739-b8b9-d8a973982efc#requirements) section             and also the following dependency package:              [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).             Note that you need the last reference only to enable the Office OpenXML document formats.           The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called              [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)              instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.           
+> The Telerik Reporting engine and services assemblies are built against  __.NET Standard 2.0 framework__           where applicable, which ensures compatibility with a greater variety of frameworks and applications.           The recommended way of adding the necessary dependencies is to use the             [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})             and reference the dependencies as NuGet packages. This would also add all indirect dependencies to your project             bringing easier dependency management.           Alternatively, the assemblies are available in the  __\Bin\netstandard2.0\__           folder of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies             listed in the Requirements section of the [](aee150e8-e29d-4739-b8b9-d8a973982efc#requirements) section             and also the following dependency package:              [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/).             Note that you need the last reference only to enable the Office OpenXML document formats.           The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called              [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/)              instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.           
 
 ## Add Configuration Settings (Optional)
 
@@ -67,7 +67,7 @@ The report generation engine can retrieve Sql Connection Strings and specific Re
 ReportingEngineConfiguration = sp.GetService<IConfiguration>()
 ````
 
-will be initialized from __appSettings.json__  or           __appsettings.{EnvironmentName}.json__.         
+will be initialized from __appSettings.json__ or           __appsettings.{EnvironmentName}.json__.         
 
 To activate JSON file configuration with a different name, for example, __reportingAppSettings.json__,            call the            [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/)            extension method on an instance of            [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder).         
 
@@ -90,7 +90,7 @@ static class ConfigurationHelper
 }
 ````
 
-Finally, all configurations should be placed in the JSON configuration file (add one in the project root if such            does not exist). For example, __ConnectionStrings__  setting should be configured in            JSON-based format like this:         
+Finally, all configurations should be placed in the JSON configuration file (add one in the project root if such            does not exist). For example, __ConnectionStrings__ setting should be configured in            JSON-based format like this:         
 
     
 ````html
@@ -119,7 +119,7 @@ The above type of connection string lacks information about the data provider an
 
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section.         
 
-The last supported type of __ConnectionStrings__  configuration uses an array to provide information about each connection string:         
+The last supported type of __ConnectionStrings__ configuration uses an array to provide information about each connection string:         
 
     
 ````html
@@ -131,13 +131,13 @@ The last supported type of __ConnectionStrings__  configuration uses an array to
       "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
       "providerName": "System.Data.SqlClient"
     }
-  ]
+]
 }
 ````
 
 ## Setup the Startup.cs file for the Reports service
 
-The __ConfigureServices__  method inside the __Startup.cs__  in the project should be modified           in order to enable the Reports Service functionality.         
+The __ConfigureServices__ method inside the __Startup.cs__ in the project should be modified           in order to enable the Reports Service functionality.         
 
 Add the dedicated configuration object needed from the Reports Service in the dependency container.           Note how the report source resolver will target the Reports folder we created earlier.         
 
@@ -157,7 +157,7 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 ## Setting up the REST service
 
-1. Implement a Reports controller. Right-click on the __Controllers__                folder and add a new item: Add - New item - __Web API Controller Class__  item.               Name it ReportsController. This will be our Telerik Reporting REST service in the project.             
+1. Implement a Reports controller. Right-click on the __Controllers__             folder and add a new item: Add - New item - __Web API Controller Class__ item.               Name it ReportsController. This will be our Telerik Reporting REST service in the project.             
 
 1. Inherit the  [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase)  type               and inject the configuration settings in the constructor.               This is how a basic implementation of the controller should look like:             
 

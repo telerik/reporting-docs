@@ -12,13 +12,13 @@ position: 5
 
 
 
-This section discusses various techniques for retrieving data from a __Telerik Data Access Model__  with the help          of the __OpenAccessDataSource__  component. The provided examples and code snippets assume an existing __Telerik Data Access Model__           of the __Adventure Works__  sample database with the following structure:
+This section discusses various techniques for retrieving data from a __Telerik Data Access Model__ with the help          of the __OpenAccessDataSource__ component. The provided examples and code snippets assume an existing __Telerik Data Access Model__        of the __Adventure Works__ sample database with the following structure:
 
   
 
   ![](images/DataSources/OpenAccessDataSourceAdventureWorksEntityModel.png)
 
-The simplest approach to extract entities from a __Telerik Data Access Model__  is to bind the __OpenAccessDataSource__  component            directly to an auto-generated property of the model, as shown in the sample code below:           
+The simplest approach to extract entities from a __Telerik Data Access Model__ is to bind the __OpenAccessDataSource__ component            directly to an auto-generated property of the model, as shown in the sample code below:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=PropertyBindingSnippet}}
 ````C#
@@ -43,7 +43,7 @@ Dim report As New Report1()
 report.DataSource = openAccessDataSource
 ````
 
-You can specify expressions to the data item to group, sort or filter the selected entities. The            expressions are evaluated on the application level by the reporting engine after all entities are downloaded           from the database. Sometimes it is preferable to offload certain tasks on the database level instead. To do            this you need to define a custom method in the __OpenAccessContext__  class that performs the required business logic.            For example, the following method uses the __Where__  extension method to filter the __Product__  entities:           
+You can specify expressions to the data item to group, sort or filter the selected entities. The            expressions are evaluated on the application level by the reporting engine after all entities are downloaded           from the database. Sometimes it is preferable to offload certain tasks on the database level instead. To do            this you need to define a custom method in the __OpenAccessContext__ class that performs the required business logic.            For example, the following method uses the __Where__ extension method to filter the __Product__ entities:           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=SampleMethodSnippet}}
 ````C#
@@ -97,7 +97,7 @@ Another common problem is related to the lazy loading feature of __Telerik Data 
 
 =Fields.ProductSubcategory.ProductCategory.Name
 
-The above expression relies upon the built-in lazy loading mechanism to obtain the __ProductSubcategory__             entity for the current __Product__  entity via the corresponding relation property, and then the __ProductCategory__             entity for the current __ProductSubcategory__  entity. While convenient, lazy loading requires additional round-trips           to the database for the entities that are not present in memory. If this happens frequently it might significantly            impact the performance of the report. To overcome this you need to query all entities needed for the report at once. This way lazy             loading is avoided completely and all data is retrieved in a single round-trip from the database.         The most flexible and efficient method for retrieving data from the __Telerik Data Access Model__  is to execute a custom          query against the entities. The following sample method uses a __LINQ__  query to obtain only the necessary data             for the report and then packs it into a collection of __POCOs__ : 
+The above expression relies upon the built-in lazy loading mechanism to obtain the __ProductSubcategory__          entity for the current __Product__ entity via the corresponding relation property, and then the __ProductCategory__          entity for the current __ProductSubcategory__ entity. While convenient, lazy loading requires additional round-trips           to the database for the entities that are not present in memory. If this happens frequently it might significantly            impact the performance of the report. To overcome this you need to query all entities needed for the report at once. This way lazy             loading is avoided completely and all data is retrieved in a single round-trip from the database.         The most flexible and efficient method for retrieving data from the __Telerik Data Access Model__ is to execute a custom          query against the entities. The following sample method uses a __LINQ__ query to obtain only the necessary data             for the report and then packs it into a collection of __POCOs__ : 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\OpenAccessDataSourceSnippets.cs region=LinqQuerySnippet}}
 ````C#

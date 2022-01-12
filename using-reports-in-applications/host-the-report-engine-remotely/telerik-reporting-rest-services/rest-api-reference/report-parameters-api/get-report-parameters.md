@@ -86,7 +86,7 @@ HTTP/1.1 200 OK
       ‘availableValues’: [
               {‘name’: ‘Sofia’, ‘value’: ‘Sofia’}
               {‘name’: ‘Berlin’, ‘value’: ‘Berlin’}
-      ],
+   ],
       ‘value’: ‘Sofia’
       ‘label’: ‘Sofia’,
     }

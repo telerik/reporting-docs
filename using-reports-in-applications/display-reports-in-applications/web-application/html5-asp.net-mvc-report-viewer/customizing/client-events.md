@@ -14,7 +14,7 @@ position: 6
 
 This article explains how to attach client event handlers to an MVC ReportViewer instance.
 
-To attach a client event handler you have to set the appropriate __ClientEvents__  widget method as shown below:         
+To attach a client event handler you have to set the appropriate __ClientEvents__ widget method as shown below:         
 
     
 ````js
@@ -35,13 +35,13 @@ To attach a client event handler you have to set the appropriate __ClientEvents_
                 events => events
                  .RenderingBegin("onRenderingBegin")
                  .RenderingEnd("onRenderingEnd")
-                    )
+                 )
 )
 ````
 
 The following table list the available client events:         
 
-|  __Event__  |  __Description__  |
+|  __Event__ |  __Description__ |
 | ------ | ------ |
 |RenderingBegin|Occurs before rendering the report. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)%})|
 |RenderingEnd|Occurs after rendering the report. For the underlying JS methods see [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%})|

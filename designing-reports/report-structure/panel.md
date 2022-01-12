@@ -14,7 +14,7 @@ position: 11
 
 The Panel report item is not associated with data and is used as a container for other items, usually to group/separate multiple report items by some criteria. 
 
-The Panel item can be used to organize the layout of a report and allow items to be rendered without affecting the content outside the Panel item.           The Panel item grows to accommodate its content, and as of __R3 2016__  it can shrink by setting its CanShrink property to true.           You can also set properties such as __Visible__  on the Panel to affect all of the report items hosted in that Panel.           When you move the Panel, the items that are contained within it move along with it. The           screenshot shows a Panel containing two [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report items.           
+The Panel item can be used to organize the layout of a report and allow items to be rendered without affecting the content outside the Panel item.           The Panel item grows to accommodate its content, and as of __R3 2016__ it can shrink by setting its CanShrink property to true.           You can also set properties such as __Visible__ on the Panel to affect all of the report items hosted in that Panel.           When you move the Panel, the items that are contained within it move along with it. The           screenshot shows a Panel containing two [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report items.           
 
   ![](images/Panel.png)
 

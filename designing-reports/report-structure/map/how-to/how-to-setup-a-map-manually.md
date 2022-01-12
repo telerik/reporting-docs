@@ -20,7 +20,7 @@ The current article elaborates on how to setup a Map without using the __Map Wiz
 
 1. Set your Data Source to one of the available [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).                 
 
-1. Create a SeriesGroup and set the appropriate measure property (i.e. __Size__  for the __PointMapSeries__ )                   to an expression that will evaluate to a scalar value.                 
+1. Create a SeriesGroup and set the appropriate measure property (i.e. __Size__ for the __PointMapSeries__)                   to an expression that will evaluate to a scalar value.                 
 
 1. Setup the geographical coordinates of your data points.
 

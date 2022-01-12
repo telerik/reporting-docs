@@ -14,9 +14,9 @@ position: 0
 
 ## commands
 
-The report viewer exposes all its available commands through the __commands__  collection:         
+The report viewer exposes all its available commands through the __commands__ collection:         
 
-Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the                __exec()__  method being the one that actually triggers the command. The other two methods,                __enabled()__  and __checked()__  return a bool value and can be used                prior to executing a command or to find in what state the UI for the command should be.           
+Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the                __exec()__ method being the one that actually triggers the command. The other two methods,                __enabled()__ and __checked()__ return a bool value and can be used                prior to executing a command or to find in what state the UI for the command should be.           
 
     
 ````js
@@ -26,7 +26,7 @@ $('#printButton').click(function () {
 });
 ````
 
-The example above selects an HTML element with the __printButton__  id using jQuery and in the click event           handler invokes report viewer __print__  command. Note that the __exec()__  method of the command needs to be           called. For more information please check the command article.         
+The example above selects an HTML element with the __printButton__ id using jQuery and in the click event           handler invokes report viewer __print__ command. Note that the __exec()__ method of the command needs to be           called. For more information please check the command article.         
 
 The following table is a list of all commands:         
 

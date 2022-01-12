@@ -18,7 +18,7 @@ You can contact Telerik support with a technical question by using your account 
 
 An alternative is to post your question in the                      [public forums](http://www.telerik.com/community/forums.aspx)  and ask our community for help.                 
 
-You can also send us comments on any topic in this help file by clicking the __Send Comments__  link displayed at the top and bottom of the page.                 
+You can also send us comments on any topic in this help file by clicking the __Send Comments__ link displayed at the top and bottom of the page.                 
 
 Alternatively, you can send an e-mail to  [documentation@telerik.com](mailto:documentation@Telerik.com)  with feedback or inquiries concerning our manuals.                 
 

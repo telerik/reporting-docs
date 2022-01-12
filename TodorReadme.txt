@@ -17,7 +17,7 @@ how to pass the real tokes to _config.yml
 
 how to use tokens in code snippets (CDATA)
 
-
+API REFEFENCE не излиза в началото а само като прецъкаш
 
 images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	https://testdocs.telerik.com/reporting/designing-reports/report-structure/graph/chart-types/overview
 used only in 1 file - do it manually:

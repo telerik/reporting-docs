@@ -10,9 +10,13 @@ position: 1
 
 # How to Configure the OpenClientDataSource Component
 
+You can connect to data from OpenEdge AppServer ABL procedures using the Telerik __OpenClientDataSource__ component. To do this, you need the following prerequisites and configuration settings.       
 
+## Prerequisites
 
-You can connect to data from OpenEdge AppServer ABL procedures using the         Telerik __OpenClientDataSource__ component. To do this, you need the following prerequisites and configuration settings.       
++ Running instance of OpenEdge AppServer with deployed [supported ABL procedure]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview%}).
+
++ Generated .NET 4.0 proxy assembly for the target procedure along with its dependencies.
 
 ## Configuring the OpenClientDataSource Component
 
@@ -30,17 +34,23 @@ You can connect to data from OpenEdge AppServer ABL procedures using the        
 
    + (Optional) The name of the Table which data should be retrieved. Applicable only if the data is returned as DATASET                 
 
-   + Input parameters that the procedure expects along with values and design-time parameter values.                 
+   + Input parameters that the procedure expects along with values and design-time parameter values.  
+     
+	 a. Connection URL
+     
+     a. Username (when applicable)
+     
+     a. Password (when applicable)
+   
 
    + AppServer connection settings                 
 
-   1. Connection URL
-
-   1. Username (when applicable)
-
-   1. Password (when applicable)
-
-   1. AppServer info (optional)
-
-   1. Session model (managed/free)
-
+     (a). Connection URL
+     
+     (a). Username (when applicable)
+     
+     (a). Password (when applicable)
+     
+     (a). AppServer info (optional)
+     
+     (a). Session model (managed/free)

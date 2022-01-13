@@ -17,12 +17,11 @@ REMAINING:
 how to use tokens in code snippets (CDATA) - manually
 
 
-в API REFEFENCE излиза GoogleAnalytics - наш неймспейс е
-всичко, което започва с Telerik.Reporting.Design - да се изключи. Ванката ще види за други
-
 
 add URL redirects to web.config in reporting-docs. Пример от WPF -  https://github.com/telerik/xaml-docs/blob/master/web.config
 https://stackoverflow.com/questions/34389866/rewrite-rules-in-separate-config-file - create redirect.config that is referenced in the web.config.
+WPF and WinForms use <add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule, Intelligencia.UrlRewriter" />
+
 
 images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	https://testdocs.telerik.com/reporting/designing-reports/report-structure/graph/chart-types/overview
 used only in 1 file - do it manually:
@@ -457,3 +456,41 @@ Code	File	Line	Column
 API REFEFENCE не излиза в началото а само като прецъкаш - за несъществуваш урл се оказа, че се отнася
 
 дефолтен редирект кам knowledge-base - fixed in web.config
+
+
+
+в API REFEFENCE излиза GoogleAnalytics - наш неймспейс е
+всичко, което започва с Telerik.Reporting.Design - да се изключи. Ванката ще види за други
+само определени асемблита влизат в апи рефа:
+<DocumentationSources>
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Cache.Database.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Cache.Database.XML" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Cache.StackExchangeRedis.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Cache.StackExchangeRedis.XML" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Service.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Service.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Services.ServiceStack.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Services.ServiceStack.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Services.WebApi.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Services.WebApi.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.WebForms.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.WebForms.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.WinForms.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.WinForms.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Wpf.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Wpf.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Mvc.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Mvc.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Cache.StackExchangeRedis.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.Reporting.Cache.StackExchangeRedis.XML" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Html5.WebForms.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Html5.WebForms.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportServer.HttpClient.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportServer.HttpClient.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportServer.Services.Models.dll" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportServer.Services.Models.xml" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Silverlight.dll" xmlns="" />
+<DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Silverlight.xml" xmlns="" />
+</DocumentationSources>

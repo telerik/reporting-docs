@@ -5,7 +5,7 @@ description: Search
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search
 tags: search
 published: True
-position: 10
+position: 11
 ---
 
 # Search

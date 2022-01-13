@@ -5,7 +5,7 @@ description: Send Mail Message
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message
 tags: send,mail,message
 published: True
-position: 11
+position: 12
 ---
 
 # Send Mail Message

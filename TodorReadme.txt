@@ -13,11 +13,16 @@ msbuild /p:LatestBinariesPath="D:\Work\MdDocs\Examples\CSharp\.NET Framework\Htm
 
 REMAINING:
 
-how to pass the real tokes to _config.yml
 
-how to use tokens in code snippets (CDATA)
+how to use tokens in code snippets (CDATA) - manually
 
-API REFEFENCE не излиза в началото а само като прецъкаш
+
+в API REFEFENCE излиза GoogleAnalytics - наш неймспейс е
+всичко, което започва с Telerik.Reporting.Design - да се изключи. Ванката ще види за други
+
+
+add URL redirects to web.config in reporting-docs. Пример от WPF -  https://github.com/telerik/xaml-docs/blob/master/web.config
+https://stackoverflow.com/questions/34389866/rewrite-rules-in-separate-config-file - create redirect.config that is referenced in the web.config.
 
 images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	https://testdocs.telerik.com/reporting/designing-reports/report-structure/graph/chart-types/overview
 used only in 1 file - do it manually:
@@ -33,8 +38,7 @@ seems like the other paragraphs in the generated MD file   -	There are missing p
 
 
 
-relative links with {%slug ...%} don't work for KB articles - "...\designing-reports\converting-reports-from-other-reporting-solutions\overview.md"
-----actually works with the correct slug taken from the KB meta data. Needs to be replaced manually.
+
 
 
 
@@ -63,6 +67,12 @@ string projectPath = @"$/WinForms_Scrum/Development/Help";
 
 
 POSTPONED
+
+relative links with {%slug ...%} don't work for KB articles - "...\designing-reports\converting-reports-from-other-reporting-solutions\overview.md"
+----actually works with the correct slug taken from the KB meta data. Needs to be replaced manually.
+
+how to pass the real tokes to _config.yml - manual edit
+
 
 Tabbed code snippets (C#+VB) in lists:
 		Problematic pages:	
@@ -443,3 +453,7 @@ Code	File	Line	Column
         /// <conceptualLink target="935C2C81-69FB-4EE7-B104-C317A615D294">Rendering Extensions</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.WebApi\CreateDocumentArgs.cs	15	13
         /// <conceptualLink target="7B7459C1-F91D-4220-BC72-68804CD6B554">Device Information Settings</conceptualLink>	D:\Work\2018\Hotfix\Source\Code\Telerik.Reporting.Services.WebApi\CreateDocumentArgs.cs	24	13
 
+
+API REFEFENCE не излиза в началото а само като прецъкаш - за несъществуваш урл се оказа, че се отнася
+
+дефолтен редирект кам knowledge-base - fixed in web.config

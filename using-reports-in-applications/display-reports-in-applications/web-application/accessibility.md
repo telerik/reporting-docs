@@ -5,7 +5,7 @@ description: Accessibility
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility
 tags: accessibility
 published: True
-position: 9
+position: 10
 ---
 
 # Accessibility

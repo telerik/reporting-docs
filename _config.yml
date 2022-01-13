@@ -6,7 +6,7 @@ has_kb_portal: true
 
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd,TodorReadme.txt,report-designer-translations,_assetsApi]
-exclude_navigation: ["knowledge-base/*","for-more-help/*","quickstart/*","welcome-to-telerik-reporting!/*"]
+exclude_navigation: ["knowledge-base/*","for-more-help/*","quickstart/*"]
 navigation:
 ## List your directory names and order here, like this:   
     getting-started:
@@ -306,7 +306,16 @@ navigation:
         title: "Customizing"     
     using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
         position: 1400
-        title: "API Reference"    
+        title: "API Reference" 
+    using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer:
+        position: 1350
+        title: "React Report Viewer"
+    using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing:
+        position: 1200
+        title: "Customizing"
+    using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference:
+        position: 1400
+        title: "API Reference"        
     using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer:
         position: 1400
         title: "Blazor Report Viewer"     

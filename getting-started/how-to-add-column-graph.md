@@ -62,7 +62,8 @@ Preview the result by clicking __Preview__ > __PrintPreview__.
 
 You can find the full project in our  [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/FirstStepsProject).         
 
-## See Also
+#
+# See Also
 
 [Designing reports]({%slug telerikreporting/designing-reports/overview%})
 

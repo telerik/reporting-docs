@@ -44,6 +44,7 @@ Me.detail.Name = "detail";
 report.Items.Add(DirectCast(detail, ReportItemBase)
 ````
 
+
 # See Also
  
 

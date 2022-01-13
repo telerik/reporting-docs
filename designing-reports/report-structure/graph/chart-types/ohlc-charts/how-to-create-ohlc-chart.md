@@ -45,6 +45,7 @@ In this article we will show you how to create an OHLC chart using the Graph ite
 
 In this article we explained how to use the Graph Wizard to create a candlestick series, presenting stock prices over a period of time.           
 
+
 # See Also
 
  

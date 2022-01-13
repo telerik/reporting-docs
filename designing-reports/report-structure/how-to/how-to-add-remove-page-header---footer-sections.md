@@ -2,7 +2,7 @@
 title: How to Add/Remove Page Header & Footer Sections
 page_title: How to Add/Remove Page Header & Footer Sections | for Telerik Reporting Documentation
 description: How to Add/Remove Page Header & Footer Sections
-slug: telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header-&-footer-sections
+slug: telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections
 tags: how,to,add/remove,page,header,&,footer,sections
 published: True
 position: 2
@@ -47,6 +47,7 @@ The PageHeader *PrintOnFirstPage* has priority over its *PrintOnLastPage*. The o
 For some reports, it is useful to include a page-scoped aggregate in the page header or page footer of the report.           For example, a per-page sum total may be rendered if the page includes numeric values.         
 
 For more information, please refer to the PageExec description in the [Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) article.         
+
 
 # See Also
  

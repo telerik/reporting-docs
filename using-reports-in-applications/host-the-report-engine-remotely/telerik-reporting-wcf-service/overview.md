@@ -42,6 +42,7 @@ The __Telerik Reporting WCF Service__ is a standard WCF service and is compatibl
 
 For more information on deploying a Silverlight application that utilizes Telerik Reporting, refer to [Deploying Silverlight Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/deploying-silverlight-application%}) article.         
 
+
 # See Also
 
  

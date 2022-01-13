@@ -21,6 +21,7 @@ The service renders the report with the request thread culture.         By defau
 
 Then the user agent (the browser) preferred language will be used as culture.       
 
+
 # See Also
 
  

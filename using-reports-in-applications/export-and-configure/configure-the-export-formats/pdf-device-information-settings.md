@@ -53,6 +53,7 @@ For an example of how to set up the settings for a rendering extension, see [ext
 
 For more detailed explanation about the device information settings and their effect on the produced PDF document, see [Design Considerations for PDF Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%}).         
 
+
 # See Also
 
  

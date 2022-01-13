@@ -70,6 +70,7 @@ To display the newly added MVC page, you will need to use your own MVC controlle
 
 1. Rename the View accordingly (i.e. from 'ReportViewerView1.cshtml' to 'Reports.cshtml');             
 
+
 # See Also
 
  

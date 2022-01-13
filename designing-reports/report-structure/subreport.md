@@ -46,6 +46,7 @@ To remove blank vertical space in the detail section of a __SubReport__, set the
 
   ![](images/DesignSubReport001.png)
 
+
 # See Also
 
  

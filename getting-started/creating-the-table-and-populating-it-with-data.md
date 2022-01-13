@@ -101,7 +101,8 @@ Preview the result by clicking __Preview__ > __PrintPreview__.
 
 * [Setting the Page Header]({%slug telerikreporting/getting-started/setting-the-page-header%})
 
-## See Also
+#
+# See Also
 
 * [Understanding Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
 

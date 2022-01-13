@@ -130,6 +130,7 @@ When the __"Show data components only"__ check box from the previous step is not
 
    >The names and types of the defined parameters should match exactly the arguments of the selected method. In case this requirement is not                 fulfilled the  __ObjectDataSource__ component will not be able to resolve or call correctly the method and will raise an                 exception at runtime.               This is the last step of the wizard. After pressing the __Finish__             button the wizard will create the __ObjectDataSource__ component with the               specified settings. In case you are using               [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), the wizard will automatically add the necessary                [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) element in report's project configuration file. If the configuration file               does not exist, it will be created prior to populating and added to the current project. If the configuration file is under source control, it will be checked out.               After finishing the above operations, the wizard will close and return the user to the designer.             
 
+
 # See Also
 
  

@@ -69,6 +69,7 @@ encoder.ErrorCorrectionLevel = 2
 Me.barcode1.Encoder = encoder
 ````
 
+
 # See Also
  
 

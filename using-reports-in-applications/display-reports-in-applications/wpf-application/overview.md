@@ -68,6 +68,7 @@ The WPF ReportViewer control is a composite of Telerik UI for WPF controls.     
 
 The purpose of the WPF ReportViewer control is to display Telerik Reports and allow the user to interact with them.           Reports are processed and rendered on the client machine. The report in the viewer is rendered as standard XAML elements,            as Canvas and TextBlock, through Telerik Reporting XAML for WPF rendering mechanism.         
 
+
 # See Also
 
  

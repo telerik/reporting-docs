@@ -96,6 +96,7 @@ app.UseStaticFiles();
 
 A full example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 5\AspNet5Demo         
 
+
 # See Also
 
  

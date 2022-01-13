@@ -88,6 +88,7 @@ JSON-based configuration file:
 
 > When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`             element of configuration file. Failing to do so will result in a              [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)              with following text: *Configuration system failed to initialize*.           
 
+
 # See Also
 
  

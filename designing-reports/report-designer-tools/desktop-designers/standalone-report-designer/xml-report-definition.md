@@ -84,6 +84,7 @@ From 2017 R3 on, the version numbering corresponds with the product release it w
 
 For example, the version introduced in 2017 R3 will look as following: http://schemas.telerik.com/reporting/2017/3.0 
 
+
 # See Also
 
  

@@ -36,6 +36,7 @@ In case you would like to use a geocoding service to obtain geographical coordin
 
 In case your data source can provide geographical coordinates to be used for the data points,                       you need to set the Series'  [Latitude](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_Latitude)  and                        [Longitude](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_Longitude)  to the appropriate data source fields.                      
 
+
 # See Also
 
  

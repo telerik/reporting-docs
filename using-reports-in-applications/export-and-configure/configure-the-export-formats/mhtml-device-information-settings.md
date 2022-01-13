@@ -18,6 +18,7 @@ The following table lists the device information settings for rendering in MHTML
 
 No parameters can be specified for the MHTML rendering extension.
 
+
 # See Also
 
  

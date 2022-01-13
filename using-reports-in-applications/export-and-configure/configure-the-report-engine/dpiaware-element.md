@@ -71,6 +71,7 @@ The WPF Report Viewer must be used in a WPF application and they are system DPI-
 
 The HTML5-based report viewers use Telerik Reporting REST Service, which is an application executed in a web server (usually IIS) domain. Instead of applying a                [custom manifest](https://docs.microsoft.com/en-us/iis/publish/using-web-deploy/using-custom-manifests), the recommended approach is to add the __```<dpiAware>```__ section to the               application's __web.config__ and set the __dpiAwareness__ attribute to PROCESS_SYSTEM_DPI_AWARE.             
 
+
 # See Also
 [](F25EB909-7941-4B78-B24C-4025257A26C4#dpiAware)
 

@@ -28,6 +28,7 @@ The following example illustrates how to set the Parameters method to the Teleri
 
 > The Telerik Report Viewer Parameters method is optional. If it is not used, the Telerik Report Viewer will fall back to the [default values]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).           
 
+
 # See Also
 
  

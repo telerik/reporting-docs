@@ -53,6 +53,7 @@ When the application is hosted on IIS 7+, the handler of the report viewer shoul
 
    >The ReportViewer uses the session state to preserve the report instance assigned to its Report property during page postbacks and for some other design reasons as well. Thus have in mind that you should enable session state on your SharePoint server.
 
+
 # See Also
 
  

@@ -115,6 +115,7 @@ To get the __ReportViewer__ object from the HTML element:
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 ````
 
+
 # See Also
 
  

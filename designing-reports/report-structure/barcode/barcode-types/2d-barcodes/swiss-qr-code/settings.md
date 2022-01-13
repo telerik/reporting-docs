@@ -86,6 +86,7 @@ Determines whether the data provided in the  [BillData](/reporting/api/Telerik.R
 
 Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  property will obtain its value from the data configured in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property, or not.           If set to __true__, the data will be constructed from the fields in the *BillData* property.           If set to __false__, the *BillData* fields will not be respected and the barcode item will encode the raw data used in the *Value* field.         
 
+
 # See Also
 
  

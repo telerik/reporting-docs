@@ -70,6 +70,7 @@ Add buttons elements in your local template. There are two different elements th
 <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i><span>menuContinuousScrollText</span></a></li>
 ````
 
+
 # See Also
 
  

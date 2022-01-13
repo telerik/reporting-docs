@@ -26,6 +26,7 @@ Supported location providers are:
 
 * [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider)  - uses the                [Bing™ Maps Locations API](http://msdn.microsoft.com/en-us/library/ff701715.aspx)  to get location information about the requested address.             
 
+
 # See Also
 
  

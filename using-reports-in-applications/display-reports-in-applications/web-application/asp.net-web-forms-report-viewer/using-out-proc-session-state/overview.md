@@ -106,6 +106,7 @@ It is highly recommended not to use events when designing reports. The reporting
 
 More info about the differences between different state modes you can find in the            [ASP.NET Session State](http://msdn.microsoft.com/en-us/library/ms972429.aspx)  documentation article.         
 
+
 # See Also
 
  

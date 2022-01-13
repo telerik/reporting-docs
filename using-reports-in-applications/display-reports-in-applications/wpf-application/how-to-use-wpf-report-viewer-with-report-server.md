@@ -76,6 +76,7 @@ The most common reasons for failure are related with the authentication against 
 |The viewer displays the message:`System.OperationCanceledException: *{ReportName}* report cannot be found`|Make sure the URL specified in the report source __report__ is valid and such a category and report exist in Report Server.|
 |The viewer displays the message:`System.Net.WebException: The remote name could not be resolved: {server name}`|Make sure that the server specified in the connection string exists and has a valid and running Report Server instance.|
 
+
 # See Also
 
  

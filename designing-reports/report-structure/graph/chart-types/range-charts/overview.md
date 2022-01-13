@@ -40,6 +40,7 @@ The following image displays a plain range chart with one range area series:
 
 * Gantt charts can be created using a range bar chart.
 
+
 # See Also
 
  

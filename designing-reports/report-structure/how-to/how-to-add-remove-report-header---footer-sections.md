@@ -2,7 +2,7 @@
 title: How to Add/Remove Report Header & Footer Sections
 page_title: How to Add/Remove Report Header & Footer Sections | for Telerik Reporting Documentation
 description: How to Add/Remove Report Header & Footer Sections
-slug: telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header-&-footer-sections
+slug: telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections
 tags: how,to,add/remove,report,header,&,footer,sections
 published: True
 position: 1
@@ -27,6 +27,7 @@ Reports can contain report headers and footers. By default, new reports are crea
   
 
   ![](images/ReportDesign006.png)
+
 
 # See Also
  

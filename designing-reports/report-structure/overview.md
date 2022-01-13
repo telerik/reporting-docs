@@ -55,6 +55,7 @@ The data within the report can be grouped by fields and expressions. Report grou
 
 Report items are used in the report depending on the data that should be displayed e.g. [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})               item for static or data bound text, [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) for displaying images,               [Barcode]({%slug telerikreporting/designing-reports/report-structure/barcode/overview%}) for showing barcode in a label report etc. Every report               item is an instance of the  [ReportItemBase](/reporting/api/Telerik.Reporting.ReportItemBase)  class.               Report items can reside inside report sections or containers (e.g. [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) or               [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) items).             
 
+
 # See Also
 
  
@@ -67,9 +68,9 @@ Report items are used in the report depending on the data that should be display
 
  
 
-* [How to Add/Remove Report Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header-&-footer-sections%})
+* [How to Add/Remove Report Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%})
 
  
 
-* [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header-&-footer-sections%})
+* [How to Add/Remove Page Header & Footer Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
 

@@ -34,6 +34,7 @@ The following image shows a typical column chart:
 
 * If there are a lot of data points in your dataset relative to the size of your chart, the size of the columns               and the spacing between them are reduced. To modify the width of the columns in a chart consider changing the               __SpacingSlotCount__ property of the __category__ axis scale. By default the               value is 1 which indicates equal widths of the column and the free space. The greater the value is the more free space               is reserved between the columns.             
 
+
 # See Also
 
  

@@ -209,6 +209,7 @@ and corresponds to the folder *Reports* in the               *wwwroot* folder. A
 
 Find the complete example setup of the Web Report Designer in a.NET Core 3.1 application in our            [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/WebReportDesigner%20in%20.NET%20Core%203.1).         
 
+
 # See Also
 
  

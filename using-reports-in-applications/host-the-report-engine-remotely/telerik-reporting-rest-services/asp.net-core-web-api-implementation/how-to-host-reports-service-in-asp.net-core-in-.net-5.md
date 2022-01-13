@@ -244,6 +244,7 @@ Activate the above policy for the application by adding the next code in the *Co
 app.UseCors("ReportingRestPolicy");
 ````
 
+
 # See Also
 
  

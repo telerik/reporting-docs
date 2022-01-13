@@ -64,6 +64,7 @@ After finishing, the item template automatically do the following:
 
 * Displays a __summary log__ that list all of the made changes.             
 
+
 # See Also
 
  

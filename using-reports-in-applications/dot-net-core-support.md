@@ -141,6 +141,7 @@ Telerik Reporting ships with a ready-made.NET Core examples that demonstrate how
 
 An example project is available in the Telerik Reporting installation directory           *\Examples\CSharp\Asp.NetCoreDemo* subfolder.         
 
+
 # See Also
 
  

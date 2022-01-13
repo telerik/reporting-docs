@@ -141,6 +141,7 @@ npm start
 
 A sample project can be found in the installation folder of Telerik Reporting __[TelerikReporting_InstallDir]\Examples\React__.         
 
+
 # See Also
 
  

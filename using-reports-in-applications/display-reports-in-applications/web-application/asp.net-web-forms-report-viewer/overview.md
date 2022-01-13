@@ -66,6 +66,7 @@ The ASP.NET ReportViewer caches the report data in the session storage when the 
 
 The ASP.NET ReportViewer control's content is rendered in __IFRAME__ elements.           The report in the viewer is rendered through the IMAGE rendering mechanism based on the           [Design Considerations for HTML Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).         
 
+
 # See Also
 
  

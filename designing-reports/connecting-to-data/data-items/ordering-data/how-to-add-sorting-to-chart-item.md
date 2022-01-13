@@ -51,6 +51,7 @@ sorting1.Direction = Telerik.Reporting.SortDirection.Asc
 chart1.Sortings.Add(sorting1)
 ````
 
+
 # See Also
  
 

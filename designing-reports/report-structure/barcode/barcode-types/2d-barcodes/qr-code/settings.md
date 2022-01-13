@@ -69,6 +69,7 @@ encoder.ApplicationIndicator = "00"
 Me.barcode1.Encoder = encoder
 ````
 
+
 # See Also
  
 

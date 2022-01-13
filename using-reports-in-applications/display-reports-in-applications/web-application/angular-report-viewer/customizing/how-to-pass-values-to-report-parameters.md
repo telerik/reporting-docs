@@ -46,6 +46,7 @@ export class AppComponent {
 
     The setReportSource(rs) method will automatically refresh the report with the new parameter values.
 
+
 # See Also
 
  

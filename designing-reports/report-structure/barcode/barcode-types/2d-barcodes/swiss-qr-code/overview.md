@@ -30,6 +30,7 @@ The most important characteristics of the Swiss QR barcode are listed below:
 
 * To increase the recognizability, the Swiss QR Code contains an additional recognition symbol - a Swiss cross logo measuring __7 x 7 mm__.                The logo is rendered in the center of the barcode, overlaying the existing barcode modules.             
 
+
 # See Also
 
  

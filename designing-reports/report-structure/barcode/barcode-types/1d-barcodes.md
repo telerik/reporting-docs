@@ -71,6 +71,7 @@ this.barcode1.Value = "1234" + "\u00F7" + "5678";
 me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
 ````
 
+
 # See Also
  
 

@@ -77,6 +77,7 @@ Me.barcode1.Stretch = False
 Me.barcode1.Value = "1234567890"
 ````
 
+
 # See Also
  
 

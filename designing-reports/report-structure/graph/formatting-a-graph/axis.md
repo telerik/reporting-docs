@@ -82,6 +82,7 @@ In some cases, especially when using a __Logarithmic Scale__, it is useful to ha
 
 Please note that using this feature means that some of the scale properties like __MajorStep__,           __MinorStep__ and __LabelStep__ will not be respected, since the step will not be calculated.         
 
+
 # See Also
 
  

@@ -32,6 +32,7 @@ The image below shows how a Pie Chart would look when the properties in question
 
   ![Outside Column Pie Chart 2](images/Graph/OutsideColumnPieChart2.png)
 
+
 # See Also
  
 

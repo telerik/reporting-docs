@@ -114,6 +114,7 @@ The design time editor supports two modes:
   ![Html Text Box Html View](images/HtmlTextBox_HtmlView.png)
 
 > MultiLine and TextWrap concepts are always true for HtmlTextBox.The  __subscript__ and  __superscript__ tags can be nested (i.e. ```<sub>```subscript1```<sub>```subscript2```</sub>``````</sub>```),             resulting in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggles the  __subscript__ or  __superscript__ feature,             so if nested tags are needed, the appropriate code should be added manually using the editor's  __Html view__.           
+
 # See Also
 
 

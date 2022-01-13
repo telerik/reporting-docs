@@ -33,6 +33,7 @@ To set the following group properties you have to select a group from the [Group
   ![](images/groupProperties.png) 
       
 
+
 # See Also
  
 

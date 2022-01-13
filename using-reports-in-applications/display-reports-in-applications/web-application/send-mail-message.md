@@ -38,6 +38,7 @@ The dialog consists of the following components:
 
 * __Body input__ (Optional) - The MailMessage body             
 
+
 # See Also
 
  

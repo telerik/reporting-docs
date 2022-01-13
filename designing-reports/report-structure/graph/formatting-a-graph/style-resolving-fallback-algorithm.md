@@ -20,6 +20,7 @@ The boxes on the top row represent the report items contained in a Graph series.
 
   ![Style Resolving Fallback Algorithm](images/Graph/StyleResolvingFallbackAlgorithm.png)
 
+
 # See Also
 
  

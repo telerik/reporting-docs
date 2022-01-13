@@ -137,6 +137,7 @@ The most common reasons for failure are related with the authentication against 
 |The viewer loads the template, but displays a message`Unable to get report parameters. Access denied.`|Make sure that the user account has permissions to read the specified report and category.|
 |The viewer doesn't load any page and there is only a label saying __loading...__ in the top left page corner.|Check the Fiddler log for a request to the`/Token`URL.                 This is the request that should obtain the token used to authenticate the user account. When found, check the Response headers and look for the error code below:<br/>* `HTTP/1.1 502 Fiddler - DNS Lookup Failed`- make sure you have set the Report Server URL correctly.<br/>* `HTTP/1.1 400 Bad Request`- check if the built-in Guest user is __Enabled__ and has __Read__ permissions for configured report.|
 
+
 # See Also
 
  

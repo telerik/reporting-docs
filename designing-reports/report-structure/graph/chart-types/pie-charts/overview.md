@@ -78,6 +78,7 @@ By default, the merged slice is labeled in the chart’s legend as __Others__. Y
 
 The styling of the merged data point, its label or the corresponding legend item can be customized using the corresponding Conditional Formatting property using the Filter:                      = IsMergedData() | Operator.Equals | = True           
 
+
 # See Also
 
  

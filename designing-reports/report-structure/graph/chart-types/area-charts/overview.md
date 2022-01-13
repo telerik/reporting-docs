@@ -28,6 +28,7 @@ The following image shows an example of a stacked area chart:
 
 * __Smooth Area__. An area chart where the data points are connected by a smooth line instead of a regular line.               Use a smooth area chart instead of an area chart when you are more concerned with displaying trends than with displaying the values of individual data points.             
 
+
 # See Also
 
  

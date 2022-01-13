@@ -100,6 +100,7 @@ The following table lists the keyboard and mouse commands used in Windows Forms 
 |- (Minus)|n/a|Zooms out|
 |F|n/a|Opens the search dialog|
 
+
 # See Also
 
  

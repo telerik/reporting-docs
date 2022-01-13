@@ -28,6 +28,7 @@ The Graph item can be bound to a single data object, where you can control what 
 
 * Tutorials how to work with the Graph item: [How To]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-graph-to-report%});             
 
+
 # See Also
 
  

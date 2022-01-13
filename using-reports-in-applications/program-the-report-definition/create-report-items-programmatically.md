@@ -50,6 +50,7 @@ panel1.Items.AddRange(New Telerik.Reporting.ReportItemBase() {textBox1})
 detail.Items.AddRange(New Telerik.Reporting.ReportItemBase() {panel1})
 ````
 
+
 # See Also
  
 

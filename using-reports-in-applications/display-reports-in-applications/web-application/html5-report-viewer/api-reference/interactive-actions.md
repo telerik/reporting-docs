@@ -66,6 +66,7 @@ The article lists the properties of the interactive action, available in        
 |Value|Object that contains the evaluated parameters, defined for the current action|* __Parameters__ - a key-value collection of evaluated parameters|
 |ReportItemName|The name of the report item, associated with the current action|Matches the name of the report item in report definition|
 
+
 # See Also
 
  

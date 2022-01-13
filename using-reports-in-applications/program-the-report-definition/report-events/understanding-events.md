@@ -44,6 +44,7 @@ After the processing item has been data bound the __ItemDataBound__ event       
 
 After processing is over, the processed report is ready for rendering in one of the available formats, see [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}).           There are no events triggered during this stage of the report generation.         
 
+
 # See Also
 
  

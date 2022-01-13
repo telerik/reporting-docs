@@ -53,6 +53,7 @@ This topic explains how to create a map that shows custom-defined shapes. The Ma
 
 In this article we demonstrated how to display custom-shaped polygons using              [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries)  and Choropleth wizard. This approach is useful when is needed to             show an additional layer or layers of geospatial data in a report.           
 
+
 # See Also
 
  

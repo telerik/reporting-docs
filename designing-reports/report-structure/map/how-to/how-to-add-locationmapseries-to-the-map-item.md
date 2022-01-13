@@ -36,6 +36,7 @@ When all the properties are set, the __LocationMapSeries__ instance should look 
 
   ![Map Add Location Map Series](images/Map/Map_AddLocationMapSeries.png)
 
+
 # See Also
 
  

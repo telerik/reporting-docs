@@ -215,6 +215,7 @@ End Class
 
 [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})
 
+
 # See Also
 
  

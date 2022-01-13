@@ -40,8 +40,8 @@ The following sections describe attributes, child elements, and parent elements.
 |   |   |
 | ------ | ------ |
 Attributes|None|
-|Child Elements|*  __add__ - Optional element. Adds an assembly reference to the collection.<br/>*  __clear__ - Optional element. Removes all references to inherited assembly names,<br/>                  allowing only the references that are added by the current add element.<br/>*  __remove__ - Optional element. Removes a reference to an inherited assembly name from<br/>                  the collection.|
-|Parent Elements|*  __configuration__ - Specifies the root element in every configuration file that is used by<br/>                  the common language runtime and the.NET Framework applications.<br/>*  __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.|
+|Child Elements|* __add__ - Optional element. Adds an assembly reference to the collection.<br/>* __clear__ - Optional element. Removes all references to inherited assembly names,<br/>                  allowing only the references that are added by the current add element.<br/>* __remove__ - Optional element. Removes a reference to an inherited assembly name from<br/>                  the collection.|
+|Parent Elements|* __configuration__ - Specifies the root element in every configuration file that is used by<br/>                  the common language runtime and the.NET Framework applications.<br/>* __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.|
 
 ## Example
 
@@ -86,7 +86,7 @@ JSON-based configuration file:
 }
 ````
 
-> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`             element of configuration file. Failing to do so will result in a              [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)              with following text:  *Configuration system failed to initialize*.           
+> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`             element of configuration file. Failing to do so will result in a              [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)              with following text: *Configuration system failed to initialize*.           
 
 # See Also
 

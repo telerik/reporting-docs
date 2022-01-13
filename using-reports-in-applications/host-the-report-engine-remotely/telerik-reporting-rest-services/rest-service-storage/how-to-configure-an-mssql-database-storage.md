@@ -17,15 +17,15 @@ This article will explain how to configure an MSSQL database for report engine s
 ## How to configure an MSSQL database storage:
 
 1. Ensure a database instance is available for report engine storage.               This may be a dedicated database or a shared database for both app data               and report engine storage.             
-   1. Start the __Telerik Database Cache Configurator__                 tool located in the *{Telerik Reporting installation folder}/Tools*  folder.                 
+   1. Start the __Telerik Database Cache Configurator__                 tool located in the *{Telerik Reporting installation folder}/Tools* folder.                 
 
-   1. In *Choose database usage*  combo-box select the "Configure REST service storage database" option.                 
+   1. In *Choose database usage* combo-box select the "Configure REST service storage database" option.                 
 
-   1. In *Choose target backend*  combo-box select the "Microsoft SQL Server" option.                 
+   1. In *Choose target backend* combo-box select the "Microsoft SQL Server" option.                 
 
-   1. In *Specify connection string*  text box enter the connection string that references the target database.                   You can also click the *Build*  button and create the connection string using the *Connection properties*  form.                 
+   1. In *Specify connection string* text box enter the connection string that references the target database.                   You can also click the *Build* button and create the connection string using the *Connection properties* form.                 
 
-   1. Click on the *Create schema*  button to start the database schema creation.                 
+   1. Click on the *Create schema* button to start the database schema creation.                 
 
    1. A message box should be displayed, confirming that the storage tables are successfully created. Use the connection string specified above when initializing                   an instance of  [MsSqlServerStorage](/reporting/api/Telerik.Reporting.Cache.MsSqlServerStorage)  in your application.                 
 

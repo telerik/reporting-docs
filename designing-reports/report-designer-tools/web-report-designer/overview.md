@@ -50,9 +50,9 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * Web browser that supports                [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher;               Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.             
 
-*  [jQuery](http://jquery.com/download/) __3.3.1__ or later.             
+* [jQuery](http://jquery.com/download/) __3.3.1__ or later.             
 
-*  [Kendo UI](http://www.kendoui.com/)  __kendosubsetversion__ or later.             
+* [Kendo UI](http://www.kendoui.com/)  __kendosubsetversion__ or later.             
 
 * Telerik Report Viewer script. By default, it is requested from the service.             
 

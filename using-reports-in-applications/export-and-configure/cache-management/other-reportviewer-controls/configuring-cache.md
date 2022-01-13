@@ -27,12 +27,12 @@ The "provider" attribute of the "Cache" element specifies the name of the curren
 
 | Provider | Description | Parameters |
 | ------ | ------ | ------ |
-| __Auto__ |The actual provider is chosen automatically according to the characteristics of the stored resource and the permissions granted to               the application. This is the default setting if the "Cache" element is omitted from the configuration section.|*  __BasePath__ - specifies the location in which to store the files when __File__ cache provider has been chosen.|
+| __Auto__ |The actual provider is chosen automatically according to the characteristics of the stored resource and the permissions granted to               the application. This is the default setting if the "Cache" element is omitted from the configuration section.|* __BasePath__ - specifies the location in which to store the files when __File__ cache provider has been chosen.|
 | __Memory__ |All rendered pages and resources are stored in memory. Use this setting to improve the performance when rendering relatively small               reports in desktop applications. However this could also increase the memory footprint of the application significantly for large               reports.|No parameters are defined for this provider.|
-| __File__ |All rendered pages and resources are stored as temporary files in the file system.|*  __BasePath__ - specifies the location in which to store the files.|
+| __File__ |All rendered pages and resources are stored as temporary files in the file system.|* __BasePath__ - specifies the location in which to store the files.|
 | __IsolatedStorage__ |All rendered pages and resources are stored as temporary files in the isolated storage.|No parameters are defined for this provider.|
-| __Database__ |Stores all resources in database. Uses __Telerik Data Access__ to access the database.|*  __BackendName__ -  specifies the name of the chosen backend.<br/>*  __ConnectionString__ - specifies the connection string to the database.|
-| __ADO.NET__ |Stores all resources in database. Uses __ADO.NET__ provider to access the database.|*  __ProviderName__ -  specifies the ADO.NET provider.<br/>*  __ConnectionString__ - specifies the connection string to the database.|
+| __Database__ |Stores all resources in database. Uses __Telerik Data Access__ to access the database.|* __BackendName__ -  specifies the name of the chosen backend.<br/>* __ConnectionString__ - specifies the connection string to the database.|
+| __ADO.NET__ |Stores all resources in database. Uses __ADO.NET__ provider to access the database.|* __ProviderName__ -  specifies the ADO.NET provider.<br/>* __ConnectionString__ - specifies the connection string to the database.|
 
 > When the  __Auto__ cache provider is  __not__ explicitly specified in the  __Cache__         section it resorts to using only  __Memory__ cache if the ASP.NET Session state is configured as out-of-process. When           the  __Auto__ cache provider is explicitly set, the  __BasePath__ parameter should specify a shared folder if           using the web application in a web farm.         
 

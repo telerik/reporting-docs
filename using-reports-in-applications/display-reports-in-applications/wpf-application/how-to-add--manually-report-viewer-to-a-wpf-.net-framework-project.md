@@ -20,7 +20,7 @@ Setting a DataContext to a parent element of ReportViewer leads to BindingExpres
 
 ## Binding Redirects
 
-In case you use *Telerik UI for WPF*  version greater           than the __latest official release__ (service pack or internal build) you have to redirect all assemblies required           by the *Telerik WPF ReportViewer*  to their latest versions.           To do this, add the following __bindingRedirects__ to your           __app.config__ and replace the "__2010.1.421.35__ "           with the exact version of *Telerik UI for WPF*  assemblies:         
+In case you use *Telerik UI for WPF* version greater           than the __latest official release__ (service pack or internal build) you have to redirect all assemblies required           by the *Telerik WPF ReportViewer* to their latest versions.           To do this, add the following __bindingRedirects__ to your           __app.config__ and replace the "__2010.1.421.35__ "           with the exact version of *Telerik UI for WPF* assemblies:         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\WpfViewerBindings.xml}}
 ````XML
@@ -53,15 +53,15 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
 
 1. Open the toolbox and add your own tab or click on the General tab.                 
 
-1. Right click in the selected tab area and select *Choose Items…*  from the context menu.                 
+1. Right click in the selected tab area and select *Choose Items…* from the context menu.                 
 
-1. The previous step will open *Choose Toolbox Items*  dialog. Select the                   *WPF Components*  tab and find the *ReportViewer*  component                   from the *Telerik.ReportViewer.Wpf*  assembly.                 
+1. The previous step will open *Choose Toolbox Items* dialog. Select the                  *WPF Components* tab and find the *ReportViewer* component                   from the *Telerik.ReportViewer.Wpf* assembly.                 
 
 1. Click *OK* 
 
-1. Create a new *WPF Application*  project in Visual Studio. Target.NET Framework 4.0 or higher.             
+1. Create a new *WPF Application* project in Visual Studio. Target.NET Framework 4.0 or higher.             
 
-1. Add references to the following *Telerik UI for WPF*  NoXaml assemblies:             
+1. Add references to the following *Telerik UI for WPF* NoXaml assemblies:             
    + *Telerik.Windows.Controls.dll* 
 
    + *Telerik.Windows.Controls.Input.dll* 
@@ -69,7 +69,7 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
    + *Telerik.Windows.Controls.Navigation.dll* 
 
    + *Telerik.Windows.Data.dll* 
-    In case you are still not prepared to migrate to Implicit Styling you can use the binaries that include the xaml.               However you will still have to merge all the xaml files mentioned in the next step, otherwise the Report Viewer will not show up as it will have no style.                 In case Telerik UI for WPF is used only for the report viewer, reference the               Telerik UI for WPF assemblies available with Telerik Reporting.               They are internally unlocked for the WPF Report Viewer but can only be used               with the report viewer. The.NET Framework assemblies containing *Telerik UI for WPF*  are located in               %programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework).                 The WPF ReportViewer is build with the latest official release of Telerik UI for WPF.               In this way we provide trouble free upgrade for most of the users.               This means that you can use the latest version of Telerik UI for WPF in your project               and report viewer.                 It is possible that the Telerik UI for WPF assemblies have a greater version               (service pack or internal build) than the one with which the WPF report viewer               control targets. In this case assembly binding               redirects are required (see [Binding Redirects](e34dad8d-92f7-491e-903d-53cc2654d61c#binding-redirects) topic below).             
+    In case you are still not prepared to migrate to Implicit Styling you can use the binaries that include the xaml.               However you will still have to merge all the xaml files mentioned in the next step, otherwise the Report Viewer will not show up as it will have no style.                 In case Telerik UI for WPF is used only for the report viewer, reference the               Telerik UI for WPF assemblies available with Telerik Reporting.               They are internally unlocked for the WPF Report Viewer but can only be used               with the report viewer. The.NET Framework assemblies containing *Telerik UI for WPF* are located in               %programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework).                 The WPF ReportViewer is build with the latest official release of Telerik UI for WPF.               In this way we provide trouble free upgrade for most of the users.               This means that you can use the latest version of Telerik UI for WPF in your project               and report viewer.                 It is possible that the Telerik UI for WPF assemblies have a greater version               (service pack or internal build) than the one with which the WPF report viewer               control targets. In this case assembly binding               redirects are required (see [Binding Redirects](e34dad8d-92f7-491e-903d-53cc2654d61c#binding-redirects) topic below).             
 
 1. The Telerik UI for WPF xaml files are located in               %programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Wpf\Themes).             
 
@@ -127,7 +127,7 @@ In case you use *Telerik UI for WPF*  version greater           than the __lates
 </Window>
 ````
 
-   + Setting a report source at run time. The following code snippet illustrates how to assign                   a report source to the WPF ReportViewer in the *Window.Loaded*  event handler:                 
+   + Setting a report source at run time. The following code snippet illustrates how to assign                   a report source to the WPF ReportViewer in the *Window.Loaded* event handler:                 
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
   ````C#

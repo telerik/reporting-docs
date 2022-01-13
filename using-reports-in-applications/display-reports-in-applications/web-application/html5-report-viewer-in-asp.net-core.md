@@ -14,10 +14,10 @@ position: 7
 
 > The following article applies to.NET Core projects that target the  __full.NET Framework 4.0+__.         If the project targets.NET Core 2.1+ please refer to the following articles:         
 * [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%})
-*  [Using Telerik Reporting in.NET Core Applications](https://www.telerik.com/blogs/using-telerik-reporting-in-net-core-applications) 
+* [Using Telerik Reporting in.NET Core Applications](https://www.telerik.com/blogs/using-telerik-reporting-in-net-core-applications) 
 * [Manual Setup of HTML5 Report Viewer in an ASP.NET Core 2+ application.]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
-*  [Guidance for using reports from an existing.NET Framework 4+ report library in a.NET Core application](https://docs.telerik.com/reporting/knowledge-base/use-existing-report-library-in-net-core-app) 
-*  [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](https://docs.telerik.com/reporting/knowledge-base/how-to-implement-telerik-reporting-in-asp-net-core-mvc) >
+* [Guidance for using reports from an existing.NET Framework 4+ report library in a.NET Core application](https://docs.telerik.com/reporting/knowledge-base/use-existing-report-library-in-net-core-app) 
+* [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](https://docs.telerik.com/reporting/knowledge-base/how-to-implement-telerik-reporting-in-asp-net-core-mvc) >
 
 In case you are not familiar with ASP.NET Core, check it out on the  [official page](https://www.asp.net/core).       
 
@@ -39,9 +39,9 @@ More details about hosting the Reporting REST Service are available in          
 
 To be able to create the sample application on Windows, make sure you provide the requirements listed below.         
 
-*  [Visual Studio 2015 Update 3](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs) 
+* [Visual Studio 2015 Update 3](https://www.visualstudio.com/en-us/news/releasenotes/vs2015-update3-vs) 
 
-*  [NET Core 1.1.7 SDK](https://www.microsoft.com/net/core#windows) 
+* [NET Core 1.1.7 SDK](https://www.microsoft.com/net/core#windows) 
 
 ## Creating a Sample ASP.NET Core Project
 
@@ -126,13 +126,13 @@ public IActionResult Report()
 
 ## Adding the HTML5 Report Viewer
 
-1. To set up a folder for the reports, right-click on *wwwroot*  and select __Add > New Folder__.               Name the folder __Reports__ and add sample reports in TRDP format for easiness. You can find sample reports in               *{Telerik Reporting installation path}\Report Designer\Examples*  if you have an existing installation of the Telerik Reporting product.               Note that the name of the folder is considered with the folder path used by the ReportFileResolver in the ReportsController.             This tutorial will use __Barcodes Report.trdp__ in all examples.             
+1. To set up a folder for the reports, right-click on *wwwroot* and select __Add > New Folder__.               Name the folder __Reports__ and add sample reports in TRDP format for easiness. You can find sample reports in              *{Telerik Reporting installation path}\Report Designer\Examples* if you have an existing installation of the Telerik Reporting product.               Note that the name of the folder is considered with the folder path used by the ReportFileResolver in the ReportsController.             This tutorial will use __Barcodes Report.trdp__ in all examples.             
 
 1. Add a view that contains the HTML5 Report Viewer.             Open the __Views__ folder, right-click on the __Home__ folder and select               __Add > New Item > Installed > ASP.NET__.               Then add a new __MVC View Page__ named __Report__.               We want the Report action in the HomeController to target this view.             
 
 1. Add the HTML5 Report Viewer. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article in the online documentation.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               Copy the Kendo subset from {Telerik Reporting installation path}\Html5\ReportViewer folder to wwwroot.             
 
-   >Whenever you need to route a relative path you will have to use  *Url.Content*  helper, like this:               
+   >Whenever you need to route a relative path you will have to use *Url.Content* helper, like this:               
 
     
     ````html
@@ -242,7 +242,7 @@ instead of simply pasting the path.The complete Report view (Report.cshtml) shou
 
    >The reference to the report viewer's JavaScript file (*telerikReportViewer-*)                 should be updated to the corresponding version of the Reporting NuGet package.               
 
-1. To add a link to the __Report__ view in the __Home__ page navigation open               *Views\Shared\_Layout.cshtml*  page and add:             
+1. To add a link to the __Report__ view in the __Home__ page navigation open              *Views\Shared\_Layout.cshtml* page and add:             
 
     
       ````html

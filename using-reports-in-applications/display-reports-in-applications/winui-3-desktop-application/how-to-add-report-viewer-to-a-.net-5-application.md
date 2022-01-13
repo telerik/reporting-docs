@@ -38,6 +38,6 @@ These projects are not included in our CSharp.ReportExamples.sln file as the res
 
 * Right-click on the __CSharp.Net5.WinUIIntegrationDemo (Package)__ and select __Deploy__ from the context menu.             
 
-* Once the deployment process has finished successfully, start the project. The hosting application should show a window containing the WinUI report viewer.               By default the report viewer will try to load the __Report Catalog__ report, located in the *{installation-directory}\Report Designer\Examples*  folder.             
+* Once the deployment process has finished successfully, start the project. The hosting application should show a window containing the WinUI report viewer.               By default the report viewer will try to load the __Report Catalog__ report, located in the *{installation-directory}\Report Designer\Examples* folder.             
 
 

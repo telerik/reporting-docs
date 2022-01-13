@@ -68,11 +68,11 @@ The  [MapScaleLegend](/reporting/api/Telerik.Reporting.MapScaleLegend)  shows th
 
 The projection is the representation model used to project the globe or celestial sphere on a surface. The projected coordinate system is defined           on a flat two-dimensional surface and it is always based on a geographic coordinate system that represents a sphere or spheroid.           In such a coordinate system, the locations are identified by a __x/y__ coordinates with the origin at the center of the grid.           Each position has two values that reference it to that central location - one for the horizontal and one for the vertical position.           The map item supports the following projections:         
 
-*  [Mercator Projection](http://en.wikipedia.org/wiki/Mercator_projection)  - a conformal map projection of which the meridians are drawn parallel to each other and the parallels of latitude               are straight lines whose distance from each other increases with their distance from the equator.             
+* [Mercator Projection](http://en.wikipedia.org/wiki/Mercator_projection)  - a conformal map projection of which the meridians are drawn parallel to each other and the parallels of latitude               are straight lines whose distance from each other increases with their distance from the equator.             
 
 ## Extent
 
-__Map extent__ is a rectangular map area defined by geographical coordinates. It consists of 4 fields defining the sides           of the extent area: *LatitudeMax*  - usually the top side of the area rectangle,           *LatitudeMin*  - the bottom side,           *LongitudeMin*  - the left side,           *LongitudeMax*  - the right side of the area rectangle. The extent is displayed in the map viewport and can be defined in three ways:         
+__Map extent__ is a rectangular map area defined by geographical coordinates. It consists of 4 fields defining the sides           of the extent area: *LatitudeMax* - usually the top side of the area rectangle,          *LatitudeMin* - the bottom side,          *LongitudeMin* - the left side,          *LongitudeMax* - the right side of the area rectangle. The extent is displayed in the map viewport and can be defined in three ways:         
 
 * __automatically__ - by the latitude and longitude coordinates of the data points. These coordinates can be retrieved               by geocoding or set from the data source.             
 
@@ -84,7 +84,7 @@ The Map extent can be reset to its automatically calculated bounds by right-clic
 
 ## Tile Provider
 
-[Tile Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}) is used to request and download the imagery data for the specified map extent.           This data is downloaded on a small images called *tiles*  that form a background image, which can be used to           give a better appearance of your maps.         
+[Tile Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}) is used to request and download the imagery data for the specified map extent.           This data is downloaded on a small images called *tiles* that form a background image, which can be used to           give a better appearance of your maps.         
 
 ## Location Provider
 

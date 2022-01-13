@@ -16,9 +16,9 @@ In this case the Web API will be hosted on top of the classic ASP.NET hosting in
 
 ## Using the REST Service Project Template
 
-In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service*            project template, which appears when selecting __Reporting__ category from the left pane.           This will add a new project in your solution that contains all the necessary files and packages to host the Telerik Reporting REST service instance.         
+In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service*           project template, which appears when selecting __Reporting__ category from the left pane.           This will add a new project in your solution that contains all the necessary files and packages to host the Telerik Reporting REST service instance.         
 
-The project has a preconfigured implementation of reports controller that uses the *"~\Reports"*  path for           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.         
+The project has a preconfigured implementation of reports controller that uses the *"~\Reports"* path for           its report source resolver. This directory is not automatically created and needs to be created, or the path to be modified accordingly prior to running the project.         
 
 ## Manually configuring Telerik.Reporting REST Service on IIS
 

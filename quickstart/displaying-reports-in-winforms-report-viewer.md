@@ -16,11 +16,11 @@ You can design reports in:
 
 * Visual Studio Report Designer: The result is a class (type) inheriting *Telerik.Reporting.Report*;             
 
-* Standalone Report Designer: The result is a TRDX|TRDP file containing a serialiesed *Telerik.Reporting.Report*  object;             
+* Standalone Report Designer: The result is a TRDX|TRDP file containing a serialiesed *Telerik.Reporting.Report* object;             
 
 * In code: The result is an instance of *Telerik.Reporting.Report*,               that is created at run-time or it is a result from modifying an already designed report;             
 
-* In a text/XML editor: the result is a *Telerik.Reporting.Report*  object represented in XML,               the same as the content of a TRDX file produced by the Standalone Report Designer;             
+* In a text/XML editor: the result is a *Telerik.Reporting.Report* object represented in XML,               the same as the content of a TRDX file produced by the Standalone Report Designer;             
 
 You need to specify how the report is created to let the Reporting engine know how to process it.           For the purpose you need to use a [Report Source object]({%slug telerikreporting/designing-reports/report-sources/overview%}).           Report sources can be server-side or client-side, which is determined by the processing instance           (a Telerik Reporting Viewer or a ReportProcessor instance).         
 

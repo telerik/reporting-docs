@@ -31,11 +31,11 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
   ![wpf-connection-editor-report-server](images/wpf-connection-editor-report-server.png)
 
 1. The __Reporting engine__ combobox provides the following options:                 
-   + *Embedded*  - the reports will be processed and rendered at the local machine that hosts the viewer. This is the default mode in order to preserve backwards compatibility.                     
+   + *Embedded* - the reports will be processed and rendered at the local machine that hosts the viewer. This is the default mode in order to preserve backwards compatibility.                     
 
-   + *REST Service*  - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
+   + *REST Service* - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
 
-   + *Report Server*  - the reports will be processed and rendered at the machine that hosts configured and running                        [Telerik Report Server](http://docs.telerik.com/report-server/introduction)  instance.                     
+   + *Report Server* - the reports will be processed and rendered at the machine that hosts configured and running                        [Telerik Report Server](http://docs.telerik.com/report-server/introduction)  instance.                     
     Select *Report Server*.                 
 
 1. In __Report Server URL__ textbox enter the address and port (if needed) of the machine that hosts the Report Server instance.                 
@@ -54,7 +54,7 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
   ![Wpf Report Source Editor](images/WpfReportSourceEditor.png)
 
-    >When the                      [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection)                      property has  __Engine__ set to  *RestService*  or  *ReportServer*,                     the viewer will serialize the report source identifier property                     (__URI__ for                      [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource),                      __TypeName__ for                      [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource),                      __ReportDocument__ for                      [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource)  and                      __XML__ for                      [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)) and send it to the service resolver.                   The  *ReportServer*  will try to decompose the identifier using the format `{Category}/{ReportName}` and then look for the corresponding category and report name.                   
+    >When the                      [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection)                      property has  __Engine__ set to *RestService* or *ReportServer*,                     the viewer will serialize the report source identifier property                     (__URI__ for                      [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource),                      __TypeName__ for                      [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource),                      __ReportDocument__ for                      [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource)  and                      __XML__ for                      [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)) and send it to the service resolver.                   The *ReportServer* will try to decompose the identifier using the format `{Category}/{ReportName}` and then look for the corresponding category and report name.                   
 
 1. In this scenario we will use a  [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource).                   Select the __UriReportSource__ entry. Confirm by clicking __OK__.                 
 

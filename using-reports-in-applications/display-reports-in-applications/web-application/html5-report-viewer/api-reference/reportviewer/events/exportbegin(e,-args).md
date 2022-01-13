@@ -19,7 +19,7 @@ Parameters:
 | Parameter | Description |
 | ------ | ------ |
 | __e__ |This is the  [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively  [jQuery's event.data](https://api.jquery.com/event.data/). e.data.sender is the report viewer that raised the event.|
-| __args__ |An object with properties:<br/>*  *format* - the document format of the exported report.<br/>*  *deviceInfo* - the device info that will be used for the export operation.<br/>*  *handled* - prevent the default render and export operation. Default value: false.|
+| __args__ |An object with properties:<br/>* *format* - the document format of the exported report.<br/>* *deviceInfo* - the device info that will be used for the export operation.<br/>* *handled* - prevent the default render and export operation. Default value: false.|
 
     
 ````js

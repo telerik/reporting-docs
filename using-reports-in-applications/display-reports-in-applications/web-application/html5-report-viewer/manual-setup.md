@@ -156,7 +156,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 </script>
 ````
 
-    where x.x.x.x is the HTML5 ReportViewer/Telerik Reporting version (e.g. {{site.buildversion}}).                   The relative paths that you use must reflect the project's structure.                     The default template is using TelerikWebUI icons. If you prefer a template with *FontAwesome*  icons, you have to set the                    templateUrl option to /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html                 
+    where x.x.x.x is the HTML5 ReportViewer/Telerik Reporting version (e.g. {{site.buildversion}}).                   The relative paths that you use must reflect the project's structure.                     The default template is using TelerikWebUI icons. If you prefer a template with *FontAwesome* icons, you have to set the                    templateUrl option to /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html                 
 
     >The viewer's  __reportSource__ consists of report and parameters attributes,                     where  __report__ is the string description of the report that will be displayed, and                      __parameters__ is a collection of parameter keys and values that will be sent to the report.                     The report's string description is handled on the server by the                     [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).                       The above example uses the  [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  of a report's type (report created in Visual Studio Report Designer).                     This string description will be handled automatically by the   [ReportTypeResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver).                   
 
@@ -177,7 +177,7 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
 </style>
 ````
 
-    >The above CSS rule will be applied on the ```<div>``` element holding the viewer object.                     The HTML elements building the viewer object will be sized based on the size of this container ```<div>``` element.                     To make the viewer fit in other container, use  *position:relative*  and provide width and height values.                   
+    >The above CSS rule will be applied on the ```<div>``` element holding the viewer object.                     The HTML elements building the viewer object will be sized based on the size of this container ```<div>``` element.                     To make the viewer fit in other container, use *position:relative* and provide width and height values.                   
 
 1. The HTML page that we have just created should look like this:
 

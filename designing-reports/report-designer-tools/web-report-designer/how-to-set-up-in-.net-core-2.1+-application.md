@@ -178,7 +178,7 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 ## Adding the Web Report Designer:
 
-1. Add a new HTML Page for the Web Report Designer by right-clicking on *wwwroot*                and __Add > New Item... > HTML Page__. Name the file, for example __webReportDesigner.html__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
+1. Add a new HTML Page for the Web Report Designer by right-clicking on *wwwroot*               and __Add > New Item... > HTML Page__. Name the file, for example __webReportDesigner.html__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
 
     
       ````html
@@ -220,6 +220,6 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 ## Examples
 
-Find the complete example setup of the Web Report Designer in the __AspNetCoreDemo__         located in Telerik Reporting installation folder. For example,           *%PROGRAMFILES(x86)%\Progress\Telerik Reporting*.           The Web Report Designer’s page is in __wwwroot__ folder. To setup the page to be a startup           page, change the launchUrl to webReportDesigner.html in *launchSettings.json*.         
+Find the complete example setup of the Web Report Designer in the __AspNetCoreDemo__         located in Telerik Reporting installation folder. For example,          *%PROGRAMFILES(x86)%\Progress\Telerik Reporting*.           The Web Report Designer’s page is in __wwwroot__ folder. To setup the page to be a startup           page, change the launchUrl to webReportDesigner.html in *launchSettings.json*.         
 
 

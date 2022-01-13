@@ -12,7 +12,7 @@ position: 0
 
 
 
-The OHLC chart displays a series of candlestick or bar markers that represent information about the price movement of a stock over a period of time.         The price movement is determined by four values - open, high, low and close marks of the stock price - that form the layout of the marker. Additionally the         marker can be colored depending on the movement of the price for this period - if the close level is lower than the open level,         it's recognized as a *bearish*  pattern and the color or the fill or the marker changes so it can be distinguished from the         *bullish*  pattern, where the close level is higher than the open level.       
+The OHLC chart displays a series of candlestick or bar markers that represent information about the price movement of a stock over a period of time.         The price movement is determined by four values - open, high, low and close marks of the stock price - that form the layout of the marker. Additionally the         marker can be colored depending on the movement of the price for this period - if the close level is lower than the open level,         it's recognized as a *bearish* pattern and the color or the fill or the marker changes so it can be distinguished from the        *bullish* pattern, where the close level is higher than the open level.       
 
 The following image shows an example of a candlestick OHLC chart:  
 
@@ -24,7 +24,7 @@ The look of the OHLC series markers can be changed in order to cover the two mos
 
 * __Candlestick marker__ 
 
-  ![ohlc-series-candlestick-marker](images/Graph/ohlc-series-candlestick-marker.png)The body of the candlestick marker represents the open and close values of the stock price.                The vertical lines (called *shadows*  or *wicks*) represent the high and low values.             Based only on the shape of the marker, it is hard to tell if the stock price is rising or falling for the given period. In this case the marker body can be colored using data point's conditional formatting rules.                           
+  ![ohlc-series-candlestick-marker](images/Graph/ohlc-series-candlestick-marker.png)The body of the candlestick marker represents the open and close values of the stock price.                The vertical lines (called *shadows* or *wicks*) represent the high and low values.             Based only on the shape of the marker, it is hard to tell if the stock price is rising or falling for the given period. In this case the marker body can be colored using data point's conditional formatting rules.                           
 
 * __Bar marker__ 
 

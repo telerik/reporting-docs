@@ -64,7 +64,7 @@ Additionally, the Standalone Report Designer includes the following helpful elem
 
   ![](images/snapGrid.png)
 
-   + __Show/hide the snap grid__ button switches on or off the displayed __snap grid__.                   The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap*                    or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel.                   Here is a workspace showing the snap grid turned on:                   
+   + __Show/hide the snap grid__ button switches on or off the displayed __snap grid__.                   The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap*                   or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel.                   Here is a workspace showing the snap grid turned on:                   
 
   ![](images/snapGrid1.png)
 
@@ -88,7 +88,7 @@ Additionally, the Standalone Report Designer includes the following helpful elem
 
   ![](images/snapGrid4.png)
 
-* __Change the alignment of an element__ Alignment determines how an element resizes. For example, a left aligned element stretches to the right as the parent layout container gets resized.To change the alignment of an element use the __Layout__ toolbar and do *one*  of the following:               
+* __Change the alignment of an element__ Alignment determines how an element resizes. For example, a left aligned element stretches to the right as the parent layout container gets resized.To change the alignment of an element use the __Layout__ toolbar and do *one* of the following:               
 
   ![standalone-designer-align-controls](images/Designer/standalone-designer-align-controls.png)
 

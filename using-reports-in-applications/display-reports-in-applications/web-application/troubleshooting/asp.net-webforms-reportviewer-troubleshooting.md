@@ -30,7 +30,7 @@ The old ASP.NET WebForms ReportViewer depends on the ASP.NET Session.           
 
 ## The old ASP.NET Webforms ReportViewer does not display reports after refresh.
 
-The old ASP.NET WebForms ReportViewer displays content delivered by its Telerik.ReportViewer.axd handler.           Verify the handler is registered in both *system.Web*  and *system.webServer*  sections -           [How to: Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%}),           and that the viewer is added in a valid [AJAX Scenario]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%}).         
+The old ASP.NET WebForms ReportViewer displays content delivered by its Telerik.ReportViewer.axd handler.           Verify the handler is registered in both *system.Web* and *system.webServer* sections -           [How to: Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%}),           and that the viewer is added in a valid [AJAX Scenario]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%}).         
 
 In case of using Visual Studio 2013 or greater version,  [disable the BrowserLink feature.](http://www.asp.net/visual-studio/overview/2013/using-browser-link).         
 

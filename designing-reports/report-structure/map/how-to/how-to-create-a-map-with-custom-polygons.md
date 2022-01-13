@@ -16,11 +16,11 @@ This topic explains how to create a map that shows custom-defined shapes. The Ma
 
 ## Displaying custom polygons using the Map item
 
-1. We will use the Choropleth wizard that will create the ShapeMap series instance for us. Start it either by selecting the               __Choropleth Wizard__ icon from the *Data Presentation Templates section*  or from the __Insert__             menu in [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).             
+1. We will use the Choropleth wizard that will create the ShapeMap series instance for us. Start it either by selecting the               __Choropleth Wizard__ icon from the *Data Presentation Templates section* or from the __Insert__             menu in [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).             
 
 1. Add new               [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%})               and name it __statesData__. This data source will hold the information about the state name and their WKT-coordinates.               Click OK to continue with the data source wizard.             
 
-1. On the page __Choose a CSV Source__ paste the following text in the *Enter CSV as text*  tab:             
+1. On the page __Choose a CSV Source__ paste the following text in the *Enter CSV as text* tab:             
 
     
               State;WKT
@@ -33,19 +33,19 @@ This topic explains how to create a map that shows custom-defined shapes. The Ma
 
     Click __Next__ when ready.             
 
-1. On the __Configure the separators__ page check only the *Semicolon*  option and click __Next__.             
+1. On the __Configure the separators__ page check only the *Semicolon* option and click __Next__.             
 
 1. Skip the __Escape Format__ page by clicking __Next__.             
 
-1. On the __CSV Headers__ page tick the *The CSV has headers*  option. Click __Next__.             
+1. On the __CSV Headers__ page tick the *The CSV has headers* option. Click __Next__.             
 
-1. On the __Map columns to type__ page there should be displayed two columns: `State` and `WKT` that have type __string__.               In the *Data preview*  box should be displayed the formatted output of the CSV data. If everything is correct, close the wizard by clicking __Finish__.             
+1. On the __Map columns to type__ page there should be displayed two columns: `State` and `WKT` that have type __string__.               In the *Data preview* box should be displayed the formatted output of the CSV data. If everything is correct, close the wizard by clicking __Finish__.             
 
 1. The data source wizard closes and the __Choropleth Wizard__ activates, displaying the __statesData__ data source we just created. Click __Next__.             
 
-1. On the __Choose a spatial data source__ page select the               *Well-Known-Text or Well-Known-Binary field from the data source*  option and choose the               __WKT__ field in the combobox below. Click __Next__.             
+1. On the __Choose a spatial data source__ page select the              *Well-Known-Text or Well-Known-Binary field from the data source* option and choose the               __WKT__ field in the combobox below. Click __Next__.             
 
-1. The __Choropleth setup__ expects to setup the fields required to create a choropleth.               Since our data source doesn't include any analytical information that could be used, just drag one of the two available fields in the               *Color data field* box. Click __Finish__.             
+1. The __Choropleth setup__ expects to setup the fields required to create a choropleth.               Since our data source doesn't include any analytical information that could be used, just drag one of the two available fields in the              *Color data field* box. Click __Finish__.             
 
 1. When the wizard closes, the Map item should display the three polygons that roughly represent the state borders of North Dakota, Wyoming and New Mexico.               Depending on your scenario, you can setup a                [TileProvider](/reporting/api/Telerik.Reporting.TileProvider)  and add some additional styling to the data points and map:               
 

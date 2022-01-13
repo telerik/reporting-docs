@@ -12,7 +12,7 @@ position: 2
 
 
 
-This wizard guides you through the process of adding a Table or a Crosstab item to a report that you created with the         Telerik Web Report Designer.         To invoke the wizard, click on the *Table Wizard*  or *Crosstab Wizard*  item in the toolbox.         As a result, a new tab will appear on the right-hand side of the Web Report Designer.       
+This wizard guides you through the process of adding a Table or a Crosstab item to a report that you created with the         Telerik Web Report Designer.         To invoke the wizard, click on the *Table Wizard* or *Crosstab Wizard* item in the toolbox.         As a result, a new tab will appear on the right-hand side of the Web Report Designer.       
 
 ## Wizard Structure
 

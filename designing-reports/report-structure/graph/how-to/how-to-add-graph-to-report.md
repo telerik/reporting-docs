@@ -12,7 +12,7 @@ position: 0
 
 
 
-The simplest way to add a __Graph__ item to your report is to run the Graph Wizard for Visual Studio report designer or to run          a *new Bar*, *Column*, *Area*, *Line*,          *Pie*, *Scatter*, or *Others*  chart wizard in the standalone designer.          After you add a Graph item to the design surface, you can click the chart elements to edit the selected element's properties in the          *Properties*  grid or in the standalone Report Designer you can use the ribbon tools.               
+The simplest way to add a __Graph__ item to your report is to run the Graph Wizard for Visual Studio report designer or to run          a *new Bar*, *Column*, *Area*, *Line*,         *Pie*, *Scatter*, or *Others* chart wizard in the standalone designer.          After you add a Graph item to the design surface, you can click the chart elements to edit the selected element's properties in the         *Properties* grid or in the standalone Report Designer you can use the ribbon tools.               
 
 ## To add a graph to a report by using the Visual Studio report designer Graph Wizard
 
@@ -26,7 +26,7 @@ The simplest way to add a __Graph__ item to your report is to run the Graph Wiza
 
 ## To add a graph to a report by using the standalone Report Designer Graph Wizard
 
-1. Open the *Insert*  tab from the ribbon bar and select the desired chart type.             The graph will be placed in the center of the selected container.
+1. Open the *Insert* tab from the ribbon bar and select the desired chart type.             The graph will be placed in the center of the selected container.
 
 1. Follow the steps in the Graph Wizard.
 
@@ -36,7 +36,7 @@ The simplest way to add a __Graph__ item to your report is to run the Graph Wiza
 
 > Graph item for direct insertion is only available in the Visual Studio report designer.For the             standalone report designer, please use a Graph wizard for the specific chart type.
 
-1. Open the Visual Studio toolbox and select Graph item from the *Telerik Reporting*  tab.
+1. Open the Visual Studio toolbox and select Graph item from the *Telerik Reporting* tab.
 
 1. Click on the design surface where you want the upper-left corner of the graph item.    The graph item is initialized on the selected design surface.
 

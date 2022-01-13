@@ -18,9 +18,9 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 ## Prerequisites
 
-*  [Visual Studio 2017 Update 3](https://www.visualstudio.com/vs/) 
+* [Visual Studio 2017 Update 3](https://www.visualstudio.com/vs/) 
 
-*  [NET Core 2 SDK](https://www.microsoft.com/net/download/core) 
+* [NET Core 2 SDK](https://www.microsoft.com/net/download/core) 
 
 ## Creating a Sample ASP.NET Core Project
 
@@ -38,7 +38,7 @@ First, you need to create a new ASP.NET Core project:
 
 In this tutorial, the resulting service will use the sample report definitions deployed with the Telerik Reporting product installer:         
 
-1. Locate the sample reports in               *{Telerik Reporting installation path}\Report Designer\Examples*.             
+1. Locate the sample reports in              *{Telerik Reporting installation path}\Report Designer\Examples*.             
 
 1. Add a new folder to your solution called __Reports__ and copy all sample reports into it.             
 
@@ -102,7 +102,7 @@ Finally, all configurations should be placed in the JSON configuration file (add
 }
 ````
 
-The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient*  as provider invariant name.           When it's necessary to specify a different data provider, the following notation is also supported:         
+The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient* as provider invariant name.           When it's necessary to specify a different data provider, the following notation is also supported:         
 
     
 ````html

@@ -42,7 +42,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 > Some of the Visual Studio template projects, like.NET 5 Web API project, have the required settings already added             by default. In the empty.NET Core 3.1 and.NET 5 Web projects you need to add manually the settings.           
 
-1. The __ConfigureServices__ method inside the __Startup.cs__ in the project               should be modified in order to enable the Web Report Designer Service functionality. Make sure the application                is configured for WebAPI controllers and call the *AddNewtonsoftJson*                to place the NewtonsoftJson serialization:             
+1. The __ConfigureServices__ method inside the __Startup.cs__ in the project               should be modified in order to enable the Web Report Designer Service functionality. Make sure the application                is configured for WebAPI controllers and call the *AddNewtonsoftJson*               to place the NewtonsoftJson serialization:             
 
     
       ````c#
@@ -164,9 +164,9 @@ namespace CSharp.AspNetCoreDemo.Controllers
 Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath,  "Reports")
 ````
 
-and corresponds to the folder *Reports*  in the                *wwwroot*  folder. Add the latter to the main application folder if it doesn't exist.             You may add to the *Reports*  folder one of our demo reports that can be found by default in                *{Telerik Reporting installation path}\Report Designer\Examples*.             
+and corresponds to the folder *Reports* in the               *wwwroot* folder. Add the latter to the main application folder if it doesn't exist.             You may add to the *Reports* folder one of our demo reports that can be found by default in               *{Telerik Reporting installation path}\Report Designer\Examples*.             
 
-1. Add a new HTML Page for the Web Report Designer by right-clicking on *wwwroot*                and __Add > New Item... > HTML Page__. Name the file __index.html__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
+1. Add a new HTML Page for the Web Report Designer by right-clicking on *wwwroot*               and __Add > New Item... > HTML Page__. Name the file __index.html__.               Add the required references to load the font, jQuery, Telerik Kendo UI libraries,               telerikReportViewer and webReportDesigner scripts listed in the example below. Finally,               add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px.             The complete report viewer page should look like this:
 
     
       ````html

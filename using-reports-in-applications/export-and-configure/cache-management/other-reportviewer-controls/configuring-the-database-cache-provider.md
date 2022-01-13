@@ -48,7 +48,7 @@ Two cache providers are available:
 
 Here the "ProviderName" parameter specifies the __ADO.NET__ provider, and the "ConnectionString" specifies the connection string to the database.           
 
-* __Telerik Data Access__ cache provider.             Add the requires reference to             *Telerik.OpenAccess.dll*,             *Telerik.OpenAccess.35.Extensions.dll*  and             *Telerik.OpenAccess.Runtime.dll*.             It is necessary to configure the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first and then use the following XML snippet to             configure this provider in application’s configuration file:           
+* __Telerik Data Access__ cache provider.             Add the requires reference to            *Telerik.OpenAccess.dll*,            *Telerik.OpenAccess.35.Extensions.dll* and            *Telerik.OpenAccess.Runtime.dll*.             It is necessary to configure the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) first and then use the following XML snippet to             configure this provider in application’s configuration file:           
 
     
       ````xml

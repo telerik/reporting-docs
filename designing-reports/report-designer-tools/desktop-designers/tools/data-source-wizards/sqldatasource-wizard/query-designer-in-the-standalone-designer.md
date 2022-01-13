@@ -14,27 +14,27 @@ position: 1
 
 Standalone Report Designer provides both a graphical query designer and a text-based query designer to help you create queries         to retrieve data from a relational database for a SqlDataSource component.          The Query Designer support any ADO.NET/ODB/OLEDB data provider that provides working implementation          of GetSchema with COLUMN collection support.         Automatic relations functionaly require relational databases supported by          [Telerik Data Access](http://www.telerik.com/data-access) :       
 
-*  [Microsoft SQL Server](http://docs.telerik.com/data-access/developers-guide/database-specifics/microsoft-sql-server/database-specifics-sql-overview) 
+* [Microsoft SQL Server](http://docs.telerik.com/data-access/developers-guide/database-specifics/microsoft-sql-server/database-specifics-sql-overview) 
 
-*  [Microsoft SQL Server Compact Edition](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-sqlce-overview) 
+* [Microsoft SQL Server Compact Edition](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-sqlce-overview) 
 
-*  [Microsoft SQL Azure](http://docs.telerik.com/data-access/developers-guide/database-specifics/microsoft-sql-azure/getting-started-root-quickstart-azure-overview) 
+* [Microsoft SQL Azure](http://docs.telerik.com/data-access/developers-guide/database-specifics/microsoft-sql-azure/getting-started-root-quickstart-azure-overview) 
 
-*  [Oracle](http://docs.telerik.com/data-access/developers-guide/database-specifics/oracle/database-specifics-oracle-overview) 
+* [Oracle](http://docs.telerik.com/data-access/developers-guide/database-specifics/oracle/database-specifics-oracle-overview) 
 
-*  [MySql](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-mysql-overview) 
+* [MySql](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-mysql-overview) 
 
-*  [Advantage Database Server](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-ads-overview) 
+* [Advantage Database Server](http://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-ads-overview) 
 
-*  [SQL Anywhere](http://docs.telerik.com/data-access/developers-guide/database-specifics/sql-anywhere/database-specifics-sqlanywhere-voerview) 
+* [SQL Anywhere](http://docs.telerik.com/data-access/developers-guide/database-specifics/sql-anywhere/database-specifics-sqlanywhere-voerview) 
 
-*  [Firebird](http://docs.telerik.com/data-access/developers-guide/database-specifics/firebird/database-specifics-firebird-overview) 
+* [Firebird](http://docs.telerik.com/data-access/developers-guide/database-specifics/firebird/database-specifics-firebird-overview) 
 
-*  [VistaDB](http://docs.telerik.com/data-access/developers-guide/database-specifics/vistadb/database-specifics-vistadb-overview) 
+* [VistaDB](http://docs.telerik.com/data-access/developers-guide/database-specifics/vistadb/database-specifics-vistadb-overview) 
 
-*  [SQLite](http://docs.telerik.com/data-access/developers-guide/database-specifics/sqlite/database-specifics-sqlite-overview) 
+* [SQLite](http://docs.telerik.com/data-access/developers-guide/database-specifics/sqlite/database-specifics-sqlite-overview) 
 
-*  [PostgreSQL](http://docs.telerik.com/data-access/developers-guide/database-specifics/postgresql/database-specifics-postgresql-overview) 
+* [PostgreSQL](http://docs.telerik.com/data-access/developers-guide/database-specifics/postgresql/database-specifics-postgresql-overview) 
 
 > Please note that Telerik Data Access is a discontinued product and its            [supported databases list](http://docs.telerik.com/data-access/developer-guide-integration-prerequisities#access-to-a-relational-database)            will not be appended. The versions of the supported database drivers will not be updated as well.         
 

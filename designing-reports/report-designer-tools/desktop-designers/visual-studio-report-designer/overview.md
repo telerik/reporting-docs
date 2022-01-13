@@ -14,11 +14,11 @@ position: 0
 
 The Visual Studio Report Designer is dedicated to editing CLR/type report definitions (i.e. CS or VB files) in the Visual Studio environment.            The Visual Studio designer is available only under __.NET framework__.            Due to technical limitations we do not yet provide one for *.NET Core*.
 
-To start/open the designer, double click on an existing CS/VB file containing the report definition or right click on it and select "View Designer".            If there is no such file, you may create it using the Add --> New Item --> Telerik Report *version*             (from the *Reporting*  menu of the wizard).
+To start/open the designer, double click on an existing CS/VB file containing the report definition or right click on it and select "View Designer".            If there is no such file, you may create it using the Add --> New Item --> Telerik Report *version*            (from the *Reporting* menu of the wizard).
 
 The Telerik Report Designer has the following elements:
 
-* [Telerik Reporting Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu%}): The menu lets you run the               [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}),               [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}),               [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}),               [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) and               [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}). It is accessible through the *Telerik Menu --> Reporting*  for Visual Studio versions up to 2017. For Visual Studio 2019 through the *Extensions Menu --> Telerik --> Reporting*.             
+* [Telerik Reporting Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu%}): The menu lets you run the               [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}),               [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}),               [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}),               [Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) and               [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}). It is accessible through the *Telerik Menu --> Reporting* for Visual Studio versions up to 2017. For Visual Studio 2019 through the *Extensions Menu --> Telerik --> Reporting*.             
 
 * __Design Views Buttons:__ Use these buttons to switch               between __Design__, __Preview__ and               __HTML__ view mode of the report.             
 
@@ -42,7 +42,7 @@ The Telerik Report Designer has the following elements:
 
   ![](images/snapGrid.png)
 
-   + __Show/hide the snap grid__ button switches on or off the displayed __snap grid__.                   The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap*                    or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel.                   Here is a workspace showing the snap grid turned on:                   
+   + __Show/hide the snap grid__ button switches on or off the displayed __snap grid__.                   The snap grid provides a set of horizontal and vertical gridlines that — when you drag an object on the design surface — will *snap*                   or pull towards the closest vertical or horizontal gridlines. Objects can also snap to column and row dividers within a grid panel.                   Here is a workspace showing the snap grid turned on:                   
 
   ![](images/snapGrid1.png)
 
@@ -66,7 +66,7 @@ The Telerik Report Designer has the following elements:
 
   ![](images/snapGrid4.png)
 
-* __Change the alignment of an element__ Alignment determines how an element resizes. For example, a left aligned element stretches to the right as the parent layout container gets resized.To change the alignment of an element use the __Layout__ toolbar and do *one*  of the following:               
+* __Change the alignment of an element__ Alignment determines how an element resizes. For example, a left aligned element stretches to the right as the parent layout container gets resized.To change the alignment of an element use the __Layout__ toolbar and do *one* of the following:               
 
   ![](images/layoutToolbar.png)
 

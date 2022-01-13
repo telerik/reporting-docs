@@ -40,11 +40,11 @@ If you follow the recommended practice of placing as many resources as possible 
 
 __The Report Viewer__ uses the following naming convention when searching for localized __RESX__ resource files in the main application folder:         
 
-* The names of the __RESX__ localization resource files should have the following format:             *Telerik.ReportViewer.WPF.TextResources.[culture].resx* Here “__[culture]__ ” is the name of the culture for the specified localization resource. For example, to provide a localization resource               for the French Belgian culture, the corresponding resource file should be named as follows:             *Telerik.ReportViewer.WPF.TextResources.fr-BE.resx* 
+* The names of the __RESX__ localization resource files should have the following format:            *Telerik.ReportViewer.WPF.TextResources.[culture].resx* Here “__[culture]__ ” is the name of the culture for the specified localization resource. For example, to provide a localization resource               for the French Belgian culture, the corresponding resource file should be named as follows:            *Telerik.ReportViewer.WPF.TextResources.fr-BE.resx* 
 
-* Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should               be named as follows:             *Telerik.ReportViewer.WPF.TextResources.fr.resx* 
+* Respectively, to provide a localization resource for the French neutral culture, the corresponding resource file should               be named as follows:            *Telerik.ReportViewer.WPF.TextResources.fr.resx* 
 
-* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the               __Report Viewer__. In that case the resource file should be named as follows:             *Telerik.ReportViewer.WPF.TextResources.resx* 
+* It is possible to override the default resources for the language neutral culture, which are stored in the assembly of the               __Report Viewer__. In that case the resource file should be named as follows:            *Telerik.ReportViewer.WPF.TextResources.resx* 
 
 As described above, if for example the current UI culture is set to French Belgian, the __Report Viewer__ will search for localized __RESX__ resource files inside the main application folder in the following order:         
 

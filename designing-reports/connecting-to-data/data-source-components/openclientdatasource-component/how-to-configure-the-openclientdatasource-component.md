@@ -21,11 +21,13 @@ You can connect to data from OpenEdge AppServer ABL procedures using the Telerik
 ## Configuring the OpenClientDataSource Component
 
 1. Add OpenClientDataSource component
+
    + For VisualStudio use the OpenClientDataSource Toolbox item                 
 
    + For Stand-alone Report Designer use the OpenEdge OpenClient Data Source tool located in the Data tab of the Ribbon bar                 
 
 1. A wizard form is started guiding you through the process which helps you to setup all needed settings
+
    + Proxy.NET assembly file along with its dependencies                 
 
    + The AppObject proxy type name used to communicate with the AppServer                 
@@ -35,22 +37,15 @@ You can connect to data from OpenEdge AppServer ABL procedures using the Telerik
    + (Optional) The name of the Table which data should be retrieved. Applicable only if the data is returned as DATASET                 
 
    + Input parameters that the procedure expects along with values and design-time parameter values.  
-     
-	 a. Connection URL
-     
-     a. Username (when applicable)
-     
-     a. Password (when applicable)
-   
 
    + AppServer connection settings                 
 
-     (a). Connection URL
+     1. Connection URL
      
-     (a). Username (when applicable)
+     1. Username (when applicable)
      
-     (a). Password (when applicable)
+     1. Password (when applicable)
      
-     (a). AppServer info (optional)
+     1. AppServer info (optional)
      
-     (a). Session model (managed/free)
+     1. Session model (managed/free)

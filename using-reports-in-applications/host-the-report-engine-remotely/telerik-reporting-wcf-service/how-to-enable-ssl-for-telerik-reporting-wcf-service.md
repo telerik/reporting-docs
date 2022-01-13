@@ -81,11 +81,11 @@ The entire HTTPS-enabled system.serviceModel section of web.config is below:
 
 ## Related topics:
 
-*  [How to Setup SSL on IIS 7](http://learn.iis.net/page.aspx/144/how-to-setup-ssl-on-iis-70/) 
+* [How to Setup SSL on IIS 7](http://learn.iis.net/page.aspx/144/how-to-setup-ssl-on-iis-70/) 
 
-*  [Transport Security Overview](http://msdn.microsoft.com/en-us/library/ms729700.aspx) 
+* [Transport Security Overview](http://msdn.microsoft.com/en-us/library/ms729700.aspx) 
 
-*  [HTTP Transport Security](http://msdn.microsoft.com/en-us/library/ms734679.aspx) 
+* [HTTP Transport Security](http://msdn.microsoft.com/en-us/library/ms734679.aspx) 
 
-*  [BasicHttpSecurityMode Enumeration](http://msdn.microsoft.com/en-us/library/system.servicemodel.basichttpsecuritymode.aspx)
+* [BasicHttpSecurityMode Enumeration](http://msdn.microsoft.com/en-us/library/system.servicemodel.basichttpsecuritymode.aspx)
 

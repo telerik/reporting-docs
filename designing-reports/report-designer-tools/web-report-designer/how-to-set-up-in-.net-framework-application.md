@@ -20,9 +20,9 @@ The following list describes the prerequisites for this guide:
 
 1. Create a sample ASP.NET MVC Project.             
 
-1. Add the *Telerik.WebReportDesigner.Services*  NuGet package. It has dependencies on other Telerik Reporting                NuGet packages but they will be automatically added to your project.             
+1. Add the *Telerik.WebReportDesigner.Services* NuGet package. It has dependencies on other Telerik Reporting                NuGet packages but they will be automatically added to your project.             
 
-1. Update the *Microsoft.AspNet.WebApi.WebHost*  NuGet package to version 5.2.7 or later.           
+1. Update the *Microsoft.AspNet.WebApi.WebHost* NuGet package to version 5.2.7 or later.           
 
 When you use NuGet packages, the dependencies will be automatically resolved. Otherwise, you need to add them manually to the project.           For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).         
 
@@ -133,9 +133,9 @@ namespace CSharp.MvcDemo.Controllers
 </html>
 ````
 
-The *ReportDesignerController*  we added above is configured to search for its reports in a sub-folder                named __Reports__.               The Report Designer widget we just configured will try to load a report named __SampleReport.trdp__.               Add a new folder named __Reports__ to the solution and add an existing report named __SampleReport.trdp__ in it.             
+The *ReportDesignerController* we added above is configured to search for its reports in a sub-folder                named __Reports__.               The Report Designer widget we just configured will try to load a report named __SampleReport.trdp__.               Add a new folder named __Reports__ to the solution and add an existing report named __SampleReport.trdp__ in it.             
 
-1. Register the *ReportsControllerConfiguration*  and *ReportDesignerControllerConfiguration*  routes in                the `Application_Start()` method of the __Global.asax__ file.               It is important to register them before the default routes as shown below:             
+1. Register the *ReportsControllerConfiguration* and *ReportDesignerControllerConfiguration* routes in                the `Application_Start()` method of the __Global.asax__ file.               It is important to register them before the default routes as shown below:             
 
     
       ````html

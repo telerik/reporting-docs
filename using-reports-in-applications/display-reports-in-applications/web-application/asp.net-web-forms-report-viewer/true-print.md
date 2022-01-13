@@ -20,7 +20,7 @@ The True printing is the only way to support multi-page reports printing in most
 
 If you want to use the True print, the following requirements must be satisfied: 
 
-*  [Adobe Reader](http://get.adobe.com/reader/) 
+* [Adobe Reader](http://get.adobe.com/reader/) 
 
 * Disable any other PDF related plug-ins such as Foxit.
 

@@ -16,7 +16,7 @@ position: 1
 
 ## Prerequisites
 
-*  [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
+* [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
 
 * Existing ASP.NET Core 3.1 and higher Blazor Server App or ASP.NET Core 3.1 and higher hosted Blazor WebAssembly App             
 

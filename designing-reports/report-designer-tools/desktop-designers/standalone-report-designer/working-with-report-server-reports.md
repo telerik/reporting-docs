@@ -110,6 +110,6 @@ Use this procedure to save a report that is already opened from another location
 
 ## Reference another report stored in the server
 
-Another report from the server can be referenced using *[CategoryName]/[ReportName]*  path for the URI,             for example: *Samples/Product Sales*.             If the report's category is omitted then the category from the master report is inferred.             A reference to another report can be used either by the SubReport item or in a NavigateToReport action.         
+Another report from the server can be referenced using *[CategoryName]/[ReportName]* path for the URI,             for example: *Samples/Product Sales*.             If the report's category is omitted then the category from the master report is inferred.             A reference to another report can be used either by the SubReport item or in a NavigateToReport action.         
 
 

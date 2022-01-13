@@ -16,7 +16,7 @@ position: 2
 
 ## Prerequisites
 
-*  [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
+* [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
 
 * Existing ASP.NET Core 3.1,.NET 5, or.NET 6 Blazor Server or WebAssembly application                         
 
@@ -26,7 +26,7 @@ position: 2
 
 1. Use NuGet package manager to add the __Telerik.WebReportDesigner.Services__ package. This will also resolve                             other dependencies automatically. For more information, see                             [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).                         
 
-1. Add required settings in the Startup.cs file.The __ConfigureServices__ method inside the __Startup.cs__ in the project                             should be modified in order to enable the Web Report Designer REST service. Make sure the application                             is configured for WebAPI controllers and call the *AddNewtonsoftJson*                              to enable the required NewtonsoftJson serialization:                         
+1. Add required settings in the Startup.cs file.The __ConfigureServices__ method inside the __Startup.cs__ in the project                             should be modified in order to enable the Web Report Designer REST service. Make sure the application                             is configured for WebAPI controllers and call the *AddNewtonsoftJson*                             to enable the required NewtonsoftJson serialization:                         
 
     
       ````c#
@@ -149,5 +149,5 @@ public class ReportDesignerController : ReportDesignerControllerBase
                    PropertiesArea="new PropertiesAreaOptions() { Layout = PropertiesAreaLayout.Categorized }" />
 ````
 
-1. The __Report__ option will instruct the designer to look for *SampleReport.trdp*  inside                             __wwwroot/Reports__ on first load.                             You can create this report definition in the folder or omit the __Report__ option above.                             Finally, run the project.
+1. The __Report__ option will instruct the designer to look for *SampleReport.trdp* inside                             __wwwroot/Reports__ on first load.                             You can create this report definition in the folder or omit the __Report__ option above.                             Finally, run the project.
 

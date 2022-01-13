@@ -38,7 +38,7 @@ INNER JOIN Person.Contact ON HumanResources.Employee.ContactID = Person.Contact.
 
    1. Set the new group __Groupings__ to: *=Fields.Name* 
 
-   1. Set the __Sortings__ to: *=Sum(Fields.SubTotal)*  with Desc order.                 
+   1. Set the __Sortings__ to: *=Sum(Fields.SubTotal)* with Desc order.                 
 
    1. Set the __Name__ to *seriesGroup1* 
 

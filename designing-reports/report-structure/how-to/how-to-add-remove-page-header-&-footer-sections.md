@@ -32,11 +32,11 @@ By default, every new report is created with a page header section and a page fo
 
 The size of page sections can be controlled with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}). However, the inner items won't force the page sections            to grow. If a report item inside a page section grows beyond its parent size, the page section would not grow to accommodate it and the part that does not fit would be cut off.           Listed below are page section specific properties:         
 
-*  __PrintOnFirstPage__ : Set to False to suppress the page section on the first page of the report.
+* __PrintOnFirstPage__ : Set to False to suppress the page section on the first page of the report.
 
-*  __PrintOnLastPage__ : Set to False to suppress the page section on the last page of the report.
+* __PrintOnLastPage__ : Set to False to suppress the page section on the last page of the report.
 
-The PageHeader *PrintOnFirstPage*  has priority over its *PrintOnLastPage*. The opposite is valid for the PageFooter.           For that reason, when a report contains only one page, hence it is both the first and the last, for the PageHeader the *PrintOnFirstPage*  property           will be respected, and for PageFooter - the *PrintOnLastPage*.         
+The PageHeader *PrintOnFirstPage* has priority over its *PrintOnLastPage*. The opposite is valid for the PageFooter.           For that reason, when a report contains only one page, hence it is both the first and the last, for the PageHeader the *PrintOnFirstPage* property           will be respected, and for PageFooter - the *PrintOnLastPage*.         
 
 > Page sections are not related to the report itself, but are relative to the paper or             screen. Thus page sections of nested/detail reports are ignored and only the page sections of the main report             are visible.           
 

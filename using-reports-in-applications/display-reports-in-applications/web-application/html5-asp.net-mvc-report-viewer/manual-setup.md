@@ -236,7 +236,7 @@ End Code
 
     >                  The above CSS rule will be applied on the ```<div>``` element holding the viewer object.                  The HTML elements building the viewer object will be sized based on the size of this container ```<div>``` element.                  To make the viewer fit in other container use relative position, and provide witdh and height values.                
 
-1. Open the layout page and call the *RenderSection*  helper method in the                   *```<head>```*  element. The method must be called for each named section in the view with the viewer -                   *scripts section*  and *styles section*.                 
+1. Open the layout page and call the *RenderSection* helper method in the                  *```<head>```* element. The method must be called for each named section in the view with the viewer -                  *scripts section* and *styles section*.                 
 
     
     ````html

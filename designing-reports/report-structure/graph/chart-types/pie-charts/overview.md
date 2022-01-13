@@ -38,9 +38,9 @@ Pie charts represent proportions of the total. As a result, it is common to form
 
 1. Select the series by clicking anywhere on the pie.
 
-1. Set __DataPointLabelStyle.Visible__ property of the series from the *Properties*  window to __true__.             
+1. Set __DataPointLabelStyle.Visible__ property of the series from the *Properties* window to __true__.             
 
-1. Set __DataPointLabel__ property of the series to an expression adjusted to your specific needs similar to the following one: *=Sum(Fields.LineTotal)/Exec('graph1', Sum(Fields.LineTotal))*  where '*graph1* ' is the name of the Graph item.             
+1. Set __DataPointLabel__ property of the series to an expression adjusted to your specific needs similar to the following one: *=Sum(Fields.LineTotal)/Exec('graph1', Sum(Fields.LineTotal))* where '*graph1* ' is the name of the Graph item.             
 
 1. Select the series labels and from the '*Graph Tools | Format* ' contextual tab select '*Percent* ' for the label format.             
 

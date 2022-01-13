@@ -18,9 +18,9 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 ## Prerequisites
 
-*  [Visual Studio 2019, version 16.8+](https://www.visualstudio.com/vs/) 
+* [Visual Studio 2019, version 16.8+](https://www.visualstudio.com/vs/) 
 
-*  [NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0) 
+* [NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0) 
 
 ## Creating a Sample ASP.NET Core in.NET 5 Project
 
@@ -38,7 +38,7 @@ First, you need to create a new ASP.NET Core project:
 
 In this tutorial, the resulting service will use the sample report definitions deployed with the Telerik Reporting product installer:                 
 
-1. Find the sample reports in                             *{Telerik Reporting installation path}\Report Designer\Examples*.                         
+1. Find the sample reports in                            *{Telerik Reporting installation path}\Report Designer\Examples*.                         
 
 1. Add a new folder to your solution called __Reports__ and copy all sample reports into it.                         
 
@@ -139,7 +139,7 @@ Finally, all configurations should be placed in the JSON configuraion file (add 
 }
 ````
 
-The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient*              as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:           
+The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient*             as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:           
 
     
 ````html
@@ -223,7 +223,7 @@ A full example can be found in the installation folder of Telerik Reporting: C:\
 
 You may need to enable  [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), for example, if you use the REST Service from clients hosted in different domains.           
 
-Add the following code to the *ConfigureServices*  method of the             *Startup.cs*  file to add a new CORS policy for the REST Service:           
+Add the following code to the *ConfigureServices* method of the            *Startup.cs* file to add a new CORS policy for the REST Service:           
 
     
 ````c#
@@ -237,7 +237,7 @@ services.AddCors(corsOption => corsOption.AddPolicy(
   }));
 ````
 
-Activate the above policy for the application by adding the next code in the *Configure*              method of the *Startup.cs*  file:           
+Activate the above policy for the application by adding the next code in the *Configure*             method of the *Startup.cs* file:           
 
     
 ````c#

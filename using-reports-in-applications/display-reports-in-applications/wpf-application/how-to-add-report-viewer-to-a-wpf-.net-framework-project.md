@@ -38,9 +38,9 @@ This item template will do the following:
 
 If the selected engine is of remote type (__REST Service__ or __Report Server__), the item template will:         
 
-* Add a reference to *Telerik.Reporting.Services.HttpClient*  to the current project.             
+* Add a reference to *Telerik.Reporting.Services.HttpClient* to the current project.             
 
-* Add a reference to *System.Net.Http*  and *System.Net.Http.Formatting*  via NuGet package to the current project.             
+* Add a reference to *System.Net.Http* and *System.Net.Http.Formatting* via NuGet package to the current project.             
 
 If the selected engine is __REST Service__ additionally it will do the following:         
 

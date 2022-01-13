@@ -14,9 +14,9 @@ position: 6
 
 After the __OpenAccessDataSource__ wizard appears you have to perform the following steps:       
 
-1. __Choose your data connection__ In this step you have to specify a data connection for the __OpenAccessDataSource__ component. Choose an               existing connection from the list or click *"New Connection"*  to create a new connection to your               database. The *"Connection String"*  text area displays a read-only information about the selected               connection string.             
+1. __Choose your data connection__ In this step you have to specify a data connection for the __OpenAccessDataSource__ component. Choose an               existing connection from the list or click *"New Connection"* to create a new connection to your               database. The *"Connection String"* text area displays a read-only information about the selected               connection string.             
 
-1. __Save the connection string__ This step appears only if you have specified a new connection string in the previous one. Choose *"Yes, save the connection with the following name"*  to store the connection string in the application configuration file under a               specific name. Type a name for the connection or use the provided default name if applicable.             
+1. __Save the connection string__ This step appears only if you have specified a new connection string in the previous one. Choose *"Yes, save the connection with the following name"* to store the connection string in the application configuration file under a               specific name. Type a name for the connection or use the provided default name if applicable.             
 
    >Saving the connection string in the application configuration file simplifies the process of maintaining your application if                 the database connection changes. In the event of a change in the database connection you can edit the connection string in the                 application configuration file as opposed to editing the source code and having to recompile your application.               
 

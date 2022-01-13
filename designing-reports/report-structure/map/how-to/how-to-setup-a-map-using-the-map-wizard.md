@@ -28,7 +28,7 @@ In this how-to article we will show you how to create a Map which will present t
 1. On the __Choose Data Source__ page, add new               __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ :             
    + Set the connection string to the demo AdventureWorks database.
 
-   + Paste the following query in the *Select Statement*  box:                 
+   + Paste the following query in the *Select Statement* box:                 
 
     
       ````sql
@@ -55,24 +55,24 @@ AND PC.Name = 'Bikes'
 
    + You can click on __Execute Query...__ just to check if everything is OK with the database connection.                   Click __Finish__ when you are ready.                 
 
-1. In the *Available data sources*  list you should see the datasource you've already created.               Select it and click __Next__.             
+1. In the *Available data sources* list you should see the datasource you've already created.               Select it and click __Next__.             
 
 1. In the next page you have to select the fields which will be used to build the map charts.             
 
     >Since the map will use a Location Provider, there is no need to provide the  __Latitude__ and  __Longitude__ coordinates by yourself, so you can                 left these boxes empty and just define a location group, which will set the geocoding string.               
 
-   + Select the __Pie Chart__ radiobutton from the *Datapoints type*  box.                 
+   + Select the __Pie Chart__ radiobutton from the *Datapoints type* box.                 
 
-   + Select the __ProductSubCategory__ field and drag it to the *Series (color)*  box.                 
+   + Select the __ProductSubCategory__ field and drag it to the *Series (color)* box.                 
 
-   + Select the __State__ field and drag it to *Categories (location)*  box.                 
+   + Select the __State__ field and drag it to *Categories (location)* box.                 
 
-   + Select the __LineTotal__ field and drag it to *Size*  box, where it will be transformed to                 __Sum(LineTotal)__ 
+   + Select the __LineTotal__ field and drag it to *Size* box, where it will be transformed to                 __Sum(LineTotal)__ 
     Your __Arrange map fields__ page should look like the one shown below:               
 
   ![Arrange Map Fields](images/Map/ArrangeMapFields.png)    Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.             
 
-1. On the __Choose a location provider__ page you have to select the location provider that will be used to geocode               the __State__ field that was dragged in the *Categories (location)*  box on the previous page.               Currently the supported providers are                [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)             ,                [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)                and                [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token*  box, as shown below:               
+1. On the __Choose a location provider__ page you have to select the location provider that will be used to geocode               the __State__ field that was dragged in the *Categories (location)* box on the previous page.               Currently the supported providers are                [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)             ,                [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)                and                [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token* box, as shown below:               
 
   ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
 

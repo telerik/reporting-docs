@@ -22,7 +22,7 @@ This compound property contains the data needed to construct the correctly forma
 
 ### Creditor
 
-The Creditor property contains information about the *Payable To*  data entity.             
+The Creditor property contains information about the *Payable To* data entity.             
 
 * __Address__ - Determines the Creditor address fields, shown below in alphabetical order:                 
 
@@ -44,7 +44,7 @@ The Creditor property contains information about the *Payable To*  data entity.
 
 ### Debtor
 
-The Debtor property contains information about the *Payable By*  data entity.             
+The Debtor property contains information about the *Payable By* data entity.             
 
 * __Address__ - Determines the Debtor address fields, following the same rules as the Creditor address fields, listed above.                 
 
@@ -52,7 +52,7 @@ The Debtor property contains information about the *Payable By*  data entity.
 
 ### Payment
 
-The Payment property contains information about the *Payment*  data entity.             
+The Payment property contains information about the *Payment* data entity.             
 
 * __AdditionalInfo__ - non-mandatory field containing additional information about the bill recipient.                 
 
@@ -84,7 +84,7 @@ Determines whether the data provided in the  [BillData](/reporting/api/Telerik.R
 
 ## ValueFromBillData
 
-Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  property will obtain its value from the data configured in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property, or not.           If set to __true__, the data will be constructed from the fields in the *BillData*  property.           If set to __false__, the *BillData*  fields will not be respected and the barcode item will encode the raw data used in the *Value*  field.         
+Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  property will obtain its value from the data configured in the  [BillData](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData)  property, or not.           If set to __true__, the data will be constructed from the fields in the *BillData* property.           If set to __false__, the *BillData* fields will not be respected and the barcode item will encode the raw data used in the *Value* field.         
 
 # See Also
 

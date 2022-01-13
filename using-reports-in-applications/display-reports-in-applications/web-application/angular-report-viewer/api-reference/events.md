@@ -18,7 +18,7 @@ Below is a list of all available report viewer events.
 
 | Parameter | Description |
 | ------ | ------ |
-| __ready__ | *function();*  *optional;* A callback function that will be called when the viewer content has been loaded from the template and is ready to display reports                 or perform any other operations on it. The function is executed in the context of the ReportViewer object that is available through                 the __this__ object.|
+| __ready__ | *function();* *optional;* A callback function that will be called when the viewer content has been loaded from the template and is ready to display reports                 or perform any other operations on it. The function is executed in the context of the ReportViewer object that is available through                 the __this__ object.|
 | __exportBegin__ | *function(e, args);optional;* A callback function that will be called prior to starting the report export command.|
 | __exportEnd__ | *function(e, args);optional;* A callback function that will be called when the exported document is ready for download,                 but prior to the actual downloading.|
 | __printBegin__ | *function(e, args);optional;* A callback function that will be called prior to starting the print report command.|

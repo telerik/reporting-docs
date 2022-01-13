@@ -31,11 +31,11 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
   ![Winforms Connection Editor](images/WinformsConnectionEditor.png)
 
 1. The __Reporting engine__ combobox provides the following options:                 
-   + *Embedded*  - the reports will be processed and rendered at the local machine that hosts the viewer. This is the default mode in order to preserve backwards compatibility.                     
+   + *Embedded* - the reports will be processed and rendered at the local machine that hosts the viewer. This is the default mode in order to preserve backwards compatibility.                     
 
-   + *REST Service*  - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
+   + *REST Service* - the reports will be processed at the machine that hosts configured and running REST Service instance.                     
 
-   + *Report Server*  - the reports will be processed and rendered at the machine that hosts configured and running                        [Telerik Report Server](http://docs.telerik.com/report-server/introduction)  instance.                     
+   + *Report Server* - the reports will be processed and rendered at the machine that hosts configured and running                        [Telerik Report Server](http://docs.telerik.com/report-server/introduction)  instance.                     
     Select *Report Server*.                 
 
 1. In __Report Server URL__ textbox enter the address and port (if needed) of the machine that hosts the Report Server instance.                 
@@ -54,7 +54,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
   ![Winforms Report Source Editor](images/WinformsReportSourceEditor.png)
 
-1. Select the __Report server__ option. The dialog will try to connect to a report server instance, using the credentials you provided earlier. In case it succeeds, the dialog                   will populate its *Category*  and *Report Name*  comboboxes, allowing you to select the desired report.                   If the report server is not available at the moment, you can still write down the category and report name in the comboboxes and their values will be used to create the report source for the viewer.                     If needed, you can setup the report source parameters using the dialog, invoked by pressing the __Edit Parameters__ button.                 
+1. Select the __Report server__ option. The dialog will try to connect to a report server instance, using the credentials you provided earlier. In case it succeeds, the dialog                   will populate its *Category* and *Report Name* comboboxes, allowing you to select the desired report.                   If the report server is not available at the moment, you can still write down the category and report name in the comboboxes and their values will be used to create the report source for the viewer.                     If needed, you can setup the report source parameters using the dialog, invoked by pressing the __Edit Parameters__ button.                 
 
 1. Click __OK__ when ready. The dialog will close and the resulting report source will be populated as a value of the __ReportSource__ property.                 
 

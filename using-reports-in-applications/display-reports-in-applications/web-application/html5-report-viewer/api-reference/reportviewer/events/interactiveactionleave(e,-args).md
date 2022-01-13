@@ -19,7 +19,7 @@ Parameters:
 | Parameter | Description |
 | ------ | ------ |
 | __e__ |This is the  [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively  [jQuery's event.data](https://api.jquery.com/event.data/). e.data.sender is the report viewer that raised the event.|
-| __args__ |An object with the following properties:<br/>*  *element* - the DOM element that triggered the action.<br/>*  *action* - the current __action__ instance.|
+| __args__ |An object with the following properties:<br/>* *element* - the DOM element that triggered the action.<br/>* *action* - the current __action__ instance.|
 
     
 ````js

@@ -34,9 +34,9 @@ This article describes the steps required to host the __Telerik Reporting Servic
 
    + Telerik.Reporting.XpsRendering.dll - required if you need to export in XPS format;                 
 
-   + Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports.                   The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll*  v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});                 
+   + Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports.                   The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll* v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});                 
 
-1. Create a new class which derives from                [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase).               It could be called *ReportsHost*  for example:             
+1. Create a new class which derives from                [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase).               It could be called *ReportsHost* for example:             
    + Set the  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)                    property. The __ReportSourceResolver__ and __Storage__ configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface                   for more details.                 
     Here is a sample implementation with the setup:             
 
@@ -80,7 +80,7 @@ Public Class ReportsHost
 End Class
 ````
 
-    The provided sample implementation will resolve.trdp|.trdx report definitions from the               /*Reports*  subfolder of the hosting ASP.NET application root. Another option is to reference               a reports library and provide report                [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)                from the service clients.             
+    The provided sample implementation will resolve.trdp|.trdx report definitions from the               /*Reports* subfolder of the hosting ASP.NET application root. Another option is to reference               a reports library and provide report                [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx)                from the service clients.             
 
     >Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.               
 
@@ -143,7 +143,7 @@ Protected Sub Application_Start()
 End Sub
 ````
 
-1. Update the configuration file (*web.config*) to include the               following *location*  element:             
+1. Update the configuration file (*web.config*) to include the               following *location* element:             
 
     
     ````XML

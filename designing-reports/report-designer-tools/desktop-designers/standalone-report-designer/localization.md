@@ -18,7 +18,7 @@ Application internationalization involves improving the experience,          and
 
 The Report Designer UI language depends on the OS language,            Report Designer option and on the available resource files.            The language setting is part of the Report Designer Options General section.            The available languages in the languages dropdown depend on the available resource files.            This option forces the designer to load the desired language Report Designer resources.            The Report Designer uses.NET Framework editors that are fully localized only when the            OS UI language is set to the desired language.         
 
-The resource files should be in a folder with the name of the target culture.           This folder should be in a Resources directory sibling to the Report Designer executable.           For example for Spanish (Mexico) UI the resources should be available in:            *Report Designer folder\Resources\es-MX* 
+The resource files should be in a folder with the name of the target culture.           This folder should be in a Resources directory sibling to the Report Designer executable.           For example for Spanish (Mexico) UI the resources should be available in:           *Report Designer folder\Resources\es-MX* 
 
 The default localization resources are provided within the Telerik Reporting installation directory           (%PROGRAMFILES(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\Resources)         
 

@@ -24,11 +24,11 @@ In this how-to article we will show you how to use the [Standalone Report Design
    + If you want to add the Map item to an existing report, you have to select the __Choropleth__ item                   from the __Insert__ menu.                   This will bring up the __Choropleth Wizard__ which will guide you through the creation process.                 
 
 1. Add new               [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%})               and name it __populationData__. This data source will hold the information about the               countries, their area, population and density along with some additional data.             
-   + Although you can copy the data directly from the Wikipedia page mentioned above, for your convenience we have prepared a CSV file                   that you can pass to the CSV data source.                 Download the                    [PopulationData.zip](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip)                    file, save it locally and extract its contents in a folder of choice. Navigate to that folder and locate the __PopulationDensity.csv__ file.                   Back in the wizard, insert the path to the CSV file into the *Select a file to import*  textbox or paste its contents in the                   __Enter CSV as text__ tab.                 
+   + Although you can copy the data directly from the Wikipedia page mentioned above, for your convenience we have prepared a CSV file                   that you can pass to the CSV data source.                 Download the                    [PopulationData.zip](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip)                    file, save it locally and extract its contents in a folder of choice. Navigate to that folder and locate the __PopulationDensity.csv__ file.                   Back in the wizard, insert the path to the CSV file into the *Select a file to import* textbox or paste its contents in the                   __Enter CSV as text__ tab.                 
 
    + The file uses semicolon (__;__) as a separator, but the comma (__,__) is used as thousands separator.                   Thus tick the semicolon checkbox and untick the comma checkbox on the                   __Configure the separators__ page.                 
 
-   + Press __Next__ until you get to the __CSV Headers__ page.                   Note that the CSV file has headers, so you should check the *The CSV has headers*  checkbox.                 
+   + Press __Next__ until you get to the __CSV Headers__ page.                   Note that the CSV file has headers, so you should check the *The CSV has headers* checkbox.                 
 
    + On the __Map columns to type__ page set the column types to match the actual data they represent, as shown below.                   
 
@@ -36,26 +36,26 @@ In this how-to article we will show you how to use the [Standalone Report Design
 
    + When you click __Parse CSV...__ on the next page, you should see the result of the parsed file.                 Click __Finish__ when you are ready.                 
 
-1. In the *Available data sources*  list you should see the datasource you've already created.               Select it and click __Next__.             
+1. In the *Available data sources* list you should see the datasource you've already created.               Select it and click __Next__.             
 
-1. In the next page you have to select the source that will provide the spatial data to your choropleth. In this example we will use a               *Shapefile*  bundle which consists of two files: __world.shp__ and __world.dbf__.               The files can be found in *\Resources*  subfolder in the directory where the zip file __PopulationDensity.zip__ is extracted.             
+1. In the next page you have to select the source that will provide the spatial data to your choropleth. In this example we will use a              *Shapefile* bundle which consists of two files: __world.shp__ and __world.dbf__.               The files can be found in *\Resources* subfolder in the directory where the zip file __PopulationDensity.zip__ is extracted.             
    + Select the __Binary file in ESRI Shapefile format__ radiobutton.                 
 
    + Browse to the directory where your Shapefile is placed or paste the path to the file in the textbox.                 
 
-   + As soon as the path to the Shapefile is set, you can create the __relations__ between the fields in the                   analytical (CSV) data set and the fields from the __world.dbf__ file, which is part of the Shapefile bundle.                 Click the __New__ button on the relations control. A new row will appear. From the __Analytical Field__                 column select *Fields.Country*. Match it with the *Fields.CNTRY_NAME*  field                   from the __Shapefile Field__ column.                 
+   + As soon as the path to the Shapefile is set, you can create the __relations__ between the fields in the                   analytical (CSV) data set and the fields from the __world.dbf__ file, which is part of the Shapefile bundle.                 Click the __New__ button on the relations control. A new row will appear. From the __Analytical Field__                 column select *Fields.Country*. Match it with the *Fields.CNTRY_NAME* field                   from the __Shapefile Field__ column.                 
     Your __Choose a spatial data source__ page should look like the one shown below:               
 
   ![Choropleth How To Simple Choose Spatial Data Source](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_ChooseSpatialDataSource.png)    Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.             
 
-1. On the following page you will set the fields that are specific to the choropleth map. Please note that in the *Available fields*                you will see the fields from both analytical and spatial data sets.             
-   1. Select the __Density (pop./km2)__ field and drag it to *Color data field:*  box, where it will be transformed to                   __Sum([Density (pop./km2)])__. You can omit the aggregate operator, since every country is on                   a separate row in the data set, and the __Sum__ operator will aggregate only one row.                 
+1. On the following page you will set the fields that are specific to the choropleth map. Please note that in the *Available fields*               you will see the fields from both analytical and spatial data sets.             
+   1. Select the __Density (pop./km2)__ field and drag it to *Color data field:* box, where it will be transformed to                   __Sum([Density (pop./km2)])__. You can omit the aggregate operator, since every country is on                   a separate row in the data set, and the __Sum__ operator will aggregate only one row.                 
 
-   1. Select __EqualDistribution__ as a *Range grouping*  method, which will distribute the data points evenly in groups/clusters.                 
+   1. Select __EqualDistribution__ as a *Range grouping* method, which will distribute the data points evenly in groups/clusters.                 
 
-   1. Set a proper value to the *Colors count*  property, which will define in how many clusters the color data values                   will be distributed. For this example we picked __8__.                 
+   1. Set a proper value to the *Colors count* property, which will define in how many clusters the color data values                   will be distributed. For this example we picked __8__.                 
 
-   1. Set appropriate colors for the *Start color*  and *End color*  properties.                   They will be used to create a  [GradientPalette](/reporting/api/Telerik.Reporting.Drawing.GradientPalette), which                   will distribute graded colors among the data points. The data points that have lower color values will receive colors from the palette                   start, and vice versa - the data points with the higher color values will receive colors from the palette end.                 
+   1. Set appropriate colors for the *Start color* and *End color* properties.                   They will be used to create a  [GradientPalette](/reporting/api/Telerik.Reporting.Drawing.GradientPalette), which                   will distribute graded colors among the data points. The data points that have lower color values will receive colors from the palette                   start, and vice versa - the data points with the higher color values will receive colors from the palette end.                 
 
    1. When you are done, your __Choropleth setup__ page should look like this:                   
 

@@ -22,7 +22,7 @@ To give an example we will use the Invoice report from our local examples and wi
 
 1. We are going to use one of our demo Visual Studio reports. For this purpose the demo ReportLibrary project should be built beforehand (see below).                   Create a new ASP.NET MVC 4+ Empty Project and add reference to *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\bin\[configuration directory]\CSharp|VB.ReportLibrary.dll*.                   The exact [configuration directory] name depends on the project 'Build' configuration. It could be 'Debug', 'Release', etc.                 
 
-1. Then use the                    [HTML5 MVC Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})    Name the view with the viewer                   __InvoiceParameters.cshtml|vbhtml__. On __'Configure report source'__                  step select __'Existing report definition'__, then select                    __'Select type report definition created in Visual Studio'__ and browse                    *Invoice*  report class.                      Finish the wizard.
+1. Then use the                    [HTML5 MVC Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})    Name the view with the viewer                   __InvoiceParameters.cshtml|vbhtml__. On __'Configure report source'__                  step select __'Existing report definition'__, then select                    __'Select type report definition created in Visual Studio'__ and browse                   *Invoice* report class.                      Finish the wizard.
 
 1. Add MVC Controller item under the project's __Controller__ folder and name it                   __HomeController.cs|vb__, and add an ActionResult method named __InvoiceParameters__.                   Move the InvoiceParameters.cshtml|vbhtml file under the newly added __Views\Home__ folder.                     Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__                 in the project's web.config file. For example:                 
 
@@ -172,7 +172,7 @@ Public Function InvoiceParameters() As ActionResult
 End Function
 ````
 
-1. Add a custom parameter UI - a dropdown selector with a few values. For the purpose,                   open the Views/Home/InvoiceParameters.cshtml|vbhtml file and add the following lines in the *BODY*                    element, above the HTML5 Viewer:                 
+1. Add a custom parameter UI - a dropdown selector with a few values. For the purpose,                   open the Views/Home/InvoiceParameters.cshtml|vbhtml file and add the following lines in the *BODY*                   element, above the HTML5 Viewer:                 
 
     
     ````c#

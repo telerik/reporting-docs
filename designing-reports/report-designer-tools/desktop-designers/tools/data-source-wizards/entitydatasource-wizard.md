@@ -24,7 +24,7 @@ After the EntityDataSource wizard appears you have to perform the following step
 
    >This option is useful for testing purposes only. Embedding the connection string directly in the reports                     is not recommended, because it might prove difficult to maintain all your reports later, when that connection                     string changes. The recommended approach is to store your connection string in the configuration file of the                     report class library and then choose it by name from the drop-down list.                   
 
-1. __Save the connection string__ This step appears only if you have specified a new connection string in the previous one. Choose *"Yes, save the connection with the following name"*  to store the connection string in the application configuration file under a specific name. Type               a name for the connection or use the provided default name if applicable.             
+1. __Save the connection string__ This step appears only if you have specified a new connection string in the previous one. Choose *"Yes, save the connection with the following name"* to store the connection string in the application configuration file under a specific name. Type               a name for the connection or use the provided default name if applicable.             
 
    >Saving the connection string in the application configuration file simplifies the process of maintaining your application                 if the database connection changes. In the event of a change in the database connection you can edit the connection string                 in the application configuration file as opposed to editing the source code and having to recompile your application.               
 

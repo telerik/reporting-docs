@@ -22,7 +22,7 @@ Telerik Reporting provides a set of assemblies and NuGet packages designed for.N
 
 *.NET Core 3.1 or newer for desktop projects
 
-The following NuGet packages are required.           When using our *NuGet*  packages, the required dependencies are resolved automatically.           Otherwise, they need to be manually added to the project.         
+The following NuGet packages are required.           When using our *NuGet* packages, the required dependencies are resolved automatically.           Otherwise, they need to be manually added to the project.         
 
 | Package name | Version |
 | ------ | ------ |
@@ -118,7 +118,7 @@ and run the application. When running in debug mode Visual Studio Code will ask 
 
 ## Containerize Telerik Reporting
 
-Telerik Reporting can be used in a Docker image if it meets the GDI+ requirements.            The __microsoft/windowsservercore__ images distributed by Microsoft contain the graphics library, but their size is significantly bigger compared to the size of the dotnet runtime in a Linux container.            Such container only needs the __libgdiplus__ and its accompanying libraries installed, which can be done through the following *dockerfile*  snippet:         
+Telerik Reporting can be used in a Docker image if it meets the GDI+ requirements.            The __microsoft/windowsservercore__ images distributed by Microsoft contain the graphics library, but their size is significantly bigger compared to the size of the dotnet runtime in a Linux container.            Such container only needs the __libgdiplus__ and its accompanying libraries installed, which can be done through the following *dockerfile* snippet:         
 
     
 ````
@@ -139,7 +139,7 @@ If you need to use Telerik Reporting in a Windows container, you need to target 
 
 Telerik Reporting ships with a ready-made.NET Core examples that demonstrate how to show the sample reports in an ASP.NET Core, WinForms Core and WPF Core application.            The ASP.NET Core demo also shows how to inject an __appsettings.json__ configuration file to the controller            and how to initialize a WebHostBuilder so it runs under Windows and Linux.                    
 
-An example project is available in the Telerik Reporting installation directory            *\Examples\CSharp\Asp.NetCoreDemo*  subfolder.         
+An example project is available in the Telerik Reporting installation directory           *\Examples\CSharp\Asp.NetCoreDemo* subfolder.         
 
 # See Also
 

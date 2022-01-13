@@ -26,9 +26,9 @@ In this how-to article we will show you how to create a Map which will present t
   ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
 
 1. Add new               [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%})               and name it __medalsData__. This data source will hold the information about the               countries, the ID of their respective olympic association, which place and how many times they have occupied it.             
-   1. Download the                    [MedalsData.csv file](http://blogs.telerik.com/docs/default-source/reporting/medalsdata.csv?sfvrsn=2)                 , save it locally and insert its path into the *Select a file to import*  textbox.                   The information in this file is an example data set that shows how many times a national olympic team had occupied a first, a second                   or a third place in the Olympic Games. It also has a relation with the Association of National Olympic Committees table                   that we will build later.                 
+   1. Download the                    [MedalsData.csv file](http://blogs.telerik.com/docs/default-source/reporting/medalsdata.csv?sfvrsn=2)                 , save it locally and insert its path into the *Select a file to import* textbox.                   The information in this file is an example data set that shows how many times a national olympic team had occupied a first, a second                   or a third place in the Olympic Games. It also has a relation with the Association of National Olympic Committees table                   that we will build later.                 
 
-   1. Press __Next__ until you get to the __CSV Headers__ page.                   Note that the CSV file has headers, so you should check the *The CSV has headers*  checkbox.                 
+   1. Press __Next__ until you get to the __CSV Headers__ page.                   Note that the CSV file has headers, so you should check the *The CSV has headers* checkbox.                 
 
    1. On the __Map columns to type__ page set the type of `AssociationId, Place` and                   `Count` columns to __Integer__.                 
 
@@ -36,24 +36,24 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![CSV Preview Results](images/Map/CSV_PreviewResults.png)Click __Finish__ when you are ready.                 
 
-1. In the *Available data sources*  list you should see the datasource you've already created.               Select it and click __Next__.             
+1. In the *Available data sources* list you should see the datasource you've already created.               Select it and click __Next__.             
 
 1. In the next page you have to select the fields which will be used to build the map charts.             
 
     >Since the map will use a Location Provider, there is no need to provide the  __Latitude__ and  __Longitude__ coordinates by yourself, so you can                 left these boxes empty and just define a location group, which will set the geocoding string.               
 
-   + Select the __Column Chart__ radiobutton from the *Datapoints type*  box.                 
+   + Select the __Column Chart__ radiobutton from the *Datapoints type* box.                 
 
-   + Select the __Place__ field and drag it to the *Series (color)*  box.                 
+   + Select the __Place__ field and drag it to the *Series (color)* box.                 
 
-   + Select the __Team__ field and drag it to *Categories (location)*  box.                 
+   + Select the __Team__ field and drag it to *Categories (location)* box.                 
 
-   + Select the __Count__ field and drag it to *Size*  box, where it will be transformed to                   __Sum(Count)__.                 
+   + Select the __Count__ field and drag it to *Size* box, where it will be transformed to                   __Sum(Count)__.                 
     Your __Arrange map fields__ page should look like the one shown below:               
 
   ![Column Chart Arrange Map Fields](images/Map/ColumnChart_ArrangeMapFields.png)    Once the mandatory fields are set up, the __Next__ button will get enabled and you can go to the next page.             
 
-1. On the __Choose a location provider__ page you have to select the location provider that will be used to geocode               the __State__ field that was dragged in the *Categories (location)*  box on the previous page.               Currently the supported providers are                [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)             ,                [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)                and                [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token*  box, as shown below:               
+1. On the __Choose a location provider__ page you have to select the location provider that will be used to geocode               the __State__ field that was dragged in the *Categories (location)* box on the previous page.               Currently the supported providers are                [MapQuestOpenAPILocationProvider](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider)             ,                [MapQuestLocationProvider](/reporting/api/Telerik.Reporting.MapQuestLocationProvider)                and                [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider).               They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.               Once you have obtained the key, you should paste it in the *Client token* box, as shown below:               
 
   ![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
 
@@ -62,11 +62,11 @@ In this how-to article we will show you how to create a Map which will present t
   ![Map Column Chart Done](images/Map/MapColumnChart_Done.png)
 
 1. Now we will add a                [PointMapSeries](/reporting/api/Telerik.Reporting.PointMapSeries)                that will display a circle around each column chart. The circle size will be relevant to the               whole number of medals each team has won.                 The easiest way to add a series to the already created __Map__ or __Graph__ is to select it               and then start the respective Wizard. In this case you should start the MapWizard again by clicking the Map toolbar icon and on the               __Arrange map fields__ page perform the following steps:             
-   + Select the __Point__ radiobutton from the *Datapoints type*  box.                 
+   + Select the __Point__ radiobutton from the *Datapoints type* box.                 
 
-   + Select the __Team__ field and drag it to *Categories (location)*  box.                 
+   + Select the __Team__ field and drag it to *Categories (location)* box.                 
 
-   + Select the __Count__ field and drag it to *Size*  box, where it will be transformed to                   __Sum(Count)__.                 
+   + Select the __Count__ field and drag it to *Size* box, where it will be transformed to                   __Sum(Count)__.                 
     Your __Arrange map fields__ page should look like the one shown below:               
 
   ![Point Arrange Map Fields](images/Map/Point_ArrangeMapFields.png)    When you click the __Finish__ button, the map will display the two series together, rendered in the               order they have been created. That's why you will see the column charts being overlapped by the circles.             
@@ -101,7 +101,7 @@ In this how-to article we will show you how to create a Map which will present t
     Now you can set the __columnMapSeries'__ [LegendItem](/reporting/api/Telerik.Reporting.LegendItem). [Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value)  expression to               `=Fields.Medal` and style the legend by your choice.             
 
 1. In case we want to reduce the amount of displayed information on the map, one of the best options is to use               [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})               and  apply               [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules%}). In this case the filtering will be based on the                __AssociationId__ field.                 In order to display the meaningful names of the olympic associations, we will add another CSV Data Source, which has a relation with the               current data source's `AssociationId` field and will be used only for displaying the report parameters.             
-   + Add a new CSV Data Source, select the tab *Enter CSV as text*  and paste the following text in the box:                 
+   + Add a new CSV Data Source, select the tab *Enter CSV as text* and paste the following text in the box:                 
 
     ````
 Id,Name
@@ -112,7 +112,7 @@ Id,Name
 5,Association of National Olympic Committees of Africa
 ````
 
-   + Check the *The CSV has headers*  box on the __CSV Headers__ page.                 
+   + Check the *The CSV has headers* box on the __CSV Headers__ page.                 
 
    + On the __Map columns to type__ page set the type of `Id` column to                   __Integer__.                 
 
@@ -127,19 +127,19 @@ Id,Name
 1. Since the column charts on the map are not suitable to display any labels on them, we will add an additional CrossTab,               which will show the number of medals and calculate their amount for each national team.             
    + Start the Crosstab Wizard and choose the __medalsData__ data source on its                    __Choose a Data Source__ page.                 
 
-   + Select the __Medal__ field and drag it to the *Column Groups*  box.                 
+   + Select the __Medal__ field and drag it to the *Column Groups* box.                 
 
-   + Select the __Team__ field and drag it to *Row Groups*  box.                 
+   + Select the __Team__ field and drag it to *Row Groups* box.                 
 
-   + Select the __Count__ field and drag it to *Detail Values*  box, where it will be transformed to                   __Sum(Count)__.                 Your __Arrange fields__ page should look like the one shown below:                   
+   + Select the __Count__ field and drag it to *Detail Values* box, where it will be transformed to                   __Sum(Count)__.                 Your __Arrange fields__ page should look like the one shown below:                   
 
   ![Arrange Crosstab Fields](images/Map/ArrangeCrosstabFields.png)
 
-   + On the __Choose Layout__ page select *Blocked layout, subtotals below*  option                   and select __Finish__ if you do not need to choose from any predefined stylings.                 
+   + On the __Choose Layout__ page select *Blocked layout, subtotals below* option                   and select __Finish__ if you do not need to choose from any predefined stylings.                 
 
    + Once the Crosstab Wizard is closed, your crosstab is done, but now it needs to be filtered the same way as the Map item. Apply the                   same filter rule as you did in the previous step (`=Fields.AssociationId In =Parameters.associationParam.Value`).                 
 
-   + If you want to apply a different color for any of the medals columns, you have to set up three                   [ConditionalFormatting Rules]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) to the textbox with the value                    *=Fields.Medal*                 , as shown below:                   
+   + If you want to apply a different color for any of the medals columns, you have to set up three                   [ConditionalFormatting Rules]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) to the textbox with the value                   *=Fields.Medal*                , as shown below:                   
 
   ![Medals Conditional Formatting Rules Dialog](images/Map/MedalsConditionalFormattingRulesDialog.png)
 
@@ -152,13 +152,13 @@ Id,Name
 1. In this step we will add some interactivity to our report, allowing the user to select a national team from the crosstab and changing               the map extent according to its selection. The drill-through action will use an invisible report parameter which will store               the selected team name and utilize it in conditional formattings and filterings.             
    + Add new report parameter named __teamParam__. Set its __AllowNull__ property                   to __True__ and leave the other properties as set by its default constructor.                 
 
-   + If you haven't saved your report so far, save it now.                   Select the crosstab's textbox that displays the team name and add a __Navigate to Report__ action,                   as explained [here]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}).                 Click on __Select a Report Source__ button, select *URL or File*  option and                   from the *Select a file or enter a valid URL:*  drop-down list click the                   __```< Select a file >```__ option.                 
+   + If you haven't saved your report so far, save it now.                   Select the crosstab's textbox that displays the team name and add a __Navigate to Report__ action,                   as explained [here]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}).                 Click on __Select a Report Source__ button, select *URL or File* option and                   from the *Select a file or enter a valid URL:* drop-down list click the                   __```< Select a file >```__ option.                 
 
    + From the __Open file__ dialog select the report you're currently working on. This will cause the report to call itself                   every time this action is performed.                 
 
-   + Click on __Edit Parameters...__ button, which will bring up the Edit Parameters dialog. When you click on                   *New*  toolbar button, the two report parameters - __associationParam__ and                   __teamParam__ - should be loaded in the *Parameter Name*  drop-down list.                 
+   + Click on __Edit Parameters...__ button, which will bring up the Edit Parameters dialog. When you click on                  *New* toolbar button, the two report parameters - __associationParam__ and                   __teamParam__ - should be loaded in the *Parameter Name* drop-down list.                 
 
-   + Select `associationParam` from the *Parameter Name*  drop-down list and choose `=Parameters.associationParam.Value`                   for *Parameter Value*.                 Select `teamParam` from the *Parameter Name*  drop-down list and add the following expression as *Parameter Value* :                   `=ReportItem.Text`This setup means that on every report call the value of the __associationParam__ will be preserved and                   the __teamParam__ value will be set from the textbox that initiated the action.                 
+   + Select `associationParam` from the *Parameter Name* drop-down list and choose `=Parameters.associationParam.Value`                   for *Parameter Value*.                 Select `teamParam` from the *Parameter Name* drop-down list and add the following expression as *Parameter Value* :                   `=ReportItem.Text`This setup means that on every report call the value of the __associationParam__ will be preserved and                   the __teamParam__ value will be set from the textbox that initiated the action.                 
 
    + To make the currently selected crosstab row more distinctive, we can apply a conditional formatting to it.                   Select the whole row, clicking on its header. This will select its three cells. Add new conditional formatting rule and set                   its expression to `=Fields.Team` and its value to `=Parameters.teamParam.Value`.                   Set an appropriate color as a style background to denote the selected state of the row.                 
 
@@ -171,7 +171,7 @@ Id,Name
 
    + Select __medalsData__ as a Graph's data source.                 
 
-   + On the next page select the __Medal__ field and drag it to the *Series*  box.                 Select the __Count__ field and drag it to *Values*  box, where it will be transformed to                   __Sum(Count)__.                 Click __Finish__ when you are ready.                 
+   + On the next page select the __Medal__ field and drag it to the *Series* box.                 Select the __Count__ field and drag it to *Values* box, where it will be transformed to                   __Sum(Count)__.                 Click __Finish__ when you are ready.                 
 
    + Since the graph's purpose is to show the currently selected team's medals, you have to apply filtering by __Team__                 to it: `=Fields.Team = =Parameters.teamParam.Value`
 

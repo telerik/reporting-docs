@@ -12,7 +12,7 @@ position: 0
 
 
 
-In Telerik Reporting, the export formats take predefined parameters called *device information settings*  that are used to configure a rendering extension.
+In Telerik Reporting, the export formats take predefined parameters called *device information settings* that are used to configure a rendering extension.
 
 You can specify device information settings in a variety of ways.         Firstly, you can specify application-wide settings using the ```<Telerik.Reporting>``` configuration section. For more         information about specifying rendering parameters globally, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).       
 

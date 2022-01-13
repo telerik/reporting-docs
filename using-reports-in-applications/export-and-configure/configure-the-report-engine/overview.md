@@ -14,7 +14,7 @@ position: 0
 
 There are particular settings that can be applied to the Telerik Reporting engine          to influence its behavior or extend it. These are defined in the application's configuration file.         For __Windows and WPF applications__ the configuration file is called __app.config__ and for         __ASP.NET applications__ – __web.config__.         This configuration file is XML-based and its content is divided into sections.       
 
-__.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named         __appSettings.json__.         For __.NET Core console applications__ both configuration types are supported,         but __appSettings.json__ has precedence over __app.config__.         __ASP.NET Core applications__ no longer use *web.config*  so the configuration should be set to any of the supported          [key-value based files](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2).       
+__.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named         __appSettings.json__.         For __.NET Core console applications__ both configuration types are supported,         but __appSettings.json__ has precedence over __app.config__.         __ASP.NET Core applications__ no longer use *web.config* so the configuration should be set to any of the supported          [key-value based files](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2).       
 
 > For more information about configuring a.NET application, see            [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/).         
 

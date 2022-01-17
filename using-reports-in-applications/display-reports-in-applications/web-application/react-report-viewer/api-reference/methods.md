@@ -44,19 +44,7 @@ The following table lists the available methods:
 | __pageCount(): number__ |Gets the total page count of viewer’s currently displayed report. __Returns__ : number.|
 | __currentPage(): number__ |Gets the viewer’s current page that is displayed. __Returns__ : number.|
 | __setAuthenticationToken(token: string)__ |Sets the authentication token. __Parameters__ : token: string __Returns__ : the current ReportViewer object.|
-| __getAccessibilityKeyMap(): JSON__ |Gets the shortcut keys used when the report viewer is in accessible mode (has its enableAccessibility set to true. The keys in the map are listed below:|
-
- Key | Default Value | Description |
-| ------ | ------ | ------ |
-|CONFIRM_KEY|13 *('enter')* |Key for triggering the actions in the report content and previewing the report from the __Preview__ button in parameters area, if available.|
-|MENU_AREA_KEY|77 *('m')* |Key for moving the focus to the menu area, if visible.|
-|CONTENT_AREA_KEY|67 *('c')* |Key for moving the focus to the report content area, if visible.|
-|PARAMETERS_AREA_KEY|80 *('p')* |Key for moving the focus to the parameters area, if visible.|
-|DOCUMENT_MAP_AREA_KEY|68 *('d')* |Key for moving the focus to the document map area, if visible.
-
-|   |   |
-| ------ | ------ |
-|
+| __getAccessibilityKeyMap(): JSON__ |Gets the shortcut keys used when the report viewer is in accessible mode (has its enableAccessibility set to true. The keys in the map are listed below:<br/><table><thead><tr><th>Key</th><th>Default Value</th><th>Description</th></tr></thead><tbody><tr><td>CONFIRM_KEY</td><td>13 <em>('enter')</em></td><td>Key for triggering the actions in the report content and previewing the report from the <strong>Preview</strong> button in parameters area, if available.</td></tr><tr><td>MENU_AREA_KEY</td><td>77 <em>('m')</em></td><td>Key for moving the focus to the menu area, if visible.</td></tr><tr><td>CONTENT_AREA_KEY</td><td>67 <em>('c')</em></td><td>Key for moving the focus to the report content area, if visible.</td></tr><tr><td>PARAMETERS_AREA_KEY</td><td>80 <em>('p')</em></td><td>Key for moving the focus to the parameters area, if visible.</td></tr><tr><td>DOCUMENT_MAP_AREA_KEY</td><td>68 <em>('d')</em></td><td>Key for moving the focus to the document map area, if visible.</td></tr></tbody></table> |
 | __setAccessibilityKeyMap(keyMap: JSON)__ |Sets the shortcut keys used when the report viewer is in accessible mode. It is recommended to set the new key map when the report rendering is complete, because the accessibility routines require the report viewer template to be loaded. __Parameters__ : keyMap: JSON|
 | __dispose()__ |Stops sending keep alive requests to the server, if keep client alive was enabled.|
 

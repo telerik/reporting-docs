@@ -32,9 +32,19 @@ POSTPONED
 relative links with {%slug ...%} don't work for KB articles - "...\designing-reports\converting-reports-from-other-reporting-solutions\overview.md"
 ----actually works with the correct slug taken from the KB meta data. Needs to be replaced manually.
 
+
+
+Nested tables are not supported directly. The nested ones should be rendered in html and the generated HTML put inside the MD table without new lines. Example in 
+http://localhost:1589/reporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/options
+
+
+
 how to pass the real tokes to _config.yml - manual edit
 
+
+
 how to use tokens in code snippets (CDATA) - manually replace tokens "{{site.kendosubsetversion}}" and "{{site.buildversion}}" in MDs snippets
+
 
 
 

@@ -16,6 +16,7 @@ Custom parameter editors are defined through the **parameterEditors**  array pas
 
 
 ## Setting the Custom Parameter Editor
+
 The following example illustrates how to use the [Kendo DateTimePicker](https://demos.telerik.com/kendo-ui/datetimepicker/index) widget for a DateTime parameter:
 
 1. Each editor is an object which contains two methods: match and createEditor.
@@ -26,36 +27,34 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
    }
    
    function createEditor(placeholder, options) {
-   
-     var dateTimePicker = $(placeholder).html('<input type="datetime"/>'),
-     parameter,
-     valueChangedCallback = options.parameterChanged,
-     dropDownList;
-   
-   function onChange() {
-     var val = dropDownList.value();
-     valueChangedCallback(parameter, val);
+      var dateTimePicker = $(placeholder).html('<input type="datetime"/>'),
+      parameter,
+      valueChangedCallback = options.parameterChanged,
+      dropDownList;
+      
+      function onChange() {
+        var val = dropDownList.value();
+        valueChangedCallback(parameter, val);
+      }
+      
+      return {
+        beginEdit: function (param) {
+      
+            parameter = param;
+      
+            $(dateTimePicker).find("input").kendoDateTimePicker({
+                dataTextField: "name",
+                dataValueField: "value",
+                value: parameter.value,
+                dataSource: parameter.availableValues,
+                change: onChange
+            });
+      
+            dropDownList = $(dateTimePicker).find("input").data("kendoDateTimePicker");
+        }
+      };
    }
-   
-   return {
-     beginEdit: function (param) {
-   
-         parameter = param;
-   
-         $(dateTimePicker).find("input").kendoDateTimePicker({
-             dataTextField: "name",
-             dataValueField: "value",
-             value: parameter.value,
-             dataSource: parameter.availableValues,
-             change: onChange
-         });
-   
-         dropDownList = $(dateTimePicker).find("input").data("kendoDateTimePicker");
-     }
-   };
-   }
-
-   ````
+````
 
 1. The viewer is using a special Kendo subset that contains only the required widgets and the Kendo DateTimePicker widget is not part of the subset.
 For that reason, we need to load the Kendo All script. Note that currently we need to use this special logic for loading the viewer to the fact that jQuery has
@@ -71,37 +70,37 @@ to be loaded before Kendo All:
      script.onload = callback;
      document.body.appendChild(script);
    }
-   
+      
    class App2 extends Component {
-     componentDidMount() {
-       loadScript(() => {
-         this.setState({ visible: true });
-       });
-     }
-   
-     render() {
-       return this.state?.visible ? (<div>
-         <TelerikReportViewer
-           ref={el => viewer = el}     
-           reportSource={{
-             report: 'MyReport.trdp',
-             parameters: {}
-           }}
-           parameterEditors={{
-             match: match,
-             createEditor: createEditor
-           }} />
-   
-       </div>) : null;
-     }
+        componentDidMount() {
+          loadScript(() => {
+            this.setState({ visible: true });
+          });
+        }
+      
+        render() {
+          return this.state?.visible ? (<div>
+            <TelerikReportViewer
+              ref={el => viewer = el}     
+              reportSource={{
+                report: 'MyReport.trdp',
+                parameters: {}
+              }}
+              parameterEditors={{
+                match: match,
+                createEditor: createEditor
+              }} />
+      
+          </div>) : null;
+        }
    }
-   
-       ReactDOM.render(
-         <App2/>,
-         document.getElementById('root')
-       );
-   
-   ````
+      
+   ReactDOM.render(
+     <App2/>,
+     document.getElementById('root')
+   );   
+````
+
 
 
 ## See Also

@@ -10,35 +10,33 @@ position: 0
 
 # React Report Viewer Overview
 
-
-
 You can integrate the React Report Viewer component in your React applications. Notethat the viewer is introduced in R1 2022.       
 
-The React component is built on top of the         [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is the base for all Web-technologies report viewers as well.       
+The React component is built on top of the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is the base for all Web-technologies report viewers as well. 
 
 ## Requirements
 
-To successfully integrate the React Report Viewer component, ensure the following:         
+To successfully integrate the React Report Viewer component, ensure the following: 
 
-1. Required Application Version:             
+1. Required Application Version: 
 
-   + React 17.0.2+ application                 
+   + React 17.0.2+ application 
 
-1. Required Service:             
+1. Required Service: 
 
-   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})                   in order to display reports. Make sure to                    [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api)  in the REST Service project.                 
+   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api)  in the REST Service project. 
 
 1. Required JavaScript libraries:
 
    +  [jQuery 3.2.1+](https://jquery.com/download/) 
 
-1. The                [React Report Viewer package](https://www.npmjs.com/package/@progress/telerik-react-report-viewer)                requires the following peer dependencies:             
+1. The [React Report Viewer package](https://www.npmjs.com/package/@progress/telerik-react-report-viewer) requires the following peer dependencies:             
 
-   + react-dom 17.0.2+                  
+   + react-dom 17.0.2+ 
 
-   + react-scripts 4.0.3+                 
+   + react-scripts 4.0.3+ 
 
-   + jquery                 
+   + jquery 
 
 1. Required references to Telerik Kendo UI styles:
 
@@ -48,16 +46,11 @@ To successfully integrate the React Report Viewer component, ensure the followin
 
 ## Browser Support
 
-The React viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}),           thus the client browser should conform to the HTML5 Report Viewer [Browser Support](143e5c03-e69d-416f-9ac0-85c397b22b8e#browser-support).         
-
+The React viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), thus the client browser should conform to the HTML5 Report Viewer [Browser Support](%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support#browser-support%}). 
 
 # See Also
 
- 
-
 * [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%})
-
- 
 
 * [How to Use React Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-report-server%})
 

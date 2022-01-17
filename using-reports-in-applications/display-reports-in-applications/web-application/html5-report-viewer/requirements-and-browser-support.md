@@ -46,7 +46,7 @@ position: 1
 
     
       ````XML
-<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise" /script>
 ````
 
 If you want to make sure that there are no Internet connection problems and the CDN service cannot be               reached for some reason, download the content of the JavaScript file               (open   [https://cdn.polyfill.io/v2/polyfill.min.js](https://cdn.polyfill.io/v2/polyfill.min.js)                 in the browser that does not support promise natively, for example, IE) and serve it as a local JS file.              

@@ -113,10 +113,10 @@ namespace CSharp.MvcDemo.Controllers
     <div id="webReportDesigner">
         loading...
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /js/kendo.all.min.js"></script>
-    <script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
-    <script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
+    <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js" /script>
+    <script src="/api/reportdesigner/resources/js/telerikReportViewer" /script>
+    <script src="/api/reportdesigner/designerresources/js/webReportDesigner" /script>
     <script type="text/javascript">
         $(document).ready(function () {
             $("#webReportDesigner").telerik_WebReportDesigner({

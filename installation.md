@@ -10,8 +10,6 @@ position: 3
 
 # Installation
 
-
-
 Telerik Reporting supports several approaches for installing the product.       
 
 *  [Downloading Telerik Control Panel](http://www.telerik.com/blogs/optimizing-use-of-the-telerik-control-panel) − To download and install the Control Panel, log into your[Telerik account](https://www.telerik.com/account/). Telerik Control Panel uses the product MSI file.           
@@ -24,7 +22,7 @@ Telerik Reporting supports several approaches for installing the product.
 
 ## Prerequisites
 
-*  [System requirements](http://www.telerik.com/products/reporting/system-requirements) 
+Please, check our [System requirements](http://www.telerik.com/products/reporting/system-requirements). 
 
 ## Using the MSI Installer
 
@@ -32,7 +30,7 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. Log into your [Telerik account](https://www.telerik.com/account).             
 
-1. Click the __Downloads__  tab to view the available trial and commercial products.             
+1. Click the __Downloads__ tab to view the available trial and commercial products.             
 
 1. Select the __Telerik Reporting__  product.             
 
@@ -40,15 +38,15 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. Download the automatic installation MSI file.
 
-1. When the download completes, run ` Telerik_Reporting_[suiteversion].msi ` and follow the instructions of the Wizzard.             
+1. When the download completes, run `Telerik_Reporting_[suiteversion].msi` and follow the instructions of the Wizzard.             
 
 To access internal builds:         
 
 1. Log into your [Telerik account](https://www.telerik.com/account).             
 
-1. For the latest internal builds, navigate to __Latest Internal Build__  under __Downloads__. For internal builds from earlier releases, select the respective Telerik Reporting version.             
+1. For the latest internal builds, navigate to __Latest Internal Build__ under __Downloads__. For internal builds from earlier releases, select the respective Telerik Reporting version.             
 
->note The  __Downloads__  page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [__General Feedback__](https://www.telerik.com/account/support-tickets/general-feedback)  thread.           
+>note The __Downloads__ page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [__General Feedback__](https://www.telerik.com/account/support-tickets/general-feedback) thread.           
 
 
 ## Installing Telerik Reporting
@@ -69,9 +67,9 @@ To access internal builds:
 
   ![](images/installWizard2.png)
 
-1. (Applicable only if __Examples Setup__  was selected) In the __Setup Wizard__  dialog, select your __Database Server__  and the authentication for the connection. The Wizard detects all running instances and lists them in the input field.             
+1. (Applicable only if __Examples Setup__ was selected) In the __Setup Wizard__ dialog, select your __Database Server__ and the authentication for the connection. The Wizard detects all running instances and lists them in the input field. 
 
-   >note To enable the Wizard to detect all running SQL Server instances, run the [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx).                 
+   >note To enable the Wizard to detect all running SQL Server instances, run the [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx). 
 
   ![](images/installWizard3.png)
 
@@ -95,10 +93,10 @@ The assemblies targeting different versions of.NET are placed in separate folder
 
 *.NET 6 - *\Bin\net6.0*  and *\Bin\net6.0-windows* 
 
->important Since.NET 6 is currently available as a Preview, compiling a.NET 6 application requires installing the latest [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)  and using [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/), or allowing to use the previews of the.NET SDK in the  __Tools/Environment/Preview Features__  in Visual Studio 2019.           
+>important Since.NET 6 is currently available as a Preview, compiling a.NET 6 application requires installing the latest [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)  and using [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/), or allowing to use the previews of the.NET SDK in the __Tools/Environment/Preview Features__ in Visual Studio 2019. 
 
 
-The following tables describe the folder structure for the redistributable assemblies.         
+The following tables describe the folder structure for the redistributable assemblies. 
 
 
 | Directory | Description |

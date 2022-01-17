@@ -14,51 +14,13 @@ msbuild /p:LatestBinariesPath="D:\Work\MdDocs\Examples\CSharp\.NET Framework\Htm
 REMAINING:
 
 
-how to use tokens in code snippets (CDATA) - manually
-
-
-
-add URL redirects to web.config in reporting-docs. Пример от WPF -  https://github.com/telerik/xaml-docs/blob/master/web.config
-https://stackoverflow.com/questions/34389866/rewrite-rules-in-separate-config-file - create redirect.config that is referenced in the web.config.
-WPF and WinForms use <add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule, Intelligencia.UrlRewriter" />
-
-
-images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	https://testdocs.telerik.com/reporting/designing-reports/report-structure/graph/chart-types/overview
-used only in 1 file - do it manually:
-https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/55523035 - doesn't work
-
-
-
 
 
 Feedback:
-
-seems like the other paragraphs in the generated MD file   -	There are missing paragraphs in page sections consisting only of bullet lists. Thus, the 20px font size style is not applied and the text looks small. For example you can check the Prerequisites section here - https://reportinghost:446/reporting/installation
-
-
-
-
-
-
-
-
-
-
 file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-sources-viewers.aml - links to sections at the end of the article (go to section link) not working
 http://arabadzhiev:1589/reporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers
 correct section links
 
-http://arabadzhiev:1589/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard:
-second VB code snippet not full. I suspect this is due to character '<' that starts on the next line: '<System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>'
-
-
-
-Tool for code snippets - change for Reporting:
-CodeMainPathCS = pathToSourceCodeFiles + @"\SamplesCS\";
-CodeMainPathVB = pathToSourceCodeFiles + @"\SamplesVB\";
-...
-string workspaceName = "WinForms_Scrum";
-string projectPath = @"$/WinForms_Scrum/Development/Help";
 
 
 
@@ -71,6 +33,9 @@ relative links with {%slug ...%} don't work for KB articles - "...\designing-rep
 ----actually works with the correct slug taken from the KB meta data. Needs to be replaced manually.
 
 how to pass the real tokes to _config.yml - manual edit
+
+how to use tokens in code snippets (CDATA) - manually replace tokens "{{site.kendosubsetversion}}" and "{{site.buildversion}}" in MDs snippets
+
 
 
 Tabbed code snippets (C#+VB) in lists:
@@ -177,6 +142,19 @@ Tabbed code snippets (C#+VB) in lists:
 			````
 		...
 
+
+
+Tool for code snippets - change for Reporting:
+CodeMainPathCS = pathToSourceCodeFiles + @"\SamplesCS\";
+CodeMainPathVB = pathToSourceCodeFiles + @"\SamplesVB\";
+...
+string workspaceName = "WinForms_Scrum";
+string projectPath = @"$/WinForms_Scrum/Development/Help";
+
+
+
+seems like the other paragraphs in the generated MD file   -	There are missing paragraphs in page sections consisting only of bullet lists. Thus, the 20px font size style is not applied and the text looks small. For example you can check the Prerequisites section here - https://reportinghost:446/reporting/installation
+!!!eplaced the list with a regular sentence as it is not relevant to have a list with single item.
 
 
 
@@ -494,3 +472,19 @@ API REFEFENCE не излиза в началото а само като пре�
 <DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Silverlight.dll" xmlns="" />
 <DocumentationSource sourceFile="Bin\Telerik.ReportViewer.Silverlight.xml" xmlns="" />
 </DocumentationSources>
+
+
+add URL redirects to web.config in reporting-docs. Пример от WPF -  https://github.com/telerik/xaml-docs/blob/master/web.config
+https://stackoverflow.com/questions/34389866/rewrite-rules-in-separate-config-file - create redirect.config that is referenced in the web.config.
+WPF and WinForms use <add name="UrlRewriter" type="Intelligencia.UrlRewriter.RewriterHttpModule, Intelligencia.UrlRewriter" />
+
+
+http://arabadzhiev:1589/reporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/objectdatasource-wizard:
+second VB code snippet not full. I suspect this is due to character '<' that starts on the next line: '<System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>'
+!!!fixed
+
+
+images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	https://testdocs.telerik.com/reporting/designing-reports/report-structure/graph/chart-types/overview
+used only in 1 file - do it manually:
+https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/55523035 - doesn't work
+!!!Replaced the checkmark images with code '&#x2713;'

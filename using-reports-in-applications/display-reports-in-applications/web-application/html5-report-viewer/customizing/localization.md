@@ -187,7 +187,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
     
       ````html
-<script src="resources.fr-BE.js"></script>
+<script src="resources.fr-BE.js" /script>
 ````
 
    >The localization file must be loaded on the page before viewer's script (i.e. *telerikReportViewer.js*) and after jQuery script.

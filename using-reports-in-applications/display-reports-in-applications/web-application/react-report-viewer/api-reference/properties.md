@@ -10,16 +10,13 @@ position: 3
 
 # Properties
 
-
-
 The report viewer exposes various commands via the commands property.
 
 ## Commands
 
 The __commands__ collection contains:         
 
-Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the           __exec()__ method being the one that actually triggers the command. The other two methods,           __enabled()__ and __checked()__ return a bool value and can be used           prior to executing a command or to find in what state the UI for the command should be.         
-
+Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the __exec()__ method being the one that actually triggers the command. The other two methods, __enabled()__ and __checked()__ return a bool value and can be used prior to executing a command or to find in what state the UI for the command should be. 
     
 ````JavaScript
 let viewer;
@@ -31,9 +28,9 @@ ReactDOM.render(
       <button onClick={ () => viewer.commands.print.exec() }>Print</button>
 ````
 
-The example above creates a Print button and in the click event           handler invokes report viewer __print__ command. Note that the __exec()__ method of the command needs to be           called. For more information please check the [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) article.         
+The example above creates a Print button and in the click event handler invokes report viewer __print__ command. Note that the __exec()__ method of the command needs to be called. For more information please check the [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) article. 
 
-The following table is a list of all commands:         
+The following table is a list of all commands: 
 
 | Command name | Parameters | Description |
 | ------ | ------ | ------ |

@@ -65,7 +65,7 @@ End Sub
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Telerik HTML5 Web Forms Report Viewer Form</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
     <style>
         #reportViewer1 {
             position: absolute;
@@ -136,7 +136,7 @@ $('#invoiceId').change(function () {
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Telerik HTML5 Web Forms Report Viewer Form</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
     <style>
         #reportViewer1 {
             position: absolute;

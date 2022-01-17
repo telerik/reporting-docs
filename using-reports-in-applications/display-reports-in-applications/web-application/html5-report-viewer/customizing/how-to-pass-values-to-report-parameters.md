@@ -31,11 +31,11 @@ To give an example we will use the Invoice report from our examples and will upd
 <head>
     <title>Telerik HTML5 Report Viewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
     <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
     <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
-    <script src="/ReportViewer/js/telerikReportViewer.kendo- {{site.buildversion}}.min.js"></script>
-    <script src="/ReportViewer/js/telerikReportViewer- {{site.buildversion}}.min.js"></script>
+    <script src="/ReportViewer/js/telerikReportViewer.kendo-16.0.22.119.min.js" /script>
+    <script src="/ReportViewer/js/telerikReportViewer-16.0.22.119.min.js" /script>
     <style>
         #reportViewer1 {
             position: absolute;
@@ -116,11 +116,11 @@ $('#invoiceId').change(function () {
 <head>
     <title>Telerik HTML5 Report Viewer Demo With Custom Parameter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link href="https://kendo.cdn.telerik.com/ {{site.kendosubsetversion}} /styles/kendo.common.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
+    <link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.common.min.css" rel="stylesheet" />
     <link href="https://kendo.cdn.telerik.com/token>kendosubsetversion</token>/styles/kendo.blueopal.min.css" rel="stylesheet" />
-    <script src="/ReportViewer/js/telerikReportViewer.kendo.<token>buildversion</token>.min.js"></script>
-    <script src="ReportViewer/js/telerikReportViewer- {{site.buildversion}}.min.js"></script>
+    <script src="/ReportViewer/js/telerikReportViewer.kendo.<token>buildversion</token>.min.js" /script>
+    <script src="ReportViewer/js/telerikReportViewer-16.0.22.119.min.js" /script>
     <style>
         #reportViewer1 {
             position: absolute;

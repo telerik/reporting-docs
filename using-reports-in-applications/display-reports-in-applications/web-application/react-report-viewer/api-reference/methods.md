@@ -10,10 +10,7 @@ position: 2
 
 # Methods
 
-
-
-Each method can be called using a reference to the report viewer component.         
-
+Each method can be called using a reference to the report viewer component. 
     
 ````JavaScript
 let viewer;
@@ -28,9 +25,9 @@ ReactDOM.render(
 );
 ````
 
-The example above refreshes the report viewer.         
+The example above refreshes the report viewer. 
 
-The following table lists the available methods:         
+The following table lists the available methods: 
 
 |  __Method__ |  __Description__ |
 | ------ | ------ |
@@ -43,7 +40,7 @@ The following table lists the available methods:
 | __setScale(scale: any)__ |Sets the scale factor and scale mode. __Parameters__ : scale; scale is an object with the following properties:<br/>* scale: number<br/>* scaleMode: string __Returns__ : the current ReportViewer object.|
 | __getPageMode(): string__ |Gets the viewer’s page mode. __Returns__ : string.|
 | __setPageMode(psm: string)__ |Sets the page mode and automatically reloads the current report (if any) into the new view. __Parameters__ : psm: string. __Returns__ : the current ReportViewer object.|
-| __clearReportSource()__ |Clears the current reportSource from the viewer internal state and from its persisted session in the browser.                 Called in order to force the viewer to respect the newly set reportSource on the next postback.|
+| __clearReportSource()__ |Clears the current reportSource from the viewer internal state and from its persisted session in the browser. Called in order to force the viewer to respect the newly set reportSource on the next postback.|
 | __pageCount(): number__ |Gets the total page count of viewer’s currently displayed report. __Returns__ : number.|
 | __currentPage(): number__ |Gets the viewer’s current page that is displayed. __Returns__ : number.|
 | __setAuthenticationToken(token: string)__ |Sets the authentication token. __Parameters__ : token: string __Returns__ : the current ReportViewer object.|
@@ -60,6 +57,6 @@ The following table lists the available methods:
 |   |   |
 | ------ | ------ |
 |
-| __setAccessibilityKeyMap(keyMap: JSON)__ |Sets the shortcut keys used when the report viewer is in accessible mode.                 It is recommended to set the new key map when the report rendering is complete,                 because the accessibility routines require the report viewer template to be loaded. __Parameters__ : keyMap: JSON|
+| __setAccessibilityKeyMap(keyMap: JSON)__ |Sets the shortcut keys used when the report viewer is in accessible mode. It is recommended to set the new key map when the report rendering is complete, because the accessibility routines require the report viewer template to be loaded. __Parameters__ : keyMap: JSON|
 | __dispose()__ |Stops sending keep alive requests to the server, if keep client alive was enabled.|
 

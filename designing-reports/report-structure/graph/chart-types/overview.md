@@ -22,16 +22,16 @@ Examples of many of these types of charts are available as sample reports in the
 
 | Chart type | Display ratio data | Display stock data | Display linear data | Display multi-value data |
 | ------ | ------ | ------ | ------ | ------ |
-| [Bar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})|||[x]||
-| [Line Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview%})|||[x]||
-| [Area Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview%})|||[x]||
-| [Column Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})|||[x]||
-| [Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})|[x]||||
-| [Doughnut Charts](9ed47840-c3ab-48c8-9845-f43066ba981e#choosing-a-chart-type)|[x]||||
-| [Polar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview%})|[x]||||
-| [Range Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%})|||[x]|[x]|
-| [Scatter Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|[x]||[x]||
-| [Bubble Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|[x]||[x]||
-| [Sparklines]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines%})|[x]|[x]|[x]|[x]|
-| [OHLC Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})||[x]|[x]|[x]|
+| [Bar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})|||&#x2713;||
+| [Line Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview%})|||&#x2713;||
+| [Area Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview%})|||&#x2713;||
+| [Column Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})|||&#x2713;||
+| [Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})|&#x2713;||||
+| [Doughnut Charts](9ed47840-c3ab-48c8-9845-f43066ba981e#choosing-a-chart-type)|&#x2713;||||
+| [Polar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview%})|&#x2713;||||
+| [Range Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%})|||&#x2713;|&#x2713;|
+| [Scatter Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|&#x2713;||&#x2713;||
+| [Bubble Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|&#x2713;||&#x2713;||
+| [Sparklines]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines%})|&#x2713;|&#x2713;|&#x2713;|&#x2713;|
+| [OHLC Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})||&#x2713;|&#x2713;|&#x2713;|
 

@@ -9,13 +9,35 @@ position: 0
 ---
 
 # Custom Report Viewer Template
+The React Report Viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and it uses the same [styling](%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%}) mechanism.
+
+# Adding Custom Report Viewer Template
+
+1. The [template of the viewer](%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}) can be found in the installation folder of Telerik Reporting:
+C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Html5\ReportViewer\templates
+
+1. Copy the file to your React application or REST service project, depending on your preferences.
+
+1. Make the requred changes in the file.
+
+1. Set the **templateUrl** property of the viewer:
+
+   ````js
+ <TelerikReportViewer
+        ref={el => viewer = el}     
+        templateUrl="telerikReportViewerTemplate-VERSION.html/"
+        reportSource={{
+          report: 'MyReport.trdp',
+          parameters: {}
+        }}
+        >
+````
 
 
+## See Also
 
-Required introduction
+* [Templates Overview](%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%})
 
-## Optional section title
+* [Templates Strucure](%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure%})
 
-Add one or more sections with content
-
-
+* [Providing Custom Templates](%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates%})

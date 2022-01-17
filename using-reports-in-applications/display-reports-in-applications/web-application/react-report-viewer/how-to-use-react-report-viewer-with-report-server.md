@@ -16,7 +16,7 @@ This tutorial demonstrates how to add the React Report Viewer component to a new
 
 The following list describes the prerequisites for this tutorial: 
 
-* Review the React Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview#Requirements%}). 
+* Review the React Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}#requirements). 
 
 * A running intance of the [Telerik Report Server](https://docs.telerik.com/report-server/introduction). 
 

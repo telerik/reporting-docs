@@ -10,14 +10,11 @@ position: 3
 
 # Event Binding
 
-
-
-The Angular Report Viewer exposes these [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})         as input properties of the viewer component.       
+The Angular Report Viewer exposes these [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}) as input properties of the viewer component. 
 
 ## Bind to a report viewer event
 
-To attach an event handler to the viewer, specify the name of your function when binding the corresponding input property           of the viewer component. For example, we can attach to the __ready__ and           __viewerToolTipOpening__ events of the viewer:         
-
+To attach an event handler to the viewer, specify the name of your function when binding the corresponding input property of the viewer component. For example, we can attach to the __ready__ and __viewerToolTipOpening__ events of the viewer: 
     
 ````HTML
 <tr-viewer
@@ -27,8 +24,7 @@ To attach an event handler to the viewer, specify the name of your function when
 </tr-viewer>
 ````
 
-Then we create the event handler functions in the component where the viewer is used:         
-
+Then we create the event handler functions in the component where the viewer is used: 
     
 ````js
 export class AppComponent {

@@ -16,10 +16,7 @@ REMAINING:
 
 
 
-Feedback:
-file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-sources-viewers.aml - links to sections at the end of the article (go to section link) not working
-http://arabadzhiev:1589/reporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers
-correct section links
+
 
 
 
@@ -36,6 +33,14 @@ relative links with {%slug ...%} don't work for KB articles - "...\designing-rep
 
 Nested tables are not supported directly. The nested ones should be rendered in html and the generated HTML put inside the MD table without new lines. Example in 
 http://localhost:1589/reporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/options
+
+
+
+Feedback:
+file:///D:/Work/2018/Hotfix/Documentation/Help/Content/report-sources-viewers.aml - links to sections at the end of the article (go to section link) not working
+http://arabadzhiev:1589/reporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers
+correct section links
+Links to article sections must be edited manually. The # should be added after slug: "{%slug ...%}"#referenceHere
 
 
 

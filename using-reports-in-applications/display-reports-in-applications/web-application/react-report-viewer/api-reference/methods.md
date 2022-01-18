@@ -33,11 +33,11 @@ The following table lists the available methods:
 | ------ | ------ |
 | __refreshReport()__ |Reloads/refreshes the current report. <br/>__Returns__ : the current ReportViewer object.|
 | __getReportSource(): any__ |Gets the current ReportSource - report and parameters. <br/>__Returns__ : object with properties: <ul><li>report: string</li><li>parameters: JSON</li></ul>|
-| __setReportSource(rs: JSON)__ |Sets the report source - report and parameters. Automatically reloads the report (if any) into the view. <br/>__Parameters__ : rs; rs is an object with the following properties: <ul><li>report: string</li><li>parameters: JSON</li></ul> <br/>__Returns__ : the current ReportViewer object.|
+| __setReportSource(rs: JSON)__ |Sets the report source - report and parameters. Automatically reloads the report (if any) into the view. <br/>__Parameters__ : rs; rs is an object with the following properties: <ul><li>report: string</li><li>parameters: JSON</li></ul>__Returns__ : the current ReportViewer object.|
 | __getViewMode(): string__ |Gets the current view mode. <br/>__Returns__ : string.|
 | __setViewMode(vm: string)__ |Sets the view mode and automatically reloads the current report (if any) into the new view. <br/>__Parameters__ : vm: string <br/>__Returns__ : the current ReportViewer object.|
 | __getScale(): any__ |Gets the viewer’s scale factor and scale mode. <br/>__Returns__ : object with properties: <ul><li>scale: number</li><li>scaleMode: string</li></ul>|
-| __setScale(scale: any)__ |Sets the scale factor and scale mode. <br/>__Parameters__ : scale; scale is an object with the following properties: <ul><li>scale: number</li><li>scaleMode: string</li></ul> <br/>__Returns__ : the current ReportViewer object.|
+| __setScale(scale: any)__ |Sets the scale factor and scale mode. <br/>__Parameters__ : scale; scale is an object with the following properties: <ul><li>scale: number</li><li>scaleMode: string</li></ul>__Returns__ : the current ReportViewer object.|
 | __getPageMode(): string__ |Gets the viewer’s page mode. <br/>__Returns__ : string.|
 | __setPageMode(psm: string)__ |Sets the page mode and automatically reloads the current report (if any) into the new view. <br/>__Parameters__ : psm: string. <br/>__Returns__ : the current ReportViewer object.|
 | __clearReportSource()__ |Clears the current reportSource from the viewer internal state and from its persisted session in the browser. Called in order to force the viewer to respect the newly set reportSource on the next postback.|

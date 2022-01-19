@@ -14,6 +14,7 @@ position: 5
 
 Represents a report parameter with its value and settings.           
 
+
     
           {
             ‘name’: ‘p2’,
@@ -35,6 +36,7 @@ Represents a report parameter with its value and settings.
             ‘label’: ‘Sofia’,
           }
         
+
 
 >caption Fields
 

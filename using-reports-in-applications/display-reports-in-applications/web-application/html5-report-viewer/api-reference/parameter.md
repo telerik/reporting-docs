@@ -10,9 +10,8 @@ position: 4
 
 # parameter
 
-
-
 ## parameter
+
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
@@ -29,5 +28,4 @@ position: 4
 | __text__ |string|specifies the text for the parameter editor|
 | __type__ | __telerikReportViewer.ParameterTypes__ |specifies the type of the parameter|
 | __value__ |object|specifies the value of the parameter|
-
 

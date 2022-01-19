@@ -10,13 +10,12 @@ position: 4
 
 # ParameterTypes
 
-
-
 ## telerikReportViewer.ParameterTypes
 
-|   |   |
-| ------ | ------ |
- Member name |
+
+|   |
+| ------ |
+| Member name |
 | ------ |
 |INTEGER|
 |FLOAT|

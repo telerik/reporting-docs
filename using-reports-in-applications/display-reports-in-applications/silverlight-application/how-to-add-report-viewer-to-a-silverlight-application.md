@@ -14,6 +14,7 @@ position: 1
 
 This article explains the steps needed to create an application which uses the Silverlight report viewer.       
 
+
 1. First you need to create a Silverlight project. Once you do, add references to the following NoXaml assemblies in your Silverlight project:             
 
    + Telerik.ReportViewer.Silverlight.dll  (located in C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Bin)                 
@@ -99,6 +100,7 @@ This article explains the steps needed to create an application which uses the S
 
 
 # See Also
+
 
  
 

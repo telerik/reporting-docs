@@ -16,6 +16,7 @@ This article explains the specific PDF417 code settings.
 
 > Depending on the mode and error correction levels, any invalid characters, entered by the user, as well            as any characters, which surpass the maximum number of symbols, which can be accommodated, will be discarded. 
 
+
 ## Encoding Mode
 
 This is an enumeration, which determines the types of symbols, which will be accepted by the barcode, as well as                 the algorithm by which they will be encoded internally. The enumeration has the following values:             

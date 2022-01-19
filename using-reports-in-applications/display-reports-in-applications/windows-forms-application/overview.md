@@ -16,6 +16,7 @@ The Windows Forms Report Viewer is designed to render Telerik __Reports__ within
 
   ![](images/WinFormsViewer.png)
 
+
 The toolbar on the Windows Forms Report Viewer provides basic functionality for interacting with the currently-loaded report:
 
 * Navigate back in history
@@ -54,11 +55,13 @@ The toolbar on the Windows Forms Report Viewer provides basic functionality for 
 
 >.NET Framework  __Client Profile__ is not supported.           
 
+
 ## How it works
 
 The Windows Forms ReportViewer control is a composite of standard Windows Forms controls.         
 
 > The Windows Forms ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer,             you can use the Windows Forms  [ReportViewer](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer).           
+
 
 The purpose of the Windows Forms ReportViewer control is to display Telerik Reports and allow the user to interact with them.           Reports are processed and rendered on the client machine. The report in the viewer is rendered through Telerik Reporting IMAGE rendering mechanism based on the           [Design Considerations for Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}).         
 
@@ -85,6 +88,7 @@ You can read more about writing DPI-aware desktop applications            [     
 
 The following table lists the keyboard and mouse commands used in Windows Forms Report Viewer. The commands use the CTRL key as modifier that changes the applied action.         
 
+
 | Mouse or key event | Action | Action with applied CTRL modifier |
 | ------ | ------ | ------ |
 |Mouse wheel|Scrolls up/down the document|Zooms in/out|
@@ -101,7 +105,9 @@ The following table lists the keyboard and mouse commands used in Windows Forms 
 |F|n/a|Opens the search dialog|
 
 
+
 # See Also
+
 
  
 

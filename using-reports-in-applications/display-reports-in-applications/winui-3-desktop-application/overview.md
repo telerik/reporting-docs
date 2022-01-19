@@ -16,6 +16,7 @@ The WinUI report viewer allows developers to deliver reports produced by Telerik
 
   ![winui-report-viewer](images/WinUIReportViewer/winui-report-viewer.png)
 
+
 The toolbar of the WPF report viewer provides basic functionality for interacting           with the currently loaded report:         
 
 * Navigate back in history
@@ -52,6 +53,7 @@ The toolbar of the WPF report viewer provides basic functionality for interacti
 
 The bottom panel of the WinUI report viewer contains a slider and drop-down list that control the current zoom level applied on the loaded report contents.         
 
+
 In order to use the WinUI report viewer, you need a WinUI 3 desktop application. In order to create such, you need the following tools installed:         
 
 * Visual Studio 2019 or Visual Studio 2022 with enabled Universal Windows Platform development.
@@ -84,6 +86,7 @@ The missing functionalities will be gradually added when possible, given that th
 
 
 # See Also
+
 
  
 

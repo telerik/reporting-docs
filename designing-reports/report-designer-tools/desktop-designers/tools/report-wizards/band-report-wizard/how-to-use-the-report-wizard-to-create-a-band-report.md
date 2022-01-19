@@ -28,6 +28,7 @@ To create a new report with this wizard:
 
    + Select the __Band Report Wizard__ option from the list and click __OK__.               
 
+
 * On the __Choose Data Source page__ of the               Report Wizard, select __Add New Data Source.__ 
 
 * The [DataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}) is started. Select the __[SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})__             icon and click the OK button.             

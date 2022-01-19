@@ -14,6 +14,7 @@ position: 8
 
 > The legacy https://nuget.telerik.com/nuget server will be deprecated. Make sure to switch to the new            https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client.         
 
+
 Telerik provides NuGet packages from private NuGet feed.          The article elaborates on how to add the Telerik NuGet feed to the Visual Studio NuGet package manager.        
 
 ## Prerequisites:
@@ -21,6 +22,7 @@ Telerik provides NuGet packages from private NuGet feed.          The article el
 * Visual Studio 2010 or newer.
 
 * Valid Telerik Reporting trial or paid license.
+
 
 ###Setup
 
@@ -69,6 +71,7 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/inde
 -UserName "your login email" -Password "your password"
 ````
 
+
     If you are unable to connect to the feed by using encrypted credentials,                    try the alternative approach of storing credentials in clear text.                 
 
     
@@ -78,6 +81,7 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/inde
 -StorePasswordInClearText
 ````
 
+
     If you have already stored a token instead of storing the credentials as clear text,                    you could update the definition in the %AppData%\NuGet\NuGet.config file using                    the following command:                 
 
     
@@ -86,6 +90,7 @@ NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/i
 -UserName "your login email" -Password "your password" ^
 -StorePasswordInClearText
 ````
+
 
 ## Troubleshooting
 

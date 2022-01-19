@@ -35,6 +35,7 @@ The simplest way to add a __Choropleth__ map to your report is to run the Chorop
 
 # See Also
 
+
  
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})

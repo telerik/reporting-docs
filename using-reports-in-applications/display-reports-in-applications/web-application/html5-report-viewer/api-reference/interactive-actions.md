@@ -10,11 +10,10 @@ position: 8
 
 # Interactive Actions
 
-
-
-The article lists the properties of the interactive action, available in         [interactiveActionExecuting]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args)%}),         [interactiveActionEnter]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)%}) and         [interactiveActionLeave]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)%})         event handlers.       
+The article lists the properties of the interactive action, available in [interactiveActionExecuting]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args)%}), [interactiveActionEnter]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)%}) and [interactiveActionLeave]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)%}) event handlers. 
 
 ## Sorting action
+
 
 | Property | Description | Value |
 | ------ | ------ | ------ |
@@ -22,7 +21,9 @@ The article lists the properties of the interactive action, available in        
 |Type|The type name that identifies the action|`sorting`|
 |ReportItemName|The name of the report item, associated with the current action|Matches the name of the report item in report definition|
 
+
 ## ToggleVisibility action
+
 
 | Property | Description | Value |
 | ------ | ------ | ------ |
@@ -30,7 +31,9 @@ The article lists the properties of the interactive action, available in        
 |Type|The type name that identifies the action|`toggleVisibility`|
 |ReportItemName|The name of the report item, associated with the current action|Matches the name of the report item in report definition|
 
+
 ## NavigateToUrl action
+
 
 | Property | Description | Value |
 | ------ | ------ | ------ |
@@ -39,7 +42,9 @@ The article lists the properties of the interactive action, available in        
 |Value|Object that contains the properties of the target report|Available properties:<br/>* __Url__ - The target url<br/>* __Target__ -`NewWindow`or`SameWindow`|
 |ReportItemName|The name of the report item, associated with the current action|Matches the name of the report item in report definition|
 
+
 ## NavigateToBookmark action
+
 
 | Property | Description | Value |
 | ------ | ------ | ------ |
@@ -48,7 +53,9 @@ The article lists the properties of the interactive action, available in        
 |Value|String that identifies the target bookmark|n/a|
 |ReportItemName|The name of the report item, associated with the current action|Matches the name of the report item in report definition|
 
+
 ## NavigateToReport action
+
 
 | Property | Description | Value |
 | ------ | ------ | ------ |
@@ -57,7 +64,9 @@ The article lists the properties of the interactive action, available in        
 |Value|Object that contains the properties of the target report|Available properties:<br/>* __Report__ - The target report source<br/>* __Parameters__ - The supplied parameters collection|
 |ReportItemName|The name of the report item, associated with the current action|Matches the name of the report item in report definition|
 
+
 ## Custom action
+
 
 | Property | Description | Value |
 | ------ | ------ | ------ |
@@ -69,19 +78,10 @@ The article lists the properties of the interactive action, available in        
 
 # See Also
 
- 
-
 * [ReportViewer events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%})
-
- 
 
 * [interactiveActionExecuting event handler]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args)%})
 
- 
-
 * [interactiveActionEnter event handler]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)%})
 
- 
-
 * [interactiveActionLeave event handler]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)%})
-

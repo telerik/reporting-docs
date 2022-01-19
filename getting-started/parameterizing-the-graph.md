@@ -14,6 +14,7 @@ position: 7
 
 This article is part of the Demo report guide on getting started with Telerik Reporting.         It demonstrates how to add a report parameter and change the __graphDataSource__ of the graph         so that the user can select a year based on which the graph will display the top five stores.       
 
+
 1. Add a new SqlDatasource component for the graph with the following query:             
 
     
@@ -22,6 +23,7 @@ SELECT DISTINCT YEAR(OrderDate) AS Year
 FROM         Sales.SalesOrderHeader
 ORDER BY Year
 ````
+
 
 1. Rename the data source to __yearDataSource__.             
 
@@ -39,6 +41,7 @@ ORDER BY Year
       ````sql
 WHERE  (YEAR(SOH.OrderDate) = @Year)
 ````
+
 
 1. Set __Configure data source parameters__ dialog in the following way:               
 

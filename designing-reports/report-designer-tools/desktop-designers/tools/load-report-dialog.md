@@ -14,6 +14,7 @@ position: 15
 
 The Choose Report Source dialog is used to select the source for a report that would be displayed in a report viewer,         SubReport item or drill-through action.       
 
+
 The dialog offers the available report sources, which are:
 
 * URL or file             
@@ -36,6 +37,7 @@ If a connection to the report server instance is not available, the user can jus
 
 > The  __Report server__ option provides just a UI for choosing the category and report name from an active Telerik Report Server instance.             It does not provide a new report source type - it uses a  [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)  instance             for initialization and returned result.           
 
+
 For examples that demonstrate how to programmatically create a report source, check the API reference examples below.
 
 Reports can be stored in different locations and in different formats so use the uniform way to access           them via the appropriate option. It would open an additional pane below allowing you to select the report source and           set report source parameters as well.         
@@ -43,7 +45,9 @@ Reports can be stored in different locations and in different formats so use the
 > When choosing  __Type name__ for a source, you must make sure that both reports use the same Telerik Reporting version then rebuild the application in order to load the sub-report report source.           
 
 
+
 # See Also
+
 
  
 

@@ -10,13 +10,12 @@ position: 1
 
 # ViewModes
 
-
-
 ## telerikReportViewer.ViewModes
 
-|   |   |
-| ------ | ------ |
- Member name |
+
+|   |
+| ------ |
+| Member name |
 | ------ |
 |INTERACTIVE|
 |PRINT_PREVIEW|

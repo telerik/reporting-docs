@@ -20,6 +20,7 @@ position: 6
 
 __Path parameters__ 
 
+
 | Name | Type | Description |
 | ------ | ------ | ------ |
 |`clientId`|String|ID of the service client. Returned from [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}).|
@@ -27,13 +28,16 @@ __Path parameters__
 |`documentId`|String|ID of the report document. Returned from [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%}).|
 |`actionId`|String|ID of the interactive action that is applied on the specified document.|
 
+
 ## Response
+
 
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Action applied successfully.|
 |`410 Gone`|The specified clientId cannot be found (expired).|
 |`404 Not Found`|The specified instanceId or documentId or actionId cannot be found.|
+
 
 ## Sample
 

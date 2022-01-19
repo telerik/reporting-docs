@@ -14,6 +14,7 @@ position: 8
 
 Mail message        
 
+
     
           {
           'from': 'john.doe@mycompany.com',
@@ -23,6 +24,7 @@ Mail message
           'body': 'my mail body',
           }
         
+
 
 >caption Fields
 

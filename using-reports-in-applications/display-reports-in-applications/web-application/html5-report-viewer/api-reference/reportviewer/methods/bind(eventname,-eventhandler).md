@@ -10,9 +10,7 @@ position: 4
 
 # bind(eventName, eventHandler)
 
-
-
-Binds event handlers to the specified event.         
+Binds event handlers to the specified event. 
 
     
 ````js

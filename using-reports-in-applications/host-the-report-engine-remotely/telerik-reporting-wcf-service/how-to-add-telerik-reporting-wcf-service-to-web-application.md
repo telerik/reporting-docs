@@ -82,6 +82,7 @@ This topic describes how to host the Telerik Reporting WCF Service in IIS. For t
 
 > For troubleshooting and configuring IIS hosted WCF services, please refer to  [IIS Hosted Service Fails](http://msdn.microsoft.com/en-us/library/ms752252.aspx)  article in MSDN.         
 
+
 ## Related Articles:
 
 * [Hosting Windows Communication Foundation Services](http://msdn.microsoft.com/en-us/library/ms730158.aspx) 

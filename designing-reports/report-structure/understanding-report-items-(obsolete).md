@@ -27,6 +27,7 @@ Telerik Reporting supplies __report item__ components that are placed in the r
 | [BarCode]({%slug telerikreporting/designing-reports/report-structure/barcode/overview%})|The Barcode report item is used for automatic barcode generation directly from a numeric or character data <br/>       without need of any barcode font being installed in the end user's PC.|
 | [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%})|The Shape item displays visual primitives in the report including ellipse, vertical/horizontal/slanting lines, and triangles.|
 
+
 ## Definition item versus Processing item
 
 ### Report Definition
@@ -36,6 +37,7 @@ The Report Definition item is created during the first stage of the [Report Life
 Let’s illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code will be generated within the InitalizeComponent method of the report class.
 
 > The  __InitializeComponent__ method initializes (creates) a Report and its child items.It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
+
 
 This object will later serve as the definition for creating a concrete instance of the TextBox for each row form the data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example Telerik.Reporting.TextBox.
 

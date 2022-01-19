@@ -48,6 +48,7 @@ The Map series can share existing GeoLocation, ShapeMap and Series groups.
 
 > Although the Map series share common properties, a  __ShapeMapSeries__ can only use and share a  __ShapeMap groups__.             The  __LocationMapSeries__ (PointMap, PieMap and ColumnMap) can only use and share a  __GeoLocation groups__.           
 
+
 ## Map Title
 
 The Map Title is a report item used to set a header over a report item. It could be moved to a various position for a better visual effect.         
@@ -96,6 +97,7 @@ The Map item is not designed for scenarios where great precision is needed. The 
 
 
 # See Also
+
 
  
 

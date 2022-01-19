@@ -87,6 +87,7 @@ fr;fr-BE
 </SupportedCultures>
 ````
 
+
 1. Reload and build the project
 
 1. Repeat steps from 1 to 3 for each desired translation of the __Report Viewer__. Steps 4 to 7 can be performed at the end only once.
@@ -228,6 +229,7 @@ End Class
 
 
 # See Also
+
 
  
 

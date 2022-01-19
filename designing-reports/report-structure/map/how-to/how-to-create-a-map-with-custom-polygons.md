@@ -56,6 +56,7 @@ In this article we demonstrated how to display custom-shaped polygons using     
 
 # See Also
 
+
  
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})

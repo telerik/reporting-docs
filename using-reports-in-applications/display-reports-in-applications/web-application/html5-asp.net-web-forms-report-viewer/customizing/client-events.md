@@ -14,6 +14,7 @@ position: 6
 
 This article explains how to attach client event handlers to an WebForms wrapper of the HTML5 Report Viewer instance.
 
+
 To attach a client event handler you have to set the appropriate ClientEvents tag as shown below:         
 
     
@@ -32,6 +33,7 @@ To attach a client event handler you have to set the appropriate ClientEvents ta
 ````
 
 The following table lists the available client events:         
+
 
 |  __Event__ |  __Description__ |
 | ------ | ------ |

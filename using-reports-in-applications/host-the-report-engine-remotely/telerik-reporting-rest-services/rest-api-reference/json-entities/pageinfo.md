@@ -14,6 +14,7 @@ position: 4
 
 Page info representing the state of a single document page and its content.       
 
+
 When the page is not available:
 
     
@@ -32,6 +33,7 @@ When the page is  available:
             ‘pageContent’: ‘<html>My page content</html>’,
           }
         
+
 
 >caption Fields
 

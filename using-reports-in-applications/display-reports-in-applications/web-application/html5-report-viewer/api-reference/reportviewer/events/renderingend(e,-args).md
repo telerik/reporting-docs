@@ -10,16 +10,16 @@ position: 10
 
 # renderingEnd(e, args)
 
-
-
 Occurs after rendering the report.
 
 Parameters:
 
+
 | Parameter | Description |
 | ------ | ------ |
-| __e__ |This is the  [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively  [jQuery's event.data](https://api.jquery.com/event.data/). e.data.sender is the report viewer that raised the event.|
-| __args__ |An object with properties:<br/>* *bookmarkNodes* - an array of bookmark node object. Each bookmark node has an id, items, page and text.<br/>* *documentMapAvailable* - true if the current report has document map. Otherwise false.<br/>* *documentMapNodes* - nodes used in the document map.<br/>* *documentReady* - the status of the rendered report.<br/>* *pageCount* - the page count of the rendered report.|
+| __e__ |This is the [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively [jQuery's event.data](https://api.jquery.com/event.data/).<br/>e.data.sender is the report viewer that raised the event.|
+| __args__ |An object with properties:<ul><li>*bookmarkNodes* - an array of bookmark node object. Each bookmark node has an id, items, page and text.</li><li>*documentMapAvailable* - true if the current report has document map. Otherwise false.</li><li>*documentMapNodes* - nodes used in the document map.</li><li>*documentReady* - the status of the rendered report.</li><li>*pageCount* - the page count of the rendered report.</li></ul>|
+
 
     
 ````js
@@ -42,3 +42,4 @@ $(function () {
 
 ## Event Binding
 
+The report viewer currently exposes two ways for binding event handlers to events. You may attach event handlers when you instantiate the report viewer, or after that, using the bind method. For a complete list of binding options during initialization please check [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). For a complete list of all event names exposed through telerikReportViewer.Events please check [telerikReportViewer Namespace, Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}).

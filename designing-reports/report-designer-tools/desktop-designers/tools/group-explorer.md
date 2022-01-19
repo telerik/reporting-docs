@@ -14,6 +14,7 @@ position: 3
 
 The Group Explorer is an aid to navigating report/table groups. The Group Explorer allows you to see the structure of the groups, to select them and change the Grouping, Sorting and Filtering. The Group Explorer can be especially handy for complex reports where there might be a lot of groups and it would be difficult to select a group and distinguish group hierarchy.
 
+
 The Group Explorer allows you to easily apply grouping, sorting and filtering to your report. With this dialog, you don't need to manually invoke the Grouping dialog, Sorting dialog and Filtering dialog and define the group, sort and filter properties. Instead, you can use the Grouping, Sorting and Filter fields to do this with several intuitive mouse clicks.  
 
   ![](images/GroupExplorerReport.PNG)

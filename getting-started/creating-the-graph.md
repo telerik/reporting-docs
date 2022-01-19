@@ -16,6 +16,7 @@ This article is part of the Demo report guide on getting started with Telerik Re
 
 The controls which the __Report Header__ and the __Report Footer__ contain are displayed only once at the top and bottom         of the entire report respectively. The controls which the __pageHeaderSection__ and the __pageFooterSection__ are displayed on all pages.         The __Report Header__ and __Report Foote__ r are hidden by default.       
 
+
 1. To show the report header, right-click outside the report and select __Report Header__.             
 
 1. Add a new SQL Datasource component for the graph with the following query:             
@@ -37,6 +38,7 @@ INNER JOIN HumanResources.Employee AS E  ON E.EmployeeID = SP.SalesPersonID
 INNER JOIN Person.Contact AS C           ON C.ContactID = E.ContactID
 WHERE     (YEAR(SOH.OrderDate) = 2002)
 ````
+
 
 1. Rename the datasource to __graphDataSource__.             
 

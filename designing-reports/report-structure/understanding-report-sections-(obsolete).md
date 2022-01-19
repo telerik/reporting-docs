@@ -12,7 +12,9 @@ position: 1
 
 
 
+
 The following table presents a summary of the section types and their usage:         
+
 
 | Section Type | Description |
 | ------ | ------ |
@@ -25,7 +27,9 @@ The following table presents a summary of the section types and their usage:
 | __Page Footer__ |This section is printed at the end of every page. Use a page footer to print page numbers<br/>    or per-page information. Similar to the Page Header Section you cannot use databound items, but can access the PageNumber and <br/>    PageCount objects. It is possible to suppress the printing of the Page Footer section on the first and last page of a report, but <br/>    the space taken up would always be reserved no matter whether it is visible.|
 
 
+
 # See Also
+
 
  
 

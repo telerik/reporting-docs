@@ -106,6 +106,7 @@ The clipping and positioning of an image in the display area of a PictureBox ite
 
 __Sizing Property modes:__ 
 
+
 | Name | Description |
 | ------ | ------ |
 |AutoSize|The __PictureBox item__ size is adjusted to that of the image it contains.|
@@ -114,12 +115,14 @@ __Sizing Property modes:__
 |Stretch|The image within the __PictureBox item__ is stretched or shrunk as appropriate to fit the size of the __PictureBox item__.|
 |ScaleProportional|The image is sized proportionally (without clipping), so that it's best fitted to the __PictureBox item__.<br/>              If the height and width ratio of the __PictureBox item__ is the same as the image's ratio it will be resized<br/>              to exactly fit into the __PictureBox item__. Otherwise the closest fitting side (height or width) of the<br/>              image will be sized to the item and the other side (height or width) of the image sized proportionally (leaving empty space).|
 
+
 The PictureBox image is rendered depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary.           For example, if you are using an 120dpi image in your PictureBox with __Sizing__ set to          *AutoSize* or *Normal* and the machine settings are set to 96dpi,           the image would look smaller due to the higher amount of pixels per inch. If you want your image to be resized appropriately, its           __Sizing__ should be set to *Stretch* or *ScaleProportional*.         
 
 The SVG images are rendered in vector format where the rendering extension supports it. On the designer surface and in image formats the SVG contents are rendered as EMF (Enhanced Metafile) which is also a vector format           and preserves the lossless scaling. In HTML formats the SVG markup is rendered as-is, since all modern browsers support SVG contents.            In OpenXML-based rendering extensions (DOCX, XLSX, PPTX, RTF) the SVG is rendered in vector format by default, but can be rendered in raster format if the deviceInfo setting *UseMetafile* is set to __false__.           In the rest of the rendering extensions the SVG is rendered as raster image, but the item's size is always taken into account to ensure highest rendering quality.         
 
 
 # See Also
+
 
  
 

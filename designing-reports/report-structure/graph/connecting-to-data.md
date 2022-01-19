@@ -53,3 +53,4 @@ Depending on the series type the Graph item can visualize one or more measures:
 * __Line__ series including all derived subtypes (Scatter, etc.) allows to identify the correlation between three different measures.
 
 
+

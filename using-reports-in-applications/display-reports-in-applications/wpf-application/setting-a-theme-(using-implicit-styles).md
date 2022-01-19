@@ -52,6 +52,7 @@ Additionally the xaml file with the corresponding Report Viewer theme has to be 
 
 >You should not set Application Theme using the StyleManager when using implicit styles.           
 
+
 ## Basing styles on an existing Report Viewer theme
 
 Currently to change an existing Report Viewer theme you can simply copy the original theme and edit the copy.            All the styles that are part of the Report Viewer can be found in the respective XAML file.            If you need to edit existing WPF UI Controls please check the respective article for more information:            [Telerik UI for WPF - Setting a Theme (Using Implicit Styles)](http://www.telerik.com/help/wpf/styling-apperance-implicit-styles-overview.html) 

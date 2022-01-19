@@ -10,35 +10,31 @@ position: 5
 
 # How to Use HTML5 Report Viewer in an ASP.NET Core in .NET 5 application
 
-
-
-This article guides you on how to add an HTML5 Report Viewer in an          [ASP.NET Core in.NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/)          web application.       
+This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in.NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/) web application. 
 
 ## Prerequisites
 
-The report viewer requires a reference to a running Reports Web Service. The report viewer can consume reports generated and served by           any of the following Reports Web Service implementations:         
+The report viewer requires a reference to a running Reports Web Service. The report viewer can consume reports generated and served by any of the following Reports Web Service implementations: 
 
 * A service that runs in another application.
 
 * A service that runs in a Telerik Report Server instance.
 
-* A service that is hosted locally in the same application
+* A service that is hosted locally in the same application.
 
-In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core in.NET 5]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}).         
+In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core in.NET 5]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}). 
 
 ## Adding the HTML5 Report Viewer
 
-1. This tutorial uses the __Barcodes Report.trdp__ report definitions file               that must be located in a __Reports__ folder inside the project.             
+1. This tutorial uses the __Barcodes Report.trdp__ report definitions file that must be located in a __Reports__ folder inside the project. 
 
-1. Make sure that the app configuration inside the __Configure__ method of the __Startup.cs__             can serve static files:             
-
+1. Make sure that the app configuration inside the __Configure__ method of the __Startup.cs__ can serve static files: 
     
       ````c#
 app.UseStaticFiles();
 ````
 
-1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on *wwwroot* and __Add > New Item... > HTML Page__.               Name the file __index.html__ and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer               [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article.               The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below.               By default, the necessary Report Viewer scripts and styles are served by the REST Service.             The complete report viewer page should look like this:
-
+1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on *wwwroot* and __Add > New Item... > HTML Page__. Name the file __index.html__ and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below. By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
     
       ````html
 <!DOCTYPE html>
@@ -88,18 +84,16 @@ app.UseStaticFiles();
 </html>
 ````
 
-1. Set the *launchSettings.json* launchUrl to the new HTML page.             
+1. Set the *launchSettings.json* launchUrl to the new HTML page. 
 
-1. Finally, run the project to see the report.             
+1. Finally, run the project to see the report. 
+
 
 ## Demo project
 
-A full example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 5\AspNet5Demo         
+A full example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 5\AspNet5Demo.
 
 
 # See Also
 
- 
-
 * [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in.NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)
-

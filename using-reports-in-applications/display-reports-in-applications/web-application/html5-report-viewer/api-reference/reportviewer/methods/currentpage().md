@@ -10,11 +10,9 @@ position: 6
 
 # currentPage()
 
+Gets the viewer’s current page that is displayed. 
 
-
-Gets the viewer’s current page that is displayed.         
-
-Returns: integer:         
+Returns: integer: 
 
     
 ````js

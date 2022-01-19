@@ -24,6 +24,7 @@ Attributes|No attributes are defined for this element|
 |Child elements| __render__ – specifies a collection of render extensions, for which the configuration settings                                 are applied.|
 |Parent element| __Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings.                                 Only one                                 Extensions element can be used in the Telerik.Reporting element.|
 
+
 __```<render>``` element__ 
 
 Render XML element specifies a collection of extensions, for which configuration is applied.
@@ -33,6 +34,7 @@ Render XML element specifies a collection of extensions, for which configuration
 Attributes|No attributes are defined for this element|
 |Child elements| __extension__ – specifies an extension, for which the configuration settings are applied.                                 Multiple Extension elements can be applied in the Render element|
 |Parent element| __extensions__ - specifies a collection of extension types, for which configuration is applied.                                 Only one Render element can be used in the Extensions element.|
+
 
 __```<extension>``` element__ 
 
@@ -44,6 +46,7 @@ Attributes| __name__ – required string attribute. Name is the key attribute th
 |Child elements| __parameters__ – specifies a collection of parameters for the extension in the extension element.                                 Only one parameters element can be used in the extension element.|
 |Parent element| __render__ - specifies a collection of extensions, for which the configuration is applied. Multiple                                 Extension elements can be applied in the Render element.|
 
+
 __```<parameters>``` element__ 
 
 Parameters XML element specifies a collection of parameters for the extension defined in the parent extension element.
@@ -54,6 +57,7 @@ Attributes|No attributes are defined for this element|
 |Child elements| __parameter__ – specifies a parameter for the extension in the Extension element. Multiple Parameter                                 elements can be used in the Parameters element.|
 |Parent element|* __extension__ - specifies an extension, for which the configuration is applied. Only one<br/>                                        Parameters element can be applied in the Extension element. The default value is true.<br/>                                        You can use it to hide the export format from the list of the available render extensions.<br/>* __provider__ - specifies a cache provider to register for use in the application.|
 
+
 __```<parameter>``` element__ 
 
 Parameter XML element specifies a parameter for the extension defined in the ancestor Extension element. The parameter is supplied           as name/value pairs. The list of all parameters available for each extension can be found in            [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) section.         
@@ -63,6 +67,7 @@ Parameter XML element specifies a parameter for the extension defined in the anc
 Attributes|* __name__ – the name of the parameter that is supplied. Required attribute.<br/>* __value__ – the value of the parameter with the name specified. As the value can be only<br/>                                        a string, the parameter Type must have an associatedTypeConverter that handles conversions from string. Built-in<br/>                                     .NET value types and enums have type converters defined.|
 |Child elements|No child elements are defined for this element.|
 |Parent element| __parameters__ - specifies a collection of parameters for the extension defined in the parent                                 extension element. Multiple parameter                                 elements can be used in the parameters element.|
+
 
 ## Example
 
@@ -157,6 +162,7 @@ JSON-based configuration file:
 
 > The code samples have the version listed as Version=x.x.x.x, and you should change that with the exact assembly version you                         use before proceeding.                     
 
+
 ## Set rendering parameters programmatically
 
 To define device rendering parameters programmatically, we need a key/value pair, and what better than a                      [HashTable](http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx)                      which represents collection of key/value pairs. If the collection contains rendering parameters that are not supported by                     the specified rendering extension, they would be ignored.                 
@@ -195,5 +201,6 @@ typeReportSource.TypeName = reportName
 
 Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo)
 ````
+
 
 

@@ -14,6 +14,7 @@ position: 2
 
 The current article elaborates on how to setup a Map without using the __Map Wizard__. The described approach is         applicable when using the __Visual Studio Report Designer__ 
 
+
 1. Open the Visual Studio toolbox and select the Map item from the *Telerik Reporting* tab.                 
 
 1. Click on the design surface where you want the upper-left corner of the map.                     The map item is initialized on the selected design surface with default values for                    [IProjection](/reporting/api/Telerik.Reporting.IProjection)                    and  [ITileProvider](/reporting/api/Telerik.Reporting.ITileProvider).                 
@@ -38,6 +39,7 @@ In case your data source can provide geographical coordinates to be used for the
 
 
 # See Also
+
 
  
 

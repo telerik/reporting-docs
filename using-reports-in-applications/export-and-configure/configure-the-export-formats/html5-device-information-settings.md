@@ -16,6 +16,7 @@ The following table lists the device information settings for rendering in HTML5
 
 ## HTML5 Device Information Settings
 
+
 |  __Name__ |  __Type__ |  __Description__ |
 | ------ | ------ | ------ |
 |UseSVG|Boolean|A flag specifying whether to render Map and Graph items as  [SVG](http://www.w3.org/Graphics/SVG/) or  [Bitmap](http://msdn.microsoft.com/en-us/library/windows/desktop/ms536393(v=vs.85).aspx) images. The default value is true.|
@@ -23,10 +24,12 @@ The following table lists the device information settings for rendering in HTML5
 |StartPage|Integer|The first page of the report to render. A value of __0__ indicates that all pages are rendered.|
 |EndPage|Integer|The last page of the report to render.|
 
+
 For an example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).         
 
 
 # See Also
+
 
  
 

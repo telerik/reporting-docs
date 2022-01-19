@@ -14,6 +14,7 @@ position: 8
 
 This article is part of the Demo report guide on getting started with Telerik Reporting and demonstrates         how to add a new graph which will display the top five stores per year and per quarter.       
 
+
 1. Click on the Report Header section and then go to __Insert__ > __Bar__ > __Clustered Bar__             to add the new graph next to the pie chart.             
 
 1. From __Graph Wizard__, use the __graphDataSource__, then drag __StoreName__ to __Categories__,               __OrderDate__ to __Series__, and __Sum(LineTotal)__ to __Values__.             

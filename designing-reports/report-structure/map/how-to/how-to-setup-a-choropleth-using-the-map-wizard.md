@@ -23,6 +23,7 @@ In this how-to article we will show you how to use the [Standalone Report Design
 
    + If you want to add the Map item to an existing report, you have to select the __Choropleth__ item                   from the __Insert__ menu.                   This will bring up the __Choropleth Wizard__ which will guide you through the creation process.                 
 
+
 1. Add new               [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%})               and name it __populationData__. This data source will hold the information about the               countries, their area, population and density along with some additional data.             
    + Although you can copy the data directly from the Wikipedia page mentioned above, for your convenience we have prepared a CSV file                   that you can pass to the CSV data source.                 Download the                    [PopulationData.zip](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/PopulationDensity.zip)                    file, save it locally and extract its contents in a folder of choice. Navigate to that folder and locate the __PopulationDensity.csv__ file.                   Back in the wizard, insert the path to the CSV file into the *Select a file to import* textbox or paste its contents in the                   __Enter CSV as text__ tab.                 
 
@@ -35,6 +36,7 @@ In this how-to article we will show you how to use the [Standalone Report Design
   ![Choropleth How To Simple CSV Map Columns To Type](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_CSV_MapColumnsToType.png)
 
    + When you click __Parse CSV...__ on the next page, you should see the result of the parsed file.                 Click __Finish__ when you are ready.                 
+
 
 1. In the *Available data sources* list you should see the datasource you've already created.               Select it and click __Next__.             
 
@@ -61,11 +63,13 @@ In this how-to article we will show you how to use the [Standalone Report Design
 
   ![Choropleth How To Simple Choropleth Setup](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_ChoroplethSetup.png)
 
+
 1. When you click the __Finish__ button, the map will display the choropleth map. After adding some formatting to the               title and the legend, it should look like the one shown here:               
 
   ![Choropleth How To Simple Layout 1](images/Map/Choropleth/HowTo_SimpleChoropleth/Choropleth_HowToSimple_Layout1.png)
 
 ## Additional information
+
 
 * You will notice that some  areas (countries) on the map are transparent. These areas represent shapes that have no match with the analytical data set fields.                   The choropleth displays all the shapes that are available in the spatial data set, but the data points are created only when the field from the                   analytical data set is matched with a field from the spatial data, using the  [MapRelationPairCollection](/reporting/api/Telerik.Reporting.MapRelationPairCollection).                     In our example we use a Shapefile for all the countries in the world, but we have analytical data for the 100 most populated countries. This means                   that some of the shapes will never be matched with the analytical data set and therefore will not be colored, because they don't have a valid                   population value.                     Another reason for having transparent areas is simple mismatching the fields that are used in the __Relation Pairs__. Take a                   look at the following screenshot, showing a part of Africa:                   
 

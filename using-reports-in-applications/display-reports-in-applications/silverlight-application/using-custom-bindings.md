@@ -12,6 +12,7 @@ position: 4
 
 
 
+
 You might encounter a need to use custom Bindings for the __ReportServiceClient__ in certain scenarios. To do that create your own __ReportServiceClient__ object instance and initialize it according to your needs. 
 
 You need to implement the __IReportServiceClientFactory__ interface and its only method should create and return a new instance of the __ReportServiceClient__ class using any of its constructors. This way you attach your custom Binding to be used for connecting to the Report Service.

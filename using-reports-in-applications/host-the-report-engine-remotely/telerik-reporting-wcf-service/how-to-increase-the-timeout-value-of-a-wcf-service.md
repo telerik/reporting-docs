@@ -30,6 +30,7 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 
 > The number 2,147,483,647 is the max value of a 32 bit signed integer.
 
+
 ## Timeouts on client binding
 
     
@@ -62,5 +63,6 @@ When a WCF service is hosted in IIS/ASP.NET, another setting would also control 
   </system.web>
 </configuration>
 ````
+
 
 

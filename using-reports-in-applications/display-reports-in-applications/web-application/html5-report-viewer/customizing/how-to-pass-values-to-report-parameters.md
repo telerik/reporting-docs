@@ -10,20 +10,18 @@ position: 4
 
 # How to Pass Values to Report Parameters
 
+This topic explains how to use custom parameters UI to update the report parameters instead of using the report viewer's default implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used. 
 
-
-This topic explains how to use custom parameters UI to update the report parameters instead of using the report viewer's default         implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object.         To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.       
-
-To give an example we will use the Invoice report from our examples and will update its __OrderNumber__ parameter         from a custom parameter UI.       
+To give an example we will use the Invoice report from our examples and will update its __OrderNumber__ parameter from a custom parameter UI. 
 
 ## Pass values to report parameters
 
-> All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
+> All path references in the described steps should be adapted according to your project setup. For more information please refer to the MSDN article [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
+
 
 1. Add a new html page CustomParameters.html to the CSharp.Html5Demo or VB.Html5Demo project.
 
 1. Add the references to all required JavaScript libraries and stylesheets:
-
     
     ````html
 <!DOCTYPE html>
@@ -51,7 +49,6 @@ To give an example we will use the Invoice report from our examples and will upd
 ````
 
 1. Add the custom parameter UI - a dropdown selector with a few values:
-
     
     ````html
 <div id="invoiceIdSelector">
@@ -65,7 +62,6 @@ To give an example we will use the Invoice report from our examples and will upd
 ````
 
 1. Add the ReportViewer placeholder
-
     
     ````html
 <div id="reportViewer1">
@@ -73,8 +69,7 @@ To give an example we will use the Invoice report from our examples and will upd
 </div>
 ````
 
-1. Now initialize the report viewer. We will use the minimal set of all                   [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).                   Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially:                 
-
+1. Now initialize the report viewer. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially: 
     
     ````js
 $(document).ready(function () {
@@ -91,8 +86,7 @@ $(document).ready(function () {
 });
 ````
 
-1. Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from                   the dropdown box:                 
-
+1. Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from the dropdown box: 
     
     ````js
 $('#invoiceId').change(function () {
@@ -108,7 +102,6 @@ $('#invoiceId').change(function () {
 ````
 
 1. The HTML page that we have just created should looks like this:
-
     
     ````html
 <!DOCTYPE html>
@@ -170,12 +163,9 @@ $('#invoiceId').change(function () {
 </html>
 ````
 
-1. Run the project and verify that the __Invoice Id__ selection really updates the report.                 
+1. Run the project and verify that the __Invoice Id__ selection really updates the report. 
 
 
 # See Also
 
- 
-
 * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
-

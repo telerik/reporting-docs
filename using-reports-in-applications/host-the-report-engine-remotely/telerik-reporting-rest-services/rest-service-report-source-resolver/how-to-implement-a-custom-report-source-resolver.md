@@ -180,6 +180,7 @@ CREATE TABLE [dbo].[Reports](
 GO
 ````
 
+
 1. To enter some data into the database you can manually edit the __Reports__ table.               XML report definitions can be obtained from the sample __.trdx__ report files installed               together with the product and are located in               __[Telerik_Reporting_Install_Dir]\Report Designer\Examples__.                 In newer versions, all sample reports of the Standalone Report Designer are in TRDP format. You can use the              *Standalone Report Designer - File - Save As* option to convert them to TRDX files.             
 
 ## How to implement and use custom IReportSourceResolver with fallback mechanism:

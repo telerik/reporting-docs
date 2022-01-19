@@ -39,6 +39,7 @@ WHERE [HumanResources].[vEmployee].[EmployeeID] <= 14
 ORDER BY 1 ASC
 ````
 
+
 1. From the grid with the properties, change the name of the data source to *tableDataSource* so you can later refer it and render its data in the report.             
 
 ## Creating the Table

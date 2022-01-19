@@ -14,12 +14,14 @@ position: 6
 
 Represents a single value of the parameter available values.       
 
+
     
           {
             ‘name’: ‘Sofia’,
             ‘value’: 1
           }
         
+
 
 >caption Fields
 

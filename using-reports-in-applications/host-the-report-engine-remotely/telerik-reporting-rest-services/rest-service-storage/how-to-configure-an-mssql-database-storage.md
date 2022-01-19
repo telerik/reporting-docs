@@ -31,6 +31,7 @@ This article will explain how to configure an MSSQL database for report engine s
 
    1. In case you want to cleanup the storage tables in an existing database, use the button *Clear cache data*.                 
 
+
 1. Configure your Telerik Reporting REST Service to use the database storage we just prepared. You may do this in the configuration file of the project               as elaborated in the article [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}), or when instantiating the                [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration). Here are samples for both scenarios:             
    + Through code when passing  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration)                    instance to the REST Service. The __ReportSourceResolver__ and __Storage__ configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface for more details.                 
 
@@ -166,7 +167,9 @@ The properties from the initialization block would override the values obtained 
 ````
 
 
+
 # See Also
+
 
  
 

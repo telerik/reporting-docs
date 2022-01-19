@@ -12,6 +12,7 @@ position: 5
 
 
 
+
 The context menu will conditionally display items depending on the area of the report that was right-clicked. Some of the significant context menu items are: 
 
 * __View:__ The sub menu of View allows you to select[Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}),[Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%})and[Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})

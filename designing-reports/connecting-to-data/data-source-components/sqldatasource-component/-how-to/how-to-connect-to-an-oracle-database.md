@@ -43,3 +43,4 @@ You can use the Telerik SqlDataSource component to connect to an Oracle         
 1. Click __Finish__. The Wizard would close               and the SqlDataSource component would be ready for use by the data items             
 
 
+

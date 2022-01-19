@@ -60,6 +60,7 @@ The project has a preconfigured implementation of reports controller that uses t
 
    + System.Net.Http.Formatting.dll                     
 
+
 1. [Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});                 
 
 1. (Only for Empty Web Application) Add new item "Global Application Class";
@@ -84,6 +85,7 @@ Sub Application_Start()
 
 | __http://localhost: [portnumber]/api/reports/formats__ |
 
+
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).                 
 
     >The call to  __http://localhost:[portnumber]/api/reports/formats__ does not require authorization by design, as this request is for test purposes, i.e. to check whether the REST Service is running.                   
@@ -101,6 +103,7 @@ GlobalConfiguration.Configuration.EnableCors();
 GlobalConfiguration.Configuration.EnableCors();
 ````
 
+
    1. Add the following attribute to the __ReportsController__ class (requires reference to __System.Web.Http.Cors__):                     
 
     
@@ -112,7 +115,9 @@ GlobalConfiguration.Configuration.EnableCors();
 ````
 
 
+
 # See Also
+
 
  
 

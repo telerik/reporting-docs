@@ -10,11 +10,9 @@ position: 8
 
 # pageCount()
 
+Gets the total page count of viewer’s currently displayed report. 
 
-
-Gets the total page count of viewer’s currently displayed report.         
-
-Returns: integer:         
+Returns: integer: 
 
     
 ````js

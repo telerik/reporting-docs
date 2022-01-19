@@ -19,3 +19,4 @@ Telerik Reporting Services is a set of services that allows report generation fr
 * [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) is based on              [Windows Communication Foundation (WCF)](http://msdn.microsoft.com/en-us/library/dd456779(v=vs.100).aspx)  and is designed for the purposes of the             [Telerik Silverlight Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%}). The service can be used directly by any third party client applications as well.           
 
 
+

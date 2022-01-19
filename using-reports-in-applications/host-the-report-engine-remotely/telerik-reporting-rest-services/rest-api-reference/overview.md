@@ -26,6 +26,7 @@ The API represent resources as hierarchical URIs in order to force the clients t
 
 ## The reports API exposes following methods:
 
+
 | Action | HTTP method | Relative URI |
 | ------ | ------ | ------ |
 | [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%})|POST|/api/reports/clients|

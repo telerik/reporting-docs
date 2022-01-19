@@ -32,6 +32,7 @@ You can change the legend items text style by selecting the legend and with __Pr
 
 > If you are using the standalone report designer you can take advantage of the graph tools in the ribbon's Design and Format tabs.           
 
+
 1. Click the graph legend that you want to change.    The selected legend properties are listed in the __Property Browser__.                 
 
 1. In the __Style property__, click the __Edit Collection (…) button__.                     The Edit style dialog opens.                 

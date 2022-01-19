@@ -57,3 +57,4 @@ The old ASP.NET WebForms ReportViewer has a complex structure,           where p
 Web Sites handle assembly references differently and Telerik Reporting Wizards and Designers are not designed to work with such settings.           You can manually add viewers or upgrade the Web Site. Reports should be designed in an external ClassLibrary project referenced by the Web Site project.         
 
 
+

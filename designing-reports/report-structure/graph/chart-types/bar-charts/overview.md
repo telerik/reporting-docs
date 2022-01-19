@@ -41,6 +41,7 @@ The following image shows a typical bar chart. The bar chart is well suited for 
 
 # See Also
 
+
  
 
 * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 

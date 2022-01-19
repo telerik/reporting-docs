@@ -16,6 +16,7 @@ In this article we will show you how to create a Range chart using the Graph ite
 
   ![Range Area Chart](images/Graph/RangeAreaChart.png)
 
+
 1. Add a new graph item to the report.
 
    1. Set the __DataSource__ property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.                 
@@ -30,6 +31,7 @@ SELECT ST.Name, SOH.TotalDue, SOH.OrderDate
 FROM Sales.SalesOrderHeader AS SOH
 INNER JOIN Sales.SalesTerritory AS ST ON SOH.TerritoryID = ST.TerritoryID
 ````
+
 
    1. You can click on __Execute Query...__ just to check if everything is OK with the database connection.                   Click __Finish__ when you are ready.                 
 
@@ -66,5 +68,6 @@ INNER JOIN Sales.SalesTerritory AS ST ON SOH.TerritoryID = ST.TerritoryID
    1. Set the __Y0__ value to *=Sum(IIF(Fields.OrderDate.Year=2003, Fields.TotalDue, 0))* 
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
+
 
 

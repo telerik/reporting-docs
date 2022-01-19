@@ -10,9 +10,7 @@ position: 7
 
 # dispose()
 
-
-
-Stops sending keep alive requests to the server, if keep client alive was enabled.         
+Stops sending keep alive requests to the server, if keep client alive was enabled. 
 
     
 ````js

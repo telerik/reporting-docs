@@ -81,6 +81,7 @@ Information on using the expression editor is available in the [Edit Expression 
 
 > Pressing the Enter key inserts a new line in the expression. Enclose the new line within double quotes ("") to              insert a new line in the string resulting from the evaluated expression.           
 
+
   
 
   ![](images/UI014.png)
@@ -91,6 +92,7 @@ The item supports [embedded expressions]({%slug telerikreporting/designing-repor
 
 
 # See Also
+
 
  
 

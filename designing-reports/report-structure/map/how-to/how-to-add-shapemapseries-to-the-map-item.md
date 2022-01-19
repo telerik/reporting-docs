@@ -59,6 +59,7 @@ When all the properties are set, the __ShapeMapSeries__ instance should look sim
 
 # See Also
 
+
  
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})

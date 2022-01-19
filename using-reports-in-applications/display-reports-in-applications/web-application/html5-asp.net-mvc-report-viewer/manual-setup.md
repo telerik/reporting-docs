@@ -49,6 +49,7 @@ The following steps produce a view with settings similar to these of the local M
 
 > All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
+
 1. Create new ASP.NET MVC 4|5 Web Application.
 
 1. To ensure that the browser will start in the latest rendering mode verify the view's layout page is using the following DOCTYPE directive:                 
@@ -297,5 +298,6 @@ End Code
 ````
 
 1. Run the project and navigate to the view with the HTML5 ASP.NET MVC Report Viewer that we have just created.
+
 
 

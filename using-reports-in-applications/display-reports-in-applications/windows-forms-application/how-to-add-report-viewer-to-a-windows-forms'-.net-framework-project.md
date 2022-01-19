@@ -43,6 +43,7 @@ If the current application has to be declared as DPI-aware, an additional elemen
 
 # See Also
 
+
  
 
 * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)

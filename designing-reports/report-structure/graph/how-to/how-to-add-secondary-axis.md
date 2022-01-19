@@ -16,6 +16,7 @@ When the values in a chart vary widely from series to series, or when you have m
 
 To help distinguish the data that is plotted along the secondary axis, you can change the chart type for just one of the series.         For example, you could change one series to a line type.       
 
+
 To complete the following procedures, you must have an existing chart.
 
 1. Select the Graph item and locate the __CoordinateSystems__ property in the property grid. Click on the ellipsis button to                open the __CoordinateSystems__ collection editor.             
@@ -33,5 +34,6 @@ The secondary axis can also appear on the right or top of the graph.            
 1. The first will be applied to the first Y axis - leave the position to Auto (the default).             
 
 1. For the second one (applied to the second Y axis) - set the position to AtMaximum.                This will force it to cross the X axis at its maximum value which should be on the right end of the axis scale.             
+
 
 

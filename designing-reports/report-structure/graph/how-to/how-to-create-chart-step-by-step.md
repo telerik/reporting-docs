@@ -23,10 +23,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: None or {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: Empty or {expression}
+
 
 ||
 
@@ -34,6 +36,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
+
 
 ||
 
@@ -43,6 +46,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |Y: {expression}
 
+
 |   |   |
 | ------ | ------ |
 |
@@ -51,10 +55,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: None or {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: Empty or {expression}
+
 
 ||
 
@@ -63,6 +69,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |X axis: NumericalScale|
 |Y axis: CategoryScale
 
+
 ||
 
 |Type: BarSeries|
@@ -70,6 +77,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |SeriesGroup: SG1|
 |CategoryGroup: CG1|
 |X: {expression}
+
 
 |   |   |
 | ------ | ------ |
@@ -79,10 +87,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: None or {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: Empty or {expression}
+
 
 ||
 
@@ -91,6 +101,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |X axis: CategoryScale|
 |Y axis: NumericalScale
 
+
 ||
 
 |Type: BarSeries|
@@ -98,6 +109,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |SeriesGroup: SG1|
 |CategoryGroup: CG1|
 |Y: {expression}
+
 
 |   |   |
 | ------ | ------ |
@@ -107,10 +119,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: None or {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: Empty or {expression}
+
 
 ||
 
@@ -118,6 +132,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
+
 
 ||
 
@@ -127,6 +142,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |Y: {expression}
 
+
 |   |   |
 | ------ | ------ |
 |
@@ -135,10 +151,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: None or {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: Empty or {expression}
+
 
 ||
 
@@ -146,6 +164,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: CS1|
 |X axis: NumericalScale|
 |Y axis: CategoryScale
+
 
 ||
 
@@ -155,6 +174,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |X: {expression}
 
+
 |   |   |
 | ------ | ------ |
 |
@@ -163,10 +183,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: None or {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: Empty or {expression}
+
 
 ||
 
@@ -174,6 +196,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
+
 
 ||
 
@@ -183,6 +206,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |CategoryGroup: CG1|
 |Y: {expression}
 
+
 |   |   |
 | ------ | ------ |
 |
@@ -191,10 +215,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: None or {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: Empty or {expression}
+
 
 ||
 
@@ -202,6 +228,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: CS1|
 |X axis: CategoryScale|
 |Y axis: NumericalScale
+
 
 ||
 
@@ -212,6 +239,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Y: {expression}|
 |Y0: {expression}
 
+
 |   |   |
 | ------ | ------ |
 |
@@ -220,10 +248,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: None
+
 
 ||
 
@@ -231,6 +261,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: CS1|
 |X axis: NumericalScale|
 |Y axis: NumericalScale
+
 
 ||
 
@@ -242,6 +273,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |X: {expression}|
 |Y: {expression}
 
+
 |   |   |
 | ------ | ------ |
 |
@@ -250,10 +282,12 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: SG1|
 |Grouping: {expression}
 
+
 ||
 
 |Name: CG1|
 |Grouping: None
+
 
 ||
 
@@ -261,6 +295,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |Name: CS1|
 |X axis: NumericalScale|
 |Y axis: NumericalScale
+
 
 ||
 
@@ -272,6 +307,7 @@ If you choose not to use the graph wizard and you want to create graphs by yours
 |X: {expression}|
 |Y: {expression}|
 |Size: {expression}
+
 
 ||
 

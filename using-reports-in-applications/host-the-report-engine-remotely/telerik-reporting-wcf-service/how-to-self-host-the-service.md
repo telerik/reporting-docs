@@ -39,12 +39,14 @@ The advantages of a Self-Hosted service:
 
    + System.Windows.Forms
 
+
 1. Add references to the following Telerik Reporting assemblies:
    + Telerik.Reporting
 
    + Telerik.Reporting.Service
 
    + Telerik.Reporting.XpsRendering (in case you plan to render reports in XPS format)
+
 
 1. The Telerik Reporting WCF Service is represented by the Telerik.Reporting.Service.ReportServiceBase                - abstract class that requires a base URI to be used for proper resource                resolution. This base URI is usually the well-known address of the report service endpoint:
 
@@ -206,5 +208,6 @@ http://localhost:54321/reportservice/resources/export?format=PDF&report=YourName
 ````
 
     This will call the __IResourceService__. Export operation that                  will render the report in __PDF__ with no deviceInfo or parameterValues.                  When completed, a PDF document will be sent back to the browser.               
+
 
 

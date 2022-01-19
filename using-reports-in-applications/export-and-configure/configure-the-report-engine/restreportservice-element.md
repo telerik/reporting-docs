@@ -35,6 +35,7 @@ Attributes|* __hostAppId__ – optional string attribute. Specifies the unique c
 |Child elements|* __reportResolver__ – specifies the report source resolver implementation that will be used for report resolving from the service.<br/>* __storage__ – specifies the storage implementation that will be used for internal storage from the report service.|
 |Parent element| __Telerik.Reporting__ – specifies the root element of the Telerik Reporting configuration settings. Only a single restReportService child element can be used inside                 the Telerik.Reporting root element.|
 
+
 __```<reportResolver>``` element__ 
 
 |   |   |
@@ -43,6 +44,7 @@ Attributes|* __provider__ <br/>   +  __file__ <br/>   +  __directory__ - string 
 |Child elements| __parameters__ – specifies a collection of parameters for the current provider. Only one __parameters__ child element can be                 used in the __provider__ parent element.|
 |Parent element| __restReportService__ |
 
+
 __```<storage>``` element__ 
 
 |   |   |
@@ -50,6 +52,7 @@ __```<storage>``` element__
 Attributes|* __provider__ <br/>   +  __redis__ <br/>   +  __configuration__ - string parameter. String prefix that should be applied on each key stored in the Redis database.                             This allows shared usage of one Redis database.<br/>   +  __databaseNumber__ - optional integer parameter. Determines the number of the database that should be used.<br/>   +  __msSqlServer__ <br/>   +  __connectionString__ - string parameter. The connection string to the backend storage.<br/>   +  __commandTimeout__ - optional integer parameter. Determines the CommandTimeout that will be used when executing database commands, in seconds. The default value is 30.<br/>   +  __file__ <br/>   +  __directory__ - optional string parameter. The directory which will contain the files representing the stored values.<br/>   +  __database__ <br/>   +  __backendName__ - string parameter. Specifies which database engine should be used.<br/>   +  __connectionString__ - string parameter. A connection string that should be used to connect to the cache database.|
 |Child elements| __parameters__ – specifies a collection of parameters for the current provider. Only one __parameters__ child element can be                 used in the __provider__ parent element.|
 |Parent element| __restReportService__ |
+
 
 ## Examples
 
@@ -120,6 +123,7 @@ JSON-based configuration file:
 
 
 # See Also
+
 
  
 

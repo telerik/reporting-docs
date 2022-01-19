@@ -14,6 +14,7 @@ position: 7
 
 After the EntityDataSource wizard appears you have to perform the following steps:
 
+
 1. __Choose your data connection__ In this step you have to specify a data connection for the __EntityDataSource__ component.               There are two possible options for specifying the data connection:             
 
    + __Choose an existing data connection__ – selecting this option allows you to                   specify an existing data connection stored in the configuration file of the current                   project from the drop-down list.                 

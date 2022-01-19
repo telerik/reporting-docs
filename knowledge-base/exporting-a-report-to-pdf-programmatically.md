@@ -6,7 +6,6 @@ type: how-to
 slug: exporting-a-report-to-pdf-programmatically
 tags: styling and formatting reports
 res_type: kb
-category: knowledge-base
 ---
 
 ## Environment

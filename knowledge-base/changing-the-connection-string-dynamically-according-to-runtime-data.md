@@ -5,7 +5,6 @@ page_title: Change the connection string dynamically for different data during r
 type: how-to
 slug: changing-the-connection-string-dynamically-according-to-runtime-data
 res_type: kb
-category: knowledge-base
 ---
 
 ## Environment

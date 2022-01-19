@@ -23,6 +23,7 @@ The boxes on the top row represent the report items contained in a Graph series.
 
 # See Also
 
+
  
 
 * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})

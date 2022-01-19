@@ -24,6 +24,7 @@ Telerik Reporting provides a set of assemblies and NuGet packages designed for.N
 
 The following NuGet packages are required.           When using our *NuGet* packages, the required dependencies are resolved automatically.           Otherwise, they need to be manually added to the project.         
 
+
 | Package name | Version |
 | ------ | ------ |
 |Microsoft.Extensions.Configuration|2.1.2001|
@@ -42,6 +43,7 @@ The following NuGet packages are required.           When using our *NuGet* pack
 |System.Text.Encoding.CodePages|4.5.2000|
 |System.Threading.AccessControl|4.5.2000|
 |sqlite-net-pcl|1.7.302-beta|
+
 
 ## Implemented Features and Limitations
 
@@ -143,6 +145,7 @@ An example project is available in the Telerik Reporting installation directory 
 
 
 # See Also
+
 
  
 

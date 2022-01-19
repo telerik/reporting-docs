@@ -16,6 +16,7 @@ In this article we will show you how to create a Pie chart using the Graph item.
 
   ![Pie Chart\Pie Chart](images/Graph/PieChart.png)
 
+
 1. Add a new graph item to the report.
 
    1. Set the __DataSource__ property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.                 
@@ -31,6 +32,7 @@ FROM Sales.Customer AS CU
 INNER JOIN Sales.SalesOrderHeader AS SOH ON CU.CustomerID = SOH.CustomerID
 INNER JOIN Sales.Store AS S ON CU.CustomerID = S.CustomerID
 ````
+
 
    1. You can click on __Execute Query...__ just to check if everything is OK with the database connection.                   Click __Finish__ when you are ready.                 
 
@@ -77,5 +79,6 @@ INNER JOIN Sales.Store AS S ON CU.CustomerID = S.CustomerID
    1. Set the __DataPointLabelFormat__ to *{0:C0}K* 
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
+
 
 

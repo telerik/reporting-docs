@@ -16,6 +16,7 @@ The Action dialog box can be used to enable interactive actions for all items th
 
 Define an action so that a user can click on the report and link to a URL, to a different report, to a different         location in the same report or toggle the visibility of items.       
 
+
 The __Edit Action__ offers the following choices:         
 
 * None             
@@ -61,5 +62,6 @@ Depending on the purpose of the interactive actions you can choose the appropria
 * [How to: Add a Drilldown Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action%})
 
 * [How to: Add a Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action%})
+
 
 

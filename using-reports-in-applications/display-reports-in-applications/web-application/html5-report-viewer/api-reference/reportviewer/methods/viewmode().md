@@ -10,9 +10,7 @@ position: 18
 
 # viewMode()
 
-
-
-Gets the current view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).
+Gets the current view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#options).
 
 Returns: string.
 

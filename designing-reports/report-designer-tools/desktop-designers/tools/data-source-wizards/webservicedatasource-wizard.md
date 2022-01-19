@@ -14,9 +14,11 @@ position: 4
 
 The __Web Service Data Source Wizard__ allows you to create a new or edit an existing         __WebServiceDataSource__ component based on several settings.         After the wizard appears you have to perform the following steps:       
 
+
 1. __Configure data retrieval__ Setup the properties of the HTTP request which will retrieve data from the web service:               
 
   ![Web Service Data Source Request](images/DataSources/WebServiceDataSourceRequest.png)
+
 
 | Setting | Description |
 | ------ | ------ |
@@ -27,23 +29,28 @@ The __Web Service Data Source Wizard__ allows you to create a new or edit an exi
 |Body|The body of the POST method. Applicable only for POST HTTP request method.|
 |Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 
+
 And/or enter data inline:               
 
   ![Web Service Data Source Inline File](images/DataSources/WebServiceDataSourceInlineFile.png)
+
 
 | Setting | Description |
 | ------ | ------ |
 |Source|The inline data string containing the data. Required if Service URL or external data file is not set.|
 |Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 
+
 And/or reference an external data file:               
 
   ![Web Service Data Source External File](images/DataSources/WebServiceDataSourceExternalFile.png)
+
 
 | Setting | Description |
 | ------ | ------ |
 |Source|The external data file containing the data. The URI to the file might be relative or absolute. Required if Service URL or inline data string is not set.|
 |Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
+
 
 1. __Configure request parameters__ The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline.               The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields               with the expression result or static value.               
 
@@ -53,14 +60,17 @@ And/or reference an external data file:
 
   ![Web Service Data Source Basic Authentication](images/DataSources/WebServiceDataSourceBasicAuthentication.png)
 
+
 | Setting | Description |
 | ------ | ------ |
 |Username|The username used to authenticate. Required.|
 |Password|The password used to authenticate.|
 
+
 1. __2-Step Authentication__ 
 
   ![Web Service Data Source 2 Step Auth](images/DataSources/WebServiceDataSource2StepAuth.png)
+
 
 | Setting | Description |
 | ------ | ------ |
@@ -74,10 +84,12 @@ And/or reference an external data file:
 |Logout Method|Specifies the HTTP request method used for the Logout URL.|
 |Body|The body of the login HTTP request. Applicable only for POST HTTP request method.|
 
+
 1. __2-Step Authentication Parameters__ The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline.               The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields               with the expression result or static value.             
 
 
 # See Also
+
 
  
 

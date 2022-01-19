@@ -28,6 +28,7 @@ To create a new report with the wizard:
 
    + Select the __Label Report Wizard__ option from the list and click __OK__.               
 
+
 |  __Step__ |  __Description__ |
 | ------ | ------ |
 | __Design Data Layout__ |Use the Categories and the Labels list controls to choose from a list of predefined label layouts to quickly structure the reports visual representation.<br/>            See the Label Information and Preview boxes to get a rough idea of how the report will be laid out.|

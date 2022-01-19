@@ -16,6 +16,7 @@ This article describes the steps required to host the __Telerik Reporting Servic
 
 > Telerik Reporting ServiceStack assembly requires  __V3__ of the ServiceStack framework.         
 
+
 ## How to host the ServiceStack implementation of Telerik Reporting REST service in IIS:
 
 1. Create a new __ASP.NET Empty Web Application__.             
@@ -27,6 +28,7 @@ This article describes the steps required to host the __Telerik Reporting Servic
 
    + Telerik.Reporting.Services.ServiceStack.dll
 
+
 1. Add references to the following Telerik Reporting assemblies (optional):             
    + Telerik.Reporting.Cache.Database.dll - only if  [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage)  caching mechanism is intended.                   For more details check [Reporting REST Service Storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}).                   The assembly has dependencies on Telerik Data Access which can be checked in the version                   corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%});                 
 
@@ -35,6 +37,7 @@ This article describes the steps required to host the __Telerik Reporting Servic
    + Telerik.Reporting.XpsRendering.dll - required if you need to export in XPS format;                 
 
    + Telerik.Reporting.Adomd.dll - required if you use [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) components in reports.                   The assembly has dependencies on *Microsoft.AnalysisServices.AdomdClient.dll* v.10.0.0.0 or [above with proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%});                 
+
 
 1. Create a new class which derives from                [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase).               It could be called *ReportsHost* for example:             
    + Set the  [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration)                    property. The __ReportSourceResolver__ and __Storage__ configuration settings are required.                   See the  [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration)  interface                   for more details.                 
@@ -169,6 +172,7 @@ End Sub
 1. To verify whether the service works correctly you can make a sample request               for the available document formats using the following url:             
 
 | __http://localhost: [portnumber]/api/reports/formats__ |
+
 
     If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}).             
 

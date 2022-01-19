@@ -191,6 +191,7 @@ End Class
 
    + ReportFileResolverWeb - Resolves IReportDocument from a relative path to trdp or trdx file
 
+
 1. 
 
 ###Hosting Telerik.Reporting.Service.ReportService subclass in IIS.
@@ -249,5 +250,6 @@ End Class
 ````
 
 The custom resolver's Resolve method is called on each interaction with the report in the Silverlight ReportViewer e.g.,             changing report parameters' values or hitting refresh. To avoid unexpected results the recommended             [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) to work with are __UriReportSource__           and __TypeReportSource__.           
+
 
 

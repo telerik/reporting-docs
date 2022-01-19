@@ -14,12 +14,14 @@ position: 3
 
 The document format and settings forming a key:       
 
+
     
           {
             ‘format’: ‘HTML5’,
             ‘deviceInfo’: { ‘UseSVG’: true }
           }
         
+
 
 >caption Fields
 

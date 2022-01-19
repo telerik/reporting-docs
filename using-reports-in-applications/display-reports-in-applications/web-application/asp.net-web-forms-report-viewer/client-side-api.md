@@ -14,6 +14,7 @@ position: 6
 
 > This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
+
 ## Accessing the client-side report viewer object
 
 The __ReportViewer__ control creates a client-side object with the __ClientID__ of the viewer. You can obtain reference to it by using the following JavaScript code:
@@ -21,6 +22,7 @@ The __ReportViewer__ control creates a client-side object with the __ClientID__ 
 *var viewer = ```<%=ReportViewer1.ClientID%>```* 
 
 ## Client API
+
 
 |  __Member__ |  __Parameters__ |  __Description__ |
 | ------ | ------ | ------ |

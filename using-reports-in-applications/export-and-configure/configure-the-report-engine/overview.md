@@ -18,6 +18,7 @@ __.NET Core applications__ provide another way of storing configuration - a key-
 
 > For more information about configuring a.NET application, see            [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/).         
 
+
 ## Telerik Reporting Configuration Layout
 
 __Telerik Reporting root element__ 
@@ -29,6 +30,7 @@ The root element of the configuration is named __```<Telerik.Reporting>```__ in 
 Attributes|No attributes are defined for this element|
 |Child elements| [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})- specifies a collection of extensions,                 for which the configuration is applied [cache Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/cache-element%})- specifies the configuration settings for                 the cache management system which is utilized by the viewers to store and cache rendered pages and resources. [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})- specifies the configuration settings for the REST                 report service. [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})- specifies a collection of assembly references that are used from Reporting Engine during processing stage to                 resolve names of user functions and user aggregate functions. [privateFonts Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})- specifies a collection that allows the Reporting                 Engine to use a private version of a font without installing the font on the host machine. This element is __mandatory__ for rendering PDF files on Linux in a.Net Core application. [appData Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/appdata-element%})- specifies the configuration settings for the temporary application data stored on the machine. [dpiAware Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/dpiaware-element%})- specifies the application's DPI awareness setting which affects the reports rendering.|
 |Parent element| __Configuration__ - Specifies the required root element in every configuration file that is used by the common language runtime and                 the.NET Framework applications. Only one Telerik.Reporting element can be used in the Configuration element.|
+
 
 ## XML-based Configuration
 
@@ -188,6 +190,7 @@ The JSON-based configuration structure used in __appSettings.json__ or other key
 
 
 # See Also
+
 
  
 

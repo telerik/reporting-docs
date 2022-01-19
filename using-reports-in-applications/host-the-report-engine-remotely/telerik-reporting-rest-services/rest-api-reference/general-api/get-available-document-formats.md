@@ -20,9 +20,11 @@ Public interface for retrieving available document formats.
 
 ## Response
 
+
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Available document formats retrieved successfully|
+
 
 __Response Body__ 
 

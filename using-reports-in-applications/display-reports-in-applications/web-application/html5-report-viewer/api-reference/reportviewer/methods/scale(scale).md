@@ -10,17 +10,17 @@ position: 15
 
 # scale(scale)
 
-
-
-Sets the scale factor and scale mode. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options).
+Sets the scale factor and scale mode. For more information please see jQuery.fn.telerik_ReportViewer’s scale and scaleMode options in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#options).
 
 Parameters:
 
+
 | Parameter | Description |
 | ------ | ------ |
-| __scale__ |object with properties:<br/>* *scale* <br/>* *scaleMode* |
+| __scale__ |object with properties:<ul><li>*scale* </li><li>*scaleMode* </li></ul>|
 
-Returns: the current *ReportViewer* object.         
+
+Returns: the current *ReportViewer* object. 
 
     
 ````js

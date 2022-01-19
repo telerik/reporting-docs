@@ -14,6 +14,7 @@ position: 1
 
 > The following article guides you how to use Blazor Report Viewer in a            [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor)            web application.         
 
+
 ## Prerequisites
 
 * [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 

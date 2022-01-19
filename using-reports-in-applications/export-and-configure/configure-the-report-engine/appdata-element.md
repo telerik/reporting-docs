@@ -23,6 +23,7 @@ __```<appData>``` element__
 Attributes| __path__ – string attribute. Specifies the absolute path to the folder which will be used to store temp data, such as Map tiles cache and                 SQLite assemblies.|
 |Parent element| __Telerik.Reporting__ – specifies the root element of the Telerik Reporting configuration settings. Only one appData child element can be used inside                 the Telerik.Reporting root element.|
 
+
 ## Example
 
 XML-based configuration file:

@@ -48,6 +48,7 @@ Selecting a Cross-section item can be done through the [Report Explorer]({%slug 
 
 > The Cross-section item has complete design-time support in Standalone Report Designer and Visual Studio Report Designer. The Web Report Designer currently provides basic designing capabilities and some of the properties of the Cross-section item cannot be edited through the dedicated property editors.
 
+
 The Cross-section item can be added programmatically to a report with the following code:         
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CrossSectionItemSnippets.cs region=CreateAndInitializeCrossSectionItemSnippet}}
@@ -99,6 +100,7 @@ The Cross-section item is not supported in all rendering extensions. Please chec
 
 
 # See Also
+
 
  
 

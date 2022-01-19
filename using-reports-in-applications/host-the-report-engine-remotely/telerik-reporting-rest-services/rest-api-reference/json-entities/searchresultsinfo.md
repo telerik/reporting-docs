@@ -14,6 +14,7 @@ position: 10
 
 The info object that contains the search results returned from the engine.       
 
+
     
           {
           "description": "Quarterly Sales Dashboard for 2003",
@@ -21,6 +22,7 @@ The info object that contains the search results returned from the engine.
           "page": 1
           }
         
+
 
 >caption Fields
 

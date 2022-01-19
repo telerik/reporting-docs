@@ -12,6 +12,7 @@ position: 3
 
 
 
+
 The __Upgrade Wizard__ will guide you through the process of upgrading Telerik Reporting projects to a newer           (or older) version of Telerik Reporting. This wizard will upgrade the following:         
 
 * The references to Telerik Reporting assemblies to the selected version
@@ -26,9 +27,11 @@ The wizard __will not__ change any code, namespaces, nor will it remove obsolete
 
 > Web Site projects are not supported by the Upgrade Wizard. In Web Sites assembly references are handled differently,             and our recommendation is to upgrade manually or to turn the project into a Web Application that can be upgraded automatically -  [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx).           
 
+
 >.NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:           
 * The references to the Telerik Reporting assemblies or NuGet packages
 * The Htm5 Report Viewer scripts>
+
 
 The Upgrade Wizard works only with project items. It is registered in Visual Studio and keeps tracks on Telerik Reporting installation folders on the machine.           Telerik Reporting references are updated by using the selected in the wizard version and the installation folder registered for that version.           If Telerik Reporting assemblies are referenced from a custom location, not the installation folder,           the Upgrade Wizard will not update the content of the custom folder and references will be pointed to the installation folder.         
 

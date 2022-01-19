@@ -14,6 +14,7 @@ position: 3
 
 The __CSV Data Source Wizard__ allows you to create a new or edit an existing         __CsvDataSource__ component based on several settings.         After the wizard appears you have to perform the following steps:       
 
+
 1. __Choose a CSV Source__ Choose between file or inline string               
 
   ![Csv Data Source Wizard 1](images/DataSources/CsvDataSourceWizard1.png)

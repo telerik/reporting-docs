@@ -14,6 +14,7 @@ position: 1
 
 This article is part of the Demo report guide on getting started with Telerik Reporting and demonstrates how to create a new report.       
 
+
 1. Navigate to the installation folder. For example, C:\Program Files (x86)\Progress\Telerik Reporting __{VERSION}__ \Report Designer.             
 
 1. Run the Standalone Designer (__Telerik.ReportDesigner.exe__).             

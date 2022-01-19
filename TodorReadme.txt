@@ -14,10 +14,11 @@ msbuild /p:LatestBinariesPath="D:\Work\MdDocs\Examples\CSharp\.NET Framework\Htm
 REMAINING:
 
 
+images in tables are not converted, images are not copied
 
 
-
-
+API reference redirect rules. Create custom rewriter
+https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/developing-a-custom-rewrite-provider-for-url-rewrite-module
 
 
 

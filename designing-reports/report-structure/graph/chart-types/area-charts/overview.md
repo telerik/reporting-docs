@@ -31,6 +31,7 @@ The following image shows an example of a stacked area chart:
 
 # See Also
 
+
  
 
 * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 

@@ -10,17 +10,17 @@ position: 3
 
 # authenticationToken(token)
 
-
-
 Sets the authentication token.
 
 Parameters:
 
+
 | Parameter | Description |
 | ------ | ------ |
-| __token__ |string; the authentication token. For more information please see jQuery.fn.telerik_ReportViewer’s authenticationToken option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options);|
+| __token__ |string; the authentication token. For more information please see jQuery.fn.telerik_ReportViewer’s authenticationToken option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#Options);|
 
-Returns: the current *ReportViewer* object.         
+
+Returns: the current *ReportViewer* object.
 
     
 ````js

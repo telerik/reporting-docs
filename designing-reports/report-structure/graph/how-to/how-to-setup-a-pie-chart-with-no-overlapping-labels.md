@@ -28,6 +28,7 @@ The __Pie chart__ uses  [BarSeries](/reporting/api/Telerik.Reporting.BarSeries) 
 
 > The *OutsideColumn* value of  __DataPointLabelAlignment__ property is respected only when applied on BarSeries using a                Polar coordinate system. When applied on another series type or Cartesian coordinate system, the engine falls back to *OutsideEnd* value.              The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their                 [DataPointLabelAngle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelAngle)  set to a multiple of 360 degrees (i.e. 0, 360, etc.).              
 
+
 The image below shows how a Pie Chart would look when the properties in question are set properly.                           
 
   ![Outside Column Pie Chart 2](images/Graph/OutsideColumnPieChart2.png)

@@ -12,6 +12,7 @@ position: 2
 
 
 
+
 A CrossTab item has four areas that contain table cells: corner, row group, column group and body. Cells in each area have a distinct function. You add cells to the body area to display detail and grouped data. The report designer adds cells to the row group or column group area when you create a group in order to display group instance values. The corner cells are created when both row groups and column groups exist.
 
 The following figure shows the areas for a CrossTab with nested row groups based on ProductCategory and ProductSubCategory, nested column groups based on OrderDate.Year.

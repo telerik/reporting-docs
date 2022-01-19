@@ -14,6 +14,7 @@ position: 5
 
 > This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
+
 The main idea of Ajax requests is the elimination of full-page postbacks. In contrast, only the relevant parts of the           page are updated, without a disturbing refresh. The markup that is transferred between the client machine and the server is reduced            dramatically, which results in a significant performance improvement.
 
 The Web ReportViewer can work both __Telerik RadAjax__ and the native __ASP.NET AJAX__ frameworks.          Generally you do not have to apply ajax for the Web ReportViewer itself as all its commands are issued through an http handler          and update only the report/report parameters areas and not the entire page.
@@ -94,6 +95,7 @@ End Sub
 
 
 # See Also
+
 
  
 

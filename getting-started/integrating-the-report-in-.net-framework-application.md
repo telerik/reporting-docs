@@ -14,6 +14,7 @@ position: 6
 
 This article is part of the Demo report guide on getting started with Telerik Reporting and demonstrates         how to include the report in a web application with the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).       
 
+
 1. Open __Visual Studio__.             
 
 1. Navigate to __File__ > __New__ > __Project__             > __ASP.NET Web Application (.NET Framework Visual C#)__.             
@@ -42,6 +43,7 @@ connectionString="Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;
 providerName="System.Data.SqlClient"/>
 </connectionStrings>
 ````
+
 
 ## Previewing the Result
 

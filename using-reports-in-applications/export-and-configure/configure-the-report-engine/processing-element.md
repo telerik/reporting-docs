@@ -22,6 +22,7 @@ Attributes| __cacheDefinitionProperties__ - optional boolean attribute. Determin
 |Child elements| __resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism.                 Only one __resourceResolver__ element can be used in the ```<processing>``` element.|
 |Parent element| __Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings.                 Only one                 ```<processing>``` element can be used in the Telerik.Reporting element.|
 
+
 ### Example
 
 XML-based configuration file:
@@ -84,6 +85,7 @@ JSON-based configuration file:
 
 We provide a mechanism for caching the report definition properties that boosts the performance. Naturally it prevents modifying the report during processing stage.               The default value of the property is __True__.             
 
+
 Basically, the [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) are not intended to be used to modify the report definition, as explained in the [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) article.                   For that reason, in R3 2016 for performance reasons, we introduced a change- cacheDefinitionProperties which caches the report definition properties, so such modifications are not respected.                   Setting the cacheDefinitionProperties to false will skip the definition item properties caching, which will allow the report definition to be changed in the report events. This may result in parformance penalty though.                 
 
 ### ResourceResolver
@@ -107,7 +109,9 @@ Attributes| __provider__ – required string attribute. Determines the provider 
 |Parent element| __processing__ - specifies the parent element of the Telerik Reporting configuration settings.|
 
 
+
 # See Also
+
 
  
 

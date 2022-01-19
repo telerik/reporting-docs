@@ -14,6 +14,7 @@ position: 2
 
 > This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
+
 In the Web Report Viewer, localized resources are stored in separate __RESX__ resource files and loaded according to the current UI culture settings. To understand how localized resources are loaded, it is useful to think of them as being organized in a hierarchical manner.
 
 ## Types of Resources in the Hierarchy
@@ -86,6 +87,7 @@ In order to distribute an application that uses __Telerik Reporting__           
 
 
 # See Also
+
 
  
 

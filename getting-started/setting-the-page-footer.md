@@ -14,6 +14,7 @@ position: 5
 
 This article is part of the Demo report guide on getting started with Telerik Reporting and demonstrates         how to display the current date and time as well as the [Barcode]({%slug telerikreporting/designing-reports/report-structure/barcode/overview%}) item.       
 
+
 1. Click __pageFooterSection__ and add a Textbox which will display the current date and time.             
 
 1. Set the __Value__ property __Expression__ to the Date and Time function               =Now().             

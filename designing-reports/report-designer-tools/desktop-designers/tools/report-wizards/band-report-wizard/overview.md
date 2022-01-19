@@ -28,6 +28,7 @@ To create a new report with the wizard:
 
    + Select the __Band Report Wizard__ option from the list and click __OK__.               
 
+
 |  __Step__ |  __Description__ |
 | ------ | ------ |
 | __Choose Data Source__ |This page lets you use an existing data source from a list of data sources<br/>            or add new Data Source. If you choose to create new data source, click the __Add New Data Source__ button to start the [Data Source Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard%}). It will walk you through an additional set<br/>            of steps and when finished will return you to the Report Wizard so you can continue.|

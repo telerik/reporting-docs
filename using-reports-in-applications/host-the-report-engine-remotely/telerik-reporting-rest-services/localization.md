@@ -24,6 +24,7 @@ Then the user agent (the browser) preferred language will be used as culture.
 
 # See Also
 
+
  
 
 * [globalization Element](http://msdn.microsoft.com/en-us/library/hy4kkhe0(v=vs.85).aspx)

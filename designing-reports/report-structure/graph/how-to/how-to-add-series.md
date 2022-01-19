@@ -14,6 +14,7 @@ position: 3
 
 The Graph series can share existing category groups, series groups and coordinate systems or you can create those from scratch.
 
+
 To add new series follow these steps:
 
 1. Open __Series__ collection editor and __Add__ the desired series - Area, Bar or Line.             
@@ -27,5 +28,6 @@ To add new series follow these steps:
 1. Set __X__, __Y__ or both to an expression, depending on which scale is numerical.             
 
 1. For __range series__ set __X0__ or __Y0__ properties.             
+
 
 

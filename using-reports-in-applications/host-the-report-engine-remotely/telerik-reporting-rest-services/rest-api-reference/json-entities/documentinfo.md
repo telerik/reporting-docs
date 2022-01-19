@@ -14,6 +14,7 @@ position: 1
 
 Document info indicating the status of the document resource.       
 
+
     
           {
             ‘documentReady’: true,
@@ -41,6 +42,7 @@ Document info indicating the status of the document resource.
           }
 
         
+
 
 >caption Fields
 

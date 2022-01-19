@@ -89,6 +89,7 @@ Determines whether the barcode  [Value](/reporting/api/Telerik.Reporting.Barcode
 
 # See Also
 
+
  
 
 * [       Swiss Implementation Guidelines QR-bill (PDF)

@@ -48,6 +48,7 @@ In this article we explained how to use the Graph Wizard to create a candlestick
 
 # See Also
 
+
  
 
 * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})

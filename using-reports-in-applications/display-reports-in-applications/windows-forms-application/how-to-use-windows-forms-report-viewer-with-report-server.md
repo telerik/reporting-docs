@@ -24,6 +24,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 ## Configuring the Windows Forms Report Viewer to work with Report Server
 
+
 1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
 
 1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__ property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection Editor dialog should appear:                   
@@ -64,6 +65,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 The most common reasons for failure are related with the authentication against Report Server. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
 
+
 | Problem | Cause |
 | ------ | ------ |
 |The viewer displays the message:`A problem occurred while registering client.`|Check if the supplied username and password are valid and the user's state is __Enabled__ in Report Server.|
@@ -71,7 +73,9 @@ The most common reasons for failure are related with the authentication against 
 |The viewer displays the message:`System.Net.WebException: The remote name could not be resolved: {server name}`|Make sure that the server specified in the connection string exists and has a valid and running Report Server instance.|
 
 
+
 # See Also
+
 
  
 

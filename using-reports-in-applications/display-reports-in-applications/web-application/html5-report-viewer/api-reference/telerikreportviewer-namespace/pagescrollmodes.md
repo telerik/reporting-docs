@@ -10,13 +10,12 @@ position: 2
 
 # PageScrollModes
 
-
-
 ## telerikReportViewer.PageModes
 
-|   |   |
-| ------ | ------ |
- Member name |
+
+|   |
+| ------ |
+| Member name |
 | ------ |
 |SINGLE_PAGE|
 |CONTINUOUS_SCROLL|

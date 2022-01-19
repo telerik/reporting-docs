@@ -10,16 +10,15 @@ position: 2
 
 # exportBegin(e, args)
 
-
-
 Occurs before exporting the report.
 
 Parameters:
 
+
 | Parameter | Description |
 | ------ | ------ |
-| __e__ |This is the  [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively  [jQuery's event.data](https://api.jquery.com/event.data/). e.data.sender is the report viewer that raised the event.|
-| __args__ |An object with properties:<br/>* *format* - the document format of the exported report.<br/>* *deviceInfo* - the device info that will be used for the export operation.<br/>* *handled* - prevent the default render and export operation. Default value: false.|
+| __e__ |This is the [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively [jQuery's event.data](https://api.jquery.com/event.data/). e.data.sender is the report viewer that raised the event.|
+| __args__ |An object with properties:<ul><li>*format* - the document format of the exported report.</li><li>*deviceInfo* - the device info that will be used for the export operation.</li><li>*handled* - prevent the default render and export operation. Default value: *false*.</li></ul>|
 
     
 ````js
@@ -36,3 +35,4 @@ $(function () {
 
 ## Event Binding
 
+The report viewer currently exposes two ways for binding event handlers to events. You may attach event handlers when you instantiate the report viewer, or after that, using the bind method. For a complete list of binding options during initialization please check [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). For a complete list of all event names exposed through telerikReportViewer.Events please check [telerikReportViewer Namespace, Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}).

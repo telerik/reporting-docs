@@ -10,17 +10,17 @@ position: 13
 
 # reportSource(rs)
 
-
-
 Sets the report source.
 
 Parameters:
 
+
 | Parameter | Description |
 | ------ | ------ |
-| __rs__ |an object with properties:<br/>* *report* - the report. For more information please see jQuery.fn.telerik_ReportViewer’s reportSource option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options);<br/>* *parameters* - an object with properties that names are the report parameters’ ids and values - the report parameters’ values;|
+| __rs__ |an object with properties:<ul><li>*report* - the report. For more information please see jQuery.fn.telerik_ReportViewer’s reportSource option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#options).;</li><li>*parameters* - an object with properties that names are the report parameters’ ids and values - the report parameters’ values;</li></ul>|
 
-Returns: the current *ReportViewer* object.         
+
+Returns: the current *ReportViewer* object. 
 
     
 ````js

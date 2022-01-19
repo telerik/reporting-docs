@@ -16,6 +16,7 @@ This article elaborates on localizing the Standalone Report Designer application
 
 Application internationalization involves improving the experience,          and decreasing the learning curve, for all non-English speakers.          To enable Report Designer localization, we provide resource files.          The string resources include keys for all UI areas.          This includes all backstage items, ribbon items, wizards, editors, enum descriptions, and properties.       
 
+
 The Report Designer UI language depends on the OS language,            Report Designer option and on the available resource files.            The language setting is part of the Report Designer Options General section.            The available languages in the languages dropdown depend on the available resource files.            This option forces the designer to load the desired language Report Designer resources.            The Report Designer uses.NET Framework editors that are fully localized only when the            OS UI language is set to the desired language.         
 
 The resource files should be in a folder with the name of the target culture.           This folder should be in a Resources directory sibling to the Report Designer executable.           For example for Spanish (Mexico) UI the resources should be available in:           *Report Designer folder\Resources\es-MX* 
@@ -28,6 +29,7 @@ If the resources are modified or the Report Designer language            is chan
 
 
 # See Also
+
 
  
 

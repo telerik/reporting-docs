@@ -18,9 +18,11 @@ All the keywords and their values are case insensitive where applicable.
 
 ## Embedded Report Engine
 
+
 | Keyword | Value |
 | ------ | ------ |
 |`Engine`|Embedded|
+
 
 __Example:__ `engine=embedded`
 
@@ -44,6 +46,7 @@ End Sub
 
 ## Report Server Engine
 
+
 | Keyword | Value |
 | ------ | ------ |
 |`Engine`|ReportServer|
@@ -52,6 +55,7 @@ End Sub
 |`Password`| *optional*; The password associated with the user name.|
 |`Timeout`| *optional*; The timeout for rendering a document measured in seconds. The default value is 100 seconds. Value of 0 indicates no expiration.|
 |`KeepClientAlive`| *optional True/False*. Sets whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__. The default value is True.|
+
 
 __Example:__ `engine=ReportServer;uri=http://localhost:83;username=admin;password=pass;timeout=30;keepClientAlive=true`
 
@@ -73,6 +77,7 @@ End Sub
 
 ## REST Service Engine
 
+
 | Keyword | Value |
 | ------ | ------ |
 |`Engine`|RestService|
@@ -81,6 +86,7 @@ End Sub
 |`UseDefaultCredentials`| *optional, True/False*; If provided, the client will send the default credentials with its requests. The default value is *False*.|
 |`Timeout`| *optional*; The timeout for rendering a document measured in seconds. The default value is 100 seconds. Value of 0 indicates no expiration.|
 |`KeepClientAlive`| *optional True/False*. Sets whether the client will be kept alive. When set to true expiration of the client will                 be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__. The default value is True.|
+
 
 __Example:__ `engine=RestService;uri=http://localhost:18103/api/reports;token=authToken;useDefaultCredentials=true;timeout=30;keepClientAlive=true`
 

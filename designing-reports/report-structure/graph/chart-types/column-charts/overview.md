@@ -37,6 +37,7 @@ The following image shows a typical column chart:
 
 # See Also
 
+
  
 
 * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 

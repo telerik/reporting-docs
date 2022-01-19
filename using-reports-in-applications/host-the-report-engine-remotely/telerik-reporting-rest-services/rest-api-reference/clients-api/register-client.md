@@ -21,9 +21,11 @@ POST /api/reports/clients
 
 ## Response
 
+
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Client registered successfully|
+
 
 __Response Body__ 
 
@@ -39,5 +41,6 @@ POST /api/reports/clients HTTP/1.1
 HTTP/1.1 200 OK
 {"clientId":"a5f3"}
 ````
+
 
 

@@ -22,6 +22,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 ## Configuring the Windows Forms Report Viewer to work with REST Service
 
+
 1. To create a form and host the report viewer in it, you can either use the item template, as explained                   [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%}), or place it yourself through drag-and-drop from the toolbox.                 
 
 1. As soon as the report viewer is on your form, select it and locate the __ReportEngineConnection__ property.                   invoke the UI editor by pressing the ellipsis button. The Report Engine Connection Editor dialog should appear:                   
@@ -62,6 +63,7 @@ This topic explains how to setup the Windows Forms Report Viewer to work with Te
 
 The following table shows the most common reasons for failure when using the Telerik Reporting REST Service. It is strongly recommended to use a tool like           Fiddler or any other web debugger when investigating such a problem.         
 
+
 | Problem | Cause |
 | ------ | ------ |
 |The viewer displays the message:`A problem occurred while registering client.`|Check if the REST service is active and running - the easiest way is to make a request for the available document formats, as explained [here]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%}).|
@@ -69,7 +71,9 @@ The following table shows the most common reasons for failure when using the Tel
 |The viewer displays the message:`System.Net.WebException: The remote name could not be resolved: {name}`|Make sure that the address specified in the connection string exists and represents a valid and running REST service instance.|
 
 
+
 # See Also
+
 
  
 

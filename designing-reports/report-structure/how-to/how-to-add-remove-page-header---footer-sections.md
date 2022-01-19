@@ -40,7 +40,9 @@ The PageHeader *PrintOnFirstPage* has priority over its *PrintOnLastPage*. The o
 
 > Page sections are not related to the report itself, but are relative to the paper or             screen. Thus page sections of nested/detail reports are ignored and only the page sections of the main report             are visible.           
 
+
 > [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections, because the latter are processed             after the report data has been processed. At this moment the report data source is not available anymore.           
+
 
 ## Adding Calculated Page Totals to a Header or Footer
 

@@ -30,6 +30,7 @@ Additionally you can choose not to render the axis elements, so the axis validat
 
 > When you work with discrete values - DatetimeScale, NumericalScale, LogarithmicScale,             you need at least two data points to have a properly calculated axis range and visible data.             Setting the Scale's Minimum and Maximum properties can resolve issues related to insufficient data.             To have the axis range set based on data, you can use the approach from             [How to: Use Bindings to Control the Coordinate System Properties]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties%}).           
 
+
 ## Format Axis Labels as Dates or Currencies
 
 When a numeric value is added to the y-axis, by default, the chart does not format the number before displaying it.           If your numeric field is a sales figure, consider formatting the numbers as currencies to increase the readability of the chart.         
@@ -84,6 +85,7 @@ Please note that using this feature means that some of the scale properties like
 
 
 # See Also
+
 
  
 

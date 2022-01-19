@@ -23,6 +23,7 @@ You can use a report designer of your choice - the described approach is valid f
 
    + In Visual Studio Report Designer: *File - New Project - Telerik Report Library [VERSION] - Blank Report*.                 
 
+
 1. Add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) by:               double-clicking on the SqlDataSource item in the VS Toolbox for VS Report Designer,               or on the SqlDataSource in the __Data tab__ of the Stabndalone Report Designer.               This should start the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}).             
 
 1. On the “*Choose Data Connection* ” page, you need to either select an existing connection to the               __AdventureWorks__ database, or create a new one by specifying the SqlClient Data Provider and a valid               connection string to an AdventureWorks database.                 On the "*Data Connection options* " page, the newly created connection string can be saved by name in the current project's CONFIG file               or it can be embedded with all details in the __SqlDataSource.ConnectionString property__  On the "*Configure Data Source Command* " page, paste the following SQL query in the “*Select Statement* ” window:             
@@ -46,6 +47,7 @@ ON P.ProductID = SOD.ProductID
 INNER JOIN Sales.SalesOrderHeader AS SOH
 ON SOD.SalesOrderID = SOH.SalesOrderID
 ````
+
 
     Click Next, and then on __Execute Query...__ button to make sure that everything is fine with your data connection and data is fetched from               the database. Click __Finish__ when you are ready. This will close the __SqlDataSource Wizard__.             
 

@@ -39,6 +39,7 @@ The following image displays a line chart that contains three series.
 
 # See Also
 
+
  
 
 * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 

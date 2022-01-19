@@ -25,6 +25,7 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
 
+
 1. Add new               [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%})               and name it __medalsData__. This data source will hold the information about the               countries, the ID of their respective olympic association, which place and how many times they have occupied it.             
    1. Download the                    [MedalsData.csv file](http://blogs.telerik.com/docs/default-source/reporting/medalsdata.csv?sfvrsn=2)                 , save it locally and insert its path into the *Select a file to import* textbox.                   The information in this file is an example data set that shows how many times a national olympic team had occupied a first, a second                   or a third place in the Olympic Games. It also has a relation with the Association of National Olympic Committees table                   that we will build later.                 
 
@@ -36,11 +37,13 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![CSV Preview Results](images/Map/CSV_PreviewResults.png)Click __Finish__ when you are ready.                 
 
+
 1. In the *Available data sources* list you should see the datasource you've already created.               Select it and click __Next__.             
 
 1. In the next page you have to select the fields which will be used to build the map charts.             
 
     >Since the map will use a Location Provider, there is no need to provide the  __Latitude__ and  __Longitude__ coordinates by yourself, so you can                 left these boxes empty and just define a location group, which will set the geocoding string.               
+
 
    + Select the __Column Chart__ radiobutton from the *Datapoints type* box.                 
 
@@ -92,6 +95,7 @@ In this how-to article we will show you how to create a Map which will present t
 
   ![Map Point And Column Chart Done](images/Map/MapPointAndColumnChart_Done.png)
 
+
 1. As you may have noticed, the information about the occupied places is present in the CSV file as integer numbers, that's why the               legend displays it this way. But the report will look better if the information about the places is displayed with medal names -                __Gold__, __Silver__ and __Bronze__.                This can be achieved using an expression for the                [LegendItem](/reporting/api/Telerik.Reporting.LegendItem).                [Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value), but we will use a               [Calculated Field]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields%})            , added to the CSV Data Source. The benefit of this approach is that we can use the calculated field as any other field, without having to               use an expression every time we need to address it.                 Select the __medalsData__ data source, add a calculated field named __Medal__              of type `String` to it and set its expression to:             
 
     
@@ -124,6 +128,7 @@ Id,Name
 
    + Select the Map item and add a Filter Rule, that will filter out the teams with an AssociationId different than the ones, selected in the                   __associationParam__. Set the __Expression__ to `=Fields.AssociationId`,                   the __Operator__ to `In` and the __Value__ to                   `=Parameters.associationParam.Value`.                 When you close the Filter Rules dialog, the designer gets updated and the map should show only the teams                   from the Pan-American Sports Organization. If you preview the report, you will be able to change the map extent                   only by selecting different combinations of parameter values.                 
 
+
 1. Since the column charts on the map are not suitable to display any labels on them, we will add an additional CrossTab,               which will show the number of medals and calculate their amount for each national team.             
    + Start the Crosstab Wizard and choose the __medalsData__ data source on its                    __Choose a Data Source__ page.                 
 
@@ -149,6 +154,7 @@ Id,Name
 
   ![Crosstab Done](images/Map/Crosstab_Done.png)
 
+
 1. In this step we will add some interactivity to our report, allowing the user to select a national team from the crosstab and changing               the map extent according to its selection. The drill-through action will use an invisible report parameter which will store               the selected team name and utilize it in conditional formattings and filterings.             
    + Add new report parameter named __teamParam__. Set its __AllowNull__ property                   to __True__ and leave the other properties as set by its default constructor.                 
 
@@ -166,6 +172,7 @@ Id,Name
 
   ![Point Map Data Point Conditional Formatting](images/Map/PointMapDataPointConditionalFormatting.png)
 
+
 1. Finally we will add a small Graph showing a               [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/how-to-create-column-chart%})               that will be used to display the amount of medals won by each team.             
    + Start the Graph Wizard by selecting __Column__, __Clustered Column__ from the                    __Insert__ toolbar of the Standalone Report Designer.                 
 
@@ -177,6 +184,7 @@ Id,Name
 
    + In order to make it look the same way as the map's column charts, you have to set the __Sorting__ of the                   first member of the graph's series groups to                   `=Fields.Place ASC` and apply the same ColorPalette you have defined in step 8 to the Graph item.                 Additionally you can make the graph axes invisible, set the Y axis __Minumum__ to 0 and change the styling properties of its data points and data point labels.                 
 
+
 1. When you are finished, you can preview your report and it should look similar to this one:               
 
   ![Map Olympic Medals Done](images/Map/MapOlympicMedals_Done.png)
@@ -187,6 +195,7 @@ You can download this example report as a __.trdx__ report definition from the f
 
 
 # See Also
+
 
  
 

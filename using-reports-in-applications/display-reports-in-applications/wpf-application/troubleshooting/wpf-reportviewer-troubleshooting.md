@@ -50,6 +50,7 @@ More details about the settings required by the WPF ReportViewer are available i
 
 > [Telerik Reporting Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) will update only references to Telerik Reporting assemblies and configuration settings.             You will have to manually update the related  __Telerik.ReportViewer.Wpf.xaml__ files, and Telerik UI             for WPF XAML files distributed by Telerik Reporting. This includes manual update of Telerik UI for WPF assemblies distributed by Telerik Reporting.           If you use Telerik UI for WPF as a separate product, you can run  [Telerik UI for WPF Upgrade Wizard](http://docs.telerik.com/devtools/wpf/visual-studio-extensions/for-wpf-vs-extensions-upgrading)  which will update Telerik UI for WPF assembly references and XAML resources automatically.           
 
+
 ## "Cannot resolve dependency to assembly 'Telerik.Windows.XXXX...'." error on running the application.
 
 The WPf ReportViewer control is built against a specific version of Telerik UI for WPF on each official release. Please check the dependencies           for the used Telerik Reporting version - [WPF Dependenices per release]({%slug telerikreporting/upgrade/overview%}). You can           update assembly references accordingly or add  [binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx).         

@@ -19,6 +19,7 @@ position: 8
 * [Guidance for using reports from an existing.NET Framework 4+ report library in a.NET Core application](https://docs.telerik.com/reporting/knowledge-base/use-existing-report-library-in-net-core-app) 
 * [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](https://docs.telerik.com/reporting/knowledge-base/how-to-implement-telerik-reporting-in-asp-net-core-mvc) >
 
+
 In case you are not familiar with ASP.NET Core, check it out on the  [official page](https://www.asp.net/core).       
 
 Telerik Reporting ASP.NET Core packages are available as of Telerik Reporting R3 2016 SP1 release.         They are built against the __full.NET Framework__.       
@@ -34,6 +35,7 @@ If you need to have your ASP.NET Core Application targeting more platforms,     
 More details about hosting the Reporting REST Service are available in           [How to Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})           and [How to Self Host Telerik Reporting REST Web API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api%}).         
 
 > You might exprience issues with displaying images in the report if using ASP.NET Core  __1.1.0__ due to the way the requests are handled.             It is recommended to upgrade to a newer version of ASP.NET Core -  [.NET Core releases](https://github.com/dotnet/core/releases) 
+
 
 ## Prerequisites
 
@@ -264,5 +266,6 @@ list item to the navigation. It should become like this:
 Telerik Reporting relies on the ConfigurationManager to resolve named connection strings and to configure the reporting engine.           Thus if you have any named connectionstrings or Telerik Reporting configuration you have to add __app.config__ configuration file           to the project's root.           For more information see: [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).         
 
 Finally, run the project and navigate to the __Report__ view to see the report.         
+
 
 

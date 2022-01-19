@@ -36,8 +36,10 @@ More details about the settings required by the Silverlight ReportViewer are ava
 
 > [Telerik Reporting Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) will update only references             to Telerik Reporting assemblies and configuration settings.             You will have to manually update the related  __Telerik.ReportViewer.Silverlight.xaml__ files, and Telerik UI             for Silverlight XAML files distributed by Telerik Reporting. This includes manual update of Telerik UI for Silverlight assemblies             distributed by Telerik Reporting.           If you use Telerik UI for Silverlight as a separate product, you can run  [Telerik UI for Silverlight Upgrade Wizard](http://docs.telerik.com/devtools/silverlight/visual-studio-extensions/for-silverlight-vs-extensions-upgrading)  which will update Telerik UI for Silverlight assembly references and XAML resources automatically.           
 
+
 ## The report in the Silverlight ReportViewer is messed or different than the design-time preview.
 
 The Silverlight ReportViewer displays teh report rendered in XAML format. External styles may affect the produced XAML that contains           standard elements like Canvas, TextBlock and etc. Test excluding styles to check if they change the displayed content, or test exporting in a format like PDF.         
+
 
 

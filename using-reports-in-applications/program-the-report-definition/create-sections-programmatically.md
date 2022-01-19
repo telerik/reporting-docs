@@ -12,6 +12,7 @@ position: 2
 
 
 
+
 To create sections in code, instantiate the appropriate object, set its properties, and add it to the __Report__ object's __Items__ collection. The objects you will need to work with are:
 
 * __DetailSection__ - for a detail section

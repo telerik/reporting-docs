@@ -10,9 +10,7 @@ position: 17
 
 # unbind(eventName, eventHandler)
 
-
-
-Unbinds event handlers from the specified event.         
+Unbinds event handlers from the specified event. 
 
     
 ````js

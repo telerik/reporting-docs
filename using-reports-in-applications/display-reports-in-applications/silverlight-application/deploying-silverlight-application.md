@@ -12,6 +12,7 @@ position: 5
 
 
 
+
 The deployment of a Silverlight application that utilizes Telerik Reporting can be divided in three steps:
 
 1. Deploying the __Silverlight report viewer__ : All referenced assemblies in the Silverlight application are embedded at compile time into the XAP file,               which should be deployed along with the application that hosts the Silverlight application.             
@@ -34,6 +35,7 @@ These assemblies add up to the __Telerik Reporting Engine__ functionality and sh
 
 
 # See Also
+
 
  
 

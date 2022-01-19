@@ -23,6 +23,7 @@ In this how-to article we will show you how to create a graph with both column a
 
    + If you use the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}):Initiate the __Graph Wizard__ from the __Visual Studio toolbox__. Then select __Clustered Column__ chart type and click                    __OK__.                    This will bring up the __Graph Wizard__ which will help you create the first series.                 
 
+
 1. Click __'Add New Data Source...'__ button and select                __[SQL Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__ :             
    1. Set the connection string to the demo AdventureWorks database.
 
@@ -39,7 +40,9 @@ WHERE SOH.OrderDate between cast('2003-01-01' as datetime) and cast('2003-12-31'
 and S.SalesPersonId = 283
 ````
 
+
    1. You can click on __Execute Query...__ just to check if everything is OK with the database connection.                   Click __Finish__ when you are ready.                 
+
 
 1. In the *Available data sources* list you should see the datasource you've already created.               Select it and click __Next__.             
 
@@ -55,7 +58,9 @@ and S.SalesPersonId = 283
 
 1. To add another series to the graph, you can right-click on the graph and select *Add Graph Series…*                from the context menu. This will bring up a dialog window with all the chart types to select from.                Select __Line, Line with Markers__ and click __OK__.                The Graph wizard will be displayed again. Repeat __step 4__ for choosing and dragging the data source fields to               *Categories* and *Values* boxes, but this time choose __Avg__              as an aggregate function for the __LineTotal__ field. Click __Next__ and __Finish__ when you are ready.             
 
-    >When adding a new Series, a new Category group is also created. In this guide we are using a field of type  __DateTime__ for category. This will                  set the scale of the X-axis to  __DateTime Scale__ which will correctly display the two series on top of each other. With any other type, like                   __Numerical Scale, Logarithmic Scale or Category Scale__, the two Series will be displayed next to each other and not overlapping correctly.               To fix this, select the newly created series and change the  __CategoryGroup__ to the group used by the first series.               
+    >When adding a new Series, a new Category group is also created. In this guide we are using a field of type  __DateTime__ for category. This will                  set the scale of the X-axis to  __DateTime Scale__ which will correctly display the two series on top of each other. With any other type, like                   __Numerical Scale, Logarithmic Scale or Category Scale__, the two Series will be displayed next to each other and not overlapping correctly.               To fix this, select the newly created series and change the  __CategoryGroup__ to the group used by the first series.                 
+
+  ![Change Category Group](images/Graph/HowToBarLineSeries/ChangeCategoryGroup.png)
 
 1. Name the series’ legend items accordingly using the property LegendItem. [Value](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value)  of both of your series.               Finally your graph should look like the one shown below:               
 
@@ -63,6 +68,7 @@ and S.SalesPersonId = 283
 
 
 # See Also
+
 
  
 

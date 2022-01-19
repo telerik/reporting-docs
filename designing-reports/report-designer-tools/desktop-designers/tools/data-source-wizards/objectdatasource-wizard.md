@@ -14,6 +14,7 @@ position: 5
 
 After the __ObjectDataSource__ wizard appears you have to perform the following steps:       
 
+
 1. Select a Business Object.In this step you have to specify the business object to use for your data source. The available               business objects are organized in two tabs for easier navigation:             
 
    + __Available data source types__ This tab lists all available types that can be used with the __ObjectDataSource__ component. That                   includes all public, non-abstract, non-generic classes and structures from the current project and                   from all other referenced projects. The types are organized in a hierarchical manner grouped by namespace:                 
@@ -132,6 +133,7 @@ When the __"Show data components only"__ check box from the previous step is not
 
 
 # See Also
+
 
  
 

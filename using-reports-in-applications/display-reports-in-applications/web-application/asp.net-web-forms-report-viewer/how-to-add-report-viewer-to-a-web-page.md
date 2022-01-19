@@ -14,6 +14,7 @@ position: 1
 
 > This is a legacy report viewer and for new projects our recommendation is to use the latest web forms report viewer -           [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})
 
+
 ## Assign report to the viewer in design time
 
 To use Telerik Reports in web application, you need the Web report viewer:
@@ -79,6 +80,7 @@ End Sub
 
 
 # See Also
+
 
  
 

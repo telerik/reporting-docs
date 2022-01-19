@@ -20,7 +20,9 @@ This element is respected only when the PDF rendering extension is used in.NET C
 
 The following sections describe attributes, child elements, and parent elements.
 
+
 >caption ```<fontLibrary>``` element
+
 
 |   |   |
 | ------ | ------ |
@@ -30,16 +32,19 @@ Attributes| __useDefaultLocations__ - determines if the system's default font lo
 
 >caption ```<add>``` element
 
+
 |Attribute|
 
 | __path__ |Required attribute. Specifies the path to a fonts folder. The path can be absolute or relative to the current application folder.|
 | __searchSubfolders__ |Required attribute. Determines if the subfolders of the specified path will be recursively traversed.
+
 
 |   |   |
 | ------ | ------ |
 |
 |Child elements|None|
 |Parent element| __fontLibrary__ |
+
 
 ## Example
 
@@ -82,6 +87,7 @@ JSON-based configuration file:
 
 
 # See Also
+
 
  
 

@@ -20,6 +20,7 @@ Since we’ve used an asynchronous method and we do not know when the render wou
 
 > We invoke the       [ShowDialog](http://msdn.microsoft.com/en-us/library/system.windows.controls.savefiledialog.showdialog(VS.95).aspx)        method prior to having the rendered report, because the dialog box, can only be called from user-initiated code, such as a button Click event. If ShowDialog is called from code that is not user-initiated, a SecurityException is thrown.         
 
+
     
 ````C#
 public partial class MainPage : UserControl

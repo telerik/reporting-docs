@@ -29,6 +29,7 @@ In the examples below we show how to access a report item from within the report
 
 > In the code example below we are referring to a *Processing.TextBox*, not Report1.TextBox.  The Processing.TextBox represents the TextBox during processing and has a different set of properties than the Report1.TextBox used when defining the report.
 
+
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddSectionDataBindingSnippet}}
 ````C#
 private void detail_ItemDataBinding(object sender, EventArgs e)

@@ -19,6 +19,7 @@ position: 9
 * [Guidance for using reports from an existing.NET Framework 4+ report library in a.NET Core application](https://docs.telerik.com/reporting/knowledge-base/use-existing-report-library-in-net-core-app) 
 * [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](https://docs.telerik.com/reporting/knowledge-base/how-to-implement-telerik-reporting-in-asp-net-core-mvc) >
 
+
 In case you are not familiar with ASP.NET Core, check it out on the  [official page](https://www.asp.net/core).       
 
 Telerik Reporting ASP.NET Core packages are available as of Telerik Reporting R3 2016 SP1 release.         They are built against the __full.NET Framework__.       
@@ -79,6 +80,7 @@ ASP.NET Core does not support references to assemblies, but instead works with N
 > If the project refers  __Microsoft.AspNetCore.All__ package the latter should be removed from *Dependencies->NuGet* - right click on the package and select 'Remove'.           In this case the following packages should be added manually to the project - right click on the project and select 'Manage NuGet Packages...':           
 * __Microsoft.AspNetCore__ 
 * __Microsoft.AspNetCore.Mvc__ >
+
 
 To setup the Reporting REST service download __Telerik.Reporting__         and __Telerik.Reporting.Services.AspNetCore__         NuGet packages from the private Telerik NuGet feed at            [https://nuget.telerik.com/nuget](https://nuget.telerik.com/nuget).           How to add a NuGet feed is explained in            [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume) 
 
@@ -196,5 +198,6 @@ namespace WebApplication1.Controllers
 1. Set the launchSettings.json launchUrl to the new HTML page.             
 
 1. Finally, run the project to see the report.             
+
 
 

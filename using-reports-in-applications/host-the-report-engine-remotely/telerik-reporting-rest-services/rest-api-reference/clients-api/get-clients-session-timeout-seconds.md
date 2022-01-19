@@ -21,9 +21,11 @@ GET /api/reports/clients/sessionTimeout
 
 ## Response
 
+
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Successfully retrieved the clients session timeout|
+
 
 __Response Body__ 
 
@@ -39,5 +41,6 @@ GET /api/reports/clients/sessionTimeout HTTP/1.1
 HTTP/1.1 200 OK
 {"clientSessionTimeout":900}
 ````
+
 
 

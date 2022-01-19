@@ -26,6 +26,7 @@ Telerik Reporting WCF Service exposes two contracts:
 
 > The default  __Telerik Reporting WCF Service__ implementation uses ASP.NET Session in order to store various resources such as report pages             and images. When ran out of web context (e.g. self-hosted service), it uses internal session storage. To make your own implementation, create your own service class derived from  [ReportServiceBase](/reporting/api/Telerik.Reporting.Service.ReportServiceBase)              and override its  [GetState](/reporting/api/Telerik.Reporting.Service.ReportServiceBase#Telerik_Reporting_Service_ReportServiceBase_GetState_System_String_)  and  [SetState](/reporting/api/Telerik.Reporting.Service.ReportServiceBase#Telerik_Reporting_Service_ReportServiceBase_SetState_System_String_System_Object_)  methods.           
 
+
 The service main purpose is to provide access for the Silverlight Report Viewer to the reporting engine. There are 3 methods of Telerik.Reporting.Service.IReportService that may be of interest to you:         
 
 * __IList```<ReportInfo>```__ [Telerik.Reporting.Service.IReportService.ListAvailableReports](/reporting/api/Telerik.Reporting.Service.IReportService#Telerik_Reporting_Service_IReportService_ListAvailableReports)                - returns a list of all available for the report service hosting               application Report types. That is all types implementing the               The  [Telerik.Reporting.IReportDocument](/reporting/api/Telerik.Reporting.IReportDocument)                interface that are available for the application hosting the               report service.             
@@ -44,6 +45,7 @@ For more information on deploying a Silverlight application that utilizes Teleri
 
 
 # See Also
+
 
  
 

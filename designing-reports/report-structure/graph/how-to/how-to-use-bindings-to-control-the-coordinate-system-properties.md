@@ -33,12 +33,14 @@ The nested graph's data will show the sales of some of the most popular electric
 
   ![Graph BindingsCSVPreview Results](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsCSVPreviewResults.png)Click __Finish__ when you are ready.                 
 
+
 1. The easiest way to define the groupings for a data item is to use the [GroupExplorer tool window]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).               If it is not visible, you can activate it using the __Telerik Reporting menu__ in Visual Studio or __View tab__ in the Standalone Report Designer.             
    + Select the report, right-click on the __Detail__ group, displayed in the __Group Explorer__                 and select *Add Parent Group* from the context menu. This will bring the __Edit Grouping__                 dialog window.                 
 
    + Add a new group, using the field __Vehicle__ as a grouping member.                 
 
    + Add ascending sort by the same field using the button at the end of the *Grouping* column in __Group Explorer__.                 
+
 
 1. According to our scenario, the group header will contain all the items used to display all the information,               so you can make the details and group footer sections invisible by setting their __Visible__ property to __false__.             
    + Add new TextBox to the group header, set its Font.Size to 18pt and its value to `=Fields.Vehicle`.                 
@@ -65,12 +67,14 @@ The nested graph's data will show the sales of some of the most popular electric
 
    + Currently the Graph displays data for all the vehicle models, but according to the scenario it should display the data                   only for the current group. To do this, add a __Binding__ to the Graph item, setting                   `DataSource` as a __PropertyPath__                 and `=ReportItem.DataObject` as an __Expression__.                   You can delete its current data source if you wish.                 
 
+
 1. If you now preview your report, it should display a label and a graph for each vehicle in the data source.               However, looking at the second graph that shows the *Cadillac ELR* data,               you will notice that its layout needs some improvements.               
 
   ![Graph Bindings Original Layout ELR](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsOriginalLayout_ELR.png)
    + The datapoint marker on __August'14__ is cut, because the Y axis scale maximum value is automatically                   calculated as 200, which is exactly the value that this datapoint represents. In this case it will be useful if we can                   control the minimum and maximum values of the scale according to the current data.                 
 
    + The labels on the X axis scale are too close to each other and that makes the chart unreadable. Usually for such cases                   the  [LabelStep](/reporting/api/Telerik.Reporting.DateTimeScale#Telerik_Reporting_DateTimeScale_LabelStep)                    property can be used, but it should be set dynamically for a particular set of data - otherwise it could be                   applied unnecessarily.                 
+
 
 1. The above problems can be resolved using coordinate system's                [Bindings](/reporting/api/Telerik.Reporting.GraphCoordinateSystem#Telerik_Reporting_GraphCoordinateSystem_Bindings).               Expand the coordinate system properties in the __PropertyGrid__ and bring the Bindings dialog up               by clicking on the button on the right side of the __Bindings__ property, as shown below:               
 
@@ -83,12 +87,14 @@ The nested graph's data will show the sales of some of the most popular electric
 
   ![Graph Bindings Fixed Layout ELR](images/Graph/HowToUseBindingsToControlCoordSystemProperties/GraphBindingsFixedLayout_ELR.png)
 
+
 In this article we demonstrated how to set dynamically the graph's coordinate system properties using __Bindings__.             All the described steps are valid for both             [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})             and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and             can be reproduced with code as well.           
 
 You can download this example report as a __.trdx__ report definition from the following link:                [How to: Use Bindings to Control the Graph's Coordinate System Properties.](http://blogs.telerik.com/docs/default-source/reporting/graphbindingsexample.trdx?sfvrsn=2) 
 
 
 # See Also
+
 
  
 

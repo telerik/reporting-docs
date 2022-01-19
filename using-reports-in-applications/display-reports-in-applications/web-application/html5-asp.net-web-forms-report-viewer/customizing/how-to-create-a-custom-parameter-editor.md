@@ -14,6 +14,7 @@ position: 4
 
 The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.       
 
+
 Custom parameter editors are defined through the ParameterEditors element when creating the report viewer control.           Check out the following list with the available parameter editors:         
 
 The following example illustrates how to use the Kendo DropDownList widget for a           single parameter value parameter editor which also has available values:         

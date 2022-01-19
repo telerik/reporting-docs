@@ -16,7 +16,9 @@ Defines a collection that allows the Reporting Engine to use a private version  
 
 >  __Known issue with the Windows Platform:__ If you order the fonts in the PrivateFontCollection first regular then bold           the GDI+ measure string size for bold font style is incorrect.            This is observed in Windows 8.1 and newer and may lead to unexpected rendering and aligning issues.           For more information see            [            Wrong Measurements from MeasureString          ](            https://github.com/Microsoft/DirectXTK/issues/34          ).          __Known issue with Azure:__ The required.NET API for handling private fonts is making GDI calls that are blocked in Azure App Services.           If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in             [            PrivateFontCollection is not working          ](            https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working          ).         
 
+
 >  __Known issue with PDF rendering in.NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the  __privateFonts__         element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font,            used in the report, is not available.         
+
 
 The private fonts are used for all rendering extensions. Still the font rendering on the client         computer depends on the viewer configuration and document format specifications:       
 
@@ -33,7 +35,9 @@ As with most types of software, font files are licensed, rather than sold,      
 
 The following sections describe attributes, child elements, and parent elements.
 
+
 >caption ```<privateFonts>``` element
+
 
 |   |   |
 | ------ | ------ |
@@ -42,6 +46,7 @@ Attributes|None|
 |Parent Elements|* __configuration__ - Specifies the root element in every configuration file that is used by<br/>                  the common language runtime and the.NET Framework applications.<br/>* __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.|
 
 >caption ```<add>``` element
+
 
 |Attribute|
 
@@ -54,11 +59,13 @@ Attributes|None|
                     Specify this attribute if you have to specify font family with multiple font
                     files for different style or if specified font file is not containing Regular style.
 
+
 |   |   |
 | ------ | ------ |
 |
 |Child elements|None|
 |Parent element| __privateFonts__ |
+
 
 ## Example
 
@@ -108,6 +115,7 @@ JSON-based configuration file:
 
 
 # See Also
+
 
  
 

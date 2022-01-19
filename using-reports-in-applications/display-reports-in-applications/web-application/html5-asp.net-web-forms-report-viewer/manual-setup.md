@@ -39,6 +39,7 @@ The following steps produce a view with settings similar to these of the local W
 
 > All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
 
+
 1. Create new ASP.NET Web Forms Application.
 
 1. Add new WebForm that does not use a Master page.

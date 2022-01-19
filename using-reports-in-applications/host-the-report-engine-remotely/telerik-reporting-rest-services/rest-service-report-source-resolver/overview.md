@@ -44,6 +44,7 @@ The Reporting REST Service's resolver is used when resolving information for a r
 
 > When working with other types of report sources for which there is no built-in report source resolver implementation, use a              [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) implementation.             For example, when using [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) with  [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)              the action will not work unless a custom report source resolver which can handle  [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource)               has been implemented.           
 
+
 ## Custom Report Source Resolver implementations:
 
 Implementing the  [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver)            interface allows you to include custom logic for creating, modifying, or accessing existing reports on the server,           and to use any of the available [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).           An example implementation is available in [How To Implement a Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}).         
@@ -51,7 +52,9 @@ Implementing the  [IReportSourceResolver](/reporting/api/Telerik.Reporting.Servi
 > The              [Telerik.Reporting.Services.IReportSourceResolver.Resolve](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_)              method will be called each time when the Reporting engine needs the report source. This can happen serveral times  until the report document is             completely rendered. It is important that when the method is invoked multiple times it returns exactly the same             report source for a given value of the passed string argument.           
 
 
+
 # See Also
+
 
  
 

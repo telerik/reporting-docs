@@ -12,13 +12,16 @@ position: 2
 
 
 
+
 The __Report__ object exposes these events:         
+
 
 | Event | Description |
 | ------ | ------ |
 | __ItemDataBinding__ |Fires just before the report is bound to data.|
 | __NeedDataSource__ |Fires when the report does not have data source set.|
 | __ItemDataBound__ |Fires just after the report is bound to data.|
+
 
 The example below shows the NeedDataSource event assigning the report __DataSource__ at runtime. This event only fires when the __DataSource__ is null.         
 

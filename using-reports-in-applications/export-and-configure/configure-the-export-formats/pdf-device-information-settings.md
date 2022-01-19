@@ -16,6 +16,7 @@ The following table lists the device information settings for rendering in PDF f
 
 ## PDF Device Information Settings
 
+
 |  __Name__ |  __Type__ |  __Description__ |
 | ------ | ------ | ------ |
 |ComplianceLevel|String|The PDF/A compliance level. The supported values are __None__, __PDF/A-1b__, __PDF/A-2b__ and __PDF/A-3b__.                 Default value: None. If EnableAccessibility is set to True, due to incompatibility the ComplianceLevel metadata is ignored.|
@@ -49,12 +50,14 @@ The following table lists the device information settings for rendering in PDF f
 |ViewerPrintScaling|String|The page scaling option to be selected when a print dialog is displayed for this document. Valid values are __None__, which indicates that the print dialog should reflect no page scaling, and __AppDefault__, which indicates that applications should use the current print scaling. Default value: __None__.|
 |ViewerRenderToolTips|Boolean|Determines if the tooltips in the report document will be rendered in the PDF document. The tooltips are displayed using __text annotations__,                 represented by a visible icon that shows a tooltip when hovered. Default value: __false__.|
 
+
 For an example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).                    
 
 For more detailed explanation about the device information settings and their effect on the produced PDF document, see [Design Considerations for PDF Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%}).         
 
 
 # See Also
+
 
  
 

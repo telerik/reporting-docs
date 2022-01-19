@@ -14,6 +14,7 @@ position: 10
 
 The graph series can be oriented towards both axes of its corresponding coordinate system.
 
+
 ###To change the orientation of all series inside of a graph:
 
 1. Select the graph in the designer.
@@ -21,6 +22,7 @@ The graph series can be oriented towards both axes of its corresponding coordina
 1. Right-click and select Swap Axes from the context menu.
 
 > Performing this action will swap the X / Y values of all series and interchange the axes positions of all coordinate systems.          
+
 
 ###To change the orientation of individual series:
 

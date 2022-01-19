@@ -32,6 +32,7 @@ This section describes the common settings for one-dimensional barcodes.
 
 1. Code128 can represent both ASCII characters and non-ASCII control characters. Normally the barcode report item inserts automatically               the appropriate control characters in order to conform to the Code128 specification. However certain applications might require manual               insertion of certain control characters, such as the functional characters: FNC1-FNC4. For this purpose the barcode report item assigns               special Unicode values to these control characters outside the normal 0-127 ASCII code range. The following table lists all Code128 control               characters and their corresponding Unicode values:             
 
+
 >caption Code 128 Control Characters
 
 | Control Character | Hexadecimal | Decimal |
@@ -48,6 +49,7 @@ This section describes the common settings for one-dimensional barcodes.
 |Start B|FD|253|
 |Start C|FE|254|
 |Stop|FF|255|
+
 
 For example, the following code inserts the FNC4 control character in the middle of a barcode:
 

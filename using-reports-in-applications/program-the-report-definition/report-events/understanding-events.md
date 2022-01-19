@@ -14,6 +14,7 @@ position: 1
 
 Report Events       
 
+
 Delivering a Telerik Report to the end user is a process involving several stages. Knowledge of the           [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}) is crucial to understanding how events work in           Telerik Reporting.         
 
 ## Report Definition
@@ -23,6 +24,7 @@ The Report Definition is created during the first stage of the life cycle. This 
 Let's illustrate this with an example. While in design-time, if you add a TextBox to the Detail Section of the report           that you are designing, a private field of type TextBox will be added to the code-behind file and some basic initialization code           will be generated within the InitalizeComponent method of the report class.         
 
 > The  __InitializeComponent__ method initializes (creates) a Report and its             child items. It is a special method recognized and parsed by the Report Designer in order to display the report in             design-time.           
+
 
 This object will later serve as the definition for creating a concrete instance of the TextBox for each row from the           data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example           Telerik.Reporting.TextBox.         
 
@@ -40,12 +42,14 @@ After the processing item has been data bound the __ItemDataBound__ event       
 
 > Report Events are not intended to be used as a place/time to modify the report definition.             As of  __Q3 2016__ any changes on the report items' definitions             in processing stage events will not make effective change in the resulting report.             Report definition properties are read and cached when the report processing gets started.             In previous versions changes may take effect, resulting in changed output for all processing items              processed after the event handler execution.           
 
+
 ## Report Rendering
 
 After processing is over, the processed report is ready for rendering in one of the available formats, see [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}).           There are no events triggered during this stage of the report generation.         
 
 
 # See Also
+
 
  
 

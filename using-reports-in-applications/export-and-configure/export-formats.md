@@ -12,6 +12,7 @@ position: 0
 
 
 
+
 An export format is a component of the Telerik Reporting engine that transforms report data and layout into a           device-specific format. The export formats are also referred to as rendering extensions            because they render the report content into a specific output format and because they get plugged into the engine as extensions.           By default Telerik Reporting outputs reports in the following formats: Image, PDF, HTML, MHTML,           Excel 97-2003, XLSX, PPTX, DOCX, RTF, XAML and CSV. Interactive rendering extensions (IMAGEInteractive, HTML5Interactive,           XAMLInteractive, WPFXAMLInteractive) are used internally by viewers to allow interaction with the content e.g., toggling           the visibility of items/sections. Interactive rendering extensions are for Telerik Internal use only.         
 
 You can specify rendering extension parameters in your application’s configuration file to override the default report rendering           behavior. The rendering extension parameters are specified as device information settings.         
@@ -22,9 +23,12 @@ If you want to set rendering extension parameters for a specific report or rende
 
 > For Windows applications the configuration file is called app.config and for ASP.NET applications – web.config. For more information             about configuring a.NET application, see               [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/).           
 
+
 > All configuration settings on Telerik Reporting engine are applied only at runtime, not in design-time.
 
+
 The following table describes the rendering extensions that are included with Telerik Reporting:
+
 
 | Extension Name | Description | Optional Settings | Type |
 | ------ | ------ | ------ | ------ |
@@ -47,6 +51,7 @@ The following table describes the rendering extensions that are included with Te
 |XAMLInteractive|Renders a report in XAML for Silverlight with [interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).                 (This is a multi-stream rendering extension and should be only used with                   [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)). __Telerik internal use only__.|-|Telerik.Reporting.XamlRendering.SilverlightReportInteractive, Telerik.Reporting, Version= __x.x.x.x__,                 Culture=neutral, PublicKeyToken=a9d7983dfcc261be|
 |WPFXAML|Renders a report in XAML for WPF with [physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).                 (This is a multi-stream rendering extension and should be only used with                   [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)).|-|Telerik.Reporting.XamlRendering.WpfReport, Telerik.Reporting, Version= __x.x.x.x__, Culture=neutral,                 PublicKeyToken=a9d7983dfcc261be|
 |WPFXAMLInteractive|Renders a report in XAML for WPF with [interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).                 (This is a multi-stream rendering extension and should be only used with                   [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)). __Telerik internal use only__.|-|Telerik.Reporting.XamlRendering.WpfReportInteractive, Telerik.Reporting, Version= __x.x.x.x__,                 Culture=neutral, PublicKeyToken=a9d7983dfcc261be|
+
 
 > Replace the  __x.x.x.x__ version number above with the version of Telerik Reporting assembly that you are using.
 

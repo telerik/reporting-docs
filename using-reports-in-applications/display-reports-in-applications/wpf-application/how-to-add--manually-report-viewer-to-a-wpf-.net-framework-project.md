@@ -47,7 +47,9 @@ In case you use *Telerik UI for WPF* version greater           than the __latest
 
 > [Redirecting Assembly Versions](http://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx)  is a standard.NET technique for resolving assembly versions conflicts.  __Visual Studio 2013__ allows automatic binding redirects. For more details check MSDN:  [How to: Enable and Disable Automatic Binding Redirection](http://msdn.microsoft.com/en-us/library/2fc472t2(v=vs.110).aspx).           
 
+
 ## How to add the WPF ReportViewer to the toolbox
+
 
 1. Select a WPF window file (e.g. Window1.xaml).                 
 
@@ -58,6 +60,7 @@ In case you use *Telerik UI for WPF* version greater           than the __latest
 1. The previous step will open *Choose Toolbox Items* dialog. Select the                  *WPF Components* tab and find the *ReportViewer* component                   from the *Telerik.ReportViewer.Wpf* assembly.                 
 
 1. Click *OK* 
+
 
 1. Create a new *WPF Application* project in Visual Studio. Target.NET Framework 4.0 or higher.             
 
@@ -81,6 +84,7 @@ In case you use *Telerik UI for WPF* version greater           than the __latest
    + *Telerik.ReportViewer.Wpf.dll* 
 
    + *Telerik.ReportViewer.Wpf.Themes.dll* 
+
 
 1. The next step is to merge these ResourceDictionaries in the App.xaml file:             
 
@@ -199,7 +203,9 @@ End Class
 ````
 
 
+
 # See Also
+
 
  
 

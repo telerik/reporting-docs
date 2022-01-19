@@ -10,8 +10,6 @@ position: 11
 
 # refreshReport()
 
-
-
 Reloads/refreshes the current report.
 
 Returns: the current *ReportViewer* object.

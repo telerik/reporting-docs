@@ -14,6 +14,7 @@ position: 4
 
 The Data Explorer provides an overview of the database fields that         are available to your report and the calculated fields you have created.         It is available whenever you have a report open in design view.       
 
+
 The Data Explorer can be accessed from the context menu View | Data Explorer when right-clicking the area next to the report design surface.         
 
 The Data Explorer window lists the data source columns and calculated fields defined for your report.           Drag column names from the Data Explorer to the report design surface to create new data bound           [report items]({%slug telerikreporting/designing-reports/report-structure/overview%}).           The report designer automatically creates appropriate report items for data source columns based on the column data type, e.g.           if the column has character data a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%})           report item will be created, if the column has image data then a           [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item will be created.         

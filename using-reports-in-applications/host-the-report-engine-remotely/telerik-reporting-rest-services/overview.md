@@ -18,6 +18,7 @@ The primary usage of the service is in the         [HTML5 Report Viewer]({%slug 
 
 > You can use the Reporting REST service in a JavaScript application without the viewer.           Refer to the telerikReportViewer.ServiceClient class in the JavaScript API.         
 
+
 The service has several implementations targeting different         web service frameworks which are described in this chapter.       
 
 ## How it Works
@@ -61,5 +62,6 @@ Furthermore, each of the steps listed above allows you additional configuration 
 * If all new report requests get executed simultaneously, the host will get overloaded.           To avoid this, the service executes the report generation requests in a task queue.           The count of the simultaneously rendered reports is           [configurable]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).           
 
 * In some scenarios, you need to host two or more report services in a single application.           To achieve that, assign a unique HostAppId property to each implementing controller.           This will produce a dedicated task queue for each service instance.           Additionally, you must set the appropriate worker count for each queue to avoid system overload.         
+
 
 

@@ -14,6 +14,7 @@ position: 1
 
 Requirements for using __Telerik Reporting REST ServiceStack service__ in an application.       
 
+
 1. Telerik Reports must be accessible by the application hosting the Reporting REST ServiceStack service.             
 
 1. Telerik Reporting ASP.NET ServiceStack service implementation requires               the following ASP.NET and third party assemblies.             

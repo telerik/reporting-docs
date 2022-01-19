@@ -16,6 +16,7 @@ In this article we will show you how to create a Line chart using the Graph item
 
   ![Line Chart\Line Chart](images/Graph/LineChart.png)
 
+
 1. Add a new graph item to the report.
 
    1. Set the __DataSource__ property to a new                    __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.                 
@@ -33,6 +34,7 @@ INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.Product
 INNER JOIN Sales.SalesOrderDetail AS SOD ON P.ProductID = SOD.ProductID
 INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
 ````
+
 
    1. You can click on __Execute Query...__ just to check if everything is OK with the database connection.                   Click __Finish__ when you are ready.                 
 
@@ -71,5 +73,6 @@ INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
    1. Set the __Y__ value to *=Sum(Fields.LineTotal)* 
 
 1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed.             For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}).             
+
 
 

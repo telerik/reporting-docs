@@ -14,6 +14,7 @@ position: 11
 
 When using WinForms and WPF report viewers to show reports that are hosted in a Telerik Report Server instance or resolved using a REST service, a few additional libraries need to be referenced.         Below is the list of these libraries along with a brief explanation of how to install and reference them.       
 
+
 * __Telerik.Reporting.Services.HttpClient.dll__ - this assembly contains the client used to make requests               and process response from the REST service Web API. The assembly can be found in the __\bin__ subfolder of the Telerik Reporting installation folder.               Make sure the *CopyLocal* property is set to __true__.             
 
 * [                System.Net.Http.Formatting.dll              ](                https://msdn.microsoft.com/en-us/library/system.net.http.formatting(v=vs.118).aspx              )                - contains classes for serializing and deserializing HTTP message body in a format based on the requested media type.             
@@ -26,6 +27,7 @@ The recommended way of obtaining the three third-party assemblies is via NuGet p
 
 
 # See Also
+
 
  
 

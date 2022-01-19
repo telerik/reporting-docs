@@ -10,17 +10,17 @@ position: 19
 
 # viewMode(vm)
 
-
-
 Sets the view mode and automatically reloads the current report (if any) into the new view.
 
 Parameters:
 
+
 | Parameter | Description |
 | ------ | ------ |
-| __vm__ |string; the view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [](c578f366-93da-4dd1-8972-6efbc5a1790b#Options);|
+| __vm__ |string; the view mode. For more information please see jQuery.fn.telerik_ReportViewer’s viewMode option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#options);|
 
-Returns: the current *ReportViewer* object.         
+
+Returns: the current *ReportViewer* object. 
 
     
 ````js

@@ -34,6 +34,7 @@ The `DocumentFormat.OpenXml` assembly has two versions with different Public Key
 
 > Always use the latest available version for generating compatible document types.             To use later versions than the versions previously listed, add a              [bindingRedirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)              to the configuration file of the application for the `DocumentFormat.OpenXml.dll` assembly.           
 
+
 To download the Open XML by using the NuGet feed, refer to the            [DocumentFormat.OpenXml NuGet package](https://www.nuget.org/packages/DocumentFormat.OpenXml/).         
 
 To avoid using the NuGet feed and download the Open XML, download and install            [Open XML SDK 2.0 for Microsoft Office](http://www.microsoft.com/downloads/en/details.aspx?FamilyId=C6E744E5-36E9-45F5-8D8C-331DF206E0D0).

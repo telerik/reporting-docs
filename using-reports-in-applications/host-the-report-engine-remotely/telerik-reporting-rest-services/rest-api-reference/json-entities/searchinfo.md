@@ -14,6 +14,7 @@ position: 9
 
 The info object passed to the report engine to perform a search.       
 
+
     
           {
             "searchToken": "foo",
@@ -22,6 +23,7 @@ The info object passed to the report engine to perform a search.
             "useRegularExpressions": true
           }
         
+
 
 >caption Fields
 

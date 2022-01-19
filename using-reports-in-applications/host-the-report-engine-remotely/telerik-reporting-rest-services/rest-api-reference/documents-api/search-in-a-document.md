@@ -20,11 +20,13 @@ position: 7
 
 __Path parameters__ 
 
+
 | Name | Type | Description |
 | ------ | ------ | ------ |
 |`clientId`|String|ID of the service client. Returned from [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%}).|
 |`instanceId`|String|ID of the report instance. Returned from [Resolve Report Instance]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance%}).|
 |`documentId`|String|ID of the report document. Returned from [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%}).|
+
 
 __Request Body__ 
 
@@ -32,12 +34,14 @@ __Request Body__
 
 ## Response
 
+
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Search is performed successfully and returns at least one result.|
 |`204 No Content`|The search returned no results.|
 |`410 Gone`|The specified clientId cannot be found (expired).|
 |`404 Not Found`|The specified instanceId or documentId cannot be found.|
+
 
 __Response Body__ 
 

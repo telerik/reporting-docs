@@ -5,7 +5,7 @@ description: jsonDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/jsondatasource-wizard
 tags: jsondatasource,wizard
 published: True
-position: 4
+position: 2
 ---
 
 # JsonDataSource Wizard

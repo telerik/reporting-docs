@@ -31,8 +31,6 @@ This document provides a brief overview of the different Telerik Report Viewer f
      + [How To: Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})  
      + [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](%slug how-to-implement-telerik-reporting-in-asp-net-core-mvc%})  
 
-   + *AngularJS* 
-
 * [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})  
   The HTML5 ASP.NET MVC Report Viewer is a helper allowing you to configure the HTML5 Viewer via server-side code. The helper renders the JavaScript object and required scripts on the page. The HTML5 ASP.NET MVC Report Viewer is suitable for ASP.NET MVC4|MVC5 projects.             
 
@@ -40,7 +38,10 @@ This document provides a brief overview of the different Telerik Report Viewer f
   The HTML5 ASP.NET WebForms Report Viewer is a server-side wrapper allowing you to configure the HTML5 Viewer via server-side code. The control renders the JavaScript object and required scripts on the page. The HTML5 ASP.NET WebForms Report Viewer is suitable for ASP.NET WebForms projects.             
 
 * [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})  
-  The Angular Report Viewer provides a component which wraps the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).             
+  The Angular Report Viewer provides a component which wraps the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}). 
+  
+* [ReactJS Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})  
+  The ReactJS Report Viewer provides a component which wraps the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).  
 
 * [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})  
   The Blazor Report Viewer is a component which can be used in Blazor applications. It is built on top of the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).             

@@ -10,109 +10,109 @@ position: 5
 
 # Working with Report Server Reports
 
-
-
-Standalone Report Designer is integrated with Telerik Report Server         so you can create, open, lock, save, save as, publish and revert report changes
+Standalone Report Designer is integrated with Telerik Report Server so you can create, open, lock, save, save as, publish and revert report changes.
 
 ## Overview
 
-When you lock a report on a Report Server, you ensure that others cannot make changes to the report while you edit it.           While the report is locked, you can edit the report, close it, reopen it, and even work with the report on your hard disk.           Other users cannot change the report or see your changes until you publish the report.         
+When you lock a report on a Report Server, you ensure that others cannot make changes to the report while you edit it. While the report is locked, you can edit the report, close it, reopen it, and even work with the report on your hard disk. Other users cannot change the report or see your changes until you publish the report. 
 
-Locking reports before working on them helps to avoid conflicts and confusion when multiple people are working on the same set of reports.           When a report is locked to you, only you can make changes to it. You can lock any report on a Report Server for which you have permission,           and you can lock reports directly from the Standalone Report Designer.         
+Locking reports before working on them helps to avoid conflicts and confusion when multiple people are working on the same set of reports. When a report is locked to you, only you can make changes to it. You can lock any report on a Report Server for which you have permission, and you can lock reports directly from the Standalone Report Designer. 
 
-When you make changes to the report, the report is locked automatically and the changes are stored on your hard disk in the windows temporary folder.           When the report is saved the changes are saved on the server but your changes are still not visible to the other users.           You must publish the report before others can see your changes.         
+When you make changes to the report, the report is locked automatically and the changes are stored on your hard disk in the windows temporary folder. When the report is saved the changes are saved on the server but your changes are still not visible to the other users. You must publish the report before others can see your changes. 
 
-When you publish a report, you can type comments about the changes that you made to the report.             This helps people to understand what has changed in the report from version to version.             This is especially helpful if several people work on a report or if the report is likely to go through several revisions.             Your comments become a part of the version history of the report, which can be helpful if people need to view or revert to a previous version.           
+When you publish a report, you can type comments about the changes that you made to the report. This helps people to understand what has changed in the report from version to version. This is especially helpful if several people work on a report or if the report is likely to go through several revisions. Your comments become a part of the version history of the report, which can be helpful if people need to view or revert to a previous version. 
 
-While a report is locked to you, the changes that you make are not visible to others until you publish the report.           There may be situations in which you want to publish the report so that others can see your changes,           but you want to keep the report locked so that you can continue working on it.         
+While a report is locked to you, the changes that you make are not visible to others until you publish the report. There may be situations in which you want to publish the report so that others can see your changes, but you want to keep the report locked so that you can continue working on it. 
 
-When a report server report is opened, the Server ribbon tab is activated to provide commands to lock, publish and revert changes.           
+When a report server report is opened, the Server ribbon tab is activated to provide commands to lock, publish and revert changes. 
 
 ## Create a report to the server
 
-Use this procedure to create a new report on a server.         
+Use this procedure to create a new report on a server. 
 
-1. Click on the File application button on the top left corner.             
+1. Click on the File application button on the top left corner. 
 
-1. Click on the New option or use the Ctrl+N shortcut to open the backstage New report view.             
+1. Click on the New option or use the Ctrl+N shortcut to open the backstage New report view. 
 
-1. Choose a report template.             
+1. Choose a report template. 
 
-1. Click on the Report Servers tab and select an already added server or add a report server. The Create report dialog opens.             
+1. Click on the Report Servers tab and select an already added server or add a report server. The Create report dialog opens. 
 
-1. Select category and report name from the opened dialog.             
+1. Select category and report name from the opened dialog. 
+
 
 ## Open a report
 
-Use this procedure to open a report that is already created on the server.         
+Use this procedure to open a report that is already created on the server. 
 
-1. Click on the File application button on the top left corner.             
+1. Click on the File application button on the top left corner. 
 
-1. Click on the Open option or use the Ctrl+O shortcut to open the backstage open report view.             
+1. Click on the Open option or use the Ctrl+O shortcut to open the backstage open report view. 
 
-1. Click on the Report Servers option and select an already added server or add a report server.             
+1. Click on the Report Servers option and select an already added server or add a report server. 
 
-1. Select Category and Report from the open report dialog.             
+1. Select Category and Report from the open report dialog. 
+
 
 ## Lock a report
 
-Use this procedure to lock a report that is already opened in the designer.            The report is locked if any changes is made to the opened report definition.           Still to lock it manually follow the steps:         
+Use this procedure to lock a report that is already opened in the designer. The report is locked if any changes is made to the opened report definition. Still to lock it manually follow the steps: 
 
-1. Click on the Server ribbon tab.             
+1. Click on the Server ribbon tab. 
 
-1. Click on the Lock button.             
+1. Click on the Lock button. 
+
 
 ## Save a report to the server
 
-Use this procedure to save a report to the server.         
+Use this procedure to save a report to the server. 
 
-1. Click on the File application button on the top left corner.             
+1. Click on the File application button on the top left corner. 
 
-1. Click on the Save option or use the Ctrl+S shortcut to Save the report.             
+1. Click on the Save option or use the Ctrl+S shortcut to Save the report. 
 
-> When the report is saved the changes are saved on the server but your changes are still not visible to the other users.             You must publish the report before others can see your changes.           
+> When the report is saved the changes are saved on the server but your changes are still not visible to the other users. You must publish the report before others can see your changes. 
 
 
 ## Publish a report
 
-Use this procedure to publish a report that is already locked in the designer.         
+Use this procedure to publish a report that is already locked in the designer. 
 
-1. Click on the Server ribbon tab.             
+1. Click on the Server ribbon tab. 
 
-1. Click on the Publish button. The Publish report dialog opens.             
+1. Click on the Publish button. The Publish report dialog opens. 
 
-1. Optionally enter a comment.              
+1. Optionally enter a comment. 
 
-1. Click Publish.             
+1. Click Publish. 
+
 
 ## Revert report changes
 
-Use this procedure to revert a report that is already locked in the designer.         
+Use this procedure to revert a report that is already locked in the designer. 
 
-The revert option is only available after the first publish operation on the target report.         
+The revert option is only available after the first publish operation on the target report. 
 
-1. Click on the Server ribbon tab.             
+1. Click on the Server ribbon tab. 
 
-1. Click on the Revert button.             
+1. Click on the Revert button. 
+
 
 ## Save as a report to a server
 
-Use this procedure to save a report that is already opened from another location to a server.         
+Use this procedure to save a report that is already opened from another location to a server. 
 
-1. Click on the File application button on the top left corner or use the F12 shortcut to open the backstage the Save as report view.             
+1. Click on the File application button on the top left corner or use the F12 shortcut to open the backstage the Save as report view. 
 
-1. Click on the Save as option or use the F12 shortcut to open the backstage the Save as report view.             
+1. Click on the Save as option or use the F12 shortcut to open the backstage the Save as report view. 
 
-1. Click on the Report Servers option and select an already added server or add a report server. The Save as report dialog opens.             
+1. Click on the Report Servers option and select an already added server or add a report server. The Save as report dialog opens. 
 
-1. Select category and report name from the opened dialog.             
+1. Select category and report name from the opened dialog. 
 
-> When the report is saved the changes are saved on the server but your changes are still not visible to the other users.             You must publish the report before others can see your changes.           
+> When the report is saved the changes are saved on the server but your changes are still not visible to the other users. You must publish the report before others can see your changes. 
 
 
 ## Reference another report stored in the server
 
-Another report from the server can be referenced using *[CategoryName]/[ReportName]* path for the URI,             for example: *Samples/Product Sales*.             If the report's category is omitted then the category from the master report is inferred.             A reference to another report can be used either by the SubReport item or in a NavigateToReport action.         
-
-
-
+Another report from the server can be referenced using *[CategoryName]/[ReportName]* path for the URI, for example: *Samples/Product Sales*. If the report's category is omitted then the category from the master report is inferred. A reference to another report can be used either by the SubReport item or in a NavigateToReport action. 

@@ -14,9 +14,6 @@ msbuild /p:LatestBinariesPath="D:\Work\MdDocs\Examples\CSharp\.NET Framework\Htm
 REMAINING:
 
 
-images in tables are not converted, images are not copied
-
-
 API reference redirect rules. Create custom rewriter
 https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/developing-a-custom-rewrite-provider-for-url-rewrite-module
 
@@ -504,3 +501,5 @@ images in table don't work - https://docs.telerik.com/reporting/charttypes	<->	h
 used only in 1 file - do it manually:
 https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-in-github-markdown-table/55523035 - doesn't work
 !!!Replaced the checkmark images with code '&#x2713;'
+images in tables are not converted, images are not copied
+!!!fixed

@@ -30,6 +30,9 @@ The Web Report Designer consists of the following areas:
 
 * __Explorer__ - represents the report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties. 
 
+* __Asset Manager__ - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
+
+
 ## How it works
 
 The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backend. The service is responsible for the storage operations like creating, opening or saving report definitions in a specified folder, as well as handling the various requests that concern server-side processing and rendering. The public methods of the service can be overwritten to adjust its functionality to a specific scenario. 

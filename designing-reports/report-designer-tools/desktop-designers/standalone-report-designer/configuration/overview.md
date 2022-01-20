@@ -10,10 +10,7 @@ position: 0
 
 # Configuration Overview
 
-
-
-The Telerik Report Designer application can be configured through its configuration file. Application configuration files contain settings specific         to the application. This file contains configuration settings such as assembly binding policy, connectionStrings and so on. For example this file can hold         binding redirect to the latest version of the Reporting engine:       
-
+The Telerik Report Designer application can be configured through its configuration file. Application configuration files contain settings specific to the application. This file contains configuration settings such as assembly binding policy, connectionStrings and so on. For example this file can hold binding redirect to the latest version of the Reporting engine: 
     
 ````xml
 <runtime>
@@ -31,7 +28,6 @@ The Telerik Report Designer application can be configured through its configurat
 ````
 
 or it can specify a global connection string that can be used by all reports created with the Report Designer:
-
     
 ````xml
 <connectionStrings>
@@ -41,12 +37,11 @@ or it can specify a global connection string that can be used by all reports cre
 </connectionStrings>
 ````
 
-For more information, see          [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx).        
+For more information, see [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx). 
 
 ## Default Configuration
 
 The following code example shows the default Telerik.ReportDesigner.exe.config file that is distributed with the Report Designer.
-
     
 ````xml
 <?xml version ="1.0"?>
@@ -109,20 +104,10 @@ The following code example shows the default Telerik.ReportDesigner.exe.config f
 
 # See Also
 
-
- 
-
 * [Report Designer Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration%})
-
- 
 
 * [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
 
- 
-
 * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
 
- 
-
 * [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
-

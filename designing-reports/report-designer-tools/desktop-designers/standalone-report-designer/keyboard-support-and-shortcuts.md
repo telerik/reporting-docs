@@ -10,11 +10,9 @@ position: 2
 
 # Keyboard Support and Shortcuts
 
+When you work in [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you have access to many shortcut keys to improve your report designing experience. 
 
-
-When you work in [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you have access to many shortcut keys to improve your report designing experience.       
-
-[Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})          provides many right-click menus for quick access to frequently used dialog boxes and commands.         Right-click menus are dynamic and may contain different options, depending on the user configuration and the currently selected objects.       
+[Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})          provides many right-click menus for quick access to frequently used dialog boxes and commands. Right-click menus are dynamic and may contain different options, depending on the user configuration and the currently selected objects. 
 
 | Description | Key Combination |
 | ------ | ------ |

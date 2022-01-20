@@ -10,14 +10,11 @@ position: 13
 
 # Edit Action Dialog
 
+The Action dialog box can be used to enable interactive actions for all items that support interactivity: TextBox, Table/List/Crosstab, SubReport, PictureBox, Checkbox, Shape, Barcode, Panel, HtmlTextBox, Graph, Map, Choropleth. The Graph, Map and Choropleth items support interactivity on element level like series. 
 
+Define an action so that a user can click on the report and link to a URL, to a different report, to a different location in the same report or toggle the visibility of items. 
 
-The Action dialog box can be used to enable interactive actions for all items that support interactivity:         TextBox, Table/List/Crosstab, SubReport, PictureBox, Checkbox, Shape, Barcode, Panel, HtmlTextBox, Graph, Map, Choropleth.         The Graph, Map and Choropleth items support interactivity on element level like series.       
-
-Define an action so that a user can click on the report and link to a URL, to a different report, to a different         location in the same report or toggle the visibility of items.       
-
-
-The __Edit Action__ offers the following choices:         
+The __Edit Action__ offers the following choices: 
 
 * None             
 
@@ -35,7 +32,7 @@ The __Edit Action__ offers the following choices:
 
   ![Edit Action Dialog](images/UI/EditActionDialog.png)
 
-Depending on the purpose of the interactive actions you can choose the appropriate option which would open an additional pane below.           For more information review the following articles:         
+Depending on the purpose of the interactive actions you can choose the appropriate option which would open an additional pane below. For more information review the following articles: 
 
 * [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
 
@@ -62,6 +59,3 @@ Depending on the purpose of the interactive actions you can choose the appropria
 * [How to: Add a Drilldown Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action%})
 
 * [How to: Add a Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action%})
-
-
-

@@ -10,23 +10,21 @@ position: 2
 
 # Label Report Wizard
 
-
-
 Label Report Wizard guides you through the process of creating a report with label layout.
 
-To create a new report with the wizard:       
+To create a new report with the wizard: 
 
-* Standalone Report Designer:           
+* Standalone Report Designer: 
 
-   + Select __File | New |__ from the Telerik Report Designer File menu;               __Click__ on the Label Report Wizard template. Create file dialog opens;               Choose a file name and directory. Click __Save__ and the Import Report Wizard opens.               
+   + Select __File | New |__ from the Telerik Report Designer File menu; __Click__ on the Label Report Wizard template. Create file dialog opens; Choose a file name and directory. Click __Save__ and the Import Report Wizard opens. 
 
 * Visual Studio:           
 
-   + Create a new class library or use an existing one.                 Verify that the targeted.NET framework version is.NET4(+), Full profile as Client profile is not supported.               
+   + Create a new class library or use an existing one. Verify that the targeted.NET framework version is.NET4(+), Full profile as Client profile is not supported. 
 
-   + __Right-click__ the project context menu and select                 __Add | New Item | Telerik Report__.                 Enter a name for the report class and click the __Add__ button to close the dialog. Select report wizard form opens.               
+   + __Right-click__ the project context menu and select __Add | New Item | Telerik Report__. Enter a name for the report class and click the __Add__ button to close the dialog. Select report wizard form opens. 
 
-   + Select the __Label Report Wizard__ option from the list and click __OK__.               
+   + Select the __Label Report Wizard__ option from the list and click __OK__. 
 
 
 |  __Step__ |  __Description__ |

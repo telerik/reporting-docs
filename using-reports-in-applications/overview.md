@@ -28,7 +28,9 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 
 * [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in WebForms applications.                   
 
-* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) - an Angular component that wraps the HTML5 Report Viewer.                 
+* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) - an Angular component that wraps the HTML5 Report Viewer. 
+
+* [ReactJS Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) - A ReactJS component that wraps the HTML5 Report Viewer.               
 
 * [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) - a Blazor component that wraps the HTML5 Report Viewer.                 
 

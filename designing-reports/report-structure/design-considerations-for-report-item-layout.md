@@ -76,7 +76,9 @@ This rendering behavior will affect how report item borders are rendered accordi
 > Setting __BorderStyle__ and __BorderWidth__ properties of report item to conflicting values (for example: BorderStyle=Solid, BorderWidth: 0px) can produce unexpected result in some rendering formats. To hide the border, set BorderStyle=None. Otherwise, the width of the border needs to be set greater than 0. 
 
 
-> Some borders and lines might be thicker or disappear on report's preview. The reason for this is that GDI component installed on the machine uses anti-aliasing that softens sharp edges so they appear less jagged when rendered on the display.
+
+> Some borders and lines might be thicker or disappear on report's preview. The reason for this is that GDI component installed on the machine uses anti-aliasing that softens sharp edges so they appear less jagged when rendered on the display. 
+>
 >The GDI component works together with the display driver software to determine which pixels will be turned on to show the line on a particular display. That is why some lines can be missing or be thinner/thicker when zoom is applied. The general suggestion is to set the border/line width to minimum 2px which can be rendered on a machine with 96dpi resolution. Using pixels instead of points is also recommended as a more media oriented unit. 
 
 

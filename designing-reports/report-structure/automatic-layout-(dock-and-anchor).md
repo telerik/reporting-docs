@@ -10,8 +10,6 @@ position: 17
 
 # Automatic Layout (Dock and Anchor)
 
-
-
 ## Anchoring
 
 Anchoring is used to dynamically resize report items with their container (for example section or panel). Simply put, an anchor maintains the distance between the edge of the report item and the corresponding edge of the container in which it is anchored. An item can be anchored to any combination of the edges of its container. If the item is anchored to two opposite edges of its container, it is resized when the container is resized. For example, if you anchor an item both to the top and bottom edges of its parent section, and the section height increases because of its content (for example a text box with longer text grows vertically), the item tries to keep the distance of its top edge to the top edge of the section and at the same time it tries to keep the distance of its bottom edge to the bottom edge of the section. By default, report items are not anchored.
@@ -30,16 +28,11 @@ Note that anchoring and docking are really effective only when the container can
 
 * A PictureBoxitem with auto sizing enabled (PictureBox.SizingMode= AutoSize) can grow to fit the bigger image when needed.
 
-> 
-
-Anchor and Dock both require parent item to have KeepTogether turned on (KeepTogether=true). They cannot work with KeepTogether=false, as they are bound to the container in some way.
-
+> Anchor and Dock both require parent item to have KeepTogether turned on (KeepTogether=true). They cannot work with KeepTogether=false, as they are bound to the container in some way.
 
 
 # See Also
  
-
 * [Anchoring](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Anchoring)  
 
 * [Docking](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Docking)
-

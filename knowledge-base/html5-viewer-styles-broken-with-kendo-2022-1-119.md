@@ -14,21 +14,20 @@ res_type: kb
 <table>
 	<tbody>
 		<tr>
-			<td>Product Version</td>
-			<td></td>
-		</tr>
-		<tr>
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Viewer</td>
+			<td>All HTML5 Report Viewers</td>
 		</tr>
 	</tbody>
 </table>
 
 
 ## Description
-There are styling issues in the [Html5 Report Viewer](h../using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and its wrappers when 
-you use it with the Kendo themes version 2022.1.119. For example, the Preview button of the Report Paramaeters' area is not styled, the ComboBox parameter editors are broken 
-when opening the dropdown, etc.
+There are styling issues in the [Html5 Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and its wrappers when you use it with the Kendo themes version 2022.1.119. For example, the Preview button of the Report Paramaeters' area is not styled, the ComboBox parameter 
+editors are broken when opening the dropdown, etc.
 
 ## Suggested Workarounds
 You need to reference the older Kendo CSS styles in the view/page with the ReportViewer. This fixes the appearance of the broken elements. You may leave the new styles 

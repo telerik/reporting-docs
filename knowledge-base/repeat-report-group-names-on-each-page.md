@@ -1,6 +1,6 @@
 ---
 title: Repeat Group Labels when Group Continues on the Next Page
-description: Show report group title on each page so that the user know when it begins and when continues
+description: Show report group title on each page so that the user knows when it begins and when continues
 type: how-to
 page_title: Repeat Group Names on Each Page
 slug: repeat-report-group-names-on-each-page
@@ -52,7 +52,7 @@ For this scenario we have multiple nested Report groups in the Report. We are go
 = IIF(PageExec("group", Fields.Value) = PageExec("textBox2", Fields.Value), "", PageExec("textBox2", Fields.Group) + "-Continued ")
 ```
 It is very similar to the second line of the _Expression_ we used in the first approach. Note that you need to use it for each of the nested groups, with the corresopnding group scope and name of the TextBox that displays the group detail data.  
-We need to take caare also of the corner case, when a group starts at the bottom of the previous page without displaying an item there. In this case, the group name won't appear on the second page's Page Header as the first detail of the group will be on this page. To fix this, you need to set all groups' properties [GroupKeepTogether](../t-telerik-reporting-groupkeeptogether) to __FirstDetail__ (the default is _None_).  
+We also have to take care of the corner case, when a group starts at the bottom of the previous page without displaying an item there. In this case, the group name won't appear on the second page's Page Header as the first detail of the group will be on this page. To fix this, you need to set all groups' properties [GroupKeepTogether](../t-telerik-reporting-groupkeeptogether) to __FirstDetail__ (the default is _None_).  
 
 The demo report with four groups can be found in [Reporting Samples GitHub Repo - ReportWithFourGroups](https://github.com/telerik/reporting-samples/blob/master/ReportWithGroups/ReportWithFourGroups.trdp).
 

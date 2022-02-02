@@ -4,19 +4,16 @@ page_title: Chart (obsolete) | for Telerik Reporting Documentation
 description: Chart (obsolete)
 slug: telerikreporting/designing-reports/report-structure/chart-(obsolete)
 tags: chart,(obsolete)
-published: False
+published: True
 position: 16
 ---
 
 # Chart (obsolete)
 
+> The Chart item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item. The Graph item is most often used for building powerful OLAP/Pivot charts. The Chart item is not supported in.NET Core projects and in projects deployed on Azure. 
 
 
-
-> The Chart item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item.             The Graph item is most often used for building powerful OLAP/Pivot charts.           The Chart item is not supported in.NET Core projects and in projects deployed on Azure.           
-
-
-The Chart report item is used to display a chart on a report. It is business-oriented item with a           focus on development productivity and ease-of-use. It allows you to rapidly build appealing charts           that represent data in a people-friendly manner.           
+The Chart report item is used to display a chart on a report. It is business-oriented item with a focus on development productivity and ease-of-use. It allows you to rapidly build appealing charts that represent data in a people-friendly manner. 
 
   ![Sparkline Chart\Sparkline Chart](images/Graph/SparklineChart.png)
 
@@ -43,7 +40,7 @@ Private Sub chart1_NeedDataSource(sender As Object, e As System.EventArgs)
 End Sub
 ````
 
-The formatting of the Chart report item is managed by a large number of properties.           To customize the Chart report item, right-click the chart and select Properties from           the context menu to use the Chart Wizard.         
+The formatting of the Chart report item is managed by a large number of properties. To customize the Chart report item, right-click the chart and select Properties from the context menu to use the Chart Wizard. 
 
 The Chart item offers numerous features including:
 
@@ -68,12 +65,7 @@ The Chart item offers numerous features including:
 
 # See Also
 
-
- 
-
 * [Telerik Charting Documentation](http://www.telerik.com/help/aspnet/chart)
-
- 
 
 * [Chart](/reporting/api/Telerik.Reporting.Chart)
 

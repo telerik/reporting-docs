@@ -15,9 +15,6 @@ navigation:
     getting-started:
         position: 2
         title: "Getting Started"
-    # installation.md:
-        # position: 4
-        # title: "Installation"
     upgrade:
         position: 4
         title: "Upgrade"
@@ -432,15 +429,6 @@ navigation:
     quickstart:
         position: 6100
         title: "Not to be shown-quickstart"
-    # licensing.md:
-        # position: 16
-        # title: "Licensing"
-    # copyright:
-        # position: 18
-        # title: "Copyright"
-    # personal-data-collection.md:
-        # position: 45
-        # title: "Personal Data Collection"
     api:
         position: 50
         title: "API Reference"
@@ -477,10 +465,6 @@ defaults:
 suiteversion: "R3 2021"
 kendosubsetversion: "2020.3.1118"
 buildversion: "15.2.21.1126"
-# The following aliases were KB references. Included the real slugs in the articles
-# KB_Configure_the_Image_Rendering_Extension_to_Generate_TIFF_Files: "TIFF 345"
-# KB-converting-reports-from-various-versions-of-crystalreports: "Crystal 123"
-# KB-converting-reports-from-various-versions-of-activereports: "Active 123"
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'

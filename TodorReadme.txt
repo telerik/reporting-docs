@@ -19,7 +19,11 @@ https://docs.microsoft.com/en-us/iis/extensions/url-rewrite-module/developing-a-
 
 
 
+articles that are invisible in TOC??? - telerikreporting/designing-reports/report-structure/chart-(obsolete)
+Published: False
+if in TOC section that is invisible won't convert
 
+The articles have Position tag that may be used to reorder them in the TOC
 
 
 POSTPONED

@@ -1,8 +1,8 @@
 ---
-title: How to Hide the Option for Adding a New SQL Connection in the SQL DataSource Wizard in Web Report Desgner
-description: Explains how to hide the option for adding a new SQL connection in the Web Report Desiginer
+title: How to Hide the Option for Adding a New SQL Connection in the SQL DataSource Wizard in Web Report Designer
+description: Explains how to hide the option for adding a new SQL connection in the Web Report Designer
 type: how-to
-page_title: Hide the Option for Adding a New SQL Connection in the Web Report Desgner
+page_title: Hide the Option for Adding a New SQL Connection in the Web Report Designer
 slug: how-to-hide-the-option-for-adding-a-new-sql-connection-in-sql-datasource-wizard-in-web-report-desgner
 position: 
 tags: WebReportDesigner, SQL DataSource

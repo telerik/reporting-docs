@@ -16,10 +16,8 @@ This article elaborates on how to localize the strings used and displayed by the
 
 {{source=..\..\Source\Code\Telerik.WebReportDesigner\ClientApp\js\src\WebReportDesignerStringsBase.js}}
   ````WebReportDesignerStrings.en-EN.js
-  import { ServiceBase } from "./Interfaces/IServiceProvider.js";
-    export class WebReportDesignerStringsBase extends ServiceBase {
+    export class WebReportDesignerStringsBase {
 	  constructor() {
-	    super(...arguments);
 	    this.ToolboxAreaTitle = "Components";
 	    this.PropertiesTitle = "Properties";
 	    this.PropertiesCategorized = "Categorized";

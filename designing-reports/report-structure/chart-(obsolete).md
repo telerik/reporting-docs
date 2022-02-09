@@ -10,7 +10,7 @@ position: 16
 
 # Chart (obsolete)
 
-> The Chart item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item. The Graph item is most often used for building powerful OLAP/Pivot charts. The Chart item is not supported in.NET Core projects and in projects deployed on Azure. 
+> The Chart item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item. The Graph item is most often used for building powerful OLAP/Pivot charts. The Chart item is not supported in .NET Core projects and in projects deployed on Azure. 
 
 
 The Chart report item is used to display a chart on a report. It is business-oriented item with a focus on development productivity and ease-of-use. It allows you to rapidly build appealing charts that represent data in a people-friendly manner. 

@@ -194,3 +194,50 @@ PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account)))
 ```
 This expression compares the last 'account' values for the detail and the group footer scopes on the same page, and types the message that the account continues on the next page and the accummulated sum when they differ, or there is no group footer on the page.  
 A sample report definition and a ClassLibrary project wiht the custom aggregate functions demonstrating the approach may be found in our reporting samples GitHub repo - [Summary per page](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page).
+
+## Important Notes
+The fact that the main variables that accumulate the result and the transitional values are thread static imposes the following limitations: 
+
+1. The Custom Aggregates should be used only once in the same Report. If they are used more than once, the values will be aggregated from one call to another and the final outcomes will be incorrect. If you need to use twice or more any of the functions, you need to copy their content under different name and use the function with a different name in the report. 
+
+2. The fact that the variables are static for the thread may not suffice in some scenarios utilizing the Reporting REST Service. For example, when the report is refreshed from the Html5 Viewer, it may be rendered in the same thread as before. In this case, the aggregated values are carried over from the first to the second report. That said, the values from the previous rendering are carried over to the next rendering. To overcome this, you need to modify the logic of the functions. For example, when the report is a new one, you may reset the static values.  
+The particular workaround we suggest is to pass the __ReportDefinition__ [Global Object](../designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) that is unique for each report generation as another argument of the functions and use it as an indicator that we are in a new report rendering. Here is a sample code with the changes suggested for the _PageHeaderSumFromPrevPage_ function: 
+	  ```C Sharp
+	//...
+	private static void Reset()
+	{
+	    result = 0;
+	    currentPage = -1;
+	    if (currentPageValues != null)
+	    {
+		currentPageValues.Clear();
+	    }
+	}
+	//...
+	public void Accumulate(object[] values)
+	{
+		var reportDefinition = values[3];
+		if (!object.ReferenceEquals(processingOperationId, reportDefinition))
+	    {
+		processingOperationId = reportDefinition;
+		Reset();
+	    }
+
+		var page = (int)values[2];
+
+	    if (page != currentPage)
+	    {
+		currentPage = page;
+
+		for (int index = 0; index < currentPageValues.Count; index++)
+		{
+		    this.AccumulateCore(currentPageValues[index]);
+		}
+		currentPageValues.Clear();
+	    }
+
+	    currentPageValues.Add(values);
+	}
+	```
+
+	The usage in the expression would be the same, with the _ReportDefinition_ added as a last argument.

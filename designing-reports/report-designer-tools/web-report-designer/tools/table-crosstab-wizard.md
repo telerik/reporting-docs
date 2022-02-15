@@ -5,7 +5,7 @@ description: Table/Crosstab Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard
 tags: table/crosstab,wizard
 published: True
-position: 2
+position: 5
 ---
 
 # Table/Crosstab Wizard

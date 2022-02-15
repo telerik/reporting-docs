@@ -19,9 +19,7 @@ This document provides a brief overview of the different Telerik Report Viewer f
 * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})  
   The HTML5 Viewer is an HTML/CSS/JS client-side widget that doesn't require any assembly references. The viewer operates as a client of the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](https://www.telerik.com/report-server).  
   The HTML5 Viewer is suitable for any web application that works with JavaScript. For some of the most popular web technologies, we provide dedicated wrappers. We have also successfully tested the viewer in the following technologies for which there are no dedicated wrappers:             
-
-   + *ReactJS*. A basic approach for displaying the Html5 Report Viewer in a React application is described in the [How to use HTML5 Report Viewer in React Application]({%slug how-to-use-html5-viewer-in-react-js%}) KB article                 
-
+               
    + *Vue.js*. A step-by-step example for integrating the viewer in Vue.js application can be found in the [How to use HTML5 Report Viewer in Vue.js]({%slug how-to-use-html5-viewer-in-vue-js%}) KB article                 
 
    + *ASP.NET Core*. The exact implementation depends on the framework version. Use the following resources for the recommended approach:                 

@@ -37,7 +37,7 @@ Cases in which the Data Explorer does not load all or any fields:
 
 Per case from the **Description** section:  
 
-1. Apply the settings from the [How to configure Stored Procedure with Temporary Tables for use with SqlDataSource component](./how-to-configure-stored-procedure-with-temporary-tables-for-use-with-sqldatasource-component) KB article.
+1. Apply the settings from the [How to configure Stored Procedure with Temporary Tables for use with SqlDataSource component](./use-temporary-tables-in-stored-procedure) KB article.
 
 2. Update the data model to expose its properties - make them *public* and verify each has at least a *Set* method.
 

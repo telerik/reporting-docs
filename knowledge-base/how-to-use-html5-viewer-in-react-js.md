@@ -15,7 +15,7 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product</td>
-		<td>Progress® Telerik® Reporting R3 2018</td>
+		<td>up to R3 2021 SP2 (15.2.21.1125)</td>
 	</tr>
 	<tr>
 		<td>Framework</td>
@@ -27,8 +27,10 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
+
+>important Starting with [R1 2022 (16.0.22.119)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2022-16-0-22-119) we introduced a dedicated [React Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview). 
+
 
 The [HTML5 Report Viewer](../html5-report-viewer) is built upon HTML5, CSS, and JavaScript. This allows the viewer to be used in virtually any JavaScript framework.
 [React](https://reactjs.org/) has been gaining a lot of traction and we would like to explore how the HTML5 Report Viewer could be implemented, together with its dependencies, in a React application.

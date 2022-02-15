@@ -31,7 +31,7 @@ res_type: kb
 
 ## Description
 This article describes how to use the [KendoDateTimePicker](https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker) as a custom parameter editor
-in [Angular Report Viewer](../angular-report-viewer). This approach allows the selection of date and time for the **DateTime** [report parameters](../designing-reports-parameters).
+in [Angular Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview). This approach allows the selection of date and time for the **DateTime** [report parameters](../designing-reports/connecting-to-data/report-parameters/overview).
 
 
 ## Solution
@@ -42,7 +42,7 @@ For that reason, you will have to replace the Kendo UI subset with the full Kend
 Also, you need to make sure that Kendo all is loaded after jQuery. Because of that, we will use a special logic that sets the visibility
 of the viewer after Kendo all is loaded:
 
-1. In the initializaion of the viewer, specify the parameterEditors [option](../angular-report-viewer-api-options).
+1. In the initializaion of the viewer, specify the parameterEditors [option](../using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-api-options).
 ```TypeScript
 <tr-viewer #viewer1 *ngIf="visible"
     [containerStyle]="viewerContainerStyle"
@@ -58,8 +58,7 @@ of the viewer after Kendo all is loaded:
 </tr-viewer>
 ```
 
-2.Then in the **app.component.ts** implement the createEditor function. You see that we set the visiblity of the viewer
-to True once kendo.all.min.js is loadded. This is required because firstly jQuery has to be loaded and then kendo.all.min.js:
+2. Then in the **app.component.ts** implement the createEditor function. You see that we set the visibility of the viewer to True once kendo.all.min.js is loaded::
 
 ```TypeScript
 export class AppComponent implements OnInit {
@@ -114,7 +113,7 @@ export class AppComponent implements OnInit {
 ## See Also
 - [KendoDateTimePicker](https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker)
 
-- [Angular Report Viewer](../angular-report-viewer)
+- [Angular Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview)
 
-- [Report parameters](../designing-reports-parameters)
+- [Report parameters](../designing-reports/connecting-to-data/report-parameters/overview)
 

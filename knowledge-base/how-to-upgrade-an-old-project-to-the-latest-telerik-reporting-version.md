@@ -29,28 +29,28 @@ To upgrade Telerik Reporting to the latest version without a problem you can rel
 ## Solution  
 The recommended approach for upgrading is to download an official release of each year between the project's Telerik Reporting version and the target version. Then you can upgrade the project, and check each report in order to remove warning for obsolete code. A small change in the designer will cause it to reserialize the report definition.  
 
-Details how to download MSI files and upgrade project's items can be found in <a href="http://docs.telerik.com/reporting/installation-installing-from-msi" target="_blank">Installing Telerik Reporting</a> and <a href="http://docs.telerik.com/reporting/installation-upgrading-newer-version" target="_blank">Upgrading Telerik Reporting Projects</a>.  
+Details how to download MSI files and upgrade project's items can be found in [Installing Telerik Reporting](../installation) and [Upgrading Telerik Reporting Projects](../upgrade/overview).  
 
 ## Notes
 Here are the most important changes in Telerik Reporting during the last several years and the respective information sources: 
 
-- Reports should be wrapped in a <a href="https://docs.telerik.com/reporting/report-sources" target="_blank">report source object</a> in order to be passed to a report viewer, SubReport or action - <a href="/support/kb/reporting/details/how-to-migrate-your-project-to-utilize-the-new-reportsource-objects" target="_blank">How to migrate your project to utilize the new ReportSource objects</a>.
+- Reports should be wrapped in a [report source object](../designing-reports/report-sources/overview) in order to be passed to a report viewer, SubReport or action - [How to migrate your project to utilize the new ReportSource objects](./how-to-migrate-your-project-to-utilize-the-new-reportsource-objects).
 
-- As of <a href="/support/whats-new/reporting/release-history/telerik-reporting-q1-2013" target="_blank">Q1 2013</a> there are removed several obsolete properties and namespaces.
+- As of [Q1 2013](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q1-2013) there are removed several obsolete properties and namespaces.
 
-- As of <a href="/support/whats-new/reporting/release-history/telerik-reporting-q2-2013" target="_blank">Q2 2013</a> Telerik Reporting is built against .NET4 framework Full Profile, which is supported in Visual Studio 2010+ versions. Also the old Chart item is made obsolete. Its successor is the native reporting <a href="https://docs.telerik.com/reporting/graphoverview" target="_blank">Graph item</a>.
+- As of [Q2 2013](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q2-2013) Telerik Reporting is built against .NET4 framework Full Profile, which is supported in Visual Studio 2010+ versions. Also the old Chart item is made obsolete. Its successor is the native reporting [Graph item](../designing-reports/report-structure/graph/overview).
 
-- As of <a href="/support/whats-new/reporting/release-history/telerik-reporting-q3-2013" target="_blank">Q3 2013</a> there is a new web viewer - the <a href="https://docs.telerik.com/reporting/html5-report-viewer-system-requirements" target="_blank">HTML5 Report Viewer</a>, which is a client-side widget served by a running <a href="https://docs.telerik.com/reporting/telerik-reporting-rest-conception" target="_blank">Reporting REST service</a>, dedicated to work with the viewer.
+- As of [Q3 2013](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2013) there is a new web viewer - the [HTML5 Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support), which is a client-side widget served by a running [Reporting REST service](../using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview), dedicated to work with the viewer.
 
-- As of <a href="/support/whats-new/reporting/release-history/telerik-reporting-q1-2014" target="_blank">Q1 2014</a> the WPF and Silverlight ReportViewer controls use only implicit styles.
+- As of [Q1 2014](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q1-2014) the WPF and Silverlight ReportViewer controls use only implicit styles.
 
-- As of <a href="/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-(version-9-2-15-930)" target="_blank">Q3 2015</a> the old ASP.NET WebForms ReportViewer is obsolete.
+- As of [Q3 2015](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-(version-9-2-15-930)) the old ASP.NET WebForms ReportViewer is obsolete.
 
-- As of <a href="http://docs.telerik.com/reporting/upgrade-path-2016-r3" target="_blank">R3 2016</a> the ObjectDataSource component requires additional settings (security improvement).
+- As of [R3 2016](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914)) the ObjectDataSource component requires additional settings (security improvement).
 
-- As of <a href="/support/kb/reporting/deploy-to-web-desktop-cloud/details/telerik-reporting-r3-2016---upgrade-issues-with-objectdatasource-component" target="_blank">R3 2016</a> changes on report items definitions in events are not accepted.
+- As of **R3 2016** changes on report items definitions in events are not accepted - [Upgrade issues with ObjectDataSource Component after Telerik Reporting R3 2016](./telerik-reporting-r3-2016---upgrade-issues-with-objectdatasource-component).
 
 ## See Also
-- <a href="/support/whats-new/reporting/release-history" target="_blank">Telerik Reporting Release Notes</a> for details on every major or service pack release.
+- [Telerik Reporting Release History](https://www.telerik.com/support/whats-new/reporting/release-history)
 
-- <a href="/reporting/upgradepathoverview" target="_blank">Upgrade Path help articles</a> and the whole **Upgrade** section. It contains information about all changes per release.
+- [Upgrade Path Overview](../upgrade/overview)

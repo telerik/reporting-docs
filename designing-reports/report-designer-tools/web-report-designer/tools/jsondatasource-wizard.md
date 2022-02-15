@@ -20,8 +20,8 @@ The Json Data Source Wizard allows you to create a new or edit an existing JsonD
 
    + __Use JSON inline__ to paste in a string in the text area 
 
-Optionally, you can use the [__Data selector__](https://goessner.net/articles/JsonPath/) to query and filter the JSON data.The data selector is a JSONPath string which will be used to query the data. 
+Optionally, you can use the [__Data selector__](https://goessner.net/articles/JsonPath/) to query and filter the JSON data. The data selector is a JSONPath string which will be used to query the data. 
  
-2. If you have chosen to __"Upload json file"__ or __"Use existing json file"__ you have the option to store this inside the report definition by checking __"Embed json file in report definition"__ option. By checking this option the json data can be directly edited in the text area, and will no longer be dependent on having the json file available in [ResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage). 
+2. If you have chosen to __"Upload json file"__ or __"Use existing json file"__ you have the option to store this inside the report definition by checking __"Embed json file in report definition"__ option. This way, the json data can be directly edited in the text area, and will no longer be dependent on having the json file available in [ResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage). 
 
 3. __Preview Data Source Results__ Preview the data-set and see that it returns the expected data. Click __Finish__ to Exit the Wizard and save the data source component. 

@@ -2,7 +2,7 @@
 title: How to Deal with SQL Server Stored Procedures with Optional Parameters
 description: If you don't provide a value for an optional Stored Procedure parameter in the SqlDataSource, the Null value is passed, which overrides the default value
 type: how-to
-page_title: How to deal with a SQL Server Stored Procedure having an optional parameter
+page_title: How to Deal with a SQL Server Stored Procedure Having an Optional Parameter
 slug: how-to-deal-with-stored-procedure-optional-parameters
 position: 
 tags: 
@@ -22,12 +22,13 @@ res_type: kb
 
 
 ## Description
-If you don't provide a value for an optional SQL parameter, it actually receives NULL, which seems to override the default value. Even if you deleted the parameter from the SqlDataSource, the Null value would be displayed for the optional parameter in the SQL Server Profiler.
+If you don't provide a value for an optional SQL parameter, it actually receives NULL, which seems to override the default value. Even if you delete the parameter from the SqlDataSource, the Null value would be displayed for the optional parameter in the SQL Server Profiler.
 
 ## Suggested Workarounds
 
 ### Alter the Stored Procedure
 You may include a conditional statement in the Stored Procedure that checks for the Null value for the optional parameters and sets it to the default value when Null. 
+
 This works in the following cases:
  * when the parameter is set to Null
  * when you pass an empty value for the parameter

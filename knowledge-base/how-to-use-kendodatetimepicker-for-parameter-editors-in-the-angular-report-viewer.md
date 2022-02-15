@@ -30,7 +30,7 @@ res_type: kb
 
 
 ## Description
-This article describes how to use the [KendoDateTimePicker](https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker) as a custom parameter editor
+This article describes how to use the [KendoDateTimePicker](../../kendo-ui/api/javascript/ui/datetimepicker) as a custom parameter editor
 in [Angular Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview). This approach allows the selection of date and time for the **DateTime** [report parameters](../designing-reports/connecting-to-data/report-parameters/overview).
 
 
@@ -111,7 +111,7 @@ export class AppComponent implements OnInit {
 ```
 
 ## See Also
-- [KendoDateTimePicker](https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker)
+- [KendoDateTimePicker](../../kendo-ui/api/javascript/ui/datetimepicker))
 
 - [Angular Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview)
 

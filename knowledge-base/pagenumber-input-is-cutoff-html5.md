@@ -2,7 +2,7 @@
 title: The PageNumber input in the toolbar is cutoff at the top
 description: The PageNumber input is not aligned correctly in the toolbar
 type: troubleshooting
-page_title: Part of the PageNumber input in missing in the toolbar
+page_title: Part of the PageNumber Input is Missing in the Toolbar
 slug: pagenumber-input-is-cutoff-html5
 position: 
 tags: Html5ReportViewer, MvcReportViewer

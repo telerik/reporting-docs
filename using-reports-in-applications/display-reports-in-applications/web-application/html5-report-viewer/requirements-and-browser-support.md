@@ -18,7 +18,7 @@ position: 1
 
 1. Required JavaScript libraries and files:
 
-   + [jQuery](http://jquery.com/download/) __minimum required version 1.9.1__. As the HTML5 Report Viewer uses Kendo UI widgets, conform the jQuery version according to the [Kendo UI requirements](https://docs.telerik.com/kendo-ui/intro/supporting/jquery-support). 
+   + [jQuery](http://jquery.com/download/) __minimum required version 1.9.1__. As the HTML5 Report Viewer uses Kendo UI widgets, conform the jQuery version according to the [Kendo UI requirements](https://docs.telerik.com/kendo-ui/intro/supporting/jquery-support). Note that the jQuery slim build is **not** supported. 
 
    + Reference to HTML5 Report Viewer JavaScript called __telerikReportViewer-x.x.x.x.min.js__. By default, it is served from the Telerik Reporting REST Service. 
 

@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-The error might be thrown when the report contains a [PictureBox](./report-items-picture-box) whose Value is a URL. 
+The error might be thrown when the report contains a [PictureBox](../designing-reports/report-structure/picturebox) whose Value is a URL. 
 In general, when you provide an URL as a PictureBox.Value, we use a WebClient to download the image.
 At that point, the connection to server fails with the statement that the application's process is not authorized to get the resource.
 
@@ -35,7 +35,7 @@ The remote server returned an error:(401) Unauthorized.
 
 ## Solution
 
-You have to create a [User Function](.expressions-user-functions) that will download the image after authorizing, and returns it (e.g. as type [Bitmap](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.bitmap?view=netframework-4.8)) for the picture box value.
+You have to create a [User Function](../designing-reports/connecting-to-data/expressions/extending-expressions/user-functions) that will download the image after authorizing, and returns it (e.g. as type [Bitmap](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.bitmap?view=netframework-4.8)) for the picture box value.
 
 The User Function (without authorization) might look as follows:
 
@@ -54,5 +54,6 @@ public static Bitmap GetImage(string url)
 Another option is to return the image as byte[]. Note that it will be necessary to authorize the request to successfully download the image from the URL.
 
 ## See Also
-- [PictureBox](./report-items-picture-box)
-- [User Function](.expressions-user-functions)
+- [PictureBox](../designing-reports/report-structure/picturebox)
+
+- [User Function](../designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)

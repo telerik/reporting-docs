@@ -7,20 +7,28 @@ tags: filter,rules
 published: True
 position: 1
 ---
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 80%;
+}
+</style>
 
 # Filter Rules
 
-Filters are used to limit the number of records in a report based on specified filter rules. If the conditions of the rules are met the record is included in the report. Multiple rules can be defined that make up a filter. Filters are defined using the [Edit Filter Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog%}).             
+Filters are used to limit the number of records in a report based on specified filter rules. If the conditions of the rules are met the record is included in the report. Multiple rules can be defined that make up a filter. Filters are defined using the [Edit Filter Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog%}). 
 
 ## Filter Rules
 
-Each filter rule is made up of an __Expression__, __Operator__ and __Value__.                 
+Each filter rule is made up of an __Expression__, __Operator__ and __Value__. 
 
-* __Expression__ can be a data field from the __Fields__ collection or defined using the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).                         
+* __Expression__ can be a data field from the __Fields__ collection or defined using the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). 
 
-* __Operator__ can be simple comparison operators but can also include __Like__ and additional operators to include the top and bottom number of records and the top and bottom percentage of records. See the table of operators below.                         
+* __Operator__ can be simple comparison operators but can also include __Like__ and additional operators to include the top and bottom number of records and the top and bottom percentage of records. See the table of operators below. 
 
-* __Value__ can be a literal value, "```<blank>```" or an expression defined in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).                         
+* __Value__ can be a literal value, "```<blank>```" or an expression defined in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). 
 
 |   |   |
 | ------ | ------ |
@@ -41,13 +49,13 @@ Each filter rule is made up of an __Expression__, __Operator__ and __Value__.
 
 ## Filters used at the Group and Report Level
 
-Filtering can be performed at the Group and Report level through the __Filters__ property.                 
+Filtering can be performed at the Group and Report level through the __Filters__ property. 
 
 Group filters are intended to limit the number of group members and the filter Expression can contains Aggregate functions.
 
 Report filters limit the report data and Aggregate functions are not allowed.
 
-For example, consider the simplified data in the example diagram below. The data is first grouped by Country and filtered by Continent where Continent = 'EU'. This returns two records for Italy and Bulgaria. The data can be further constrained by adding a report filter "City LIKE R%" that returns only "Roma" and "Russe". If the filtering criteria is satisfied, then the group is included in the report. The data within the group is then further limited by the report filter.                   
+For example, consider the simplified data in the example diagram below. The data is first grouped by Country and filtered by Continent where Continent = 'EU'. This returns two records for Italy and Bulgaria. The data can be further constrained by adding a report filter "City LIKE R%" that returns only "Roma" and "Russe". If the filtering criteria is satisfied, then the group is included in the report. The data within the group is then further limited by the report filter. 
 
   ![](images/DesignGrouping013.png)
 

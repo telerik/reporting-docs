@@ -7,6 +7,14 @@ tags: picturebox
 published: True
 position: 10
 ---
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 80%;
+}
+</style>
 
 # PictureBox
 

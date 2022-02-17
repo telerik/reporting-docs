@@ -28,7 +28,7 @@ Specific changes and dependencies for each major Telerik Reporting release are l
 
 For any persisting issues, either:         
 
-* Refer to the article on               [troubeshooting installation and upgrade issues]({%slug telerikreporting/troubleshooting/installation%})               in Telerik Reporting, or             
+* Refer to the article on               [troubeshooting installation and upgrade issues]({%slug unable-to-upgrade-after-wizard %})               in Telerik Reporting, or             
 
 * Send the issue through the                [                dedicated Telerik Reporting support system              ](https://www.telerik.com/support/reporting)                together with your project or solution in a `.zip` file.             
 
@@ -49,7 +49,7 @@ If the new Telerik Reporting version is a major release, it will be installed ne
 
 To automatically upgrade your project to a later Telerik Reporting version, use the           [Telerik Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).         
 
-> 
+>
 * The Telerik Upgrade Wizzard does not support website projects.                 Websites handle assembly references in a different way.                 For more information, refer to the article on [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx).                 To upgrade your website project automatically, transform it into a web application or[manually upgrade your website project](62C373FC-EF77-4C07-9494-E67DACF6748E#upgrading-website-projects-manually).
 * Website, WPF, and Silverlight projects which use the WPF and Silverlight ReportViewers but do not have separately purchased                 Telerik UI for WPF and Telerik UI for Silverlight products, can only be updated manually.
 *.NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version:
@@ -132,4 +132,3 @@ Apart from website projects, you can also manually upgrade class library project
 1. Rebuild all updated projects.             
 
 1. If compilation errors or warnings occur, review the                [Release History section              ](https://www.telerik.com/support/whats-new/reporting/release-history)                for any obsolete or deleted properties, methods,               and events, and handle these according to the instructions in the section.               Review the release history for all releases between the previous and the latest version you installed.
-

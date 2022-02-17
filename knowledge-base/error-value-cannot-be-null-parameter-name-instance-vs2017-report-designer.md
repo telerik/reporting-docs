@@ -40,7 +40,7 @@ at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.D
 [The error](../troubleshooting-upgrading#report-cannot-be-built-and-opened-in-visual-studio-report-designer) indicates that the project uses a version of _Telerik Reporting_ that is not registered in Visual Studio 2017\. This might be due to Telerik Reporting being installed before installation of Visual Studio 2017.
 
 You should re-install Telerik Reporting with support for Visual Studio 2017.
-You can download MSI file to install Telerik Reporting as described in the [How to download Telerik Reporting installer](../installation-installing-from-msi#how-to-download-telerik-reporting-installer).
+You can download MSI file to install Telerik Reporting as described in the [How to download Telerik Reporting installer](../installation#using-the-msi-installer).
 After downloading the installer, our recommendation is to run the MSI file per Visual Studio edition:
 
 ```

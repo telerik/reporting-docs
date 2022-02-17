@@ -16,15 +16,15 @@ The article elaborates on how to localize the messages displayed by the React Re
 
    ````TypeScript
 export class StringResources {
-static english = {
-    loadingReport: 'Loading...',
-    // override other string resources here
-}
-static japanese = {
-    loadingReport: 'ちょっと、まってください...',
-    // override other string resources here
-}
-// override string resources for other cultures here
+   static english = {
+       loadingReport: 'Loading...',
+       // override other string resources here
+   }
+   static japanese = {
+       loadingReport: 'ちょっと、まってください...',
+       // override other string resources here
+   }
+   // override string resources for other cultures here
 }
 ````
 

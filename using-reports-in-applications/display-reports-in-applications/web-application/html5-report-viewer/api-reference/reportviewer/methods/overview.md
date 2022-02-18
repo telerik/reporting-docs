@@ -7,6 +7,14 @@ tags: overview
 published: True
 position: 0
 ---
+<style>
+table th:first-of-type {
+    width: 35%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+</style>
 
 # Methods Overview
 

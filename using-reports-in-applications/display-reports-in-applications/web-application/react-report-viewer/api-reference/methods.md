@@ -7,6 +7,14 @@ tags: methods
 published: True
 position: 2
 ---
+<style>
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+</style>
 
 # Methods
 

@@ -7,6 +7,14 @@ tags: printbegin(e,,args)
 published: True
 position: 7
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # printBegin(e, args)
 

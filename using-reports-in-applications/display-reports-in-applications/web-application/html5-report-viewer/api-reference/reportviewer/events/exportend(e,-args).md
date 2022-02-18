@@ -7,6 +7,14 @@ tags: exportend(e,,args)
 published: True
 position: 3
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # exportEnd(e, args)
 

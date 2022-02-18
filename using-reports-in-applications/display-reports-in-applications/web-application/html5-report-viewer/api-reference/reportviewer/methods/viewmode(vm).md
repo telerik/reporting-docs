@@ -7,6 +7,14 @@ tags: viewmode(vm)
 published: True
 position: 19
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # viewMode(vm)
 

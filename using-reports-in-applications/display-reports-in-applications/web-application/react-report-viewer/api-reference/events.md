@@ -7,6 +7,14 @@ tags: events
 published: True
 position: 1
 ---
+<style>
+table th:first-of-type {
+    width: 28%;
+}
+table th:nth-of-type(2) {
+    width: 72%;
+}
+</style>
 
 # Events
 

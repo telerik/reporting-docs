@@ -55,6 +55,3 @@ The old ASP.NET WebForms ReportViewer has a complex structure,           where p
 ## Error message on adding a viewer in Visual Studio: "The ReportViewer control failed to setup the http handler in the web.config file. You may experience troubles when viewing the report. Exception details: Unable to cast COM object of type 'System.__ComObject' to class type 'Telerik.Reporting.Vs.Common.AssemblyReference'. Instances of types that represent COM components cannot be cast to types that do not represent COM components; however they can be cast to interfaces as long as the underlying COM component supports QueryInterface calls for the IID of the interface."
 
 Web Sites handle assembly references differently and Telerik Reporting Wizards and Designers are not designed to work with such settings.           You can manually add viewers or upgrade the Web Site. Reports should be designed in an external ClassLibrary project referenced by the Web Site project.         
-
-
-

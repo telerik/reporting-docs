@@ -7,6 +7,14 @@ tags: interactiveactionexecuting(e,,args)
 published: True
 position: 12
 ---
+<style>
+table th:first-of-type {
+    width: 15%;
+}
+table th:nth-of-type(2) {
+    width: 85%;
+}
+</style>
 
 # interactiveActionExecuting(e, args)
 

@@ -7,6 +7,14 @@ tags: pageready(e,,args)
 published: True
 position: 6
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # pageReady(e, args)
 

@@ -16,15 +16,15 @@ The article elaborates on how to localize the messages displayed by the React Re
 
    ````TypeScript
 export class StringResources {
-    static english = {
-        loadingReport: 'Loading...',
-        // override other string resources here
-    }
-    static japanese = {
-        loadingReport: 'ちょっと、まってください...',
-        // override other string resources here
-    }
-    // override string resources for other cultures here
+		static english = {
+			loadingReport: 'Loading...',
+			// override other string resources here
+		}
+		static japanese = {
+			loadingReport: 'ちょっと、まってください...',
+			// override other string resources here
+		}
+		// override string resources for other cultures here
 }
 ````
 
@@ -41,46 +41,46 @@ import { StringResources } from './stringResources';
 
    ````TypeScript
 export function ReportViewer() {
-  const viewerRef = useRef(null);
-  const [language, setLanguage] = useState(navigator.language);
+	  const viewerRef = useRef(null);
+	  const [language, setLanguage] = useState(navigator.language);
 
-  useEffect(() => {
-    if (viewerRef) {
-      const { viewerObject } = viewerRef.current;
-      switch (language) {
-        case "ja":
-          viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.japanese);
-          break;
-        default:
-          viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.english);
-          break;
-      }
-    }
-  }, [language])
+	  useEffect(() => {
+		if (viewerRef) {
+		  const { viewerObject } = viewerRef.current;
+		  switch (language) {
+			case "ja":
+			  viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.japanese);
+			  break;
+			default:
+			  viewerObject.stringResources = Object.assign(viewerObject.stringResources, StringResources.english);
+			  break;
+		  }
+		}
+	  }, [language])
 
-  return (
-    <TelerikReportViewer
-      ref = {viewerRef}
-      serviceUrl = "https://demos.telerik.com/reporting/api/reports/"
-      reportSource = {{
-        report: 'Dashboard.trdx',
-        parameters: {}
-      }}
-      viewerContainerStyle = {{
-        position: 'absolute',
-        left: '5px',
-        right: '5px',
-        top: '40px',
-        bottom: '5px',
-        overflow: 'hidden',
-        clear: 'both',
-        fontFamily: 'ms sans serif'
-      }}
-      viewMode = "INTERACTIVE"
-      scaleMode = "SPECIFIC"
-      scale = {1.0}
-      enableAccessibility = {false} />
-  )
+	  return (
+		<TelerikReportViewer
+		  ref = {viewerRef}
+		  serviceUrl = "https://demos.telerik.com/reporting/api/reports/"
+		  reportSource = {{
+			report: 'Dashboard.trdx',
+			parameters: {}
+		  }}
+		  viewerContainerStyle = {{
+			position: 'absolute',
+			left: '5px',
+			right: '5px',
+			top: '40px',
+			bottom: '5px',
+			overflow: 'hidden',
+			clear: 'both',
+			fontFamily: 'ms sans serif'
+		  }}
+		  viewMode = "INTERACTIVE"
+		  scaleMode = "SPECIFIC"
+		  scale = {1.0}
+		  enableAccessibility = {false} />
+	  )
 }
 ````
 

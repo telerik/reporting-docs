@@ -507,3 +507,14 @@ https://stackoverflow.com/questions/47344571/how-to-draw-checkbox-or-tick-mark-i
 !!!Replaced the checkmark images with code '&#x2713;'
 images in tables are not converted, images are not copied
 !!!fixed
+
+
+Table Column Widths are generated equal by default. To set specific width, use this styling before the table:
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 80%;
+}
+</style>

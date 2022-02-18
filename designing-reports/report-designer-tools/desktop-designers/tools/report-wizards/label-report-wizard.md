@@ -7,7 +7,14 @@ tags: label,report,wizard
 published: True
 position: 2
 ---
-
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 # Label Report Wizard
 
 Label Report Wizard guides you through the process of creating a report with label layout.

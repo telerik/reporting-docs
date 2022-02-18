@@ -1,27 +1,46 @@
 ---
-title: HTML5 Viewer Troubleshooting
-page_title: HTML5 Viewer Troubleshooting | for Telerik Reporting Documentation
-description: HTML5 Viewer Troubleshooting
+title:
+page_title:
+description:
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting/html5-viewer-troubleshooting
-tags: html5,viewer,troubleshooting
+previous_url: troubleshooting/installation
+tags: telerik, reporting, troubleshoot,
 published: True
-position: 0
+type: troubleshooting
+res_type: kb
 ---
 
-# HTML5 Viewer Troubleshooting
+## Environment
 
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>Q2 2012 and newer</td>
+		</tr>
+	        <tr>
+			<td>Report Viewers</td>
+			<td>WinForms, WPF, ASP.NET</td>
+		</tr>
+	</tbody>
+</table>
 
+## Description
 
-The article provides troubleshooting for commonly met issues with the HTML5 Viewer and its MVC and WebForms wrappers.
+An `Error loading the report viewer's templates. (Template = /api/reports/resources/templates/telerikReportViewerTemplate-html)` occurs.
 
-> The recommended troubleshooting approach for the HTML5 Viewer is to use             [Fiddler](http://www.telerik.com/fiddler)  or other proxy tool to check the requests, their responses and statuses.            With Fiddler, information about requests and responses content can be seen in Fiddler - Inspectors - Request/Response - Raw tabs.            This will let you check requests to the Reporting REST service and determine if its URLs are correct and the relative paths are resolved correctly.           Relative paths may need adjustment depending on how the application is hosted -  [ASP.NET Web Project Paths](https://msdn.microsoft.com/en-us/library/ms178116.aspx).         Another option to troubleshoot web applications is to use            [Fiddler Jam](http://www.telerik.com/fiddler). It installs as a browser extension and collects logs for requests and responses performed in the browser.           The logs are securely stored and later can be shared with a third party for examination through a simple URL.           Fiddler Jam is being actively developed and might be a better choice than Fiddler in terms of deployment and integration.         
+## Cause
 
+The error message indicates that the [Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) is not responding.
 
-The HTML5 Viewer displays content rendered through the [        Reporting HTML Rendering mechanism      ]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).       
+## Solution  
 
-## Error loading the report viewer's templates. (Template = /api/reports/resources/templates/telerikReportViewerTemplate-html).
-
-The error message indicates that the [Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) is not responding.           Check the HTML5 Viewer's [serviceUrl]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) and adjust the relative path.           Test adding "~" or remove the first "/" -  [ASP.NET Web Project Paths](https://msdn.microsoft.com/en-us/library/ms178116.aspx). It is recommended to test the service by address in browser - *step 8* of           [How To: Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%}).           The issue might be related to WebAPI controllers duplicating routes, which can be avoided by  [changing the registered by default Telerik Reporting REST Web API routes](http://www.telerik.com/support/kb/reporting/details/how-to-change-reporting-rest-web-api-routes-registered-by-default).         
+Check the HTML5 Viewer [`serviceUrl`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) and adjust the relative path.
+Try [adding `~` or remove the first `.`](https://msdn.microsoft.com/en-us/library/ms178116.aspx). It is recommended to test the service by address in browser - *step 8* of           [How To: Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%}).           The issue might be related to WebAPI controllers duplicating routes, which can be avoided by  [changing the registered by default Telerik Reporting REST Web API routes](http://www.telerik.com/support/kb/reporting/details/how-to-change-reporting-rest-web-api-routes-registered-by-default).         
 
 ## Report Parameters are not updated on refreshing the HTML5 Viewer
 
@@ -52,6 +71,3 @@ The HTML5 Viewer is an HTML/CSS/JS widget, which gets content produced on the se
 ## The HTML5 WebForms Report Viewer does not work in an AJAXified page.
 
 The HTML5 WebForms ReportViewer is a wrapper of the HTML5 JavaScript Viewer.           The wrapper renders the JavaScript object in the page and registers scipts at the end of the page.           To update the viewer in the page, you can use its [exposed Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%})           or you can make a full post-back to recreate the viewer object.         
-
-
-

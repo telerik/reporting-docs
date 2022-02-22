@@ -28,7 +28,7 @@ the whole whitespace.
 ## Suggested Workarounds
 You may use the `&nbsp;` (non-breaking space) extended HTML character. For example, you may replace the occurrence of two spaces with `&nbsp;&nbsp;` through 
 the built-in _Replace_ [Text Function](../expressions-text-functions).  
-Here is a sample [Expression](../report-expressions) :
+Here is a sample [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) :
 ```
 =Replace(Fields.Value,'  ','&nbsp;&nbsp;')
 ```

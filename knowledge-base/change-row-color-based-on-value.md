@@ -20,7 +20,7 @@ res_type: kb
 
 
 ## Description
-How we can change row color, or any other styling characteristic, using [conditional formatting](../styling-conditional-formatting)?
+How we can change row color, or any other styling characteristic, using [conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %})?
 
 ## Solution
 Note that this solution is applicable when column headers are placed in Group Header Section and detailed row is placed in detailed section as TextBox items.

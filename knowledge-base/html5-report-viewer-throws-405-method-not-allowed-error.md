@@ -24,7 +24,7 @@ Failed to load resource: the server responded with a status of 405 (Method Not A
 ```
 
 ## Description
-[Telerik Reporting REST service](../telerik-reporting-rest-conception) requires **PUT** and **DELETE** verbs. Those verbs might be blocked by the *WebDavModule*.
+[Telerik Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) requires **PUT** and **DELETE** verbs. Those verbs might be blocked by the *WebDavModule*.
 
 ## Solution
 Therefore, make sure *WebDavModule* is removed as shown in the following configuration:

@@ -31,12 +31,12 @@ Make sure the following are correctly set up:
 
   As described in MSDN, the [ConfigurationManager.ConnectionStrings property](https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationmanager.connectionstrings?redirectedfrom=MSDN&view=net-5.0#System_Configuration_ConfigurationManager_ConnectionStrings) gets the *ConnectionStringsSection* data for the current application's default configuration. 
   
-  In case of Visual Studio, this is *devenv.exe.config*. The [SqlDataSource component](../sqldatasource) is particularly designed to use the current's project configuration file. However, if your custom Data Access Layer (DAL) is reading the **ConfigurationManager**.ConnectionStrings from the report that is previewed you get all connection strings defined in the devenv.exe.config file. In order to avoid the error you have several options:  
+  In case of Visual Studio, this is *devenv.exe.config*. The [SqlDataSource component]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) is particularly designed to use the current's project configuration file. However, if your custom Data Access Layer (DAL) is reading the **ConfigurationManager**.ConnectionStrings from the report that is previewed you get all connection strings defined in the devenv.exe.config file. In order to avoid the error you have several options:  
 
     1. Hard code the ConnectionString in your Data Access Layer(**DAL**);
     2. Use a desktop application with a report viewer(WinForms/WPF) to view your reports in runtime instead of the VS Previews;
     3. Add the required **ConnectionString** in **devenv.exe.config**;
-    4. Use the [SqlDataSource](../sqldatasource) component instead of the [ObjectDataSource](../objectdatasource) component. The SqlDataSource component will resolve the *ConnectionStrings* in the reports projects.
+    4. Use the [SqlDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) component instead of the [ObjectDataSource](../objectdatasource) component. The SqlDataSource component will resolve the *ConnectionStrings* in the reports projects.
 
 > For VS 2017 and higher, the devenv.exe.config's default location is C:\Program Files (x86)\Microsoft Visual Studio\*year*\Professional|Community\Common7\IDE.
 

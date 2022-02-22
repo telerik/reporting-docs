@@ -79,7 +79,7 @@ Toolbar buttons can be hidden in two ways:
             </ul>
             ...
     ```
-    For reference, please check [Providing Custom Templates](../html5-report-viewer-customizing-providing-template) help article.
+    For reference, please check [Providing Custom Templates]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates %}) help article.
 2. Using custom CSS rules or JavaScript, for example:
 ``` JavaScript
 $("#reportViewer1")

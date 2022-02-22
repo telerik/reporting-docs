@@ -33,7 +33,7 @@ Access to the path 'C:\Windows\TEMP\\**NAME**\\**VERSION**\LCT\value.dat' is den
 Where **NAME** is the name of the application and **VERSION** is the currently installed on the machine version of the product
 
 ## Cause\Possible Cause(s)
-The error message "Access to the path X is denied" indicates that the [Telerik Reporting REST service](../telerik-reporting-rest-conception) cannot access the configured file storage. By default, user temp folder will be used as a storage which is *'C:\Windows\TEMP'* in this case. 
+The error message "Access to the path X is denied" indicates that the [Telerik Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) cannot access the configured file storage. By default, user temp folder will be used as a storage which is *'C:\Windows\TEMP'* in this case. 
 
 ## Solution
 Test changing the default folder using the [second overload of the FileStorage](../m-telerik-reporting-cache-file-filestorage--ctor-1) and passing the custom folder location. The changes need to be made in ReportsController.cs file where the settings of the Reporting REST service are defined.

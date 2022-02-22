@@ -24,7 +24,7 @@ res_type: kb
  
 ## Description   
 
-In order to use the HTML5 Report Viewer, you need to have a running [Telerik Reporting REST service](../telerik-reporting-rest-conception), where one of the possible implementations of the Reporting REST Service is Web API based. 
+In order to use the HTML5 Report Viewer, you need to have a running [Telerik Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}), where one of the possible implementations of the Reporting REST Service is Web API based. 
   
 To ease the routes registering, there is the **ReportsControllerConfiguration.RegisterRoutes method**, which directly adds the required routes into the **GlobalConfiguration.Configuration**. The created routes follow a convention for [Routing in ASP.NET Web API](http://www.asp.net/web-api/overview/web-api-routing-and-actions/routing-in-aspnet-web-api "Routing in ASP.NET Web API") and their route templates contain "**api**" word to distinguish them from routes to custom controllers.  
   

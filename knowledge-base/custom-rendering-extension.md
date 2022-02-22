@@ -113,7 +113,7 @@ if (ShouldCountOnly(renderingContext))
     return true;
 }
 ```
-* If the report has [Page Header/Footer](../designing-reports-creating-page-headers-and-footers) and report items with [Expressions](../report-expressions) in them, we need to call the following method in order to evaluate the Expressions:
+* If the report has [Page Header/Footer](../designing-reports-creating-page-headers-and-footers) and report items with [Expressions]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) in them, we need to call the following method in order to evaluate the Expressions:
 ```C#
 evalHeaderFooterCallback(1, 1, report);
 ```

@@ -22,7 +22,7 @@ res_type: kb
 ## Description
 In PostgreSQL prior to version 11 there are Stored functions. Stored Procedures have been introduced with version 11.
 
-1. When using ODBC provider for PostgreSQL with Stored functions, the Stored Procedure drop-down menu of the Report Designer's [SqlDataSource wizard](../sqldatasource-wizard) is populated, but the returned scalar values or result set columns are included in the stored procedure's input arguments and will be listed as Stored Procedure arguments along with the real arguments, and the Stored function will not be correctly discovered, resulting in an exception.
+1. When using ODBC provider for PostgreSQL with Stored functions, the Stored Procedure drop-down menu of the Report Designer's [SqlDataSource wizard]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}-wizard) is populated, but the returned scalar values or result set columns are included in the stored procedure's input arguments and will be listed as Stored Procedure arguments along with the real arguments, and the Stored function will not be correctly discovered, resulting in an exception.
 
 2. When using NpgSql provider the Report Designer's SqlDataSource wizard does not list the PostgreSQL Stored functions in the Stored Procedures drop-down menu. The issue applies to PostgreSQL prior to version 11. 
 

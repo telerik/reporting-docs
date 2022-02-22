@@ -1,11 +1,10 @@
 ---
-title: How to Add a Dynamic Gauge in Telerik Report Designer
-description: Add a Gauge to a Report with Telerik Report Designer
-type: how-to
+title: Add a Dynamic Gauge in the Telerik Report Designer
 page_title: Add a Gauge in Telerik Report Designer
+description: "Learn how to add a Gauge to a report with the Telerik Report Designer."
+type: how-to
 slug: add-dynamic-gauge-report-designer
-position: 
-tags: 
+tags: telerik, reporting, add, dynamic, gauge, in, report, designer
 ticketid: 1473889
 res_type: kb
 ---
@@ -15,7 +14,7 @@ res_type: kb
 	<tbody>
 		<tr>
 			<td>Product Version</td>
-			<td>all</td>
+			<td>All</td>
 		</tr>
 		<tr>
 			<td>Product</td>
@@ -25,17 +24,17 @@ res_type: kb
 </table>
 
 ## Description
+
 I need to add a dynamic gauge that represents a specific value to my report.
 
 ## Solution
-Telerik Report Designer does not have a built-in Gauge control. You can use an image instead.   
 
-## Suggested Workaround
-As a workaround, you can use another tool to render the gauge with the desired value, for example, [RadGauge for ASP.NET AJAX](https://demos.telerik.com/aspnet-ajax/gauge/examples/overview/defaultcs.aspx).
-The following steps represent one possible approach:
+By design, the Telerik Report Designer does not provide a built-in Gauge control. However, as a workaround, you can use an image instead.
 
-1. Render the desired value in a gauge tool of your choice. 
+Alternatively, you can use another tool to render the gauge with the desired value. The following steps demonstrate how to add the [Gauge for ASP.NET AJAX](https://demos.telerik.com/aspnet-ajax/gauge/examples/overview/defaultcs.aspx):
+
+1. Render the desired value in a gauge tool of your choice.
 
 1. Capture or export the image.
 
-1. Use the [PictureBox](https://docs.telerik.com/reporting/report-items-picture-box) item to display the image in your report.
+1. Use the [PictureBox]({% slug telerikreporting/designing-reports/report-structure/picturebox %}) item to display the image in your report.

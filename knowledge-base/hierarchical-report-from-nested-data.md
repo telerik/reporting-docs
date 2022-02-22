@@ -59,7 +59,7 @@ of the recursion will be hit when the collection fields are no longer available.
 The solution is demonstrted in the [HierarchyFromNestedCollections.trdp](https://github.com/telerik/reporting-samples/blob/master/HierarchyFromNestedCollections.trdp) demo 
 report. Next I have outlined the main points when designing the report.  
 The report has a _DataSource_ assigned as a property - the [JsonDataSource](../jsondatasource-component) with hierarchical nested data collection, and a _DataSource_ assigned 
-with [Bindings](../expressions-bindings) through the following [Expression](../report-expressions):  
+with [Bindings](../expressions-bindings) through the following [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}):  
 ```
 Property path	|	Expression
 DataSource	|	= ReportItem.Parent is Null ? ReportItem.DataSource : ReportItem.Parent.DataObject.List

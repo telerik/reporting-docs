@@ -32,7 +32,7 @@ set to appear on each page, there is no information about the current page. For 
 For the above reason, you need to use the _Page Sections_ to display the information based on the page number for the group.  
 
 ### Workaround 1. Display All Group Header Information in the Page Header
-Let's consider we have only one group in the Report and each page may contain only 1 or 2 group instances. The first line of the following [Expression](../report-expressions) displays the name of the first group instance on the page. Note that the scope for the function is the name of the TextBox where we display the actual group detail value.
+Let's consider we have only one group in the Report and each page may contain only 1 or 2 group instances. The first line of the following [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) displays the name of the first group instance on the page. Note that the scope for the function is the name of the TextBox where we display the actual group detail value.
 ```
 = PageExec("textBox2", Fields.Group) + 
 IIF(PageExec("group", Fields.Value) = PageExec("textBox2", Fields.Value), "", "-Continued ") + 
@@ -42,7 +42,7 @@ On the next _Expression_ line, we determine whether this group is a new one or c
 Note that the first scope is the group name, which assures that the returned value is the first value for the Report group.  
 On the third _Expression_ line, we check whether another group starts on the same page. If so, we display also its name in the Page Header.  
 
-Note that we used the __Last__ [Aggregate Function](../expressions-aggregate-functions). Generally, the __PageExec__ [Page Function](../expressions-page-functions) accepts an aggregate function as second argument. We have skipped the __First__ aggregate function above as it is the default one that would be applied to the Field when an aggregate is omitted. 
+Note that we used the __Last__ [Aggregate Function]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions %}). Generally, the __PageExec__ [Page Function](../expressions-page-functions) accepts an aggregate function as second argument. We have skipped the __First__ aggregate function above as it is the default one that would be applied to the Field when an aggregate is omitted. 
 
 The demo report demonstrating this approach can be downloaded from our [Reporting Samples GitHub Repo - ReportWithGroups](https://github.com/telerik/reporting-samples/blob/master/ReportWithGroups/ReportWithGroups.trdp).
 
@@ -60,8 +60,8 @@ The demo report with four groups can be found in [Reporting Samples GitHub Repo 
 [Page Sections](../designing-reports-creating-page-headers-and-footers)  
 [Report Structure](../designing-reports-understanding-report-structure)  
 [Group Header/Footer Sections](../data-items-how-to-add-groups-to-report-item)  
-[Expression](../report-expressions)  
-[Aggregate Function](../expressions-aggregate-functions)  
+[Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %})  
+[Aggregate Function]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions %})  
 [Page Function](../expressions-page-functions)
 [GroupHeader > PrintOnEveryPage](../p-telerik-reporting-groupsection-printoneverypage)
 [GroupKeepTogether](../t-telerik-reporting-groupkeeptogether)

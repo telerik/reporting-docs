@@ -27,7 +27,7 @@ res_type: kb
 *Cannot access the Reporting REST service. (serviceUrl = '/api/reports'). Make sure the service address is correct and enable CORS if needed. (https://enable-cors.org)*
 
 ## Cause\Possible Cause(s)
-The error indicates that the [Telerik Reporting REST Service](../telerik-reporting-rest-conception) is not working properly.
+The error indicates that the [Telerik Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) is not working properly.
 
 ## Solution
 There are two possible reasons for this error:

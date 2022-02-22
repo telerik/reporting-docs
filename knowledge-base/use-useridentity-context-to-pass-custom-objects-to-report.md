@@ -31,7 +31,7 @@ It is of type _System.Collections.Concurrent.ConcurrentDictionary<string, object
 this property in the 
 [How to use information from HttpContext in Custom Report Resolver](how-to-pass-information-from-httpcontext-to-reporting-engine) 
 KB article. Then in the report, you may access the values of the collection.  
-For example, the first value of the collection may be used in an [Expression](../report-expressions) like:
+For example, the first value of the collection may be used in an [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) like:
 ```
 = Item(0, UserIdentity.Context.Values)
 ```

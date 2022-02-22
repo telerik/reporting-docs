@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-Trying to display a report in a report viewer through the use of a [Reporting web service](../telerik-reporting-rest-conception) may result in the following error being displayed inside the report viewer.
+Trying to display a report in a report viewer through the use of a [Reporting web service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) may result in the following error being displayed inside the report viewer.
 
 ## Error Message
 

@@ -31,7 +31,7 @@ However, this may result in the distortion of other controls in the application.
 
 1. You may extract the viewer in a separate application, and call the latter when needed from the main application. Only the application with the viewer (with embedded Reporting engine) should be declared as DPI-aware.  
   
-2. You may move the Reporting engine in a separate [Telerik Reporting REST Service](../telerik-reporting-rest-conception) and [use the Windows Forms Viewer with the REST Service](../winforms-viewer-howto-use-it-with-rest-service). It will be necessary to add the <**dpiAware**\> section to the REST Service application's **web.config** and set the **_dpiAwareness_** attribute to *PROCESS\_SYSTEM\_DPI\_AWARE* - [dpiAware element](../configuring-telerik-reporting-dpiaware#dpi-awareness-in-report-viewers).  
+2. You may move the Reporting engine in a separate [Telerik Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) and [use the Windows Forms Viewer with the REST Service](../winforms-viewer-howto-use-it-with-rest-service). It will be necessary to add the <**dpiAware**\> section to the REST Service application's **web.config** and set the **_dpiAwareness_** attribute to *PROCESS\_SYSTEM\_DPI\_AWARE* - [dpiAware element](../configuring-telerik-reporting-dpiaware#dpi-awareness-in-report-viewers).  
   
 3. You may test to run the application not declared as DPI-aware on a machine with Windows 10 Anniversary Update, where Windows runtime has improved the UX for Windows Forms applications that are not declared as DPI-aware. We cannot guarantee the report will be displayed as expected.  
   

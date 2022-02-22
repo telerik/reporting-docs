@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-Assume that you have to create a report for workers where you need to calculate the total hours per workweek for each. If this total is greater than 40 hrs/week, then its value becomes 40 hrs and the rest of the hours are passed as overtime hours. You can calculate both the total and the overtime hours for the particular group or scope with an [Expression](../report-expressions).
+Assume that you have to create a report for workers where you need to calculate the total hours per workweek for each. If this total is greater than 40 hrs/week, then its value becomes 40 hrs and the rest of the hours are passed as overtime hours. You can calculate both the total and the overtime hours for the particular group or scope with an [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}).
 
 However, you may encounter a problem if you need to sum the values of the overtime total hours in the Summary of the report. That said, to create a total of the total overtime hours for
 all the groups.

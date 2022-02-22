@@ -33,7 +33,7 @@ This is mainly because of the current limitations of the framework and Visual St
 There are two approaches to resolve the problem depending on the amount of custom code used in the report definitions.
 * If the report classes *do not* contain custom code (i.e. handlers for events like [NeedDataSource](../e-telerik-reporting-dataitem-needdatasource), 
 [ItemDataBound](../e-telerik-reporting-reportitembase-itemdatabound), etc.) or this code can be substituted
-with [conditional formatting](../styling-conditional-formatting)
+with [conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %})
 and [bindings](../expressions-bindings) in the report definition, it is recommended to use the 
 [Standalone Report Designer](../standalone-report-designer) to import them into a set of .trdp/.trdx reports, as explained [here](../standalone-report-designer-import-clr-reports).
 If the report uses class library assemblies that contain [user functions](../expressions-user-functions) or provide data for [ObjectDataSource](../objectdatasource) instances, their projects need to be migrated to .NET Standard. This way the Standalone Report Designer will be able to load the assemblies and provide design-time support for them.

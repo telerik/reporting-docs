@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 
-Trying to set a width or height sizing of less than 10px on table/crosstab/list row or column results in the *Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}* error. Usually, such error occurs when user try to make a row or column not visible by basically reducing its width or height(or both) to zero. The correct way to hide a row or a column is through [Conditional Formatting](../styling-conditional-formatting) or a [Binding](../expressions-bindings) to the **Visible** property.
+Trying to set a width or height sizing of less than 10px on table/crosstab/list row or column results in the *Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}* error. Usually, such error occurs when user try to make a row or column not visible by basically reducing its width or height(or both) to zero. The correct way to hide a row or a column is through [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) or a [Binding](../expressions-bindings) to the **Visible** property.
 
 ## Error Message
 

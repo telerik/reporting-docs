@@ -22,7 +22,7 @@ Our recommendation is to avoid making changes to the report definition. Note tha
   
 ## Solution    
 
-- Flexibility in the layout can be achieved by showing/hiding items/sections via [Conditional Formatting](../styling-conditional-formatting) and [Bindings](../expressions-bindings), and [Filtering data](../data-items-filtering-data) which results in not displaying certain parts of the report e.g. [Using a dynamic filter to show/hide Crosstab/Table/List group members (columns)](../data-items-how-to-add-filtering-to-group).  
+- Flexibility in the layout can be achieved by showing/hiding items/sections via [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) and [Bindings](../expressions-bindings), and [Filtering data](../data-items-filtering-data) which results in not displaying certain parts of the report e.g. [Using a dynamic filter to show/hide Crosstab/Table/List group members (columns)](../data-items-how-to-add-filtering-to-group).  
 
  - Flexibility in retrieving data can be achieved by using parameterized data-retrieval methods. The method's arguments can be mapped to [report parameters](../designing-reports-parameters) e.g. [Using Parameters with the SqlDataSource component](../sql-data-source-using-parameters). You can also use a custom data access layer which fetches data in a manner fitting your requirements, where data objects can be consumed via ObjectDatasource/EntityDataSource or else component e.g. [Connecting Telerik Reporting to OData feeds](../../blogs/connecting-telerik-reporting-to-odata-feeds).  
   

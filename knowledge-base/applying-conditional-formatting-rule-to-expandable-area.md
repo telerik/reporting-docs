@@ -33,7 +33,7 @@ In the [demo report](https://github.com/telerik/reporting-samples/tree/master/Ap
 
 3. Set the [Toggle Visibility action](../designing-reports-interactivity-how-to-add-drilldown-action) on "=Fields.Group";
 
-4. Set [Conditional Formatting](../styling-conditional-formatting) to "=Fields.Group" cell:
+4. Set [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) to "=Fields.Group" cell:
 
 **Expression**: =RowNumber()%2
 

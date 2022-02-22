@@ -50,7 +50,7 @@ The connection was reset.
   
 ## Solution  
 
-Disable the **RadCompression** to the [Reporting REST service](../telerik-reporting-rest-conception)(WebAPI based) to receive documents bytes in the client (Viewer).  
+Disable the **RadCompression** to the [Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %})(WebAPI based) to receive documents bytes in the client (Viewer).  
 
 ```xml
 <configuration>

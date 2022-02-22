@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-When you need to pass data from a [SqlDataSource](../sqldatasource) bound to a data item to its child [data item](../data-items), for example in the Master-Detail scenario, you need to pass all of the data. This is due to the fact that SqlDataSource can return only a single DataTable. Even if the query returns a DataSet, only the first of the tables will be used - [Selecting Data with the SqlDataSource component](../sql-data-source-selecting-data). In some cases, this may significantly deteriorate the performance.  
+When you need to pass data from a [SqlDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) bound to a data item to its child [data item](../data-items), for example in the Master-Detail scenario, you need to pass all of the data. This is due to the fact that SqlDataSource can return only a single DataTable. Even if the query returns a DataSet, only the first of the tables will be used - [Selecting Data with the SqlDataSource component](../sql-data-source-selecting-data). In some cases, this may significantly deteriorate the performance.  
 The general approach for binding the DataSource of the child data item to parent data is explained in the 
 _Use DataObject as a datasource for nested data items (Table, List, Crosstab, Graph)_ section of 
 [How to use the ReportItem.DataObject property in expressions](../data-items-how-to-use-data-object) article. 

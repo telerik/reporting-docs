@@ -33,4 +33,4 @@ The sample application could be downloaded from [here](https://www.telerik.com/d
 ## See Also
   [Angular Report Viewer](../angular-report-viewer)
   
-  [Telerik Reporting REST Services](../telerik-reporting-rest-conception)
+  [Telerik Reporting REST Services]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %})

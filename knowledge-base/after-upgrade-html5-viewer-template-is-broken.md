@@ -1,16 +1,16 @@
 ---
-title: After upgrade, HTML5 viewer has broken layout
-description: After upgrade, HTML5 viewer has broken layout and parameters are missing
+title: HTML5 ReportViewer Layout Breaks after Upgrade
+page_title: HTML5 ReportViewer Template Breaks after Upgrade
+description: "Learn how to fix the template layout and parameters of the HTML5 ReportViewer after upgarade."
 type: troubleshooting
-page_title: After upgrade, HTML5 viewer's template is broken
 slug: after-upgrade-html5-viewer-template-is-broken
-position: 
-tags: HTML5Viewer, Templates, Upgrade
+tags: telerik, reporting, HTML5, reportviewer, templates, upgrade
 ticketid: 1388060
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -28,30 +28,28 @@ res_type: kb
 
 
 ## Description
-How to fix broken report viewer layout after upgrading Telerik Reporting version?
-There are several reasons that could cause broken layout after upgrading. We can define three main scenarios:
 
-## Possible Cause 1
-Scenario: Using default template and styles. 
-Possible cause: If older version of the assemblies are used (since the default template comes from our assembly).
+How can I fix the broken layout of the HTML5 ReportViewer after upgrading the Telerik Reporting version?
 
-## Solution 1
-Web-based viewers are widgets, that get content produced on the server by the [Reporting REST service](../telerik-reporting-rest-conception). Make sure that latest assemblies are referenced in the Rest Service project.
+## Cause
 
-## Possible Cause 2
-Scenario: Using custom (local) template and styles.
-Possible cause: If the custom template is not containing the new changes from the latest release.
+The possible causes for this issues depend on the scenario:
 
-## Solution 2
-All local loaded Telerik Report Viewer resources **should be updated manually on upgrade** to contain the new changes. They could be found in default Telerik Reporting installation folder. For example *C:\Program Files (x86)\Progress\Telerik Reporting **VERSION**\Html5\ReportViewer*.
+* Utilizing the default template and styles&mdash;As the default template comes from the Telerik reporting assembly, it is possible that you are using a previous version of the assemblies.
 
-## Possible Cause 3
-Scenario: Either using default template or custom one
-Possible cause: If older template is still cached by browsers
+* Utilizing a custom (local) template and styles&mdash;It is possible that the custom template is not containing the new changes from the latest release.
 
-## Solution 3
-After updating the assemblies/merging the newest changes, make sure that browser cache is cleared. Browsers often cache html and css files to optimize the page loading. Sometimes they do not detect modified files.
+* Utilizing either the default or custom template&mdash;It is possible that the older template is still cached by browsers.
+
+## Solution
+
+* For the default template and styles scenario&mdash;Web-based viewers are widgets that get content produced on the server by the [Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}). Make sure that latest assemblies are referenced in the Rest Service project.
+
+* For the custom template and styles scenario&mdash;All local loaded Telerik Report Viewer resources have to be manually updated on upgrade to include the new changes. The resources are located in the default Telerik Reporting installation folder, for example, at `C:\Program Files (x86)\Progress\Telerik Reporting **VERSION**\Html5\ReportViewer`.
+
+* For either the default or custom template&mdash;After updating the assemblies or merging the latest changes, make sure that the browser cache is cleared. Browsers often cache HTML and CSS files to optimize the page loading. Sometimes they do not detect modified files.
 
 ## See Also
-- [Styling and Appearance](../html5-report-viewer-styling-and-appearance)
-- [Providing Custom Templates](../html5-report-viewer-customizing-providing-template)
+
+- [Styling and Appearance]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview %})
+- [Providing Custom Templates]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates %})

@@ -1,8 +1,8 @@
 ---
-title: Actions not working on Preview
-description: Some or all report item actions may not work on previewing the report. A couple of scenarios, under which this could occur, are explained in this article.
+title: Actions Are Not Working on Preview
+page_title: Unable to Use Interactive Actions When Previewing the Report
+description: "Learn how to handle the scenario when some or all report item actions do not work on previewing the Telerik report."
 type: how-to
-page_title: Unable to use interactive actions when previewing the report
 slug: actions-not-working-on-preview
 res_type: kb
 ---
@@ -28,16 +28,17 @@ res_type: kb
 
 ## Description
 
-In this article, we will discuss a couple of scenarios where report items' [Actions](../designing-reports-interactivity-actions) are not working on previewing the report both in a report viewer and in a report designer.
-  
-  
+The [Actions](../designing-reports-interactivity-actions) of the report items are not working on previewing the report both in a report viewer and in a report designer.
+
 ## Solution  
-  
+
+Depending on the exact scenario, use any of the following approaches to solve this issue:
+
 - **Actions not working in Visual Studio - HTML Preview.**  
 
-    In the Report Designer, integrated in **Visual Studio**, you can find an option for HTML Preview. The browser used by Visual Studio is **Internet Explorer 7**, where the Reporting engine applies [HTML5 standards](../designing-reports-considerations-html) to produce an HTML document from the report definition. As a result actions may not work and the report's layout may appear differently than in HTML5-compliant browsers.  
+    In the Report Designer integrated in Visual Studio you can find the **HTML Preview** option. Visual Studio uses Internet Explorer 7 as a browser where the Reporting engine applies [HTML5 standards](../designing-reports-considerations-html) to produce an HTML document from the report definition. As a result, actions may not work and the layout of the report may appear different from that in HTML5-compliant browsers.  
 
-    You can use a web application with the [HTML5 Viewer](../html5-report-viewer) to preview the result.
+    To solve this issue, use a web application with the [HTML5 Viewer](../html5-report-viewer) to preview the result.
 
 - **Actions not working in Print preview of the report.**  
 
@@ -56,4 +57,3 @@ In this article, we will discuss a couple of scenarios where report items' [Acti
 - **Drilldown Report Action ([TogglevisibilityAction](../designing-reports-interactivity-drill-down)) does not toggle the visibility of all required items/sections.**  
 
     On configuring the *ToggleVisibilityAction*, you can set a list of targets which includes *sub groups*, items and sections. Beside setting the targets, you need to set the targets' **Visible** properties depending on if you want them to be *shown* or *hidden* initially - [How to: Add a Drilldown Action](../designing-reports-interactivity-how-to-add-drilldown-action).
-

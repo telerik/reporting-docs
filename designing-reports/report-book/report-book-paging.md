@@ -1,6 +1,6 @@
 ---
 title: Report Book Paging
-page_title: Report Book Paging | for Telerik Reporting Documentation
+page_title: Report Book Paging 
 description: Report Book Paging
 slug: telerikreporting/designing-reports/report-book/report-book-paging
 tags: report,book,paging

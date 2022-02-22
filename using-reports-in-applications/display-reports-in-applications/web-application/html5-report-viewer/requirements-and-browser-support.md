@@ -1,6 +1,6 @@
 ---
 title: Requirements and Browser Support
-page_title: Requirements and Browser Support | for Telerik Reporting Documentation
+page_title: Requirements and Browser Support 
 description: Requirements and Browser Support
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support
 tags: requirements,and,browser,support

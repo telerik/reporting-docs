@@ -1,6 +1,6 @@
 ---
 title: How to Use React Report Viewer with REST Service
-page_title: How to Use React Report Viewer with REST Service | for Telerik Reporting Documentation
+page_title: How to Use React Report Viewer with REST Service 
 description: How to Use React Report Viewer with REST Service
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service
 tags: how,to,use,react,report,viewer,with,rest,service

@@ -1,6 +1,6 @@
 ---
 title: Understanding Report Sections (obsolete)
-page_title: Understanding Report Sections (obsolete) | for Telerik Reporting Documentation
+page_title: Understanding Report Sections (obsolete) 
 description: Understanding Report Sections (obsolete)
 slug: telerikreporting/designing-reports/report-structure/understanding-report-sections-(obsolete)
 tags: understanding,report,sections,(obsolete)

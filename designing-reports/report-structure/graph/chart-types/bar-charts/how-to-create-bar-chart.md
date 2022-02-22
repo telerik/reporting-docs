@@ -1,6 +1,6 @@
 ---
 title: How to Create Bar Chart
-page_title: How to Create Bar Chart | for Telerik Reporting Documentation
+page_title: How to Create Bar Chart 
 description: How to Create Bar Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/how-to-create-bar-chart
 tags: how,to,create,bar,chart

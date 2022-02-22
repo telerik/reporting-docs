@@ -1,6 +1,6 @@
 ---
 title: GridLines
-page_title: GridLines | for Telerik Reporting Documentation
+page_title: GridLines 
 description: GridLines
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/gridlines
 tags: gridlines

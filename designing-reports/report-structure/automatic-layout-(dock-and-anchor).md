@@ -1,6 +1,6 @@
 ---
 title: Automatic Layout (Dock and Anchor)
-page_title: Automatic Layout (Dock and Anchor) | for Telerik Reporting Documentation
+page_title: Automatic Layout (Dock and Anchor) 
 description: Automatic Layout (Dock and Anchor)
 slug: telerikreporting/designing-reports/report-structure/automatic-layout-(dock-and-anchor)
 tags: automatic,layout,(dock,and,anchor)

@@ -1,6 +1,6 @@
 ---
 title: How to Create Chart Step by Step
-page_title: How to Create Chart Step by Step | for Telerik Reporting Documentation
+page_title: How to Create Chart Step by Step 
 description: How to Create Chart Step by Step
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-chart-step-by-step
 tags: how,to,create,chart,step,by,step

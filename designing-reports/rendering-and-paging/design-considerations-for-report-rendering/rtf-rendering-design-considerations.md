@@ -1,6 +1,6 @@
 ---
 title: RTF Rendering Design Considerations
-page_title: RTF Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: RTF Rendering Design Considerations 
 description: RTF Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/rtf-rendering-design-considerations
 tags: rtf,rendering,design,considerations

@@ -1,6 +1,6 @@
 ---
 title: printEnd(e, args)
-page_title: printEnd(e, args) | for Telerik Reporting Documentation
+page_title: printEnd(e, args) 
 description: printEnd(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printend(e,-args)
 tags: printend(e,,args)

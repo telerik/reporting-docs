@@ -1,6 +1,6 @@
 ---
 title: How to Use HTML5 ASP.NET Web Forms Report Viewer with REST Service
-page_title: How to Use HTML5 ASP.NET Web Forms Report Viewer with REST Service | for Telerik Reporting Documentation
+page_title: How to Use HTML5 ASP.NET Web Forms Report Viewer with REST Service 
 description: How to Use HTML5 ASP.NET Web Forms Report Viewer with REST Service
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service
 tags: how,to,use,html5,asp.net,web,forms,report,viewer,with,rest,service

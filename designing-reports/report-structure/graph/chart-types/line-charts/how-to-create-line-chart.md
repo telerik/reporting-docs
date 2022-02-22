@@ -1,6 +1,6 @@
 ---
 title: How to Create Line Chart
-page_title: How to Create Line Chart | for Telerik Reporting Documentation
+page_title: How to Create Line Chart 
 description: How to Create Line Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/how-to-create-line-chart
 tags: how,to,create,line,chart

@@ -1,6 +1,6 @@
 ---
 title: Series
-page_title: Series | for Telerik Reporting Documentation
+page_title: Series 
 description: Series
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series
 tags: series

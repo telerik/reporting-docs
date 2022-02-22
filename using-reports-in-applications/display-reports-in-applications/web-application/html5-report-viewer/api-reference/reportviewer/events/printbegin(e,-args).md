@@ -1,6 +1,6 @@
 ---
 title: printBegin(e, args)
-page_title: printBegin(e, args) | for Telerik Reporting Documentation
+page_title: printBegin(e, args) 
 description: printBegin(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printbegin(e,-args)
 tags: printbegin(e,,args)

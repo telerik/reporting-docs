@@ -1,6 +1,6 @@
 ---
 title: Providing Custom Templates
-page_title: Providing Custom Templates | for Telerik Reporting Documentation
+page_title: Providing Custom Templates 
 description: Providing Custom Templates
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates
 tags: providing,custom,templates

@@ -1,6 +1,6 @@
 ---
 title: How to Create a Master-Detail Report Using a SubReport Item
-page_title: How to Create a Master-Detail Report Using a SubReport Item | for Telerik Reporting Documentation
+page_title: How to Create a Master-Detail Report Using a SubReport Item 
 description: How to Create a Master-Detail Report Using a SubReport Item
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item
 tags: how,to,create,a,master-detail,report,using,a,subreport,item

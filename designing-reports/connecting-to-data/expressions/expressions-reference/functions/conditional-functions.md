@@ -1,6 +1,6 @@
 ---
 title: Conditional Functions
-page_title: Conditional Functions | for Telerik Reporting Documentation
+page_title: Conditional Functions 
 description: Conditional Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions
 tags: conditional,functions

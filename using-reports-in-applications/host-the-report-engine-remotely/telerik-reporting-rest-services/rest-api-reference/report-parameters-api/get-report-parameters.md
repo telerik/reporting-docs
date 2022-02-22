@@ -1,6 +1,6 @@
 ---
 title: Get Report Parameters
-page_title: Get Report Parameters | for Telerik Reporting Documentation
+page_title: Get Report Parameters 
 description: Get Report Parameters
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters
 tags: get,report,parameters

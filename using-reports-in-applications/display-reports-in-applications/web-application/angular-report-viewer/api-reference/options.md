@@ -1,6 +1,6 @@
 ---
 title: Options
-page_title: Options | for Telerik Reporting Documentation
+page_title: Options 
 description: Options
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options
 tags: options

@@ -1,6 +1,6 @@
 ---
 title: Design Considerations for Report Rendering Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview
 tags: overview

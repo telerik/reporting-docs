@@ -1,6 +1,6 @@
 ---
 title: How to change a Chart Type
-page_title: How to change a Chart Type | for Telerik Reporting Documentation
+page_title: How to change a Chart Type 
 description: How to change a Chart Type
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-a-chart-type
 tags: how,to,change,a,chart,type

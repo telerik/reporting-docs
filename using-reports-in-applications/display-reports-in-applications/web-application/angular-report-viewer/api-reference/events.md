@@ -1,6 +1,6 @@
 ---
 title: Events
-page_title: Events | for Telerik Reporting Documentation
+page_title: Events 
 description: Events
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events
 tags: events

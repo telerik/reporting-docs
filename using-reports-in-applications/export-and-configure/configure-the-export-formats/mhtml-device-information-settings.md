@@ -1,6 +1,6 @@
 ---
 title: MHTML Device Information Settings
-page_title: MHTML Device Information Settings | for Telerik Reporting Documentation
+page_title: MHTML Device Information Settings 
 description: MHTML Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/mhtml-device-information-settings
 tags: mhtml,device,information,settings

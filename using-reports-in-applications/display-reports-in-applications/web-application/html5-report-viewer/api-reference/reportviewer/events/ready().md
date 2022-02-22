@@ -1,6 +1,6 @@
 ---
 title: ready()
-page_title: ready() | for Telerik Reporting Documentation
+page_title: ready() 
 description: ready()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/ready()
 tags: ready()

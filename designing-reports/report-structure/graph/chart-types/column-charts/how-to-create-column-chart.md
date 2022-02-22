@@ -1,6 +1,6 @@
 ---
 title: How to Create Column Chart
-page_title: How to Create Column Chart | for Telerik Reporting Documentation
+page_title: How to Create Column Chart 
 description: How to Create Column Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/how-to-create-column-chart
 tags: how,to,create,column,chart

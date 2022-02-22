@@ -1,6 +1,6 @@
 ---
 title: Shape
-page_title: Shape | for Telerik Reporting Documentation
+page_title: Shape 
 description: Shape
 slug: telerikreporting/designing-reports/report-structure/shape
 tags: shape

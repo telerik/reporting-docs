@@ -1,6 +1,6 @@
 ---
 title: How to Nest a Graph Item in a Table item
-page_title: How to Nest a Graph Item in a Table item | for Telerik Reporting Documentation
+page_title: How to Nest a Graph Item in a Table item 
 description: How to Nest a Graph Item in a Table item
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/how-to-nest-a-graph-item-in-a-table-item
 tags: how,to,nest,a,graph,item,in,a,table,item

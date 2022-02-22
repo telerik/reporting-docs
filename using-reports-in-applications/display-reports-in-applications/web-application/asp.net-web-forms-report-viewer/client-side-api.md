@@ -1,6 +1,6 @@
 ---
 title: Client-Side API
-page_title: Client-Side API | for Telerik Reporting Documentation
+page_title: Client-Side API 
 description: Client-Side API
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/client-side-api
 tags: client-side,api

@@ -1,6 +1,6 @@
 ---
 title: Report Parameters
-page_title: Report Parameters | for Telerik Reporting Documentation
+page_title: Report Parameters 
 description: Report Parameters
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/report-parameters
 tags: report,parameters

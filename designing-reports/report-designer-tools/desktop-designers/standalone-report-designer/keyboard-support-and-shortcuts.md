@@ -1,6 +1,6 @@
 ---
 title: Keyboard Support and Shortcuts
-page_title: Keyboard Support and Shortcuts | for Telerik Reporting Documentation
+page_title: Keyboard Support and Shortcuts 
 description: Keyboard Support and Shortcuts
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/keyboard-support-and-shortcuts
 tags: keyboard,support,and,shortcuts

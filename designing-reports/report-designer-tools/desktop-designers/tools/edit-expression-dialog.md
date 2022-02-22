@@ -1,6 +1,6 @@
 ---
 title: Edit Expression Dialog
-page_title: Edit Expression Dialog | for Telerik Reporting Documentation
+page_title: Edit Expression Dialog 
 description: Edit Expression Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog
 tags: edit,expression,dialog

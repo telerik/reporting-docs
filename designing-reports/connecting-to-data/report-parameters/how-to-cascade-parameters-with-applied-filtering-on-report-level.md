@@ -1,6 +1,6 @@
 ---
 title: How to Cascade Parameters with applied filtering on Report level
-page_title: How to Cascade Parameters with applied filtering on Report level | for Telerik Reporting Documentation
+page_title: How to Cascade Parameters with applied filtering on Report level 
 description: How to Cascade Parameters with applied filtering on Report level
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-report-level
 tags: how,to,cascade,parameters,with,applied,filtering,on,report,level

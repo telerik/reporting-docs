@@ -1,6 +1,6 @@
 ---
 title: Page Settings, Sizes and Naming
-page_title: Page Settings, Sizes and Naming | for Telerik Reporting Documentation
+page_title: Page Settings, Sizes and Naming 
 description: Page Settings, Sizes and Naming
 slug: telerikreporting/designing-reports/report-book/page-settings,-sizes-and-naming
 tags: page,settings,,sizes,and,naming

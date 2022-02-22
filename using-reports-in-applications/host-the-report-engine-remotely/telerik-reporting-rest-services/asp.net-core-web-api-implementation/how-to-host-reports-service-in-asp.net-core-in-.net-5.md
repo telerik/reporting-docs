@@ -1,6 +1,6 @@
 ---
 title: How to Host Reports Service in ASP.NET Core in .NET 5
-page_title: How to Host Reports Service in ASP.NET Core in .NET 5 | for Telerik Reporting Documentation
+page_title: How to Host Reports Service in ASP.NET Core in .NET 5 
 description: How to Host Reports Service in ASP.NET Core in .NET 5
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,5

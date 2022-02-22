@@ -1,6 +1,6 @@
 ---
 title: Understanding Style Selectors
-page_title: Understanding Style Selectors | for Telerik Reporting Documentation
+page_title: Understanding Style Selectors 
 description: Understanding Style Selectors
 slug: telerikreporting/designing-reports/styling-reports/understanding-style-selectors
 tags: understanding,style,selectors

@@ -1,6 +1,6 @@
 ---
 title: How to Add  manually report viewer to a WPF .NET Framework project
-page_title: How to Add  manually report viewer to a WPF .NET Framework project | for Telerik Reporting Documentation
+page_title: How to Add  manually report viewer to a WPF .NET Framework project 
 description: How to Add  manually report viewer to a WPF .NET Framework project
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project
 tags: how,to,add,,manually,report,viewer,to,a,wpf,.net,framework,project

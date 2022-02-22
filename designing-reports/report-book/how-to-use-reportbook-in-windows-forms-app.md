@@ -1,6 +1,6 @@
 ---
 title: How to Use ReportBook in Windows Forms app
-page_title: How to Use ReportBook in Windows Forms app | for Telerik Reporting Documentation
+page_title: How to Use ReportBook in Windows Forms app 
 description: How to Use ReportBook in Windows Forms app
 slug: telerikreporting/designing-reports/report-book/how-to-use-reportbook-in-windows-forms-app
 tags: how,to,use,reportbook,in,windows,forms,app

@@ -1,6 +1,6 @@
 ---
 title: How to Connect to an Oracle Database
-page_title: How to Connect to an Oracle Database | for Telerik Reporting Documentation
+page_title: How to Connect to an Oracle Database 
 description: How to Connect to an Oracle Database
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/-how-to/how-to-connect-to-an-oracle-database
 tags: how,to,connect,to,an,oracle,database

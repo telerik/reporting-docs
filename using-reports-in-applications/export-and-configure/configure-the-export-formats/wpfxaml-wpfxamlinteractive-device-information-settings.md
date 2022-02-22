@@ -1,6 +1,6 @@
 ---
 title: WPFXAML/WPFXAMLInteractive Device Information Settings
-page_title: WPFXAML/WPFXAMLInteractive Device Information Settings | for Telerik Reporting Documentation
+page_title: WPFXAML/WPFXAMLInteractive Device Information Settings 
 description: WPFXAML/WPFXAMLInteractive Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/wpfxaml-wpfxamlinteractive-device-information-settings
 tags: wpfxaml/wpfxamlinteractive,device,information,settings

@@ -1,6 +1,6 @@
 ---
 title: Understanding Events
-page_title: Understanding Events | for Telerik Reporting Documentation
+page_title: Understanding Events 
 description: Understanding Events
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events
 tags: understanding,events

@@ -1,6 +1,6 @@
 ---
 title: How to Create Graph with Column and Line Series
-page_title: How to Create Graph with Column and Line Series | for Telerik Reporting Documentation
+page_title: How to Create Graph with Column and Line Series 
 description: How to Create Graph with Column and Line Series
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-graph-with-column-and-line-series
 tags: how,to,create,graph,with,column,and,line,series

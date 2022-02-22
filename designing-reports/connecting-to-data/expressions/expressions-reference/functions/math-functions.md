@@ -1,6 +1,6 @@
 ---
 title: Math Functions
-page_title: Math Functions | for Telerik Reporting Documentation
+page_title: Math Functions 
 description: Math Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/math-functions
 tags: math,functions

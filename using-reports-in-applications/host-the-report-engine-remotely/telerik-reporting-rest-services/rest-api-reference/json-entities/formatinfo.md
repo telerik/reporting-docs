@@ -1,6 +1,6 @@
 ---
 title: FormatInfo
-page_title: FormatInfo | for Telerik Reporting Documentation
+page_title: FormatInfo 
 description: FormatInfo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo
 tags: formatinfo

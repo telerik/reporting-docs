@@ -1,6 +1,6 @@
 ---
 title: SqlDataSource Wizard
-page_title: SqlDataSource Wizard | for Telerik Reporting Documentation
+page_title: SqlDataSource Wizard 
 description: SqlDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard
 tags: sqldatasource,wizard

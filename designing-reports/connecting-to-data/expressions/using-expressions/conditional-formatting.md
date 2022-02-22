@@ -1,6 +1,6 @@
 ---
 title: Conditional Formatting
-page_title: Conditional Formatting | for Telerik Reporting Documentation
+page_title: Conditional Formatting 
 description: Conditional Formatting
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting
 tags: conditional,formatting

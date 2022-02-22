@@ -1,6 +1,6 @@
 ---
 title: How to Setup a Choropleth Using the Map Wizard
-page_title: How to Setup a Choropleth Using the Map Wizard | for Telerik Reporting Documentation
+page_title: How to Setup a Choropleth Using the Map Wizard 
 description: How to Setup a Choropleth Using the Map Wizard
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard
 tags: how,to,setup,a,choropleth,using,the,map,wizard

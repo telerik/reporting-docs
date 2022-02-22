@@ -1,6 +1,6 @@
 ---
 title: True Print
-page_title: True Print | for Telerik Reporting Documentation
+page_title: True Print 
 description: True Print
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print
 tags: true,print

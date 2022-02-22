@@ -1,6 +1,6 @@
 ---
 title: HTML5 Report Viewer in ASP.NET Core
-page_title: HTML5 Report Viewer in ASP.NET Core | for Telerik Reporting Documentation
+page_title: HTML5 Report Viewer in ASP.NET Core 
 description: HTML5 Report Viewer in ASP.NET Core
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer-in-asp.net-core
 tags: html5,report,viewer,in,asp.net,core

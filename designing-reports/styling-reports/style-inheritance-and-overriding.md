@@ -1,6 +1,6 @@
 ---
 title: Style Inheritance and Overriding
-page_title: Style Inheritance and Overriding | for Telerik Reporting Documentation
+page_title: Style Inheritance and Overriding 
 description: Style Inheritance and Overriding
 slug: telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding
 tags: style,inheritance,and,overriding

@@ -1,6 +1,6 @@
 ---
 title: How to add Series
-page_title: How to add Series | for Telerik Reporting Documentation
+page_title: How to add Series 
 description: How to add Series
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-series
 tags: how,to,add,series

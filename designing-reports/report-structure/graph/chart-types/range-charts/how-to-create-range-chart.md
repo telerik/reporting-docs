@@ -1,6 +1,6 @@
 ---
 title: How to Create Range Chart
-page_title: How to Create Range Chart | for Telerik Reporting Documentation
+page_title: How to Create Range Chart 
 description: How to Create Range Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/how-to-create-range-chart
 tags: how,to,create,range,chart

@@ -1,6 +1,6 @@
 ---
 title: Get Document Resource
-page_title: Get Document Resource | for Telerik Reporting Documentation
+page_title: Get Document Resource 
 description: Get Document Resource
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource
 tags: get,document,resource

@@ -1,6 +1,6 @@
 ---
 title: Connecting the CsvDataSource Component to a CSV Source
-page_title: Connecting the CsvDataSource Component to a CSV Source | for Telerik Reporting Documentation
+page_title: Connecting the CsvDataSource Component to a CSV Source 
 description: Connecting the CsvDataSource Component to a CSV Source
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/connecting-the-csvdatasource-component-to-a-csv-source
 tags: connecting,the,csvdatasource,component,to,a,csv,source

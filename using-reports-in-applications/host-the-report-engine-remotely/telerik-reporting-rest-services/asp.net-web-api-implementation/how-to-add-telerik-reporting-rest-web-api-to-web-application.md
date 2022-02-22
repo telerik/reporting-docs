@@ -1,6 +1,6 @@
 ---
 title: How to Add Telerik Reporting REST Web API to Web Application
-page_title: How to Add Telerik Reporting REST Web API to Web Application | for Telerik Reporting Documentation
+page_title: How to Add Telerik Reporting REST Web API to Web Application 
 description: How to Add Telerik Reporting REST Web API to Web Application
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application
 tags: how,to,add,telerik,reporting,rest,web,api,to,web,application

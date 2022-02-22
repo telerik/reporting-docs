@@ -1,6 +1,6 @@
 ---
 title: Requirements
-page_title: Requirements | for Telerik Reporting Documentation
+page_title: Requirements 
 description: Requirements
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/requirements
 tags: requirements

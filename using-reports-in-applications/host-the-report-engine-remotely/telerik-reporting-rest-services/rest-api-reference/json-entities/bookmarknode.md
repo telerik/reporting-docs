@@ -1,6 +1,6 @@
 ---
 title: BookmarkNode
-page_title: BookmarkNode | for Telerik Reporting Documentation
+page_title: BookmarkNode 
 description: BookmarkNode
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/bookmarknode
 tags: bookmarknode

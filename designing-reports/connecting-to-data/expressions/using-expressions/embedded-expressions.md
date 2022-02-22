@@ -1,6 +1,6 @@
 ---
 title: Embedded Expressions
-page_title: Embedded Expressions | for Telerik Reporting Documentation
+page_title: Embedded Expressions 
 description: Embedded Expressions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions
 tags: embedded,expressions

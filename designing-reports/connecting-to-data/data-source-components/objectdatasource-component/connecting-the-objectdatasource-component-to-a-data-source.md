@@ -1,6 +1,6 @@
 ---
 title: Connecting the ObjectDataSource component to a Data Source
-page_title: Connecting the ObjectDataSource component to a Data Source | for Telerik Reporting Documentation
+page_title: Connecting the ObjectDataSource component to a Data Source 
 description: Connecting the ObjectDataSource component to a Data Source
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source
 tags: connecting,the,objectdatasource,component,to,a,data,source

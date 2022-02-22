@@ -1,6 +1,6 @@
 ---
 title: How to Create Scatter Chart
-page_title: How to Create Scatter Chart | for Telerik Reporting Documentation
+page_title: How to Create Scatter Chart 
 description: How to Create Scatter Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-scatter-chart
 tags: how,to,create,scatter,chart

@@ -1,6 +1,6 @@
 ---
 title: How to Add LocationMapSeries to the Map Item
-page_title: How to Add LocationMapSeries to the Map Item | for Telerik Reporting Documentation
+page_title: How to Add LocationMapSeries to the Map Item 
 description: How to Add LocationMapSeries to the Map Item
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item
 tags: how,to,add,locationmapseries,to,the,map,item

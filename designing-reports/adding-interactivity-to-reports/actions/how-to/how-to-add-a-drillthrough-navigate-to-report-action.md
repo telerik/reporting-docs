@@ -1,6 +1,6 @@
 ---
 title: How to Add a Drillthrough/Navigate To Report Action
-page_title: How to Add a Drillthrough/Navigate To Report Action | for Telerik Reporting Documentation
+page_title: How to Add a Drillthrough/Navigate To Report Action 
 description: How to Add a Drillthrough/Navigate To Report Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action
 tags: how,to,add,a,drillthrough/navigate,to,report,action

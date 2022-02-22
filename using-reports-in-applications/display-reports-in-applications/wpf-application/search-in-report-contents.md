@@ -1,6 +1,6 @@
 ---
 title: Search in Report Contents
-page_title: Search in Report Contents | for Telerik Reporting Documentation
+page_title: Search in Report Contents 
 description: Search in Report Contents
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/search-in-report-contents
 tags: search,in,report,contents

@@ -1,6 +1,6 @@
 ---
 title: Grouping, Filtering and Sorting
-page_title: Grouping, Filtering and Sorting | for Telerik Reporting Documentation
+page_title: Grouping, Filtering and Sorting 
 description: Grouping, Filtering and Sorting
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/grouping,-filtering-and-sorting
 tags: grouping,,filtering,and,sorting

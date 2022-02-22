@@ -1,6 +1,6 @@
 ---
 title: Table Header Freezing
-page_title: Table Header Freezing | for Telerik Reporting Documentation
+page_title: Table Header Freezing 
 description: Table Header Freezing
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-header-freezing
 tags: table,header,freezing

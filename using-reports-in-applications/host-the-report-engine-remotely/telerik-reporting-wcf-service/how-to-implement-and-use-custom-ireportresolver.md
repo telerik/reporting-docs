@@ -1,6 +1,6 @@
 ---
 title: How to Implement and use custom IReportResolver
-page_title: How to Implement and use custom IReportResolver | for Telerik Reporting Documentation
+page_title: How to Implement and use custom IReportResolver 
 description: How to Implement and use custom IReportResolver
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver
 tags: how,to,implement,and,use,custom,ireportresolver

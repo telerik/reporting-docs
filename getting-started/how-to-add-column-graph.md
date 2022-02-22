@@ -1,6 +1,6 @@
 ---
 title: How to Add Column Graph
-page_title: How to Add Column Graph | for Telerik Reporting Documentation
+page_title: How to Add Column Graph 
 description: How to Add Column Graph
 slug: telerikreporting/getting-started/how-to-add-column-graph
 tags: how,to,add,column,graph

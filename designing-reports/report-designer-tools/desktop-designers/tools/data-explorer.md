@@ -1,6 +1,6 @@
 ---
 title: Data Explorer
-page_title: Data Explorer | for Telerik Reporting Documentation
+page_title: Data Explorer 
 description: Data Explorer
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer
 tags: data,explorer

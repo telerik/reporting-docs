@@ -1,6 +1,6 @@
 ---
 title: How to Connect to an Access Database
-page_title: How to Connect to an Access Database | for Telerik Reporting Documentation
+page_title: How to Connect to an Access Database 
 description: How to Connect to an Access Database
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/-how-to/how-to-connect-to-an-access-database
 tags: how,to,connect,to,an,access,database

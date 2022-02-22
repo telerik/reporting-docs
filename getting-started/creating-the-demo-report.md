@@ -1,6 +1,6 @@
 ---
 title: Creating the Demo Report
-page_title: Creating the Demo Report | for Telerik Reporting Documentation
+page_title: Creating the Demo Report 
 description: Creating the Demo Report
 slug: telerikreporting/getting-started/creating-the-demo-report
 tags: creating,the,demo,report

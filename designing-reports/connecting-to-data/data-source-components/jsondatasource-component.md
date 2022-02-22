@@ -1,6 +1,6 @@
 ---
 title: JsonDataSource Component
-page_title: JsonDataSource Component | for Telerik Reporting Documentation
+page_title: JsonDataSource Component 
 description: JsonDataSource Component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component
 tags: jsondatasource,component

@@ -1,6 +1,6 @@
 ---
 title: ImageInteractive Device Information Settings
-page_title: ImageInteractive Device Information Settings | for Telerik Reporting Documentation
+page_title: ImageInteractive Device Information Settings 
 description: ImageInteractive Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/imageinteractive-device-information-settings
 tags: imageinteractive,device,information,settings

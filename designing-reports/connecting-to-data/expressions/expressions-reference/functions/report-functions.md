@@ -1,6 +1,6 @@
 ---
 title: Report Functions
-page_title: Report Functions | for Telerik Reporting Documentation
+page_title: Report Functions 
 description: Report Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions
 tags: report,functions

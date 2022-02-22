@@ -1,6 +1,6 @@
 ---
 title: Configure the Export Formats Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview
 tags: overview

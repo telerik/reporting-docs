@@ -1,6 +1,6 @@
 ---
 title: currentPage()
-page_title: currentPage() | for Telerik Reporting Documentation
+page_title: currentPage() 
 description: currentPage()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/currentpage()
 tags: currentpage()

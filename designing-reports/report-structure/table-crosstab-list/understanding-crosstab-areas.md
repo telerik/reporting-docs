@@ -1,6 +1,6 @@
 ---
 title: Understanding Crosstab Areas
-page_title: Understanding Crosstab Areas | for Telerik Reporting Documentation
+page_title: Understanding Crosstab Areas 
 description: Understanding Crosstab Areas
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas
 tags: understanding,crosstab,areas

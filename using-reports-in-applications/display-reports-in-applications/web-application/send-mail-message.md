@@ -1,6 +1,6 @@
 ---
 title: Send Mail Message
-page_title: Send Mail Message | for Telerik Reporting Documentation
+page_title: Send Mail Message 
 description: Send Mail Message
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message
 tags: send,mail,message

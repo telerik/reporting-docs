@@ -1,6 +1,6 @@
 ---
 title: How to Switch Row / Column
-page_title: How to Switch Row / Column | for Telerik Reporting Documentation
+page_title: How to Switch Row / Column 
 description: How to Switch Row / Column
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-switch-row---column
 tags: how,to,switch,row,/,column

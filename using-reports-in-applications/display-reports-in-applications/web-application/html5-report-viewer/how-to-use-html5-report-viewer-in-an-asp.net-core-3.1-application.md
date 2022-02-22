@@ -1,6 +1,6 @@
 ---
 title: How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 application
-page_title: How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 application | for Telerik Reporting Documentation
+page_title: How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 application 
 description: How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 application
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application
 tags: how,to,use,html5,report,viewer,in,an,asp.net,core,3.1,application

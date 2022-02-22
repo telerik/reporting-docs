@@ -1,6 +1,6 @@
 ---
 title: Common Report Designers Problems
-page_title: Common Report Designers Problems | for Telerik Reporting Documentation
+page_title: Common Report Designers Problems 
 description: Common Report Designers Problems
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/common-report-designers-problems
 tags: common,report,designers,problems

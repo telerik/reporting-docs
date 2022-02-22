@@ -1,6 +1,6 @@
 ---
 title: Deploying WPF Applications
-page_title: Deploying WPF Applications | for Telerik Reporting Documentation
+page_title: Deploying WPF Applications 
 description: Deploying WPF Applications
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/deploying-wpf-applications
 tags: deploying,wpf,applications

@@ -1,6 +1,6 @@
 ---
 title: Sorting Report Details
-page_title: Sorting Report Details | for Telerik Reporting Documentation
+page_title: Sorting Report Details 
 description: Sorting Report Details
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-report-details
 tags: sorting,report,details

@@ -1,6 +1,6 @@
 ---
 title: Edit Grouping Dialog
-page_title: Edit Grouping Dialog | for Telerik Reporting Documentation
+page_title: Edit Grouping Dialog 
 description: Edit Grouping Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-grouping-dialog
 tags: edit,grouping,dialog

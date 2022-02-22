@@ -1,6 +1,6 @@
 ---
 title: Settings
-page_title: Settings | for Telerik Reporting Documentation
+page_title: Settings 
 description: Settings
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417/settings
 tags: settings

@@ -1,6 +1,6 @@
 ---
 title: How to Change the Axis Scale
-page_title: How to Change the Axis Scale | for Telerik Reporting Documentation
+page_title: How to Change the Axis Scale 
 description: How to Change the Axis Scale
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-axis-scale
 tags: how,to,change,the,axis,scale

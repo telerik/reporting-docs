@@ -1,6 +1,6 @@
 ---
 title: Global Objects
-page_title: Global Objects | for Telerik Reporting Documentation
+page_title: Global Objects 
 description: Global Objects
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects
 tags: global,objects

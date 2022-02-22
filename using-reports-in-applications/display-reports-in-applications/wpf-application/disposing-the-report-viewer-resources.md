@@ -1,6 +1,6 @@
 ---
 title: Disposing the Report Viewer Resources
-page_title: Disposing the Report Viewer Resources | for Telerik Reporting Documentation
+page_title: Disposing the Report Viewer Resources 
 description: Disposing the Report Viewer Resources
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/disposing-the-report-viewer-resources
 tags: disposing,the,report,viewer,resources

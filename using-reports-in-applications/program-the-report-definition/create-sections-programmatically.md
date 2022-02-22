@@ -1,6 +1,6 @@
 ---
 title: Create Sections Programmatically
-page_title: Create Sections Programmatically | for Telerik Reporting Documentation
+page_title: Create Sections Programmatically 
 description: Create Sections Programmatically
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/create-sections-programmatically
 tags: create,sections,programmatically

@@ -1,6 +1,6 @@
 ---
 title: Connecting to Data
-page_title: Connecting to Data | for Telerik Reporting Documentation
+page_title: Connecting to Data 
 description: Connecting to Data
 slug: telerikreporting/designing-reports/report-structure/graph/connecting-to-data
 tags: connecting,to,data

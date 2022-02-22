@@ -1,6 +1,6 @@
 ---
 title: Edit Calculated Fields Dialog
-page_title: Edit Calculated Fields Dialog | for Telerik Reporting Documentation
+page_title: Edit Calculated Fields Dialog 
 description: Edit Calculated Fields Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-calculated-fields-dialog
 tags: edit,calculated,fields,dialog

@@ -1,6 +1,6 @@
 ---
 title: How to Add filtering to Report
-page_title: How to Add filtering to Report | for Telerik Reporting Documentation
+page_title: How to Add filtering to Report 
 description: How to Add filtering to Report
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report
 tags: how,to,add,filtering,to,report

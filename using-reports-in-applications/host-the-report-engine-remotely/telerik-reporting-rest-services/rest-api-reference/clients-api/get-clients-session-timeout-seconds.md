@@ -1,6 +1,6 @@
 ---
 title: Get Clients Session Timeout Seconds
-page_title: Get Clients Session Timeout Seconds | for Telerik Reporting Documentation
+page_title: Get Clients Session Timeout Seconds 
 description: Get Clients Session Timeout Seconds
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/get-clients-session-timeout-seconds
 tags: get,clients,session,timeout,seconds

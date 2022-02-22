@@ -1,6 +1,6 @@
 ---
 title: Panel
-page_title: Panel | for Telerik Reporting Documentation
+page_title: Panel 
 description: Panel
 slug: telerikreporting/designing-reports/report-structure/panel
 tags: panel

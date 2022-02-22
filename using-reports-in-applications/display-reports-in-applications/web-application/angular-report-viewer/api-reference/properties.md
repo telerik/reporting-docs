@@ -1,6 +1,6 @@
 ---
 title: Properties
-page_title: Properties | for Telerik Reporting Documentation
+page_title: Properties 
 description: Properties
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/properties
 tags: properties

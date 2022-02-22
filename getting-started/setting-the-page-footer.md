@@ -1,6 +1,6 @@
 ---
 title: Setting the Page Footer
-page_title: Setting the Page Footer | for Telerik Reporting Documentation
+page_title: Setting the Page Footer 
 description: Setting the Page Footer
 slug: telerikreporting/getting-started/setting-the-page-footer
 tags: setting,the,page,footer

@@ -1,6 +1,6 @@
 ---
 title: How to Use Bindings to Control the Coordinate System Properties
-page_title: How to Use Bindings to Control the Coordinate System Properties | for Telerik Reporting Documentation
+page_title: How to Use Bindings to Control the Coordinate System Properties 
 description: How to Use Bindings to Control the Coordinate System Properties
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties
 tags: how,to,use,bindings,to,control,the,coordinate,system,properties

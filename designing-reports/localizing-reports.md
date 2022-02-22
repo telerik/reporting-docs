@@ -1,6 +1,6 @@
 ---
 title: Localizing Reports
-page_title: Localizing Reports | for Telerik Reporting Documentation
+page_title: Localizing Reports 
 description: Localizing Reports
 slug: telerikreporting/designing-reports/localizing-reports
 tags: localizing,reports

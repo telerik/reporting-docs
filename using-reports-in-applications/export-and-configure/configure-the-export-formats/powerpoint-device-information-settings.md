@@ -1,6 +1,6 @@
 ---
 title: PowerPoint Device Information Settings
-page_title: PowerPoint Device Information Settings | for Telerik Reporting Documentation
+page_title: PowerPoint Device Information Settings 
 description: PowerPoint Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings
 tags: powerpoint,device,information,settings

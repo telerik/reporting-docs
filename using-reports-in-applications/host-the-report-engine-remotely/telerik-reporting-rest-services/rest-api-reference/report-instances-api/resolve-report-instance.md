@@ -1,6 +1,6 @@
 ---
 title: Resolve Report Instance
-page_title: Resolve Report Instance | for Telerik Reporting Documentation
+page_title: Resolve Report Instance 
 description: Resolve Report Instance
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance
 tags: resolve,report,instance

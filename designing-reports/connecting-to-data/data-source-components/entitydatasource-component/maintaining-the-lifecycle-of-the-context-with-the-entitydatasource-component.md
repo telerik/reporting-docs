@@ -1,6 +1,6 @@
 ---
 title: Maintaining the lifecycle of the Context with the EntityDataSource component
-page_title: Maintaining the lifecycle of the Context with the EntityDataSource component | for Telerik Reporting Documentation
+page_title: Maintaining the lifecycle of the Context with the EntityDataSource component 
 description: Maintaining the lifecycle of the Context with the EntityDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/maintaining-the-lifecycle-of-the-context-with-the-entitydatasource-component
 tags: maintaining,the,lifecycle,of,the,context,with,the,entitydatasource,component

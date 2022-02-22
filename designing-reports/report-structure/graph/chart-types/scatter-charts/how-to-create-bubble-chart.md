@@ -1,6 +1,6 @@
 ---
 title: How to Create Bubble Chart
-page_title: How to Create Bubble Chart | for Telerik Reporting Documentation
+page_title: How to Create Bubble Chart 
 description: How to Create Bubble Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-bubble-chart
 tags: how,to,create,bubble,chart

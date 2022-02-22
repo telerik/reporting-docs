@@ -1,6 +1,6 @@
 ---
 title: PDF Device Information Settings
-page_title: PDF Device Information Settings | for Telerik Reporting Documentation
+page_title: PDF Device Information Settings 
 description: PDF Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings
 tags: pdf,device,information,settings

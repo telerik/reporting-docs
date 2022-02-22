@@ -1,6 +1,6 @@
 ---
 title: Creating the Table and Populating it with Data
-page_title: Creating the Table and Populating it with Data | for Telerik Reporting Documentation
+page_title: Creating the Table and Populating it with Data 
 description: Creating the Table and Populating it with Data
 slug: telerikreporting/getting-started/creating-the-table-and-populating-it-with-data
 tags: creating,the,table,and,populating,it,with,data

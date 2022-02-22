@@ -1,6 +1,6 @@
 ---
 title: How to Setup a Map Manually
-page_title: How to Setup a Map Manually | for Telerik Reporting Documentation
+page_title: How to Setup a Map Manually 
 description: How to Setup a Map Manually
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-manually
 tags: how,to,setup,a,map,manually

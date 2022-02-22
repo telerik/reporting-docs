@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | for Telerik Reporting Documentation
+page_title: Localization 
 description: Localization
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/localization
 tags: localization

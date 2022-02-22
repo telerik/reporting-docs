@@ -1,6 +1,6 @@
 ---
 title: error(e, args)
-page_title: error(e, args) | for Telerik Reporting Documentation
+page_title: error(e, args) 
 description: error(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)
 tags: error(e,,args)

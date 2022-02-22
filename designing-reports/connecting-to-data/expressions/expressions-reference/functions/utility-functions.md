@@ -1,6 +1,6 @@
 ---
 title: Utility Functions
-page_title: Utility Functions | for Telerik Reporting Documentation
+page_title: Utility Functions 
 description: Utility Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/utility-functions
 tags: utility,functions

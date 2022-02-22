@@ -1,6 +1,6 @@
 ---
 title: EntityDataSource Wizard
-page_title: EntityDataSource Wizard | for Telerik Reporting Documentation
+page_title: EntityDataSource Wizard 
 description: EntityDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard
 tags: entitydatasource,wizard

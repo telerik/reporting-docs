@@ -1,6 +1,6 @@
 ---
 title: Support
-page_title: Support | for Telerik Reporting Documentation
+page_title: Support 
 description: Support
 slug: telerikreporting/for-more-help/support
 tags: support

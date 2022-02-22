@@ -1,6 +1,6 @@
 ---
 title: viewMode(vm)
-page_title: viewMode(vm) | for Telerik Reporting Documentation
+page_title: viewMode(vm) 
 description: viewMode(vm)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode(vm)
 tags: viewmode(vm)

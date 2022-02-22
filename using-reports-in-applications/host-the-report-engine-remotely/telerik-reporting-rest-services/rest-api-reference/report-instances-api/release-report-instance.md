@@ -1,6 +1,6 @@
 ---
 title: Release Report Instance
-page_title: Release Report Instance | for Telerik Reporting Documentation
+page_title: Release Report Instance 
 description: Release Report Instance
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/release-report-instance
 tags: release,report,instance

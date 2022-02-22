@@ -1,6 +1,6 @@
 ---
 title: Structure
-page_title: Structure | for Telerik Reporting Documentation
+page_title: Structure 
 description: Structure
 slug: telerikreporting/designing-reports/report-structure/graph/structure
 tags: structure

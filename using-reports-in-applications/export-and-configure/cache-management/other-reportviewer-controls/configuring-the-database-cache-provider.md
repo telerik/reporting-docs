@@ -1,6 +1,6 @@
 ---
 title: Configuring the Database Cache Provider
-page_title: Configuring the Database Cache Provider | for Telerik Reporting Documentation
+page_title: Configuring the Database Cache Provider 
 description: Configuring the Database Cache Provider
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider
 tags: configuring,the,database,cache,provider

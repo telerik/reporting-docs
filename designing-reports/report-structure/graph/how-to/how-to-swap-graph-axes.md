@@ -1,6 +1,6 @@
 ---
 title: How to Swap Graph Axes
-page_title: How to Swap Graph Axes | for Telerik Reporting Documentation
+page_title: How to Swap Graph Axes 
 description: How to Swap Graph Axes
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-swap-graph-axes
 tags: how,to,swap,graph,axes

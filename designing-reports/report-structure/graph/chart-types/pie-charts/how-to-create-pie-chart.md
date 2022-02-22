@@ -1,6 +1,6 @@
 ---
 title: How to Create Pie Chart
-page_title: How to Create Pie Chart | for Telerik Reporting Documentation
+page_title: How to Create Pie Chart 
 description: How to Create Pie Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/how-to-create-pie-chart
 tags: how,to,create,pie,chart

@@ -1,6 +1,6 @@
 ---
 title: Table/Crosstab Wizard
-page_title: Table/Crosstab Wizard | for Telerik Reporting Documentation
+page_title: Table/Crosstab Wizard 
 description: Table/Crosstab Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard
 tags: table/crosstab,wizard

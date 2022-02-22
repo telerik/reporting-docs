@@ -1,6 +1,6 @@
 ---
 title: Conditional Formatting Rules Dialog
-page_title: Conditional Formatting Rules Dialog | for Telerik Reporting Documentation
+page_title: Conditional Formatting Rules Dialog 
 description: Conditional Formatting Rules Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog
 tags: conditional,formatting,rules,dialog

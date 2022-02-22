@@ -1,6 +1,6 @@
 ---
 title: Bookmark Action
-page_title: Bookmark Action | for Telerik Reporting Documentation
+page_title: Bookmark Action 
 description: Bookmark Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action
 tags: bookmark,action

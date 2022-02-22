@@ -1,6 +1,6 @@
 ---
 title: SearchResultsInfo
-page_title: SearchResultsInfo | for Telerik Reporting Documentation
+page_title: SearchResultsInfo 
 description: SearchResultsInfo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo
 tags: searchresultsinfo

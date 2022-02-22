@@ -1,6 +1,6 @@
 ---
 title: How to Add Bookmarks to a Report item
-page_title: How to Add Bookmarks to a Report item | for Telerik Reporting Documentation
+page_title: How to Add Bookmarks to a Report item 
 description: How to Add Bookmarks to a Report item
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/bookmarks/how-to-add-bookmarks-to-a-report-item
 tags: how,to,add,bookmarks,to,a,report,item

@@ -1,6 +1,6 @@
 ---
 title: XPS Rendering Design Considerations
-page_title: XPS Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: XPS Rendering Design Considerations 
 description: XPS Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/xps-rendering-design-considerations
 tags: xps,rendering,design,considerations

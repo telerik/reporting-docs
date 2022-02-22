@@ -1,6 +1,6 @@
 ---
 title: Windows Forms Application Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview
 tags: overview

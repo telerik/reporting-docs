@@ -1,6 +1,6 @@
 ---
 title: Interactive vs. Print Layout
-page_title: Interactive vs. Print Layout | for Telerik Reporting Documentation
+page_title: Interactive vs. Print Layout 
 description: Interactive vs. Print Layout
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout
 tags: interactive,vs.,print,layout

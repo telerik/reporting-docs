@@ -1,16 +1,16 @@
 ---
-title: ASP.NET Core project throws 'The type initializer for Telerik.Reporting.Cache.Lock threw an exception'
-description: ASP.NET Core project throws 'The type initializer for Telerik.Reporting.Cache.Lock threw an exception'
+title: A Type Initializer Exception Thrown in the ASP.NET Core Project
+page_title: ASP.NET Core Project Crashes as External Assemblies Cannot Be Found
+description: "Learn how to handle the "type initializer for Telerik.Reporting.Cache.Lock threw an exception" error in an ASP.NET Core project."
 type: troubleshooting
-page_title: ASP.NET Core project crashes as external assemblies cannot be found
 slug: asp-dot-net-core-error-the-type-initializer-for-telerik-reporting-cache-lock
-position: 
-tags: 
+tags: telerik, reporting, type, exception, thrown, as, net, core, project
 ticketid: 1416003
 res_type: kb
 ---
 
 ## Environment
+
 <table>
     <tbody>
 	    <tr>
@@ -30,15 +30,19 @@ res_type: kb
 
 
 ## Description
-In ASP.NET Core projects targeting the .NET Core framework if the __Telerik Reporting__ assemblies are referred locally, as References instead of NuGet packages you may get the following error.
 
-## Error Message
-__'The type initializer for Telerik.Reporting.Cache.Lock threw an exception'__
+How can I handle the `The type initializer for Telerik.Reporting.Cache.Lock threw an exception` error in ASP.NET Core projects?
+
+## Cause
+
+In ASP.NET Core projects which target the .NET Core framework and if the Telerik Reporting assemblies are referred locally as References instead of NuGet packages, you may get the `The type initializer for Telerik.Reporting.Cache.Lock threw an exception` error.
 
 ## Solution
-Telerik Reporting assemblies depend on external assemblies that get added automatically when referred from NuGet packages.
-When the reporting assemblies are referenced directly, these dependencies should be added manually. The particular error is due to the lack of the **_System.Threading.AccessControl_** assembly. If you add it, there will be another error related to other missing assembly and so on.  
-You may get the list of the dependencies for **Telerik.Reporting**, **Telerik.Reporting.Services.AspNetCore**, etc. if you open the packages in the NuGet Package Manager in Visual Studio.  
-  
-Our strong recommendation is to add Telerik Reporting assemblies as NuGet packages. Note that you may create a [local NuGet repository](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) and download there the NuGet packages.  
-If this is not an option, you need to add also the necessary dependencies manually (check the packages in the NuGet Package Manager as suggested above).
+
+The Telerik Reporting assemblies depend on external assemblies that get added automatically when referred from NuGet packages. When the Reporting assemblies are referenced directly, you have to add these dependencies manually.
+
+The particular error is due to the lack of the `System.Threading.AccessControl` assembly. If you add it, another error related to another missing assembly will occur.
+
+To get the list of the dependencies for `Telerik.Reporting`, `Telerik.Reporting.Services.AspNetCore`, and so on, open the packages in the NuGet Package Manager in Visual Studio.  
+
+It is strongly recommened that you add the Telerik Reporting assemblies as NuGet packages. Note that you can create a [local NuGet repository](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) and download the NuGet packages in it. If this is not an option, add the necessary dependencies manually too after checking the packages in the NuGet Package Manager as previously suggested.

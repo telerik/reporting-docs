@@ -31,7 +31,7 @@ In the following article are presented steps for configuring the Angular Report 
 ## Solution
 Firstly, it would be needed to add the report viewer. We support two technologies:
 
-1. [How To: Use Angular Report Viewer with Angular CLI](../angular-report-how-to-use-with-angular-cli) 
+1. [How To: Use Angular Report Viewer with Angular CLI]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli %}) 
 2. [How To: Use Angular Report Viewer with SystemJS](../angular-report-how-to-use-with-systemjs)
 
 At step 8 (or 7 from the article with SystemJS) is mentioned how to style the viewer using the desired Kendo UI theme using either Less- or Sass-Based Kendo UI themes. 

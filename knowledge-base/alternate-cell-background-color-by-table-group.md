@@ -28,7 +28,7 @@ res_type: kb
 
 What [conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) can I use to alternate the detail cell background color based on table groups?  
 
-My scenario is the following:
+## Cause
 
 For alternating detail rows in a table, I use conditional formatting based on the following [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) and set different colors for odd and even rows:
 
@@ -46,7 +46,7 @@ However, in the group, the row numbers increase within the group. That's why the
 
 ## Solution
 
-Yo handle the issue, use the following `Expression`:
+To handle the issue, use the following `Expression`:
 
 ```
 =RunningValue("tableName", CountDistinct(Fields.groupingFieldName))%2

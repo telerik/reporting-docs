@@ -106,4 +106,4 @@ To:
 
 ## See also
 
-[How To: Use Angular Report Viewer with Angular CLI](../angular-report-how-to-use-with-angular-cli)
+[How To: Use Angular Report Viewer with Angular CLI]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli %})

@@ -1,16 +1,16 @@
 ---
-title: Applying Conditional Formatting Rule to Expandable Area
-description: How to Apply Conditional Formatting Rule to Expandable Area in a Table with Alternating Style Rows
+title: Apply Conditional Formatting Rules to Expandable Areas
+page_title: Apply Conditional Formatting Rules to Expandable Areas in a Table with Alternating Style Rows
+description: "Learn how to apply a conditional formatting rule to an expandable area in a table with alternating style rows."
 type: how-to
-page_title: How to Apply Conditional Formatting Rule to Expandable Area in a Table with Alternating Style Rows
 slug: applying-conditional-formatting-rule-to-expandable-area
-position: 
-tags: 
+tags: telerik, reporting, apply, conditional, formatting, rules, to, expandable, areas, with, alternating, style, rows
 ticketid: 1444473
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -22,29 +22,31 @@ res_type: kb
 
 
 ## Description
-This KB articles shows how to achieve [alternating style rows](./how-to-display-alternating-style-rows) 
-when there is a [grouping in the table](../data-items-how-to-add-groups-to-table-item-and-crosstab-item) and the group's content is expandable.
+
+How can I [alternate the row style]({% slug how-to-display-alternating-style-rows %}) when I have [grouping in the table]({% slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item %}) and the group content is expandable?
 
 ## Solution
-In the [demo report](https://github.com/telerik/reporting-samples/tree/master/Applying%20Conditional%20Formatting%20Rule%20to%20Expandable%20Area) the following approach is applied:
-1. Add a [CSV DataSource](../csvdatasource-component) with **Group** and **Item** columns;
 
-2. Add a table that displays only the items and [add a row group](../data-items-how-to-add-groups-to-table-item-and-crosstab-item) based on "=Fields.Group"
+To solve this issue, refer to the [demo report](https://github.com/telerik/reporting-samples/tree/master/Applying%20Conditional%20Formatting%20Rule%20to%20Expandable%20Area) and use the following approach:
 
-3. Set the [Toggle Visibility action](../designing-reports-interactivity-how-to-add-drilldown-action) on "=Fields.Group";
+1. Add a [CSV DataSource](../csvdatasource-component) with **Group** and **Item** columns.
 
-4. Set [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) to "=Fields.Group" cell:
+2. Add a table that displays only the items and [add a row group]({% slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item %}) based on `"=Fields.Group"`.
 
-**Expression**: =RowNumber()%2
+3. Set the [Toggle Visibility action]({% slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action %}) on `"=Fields.Group"`.
 
-**Operator**: =
+4. Set [conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) to the `"=Fields.Group"` cell as follows:
 
-**Value**: =0
+		**Expression** `=RowNumber()%2`
 
-5. Set Conditional Formatting to "=Fields.Item" cell:
+		**Operator** `=`
 
-**Expression**: = Exec("group", RowNumber())%2
+		**Value** `=0`
 
-**Operator**: =
+5. Set the conditional formatting to the `"=Fields.Item"` cell:
 
-**Value** =0
+		**Expression** `= Exec("group", RowNumber())%2`
+
+		**Operator** `=`
+
+		**Value** `=0`

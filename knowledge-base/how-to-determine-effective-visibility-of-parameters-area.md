@@ -26,12 +26,12 @@ res_type: kb
 
 
 ## Description
-In the Angular Report Viewer component, one may successfully control the visibility of the parameter area with the means of the _parametersAreaVisible_ [option](../angular-report-viewer-api-options). However, it cannot be used to determine what is the current state of the parameters area visibility that may have changed due to user interaction with the viewer.
+In the Angular Report Viewer component, one may successfully control the visibility of the parameter area with the means of the _parametersAreaVisible_ [option]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview %}-api-options). However, it cannot be used to determine what is the current state of the parameters area visibility that may have changed due to user interaction with the viewer.
 
 ## Suggested Workarounds
 The _parametersAreaVisible_ as any other option of the viewer specifies only the initial/default value of the corresponding property, and its value is not updated afterward. That's why it is not possible to take the state of the parameters area visibility from it.
 
-As a workaround, you may use _jQuery_ to get the html element of the parameters area and check whether its width is 0. If so, the parameters area is hidden. This may be done, for example, on the _updateUi_ [event](../angular-report-viewer-api-events). Here is also the code for selecting the area and taking its width:
+As a workaround, you may use _jQuery_ to get the html element of the parameters area and check whether its width is 0. If so, the parameters area is hidden. This may be done, for example, on the _updateUi_ [event]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview %}-api-events). Here is also the code for selecting the area and taking its width:
 ```JavaScript
 $(".trv-parameters-area").width()
 ```

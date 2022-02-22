@@ -42,7 +42,7 @@ Trying to set a width or height sizing of less than 10px on table/crosstab/list 
   
 Removing the problematic item from the report's definition or setting non-zero values for item's Width(Height) properties  will resolve the issue:  
   
-1. Downgrade the report to the previous version using [Upgrade Wizard](../ui-upgrade-wizard) which will allow opening the *Design view*. After that, locate the item using the [Report Explorer](../ui-report-explorer) and delete it or set non-zero values for Width(Height) properties (**recommended**).  
+1. Downgrade the report to the previous version using [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}) which will allow opening the *Design view*. After that, locate the item using the [Report Explorer](../ui-report-explorer) and delete it or set non-zero values for Width(Height) properties (**recommended**).  
   
 2. Open report's **.Designer.cs(vb)** file, locate the code for setting item's [Size property](../p-telerik-reporting-reportitem-size) and set Width and Height to values greater than 0.  
   

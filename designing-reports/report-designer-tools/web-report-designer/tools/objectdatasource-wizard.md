@@ -5,7 +5,7 @@ description: ObjectDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/objectdatasource-wizard
 tags: objectdatasource,wizard
 published: True
-position: 4
+position: 3
 ---
 
 # ObjectDataSource Wizard

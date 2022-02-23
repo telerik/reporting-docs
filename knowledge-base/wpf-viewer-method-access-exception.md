@@ -4,7 +4,7 @@ page_title: The WPF ReportViewer Throws a MethodAccessException
 description: "Learn how to handle a method access exception when working with the WPF ReportViewer."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting/wpf-reportviewer-troubleshooting
 previous_url: /using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting/wpf-reportviewer-troubleshooting.html#wpf-reportviewer-troubleshooting
-tags: telerik, reporting, troubleshoot, wpf, reportviewer, method, access, exception, thrown, connecting, rest, service, report, server 
+tags: telerik, reporting, troubleshoot, wpf, reportviewer, method, access, exception, thrown, connecting, rest, service, report, server
 published: True
 res_type: kb
 type: troubleshooting
@@ -24,7 +24,7 @@ type: troubleshooting
 		</tr>
 	        <tr>
 			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
+			<td>WPF</td>
 		</tr>
 	</tbody>
 </table>

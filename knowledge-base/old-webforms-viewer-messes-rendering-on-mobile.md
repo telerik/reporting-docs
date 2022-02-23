@@ -19,16 +19,18 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>Q2 2012 and newer</td>
+			<td>Q2 2012 and later</td>
 		</tr>
-	        <tr>
+		<tr>
 			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
+			<td>Legacy ASP.NET WebForms Viewer</td>
 		</tr>
 	</tbody>
 </table>
 
 ## Description
+
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).  
 
 The old ASP.NET Webforms ReportViewer does not display reports or the page area is messed on iPad and other mobile devices.
 

@@ -16,7 +16,7 @@ res_type: kb
 	</tr>
 		<tr>
 		<td>Version</td>
-		<td>Q1 2014 and newer</td>
+		<td>Q1 2014 and later</td>
 	</tr>
 </table>
 

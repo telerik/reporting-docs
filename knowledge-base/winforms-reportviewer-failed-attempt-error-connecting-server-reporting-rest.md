@@ -23,7 +23,7 @@ res_type: kb
 		</tr>
 	        <tr>
 			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
+			<td>WinForms</td>
 		</tr>
 	</tbody>
 </table>

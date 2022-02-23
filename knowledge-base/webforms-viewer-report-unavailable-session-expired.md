@@ -20,23 +20,25 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>Q2 2012 and newer</td>
+			<td>Q2 2012 and later</td>
 		</tr>
-	        <tr>
+    <tr>
 			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
+			<td>Legacy ASP.NET WebForms Viewer</td>
 		</tr>
 	</tbody>
 </table>
 
 ## Description
 
-An error message that the report is unavailable or that the session has expired error message occurs when using the ASP.NET WebForms ReportViewer.
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).  
+
+An error message that the report is unavailable or that the session has expired error message occurs when using the legacy ASP.NET WebForms ReportViewer.
 
 ## Cause
 
-The old ASP.NEt WebForms ReportViewer depends on the ASP.NET Session.
+The legacy ASP.NET WebForms ReportViewer depends on the ASP.NET Session.
 
 ## Solution  
 
-If the session expires, refresh the page with the viewer.
+If the session expires, refresh the page with the legacy ASP.NET WebForms viewer.

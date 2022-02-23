@@ -21,13 +21,9 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>Q2 2012 and newer</td>
+			<td>Q2 2012 and later</td>
 		</tr>
-	        <tr>
-			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
-		</tr>
-	</tbody>
+  </tbody>
 </table>
 
 ## Description

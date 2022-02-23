@@ -23,7 +23,7 @@ type: troubleshooting
 		</tr>
 	        <tr>
 			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
+			<td>WPF</td>
 		</tr>
 	</tbody>
 </table>

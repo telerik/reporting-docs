@@ -13,7 +13,7 @@ res_type: kb
     <tbody>
 	    <tr>
 	    	<td>Product Version</td>
-	    	<td>R1 2017 and newer</td>
+	    	<td>R1 2017 and later</td>
 	    </tr>
 	    <tr>
 	    	<td>Product</td>
@@ -48,7 +48,7 @@ Then, you can add a Table/List/Crosstab item with dynamic row and column groups 
 
 ## Notes
 
-- The attached demo report illustrates the settings. The report can be previewed in the [Standalone Report Designer](../standalone-report-designer) of Telerik Reporting R1 2017 and newer.
+- The attached demo report illustrates the settings. The report can be previewed in the [Standalone Report Designer](../standalone-report-designer) of Telerik Reporting R1 2017 and later.
 
 - The scenarios, requiring you to create or modify a report at run-time, are discussed in [Modifying or Creating a report at Run-Time](./modifying-or-creating-a-report-at-run-time).
 

@@ -4,8 +4,8 @@ description: Refer Themes in ResourceDictionary from XAML files instead of Teler
 type: how-to
 page_title: Use styles from XAML files in WPF Viewer
 slug: wpf-viewer-themes-from-xaml
-position: 
-tags: 
+position:
+tags:
 ticketid: 1342969
 res_type: kb
 ---
@@ -19,6 +19,10 @@ res_type: kb
 	<tr>
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
+	</tr>
+	<tr>
+		<td>Report Viewers</td>
+		<td>WPF</td>
 	</tr>
 </table>
 
@@ -44,7 +48,7 @@ The themes can be referred directly in the _App.xaml_ file, or alternatively in 
         <ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Navigation.xaml" />
         <ResourceDictionary Source="Themes/Material/Telerik.ReportViewer.Wpf.xaml" />
         </ResourceDictionary.MergedDictionaries>
-        
+
         // YOU MAY ADD OTHER STYLES IN THE <ResourceDictionary> TAG :
         .....
     </ResourceDictionary>
@@ -63,13 +67,13 @@ The themes can be referred directly in the _App.xaml_ file, or alternatively in 
                 "Themes/{0}/Telerik.Windows.Controls.Navigation.xaml",
                 "Themes/{0}/Telerik.ReportViewer.Wpf.xaml"
             };
-    
+
         public ReportViewerWindow1()
         {
             InitializeComponent();
             MergeResourceDictionaries("Material"); // Set the required theme name here
         }
-    
+
         static void MergeResourceDictionaries(string theme)
         {
             var mergedDictionaries = Application.Current.Resources.MergedDictionaries;

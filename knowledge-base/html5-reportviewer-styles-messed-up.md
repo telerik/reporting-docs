@@ -19,11 +19,11 @@ type: troubleshooting
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>Q2 2012 and newer</td>
+			<td>Q2 2012 and later</td>
 		</tr>
-	        <tr>
+  	<tr>
 			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
+			<td>HTML5-Based Web Viewers</td>
 		</tr>
 	</tbody>
 </table>

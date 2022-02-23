@@ -19,22 +19,24 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>Q2 2012 and newer</td>
+			<td>Q2 2012 and later</td>
 		</tr>
 	        <tr>
 			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
+			<td>Legacy ASP.NET WebForms Viewer</td>
 		</tr>
 	</tbody>
 </table>
 
 ## Description
 
-The ASP.NET WebForms ReportViewer report does not display data or changes that are made in the events.
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).  
+
+The legacy ASP.NET WebForms ReportViewer report does not display data or changes that are made in the events.
 
 ## Cause
 
-The old ASP.NET WebForms ReportViewer depends on the ASP.NET Session.
+The legacy ASP.NET WebForms ReportViewer depends on the ASP.NET Session.
 
 ## Solution  
 

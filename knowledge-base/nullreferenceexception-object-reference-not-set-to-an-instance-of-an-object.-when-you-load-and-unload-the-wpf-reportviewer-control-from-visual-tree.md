@@ -79,7 +79,7 @@ Object reference not set to an instance of an object.
 
 ## Solution
 
-> A fix is provided in **Telerik Reporting R1 2017 SP2 version 11.0.17.406** and newer releases. 
+> A fix is provided in **Telerik Reporting R1 2017 SP2 version 11.0.17.406** and later releases. 
 
 If you need to upgrade, MSI files for installing Telerik Reporting can be found in [your Telerik account](https://www.telerik.com/account/) -> Downloads -> Reporting -> MSI.  
  

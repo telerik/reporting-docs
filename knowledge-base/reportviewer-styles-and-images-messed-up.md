@@ -21,22 +21,24 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Version</td>
-			<td>Q2 2012 and newer</td>
+			<td>Q2 2012 and later</td>
 		</tr>
-	        <tr>
+	  <tr>
 			<td>Report Viewers</td>
-			<td>WinForms, WPF, ASP.NET</td>
+			<td>Legacy ASP.NET WebForms Viewer</td>
 		</tr>
 	</tbody>
 </table>
 
 ## Description
 
-My ASP.NET Web Forms ReportViewer looks messed up because its styles and images are missing.
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).   
+
+The legacy ASP.NET Web Forms ReportViewer looks messed up because its styles and images are missing.
 
 ## Cause
 
-The possible reason for this issue is that the global styles defined in the application may affect the page with the ReportViewer.
+The possible reason for this issue is that the global styles defined in the application may affect the page with the legacy ASP.NET WebForms ReportViewer.
 
 ## Solution  
 

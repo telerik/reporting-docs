@@ -1,6 +1,6 @@
 ---
 title: How to Connect to Google Books APIs
-page_title: How to Connect to Google Books APIs | for Telerik Reporting Documentation
+page_title: How to Connect to Google Books APIs 
 description: How to Connect to Google Books APIs
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-connect-to-google-books-apis
 tags: how,to,connect,to,google,books,apis

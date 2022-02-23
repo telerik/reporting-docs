@@ -1,6 +1,6 @@
 ---
 title: Sorting Graph
-page_title: Sorting Graph | for Telerik Reporting Documentation
+page_title: Sorting Graph 
 description: Sorting Graph
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-graph
 tags: sorting,graph

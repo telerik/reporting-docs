@@ -1,6 +1,6 @@
 ---
 title: Deploying Web ReportViewer in SharePoint
-page_title: Deploying Web ReportViewer in SharePoint | for Telerik Reporting Documentation
+page_title: Deploying Web ReportViewer in SharePoint 
 description: Deploying Web ReportViewer in SharePoint
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-reportviewer-in-sharepoint
 tags: deploying,web,reportviewer,in,sharepoint

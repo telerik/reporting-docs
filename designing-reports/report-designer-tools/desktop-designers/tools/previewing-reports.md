@@ -1,6 +1,6 @@
 ---
 title: Previewing Reports
-page_title: Previewing Reports | for Telerik Reporting Documentation
+page_title: Previewing Reports 
 description: Previewing Reports
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/previewing-reports
 tags: previewing,reports

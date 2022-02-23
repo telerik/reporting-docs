@@ -1,6 +1,6 @@
 ---
 title: How to import reports created with Standalone Report Designer
-page_title: How to import reports created with Standalone Report Designer | for Telerik Reporting Documentation
+page_title: How to import reports created with Standalone Report Designer 
 description: How to import reports created with Standalone Report Designer
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer
 tags: how,to,import,reports,created,with,standalone,report,designer

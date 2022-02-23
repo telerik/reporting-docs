@@ -1,6 +1,6 @@
 ---
 title: How to add Graph to Report
-page_title: How to add Graph to Report | for Telerik Reporting Documentation
+page_title: How to add Graph to Report 
 description: How to add Graph to Report
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-graph-to-report
 tags: how,to,add,graph,to,report

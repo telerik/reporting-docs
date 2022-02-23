@@ -1,6 +1,6 @@
 ---
 title: How to Host Reports Service in ASP.NET Core 2.1 and 2.2
-page_title: How to Host Reports Service in ASP.NET Core 2.1 and 2.2 | for Telerik Reporting Documentation
+page_title: How to Host Reports Service in ASP.NET Core 2.1 and 2.2 
 description: How to Host Reports Service in ASP.NET Core 2.1 and 2.2
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2
 tags: how,to,host,reports,service,in,asp.net,core,2.1,and,2.2

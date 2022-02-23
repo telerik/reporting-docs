@@ -1,6 +1,6 @@
 ---
 title: Understanding Pagination
-page_title: Understanding Pagination | for Telerik Reporting Documentation
+page_title: Understanding Pagination 
 description: Understanding Pagination
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagination
 tags: understanding,pagination

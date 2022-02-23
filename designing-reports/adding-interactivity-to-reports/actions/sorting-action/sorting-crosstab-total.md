@@ -1,6 +1,6 @@
 ---
 title: Sorting Crosstab Total
-page_title: Sorting Crosstab Total | for Telerik Reporting Documentation
+page_title: Sorting Crosstab Total 
 description: Sorting Crosstab Total
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-crosstab-total
 tags: sorting,crosstab,total

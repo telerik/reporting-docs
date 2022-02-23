@@ -1,6 +1,6 @@
 ---
 title: Embedded Report Engine
-page_title: Embedded Report Engine | for Telerik Reporting Documentation
+page_title: Embedded Report Engine 
 description: Embedded Report Engine
 slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine
 tags: embedded,report,engine

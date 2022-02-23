@@ -1,6 +1,6 @@
 ---
 title: Using Section Events
-page_title: Using Section Events | for Telerik Reporting Documentation
+page_title: Using Section Events 
 description: Using Section Events
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-section-events
 tags: using,section,events

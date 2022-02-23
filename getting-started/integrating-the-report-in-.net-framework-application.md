@@ -1,6 +1,6 @@
 ---
 title: Integrating the Report in .NET Framework Application
-page_title: Integrating the Report in .NET Framework Application | for Telerik Reporting Documentation
+page_title: Integrating the Report in .NET Framework Application 
 description: Integrating the Report in .NET Framework Application
 slug: telerikreporting/getting-started/integrating-the-report-in-.net-framework-application
 tags: integrating,the,report,in,.net,framework,application

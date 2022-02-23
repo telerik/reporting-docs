@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-page_title: Accessibility | for Telerik Reporting Documentation
+page_title: Accessibility 
 description: Accessibility
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility
 tags: accessibility

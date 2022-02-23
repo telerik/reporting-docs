@@ -1,6 +1,6 @@
 ---
 title: Setting the Page Header
-page_title: Setting the Page Header | for Telerik Reporting Documentation
+page_title: Setting the Page Header 
 description: Setting the Page Header
 slug: telerikreporting/getting-started/setting-the-page-header
 tags: setting,the,page,header

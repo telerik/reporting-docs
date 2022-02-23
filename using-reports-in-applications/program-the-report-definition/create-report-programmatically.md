@@ -1,6 +1,6 @@
 ---
 title: Create Report Programmatically
-page_title: Create Report Programmatically | for Telerik Reporting Documentation
+page_title: Create Report Programmatically 
 description: Create Report Programmatically
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/create-report-programmatically
 tags: create,report,programmatically

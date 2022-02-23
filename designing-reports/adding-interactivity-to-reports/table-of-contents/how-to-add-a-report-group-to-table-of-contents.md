@@ -1,6 +1,6 @@
 ---
 title: How to Add a Report Group to Table of Contents
-page_title: How to Add a Report Group to Table of Contents | for Telerik Reporting Documentation
+page_title: How to Add a Report Group to Table of Contents 
 description: How to Add a Report Group to Table of Contents
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-report-group-to-table-of-contents
 tags: how,to,add,a,report,group,to,table,of,contents

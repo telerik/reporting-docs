@@ -1,6 +1,6 @@
 ---
 title: viewerToolTipOpening(e, args)
-page_title: viewerToolTipOpening(e, args) | for Telerik Reporting Documentation
+page_title: viewerToolTipOpening(e, args) 
 description: viewerToolTipOpening(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)
 tags: viewertooltipopening(e,,args)

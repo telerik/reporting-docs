@@ -1,6 +1,6 @@
 ---
 title: Implement Send Mail Message
-page_title: Implement Send Mail Message | for Telerik Reporting Documentation
+page_title: Implement Send Mail Message 
 description: Implement Send Mail Message
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message
 tags: implement,send,mail,message

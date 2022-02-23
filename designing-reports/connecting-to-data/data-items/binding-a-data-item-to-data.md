@@ -1,6 +1,6 @@
 ---
 title: Binding a Data item to Data
-page_title: Binding a Data item to Data | for Telerik Reporting Documentation
+page_title: Binding a Data item to Data 
 description: Binding a Data item to Data
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data
 tags: binding,a,data,item,to,data

@@ -1,6 +1,6 @@
 ---
 title: How to Use Redis storage
-page_title: How to Use Redis storage | for Telerik Reporting Documentation
+page_title: How to Use Redis storage 
 description: How to Use Redis storage
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage
 tags: how,to,use,redis,storage

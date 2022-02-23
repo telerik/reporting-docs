@@ -1,6 +1,6 @@
 ---
 title: Filter Rules
-page_title: Filter Rules | for Telerik Reporting Documentation
+page_title: Filter Rules 
 description: Filter Rules
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules
 tags: filter,rules

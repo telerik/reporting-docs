@@ -1,6 +1,6 @@
 ---
 title: Host the Report Engine Remotely Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview
 tags: overview

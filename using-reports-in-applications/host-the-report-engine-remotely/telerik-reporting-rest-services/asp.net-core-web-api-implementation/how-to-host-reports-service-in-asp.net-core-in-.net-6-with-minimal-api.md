@@ -1,6 +1,6 @@
 ---
 title: How to Host Reports Service in ASP.NET Core in .NET 6 with Minimal API
-page_title: How to Host Reports Service in ASP.NET Core in .NET 6 with Minimal API | for Telerik Reporting Documentation
+page_title: How to Host Reports Service in ASP.NET Core in .NET 6 with Minimal API 
 description: How to Host Reports Service in ASP.NET Core in .NET 6 with Minimal API
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,minimal,api

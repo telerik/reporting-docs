@@ -1,6 +1,6 @@
 ---
 title: Serialize Report Definition in XML
-page_title: Serialize Report Definition in XML | for Telerik Reporting Documentation
+page_title: Serialize Report Definition in XML 
 description: Serialize Report Definition in XML
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml
 tags: serialize,report,definition,in,xml

@@ -1,6 +1,6 @@
 ---
 title: pageMode()
-page_title: pageMode() | for Telerik Reporting Documentation
+page_title: pageMode() 
 description: pageMode()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()
 tags: pagemode()

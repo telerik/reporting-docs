@@ -1,6 +1,6 @@
 ---
 title: Using Styles to Customize Reports
-page_title: Using Styles to Customize Reports | for Telerik Reporting Documentation
+page_title: Using Styles to Customize Reports 
 description: Using Styles to Customize Reports
 slug: telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports
 tags: using,styles,to,customize,reports

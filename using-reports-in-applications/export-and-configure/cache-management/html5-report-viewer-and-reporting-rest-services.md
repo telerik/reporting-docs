@@ -1,6 +1,6 @@
 ---
 title: HTML5 Report Viewer and Reporting REST services
-page_title: HTML5 Report Viewer and Reporting REST services | for Telerik Reporting Documentation
+page_title: HTML5 Report Viewer and Reporting REST services 
 description: HTML5 Report Viewer and Reporting REST services
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services
 tags: html5,report,viewer,and,reporting,rest,services

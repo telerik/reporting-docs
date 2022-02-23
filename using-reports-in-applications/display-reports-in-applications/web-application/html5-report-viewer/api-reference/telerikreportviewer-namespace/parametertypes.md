@@ -1,6 +1,6 @@
 ---
 title: ParameterTypes
-page_title: ParameterTypes | for Telerik Reporting Documentation
+page_title: ParameterTypes 
 description: ParameterTypes
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/parametertypes
 tags: parametertypes

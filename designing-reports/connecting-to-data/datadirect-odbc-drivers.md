@@ -1,6 +1,6 @@
 ---
 title: DataDirect ODBC Drivers
-page_title: DataDirect ODBC Drivers | for Telerik Reporting Documentation
+page_title: DataDirect ODBC Drivers 
 description: DataDirect ODBC Drivers
 slug: telerikreporting/designing-reports/connecting-to-data/datadirect-odbc-drivers
 tags: datadirect,odbc,drivers

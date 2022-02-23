@@ -1,6 +1,6 @@
 ---
 title: How to Setup a Pie Chart with no Overlapping Labels
-page_title: How to Setup a Pie Chart with no Overlapping Labels | for Telerik Reporting Documentation
+page_title: How to Setup a Pie Chart with no Overlapping Labels 
 description: How to Setup a Pie Chart with no Overlapping Labels
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-setup-a-pie-chart-with-no-overlapping-labels
 tags: how,to,setup,a,pie,chart,with,no,overlapping,labels

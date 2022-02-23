@@ -1,6 +1,6 @@
 ---
 title: ASP.NET Core Web API Implementation Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview
 tags: overview

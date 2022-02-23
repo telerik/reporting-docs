@@ -1,6 +1,6 @@
 ---
 title: reportSource(rs)
-page_title: reportSource(rs) | for Telerik Reporting Documentation
+page_title: reportSource(rs) 
 description: reportSource(rs)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)
 tags: reportsource(rs)

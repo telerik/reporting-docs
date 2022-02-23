@@ -1,6 +1,6 @@
 ---
 title: Sparklines
-page_title: Sparklines | for Telerik Reporting Documentation
+page_title: Sparklines 
 description: Sparklines
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines
 tags: sparklines

@@ -1,6 +1,6 @@
 ---
 title: How to Add filtering to Group
-page_title: How to Add filtering to Group | for Telerik Reporting Documentation
+page_title: How to Add filtering to Group 
 description: How to Add filtering to Group
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-filtering-to-group
 tags: how,to,add,filtering,to,group

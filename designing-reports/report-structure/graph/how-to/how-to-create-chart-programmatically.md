@@ -1,6 +1,6 @@
 ---
 title: How to Create Chart Programmatically
-page_title: How to Create Chart Programmatically | for Telerik Reporting Documentation
+page_title: How to Create Chart Programmatically 
 description: How to Create Chart Programmatically
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-chart-programmatically
 tags: how,to,create,chart,programmatically

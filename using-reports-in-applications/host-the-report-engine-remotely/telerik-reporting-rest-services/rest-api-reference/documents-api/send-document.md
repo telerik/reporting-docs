@@ -1,6 +1,6 @@
 ---
 title: Send Document
-page_title: Send Document | for Telerik Reporting Documentation
+page_title: Send Document 
 description: Send Document
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/send-document
 tags: send,document

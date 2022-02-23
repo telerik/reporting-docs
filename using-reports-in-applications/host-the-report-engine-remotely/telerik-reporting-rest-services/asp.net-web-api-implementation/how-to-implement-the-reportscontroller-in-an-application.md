@@ -1,6 +1,6 @@
 ---
 title: How to implement the ReportsController in an application
-page_title: How to implement the ReportsController in an application | for Telerik Reporting Documentation
+page_title: How to implement the ReportsController in an application 
 description: How to implement the ReportsController in an application
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application
 tags: how,to,implement,the,reportscontroller,in,an,application

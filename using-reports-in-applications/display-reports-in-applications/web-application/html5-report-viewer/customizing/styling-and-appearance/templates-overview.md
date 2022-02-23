@@ -1,6 +1,6 @@
 ---
 title: Templates Overview
-page_title: Templates Overview | for Telerik Reporting Documentation
+page_title: Templates Overview 
 description: Templates Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview
 tags: templates,overview

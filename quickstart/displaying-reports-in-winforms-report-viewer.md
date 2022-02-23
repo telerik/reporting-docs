@@ -1,6 +1,6 @@
 ---
 title: Displaying Reports in WinForms Report Viewer
-page_title: Displaying Reports in WinForms Report Viewer | for Telerik Reporting Documentation
+page_title: Displaying Reports in WinForms Report Viewer 
 description: Displaying Reports in WinForms Report Viewer
 slug: telerikreporting/quickstart/displaying-reports-in-winforms-report-viewer
 tags: displaying,reports,in,winforms,report,viewer

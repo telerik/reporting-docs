@@ -1,6 +1,6 @@
 ---
 title: TextBox
-page_title: TextBox | for Telerik Reporting Documentation
+page_title: TextBox 
 description: TextBox
 slug: telerikreporting/designing-reports/report-structure/textbox
 tags: textbox

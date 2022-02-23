@@ -1,6 +1,6 @@
 ---
 title: Design Considerations for Report Item Layout
-page_title: Design Considerations for Report Item Layout | for Telerik Reporting Documentation
+page_title: Design Considerations for Report Item Layout 
 description: Design Considerations for Report Item Layout
 slug: telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout
 tags: design,considerations,for,report,item,layout

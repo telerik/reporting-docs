@@ -1,6 +1,6 @@
 ---
 title: How to set up in .NET Core 2.1+ application
-page_title: How to set up in .NET Core 2.1+ application | for Telerik Reporting Documentation
+page_title: How to set up in .NET Core 2.1+ application 
 description: How to set up in .NET Core 2.1+ application
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application
 tags: how,to,set,up,in,.net,core,2.1+,application

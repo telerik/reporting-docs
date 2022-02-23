@@ -1,6 +1,6 @@
 ---
 title: Register Client
-page_title: Register Client | for Telerik Reporting Documentation
+page_title: Register Client 
 description: Register Client
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client
 tags: register,client

@@ -1,6 +1,6 @@
 ---
 title: CsvDataSource Escape Formats
-page_title: CsvDataSource Escape Formats | for Telerik Reporting Documentation
+page_title: CsvDataSource Escape Formats 
 description: CsvDataSource Escape Formats
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats
 tags: csvdatasource,escape,formats

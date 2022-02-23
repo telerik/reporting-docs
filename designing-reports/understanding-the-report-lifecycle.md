@@ -1,6 +1,6 @@
 ---
 title: Understanding the Report Lifecycle
-page_title: Understanding the Report Lifecycle | for Telerik Reporting Documentation
+page_title: Understanding the Report Lifecycle 
 description: Understanding the Report Lifecycle
 slug: telerikreporting/designing-reports/understanding-the-report-lifecycle
 tags: understanding,the,report,lifecycle

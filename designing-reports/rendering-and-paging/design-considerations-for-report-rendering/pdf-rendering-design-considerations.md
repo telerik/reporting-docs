@@ -1,6 +1,6 @@
 ---
 title: PDF Rendering Design Considerations
-page_title: PDF Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: PDF Rendering Design Considerations 
 description: PDF Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations
 tags: pdf,rendering,design,considerations

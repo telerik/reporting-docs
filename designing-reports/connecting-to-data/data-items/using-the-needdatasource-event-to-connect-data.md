@@ -1,6 +1,6 @@
 ---
 title: Using the NeedDataSource event to connect data
-page_title: Using the NeedDataSource event to connect data | for Telerik Reporting Documentation
+page_title: Using the NeedDataSource event to connect data 
 description: Using the NeedDataSource event to connect data
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/using-the-needdatasource-event-to-connect-data
 tags: using,the,needdatasource,event,to,connect,data

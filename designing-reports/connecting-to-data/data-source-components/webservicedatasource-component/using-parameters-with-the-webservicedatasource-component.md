@@ -1,6 +1,6 @@
 ---
 title: Using Parameters with the WebServiceDataSource component
-page_title: Using Parameters with the WebServiceDataSource component | for Telerik Reporting Documentation
+page_title: Using Parameters with the WebServiceDataSource component 
 description: Using Parameters with the WebServiceDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/using-parameters-with-the-webservicedatasource-component
 tags: using,parameters,with,the,webservicedatasource,component

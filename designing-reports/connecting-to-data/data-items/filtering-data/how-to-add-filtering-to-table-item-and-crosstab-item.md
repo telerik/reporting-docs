@@ -1,6 +1,6 @@
 ---
 title: How to Add filtering to Table item and Crosstab item
-page_title: How to Add filtering to Table item and Crosstab item | for Telerik Reporting Documentation
+page_title: How to Add filtering to Table item and Crosstab item 
 description: How to Add filtering to Table item and Crosstab item
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-table-item-and-crosstab-item
 tags: how,to,add,filtering,to,table,item,and,crosstab,item

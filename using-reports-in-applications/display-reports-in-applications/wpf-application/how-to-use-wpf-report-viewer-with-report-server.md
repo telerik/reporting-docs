@@ -1,6 +1,6 @@
 ---
 title: How to Use WPF Report Viewer With Report Server
-page_title: How to Use WPF Report Viewer With Report Server | for Telerik Reporting Documentation
+page_title: How to Use WPF Report Viewer With Report Server 
 description: How to Use WPF Report Viewer With Report Server
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server
 tags: how,to,use,wpf,report,viewer,with,report,server

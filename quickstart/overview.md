@@ -1,6 +1,6 @@
 ---
 title: Quickstart Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/quickstart/overview
 tags: overview

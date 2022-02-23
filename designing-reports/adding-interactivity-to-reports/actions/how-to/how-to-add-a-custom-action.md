@@ -1,6 +1,6 @@
 ---
 title: How to Add a Custom Action
-page_title: How to Add a Custom Action | for Telerik Reporting Documentation
+page_title: How to Add a Custom Action 
 description: How to Add a Custom Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action
 tags: how,to,add,a,custom,action

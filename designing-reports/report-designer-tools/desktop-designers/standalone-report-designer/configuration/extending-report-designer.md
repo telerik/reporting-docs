@@ -1,6 +1,6 @@
 ---
 title: Extending Report Designer
-page_title: Extending Report Designer | for Telerik Reporting Documentation
+page_title: Extending Report Designer 
 description: Extending Report Designer
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer
 tags: extending,report,designer

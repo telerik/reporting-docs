@@ -1,6 +1,6 @@
 ---
 title: Using Custom Bindings
-page_title: Using Custom Bindings | for Telerik Reporting Documentation
+page_title: Using Custom Bindings 
 description: Using Custom Bindings
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings
 tags: using,custom,bindings

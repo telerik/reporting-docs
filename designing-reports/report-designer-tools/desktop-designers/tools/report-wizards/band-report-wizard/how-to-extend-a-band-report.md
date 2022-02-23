@@ -1,6 +1,6 @@
 ---
 title: How to extend a Band Report
-page_title: How to extend a Band Report | for Telerik Reporting Documentation
+page_title: How to extend a Band Report 
 description: How to extend a Band Report
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-extend-a-band-report
 tags: how,to,extend,a,band,report

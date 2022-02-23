@@ -1,6 +1,6 @@
 ---
 title: How to Bind to a DataSet
-page_title: How to Bind to a DataSet | for Telerik Reporting Documentation
+page_title: How to Bind to a DataSet 
 description: How to Bind to a DataSet
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-dataset
 tags: how,to,bind,to,a,dataset

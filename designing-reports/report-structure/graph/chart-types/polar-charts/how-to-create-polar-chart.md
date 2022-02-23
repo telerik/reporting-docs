@@ -1,6 +1,6 @@
 ---
 title: How to Create Polar Chart
-page_title: How to Create Polar Chart | for Telerik Reporting Documentation
+page_title: How to Create Polar Chart 
 description: How to Create Polar Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/how-to-create-polar-chart
 tags: how,to,create,polar,chart

@@ -1,6 +1,6 @@
 ---
 title: Styling Using the Context Menu
-page_title: Styling Using the Context Menu | for Telerik Reporting Documentation
+page_title: Styling Using the Context Menu 
 description: Styling Using the Context Menu
 slug: telerikreporting/designing-reports/styling-reports/styling-using-the-context-menu
 tags: styling,using,the,context,menu

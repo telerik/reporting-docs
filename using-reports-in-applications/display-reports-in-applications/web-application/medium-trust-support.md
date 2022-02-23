@@ -1,6 +1,6 @@
 ---
 title: Medium Trust Support
-page_title: Medium Trust Support | for Telerik Reporting Documentation
+page_title: Medium Trust Support 
 description: Medium Trust Support
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support
 tags: medium,trust,support

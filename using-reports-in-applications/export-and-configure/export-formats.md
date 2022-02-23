@@ -1,6 +1,6 @@
 ---
 title: Export Formats
-page_title: Export Formats | for Telerik Reporting Documentation
+page_title: Export Formats 
 description: Export Formats
 slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats
 tags: export,formats

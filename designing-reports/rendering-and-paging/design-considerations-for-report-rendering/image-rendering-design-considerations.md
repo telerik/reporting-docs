@@ -1,6 +1,6 @@
 ---
 title: Image Rendering Design Considerations
-page_title: Image Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: Image Rendering Design Considerations 
 description: Image Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations
 tags: image,rendering,design,considerations

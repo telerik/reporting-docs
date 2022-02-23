@@ -1,6 +1,6 @@
 ---
 title: Style Resolving Fallback Algorithm
-page_title: Style Resolving Fallback Algorithm | for Telerik Reporting Documentation
+page_title: Style Resolving Fallback Algorithm 
 description: Style Resolving Fallback Algorithm
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm
 tags: style,resolving,fallback,algorithm

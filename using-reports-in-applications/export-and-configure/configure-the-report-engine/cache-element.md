@@ -1,6 +1,6 @@
 ---
 title: cache Element
-page_title: cache Element | for Telerik Reporting Documentation
+page_title: cache Element 
 description: cache Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/cache-element
 tags: cache,element

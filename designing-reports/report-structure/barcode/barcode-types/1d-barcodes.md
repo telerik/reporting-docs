@@ -1,6 +1,6 @@
 ---
 title: 1D Barcodes
-page_title: 1D Barcodes | for Telerik Reporting Documentation
+page_title: 1D Barcodes 
 description: 1D Barcodes
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/1d-barcodes
 tags: 1d,barcodes

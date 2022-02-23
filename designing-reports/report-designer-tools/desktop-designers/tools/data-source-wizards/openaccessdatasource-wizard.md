@@ -1,6 +1,6 @@
 ---
 title: OpenAccessDataSource Wizard
-page_title: OpenAccessDataSource Wizard | for Telerik Reporting Documentation
+page_title: OpenAccessDataSource Wizard 
 description: OpenAccessDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard
 tags: openaccessdatasource,wizard

@@ -1,6 +1,6 @@
 ---
 title: Package Report Definition
-page_title: Package Report Definition | for Telerik Reporting Documentation
+page_title: Package Report Definition 
 description: Package Report Definition
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition
 tags: package,report,definition

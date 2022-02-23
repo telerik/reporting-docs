@@ -1,6 +1,6 @@
 ---
 title: Requirements For Desktop Viewers Using Remote Report Sources
-page_title: Requirements For Desktop Viewers Using Remote Report Sources | for Telerik Reporting Documentation
+page_title: Requirements For Desktop Viewers Using Remote Report Sources 
 description: Requirements For Desktop Viewers Using Remote Report Sources
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources
 tags: requirements,for,desktop,viewers,using,remote,report,sources

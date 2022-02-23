@@ -1,6 +1,6 @@
 ---
 title: How to Add report viewer to a .NET 5 application
-page_title: How to Add report viewer to a .NET 5 application | for Telerik Reporting Documentation
+page_title: How to Add report viewer to a .NET 5 application 
 description: How to Add report viewer to a .NET 5 application
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application
 tags: how,to,add,report,viewer,to,a,.net,5,application

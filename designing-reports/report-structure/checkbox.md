@@ -1,6 +1,6 @@
 ---
 title: Checkbox
-page_title: Checkbox | for Telerik Reporting Documentation
+page_title: Checkbox 
 description: Checkbox
 slug: telerikreporting/designing-reports/report-structure/checkbox
 tags: checkbox

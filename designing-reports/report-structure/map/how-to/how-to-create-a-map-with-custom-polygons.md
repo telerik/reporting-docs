@@ -1,6 +1,6 @@
 ---
 title: How to Create a Map with custom polygons
-page_title: How to Create a Map with custom polygons | for Telerik Reporting Documentation
+page_title: How to Create a Map with custom polygons 
 description: How to Create a Map with custom polygons
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-custom-polygons
 tags: how,to,create,a,map,with,custom,polygons

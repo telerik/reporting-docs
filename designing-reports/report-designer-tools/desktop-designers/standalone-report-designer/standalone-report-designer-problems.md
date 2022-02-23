@@ -1,6 +1,6 @@
 ---
 title: Standalone Report Designer Problems
-page_title: Standalone Report Designer Problems | for Telerik Reporting Documentation
+page_title: Standalone Report Designer Problems 
 description: Standalone Report Designer Problems
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/standalone-report-designer-problems
 tags: standalone,report,designer,problems

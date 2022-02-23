@@ -1,6 +1,6 @@
 ---
 title: exportEnd(e, args)
-page_title: exportEnd(e, args) | for Telerik Reporting Documentation
+page_title: exportEnd(e, args) 
 description: exportEnd(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportend(e,-args)
 tags: exportend(e,,args)

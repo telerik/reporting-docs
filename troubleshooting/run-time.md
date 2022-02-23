@@ -1,6 +1,6 @@
 ---
 title: Run Time
-page_title: Run Time | for Telerik Reporting Documentation
+page_title: Run Time 
 description: Run Time
 slug: telerikreporting/troubleshooting/run-time
 tags: run,time

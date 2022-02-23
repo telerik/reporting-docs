@@ -1,6 +1,6 @@
 ---
 title: How to Change Parameter Editors Type
-page_title: How to Change Parameter Editors Type | for Telerik Reporting Documentation
+page_title: How to Change Parameter Editors Type 
 description: How to Change Parameter Editors Type
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-change-parameter-editors-type
 tags: how,to,change,parameter,editors,type

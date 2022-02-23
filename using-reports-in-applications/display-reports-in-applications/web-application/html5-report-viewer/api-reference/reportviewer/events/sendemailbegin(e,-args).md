@@ -1,6 +1,6 @@
 ---
 title: sendEmailBegin(e, args)
-page_title: sendEmailBegin(e, args) | for Telerik Reporting Documentation
+page_title: sendEmailBegin(e, args) 
 description: sendEmailBegin(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)
 tags: sendemailbegin(e,,args)

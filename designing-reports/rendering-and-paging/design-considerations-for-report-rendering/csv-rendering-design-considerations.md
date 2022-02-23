@@ -1,6 +1,6 @@
 ---
 title: CSV Rendering Design Considerations
-page_title: CSV Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: CSV Rendering Design Considerations 
 description: CSV Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/csv-rendering-design-considerations
 tags: csv,rendering,design,considerations

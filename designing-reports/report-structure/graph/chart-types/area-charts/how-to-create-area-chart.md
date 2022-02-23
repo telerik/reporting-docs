@@ -1,6 +1,6 @@
 ---
 title: How to Create Area Chart
-page_title: How to Create Area Chart | for Telerik Reporting Documentation
+page_title: How to Create Area Chart 
 description: How to Create Area Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/how-to-create-area-chart
 tags: how,to,create,area,chart

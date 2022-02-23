@@ -1,6 +1,6 @@
 ---
 title: privateFonts Element
-page_title: privateFonts Element | for Telerik Reporting Documentation
+page_title: privateFonts Element 
 description: privateFonts Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element
 tags: privatefonts,element

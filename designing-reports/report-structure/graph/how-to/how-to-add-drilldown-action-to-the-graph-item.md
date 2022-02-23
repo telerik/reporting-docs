@@ -1,6 +1,6 @@
 ---
 title: How to add Drilldown action to the Graph item
-page_title: How to add Drilldown action to the Graph item | for Telerik Reporting Documentation
+page_title: How to add Drilldown action to the Graph item 
 description: How to add Drilldown action to the Graph item
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-drilldown-action-to-the-graph-item
 tags: how,to,add,drilldown,action,to,the,graph,item

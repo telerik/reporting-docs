@@ -1,6 +1,6 @@
 ---
 title: Using Report Parameters programmatically
-page_title: Using Report Parameters programmatically | for Telerik Reporting Documentation
+page_title: Using Report Parameters programmatically 
 description: Using Report Parameters programmatically
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-programmatically
 tags: using,report,parameters,programmatically

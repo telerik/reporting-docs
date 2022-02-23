@@ -1,6 +1,6 @@
 ---
 title: How to Create a Report Book at run-time
-page_title: How to Create a Report Book at run-time | for Telerik Reporting Documentation
+page_title: How to Create a Report Book at run-time 
 description: How to Create a Report Book at run-time
 slug: telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time
 tags: how,to,create,a,report,book,at,run-time

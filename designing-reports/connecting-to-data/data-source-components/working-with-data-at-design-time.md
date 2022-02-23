@@ -1,6 +1,6 @@
 ---
 title: Working With Data at Design Time
-page_title: Working With Data at Design Time | for Telerik Reporting Documentation
+page_title: Working With Data at Design Time 
 description: Working With Data at Design Time
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/working-with-data-at-design-time
 tags: working,with,data,at,design,time

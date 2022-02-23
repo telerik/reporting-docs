@@ -1,6 +1,6 @@
 ---
 title: Title
-page_title: Title | for Telerik Reporting Documentation
+page_title: Title 
 description: Title
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/title
 tags: title

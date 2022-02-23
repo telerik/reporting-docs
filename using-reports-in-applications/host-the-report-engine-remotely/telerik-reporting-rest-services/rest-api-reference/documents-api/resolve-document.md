@@ -1,6 +1,6 @@
 ---
 title: Resolve Document
-page_title: Resolve Document | for Telerik Reporting Documentation
+page_title: Resolve Document 
 description: Resolve Document
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document
 tags: resolve,document

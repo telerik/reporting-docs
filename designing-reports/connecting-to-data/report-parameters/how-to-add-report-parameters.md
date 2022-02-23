@@ -1,6 +1,6 @@
 ---
 title: How to Add Report Parameters
-page_title: How to Add Report Parameters | for Telerik Reporting Documentation
+page_title: How to Add Report Parameters 
 description: How to Add Report Parameters
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters
 tags: how,to,add,report,parameters

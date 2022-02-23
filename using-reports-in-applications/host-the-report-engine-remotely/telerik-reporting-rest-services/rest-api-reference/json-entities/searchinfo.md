@@ -1,6 +1,6 @@
 ---
 title: SearchInfo
-page_title: SearchInfo | for Telerik Reporting Documentation
+page_title: SearchInfo 
 description: SearchInfo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo
 tags: searchinfo

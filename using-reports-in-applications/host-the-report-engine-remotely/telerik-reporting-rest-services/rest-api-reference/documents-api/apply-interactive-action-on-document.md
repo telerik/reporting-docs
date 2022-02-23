@@ -1,6 +1,6 @@
 ---
 title: Apply Interactive Action on Document
-page_title: Apply Interactive Action on Document | for Telerik Reporting Documentation
+page_title: Apply Interactive Action on Document 
 description: Apply Interactive Action on Document
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/apply-interactive-action-on-document
 tags: apply,interactive,action,on,document

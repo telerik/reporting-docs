@@ -1,6 +1,6 @@
 ---
 title: Operators
-page_title: Operators | for Telerik Reporting Documentation
+page_title: Operators 
 description: Operators
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators
 tags: operators

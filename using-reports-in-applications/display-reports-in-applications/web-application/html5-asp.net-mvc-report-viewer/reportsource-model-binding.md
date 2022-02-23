@@ -1,6 +1,6 @@
 ---
 title: ReportSource Model Binding
-page_title: ReportSource Model Binding | for Telerik Reporting Documentation
+page_title: ReportSource Model Binding 
 description: ReportSource Model Binding
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/reportsource-model-binding
 tags: reportsource,model,binding

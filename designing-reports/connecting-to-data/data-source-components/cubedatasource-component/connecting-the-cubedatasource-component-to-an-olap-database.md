@@ -1,6 +1,6 @@
 ---
 title: Connecting the CubeDataSource component to an OLAP database
-page_title: Connecting the CubeDataSource component to an OLAP database | for Telerik Reporting Documentation
+page_title: Connecting the CubeDataSource component to an OLAP database 
 description: Connecting the CubeDataSource component to an OLAP database
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/connecting-the-cubedatasource-component-to-an-olap-database
 tags: connecting,the,cubedatasource,component,to,an,olap,database

@@ -1,6 +1,6 @@
 ---
 title: MailMessage
-page_title: MailMessage | for Telerik Reporting Documentation
+page_title: MailMessage 
 description: MailMessage
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/mailmessage
 tags: mailmessage

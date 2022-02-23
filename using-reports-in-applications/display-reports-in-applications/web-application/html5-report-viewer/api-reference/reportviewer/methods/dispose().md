@@ -1,6 +1,6 @@
 ---
 title: dispose()
-page_title: dispose() | for Telerik Reporting Documentation
+page_title: dispose() 
 description: dispose()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/dispose()
 tags: dispose()

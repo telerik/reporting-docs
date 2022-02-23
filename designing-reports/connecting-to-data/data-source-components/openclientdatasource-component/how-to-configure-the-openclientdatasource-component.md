@@ -1,6 +1,6 @@
 ---
 title: How to Configure the OpenClientDataSource Component
-page_title: How to Configure the OpenClientDataSource Component | for Telerik Reporting Documentation
+page_title: How to Configure the OpenClientDataSource Component 
 description: How to Configure the OpenClientDataSource Component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/how-to-configure-the-openclientdatasource-component
 tags: how,to,configure,the,openclientdatasource,component

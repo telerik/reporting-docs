@@ -1,6 +1,6 @@
 ---
 title: About the Samples
-page_title: About the Samples | for Telerik Reporting Documentation
+page_title: About the Samples 
 description: About the Samples
 slug: telerikreporting/for-more-help/about-the-samples
 tags: about,the,samples

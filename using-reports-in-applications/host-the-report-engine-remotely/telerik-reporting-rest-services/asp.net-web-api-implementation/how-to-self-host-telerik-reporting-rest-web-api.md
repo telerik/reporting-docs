@@ -1,6 +1,6 @@
 ---
 title: How to Self Host Telerik Reporting REST Web API
-page_title: How to Self Host Telerik Reporting REST Web API | for Telerik Reporting Documentation
+page_title: How to Self Host Telerik Reporting REST Web API 
 description: How to Self Host Telerik Reporting REST Web API
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api
 tags: how,to,self,host,telerik,reporting,rest,web,api

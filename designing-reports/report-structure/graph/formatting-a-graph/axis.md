@@ -1,6 +1,6 @@
 ---
 title: Axis
-page_title: Axis | for Telerik Reporting Documentation
+page_title: Axis 
 description: Axis
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/axis
 tags: axis

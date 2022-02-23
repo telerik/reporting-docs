@@ -1,6 +1,6 @@
 ---
 title: Expressions as Values of Item Properties
-page_title: Expressions as Values of Item Properties | for Telerik Reporting Documentation
+page_title: Expressions as Values of Item Properties 
 description: Expressions as Values of Item Properties
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties
 tags: expressions,as,values,of,item,properties

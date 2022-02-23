@@ -1,6 +1,6 @@
 ---
 title: ParameterValue
-page_title: ParameterValue | for Telerik Reporting Documentation
+page_title: ParameterValue 
 description: ParameterValue
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parametervalue
 tags: parametervalue

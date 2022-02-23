@@ -1,6 +1,6 @@
 ---
 title: How to Change the Gap Between the Bars
-page_title: How to Change the Gap Between the Bars | for Telerik Reporting Documentation
+page_title: How to Change the Gap Between the Bars 
 description: How to Change the Gap Between the Bars
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-gap-between-the-bars
 tags: how,to,change,the,gap,between,the,bars

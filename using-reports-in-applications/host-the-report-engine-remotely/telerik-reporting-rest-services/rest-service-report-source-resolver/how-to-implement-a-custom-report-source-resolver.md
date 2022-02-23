@@ -1,6 +1,6 @@
 ---
 title: How to Implement a Custom Report Source Resolver
-page_title: How to Implement a Custom Report Source Resolver | for Telerik Reporting Documentation
+page_title: How to Implement a Custom Report Source Resolver 
 description: How to Implement a Custom Report Source Resolver
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver
 tags: how,to,implement,a,custom,report,source,resolver

@@ -1,6 +1,6 @@
 ---
 title: Event Binding
-page_title: Event Binding | for Telerik Reporting Documentation
+page_title: Event Binding 
 description: Event Binding
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/event-binding
 tags: event,binding

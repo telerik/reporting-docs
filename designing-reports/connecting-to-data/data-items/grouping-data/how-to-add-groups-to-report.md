@@ -1,6 +1,6 @@
 ---
 title: How to Add groups to Report
-page_title: How to Add groups to Report | for Telerik Reporting Documentation
+page_title: How to Add groups to Report 
 description: How to Add groups to Report
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report
 tags: how,to,add,groups,to,report

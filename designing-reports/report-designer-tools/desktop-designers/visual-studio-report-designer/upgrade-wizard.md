@@ -1,6 +1,6 @@
 ---
 title: Upgrade Wizard
-page_title: Upgrade Wizard | for Telerik Reporting Documentation
+page_title: Upgrade Wizard 
 description: Upgrade Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard
 tags: upgrade,wizard

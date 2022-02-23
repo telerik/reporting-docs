@@ -1,6 +1,6 @@
 ---
 title: Actions Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview
 tags: overview

@@ -1,6 +1,6 @@
 ---
 title: How to use the Report Wizard to create a Band Report
-page_title: How to use the Report Wizard to create a Band Report | for Telerik Reporting Documentation
+page_title: How to use the Report Wizard to create a Band Report 
 description: How to use the Report Wizard to create a Band Report
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report
 tags: how,to,use,the,report,wizard,to,create,a,band,report

@@ -1,6 +1,6 @@
 ---
 title: Creating Style Rules
-page_title: Creating Style Rules | for Telerik Reporting Documentation
+page_title: Creating Style Rules 
 description: Creating Style Rules
 slug: telerikreporting/designing-reports/styling-reports/creating-style-rules
 tags: creating,style,rules

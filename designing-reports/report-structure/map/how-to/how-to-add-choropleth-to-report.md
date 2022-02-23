@@ -1,6 +1,6 @@
 ---
 title: How to Add Choropleth to Report
-page_title: How to Add Choropleth to Report | for Telerik Reporting Documentation
+page_title: How to Add Choropleth to Report 
 description: How to Add Choropleth to Report
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-choropleth-to-report
 tags: how,to,add,choropleth,to,report

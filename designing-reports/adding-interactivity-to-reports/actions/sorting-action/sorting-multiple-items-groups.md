@@ -1,6 +1,6 @@
 ---
 title: Sorting Multiple Items/Groups
-page_title: Sorting Multiple Items/Groups | for Telerik Reporting Documentation
+page_title: Sorting Multiple Items/Groups 
 description: Sorting Multiple Items/Groups
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-multiple-items-groups
 tags: sorting,multiple,items/groups

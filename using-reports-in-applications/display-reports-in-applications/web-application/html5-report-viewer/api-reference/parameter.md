@@ -1,6 +1,6 @@
 ---
 title: parameter
-page_title: parameter | for Telerik Reporting Documentation
+page_title: parameter 
 description: parameter
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parameter
 tags: parameter

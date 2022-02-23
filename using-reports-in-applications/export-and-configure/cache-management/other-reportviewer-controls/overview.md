@@ -1,6 +1,6 @@
 ---
 title: Other ReportViewer Controls Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/overview
 tags: overview

@@ -1,6 +1,6 @@
 ---
 title: Welcome to Telerik Reporting!
-page_title: Welcome to Telerik Reporting! | for Telerik Reporting Documentation
+page_title: Welcome to Telerik Reporting! 
 description: Welcome to Telerik Reporting!
 slug: telerikreporting/welcome-to-telerik-reporting!
 tags: welcome,to,telerik,reporting!

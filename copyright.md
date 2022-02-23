@@ -1,6 +1,6 @@
 ---
 title: Copyright
-page_title: Copyright | for Telerik Reporting Documentation
+page_title: Copyright 
 description: Copyright
 slug: telerikreporting/copyright
 tags: copyright

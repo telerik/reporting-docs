@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | for Telerik Reporting Documentation
+page_title: Localization 
 description: Localization
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/localization
 tags: localization

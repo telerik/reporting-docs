@@ -1,6 +1,6 @@
 ---
 title: Label Report Wizard
-page_title: Label Report Wizard | for Telerik Reporting Documentation
+page_title: Label Report Wizard 
 description: Label Report Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/label-report-wizard
 tags: label,report,wizard

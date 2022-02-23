@@ -1,6 +1,6 @@
 ---
 title: Exporting and Reusing Style Sheets
-page_title: Exporting and Reusing Style Sheets | for Telerik Reporting Documentation
+page_title: Exporting and Reusing Style Sheets 
 description: Exporting and Reusing Style Sheets
 slug: telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets
 tags: exporting,and,reusing,style,sheets

@@ -1,6 +1,6 @@
 ---
 title: PictureBox
-page_title: PictureBox | for Telerik Reporting Documentation
+page_title: PictureBox 
 description: PictureBox
 slug: telerikreporting/designing-reports/report-structure/picturebox
 tags: picturebox

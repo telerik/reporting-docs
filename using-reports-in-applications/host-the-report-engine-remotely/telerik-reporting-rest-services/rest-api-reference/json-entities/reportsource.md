@@ -1,6 +1,6 @@
 ---
 title: ReportSource
-page_title: ReportSource | for Telerik Reporting Documentation
+page_title: ReportSource 
 description: ReportSource
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/reportsource
 tags: reportsource

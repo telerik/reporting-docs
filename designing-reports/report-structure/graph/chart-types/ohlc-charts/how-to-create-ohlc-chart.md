@@ -1,6 +1,6 @@
 ---
 title: How to Create OHLC Chart
-page_title: How to Create OHLC Chart | for Telerik Reporting Documentation
+page_title: How to Create OHLC Chart 
 description: How to Create OHLC Chart
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/how-to-create-ohlc-chart
 tags: how,to,create,ohlc,chart

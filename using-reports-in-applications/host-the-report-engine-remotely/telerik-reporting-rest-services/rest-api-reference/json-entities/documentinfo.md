@@ -1,6 +1,6 @@
 ---
 title: DocumentInfo
-page_title: DocumentInfo | for Telerik Reporting Documentation
+page_title: DocumentInfo 
 description: DocumentInfo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo
 tags: documentinfo

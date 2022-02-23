@@ -1,6 +1,6 @@
 ---
 title: Parameter
-page_title: Parameter | for Telerik Reporting Documentation
+page_title: Parameter 
 description: Parameter
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/parameter
 tags: parameter

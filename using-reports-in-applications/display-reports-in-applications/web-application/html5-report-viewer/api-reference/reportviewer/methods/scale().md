@@ -1,6 +1,6 @@
 ---
 title: scale()
-page_title: scale() | for Telerik Reporting Documentation
+page_title: scale() 
 description: scale()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/scale()
 tags: scale()

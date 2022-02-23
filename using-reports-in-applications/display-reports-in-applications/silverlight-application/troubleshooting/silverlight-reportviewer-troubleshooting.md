@@ -1,6 +1,6 @@
 ---
 title: Silverlight ReportViewer Troubleshooting
-page_title: Silverlight ReportViewer Troubleshooting | for Telerik Reporting Documentation
+page_title: Silverlight ReportViewer Troubleshooting 
 description: Silverlight ReportViewer Troubleshooting
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/troubleshooting/silverlight-reportviewer-troubleshooting
 tags: silverlight,reportviewer,troubleshooting

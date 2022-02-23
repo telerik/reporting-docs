@@ -1,6 +1,6 @@
 ---
 title: Style Builder Dialog
-page_title: Style Builder Dialog | for Telerik Reporting Documentation
+page_title: Style Builder Dialog 
 description: Style Builder Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/style-builder-dialog
 tags: style,builder,dialog

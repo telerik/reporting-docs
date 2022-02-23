@@ -1,6 +1,6 @@
 ---
 title: HTML5 Viewer Troubleshooting
-page_title: HTML5 Viewer Troubleshooting | for Telerik Reporting Documentation
+page_title: HTML5 Viewer Troubleshooting 
 description: HTML5 Viewer Troubleshooting
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting/html5-viewer-troubleshooting
 tags: html5,viewer,troubleshooting

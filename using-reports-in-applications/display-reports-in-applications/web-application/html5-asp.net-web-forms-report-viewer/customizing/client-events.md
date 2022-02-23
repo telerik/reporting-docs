@@ -1,6 +1,6 @@
 ---
 title: Client Events
-page_title: Client Events | for Telerik Reporting Documentation
+page_title: Client Events 
 description: Client Events
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/client-events
 tags: client,events

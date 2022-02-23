@@ -1,6 +1,6 @@
 ---
 title: data attributes
-page_title: data attributes | for Telerik Reporting Documentation
+page_title: data attributes 
 description: data attributes
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes
 tags: data,attributes

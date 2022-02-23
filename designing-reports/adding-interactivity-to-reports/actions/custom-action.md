@@ -1,6 +1,6 @@
 ---
 title: Custom Action
-page_title: Custom Action | for Telerik Reporting Documentation
+page_title: Custom Action 
 description: Custom Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action
 tags: custom,action

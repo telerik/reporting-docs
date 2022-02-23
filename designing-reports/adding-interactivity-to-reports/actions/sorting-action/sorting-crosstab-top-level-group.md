@@ -1,6 +1,6 @@
 ---
 title: Sorting Crosstab Top-Level Group
-page_title: Sorting Crosstab Top-Level Group | for Telerik Reporting Documentation
+page_title: Sorting Crosstab Top-Level Group 
 description: Sorting Crosstab Top-Level Group
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-crosstab-top-level-group
 tags: sorting,crosstab,top-level,group

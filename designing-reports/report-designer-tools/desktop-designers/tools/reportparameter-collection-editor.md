@@ -1,6 +1,6 @@
 ---
 title: ReportParameter Collection Editor
-page_title: ReportParameter Collection Editor | for Telerik Reporting Documentation
+page_title: ReportParameter Collection Editor 
 description: ReportParameter Collection Editor
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor
 tags: reportparameter,collection,editor

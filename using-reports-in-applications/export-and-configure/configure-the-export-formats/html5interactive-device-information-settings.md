@@ -1,6 +1,6 @@
 ---
 title: HTML5Interactive Device Information Settings
-page_title: HTML5Interactive Device Information Settings | for Telerik Reporting Documentation
+page_title: HTML5Interactive Device Information Settings 
 description: HTML5Interactive Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5interactive-device-information-settings
 tags: html5interactive,device,information,settings

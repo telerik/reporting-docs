@@ -1,6 +1,6 @@
 ---
 title: Product Catalog Report Wizard
-page_title: Product Catalog Report Wizard | for Telerik Reporting Documentation
+page_title: Product Catalog Report Wizard 
 description: Product Catalog Report Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/product-catalog-report-wizard
 tags: product,catalog,report,wizard

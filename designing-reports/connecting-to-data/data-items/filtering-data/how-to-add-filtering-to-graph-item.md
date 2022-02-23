@@ -1,6 +1,6 @@
 ---
 title: How to Add filtering to Graph item
-page_title: How to Add filtering to Graph item | for Telerik Reporting Documentation
+page_title: How to Add filtering to Graph item 
 description: How to Add filtering to Graph item
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-graph-item
 tags: how,to,add,filtering,to,graph,item

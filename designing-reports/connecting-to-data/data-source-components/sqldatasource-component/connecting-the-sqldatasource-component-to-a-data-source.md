@@ -1,6 +1,6 @@
 ---
 title: Connecting the SqlDataSource component to a Data Source
-page_title: Connecting the SqlDataSource component to a Data Source | for Telerik Reporting Documentation
+page_title: Connecting the SqlDataSource component to a Data Source 
 description: Connecting the SqlDataSource component to a Data Source
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/connecting-the-sqldatasource-component-to-a-data-source
 tags: connecting,the,sqldatasource,component,to,a,data,source

@@ -1,6 +1,6 @@
 ---
 title: How to implement a report definition storage
-page_title: How to implement a report definition storage | for Telerik Reporting Documentation
+page_title: How to implement a report definition storage 
 description: How to implement a report definition storage
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage
 tags: how,to,implement,a,report,definition,storage

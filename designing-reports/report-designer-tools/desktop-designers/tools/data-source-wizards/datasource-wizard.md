@@ -1,6 +1,6 @@
 ---
 title: DataSource Wizard
-page_title: DataSource Wizard | for Telerik Reporting Documentation
+page_title: DataSource Wizard 
 description: DataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard
 tags: datasource,wizard

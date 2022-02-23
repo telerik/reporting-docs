@@ -1,6 +1,6 @@
 ---
 title: Deploying Web Applications
-page_title: Deploying Web Applications | for Telerik Reporting Documentation
+page_title: Deploying Web Applications 
 description: Deploying Web Applications
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-applications
 tags: deploying,web,applications

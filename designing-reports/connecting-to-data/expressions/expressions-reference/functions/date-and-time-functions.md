@@ -1,6 +1,6 @@
 ---
 title: Date and Time Functions
-page_title: Date and Time Functions | for Telerik Reporting Documentation
+page_title: Date and Time Functions 
 description: Date and Time Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions
 tags: date,and,time,functions

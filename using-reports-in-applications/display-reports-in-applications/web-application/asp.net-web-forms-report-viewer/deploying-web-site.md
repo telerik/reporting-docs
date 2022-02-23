@@ -1,6 +1,6 @@
 ---
 title: Deploying Web Site
-page_title: Deploying Web Site | for Telerik Reporting Documentation
+page_title: Deploying Web Site 
 description: Deploying Web Site
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-site
 tags: deploying,web,site

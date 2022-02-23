@@ -1,6 +1,6 @@
 ---
 title: Telerik Reporting Menu
-page_title: Telerik Reporting Menu | for Telerik Reporting Documentation
+page_title: Telerik Reporting Menu 
 description: Telerik Reporting Menu
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu
 tags: telerik,reporting,menu

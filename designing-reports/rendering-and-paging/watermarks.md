@@ -1,6 +1,6 @@
 ---
 title: Watermarks
-page_title: Watermarks | for Telerik Reporting Documentation
+page_title: Watermarks 
 description: Watermarks
 slug: telerikreporting/designing-reports/rendering-and-paging/watermarks
 tags: watermarks

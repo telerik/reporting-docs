@@ -1,6 +1,6 @@
 ---
 title: How to use Custom Report Source Resolver and Custom Report Document Resolver
-page_title: How to use Custom Report Source Resolver and Custom Report Document Resolver | for Telerik Reporting Documentation
+page_title: How to use Custom Report Source Resolver and Custom Report Document Resolver 
 description: How to use Custom Report Source Resolver and Custom Report Document Resolver
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver
 tags: how,to,use,custom,report,source,resolver,and,custom,report,document,resolver

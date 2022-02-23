@@ -1,6 +1,6 @@
 ---
 title: Configuration Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview
 tags: overview

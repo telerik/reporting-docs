@@ -1,6 +1,6 @@
 ---
 title: sendEmailEnd(e, args)
-page_title: sendEmailEnd(e, args) | for Telerik Reporting Documentation
+page_title: sendEmailEnd(e, args) 
 description: sendEmailEnd(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)
 tags: sendemailend(e,,args)

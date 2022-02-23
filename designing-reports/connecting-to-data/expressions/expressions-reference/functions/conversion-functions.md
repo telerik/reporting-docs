@@ -1,6 +1,6 @@
 ---
 title: Conversion Functions
-page_title: Conversion Functions | for Telerik Reporting Documentation
+page_title: Conversion Functions 
 description: Conversion Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions
 tags: conversion,functions

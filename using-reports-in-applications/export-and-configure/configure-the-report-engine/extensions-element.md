@@ -1,6 +1,6 @@
 ---
 title: extensions Element
-page_title: extensions Element | for Telerik Reporting Documentation
+page_title: extensions Element 
 description: extensions Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element
 tags: extensions,element

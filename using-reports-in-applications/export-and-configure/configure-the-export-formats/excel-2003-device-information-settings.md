@@ -1,6 +1,6 @@
 ---
 title: Excel 2003 Device Information Settings
-page_title: Excel 2003 Device Information Settings | for Telerik Reporting Documentation
+page_title: Excel 2003 Device Information Settings 
 description: Excel 2003 Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings
 tags: excel,2003,device,information,settings

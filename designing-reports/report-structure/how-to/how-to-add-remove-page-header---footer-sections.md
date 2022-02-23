@@ -1,6 +1,6 @@
 ---
 title: How to Add/Remove Page Header & Footer Sections
-page_title: How to Add/Remove Page Header & Footer Sections | for Telerik Reporting Documentation
+page_title: How to Add/Remove Page Header & Footer Sections 
 description: How to Add/Remove Page Header & Footer Sections
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections
 tags: how,to,add/remove,page,header,&,footer,sections

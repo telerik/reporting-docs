@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Solution Structure
-page_title: Visual Studio Solution Structure | for Telerik Reporting Documentation
+page_title: Visual Studio Solution Structure 
 description: Visual Studio Solution Structure
 slug: telerikreporting/quickstart/visual-studio-solution-structure
 tags: visual,studio,solution,structure

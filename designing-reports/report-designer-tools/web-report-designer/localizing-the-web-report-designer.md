@@ -1,6 +1,6 @@
 ---
 title: Localizing the Web Report Designer
-page_title: Localizing the Web Report Designer | for Telerik Reporting Documentation
+page_title: Localizing the Web Report Designer 
 description: Localizing the Web Report Designer
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/localizing-the-web-report-designer
 tags: localizing,the,web,report,designer

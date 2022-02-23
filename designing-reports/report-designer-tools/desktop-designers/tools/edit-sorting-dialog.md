@@ -1,6 +1,6 @@
 ---
 title: Edit Sorting Dialog
-page_title: Edit Sorting Dialog | for Telerik Reporting Documentation
+page_title: Edit Sorting Dialog 
 description: Edit Sorting Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog
 tags: edit,sorting,dialog

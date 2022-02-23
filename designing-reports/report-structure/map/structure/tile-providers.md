@@ -1,6 +1,6 @@
 ---
 title: Tile Providers
-page_title: Tile Providers | for Telerik Reporting Documentation
+page_title: Tile Providers 
 description: Tile Providers
 slug: telerikreporting/designing-reports/report-structure/map/structure/tile-providers
 tags: tile,providers

@@ -1,6 +1,6 @@
 ---
 title: assemblyReferences Element
-page_title: assemblyReferences Element | for Telerik Reporting Documentation
+page_title: assemblyReferences Element 
 description: assemblyReferences Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element
 tags: assemblyreferences,element

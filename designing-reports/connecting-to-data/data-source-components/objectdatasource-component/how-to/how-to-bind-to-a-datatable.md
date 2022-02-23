@@ -1,6 +1,6 @@
 ---
 title: How to Bind to a DataTable
-page_title: How to Bind to a DataTable | for Telerik Reporting Documentation
+page_title: How to Bind to a DataTable 
 description: How to Bind to a DataTable
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-datatable
 tags: how,to,bind,to,a,datatable

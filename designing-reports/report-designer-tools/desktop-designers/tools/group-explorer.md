@@ -1,6 +1,6 @@
 ---
 title: Group Explorer
-page_title: Group Explorer | for Telerik Reporting Documentation
+page_title: Group Explorer 
 description: Group Explorer
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer
 tags: group,explorer

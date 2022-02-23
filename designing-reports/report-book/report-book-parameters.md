@@ -1,6 +1,6 @@
 ---
 title: Report Book Parameters
-page_title: Report Book Parameters | for Telerik Reporting Documentation
+page_title: Report Book Parameters 
 description: Report Book Parameters
 slug: telerikreporting/designing-reports/report-book/report-book-parameters
 tags: report,book,parameters

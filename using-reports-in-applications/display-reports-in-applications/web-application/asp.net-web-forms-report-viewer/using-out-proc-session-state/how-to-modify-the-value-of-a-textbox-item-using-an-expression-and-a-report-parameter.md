@@ -1,6 +1,6 @@
 ---
 title: How to Modify the Value of a TextBox item using an Expression and a Report Parameter
-page_title: How to Modify the Value of a TextBox item using an Expression and a Report Parameter | for Telerik Reporting Documentation
+page_title: How to Modify the Value of a TextBox item using an Expression and a Report Parameter 
 description: How to Modify the Value of a TextBox item using an Expression and a Report Parameter
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/how-to-modify-the-value-of-a-textbox-item-using-an-expression-and-a-report-parameter
 tags: how,to,modify,the,value,of,a,textbox,item,using,an,expression,and,a,report,parameter

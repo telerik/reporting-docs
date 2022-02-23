@@ -1,6 +1,6 @@
 ---
 title: Understanding table Cells, Rows and Columns
-page_title: Understanding table Cells, Rows and Columns | for Telerik Reporting Documentation
+page_title: Understanding table Cells, Rows and Columns 
 description: Understanding table Cells, Rows and Columns
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns
 tags: understanding,table,cells,,rows,and,columns

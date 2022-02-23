@@ -1,6 +1,6 @@
 ---
 title: How to Use HTML5 Report Viewer with Report Server
-page_title: How to Use HTML5 Report Viewer with Report Server | for Telerik Reporting Documentation
+page_title: How to Use HTML5 Report Viewer with Report Server 
 description: How to Use HTML5 Report Viewer with Report Server
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server
 tags: how,to,use,html5,report,viewer,with,report,server

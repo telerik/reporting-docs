@@ -1,6 +1,6 @@
 ---
 title: Bindings
-page_title: Bindings | for Telerik Reporting Documentation
+page_title: Bindings 
 description: Bindings
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings
 tags: bindings

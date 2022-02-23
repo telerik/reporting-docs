@@ -1,6 +1,6 @@
 ---
 title: Selecting data from an OLAP cube with the CubeDataSource component
-page_title: Selecting data from an OLAP cube with the CubeDataSource component | for Telerik Reporting Documentation
+page_title: Selecting data from an OLAP cube with the CubeDataSource component 
 description: Selecting data from an OLAP cube with the CubeDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/selecting-data-from-an-olap-cube-with-the-cubedatasource-component
 tags: selecting,data,from,an,olap,cube,with,the,cubedatasource,component

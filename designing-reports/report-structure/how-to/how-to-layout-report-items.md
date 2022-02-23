@@ -1,6 +1,6 @@
 ---
 title: How to Layout Report Items
-page_title: How to Layout Report Items | for Telerik Reporting Documentation
+page_title: How to Layout Report Items 
 description: How to Layout Report Items
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items
 tags: how,to,layout,report,items

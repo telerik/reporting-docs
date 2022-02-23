@@ -1,6 +1,6 @@
 ---
 title: Setting a Theme (Using Implicit Styles)
-page_title: Setting a Theme (Using Implicit Styles) | for Telerik Reporting Documentation
+page_title: Setting a Theme (Using Implicit Styles) 
 description: Setting a Theme (Using Implicit Styles)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)
 tags: setting,a,theme,(using,implicit,styles)

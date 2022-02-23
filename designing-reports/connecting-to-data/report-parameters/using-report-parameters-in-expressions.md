@@ -1,6 +1,6 @@
 ---
 title: Using Report Parameters in Expressions
-page_title: Using Report Parameters in Expressions | for Telerik Reporting Documentation
+page_title: Using Report Parameters in Expressions 
 description: Using Report Parameters in Expressions
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/using-report-parameters-in-expressions
 tags: using,report,parameters,in,expressions

@@ -1,6 +1,6 @@
 ---
 title: Edit Action Dialog
-page_title: Edit Action Dialog | for Telerik Reporting Documentation
+page_title: Edit Action Dialog 
 description: Edit Action Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog
 tags: edit,action,dialog

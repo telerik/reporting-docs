@@ -1,6 +1,6 @@
 ---
 title: Working with Report Server Reports
-page_title: Working with Report Server Reports | for Telerik Reporting Documentation
+page_title: Working with Report Server Reports 
 description: Working with Report Server Reports
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports
 tags: working,with,report,server,reports

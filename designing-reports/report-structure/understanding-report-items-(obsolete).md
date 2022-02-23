@@ -1,6 +1,6 @@
 ---
 title: Understanding Report Items (obsolete)
-page_title: Understanding Report Items (obsolete) | for Telerik Reporting Documentation
+page_title: Understanding Report Items (obsolete) 
 description: Understanding Report Items (obsolete)
 slug: telerikreporting/designing-reports/report-structure/understanding-report-items-(obsolete)
 tags: understanding,report,items,(obsolete)

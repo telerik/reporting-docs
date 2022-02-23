@@ -1,6 +1,6 @@
 ---
 title: Chart (obsolete)
-page_title: Chart (obsolete) | for Telerik Reporting Documentation
+page_title: Chart (obsolete) 
 description: Chart (obsolete)
 slug: telerikreporting/designing-reports/report-structure/chart-(obsolete)
 tags: chart,(obsolete)

@@ -1,6 +1,6 @@
 ---
 title: PageInfo
-page_title: PageInfo | for Telerik Reporting Documentation
+page_title: PageInfo 
 description: PageInfo
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/pageinfo
 tags: pageinfo

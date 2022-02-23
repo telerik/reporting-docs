@@ -1,6 +1,6 @@
 ---
 title: Data Binding Problems
-page_title: Data Binding Problems | for Telerik Reporting Documentation
+page_title: Data Binding Problems 
 description: Data Binding Problems
 slug: telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-binding-problems
 tags: data,binding,problems

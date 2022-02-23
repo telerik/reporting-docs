@@ -1,6 +1,6 @@
 ---
 title: Configure the Report Engine Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview
 tags: overview

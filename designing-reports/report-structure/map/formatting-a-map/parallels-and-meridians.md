@@ -1,6 +1,6 @@
 ---
 title: Parallels and Meridians
-page_title: Parallels and Meridians | for Telerik Reporting Documentation
+page_title: Parallels and Meridians 
 description: Parallels and Meridians
 slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/parallels-and-meridians
 tags: parallels,and,meridians

@@ -1,6 +1,6 @@
 ---
 title: How to Set ReportSource for NavigateToReport action
-page_title: How to Set ReportSource for NavigateToReport action | for Telerik Reporting Documentation
+page_title: How to Set ReportSource for NavigateToReport action 
 description: How to Set ReportSource for NavigateToReport action
 slug: telerikreporting/designing-reports/report-sources/how-to-set-reportsource-for-navigatetoreport-action
 tags: how,to,set,reportsource,for,navigatetoreport,action

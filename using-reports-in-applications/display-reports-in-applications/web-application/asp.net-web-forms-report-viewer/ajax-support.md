@@ -1,6 +1,6 @@
 ---
 title: AJAX support
-page_title: AJAX support | for Telerik Reporting Documentation
+page_title: AJAX support 
 description: AJAX support
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support
 tags: ajax,support

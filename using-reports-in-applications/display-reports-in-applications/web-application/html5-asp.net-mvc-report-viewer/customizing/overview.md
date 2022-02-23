@@ -1,6 +1,6 @@
 ---
 title: Customizing Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/overview
 tags: overview

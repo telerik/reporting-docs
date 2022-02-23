@@ -1,6 +1,6 @@
 ---
 title: User Functions
-page_title: User Functions | for Telerik Reporting Documentation
+page_title: User Functions 
 description: User Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions
 tags: user,functions

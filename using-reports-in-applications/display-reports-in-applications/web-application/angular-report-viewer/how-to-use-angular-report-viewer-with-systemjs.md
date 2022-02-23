@@ -1,6 +1,6 @@
 ---
 title: How to Use Angular Report Viewer with SystemJS
-page_title: How to Use Angular Report Viewer with SystemJS | for Telerik Reporting Documentation
+page_title: How to Use Angular Report Viewer with SystemJS 
 description: How to Use Angular Report Viewer with SystemJS
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs
 tags: how,to,use,angular,report,viewer,with,systemjs

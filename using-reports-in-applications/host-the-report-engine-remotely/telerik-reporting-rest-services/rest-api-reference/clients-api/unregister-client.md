@@ -1,6 +1,6 @@
 ---
 title: Unregister Client
-page_title: Unregister Client | for Telerik Reporting Documentation
+page_title: Unregister Client 
 description: Unregister Client
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/unregister-client
 tags: unregister,client

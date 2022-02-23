@@ -1,6 +1,6 @@
 ---
 title: Connecting to an Entity Data Model with the EntityDataSource component
-page_title: Connecting to an Entity Data Model with the EntityDataSource component | for Telerik Reporting Documentation
+page_title: Connecting to an Entity Data Model with the EntityDataSource component 
 description: Connecting to an Entity Data Model with the EntityDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/connecting-to-an-entity-data-model-with-the-entitydatasource-component
 tags: connecting,to,an,entity,data,model,with,the,entitydatasource,component

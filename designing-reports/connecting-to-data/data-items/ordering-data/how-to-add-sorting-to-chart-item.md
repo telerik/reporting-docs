@@ -1,6 +1,6 @@
 ---
 title: How to Add sorting to Chart item
-page_title: How to Add sorting to Chart item | for Telerik Reporting Documentation
+page_title: How to Add sorting to Chart item 
 description: How to Add sorting to Chart item
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-chart-item
 tags: how,to,add,sorting,to,chart,item

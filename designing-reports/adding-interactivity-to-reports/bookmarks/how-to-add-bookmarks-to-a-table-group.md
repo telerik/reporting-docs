@@ -1,6 +1,6 @@
 ---
 title: How to Add Bookmarks to a Table group
-page_title: How to Add Bookmarks to a Table group | for Telerik Reporting Documentation
+page_title: How to Add Bookmarks to a Table group 
 description: How to Add Bookmarks to a Table group
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/bookmarks/how-to-add-bookmarks-to-a-table-group
 tags: how,to,add,bookmarks,to,a,table,group

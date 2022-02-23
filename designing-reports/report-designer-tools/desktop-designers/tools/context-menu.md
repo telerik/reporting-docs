@@ -1,6 +1,6 @@
 ---
 title: Context Menu
-page_title: Context Menu | for Telerik Reporting Documentation
+page_title: Context Menu 
 description: Context Menu
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu
 tags: context,menu

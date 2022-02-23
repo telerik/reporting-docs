@@ -1,6 +1,6 @@
 ---
 title: Map Types
-page_title: Map Types | for Telerik Reporting Documentation
+page_title: Map Types 
 description: Map Types
 slug: telerikreporting/designing-reports/report-structure/map/map-types
 tags: map,types

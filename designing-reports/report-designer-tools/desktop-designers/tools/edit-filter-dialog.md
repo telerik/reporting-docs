@@ -1,6 +1,6 @@
 ---
 title: Edit Filter Dialog
-page_title: Edit Filter Dialog | for Telerik Reporting Documentation
+page_title: Edit Filter Dialog 
 description: Edit Filter Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog
 tags: edit,filter,dialog

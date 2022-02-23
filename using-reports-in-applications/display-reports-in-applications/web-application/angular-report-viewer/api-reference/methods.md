@@ -1,6 +1,6 @@
 ---
 title: Methods
-page_title: Methods | for Telerik Reporting Documentation
+page_title: Methods 
 description: Methods
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods
 tags: methods

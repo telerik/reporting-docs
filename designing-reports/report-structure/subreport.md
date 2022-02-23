@@ -1,6 +1,6 @@
 ---
 title: SubReport
-page_title: SubReport | for Telerik Reporting Documentation
+page_title: SubReport 
 description: SubReport
 slug: telerikreporting/designing-reports/report-structure/subreport
 tags: subreport

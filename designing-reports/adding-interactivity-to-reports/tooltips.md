@@ -1,6 +1,6 @@
 ---
 title: Tooltips
-page_title: Tooltips | for Telerik Reporting Documentation
+page_title: Tooltips 
 description: Tooltips
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/tooltips
 tags: tooltips

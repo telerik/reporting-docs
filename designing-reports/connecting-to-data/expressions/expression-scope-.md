@@ -1,6 +1,6 @@
 ---
 title: Expression Scope 
-page_title: Expression Scope  | for Telerik Reporting Documentation
+page_title: Expression Scope  
 description: Expression Scope 
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-
 tags: expression,scope,

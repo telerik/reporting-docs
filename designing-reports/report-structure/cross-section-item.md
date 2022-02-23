@@ -1,6 +1,6 @@
 ---
 title: Cross-section Item
-page_title: Cross-section Item | for Telerik Reporting Documentation
+page_title: Cross-section Item 
 description: Cross-section Item
 slug: telerikreporting/designing-reports/report-structure/cross-section-item
 tags: cross-section,item

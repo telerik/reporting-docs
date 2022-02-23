@@ -1,6 +1,6 @@
 ---
 title: How to Create a Master-Detail Report Using a Table
-page_title: How to Create a Master-Detail Report Using a Table | for Telerik Reporting Documentation
+page_title: How to Create a Master-Detail Report Using a Table 
 description: How to Create a Master-Detail Report Using a Table
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-table
 tags: how,to,create,a,master-detail,report,using,a,table

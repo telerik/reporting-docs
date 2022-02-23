@@ -1,6 +1,6 @@
 ---
 title: Deploying Silverlight Application
-page_title: Deploying Silverlight Application | for Telerik Reporting Documentation
+page_title: Deploying Silverlight Application 
 description: Deploying Silverlight Application
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/deploying-silverlight-application
 tags: deploying,silverlight,application

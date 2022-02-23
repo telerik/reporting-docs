@@ -1,6 +1,6 @@
 ---
 title: How to Bind to a DataView
-page_title: How to Bind to a DataView | for Telerik Reporting Documentation
+page_title: How to Bind to a DataView 
 description: How to Bind to a DataView
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-dataview
 tags: how,to,bind,to,a,dataview

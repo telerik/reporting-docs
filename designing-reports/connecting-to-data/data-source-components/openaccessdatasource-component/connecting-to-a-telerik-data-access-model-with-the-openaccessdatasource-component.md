@@ -1,6 +1,6 @@
 ---
 title: Connecting to a Telerik Data Access Model with the OpenAccessDataSource component
-page_title: Connecting to a Telerik Data Access Model with the OpenAccessDataSource component | for Telerik Reporting Documentation
+page_title: Connecting to a Telerik Data Access Model with the OpenAccessDataSource component 
 description: Connecting to a Telerik Data Access Model with the OpenAccessDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/connecting-to-a-telerik-data-access-model-with-the-openaccessdatasource-component
 tags: connecting,to,a,telerik,data,access,model,with,the,openaccessdatasource,component

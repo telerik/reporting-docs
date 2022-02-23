@@ -1,6 +1,6 @@
 ---
 title: How to Bind to a BusinessObject
-page_title: How to Bind to a BusinessObject | for Telerik Reporting Documentation
+page_title: How to Bind to a BusinessObject 
 description: How to Bind to a BusinessObject
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject
 tags: how,to,bind,to,a,businessobject

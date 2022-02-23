@@ -1,6 +1,6 @@
 ---
 title: Styling and Appearance
-page_title: Styling and Appearance | for Telerik Reporting Documentation
+page_title: Styling and Appearance 
 description: Styling and Appearance
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/styling-and-appearance
 tags: styling,and,appearance

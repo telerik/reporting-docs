@@ -1,11 +1,11 @@
 ---
 title: ObjectDataSource Wizard
-page_title: ObjectDataSource Wizard | for Telerik Reporting Documentation
+page_title: ObjectDataSource Wizard 
 description: ObjectDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/objectdatasource-wizard
 tags: objectdatasource,wizard
 published: True
-position: 4
+position: 3
 ---
 
 # ObjectDataSource Wizard

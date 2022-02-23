@@ -1,6 +1,6 @@
 ---
 title: Interactive Action Events
-page_title: Interactive Action Events | for Telerik Reporting Documentation
+page_title: Interactive Action Events 
 description: Interactive Action Events
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/interactive-action-events
 tags: interactive,action,events

@@ -1,6 +1,6 @@
 ---
 title: Report Sources Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/report-sources/overview
 tags: overview

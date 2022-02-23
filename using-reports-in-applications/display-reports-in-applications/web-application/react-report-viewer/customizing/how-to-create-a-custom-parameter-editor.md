@@ -1,6 +1,6 @@
 ---
 title: How to Create a Custom Parameter Editor
-page_title: How to Create a Custom Parameter Editor | for Telerik Reporting Documentation
+page_title: How to Create a Custom Parameter Editor 
 description: How to Create a Custom Parameter Editor
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/how-to-create-a-custom-parameter-editor
 tags: how,to,create,a,custom,parameter,editor

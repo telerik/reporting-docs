@@ -1,6 +1,6 @@
 ---
 title: ASP.NET Web Forms Report Viewer Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview
 tags: overview

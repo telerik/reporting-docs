@@ -1,6 +1,6 @@
 ---
 title: clearReportSource()
-page_title: clearReportSource() | for Telerik Reporting Documentation
+page_title: clearReportSource() 
 description: clearReportSource()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/clearreportsource()
 tags: clearreportsource()

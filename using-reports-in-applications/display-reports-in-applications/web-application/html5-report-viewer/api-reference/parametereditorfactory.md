@@ -1,6 +1,6 @@
 ---
 title: parameterEditorFactory
-page_title: parameterEditorFactory | for Telerik Reporting Documentation
+page_title: parameterEditorFactory 
 description: parameterEditorFactory
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parametereditorfactory
 tags: parametereditorfactory

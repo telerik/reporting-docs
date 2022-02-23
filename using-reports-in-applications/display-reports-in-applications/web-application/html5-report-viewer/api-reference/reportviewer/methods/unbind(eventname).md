@@ -1,6 +1,6 @@
 ---
 title: unbind(eventName)
-page_title: unbind(eventName) | for Telerik Reporting Documentation
+page_title: unbind(eventName) 
 description: unbind(eventName)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/unbind(eventname)
 tags: unbind(eventname)

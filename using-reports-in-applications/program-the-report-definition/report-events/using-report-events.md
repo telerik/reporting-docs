@@ -1,6 +1,6 @@
 ---
 title: Using Report Events
-page_title: Using Report Events | for Telerik Reporting Documentation
+page_title: Using Report Events 
 description: Using Report Events
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-events
 tags: using,report,events

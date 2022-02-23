@@ -1,6 +1,6 @@
 ---
 title: Designing Reports Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/overview
 tags: overview

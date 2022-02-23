@@ -1,6 +1,6 @@
 ---
 title: renderingBegin(e, args)
-page_title: renderingBegin(e, args) | for Telerik Reporting Documentation
+page_title: renderingBegin(e, args) 
 description: renderingBegin(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)
 tags: renderingbegin(e,,args)

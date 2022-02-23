@@ -1,6 +1,6 @@
 ---
 title: Graph Item Actions
-page_title: Graph Item Actions | for Telerik Reporting Documentation
+page_title: Graph Item Actions 
 description: Graph Item Actions
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/graph-item-actions
 tags: graph,item,actions

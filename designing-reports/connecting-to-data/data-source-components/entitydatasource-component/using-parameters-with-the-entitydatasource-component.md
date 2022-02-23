@@ -1,6 +1,6 @@
 ---
 title: Using parameters with the EntityDataSource component
-page_title: Using parameters with the EntityDataSource component | for Telerik Reporting Documentation
+page_title: Using parameters with the EntityDataSource component 
 description: Using parameters with the EntityDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/using-parameters-with-the-entitydatasource-component
 tags: using,parameters,with,the,entitydatasource,component

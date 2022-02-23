@@ -1,6 +1,6 @@
 ---
 title: How to Connect to MySQL Database
-page_title: How to Connect to MySQL Database | for Telerik Reporting Documentation
+page_title: How to Connect to MySQL Database 
 description: How to Connect to MySQL Database
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/-how-to/how-to-connect-to-mysql-database
 tags: how,to,connect,to,mysql,database

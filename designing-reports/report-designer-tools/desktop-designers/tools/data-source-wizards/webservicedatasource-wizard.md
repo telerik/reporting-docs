@@ -1,6 +1,6 @@
 ---
 title: WebServiceDataSource Wizard
-page_title: WebServiceDataSource Wizard | for Telerik Reporting Documentation
+page_title: WebServiceDataSource Wizard 
 description: WebServiceDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard
 tags: webservicedatasource,wizard

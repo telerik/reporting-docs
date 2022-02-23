@@ -1,6 +1,6 @@
 ---
 title: How to Add sorting to Table item and Crosstab item
-page_title: How to Add sorting to Table item and Crosstab item | for Telerik Reporting Documentation
+page_title: How to Add sorting to Table item and Crosstab item 
 description: How to Add sorting to Table item and Crosstab item
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-table-item-and-crosstab-item
 tags: how,to,add,sorting,to,table,item,and,crosstab,item

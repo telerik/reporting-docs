@@ -1,6 +1,6 @@
 ---
 title: Design Time
-page_title: Design Time | for Telerik Reporting Documentation
+page_title: Design Time 
 description: Design Time
 slug: telerikreporting/troubleshooting/design-time
 tags: design,time

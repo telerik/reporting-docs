@@ -1,6 +1,6 @@
 ---
 title: Supported Types
-page_title: Supported Types | for Telerik Reporting Documentation
+page_title: Supported Types 
 description: Supported Types
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types
 tags: supported,types

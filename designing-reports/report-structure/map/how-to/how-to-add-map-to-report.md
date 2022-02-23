@@ -1,6 +1,6 @@
 ---
 title: How to Add Map to Report
-page_title: How to Add Map to Report | for Telerik Reporting Documentation
+page_title: How to Add Map to Report 
 description: How to Add Map to Report
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-map-to-report
 tags: how,to,add,map,to,report

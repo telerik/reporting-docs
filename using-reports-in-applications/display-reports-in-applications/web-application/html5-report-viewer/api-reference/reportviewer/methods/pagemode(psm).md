@@ -1,6 +1,6 @@
 ---
 title: pageMode(psm)
-page_title: pageMode(psm) | for Telerik Reporting Documentation
+page_title: pageMode(psm) 
 description: pageMode(psm)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode(psm)
 tags: pagemode(psm)

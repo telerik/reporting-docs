@@ -1,6 +1,6 @@
 ---
 title: XPS Device Information Settings
-page_title: XPS Device Information Settings | for Telerik Reporting Documentation
+page_title: XPS Device Information Settings 
 description: XPS Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/xps-device-information-settings
 tags: xps,device,information,settings

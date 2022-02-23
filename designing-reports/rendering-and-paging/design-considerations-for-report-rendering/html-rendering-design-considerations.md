@@ -1,6 +1,6 @@
 ---
 title: HTML Rendering Design Considerations
-page_title: HTML Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: HTML Rendering Design Considerations 
 description: HTML Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations
 tags: html,rendering,design,considerations

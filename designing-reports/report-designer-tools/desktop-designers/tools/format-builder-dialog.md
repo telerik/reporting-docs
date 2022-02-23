@@ -1,6 +1,6 @@
 ---
 title: Format Builder Dialog
-page_title: Format Builder Dialog | for Telerik Reporting Documentation
+page_title: Format Builder Dialog 
 description: Format Builder Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog
 tags: format,builder,dialog

@@ -1,6 +1,6 @@
 ---
 title: Search
-page_title: Search | for Telerik Reporting Documentation
+page_title: Search 
 description: Search
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search
 tags: search

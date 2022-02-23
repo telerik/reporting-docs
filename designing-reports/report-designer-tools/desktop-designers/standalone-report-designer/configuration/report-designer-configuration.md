@@ -1,6 +1,6 @@
 ---
 title: Report Designer Configuration
-page_title: Report Designer Configuration | for Telerik Reporting Documentation
+page_title: Report Designer Configuration 
 description: Report Designer Configuration
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration
 tags: report,designer,configuration

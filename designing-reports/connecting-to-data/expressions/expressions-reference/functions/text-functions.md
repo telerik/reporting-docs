@@ -1,6 +1,6 @@
 ---
 title: Text Functions
-page_title: Text Functions | for Telerik Reporting Documentation
+page_title: Text Functions 
 description: Text Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions
 tags: text,functions

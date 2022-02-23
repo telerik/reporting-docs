@@ -1,6 +1,6 @@
 ---
 title: Using Parameters with Data Source objects
-page_title: Using Parameters with Data Source objects | for Telerik Reporting Documentation
+page_title: Using Parameters with Data Source objects 
 description: Using Parameters with Data Source objects
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects
 tags: using,parameters,with,data,source,objects

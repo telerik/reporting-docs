@@ -1,6 +1,6 @@
 ---
 title: User Aggregate Functions
-page_title: User Aggregate Functions | for Telerik Reporting Documentation
+page_title: User Aggregate Functions 
 description: User Aggregate Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions
 tags: user,aggregate,functions

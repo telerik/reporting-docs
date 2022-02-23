@@ -1,6 +1,6 @@
 ---
 title: Reuse Data Source components across Reports
-page_title: Reuse Data Source components across Reports | for Telerik Reporting Documentation
+page_title: Reuse Data Source components across Reports 
 description: Reuse Data Source components across Reports
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/reuse-data-source-components-across-reports
 tags: reuse,data,source,components,across,reports

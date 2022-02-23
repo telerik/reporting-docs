@@ -1,6 +1,6 @@
 ---
 title: Creating the Graph
-page_title: Creating the Graph | for Telerik Reporting Documentation
+page_title: Creating the Graph 
 description: Creating the Graph
 slug: telerikreporting/getting-started/creating-the-graph
 tags: creating,the,graph

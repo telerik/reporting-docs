@@ -1,6 +1,6 @@
 ---
 title: JsonDataSource Wizard
-page_title: JsonDataSource Wizard | for Telerik Reporting Documentation
+page_title: JsonDataSource Wizard 
 description: JsonDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard
 tags: jsondatasource,wizard

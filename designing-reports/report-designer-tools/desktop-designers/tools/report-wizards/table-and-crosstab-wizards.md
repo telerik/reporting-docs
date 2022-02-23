@@ -1,6 +1,6 @@
 ---
 title: Table and CrossTab Wizards
-page_title: Table and CrossTab Wizards | for Telerik Reporting Documentation
+page_title: Table and CrossTab Wizards 
 description: Table and CrossTab Wizards
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards
 tags: table,and,crosstab,wizards

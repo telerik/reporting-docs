@@ -1,6 +1,6 @@
 ---
 title: pageCount()
-page_title: pageCount() | for Telerik Reporting Documentation
+page_title: pageCount() 
 description: pageCount()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagecount()
 tags: pagecount()

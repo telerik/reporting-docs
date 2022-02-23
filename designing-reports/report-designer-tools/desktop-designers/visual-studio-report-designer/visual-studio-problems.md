@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Problems
-page_title: Visual Studio Problems | for Telerik Reporting Documentation
+page_title: Visual Studio Problems 
 description: Visual Studio Problems
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems
 tags: visual,studio,problems

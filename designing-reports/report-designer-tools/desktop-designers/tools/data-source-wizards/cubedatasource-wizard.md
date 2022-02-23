@@ -1,6 +1,6 @@
 ---
 title: CubeDataSource Wizard
-page_title: CubeDataSource Wizard | for Telerik Reporting Documentation
+page_title: CubeDataSource Wizard 
 description: CubeDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard
 tags: cubedatasource,wizard

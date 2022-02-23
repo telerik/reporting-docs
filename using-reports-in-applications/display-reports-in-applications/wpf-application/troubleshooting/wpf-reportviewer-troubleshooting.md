@@ -1,6 +1,6 @@
 ---
 title: WPF ReportViewer Troubleshooting
-page_title: WPF ReportViewer Troubleshooting | for Telerik Reporting Documentation
+page_title: WPF ReportViewer Troubleshooting 
 description: WPF ReportViewer Troubleshooting
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/troubleshooting/wpf-reportviewer-troubleshooting
 tags: wpf,reportviewer,troubleshooting

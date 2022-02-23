@@ -1,6 +1,6 @@
 ---
 title: How to Connect to a SQL Server Database Using Text Query
-page_title: How to Connect to a SQL Server Database Using Text Query | for Telerik Reporting Documentation
+page_title: How to Connect to a SQL Server Database Using Text Query 
 description: How to Connect to a SQL Server Database Using Text Query
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/-how-to/how-to-connect-to-a-sql-server-database-using-text-query
 tags: how,to,connect,to,a,sql,server,database,using,text,query

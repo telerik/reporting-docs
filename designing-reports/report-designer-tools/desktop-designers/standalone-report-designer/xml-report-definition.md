@@ -1,6 +1,6 @@
 ---
 title: XML Report Definition
-page_title: XML Report Definition | for Telerik Reporting Documentation
+page_title: XML Report Definition 
 description: XML Report Definition
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/xml-report-definition
 tags: xml,report,definition

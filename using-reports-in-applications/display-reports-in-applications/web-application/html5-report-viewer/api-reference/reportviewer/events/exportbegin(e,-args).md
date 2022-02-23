@@ -1,6 +1,6 @@
 ---
 title: exportBegin(e, args)
-page_title: exportBegin(e, args) | for Telerik Reporting Documentation
+page_title: exportBegin(e, args) 
 description: exportBegin(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportbegin(e,-args)
 tags: exportbegin(e,,args)

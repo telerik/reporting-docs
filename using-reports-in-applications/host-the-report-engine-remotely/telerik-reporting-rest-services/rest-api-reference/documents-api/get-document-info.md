@@ -1,6 +1,6 @@
 ---
 title: Get Document Info
-page_title: Get Document Info | for Telerik Reporting Documentation
+page_title: Get Document Info 
 description: Get Document Info
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info
 tags: get,document,info

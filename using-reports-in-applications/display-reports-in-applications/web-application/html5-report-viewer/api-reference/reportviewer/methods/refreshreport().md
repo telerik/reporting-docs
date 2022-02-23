@@ -1,6 +1,6 @@
 ---
 title: refreshReport()
-page_title: refreshReport() | for Telerik Reporting Documentation
+page_title: refreshReport() 
 description: refreshReport()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/refreshreport()
 tags: refreshreport()

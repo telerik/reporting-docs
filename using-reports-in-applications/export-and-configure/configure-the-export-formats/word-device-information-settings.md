@@ -1,6 +1,6 @@
 ---
 title: Word Device Information Settings
-page_title: Word Device Information Settings | for Telerik Reporting Documentation
+page_title: Word Device Information Settings 
 description: Word Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings
 tags: word,device,information,settings

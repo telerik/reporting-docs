@@ -1,6 +1,6 @@
 ---
 title: Installation
-page_title: Installation | for Telerik Reporting Documentation
+page_title: Installation 
 description: Installation
 slug: telerikreporting/troubleshooting/installation
 tags: installation

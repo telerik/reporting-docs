@@ -1,6 +1,6 @@
 ---
 title: Blogs
-page_title: Blogs | for Telerik Reporting Documentation
+page_title: Blogs 
 description: Blogs
 slug: telerikreporting/for-more-help/blogs
 tags: blogs

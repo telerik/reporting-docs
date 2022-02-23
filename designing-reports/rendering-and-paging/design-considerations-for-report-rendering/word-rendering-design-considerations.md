@@ -1,6 +1,6 @@
 ---
 title: Word Rendering Design Considerations
-page_title: Word Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: Word Rendering Design Considerations 
 description: Word Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/word-rendering-design-considerations
 tags: word,rendering,design,considerations

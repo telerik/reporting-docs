@@ -1,6 +1,6 @@
 ---
 title: Excel Rendering Design Considerations
-page_title: Excel Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: Excel Rendering Design Considerations 
 description: Excel Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations
 tags: excel,rendering,design,considerations

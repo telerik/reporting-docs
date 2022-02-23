@@ -10,11 +10,9 @@ position: 0
 
 # Polar Charts Overview
 
+A polar chart displays a series as a set of points that are grouped by category on a 360-degree circle. Values are represented by the distance of the point as measured from the center of the circle. The farther the       point is from the center, the greater is its value. Category labels are displayed on the perimeter of the chart. 
 
-
-A polar chart displays a series as a set of points that are grouped by category on a 360-degree circle.       Values are represented by the distance of the point as measured from the center of the circle. The farther the       point is from the center, the greater is its value. Category labels are displayed on the perimeter of the chart.        
-
-The following image displays a Rose polar chart:  
+The following image displays a Rose polar chart: 
 
   ![Polar Chart\Polar Chart](images/Graph/PolarChart.png)
 
@@ -33,10 +31,6 @@ The following image displays a Rose polar chart:
 
 # See Also
 
-
- 
-
 * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
 
 * [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)
-

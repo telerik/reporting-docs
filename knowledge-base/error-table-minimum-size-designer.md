@@ -29,7 +29,7 @@ Trying to set a width or height sizing of less than 10px on table/crosstab/list 
 
 ## Possible Causes 
   
-- The report contains a [Table/Cross/List item](../table-working-with-table-cross-table-list-items) with Width or/and Height properties  set to 0.   
+- The report contains a [Table/Cross/List item]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}) with Width or/and Height properties  set to 0.   
  Setting Table/CrossTab/List item's size properties to zero values in Report Designers was possible in versions prior to [R3 2016 SP1](../release-history/telerik-reporting-r3-2016-sp1-(version-10-2-16-1025)). Upgrading the report from earlier version to **R3 2016 SP1** will result in the mentioned error in the design view if the report contained Table/Cross/List item with **zero** width or/and height.  
   
 - Table/Cross/List item was created programmatically and its width or/and height was set to 0.

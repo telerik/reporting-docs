@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-By design, the borders of the [Table item](../table-working-with-table-cross-table-list-items) will be drawn to the end of the page to indicate that the table is continued to the next page.
+By design, the borders of the [Table item]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}) will be drawn to the end of the page to indicate that the table is continued to the next page.
 When the table is paged vertically the vertical borders will be extended to the bottom of the page. When the table is paged horizontally 
 the horizontal borders will be extended to the right end of the page.
 

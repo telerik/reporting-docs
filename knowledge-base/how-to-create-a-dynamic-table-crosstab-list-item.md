@@ -1,9 +1,11 @@
 ---
-title: How to Create a Dynamic Table/Crosstab/List item
-description: How to Make a Table/Crosstab/List Report Item Dynamic.
-type: how-to
-page_title: How to Set Up a Dynamic Table/Crosstab/List item
+title: How to Create a Dynamic Table, Crosstab, or List Item
+page_title: How to Set Up a Dynamic Table, Crosstab, or List Item
+description: "Learn how to make a Table, Crosstab, or List report item dynamic when working with Telerik Reporting."
 slug: how-to-create-a-dynamic-table-crosstab-list-item
+tags: telerik, reporting, how, to, create, make, set, up, dynamic, table, list, crosstab, item
+type: how-to
+published: True
 res_type: kb
 ---
 
@@ -13,7 +15,7 @@ res_type: kb
     <tbody>
 	    <tr>
 	    	<td>Product Version</td>
-	    	<td>R1 2017 and newer</td>
+	    	<td>R1 2017 and later</td>
 	    </tr>
 	    <tr>
 	    	<td>Product</td>
@@ -25,11 +27,11 @@ res_type: kb
 	    </tr>
     </tbody>
 </table>
-  
+
 ## Description
 
-In different scenarios, data may not an have exact schema to be used for designing a report. In such cases, you can use the fact that the [Table/List/Crosstab item](../table-working-with-table-cross-table-list-items) can visualize 3D data.
-  
+In different scenarios, data may not an have exact schema to be used for designing a report. In such cases, you can use the fact that the [Table/List/Crosstab item]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}) can visualize 3D data.
+
 ## Solution
 
 The idea is to create a data source describing the data in terms of columns, rows and content, which should result in a flattened tabular representation of data like:
@@ -48,9 +50,9 @@ Then, you can add a Table/List/Crosstab item with dynamic row and column groups 
 
 ## Notes
 
-- The attached demo report illustrates the settings. The report can be previewed in the [Standalone Report Designer](../standalone-report-designer) of Telerik Reporting R1 2017 and newer.
+- The attached demo report illustrates the settings. The report can be previewed in the [Standalone Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview %}) of Telerik Reporting R1 2017 and later.
 
-- The scenarios, requiring you to create or modify a report at run-time, are discussed in [Modifying or Creating a report at Run-Time](./modifying-or-creating-a-report-at-run-time).
+- The scenarios, requiring you to create or modify a report at run-time, are discussed in [Modifying or Creating a report at Run-Time]({% slug modifying-or-creating-a-report-at-run-time %}).
 
 ## Additional Resources
 
@@ -58,8 +60,8 @@ Then, you can add a Table/List/Crosstab item with dynamic row and column groups 
 
 ## See Also
 
-[Basic Concepts](../table-understanding-table-items)
+[Basic Concepts]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts %})
 
-[Understanding Crosstab Areas](../table-understanding-crosstab-areas) 
+[Understanding Crosstab Areas]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas %})
 
-[Understanding table Cells, Rows and Columns](../table-understanding-cells-rows-columns)
+[Understanding table Cells, Rows and Columns]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns %})

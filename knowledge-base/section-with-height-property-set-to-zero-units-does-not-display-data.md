@@ -15,7 +15,7 @@ res_type: kb
 	</tr>
 	<tr>
 		<td>Version</td>
-		<td>R3 2016 and newer</td>
+		<td>R3 2016 and later</td>
 	</tr>
 </table> 
 

@@ -28,7 +28,7 @@ The __```<dpiAware>```__ section has only one attribute: __dpiAwareness__.      
 
 The default value of the __dpiAwareness__ attribute is *PROCESS_DPI_UNAWARE_NOT_SET*.           The current process's DPI awareness is set using the native Windows API function            [SetProcessDpiAwareness](https://msdn.microsoft.com/en-us/library/windows/desktop/dn302122(v=vs.85).aspx).           It is important to note that once the process' DPI awareness is set, every next function call will fail with __E_ACCESSDENIED__ result.         
 
-> This API function is available on Windows Vista and newer operating systems. If Telerik Reporting is used on a machine with older OS, the DPI awareness would not be set and report rendering might produce unexpected results.           
+> This API function is available on Windows Vista and later operating systems. If Telerik Reporting is used on a machine with older OS, the DPI awareness would not be set and report rendering might produce unexpected results.           
 
 
 __Example__ 

@@ -1,11 +1,11 @@
 ---
 title: WPF Report viewer is throwing exception "Could not load file or assembly 'Telerik.Windows.Controls.Navigation, Version=2018.2.620.40"
-description: 
+description:
 type: how-to
 page_title: WPF Report viewer is throwing exception
 slug: wpf-report-viewer-is-throwing-exception-could-not-load-assembly-45
-position: 
-tags: 
+position:
+tags:
 ticketid: 1176987
 res_type: kb
 ---
@@ -17,8 +17,8 @@ res_type: kb
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
 	<tr>
-		<td>Viewer</td>
-		<td>WPF Report Viewer</td>
+		<td>Report Viewers</td>
+		<td>WPF</td>
 	</tr>
 </table>
 

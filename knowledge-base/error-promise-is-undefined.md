@@ -16,7 +16,7 @@ res_type: kb
 	</tr>
 	<tr>
 		<td>Version</td>
-		<td>R2 2017 and newer</td>
+		<td>R2 2017 and later</td>
 	</tr>
 	<tr>
 		<td>Report Viewer</td>

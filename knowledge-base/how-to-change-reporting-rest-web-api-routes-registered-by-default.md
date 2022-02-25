@@ -13,7 +13,7 @@ res_type: kb
     <tbody>
 	    <tr>
 	    	<td>Product Version</td>
-	    	<td>R3 SP1 2017 and newer</td>
+	    	<td>R3 SP1 2017 and later</td>
 	    </tr>
 	    <tr>
 	    	<td>Product</td>

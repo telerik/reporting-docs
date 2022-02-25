@@ -1,6 +1,6 @@
 ---
 title: How to Add a Drilldown/Toggle Visibility Action
-page_title: How to Add a Drilldown/Toggle Visibility Action | for Telerik Reporting Documentation
+page_title: How to Add a Drilldown/Toggle Visibility Action 
 description: How to Add a Drilldown/Toggle Visibility Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action
 tags: how,to,add,a,drilldown/toggle,visibility,action

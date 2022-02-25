@@ -1,6 +1,6 @@
 ---
 title: Page Functions
-page_title: Page Functions | for Telerik Reporting Documentation
+page_title: Page Functions 
 description: Page Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions
 tags: page,functions

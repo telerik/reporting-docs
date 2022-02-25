@@ -1,6 +1,6 @@
 ---
 title: Design Considerations for Report Item Layout
-page_title: Design Considerations for Report Item Layout | for Telerik Reporting Documentation
+page_title: Design Considerations for Report Item Layout 
 description: Design Considerations for Report Item Layout
 slug: telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout
 tags: design,considerations,for,report,item,layout
@@ -24,7 +24,7 @@ As of __[Telerik Reporting R3 2016](http://www.telerik.com/support/whats-new/rep
 > Report items can grow vertically even when their __CanGrow__ property is set to false. This behavior can be observed when the report item height is smaller than the report item font height, which causes the item to grow vertically in order to accommodate at least a single line of text with the specified font style. 
 
 
-> Page sections do not collapse or expand based on their content. For more details, check [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})(Page Header and Footer sections). 
+> Page sections do not collapse or expand based on their content. For more details, check [Understanding Rendering Behaviors(Page Header and Footer sections)]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}#page-header-and-footer-sections). 
 
 
 ## Visibility
@@ -41,9 +41,9 @@ The following visibility rules apply when rendering report items (red lines defi
 
 * If Item1 is hidden, all items right to Item3 would remain in place. 
 
-* If Item1 and Item3 are hidden, Item2 will move to the left to fill the space. Renderers maintain the               space between report items that you define in the report layout.             
+* If Item1 and Item3 are hidden, Item2 will move to the left to fill the space. Renderers maintain the space between report items that you define in the report layout.             
 
-* If the visibility of a report item and its contents can be switched by clicking another report item, then               pagination changes to accommodate the report item and its contents only when it is initially displayed.             
+* If the visibility of a report item and its contents can be switched by clicking another report item, then pagination changes to accommodate the report item and its contents only when it is initially displayed.             
 
 * If a report item is placed in a Panel, its visibility does not affect the original layout of items outside the Panel. 
 
@@ -51,7 +51,7 @@ The following visibility rules apply when rendering report items (red lines defi
 
 Report items in a report can be kept together on a single page by setting the KeepTogether property. For keeping items in a report group or table group together, set [GroupKeepTogether](/reporting/api/Telerik.Reporting.Group#Telerik_Reporting_Group_GroupKeepTogether) property. Report items are always rendered on the same page if the report item is smaller in size than the usable page area. If a report item does not completely fit on the page on which it starts, a page break is inserted before the report item, forcing it to the next page. For logical page renderers, the page grows to accommodate the report item. 
 
-For more detail about the result of keeping items together, check [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})(Paging and Keep Together). 
+For more detail about the result of keeping items together, check [Understanding Pagination(Paging and Keep Together)]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}#paging-and-keep-together). 
 
 ## Rendering order of report items and borders
 
@@ -73,14 +73,13 @@ This rendering behavior will affect how report item borders are rendered accordi
 
   ![Border Overlapping](images/BorderOverlapping.png)
 
-> Setting __BorderStyle__ and __BorderWidth__ properties of report item to conflicting values (for example: BorderStyle=Solid, BorderWidth: 0px) can produce unexpected result in some rendering formats. To hide the border, set BorderStyle=None. Otherwise, the width of the border needs to be set greater than 0. 
+>important Setting __BorderStyle__ and __BorderWidth__ properties of report item to conflicting values (for example: BorderStyle=Solid, BorderWidth: 0px) can produce unexpected result in some rendering formats. To hide the border, set BorderStyle=None. Otherwise, the width of the border needs to be set greater than 0. 
 
-
-
-> Some borders and lines might be thicker or disappear on report's preview. The reason for this is that GDI component installed on the machine uses anti-aliasing that softens sharp edges so they appear less jagged when rendered on the display. 
+>note Some borders and lines might be thicker or disappear on report's preview. The reason for this is that GDI component installed on the machine uses anti-aliasing that softens sharp edges so they appear less jagged when rendered on the display. 
 >
->The GDI component works together with the display driver software to determine which pixels will be turned on to show the line on a particular display. That is why some lines can be missing or be thinner/thicker when zoom is applied. The general suggestion is to set the border/line width to minimum 2px which can be rendered on a machine with 96dpi resolution. Using pixels instead of points is also recommended as a more media oriented unit. 
-
+>The GDI component works together with the display driver software to determine which pixels will be turned on to show the line on a particular display. That is why some lines can be missing or be thinner/thicker when zoom is applied. 
+>
+>The general suggestion is to set the border/line width to minimum 2px which can be rendered on a machine with 96dpi resolution. Using pixels instead of points is also recommended as a more media oriented unit. 
 
 # See Also
 

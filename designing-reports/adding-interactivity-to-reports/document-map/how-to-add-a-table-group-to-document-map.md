@@ -1,6 +1,6 @@
 ---
 title: How to Add a Table group to Document Map
-page_title: How to Add a Table group to Document Map | for Telerik Reporting Documentation
+page_title: How to Add a Table group to Document Map 
 description: How to Add a Table group to Document Map
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/how-to-add-a-table-group-to-document-map
 tags: how,to,add,a,table,group,to,document,map

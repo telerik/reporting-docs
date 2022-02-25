@@ -1,12 +1,20 @@
 ---
 title: scale(scale)
-page_title: scale(scale) | for Telerik Reporting Documentation
+page_title: scale(scale) 
 description: scale(scale)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/scale(scale)
 tags: scale(scale)
 published: True
 position: 15
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # scale(scale)
 

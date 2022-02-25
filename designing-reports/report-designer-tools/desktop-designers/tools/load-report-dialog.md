@@ -1,6 +1,6 @@
 ---
 title: Load Report Dialog
-page_title: Load Report Dialog | for Telerik Reporting Documentation
+page_title: Load Report Dialog 
 description: Load Report Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog
 tags: load,report,dialog

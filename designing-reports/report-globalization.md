@@ -1,6 +1,6 @@
 ---
 title: Report Globalization
-page_title: Report Globalization | for Telerik Reporting Documentation
+page_title: Report Globalization 
 description: Report Globalization
 slug: telerikreporting/designing-reports/report-globalization
 tags: report,globalization

@@ -1,6 +1,6 @@
 ---
 title: Using HTML from Telerik RadEditor
-page_title: Using HTML from Telerik RadEditor | for Telerik Reporting Documentation
+page_title: Using HTML from Telerik RadEditor 
 description: Using HTML from Telerik RadEditor
 slug: telerikreporting/designing-reports/report-structure/htmltextbox/using-html-from-telerik-radeditor
 tags: using,html,from,telerik,radeditor

@@ -1,6 +1,6 @@
 ---
 title: How to Set ReportSource for SubReport
-page_title: How to Set ReportSource for SubReport | for Telerik Reporting Documentation
+page_title: How to Set ReportSource for SubReport 
 description: How to Set ReportSource for SubReport
 slug: telerikreporting/designing-reports/report-sources/how-to-set-reportsource-for-subreport
 tags: how,to,set,reportsource,for,subreport

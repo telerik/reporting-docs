@@ -1,6 +1,6 @@
 ---
 title: Telerik Reporting WCF Service Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview
 tags: overview

@@ -1,6 +1,6 @@
 ---
 title: Drilldown Report Action
-page_title: Drilldown Report Action | for Telerik Reporting Documentation
+page_title: Drilldown Report Action 
 description: Drilldown Report Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action
 tags: drilldown,report,action

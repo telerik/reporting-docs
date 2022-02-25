@@ -1,12 +1,20 @@
 ---
 title: updateUi(e)
-page_title: updateUi(e) | for Telerik Reporting Documentation
+page_title: updateUi(e) 
 description: updateUi(e)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e)
 tags: updateui(e)
 published: True
 position: 11
 ---
+<style>
+table th:first-of-type {
+    width: 15%;
+}
+table th:nth-of-type(2) {
+    width: 85%;
+}
+</style>
 
 # updateUi(e)
 

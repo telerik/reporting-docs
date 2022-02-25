@@ -1,6 +1,6 @@
 ---
 title: How to Use Blazor Report Viewer
-page_title: How to Use Blazor Report Viewer | for Telerik Reporting Documentation
+page_title: How to Use Blazor Report Viewer 
 description: How to Use Blazor Report Viewer
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer
 tags: how,to,use,blazor,report,viewer

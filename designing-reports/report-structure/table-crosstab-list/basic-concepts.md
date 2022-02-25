@@ -1,6 +1,6 @@
 ---
 title: Basic Concepts
-page_title: Basic Concepts | for Telerik Reporting Documentation
+page_title: Basic Concepts 
 description: Basic Concepts
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts
 tags: basic,concepts

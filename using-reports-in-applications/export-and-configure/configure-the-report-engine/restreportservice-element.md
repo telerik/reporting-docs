@@ -1,6 +1,6 @@
 ---
 title: restReportService Element
-page_title: restReportService Element | for Telerik Reporting Documentation
+page_title: restReportService Element 
 description: restReportService Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element
 tags: restreportservice,element

@@ -1,6 +1,6 @@
 ---
 title: Import Report Wizard
-page_title: Import Report Wizard | for Telerik Reporting Documentation
+page_title: Import Report Wizard 
 description: Import Report Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard
 tags: import,report,wizard

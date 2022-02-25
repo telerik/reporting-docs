@@ -1,6 +1,6 @@
 ---
 title: Using Parameters with the SqlDataSource component
-page_title: Using Parameters with the SqlDataSource component | for Telerik Reporting Documentation
+page_title: Using Parameters with the SqlDataSource component 
 description: Using Parameters with the SqlDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component
 tags: using,parameters,with,the,sqldatasource,component

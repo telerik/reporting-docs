@@ -1,6 +1,6 @@
 ---
 title: Configuring the database connectivity with the EntityDataSource component
-page_title: Configuring the database connectivity with the EntityDataSource component | for Telerik Reporting Documentation
+page_title: Configuring the database connectivity with the EntityDataSource component 
 description: Configuring the database connectivity with the EntityDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/configuring-the-database-connectivity-with-the-entitydatasource-component
 tags: configuring,the,database,connectivity,with,the,entitydatasource,component

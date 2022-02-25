@@ -1,6 +1,6 @@
 ---
 title: Using parameters with the OpenAccessDataSource component
-page_title: Using parameters with the OpenAccessDataSource component | for Telerik Reporting Documentation
+page_title: Using parameters with the OpenAccessDataSource component 
 description: Using parameters with the OpenAccessDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/using-parameters-with-the-openaccessdatasource-component
 tags: using,parameters,with,the,openaccessdatasource,component

@@ -1,6 +1,6 @@
 ---
 title: Understanding Rendering Behaviors
-page_title: Understanding Rendering Behaviors | for Telerik Reporting Documentation
+page_title: Understanding Rendering Behaviors 
 description: Understanding Rendering Behaviors
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors
 tags: understanding,rendering,behaviors

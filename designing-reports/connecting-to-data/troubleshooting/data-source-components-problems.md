@@ -1,6 +1,6 @@
 ---
 title: Data Source Components Problems
-page_title: Data Source Components Problems | for Telerik Reporting Documentation
+page_title: Data Source Components Problems 
 description: Data Source Components Problems
 slug: telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems
 tags: data,source,components,problems

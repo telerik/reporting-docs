@@ -1,6 +1,6 @@
 ---
 title: Keep Client Alive
-page_title: Keep Client Alive | for Telerik Reporting Documentation
+page_title: Keep Client Alive 
 description: Keep Client Alive
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/keep-client-alive
 tags: keep,client,alive

@@ -1,12 +1,20 @@
 ---
 title: authenticationToken(token)
-page_title: authenticationToken(token) | for Telerik Reporting Documentation
+page_title: authenticationToken(token) 
 description: authenticationToken(token)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)
 tags: authenticationtoken(token)
 published: True
 position: 3
 ---
+<style>
+table th:first-of-type {
+    width: 15%;
+}
+table th:nth-of-type(2) {
+    width: 85%;
+}
+</style>
 
 # authenticationToken(token)
 

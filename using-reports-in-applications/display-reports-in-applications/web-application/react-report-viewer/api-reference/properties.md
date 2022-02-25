@@ -1,12 +1,23 @@
 ---
 title: Properties
-page_title: Properties | for Telerik Reporting Documentation
+page_title: Properties 
 description: Properties
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/properties
 tags: properties
 published: True
 position: 3
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 25%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+</style>
 
 # Properties
 

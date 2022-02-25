@@ -1,6 +1,6 @@
 ---
 title: Export Report in Silverlight
-page_title: Export Report in Silverlight | for Telerik Reporting Documentation
+page_title: Export Report in Silverlight 
 description: Export Report in Silverlight
 slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/export-report-in-silverlight
 tags: export,report,in,silverlight

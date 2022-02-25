@@ -1,6 +1,6 @@
 ---
 title: Configuring Cache
-page_title: Configuring Cache | for Telerik Reporting Documentation
+page_title: Configuring Cache 
 description: Configuring Cache
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache
 tags: configuring,cache

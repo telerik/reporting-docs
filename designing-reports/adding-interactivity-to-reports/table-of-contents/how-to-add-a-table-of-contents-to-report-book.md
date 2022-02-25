@@ -1,6 +1,6 @@
 ---
 title: How to Add a Table of Contents to Report Book
-page_title: How to Add a Table of Contents to Report Book | for Telerik Reporting Documentation
+page_title: How to Add a Table of Contents to Report Book 
 description: How to Add a Table of Contents to Report Book
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book
 tags: how,to,add,a,table,of,contents,to,report,book

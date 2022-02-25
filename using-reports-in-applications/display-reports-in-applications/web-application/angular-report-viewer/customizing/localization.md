@@ -1,6 +1,6 @@
 ---
 title: Localization
-page_title: Localization | for Telerik Reporting Documentation
+page_title: Localization 
 description: Localization
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization
 tags: localization
@@ -16,15 +16,15 @@ The article elaborates on how to localize the messages displayed by the Angular 
     
       ````js
 export class StringResources {
-    static english = {
-        loadingReport: 'Loading...',
-        // override other string resources here
-    }
-    static japanese = {
-        loadingReport: 'ちょっと、まってください...',
-        // override other string resources here
-    }
-    // override string resources for other cultures here
+		static english = {
+			loadingReport: 'Loading...',
+			// override other string resources here
+		}
+		static japanese = {
+			loadingReport: 'ちょっと、まってください...',
+			// override other string resources here
+		}
+		// override string resources for other cultures here
 }
 ````
 
@@ -44,15 +44,15 @@ import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-v
 import { StringResources } from './stringResources';
 ...
 export class AppComponent implements AfterViewInit {
-  @ViewChild('viewer1') viewer: TelerikReportViewerComponent;
-  ngAfterViewInit(): void {
-    const language = navigator.language;
-    let resources = StringResources.english; // default
-    if(language === 'ja-JP'){
-      resources = StringResources.japanese;
-    }
-    this.viewer.viewerObject.stringResources = Object.assign(this.viewer.viewerObject.stringResources, resources);
-  }
+	  @ViewChild('viewer1') viewer: TelerikReportViewerComponent;
+	  ngAfterViewInit(): void {
+		const language = navigator.language;
+		let resources = StringResources.english; // default
+		if(language === 'ja-JP'){
+		  resources = StringResources.japanese;
+		}
+		this.viewer.viewerObject.stringResources = Object.assign(this.viewer.viewerObject.stringResources, resources);
+	  }
 }
 ````
 

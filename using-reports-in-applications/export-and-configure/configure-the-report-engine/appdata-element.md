@@ -1,6 +1,6 @@
 ---
 title: appData Element
-page_title: appData Element | for Telerik Reporting Documentation
+page_title: appData Element 
 description: appData Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/appdata-element
 tags: appdata,element

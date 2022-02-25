@@ -1,6 +1,6 @@
 ---
 title: accessibilityKeyMap()
-page_title: accessibilityKeyMap() | for Telerik Reporting Documentation
+page_title: accessibilityKeyMap() 
 description: accessibilityKeyMap()
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap()
 tags: accessibilitykeymap()

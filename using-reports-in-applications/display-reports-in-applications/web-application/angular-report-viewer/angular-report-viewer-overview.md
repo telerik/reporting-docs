@@ -1,6 +1,6 @@
 ---
 title: Angular Report Viewer Overview
-page_title: Angular Report Viewer Overview | for Telerik Reporting Documentation
+page_title: Angular Report Viewer Overview 
 description: Angular Report Viewer Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview
 tags: angular,report,viewer,overview

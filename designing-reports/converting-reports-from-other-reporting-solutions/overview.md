@@ -1,6 +1,6 @@
 ---
 title: Converting reports from other reporting solutions Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview
 tags: overview

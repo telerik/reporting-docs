@@ -1,6 +1,6 @@
 ---
 title: Report Structure Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/report-structure/overview
 tags: overview
@@ -30,6 +30,14 @@ When a new Telerik Report is added to a project, it is initially divided into th
 
 The following table presents a summary of the section types and their usage (in the default order of appearance in the report document):
 
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 80%;
+}
+</style>
 
 | Section Type | Description |
 | ------ | ------ |

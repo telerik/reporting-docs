@@ -1,6 +1,6 @@
 ---
 title: Get Available Document Formats
-page_title: Get Available Document Formats | for Telerik Reporting Documentation
+page_title: Get Available Document Formats 
 description: Get Available Document Formats
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats
 tags: get,available,document,formats

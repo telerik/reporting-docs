@@ -1,6 +1,6 @@
 ---
 title: Drillthrough Report Action
-page_title: Drillthrough Report Action | for Telerik Reporting Documentation
+page_title: Drillthrough Report Action 
 description: Drillthrough Report Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action
 tags: drillthrough,report,action

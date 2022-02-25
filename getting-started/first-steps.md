@@ -1,6 +1,6 @@
 ---
 title: First Steps
-page_title: First Steps | for Telerik Reporting Documentation
+page_title: First Steps 
 description: First Steps
 slug: telerikreporting/getting-started/first-steps
 tags: first,steps

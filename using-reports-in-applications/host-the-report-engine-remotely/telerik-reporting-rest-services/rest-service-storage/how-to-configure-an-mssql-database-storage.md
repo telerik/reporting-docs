@@ -1,6 +1,6 @@
 ---
 title: How to Configure an MSSQL Database Storage
-page_title: How to Configure an MSSQL Database Storage | for Telerik Reporting Documentation
+page_title: How to Configure an MSSQL Database Storage 
 description: How to Configure an MSSQL Database Storage
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage
 tags: how,to,configure,an,mssql,database,storage

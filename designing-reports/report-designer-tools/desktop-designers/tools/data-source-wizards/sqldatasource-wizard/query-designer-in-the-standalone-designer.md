@@ -1,6 +1,6 @@
 ---
 title: Query Designer in the Standalone Designer
-page_title: Query Designer in the Standalone Designer | for Telerik Reporting Documentation
+page_title: Query Designer in the Standalone Designer 
 description: Query Designer in the Standalone Designer
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer
 tags: query,designer,in,the,standalone,designer

@@ -1,6 +1,6 @@
 ---
 title: .NET Core Support
-page_title: .NET Core Support | for Telerik Reporting Documentation
+page_title: .NET Core Support 
 description: .NET Core Support
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
 tags: .net,core,support

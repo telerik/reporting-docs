@@ -1,6 +1,6 @@
 ---
 title: How to Add Bookmarks to a Report group
-page_title: How to Add Bookmarks to a Report group | for Telerik Reporting Documentation
+page_title: How to Add Bookmarks to a Report group 
 description: How to Add Bookmarks to a Report group
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/bookmarks/how-to-add-bookmarks-to-a-report-group
 tags: how,to,add,bookmarks,to,a,report,group

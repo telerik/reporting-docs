@@ -1,6 +1,6 @@
 ---
 title: RTF Device Information Settings
-page_title: RTF Device Information Settings | for Telerik Reporting Documentation
+page_title: RTF Device Information Settings 
 description: RTF Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/rtf-device-information-settings
 tags: rtf,device,information,settings

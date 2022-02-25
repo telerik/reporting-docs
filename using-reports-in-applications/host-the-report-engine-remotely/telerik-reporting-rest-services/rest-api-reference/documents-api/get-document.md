@@ -1,6 +1,6 @@
 ---
 title: Get Document
-page_title: Get Document | for Telerik Reporting Documentation
+page_title: Get Document 
 description: Get Document
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document
 tags: get,document

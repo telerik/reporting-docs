@@ -1,6 +1,6 @@
 ---
 title: processing Element
-page_title: processing Element | for Telerik Reporting Documentation
+page_title: processing Element 
 description: processing Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element
 tags: processing,element

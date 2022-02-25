@@ -1,6 +1,6 @@
 ---
 title: Performance Considerations
-page_title: Performance Considerations | for Telerik Reporting Documentation
+page_title: Performance Considerations 
 description: Performance Considerations
 slug: telerikreporting/designing-reports/performance-considerations
 tags: performance,considerations

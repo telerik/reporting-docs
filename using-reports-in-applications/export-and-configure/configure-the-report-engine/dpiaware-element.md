@@ -1,6 +1,6 @@
 ---
 title: dpiAware Element
-page_title: dpiAware Element | for Telerik Reporting Documentation
+page_title: dpiAware Element 
 description: dpiAware Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/dpiaware-element
 tags: dpiaware,element

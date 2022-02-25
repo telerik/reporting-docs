@@ -1,6 +1,6 @@
 ---
 title: How to Self Host the Service
-page_title: How to Self Host the Service | for Telerik Reporting Documentation
+page_title: How to Self Host the Service 
 description: How to Self Host the Service
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-self-host-the-service
 tags: how,to,self,host,the,service

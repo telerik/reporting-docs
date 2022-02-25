@@ -1,6 +1,6 @@
 ---
 title: CsvDataSource Wizard
-page_title: CsvDataSource Wizard | for Telerik Reporting Documentation
+page_title: CsvDataSource Wizard 
 description: CsvDataSource Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard
 tags: csvdatasource,wizard

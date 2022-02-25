@@ -1,6 +1,6 @@
 ---
 title: Search in a Document
-page_title: Search in a Document | for Telerik Reporting Documentation
+page_title: Search in a Document 
 description: Search in a Document
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/search-in-a-document
 tags: search,in,a,document

@@ -1,15 +1,22 @@
 ---
 title: data attributes
-page_title: data attributes | for Telerik Reporting Documentation
+page_title: data attributes 
 description: data attributes
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes
 tags: data,attributes
 published: True
 position: 2
 ---
+<style>
+table th:first-of-type {
+    width: 42%;
+}
+table th:nth-of-type(2) {
+    width: 58%;
+}
+</style>
 
 # data attributes
-
 
 Behavior can be added to HTML DOM elements either with *data-* attributes or through the [commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}) property of the report viewer. 
 
@@ -58,8 +65,8 @@ The following table is a list of all available commands for the *data-command* a
 | __telerik_ReportViewer_toggleSideMenu__ |Show or hide the side menu|
 | __telerik_ReportViewer_toggleSearchDialog__ |Show or hide the search dialog|
 
+\* The export command requires one additional parameter, *data-command-parameter*, which will specify the export format. The full list of all allowed *data-command-parameter* values:  
 
-* The export command requires one additional parameter, *data-command-parameter*, which will specify the export format. The full list of all allowed *data-command-parameter* values: 
 
 
 | Label | Command Parameter |

@@ -1,6 +1,6 @@
 ---
 title: Parameterizing the Graph
-page_title: Parameterizing the Graph | for Telerik Reporting Documentation
+page_title: Parameterizing the Graph 
 description: Parameterizing the Graph
 slug: telerikreporting/getting-started/parameterizing-the-graph
 tags: parameterizing,the,graph

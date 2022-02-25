@@ -1,12 +1,20 @@
 ---
 title: Report Viewer Initialization
-page_title: Report Viewer Initialization | for Telerik Reporting Documentation
+page_title: Report Viewer Initialization 
 description: Report Viewer Initialization
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization
 tags: report,viewer,initialization
 published: True
 position: 0
 ---
+<style>
+table th:first-of-type {
+    width: 28%;
+}
+table th:nth-of-type(2) {
+    width: 72%;
+}
+</style>
 
 # Report Viewer Initialization
 

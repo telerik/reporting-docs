@@ -1,6 +1,6 @@
 ---
 title: How to Use Windows Forms Report Viewer With REST Service
-page_title: How to Use Windows Forms Report Viewer With REST Service | for Telerik Reporting Documentation
+page_title: How to Use Windows Forms Report Viewer With REST Service 
 description: How to Use Windows Forms Report Viewer With REST Service
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service
 tags: how,to,use,windows,forms,report,viewer,with,rest,service

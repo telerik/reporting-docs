@@ -1,6 +1,6 @@
 ---
 title: Troubleshooting
-page_title: Troubleshooting | for Telerik Reporting Documentation
+page_title: Troubleshooting 
 description: Troubleshooting
 slug: telerikreporting/designing-reports/report-structure/barcode/troubleshooting
 tags: troubleshooting

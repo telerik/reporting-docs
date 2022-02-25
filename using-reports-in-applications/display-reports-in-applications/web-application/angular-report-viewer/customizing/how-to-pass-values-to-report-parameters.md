@@ -1,6 +1,6 @@
 ---
 title: How to Pass Values to Report Parameters
-page_title: How to Pass Values to Report Parameters | for Telerik Reporting Documentation
+page_title: How to Pass Values to Report Parameters 
 description: How to Pass Values to Report Parameters
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: how,to,pass,values,to,report,parameters
@@ -40,7 +40,7 @@ export class AppComponent {
 }
 ````
 
-    The setReportSource(rs) method will automatically refresh the report with the new parameter values.
+    The _setReportSource(rs)_ method will automatically refresh the report with the new parameter values.
 
 
 # See Also
@@ -48,4 +48,3 @@ export class AppComponent {
 * [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
 
 * [How To: Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})
-

@@ -1,6 +1,6 @@
 ---
 title: PageScrollModes
-page_title: PageScrollModes | for Telerik Reporting Documentation
+page_title: PageScrollModes 
 description: PageScrollModes
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/pagescrollmodes
 tags: pagescrollmodes

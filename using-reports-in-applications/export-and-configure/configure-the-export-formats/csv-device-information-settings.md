@@ -1,6 +1,6 @@
 ---
 title: CSV Device Information Settings
-page_title: CSV Device Information Settings | for Telerik Reporting Documentation
+page_title: CSV Device Information Settings 
 description: CSV Device Information Settings
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings
 tags: csv,device,information,settings

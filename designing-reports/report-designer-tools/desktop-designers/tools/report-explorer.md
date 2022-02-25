@@ -1,6 +1,6 @@
 ---
 title: Report Explorer
-page_title: Report Explorer | for Telerik Reporting Documentation
+page_title: Report Explorer 
 description: Report Explorer
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer
 tags: report,explorer

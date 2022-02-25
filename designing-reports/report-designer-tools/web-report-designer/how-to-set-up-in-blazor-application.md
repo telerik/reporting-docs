@@ -1,6 +1,6 @@
 ---
 title: How to set up in Blazor application
-page_title: How to set up in Blazor application | for Telerik Reporting Documentation
+page_title: How to set up in Blazor application 
 description: How to set up in Blazor application
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application
 tags: how,to,set,up,in,blazor,application

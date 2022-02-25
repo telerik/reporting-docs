@@ -1,6 +1,6 @@
 ---
 title: bind(eventName, eventHandler)
-page_title: bind(eventName, eventHandler) | for Telerik Reporting Documentation
+page_title: bind(eventName, eventHandler) 
 description: bind(eventName, eventHandler)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/bind(eventname,-eventhandler)
 tags: bind(eventname,,eventhandler)

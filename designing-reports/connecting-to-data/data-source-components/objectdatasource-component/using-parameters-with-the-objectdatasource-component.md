@@ -1,6 +1,6 @@
 ---
 title: Using Parameters with the ObjectDataSource Component
-page_title: Using Parameters with the ObjectDataSource Component | for Telerik Reporting Documentation
+page_title: Using Parameters with the ObjectDataSource Component 
 description: Using Parameters with the ObjectDataSource Component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/using-parameters-with-the-objectdatasource-component
 tags: using,parameters,with,the,objectdatasource,component

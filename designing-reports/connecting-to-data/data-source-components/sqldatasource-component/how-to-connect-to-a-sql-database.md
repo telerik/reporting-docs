@@ -1,6 +1,6 @@
 ---
 title: How to Connect to a SQL Database
-page_title: How to Connect to a SQL Database | for Telerik Reporting Documentation
+page_title: How to Connect to a SQL Database 
 description: How to Connect to a SQL Database
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/how-to-connect-to-a-sql-database
 tags: how,to,connect,to,a,sql,database

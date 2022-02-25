@@ -1,12 +1,20 @@
 ---
 title: command
-page_title: command | for Telerik Reporting Documentation
+page_title: command 
 description: command
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command
 tags: command
 published: True
 position: 7
 ---
+<style>
+table th:first-of-type {
+    width: 15%;
+}
+table th:nth-of-type(2) {
+    width: 85%;
+}
+</style>
 
 # command
 

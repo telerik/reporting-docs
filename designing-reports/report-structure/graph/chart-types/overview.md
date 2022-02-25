@@ -1,6 +1,6 @@
 ---
 title: Chart Types Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/overview
 tags: overview
@@ -21,7 +21,7 @@ You can change the chart type after you have created it. For more information, s
 Examples of many of these types of charts are available as sample reports in the local demos located under [InstallDir]\Examples.
 
 | Chart type | Display ratio data | Display stock data | Display linear data | Display multi-value data |
-| ------ | ------ | ------ | ------ | ------ |
+| ------ |:------:|:------:|:------:|:------:|
 | [Bar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%})|||&#x2713;||
 | [Line Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview%})|||&#x2713;||
 | [Area Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview%})|||&#x2713;||

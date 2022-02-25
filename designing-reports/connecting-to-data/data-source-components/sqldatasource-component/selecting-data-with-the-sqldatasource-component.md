@@ -1,6 +1,6 @@
 ---
 title: Selecting Data with the SqlDataSource component
-page_title: Selecting Data with the SqlDataSource component | for Telerik Reporting Documentation
+page_title: Selecting Data with the SqlDataSource component 
 description: Selecting Data with the SqlDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/selecting-data-with-the-sqldatasource-component
 tags: selecting,data,with,the,sqldatasource,component

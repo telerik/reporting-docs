@@ -1,6 +1,6 @@
 ---
 title: How to Migrate to embedded styles
-page_title: How to Migrate to embedded styles | for Telerik Reporting Documentation
+page_title: How to Migrate to embedded styles 
 description: How to Migrate to embedded styles
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-migrate-to-embedded-styles
 tags: how,to,migrate,to,embedded,styles

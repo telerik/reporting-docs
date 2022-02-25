@@ -1,6 +1,6 @@
 ---
 title: How to import reports created with the VS Report Designer
-page_title: How to import reports created with the VS Report Designer | for Telerik Reporting Documentation
+page_title: How to import reports created with the VS Report Designer 
 description: How to import reports created with the VS Report Designer
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer
 tags: how,to,import,reports,created,with,the,vs,report,designer

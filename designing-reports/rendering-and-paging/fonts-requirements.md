@@ -1,6 +1,6 @@
 ---
 title: Fonts Requirements
-page_title: Fonts Requirements | for Telerik Reporting Documentation
+page_title: Fonts Requirements 
 description: Fonts Requirements
 slug: telerikreporting/designing-reports/rendering-and-paging/fonts-requirements
 tags: fonts,requirements

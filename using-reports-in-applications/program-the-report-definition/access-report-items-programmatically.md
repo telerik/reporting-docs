@@ -1,6 +1,6 @@
 ---
 title: Access Report Items Programmatically
-page_title: Access Report Items Programmatically | for Telerik Reporting Documentation
+page_title: Access Report Items Programmatically 
 description: Access Report Items Programmatically
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically
 tags: access,report,items,programmatically

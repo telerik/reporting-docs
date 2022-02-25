@@ -1,6 +1,6 @@
 ---
 title: XHTML Validation
-page_title: XHTML Validation | for Telerik Reporting Documentation
+page_title: XHTML Validation 
 description: XHTML Validation
 slug: telerikreporting/designing-reports/report-structure/htmltextbox/xhtml-validation
 tags: xhtml,validation

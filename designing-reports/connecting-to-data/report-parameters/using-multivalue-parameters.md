@@ -1,6 +1,6 @@
 ---
 title: Using Multivalue Parameters
-page_title: Using Multivalue Parameters | for Telerik Reporting Documentation
+page_title: Using Multivalue Parameters 
 description: Using Multivalue Parameters
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters
 tags: using,multivalue,parameters

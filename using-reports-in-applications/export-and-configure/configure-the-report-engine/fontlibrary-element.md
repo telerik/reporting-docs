@@ -1,6 +1,6 @@
 ---
 title: fontLibrary Element
-page_title: fontLibrary Element | for Telerik Reporting Documentation
+page_title: fontLibrary Element 
 description: fontLibrary Element
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/fontlibrary-element
 tags: fontlibrary,element

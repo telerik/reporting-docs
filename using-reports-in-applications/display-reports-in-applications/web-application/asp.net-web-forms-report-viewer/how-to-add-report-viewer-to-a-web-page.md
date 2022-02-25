@@ -1,6 +1,6 @@
 ---
 title: How to Add report viewer to a web page
-page_title: How to Add report viewer to a web page | for Telerik Reporting Documentation
+page_title: How to Add report viewer to a web page 
 description: How to Add report viewer to a web page
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page
 tags: how,to,add,report,viewer,to,a,web,page

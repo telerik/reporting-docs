@@ -1,6 +1,6 @@
 ---
 title: Sorting Table Details
-page_title: Sorting Table Details | for Telerik Reporting Documentation
+page_title: Sorting Table Details 
 description: Sorting Table Details
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-table-details
 tags: sorting,table,details

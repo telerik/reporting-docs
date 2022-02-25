@@ -1,6 +1,6 @@
 ---
 title: PowerPoint Rendering Design Considerations
-page_title: PowerPoint Rendering Design Considerations | for Telerik Reporting Documentation
+page_title: PowerPoint Rendering Design Considerations 
 description: PowerPoint Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/powerpoint-rendering-design-considerations
 tags: powerpoint,rendering,design,considerations

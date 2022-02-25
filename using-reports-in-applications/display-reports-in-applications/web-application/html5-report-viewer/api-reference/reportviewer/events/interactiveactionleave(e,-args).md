@@ -1,12 +1,20 @@
 ---
 title: interactiveActionLeave(e, args)
-page_title: interactiveActionLeave(e, args) | for Telerik Reporting Documentation
+page_title: interactiveActionLeave(e, args) 
 description: interactiveActionLeave(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)
 tags: interactiveactionleave(e,,args)
 published: True
 position: 14
 ---
+<style>
+table th:first-of-type {
+    width: 15%;
+}
+table th:nth-of-type(2) {
+    width: 85%;
+}
+</style>
 
 # interactiveActionLeave(e, args)
 

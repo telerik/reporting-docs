@@ -1,21 +1,31 @@
 ---
 title: parameter
-page_title: parameter | for Telerik Reporting Documentation
+page_title: parameter 
 description: parameter
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parameter
 tags: parameter
 published: True
 position: 4
 ---
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 35%;
+}
+table th:nth-of-type(3) {
+    width: 45%;
+}
+</style>
 
 # parameter
 
 ## parameter
 
-
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
-| __availableValues__ |array of name-value pairs ({name: …, value: ….}*)|represents a list of predefined parameter values and their labels|
+| __availableValues__ |array of name-value pairs ({name: …, value: ….})|represents a list of predefined parameter values and their labels|
 | __multivalue__ |boolean|specifies whether the parameter can hold more than one value|
 | __allowBlank__ |boolean|specifies whether the parameter allows an empty string to be passed. Only for parameters of type string|
 | __allowNull__ |boolean|specifies whether the parameter allows a <null> value to be passed from its editor|

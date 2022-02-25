@@ -1,6 +1,6 @@
 ---
 title: How to Switch Row / Column
-page_title: How to Switch Row / Column | for Telerik Reporting Documentation
+page_title: How to Switch Row / Column 
 description: How to Switch Row / Column
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-switch-row---column
 tags: how,to,switch,row,/,column
@@ -10,10 +10,7 @@ position: 11
 
 # How to Switch Row / Column
 
-
-
-Each series data-representation is formed by both the Category and Series groups.         The CategoryGroups hierarchy defines the data points and the SeriesGroups hierarchy defines the runtime instances.        
-
+Each series data-representation is formed by both the Category and Series groups. The CategoryGroups hierarchy defines the data points and the SeriesGroups hierarchy defines the runtime instances. 
 
 ###To switch the SeriesGroups and CategoryGroups of a Graph
 
@@ -21,7 +18,4 @@ Each series data-representation is formed by both the Category and Series groups
 
 1. Right-click and select Switch Row/Column from the context menu.
 
-Performing this action will interchange the CategoryGroups and SeriesGroups hierarchies of the selected graph.         
-
-
-
+Performing this action will interchange the CategoryGroups and SeriesGroups hierarchies of the selected graph. 

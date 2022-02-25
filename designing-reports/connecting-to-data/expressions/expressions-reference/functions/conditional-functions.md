@@ -1,12 +1,20 @@
 ---
 title: Conditional Functions
-page_title: Conditional Functions | for Telerik Reporting Documentation
+page_title: Conditional Functions 
 description: Conditional Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions
 tags: conditional,functions
 published: True
 position: 2
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # Conditional Functions
 

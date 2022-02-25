@@ -1,6 +1,6 @@
 ---
 title: How to Use React Report Viewer with Report Server
-page_title: How to Use React Report Viewer with Report Server | for Telerik Reporting Documentation
+page_title: How to Use React Report Viewer with Report Server 
 description: How to Use React Report Viewer with Report Server
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-report-server
 tags: how,to,use,react,report,viewer,with,report,server

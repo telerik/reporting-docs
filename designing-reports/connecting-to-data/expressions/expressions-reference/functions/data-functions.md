@@ -1,12 +1,20 @@
 ---
 title: Data Functions
-page_title: Data Functions | for Telerik Reporting Documentation
+page_title: Data Functions 
 description: Data Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions
 tags: data,functions
 published: True
 position: 5
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # Data Functions
 

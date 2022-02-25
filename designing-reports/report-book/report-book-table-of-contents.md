@@ -1,6 +1,6 @@
 ---
 title: Report Book Table of Contents
-page_title: Report Book Table of Contents | for Telerik Reporting Documentation
+page_title: Report Book Table of Contents 
 description: Report Book Table of Contents
 slug: telerikreporting/designing-reports/report-book/report-book-table-of-contents
 tags: report,book,table,of,contents

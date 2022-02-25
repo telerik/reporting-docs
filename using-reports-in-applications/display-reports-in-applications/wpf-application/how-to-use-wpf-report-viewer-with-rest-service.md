@@ -1,6 +1,6 @@
 ---
 title: How to Use WPF Report Viewer With REST Service
-page_title: How to Use WPF Report Viewer With REST Service | for Telerik Reporting Documentation
+page_title: How to Use WPF Report Viewer With REST Service 
 description: How to Use WPF Report Viewer With REST Service
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service
 tags: how,to,use,wpf,report,viewer,with,rest,service

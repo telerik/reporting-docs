@@ -1,6 +1,6 @@
 ---
 title: FormatKey
-page_title: FormatKey | for Telerik Reporting Documentation
+page_title: FormatKey 
 description: FormatKey
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatkey
 tags: formatkey

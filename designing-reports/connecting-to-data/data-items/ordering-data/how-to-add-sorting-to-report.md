@@ -1,6 +1,6 @@
 ---
 title: How to Add sorting to Report
-page_title: How to Add sorting to Report | for Telerik Reporting Documentation
+page_title: How to Add sorting to Report 
 description: How to Add sorting to Report
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-report
 tags: how,to,add,sorting,to,report

@@ -1,6 +1,6 @@
 ---
 title: Hyperlink Action
-page_title: Hyperlink Action | for Telerik Reporting Documentation
+page_title: Hyperlink Action 
 description: Hyperlink Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action
 tags: hyperlink,action

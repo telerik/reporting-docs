@@ -1,6 +1,6 @@
 ---
 title: How to Using Report Parameters to Retrieve Specific data
-page_title: How to Using Report Parameters to Retrieve Specific data | for Telerik Reporting Documentation
+page_title: How to Using Report Parameters to Retrieve Specific data 
 description: How to Using Report Parameters to Retrieve Specific data
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/how-to-using-report-parameters-to-retrieve-specific-data
 tags: how,to,using,report,parameters,to,retrieve,specific,data

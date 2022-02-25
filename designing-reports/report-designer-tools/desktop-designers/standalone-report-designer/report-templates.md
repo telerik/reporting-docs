@@ -1,12 +1,20 @@
 ---
 title: Report Templates
-page_title: Report Templates | for Telerik Reporting Documentation
+page_title: Report Templates 
 description: Report Templates
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates
 tags: report,templates
 published: True
 position: 1
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # Report Templates
 

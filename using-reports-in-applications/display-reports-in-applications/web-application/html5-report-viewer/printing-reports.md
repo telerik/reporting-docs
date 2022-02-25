@@ -1,6 +1,6 @@
 ---
 title: Printing Reports
-page_title: Printing Reports | for Telerik Reporting Documentation
+page_title: Printing Reports 
 description: Printing Reports
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports
 tags: printing,reports

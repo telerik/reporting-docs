@@ -1,6 +1,6 @@
 ---
 title: Calculated Fields
-page_title: Calculated Fields | for Telerik Reporting Documentation
+page_title: Calculated Fields 
 description: Calculated Fields
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields
 tags: calculated,fields

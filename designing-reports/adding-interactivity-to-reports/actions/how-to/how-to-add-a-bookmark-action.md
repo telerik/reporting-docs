@@ -1,6 +1,6 @@
 ---
 title: How to Add a Bookmark Action
-page_title: How to Add a Bookmark Action | for Telerik Reporting Documentation
+page_title: How to Add a Bookmark Action 
 description: How to Add a Bookmark Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action
 tags: how,to,add,a,bookmark,action

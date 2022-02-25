@@ -1,6 +1,6 @@
 ---
 title: React Report Viewer Overview
-page_title: React Report Viewer Overview | for Telerik Reporting Documentation
+page_title: React Report Viewer Overview 
 description: React Report Viewer Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview
 tags: react,report,viewer,overview

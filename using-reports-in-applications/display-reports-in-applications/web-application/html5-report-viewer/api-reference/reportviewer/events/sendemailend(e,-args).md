@@ -1,12 +1,20 @@
 ---
 title: sendEmailEnd(e, args)
-page_title: sendEmailEnd(e, args) | for Telerik Reporting Documentation
+page_title: sendEmailEnd(e, args) 
 description: sendEmailEnd(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)
 tags: sendemailend(e,,args)
 published: True
 position: 5
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # sendEmailEnd(e, args)
 

@@ -1,12 +1,20 @@
 ---
 title: Operators
-page_title: Operators | for Telerik Reporting Documentation
+page_title: Operators 
 description: Operators
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators
 tags: operators
 published: True
 position: 2
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # Operators
 
@@ -42,7 +50,7 @@ position: 2
 | __Like__ |pattern matching|
 | __IS  [NOT] NULL__ |If the value of expression is __NULL__, __IS NULL__ returns __TRUE__; otherwise, it returns __FALSE__.<br/> If the value of expression is __NULL__, __IS NOT NULL__ returns __FALSE__; otherwise, it returns __TRUE__ |
 
->note __Null__ values represent missing unknown data and are usually used as placeholders for unknown or inapplicable values. It is not possible to test for __null__ values with comparison operators such as  __=__ or __```<>```__. The  __IS [NOT] NULL__ operator should be used instead.         
+>note __Null__ values represent missing unknown data and are usually used as placeholders for unknown or inapplicable values. It is not possible to test for __null__ values with comparison operators such as  __=__ or __```<>```__. The __IS [NOT] NULL__ operator should be used instead. 
 
 ## Logical/Bitwise operators
 

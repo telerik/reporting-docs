@@ -1,6 +1,6 @@
 ---
 title: Report Viewer Localization
-page_title: Report Viewer Localization | for Telerik Reporting Documentation
+page_title: Report Viewer Localization 
 description: Report Viewer Localization
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/report-viewer-localization
 tags: report,viewer,localization

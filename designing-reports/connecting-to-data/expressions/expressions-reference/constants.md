@@ -1,6 +1,6 @@
 ---
 title: Constants
-page_title: Constants | for Telerik Reporting Documentation
+page_title: Constants 
 description: Constants
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/constants
 tags: constants

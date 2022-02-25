@@ -1,6 +1,6 @@
 ---
 title: How to Increase the timeout value of a WCF service
-page_title: How to Increase the timeout value of a WCF service | for Telerik Reporting Documentation
+page_title: How to Increase the timeout value of a WCF service 
 description: How to Increase the timeout value of a WCF service
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-increase-the-timeout-value-of-a-wcf-service
 tags: how,to,increase,the,timeout,value,of,a,wcf,service

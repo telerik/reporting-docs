@@ -1,6 +1,6 @@
 ---
 title: Release Document
-page_title: Release Document | for Telerik Reporting Documentation
+page_title: Release Document 
 description: Release Document
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/release-document
 tags: release,document

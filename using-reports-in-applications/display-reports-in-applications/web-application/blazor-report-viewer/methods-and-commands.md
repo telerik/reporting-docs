@@ -1,6 +1,6 @@
 ---
 title: Methods and Commands
-page_title: Methods and Commands | for Telerik Reporting Documentation
+page_title: Methods and Commands 
 description: Methods and Commands
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/methods-and-commands
 tags: methods,and,commands

@@ -1,12 +1,20 @@
 ---
 title: Options
-page_title: Options | for Telerik Reporting Documentation
+page_title: Options 
 description: Options
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/options
 tags: options
 published: True
 position: 0
 ---
+<style>
+table th:first-of-type {
+    width: 28%;
+}
+table th:nth-of-type(2) {
+    width: 72%;
+}
+</style>
 
 # Options
 

@@ -1,6 +1,6 @@
 ---
 title: Deploying Windows Forms Applications
-page_title: Deploying Windows Forms Applications | for Telerik Reporting Documentation
+page_title: Deploying Windows Forms Applications 
 description: Deploying Windows Forms Applications
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/deploying-windows-forms-applications
 tags: deploying,windows,forms,applications

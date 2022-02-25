@@ -1,6 +1,6 @@
 ---
 title: Invoice Report Wizard
-page_title: Invoice Report Wizard | for Telerik Reporting Documentation
+page_title: Invoice Report Wizard 
 description: Invoice Report Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/invoice-report-wizard
 tags: invoice,report,wizard

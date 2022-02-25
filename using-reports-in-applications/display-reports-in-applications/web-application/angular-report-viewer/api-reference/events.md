@@ -1,12 +1,20 @@
 ---
 title: Events
-page_title: Events | for Telerik Reporting Documentation
+page_title: Events 
 description: Events
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events
 tags: events
 published: True
 position: 1
 ---
+<style>
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(2) {
+    width: 70%;
+}
+</style>
 
 # Events
 

@@ -1,6 +1,6 @@
 ---
 title: Location Providers
-page_title: Location Providers | for Telerik Reporting Documentation
+page_title: Location Providers 
 description: Location Providers
 slug: telerikreporting/designing-reports/report-structure/map/structure/location-providers
 tags: location,providers

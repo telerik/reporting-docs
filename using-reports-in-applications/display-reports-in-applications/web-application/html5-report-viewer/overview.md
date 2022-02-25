@@ -1,6 +1,6 @@
 ---
 title: HTML5 Report Viewer Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview
 tags: overview

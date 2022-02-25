@@ -1,6 +1,6 @@
 ---
 title: Forums
-page_title: Forums | for Telerik Reporting Documentation
+page_title: Forums 
 description: Forums
 slug: telerikreporting/for-more-help/forums
 tags: forums

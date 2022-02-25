@@ -1,6 +1,6 @@
 ---
 title: Specifying query parameters with the CubeDataSource component
-page_title: Specifying query parameters with the CubeDataSource component | for Telerik Reporting Documentation
+page_title: Specifying query parameters with the CubeDataSource component 
 description: Specifying query parameters with the CubeDataSource component
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/specifying-query-parameters-with-the-cubedatasource-component
 tags: specifying,query,parameters,with,the,cubedatasource,component

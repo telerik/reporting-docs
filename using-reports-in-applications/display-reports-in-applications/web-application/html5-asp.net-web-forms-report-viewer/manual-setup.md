@@ -1,6 +1,6 @@
 ---
 title: Manual Setup
-page_title: Manual Setup | for Telerik Reporting Documentation
+page_title: Manual Setup 
 description: Manual Setup
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/manual-setup
 tags: manual,setup

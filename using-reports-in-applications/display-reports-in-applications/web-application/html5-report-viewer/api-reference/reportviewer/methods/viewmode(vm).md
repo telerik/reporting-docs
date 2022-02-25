@@ -1,12 +1,20 @@
 ---
 title: viewMode(vm)
-page_title: viewMode(vm) | for Telerik Reporting Documentation
+page_title: viewMode(vm) 
 description: viewMode(vm)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode(vm)
 tags: viewmode(vm)
 published: True
 position: 19
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # viewMode(vm)
 

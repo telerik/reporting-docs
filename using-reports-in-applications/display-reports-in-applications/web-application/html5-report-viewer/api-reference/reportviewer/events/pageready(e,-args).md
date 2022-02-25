@@ -1,12 +1,20 @@
 ---
 title: pageReady(e, args)
-page_title: pageReady(e, args) | for Telerik Reporting Documentation
+page_title: pageReady(e, args) 
 description: pageReady(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args)
 tags: pageready(e,,args)
 published: True
 position: 6
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # pageReady(e, args)
 

@@ -1,13 +1,20 @@
 ---
 title: Label Report Wizard
-page_title: Label Report Wizard | for Telerik Reporting Documentation
+page_title: Label Report Wizard 
 description: Label Report Wizard
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/label-report-wizard
 tags: label,report,wizard
 published: True
 position: 2
 ---
-
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 # Label Report Wizard
 
 Label Report Wizard guides you through the process of creating a report with label layout.

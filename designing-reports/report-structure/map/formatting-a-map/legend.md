@@ -1,6 +1,6 @@
 ---
 title: Legend
-page_title: Legend | for Telerik Reporting Documentation
+page_title: Legend 
 description: Legend
 slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/legend
 tags: legend

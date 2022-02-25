@@ -1,20 +1,24 @@
 ---
 title: Math Functions
-page_title: Math Functions | for Telerik Reporting Documentation
+page_title: Math Functions 
 description: Math Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/math-functions
 tags: math,functions
 published: True
 position: 6
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 75%;
+}
+</style>
 
 # Math Functions
 
-
-
 Use Math functions to manipulate the numeric values of your data. Math functions can use the following data types: Decimal, Float, and Integer.
-
-## 
 
 | Function | Description |
 | ------ | ------ |
@@ -42,5 +46,4 @@ Use Math functions to manipulate the numeric values of your data. Math functions
 | __Tan(angle)__ |Returns the tangent of the specified angle.|
 | __Tanh(angle)__ |Returns the hyperbolic tangent of the specified angle.|
 | __Truncate(number)__ |Calculates the integral part of a specified number|
-
 

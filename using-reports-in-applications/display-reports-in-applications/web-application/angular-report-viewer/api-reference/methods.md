@@ -1,12 +1,20 @@
 ---
 title: Methods
-page_title: Methods | for Telerik Reporting Documentation
+page_title: Methods 
 description: Methods
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods
 tags: methods
 published: True
 position: 2
 ---
+<style>
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+</style>
 
 # Methods
 

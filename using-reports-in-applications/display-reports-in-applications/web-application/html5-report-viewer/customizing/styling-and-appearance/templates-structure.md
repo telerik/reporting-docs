@@ -1,6 +1,6 @@
 ---
 title: Templates Structure
-page_title: Templates Structure | for Telerik Reporting Documentation
+page_title: Templates Structure 
 description: Templates Structure
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure
 tags: templates,structure

@@ -1,6 +1,6 @@
 ---
 title: Report Designer Tools Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/designing-reports/report-designer-tools/overview
 tags: overview

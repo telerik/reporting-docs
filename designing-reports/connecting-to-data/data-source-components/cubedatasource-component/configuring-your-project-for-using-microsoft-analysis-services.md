@@ -1,6 +1,6 @@
 ---
 title: Configuring your project for using Microsoft Analysis Services
-page_title: Configuring your project for using Microsoft Analysis Services | for Telerik Reporting Documentation
+page_title: Configuring your project for using Microsoft Analysis Services 
 description: Configuring your project for using Microsoft Analysis Services
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services
 tags: configuring,your,project,for,using,microsoft,analysis,services

@@ -1,6 +1,6 @@
 ---
 title: Edit Bindings Dialog
-page_title: Edit Bindings Dialog | for Telerik Reporting Documentation
+page_title: Edit Bindings Dialog 
 description: Edit Bindings Dialog
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-bindings-dialog
 tags: edit,bindings,dialog

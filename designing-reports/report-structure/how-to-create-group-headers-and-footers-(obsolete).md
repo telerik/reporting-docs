@@ -1,6 +1,6 @@
 ---
 title: How to Create Group Headers and Footers (obsolete)
-page_title: How to Create Group Headers and Footers (obsolete) | for Telerik Reporting Documentation
+page_title: How to Create Group Headers and Footers (obsolete) 
 description: How to Create Group Headers and Footers (obsolete)
 slug: telerikreporting/designing-reports/report-structure/how-to-create-group-headers-and-footers-(obsolete)
 tags: how,to,create,group,headers,and,footers,(obsolete)

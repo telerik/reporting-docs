@@ -1,6 +1,6 @@
 ---
 title: Aggregate Functions
-page_title: Aggregate Functions | for Telerik Reporting Documentation
+page_title: Aggregate Functions 
 description: Aggregate Functions
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions
 tags: aggregate,functions

@@ -1,6 +1,6 @@
 ---
 title: Licensing
-page_title: Licensing | for Telerik Reporting Documentation
+page_title: Licensing 
 description: Licensing
 slug: telerikreporting/licensing
 tags: licensing

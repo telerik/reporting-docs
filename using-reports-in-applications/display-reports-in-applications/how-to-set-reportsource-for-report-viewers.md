@@ -1,6 +1,6 @@
 ---
 title: How to Set ReportSource for Report Viewers
-page_title: How to Set ReportSource for Report Viewers | for Telerik Reporting Documentation
+page_title: How to Set ReportSource for Report Viewers 
 description: How to Set ReportSource for Report Viewers
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers
 tags: how,to,set,reportsource,for,report,viewers

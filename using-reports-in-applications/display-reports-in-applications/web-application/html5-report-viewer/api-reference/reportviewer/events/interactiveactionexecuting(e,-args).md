@@ -1,12 +1,20 @@
 ---
 title: interactiveActionExecuting(e, args)
-page_title: interactiveActionExecuting(e, args) | for Telerik Reporting Documentation
+page_title: interactiveActionExecuting(e, args) 
 description: interactiveActionExecuting(e, args)
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args)
 tags: interactiveactionexecuting(e,,args)
 published: True
 position: 12
 ---
+<style>
+table th:first-of-type {
+    width: 15%;
+}
+table th:nth-of-type(2) {
+    width: 85%;
+}
+</style>
 
 # interactiveActionExecuting(e, args)
 

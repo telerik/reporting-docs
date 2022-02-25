@@ -1,12 +1,20 @@
 ---
 title: Methods Overview
-page_title: Overview | for Telerik Reporting Documentation
+page_title: Overview 
 description: Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview
 tags: overview
 published: True
 position: 0
 ---
+<style>
+table th:first-of-type {
+    width: 35%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+</style>
 
 # Methods Overview
 

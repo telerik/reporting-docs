@@ -1,16 +1,24 @@
 ---
 title: Options
-page_title: Options | for Telerik Reporting Documentation
+page_title: Options 
 description: Options
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options
 tags: options
 published: True
 position: 0
 ---
+<style>
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(2) {
+    width: 70%;
+}
+</style>
 
 # Options
 
-Below is a list of all options available during initialization.       
+Below is a list of all options available during initialization. 
 
 ## Options
 

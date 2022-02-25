@@ -1,6 +1,6 @@
 ---
 title: How to Add a Hyperlink Action
-page_title: How to Add a Hyperlink Action | for Telerik Reporting Documentation
+page_title: How to Add a Hyperlink Action 
 description: How to Add a Hyperlink Action
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action
 tags: how,to,add,a,hyperlink,action

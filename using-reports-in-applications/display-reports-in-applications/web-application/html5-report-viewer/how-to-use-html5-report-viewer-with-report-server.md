@@ -1,6 +1,6 @@
 ---
 title: How to Use HTML5 Report Viewer with Report Server
-page_title: How to Use HTML5 Report Viewer with Report Server | for Telerik Reporting Documentation
+page_title: How to Use HTML5 Report Viewer with Report Server 
 description: How to Use HTML5 Report Viewer with Report Server
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server
 tags: how,to,use,html5,report,viewer,with,report,server
@@ -70,25 +70,25 @@ Although the fastest and most convenient way to get a working HTML5 viewer in yo
     
     ````javascript
 $("#reportViewer1")
-.telerik_ReportViewer({
-serviceUrl: "/api/reports/",
-templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
-reportSource: {
-report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-parameters: {
-CultureID: "en"
-}
-}
-});
+	.telerik_ReportViewer({
+		serviceUrl: "/api/reports/",
+		templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+			parameters: {
+				CultureID: "en"
+			}
+		}
+	});
 ````
 
 1. Locate the line that sets the service URL: `serviceUrl: "/api/reports/",`. Comment it out or replace it with the following code: 
     
     ````javascript
 reportServer: {
-url: "http://yourReportServerUrl:port",
-username: null,
-password: null
+		url: "http://yourReportServerUrl:port",
+		username: null,
+		password: null
 },
 ````
 
@@ -102,22 +102,22 @@ password: null
     
     ````javascript
 $("#reportViewer1")
-.telerik_ReportViewer({
-reportServer: {
-url: "http://yourReportServerUrl:port",
-username: null,
-password: null
-},
-//templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
-reportSource: {
-// The report value should contain the Category and ReportName in the following format
-// {Category/ReportName}
-report: "Samples/Dashboard"
-parameters: {
-ReportYear: 2004
-}
-}
-});
+	.telerik_ReportViewer({
+		reportServer: {
+			url: "http://yourReportServerUrl:port",
+			username: null,
+			password: null
+		},
+		//templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
+		reportSource: {
+			// The report value should contain the Category and ReportName in the following format
+			// {Category/ReportName}
+			report: "Samples/Dashboard"
+			parameters: {
+				ReportYear: 2004
+			}
+		}
+	});
 ````
 
 1. Run the project and you should see the configured in the previous step report appearing in the Report Viewer. If not, check the [Troubleshooting](#Troubleshooting) section below. 
@@ -129,11 +129,11 @@ The most common reasons for failure are related with the authentication against 
 
 | Problem | Cause |
 | ------ | ------ |
-|The viewer displays the message:`Error registering the viewer with the service. Insufficient credentials.`|Check if the supplied username and password are valid and the user's state is __Enabled__ in Report Server.|
-|The page shows the message:`The report server URL is not specified`or`Error loading the report viewer's templates`|The reportServer's __url__ property is empty or invalid.|
-|The report viewer loads the template, but displays a message`"Error creating report instance`or`Unable to get report parameters. Report ' *Category* / *Report* ' cannot be resolved.`|Check again the report source's __report__ arguments and make sure the category name and the report name exist in Report Server.|
-|The viewer loads the template, but displays a message`Unable to get report parameters. Access denied.`|Make sure that the user account has permissions to read the specified report and category.|
-|The viewer doesn't load any page and there is only a label saying __loading...__ in the top left page corner.|Check the Fiddler log for a request to the`/Token`URL. This is the request that should obtain the token used to authenticate the user account. When found, check the Response headers and look for the error code below:<br/>* `HTTP/1.1 502 Fiddler - DNS Lookup Failed`- make sure you have set the Report Server URL correctly.<br/>* `HTTP/1.1 400 Bad Request`- check if the built-in Guest user is __Enabled__ and has __Read__ permissions for configured report.|
+|The viewer displays the message:<br />`Error registering the viewer with the service. Insufficient credentials.`|Check if the supplied username and password are valid and the user's state is __Enabled__ in Report Server.|
+|The page shows the message:<br />`The report server URL is not specified`<br />or<br />`Error loading the report viewer's templates`|The reportServer's __url__ property is empty or invalid.|
+|The report viewer loads the template, but displays a message<br />`"Error creating report instance`<br/>or<br/>`Unable to get report parameters. Report ' *Category* / *Report* ' cannot be resolved.`|Check again the report source's __report__ arguments and make sure the category name and the report name exist in Report Server.|
+|The viewer loads the template, but displays a message<br />`Unable to get report parameters. Access denied.`|Make sure that the user account has permissions to read the specified report and category.|
+|The viewer doesn't load any page and there is only a label saying __loading...__ in the top left page corner.|Check the Fiddler log for a request to the `/Token` URL. This is the request that should obtain the token used to authenticate the user account. When found, check the Response headers and look for the error code below:<ul><li>`HTTP/1.1 502 Fiddler - DNS Lookup Failed`- make sure you have set the Report Server URL correctly.</li><li>`HTTP/1.1 400 Bad Request`- check if the built-in Guest user is __Enabled__ and has __Read__ permissions for configured report.</li></ul>|
 
 
 # See Also
@@ -143,4 +143,3 @@ The most common reasons for failure are related with the authentication against 
 * [Telerik Report Server](http://docs.telerik.com/report-server/introduction)
 
 * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
-

@@ -1,6 +1,6 @@
 ---
 title: How to Bind to a DataAdapter
-page_title: How to Bind to a DataAdapter | for Telerik Reporting Documentation
+page_title: How to Bind to a DataAdapter 
 description: How to Bind to a DataAdapter
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-dataadapter
 tags: how,to,bind,to,a,dataadapter

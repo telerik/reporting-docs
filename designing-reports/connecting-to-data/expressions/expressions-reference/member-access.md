@@ -1,6 +1,6 @@
 ---
 title: Member Access
-page_title: Member Access | for Telerik Reporting Documentation
+page_title: Member Access 
 description: Member Access
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/member-access
 tags: member,access

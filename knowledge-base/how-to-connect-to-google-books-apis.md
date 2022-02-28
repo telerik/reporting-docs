@@ -5,7 +5,7 @@ description: "Learn how to connect to Google books API when designing reports an
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-connect-to-google-books-apis
 tags: telerik, reporting, connect, to, google, books, apis
 previous_url: /designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-connect-to-google-books-apis.html
-published: False
+published: True
 type: how-to
 res_type: kb
 ---

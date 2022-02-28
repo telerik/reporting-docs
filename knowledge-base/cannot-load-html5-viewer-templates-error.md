@@ -5,7 +5,7 @@ description: "Learn how to fix the error about being unable to load the Telerik 
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting/html5-viewer-troubleshooting
 previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting/html5-viewer-troubleshooting.html
 tags: telerik, reporting, troubleshoot, html5, reportviewer, cannot, load, templates, error, occurs
-published: True
+published: False
 type: troubleshooting
 res_type: kb
 ---

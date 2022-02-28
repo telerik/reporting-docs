@@ -5,7 +5,7 @@ description: "Learn how to fix the rendering of the styles and images in the Rep
 slug: reportviewer-styles-images-messedup
 tags: telerik, reporting, run, time, reportviewer, styles, and, images, messed, up, rendering
 previous_url:
-published: False
+published: True
 component:
 type: troubleshooting
 res_type: kb

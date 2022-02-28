@@ -5,7 +5,7 @@ description: "Learn how to handle the issue if the Silverlight ReportViewer is n
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/troubleshooting/silverlight-reportviewer-troubleshooting
 previous_url: /using-reports-in-applications/display-reports-in-applications/silverlight-application/troubleshooting/silverlight-reportviewer-troubleshooting.html
 tags: telerik, reporting, troubleshoot, silverlight, reportviewer, not, visible, when, running, the, application, app
-published: False
+published: True
 type: troubleshooting
 res_type: kb
 ---

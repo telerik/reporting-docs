@@ -4,7 +4,7 @@ page_title: The Old ASP.NET Webforms ReportViewer Messes Up Reports Rendering on
 description: "Learn how to handle the situation when the old ASP.NET Webforms ReportViewer messes up the rendering of the reports on iPad and other mobile devices."
 slug: old-webforms-viewer-messes-rendering-on-mobile
 tags: telerik, reporting, troubleshoot, asp, net, webforms, old, reportviewer, messes, up, rendering, reports, on, ipad, mobile
-published: True
+published: False
 type: troubleshooting
 res_type: kb
 ---

@@ -4,7 +4,7 @@ page_title: Cannot Find Telerik Namespace Error Occurs on Build
 description: "Learn how to handle a build error that the Telerik namespace cannot be found when working with Telerik Reporting."
 slug: cannot-find-telerik-namespace-error
 tags: telerik, reporting, design, time, cannot, find, telerik, namespace, error, occurs, on, build
-published: False
+published: True
 component:
 type: troubleshooting
 res_type: kb

@@ -4,7 +4,7 @@ page_title: HTML5 Report Viewer Styles Are Messed Up
 description: "Learn how to fix the styles of the Telerik Reporting HTML5 ReportViewer and when an undefined error is thrown."
 slug: html5-reportviewer-styles-messed-up
 tags: telerik, reporting, troubleshoot, html5, reportviewer, styles, messed, up, undefined, error, thrown
-published: False
+published: True
 res_type: kb
 type: troubleshooting
 ---

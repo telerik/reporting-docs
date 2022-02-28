@@ -4,7 +4,7 @@ page_title: Cannot Serialize the Sessions State
 description: "Learn how to serialize the session state when working with Telerik Reporting."
 slug: cannot-serialize-sessions-state
 tags: telerik, reporting, run, time, cannot, unable, to, serizalize, sessions, state
-published: False
+published: True
 component:
 type: troubleshooting
 res_type: kb

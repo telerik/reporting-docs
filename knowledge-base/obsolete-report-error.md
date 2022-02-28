@@ -4,7 +4,7 @@ page_title: An Obsolete Report Error Occurs Troubleshooting
 description: "Learn how to fix an error for an obsolete report when working with the Telerik .NET Reporting tool for web and desktop applications."
 slug: obsolete-report-error
 tags: telerik, reporting, troubleshoot, obsolete, report, error, occurs
-published: True
+published: False
 component:
 type: troubleshooting
 res_type: kb

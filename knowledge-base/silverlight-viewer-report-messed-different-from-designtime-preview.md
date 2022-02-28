@@ -4,7 +4,7 @@ page_title: The Silverlight Report Is Messed Up or Different from Design-Time Pr
 description: "Learn how to handle the issue if the Silverlight ReportViewer report is messed up or different from the preview in design-time."
 slug: silverlight-viewer-report-messed-different-from-designtime-preview
 tags: telerik, reporting, troubleshoot, silverlight, reportviewer, report, messed, up, different, from, design, time, preview
-published: True
+published: False
 type: troubleshooting
 res_type: kb
 ---

@@ -4,7 +4,7 @@ page_title: XAML Resources-Related Errors Occur after Upgrading Silverlight Appl
 description: "Learn how to handle the errors related to XAML resources after upgrading a Silverlight application."
 slug: silverlight-viewer-xaml-resources-error-after-upgrade
 tags: telerik, reporting, troubleshoot, silverlight, reportviewer, xaml, resources, errors, occur, after, upgrade, applications, apps
-published: True
+published: False
 type: troubleshooting
 res_type: kb
 ---

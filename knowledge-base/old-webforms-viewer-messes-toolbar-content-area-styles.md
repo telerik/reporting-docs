@@ -4,7 +4,7 @@ page_title: The Old ASP.NET Webforms ReportViewer Messes Up Toolbar and Content 
 description: "Learn how to handle the situation when the old ASP.NET Webforms ReportViewer messes up the styles of its toolbar and content area."
 slug: old-webforms-viewer-messes-toolbar-content-area-styles
 tags: telerik, reporting, troubleshoot, asp, net, webforms, old, reportviewer, messes, up, styles, toolbar, content, area
-published: True
+published: False
 type: troubleshooting
 res_type: kb
 ---

@@ -4,7 +4,7 @@ page_title: Client ID Is Not Found or Has Expired Error Occurs
 description: "Learn how to fix the error about a client ID that was not found or has expired when working with the Telerik Reporting HTML5 ReportViewer."
 slug: cannot-find-client-id-expired
 tags: telerik, reporting, troubleshoot, html5, reportviewer, cannot, find, client, id, or, expired
-published: True
+published: False
 type: troubleshooting
 res_type: kb
 ---

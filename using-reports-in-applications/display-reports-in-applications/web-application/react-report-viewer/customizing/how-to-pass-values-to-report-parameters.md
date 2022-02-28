@@ -18,7 +18,7 @@ To update the report source, the [reportSource(rs)]({%slug telerikreporting/usin
 
 The following example demonstrates how to update the report viewer when the selected value of the dropdown changes:
 
-```js
+````js
 export function ReportViewer() {
   const viewerRef = useRef(null);
 
@@ -59,7 +59,7 @@ export function ReportViewer() {
     </>
   )
 }
-```
+````
 
 > The React Report Viewer is not a native react.js component. If you use a state variable as the value of a report parameter, the report viewer will not refresh with the new value when the setState method of the state variable is executed.
 In order for the report viewer to be updated with the new value, the **reportSource(rs)** method must be called with the updated value of the state variable.

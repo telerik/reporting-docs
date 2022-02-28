@@ -4,7 +4,7 @@ page_title: Access to Path Denied Error Occurs
 description: "Learn how to fix the error about a denied access to a path occurs when working with the Telerik Reporting HTML5 ReportViewer."
 slug: denied-access-to-path-error
 tags: telerik, reporting, troubleshoot, html5, reportviewer, denied, access, to, path, error, occurs
-published: True
+published: False
 res_type: kb
 type: troubleshooting
 ---

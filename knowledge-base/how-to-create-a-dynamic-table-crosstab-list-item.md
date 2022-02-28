@@ -5,7 +5,7 @@ description: "Learn how to make a Table, Crosstab, or List report item dynamic w
 slug: how-to-create-a-dynamic-table-crosstab-list-item
 tags: telerik, reporting, how, to, create, make, set, up, dynamic, table, list, crosstab, item
 type: how-to
-published: False
+published: True
 res_type: kb
 ---
 

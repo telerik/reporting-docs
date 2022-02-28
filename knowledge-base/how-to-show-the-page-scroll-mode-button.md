@@ -5,7 +5,7 @@ description: "Learn how to show the Scroll Mode button on the page when using Te
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-show-the-page-scroll-mode-button
 tags: telerik, reporting, showing, the, page, scroll, mode, button
 previous_url: /using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-show-the-page-scroll-mode-button
-published: False
+published: True
 type: how-to
 res_type: kb
 ---

@@ -4,7 +4,7 @@ page_title: An Error Message Occurs When Adding a Viewer in Visual Studio
 description: "Learn how to handle the situation if an error message occurs when adding a viewer in Visual Studio."
 slug: error-when-adding-viewer-to-vs
 tags: telerik, reporting, troubleshoot, asp, net, webforms, reportviewer, error, message, when, adding, viewer, to, vs, visual, studio
-published: False
+published: True
 type: troubleshooting
 res_type: kb
 ---

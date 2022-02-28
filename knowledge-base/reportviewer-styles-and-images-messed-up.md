@@ -48,11 +48,13 @@ To solve the occurred issue:
 
 1. Check if the web HTTP handler of your ReportViewer is registered in the `web.config` file. If the application is deployed on IIS7 and set up to work in the integrated mode, make sure that the `preCondition` attribute is present at the end of the `Telerik.ReportViewer` handler: 
 
-   ````xml
-<add name="Telerik.ReportViewer.axd_*"
-    type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
-    path="Telerik.ReportViewer.axd" verb="*"
-    preCondition="integratedMode" />
+    ````xml
+<system.webServer>   
+    <handlers>   
+       <add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode" />   
+    </handlers>   
+    <validation validateIntegratedModeConfiguration="false" />     
+</system.webServer>  
 ````
 
 1. Check if the styles of the ReportViewer are registered on the page. This can be accomplished with an HTTP debugging proxy like Telerik Fiddler.

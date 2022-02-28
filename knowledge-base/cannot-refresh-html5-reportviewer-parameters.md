@@ -4,7 +4,7 @@ page_title: The HTML5 Report Viewer Parameters Are Not Updated on Refreshing
 description: "Learn how to fix the issues when the HTML5 ReportViewer parameters are not updated on refreshing."
 slug: cannot-refresh-html5-reportviewer-parameters
 tags: telerik, reporting, troubleshoot, html5, reportviewer, cannot, refresh, parameters
-published: True
+published: False
 type: troubleshooting
 res_type: kb
 ---

@@ -4,7 +4,7 @@ page_title: The Expression Contains Undefined MyUserFunction Error Occurs
 description: "Learn how to handle the possible causes if `The Expression Contains Undefined MyUserFunction` occurs in Telerik Reporting."
 slug: undefined-myuserfunction-error
 tags: telerik, reporting, run, time, expression, contains, undefined, myuserfunction, function, call, error, occurs
-published: True
+published: False
 component:
 type: troubleshooting
 res_type: kb

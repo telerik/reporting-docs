@@ -4,7 +4,7 @@ page_title: Error Message about Object Type Conversion Occurs Troubleshooting
 description: "Learn how to fix an error about failed object type conversion in Telerik Reporting."
 slug: object-type-conversion-error
 tags: telerik, reporting, troubleshoot, error, object, type, conversion
-published: False
+published: True
 component:
 type: troubleshooting
 res_type: kb

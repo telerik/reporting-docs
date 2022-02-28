@@ -4,7 +4,7 @@ page_title: The Old ASP.NET Webforms ReportViewer Cannot Display Table, List, or
 description: "Learn how to handle the situation when the old ASP.NET Webforms ReportViewer does not display reports holding Table, List, or Crosstab items."
 slug: old-webforms-viewer-cannot-display-list-items
 tags: telerik, reporting, troubleshoot, asp, net, webforms, old, reportviewer, doesn't, display, list, table, crosstab, item, report
-published: False
+published: True
 type: troubleshooting
 res_type: kb
 ---

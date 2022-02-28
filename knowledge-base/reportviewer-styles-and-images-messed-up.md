@@ -32,7 +32,7 @@ res_type: kb
 
 ## Description
 
->The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).   
+>The described scenario and suggested solution relate to the legacy ASP.NET WebForms ReportViewer. It is recommended that you migrate to the [HTML5 ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}). 
 
 The legacy ASP.NET Web Forms ReportViewer looks messed up because its styles and images are missing.
 
@@ -46,15 +46,15 @@ To solve the occurred issue:
 
 1. Check if `runat="server"` is present in the head tag of your web page.
 
-1. Check if the web HTTP handler of your ReportViewer is registered in the `web.config` file. If the application is deployed on IIS7 and set up to work in the integrated mode, make sure that the `preCondition` attribute is present at the end of the `Telerik.ReportViewer` handler:             
+1. Check if the web HTTP handler of your ReportViewer is registered in the `web.config` file. If the application is deployed on IIS7 and set up to work in the integrated mode, make sure that the `preCondition` attribute is present at the end of the `Telerik.ReportViewer` handler: 
 
-      ````XML
-<add
-    name="Telerik.ReportViewer.axd_*"
-    type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"
-    path="Telerik.ReportViewer.axd" verb="*"
-    preCondition="integratedMode"
-/>
+    ````xml
+<system.webServer>   
+    <handlers>   
+       <add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode" />   
+    </handlers>   
+    <validation validateIntegratedModeConfiguration="false" />     
+</system.webServer>  
 ````
 
 1. Check if the styles of the ReportViewer are registered on the page. This can be accomplished with an HTTP debugging proxy like Telerik Fiddler.

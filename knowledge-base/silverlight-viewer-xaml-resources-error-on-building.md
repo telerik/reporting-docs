@@ -4,7 +4,7 @@ page_title: XAML Resources-Related Errors Occur on Building Silverlight Applicat
 description: "Learn how to handle the errors related to XAML resources when building a Silverlight application."
 slug: silverlight-viewer-xaml-resources-error-on-building
 tags: telerik, reporting, troubleshoot, silverlight, reportviewer, xaml, resources, errors, occur, on, building, applications, apps
-published: False
+published: True
 type: troubleshooting
 res_type: kb
 ---

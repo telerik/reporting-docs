@@ -32,73 +32,7 @@ Using the SubReport Item with Parameters in a Master-Detail Report is described 
 In this case, the logic requires creating two InstanceReportSource objects and a Report Object from the Main Report.(cs|vb) class. Query the Main Report Object for the SubReport Item. Then set the Report Source of the SubReport Item to the SubReport Instance Report Source. See the below code snippets for more details.
 
 
-### Visual Basic
-```vb
-Imports System.Reflection
-Imports Telerik.Reporting
-Imports Telerik.Reporting.Processing
-Imports System.IO
-
-Module Module1
-    Sub Main()
-
-        Console.WriteLine("Enter Number: 1, 2 or 3")
-        Dim Input As Object = Console.ReadLine()
-
-        Dim ReportProcessor As New ReportProcessor()
-        Dim DeviceInfo As New Hashtable()
-
-        '   Create MainReport InstanceReportSource
-        Dim MainInstanceReportSource As New InstanceReportSource()
-
-        '   Create SubReport InstanceReportSource
-        Dim SubInstanceReportSource As New InstanceReportSource With {
-            .ReportDocument = New SubReport() '   Set ReportDocument of SubInstanceReportSource
-        }
-
-        '   Set Parameters of SubReport InstanceReportSource
-        SubInstanceReportSource.Parameters.Add("PersonId", Input)
-
-        '   Create MainReport Object
-        Dim MainReportObject As New MainReport()
-
-        '   Find SubReport Report Item of Main Report
-        Dim SubReportSource As Telerik.Reporting.SubReport = MainReportObject.Items.Find("SubReport1", True)(0)
-
-        '   Set Report Source of SubReport in MainReport
-        SubReportSource.ReportSource = SubInstanceReportSource
-
-        '   Set the ReportDocument of the MainInstanceReportSource
-        MainInstanceReportSource.ReportDocument = MainReportObject
-
-        '   Set Parameters of MainInstanceReportSource
-        MainInstanceReportSource.Parameters.Add("PersonId", Input)
-
-        '   Continue with Embedding the Report Engine in Application
-        Dim PdfRendering As RenderingResult = ReportProcessor.RenderReport("PDF", MainInstanceReportSource, DeviceInfo)
-
-        Dim FileName As String = PdfRendering.DocumentName + "." + PdfRendering.Extension
-
-        '   Saves the Report in Temp Folder C:\Users\[USER]\AppData\Local\Temp
-        Dim Path As String = IO.Path.GetTempPath()
-        Dim FilePath As String = IO.Path.Combine(Path, FileName)
-
-        '   Writes File To Disk
-        Using Stream As New FileStream(FilePath, FileMode.Create)
-            Stream.Write(PdfRendering.DocumentBytes, 0, PdfRendering.DocumentBytes.Length)
-        End Using
-
-        Console.WriteLine($"File Created: {FilePath}")
-
-        Console.WriteLine("Press Enter to Exit")
-
-        Console.ReadKey()
-    End Sub
-End Module
-```
-
-### C-Sharp
-``` csharp
+```` csharp
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -172,7 +106,72 @@ static class Program
         Console.ReadKey();
     }
 }
-```
+````
+````vb
+Imports System.Reflection
+Imports Telerik.Reporting
+Imports Telerik.Reporting.Processing
+Imports System.IO
+
+Module Module1
+    Sub Main()
+
+        Console.WriteLine("Enter Number: 1, 2 or 3")
+        Dim Input As Object = Console.ReadLine()
+
+        Dim ReportProcessor As New ReportProcessor()
+        Dim DeviceInfo As New Hashtable()
+
+        '   Create MainReport InstanceReportSource
+        Dim MainInstanceReportSource As New InstanceReportSource()
+
+        '   Create SubReport InstanceReportSource
+        Dim SubInstanceReportSource As New InstanceReportSource With {
+            .ReportDocument = New SubReport() '   Set ReportDocument of SubInstanceReportSource
+        }
+
+        '   Set Parameters of SubReport InstanceReportSource
+        SubInstanceReportSource.Parameters.Add("PersonId", Input)
+
+        '   Create MainReport Object
+        Dim MainReportObject As New MainReport()
+
+        '   Find SubReport Report Item of Main Report
+        Dim SubReportSource As Telerik.Reporting.SubReport = MainReportObject.Items.Find("SubReport1", True)(0)
+
+        '   Set Report Source of SubReport in MainReport
+        SubReportSource.ReportSource = SubInstanceReportSource
+
+        '   Set the ReportDocument of the MainInstanceReportSource
+        MainInstanceReportSource.ReportDocument = MainReportObject
+
+        '   Set Parameters of MainInstanceReportSource
+        MainInstanceReportSource.Parameters.Add("PersonId", Input)
+
+        '   Continue with Embedding the Report Engine in Application
+        Dim PdfRendering As RenderingResult = ReportProcessor.RenderReport("PDF", MainInstanceReportSource, DeviceInfo)
+
+        Dim FileName As String = PdfRendering.DocumentName + "." + PdfRendering.Extension
+
+        '   Saves the Report in Temp Folder C:\Users\[USER]\AppData\Local\Temp
+        Dim Path As String = IO.Path.GetTempPath()
+        Dim FilePath As String = IO.Path.Combine(Path, FileName)
+
+        '   Writes File To Disk
+        Using Stream As New FileStream(FilePath, FileMode.Create)
+            Stream.Write(PdfRendering.DocumentBytes, 0, PdfRendering.DocumentBytes.Length)
+        End Using
+
+        Console.WriteLine($"File Created: {FilePath}")
+
+        Console.WriteLine("Press Enter to Exit")
+
+        Console.ReadKey()
+    End Sub
+End Module
+````
+
+
 ## See Also
 *   [How to: Create a Master-Detail Report Using a SubReport Item](https://docs.telerik.com/reporting/designing-reports-master-detail)
 *   [Embedding the Engine](https://docs.telerik.com/reporting/programmatic-exporting-report)

@@ -4,7 +4,7 @@ page_title: Cannot Render Multi-Column Reports as Sub-Reports
 description: "Learn how to manage multi-column reports in Telerik Reporting."
 slug: unable-to-show-multi-column-subreports
 tags: telerik, reporting, design, time, cannot, show, multicolumn, subreports
-published: False
+published: True
 component:
 type: troubleshooting
 res_type: kb

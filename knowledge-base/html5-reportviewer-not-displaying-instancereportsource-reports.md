@@ -4,7 +4,7 @@ page_title: HTML5 Report Viewer Does Not Display InstanceReportSource Reports
 description: "Learn how to display reports with the Telerik Reporting HTML5 ReportViewer specified with the InstanceReportSource."
 slug: html5-reportviewer-not-displaying-instancereportsource-reports
 tags: telerik, reporting, troubleshoot, html5, reportviewer, not, displaying, instacereportsource, reports
-published: False
+published: True
 res_type: kb
 type: troubleshooting
 ---

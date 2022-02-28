@@ -4,7 +4,7 @@ page_title: HTML5 WebForms Report Viewer Does Work on AJAXified Pages
 description: "Learn how to make the Telerik Reporting HTML5 WebForms ReportViewer in AJAXified pages."
 slug: html5-webforms-viewer-not-working-in-ajaxified-pages
 tags: telerik, reporting, troubleshoot, html5, webforms, reportviewer, not, working, in, ajaxified, pages
-published: True
+published: False
 res_type: kb
 type: troubleshooting
 ---

@@ -4,8 +4,8 @@ description: Refer Themes in ResourceDictionary from XAML files instead of Teler
 type: how-to
 page_title: Use styles from XAML files in WPF Viewer
 slug: wpf-viewer-themes-from-xaml
-position: 
-tags: 
+position:
+tags:
 ticketid: 1342969
 res_type: kb
 ---
@@ -20,6 +20,10 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
+	<tr>
+		<td>Report Viewers</td>
+		<td>WPF</td>
+	</tr>
 </table>
 
 
@@ -31,9 +35,9 @@ Add a folder (e.g. __Themes__) in the WPF Viewer project and copy the XAML files
 
 The themes can be referred directly in the _App.xaml_ file, or alternatively in the _code behind_.
 
-1. In the _App.xaml_ instead of content of the <ResourceDictionary.MergedDictionaries> element from step 4 in the [WPF Report Viewer Manual Setup](../wpf-report-viewer-manual-setup) article use the following (the example uses _Material_ theme) :
+1. In the _App.xaml_ instead of content of the <ResourceDictionary.MergedDictionaries> element from step 4 in the [WPF Report Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}) article use the following (the example uses _Material_ theme) :
 
-    ``` XML
+    ```` XML
     <Application.Resources >
     .....
     <ResourceDictionary>
@@ -44,15 +48,17 @@ The themes can be referred directly in the _App.xaml_ file, or alternatively in 
         <ResourceDictionary Source="Themes/Material/Telerik.Windows.Controls.Navigation.xaml" />
         <ResourceDictionary Source="Themes/Material/Telerik.ReportViewer.Wpf.xaml" />
         </ResourceDictionary.MergedDictionaries>
-        
+
         // YOU MAY ADD OTHER STYLES IN THE <ResourceDictionary> TAG :
         .....
     </ResourceDictionary>
     .....
     </Application.Resources>
-    ```
-2. In the code behind use the following code that first clears the already merged dictionaries (if any), and then adds the new ones :
-    ```CSHARP
+    ````
+    
+1. In the code behind use the following code that first clears the already merged dictionaries (if any), and then adds the new ones : 
+ 
+    ````CSHARP
     public partial class ReportViewerWindow1 : Window
     {
         static readonly string[] dictionaries = new[]
@@ -63,13 +69,13 @@ The themes can be referred directly in the _App.xaml_ file, or alternatively in 
                 "Themes/{0}/Telerik.Windows.Controls.Navigation.xaml",
                 "Themes/{0}/Telerik.ReportViewer.Wpf.xaml"
             };
-    
+
         public ReportViewerWindow1()
         {
             InitializeComponent();
             MergeResourceDictionaries("Material"); // Set the required theme name here
         }
-    
+
         static void MergeResourceDictionaries(string theme)
         {
             var mergedDictionaries = Application.Current.Resources.MergedDictionaries;
@@ -84,4 +90,6 @@ The themes can be referred directly in the _App.xaml_ file, or alternatively in 
             }
         }
     }
-    ```
+    ````
+
+

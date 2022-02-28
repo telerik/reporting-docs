@@ -22,7 +22,7 @@ res_type: kb
 
 Out of the box, Telerik Reporting offers multi-column reports with data flow - down the page and then across. How to set up this report layout is elaborated in the <a href="../advanced-creating-multi-column-reports" target="_blank">How to: Create a Multi-Column Report</a> help article. However, in some cases you may need a multi-column report layout with data flow across the page and then down.
 
-Due to the data driven nature of Telerik Reporting this can be easily achieved with our <a href="../table-working-with-table-cross-table-list-items" target="_blank">Table/Crosstab/List</a> item and indexed data 
+Due to the data driven nature of Telerik Reporting this can be easily achieved with our <a href="{% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}" target="_blank">Table/Crosstab/List</a> item and indexed data 
    
 ## Solution    
  

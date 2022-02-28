@@ -23,7 +23,7 @@ res_type: kb
 Sometimes it is required the row(column) grouping cells/items to appear **unmerged** in the _CrossTab_. 
 
 ## Solution
-It is necessary to insert additional columns(rows) in the **Body** area of the _CrossTab_ and hide the corresponding items (cells/columns/rows) in the **Row Group** / **Column Group** and **Corner** areas (details on CrossTab areas can be found in [Understanding Crosstab Areas](../table-understanding-crosstab-areas) article).
+It is necessary to insert additional columns(rows) in the **Body** area of the _CrossTab_ and hide the corresponding items (cells/columns/rows) in the **Row Group** / **Column Group** and **Corner** areas (details on CrossTab areas can be found in [Understanding Crosstab Areas]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas %}) article).
 
 The approach is demonstrated in [those sample reports](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/crosstabunmergeheaderssamplereports.zip?sfvrsn=db3863fc_2).
 + **report_original(merged).trdp** is the original report with merged by default row and column headers.

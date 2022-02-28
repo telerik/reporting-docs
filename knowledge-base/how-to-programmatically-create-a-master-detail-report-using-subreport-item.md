@@ -32,7 +32,7 @@ Using the SubReport Item with Parameters in a Master-Detail Report is described 
 In this case, the logic requires creating two InstanceReportSource objects and a Report Object from the Main Report.(cs|vb) class. Query the Main Report Object for the SubReport Item. Then set the Report Source of the SubReport Item to the SubReport Instance Report Source. See the below code snippets for more details.
 
 
-```` csharp
+````C#
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -107,7 +107,7 @@ static class Program
     }
 }
 ````
-````vb
+````VB
 Imports System.Reflection
 Imports Telerik.Reporting
 Imports Telerik.Reporting.Processing
@@ -173,5 +173,7 @@ End Module
 
 
 ## See Also
+
 *   [How to: Create a Master-Detail Report Using a SubReport Item](https://docs.telerik.com/reporting/designing-reports-master-detail)
+
 *   [Embedding the Engine](https://docs.telerik.com/reporting/programmatic-exporting-report)

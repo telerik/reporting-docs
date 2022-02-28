@@ -20,7 +20,7 @@ res_type: kb
 	</tr>
 </table>
 
-> This article relates only to the [Legacy Report Viewer](../asp-net-report-viewer). You may be looking for [HTML5 Report Viewer Troubleshooting](../html5-viewer-troubleshooting)
+> This article relates only to the [Legacy Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}). You may be looking for [HTML5 Report Viewer Troubleshooting]({%slug html5-reportviewer-styles-messed-up%})
 
 ## Description 
 

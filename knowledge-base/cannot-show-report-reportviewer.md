@@ -5,7 +5,7 @@ description: "Learn how to programmatically specify a report in a separate class
 slug: cannot-show-report-reportviewer
 previous_url: /troubleshooting/design-time
 tags: telerik, reporting, design, time, cannot, show, report, reportviewer
-published: True
+published: False
 component: reportviewer
 type: troubleshooting
 res_type: kb

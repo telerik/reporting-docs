@@ -1,0 +1,164 @@
+As a general guide for structuring the MD document, you may follow the article [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). There are some settings though that should be corrected due to the specifics of the Telerik Documentation building process.
+
+The Preview of the MD documents in Github is NOT what would appear as a final document after building the documentation with JEKYLL. You need to make sure the specific parts of the mark down as CODE SNIPPETS, LISTS, TABLES, ARTICLE HEADER SECTION, etc. comply with the following rules. Next, we will address all the known issues:
+
+
+## ARTICLE HEADER SECTION
+
+Do NOT leave empty headers in the article headers that host its main attributes as TITLE, SLUG, DESCRIPTON, etc. If you need to have an attribute without a value, put a space " ". Here is a sample header section:
+
+````
+---
+title: Actions not working on Preview
+description: Some or all report item actions may not work on previewing the report. A couple of scenarios, under which this could occur, are explained in this article.
+type: how-to
+page_title: Unable to use interactive actions when previewing the report
+slug: actions-not-working-on-preview
+res_type: kb
+---
+````
+
+## TITLE
+
+Do NOT use these special characters in the title:
+/have to remember which ones :D/
+
+
+## TABLES
+
++ MD-style Tables generally appear with columns that are with equal width. To make each columns with specific width, there are two approaches. You need to select the proper one, depending on the table content and on whether there is only one or more tables in the article.
+
+   1. Use the __MD-style Tables__. 
+
+      This will let you use MD-style links and other MD-formatted content inside the table. However, by default the table columns will have equal widths. To overcome this, you may add the following CSS style in the article before the table. The particular example assumes that there are 3 columns. The first would take 20%, the second - 30% and the third - 50%:
+      
+      ````CSS
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 30%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+</style>
+
+````
+
+	Another drawback of this approach is that you may use only 1 (one) such styling for each article, hence, all the tables would finally have the same column widths. If you need tables with different column distribution, you need to use the next approach.
+	
+   2. Use the __HTML-style Tables__. 
+   
+      This will let you configure the table exactly as required. However, the MD-style links and other MD-formatted content inside the table will appear as regular text. If you have such content you need to replace it with the corresopnding HTML-formatted content. For example, the links should become <a> tags, etc.
+   
+   
++ If you have nested tables, you may use any of the above approaches for the main table. The nested tables should be HTML tables.
+
++ You may use the `<br />` HTML tag to split the table content on different lines.
+
++ If there are lists inside the table, you may use the HTML-tags <ul>, <ol> and <li> to format them properly. 
+
+
+## CODE SNIPPETS
+
++ Use 4(four) backward ticks: ```` to start and finish the code blocks. You may use the language name after the opening ticks. The 4 ticks let you format the code as you want it. However, this will prevent you from previewing the MD properly in Github.
+
++ If you would like tabbed code blocks, for example, one in C# and one in VB, so that you may switch between them, you need to place them one after the other. You may also optionally put the source for the code just above the corresopnding snippet. When building, a special code will read the actual snippet and update the MD article. Here is an example:
+
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=SampleDataSource}}
+````C#
+		class Product
+		{
+			//properties
+		}
+
+
+		[DataObject]
+		class Products
+		{
+			//objects
+		}
+````
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=SampleDataSource}}
+````VB
+	Class Product
+		'properties
+	End Class
+
+	<DataObject()>
+	Class Products
+		'objects
+	End Class
+
+````
+
++ Code snippets in Lists 
+
+   /PLEASE, UPDATE THIS IF YOU FOUND A WAY TO ADD TABBED CODE SNIPPETS UNDER A LIST ITEM WITHOUT BREAKING THE LIST/
+   You may use only untabbed code snippets in a List item. That said, if you need two snippets under the same list item, they need to be displayed one after the other instead in two Tabs of the same code block. This requires a layout like the following:
+   
+!!!!starting the sample!!!!     
+1.  ... 
+
+	````C#
+class Product
+{
+	//properties
+}
+
+[DataObject]
+class Products
+{
+	//objects
+}
+````
+````VB
+Class Product
+	'properties
+End Class
+
+<DataObject()>
+Class Products
+	'objects
+End Class	
+````
+   
+2.  ...
+!!!!finishing the sample!!!! 
+
+
+   Note that the code block opener for the VB snippet is not indented as the C# one. This breaks the tabbed appearance of the snippets.
+   
+   If you indented also the second code block (VB), this would have brokek the List.
+   If the list is undoredered, this may still be acceptable, although the code block would appear as a sibling rather than a child of the List.
+   If the list is orthered though, the next List item will start from 1. 
+   
+
+## LISTS
+
+All the content that must appear under the List items should be propertly indented. It should be aligned with the List item content that follows the List identifier, i.e. the number (for ordered lists) or the bullet mark (for unordered lists).
+
++ Lists in tables - see the corresponding section in [TABLES](#TABLES).
+
++ Code snippets in Lists - see the corresponding section in [CODE SNIPPETS](#CODE SNIPPETS).
+
+
+## LINKS
+
+When referring to articles from the documentation or KBs, it is recommended to use SLUG reference. The syntaxis is as follows:
+
+	[text to be shown]({%slug referencedArticleSlug%})
+
+for example:
+
+	[1D Barcodes]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/1d-barcodes%})
+
+You may include also reference to sections of the article. The sections are the lines beginning with one or more '#'. In this case, the syntaxis is:
+
+	[text to be shown]({%slug referencedArticleSlug%}#sectionTitle)
+
+Note that "sectionTitle" is the name of the section with all words in small letters linked with dash (-). For example, "Available Report Sources" would be represented as "available-report-sources".
+The following code would generate the link "https://docs.telerik.com/reporting/designing-reports/report-sources/overview#available-report-sources" and display the section named "Available Report Sources" of the corresponding article:
+	[server-side ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources)

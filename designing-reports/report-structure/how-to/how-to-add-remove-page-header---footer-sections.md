@@ -34,11 +34,10 @@ The size of page sections can be controlled with [Bindings]({%slug telerikreport
 
 The PageHeader *PrintOnFirstPage* has priority over its *PrintOnLastPage*. The opposite is valid for the PageFooter. For that reason, when a report contains only one page, hence it is both the first and the last, for the PageHeader the *PrintOnFirstPage* property will be respected, and for PageFooter - the *PrintOnLastPage*. 
 
->info Page sections are not related to the report itself, but are relative to the paper or screen. Thus page sections of nested/detail reports are ignored and only the page sections of the main report are visible. 
+>note Page sections are not related to the report itself, but are relative to the paper or screen. Thus page sections of nested/detail reports are ignored and only the page sections of the main report are visible. 
 
-  
-
-> [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections, because the latter are processed after the report data has been processed. At this moment the report data source is not available anymore. 
+ 
+>[Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections, because the latter are processed after the report data has been processed. At this moment the report data source is not available anymore. 
 
 
 ## Adding Calculated Page Totals to a Header or Footer

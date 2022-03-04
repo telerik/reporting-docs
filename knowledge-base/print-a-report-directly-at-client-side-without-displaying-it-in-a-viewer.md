@@ -16,7 +16,7 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>Report Viewer</td>
-			<td>All</td>
+			<td>HTML5 Report Viewers</td>
 		</tr>
 	</tbody>
 </table>
@@ -37,9 +37,9 @@ The existing print functionality in web viewers is based on the following:
 
 4. Once the PDF is loaded in the browser, hidden from the user, the PDF plugin used as a PDF reader shows its Print dialog.
 
-In the above scenario, the PDF plugin is a must for the browser. The approach is based on PDF export because applications running in a browser do not have permissions to access the machine (technology restrictions). For more details, please check <a href="/html5-report-viewer-direct-print" target="_blank">Printing Reports</a>.
+In the above scenario, the PDF plugin is a must for the browser. The approach is based on PDF export because applications running in a browser do not have permissions to access the machine (technology restrictions). For more details, please check [Printing Reports](../using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports).
 
-To export the report in a PDF file, you can use a [ReportProcessor](../t-telerik-reporting-processing-reportprocessor) in code instead of a viewer.
+To export the report in a PDF file, you can use a [ReportProcessor](../api/Telerik.Reporting.Processing.ReportProcessor.html) in code instead of a viewer.
 
 ## Notes
 
@@ -49,10 +49,9 @@ The result PDF file rendered on the server is returned with **Content-Dispositi
 
  > The confirmation of the print operation cannot be avoided due to security restrictions.
 
-## Additional resources
-[MVC WebForms Client Print Example](/knowledge-base/resources/mvc-webforms-clientprint.zip)
-
-[VB Client Print Example](/knowledge-base/resources/clientprintingvb.zip)
-
 ## See Also
-<a href="/html5-report-viewer-direct-print" target="_blank">Printing Reports</a>
+[Printing Reports](../using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports)
+
+[MVC WebForms Client Print Example](resources/mvc-webforms-clientprint.zip)
+
+[VB Client Print Example](resources/clientprintingvb.zip)

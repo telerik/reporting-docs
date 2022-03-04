@@ -36,7 +36,7 @@ To add new ShapeMap series to the map follow these steps:
 
 1. Setup the [ColorPalette](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_ColorPalette) property in order to define a range of colors that will be used when displaying the data points. In the most cases the [GradientPalette](/reporting/api/Telerik.Reporting.Drawing.GradientPalette) will be the best choice. 
 
-1. Setup the Shape Source.
+1. Source for the shapes.
 
    + If you want to use a Well-known text __(WKT)__ or its binary representation __(WKB)__ as a source for your shapes, select the __SourceType__ property and choose __WellKnownText__ from the drop-down list. In the property __SpatialField__ below you have to write an expression or select the data set field that will provide the WKT/WKB data. This property is mandatory and it will be used by the processing engine to evaluate the contents of the field against the current data record and parse it as a __Well-known text__ or __Well-known binary__. Since the ShapeMapSeries displays polygons as its data points, the WKT/WKB contents will be used only if they contain valid __POLYGON__ or __MULTIPOLYGON__ definitions. The parsing of the points data will be done using __InvariantCulture__, so make sure your WKT definition uses period [.] as a decimal symbol. 
 

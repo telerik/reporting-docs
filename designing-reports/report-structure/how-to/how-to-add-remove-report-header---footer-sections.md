@@ -10,8 +10,6 @@ position: 1
 
 # How to Add/Remove Report Header & Footer Sections
 
-
-
 Reports can contain report headers and footers. By default, new reports are created without these sections.
 
 * Any control you place in the report header section is rendered once at the top of the entire report's output, but after the first page header section (if any).
@@ -22,17 +20,13 @@ Reports can contain report headers and footers. By default, new reports are crea
 
 1. Right-click on any section header in the report, or in the empty space around the sections.
 
-1. Select __Report Header__ or __Report Footer__.
-
-  
+1. Select __Report Header__ or __Report Footer__.  
 
   ![](images/ReportDesign006.png)
 
 
 # See Also
- 
 
 * [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  
 
 * [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)
-

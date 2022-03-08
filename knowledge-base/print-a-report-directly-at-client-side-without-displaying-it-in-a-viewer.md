@@ -37,7 +37,7 @@ The existing print functionality in web viewers is based on the following:
 
 4. Once the PDF is loaded in the browser, hidden from the user, the PDF plugin used as a PDF reader shows its Print dialog.
 
-In the above scenario, the PDF plugin is a must for the browser. The approach is based on PDF export because applications running in a browser do not have permissions to access the machine (technology restrictions). For more details, please check [Printing Reports](../using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports).
+In the above scenario, the PDF plugin is a must for the browser. The approach is based on PDF export because applications running in a browser do not have permissions to access the machine (technology restrictions). For more details, please check [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}).
 
 To export the report in a PDF file, you can use a [ReportProcessor](../api/Telerik.Reporting.Processing.ReportProcessor.html) in code instead of a viewer.
 
@@ -50,7 +50,7 @@ The result PDF file rendered on the server is returned with **Content-Dispositi
  > The confirmation of the print operation cannot be avoided due to security restrictions.
 
 ## See Also
-[Printing Reports](../using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports)
+[Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})
 
 [MVC WebForms Client Print Example](resources/mvc-webforms-clientprint.zip)
 

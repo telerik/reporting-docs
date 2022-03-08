@@ -16,7 +16,7 @@ res_type: kb
 	</tr>
 	   <tr>
 		<td>Visual Studio</td>
-		<td>2010,2015</td>
+		<td>2010,2015, 2017, 2019</td>
 	</tr>
        <tr>
 		<td>Report Designer</td>
@@ -125,9 +125,33 @@ The cause of the issues is RIA services. Uninstall WCF RIA Services and WCF RIA 
  HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Microsoft SDKs\Silverlight\v4.0\AssemblyFoldersEx\Ria Services v1.0 Silverlight Libraries\Toolbox 
  
  HKEY\_LOCAL\_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Microsoft SDKs\Silverlight\v5.0\AssemblyFoldersEx\Ria Services v1.0 Silverlight Libraries\Toolbox
+ 
+## Reset of the Visual Studio Toolbox 
+
+If the above doesn't help, you may reset completely the Visual Studio Toolbox, which is done as follows:
+
+1. Close all Visual Studio instances. 
+
+2. Open the **%localappdata%\Microsoft\VisualStudio\16.0_[InstanceID]**  folder and remove all __*.tbd__ files. 
+
+3. Open the **%localappdata%\Microsoft\VisualStudio\16.0_[InstanceID]**  folder and delete the __ComponentModelCache__ folder. 
+
+4. Load the Visual Studio __privateregistry.bin__ using these steps: 
+
+   - Launch __RegEdit.exe__ 
+   - Select the __Computer\HKEY_LOCAL_MACHINE__ node in the left-hand pane 
+   - Select the __File | Load Hive...__ menu item, and load the __privateregistry.bin__ 
+   - When prompted for a key name, just type in something like __"VSRegHive"__ (or one of your choice) 
+   - This will load the data into a VSRegHive under the HKLM node 
+
+5. Find the **[HiveName]\Software\Microsoft\VisualStudio\16.0_[InstanceID]\ToolboxControlsInstaller_AssemblyFoldersExCache** and **[HiveName]\Software\Microsoft\VisualStudio\16.0_[InstanceID]\ToolboxControlsInstallerCache** registry keys. Remove everything from these keys leaving them empty. 
+
+6. When finished be sure to select the VSRegHive and select __File | Unload Hive...__, before exiting the __RegEdit.exe__ utility, otherwise Visual Studio will fail to start. 
+
+7. Run Visual Studio again and open the Visual Studio Toolbox window. Then wait until it recreates all items in the Toolbox. 
 
 ## See Also
 
-- [Telerik Reporting Missing in Visual Studio](./telerik-reporting-missing-in-visual-studio)
+- [Telerik Reporting Missing in Visual Studio]({%slug telerik-reporting-missing-in-visual-studio%})
 
-- [Telerik Reporting wizards don't show up in VS 2017 Toolbox](./missing-telerik-reporting-toolbox-wizards-in-visual-studio-2017)
+- [Telerik Reporting wizards don't show up in VS 2017 Toolbox]({%slug missing-telerik-reporting-toolbox-wizards-in-visual-studio-2017%})

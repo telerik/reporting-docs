@@ -23,9 +23,9 @@ res_type: kb
 
 ## Description
 
-The rendered report document contains weird symbols in place of the currency symbol in the textboxes that have currency formatting applied to them.
+The rendered report document contains weird symbols in place of the currency symbol in the textboxes that have currency formatting applied.
 
-When determining what Culture to use for formatting strings and text direction, the rendering engine will inspect the those objects in the following order:
+When determining what Culture to use for formatting strings and text direction, the rendering engine will inspect those objects in the following order:
 
 1. The Culture of the TextBox.
 
@@ -36,18 +36,18 @@ When determining what Culture to use for formatting strings and text direction, 
 
 ## Possible Cause
 
-This could be caused by the environment, where the report is rendered, having a different culture than the machine, where the report was designed had.
+This could be caused by the environment, where the report is rendered, having a different culture than the machine, where the report was designed.
 
-For example, if the production environment has a specific culture, whose currency symbol is not available in the font used by the textbox.
+For example, if the production environment had a specific culture, which currency symbol was not available in the font used by the textbox.
 
 ## Solution
 
-1. You may wrap your textbox's __Value__ expression in the __FormatWithCulture(cultureName, format, args)__ [text function](../designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions) to ensure that the textbox will be formatted with that specific culture.
+1. You may wrap your textbox's __Value__ expression in the __FormatWithCulture(cultureName, format, args)__ [text function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}) to ensure that the textbox will be formatted with that specific culture.
 
 2. You may set the [Report.Culture](../api/Telerik.Reporting.Report.html#collapsible-Telerik_Reporting_Report_Culture) to a specific culture that will be used whenever the report is rendered.
 
 ## See Also
 
-* [Report Globalization](../designing-reports/report-globalization)
+* [Report Globalization]({%slug telerikreporting/designing-reports/report-globalization%})
 
-* [Text Functions](../designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions)
+* [Text Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%})

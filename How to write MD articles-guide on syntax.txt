@@ -131,9 +131,9 @@ End Class
 
    Note that the code block opener for the VB snippet is not indented as the C# one. This breaks the tabbed appearance of the snippets.
    
-   If you indented also the second code block (VB), this would have brokek the List.
+   If you indented also the second code block (VB), this would have broken the List.
    If the list is undoredered, this may still be acceptable, although the code block would appear as a sibling rather than a child of the List.
-   If the list is orthered though, the next List item will start from 1. 
+   If the list is ordered though, the next List item will start from 1. 
    
 
 ## LISTS
@@ -162,3 +162,19 @@ You may include also reference to sections of the article. The sections are the 
 Note that "sectionTitle" is the name of the section with all words in small letters linked with dash (-). For example, "Available Report Sources" would be represented as "available-report-sources".
 The following code would generate the link "https://docs.telerik.com/reporting/designing-reports/report-sources/overview#available-report-sources" and display the section named "Available Report Sources" of the corresponding article:
 	[server-side ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources)
+
+
+## NOTES, WARNINGS AND OTHER SPECIAL MESSAGES
+
+The Slugs DON'T WORK in special messages that include the type of the message. For example, the following link would be broken:
+
+	>important some text [link]({%slug putTheSlugHere%})
+	
+The workaround is to use a absolute or relative URL rather than Slug, for example:
+
+	>important some text [report sources]({../designing-reports/report-sources/overview})
+
+If you need a special messaage with Slug, you may skip the type of the message. For example, the following will generate the correct link:
+
+	> some text [link]({%slug putTheSlugHere%})
+	

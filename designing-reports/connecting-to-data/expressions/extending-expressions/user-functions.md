@@ -108,7 +108,13 @@ To invoke this function, set the following expression:
 
 ## Extending Reporting Engine with User Functions
 
-If your custom user functions are linked from an external assembly, in order the designer to recognize them, you will have to [extend the configuration of the start application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}). For the Visual Studio Report Designer this is the 'deveng.exe.config' file that resides in 'C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE' by default (it is recommended to create a backup copy before modifying it). You can type the expression by specifying the full assembly qualified name of the function and passing a parameter of the expected type. To run the report in other project use the same approach - add the assembly to the root folder from where the application is executed and configure it to load the external assembly by extending the configuration. 
+If your custom user functions are linked from an external assembly, in order the designer to recognize them, you will have to [extend the configuration of the start application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).
+
+ > The Stanandalone Report Designer cannot recognize assemblies that target .NET Core/5/6 and higher or .NET Standard 2.1 and higher
+
+For the Visual Studio Report Designer this is the 'deveng.exe.config' file that resides in 'C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE' by default (it is recommended to create a backup copy before modifying it). You can type the expression by specifying the full assembly qualified name of the function and passing a parameter of the expected type. 
+
+To run the report in other projects, use the same approach - add the assembly to the root folder from where the application is executed and configure it to load the external assembly by extending the configuration. 
 
 # See Also
 

@@ -56,7 +56,7 @@ table th:nth-of-type(3) {
    
 + If you have nested tables, you may use any of the above approaches for the main table. The nested tables should be HTML tables.
 
-+ You may use the `<br />` HTML tag to split the table content on different lines.
++ You may use the `<br />` HTML tag to split the table content on different lines. The new lines will break the table.
 
 + If there are lists inside the table, you may use the HTML-tags <ul>, <ol> and <li> to format them properly. 
 

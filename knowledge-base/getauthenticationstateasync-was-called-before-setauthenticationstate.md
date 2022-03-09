@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-Error 'GetAuthenticationStateAsync was called before SetAuthenticationState.' is thrown in a [Custom Report Source Resolver]{%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%} that uses **GetAuthenticationStateAsync**.
+Error 'GetAuthenticationStateAsync was called before SetAuthenticationState.' is thrown in a [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) that uses **GetAuthenticationStateAsync**.
 
 ## Error Message
 GetAuthenticationStateAsync was called before SetAuthenticationState.
@@ -32,7 +32,7 @@ GetAuthenticationStateAsync was called before SetAuthenticationState.
 The Telerik Reporting REST Service is recommended to be in a Singleton scope. However, the AuthenticationProvider requires utilizing the Scoped option. You can find more information in [Accessing an authenticated user outside of a view in Blazor](https://stackoverflow.com/questions/59744356/accessinging-an-authenticated-user-outside-of-a-view-in-blazor) Stack Overflow thread.
 
 ## Solution
-We support accessing the current user inside the CustomReportSourceResolver using our own mechanism as described in [ASP.NET Core. How to use information from HttpContext in Custom Report Resolver]{%slug core-how-to-pass-information-from-httpcontext-to-reporting-engine%}. For example:
+We support accessing the current user inside the CustomReportSourceResolver using our own mechanism as described in [ASP.NET Core. How to use information from HttpContext in Custom Report Resolver]({%slug core-how-to-pass-information-from-httpcontext-to-reporting-engine%}). For example:
 
 ````Csharp
 public class CustomReportSourceResolver : IReportSourceResolver

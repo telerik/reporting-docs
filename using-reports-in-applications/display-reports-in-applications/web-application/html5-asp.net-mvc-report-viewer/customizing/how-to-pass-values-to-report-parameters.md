@@ -10,23 +10,20 @@ position: 5
 
 # How to Pass Values to Report Parameters
 
+This topic explains how to use custom parameters UI to update the report parameters instead of using the MVC report viewer's default implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object. To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used. 
 
-
-This topic explains how to use custom parameters UI to update the report parameters instead of using the MVC report viewer's default         implementation of the parameters area. The report and all required parameters for it are packed in a ReportSource object.         To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.       
-
-To give an example we will use the Invoice report from our local examples and will update its __OrderNumber__ parameter         from a custom parameter UI.       
+To give an example we will use the Invoice report from our local examples and will update its __OrderNumber__ parameter from a custom parameter UI. 
 
 ## Pass values to report parameters
 
-> All path references in the described steps should be adapted according             to your project setup. For more information please refer to the MSDN article              [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx) 
+> All path references in the described steps should be adapted according to your project setup. For more information please refer to the MSDN article [ASP.NET Web Project Paths](http://msdn.microsoft.com/en-us/library/ms178116.aspx). 
 
+1. We are going to use one of our demo Visual Studio reports. For this purpose the demo ReportLibrary project should be built beforehand (see below). Create a new ASP.NET MVC 4+ Empty Project and add reference to *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\bin\[configuration directory]\CSharp|VB.ReportLibrary.dll*. The exact *[configuration directory]* name depends on the project 'Build' configuration. It could be 'Debug', 'Release', etc. 
 
-1. We are going to use one of our demo Visual Studio reports. For this purpose the demo ReportLibrary project should be built beforehand (see below).                   Create a new ASP.NET MVC 4+ Empty Project and add reference to *[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\bin\[configuration directory]\CSharp|VB.ReportLibrary.dll*.                   The exact [configuration directory] name depends on the project 'Build' configuration. It could be 'Debug', 'Release', etc.                 
+1. Use the [HTML5 MVC Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%}). 
+   Name the view with the viewer __InvoiceParameters.cshtml|vbhtml__. On __'Configure report source'__ step select __'Existing report definition'__, then select __'Select type report definition created in Visual Studio'__ and browse *Invoice* report class. Finish the wizard. 
 
-1. Then use the                    [HTML5 MVC Report Viewer Item Template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})    Name the view with the viewer                   __InvoiceParameters.cshtml|vbhtml__. On __'Configure report source'__                  step select __'Existing report definition'__, then select                    __'Select type report definition created in Visual Studio'__ and browse                   *Invoice* report class.                      Finish the wizard.
-
-1. Add MVC Controller item under the project's __Controller__ folder and name it                   __HomeController.cs|vb__, and add an ActionResult method named __InvoiceParameters__.                   Move the InvoiceParameters.cshtml|vbhtml file under the newly added __Views\Home__ folder.                     Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__                 in the project's web.config file. For example:                 
-
+1. Add MVC Controller item under the project's __Controller__ folder and name it __HomeController.cs|vb__, and add an ActionResult method named __InvoiceParameters__. Move the InvoiceParameters.cshtml|vbhtml file under the newly added __Views\Home__ folder. Add a connectiongStrings entry with name __Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__ in the project's web.config file. For example: 
     
     ````xml
 <connectionStrings>
@@ -36,12 +33,12 @@ To give an example we will use the Invoice report from our local examples and wi
 </connectionStrings>
 ````
 
-    At this point you have a running MVC application that displays a report in the HTML5 MVC Viewer at __[host]/Home/InvoiceParameters__                 without any modifications.                 
+    At this point you have a running MVC application that displays a report in the HTML5 MVC Viewer at __[host]/Home/InvoiceParameters__ without any modifications. 
 
-1. These are the model and the view model that we will use for our view:
+1. These are the model and the view model that we will use for our view: 
 
-{{source=CodeSnippets\MvcCS\Models\InvoiceViewModel.cs region=InvoiceViewModel}}
-````c#
+    {{source=CodeSnippets\MvcCS\Models\InvoiceViewModel.cs region=InvoiceViewModel}}
+    ````c#
 public class InvoiceModel
 {
     public int Id { get; set; }
@@ -71,8 +68,8 @@ public class InvoiceViewModel
     }
 }
 ````
-{{source=CodeSnippets\MvcVB\Models\InvoiceViewModel.vb region=InvoiceViewModel}}
-````vb.net
+    {{source=CodeSnippets\MvcVB\Models\InvoiceViewModel.vb region=InvoiceViewModel}}
+    ````vb.net
 Public Class InvoiceModel
     Public Property Id() As Integer
         Get
@@ -127,12 +124,12 @@ Public Class InvoiceViewModel
 End Class
 ````
 
-    Create new Invoice.cs|vb and InvoiceViewModel.cs|vb files under __Models__ folder                   and copy the above code snippets.                 
+    Create new Invoice.cs|vb and InvoiceViewModel.cs|vb files under __Models__ folder and copy the above code snippets. 
 
-1. And this is how we will fill with data our view model before displaying the view with the viewer. For the purpose open the                   HomeController.cs|vb file and update the InvoiceParameters method as follows:                 
+1. And this is how we will fill with data our view model before displaying the view with the viewer. For the purpose open the HomeController.cs|vb file and update the InvoiceParameters method as follows: 
 
-{{source=CodeSnippets\MvcCS\Controllers\HomeController.cs region=InvoiceViewModelData}}
-````c#
+    {{source=CodeSnippets\MvcCS\Controllers\HomeController.cs region=InvoiceViewModelData}}
+    ````c#
 public ActionResult InvoiceParameters()
 {
     var invoices = new List<InvoiceModel>
@@ -148,8 +145,8 @@ public ActionResult InvoiceParameters()
     return View(items);
 }
 ````
-{{source=CodeSnippets\MvcVB\Controllers\HomeController.vb region=InvoiceViewModelData}}
-````vb.net
+    {{source=CodeSnippets\MvcVB\Controllers\HomeController.vb region=InvoiceViewModelData}}
+    ````vb.net
 Public Function InvoiceParameters() As ActionResult
     Dim invoices = New List(Of InvoiceModel)() From { _
         New InvoiceModel() With { _
@@ -173,8 +170,7 @@ Public Function InvoiceParameters() As ActionResult
 End Function
 ````
 
-1. Add a custom parameter UI - a dropdown selector with a few values. For the purpose,                   open the Views/Home/InvoiceParameters.cshtml|vbhtml file and add the following lines in the *BODY*                   element, above the HTML5 Viewer:                 
-
+1. Add a custom parameter UI - a dropdown selector with a few values. For the purpose, open the Views/Home/InvoiceParameters.cshtml|vbhtml file and add the following lines in the *BODY* element, above the HTML5 Viewer: 
     
     ````c#
 @model MyMVCProject.Models.InvoiceViewModel
@@ -183,7 +179,7 @@ End Function
   @Html.DropDownListFor(m => m.SelectedInvoiceId, Model.InvoiceItems, new { id = "invoiceId", title = "Select the Invoice ID" })
 </div>
 ````
-````vb.net
+    ````vb.net
 @ModelType MyMVCProject.InvoiceViewModel
 <div id="invoiceIdSelector">
   @Html.LabelFor(Function(m) m.SelectedInvoiceId)
@@ -191,10 +187,10 @@ End Function
 </div>
 ````
 
-1. Now initialize the report viewer. We will use the minimal set of all                   [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).                   Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially:                 
+1. Now initialize the report viewer. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially: 
 
-{{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
-````c#
+    {{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
+    ````c#
 @{
     var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
     typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
@@ -211,8 +207,8 @@ End Function
      .Scale(1.0)
 )
 ````
-{{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
-````vb.net
+    {{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
+    ````vb.net
 @Code
     Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
     typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
@@ -228,8 +224,7 @@ End Function
 End Code
 ````
 
-1. Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from                   the dropdown box:                 
-
+1. Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from the dropdown box: 
     
     ````js
 $('#invoiceId').change(function () {
@@ -244,13 +239,8 @@ $('#invoiceId').change(function () {
 });
 ````
 
-1. Run the project and verify that the __Invoice Id__ selection really updates the report.                 
-
+1. Run the project and verify that the __Invoice Id__ selection really updates the report. 
 
 # See Also
 
-
- 
-
 * [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})
-

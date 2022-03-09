@@ -10,7 +10,7 @@ position: 3
 
 # Manual Setup
 
-This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in ASP.NET MVC 4|5 applications. To add the HTML5 Report Viewer via Visual Studio item template check [Quick Start]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%}).
+This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in ASP.NET MVC 4|5 applications. To add the HTML5 Report Viewer via Visual Studio item template check [Quick Start]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%}).
 
 ## Prerequisites
 
@@ -56,7 +56,7 @@ The following steps produce a view with settings similar to these of the local M
 
     >The above DOCTYPE directive should be considered with your custom requirements. More details about the used in the tutorial settings for the page can be found in the [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article. 
 
-1. Initialize the browser’s viewport in the ```<head>``` element: 
+1. Initialize the browser’s viewport in the `<head>` element: 
     
     ````html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -75,7 +75,7 @@ The following steps produce a view with settings similar to these of the local M
 
     >jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded from elsewhere in the application (layout page, section or bundle). 
 
-1. Add references to Telerik Kendo UI scripts and styles in the ```<head>``` element: 
+1. Add references to Telerik Kendo UI scripts and styles in the `<head>` element: 
     
     ````html
 <!-- the required Kendo styles -->
@@ -285,3 +285,4 @@ End Code
 ````
 
 1. Run the project and navigate to the view with the HTML5 ASP.NET MVC Report Viewer that we have just created. 
+

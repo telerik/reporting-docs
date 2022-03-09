@@ -52,17 +52,14 @@ The following steps describe how to add the template:
 
      + __New report definition__ - this option will create a new report definition that will be opened for editing in the respective report designer. On the right side of the dialog there are two possible options: 
 
-       + __TRDP report definition__ - creates a TRDP file with the entered __Report name__. 
-
-       + __Type report definition__ - creates a CS|VB file with the entered __Report name__ either in an existing report library project or in a newly created one. 
+        - __TRDP report definition__ - creates a TRDP file with the entered __Report name__. 
+        - __Type report definition__ - creates a CS|VB file with the entered __Report name__ either in an existing report library project or in a newly created one. 
 
      + __Existing report definition__ - this option will prompt you to choose an existing report definition that will be shown in the report viewer. On the right side of the dialog there are three possible options: 
 
-       + __TRDP, TRBP or TRDX report definition__ - enter the path or browse to the report definition. Also, there is an option to enable adding the report definition to the project. In this case, the report viewer will use a UriReportSource with the provided path to the file. 
-
-       + __Enter type report definition created in Visual Studio__ - enter the Assembly qualified name of the type report definition. In this case, the report viewer will use a TypeReportSource with the provided Assembly qualified name. 
-
-       + __Select type report definition created in Visual Studio__ - select the type report definition from the resolved types in the solution. The engine will search for report types in all projects in the solution that have Telerik Reporting reference included. The VS item template will add the required __connection string__ from the reports project configuration file (if exists). 
+        - __TRDP, TRBP or TRDX report definition__ - enter the path or browse to the report definition. Also, there is an option to enable adding the report definition to the project. In this case, the report viewer will use a UriReportSource with the provided path to the file. 
+        - __Enter type report definition created in Visual Studio__ - enter the Assembly qualified name of the type report definition. In this case, the report viewer will use a TypeReportSource with the provided Assembly qualified name. 
+        - __Select type report definition created in Visual Studio__ - select the type report definition from the resolved types in the solution. The engine will search for report types in all projects in the solution that have Telerik Reporting reference included. The VS item template will add the required __connection string__ from the reports project configuration file (if exists). 
 
      ![item-template-report-source-rest](images/item-template-report-source-rest.png)
 

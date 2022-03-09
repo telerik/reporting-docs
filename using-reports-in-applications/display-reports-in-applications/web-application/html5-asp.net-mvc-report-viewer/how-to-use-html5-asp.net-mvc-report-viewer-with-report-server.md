@@ -36,11 +36,11 @@ The VS item template will integrate HTML5 MVC Report Viewer in a.cshtml page and
 
    1. __'Configure reporting engine'__ will configure the type of reporting engine that will process and render the reports. You have two options - REST service or Report server. Choose __Report Server__ option. This way, the reports will be processed and rendered by the specified Report Server instance. On the right side of the dialog there are two things that you should enter: 
 
-   + __Report Server URI__ - enter a valid Report Server URI. 
+     + __Report Server URI__ - enter a valid Report Server URI. 
 
-   + __Runtime credentials__ - enter _Username_ and _Password_ for Registered user or choose [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled. 
+     + __Runtime credentials__ - enter _Username_ and _Password_ for Registered user or choose [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled. 
 
-  ![item-template-reporting-engine-rs](images/item-template-reporting-engine-rs.png)
+     ![item-template-reporting-engine-rs](images/item-template-reporting-engine-rs.png)
 
    1. __'Setup Report Source for Report Server'__ will choose a report definition for the report viewer. There are two things that you should select, but in case you are using Guest account, you will have to fill-in the fields manually. It is because the Guest user cannot read the available categories and reports for security reasons: 
 

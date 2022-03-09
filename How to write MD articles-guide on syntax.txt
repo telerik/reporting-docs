@@ -56,7 +56,7 @@ table th:nth-of-type(3) {
    
 + If you have nested tables, you may use any of the above approaches for the main table. The nested tables should be HTML tables.
 
-+ You may use the `<br />` HTML tag to split the table content on different lines.
++ You may use the `<br />` HTML tag to split the table content on different lines. The new lines will break the table.
 
 + If there are lists inside the table, you may use the HTML-tags <ul>, <ol> and <li> to format them properly. 
 
@@ -69,28 +69,28 @@ table th:nth-of-type(3) {
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=SampleDataSource}}
 ````C#
-		class Product
-		{
-			//properties
-		}
+class Product
+{
+	//properties
+}
 
 
-		[DataObject]
-		class Products
-		{
-			//objects
-		}
+[DataObject]
+class Products
+{
+	//objects
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=SampleDataSource}}
 ````VB
-	Class Product
-		'properties
-	End Class
+Class Product
+	'properties
+End Class
 
-	<DataObject()>
-	Class Products
-		'objects
-	End Class
+<DataObject()>
+Class Products
+	'objects
+End Class
 
 ````
 
@@ -105,25 +105,27 @@ table th:nth-of-type(3) {
 	````C#
 class Product
 {
-	//properties
-}
+		//properties
+	}
 
-[DataObject]
-class Products
-{
-	//objects
-}
+	[DataObject]
+	class Products
+	{
+		//objects
+	}
 ````
-````VB
+	````VB
 Class Product
-	'properties
-End Class
+		'properties
+	End Class
 
-<DataObject()>
-Class Products
-	'objects
-End Class	
+	<DataObject()>
+	Class Products
+		'objects
+	End Class	
 ````
+   
+   Note that the code snippet is aligned with the starting ````. Only the first line should start from the beginning of the row. This is to make the code appear propertly aligned and to avoid breaking the appearance when there are empty lines in the snippet.
    
 2.  ...
 !!!!finishing the sample!!!! 
@@ -131,9 +133,9 @@ End Class
 
    Note that the code block opener for the VB snippet is not indented as the C# one. This breaks the tabbed appearance of the snippets.
    
-   If you indented also the second code block (VB), this would have brokek the List.
+   If you indented also the second code block (VB), this would have broken the List.
    If the list is undoredered, this may still be acceptable, although the code block would appear as a sibling rather than a child of the List.
-   If the list is orthered though, the next List item will start from 1. 
+   If the list is ordered though, the next List item will start from 1. 
    
 
 ## LISTS
@@ -162,3 +164,19 @@ You may include also reference to sections of the article. The sections are the 
 Note that "sectionTitle" is the name of the section with all words in small letters linked with dash (-). For example, "Available Report Sources" would be represented as "available-report-sources".
 The following code would generate the link "https://docs.telerik.com/reporting/designing-reports/report-sources/overview#available-report-sources" and display the section named "Available Report Sources" of the corresponding article:
 	[server-side ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources)
+
+
+## NOTES, WARNINGS AND OTHER SPECIAL MESSAGES
+
+The Slugs DON'T WORK in special messages that include the type of the message. For example, the following link would be broken:
+
+	>important some text [link]({%slug putTheSlugHere%})
+	
+The workaround is to use a absolute or relative URL rather than Slug, for example:
+
+	>important some text [report sources]({../designing-reports/report-sources/overview})
+
+If you need a special messaage with Slug, you may skip the type of the message. For example, the following will generate the correct link:
+
+	> some text [link]({%slug putTheSlugHere%})
+	

@@ -69,28 +69,28 @@ table th:nth-of-type(3) {
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=SampleDataSource}}
 ````C#
-		class Product
-		{
-			//properties
-		}
+class Product
+{
+	//properties
+}
 
 
-		[DataObject]
-		class Products
-		{
-			//objects
-		}
+[DataObject]
+class Products
+{
+	//objects
+}
 ````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=SampleDataSource}}
 ````VB
-	Class Product
-		'properties
-	End Class
+Class Product
+	'properties
+End Class
 
-	<DataObject()>
-	Class Products
-		'objects
-	End Class
+<DataObject()>
+Class Products
+	'objects
+End Class
 
 ````
 
@@ -105,25 +105,27 @@ table th:nth-of-type(3) {
 	````C#
 class Product
 {
-	//properties
-}
+		//properties
+	}
 
-[DataObject]
-class Products
-{
-	//objects
-}
+	[DataObject]
+	class Products
+	{
+		//objects
+	}
 ````
-````VB
+	````VB
 Class Product
-	'properties
-End Class
+		'properties
+	End Class
 
-<DataObject()>
-Class Products
-	'objects
-End Class	
+	<DataObject()>
+	Class Products
+		'objects
+	End Class	
 ````
+   
+   Note that the code snippet is aligned with the starting ````. Only the first line should start from the beginning of the row. This is to make the code appear propertly aligned and to avoid breaking the appearance when there are empty lines in the snippet.
    
 2.  ...
 !!!!finishing the sample!!!! 

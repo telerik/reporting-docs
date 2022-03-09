@@ -34,7 +34,7 @@ The Telerik Reporting REST Service is recommended to be in a Singleton scope. Ho
 ## Solution
 We support accessing the current user inside the CustomReportSourceResolver using our own mechanism as described in [ASP.NET Core. How to use information from HttpContext in Custom Report Resolver]({%slug core-how-to-pass-information-from-httpcontext-to-reporting-engine%}). For example:
 
-````Csharp
+````C#
 public class CustomReportSourceResolver : IReportSourceResolver
 {
       public Telerik.Reporting.ReportSource Resolve(string reportId, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)

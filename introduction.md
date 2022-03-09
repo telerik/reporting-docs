@@ -76,7 +76,7 @@ Get fast onboarding with our [Virtual Classroom video training course](https://l
   
 * [Contact support](https://www.telerik.com/account/support-tickets) 
   
-* [Virtual Classroom](https://learn.telerik.com/learn/course/38/Telerik%2520Reporting) 
+* [Virtual Classroom](https://learn.telerik.com/learn/course/internal/view/elearning/38/telerik-reporting) 
   
 * [Submit a general feedback question](https://www.telerik.com/account/support-tickets/customer-service/) 
   

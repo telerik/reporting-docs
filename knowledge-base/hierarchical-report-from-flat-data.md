@@ -67,7 +67,7 @@ the current _ChildItem_ in order to structure the correct hierarchy. Here is the
   = IsNull(Fields.ParentItem, '1')	  	=		  	= IsNull(Parameters.Parent.Value, '1')
 ```
 
-The purpose of the _IsNull_ [conditional function](../expressions-evaluation-flow-functions) above is to allow the comparison when the current _ParentItem_ doesn't have 
+The purpose of the _IsNull_ [conditional function]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conditional-functions %}) above is to allow the comparison when the current _ParentItem_ doesn't have 
 a parent (it is _Null_), like in the case of the first data item - see the JSON data. The constant '1' may be any valid constand value and should be the same in both 
 [Expressions]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}).  
 The main Report displays all _ChildItem_ fields from the records with _ParentItem = Null_ as separate detail section instances, i.e. on the first level of the hierarchy. The SubReport item is displaced rightside compared to the TextBox with _ChildItem_ to form the second level. It contains all the records which _ParentItem_ is the _ChildItem_ from the previous level, and so on.

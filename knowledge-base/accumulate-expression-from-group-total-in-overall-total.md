@@ -28,11 +28,11 @@ Assume that you have to create a report for workers where you need to calculate 
 However, you may encounter a problem if you need to sum the values of the overtime total hours in the Summary of the report. That said, to create a total of the total overtime hours for
 all the groups.
 
-The most straight-forward solution is to sum up the values in the `TextBox` displaying the total for the group, that is, from all instances of this `TextBox`. Unfortunately, by design, the value in a particular report item cannot be accessed from another item. On the other hand, the overtime hours are not present in the data source and are calculated in an `Expression`. Hence, directly utilizing [Global Objects](../expressions-global-objects) is not an option.
+The most straight-forward solution is to sum up the values in the `TextBox` displaying the total for the group, that is, from all instances of this `TextBox`. Unfortunately, by design, the value in a particular report item cannot be accessed from another item. On the other hand, the overtime hours are not present in the data source and are calculated in an `Expression`. Hence, directly utilizing [Global Objects]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects %}) is not an option.
 
 ## Solution
 
-To solve the issue, create a [Custom Aggregate Function](../expressions-user-aggregate-functions) that accumulates the overtime hours from the groups.
+To solve the issue, create a [Custom Aggregate Function]({% sliug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions %}) that accumulates the overtime hours from the groups.
 
 the following example demonstrates a sample implementation for the case when workers' reports are grouped by weeks:
 
@@ -115,4 +115,4 @@ The following snippet, demonstrates how to call the custom aggregate in an `Expr
 - The second argument is the field that we aggregate, in this case, the working hours field in the data record.
 
 Note that you also need to include a reference to the assembly with the custom aggregate function in the configuration file of the application that hosts the Reporting engine. For example, for the Standalone designer, you need to include the reference in its `.config` file as explained in the
-article on [extending the report designer](https://docs.telerik.com/reporting/standalone-report-designer-extending-configuration).
+article on [extending the report designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer %}).

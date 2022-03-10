@@ -37,6 +37,6 @@ ReportBook can be created programmatically or using [Standalone report designer]
 ReportBook support for Standalone designer was added in R1 2017 release. To start creating ReportBook, select **File | New** from the designer menu and choose a ReportBook report template.
 
 ## See Also
-[How to: Create a Report Book at run-time](../designing-reports-reportbook-creating-reportbook-run-time)
+[How to: Create a Report Book at run-time]({% slug telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time %})
 
 [Design Considerations for Excel Rendering]({% slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations %})

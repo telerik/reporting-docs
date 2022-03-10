@@ -29,7 +29,7 @@ How can I [alternate the row style]({% slug how-to-display-alternating-style-row
 
 To solve this issue, refer to the [demo report](https://github.com/telerik/reporting-samples/tree/master/Applying%20Conditional%20Formatting%20Rule%20to%20Expandable%20Area) and use the following approach:
 
-1. Add a [CSV DataSource](../csvdatasource-component) with **Group** and **Item** columns.
+1. Add a [CSV DataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview %}) with **Group** and **Item** columns.
 
 2. Add a table that displays only the items and [add a row group]({% slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item %}) based on `"=Fields.Group"`.
 

@@ -53,5 +53,5 @@ The second parameter **[edition]** is the Visual Studio edition - _Enterprise_, 
 Once Telerik Reporting is installed with support for VS2017, you can load the project in Visual Studio.  
   
 The VS Report Designer is not fully functional in VS2017 for version of Telerik Reporting prior to R1 2017\.  
-Therefore, our recommendation is to [upgrade](../installation-upgrading-newer-version) the project to the newest version (check our [Release History](https://www.telerik.com/support/whats-new/reporting/release-history)) by running the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}).  
+Therefore, our recommendation is to [upgrade]({% slug telerikreporting/upgrade/overview %}) the project to the newest version (check our [Release History](https://www.telerik.com/support/whats-new/reporting/release-history)) by running the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}).  
 

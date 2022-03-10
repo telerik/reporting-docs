@@ -43,7 +43,7 @@ The response error is the following:
 
 ## Cause
 
-As of [Service Pack 14.0.20.219](../release-history/progress-telerik-reporting-r1-2020-sp1-14-0-20-219), you need to add a version to the web viewers and designer resources requests. Now the REST Service request for the viewer template will look like the following:
+As of [Service Pack 14.0.20.219](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2020-sp1-14-0-20-219), you need to add a version to the web viewers and designer resources requests. Now the REST Service request for the viewer template will look like the following:
 
 ```
 https://localhost:44332/api/reports/resources/templates/telerikReportViewerTemplate-14.0.20.219.html

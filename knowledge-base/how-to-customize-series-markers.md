@@ -39,5 +39,5 @@ Custom markers can also be displayed based on a certain condition. For that, set
 
 [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) 
 
-[Formatting a Graph](../graphformatting)  
+[Formatting a Graph]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview %})  
   

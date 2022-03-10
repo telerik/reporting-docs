@@ -31,12 +31,12 @@ This is mainly because of the current limitations of the framework and Visual St
 
 ## Solution
 There are two approaches to resolve the problem depending on the amount of custom code used in the report definitions.
-* If the report classes *do not* contain custom code (i.e. handlers for events like [NeedDataSource](../e-telerik-reporting-dataitem-needdatasource), 
-[ItemDataBound](../e-telerik-reporting-reportitembase-itemdatabound), etc.) or this code can be substituted
+* If the report classes *do not* contain custom code (i.e. handlers for events like [NeedDataSource](https://docs.telerik.com/reporting/api/Telerik.Reporting.DataItem.html#Telerik_Reporting_DataItem_NeedDataSource), 
+[ItemDataBound](https://docs.telerik.com/reporting/api/Telerik.Reporting.ReportItemBase.html#collapsible-Telerik_Reporting_ReportItemBase_ItemDataBound), etc.) or this code can be substituted
 with [conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %})
-and [bindings](../expressions-bindings) in the report definition, it is recommended to use the 
-[Standalone Report Designer](../standalone-report-designer) to import them into a set of .trdp/.trdx reports, as explained [here](../standalone-report-designer-import-clr-reports).
-If the report uses class library assemblies that contain [user functions](../expressions-user-functions) or provide data for [ObjectDataSource](../objectdatasource) instances, their projects need to be migrated to .NET Standard. This way the Standalone Report Designer will be able to load the assemblies and provide design-time support for them.
+and [bindings]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings %}) in the report definition, it is recommended to use the 
+[Standalone Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview %}) to import them into a set of .trdp/.trdx reports, as explained in the article on [importing reports created with the VS Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer %}).
+If the report uses class library assemblies that contain [user functions]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions %}) or provide data for [ObjectDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview %}) instances, their projects need to be migrated to .NET Standard. This way the Standalone Report Designer will be able to load the assemblies and provide design-time support for them.
 The produced .trdp/.trdx definitions can be used through a [UriReportSource](../t-telerik-reporting-urireportsource) in a .NET Core application.
 
 * If the custom code in the report definitions must be retained, copy the code from .cs and .designer.cs files of your reports to a new .NET Standard or .NET Core library. 

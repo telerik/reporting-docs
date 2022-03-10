@@ -44,6 +44,6 @@ public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
         }
 ```
 
-2. Set this configuration as described in step 4 of [Setup the Startup.cs file for the Reports service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service).
+2. Set this configuration as described in step 4 of [Setup the Startup.cs file for the Reports service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startupcs-file-for-the-reports-service).
 
 You can also check our .NET Core demo project which can be found in C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Examples\CSharp\Asp.NetCoreDemo

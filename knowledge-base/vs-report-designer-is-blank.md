@@ -24,4 +24,4 @@ The Visual Studio Report Designer does not display anything when trying to open 
 1.	Run the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}). 
 2.	Restart Visual Studio. 
 3.	If the report cannot be loaded by the Visual Studio Report Designer, navigate to the definition of the __InitializeComponent__ report method. As a result, you will see the Designer report class. 
-4.	If the Designer report class is not visible, refer to the KB article on [Visual Studio Report Designer being blank](https://www.telerik.com/support/kb/reporting/details/visual-studio-report-designer-is-blank). 
+4.	If the Designer report class is not visible, refer to the KB article on [Visual Studio Report Designer being blank]({% slug visual-studio-report-designer-is-blank %}). 

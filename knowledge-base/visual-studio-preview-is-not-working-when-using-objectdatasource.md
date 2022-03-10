@@ -36,7 +36,7 @@ Make sure the following are correctly set up:
     1. Hard code the ConnectionString in your Data Access Layer(**DAL**);
     2. Use a desktop application with a report viewer(WinForms/WPF) to view your reports in runtime instead of the VS Previews;
     3. Add the required **ConnectionString** in **devenv.exe.config**;
-    4. Use the [SqlDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) component instead of the [ObjectDataSource](../objectdatasource) component. The SqlDataSource component will resolve the *ConnectionStrings* in the reports projects.
+    4. Use the [SqlDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) component instead of the [ObjectDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview %}) component. The SqlDataSource component will resolve the *ConnectionStrings* in the reports projects.
 
 > For VS 2017 and higher, the devenv.exe.config's default location is C:\Program Files (x86)\Microsoft Visual Studio\*year*\Professional|Community\Common7\IDE.
 

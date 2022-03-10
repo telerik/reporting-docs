@@ -73,7 +73,7 @@ services.AddControllersWithViews(options =>
     </script>
     ```
 
-As a result, the `"Error registering the viewer with the service."` error message occurs. Also, in the browser console on [Register Client](../telerik-reporting-rest-api-register-client) request returns `400 Bad Request` with the following error:
+As a result, the `"Error registering the viewer with the service."` error message occurs. Also, in the browser console on [Register Client]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client %}) request returns `400 Bad Request` with the following error:
 
 ```
 Failed to load resource: the server responded with a status of 400 (Bad Request)
@@ -95,7 +95,7 @@ The `AutoValidateAntiforgeryToken` is recommended by Microsoft for non-API scena
     }
     ```
 
-* Override [all `ReportsController` public methods](../methods-t-telerik-reporting-services-webapi-reportscontrollerbase) and add the [`IgnoreAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to them. You may skip the `GET` HTTP methods.
+* Override [all `ReportsController` public methods]({% slug /reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase.html#methods %}) and add the [`IgnoreAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to them. You may skip the `GET` HTTP methods.
 
     ```CSharp
     [IgnoreAntiforgeryToken]

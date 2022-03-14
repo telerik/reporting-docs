@@ -32,7 +32,6 @@ Do NOT use these special characters in the title:
 
       This will let you use MD-style links and other MD-formatted content inside the table. However, by default the table columns will have equal widths. To overcome this, you may add the following CSS style in the article before the table. The particular example assumes that there are 3 columns. The first would take 20%, the second - 30% and the third - 50%:
       
-      ````CSS
 <style>
 table th:first-of-type {
     width: 20%;
@@ -45,7 +44,6 @@ table th:nth-of-type(3) {
 }
 </style>
 
-````
 
 	Another drawback of this approach is that you may use only 1 (one) such styling for each article, hence, all the tables would finally have the same column widths. If you need tables with different column distribution, you need to use the next approach.
 	

@@ -36,28 +36,28 @@ The following example illustrates how to use the Kendo DropDownList widget for a
     
 ````js
 function createSingleSelectEditor(placeholder, options) {
-            var dropDownElement = $(placeholder).html('<div></div>');
-            var parameter,
-                  valueChangedCallback = options.parameterChanged,
-                  dropDownList;
-            function onChange() {
-                var val = dropDownList.value();
-                valueChangedCallback(parameter, val);
-            }
-            return {
-                beginEdit: function (param) {
-                    parameter = param;
-                    $(dropDownElement).kendoDropDownList({
-                        dataTextField: "name",
-                        dataValueField: "value",
-                        value: parameter.value,
-                        dataSource: parameter.availableValues,
-                        change: onChange
-                    });
-                    dropDownList = $(dropDownElement).data("kendoDropDownList");
-                }
-            };
+    var dropDownElement = $(placeholder).html('<div></div>');
+    var parameter,
+          valueChangedCallback = options.parameterChanged,
+          dropDownList;
+    function onChange() {
+        var val = dropDownList.value();
+        valueChangedCallback(parameter, val);
+    }
+    return {
+        beginEdit: function (param) {
+            parameter = param;
+            $(dropDownElement).kendoDropDownList({
+                dataTextField: "name",
+                dataValueField: "value",
+                value: parameter.value,
+                dataSource: parameter.availableValues,
+                change: onChange
+            });
+            dropDownList = $(dropDownElement).data("kendoDropDownList");
         }
+    };
+}
 ````
 ````xml
 </telerik:ReportViewer>

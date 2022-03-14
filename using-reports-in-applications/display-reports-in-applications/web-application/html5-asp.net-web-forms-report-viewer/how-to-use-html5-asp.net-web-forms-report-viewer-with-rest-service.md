@@ -16,7 +16,7 @@ For full control, manually configure the REST service and add HTML5 Web Forms Re
 
 ## Prerequisites
 
-1. Review the HTML5 WebForms Report Viewer [Requirements](#requirements). 
+1. Review the HTML5 WebForms Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}#requirements). 
 
 1. The project must target [ASP.NET 4.0 Web Forms](https://dotnet.microsoft.com/apps/aspnet/web-forms) or newer framework. 
 

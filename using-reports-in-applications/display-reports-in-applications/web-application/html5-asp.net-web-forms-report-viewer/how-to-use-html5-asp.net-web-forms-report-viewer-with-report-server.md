@@ -14,7 +14,7 @@ The quickest way to add a HTML5 Web Forms Report Viewer to your web project is w
 
 ## Prerequisites
 
-1. Review the HTML5 WebForms Report Viewer [Requirements](#requirements). 
+1. Review the HTML5 WebForms Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}#requirements). 
 
 1. The project must target [ASP.NET 4.0 Web Forms](http://www.asp.net/web-forms) or newer framework. 
 

@@ -24,13 +24,13 @@ This tutorial shows how to use HTML5 Report Viewer's ASP.NET MVC wrapper in ASP.
     
       ````xml
 <connectionStrings>
-     <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-                connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-                providerName="System.Data.SqlClient" />
-</connectionStrings>
+		<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
+				   connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
+				   providerName="System.Data.SqlClient" />
+	</connectionStrings>
 ````
 
-* Telerik Kendo UI custom distribution for Telerik Reporting (located in {Telerik Reporting installation path}\Html5\ReportViewer\js) or Kendo UI mainstream distribution downloaded locally or via [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn). You must load only one version of Telerik Kendo UI styles and scripts on the page. For more information see [Kendo Widgets Requirements](({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#kendo-widgets-requirements).
+* Telerik Kendo UI custom distribution for Telerik Reporting (located in {Telerik Reporting installation path}\Html5\ReportViewer\js) or Kendo UI mainstream distribution downloaded locally or via [Kendo UI CDN service](http://docs.telerik.com/kendo-ui/install/cdn). You must load only one version of Telerik Kendo UI styles and scripts on the page. For more information see [Kendo Widgets Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#kendo-widgets-requirements).
 
 Depending on the used Visual Studio project template CSS and JS files can be linked in: 
 
@@ -68,9 +68,9 @@ The following steps produce a view with settings similar to these of the local M
     
     ````html
 @section scripts
-{
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
-}
+	{
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
+	}
 ````
 
     >jQuery must be loaded only once on the page. Before adding jQuery, verify that it is not already loaded from elsewhere in the application (layout page, section or bundle). 
@@ -79,8 +79,8 @@ The following steps produce a view with settings similar to these of the local M
     
     ````html
 <!-- the required Kendo styles -->
-<link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.common.min.css" rel="stylesheet" />
-<link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.blueopal.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.common.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
 1. Add references to the following assemblies and set their __Copy Local__ properties to __true__ in Visual Studio: 
@@ -99,15 +99,15 @@ The following steps produce a view with settings similar to these of the local M
     
     ````html
 <system.web.webPages.razor>
- ...
-    <pages pageBaseType="System.Web.Mvc.WebViewPage">
-          <namespaces>
-         ...
-            <add namespace="Telerik.Reporting" />
-            <add namespace="Telerik.ReportViewer.Mvc" />
-          </namespaces>
-    </pages>
-  </system.web.webPages.razor>
+	...
+	   <pages pageBaseType="System.Web.Mvc.WebViewPage">
+			 <namespaces>
+			...
+			   <add namespace="Telerik.Reporting" />
+			   <add namespace="Telerik.ReportViewer.Mvc" />
+			 </namespaces>
+	   </pages>
+	</system.web.webPages.razor>
 ````
 
     >Without registering the  __Telerik.Reporting__ and  __Telerik.ReportViewer.Mvc__ namespaces you will need to use [using Directive](https://msdn.microsoft.com/en-us/library/sf0df423.aspx) in the view. 
@@ -121,42 +121,42 @@ The following steps produce a view with settings similar to these of the local M
     The report viewer JavaScript should be referenced after any other Kendo widgets or bundles. If no Kendo widgets are utilized in the page the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is prefered make sure the following widgets are referenced: 
     
     ````html
-                  <!--
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.core.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.data.odata.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.data.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.userevents.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.selectable.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.calendar.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.fx.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.draganddrop.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.mobile.scroller.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.virtuallist.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.popup.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.list.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.combobox.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.datepicker.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.resizable.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.dropdownlist.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.multiselect.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.splitter.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.window.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.color.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.slider.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.button.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.colorpicker.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.editor.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.listview.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.menu.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.panelbar.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.tooltip.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.treeview.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.touch.min.js" /script>
-kendo.mobile.min.js - optional, if gestures/touch support is required
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.mobile.min.js" /script>
-kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.web.min.js" /script>
--->
+<!--
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.core.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.data.odata.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.data.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.userevents.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.selectable.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.calendar.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.fx.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.draganddrop.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.mobile.scroller.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.virtuallist.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.popup.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.list.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.combobox.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.datepicker.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.resizable.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.dropdownlist.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.multiselect.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.splitter.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.window.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.color.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.slider.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.button.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.colorpicker.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.editor.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.listview.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.menu.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.panelbar.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.tooltip.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.treeview.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.touch.min.js" /script>
+	kendo.mobile.min.js - optional, if gestures/touch support is required
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.mobile.min.js" /script>
+	kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
+	<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.web.min.js" /script>
+	-->
 ````
 
 1. Add the HTML5 ASP.NET MVC Report Viewer to the same view:
@@ -164,33 +164,33 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
     {{source=CodeSnippets\MvcCS\Views\Home\Index.cshtml region=RazorExample}}
     ````c#
 @(Html.TelerikReporting().ReportViewer()
-    .Id("reportViewer1")
-    .ServiceUrl("/api/reports/")
-    .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-    .ReportSource(new UriReportSource() { Uri = "Product Catalog.trdp" })
-    .ViewMode(ViewMode.Interactive)
-    .ScaleMode(ScaleMode.Specific)
-    .Scale(1.0)
-    .PersistSession(false)
-    .EnableAccessibility(false)
-    .Deferred()
-    )
+		.Id("reportViewer1")
+		.ServiceUrl("/api/reports/")
+		.TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
+		.ReportSource(new UriReportSource() { Uri = "Product Catalog.trdp" })
+		.ViewMode(ViewMode.Interactive)
+		.ScaleMode(ScaleMode.Specific)
+		.Scale(1.0)
+		.PersistSession(false)
+		.EnableAccessibility(false)
+		.Deferred()
+		)
 ````
     {{source=CodeSnippets\MvcVB\Views\Home\Index.vbhtml region=RazorExample}}
     ````vb.net
 @Code
-    Html.TelerikReporting().ReportViewer() _
- .Id("reportViewer1") _
- .ServiceUrl("/api/reports/") _
- .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
- .ReportSource(New UriReportSource() With {.Uri = "Product Catalog.trdp"}) _
- .ViewMode(ViewMode.Interactive) _
- .ScaleMode(ScaleMode.Specific) _
- .Scale(1.0) _
- .PersistSession(False) _
- .EnableAccessibility(False) _
- .Deferred()
-End Code
+		Html.TelerikReporting().ReportViewer() _
+	 .Id("reportViewer1") _
+	 .ServiceUrl("/api/reports/") _
+	 .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
+	 .ReportSource(New UriReportSource() With {.Uri = "Product Catalog.trdp"}) _
+	 .ViewMode(ViewMode.Interactive) _
+	 .ScaleMode(ScaleMode.Specific) _
+	 .Scale(1.0) _
+	 .PersistSession(False) _
+	 .EnableAccessibility(False) _
+	 .Deferred()
+	End Code
 ````
 
     >note The above example uses deferred loading of the viewer to allow scripts to be handled properly, in case jQuery is not yet loaded on the page at the time the view is created. The used relative paths must be considered with the project's structure. 
@@ -206,23 +206,23 @@ End Code
     {{source=CodeSnippets\MvcVB\Views\Home\Index.vbhtml region=DeferredScriptsExample}}
     ````vb.net
 @Code
-    Html.TelerikReporting().DeferredScripts()
-End Code
+		Html.TelerikReporting().DeferredScripts()
+	End Code
 ````
 
 1. Make the viewer fill the entire browser window. Add the following style in the correspondingly named section in the view: 
     
     ````html
 <style>
-   #reportViewer1 {
-        position: absolute;
-        left: 5px;
-        right: 5px;
-        top: 5px;
-        bottom: 5px;
-        overflow: hidden;
-    }
-</style>
+		#reportViewer1 {
+			position: absolute;
+			left: 5px;
+			right: 5px;
+			top: 5px;
+			bottom: 5px;
+			overflow: hidden;
+		}
+	</style>
 ````
 
     > The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in other container use relative position, and provide witdh and height values. 
@@ -231,58 +231,57 @@ End Code
     
     ````html
 @RenderSection("styles", required: false)
-@RenderSection("scripts", required: false)
+	@RenderSection("scripts", required: false)
 ````
 
 1. Finally the layout page should look like this: 
     
     ````html
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Demo</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    @RenderSection("styles", required: false)
-    @RenderSection("scripts", required: false)
-</head>
-<body>
-    @RenderBody()
-</body>
-</html>
+	<html>
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		@RenderSection("styles", required: false)
+		@RenderSection("scripts", required: false)
+	</head>
+	<body>
+		@RenderBody()
+	</body>
+	</html>
 ````
 
     The page with the HTML5 ASP.NET MVC Report Viewer should look like this: 
     
     ````html
 @section styles
-{
-    <link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.common.min.css" rel="stylesheet" />
-    <link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.blueopal.min.css" rel="stylesheet" />
-    <style>
-       #reportViewer1 {
-            position: absolute;
-            left: 5px;
-            right: 5px;
-            top: 5px;
-            bottom: 5px;
-            overflow: hidden;
-        }
-    </style>
-}
-@section scripts
-{
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
-    <script src="~/api/reports/resources/js/telerikReportViewer" /script>
-    @(Html.TelerikReporting().DeferredScripts())
-}
-@(Html.TelerikReporting().ReportViewer()
-     .Id("reportViewer1")
-     .ServiceUrl("/api/reports/")
-     .ReportSource(new UriReportSource() { Uri = "Product Catalog.trdp" })
-     .Deferred()
-)
+	{
+		<link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.common.min.css" rel="stylesheet" />
+		<link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.blueopal.min.css" rel="stylesheet" />
+		<style>
+		   #reportViewer1 {
+				position: absolute;
+				left: 5px;
+				right: 5px;
+				top: 5px;
+				bottom: 5px;
+				overflow: hidden;
+			}
+		</style>
+	}
+	@section scripts
+	{
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
+		<script src="~/api/reports/resources/js/telerikReportViewer" /script>
+		@(Html.TelerikReporting().DeferredScripts())
+	}
+	@(Html.TelerikReporting().ReportViewer()
+		 .Id("reportViewer1")
+		 .ServiceUrl("/api/reports/")
+		 .ReportSource(new UriReportSource() { Uri = "Product Catalog.trdp" })
+		 .Deferred()
+	)
 ````
 
 1. Run the project and navigate to the view with the HTML5 ASP.NET MVC Report Viewer that we have just created. 
-

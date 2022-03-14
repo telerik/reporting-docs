@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-As of [R3 2016](../upgrade-path-2016-r3#api-breaking-changes) we provide stricter rules for external assemblies used by reports to get data. This is a breaking change that may lead to the following error on preview, even after running the [Upgrade Wizard](../ui-upgrade-wizard). 
+As of [R3 2016]({%slug telerikreporting/upgrade/2016/r3-2016%}#api-breaking-changes) we provide stricter rules for external assemblies used by reports to get data. This is a breaking change that may lead to the following error on preview, even after running the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}). 
 
 ## Error Message
 

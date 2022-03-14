@@ -27,7 +27,7 @@ Sometimes it is necessary to modify the WebServiceDataSource URL dynamically, fo
 	
 	_Service Url:_| __@Url__
 	---|---
-2. The value of _@Url_ should be provided as an [Expression](../report-expressions) (i.e. taken from a Report Parameter) so that its value to be evaluated run time - in _Configure request parameters_ dialog of the Wizard : 
+2. The value of _@Url_ should be provided as an [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) (i.e. taken from a Report Parameter) so that its value to be evaluated run time - in _Configure request parameters_ dialog of the Wizard : 
 
   _Name_|_Type_|_Value_|_Design-Time Value_
   ---|---|---|---

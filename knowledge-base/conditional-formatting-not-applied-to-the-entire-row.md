@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 When the Crosstab contains both dynamic row groups and dynamic column groups, the 
-[Conditional Formatting](../styling-conditional-formatting) set to an entire Crosstab row with an [Expressioin](../report-expressions) 
+[Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) set to an entire Crosstab row with an [Expressioin]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) 
 like: 
 
 ```

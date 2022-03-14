@@ -1,16 +1,16 @@
 ---
-title: Angular6 application working with local resources (without any CDNs)
-description: How to create an Angular 6 application which is loading only local styles and scripts
+title: Create Angular 6 Applications Working with Local Resources
+page_title: Create Angular 6 Applications Working with Local Resources without CDNs
+description: "Learn how to create an Angular 6 application which is loading only local styles and scripts."
 type: how-to
-page_title: Angular 6 application with local resources (without any CDNs)
 slug: angular6-application-with-local-resources
-position: 
-tags: AngularReportViewer
+tags: telerik, reporting, angular, report, viewer, create, angular6, apps, work, with, local, resources, without, cdn
 ticketid: 1337433
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -22,15 +22,18 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
-After upgrading to Angular 6, it should be considered that there are a few differences about the project setup. For example, the **angular-cli.json** is replaced with **angular.json** file. Also the local stylesheet which by default are CDN links, must be loaded as local files only in **assets** folder as this seems to be required for this version.
-For more information, please check the [Unable to load the css file in angular 6 application](https://stackoverflow.com/questions/50666689/unable-to-load-the-css-file-in-angular-6-application) article.
+
+How can I create an Angular6 application is working with local resources only without any CDNs?
 
 ## Solution
-The sample application could be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/sampleangular6app.zip?sfvrsn=3458f73f_2).
+
+After upgrading to Angular 6, the `angular-cli.json` is replaced with the `angular.json` file. Also, the local stylesheet which, by default, represents CDN links, must be loaded as local files only in the `assets` folder. For more information, refer to the [Unable to load the CSS file in Angular 6 applications](https://stackoverflow.com/questions/50666689/unable-to-load-the-css-file-in-angular-6-application) article.
+
+To download the sample application, go to [this location](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/sampleangular6app.zip?sfvrsn=3458f73f_2).
 
 ## See Also
-  [Angular Report Viewer](../angular-report-viewer)
-  
-  [Telerik Reporting REST Services](../telerik-reporting-rest-conception)
+
+* [Angular Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview %})
+
+* [Telerik Reporting REST Services]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %})

@@ -63,7 +63,7 @@ In all versions of Telerik Reporting, changes in events are possible if they are
   
 The recommended approach is to use the *expression engine* and to avoid custom code in events:  
 
-1. [Conditional Formatting](../styling-conditional-formatting) to control styles via expressions;
+1. [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) to control styles via expressions;
 2. [Bindings](../expressions-bindings) to set properties of items via expressions;
 3. [User functions](../expressions-user-functions) to set properties of items, when the [built-in functions](../expressions-reference) are not sufficient.
 

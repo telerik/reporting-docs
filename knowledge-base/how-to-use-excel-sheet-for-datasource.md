@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-You can connect to an Excel file through an [SQL DataSource](../sqldatasource) and ODBC connection, and use this connection in a Telerik Report. Usually, the Excel drivers come preinstalled in ODBC Data Source Administrator. If you do not want to use ODBC Data Source Administrator, it should be possible to connect to an Excel file directly with a correct connection string - see examples in [Microsoft Excel ODBC Driver connection strings](https://www.connectionstrings.com/microsoft-excel-odbc-driver/).
+You can connect to an Excel file through an [SQL DataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) and ODBC connection, and use this connection in a Telerik Report. Usually, the Excel drivers come preinstalled in ODBC Data Source Administrator. If you do not want to use ODBC Data Source Administrator, it should be possible to connect to an Excel file directly with a correct connection string - see examples in [Microsoft Excel ODBC Driver connection strings](https://www.connectionstrings.com/microsoft-excel-odbc-driver/).
 
 Note that the Excel driver is available in a 32-bit version of ODBC Data Source Administrator. Therefore this data source will be available only using the 32-bit version of Telerik Standalone Report Designer.
 

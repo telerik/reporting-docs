@@ -1,16 +1,15 @@
 ---
-title: Searching inside PDF content in Adobe Reader returns incorrect results
-description: This article explains how to fix the search functionality inside Adobe Reader
+title: Search inside PDF Content in Adobe Reader Returns Incorrect Results
+page_title: PDF Content Search in Adobe Reader Returns Incorrect Results
+description: "Learn how to fix the search functionality inside Adobe Reader."
 type: troubleshooting
-page_title: PDF content search in Adobe Reader returns incorrect results
 slug: adobe-reader-search-in-pdf-not-working
-position: 
-tags: pdf, search, incorrect, adobe, acrobat
-ticketid: 
+tags: telerik, reporting, pdf, search, incorrect, adobe, acrobat
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -21,13 +20,19 @@ res_type: kb
 		<td>PDF</td>
 	</tr>
 	<tr>
-		<td>3rd Party Application</td>
+		<td>Third-Party Application</td>
 		<td>Adobe Acrobat, Adobe Reader</td>
 	</tr>
 </table>
 
-## Problem
-Using **Ctrl+F (Find)** to search inside the content of a report exported to PDF returns incorrect results, for instance, highlighting words which are not containing the search term.
+## Description
+
+Using `Ctrl`+`F` (the Find functionality) to search inside the content of a report exported to PDF returns incorrect results. For example, highlighting words which are not containing the search term.
 
 ## Solution
-While investigating this issue the Reporting team noticed that some PDF readers, such as Foxit Reader, return correct search results for the same PDF file. This clue led us to the conclusion that the issue might be connected to the Adobe Reader **Search** settings. To open the settings go to **Edit > Preferences > Search**. There you will find the **Purge Cache Contents** button which saved the day. After we purged the cache the search functionality started working flawlessly. To prevent this from happening again for any PDF file that you open, disable the caching by unchecking **Enable fast find**.
+
+Some PDF readers, such as Foxit Reader, return correct search results for the same PDF file. Therefore, the issue might be connected to the **Search** settings of Adobe Reader.
+
+To open and update the settings, go to **Edit** > **Preferences** > **Search**. Click the **Purge Cache Contents** button to purge the cache and enable the search functionality to work flawlessly.
+
+To prevent this issue from happening again for any PDF file that you open, disable the caching by unchecking **Enable fast find**.

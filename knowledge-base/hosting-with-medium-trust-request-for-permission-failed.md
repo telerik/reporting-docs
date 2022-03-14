@@ -32,7 +32,7 @@ res_type: kb
 
 ## Cause
   
-The [Reporting REST Service](../telerik-reporting-rest-conception) is not designed to operate in *Medium Trust* environment. 
+The [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) is not designed to operate in *Medium Trust* environment. 
 
 ## Description
 

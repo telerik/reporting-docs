@@ -61,7 +61,7 @@ Open the project's Properties in Visual Studio and remove the Root Namespace, le
 
 ## Notes
 
-If the above changes do not resolve the listed errors, double-check if the required Telerik Reporting assemblies are referenced, and run the [Upgrade Wizard](../ui-upgrade-wizard) to update all settings.
+If the above changes do not resolve the listed errors, double-check if the required Telerik Reporting assemblies are referenced, and run the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}) to update all settings.
 
 ## See Also
 

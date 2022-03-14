@@ -1,16 +1,16 @@
 ---
-title: Access component properties inside Angular Report Viewer events
-description: Access component properties inside Angular Report Viewer events using this
+title: Access Component Properties inside Angular Report Viewer Events
+page_title: Access Angular Component Properties in Viewer Events
+description: "Learn how to access the component properties inside Angular Report Viewer events using this."
 type: troubleshooting
-page_title: Access Angular component properties in viewer events
 slug: angular-component-properties-in-viewer-events
-position: 
-tags: 
+tags: telerik, reporting, access, angular, component, properties, inside, reportviewer, events
 ticketid: 1156009
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -24,10 +24,17 @@ res_type: kb
 
 
 ## Description
-Inside [Angular Report Viewer events](../angular-report-viewer-event-binding) the **this** value will point to the report viewer object.
-This makes any Angular components' properties inaccessible in report viewer events. Consider the following example:
 
-Template
+How can I access the properties of an Angular component from the report viewer events?
+
+## Cause
+
+Inside the [Angular Report Viewer events]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/event-binding %}), the `this` value will point to the report viewer object. This makes the properties of any Angular component inaccessible in report viewer events.
+
+Consider the following example:
+
+**Template**
+
 ```HTML
 	<div *ngIf="isReportRendered">Report has been rendered!</div>
 	<tr-viewer #viewer1
@@ -36,7 +43,8 @@ Template
 	</tr-viewer>
 ```
 
-Component
+**Component**
+
 ```TypeScript
 	export class AppComponent {
 		isReportRendered = false;
@@ -47,13 +55,12 @@ Component
 	}
 ```
 
+## Solution
 
+To work around the issue, it is possible to create a new bound function which wraps the `reportRendered` function. The new bound function will have a `this` value equal to the `this` value of the `AppComponent`.
 
-## Suggested Workarounds
-It is possible to create a new bound function which wraps the **reportRendered** function.
-The new bound function has a **this** value equal to the *AppComponent*'s **this** value.
+**Template**
 
-Template
 ```HTML
 	<div *ngIf="isReportRendered">Report has been rendered!</div>
 	<tr-viewer #viewer1
@@ -62,7 +69,8 @@ Template
 	</tr-viewer>
 ```
 
-Component
+**Component**
+
 ```TypeScript
 	export class AppComponent {
 		boundReportRendered: Function;
@@ -71,7 +79,7 @@ Component
 		public ngOnInit(){
 			this.boundReportRendered = this.reportRendered.bind(this);
 		}
-		
+
 		reportRendered(e: any, args: any) {
 			this.isReportRendered = true; // displays the initially hidden div element
 		}
@@ -79,4 +87,5 @@ Component
 ```
 
 ## See Also
-[Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)
+
+* [`Function.prototype.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)

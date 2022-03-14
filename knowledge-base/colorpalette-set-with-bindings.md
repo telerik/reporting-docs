@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-The __ColorPalette__ property does not support [Expressions](../report-expressions) and its value can be set directly only to a constant value.
+The __ColorPalette__ property does not support [Expressions]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) and its value can be set directly only to a constant value.
 
 ## Solution
 You may set the ColorPalette with [Bindings](../expressions-bindings):

@@ -71,4 +71,4 @@ Construct the web API to take the query parameter values with some delimiter (fo
   
 ## Notes 
 
-In order to build it successfully, you would need to Restore the NuGet packages and run the [Upgrade Wizard](../ui-upgrade-wizard) to add the needed references.
+In order to build it successfully, you would need to Restore the NuGet packages and run the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}) to add the needed references.

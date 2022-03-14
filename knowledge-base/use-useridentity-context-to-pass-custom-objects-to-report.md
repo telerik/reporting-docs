@@ -29,9 +29,9 @@ In some scenarios, it may be necessary to pass custom object values directly to 
 The [UserIdentity](../t-telerik-reporting-processing-useridentity) object has a property __Context__ that by default is _Null_. 
 It is of type _System.Collections.Concurrent.ConcurrentDictionary<string, object>_. You may read more about how to pass a value to 
 this property in the 
-[How to use information from HttpContext in Custom Report Resolver](how-to-pass-information-from-httpcontext-to-reporting-engine) 
+[How to use information from HttpContext in Custom Report Resolver]({% slug how-to-pass-information-from-httpcontext-to-reporting-engine %}) 
 KB article. Then in the report, you may access the values of the collection.  
-For example, the first value of the collection may be used in an [Expression](../report-expressions) like:
+For example, the first value of the collection may be used in an [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) like:
 ```
 = Item(0, UserIdentity.Context.Values)
 ```

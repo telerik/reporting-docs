@@ -31,7 +31,7 @@ res_type: kb
 
 ## Description
 This KB article lists all necessary steps for integrating our [Web Report Designer](../web-report-designer) in .NET Core MVC 3.1 project. 
-It is based on [How To: Host Reports Service In ASP.NET Core 3+](../telerik-reporting-rest-service-aspnetcore-mvc-core3)
+It is based on [How To: Host Reports Service In ASP.NET Core 3+]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %})
 and [How to setup the WebReportDesigner in .NET Core application](../web-report-designer-setup-in-net-core).
 The same approach can be applied for .NET Core MVC 3.0 project.
  
@@ -84,7 +84,7 @@ namespace WebApplication1
 }
 ```
 
-5. Add the required configurations in the **Startup.cs** from [Setup the Startup.cs file for the Reports service](../telerik-reporting-rest-service-aspnetcore-mvc-core3#setup-the-startup-cs-file-for-the-reports-service):
+5. Add the required configurations in the **Startup.cs** from [Setup the Startup.cs file for the Reports service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service):
 ```CSharp
  public class Startup
     {
@@ -202,7 +202,7 @@ namespace WebApplication1
 
 ```
 
-7. If you are using [SQL DataSource](../sqldatasource) with Shared connection string, add a connection string in appsettings.json file:
+7. If you are using [SQL DataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with Shared connection string, add a connection string in appsettings.json file:
 ```
 "ConnectionStrings": [
   {

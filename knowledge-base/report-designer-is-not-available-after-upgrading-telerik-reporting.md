@@ -36,7 +36,7 @@ A possible reason for this problem is that your project uses "*stale*" assembl
    
 ## Soluton
  
- - Go through the [Upgrade Wizard](../ui-upgrade-wizard);
+ - Go through the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %});
  
  - Delete the project's "***bin***" and "***obj***" folders as described below:
     - Backup your project.

@@ -30,7 +30,7 @@ res_type: kb
 
 
 ## Description
-On attempt to connect WPF or WinForms ReportViewer to an engine of remote type, i.e. [Report Server](https://docs.telerik.com/report-server/introduction) or [REST Service](../telerik-reporting-rest-conception), the following error occurs: 
+On attempt to connect WPF or WinForms ReportViewer to an engine of remote type, i.e. [Report Server](https://docs.telerik.com/report-server/introduction) or [REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}), the following error occurs: 
 ```
 The assembly Telerik.Reporting.Services.HttpClient.dll cannot be loaded.
 ```

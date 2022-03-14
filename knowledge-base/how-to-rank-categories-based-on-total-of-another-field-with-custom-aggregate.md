@@ -168,7 +168,7 @@ Note that with the above implementation the equal values will be ranked equally 
  - Values [2.2, 2.2, 0] -> Ranks [1, 1, 3]
  - Values [2, 2.2, 0] -> Ranks [2, 1, 3]
 
-The aggregate function can be used in an [Expression](../report-expressions) like :
+The aggregate function can be used in an [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) like :
 ```
 = Exec('crosstab1', RankByCategory(Fields.AssociateName, CDbl(Fields.CalculatedScore))).GetRank(Fields.AssociateName)
 ```

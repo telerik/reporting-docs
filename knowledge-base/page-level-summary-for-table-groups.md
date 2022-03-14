@@ -37,7 +37,7 @@ the group data. The table will display the entire group data in the Table once. 
 Note that in the detail section of the group you may still display Group data. If this is not necessary, you may set its _Visible_ property to _False_. 
 A sample based on this approch may be found in the [PageAggregateFromTableWithReportGroup.trdp](resources/PageAggregateFromTableWithReportGroup.trdp) demo report.
 
-2. The second approach is to keep the Table Grouping and introduce a Parent group to it. It needs to be grouped by the same [Expression](../report-expressions) (e.g. field) 
+2. The second approach is to keep the Table Grouping and introduce a Parent group to it. It needs to be grouped by the same [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) (e.g. field) 
 as the original group. This parent group will generate a new report item that spans the entire group. You may use this new item's name in the _scope_ of the Page Functions. 
 You may delete the content of this item and make it very small. It should be visible in order for the Expression to consider it though. A sample based on this approch may be 
 found in the [PageAggregateFromTableWithParentTableGroup.trdp](resources/PageAggregateFromTableWithParentTableGroup.trdp) demo report.

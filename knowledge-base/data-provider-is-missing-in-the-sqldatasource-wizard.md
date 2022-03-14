@@ -22,7 +22,7 @@ res_type: kb
 
 ## Desciption
 
-The [SqlDataSource component](../sqldatasource) would list and work with any [ADO.NET provider](http://msdn.microsoft.com/en-us/library/h43ks021.aspx) that is correctly
+The [SqlDataSource component]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) would list and work with any [ADO.NET provider](http://msdn.microsoft.com/en-us/library/h43ks021.aspx) that is correctly
 registered on the device. 
 
 The list with ADO.NET providers is taken as described in [Obtaining the DbProviderFactory](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory) article and lists all of the provider factories registered in the **machine.config**.

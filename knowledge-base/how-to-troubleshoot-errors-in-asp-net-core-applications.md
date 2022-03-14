@@ -33,7 +33,7 @@ If you are experiencing problems while working with Telerik Reporting, the right
 ## Solution
 - Upgrade to the latest version of the product in case the reason for the crash has been fixed.
 - Try the reproduce the crash on another machine to exclude machine specific problems e.g., corrupted Telerik Reporting installation.
-- Provide us with a log file containing detailed information about the error. To create the log file, go to the project that hosts the [Rest Service](../telerik-reporting-rest-conception) and add the below settings in the Program.cs file in Main method:
+- Provide us with a log file containing detailed information about the error. To create the log file, go to the project that hosts the [Rest Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) and add the below settings in the Program.cs file in Main method:
 
 ```CSharp
 public static void Main(string[] args)

@@ -1,16 +1,16 @@
 ---
-title: Telerik.Reporting.Cache.CacheStorage.AddInSet NullReferenceException
-description: NullReferenceException at Telerik.Reporting.Cache.CacheStorage.AddInSet(String key, String value)
+title: An AddInSet NullReferenceException Is Thrown on Requesting Reports
+page_title: An AddInSet NullReferenceException Is Thrown on Requesting Reports
+description: "Learn how to handle the AddInSet NullReferenceException."
 type: troubleshooting
-page_title: AddInSet NullReferenceException
 slug: add-in-set-null-reference-exception
-position: 
-tags: reportviewer,storage
+tags: telerik, reporting, reportviewer, storage, addint, null, reference, exception, is, thrown
 ticketid: 1173719
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -20,7 +20,11 @@ res_type: kb
 
 
 ## Description
-The following exception occurs when the report viewer attempts to request a report:
+
+An `AddInSet NullReferenceException` is thrown when the report viewer attempts to request a report.
+
+## Error Message
+
 ```
 exceptionMessage: "Object reference not set to an instance of an object."
 exceptionType: "System.NullReferenceException"
@@ -36,7 +40,11 @@ stackTrace: "
 ```
 
 ## Solution
-The stack trace shows that the exception happens when the REST service tries to interact with the storage. The method which throws is called **AddInSet**. Here is the implementation of this method:
+
+The stack trace shows that the exception happens when the REST service tries to interact with the storage. The method which throws the exception is `AddInSet`.
+
+The following example demonstrates the implementation of `AddInSet`.
+
 ``` CSharp
 public void AddInSet(string key, string value)
 {
@@ -48,7 +56,7 @@ public void AddInSet(string key, string value)
         {
             // Not localizable by design
             const string error = "Incorrect value (null) deserialized. Make sure you are using CacheStorage inside single-instance application deployment only.";
- 
+
             System.Diagnostics.Trace.WriteLine(error);
             throw new ApplicationException(error);
         }
@@ -57,18 +65,21 @@ public void AddInSet(string key, string value)
     }
 }
 ```
-The **System.Diagnostics.Trace.WriteLine(error)** code line means that if a trace listener is attached, the error message above will be present in the trace listener log.
 
-The error message above might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([FileStorage](../t-telerik-reporting-cache-file-filestorage)) is not suitable for such environment. The issue can be approached depending on the environment specifications:
+The `System.Diagnostics.Trace.WriteLine(error)` code line means that if a trace listener is attached, the error message above will be present in the trace listener log.
 
-1. In **web farm environments** it is recommended to change the storage to use a **MsSqlServerStorage** or **RedisStorage** implementation. For further details check [IStorage implementation suitable for deploying in Web Farms](../telerik-reporting-rest-service-storage#istorage-implementation-suitable-for-deploying-in-web-farms).
+The error message might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([`FileStorage`](https://docs.telerik.com/reporting/api/Telerik.Reporting.Cache.File.FileStorage.html) is not suitable for such environment.
 
-2. In **single-instance environments** reset the report viewer storage data by deleting the contents of the file storage folder. By default, the REST Service is using *the current user's temporary folder*. In case of using Telerik Report Server the default file storage is placed in the product installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data* (delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data intact). 
-We recommend creating a backup before resetting the storage.
+Depending on the environment specifications, you can approach the issue in the following ways:
 
+* In web farm environments, it is recommended to change the storage to use an `MsSqlServerStorage` or `RedisStorage` implementation. For further details, refer to the article on [IStorage implementation suitable for deploying in Web Farms]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview %}).
 
+* In single-instance environments, reset the report viewer storage data by deleting the contents of the file storage folder. By default, the REST Service is using the temporary folder of the current user. If you are using the Telerik Report Server, the default file storage is placed in the product installation folder, that is, in `C:\Program Files (x86)\Progress\Telerik Report Server\Telerik.ReportServer.Web\Data`. Delete only the folder with the randomly generated name and leave the TRS folder which contains the Report Server data intact.
+
+It is recommended that you create a backup before resetting the storage.
 
 ## See Also
+
 * [REST Service Storage Overview](../telerik-reporting-rest-service-storage)
-* [How To: Configure MS Sql database storage](../telerik-reporting-rest-howto-use-mssql-storage)
-* [How to: Use Redis storage](../telerik-reporting-rest-howto-use-redis-storage)
+* [Configuring MS SQL Database Storage]({% slig telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage %})
+* [Using Redis Storage]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage %})

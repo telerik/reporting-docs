@@ -35,7 +35,7 @@ Set @localVariable='SELECT * FROM MYTABLE'
 Exec(@localVariable)
 ```
  
-- If the above is set as SQL text, the [SqlDataSource Wizard](../sqldatasource-wizard) will return an error like:  
+- If the above is set as SQL text, the [SqlDataSource Wizard]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}-wizard) will return an error like:  
 
 ```
 The variable name '@localVariable' has already been declared. Variable names must be unique within a query batch or stored procedure.
@@ -43,7 +43,7 @@ The variable name '@localVariable' has already been declared. Variable names mus
   
 ## Solution  
 
-On configuring a SqlDataSource component you can map SQL parameters to report parameters - SqlDataSource Wizard [step 4](../sqldatasource-wizard). 
+On configuring a SqlDataSource component you can map SQL parameters to report parameters - SqlDataSource Wizard [step 4]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}-wizard). 
  
 SQL queries relying on local variables can be turned into **stored procedures**. 
 

@@ -41,7 +41,7 @@ This KB article explains the steps to create a graph whose last column contains 
 ```
 =IIf(Parameters.paramMerged.Value = "True", 5, 120)
 ```
-In this [expression](../report-expressions), the value which will be set when the report parameter is *True* is 5 and stands for the number of Series (with highest values) that will be separately displayed - the rest will be merged. 120 stands for the value of the columns that will be shown when we would like to display all the Series in the Graph - it should be bigger than the total number of columns. 
+In this [expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}), the value which will be set when the report parameter is *True* is 5 and stands for the number of Series (with highest values) that will be separately displayed - the rest will be merged. 120 stands for the value of the columns that will be shown when we would like to display all the Series in the Graph - it should be bigger than the total number of columns. 
 
 3) Add a textbox and set its **Value** as follows:
 

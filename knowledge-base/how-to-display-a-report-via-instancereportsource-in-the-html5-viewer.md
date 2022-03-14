@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 
-The [HTML5 Viewer](../html5-report-viewer) and [Reporting REST service](../telerik-reporting-rest-conception) use client-server technology, different than the MVC model. Whole data objects cannot be sent in a request to the server. Even if the content is serialized, it may reach technology limitations in the size of requests. The HTML5 viewer sends short string  messages describing which report, what parameters and rendering format to be used on the server. Reports are processed and rendered on the server.  
+The [HTML5 Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview %}) and [Reporting REST service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) use client-server technology, different than the MVC model. Whole data objects cannot be sent in a request to the server. Even if the content is serialized, it may reach technology limitations in the size of requests. The HTML5 viewer sends short string  messages describing which report, what parameters and rendering format to be used on the server. Reports are processed and rendered on the server.  
   
  The available MVC and WebForms wrappers of the HTML5 Viewer let you specify which report to be displayed though the viewer's *ReportSource.Report*and *ReportSource.Parameters,* in code in a declarative manner.   
 

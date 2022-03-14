@@ -21,7 +21,7 @@ res_type: kb
 
 ## Description
 
-Trying to set a width or height sizing of less than 10px on table/crosstab/list row or column results in the *Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}* error. Usually, such error occurs when user try to make a row or column not visible by basically reducing its width or height(or both) to zero. The correct way to hide a row or a column is through [Conditional Formatting](../styling-conditional-formatting) or a [Binding](../expressions-bindings) to the **Visible** property.
+Trying to set a width or height sizing of less than 10px on table/crosstab/list row or column results in the *Each table row and column maintains a minimum size, resulting in a minimum table size of {Width=10px, Height=10px}* error. Usually, such error occurs when user try to make a row or column not visible by basically reducing its width or height(or both) to zero. The correct way to hide a row or a column is through [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) or a [Binding]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings %}) to the **Visible** property.
 
 ## Error Message
 
@@ -42,9 +42,9 @@ Trying to set a width or height sizing of less than 10px on table/crosstab/list 
   
 Removing the problematic item from the report's definition or setting non-zero values for item's Width(Height) properties  will resolve the issue:  
   
-1. Downgrade the report to the previous version using [Upgrade Wizard](../ui-upgrade-wizard) which will allow opening the *Design view*. After that, locate the item using the [Report Explorer](../ui-report-explorer) and delete it or set non-zero values for Width(Height) properties (**recommended**).  
+1. Downgrade the report to the previous version using [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}) which will allow opening the *Design view*. After that, locate the item using the [Report Explorer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer %}) and delete it or set non-zero values for Width(Height) properties (**recommended**).  
   
-2. Open report's **.Designer.cs(vb)** file, locate the code for setting item's [Size property](../p-telerik-reporting-reportitem-size) and set Width and Height to values greater than 0.  
+2. Open report's **.Designer.cs(vb)** file, locate the code for setting item's [Size property]({% slug https://docs.telerik.com/reporting/api/Telerik.Reporting.ReportItem.html#Telerik_Reporting_ReportItem_Size %}) and set Width and Height to values greater than 0.  
   
 ## Notes
 

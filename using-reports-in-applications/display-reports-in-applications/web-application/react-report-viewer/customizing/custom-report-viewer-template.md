@@ -23,7 +23,7 @@ C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Html5\ReportViewe
 1. Set the **templateUrl** property of the viewer:
 
    ````js
- <TelerikReportViewer
+<TelerikReportViewer
         ref={el => viewer = el}     
         templateUrl="telerikReportViewerTemplate-VERSION.html/"
         reportSource={{

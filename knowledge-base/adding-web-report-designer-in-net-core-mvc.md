@@ -31,12 +31,12 @@ res_type: kb
 
 ## Description
 This KB article lists all necessary steps for integrating our [Web Report Designer](../web-report-designer) in .NET Core MVC 3.1 project. 
-It is based on [How To: Host Reports Service In ASP.NET Core 3+]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %})
-and [How to setup the WebReportDesigner in .NET Core application](../web-report-designer-setup-in-net-core).
-The same approach can be applied for .NET Core MVC 3.0 project.
+It is based on [How To Host Reports Service In ASP.NET Core 3+]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %})
+and [How to Set Up the WebReportDesigner in .NET Core Applications](../web-report-designer-setup-in-net-core). The same approach can be applied for .NET Core MVC 3.0 project.
  
 
 ## Solution
+
 1. Add the following NuGet packages:
 - Telerik.Reporting.Services.AspNetCore
 - Telerik.WebReportDesigner.Services
@@ -44,7 +44,7 @@ The same approach can be applied for .NET Core MVC 3.0 project.
 
 2. Add a folder with the TRDP / TRDX reports.
 
-3. Add the **ReportDesignerController**:
+3. Add the `ReportDesignerController`:
 ```CSharp
 namespace WebApplication1.Controllers
 {
@@ -64,7 +64,7 @@ namespace WebApplication1.Controllers
 }
 ```
 
-4. Add a new class named **ConfigurationHelper**:
+4. Add a new class named `ConfigurationHelper`:
 ```CSharp
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -84,7 +84,7 @@ namespace WebApplication1
 }
 ```
 
-5. Add the required configurations in the **Startup.cs** from [Setup the Startup.cs file for the Reports service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service):
+5. Add the required configurations in the `Startup.cs` from [Set Up the Startup.cs File for the Reports Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service):
 ```CSharp
  public class Startup
     {
@@ -202,7 +202,7 @@ namespace WebApplication1
 
 ```
 
-7. If you are using [SQL DataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with Shared connection string, add a connection string in appsettings.json file:
+7. If you are using [SQL DataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with Shared connection string, add a connection string in the `appsettings.json` file:
 ```
 "ConnectionStrings": [
   {
@@ -213,5 +213,6 @@ namespace WebApplication1
 ]
 ```
 
-## Demo application
-The demo can be found in our [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/WRD%20in%20.NET%20Core%203.1%20MVC).
+## Demo Application
+
+For the demo, refer to the [Reporting Samples GitHub repository](https://github.com/telerik/reporting-samples/tree/master/WRD%20in%20.NET%20Core%203.1%20MVC).

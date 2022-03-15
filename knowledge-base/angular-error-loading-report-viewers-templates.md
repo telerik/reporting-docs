@@ -59,3 +59,7 @@ Upgrade the Angular ReportViewer to the same version used by the REST Service by
 npm install @progress/telerik-angular-report-viewer
 npm install --save @progress/telerik-angular-report-viewer
 ```
+
+
+
+

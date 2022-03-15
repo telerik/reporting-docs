@@ -54,3 +54,5 @@ To download the demo application, go to the [GitHub repository](https://github.c
 2. Rebuild the project to recover the required references and packages.
 3. Start the application.
 4. Open the Angular project and run `npm install`. Then, execute `ng serve`.
+
+

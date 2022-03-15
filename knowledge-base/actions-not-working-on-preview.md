@@ -57,3 +57,6 @@ Depending on the exact scenario, use any of the following approaches to solve th
 - **The drill-down report action ([`TogglevisibilityAction`]({% slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action %}) does not toggle the visibility of all required items/sections**  
 
     By configuring the `ToggleVisibilityAction`, you can set a list of targets which includes sub groups, items, and sections. Beside setting the targets, you need to set the `Visible` properties of the targets depending on [whether you want them to be initially shown or hidden]({% slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action %}).
+
+
+

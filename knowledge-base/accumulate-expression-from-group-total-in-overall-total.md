@@ -32,7 +32,7 @@ The most straight-forward solution is to sum up the values in the `TextBox` disp
 
 ## Solution
 
-To solve the issue, create a [Custom Aggregate Function]({% sliug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions %}) that accumulates the overtime hours from the groups.
+To solve the issue, create a [Custom Aggregate Function]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions %}) that accumulates the overtime hours from the groups.
 
 the following example demonstrates a sample implementation for the case when workers' reports are grouped by weeks:
 

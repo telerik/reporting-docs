@@ -18,7 +18,7 @@ C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Html5\ReportViewe
 
 1. Copy the file to your React application or REST service project, depending on your preferences.
 
-1. Make the requred changes in the file.
+1. Make the required changes in the file.
 
 1. Set the **templateUrl** property of the viewer:
 

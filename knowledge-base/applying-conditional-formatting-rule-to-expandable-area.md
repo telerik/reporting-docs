@@ -50,3 +50,9 @@ To solve this issue, refer to the [demo report](https://github.com/telerik/repor
 		**Operator** `=`
 
 		**Value** `=0`
+
+
+
+
+
+

@@ -38,3 +38,5 @@ Alternatively, you can use another tool to render the gauge with the desired val
 1. Capture or export the image.
 
 1. Use the [PictureBox]({% slug telerikreporting/designing-reports/report-structure/picturebox %}) item to display the image in your report.
+
+

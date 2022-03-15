@@ -40,7 +40,7 @@ you can use the suggested workaround below.
 
 
 ## Suggested Workarounds
-Add the following lines of code to the **csproj** file:
+Add the following lines of code to the `csproj` file:
 ```
 <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>

@@ -1,7 +1,7 @@
 ---
 title: Exporting Reports to Excel 2003 Causes an Error
 page_title: Exporting Reports to Excel 2003 Causes an Error
-description: "Learn how to handle the `{"Attempting to get range,Merged=False,Parent=, that intersects with an already merged range."}` error when exporting to Excel 20303."
+description: "Learn how to handle the error that attempting to get a range that intersects with an already merged range when exporting to Excel 20303."
 type: troubleshooting
 slug: attempting-to-get-range-that-intersects-with-an-already-merged-range
 tags: telerik, reporting, export, to, excel, 2003, throws, an, error

@@ -1,7 +1,7 @@
 ---
 title: A Type Initializer Exception Thrown in the ASP.NET Core Project
 page_title: ASP.NET Core Project Crashes as External Assemblies Cannot Be Found
-description: "Learn how to handle the type initializer for Telerik.Reporting.Cache.Lock threw an exception error in an ASP.NET Core project."
+description: "Learn how to handle the error that the type initializer for Telerik Reporting cache lock threw an exception in an ASP.NET Core project."
 type: troubleshooting
 slug: asp-dot-net-core-error-the-type-initializer-for-telerik-reporting-cache-lock
 tags: telerik, reporting, type, exception, thrown, as, net, core, project

@@ -1,7 +1,7 @@
 ---
 title: A Type Initializer Exception Thrown in the ASP.NET Core Project
 page_title: ASP.NET Core Project Crashes as External Assemblies Cannot Be Found
-description: "Learn how to handle the "type initializer for Telerik.Reporting.Cache.Lock threw an exception" error in an ASP.NET Core project."
+description: "Learn how to handle the type initializer for Telerik.Reporting.Cache.Lock threw an exception error in an ASP.NET Core project."
 type: troubleshooting
 slug: asp-dot-net-core-error-the-type-initializer-for-telerik-reporting-cache-lock
 tags: telerik, reporting, type, exception, thrown, as, net, core, project
@@ -15,7 +15,7 @@ res_type: kb
     <tbody>
 	    <tr>
 	    	<td>Product Version</td>
-	    	<td>13.0.19.116 or higher</td>
+	    	<td>13.0.19.116 or later</td>
 	    </tr>
 	    <tr>
 	    	<td>Product</td>
@@ -45,4 +45,4 @@ The particular error is due to the lack of the `System.Threading.AccessControl` 
 
 To get the list of the dependencies for `Telerik.Reporting`, `Telerik.Reporting.Services.AspNetCore`, and so on, open the packages in the NuGet Package Manager in Visual Studio.  
 
-It is strongly recommened that you add the Telerik Reporting assemblies as NuGet packages. Note that you can create a [local NuGet repository](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) and download the NuGet packages in it. If this is not an option, add the necessary dependencies manually too after checking the packages in the NuGet Package Manager as previously suggested.
+It is strongly recommended that you add the Telerik Reporting assemblies as NuGet packages. Note that you can create a [local NuGet repository](https://docs.microsoft.com/en-us/nuget/hosting-packages/local-feeds) and download the NuGet packages in it. If this is not an option, add the necessary dependencies manually too after checking the packages in the NuGet Package Manager as previously suggested.

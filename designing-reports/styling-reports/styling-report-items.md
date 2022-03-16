@@ -200,4 +200,4 @@ For example, in the graph series' [DataPointStyle](../api/Telerik.Reporting.Grap
 
 ## See Also
 
-* [Style Class](../api/Telerik.Reporting.Drawing.Style.html)             
+* [Style Class](../../api/Telerik.Reporting.Drawing.Style.html)             

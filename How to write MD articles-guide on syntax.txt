@@ -123,27 +123,34 @@ Class Product
 	End Class	
 ````
    
-   Note that the code snippet is aligned with the starting ````. Only the first line should start from the beginning of the row. This is to make the code appear propertly aligned and to avoid breaking the appearance when there are empty lines in the snippet.
-   
 2.  ...
 !!!!finishing the sample!!!! 
 
-
-   Note that the code block opener for the VB snippet is not indented as the C# one. This breaks the tabbed appearance of the snippets.
+	   
+   Note that the code snippet is aligned with the opening ````. Only the first line should start from the beginning of the row. This is to make the code appear propertly aligned and to avoid breaking the appearance when there are empty lines in the snippet. The closing ```` should also start from the beginning of the row.
    
-   If you indented also the second code block (VB), this would have broken the List.
+   Note that the code block opener ```` for the VB snippet is indented and not aligned with the closing ```` for the C# code. This breaks the tabbed appearance of the snippets but keeps the order of the list.
+   
+   If the second code block (VB) started from the beginning of the row, this would have broken the List.
    If the list is undoredered, this may still be acceptable, although the code block would appear as a sibling rather than a child of the List.
    If the list is ordered though, the next List item will start from 1. 
    
+   Sample: https://docs.telerik.com/reporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview
+
++ Code snippets in Notes 
+
+	The code snippet should start with propertly indented >````, but the code and the closing ```` should not have > infront.
+
 
 ## LISTS
 
-All the content that must appear under the List items should be propertly indented. It should be aligned with the List item content that follows the List identifier, i.e. the number (for ordered lists) or the bullet mark (for unordered lists).
+All the content that must appear under the List items should be propertly indented. It should be aligned with the List item content that follows the List identifier, i.e. the number (for ordered lists) or the bullet mark (for unordered lists). When there are code snippets in the list use TAB to indent the opening ```` of the snippet and all the new lines that should be in the list item.
 
 + Lists in tables - see the corresponding section in [TABLES](#TABLES).
 
-+ Code snippets in Lists - see the corresponding section in [CODE SNIPPETS](#CODE SNIPPETS).
++ Code snippets in Lists - see the corresponding section in [CODE SNIPPETS](#CODE SNIPPETS). When the list finishes with a code snippet leave at least 2 empty lines before the new text (that is not in the list).
 
+Sample: https://docs.telerik.com/reporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview
 
 ## LINKS
 

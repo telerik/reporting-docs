@@ -22,12 +22,12 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 
 * The fields representing the report items in the Report class should not be used in the report events. 
   
-  Instead the report item should be taken from the Items collection of the report. Consider the following examples: 
+	Instead the report item should be taken from the Items collection of the report. Consider the following examples: 
   
-  __Wrong__ 
+	__Wrong__ 
 
-    {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=WrongItemDataBinding}}
-    ````C#
+	{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=WrongItemDataBinding}}
+	````C#
 void Report1_WrongItemDataBinding(object sender, System.EventArgs e)
 	{
 		this.textBox1.Value = "New Value";
@@ -40,7 +40,7 @@ Private Sub Report1_WrongItemDataBinding(sender As System.Object, e As System.Ev
 	End Sub
 ````
 
-  __Correct__ 
+	__Correct__ 
 
 	{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=CorrectItemDataBinding}}
 	````C#
@@ -96,6 +96,7 @@ Private Sub Report1_ItemDataBinding(sender As System.Object, e As System.EventAr
 		'...
 	End Sub
 ````
+
 
 As the data sources are kept in the session state, it is highly recommended to use the built-in [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}). As a last resort you can use the NeedDataSource event to populate the report with data. Otherwise the session state will either become very large, especially when using large datasets or the data for the report will not be serialized at all if it cannot be binary serialized/deserialized (e.g. business objects, anonymous types, data adapters, etc.). You should restrain from setting an instance of your business object directly as a data source, as it would be serialized multiple times into the session. 
 

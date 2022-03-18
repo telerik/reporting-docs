@@ -27,13 +27,13 @@ Add the instance of the ReportViewer to a __RadAjaxManager__ control. You can op
 <asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" />
 <telerik:ReportViewer ID="ReportViewer1" runat="server"></telerik:ReportViewer>
 <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
-            <AjaxSettings>
-                <telerik:AjaxSetting AjaxControlID="Button1">
-                    <UpdatedControls>
-                        <telerik:AjaxUpdatedControl ControlID="ReportViewer1"/>
-                    </UpdatedControls>
-                </telerik:AjaxSetting>
-            </AjaxSettings>
+    <AjaxSettings>
+        <telerik:AjaxSetting AjaxControlID="Button1">
+            <UpdatedControls>
+                <telerik:AjaxUpdatedControl ControlID="ReportViewer1"/>
+            </UpdatedControls>
+        </telerik:AjaxSetting>
+    </AjaxSettings>
 </telerik:RadAjaxManager>
 ````
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSourceOnByttonClick}}
@@ -62,9 +62,9 @@ Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:
 <asp:ScriptManager ID="ScriptManager1" runat="server" />
 <asp:Button ID="Button1" runat="server" Text="Button" onclick="Button1_Click" />
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-<Triggers>
-    <asp:AsyncPostBackTrigger ControlID="Button1" />
-</Triggers>
+	<Triggers>
+		<asp:AsyncPostBackTrigger ControlID="Button1" />
+	</Triggers>
     <ContentTemplate>
        <telerik:ReportViewer ID="ReportViewer1" runat="server">
         </telerik:ReportViewer>

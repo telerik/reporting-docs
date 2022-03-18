@@ -37,48 +37,48 @@ When adding any of the following lines of code in the `Startup.cs` file, the rep
 
 The following error message occurs:
 
-```CSharp
+````CSharp
 services.AddMvc(options =>
 	options.Filters.Add(new Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute()));
-```
+````
 
 Alternatively, a similar error message is thrown:
 
-```CSharp
+````CSharp
 services.AddControllersWithViews(options =>
 	options.Filters.Add(new Microsoft.AspNetCore.Mvc.AutoValidateAntiforgeryTokenAttribute()));
-```
+````
 
 ## Steps to Reproduce
 
 1. Implement the anti-forgery token. For example, in ASP.NET Core MVC application, create a new `GetAntiXsrfRequestToken()` function on the viewer page to get the request token:
 
-    ```C#
-    @inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
+    ````C#
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Xsrf
     @functions{
         public string GetAntiXsrfRequestToken()
         {
             return Xsrf.GetAndStoreTokens(Context).RequestToken;
         }
     }
-    ```
+````
 
 1. Add the function to each request header:
 
-    ```JavaScript
-    <script type="text/javascript">
+    ````JavaScript
+<script type="text/javascript">
             $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
                 jqXHR.setRequestHeader("__RequestVerificationToken", '@GetAntiXsrfRequestToken()');
             });
     </script>
-    ```
+````
 
 As a result, the `"Error registering the viewer with the service."` error message occurs. Also, in the browser console on [Register Client]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client %}) request returns `400 Bad Request` with the following error:
 
-```
+````
 Failed to load resource: the server responded with a status of 400 (Bad Request)
 Uncaught (in promise) Invalid clientID
-```
+````
 
 ## Solutions
 
@@ -86,39 +86,39 @@ The `AutoValidateAntiforgeryToken` is recommended by Microsoft for non-API scena
 
 * Add the [`IgnoreAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to the ReportsController. For example:
 
-    ```CSharp
-    [Route("api/reports")]
+    ````CSharp
+[Route("api/reports")]
     [IgnoreAntiforgeryToken]
     public class ReportsController : ReportsControllerBase
     {
     	...
     }
-    ```
+````
 
-* Override [all `ReportsController` public methods]({% slug /reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase.html#methods %}) and add the [`IgnoreAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to them. You may skip the `GET` HTTP methods.
+* Override [all `ReportsController` public methods](../api/Telerik.Reporting.Services.WebApi.ReportsControllerBase.html#methods) and add the [`IgnoreAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to them. You may skip the `GET` HTTP methods.
 
-    ```CSharp
-    [IgnoreAntiforgeryToken]
+    ````CSharp
+[IgnoreAntiforgeryToken]
     public override IActionResult RegisterClient()
     {
         return base.RegisterClient();
     }
-    ```
+````
 
 Alternatively, remove the auto anti-forgery configuration and decorate each controller or action that has to be protected against anti-forgery with the [`AutoValidateAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.autovalidateantiforgerytokenattribute?view=aspnetcore-3.1) or [`ValidateAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.validateantiforgerytokenattribute?view=aspnetcore-3.1) attribute.
 
 The following configuration or its equivalent have to be replaced with the configuration that follows:
 
-```CSharp
+````CSharp
 services.AddMvc(options => { options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); });
-```
+````
 
 The following configuration has to replace the previous one:
 
-```CSharp
+````CSharp
  services.AddMvc();
  services.AddAntiforgery(options => options.HeaderName = "__RequestVerificationToken");
-```
+````
 
 ## See Also
 

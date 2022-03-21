@@ -10,8 +10,4 @@ position: 10
 
 # Protecting Telerik Reporting binaries when redistributed as part of a packaged product
 
-
-
-
-Currently merging the Telerik Reporting assemblies is not possible.             Thus you can distribute the Telerik Reporting assemblies without merging them.
-
+Currently merging the Telerik Reporting assemblies is not possible. Thus you can distribute the Telerik Reporting assemblies without merging them.

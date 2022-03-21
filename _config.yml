@@ -307,7 +307,7 @@ navigation:
         position: 14
         title: "API Reference" 
     using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer:
-        position: 1350
+        position: 15
         title: "React Report Viewer"
     using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing:
         position: 12
@@ -319,14 +319,11 @@ navigation:
         position: 14
         title: "Blazor Report Viewer"     
     using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer:
-        position: 15
+        position: 16
         title: "ASP.NET Web Forms Report Viewer"
     using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state:
         position: 15
         title: "Design Considerations for Out-proc Session State"
-    using-reports-in-applications/display-reports-in-applications/web-application/troubleshooting:
-        position: 16
-        title: "Troubleshooting" 
     using-reports-in-applications/display-reports-in-applications/windows-forms-application:
         position: 11
         title: "Windows Forms Application"    

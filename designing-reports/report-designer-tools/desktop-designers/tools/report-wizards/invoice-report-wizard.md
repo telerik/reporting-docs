@@ -14,7 +14,7 @@ Invoices are one of the most common business documents, that’s why their prepa
 
 ## Create an invoice using the Invoice Template
 
-1. As the most report templates, the Invoice template will be created using a wizard, which will guide you in a step-by-step process. If you are using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you can start the __Invoice Wizard__ from the New command, or in case you are using the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), you can add a__New Report Wizard item__ to your project and select the __Invoice Wizard__ from the __Wizard Selector__ that should appear. 
+1. As the most report templates, the Invoice template will be created using a wizard, which will guide you in a step-by-step process. If you are using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you can start the __Invoice Wizard__ from the New command, or in case you are using the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), you can add a __New Report Wizard item__ to your project and select the __Invoice Wizard__ from the __Wizard Selector__ that should appear. 
 
 1. The first page of the wizard presents four different invoice layouts to choose from. There is also a brief note that explains in which case the selected layout will be suitable. On the right is a sample picture displaying the resulting invoice design. These four layouts correspond with four predefined reports that are used as a base templates and once the wizard finishes, it will apply the changes onto the selected one and load it into the designer. 
 
@@ -35,7 +35,7 @@ Invoices are one of the most common business documents, that’s why their prepa
 
     >Some of the template fields are noted with a red star. This means that these fields must be mapped to data fields or the report building and processing might result in an unexpected behavior. These fields actually are the most important fields for an invoice – the InvoiceNumber, InvoiceDate, ProductNumber and the ProductPrice. 
 
-    You can map the data source fields to the template fields by dragging them from the tree view and dropping them onto the grid. You can also select the necessary data field from the combobox item in the right grid column. In case you need to delete a mapping, you can do this by using the DEL key or selecting "<```< none >```>" from the combobox. For convenience, the data source fields that are already mapped are displayed in a gray color in the treeview. 
+    You can map the data source fields to the template fields by dragging them from the tree view and dropping them onto the grid. You can also select the necessary data field from the combobox item in the right grid column. In case you need to delete a mapping, you can do this by using the DEL key or selecting `< none >` from the combobox. For convenience, the data source fields that are already mapped are displayed in a gray color in the treeview. 
 
    ![Invoice Wizard 4 Field Mapping Done](images/Templates/Invoice/InvoiceWizard_4_FieldMapping_Done.png)
 

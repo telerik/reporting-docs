@@ -28,18 +28,18 @@ Before utilizing the __CubeDataSource__ component in your reports you need to co
     
 	````xml
 <configuration>
-	<runtime>
-	<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-	<dependentAssembly>
-	<assemblyIdentity name="Microsoft.AnalysisServices.AdomdClient"
-	publicKeyToken="89845dcd8080cc91"
-	culture="neutral" />
-	<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535"
-	newVersion="<Your Version>" />
-	</dependentAssembly>
-	</assemblyBinding>
-	</runtime>
+		<runtime>
+			<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+				<dependentAssembly>
+					<assemblyIdentity name="Microsoft.AnalysisServices.AdomdClient"
+					publicKeyToken="89845dcd8080cc91"
+					culture="neutral" />
+					<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535"
+					newVersion="<Your Version>" />
+				</dependentAssembly>
+			</assemblyBinding>
+		</runtime>
 	</configuration>
 ````
 
-   Here *"```<Your Version>```"* is the actual version of your __Microsoft.AnalysisServices.AdomdClient__ assembly. In the case of a ClassLibrary project containing report definitions, the binding redirects should be applied in Visual Studio configuration file (__devenv.exe.config__).
+   Here `<Your Version>` is the actual version of your __Microsoft.AnalysisServices.AdomdClient__ assembly. In the case of a ClassLibrary project containing report definitions, the binding redirects should be applied in Visual Studio configuration file (__devenv.exe.config__).

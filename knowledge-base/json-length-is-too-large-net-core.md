@@ -31,8 +31,7 @@ res_type: kb
 
 ## Description
 
-Rendering a report with a lot of data, resulting a big number of pages, would result in displaying the "System.ArgumentException: The JSON value of length n is too large and not supported"
-error message inside the repotr viewer at some point.
+Rendering a report with a lot of data, hence a big number of pages, would result in displaying the "System.ArgumentException: The JSON value of length n is too large and not supported" error message inside the report viewer at some point.
 
 ## Error Message
 
@@ -62,7 +61,7 @@ This problem occurs when the Telerik Reporting tries to generate the search meta
 
 ## Suggested Workarounds
 
-By default, the search metadata is generated automatically but it can also be set to be on-demand which would resolve the issue for when the search is not used.
+By default, the search metadata is generated automatically but it can also be set to be on-demand which would resolve the issue for the cases when the search is not used.
 
 ````js
 $(function () {

@@ -43,8 +43,8 @@ The demonstrated approach to solve this issue is based on the [Host Reports Serv
 
 3. Add the `ReportsController`:
 
-	```CSharp
-	namespace WebApplication1.Controllers
+	````CSharp
+namespace WebApplication1.Controllers
 	{
 	    using Microsoft.AspNetCore.Mvc;
 	    using System.Net;
@@ -75,12 +75,12 @@ The demonstrated approach to solve this issue is based on the [Host Reports Serv
 	        }
 	    }
 	}
-	```
+````
 
 4. Add a new class named `ConfigurationHelper`:
 
-	```CSharp
-	using Microsoft.AspNetCore.Hosting;
+	````CSharp
+using Microsoft.AspNetCore.Hosting;
 	using Microsoft.Extensions.Configuration;
 
 	namespace WebApplication1
@@ -96,12 +96,12 @@ The demonstrated approach to solve this issue is based on the [Host Reports Serv
 	        }
 	    }
 	}
-	```
+````
 
 5. Add the required configurations in the `Startup.cs` from the [Set Up the Startup.cs File for the Reports Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service) article:
 
-	```CSharp
-	public class Startup
+	````CSharp
+public class Startup
 	{
 	    public Startup(IConfiguration configuration)
 	    {
@@ -160,12 +160,12 @@ The demonstrated approach to solve this issue is based on the [Host Reports Serv
 	    }
 	}
 
-	```
+````
 
 6. The view has to look as demonstrated in the following example:
 
-	```Javascript
-	<!DOCTYPE html>
+	````Javascript
+<!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -266,19 +266,19 @@ The demonstrated approach to solve this issue is based on the [Host Reports Serv
 	        });
 	    </script>
 	}
-	```
+````
 
 7. If you are using an [SQL DataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with a Shared connection string, add a connection string in the `appsettings.json` file:
 
-	```Javascript
-	"ConnectionStrings": [
+	````Javascript
+"ConnectionStrings": [
 	  {
 	    "name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
 	    "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
 	    "providerName": "System.Data.SqlClient"
 	  }
 	]
-	```
+````
 
 ## See Also
 

@@ -63,6 +63,8 @@ table th:nth-of-type(3) {
 
 + Use 4(four) backward ticks: ```` to start and finish the code blocks. You may use the language name after the opening ticks. The 4 ticks let you format the code as you want it. However, this will prevent you from previewing the MD properly in Github.
 
++ If the article finishes with code snippet, leave at least 2 empty rows after the closing ````. Otherwise, the jkyll build fails silently.
+
 + If you would like tabbed code blocks, for example, one in C# and one in VB, so that you may switch between them, you need to place them one after the other. You may also optionally put the source for the code just above the corresopnding snippet. When building, a special code will read the actual snippet and update the MD article. Here is an example:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=SampleDataSource}}

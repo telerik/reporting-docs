@@ -85,6 +85,7 @@ We will apply embedded implicit styles for the Fluent theme in our example proje
 	</Application>
 ````
 
+
 ## Setting Customizable Implicit Style for the WPF Report Viewer Example
 
 We will apply implicit styles for the Vista theme in our example project. Having the XAML style files in your project enables WPF Report Viewer style customizations. 

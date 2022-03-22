@@ -54,7 +54,7 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
   ![Wpf Report Source Editor](images/WpfReportSourceEditor.png)
 
-    >When the [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection) property has __Engine__ set to *ReportServer*, the viewer will serialize the report source identifier property (__URI__ for the only supported [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource) and send it to the service resolver. The *ReportServer* will try to decompose the identifier using the format `{Category}/{ReportName}` and then look for the corresponding category and report name. 
+    >When the [ReportEngineConnection](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection) property has __Engine__ set to *ReportServer*, the viewer will serialize the report source identifier property (__URI__ for the supported [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource)) and send it to the service resolver. The *ReportServer* will try to decompose the identifier using the format `{Category}/{ReportName}` and then look for the corresponding category and report name. 
 
 1. Select the __UriReportSource__ entry. Confirm by clicking __OK__. 
 

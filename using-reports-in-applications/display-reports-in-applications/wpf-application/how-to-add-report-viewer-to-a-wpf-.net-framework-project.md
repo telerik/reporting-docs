@@ -18,7 +18,7 @@ The item template is available in the [Add New Item](https://msdn.microsoft.com/
 
 This item template will do the following: 
 
-* Build the project and check that the project is using a compatible.NET version. 
+* Build the project and check that the project is using a compatible .NET version. 
 
 * Open the Add New Report Viewer dialog to choose a report definition for the report viewer. 
 
@@ -52,7 +52,7 @@ If the selected engine is __REST Service__ additionally it will do the following
 
 # See Also
 
-* [How to Add  manually report viewer to a WPF.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%})
+* [How to Add  manually report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%})
 
 * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
 

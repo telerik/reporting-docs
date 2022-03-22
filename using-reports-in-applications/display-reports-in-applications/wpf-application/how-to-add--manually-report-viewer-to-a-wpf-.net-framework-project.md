@@ -14,7 +14,7 @@ This article explains the steps needed to manually create an application which u
 
 ## Add the WPF viewer to the application
 
-1. Create a new *WPF Application* project in Visual Studio. Target.NET Framework 4.0 or higher. 
+1. Create a new *WPF Application* project in Visual Studio. Target .NET Framework 4.0 or higher. 
 
 1. Add references to the following *Telerik UI for WPF* NoXaml assemblies: 
 
@@ -28,7 +28,7 @@ This article explains the steps needed to manually create an application which u
     
 	In case you are still not prepared to migrate to Implicit Styling you can use the binaries that include the xaml. However you will still have to merge all the xaml files mentioned in the next step, otherwise the Report Viewer will not show up as it will have no style. 
 	
-	In case Telerik UI for WPF is used only for the report viewer, reference the Telerik UI for WPF assemblies available with Telerik Reporting. They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer. The.NET Framework assemblies containing *Telerik UI for WPF* are located in _%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework_.
+	In case Telerik UI for WPF is used only for the report viewer, reference the Telerik UI for WPF assemblies available with Telerik Reporting. They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer. The .NET Framework assemblies containing *Telerik UI for WPF* are located in _%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework_.
 	
 	The WPF ReportViewer is build with the latest official release of Telerik UI for WPF. In this way we provide trouble free upgrade for most of the users. This means that you can use the latest version of Telerik UI for WPF in your project and report viewer. It is possible that the Telerik UI for WPF assemblies have a greater version (service pack or internal build) than the one with which the WPF report viewer control targets. In this case assembly binding redirects are required (see [Binding Redirects](#binding-redirects) topic below). 
 
@@ -72,90 +72,90 @@ This article explains the steps needed to manually create an application which u
 
 	+ Specifying a report source declaratively, we would use type report source for this example: 
 
-	{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window1.xaml}}
-	````XML
+		{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window1.xaml}}
+		````XML
 <Window x:Class="WpfApplication1.Window1"
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		Title="Window1" Height="451" Width="683"
-		xmlns:telerik="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf"
-		xmlns:telerikReporting="clr-namespace:Telerik.Reporting;assembly=Telerik.Reporting">
-		<Grid>
-			<telerik:ReportViewer Name="reportViewer1">
-				<telerik:ReportViewer.ReportSource>
-					<telerikReporting:TypeReportSource TypeName="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary" />
-				</telerik:ReportViewer.ReportSource>
-			</telerik:ReportViewer>
-		</Grid>
-	</Window>
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			Title="Window1" Height="451" Width="683"
+			xmlns:telerik="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf"
+			xmlns:telerikReporting="clr-namespace:Telerik.Reporting;assembly=Telerik.Reporting">
+			<Grid>
+				<telerik:ReportViewer Name="reportViewer1">
+					<telerik:ReportViewer.ReportSource>
+						<telerikReporting:TypeReportSource TypeName="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary" />
+					</telerik:ReportViewer.ReportSource>
+				</telerik:ReportViewer>
+			</Grid>
+		</Window>
 ````
 
 	+ Setting a report source at run time. The following code snippet illustrates how to assign a report source to the WPF ReportViewer in the *Window.Loaded* event handler: 
 
-	{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
-	````C#
+		{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
+		````XML
 <Window x:Class="WpfApplication1.Window3"
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		Title="Window3" Height="328" Width="618" xmlns:my="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf" Loaded="Window_Loaded">
-		<Grid>
-			<my:ReportViewer Name="reportViewer1" />
-		</Grid>
-	</Window>
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			Title="Window3" Height="328" Width="618" xmlns:my="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf" Loaded="Window_Loaded">
+			<Grid>
+				<my:ReportViewer Name="reportViewer1" />
+			</Grid>
+		</Window>
 ````
-	{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml.cs}}
-	````C#
+		{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml.cs}}
+		````C#
 namespace WpfApplication1
-{
-		using System.Windows;
-
-		/// <summary>
-		/// Interaction logic for Window3.xaml
-		/// </summary>
-		public partial class Window3 : Window
 		{
-			public Window3()
-			{
-				InitializeComponent();
-			}
+			using System.Windows;
 
-			private void Window_Loaded(object sender, RoutedEventArgs e)
+			/// <summary>
+			/// Interaction logic for Window3.xaml
+			/// </summary>
+			public partial class Window3 : Window
 			{
-				var typeReportSource = new Telerik.Reporting.TypeReportSource();
-				typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
-				this.reportViewer1.ReportSource = typeReportSource;
+				public Window3()
+				{
+					InitializeComponent();
+				}
+
+				private void Window_Loaded(object sender, RoutedEventArgs e)
+				{
+					var typeReportSource = new Telerik.Reporting.TypeReportSource();
+					typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
+					this.reportViewer1.ReportSource = typeReportSource;
+				}
 			}
 		}
-	}
 ````
-	{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
-	````VB
+		{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
+		````XML
 <Window x:Class="Window3"
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		Title="Window3" Height="489" Width="687" xmlns:my="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf" Name="Window3">
-		<Grid>
-			<my:ReportViewer Name="ReportViewer1" />
-		</Grid>
-	</Window>
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			Title="Window3" Height="489" Width="687" xmlns:my="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf" Name="Window3">
+			<Grid>
+				<my:ReportViewer Name="ReportViewer1" />
+			</Grid>
+		</Window>
 ````
-	{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}}
-	````VB
+		{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}}
+		````VB
 Imports System.Windows
 
-	' Interaction logic for Window3.xaml
-	Partial Public Class Window3
-		Inherits Window
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+		' Interaction logic for Window3.xaml
+		Partial Public Class Window3
+			Inherits Window
+			Public Sub New()
+				InitializeComponent()
+			End Sub
 
-		Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
-			Dim typeReportSource = New Telerik.Reporting.TypeReportSource()
-			typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary"
-			Me.ReportViewer1.ReportSource = typeReportSource
-		End Sub
-	End Class
+			Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
+				Dim typeReportSource = New Telerik.Reporting.TypeReportSource()
+				typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary"
+				Me.ReportViewer1.ReportSource = typeReportSource
+			End Sub
+		End Class
 ````
 
 
@@ -206,4 +206,4 @@ In case you use *Telerik UI for WPF* version greater than the __latest official 
 
 # See Also
 
-* [How to Add report viewer to a WPF.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
+* [How to Add report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})

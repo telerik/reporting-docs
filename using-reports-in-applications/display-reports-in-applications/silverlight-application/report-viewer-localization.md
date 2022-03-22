@@ -72,7 +72,7 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
     
 	````XML
 <SupportedCultures>
-	fr;fr-BE
+		fr;fr-BE
 	</SupportedCultures>
 ````
 

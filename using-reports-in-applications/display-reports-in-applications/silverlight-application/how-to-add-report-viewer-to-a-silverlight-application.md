@@ -87,7 +87,7 @@ This article explains the steps needed to create an application which uses the S
 
 	* [Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_ReportServiceUri) should point to [Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}): 
 	
-		`__ReportServiceUri="../ReportService.svc__"` 
+		`ReportServiceUri="../ReportService.svc"` 
 		
 	* [Telerik.ReportViewer.Silverlight.ReportViewer.Report](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_Report) should be set to the assembly qualified name of the report you want to show: 
 	

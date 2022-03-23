@@ -73,7 +73,7 @@ $(function () {
     searchMetadataOnDemand: true // set this property to true to generate the search metadata only when needed
 });
 ````
+
 ## See Also
 
 * [Report Viewer Initialization]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization %})
-

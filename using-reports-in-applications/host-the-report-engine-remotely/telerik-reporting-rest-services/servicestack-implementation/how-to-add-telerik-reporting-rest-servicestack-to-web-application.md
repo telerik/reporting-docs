@@ -39,95 +39,97 @@ This article describes the steps required to host the __Telerik Reporting Servic
 
 1. Create a new class which derives from [ReportsHostBase](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase). It could be called *ReportsHost* for example: 
 
-   Set the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property. The __ReportSourceResolver__ and __Storage__ configuration settings are required. See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details. 
+	* Set the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property. The __ReportSourceResolver__ and __Storage__ configuration settings are required. See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details. 
 		
-	Here is a sample implementation with the setup:             
+		Here is a sample implementation with the setup:             
 
-	{{source=CodeSnippets\MvcCS\ServiceStack\ReportsHost.cs region=ReportsHost_Implementation}}
-	````C#
+		{{source=CodeSnippets\MvcCS\ServiceStack\ReportsHost.cs region=ReportsHost_Implementation}}
+		````C#
 public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase
-	{
-		public ReportsHost()
 		{
-			var reportsPath = System.Web.HttpContext.Current.Server.MapPath(@"~\Reports");
-			var resolver = new Telerik.Reporting.Services.UriReportSourceResolver(reportsPath)
-			 .AddFallbackResolver(new Telerik.Reporting.Services.TypeReportSourceResolver());
+			public ReportsHost()
+			{
+				var reportsPath = System.Web.HttpContext.Current.Server.MapPath(@"~\Reports");
+				var resolver = new Telerik.Reporting.Services.UriReportSourceResolver(reportsPath)
+				 .AddFallbackResolver(new Telerik.Reporting.Services.TypeReportSourceResolver());
 
-			var reportServiceConfiguration = new Telerik.Reporting.Services.ReportServiceConfiguration();
-			reportServiceConfiguration.HostAppId = "Application1";
-			reportServiceConfiguration.ReportSourceResolver = resolver;
-			reportServiceConfiguration.Storage = new Telerik.Reporting.Cache.File.FileStorage();
+				var reportServiceConfiguration = new Telerik.Reporting.Services.ReportServiceConfiguration();
+				reportServiceConfiguration.HostAppId = "Application1";
+				reportServiceConfiguration.ReportSourceResolver = resolver;
+				reportServiceConfiguration.Storage = new Telerik.Reporting.Cache.File.FileStorage();
 
-			this.ReportServiceConfiguration = reportServiceConfiguration;
+				this.ReportServiceConfiguration = reportServiceConfiguration;
+			}
 		}
-	}
 ````
-	{{source=CodeSnippets\MvcVB\ServiceStack\ReportsHost.vb region=ReportsHost_Implementation}}
-	````VB
+		{{source=CodeSnippets\MvcVB\ServiceStack\ReportsHost.vb region=ReportsHost_Implementation}}
+		````VB
 Imports Telerik.Reporting.Services
 
-	Public Class ReportsHost
-		Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
-		Public Sub New()
-			Dim reportsPath = System.Web.HttpContext.Current.Server.MapPath("~\Reports")
-			Dim resolver = New UriReportSourceResolver(reportsPath) _
-						.AddFallbackResolver(New TypeReportSourceResolver())
+		Public Class ReportsHost
+			Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+			Public Sub New()
+				Dim reportsPath = System.Web.HttpContext.Current.Server.MapPath("~\Reports")
+				Dim resolver = New UriReportSourceResolver(reportsPath) _
+							.AddFallbackResolver(New TypeReportSourceResolver())
 
-			Dim reportServiceConfiguration = New ReportServiceConfiguration()
-			reportServiceConfiguration.HostAppId = "Application1"
-			reportServiceConfiguration.ReportSourceResolver = resolver
-			reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
+				Dim reportServiceConfiguration = New ReportServiceConfiguration()
+				reportServiceConfiguration.HostAppId = "Application1"
+				reportServiceConfiguration.ReportSourceResolver = resolver
+				reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.File.FileStorage()
 
-			Me.ReportServiceConfiguration = reportServiceConfiguration
-		End Sub
-	End Class
+				Me.ReportServiceConfiguration = reportServiceConfiguration
+			End Sub
+		End Class
 ````
 
-	The provided sample implementation will resolve.trdp|.trdx report definitions from the /*Reports* subfolder of the hosting ASP.NET application root. Another option is to reference a reports library and provide report [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) from the service clients. 
+		The provided sample implementation will resolve .TRDP|.TRDX report definitions from the *Reports* subfolder of the hosting ASP.NET application root. Another option is to reference a reports library and provide report [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) from the service clients. 
 
-	>warning Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file. 
+		>warning Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file. 
 
-	>tip The above implementation uses the [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage) method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default __FileStorage__ constructor. The second overload of the FileStorage constructor allows you to specify a folder, and it is recommended for usage in production environment. 
+		>tip The above implementation uses the [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage) method in order to create a cache object instance. All Visual Studio item templates for adding the Reporting REST service use the default __FileStorage__ constructor. The second overload of the FileStorage constructor allows you to specify a folder, and it is recommended for usage in production environment. 
 
-	__To configure the Telerik Reporting REST service from the application configuration file__, set the value of the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property to an instance of the                [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class. 
+	* Alternatively, you may __configure the Telerik Reporting REST service from the application configuration file__. 
+	
+		If you prefer this approach, set the value of the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration) property to an instance of the [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class. 
 
-	{{source=CodeSnippets\MvcCS\ServiceStack\ReportsHostConfigSection.cs region=ReportsHostConfigSectionImplementation}}
-	````C#
+		{{source=CodeSnippets\MvcCS\ServiceStack\ReportsHostConfigSection.cs region=ReportsHostConfigSectionImplementation}}
+		````C#
 public class ReportsHost : Telerik.Reporting.Services.ServiceStack.ReportsHostBase
-	{
-		public ReportsHost()
 		{
-			var reportServiceConfiguration = new Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration();
+			public ReportsHost()
+			{
+				var reportServiceConfiguration = new Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration();
 
-			this.ReportServiceConfiguration = reportServiceConfiguration;
+				this.ReportServiceConfiguration = reportServiceConfiguration;
+			}
 		}
-	}
 ````
-	{{source=CodeSnippets\MvcVB\ServiceStack\ReportsHostConfigSection.vb region=ReportsHostConfigSectionImplementation}}
-	````VB
+		{{source=CodeSnippets\MvcVB\ServiceStack\ReportsHostConfigSection.vb region=ReportsHostConfigSectionImplementation}}
+		````VB
 Public Class ReportsHost
-		Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
-		Public Sub New()
-			Dim reportServiceConfiguration = New Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration()
+			Inherits Telerik.Reporting.Services.ServiceStack.ReportsHostBase
+			Public Sub New()
+				Dim reportServiceConfiguration = New Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration()
 
-			Me.ReportServiceConfiguration = reportServiceConfiguration
-		End Sub
-	End Class
+				Me.ReportServiceConfiguration = reportServiceConfiguration
+			End Sub
+		End Class
 ````
 
-	Then add the __restReportService__ configuration element containing the service settings to the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}). 
+		Then add the __restReportService__ configuration element containing the service settings to the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}). 
 
-	{{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
-	````XML
+		{{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
+		````XML
 <Telerik.Reporting>
-	  <restReportService hostAppId="Application1" reportSharingTimeout="10" clientSessionTimeout="10">
-		<reportResolver provider="type" />
-		<storage provider="file" />
-	  </restReportService>
-	</Telerik.Reporting>
+		  <restReportService hostAppId="Application1" reportSharingTimeout="10" clientSessionTimeout="10">
+			<reportResolver provider="type" />
+			<storage provider="file" />
+		  </restReportService>
+		</Telerik.Reporting>
 ````
 
-	For more information see [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).             
+		For more information see [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}). 
 
 1. Add a new or use the existing __Global Application Class__ (global.asax) to create and initialize the ServiceStack reports service in the __Application_Start__ method: 
 

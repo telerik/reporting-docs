@@ -10,12 +10,9 @@ position: 5
 
 # How to Increase the timeout value of a WCF service
 
-
-
-To avoid timeouts when using the Telerik Reporting WCF Service, one should set several attributes         on the client and server side.        
+To avoid timeouts when using the Telerik Reporting WCF Service, one should set several attributes on the client and server side. 
 
 ## Timeouts on server binding
-
     
 ````xml
 <bindings>
@@ -30,9 +27,7 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 
 > The number 2,147,483,647 is the max value of a 32 bit signed integer.
 
-
 ## Timeouts on client binding
-
     
 ````c#
 ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
@@ -53,16 +48,13 @@ For more information, see [Using Custom Bindings]({%slug telerikreporting/using-
 
 ## Timeouts when hosted in ASP.NET
 
-When a WCF service is hosted in IIS/ASP.NET, another setting would also control the lifetime of the request:               [ExecutionTimeout](/reporting/api/System.Web.Configuration.HttpRuntimeSection#System_Web_Configuration_HttpRuntimeSection_ExecutionTimeout).             
-
+When a WCF service is hosted in IIS/ASP.NET, another setting would also control the lifetime of the request: [ExecutionTimeout](/reporting/api/System.Web.Configuration.HttpRuntimeSection#System_Web_Configuration_HttpRuntimeSection_ExecutionTimeout). 
     
 ````XML
 <configuration>
-  <system.web>
-  <httpRuntime executionTimeout="600"/>
-  </system.web>
+	<system.web>
+		<httpRuntime executionTimeout="600"/>
+	</system.web>
 </configuration>
 ````
-
-
 

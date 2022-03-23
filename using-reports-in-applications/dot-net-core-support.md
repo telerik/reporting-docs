@@ -12,7 +12,7 @@ position: 7
 
 This article explains how to use reports in a .NET Core application for Windows, Linux, and macOS platforms.
 
-Telerik Reporting provides a set of assemblies and NuGet packages designed for .NET Core projects. The NuGets are available in the [Telerik NuGet feed](https://docs.telerik.com/reporting/add-the-telerik-private-nuget-feed-to-visual-studio). Additionally, thе assemblies are available in the Telerik Reporting installation directory __\Bin\netstandard2.0\__ and          __\Bin\netcoreapp3.1\__ folders. The assemblies target .NET Standard 2.0 and the desktop viewers target .NET Core 3.1, which ensures compatibility with a greater variety of frameworks and applications. The NuGet packages resolve the external dependencies to provide better dependency management and code portability. 
+Telerik Reporting provides a set of assemblies and NuGet packages designed for .NET Core projects. The NuGets are available in the [Telerik NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). Additionally, thе assemblies are available in the Telerik Reporting installation directory __\Bin\netstandard2.0\__ and __\Bin\netcoreapp3.1\__ folders. The assemblies target .NET Standard 2.0 and the desktop viewers target .NET Core 3.1, which ensures compatibility with a greater variety of frameworks and applications. The NuGet packages resolve the external dependencies to provide better dependency management and code portability. 
 
 ## Requirements
 
@@ -90,7 +90,7 @@ Since __libgdiplus__ is not a perfect replacement for the Windows graphics libra
       "name": "IMAGE",
       "visible": "false"
     }
-]
+  ]
 }
 ````
 
@@ -118,7 +118,7 @@ brew install mono-libgdiplus
 dotnet build
 ````
 
-	and run the application. When running in debug mode Visual Studio Code will ask to add debug configuration to launch.json.
+	and run the application. When running in debug mode Visual Studio Code will ask to add debug configuration to _launch.json_.
 
 ## Containerize Telerik Reporting
 

@@ -22,7 +22,7 @@ If you use the Silverlight report viewer the report description is provided by t
 
 ## Extending Telerik Reporting WCF service with custom IReportResolver implementation:
 
-1. Prerequisites:
+1. __Prerequisites__
               
 	+ Web application 
 
@@ -32,7 +32,7 @@ If you use the Silverlight report viewer the report description is provided by t
 
 	+ Telerik Reports definitions to be exposed through the Reporting Service 
 
-2. Steps to implement and use custom IReportResolver:
+2. __Steps to implement and use custom IReportResolver__
               
 	1. Implement the Telerik.Reporting.Service.IReportResolver 
 
@@ -86,7 +86,7 @@ Class CustomReportService
 
 	1. Even if you use your own IReportResolver implementation you can still fallback to the default IReportResolver implementations as shown in the following walkthrough. 
 
-3. Steps to implement and use custom IReportResolver with fallback mechanism:
+3. __Steps to implement and use custom IReportResolver with fallback mechanism__
 
 	1. Add to your IReportResolver implementation a constructor with parameter IReportDocument parentResolver. Then use the parentResolver if the custom report resolving mechanism fails. 
 
@@ -183,7 +183,7 @@ Class ReportServiceWithResolverFallback
 
 	   + ReportFileResolverWeb - Resolves IReportDocument from a relative path to trdp or trdx file
 
-4. Hosting Telerik.Reporting.Service.ReportService subclass in IIS.
+4. __Hosting Telerik.Reporting.Service.ReportService subclass in IIS__
 
 	1. Add .svc file (e.g. ReportService.svc) to reference your Telerik.Reporting.Service.ReportService subclass. The file would contain the following line only: 
     
@@ -194,7 +194,7 @@ Class ReportServiceWithResolverFallback
 	1. Register the Reporting Service endpoints with service name your Telerik.Reporting.Service.ReportService subclass in the web.config: 
 
 		{{source=CodeSnippets\CS\API\Telerik\Reporting\Service\HostedSubclassService.xml}}
-		````C#
+		````XML
 <?xml version="1.0" encoding="utf-8" ?>
 		<configuration>
 			<system.serviceModel>
@@ -236,5 +236,6 @@ Class ReportServiceWithResolverFallback
 			</system.serviceModel>
 		</configuration>
 ````
+
 
 The custom resolver's Resolve method is called on each interaction with the report in the Silverlight ReportViewer e.g., changing report parameters' values or hitting refresh. To avoid unexpected results the recommended [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) to work with are __UriReportSource__ and __TypeReportSource__. 

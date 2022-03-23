@@ -14,7 +14,7 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 
 ## Timeouts on server binding
     
-````xml
+````XML
 <bindings>
    <basicHttpBinding>
         <binding name="BasicHttpsBindingConfig" maxReceivedMessageSize="2147483647" maxBufferSize="2147483647"
@@ -29,19 +29,19 @@ To avoid timeouts when using the Telerik Reporting WCF Service, one should set s
 
 ## Timeouts on client binding
     
-````c#
+````C#
 ReportServiceClient IReportServiceClientFactory.Create(System.Uri remoteAddress)
+{
+    var binding = new BasicHttpBinding() // or BasicHttpBinding(BasicHttpSecurityMode.Transport) overload if SSL is used
     {
-        var binding = new BasicHttpBinding() // or BasicHttpBinding(BasicHttpSecurityMode.Transport) overload if SSL is used
-        {
-            MaxBufferSize = int.MaxValue,
-            MaxReceivedMessageSize = int.MaxValue,
-            ReceiveTimeout = new TimeSpan(0, 10, 0),
-            SendTimeout = new TimeSpan(0, 10, 0)
-        };
-        var endpointAddress = new EndpointAddress(remoteAddress);
-        return new ReportServiceClient(binding, endpointAddress);
-    }
+        MaxBufferSize = int.MaxValue,
+        MaxReceivedMessageSize = int.MaxValue,
+        ReceiveTimeout = new TimeSpan(0, 10, 0),
+        SendTimeout = new TimeSpan(0, 10, 0)
+    };
+    var endpointAddress = new EndpointAddress(remoteAddress);
+    return new ReportServiceClient(binding, endpointAddress);
+}
 ````
 
 For more information, see [Using Custom Bindings]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/using-custom-bindings%}).

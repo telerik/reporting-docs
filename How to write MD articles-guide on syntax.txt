@@ -7,7 +7,6 @@ The Preview of the MD documents in Github is NOT what would appear as a final do
 
 Do NOT leave empty headers in the article headers that host its main attributes as TITLE, SLUG, DESCRIPTON, etc. If you need to have an attribute without a value, put a space " ". Here is a sample header section:
 
-````
 ---
 title: Actions not working on Preview
 description: Some or all report item actions may not work on previewing the report. A couple of scenarios, under which this could occur, are explained in this article.
@@ -16,7 +15,6 @@ page_title: Unable to use interactive actions when previewing the report
 slug: actions-not-working-on-preview
 res_type: kb
 ---
-````
 
 ## TITLE
 

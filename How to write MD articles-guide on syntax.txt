@@ -67,6 +67,8 @@ table th:nth-of-type(3) {
 
    some text `<some xml>` more text
 
++ There should be at least 1 empty row after each code snippet
+
 + If the article finishes with code snippet, leave at least 2 empty rows after the closing ````. Otherwise, the jkyll build fails silently.
 
 + If you would like tabbed code blocks, for example, one in C# and one in VB, so that you may switch between them, you need to place them one after the other. You may also optionally put the source for the code just above the corresopnding snippet. When building, a special code will read the actual snippet and update the MD article. Here is an example:
@@ -154,7 +156,9 @@ All the content that must appear under the List items should be propertly indent
 
 + Lists in tables - see the corresponding section in [TABLES](#TABLES).
 
-+ Code snippets in Lists - see the corresponding section in [CODE SNIPPETS](#CODE SNIPPETS). When the list finishes with a code snippet leave at least 2 empty lines before the new text (that is not in the list).
++ Code snippets in Lists - see the corresponding section in [CODE SNIPPETS](#CODE SNIPPETS).
+
++ When the list finishes with a code snippet leave at least 2 empty lines before the new text (that is not in the list).
 
 Sample: https://docs.telerik.com/reporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview
 

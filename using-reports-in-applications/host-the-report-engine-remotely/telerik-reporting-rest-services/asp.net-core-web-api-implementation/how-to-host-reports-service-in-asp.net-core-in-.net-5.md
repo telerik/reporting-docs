@@ -42,7 +42,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder. 
 
-> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET 5 projects. 
+> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET 5 projects. 
 
 
 ## Add the required dependencies
@@ -161,7 +161,7 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
       "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
       "providerName": "System.Data.SqlClient"
     }
-]
+  ]
 }
 ````
 
@@ -211,11 +211,13 @@ To ensure that the service operates, run the application and navigate to URL __{
 
 ## Demo project
 
-A full example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 5\RestServiceCorsNet5Demo. 
+A full example can be found in the installation folder of Telerik Reporting: 
+	
+	`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 5\ReportingRestServiceCorsDemo\CSharp.Net5.ReportingRestServiceCorsDemo` 
 
 ## Enable Cross-Origin Resource Sharing (CORS) (Optional)
 
-You may need to enable  [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), for example, if you use the REST Service from clients hosted in different domains. 
+You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), for example, if you use the REST Service from clients hosted in different domains. 
 
 Add the following code to the *ConfigureServices* method of the *Startup.cs* file to add a new CORS policy for the REST Service: 
     
@@ -224,10 +226,11 @@ services.AddCors(corsOption => corsOption.AddPolicy(
   "ReportingRestPolicy",
   corsBuilder =>
   {
-  corsBuilder.AllowAnyOrigin()
-.AllowAnyMethod()
-.AllowAnyHeader();
-  }));
+	  corsBuilder.AllowAnyOrigin()
+		.AllowAnyMethod()
+		.AllowAnyHeader();
+  }
+));
 ````
 
 Activate the above policy for the application by adding the next code in the *Configure* method of the *Startup.cs* file: 

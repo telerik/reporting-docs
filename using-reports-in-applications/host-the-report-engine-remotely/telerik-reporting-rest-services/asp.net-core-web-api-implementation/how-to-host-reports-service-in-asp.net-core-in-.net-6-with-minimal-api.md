@@ -225,7 +225,8 @@ builder.Services.AddCors(corsOption => corsOption.AddPolicy(
 		corsBuilder.AllowAnyOrigin()
 			.AllowAnyMethod()
 			.AllowAnyHeader();
-}));
+	}
+));
 ````
 
 Activate the above policy for the application by adding the code below in the application configuration part of the *Program.cs* file: 
@@ -237,4 +238,6 @@ app.UseCors("ReportingRestPolicy");
 
 ## Demo project
 
-A full example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 6\CSharp.Net6.ReportingRestServiceCorsDemo
+A full example can be found in the installation folder of Telerik Reporting: 
+
+	`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 6\ReportingRestServiceCorsDemo\CSharp.Net6.ReportingRestServiceCorsDemo`

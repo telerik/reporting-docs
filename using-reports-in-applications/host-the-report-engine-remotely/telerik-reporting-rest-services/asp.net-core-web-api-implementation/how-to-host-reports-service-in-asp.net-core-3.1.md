@@ -5,7 +5,7 @@ description: How to Host Reports Service in ASP.NET Core 3.1
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1
 tags: how,to,host,reports,service,in,asp.net,core,3.1
 published: True
-position: 3
+position: 4
 ---
 
 # How to Host Reports Service in ASP.NET Core 3.1
@@ -236,4 +236,4 @@ app.UseCors("ReportingRestPolicy");
 
 A full example can be found in the installation folder of Telerik Reporting: 
 
-	`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET Core 3.1\ReportingRestServiceCorsDemo\CSharp.Core31.ReportingRestServiceCorsDemo`
+`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET Core 3.1\ReportingRestServiceCorsDemo\CSharp.Core31.ReportingRestServiceCorsDemo`

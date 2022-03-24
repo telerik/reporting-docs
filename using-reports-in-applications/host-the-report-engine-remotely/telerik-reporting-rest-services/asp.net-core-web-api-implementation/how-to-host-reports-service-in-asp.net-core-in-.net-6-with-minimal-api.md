@@ -5,7 +5,7 @@ description: How to Host Reports Service in ASP.NET Core in .NET 6 with Minimal 
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,minimal,api
 published: True
-position: 4
+position: 2
 ---
 
 # How to Host Reports Service in ASP.NET Core in .NET 6 with Minimal API
@@ -240,4 +240,4 @@ app.UseCors("ReportingRestPolicy");
 
 A full example can be found in the installation folder of Telerik Reporting: 
 
-	`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 6\ReportingRestServiceCorsDemo\CSharp.Net6.ReportingRestServiceCorsDemo`
+`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 6\ReportingRestServiceCorsDemo\CSharp.Net6.ReportingRestServiceCorsDemo`

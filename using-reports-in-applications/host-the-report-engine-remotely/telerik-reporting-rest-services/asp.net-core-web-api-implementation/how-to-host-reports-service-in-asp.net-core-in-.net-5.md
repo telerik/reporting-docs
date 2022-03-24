@@ -5,7 +5,7 @@ description: How to Host Reports Service in ASP.NET Core in .NET 5
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,5
 published: True
-position: 1
+position: 3
 ---
 
 # How to Host Reports Service in ASP.NET Core in .NET 5
@@ -213,7 +213,7 @@ To ensure that the service operates, run the application and navigate to URL __{
 
 A full example can be found in the installation folder of Telerik Reporting: 
 	
-	`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 5\ReportingRestServiceCorsDemo\CSharp.Net5.ReportingRestServiceCorsDemo` 
+`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Examples\CSharp\.NET 5\ReportingRestServiceCorsDemo\CSharp.Net5.ReportingRestServiceCorsDemo` 
 
 ## Enable Cross-Origin Resource Sharing (CORS) (Optional)
 

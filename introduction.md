@@ -1,30 +1,33 @@
 ---
-title: Welcome to Telerik Reporting!
-page_title: Welcome to Telerik Reporting! 
-description: Welcome to Telerik Reporting!
+title: Introduction
+page_title: Introduction to Telerik Reporting! 
+description: "Telerik Reporting is a .NET-based platform enabling you to create, design, export, and integrate reports in JavaScript, MVC, WebForms, Angular, React, and Blazor web applications, as well as in WinForms, WPF, WinUI desktop projects."
 slug: telerikreporting/welcome-to-telerik-reporting!
-tags: welcome,to,telerik,reporting!
+tags: telerik, reporting, introduction, welcome
 published: True
 position: 0
 ---
 
 # Welcome to Telerik Reporting!
 
-Progress® Telerik® Reporting is a.NET-based platform and a component library which provides reporting controls for websites, cloud services, mobile and desktop applications. 
+Progress® Telerik® Reporting is a .NET embedded reporting tool which enables you to create, design, export, and integrate reports in cloud, web and desktop applications. 
 
-{% if site.has_cta_panels == true %}
-{% include cta-panel-introduction.html %}
-{% endif %}
+Telerik Reporting provides .NET report designers and report viewer controls, and supports ASP.NET Core, ASP.NET MVC, ASP.NET WebForms, Angular, React, and Blazor as well as WinForms, WPF, and WinUI. 
 
-## Introduction
-
-Reports communicate information, make decisions, and identify opportunities. Telerik Reporting is a reporting solution for all.NET cloud, web, and desktop platforms that provides a full range of ready-to-use tools and services to help people in your organization to quickly and easily create, deploy, and use reports.
+Telerik Reporting is a reporting solution for all.NET cloud, web, and desktop platforms that provides a full range of ready-to-use tools and services to help people in your organization to quickly and easily create, deploy, and use reports.
 
 Telerik Reporting can retrieve and process data from relational, multidimensional, ORM or custom data layer based data sources. The ready reports can be viewed in various formats (including PDF, Microsoft Office Word, Excel, and PowerPoint documents), and can be viewed with a dedicated viewer in a Web or.NET Desktop application. 
 
 While you can create rich interactive and reusable reports in [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), end users are able to create reports in the desktop-based [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). 
 
 To read more about the benefits of using Telerik Reporting, please visit the [product overview page](https://www.telerik.com/reporting). 
+
+
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-introduction.html %}
+{% endif %}
+
 
 ## Trial Version and Commercial License
 

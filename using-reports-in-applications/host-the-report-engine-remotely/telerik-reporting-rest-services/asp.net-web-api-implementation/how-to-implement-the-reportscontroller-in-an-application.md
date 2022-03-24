@@ -30,9 +30,11 @@ The Telerik Reporting REST Web API service is represented by the abstract [Repor
 
     >Without setting Telerik Reporting references' _Copy Local_ to true the assemblies may not be loaded correctly on running the application. 
 
-1. Inherit this base class in your hosting application (usually in the Controllers folder of a MVC application). __ReportsControllerBase configuration in code:__ 
+1. Inherit this base class in your hosting application (usually in the Controllers folder of a MVC application). 
 
-	+ Set the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) property. The __ReportSourceResolver__ and __Storage__ configuration settings are required. See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details. 
+	+ __ReportsControllerBase configuration in code:__ 
+
+		Set the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) property. The __ReportSourceResolver__ and __Storage__ configuration settings are required. See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details. 
 
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementation}}
 		````C#
@@ -122,6 +124,7 @@ Imports System.Web
 		>The above implementation uses the [FileStorage](/reporting/api/Telerik.Reporting.Cache.File.FileStorage) method in order to create a storage object instance. All Visual Studio item templates for adding the Reporting REST service use the default __FileStorage__ constructor. The second overload of the FileStorage constructor allows you to specify a folder, and it is recommended for usage in production environment. 
 		
 	+ __ReportsControllerBase configuration in configuration file:__ 
+	
 		To configure the Telerik Reporting REST service from the application configuration file, set the value of the [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) property to an instance of the [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) class. 
 
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}

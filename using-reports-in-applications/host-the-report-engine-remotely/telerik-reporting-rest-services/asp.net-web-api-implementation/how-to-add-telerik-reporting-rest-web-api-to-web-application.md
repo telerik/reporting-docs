@@ -73,9 +73,9 @@ The project has a preconfigured implementation of reports controller that uses t
 
    + System.Net.Http.Formatting.dll 
 
-1. [Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%});                 
+1. [Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%}) 
 
-1. (Only for Empty Web Application) Add new item "Global Application Class" 
+1. (_Only for Empty Web Application_) Add new item "Global Application Class" 
 
 1. Invoke [RegisterRoutes](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_) at the beginning of the `Global.Application_Start (Global.asax)` method: 
 
@@ -94,7 +94,7 @@ Sub Application_Start()
 ````
 
 
-1. Run the application. 
+1. Run the application 
 
 1. To verify whether the service works correctly you can make a request for the available document formats using the following URL: 
 
@@ -104,7 +104,7 @@ Sub Application_Start()
 
     >The call to `http://localhost:[portnumber]/api/reports/formats` does not require authorization by design, as this request is for test purposes, i.e. to check whether the REST Service is running. 
 
-1. Enable [Cross-Origin Resource Sharing (CORS).](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (*optional*) 
+1. Enable [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (*optional*) 
 
 	1. Add __Microsoft.AspNet.WebApi.Cors__ NuGet package to the project. It may add other required references. It may be necessary to upgrade some of the already installed packages. 
 

@@ -7,19 +7,25 @@ tags: search,in,a,document
 published: True
 position: 7
 ---
+<style>
+table th:first-of-type {
+    width: 25%;
+}
+table th:nth-of-type(2) {
+    width: 25%;
+}
+table th:nth-of-type(3) {
+    width: 50%;
+}
+</style>
 
 # Search in a Document
 
-
-
 ## Request
-
-    
-          POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search
-        
+   
+	POST /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search
 
 __Path parameters__ 
-
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
@@ -27,13 +33,11 @@ __Path parameters__
 |`instanceId`|String|ID of the report instance. Returned from [Resolve Report Instance]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance%}).|
 |`documentId`|String|ID of the report document. Returned from [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%}).|
 
-
 __Request Body__ 
 
-[SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%}) describing the search arguments.         
+[SearchInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchinfo%}) describing the search arguments. 
 
 ## Response
-
 
 | HTTP Status Code | Description |
 | ------ | ------ |
@@ -42,29 +46,27 @@ __Request Body__
 |`410 Gone`|The specified clientId cannot be found (expired).|
 |`404 Not Found`|The specified instanceId or documentId cannot be found.|
 
-
 __Response Body__ 
 
-When the return status is `OK` the response body contains a JSON array of [SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%})            objects representing the search results.         
+When the return status is `OK` the response body contains a JSON array of [SearchResultsInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/searchresultsinfo%}) objects representing the search results. 
 
 ## Sample
-
     
-          POST /api/reports/clients/f3c380da635/instances/c71aeb824cf/documents/495ff8766803332209ef12/search HTTP/1.1
+* Request 
 
-          {
-            "searchToken": "foo",
-            "matchCase": false,
-            "matchWholeWord": false,
-            "useRegularExpressions": true
-          }
-        
+		POST /api/reports/clients/f3c380da635/instances/c71aeb824cf/documents/495ff8766803332209ef12/search HTTP/1.1
+		{
+			"searchToken": "foo",
+			"matchCase": false,
+			"matchWholeWord": false,
+			"useRegularExpressions": true
+		}
 
-    
-          HTTP/1.1 200 Ok
-          {
-            "description":"Quarterly Sales Dashboard for 2003",
-            "id":"a082030a03fa4e349abe183d161a35ea",
-            "page":1
-          }
+* Response 
 
+		HTTP/1.1 200 Ok
+		{
+			"description":"Quarterly Sales Dashboard for 2003",
+			"id":"a082030a03fa4e349abe183d161a35ea",
+			"page":1
+		}

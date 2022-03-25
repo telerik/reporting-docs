@@ -10,22 +10,15 @@ position: 0
 
 # Register Client
 
-
-
 ## Request
-
     
-````
-POST /api/reports/clients
-````
+	POST /api/reports/clients
 
 ## Response
-
 
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Client registered successfully|
-
 
 __Response Body__ 
 
@@ -33,14 +26,12 @@ The body contains the newly registered client’s identifier.
 
 ## Sample
 
-    
-````
-POST /api/reports/clients HTTP/1.1
-````
-````
-HTTP/1.1 200 OK
-{"clientId":"a5f3"}
-````
+* Request 
 
+		POST /api/reports/clients HTTP/1.1
 
+* Response 
 
+		HTTP/1.1 200 OK
+		
+		{"clientId":"a5f3"}

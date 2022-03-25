@@ -7,23 +7,33 @@ tags: searchinfo
 published: True
 position: 9
 ---
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 10%;
+}
+table th:nth-of-type(4) {
+    width: 60%;
+}
+</style>
 
 # SearchInfo
 
+The info object passed to the report engine to perform a search. 
 
-
-The info object passed to the report engine to perform a search.       
-
-
-    
-          {
-            "searchToken": "foo",
-            "matchCase": false,
-            "matchWholeWord": false,
-            "useRegularExpressions": true
-          }
-        
-
+````JSON 
+{
+  "searchToken": "foo",
+  "matchCase": false,
+  "matchWholeWord": false,
+  "useRegularExpressions": true
+}
+````
 
 >caption Fields
 
@@ -33,4 +43,3 @@ The info object passed to the report engine to perform a search.
 |`matchCase`|`boolean`|`true`|Determines if the search is case-sensitive.|
 |`matchWholeWord`|`boolean`|`true`|Determines if the search will consider only words. Internally uses the following regular expression:`(?<=\W|^)(token)(?=\W|$).`|
 |`useRegularExpressions`|`boolean`|`true`|Determines if the search should be performed using regular expressions to match the passed token.|
-

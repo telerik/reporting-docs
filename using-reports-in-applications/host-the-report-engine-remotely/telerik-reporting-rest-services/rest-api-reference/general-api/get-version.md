@@ -28,9 +28,12 @@ A string, which represent the version of the Telerik Reporting REST Service.
 
 ## Sample
 
-	GET /api/reports/formats HTTP/1.1
-    
-		Response Message
+* Request 
+
+		GET /api/reports/formats HTTP/1.1
+
+* Response 
+
 		HTTP/1.1 200 OK
 
 		"{{site.buildversion}}"

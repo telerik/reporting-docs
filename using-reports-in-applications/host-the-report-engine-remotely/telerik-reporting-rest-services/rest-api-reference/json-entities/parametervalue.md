@@ -7,21 +7,31 @@ tags: parametervalue
 published: True
 position: 6
 ---
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 30%;
+}
+table th:nth-of-type(3) {
+    width: 10%;
+}
+table th:nth-of-type(4) {
+    width: 50%;
+}
+</style>
 
 # ParameterValue
 
-
-
 Represents a single value of the parameter available values.       
 
-
-    
-          {
-            ‘name’: ‘Sofia’,
-            ‘value’: 1
-          }
-        
-
+````JSON 
+{
+  ‘name’: ‘Sofia’,
+  ‘value’: 1
+}
+````
 
 >caption Fields
 
@@ -29,4 +39,3 @@ Represents a single value of the parameter available values.
 | ------ | ------ | ------ | ------ |
 |`name`|`String`|`true`|The name of the parameter name-value pair|
 |`value`|`Array / Boolean / Date / Number / String`|`true`|The value of the parameter name-value pair|
-

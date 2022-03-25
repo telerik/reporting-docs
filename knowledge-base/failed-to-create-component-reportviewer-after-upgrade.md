@@ -27,7 +27,7 @@ The error message contains the following: **Failed to create component ReportVie
 ## Error Message
 
 ````
-Failed to create component ReportViewer. The error message contains follows: "System.IO.FileNotFoundException:
+Failed to create component ReportViewer. The error message follows: "System.IO.FileNotFoundException:
 Could not load file or assembly 'Telerik,Reporting.Design.VisualStudio, Version=15.2.21.1125, Culture=neutral' or one of its assemblies"
 ````
 

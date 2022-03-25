@@ -12,7 +12,11 @@ position: 10
 
 Telerik Reporting is available under a developer (commercial) or a trial license.       
 
-Reardless of the license version you hold, to use Telerik Reporting, you have to agree to the __[End User License Agreement for Progress Telerik Reporting and Telerik Report Designer](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)__.       
+Reardless of the license version you hold, to use Telerik Reporting, you have to agree to the __[End User License Agreement for Progress Telerik Reporting and Telerik Report Designer](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)__.   
+
+## Trial Version and Commercial License
+
+Telerik Reporting is commercial product. You are welcome to explore its full functionality and get technical support from the team when you register for a free 30-day trial. To use it commercially, you need to [purchase a license](https://www.telerik.com/purchase/individual/reporting.aspx). Feel free to review the Telerik Reporting [License Agreement](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s) to get acquainted with the full terms of use.     
 
 ## Developer Licenses
 

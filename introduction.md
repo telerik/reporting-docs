@@ -85,4 +85,4 @@ For any issues you might come across while working with Telerik Reporting, use a
 ## Next Steps
 
 * [First Steps with Telerik Reporting]({% slug telerikreporting/getting-started/first-steps %})
-* [Trial and Commercial Telerik UI for ASP.NET AJAX License and License Agreement]({% slug introduction/licensing/license-agreement %})
+* [Trial and Commercial Telerik Reporting License and License Agreement]({% slug telerikreporting/licensing %})

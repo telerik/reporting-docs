@@ -25,8 +25,12 @@ res_type: kb
 The error message contains the following: **Failed to create component ReportViewer** which might appear in the Visual Studio Report Designer after upgrade of Telerik Reporting version.
 
 ## Error Message
+
+````
 Failed to create component ReportViewer. The error message contains follows: "System.IO.FileNotFoundException:
 Could not load file or assembly 'Telerik,Reporting.Design.VisualStudio, Version=15.2.21.1125, Culture=neutral' or one of its assemblies"
+````
+
 
 ## Solution
 1. Ensure Visual Studio is closed.

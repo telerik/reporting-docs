@@ -46,20 +46,13 @@ Inspect the generated file for any errors. You can also send us the log file in 
 
 Another possibility for the issue is to have an ***invalid user.config*** file. 
 
-This is a file where the user preferences like connection strings, last opened files, window statuses, etc. are stored. This file can be found in the ***%localappdata%\Telerik_AD\*** folder and there should be a subfolder called Telerik.ReportDesigner with a strong name key suffix. 
+This is a file where the user preferences like connection strings, last opened files, window statuses, etc. are stored. This file can be found in the ***%localappdata%\Progress_Software_Corpora\*** folder and there should be a subfolder called Telerik.ReportDesigner with a strong name key suffix. Inside, you should look for a folder named after the corresponding Reporting version. Here is a sample path:
 
-The user.config folder depends on the version and may be:
 
-- For the older version:
-Telerik_AD\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj
-Telerik\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj
-Telerik_EAD\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj
+`Progress_Software_Corpora\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj\16.0.22.225\user.config`
 
-- For the newer versions (note the version, i.e. 14 before StrongName):
 
-Progress_Software_Corpora\Telerik.ReportDesigner_14_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj
-
-The symbols after StrongName_ are some GUID that will differ. Note that the user should enter the above folder and select the Reporting version folder, where she/he may find the user.config
+Note taht for the older versions, the main folder may be `Telerik_AD`, `Telerik`, or `Telerik_EAD`
 
 
 Rename or move these files so the designer would load with default values instead of reading them from these configuration files.

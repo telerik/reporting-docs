@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-The following error might be seen when starting the Standaline designer:
+The following error might be seen when starting the Standalone designer:
 ***Fatal error in workbench. Now closing...
 An error has occurred while loading the ReportDesigner's Workbench***
 
@@ -45,6 +45,21 @@ Inspect the generated file for any errors. You can also send us the log file in 
 
 
 Another possibility for the issue is to have an ***invalid user.config*** file. 
+
 This is a file where the user preferences like connection strings, last opened files, window statuses, etc. are stored. This file can be found in the ***%localappdata%\Telerik_AD\*** folder and there should be a subfolder called Telerik.ReportDesigner with a strong name key suffix. 
+
+The user.config folder depends on the version and may be:
+
+- For the older version:
+Telerik_AD\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj
+Telerik\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj
+Telerik_EAD\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj
+
+- For the newer versions (note the version, i.e. 14 before StrongName):
+
+Progress_Software_Corpora\Telerik.ReportDesigner_14_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj
+
+The symbols after StrongName_ are some GUID that will differ. Note that the user should enter the above folder and select the Reporting version folder, where she/he may find the user.config
+
 
 Rename or move these files so the designer would load with default values instead of reading them from these configuration files.

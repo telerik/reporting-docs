@@ -7,24 +7,34 @@ tags: mailmessage
 published: True
 position: 8
 ---
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 10%;
+}
+table th:nth-of-type(4) {
+    width: 70%;
+}
+</style>
 
 # MailMessage
 
+Mail message 
 
-
-Mail message        
-
-
-    
-          {
-          'from': 'john.doe@mycompany.com',
-          'to': 'jane.doe@mycompany.com',
-          'cc': 'john.doe.jr@mycompany.com',
-          'subject': 'my mail subject',
-          'body': 'my mail body',
-          }
-        
-
+````JSON 
+{
+	'from': 'john.doe@mycompany.com',
+	'to': 'jane.doe@mycompany.com',
+	'cc': 'john.doe.jr@mycompany.com',
+	'subject': 'my mail subject',
+	'body': 'my mail body',
+}
+````
 
 >caption Fields
 
@@ -35,4 +45,3 @@ Mail message
 |`cc`|`string`|`false`||
 |`subject`|`string`|`false`||
 |`body`|`string`|`false`||
-

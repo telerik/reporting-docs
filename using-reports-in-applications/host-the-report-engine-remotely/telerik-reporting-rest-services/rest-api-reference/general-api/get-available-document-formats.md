@@ -10,8 +10,6 @@ position: 0
 
 # Get Available Document Formats
 
-
-
 Public interface for retrieving available document formats.
 
 ## Request
@@ -20,33 +18,32 @@ Public interface for retrieving available document formats.
 
 ## Response
 
-
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Available document formats retrieved successfully|
 
-
 __Response Body__ 
 
-An array containing [FormatInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo%}) objects, which represent the available document formats for reports         
+An array containing [FormatInfo]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo%}) objects, which represent the available document formats for reports.
 
 ## Sample
 
-    GET /api/reports/formats HTTP/1.1
+* Request 
 
-    
-          Response Message
-          HTTP/1.1 200 OK
+		GET /api/reports/formats HTTP/1.1
 
-          [
-            {"name":"PDF","localizedName":"Acrobat (PDF) file"},
-            {"name":"CSV","localizedName":"CSV (comma delimited)"},
-            {"name":"XLS","localizedName":"Excel 97-2003"},
-            {"name":"XLSX","localizedName":"Excel Worksheet"},
-            {"name":"PPTX","localizedName":"PowerPoint Presentation"},
-            {"name":"RTF","localizedName":"Rich Text Format"},
-            {"name":"IMAGE","localizedName":"TIFF file"},
-            {"name":"DOCX","localizedName":"Word Document"},
-            {"name":"XPS","localizedName":"XPS Document"}
-       ]
+* Response 
 
+		HTTP/1.1 200 OK
+
+		[
+			{"name":"PDF","localizedName":"Acrobat (PDF) file"},
+			{"name":"CSV","localizedName":"CSV (comma delimited)"},
+			{"name":"XLS","localizedName":"Excel 97-2003"},
+			{"name":"XLSX","localizedName":"Excel Worksheet"},
+			{"name":"PPTX","localizedName":"PowerPoint Presentation"},
+			{"name":"RTF","localizedName":"Rich Text Format"},
+			{"name":"IMAGE","localizedName":"TIFF file"},
+			{"name":"DOCX","localizedName":"Word Document"},
+			{"name":"XPS","localizedName":"XPS Document"}
+		]

@@ -7,12 +7,21 @@ tags: overview
 published: True
 position: 0
 ---
+<style>
+table th:first-of-type {
+    width: 30%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 60%;
+}
+</style>
 
 # REST API Reference Overview
 
-
-
-The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD operations as follows:       
+The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD operations as follows: 
 
 * GET retrieves the representation of the resource at a specified URI. GET have no side effects on the server.
 
@@ -26,7 +35,6 @@ The API represent resources as hierarchical URIs in order to force the clients t
 
 ## The reports API exposes following methods:
 
-
 | Action | HTTP method | Relative URI |
 | ------ | ------ | ------ |
 | [Register Client]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client%})|POST|/api/reports/clients|
@@ -39,10 +47,11 @@ The API represent resources as hierarchical URIs in order to force the clients t
 | [Resolve Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document%})|POST|/api/reports/clients/{clientId}/instances/{instanceId}/documents|
 | [Get Document Info]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-info%})|GET|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/info|
 | [Get Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document%})|GET|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}|
+| [Send Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/send-document%})|POST|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/send|
 | [Get Document Page]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-page%})|GET|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/pages/{pageNumber}|
 | [Get Document Resource]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource%})|GET|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/resources/{resourceId}|
 | [Apply Interactive Action on Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/apply-interactive-action-on-document%})|PUT|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/actions/{actionId}|
+| [Search in a Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/search-in-a-document%})|POST|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}/search|
 | [Release Document]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/release-document%})|DELETE|/api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}|
 | [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%})|GET|/api/reports/formats|
-
-
+| [Get Version]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version%})|GET|/api/reports/version|

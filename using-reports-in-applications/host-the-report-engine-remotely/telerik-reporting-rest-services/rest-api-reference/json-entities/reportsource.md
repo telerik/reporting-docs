@@ -7,26 +7,35 @@ tags: reportsource
 published: True
 position: 7
 ---
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 10%;
+}
+table th:nth-of-type(4) {
+    width: 70%;
+}
+</style>
 
 # ReportSource
 
-
-
 Represents a report document identifier, consisting of a report and values for its parameters.       
 
-
-    
-          {
-            ‘report’: ‘Report1.trdp’,
-            ‘parameterValues’: { ‘City’: ‘Sofia’ }
-          }
-        
-
+````JSON
+{
+  ‘report’: ‘Report1.trdp’,
+  ‘parameterValues’: { ‘City’: ‘Sofia’ }
+}
+````
 
 >caption Fields
 
 | Field | Type | Required | Description |
 | ------ | ------ | ------ | ------ |
-|`report`|`String`|`true`|A string identifying the report. Might be a report type name, path to a.trdp or.trdx file, or a custom name that will be handled by a custom report source resolver on the server.               See also:[Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})|
-|`parameterValues`|`Object`|`false`|An object holding the parameters' information. Each of its properties represents a report parameter.              The name of the property is the id of the parameter and the value of the property is the parameter's value|
-
+|`report`|`String`|`true`|A string identifying the report. Might be a report type name, path to a.trdp or.trdx file, or a custom name that will be handled by a custom report source resolver on the server. See also:[Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})|
+|`parameterValues`|`Object`|`false`|An object holding the parameters' information. Each of its properties represents a report parameter. The name of the property is the id of the parameter and the value of the property is the parameter's value|

@@ -10,37 +10,28 @@ position: 3
 
 # Get Clients Session Timeout Seconds
 
-
-
 ## Request
 
-    
-````
-GET /api/reports/clients/sessionTimeout
-````
+	GET /api/reports/clients/sessionTimeout
 
 ## Response
-
 
 | HTTP Status Code | Description |
 | ------ | ------ |
 |`200 OK`|Successfully retrieved the clients session timeout|
 
-
 __Response Body__ 
 
-The body contains the clients session timeout in seconds         
+The body contains the clients session timeout in seconds 
 
 ## Sample
 
-    
-````
-GET /api/reports/clients/sessionTimeout HTTP/1.1
-````
-````
-HTTP/1.1 200 OK
-{"clientSessionTimeout":900}
-````
+* Request 
 
+		GET /api/reports/clients/sessionTimeout HTTP/1.1
 
+* Response 
 
+		HTTP/1.1 200 OK
+		
+		{"clientSessionTimeout":900}

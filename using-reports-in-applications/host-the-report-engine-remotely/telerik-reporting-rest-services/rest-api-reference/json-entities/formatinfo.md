@@ -7,21 +7,31 @@ tags: formatinfo
 published: True
 position: 2
 ---
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 10%;
+}
+table th:nth-of-type(3) {
+    width: 10%;
+}
+table th:nth-of-type(4) {
+    width: 70%;
+}
+</style>
 
 # FormatInfo
 
+Format info object representing a document format that can be used for document creation. 
 
-
-Format info object representing a document format that can be used for document creation.       
-
-
-    
-          {
-            "name":"PDF",
-            "localizedName":"Acrobat (PDF) file"
-          }
-        
-
+````JSON 
+{
+  "name":"PDF",
+  "localizedName":"Acrobat (PDF) file"
+}
+````
 
 >caption Fields
 
@@ -29,4 +39,3 @@ Format info object representing a document format that can be used for document 
 | ------ | ------ | ------ | ------ |
 |`name`|`String`|`true`|ID of the document format|
 |`localizedName`|`String`|`true`|Display name for the document format|
-

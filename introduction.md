@@ -18,15 +18,17 @@ Telerik Reporting can retrieve and process data from relational, multi-dimension
 
 ## Key Components 
 
-The main components of Telerik Reporting are its designers and viewers. 
+The lifecycle of a Telerik report is divided in three main steps&mdash;designing the report, integrating its data in an application, and exporting the report content. 
+
+The Telerik Report Designers and Viewers are the main components of Telerik Reporting and accompany the users in their journey along the lifecycle of the report. 
 
 ### Report Designers 
 
-The Reporting designers are responsible for the designing process. They are tools which help you create the report you require, connect it to a data source to load the information you need, style its header, footer, and general appearance, make reports collections if necessary, and export its content to PDF, for example. Which designer you will choose depends on the specific functionality you want to use in the process.
+The Report Designers are responsible for the designing process. They are tools which help you create the report you require, connect it to a data source to load the information you need, style its header, footer, and general appearance, make reports collections if necessary, and export its content to PDF, for example. Which designer you will choose depends on the specific functionality you want to use in the process.
 
-The Telerik Reporting designer tools are: 
+The following table lists the Telerik Report Designer tools. 
 
-|Telerik Reporting Designer|Specifics
+|Report Designer|Specifics
 |:---|:---
 |Standalone desktop designer|<ul><li>A single `.exe` file representing a Windows tool powered by the Telerik Reporting engine.</li><li>Uses the latest UI standards to facilitate the process of creating reports, locally analyzing report data, exporting and sharing.</li></ul>
 |Web report designer|<ul><li>An HTML5-, JavaScript-, or CSS3 jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul>
@@ -34,11 +36,11 @@ The Telerik Reporting designer tools are:
 
 ### Report Viewers
 
-The Reporting viewers are UI components which are tailored to a specific technology. Viewers are tools which enable you to deploy and render your report in applications that are built on various technologies such as ASP.NET Core or Angular. Which viewer you will choose to use depends on the targeted technology of the application that will host your report.
+The Report Viewers are UI components which are tailored to a specific technology. Viewers are tools which enable you to deploy and render your report in applications that are built on various technologies such as ASP.NET Core or Angular. Which viewer you will choose to use depends on the targeted technology of the application that will host your report.
 
-The Telerik Reporting viewer tools are: 
+The following table lists the Telerik Report Viewer tools. 
 
-|Telerik Reporting Viewer|App Type|Essentials
+|Report Viewer|App Type|Essentials
 |:---|:---|:---
 |HTML5 Report Viewer|Web|An HTML, CSS, or JavaScript client-side widget targeting all web application working with JavaScript. 
 |HTML5 MVC Report Viewer| Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications. 

@@ -30,7 +30,7 @@ A string, which represent the version of the Telerik Reporting REST Service.
 
 * Request 
 
-		GET /api/reports/formats HTTP/1.1
+		GET /api/reports/version HTTP/1.1
 
 * Response 
 

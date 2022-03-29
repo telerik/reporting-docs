@@ -5,7 +5,7 @@ type: how-to
 page_title: Adding the Web Report Designer in React Application
 slug: how-to-use-web-report-designer-in-react-js
 tags: react,viewer,report,reporting,webreportdesigner
-ticketid:1558188
+ticketid: 1558188
 res_type: kb
 ---
 

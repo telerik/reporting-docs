@@ -57,7 +57,6 @@ class PageFooterSumUntilNow : IAggregateFunction
             return;
         }
 
-
         var groupByValue = (string)values[1];
 
         if (groupByValue != currentGroupByValue)
@@ -247,93 +246,112 @@ The particular workaround we suggest is to pass the __ReportDefinition__ [Global
 	
 3. If you use the [Page Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}) __PageCount__ in the report along with our custom page footer function, the totals may be wrong. The reason for this is the additional pass through the report pages that our algorithm makes when it is necessary to display the total pages per report. That said, the overall total gets accumulated during the additional pass, and in the final report, this becomes the starting value for accumulation.
 
-The workaround for this is through passing the _PageNumber_. We need to store it in another static field. When the incoming page numbers become lower than the stored static page number in the function, we need to reset the result as this indicates that we start with the second pass after the page count has been estimated.
+	The workaround for this is through passing the _PageNumber_. We need to store it in another static field. When the incoming page numbers become lower than the stored static page number in the function, we need to reset the result as this indicates that we start with the second pass after the page count has been estimated.
 
-Here is the updated code of the function:
+	Here is the updated code of the function:
 
-````CSharp
+	````CSharp
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageFooterSumUntilNow")]
-class PageFooterSumUntilNow : IAggregateFunction
-{
-    [ThreadStatic]
-    static decimal result;
-	
-	[ThreadStatic]
-    static int currentPage;
+	class PageFooterSumUntilNow : IAggregateFunction
+	{
+		[ThreadStatic]
+		static decimal result;
 
-    [ThreadStatic]
-    static string currentGroupByValue;
-	
-	[ThreadStatic]
-	static object processingOperationId;
+		[ThreadStatic]
+		static int currentPage;
 
-    public void Accumulate(object[] values)
-    {
-        // The aggregate function expects four parameters
-        object value = values[0];
-		var reportDefinition = values[2];
-        int page = (int)values[3];
-        if (!object.ReferenceEquals(processingOperationId, reportDefinition))
-        {
-            processingOperationId = reportDefinition;
-            result = 0;
-            currentPage = -1;
-        }
+		[ThreadStatic]
+		static string currentGroupByValue;
 
-        // skip the second pass through the report
-        if (currentPage > page)
-        {
-            result = 0;
-            currentPage = page;
-        }
+		[ThreadStatic]
+		static object processingOperationId;
 
-        if (currentPage < page)
-        {
-            currentPage = page;
-        }
-			
-        // null values are not aggregated
-        if (null == value)
-        {
-            return;
-        }
+		public void Accumulate(object[] values)
+		{
+			// The aggregate function expects four parameters
+			object value = values[0];
+			var reportDefinition = values[2];
+			int page = (int)values[3];
+			if (!object.ReferenceEquals(processingOperationId, reportDefinition))
+			{
+				processingOperationId = reportDefinition;
+				result = 0;
+				currentPage = -1;
+			}
 
+			// skip the second pass through the report
+			if (currentPage > page)
+			{
+				result = 0;
+				currentPage = page;
+			}
 
-        var groupByValue = (string)values[1];
+			if (currentPage < page)
+			{
+				currentPage = page;
+			}
 
-        if (groupByValue != currentGroupByValue)
-        {
-            currentGroupByValue = groupByValue;
-            result = 0M;
-        }
+			// null values are not aggregated
+			if (null == value)
+			{
+				return;
+			}
 
-        result += (decimal)value;
-    }
+			var groupByValue = (string)values[1];
 
-    public object GetValue()
-    {
-        return result;
-    }
+			if (groupByValue != currentGroupByValue)
+			{
+				currentGroupByValue = groupByValue;
+				result = 0M;
+			}
 
-    public void Init()
-    {
-    }
+			result += (decimal)value;
+		}
 
-    public void Merge(IAggregateFunction aggregateFunction)
-    {
-    }
-}
+		public object GetValue()
+		{
+			return result;
+		}
+
+		public void Init()
+		{
+		}
+
+		public void Merge(IAggregateFunction aggregateFunction)
+		{
+		}
+	}
 ````
 
-The problem in this approach would be when there is only one (1) page in the report, for example in the Interactive view. In this case, the condition (currentPage > page) won't be met, hence we need to define a separate result for this case. The result for a single page though can be taken with the built-in function PageExec. Here is a new sample Expression: 
+	The problem in this approach would be when there is only one (1) page in the report, for example in the Interactive view. In this case, the condition (currentPage > page) won't be met, hence we need to define a separate result for this case. The result for a single page though can be taken with the built-in function PageExec. Here is a new sample Expression: 
 
-````
+	````
 = IIF(PageCount = 1, PageExec("detailSection1", Sum(CDbl(Fields.value))), 
-	IIF(
-	PageExec("detailSection1", Last(Fields.account)) <> IsNull(PageExec("groupFooterSection", Last(Fields.account)), "N/A"),     
-	Format("Account {0} continues on next page. Value transitioning to next page: {1}", PageExec("detailSection1", Last(Fields.account)), 
-	PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account, ReportDefinition, PageNumber))),
-	"")
-)
+		IIF(
+		PageExec("detailSection1", Last(Fields.account)) <> IsNull(PageExec("groupFooterSection", Last(Fields.account)), "N/A"),     
+		Format("Account {0} continues on next page. Value transitioning to next page: {1}", PageExec("detailSection1", Last(Fields.account)), 
+		PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account, ReportDefinition, PageNumber))),
+		"")
+	)
+````
+
+	The same problem may occurr also with the function _PageHeaderSumFromPrevPage_, for example, when the report has only one group. The reason for this would be that the _result_ is reset only when the group chagnes. To overcome this, we may apply the same approach. Here is the needed modification in the Accumulate method of the implementation: 
+
+	````C#
+//...
+	var page = (int)values[2];
+
+	// skip the second pass through the report
+	if (currentPage > page)
+	{
+		result = 0;
+		currentPage = -1;
+		currentPageValues.Clear();
+	}
+
+	if (page > currentPage)
+	{
+		currentPage = page;
+		//...
 ````
 

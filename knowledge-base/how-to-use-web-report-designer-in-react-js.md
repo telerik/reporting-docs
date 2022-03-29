@@ -4,7 +4,6 @@ description: How to use Web Report Designer in React Application
 type: how-to
 page_title: Adding the Web Report Designer in React Application
 slug: how-to-use-web-report-designer-in-react-js
-position: 
 tags: react,viewer,report,reporting,webreportdesigner
 ticketid:1558188
 res_type: kb
@@ -29,7 +28,6 @@ res_type: kb
 
 ## Description
 
-
 The Telerik [Web Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview}) is an HTML5/JavaScript/CSS3 jQuery-based widget that allows integration into your web applications built on virtually any JavaScript framework.
 
 With it, your users can create or modify existing declarative (TRDX, TRDP and TRBP) reports directly from your React application. 
@@ -47,23 +45,22 @@ npx create-react-app my-app
     npm start
 ````
   
-    *Note:* You’ll need to have **Node >= 6** and **npm >= 5.2** on your machine.
+	>note You’ll need to have **Node >= 6** and **npm >= 5.2** on your machine.
   
 2. Create a new .NET or .NET Core Web Application that will host the Rest Service for the web report desiger.  The required steps depending on the framework can be found in:
     - [How to set up in .NET 5 and .NET Core 3.1 applications]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications})
+	
     - [How to set up in .NET Framework application]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application})
 
-You can also find a demo projects with the .NET Core imeplementation in the installation folder of Telerik Reporting -> Examples -> CSharp -> .NET 6 -> ReportingRestServiceCorsDemo subfolder.
+	You can also find a demo projects with the .NET Core imeplementation in the installation folder of Telerik Reporting -> Examples -> CSharp -> .NET 6 -> ReportingRestServiceCorsDemo subfolder.
   
-For this example, we will use the REST service from our [online demos](https://demos.telerik.com/reporting).
+	For this example, we will use the REST service from our [online demos](https://demos.telerik.com/reporting).
 
 4. The deisner depends on **jQuery**. Add a CDN link to jQuery library in **public/index.html**:
        
     ````JS
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 ````
-    
-    
 
 3. Also in the head, add a reference for Kendo all:
 
@@ -82,7 +79,7 @@ For this example, we will use the REST service from our [online demos](https://d
 
 5. Create a new web report designer component (*components/ReportDesigner.js*) and configure the routes accordingly. The new component would contain the following template, scripts, and styles:
    
-   ````JS 
+	````JS 
 import React, { Component } from 'react';
 
 	   export default class ReportDesigner extends Component {

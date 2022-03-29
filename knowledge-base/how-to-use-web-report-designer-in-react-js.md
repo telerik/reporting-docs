@@ -51,7 +51,6 @@ npx create-react-app my-app
   
 2. Create a new .NET or .NET Core Web Application that will host the Rest Service for the web report desiger.  The required steps depending on the framework can be found in:
     - [How to set up in .NET 5 and .NET Core 3.1 applications]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications})
-    - [How to set up in .NET Core 2.1+ application]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application})
     - [How to set up in .NET Framework application]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application})
 
 You can also find a demo projects with the .NET Core imeplementation in the installation folder of Telerik Reporting -> Examples -> CSharp -> .NET 6 -> ReportingRestServiceCorsDemo subfolder.
@@ -60,7 +59,7 @@ For this example, we will use the REST service from our [online demos](https://d
 
 4. The deisner depends on **jQuery**. Add a CDN link to jQuery library in **public/index.html**:
        
-    ````js
+    ````JS
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 ````
     

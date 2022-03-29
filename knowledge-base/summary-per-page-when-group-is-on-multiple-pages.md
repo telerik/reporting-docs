@@ -83,7 +83,7 @@ class PageFooterSumUntilNow : IAggregateFunction
 }
 ````
 
-The aggregate _PageFooterSumUntilNow_ accummulates the corresponding value (the first argument) inside the group (grouped by the second argument) up to the current point, which is the end of the group or the end of the current page when the group finishes on the current page. 
+The aggregate _PageFooterSumUntilNow_ accumulates the corresponding value (the first argument) inside the group (grouped by the second argument) up to the current point, which is the end of the group or the end of the current page when the group finishes on the current page. 
 
 The second custom aggregate is for the [Page Header](../designing-reports-creating-page-headers-and-footers): 
 
@@ -192,8 +192,8 @@ PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account)))
 "")
 ````
 
-This expression compares the last 'account' values for the detail and the group footer scopes on the same page, and types the message that the account continues on the next page and the accummulated sum when they differ, or there is no group footer on the page.  
-A sample report definition and a ClassLibrary project wiht the custom aggregate functions demonstrating the approach may be found in our reporting samples GitHub repo - [Summary per page](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page).
+This expression compares the last 'account' values for the detail and the group footer scopes on the same page, and types the message that the account continues on the next page and the accumulated sum when they differ, or there is no group footer on the page.  
+A sample report definition and a ClassLibrary project with the custom aggregate functions demonstrating the approach may be found in our reporting samples GitHub repo - [Summary per page](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page).
 
 ## Important Notes 
 

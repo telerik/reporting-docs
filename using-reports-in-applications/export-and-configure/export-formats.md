@@ -9,10 +9,10 @@ position: 0
 ---
 <style>
 table th:first-of-type {
-    width: 10%;
+    width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 35%;
+    width: 30%;
 }
 table th:nth-of-type(3) {
     width: 25%;

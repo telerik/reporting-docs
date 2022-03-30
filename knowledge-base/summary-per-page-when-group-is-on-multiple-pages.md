@@ -36,7 +36,7 @@ The fields in the classes need to be static, because for each page we create a n
 
 The first aggregate is for the Page Footer: 
 
-````CSharp
+````C#
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageFooterSumUntilNow")]
 class PageFooterSumUntilNow : IAggregateFunction
 {
@@ -87,7 +87,7 @@ The aggregate _PageFooterSumUntilNow_ accumulates the corresponding value (the f
 
 The second custom aggregate is for the [Page Header](../designing-reports-creating-page-headers-and-footers): 
 
-````CSharp
+````C#
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageHeaderSumFromPrevPage")]
 class PageHeaderSumFromPrevPage : IAggregateFunction
 {
@@ -204,7 +204,7 @@ The fact that the main variables that accumulate the result and the transitional
 2. The fact that the variables are static for the thread may not suffice in some scenarios utilizing the Reporting REST Service. For example, when the report is refreshed from the Html5 Viewer, it may be rendered in the same thread as before. In this case, the aggregated values are carried over from the first to the second report. That said, the values from the previous rendering are carried over to the next rendering. To overcome this, you need to modify the logic of the functions. For example, when the report is a new one, you may reset the static values.  
 The particular workaround we suggest is to pass the __ReportDefinition__ [Global Object](../designing-reports/connecting-to-data/expressions/expressions-reference/global-objects) that is unique for each report generation as another argument of the functions and use it as an indicator that we are in a new report rendering. Here is a sample code with the changes suggested for the _PageHeaderSumFromPrevPage_ function: 
 
-	````C Sharp
+	````C#
 //...
 	private static void Reset()
 	{
@@ -242,9 +242,7 @@ The particular workaround we suggest is to pass the __ReportDefinition__ [Global
 	}
 ````
 
-
-	The usage in the expression would be the same, with the _ReportDefinition_ added as a last argument. 
-	
+	The usage in the expression would be the same, with the _ReportDefinition_ added as a last argument. 	
 	
 3. If you use the [Page Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}) __PageCount__ in the report along with our custom page footer function, the totals may be wrong. The reason for this is the additional pass through the report pages that our algorithm makes when it is necessary to display the total pages per report. That said, the overall total gets accumulated during the additional pass, and in the final report, this becomes the starting value for accumulation.
 
@@ -252,7 +250,7 @@ The particular workaround we suggest is to pass the __ReportDefinition__ [Global
 
 	Here is the updated code of the function:
 
-	````CSharp
+	````C#
 [AggregateFunction(Description = "Special sum aggregate. Output: (value1, value2, ...)", Name = "PageFooterSumUntilNow")]
 	class PageFooterSumUntilNow : IAggregateFunction
 	{

@@ -12,7 +12,7 @@ position: 0
 
 Progress® Telerik® Reporting is a .NET embedded reporting tool which enables you to create, design, export, and integrate reports in cloud-based, web, and desktop applications. 
 
-Telerik Reporting provides web and desktop report designers, report viewer controls, and .NET services. 
+Telerik Reporting provides .NET-only web and desktop report designers and services, and report viewer controls.
 
 With Telerik Reporting you can retrieve and process data from relational, multi-dimensional, ORM, or custom data-layer-based data sources. 
 
@@ -50,8 +50,8 @@ The Report Designers are responsible for the designing process.
 |Report Designer|Specifics
 |:---|:---
 |Standalone desktop designer|<ul><li>A single `.exe` file representing a Windows tool powered by the Telerik Reporting engine.</li><li>Uses the latest UI standards to facilitate the process of creating reports, locally analyzing report data, exporting and sharing.</li></ul>
-|Web report designer|<ul><li>A JavaScript-, CSS3 jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul>
-|Designer for Visual Studio|<ul><li>Dedicated to editing CLR or type report definitions (CS or VB files) in the Visual Studio environment.</li><li>Available under the .NET framework only.</li></ul>
+|Web report designer|<ul><li>An HTML-, CSS-, JavaScript-and-jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul>
+|Designer for Visual Studio|<ul><li>Dedicated to editing CLR or type report definitions (CS or VB files) in the Visual Studio environment.</li><li>Available under the .NET Framework only.</li></ul>
 
 ### Report Viewers
 

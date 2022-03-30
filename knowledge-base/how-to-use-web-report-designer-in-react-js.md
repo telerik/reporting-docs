@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-The Telerik [Web Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview}) is an HTML5/JavaScript/CSS3 jQuery-based widget that allows integration into your web applications built on virtually any JavaScript framework.
+The Telerik [Web Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML5/JavaScript/CSS3 jQuery-based widget that allows integration into your web applications built on virtually any JavaScript framework.
 
 With it, your users can create or modify existing declarative (TRDX, TRDP and TRBP) reports directly from your React application. 
 The solution we are about to demonstrate is a very basic approach to create a new React application, include the web report designer's dependencies and lastly, display the web report designer.
@@ -48,9 +48,9 @@ npx create-react-app my-app
 	>note You’ll need to have **Node >= 6** and **npm >= 5.2** on your machine.
   
 2. Create a new .NET or .NET Core Web Application that will host the Rest Service for the web report desiger.  The required steps depending on the framework can be found in:
-    - [How to set up in .NET 5 and .NET Core 3.1 applications]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications})
+    - [How to set up in .NET 5 and .NET Core 3.1 applications]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
 	
-    - [How to set up in .NET Framework application]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application})
+    - [How to set up in .NET Framework application]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
 
 	You can also find a demo projects with the .NET Core imeplementation in the installation folder of Telerik Reporting -> Examples -> CSharp -> .NET 6 -> ReportingRestServiceCorsDemo subfolder.
   

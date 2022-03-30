@@ -242,7 +242,9 @@ The particular workaround we suggest is to pass the __ReportDefinition__ [Global
 	}
 ````
 
-	The usage in the expression would be the same, with the _ReportDefinition_ added as a last argument.
+
+	The usage in the expression would be the same, with the _ReportDefinition_ added as a last argument. 
+	
 	
 3. If you use the [Page Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}) __PageCount__ in the report along with our custom page footer function, the totals may be wrong. The reason for this is the additional pass through the report pages that our algorithm makes when it is necessary to display the total pages per report. That said, the overall total gets accumulated during the additional pass, and in the final report, this becomes the starting value for accumulation.
 

@@ -12,7 +12,7 @@ position: 0
 
 Progress® Telerik® Reporting is a .NET embedded reporting tool which enables you to create, design, export, and integrate reports in cloud-based, web, and desktop applications. 
 
-Telerik Reporting provides .NET report designers, report viewer controls, and services. 
+Telerik Reporting provides web and desktop report designers, report viewer controls, and .NET services. 
 
 With Telerik Reporting you can retrieve and process data from relational, multi-dimensional, ORM, or custom data-layer-based data sources. 
 
@@ -35,7 +35,7 @@ End users can view the ready reports in PDF, Microsoft Office Word, Excel, and P
 
 ## Key Components 
 
-The lifecycle of a Telerik report is divided in three main steps&mdash;designing the report, integrating its data in an application, and exporting the report content. 
+The lifecycle of a Telerik report is divided in three main steps&mdash;designing the report, populating the report with data and rendering it in a viewer, and exporting the report to a document file.
 
 The Telerik Report Designers and Viewers are the main components of Telerik Reporting and accompany the users in their journey along the lifecycle of the report. 
 
@@ -50,7 +50,7 @@ The Report Designers are responsible for the designing process.
 |Report Designer|Specifics
 |:---|:---
 |Standalone desktop designer|<ul><li>A single `.exe` file representing a Windows tool powered by the Telerik Reporting engine.</li><li>Uses the latest UI standards to facilitate the process of creating reports, locally analyzing report data, exporting and sharing.</li></ul>
-|Web report designer|<ul><li>An HTML5-, JavaScript-, or CSS3 jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul>
+|Web report designer|<ul><li>A JavaScript-, CSS3 jQuery-based widget allowing you to integrate a report designer into your web applications.</li><li>Styling is based on the Kendo UI Sass Default theme.</li><li>Previews reports in the HTML5 Report Viewer.</li></ul>
 |Designer for Visual Studio|<ul><li>Dedicated to editing CLR or type report definitions (CS or VB files) in the Visual Studio environment.</li><li>Available under the .NET framework only.</li></ul>
 
 ### Report Viewers
@@ -59,11 +59,11 @@ The Report Viewers are UI components which are tailored to a specific technology
 
 * Report Viewers are tools which enable you to deploy and render your report in applications that are built on various technologies such as ASP.NET Core or Angular. 
 
-* Which Report Viewer you will choose to use depends on the targeted technology of the application that will host your report.
+* Which Report Viewer you will choose to use depends on the targeted technology of the application.
 
 |Report Viewer|App Type|Essentials
 |:---|:---|:---
-|HTML5 Report Viewer|Web|An HTML, CSS, or JavaScript client-side widget targeting all web application working with JavaScript. 
+|HTML5 Report Viewer|Web|An HTML, CSS, JavaScript and jQuery client-side targeting all web application working with JavaScript. 
 |HTML5 MVC Report Viewer| Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications. 
 |HTML5 WebForms Report Viewer|Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in WebForms applications.  
 |Angular Report Viewer|Web|An Angular component wrapping the HTML5 Report Viewer. 

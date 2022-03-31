@@ -78,7 +78,7 @@ JSON-based configuration file:
           "name": "constructorParameter1",
           "value": "constructorParameterValue1"
         }
-   ]
+	  ]
     }
   }
 }

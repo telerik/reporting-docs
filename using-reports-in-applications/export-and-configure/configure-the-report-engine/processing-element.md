@@ -23,7 +23,7 @@ The Processing element specifies the configuration settings that will be applied
 
 |   |   |
 | ------ | ------ |
-Attributes|__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.|
+|Attributes|__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.|
 |Child elements|__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.|
 |Parent element|__Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the `Telerik.Reporting` element.|
 
@@ -35,13 +35,13 @@ XML-based configuration file:
 ````xml
 <Telerik.Reporting>
     <processing cacheDefinitionProperties="false">
-  <!--The element below represents a Path resource resolver:-->
+		<!--The element below represents a Path resource resolver:-->
         <!--<resourceResolver provider="path">
             <parameters>
                 <parameter name="directory" value="c:\\CommonResourcesDirectory\\" />
             </parameters>
         </resourceResolver>-->
-  <!-- The element below represents a custom implementation of resource resolver:-->
+		<!-- The element below represents a custom implementation of resource resolver:-->
         <resourceResolver provider="custom">
             <parameters>
                 <parameter name="typeName" value="CustomResourceResolver.RawDataResourceResolver, CustomResourceResolver" />
@@ -78,7 +78,7 @@ JSON-based configuration file:
           "name": "constructorParameter1",
           "value": "constructorParameterValue1"
         }
-   ]
+	  ]
     }
   }
 }
@@ -106,7 +106,7 @@ This __ResourceResolver__ is intended to be used in scenarios where the resource
 
 |   |   |
 | ------ | ------ |
-Attributes| __provider__ – required string attribute. Determines the provider type of the ResourceResolver instance. Only two types are supported:<ul><li>__path__ - Specifies to use an internal ResourceResolver instance that will resolve the resources from a given directory specified in the `<parameters>` element.</li><li>__custom__ - Specifies to use a custom ResourceResolver instance that implements [Telerik.Reporting.Interfaces.IResourceResolver](/reporting/api/Telerik.Reporting.Interfaces.IResourceResolver) interface. It will be instantiated at runtime from the type name specified in the `<parameters>` element.</li></ul>|
+|Attributes| __provider__ – required string attribute. Determines the provider type of the ResourceResolver instance. Only two types are supported:<ul><li>__path__ - Specifies to use an internal ResourceResolver instance that will resolve the resources from a given directory specified in the `<parameters>` element.</li><li>__custom__ - Specifies to use a custom ResourceResolver instance that implements [Telerik.Reporting.Interfaces.IResourceResolver](/reporting/api/Telerik.Reporting.Interfaces.IResourceResolver) interface. It will be instantiated at runtime from the type name specified in the `<parameters>` element.</li></ul>|
 |Child elements| __parameters__ – specifies a collection of parameters for the resource resolver in the `<resourceResolver>` element. Only one __parameters__ element can be used in the `<resourceResolver>` element.<br/>__Supported parameters for *path* provider__<ul><li>__name__ : _directory_</li><li>__value__ : the path to the directory that contains the resources to be resolved.</li></ul>__Supported parameters for *custom* provider__<ul><li>__name__ : _typeName_</li><li>__value__ : the assembly qualified name of the type that implements the [Telerik.Reporting.Interfaces.IResourceResolver](/reporting/api/Telerik.Reporting.Interfaces.IResourceResolver) interface.</li></ul>The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. If no additional parameters are specified, the parameterless constructor will be used.|
 |Parent element| __processing__ - specifies the parent element of the Telerik Reporting configuration settings.|
 

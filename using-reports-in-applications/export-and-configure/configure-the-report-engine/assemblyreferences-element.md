@@ -7,15 +7,20 @@ tags: assemblyreferences,element
 published: True
 position: 4
 ---
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 90%;
+}
+</style>
 
 # assemblyReferences Element
 
-
-
-Defines a collection of assembly references that are used from Reporting Engine during processing stage to         resolve names of user functions and user aggregate functions and also the types used by ObjectDataSource component.       
+Defines a collection of assembly references that are used from Reporting Engine during processing stage to resolve names of user functions and user aggregate functions and also the types used by ObjectDataSource component. 
 
 XML-based configuration file:
-
     
 ````xml
 <assemblyReferences>
@@ -26,7 +31,6 @@ XML-based configuration file:
 ````
 
 JSON-based configuration file:
-
     
 ````js
 "assemblyReferences": [
@@ -39,82 +43,63 @@ The following sections describe attributes, child elements, and parent elements.
 
 |   |   |
 | ------ | ------ |
-Attributes|None|
-|Child Elements|* __add__ - Optional element. Adds an assembly reference to the collection.<br/>* __clear__ - Optional element. Removes all references to inherited assembly names,<br/>                  allowing only the references that are added by the current add element.<br/>* __remove__ - Optional element. Removes a reference to an inherited assembly name from<br/>                  the collection.|
-|Parent Elements|* __configuration__ - Specifies the root element in every configuration file that is used by<br/>                  the common language runtime and the.NET Framework applications.<br/>* __Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.|
-
+|Attributes|None|
+|Child Elements|<ul><li>__add__ - Optional element. Adds an assembly reference to the collection.</li><li>__clear__ - Optional element. Removes all references to inherited assembly names, allowing only the references that are added by the current add element.</li><li>__remove__ - Optional element. Removes a reference to an inherited assembly name from the collection.</li></ul>|
+|Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the.NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
 
 ## Example
 
-The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly           assembly as source for user functions. In this example it would also search for assemblies in MyDir and           SubDir application base subdirectories as we have explicitly instructed that via the ```<probing>``` Element.           This is not mandatory, and when not specified, it would search in the application base, which is the root           location where the application is being executed.         
+The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly assembly as source for user functions. In this example it would also search for assemblies in MyDir and SubDir application base subdirectories as we have explicitly instructed that via the `<probing>` Element. This is not mandatory, and when not specified, it would search in the application base, which is the root location where the application is being executed. 
 
 XML-based configuration file:
-
     
 ````xml
 <?xml version="1.0"?>
 <configuration>
     <configSections>
-        <section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
     </configSections>
     <runtime>
-    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-          <probing privatePath="MyDir; MyDir2\SubDir"/>
-    </assemblyBinding>
-       </runtime>
-      <Telerik.Reporting>
-          <assemblyReferences>
-              <add name="MyUserFunctionsAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
-        </assemblyReferences>
-       </Telerik.Reporting>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			  <probing privatePath="MyDir; MyDir2\SubDir"/>
+		</assemblyBinding>
+    </runtime>
+    Telerik.Reporting>
+		<assemblyReferences>
+			<add name="MyUserFunctionsAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
+		</assemblyReferences>
+    </Telerik.Reporting>
 ...
 </configuration>
 ````
 
 JSON-based configuration file:
-
     
 ````js
 "telerikReporting": {
-  "assemblyReferences": [
-      {
-        "name": "MyUserFunctionsAssembly",
-        "version": "1.0.0.0",
-        "culture": "neutral",
-        "publicKeyToken": "null"
-      }
- ]
+	"assemblyReferences": [
+		{
+			"name": "MyUserFunctionsAssembly",
+			"version": "1.0.0.0",
+			"culture": "neutral",
+			"publicKeyToken": "null"
+		}
+	]
 }
 ````
 
-> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections`             element of configuration file. Failing to do so will result in a              [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx)              with following text: *Configuration system failed to initialize*.           
-
-
+> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections` element of configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx) with following text: *Configuration system failed to initialize*. 
 
 # See Also
 
-
- 
-
 * [How the Runtime Locates Assemblies](https://docs.microsoft.com/en-us/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
-
- 
 
 * [Specifying an Assembly's Location](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/specify-assembly-location)
 
- 
-
-* [```<probing>``` Element](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
-
- 
+* [`<probing>` Element](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
 
 * [Application Configuration Files](http://msdn.microsoft.com/en-us/library/windows/desktop/aa374182(v=vs.85).aspx)
 
- 
-
 * [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
 
- 
-
 * [User Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})
-

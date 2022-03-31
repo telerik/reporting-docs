@@ -7,6 +7,14 @@ tags: fontlibrary,element
 published: True
 position: 7
 ---
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 90%;
+}
+</style>
 
 # fontLibrary Element
 
@@ -44,11 +52,11 @@ XML-based configuration file:
 <configuration>
 ...
     <Telerik.Reporting>
-    <fontLibrary useDefaultLocations ="false">
-      <fontLocations>
-        <add path="/usr/customFonts/trueType" searchSubfolders="true"></add>
-      </fontLocations>
-    </fontLibrary>
+		<fontLibrary useDefaultLocations ="false">
+			<fontLocations>
+				<add path="/usr/customFonts/trueType" searchSubfolders="true"></add>
+			</fontLocations>
+		</fontLibrary>
   </Telerik.Reporting>
 ...
 </configuration>
@@ -58,19 +66,19 @@ JSON-based configuration file:
     
 ````js
 "telerikReporting": {
-  "fontLibrary": {
-    "useDefaultLocations": "false",
-    "fontLocations": [
-      {
-        "path": "/usr/customFonts/trueType",
-        "searchSubfolders": "true"
-      }
- ]
-  }
+	"fontLibrary": {
+		"useDefaultLocations": "false",
+		"fontLocations": [
+			{
+				"path": "/usr/customFonts/trueType",
+				"searchSubfolders": "true"
+			}
+		]
+	}
 }
 ````
 
 
 # See Also
 
-* [Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+* [Configure the Report Engine Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})

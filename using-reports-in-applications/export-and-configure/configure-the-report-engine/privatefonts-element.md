@@ -56,7 +56,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 |   |   |
 | ------ | ------ |
-Attributes|None|
+|Attributes|None|
 |Child Elements|__add__ - Optional element. Adds a font to the collection.|
 |Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the .NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
 

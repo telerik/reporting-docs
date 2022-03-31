@@ -7,27 +7,31 @@ tags: appdata,element
 published: True
 position: 8
 ---
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 90%;
+}
+</style>
 
 # appData Element
 
-
-
-The appData element specifies the configuration settings for the temporary application data stored on the machine.       
+The appData element specifies the configuration settings for the temporary application data stored on the machine. 
 
 ## Attributes and Elements
 
-__```<appData>``` element__ 
+__`<appData>` element__ 
 
 |   |   |
 | ------ | ------ |
-Attributes| __path__ – string attribute. Specifies the absolute path to the folder which will be used to store temp data, such as Map tiles cache and                 SQLite assemblies.|
-|Parent element| __Telerik.Reporting__ – specifies the root element of the Telerik Reporting configuration settings. Only one appData child element can be used inside                 the Telerik.Reporting root element.|
-
+|Attributes|__path__ – string attribute. Specifies the absolute path to the folder which will be used to store temp data, such as Map tiles cache and SQLite assemblies.|
+|Parent element|__Telerik.Reporting__ – specifies the root element of the Telerik Reporting configuration settings. Only one appData child element can be used inside the Telerik.Reporting root element.|
 
 ## Example
 
 XML-based configuration file:
-
     
 ````xml
 <configuration>
@@ -40,7 +44,6 @@ XML-based configuration file:
 ````
 
 JSON-based configuration file:
-
     
 ````js
 "telerikReporting": {

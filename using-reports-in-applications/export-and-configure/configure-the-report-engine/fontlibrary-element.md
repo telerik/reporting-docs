@@ -30,7 +30,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 |   |   |
 | ------ | ------ |
-Attributes| __useDefaultLocations__ - determines if the system's default font locations to be included in the search. On Linux machines these folders are `/usr/share/fonts/truetype/` and `/usr/local/share/fonts`. On macOS machines the folder is `/Library/Fonts`.<br/>Default value: __true__.|
+|Attributes| __useDefaultLocations__ - determines if the system's default font locations to be included in the search. On Linux machines these folders are `/usr/share/fonts/truetype/` and `/usr/local/share/fonts`. On macOS machines the folder is `/Library/Fonts`.<br/>Default value: __true__.|
 |Child Elements|__add__ - Optional element. Adds a font location to the collection.|
 |Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the .NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
 

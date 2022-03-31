@@ -22,7 +22,7 @@ Defines a collection that allows the Reporting Engine to use a private version o
 
 >note __Known issue with the Windows Platform:__ If you order the fonts in the PrivateFontCollection first regular then bold the GDI+ measure string size for bold font style is incorrect. This is observed in Windows 8.1 and later and may lead to unexpected rendering and aligning issues. For more information see [Wrong Measurements from MeasureString](https://github.com/Microsoft/DirectXTK/issues/34).
 
->note __Known issue with Azure:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services. If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in [PrivateFontCollection is not working](https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working). 
+> note __Known issue with Azure:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services. If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in [PrivateFontCollection is not working](https://feedback.azure.com/forums/34192--general-feedback/suggestions/31381390-privatefontcollection-is-not-working). 
 
 >note __Known issue with PDF rendering in .NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the  __privateFonts__ element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font, used in the report, is not available. 
 

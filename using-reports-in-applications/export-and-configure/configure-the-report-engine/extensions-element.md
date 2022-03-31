@@ -66,7 +66,7 @@ Parameter XML element specifies a parameter for the extension defined in the anc
 
 |   |   |
 | ------ | ------ |
-Attributes|<ul><li>__name__ – the name of the parameter that is supplied. Required attribute.</li><li>__value__ – the value of the parameter with the name specified. As the value can be only a string, the parameter Type must have an associatedTypeConverter that handles conversions from string. Built-in .NET value types and enums have type converters defined.</li></ul>|
+Attributes|<ul><li>__name__ – the name of the parameter that is supplied. Required attribute.</li><li>__value__ – the value of the parameter with the name specified. As the value can be only a _string_, the parameter Type must have an _associatedTypeConverter_ that handles conversions from _string_. Built-in .NET value types and enums have type converters defined.</li></ul>|
 |Child elements|No child elements are defined for this element.|
 |Parent element|__parameters__ - specifies a collection of parameters for the extension defined in the parent extension element. Multiple parameter elements can be used in the parameters element.|
 
@@ -96,18 +96,18 @@ JSON-based configuration file:
     
 ````js
 "telerikReporting": {
-  "extensions": [
-    {
-      "name": "PDF",
-      "description":  "PDF Description",
-      "parameters": [
-        {
-          "Name": "DocumentAuthor",
-          "Value": "John Doe"
-        }
-   ]
-    }
-]
+	"extensions": [
+		{
+			"name": "PDF",
+			"description":  "PDF Description",
+			"parameters": [
+				{
+					"Name": "DocumentAuthor",
+					"Value": "John Doe"
+				}
+			]
+		}
+	]
 }
 ````
 

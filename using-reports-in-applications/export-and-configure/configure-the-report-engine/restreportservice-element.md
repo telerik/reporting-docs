@@ -36,7 +36,7 @@ __`<restReportService>` element__
 
 |   |   |
 | ------ | ------ |
-|Attributes|<ul><li>__hostAppId__ – optional string attribute. Specifies the unique constant name of the application hosting the reports service. When not set the report service utilizes the [AppDomainSetup.ApplicationName Property](https://msdn.microsoft.com/en-us/library/vstudio/system.appdomainsetup.applicationname(v=vs.100).aspx">AppDomainSetup.ApplicationName Property) for the current application domain. This however is not sufficient for each application setup. Set a value for this property in order to provide an unique name among all apps implementing the report service that will be deployed in the same environment.</li><li>__workerCount__ – optional integer attribute. Specifies the count of the worker threads that render report documents. The default value is equal to the logical processors available on the server machine.</li><li>__clientSessionTimeout__ – optional integer attribute. Specifies the value in minutes indicating how long a client session will be preserved in the service storage after the last interaction from this client. The value must be greater than zero. The default value is 15 minutes.</li><li>__reportSharingTimeout__ – optional integer attribute. Specifies the value in minutes indicating how long a rendered report document will be viable for reuse for all clients. The value must be greater than or equal to zero. A zero value will prevent rendered report document reuse. The default value is zero.</li><li>__exceptionsVerbosity__ – optional string attribute. Specifies the verbosity level of the exception information returned in the response when an exception occurs during report rendering. The supported values are *normal* and *detailed*. When set to *normal*, the response will contain only the exception message. When set to *detailed*, the response will contain the exception type and stack trace. The default value is *normal*.</li></ul>|
+|Attributes|<ul><li>__hostAppId__ – optional string attribute. Specifies the unique constant name of the application hosting the reports service. When not set the report service utilizes the [AppDomainSetup.ApplicationName Property](https://docs.microsoft.com/en-us/dotnet/api/system.appdomainsetup.applicationname?redirectedfrom=MSDN&view=netframework-4.8#System_AppDomainSetup_ApplicationName) for the current application domain. This however is not sufficient for each application setup. Set a value for this property in order to provide an unique name among all apps implementing the report service that will be deployed in the same environment.</li><li>__workerCount__ – optional integer attribute. Specifies the count of the worker threads that render report documents. The default value is equal to the logical processors available on the server machine.</li><li>__clientSessionTimeout__ – optional integer attribute. Specifies the value in minutes indicating how long a client session will be preserved in the service storage after the last interaction from this client. The value must be greater than zero. The default value is 15 minutes.</li><li>__reportSharingTimeout__ – optional integer attribute. Specifies the value in minutes indicating how long a rendered report document will be viable for reuse for all clients. The value must be greater than or equal to zero. A zero value will prevent rendered report document reuse. The default value is zero.</li><li>__exceptionsVerbosity__ – optional string attribute. Specifies the verbosity level of the exception information returned in the response when an exception occurs during report rendering. The supported values are *normal* and *detailed*. When set to *normal*, the response will contain only the exception message. When set to *detailed*, the response will contain the exception type and stack trace. The default value is *normal*.</li></ul>|
 |Child elements|<ul><li>__reportResolver__ – specifies the report source resolver implementation that will be used for report resolving from the service.</li><li>__storage__ – specifies the storage implementation that will be used for internal storage from the report service.</li></ul>|
 |Parent element|__Telerik.Reporting__ – specifies the root element of the Telerik Reporting configuration settings. Only a single restReportService child element can be used inside the Telerik.Reporting root element.|
 
@@ -99,25 +99,25 @@ JSON-based configuration file:
     
 ````js
 "telerikReporting": {
-  "restReportService": {
-    "hostAppId": "Application1",
-    "workerCount": 4,
-    "reportSharingTimeout": 10,
-    "clientSessionTimeout": 10,
-    "exceptionsVerbosity": "detailed",
-    "reportResolver": {
-      "provider": "type"
-    },
-    "storage": {
-      "provider": "file",
-      "parameters": [
-        {
-          "name": "directory",
-          "value": "c:\\temp"
-        }
-   ]
-    }
-  },
+	"restReportService": {
+		"hostAppId": "Application1",
+		"workerCount": 4,
+		"reportSharingTimeout": 10,
+		"clientSessionTimeout": 10,
+		"exceptionsVerbosity": "detailed",
+		"reportResolver": {
+			"provider": "type"
+		},
+		"storage": {
+			"provider": "file",
+			"parameters": [
+				{
+					"name": "directory",
+					"value": "c:\\temp"
+				}
+			]
+		}
+	},
 }
 ````
 

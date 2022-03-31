@@ -35,13 +35,13 @@ XML-based configuration file:
 ````xml
 <Telerik.Reporting>
     <processing cacheDefinitionProperties="false">
-  <!--The element below represents a Path resource resolver:-->
+		<!--The element below represents a Path resource resolver:-->
         <!--<resourceResolver provider="path">
             <parameters>
                 <parameter name="directory" value="c:\\CommonResourcesDirectory\\" />
             </parameters>
         </resourceResolver>-->
-  <!-- The element below represents a custom implementation of resource resolver:-->
+		<!-- The element below represents a custom implementation of resource resolver:-->
         <resourceResolver provider="custom">
             <parameters>
                 <parameter name="typeName" value="CustomResourceResolver.RawDataResourceResolver, CustomResourceResolver" />

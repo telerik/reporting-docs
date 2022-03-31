@@ -9,10 +9,10 @@ position: 3
 ---
 <style>
 table th:first-of-type {
-    width: 20%;
+    width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 80%;
+    width: 90%;
 }
 </style>
 # processing Element
@@ -23,9 +23,9 @@ The Processing element specifies the configuration settings that will be applied
 
 |   |   |
 | ------ | ------ |
-Attributes| __cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.|
-|Child elements| __resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one __resourceResolver__ element can be used in the `<processing>` element.|
-|Parent element| __Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the Telerik.Reporting element.|
+Attributes|__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.|
+|Child elements|__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.|
+|Parent element|__Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the `Telerik.Reporting` element.|
 
 
 ### Example

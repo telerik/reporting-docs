@@ -51,23 +51,3 @@ Preview the result by running the project.
 
   ![VS](images/VS.PNG)
 
-## Next Steps
-
-* [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
-
-* [How to Add Column Graph]({%slug telerikreporting/getting-started/how-to-add-column-graph%})
-
-## Previous Steps
-
-* [First Steps]({%slug telerikreporting/getting-started/first-steps%})
-
-* [Creating the Demo Report]({%slug telerikreporting/getting-started/creating-the-demo-report%})
-
-* [Setting the Page Header]({%slug telerikreporting/getting-started/setting-the-page-header%})
-
-* [Creating the Table and Populating it with Data]({%slug telerikreporting/getting-started/creating-the-table-and-populating-it-with-data%})
-
-* [Creating the Graph]({%slug telerikreporting/getting-started/creating-the-graph%})
-
-* [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
-

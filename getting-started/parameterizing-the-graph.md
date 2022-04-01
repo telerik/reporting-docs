@@ -61,23 +61,3 @@ Preview the result by clicking __Preview__ > __PrintPreview__.
 
   ![Report Parameter Preview](images/ReportParameterPreview.PNG)
 
-## Next Steps
-
-* [How to Add Column Graph]({%slug telerikreporting/getting-started/how-to-add-column-graph%})
-
-## Previous Steps
-
-* [First Steps]({%slug telerikreporting/getting-started/first-steps%})
-
-* [Creating the Demo Report]({%slug telerikreporting/getting-started/creating-the-demo-report%})
-
-* [Setting the Page Header]({%slug telerikreporting/getting-started/setting-the-page-header%})
-
-* [Creating the Table and Populating it with Data]({%slug telerikreporting/getting-started/creating-the-table-and-populating-it-with-data%})
-
-* [Creating the Graph]({%slug telerikreporting/getting-started/creating-the-graph%})
-
-* [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
-
-* [Integrating the Report in.NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
-

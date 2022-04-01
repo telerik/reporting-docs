@@ -10,7 +10,7 @@ position: 8
 
 # How to Add Column Graph
 
-
+visualize the data through a table and graph,         as well as how to style the report and its items. Finally, we will show how to display the report in.NET Application through the Html5 Report Viewer.       
 
 This article is part of the Demo report guide on getting started with Telerik Reporting and demonstrates         how to add a new graph which will display the top five stores per year and per quarter.       
 
@@ -41,30 +41,7 @@ Preview the result by clicking __Preview__ > __PrintPreview__.
 
   ![FinalGS](images/FinalGS.PNG)
 
-## Previous Steps
-
-* [First Steps]({%slug telerikreporting/getting-started/first-steps%})
-
-* [Creating the Demo Report]({%slug telerikreporting/getting-started/creating-the-demo-report%})
-
-* [Setting the Page Header]({%slug telerikreporting/getting-started/setting-the-page-header%})
-
-* [Creating the Table and Populating it with Data]({%slug telerikreporting/getting-started/creating-the-table-and-populating-it-with-data%})
-
-* [Creating the Graph]({%slug telerikreporting/getting-started/creating-the-graph%})
-
-* [Setting the Page Footer]({%slug telerikreporting/getting-started/setting-the-page-footer%})
-
-* [Integrating the Report in.NET Framework Application]({%slug telerikreporting/getting-started/integrating-the-report-in-.net-framework-application%})
-
-* [Parameterizing the Graph]({%slug telerikreporting/getting-started/parameterizing-the-graph%})
-
 ## Demo project
 
 You can find the full project in our  [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/FirstStepsProject).         
-
-#
-# See Also
-
-[Designing reports]({%slug telerikreporting/designing-reports/overview%})
 

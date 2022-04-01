@@ -22,7 +22,7 @@ Your system must have the following installed to use this tutorial:
 
 * AdventureWorks database.               If you have a running local instance of MS SQL Server the AdventureWorks database is installed with Telerik Reporting.               Additionally the sample database can be found and manually installed from                [http://msftdbprodsamples.codeplex.com](http://msftdbprodsamples.codeplex.com) 
 
-* Visual Studio. For more information on the supported editions see:                [Telerik Reporting System Requirements](http://www.telerik.com/products/reporting/system-requirements) If you don't have a required Visual Studio edition you can use the tutorial [Creating the Demo Report]({%slug telerikreporting/getting-started/creating-the-demo-report%}).             
+* Visual Studio. For more information on the supported editions see:                [Telerik Reporting System Requirements](http://www.telerik.com/products/reporting/system-requirements) If you don't have a required Visual Studio edition you can use the tutorial [Creating the Demo Report]({%slug telerikreporting/getting-started/first-steps%}).             
 
 * Telerik Reporting installation. If you still don't have Telerik Reporting installation go to the [Installation]({%slug telerikreporting/installation%}) topic.             
 

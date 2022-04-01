@@ -18,6 +18,11 @@ With Telerik Reporting you can retrieve and process data from relational, multi-
 
 End users can view the ready reports in PDF, Microsoft Office Word, Excel, and PowerPoint document formats, or use a dedicated viewer in a Web or .NET desktop application. 
 
+{% if site.has_cta_panels == true %}
+{% include cta-panel-introduction.html %}
+{% endif %}
+
+
 ## Supported Frameworks
 
 |Supported Framework|Media
@@ -73,10 +78,6 @@ The Report Viewers are UI components which are tailored to a specific technology
 |WPF Report Viewer|Desktop|A composite of Telerik UI for WPF controls targeting WPF and WinForms projects. 
 |WinUI Report Viewer|Desktop|A composite of Telerik UI for WinUI controls targeting WinUI3 projects. 
 
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-introduction.html %}
-{% endif %}
 
 ## About the Demos
 

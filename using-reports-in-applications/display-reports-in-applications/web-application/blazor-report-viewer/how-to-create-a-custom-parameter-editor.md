@@ -22,57 +22,57 @@ The __match__ method accepts a report parameter to be edited as an argument and 
 
 The main work for creating and utilizing the parameter editor is done in the __createEditor__ method. Its purpose is to create the parameter editor UI and wire it to the __parameterChanged__ callback when a new value is selected. The returned result is a new object containing the __beginEdit__ method which is the entry point for creating the editor from the viewer. 
 
-This global variable with the _match_ and _createEditor_ methods can be initialized in **\_Host.cshtml\/\_Layout.cshtml** for Blazor Server project and for Blazor WebAssembly can be used the **wwwroot/index.html** file.
+This global variable with the _match_ and _createEditor_ methods can be initialized in **\_Host.cshtml/\_Layout.cshtml** for Blazor Server project and for Blazor WebAssembly can be used the **wwwroot/index.html** file.
 
 The following example uses the **Dashboard** example report that we ship with the installation of Telerik Reporting and illustrates how to use the Kendo DropDownList widget for a single parameter value parameter editor which also has available values: 
 
 - In **\_Host.cshtml**
 
-````html
-  <!--Kendo all is needed for the DropDownList widget itself-->
-  <script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
+````HTML
+<!--Kendo all is needed for the DropDownList widget itself-->
+<script src="https://kendo.cdn.telerik.com/2022.1.119/js/kendo.all.min.js"></script>
 
-  <script>
-        window.trvParameterEditors = {
+<script>
+    window.trvParameterEditors = {
 
-             matchFunction: function (parameter) {
-                return Boolean(parameter.availableValues) && !parameter.multivalue;
-            },
+         matchFunction: function (parameter) {
+            return Boolean(parameter.availableValues) && !parameter.multivalue;
+        },
 
-             createEditorFunction: function createEditorFunction(placeholder, options) {
-            
-                let dropDownListElement = $(placeholder).html('<input style="width: 50px;" />');
-                let valueChangedCallback = options.parameterChanged;
-                let parameter;
+         createEditorFunction: function createEditorFunction(placeholder, options) {
+        
+            let dropDownListElement = $(placeholder).html('<input style="width: 50px;" />');
+            let valueChangedCallback = options.parameterChanged;
+            let parameter;
 
-                    function onChange(e) {
-                        var years = $(dropDownListElement).data("kendoDropDownList");
-                        var val = years.value();
-                        valueChangedCallback(parameter, val);
-                    }
-
-                return {
-                
-                    beginEdit: function (param) {
-
-                    parameter = param;
-
-                    $(dropDownListElement).kendoDropDownList({
-                        dataSource: param.availableValues.map((el) => el.value),
-                        change: onChange
-                    });
-
-                    dropDownList = $(dropDownListElement).data("kendoDropDownList");
+                function onChange(e) {
+                    var years = $(dropDownListElement).data("kendoDropDownList");
+                    var val = years.value();
+                    valueChangedCallback(parameter, val);
                 }
-            };
-         }
-       }
-    </script>
+
+            return {
+            
+                beginEdit: function (param) {
+
+                parameter = param;
+
+                $(dropDownListElement).kendoDropDownList({
+                    dataSource: param.availableValues.map((el) => el.value),
+                    change: onChange
+                });
+
+                dropDownList = $(dropDownListElement).data("kendoDropDownList");
+            }
+        };
+     }
+   }
+</script>
 ````
 
 - Then in the Blazor Report Viewer Initialization:
 
-````cs
+````C#
 <ReportViewer @ref="reportViewer1"
               ViewerId="rv1"
               ServiceUrl="/api/reports"

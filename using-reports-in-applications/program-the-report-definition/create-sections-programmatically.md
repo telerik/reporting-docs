@@ -10,9 +10,6 @@ position: 2
 
 # Create Sections Programmatically
 
-
-
-
 To create sections in code, instantiate the appropriate object, set its properties, and add it to the __Report__ object's __Items__ collection. The objects you will need to work with are:
 
 * __DetailSection__ - for a detail section
@@ -30,7 +27,6 @@ To create sections in code, instantiate the appropriate object, set its properti
 * __ReportFooterSection__ - for a report footer
 
 For example, this code creates a detail section and adds it to the report:
-
     
 ````C#
 DetailSection detail = new DetailSection();
@@ -48,7 +44,6 @@ report.Items.Add(DirectCast(detail, ReportItemBase)
 
 # See Also
  
-
 * [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  
 
 * [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)  
@@ -62,4 +57,3 @@ report.Items.Add(DirectCast(detail, ReportItemBase)
 * [PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)  
 
 * [PageFooterSection](/reporting/api/Telerik.Reporting.PageFooterSection)
-

@@ -1,11 +1,11 @@
 ---
-title: Designing a Report First Steps Guide
+title: Designing a Report Guide
 page_title: Designing a Report First Steps Guide
 description: "Get up and running with the designing process of Telerik Reporting and learn how to create a report, connect it to data, set its header and footer, add some styling, and export the report to PDF."
 slug: telerikreporting/getting-started/first-steps
 tags: telerik, reporting, first, steps, guide, design, a, report
 published: True
-position: 0
+position: 1
 ---
 
 # Designing a Report First Steps Guide
@@ -24,7 +24,7 @@ At the end, you'll be able to achieve the following result.
 
 .....?? 
 
-For an advanced first-steps scenario on integrating a Telerik Report in an application, refer to the getting started guide on [integrating a report in a web application]({% slug ... %}).
+For an advanced first-steps scenario on integrating a Telerik Report in an application, refer to the getting started guide on [integrating a report in a web application]({% slug first-steps-integrating-reports %}).
 
 ## Prerequisites 
 

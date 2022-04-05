@@ -10,15 +10,15 @@ position: 0
 
 # On Telerik Reporting 
 
-Telerik Reporting is an embedded tool for creating and displaying reports in a visually structured and logically grouped way. Telerik reports can be created for [web or desktop applications](...) which [operate within various web and desktop frameworks](...).
+Telerik Reporting is an embedded tool for creating and displaying reports in a visually structured and logically grouped way. Telerik reports can be created for web or desktop applications which operate within various web and desktop frameworks.
 
 Generally, you can use Telerik Reporting for two main purposes. 
 
 The first case is if you want to quickly import some data, display it in a report, and share it with someone by exporting the content in PDF, for example. In this case, you can only install the product and use some of the basic functions provided by the Telerik Report Designers. 
 
-However, Telerik Reporting is a highly functional tool with built-in wizards and provides a great number of options for customizing your reports and presenting data in a beautiful, convenient, and easy-to-grasp way. Apart from quickly importing the data for presentation, you can also use the Telerik Reporting item templates that are incorporated in Visual Studio.
+However, Telerik Reporting is a highly functional tool with built-in wizards, and provides a great number of options for customizing your reports and presenting data in a beautiful, convenient, and easy-to-grasp way. Apart from quickly importing the data for presentation, you can also use the Telerik Reporting item templates that are incorporated in Visual Studio.
 
-The milestone during the report authoring is the designing of the report, which happens in the Report Designer. The Report Designer is a tool for creating and configuring reports and Telerik Reporting supports the [Standalone Report Designer](...), the [Web Report Designer](...), and the integrated [Report Designer for Visual Studio](...). 
+The milestone during the report authoring is the designing of the report, which happens in the Report Designer. The Report Designer is a tool for creating and configuring reports and Telerik Reporting supports the [Standalone Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview %}), the [Web Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}), and the integrated [Report Designer for Visual Studio]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview %}). 
 
 All three Telerik Report Designers provide options for defining the required report structure as a table with a title and a page header and footer; for connecting the report to data by retrieving and processing information from relational, multi-dimensional, ORM, or custom data-layer-based data sources; for adding custom controls to visualize the data such as a pie chart; for styling the report and its items by selecting colors from the incorporated color palette and other styling options.   
 
@@ -53,13 +53,13 @@ Once you have a properly configured Report Source, you can use it for a Telerik 
 
 If you choose to use the Visual Studio Report Designer and store your reports as .NET classes, the most efficient way to structure your reporting solution is to first create a class library that contains your reports.           Then, you can reference that class library in applications that view the reports. You can have any number of Windows or Web viewing applications which are re-using the same class library. This solution structure decouples your program logic from the report and its data.         
 
+??? Can we add info about the following?
+
 Telerik Reporting can incorporate a new REST service end point or integrate a hosted report server.  
 
 Report definitions contain a structure and configuration for creating a project. 
 
 When creating a data source, Telerik Reporting provides the option for creating a shared connection or embedding its configuration in the report definition.   
-
-Customize the Report with Data from Backend Services
 
 The crosstab is a container for data that is bound from an underlying data source. A powerful control in reports because it provides a range of functions like aggregates, summing, and so on. 
 

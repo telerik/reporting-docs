@@ -35,4 +35,4 @@ Add the TextBox with the Action in a [Panel]({%slug telerikreporting/designing-r
 
 ## See Also
 
-[FreezeColumnHeaders functionality doesn't behave properly when Action is set on the header](FreezeColumnHeaders functionality doesn't behave properly when Action is set on the header)
+[FreezeColumnHeaders functionality doesn't behave properly when Action is set on the header](https://feedback.telerik.com/reporting/1485084-freezecolumnheaders-functionality-doesn-t-behave-properly-when-action-is-set-on-the-header)

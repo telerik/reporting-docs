@@ -36,3 +36,5 @@ Let's assume that we have used the Graph Wizard to add a Column Chart that displ
 Here is also a [link to a muted video](https://screencast-o-matic.com/watch/c3Vl6VVoy4h) that demonstrates the approach.
 
 The second barSeries we introduced result in duplicated Series labels. You may fix this by removing the legend item of the second barSeries. Select the series and set its __LegendItem > Style > Visible__ to __False__ as displayed on the [linked screenshot](https://www.screencast.com/t/yipfUZEWJW).
+
+You may find the demo report [TotalInGraph.trdp in our Reporting Samples](https://github.com/telerik/reporting-samples/blob/master/TotalInGraph.trdp)

@@ -1,11 +1,11 @@
 ---
-title: FreezeColumnHeaders doesn't behave properly with Action set on the Table Header
+title: FreezeColumnHeaders Doesn't Behave Properly with Action Set on the Table Header
 description: The frozen row with table column headers is hidden when scrolling if there is Action set on the header
 type: troubleshooting
-page_title: 
+page_title: FreezeColumnHeaders not Respected with Action
 slug: freeze-column-header-with-action-not-working
 position: 
-tags: 
+tags: table, crosstab, FreezeColumnHeaders, Action
 ticketid: 1549900
 res_type: kb
 ---

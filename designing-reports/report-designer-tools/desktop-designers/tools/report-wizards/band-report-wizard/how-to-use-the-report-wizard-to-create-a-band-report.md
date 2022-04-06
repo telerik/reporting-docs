@@ -89,4 +89,4 @@ From here you can continue with the following quickstart tutorials:
 
 * [How to extend a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-extend-a-band-report%}) - to include [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}), [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%}) and [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report items. This topic also introduces in-place editing, copying and pasting styles, using the [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) and [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}). 
 
-* [Displaying Reports in WinForms Report Viewer]({%slug telerikreporting/quickstart/displaying-reports-in-winforms-report-viewer%}) - to create               Windows application to display the reports.
+

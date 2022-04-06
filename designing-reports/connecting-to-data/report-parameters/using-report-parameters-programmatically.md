@@ -104,7 +104,7 @@ Private Sub Report1_NeedDataSource(ByVal sender As Object, ByVal e As System.Eve
 End Sub
 ````
 
-1. [Display the Report]({%slug telerikreporting/quickstart/displaying-reports-in-winforms-report-viewer%}) in a report viewer.
+1. Display the Report in a report viewer.
 
 1. Select a parameter from the available values in the parameter editor 
    and click __Preview__.  

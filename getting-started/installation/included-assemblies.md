@@ -5,7 +5,7 @@ description: "Learn more about the available assemblies you can use when working
 slug: included-assemblies
 tags: telerik, reporting, included, assemblies, installation
 published: True
-position: 2
+position: 3
 ---
 
 # Included Assemblies

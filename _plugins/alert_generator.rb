@@ -20,7 +20,7 @@ module Reading
         sub_string.each do |s|
           # puts("s - #{s} ; s1 - #{s[1]}; replaced - #{s[1].gsub(/(^>)/, "")}")
           block ="<blockquote class='#{alertType}'>" +  @converter.convert(s[1].gsub(/(^>)/x, "")) + "</blockquote>"
-	  			slugsInBlock = block.scan(/.*?(%7[Bb]%slug%20([\w-]+)%{2}7[Dd])/)				
+	  			slugsInBlock = block.scan(/.*?(%7[Bb]%slug%20([0-9a-zA-Z_\-\(\)\*\.\/\,\%\'\?\:]+)%{2}7[Dd])/)				
 	  			if	slugsInBlock.count > 0				
 	  				slugsInBlock.each do |slug|								
 	  					targetPage = @site.pages.find {|p| p.data['slug'] == slug[1]}			

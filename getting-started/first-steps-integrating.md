@@ -1,6 +1,6 @@
 ---
-title: Integrating the Report in an Application (Guide)
-page_title: Integrating the Report in an Application (First Steps Guide)
+title: Integrating Reports in Applications (Guide)
+page_title: Integrating Reports in Applications (Guide) 
 description: "Get up and running with Telerik Reporting and learn how to integrate your report into a web application."
 slug: first-steps-integrating-reports
 tags: telerik, reporting, first, steps, guide, integrate, a, report, in, application
@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Integrating Reports in Applications First Steps Guide
+# Integrating Reports in Applications (Guide)
 
 This guide targets users who want to build custom reports and, then, present them in applications of their choice. For the purposes of this tutorial, the scenario will deploy the report to the web....? 
 
@@ -64,9 +64,7 @@ Next, you'll need to create the report. For the purposes of this guide, you will
 
 Let's now customize the report a bit. In this step, you'll add a graph to the report header and connect it to data. 
 
-1. To show the report header, right-click outside the report and select __Report Header__.             
-
-1. Add a new SQL Datasource component for the graph with the following query:             
+1. To show the report header, right-click outside the report and select __Report Header__. Add a new SQL DataSource component for the graph with the following query:             
 
     
       ````sql

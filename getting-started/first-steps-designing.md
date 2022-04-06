@@ -1,6 +1,6 @@
 ---
-title: Designing a Report Guide
-page_title: Designing a Report First Steps Guide
+title: Designing Reports (Guide)
+page_title: Designing Reports (Guide)
 description: "Get up and running with the designing process of Telerik Reporting and learn how to create a report, connect it to data, set its header and footer, add some styling, and export the report to PDF."
 slug: telerikreporting/getting-started/first-steps
 tags: telerik, reporting, first, steps, guide, design, a, report
@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Designing a Report First Steps Guide
+# Designing Reports (Guide) 
 
 This guide targets users who need to quickly get up and running with Telerik Reporting and design and export a report. 
 
@@ -143,7 +143,7 @@ After the report header is all set, let's move on to the footer of the report:
 
 1. To add a barcode item, select __Insert__ > __Barcode__ from the bar.             
 
-1. Place the [https://docs.telerik.com/reporting/report-items-barcode-general]() link in the __Value__  field of the __Barcode__.             
+1. Place the [https://docs.telerik.com/reporting/report-items-barcode-general]() link in the __Value__ field of the __Barcode__.             
 
 1. Set the __BackgroundColor__ of the footer to `242, 242, 242`.            
 

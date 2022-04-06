@@ -1,40 +1,30 @@
 ---
-title: Prerequisites and Installation
-page_title: Prerequisites and Installation Approaches
-description: "Learn what the system requirements for working with Telerik Reporting are and read about the available installation approaches."
+title: Installation Approaches
+page_title: Installation Approaches
+description: "Learn about the available installation approaches supported by Telerik Reporting."
 slug: telerikreporting/installation
-tags: telerik, reporting, prerequisites, installation, approaches
+tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, private, feed, visual, studio
 published: True
-position: 1
+position: 2
 ---
 
-# Prerequisites and Installation Approaches
+# Installation Approaches
 
-This article lists the system support options and the information about the available installation approaches for Telerik Reporting. 
+Telerik Reporting provides options for installing the product by [downloading the Control Panel](#downloading-the-control-panel), by [using the MSI installer file](#using-the-msi-file), or [with NuGet](#installing-with-nuget). 
 
-## List of Prerequisites
+## Downloading the Control Panel 
 
-To see the operating system, .NET and IIS, and IDE support options provided by the Telerik Reporting, refer to [the full list of prerequisites](https://www.telerik.com/products/reporting/system-requirements?_ga=2.82321366.1750314063.1648453324-1000548733.1636637425).
+You can install Telerik Reporting by downloading the Control Panel. For the complete instructions, refer to the [Optimizing Use of the Telerik Control Panel](https://www.telerik.com/blogs/optimizing-use-of-the-telerik-control-panel) blog post. 
 
-## Available Installation Approaches 
+## Using the MSI File 
 
-Telerik Reporting supports the following installation approaches:       
-
-* [Downloading the Control Panel](#downloading-the-control-panel)
-* [Installing with the MSI file](#installing-with-msi)
-* [Installing with NuGet](#installing-with-nuget)
-
-### Downloading the Control Panel 
-
-For the complete instructions on downloading and installing the Control Panel, refer to the [Optimizing Use of the Telerik Control Panel](https://www.telerik.com/blogs/optimizing-use-of-the-telerik-control-panel) blog post. 
-
-### Installing with MSI 
-
-The MSI files are intended for an easy installation of a product. The Telerik Reporting MSI file installs the product on your computer in a **Program Files/Progress** folder, automatically creates the necessary virtual folders and projects, and provides all required files for developing with Telerik Reporting.
+You can install Telerik Reporting by using the `.msi` file for automatic product installation. The file installs Telerik Reporting on your computer in a **Program Files/Progress** folder, automatically creates the necessary virtual folders and projects, and provides all required files for developing with Telerik Reporting.
 
 When you download the Telerik Reporting, the wizard for the MSI installation will by default install the product in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder for 32-bit machines, or in the `C:\Program Files\Progress\Telerik Reporting {{site.suiteversion}}` folder for 64-bit machines.
 
-During the MSI installation process, you need to take the following into consideration:
+### Specifics
+
+During the MSI installation process, consider the following:
 
 * Prior to R3 2017, the default installation paths were `C:\Program Files\Telerik\` and `C:\Program Files (x86)\Telerik\` respectively.
   
@@ -45,6 +35,8 @@ During the MSI installation process, you need to take the following into conside
 * The __Downloads__ page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [__General Feedback__](https://www.telerik.com/account/support-tickets/general-feedback) thread. 
 
 * To access the latest Telerik Reporting internal builds, after you log into your Telerik account, navigate to __Latest Internal Build__ under __Downloads__. For internal builds from earlier releases, select the respective Telerik Reporting version.          
+
+### MSI Installation
 
 To install Telerik Reporting through the MSI automatic installer file:         
 
@@ -72,15 +64,17 @@ To install Telerik Reporting through the MSI automatic installer file:
 
   ![](images/installWizard3.png)
 
-### Installing with NuGet
+## Installing with NuGet
 
-The [Telerik Reporting NuGet packages](https://nuget.telerik.com/v3/index.json) are a single ZIP file with the `.nupkg` extension. 
+You can install Telerik Reporting by using the [Telerik Reporting NuGet packages](https://nuget.telerik.com/v3/index.json). The NuGet packages are a single ZIP file with the `.nupkg` extension. 
 
 * The `.nupkg` file contains the libraries for.NET Core projects, the Reporting Engine, and the implementation of the [Reporting REST WebAPI-based service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) where you can use the packages with the standard.NET 4.6.1 framework. 
 
 * The Telerik Reporting NuGet packages do not include design-time support. 
 
 * The legacy https://nuget.telerik.com/nuget server is now deprecated. Make sure to switch to the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client. For more information on how to add a NuGet feed, refer to the [official Microsoft documentation](https://www.visualstudio.com/en-us/docs/package/nuget/consume).
+
+### Adding the Telerik NuGet Feed
 
 To install the Telerik Reporting NuGet packages, add the Telerik NuGet feed to Visual Studio and install the product. The following video demonstrates the steps for adding the Telerik NuGet feed to Visual Studio. If you prefer, however, you can follow the steps that are listed in writing after the video.
 
@@ -95,6 +89,8 @@ To configure the Telerik NuGet Feed in Visual Studio:
 1. Enter a **Name** for the new package source, for example, **Telerik NuGet**.
 
 1. Add the `https://nuget.telerik.com/v3/index.json` URL as a **Source**. Click **OK**.
+
+### Installing Telerik Reporting
 
 After you have successfully added the Telerik NuGet feed as a package source, you need to authenticate your local NuGet instance and install Telerik Reporting:
 

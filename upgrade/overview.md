@@ -73,9 +73,7 @@ You can manually upgrade class library and website projects, and desktop and web
 
    + `<assemblies>`―The Reporting assemblies that are references in the web application. 
 
-1. (For web applications only) Open the `.aspx` or `.master` pages and change the version of the ASP.NET Report Viewer in the `Register` directive. 
-
-1. (For web applications only) Update the HTML5 Report Viewer files in the project. Open the `.cshtml` or `.vbhtml` and layout views, the pure HTML pages or the `.aspx` or `.master` pages, and change the version of the links which point to the following files: 
+1. (For web applications only) Open the `.aspx` or `.master` pages and change the version of the ASP.NET Report Viewer in the `Register` directive. Update the HTML5 Report Viewer files in the project. Open the `.cshtml` or `.vbhtml` and layout views, the pure HTML pages or the `.aspx` or `.master` pages, and change the version of the links which point to the following files: 
 
    + `telerikReportViewer-x.x.x.x(.min).css`―The CSS of the HTML5 Report Viewer where `x.x.x.x` is the HTML5 Report Viewer and Telerik Reporting version (for example, `8.1.14.816`). 
 
@@ -83,9 +81,9 @@ You can manually upgrade class library and website projects, and desktop and web
 
    + `telerikReportViewerTemplate.html`―The default HTML template page of the HTML5 Report Viewer. 
 
-1. (For WPF applications only) Update the references to Telerik UI for WPF and the corresponding binding redirects, if any. For more information, refer to the article on [manually setting up the WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}). Update the XAML resources which correspond to the updated Telerik UI for WPF assemblies.
+   (For WPF applications only) Update the references to Telerik UI for WPF and the corresponding binding redirects, if any. For more information, refer to the article on [manually setting up the WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}). Update the XAML resources which correspond to the updated Telerik UI for WPF assemblies.
 
-1. (For Silverlight applications only) [Update the references to Telerik UI for Silverlight]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}) and the XAML resources which correspond to the updated Telerik UI for Silverlight assemblies.
+   (For Silverlight applications only) [Update the references to Telerik UI for Silverlight]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}) and the XAML resources which correspond to the updated Telerik UI for Silverlight assemblies.
 
 1. Open all report resource files as XML―each `.resx` file appears under the respective report file. Locate all occurrences of a Telerik Reporting Assembly and update the version number to the new one. Unlike the version name (for example, `Q1 2008`), the version number is a technical identifier (for example, `2.5.8.414`). 
 

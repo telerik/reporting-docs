@@ -1,7 +1,7 @@
 ---
 title: Prerequisites and Installation
 page_title: Prerequisites and Installation Approaches
-description: ""
+description: "Learn what the system requirements for working with Telerik Reporting are and read about the available installation approaches."
 slug: telerikreporting/installation
 tags: telerik, reporting, prerequisites, installation, approaches
 published: True
@@ -32,7 +32,7 @@ For the complete instructions on downloading and installing the Control Panel, r
 
 The MSI files are intended for an easy installation of a product. The Telerik Reporting MSI file installs the product on your computer in a **Program Files/Progress** folder, automatically creates the necessary virtual folders and projects, and provides all required files for developing with Telerik Reporting.
 
-When you download the Telerik Reporting, the wizard for the MSI installation will by default install the product in the `C:\Program Files\Progress\` folder for 32-bit machines, or in the `C:\Program Files (x86)\Progress\` folder for 64-bit machines.
+When you download the Telerik Reporting, the wizard for the MSI installation will by default install the product in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder for 32-bit machines, or in the `C:\Program Files\Progress\Telerik Reporting {{site.suiteversion}}` folder for 64-bit machines.
 
 During the MSI installation process, you need to take the following into consideration:
 

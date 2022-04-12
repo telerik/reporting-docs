@@ -15,11 +15,14 @@ navigation:
     getting-started:
         position: 2
         title: "Getting Started"
+    getting-started/installation:
+        title: "Download & Installation"
+        position: 5
     upgrade:
-        position: 4
+        position: 5
         title: "Upgrade"
     designing-reports:
-        position: 5
+        position: 3
         title: "Designing Reports"  
     designing-reports/report-designer-tools:
         position: 2
@@ -250,7 +253,7 @@ navigation:
         position: 10
         title: "Report Book" 
     using-reports-in-applications:
-        position: 6
+        position: 4
         title: "Using reports in applications"
     using-reports-in-applications/display-reports-in-applications:
         position: 2

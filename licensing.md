@@ -16,12 +16,11 @@ Telerik Reporting comes in trial and developer (or commercial) licenses.
 
 Telerik Reporting is available under a 30-day trial license with a full-featured version of the tool—no restrictions! What’s more, you are eligible for complete technical support during your trial period in case you have any questions. 
 
-The free trial licenses of all Telerik products are fully functional and will work for an unlimited time, but will randomly display a copyright message on the page.
+The free trial licenses of all Telerik products are fully functional and will work for an unlimited time, but will randomly display a copyright message on the page. To use the trial version of Telerik Reporting, you need to agree to the [Telerik Reporting End User License Agreement (EULA)](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s).
 
 * To sign up for a free 30-day trial, go [here](https://www.telerik.com/login/reporting).
 * To download the trial version, refer to the [Telerik Reporting Download page](https://www.telerik.com/download). 
 * To download a developer build with a trial license, log into your [Telerik account](https://www.telerik.com/account/).
-* To use the trial version of Telerik Reporting, you need to agree to the [Telerik Reporting End User License Agreement (EULA)](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s).
 
 ## Developer Licenses 
 

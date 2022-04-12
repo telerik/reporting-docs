@@ -54,7 +54,7 @@ If the current application has to be declared as DPI-aware, an additional elemen
 
 # See Also
 
-* [Quickstart Overview]({%slug telerikreporting/quickstart/overview%})
+* [On Telerik Reporting]({%slug on-telerik-reporting%})
 
 * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 

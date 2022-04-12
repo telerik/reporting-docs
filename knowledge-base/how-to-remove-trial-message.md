@@ -3,7 +3,7 @@ title: How to remove trial message
 description: This article explains how to remove the trial message after the license is purchased
 type: how-to
 page_title: How to Remove the Trial Message After the License is Purchased
-slug: 
+slug: how-to-remove-trial-message
 position: 
 tags: how-to-remove-trial-message
 ticketid: 1459034

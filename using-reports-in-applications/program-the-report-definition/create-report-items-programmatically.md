@@ -10,7 +10,11 @@ position: 3
 
 # Create Report Items Programmatically
 
-To create a report item in code, instantiate a report item object, set its properties, and add it to the _Items_ collection of the section where you wish the control to appear. For example, this code will add two __TextBox__ report items to a report:
+
+
+
+To create a report item in code, instantiate a report item object, set its properties, and add it to the Items collection of the section where you wish the control to appear. For example, this code will add two __TextBox__ report items to a report:
+
     
 ````C#
 Telerik.Reporting.Panel panel1 = new Telerik.Reporting.Panel();
@@ -50,6 +54,7 @@ detail.Items.AddRange(New Telerik.Reporting.ReportItemBase() {panel1})
 
 # See Also
  
+
 * [TextBox](/reporting/api/Telerik.Reporting.TextBox)  
 
 * [PictureBox](/reporting/api/Telerik.Reporting.PictureBox)  
@@ -63,3 +68,4 @@ detail.Items.AddRange(New Telerik.Reporting.ReportItemBase() {panel1})
 * [Table](/reporting/api/Telerik.Reporting.Table)  
 
 * [CheckBox](/reporting/api/Telerik.Reporting.CheckBox)
+

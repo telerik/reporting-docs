@@ -10,11 +10,13 @@ position: 6
 
 # Package Report Definition
 
-The [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager) serializes the report definition in XML and with a zip compression packages the definition and its resources. The resources are in their native format and archived for better performance. This way the definition is faster to handle and more compact. This is the default report document format for the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}#standalone-report-designer) and the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}#web-report-designer). 
 
-## Packaging .TRDX report definition
 
-The following sample code snipped demonstrates how to package a predefined .TRDX (XML) report definition:
+The  [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager)          serializes the report definition in XML and with a zip compression packages the definition and its resources.         The resources are in their native format and archived for better performance.         This way the definition is faster to handle and more compact.         This is the default report document format for the [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}).       
+
+## Packaging.TRDX report definition
+
+The following sample code snipped demonstrates how to package a predefined.TRDX (XML) report definition:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromXmlReportSnippet}}
 ````C#
@@ -36,7 +38,7 @@ End Using
 
 ## Packaging CLR report definition
 
-The following sample code snipped demonstrates how to package a predefined CLR (C# or VB) report definition:
+The following sample code snipped demonstrates how to package a predefined CLR report definition:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromClrReportSnippet}}
 ````C#
@@ -58,7 +60,7 @@ End Using
 
 ## Unpackaging
 
-The following sample code snipped demonstrates how to unpackage a predefined .TRDP report definition:
+The following sample code snipped demonstrates how to unpackage a predefined.TRDP report definition:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=UnpackageTrdpSnippet}}
 ````C#
@@ -79,4 +81,8 @@ End Using
 
 # See Also
 
+
+ 
+
 * [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/overview%})
+

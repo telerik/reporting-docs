@@ -158,10 +158,14 @@ USE [master]
 	GO
 	CREATE DATABASE [Reports]
 	CONTAINMENT = NONE
-	ON PRIMARY
-	(NAME = N'Reports', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports.mdf', SIZE = 4096KB, MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB)
+	ON  PRIMARY
+	(NAME = N'Reports', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports.mdf', SIZE = 4096KB ,
+
+	MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB)
 	LOG ON
-	(NAME = N'Reports_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports_log.ldf', SIZE = 1024KB, MAXSIZE = 2048GB, FILEGROWTH = 10%)
+	(NAME = N'Reports_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL11.SQLEXPRESS\MSSQL\DATA\Reports_log.ldf', SIZE = 1024KB
+
+	, MAXSIZE = 2048GB, FILEGROWTH = 10%)
 	GO
 	USE [Reports]
 	GO

@@ -20,14 +20,14 @@ This document provides a brief overview of the different Telerik Report Viewer f
   The HTML5 Viewer is an HTML/CSS/JS client-side widget that doesn't require any assembly references. The viewer operates as a client of the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](https://www.telerik.com/report-server).  
   The HTML5 Viewer is suitable for any web application that works with JavaScript. For some of the most popular web technologies, we provide dedicated wrappers. We have also successfully tested the viewer in the following technologies for which there are no dedicated wrappers:             
                
-   + *Vue.js*. A step-by-step example for integrating the viewer in Vue.js application can be found in the [How to use HTML5 Report Viewer in Vue.js]({%slug how-to-use-html5-viewer-in-vue-js%}) KB article                 
+   + *Vue.js*. A step-by-step example for integrating the viewer in Vue.js application can be found in the [How to use HTML5 Report Viewer in Vue.js]({%slug how-to-use-html5-viewer-in-vue-js%}) KB article 
 
-   + *ASP.NET Core*. The exact implementation depends on the framework version. Use the following resources for the recommended approach:                 
+   + *ASP.NET Core*. The exact implementation depends on the framework version. Use the following resources for the recommended approach: 
 
      + [How to Use HTML5 Report Viewer in an ASP.NET Core in .NET 5 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application%})
      + [How To: Use HTML5 Report Viewer in an ASP.NET Core 3.1 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application%})  
      + [How To: Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})  
-     + [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC](%slug how-to-implement-telerik-reporting-in-asp-net-core-mvc%})  
+     + [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC]({%slug how-to-implement-telerik-reporting-in-asp-net-core-mvc%})  
 
 * [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})  
   The HTML5 ASP.NET MVC Report Viewer is a helper allowing you to configure the HTML5 Viewer via server-side code. The helper renders the JavaScript object and required scripts on the page. The HTML5 ASP.NET MVC Report Viewer is suitable for ASP.NET MVC4|MVC5 projects.             

@@ -1,8 +1,8 @@
 ---
-title: Conditional Page Breaks.
-description: Inserting Page Breaks under certain conditions. 
+title: Conditional Page Breaks
+description: Inserting Page Breaks under certain conditions 
 type: how-to
-page_title: Insering Page Breaks.
+page_title: Insering Page Breaks
 slug: conditional-page-breaks
 res_type: kb
 ---
@@ -24,16 +24,15 @@ res_type: kb
 
 A common report layout includes report groups. Often to visually distinguish these groups, a page break is added to the last group footer section. However, when you have another report section after the group section with **PageBreak=After**, the design behavior is to push the content to a new page. 
 
-This is desired for the different group instances but sometimes you want to render a report footer section immediately after the last group footer. In this case, the most straightforward solution is to apply [Binding](../expressions-bindings) to the first group header section:  
+This is desired for the different group instances but sometimes you want to render a report footer section immediately after the last group footer. In this case, the most straightforward solution is to apply [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the first group header section:  
   
 ## Solution
 
-|  Property path   <br> |   Expression |
+|Property path|Expression|
 | --- | --- |
-|  PageBreak |   = IIF(RowNumber()&gt;1, 'Before', 'None') |
-
+|PageBreak|`= IIF(RowNumber() > 1, 'Before', 'None')`|
   
-[PageBreak enum values](../t-telerik-reporting-pagebreak) are as follows:  
+[PageBreak enum values](/reporting/api/Telerik.Reporting.PageBreak.html) are as follows:  
   
 - None
 
@@ -42,4 +41,3 @@ This is desired for the different group instances but sometimes you want to rend
 - After
 
 - BeforeAndAfter   
-

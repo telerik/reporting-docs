@@ -89,7 +89,7 @@ The additional attributes like __version__, __culture__ and __publicKeyToken__ a
 
 ## Using the ObjectDataSource in the Report
 
-1. Open the Report Designer and [create a new report]({%slug telerikreporting/getting-started/creating-the-demo-report%}). 
+1. Open the Report Designer and [create a new report]({%slug telerikreporting/getting-started/first-steps%}). 
 
 1. Navigate to __Data__ and click __Object Data Source__. 
 

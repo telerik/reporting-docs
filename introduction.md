@@ -1,6 +1,6 @@
 ---
 title: Introduction
-page_title: Introduction to Telerik Reporting! 
+page_title: Introduction 
 description: "Telerik Reporting is a .NET-based platform enabling you to create, design, export, and integrate reports in JavaScript, MVC, WebForms, Angular, React, and Blazor web applications, as well as in WinForms, WPF, WinUI desktop projects."
 slug: telerikreporting/welcome-to-telerik-reporting!
 tags: telerik, reporting, introduction, welcome
@@ -17,6 +17,11 @@ Telerik Reporting provides web and desktop report designers and services, and re
 With Telerik Reporting you can retrieve and process data from relational, multi-dimensional, ORM, or custom data-layer-based data sources. 
 
 End users can view the ready reports in PDF, Microsoft Office Word, Excel, and PowerPoint document formats, or use a dedicated viewer in a Web or .NET desktop application. 
+
+{% if site.has_cta_panels == true %}
+{% include cta-panel-introduction.html %}
+{% endif %}
+
 
 ## Supported Frameworks
 
@@ -73,10 +78,6 @@ The Report Viewers are UI components which are tailored to a specific technology
 |WPF Report Viewer|Desktop|A composite of Telerik UI for WPF controls targeting WPF and WinForms projects. 
 |WinUI Report Viewer|Desktop|A composite of Telerik UI for WinUI controls targeting WinUI3 projects. 
 
-
-{% if site.has_cta_panels == true %}
-{% include cta-panel-introduction.html %}
-{% endif %}
 
 ## About the Demos
 

@@ -16,7 +16,7 @@ The following walkthrough demonstrates how to create a Master-Detail report usin
 
 The master report will contain only a simple listing of product categories.
 
-1. Create a new [Telerik Report Library]({%slug telerikreporting/quickstart/visual-studio-solution-structure%}) to contain the report. 
+1. Create a new [Telerik Report Library]({%slug on-telerik-reporting%}) to contain the report. 
 
 1. The __Choose Report Type__ dialog opens. Select __Band Report Wizard__ and enter a name for the report class. 
 

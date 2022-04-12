@@ -10,20 +10,15 @@ position: 2
 
 # Using Report Events
 
-
-
-
-The __Report__ object exposes these events:         
-
+The __Report__ object exposes these events: 
 
 | Event | Description |
 | ------ | ------ |
-| __ItemDataBinding__ |Fires just before the report is bound to data.|
-| __NeedDataSource__ |Fires when the report does not have data source set.|
-| __ItemDataBound__ |Fires just after the report is bound to data.|
+|[ItemDataBinding](/reporting/api/Telerik.Reporting.ReportItemBase.html#collapsible-Telerik_Reporting_ReportItemBase_ItemDataBinding)|Fires just before the report is bound to data.|
+|[NeedDataSource](/reporting/api/Telerik.Reporting.DataItem.html#collapsible-Telerik_Reporting_DataItem_NeedDataSource)|Fires when the report does not have data source set.|
+|[ItemDataBound](/reporting/api/Telerik.Reporting.ReportItemBase.html#collapsible-Telerik_Reporting_ReportItemBase_ItemDataBound)|Fires just after the report is bound to data.|
 
-
-The example below shows the NeedDataSource event assigning the report __DataSource__ at runtime. This event only fires when the __DataSource__ is null.         
+The example below shows the NeedDataSource event assigning the report __DataSource__ at runtime. This event only fires when the __DataSource__ is __null__. 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportEvents.cs region=NeedDataSourceEventHandlerSnippet}}
 ````C#

@@ -22,6 +22,8 @@ You can install Telerik Reporting by using the `.msi` file for automatic product
 
 When you download the Telerik Reporting, the wizard for the MSI installation will by default install the product in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder for 32-bit machines, or in the `C:\Program Files\Progress\Telerik Reporting {{site.suiteversion}}` folder for 64-bit machines.
 
+Using the MSI installer is the recommended way of installing Telerik Reporting. The MSI installer will automatically register in machine's GAC the Telerik Reporting assemblies needed for Visual Studio Telerik Report Designer, configure the Project- and Item Templates in all Visual Studio instances, and create and populate the AdventureWorks sample database used by our example projects.
+
 ### Specifics
 
 During the MSI installation process, consider the following:

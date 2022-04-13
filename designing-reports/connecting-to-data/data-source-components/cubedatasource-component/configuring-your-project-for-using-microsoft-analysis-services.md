@@ -14,6 +14,8 @@ Before utilizing the __CubeDataSource__ component in your reports you need to co
 
 1. __Install the Microsoft ADOMD.NET client data provider__ : The __CubeDataSource__ component requires the __Microsoft ADOMD.NET__ client data provider to be installed on your machine. The present version of __Telerik Reporting__ is compiled against the __ADOMD.NET__ provider for __SQL Server 2008 R2__. 
 
+	>caution You need to use __Microsoft.AnalysisServices.AdomdClient__ with version __12__ or lower. In _AdomdClient_ version _13.0_ the security configuration has changed and it cannot be used by our runtime. The reason is that the security policy changed and the assembly methods can no longer be accessed from assemblies that have _AllowPartiallyTrustedCallers_ set to _true_, like ours.
+
 1. __Add the required assembly references to your project:__ You need to add the following assembly references to your report class library: 
 
    + __Microsoft.AnalysisServices.AdomdClient__ - this is the __ADOMD.NET__ client data provider assembly which is normally located in the following directory after installation: 
@@ -42,4 +44,4 @@ Before utilizing the __CubeDataSource__ component in your reports you need to co
 	</configuration>
 ````
 
-   Here `<Your Version>` is the actual version of your __Microsoft.AnalysisServices.AdomdClient__ assembly. In the case of a ClassLibrary project containing report definitions, the binding redirects should be applied in Visual Studio configuration file (__devenv.exe.config__).
+   Here `<Your Version>` is the actual version of your __Microsoft.AnalysisServices.AdomdClient__ assembly. It should be either 12 or lower due to the security policy introduced with version 13. In the case of a ClassLibrary project containing report definitions, the binding redirects should be applied in Visual Studio configuration file (__devenv.exe.config__).

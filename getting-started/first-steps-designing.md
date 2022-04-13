@@ -22,7 +22,7 @@ This guide targets users who need to quickly get up and running with Telerik Rep
 
 At the end, you'll be able to achieve the following result. 
 
-.....?? 
+![Demo Report](images/DemoReport.PNG)
 
 For an advanced first-steps scenario on integrating a Telerik Report in an application, refer to the getting started guide on [integrating a report in a web application]({% slug first-steps-integrating-reports %}).
 

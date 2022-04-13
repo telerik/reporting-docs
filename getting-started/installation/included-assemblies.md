@@ -10,7 +10,7 @@ position: 3
 
 # Included Assemblies
 
-This article explains what assemblies are included in the Telerik UI for ASP.NET AJAX installation including the main `Telerik.Web.UI` assemblies, the	[Telerik ZIP library](https://www.telerik.com/products/silverlight/zip-library.aspx), and the Telerik Document processing libraries ([text processing](https://www.telerik.com/products/wpf/words-processing.aspx) and	[spreadsheet processing](https://www.telerik.com/products/wpf/spreadsheet-processing.aspx)).
+This article explains what assemblies are included in the [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) product installation.
 
 ## General Organization
 
@@ -21,8 +21,6 @@ The assemblies come sorted in several folders so that you can use the ones you n
 * If you target `.NET Core`, use the assemblies from the `\Bin\netcoreapp3.1` folder.
 * If you target `.NET 5`, use the assemblies from the `\Bin\net5.0` and `\Bin\net5.0-windows` folders.
 * If you target `.NET 6`, use the assemblies from the `\Bin\net6.0` and `\Bin\net6.0-windows` folders.
-
->important Since .NET 6 is currently available as a Preview, compiling a.NET 6 application requires you to install the latest [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) and use [Visual Studio 2019 Preview](https://visualstudio.microsoft.com/vs/preview/). Alternatively, allow the `Tools/Environment/Preview Features` in Visual Studio 2019 to use the .NET SDK previews. 
 
 ## Main Assemblies
 

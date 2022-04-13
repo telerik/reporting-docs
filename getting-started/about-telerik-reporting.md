@@ -1,6 +1,6 @@
 ---
-title: On Telerik Reporting
-page_title: On Telerik Reporting
+title: About Telerik Reporting
+page_title: About Telerik Reporting
 description: "Learn more about the concepts and logic behind Telerik Reporting."
 slug: on-telerik-reporting
 tags: telerik, reporting, basic, concepts, explanations, logic
@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# On Telerik Reporting 
+# About Telerik Reporting 
 
 Telerik Reporting is an embedded tool for creating and displaying reports in a visually structured and logically grouped way. Telerik reports can be created for web or desktop applications which operate within various web and desktop frameworks.
 

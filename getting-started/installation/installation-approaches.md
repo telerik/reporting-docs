@@ -18,11 +18,11 @@ You can install Telerik Reporting by downloading the Control Panel. For the comp
 
 ## Using the MSI File 
 
-You can install Telerik Reporting by using the `.msi` file for automatic product installation. The file installs Telerik Reporting on your computer in a **Program Files/Progress** folder, automatically creates the necessary virtual folders and projects, and provides all required files for developing with Telerik Reporting.
+You can install Telerik Reporting by using the `.msi` file for automatic product installation. The file installs Telerik Reporting on your computer in a `Program Files/Progress` folder, automatically creates the necessary virtual folders and projects, and provides all required files for developing with Telerik Reporting.
 
 When you download the Telerik Reporting, the wizard for the MSI installation will by default install the product in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder for 32-bit machines, or in the `C:\Program Files\Progress\Telerik Reporting {{site.suiteversion}}` folder for 64-bit machines.
 
-Using the MSI installer is the recommended way of installing Telerik Reporting. The MSI installer will automatically register in machine's GAC the Telerik Reporting assemblies needed for Visual Studio Telerik Report Designer, configure the Project- and Item Templates in all Visual Studio instances, and create and populate the AdventureWorks sample database used by our example projects.
+Using the MSI installer is the recommended way for installing Telerik Reporting. The MSI installer will automatically register the Telerik Reporting assemblies needed for Visual Studio Telerik Report Designer in the machine GAC, configure the Project and Item Templates in all Visual Studio instances, and create and populate the AdventureWorks sample database used by the sample projects.
 
 ### Specifics
 
@@ -47,6 +47,8 @@ To install Telerik Reporting through the MSI automatic installer file:
 1. From the next page, download the MSI installation and the documentation files and download the automatic installation MSI file. The source code is available for download only for commercial-license holders. 
 
 1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog which appears after you execute the MSI file, confirm that you have read and accepted the License Agreement. 
+
+	![](images/installWizard1.png)
 
 1. In the dialog that opens, select the features you require. 
 

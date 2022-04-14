@@ -42,7 +42,7 @@ Let's start with the installation of the Telerik Reporting controls, services, a
 
 1. In the __Customization dialog__ of the Wizard, click __Examples Setup__ to set the examples and the used connection string. 
 
-  The examples use the MS SQL Server AdventureWorks database which you will need later for the report. 
+  The examples use the MS SQL Server AdventureWorks sample database which you will need later for the report. 
 
 1. In the __Samples Database Setup__ dialog of the Wizard, select your __Database Server__ and the authentication for the connection. 
 
@@ -78,7 +78,7 @@ So, first, let's connect to the data and, then, you'll create the table to prese
 
 1. Click __Next__ > __Use as a shared connection__ > __Next__. 
 
-1. On the screen that loads, fill in the __Select Statement__ field with the following query. The query will extract only the first 14 employees and they will be listed in ascending order according to their `id`, that is, the employee with an `id=1` will be the first one, the employee with an `id=2` will come second, and so on. 
+1. On the screen that loads, fill in the __Select Statement__ field with the query below. The query will extract only the first 14 employees and they will be listed in ascending order according to their `id`, that is, the employee with an `id=1` will be the first one, the employee with an `id=2` will come second, and so on. 
     
 	````sql
 SELECT
@@ -92,21 +92,21 @@ SELECT
 	ORDER BY 1 ASC
 ````
 
-1. Click __Next__ if you want to execute the query, and on the next screen click the button __Execute Query...__ to preview the result. Click __Finish__. Alternatively, you may click directly __Finish__ on the previous screen to skip the query result preview.
+1. Click __Next__ to execute the query and the __Execute Query...__ button on the next screen to preview the result. Then, click __Finish__. 
 
 1. From the property grid, change the name of the data source to `tableDataSource` so you can later refer it and render its data in the report. 
 
-1. Select the __datailSection__. From the toolbar, select __Insert__, then __Table__ > __Table Wizard__ > select __tableDataSource__ under _Data Sources_. Click __Next__.
+1. Select the __datailSection__. From the toolbar, go to __Insert__ > __Table__ > __Table Wizard__. Under __Data Sources__, select __tableDataSource__ and click __Next__.
 
 1. On the screen that loads, mark all columns and drag them to the __Table Columns__. Click __Next__. 
 
-1. From the window that opens, select a predefined style for your table, for example, "Office". Click __Next__ and __Finish__. 
+1. From the window that opens, select a predefined style for your table, for example, __Office__. Click __Next__ and __Finish__. 
 
 ## Step 4: Style the Table and Set Its Title 
 
-Now, you may add some styling to the table and define its title. Select the table and:
+Now, you may add some styling to the table and define its title. 
 
-1. Apply the following __Styling__ to the table: 
+1. Select the table and apply the following __Styling__ to it: 
 
    + Set __BackgroundColor__ and __BorderColor__ > __Default__ to `34, 181, 115`. 
 
@@ -116,7 +116,7 @@ Now, you may add some styling to the table and define its title. Select the tabl
 
 1. To set the title of the table, add a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) above it in the __detailSection__ and set its __Value__ to `Employees`. Center the text by setting __Style__ > __TextAlign__ to `Center`.
 
-1. Let's insert two [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) on the sides of the title: set the __ShapeType__ to `Horizontal Line` and the __Color__ to `Silver`. 
+1. Let's insert two [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) on the sides of the title. Set the __ShapeType__ to `Horizontal Line` and the __Color__ to `Silver`. 
 
 ## Step 5: Set the Page Header and Footer
 
@@ -128,7 +128,7 @@ In this step, you'll define and style the page header and footer of your report.
 
 1. Set the __Value__ to `Telerik`. Add one more TextBoxes with text `Demo Report`. 
 
-1. Select the two textboxes. You may hold the 'Shift' or 'Ctrl' key and select them with the left mouse button. From the property grid, make the following settings: 
+1. Choose the two textboxes by holding the `Shift` or `Ctrl` key while selecting with the left mouse button. From the property grid, apply the following settings: 
 
    + Set __Style__ > __Font__ > __Name__ to `Segoe UI`. 
 
@@ -142,7 +142,7 @@ After the report header is all set, let's move on to the footer of the report:
 
 1. Click __pageFooterSection__. Add a Textbox which will display the current date and time. 
 
-1. Set the __Value__ property __Expression__ to the `=Now()` [Date and Time function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%}). 
+1. Set the __Expression__ of the __Value__ property to the `=Now()` [Date and Time function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%}). 
 
 1. To add a barcode item, select __Insert__ > __Barcode__ from the toolbar. 
 
@@ -154,15 +154,16 @@ After the report header is all set, let's move on to the footer of the report:
 
 Here you go with a nice and neat report that provides some basic data to present. If you need to share it, now is the time to export it. For the purposes of this guide, you'll export it to PDF: 
 
-1. Go to the __Home__ toolbar item and click on __Preview__. The manu will change.
+1. Go to the __Home__ toolbar item and click __Preview__. 
 
-1. Click on __Export__ and select __Acrobat (PDF) file__.
+1. Click __Export__ and select __Acrobat (PDF) file__.
 
-1. Save your report document from the popped-up dialog.
+1. Save your report document from the pop-up dialog.
 
 That was it! Now you are ready to deep-dive into Telerik Reporting and take full advantage of its more advanced functionalities!
 
 ## Next Steps
 
-* [Advanced Scenarios: Integrating Reports in Applications First Steps Guide]()
+* [First Steps Guide: Integrating Reports in Applications]({% slug first-steps-integrating-reports %})
 * [Designing Reports Overview]({% slug telerikreporting/designing-reports/overview %})
+* [About Telerik Reporting]({% slug on-telerik-reporting %})

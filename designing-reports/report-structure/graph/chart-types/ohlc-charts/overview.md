@@ -22,11 +22,15 @@ The look of the OHLC series markers can be changed in order to cover the two mos
 
 * __Candlestick marker__ 
 
-  ![ohlc-series-candlestick-marker](images/Graph/ohlc-series-candlestick-marker.png)The body of the candlestick marker represents the open and close values of the stock price. The vertical lines (called *shadows* or *wicks*) represent the high and low values. Based only on the shape of the marker, it is hard to tell if the stock price is rising or falling for the given period. In this case the marker body can be colored using data point's conditional formatting rules. 
+  ![ohlc-series-candlestick-marker](images/Graph/ohlc-series-candlestick-marker.png)
+  
+  The body of the candlestick marker represents the open and close values of the stock price. The vertical lines (called *shadows* or *wicks*) represent the high and low values. Based only on the shape of the marker, it is hard to tell if the stock price is rising or falling for the given period. In this case the marker body can be colored using data point's conditional formatting rules. 
 
 * __Bar marker__ 
 
-  ![ohlc-series-bar-marker](images/Graph/ohlc-series-bar-marker.png)The bar markers represent the information about OHLC levels of the price using only lines. The low and high values are shown using a vertical line, and the open and close values are shown with a horizontal lines. The horizontal line on the left side of the vertical line represents the opening price and the line on the right side represents the closing price. Although the bar marker doesn't need to be colored to understand the trend of the price, but additional conditional formatting can be applied for better chart reading. 
+  ![ohlc-series-bar-marker](images/Graph/ohlc-series-bar-marker.png)
+  
+  The bar markers represent the information about OHLC levels of the price using only lines. The low and high values are shown using a vertical line, and the open and close values are shown with a horizontal lines. The horizontal line on the left side of the vertical line represents the opening price and the line on the right side represents the closing price. Although the bar marker doesn't need to be colored to understand the trend of the price, but additional conditional formatting can be applied for better chart reading. 
 
 
 # See Also

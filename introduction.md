@@ -22,6 +22,14 @@ End users can view the ready reports in PDF, Microsoft Office Word, Excel, and P
 {% include cta-panel-introduction.html %}
 {% endif %}
 
+## Supported Platforms 
+
+Telerik Reporting helps you create reports that run on the following operating systems: 
+
+* Windows
+* Linux
+* MacOS
+
 
 ## Supported Frameworks
 

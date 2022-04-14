@@ -32,18 +32,19 @@ The following prerequisites are required for accomplishing the scenario in this 
 
 The steps to accomplish the installation of the Telerik Reporting controls and services are fully described in the [first steps guide on designing the Telerik report]({%slug telerikreporting/getting-started/first-steps%}#step-1-install-telerik-reporting).
 
-## Step 2: Create, Populate and Style the Sample Report
+## Step 2: Create, Populate, and Style the Sample Report
 
 The steps to create, populate with data and style the report are fully described in the steps 2 to 5 from the article [first steps guide on designing the Telerik report]({%slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report).  
-Save the report as __DemoReport.trdp__.
+
+In addition, you will only need to save the report as `DemoReport.trdp`.
  
 ## Step 3: Integrate and Display the Report 
 
 In this final step, you'll integrate your report in an ASP.NET Core web application in .NET 6 and display the project with the HTML5 Report Viewer. 
 
-1. Open __Visual Studio 2022__. From the Start window choose __Create a new project__. 
+1. Open __Visual Studio 2022__. From the __Start__ window, choose __Create a new project__. 
 
-1. Select __ASP.NET Core Web App__. Name it __TelerikWebApp__. In the __Additional information__ window select __.NET6.0(Long-term support)__ and leave the rest of the settings as default. Finally, click __Create__.
+1. Select __ASP.NET Core Web App__ and name it __TelerikWebApp__. In the __Additional information__ window, select __.NET6.0(Long-term support)__ and leave the rest of the settings as default. Click __Create__.
 
 1. Right-click the project. Select __Add__ > __New Item__ > __Telerik HTML5 Report Viewer Page [version]__. Name the file `index.html`. 
 
@@ -51,17 +52,17 @@ In this final step, you'll integrate your report in an ASP.NET Core web applicat
 
 	![Rest Srervice](images/RestSrervice.PNG)
 
-1. Click __Sample report definition__. Click __Next__ > __Finish__.
+1. Click __Sample report definition__ and, then, __Next__ > __Finish__.
 
-1. Run the project to make sure everything works as expected. Navigate ti the `index.html` page to make sure you see the sample report.
+1. Run the project to make sure everything works as expected. Navigate to the `index.html` page to make sure you see the sample report.
 
-1. Lets add our own report _DemoReport.trdp_ to the application. Note that the Visual Studio Item Template has created a folder `Reports` in your application. The default sample report is there, _SampleReport.trdp_. To add the _DemoReport.trdp_ in the same folder, right-click over the folder, select __Add__ > __Existing Item__ and navigate to our report.
+1. Let's add your own `DemoReport.trdp` report to the application. Note that the Visual Studio Item Template has created a `Reports` folder in your application which contains a default `SampleReport.trdp` report. To add the `DemoReport.trdp` to the same folder, right-click the folder, select __Add__ > __Existing Item__ and navigate to your report.
 
-1. Open the `index.html` file that hosts the Html5 Report Viewer and can be found in the `wwwroot` folder. Find the `reportSource` property of the element `#reportViewer1` set up in the `document.ready` event handler of the page. Change its inner property `report` from `"SampleReport.trdp"` to `"DemoReport.trdp"`.
+1. Open the `index.html` file that hosts the HTML5 Report Viewer in the `wwwroot` folder. Find the `reportSource` property of the `#reportViewer1` element that is set up in the `document.ready` event handler of the page. Change its inner `report` element from `"SampleReport.trdp"` to `"DemoReport.trdp"`.
 
-1. Now, you have to include the connection string in the `appsettings.json` file because we added named connection string to the report. If the report uses an embedded connection, you do not have to add it again to the Visual Studio project. 
+1. Now, you have to include the connection string in the `appsettings.json` file because you added a named connection string to the report. If the report uses an embedded connection, you do not have to add it again to the Visual Studio project. 
 
-	The JSON configuratino file looks similar to the following: 
+	The JSON configuration file looks similar to the following: 
     
 	````json
 {
@@ -82,7 +83,7 @@ In this final step, you'll integrate your report in an ASP.NET Core web applicat
 	}
 ````
 
-	Here is how our viewer should display the report upon runing the project and navigating to the `index.html` page in the browser:
+	The following image shows how the viewer will display the report upon running the project and navigating to the `index.html` page in the browser.
 	
 	![Demo Report Preview](images/DemoReportInViewer.PNG)
 

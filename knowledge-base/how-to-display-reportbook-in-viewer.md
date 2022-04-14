@@ -22,10 +22,10 @@ res_type: kb
 
 
 ## Description
-This article demonstrates the three approaches for displaying ReportBook in an application. It is applicable for any application type. Depending on the report viewer, there might be different approaches for setting the viewer's ReportSource, all of them can be reviewed in [How to: Set ReportSource for Report Viewers](../report-sources-viewers) help article.
+This article demonstrates the three approaches for displaying ReportBook in an application. It is applicable for any application type. Depending on the report viewer, there might be different approaches for setting the viewer's ReportSource, all of them can be reviewed in [How to: Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}) help article.
 
 ## Solution
-1. ReportBook can be created in Standalone report designer first using Report Book report template. The output will be a .TRBP file that can be passed to report viewer's report source as [UriReportSource](../t-telerik-reporting-urireportsource).
+1. ReportBook can be created in Standalone report designer first using Report Book report template. The output will be a .TRBP file that can be passed to report viewer's report source as [UriReportSource](/reporting/api/Telerik.Reporting.UriReportSource).
 
   ``` JavaScript
   // HTML5 Report Viewer example initialization
@@ -33,9 +33,10 @@ This article demonstrates the three approaches for displaying ReportBook in an a
       report: "ReportBook1.trbp"
   }
   ```
-2. Create a ReportBook by inheriting *Telerik.Reporting.ReportBook* class and adding the required ReportSources to it. An example of it is provided in ReportBook.cs file located in product installation folder *(C:\Program Files (x86)\Progress\Telerik Reporting VERSION\Examples\CSharp\ReportLibrary\ReportBook)*. Created ReportBook can be passed to the report viewer's report source as [TypeReportSource](../t-telerik-reporting-typereportsource).
+  
+2. Create a ReportBook by inheriting *Telerik.Reporting.ReportBook* class and adding the required ReportSources to it. An example of it is provided in ReportBook.cs file located in product installation folder *(C:\Program Files (x86)\Progress\Telerik Reporting VERSION\Examples\CSharp\ReportLibrary\ReportBook)*. Created ReportBook can be passed to the report viewer's report source as [TypeReportSource](/reporting/api/Telerik.Reporting.TypeReportSource).
 
-3. *(not recommended)* ReportBook can be created at run-time: [How to: Create a Report Book at run-time](../designing-reports-reportbook-creating-reportbook-run-time). This approach is only valid when you need to create/modify report definitions at run-time. The created instance of the ReportBook can be passed to the viewer's report source using [InstanceReportSource](../t-telerik-reporting-instancereportsource). This approach relies on [custom report resolver logic](../telerik-reporting-rest-custom-report-resolver) to add the reports into the report book and return the new instance of the report book. For example:
+3. *(not recommended)* ReportBook can be created at run-time: [How to: Create a Report Book at run-time]({%slug telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time%}). This approach is only valid when you need to create/modify report definitions at run-time. The created instance of the ReportBook can be passed to the viewer's report source using [InstanceReportSource](/reporting/api/Telerik.Reporting.InstanceReportSource). This approach relies on [custom report resolver logic]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%}) to add the reports into the report book and return the new instance of the report book. For example:
 
   ``` C#
   public class MyReportSourceResolver : IReportSourceResolver

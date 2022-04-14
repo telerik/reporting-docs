@@ -22,6 +22,8 @@ You can install Telerik Reporting by using the `.msi` file for automatic product
 
 When you download the Telerik Reporting, the wizard for the MSI installation will by default install the product in the `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}` folder for 32-bit machines, or in the `C:\Program Files\Progress\Telerik Reporting {{site.suiteversion}}` folder for 64-bit machines.
 
+Using the MSI installer is the recommended way of installing Telerik Reporting. The MSI installer will automatically register in machine's GAC the Telerik Reporting assemblies needed for Visual Studio Telerik Report Designer, configure the Project- and Item Templates in all Visual Studio instances, and create and populate the AdventureWorks sample database used by our example projects.
+
 ### Specifics
 
 During the MSI installation process, consider the following:
@@ -34,35 +36,35 @@ During the MSI installation process, consider the following:
 
 * The __Downloads__ page lists previously downloaded products. For any missing products or product versions, contact the Sales team through the support ticketing system by submitting a [__General Feedback__](https://www.telerik.com/account/support-tickets/general-feedback) thread. 
 
-* To access the latest Telerik Reporting internal builds, after you log into your Telerik account, navigate to __Latest Internal Build__ under __Downloads__. For internal builds from earlier releases, select the respective Telerik Reporting version.          
+* To access the latest Telerik Reporting internal builds, after you log into your Telerik account, navigate to __Latest Internal Build__ under __Downloads__. For internal builds from earlier releases, select the respective Telerik Reporting version. 
 
 ### MSI Installation
 
-To install Telerik Reporting through the MSI automatic installer file:         
+To install Telerik Reporting through the MSI automatic installer file: 
 
-1. Log into your [Telerik account](https://www.telerik.com/account). Click the __Downloads__ tab to view the available trial and commercial products and select __Telerik Reporting__.             
+1. Log into your [Telerik account](https://www.telerik.com/account). Click the __Downloads__ tab to view the available trial and commercial products and select __Telerik Reporting__. 
 
-1. From the next page, download the MSI installation and the documentation files and download the automatic installation MSI file. The source code is available for download only for commercial-license holders.             
+1. From the next page, download the MSI installation and the documentation files and download the automatic installation MSI file. The source code is available for download only for commercial-license holders. 
 
-1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog which appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.               
+1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog which appears after you execute the MSI file, confirm that you have read and accepted the License Agreement. 
 
-1. In the dialog that opens, select the features you require.             
+1. In the dialog that opens, select the features you require. 
 
-   + If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the __Examples__  dialog option will be installed but the configuration files for the application will not have valid connection strings. However, you can still access the working demos on the [Telerik Reporting Demos page](http://demos.telerik.com/reporting).                 
+	+ If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the __Examples__ dialog option will be installed but the configuration files for the application will not have valid connection strings. However, you can still access the working demos on the [Telerik Reporting Demos page](http://demos.telerik.com/reporting). 
 
-   + To set up the examples and the used connection string, select __Examples Setup__. All local SQL Server 2005+ instances are supported.                 
+	+ To set up the examples and the used connection string, select __Examples Setup__. All local SQL Server 2005+ instances are supported. 
 
-   + The examples use the MS SQL Server [AdventureWorks database](http://msdn.microsoft.com/en-us/library/ms124659%28SQL.100%29.aspx). Unless already available on your machine, the AdventureWorks database will also be deployed locally.                 
+	+ The examples use the MS SQL Server [AdventureWorks database](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008/ms124659(v=sql.100)). Unless already available on your machine, the AdventureWorks database will also be deployed locally. 
 
-   + Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to __[InstallDir]/Examples/Data/AdventureWorks OLTP__. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the CVS data files which are in the same folder as the SQL script file.                   
+	+ Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to __[InstallDir]/Examples/Data/AdventureWorks OLTP__. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the CSV data files which are in the same folder as the SQL script file. 
 
-  ![](images/installWizard2.png)
+	![](images/installWizard2.png)
 
 1. (If __Examples Setup__ was selected) In the __Setup Wizard__ dialog, select your __Database Server__ and the authentication for the connection. The Wizard detects all running instances and lists them in the input field. 
 
-   > To enable the Wizard to detect all running SQL Server instances, run the [SQL Server Browser Service](http://technet.microsoft.com/en-us/library/ms181087(v=sql.105).aspx). 
+	> To enable the Wizard to detect all running SQL Server instances, run the [SQL Server Browser Service](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms181087(v=sql.105)). 
 
-  ![](images/installWizard3.png)
+	![](images/installWizard3.png)
 
 ## Installing with NuGet
 
@@ -84,7 +86,7 @@ To configure the Telerik NuGet Feed in Visual Studio:
 
 1. Open Visual Studio and go to **Tools** > **NuGet Package Manager** > **Package Manager Settings**.
 
-1. Select **Package Sources** and then click the **+** button to add a new package source.
+1. Select **Package Sources** and then click the `+` button to add a new package source.
 
 1. Enter a **Name** for the new package source, for example, **Telerik NuGet**.
 

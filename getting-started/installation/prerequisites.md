@@ -1,14 +1,17 @@
 ---
-title: System Requirements
-page_title: System Requirements
-description: "Learn what the system requirements for working with Telerik Reporting are."
+title: List of Prerequisites
+page_title: List of Prerequisites
+description: "Check the system requirements for working with Telerik Reporting and get information about the provided .NET, IIS, and IDE support."
 slug: system-requirements
 tags: telerik, reporting, prerequisites, system, requirements
 published: True
 position: 1
 ---
 
-# System Requirements
+# Prerequisites
 
-To see the operating system, .NET and IIS, and IDE support options provided by the Telerik Reporting, refer to [the full list of prerequisites](https://www.telerik.com/products/reporting/system-requirements?_ga=2.82321366.1750314063.1648453324-1000548733.1636637425).
+This article lists the operating system, .NET, IIS, and IDE support provided by Telerik Reporting.
 
+* [Operating system support](https://www.telerik.com/products/reporting/system-requirements)
+* [.NET and IIS support](https://www.telerik.com/products/reporting/system-requirements)
+* [IDE support](https://www.telerik.com/products/reporting/system-requirements)

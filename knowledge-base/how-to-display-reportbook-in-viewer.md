@@ -38,12 +38,12 @@ This article demonstrates the three approaches for displaying ReportBook in an a
 3. *(not recommended)* ReportBook can be created at run-time: [How to: Create a Report Book at run-time](../designing-reports-reportbook-creating-reportbook-run-time). This approach is only valid when you need to create/modify report definitions at run-time. The created instance of the ReportBook can be passed to the viewer's report source using [InstanceReportSource](../t-telerik-reporting-instancereportsource). This approach relies on [custom report resolver logic](../telerik-reporting-rest-custom-report-resolver) to add the reports into the report book and return the new instance of the report book. For example:
 
   ``` C#
-  public class MyResolver : IReportResolver
+  public class MyReportSourceResolver : IReportSourceResolver
   {
-      public ReportSource Resolve(string reportId)
+      public ReportSource Resolve(string reportId, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
       {
           // Creating a new report book
-          var reportBook = new MyReportBook();
+          var reportBook = new ReportBook();
 
           //Add first report
           var firstReportSource = new TypeReportSource();
@@ -72,6 +72,6 @@ Then go to ReportsController.cs and change the resolver:
       HostAppId = "Html5App",
       Storage = new FileStorage(),
 
-      ReportResolver = new MyResolver()
+      ReportSourceResolver = new MyReportSourceResolver()
   };
   ```

@@ -105,5 +105,5 @@ to be loaded before Kendo All:
 
 ## See Also
 
-* [How to Create a Custom Parameter Editor](%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%}) in the Html5 Report Viewer
+* [How to Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%}) in the Html5 Report Viewer
 

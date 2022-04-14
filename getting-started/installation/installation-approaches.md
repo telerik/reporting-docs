@@ -48,6 +48,8 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog which appears after you execute the MSI file, confirm that you have read and accepted the License Agreement. 
 
+	![](images/installWizard1.png)
+
 1. In the dialog that opens, select the features you require. 
 
 	+ If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the __Examples__ dialog option will be installed but the configuration files for the application will not have valid connection strings. However, you can still access the working demos on the [Telerik Reporting Demos page](http://demos.telerik.com/reporting). 

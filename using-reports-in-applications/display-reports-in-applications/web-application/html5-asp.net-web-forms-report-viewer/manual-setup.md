@@ -16,7 +16,7 @@ This tutorial shows how to use HTML5 ASP.NET Web Forms Report Viewer in ASP.NET 
 
 * Review the HTML5 Report Viewer [System Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}). 
 
-* Copy of the "Product Catalog.trdx" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__ in the folder used by the  [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver) in the Reporting REST service implementation. 
+* Copy of the "Product Catalog.trdx" report file from __[TelerikReporting_InstallDir]\ReportDesigner\Examples__ in the folder used by the  [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver) in the Reporting REST service implementation. 
 
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file of the project hosting the Reporting REST service: 
     
@@ -48,7 +48,7 @@ The following steps produce a view with settings similar to these of the local W
 
    + __Newtonsoft.Json, Version 9.0.0.0 or higher__ 
    
-   The Telerik Reporting assemblies may be found by default in the folder [TelerikReporting_InstallDir]\Bin__. 
+   The Telerik Reporting assemblies may be found by default in the folder __[TelerikReporting_InstallDir]\Bin__. 
 
    >Without setting Telerik Reporting references' Copy Local to true the assemblies may not be loaded correctly on running the application.
 
@@ -126,7 +126,7 @@ The following steps produce a view with settings similar to these of the local W
 
 1. Configure the HTML5 ASP.NET Web Forms Report Viewer ReportSource using Visual Studio Property Grid. For this you can use the "Product Catalog.trdp" report file (Prerequisites). 
 
-    >If you use a UriReportSource, the Identifier must point to a TRDP/TRDX file's path that will be mapped to the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver) in the Reporting REST service implementation. 
+    >If you use a UriReportSource, the Identifier must point to a TRDP/TRDX file's path that will be mapped to the folder used by the [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver) in the Reporting REST service implementation. 
 
     >note Verify the modified settings are written in the markup. If not, the viewer will use the default settings visible in Visual Studio Property Grid. 
 

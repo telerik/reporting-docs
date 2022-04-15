@@ -58,7 +58,9 @@ Additionally, the Standalone Report Designer includes the following helpful elem
 
 * __Tooltip__ : This is a UI element that includes various buttons that are designed to ease you while you design reports. The __Tooltip__, which is shown on the image below, is placed in the lower-left corner of the design surface. 
 
-  ![report-designer-toolstrip](images/Designer/report-designer-toolstrip.png)You will find the following buttons in the __Tooltip__ :
+  ![report-designer-toolstrip](images/Designer/report-designer-toolstrip.png)
+  
+  You will find the following buttons in the __Tooltip__ :
 
    + __Zoom__ - the combo box enables you to easily specify the zoom percentage in which you see the design surface. You can do that by holding the Ctrl key and use the mouse wheel to zoom as well. 
 

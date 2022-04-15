@@ -34,7 +34,9 @@ The Telerik Report Designer has the following elements:
 
 * All the buttons in the toolstip, placed at the lower left corner of the designer, are designed to ease you in your Report Designing experience. 
 
-  ![report-designer-toolstrip](images/Designer/report-designer-toolstrip.png)They toggle various different options that help in aligning, snapping and stretching the report items and also adjust different designer settings.
+  ![report-designer-toolstrip](images/Designer/report-designer-toolstrip.png)
+  
+  They toggle various different options that help in aligning, snapping and stretching the report items and also adjust different designer settings.
 
    + __Zoom__ - the combo box enables you to easily specify the zoom percentage in which you see the design surface. You can do that by holding the Ctrl key and use the mouse wheel to zoom as well. 
 

@@ -98,9 +98,10 @@ This next set of steps ties both reports together using a SubReport to display t
 
 1. Click the __OK__ button to close the parameters dialog and click __OK__ once again to close the Report Source dialog. 
 
-  ![](images/MasterDetail0014.png)Click the Preview button to preview the MasterReport. Notice that product numbers and names from the detail report display under each product category from the master report. 
+  ![](images/MasterDetail0014.png)
+  
+  Click the Preview button to preview the MasterReport. Notice that product numbers and names from the detail report display under each product category from the master report. 
 
   ![](images/MasterDetail0016.png)
 
->The same report layout can be created with the Standalone Report Designer, where sub reports can be specified by path to a TRDX file or by directly placing the sub report's XML in the provided SubReport.ReportSource editor.
-
+>note The same report layout can be created with the Standalone Report Designer, where sub reports can be specified by path to a TRDX file or by directly placing the sub report's XML in the provided SubReport.ReportSource editor.

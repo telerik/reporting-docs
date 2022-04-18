@@ -29,7 +29,7 @@ The following table lists the device information settings for rendering in PDF f
 | ------ | ------ | ------ |
 |ComplianceLevel|String|The PDF/A compliance level. The supported values are:<ul><li>__None__</li><li>__PDF/A-1b__</li><li>__PDF/A-2b__</li><li>__PDF/A-3b__</li></ul>Default value: __None__. If EnableAccessibility is set to True, due to incompatibility the ComplianceLevel metadata is ignored.|
 |EnableAccessibility|Boolean|Determines if the PDF will be generated in accordance to [PDF/UA (ISO standard 14289-1)](https://en.wikipedia.org/wiki/PDF/UA) specification.|
-|SignCertFilename|String|The name of a certificate file. Absolute and relative paths are supported. You need to reference a 'pfx' file. The reason is that a password related to the certificate file is required and it can be embedded in a 'pfx' but not in a 'cer' file.|
+|SignCertFilename|String|The name of a certificate file. Absolute and relative paths are supported.<br/>You need to reference a 'pfx' file. The reason is that a password related to the certificate file is required and it can be embedded in a 'pfx' but not in a 'cer' file.|
 |SignCertPassword|String|The password required to access the X.509 certificate data.|
 |SignLocation|String|(Optional) The CPU host name or physical location of the signing.|
 |SignReason|String|(Optional) The reason for the signing, such as (I agree …).|

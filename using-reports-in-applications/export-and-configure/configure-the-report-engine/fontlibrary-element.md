@@ -31,15 +31,22 @@ The following sections describe attributes, child elements, and parent elements.
 |   |   |
 | ------ | ------ |
 |Attributes| __useDefaultLocations__ - determines if the system's default font locations to be included in the search. On Linux machines these folders are `/usr/share/fonts/truetype/` and `/usr/local/share/fonts`. On macOS machines the folder is `/Library/Fonts`.<br/>Default value: __true__.|
-|Child Elements|__add__ - Optional element. Adds a font location to the collection.|
+|Child Elements|__fontLocations__ - Optional element. Adds collection with font locations.|
 |Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the .NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
+
+>caption `<fontLocations>` element 
+|   |   |
+| ------ | ------ |
+|Attributes|No attributes are defined for this element.|
+|Child elements|__add__ - Optional element. Adds a font location to the collection.|
+|Parent element|__fontLibrary__|
 
 >caption `<add>` element 
 |   |   |
 | ------ | ------ |
-|Attribute|<table><colgroup><col span="1" style="width: 15%;"><col span="1" style="width: 85%;"></colgroup><tbody><tr><tr><td><strong>path</strong></td><td>Required attribute. Specifies the path to a fonts folder. The path can be absolute or relative to the current application folder.</td></tr><tr><td><strong>searchSubfolders</strong></td><td>Required attribute. Determines if the subfolders of the specified path will be recursively traversed. </td></tr></tbody></table>|
+|Attributes|<table><colgroup><col span="1" style="width: 15%;"><col span="1" style="width: 85%;"></colgroup><tbody><tr><tr><td><strong>path</strong></td><td>Required attribute. Specifies the path to a fonts folder. The path can be absolute or relative to the current application folder.</td></tr><tr><td><strong>searchSubfolders</strong></td><td>Required attribute. Determines if the subfolders of the specified path will be recursively traversed. </td></tr></tbody></table>|
 |Child elements|None|
-|Parent element|__fontLibrary__|
+|Parent element|__fontLocations__|
 
 ## Example
 

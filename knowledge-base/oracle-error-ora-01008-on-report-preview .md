@@ -3,7 +3,7 @@ title: Oracle error ORA-01008 - Not all variables bound
 description: Oracle error ORA-01008 - Not all variables bound 
 type: troubleshooting
 page_title: Oracle error ORA-01008 - Not all variables bound 
-slug: oracle-error-ora-01008-on-report-preview 
+slug: oracle-error-ora-01008-on-report-preview
 ticketid: 1526844, 1554614
 res_type: kb
 ---
@@ -24,17 +24,16 @@ There are three approaches that can be taken in this case:
    
    ````XML
 <oracle.manageddataaccess.client>
-    <version number="*">
-        <settings>
-            <setting name="BindByName" value="True"/>
-        </settings>
-    </version>
-</oracle.manageddataaccess.client>
+       <version number="*">
+           <settings>
+               <setting name="BindByName" value="True"/>
+           </settings>
+       </version>
+   </oracle.manageddataaccess.client>
 ````
 
 
->important The third approach is **not** recommended because the types in [System.Data.OracleClient](https://docs.microsoft.com/en-us/dotnet/api/system.data.oracleclient) are deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/oracle-and-adonet).
-
+   >important The third approach is **not** recommended because the types in [System.Data.OracleClient](https://docs.microsoft.com/en-us/dotnet/api/system.data.oracleclient) are deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/oracle-and-adonet).
 
 3. Since the issue is only present in the **Oracle.ManagedDataAccess** data provider, switching to the deprecated **System.Data.OracleClient** data provider may also resolve the issue. 
 

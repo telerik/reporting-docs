@@ -81,7 +81,7 @@ XML-based configuration file:
 ...
     <Telerik.Reporting>
         <privateFonts>
-        <add fontFamily="Courier New" path="CourBI.ttf" fontStyle="Bold, Italic" />
+            <add fontFamily="Courier New" path="CourBI.ttf" fontStyle="Bold, Italic" />
             <add fontFamily="ubuntu" path="Ubuntu-R.ttf" />
             <add fontFamily="Courier New" path="CourI.ttf" fontStyle="Italic" />
         </privateFonts>

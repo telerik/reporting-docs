@@ -63,6 +63,8 @@ In the PDF document model, the validation is performed per signature. A signed d
 
 To sign a PDF document a path to a X.509 certificate is specified in the rendering extension device info. For more information see: [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}). 
 
+>important You need to reference a `.PFX` file. The reason is that it includes both the public and private key that are required for the associated certificate. A '.cer' file embeds only the public key.|
+
 ## Metadata
 
 The PDF rendering extension writes the following information to the PDF file: 

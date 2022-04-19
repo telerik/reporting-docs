@@ -17,18 +17,27 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Report Viewer</td>
+			<td>Blazor Report Viewer</td>
+		</tr>
 	</tbody>
 </table>
 
 
 ## Description
-The Telerik Report Viewer makes it easy to let your user select the report they want to see and filter the data in that report to get the information they need. Here’s how to make that happen in a Blazor app.
+The Telerik Report Viewer makes it easy to let your user select and filter the data of a report to get only the information they need. Out of the box, we implement the report parameter controls in the report viewer which allow you to do this, however, there are times where one may wish to use controls outside of the report viewer widget since it supports only a limited type of report parameter controls out of the box.
 
-## Solution
+For this example, we will use the `Invoice` report that we ship with installation of the Telerik Reporting product. That report, and the other example reports, can be found in the installation directory. For example: `{install_dir}/Report Designer/Examples`.
 
-We will be doing the following steps in the **Index.razor** file of the **BlazorHtml5Demo** project.
+Also, instead of setting up a new project with the Blazor Report Viewer, we can use the demo Blazor projects that we also ship with the product installation. 
+For example: `{install_dir}/Examples/(CSharp/VB)`.
 
-1. Add the following code inside the **body** tag:
+The Blazor projects are available in the .NET Core project folders. The next steps can be done in the `Index.razor` file of any of our Blazor demo projects.
+
+## Solution 
+
+Add the following code inside the `Index.razor` file:
 
 ```Razor
 <div id="invoiceIdSelector">
@@ -38,13 +47,11 @@ We will be doing the following steps in the **Index.razor** file of the **Blazor
         <option value="SO51082">SO51082</option>
         <option value="SO51083">SO51083</option>
     </select>
-
-    <input type="text" @onchange="(args) => changeId(args)" />
 </div>
 ```
-This is all the setup that we need for our **changeId** function that will be doing the actual work.
 
-2. Now add this code inside the **@code** block:
+This is a simple select control because the idea is to demonstrate how to update the report from outside the report viewer and the core of this approach is inside the `changeId` method. The method should work with virtually any control out there. The `changeId` method itself is the following:
+
 ```Csharp
  async void changeId(ChangeEventArgs e)
     {
@@ -53,9 +60,8 @@ This is all the setup that we need for our **changeId** function that will be do
         await reportViewer1.SetReportSourceAsync(rso);
     }
 ```
-In the **changeId** function we retrieve the viewer's **ReportSourceOptions** and then we set the **OrderNumber** parameter the value of in the event argument.
-Finally we update the ReportSourceOptions. Because we are retrieving a value from an asynchronous method, we have to use the **await** keyword our method calls and flag the method with the **async** keyword.
 
+In the `changeId` method we retrieve the viewer's `ReportSourceOptions` object and then we set the `OrderNumber` parameter the value currently present in the event argument. Finally we update the ReportSourceOptions through the viewer's `SetReportSourceAsync(ReportSourceOptions opt)` method.
 
 ## See Also
 [Dynamically Selecting and Filtering Reports with Blazor and the Telerik ReportViewer Control](https://www.telerik.com/blogs/dynamically-selecting-filtering-reports-blazor-telerik-reportviewer)

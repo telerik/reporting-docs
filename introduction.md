@@ -119,7 +119,7 @@ Note that sharing quality feedback and ideas will not only benefit the community
 
 ## Learning Resources
 
-* [Telerik Reporting Virtual Classroom (Training Courses for Registered Users)](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
+* [Video Onboarding (Training Courses for Registered Users)]({% slug getting-started/video-onboarding %})
 * [Online Demos for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Telerik Reporting Videos](https://www.telerik.com/videos/reporting)
 * [Telerik Blog on Telerik Reporting](https://www.telerik.com/blogs/tag/reporting)

@@ -28,9 +28,8 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
-Currently, the the report viewer's [options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}) 
+Currently, the the [report viewer's options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) 
 of the [Web Report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) are not exposed. 
 For that reason, you need to use a custom logic to set the default viewMode.
 
@@ -40,25 +39,24 @@ In some of the upcoming releases, we will expose the viewer's options and you wi
 ## Suggested Workarounds
 If you are using the pure HTML Web Report Designer (not the Blazor wrapper), you can use the follwoing piece of code after the initialization of the designer"
 
-  ````JavaScript
-  <script>
-        // Second callback for mutationObserver will fire once WebReportDesigner is finished loading
-        // This callback listenes for a click on the Preview button and triggers Print-preview mode while initialization of the ReportViewer
-        const secondCallBack = function (mutationsList, observer) {
-            $(".top-menu-area__button.-preview").on("click", () => requestAnimationFrame(() =>
-                $("#webReportDesigner_preview").data("telerik_ReportViewer").bind(telerikReportViewer.Events.RENDERING_BEGIN, () => {
-                    $("#webReportDesigner_preview").data("telerik_ReportViewer").unbind(telerikReportViewer.Events.RENDERING_BEGIN);
-                    $("#webReportDesigner_preview").data("telerik_ReportViewer").viewMode("PRINT_PREVIEW");
-                })));
-        };
-        // First callback waits for the loader HTML element to appear in the DOM, then creates a new MutationObserver for the loader
-        const firstCallback = function (mutationsList, observer) {
-            new MutationObserver(secondCallBack).observe(document.getElementsByClassName('twd-loader')[0], { attributes: true });
-        };
-        // Inital setup of the first MutationObserver
-        const targetNode = document.getElementById('webReportDesigner');
-        new MutationObserver(firstCallback).observe(targetNode, { childList: true });
-    </script>
- ````
- 
+````JavaScript
+<script>
+	// Second callback for mutationObserver will fire once WebReportDesigner is finished loading
+	// This callback listenes for a click on the Preview button and triggers Print-preview mode while initialization of the ReportViewer
+	const secondCallBack = function (mutationsList, observer) {
+		$(".top-menu-area__button.-preview").on("click", () => requestAnimationFrame(() =>
+			$("#webReportDesigner_preview").data("telerik_ReportViewer").bind(telerikReportViewer.Events.RENDERING_BEGIN, () => {
+				$("#webReportDesigner_preview").data("telerik_ReportViewer").unbind(telerikReportViewer.Events.RENDERING_BEGIN);
+				$("#webReportDesigner_preview").data("telerik_ReportViewer").viewMode("PRINT_PREVIEW");
+			})));
+	};
+	// First callback waits for the loader HTML element to appear in the DOM, then creates a new MutationObserver for the loader
+	const firstCallback = function (mutationsList, observer) {
+		new MutationObserver(secondCallBack).observe(document.getElementsByClassName('twd-loader')[0], { attributes: true });
+	};
+	// Inital setup of the first MutationObserver
+	const targetNode = document.getElementById('webReportDesigner');
+	new MutationObserver(firstCallback).observe(targetNode, { childList: true });
+</script>
+````
  

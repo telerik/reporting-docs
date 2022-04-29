@@ -29,7 +29,7 @@ res_type: kb
 </table>
 
 ## Description
-Currently, the the [report viewer's options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) 
+Currently, the [report viewer's options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) 
 of the [Web Report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) are not exposed. 
 For that reason, you need to use a custom logic to set the default viewMode.
 

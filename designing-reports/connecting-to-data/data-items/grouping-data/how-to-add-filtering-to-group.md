@@ -16,9 +16,9 @@ We will use the filter to hide/show the dynamic groups members. Additionally we 
 
 ## Using dynamic filter to show/hide crosstab group members
 
-1. Open the report in the designer and show the Group Еxplorer 
+1. Open the report in the designer and show the Group Explorer 
 
-	>caption Group Еxplorer
+	>caption Group Explorer
 
 	![Group Еxplorer](images/DataItems/diGroupExplorer.PNG)
 

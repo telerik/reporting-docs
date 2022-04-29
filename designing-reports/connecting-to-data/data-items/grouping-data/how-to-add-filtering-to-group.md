@@ -18,28 +18,27 @@ We will use the filter to hide/show the dynamic groups members. Additionally we 
 
 1. Open the report in the designer and show the Group Еxplorer 
 
->caption Group Еxplorer
+	>caption Group Еxplorer
 
-  ![](images/DataItems/diGroupExplorer.PNG)
+	![Group Еxplorer](images/DataItems/diGroupExplorer.PNG)
 
 1. Define a new [Report Parameter](%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) _DetailsForYear_ as shown on the picture. Use the same DataSource as for the report. The parameter should be MultiValue.
 
->caption Define Report Parameter  
+	>caption Define Report Parameter  
 
-  ![](images/DataItems/diReportParameter.PNG)
+	![Define Report Parameter](images/DataItems/diReportParameter.PNG)
 
 1. Select the Crosstab (or any cell in it) and invoke the [Edit Filters dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog%}) for the _Qtr Column_ group. Enter the filter expression as shown on next picture 
 
->caption Set Filter
+	>caption Set Filter
 
-  ![](images/DataItems/diSetFilter.PNG)
+	![Set Filter](images/DataItems/diSetFilter.PNG)
 
 1. Preview the report. Now it is possible to select for which year to show Quarter columns and hide for the rest. 
 
->caption Preview
+	>caption Preview
 
-  ![](images/DataItems/diPreview.PNG)
-
+	![Preview](images/DataItems/diPreview.PNG)
 
 # See Also
 

@@ -73,7 +73,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 Since the Web Report Designer uses [Kendo UI](https://www.telerik.com/kendo-ui) for its template it is possible to use it even with a custom build instead of using the entire Kendo bundle. You may do this using the [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp).
 
-Below you can find the list of widgets that the Web Report Designer requires in order to work properly. Note that the widgets have other dependencies. We use _Autocomplete_ for the search functionality of the designer. The _Touch_ widget is required only for the gestures. Kendo's _MVVM_ is a set of few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data. 
+Below you can find the list of widgets that the Web Report Designer requires in order to work properly. Note that the widgets have other dependencies. The _Touch_ widget is required only for the gestures. Kendo's _MVVM_ is a set of few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data. 
 
 Required widgets:
 

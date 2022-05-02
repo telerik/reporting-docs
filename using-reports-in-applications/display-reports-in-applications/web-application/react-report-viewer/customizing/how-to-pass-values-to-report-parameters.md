@@ -16,9 +16,33 @@ To update the report source, the [reportSource(rs)]({%slug telerikreporting/usin
 
 ## Pass values to report parameters from the application UI
 
-The following example demonstrates how to update the report viewer when the selected value of the dropdown changes:
+The following example demonstrates how to update the report viewer when the selected value of the dropdown changes. It assumes that the viewer component is defined in a separate file, `ReportViewer.js`. The component may be imported and used in the `index.js` as follows :
+
+__index.js__:
 
 ````js
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import reportWebVitals from './reportWebVitals';
+import {ReportViewer} from './ReportViewer.js';
+
+ReactDOM.render(
+  <ReportViewer/>,
+  document.getElementById('root')
+);
+````
+
+__ReportViewer.js__:
+
+````js
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
+import { React, useRef} from 'react';
+import './index.css';
+import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
+
 export function ReportViewer() {
   const viewerRef = useRef(null);
 

@@ -93,7 +93,7 @@ Required widgets:
 
 * Kendo DropDown
 
-* Kendo TreeGrid (everything)
+* Kendo TreeGrid
 
 * Kendo Editor
 
@@ -101,7 +101,7 @@ Required widgets:
 
 * Kendo ListBox
 
-* Kendo ListView (Selection)
+* Kendo ListView
 
 * Kendo Menu
 
@@ -121,9 +121,16 @@ Required widgets:
 
 * Kendo Upload
 
-* Kendo Window (Animation)
+* Kendo Window
 
 * Kendo Touch
+
+* Kendo Autocomplete
+
+The subset may be built with the following command:
+
+`gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepicker,dropdowntree,grid,editor,filemanager,listbox,listview,menu,multiselect,panelbar,slider,splitter,tabstrip,tooltip,treeview,upload,window,touch,autocomplete`
+
 
 # See Also
 

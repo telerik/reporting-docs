@@ -51,7 +51,7 @@ If you want to make sure that there are no Internet connection problems and the 
 
 ## Kendo Widgets Requirements
 
-Since the HTML5 Report Viewer uses [Kendo UI](http://www.telerik.com/kendo-ui) for its default template it is possible to use it even with a custom build instead of using the shipped Kendo bundle. There are two ways to create a custom build - with  [Kendo UI Custom Download Builder](http://www.telerik.com/download/custom-download) and using [gulp build tool](https://docs.telerik.com/kendo-ui/intro/installation/what-you-need#use-gulp). 
+Since the HTML5 Report Viewer uses [Kendo UI](http://www.telerik.com/kendo-ui) for its default template it is possible to use it even with a custom build instead of using the shipped Kendo bundle. There are two ways to create a custom build - with  [Kendo UI Custom Download Builder](http://www.telerik.com/download/custom-download) and using [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp). 
 
 Below you can find the list of widgets that the HTML5 Report Viewer requires in order to work properly. In case you edit the template and remove a widget you can subtract it from this list as well. Note that the widgets have other dependencies. The Touch widget is required only for the gestures. All widgets except the TreeView can be found in [Kendo UI Core](http://www.telerik.com/download/kendo-ui-core). The TreeView is in [Kendo UI Professional](http://www.telerik.com/download/kendo-ui). 
 

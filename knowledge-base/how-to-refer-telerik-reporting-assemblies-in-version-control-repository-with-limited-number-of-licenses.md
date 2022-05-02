@@ -22,13 +22,15 @@ res_type: kb
 
 
 ## Description
+
 Frequently, in a team, only one or few of the developers are working with and are licensed for Telerik Reporting. The other developers that are working on other parts of the project still need access to Telerik Reporting assemblies to be able to compile the project.
 
 ## Solution
- 1\. If you need to refer Telerik Reporting assemblies from a NuGet package, you may :
-  - Share the credentials for the Telerik NuGet private feed with the other team members.  
-  - Download the NuGet packages locally and refer them from a local feed accessible by team members.  
 
+1. If you need to refer Telerik Reporting assemblies from a NuGet package, you may :
 
+	- Share the credentials for the Telerik NuGet private feed with the other team members. 
+	
+	- Download the NuGet packages locally and refer them from a local feed accessible by team members. 
 
- 2\. If you can use local references, you may create a folder where to upload the Telerik Reporting assemblies and refer them in the project from this folder. 
+2. If you can use local references, you may create a folder where to upload the Telerik Reporting assemblies and refer them in the project from this folder. 

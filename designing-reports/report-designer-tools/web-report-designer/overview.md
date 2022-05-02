@@ -69,10 +69,64 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * The web report designer in our example is stylized using [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your preference can be added before creating the Web Designer widget on the page. 
 
+## Kendo Widgets Requirements
+
+Since the Web Report Designer uses [Kendo UI](https://www.telerik.com/kendo-ui) for its template it is possible to use it even with a custom build instead of using the entire Kendo bundle. You may do this using the [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp).
+
+Below you can find the list of widgets that the Web Report Designer requires in order to work properly. In case you edit the template and remove a widget you can subtract it from this list as well. Note that the widgets have other dependencies. The Touch widget is required only for the gestures. The TreeView is in Kendo UI Professional. Kendo's MVVM is a set of few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data. 
+
+Required widgets:
+
+* MVVM
+
+* Button
+
+* ButtonGroup
+
+* ComboBox
+
+* DateInput
+
+* DatePicker
+
+* DateTimePicker
+
+* DropDown
+
+* TreeGrid (everything)
+
+* Editor
+
+* FileManager
+
+* ListBox
+
+* ListView (Selection)
+
+* Menu
+
+* MultiSelect
+
+* PanelBar
+
+* Slider
+
+* Splitter
+
+* TabStrip
+
+* Tooltip
+
+* TreeView
+
+* Upload
+
+* Window (Animation)
+
+* Touch
 
 # See Also
 
 * [How to set up in .NET 5 and .NET Core 3.1 applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
 
 * [How to set up in.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
-

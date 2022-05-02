@@ -29,6 +29,8 @@ Frequently, in a team, only one or few of the developers are working with and ar
 
 1. If you need to refer Telerik Reporting assemblies from a NuGet package, you may :
 
+	- Use the approach explained in the blog post [Azure DevOps and Telerik NuGet Packages](https://www.telerik.com/blogs/azure-devops-and-telerik-nuget-packages). The licensed user will need to enter their Telerik credentials into the other developer's Visual Studio prompt. The credentials would be stored in the Windows Credential Manager.
+
 	- Share the credentials for the Telerik NuGet private feed with the other team members. 
 	
 	- Download the NuGet packages locally and refer them from a local feed accessible by team members. 

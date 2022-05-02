@@ -73,57 +73,57 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 Since the Web Report Designer uses [Kendo UI](https://www.telerik.com/kendo-ui) for its template it is possible to use it even with a custom build instead of using the entire Kendo bundle. You may do this using the [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp).
 
-Below you can find the list of widgets that the Web Report Designer requires in order to work properly. In case you edit the template and remove a widget you can subtract it from this list as well. Note that the widgets have other dependencies. The Touch widget is required only for the gestures. The TreeView is in Kendo UI Professional. Kendo's MVVM is a set of few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data. 
+Below you can find the list of widgets that the Web Report Designer requires in order to work properly. Note that the widgets have other dependencies. The Touch widget is required only for the gestures. Kendo's MVVM is a set of few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data. 
 
 Required widgets:
 
-* MVVM
+* Kendo MVVM
 
-* Button
+* Kendo Button
 
-* ButtonGroup
+* Kendo ButtonGroup
 
-* ComboBox
+* Kendo ComboBox
 
-* DateInput
+* Kendo DateInput
 
-* DatePicker
+* Kendo DatePicker
 
-* DateTimePicker
+* Kendo DateTimePicker
 
-* DropDown
+* Kendo DropDown
 
-* TreeGrid (everything)
+* Kendo TreeGrid (everything)
 
-* Editor
+* Kendo Editor
 
-* FileManager
+* Kendo FileManager
 
-* ListBox
+* Kendo ListBox
 
-* ListView (Selection)
+* Kendo ListView (Selection)
 
-* Menu
+* Kendo Menu
 
-* MultiSelect
+* Kendo MultiSelect
 
-* PanelBar
+* Kendo PanelBar
 
-* Slider
+* Kendo Slider
 
-* Splitter
+* Kendo Splitter
 
-* TabStrip
+* Kendo TabStrip
 
-* Tooltip
+* Kendo Tooltip
 
-* TreeView
+* Kendo TreeView
 
-* Upload
+* Kendo Upload
 
-* Window (Animation)
+* Kendo Window (Animation)
 
-* Touch
+* Kendo Touch
 
 # See Also
 

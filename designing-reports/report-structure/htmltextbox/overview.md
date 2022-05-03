@@ -27,28 +27,29 @@ With the HtmlTextBox report item, you can:
 For the full list with special entities like "?" and TAB and their expression, refer to this [w3.org page](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent). 
 
 > __Known Limitations:__ 
->* The HtmlTextBox works with the -text formatting options only-.
+>* The HtmlTextBox respects only inline styles.
+>* The HtmlTextBox works with the text formatting options only.
 >* The HtmlTextbox is rendered as plain text with no formatting in Excel.
 >* RTL (Right to Left) is not supported.
->* The HyperLink (```<a>``` tag) is interactive (acts as an actual hyperlink) only under an HTML rendering extension. To add links in PDF, XLSX, DOCX, PPTX files and HTML, XAML, IMAGE renderings for the different Report Viewers, you can use a [Hyperlink Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%}).
->* Any limitations of the HtmlTextBox in specific export formats are reflected in the respective topic in the [Design considerations for Report Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%})help section.>
+>* The HyperLink (`<a>` tag) is interactive (acts as an actual hyperlink) only under an HTML rendering extension. To add links in PDF, XLSX, DOCX, PPTX files and HTML, XAML, IMAGE renderings for the different Report Viewers, you can use a [Hyperlink Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%}).
+>* Any limitations of the HtmlTextBox in specific export formats are reflected in the respective topic in the [Design considerations for Report Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%}) help section.
 
 
 ## Supported HTML tags
 
 Various formatting options are available to control the text presentation:
 
-* Font, size (relative size against the font size of the item, default is 3 (1-7)), color (```<font>```)
+* Font, size (relative size against the font size of the item, default is 3 (1-7)), color (`<font>`)
 
-* Bold, Italic, Underline (```<strong>```,```<b>```, ```<em>```, ```<i>```, ```<u>```)
+* Bold, Italic, Underline (`<strong>`,`<b>`, `<em>`, `<i>`, `<u>`)
 
-* Subscript, Superscript (```<sub>```,```<sup>```)
+* Subscript, Superscript (`<sub>`,`<sup>`)
 
-* HyperLink (```<a href target>```)
+* HyperLink (`<a href target>`)
 
-* Lists (```<ol>```, ```<ul>```, ```<li>```)
+* Lists (`<ol>`, `<ul>`, `<li>`)
 
-* Organize the text in paragraphs (```<div>```, ```<span>```,```<p>```, ```<br>```, ```<center>```)
+* Organize the text in paragraphs (`<div>`, `<span>`,`<p>`, `<br>`, `<center>`)
 
 > TABLE and IMG tags are not supported. Instead, you must use the native Reporting [Table/List/Crrostab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) and [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) items. A custom approach like rendering HTML as an Image with a third-party tool and using the image via PictureBox item is also supported. 
 
@@ -77,7 +78,7 @@ Any other HTML markup tags will be ignored during report processing. If the HTML
 
 ## Growing and Shrinking
 
-By default, HtmlTextBoxes are a set size. If you want to allow an HtmlTextBox to expand vertically based on its contents, set the [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)  property to True (default value). If you want to allow a TextBox to shrink based on its contents, set the [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink) property to True (default value is False). The HtmlTextBox would always grow to accommodate the first line of text even when CanGrow is False. 
+By default, HtmlTextBoxes are a set size. If you want to allow an HtmlTextBox to expand vertically based on its contents, set the [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)  property to True (default value). If you want to allow a TextBox to shrink based on its contents, set the [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink) property to True (default value is False). The HtmlTextBox would always grow to accommodate the first line of text even when _CanGrow_ is _False_. 
 
 ## Embedded expressions
 
@@ -105,7 +106,7 @@ The design time editor supports two modes:
 
 1. Interactive (__Design view__) - you can select a portion of the text and make it bold, change its font, size, color, etc. using appropriate controls like comboboxes and buttons (WYSIWYG editor). Internally, the designer generates a valid HTML source and stores it in the Value property of the item. Adding embedded expressions is possible, but the entire HTML value cannot be an expression. You can switch to __HTML view__ at any time if needed. 
 
-   >Pressing the Enter key inserts a new paragraph or new list item depending on the current context. Note that it does NOT insert ```<br />``` (new line). To insert new line, use the button on the toolbar) 
+   >Pressing the Enter key inserts a new paragraph or new list item depending on the current context. Note that it does NOT insert `<br />` (new line). To insert new line, use the button on the toolbar) 
 
   ![Html Text Box Design View](images/HtmlTextBox_DesignView.png)
 
@@ -113,8 +114,7 @@ The design time editor supports two modes:
 
   ![Html Text Box Html View](images/HtmlTextBox_HtmlView.png)
 
-> MultiLine and TextWrap concepts are always true for HtmlTextBox.The __subscript__ and __superscript__ tags can be nested (i.e. ```<sub>subscript1<sub>subscript2</sub></sub>```), resulting in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggles the __subscript__ or __superscript__ feature, so if nested tags are needed, the appropriate code should be added manually using the editor's __Html view__. 
-
+> MultiLine and TextWrap concepts are always true for HtmlTextBox. The __subscript__ and __superscript__ tags can be nested (i.e. `<sub>subscript1<sub>subscript2</sub></sub>`), resulting in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggles the __subscript__ or __superscript__ feature, so if nested tags are needed, the appropriate code should be added manually using the editor's __Html view__. 
 
 # See Also
 

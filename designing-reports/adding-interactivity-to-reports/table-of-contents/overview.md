@@ -1,7 +1,7 @@
 ---
 title: Table of Contents Overview
-page_title: Overview 
-description: Overview
+page_title: Table of Contents Overview 
+description: Table of Contents Structure and Levels Explained
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Table/Crosstab/List Overview
-page_title: Overview 
-description: Overview
+page_title: Table/Crosstab/List Overview 
+description: Table/Crosstab/List differences and table designer overview 
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/overview
 tags: overview
 published: True

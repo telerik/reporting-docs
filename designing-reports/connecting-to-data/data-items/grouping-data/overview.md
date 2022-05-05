@@ -1,7 +1,7 @@
 ---
 title: Grouping Data Overview
-page_title: Overview 
-description: Overview
+page_title: Grouping Data Overview
+description: Grouping Data Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/overview
 tags: overview
 published: True

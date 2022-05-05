@@ -1,7 +1,7 @@
 ---
 title: Silverlight Application Overview
-page_title: Overview 
-description: Overview
+page_title: Silverlight Application Overview
+description: Silverlight Application Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview
 tags: overview
 published: True

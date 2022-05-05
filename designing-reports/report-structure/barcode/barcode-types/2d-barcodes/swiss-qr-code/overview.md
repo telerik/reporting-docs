@@ -1,7 +1,7 @@
 ---
 title: Swiss QR Code Overview
-page_title: Overview 
-description: Overview
+page_title: Swiss QR Code Overview
+description: Swiss QR Code Overview
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/swiss-qr-code/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Using Out-proc Session State Overview
-page_title: Overview 
-description: Overview
+page_title: Using Out-proc Session State Overview
+description: Using Out-proc Session State Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview
 tags: overview
 published: True

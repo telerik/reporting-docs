@@ -1,7 +1,7 @@
 ---
 title: QR Code Overview
-page_title: Overview 
-description: Overview
+page_title: QR Code Overview
+description: QR Code Overview
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code/overview
 tags: overview
 published: True

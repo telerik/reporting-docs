@@ -1,7 +1,7 @@
 ---
 title: Column Charts Overview
-page_title: Overview 
-description: Overview
+page_title: Column Charts Overview
+description: Column Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Chart Types Overview
-page_title: Overview 
-description: Overview
+page_title: Chart Types Overview
+description: Chart Types Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/overview
 tags: overview
 published: True

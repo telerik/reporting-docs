@@ -1,7 +1,7 @@
 ---
 title: OHLC Charts Overview
-page_title: Overview 
-description: Overview
+page_title: OHLC Charts Overview
+description: OHLC Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview
 tags: overview
 published: True

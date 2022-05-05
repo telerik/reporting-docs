@@ -1,7 +1,7 @@
 ---
 title: Formatting a Map Overview
-page_title: Overview 
-description: Overview
+page_title: Formatting a Map Overview
+description: Formatting a Map Overview
 slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/overview
 tags: overview
 published: True

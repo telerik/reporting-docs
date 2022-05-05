@@ -1,7 +1,7 @@
 ---
 title: Graph Overview
-page_title: Overview 
-description: Overview
+page_title: Graph Overview
+description: Graph Overview
 slug: telerikreporting/designing-reports/report-structure/graph/overview
 tags: overview
 published: True

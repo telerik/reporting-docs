@@ -1,7 +1,7 @@
 ---
 title: Rendering and Paging Overview
-page_title: Overview 
-description: Overview
+page_title: Rendering and Paging Overview
+description: Rendering and Paging Overview
 slug: telerikreporting/designing-reports/rendering-and-paging/overview
 tags: overview
 published: True

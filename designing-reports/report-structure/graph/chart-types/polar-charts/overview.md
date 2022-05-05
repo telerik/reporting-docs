@@ -1,7 +1,7 @@
 ---
 title: Polar Charts Overview
-page_title: Overview 
-description: Overview
+page_title: Polar Charts Overview
+description: Polar Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview
 tags: overview
 published: True

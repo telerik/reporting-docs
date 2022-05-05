@@ -1,7 +1,7 @@
 ---
 title: Data Source Components Overview
-page_title: Overview 
-description: Overview
+page_title: Data Source Components Overview
+description: Data Source Components Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/overview
 tags: overview
 published: True

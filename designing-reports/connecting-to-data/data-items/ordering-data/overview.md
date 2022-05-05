@@ -1,7 +1,7 @@
 ---
 title: Ordering Data Overview
-page_title: Overview 
-description: Overview
+page_title: Ordering Data Overview
+description: Ordering Data Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview
 tags: overview
 published: True

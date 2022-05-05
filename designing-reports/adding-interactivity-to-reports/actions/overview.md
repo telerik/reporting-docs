@@ -1,7 +1,7 @@
 ---
 title: Actions Overview
-page_title: Overview 
-description: Overview
+page_title: Actions Overview
+description: Actions Overview
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview
 tags: overview
 published: True

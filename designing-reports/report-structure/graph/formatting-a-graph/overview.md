@@ -1,7 +1,7 @@
 ---
 title: Formatting a Graph Overview
-page_title: Overview 
-description: Overview
+page_title: Formatting a Graph Overview
+description: Formatting a Graph Overview
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: OpenClientDataSource Component Overview
-page_title: Overview 
-description: Overview
+page_title: OpenClientDataSource Component Overview
+description: OpenClientDataSource Component Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openclientdatasource-component/overview
 tags: overview
 published: True

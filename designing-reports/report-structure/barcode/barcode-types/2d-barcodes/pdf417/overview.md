@@ -1,7 +1,7 @@
 ---
 title: PDF417 Overview
-page_title: Overview 
-description: Overview
+page_title: PDF417 Overview
+description: PDF417 Overview
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417/overview
 tags: overview
 published: True

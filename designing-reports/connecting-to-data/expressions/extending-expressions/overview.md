@@ -1,7 +1,7 @@
 ---
 title: Extending Expressions Overview
-page_title: Overview 
-description: Overview
+page_title: Extending Expressions Overview
+description: Extending Expressions Overview
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview
 tags: overview
 published: True

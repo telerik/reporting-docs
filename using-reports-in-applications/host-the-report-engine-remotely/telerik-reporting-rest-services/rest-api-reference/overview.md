@@ -1,7 +1,7 @@
 ---
 title: REST API Reference Overview
-page_title: Overview 
-description: Overview
+page_title: REST API Reference Overview
+description: REST API Reference Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: ReportViewer Overview
-page_title: Overview 
-description: Overview
+page_title: ReportViewer Overview
+description: ReportViewer Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/overview
 tags: overview
 published: True

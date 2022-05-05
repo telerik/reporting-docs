@@ -1,7 +1,7 @@
 ---
 title: Structure Overview
-page_title: Overview 
-description: Overview
+page_title: Structure Overview
+description: Structure Overview
 slug: telerikreporting/designing-reports/report-structure/map/structure/overview
 tags: overview
 published: True

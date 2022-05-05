@@ -1,7 +1,7 @@
 ---
 title: Range Charts Overview
-page_title: Overview 
-description: Overview
+page_title: Range Charts Overview
+description: Range Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview
 tags: overview
 published: True

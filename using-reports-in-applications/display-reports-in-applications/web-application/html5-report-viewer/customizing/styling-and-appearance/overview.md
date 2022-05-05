@@ -1,7 +1,7 @@
 ---
 title: Styling and Appearance Overview
-page_title: Overview 
-description: Overview
+page_title: Styling and Appearance Overview
+description: Styling and Appearance Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview
 tags: overview
 published: True

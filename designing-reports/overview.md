@@ -1,7 +1,7 @@
 ---
 title: Designing Reports Overview
-page_title: Overview 
-description: Overview
+page_title: Designing Reports Overview
+description: Designing Reports Overview
 slug: telerikreporting/designing-reports/overview
 tags: overview
 published: True

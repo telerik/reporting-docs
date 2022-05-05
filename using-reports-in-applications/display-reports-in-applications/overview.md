@@ -1,7 +1,7 @@
 ---
 title: Display Reports in Applications Overview
-page_title: Overview 
-description: Overview
+page_title: Display Reports in Applications Overview
+description: Display Reports in Applications Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/overview
 tags: overview
 published: True

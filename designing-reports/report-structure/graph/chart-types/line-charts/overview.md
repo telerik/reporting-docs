@@ -1,7 +1,7 @@
 ---
 title: Line Charts Overview
-page_title: Overview 
-description: Overview
+page_title: Line Charts Overview
+description: Line Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview
 tags: overview
 published: True

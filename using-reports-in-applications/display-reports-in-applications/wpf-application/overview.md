@@ -1,7 +1,7 @@
 ---
 title: WPF Application Overview
-page_title: Overview 
-description: Overview
+page_title: WPF Application Overview
+description: WPF Application Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: ObjectDataSource Component Overview
-page_title: Overview 
-description: Overview
+page_title: ObjectDataSource Component Overview
+description: ObjectDataSource Component Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview
 tags: overview
 published: True

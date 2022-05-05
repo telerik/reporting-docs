@@ -1,7 +1,7 @@
 ---
 title: Web Report Designer Overview
-page_title: Overview 
-description: Overview
+page_title: Web Report Designer Overview
+description: Web Report Designer Overview
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview
 tags: overview
 published: True

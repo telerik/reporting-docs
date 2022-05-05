@@ -1,7 +1,7 @@
 ---
 title: Connecting to Data Overview
-page_title: Overview 
-description: Overview
+page_title: Connecting to Data Overview
+description: Connecting to Data Overview
 slug: telerikreporting/designing-reports/connecting-to-data/overview
 tags: overview
 published: True

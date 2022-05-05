@@ -1,7 +1,7 @@
 ---
 title: Report Events Overview
-page_title: Overview 
-description: Overview
+page_title: Report Events Overview
+description: Report Events Overview
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview
 tags: overview
 published: True

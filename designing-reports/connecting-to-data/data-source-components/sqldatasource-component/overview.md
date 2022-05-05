@@ -1,7 +1,7 @@
 ---
 title: SqlDataSource Component Overview
-page_title: Overview 
-description: Overview
+page_title: SqlDataSource Component Overview
+description: SqlDataSource Component Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview
 tags: overview
 published: True

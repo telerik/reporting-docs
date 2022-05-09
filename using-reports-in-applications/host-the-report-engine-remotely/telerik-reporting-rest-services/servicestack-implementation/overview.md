@@ -1,7 +1,7 @@
 ---
 title: ServiceStack Implementation Overview
-page_title: Overview 
-description: Overview
+page_title: ServiceStack Implementation Overview
+description: ServiceStack Implementation Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/overview
 tags: overview
 published: True

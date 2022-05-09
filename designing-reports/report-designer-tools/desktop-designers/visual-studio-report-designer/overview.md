@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Report Designer Overview
-page_title: Overview 
-description: Overview
+page_title: Visual Studio Report Designer Overview
+description: Visual Studio Report Designer Overview
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview
 tags: overview
 published: True

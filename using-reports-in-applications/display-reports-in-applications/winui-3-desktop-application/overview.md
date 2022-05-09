@@ -1,7 +1,7 @@
 ---
 title: WinUI 3 Desktop Application Overview
-page_title: Overview 
-description: Overview
+page_title: WinUI 3 Desktop Application Overview
+description: WinUI 3 Desktop Application Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Functions Overview
-page_title: Overview 
-description: Overview
+page_title: Functions Overview
+description: Functions Overview
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview
 tags: overview
 published: True

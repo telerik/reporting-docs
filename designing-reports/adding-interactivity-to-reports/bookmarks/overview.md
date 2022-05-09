@@ -1,7 +1,7 @@
 ---
 title: Bookmarks Overview
-page_title: Overview 
-description: Overview
+page_title: Bookmarks Overview
+description: Bookmarks Overview
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/bookmarks/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Blazor Report Viewer Overview
-page_title: Overview 
-description: Overview
+page_title: Blazor Report Viewer Overview
+description: Blazor Report Viewer Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview
 tags: overview
 published: True

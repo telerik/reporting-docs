@@ -1,7 +1,7 @@
 ---
 title: EntityDataSource Component Overview
-page_title: Overview 
-description: Overview
+page_title: EntityDataSource Component Overview
+description: EntityDataSource Component Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Scatter Charts Overview
-page_title: Overview 
-description: Overview
+page_title: Scatter Charts Overview
+description: Scatter Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview
 tags: overview
 published: True

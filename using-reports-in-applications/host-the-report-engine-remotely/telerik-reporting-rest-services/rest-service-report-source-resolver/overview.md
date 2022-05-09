@@ -1,7 +1,7 @@
 ---
 title: REST Service Report Source Resolver Overview
-page_title: Overview 
-description: Overview
+page_title: REST Service Report Source Resolver Overview
+description: REST Service Report Source Resolver Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview
 tags: overview
 published: True

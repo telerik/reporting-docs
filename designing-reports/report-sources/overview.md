@@ -1,7 +1,7 @@
 ---
 title: Report Sources Overview
-page_title: Overview 
-description: Overview
+page_title: Report Sources Overview
+description: Report Sources Overview
 slug: telerikreporting/designing-reports/report-sources/overview
 tags: overview
 published: True

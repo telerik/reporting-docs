@@ -1,7 +1,7 @@
 ---
 title: Band Report Wizard Overview
-page_title: Overview 
-description: Overview
+page_title: Band Report Wizard Overview
+description: Band Report Wizard Overview
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview
 tags: overview
 published: True

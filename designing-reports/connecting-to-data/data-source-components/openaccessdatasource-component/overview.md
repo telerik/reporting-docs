@@ -1,7 +1,7 @@
 ---
 title: OpenAccessDataSource Component Overview
-page_title: Overview 
-description: Overview
+page_title: OpenAccessDataSource Component Overview
+description: OpenAccessDataSource Component Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/overview
 tags: overview
 published: True

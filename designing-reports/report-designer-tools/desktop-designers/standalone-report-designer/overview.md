@@ -1,7 +1,7 @@
 ---
 title: Standalone Report Designer Overview
-page_title: Overview 
-description: Overview
+page_title: Standalone Report Designer Overview
+description: Standalone Report Designer Overview
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview
 tags: overview
 published: True

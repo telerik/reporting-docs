@@ -1,7 +1,7 @@
 ---
 title: Filtering Data Overview
-page_title: Overview 
-description: Overview
+page_title: Filtering Data Overview
+description: Filtering Data Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview
 tags: overview
 published: True

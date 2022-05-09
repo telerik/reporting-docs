@@ -1,7 +1,7 @@
 ---
 title: Data Matrix Overview
-page_title: Overview 
-description: Overview
+page_title: Data Matrix Overview
+description: Data Matrix Overview
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview
 tags: overview
 published: True

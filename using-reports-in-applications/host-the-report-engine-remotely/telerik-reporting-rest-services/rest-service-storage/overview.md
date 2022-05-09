@@ -1,7 +1,7 @@
 ---
 title: REST Service Storage Overview
-page_title: Overview 
-description: Overview
+page_title: REST Service Storage Overview
+description: REST Service Storage Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview
 tags: overview
 published: True

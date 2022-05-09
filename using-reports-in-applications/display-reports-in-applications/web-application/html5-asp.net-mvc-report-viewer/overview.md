@@ -1,7 +1,7 @@
 ---
 title: HTML5 ASP.NET MVC Report Viewer Overview
-page_title: Overview 
-description: Overview
+page_title: HTML5 ASP.NET MVC Report Viewer Overview
+description: HTML5 ASP.NET MVC Report Viewer Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview
 tags: overview
 published: True

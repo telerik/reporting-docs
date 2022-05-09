@@ -1,7 +1,7 @@
 ---
 title: Configuration Overview
-page_title: Overview 
-description: Overview
+page_title: Configuration Overview
+description: Configuration Overview
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview
 tags: overview
 published: True

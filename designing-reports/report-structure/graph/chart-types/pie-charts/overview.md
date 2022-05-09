@@ -1,7 +1,7 @@
 ---
 title: Pie Charts Overview
-page_title: Overview 
-description: Overview
+page_title: Pie Charts Overview
+description: Pie Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview
 tags: overview
 published: True

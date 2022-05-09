@@ -1,7 +1,7 @@
 ---
 title: Bar Charts Overview
-page_title: Overview 
-description: Overview
+page_title: Bar Charts Overview
+description: Bar Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview
 tags: overview
 published: True

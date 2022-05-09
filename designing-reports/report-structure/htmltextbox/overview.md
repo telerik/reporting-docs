@@ -1,7 +1,7 @@
 ---
 title: HtmlTextBox Overview
-page_title: Overview 
-description: Overview
+page_title: HtmlTextBox Overview
+description: HtmlTextBox Overview
 slug: telerikreporting/designing-reports/report-structure/htmltextbox/overview
 tags: overview
 published: True

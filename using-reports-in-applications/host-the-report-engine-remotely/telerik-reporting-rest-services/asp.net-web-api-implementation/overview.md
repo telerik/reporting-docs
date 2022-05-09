@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Web API Implementation Overview
-page_title: Overview 
-description: Overview
+page_title: ASP.NET Web API Implementation Overview
+description: ASP.NET Web API Implementation Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview
 tags: overview
 published: True

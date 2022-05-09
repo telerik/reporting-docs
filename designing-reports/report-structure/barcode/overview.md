@@ -1,7 +1,7 @@
 ---
 title: Barcode Overview
-page_title: Overview 
-description: Overview
+page_title: Barcode Overview
+description: Barcode Overview
 slug: telerikreporting/designing-reports/report-structure/barcode/overview
 tags: overview
 published: True

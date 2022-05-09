@@ -1,7 +1,7 @@
 ---
 title: Methods Overview
-page_title: Overview 
-description: Overview
+page_title: Methods Overview
+description: Methods Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview
 tags: overview
 published: True

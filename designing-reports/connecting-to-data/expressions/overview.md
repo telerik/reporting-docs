@@ -1,7 +1,7 @@
 ---
 title: Expressions Overview
-page_title: Overview 
-description: Overview
+page_title: Expressions Overview
+description: Expressions Overview
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview
 tags: overview
 published: True

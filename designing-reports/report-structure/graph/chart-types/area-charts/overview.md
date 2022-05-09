@@ -1,7 +1,7 @@
 ---
 title: Area Charts Overview
-page_title: Overview 
-description: Overview
+page_title: Area Charts Overview
+description: Area Charts Overview
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview
 tags: overview
 published: True

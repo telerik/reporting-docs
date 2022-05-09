@@ -1,7 +1,7 @@
 ---
 title: Document Map Overview
-page_title: Overview 
-description: Overview
+page_title: Document Map Overview
+description: Document Map Overview
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Data Items Overview
-page_title: Overview 
-description: Overview
+page_title: Data Items Overview
+description: Data Items Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/overview
 tags: overview
 published: True

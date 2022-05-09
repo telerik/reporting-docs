@@ -1,7 +1,7 @@
 ---
 title: WebServiceDataSource Component Overview
-page_title: Overview 
-description: Overview
+page_title: WebServiceDataSource Component Overview
+description: WebServiceDataSource Component Overview
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview
 tags: overview
 published: True

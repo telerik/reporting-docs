@@ -1,7 +1,7 @@
 ---
 title: Telerik Reporting REST Services Overview
-page_title: Overview 
-description: Overview
+page_title: Telerik Reporting REST Services Overview
+description: Telerik Reporting REST Services Overview
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview
 tags: overview
 published: True

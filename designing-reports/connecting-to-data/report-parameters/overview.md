@@ -1,7 +1,7 @@
 ---
 title: Report Parameters Overview
-page_title: Overview 
-description: Overview
+page_title: Report Parameters Overview
+description: Report Parameters Overview
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/overview
 tags: overview
 published: True

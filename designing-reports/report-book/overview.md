@@ -1,7 +1,7 @@
 ---
 title: Report Book Overview
-page_title: Overview 
-description: Overview
+page_title: Report Book Overview
+description: Report Book Overview
 slug: telerikreporting/designing-reports/report-book/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Customizing Overview
-page_title: Overview 
-description: Overview
+page_title: Customizing Overview
+description: Customizing Overview
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/overview
 tags: overview
 published: True

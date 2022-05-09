@@ -1,7 +1,7 @@
 ---
 title: Sorting Action Overview
-page_title: Overview 
-description: Overview
+page_title: Sorting Action Overview
+description: Sorting Action Overview
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/overview
 tags: overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Program the Report Definition Overview
-page_title: Overview 
-description: Overview
+page_title: Program the Report Definition Overview
+description: Program the Report Definition Overview
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/overview
 tags: overview
 published: True

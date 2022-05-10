@@ -1,6 +1,6 @@
 ---
 title: How To Disable Logging the Tracing Information from Telerik Reporting
-description: How to skip logging the tracing information from Telerik Reporting by your project Trace Listeners
+description: How to ignore logging the tracing information from Telerik Reporting by your project Trace Listeners
 type: how-to
 page_title: Skip Tracing Information Logged by Telerik Reporting
 slug: disable-logging-tracing-information-from-telerik-reporting
@@ -23,8 +23,8 @@ res_type: kb
 
 ## Description
 
-The Telerik Reporting engine uses [System.Diagnostics.Trace.WriteLine(string)](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.trace.writeline?view=net-6.0#system-diagnostics-trace-writeline(system-string)) method to log tracing information. Generally, this means that the information gets passed to all Trace Listeners and they should use it as required.
-However, the __Trace.WriteLine__ commands cannot be filtered out and don't pass through the filter [ShouldTrace](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.tracefilter.shouldtrace?view=net-6.0). This makes it impossible to filter out the information logged by the Reporting engine through a filter.
+The Telerik Reporting engine uses the [System.Diagnostics.Trace.WriteLine(string)](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.trace.writeline?view=net-6.0#system-diagnostics-trace-writeline(system-string)) method to log tracing information. Generally, this means that the information gets passed to all Trace Listeners and they should use it as required.
+However, the __Trace.WriteLine__ commands cannot be filtered out and don't pass through the filter [ShouldTrace](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.tracefilter.shouldtrace?view=net-6.0). This makes it impossible to filter out the information logged by the Reporting engine.
 
 ## Suggested Workarounds
 
@@ -85,7 +85,7 @@ public class CustomTraceListener : TextWriterTraceListener
 }
 ````
 
-Note that you may add Filter if needed to filter out any unnecessary details. 
+>note You may add a _Filter_ in the above code if you need to filter out any other unnecessary details. 
 
 The custom Trace Listener may be used to log custom information and skip the logs from the Telerik.Reporting assembly. Here is sample code:
 

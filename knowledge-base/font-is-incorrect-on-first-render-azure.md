@@ -42,20 +42,16 @@ Host an .NET Core web application project on Azure, then use it to render a repo
 ## Solution
 
 - Ensure that the fonts are present in the `wwwroot` folder of the project(which is the root folder of the app when it is run in Azure App service) 
-
 ````JavaScript
-"telerikReporting": {
-  "privateFonts": [
-    {
-      "fontFamily": "ubuntu",
-      "path": "Ubuntu-R.ttf",
-    }
-  ]
-}
+		"telerikReporting": {
+ 		  "privateFonts": [{
+      			"fontFamily": "ubuntu",
+     			"path": "Ubuntu-R.ttf",
+    				}]
+		            }
 ````
 
 - Invoke the `UseStaticFiles` method at the end of the `Configure` method in `Startup.cs`/`Program.cs` to resolve the wwwroot duplicate problem.
-
 ````CSharp
      public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

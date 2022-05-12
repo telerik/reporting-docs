@@ -70,9 +70,9 @@ The viewer is using a special Kendo subset that contains only the required widge
     
 ````xml
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js" /script>
-<link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.common.min.css" rel="stylesheet" id="commonCss" />
-<link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.blueopal.min.css" rel="stylesheet" id="skinCss" />
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js" /script>
+<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" id="commonCss" />
+<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" id="skinCss" />
 ````
 
 If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor. Each custom editor requires two JavaScript functions provided as attributes: __MatchFunction__ and __CreateEditorFunction__. 

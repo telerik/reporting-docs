@@ -64,7 +64,7 @@ let viewer;
 	
 	function loadScript(callback) {
 		const script = document.createElement("script");
-		script.src = "http://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js";
+		script.src = "http://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js";
 		script.async = true;
 		script.onload = callback;
 		document.body.appendChild(script);

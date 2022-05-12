@@ -155,32 +155,32 @@ public IActionResult Report()
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" /script>
-    <link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.common.min.css" rel="stylesheet" />
-    <link href="https://kendo.cdn.telerik.com/2020.3.1118/styles/kendo.blueopal.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
     <!-- the required Kendo subset is located in {Telerik Reporting installation path}\Html5\ReportViewer\js -->
     <script src="/ReportViewer/js/telerikReportViewer.kendo-x.x.x.x.min.js" /script>
     <!--If Kendo CDN is prefered here are the required Kendo widgets and bundles
     The minimum required widgets:
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.core.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.fx.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.userevents.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.draganddrop.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.mobile.scroller.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.data.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.popup.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.list.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.combobox.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.selectable.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.calendar.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.datepicker.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.listview.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.menu.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.data.odata.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.panelbar.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.tooltip.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.treeview.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.window.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.touch.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.core.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.fx.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.userevents.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.draganddrop.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.mobile.scroller.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.data.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.popup.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.list.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.combobox.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.selectable.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.calendar.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.datepicker.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.listview.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.menu.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.data.odata.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.panelbar.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.tooltip.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.treeview.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.window.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.touch.min.js" /script>
     Widgets bundle:
     kendo.all.min.js can be used instead of the above widget list
     -->

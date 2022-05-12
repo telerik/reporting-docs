@@ -174,7 +174,7 @@ and corresponds to the folder *Reports* in the *wwwroot* folder. Add the latter 
         loading...
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
-    <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js" /script>
+    <script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js" /script>
     <script src="/api/reportdesigner/resources/js/telerikReportViewer/" /script>
     <script src="/api/reportdesigner/designerresources/js/webReportDesigner/" /script>
     <script type="text/javascript">

@@ -65,7 +65,7 @@ npx create-react-app my-app
 3. Also in the head, add a reference for Kendo all:
 
    ````JS
-<script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
 ````
     
   

@@ -1,5 +1,5 @@
 ---
-title: 'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'
+title: CustomDefinitionStorage does not implement interface member IAssetsStorage.CreateFolderAsync(CreateFolderModel)
 description: The 'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)' is thrown after upgrade to R2 2022
 type: troubleshooting
 page_title: 'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'
@@ -22,15 +22,15 @@ res_type: kb
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
 		<tr>
-			<td>Report Viewer</td>
-			<td>HTML5 ASP.NET MVC</td>
+			<td>Report Designer</td>
+			<td>Web Report Designer</td>
 		</tr>
 	</tbody>
 </table>
 
 
 ## Description
-'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)' is thrown after upgrade to R2 2022
+The error `'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'` is thrown after upgrade to R2 2022.
 
 ## Error Message
 'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'
@@ -39,7 +39,8 @@ res_type: kb
 
 
 ## Cause\Possible Cause(s)
-We improved the ...
+In R2 2022, we improved the implementation of the IDefinitionStorage interface. Now the methods are asynchronous and you will need to replace
+the existing ones.
 
 ## Solution
 Implement the new interface methods:
@@ -47,55 +48,66 @@ Implement the new interface methods:
 
 public Task<ResourceFolderModel> CreateFolderAsync(CreateFolderModel model)
 {
-    throw new System.NotImplementedException();
-}
-
-public Task DeleteAsync(string uri)
-{
-    throw new System.NotImplementedException();
-}
-
-public Task DeleteFolderAsync(string uri)
-{
-    throw new System.NotImplementedException();
-}
-
-public Task<byte[]> GetAsync(string resourceName)
-{
-    throw new System.NotImplementedException();
+    // Creates a folder using the provided model.
+    throw new NotImplementedException();
 }
 
 public Task<ResourceFolderModel> GetFolderAsync(string uri)
 {
-    throw new System.NotImplementedException();
+    // Retrieves the existing folder model by the provided URI.
+    throw new NotImplementedException();
+}
+
+public Task DeleteFolderAsync(string uri)
+{
+    // Deletes a folder by the provided URI.
+    throw new NotImplementedException();
 }
 
 public Task<IEnumerable<ResourceModelBase>> GetFolderContentsAsync(string uri)
 {
-    throw new System.NotImplementedException();
-}
-
-public Task<ResourceFileModel> GetModelAsync(string uri)
-{
-    throw new System.NotImplementedException();
-}
-
-public Task<ResourceFileModel> RenameAsync(RenameResourceModel model)
-{
-    throw new System.NotImplementedException();
+    // Gets all resources contained in the given URI.
+    throw new NotImplementedException();
 }
 
 public Task<ResourceFolderModel> RenameFolderAsync(RenameFolderModel model)
 {
-    throw new System.NotImplementedException();
+    // Renames a folder located at model.OldUri.
+    throw new NotImplementedException();
+}
+
+public Task<byte[]> GetAsync(string resourceName)
+{
+    // Finds a resource by its name and returns its contents as byte array.
+    throw new NotImplementedException();
+}
+
+public Task DeleteAsync(string uri)
+{
+    // Deletes the given resource
+    throw new NotImplementedException();
+}
+
+public Task<ResourceFileModel> GetModelAsync(string uri)
+{
+    // Returns the resource model at provider URI or null if not found.
+    throw new NotImplementedException();
+}
+
+public Task<ResourceFileModel> RenameAsync(RenameResourceModel model)
+{
+    // Renames the given resource
+    throw new NotImplementedException();
 }
 
 public Task<ResourceFileModel> SaveAsync(SaveResourceModel model, byte[] resource)
 {
-    throw new System.NotImplementedException();
+    // Saves the raw data of a resource and returns its model.
+    throw new NotImplementedException();
 }
+
 
 ````
 
 ## See Also
-https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage
+[How to implement a report definition storage]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage%}).

@@ -30,7 +30,7 @@ res_type: kb
 
 
 ## Description
-The errors `'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'` is thrown after upgrade to R2 2022.
+Errors like `'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'` are thrown after upgrade to R2 2022.
 
 ## Error Message
 'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'

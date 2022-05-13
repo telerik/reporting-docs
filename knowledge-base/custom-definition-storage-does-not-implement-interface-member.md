@@ -1,8 +1,8 @@
 ---
 title: CustomDefinitionStorage does not implement interface member IAssetsStorage.CreateFolderAsync(CreateFolderModel)
-description: The 'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)' is thrown after upgrade to R2 2022
+description: The CustomDefinitionStorage does not implement interface member IAssetsStorage.CreateFolderAsync(CreateFolderModel) is thrown after upgrade to R2 2022
 type: troubleshooting
-page_title: 'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'
+page_title: CustomDefinitionStorage does not implement interface member IAssetsStorage.CreateFolderAsync(CreateFolderModel)
 slug: custom-definition-storage-does-not-implement-interface-member
 position: 
 tags: webreportdesigner
@@ -30,7 +30,7 @@ res_type: kb
 
 
 ## Description
-The error `'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'` is thrown after upgrade to R2 2022.
+The errors `'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'` is thrown after upgrade to R2 2022.
 
 ## Error Message
 'CustomDefinitionStorage' does not implement interface member 'IAssetsStorage.CreateFolderAsync(CreateFolderModel)'
@@ -39,7 +39,7 @@ The error `'CustomDefinitionStorage' does not implement interface member 'IAsset
 
 
 ## Cause\Possible Cause(s)
-In R2 2022, we improved the implementation of the IDefinitionStorage interface. Now the methods are asynchronous and you will need to replace
+In [R2 2022](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2022-16-1-22-511), we improved the implementation of the `IDefinitionStorage` interface. Now the methods are asynchronous and you will need to replace
 the existing ones.
 
 ## Solution
@@ -105,8 +105,6 @@ public Task<ResourceFileModel> SaveAsync(SaveResourceModel model, byte[] resourc
     // Saves the raw data of a resource and returns its model.
     throw new NotImplementedException();
 }
-
-
 ````
 
 ## See Also

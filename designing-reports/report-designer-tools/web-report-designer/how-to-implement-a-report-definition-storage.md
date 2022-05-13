@@ -18,7 +18,6 @@ Out-of-the-box we provide a __FileDefinitionStorage__ that is configured to use 
 
 > The Web Report Designer previews the reports in [Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}). The latter utilizes a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to render the reports. The [client-side reportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()%}) sent by the web designer is resolved to a [server-side ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources) by the *Resolve* method of the Reporting REST Service [ReportSource Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}). The ReportSource resolver is supposed to read report definitions created with the web report designer. For that reason, in the most of the cases when creating custom *IDefinitionStorage* it will be necessary to create also a [custom ReportSource resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) that is able to read the report definitions from the storage and return them as valid server-side ReportSources.         
 
-The *byte[]* returned by the *GetDefinition* method of the *IDefinitionStorage* will be processed by the virtual *GetReport* method of the *ReportDesignerController*. The default implementation of the *GetReport* method utilizes the *definitionId* s returned by the *ListDefinitions* method of the *IDefinitionStorage* to identify the type of the report definition in the *byte[]*. If the *definitionId* contains the extension '.trdp', the report will be treated as a TRDP package. Otherwise, the *byte[]* is regarded as an XML report definition, i.e. a TRDX report. For that reason, by default, if the *GetDefinition* method returns a report definition packed with the [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager), the corresponding *definitionId* must finish with the '.trdp' extension. If a different behavior is required, it will be necessary to overload the *GetReport* method of the *ReportDesignerController*. 
 
 ## Implement Custom Storage
 
@@ -28,43 +27,67 @@ The default implementation of the storage is the __FileDefinitionStorage__. It p
 
 {{source=CodeSnippets\CS\API\Telerik\WebReportDesigner\CustomDefinitionStorage.cs region=CustomDefinitionStorage}}
 ````c#
+
 public class CustomDefinitionStorage : IDefinitionStorage
 {
-    private string baseDir;
-
-    public string BaseDir
+    public Task<ResourceFolderModel> CreateFolderAsync(CreateFolderModel model)
     {
-        get
-        {
-            return this.baseDir;
-        }
-    }
-
-    public CustomDefinitionStorage(string baseDir)
-    {
-        this.baseDir = baseDir;
-    }
-
-    public IEnumerable<string> ListDefinitions()
-    {
-        // Retrieve all available reports in the database and return their unique identifiers.
+        // Creates a folder using the provided model.
         throw new NotImplementedException();
     }
 
-    public byte[] GetDefinition(string definitionId)
+    public Task<ResourceFolderModel> GetFolderAsync(string uri)
     {
-        // Retrieve the report definition bytes from the database.
+        // Retrieves the existing folder model by the provided URI.
         throw new NotImplementedException();
     }
 
-    public void SaveDefinition(string definitionId, byte[] definition)
+    public Task DeleteFolderAsync(string uri)
     {
-        // Save the report definiton bytes to the database.
+        // Deletes a folder by the provided URI.
+        throw new NotImplementedException();
     }
 
-    public void DeleteDefinition(string definitionId)
+    public Task<IEnumerable<ResourceModelBase>> GetFolderContentsAsync(string uri)
     {
-        // Delete the report definition from the database.
+        // Gets all resources contained in the given URI.
+        throw new NotImplementedException();
+    }
+
+    public Task<ResourceFolderModel> RenameFolderAsync(RenameFolderModel model)
+    {
+        // Renames a folder located at model.OldUri.
+        throw new NotImplementedException();
+    }
+
+    public Task<byte[]> GetAsync(string resourceName)
+    {
+        // Finds a resource by its name and returns its contents as byte array.
+        throw new NotImplementedException();
+    }
+
+    public Task DeleteAsync(string uri)
+    {
+        // Deletes the given resource
+        throw new NotImplementedException();
+    }
+
+    public Task<ResourceFileModel> GetModelAsync(string uri)
+    {
+        // Returns the resource model at provider URI or null if not found.
+        throw new NotImplementedException();
+    }
+
+    public Task<ResourceFileModel> RenameAsync(RenameResourceModel model)
+    {
+        // Renames the given resource
+        throw new NotImplementedException();
+    }
+
+    public Task<ResourceFileModel> SaveAsync(SaveResourceModel model, byte[] resource)
+    {
+        // Saves the raw data of a resource and returns its model.
+        throw new NotImplementedException();
     }
 }
 ````
@@ -79,10 +102,9 @@ public ReportDesignerController()
 
     this.ReportDesignerServiceConfiguration = new ReportDesignerServiceConfiguration
     {
-        DefinitionStorage = new CustomDefinitionStorage(this.reportsDefinitionsPath),
+        DefinitionStorage = new CustomDefinitionStorage(),
         SettingsStorage = new FileSettingsStorage(this.reportsSettingsPath)
     };
 }
 ````
 
-The __BaseDir__ property sets the base path for the reports and the resources they reference. For example, CSV or JSON files used in CsvDataSource and JsonDataSource components.

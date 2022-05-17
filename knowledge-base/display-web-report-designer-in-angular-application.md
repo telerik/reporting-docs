@@ -1,5 +1,5 @@
 ---
-title: Displaying the Web Report Designer in Angular application.
+title: Displaying the Web Report Designer in Angular application
 description: Use Telerik Web Report Designer in Angular application
 type: troubleshooting
 page_title: Displaying the Web Report Designer in Angular application.
@@ -37,7 +37,7 @@ into their web applications.
 In this article we are going to integrate the jQuery-based Telerik Web Report Designer and HTML5 Telerik Report Viewer in angular application.
 
 ## Steps
-1. Add a reference to all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview#prerequisites%})
+- Add a reference to all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview#prerequisites%})
 in the main html page of the application. In the demo project linked below, this is `index.html`.
 
 	````HTML
@@ -51,22 +51,25 @@ in the main html page of the application. In the demo project linked below, this
   </head>
 ````
 
-2. Declare jQuery in the component where the Telerik Web Report Designer will be initialized
+
+- Declare jQuery in the component where the Telerik Web Report Designer will be initialized
 	
 	````TypeScript
 declare var $: any;
 ````
 
-3. Initialize the Telerik Web Report Designer in `designer.component.ts`.
+
+- Initialize the Telerik Web Report Designer in `designer.component.ts`.
 	
 	````TypeScript
 this.designer = $("#webReportDesigner").telerik_WebReportDesigner({
 	serviceUrl: "https://demos.telerik.com/reporting/api/reportdesigner/",
 	report: "Product Catalog.trdp"
 }).data("telerik_WebDesigner");
-```
+````
 
-4. Reference the Kendo LESS themes for the report viewer in `viewer.component.html`
+
+- Reference the Kendo LESS themes for the report viewer in `viewer.component.html`
 
 	````HTML
 <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
@@ -75,7 +78,8 @@ this.designer = $("#webReportDesigner").telerik_WebReportDesigner({
     <div>
 ````
 
-5. Initialize the Telerik HTML5 Report Viewer in viewer.component.ts
+
+- Initialize the Telerik HTML5 Report Viewer in viewer.component.ts
 
 	````TypeScript
 this.viewer = $("#reportViewer").telerik_ReportViewer({

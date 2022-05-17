@@ -37,7 +37,7 @@ into their web applications.
 In this article we are going to integrate the jQuery-based Telerik Web Report Designer and HTML5 Telerik Report Viewer in angular application.
 
 ## Steps
-- Add a reference to all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview#prerequisites%})
+- Add a reference to all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#prerequisites)
 in the main html page of the application. In the demo project linked below, this is `index.html`.
 
 	````HTML
@@ -115,4 +115,4 @@ if the resources are already loaded, you will need to clean up the duplicated re
 That is why this article shows how to use the Telerik Web Report Designer in angular application with jQuery-based HTML5 Telerik Report Viewer.
 
 ## See Also
-[Test whether Web Report Designer Service is Responding]({%slug telerikreporting/knowledge-base/test-web-report-designer-service%})
+[Test whether Web Report Designer Service is Responding]({%slug test-web-report-designer-service%})

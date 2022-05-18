@@ -18,7 +18,7 @@ In Visual Studio:
 
 1. Open the report in design view. 
 
-1. Expand the Telerik__Reporting__ tab of the Toolbox. 
+1. Expand the __Telerik Reporting__ tab of the Toolbox. 
 
 1. Select the report item that you want to place. 
 

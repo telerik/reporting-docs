@@ -44,6 +44,12 @@ The Excel Rendering Extensions tries to reproduce as much of the original report
 
 * Overlapping items are not supported and will be moved down/right by the Excel renderer so that they do not overlap.
 
+* When the TextBox grows vertically to accommodate larger content, Excel may render the text with larger space between the lines. However, the Reporting engine keeps the cell size consistent between the renderings, which may cause the text at the bottom not fit into the visible part of the cell. The next image demonstrates this:
+
+	>caption PrintPreview in Designer vs Excel Rendering
+	
+	[!PrintPreview vs Excel](images/PreviewVsExcelRendering.png)
+
 * When you use the CanGrow and CanShrink properties, the Rendering Engine will utilize the AutoFit functionality of Excel. That means that cell content will resize according to Excel behavior which might not produce the expected result. Furthermore, AutoFit is applied by Excel only for horizontal text, so if you have rotated text (at an angle different than zero), the CanGrow and CanShrink properties might not behave as expected. Rotated text is realized via Excel's built-in cell rotation settings. 
 
 * Multi-column reports are not supported.

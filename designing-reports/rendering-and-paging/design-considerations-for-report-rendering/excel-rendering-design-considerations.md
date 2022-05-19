@@ -44,7 +44,9 @@ The Excel Rendering Extensions tries to reproduce as much of the original report
 
 * Overlapping items are not supported and will be moved down/right by the Excel renderer so that they do not overlap.
 
-* When the TextBox grows vertically to accommodate larger content, Excel may render the text with larger space between the lines. However, the Reporting engine keeps the cell size consistent between the renderings, which may cause the text at the bottom not fit into the visible part of the cell. The next image demonstrates this:
+* When the TextBox grows vertically to accommodate larger content, Excel may render the text with larger space between the lines. 
+
+	The Reporting engine measures each line of text and sets the cell height to match the accumulated line heights. However, Excel text rendering engine might use a different line spacing and padding within the cell bounds, which might cause the text at the bottom not to fit into the visible part of the cell. This is easily noticeable on the image below, which shows the difference in line spacings between the Image rendering and Excel rendering.
 
 	>caption PrintPreview in Designer vs Excel Rendering
 	

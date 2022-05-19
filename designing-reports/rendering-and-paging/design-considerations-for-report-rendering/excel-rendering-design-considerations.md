@@ -50,7 +50,7 @@ The Excel Rendering Extensions tries to reproduce as much of the original report
 
 	>caption PrintPreview in Designer vs Excel Rendering
 	
-	[!PrintPreview vs Excel](images/PreviewVsExcelRendering.png)
+	![PrintPreview vs Excel](images/PreviewVsExcelRendering.png)
 
 * When you use the CanGrow and CanShrink properties, the Rendering Engine will utilize the AutoFit functionality of Excel. That means that cell content will resize according to Excel behavior which might not produce the expected result. Furthermore, AutoFit is applied by Excel only for horizontal text, so if you have rotated text (at an angle different than zero), the CanGrow and CanShrink properties might not behave as expected. Rotated text is realized via Excel's built-in cell rotation settings. 
 

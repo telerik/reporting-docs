@@ -22,7 +22,7 @@ This article elaborates on how to localize the strings used and displayed by the
 
   ````js
 <script type="text/javascript">
-    import("/Scripts/WebReportDesignerStrings-{{buildversion}}.js").then((result) => {
+    import("/Scripts/WebReportDesignerStringsBase-{{buildversion}}.js").then((result) => {
       window.telerikWebDesignerResources = new result.WebReportDesignerStringsBase();
     });
   </script>

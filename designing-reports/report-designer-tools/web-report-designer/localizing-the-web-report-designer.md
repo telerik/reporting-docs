@@ -12,27 +12,27 @@ position: 6
 
 This article elaborates on how to localize the strings used and displayed by the Web Report Designer.
 
-1. __Include script containing strings.__ Create a JavaScript file in your application, in a location where it can be referenced by the HTML-page/View containing the Web Report Designer initialization script. This can for example be inside the 'Scripts' folder of your website.             
+1. __Include script containing strings__. Create a JavaScript file in your application, in a location where it can be referenced by the HTML-page/View containing the Web Report Designer initialization script. This can for example be inside the 'Scripts' folder of your website.             
 
-{{source=CodeSnippets\WRD\WebReportDesignerStringsBase}}
+	{{source=CodeSnippets\WRD\WebReportDesignerStringsBase}}
  
-   >note On the last line in the file above there is a comment with 'sourceMappingURL' that is automatically included as part of the build process. This line can be removed.
+	>note On the last line in the file above there is a comment with 'sourceMappingURL' that is automatically included as part of the build process. This line can be removed.
 
-1. __Reference the file containing the strings.__ On the page containing the Web Report Designer and its initialization script, add in the following snippet of JavaScript to load in the strings.             
+1. __Reference the file containing the strings__. On the page containing the Web Report Designer and its initialization script, add in the following snippet of JavaScript to load in the strings.             
 
-  ````js
+	````js
 <script type="text/javascript">
-    import("/Scripts/WebReportDesignerStringsBase-{{buildversion}}.js").then((result) => {
-      window.telerikWebDesignerResources = new result.WebReportDesignerStringsBase();
-    });
-  </script>
+	import("/Scripts/WebReportDesignerStringsBase-{{buildversion}}.js").then((result) => {
+		window.telerikWebDesignerResources = new result.WebReportDesignerStringsBase();
+	});
+	</script>
 ````
 
-Make sure to update the string-path passed as a parameter for the import-function to correctly resolve the file from the previous step.
+	Make sure to update the string-path passed as a parameter for the import-function to correctly resolve the file from the previous step.
 
-   >note The localization file must be loaded on the page after jQuery and Web Report Designer scripts have been loaded.
+	>note The localization file must be loaded on the page after jQuery and Web Report Designer scripts have been loaded.
 
-1. __Translate the strings.__ 
+1. __Translate the strings__ .
 
 >tip The Web Report Designer is in active development and new strings might be added in new releases. The JavaScript code-snippet in step 1 above is updated on each release.
 

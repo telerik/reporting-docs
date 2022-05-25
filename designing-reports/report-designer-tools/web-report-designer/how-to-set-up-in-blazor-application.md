@@ -99,9 +99,9 @@ public class ReportDesignerController : ReportDesignerControllerBase
     
       ````html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js" /script>
+<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js" /script>
 <script src="/api/reportdesigner/resources/js/telerikReportViewer" /script>
-<script src="/api/reportdesigner/designerresources/js/webReportDesigner-16.0.22.119.min.js/" /script>
+<script src="/api/reportdesigner/designerresources/js/webReportDesigner-{{buildversion}}.min.js/" /script>
 ````
 
 1. Add [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the __Pages/_Host.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__ : 

@@ -5,7 +5,7 @@ description: Licensing
 slug: telerikreporting/licensing
 tags: licensing
 published: True
-position: 10
+position: 12
 ---
 
 # Licensing

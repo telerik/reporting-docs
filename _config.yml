@@ -19,10 +19,10 @@ navigation:
         position: 5
         title: "Download & Installation"
     upgrade:
-        position: 5
+        position: 11
         title: "Upgrade"
     styling:
-        position: 
+        position: 6
         title: "Styles & Appearance"
     styling/rendering-and-paging:
         position: 8
@@ -34,7 +34,7 @@ navigation:
         position: 1
         title: "Styling"
     report-items:
-        position: 
+        position: 3
         title: "Report Items"
     report-items/table-crosstab-list:
         position: 10
@@ -118,7 +118,7 @@ navigation:
         position: 15
         title: "How To"
     doc-output:
-        position: 
+        position: 8
         title: "Document Output"
     doc-output/cache-management:
         position: 1
@@ -133,7 +133,7 @@ navigation:
         position: 11
         title: "Configure the Export Formats"  
     interactivity:
-        position: 
+        position: 7
         title: "Interactivity"
     interactivity/bookmarks:
         position: 10
@@ -154,13 +154,13 @@ navigation:
         position: 13
         title: "Table of Contents"     
     globalization:
-        position: 
+        position: 10
         title: "Globalization"
     importing-reports:
-        position: 
+        position: 9
         title: "Importing Reports"
     embedding-reports:
-        position: 
+        position: 5
         title: "Embedding Reports"
     embedding-reports/report-sources:
         position: 9
@@ -313,7 +313,7 @@ navigation:
         position: 4
         title: "Call the Report Engine via APIs" 
     designing-reports:
-        position: 
+        position: 4
         title: "Creating Reports"  
     designing-reports/report-designer-tools:
         position: 2
@@ -424,10 +424,10 @@ navigation:
         position: 10
         title: "Report Book" 
     knowledge-base:
-        position: 8
+        position: 20
         title: "Knowledge Base"
     api:
-        position: 50
+        position: 30
         title: "API Reference"
 ## The application virtual path
 baseurl: /reporting

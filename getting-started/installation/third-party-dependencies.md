@@ -3,6 +3,7 @@ title: Third-Party Dependencies
 page_title: Third-Party Dependencies 
 description: Third-Party Dependencies
 slug: telerikreporting/using-reports-in-applications/third-party-dependencies
+previous_url: /using-reports-in-applications/third-party-dependencies
 tags: third-party,dependencies
 published: True
 position: 9

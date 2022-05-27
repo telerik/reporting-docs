@@ -61,7 +61,15 @@ The toolbar on the Windows Forms Report Viewer provides basic functionality for 
 
 * Show/Hide document map
 
->.NET Framework __Client Profile__ is not supported. 
+## System Requirements
+
+* Visual Studio 2010 or later.
+
+* .NET Framework 4 or above (.NET Framework 4 __Client Profile__ is not supported)
+
+* .NET Core 3.1 
+
+* .NET 5+
 
 ## How it works
 

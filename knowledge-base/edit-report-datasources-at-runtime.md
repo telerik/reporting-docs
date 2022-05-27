@@ -33,25 +33,26 @@ An example in which this method will be useful is when the connection string, us
 
 Let's assume that the report file is with the `TRDP` extension, then the following code could be used to [unpackage]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}#unpackaging) the report and then to edit its connection and even the SQL query:
 
-
 ````C#
- var query = "SQL_QUERY_HERE";
- var reportPackager = new ReportPackager();
- var reportProcessor = new ReportProcessor();
- Telerik.Reporting.Report report = null;
+var query = "SQL_QUERY_HERE";
+var reportPackager = new ReportPackager();
+var reportProcessor = new ReportProcessor();
+Telerik.Reporting.Report report = null;
 
-     using (var sourceStream = System.IO.File.OpenRead("Report1.trdp")){
-                report = (Telerik.Reporting.Report)reportPackager.UnpackageDocument(sourceStream);
-            }
+using (var sourceStream = System.IO.File.OpenRead("Report1.trdp"))
+{
+	report = (Telerik.Reporting.Report)reportPackager.UnpackageDocument(sourceStream);
+}
 
- var sqlDS = report.GetDataSources().OfType<SqlDataSource>();
+var sqlDS = report.GetDataSources().OfType<SqlDataSource>();
             
-     foreach (var sqlDataSource in sqlDS){
-                sqlDataSource.ConnectionString = "CONNECTION_STRING_HERE";
-                sqlDataSource.SelectCommand = query;
-            }
+foreach (var sqlDataSource in sqlDS)
+{
+	sqlDataSource.ConnectionString = "CONNECTION_STRING_HERE";
+	sqlDataSource.SelectCommand = query;
+}
            
- var irs = new InstanceReportSource() { ReportDocument = report };
+var irs = new InstanceReportSource() { ReportDocument = report };
 ````
 
 

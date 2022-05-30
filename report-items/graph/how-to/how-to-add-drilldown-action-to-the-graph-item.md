@@ -28,21 +28,21 @@ You can use a report designer of your choice - the described approach is valid f
     
     ````sql
 SELECT
-PC.Name AS ProductCategory
-, PS.Name AS ProductSubCategory
-, P.Name AS ProductName
-, SOD.LineTotal
-, SOH.OrderDate
-FROM
-Production.Product AS P
-INNER JOIN Production.ProductSubcategory AS PS
-INNER JOIN Production.ProductCategory AS PC
-ON PS.ProductCategoryID = PC.ProductCategoryID
-ON P.ProductSubcategoryID = PS.ProductSubcategoryID
-INNER JOIN Sales.SalesOrderDetail AS SOD
-ON P.ProductID = SOD.ProductID
-INNER JOIN Sales.SalesOrderHeader AS SOH
-ON SOD.SalesOrderID = SOH.SalesOrderID
+	PC.Name AS ProductCategory
+	, PS.Name AS ProductSubCategory
+	, P.Name AS ProductName
+	, SOD.LineTotal
+	, SOH.OrderDate
+	FROM
+	Production.Product AS P
+	INNER JOIN Production.ProductSubcategory AS PS
+	INNER JOIN Production.ProductCategory AS PC
+	ON PS.ProductCategoryID = PC.ProductCategoryID
+	ON P.ProductSubcategoryID = PS.ProductSubcategoryID
+	INNER JOIN Sales.SalesOrderDetail AS SOD
+	ON P.ProductID = SOD.ProductID
+	INNER JOIN Sales.SalesOrderHeader AS SOH
+	ON SOD.SalesOrderID = SOH.SalesOrderID
 ````
 
 
@@ -83,8 +83,6 @@ ON SOD.SalesOrderID = SOH.SalesOrderID
 * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 
 * [Drilldown Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%})
-
-* [How to Add a Drilldown/Toggle Visibility Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action%})
 
 * [Graph Item Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/graph-item-actions%})
 

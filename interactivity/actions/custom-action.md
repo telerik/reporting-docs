@@ -17,46 +17,30 @@ To define a [CustomAction](/reporting/api/Telerik.Reporting.CustomAction) use th
 Here is an example how to get the custom action's parameters in __InteractiveActionExecuting()__ event of __WinForms Report Viewer__. 
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsCustomInteractiveActionExecutingEventSnippet}}
-````C#
-void reportViewer1_CustomInteractiveActionExecuting(object sender, Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs args)
-{
-	var strB = new System.Text.StringBuilder();
-	strB.AppendLine("ReportItem name: " + args.Action.ReportItemName);
-	
-	var customAction = args.Action as Telerik.Reporting.Processing.CustomAction;
-	if (null != customAction)
-	{
-	foreach (var p in customAction.Parameters)
-	{
-		strB.AppendLine(string.Format("Parameter \"{0}\" value: {1}", p.Key, p.Value));
-	}
-	}
-	
-	strB.AppendLine(string.Format("Mouse cursor position: {0}; Item bounds: {1}", args.CursorPos, args.Bounds));
-	
-	MessageBox.Show(strB.ToString());
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsCustomInteractiveActionExecutingEventSnippet}}
-````VB
-' Handles the InteractiveActionExecuting event
-' Do not forget to add the WithEvents clause on ReportViewer1 instantiation if needed.
-Private Sub reportViewer1_CustomInteractiveActionExecuting(sender As Object, args As Telerik.ReportViewer.Common.InteractiveActionCancelEventArgs) Handles ReportViewer1.InteractiveActionExecuting
-	Dim strB = New System.Text.StringBuilder()
-	strB.AppendLine("ReportItem name: " + args.Action.ReportItemName)
-	
-	Dim customAction = TryCast(args.Action, Telerik.Reporting.Processing.CustomAction)
-	If customAction IsNot Nothing Then
-	For Each p As KeyValuePair(Of String, Object) In customAction.Parameters
-		strB.AppendLine(String.Format("Parameter ""{0}"" value: {1}", p.Key, p.Value))
-	Next
-	End If
-	
-	strB.AppendLine(String.Format("Mouse cursor position: {0}; Item bounds: {1}", args.CursorPos, args.Bounds))
-	
-	MessageBox.Show(strB.ToString())
-End Sub
-````
+
+
+# How to Add a Custom Action
+
+## Adding a custom action using the Report Designer
+
+1. In Design view, right-click the report item to which you want to add a link and then click __Properties__. 
+
+1. In The Properties dialog box for that report item, click __Action__. The [Edit Action dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%}) will open. 
+
+1. Select __Custom__. An additional section appears in the dialog box, containing a button titled __Select parameters__. 
+
+1. Clicking the button will open the __Edit Custom Action Parameters__ dialog box. Add one or more parameters, defining their *Name*  and *Value*  properties. 
+
+1. Click __OK__ when ready. 
+
+1. To test the action, preview the report and click the report item with the applied custom action. A message will appear, displaying information for the action's properties.             
+
+## Adding a custom action programatically
+
+{{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewCustomActionSnippet}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewCustomActionSnippet}}
+
 
 # See Also
 
@@ -64,4 +48,6 @@ End Sub
  
  * [Interactive Action Events]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/interactive-action-events%})
  
- * [How to Add a Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action%})
+ * [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
+
+ * [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})

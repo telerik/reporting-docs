@@ -38,3 +38,23 @@ Culture affects the way strings are formatted in Telerik Reporting. For example,
 * __Text Direction (LTR/RTL)__ 
 
 Middle Eastern languages such as Hebrew and Arabic are generally written from right to left. If your TextBox will contain text written using a RTL script, then you simply need to specify the appropriate Culture, for example "he" for Hebrew and "ar" for Arabic.
+
+# See Also
+
+ * [HTML5 Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%})
+ 
+ * [Angular Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization%})
+  
+ * [React Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/localization%})
+ 
+ * [HTML5 ASP.NET MVC Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/localization%})
+ 
+ * [HTML5 ASP.NET Web Forms Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/localization%})
+
+ * [Windows Forms Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
+ 
+ * [WPF Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/report-viewer-localization%})
+
+ * [Silverlight Forms Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/report-viewer-localization%})
+ 
+ * [(legacy) ASP.NET Web Forms Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/report-viewer-localization%})

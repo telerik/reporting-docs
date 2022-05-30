@@ -3,6 +3,7 @@ title: Export Formats
 page_title: Export Formats 
 description: Export Formats
 slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats
+previous_url: /using-reports-in-applications/export-and-configure/export-formats
 tags: export,formats
 published: True
 position: 0

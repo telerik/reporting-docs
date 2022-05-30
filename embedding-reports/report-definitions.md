@@ -3,6 +3,7 @@ title: Reference Report Definitions in Applications
 page_title: Reference Report Definitions in Applications 
 description: Reference Report Definitions in Applications
 slug: telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications
+previous_url: /using-reports-in-applications/reference-report-definitions-in-applications
 tags: reference,report,definitions,in,applications
 published: True
 position: 1

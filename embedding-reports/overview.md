@@ -3,6 +3,7 @@ title: Using Reports in Applications Overview
 page_title: Using Reports in Applications Overview
 description: Using Reports in Applications Overview
 slug: telerikreporting/using-reports-in-applications/overview
+previous_url: /using-reports-in-applications/overview
 tags: overview
 published: True
 position: 0

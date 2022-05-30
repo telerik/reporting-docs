@@ -3,6 +3,7 @@ title: .NET Core Support
 page_title: .NET Core Support 
 description: .NET Core Support
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
+previous_url: /using-reports-in-applications/dot-net-core-support
 tags: .net,core,support
 published: True
 position: 7

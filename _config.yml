@@ -37,10 +37,8 @@ navigation:
         position: 3
         title: "Report Items"
     report-items/table-crosstab-list:
-        position: 10
         title: "Table/Crosstab/List"    
     report-items/graph:
-        position: 11
         title: "Graph"
     report-items/graph/chart-types:
         position: 10
@@ -79,7 +77,6 @@ navigation:
         position: 12
         title: "How To"
     report-items/map:
-        position: 12
         title: "Map"
     report-items/map/structure:
         position: 10
@@ -91,10 +88,8 @@ navigation:
         position: 12
         title: "How To"
     report-items/htmltextbox:
-        position: 13
         title: "HtmlTextBox"
     report-items/barcode:
-        position: 14
         title: "Barcode"
     report-items/barcode/barcode-types:
         position: 15
@@ -115,7 +110,7 @@ navigation:
         position: 13
         title: "Data Matrix"
     report-items/how-to:
-        position: 15
+        position: 100
         title: "How To"
     doc-output:
         position: 5

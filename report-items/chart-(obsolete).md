@@ -1,14 +1,14 @@
 ---
-title: Chart (obsolete)
-page_title: Chart (obsolete) 
-description: Chart (obsolete)
+title: (Obsolete) Chart 
+page_title: (Obsolete) Chart 
+description: "(Obsolete) Learn more about the Chart as a report item when using Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/chart-(obsolete)
-tags: chart,(obsolete)
+tags: telerik, reporting, report, item, chart, obsolete
 published: True
-position: 16
+position: 90
 ---
 
-# Chart (obsolete)
+# (Obsolete) Chart 
 
 > The Chart item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item. The Graph item is most often used for building powerful OLAP/Pivot charts. The Chart item is not supported in .NET Core projects and in projects deployed on Azure. 
 

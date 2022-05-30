@@ -3,7 +3,6 @@ title: Crystal Reports converter
 page_title: Crystal Reports converter 
 description: Crystal Reports converter
 slug: telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter
-previous_url: /designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter
 tags: crystal,reports,converter
 published: True
 position: 1

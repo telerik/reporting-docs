@@ -10,7 +10,7 @@ position: 1
 
 # How to Add filtering to Group
 
-A filter defined on a report/table group limits the group members to certain values. These filters operate over the group members after the groups are calculated. Group filters are similar to the HAVING clause in a SQL statement.         
+A filter defined on a report/table group limits the group members to certain values. These filters operate over the group members after the groups are calculated. Group filters are similar to the HAVING clause in a SQL statement. 
 
 We will use the filter to hide/show the dynamic groups members. Additionally we add the possibility for dynamic filtering by using report parameters. The example shown is based on the [ProductSales](https://demos.telerik.com/reporting/product-sales) demo report
 
@@ -22,7 +22,7 @@ We will use the filter to hide/show the dynamic groups members. Additionally we 
 
 	![Group Еxplorer](images/DataItems/diGroupExplorer.PNG)
 
-1. Define a new [Report Parameter](%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) _DetailsForYear_ as shown on the picture. Use the same DataSource as for the report. The parameter should be MultiValue.
+1. Define a new [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) _DetailsForYear_ as shown on the picture. Use the same DataSource as for the report. The parameter should be MultiValue.
 
 	>caption Define Report Parameter  
 

@@ -42,7 +42,7 @@ The following NuGet packages are required. When using our *NuGet* packages, the 
 |System.Threading.AccessControl|4.5.2000|
 |sqlite-net-pcl|1.7.302-beta|
 
-## Implemented Features and Limitations
+## Features and Limitations
 
 On Windows, the reporting engine still relies on GDI+ library because it provides the fastest and most convenient way to process text, which is essential to the product. In Windows environment .NET Core runtime manages to resolve the GDI+ calls natively, but for Linux and macOS a set of libraries should be installed (see below). Most of the processing and rendering features that work on Windows using .NET Framework 4 or higher, are also supported in .NET Core projects with the new .NET Standard assemblies. 
 
@@ -72,7 +72,7 @@ Supported functionalities:
 
 * [JSON-based reporting configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}). For CLI projects the JSON configuration has precedence over the current XML-based reporting configuration. 
 
-## Using Telerik Reporting in Applications on Linux Platform
+## Deploying on Linux
 
 When deploying to a Linux machine, make sure it has installed the library [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/), which is a Mono implementation of GDI+ API for non-Windows operating systems. The following snippet performs an update and installs the necessary libraries on Ubuntu/Debian: 
     
@@ -97,7 +97,7 @@ Since __libgdiplus__ is not a perfect replacement for the Windows graphics libra
 
 The fonts used in the reports should be installed on the Linux machine, otherwise the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) configuration element. 
 
-## Using Telerik Reporting in Applications on macOS Platform
+## Deploying on macOS
 
 1. Install  [.NET Core for macOS](https://dotnet.microsoft.com/download).
 
@@ -121,7 +121,7 @@ dotnet build
 
 	and run the application. When running in debug mode Visual Studio Code will ask to add debug configuration to _launch.json_.
 
-## Containerize Telerik Reporting
+## Using Container Platforms 
 
 Telerik Reporting can be used in a Docker image if it meets the GDI+ requirements. The __microsoft/windowsservercore__ images distributed by Microsoft contain the graphics library, but their size is significantly bigger compared to the size of the dotnet runtime in a Linux container. Such container only needs the __libgdiplus__ and its accompanying libraries installed, which can be done through the following *dockerfile* snippet: 
     
@@ -139,7 +139,7 @@ Having these three libraries installed ensures that Telerik Reporting will run o
 
 If you need to use Telerik Reporting in a Windows container, you need to target a Windows base image that includes GDI support. This is also the approach recommended by the Microsoft, see [Container Base Images - Choosing a base image](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images#choosing-a-base-image) help article for additional reference. 
 
-## Examples
+## Sample Projects
 
 Telerik Reporting ships with a ready-made .NET Core examples that demonstrate how to show the sample reports in an ASP.NET Core, WinForms Core and WPF Core application. The ASP.NET Core demo also shows how to inject an __appsettings.json__ configuration file to the controller and how to initialize a WebHostBuilder so it runs under Windows and Linux. 
 

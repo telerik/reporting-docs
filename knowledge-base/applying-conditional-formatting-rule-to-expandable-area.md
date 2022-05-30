@@ -33,7 +33,7 @@ To solve this issue, refer to the [demo report](https://github.com/telerik/repor
 
 2. Add a table that displays only the items and [add a row group]({% slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item %}) based on `"=Fields.Group"`.
 
-3. Set the [Toggle Visibility action]({% slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action %}) on `"=Fields.Group"`.
+3. Set the [Toggle Visibility action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%}#how-to-add-a-drilldowntoggle-visibility-action) on `"=Fields.Group"`.
 
 4. Set [conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) to the `"=Fields.Group"` cell as follows:
 
@@ -50,9 +50,4 @@ To solve this issue, refer to the [demo report](https://github.com/telerik/repor
 		**Operator** `=`
 
 		**Value** `=0`
-
-
-
-
-
 

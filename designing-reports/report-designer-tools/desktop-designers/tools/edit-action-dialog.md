@@ -16,19 +16,19 @@ Define an action so that a user can click on the report and link to a URL, to a 
 
 The __Edit Action__ offers the following choices: 
 
-* None             
+* None 
 
-* Sorting             
+* Sorting 
 
-* Navigate to Report             
+* Navigate to Report 
 
-* Navigate to URL             
+* Navigate to URL 
 
-* Navigate to Bookmark             
+* Navigate to Bookmark 
 
-* Toggle Visibility             
+* Toggle Visibility 
 
-* Custom               
+* Custom 
 
   ![Edit Action Dialog](images/UI/EditActionDialog.png)
 
@@ -47,15 +47,3 @@ Depending on the purpose of the interactive actions you can choose the appropria
 * [Drilldown Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%})
 
 * [Custom Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%})
-
-* [How to: Add a Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/how-to-add-a-report-item-to-document-map%})
-
-* [How to: Add a Bookmark Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action%})
-
-* [How to: Add a Hyperlink Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action%})
-
-* [How to: Add a Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action%})
-
-* [How to: Add a Drilldown Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action%})
-
-* [How to: Add a Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action%})

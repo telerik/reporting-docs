@@ -105,7 +105,7 @@ using Microsoft.AspNetCore.Mvc;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
 	<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
-	<script src="/api/reportdesigner/designerresources/js/webReportDesigner-{{buildversion}}.min.js/"></script>
+	<script src="/api/reportdesigner/designerresources/js/webReportDesigner-16.1.22.511.min.js/"></script>
 ````
 
 

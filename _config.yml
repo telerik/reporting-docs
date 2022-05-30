@@ -34,7 +34,7 @@ navigation:
         position: 1
         title: "Styling"
     report-items:
-        position: 3
+        position: 
         title: "Report Items"
     report-items/table-crosstab-list:
         position: 10
@@ -118,7 +118,7 @@ navigation:
         position: 15
         title: "How To"
     doc-output:
-        position: 8
+        position: 
         title: "Document Output"
     doc-output/cache-management:
         position: 1
@@ -133,7 +133,7 @@ navigation:
         position: 11
         title: "Configure the Export Formats"  
     interactivity:
-        position: 7
+        position: 
         title: "Interactivity"
     interactivity/bookmarks:
         position: 10
@@ -154,13 +154,13 @@ navigation:
         position: 13
         title: "Table of Contents"     
     globalization:
-        position: 10
+        position: 
         title: "Globalization"
     importing-reports:
-        position: 9
+        position: 
         title: "Importing Reports"
     embedding-reports:
-        position: 5
+        position: 
         title: "Embedding Reports"
     embedding-reports/report-sources:
         position: 9

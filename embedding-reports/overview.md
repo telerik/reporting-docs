@@ -1,25 +1,25 @@
 ---
-title: Using Reports in Applications Overview
-page_title: Using Reports in Applications Overview
-description: Using Reports in Applications Overview
+title: Overview
+page_title: Embedding Reports Overview
+description: "Learn more about using Telerik Reporting reports in applications."
 slug: telerikreporting/using-reports-in-applications/overview
 previous_url: /using-reports-in-applications/overview
-tags: overview
+tags: telerik, reporting, embedding, reports, overview
 published: True
 position: 0
 ---
 
-# Using Reports in Applications Overview
+# Embedding Reports Overview
 
 You can add reports to diverse types of web and desktop applications. The purpose of integrating Telerik Reporting into applications is to deliver interactive reports directly to your business system. The integration allows users to view and effortlessly export the report document to various formats. 
 
 This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting.
 
-## How to display reports in applications
+## Displaying Reports in Applications
 
 Telerik Reporting offers numerous ways to [Display Reports in Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}). You can achieve this with the Report Viewer's UI components that are tailored for a specific technology, for example:
 
-### Web applications
+### Web Applications
 
 * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) - an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. 
 
@@ -33,7 +33,7 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 
 * [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) - a Blazor component that wraps the HTML5 Report Viewer. 
 
-### Desktop applications
+### Desktop Applications
 
 * [WinForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}) - a composite of standard Windows Forms controls that is suitable for WinForms and WPF projects. 
 
@@ -41,17 +41,17 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 
 * [WinUI Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%}) - a composite of Telerik UI for WinUI desktop controls that is suitable for WinUI 3 projects. 
 
-## How to add the report engine
+## Adding the Report Engine
 
 There are many ways to add the report engine. You can [Host the Report Engine Remotely]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview%}), you can [Call the Report Engine via APIs]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}), or you can use the [Telerik Report Server](https://www.telerik.com/report-server): 
 
-### Host report engine remotely
+### Generating Reports Remotely
 
 * [Telerik Reporting Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) - provide an Application Programming Interface (API) over HTTP to the report’s generation engine. It can be used by web and desktop report viewers as well as by any third-party client applications. 
 
 * [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) - is based on [Windows Communication Foundation (WCF)](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/dd456779(v=vs.100)?redirectedfrom=MSDN) and is designed for the purposes of the [Telerik Silverlight Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%}). 
 
-### Use an embedded engine
+### Generating Reports Locally
 
 If you choose the [Embedded Report Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) path, you can utilize the report engine by desktop report viewers or using dedicated APIs for each specific report engine implementation. 
 
@@ -71,7 +71,7 @@ Connect the Report Viewer to the Telerik Report Server’s engine:
 
 * [How To: Use WPF Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%})
 
-## How to generate custom reports
+## Generating Custom Reports
 
 [Program the Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/overview%}) section provides information for advanced report authors on how to generate reports programmatically using the provided API: 
 
@@ -85,7 +85,7 @@ Connect the Report Viewer to the Telerik Report Server’s engine:
 
 * [How To Serialize Report Definition in XML]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%})
 
-## Next steps
+## Next Steps
 
 If you are just starting with Telerik Reporting, look at our [First Steps]({%slug telerikreporting/getting-started/first-steps%}) article. 
 

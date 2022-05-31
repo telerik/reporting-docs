@@ -1,10 +1,10 @@
 ---
-title: Export Formats
-page_title: Export Formats 
-description: Export Formats
+title: Overview
+page_title: Document Output Overview 
+description: "Learn more about the options for exporting Telerik Reporting reports."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats
 previous_url: /using-reports-in-applications/export-and-configure/export-formats
-tags: export,formats
+tags: telerik, reporting, export, formats, document, output, overview
 published: True
 position: 0
 ---
@@ -23,7 +23,7 @@ table th:nth-of-type(4) {
 }
 </style>
 
-# Export Formats
+# Document Output Overview  
 
 An export format is a component of the Telerik Reporting engine that transforms report data and layout into a device-specific format. The export formats are also referred to as rendering extensions because they render the report content into a specific output format and because they get plugged into the engine as extensions. By default Telerik Reporting outputs reports in the following formats: Image, PDF, HTML, MHTML, Excel 97-2003, XLSX, PPTX, DOCX, RTF, XAML and CSV. Interactive rendering extensions (IMAGEInteractive, HTML5Interactive, XAMLInteractive, WPFXAMLInteractive) are used internally by viewers to allow interaction with the content e.g., toggling the visibility of items/sections. Interactive rendering extensions are for Telerik Internal use only. 
 

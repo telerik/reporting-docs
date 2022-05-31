@@ -1,14 +1,14 @@
 ---
-title: Program the Report Definition Overview
-page_title: Program the Report Definition Overview
-description: Program the Report Definition Overview
+title: Overview
+page_title: Managing Reports Programmatically Overview
+description: "Learn how to programmatically control your Telerik Reporting reports."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/overview
-tags: overview
+tags: telerik, reporting, embedding, reports, managing, reports, programmatically, overview
 published: True
 position: 0
 ---
 
-# Program the Report Definition Overview
+# Managing Reports Programmatically Overview
 
 __Telerik Reporting__ offers a full API for programmatic control of reports. You can create, modify, and work with reports in code, just as you can from the Visual Studio IDE. In this section, you will see how to perform the following fundamental operations in code: 
 

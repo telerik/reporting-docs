@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/subreport
 previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subreport 
 tags: telerik, reporting, report, items, subreport
 published: True
-position: 9
+position: 11
 ---
 
 # SubReport

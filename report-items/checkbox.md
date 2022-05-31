@@ -5,7 +5,7 @@ description: Checkbox
 slug: telerikreporting/designing-reports/report-structure/checkbox
 tags: checkbox
 published: True
-position: 13
+position: 3
 ---
 
 # Checkbox

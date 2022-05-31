@@ -1,9 +1,9 @@
 ---
 title: Overview 
 page_title: Importing Reports Overview
-description: Converting reports from other reporting solutions Overview
+description: "Learn how to convert and import your reports from other reporting solutions to Telerik Reporting."
 slug: telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview
-tags: overview
+tags: telerik, reporting, importing, reports, converting, overview
 published: True
 position: 0
 ---

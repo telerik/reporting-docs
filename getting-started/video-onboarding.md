@@ -5,7 +5,7 @@ description: "Get started with Telerik Reporting by following a step-by-step vid
 slug: getting-started/video-onboarding
 tags: get,started,video,onboarding,classroom,course,learning
 published: true
-position: 4
+position: 3
 ---
 
 # Video Onboarding

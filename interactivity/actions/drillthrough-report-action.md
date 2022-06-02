@@ -9,7 +9,7 @@ published: True
 position: 3
 ---
 
-# Drillthrough Report Action
+# Drillthrough/Navigate To Report Action
 
 A drillthrough report is a report that a user opens by clicking a link within another report. Drillthrough reports commonly contain details about an item that is contained in an original summary report. For example, you might have a sales summary report with a list of orders and sales totals. When a user clicks an order number in the summary list, another report opens that contains details about the order. 
 
@@ -20,7 +20,6 @@ A drillthrough report typically contains parameters that are passed to it by the
 To define a drill-through action add a [NavigateToReportAction](/reporting/api/Telerik.Reporting.NavigateToReportAction) on an item. 
 
 >note The Target report of a drill-through action should always have a default constructor, so it can be instantiated. 
-
 
 # How to Add a Drillthrough/Navigate To Report Action
 
@@ -49,7 +48,7 @@ A report can contain links to other reports. The report that opens when you clic
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToReportSnippet}}
 
 
-How to Set ReportSource for NavigateToReport action
+# How to Set ReportSource for Drillthrough/Navigate To Report Action
 
 This article includes details how to specify a __target report__ for a [Navigate to Report (Drill-through) Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}). You will need a [Report Source]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.       
 
@@ -68,25 +67,8 @@ This article includes details how to specify a __target report__ for a [Navigate
 ## Setting the Report Source Programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewNavigateToReportSnippet}}
-````C#
-	Telerik.Reporting.TypeReportSource reportSource = new Telerik.Reporting.TypeReportSource();
-	reportSource.TypeName = "ReportLibrary1.Report1, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null";
-	reportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
-	
-	Telerik.Reporting.NavigateToReportAction reportAction1 = new Telerik.Reporting.NavigateToReportAction();
-	reportAction1.ReportSource = reportSource;
-	textBox1.Action = reportAction1;
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToReportSnippet}}
-````VB
-	Dim reportSource As New Telerik.Reporting.TypeReportSource()
-	reportSource.TypeName = "ReportLibrary1.Report1, ReportLibrary1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
-	reportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
-	
-	Dim reportAction1 As New Telerik.Reporting.NavigateToReportAction()
-	reportAction1.ReportSource = reportSource
-	textBox1.Action = reportAction1
-````
+
 
 The [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) you can use all available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).         
 

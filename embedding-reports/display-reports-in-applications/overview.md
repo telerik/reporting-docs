@@ -1,20 +1,20 @@
 ---
-title: Display Reports in Applications Overview
-page_title: Display Reports in Applications Overview
-description: Display Reports in Applications Overview
+title: Overview
+page_title: Displaying Reports in Applications Overview
+description: "Learn more about the approaches to display Telerik Reporting reports in applications."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/overview
-tags: overview
+tags: telerik, reporting, embedding, reports, displaying, reports, in, applications, overview
 published: True
 position: 0
 ---
 
-# Display Reports in Applications Overview
+# Displaying Reports Overview
 
-We provide UI components called Report Viewers that you can use to display reports in applications. The Report Viewers cover various technologies (Angular, HTML5/JS, WPF, ASP.NET, Windows Forms, etc.) and allow you to display a report document in the application's UI and to interact with it.       
+Telerik Reporting provides UI components called Report Viewers that you can use to display reports in applications. The Report Viewers cover various technologies (Angular, HTML5/JS, WPF, ASP.NET, Windows Forms, etc.) and allow you to display a report document in the application's UI and to interact with it.       
 
 This document provides a brief overview of the different Telerik Report Viewer flavors. If you are interested in the Report Viewer for a specific technology, follow the corresponding link to learn more.         
 
-## Report Viewers Overview
+Telerik Reporting provides the following report viewers: 
 
 * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})  
   The HTML5 Viewer is an HTML/CSS/JS client-side widget that doesn't require any assembly references. The viewer operates as a client of the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](https://www.telerik.com/report-server).  

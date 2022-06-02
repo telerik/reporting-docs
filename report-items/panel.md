@@ -5,7 +5,7 @@ description: Panel
 slug: telerikreporting/designing-reports/report-structure/panel
 tags: panel
 published: True
-position: 11
+position: 8
 ---
 
 # Panel

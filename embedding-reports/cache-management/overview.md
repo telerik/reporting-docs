@@ -1,14 +1,15 @@
 ---
-title: Other ReportViewer Controls Overview
-page_title: Other ReportViewer Controls Overview
-description: Other ReportViewer Controls Overview
+title: Overview
+page_title: Cache Management System Overview
+description: "Learn more about the dedicated Telerik Reporting cache management system which stores and caches rendered pages and large resources."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/overview
-tags: overview
+previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/overview
+tags: telerik, reporting, embedding, reports, cache, management, system, overview
 published: True
 position: 0
 ---
 
-# Other ReportViewer Controls Overview
+# Cache Management System Overview
 
 __Telerik Reporting__ uses a dedicated cache management system to store and cache rendered pages and some large resources such as images on an external storage. This cache management system is utilized by report viewers automatically as shown in the following illustration: 
 

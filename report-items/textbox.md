@@ -5,7 +5,7 @@ description: TextBox
 slug: telerikreporting/designing-reports/report-structure/textbox
 tags: textbox
 published: True
-position: 7
+position: 13
 ---
 
 # TextBox

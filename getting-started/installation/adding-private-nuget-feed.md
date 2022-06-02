@@ -1,7 +1,7 @@
 ---
-title: How to add the Telerik private NuGet feed to Visual Studio
-page_title: How to add the Telerik private NuGet feed to Visual Studio 
-description: How to add the Telerik private NuGet feed to Visual Studio
+title: Adding the Telerik Private NuGet Feed
+page_title: Adding the Telerik Private NuGet Feed to Visual Studio 
+description: "Get up and running with Telerik Reporting and learn how to add the Telerik private NuGet feed to Visual Studio."
 slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
 previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
 tags: how,to,add,the,telerik,private,nuget,feed,to,visual,studio
@@ -9,19 +9,19 @@ published: True
 position: 8
 ---
 
-# How to add the Telerik private NuGet feed to Visual Studio
+# Adding the Telerik Private NuGet Feed to Visual Studio
 
 > The legacy https://nuget.telerik.com/nuget server will be deprecated. Make sure to switch to the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client. 
 
 Telerik provides NuGet packages from private NuGet feed. The article elaborates on how to add the Telerik NuGet feed to the Visual Studio NuGet package manager. 
 
-## Prerequisites:
+## Prerequisites
 
 * Visual Studio 2010 or newer.
 
 * Valid Telerik Reporting trial or paid license.
 
-###Setup
+## Setup
 
 1. Open Visual Studio. 
 
@@ -51,7 +51,7 @@ Telerik provides NuGet packages from private NuGet feed. The article elaborates 
 
 1. Now all the packages that are licensed (paid or trial) to the above users are available in the Visual Studio NuGet Package manager. 
 
-### Setup with NuGet CLI          
+## Setup with NuGet CLI          
 
 1. Download the latest [NuGet executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe). 
 
@@ -83,7 +83,7 @@ NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/i
 
 ## Troubleshooting
 
-### After changing my Telerik password, I get [Telerik Nuget] The V2 feed at '...' returned an unexpected status code '401 Logon failed.' error
+**After changing my Telerik password, I get [Telerik Nuget] The V2 feed at '...' returned an unexpected status code '401 Logon failed.' error.**
 
 After changing your Telerik password, you need to reset your credentials in the NuGet.config file. To do this, open a Command Prompt and run the command: 
     

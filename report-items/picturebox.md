@@ -5,7 +5,7 @@ description: PictureBox
 slug: telerikreporting/designing-reports/report-structure/picturebox
 tags: picturebox
 published: True
-position: 10
+position: 9
 ---
 <style>
 table th:first-of-type {

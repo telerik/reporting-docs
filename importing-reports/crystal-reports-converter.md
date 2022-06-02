@@ -1,14 +1,14 @@
 ---
-title: Crystal Reports converter
-page_title: Crystal Reports converter 
-description: Crystal Reports converter
+title: SAP Crystal Reports
+page_title: SAP Crystal Reports 
+description: "Learn how to import your SAP Crystal Reports report into a Telerik Reporting report definition."
 slug: telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter
-tags: crystal,reports,converter
+tags: telerik, reporting, importing, reports, crystal, reports, converter
 published: True
 position: 1
 ---
 
-# Crystal Reports converter
+# SAP Crystal Reports
 
 
 This article explains how to convert a report created with SAP Crystal Reports to Telerik Reporting report definition.       
@@ -49,7 +49,7 @@ The converter iterates through all the items in a Crystal Report (CR) instance a
 
 * __Special fields__  - The converter recognizes and converts the following Crystal Reports special fields: *PrintDate, PrintTime, ModificationDate, ModificationTime, DataDate, DataTime, RecordNumber, PageNumber, TotalPageCount, Page N of M*.             
 
-## Configuring Telerik Report Designer to use Crystal Reports Converter
+## Configuring the Report Designer to Use the Converter
 
 In order to load the Crystal Reports assemblies needed for the conversion, proper binding redirects need to be added to the configuration file of the report designer application. When using the Standalone Report Designer, this file is *Telerik.ReportDesigner.exe.config* , placed in the *\Report Designer*  subfolder of the product installation category. When using the Visual Studio Report Designer, this file is *devenv.exe.config* , placed in the *\Common7\Ide*  subfolder of Visual Studio installation directory. The binding redirects need to point to the version of Crystal Reports runtime installed on the machine.         
 
@@ -95,4 +95,4 @@ During the conversion process the engine outputs warnings and information messag
 
 # See Also
 
- * [Crystal Reports product matrix](https://wiki.scn.sap.com/wiki/display/BOBJ/Crystal+Reports+v.+9.1+to+SAP+Crystal+Reports+2013%2C+Runtime+Distribution+and+Supported+Operating+Systems)
+* [Crystal Reports Product Matrix](https://wiki.scn.sap.com/wiki/display/BOBJ/Crystal+Reports+v.+9.1+to+SAP+Crystal+Reports+2013%2C+Runtime+Distribution+and+Supported+Operating+Systems)

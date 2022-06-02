@@ -1,18 +1,18 @@
 ---
-title: Report Structure Overview
-page_title: Report Structure Overview
-description: Report Structure Overview
+title: Overview
+page_title: Report Items Overview
+description: "Learn more about the items a Telerik Reporting report can contain."
 slug: telerikreporting/designing-reports/report-structure/overview
-tags: overview
+tags: telerik, reporting, report, items, overview
 published: True
 position: 0
 ---
 
-# Report Structure Overview
+# Report Items Overview
 
 This article describes the structure of a Telerik Report. 
 
-## Report Structure
+## Report Structure 
 
 The design of a report is divided into sections and you can open your report in [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) or [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) to see its sections. To create more functional reports, you need to understand how each section works. For example, the section in which you choose to place a data bound item determines how Telerik Reporting calculates the results. 
 
@@ -22,7 +22,7 @@ A report can be bound to data. To create a data bound report you need to assign 
 
 The styling of the report items may be reused in stylesheets. If a report uses stylesheets, they can be saved to XML file and shared between multiple reports in your application (for more information, see [Exporting and Reusing Style Sheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%})). 
 
-### Report Sections
+## Report Sections
 
 The __Telerik Report__ consists of several different sections that may contain report items. Each report section represents specific area on the report page, and defines how to render the report items that belong to it. Every section is an instance of the  [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase) class. The __Height__ property defines the space that a section occupies on the page. Other specific properties such as __PrintOnFirstPage__ and __PrintOnLastPage__ define the particular section's behavior. 
 
@@ -51,7 +51,7 @@ table th:nth-of-type(2) {
 | __Page Footer__ |This section is printed at the end of every page. Use a page footer to print page numbers or per-page information. This section and its items are processed by the corresponding rendering extension after the report data has been processed. Therefore, the same implications listed for the Page Header apply also to the Page Footer section.It is possible to hide this section for particular pages using [Conditional Formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) expression over the __Style.Visible__ property. For example, you may hide it on all even pages. To hide it on first and/or last pages there are dedicated Boolean properties called __PrintOnFirstPage__ and __PrintOnLastPage__. Hiding the section leads to freeing page space for the rest of the report content. Keep in mind that setting the PrintOnLastPage to true may lead to unintuitive pagination of the section preceding the last PageFooter. This occurs because determining the last page number and hiding the last PageFooter are interdependent when the last non-PageFooter section would fit in the space regularly occupied from the PageFooter. For example, this may be observed when replacing the last PageFooter section with a ReportFooter section.|
 
 
-### Report Groups
+## Report Groups
 
 Report Groups allow you to separate groups of data visually and to display introductory and summary data for each group. Report groups provide logical sections of data within the report while the group header and footer sections provide visual representation of the group boundaries. For example, you can group sales by date shipped and calculate the total amount of sales for each day. 
 
@@ -59,7 +59,7 @@ Usually, the data that identifies the group will be displayed in a separate sect
 
 The data within the report can be grouped by fields and expressions. Report groups are defined by adding __Group__ objects to the report’s __Groups__ collection. Report groups are always nested according to the order in the Groups collection. To display summary group data one should use the __GroupHeaderSection__ and __GroupFooterSection__ that appear once for each group member at the beginning and the end, respectively. The __DetailSection__ displays report detail data and always appears inside the innermost group. 
 
-### Report Items
+## Report Items
 
 Report items are used in the report depending on the data that should be displayed e.g. [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) item for static or data bound text, [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) for displaying images, [Barcode]({%slug telerikreporting/designing-reports/report-structure/barcode/overview%}) for showing barcode in a label report etc. Every report item is an instance of the [ReportItemBase](/reporting/api/Telerik.Reporting.ReportItemBase) class. Report items can reside inside report sections or containers (e.g. [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) or [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) items). 
 

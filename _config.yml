@@ -22,7 +22,7 @@ navigation:
         position: 11
         title: "Upgrade"
     styling:
-        position: 6
+        position: 7
         title: "Styles & Appearance"
     styling/rendering-and-paging:
         position: 8
@@ -36,11 +36,32 @@ navigation:
     report-items:
         position: 3
         title: "Report Items"
-    report-items/table-crosstab-list:
+    report-items/barcode:
+        position: 2
+        title: "Barcode"
+    report-items/barcode/barcode-types:
+        position: 15
+        title: "Barcode Types"    
+    report-items/barcode/barcode-types/2d-barcodes:
+        position: 15
+        title: "2D Barcodes"     
+    report-items/barcode/barcode-types/2d-barcodes/qr-code:
         position: 10
+        title: "QR Code"     
+    report-items/barcode/barcode-types/2d-barcodes/swiss-qr-code:
+        position: 11
+        title: "Swiss QR Code"
+    report-items/barcode/barcode-types/2d-barcodes/pdf417:
+        position: 12
+        title: "PDF417"
+    report-items/barcode/barcode-types/2d-barcodes/data-matrix:
+        position: 13
+        title: "Data Matrix"
+    report-items/table-crosstab-list:
+        position: 12
         title: "Table/Crosstab/List"    
     report-items/graph:
-        position: 11
+        position: 5
         title: "Graph"
     report-items/graph/chart-types:
         position: 10
@@ -79,7 +100,7 @@ navigation:
         position: 12
         title: "How To"
     report-items/map:
-        position: 12
+        position: 7
         title: "Map"
     report-items/map/structure:
         position: 10
@@ -91,49 +112,22 @@ navigation:
         position: 12
         title: "How To"
     report-items/htmltextbox:
-        position: 13
+        position: 6
         title: "HtmlTextBox"
-    report-items/barcode:
-        position: 14
-        title: "Barcode"
-    report-items/barcode/barcode-types:
-        position: 15
-        title: "Barcode Types"    
-    report-items/barcode/barcode-types/2d-barcodes:
-        position: 15
-        title: "2D Barcodes"     
-    report-items/barcode/barcode-types/2d-barcodes/qr-code:
-        position: 10
-        title: "QR Code"     
-    report-items/barcode/barcode-types/2d-barcodes/swiss-qr-code:
-        position: 11
-        title: "Swiss QR Code"
-    report-items/barcode/barcode-types/2d-barcodes/pdf417:
-        position: 12
-        title: "PDF417"
-    report-items/barcode/barcode-types/2d-barcodes/data-matrix:
-        position: 13
-        title: "Data Matrix"
     report-items/how-to:
-        position: 15
+        position: 100
         title: "How To"
     doc-output:
-        position: 5
+        position: 10
         title: "Document Output"
-    doc-output/cache-management:
-        position: 1
-        title: "Cache Management"    
-    doc-output/cache-management/other-reportviewer-controls:
-        position: 2
-        title: "Other ReportViewer Controls" 
     doc-output/configure-the-report-engine:
         position: 10
-        title: "Configure the Report Engine"    
+        title: "Configuring the Report Engine"    
     doc-output/configure-the-export-formats:
         position: 11
-        title: "Configure the Export Formats"  
+        title: "Configuring the Output Formats"  
     interactivity:
-        position: 6
+        position: 8
         title: "Interactivity"
     interactivity/bookmarks:
         position: 10
@@ -157,23 +151,23 @@ navigation:
         position: 9
         title: "Globalization"
     importing-reports:
-        position: 5
+        position: 6
         title: "Importing Reports"
     embedding-reports:
-        position: 6
+        position: 5
         title: "Embedding Reports"
-    embedding-reports/report-sources:
-        position: 9
-        title: "Report Sources" 
+    embedding-reports/cache-management:
+        position: 7
+        title: "Cache Management"  
     embedding-reports/program-the-report-definition:
-        position: 6
-        title: "Program the Report Definition"
+        position: 8
+        title: "Managing Reports Programmatically"
     embedding-reports/program-the-report-definition/report-events:
         position: 15
         title: "Report Events"
     embedding-reports/display-reports-in-applications:
-        position: 2
-        title: "Display Reports in Applications"
+        position: 6
+        title: "Displaying Reports"
     embedding-reports/display-reports-in-applications/web-application:
         position: 10
         title: "Web Application"
@@ -265,8 +259,8 @@ navigation:
         position: 15
         title: "Troubleshooting" 
     embedding-reports/host-the-report-engine-remotely:
-        position: 3
-        title: "Host the Report Engine Remotely"
+        position: 5
+        title: "Generating Reports Remotely"
     embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services:
         position: 12
         title: "Telerik Reporting REST Services"    
@@ -309,9 +303,6 @@ navigation:
     embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service:
         position: 14
         title: "Telerik Reporting WCF Service" 
-    embedding-reports/call-the-report-engine-via-apis:
-        position: 4
-        title: "Call the Report Engine via APIs" 
     designing-reports:
         position: 4
         title: "Creating Reports"  

@@ -1,19 +1,42 @@
 ---
-title: Designing Reports Overview
-page_title: Designing Reports Overview
-description: Designing Reports Overview
+title: Overview
+page_title: Creating Reports Overview
+description: "Learn more about the report creation process and the report definition types when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/overview
-tags: overview
+tags: telerik, reporting, creating, designing, reports, overview
 published: True
 position: 0
 ---
 
-# Designing Reports Overview
+# Creating Reports Overview
 
-
-To help you in creating effective reports, the __Telerik Reporting__  package provides three different implementations of a [complete graphical report designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). Depending on your requirements, you can choose between a [standalone desktop application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), a [web report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), or a [report designer that runs in Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).       
+To help you in creating effective reports, the __Telerik Reporting__  package provides three different implementations of a [complete graphical report designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). Depending on your requirements, you can choose between a [standalone desktop application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), a [web report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), or a [report designer that runs in Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).     
 
 This document presents some general report designing tips that you can apply regardless of which report designer you use.        
+
+## Report Definition Types
+
+Telerik Reporting supports declarative and programmatic report definition types. 
+
+### Declarative Types 
+
+The declarative report definitions can be in plain text format or compressed in a ZIP archive. 
+
+Telerik Reporting supports the following declarative report definitions: 
+
+* Telerik Report Definition XML (`.trdx`) is a plain text file with XML content. It's easier to review the report definition with simple text editors but all embedded resources like images are encoded with Base64 encoding and don't support localization. 
+
+* Telerik Report Definition Package (`.trdp`) are compressed in a ZIP archive which contain the XML report definition and its resources. It's smaller in size, optimized for resources handling and supports [report localization]({%slug telerikreporting/designing-reports/localizing-reports%}). 
+
+* Telerik Report Book Package (`.trbp`) is compressed in a ZIP archive report book XML definition.
+
+### Programmatic Types 
+
+Telerik Reporting supports the following programmatic report definitions: 
+
+* CS/VB Report is a custom class that inherits from [`Telerik.Reporting.Report`](/api/Telerik.Reporting.Report.html).
+
+* CS/VB Report Book is a custom class that inherits from [`Telerik.Reporting.ReportBook`](/api/Telerik.Reporting.ReportBook.html).
 
 ## Basic Tips for Working with Data
 
@@ -83,13 +106,8 @@ Useful item names will help you when browsing the report object tree in [Report 
 
 # See Also
 
-
- * [Automatic Layout (Dock and Anchor)]({%slug telerikreporting/designing-reports/report-structure/automatic-layout-(dock-and-anchor)%})
-
- * [Performance Considerations]({%slug telerikreporting/designing-reports/performance-considerations%})
-
- * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
-
- * [Expression Reference]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/overview%})
-
- * [Extending Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%})
+* [Automatic Layout (Dock and Anchor)]({%slug telerikreporting/designing-reports/report-structure/automatic-layout-(dock-and-anchor)%})
+* [Performance Considerations]({%slug telerikreporting/designing-reports/performance-considerations%})
+* [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+* [Expression Reference]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/overview%})
+* [Extending Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%})

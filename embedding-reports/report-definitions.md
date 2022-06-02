@@ -1,15 +1,15 @@
 ---
-title: Reference Report Definitions in Applications
-page_title: Reference Report Definitions in Applications 
-description: Reference Report Definitions in Applications
+title: Referencing Report Definitions
+page_title: Referencing Report Definitions in Applications 
+description: "Learn more about how to reference the definition of your report in applications when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications
 previous_url: /using-reports-in-applications/reference-report-definitions-in-applications
-tags: reference,report,definitions,in,applications
+tags: telerik, reporting, embedding, reports, referencing, report, definitions, in, applications
 published: True
 position: 1
 ---
 
-# Reference Report Definitions in Applications
+# Referencing Report Definitions
 
 The article elaborates on how to specify which report definition to be used by the report engine when rendering the report in an application. 
 

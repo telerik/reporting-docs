@@ -1,14 +1,15 @@
 ---
-title: HTML5 Report Viewer and Reporting REST services
-page_title: HTML5 Report Viewer and Reporting REST services 
-description: HTML5 Report Viewer and Reporting REST services
+title: HTML5 Report Viewer and Reporting REST Service
+page_title: HTML5 Report Viewer and Reporting REST Service 
+description: "Learn more how to use the HTML5 Report Viewer and configure the Telerik Reporting REST Service."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services
-tags: html5,report,viewer,and,reporting,rest,services
+previous_url: /using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services
+tags: telerik, reporting, embedding, reports, html5, report, viewer, reporting, rest, service
 published: True
-position: 0
+position: 3
 ---
 
-# HTML5 Report Viewer and Reporting REST services
+# HTML5 Report Viewer and Telerik Reporting REST Service
 
 The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is a client-side widget served by a running instance of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}). The state of the report displayed in the viewer is preserved between requests by the __Reporting REST Service__ and having reports' __cache storage is obligatory__. 
 

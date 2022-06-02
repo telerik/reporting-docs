@@ -1,16 +1,19 @@
 ---
-title: Design Considerations for Report Item Layout
-page_title: Design Considerations for Report Item Layout 
-description: Design Considerations for Report Item Layout
+title: Design Considerations for Report Items
+page_title: Design Considerations for Report Items 
+description: "Learn more about the design considerations for the layout of the Telerik reporting report items."
 slug: telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout
-tags: design,considerations,for,report,item,layout
+previous_url: /designing-reports/report-structure/design-considerations-for-report-item-layout
+tags: telerik, reporting, report, items, design, considerations, layout, creating, reports
 published: True
-position: 18
+position: 14
 ---
 
-# Design Considerations for Report Item Layout
+# Design Considerations for Report Items
 
-## How Report Items are Arranged in a Section
+This article lists some tips and tricks for rendering the report items of your report as desired. 
+
+## Arranging Report Items
 
 All report items grow from top to bottom and some (SubReport, and Table, Crosstab, List with rotated layout) can grow from left to right as well. When they grow, the items below/on the right are pushed down/right. Changing visibility of items at runtime would trigger the same effect i.e. items below or on the right side of the hidden item would move up or to the left to occupy the space of the hidden item. 
 
@@ -27,7 +30,7 @@ As of __[Telerik Reporting R3 2016](http://www.telerik.com/support/whats-new/rep
 > Page sections do not collapse or expand based on their content. For more details, check [Understanding Rendering Behaviors(Page Header and Footer sections)]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}#page-header-and-footer-sections). 
 
 
-## Visibility
+## Showing and Hiding Report Items
 
 Report items can be hidden or displayed by default, or hidden or displayed conditionally using [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) or [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}). Optionally, the visibility can be switched by clicking another report item ([Drilldown Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%})). 
 
@@ -53,7 +56,7 @@ Report items in a report can be kept together on a single page by setting the Ke
 
 For more detail about the result of keeping items together, check [Understanding Pagination(Paging and Keep Together)]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}#paging-and-keep-together). 
 
-## Rendering order of report items and borders
+## Setting the Order of Report Items and Borders
 
 Report items are rendered in succession (one by one). The order of rendering is determined by the following rules: 
 
@@ -83,6 +86,5 @@ This rendering behavior will affect how report item borders are rendered accordi
 
 # See Also
 
-* [How to Layout Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
-
+* [Laying Out Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
 * [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})

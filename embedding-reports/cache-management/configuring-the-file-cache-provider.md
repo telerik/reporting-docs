@@ -1,9 +1,10 @@
 ---
 title: Configuring the File Cache Provider
 page_title: Configuring the File Cache Provider 
-description: Configuring the File Cache Provider
+description: "Learn how to configure the file cache provider when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider
-tags: configuring,the,file,cache,provider
+previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-file-cache-provider
+tags: telerik, reporting, embedding, reports, cache, management, configuring, file, provider
 published: True
 position: 2
 ---

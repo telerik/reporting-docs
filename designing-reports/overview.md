@@ -16,13 +16,27 @@ This document presents some general report designing tips that you can apply reg
 
 ## Report Definition Types
 
-The report definitions can be in plain text format or compressed in a zip archive: 
+Telerik Reporting supports declarative and programmatic report definition types. 
 
-* Telerik Report Definition XML (.trdx) is a plain text file with XML content. It's easier to review the report definition with simple text editors but all embedded resources like images are encoded with Base64 encoding and don't support localization. 
+### Declarative Types 
 
-* Telerik Report Definition Package (.trdp) are compressed in a zip - XML report definition and its resources. It's smaller in size, optimized for resources handling and supports [report localization]({%slug telerikreporting/designing-reports/localizing-reports%}). 
+The declarative report definitions can be in plain text format or compressed in a ZIP archive. 
 
-* Telerik Report Book Package (.trbp) is compressed in a zip archive report book XML definition. 
+Telerik Reporting supports the following declarative report definitions: 
+
+* Telerik Report Definition XML (`.trdx`) is a plain text file with XML content. It's easier to review the report definition with simple text editors but all embedded resources like images are encoded with Base64 encoding and don't support localization. 
+
+* Telerik Report Definition Package (`.trdp`) are compressed in a ZIP archive which contain the XML report definition and its resources. It's smaller in size, optimized for resources handling and supports [report localization]({%slug telerikreporting/designing-reports/localizing-reports%}). 
+
+* Telerik Report Book Package (`.trbp`) is compressed in a ZIP archive report book XML definition.
+
+### Programmatic Types 
+
+Telerik Reporting supports the following programmatic report definitions: 
+
+* CS/VB Report is a custom class that inherits from [`Telerik.Reporting.Report`](/api/Telerik.Reporting.Report.html).
+
+* CS/VB Report Book is a custom class that inherits from [`Telerik.Reporting.ReportBook`](/api/Telerik.Reporting.ReportBook.html).
 
 ## Basic Tips for Working with Data
 

@@ -1,9 +1,10 @@
 ---
-title: Configuring Cache
-page_title: Configuring Cache 
-description: Configuring Cache
+title: Configuring the Cache Management System
+page_title: Configuring the Cache Management System
+description: "Learn how to configure the cache management system by specifying one or more cache providers when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache
-tags: configuring,cache
+previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache
+tags: telerik, reporting, embedding, reports, cache, management, configuring
 published: True
 position: 1
 ---
@@ -19,7 +20,7 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Configuring Cache
+# Configuring the Cache Management System
 
 > The cache settings mentioned in this article are not obligatory, and they do not apply to the __HTML5 Viewer__ or its Angular, WebForms and MVC wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Viewer are available in [Cache Management: HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%}) and [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}). 
 

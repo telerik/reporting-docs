@@ -1,14 +1,15 @@
 ---
-title: Configuring Custom Cache Provider
-page_title: Configuring Custom Cache Provider 
-description: Configuring Custom Cache Provider
+title: Configuring Custom Cache Providers
+page_title: Configuring Custom Cache Providers
+description: "Learn how to configure a custom cache provider when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-custom-cache-provider
-tags: configuring,custom,cache,provider
+previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-custom-cache-provider
+tags: telerik, reporting, embedding, reports, cache, management, configuring, custom, provider
 published: True
 position: 4
 ---
 
-# Configuring Custom Cache Provider
+# Configuring Custom Cache Providers
 
 > The cache settings mentioned in this article are not obligatory, and they do not apply to the __HTML5 Viewer__ or its Angular, WebForms and MVC wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Viewer are available in [Cache Management: HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%}) and [REST Service Storage Settings]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%}). 
 

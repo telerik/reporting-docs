@@ -1,14 +1,17 @@
 ---
-title: Embedded Report Engine
-page_title: Embedded Report Engine 
-description: Embedded Report Engine
+title: Generating Reports Locally
+page_title: Generating Reports Locally 
+description: "Learn how to locally generate reports by using the embedded report engine when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine
-tags: embedded,report,engine
+previous_url: /using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine
+tags: telerik reporting, embedding, reports, embedded, engine, generate, locally
 published: True
-position: 0
+position: 4
 ---
 
-# Embedded Report Engine
+# Generating Reports Locally 
+
+Telerik Reporting allows you to use the embedded report engine and generate your reports locally. 
 
 ## Requirements
 

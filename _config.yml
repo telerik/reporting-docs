@@ -16,13 +16,13 @@ navigation:
         position: 2
         title: "Getting Started"
     getting-started/installation:
-        position: 5
+        position: 4
         title: "Download & Installation"
     upgrade:
         position: 11
         title: "Upgrade"
     styling:
-        position: 6
+        position: 7
         title: "Styles & Appearance"
     styling/rendering-and-paging:
         position: 8
@@ -113,14 +113,8 @@ navigation:
         position: 100
         title: "How To"
     doc-output:
-        position: 5
+        position: 10
         title: "Document Output"
-    doc-output/cache-management:
-        position: 1
-        title: "Cache Management"    
-    doc-output/cache-management/other-reportviewer-controls:
-        position: 2
-        title: "Other ReportViewer Controls" 
     doc-output/configure-the-report-engine:
         position: 10
         title: "Configure the Report Engine"    
@@ -128,7 +122,7 @@ navigation:
         position: 11
         title: "Configure the Export Formats"  
     interactivity:
-        position: 6
+        position: 8
         title: "Interactivity"
     interactivity/bookmarks:
         position: 10
@@ -152,14 +146,14 @@ navigation:
         position: 9
         title: "Globalization"
     importing-reports:
-        position: 5
+        position: 6
         title: "Importing Reports"
     embedding-reports:
-        position: 6
+        position: 5
         title: "Embedding Reports"
-    embedding-reports/report-sources:
-        position: 9
-        title: "Report Sources" 
+    embedding-reports/cache-management:
+        position: 7
+        title: "Cache Management"  
     embedding-reports/program-the-report-definition:
         position: 6
         title: "Program the Report Definition"
@@ -261,7 +255,7 @@ navigation:
         title: "Troubleshooting" 
     embedding-reports/host-the-report-engine-remotely:
         position: 3
-        title: "Host the Report Engine Remotely"
+        title: "Generating Reports Remotely"
     embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services:
         position: 12
         title: "Telerik Reporting REST Services"    
@@ -304,9 +298,6 @@ navigation:
     embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service:
         position: 14
         title: "Telerik Reporting WCF Service" 
-    embedding-reports/call-the-report-engine-via-apis:
-        position: 4
-        title: "Call the Report Engine via APIs" 
     designing-reports:
         position: 4
         title: "Creating Reports"  

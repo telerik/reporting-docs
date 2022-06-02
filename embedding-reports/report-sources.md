@@ -1,14 +1,15 @@
 ---
-title: Report Sources Overview
-page_title: Report Sources Overview
-description: Report Sources Overview
+title: Report Sources
+page_title: Report Sources
+description: "Learn how to specify the report that will be processed and what are the available options based on the Visual Studio or XML report format when working with Telerik Reporting."
+previous_url: /designing-reports/report-sources/overview
 slug: telerikreporting/designing-reports/report-sources/overview
 tags: overview
 published: True
 position: 0
 ---
 
-# Report Sources Overview
+# Report Sources
 
 The article provides information how to specify which report to be processed, and on the available option based on the report format (Visual Studio report or XML content). 
 
@@ -62,10 +63,7 @@ Report parameters values can be passed from the report source object. Each repor
 
 # See Also
 
- * [How to: Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
-
- * [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})
- 
- * [ReportSource](/reporting/api/Telerik.Reporting.ReportSource)
- 
- * [ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor)
+* [How to: Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
+* [How to: Set ReportSource for ReportProcessor]({%slug telerikreporting/using-reports-in-applications/reference-report-definitions-in-applications%})
+* [ReportSource](/reporting/api/Telerik.Reporting.ReportSource)
+* [ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor)

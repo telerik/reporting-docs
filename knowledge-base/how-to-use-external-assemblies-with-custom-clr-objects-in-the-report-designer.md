@@ -134,7 +134,7 @@ Once the assembly with our custom logic is built, it should be placed in the fol
 1. Locate Telerik Report Designer executable and its configuration file on your machine (**Telerik.ReportDesigner.exe** and **Telerik.ReportDesigner.exe.config**)
 2. Place MyAssembly.dll into the folder or a subfolder of where **Telerik.ReportDesigner.exe** resides.
   
-![MyAssembly.dll](/knowledge-base/resources/myAssembly.png)  
+![MyAssembly.dll](./resources/myAssembly.png)  
 
 3. Open the Report Designer’s configuration file with a text editor and navigate to the \<AssemblyReferences\> element.
 4. Uncomment the section and change the name attribute to MyAssembly. Notice that the assembly is referred only by its name without specifying the extension:
@@ -178,7 +178,7 @@ A possible configuration extending the Report Designer with the functionality in
 The Report Designer will look for MyAssembly.dll in its own folder (i.e. where the Telerik.ReportDesigner.exe resides) and in MySubDir and MySubDir\SubDir (using the specified relative paths in the <a href="http://msdn.microsoft.com/en-US/library/823z9h8w%28v=vs.80%29" target="_blank">.NET \<probing\> element</a>).
 5. Reopen the Report Designer and explore the extended functionality
 
-![Use object from MyAssembly.dll](/knowledge-base/resources/useObjectFromMyAssembly.png)
+![Use object from MyAssembly.dll](./resources/useObjectFromMyAssembly.png)
 
 ### Use Assembly Located in non-Relative Path
 Telerik.Reporting AssemblyReferences section is trying to load the assemblies according the .NET rules. Thus, in order to use a signed assembly located in directory different from the application directory or GAC, you have to add dependentAssembly section to point the .NET framework where to look for your assembly. For more information check out the <a href="https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/codebase-element" target="_blank">CodeBase Element</a> MSDN article.

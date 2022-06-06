@@ -5,7 +5,7 @@ description: "Learn how to create a master-detail report by using a table with T
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-table
 previous_url: /designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-table.html
 tags: telerik reporting, report, items, create, master, detail, report, using, table
-published: True
+res_type: kb
 ---
 
 ## Environment

@@ -25,7 +25,7 @@ res_type: kb
 In some reports, you may need to display each data field character/digit in a separate TextBox surrounded by borders.
 
 ## Solution
-You may achieve the requirement with a List with a Rotated layout, in which DataSource is set to the array of the characters of the corresponding data field. You may use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the DataSource of the List with the following [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}):
+You may achieve the requirement with a List with a Rotated layout, in which `DataSource` is set to the array of the characters of the corresponding data field. You may use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `DataSource` of the List with the following [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}):
 
 ````
 = Fields.Value.ToCharArray()
@@ -34,5 +34,7 @@ You may achieve the requirement with a List with a Rotated layout, in which Data
 In the code above, `Value` is the name of the main data source field that holds the original string. Note that the above _Expression_ utilizes the system [String.ToCharArray Method](https://docs.microsoft.com/en-us/dotnet/api/system.string.tochararray) that converts the string to an array of characters. This lets us provide the collection of characters as DataSource and thus display each of them in a separate detail section/cell of the List item and format it with borders or in other way.
 
 In order to display the characters horizontally, you may rotate the List layout. You need to right-click over the List cell and select `Rotate Layout` from the context menu.
+
+## See Also
 
 A demo report demonstrating the above approach may be found in our [GitHub Examples](https://github.com/telerik/reporting-samples/blob/master/BoxedCharacters.trdp).

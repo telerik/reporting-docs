@@ -85,11 +85,10 @@ me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
 ````
 
 
-
-
 ## See Also
  
 * [`Telerik.Reporting.Barcode`](/reporting/api/Telerik.Reporting.Barcode)  
+* 
 * [`Telerik.Reporting.Barcodes.Encoder1D`](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D)  
+* 
 * [`ShowText`](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText)
-

@@ -42,7 +42,7 @@ You can hold CTRL to select multiple report items and then use __Paste Style__  
 
 If a report item's style properties were modified, clicking Reset Style will remove the inline styling. Any style inherited from parent report item,        		any global styling that was applied with __StyleSelectors__  or from external style sheets would not be reset.
 
-# See Also
+## See Also
 
 
  * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})

@@ -59,6 +59,6 @@ Requested report are processed and rendered on the server. The service will plac
  
 - Relative paths may need adjustment depending on how the application is hosted - [ASP.NET Web Project Paths](https://docs.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)?redirectedfrom=MSDN).
 
-## See Also
+### See Also
 
 [HTML5 Report Viewer and Reporting REST services](../using-telerik-reporting-in-applications-rest-service-cache-management-overview)

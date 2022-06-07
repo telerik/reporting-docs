@@ -52,7 +52,7 @@ Any of the following data sources can be assigned to the DataSource property of 
 
 *.NET Standard 2.0 and above             
 
-# See Also
+## See Also
 
 * [Connecting the ObjectDataSource component to a Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
 

@@ -86,7 +86,7 @@ The purpose of the HTML5 Report Viewer is to display Telerik Reports and allow t
 The HTML5 Report Viewer's content is rendered in __DIV__ elements. The report in the viewer is rendered through the HTML rendering mechanism based on the [Design Considerations for HTML Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).
 
 
-# See Also
+## See Also
 
 * [Requirements and Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%})
 

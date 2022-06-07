@@ -43,7 +43,7 @@ When *PageBreak*  is set to a group, FreezeRowHeaders and FreezeColumnHeaders wi
 
 Even though the List report item has FreezeRowHeaders and FreezeColumnHeaders in the Properties pane, it doesn't have any headers           and therefore, this feature is not applicable to it.         
 
-# See Also
+## See Also
 
 
  * [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})

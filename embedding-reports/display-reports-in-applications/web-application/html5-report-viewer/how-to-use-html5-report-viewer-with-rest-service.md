@@ -81,7 +81,7 @@ You can find the complete example setup in the Telerik Reporting installation pa
 > If there are no examples in the Telerik Reporting installation path, you need to [run the setup](6E821131-83F3-45A4-BB6E-1530223D1E38#installingReporting) and enable the *Examples* feature. 
 
 
-# See Also
+## See Also
 
 * [How To: Use HTML5 Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
 

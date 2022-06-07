@@ -31,6 +31,6 @@ This method is used internally to derive the DbCommand parameters and it must be
 Although MySQL Connector Net 6.10.4 does not implement the method, it is implemented in a previous version of the connector (6.4.6). This version can be used to connect to MySql databases until the method is implemented in a future release of MySQL connector.
 Another option is to use the [ODBC connector](https://dev.mysql.com/downloads/connector/odbc/) from MySQL website.
 
-## See Also
+### See Also
 
 [MySQL Connectors](https://dev.mysql.com/downloads/connector/)

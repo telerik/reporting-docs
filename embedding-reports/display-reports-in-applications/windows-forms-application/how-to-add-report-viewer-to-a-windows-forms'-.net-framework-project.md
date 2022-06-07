@@ -53,7 +53,7 @@ If the selected engine is __REST Service__ additionally it will do the following
 
 If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained in [Declaring the application as DPI-aware]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}#declaring-the-application-as-dpi-aware). 
 
-# See Also
+## See Also
 
 * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
 

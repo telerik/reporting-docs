@@ -116,6 +116,6 @@ For the Visual Studio Report Designer this is the 'deveng.exe.config' file that 
 
 To run the report in other projects, use the same approach - add the assembly to the root folder from where the application is executed and configure it to load the external assembly by extending the configuration. 
 
-# See Also
+## See Also
 
  * [FunctionAttribute](/reporting/api/Telerik.Reporting.Expressions.FunctionAttribute) 

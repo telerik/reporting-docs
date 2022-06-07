@@ -68,7 +68,7 @@ To display the newly added MVC page, you will need to use your own MVC controlle
 
 1. Rename the View accordingly (i.e. from 'ReportViewerView1.cshtml' to 'Reports.cshtml'); 
 
-# See Also
+## See Also
 
 * [How To: Use HTML5 ASP.NET MVC Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
 

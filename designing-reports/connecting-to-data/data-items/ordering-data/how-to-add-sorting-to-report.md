@@ -67,7 +67,7 @@ sorting1.Direction = Telerik.Reporting.SortDirection.Asc
 report1.Sortings.Add(sorting1)
 ````
 
-# See Also
+## See Also
 
  * [Report](/reporting/api/Telerik.Reporting.Report)  
  

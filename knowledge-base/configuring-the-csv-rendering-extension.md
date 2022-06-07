@@ -96,7 +96,7 @@ AddressID,City,PostalCode,32,Montreal,H1Y 2H5
 
 > JSON-based configuration files can also be configured, see [extensions Element](../configuring-telerik-reporting-extensions).
 
-## See Also  
+### See Also  
  
 - [Configuring Telerik Reporting](../configuring-telerik-reporting)
 

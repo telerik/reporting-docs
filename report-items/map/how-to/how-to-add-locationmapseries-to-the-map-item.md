@@ -34,7 +34,7 @@ When all the properties are set, the __LocationMapSeries__ instance should look 
 
 ![Map Add Location Map Series](images/Map/Map_AddLocationMapSeries.png)
 
-# See Also
+## See Also
 
 * [Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})
 

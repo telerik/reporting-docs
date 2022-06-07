@@ -88,7 +88,7 @@ The [Standalone Report Designer]({%slug telerikreporting/designing-reports/repor
 
 >tip If the report will be displayed in an HTML5 Viewer or Silverlight ReportViewer, the main report is rendered in HTML (XAML respectively) and it is loaded at the client. The sub report is considered as a content of the main report and its Report Source is resolved internally, withouit additional calls to the Reporting REST service (Reporting WCF Service respectively).           
 
-# See Also
+## See Also
 
 * [How to create a Master-Detail report using a SubReport]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
 * [How to bind a SubReport to the parent report's data]({%slug how-to-bind-sub-report-to-main-report-s-data%})

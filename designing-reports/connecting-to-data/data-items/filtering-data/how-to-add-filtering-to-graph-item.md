@@ -55,7 +55,7 @@ graph1.Filters.Add(filter1)
 
 > The Graph item has a complex [structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) built by CategoryGroups and SeriesGroups collections, where each collection has its own Filters. If you need to limit slots, filter the CategoryGroups collection. If you need to filter dynamically created series, filter the SeriesGroups collection. The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the Graph item's Series and Categories groups.           
 
-# See Also
+## See Also
 
  * [Chart](/reporting/api/Telerik.Reporting.Chart) 
 

@@ -50,6 +50,6 @@ End Sub
 
 > The provided example can be easily implemented using [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}), see [Change row color based on a value in the row]({%slug change-row-color-based-on-value%}) or [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}). 
 
-# See Also
+## See Also
 
 * [Access Report Items Programmatically]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically%})

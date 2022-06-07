@@ -150,7 +150,7 @@ If the above doesn't help, you may reset completely the Visual Studio Toolbox, w
 
 7. Run Visual Studio again and open the Visual Studio Toolbox window. Then wait until it recreates all items in the Toolbox. 
 
-## See Also
+### See Also
 
 - [Telerik Reporting Missing in Visual Studio]({%slug telerik-reporting-missing-in-visual-studio%})
 

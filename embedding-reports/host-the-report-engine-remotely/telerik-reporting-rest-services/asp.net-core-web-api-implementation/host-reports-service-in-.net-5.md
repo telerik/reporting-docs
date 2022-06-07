@@ -240,6 +240,6 @@ app.UseCors("ReportingRestPolicy");
 ````
 
 
-# See Also
+## See Also
 
 * [YouTube video "How to set up a Telerik Reporting REST Service in .NET 5?"](https://www.youtube.com/watch?v=qU_ByzMgJBo)

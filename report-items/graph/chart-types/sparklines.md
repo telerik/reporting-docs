@@ -45,7 +45,7 @@ You can make data bar versions of these full charts:
 * __Column Charts__ : Clustered, stacked and 100% stacked column charts. Column charts can be either sparklines or data bars.
 
 
-# See Also
+## See Also
 
 * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
 

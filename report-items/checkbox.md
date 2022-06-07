@@ -53,7 +53,7 @@ And here is the final result:
   ![](images/CheckBoxEval3.png)
 
 
-# See Also
+## See Also
  
 * [Telerik.Reporting.CheckBox](/reporting/api/Telerik.Reporting.CheckBox)  
 

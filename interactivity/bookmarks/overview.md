@@ -16,6 +16,6 @@ To define a bookmark on item/group use the  [BookmarkId](/reporting/api/Telerik.
 
 >important It is recommended that the BookmarkId property value is unique and conforms to the [C# Language Specification for Identifiers](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names). If the BookmarkId contains characters which are not allowed by this specification, they will be escaped by the reporting engine. 
 
-# See Also
+## See Also
 
  * [Bookmark Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action%})

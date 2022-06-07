@@ -87,5 +87,5 @@ public partial class MainPage : UserControl
 }
 ```
 
-## See Also
+### See Also
 [Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](../t-telerik-reporting-service-silverlightclient-reportserviceclient)

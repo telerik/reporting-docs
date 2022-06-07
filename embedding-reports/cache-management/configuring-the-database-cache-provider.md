@@ -84,7 +84,7 @@ Two cache providers are available:
 ````
 
 
-# See Also
+## See Also
 
 * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
 

@@ -33,7 +33,7 @@ The sorting adorner by design is aligned horizontally on the left and vertically
 
 The items can hold only one action. If you need to add multiple actions for example Sorting Action and Toggle Visibility our recommendation is to nest the target item to a Panel item. Then add one action to the panel and another action to the target item.           	
 
-# See Also
+## See Also
 
 
  * [How to sort the data rows in a column]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-table-details%})

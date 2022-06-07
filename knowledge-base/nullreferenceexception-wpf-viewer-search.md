@@ -39,7 +39,7 @@ Viewer's template needs to be updated manually with the one provided with versio
 
 Custom templates need to be merged manually.
 
-## See Also
+### See Also
 
 [WPF viewer manual setup](../wpf-report-viewer-manual-setup)
 

@@ -74,5 +74,5 @@ the resources are searched at (check the report viewer's initialization file - *
 ```
 - The function is then used in expression to visualize text in the report.
 
-## See Also
+### See Also
 You can download the sample MVC application illustrating the behavior from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/localizationwithresxfilesbasedonreportparameter.zip?sfvrsn=201d2106_2).

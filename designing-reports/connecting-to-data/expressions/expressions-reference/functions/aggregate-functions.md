@@ -31,6 +31,6 @@ To include aggregated values in your report, use the __Aggregates__ node in the 
 | __Var(Expression)__ |Estimates variance based on a sample. Null values are ignored.|Returns float.|
 | __VarP(Expression)__ |Calculates variance based on the entire population. Null values are ignored.|Returns float|
 
-# See Also
+## See Also
 
  * [Apply custom logic with user aggregate functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})

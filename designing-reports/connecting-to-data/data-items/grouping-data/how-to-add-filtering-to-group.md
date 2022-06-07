@@ -40,6 +40,6 @@ We will use the filter to hide/show the dynamic groups members. Additionally we 
 
 	![Preview](images/DataItems/diPreview.PNG)
 
-# See Also
+## See Also
 
 [Filter Group members]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}#filter-group-members)

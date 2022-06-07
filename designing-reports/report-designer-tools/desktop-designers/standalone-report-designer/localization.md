@@ -25,6 +25,6 @@ We provide reference translations for some popular languages in this GitHub repo
 If the resources are modified or the Report Designer language is changed restart of the Report Designer is required.          
 
 
-# See Also
+## See Also
 
 * [Windows Language Packs](https://support.microsoft.com/en-us/help/14236/language-packs)

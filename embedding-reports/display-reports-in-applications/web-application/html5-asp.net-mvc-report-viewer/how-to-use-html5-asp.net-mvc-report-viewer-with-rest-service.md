@@ -89,7 +89,7 @@ To display the newly added MVC page, you need to use your own MVC controller's a
 
 You can find the complete example setup in Telerik Reporting installation path. For example, __C:\Program Files (x86)\Progress\Telerik Reporting {VERSION}\Examples\CSharp\MvcDemo__. 
 
-# See Also
+## See Also
 
 * [How To: Use HTML5 ASP.NET MVC Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-report-server%})
 

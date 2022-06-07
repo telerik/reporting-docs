@@ -70,7 +70,7 @@ The most common reasons for failure are related with the authentication against 
 |The viewer displays the message:<br />`System.OperationCanceledException: {ReportName} report cannot be found`|Make sure the URL specified in the report source __report__ is valid and such a category and report exist in Report Server.|
 |The viewer displays the message:<br />`System.Net.WebException: The remote name could not be resolved: {server name}`|Make sure that the server specified in the connection string exists and has a valid and running Report Server instance.|
 
-# See Also
+## See Also
 
 * [How to Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%})
 

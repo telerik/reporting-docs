@@ -52,7 +52,7 @@ The attached demo project illustrates the scenario. The data source is a text fi
 
 [Download the final Mvc application](resources/HtmlMvcViewerAndBindingData.zip).
 
-## See Also
+### See Also
 - [HTML5 Report Viewer](./html5-report-viewer)
 - [Reporting REST service](./telerik-reporting-rest-conception)
 - [SqlDataSource](./sqldatasource)

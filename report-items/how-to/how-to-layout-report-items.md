@@ -50,7 +50,7 @@ Move the mouse over the report item until you see the cross hair cursor (see ima
 
 To remove blank vertical space in a container (report section or panel item), whenever you control the visibility of report items in runtime, set its respective height to a very small value (e.g. 1mm). Section/Panel item can grow to accommodate their children but cannot shrink/take space that is no longer occupied. If you want a section/panel to shrink only at runtime you can set its Height property in the report constructor. Place the Height property assignment code just after the _IntializeComponent()_ method call. 
 
-# See Also
+## See Also
 
 * [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})
 

@@ -71,5 +71,5 @@ example below shows an JSON-based configuration file that hides the RTF renderin
   }
   ```
 
-## See Also
+### See Also
 [Configuring Telerik Reporting](../configuring-telerik-reporting)

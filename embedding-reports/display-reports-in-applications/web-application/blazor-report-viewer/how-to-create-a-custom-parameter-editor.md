@@ -84,6 +84,6 @@ The following example uses the **Dashboard** example report that we ship with th
 ````
 
 
-# See Also
+## See Also
 
 * [Blazor Report Viewer Event Binding]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/event-binding%})

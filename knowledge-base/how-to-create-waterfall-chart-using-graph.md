@@ -67,5 +67,5 @@ The steps, needed to produce a waterfall chart are listed below:
 	Otherwise subtracts the current datapoint value from the accumulated sum to calculate the bottom coordinate of the datapoint.
 5. Assign the desired colors to the graph series using [Conditional formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) rules.
 
-## See Also
+### See Also
 You can download the sample .trdx report definition from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/waterfallchart.trdx?sfvrsn=d0eb9990_4&download=true).

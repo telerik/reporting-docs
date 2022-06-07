@@ -41,7 +41,7 @@ This can produce unexpected result in some rendering formats.
  
 - To set the width of the border, use **BorderStyle=Solid** (or all other options except "*None*") and specify the required value for *BorderWidth* property.
 
-## See Also
+### See Also
 
 [Using Styles to Customize Reports](../style-using-styles-to-customize-reports)
 

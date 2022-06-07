@@ -77,7 +77,7 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
 In order to distribute an application that uses __Telerik Reporting__ with a localized __Report Viewer__, one should distribute all of the required localization __RESX__ resource files, in addition to the main application assemblies. For __Web Sites__ and __Web Applications__ the localization __RESX__ resource files should be placed in the "App_GlobalResources" folder. In case of Precompiled website, place the __RESX__ file in the __bin__ folder.
 
-# See Also
+## See Also
 
 * [Hierarchical Organization of Resources for Localization](http://msdn2.microsoft.com/en-us/library/756hydy4(VS.71).aspx)
 

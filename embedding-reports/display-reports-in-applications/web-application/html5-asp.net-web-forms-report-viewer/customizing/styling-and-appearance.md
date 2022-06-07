@@ -33,7 +33,7 @@ The HTML5 Web Forms Report Viewer is using the default viewer template. In order
 
 For more information on the used stylesheets and report viewer templates check out the following HTML5 Report Viewer articles: 
 
-# See Also
+## See Also
 
 * [Styling and Appearance Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%}) 
 

@@ -40,7 +40,7 @@ The connection to the private Nuget feed requires user and password credentials,
 
 This is an issue with .NET Core tooling and its options for storing passwords for private feeds - <a href="https://github.com/dotnet/cli/issues/3174" target="_blank">Restore fails when a NuGet feed with Encrypted Credentials (default) is defined on the system</a>. The comment in the first post elaborates on how to store the username and password in plain text to allow the restore operation.  
   
-## See Also
+### See Also
 
 <a href="https://docs.microsoft.com/en-us/nuget/consume-packages/consuming-packages-authenticated-feeds" target="_blank">Consuming packages from authenticated feeds</a>.
 

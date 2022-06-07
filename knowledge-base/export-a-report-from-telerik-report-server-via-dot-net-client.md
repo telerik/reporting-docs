@@ -146,7 +146,7 @@ class Program
 
 Please note that this is not an end solution, but an example illustrating how to format a request to the Report Server and the type of information returned in responses. You can use any other client to submit requests and get responses by the Report Server.
 
-## See Also
+### See Also
 
 [REST API Reference](../../report-server/implementer-guide/apis/rest-api/api-reference)
 

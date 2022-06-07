@@ -36,7 +36,7 @@ the ReportsController [SendMailMessage method](../m-telerik-reporting-services-w
 
 Another option is to use the [sendEmailEnd(e, args)](../html5-report-viewer-reportviewer-events-sendemailend) event handler of the viewer to modify any of the above properties that are available in the args parameter and then split out the needed information from this property in the controller and use it as needed.
 
-## See Also
+### See Also
 - [SendEmail properties](../properties-t-telerik-reportviewer-mvc-sendemail)
 - [MailMessage class](https://docs.microsoft.com/en-us/dotnet/api/system.net.mail.mailmessage?view=netframework-4.8)
 - [SendMailMessage method](../m-telerik-reporting-services-webapi-reportscontrollerbase-sendmailmessage)

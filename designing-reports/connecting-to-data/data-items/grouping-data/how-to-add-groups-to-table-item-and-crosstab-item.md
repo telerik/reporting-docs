@@ -214,7 +214,7 @@ group1.ReportItem = textBox1
 table1.RowGroups.Add(group1)
 ````
 
-# See Also
+## See Also
  
  * [Table](/reporting/api/Telerik.Reporting.Table)  
  

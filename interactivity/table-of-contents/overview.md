@@ -43,7 +43,7 @@ The  [Levels](/reporting/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocS
 
 When adding a TOC section to the report for the first time, the  [Levels](/reporting/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection will be empty. In this case, the TOC entries will be styled with a default style and leader symbol. You can add levels and configure them by clicking on the ellipsis button of the [Levels](/reporting/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels)  property to invoke the levels collection editor.         
 
-# See Also
+## See Also
 
  * [How to Add a Report Group to Table of Contents]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-report-group-to-table-of-contents%})
 

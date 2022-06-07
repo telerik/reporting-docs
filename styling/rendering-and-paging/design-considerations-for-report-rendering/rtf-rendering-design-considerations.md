@@ -108,7 +108,7 @@ Due to the media limitations, the following CSS style properties set on the HTML
 
 This rendering extension does not support any interactive features.
 
-# See Also
+## See Also
 
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

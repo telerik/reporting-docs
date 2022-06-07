@@ -40,7 +40,7 @@ When working with map series, it is often useful to have a way to determine the 
 
 > When using __ShapeMapSeries__ that obtain their geospatial information from a __ShapeFile__, the processing engine will automatically generate two virtual fields in the resulting composite data set: `"Location.Latitude"` and `"Location.Longitude"` that serve the same purpose - to use the coordinates of the data point centroid in expressions. 
 
-# See Also
+## See Also
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

@@ -76,7 +76,7 @@ The entire HTTPS-enabled system.serviceModel section of web.config is below:
 
 > The service can be tested after browsing the .svc file using HTTPS. If you want to show the service wsdl content set the ReportServiceBehavior `<serviceMetadata httpsGetEnabled="true" />` 
 
-# See Also
+## See Also
 
 * [How to Setup SSL on IIS 7](http://learn.iis.net/page.aspx/144/how-to-setup-ssl-on-iis-70/) 
 

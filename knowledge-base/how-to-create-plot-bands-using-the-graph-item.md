@@ -38,4 +38,5 @@ A sample image is shown below:
 8. Assign the desired colors to the graph series using the graph's [ColorPalette](../p-telerik-reporting-graph-colorpalette) property.
 
 ## See Also
+
 You can download the sample .TRDX report definition from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/customer-satisfaction-by-store-department.trdx?sfvrsn=e203b785_2&download=true).

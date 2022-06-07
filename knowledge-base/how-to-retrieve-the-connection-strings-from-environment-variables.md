@@ -64,5 +64,5 @@ The method **ResolveSpecificReportingConfiguration** must be called in the **Sta
 
 
 
-## See Also
+### See Also
 [How to Connect to an Oracle Database](../how-to-sqldatasource-oracle)

@@ -26,6 +26,6 @@ You can add interactive actions that allow users to open Web pages or other repo
 
 > The actions are feature of the report viewers and not of the rendering extension. You can find more info about the supported interactive features in each format by checking the Interactivity section of the respective articles in [Design Considerations for Report Rendering Overview]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%}) help section. 
 
-# See Also
+## See Also
 
  * [Interactive Action Events]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/interactive-action-events%})

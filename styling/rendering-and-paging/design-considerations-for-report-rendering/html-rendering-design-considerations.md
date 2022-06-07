@@ -72,7 +72,7 @@ The following rendering specifics apply to MHTML:
 
 * Table of contents interactivity (navigational links to report items) is not supported.                 
 
-# See Also
+## See Also
 
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

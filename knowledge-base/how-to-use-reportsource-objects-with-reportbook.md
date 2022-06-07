@@ -61,7 +61,7 @@ typeReportSource.TypeName = GetType(Report1).AssemblyQualifiedName
 reportBook.ReportSources.Add(typeReportSource)
  ````
   
-## See Also 
+### See Also 
 [How to migrate your project to utilize the new ReportSource objects](./how-to-migrate-your-project-to-utilize-the-new-reportsource-objects) 
 
 [Report Sources](../report-sources)

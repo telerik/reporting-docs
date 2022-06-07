@@ -78,7 +78,7 @@ Depending on the environment specifications, you can approach the issue in the f
 
 It is recommended that you create a backup before resetting the storage.
 
-## See Also
+### See Also
 
 * [REST Service Storage Overview](../telerik-reporting-rest-service-storage)
 * [Configuring MS SQL Database Storage]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage %})

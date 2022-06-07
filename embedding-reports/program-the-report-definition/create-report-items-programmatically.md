@@ -48,7 +48,7 @@ detail.Items.AddRange(New Telerik.Reporting.ReportItemBase() {panel1})
 ````
 
 
-# See Also
+## See Also
  
 * [TextBox](/reporting/api/Telerik.Reporting.TextBox)  
 

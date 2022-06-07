@@ -31,7 +31,7 @@ You can add a table of contents to the report and click on entries in the table 
 
 1. Run the report - the table of contents displays the group values. Click any TOC entry to jump to the report page with that group instance.
 
-# See Also
+## See Also
 
 
  * [Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%})

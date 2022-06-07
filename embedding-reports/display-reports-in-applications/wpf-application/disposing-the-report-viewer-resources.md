@@ -26,7 +26,7 @@ In this scenario the WPF Report Viewer is hosted in a [RadTabItem](https://docs.
 
 The scenarios above are a few of the available variations of embedding the WPF Report Viewer in another control. It is always advised to examine the memory consumption of the application and use the explicit methods of disposing the viewer resources if necessary. 
 
-# See Also
+## See Also
 
 * [AutoDisposeModel](/reporting/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_AutoDisposeModel)  
 

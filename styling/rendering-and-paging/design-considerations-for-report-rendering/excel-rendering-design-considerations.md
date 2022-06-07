@@ -296,7 +296,7 @@ __Microsoft Excel 2007 and above__ format supports Navigate to URL actions on re
 
 __Microsoft Excel 97-2003__ format does not support any interactive features. 
 
-# See Also
+## See Also
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
 

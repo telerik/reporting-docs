@@ -52,7 +52,7 @@ End Sub
 
 If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained in the article [Declaring the application as DPI-aware]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}#declaring-the-application-as-dpi-aware). 
 
-# See Also
+## See Also
 
 * [On Telerik Reporting]({%slug on-telerik-reporting%})
 

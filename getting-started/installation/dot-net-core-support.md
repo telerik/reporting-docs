@@ -145,7 +145,7 @@ Telerik Reporting ships with a ready-made .NET Core examples that demonstrate ho
 
 An example project is available in the Telerik Reporting installation directory *\Examples\CSharp\Asp.NetCoreDemo* subfolder. 
 
-# See Also
+## See Also
 
 * [ASP.NET Core Web API Implementation Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
 

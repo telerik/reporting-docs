@@ -81,7 +81,7 @@ The Chart item offers numerous features including:
 
 	The Chart offers a set of properties to modify the look and feel of its elements.
 
-# See Also
+## See Also
 
 * [Telerik Charting Documentation](https://docs.telerik.com/devtools/aspnet-ajax/controls/chart/overview)
 

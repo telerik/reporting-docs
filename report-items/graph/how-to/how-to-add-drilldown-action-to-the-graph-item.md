@@ -78,7 +78,7 @@ SELECT
   ![How To Add Drill Down Action 6 Expanded Category Groups](images/Graph/HowToAddDrillDownAction/HowToAddDrillDownAction_6_ExpandedCategoryGroups.png)
 
 
-# See Also 
+## See Also 
 
 * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 

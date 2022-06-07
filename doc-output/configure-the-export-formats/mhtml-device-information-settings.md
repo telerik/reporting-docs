@@ -14,7 +14,7 @@ position: 9
 
 No parameters can be specified for the MHTML rendering extension.
 
-# See Also
+## See Also
 
 * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
 

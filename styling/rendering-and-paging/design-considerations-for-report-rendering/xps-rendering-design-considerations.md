@@ -31,7 +31,7 @@ This rendering extension does not support any interactive features.
 
 >note XPS glyphs do not work with TrueType Collection Fonts. When you use such fonts in report, only the first font in the collection is used for the creation of the XPS document.
 
-# See Also
+## See Also
 
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

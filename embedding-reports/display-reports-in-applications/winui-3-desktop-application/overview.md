@@ -80,7 +80,7 @@ Currently the WinUI Report Viewer does not provide the following functionalities
 
 The missing functionalities will be gradually added when possible, given that the current state of the WinUI 3 platform development allows it. 
 
-# See Also
+## See Also
 
 * [Windows UI Library (WinUI)](https://docs.microsoft.com/en-us/windows/apps/winui/)
 

@@ -31,7 +31,7 @@ A user can click items in the document map to jump to areas within a report.
 1. Run the report - the document map displays the group values. Click any document map node to jump to the report page with that item.
 
 
-# See Also
+## See Also
 
  * [Document Map Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%})
  

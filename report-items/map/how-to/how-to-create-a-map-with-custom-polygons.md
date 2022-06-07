@@ -51,7 +51,7 @@ New Mexico;POLYGON((-109.065510 37.006785,-109.051777 31.332360,-108.208414 31.3
 
 In this article we demonstrated how to display custom-shaped polygons using [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries)  and Choropleth wizard. This approach is useful when is needed to show an additional layer or layers of geospatial data in a report. 
 
-# See Also
+## See Also
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

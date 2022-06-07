@@ -58,7 +58,7 @@ Report reportName.trdp/x cannot be resolved.
    sudo apt-get install libgdiplus
    ```
 
-## See Also
+### See Also
 - [Preview reports using REST Service deployed in Azure](./preview-reports-using-rest-service-deployed-in-azure)
 
 - [How to Build and Install Latest libgdiplus library on Linux](./how-to-build-and-install-libgdiplus-linux)

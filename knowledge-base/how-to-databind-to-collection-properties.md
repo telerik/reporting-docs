@@ -85,7 +85,7 @@ The **Report.DataSource** property is set to a collection of **Contact** obj
 
 The expressions are evaluated only during the report processing. Thus, the data schema for the nested data item (Table) will not be available in the data explorer and in the wizards. You can use additional data source components bound to the nested business objects to help yourself with creating the report layout. Finally, apply the required bindings and remove the helper object data source components. 
  
-## See Also
+### See Also
 
 [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
 

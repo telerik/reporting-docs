@@ -69,5 +69,5 @@ function createNumberEditor(placeholder, options) {
 You can download the sample application from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/numbereditorsample.zip?sfvrsn=97fa2518_2). 
 Note that it is a MVC application with HTML5 MVC Report Viewer.
 
-## See Also
+### See Also
 - [How To: Create a Custom Parameter Editor](../html5-mvc-report-viewer-customizing-custom-parameters-editor)

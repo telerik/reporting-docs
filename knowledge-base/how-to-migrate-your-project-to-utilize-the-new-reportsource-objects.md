@@ -432,6 +432,6 @@ The sole purpose of the changes is to extend the existing functionality and fit 
 
 What’s more, editing a report in the VS report designer will use the new objects instead of the obsolete properties when saving.
 
-## See Also
+### See Also
 
 [Report Source Overview](../report-sources)

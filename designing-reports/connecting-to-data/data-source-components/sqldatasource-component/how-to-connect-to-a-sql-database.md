@@ -113,7 +113,7 @@ You can connect to a SQL database using the Telerik __SqlDataSource__  component
 
 1. Click __Finish__. The SqlDataSource Wizard would close and the SqlDataSource component would be ready for use by the data items.             
 
-# See Also
+## See Also
  
 * [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})
 

@@ -45,7 +45,7 @@ Private Sub Report1_NeedDataSource(ByVal  sender As Object, ByVal e As System.Ev
 End Sub
 ````
 
-# See Also
+## See Also
 
  * [Connecting to Data]({%slug telerikreporting/designing-reports/connecting-to-data/overview%})
 

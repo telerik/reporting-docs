@@ -46,7 +46,7 @@ The supported map types are:
 
 To achieve better appearance, the Map item can define a [Tile Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}) which will draw an image of the requested map extent as a background layer onto the plot area. 
 
-# See Also
+## See Also
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

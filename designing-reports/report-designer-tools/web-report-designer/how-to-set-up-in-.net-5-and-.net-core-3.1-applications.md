@@ -203,6 +203,6 @@ Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath,  "Reports")
 
 Find the complete example setup of the Web Report Designer in a .NET Core 3.1 application in our [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/WebReportDesigner%20in%20.NET%20Core%203.1). 
 
-# See Also
+## See Also
 
 * [YouTube video "How to set up a Telerik Web Report Designer in .NET 5?"](https://www.youtube.com/watch?v=6HXU-3awhis)

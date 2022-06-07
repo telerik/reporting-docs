@@ -50,7 +50,7 @@ Here are the most important changes in Telerik Reporting during the last several
 
 - As of **R3 2016** changes on report items definitions in events are not accepted - [Upgrade issues with ObjectDataSource Component after Telerik Reporting R3 2016](./telerik-reporting-r3-2016---upgrade-issues-with-objectdatasource-component).
 
-## See Also
+### See Also
 - [Telerik Reporting Release History](https://www.telerik.com/support/whats-new/reporting/release-history)
 
 - [Upgrade Path Overview](../upgrade/overview)

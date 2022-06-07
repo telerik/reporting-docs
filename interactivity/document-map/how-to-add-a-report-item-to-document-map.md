@@ -35,7 +35,7 @@ If you want to restrict the user from showing/hiding the document map, you can h
 >note The order of items in the document map is according to the order of the report items in the report items' collection, and not by the order in which you have added [DocumentMapText](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_DocumentMapText) to items.
 
 
-# See Also
+## See Also
 
  * [Document Map Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%})
  

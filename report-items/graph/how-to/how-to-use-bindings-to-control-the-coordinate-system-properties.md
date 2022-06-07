@@ -99,7 +99,7 @@ In this article we demonstrated how to set dynamically the graph's coordinate sy
 
 You can download this example report as a __.trdx__ report definition from the following link: [How to: Use Bindings to Control the Graph's Coordinate System Properties.](http://blogs.telerik.com/docs/default-source/reporting/graphbindingsexample.trdx?sfvrsn=2) 
 
-# See Also
+## See Also
 
 * [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})
 

@@ -79,7 +79,7 @@ The styling of the merged data point, its label or the corresponding legend item
 	= IsMergedData() | Operator.Equals | = True 
 
 
-# See Also
+## See Also
 
 * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
 

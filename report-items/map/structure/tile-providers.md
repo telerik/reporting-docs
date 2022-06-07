@@ -20,7 +20,7 @@ The [TileProvider](/reporting/api/Telerik.Reporting.TileProvider) class is used 
 
 * [MapQuestTileProvider](/reporting/api/Telerik.Reporting.MapQuestTileProvider) __(obsolete)__ - uses the [MapQuest](http://www.mapquest.com/) tile servers that provides the tiles in two imagery sets: *OpenStreetMap Tiles* and the *MapQuest Open Aerial Tiles*. The tile server does not require a Client Token for authentication. The [MapQuestTileProvider](/reporting/api/Telerik.Reporting.MapQuestTileProvider) is being substituted by the [GenericTileProvider](/reporting/api/Telerik.Reporting.GenericTileProvider) in order to give more control over the tile provider settings and avoid the pre-setup provider configuration. 
 
-# See Also
+## See Also
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

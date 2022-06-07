@@ -110,7 +110,7 @@ This __ResourceResolver__ is intended to be used in scenarios where the resource
 |Child elements| __parameters__ – specifies a collection of parameters for the resource resolver in the `<resourceResolver>` element. Only one __parameters__ element can be used in the `<resourceResolver>` element.<br/>__Supported parameters for *path* provider__<ul><li>__name__ : _directory_</li><li>__value__ : the path to the directory that contains the resources to be resolved.</li></ul>__Supported parameters for *custom* provider__<ul><li>__name__ : _typeName_</li><li>__value__ : the assembly qualified name of the type that implements the [Telerik.Reporting.Interfaces.IResourceResolver](/reporting/api/Telerik.Reporting.Interfaces.IResourceResolver) interface.</li></ul>The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. If no additional parameters are specified, the parameterless constructor will be used.|
 |Parent element| __processing__ - specifies the parent element of the Telerik Reporting configuration settings.|
 
-# See Also
+## See Also
 
 * [Application Configuration Files](http://msdn.microsoft.com/en-us/library/windows/desktop/aa374182(v=vs.85).aspx)
 

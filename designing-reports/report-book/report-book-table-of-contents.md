@@ -18,7 +18,7 @@ The Report Book TOC works in a similar manner to the TOC in a single report. The
 
 >note When a report inside the Report Book also has a TOC, its TocSection will not be moved or merged with the Report Book TOC. It will be displayed as part of the report it belongs to. To avoid having multiple TOCs - one for the whole Report Book and other TOCs for the reports inside, you will need to hide the duplicate TocSections in their respective reports. 
 
-# See Also
+## See Also
 
  * [Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%})
 

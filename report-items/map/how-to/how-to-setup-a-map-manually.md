@@ -33,7 +33,7 @@ The current article elaborates on how to setup a Map without using the __Map Wiz
    
    + In case your data source can provide geographical coordinates to be used for the data points, you need to set the Series' [Latitude](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_Latitude) and [Longitude](/reporting/api/Telerik.Reporting.PointMapSeries#Telerik_Reporting_PointMapSeries_Longitude) to the appropriate data source fields. 
 
-# See Also
+## See Also
 
 * [How to Add Map to Report]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-map-to-report%})
 

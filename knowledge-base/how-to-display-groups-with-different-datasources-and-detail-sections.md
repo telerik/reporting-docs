@@ -27,7 +27,7 @@ For more details, see:
 
 - [How to: Add groups to Table item and Crosstab item](../data-items-how-to-add-groups-to-table-item-and-crosstab-item)
 
-## See Also
+### See Also
   [How to: Create a Master-Detail Report Using a SubReport Item](../designing-reports-master-detail)
 
   [How to: Create a Master-Detail Report Using a Table](../table-howto-creating-master-detail-reports-using-table)

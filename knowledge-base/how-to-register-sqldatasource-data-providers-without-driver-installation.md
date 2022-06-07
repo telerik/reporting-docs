@@ -99,7 +99,7 @@ With this set up, the Standalone designer should successfully find the data prov
 ## Notes
 Registering new data providers in the <a href="/ui-report-designer" target="_blank">Visual Studio Telerik Report Designer</a> would require the same configuration code to be added to the Visual Studio *.config* file (i.e. **devenv.exe.config**). It can be found in *(VS\_installation\_folder)/Common7/IDE*, which would become also the **"appFolder"**.
 
-## See Also
+### See Also
 - <a href="/connecting-to-data-data-source-components" target="_blank">Data Source components.</a>
 - <a href="/sqldatasource" target="_blank">SqlDataSource components.</a>
 - <a href="https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory" target="_blank">Obtaining a DbProviderFactory according to MSDN.</a>

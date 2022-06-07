@@ -132,7 +132,7 @@ npm start
 
 A sample project can be found in the installation folder of Telerik Reporting __[TelerikReporting_InstallDir]\Examples\React__. 
 
-# See Also
+## See Also
 
 * [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})
 

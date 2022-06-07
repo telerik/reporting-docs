@@ -93,6 +93,6 @@ The __Web Service Data Source Wizard__ allows you to create a new or edit an exi
 1. __2-Step Authentication Parameters__ The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields with the expression result or static value. 
 
 
-# See Also
+## See Also
 
 * [Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})

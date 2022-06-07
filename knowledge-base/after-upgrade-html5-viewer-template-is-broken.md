@@ -49,7 +49,7 @@ The possible causes for this issues depend on the scenario:
 
 * For either the default or custom template&mdash;After updating the assemblies or merging the latest changes, make sure that the browser cache is cleared. Browsers often cache HTML and CSS files to optimize the page loading. Sometimes they do not detect modified files.
 
-## See Also
+### See Also
 
 - [Styling and Appearance]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview %})
 - [Providing Custom Templates]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates %})

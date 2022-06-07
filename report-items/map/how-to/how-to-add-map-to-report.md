@@ -30,7 +30,7 @@ The simplest way to add a __Map__ item to your report is to run the Map Wizard. 
 
 1. When you finish the wizard a new Map item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
 
-# See Also
+## See Also
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

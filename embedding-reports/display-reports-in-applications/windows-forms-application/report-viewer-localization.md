@@ -72,7 +72,7 @@ The above diagram illustrates a simple view of the resource fallback for a UI c
 
 In order to distribute an application that uses __Telerik Reporting__ with a localized __Report Viewer__, one should distribute all of the required localization __RESX__ resource files, in addition to the main application assemblies. For __Windows Forms Applications__ the __RESX__ files should be placed in the same directory, where the application is installed.
 
-# See Also
+## See Also
 
 * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 

@@ -56,6 +56,6 @@ The following specifics are visible from the preview:
 
 * Page header and page footer sections span the actual width of the page, not the width of the column.
 
-# See Also
+## See Also
 
 * [How to: Create Multi-Column Report - Across the Page and Then Down]({%slug how-to-create-multi-column-report---across-the-page-and-then-down%})

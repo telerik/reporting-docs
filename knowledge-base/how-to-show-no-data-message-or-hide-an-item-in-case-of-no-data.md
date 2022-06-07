@@ -50,6 +50,6 @@ Expression: = Count(1)>0
 
 > The *Property path* has to be typed manually, where the *Parent* keyword can be used as many times as needed to get the item in the Main Report, which you want to hide.
 
-## See Also
+### See Also
 
 [How to Set a No Data Message](../report-structure-dataitem-set-no-data-message)

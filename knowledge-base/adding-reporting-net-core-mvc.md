@@ -280,6 +280,6 @@ public class Startup
 	]
 ````
 
-## See Also
+### See Also
 
 * [Demo Application on Git](https://github.com/telerik/reporting-samples/tree/master/.NET%20Core%203.1%20MVC)

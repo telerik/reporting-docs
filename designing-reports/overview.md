@@ -104,7 +104,7 @@ Telerik Reporting supports the following programmatic report definitions:
 
 Useful item names will help you when browsing the report object tree in [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) and when selecting target for [Drilldown Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%}).         
 
-# See Also
+## See Also
 
 * [Automatic Layout (Dock and Anchor)]({%slug telerikreporting/designing-reports/report-structure/automatic-layout-(dock-and-anchor)%})
 * [Performance Considerations]({%slug telerikreporting/designing-reports/performance-considerations%})

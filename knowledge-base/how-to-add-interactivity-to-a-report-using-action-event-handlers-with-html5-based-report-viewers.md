@@ -130,7 +130,7 @@ When you're done, start the project and hover your mouse over the crosstab detai
 
 ![Custom Actions in HTML5 Report Viewers](resources/customactionshtml5viewer_productsales.png)
 
-## See Also
+### See Also
 
 [Design Report - Actions](../designing-reports-interactivity-actions)
 

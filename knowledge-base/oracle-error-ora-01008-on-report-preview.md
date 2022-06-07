@@ -38,6 +38,6 @@ There are three approaches that can be taken in this case:
 
 > This error is related to the Oracle.ManagedDataAccess data provider itself and is out of the scope of Telerik Reporting. The problem is reproducible in apps that do not use Telerik Reporting at all which can be verified by simply extracting the query and executing it separately.
 
-## See Also
+### See Also
 
 [Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})

@@ -33,6 +33,6 @@ When you [Freeze Column Headers]({%slug telerikreporting/designing-reports/addin
 
 Add the TextBox with the Action in a [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) rather than directly in the Table/Crosstab cell. This sets the action on an item that is not directly in the Table/Crossttab and allows the header to freeze as expected in the Html5 Report Viewer and its wrappers.
 
-## See Also
+### See Also
 
 [FreezeColumnHeaders functionality doesn't behave properly when Action is set on the header](https://feedback.telerik.com/reporting/1485084-freezecolumnheaders-functionality-doesn-t-behave-properly-when-action-is-set-on-the-header)

@@ -68,7 +68,7 @@ If you now preview the report, you will see that when selecting Switzerland, the
 ![Map Preview](resources/mapextentwithonedatapoint.png)
 
 
-## See Also
+### See Also
 [Map](./reporting/mapstructure)
 
 [PointMapSeries Class](./t-telerik-reporting-pointmapseries)

@@ -21,11 +21,11 @@ One-dimensional Barcodes support the `ShowText` common setting. When [`ShowText`
 
 When the text is displayed, you can also align it horizontally by using the `TextAlign` property of the [`Style`](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_Style) object. 
 
-![barcode-textalign-property](images/Barcodes/barcode-textalign-property.png) 
+![barcode-textalign-property](../images/Barcodes/barcode-textalign-property.png) 
 
 You can also use the `VerticalAlign` property of the [`Style`](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_Style) object to align the Barcode vertically. 
 
-![barcode-verticalalign-property](images/Barcodes/barcode-verticalalign-property.png)
+![barcode-verticalalign-property](../images/Barcodes/barcode-verticalalign-property.png)
 
 ## Code128 Specifics
 

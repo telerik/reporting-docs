@@ -26,7 +26,7 @@ The following article demonstrates how to use the [Graph item](../graphoverview)
 We are assuming that the chart you're creating, needs to be divided horizontally into three areas, colored in red, yellow and green. 
 These areas will help to visually distinguish each column and easily determine its relation to a particular area.
 A sample image is shown below:
-![Graph, showing customer satisfaction by store department](https://www.telerik.com/sfimages/default-source/productsimages/reporting/plot-band-rankings.png?sfvrsn=7dadd53d_2 "Customer satisfaction by store department")
+![Graph, showing customer satisfaction by store department](images/plot-band-rankings.png)
 
 1. Create a column chart using the wizard. Creating such chart is a straightforward process, explained here: [How To: Create Column Chart](../graphhowtocreatecolumnchart) and we won't discuss it in details.
 2. Create a second coordinate system, that will use the existing Y axis and have new X axis with Numerical scale.
@@ -37,5 +37,6 @@ A sample image is shown below:
 7. Open the series editor and move the column series at the last position in the list, so it will be drawn on top of the area series.
 8. Assign the desired colors to the graph series using the graph's [ColorPalette](../p-telerik-reporting-graph-colorpalette) property.
 
-### See Also
-You can download the sample .trdx report definition from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/customer-satisfaction-by-store-department.trdx?sfvrsn=e203b785_2&download=true).
+## See Also
+
+You can download the sample .TRDX report definition from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/customer-satisfaction-by-store-department.trdx?sfvrsn=e203b785_2&download=true).

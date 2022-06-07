@@ -22,7 +22,8 @@ res_type: kb
 ## Description
 The following article explains how to use the Graph item to create a [waterfall chart](https://en.wikipedia.org/wiki/Waterfall_chart), 
 often used to demonstrate how an initial value is affected by a series of intermediate positive or negative values.
-![Graph, showing a waterfall chart](https://www.telerik.com/sfimages/default-source/kb-articles/reporting-solution/waterfall-chart.png?sfvrsn=f5657783_2 "Waterfall chart")
+
+![Graph, showing a waterfall chart](images/waterfall-chart.png)
 
 ## Solution
 Such chart can be easily created when the data source already has the values for Y and Y0 precalculated, but in case we have only the

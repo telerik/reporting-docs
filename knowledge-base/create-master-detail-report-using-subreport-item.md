@@ -5,7 +5,7 @@ description: "Learn how to create a master-detail report by using a SubReport it
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item
 previous_url: /designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item
 tags: telerik reporting, report, items, create, master, detail, report, using, subreport, item
-published: True
+res_type: kb
 ---
 
 ## Environment

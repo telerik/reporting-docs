@@ -20,7 +20,7 @@ Data can be visualized by [data items]({%slug telerikreporting/designing-reports
 
 Data can be visualized by [data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}). Each data item has its own DataSource property and creates a separate [Expression scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}). To change data at run-time, you need to iterate all data items and to modify their DataSource properties e.g. [Changing the connection string dynamically according to runtime data]({%slug changing-the-connection-string-dynamically-according-to-runtime-data%}). You can also use the  [ReportItemBase.ItemCollection.Find Method](/reporting/api/Telerik.Reporting.ReportItemBase.ItemCollection#Telerik_Reporting_ReportItemBase_ItemCollection_Find_System_String_System_Boolean_) to get the data item visualizing data, and to change its DataSource property's value.         
 
-# See Also
+## See Also
 
  * [Do I need to use a Data Source component?]({%slug do-i-need-to-use-a-data-source-component%})
 

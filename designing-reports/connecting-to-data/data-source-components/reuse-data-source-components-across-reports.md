@@ -49,7 +49,7 @@ The Standalone Report Designer can load data from external assemblies, which exc
 
 Instead, you can create __templates__ with initial settings like configured data source components and layout elements - [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}).         
 
-# See Also
+## See Also
 
  * [Use DataObject as a datasource for nested data items (data-binding via expressions)](50936e55-b122-4378-8abd-4031e7ae713d#DataObjectAsDataSource)
 

@@ -86,7 +86,7 @@ Information on using the expression editor is available in the [Edit Expression 
 The item supports [embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}) for mail merge functionality. Embedded expressions give you the freedom to get and insert data-driven information directly into the text box report item to produce customized reports and mail merging. 
 
 
-# See Also
+## See Also
 
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
 

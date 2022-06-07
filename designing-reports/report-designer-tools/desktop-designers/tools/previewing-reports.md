@@ -17,6 +17,6 @@ In the report designers, you are not working with the actual data but a represen
 * Use any of the report viewers in a standalone application. For more information see [Using Telerik Reporting in Applications]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}). 
 
 
-# See Also
+## See Also
 
 * [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%})

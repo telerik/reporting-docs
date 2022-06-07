@@ -290,7 +290,7 @@ The following Report Viewers are designed to work as clients of [Telerik Report 
 These Report Viewers do not have direct access to Telerik Reporting Engine. Reports are processed and rendered on a remote machine where Telerik Report Server is running, and the content is delivered to the client by __Telerik Report Server's REST Service__. 
 
 
-# See Also
+## See Also
 
 * [How to: Implement and use custom IReportResolver (Reporting WCF Service's Report Resolver)]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%})
 

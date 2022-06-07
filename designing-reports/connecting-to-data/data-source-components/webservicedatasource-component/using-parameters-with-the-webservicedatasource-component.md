@@ -86,6 +86,6 @@ The __WebServiceDataSource__ component can request data in JSON format from a ru
 
   ![Web Service Data Source Cookie Parameter Request Urlx 750](images/WebServiceDataSourceCookieParameterRequestUrlx750.png)
 
-# See Also
+## See Also
 
 * [Using Parameters with Data Source objects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%})

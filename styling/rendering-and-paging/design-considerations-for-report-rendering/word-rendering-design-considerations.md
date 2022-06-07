@@ -98,7 +98,7 @@ Actions on report sections are not supported.
 
 Text Watermarks do not support __strikethrough__  and __underline__  text decorations.         
 
-# See Also
+## See Also
 
 
  * [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})

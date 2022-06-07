@@ -16,7 +16,7 @@ SqlDataSource, ObjectDataSource, EntityDataSource, OpenAccessDataSource, CubeDat
 
 > [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) can be used for passing values of String, Integer, Float, Datetime, Boolean type, and Array of objects in case of a [multivalue report parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters%}). Custom types are not supported by report parameters, but you can use other expression based on fields and custom functions to pass values to data-retrieval methods. Updating values of report parameters from the calling application can be achieved using Parameters collection of the ReportSource class: [Report Source Parameters]({%slug telerikreporting/designing-reports/report-sources/overview%}).           
 
-# See Also
+## See Also
 
  * [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
 

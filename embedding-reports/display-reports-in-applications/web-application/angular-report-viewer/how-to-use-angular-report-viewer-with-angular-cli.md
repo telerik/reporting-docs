@@ -131,6 +131,6 @@ ng serve
 ````
 
 
-# See Also
+## See Also
 
 * [Make sure the service address is correct and enable CORS](https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service)

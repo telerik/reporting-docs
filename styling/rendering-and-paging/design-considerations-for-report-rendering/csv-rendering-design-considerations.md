@@ -96,7 +96,7 @@ The rendering extension flattens the report into a tree structure that represent
 
 This rendering extension does not support any interactive features.
 
-# See Also
+## See Also
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
 

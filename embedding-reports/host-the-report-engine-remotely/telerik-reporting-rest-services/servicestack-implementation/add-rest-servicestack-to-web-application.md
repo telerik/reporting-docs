@@ -176,7 +176,7 @@ Protected Sub Application_Start()
 
 	If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}). 
 
-# See Also
+## See Also
  
 * [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver)  
 

@@ -54,7 +54,7 @@ When all the properties are set, the __ShapeMapSeries__ instance should look sim
 
 ![Choropleth Shape Map Series Layout In Property Grid](images/Map/Choropleth/Choropleth_ShapeMapSeries_LayoutInPropertyGrid.png)
 
-# See Also
+## See Also
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

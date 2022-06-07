@@ -201,7 +201,7 @@ In this example we demonstrated some of the newest features of Telerik Reporting
 
 You can download this example report as a __.trdx__ report definition from the following link: [How to: Create а map with ColumnChart series using CSV data source.](http://blogs.telerik.com/docs/default-source/reporting/olympicmedalsbynationalteams.trdx?sfvrsn=2) 
 
-# See Also
+## See Also
 
 * [How to Setup a Map Using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
 

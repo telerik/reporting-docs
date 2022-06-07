@@ -83,7 +83,7 @@ A successfully designed report that is optimized for the renderer that you plan 
 
 The physical page renderers impact the report layout and physical page size most. To learn more, see [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}). 
 
-# See Also
+## See Also
 
  * [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})
 

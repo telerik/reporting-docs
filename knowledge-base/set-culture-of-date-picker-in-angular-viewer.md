@@ -76,7 +76,7 @@ export class AppComponent implements AfterViewInit {
 </head>
 ``` 
 
-## See Also
+### See Also
 - [Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 Report Viewer]({% slug how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer %}) 
 
 - [Kendo UI for jQuery Integration](https://www.telerik.com/kendo-angular-ui/components/framework/kendo-jquery/)

@@ -52,7 +52,7 @@ chart1.Sortings.Add(sorting1)
 ````
 
 
-# See Also
+## See Also
  
 
 * [Chart](/reporting/api/Telerik.Reporting.Chart)  

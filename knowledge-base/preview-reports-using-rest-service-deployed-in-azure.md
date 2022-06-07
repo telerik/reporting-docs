@@ -71,7 +71,7 @@ The parameter is named **useMetafile** and its default value is *true*, which en
 This setting will be respected only if the rendering machine supports metafiles - otherwise a Bitmap instance is used to render the Graph and Map items.
 If the export to Microsoft Office formats fails in Azure environment, set the **useMetafile** to *false*. 
 
-## See Also
+### See Also
 - [Configuring Telerik Reporting Extensions](../configuring-telerik-reporting-extensions)
 - [Rendering Extensions](../configuring-rendering-extensions)
 - [Telerik Reporting Configuration Section](../configuring-telerik-reporting)

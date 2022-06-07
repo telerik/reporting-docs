@@ -108,7 +108,7 @@ The installer does not create or modify any data source names (DSN) in ODBC Mana
 
 The tool supports partial uninstallation - i.e. only a particular driver can be removed from registry and installation folder. However, if all the drivers are selected for uninstallation, the tool will perform a complete uninstall and remove the whole directory, if there are no other subdirectories in it. 
 
-# See Also
+## See Also
 
  * [Progress DataDirect ODBC Drivers documentation](https://docs.progress.com/bundle/datadirect-connect-odbc-71/page/Welcome-to-the-Progress-DataDirect-Connect-Series-for-ODBC.html)
 

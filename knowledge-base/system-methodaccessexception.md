@@ -63,6 +63,6 @@ To do this, add the following [bindingRedirects](ttps://docs.microsoft.com/en-us
   </runtime>
 </configuration>
 ```
-## See Also
+### See Also
 
 [How To: Add Telerik Reporting REST Web API to Web Application](../telerik-reporting-rest-host-http-service-using-web-hosting).  

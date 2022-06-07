@@ -29,7 +29,7 @@ The following image displays a Rose polar chart:
 * Polar charts are most commonly used to graph polar data, where each data point is determined by an angle and a distance.
 
 
-# See Also
+## See Also
 
 * [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
 

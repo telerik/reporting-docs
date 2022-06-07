@@ -74,7 +74,7 @@ End Function
 =Iif(Fields.Profit < 0, ColorFromName("Red"), ColorFromName("White"))
 ````
 
-# See Also
+## See Also
 
  * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 

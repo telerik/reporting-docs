@@ -44,6 +44,6 @@ An example of such modification is illustrated in [Changing the connection strin
 
 Events are **not** recommended for modifying/creating items and data source components as they fire once the report's processing is started, at that time, the report template is evaluated against the assigned data.
 
-## See Also
+### See Also
 
 [Understanding Events](../understanding-events).

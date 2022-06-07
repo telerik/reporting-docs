@@ -65,7 +65,7 @@ and S.SalesPersonId = 283
 
    ![Graph Layout 3](images/Graph/HowToBarLineSeries/GraphLayout3.png)
 
-# See Also
+## See Also
 
 * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) 
 

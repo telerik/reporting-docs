@@ -85,7 +85,7 @@ AND PC.Name = 'Bikes'
 
 In this example we demonstrated how to setup a Map item from scratch, how to add PieChart series to it and how to initialize and use the __Location Provider__. All the described steps are valid for both [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) and [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and can be reproduced with code as well. 
 
-# See Also
+## See Also
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

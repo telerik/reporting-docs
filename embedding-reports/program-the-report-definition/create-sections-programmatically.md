@@ -42,7 +42,7 @@ report.Items.Add(DirectCast(detail, ReportItemBase)
 ````
 
 
-# See Also
+## See Also
  
 * [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  
 

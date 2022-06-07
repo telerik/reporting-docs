@@ -69,6 +69,6 @@ To achieve the required scenario, accomplish the following steps. Note that you 
 <li aria-label="ariaLabelMenuContinuousScroll"><a data-command="telerik_ReportViewer_pageMode" title="menuContinuousScrollTitle" href="#"><i class="fa fa-angle-double-down icon-angle-double-down"></i><span>menuContinuousScrollText</span></a></li>
 ````
 
-# See Also
+## See Also
 
 * [Styling and Appearance]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%})

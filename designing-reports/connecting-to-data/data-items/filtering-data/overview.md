@@ -42,7 +42,7 @@ For Graph Filters can be applied to SeriesGroups and CategoryGroups and will con
 
 To apply the Style of report items dynamically Telerik Reporting uses Filter expressions. At run time, the report processor           evaluates the filter expressions and substitutes the result for the property value, just as if you had set the property to           a static value at design time. When the report is rendered, the run-time value is used. The filter expressions can contain           aggregate functions.         
 
-# See Also
+## See Also
 
  * [Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})
 

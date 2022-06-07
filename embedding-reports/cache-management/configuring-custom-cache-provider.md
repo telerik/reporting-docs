@@ -131,7 +131,7 @@ To register this new provider set the __provider__ attribute of the "Cache" elem
 ````
 
 
-# See Also
+## See Also
 
 * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
 

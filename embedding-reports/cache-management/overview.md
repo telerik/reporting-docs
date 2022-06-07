@@ -39,7 +39,7 @@ Such cache management implementation offers the following key benefits:
 
   ![](images/SessionState/sessionmanagement2.png)
 
-# See Also
+## See Also
 
 * [Configuring Cache]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache%})
 

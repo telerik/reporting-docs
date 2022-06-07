@@ -76,6 +76,6 @@ The above expression modifies the _ReportSource_ so that when there is no more f
 Another approach is suggested in the [How do I displaying recursive data?](https://www.telerik.com/forums/how-do-i-displaying-recursive-data) Forum thread. The updated example 
 can be downloaded from our GitHub repository: [HierarchicalDataRepresentation.zip](https://github.com/telerik/reporting-samples/blob/master/HierarchicalDataRepresentation.zip).
 
-## See Also
+### See Also
 
 [How to Create a Report that Displays Hierarchical Flat Data](hierarchical-report-from-flat-data)

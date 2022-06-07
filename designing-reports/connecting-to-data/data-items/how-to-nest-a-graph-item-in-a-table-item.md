@@ -78,7 +78,7 @@ You can download the described report as a __.trdx__  report definition from the
 
 The same approach is used in the __Product Sales__  example report which is shipped with the Telerik Reporting installation. This report displays the monthly sales trend using a line chart for the product subcategories and a column chart for the total fields. You can see the report in action if you have a valid connection to the __AdventureWorks__ sample database.         
 
-# See Also
+## See Also
 
  * [Table/Crosstab/List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})
 

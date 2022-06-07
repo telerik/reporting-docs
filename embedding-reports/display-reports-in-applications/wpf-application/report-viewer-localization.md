@@ -193,7 +193,7 @@ Class CustomTextResources
 End Class
 ````
 
-# See Also
+## See Also
 
 * [TextResources](/reporting/api/Telerik.ReportViewer.Wpf.TextResources) 
 

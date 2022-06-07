@@ -81,7 +81,7 @@ The legend can be absolutely or automatically sized. If the Height or Width fiel
 * Relatively positioned - TopLeft, TopCenter, TopRight, BottomLeft, BottomCenter, BottomRight: The height is absolute if set, otherwise the legend can grow vertically. The legend can stretch up to the PlotArea height when IsInsidePlotArea = True and no more than half of the graph height when IsInsidePlotArea = False. The width is taken into account, only if all items can fit in the provided space. Otherwise the legend grows horizontally, stretching to the limits of the graph at maximum. The ordering of the items is "across then down", forming rows. 
 
 
-# See Also
+## See Also
  
 * [GraphLegend](/reporting/api/Telerik.Reporting.GraphLegend)  
 

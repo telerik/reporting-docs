@@ -46,6 +46,6 @@ Setting the **KeepTogether** property of the Section to **false** allows page br
 
 In the case of a layout with a Table/List/Crosstab item, the paging mechanism does not apply page breaks in a row's content. Improvements for such layouts are applied in R2 2016. In previous versions, you can replace the Table item with TextBox items or a SubReport item loading external report to achieve a similar layout.
 
-## See Also
+### See Also
 
 **More details and suggestions can be found in <a href="/designing-reports-page-layout-rendering-understanding-pagination" target="_blank">Understanding Pagination</a>**.

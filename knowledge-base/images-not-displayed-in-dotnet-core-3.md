@@ -52,5 +52,5 @@ public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
              options.AllowSynchronousIO = true;
          })
 ```
-## See Also
+### See Also
 [Manual Setup of HTML5 Report Viewer in an ASP.NET Core 3+ application](../manual-setup-of-html5-report-viewer-in-asp-net-core-3)

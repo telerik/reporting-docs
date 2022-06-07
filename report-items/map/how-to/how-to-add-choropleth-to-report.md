@@ -30,7 +30,7 @@ The simplest way to add a __Choropleth__ map to your report is to run the Chorop
 
 1. When you finish the wizard a new Map item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
 
-# See Also
+## See Also
 
 * [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 

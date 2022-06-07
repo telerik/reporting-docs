@@ -44,7 +44,7 @@ Add a hyperlink to a URL when you want users to be able to click a link in a rep
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToUrlSnippet}}
 
 
-# See Also
+## See Also
 
  * [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%})
 

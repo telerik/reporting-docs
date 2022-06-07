@@ -32,7 +32,7 @@ In order to expose your custom functions, so they can be utilized by the Reporti
 </configuration>
 ````
 
-# See Also
+## See Also
 
 * [User functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
 

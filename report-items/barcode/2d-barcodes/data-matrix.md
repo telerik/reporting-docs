@@ -106,3 +106,5 @@ encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
 
 Me.barcode1.Encoder = encoder
 ````
+
+

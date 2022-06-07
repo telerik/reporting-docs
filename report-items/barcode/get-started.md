@@ -86,7 +86,7 @@ Me.barcode1.Value = "1234567890"
 
 
 
-# See Also
+## See Also
  
 * [`Telerik.Reporting.Barcode`](/reporting/api/Telerik.Reporting.Barcode)  
 * [`Encoder`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)  

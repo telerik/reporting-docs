@@ -43,7 +43,7 @@ Data items support groups in different manner according to their structure and a
 * __Chart__ – use the __DataGroupColumn__ to define the name of the field to group the data by. At runtime the __Chart__ item will create new series for each member of the group. Currently this property does not support expressions.
             
 
-# See Also
+## See Also
 
  * [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%})
 

@@ -37,6 +37,6 @@ Add references to the following assemblies:
 * DocumentFormat.OpenXml version prior to 2.7.2 (i.e. 2.0.5022.0 - 2.5.5631.0)
 * Telerik.Reporting.OpenXmlRendering.dll
 
-## See Also
+### See Also
 * [Deploy Telerik Reporting with newer OpenXML SDK version](https://www.telerik.com/support/kb/reporting/details/deploy-telerik-reporting-with-newer-openxml-sdk-version)
 * [Open XML SDK for Microsoft Office](../installation-deploying-openxml)

@@ -48,7 +48,7 @@ For example, you can specify that any __TextBox__  that exists inside of a __Rep
 
 Alternatively, you can create multiple __StyleSelector__ Style Rules with the same Name and that descend from different report item types, such as __DetailSection__  or __GroupSection__. Report items with this Name value in their __StyleName__  property will apply the correct style based on where they are placed in the report , even if they are moved.
 
-# See Also
+## See Also
 
 
  * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})

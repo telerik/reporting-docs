@@ -168,7 +168,7 @@ xmlns:tr="http://schemas.telerik.com/wpf"
 
 	 With the above setting, the Report Server running on http://yourreportserver:83 will look for the report named "MyReportName.trdp" in the category "MyCategory". Note that you need to provide valid username and password so that the viewer can login successfully, or have the guest user enabled in the Report Server. 
 
-# See Also
+## See Also
 
 * [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%})
 

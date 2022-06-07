@@ -31,7 +31,7 @@ The Graph item can have one or more titles. By default the graph item have one t
 1. Alter the title properties according to your requirements. 
 
 
-# See Also
+## See Also
  
 * [GraphTitle](/reporting/api/Telerik.Reporting.GraphTitle)  
 

@@ -60,7 +60,7 @@ var irs = new InstanceReportSource() { ReportDocument = report };
 
 If the above code is to be used for modifying reports displayed by an **HTML5-based Report Viewer**, the code must be placed in the `Resolve` method of a custom [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver) used by the **Reporting REST service**. 
 
-## See Also
+### See Also
 
 [Embedded Report Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
 

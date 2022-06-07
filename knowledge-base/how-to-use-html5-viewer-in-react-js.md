@@ -155,5 +155,5 @@ and can be copied to the React application's **public/assets** folder. Then refe
 ## Additional resources
 [Download the final React application](resources/telerik-report-viewer-react-app.zip).
 
-## See Also
+### See Also
 [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)

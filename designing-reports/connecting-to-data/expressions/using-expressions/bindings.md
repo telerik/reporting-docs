@@ -30,7 +30,7 @@ When constructing a Binding instance with Binding constructor, you must specify:
 
   ![](images/UI/Bindings.png)
 
-# See Also
+## See Also
 
  * [Telerik.Reporting.Binding](/reporting/api/Telerik.Reporting.Binding) 
 

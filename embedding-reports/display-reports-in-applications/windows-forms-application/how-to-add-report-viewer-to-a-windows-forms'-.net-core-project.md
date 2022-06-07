@@ -126,7 +126,7 @@ var reportViewer = new Telerik.ReportViewer.WinForms.ReportViewer();
 
 		The above settings assume that the Report Server is running on `http://yourreportserver:83`. Note that you need to provide valid username and password so that the viewer can login successfully, or have the guest user enabled in the Report Server. 
 
-# See Also
+## See Also
 
 * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
 

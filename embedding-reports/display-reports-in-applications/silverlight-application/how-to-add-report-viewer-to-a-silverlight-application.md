@@ -116,7 +116,7 @@ This article explains the steps needed to create an application which uses the S
 ````
 
 
-# See Also
+## See Also
 
 * [Silverlight Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%})
 

@@ -57,7 +57,7 @@ The report's Error event has information about the processing element throwing t
     
     - More serious problems will have to be handled on application level. For example, if there is a configuration problem with the HTML5 Viewer, you can catch requests and response and redirect to an error page.
 
-## See Also
+### See Also
 
  [Handling errors occurring in a Custom Resolver used by a Reporting REST Service](./handling-errors-occurring-in-a-custom-resolver-used-by-a-reporting-rest-service).
 

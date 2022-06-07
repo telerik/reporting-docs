@@ -30,7 +30,7 @@ The following implementations of the IStorage interface support the service to b
 
 * [DatabaseStorage](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage) - Use the [DatabaseStorage constructor](/reporting/api/Telerik.Reporting.Cache.Database.DatabaseStorage#Telerik_Reporting_Cache_Database_DatabaseStorage_#ctor) to create a storage instance. This storage option requires reference to __Telerik.Reporting.Cache.Database.dll__ that has dependencies on Telerik Data Access which can be checked in the version corresponding [Upgrade article]({%slug telerikreporting/upgrade/overview%}). 
 
-# See Also
+## See Also
 
 * [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
 

@@ -22,7 +22,7 @@ You can add a table of contents to the report book and click on entries in the t
 
 1. Configure where the TOC will appear in the Report Book. You can choose to position it before all of the reports or after them by setting the [TocPosition](/reporting/api/Telerik.Reporting.ReportBook#Telerik_Reporting_ReportBook_TocPosition) property. 
 
-# See Also
+## See Also
 
  * [Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%})
 

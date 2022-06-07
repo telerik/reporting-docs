@@ -62,6 +62,6 @@ Lets assume that we already have a ReportLibrary project in .NET Framework. Here
 
 A demo solution demonstrating the approach may be found in our GitHub repo - [VS Designer in .NET Core](https://github.com/telerik/reporting-samples/tree/master/VS%20designer%20Core)
 
-## See Also
+### See Also
 
 [Make Visual Studio designer work with .NET Core](https://feedback.telerik.com/reporting/1383925-make-visual-studio-designer-work-with-net-core-a-k-a-sdk-style-projects)

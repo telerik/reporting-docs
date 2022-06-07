@@ -97,6 +97,6 @@ The Cross-section item is designed to aid the production of form-type reports an
 The Cross-section item is not supported in all rendering extensions. Please check the corresponding "Design Considerations" article to ensure if it is supported for a given rendering extension. 
 
 
-# See Also
+## See Also
 
 * [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})

@@ -62,6 +62,6 @@ As this is caused by a relative path to the resource, you can just reference the
 <script src="http(s)://yourservicehost:port/api/reports/resources/js/telerikReportViewer"></script>
 ```
 
-## See Also
+### See Also
 - [How To: Use HTML5 Report Viewer With REST Service](../html5-report-viewer-quick-start)
 - [How To: Use HTML5 Report Viewer With Report Server](../html5-report-viewer-howto-use-it-with-reportserver)

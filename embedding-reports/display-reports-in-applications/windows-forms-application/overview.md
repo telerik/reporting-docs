@@ -118,7 +118,7 @@ The following table lists the keyboard and mouse commands used in Windows Forms 
 |F|n/a|Opens the search dialog|
 
 
-# See Also
+## See Also
 
 * [How to Add report viewer to a Windows Forms'.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
 

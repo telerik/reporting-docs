@@ -42,7 +42,7 @@ Paging takes into consideration the rules defined in [Understanding Pagination](
 
 This rendering extension does not support any interactive features.
 
-# See Also
+## See Also
 
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

@@ -94,6 +94,6 @@ config.Routes.MapHttpRoute(
 
 The actual routes for the used Telerik Reporting version can be extracted from the **GlobalConfiguration.Configuration** after using the **ReportsControllerConfiguration.RegisterRoutes** method.
 
-## See Also
+### See Also
 
 [How To: Add Telerik Reporting REST Web API to Web Application](../telerik-reporting-rest-host-http-service-using-web-hosting)

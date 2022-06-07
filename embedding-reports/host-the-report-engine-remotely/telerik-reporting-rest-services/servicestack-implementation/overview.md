@@ -30,7 +30,7 @@ The current ServiceStack implementation is based on [ServiceStack](https://servi
 
 > The __Telerik Reporting ServiceStack REST Service__ should be the only ServiceStack based Web Service in a project, as all ServiceStack services have [a single AppHost per AppDomain](http://mono.servicestack.net/ServiceStack.Hello/#AppHost). 
 
-# See Also
+## See Also
 
 * [REST API Reference]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
 

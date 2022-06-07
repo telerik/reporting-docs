@@ -46,7 +46,7 @@ For some reports, it is useful to include a page-scoped aggregate in the page he
 
 For more information, please refer to the PageExec description in the [Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) article. 
 
-# See Also
+## See Also
 
 * [PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)  
 

@@ -67,7 +67,7 @@ The default viewer template and stylesheet depend on CSS media queries to adapt 
 ````
 
 
-# See Also
+## See Also
 
 * [HTML5 Report Viewer - Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 

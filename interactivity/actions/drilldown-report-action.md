@@ -78,7 +78,7 @@ A report item can initially display or be hidden when a user views a report. The
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewToggleVisibilitySnippet}}
 
 
-# See Also
+## See Also
 
  * [ToggleVisibilityAction](/reporting/api/Telerik.Reporting.ToggleVisibilityAction)
  

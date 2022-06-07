@@ -54,7 +54,7 @@ To instruct the Report Designer to look for assemblies in other locations as wel
 ````
 
 
-# See Also
+## See Also
 
 * [How to use external assemblies with custom CLR objects in the Report Designer]({%slug how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer%})
 

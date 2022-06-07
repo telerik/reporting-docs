@@ -42,7 +42,7 @@ Here is an example how to get the custom action's parameters in __InteractiveAct
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewCustomActionSnippet}}
 
 
-# See Also
+## See Also
 
  * [Actions Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
  

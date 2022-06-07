@@ -35,7 +35,7 @@ MS Word has issues with EMF content and fails to convert it correctly on an atte
   
 You can configure the reporting engine to render Graph, Map and Barcode items as **Bitmap** images - [Word Device Information Settings](../device-information-settings-word) (**UseMetafile** parameter).  
   
-## See Also
+### See Also
  
 [Telerik Reporting Configuration Section](../configuring-telerik-reporting).
 

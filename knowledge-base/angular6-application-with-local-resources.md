@@ -32,7 +32,7 @@ After upgrading to Angular 6, the `angular-cli.json` is replaced with the `angul
 
 To download the sample application, go to [this location](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/sampleangular6app.zip?sfvrsn=3458f73f_2).
 
-## See Also
+### See Also
 
 * [Angular Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview %})
 

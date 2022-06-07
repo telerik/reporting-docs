@@ -110,7 +110,7 @@ export class AppComponent implements OnInit {
 }
 ```
 
-## See Also
+### See Also
 - [KendoDateTimePicker](../../kendo-ui/api/javascript/ui/datetimepicker))
 
 - [Angular Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview)

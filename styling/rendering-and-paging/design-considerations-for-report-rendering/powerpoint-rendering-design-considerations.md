@@ -67,7 +67,7 @@ Page header and Footer are rendered as PowerPoint shape/table cell as all report
 
 * (HtmlTextBox only) Paragraph margins, subscript and superscript tags are not supported.
 
-# See Also
+## See Also
 
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

@@ -43,7 +43,7 @@ export class AppComponent {
     The _setReportSource(rs)_ method will automatically refresh the report with the new parameter values.
 
 
-# See Also
+## See Also
 
 * [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
 

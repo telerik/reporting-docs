@@ -39,6 +39,6 @@ Apply custom CSS to the __Parameters Area__ containers. For example:
 }
 ```
 
-## See Also
+### See Also
 
 [Customizing the HTML5 Report Viewer](../html5-report-viewer-customization)

@@ -120,6 +120,6 @@ The following configuration has to replace the previous one:
  services.AddAntiforgery(options => options.HeaderName = "__RequestVerificationToken");
 ````
 
-## See Also
+### See Also
 
 * [Prevent Cross-Site Request Forgery (XSRF/CSRF) attacks in ASP.NET Core (JavaScript, AJAX, and SPAs section)](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.2#javascript-ajax-and-spas)

@@ -37,7 +37,7 @@ This article elaborates on how to localize the strings used and displayed by the
 >tip The Web Report Designer is in active development and new strings might be added in new releases. The JavaScript code-snippet in step 1 above is updated on each release.
 
 
-# See Also
+## See Also
 
  * [Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%})
 

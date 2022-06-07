@@ -50,7 +50,7 @@ In our documentation, we suggest adding the polyfill file of [Polyfill.io](http
 
 If you open the [Polyfill.io](https://polyfill.io/v2/docs/) to retrieve the returned JS, the provided JS may not be correct since the endpoint has been opened by a browser that supports promises. Open the link with a browser that has no support for promises to ensure that the provided JS will work.
   
-## See Also
+### See Also
 
 [Promises - Browser compatibility](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#browser_compatibility)
 

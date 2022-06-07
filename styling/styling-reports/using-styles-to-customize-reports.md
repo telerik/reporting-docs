@@ -48,7 +48,7 @@ Telerik __Reporting__  will automatically apply styles that use __TypeSelectors_
 
 To apply a style that uses a __StyleSelector__ to a report item, select the report item and set its __StyleName__  property to the __StyleName__  property of the __StyleSelector__.
 
-# See Also
+## See Also
 
  * [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
 

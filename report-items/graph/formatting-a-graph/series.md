@@ -120,7 +120,7 @@ If you are using a custom color palette, you can change the order of the colors 
 1. Set appropriately __BaseColor, MaxLightness and MinLightness properties__. 
 
 
-# See Also
+## See Also
 
 * [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 

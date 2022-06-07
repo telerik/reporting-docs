@@ -30,7 +30,7 @@ The Map item can have one or more titles. By default the map item have one title
 
 1. Alter the title properties according to your requirements. 
 
-# See Also
+## See Also
  
 * [MapTitle](/reporting/api/Telerik.Reporting.MapTitle)  
 

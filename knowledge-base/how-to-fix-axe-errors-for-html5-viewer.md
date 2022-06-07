@@ -107,7 +107,7 @@ This warning can be fixed by applying High Contrast Kendo UI theme, for example:
 After applying the theme, there still might be warnings about insufficient color contrast related to the content of the report itself. 
 They can be fixed by applying high contrast colors to the report elements in the report designer.
 
-## See Also
+### See Also
 
 [Accessibility](../html5-report-viewers-accessibility-support)
 

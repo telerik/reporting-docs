@@ -44,7 +44,7 @@ To change the __Scale.SpacingSlotCount__ property, follow these steps:
    ![Graph Axis Spacing Slot Count Selected](images/Graph/GraphAxis_SpacingSlotCount_Selected.png)
 
 
-# See Also
+## See Also
 
 * [How to: change the space between chart's series](http://www.telerik.com/support/kb/reporting/details/how-to-change-the-space-between-charts-series)
 

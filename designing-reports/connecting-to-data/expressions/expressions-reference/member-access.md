@@ -22,7 +22,7 @@ When you write an expression, you have access not only to [Global Objects]({%slu
 
 *  __= Price.ToString('$0.'):__  Returns the value of Price formatted according to the specified format, i.e. $123
 
-# See Also
+## See Also
 
  * [Constants]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/constants%})
 

@@ -18,7 +18,7 @@ Arguments can be field references, numbers, text, and logical values such as TRU
 
 Telerik Reporting provides many built-in functions and also lets you create user-defined functions. The         categories of built-in functions are listed on this page.         
 
-# See Also
+## See Also
 
  * [Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
 

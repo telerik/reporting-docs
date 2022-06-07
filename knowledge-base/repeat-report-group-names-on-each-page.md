@@ -56,7 +56,7 @@ We also have to take care of the corner case, when a group starts at the bottom 
 
 The demo report with four groups can be found in [Reporting Samples GitHub Repo - ReportWithFourGroups](https://github.com/telerik/reporting-samples/blob/master/ReportWithGroups/ReportWithFourGroups.trdp).
 
-## See Also
+### See Also
 [Page Sections]({% slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections %})  
 [Report Structure]({% slug telerikreporting/designing-reports/report-structure/overview %})  
 [Group Header/Footer Sections]({% slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report %})  

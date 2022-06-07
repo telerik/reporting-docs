@@ -138,7 +138,7 @@ The PDF rendering extension can render SVG images in either vector-based or rast
 
 The SVG rendering mode is controlled by a key in the device information settings object. The key is named __UseSvgVectorRendering__ and accepts a boolean value. Its default value is __true__. 
 
-# See Also
+## See Also
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
 

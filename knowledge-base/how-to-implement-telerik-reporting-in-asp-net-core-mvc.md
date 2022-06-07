@@ -172,5 +172,5 @@ In the end, we should create the report viewer. As the [HTML5 ASP.NET MVC Report
 ## Notes
 The demo application could be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/aspnetcoremvcdemo.zip?sfvrsn=32676553_2).
 
-## See Also
+### See Also
 For additional information, you could refer to the new conceptual documentation article [.NET Core Support](../use-reports-in-net-core-apps) that explains how to use reports in pure .NET Core application for Windows and Linux platforms.

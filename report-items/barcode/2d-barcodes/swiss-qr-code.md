@@ -107,7 +107,10 @@ The `Payment` property contains information about the `Payment` data entity.
 
 `ValueFromBillData` determines whether the [`Value`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value) property of the barcode will obtain its value from the data configured in the [`BillData`](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData) property or not. If set to `true`, the data will be constructed from the fields in the `BillData` property. If set to `false`, the `BillData` fields will not be respected and the barcode item will encode the raw data used in the `Value` field. 
 
-# See Also
+
+
+### See Also
 
 * [Swiss Implementation Guidelines QR-bill (PDF)](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
 * [Swiss QR Code Validator](https://www.swiss-qr-invoice.org/validator/)
+

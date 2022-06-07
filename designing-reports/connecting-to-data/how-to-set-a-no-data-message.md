@@ -38,7 +38,7 @@ Reports do not support the NoDataMessage property. If a report's DataSource retu
 
 If a report's DataSource is reset or set to NULL, the report preview will show the designed report structure without data, which includes Detail section and dynamic groups' Group Header and Footer sections. 
 
-# See Also
+## See Also
 
  * [NoDataMessage](/reporting/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_NoDataMessage)
 

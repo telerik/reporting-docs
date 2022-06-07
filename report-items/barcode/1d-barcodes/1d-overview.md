@@ -48,3 +48,5 @@ Currently, the Barcode report item supports the following 1D barcode types:
 |UPC E|Short version of UPC symbol, six characters.|
 |UPC Supplement 2|Used to indicate magazines and newspaper issue numbers.|
 |UPC Supplement 5|Used to mark suggested retail price of books.|
+
+

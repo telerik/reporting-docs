@@ -42,7 +42,7 @@ as the original group. This parent group will generate a new report item that sp
 You may delete the content of this item and make it very small. It should be visible in order for the Expression to consider it though. A sample based on this approch may be 
 found in the [PageAggregateFromTableWithParentTableGroup.trdp](resources/PageAggregateFromTableWithParentTableGroup.trdp) demo report.
 
-## See Also
+### See Also
 + [Table Groups](../data-items-how-to-add-groups-to-table-item-and-crosstab-item)
 
 + [Page Functions](../expressions-page-functions)

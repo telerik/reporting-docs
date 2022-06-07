@@ -53,5 +53,5 @@ child data item. Therefore, you may assign a dummy JSON data with the same schem
 ## Notes
 Applicable for MS SQL Server 2016 and later
 
-## See Also
+### See Also
 [Format Query Results as JSON with FOR JSON (SQL Server)](https://docs.microsoft.com/en-us/sql/relational-databases/json/format-query-results-as-json-with-for-json-sql-server?view=sql-server-ver15)

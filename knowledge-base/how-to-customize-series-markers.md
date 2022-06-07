@@ -35,7 +35,7 @@ Custom markers can also be displayed based on a certain condition. For that, set
 ## Additional resources
 [Download the sample report](resources/graphcustommarkers.zip).
 
-## See also 
+### See Also 
 
 [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) 
 

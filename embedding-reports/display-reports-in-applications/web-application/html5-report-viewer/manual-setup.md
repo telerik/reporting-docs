@@ -36,46 +36,46 @@ The following steps produce an HTML page with settings similar to these of the l
 
 1. Create an HTML5 page:
     
-    ````html
+    ````HTML
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Telerik HTML5 Report Viewer</title>
-</head>
-<body>
-</body>
-</html>
+      <html xmlns="http://www.w3.org/1999/xhtml">
+      <head>
+         <title>Telerik HTML5 Report Viewer</title>
+      </head>
+      <body>
+      </body>
+   </html>
 ````
 
     >The above DOCTYPE directive must reflect your custom requirements. You can find more details about the page settings used in this tutorial in the [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article. 
 
-1. Initialize the browser’s viewport in the ```<head>``` element:
+1. Initialize the browser’s viewport in the `<head>` element:
     
-    ````html
+    ````HTML
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 ````
 
     The viewport META tag is used to control the layout on mobile browsers.    
 
-1. Add a reference to jQuery in the ```<head>``` element:
+1. Add a reference to jQuery in the `<head>` element:
     
-    ````html
+    ````HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
 ````
 
     >jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
 
-1. Add references to the Telerik Kendo UI styles in the ```<head>``` element:
+1. Add references to the Telerik Kendo UI styles in the `<head>` element:
     
-    ````html
+    ````HTML
 <!-- the required Kendo styles -->
-<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
-<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
-1. Add references to the HTML5 Report Viewer JavaScript file in the ```<head>``` element:
+1. Add references to the HTML5 Report Viewer JavaScript file in the `<head>` element:
     
-    ````html
+    ````HTML
 <script src="/api/reports/resources/js/telerikReportViewer" /script>
 ````
 
@@ -83,59 +83,59 @@ The following steps produce an HTML page with settings similar to these of the l
 
     If no Kendo widgets are utilized in the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced: 
     
-    ````html
-                  <!--
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.core.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.data.odata.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.data.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.userevents.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.selectable.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.calendar.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.fx.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.draganddrop.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.mobile.scroller.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.virtuallist.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.popup.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.list.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.combobox.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.datepicker.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.resizable.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.dropdownlist.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.multiselect.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.splitter.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.window.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.color.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.slider.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.button.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.colorpicker.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.editor.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.listview.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.menu.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.panelbar.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.tooltip.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.treeview.min.js" /script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.touch.min.js" /script>
-kendo.mobile.min.js - optional, if gestures/touch support is required
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.mobile.min.js" /script>
-kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.web.min.js" /script>
--->
+    ````HTML
+<!--
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.core.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.data.odata.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.data.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.userevents.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.selectable.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.calendar.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.fx.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.draganddrop.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.mobile.scroller.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.virtuallist.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.popup.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.list.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.combobox.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.datepicker.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.resizable.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.dropdownlist.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.multiselect.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.splitter.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.window.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.color.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.slider.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.button.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.colorpicker.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.editor.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.listview.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.menu.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.panelbar.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.tooltip.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.treeview.min.js" /script>
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.touch.min.js" /script>
+	kendo.mobile.min.js - optional, if gestures/touch support is required
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.mobile.min.js" /script>
+	kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
+	<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.web.min.js" /script>
+	-->
 ````
 
-1. Add a ```<div>``` element to the ```<body>``` element that will serve as a placeholder for the viewer’s widget. The ```<div>``` element's ID attribute serves as a key(Id) for the viewer object. Its content (*loading...*) will be displayed while the viewer’s content is being loaded (from the template). : 
+1. Add a `<div>` element to the `<body>` element that will serve as a placeholder for the viewer’s widget. The `<div>` element's ID attribute serves as a key(Id) for the viewer object. Its content (*loading...*) will be displayed while the viewer’s content is being loaded (from the template). : 
     
-    ````html
+    ````HTML
 <div id="reportViewer1" class="k-widget">
     loading...
 </div>
 ````
 
-1. Add the following script element at the bottom of the ```<body>``` element and create the HTML5 Report Viewer widget for the reportViewer1 ```<div>``` element that we just added:
+1. Add the following script element at the bottom of the `<body>` element and create the HTML5 Report Viewer widget for the reportViewer1 `<div>` element that we just added:
     
-    ````js
+    ````JS
 <script type="text/javascript">
         $("#reportViewer1")
-         .telerik_ReportViewer({
+			.telerik_ReportViewer({
                 serviceUrl: "/api/reports/",
                 //templateUrl: /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html
                 reportSource: {
@@ -145,16 +145,16 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
                     }
                 }
             });
-</script>
+	</script>
 ````
 
     where x.x.x.x is the HTML5 ReportViewer/Telerik Reporting version (e.g. {{site.buildversion}}). The relative paths that you use must reflect the project's structure. The default template is using TelerikWebUI icons. If you prefer a template with *FontAwesome* icons, you have to set the templateUrl option to /ReportViewer/templates/telerikReportViewerTemplate-FA-x.x.x.x.html 
 
     >The viewer's  __reportSource__ consists of report and parameters attributes, where  __report__ is the string description of the report that will be displayed, and __parameters__ is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}). The above example uses the [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk) of a report's type (report created in Visual Studio Report Designer). This string description will be handled automatically by the [ReportTypeResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver). 
 
-1. Make the viewer fill the entire browser window. Add the following style to the ```<head>``` element:
+1. Make the viewer fill the entire browser window. Add the following style to the `<head>` element:
     
-    ````html
+    ````HTML
 <style>
         #reportViewer1 {
             position: absolute;
@@ -165,53 +165,53 @@ kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outsid
             font-family: 'segoe ui', 'ms sans serif';
             overflow: hidden;
         }
-</style>
+	</style>
 ````
 
-    >The above CSS rule will be applied on the ```<div>``` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container ```<div>``` element. To make the viewer fit in other container, use *position:relative* and provide width and height values. 
+    >The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in other container, use *position:relative* and provide width and height values. 
 
 1. The HTML page that we have just created should look like this:
     
-    ````html
+    ````HTML
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Telerik HTML5 Report Viewer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
-    <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
-    <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
-    <script src="/api/reports/resources/js/telerikReportViewer" /script>
-    <style>
-        #reportViewer1 {
-            position: absolute;
-            left: 5px;
-            right: 5px;
-            top: 5px;
-            bottom: 5px;
-            font-family: 'segoe ui', 'ms sans serif';
-            overflow: hidden;
-        }
-    </style>
-</head>
-<body>
-    <div id="reportViewer1" class="k-widget">
-        loading...
-    </div>
-    <script type="text/javascript">
-        $("#reportViewer1")
-         .telerik_ReportViewer({
-                serviceUrl: "/api/reports/",
-                reportSource: {
-                    report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-                    parameters: {
-                        CultureID: "en"
-                    }
-                }
-            });
-    </script>
-</body>
-</html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Telerik HTML5 Report Viewer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" /script>
+		<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
+		<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
+		<script src="/api/reports/resources/js/telerikReportViewer" /script>
+		<style>
+			#reportViewer1 {
+				position: absolute;
+				left: 5px;
+				right: 5px;
+				top: 5px;
+				bottom: 5px;
+				font-family: 'segoe ui', 'ms sans serif';
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="reportViewer1" class="k-widget">
+			loading...
+		</div>
+		<script type="text/javascript">
+			$("#reportViewer1")
+			 .telerik_ReportViewer({
+					serviceUrl: "/api/reports/",
+					reportSource: {
+						report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+						parameters: {
+							CultureID: "en"
+						}
+					}
+				});
+		</script>
+	</body>
+	</html>
 ````
 
 1. Run the project and navigate to the page with the HTML5 Report Viewer that we have just created.

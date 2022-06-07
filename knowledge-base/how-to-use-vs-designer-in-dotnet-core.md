@@ -50,11 +50,11 @@ Lets assume that we already have a ReportLibrary project in .NET Framework. Here
 
 3. Add the corresponding CS report file from the .NET Framework project to the .NET Core project through the _Add_ -> _Existing Item..._ option of the project context menu. 
 
-	![alt text](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/addexistingitem.png?sfvrsn=a3ec3f95_2 "Add Existing Item") 
+	![Add Existing Item](images/addexistingitem.png) 
 
 	When selecting the CS file make sure to select __Add As Link__ from the _Add Existing Item_ wizard. The corresponding DESIGNER.CS file will be added automatically. 
 
-	![alt text](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/addaslink.png?sfvrsn=b5e4fd9f_2 "Add As Link") 
+	![Add As Link](images/addaslink.png) 
 
 4. Add in the same way also the RESX file of the report definition. 
 

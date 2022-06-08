@@ -39,6 +39,6 @@ In this line of thoughts, .NET supports **only** TrueType fonts. Thus, you can 
    
 > If the font is TrueType, check if the font is installed in **%windir%\fonts** .
  
-### See Also
+## See Also
 
 [How to install or remove a font in Windows](https://support.microsoft.com/en-us/windows/how-to-install-or-remove-a-font-in-windows-f12d0657-2fc8-7613-c76f-88d043b334b8).

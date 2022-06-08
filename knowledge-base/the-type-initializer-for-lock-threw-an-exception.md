@@ -44,7 +44,7 @@ If the above requirement cannot be met you can add just HTML5 Viewer in the proj
 
 When the service and the viewer are hosted in different domains it will be required to [enable CORS](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in order to enable communication between the viewer and the service.
 
-### See Also
+## See Also
 
 [HTML5 Report Viewer in ASP.NET Core 2](../html5-report-viewer-asp-net-core-2)
 

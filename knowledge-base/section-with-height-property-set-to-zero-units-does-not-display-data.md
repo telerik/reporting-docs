@@ -39,6 +39,6 @@ In older versions, a commonly used workaround for shrinking sections was to set 
   
 As of **R3 2016**, sections and Panel items have a **CanShrink properties** that should be used instead of setting manually their **Height properties**. 
  
-### See Also
+## See Also
 
 [Design Considerations for Report Item Layout](../designing-reports-design-considerations-report-layout).  

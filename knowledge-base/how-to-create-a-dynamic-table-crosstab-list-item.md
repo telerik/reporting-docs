@@ -58,7 +58,7 @@ Then, you can add a Table/List/Crosstab item with dynamic row and column groups 
 
 [Download the sample report](resources/reportdynamiccolumns.zip).
 
-### See Also
+## See Also
 
 [Basic Concepts]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts %})
 

@@ -46,7 +46,7 @@ For example, if the production environment had a specific culture, which currenc
 
 2. You may set the [Report.Culture](../api/Telerik.Reporting.Report.html#collapsible-Telerik_Reporting_Report_Culture) to a specific culture that will be used whenever the report is rendered.
 
-### See Also
+## See Also
 
 * [Report Globalization]({%slug telerikreporting/designing-reports/report-globalization%})
 

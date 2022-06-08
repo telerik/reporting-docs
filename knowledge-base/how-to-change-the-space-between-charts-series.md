@@ -54,7 +54,7 @@ The **Series.DataPointStyle.LineWidth** property can also be used to add the spa
 ## Additional resources
 [Download the sample report](resources/changespacebetweenseries.zip).
 
-### See Also
+## See Also
 
 [How to: Change the Gap Between the Bars](../graphhowtochangethegapbetweenthebars)  
 [Formatting a Graph](../graphformatting)  

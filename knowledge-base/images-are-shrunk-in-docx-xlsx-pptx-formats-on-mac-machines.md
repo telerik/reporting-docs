@@ -81,7 +81,7 @@ For .NET Core projects:
 
 The DOCX/PPTX/XLSX rendering extensions require the **Telerik.Reporting.OpenXmlRendering.dll** and the [Open XML SDK 2.0 for Microsoft Office](../installation-deploying-openxml)(**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above with proper [binding redirects](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element?redirectedfrom=MSDN)).
 
-### See Also
+## See Also
 
  [Telerik Reporting Configuration Section](../configuring-telerik-reporting)
  

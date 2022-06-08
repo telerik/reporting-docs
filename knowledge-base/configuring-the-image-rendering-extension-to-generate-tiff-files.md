@@ -93,7 +93,7 @@ As a result, in the Report Viewer's drop-down with the available export formats,
 - Device information settings can be set in a variety of ways. The &lt;Telerik.Reporting&gt; configuration section can be used to specify rendering parameters globally. Programmatically, the [ReportProcessor.RenderReport()](../m-telerik-reporting-processing-reportprocessor-renderreport) method may be used. 
 
         
-### See Also  
+## See Also  
  
 [Configuring Telerik Reporting](../configuring-telerik-reporting)
 

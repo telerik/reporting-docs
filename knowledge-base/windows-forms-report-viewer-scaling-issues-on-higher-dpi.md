@@ -51,7 +51,7 @@ The recommended approach is setting **dpiAware** element in your application to 
 For reference, check our demos located in Telerik Reporting installation folder, for example: *C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Examples\CSharp|VB\WinFormsDemo*. The **dpiAware.manifest** file is placed at the root of the application.
 
 
-### See Also
+## See Also
 [Windows Forms Application - Declaring the application as DPI-aware](../winforms-report-viewer#declaring-the-application-as-dpi-aware)
 
 [Writing DPI-Aware Desktop and Win32 Applications](https://docs.microsoft.com/en-us/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows)

@@ -43,6 +43,6 @@ services.AddControllersWithViews().AddNewtonsoftJson();
 services.AddRazorPages().AddNewtonsoftJson();
 ````
 
-### See Also
+## See Also
 
 * [ASP.NET Core 3.0+ Telerik Reporting REST Service](https://docs.telerik.com/reporting/telerik-reporting-rest-service-aspnetcore-mvc-core3)

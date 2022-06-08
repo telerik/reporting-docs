@@ -64,7 +64,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 ````
 
 
-### See Also
+## See Also
 
 - [Azure Web App wwwroot duplicates on publish](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish)
 

@@ -103,7 +103,7 @@ The following example illustrates how to use the [Kendo CheckBoxGroup](https://d
 ![CheckBoxGroup Preview](resources/CBGroup.PNG)
 
 
-### See Also
+## See Also
 [What's new in Kendo UI for jQuery](https://www.telerik.com/blogs/whats-new-kendo-ui-jquery-r1-2021) 
 
 [How to Create a Custom Parameter Editor](../html5-report-viewer-howto-custom-parameter-editor)

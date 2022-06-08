@@ -98,6 +98,6 @@ class ViewModel : INotifyPropertyChanged
 
 Reports have a general purpose and can be reused in different types of projects. Reports do not have dependency properties. If you need to change the data in a report, on trigger the change event of other control you can update [data items](../data-items)' DataSource properties in code. Then update the model's ReportSource in order to refresh the viewer. 
 
-### See Also
+## See Also
 
 [ReportSource Class](../t-telerik-reporting-reportsource)

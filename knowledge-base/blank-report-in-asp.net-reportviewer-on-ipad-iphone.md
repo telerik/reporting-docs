@@ -42,6 +42,6 @@ Using an older DOCTYPE declaration such as **HTML4.1** resolves the issue with t
 
 The [HTML5 Report Viewer](../html5-report-viewer) introduced in **Telerik Reporting Q3 2013** also provides solution for the issue. The viewer uses HTML5/JS/CSS3 technologies and is HTML5 browsers compliant.
 
-### See Also
+## See Also
 
 [Migrate to the HTML5 Viewer from the old ASP.NET WebForms ReportViewer control](./migrate-to-the-html5-viewer-from-the-old-asp.net-webforms-reportviewer-control)

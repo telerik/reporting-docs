@@ -91,6 +91,6 @@ After deploying a WebRole which utilizes Telerik Reporting WebAPI REST Service t
 
 Keep in mind that Windows Azure Web Apps (in **Free** and **Shared** modes) restricts applications to access some system resources, including GDI API, and rendering extensions as PDF would not be able to produce a document. 
 
-### See Also
+## See Also
 
 [OutOfMemoryException on exporting or printing Telerik report from Azure Web Apps](./outofmemoryexception-on-exporting-or-printing-telerik-report-from-azure-webapps).

@@ -37,5 +37,5 @@ don't contain data. In the case when there is no data returned at all, the entir
 
 The solution is setting [SkipBlankPages](../p-telerik-reporting-processing-report-skipblankpages) of your Reports to __False__, which will revert the previous behavior.
 
-### See Also
+## See Also
 [Understanding Rendering Behaviors](../designing-reports-page-layout-rendering-understanding-rendering-behaviors)

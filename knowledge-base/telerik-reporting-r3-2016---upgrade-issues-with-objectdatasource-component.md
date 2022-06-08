@@ -55,7 +55,7 @@ System.Security.SecurityException: The assembly "EXTERNAL_ASSEMBLY_TYPE" is not 
 
 It is recommended to keep reports in a separate project e.g. ClassLibrary project. *The ObjectDataSource component's settings can be added automatically by re-running the [ObjectDataSource Wizard](../objectdatasource-wizard) in Visual Studio Report Designer.*
 
-### See Also
+## See Also
 
 [Connecting the ObjectDataSource component to a Data Source](../objectdatasource-connecting)
 

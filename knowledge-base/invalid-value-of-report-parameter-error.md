@@ -43,6 +43,6 @@ parameter values.
 
 Update Newtonsoft.Json package using NuGet package manager in Visual Studio. 
 
-### See Also
+## See Also
 
 [Requirements for using Telerik Reporting REST WebAPI service](../telerik-reporting-rest-service-web-api-system-requirements)

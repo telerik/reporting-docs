@@ -63,7 +63,7 @@ This is a simple select control because the idea is to demonstrate how to update
 
 In the `changeId` method we retrieve the viewer's `ReportSourceOptions` object and then we set the `OrderNumber` parameter the value currently present in the event argument. Finally we update the ReportSourceOptions through the viewer's `SetReportSourceAsync(ReportSourceOptions opt)` method.
 
-### See Also
+## See Also
 [Dynamically Selecting and Filtering Reports with Blazor and the Telerik ReportViewer Control](https://www.telerik.com/blogs/dynamically-selecting-filtering-reports-blazor-telerik-reportviewer)
 
 ## Demo Application

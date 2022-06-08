@@ -48,6 +48,6 @@ You are allowed to distribute Telerik Reporting assemblies required for running 
 
 > This excludes design-time assemblies provided by your Telerik Reporting installation.
 
-### See Also
+## See Also
 
 [Telerik Reporting License Agreement - 4. License for Redistribution.](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s)

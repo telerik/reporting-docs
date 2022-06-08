@@ -86,6 +86,6 @@ To work around the issue, it is possible to create a new bound function which wr
 	}
 ```
 
-### See Also
+## See Also
 
 * [`Function.prototype.bind()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)

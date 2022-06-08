@@ -35,6 +35,6 @@ For instance, if MySQL provider is not registered correctly, but shows in Visua
 If it is not listed in Visual Studio either, then most likely your installation of the MySQL ADO<span>.</span>NET provider did not
 complete successfully and you can try upgrading to a newer version, or repairing.
 
-### See Also
+## See Also
 
 [How to register SqlDataSource data providers without driver installation](./how-to-register-sqldatasource-data-providers-without-driver-installation)

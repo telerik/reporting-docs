@@ -114,5 +114,5 @@ if the resources are already loaded, you will need to clean up the duplicated re
 3. Telerik Web Report Designer could not be integrated in angular application together with Angular Telerik Report Viewer. 
 That is why this article shows how to use the Telerik Web Report Designer in angular application with jQuery-based HTML5 Telerik Report Viewer.
 
-### See Also
+## See Also
 [Test whether Web Report Designer Service is Responding]({%slug test-web-report-designer-service%})

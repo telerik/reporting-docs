@@ -35,7 +35,7 @@ In order to change the icon's position, our suggestion is in the place of the [T
 Then add within the panel item another panel for toggle visibility action (drilldown) and a textbox for the cell text (the previously used textbox). 
 This way you can control the drilldown icon's exact position within the main panel item.
 
-### See Also
+## See Also
 - [Textbox](./report-items-text-box)
 - [Panel](./report-items-panel)
 - [How to Add a Drilldown/Toggle Visibility Action](./designing-reports-interactivity-how-to-add-drilldown-action)

@@ -49,7 +49,7 @@ The result PDF file rendered on the server is returned with **Content-Dispositi
 
  > The confirmation of the print operation cannot be avoided due to security restrictions.
 
-### See Also
+## See Also
 [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%})
 
 [MVC WebForms Client Print Example](resources/mvc-webforms-clientprint.zip)

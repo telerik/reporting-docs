@@ -44,6 +44,6 @@ res_type: kb
 
 To test the application you can switch **off** BrowserLink from Visual Studio settings.  
   
-### See Also
+## See Also
 
 <a href="https://www.asp.net/visual-studio/overview/2013/using-browser-link" target="_blank">Using Browser Link in Visual Studio 2013</a> (source www.asp.net).

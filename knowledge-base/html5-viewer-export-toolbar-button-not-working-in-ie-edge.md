@@ -39,6 +39,6 @@ However, the Export button's sub-menu does not open on hover or on click in Inte
 ## Solution
 Upgrade the referenced jQuery version in the application to 1.12.3 or higher supported jQuery version. For a full list of supported jQuery versions by Kendo UI visit [Supported jQuery Versions](https://docs.telerik.com/kendo-ui/intro/installation/prerequisites#supported-jquery-versions).
 
-### See Also
+## See Also
 
 [Menu sub-menu does not open on hover in IE and Edge with jQuery 1.10.2](https://github.com/telerik/kendo-ui-core/issues/3717)

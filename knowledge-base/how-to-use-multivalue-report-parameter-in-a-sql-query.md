@@ -106,7 +106,7 @@ The above is an example of a stored procedure and a function splitting a string 
        Join(',',Parameters.SelectedValues.Value))
 ```
 
-### See Also
+## See Also
 
 [Using Parameters with the SqlDataSource component](../sql-data-source-using-parameters)
 

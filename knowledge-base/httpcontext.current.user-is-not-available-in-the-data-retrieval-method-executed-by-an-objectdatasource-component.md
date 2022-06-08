@@ -44,7 +44,7 @@ You can parameterize the data-retrieval method and pass the **ID** of the user (
   
 If you are using the HTML5 Viewer and Reporting REST WebAPI based service, to secure the information transferred in requests, please consider encrypting it and using **HTTPS**. The current context and user will be available in the Reporting REST service's methods. If you need to check and compare the client(viewer)'s information on the server, you can override the [ReportsControllerBase methods](../methods-t-telerik-reporting-services-webapi-reportscontrollerbase) like [**GetParameters**](../m-telerik-reporting-services-webapi-reportscontrollerbase-getparameters) and [**CreateInstance**](../m-telerik-reporting-services-webapi-reportscontrollerbase-createinstance).   
 
-### See Also
+## See Also
 
 [How To Enable HTTPS In ASP.NET Web API](https://www.c-sharpcorner.com/article/how-to-enable-https-in-asp-net-web-api/)
 

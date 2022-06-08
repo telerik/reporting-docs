@@ -64,7 +64,7 @@ When exporting a report programmatically, you may also provide it with specific 
 
 The respective method takes a [HashTable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.hashtable?redirectedfrom=MSDN&view=net-5.0) argument representing the desired export parameters for this particular rendering operation: [RenderReport](../overload-telerik-reporting-processing-reportprocessor-renderreport).
 
-### See Also
+## See Also
 
 [extensions Element](../configuring-telerik-reporting-extensions)
 

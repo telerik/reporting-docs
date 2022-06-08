@@ -22,20 +22,20 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
     
       ````xml
 <?xml version ="1.0"?>
-<configuration>
- ...
-    <system.diagnostics>
-        <trace autoflush="true" indentsize="4">
-          <listeners>
-            <add name="myListener" type="System.Diagnostics.TextWriterTraceListener" initializeData="c:\temp\StandaloneDesigner.LOG" />
-            <remove name="Default" />
-          </listeners>
-        </trace>
-    </system.diagnostics>
-</configuration>
+    <configuration>
+     ...
+        <system.diagnostics>
+            <trace autoflush="true" indentsize="4">
+              <listeners>
+                <add name="myListener" type="System.Diagnostics.TextWriterTraceListener" initializeData="c:\temp\StandaloneDesigner.LOG" />
+                <remove name="Default" />
+              </listeners>
+            </trace>
+        </system.diagnostics>
+    </configuration>
 ````
 
-More details about the Standalone Report Designer's configuration file are available in the [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%}) article."__Telerik.ReportDesigner.exe.config__ resides in the __[InstallDir]/Report Designer__ directory by default (it is recommended to create a backup copy before modifying it). 
+    More details about the Standalone Report Designer's configuration file are available in the [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%}) article."__Telerik.ReportDesigner.exe.config__ resides in the __[InstallDir]/Report Designer__ directory by default (it is recommended to create a backup copy before modifying it). 
 
 * Check the event viewer logs for any log entries related to the problem.
 

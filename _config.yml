@@ -48,9 +48,6 @@ navigation:
     report-items/table-crosstab-list:
         position: 12
         title: "Table/Crosstab/List"    
-    report-items/checkbox:
-        position: 3
-        title: "Checkbox"    
     report-items/graph:
         position: 5
         title: "Graph"

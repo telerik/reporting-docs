@@ -18,7 +18,6 @@ The following screenshot shows a Cross-section report item in the Standalone Rep
 
 ![report-items-cross-section-item](images/report-items-cross-section-item.png)
 
-
 ## Setting the Behavior
 
 The following list contains the properties which define the behavior of the Cross-section report item:

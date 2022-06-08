@@ -18,7 +18,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 
 * Try the reproduce the crash on another machine to exclude machine specific problems e.g., corrupted Telerik Reporting installation.
 
-* Provide us with a log file containing detailed information about the Standalone Report Designer crash. To create the log file, turn on tracing for the Standalone Report Designer and perform the actions which caused the crash. Below is the XML you need to add to the __Telerik.ReportDesigner(.x86).exe.config__ file to enable tracing: 
+* Provide us with a log file containing detailed information about the Standalone Report Designer crash. To create the log file, turn on tracing for the Standalone Report Designer and perform the actions which caused the crash. Below is the XML you need to add to the `Telerik.ReportDesigner.exe.config` file to enable tracing: 
     
       ````xml
 <?xml version ="1.0"?>
@@ -35,11 +35,11 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 </configuration>
 ````
 
-More details about the Standalone Report Designer's configuration file are available in the [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%}) article."__Telerik.ReportDesigner(.x86).exe.config__ resides in the __[InstallDir]/Report Designer__ directory by default (it is recommended to create a backup copy before modifying it). 
+More details about the Standalone Report Designer's configuration file are available in the [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%}) article."__Telerik.ReportDesigner.exe.config__ resides in the __[InstallDir]/Report Designer__ directory by default (it is recommended to create a backup copy before modifying it). 
 
 * Check the event viewer logs for any log entries related to the problem.
 
-* Use Visual Studio Debugger to attach to the __Telerik.ReportDesigner(.x86).exe__ running process before it crashes, in order to pinpoint where the error occurs. 
+* Use Visual Studio Debugger to attach to the __Telerik.ReportDesigner.exe__ running process before it crashes, in order to pinpoint where the error occurs. 
 
 After you generate the log files from the above steps, archive them and attach them to a support ticket. Include the steps which have to be followed in order to reproduce the issue. 
 

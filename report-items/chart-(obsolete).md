@@ -16,8 +16,6 @@ position: 14
 
 The Chart report item is used to display a chart on a report. 
 
-The Chart is business-oriented with a focus on development productivity and allows you to rapidly build appealing charts that represent data in a user-friendly manner. 
-
 ![Sparkline Chart\Sparkline Chart](images/Graph/SparklineChart.png)
 
 ## Binding to Data

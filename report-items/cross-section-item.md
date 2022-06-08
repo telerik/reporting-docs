@@ -58,10 +58,10 @@ You can programmatically add the Cross-section report item to a report by using 
 * Iterate through the sections of the report. 
 * Determine which of its sections will be assigned to the `BeginSection` and `EndSection` properties.
 * Set the corresponding margins. 
-  
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CrossSectionItemSnippets.cs region=CreateAndInitializeCrossSectionItemSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CrossSectionItemSnippets.vb region=CreateAndInitializeCrossSectionItemSnippet}}
+
 
 ## Processing and Rendering
 
@@ -72,7 +72,6 @@ The Cross-section item uses the data context of the report and cannot be evaluat
 The Cross-section item is designed to aid the production of form-type reports and attempts to preserve its location and size that are set at design-time. The report item will not expand when the report or any report sections expand horizontally. Therefore, the Cross-section won't be rendered on a page that is generated as a result of such horizontal paging. However, in a multi-column report, the Cross-section item will be generated per each report column that is shown on a page. 
 
 Not all rendering extensions [support the Cross-section report item]({% slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout %}). 
-
 
 ## See Also
 

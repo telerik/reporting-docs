@@ -1,20 +1,23 @@
 ---
 title: Cross-Section Item
-page_title: Cross-Section Item 
-description: Cross-section Item
+page_title: Cross-Section Item  
+description: "Learn more about the Telerik Reporting Cross-section report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
 slug: telerikreporting/designing-reports/report-structure/cross-section-item
-tags: cross-section,item
+tags: telerik, reporting, report, items, cross, section, item
 published: True
 position: 4
 ---
 
 # Cross-Section Item
 
-The Cross-section Item is used to display a graphical primitive (vertical line or rectangle) across one or more report sections. It is often used in scenarios where the parts of the reports - usually group sections - needs to be visually distinguished from each other. The following screenshot shows how the Cross-section item looks like in the Standalone Report Designer: 
+The Cross-section report item is used to display a graphical primitive, such as a vertical line or a rectangle, across one or more report sections. 
 
-  ![report-items-cross-section-item](images/report-items-cross-section-item.png)
+The report item is suitable if group sections, for example, need to be visually distinguished from each other. To create visual effects within a report, use visual shapes. The Cross-section report item provides a set of properties, such as `display`, which you can set from the **Properties** window.  
 
-You can use shapes to create visual effects within a report. You can set display and other properties to this item by using the Properties pane.       
+The following screenshot shows a Cross-section report item in the Standalone Report Designer. 
+
+![report-items-cross-section-item](images/report-items-cross-section-item.png)
+
 
 ## Properties
 

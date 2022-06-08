@@ -44,13 +44,17 @@ The following example assumes that you have a `Status` field that has the `Appro
 
 ![](/images/checkboxEval1.png)
 
+
 In this case, it is more convenient to use those values directly instead of trying to evaluate them as `true` or `false`. To use the values directly, utilize the `TrueValue`, `FalseValue`, and `IndeterminateValue` properties. 
 
 ![](/images/checkboxEval2.png)
 
+
 The following image shows the final result.  
 
 ![](/images/CheckBoxEval3.png)
+
+
 
 ## See Also 
 

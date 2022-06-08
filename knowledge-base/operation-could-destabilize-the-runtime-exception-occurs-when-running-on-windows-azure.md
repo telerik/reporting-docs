@@ -43,6 +43,6 @@ This problem occurs when you have published the application with **IntelliTrace*
 
 In order Telerik Reporting WebAPI REST service to function correctly you have to re-deploy with the IntelliTrace feature turned **off**.  
    
-### See Also
+## See Also
 
 [Debugging a Published Cloud Service with IntelliTrace and Visual Studio.](https://docs.microsoft.com/en-us/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019)  

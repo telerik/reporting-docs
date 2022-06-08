@@ -53,7 +53,7 @@ public static Bitmap GetImage(string url)
 
 Another option is to return the image as byte[]. Note that it will be necessary to authorize the request to successfully download the image from the URL.
 
-### See Also
+## See Also
 - [PictureBox](../designing-reports/report-structure/picturebox)
 
 - [User Function](../designing-reports/connecting-to-data/expressions/extending-expressions/user-functions)

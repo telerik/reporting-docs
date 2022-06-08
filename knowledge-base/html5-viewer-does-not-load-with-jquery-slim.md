@@ -56,7 +56,7 @@ A **slim** build of jQuery is referenced on the page. The **slim** version saves
 
 Reference a [compressed](https://code.jquery.com/jquery-3.6.0.min.js)(min) or an [uncompressed](https://code.jquery.com/jquery-3.6.0.js) version of the full jQuery(minimum required version **1.9.1**).
 
-### See Also
+## See Also
 
 - [Beware When Using the Slim Version of jQuery](https://webdesign.tutsplus.com/tutorials/quick-tip-beware-when-using-the-slim-version-of-jquery--cms-30935)
 

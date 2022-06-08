@@ -58,7 +58,7 @@ The Telerik Reporting directory will look like the following:
 ```
 **Step 4** Install the [SQLite/SQLServer Compact Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox) extension in visual studio. This will give you a similar experience to using Access.
 
-### See Also
+## See Also
 *   [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki)
 *   [SQLite/SQLServer Compact Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox)
 *   [How-To use SQLite with Telerik Reporting Standalone Report Designer](https://telerikhelper.net/2016/12/29/how-to-use-sqlite-with-telerik-reporting-standalone-report-designer/)

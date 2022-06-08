@@ -68,7 +68,7 @@ The [HTML5 WebForms Report Viewer](../webforms-report-viewer-controls-overview) 
 
 *ReportSource.Identifier* property accepts a string that contains information about the report. This string can be a path to a **TRDP** or **TRDX** file that can be resolved by [ReportFileResolver](../t-telerik-reporting-services-webapi-reportfileresolver), an assembly-qualified name of the report class which can be resolved by [ReportTypeResolver](../t-telerik-reporting-services-webapi-reporttyperesolver) or custom information which can be resolved by [custom report resolver](../telerik-reporting-rest-service-report-resolver#custom-report-resolver-implementations).  
 
-### See Also
+## See Also
 
 [How to: Set ReportSource for Report Viewers](../report-sources-viewers)  
 [How to display a report via InstanceReportSource in the HTML5 Viewer](./how-to-display-a-report-via-instancereportsource-in-the-html5-viewer)

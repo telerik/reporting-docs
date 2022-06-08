@@ -91,6 +91,6 @@ public static string ReplaceHexadecimalSymbols(string txt)
 }
 ````
 
-### See Also
+## See Also
 
 * [hexadecimal value 0x12, is an invalid character](https://stackoverflow.com/questions/21053138/c-sharp-hexadecimal-value-0x12-is-an-invalid-character)

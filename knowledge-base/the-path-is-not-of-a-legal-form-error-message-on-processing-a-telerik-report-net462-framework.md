@@ -63,7 +63,7 @@ System.InvalidOperationException: Invalid image data. ---> System.ArgumentExcept
 
  The setting will be applied only to the running application. It lets file paths to be specified as before .NET 4.6.2 framework without getting *System.ArgumentException*.  
  
-### See Also
+## See Also
 
 <a href="https://docs.microsoft.com/en-us/dotnet/api/system.appcontext?redirectedfrom=MSDN&view=net-5.0" target="_blank">AppContext Class</a>
 

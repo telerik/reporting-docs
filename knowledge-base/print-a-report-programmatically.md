@@ -70,7 +70,7 @@ On the client side, you can invoke the print through the ReportViewer client obj
 </form> 
 ```
    
-### See Also
+## See Also
 
 [HTML5 Report Viewer - Printing Reports](../html5-report-viewer-direct-print)
 

@@ -41,6 +41,6 @@ avoiding deadlocks.
 When everyting runs fine and there are no exceptions, the _myTask.GetAwaiter().GetResult();_ is equivallent to _myTask.Result;_. However, with the latter apporach,
 the potential exception will be wrapped in an [AggregateException](https://docs.microsoft.com/en-us/dotnet/api/system.aggregateexception?view=net-5.0), whereas 
 the former approach throws the direct exception. This makes the syntax from the code snippet the most preferable with respect to deadlock prevention and error handling.
-### See Also
+## See Also
 [C#: Why you should use ConfigureAwait(false) in your library code](https://medium.com/bynder-tech/c-why-you-should-use-configureawait-false-in-your-library-code-d7837dce3d7f)  
 [Task.Result Follow Task.GetAwaiter.GetResult Is () the same? How to choose?](https://developpaper.com/task-result-follow-task-getawaiter-getresult-is-the-same-how-to-choose/)

@@ -39,7 +39,7 @@ To force a nested table to break between pages, set [**KeepTogether**](../p-tel
 
 If the nested table contains report items that do not have *KeepTogether* properties (Graph, Map, PictureBox, Barcode, Shape), they will not be split between the pages.  
 
-### See Also
+## See Also
 
 [Understanding Pagination](../designing-reports-page-layout-rendering-understanding-pagination).
 

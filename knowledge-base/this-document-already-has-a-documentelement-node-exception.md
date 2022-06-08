@@ -64,7 +64,7 @@ Also, restart Visual Studio. Once you start it back up, we would successfully al
 
 Another "side-effect" of having default namespace is missing **intellisense** for the web.config file.
 
-### See Also
+## See Also
 
 [VS 2005 Intellisense in web.config files](https://weblogs.asp.net/scottgu/432077)  
   

@@ -97,7 +97,7 @@ This approach has several shortcomings and is far from perfect, but it seems to 
   
 The attached project demonstrates the described approach. One thing to note is that you should set the HTML as a value for the *browser.DocumentText* property, in the attached example we used **URL** from the **RadEditor** examples to quickly illustrate the approach.
 
-### See Also
+## See Also
 
 [User Functions](../expressions-user-functions)
 

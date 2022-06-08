@@ -46,5 +46,5 @@ we have introduced to the expressions Global Object RenderingFormat.Name. Thus n
 ##Trade-off
 The PageNumber and PageCount expressions will evaluate to 1 on all pages.
 
-### See Also
+## See Also
 [Function.prototype.bind()](https://docs.telerik.com/reporting/expressions-bindings)

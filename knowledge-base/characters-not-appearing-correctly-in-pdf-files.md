@@ -79,7 +79,7 @@ In order to produce a PDF that visualizes content correctly via Telerik Reportin
 
 The settings can be edited in code if you export programmatically - <a href="../configuring-telerik-reporting-extensions#set-rendering-parameters-programmatically" target="_blank">Set rendering parameters programmatically</a>.  
   
-### See Also
+## See Also
 
 [PDF Rendering Design Considerations](../designing-reports-considerations-pdf)
 

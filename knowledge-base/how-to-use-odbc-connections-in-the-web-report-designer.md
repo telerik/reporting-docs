@@ -60,7 +60,7 @@ The [How to register a DbProviderFactory in a .NET Core project](./how-to-regist
 If you use the Web Report Designer in .NET Framework app, there should not be any problems with ODBC connections whatsoever,
 because System.Data.ODBC is part of .NET Framework and the machine's DbProviderFactories already have the ODBC provider registered.
 
-### See Also
+## See Also
 - [Web Report Designer](./web-report-designer)
 - [OdbcConnection Class](https://docs.microsoft.com/en-us/dotnet/api/system.data.odbc.odbcconnection?view=dotnet-plat-ext-3.1)
 - [How to register a DbProviderFactory in a .NET Core project](./how-to-register-db-provider-factory-in-net-core-project)

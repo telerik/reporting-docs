@@ -40,7 +40,7 @@ The Properties Pane will look like the following.
 
 ![Page Header Binding Property](resources/PageHeaderBindingProperty.png)
 
-### See Also
+## See Also
 *	[Report Structure](https://docs.telerik.com/reporting/designing-reports-understanding-report-structure)
 *   [Report Header](https://docs.telerik.com/reporting/designing-reports-creating-report-headers-and-footers)
 *   [Page Header](https://docs.telerik.com/reporting/designing-reports-creating-page-headers-and-footers)

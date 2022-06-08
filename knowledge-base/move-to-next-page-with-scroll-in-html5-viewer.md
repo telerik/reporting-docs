@@ -57,6 +57,6 @@ function onRenderingEnd(e, args) {
 }
 ```
 
-### See Also
+## See Also
 The Stackoverflow thread 
 [How to check if a DIV is scrolled all the way to the bottom with jQuery](https://stackoverflow.com/questions/5828275/how-to-check-if-a-div-is-scrolled-all-the-way-to-the-bottom-with-jquery) explains how to detect when the DIV is scrolled to the bottom. 

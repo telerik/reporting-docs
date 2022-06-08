@@ -70,7 +70,7 @@ For 64 bit Windows you should look in the `C:\Program Files (x86)\Microsoft Vis
 - Add new Telerik Report to your project and start the Report Wizard. On its second step, select "Convert from existing report".
 
 
-### See Also 
+## See Also 
 
 Here you can find some presets of the binding redirections you need according to the **Crystal Reports** version yo have installed:
 

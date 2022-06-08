@@ -42,7 +42,7 @@ The [HTML5 Report Viewer](../html5-report-viewer) is an HTML\CSS\JS client-side 
 
 If you use [Telerik UI for ASP.NET AJAX RadScriptManager](../../devtools/aspnet-ajax/controls/scriptmanager/overview), it loads its *embedded* version of jQuery. You can use the external link to other jQuery file by setting the EnableEmbeddedjQuery property of RadScriptManager to false.  
 
-### See Also
+## See Also
 
 [Disabling the Embedded jQuery](../../devtools/aspnet-ajax/controls/scriptmanager/disabling-the-embedded-jquery).
 

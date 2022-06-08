@@ -32,6 +32,6 @@ By design, the [Report.DocumentName](../p-telerik-reporting-report-documentname)
 
 However, in Silverlight the *SaveFileDialog.[DefaultFileName](http://msdn.microsoft.com/en-us/library/system.windows.controls.savefiledialog.defaultfilename%28v=vs.95%29.aspx)* setting is treated as security vulnerability. Thus, the **DefaultFileName** is only applied for [trusted applications](http://msdn.microsoft.com/en-us/library/ee721083%28v=vs.95%29.aspx).
 
-### See Also
+## See Also
 
 [Microsoft Connect](http://connect.microsoft.com/VisualStudio/feedback/details/690502/savefiledialog-security-warning). 

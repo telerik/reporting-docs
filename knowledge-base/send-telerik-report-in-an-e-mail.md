@@ -33,7 +33,7 @@ The approach that we recommend is to export a report in a format like PDF. Then 
 
 In case using HTML is a requirement, you can [export a report programmatically](../programmatic-exporting-report) in [HTML5 or HTML5Interactive format](../configuring-rendering-extensions), and adjust the HTML/CSS to cover the requirements of the used e-mail client.
 
-### See Also
+## See Also
 
 [How to design a cross-client / browser compatible email](http://stackoverflow.com/questions/1531630/how-to-design-a-cross-client-browser-compatible-email)  
  

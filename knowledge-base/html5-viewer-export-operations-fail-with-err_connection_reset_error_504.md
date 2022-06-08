@@ -45,5 +45,5 @@ The RadCompression must be disabled for request to the Reporting REST service (W
 ```
 where the handlerPath should point to the Reporting REST Service - the HTML5 Viewer's serviceUrl.
 
-### See Also
+## See Also
 * [RadCompression help article](https://docs.telerik.com/devtools/aspnet-ajax/controls/radcompression)

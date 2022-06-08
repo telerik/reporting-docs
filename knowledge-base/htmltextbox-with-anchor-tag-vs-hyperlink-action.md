@@ -34,6 +34,6 @@ When a report is rendered in **HTML** for a web viewer, you can provide clickabl
   
 Our recommendation is to use a **Hyperlink Action**, which will let the item be clickable in **HTML, PDF, DOCX, XLSX, PPTX formats**.  
   
-### See Also
+## See Also
 
 [Design Considerations for Report Rendering](../designing-reports-considerations-overview).  

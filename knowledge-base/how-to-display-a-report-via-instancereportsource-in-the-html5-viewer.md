@@ -68,7 +68,7 @@ The following is an example of how to update a **TRDP** report's **DataSource** 
 
 **After creating/modifying the report on the server, you can return an [InstanceReportSource](../t-telerik-reporting-instancereportsource) instance from the resolver's [Resolve method](../m-telerik-reporting-services-ireportsourceresolver-resolve).**  
   
-### See Also  
+## See Also  
 
 [How to Set ReportSource for Report Viewers.](../report-sources-viewers)
 

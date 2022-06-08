@@ -42,7 +42,7 @@ It could be found in Telerik Reporting installation directory. For example *C:\P
 
 As a side note, we strongly suggest using the [Telerik Report Viewer Window Item Template](../wpf-report-viewer-embedding-the-viewer) to create a window and host the report viewer in it. It will automatically add all required references and verify if all resources needed are added to the project.
 
-### See Also
+## See Also
 [How To: Use WPF Report Viewer With Report Server
 ](../wpf-report-viewer-howto-use-it-with-reportserver)
 

@@ -34,6 +34,6 @@ In some scenarios, this behavior is not wanted and the borders of the table need
 Open Table item's properties in the report designer and set **Style.BorderStyle.Default** property to **None**.
 In this case, only the borders of each cell (TextBox item) will be visualized. 
 
-### See Also
+## See Also
 
 [Using Styles to Customize Reports](../style-using-styles-to-customize-reports)

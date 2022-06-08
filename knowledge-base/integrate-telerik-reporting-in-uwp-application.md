@@ -38,7 +38,7 @@ The solution contains 5 projects:
 
 5. ServiceClient - a simple client for the Telerik Reporting REST service to export a PDF document on a button click.
 
-### See Also
+## See Also
 [Example solution GitHub report](https://github.com/telerik/reporting-samples/tree/master/Telerik.Reporting.UWP.Examples)
 
 [Example solution archive](https://github.com/telerik/reporting-docs/raw/master/knowledge-base/resources/Telerik.Reporting.UWP.Examples.zip)

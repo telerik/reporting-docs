@@ -47,6 +47,6 @@ or [InstanceReportSource](../t-telerik-reporting-instancereportsource) in a .NET
 It is recommended to use the first approach and migrate the reports to .trdp or .trdx report definitions, 
 so the design-time support will be provided by the Standalone Report Designer. 
 
-### See Also
+## See Also
 * [Telerik Reporting .NET Core support](../use-reports-in-net-core-apps)
 * [Port your code from .NET Framework to .NET Core](https://docs.microsoft.com/en-us/dotnet/core/porting/)

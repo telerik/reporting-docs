@@ -134,5 +134,5 @@ npm start
 You can find the sample application in our [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/WebReportDesigner%20in%20React%20Application/src).
 
 
-### See Also
+## See Also
 [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)

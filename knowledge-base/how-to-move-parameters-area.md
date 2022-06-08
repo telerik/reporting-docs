@@ -78,6 +78,6 @@ At the end, it would be needed to add custom CSS rules as provided ones in the a
 
 The rest of the placements could be done by following the same logic.
 
-### See Also
+## See Also
 You can download the sample application containing both approaches from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/samplecustomizinghtml5viewerparamarea.zip?sfvrsn=2bd66a3_2).
 In order to build it successfully, you will need to use the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}) to upgrade/downgrade to the latest installed version on the machine.

@@ -32,6 +32,6 @@ When you interact with the container of the WPF|Silverlight ReportViewer, like c
 - <a href="../../devtools/silverlight/controls/radtabcontrol/overview2" target="_blank">Telerik UI for Silverlight RadTabControl</a>
 - <a href="../../devtools/wpf/controls/radtabcontrol/overview2" target="_blank">Telerik UI for WPF RadTabControl</a>
 
-### See Also
+## See Also
 
 <a href="../../devtools/wpf/controls/radtabcontrol/howto/how-to-keep-content" target="_blank">RadTabControl: How to Keep the Content State</a>.

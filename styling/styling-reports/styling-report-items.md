@@ -198,6 +198,6 @@ Some of the style properties behave differently in specific scenario.
 
 For example, in the graph series' [DataPointStyle](../../api/Telerik.Reporting.GraphSeriesBase.html#collapsible-Telerik_Reporting_GraphSeriesBase_DataPointStyle), instead of using the BorderColor/BorderStyle/BorderWidth properties to style the graph's data points, you should use the LineColor/LineWidth/LineStyle properties.
 
-### See Also
+## See Also
 
 * [Style Class](../../api/Telerik.Reporting.Drawing.Style.html)             

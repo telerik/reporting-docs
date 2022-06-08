@@ -38,7 +38,7 @@ Bulgarian language. For other languages, the file has to be named by following t
 the [Kendo GitHub repository](https://github.com/telerik/kendo-ui-core/tree/master/src/messages).
 The meta tag with the encoding is needed in order to display the toolbar messages' special symbols correctly in most languages.
 
-### See Also
+## See Also
 - [Localization of the Html5 Report Viewer](../html5-report-viewer-localization) 
 
 - [Localization in jQuery Editor Widget](https://demos.telerik.com/kendo-ui/editor/localization) 

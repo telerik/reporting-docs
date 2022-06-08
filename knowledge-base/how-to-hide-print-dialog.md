@@ -74,7 +74,7 @@ reportProcessor.PrintController = standardPrintController
 reportProcessor.PrintReport(typeReportSource, printerSettings)
 ```
 
-### See Also
+## See Also
   [ReportProcessor.PrintController](https://docs.telerik.com/reporting/p-telerik-reporting-processing-reportprocessor-printcontroller)
 
   [ReportProcessor.PrintReport](https://docs.telerik.com/reporting/overload-telerik-reporting-processing-reportprocessor-printreport)

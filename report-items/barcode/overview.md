@@ -12,7 +12,7 @@ position: 0
 
 The Barcode report item automatically generates barcodes directly from a numeric or character data. 
 
-[[[[picture]]]]
+![barcode-overview](images/Barcodes/barcode-overview.png)
 
 ## Key Features 
 
@@ -20,7 +20,7 @@ The Barcode report item automatically generates barcodes directly from a numeric
 * [Support for two-dimensional (2D) Barcodes]({% slug 2d_barcodes_overview %})—The Barcode report item also supports matrix barcode types such as Data Matrix, QR Code, Swiss QR Code, and PDF417. 
 
 
-### See Also
+## See Also
  
 * [Getting Started with the Barcode Report Item](/reporting/api/Telerik.Reporting.Barcode)  
 * [1D Supported Barcodes]({% slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types %})

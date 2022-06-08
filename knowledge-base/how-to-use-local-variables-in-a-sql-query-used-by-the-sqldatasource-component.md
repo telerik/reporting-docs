@@ -53,6 +53,6 @@ The .NET provider will not consider the internally declared SQL parameters as pr
 
 The syntax of the SQL query must be considered with the specification of the selected .NET data provider. It is the provider that interprets the SQL query and provides information what ADO<span>.</span>NET classes to be used for retrieving data. If the .NET data provider recognizes the local variables as SQL parameters, they will be listed for mapping by the SqlDataSource Wizard, which will result in an error on executing the SQL query.  
   
-### See Also
+## See Also
 
 [Using Parameters with the SqlDataSource component.](../sql-data-source-using-parameters)  

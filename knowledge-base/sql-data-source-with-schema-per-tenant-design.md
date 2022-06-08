@@ -51,5 +51,5 @@ DataSource.SelectCommand      |   = Parameters.Query.Value
 * Use this technique only within trusted environment as SQL concatenation allows SQL injection.
 * Bindings are not available on the ReportParameter-s, so this technique cannot be applied on a data source feeding the available values of a ReportParameter
 
-### See Also
+## See Also
 [Change Connection String dynamically through a report parameter](how-to-pass-connectionstring-to-report-dynamically-through-report-parameter)

@@ -39,24 +39,12 @@ navigation:
     report-items/barcode:
         position: 2
         title: "Barcode"
-    report-items/barcode/barcode-types:
-        position: 15
-        title: "Barcode Types"    
-    report-items/barcode/barcode-types/2d-barcodes:
-        position: 15
+    report-items/barcode/1d-barcodes:
+        position: 20
+        title: "1D Barcodes"    
+    report-items/barcode/2d-barcodes:
+        position: 30
         title: "2D Barcodes"     
-    report-items/barcode/barcode-types/2d-barcodes/qr-code:
-        position: 10
-        title: "QR Code"     
-    report-items/barcode/barcode-types/2d-barcodes/swiss-qr-code:
-        position: 11
-        title: "Swiss QR Code"
-    report-items/barcode/barcode-types/2d-barcodes/pdf417:
-        position: 12
-        title: "PDF417"
-    report-items/barcode/barcode-types/2d-barcodes/data-matrix:
-        position: 13
-        title: "Data Matrix"
     report-items/table-crosstab-list:
         position: 12
         title: "Table/Crosstab/List"    

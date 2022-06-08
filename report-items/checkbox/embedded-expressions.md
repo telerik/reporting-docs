@@ -24,14 +24,14 @@ If your data fields return two or three distinctive values, which are not `tru
 
 The following example assumes that you have a `Status` field that has the `Approved`, `DisApproved`, and `NotSet` values.    
 
-![](images/checkboxEval1.png)
+![](../images/checkboxEval1.png)
 
 In this case, it is more convenient to use those values directly instead of trying to evaluate them as `true` or `false`. To use the values directly, utilize the `TrueValue`, `FalseValue`, and `IndeterminateValue` properties. 
 
-![](images/checkboxEval2.png)
+![](../images/checkboxEval2.png)
 
 The following image shows the final result.  
 
-![](images/CheckBoxEval3.png)
+![](../images/CheckBoxEval3.png)
 
 

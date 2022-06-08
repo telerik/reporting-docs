@@ -1,14 +1,15 @@
 ---
-title: How to Create a Multi-Column Report
-page_title: How to Create a Multi-Column Report 
-description: How to Create a Multi-Column Report
+title: Creating Multi-Column Reports
+page_title: Creating Multi-Column Reports 
+description: "Learn how to create multi-column reports when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report
-tags: how,to,create,a,multi-column,report
+previous_url: /report-items/how-to/how-to-create-a-multi-column-report
+tags: telerik, reporting, report, items, item, creating, multi, column, reports
 published: True
-position: 3
+position: 
 ---
 
-# How to Create a Multi-Column Report
+# Creating Multi-Column Reports
 
 A report can be divided into columns (imagine columns in a newspaper), that are treated as logical pages rendered on the same physical page. The detail section is printed once for every row in the data source similarly to a repeater and this happens vertically. The columns actually represent the separate pages of the report, which are treated as logical pages rendered on the same physical page. Columns are arranged from left to right, top to bottom, and are separated by white space between each, and data flow in the columns is left to right, top to bottom i.e. down the page and then across. A column on a physical page is considered a logical page, whenever there are multiple columns on the physical page. If you apply a page break on a report section in multi-column layout, the section affected by the page break would move to the next column (logical page). This means that if there is enough space on the current physical page, the section is moved to a new logical page (column) and not to a new physical page. 
 

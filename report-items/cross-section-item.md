@@ -1,6 +1,6 @@
 ---
-title: Cross-Section Item
-page_title: Cross-Section Item  
+title: Cross-Section 
+page_title: Cross-Section   
 description: "Learn more about the Telerik Reporting Cross-section report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
 slug: telerikreporting/designing-reports/report-structure/cross-section-item
 tags: telerik, reporting, report, items, cross, section, item
@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Cross-Section Item
+# Cross-Section 
 
 The Cross-section report item is used to display a graphical primitive, such as a vertical line or a rectangle, across one or more report sections. 
 
@@ -18,87 +18,59 @@ The following screenshot shows a Cross-section report item in the Standalone Rep
 
 ![report-items-cross-section-item](images/report-items-cross-section-item.png)
 
+## Setting the Behavior
 
-## Properties
+The following list contains the properties which define the behavior of the Cross-section report item:
 
-The properties that define the behavior of the Cross-section item are listed below:
+* `BeginSection`&mdash;Defines the report section from which the cross-section item will start. It can be any instance of the [`ReportSectionBase`](/reporting/api/Telerik.Reporting.ReportSectionBase) class (`PageHeader`, `ReportHeader`, or `GroupHeader`). 
 
-* __BeginSection__ - this property defines the report section from which the cross-section item will start. It can be any instance of [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase)  class: PageHeader, ReportHeader or GroupHeader. 
+* `BeginMargin`&mdash;Defines the offset from the top of the `BeginSection` measured in [`Unit`](/reporting/api/Telerik.Reporting.Drawing.Unit) values. The offset will be preserved if the `BeginSection` changes its size at runtime. 
 
-* __BeginMargin__ - this property defines the offset from the top of the __BeginSection__ measured in [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit) s. The offset will be preserved if the __BeginSection__ changes its size at runtime. 
+* `EndSection`&mdash;Defines the report section at which the cross-section item will end. It can also be any instance of the [`ReportSectionBase`](/reporting/api/Telerik.Reporting.ReportSectionBase) class (`PageFooter`, `ReportFooter`, or `GroupFooter`). 
 
-* __EndSection__ - this property defines the report section at which the cross-section item will end. It also can be any instance of [ReportSectionBase](/reporting/api/Telerik.Reporting.ReportSectionBase)  class: PageFooter, ReportFooter or GroupFooter. 
+* `EndMargin`&mdash;Defines the offset from the bottom of the `EndSection` measured in [`Unit`](/reporting/api/Telerik.Reporting.Drawing.Unit) values. The offset will be preserved if the `EndSection` changes its size at runtime. 
 
-* __EndMargin__ - this property defines the offset from the bottom of the __EndSection__ measured in [Unit](/reporting/api/Telerik.Reporting.Drawing.Unit) s. The offset will be preserved if the __EndSection__ changes its size at runtime. 
+## Setting the Appearance 
 
-The properties that define the appearance of the Cross-section item are listed below: 
+The following list contains the properties which define the appearance of the Cross-section report item:
 
-* __Type__ - this property defines the type graphical primitive rendered by the cross-section item. It can be *Line* or *Rectangle*. The default value is *Line*.             
+* `Type`&mdash;Defines the graphical primitive type rendered by the Cross-section item. It can be `Line` (default) or `Rectangle`.              
 
-* __Position__ - this property defines whether the cross-section item will be rendered under the rest of the report items or on top of them. It can be set to *Behind* or *Front*. The default value is *Behind*.             
+* `Position`&mdash;Defines whether the Cross-section item will be rendered under the rest of the report items or on top of them. It can be set to `Behind` (default) or `Front`.
 
-The [Location](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location) and [Size](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size)  properties are calculated based on the *BeginSection*, *BeginMargin*, *EndSection* and *EndMargin* properties. Changing the values of the [Location](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location) - or [Size](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size) -related property like [Top](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Top), [Left](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Left), [Width](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Width)  or [Height](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Height) will recalculate the values of *BeginSection*, *BeginMargin*, *EndSection* and *EndMargin* properties. 
+The [`Location`](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location) and [`Size`](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size) properties are calculated based on the `BeginSection`, `BeginMargin`, `EndSection`, and `EndMargin` properties. Changing the [`Location`](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Location) values or the [`Size`](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size)-related properties like [`Top`](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Top), [`Left`](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Left), [`Width`](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Width), or [`Height`](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Height) recalculate the values of `BeginSection`, `BeginMargin`, `EndSection`, and `EndMargin` properties. 
 
-In most scenarios the *Begin-* and *End* sections would have matching types and hierarchy levels, i.e. *ReportHeader - ReportFooter, GroupHeader - GroupFooter*. Choosing mismatching sections can produce unexpected rendering results. 
+In most scenarios, the `Begin` and `End` sections have matching types and hierarchy levels, for example, `ReportHeader` - `ReportFooter`, `GroupHeader` - `GroupFooter`. Choosing mismatching sections can produce unexpected rendering results. 
 
 ## Instantiation and Design-Time Support
 
-Since the Cross-section item can refer to more than one report sections, its parent is the  [Report](/reporting/api/Telerik.Reporting.Report) item. Hence the Cross-section item can be dragged from the designer's toolbox onto the designer surface without selecting any report section first. When the Cross-section item is moved or resized on the report designer surface, its Begin- and End-related properties are automatically calculated based on its current location and size and displayed in the Properties window. 
+Since the Cross-section item can refer to more than one report sections, its parent is the [`Report`](/reporting/api/Telerik.Reporting.Report) item. Therefore, you can drag the Cross-section item from the designer toolbox onto the designer surface without selecting any report section before that. When the Cross-section item is moved or resized on the report designer surface, its `Begin`- and `End`-related properties are automatically calculated based on its current location and size, and are displayed in the **Properties** window. 
 
-Selecting a Cross-section item can be done through the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) tool window or by clicking on the graphical primitive the item displays. If its *Type* is set to __Line__, the item's selectable area is on both sides of the displayed vertical line and spans to at least 6 pixels. If the item's *Type* is set to __Rectangle__, the selectable area can be any of its sides, again spanning to at least 6 pixels. 
+You can select a Cross-section item through the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) tool window or by clicking the graphical primitive displayed by the item. If its `Type` is set to `Line`, the selectable area of the item will be on both sides of the displayed vertical line and will span to at least six pixels. If `Type` is set to `Rectangle`, the selectable area can be any of its sides and will again span to at least six pixels. 
 
-> The Cross-section item has complete design-time support in Standalone Report Designer and Visual Studio Report Designer. The Web Report Designer currently provides basic designing capabilities and some of the properties of the Cross-section item cannot be edited through the dedicated property editors.
+>* In the Standalone Report Designer and Visual Studio Report Designer, the Cross-section report item provides complete design-time support. 
+>* Currently, the Web Report Designer delivers basic designing capabilities and some of the Cross-section properties cannot be edited through the dedicated property editors.
 
 
-The Cross-section item can be added programmatically to a report with the following code: 
+You can programmatically add the Cross-section report item to a report by using the following code. Note that you need to add the item to the `Items` collection of the report first and, then, assign its section-related properties. The order of assignments is important because setting any `Location`- or `Size`-related properties will: 
+
+* Iterate through the sections of the report. 
+* Determine which of its sections will be assigned to the `BeginSection` and `EndSection` properties.
+* Set the corresponding margins. 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CrossSectionItemSnippets.cs region=CreateAndInitializeCrossSectionItemSnippet}}
-````c#
-void CreateAndInitializeCrossSectionItem()
-{
-    var reportGroup = report.Groups[0];
-
-    var crossSectionItem = new CrossSectionItem();
-    report.Items.Add(crossSectionItem);
-
-    crossSectionItem.BeginSection = reportGroup.GroupHeader;
-    crossSectionItem.BeginMargin = Drawing.Unit.Cm(0.5);
-    crossSectionItem.EndSection = reportGroup.GroupFooter;
-    crossSectionItem.EndMargin = Drawing.Unit.Cm(0.5);
-
-    crossSectionItem.Left = Drawing.Unit.Cm(1);
-    crossSectionItem.Width = Drawing.Unit.Cm(1);
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CrossSectionItemSnippets.vb region=CreateAndInitializeCrossSectionItemSnippet}}
-````vb.net
-Private Sub CreateAndInitializeCrossSectionItemSnippet()
-    Dim reportGroup = report.Groups(0)
-    Dim crossSectionItem = New Telerik.Reporting.CrossSectionItem()
-    report.Items.Add(crossSectionItem)
 
-    crossSectionItem.BeginSection = reportGroup.GroupHeader
-    crossSectionItem.BeginMargin = Telerik.Reporting.Drawing.Unit.Cm(0.5)
-    crossSectionItem.EndSection = reportGroup.GroupFooter
-    crossSectionItem.EndMargin = Telerik.Reporting.Drawing.Unit.Cm(0.5)
-
-    crossSectionItem.Left = Telerik.Reporting.Drawing.Unit.Cm(1)
-    crossSectionItem.Width = Telerik.Reporting.Drawing.Unit.Cm(1)
-End Sub
-````
-
-The order of assignments is important, because settings any *Location* - or *Size* -related properties would iterate through the sections of the report, determining which of its sections should be assigned to the *BeginSection* and *EndSection* properties, and also set the corresponding margins. That's why the item needs to be added to the Report's Items collection first and then assign its section-related properties. 
 
 ## Processing and Rendering
 
-The Cross-section item is rendered per each page based on the occurrences of the report sections that match its *Begin-* and *End* section settings. If the *EndSection* is positioned on a following page or report column, the Cross-section item will generate a graphical primitive that spans to the end of the usable page area and continues from the top of the next page. 
+The Cross-section item is rendered per each page based on the occurrences of the report sections that match its `Begin` and `End` section settings. If the `EndSection` is positioned on a following page or report column, the Cross-section item will generate a graphical primitive that will span to the end of the usable page area and that will continue from the top of the next page. 
 
-The Cross-section item uses the report's data context and cannot be evaluated against detail or group data. The processing engine produces a single instance per each Cross-section item in the report definition, therefore its style or visibility cannot be changed based on data fields. 
+The Cross-section item uses the data context of the report and cannot be evaluated against detail or group data. The processing engine produces a single instance per each Cross-section item in the report definition. Therefore, its style or visibility cannot be changed based on data fields. 
 
-The Cross-section item is designed to aid the production of form-type reports and it tries to preserve its location and size set at design-time. It will not grow when the report or any of its report section grows horizontally, therefore it won't be rendered on a page, generated as a result of such horizontal paging. However, in a multi-column report the Cross-section item will be generated per each report column shown on a page. 
+The Cross-section item is designed to aid the production of form-type reports and attempts to preserve its location and size that are set at design-time. The report item will not expand when the report or any report sections expand horizontally. Therefore, the Cross-section won't be rendered on a page that is generated as a result of such horizontal paging. However, in a multi-column report, the Cross-section item will be generated per each report column that is shown on a page. 
 
-The Cross-section item is not supported in all rendering extensions. Please check the corresponding "Design Considerations" article to ensure if it is supported for a given rendering extension. 
-
+Not all rendering extensions [support the Cross-section report item]({% slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout %}). 
 
 ## See Also
 

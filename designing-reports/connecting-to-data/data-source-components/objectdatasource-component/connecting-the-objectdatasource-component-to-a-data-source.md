@@ -27,29 +27,7 @@ When you configure the ObjectDataSource component the settings below are obligat
 1. Add the following piece of code from [How to Bind to a BusinessObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject%}).
 
    {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=SampleDataSource}}
-   ````C#
-class Product
-{
-    //properties
-}
-
-[DataObject]
-class Products
-{
-    //objects
-}
-````
    {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=SampleDataSource}}
-   ````VB
-Class Product
-    'properties
-End Class
-
-<DataObject()>
-Class Products
-    'objects
-End Class
-````
 
 1. Build the project and close it.
 

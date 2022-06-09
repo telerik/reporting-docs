@@ -51,21 +51,7 @@ To define a sorting for the __Report__  item use the following steps:
 ## Adding sorting to Report programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewSortSnippet}}
-````C#
-Telerik.Reporting.Sorting sorting1 = new Telerik.Reporting.Sorting();
-sorting1.Expression = "=Fields.ProductID";
-sorting1.Direction = Telerik.Reporting.SortDirection.Asc;
-
-report1.Sortings.Add(sorting1);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewSortSnippet}}
-````VB
-Dim sorting1 As New Telerik.Reporting.Sorting()
-sorting1.Expression = "=Fields.ProductID"
-sorting1.Direction = Telerik.Reporting.SortDirection.Asc
-
-report1.Sortings.Add(sorting1)
-````
 
 ## See Also
 

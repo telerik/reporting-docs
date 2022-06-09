@@ -87,24 +87,6 @@ The following list shows the supported encodations and provides information abou
 The following examples demonstrate how to configure the settings of the Data Matrix. 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_DataMatrixEncoder_Settings}}
-````cs
-var encoder = new Telerik.Reporting.Barcodes.DataMatrixEncoder();
-
-encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii;
-encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto;
-encoder.TextEncoding = System.Text.UTF8Encoding.UTF8;
-
-this.barcode1.Encoder = encoder;
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_DataMatrixEncoder_Settings}}
-````vbnet
-Dim encoder = New Telerik.Reporting.Barcodes.DataMatrixEncoder()
-
-encoder.Encodation = Telerik.Reporting.Barcodes.DataMatrix.Encodation.Ascii
-encoder.SymbolSize = Telerik.Reporting.Barcodes.DataMatrix.SymbolSize.SquareAuto
-encoder.TextEncoding = System.Text.UTF8Encoding.UTF8
-
-Me.barcode1.Encoder = encoder
-````
 
 

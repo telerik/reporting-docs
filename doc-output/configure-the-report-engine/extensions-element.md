@@ -164,37 +164,5 @@ JSON-based configuration file:
 To define device rendering parameters programmatically, we need a key/value pair, and what better than a [HashTable](http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx) which represents collection of key/value pairs. If the collection contains rendering parameters that are not supported by the specified rendering extension, they would be ignored. 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Add_Device_Settings_Snippet}}
-````C#
-Telerik.Reporting.Processing.ReportProcessor reportProcessor =
-    new Telerik.Reporting.Processing.ReportProcessor();
-
-System.Collections.Hashtable deviceInfo =
-    new System.Collections.Hashtable();
-
-deviceInfo.Add("DocumentAuthor", "John Doe");
-deviceInfo.Add("DocumentTitle", "My Doc title");
-
-Telerik.Reporting.TypeReportSource typeReportSource =
-             new Telerik.Reporting.TypeReportSource();
-
-// reportName is the Assembly Qualified Name of the report
-typeReportSource.TypeName = reportName;
-
-Telerik.Reporting.Processing.RenderingResult result =
-    reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Add_Device_Settings_Snippet}}
-````VB
-Dim reportProcessor As New Telerik.Reporting.Processing.ReportProcessor()
-Dim deviceInfo As New System.Collections.Hashtable()
-deviceInfo.Add("DocumentAuthor", "John Doe")
-deviceInfo.Add("DocumentTitle", "My Doc title")
-
-Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
-
-' reportName is the Assembly Qualified Name of the report
-typeReportSource.TypeName = reportName
-
-Dim result As Telerik.Reporting.Processing.RenderingResult = reportProcessor.RenderReport("PDF", typeReportSource, deviceInfo)
-````
 

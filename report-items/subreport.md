@@ -64,25 +64,7 @@ If you have to specify parameters for the report, follow the next step.
 ## Setting the Report Source Programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateInstanceReportSourceSnippet}}
-````C#
-	var instanceReportSource = new Telerik.Reporting.InstanceReportSource();
-	
-	// Assigning the Report object to the InstanceReportSource
-	instanceReportSource.ReportDocument = new Telerik.Reporting.Examples.CSharp.Invoice();
-	
-	// Adding the initial parameter values
-	instanceReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateInstanceReportSourceSnippet}}
-````VB
-	Dim instanceReportSource As New Telerik.Reporting.InstanceReportSource()
-	
-	' Assigning the Report object to the InstanceReportSource
-	instanceReportSource.ReportDocument = New Invoice()
-	
-	' Adding the initial parameter values
-	instanceReportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
-````
 
 The [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) you can use all available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).         
 

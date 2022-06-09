@@ -35,21 +35,7 @@ For each sort expression, follow these steps:
 ## Adding sorting to Chart data item programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ChartSnippets.cs region=AddNewSortSnippet}}
-````C#
-Telerik.Reporting.Sorting sorting1 = new Telerik.Reporting.Sorting();
-sorting1.Expression = "=Fields.ProductID";
-sorting1.Direction = Telerik.Reporting.SortDirection.Asc;
-
-chart1.Sortings.Add(sorting1);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ChartSnippets.vb region=AddNewSortSnippet}}
-````VB
-Dim sorting1 As New Telerik.Reporting.Sorting()
-sorting1.Expression = "=Fields.ProductID"
-sorting1.Direction = Telerik.Reporting.SortDirection.Asc
-
-chart1.Sortings.Add(sorting1)
-````
 
 
 ## See Also

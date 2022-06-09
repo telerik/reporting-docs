@@ -29,45 +29,11 @@ Optional settings for the proper functioning of the CsvDastaSource you need to c
 * Quote - if the Escape format is Quotes or Quotes Mixed then the Quote property must be set.           
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CsvDataSourceSnippets.cs region=ConfiguringCsvDataSource_RequiredSetting}}
-````C#
-var csvDataSource = new CsvDataSource();
-csvDataSource.Source = new Uri(@"C:\temp\MyCsvDocument.csv");
-csvDataSource.FieldSeparators = new[] { ',' };
-csvDataSource.RecordSeparators = new[] { '\r', '\n' };
-csvDataSource.HasHeaders = false;
-csvDataSource.EscapeFormat = CsvEscapeFormat.Quotes;
-csvDataSource.Quote = '"';
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CsvDataSourceSnippets.vb region=ConfiguringCsvDataSource_RequiredSetting}}
-````VB
-Dim csvDataSource = New CsvDataSource()
-csvDataSource.Source = New Uri("C:\temp\MyCsvDocument.csv")
-csvDataSource.FieldSeparators = New Char() {","c}
-csvDataSource.RecordSeparators = New Char() {ControlChars.Cr, ControlChars.Lf}
-csvDataSource.HasHeaders = False
-csvDataSource.EscapeFormat = CsvEscapeFormat.Quotes
-csvDataSource.Quote = """"c
-````
 
 Optional setting:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CsvDataSourceSnippets.cs region=ConfiguringCsvDataSource_OptionalSetting}}
-````C#
-csvDataSource.ConsecutiveFieldSeparatorsAsOne = false;
-csvDataSource.ConsecutiveRecordSeparatorsAsOne = true;
-csvDataSource.CommentToken = '#';
-csvDataSource.DecimalSeparator = ".";
-csvDataSource.ThousandSeparator = " ";
-csvDataSource.DateTimeFormat = "MM/dd/yyyy hh:mm";
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CsvDataSourceSnippets.vb region=ConfiguringCsvDataSource_OptionalSetting}}
-````VB
-csvDataSource.ConsecutiveFieldSeparatorsAsOne = False
-csvDataSource.ConsecutiveRecordSeparatorsAsOne = True
-csvDataSource.CommentToken = "#"c
-csvDataSource.DecimalSeparator = "."
-csvDataSource.ThousandSeparator = " "
-csvDataSource.DateTimeFormat = "MM/dd/yyyy hh:mm"
-````
 
 

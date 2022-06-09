@@ -37,48 +37,7 @@ This article will explain how to configure an MSSQL database for report engine s
 		The __ReportSourceResolver__ and __Storage__ configuration settings are required. See the [IReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration) interface for more details. 
 
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=MSSqlReportsControllerImplementation}}
-		````C#
-public class MSSqlReportsController : ReportsControllerBase
-		{
-			static readonly ReportServiceConfiguration configurationInstance =
-				new ReportServiceConfiguration
-				{
-					HostAppId = "Application1",
-					ReportSourceResolver = new UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports"))
-					 .AddFallbackResolver(new TypeReportSourceResolver()),
-					Storage = new Telerik.Reporting.Cache.MsSqlServerStorage("Data Source=(local)\\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI"),
-				};
-
-			public MSSqlReportsController()
-			{
-				this.ReportServiceConfiguration = configurationInstance;
-			}
-		}
-````
 		{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=MSSqlReportsControllerImplementation}}
-		````VB
-Public Class MSSqlReportsController
-			Inherits ReportsControllerBase
-
-			Shared ReadOnly configurationInstance As ReportServiceConfiguration
-
-			Shared Sub New()
-				Dim resolver = New UriReportSourceResolver(HttpContext.Current.Server.MapPath("~/Reports")) _
-							.AddFallbackResolver(New TypeReportSourceResolver())
-
-				Dim reportServiceConfiguration As New ReportServiceConfiguration()
-				reportServiceConfiguration.HostAppId = "Application1"
-				reportServiceConfiguration.ReportSourceResolver = resolver
-				reportServiceConfiguration.Storage = New Telerik.Reporting.Cache.MsSqlServerStorage("Data Source=(local)\SQLEXPRESS;Initial Catalog=RestServiceStorage;Integrated Security=SSPI")
-				configurationInstance = reportServiceConfiguration
-			End Sub
-
-			Public Sub New()
-				Me.ReportServiceConfiguration = configurationInstance
-			End Sub
-
-		End Class
-````
 
 
 	+ Through a configuration file: 

@@ -37,22 +37,7 @@ Add the instance of the ReportViewer to a __RadAjaxManager__ control. You can op
 </telerik:RadAjaxManager>
 ````
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSourceOnByttonClick}}
-````C#
-protected void Button1_Click(object sender, EventArgs e)
-{
-    var typeReportSource = new Telerik.Reporting.TypeReportSource();
-    typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
-    this.ReportViewer1.ReportSource = typeReportSource;
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSourceOnByttonClick}}
-````VB
-Protected Sub Button1_Click(sender As Object, e As EventArgs)
-    Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
-    typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
-    ReportViewer1.ReportSource = typeReportSource
-End Sub
-````
 
 ## Issue Ajax Request through ASP.NET AJAX UpdatePanel
 
@@ -72,22 +57,7 @@ Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:
 </asp:UpdatePanel>
 ````
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSourceOnByttonClick}}
-````C#
-protected void Button1_Click(object sender, EventArgs e)
-{
-    var typeReportSource = new Telerik.Reporting.TypeReportSource();
-    typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
-    this.ReportViewer1.ReportSource = typeReportSource;
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSourceOnByttonClick}}
-````VB
-Protected Sub Button1_Click(sender As Object, e As EventArgs)
-    Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
-    typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
-    ReportViewer1.ReportSource = typeReportSource
-End Sub
-````
 
 ## See Also
 

@@ -49,29 +49,7 @@ There are several ways to add a Report Parameter:
 ##Add a Report Parameter programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewReportParameterSnippet}}
-````C#
-	Telerik.Reporting.ReportParameter reportParameter1 = new Telerik.Reporting.ReportParameter();
-	reportParameter1.Name = "Parameter1";
-	reportParameter1.Text = "Enter Value for Parameter1";
-	reportParameter1.Type = Telerik.Reporting.ReportParameterType.Integer;
-	reportParameter1.AllowBlank = false;
-	reportParameter1.AllowNull = false;
-	reportParameter1.Value = "=10";
-	reportParameter1.Visible = true;
-	report1.ReportParameters.Add(reportParameter1);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewReportParameterSnippet}}
-````VB
-	Dim reportParameter1 As New Telerik.Reporting.ReportParameter()
-	reportParameter1.Name = "Parameter1"
-	reportParameter1.Text = "Enter Value for Parameter1"
-	reportParameter1.Type = Telerik.Reporting.ReportParameterType.Integer
-	reportParameter1.AllowBlank = False
-	reportParameter1.AllowNull = False
-	reportParameter1.Value = "=10"
-	reportParameter1.Visible = True
-	report1.ReportParameters.Add(reportParameter1)
-````
 
 ##Defining AvailableValues for ReportParameter’s UI using Report Designer
 
@@ -90,33 +68,5 @@ There are several ways to add a Report Parameter:
 ##Defining AvailableValues for ReportParameter’s UI programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=Define_AvailableValues_for_ReportParameter_Snippet}}
-````C#
-	reportParameter1.AvailableValues.DataSource = objectDataSource1;
-	reportParameter1.AvailableValues.ValueMember = "= Fields.EmployeeID";
-	reportParameter1.AvailableValues.DisplayMember = "= Fields.FirstName";
-	Telerik.Reporting.Filter filter1 = new Telerik.Reporting.Filter();
-	filter1.Expression = "=Fields.ProductCategory";
-	filter1.Operator = Telerik.Reporting.FilterOperator.Equal;
-	filter1.Value = "=Parameters.ProductCategory";
-	reportParameter1.AvailableValues.Filters.AddRange(new Telerik.Reporting.Filter[] { filter1 });
-	Telerik.Reporting.Sorting sorting1 = new Telerik.Reporting.Sorting();
-	sorting1.Expression = "=Fields.ProductSubcategory";
-	sorting1.Direction = Telerik.Reporting.SortDirection.Asc;
-	reportParameter1.AvailableValues.Sortings.AddRange(new Telerik.Reporting.Sorting[] { sorting1 });
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=Define_AvailableValues_for_ReportParameter_Snippet}}
-````VB
-	reportParameter1.AvailableValues.DataSource = objectDataSource1
-	reportParameter1.AvailableValues.ValueMember = "= Fields.EmployeeID"
-	reportParameter1.AvailableValues.DisplayMember = "= Fields.FirstName"
-	Dim filter1 As New Telerik.Reporting.Filter()
-	filter1.Expression = "=Fields.ProductCategory"
-	filter1.Operator = Telerik.Reporting.FilterOperator.Equal
-	filter1.Value = "=Parameters.ProductCategory"
-	reportParameter1.AvailableValues.Filters.AddRange(New Telerik.Reporting.Filter() {filter1})
-	Dim sorting1 As New Telerik.Reporting.Sorting()
-	sorting1.Expression = "=Fields.ProductSubcategory"
-	sorting1.Direction = Telerik.Reporting.SortDirection.Asc
-	reportParameter1.AvailableValues.Sortings.AddRange(New Telerik.Reporting.Sorting() {sorting1})
-````
 

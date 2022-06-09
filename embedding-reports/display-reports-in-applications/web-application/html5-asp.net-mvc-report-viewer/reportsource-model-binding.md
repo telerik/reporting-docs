@@ -200,40 +200,5 @@ End Code
 Finally on the server side your custom report source resolver can implement the custom logic that will take in consideration the id and create a report source as per your needs: 
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=ModelBindingReportResolver_Implementation}}
-````c#
-class ModelBindingReportSourceResolver : IReportSourceResolver
-{
-    public Telerik.Reporting.ReportSource Resolve(string reportId, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
-    {
-        var report = new Invoice();
-        if (true) // condition here
-        {
-            // prepare your report here
-        }
-        else
-        {
-            // do something else with report here
-        }
-
-        return new Telerik.Reporting.InstanceReportSource { ReportDocument = report };
-    }
-}
-````
 {{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=ModelBindingReportResolver_Implementation}}
-````vb.net
-Class ModelBindingReportSourceResolver
-    Implements IReportSourceResolver
-    Public Function Resolve(reportId As String, operationOrigin As OperationOrigin, currentParameterValues As IDictionary(Of String, Object)) As Telerik.Reporting.ReportSource Implements Telerik.Reporting.Services.IReportSourceResolver.Resolve
-        Dim report = New Invoice() ' prepare your report here
-        If True Then ' condition here
-            ' do something else with report here
-        Else
-        End If
-
-        Return New Telerik.Reporting.InstanceReportSource() With {
-         .ReportDocument = report
-        }
-    End Function
-End Class
-````
 

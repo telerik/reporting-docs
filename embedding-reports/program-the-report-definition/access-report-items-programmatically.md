@@ -28,29 +28,7 @@ In the examples below we show how to access a report item from within the report
 > The `Processing.TextBox` represents the TextBox during processing and has a different set of properties than the `Report1.TextBox` used when defining the report.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddSectionDataBindingSnippet}}
-````C#
-private void detail_ItemDataBinding(object sender, EventArgs e)
-{
-    Telerik.Reporting.Processing.DetailSection section = (sender as Telerik.Reporting.Processing.DetailSection);
-    Telerik.Reporting.Processing.TextBox txt = (Telerik.Reporting.Processing.TextBox)Telerik.Reporting.Processing.ElementTreeHelper.GetChildByName(section, "textBox1");
-    object title = section.DataObject["Title"];
-    if ((string)title == "Developer")
-    {
-        txt.Style.BackgroundColor = System.Drawing.Color.Blue;
-    }
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddSectionDataBindingSnippet}}
-````VB
-Private Sub detail_ItemDataBinding(sender As Object, e As EventArgs)
-    Dim section As Telerik.Reporting.Processing.DetailSection = TryCast(sender, Telerik.Reporting.Processing.DetailSection)
-    Dim txt As Telerik.Reporting.Processing.TextBox = DirectCast(Telerik.Reporting.Processing.ElementTreeHelper.GetChildByName(section, "textBox1"), Telerik.Reporting.Processing.TextBox)
-    Dim title As Object = section.DataObject("Title")
-    If DirectCast(title, String) = "Developer" Then
-        txt.Style.BackgroundColor = System.Drawing.Color.Blue
-    End If
-End Sub
-````
 
 ##  Access items from calling application
 

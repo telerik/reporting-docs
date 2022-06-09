@@ -13,15 +13,7 @@ position: 3
 In the report viewing application you can populate the values of          __ReportParameters__  collection members prior to displaying the report.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParameterSnippets.cs region=Pass_ReportParameter}}
-````C#
-Report1 report = new Report1();
-report.ReportParameters["ManagerID"].Value = "123";
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ParameterSnippets.vb region=Pass_ReportParameter}}
-````VB
-Dim report As New Report1()
-report.ReportParameters("ManagerID").Value = "123"
-````
 
 At runtime you can access the report parameters through the [Telerik.Reporting.Processing.Report.Parameters](/reporting/api/Telerik.Reporting.Processing.Report#Telerik_Reporting_Processing_Report_Parameters) dictionary. Each [Parameter](/reporting/api/Telerik.Reporting.Processing.Parameter) object contains resolved available values, current value and label. The label returns the currently selected DisplayMember from the available values (if available values are defined).
 
@@ -51,13 +43,6 @@ At runtime you can access the report parameters through the [Telerik.Reporting.P
   the following query:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParametersSqlDataSourceQuery.sql}}
-  ````SQL
-SELECT  M.ManagerID, C.FirstName + ' ' + C.LastName AS Name
-FROM    (SELECT DISTINCT ManagerID
-	     FROM   HumanResources.Employee) AS M INNER JOIN
-	            HumanResources.Employee AS E ON M.ManagerID = E.EmployeeID INNER JOIN
-	            Person.Contact AS C ON E.ContactID = C.ContactID
-````
 
 1. Set the __ValueMember__  to __= Fields.ManagerID__.
 
@@ -74,35 +59,8 @@ FROM    (SELECT DISTINCT ManagerID
 1. Add the following code to the NeedDataSource event handler:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParameterSnippets.cs region=Pass_Parameter_In_NeedDataSource}}
-  ````C#
-private void Report1_NeedDataSource(object sender, System.EventArgs e)
-{
-    //Take the Telerik.Reporting.Processing.Report instance
-    Telerik.Reporting.Processing.Report report = (Telerik.Reporting.Processing.Report)sender;
-
-    // Transfer the value of the processing instance of ReportParameter
-    // to the parameter value of the sqlDataSource component
-    this.sqlDataSource1.Parameters[0].Value = report.Parameters["ManagerID"].Value;
-
-    // Set the SqlDataSource component as it's DataSource
-    report.DataSource = this.sqlDataSource1;
-}
-````
 
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ParameterSnippets.vb region=Pass_Parameter_In_NeedDataSource}}
-  ````VB
-Private Sub Report1_NeedDataSource(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.NeedDataSource
-    'Take the Telerik.Reporting.Processing.Report instance
-    Dim report As Telerik.Reporting.Processing.Report = DirectCast(sender, Telerik.Reporting.Processing.Report)
-
-    ' Transfer the value of the processing instance of ReportParameter
-    ' to the parameter value of the sqlDataSource component
-    Me.sqlDataSource1.Parameters(0).Value = report.Parameters("ManagerID").Value
-
-    ' Set the SqlDataSource component as it's DataSource
-    report.DataSource = Me.sqlDataSource1
-End Sub
-````
 
 1. Display the Report in a report viewer.
 

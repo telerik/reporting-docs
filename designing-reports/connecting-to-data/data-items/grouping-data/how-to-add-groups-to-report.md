@@ -108,37 +108,7 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
 ## Adding a group to a Report programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewGroupSnippet}}
-````C#
-Telerik.Reporting.Group group1 = new Telerik.Reporting.Group();
-group1.Name = "group1";
-group1.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.ProductID"));
-Telerik.Reporting.GroupFooterSection groupFooterSection1 = new Telerik.Reporting.GroupFooterSection();
-Telerik.Reporting.GroupHeaderSection groupHeaderSection1 = new Telerik.Reporting.GroupHeaderSection();
-group1.GroupFooter = groupFooterSection1;
-group1.GroupHeader = groupHeaderSection1;
-//if you need to filter the data, apply filtering
-group1.Filters.Add(new Telerik.Reporting.Filter("=Fields.ProductID", Telerik.Reporting.FilterOperator.Equal, "=10"));
-//if you need to sort the data, apply sorting
-group1.Sortings.Add(new Telerik.Reporting.Sorting("=Fields.ProductID", Telerik.Reporting.SortDirection.Asc));
-
-report1.Groups.Add(group1);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewGroupSnippet}}
-````VB
-Dim group1 As New Telerik.Reporting.Group()
-group1.Name = "group1"
-group1.Groupings.Add(New Telerik.Reporting.Grouping("=Fields.ProductID"))
-Dim groupFooterSection1 As New Telerik.Reporting.GroupFooterSection()
-Dim groupHeaderSection1 As New Telerik.Reporting.GroupHeaderSection()
-group1.GroupFooter = groupFooterSection1
-group1.GroupHeader = groupHeaderSection1
-'if you need to filter the data, apply filtering
-group1.Filters.Add(New Telerik.Reporting.Filter("=Fields.ProductID", Telerik.Reporting.FilterOperator.Equal, "=10"))
-'if you need to sort the data, apply sorting
-group1.Sortings.Add(New Telerik.Reporting.Sorting("=Fields.ProductID", Telerik.Reporting.SortDirection.Asc))
-
-report1.Groups.Add(group1)
-````
 
 ## See Also
 

@@ -49,25 +49,7 @@ The specified report is processed locally on the same machine where the Report V
 * __Set the Report Source programmatically__ 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSourceSnippets.cs region=CreateUriReportSourceSnippet}}
-````C#
-var uriReportSource = new Telerik.Reporting.UriReportSource();
-
-// Specifying an URL or a file path
-uriReportSource.Uri = "SampleReport.trdp";
-
-// Adding the initial parameter values
-uriReportSource.Parameters.Add(new Telerik.Reporting.Parameter("OrderNumber", "SO43659"));
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSourceSnippets.vb region=CreateUriReportSourceSnippet}}
-````VB
-Dim uriReportSource As New Telerik.Reporting.UriReportSource()
-
-' Specifying an URL or a file path
-uriReportSource.Uri = "SampleReport.trdp"
-
-' Adding the initial parameter values
-uriReportSource.Parameters.Add(New Telerik.Reporting.Parameter("OrderNumber", "SO43659"))
-````
 
 
 ## Set up Report Viewers that operate via Telerik Reporting Services
@@ -153,39 +135,7 @@ The [HTML5 ASP.NET MVC Report Viewer control]({%slug telerikreporting/using-repo
 __Example:__ 
 
 {{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
-````c#
-@{
-	var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
-	typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
-}
-
-@(
-	Html.TelerikReporting().ReportViewer()
-	 .Id("reportViewer1")
-	 .ServiceUrl("/api/reports/")
-	 .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-	 .ReportSource(typeReportSource)
-	 .ViewMode(ViewMode.Interactive)
-	 .ScaleMode(ScaleMode.Specific)
-	 .Scale(1.0)
-)
-````
 {{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
-````vb.net
-@Code
-	Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
-	typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
-
-	Html.TelerikReporting().ReportViewer() _
-	 .Id("reportViewer1") _
-	 .ServiceUrl("/api/reports/") _
-	 .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-	 .ReportSource(typeReportSource) _
-	 .ViewMode(ViewMode.Interactive) _
-	 .ScaleMode(ScaleMode.Specific) _
-	 .Scale(1.0)
-End Code
-````
 
 To display another report or to update the *client parameters* ' values of the current HTML5 Viewer object, you can update the HTML5 Viewer's reportSource by using the viewer object's [reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method in JavaScript.  Or you can recreate the HTML5 ASP.NET MVC Report Viewer. 
 

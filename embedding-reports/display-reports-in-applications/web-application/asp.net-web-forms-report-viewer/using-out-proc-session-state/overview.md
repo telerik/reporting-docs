@@ -27,75 +27,17 @@ The ReportViewer control uses the __ASP.NET session state__ to preserve the repo
 	__Wrong__ 
 
 	{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=WrongItemDataBinding}}
-	````C#
-void Report1_WrongItemDataBinding(object sender, System.EventArgs e)
-	{
-		this.textBox1.Value = "New Value";
-	}
-````
 	{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=WrongItemDataBinding}}
-	````VB
-Private Sub Report1_WrongItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
-		Me.TextBox1.Value = "New Value"
-	End Sub
-````
 
 	__Correct__ 
 
 	{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=CorrectItemDataBinding}}
-	````C#
-void Report1_CorrectItemDataBinding(object sender, System.EventArgs e)
-	{
-		Telerik.Reporting.Processing.Report processingReport = (Telerik.Reporting.Processing.Report)sender;
-		Telerik.Reporting.Report reportDef = (Telerik.Reporting.Report)processingReport.ItemDefinition;
-		Telerik.Reporting.TextBox textBox = (Telerik.Reporting.TextBox)(reportDef.Items.Find("textBox1", true)[0]);
-		textBox.Value = "New Value";
-	}
-````
 	{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=CorrectItemDataBinding}}
-	````VB
-Private Sub Report1_CorrectItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.NeedDataSource
-		Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
-		Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)
-		Dim textBox As Telerik.Reporting.TextBox = DirectCast(reportDef.Items.Find("TextBox1", True)(0), Telerik.Reporting.TextBox)
-		textBox.Value = "New value"
-	End Sub
-````
 
 * To utilize the events of the report items (NeedDataSource, ItemDataBinding, ItemDataBound) you have to attach them in the _ItemDataBinding_ event of the Report. For example:
 
 	{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\OutProcSnippets.cs region=AttachItemsEvents}}
-	````C#
-void Report1_ItemDataBinding(object sender, System.EventArgs e)
-	{
-		Telerik.Reporting.Processing.Report processingReport = (Telerik.Reporting.Processing.Report)sender;
-		Telerik.Reporting.Report reportDef = (Telerik.Reporting.Report)processingReport.ItemDefinition;
-		Telerik.Reporting.Chart chart = (Telerik.Reporting.Chart)(reportDef.Items.Find("chart1", true)[0]);
-		chart.NeedDataSource += new System.EventHandler(Chart_NeedDataSource);
-	}
-
-	void Chart_NeedDataSource(object sender, System.EventArgs e)
-	{
-		var processingChart = (Telerik.Reporting.Processing.Chart)sender;
-		var chartDef = (Telerik.Reporting.Chart)processingChart.ItemDefinition;
-		//...
-	}
-````
 	{{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\OutProcSnippets.vb region=AttachItemsEvents}}
-	````VB
-Private Sub Report1_ItemDataBinding(sender As System.Object, e As System.EventArgs) Handles MyBase.ItemDataBinding
-		Dim processingReport = DirectCast(sender, Telerik.Reporting.Processing.Report)
-		Dim reportDef = DirectCast(processingReport.ItemDefinition, Telerik.Reporting.Report)
-		Dim chart As Telerik.Reporting.Chart = DirectCast(reportDef.Items.Find("Chart1", True)(0), Telerik.Reporting.Chart)
-		AddHandler chart.NeedDataSource, AddressOf Chart1_NeedDataSource
-	End Sub
-
-	Private Sub Chart1_NeedDataSource(sender As System.Object, e As System.EventArgs)
-		Dim processingChart = DirectCast(sender, Telerik.Reporting.Processing.Chart)
-		Dim chartDef = DirectCast(sender, Telerik.Reporting.Chart)
-		'...
-	End Sub
-````
 
 
 As the data sources are kept in the session state, it is highly recommended to use the built-in [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}). As a last resort you can use the NeedDataSource event to populate the report with data. Otherwise the session state will either become very large, especially when using large datasets or the data for the report will not be serialized at all if it cannot be binary serialized/deserialized (e.g. business objects, anonymous types, data adapters, etc.). You should restrain from setting an instance of your business object directly as a data source, as it would be serialized multiple times into the session. 

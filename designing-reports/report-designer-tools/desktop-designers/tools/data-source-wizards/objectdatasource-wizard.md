@@ -68,58 +68,8 @@ End Class
    + __When the "Show data components only" check box is checked__, only the methods that are marked with the __DataObjectMethodAttribute__ attribute are listed, and only if the specified type of the data method is __DataObjectMethodType.Select__. Here are some sample Cars class methods:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=DataMethodSnippet}}
-  ````C#
-[System.ComponentModel.DataObject]
-public class Cars : System.Collections.Generic.List<Car>
-{
-    [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
-    public System.Collections.Generic.List<Car> GetCarsByYear(int year)
-    {
-        // TODO: Implement your specific business logic here.
-        return new System.Collections.Generic.List<Car>();
-    }
-
-    [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
-    public System.Collections.Generic.List<Car> GetCarsByColor(string color)
-    {
-        // TODO: Implement your specific business logic here.
-        return new System.Collections.Generic.List<Car>();
-    }
-
-    [System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]
-    public System.Collections.Generic.List<Car> GetCars(int year, string color)
-    {
-        // TODO: Implement your specific business logic here.
-        return new System.Collections.Generic.List<Car>();
-    }
-}
-````
 
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=DataMethodSnippet}}
-  ````VB
-<System.ComponentModel.DataObject()>
-Public Class Cars
-    Inherits System.Collections.Generic.List(Of Car)
-
-    <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
-    Public Function GetCarsByYear(ByVal year As Integer) As System.Collections.Generic.List(Of Car)
-        ' TODO: Implement your specific business logic here.
-        Return New System.Collections.Generic.List(Of Car)
-    End Function
-
-    <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
-    Public Function GetCarsByColor(ByVal color As String) As System.Collections.Generic.List(Of Car)
-        ' TODO: Implement your specific business logic here.
-        Return New System.Collections.Generic.List(Of Car)
-    End Function
-
-    <System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)>
-    Public Function GetCars(ByVal year As Integer, ByVal color As String) As System.Collections.Generic.List(Of Car)
-        ' TODO: Implement your specific business logic here.
-        Return New System.Collections.Generic.List(Of Car)
-    End Function
-End Class
-````
 
 When the __"Show data components only"__ check box from the previous step is not checked, all public members of the Cars business object type are listed. When the check box is checked, only the methods with the __DataObjectMethodAttribute__ attribute appear in the list. This is especially useful for filtering only the methods that are appropriate for data binding. 
 

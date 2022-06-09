@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/design-considerations-
 previous_url: /designing-reports/report-structure/design-considerations-for-report-item-layout
 tags: telerik, reporting, report, items, design, considerations, layout, creating, reports
 published: True
-position: 14
+position: 15
 ---
 
 # Design Considerations for Report Items

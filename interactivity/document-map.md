@@ -1,6 +1,6 @@
 ---
-title: Document Map Overview
-page_title: Document Map Overview
+title: Document Map
+page_title: Document Map
 description: Document Map Overview
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview
 tags: overview
@@ -8,7 +8,7 @@ published: True
 position: 0
 ---
 
-# Document Map Overview
+# Document Map
 
 A document map provides a set of navigational links to report items in the rendered report. A user can click links in the document map to jump to the report page that displays that item. 
 

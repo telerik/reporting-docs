@@ -30,28 +30,7 @@ The accessibility features are enabled or disabled using a Boolean dependency pr
 The accessibility routines capture the keyboard events to provide shortcut key access to the viewer areas. It is possible some of these shortcuts to interfere with the designed application behavior. In this case the keys mapping can be changed through the property [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.Wpf#Telerik_ReportViewer_Wpf_AccessibilityKeyMap), which provides access to the internal dictionary of keycodes and shortcut definitions. The code snippets below demonstrate how to change the default shortcut for navigating to the menu area: 
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window2.xaml.cs region=WpfViewerAccessibilityKeyMapSnippet}}
-````C#
-private void SetToolbarShortcutKey()
-{
-    //Note that the accessibility classes are accessible after the report viewer loads its template, so this code should be called in or after Loaded event
-    var keyMap = this.reportViewer1.AccessibilityKeyMap;
-    keyMap.Remove((int)System.Windows.Input.Key.M);
-    keyMap[(int)System.Windows.Input.Key.N] = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY;
-    this.reportViewer1.AccessibilityKeyMap = keyMap;
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window2.xaml.vb region=WpfViewerAccessibilityKeyMapSnippet}}
-````VB
-Private Sub SetToolbarShortcutKey()
-
-    'Note that the accessibility classes are accessible after the report viewer loads its template, so this code should be called in or after Loaded event
-    Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
-    map.Remove(CType(Input.Key.M, Integer))
-    map(CType(Input.Key.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
-    Me.ReportViewer1.AccessibilityKeyMap = map
-
-End Sub
-````
 
 Since the accessibility uses the theme template, the modification of the accessibility key map must be done after the template is loaded. We recommend using the report viewer's [Loaded](https://msdn.microsoft.com/en-us/library/system.windows.frameworkelement.loaded(v=vs.110).aspx) event handler. 
 

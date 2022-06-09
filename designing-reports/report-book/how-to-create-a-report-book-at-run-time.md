@@ -28,25 +28,5 @@ In the sample below we add two reports:
 1. Second is the 'Glossary.trdp' report created with the Standalone Designer. It is added wrapped in a UriReportSource. You need to specify the relative or full path to the TRDP file:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportBookSnippets.cs region=CreateReportBook}}
-````C#
-	var reportBook = new ReportBook();
-	var weekdayReportSource = new TypeReportSource();
-	weekdayReportSource.TypeName = typeof(WeekdayReport).AssemblyQualifiedName;
-	reportBook.ReportSources.Add(weekdayReportSource);
-	
-	var glossaryReportSource = new UriReportSource();
-	glossaryReportSource.Uri = "Reports\\Glossary.trdp";
-	reportBook.ReportSources.Add(glossaryReportSource);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportBookSnippets.vb region=CreateReportBook}}
-````VB
-	Dim reportBook = New ReportBook()
-	Dim weekdayReportSource = New TypeReportSource()
-	weekdayReportSource.TypeName = GetType(WeekendReport).AssemblyQualifiedName
-	reportBook.ReportSources.Add(weekdayReportSource)
-	
-	Dim glossaryReportSource = New UriReportSource()
-	glossaryReportSource.Uri = "Reports\Glossary.trdp"
-	reportBook.ReportSources.Add(glossaryReportSource)
-````
 

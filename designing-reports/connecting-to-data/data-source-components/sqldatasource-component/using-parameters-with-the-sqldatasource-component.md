@@ -32,21 +32,7 @@ SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastNa
 With named parameters, the order in which the parameters are specified in the command's parameters                 collection is not important. However, you must ensure that the parameter names that you use in your SQL                 command correspond to the names of the parameters in the associated collection. The following example                 shows how to use named parameters in an SQL command for a __SqlDataSource__                  component that uses the __System.Data.SqlClient__  provider:               
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=NamedParametersSnippet}}
-````C#
-Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource();
-sqlDataSource.ConnectionString = "MyAdventureWorksDB";
-sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName";
-sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "John");
-sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "Smith");
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=NamedParametersSnippet}}
-````VB
-Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
-sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "John")
-sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "Smith")
-````
 
 ##Using Parameters with the OLE DB and ODBC Providers
 
@@ -62,50 +48,12 @@ When you use the __System.Data.OleDb__  and __System.Data.Odbc__                
 The following example shows how to specify parameters for a __SqlDataSource__  component                 that uses the __System.Data.OleDb__  provider:               
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=PositionalParametersSnippet}}
-````C#
-Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource();
-sqlDataSource.ProviderName = "System.Data.OleDb";
-sqlDataSource.ConnectionString = "Provider=SQLOLEDB;Data Source=(local)\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI";
-sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?";
-sqlDataSource.Parameters.Add("FirstName", System.Data.DbType.String, "John");
-sqlDataSource.Parameters.Add("LastName", System.Data.DbType.String, "Smith");
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=PositionalParametersSnippet}}
-````VB
-Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-sqlDataSource.ProviderName = "System.Data.OleDb"
-sqlDataSource.ConnectionString = "Provider=SQLOLEDB;Data Source=(local)\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = ? AND LastName = ?"
-sqlDataSource.Parameters.Add("FirstName", System.Data.DbType.String, "John")
-sqlDataSource.Parameters.Add("LastName", System.Data.DbType.String, "Smith")
-````
 
 ##Binding SQL Query Parameters to Report Parameters
 
 The following code example shows how to bind the parameters of an SQL query to the corresponding                 parameters of the report using expressions:               
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\SqlDataSourceSnippets.cs region=BindingExpressionSnippet}}
-````C#
-var report = new Report1();
-report.ReportParameters.Add("FirstName", ReportParameterType.String, "John");
-report.ReportParameters.Add("LastName", ReportParameterType.String, "Smith");
-Telerik.Reporting.SqlDataSource sqlDataSource = new Telerik.Reporting.SqlDataSource();
-sqlDataSource.ConnectionString = "MyAdventureWorksDB";
-sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName";
-sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "=Parameters.FirstName");
-sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "=Parameters.LastName");
-report.DataSource = sqlDataSource;
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\SqlDataSourceSnippets.vb region=BindingExpressionSnippet}}
-````VB
-Dim report As Telerik.Reporting.Report = New Telerik.Reporting.Report()
-report.ReportParameters.Add("FirstName", ReportParameterType.String, "John")
-report.ReportParameters.Add("LastName", ReportParameterType.String, "Smith")
-Dim sqlDataSource As Telerik.Reporting.SqlDataSource = New Telerik.Reporting.SqlDataSource()
-sqlDataSource.ConnectionString = "MyAdventureWorksDB"
-sqlDataSource.SelectCommand = "SELECT * FROM Person.Contact WHERE FirstName = @FirstName AND LastName = @LastName"
-sqlDataSource.Parameters.Add("@FirstName", System.Data.DbType.String, "=Parameters.FirstName")
-sqlDataSource.Parameters.Add("@LastName", System.Data.DbType.String, "=Parameters.LastName")
-report.DataSource = sqlDataSource
-````
 

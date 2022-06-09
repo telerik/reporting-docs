@@ -49,21 +49,7 @@ To define a sorting for the __Table__  or __Crosstab__  items use the following 
 ## Adding sorting to Table/Crosstab data item programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewSortSnippet}}
-````C#
-Telerik.Reporting.Sorting sorting1 = new Telerik.Reporting.Sorting();
-sorting1.Expression = "=Fields.ProductID";
-sorting1.Direction = Telerik.Reporting.SortDirection.Asc;
-
-table1.Sortings.Add(sorting1);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewSortSnippet}}
-````VB
-Dim sorting1 As New Telerik.Reporting.Sorting()
-sorting1.Expression = "=Fields.ProductID"
-sorting1.Direction = Telerik.Reporting.SortDirection.Asc
-
-table1.Sortings.Add(sorting1)
-````
 
 ## See Also
 

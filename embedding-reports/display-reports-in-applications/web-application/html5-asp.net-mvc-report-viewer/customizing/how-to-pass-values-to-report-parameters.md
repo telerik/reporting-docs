@@ -191,38 +191,7 @@ Public Function InvoiceParameters() As ActionResult
 1. Now initialize the report viewer. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially: 
 
     {{source=CodeSnippets\MvcCS\Views\Home\InvoiceParameters.cshtml region=ParametersExample}}
-    ````c#
-@{
-		var typeReportSource = new TypeReportSource() { TypeName = typeof(Invoice).AssemblyQualifiedName };
-		typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice);
-	}
-
-    @(
-        Html.TelerikReporting().ReportViewer()
-         .Id("reportViewer1")
-         .ServiceUrl("/api/reports/")
-         .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html")
-         .ReportSource(typeReportSource)
-         .ViewMode(ViewMode.Interactive)
-         .ScaleMode(ScaleMode.Specific)
-         .Scale(1.0)
-    )
-````
     {{source=CodeSnippets\MvcVB\Views\Home\InvoiceParameters.vbhtml region=ParametersExample}}
-    ````vb.net
-@Code
-		Dim typeReportSource = New TypeReportSource() With {.TypeName = GetType(Invoice).AssemblyQualifiedName}
-		typeReportSource.Parameters.Add("OrderNumber", Model.SelectedInvoice)
-		Html.TelerikReporting().ReportViewer() _
-		 .Id("reportViewer1") _
-		 .ServiceUrl("/api/reports/") _
-		 .TemplateUrl("/ReportViewer/templates/telerikReportViewerTemplate.html") _
-		 .ReportSource(typeReportSource) _
-		 .ViewMode(ViewMode.Interactive) _
-		 .ScaleMode(ScaleMode.Specific) _
-		 .Scale(1.0)
-	End Code
-````
 
 1. Add code that updates the ReportSource parameters collection with the selected __Invoice Id__ from the dropdown box: 
     

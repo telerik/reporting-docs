@@ -47,24 +47,6 @@ This article explains the steps needed to manually create an application which u
 1. The next step is to merge these ResourceDictionaries in the App.xaml file: 
 
 	{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\App.xaml}}
-	````XML
-<Application x:Class="WpfApplication1.App"
-			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			 StartupUri="MainWindow.xaml">
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/System.Windows.xaml" />
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.xaml" />
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.Input.xaml" />
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.Navigation.xaml" />
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.ReportViewer.Wpf.xaml" />
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-	</Application>
-````
 
 	For the above sample we have used the Fluent theme. The WPF Report Viewer supports all the Telerik UI for WPF themes. In order to style the viewer with another theme, change the above XAML snippet __Fluent__ with the desired theme name. 
 
@@ -73,90 +55,13 @@ This article explains the steps needed to manually create an application which u
 	+ Specifying a report source declaratively, we would use type report source for this example: 
 
 		{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window1.xaml}}
-		````XML
-<Window x:Class="WpfApplication1.Window1"
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			Title="Window1" Height="451" Width="683"
-			xmlns:telerik="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf"
-			xmlns:telerikReporting="clr-namespace:Telerik.Reporting;assembly=Telerik.Reporting">
-			<Grid>
-				<telerik:ReportViewer Name="reportViewer1">
-					<telerik:ReportViewer.ReportSource>
-						<telerikReporting:TypeReportSource TypeName="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary" />
-					</telerik:ReportViewer.ReportSource>
-				</telerik:ReportViewer>
-			</Grid>
-		</Window>
-````
 
 	+ Setting a report source at run time. The following code snippet illustrates how to assign a report source to the WPF ReportViewer in the *Window.Loaded* event handler: 
 
 		{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
-		````XML
-<Window x:Class="WpfApplication1.Window3"
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			Title="Window3" Height="328" Width="618" xmlns:my="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf" Loaded="Window_Loaded">
-			<Grid>
-				<my:ReportViewer Name="reportViewer1" />
-			</Grid>
-		</Window>
-````
 		{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml.cs}}
-		````C#
-namespace WpfApplication1
-		{
-			using System.Windows;
-
-			/// <summary>
-			/// Interaction logic for Window3.xaml
-			/// </summary>
-			public partial class Window3 : Window
-			{
-				public Window3()
-				{
-					InitializeComponent();
-				}
-
-				private void Window_Loaded(object sender, RoutedEventArgs e)
-				{
-					var typeReportSource = new Telerik.Reporting.TypeReportSource();
-					typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
-					this.reportViewer1.ReportSource = typeReportSource;
-				}
-			}
-		}
-````
 		{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
-		````XML
-<Window x:Class="Window3"
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			Title="Window3" Height="489" Width="687" xmlns:my="clr-namespace:Telerik.ReportViewer.Wpf;assembly=Telerik.ReportViewer.Wpf" Name="Window3">
-			<Grid>
-				<my:ReportViewer Name="ReportViewer1" />
-			</Grid>
-		</Window>
-````
 		{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}}
-		````VB
-Imports System.Windows
-
-		' Interaction logic for Window3.xaml
-		Partial Public Class Window3
-			Inherits Window
-			Public Sub New()
-				InitializeComponent()
-			End Sub
-
-			Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
-				Dim typeReportSource = New Telerik.Reporting.TypeReportSource()
-				typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary"
-				Me.ReportViewer1.ReportSource = typeReportSource
-			End Sub
-		End Class
-````
 
 
 ## Setting DataContext
@@ -168,27 +73,6 @@ Setting a DataContext to a parent element of ReportViewer leads to BindingExpres
 In case you use *Telerik UI for WPF* version greater than the __latest official release__ (service pack or internal build) you have to redirect all assemblies required by the *Telerik WPF ReportViewer* to their latest versions. To do this, add the following __bindingRedirects__ to your __app.config__ and replace the "__2010.1.421.35__" with the exact version of *Telerik UI for WPF* assemblies: 
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\WpfViewerBindings.xml}}
-````XML
-<?xml version="1.0" encoding="utf-8" ?>
-<configuration>
-  <runtime>
-    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-      <dependentAssembly>
-        <assemblyIdentity name="Telerik.Windows.Controls" culture="neutral" publicKeyToken="5803cfa389c90ce7"/>
-        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="2010.1.421.35"/>
-      </dependentAssembly>
-      <dependentAssembly>
-        <assemblyIdentity name="Telerik.Windows.Controls.Input" culture="neutral" publicKeyToken="5803cfa389c90ce7"/>
-        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="2010.1.421.35"/>
-      </dependentAssembly>
-      <dependentAssembly>
-        <assemblyIdentity name="Telerik.Windows.Controls.Navigation" culture="neutral" publicKeyToken="5803cfa389c90ce7"/>
-        <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="2010.1.421.35"/>
-      </dependentAssembly>
-    </assemblyBinding>
-  </runtime>
-</configuration>
-````
 
 > [Redirecting Assembly Versions](http://msdn.microsoft.com/en-us/library/7wd6ex19(v=vs.110).aspx) is a standard .NET technique for resolving assembly versions conflicts. __Visual Studio 2013__ allows automatic binding redirects. For more details check MSDN: [How to: Enable and Disable Automatic Binding Redirection](http://msdn.microsoft.com/en-us/library/2fc472t2(v=vs.110).aspx). 
 

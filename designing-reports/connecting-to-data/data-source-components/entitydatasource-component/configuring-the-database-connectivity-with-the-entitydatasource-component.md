@@ -17,27 +17,7 @@ This section discusses how to specify a database connection to the __EntityDataS
 Strictly speaking, it is not necessary to specify a database connection when working with the __EntityDataSource__ component. Simply specifying an __ObjectContext/DbContext__ and a member is enough to connect to the __Entity Data Model__, because the __ObjectContext/DbContext__ is already configured to access the database. The following code snippet shows the minimum code necessary to setup the __EntityDataSource__ component: 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=PropertyBindingSnippet}}
-````C#
-var entityDataSource = new Telerik.Reporting.EntityDataSource();
-
-entityDataSource.Context = typeof(AdventureWorksEntities);
-entityDataSource.ContextMember = "Products";
-
-var report = new Report1();
-
-report.DataSource = entityDataSource;
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\EntityDataSourceSnippets.vb region=PropertyBindingSnippet}}
-````VB
-Dim entityDataSource As New Telerik.Reporting.EntityDataSource()
-
-entityDataSource.Context = GetType(AdventureWorksEntities)
-entityDataSource.ContextMember = "Products"
-
-Dim report As New Report1()
-
-report.DataSource = entityDataSource
-````
 
 When running the report in production the above code should work just fine. However, this is not the case when generating a preview of the same report in the designer, for example. The problem is that the __ObjectContext/DbContext__ searches its connection string in the configuration file of the current executing application or web site. When it is your application that is currently running, all that is necessary is to make sure the connection string is present in the right configuration file. On the other side, when running the report in the designer, the current executing application is __Microsoft Visual Studio__, so the connection string is no longer available. To overcome this, you can specify your connection string to the __ConnectionString__ property of the __EntityDataSource__ component, as shown in the following example: 
 
@@ -60,25 +40,7 @@ End Class
 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\EntityDataSourceSnippets.cs region=ConnectionStringSnippet}}
-````C#
-Telerik.Reporting.EntityDataSource entityDataSource = new Telerik.Reporting.EntityDataSource();
-
-entityDataSource.ConnectionString = "AdventureWorksConnection";
-entityDataSource.Context = typeof(AdventureWorksEntities);
-entityDataSource.ContextMember = "Products";
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\EntityDataSourceSnippets.vb region=ConnectionStringSnippet}}
-````VB
-Dim entityDataSource As Telerik.Reporting.EntityDataSource = New Telerik.Reporting.EntityDataSource()
-
-entityDataSource.ConnectionString = "AdventureWorksConnection"
-entityDataSource.Context = GetType(AdventureWorksEntities)
-entityDataSource.ContextMember = "Products"
-
-Dim report As New Report1()
-
-report.DataSource = entityDataSource
-````
 
 The __ConnectionString__ property can accept an inline connection string or the name of an existing connection string stored in the configuration file. When running the report __EntityDataSource__ searches the configuration file for a connection string with the specified name. If such connection string exists __EntityDataSource__ uses that connection string to connect to the database otherwise it is assumed that the value of the __ConnectionString__ property represents an inline connection string. 
 

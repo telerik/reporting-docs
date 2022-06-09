@@ -66,24 +66,6 @@ We will apply embedded implicit styles for the Fluent theme in our example proje
 * The next step is to merge these ResourceDictionaries in the App.xaml file:
 
 	{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\App.xaml}}
-	````XML
-<Application x:Class="WpfApplication1.App"
-			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-			 StartupUri="MainWindow.xaml">
-		<Application.Resources>
-			<ResourceDictionary>
-				<ResourceDictionary.MergedDictionaries>
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/System.Windows.xaml" />
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.xaml" />
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.Input.xaml" />
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.Windows.Controls.Navigation.xaml" />
-					<ResourceDictionary Source="/Telerik.ReportViewer.Wpf.Themes;component/Themes/Fluent/Telerik.ReportViewer.Wpf.xaml" />
-				</ResourceDictionary.MergedDictionaries>
-			</ResourceDictionary>
-		</Application.Resources>
-	</Application>
-````
 
 
 ## Setting Customizable Implicit Style for the WPF Report Viewer Example

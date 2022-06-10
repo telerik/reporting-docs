@@ -61,7 +61,7 @@ npm init vue@latest
 
 	````HTML
 <script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
-<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
+	<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
 ````
 
 

@@ -10,7 +10,7 @@ position: 3
 
 # Using Report Parameters programmatically
 
-In the report viewing application you can populate the values of __ReportParameters__  collection members prior to displaying the report.
+In the report viewing application you can populate the values of __ReportParameters__ collection members prior to displaying the report.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParameterSnippets.cs region=Pass_ReportParameter}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ParameterSnippets.vb region=Pass_ReportParameter}}
@@ -41,15 +41,15 @@ At runtime you can access the report parameters through the [Telerik.Reporting.P
 
 	{{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ParametersSqlDataSourceQuery.sql}}
 
-1. Set the __ValueMember__  to __= Fields.ManagerID__.
+1. Set the __ValueMember__ to __= Fields.ManagerID__.
 
-1. Set the __DisplayMember__  to __= Fields.Name__.
+1. Set the __DisplayMember__ to __= Fields.Name__.
 
-1. Add grouping for the report with __= Fields.ManagerID__  as grouping expression.
+1. Add grouping for the report with __= Fields.ManagerID__ as grouping expression.
 
 1. Wire the [NeedDataSource event]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/using-the-needdatasource-event-to-connect-data%}) of the report.
 
-1. In the report.cs file set the __DataSource__  property to __null__  ( __Nothing__  in VB.NET) so that NeedDataSource event is fired.
+1. In the report.cs file set the __DataSource__ property to __null__ ( __Nothing__ in VB.NET) so that NeedDataSource event is fired.
 
 1. Add the following code to the NeedDataSource event handler:
 

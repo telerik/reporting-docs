@@ -73,7 +73,7 @@ npx create-react-app my-app
   
   	````JS
 <script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
-	<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner-16.0.22.225.min.js/"></script>
+	<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
 ````
     
 

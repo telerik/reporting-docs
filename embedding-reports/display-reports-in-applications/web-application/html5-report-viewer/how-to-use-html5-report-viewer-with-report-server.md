@@ -68,23 +68,23 @@ Although the fastest and most convenient way to get a working HTML5 viewer in yo
 
 1. Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) article to get your HTML5 viewer working. Examine the produced HTML page and especially the section that configures the viewer: 
     
-    ````javascript
+    ````JavaScript
 $("#reportViewer1")
-	.telerik_ReportViewer({
-		serviceUrl: "/api/reports/",
-		templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
-		reportSource: {
-			report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-			parameters: {
-				CultureID: "en"
+		.telerik_ReportViewer({
+			serviceUrl: "/api/reports/",
+			templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
+			reportSource: {
+				report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+				parameters: {
+					CultureID: "en"
+				}
 			}
-		}
-	});
+		});
 ````
 
 1. Locate the line that sets the service URL: `serviceUrl: "/api/reports/",`. Comment it out or replace it with the following code: 
     
-    ````javascript
+    ````JavaScript
 reportServer: {
 		url: "http://yourReportServerUrl:port",
 		username: null,
@@ -100,24 +100,24 @@ reportServer: {
 
 1. The initialization should look like the following: 
     
-    ````javascript
+    ````JavaScript
 $("#reportViewer1")
-	.telerik_ReportViewer({
-		reportServer: {
-			url: "http://yourReportServerUrl:port",
-			username: null,
-			password: null
-		},
-		//templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
-		reportSource: {
-			// The report value should contain the Category and ReportName in the following format
-			// {Category/ReportName}
-			report: "Samples/Dashboard"
-			parameters: {
-				ReportYear: 2004
+		.telerik_ReportViewer({
+			reportServer: {
+				url: "http://yourReportServerUrl:port",
+				username: null,
+				password: null
+			},
+			//templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html',
+			reportSource: {
+				// The report value should contain the Category and ReportName in the following format
+				// {Category/ReportName}
+				report: "Samples/Dashboard"
+				parameters: {
+					ReportYear: 2004
+				}
 			}
-		}
-	});
+		});
 ````
 
 1. Run the project and you should see the configured in the previous step report appearing in the Report Viewer. If not, check the [Troubleshooting](#Troubleshooting) section below. 

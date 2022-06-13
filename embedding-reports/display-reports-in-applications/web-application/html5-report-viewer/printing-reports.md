@@ -39,7 +39,7 @@ You can manually control the printing behavior through the [printMode]({%slug te
 
 You can also implement a custom logic for dynamically specifying the print mode. For example:
     
-````js
+````JavaScript
 // Force the viewer to always use the PDF plug-in for printing in Chrome browser.
 // In the other browsers the report document will be downloaded as a PDF file:
  var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase())
@@ -48,11 +48,9 @@ You can also implement a custom logic for dynamically specifying the print mode.
  $("#reportViewer1")
   .telerik_ReportViewer({
          serviceUrl: "../api/reports/",
-         templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
+         templateUrl: 'src/templates/telerikReportViewerTemplate-{{site.buildversion}}.html',
          reportSource: { report: "product catalog.trdp" },
          printMode: printMode
   });
 ````
-
-where x.x.x.x is the version of Telerik Reporting (e.g. 16.0.22.119).
 

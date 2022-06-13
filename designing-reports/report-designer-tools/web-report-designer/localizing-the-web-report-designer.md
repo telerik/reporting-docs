@@ -14,7 +14,7 @@ This article elaborates on how to localize the strings used and displayed by the
 
 1. __Include script containing strings__. Create a JavaScript file in your application, in a location where it can be referenced by the HTML-page/View containing the Web Report Designer initialization script. This can for example be inside the 'Scripts' folder of your website.             
 
-	{{source=CodeSnippets\WRD\WebReportDesignerStringsBase}}
+	{{source=CodeSnippets\WRD\WebReportDesignerStringsBase.js}}
  
 	>note On the last line in the file above there is a comment with 'sourceMappingURL' that is automatically included as part of the build process. This line can be removed.
 

@@ -126,8 +126,8 @@ The following steps produce an HTML page with settings similar to these of the l
     
     ````HTML
 <div id="reportViewer1" class="k-widget">
-    loading...
-</div>
+		loading...
+	</div>
 ````
 
 1. Add the following script element at the bottom of the `<body>` element and create the HTML5 Report Viewer widget for the reportViewer1 `<div>` element that we just added:

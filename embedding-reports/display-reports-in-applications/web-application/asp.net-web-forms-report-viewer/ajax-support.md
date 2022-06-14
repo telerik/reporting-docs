@@ -36,8 +36,10 @@ Add the instance of the ReportViewer to a __RadAjaxManager__ control. You can op
     </AjaxSettings>
 </telerik:RadAjaxManager>
 ````
+
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSourceOnByttonClick}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSourceOnByttonClick}}
+
 
 ## Issue Ajax Request through ASP.NET AJAX UpdatePanel
 
@@ -56,8 +58,10 @@ Wrap the instance of the ReportViewer into UpdatePanel ContentTemplate:
     </ContentTemplate>
 </asp:UpdatePanel>
 ````
+
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSourceOnByttonClick}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSourceOnByttonClick}}
+
 
 ## See Also
 

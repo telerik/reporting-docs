@@ -9,13 +9,13 @@ position: 3
 ---
 <style>
 table th:first-of-type {
-    width: 15%;
+    width: 20%;
 }
 table th:nth-of-type(2) {
     width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 75%;
+    width: 70%;
 }
 </style>
 

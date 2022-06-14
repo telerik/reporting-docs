@@ -48,7 +48,7 @@ You can also implement a custom logic for dynamically specifying the print mode.
  $("#reportViewer1")
   .telerik_ReportViewer({
          serviceUrl: "../api/reports/",
-         templateUrl: 'src/templates/telerikReportViewerTemplate-{{site.buildversion}}.html',
+         templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
          reportSource: { report: "product catalog.trdp" },
          printMode: printMode
   });

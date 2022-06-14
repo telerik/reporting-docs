@@ -21,7 +21,7 @@ The report viewer currently exposes two ways for binding event handlers to event
 $(function () {
   $("#reportViewer1").telerik_ReportViewer({
     serviceUrl: "api/reports/",
-    templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate-8.1.14.816.html',
+    templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate-{{buildversion}}.html',
     reportSource: {
         report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
     },
@@ -42,7 +42,7 @@ The report viewer passes one argument to the event handler, the Event object. Th
 
 In order to unbind from a given event you should keep reference to the event handler function and call the unbind method with this reference as an argument. 
     
-````js
+````JavaScript
 function onPageReady(e) {
   console.log("page ready");
 }
@@ -50,7 +50,7 @@ function onPageReady(e) {
 $(function () {
   $("#reportViewer1").telerik_ReportViewer({
     serviceUrl: "api/reports/",
-    templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate-8.1.14.816.html',
+    templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate-{{buildversion}}.html',
     reportSource: {
         report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
     },

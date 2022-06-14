@@ -80,18 +80,8 @@ The project has a preconfigured implementation of reports controller that uses t
 1. Invoke [RegisterRoutes](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_) at the beginning of the `Global.Application_Start (Global.asax)` method: 
 
 	{{source=CodeSnippets\MvcCS\Global.asax.cs region=ReportsControllerConfiguration_RegisterRoutes}}
-	````C#
-protected void Application_Start()
-	{
-		ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration);
-		...
-````
+	
 	{{source=CodeSnippets\MvcVB\Global.asax.vb region=ReportsControllerConfiguration_RegisterRoutes}}
-	````VB
-Sub Application_Start()
-		ReportsControllerConfiguration.RegisterRoutes(GlobalConfiguration.Configuration)
-		...
-````
 
 
 1. Run the application 

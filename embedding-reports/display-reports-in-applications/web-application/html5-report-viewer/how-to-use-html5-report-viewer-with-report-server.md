@@ -14,7 +14,7 @@ The quickest way to add a HTML5 Report Viewer to your web project is with the __
 
 ## Prerequisites
 
-1. Review the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).             
+1. Review the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}). 
 
 1. Installed and running [Telerik Report Server](https://docs.telerik.com/report-server/introduction). 
 
@@ -67,7 +67,7 @@ After finishing, the item template automatically do the following:
 Although the fastest and most convenient way to get a working HTML5 viewer in your application is to use the Visual Studio item templates, the same result can be achieved using manual configuration. 
 
 1. Follow the steps described in [HTML5 Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) article to get your HTML5 viewer working. Examine the produced HTML page and especially the section that configures the viewer: 
-    
+
     ````JavaScript
 $("#reportViewer1")
 		.telerik_ReportViewer({
@@ -94,7 +94,7 @@ reportServer: {
 
     Substitute the `yourReportServerUrl:port` with the actual url of your Report Server instance along with the port if needed. Specifying the username and password can be omitted (in this case the Report Server's Guest account will be used) or can be set to an actual account, defined in Report Server. 
 
-1. If you have modified the Telerik Report Viewer Template HTML file, you can leave the `templateUrl` option intact. Otherwise it is recommended to delete the line `templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-x.x.xx.xxx.html'`, so the template will be downloaded automatically from the server. 
+1. If you have modified the Telerik Report Viewer Template HTML file, you can leave the `templateUrl` option intact. Otherwise it is recommended to delete the line `templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html'`, so the template will be downloaded automatically from the server. 
 
 1. Locate the lines that sets the report source's report definition (it should start with `report: "...`). Replace them with the following line: `report: "{Category}/{ReportName}"`, where `{Category}` and `{ReportName}` are the actual names of the category and report that can be accessed by the Guest user or by the user you have provided login credentials for. Setup the report parameters if needed. 
 
@@ -119,6 +119,7 @@ $("#reportViewer1")
 			}
 		});
 ````
+
 
 1. Run the project and you should see the configured in the previous step report appearing in the Report Viewer. If not, check the [Troubleshooting](#Troubleshooting) section below. 
 

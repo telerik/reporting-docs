@@ -9,10 +9,10 @@ position: 5
 ---
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
@@ -22,29 +22,28 @@ Occurs after the report is exported and before the E-mail message is sent.
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __e__ |This is the [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively [jQuery's event.data](https://api.jquery.com/event.data/).<br/>e.data.sender is the report viewer that raised the event.|
 | __args__ |An object with properties:<ul><li>*handled* - prevent the default send email operation. Default value: false.</li><li>*from* - E-mail address used for the E-mail message FROM value.</li><li>*to* - E-mail address used for the E-mail message TO value.</li><li>*cc* - E-mail address used for the E-mail message Carbon Copy value.</li><li>*format* - the document format of the sent report.</li><li>*subject* - the subject of the sent E-mail message.</li><li>*body* - the content of the sent E-mail message.</li><li>*url* - the url of the sent report document as a resource.</li></ul>|
 
-
-    
-````js
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
-    },
-    sendEmailEnd: function(e, args) {
-      args.format = "XLS";
-      console.log("This event handler will be called after exporting the report.");
-      console.log("The exported report can be found at " + args.url);
-    }
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
+		},
+		sendEmailEnd: function(e, args) {
+			args.format = "XLS";
+			console.log("This event handler will be called after exporting the report.");
+			console.log("The exported report can be found at " + args.url);
+		}
+	});
 });
 ````
+
 
 ## Event Binding
 

@@ -15,17 +15,16 @@ The article elaborates how to change the default parameters editors types for vi
 The parameters editors types are defined through the Parameters element when creating the Telerik Report Viewer widget. The available parameter editors on which the type could be changed are: 
 
 The following example illustrates how to set the Parameters method to the Telerik Report Viewer widget. 
-    
-````xml
-<telerik:ReportViewer Width="" Height="" EnableAccessibility="false"
-  ID="reportViewer1"
-  runat="server">
-...
-  <Parameters>
-      <Editors SingleSelect="ComboBox" MultiSelect="ComboBox"></Editors>
-  </Parameters>
+
+````XML
+<telerik:ReportViewer EnableAccessibility="false" ID="reportViewer1" runat="server">
+	...
+	<Parameters>
+		<Editors SingleSelect="ComboBox" MultiSelect="ComboBox"></Editors>
+	</Parameters>
 </telerik:ReportViewer>
 ````
+
 
 > The Telerik Report Viewer Parameters element is optional. If it is not used, the Telerik Report Viewer will fall back to the default values. 
 

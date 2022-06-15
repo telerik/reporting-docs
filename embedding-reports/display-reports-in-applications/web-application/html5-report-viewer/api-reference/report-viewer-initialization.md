@@ -9,10 +9,10 @@ position: 0
 ---
 <style>
 table th:first-of-type {
-    width: 28%;
+	width: 28%;
 }
 table th:nth-of-type(2) {
-    width: 72%;
+	width: 72%;
 }
 </style>
 
@@ -21,7 +21,6 @@ table th:nth-of-type(2) {
 The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportViewer(options)__. Below is a list of all options available during initialization. 
 
 ## Options
-
 
 | Parameter | Description |
 | ------ | ------ |
@@ -68,24 +67,22 @@ The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportV
 | __interactiveActionEnter__ | *function(e, args);optional;* A callback function that will be called when the mouse cursor enters the area of an interactive action.|
 | __interactiveActionLeave__ | *function(e, args);optional;* A callback function that will be called when the mouse cursor leaves the area of an interactive action.|
 
-
 ## Examples
 
 To create a ReportViewer:
-    
-````js
+
+````JavaScript
 $("#reportViewer1").telerik_ReportViewer({
-  serviceUrl: "../api/reports/",
-  templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
-  reportSource: { report: "product catalog.trdp" }
+	serviceUrl: "../api/reports/",
+	templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+	reportSource: { report: "product catalog.trdp" }
 });
 ````
 
-where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 16.0.22.119).
 
 To get the __ReportViewer__ object from the HTML element: 
-    
-````js
+
+````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 ````
 

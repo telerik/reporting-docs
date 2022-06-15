@@ -9,10 +9,10 @@ position: 11
 ---
 <style>
 table th:first-of-type {
-    width: 15%;
+	width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 85%;
+	width: 85%;
 }
 </style>
 
@@ -20,24 +20,23 @@ table th:nth-of-type(2) {
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __e__ |This is the [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively [jQuery's event.data](https://api.jquery.com/event.data/).<br/>e.data.sender is the report viewer that raised the event.|
 
-
-    
-````js
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
-    },
-    updateUi: function(e) { console.log("This event handler will be called when the state of the viewer changes."); }
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
+		},
+		updateUi: function(e) { console.log("This event handler will be called when the state of the viewer changes."); }
+	});
 });
 ````
+
 
 ## Event Binding
 

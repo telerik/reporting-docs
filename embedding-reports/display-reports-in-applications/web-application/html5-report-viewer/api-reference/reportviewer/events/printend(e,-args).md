@@ -9,10 +9,10 @@ position: 8
 ---
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
@@ -22,28 +22,27 @@ Occurs after printing the report.
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __e__ |This is the [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively [jQuery's event.data](https://api.jquery.com/event.data/).<br/>e.data.sender is the report viewer that raised the event.|
 | __args__ |An object with properties:<ul><li>*url* - the url of the printed report as a resource.</li><li>*handled* - prevent the default print operation. Default value: *false*.</li></ul>|
 
-
-    
-````js
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
-    },
-    printEnd: function(e, args) {
-      console.log("This event handler will be called after printing the report.");
-      console.log("The printed report can be found at " + args.url);
-    }
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
+		},
+		printEnd: function(e, args) {
+			console.log("This event handler will be called after printing the report.");
+			console.log("The printed report can be found at " + args.url);
+		}
+	});
 });
 ````
+
 
 ## Event Binding
 

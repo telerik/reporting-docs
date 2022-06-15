@@ -9,10 +9,10 @@ position: 6
 ---
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
@@ -21,26 +21,27 @@ table th:nth-of-type(2) {
 This article explains how to attach client event handlers to an MVC ReportViewer instance. 
 
 To attach a client event handler you have to set the appropriate __ClientEvents__ widget method as shown below: 
-    
-````js
+
+````JavaScript
 <script>
-  function onRenderingBegin() {
-      console.log("rendering begin!");
-  }
-  function onRenderingEnd() {
-      console.log("rendering end!");
-  }
+	function onRenderingBegin() {
+		console.log("rendering begin!");
+	}
+	function onRenderingEnd() {
+		console.log("rendering end!");
+	}
 </script>
 ````
-````xml
+````XML
 @(Html.TelerikReporting().ReportViewer()
-     .ClientEvents(
-                events => events
-                 .RenderingBegin("onRenderingBegin")
-                 .RenderingEnd("onRenderingEnd")
-                 )
+	.ClientEvents(
+		events => events
+		.RenderingBegin("onRenderingBegin")
+		.RenderingEnd("onRenderingEnd")
+	)
 )
 ````
+
 
 The following table list the available client events: 
 

@@ -9,10 +9,10 @@ position: 4
 ---
 <style>
 table th:first-of-type {
-    width: 15%;
+	width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 85%;
+	width: 85%;
 }
 </style>
 
@@ -22,25 +22,24 @@ Occurs before the report is exported and the E-mail message is sent.
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __e__ |This is the [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively [jQuery's event.data](https://api.jquery.com/event.data/).<br/>e.data.sender is the report viewer that raised the event.|
 | __args__ |An object with properties:<ul><li>*deviceInfo* - the device info that will be used for the export document.</li><li>*handled* - prevent the default export report and send email operations. Default value: *false*.</li><li>*format* - the document format of the sent report document.</li></ul>|
 
-
-    
-````js
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
-    },
-    sendEmailBegin: function(e) { console.log("This event handler will be called before exporting the report in " + arguments.format + " and sending the E-mail message"); }
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
+		},
+		sendEmailBegin: function(e) { console.log("This event handler will be called before exporting the report in " + arguments.format + " and sending the E-mail message"); }
+	});
 });
 ````
+
 
 ## Event Binding
 

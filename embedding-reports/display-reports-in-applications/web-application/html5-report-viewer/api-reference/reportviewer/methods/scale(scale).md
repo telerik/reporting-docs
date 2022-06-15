@@ -9,10 +9,10 @@ position: 15
 ---
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
@@ -22,20 +22,17 @@ Sets the scale factor and scale mode. For more information please see jQuery.fn.
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __scale__ |object with properties:<ul><li>*scale* </li><li>*scaleMode* </li></ul>|
 
-
 Returns: the current *ReportViewer* object. 
 
-    
-````js
+````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.scale({
-scaleMode: “SPECIFIC”,
-scale: 0.75
+	scaleMode: “SPECIFIC”,
+	scale: 0.75
 });
 ````
 

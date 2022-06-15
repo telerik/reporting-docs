@@ -26,7 +26,6 @@ position: 1
 
 1. Required HTML5 compliant browser. For more information see: [Browser Support](#browser-support). 
 
-
 ## Important Settings while configuring HTML5 Report Viewer page
 
 * __The HTML5 Viewer is designed to request its HTML template, HTML5 Report Viewer widget implementation and Kendo UI widgets subset from the resources of the Reporting REST Service.__ 
@@ -41,11 +40,12 @@ position: 1
 
 * If you will not add changes in the default template, you do not have to specify the HTML template viewer option. The HTML template includes links to the HTML5 Viewer's CSS template file and icon fonts, also available through the resources of the HTML5 Viewer. For more details, check [Styling and Appearance]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%}). 
 
-* The viewer depends on the Promise object and will not load successfully if it is not available. Check  [Promises/A+](https://promisesaplus.com/). Most modern browsers have native implementation and support for this object (see Browser Compatibility at [Promise - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)). If Promise object is not detected, the viewer will try to load a Promise polyfill from  [Polyfill.io](https://polyfill.io)  as CDN:  [https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise](https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise). If the browser security does not allow dynamic script loading or the client computer has no internet access, the CDN script might fail loading. In this case, you should load a Promises/A+ JS implementation of choice into your application. For example you can load locally the same polyfill we use: 
+* The viewer depends on the Promise object and will not load successfully if it is not available. Check [Promises/A+](https://promisesaplus.com/). Most modern browsers have native implementation and support for this object (see Browser Compatibility at [Promise - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)). If Promise object is not detected, the viewer will try to load a Promise polyfill from  [Polyfill.io](https://polyfill.io)  as CDN:  [https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise](https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise). If the browser security does not allow dynamic script loading or the client computer has no internet access, the CDN script might fail loading. In this case, you should load a Promises/A+ JS implementation of choice into your application. For example you can load locally the same polyfill we use: 
 
 	````XML
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise" /script>
 ````
+
 
 If you want to make sure that there are no Internet connection problems and the CDN service cannot be reached for some reason, download the content of the JavaScript file (open [https://cdn.polyfill.io/v2/polyfill.min.js](https://cdn.polyfill.io/v2/polyfill.min.js) in the browser that does not support promise natively, for example, IE) and serve it as a local JS file. 
 

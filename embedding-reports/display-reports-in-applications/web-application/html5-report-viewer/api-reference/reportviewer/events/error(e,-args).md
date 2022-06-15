@@ -9,10 +9,10 @@ position: 1
 ---
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
@@ -27,19 +27,19 @@ Parameters:
 | __args__ |A string containing the error message.|
 
 
-    
-````js
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
-    },
-    error: function(e, args) {
-      console.log("This event handler will be called after a page of the report is ready.");
-      console.log("The error message is: " + args);
-    }
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
+		},
+		error: function(e, args) {
+			console.log("This event handler will be called after a page of the report is ready.");
+			console.log("The error message is: " + args);
+		}
+	});
 });
 ````
 

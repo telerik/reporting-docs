@@ -16,11 +16,12 @@ The `Report` item has also a list of specific properties that defines the genera
 
 ## Page Settings
 
-The [PageSettings](/api/Telerik.Reporting.Drawing.PageSettings) determine the layout of the report document in physical page formats like PDF and when printed on paper. This includes the page size, watermarks, [number of columns]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%}), etc. The Page Settings are entirely respected in physical paging formats, whereas some of them are ignored in soft paging formats. The difference is explained in the article 
-PageNumberingStyle
+The [`PageSettings`](/api/Telerik.Reporting.Drawing.PageSettings) determine the layout of the report document in physical page formats like PDF and when printed on paper. This includes the page size, watermarks, [number of columns]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%}), etc. The PageSettings are entirely respected in physical paging formats, whereas some of them are ignored in soft paging formats. The difference is explained in the article [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).
+The property [`PageNumberingStyle`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_PageNumberingStyle) is related only to [Report Book Paging]({%slug telerikreporting/designing-reports/report-book/report-book-paging%}).
 
 ## Report Parameters
 
+links to how to get them
 
 
 

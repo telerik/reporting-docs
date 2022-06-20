@@ -97,7 +97,7 @@ Since the libgdiplus library is not a perfect replacement for the Windows graphi
 
 The following JSON configuration snippet hides the Image rendering extension from the list of the available rendering extensions:
     
-````js
+````JSON
 "telerikReporting": {
   "extensions": [
     {
@@ -107,6 +107,7 @@ The following JSON configuration snippet hides the Image rendering extension fro
   ]
 }
 ````
+
 
 On the Linux machine, you also need to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) configuration element. 
 
@@ -121,6 +122,7 @@ To use .NET Core on mascOS:
 	````
 brew install mono-libgdiplus
 ````
+
 
 1. Create your .NET Core application or copy an existing one from a Windows machine.
 

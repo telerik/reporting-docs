@@ -36,3 +36,4 @@ The Telerik Reporting technical online training has an approximate duration of 2
 
 If you wish to learn more and continue with the video onboarding, [enroll in the training](https://learn.telerik.com/learn/course/external/view/elearning/38/telerik-reporting) from the [Virtual Classroom](https://learn.telerik.com/learn).
   
+  

@@ -1,6 +1,6 @@
 ---
-title: Adding the Telerik Private NuGet Feed
-page_title: Adding the Telerik Private NuGet Feed to Visual Studio 
+title: Adding the Private Telerik NuGet Feed
+page_title: Adding the Private Telerik  NuGet Feed to Visual Studio 
 description: "Get up and running with Telerik Reporting and learn how to add the Telerik private NuGet feed to Visual Studio."
 slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
 previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
@@ -11,25 +11,25 @@ position: 8
 
 # Adding the Telerik Private NuGet Feed to Visual Studio
 
-> The legacy https://nuget.telerik.com/nuget server will be deprecated. Make sure to switch to the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client. 
+> The legacy https://nuget.telerik.com/nuget server is now deprecated. Make sure you are using the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client. 
 
-Telerik provides NuGet packages from private NuGet feed. The article elaborates on how to add the Telerik NuGet feed to the Visual Studio NuGet package manager. 
+Telerik provides NuGet packages from the private Telerik NuGet feed which you can add to the Visual Studio NuGet package manager. 
 
 ## Prerequisites
 
-* Visual Studio 2010 or newer.
+* Visual Studio 2010 or later.
 
-* Valid Telerik Reporting trial or paid license.
+* Valid Telerik Reporting trial or commercial license.
 
 ## Setup
 
 1. Open Visual Studio. 
 
-1. Go to __Tools__ > __NuGet Package Manager__ > __Package Manager Settings__, select __Package Manager Sources__ and then click the __+__ button. 
+1. Go to __Tools__ > __NuGet Package Manager__ > __Package Manager Settings__, select __Package Manager Sources__ and click the __+__ button. 
 
-1. Choose feed __Name__, set the feed __URL__ to: __https://nuget.telerik.com/v3/index.json__ and click __OK__. 
+1. Choose the feed __Name__ and set the feed __URL__ to __https://nuget.telerik.com/v3/index.json__. Click __OK__. 
 	
-	>caption Figure 1: Visual Studio NuGet Package Manager and Telerik NuGet Feed: 
+	>caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed 
 
 	![nuged feed](images/nuged-feed-in-npm.png)
 
@@ -39,32 +39,32 @@ Telerik provides NuGet packages from private NuGet feed. The article elaborates 
 
 1. In the upper right-hand corner of the __Manage Packages for Solution__ window, select the Telerik __Package source__ that you just added. 
 
-1. Choose the __Online / Browse__ list of packages (depending on your VS version). 
+1. Depending on your Visual Studio version, choose the __Online__ or __Browse__ list of packages. 
 
-1. Enter your Telerik credentials in the Windows Authentication dialog (e.g., user: _my.name@my.company.com_ and password: _myPassPhraseForTelerikDotCom_). 
+1. In the Windows **Authentication** dialog, enter your Telerik credentials. For example, **user: my.name@my.company.com** and **password: myPassPhraseForTelerikDotCom**. 
 
 1. Enter your credentials only once by selecting the __Remember my password__ checkbox. 
 
-	>caption Figure 2: Enter your Telerik.com credentials to access the Telerik NuGet feed:   
+	>caption Enter your Telerik.com credentials to access the Telerik NuGet feed   
 
 	![nuget Wcredentials](images/nuget-credentials.png)
 
-1. Now all the packages that are licensed (paid or trial) to the above users are available in the Visual Studio NuGet Package manager. 
+Now all the packages that are licensed to the above users are available in the Visual Studio NuGet Package manager. 
 
 ## Setup with NuGet CLI          
 
 1. Download the latest [NuGet executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe). 
 
-1. Open a Command Prompt and change the path to the nuget.exe location. 
+1. Open a Command Prompt and change the path to the `nuget.exe` location. 
 
-1. The command from the example below stores a token in the %AppData%\NuGet\NuGet.config file. Your original credentials cannot be obtained from this token. 
+1. The command from the example below stores a token in the `%AppData%\NuGet\NuGet.config` file. Your original credentials cannot be obtained from this token. 
     
 	````powershell
 NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
 	-UserName "your login email" -Password "your password"
 ````
 
-	If you are unable to connect to the feed by using encrypted credentials, try the alternative approach of storing credentials in clear text. 
+	If you are unable to connect to the feed by using encrypted credentials, store your credentials in clear text. 
     
 	````powershell
 NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
@@ -72,7 +72,7 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/inde
 	-StorePasswordInClearText
 ````
 
-	If you have already stored a token instead of storing the credentials as clear text, you could update the definition in the %AppData%\NuGet\NuGet.config file using the following command: 
+	If you have already stored a token instead of storing the credentials as clear text, update the definition in the `%AppData%\NuGet\NuGet.config` file by using the following command: 
     
 	````powershell
 NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" ^
@@ -81,13 +81,6 @@ NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/i
 ````
 
 
-## Troubleshooting
+## See Also 
 
-**After changing my Telerik password, I get [Telerik Nuget] The V2 feed at '...' returned an unexpected status code '401 Logon failed.' error.**
-
-After changing your Telerik password, you need to reset your credentials in the NuGet.config file. To do this, open a Command Prompt and run the command: 
-    
-````powershell
-NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/index.json" -UserName "your login email" -Password "your new password"
-````
-
+* [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({% slug nuget-feed-returned-unexpected-401-status-error %})

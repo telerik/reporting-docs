@@ -8,9 +8,9 @@ published: True
 position: 3
 ---
 
-# Included Assemblies
+# Included Assemblies and Assets
 
-This article explains what assemblies are included in the [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) product installation.
+This article explains what assemblies and other assets are included in the [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) product installation.
 
 ## General Organization
 
@@ -59,6 +59,17 @@ The following table describes the folder structure for the Standalone Report Des
 | ------ | ------ |
 |`...Progress\Telerik Reporting{{site.suiteversion}}\Report Designer`|The Standalone Report Designer.|
 |`...Progress\Telerik Reporting{{site.suiteversion}}\Report Designer\Examples`|The example reports.|
+
+
+## Web Report Designer
+
+The following table describes the folder structure for the Web Report Designer files.         
+
+
+| Directory | Description |
+| ------ | ------ |
+|`...Progress\Telerik Reporting{{site.suiteversion}}\Html5\ReportDesigner\js`|The code and localization resources of the Web Report Designer.|
+|`...Progress\Telerik Reporting{{site.suiteversion}}\Html5\ReportDesigner\styles`|The CSS files for the Web Report Designer.|
 
 
 ## Report Viewer Files

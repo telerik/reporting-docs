@@ -5,7 +5,7 @@ description: "Learn more about the Telerik Reporting Report Item."
 slug: report_item
 tags: telerik, reporting, report, items, item, overview
 published: True
-position: 
+position: 0
 ---
 
 # Report Item Overview
@@ -33,21 +33,26 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
 
  * [How to Cascade Parameters with applied filtering on data source level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level%})
 
-## DataSource components
-
-The [DataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) are used to link the Report and its data items to the corresponding data sources. They contain meta information telling the Reporting engine how to access the data when needed. The DataSource components do not hold any data.
-
-For example, the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) holds the Data Provider name, the ConnectionString and the Query/Stored Procedure name to allow the Reporting engine to connect to the database and fetch the data when needed.
-
-You may get the collection of all DataSource components in the Report programmatically with the [GetDataSources method](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_GetDataSources).
-
 ## Special Settings
 
-### SkipBlankPages
+ * __SkipBlankPages__
 
-### RuntimeSettings
+	Starting with [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can tell the Reporting engine whether to ignore the pages with non-significant content through the report property [SkipBlankPages](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages). The default value is `True`.
 
-### Localizable
+	For example, the property may be kept True to remove the empty pages due to horizontal page brakes - see [Understanding Pagination - Horizontal Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}#horizontal-paging).
+
+	More details may be found in the article section [Skip Blank Pages in the Rendered Report]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}#skip-blank-pages-in-the-rendered-report).
+
+ * __RuntimeSettings__
+
+	Starting with [R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify device information settings per particular report as part of its definition, configuring the [RuntimeSettings](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_RuntimeSettings) report property.
+
+	Besides setting the export parameters for particular extension, it allows hiding it and changing its description when listed to the end-user.
+
+ * __Localizable__
+ 
+	
+
 
 ## Design Settings
 

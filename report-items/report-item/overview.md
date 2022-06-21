@@ -33,7 +33,7 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
 
  * [How to Cascade Parameters with applied filtering on data source level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level%})
 
-## Special Settings
+## Rendering and Processing Settings
 
  * __SkipBlankPages__
 
@@ -57,14 +57,30 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
 
 ## Design Settings
 
-### SnapGridSize
+ * __StyleSheet__
+ 
+	Enables you to create custom styles through a built-in styling model that is similar to CSS. You can assign these styles by using CSS selectors such as Type, Attribute, Style, and Descendent. The process is explained in details in the following articles:
 
-### UnitOfMeasure
+	+ [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
 
-### StyleSheet
+	+ [Creating Style Rules]({%slug telerikreporting/designing-reports/styling-reports/creating-style-rules%})
 
-### ExternalStyleSheets
+	+ [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
 
+	+ [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})
+
+ * __ExternalStyleSheets__
+ 
+	You can use this Report property to import styles created previously and stored in XML files. See the article [Exporting and Reusing Style Sheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}) for details.
+
+ * __UnitOfMeasure__
+ 
+	
+
+ * __SnapGridSize__
+ 
+	
+	
 ## See Also
 
 [Creating Multi-Column Reports]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%})

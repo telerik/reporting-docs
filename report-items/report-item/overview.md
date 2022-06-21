@@ -75,14 +75,26 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
 
  * __UnitOfMeasure__
  
-	
+	Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, etc. in this [UnitType](/api/Telerik.Reporting.Drawing.UnitType).
 
  * __SnapGridSize__
  
-	
-	
+	Controls the step of the `Rulers` in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#major-ui-elements-in-the-standalone-report-designer) and in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
+
 ## See Also
+
+[Page Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
+
+[Report Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%})
 
 [Creating Multi-Column Reports]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%})
 
 [How to Add Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
+
+[Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%})
+
+[Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
+
+[Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
+
+[Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%})

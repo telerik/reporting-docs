@@ -16,7 +16,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 	* the resource file that gets deployed with the installation of the product in the subfolder `Html5\ReportViewer\js\telerikReportViewer.stringResources-{{site.buildversion}}.js`, for example: 
 	
-		`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js\telerikReportViewer.stringResources-{{site.buildversion}}`
+		`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js\telerikReportViewer.stringResources-{{site.buildversion}}.js`
 	
 	* the following code snippet:
 

@@ -12,16 +12,17 @@ position: 0
 
 The `Report` report item is a special item that hosts the rest of the report items grouped in report sections. It has a special structure explained in the [Report Structure]({%slug report_structure_groups_sections%}) article. The `Report` is also a special [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and as such exposes [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report%}), [Grouping]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) and [Sorting]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-report%}).
 
-The `Report` item has also a list of specific properties that defines the general layout and functionality of the generated report documents. This article elaborates on these specifics that distinguish the `Report` from the rest of the report items.
+The `Report` item has also a list of specific properties that define the general layout and functionality of the generated report documents. This article elaborates on these specifics that distinguish the `Report` from the rest of the report items.
 
 ## Page Settings
 
-The [`PageSettings`](/api/Telerik.Reporting.Drawing.PageSettings) determine the layout of the report document in physical page formats like PDF and when printed on paper. This includes the page size, watermarks, [number of columns]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%}), etc. The PageSettings are entirely respected in physical paging formats, whereas some of them are ignored in soft paging formats. The difference is explained in the article [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).
+The [`PageSettings`](/api/Telerik.Reporting.Drawing.PageSettings) determine the layout of the report document in physical page formats like PDF and when printed on paper. This includes the page size, watermarks, [number of columns]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%}), etc. The PageSettings are entirely respected in physical/hard pagination formats, whereas some of them are ignored in soft pagination formats. The difference is explained in the article [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).
+
 The property [`PageNumberingStyle`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_PageNumberingStyle) is related only to [Report Book Paging]({%slug telerikreporting/designing-reports/report-book/report-book-paging%}).
 
 ## Report Parameters
 
-The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) are [Global Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) available all over the Report. Their main application is for filtering the reaport data. They can be used also for passing external information to the Report. More detailed information may be found in the following resources:
+The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) are [Global Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) that can be used all over the Report. Their main application is for filtering the reaport data. They can be used also for passing external information to the Report and other purposes. More detailed information may be found in the following resources:
 
  * [How to Add Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
 
@@ -34,6 +35,8 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
  * [How to Cascade Parameters with applied filtering on data source level]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level%})
 
 ## Rendering and Processing Settings
+
+The Report item exposes several properties that let you control some aspects of its processing and rendering.
 
  * __SkipBlankPages__
 
@@ -55,7 +58,9 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
 
 	> If at any point the Localizable property is set to `False` all the resource files are deleted and the report property values are filled with the currently selected language values.
 
-## Design Settings
+## Style and Design Settings
+
+These properties let you control the styling and other design-time related processes.
 
  * __StyleSheet__
  
@@ -71,7 +76,7 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
 
  * __ExternalStyleSheets__
  
-	You can use this Report property to import styles created previously and stored in XML files. See the article [Exporting and Reusing Style Sheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}) for details.
+	You can use this Report property to import StyleSheets created previously and stored in XML files. See the article [Exporting and Reusing Style Sheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}) for details.
 
  * __UnitOfMeasure__
  

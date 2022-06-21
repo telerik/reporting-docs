@@ -51,8 +51,9 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
 
  * __Localizable__
  
-	
+	Set the property `Localizable` to `True` to start localizing the report. The localization procedure is explained in the article [Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%}).
 
+	> If at any point the Localizable property is set to `False` all the resource files are deleted and the report property values are filled with the currently selected language values.
 
 ## Design Settings
 
@@ -67,3 +68,5 @@ The [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-
 ## See Also
 
 [Creating Multi-Column Reports]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%})
+
+[How to Add Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})

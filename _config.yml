@@ -440,7 +440,7 @@ defaults:
 # "foo": "Bar"
 suiteversion: "R2 2022"
 kendosubsetversion: "2022.1.301"
-buildversion: "16.1.22.511"
+buildversion: "16.1.22.622"
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'

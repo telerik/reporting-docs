@@ -32,7 +32,7 @@ This article explains the steps needed to create an application which uses the S
 	
 	The Silverlight ReportViewer is build with the latest official release of Telerik UI for Silverlight. In this way we provide trouble free upgrade for most of the users. This means that you can use the latest version of Telerik UI for Silverlight in your project and report viewer. 
 
-   >The files part of Telerik Reporting are the _Telerik.ReportViewer.Silverlight.dll_ and _Telerik.ReportViewer.Silverlight.xaml_. The rest DLLs and XAML resources must be updated from Telerik UI for Silverlight product folder. 
+	>The files part of Telerik Reporting are the _Telerik.ReportViewer.Silverlight.dll_ and _Telerik.ReportViewer.Silverlight.xaml_. The rest DLLs and XAML resources must be updated from Telerik UI for Silverlight product folder. 
 
 1. Add the following xaml files, required for the implicit styling of the report viewer: 
 
@@ -47,7 +47,7 @@ This article explains the steps needed to create an application which uses the S
 	+ *Telerik.ReportViewer.Silverlight.xaml* The Telerik UI for Silverlight xaml files are located in _C:\Program Files (x86)\Progress\Reporting {{site.suiteversion}}\Silverlight\Themes_. 
 
 1. The next step is to merge these ResourceDictionaries in the App.xaml file:
-    
+
 	````XML
 <Application x:Class="SilverlightApplication1.App"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -95,25 +95,9 @@ This article explains the steps needed to create an application which uses the S
 	
 	Review [How to use the Report Wizard to create a Band Report]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/how-to-use-the-report-wizard-to-create-a-band-report%}) topic for information on creating a __Telerik Report__. 
 	
-	The _MainPage.xaml_ should look similar:             
+	The _MainPage.xaml_ should look similar: 
 
 {{source=CodeSnippets\SilverlightCS\API\Telerik\ReportViewer\Silverlight\MainPage.xaml}}
-````XML
-<UserControl x:Class="Telerik.Reporting.CodeSnippets.SilverlightCS.API.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:telerik="clr-namespace:Telerik.ReportViewer.Silverlight;assembly=Telerik.ReportViewer.Silverlight">
-
-    <Grid x:Name="LayoutRoot">
-            <telerik:ReportViewer  x:Name="ReportViewer1" Width="1000"
-              ReportServiceUri="../ReportService.svc"
-              Report="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-            </telerik:ReportViewer>
-  </Grid>
-</UserControl>
-````
 
 
 ## See Also

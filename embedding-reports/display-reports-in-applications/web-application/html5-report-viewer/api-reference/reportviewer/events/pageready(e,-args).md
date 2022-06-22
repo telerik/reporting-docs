@@ -9,10 +9,10 @@ position: 6
 ---
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
@@ -22,28 +22,27 @@ Occurs after a page of the report is ready.
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __e__ |This is the  [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively  [jQuery's event.data](https://api.jquery.com/event.data/).<br/>e.data.sender is the report viewer that raised the event.|
 | __args__ |An object with properties:<ul><li>*pageContent* - the page content of the rendered report as a resource.</li></ul>|
 
-
-    
-````js
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
-    },
-    pageReady: function(e, args) {
-      console.log("This event handler will be called after a page of the report is ready.");
-      console.log("The content of the page is: " + args.pageContent);
-    }
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
+		},
+		pageReady: function(e, args) {
+			console.log("This event handler will be called after a page of the report is ready.");
+			console.log("The content of the page is: " + args.pageContent);
+		}
+	});
 });
 ````
+
 
 ## Event Binding
 

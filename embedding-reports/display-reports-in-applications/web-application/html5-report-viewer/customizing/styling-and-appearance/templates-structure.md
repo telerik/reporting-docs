@@ -16,9 +16,7 @@ By default the HTML5 Report Viewer does not have any content; instead the entire
 
 All report viewer templates are supplied by a single page markup:
 
-* __ReportViewer/templates/telerikReportViewerTemplate-x.x.x.x.html__ 
-
-where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (ex. 8.1.14.618).
+* __ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html__
 
 The templates are recognized by well-known identifiers supplied by the __id__ attribute. These  templates are: 
 

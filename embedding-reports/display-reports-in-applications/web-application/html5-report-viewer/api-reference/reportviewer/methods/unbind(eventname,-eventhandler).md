@@ -12,13 +12,14 @@ position: 17
 
 Unbinds event handlers from the specified event. 
 
-    
-````js
+````JavaScript
 function onPageReady(e) {
-  console.log('page ready!');
+	console.log('page ready!');
 }
+
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.bind(telerikReportViewer.Events.PAGE_READY, onPageReady);
+
 // later
 reportViewer.unbind(telerikReportViewer.Events.PAGE_READY, onPageReady);
 ````

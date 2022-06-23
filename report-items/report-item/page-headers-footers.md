@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/how-to/how-to-add-remo
 previous_url: /report-items/how-to/how-to-add-remove-page-header---footer-sections
 tags: telerik, reporting, report, items, item, page, header, footer, section
 published: True
-position: 2
+position: 3
 ---
 
 # Page Headers and Footers 

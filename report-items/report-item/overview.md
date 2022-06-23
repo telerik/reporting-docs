@@ -10,9 +10,13 @@ position: 0
 
 # Report Item Overview
 
-The `Report` report item is a special item that hosts the rest of the report items grouped in report sections. It has a unique structure explained in the [Report Structure]({%slug report_structure_groups_sections%}) article.
+The `Report` report item is a special item that hosts the rest of the report items grouped in report sections. 
 
-The `Report` is also a [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and as such exposes [Filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report%}), [Grouping]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) and [Sorting]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-report%}).
+The `Report` is a special [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and as such exposes [filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report%}), [grouping]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}), and [sorting]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/how-to-add-sorting-to-report%}).
+
+For more information on the specific structure of the Report item, refer to the article about the [report structure]({%slug report_structure_groups_sections%}). 
+
+The `Report` item provides specific properties that define the general layout and functionality of the generated report documents. 
 
 The `Report` item contains a list of specific properties that control the design-time and run-time behavior as well as the general layout and functionality of the generated report documents. Lets elaborate on these specifics that distinguish the `Report` from the rest of the report items.
 

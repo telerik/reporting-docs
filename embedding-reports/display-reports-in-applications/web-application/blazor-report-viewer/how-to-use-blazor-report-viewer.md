@@ -112,3 +112,5 @@ Alternatively you can use the [Kendo UI Less-Based Themes](https://docs.telerik.
 1. Use the rest of the parameters exposed on the Blazor viewer component to setup its appearance and behavior as desired. 
 
 1. Finally, run the project to see the rendered report. 
+
+Learn more about Blazor Reporting [here](https://docs.telerik.com/blazor-ui/integrations/reporting).

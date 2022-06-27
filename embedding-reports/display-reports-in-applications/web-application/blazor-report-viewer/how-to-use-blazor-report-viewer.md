@@ -113,4 +113,4 @@ Alternatively you can use the [Kendo UI Less-Based Themes](https://docs.telerik.
 
 1. Finally, run the project to see the rendered report. 
 
-Learn more about Blazor Reporting [here](https://docs.telerik.com/blazor-ui/integrations/reporting).
+Learn more about Blazor Reporting in [Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting) documentation article.

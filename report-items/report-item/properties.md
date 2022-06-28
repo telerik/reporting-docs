@@ -72,7 +72,7 @@ The Report item exposes a set of properties that allow you to control styling an
 
 * `ExternalStyleSheets`&mdash;Imports StyleSheets previously created and stored in XML files. For more information, refer to the article on [exporting and reusing stylesheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}).
 
-* `UnitOfMeasure`&mdash;Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, and so on in this [`UnitType`](/api/Telerik.Reporting.Drawing.UnitType).
+* `UnitOfMeasure`&mdash;Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, and so on in this [`UnitType`](/api/Telerik.Reporting.Drawing.UnitType). For new reports, the unit of measure is automatically determined based on the machine's regional settings - if the current machine uses metric culture, the default unit of measure will be set to *cm*, otherwise - *inch*.
 
 * `SnapGridSize`&mdash;Controls the step of the `Rulers` in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#major-ui-elements-in-the-standalone-report-designer) and in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
 

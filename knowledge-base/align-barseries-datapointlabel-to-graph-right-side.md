@@ -35,4 +35,6 @@ The [property DataPointLabelOffset](/api/Telerik.Reporting.BarSeries#collapsible
 
  + Set `DataPointLabelConnectorStyle.Visible` to `False`.
 
+## See Also
+
 A sample may be found in our GitHub Repository - [BarSeriesDataPointLabelAlignment.trdp](./resources/BarSeriesDataPointLabelAlignment.trdp)

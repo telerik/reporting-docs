@@ -35,4 +35,4 @@ The property DataPointLabelOffset can move the label with a hard-coded value rig
 
  + Set __DataPointLabelConnectorStyle.Visible__ to __False__.
 
-A sample may be found in our GitHub Repository - [BarSeriesDataPointLabelAlignment.trdp](/resources/BarSeriesDataPointLabelAlignment.trdp)
+A sample may be found in our GitHub Repository - [BarSeriesDataPointLabelAlignment.trdp](./resources/BarSeriesDataPointLabelAlignment.trdp)

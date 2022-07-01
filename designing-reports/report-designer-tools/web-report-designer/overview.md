@@ -30,7 +30,7 @@ The Web Report Designer consists of the following areas:
 
 * __Explorer__ - represents the report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties. 
 
-* __Asset Manager__ - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
+* __Assets Manager__ - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
 
 * __Search__ - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item or change a property value with just a few keystrokes.
 

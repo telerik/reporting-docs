@@ -21,45 +21,45 @@ table th:nth-of-type(3) {
 
 # Windows Forms Application Overview
 
-The Windows Forms Report Viewer is designed to render Telerik __Reports__ within Windows Forms projects. 
+The  purpose of the Windows Forms ReportViewer control is to display Telerik Reports embedded in a WinForms application and allow the user to interact with them. 
 
-  ![](images/WinFormsViewer.png)
+  ![WinForms report Viewer general look](images/WinFormsViewer.png)
 
-The toolbar on the Windows Forms Report Viewer provides basic functionality for interacting with the currently-loaded report:
+The possible interactions with the currently loaded report are exposed to the user as buttons and inputs in the dedicated toolbar:
 
-* Navigate back in history
+* __Navigate back in history__ navigates to a previous report after a Navigate to report interactive action has been triggered 
 
-* Navigate forward in history
+* __Navigate forward in history__ navigates to a forward report after Navigate back has been used
 
-* Stop loading (useful when a large report is taking a long time to load) 
+* __Stop__ cancels the loading of the current report if the chosen parameters make it too heavy 
 
-* Refresh
+* __Refresh__ updates the current report with fresh data
 
-* Go to first page
+* __First page__ displays the respective page of the current report
 
-* Go to previous page
+* __Previous page__ displays the respective page of the current report
 
-* Go to a specific page
+* __Current page__ input allows tracking the number of the displayed page and also displaying particular page by entering its number
 
-* Total number of pages
+* __Total pages__ shows the count of the pages that the curren report consists of
 
-* Go to next page
+* __Next page__ displays the respective page of the current report
 
-* Go to last page
+* __Go to last page__ displays the respective page of the current report
 
-* Page Setup (set paper kind, orientation, margins)
+* __Page Setup...__ opens a dialog to set up the paper size, orientation, margins of the current report and on closing the dialog refreshes the report to match the preferences
 
-* Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info. 
+* __Switch to Print Preview__ switches the report view between the __Logical__ and __Physical__. The former one provides best on-screen preview experience and the latter one provides exact preview of eventual print operation. 
 
-* Print
+* __Print__ initiates a printing of the current report
 
-* Export: see [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) for available export formats. 
+* __Export__ initiates an export operation. See [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) for available export formats. 
 
-* Zoom level
+* __Zoom__
 
-* Show/Hide parameters area
+* __Show/Hide parameters area__
 
-* Show/Hide document map
+* __Show/Hide document map__
 
 ## System Requirements
 
@@ -77,7 +77,10 @@ The Windows Forms ReportViewer control is a composite of standard Windows Forms 
 
 > The Windows Forms ReportViewer control's toolbar is immutable. To build custom UI for the toolbar and work with the rendered report in the viewer, you can use the Windows Forms [ReportViewer](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer). 
 
-The purpose of the Windows Forms ReportViewer control is to display Telerik Reports and allow the user to interact with them. Reports are processed and rendered on the client machine. The report in the viewer is rendered through Telerik Reporting IMAGE rendering mechanism based on the [Design Considerations for Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}). 
+Depending on the viewer's configuration the report pages are generated as vector or raster images using the [Telerik Reporting Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}). The processing and rendering of the report might be performed:
+* on the client machine with report generation engine embedded in the desktop application,
+* on a server machine with report generation engine embedded in a web application and exposed as [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}),
+* on a [Telerik Report Server](http://www.telerik.com/report-server) instance.
 
 ## Declaring the application as DPI-aware
 
@@ -125,3 +128,4 @@ The following table lists the keyboard and mouse commands used in Windows Forms 
 * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%})
 
 * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
+* [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%})

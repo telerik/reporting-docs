@@ -18,19 +18,19 @@ Web Report Designer enables you to upload such resources to the server and reuse
 ## Assets manager
 
 The Assets Manager is opened from the main menu of the designer and is the tool that is used to organize all the resources on the server.
-The resources can be uploaded as files from the file system and then can be moved, renamed, organized into folders, and deleted as needed.
+The resources can be uploaded as files from the file system and then can be renamed, organized into folders, and deleted as needed.
 Any file can be downloaded on the file system as well when needed outside of the product.
 
-The container folders can be organized as well by creating, moving, renaming, and even deleting.
+The container folders can be organized as well by creating, renaming, and deleting them.
 
 The Assets Manager displays the resources of the currently selected folder as big icons but can also be switched to display them in a grid view
 with columns that give additional details for each resource. Details can also be displayed using a dedicated details panel switched on from the 
 __View Details__ toggle in the top-right of the tool.
 
-Besides the convenience of keeping the resources on the server the other benefit of keeping the resources on the server instead of inline
-into the report definition is that once uploaded the resources can be reused from multiple reports, 
-this way making them easily accessible and also making it extremely easy to maintain the design language of your reports 
-the same when the company logo gets renewed or the company colors and fonts get a refreshment.
+The primary benefit of using the Assets manager is to keep all needed resources in one place, on the server.
+The other benefit is that, once uploaded, the resources may be reused from multiple reports. 
+This makes it easy to maintain the design language of the reports the same when the company logo gets renewed, 
+or the company colors or fonts get a refreshment.
 
 ### Resource files organization 
 All stored resources reside in the __Assets__ root folder of the Assets Manager. By default, there are three subfolders 
@@ -39,12 +39,12 @@ of the Assets folder initially created by the Web Report Designer to organize yo
 [CSV]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard%}), 
 [JSON]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/jsondatasource-wizard%}),
 and [shape file used in a Map item]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%});
-* __Images__ - to contain all the images referenced in [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%})-es and backgrounds;
+* __Images__ - to contain all the images referenced in [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%})-es, backgrounds, etc.;
 * __Styles__ - to contain all the style sheets that can be used to achieve 
 [common stylization]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) of your reports.
 
 These predefined folders cannot be renamed and deleted from the end-users. However, the developer implementing the Web Report Designer 
-can configure different predefined folders on the backend as needed. The end-users can only crate and manage the subfolders of those predefined folders.
+can configure different predefined folders on the backend as needed. The end-users can only create and manage the subfolders of those predefined folders.
 
 ### Reports organization
 The available reports on the server are listed in the Assets Manager as well. They reside in a dedicated __Reports__ root folder

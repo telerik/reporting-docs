@@ -41,13 +41,13 @@ For security reasons the ObjectDataSource can resolve only types that are declar
 
    1. Open the project folder of the Class Library -> __bin__ -> __Debug__ and copy the dll file. 
 
-   1. Paste it at the installation folder of the Report designer (C:\Program Files (x86)\Progress\Telerik Reporting __[Version]__ \Report Designer). 
+   1. Paste it at the installation folder of the Report designer `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`. 
 
    1. Open Telerik.ReportDesigner.exe.config file with a text editor. 
 
    1. Add an [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) in __Telerik.Reporting__ section of application configuration file: 
     
-      ````xml
+      ````XML
 <?xml version="1.0"?>
 <configuration>
     <configSections>
@@ -81,4 +81,4 @@ The additional attributes like __version__, __culture__ and __publicKeyToken__ a
 
 ## Sample
 
-Sample report that uses Object DataSource can be found at the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting __{Version}__ \Examples\CSharp\ReportLibrary\DataBinding
+Sample report that uses Object DataSource can be found at the installation folder of Telerik Reporting `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET Framework\ReportLibrary\DataBinding`

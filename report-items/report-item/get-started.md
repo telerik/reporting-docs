@@ -10,14 +10,20 @@ position: 1
 
 # Getting Started with the Report Item
 
-This guide shows how to create and use the Telerik Reporting Report item in reports. 
+This guide shows how to create and use the Telerik Reporting Report item in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
 
-* First, you will create the new Report item and add the required sections 
-* Then, you will configure the PageSettings that define the Printing properties as paper type and size, Watermarks, etc. 
-* Next, you will add a simple CsvDataSource feeding the report with data 
+* First, you will create the new Report item and add the required sections
+
+* Then, you will configure the PageSettings that define the Printing properties as paper type and size, Watermarks, etc.
+
+* Next, you will add a simple CsvDataSource feeding the report with data
+
 * You will also add Paging information in the Page Sections
+
 * You will add some aggregate information in the Report Header and Footer sections
+
 * Finally, you will style the Report
+
 
 At the end, you will be able to achieve the following result. 
 
@@ -25,6 +31,7 @@ At the end, you will be able to achieve the following result.
 
 ## Adding the Report Item with the Needed Sections
 
+Start the Standalone Report Designer executable and add a new report
 
 ## Specifying the Page Settings 
 

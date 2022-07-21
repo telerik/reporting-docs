@@ -15,39 +15,6 @@ This guide shows how to create and use the Telerik Reporting Barcode report item
 * First, you will specify the type of the Barcode report item, configure its settings, and encode its value. 
 * Then, you will set the width of the Barcode elements and elaborate on the appearance of the report item.   
 
-At the end, you will be able to achieve the following result. 
-
-{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Common_Settings}}
-````cs
-var encoder = new Telerik.Reporting.Barcodes.Code128AEncoder();
-
-// Set any specific encoder settings...
-encoder.ShowText = false; // The default value is true.
-
-this.barcode1.Encoder = encoder;
-this.barcode1.Angle = 90;
-this.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
-this.barcode1.Checksum = true;
-this.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3);
-this.barcode1.Stretch = false;
-this.barcode1.Value = "1234567890";
-````
-{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Common_Settings}}
-````vbnet
-Dim encoder = New Telerik.Reporting.Barcodes.Code128AEncoder()
-
-' Set any specific encoder settings...
-encoder.ShowText = False 'The default value is True
-
-Me.barcode1.Encoder = encoder
-Me.barcode1.Angle = 90
-Me.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left
-Me.barcode1.Checksum = True
-Me.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3)
-Me.barcode1.Stretch = False
-Me.barcode1.Value = "1234567890"
-````
-
 ## Specifying the Barcode 
 
 1. To specify the type of the Barcode, use the [`Encoder`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder) property. After setting the desired encoder, you can further adjust the specific settings you require. 
@@ -85,14 +52,19 @@ Me.barcode1.Value = "1234567890"
   Note that some symbologies either do not provide a checksum or the checksum is part of the symbology specification. In these cases, `Checksum` will have no effect. 
 
 
+## You may configure the Barcode settings also with code:
+
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Common_Settings}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Common_Settings}}
+
 
 ## See Also
  
-* [`Telerik.Reporting.Barcode`](/reporting/api/Telerik.Reporting.Barcode)  
-* [`Encoder`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)  
-* [`Value`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  
-* [`Module`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module)  
-* [`Stretch`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch)  
-* [`BarAlign`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign)  
-* [`Angle`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle)  
-* [`Checksum`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum)
+* [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  
+* [Encoder](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)  
+* [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  
+* [Module](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module)  
+* [Stretch](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch)  
+* [BarAlign](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign)  
+* [Angle](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle)  
+* [Checksum](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum)

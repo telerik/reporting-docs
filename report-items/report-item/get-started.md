@@ -12,51 +12,27 @@ position: 1
 
 This guide shows how to create and use the Telerik Reporting Report item in reports. 
 
-* First, you will specify the Report item and ... 
-* Then, you will ...   
-* Next, ...
+* First, you will create the new Report item and add the required sections 
+* Then, you will configure the PageSettings that define the Printing properties as paper type and size, Watermarks, etc. 
+* Next, you will add a simple CsvDataSource feeding the report with data 
+* You will also add Paging information in the Page Sections
+* You will add some aggregate information in the Report Header and Footer sections
+* Finally, you will style the Report
 
 At the end, you will be able to achieve the following result. 
 
-{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Common_Settings}}
-````cs
-var encoder = new Telerik.Reporting.Barcodes.Code128AEncoder();
-
-// Set any specific encoder settings...
-encoder.ShowText = false; // The default value is true.
-
-this.barcode1.Encoder = encoder;
-this.barcode1.Angle = 90;
-this.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
-this.barcode1.Checksum = true;
-this.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3);
-this.barcode1.Stretch = false;
-this.barcode1.Value = "1234567890";
-````
-{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Common_Settings}}
-````vbnet
-Dim encoder = New Telerik.Reporting.Barcodes.Code128AEncoder()
-
-' Set any specific encoder settings...
-encoder.ShowText = False 'The default value is True
-
-Me.barcode1.Encoder = encoder
-Me.barcode1.Angle = 90
-Me.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left
-Me.barcode1.Checksum = True
-Me.barcode1.Module = Telerik.Reporting.Drawing.Unit.Point(3)
-Me.barcode1.Stretch = False
-Me.barcode1.Value = "1234567890"
-````
-
-## Specifying the Report Item 
 
 
-## Adding Paging 
+## Adding the Report Item with the Needed Sections
 
 
-## Setting the Appearance  
+## Specifying the Page Settings 
 
+
+## Displaying Actual Data in the Report
+
+
+## Styling the Report
 
 
 ## See Also

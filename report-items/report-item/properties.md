@@ -50,7 +50,7 @@ The Report item exposes a set of properties that allow you to control some aspec
 
   Apart from setting the export parameters for a particular extension, `RuntimeSettings` allows you to hide it and change its description when listed to the end-user.
 
-* `Localizable`&mdash;Tp start localizing the report, set the `Localizable` property to `True`. For more information about the localization procedure, refer to the article on [localizing reports]({%slug telerikreporting/designing-reports/localizing-reports%}).
+* `Localizable`&mdash;To start localizing the report, set the `Localizable` property to `True`. For more information about the localization procedure, refer to the article on [localizing reports]({%slug telerikreporting/designing-reports/localizing-reports%}).
 
   > If at any point the `Localizable` property is set to `False`, all resource files are deleted and the report property values are filled with the currently selected language values.
 

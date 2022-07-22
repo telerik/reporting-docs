@@ -13,8 +13,13 @@ position: 1
 This guide shows how to create and use the Telerik Reporting Barcode report item in reports. 
 
 * First, you will specify the type of the Barcode report item, configure its settings, and encode its value. 
-* Then, you will set the width of the Barcode elements and elaborate on the appearance of the report item.   
+* Then, you will set the width of the Barcode elements and elaborate on the appearance of the report item.  
 
+After the completion of this guide, you will also be able to configure the Barcode with code and achieve the following result. 
+
+{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Common_Settings}}
+{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Common_Settings}}
+ 
 ## Specifying the Barcode 
 
 1. To specify the type of the Barcode, use the [`Encoder`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder) property. After setting the desired encoder, you can further adjust the specific settings you require. 
@@ -52,19 +57,13 @@ This guide shows how to create and use the Telerik Reporting Barcode report item
   Note that some symbologies either do not provide a checksum or the checksum is part of the symbology specification. In these cases, `Checksum` will have no effect. 
 
 
-## You may configure the Barcode settings also with code:
-
-{{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Common_Settings}}
-{{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Common_Settings}}
-
-
 ## See Also
  
-* [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)  
-* [Encoder](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)  
-* [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  
-* [Module](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module)  
-* [Stretch](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch)  
-* [BarAlign](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign)  
-* [Angle](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle)  
-* [Checksum](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum)
+* [`Telerik.Reporting.Barcode`](/reporting/api/Telerik.Reporting.Barcode)  
+* [`Encoder`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)  
+* [`Value`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)  
+* [`Module`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module)  
+* [`Stretch`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch)  
+* [`BarAlign`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign)  
+* [`Angle`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle)  
+* [`Checksum`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum)

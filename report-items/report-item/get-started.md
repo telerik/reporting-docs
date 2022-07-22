@@ -12,18 +12,11 @@ position: 1
 
 This guide shows how to create and use the Telerik Reporting Report item in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
 
-* First, you will create the new Report item and add the required sections
-
-* Then, you will configure the PageSettings that define the Printing properties as paper type and size, Watermarks, etc.
-
-* Next, you will add a simple CsvDataSource feeding the report with data
-
-* You will also add Paging information in the Page Sections
-
-* You will add some aggregate information in the Report Header and Footer sections
-
-* Finally, you will style the Report
-
+* First, you will create the new Report item and add the required sections.
+* Then, you will configure the page settings that define the printing properties such as the paper type, size, Watermarks, and so on.
+* Next, you will add a simple `CsvDataSource` feeding with data to the report. 
+* Following, you will add some paging information to the page sections and sample aggregate information to the header and footer sections of the report.
+* Finally, you will style the appearance of the report. 
 
 At the end, you will be able to achieve the following result. 
 

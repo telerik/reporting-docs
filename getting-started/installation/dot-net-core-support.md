@@ -11,7 +11,7 @@ position: 7
 
 # .NET Core Support
 
-Starting with version `[R1 2019 (13.0.19.116)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116)` Telerik Reporting provides a set of assemblies and NuGet packages that are designed for .NET Core projects and enable you to use Telerik reports in .NET Core applications on Windows, Linux, and macOS platforms. 
+Starting with version [`R1 2019 (13.0.19.116)`](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116) Telerik Reporting provides a set of assemblies and NuGet packages that are designed for .NET Core projects and enable you to use Telerik reports in .NET Core applications on Windows, Linux, and macOS platforms. 
 
 The NuGet packages are available in the [Telerik NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). Additionally, the assemblies are available in the `\Bin\netstandard2.0\` and `\Bin\netcoreapp3.1\` folders located in the Telerik Reporting installation directory. 
 

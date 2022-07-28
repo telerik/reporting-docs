@@ -83,4 +83,5 @@ NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/i
 
 ## See Also 
 
+* [Restoring NuGet Packages in Your CI Workflow]({% slug using-nuget-keys %})
 * [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({% slug nuget-feed-returned-unexpected-401-status-error %})

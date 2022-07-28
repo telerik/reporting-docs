@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/third-party-dependencies
 previous_url: /using-reports-in-applications/third-party-dependencies
 tags: third-party,dependencies
 published: True
-position: 9
+position: 20
 ---
 
 # Third-Party Dependencies

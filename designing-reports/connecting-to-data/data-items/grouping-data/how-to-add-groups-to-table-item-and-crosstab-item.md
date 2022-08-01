@@ -178,41 +178,7 @@ A new details group is added as a child group in the Grouping pane in the [Group
 ## Adding a group to Table data item programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\TableSnippets.cs region=AddNewGroupSnippet}}
-````C#
-Telerik.Reporting.TableGroup group1 = new Telerik.Reporting.TableGroup();
-group1.Name = "ProductID1";
-group1.Groupings.Add(new Telerik.Reporting.Grouping("=Fields.ProductID"));
-
-// If you need to filter the members of the group, apply filtering
-group1.Filters.Add(new Telerik.Reporting.Filter("=Fields.ProductID", Telerik.Reporting.FilterOperator.Equal, "=10"));
-
-// If you need to order the members of the group, apply sorting
-group1.Sortings.Add(new Telerik.Reporting.Sorting("=Fields.ProductID", Telerik.Reporting.SortDirection.Asc));
-
-Telerik.Reporting.TextBox textBox1 = new Telerik.Reporting.TextBox();
-table1.Items.Add(textBox1);
-group1.ReportItem = textBox1;
-
-table1.RowGroups.Add(group1);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\TableSnippets.vb region=AddNewGroupSnippet}}
-````VB
-Dim group1 As New Telerik.Reporting.TableGroup()
-group1.Name = "RowGroup1"
-group1.Groupings.Add(New Telerik.Reporting.Grouping("=Fields.ProductID"))
-
-' If you need to filter the members of the group, apply filtering
-group1.Filters.Add(New Telerik.Reporting.Filter("=Fields.ProductID", Telerik.Reporting.FilterOperator.Equal, "=10"))
-
-' If you need to order the members of the group, apply sorting
-group1.Sortings.Add(New Telerik.Reporting.Sorting("=Fields.ProductID", Telerik.Reporting.SortDirection.Asc))
-
-Dim textBox1 As New Telerik.Reporting.TextBox()
-table1.Items.Add(textBox1)
-group1.ReportItem = textBox1
-
-table1.RowGroups.Add(group1)
-````
 
 ## See Also
  

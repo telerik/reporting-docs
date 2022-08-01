@@ -21,31 +21,5 @@ The __Report__ object exposes these events:
 The example below shows the NeedDataSource event assigning the report __DataSource__ at runtime. This event only fires when the __DataSource__ is __null__. 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportEvents.cs region=NeedDataSourceEventHandlerSnippet}}
-````C#
-void report_NeedDataSource(object sender, EventArgs e)
-{
-    Telerik.Reporting.Processing.Report processingReport = (Telerik.Reporting.Processing.Report)sender;
-    object processingParameterValue = processingReport.Parameters["parameter1"].Value;
-    processingReport.DataSource = GetData(processingParameterValue);
-}
-
-static object GetData(object value)
-{
-    // Implement your custom data retrieval logic instead
-    return new string[] { "Sofia", "London", "Tokyo" };
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportEvents.vb region=NeedDataSourceEventHandlerSnippet}}
-````VB
-Private Sub report_NeedDataSource(sender As Object, e As EventArgs)
-    Dim processingReport As Telerik.Reporting.Processing.Report = DirectCast(sender, Telerik.Reporting.Processing.Report)
-    Dim processingParameterValue As Object = processingReport.Parameters("parameter1").Value
-    processingReport.DataSource = GetData(processingParameterValue)
-End Sub
-
-Private Shared Function GetData(value As Object) As Object
-    ' Implement your custom data retrieval logic instead
-    Return New String() {"Sofia", "London", "Tokyo"}
-End Function
-````
 

@@ -21,7 +21,7 @@ When used in the context of data item (table, subreport, grapth and etc.) expres
 The DataObject implements [IDataObject](/reporting/api/Telerik.Reporting.Processing.IDataObject) interface which defines the RawData property. This property is the actual data object that is being wrapped by the IDataObject and referring to DataObject, we actually refer to its RawData values. Thus to get the actual data object you can work with __ReportItem.DataObject.RawData__. The __RawData__  object exposes all properties and methods of the data object's type. 
 
 For example: 
-    
+
 ````C#
 public class Phone
  {
@@ -70,7 +70,7 @@ When complicated logic should be applied or.NET framework routines need to be ut
 1. Add an SqlDataSource connected to __AdventureWorks__ sample database and set it as a report's datasource.
 
 1. Put the following text in the SqlDataSource's SelectCommand value:
-    
+
 	````SQL
 select Contact.*
 	from Person.Contact
@@ -88,35 +88,13 @@ select Contact.*
 1. Switch to code window and place the following code snippet:
 
 	{{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.cs region=ReportItemDataObjectGetContactInfo}}
-	````C#
-public static string GetContactInfo(object sender)
-	{
-		var dataObject = (Telerik.Reporting.Processing.IDataObject)sender;
-		var contactInfo = dataObject["AdditionalContactInfo"] as string;
-		var xDoc = System.Xml.Linq.XDocument.Parse(contactInfo);
-		var telephones = xDoc.Root
-						 .Elements()
-						 .Where(elem => elem.Name.LocalName == "telephoneNumber")
-						 .Select(elem => elem.Value);
-		return string.Format("{0}{1}'s telephones: {2}", dataObject["Title"], dataObject["LastName"], string.Join("; ", telephones));
-	}
-````
-{{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.vb region=ReportItemDataObjectGetContactInfo}}
-	````VB
-Public Shared Function GetContactInfo(sender As Object) As String
-		Dim dataObject = DirectCast(sender, Telerik.Reporting.Processing.IDataObject)
-		Dim contactInfo = TryCast(dataObject("AdditionalContactInfo"), String)
-		Dim xDoc = System.Xml.Linq.XDocument.Parse(contactInfo)
-		Dim telephones = xDoc.Root.Elements().Where(Function(elem) elem.Name.LocalName = "telephoneNumber").[Select](Function(elem) elem.Value)
-		Return String.Format("{0}{1}'s telephones: {2}", dataObject("Title"), dataObject("LastName"), String.Join("; ", telephones))
-	End Function
-````
+	{{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\ReportItemDataObjectSnippets.vb region=ReportItemDataObjectGetContactInfo}}
 
-   In this step we process the passed data argument as IDataObject, retrieving the fields by name.
+	In this step we process the passed data argument as IDataObject, retrieving the fields by name.
 
 1. Rebuild your project.
 
-1. Set the second textbox's expression to the user defined function you created in __step 6__  and pass the __ReportItem.DataObject__ as its argument. The function name is __YourNamespace.GetContactInfo(data)__, so your expression should look like this:
+1. Set the second textbox's expression to the user defined function you created in __step 6__ and pass the __ReportItem.DataObject__ as its argument. The function name is __YourNamespace.GetContactInfo(data)__, so your expression should look like this:
 
 	````
 = YourNamespace.GetContactInfo(ReportItem.DataObject)
@@ -137,7 +115,7 @@ The following screenshot shows the expected report output that should be created
 1. Create or open an existing report.
 
 1. Add an SqlDataSource as a report's DataSource and set its SelectCommand property to:
-    
+
 	````SQL
 select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.SafetyStockLevel
 	from Production.Product
@@ -151,13 +129,13 @@ select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.Safet
 = Fields.Name
 ````
 
-   and
+	and
 
 	````
 = Fields.Color
 ````
 
-   respectively. 
+	respectively. 
 
 1. Add a report group using either the report's context menu or the Group Explorer and set its grouping to
 
@@ -177,18 +155,16 @@ select top 100 Product.Name, Product.ProductNumber, Product.Color, Product.Safet
 = Fields.Color
 ````
 
-    as a grouping expression. Set the detail textbox's expression to 
+	as a grouping expression. Set the detail textbox's expression to 
 
 	````
 = Count(Fields.Color)
 ````
 
-    Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report, so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab). 
+	Alternatively you may use the crosstab wizard choosing the SqlDataSource used for the whole report, so that you have design-time support (Data explorer, Expression Builder in the context of the crosstab). 
 
-1. Add a[binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})to the crosstab using __DataSource__ as a __PropertyPath__ and __=ReportItem.DataObject__  as an __Expression__, as shown in the following screenshot. This means that when the crosstab is processed its data source will be replaced with the result of the binding expression evaluation. This way it will be populated with the data of the current group insance. 
+1. Add a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the crosstab using `DataSource` as a `PropertyPath` and `=ReportItem.DataObject`  as an `Expression`, as shown in the following screenshot. This means that when the crosstab is processed its data source will be replaced with the result of the binding expression evaluation. This way it will be populated with the data of the current group insance. 
 
-  ![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
+	![dataobject-edit-bindings](images/DataItems/dataobject-edit-bindings.png)
 
 1. Preview or start your report. You should now see the products information listed in the details section for every group and a summary info about the products colors summarized in the group headers.
-
-> This approach might also be used when you need to have page breaks in a __Table, Crosstab__ or __List__. Because having page breaks in these data items’ groups is not supported by design, you can create a report group, add and bind a data item in the report group header and set the report group footer section __PageBreak__ property as required. 

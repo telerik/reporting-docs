@@ -9,10 +9,10 @@ position: 14
 ---
 <style>
 table th:first-of-type {
-    width: 15%;
+	width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 85%;
+	width: 85%;
 }
 </style>
 
@@ -22,25 +22,23 @@ Occurs when the mouse cursor leaves the area of an interactive action.
 
 Parameters:
 
-
 | Parameter | Description |
 | ------ | ------ |
 | __e__ |This is the [jQuery.Event object](https://api.jquery.com/category/events/event-object/) and e.data is respectively [jQuery's event.data](https://api.jquery.com/event.data/).<br/>e.data.sender is the report viewer that raised the event.|
 | __args__ |An object with the following properties:<ul><li>*element* - the DOM element that triggered the action.</li><li>*action* - the current __action__ instance.</li></ul>|
 
-
-    
-````js
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.ProductSales, CSharp.ReportLibrary"
-    },
-    interactiveActionLeave: function(e, args) {
-        $(args.element).css('font-weight', 'normal');
-    }
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.ProductSales, CSharp.ReportLibrary"
+		},
+		interactiveActionLeave: function(e, args) {
+			$(args.element).css('font-weight', 'normal');
+		}
+	});
 });
 ````
 

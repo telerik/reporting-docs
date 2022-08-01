@@ -22,10 +22,4 @@ The Report Book TOC works in a similar manner to the TOC in a single report. The
 
  * [Overview]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%})
 
- * [How to Add a Report Group to Table of Contents]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-report-group-to-table-of-contents%})
-
- * [How to Add a Table Group to Table of Contents]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-group-to-table-of-contents%})
-
- * [How to Add a Report Item to Table of Contents]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-report-item-to-table-of-contents%})
-
  * [How to Add a Table of Contents to Report Book]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book%})

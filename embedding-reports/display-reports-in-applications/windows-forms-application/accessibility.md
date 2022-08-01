@@ -27,26 +27,7 @@ The accessibility features are enabled or disabled using a Boolean property name
 The accessibility routines capture the keyboard events to provide shortcut key access to the viewer areas. It is possible some of these shortcuts to interfere with the designed application behavior. In this case the keys mapping can be changed through the property [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.WinForms#Telerik_ReportViewer_WinForms_AccessibilityKeyMap), which provides access to the internal dictionary of keycodes and shortcut definitions. The code snippets below demonstrate how to change the default shortcut for navigating to the menu area: 
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsViewerAccessibilityKeyMapSnippet}}
-````C#
-private void SetToolbarShortcutKey()
-{
-    //substituting the default 'M' key to access the toolbar with 'T'
-    this.reportViewer1.EnableAccessibility = true;
-    var keyMap = this.reportViewer1.AccessibilityKeyMap;
-    keyMap.Remove((int)Keys.M);
-    keyMap[(int)Keys.T] = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY;
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsViewerAccessibilityKeyMapSnippet}}
-````VB
-Private Sub SetToolbarShortcutKey()
-    ' substituting the default 'M' key to access the toolbar with 'T'
-    Dim map As System.Collections.Generic.Dictionary(Of Integer, Telerik.ReportViewer.Common.Accessibility.ShortcutKeys) = Me.ReportViewer1.AccessibilityKeyMap
-    map.Remove(CType(Keys.M, Integer))
-    map(CType(Keys.T, Integer)) = Telerik.ReportViewer.Common.Accessibility.ShortcutKeys.MENU_AREA_KEY
-    Me.ReportViewer1.AccessibilityKeyMap = map
-End Sub
-````
 
 All the accessibility messages and labels support localization. You can modify them, following the procedure, described in the article [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}). 
 

@@ -20,6 +20,7 @@ After the completion of this guide, you will also be able to configure the Barco
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_Common_Settings}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_Common_Settings}}
  
+
 ## Specifying the Barcode 
 
 1. To specify the type of the Barcode, use the [`Encoder`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder) property. After setting the desired encoder, you can further adjust the specific settings you require. 

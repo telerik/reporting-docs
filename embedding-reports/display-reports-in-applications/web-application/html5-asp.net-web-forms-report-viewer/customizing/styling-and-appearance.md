@@ -13,21 +13,22 @@ position: 1
 The article elaborates on the styles used by the WebForms wrapper of the HTML5 Report Viewer, and how they can be loaded manually in order to be modified.
 
 The required stylesheets are provided automatically through a HTTPHandler via request to the Reporting REST service. If you want to customize the viewer styling you can stop the HTTPHandler from providing report viewer required Kendo CSS and JavaScripts by manually registering the Kendo JavaScript and CSS in the page head. The same approach should be used also when it is required to change the default theme of the viewer. Here is an example: 
-    
-````xml
+
+````XML
 <head>
-....
-  <!--kendo.all.min.js can be used as well instead of kendo.web.min.js, kendo.mobile.min.js or telerikReportViewer-kendo-->
-  <script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.web.min.js" /script>
-  <!--kendo.mobile.min.js - optional, if gestures/touch support is required-->
-  <script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.mobile.min.js" /script>
-  <!--telerikReportViewer-kendo - optional, if you need to use a theme different from the default one-->
-  <script src="/api/reports/resources/js/telerikReportViewer-kendo" /script>
-  <!-- the required Kendo styles -->
-  <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
-  <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
+	....
+	<!--kendo.all.min.js can be used as well instead of kendo.web.min.js, kendo.mobile.min.js or telerikReportViewer-kendo-->
+	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.web.min.js" /script>
+	<!--kendo.mobile.min.js - optional, if gestures/touch support is required-->
+	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.min.js" /script>
+	<!--telerikReportViewer-kendo - optional, if you need to use a theme different from the default one-->
+	<script src="/api/reports/resources/js/telerikReportViewer-kendo" /script>
+	<!-- the required Kendo styles -->
+	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
 </head>
 ````
+
 
 The HTML5 Web Forms Report Viewer is using the default viewer template. In order to use your own viewer template you have to provide path to your customized one to the [TemplateUrl](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportViewer#Telerik_ReportViewer_Html5_WebForms_ReportViewer_TemplateUrl). 
 
@@ -39,4 +40,4 @@ For more information on the used stylesheets and report viewer templates check o
 
 * [Templates Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}) 
 
-* [Templates Structure]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure %}) 
+* [Templates Structure]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure %})

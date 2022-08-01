@@ -18,8 +18,10 @@ Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that
 
 The Web Report Designer consists of the following areas: 
 
-  ![Web Report Designer With Dashboard Report](images/Designer/web-report-designer-dashboard.png)
 
+ ![Web Report Designer With Dashboard Report](images/Designer/web-report-designer-dashboard.png)
+	
+	
 * __Design surface__ - shows the design layout of the report. Provides tools for selecting, moving, resizing and editing the report items. 
 
 * __Menu area__ - provides buttons for creating a new report and opening, saving or previewing an already existing one. Also, allows switching between loaded reports and shows their save state. 
@@ -30,10 +32,9 @@ The Web Report Designer consists of the following areas:
 
 * __Explorer__ - represents the report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties. 
 
-* __Asset Manager__ - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
+* __Assets Manager__ - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
 
 * __Search__ - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item or change a property value with just a few keystrokes.
-
 
 ## How it works
 
@@ -45,9 +46,9 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * The following NuGet packages are required: 
 
-   + Telerik.Reporting 
+	+ Telerik.Reporting 
 
-   + Telerik.WebReportDesigner.Services 
+	+ Telerik.WebReportDesigner.Services 
 
 ## Prerequisites:
 
@@ -55,7 +56,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * [jQuery](http://jquery.com/download/) __3.3.1__ or later. 
 
-* [Kendo UI](http://www.kendoui.com/) __kendosubsetversion__ or later. 
+* [Kendo UI](http://www.kendoui.com/) __{{site.kendosubsetversion}}__ or later. 
 
 * Telerik Report Viewer script. By default, it is requested from the service. 
 
@@ -63,11 +64,11 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * All other scripts and styles will be provided by the Web Report Designer service when the designer widget is loaded. The list of loaded resources: 
 
-   +  [jQuery UI](https://jqueryui.com/) __1.12.1__ library. We recommend using the version of jQuery UI subset that is served by the Web Report Designer service because it includes a fix related to the dragging and dropping components. The subset includes Draggable, Droppable, Resizable and their dependencies. 
+	+ [jQuery UI](https://jqueryui.com/) __1.12.1__ library. We recommend using the version of jQuery UI subset that is served by the Web Report Designer service because it includes a fix related to the dragging and dropping components. The subset includes Draggable, Droppable, Resizable and their dependencies. 
 
-   + webReportDesigner.min.css stylesheet.
+	+ webReportDesigner.min.css stylesheet.
 
-   + webReportDesignerTheme.css stylesheet.
+	+ webReportDesignerTheme.css stylesheet.
 
 * The web report designer in our example is stylized using [Roboto font](https://fonts.google.com/specimen/Roboto). A link to a font of your preference can be added before creating the Web Designer widget on the page. 
 

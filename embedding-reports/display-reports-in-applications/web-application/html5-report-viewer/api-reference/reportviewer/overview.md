@@ -11,22 +11,22 @@ position: 0
 # ReportViewer Overview
 
 The *ReportViewer* object is created through the [jQuery.fn.telerik_ReportViewer()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) function: 
-    
-````js
+
+````JavaScript
 $("#reportViewer1").telerik_ReportViewer({
-  serviceUrl: "../api/reports/",
-  templateUrl: 'src/templates/telerikReportViewerTemplate-x.x.x.x.html',
-  reportSource: { report: "product catalog.trdp", parameters: {CultureID: "en"} }
+	serviceUrl: "../api/reports/",
+	templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+	reportSource: { report: "product catalog.trdp", parameters: {CultureID: "en"} }
 });
 ````
 
-where x.x.x.x is the version of the HTML5 ReportViewer/Telerik Reporting (e.g. 16.0.22.119).
 
 To get the *ReportViewer* object from the target HTML element: 
-    
-````js
+
+````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 ````
+
 
 ## Report viewer methods
 
@@ -45,13 +45,13 @@ Along the commands the report viewer also exposes events, which are fired at dif
 Checking the command state is especially useful if you are implementing your own custom toolbar - in such case if you do not rely on [data attributes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes%}) you can attach an event handler to the updateUi event. Then in your event handler you can set the states of your custom buttons by checking the states of each report viewer command. 
 
 Additionally you can change the state of the report viewer in your event handler if needed through the report viewer methods or commands. Consider the following snippet: 
-    
-````js
+
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-  reportViewer.commands.goToPage.exec(2);
-  reportViewer.scale(1.5);
+	var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+	reportViewer.commands.goToPage.exec(2);
+	reportViewer.scale(1.5);
 });
 ````
 

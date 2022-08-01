@@ -40,7 +40,7 @@ The Excel Rendering Extensions tries to reproduce as much of the original report
 
 ## Report Item Layout
 
-* The entire report is rendered into a single Excel worksheet. There is no paging when exporting to Excel.
+* The layout of the generated Excel document is controlled by the device info parameter [SplitWorksheetOnPageBreak]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}). By default, the entire report is rendered into a single Excel worksheet and the paging is not applied. If the _SplitWorksheetOnPageBreak_ is set to **true**, new worksheet gets generated on each page break configured in the report defintition.
 
 * Overlapping items are not supported and will be moved down/right by the Excel renderer so that they do not overlap.
 

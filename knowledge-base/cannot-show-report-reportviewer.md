@@ -48,27 +48,6 @@ Follow the Telerik Reporting [best practices]({% slug on-telerik-reporting %}) a
 The most reliable way to handle this scenario is to programmatically specify a report for the ReportViewer. For example, if you're using the ASP.NET ReportViewer, state the following in the `Page_Load` event of the page:         
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.cs region=Webviewer_SetReportSource}}
-````C#
-protected void Page_Load(object sender, EventArgs e)
-{
-    if (!IsPostBack)
-    {
-        var typeReportSource = new Telerik.Reporting.TypeReportSource();
-        typeReportSource.TypeName = "Telerik.Reporting.Examples.CSharp.ListBoundReport, CSharp.ReportLibrary";
-        this.ReportViewer1.ReportSource = typeReportSource;
-    }
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WebForms\WebForm1.aspx.vb region=Webviewer_SetReportSource}}
-````VB
-Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-    If Not IsPostBack Then
-        Dim typeReportSource As New Telerik.Reporting.TypeReportSource()
-        typeReportSource.TypeName = "ListBoundReport, VB.ReportLibrary"
-        ReportViewer1.ReportSource = typeReportSource
-        ReportViewer1.RefreshReport()
-    End If
-End Sub
-````
 
 

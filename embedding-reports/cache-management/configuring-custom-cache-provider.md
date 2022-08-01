@@ -18,101 +18,10 @@ Except the preconfigured cache providers, additional providers can be used. To d
 > The cache provider should have a parameterless constructor in order to be instantiated by the Reporting engine. 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CustomCacheProviderSnippets.cs region=CustomCacheProviderImplementation}}
-````C#
-public class MyCacheProvider : Telerik.Reporting.Cache.Interfaces.ICacheProvider
-{
-    public Cache.Interfaces.ICache CreateCache(System.Collections.IDictionary parameters)
-    {
-        return new MyCache(parameters);
-    }
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CustomCacheProviderSnippets.vb region=CustomCacheProviderImplementation}}
-````VB
-Public Class MyCacheProvider
-    Implements Telerik.Reporting.Cache.Interfaces.ICacheProvider
-
-    Public Function CreateCache(parameters As IDictionary) As Telerik.Reporting.Cache.Interfaces.ICache Implements ICacheProvider.CreateCache
-        Return New MyCache(parameters)
-    End Function
-
-End Class
-````
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\CustomCacheProviderSnippets.cs region=CustomCacheImplementation}}
-````C#
-public class MyCache : Telerik.Reporting.Cache.Interfaces.ICache
-{
-    readonly System.Collections.Generic.IDictionary<string, byte[]> cache;
-
-    public MyCache(System.Collections.IDictionary parameters)
-    {
-        // The 'parameters' dictionary is initialized from the Telerik.Reporting/Cache configuration section.
-
-        this.cache = new System.Collections.Generic.Dictionary<string, byte[]>();
-    }
-
-    public bool HasValue(string key)
-    {
-        return this.cache.ContainsKey(key);
-    }
-
-    public byte[] GetValue(string key)
-    {
-        return this.cache[key];
-    }
-
-    public void SetValue(string key, byte[] value)
-    {
-        this.cache[key] = value;
-    }
-
-    public void Clear()
-    {
-        this.cache.Clear();
-    }
-
-    public void Dispose()
-    {
-        this.Clear();
-    }
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\CustomCacheProviderSnippets.vb region=CustomCacheImplementation}}
-````VB
-Public Class MyCache
-    Implements Telerik.Reporting.Cache.Interfaces.ICache
-
-    ReadOnly cache As System.Collections.Generic.Dictionary(Of String, Byte())
-
-    Public Sub New(parameters As System.Collections.IDictionary)
-
-        ' The 'parameters' dictionary is initialized from the Telerik.Reporting/Cache configuration section.
-
-        Me.cache = New System.Collections.Generic.Dictionary(Of String, Byte())()
-    End Sub
-
-    Public Function HasValue(key As String) As Boolean Implements ICache.HasValue
-        Return Me.cache.ContainsKey(key)
-    End Function
-
-    Public Function GetValue(key As String) As Byte() Implements ICache.GetValue
-        Return Me.cache(key)
-    End Function
-
-    Public Sub SetValue(key As String, value As Byte()) Implements ICache.SetValue
-        Me.cache(key) = value
-    End Sub
-
-    Public Sub Clear() Implements ICache.Clear
-        Me.cache.Clear()
-    End Sub
-
-    Public Sub Dispose() Implements IDisposable.Dispose
-        Me.Clear()
-    End Sub
-End Class
-````
 
 To register this new provider set the __provider__ attribute of the "Cache" element to the class name which implements ICacheProvider. Under "Providers" child element of the "Cache" element, create a "Provider" element with the same __name__ attribute as the __provider__ attribute of the "Cache" element. The __type__ attribute should be the [assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) of MyCacheProvider type. The following code snippet demonstrates how to configure such custom provider: 
     

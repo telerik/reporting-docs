@@ -3,8 +3,8 @@ title: Automatic Layout for Report Items
 page_title: Automatic Layout for Report Items
 description: "Learn more about setting an automatic layout for the report items of your report by docking and anchoring when using Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/automatic-layout-(dock-and-anchor)
-previous_url: /designing-reports/report-structure/automatic-layout-(dock-and-anchor)
 tags: telerik, reporting, report, items, designing, reports, automatic, layout, docking, anchoring
+previous_url: /designing-reports/report-structure/automatic-layout-\(dock-and-anchor\), /report-items/automatic-layout-\(dock-and-anchor\)
 published: True
 position: 16
 ---

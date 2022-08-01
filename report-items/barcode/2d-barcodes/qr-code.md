@@ -86,31 +86,7 @@ Essentially, both the `FNC1` property and the `ApplicationIndicator` data is app
 ### Settings Examples
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\BarcodeSnippets.cs region=Barcode_QRCodeEncoder_Settings}}
-````cs
-var encoder = new Telerik.Reporting.Barcodes.QRCodeEncoder();
-
-encoder.Version = 10;
-encoder.ErrorCorrectionLevel = Telerik.Reporting.Barcodes.QRCode.ErrorCorrectionLevel.M;
-encoder.ECI = Telerik.Reporting.Barcodes.QRCode.ECIMode.CP437;
-encoder.Mode = Telerik.Reporting.Barcodes.QRCode.CodeMode.Alphanumeric;
-encoder.FNC1 = Telerik.Reporting.Barcodes.QRCode.FNC1Mode.SecondPosition;
-encoder.ApplicationIndicator = "00";
-
-this.barcode1.Encoder = encoder;
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\BarcodeSnippets.vb region=Barcode_QRCodeEncoder_Settings}}
-````vbnet
-Dim encoder = New Telerik.Reporting.Barcodes.QRCodeEncoder()
-
-encoder.Version = 10
-encoder.ErrorCorrectionLevel = Telerik.Reporting.Barcodes.QRCode.ErrorCorrectionLevel.M
-encoder.ECI = Telerik.Reporting.Barcodes.QRCode.ECIMode.CP437
-encoder.Mode = Telerik.Reporting.Barcodes.QRCode.CodeMode.Alphanumeric
-encoder.FNC1 = Telerik.Reporting.Barcodes.QRCode.FNC1Mode.SecondPosition
-encoder.ApplicationIndicator = "00"
-
-Me.barcode1.Encoder = encoder
-````
 
 
 

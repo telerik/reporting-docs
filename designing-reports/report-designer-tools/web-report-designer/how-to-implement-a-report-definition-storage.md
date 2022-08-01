@@ -26,85 +26,8 @@ The purpose of the report definition storage is to describe how to browse, open,
 The default implementation of the storage is the __FileDefinitionStorage__. It provides functionality for working with TRDP/TRDX report files stored on the server-side file system. To load the reports from a custom storage, change the implementation of the definition storage like this: 
 
 {{source=CodeSnippets\CS\API\Telerik\WebReportDesigner\CustomDefinitionStorage.cs region=CustomDefinitionStorage}}
-````c#
-
-public class CustomDefinitionStorage : IDefinitionStorage
-{
-    public Task<ResourceFolderModel> CreateFolderAsync(CreateFolderModel model)
-    {
-        // Creates a folder using the provided model.
-        throw new NotImplementedException();
-    }
-
-    public Task<ResourceFolderModel> GetFolderAsync(string uri)
-    {
-        // Retrieves the existing folder model by the provided URI.
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteFolderAsync(string uri)
-    {
-        // Deletes a folder by the provided URI.
-        throw new NotImplementedException();
-    }
-
-    public Task<IEnumerable<ResourceModelBase>> GetFolderContentsAsync(string uri)
-    {
-        // Gets all resources contained in the given URI.
-        throw new NotImplementedException();
-    }
-
-    public Task<ResourceFolderModel> RenameFolderAsync(RenameFolderModel model)
-    {
-        // Renames a folder located at model.OldUri.
-        throw new NotImplementedException();
-    }
-
-    public Task<byte[]> GetAsync(string resourceName)
-    {
-        // Finds a resource by its name and returns its contents as byte array.
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteAsync(string uri)
-    {
-        // Deletes the given resource
-        throw new NotImplementedException();
-    }
-
-    public Task<ResourceFileModel> GetModelAsync(string uri)
-    {
-        // Returns the resource model at provider URI or null if not found.
-        throw new NotImplementedException();
-    }
-
-    public Task<ResourceFileModel> RenameAsync(RenameResourceModel model)
-    {
-        // Renames the given resource
-        throw new NotImplementedException();
-    }
-
-    public Task<ResourceFileModel> SaveAsync(SaveResourceModel model, byte[] resource)
-    {
-        // Saves the raw data of a resource and returns its model.
-        throw new NotImplementedException();
-    }
-}
-````
 
 Then you can set the new definition storage implementation in the __ReportDesignerController__. 
 
 {{source=CodeSnippets\CS\API\Telerik\WebReportDesigner\ReportDesignerController.cs region=ReportDesignerServiceConfiguration}}
-````c#
-public ReportDesignerController()
-{
-    //...
-
-    this.ReportDesignerServiceConfiguration = new ReportDesignerServiceConfiguration
-    {
-        DefinitionStorage = new CustomDefinitionStorage(),
-        SettingsStorage = new FileSettingsStorage(this.reportsSettingsPath)
-    };
-}
-````
 

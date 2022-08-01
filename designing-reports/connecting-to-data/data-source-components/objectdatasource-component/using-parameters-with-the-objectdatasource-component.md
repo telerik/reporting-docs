@@ -21,26 +21,7 @@ The __ObjectDataSource__ component accepts input parameters at run time and     
 Here is an example of programmatically setting the ObjectDataSource’s         parameters:       
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ObjectDataSourceSnippets.cs region=HowToObjectDataSourceParameters}}
-````C#
-public void HowToObjectDataSourceParameters()
-{
-    Telerik.Reporting.ObjectDataSource objectDataSource1 = new Telerik.Reporting.ObjectDataSource();
-    objectDataSource1.DataMember = "GetCars";
-    objectDataSource1.DataSource = typeof(Cars);
-    objectDataSource1.Parameters.Add(new Telerik.Reporting.ObjectDataSourceParameter("year", typeof(int), 2010));
-    objectDataSource1.Parameters.Add(new Telerik.Reporting.ObjectDataSourceParameter("color", typeof(string), "=Parameters.Color"));
-}
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ObjectDataSourceSnippets.vb region=HowToObjectDataSourceParameters}}
-````VB
-Public Sub HowToObjectDataSourceParameters()
-    Dim objectDataSource1 As New Telerik.Reporting.ObjectDataSource()
-    objectDataSource1.DataMember = "GetCars"
-    objectDataSource1.DataSource = GetType(Cars)
-    objectDataSource1.Parameters.Add(New Telerik.Reporting.ObjectDataSourceParameter("year", GetType(Integer), 2010))
-    objectDataSource1.Parameters.Add(New Telerik.Reporting.ObjectDataSourceParameter("color", GetType(String), "=Parameters.Color"))
-End Sub
-````
 
 ## See Also
 

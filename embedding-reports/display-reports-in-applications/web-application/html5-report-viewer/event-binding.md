@@ -15,24 +15,25 @@ The HTML5 Report Viewer exposes the events listed in [Events]({%slug telerikrepo
 ## Bind to a report viewer widget event
 
 The report viewer currently exposes two ways for binding event handlers to events. You may attach event handlers when you instantiate the report viewer, or after that, using the bind method. 
-    
-````js
+
+````JavaScript
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate-8.1.14.816.html',
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
-    },
-    pageReady: function(e) { console.log("this event handler was attached in the constructor"); }
-  });
-  var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-  reportViewer.bind(telerikReportViewer.Events.PAGE_READY, function(e) {
-    console.log("this event handler was attached using the bind method");
-  });
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
+		},
+		pageReady: function(e) { console.log("this event handler was attached in the constructor"); }
+	});
+	var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+	reportViewer.bind(telerikReportViewer.Events.PAGE_READY, function(e) {
+		console.log("this event handler was attached using the bind method");
+	});
 });
 ````
+
 
 For a complete list of event handler options please check [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) and for a complete list of all event names exposed through telerikReportViewer.Events please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}). 
 
@@ -41,25 +42,26 @@ The report viewer passes one argument to the event handler, the Event object. Th
 ## Unbind from a report viewer widget event
 
 In order to unbind from a given event you should keep reference to the event handler function and call the unbind method with this reference as an argument. 
-    
-````js
+
+````JavaScript
 function onPageReady(e) {
-  console.log("page ready");
+	console.log("page ready");
 }
 // $(handler) is jQuery's shorthand for $(document).ready(handler)
 $(function () {
-  $("#reportViewer1").telerik_ReportViewer({
-    serviceUrl: "api/reports/",
-    templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate-8.1.14.816.html',
-    reportSource: {
-        report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
-    },
-    pageReady: onPageReady
-  });
-  var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
-  reportViewer.unbind(telerikReportViewer.Events.PAGE_READY, onPageReady);
+	$("#reportViewer1").telerik_ReportViewer({
+		serviceUrl: "api/reports/",
+		templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+		reportSource: {
+			report: "Telerik.Reporting.Examples.CSharp.Invoice, CSharp.ReportLibrary"
+		},
+		pageReady: onPageReady
+	});
+	var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
+	reportViewer.unbind(telerikReportViewer.Events.PAGE_READY, onPageReady);
 });
 ````
+
 
 To __unbind all event handlers__ from the event just call the unbind method with only one argument, the event name. 
 

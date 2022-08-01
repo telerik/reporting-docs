@@ -35,23 +35,7 @@ If you need to filter data on retrieval, see [Using Parameters with Data Source 
 ## Adding filters to Graph programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\GraphSnippets.cs region=AddNewFilterSnippet}}
-````C#
-Telerik.Reporting.Filter filter1 = new Telerik.Reporting.Filter();
-filter1.Expression = "=Fields.ProductID";
-filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan;
-filter1.Value = "=10";
-
-graph1.Filters.Add(filter1);
-````
 {{source=CodeSnippets\VB\API\Telerik\Reporting\GraphSnippets.vb region=AddNewFilterSnippet}}
-````VB
-Dim filter1 As New Telerik.Reporting.Filter()
-filter1.Expression = "=Fields.ProductID"
-filter1.Operator = Telerik.Reporting.FilterOperator.GreaterThan
-filter1.Value = "=10"
-
-graph1.Filters.Add(filter1)
-````
 
 > The Graph item has a complex [structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) built by CategoryGroups and SeriesGroups collections, where each collection has its own Filters. If you need to limit slots, filter the CategoryGroups collection. If you need to filter dynamically created series, filter the SeriesGroups collection. The [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) can be used for checking the Graph item's Series and Categories groups.           
 

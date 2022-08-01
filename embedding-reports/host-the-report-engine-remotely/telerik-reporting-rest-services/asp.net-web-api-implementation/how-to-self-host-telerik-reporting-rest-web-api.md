@@ -22,9 +22,9 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 
 1. Install the [Microsoft.AspNet.WebApi.SelfHost 4.0.30506](http://www.nuget.org/packages/Microsoft.AspNet.WebApi.SelfHost/4.0.30506) NuGet package 
 
-    >The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use __newer version of Microsoft.AspNet.WebApi.SelfHost (e.g. WebAPI 2)__ you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version. To do this, add the following bindingRedirects to your app.config and replace 5.1.0.0 with the exact version: 
-    >
-    >````xml
+	>The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use __newer version of Microsoft.AspNet.WebApi.SelfHost (e.g. WebAPI 2)__ you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version. To do this, add the following bindingRedirects to your app.config and replace 5.1.0.0 with the exact version: 
+	>
+	>````XML
 <?xml version="1.0" encoding="utf-8" ?>
 		<configuration>
 			<runtime>
@@ -47,15 +47,15 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 1. Make sure that the project have the following assembly references: 
 
 	+ System.Web 
-	
+
 	+ Newtonsoft.Json.dll 
-	
+
 	+ System.Web.Http.dll 
-	
+
 	+ System.Web.Http.SelfHost.dll 
-	
+
 	+ System.Net.Http.dll 
-	
+
 	+ System.Net.Http.Formatting.dll 
 
 1. Implement the reports controller as explained in the article [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%}) 
@@ -63,50 +63,8 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 1. Implement the starting point of the application:
 
 	{{source=CodeSnippets\MvcCS\SelfHostedSnippets\Program.cs region=SelfHostedRestService}}
-	````C#
-using System;
-	using System.Linq;
-	using System.Web.Http.SelfHost;
-	using Telerik.Reporting.Services.WebApi;
-
-	class Program
-	{
-		static void Main(string[] args)
-		{
-			var config = new HttpSelfHostConfiguration("http://localhost:8080"); // use appropriate address
-
-			ReportsControllerConfiguration.RegisterRoutes(config);
-
-			var server = new HttpSelfHostServer(config);
-			server.OpenAsync().Wait();
-
-			Console.WriteLine("Server is opened");
-			Console.ReadKey();
-		}
-	}
-````
 	{{source=CodeSnippets\MvcVB\SelfHostedSnippets\Program.vb region=SelfHostedRestService}}
-	````VB
-Imports System.Web.Http.SelfHost
-	Imports Telerik.Reporting.Services.WebApi
 
-	Public Class Program
-
-		Public Shared Sub Main(ByVal args As String())
-
-			Dim config = New HttpSelfHostConfiguration("http://localhost:8080")
-			' use appropriate address
-			ReportsControllerConfiguration.RegisterRoutes(config)
-
-			Dim server = New HttpSelfHostServer(config)
-			server.OpenAsync().Wait()
-
-			Console.WriteLine("Server is opened")
-			Console.ReadKey()
-		End Sub
-
-	End Class
-````
 
 1. Run the console app 
 
@@ -114,7 +72,7 @@ Imports System.Web.Http.SelfHost
 
 	`http://localhost: [portnumber]/api/reports/formats` 
 
-    If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}). 
+	If the request is successful you should receive the document formats encoded in JSON. For more information see: [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}). 
 
 1. When you are finished self-hosting, be sure to delete the reservation: 
 

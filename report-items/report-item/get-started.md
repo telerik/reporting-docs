@@ -10,9 +10,11 @@ position: 1
 
 # Getting Started with the Report Item in Report Designers
 
-The Report Item is added automatically when you create a new Report with any of our [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). When you add a Blank report, it contains empty Page Header, Details, and Page Footer sections. You may add any of the other [Report Sections]({%slug report_structure_groups_sections%}) later. 
+The Report Item is added automatically when you create a new Report with any of our [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). 
 
-In the desktop designers, we provide several [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}) that you may start with when creating reports with consistent look and feel. Each of them features a Wizard that lets you choose the initial settings of the report. 
+You may add a `Blank report` that contains by default 3 empty sections: `Page Header`, `Details`, and `Page Footer`. You may add any of the other [Report Sections]({%slug report_structure_groups_sections%}) later. 
+
+In the desktop designers, we provide several [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}) that save time when creating reports with consistent layout. The templates feature Wizards that let you choose the initial settings of the report. 
 
 In the Standalone Report Desginer, you may create your own Report Templates, whereas in the Visual Studio Report Designer, you need to inherit the corresponding Report class.
 

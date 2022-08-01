@@ -8,32 +8,17 @@ published: True
 position: 1
 ---
 
-# Getting Started with the Report Item
+# Getting Started with the Report Item in Report Designers
 
-This guide shows how to create and use the Telerik Reporting Report item in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
+The Report Item is added automatically when you create a new Report with any of our [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). When you add a Blank report, it contains empty Page Header, Details, and Page Footer sections. You may add any of the other [Report Sections]({%slug report_structure_groups_sections%}) later. 
 
-* First, you will create the new Report item and add the required sections.
-* Then, you will configure the page settings that define the printing properties such as the paper type, size, Watermarks, and so on.
-* Next, you will add a simple `CsvDataSource` feeding with data to the report. 
-* Following, you will add some paging information to the page sections and sample aggregate information to the header and footer sections of the report.
-* Finally, you will style the appearance of the report. 
+In the desktop designers, we provide several [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}) that you may start with when creating reports with consistent look and feel. Each of them features a Wizard that lets you choose the initial settings of the report. 
 
-At the end, you will be able to achieve the following result. 
-
-
-
-## Adding the Report Item with the Needed Sections
-
-Start the Standalone Report Designer executable and add a new report
-
-## Specifying the Page Settings 
-
-
-## Displaying Actual Data in the Report
-
-
-## Styling the Report
+In the Standalone Report Desginer, you may create your own Report Templates, whereas in the Visual Studio Report Designer, you need to inherit the corresponding Report class.
 
 
 ## See Also
  
+* [Report Sections]({%slug report_structure_groups_sections%})
+
+* [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%})

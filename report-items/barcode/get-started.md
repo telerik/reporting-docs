@@ -33,11 +33,7 @@ After the completion of this guide, you will also be able to configure the Barco
 
 ## Setting the Size and Appearance 
 
-1. You can now specify the width (size) of the Barcode elements. To set the Barcode size, use either of the following approaches: 
-
-  + Use the [`Module`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module) property. 
-
-  + Automatically calculate the width from the size of the item when the [`Stretch`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch) property is set to `true`. 
+1. You can now specify the width (size) of the Barcode elements. For the purposes of this guide, you will automatically calculate the width from the size of the item when the [`Stretch`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch) property is set to `true`. 
 
   ![barcode-module-stretch-property](images/Barcodes/barcode-module-stretch-property.png)
 

@@ -8,19 +8,38 @@ published: True
 position: 1
 ---
 
-# Getting Started with the Report Item in Report Designers
+# Getting Started with the Report Item 
 
-The Report Item is added automatically when you create a new Report with any of our [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). 
+This guide shows how to create and use the Telerik Reporting Report item in reports. 
 
-You may add a `Blank report` that contains by default 3 empty sections: `Page Header`, `Details`, and `Page Footer`. You may add any of the other [Report Sections]({%slug report_structure_groups_sections%}) later. 
+* First, you will add the Report item to your newly created report. 
+* Then, you will add some basic configurations to the **Page Header**, **Page Footer**, and **Details** sections of the blank report. 
+* Finally, you will utilize a ... template to ... 
 
-In the desktop designers, we provide several [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}) that save time when creating reports with consistent layout. The templates feature Wizards that let you choose the initial settings of the report. 
+After the completion of this guide, you will also be able to configure the Barcode with code and achieve the following result. 
 
-In the Standalone Report Desginer, you may create your own Report Templates, whereas in the Visual Studio Report Designer, you need to inherit the corresponding Report class.
+// add a demo
+
+## Adding the Report Item 
+
+To [create a new report]({% slug telerikreporting/getting-started/first-steps %}#step-2-create-the-sample-report), use the [Telerik Reporting Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). As a result, the report will automatically add the Report item. 
+
+## Configuring the Default Sections
+
+For the purposes of this guide, add a **Blank report** and [configure its default **Page Header**, **Details**, and **Page Footer** ]({% slug telerikreporting/getting-started/first-steps %}#step-5-set-the-page-header-and-footer). 
+
+Later, you can also add any of the other [Report Sections]({%slug report_structure_groups_sections%}). 
+
+## Using the Report Templates 
+
+To build on top of the report, use the available [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}), which save time when creating reports with consistent layout. The templates also support Wizards which enable you to define the initial settings of the report. 
+
+// add steps - a simple way to use a template with the report item
 
 
 ## See Also
- 
-* [Report Sections]({%slug report_structure_groups_sections%})
 
+* [Designing Reports with Telerik Reporting (Step-by-Step Guide)]({% slug telerikreporting/getting-started/first-steps %}) 
+* [Report Designers]({% slug telerikreporting/designing-reports/report-designer-tools/overview %})
+* [Report Sections]({%slug report_structure_groups_sections%})
 * [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%})

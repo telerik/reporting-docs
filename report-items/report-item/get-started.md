@@ -10,51 +10,36 @@ position: 1
 
 # Getting Started with the Report Item 
 
-The Report item is a unique report item that is a container for the rest of the report items. It consists of report sections, each one with a different purpose as explained in [Report Sections]({%slug report_structure_groups_sections%}#report-sections).
+The Report item is a unique report item that is a container for the rest of the report items. It consists of report sections, each one with a different purpose as explained in the article on [Telerik Reporting report sections]({%slug report_structure_groups_sections%}#report-sections).
 
-## Adding the Report Item 
+When you create a new report with any of the Telerik Reporting [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}), the report will automatically add the Report item by providing you with the following approaches to do that: 
 
-The Report item is added automatically when you create a new Report with any of our [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). You may start with:
+* (For all Report Designers) Select to add a **Blank report**&mdash;The Blank report contains the **Page Header**, **Details**, and **Page Footer** empty sections by default. You can add any of the other available report sections later. 
 
-* Blank report
+  For the specific steps to proceed further on, refer to the [guide on designing and configuring the Blank report sections]({% slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report). 
 
-* Report Template /desktop designers only/
+* (For the desktop Report Designers) Add a Report Template&mdash;The Telerik Reporting [report templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}) save time when you create reports with consistent layouts. 
 
-* Converting a Report from another reporting format /desktop designers only/
+  The templates support the following dedicated wizards that enable you to configure the initial settings of the report: 
 
-The `Blank report`, contains three empty sections: `Page Header`, `Details`, and `Page Footer`. You may add any of the other Report Sections later. Check how to add a **Blank report** and [configure its default **Page Header**, **Details**, and **Page Footer** ]({% slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report). 
+  * [Band Report Wizard (step-by-step guide)]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) for creating reports with layouts based on the report sections.
 
-In the desktop designers, we provide several [`Report Templates`]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}) that save time when creating reports with consistent layout. The templates feature dedicated Wizards that let you choose the initial settings of the report: 
+  * [Label Report Wizard (step-by-step guide)]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/label-report-wizard%}) for creating reports with label layouts.
 
-* [`Band Report Wizard`]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) for creating a report with layout based on report sections
+  * [Invoice Report Wizard (step-by-step guide)]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/invoice-report-wizard%}) for preparing one of the most common business documents, the invoice.
 
-* [`Label Report Wizard`]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/label-report-wizard%}) for creating a report with label layout
+  * [Product Catalog Report Wizard (step-by-step guide)]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/product-catalog-report-wizard%}) for creating one of the most useful business presentation documents, the catalog.
 
-* [`Invoice Report Wizard`]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/invoice-report-wizard%}) for preparing one of the most common business documents
 
-* [`Product Catalog Report Wizard`]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/product-catalog-report-wizard%}) for creating one of the most useful business presentation documents
+* (For the desktop Report Designers) Convert a report from another reporting format&mdash;If you have already used another reporting tool and want to reuse some of your existing reports, check [whether Telerik Reporting provides automatic converters for them]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview%}). 
 
-If you have already used another reporting tool and would like to reuse some of your existing reports, check whether we provide automatic converters for them in the [Importing Reports Overview]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview%}). If we support your previous reporting, you may use the [`Import Report Wizard`]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard%}) to start the conversion.
+  If yes, use the [Import Report Wizard step-by-step guide]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard%}) to proceed with the conversion.
 
 
 ## See Also
 
 * [Designing Reports with Telerik Reporting (Step-by-Step Guide)]({% slug telerikreporting/getting-started/first-steps %})
-
 * [Report Designers]({% slug telerikreporting/designing-reports/report-designer-tools/overview %})
-
 * [Report Sections]({%slug report_structure_groups_sections%})
-
 * [Report Templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%})
-
-* [Label Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/label-report-wizard%})
-
-* [Invoice Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/invoice-report-wizard%})
-
-* [Product Catalog Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/product-catalog-report-wizard%})
-
-* [Band Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%})
-
-* [Import Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard%})
-
-* [Importing Reports Overview]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview%})
+* [Importing Reports]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview%})

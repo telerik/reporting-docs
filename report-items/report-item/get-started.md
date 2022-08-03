@@ -10,7 +10,7 @@ position: 1
 
 # Getting Started with the Report Item 
 
-The Report item is a unique report item that is a container for the rest of the report items. It consists of report sections, each one with a different purpose as explained in the article on [Telerik Reporting report sections]({%slug report_structure_groups_sections%}#report-sections).
+The `Report` item is a unique report item that is a container for the rest of the report items. It consists of report sections, each one with a different purpose as explained in the article on [Telerik Reporting report sections]({%slug report_structure_groups_sections%}#report-sections).
 
 When you create a new report with any of the Telerik Reporting [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}), the report will automatically add the Report item by providing you with the following approaches to do that: 
 

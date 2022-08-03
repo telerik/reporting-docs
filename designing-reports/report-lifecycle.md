@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/understanding-the-report-lifecycle
 previous_url: designing-reports/understanding-the-report-lifecycle
 tags: understanding,the,report,lifecycle
 published: True
-position: 1
+position: 2
 ---
 
 # Understanding the Report Lifecycle

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/design-considerations-
 previous_url: /designing-reports/report-structure/design-considerations-for-report-item-layout
 tags: telerik, reporting, report, items, design, considerations, layout, creating, reports
 published: True
-position: 14
+position: 15
 ---
 
 # Design Considerations for Report Items
@@ -84,7 +84,3 @@ This rendering behavior will affect how report item borders are rendered accordi
 >
 >The general suggestion is to set the border/line width to minimum 2px which can be rendered on a machine with 96dpi resolution. Using pixels instead of points is also recommended as a more media oriented unit. 
 
-## See Also
-
-* [Laying Out Report Items]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-layout-report-items%})
-* [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})

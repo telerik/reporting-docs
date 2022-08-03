@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/automatic-layout-(dock
 tags: telerik, reporting, report, items, designing, reports, automatic, layout, docking, anchoring
 previous_url: /designing-reports/report-structure/automatic-layout-\(dock-and-anchor\), /report-items/automatic-layout-\(dock-and-anchor\)
 published: True
-position: 15
+position: 16
 ---
 
 # Automatic Layout for Report Items

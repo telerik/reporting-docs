@@ -102,9 +102,6 @@ navigation:
     report-items/htmltextbox:
         position: 6
         title: "HtmlTextBox"
-    report-items/how-to:
-        position: 100
-        title: "How To"
     doc-output:
         position: 10
         title: "Document Output"
@@ -295,7 +292,7 @@ navigation:
         position: 4
         title: "Creating Reports"  
     designing-reports/report-designer-tools:
-        position: 2
+        position: 4
         title: "Report Designers"
     designing-reports/report-designer-tools/web-report-designer:
         position: 10
@@ -400,7 +397,7 @@ navigation:
         position: 14
         title: "Troubleshooting"
     designing-reports/report-book:
-        position: 10
+        position: 6
         title: "Report Book" 
     knowledge-base:
         position: 20

@@ -17,7 +17,9 @@ Reports can contain report headers and footers. By default, new reports are crea
 
 In the report output, any control you place in the report header will be rendered once at the top of the entre report and after the first page header section (if any); any control you place in the report footer will be rendered once at the bottom of the entire report, and before the last page footer section (if any).
 
-## Adding and Removing Report Headers and Footers
+## Adding and Removing 
+
+To add or remove report headers or footers:
 
 1. Right-click on any section header in the report, or in the empty space around the sections.
 
@@ -28,5 +30,5 @@ In the report output, any control you place in the report header will be rendere
 
 ## See Also
 
-* [`ReportHeaderSection`](/reporting/api/Telerik.Reporting.ReportHeaderSection)  
-* [`ReportFooterSection`](/reporting/api/Telerik.Reporting.ReportFooterSection)
+* [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)
+* [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)

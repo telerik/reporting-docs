@@ -24,7 +24,7 @@ The column width can be calculated as the page width minus the sum of the left a
 > Columns are only applied when you view a report in the __Print Preview__, when you print a report or export it to a page-oriented format. A report with a multi-column report layout used as a SubReport will be rendered as a single-column report layout.
 
 
-## Setting Up Multi-Column Report Layout
+## Setting Up the Layout
 
 To set up the multi-column report layout: 
 
@@ -41,7 +41,7 @@ To set up the multi-column report layout:
 > If the report does not render the number of columns set in `ColumnCount`, it is possible that the report width is too large. In such cases, check for report items with greater width than the width of the report and the column width itself. 
 
 
-## Multi-Column Report Layout Example
+## Example
 
 The following example shows a report set for a multi-column layout in design time with the following properties:
 

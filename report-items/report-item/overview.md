@@ -26,8 +26,7 @@ For more information on the specific structure of the Report item, refer to the 
 
 ## See Also
 
-* [Getting Started with the Report Item]({% slug report_item_get_started %})  
+* [Getting Started with the Report Item]({% slug report_item_get_started %})
 * [Page Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
 * [Report Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%})
 * [Creating Multi-Column Reports]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%})
-

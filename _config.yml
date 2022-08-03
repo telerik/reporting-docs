@@ -45,8 +45,11 @@ navigation:
     report-items/barcode/2d-barcodes:
         position: 30
         title: "2D Barcodes"     
+    report-items/report-item:
+        position: 10
+        title: "Report"     
     report-items/table-crosstab-list:
-        position: 12
+        position: 13
         title: "Table/Crosstab/List"    
     report-items/graph:
         position: 5

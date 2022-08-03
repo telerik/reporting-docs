@@ -113,4 +113,3 @@ The `Payment` property contains information about the `Payment` data entity.
 
 * [Swiss Implementation Guidelines QR-bill (PDF)](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
 * [Swiss QR Code Validator](https://www.swiss-qr-invoice.org/validator/)
-

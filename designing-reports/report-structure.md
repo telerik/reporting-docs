@@ -5,6 +5,7 @@ description: "Learn more about the report structure and the groups, sections, an
 slug: report_structure_groups_sections
 tags: telerik, reporting, report, structure, groups, sections, items
 published: True
+previous_url: /report-items/understanding-report-sections-\(obsolete\), /designing-reports-understanding-report-sections 
 position: 1
 ---
 

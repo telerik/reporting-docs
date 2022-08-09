@@ -22,7 +22,7 @@ Defines a collection of assembly references that are used from Reporting Engine 
 
 XML-based configuration file:
     
-````xml
+````XML
 <assemblyReferences>
     <add />
     <clear />
@@ -32,7 +32,7 @@ XML-based configuration file:
 
 JSON-based configuration file:
     
-````js
+````JSON
 "assemblyReferences": [
 ],
 ````
@@ -53,7 +53,7 @@ The following code example demonstrates how to configure the reporting engine to
 
 XML-based configuration file:
     
-````xml
+````XML
 <?xml version="1.0"?>
 <configuration>
     <configSections>
@@ -64,7 +64,7 @@ XML-based configuration file:
 			  <probing privatePath="MyDir; MyDir2\SubDir"/>
 		</assemblyBinding>
     </runtime>
-    Telerik.Reporting>
+    <Telerik.Reporting>
 		<assemblyReferences>
 			<add name="MyUserFunctionsAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
 		</assemblyReferences>
@@ -75,7 +75,7 @@ XML-based configuration file:
 
 JSON-based configuration file:
     
-````js
+````JSON
 "telerikReporting": {
 	"assemblyReferences": [
 		{

@@ -177,22 +177,22 @@ The following tables list the most used members of the different libraries.
         </tr>
         <tr>
             <td><a href="/reporting/api/Telerik.ReportViewer.WinForms.html">Telerik.ReportViewer.WinForms</a></td>
-            <td><a href="/reporting/api/TelerikTelerik.ReportViewer.WinForms.ReportViewer.html">ReportViewer</a> WinForms</td>
+            <td><a href="/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer.html">ReportViewer</a> WinForms</td>
             <td>The Telerik Reporting ReportViewer for .NET Framework Windows Forms applications.</td>
         </tr>
 		<tr>
             <td><a href="/reporting/api/Telerik.ReportViewer.WPF.html">Telerik.ReportViewer.WPF</a></td>
-            <td><a href="/reporting/api/TelerikTelerik.ReportViewer.WPF.ReportViewer.html">ReportViewer</a> WPF</td>
+            <td><a href="/reporting/api/Telerik.ReportViewer.WPF.ReportViewer.html">ReportViewer</a> WPF</td>
             <td>The Telerik Reporting ReportViewer for .NET Framework WPF applications.</td>
         </tr>
 		<tr>
             <td><a href="/reporting/api/Telerik.ReportViewer.Html5.WebForms.html">Telerik.ReportViewer.Html5.WebForms</a></td>
-            <td><a href="/reporting/api/TelerikTelerik.ReportViewer.Html5.WebForms.ReportViewer.html">ReportViewer</a> ASP.NET WebForms</td>
+            <td><a href="/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportViewer.html">ReportViewer</a> ASP.NET WebForms</td>
             <td>The Telerik Reporting ReportViewer for ASP.NET Web Forms applications. Wrapper of the pure Html5 Report Viewer</td>
         </tr>
 		<tr>
             <td><a href="/reporting/api/Telerik.ReportViewer.Html5.MVC.html">Telerik.ReportViewer.Html5.MVC</a></td>
-            <td><a href="/reporting/api/TelerikTelerik.ReportViewer.Html5.MVC.ReportViewer.html">ReportViewer</a> ASP.NET MVC</td>
+            <td><a href="/reporting/api/Telerik.ReportViewer.Html5.MVC.ReportViewer.html">ReportViewer</a> ASP.NET MVC</td>
             <td>The Telerik Reporting ReportViewer for ASP.NET MVC applications. Wrapper of the pure Html5 Report Viewer</td>
         </tr>
     </tbody>

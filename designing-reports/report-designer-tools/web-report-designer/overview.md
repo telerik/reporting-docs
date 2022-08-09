@@ -18,8 +18,10 @@ Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that
 
 The Web Report Designer consists of the following areas: 
 
-	![Web Report Designer With Dashboard Report](images/Designer/web-report-designer-dashboard.png)
 
+ ![Web Report Designer With Dashboard Report](images/Designer/web-report-designer-dashboard.png)
+	
+	
 * __Design surface__ - shows the design layout of the report. Provides tools for selecting, moving, resizing and editing the report items. 
 
 * __Menu area__ - provides buttons for creating a new report and opening, saving or previewing an already existing one. Also, allows switching between loaded reports and shows their save state. 
@@ -30,7 +32,7 @@ The Web Report Designer consists of the following areas:
 
 * __Explorer__ - represents the report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties. 
 
-* __Asset Manager__ - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
+* __Assets Manager__ - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
 
 * __Search__ - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item or change a property value with just a few keystrokes.
 

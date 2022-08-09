@@ -5,7 +5,7 @@ description: Shape
 slug: telerikreporting/designing-reports/report-structure/shape
 tags: shape
 published: True
-position: 10
+position: 11
 ---
 
 # Shape

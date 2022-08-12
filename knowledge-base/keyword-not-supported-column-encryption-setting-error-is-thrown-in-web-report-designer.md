@@ -34,6 +34,6 @@ Connection unsuccessful. Check the connection string and try again. Keyword not 
 
 
 ## Solution
-You need to use the Microsoft.Data.SqlClient data provider as explained in the [How to Use Microsoft.Data.SqlClient Data Provider in Web Report Designer]({%slug telerikreporting/knowledge-base/connecting-to-microsoft-data-sqlclient-in-web-report-designer%})
+You need to use the Microsoft.Data.SqlClient data provider as explained in the [How to Use Microsoft.Data.SqlClient Data Provider in Web Report Designer]({%slug connecting-to-microsoft-data-sqlclient-in-web-report-designer%})
  KB article.
 

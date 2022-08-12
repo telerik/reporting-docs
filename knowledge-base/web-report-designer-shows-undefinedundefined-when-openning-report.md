@@ -34,11 +34,11 @@ When you click a report to open it, this closes the FileManager, but does not op
 
 ## Cause\Possible Cause(s)
 The problem is caused when kendo.aspnetmvc.js is added. Once this script is included, 
-the in the **convertRecords** function of kendo.data.js, 
-the call to **modelInstance._parse assumes** that the properties are uppercase and returns undefined instead of the value.
+in the **convertRecords** function of kendo.data.js, 
+the call to **modelInstance._parse** assumes that the properties are uppercase and returns undefined instead of the value.
 
 ## Solution
-You need to modify the **translateAggregateResults** function in the kendo.data.js as follows:
+You need to modify the **translateAggregateResults** function in the **kendo.data.js** as follows:
 
 ````JavaScript
 function translateAggregateResults(aggregate) {
@@ -91,4 +91,6 @@ function translateAggregateResults(aggregate) {
             }
         });
 ````
+
+
 

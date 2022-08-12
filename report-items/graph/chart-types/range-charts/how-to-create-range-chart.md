@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/rang
 tags: how,to,create,range,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreateRangeChart
 ---
 
 # How to Create Range Chart

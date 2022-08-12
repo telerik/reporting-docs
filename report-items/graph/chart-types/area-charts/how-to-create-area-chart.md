@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/area
 tags: how,to,create,area,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreateAreaChart
 ---
 
 # How to Create Area Chart

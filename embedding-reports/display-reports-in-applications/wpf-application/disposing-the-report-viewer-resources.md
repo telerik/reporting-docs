@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: disposing,the,report,viewer,resources
 published: True
 position: 4
+previous_url: /wpf-report-viewer-disposing-resources
 ---
 
 # Disposing the Report Viewer Resources

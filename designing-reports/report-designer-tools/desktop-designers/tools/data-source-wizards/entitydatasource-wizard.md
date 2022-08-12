@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: entitydatasource,wizard
 published: True
 position: 7
+previous_url: /entitydatasource-wizard
 ---
 
 # EntityDataSource Wizard

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/converting-reports-from-other-reporting
 tags: telerik, reporting, importing, reports, converting, overview
 published: True
 position: 0
+previous_url: /faq-available-converters
 ---
 
 # Importing Reports Overview

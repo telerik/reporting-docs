@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-book/report-book-parameters
 tags: report,book,parameters
 published: True
 position: 1
+previous_url: /designing-reports-reportbook-report-parameters
 ---
 
 # Report Book Parameters

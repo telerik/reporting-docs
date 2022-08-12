@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: report,explorer
 published: True
 position: 2
+previous_url: /ui-report-explorer
 ---
 
 # Report Explorer

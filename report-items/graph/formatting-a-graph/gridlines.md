@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: gridlines
 published: True
 position: 5
+previous_url: /GraphFormattingGridLines
 ---
 
 # GridLines

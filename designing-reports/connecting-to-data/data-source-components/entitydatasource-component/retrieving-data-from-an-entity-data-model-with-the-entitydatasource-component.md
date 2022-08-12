@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: retrieving,data,from,an,entity,data,model,with,the,entitydatasource,component
 published: True
 position: 5
+previous_url: /entitydatasource-retrieving-data-from-an-entity-data-model
 ---
 
 # Retrieving data from an Entity Data Model with the EntityDataSource component

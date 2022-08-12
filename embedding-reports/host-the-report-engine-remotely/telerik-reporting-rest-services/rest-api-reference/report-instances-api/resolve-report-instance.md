@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: resolve,report,instance
 published: True
 position: 0
+previous_url: /telerik-reporting-rest-report-instances-api-create-report-instance
 ---
 <style>
 table th:first-of-type {

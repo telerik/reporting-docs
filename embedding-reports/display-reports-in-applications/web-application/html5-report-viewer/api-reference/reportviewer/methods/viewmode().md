@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: viewmode()
 published: True
 position: 18
+previous_url: /html5-report-viewer-reportviewer-methods-viewmode
 ---
 
 # viewMode()

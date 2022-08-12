@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: overview
 published: True
 position: 0
+previous_url: /ui-report-designer
 ---
 
 # Visual Studio Report Designer Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering
 tags: filter,rules
 published: True
 position: 1
+previous_url: /designing-reports-filtering
 ---
 <style>
 table th:first-of-type {

@@ -6,6 +6,7 @@ slug: telerikreporting/licensing
 tags: licensing
 published: True
 position: 12
+previous_url: /installation-trial-license-limitation
 ---
 
 # Licensing

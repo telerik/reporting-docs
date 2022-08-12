@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: how,to,import,reports,created,with,standalone,report,designer
 published: True
 position: 1
+previous_url: /how-to-import-reports-created-with-standalone-report-designer
 ---
 
 # How to import reports created with Standalone Report Designer

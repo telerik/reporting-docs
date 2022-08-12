@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering
 tags: how,to,add,filtering,to,table,item,and,crosstab,item
 published: True
 position: 3
+previous_url: /data-items-how-to-add-filtering-to-table-item-and-crosstab-item
 ---
 
 # How to Add filtering to Table item and Crosstab item

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: error(e,,args)
 published: True
 position: 1
+previous_url: /html5-report-viewer-reportviewer-events-error
 ---
 <style>
 table th:first-of-type {

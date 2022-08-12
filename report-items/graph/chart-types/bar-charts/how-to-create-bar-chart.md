@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/bar-
 tags: how,to,create,bar,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreateBarChart
 ---
 
 # How to Create Bar Chart

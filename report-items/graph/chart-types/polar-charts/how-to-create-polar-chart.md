@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pola
 tags: how,to,create,polar,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreatePolarChart
 ---
 
 # How to Create Polar Chart

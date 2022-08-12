@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: data,attributes
 published: True
 position: 2
+previous_url: /html5-report-viewer-data-attributes
 ---
 <style>
 table th:first-of-type {

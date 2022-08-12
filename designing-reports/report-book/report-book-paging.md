@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-book/report-book-paging
 tags: report,book,paging
 published: True
 position: 2
+previous_url: /designing-reports-reportbook-paging
 ---
 
 # Report Book Paging

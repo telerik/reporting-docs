@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: working,with,data,at,design,time
 published: True
 position: 10
+previous_url: /connecting-to-data-working-with-data-at-design-time
 ---
 
 # Working With Data at Design Time

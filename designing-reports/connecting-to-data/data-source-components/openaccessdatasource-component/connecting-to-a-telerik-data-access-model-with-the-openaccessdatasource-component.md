@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: connecting,to,a,telerik,data,access,model,with,the,openaccessdatasource,component
 published: True
 position: 1
+previous_url: /openaccessdatasource-connecting-to-an-openaccess-model
 ---
 
 # Connecting to a Telerik Data Access Model with the OpenAccessDataSource component

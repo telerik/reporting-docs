@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/htmltextbox/xhtml-vali
 tags: xhtml,validation
 published: True
 position: 1
+previous_url: /report-items-html-text-box-validation
 ---
 
 # XHTML Validation

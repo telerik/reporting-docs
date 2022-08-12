@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,windows,forms,report,viewer,with,report,server
 published: True
 position: 7
+previous_url: /winforms-viewer-howto-use-it-with-reportserver
 ---
 
 # How to Use Windows Forms Report Viewer With Report Server

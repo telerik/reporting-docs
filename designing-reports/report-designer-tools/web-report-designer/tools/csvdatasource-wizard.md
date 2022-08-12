@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: csvdatasource,wizard
 published: True
 position: 1
+previous_url: /web-report-designer-tools-csvdatasource-wizard
 ---
 
 # CsvDataSource Wizard

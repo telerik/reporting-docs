@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: table/crosstab,wizard
 published: True
 position: 2
+previous_url: /web-report-designer-table-crosstab-wizard
 ---
 
 # Table/Crosstab Wizard

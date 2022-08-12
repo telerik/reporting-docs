@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/un
 tags: understanding,crosstab,areas
 published: True
 position: 2
+previous_url: /table-understanding-crosstab-areas
 ---
 
 # Understanding Crosstab Areas

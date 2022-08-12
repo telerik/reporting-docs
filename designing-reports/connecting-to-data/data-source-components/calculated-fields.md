@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: calculated,fields
 published: True
 position: 11
+previous_url: /datasource-calculated-fields
 ---
 
 # Calculated Fields

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/ov
 tags: overview
 published: True
 position: 0
+previous_url: /table-working-with-table-cross-table-list-items
 ---
 
 # Table/Crosstab/List Overview

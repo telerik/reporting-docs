@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: using,parameters,with,the,webservicedatasource,component
 published: True
 position: 3
+previous_url: /web-service-data-source-using-parameters
 ---
 
 # Using Parameters with the WebServiceDataSource component

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: using,parameters,with,the,openaccessdatasource,component
 published: True
 position: 2
+previous_url: /openaccessdatasource-using-parameters
 ---
 
 # Using parameters with the OpenAccessDataSource component

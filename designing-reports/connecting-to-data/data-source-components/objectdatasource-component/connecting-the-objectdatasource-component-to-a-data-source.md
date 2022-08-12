@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: connecting,the,objectdatasource,component,to,a,data,source
 published: True
 position: 1
+previous_url: /objectdatasource-connecting
 ---
 
 # Connecting the ObjectDataSource component to a Data Source

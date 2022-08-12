@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,set,reportsource,for,report,viewers
 published: True
 position: 7
+previous_url: /report-sources-viewers
 ---
 
 # How to Set ReportSource for Report Viewers

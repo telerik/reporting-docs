@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,connect,to,an,odbc,database
 published: False
 position: 3
+previous_url: /how-to-sqlDataSource-odbc
 ---
 
 # How to Connect to an ODBC Database

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: csvdatasource,wizard
 published: True
 position: 3
+previous_url: /csvdatasource-wizard
 ---
 
 # CsvDataSource Wizard

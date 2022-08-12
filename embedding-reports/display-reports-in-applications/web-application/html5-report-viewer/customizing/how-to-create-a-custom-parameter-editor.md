@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,create,a,custom,parameter,editor
 published: True
 position: 3
+previous_url: /html5-report-viewer-howto-custom-parameter-editor
 ---
 
 # How to Create a Custom Parameter Editor

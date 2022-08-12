@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: context,menu
 published: True
 position: 5
+previous_url: /ui-context-menu
 ---
 
 # Context Menu

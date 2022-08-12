@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/l
 tags: legend
 published: True
 position: 3
+previous_url: /MapFormattingLegend
 ---
 
 # Legend

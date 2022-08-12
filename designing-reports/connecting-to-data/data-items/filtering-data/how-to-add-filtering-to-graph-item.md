@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering
 tags: how,to,add,filtering,to,graph,item
 published: True
 position: 4
+previous_url: /data-items-how-to-add-filtering-to-chart-item
 ---
 
 # How to Add filtering to Graph item

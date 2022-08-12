@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/styling-using-the-conte
 tags: styling,using,the,context,menu
 published: True
 position: 5
+previous_url: /style-styling-context-menu
 ---
 
 # Styling Using the Context Menu

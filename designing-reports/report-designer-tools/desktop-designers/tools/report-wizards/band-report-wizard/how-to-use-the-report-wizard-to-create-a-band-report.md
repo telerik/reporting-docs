@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: how,to,use,the,report,wizard,to,create,a,band,report
 published: True
 position: 1
+previous_url: /quick-start-create-simple-report
 ---
 
 # How to use the Report Wizard to create a Band Report

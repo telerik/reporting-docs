@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: package,report,definition
 published: True
 position: 6
+previous_url: /report-packaging-trdp
 ---
 
 # Package Report Definition

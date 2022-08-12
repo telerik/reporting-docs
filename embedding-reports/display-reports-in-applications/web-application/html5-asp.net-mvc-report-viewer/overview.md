@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 position: 0
+previous_url: /mvc-report-viewer-extension-overview
 ---
 
 # HTML5 ASP.NET MVC Report Viewer Overview

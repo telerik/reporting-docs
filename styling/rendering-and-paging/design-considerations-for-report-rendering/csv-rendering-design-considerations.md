@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: csv,rendering,design,considerations
 published: True
 position: 5
+previous_url: /designing-reports-considerations-csv
 ---
 <style>
 table th:first-of-type {

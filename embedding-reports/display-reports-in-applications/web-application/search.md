@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: search
 published: True
 position: 11
+previous_url: /html5-report-viewer-search
 ---
 
 # Search

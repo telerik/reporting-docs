@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: word,rendering,design,considerations
 published: True
 position: 8
+previous_url: /designing-reports-considerations-word
 ---
 
 # Word Rendering Design Considerations

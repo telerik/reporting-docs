@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/troubleshooting/data
 tags: data,binding,problems
 published: True
 position: 1
+previous_url: /Troubleshooting-Data-Binding-problems
 ---
 
 # Data Binding Problems

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: deploying,web,reportviewer,in,sharepoint
 published: True
 position: 4
+previous_url: /asp-net-report-viewer-deploying-web-reportViewer-in-MOSS
 ---
 
 # Deploying Web ReportViewer in SharePoint

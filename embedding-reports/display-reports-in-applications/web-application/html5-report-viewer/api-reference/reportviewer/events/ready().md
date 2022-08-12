@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: ready()
 published: True
 position: 0
+previous_url: /html5-report-viewer-reportviewer-events-ready
 ---
 
 # ready()

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/map-types
 tags: map,types
 published: True
 position: 2
+previous_url: /MapChartTypes
 ---
 
 # Map Types

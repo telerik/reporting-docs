@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: excel,rendering,design,considerations
 published: True
 position: 4
+previous_url: /designing-reports-considerations-excel
 ---
 <style>
 table th:first-of-type {

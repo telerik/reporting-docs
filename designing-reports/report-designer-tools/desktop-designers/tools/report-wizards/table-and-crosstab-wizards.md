@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: table,and,crosstab,wizards
 published: True
 position: 0
+previous_url: /ui-crosstab-table-wizard
 ---
 
 # Table and CrossTab Wizards

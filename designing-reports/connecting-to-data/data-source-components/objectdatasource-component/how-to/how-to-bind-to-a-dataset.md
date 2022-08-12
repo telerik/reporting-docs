@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,bind,to,a,dataset
 published: True
 position: 4
+previous_url: /object-data-source-how-to-bind-to-data-set
 ---
 
 # How to Bind to a DataSet

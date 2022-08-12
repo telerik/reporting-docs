@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/textbox
 tags: textbox
 published: True
 position: 14
+previous_url: /report-items-text-box
 ---
 
 # TextBox

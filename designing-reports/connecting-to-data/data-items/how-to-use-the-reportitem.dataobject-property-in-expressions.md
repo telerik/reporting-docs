@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/how-to-us
 tags: how,to,use,the,reportitem.dataobject,property,in,expressions
 published: True
 position: 6
+previous_url: /data-items-how-to-use-data-object
 ---
 
 # How to use the ReportItem.DataObject property in expressions

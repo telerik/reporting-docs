@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: localization
 published: True
 position: 3
+previous_url: /standalone-report-designer-localization
 ---
 
 # Localization

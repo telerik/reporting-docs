@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/structure/overview
 tags: overview
 published: True
 position: 0
+previous_url: /MapStructure
 ---
 
 # Structure Overview

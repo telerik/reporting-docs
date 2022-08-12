@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: ajax,support
 published: True
 position: 5
+previous_url: /asp-net-report-viewer-ajax
 ---
 
 # AJAX support

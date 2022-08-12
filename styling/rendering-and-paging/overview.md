@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/overview
 tags: overview
 published: True
 position: 0
+previous_url: /designing-reports-page-layout-rendering
 ---
 <style>
 table th:first-of-type {

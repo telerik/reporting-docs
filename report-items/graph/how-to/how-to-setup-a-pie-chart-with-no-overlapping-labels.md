@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-se
 tags: how,to,setup,a,pie,chart,with,no,overlapping,labels
 published: True
 position: 13
+previous_url: /HowToSetupPieChartWithNoOverlappingLabels
 ---
 
 # How to Setup a Pie Chart with no Overlapping Labels

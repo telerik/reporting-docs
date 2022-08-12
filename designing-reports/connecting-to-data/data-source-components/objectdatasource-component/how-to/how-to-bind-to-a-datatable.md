@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,bind,to,a,datatable
 published: True
 position: 1
+previous_url: /object-data-source-how-to-bind-to-data-table
 ---
 
 # How to Bind to a DataTable

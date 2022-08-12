@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,add,report,viewer,to,a,.net,5,application
 published: True
 position: 1
+previous_url: /winui-report-viewer-how-to-add-in-net5-app
 ---
 
 # How to Add report viewer to a .NET 5 application

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: using,parameters,with,data,source,objects
 published: True
 position: 12
+previous_url: /connecting-to-data-using-parameters
 ---
 
 # Using Parameters with Data Source objects

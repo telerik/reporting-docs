@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-book/how-to-create-a-report-book
 tags: how,to,create,a,report,book,at,run-time
 published: True
 position: 6
+previous_url: /designing-reports-reportbook-creating-reportbook-run-time
 ---
 
 # How to Create a Report Book at run-time

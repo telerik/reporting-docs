@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: xml,report,definition
 published: True
 position: 4
+previous_url: /upgrading-xml-report-definition-versioning
 ---
 
 # XML Report Definition

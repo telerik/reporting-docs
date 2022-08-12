@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: custom,action
 published: True
 position: 7
+previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action, /designing-reports-interactivity-custom-action
 ---
 
 # Custom Action

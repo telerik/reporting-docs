@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: processing,element
 published: True
 position: 3
+previous_url: /configuring-telerik-reporting-cacheDefinitionProperties
 ---
 <style>
 table th:first-of-type {

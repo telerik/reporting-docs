@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: interactive,vs.,print,layout
 published: True
 position: 9
+previous_url: /report-viewers-interactive-print-view
 ---
 
 # Interactive vs. Print Layout

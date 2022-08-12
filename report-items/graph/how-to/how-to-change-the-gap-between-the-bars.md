@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-ch
 tags: how,to,change,the,gap,between,the,bars
 published: True
 position: 6
+previous_url: /GraphHowToChangeTheGapBetweenTheBars
 ---
 
 # How to Change the Gap Between the Bars

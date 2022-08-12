@@ -6,6 +6,7 @@ slug: telerikreporting/copyright
 tags: copyright
 published: False
 position: 11
+previous_url: /licensing-and-distribution-copyrights-and-trademarks
 ---
 
 # Product Documentation Copyright Notice/Trademark Legend

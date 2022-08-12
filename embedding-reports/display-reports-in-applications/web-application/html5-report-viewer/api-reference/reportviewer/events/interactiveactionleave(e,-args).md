@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: interactiveactionleave(e,,args)
 published: True
 position: 14
+previous_url: /html5-report-viewer-reportviewer-events-interactiveactionleave
 ---
 <style>
 table th:first-of-type {

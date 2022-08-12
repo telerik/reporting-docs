@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: parametervalue
 published: True
 position: 6
+previous_url: /telerik-reporting-rest-json-entities-parametervalue
 ---
 <style>
 table th:first-of-type {

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-h
 tags: table,header,freezing
 published: True
 position: 5
+previous_url: /table-headers-freezing
 ---
 
 # Table Header Freezing

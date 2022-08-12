@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-cr
 tags: how,to,create,graph,with,column,and,line,series
 published: True
 position: 9
+previous_url: /GraphHowToCreateGraphWithColumnAndLineSeries
 ---
 
 # How to Create Graph with Column and Line Series

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: refreshreport()
 published: True
 position: 11
+previous_url: /html5-report-viewer-reportviewer-methods-refreshreport
 ---
 
 # refreshReport()

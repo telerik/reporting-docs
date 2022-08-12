@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering
 tags: overview
 published: True
 position: 0
+previous_url: /data-items-filtering-data
 ---
 
 # Filtering Data Overview

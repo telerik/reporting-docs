@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,use,jsonpath,to,filter,json,data
 published: True
 position: 1
+previous_url: /how-to-use-jsonpath
 ---
 
 # How to Use JSONPath to filter JSON data

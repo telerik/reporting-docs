@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: reportsource,model,binding
 published: True
 position: 4
+previous_url: /mvc-report-viewer-reportsource-model-binding
 ---
 
 # ReportSource Model Binding

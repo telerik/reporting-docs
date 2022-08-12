@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/overview
 tags: overview
 published: True
 position: 0
+previous_url: /report-designers
 ---
 
 # Report Designer Tools Overview

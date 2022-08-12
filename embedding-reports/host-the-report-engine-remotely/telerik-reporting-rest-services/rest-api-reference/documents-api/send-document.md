@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: send,document
 published: True
 position: 3
+previous_url: /telerik-reporting-rest-documents-api-send-document
 ---
 <style>
 table th:first-of-type {

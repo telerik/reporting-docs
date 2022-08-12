@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: interactive,action,events
 published: True
 position: 8
+previous_url: /designing-reports-interactive-action-events
 ---
 
 # Interactive Action Events

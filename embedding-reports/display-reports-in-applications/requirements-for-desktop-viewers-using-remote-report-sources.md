@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: requirements,for,desktop,viewers,using,remote,report,sources
 published: True
 position: 11
+previous_url: /requirements-for-desktop-viewers-using-remote-report-sources
 ---
 
 # Requirements For Desktop Viewers Using Remote Report Sources

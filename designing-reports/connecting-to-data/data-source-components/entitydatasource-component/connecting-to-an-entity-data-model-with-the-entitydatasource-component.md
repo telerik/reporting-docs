@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: connecting,to,an,entity,data,model,with,the,entitydatasource,component
 published: True
 position: 1
+previous_url: /entitydatasource-connecting-to-entity-data-model
 ---
 
 # Connecting to an Entity Data Model with the EntityDataSource component

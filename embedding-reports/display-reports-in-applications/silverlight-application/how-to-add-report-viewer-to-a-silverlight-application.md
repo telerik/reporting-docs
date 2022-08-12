@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,add,report,viewer,to,a,silverlight,application
 published: True
 position: 1
+previous_url: /silverlight-report-viewer-embedding_the_Silverlight_Viewer
 ---
 
 # How to Add report viewer to a Silverlight application

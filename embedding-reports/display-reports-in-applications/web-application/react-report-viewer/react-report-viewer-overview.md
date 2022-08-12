@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: react,report,viewer,overview
 published: True
 position: 0
+previous_url: /react-report-viewer
 ---
 
 # React Report Viewer Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: apply,interactive,action,on,document
 published: True
 position: 6
+previous_url: /telerik-reporting-rest-documents-api-apply-interactive-action
 ---
 <style>
 table th:first-of-type {

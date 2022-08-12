@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,angular,report,viewer,with,angular,cli
 published: True
 position: 1
+previous_url: /angular-report-how-to-use-with-angular-cli
 ---
 
 # How to Use Angular Report Viewer with Angular CLI

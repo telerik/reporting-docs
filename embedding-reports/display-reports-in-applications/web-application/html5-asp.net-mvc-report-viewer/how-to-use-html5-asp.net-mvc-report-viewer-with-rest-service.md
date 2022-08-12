@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,html5,asp.net,mvc,report,viewer,with,rest,service
 published: True
 position: 1
+previous_url: /mvc-report-viewer-extension-embedding
 ---
 
 # How to Use HTML5 ASP.NET MVC Report Viewer With REST Service

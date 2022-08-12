@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: xps,rendering,design,considerations
 published: True
 position: 7
+previous_url: /designing-reports-considerations-xps
 ---
 
 # XPS Rendering Design Considerations

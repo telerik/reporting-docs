@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data
 tags: how,to,set,a,no,data,message
 published: True
 position: 6
+previous_url: /report-structure-dataitem-set-no-data-message
 ---
 
 # How to Set a No Data Message

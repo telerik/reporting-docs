@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/datadirect-odbc-driv
 tags: datadirect,odbc,drivers
 published: True
 position: 5
+previous_url: /datadirect-odbc-drivers
 ---
 
 # DataDirect ODBC Drivers

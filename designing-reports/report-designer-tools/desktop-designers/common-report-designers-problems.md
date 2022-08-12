@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: common,report,designers,problems
 published: True
 position: 3
+previous_url: /Troubleshooting-Common-Report-Designers-Problems
 ---
 
 # Common Report Designers Problems

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,using,report,parameters,to,retrieve,specific,data
 published: False
 position: 2
+previous_url: /asp-net-report-viewer-outproc-using report-params-to-retrieve-specific-data
 ---
 
 # How to Using Report Parameters to Retrieve Specific data

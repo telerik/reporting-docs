@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: overview
 published: True
 position: 0
+previous_url: /designing-reports-considerations-overview
 ---
 
 # Design Considerations for Report Rendering Overview

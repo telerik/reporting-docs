@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: search,in,report,contents
 published: True
 position: 10
+previous_url: /winforms-report-viewer-search
 ---
 
 # Search in Report Contents

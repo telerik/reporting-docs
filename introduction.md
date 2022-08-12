@@ -6,6 +6,7 @@ slug: telerikreporting/welcome-to-telerik-reporting!
 tags: telerik, reporting, introduction, welcome
 published: True
 position: 0
+previous_url: /overview
 ---
 
 # Welcome to Telerik Reporting

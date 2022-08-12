@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: mailmessage
 published: True
 position: 8
+previous_url: /telerik-reporting-rest-json-entities-mailmessage
 ---
 <style>
 table th:first-of-type {

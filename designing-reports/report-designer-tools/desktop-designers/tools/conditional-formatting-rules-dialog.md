@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: conditional,formatting,rules,dialog
 published: True
 position: 6
+previous_url: /ui-conditional-formatting
 ---
 
 # Conditional Formatting Rules Dialog

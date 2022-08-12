@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: sorting,crosstab,total
 published: True
 position: 2
+previous_url: /interactive-sorting-action-crosstab-total
 ---
 
 # Sorting Crosstab Total

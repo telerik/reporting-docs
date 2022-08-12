@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,configure,an,mssql,database,storage
 published: True
 position: 1
+previous_url: /telerik-reporting-rest-howto-use-mssql-storage
 ---
 
 # How to Configure an MSSQL Database Storage

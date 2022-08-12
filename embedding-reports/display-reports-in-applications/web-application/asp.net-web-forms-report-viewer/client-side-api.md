@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: client-side,api
 published: True
 position: 6
+previous_url: /asp-net-report-viewer-clientAPI
 ---
 <style>
 table th:first-of-type {

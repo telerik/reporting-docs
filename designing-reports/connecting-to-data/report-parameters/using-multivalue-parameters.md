@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/us
 tags: using,multivalue,parameters
 published: True
 position: 4
+previous_url: /designing-reports-parameters-using-multivalue-parameter
 ---
 
 # Using Multivalue Parameters

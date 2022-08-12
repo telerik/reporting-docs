@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,configure,the,openclientdatasource,component
 published: True
 position: 1
+previous_url: /openclient-data-source-how-to-configure
 ---
 
 # How to Configure the OpenClientDataSource Component

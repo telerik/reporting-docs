@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: sorting,multiple,items/groups
 published: True
 position: 6
+previous_url: /interactive-sorting-action-multiple-items
 ---
 
 # Sorting Multiple Items/Groups

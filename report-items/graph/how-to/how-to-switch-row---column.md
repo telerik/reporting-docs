@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-sw
 tags: how,to,switch,row,/,column
 published: True
 position: 11
+previous_url: /GraphHowToSwitchRowColumn
 ---
 
 # How to Switch Row / Column

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: imageinteractive,device,information,settings
 published: True
 position: 2
+previous_url: /device-information-settings-imageinteractive
 ---
 <style>
 table th:first-of-type {

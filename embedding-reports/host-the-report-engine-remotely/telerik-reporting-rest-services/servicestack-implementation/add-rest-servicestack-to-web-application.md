@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,add,telerik,reporting,rest,servicestack,to,web,application
 published: True
 position: 2
+previous_url: /telerik-reporting-rest-servicestack-hosting-iis
 ---
 
 # How to Add Telerik Reporting REST ServiceStack to Web Application

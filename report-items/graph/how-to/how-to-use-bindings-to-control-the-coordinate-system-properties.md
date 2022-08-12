@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-us
 tags: how,to,use,bindings,to,control,the,coordinate,system,properties
 published: True
 position: 12
+previous_url: /GraphHowToUseBindingsToControlCSProperties
 ---
 
 # How to Use Bindings to Control the Coordinate System Properties

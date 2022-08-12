@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: powerpoint,device,information,settings
 published: True
 position: 13
+previous_url: /device-information-settings-powerpoint
 ---
 <style>
 table th:first-of-type {

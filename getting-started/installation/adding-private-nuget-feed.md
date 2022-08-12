@@ -3,7 +3,7 @@ title: Adding the Private Telerik NuGet Feed
 page_title: Adding the Private Telerik  NuGet Feed to Visual Studio 
 description: "Get up and running with Telerik Reporting and learn how to add the Telerik private NuGet feed to Visual Studio."
 slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
-previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
+previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio, /add-the-telerik-private-nuget-feed-to-visual-studio
 tags: how,to,add,the,telerik,private,nuget,feed,to,visual,studio
 published: True
 position: 8

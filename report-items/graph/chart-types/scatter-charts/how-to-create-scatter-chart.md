@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scat
 tags: how,to,create,scatter,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreateScatterChart
 ---
 
 # How to Create Scatter Chart

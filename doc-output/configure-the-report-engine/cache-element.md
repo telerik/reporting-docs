@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: cache,element
 published: True
 position: 2
+previous_url: /configuring-telerik-reporting-cache
 ---
 <style>
 table th:first-of-type {

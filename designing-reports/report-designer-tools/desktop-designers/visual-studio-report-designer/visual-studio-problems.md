@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: visual,studio,problems
 published: True
 position: 4
+previous_url: /troubleshooting-visual-studio-problems
 ---
 
 # Visual Studio Problems

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: word,device,information,settings
 published: True
 position: 12
+previous_url: /device-information-settings-word
 ---
 <style>
 table th:first-of-type {

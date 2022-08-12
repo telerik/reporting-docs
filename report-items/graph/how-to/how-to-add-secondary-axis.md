@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-ad
 tags: how,to,add,secondary,axis
 published: True
 position: 2
+previous_url: /GraphHowToAddSecondaryAxis
 ---
 
 # How to add Secondary Axis

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: using,report,events
 published: True
 position: 2
+previous_url: /using-report-events
 ---
 
 # Using Report Events

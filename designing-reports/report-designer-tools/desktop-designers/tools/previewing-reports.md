@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: previewing,reports
 published: True
 position: 18
+previous_url: /installation-previewing-report
 ---
 
 # Previewing Reports

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: how,to,set,up,in,.net,framework,application
 published: True
 position: 4
+previous_url: /web-report-designer-setup-in-dot-net-framework
 ---
 
 # How to set up in .NET Framework application

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: serialize,report,definition,in,xml
 published: True
 position: 7
+previous_url: /programmatic-xml-serialization
 ---
 
 # Serialize Report Definition in XML

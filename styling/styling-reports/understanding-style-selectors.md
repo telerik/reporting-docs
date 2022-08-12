@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/understanding-style-sel
 tags: understanding,style,selectors
 published: True
 position: 1
+previous_url: /style-understanding-style-selectors
 ---
 
 # Understanding Style Selectors

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview
 tags: overview
 published: True
 position: 0
+previous_url: /report-expressions
 ---
 
 # Expressions Overview

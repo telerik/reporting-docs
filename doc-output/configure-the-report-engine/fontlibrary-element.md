@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: fontlibrary,element
 published: True
 position: 7
+previous_url: /configuring-telerik-reporting-fontlibrary
 ---
 <style>
 table th:first-of-type {

@@ -3,7 +3,7 @@ title: Data Matrix
 page_title: Data Matrix  
 description: "Learn more about the two-dimensional Data Matrix barcode type supported by the Telerik Reporting Barcode report item."
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview
-previous_url: /report-items/barcode/barcode-types/2d-barcodes/data-matrix/settings, /report-items/barcode/barcode-types/2d-barcodes/data-matrix/overview
+previous_url: /report-items/barcode/barcode-types/2d-barcodes/data-matrix/settings, /report-items/barcode/barcode-types/2d-barcodes/data-matrix/overview, /report-items-barcode-datamatrix-visual-structure
 tags: telerik, reporting, report, items, barcode, 2d, data, matrix, overview, settings
 published: True
 position: 4

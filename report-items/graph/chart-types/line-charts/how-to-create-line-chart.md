@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/line
 tags: how,to,create,line,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreateLineChart
 ---
 
 # How to Create Line Chart

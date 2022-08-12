@@ -3,7 +3,7 @@ title: SubReport
 page_title: SubReport 
 description: SubReport
 slug: telerikreporting/designing-reports/report-structure/subreport
-previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subreport 
+previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subreport , /report-items-sub-report
 tags: telerik, reporting, report, items, subreport
 published: True
 position: 12

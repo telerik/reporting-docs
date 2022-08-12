@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: scale()
 published: True
 position: 14
+previous_url: /html5-report-viewer-reportviewer-methods-scale
 ---
 
 # scale()

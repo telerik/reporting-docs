@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/converting-reports-from-other-reporting
 tags: telerik, reporting, importing, reports, crystal, reports, converter
 published: True
 position: 1
+previous_url: /crystal-reports-converter
 ---
 
 # SAP Crystal Reports

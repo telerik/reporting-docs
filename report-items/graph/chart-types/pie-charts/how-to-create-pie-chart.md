@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pie-
 tags: how,to,create,pie,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreatePieChart
 ---
 
 # How to Create Pie Chart

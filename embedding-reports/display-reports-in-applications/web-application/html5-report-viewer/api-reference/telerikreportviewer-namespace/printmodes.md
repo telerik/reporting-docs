@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: printmodes
 published: True
 position: 3
+previous_url: /html5-report-viewer-api-printmodes
 ---
 
 # PrintModes

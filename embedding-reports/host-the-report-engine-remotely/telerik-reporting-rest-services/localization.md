@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: localization
 published: True
 position: 6
+previous_url: /telerik-reporting-rest-service-localization
 ---
 
 # Localization

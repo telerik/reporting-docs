@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,change,parameter,editors,type
 published: True
 position: 3
+previous_url: /html5-mvc-report-viewer-change-parameters-editors-type
 ---
 
 # How to Change Parameter Editors Type

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/exporting-and-reusing-s
 tags: exporting,and,reusing,style,sheets
 published: True
 position: 4
+previous_url: /style-exportingand-reusing-style-sheets
 ---
 
 # Exporting and Reusing Style Sheets

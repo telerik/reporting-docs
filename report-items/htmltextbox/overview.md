@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/htmltextbox/overview
 tags: overview
 published: True
 position: 0
+previous_url: /report-items-html-text-box
 ---
 
 # HtmlTextBox Overview

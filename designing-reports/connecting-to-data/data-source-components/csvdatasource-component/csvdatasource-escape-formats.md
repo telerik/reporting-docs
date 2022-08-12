@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: csvdatasource,escape,formats
 published: True
 position: 2
+previous_url: /csvdatasource-escape-formats
 ---
 <style>
 table th:first-of-type {

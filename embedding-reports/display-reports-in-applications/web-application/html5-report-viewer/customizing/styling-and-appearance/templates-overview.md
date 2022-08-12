@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: templates,overview
 published: True
 position: 1
+previous_url: /html5-report-viewer-template
 ---
 
 # Templates Overview

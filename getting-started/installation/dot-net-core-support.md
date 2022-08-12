@@ -3,7 +3,7 @@ title: .NET Core Support
 page_title: .NET Core Support 
 description: "Learn how to use Telerik reports in .NET Core applications on Windows, Linux, and macOS platforms."
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
-previous_url: /using-reports-in-applications/dot-net-core-support
+previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-in-net-core-apps
 tags: telerik, reporting, dotnet, core, support, getting, started, download, and, installation
 published: True
 position: 7

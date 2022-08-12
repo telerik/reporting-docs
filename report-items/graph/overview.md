@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/overview
 tags: overview
 published: True
 position: 0
+previous_url: /GraphOverview
 ---
 
 # Graph Overview

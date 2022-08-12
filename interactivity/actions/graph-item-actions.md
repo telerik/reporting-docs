@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: graph,item,actions
 published: True
 position: 6
+previous_url: /designing-reports-interactivity-graph-item
 ---
 
 # Graph Item Actions

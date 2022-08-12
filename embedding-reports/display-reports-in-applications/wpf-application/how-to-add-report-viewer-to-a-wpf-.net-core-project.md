@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,add,report,viewer,to,a,wpf,.net,core,project
 published: True
 position: 2
+previous_url: /wpf-report-viewer-add-to-net-core-project
 ---
 
 # How to Add report viewer to a WPF .NET Core project

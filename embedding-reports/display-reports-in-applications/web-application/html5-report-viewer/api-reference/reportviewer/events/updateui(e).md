@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: updateui(e)
 published: True
 position: 11
+previous_url: /html5-report-viewer-reportviewer-events-updateui
 ---
 <style>
 table th:first-of-type {

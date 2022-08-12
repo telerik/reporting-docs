@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/spar
 tags: sparklines
 published: True
 position: 9
+previous_url: /SparklinesAndDataBars
 ---
 
 # Sparklines

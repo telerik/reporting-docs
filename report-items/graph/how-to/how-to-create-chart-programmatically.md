@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-cr
 tags: how,to,create,chart,programmatically
 published: True
 position: 7
+previous_url: /GraphHowToCreateProgrammaticallyGraph
 ---
 
 # How to Create Chart Programmatically

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: true,print
 published: True
 position: 3
+previous_url: /reportviewers-true-print
 ---
 
 # True Print

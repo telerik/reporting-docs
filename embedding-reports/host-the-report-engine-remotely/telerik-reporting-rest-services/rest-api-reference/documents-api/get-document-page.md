@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,document,page
 published: True
 position: 4
+previous_url: /telerik-reporting-rest-documents-api-get-document-page
 ---
 <style>
 table th:first-of-type {

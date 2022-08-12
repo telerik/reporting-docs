@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,available,document,formats
 published: True
 position: 0
+previous_url: /telerik-reporting-rest-general-api-get-document-formats
 ---
 
 # Get Available Document Formats

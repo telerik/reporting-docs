@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: commands
 published: True
 position: 0
+previous_url: /html5-report-viewer-reportviewer-properties-commands
 ---
 <style>
 table th:first-of-type {

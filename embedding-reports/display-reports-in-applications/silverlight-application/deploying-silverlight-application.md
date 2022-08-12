@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: deploying,silverlight,application
 published: True
 position: 5
+previous_url: /installation-deploying-on-silverlight-application
 ---
 
 # Deploying Silverlight Application

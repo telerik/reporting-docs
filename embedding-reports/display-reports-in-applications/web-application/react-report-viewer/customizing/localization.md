@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: localization
 published: True
 position: 2
+previous_url: /react-report-viewer-localization
 ---
 
 # Localization

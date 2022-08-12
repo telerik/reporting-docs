@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: selecting,data,with,the,sqldatasource,component
 published: True
 position: 2
+previous_url: /sql-data-source-selecting-data
 ---
 
 # Selecting Data with the SqlDataSource component

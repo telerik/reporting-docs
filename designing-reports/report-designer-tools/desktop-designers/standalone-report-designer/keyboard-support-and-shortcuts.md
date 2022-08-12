@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: keyboard,support,and,shortcuts
 published: True
 position: 2
+previous_url: /standalone-report-designer-keyboard-shortcuts
 ---
 
 # Keyboard Support and Shortcuts

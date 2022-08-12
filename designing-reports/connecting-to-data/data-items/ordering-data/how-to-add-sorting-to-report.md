@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-
 tags: how,to,add,sorting,to,report
 published: True
 position: 1
+previous_url: /data-items-how-to-add-sorting-to-report-item
 ---
 
 # How to Add sorting to Report

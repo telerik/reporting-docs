@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pola
 tags: overview
 published: True
 position: 0
+previous_url: /PolarCharts
 ---
 
 # Polar Charts Overview

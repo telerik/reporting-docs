@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/chart-(obsolete)
 tags: telerik, reporting, report, items, chart, obsolete
 published: True
 position: 50
+previous_url: /report-items-chart
 ---
 
 # (Obsolete) Chart 

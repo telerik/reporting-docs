@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: telerik,reporting,menu
 published: True
 position: 2
+previous_url: /ui-telerik-reporting-menu
 ---
 
 # Telerik Reporting Menu

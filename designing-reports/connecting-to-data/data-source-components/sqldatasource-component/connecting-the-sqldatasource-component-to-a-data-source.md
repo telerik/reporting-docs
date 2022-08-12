@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: connecting,the,sqldatasource,component,to,a,data,source
 published: True
 position: 1
+previous_url: /sql-data-source-connecting-to-data
 ---
 
 # Connecting the SqlDataSource component to a Data Source

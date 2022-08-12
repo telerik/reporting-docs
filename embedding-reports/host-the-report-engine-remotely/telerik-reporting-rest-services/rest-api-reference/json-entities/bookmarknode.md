@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: bookmarknode
 published: True
 position: 0
+previous_url: /telerik-reporting-rest-json-entities-bookmarknode
 ---
 <style>
 table th:first-of-type {

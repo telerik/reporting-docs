@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,add,manually,report,viewer,to,a,windows,forms',.net,framework,project
 published: True
 position: 3
+previous_url: /winforms-report-viewer-manual-setup
 ---
 
 # How to Add manually report viewer to a Windows Forms' .NET Framework project

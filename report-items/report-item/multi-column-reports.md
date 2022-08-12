@@ -3,7 +3,7 @@ title: Creating Multi-Column Reports
 page_title: Creating Multi-Column Reports 
 description: "Learn how to create multi-column reports when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report
-previous_url: /report-items/how-to/how-to-create-a-multi-column-report
+previous_url: /report-items/how-to/how-to-create-a-multi-column-report, /advanced-creating-multi-column-reports
 tags: telerik, reporting, report, items, item, creating, multi, column, reports
 published: True
 position: 2

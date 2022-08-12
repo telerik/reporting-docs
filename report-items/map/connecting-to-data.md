@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/connecting-to-data
 tags: connecting,to,data
 published: True
 position: 1
+previous_url: /MapConnectingToData
 ---
 
 # Connecting to Data

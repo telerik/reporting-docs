@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: edit,calculated,fields,dialog
 published: True
 position: 12
+previous_url: /ui-calculated-fields
 ---
 
 # Edit Calculated Fields Dialog

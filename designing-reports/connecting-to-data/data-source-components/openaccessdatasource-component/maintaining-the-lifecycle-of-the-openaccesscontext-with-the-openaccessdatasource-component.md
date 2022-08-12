@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: maintaining,the,lifecycle,of,the,openaccesscontext,with,the,openaccessdatasource,component
 published: True
 position: 4
+previous_url: /openaccessdatasource-maintaining-the-lifecycle-of-the-openaccesscontext
 ---
 
 # Maintaining the lifecycle of the OpenAccessContext with the OpenAccessDataSource component

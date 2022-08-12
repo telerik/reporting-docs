@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: privatefonts,element
 published: True
 position: 6
+previous_url: /configuring-telerik-reproting-privatefonts
 ---
 <style>
 table th:first-of-type {

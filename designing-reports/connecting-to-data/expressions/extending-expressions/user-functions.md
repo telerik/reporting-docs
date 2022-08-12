@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/extendin
 tags: user,functions
 published: True
 position: 1
+previous_url: /expressions-user-functions
 ---
 
 # User Functions

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/cross-section-item
 tags: telerik, reporting, report, items, cross, section, item
 published: True
 position: 4
+previous_url: /report-items-cross-section-item
 ---
 
 # Cross-Section 

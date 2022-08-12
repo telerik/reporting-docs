@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-ex
 tags: grouping,,filtering,and,sorting
 published: True
 position: 5
+previous_url: /expressions-grouping-filtering-sorting
 ---
 
 # Grouping, Filtering and Sorting

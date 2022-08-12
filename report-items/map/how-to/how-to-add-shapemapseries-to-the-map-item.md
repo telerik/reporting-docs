@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-
 tags: how,to,add,shapemapseries,to,the,map,item
 published: True
 position: 6
+previous_url: /MapHowToAddShapeMapSeriesToTheMapItem
 ---
 
 # How to Add ShapeMapSeries to the Map Item

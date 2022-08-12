@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setu
 tags: how,to,setup,a,choropleth,using,the,map,wizard
 published: True
 position: 4
+previous_url: /ChoroplethHowToSetupAChoroplethWithCsvAndShapefile
 ---
 
 # How to Setup a Choropleth Using the Map Wizard

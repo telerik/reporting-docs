@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: html5,device,information,settings
 published: True
 position: 10
+previous_url: /device-information-settings-html
 ---
 <style>
 table th:first-of-type {

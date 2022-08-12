@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/fonts-requirements
 tags: fonts,requirements
 published: True
 position: 5
+previous_url: /rendering-fonts-in-reports
 ---
 
 # Fonts Requirements

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,report,parameters
 published: True
 position: 0
+previous_url: /telerik-reporting-rest-report-parameters-api-get-report-parameters
 ---
 <style>
 table th:first-of-type {

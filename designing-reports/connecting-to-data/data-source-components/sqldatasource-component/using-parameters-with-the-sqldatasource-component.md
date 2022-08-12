@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: using,parameters,with,the,sqldatasource,component
 published: True
 position: 3
+previous_url: /sql-data-source-using-parameters
 ---
 
 # Using Parameters with the SqlDataSource component

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: using,custom,bindings
 published: True
 position: 4
+previous_url: /silverlight-report-viewer-using-custom-bindings
 ---
 
 # Using Custom Bindings

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: overview
 published: True
 position: 0
+previous_url: /connecting-to-data-data-source-components
 ---
 
 # Data Source Components Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: label,report,wizard
 published: True
 position: 2
+previous_url: /label-report-wizard
 ---
 <style>
 table th:first-of-type {

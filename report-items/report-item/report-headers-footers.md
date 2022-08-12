@@ -3,7 +3,7 @@ title: Report Headers and Footers
 page_title: Report Headers and Footers
 description: "Learn more about the specifics of the report header and footer sections and add or remove them when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections
-previous_url: /report-items/how-to/how-to-add-remove-report-header---footer-sections
+previous_url: /report-items/how-to/how-to-add-remove-report-header---footer-sections, /designing-reports-creating-report-headers-and-footers
 tags: telerik, reporting, report, items, item, report, header, footer, section
 published: True
 position: 4

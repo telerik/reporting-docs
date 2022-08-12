@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,host,reports,service,in,asp.net,core,3.1
 published: True
 position: 4
+previous_url: /telerik-reporting-rest-service-aspnetcore-mvc-core3
 ---
 
 # How to Host Reports Service in ASP.NET Core 3.1

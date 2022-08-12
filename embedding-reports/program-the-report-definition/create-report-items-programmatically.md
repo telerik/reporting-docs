@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: create,report,items,programmatically
 published: True
 position: 3
+previous_url: /programmatic-creating-controls
 ---
 
 # Create Report Items Programmatically

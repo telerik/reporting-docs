@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: retrieving,data,from,a,telerik,data,access,model,with,the,openaccessdatasource,component
 published: True
 position: 5
+previous_url: /openaccessdatasource-retrieving-data-from-an-openaccess-model
 ---
 
 # Retrieving data from a Telerik Data Access Model with the OpenAccessDataSource component

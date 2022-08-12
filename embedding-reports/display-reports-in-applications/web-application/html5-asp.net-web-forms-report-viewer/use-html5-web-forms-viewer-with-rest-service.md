@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,html5,asp.net,web,forms,report,viewer,with,rest,service
 published: True
 position: 1
+previous_url: /webforms-report-viewer-controls-embedding
 ---
 
 # How to Use HTML5 ASP.NET Web Forms Report Viewer with REST Service

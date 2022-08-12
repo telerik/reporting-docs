@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-ch
 tags: how,to,change,a,chart,type
 published: True
 position: 4
+previous_url: /ChangeChartType
 ---
 
 # How to change a Chart Type

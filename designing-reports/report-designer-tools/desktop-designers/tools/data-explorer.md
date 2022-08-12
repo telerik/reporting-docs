@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: data,explorer
 published: True
 position: 4
+previous_url: /ui-data-explorer
 ---
 
 # Data Explorer

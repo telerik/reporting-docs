@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: protecting,telerik,reporting,binaries,when,redistributed,as,part,of,a,packaged,product
 published: False
 position: 10
+previous_url: /installation-protecting-assemblies
 ---
 
 # Protecting Telerik Reporting binaries when redistributed as part of a packaged product

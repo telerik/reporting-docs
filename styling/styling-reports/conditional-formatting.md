@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/conditional-formatting
 tags: conditional,formatting
 published: True
 position: 6
+previous_url: /styling-conditional-formatting
 ---
 
 # Conditional Formatting

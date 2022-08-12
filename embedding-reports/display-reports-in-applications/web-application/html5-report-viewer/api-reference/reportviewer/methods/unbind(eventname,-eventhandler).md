@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: unbind(eventname,,eventhandler)
 published: True
 position: 17
+previous_url: /html5-report-viewer-reportviewer-methods-unbind-en-eh
 ---
 
 # unbind(eventName, eventHandler)

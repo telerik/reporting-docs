@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/extendin
 tags: overview
 published: True
 position: 0
+previous_url: /expressions-extending-expressions
 ---
 
 # Extending Expressions Overview

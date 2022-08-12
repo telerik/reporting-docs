@@ -5,6 +5,7 @@ description: Document Map Overview
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview
 tags: overview
 published: True
+previous_url: /designing-reports-document-map
 ---
 
 # Document Map

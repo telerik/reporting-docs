@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,implement,the,reportscontroller,in,an,application
 published: True
 position: 4
+previous_url: /telerik-reporting-rest-implementing-http-service
 ---
 
 # How to implement the ReportsController in an application

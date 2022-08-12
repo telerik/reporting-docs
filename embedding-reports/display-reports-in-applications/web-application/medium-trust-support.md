@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: medium,trust,support
 published: True
 position: 6
+previous_url: /asp-net-medium-trust-support
 ---
 
 # Medium Trust Support

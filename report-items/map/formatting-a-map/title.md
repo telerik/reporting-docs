@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/t
 tags: title
 published: True
 position: 2
+previous_url: /MapFormattingTitle
 ---
 
 # Title

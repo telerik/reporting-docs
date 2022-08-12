@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-book/how-to-use-reportbook-in-wi
 tags: how,to,use,reportbook,in,windows,forms,app
 published: True
 position: 5
+previous_url: /designing-reports-reportbook-win-viewer
 ---
 
 # How to Use ReportBook in Windows Forms app

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: appdata,element
 published: True
 position: 8
+previous_url: /configuring-telerik-reporting-appdata
 ---
 <style>
 table th:first-of-type {

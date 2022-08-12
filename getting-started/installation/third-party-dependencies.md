@@ -3,7 +3,7 @@ title: Third-Party Dependencies
 page_title: Third-Party Dependencies 
 description: "Learn more about the third-party dependencies when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/third-party-dependencies
-previous_url: /using-reports-in-applications/third-party-dependencies
+previous_url: /using-reports-in-applications/third-party-dependencies, /installation-deploying-adomd.net
 tags: third-party,dependencies
 published: True
 position: 20

@@ -3,7 +3,7 @@ title: Configuring the Cache Management System
 page_title: Configuring the Cache Management System
 description: "Learn how to configure the cache management system by specifying one or more cache providers when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache
-previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache
+previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache, /configuring-telerik-reporting-session-state
 tags: telerik, reporting, embedding, reports, cache, management, configuring
 published: True
 position: 1

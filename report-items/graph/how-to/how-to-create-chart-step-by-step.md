@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-cr
 tags: how,to,create,chart,step,by,step
 published: True
 position: 8
+previous_url: /GraphHowToCreateChart
 ---
 <style>
 table th:first-of-type {

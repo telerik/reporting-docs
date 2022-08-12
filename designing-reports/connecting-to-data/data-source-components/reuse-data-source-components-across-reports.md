@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: reuse,data,source,components,across,reports
 published: True
 position: 13
+previous_url: /data-source-how-to-add-project-data-source
 ---
 
 # Reuse Data Source components across Reports

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: requirements
 published: True
 position: 1
+previous_url: /telerik-reporting-rest-service-web-api-system-requirements
 ---
 
 # Requirements

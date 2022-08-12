@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: how,to,set,up,in,blazor,application
 published: True
 position: 2
+previous_url: /how-to-blazor-web-report-designer
 ---
 
 # How to set up in Blazor application

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/creating-style-rules
 tags: creating,style,rules
 published: True
 position: 2
+previous_url: /style-creating-style-rules
 ---
 
 # Creating Style Rules

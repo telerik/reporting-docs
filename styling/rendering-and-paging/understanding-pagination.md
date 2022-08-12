@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagi
 tags: understanding,pagination
 published: True
 position: 2
+previous_url: /designing-reports-page-layout-rendering-understanding-pagination
 ---
 
 # Understanding Pagination

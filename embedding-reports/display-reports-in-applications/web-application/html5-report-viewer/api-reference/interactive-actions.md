@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: interactive,actions
 published: True
 position: 8
+previous_url: /html5-report-viewer-interactiveactions
 ---
 <style>
 table th:first-of-type {

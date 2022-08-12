@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,connect,to,a,sql,database
 published: True
 position: 4
+previous_url: /how-to-sqldatasource-connect-sql-database
 ---
 
 # How to Connect to a SQL Database

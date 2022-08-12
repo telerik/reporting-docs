@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-
 tags: how,to,add,map,to,report
 published: True
 position: 0
+previous_url: /MapHowToAddMapToReport
 ---
 
 # How to Add Map to Report

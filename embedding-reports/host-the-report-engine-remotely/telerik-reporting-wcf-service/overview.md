@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview
 published: True
 position: 0
+previous_url: /silverlight-wcf-service-overview
 ---
 
 # Telerik Reporting WCF Service Overview

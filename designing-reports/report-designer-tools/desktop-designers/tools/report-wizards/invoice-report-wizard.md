@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: invoice,report,wizard
 published: True
 position: 4
+previous_url: /InvoiceWizardWalkthrough
 ---
 
 # Invoice Report Wizard

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: bookmark,action
 published: True
 position: 4
+previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action, /designing-reports-interactivity-bookmark-action
 ---
 
 # Bookmark Action

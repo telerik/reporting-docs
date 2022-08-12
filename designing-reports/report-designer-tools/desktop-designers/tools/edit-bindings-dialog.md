@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: edit,bindings,dialog
 published: True
 position: 11
+previous_url: /ui-edit-bindings
 ---
 
 # Edit Bindings Dialog

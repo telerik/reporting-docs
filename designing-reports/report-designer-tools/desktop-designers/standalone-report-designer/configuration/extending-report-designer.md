@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: extending,report,designer
 published: True
 position: 2
+previous_url: /standalone-report-designer-extending-configuration
 ---
 
 # Extending Report Designer

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,use,custom,report,source,resolver,and,custom,report,document,resolver
 published: True
 position: 2
+previous_url: /telerik-reporting-rest-using-custom-report-resolver-and-document-resolver
 ---
 
 # How to use Custom Report Source Resolver and Custom Report Document Resolver

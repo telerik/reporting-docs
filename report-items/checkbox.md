@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/checkbox
 tags: telerik, reporting, report, items, checkbox, expanding, shrinking, embedded, expressions
 published: True
 position: 3
+previous_url: /report-items-checkbox
 ---
 
 # Checkbox 

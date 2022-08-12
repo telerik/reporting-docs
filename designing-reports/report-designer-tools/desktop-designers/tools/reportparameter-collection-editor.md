@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: reportparameter,collection,editor
 published: True
 position: 16
+previous_url: /ui-edit-report-parameters
 ---
 
 # ReportParameter Collection Editor

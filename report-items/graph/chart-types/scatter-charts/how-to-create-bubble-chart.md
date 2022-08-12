@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scat
 tags: how,to,create,bubble,chart
 published: True
 position: 2
+previous_url: /GraphHowToCreateBubbleChart
 ---
 
 # How to Create Bubble Chart

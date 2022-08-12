@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: using,parameters,with,the,objectdatasource,component
 published: True
 position: 2
+previous_url: /object-data-source-using-expressions
 ---
 
 # Using Parameters with the ObjectDataSource Component

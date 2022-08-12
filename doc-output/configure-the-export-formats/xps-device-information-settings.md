@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: xps,device,information,settings
 published: True
 position: 8
+previous_url: /device-information-settings-xps
 ---
 <style>
 table th:first-of-type {

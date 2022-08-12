@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressi
 tags: conditional,functions
 published: True
 position: 2
+previous_url: /expressions-evaluation-flow-functions
 ---
 <style>
 table th:first-of-type {

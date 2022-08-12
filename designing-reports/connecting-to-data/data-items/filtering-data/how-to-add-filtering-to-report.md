@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/filtering
 tags: how,to,add,filtering,to,report
 published: True
 position: 2
+previous_url: /data-items-how-to-add-filtering-to-report-item
 ---
 
 # How to Add filtering to Report

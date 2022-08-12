@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: edit,expression,dialog
 published: True
 position: 7
+previous_url: /ui-edit-expression
 ---
 
 # Edit Expression Dialog

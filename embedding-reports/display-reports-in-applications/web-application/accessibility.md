@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: accessibility
 published: True
 position: 10
+previous_url: /html5-report-viewers-accessibility-support
 ---
 <style>
 table th:first-of-type {

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: rtf,rendering,design,considerations
 published: True
 position: 6
+previous_url: /designing-reports-considerations-rtf
 ---
 
 # RTF Rendering Design Considerations

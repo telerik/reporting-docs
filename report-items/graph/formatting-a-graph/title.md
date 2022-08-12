@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: title
 published: True
 position: 4
+previous_url: /GraphFormattingTitle
 ---
 
 # Title

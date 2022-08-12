@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: report,designer,configuration
 published: True
 position: 1
+previous_url: /standalone-report-designer-default-configuration
 ---
 
 # Report Designer Configuration

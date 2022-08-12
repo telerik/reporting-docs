@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/un
 tags: understanding,table,cells,,rows,and,columns
 published: True
 position: 3
+previous_url: /table-understanding-cells-rows-columns
 ---
 
 # Understanding table Cells, Rows and Columns

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: objectdatasource,wizard
 published: True
 position: 5
+previous_url: /objectDataSource-Wizard
 ---
 
 # ObjectDataSource Wizard

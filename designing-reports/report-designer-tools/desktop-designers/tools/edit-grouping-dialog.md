@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: edit,grouping,dialog
 published: True
 position: 10
+previous_url: /ui-edit-grouping
 ---
 
 # Edit Grouping Dialog

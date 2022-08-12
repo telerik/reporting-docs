@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/overview
 tags: overview
 published: True
 position: 0
+previous_url: /designing-reports-connecting-data-to-report
 ---
 
 # Connecting to Data Overview

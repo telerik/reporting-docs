@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: pdf,device,information,settings
 published: True
 position: 3
+previous_url: /device-information-settings-pdf
 ---
 <style>
 table th:first-of-type {

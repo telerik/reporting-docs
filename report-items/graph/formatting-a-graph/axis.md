@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: axis
 published: True
 position: 1
+previous_url: /GraphFormattingAxis
 ---
 
 # Axis

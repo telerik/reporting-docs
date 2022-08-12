@@ -3,7 +3,7 @@ title: Overview
 page_title: Cache Management System Overview
 description: "Learn more about the dedicated Telerik Reporting cache management system which stores and caches rendered pages and large resources."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/overview
-previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/overview
+previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/overview, /using-telerik-reporting-in-applications-session-state-management
 tags: telerik, reporting, embedding, reports, cache, management, system, overview
 published: True
 position: 0

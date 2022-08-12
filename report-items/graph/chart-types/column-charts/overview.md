@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/colu
 tags: overview
 published: True
 position: 0
+previous_url: /ColumnCharts
 ---
 
 # Column Charts Overview

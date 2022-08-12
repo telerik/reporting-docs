@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: jsondatasource,wizard
 published: True
 position: 2
+previous_url: /jsondatasource-wizard
 ---
 
 # JsonDataSource Wizard

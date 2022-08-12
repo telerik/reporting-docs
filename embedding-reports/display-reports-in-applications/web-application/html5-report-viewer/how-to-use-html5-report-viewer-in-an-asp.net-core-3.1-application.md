@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,html5,report,viewer,in,an,asp.net,core,3.1,application
 published: True
 position: 7
+previous_url: /manual-setup-of-html5-report-viewer-in-asp-net-core-3
 ---
 
 # How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 application

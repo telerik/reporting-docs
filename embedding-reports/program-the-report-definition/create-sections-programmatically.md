@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: create,sections,programmatically
 published: True
 position: 2
+previous_url: /programmatic-creating-sections
 ---
 
 # Create Sections Programmatically

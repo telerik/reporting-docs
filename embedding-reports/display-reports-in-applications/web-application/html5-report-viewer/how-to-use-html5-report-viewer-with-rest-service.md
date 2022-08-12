@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,html5,report,viewer,with,rest,service
 published: True
 position: 2
+previous_url: /html5-report-viewer-quick-start
 ---
 
 # How to Use HTML5 Report Viewer with REST Service

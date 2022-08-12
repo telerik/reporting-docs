@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/shape
 tags: shape
 published: True
 position: 11
+previous_url: /report-items-shape
 ---
 
 # Shape

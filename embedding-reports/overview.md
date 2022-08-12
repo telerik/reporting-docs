@@ -3,7 +3,7 @@ title: Overview
 page_title: Embedding Reports Overview
 description: "Learn more about using Telerik Reporting reports in applications."
 slug: telerikreporting/using-reports-in-applications/overview
-previous_url: /using-reports-in-applications/overview
+previous_url: /using-reports-in-applications/overview, /use-reports-in-applications
 tags: telerik, reporting, embedding, reports, overview
 published: True
 position: 0

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,use,redis,storage
 published: True
 position: 2
+previous_url: /telerik-reporting-rest-howto-use-redis-storage
 ---
 
 # How to Use Redis storage

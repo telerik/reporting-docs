@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: event,binding
 published: True
 position: 3
+previous_url: /react-report-viewer-event-binding
 ---
 
 # Event Binding

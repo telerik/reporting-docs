@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: setting,a,theme,(using,implicit,styles)
 published: True
 position: 5
+previous_url: /wpf-report-viewer-implicit-styles
 ---
 
 # Setting a Theme (Using Implicit Styles)

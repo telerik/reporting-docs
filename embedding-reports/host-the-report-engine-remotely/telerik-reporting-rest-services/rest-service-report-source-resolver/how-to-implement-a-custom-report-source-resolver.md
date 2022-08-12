@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,implement,a,custom,report,source,resolver
 published: True
 position: 1
+previous_url: /telerik-reporting-rest-custom-report-resolver
 ---
 
 # How to Implement a Custom Report Source Resolver

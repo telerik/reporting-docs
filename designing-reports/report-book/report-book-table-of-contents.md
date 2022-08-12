@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-book/report-book-table-of-conten
 tags: report,book,table,of,contents
 published: True
 position: 3
+previous_url: /designing-reports-reportbook-toc
 ---
 
 # Report Book Table of Contents

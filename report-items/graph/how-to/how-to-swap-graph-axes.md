@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-sw
 tags: how,to,swap,graph,axes
 published: True
 position: 10
+previous_url: /GraphHowToSwapAxes
 ---
 
 # How to Swap Graph Axes

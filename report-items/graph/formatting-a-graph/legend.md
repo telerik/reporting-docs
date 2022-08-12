@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: legend
 published: True
 position: 3
+previous_url: /GraphFormattingLegend
 ---
 
 # Legend

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,add,report,viewer,to,a,windows,forms',.net,framework,project
 published: True
 position: 1
+previous_url: /winforms-report-viewer-embedding
 ---
 
 # How to Add report viewer to a Windows Forms' .NET Framework project

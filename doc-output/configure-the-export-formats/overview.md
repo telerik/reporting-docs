@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: overview
 published: True
 position: 0
+previous_url: /device-information-settings
 ---
 
 # Configure the Export Formats Overview

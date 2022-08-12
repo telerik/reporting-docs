@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: unregister,client
 published: True
 position: 1
+previous_url: /telerik-reporting-rest-api-unregister-client
 ---
 <style>
 table th:first-of-type {

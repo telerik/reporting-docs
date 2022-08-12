@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-ad
 tags: how,to,add,drilldown,action,to,the,graph,item
 published: True
 position: 1
+previous_url: /GraphHowToAddDrillDownAction
 ---
 
 # How to add Drilldown action to the Graph item

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: using,section,events
 published: True
 position: 3
+previous_url: /using-section-events
 ---
 
 # Using Section Events

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setu
 tags: how,to,setup,a,map,manually
 published: True
 position: 2
+previous_url: /MapHowToSetupAMapManually
 ---
 
 # How to Setup a Map Manually

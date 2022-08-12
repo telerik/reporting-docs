@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/barcode/overview
 tags: telerik, reporting, report, items, barcode, overview
 published: True
 position: 0
+previous_url: /report-items-barcode-general
 ---
 
 # Barcode Overview

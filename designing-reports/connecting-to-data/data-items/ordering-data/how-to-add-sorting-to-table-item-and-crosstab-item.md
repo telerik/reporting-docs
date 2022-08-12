@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-
 tags: how,to,add,sorting,to,table,item,and,crosstab,item
 published: True
 position: 2
+previous_url: /data-items-how-to-add-sorting-to-table-item-and-crosstab-item
 ---
 
 # How to Add sorting to Table item and Crosstab item

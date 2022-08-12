@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: powerpoint,rendering,design,considerations
 published: True
 position: 9
+previous_url: /designing-reports-considerations-powerpoint
 ---
 
 # PowerPoint Rendering Design Considerations

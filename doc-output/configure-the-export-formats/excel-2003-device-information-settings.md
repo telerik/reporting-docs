@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: excel,2003,device,information,settings
 published: True
 position: 5
+previous_url: /device-information-settings-excel
 ---
 <style>
 table th:first-of-type {

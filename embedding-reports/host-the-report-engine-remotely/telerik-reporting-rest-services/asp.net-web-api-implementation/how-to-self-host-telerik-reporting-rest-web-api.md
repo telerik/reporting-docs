@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,self,host,telerik,reporting,rest,web,api
 published: True
 position: 3
+previous_url: /telerik-reporting-rest-host-http-service-using-self-hosting
 ---
 
 # How to Self Host Telerik Reporting REST Web API

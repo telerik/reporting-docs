@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: drilldown,report,action
 published: True
 position: 2
+previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drilldown-toggle-visibility-action, /designing-reports-interactivity-drill-down
 ---
 
 # Drilldown Report Action

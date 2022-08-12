@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,pass,values,to,report,parameters
 published: True
 position: 3
+previous_url: /react-report-viewer-how-to-pass-values-to-report-parameters
 ---
 
 # How to Pass Values to Report Parameters

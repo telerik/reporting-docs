@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-
 tags: how,to,add,sorting,to,chart,item
 published: False
 position: 3
+previous_url: /data-items-how-to-add-sorting-to-chart-item
 ---
 
 # How to Add sorting to Chart item

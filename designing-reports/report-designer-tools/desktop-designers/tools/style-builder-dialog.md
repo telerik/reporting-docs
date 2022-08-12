@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: style,builder,dialog
 published: True
 position: 17
+previous_url: /ui-style-builder
 ---
 
 # Style Builder Dialog

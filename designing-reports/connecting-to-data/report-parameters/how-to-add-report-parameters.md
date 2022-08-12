@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/ho
 tags: how,to,add,report,parameters
 published: True
 position: 1
+previous_url: /designing-reports-parameters-adding-parameters
 ---
 
 # How to Add Report Parameters

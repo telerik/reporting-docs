@@ -1,9 +1,9 @@
 ---
-title: Range Charts Overview
+title: Overview
 page_title: Range Charts Overview
-description: Range Charts Overview
+description: "Learn more about the Telerik Reporting Range Chart types."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview
-tags: overview
+tags: telerik, reporting, report, items, graph, range, chart, overview
 published: True
 position: 0
 previous_url: /RangeCharts
@@ -38,12 +38,3 @@ The following image displays a plain range chart with one range area series:
 * Like the area chart, in a plain range chart, if the values in multiple series are similar, the series will overlap. In this scenario, you may want to use a column range or bar range chart instead of a plain range chart.
 
 * Gantt charts can be created using a range bar chart.
-
-
-## See Also
-
-* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
-
-* [RangeAreaSeries](/reporting/api/Telerik.Reporting.RangeAreaSeries)  
-
-* [RangeBarSeries](/reporting/api/Telerik.Reporting.RangeBarSeries)

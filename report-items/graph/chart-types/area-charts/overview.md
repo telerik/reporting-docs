@@ -1,9 +1,9 @@
 ---
-title: Area Charts Overview
+title: Overview
 page_title: Area Charts Overview
-description: Area Charts Overview
+description: "Learn more about the Telerik Reporting Area Chart types."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview
-tags: overview
+tags: telerik, reporting, report, items, graph, area, chart, overview
 published: True
 position: 0
 previous_url: /AreaCharts
@@ -11,29 +11,18 @@ previous_url: /AreaCharts
 
 # Area Charts Overview
 
-An area chart displays a series as a set of points connected by a line, with all the area filled in below the line. Area charts are appropriate for visualizing data that fluctuates over a period of time and can be useful for emphasizing trends. Values that don't vary too wildly work best for area charts. 
+An Area chart displays a series as a set of points connected by a line with the whole area filled in under the line. 
 
-The following image shows an example of a stacked area chart: 
+Area charts are appropriate for visualizing data that fluctuates over a period of time and can be useful for emphasizing trends. Values that don't vary too wildly work best for Area charts. 
 
-  ![Stacked Area Chart](images/Graph/StackedAreaChart.png)
+The following image shows an example of a Stacked Area chart: 
 
-## Variations of the Area Charts
+![Stacked Area Chart](images/Graph/StackedAreaChart.png)
 
-* __Area__. An area chart displays a series as a set of points connected by a line, with all the area filled in below the line. 
+## Types 
 
-* __Stacked Area__. An area chart where multiple series are stacked vertically. If there is only one series in your chart, the stacked area chart will display the same as an area chart. 
+* __Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart. 
 
-* __100% Percent Stacked Area__. An area chart where multiple series are stacked vertically to fit the entire chart area. If there is only one series in your chart, the stacked area chart will display the same as an area chart. 
+* __100% Percent Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically to fit the entire chart area. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart. 
 
-* __Smooth Area__. An area chart where the data points are connected by a smooth line instead of a regular line. Use a smooth area chart instead of an area chart when you are more concerned with displaying trends than with displaying the values of individual data points. 
-
-
-## See Also
-
-* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
-
-* [AreaSeries](/reporting/api/Telerik.Reporting.AreaSeries)  
-
-* [ArrangeMode](/reporting/api/Telerik.Reporting.GraphSeries2D#Telerik_Reporting_GraphSeries2D_ArrangeMode)  
-
-* [SmoothLine](/reporting/api/Telerik.Reporting.AreaSeries#Telerik_Reporting_AreaSeries_SmoothLine)
+* __Smooth Area Charts__&mdash;An Area chart where the data points are connected by a smooth line instead of a regular line. Smooth Area charts are suitable for displaying trends rather than values of individual data points. 

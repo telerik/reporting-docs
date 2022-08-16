@@ -1,9 +1,9 @@
 ---
-title: Bar Charts Overview
+title: Overview
 page_title: Bar Charts Overview
-description: Bar Charts Overview
+description: "Learn more about the Telerik Reporting Bar Chart types."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview
-tags: overview
+tags: telerik, reporting, report, items, graph, bar, chart, overview
 published: True
 position: 0
 previous_url: /BarCharts
@@ -36,16 +36,3 @@ The following image shows a typical bar chart. The bar chart is well suited for 
 * When data point labels are shown on a bar chart, the labels are placed on the outside end of each bar (OutsideEnd). This can cause a label to be overlapped by its corresponding bar when the bar takes up all of the allotted space within the chart area. You can change the position of the data point labels displayed for each bar by setting the  [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) property in the Properties tool window.
 
 * If there are a lot of data points in your dataset relative to the size of your chart, the size of the bars and the spacing between them are reduced. To modify the width of the bars in a chart consider changing the __SpacingSlotCount__ property of the __category__ axis scale. By default the value is 1 which indicates equal widths of the bars and the free space. The greater the value is the more free space is reserved between the bars.
-
-
-## See Also
-
-* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
-
-* [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  
-
-* [ArrangeMode](/reporting/api/Telerik.Reporting.GraphSeries2D#Telerik_Reporting_GraphSeries2D_ArrangeMode)  
-
-* [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)  
-
-* [SpacingSlotCount](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount)

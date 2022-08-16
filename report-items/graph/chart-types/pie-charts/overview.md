@@ -1,9 +1,9 @@
 ---
-title: Pie Charts Overview
+title: Overview
 page_title: Pie Charts Overview
-description: Pie Charts Overview
+description: "Learn more about the Telerik Reporting Pie Chart types."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview
-tags: overview
+tags: telerik, reporting, report, items, graph, pie, chart, overview
 published: True
 position: 0
 previous_url: /PieCharts
@@ -79,15 +79,3 @@ By default, the merged slice is labeled in the chart’s legend as __Others__. Y
 The styling of the merged data point, its label or the corresponding legend item can be customized using the corresponding Conditional Formatting property using the Filter:  
 	= IsMergedData() | Operator.Equals | = True 
 
-
-## See Also
-
-* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
-
-* [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)  
-
-* [DataPointLabelStyle](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelStyle)  
-
-* [DataPointLabel](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabel)  
-
-* [DataPointLabelAlignment](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment)

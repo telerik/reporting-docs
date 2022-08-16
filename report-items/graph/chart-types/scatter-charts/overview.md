@@ -1,9 +1,9 @@
 ---
-title: Scatter Charts Overview
+title: Overview
 page_title: Scatter Charts Overview
-description: Scatter Charts Overview
+description: "Learn more about the Telerik Reporting Scatter Chart types."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview
-tags: overview
+tags: telerik, reporting, report, items, graph, scatter, bubble, chart, overview
 published: True
 position: 0
 previous_url: /ScatterCharts
@@ -37,9 +37,3 @@ The following Bubble chart sample report has a category set to sales person so t
 
 * Scatter charts are most suitable for handling the distribution of values and clusters of data points. This is the best chart type if your dataset contains many points (for example, several thousand points). Displaying multiple series on a point chart is visually distracting and should be avoided. In this scenario, consider using a line chart.
 
-
-## See Also
-
-* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
-
-* [LineSeries](/reporting/api/Telerik.Reporting.LineSeries)

@@ -1,27 +1,31 @@
 ---
-title: How to Create Scatter Chart
-page_title: How to Create Scatter Chart 
-description: How to Create Scatter Chart
+title: Creating Scatter Charts
+page_title: Creating Scatter Charts
+description: "Learn how to display Scatter charts when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-scatter-chart
-tags: how,to,create,scatter,chart
+tags: telerik, reporting, report, items, graph, creating, scatter, chart
 published: True
 position: 1
 previous_url: /GraphHowToCreateScatterChart
 ---
 
-# How to Create Scatter Chart
+# Creating Scatter Charts
 
-In this article we will show you how to create a Scatter chart using the __Graph item__ in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). 
+This guide will demonstrate how to create a Scatter chart in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) when you are using the Graph report item. 
 
-1. Add a new graph item to the report.
+The following image shows a Scatter chart.
 
-   1. Set the __DataSource__ property to a new __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__. 
+// add an image here 
 
-   1. Set the connection string to the demo AdventureWorks database.
+## Adding the Graph 
 
-   1. Set the __query__ to the following one:
+To add a new Graph report item to the report: 
 
-    
+1. Set the __DataSource__ property to a new __[SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%})__.
+1. Set the connection string to the demo AdventureWorks database.
+1. Set the query to the following one:
+
+  
       ````sql
 SELECT Sales.SalesOrderHeader.SubTotal, Person.Contact.FirstName+ ' '+ Person.Contact.LastName as [Name],
 Sales.SalesOrderHeader.OrderDate
@@ -32,42 +36,47 @@ INNER JOIN Person.Contact ON HumanResources.Employee.ContactID = Person.Contact.
 ````
 
 
-   1. You can click on __Execute Query...__ just to check if everything is OK with the database connection. Click __Finish__ when you are ready. 
+1. Click __Execute Query...__ to check if everything is OK with the database connection. Click __Finish__ when you are ready. 
+   
+## Setting the SeriesGroups Hierarchy 
 
-1. Go to the __Properties__ pane -> __Data__ and open __SeriesGroups__ collection editor and click __Add__ : 
+Now you can set the **SeriesGropus** hierarchy of the Scatter chart: 
 
-   1. Set the new group __Groupings__ to: *=Fields.Name* 
+1. Go to __Properties__ > __Data__. Open the __SeriesGroups__ collection editor and click __Add__.
+1. Set the __Groupings__ to `=Fields.Name`.
+1. Set the __Sortings__ to `=Sum(Fields.SubTotal)` with a `Desc` order. 
+1. Set the __Name__ to `seriesGroup1`. 
 
-   1. Set the __Sortings__ to: *=Sum(Fields.SubTotal)* with Desc order. 
+## Setting the CategoryGroups Hierarchy
 
-   1. Set the __Name__ to *seriesGroup1* 
+Next, you will have to define the **CategoryGroups** hierarchy of the Scatter chart:
 
-1. Go to the __Properties__ pane -> __Data__ and open __CategoryGroups__ collection editor and click __Add__ : By default this will add a new static group (group without grouping).
+1. Go to __Properties__ > __Data__. Open the __CategoryGroups__ collection editor and click __Add__. By default, this will add a new static group (group without grouping).
+1. Set the __Name__ to `categoryGroup1`. 
 
-   1. Set the __Name__ to *categoryGroup1* 
+## Configuring the Coordinate System
 
-1. Go to the  __Properties__ pane -> __Presentation__ and open __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__. 
+Here you will specify the coordinate system details: 
 
-   1. Leave the __Name__ to *cartesianCoordinateSystem1*. 
+1. Go to __Properties__ > __Presentation__. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__. 
+1. Leave the __Name__ to `cartesianCoordinateSystem1`. 
+1. Set the __XAxis__ to __New Axis with Numerical Scale__. 
+1. Set the __YAxis__ to __New Axis with Numerical Scale__. 
 
-   1. Set the __XAxis__ to __New Axis with Numerical Scale__. 
+## Configuring the Series
 
-   1. Set the __YAxis__ to __New Axis with Numerical Scale__. 
+In this step, you will configure the series of the chart:
 
-1. Go to the  __Properties__ pane -> __Presentation__ and open the __Series__ collection editor and __Add__ new __LineSeries__. 
+1. Go to __Properties__ > __Presentation__. Open the __Series__ collection editor and __Add__ new __LineSeries__. 
+1. Set the __CategoryGroup__ to __categoryGroup1__. 
+1. Set the __SeriesGroup__ to __seriesGroup1__. 
+1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__. 
+1. Set the __X__ value to `=Sum(IIf(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))`.
+1. Set the __Y__ value to `=Sum(IIf(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))`.
+1. Set the __LineStyle.Visible__ to __False__. 
+1. Set the __DataPointStyle.Visible__ to __True__. 
 
-   1. Set the __CategoryGroup__ to __categoryGroup1__. 
+## Styling the Appearance   
 
-   1. Set the __SeriesGroup__ to __seriesGroup1__. 
+To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}). 
 
-   1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__. 
-
-   1. Set the __X__ value to *=Sum(IIf(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))* 
-
-   1. Set the __Y__ value to *=Sum(IIf(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))* 
-
-   1. Set the __LineStyle.Visible__ to __False__. 
-
-   1. Set the __DataPointStyle.Visible__ to __True__. 
-
-1. Set the color palette, the formatting of the labels, the values of the legend and any other improvements as needed. For more information, see [Formatting a Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}). 

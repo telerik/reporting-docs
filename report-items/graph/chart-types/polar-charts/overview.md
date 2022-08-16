@@ -1,9 +1,9 @@
 ---
-title: Polar Charts Overview
+title: Overview
 page_title: Polar Charts Overview
-description: Polar Charts Overview
+description: "Learn more about the Telerik Reporting Polar Chart types."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview
-tags: overview
+tags: telerik, reporting, report, items, graph, polar, chart, overview
 published: True
 position: 0
 previous_url: /PolarCharts
@@ -28,10 +28,3 @@ The following image displays a Rose polar chart:
 ## Design Considerations for Polar Charts
 
 * Polar charts are most commonly used to graph polar data, where each data point is determined by an angle and a distance.
-
-
-## See Also
-
-* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
-
-* [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)

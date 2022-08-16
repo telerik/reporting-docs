@@ -1,9 +1,9 @@
 ---
-title: Column Charts Overview
+title: Overview
 page_title: Column Charts Overview
-description: Column Charts Overview
+description: "Learn more about the Telerik Reporting Column Chart types."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview
-tags: overview
+tags: telerik, reporting, report, items, graph, column, chart, overview
 published: True
 position: 0
 previous_url: /ColumnCharts
@@ -32,10 +32,3 @@ The following image shows a typical column chart:
 * In a column chart, you have less space for category axis labels to display horizontally. If you have longer category labels, consider using a bar chart or changing the rotation angle of the label through the __LabelAngle__ property of the axis. 
 
 * If there are a lot of data points in your dataset relative to the size of your chart, the size of the columns and the spacing between them are reduced. To modify the width of the columns in a chart consider changing the __SpacingSlotCount__ property of the __category__ axis scale. By default the value is 1 which indicates equal widths of the column and the free space. The greater the value is the more free space is reserved between the columns. 
-
-
-## See Also
-
-* [Chart Types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) 
-
-* [BarSeries](/reporting/api/Telerik.Reporting.BarSeries)

@@ -61,7 +61,7 @@ An axis consists of the following elements:
 * __Title__&mdash;The title of the axis, usually a brief description of the dimension.
 * __Grid lines__&mdash;Within the Graph, a grid of lines may appear to aid the visual alignment of data. You can enhance the grid by visually emphasizing the lines at regular or significant graduations. The emphasized lines are then called major grid lines and the remainder are minor grid lines.
 
-For more information on formatting the axes of the Graph report item, refer to the article on [axes styling]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/axis %}).
+For more information on styling the axes, refer to the article on [formatting the axes of the Graph report item]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/axis %}).
 
 ## Scales
 
@@ -107,10 +107,10 @@ The Graph item supports the following series types:
 
 When the data appearing in a chart contains multiple variables, the chart may include a legend. The legend contains a list of the displayed chart variables and an example of their appearance. Legend content allows the user to identify the data from each variable in the Graph.
 
-For more information on formatting the legend of the Graph report item, refer to the article on [axes styling]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/legend %}).
+For more information on styling the legend, refer to the article on [formatting the legend of the Graph report item]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/legend %}).
 
 ## Title
 
 The Graph report item can have one or more titles that provide a brief description of what the displayed data refers to.
 
-For more information on formatting the title of the Graph report item, refer to the article on [axes styling]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/title %}).
+For more information on styling the title, refer to the article on [formatting the title of the Graph report item]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/title %}).

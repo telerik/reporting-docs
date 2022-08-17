@@ -38,7 +38,7 @@ You can also choose not to render the axes elements and, as a result, the axes v
 
 Axes labels contain additional information about the data an axis displays. 
 
-## Rendering Labels as Dates or Currencies
+### Rendering Labels as Dates or Currencies
 
 By default, when you add a numeric value to the Y axis, the chart will not format the number before displaying it. If your numeric field is a sales figure, consider formatting the numbers as currencies to increase the readability of the chart. 
 
@@ -98,3 +98,4 @@ Note that using this feature may ignore some of the scale properties, such as __
 * [Scale](/reporting/api/Telerik.Reporting.Scale)  
 * [MajorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MajorStep)  
 * [MinorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MinorStep)
+

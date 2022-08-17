@@ -19,7 +19,7 @@ The following image shows an example of a Stacked Area chart:
 
 ![Stacked Area Chart](images/Graph/StackedAreaChart.png)
 
-## Types of Area 
+## Types 
 
 * __Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart. 
 * __100% Percent Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically to fit the entire chart area. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart. 

@@ -29,3 +29,5 @@ If set, the [conditional formatting rules and definitions]({%slug telerikreporti
 * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) 
 * [GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries)
+
+

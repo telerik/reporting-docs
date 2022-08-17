@@ -30,3 +30,5 @@ To modify an existing Graph title:
  
 * [GraphTitle](/reporting/api/Telerik.Reporting.GraphTitle)  
 * [Titles](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Titles)
+
+

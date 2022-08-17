@@ -43,6 +43,8 @@ Depending on the series type, the default locations of the series labels are:
 * (Bar series) Labels are placed outside of the bars that represent data points.
 * (Line series) Labels are placed above the line that represent data points.
 
+### Changing the Position 
+
 To change the position of the data point labels in a Bar series:
 
 1. Create a Graph with a Bar series.
@@ -50,17 +52,23 @@ To change the position of the data point labels in a Bar series:
 1. In the __Data Point Label__ section, select a value for the **DataPointLabelAlignment** property. 
 1. In the __Data Point Label__ section, set a value for the **DataPointLabelOffset** property. The label offset direction depends on the **DataPointLabelAlignment** value. 
 
+### Changing the Rotation Angle
+
 To change the rotation angle of the data point labels:
 
 1. Create or select a Graph.
 1. On the design surface, click the desired series. The selected series properties are listed in the __Property Browser__. 
 1. In the __Data Point Label__ section, set a value for the **DataPointLabelAngle** property. The value must be an integer in the 0-360 range and will represent the rotation angle in degrees. By default, the value is `0`. 
 
+### Modifying the Style 
+
 To change the style of the data point labels:
 
 1. Create or select a Graph.
 1. On the design surface, click the desired series. The selected series properties are listed in the __Property Browser__. 
 1. In the __Data Point Label__ section, select and edit the **DataPointLabelStyle** property. 
+
+### Adding Conditional Formatting
 
 To add conditional formatting to the data point labels:
 
@@ -113,3 +121,5 @@ To define a custom monochromatic palette:
 * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) 
 * [GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries)
+
+

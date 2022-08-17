@@ -3,11 +3,10 @@ title: Getting Started
 page_title: Getting Started
 description: "Get up and running with Telerik Reporting, and learn how to create and use the Graph report item in reports."
 slug: graph_item_get_started
-previous_url: /report-items/graph/how-to/how-to-add-graph-to-report
+previous_url: /report-items/graph/how-to/how-to-add-graph-to-report, /AddGraphToReport
 tags: telerik, reporting, report, items, graph, getting, started
 published: True
-position: 0
-previous_url: /AddGraphToReport
+position: 1
 ---
 
 # Getting Started with the Graph Report Item
@@ -23,43 +22,17 @@ After the completion of this guide, you will also be able to configure the Barco
 
 ## Adding the Graph
 
-The simplest way to add a __Graph__ item to your report is to run the Graph Wizard for Visual Studio report designer or to run a *new Bar*, *Column*, *Area*, *Line*, *Pie*, *Scatter*, or *Others* chart wizard in the standalone designer. After you add a Graph item to the design surface, you can click the chart elements to edit the selected element's properties in the *Properties* grid or in the standalone Report Designer you can use the ribbon tools. 
+For the purposes of this guide, you will add the Graph to the report by running the Graph Wizard for Visual Studio Report Designer: 
 
-### Using the Visual Studio Report Designer
+1. Open the Visual Studio toolbox. From the **Telerik Reporting** tab, select **Graph Wizard**.
+1. Click the design surface where you want to place the upper-left corner of the Graph. As a result, the Graph Wizard opens. 
+1. Follow the Graph Wizard prompts.
+1. After you complete the instructions of the Wizard, the new Graph item will be created on the design surface. 
 
-Graph Wizard
+## .....
 
-1. Open the Visual Studio toolbox and select Graph Wizard from the Telerik Reporting tab.
 
-1. Click on the design surface where you want the upper-left corner of the graph item. The Graph Wizard opens. 
-
-1. Follow the steps in the Graph Wizard.
-
-1. When you finish the wizard a new Graph item will be created on the design surface. 
-
-### Using the Standalone Report Designer 
-
-Graph Wizard
-
-1. Open the *Insert* tab from the ribbon bar and select the desired chart type. The graph will be placed in the center of the selected container.
-
-1. Follow the steps in the Graph Wizard.
-
-1. When you finish the wizard a new Graph item will be created on the design surface. 
-
-## Inserting a Graph
-
-> Graph item for direct insertion is only available in the Visual Studio report designer.For the standalone report designer, please use a Graph wizard for the specific chart type.
-
-1. Open the Visual Studio toolbox and select Graph item from the *Telerik Reporting* tab.
-
-1. Click on the design surface where you want the upper-left corner of the graph item. The graph item is initialized on the selected design surface.
-
-1. Open the Property Grid.
-
-1. Set the DataSource property to one of the available [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
-
-1. Set up a Coordinate System with its x-axis and y-axis.
+## .....
 
 
 ## See Also 

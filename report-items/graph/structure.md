@@ -5,7 +5,7 @@ description: "Learn more about the visual structure and elements of the Telerik 
 slug: telerikreporting/designing-reports/report-structure/graph/structure
 tags: telerik, reporting, graph, report, item,, visual, structure, elements
 published: True
-position: 1
+position: 3
 previous_url: /GraphStructure
 ---
 

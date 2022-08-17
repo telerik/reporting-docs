@@ -85,7 +85,7 @@ navigation:
         position: 18
         title: "OHLC Charts"
     report-items/graph/formatting-a-graph:
-        position: 11
+        position: 20
         title: "Formatting a Graph"
     report-items/map:
         position: 7

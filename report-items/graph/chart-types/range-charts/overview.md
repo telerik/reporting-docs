@@ -11,30 +11,25 @@ previous_url: /RangeCharts
 
 # Range Charts Overview
 
-A range chart type displays a set of data points that are each defined by multiple values for the same category. The range chart emphasizes on the distance between the two values. Category labels are displayed on the category axis. The plain range chart fills in the area between the top and bottom value for each data point.
+A Range chart displays sets of data points, each of which is defined by multiple values for the same category, and emphasizes the distance between the two values. 
 
-The following image displays a plain range chart with one range area series: 
+The category labels are displayed on the category axis. The plain Range chart fills in the area between the top and the bottom value for each data point.
 
-  ![Range Area Chart](images/Graph/RangeAreaChart.png)
+The following image displays a plain Range chart with one Range Area series: 
 
-## Range Chart Variations
+![Range Area Chart](images/Graph/RangeAreaChart.png)
 
-* __Column range__. The column range chart uses columns to represent the range.
+## Types
 
-* __Bar range__. The bar range chart uses bars to represent the range. 
+* __Column range__&mdash;The Column Range chart uses columns to represent the range.
+* __Bar range__&mdash;The Bar Range chart uses bars to represent the range. 
+* __Smooth range__&mdash;A Smooth Range chart uses curved lines to connect data points rather than straight ones.
 
-* __Smooth range__. A smooth range chart uses curved lines to connect data points rather than straight ones.
+## Design Considerations
 
-## Design Considerations for Range Charts
-
-* Range chart types require two values per data point. These values represent a high value and a low value that define the range for each data point. 
-
-* If only one value is specified, the range chart will display as if it were a regular area/bar/column chart, with one value per data point.
-
+* Range charts require two values per data point. These values represent a high value and a low value that define the range for each data point. 
+* If only one value is specified, the Range chart will display as if it were a regular Area, Bar, or Column chart with a single value per data point.
 * Range charts are often used to graph data that contains minimum and maximum values for each category group in the dataset.
-
-* Displaying markers on each data point is not recommended for a range chart.
-
-* Like the area chart, in a plain range chart, if the values in multiple series are similar, the series will overlap. In this scenario, you may want to use a column range or bar range chart instead of a plain range chart.
-
-* Gantt charts can be created using a range bar chart.
+* It is not recommended to display markers on each data point in a Range chart.
+* Like the Area chart, in a plain Range chart, if the values in multiple series are similar, the series will overlap. In this scenario, you may want to use a Column Range or Bar Range chart instead of a plain Range chart.
+* You can create Gantt charts by using a Range Bar chart.

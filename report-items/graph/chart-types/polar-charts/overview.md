@@ -11,20 +11,20 @@ previous_url: /PolarCharts
 
 # Polar Charts Overview
 
-A polar chart displays a series as a set of points that are grouped by category on a 360-degree circle. Values are represented by the distance of the point as measured from the center of the circle. The farther the       point is from the center, the greater is its value. Category labels are displayed on the perimeter of the chart. 
+A Polar chart displays series as sets of data points that are grouped by category on a 360-degree circle and represent the values by the distance of the point as measured from the center of the circle. 
 
-The following image displays a Rose polar chart: 
+The farther the data point is from the center, the greater its value is. Category labels are displayed on the perimeter of the chart. 
 
-  ![Polar Chart\Polar Chart](images/Graph/PolarChart.png)
+The following image displays a Rose Polar chart: 
 
-## Polar Chart Variations
+![Polar Chart\Polar Chart](images/Graph/PolarChart.png)
 
-* __Line Polar Chart__. A polar chart in which the data points are connected by a line.
+## Types 
 
-* __Area Polar Chart__. A polar chart in which the data points are connected by a line with the area below the line filled with color.
+* __Line Polar Charts__&mdash;A Polar chart in which the data points are connected by a line.
+* __Area Polar Charts__&mdash;A Polar chart in which the data points are connected by a line with the area below the line filled with color.
+* __Rose Polar Charts__&mdash;A Polar chart in which the data points are represented by bars drawn in a polar coordinate system.
 
-* __Rose Polar Chart__. A polar chart in which the data points are represented by bars drawn in a polar coordinate system.
+## Design Considerations
 
-## Design Considerations for Polar Charts
-
-* Polar charts are most commonly used to graph polar data, where each data point is determined by an angle and a distance.
+Polar charts are most commonly used to graph polar data where each data point is determined by an angle and a distance.

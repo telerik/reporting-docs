@@ -87,9 +87,6 @@ navigation:
     report-items/graph/formatting-a-graph:
         position: 11
         title: "Formatting a Graph"
-    report-items/graph/how-to:
-        position: 12
-        title: "How To"
     report-items/map:
         position: 7
         title: "Map"

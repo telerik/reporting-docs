@@ -3,7 +3,7 @@ title: Connecting to Data
 page_title: Connecting to Data 
 description: Connecting to Data
 slug: telerikreporting/designing-reports/report-structure/graph/connecting-to-data
-tags: connecting,to,data
+tags: telerik, reporting, graph, report, item, connecting, to, data
 published: True
 position: 2
 previous_url: /GraphConnectingToData

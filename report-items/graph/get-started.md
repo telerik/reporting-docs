@@ -1,13 +1,25 @@
 ---
-title: How to add Graph to Report
-page_title: How to add Graph to Report 
-description: How to add Graph to Report
-slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-graph-to-report
-tags: how,to,add,graph,to,report
+title: Getting Started
+page_title: Getting Started
+description: "Get up and running with Telerik Reporting, and learn how to create and use the Graph report item in reports."
+slug: graph_item_get_started
+previous_url: /report-items/graph/how-to/how-to-add-graph-to-report
+tags: telerik, reporting, report, items, graph, getting, started
 published: True
 position: 0
 previous_url: /AddGraphToReport
 ---
+
+# Getting Started with the Graph Report Item
+
+This guide shows how to create and use the Telerik Reporting Graph report item in reports. 
+
+* First, you will specify the Graph report item and ... 
+* Then, you will ...  
+
+After the completion of this guide, you will also be able to configure the Barcode with code and achieve the following result.
+
+// add demo here 
 
 # How to add Graph to Report
 
@@ -44,3 +56,9 @@ The simplest way to add a __Graph__ item to your report is to run the Graph Wiza
 1. Set the DataSource property to one of the available [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
 
 1. Set up a Coordinate System with its x-axis and y-axis.
+
+
+## See Also 
+
+* [Connecting the Graph to Data]({% slug telerikreporting/designing-reports/report-structure/graph/structure %})
+* [Supported Chart Types]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview %})

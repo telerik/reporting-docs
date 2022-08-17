@@ -1,39 +1,39 @@
 ---
-title: Structure
-page_title: Structure 
-description: Structure
+title: Structure and Elements 
+page_title: Structure and Elements of the Graph 
+description: "Learn more about the visual structure and elements of the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/structure
-tags: structure
+tags: telerik, reporting, graph, report, item,, visual, structure, elements
 published: True
 position: 1
 previous_url: /GraphStructure
 ---
 
-# Structure
+# Structure and Elements of the Graph
 
-##Graph elements
+The Graph is a powerful and complex report item which displays a variety of elements to adequately display visual information as required.   
 
-The images below show the basic elements of a chart: 
+## Visual Structure
 
-  ![Bar Line Chart Structure](images/DataItems/Graph/BarLineChartStructure.png)
+The following image displays combined Column and Line charts in a Graph item with a Cartesian coordinate system.
 
-Fig.1 *Combined Column and Line charts in a Graph item with Cartesian coordinate system.*  
+![Bar Line Chart Structure](images/DataItems/Graph/BarLineChartStructure.png)
 
-  ![Rose Chart Structure](images/DataItems/Graph/RoseChartStructure.png)
+The following image shows a Rose (Bar) chart in a Graph item with a Polar coordinate system. 
 
-Fig.2 *Rose (Bar) chart in a Graph item with Polar coordinate system.* 
+![Rose Chart Structure](images/DataItems/Graph/RoseChartStructure.png)
 
 ## Coordinate Systems
 
-The Graph item uses a two-dimensional [coordinate system](http://en.wikipedia.org/wiki/Coordinate_system) that uniquely identifies the position of each data point. Each coordinate system consists of two reference lines called coordinate axes or just axes and an origin. 
+The Graph item uses a two-dimensional [coordinate system](http://en.wikipedia.org/wiki/Coordinate_system) that uniquely identifies the position of each data point. Each coordinate system consists of two reference lines called "coordinate axes" (or just "axes") and an "origin". 
 
 The Graph item supports two types of two-dimensional coordinate systems:
 
 * [Cartesian](http://en.wikipedia.org/wiki/Cartesian_coordinate_system) where each point is defined by an ordered pair of two coordinates which are the distances of the point to the two perpendicular axes, which are: 
 
-   + __x axis__ - the horizontal axis;
+   + __x axis__&mdash;The horizontal axis.
 
-   + __y axis__ - the vertical axis.The data point in the Cartesian coordinate system is represented by an ordered pair of two coordinates (x, y).
+   + __y axis__&mdash;The vertical axis.The data point in the Cartesian coordinate system is represented by an ordered pair of two coordinates (x, y).
 
 * [Polar](http://en.wikipedia.org/wiki/Polar_coordinate_system) is used where each point on a plane is determined by a distance from the origin (called the radial coordinate or radius) and an angle from a fixed direction (the angular coordinate, polar angle, or azimuth). The polar coordinate system has two axes: 
 

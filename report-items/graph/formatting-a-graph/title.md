@@ -10,29 +10,23 @@ previous_url: /GraphFormattingTitle
 
 # Title
 
-The Graph item can have one or more titles. By default the graph item have one title with __TopCenter Position__. 
+While, by default, the Graph report item comes with a single title with the __TopCenter Position__, the report item enables you to add more titles to it.   
 
-## To add title:
+To add a title to the Graph: 
 
-1. Click the graph that you want to change. The selected graph properties are listed in the __Property Browser__.
-
-1. In the __Titles property__, click the __Edit Collection (…) button__. The __GraphTitle Collection Editor__ opens. 
-
-1. Click __Add__ to add a title and set the Text property. 
-
+1. Click the Graph you want to change. The selected Graph properties are listed in the __Property Browser__.
+1. In the __Titles__ property, click the __Edit Collection (…)__ button. As a result, the __GraphTitle Collection Editor__ opens. 
+1. Click __Add__ to add a title and set the __Text__ property. 
 1. Click __Add__ to add more colors to the palette. 
-
 1. When you are done, click __OK__. 
 
-## Changing the title:
+To modify an existing Graph title:
 
-1. Click the graph title that you want to change. The selected title properties are listed in the __Property Browser__.
-
-1. Alter the title properties according to your requirements. 
+1. Click the Graph title you want to change. The selected title properties are listed in the __Property Browser__.
+1. Update the title properties as required. 
 
 
 ## See Also
  
 * [GraphTitle](/reporting/api/Telerik.Reporting.GraphTitle)  
-
 * [Titles](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Titles)

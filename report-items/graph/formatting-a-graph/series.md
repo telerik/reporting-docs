@@ -16,75 +16,82 @@ The series is a sequence of data points that represents individual measurements.
 
 The styles of the series items relate and affect each other in a hierarchical way. The relations among the styles are visually explained in the article on [series style propagation and resolving fallback algorithm]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}).
 
-Data points, data point labels, legend marks and legend items declare their own style that inherits the series' style and the base series color. However, if these items have an explicitly set property, it will override the series' style property as explained in the [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) documentation article. 
+Data points, data point labels, legend marks, and legend items declare their own style that inherits the style and the base series color of the series. However, if these items have an explicitly set property, it will [override the series style property]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}). 
 
-The Area and the Line series have an additional pair of properties named respectively AreaStyle/LineStyle and ConditionalFormatting. They affect the way the series is drawn, defining the line color, style and width, and the background color for the Area Series. 
+The Area and the Line series have an additional pair of properties named respectively **AreaStyle** and **LineStyle**, and **ConditionalFormatting**. They affect the way the series is drawn, defining the line color, style and width, and the background color for the Area Series. 
 
-> For example, if the series DataPoints have its __Style.LineWidth__ property set to __5pt__, this will affect the line width of the DataPoint markers and the legend item marker. But if the legend item's __MarkStyle.LineWidth__ property is set to __2pt__, then the legend item marker will be drawn with 2pt wide line, because the series's style property will be overriden. 
-
+For example, if the series DataPoints have its __Style.LineWidth__ property set to __5pt__, this will affect the line width of the DataPoint markers and the legend item marker. However, if the __MarkStyle.LineWidth__ property of the legend item is set to __2pt__, the legend item marker will be drawn with a 2pt-wide line, because the series style property will be overridden. 
 
 ## Formatting Data Points
 
-Each data point has graphical representation in accordance with the selected chart type. Its styling can be set through the __DataPointStyle__ property and changed in runtime using the __DataPointConditionalFormatting__ property. In most cases, depending on the chart type, the shape of the data point can be changed as well using the [MarkerType](/reporting/api/Telerik.Reporting.LineSeries#Telerik_Reporting_LineSeries_MarkerType)  enumeration. 
+Each data point has graphical representation in accordance with the selected chart type. To set its styling, use the __DataPointStyle__ property. To modify the appearance at runtime, use the __DataPointConditionalFormatting__ property. Depending on the chart type, you can also change the shape of the data point by using the [`MarkerType`](/reporting/api/Telerik.Reporting.LineSeries#Telerik_Reporting_LineSeries_MarkerType) enumeration. 
 
-To change the data point shape in a series where applicable: 
+To modify the shape of the series data point: 
 
-1. On the design surface, click on the series. The selected bar series properties are listed in the __Property Browser__. 
-1. Locate the __MarkerType__ property in the __Data Point Marker__ section. If the property doesn't exist for the selected series (e.g. Bar/Column), the data point shape cannot be changed.
+1. On the design surface, click the series. The selected bar series properties are listed in the __Property Browser__. 
+1. Locate the __MarkerType__ property in the __Data Point Marker__ section. If the property doesn't exist for the selected series, for example, Bar or Column, you will not be able to change the shape of the data point.
 1. Set the type of the marker from the drop-down menu. Set the __MarkerSize__ properties if necessary. 
 
-    >Only the marker types that form a closed contour support __BackgroundImage__. The markers that consists only of lines (i.e. __X__, __Plus__, __Minus__) will not render a background image if set. 
+    >Only the marker types that form a closed contour support the __BackgroundImage__ property. If set, the markers that consists only of lines, that is, __X__, __Plus__, and __Minus__, will not render a background image. 
 
 ## Formatting Data Point Labels
 
-Each data point has a textual presentation, called a data point label. This label can be formatted, positioned and rotated by various properties. 
+Each data point provides a data point label which displays some content. You can format, position, and rotate the data point label by using the available Graph properties. 
 
 Depending on the series type, the default locations of the series labels are:
 
 * (Bar series) Labels are placed outside of the bars that represent data points.
 * (Line series) Labels are placed above the line that represent data points.
 
-To change the position of data point labels in a Bar series:
+To change the position of the data point labels in a Bar series:
 
-1. Create a graph with bar series.
-1. On the design surface, click on the bar series. The selected bar series properties are listed in the __Property Browser__. 
-1. In the __Data Point Label__ section select a value for the DataPointLabelAlignment property. 
-1. In the __Data Point Label__ section set a value for the DataPointLabelOffset property. The label offset direction depends on the DataPointLabelAlignment value. 
+1. Create a Graph with a Bar series.
+1. On the design surface, click the Bar series. The selected Bar series properties are listed in the __Property Browser__. 
+1. In the __Data Point Label__ section, select a value for the **DataPointLabelAlignment** property. 
+1. In the __Data Point Label__ section, set a value for the **DataPointLabelOffset** property. The label offset direction depends on the **DataPointLabelAlignment** value. 
 
-To change the rotation angle of data point labels:
+To change the rotation angle of the data point labels:
 
-1. Create / select a graph.
-1. On the design surface, click on the desired series. The selected series properties are listed in the __Property Browser__. 
-1. In the __Data Point Label__ section set a value for the DataPointLabelAngle property. The value must be an integer in the 0 - 360 range and represents the rotation angle in degrees. Default value is 0. 
+1. Create or select a Graph.
+1. On the design surface, click the desired series. The selected series properties are listed in the __Property Browser__. 
+1. In the __Data Point Label__ section, set a value for the **DataPointLabelAngle** property. The value must be an integer in the 0-360 range and will represent the rotation angle in degrees. By default, the value is `0`. 
 
-To change the style of data point labels:
+To change the style of the data point labels:
 
-1. Create / select a graph.
-1. On the design surface, click on the desired series. The selected series properties are listed in the __Property Browser__. 
-1. In the __Data Point Label__ section select and edit the DataPointLabelStyle property. 
+1. Create or select a Graph.
+1. On the design surface, click the desired series. The selected series properties are listed in the __Property Browser__. 
+1. In the __Data Point Label__ section, select and edit the **DataPointLabelStyle** property. 
 
 To add conditional formatting to the data point labels:
 
-1. Create / select a graph.
-1. On the design surface, click on the desired series. The selected series properties are listed in the __Property Browser__. 
-1. In the __Data Point Label__ section select and edit the DataPointLabelConditionalFormatting collection. 
+1. Create or select a Graph.
+1. On the design surface, click the desired series. The selected series properties are listed in the __Property Browser__. 
+1. In the __Data Point Label__ section, select and edit the **DataPointLabelConditionalFormatting** collection. 
 
 ## Modifying the Color
 
-The Graph item comes with built-in palettes, and you can define additional custom palette. These palette colors also appear in the legend. When multiple series are added to the chart, the chart assigns the series a color in the order that the colors have been defined in the palette. 
+The Graph comes with built-in color palettes and also enable you to select or define an additional, custom palette of colors. The series colors will appear in the legend too. 
+
+When multiple series are added to the chart, the chart assigns the series a color in the order in which the colors have been defined in the palette. 
+
+### Using the Default Palette 
+
+The built-in series color palettes are only available in the Standalone Report Designer.  
+
+To change the series by using the built-in color palette:
+
+1. Click the chart series you want to change. As a result, the __Graph Tools.Design__ ribbon context tab is activated. 
+1. In the __Chart Style__ group, select a color palette from the __Change Colors__ drop-down. 
+
+### Defining Custom Palettes
+
+Custom palettes are report-specific. 
 
 If there are a greater number of series than there are colors in the palette, the chart will begin reusing colors, and two series may have the same color. To avoid confusion, define a custom palette with at least the same number of colors as you have series on your chart. 
 
-You can select a palette or define a custom palette. Custom palettes are report-specific. 
+If you are using a custom color palette, you can change the order of the colors to change the color of different series.
 
-To change the series by using a built-in color palette:
-
-> The built-in series are only available in the standalone report designer. 
-
-1. Click the chart series that you want to change. The ribbon context tab __Graph Tools.Design__ is activated. 
-1. In the __Chart Style__ group. Select a color palette from the __Change Colors__ dropdown. 
-
-To define custom color palette:
+To define a custom color palette:
 
 1. Click the chart series that you want to change. The selected axis properties are listed in the __Property Browser__. 
 1. In the __Appearance__ group. Set the __ColorPalette property__ to - __Color Palette__. 
@@ -93,21 +100,16 @@ To define custom color palette:
 1. Click __Add__ to add more colors to the palette. 
 1. When you are done, click __OK__. 
 
-If you are using a custom color palette, you can change the order of the colors to change the color of different series.
-
 To define a custom monochromatic palette:
 
-1. Click the chart series that you want to change. The selected axis properties are listed in the __Property Browser__. 
-1. In the __Appearance__ group. Set the ColorPalette property to - __Monochromatic Palette__. 
-1. Set appropriately __BaseColor, MaxLightness and MinLightness properties__. 
+1. Click the chart series you want to change. The selected axis properties are listed in the __Property Browser__. 
+1. In the __Appearance__ group, set the **ColorPalette** property to __Monochromatic Palette__. 
+1. Set the __BaseColor__, __MaxLightness__ and __MinLightness__ properties. 
 
 
 ## See Also
 
-* [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
-
+* [Structure and Elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
-
 * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) 
-
 * [GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries)

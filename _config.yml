@@ -69,21 +69,21 @@ navigation:
     report-items/graph/chart-types/line-charts:
         position: 30
         title: "Line Charts"
-    report-items/graph/chart-types/pie-charts:
+    report-items/graph/chart-types/ohlc-charts:
         position: 40
+        title: "OHLC Charts"
+    report-items/graph/chart-types/pie-charts:
+        position: 50
         title: "Pie Charts"
     report-items/graph/chart-types/polar-charts:
-        position: 50
+        position: 60
         title: "Polar Charts"
     report-items/graph/chart-types/range-charts:
-        position: 60
+        position: 70
         title: "Range Charts"
     report-items/graph/chart-types/scatter-charts:
-        position: 70
-        title: "Scatter Charts"    
-    report-items/graph/chart-types/ohlc-charts:
         position: 80
-        title: "OHLC Charts"
+        title: "Scatter Charts"    
     report-items/graph/formatting-a-graph:
         position: 20
         title: "Styling and Formatting"

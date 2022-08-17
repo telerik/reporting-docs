@@ -61,6 +61,8 @@ An axis consists of the following elements:
 * __Title__&mdash;The title of the axis, usually a brief description of the dimension.
 * __Grid lines__&mdash;Within the Graph, a grid of lines may appear to aid the visual alignment of data. You can enhance the grid by visually emphasizing the lines at regular or significant graduations. The emphasized lines are then called major grid lines and the remainder are minor grid lines.
 
+For more information on formatting the axes of the Graph report item, refer to the article on [axes styling]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/axis %}).
+
 ## Scales
 
 Scales define how the data is projected on the corresponding axis, that is, how the data from the user domain is converted to coordinates. 
@@ -78,7 +80,7 @@ A series represents a series of data points that represents individual measureme
 
 The Graph item supports the following series types:
 
-* [Bar](http://en.wikipedia.org/wiki/Bar_chart)&mdash;Displays data points as bars to show comparisons between categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. 
+* [Bar charts](http://en.wikipedia.org/wiki/Bar_chart)&mdash;Displays data points as bars to show comparisons between categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. 
 
   You can arrange the Bar series in different ways to emphasize various aspects of the data:
 
@@ -89,22 +91,26 @@ The Graph item supports the following series types:
    
    In a Polar coordinate system the bars appears in a wedge shape. If the series are arranged on the radial axis, that is, the wedges start from the radial axis and goes by the angular axis, the result is a Pie chart. Otherwise, if the bars are arranged by the angular axis, the result is a Rose chart.
 
-* [Line](http://en.wikipedia.org/wiki/Line_chart)&mdash;Displays a series of data points connected by straight or smooth line segments. Data points are represented by markers that can vary by shape (circle, square, diamond, cross, and so on) and can display a third variable or measure with its size (also known as Bubble charts). 
+* [Line charts](http://en.wikipedia.org/wiki/Line_chart)&mdash;Displays a series of data points connected by straight or smooth line segments. Data points are represented by markers that can vary by shape (circle, square, diamond, cross, and so on) and can display a third variable or measure with its size (also known as Bubble charts). 
 
   When a Line series is projected on a Polar coordinate system, the result is also known as a Radar or Spider Line chart. Line series may be stacked to show a cumulative effect (stacked or stacked 100%).
 
-* [Area](http://en.wikipedia.org/wiki/Area_chart)&mdash;Similar to the Line series. Area series display series of data points connected by straight or smooth line segments too but the area below the line is colored to indicate the volume. 
+* [Area charts](http://en.wikipedia.org/wiki/Area_chart)&mdash;Similar to the Line series. Area series display series of data points connected by straight or smooth line segments too but the area below the line is colored to indicate the volume. 
 
   When an Area series is projected on a Polar coordinate system, the result is also known as a Radar or Spider Area chart. Area series may be stacked to show a cumulative effect (stacked or stacked 100%).
 
-* __Range Bar__&mdash;Similar to the Bar series. However, the bars do not start from the axis but at a given value. The Range Bar emphasizes the distance between two values or measures.
+* [Range Bar charts]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview %})&mdash;Similar to the Bar series. However, the bars do not start from the axis but at a given value. The Range Bar emphasizes the distance between two values or measures.
 
-* __Range Area__&mdash;Similar to the Area series. However, the bottom point does not start from the axis but at a given value. The Range Area emphasizes the distance between two values/measures.
+* [Range Area charts]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview %})&mdash;Similar to the Area series. However, the bottom point does not start from the axis but at a given value. The Range Area emphasizes the distance between two values/measures.
 
 ## Legend
 
 When the data appearing in a chart contains multiple variables, the chart may include a legend. The legend contains a list of the displayed chart variables and an example of their appearance. Legend content allows the user to identify the data from each variable in the Graph.
 
+For more information on formatting the legend of the Graph report item, refer to the article on [axes styling]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/legend %}).
+
 ## Title
 
 The Graph report item can have one or more titles that provide a brief description of what the displayed data refers to.
+
+For more information on formatting the title of the Graph report item, refer to the article on [axes styling]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/title %}).

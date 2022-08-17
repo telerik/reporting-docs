@@ -1,11 +1,10 @@
 ---
 title: Legend
 page_title: Legend 
-description: Legend
+description: "Learn how to style and format the legend of the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/legend
-tags: legend
+tags: telerik, reporting, report, items, graph, styling, formatting, legend
 published: True
-position: 3
 previous_url: /GraphFormattingLegend
 ---
 

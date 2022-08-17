@@ -5,7 +5,7 @@ description: "Learn more about the Telerik Reporting Sparkline Chart types."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines
 tags: telerik, reporting, report, items, graph, sparklines, chart, overview
 published: True
-position: 9
+position: 90
 previous_url: /SparklinesAndDataBars
 ---
 
@@ -19,7 +19,7 @@ Although Sparklines are small, each chart often represents multiple data points 
 
 Because Sparklines display aggregated data, they must go in a cell associated with a group. Sparklines and data bars have the same basic chart elements of categories, series, and values, but they have no legend, grid lines, labels, or tick marks.
 
-Spaklines and data bars are created by adding the required [chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) and, then, applying the required formatting. For more information, refer to the section on [Graph formatting]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview%}). 
+Spaklines and data bars are created by adding the required [chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%}) and, then, applying the required formatting. For more information, refer to the section on [Graph formatting]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}). 
 
 The following image shows a typical usage of the Sparkline chart type in a table. 
 

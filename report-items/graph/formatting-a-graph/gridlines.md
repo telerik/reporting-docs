@@ -1,11 +1,10 @@
 ---
 title: GridLines
 page_title: GridLines 
-description: GridLines
+description: "Learn how to style and format the gridlines of the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/gridlines
-tags: gridlines
+tags: telerik, reporting, report, items, graph, styling, formatting, gridlines
 published: True
-position: 5
 previous_url: /GraphFormattingGridLines
 ---
 

@@ -32,12 +32,8 @@ Custom markers can also be displayed based on a certain condition. For that, set
 
 > Only the marker types that form a closed contour support **BackgroundImage**. The markers that consist only of lines (i.e. X, Plus, Minus) will not render a background image if set.  
     
-## Additional resources
-[Download the sample report](resources/graphcustommarkers.zip).
+## Additional Resources
 
-## See Also 
-
-[Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) 
-
-[Formatting a Graph]({% slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/overview %})  
+* [Sample Report](resources/graphcustommarkers.zip).
+* [Conditional Formatting]({% slug telerikreporting/designing-reports/styling-reports/conditional-formatting %}) 
   

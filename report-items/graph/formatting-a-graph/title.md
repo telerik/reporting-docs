@@ -1,11 +1,10 @@
 ---
 title: Title
 page_title: Title 
-description: Title
+description: "Learn how to style and format the title of the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/title
-tags: title
+tags: telerik, reporting, report, items, graph, styling, formatting, title
 published: True
-position: 4
 previous_url: /GraphFormattingTitle
 ---
 

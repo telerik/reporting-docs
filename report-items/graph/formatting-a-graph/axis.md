@@ -1,15 +1,14 @@
 ---
-title: Axis
-page_title: Axis 
-description: Axis
+title: Axes
+page_title: Axes 
+description: "Learn how to style and format the axes of the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/axis
-tags: axis
+tags: telerik, reporting, report, items, graph, styling, formatting, axis
 published: True
-position: 1
 previous_url: /GraphFormattingAxis
 ---
 
-# Axis
+# Axes
 
 Coordinate-based chart types (column, bar, area, point, line, and range) have two axes that are used to categorize and display data relationships. Different types of formatting will be applied to each axis. 
 

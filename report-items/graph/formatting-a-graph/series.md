@@ -1,11 +1,10 @@
 ---
 title: Series
 page_title: Series 
-description: Series
+description: "Learn how to style and format the series of the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series
-tags: series
+tags: telerik, reporting, report, items, graph, styling, formatting, series
 published: True
-position: 2
 previous_url: /GraphFormatSeries
 ---
 

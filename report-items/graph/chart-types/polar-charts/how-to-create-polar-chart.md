@@ -1,7 +1,7 @@
 ---
 title: Creating Polar Charts
 page_title: Creating Polar Charts
-description: "Learn how to display Polar charts when working with Telerik Reporting."
+description: "Learn how to display Polar charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/how-to-create-polar-chart
 tags: telerik, reporting, report, items, graph, creating, polar, chart
 published: True

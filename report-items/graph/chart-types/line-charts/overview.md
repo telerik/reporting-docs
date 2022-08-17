@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Line Charts Overview
-description: "Learn more about the Telerik Reporting Line Chart types."
+description: "Learn more about the Telerik Reporting Line Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview
 tags: telerik, reporting, report, items, graph, line, chart, overview
 published: True

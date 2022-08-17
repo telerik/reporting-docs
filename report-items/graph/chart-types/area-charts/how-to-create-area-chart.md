@@ -1,7 +1,7 @@
 ---
 title: Creating Area Charts
 page_title: Creating Area Charts 
-description: "Learn how to display Area charts when working with Telerik Reporting."
+description: "Learn how to display Area charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/how-to-create-area-chart
 tags: telerik, reporting, report, items, graph, creating, area, chart
 published: True

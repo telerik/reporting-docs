@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Range Charts Overview
-description: "Learn more about the Telerik Reporting Range Chart types."
+description: "Learn more about the Telerik Reporting Range Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview
 tags: telerik, reporting, report, items, graph, range, chart, overview
 published: True

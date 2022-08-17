@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Area Charts Overview
-description: "Learn more about the Telerik Reporting Area Chart types."
+description: "Learn more about the Telerik Reporting Area Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview
 tags: telerik, reporting, report, items, graph, area, chart, overview
 published: True

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Barcode Report Item Getting Started Guide
 description: "Get up and running with Telerik Reporting, and learn how to create and use the Barcode report item in reports."
 slug: barcode_item_get_started
 tags: telerik, reporting, report, items, barcode, getting, started

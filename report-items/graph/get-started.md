@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Graph Report Item Getting Started Guide
 description: "Get up and running with Telerik Reporting, and learn how to create and use the Graph report item in reports."
 slug: graph_item_get_started
 previous_url: /report-items/graph/how-to/how-to-add-graph-to-report, /AddGraphToReport

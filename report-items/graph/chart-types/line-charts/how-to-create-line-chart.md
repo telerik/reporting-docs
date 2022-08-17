@@ -1,7 +1,7 @@
 ---
 title: Creating Line Charts
 page_title: Creating Line Charts
-description: "Learn how to display Line charts when working with Telerik Reporting."
+description: "Learn how to display Line charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/how-to-create-line-chart
 tags: telerik, reporting, report, items, graph, creating, line, chart
 published: True

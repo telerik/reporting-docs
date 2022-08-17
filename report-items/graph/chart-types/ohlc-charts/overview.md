@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: OHLC Charts Overview
-description: "Learn more about the Telerik Reporting OHLC Chart types."
+description: "Learn more about the Telerik Reporting OHLC Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview
 tags: telerik, reporting, report, items, graph, ohlc, chart, overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Scatter Charts Overview
-description: "Learn more about the Telerik Reporting Scatter Chart types."
+description: "Learn more about the Telerik Reporting Scatter Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview
 tags: telerik, reporting, report, items, graph, scatter, bubble, chart, overview
 published: True

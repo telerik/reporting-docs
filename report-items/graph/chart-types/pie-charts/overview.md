@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Pie Charts Overview
-description: "Learn more about the Telerik Reporting Pie Chart types."
+description: "Learn more about the Telerik Reporting Pie Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview
 tags: telerik, reporting, report, items, graph, pie, chart, overview
 published: True

@@ -1,6 +1,6 @@
 ---
 title: Cross-Section 
-page_title: Cross-Section   
+page_title: Cross-Section Report Item Overview 
 description: "Learn more about the Telerik Reporting Cross-section report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
 slug: telerikreporting/designing-reports/report-structure/cross-section-item
 tags: telerik, reporting, report, items, cross, section, item

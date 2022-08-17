@@ -1,7 +1,7 @@
 ---
 title: Creating Pie Charts
 page_title: Creating Pie Charts 
-description: "Learn how to display Pie charts when working with Telerik Reporting."
+description: "Learn how to display Pie charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/how-to-create-pie-chart
 tags: telerik, reporting, report, items, graph, creating, pie, chart
 published: True

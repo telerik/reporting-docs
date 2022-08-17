@@ -1,7 +1,7 @@
 ---
 title: Creating Column Charts
 page_title: Creating Column Charts 
-description: "Learn how to display Column charts when working with Telerik Reporting."
+description: "Learn how to display Column charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/how-to-create-column-chart
 tags: telerik, reporting, report, items, graph, creating, column, chart
 published: True

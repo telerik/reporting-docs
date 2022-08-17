@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Chart Types Overview
-description: "Learn more about the chart types supported by Telerik Reporting."
+description: "Learn more about the chart types supported by the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/overview
 tags: telerik, reporting, report, items, graph, chart, types, overview
 published: True

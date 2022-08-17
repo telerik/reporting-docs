@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Column Charts Overview
-description: "Learn more about the Telerik Reporting Column Chart types."
+description: "Learn more about the Telerik Reporting Column Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview
 tags: telerik, reporting, report, items, graph, column, chart, overview
 published: True

@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Barcode Overview
+page_title: Barcode Report Item Overview
 description: "Learn more about the Telerik Reporting Barcode report item."
 slug: telerikreporting/designing-reports/report-structure/barcode/overview
 tags: telerik, reporting, report, items, barcode, overview

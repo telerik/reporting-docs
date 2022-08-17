@@ -1,7 +1,7 @@
 ---
 title: Creating Range Charts
 page_title: Creating Range Charts 
-description: "Learn how to display Range charts when working with Telerik Reporting."
+description: "Learn how to display Range charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/how-to-create-range-chart
 tags: telerik, reporting, report, items, graph, creating, range, chart
 published: True

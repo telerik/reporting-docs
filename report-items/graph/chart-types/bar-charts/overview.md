@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Bar Charts Overview
-description: "Learn more about the Telerik Reporting Bar Chart types."
+description: "Learn more about the Telerik Reporting Bar Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview
 tags: telerik, reporting, report, items, graph, bar, chart, overview
 published: True

@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Polar Charts Overview
-description: "Learn more about the Telerik Reporting Polar Chart types."
+description: "Learn more about the Telerik Reporting Polar Chart types supported by the Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview
 tags: telerik, reporting, report, items, graph, polar, chart, overview
 published: True

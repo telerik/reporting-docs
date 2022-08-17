@@ -1,7 +1,7 @@
 ---
 title: Creating Bubble Charts
 page_title: Creating Bubble Charts 
-description: "Learn how to display Bubble charts when working with Telerik Reporting."
+description: "Learn how to display Bubble charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-bubble-chart
 tags: telerik, reporting, report, items, graph, creating, bubble, chart
 published: True

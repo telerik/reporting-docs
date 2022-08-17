@@ -1,6 +1,6 @@
 ---
 title: Checkbox
-page_title: Checkbox 
+page_title: Checkbox Report Item Overview
 description: "Learn more about the Telerik Reporting Checkbox report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
 slug: telerikreporting/designing-reports/report-structure/checkbox
 tags: telerik, reporting, report, items, checkbox, expanding, shrinking, embedded, expressions

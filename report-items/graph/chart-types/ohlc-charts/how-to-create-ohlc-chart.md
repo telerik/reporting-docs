@@ -1,7 +1,7 @@
 ---
 title: Creating OHLC Charts
 page_title: Creating OHLC Charts
-description: "Learn how to display OHLC charts when working with Telerik Reporting."
+description: "Learn how to display OHLC charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/how-to-create-ohlc-chart
 tags: telerik, reporting, report, items, graph, creating, ohlc, chart
 published: True

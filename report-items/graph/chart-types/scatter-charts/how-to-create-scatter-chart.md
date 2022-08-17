@@ -1,7 +1,7 @@
 ---
 title: Creating Scatter Charts
 page_title: Creating Scatter Charts
-description: "Learn how to display Scatter charts when working with Telerik Reporting."
+description: "Learn how to display Scatter charts when working with the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/how-to-create-scatter-chart
 tags: telerik, reporting, report, items, graph, creating, scatter, chart
 published: True

@@ -1,15 +1,15 @@
 ---
 title: SubReport
-page_title: SubReport 
-description: SubReport
+page_title: SubReport Report Item Overview
+description: "Learn more about the Telerik Reporting Checkbox report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
 slug: telerikreporting/designing-reports/report-structure/subreport
-previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subreport , /report-items-sub-report
+previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subreport, /report-items-sub-report
 tags: telerik, reporting, report, items, subreport
 published: True
 position: 12
 ---
 
-# SubReport
+# SubReport Report Item Overview
 
 The SubReport report item lets you display one report within another report. It is a container item just like the report sections and grows depending on its children. The screenshot shows a SubReport report item at design-time. This allows you to compose complex reports from disparate report sources. The data for each SubReport can be completely different. For example you could combine a product listing, a sales summary and a list of sales people each in their own sub reports, with each sub report getting data from a different source. You can also pass parameters to SubReports using the Edit Parameters collection editor.
 

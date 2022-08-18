@@ -1,15 +1,15 @@
 ---
 title: Shape
-page_title: Shape 
-description: Shape
+page_title: Shape Report Item Overview
+description: "Learn more about the Telerik Reporting Checkbox report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
 slug: telerikreporting/designing-reports/report-structure/shape
-tags: shape
+tags: telerik, reporting, report, items, shape
 published: True
 position: 11
 previous_url: /report-items-shape
 ---
 
-# Shape
+# Shape Report Item Overview
 
 The Shape report item is used to display one of a selection of predefined shapes on a report. The screenshot below shows a Shape report item with ShapeType="Right Arrow" on the report design surface. 
 

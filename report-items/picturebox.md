@@ -1,9 +1,9 @@
 ---
 title: PictureBox
-page_title: PictureBox 
-description: PictureBox
+page_title: PictureBox Report Item Overview
+description: "Learn more about the Telerik Reporting PictureBox report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
 slug: telerikreporting/designing-reports/report-structure/picturebox
-tags: picturebox
+tags: telerik, reporting, report, items, picturebox
 published: True
 position: 9
 previous_url: /report-items-picture-box
@@ -17,9 +17,9 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# PictureBox
+# PictureBox Report Item Overview
 
-The PictureBox report item is used to display images in a report. It works with the image formats supported by GDI+ (BMP, GIF, JPEG, EXIF, PNG, and TIFF) and SVG (Scalable Vector Graphics) and with Base64-encoded images.
+The PictureBox report item displays images in a report, and works with Base64-encoded images, SVG (Scalable Vector Graphics), and image formats supported by GDI+ (BMP, GIF, JPEG, EXIF, PNG, and TIFF).
 
 This document explains how to add an image to a report with the help of the PictureBox item and how to configure its layout. 
 
@@ -131,15 +131,9 @@ The SVG images are rendered in vector format where the rendering extension suppo
 ## See Also
 
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
-
 * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
-
 * [Types of Bitmaps](http://msdn.microsoft.com/en-us/library/at62haz6.aspx)
-
 * [Images, Bitmaps, and Metafiles](http://msdn.microsoft.com/en-us/library/3ke1f63h.aspx)
-
 * [Scalable Vector Graphics (SVG)](https://www.w3.org/TR/SVG/)
-
 * [PictureBox](/reporting/api/Telerik.Reporting.PictureBox) 
-
 * [Sizing](/reporting/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing)

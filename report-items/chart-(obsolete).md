@@ -9,7 +9,7 @@ position: 50
 previous_url: /report-items-chart
 ---
 
-# (Obsolete) Chart 
+# (Obsolete) Chart Report Item Overview
 
 >* The Chart report item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) report item. The Graph is most often used for building powerful OLAP and Pivot charts. 
 >* The Chart report item is not supported in .NET Core projects and in projects deployed on Azure. 

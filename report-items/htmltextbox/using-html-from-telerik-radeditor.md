@@ -1,5 +1,5 @@
 ---
-title: Using HTML from Telerik RadEditor
+title: Formatting with the Telerik AJAX Editor
 page_title: Using HTML from Telerik RadEditor 
 description: Using HTML from Telerik RadEditor
 slug: telerikreporting/designing-reports/report-structure/htmltextbox/using-html-from-telerik-radeditor

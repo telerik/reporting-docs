@@ -31,4 +31,4 @@ The following image shows a Panel which contains two [TextBox]({%slug telerikrep
 
 * [Organizing the Report Layout with the Panel]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
-* [Panel API Reference](/reporting/api/Telerik.Reporting.Panel)
+* [(API) Panel](/reporting/api/Telerik.Reporting.Panel)

@@ -75,4 +75,4 @@ Not all rendering extensions [support the Cross-section report item]({% slug tel
 
 ## See Also
 
-* [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+* [Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})

@@ -1,9 +1,9 @@
 ---
 title: PictureBox
 page_title: PictureBox Report Item Overview
-description: "Learn more about the Telerik Reporting PictureBox report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
+description: "Learn more about the Telerik Reporting PictureBox report item, how to set its value, bind it to binary images, expressions, URIs, base64, and SVG, and string literals, and how to clip, render, and position the report item."
 slug: telerikreporting/designing-reports/report-structure/picturebox
-tags: telerik, reporting, report, items, picturebox
+tags: telerik, reporting, report, items, picturebox, set, value, bind, binary, images, svg, base64, uri, string, literals, clip, render, position
 published: True
 position: 9
 previous_url: /report-items-picture-box
@@ -168,5 +168,5 @@ The SVG images are rendered in vector format where the rendering extension suppo
 * [Types of Bitmaps](http://msdn.microsoft.com/en-us/library/at62haz6.aspx)
 * [Images, Bitmaps, and Metafiles](http://msdn.microsoft.com/en-us/library/3ke1f63h.aspx)
 * [Scalable Vector Graphics (SVG)](https://www.w3.org/TR/SVG/)
-* [PictureBox](/reporting/api/Telerik.Reporting.PictureBox) 
-* [Sizing](/reporting/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing)
+* [(API) PictureBox](/reporting/api/Telerik.Reporting.PictureBox) 
+* [(API) Sizing](/reporting/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing)

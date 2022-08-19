@@ -1,9 +1,9 @@
 ---
 title: Shape
 page_title: Shape Report Item Overview
-description: "Learn more about the Telerik Reporting Checkbox report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
+description: "Learn more about the Telerik Reporting Shape report item and how to choose the shape type of the supported lines, arrows, stars, and more shapes."
 slug: telerikreporting/designing-reports/report-structure/shape
-tags: telerik, reporting, report, items, shape
+tags: telerik, reporting, report, items, shape, types, arrows, lines, stars
 published: True
 position: 11
 previous_url: /report-items-shape
@@ -45,6 +45,6 @@ You can create the Shape at runtime and add it to a report item container (Secti
 ## See Also
 
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
-* [Shape](/reporting/api/Telerik.Reporting.Shape)  
-* [ShapeType](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType)  
-* [Stretch](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch)
+* [(API) Shape](/reporting/api/Telerik.Reporting.Shape)  
+* [(API) ShapeType](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType)  
+* [(API) Stretch](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch)

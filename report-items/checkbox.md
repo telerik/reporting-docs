@@ -60,7 +60,7 @@ The following image shows the final result.
 ## See Also 
 
 * [Using Embedded Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
-* [Telerik.Reporting.CheckBox](/api/Telerik.Reporting.CheckBox)
-* [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)
-* [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)
-* [CheckAlign](/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)
+* [(API) Telerik.Reporting.CheckBox](/api/Telerik.Reporting.CheckBox)
+* [(API) CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)
+* [(API) CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)
+* [(API) CheckAlign](/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)

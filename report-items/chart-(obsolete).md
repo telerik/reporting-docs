@@ -70,4 +70,4 @@ To customize the Chart, right-click the item and select **Properties** from the
 ## See Also
 
 * [Telerik UI for ASP.NET AJAX Chart Documentation](https://docs.telerik.com/devtools/aspnet-ajax/controls/chart/overview)
-* [API of the Chart Report Item](/reporting/api/Telerik.Reporting.Chart)
+* [(API) Chart](/reporting/api/Telerik.Reporting.Chart)

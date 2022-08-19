@@ -1,5 +1,5 @@
 ---
-title: Initialization
+title: Initialization Approaches
 page_title: Initialization Approaches for the Graph Report Item
 description: "Learn more about the alternative initialization approaches when working with the Telerik Reporting Graph report item."
 slug: graph_item_initialization

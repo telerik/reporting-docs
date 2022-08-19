@@ -1,15 +1,14 @@
 ---
-title: Overview
+title: Pie Charts
 page_title: Pie Charts Overview
-description: "Learn more about the Telerik Reporting Pie Chart types supported by the Graph report item."
+description: "Learn more about the Telerik Reporting Pie Chart types supported by the Graph report item and learn how to create a Pie chart."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview
-tags: telerik, reporting, report, items, graph, pie, chart, overview
+tags: telerik, reporting, report, items, graph, pie, chart, overview, creating
+previous_url: /PieCharts, /GraphHowToCreatePieChart, /report-items/graph/chart-types/pie-charts/overview, /report-items/graph/chart-types/pie-charts/how-to-create-pie-chart
 published: True
-position: 0
-previous_url: /PieCharts
 ---
 
-# Pie Charts Overview
+# Pie Charts
 
 A Pie chart displays the contribution of fractional parts to a whole and is most commonly used to make comparisons between groups. 
 
@@ -17,18 +16,65 @@ Pie charts have no axes. When you use a numeric field, the chart can calculate t
 
 The following image displays a Pie chart with a legend: 
 
-![Pie Chart\Pie Chart](images/Graph/PieChart.png)
+![A basic Pie chart type](images/PieChart.png)
 
 ## Types
 
 The Pie chart supports the __Doughnut__ type which has an open space in the center. To control the width of the open space, use the [`PolarCoordinateSystem.InnerRadiusRatio`](https://docs.telerik.com/reporting/p-telerik-reporting-polarcoordinatesystem-innerradiusratio) property. 
 
-## Design Considerations
+## Creating Pie Charts
 
-* Pie charts are popular in reports because of their visual impact. However, Pie charts are a very simplified chart type that may not best represent your data. Consider using a Pie chart only after the data has been aggregated to seven data groups or less. 
-* Pie charts display each data group as a separate slice on the chart. You must add at least one data field and one series field to the pie chart. If more than one data field is added to a Pie chart, the Pie chart will display both data fields in the same chart. 
-* If you are defining your own colors on a Pie chart with a custom palette, be sure that you have enough colors in your palette to display each data point with its own unique color. 
-* A Pie chart requires at least two values to make a valid comparison between proportions. If your Pie chart contains only one color, verify that you have added a series field by which to group the data. When the Pie chart does not contain series, it aggregates the values from your data field into one value for display. 
+In this section, you will create a Pie chart.
+
+### 1. Add the Graph and Connect It to Data
+
+To add a new Graph report item to the report and connect it to data, refer to the [getting started step-by-step guide of the Graph report item]({% slug graph_item_get_started %}). 
+   
+### 2. Set the SeriesGroups Hierarchy 
+
+Now you can set the **SeriesGropus** hierarchy of the Pie chart: 
+
+1. Open the __SeriesGroups__ collection editor and click __Add__.
+1. Set the __Groupings__ to `=Fields.StoreName`.
+1. Set the __Sortings__ to `=Sum(Fields.SubTotal)`. 
+1. Set the __Filters__ to `=Sum(Fields.SubTotal) Top N =10`.
+1. Set the __Name__ to `seriesGroup1`. 
+
+### 3. Set the CategoryGroups Hierarchy
+
+Next, you will have to define the **CategoryGroups** hierarchy of the Pie chart:
+
+1. Open the __CategoryGroups__ collection editor and click __Add__. By default, this will add a new static group (group without grouping). 
+1. Set the __Name__ to `categoryGroup1`. 
+
+### 4. Configure the Coordinate System
+
+Here you will specify the coordinate system details: 
+
+1. Open the __CoordinateSystems__ collection editor and __Add__ a new __PolarCoordinateSystem__. 
+1. Leave the __Name__ to `polarCoordinateSystem1`. 
+1. Set the __RadialAxis__ to __New Axis with Category Scale__. 
+1. Expand the **RadialAxis** node. Expand the **Scale** node. Set **SpacingSlotCount** to `0`. 
+1. Expand the axis **Style** node. Set **Visible** to `False`.
+1. Set the __AngularAxis__ to __New Axis with Numerical Scale__. 
+1. Expand the **AngularAxis** node. Expand the axis **Style** node. Set **Visible** to `False`.
+
+### 5. Configure the Series
+
+In this step, you will configure the series of the chart:
+
+1. Open the __Series__ collection editor and __Add__ new __BarSeries__. 
+1. Set the __CategoryGroup__ to __categoryGroup1__. 
+1. Set the __SeriesGroup__ to __seriesGroup1__. 
+1. Set the __CoordinateSystem__ to __polarCoordinateSystem1__. 
+1. Set the __ArrangeMode__ to __Stacked100__. 
+1. Set the __X__ value to `=Sum(Fields.SubTotal)`.
+1. Set the __DataPointLabel__ to `=Sum(Fields.SubTotal)/1000.0`. 
+1. Set the __DataPointLabelFormat__ to `{0:C0}K`.
+
+### 6. Style the Appearance   
+
+To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}). 
 
 ## Displaying Percentage Values 
 
@@ -79,3 +125,9 @@ By default, the merged slice is labeled in the legend of the chart as __Others__
 
 To customize the styling of the merged data point, its label, or the corresponding legend item, use the corresponding Conditional Formatting property by using the `= IsMergedData() | Operator.Equals | = True` filter. 
 
+## Design Considerations
+
+* Pie charts are popular in reports because of their visual impact. However, Pie charts are a very simplified chart type that may not best represent your data. Consider using a Pie chart only after the data has been aggregated to seven data groups or less. 
+* Pie charts display each data group as a separate slice on the chart. You must add at least one data field and one series field to the pie chart. If more than one data field is added to a Pie chart, the Pie chart will display both data fields in the same chart. 
+* If you are defining your own colors on a Pie chart with a custom palette, be sure that you have enough colors in your palette to display each data point with its own unique color. 
+* A Pie chart requires at least two values to make a valid comparison between proportions. If your Pie chart contains only one color, verify that you have added a series field by which to group the data. When the Pie chart does not contain series, it aggregates the values from your data field into one value for display. 

@@ -57,33 +57,6 @@ navigation:
     report-items/graph/chart-types:
         position: 10
         title: "Chart Types"
-    report-items/graph/chart-types/area-charts:
-        position: 10
-        title: "Area Charts"
-    report-items/graph/chart-types/bar-charts:
-        position: 10
-        title: "Bar Charts"
-    report-items/graph/chart-types/column-charts:
-        position: 20
-        title: "Column Charts"
-    report-items/graph/chart-types/line-charts:
-        position: 30
-        title: "Line Charts"
-    report-items/graph/chart-types/ohlc-charts:
-        position: 40
-        title: "OHLC Charts"
-    report-items/graph/chart-types/pie-charts:
-        position: 50
-        title: "Pie Charts"
-    report-items/graph/chart-types/polar-charts:
-        position: 60
-        title: "Polar Charts"
-    report-items/graph/chart-types/range-charts:
-        position: 70
-        title: "Range Charts"
-    report-items/graph/chart-types/scatter-charts:
-        position: 80
-        title: "Scatter Charts"    
     report-items/graph/formatting-a-graph:
         position: 20
         title: "Styling and Formatting"

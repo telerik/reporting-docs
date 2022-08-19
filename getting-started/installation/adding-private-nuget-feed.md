@@ -27,7 +27,7 @@ Telerik provides NuGet packages from the private Telerik NuGet feed which you ca
 
 1. Go to __Tools__ > __NuGet Package Manager__ > __Package Manager Settings__, select __Package Manager Sources__ and click the __+__ button. 
 
-1. Choose the feed __Name__ and set the feed __URL__ to __https://nuget.telerik.com/v3/index.json__. Click __OK__. 
+1. Choose the feed __Name__, set the feed __URL__ to __https://nuget.telerik.com/v3/index.json__ and click __OK__. 
 	
 	>caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed 
 

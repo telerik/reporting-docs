@@ -1,12 +1,12 @@
 ---
-title: Structure Overview
-page_title: Structure Overview
-description: Structure Overview
+title: Structure and Elements 
+page_title: Structure and Elements of the Map Report Item
+description: 
 slug: telerikreporting/designing-reports/report-structure/map/structure/overview
-tags: overview
+tags: telerik, reporting, map, report, item, structure, elements, overview
+previous_url: /MapStructure
 published: True
 position: 0
-previous_url: /MapStructure
 ---
 
 # Structure Overview
@@ -97,6 +97,3 @@ The [Location Provider]({%slug telerikreporting/designing-reports/report-structu
 
 The Map item is not designed for scenarios where great precision is needed. The processing engine works with float numbers for performance reasons, which limits the data points precision to ~0.00001. Such difference in decimal degrees, measured as latitude at the equator, gives a distance of ~1.1 meters. If the coordinates of the data points are closer than that distance, they may be rendered overlapped. 
 
-## See Also
-
-* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})

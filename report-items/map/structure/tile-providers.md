@@ -1,17 +1,15 @@
 ---
 title: Tile Providers
 page_title: Tile Providers 
-description: Tile Providers
+description: 
 slug: telerikreporting/designing-reports/report-structure/map/structure/tile-providers
-tags: tile,providers
+tags: telerik, reporting, map, report, item, tile, providers
+previous_url: /MapTileProviders
 published: True
 position: 1
-previous_url: /MapTileProviders
 ---
 
 # Tile Providers
-
-## Tile Providers
 
 The [TileProvider](/reporting/api/Telerik.Reporting.TileProvider) class is used to request and download the imagery data for the specified map extent. The imagery data is downloaded on a small images called *tiles* that form a background image, which can be used to give a better appearance of your map charts. The tile provider should have a valid set of URLs to request the tiles, set directly or through a URL Template. The [Map](/reporting/api/Telerik.Reporting.Map) control offers two types of tile providers - [BingMapsTileProvider](/reporting/api/Telerik.Reporting.BingMapsTileProvider) and [GenericTileProvider](/reporting/api/Telerik.Reporting.GenericTileProvider). 
 
@@ -21,8 +19,3 @@ The [TileProvider](/reporting/api/Telerik.Reporting.TileProvider) class is used 
 
 * [MapQuestTileProvider](/reporting/api/Telerik.Reporting.MapQuestTileProvider) __(obsolete)__ - uses the [MapQuest](http://www.mapquest.com/) tile servers that provides the tiles in two imagery sets: *OpenStreetMap Tiles* and the *MapQuest Open Aerial Tiles*. The tile server does not require a Client Token for authentication. The [MapQuestTileProvider](/reporting/api/Telerik.Reporting.MapQuestTileProvider) is being substituted by the [GenericTileProvider](/reporting/api/Telerik.Reporting.GenericTileProvider) in order to give more control over the tile provider settings and avoid the pre-setup provider configuration. 
 
-## See Also
-
-* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
-
-* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})

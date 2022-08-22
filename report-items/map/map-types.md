@@ -1,12 +1,12 @@
 ---
 title: Map Types
 page_title: Map Types 
-description: Map Types
+description: 
 slug: telerikreporting/designing-reports/report-structure/map/map-types
-tags: map,types
+tags: telerik, reporting, map, report, item, types
+previous_url: /MapChartTypes
 published: True
 position: 2
-previous_url: /MapChartTypes
 ---
 
 # Map Types

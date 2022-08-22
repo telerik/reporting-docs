@@ -1,12 +1,12 @@
 ---
 title: Connecting to Data
 page_title: Connecting to Data 
-description: Connecting to Data
+description: 
 slug: telerikreporting/designing-reports/report-structure/map/connecting-to-data
-tags: connecting,to,data
+tags: telerik, reporting, map, report, item, connecting, to, data
+previous_url: /MapConnectingToData
 published: True
 position: 1
-previous_url: /MapConnectingToData
 ---
 
 # Connecting to Data

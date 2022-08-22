@@ -1,12 +1,12 @@
 ---
 title: Legend
 page_title: Legend 
-description: Legend
+description: 
 slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/legend
-tags: legend
+tags: telerik, reporting, map, report, item, legend
+previous_url: /MapFormattingLegend, /MapFormattingAMap, /report-items/map/formatting-a-map/overview 
 published: True
 position: 3
-previous_url: /MapFormattingLegend
 ---
 
 # Legend

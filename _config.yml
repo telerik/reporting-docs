@@ -95,13 +95,10 @@ navigation:
         title: "Map"
     report-items/map/structure:
         position: 10
-        title: "Structure"    
+        title: "Structure and Elements"    
     report-items/map/formatting-a-map:
         position: 11
-        title: "Formatting a Map"
-    report-items/map/how-to:
-        position: 12
-        title: "How To"
+        title: "Styling and Formatting"
     report-items/htmltextbox:
         position: 6
         title: "HtmlTextBox"

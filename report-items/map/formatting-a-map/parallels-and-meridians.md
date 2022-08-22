@@ -1,12 +1,12 @@
 ---
 title: Parallels and Meridians
 page_title: Parallels and Meridians 
-description: Parallels and Meridians
+description: 
 slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/parallels-and-meridians
-tags: parallels,and,meridians
+tags: telerik, reporting, map, report, item, parallels, and, meridians
+previous_url: /MapFormattingParallelsMeridians
 published: True
 position: 1
-previous_url: /MapFormattingParallelsMeridians
 ---
 
 # Parallels and Meridians

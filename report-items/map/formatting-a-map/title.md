@@ -1,19 +1,19 @@
 ---
 title: Title
 page_title: Title 
-description: Title
+description: 
 slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/title
-tags: title
+tags: telerik, reporting, map, report, item, title
+previous_url: /MapFormattingTitle
 published: True
 position: 2
-previous_url: /MapFormattingTitle
 ---
 
 # Title
 
 The Map item can have one or more titles. By default the map item have one title with __TopCenter Position__. 
 
-## Adding a title:
+## Adding a Title
 
 1. Click the map item that you want to change. The selected map properties are listed in the __Property Browser__. 
 

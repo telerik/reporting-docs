@@ -1,17 +1,15 @@
 ---
 title: Location Providers
 page_title: Location Providers 
-description: Location Providers
+description: 
 slug: telerikreporting/designing-reports/report-structure/map/structure/location-providers
-tags: location,providers
+tags: telerik, reporting, map, report, item, location, providers
+previous_url: /MapLocationProviders
 published: True
 position: 2
-previous_url: /MapLocationProviders
 ---
 
 # Location Providers
-
-## Location Providers
 
 The __Location Provider__ matches the addresses or locations with geographical coordinates (latitude and longitude). It is used in conjunction with the GeoLocation groups which is used to provide the geocoding request in order to retrieve the data point coordinates. When you make a geocoding request, the response returns one or more location resources that contain location information ordered by relevance. The more detailed information is used in the request, the more accurate the results will be. 
 
@@ -25,8 +23,3 @@ Supported location providers are:
 
 * [BingLocationProvider](/reporting/api/Telerik.Reporting.BingLocationProvider) - uses the [Bing™ Maps Locations API](http://msdn.microsoft.com/en-us/library/ff701715.aspx) to get location information about the requested address. 
 
-## See Also
-
-* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
-
-* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})

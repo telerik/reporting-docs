@@ -1,11 +1,11 @@
 ---
 title: Styling and Formatting
 page_title: Styling and Formatting the HtmlTextBox Report Item
-description: "Learn how to ..."
+description: "Learn how to control the text-presentation style of the Telerik Reporting HtmlTextBox report item."
 slug: htmltextbox_formatting_and_styling
 tags: telerik, reporting, report, items, htmltextbox, styling, formatting, html, tags, css, attributes 
 published: True
-position: ...
+position: 4
 ---
 
 # Styling and Formatting
@@ -14,41 +14,36 @@ The HtmlTextBox enables you to control the style of its text presentation by sup
 
 ## Supported HTML Tags
 
-The HtmlTextBoxVarious formatting options are available to control the text presentation:
+The HtmlTextBox does not support the `table` and `img` tags. 
+* Use the native Reporting [Table, List, and Crrostab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) report items instead of `table`, and the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item instead of `img`. 
+* The HtmlTextBox also supports custom approaches for rendering HTML as an image with a third-party tool and using the image with the PictureBox item. 
 
-* Font, size (relative size against the font size of the item, default is 3 (1-7)), color (`<font>`)
+The following `HtmlTextBoxVarious` formatting options are available and provide control over the HtmlTextBox text presentation:
 
-* Bold, Italic, Underline (`<strong>`,`<b>`, `<em>`, `<i>`, `<u>`)
-
-* Subscript, Superscript (`<sub>`,`<sup>`)
-
-* HyperLink (`<a href target>`)
-
-* Lists (`<ol>`, `<ul>`, `<li>`)
-
-* Organize the text in paragraphs (`<div>`, `<span>`,`<p>`, `<br>`, `<center>`)
-
-> TABLE and IMG tags are not supported. Instead, you must use the native Reporting [Table/List/Crrostab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) and [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) items. A custom approach like rendering HTML as an Image with a third-party tool and using the image via PictureBox item is also supported. 
+* Font, color (`<font>`), and size (relative size against the font size of the item). The default size value is `3` out of the 1-7 range.
+* Bold, Italic, Underline (`<strong>`,`<b>`, `<em>`, `<i>`, and `<u>`).
+* Subscript, Superscript (`<sub>` and `<sup>`).
+* HyperLink (`<a href target>`).
+* Lists (`<ol>`, `<ul>`, and `<li>`).
+* Text organization in paragraphs (`<div>`, `<span>`,`<p>`, `<br>`, and `<center>`).
 
 
-## Supported CSS attributes
+## Supported CSS Attributes
 
-You can style the text with the following CSS attributes: 
+When you import text that contains HTML markup, the data is always parsed by the HtmlTextBox first. Because only a subset of HTML tags is supported, the HTML that is shown in the rendered report may differ from your original HTML. 
 
-* background-color
+Also, according to the HTML specification and the general XML specification, the `&` and `<" and ">` characters are considered as markup delimiters and you have to encode them so that they are treated as regular text. For example, you can escape the `&` character `& amp;` entity. For more information, refer to the [w3.org article](http://www.w3.org/TR/REC-xml/#syntax). 
 
-* border, border-color, border-width, border-style
+Any other HTML markup tags will be ignored during the processing of the report. If the HTML represented by the expression in the HtmlTextBox is badly formatted, the HtmlTextBox will throw an exception. Note that all HTML tags are case-insensitive. 
 
-* text-align (center, left, right, justify), text-decoration (none, underline, line-through)
+The HtmlTextBox supports the following CSS attributes for styling its text: 
 
-* text-indent (note: should be specified on a block item)
+* `background-color`
+* `border`, `border-color`, `border-width`, `border-style`
+* `text-align` (`center`, `left`, `right`, and `justify`), `text-decoration` (`none`, `underline`, and `line-through`)
+* (Specify it on a block item.) `text-indent`
+* `font-family`, `font-size`, `font-weight`
+* `padding`, `padding-bottom`, `padding-top`, `padding-right`, `padding-left`
+* `color`
 
-* font-family, font-size, font-weight
 
-* padding, padding-bottom, padding-top, padding-right, padding-left
-
-* color
-
-> When you import text that contains HTML markup, the data is always parsed by the HtmlTextBox first. Because only a subset of HTML tags is supported, the HTML that is shown in the rendered report may differ from your original HTML. Also according to the HTML specification (and the general XML specification as well) the "&", "<" and ">" characters are considered special (markup delimiters), so they need to be encoded in order to be treated as regular text. For example the "&" character can be escaped with the "& amp;" entity. You can find more information on the subject in [this w3.org article](http://www.w3.org/TR/REC-xml/#syntax). 
-
-Any other HTML markup tags will be ignored during report processing. If the HTML represented by the expression in the HtmlTextBox is not well formed, the HtmlTextBox would throw an exception. All HTML tags are case-insensitive. 

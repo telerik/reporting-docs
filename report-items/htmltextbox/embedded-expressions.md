@@ -1,15 +1,17 @@
 ---
 title: Embedded Expressions
 page_title: Mail Merge Functionality of HtmlTextBox Report Item
-description: "Learn ."
+description: "Learn how to utilize the embedded expressions in the Telerik Reporting HtmlTextBox report item to provide for the mail merge functionality."
 slug: htmltextbox_embedded_expressions
 tags: telerik, reporting, report, items, htmltextbox, embedded, expressions, mail, merge, functionality
 published: True
-position: 
+position: 6
 ---
 
 # Embedded Expressions
 
-The HtmlTextBox supports [embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) for mail merge functionality. Embedded expressions give you the freedom to get and insert data-driven information directly into the text box report item to produce customized reports and mail merging. 
+The HtmlTextBox supports [embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%}) for mail merge functionality. 
 
-After the expression evaluation/replacement, the value of the HtmlTextBox must be valid XHTML.
+Embedded expressions enable you to get and insert data-driven information directly into the HtmlTextBox report item and produce customized reports and mail merging. 
+
+After the expression is evaluated or replaced, the value of the HtmlTextBox must be valid XHTML.

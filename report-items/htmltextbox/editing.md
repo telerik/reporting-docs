@@ -1,40 +1,47 @@
 ---
 title: Editing
 page_title: Editing the HtmlTextBox Report Item
-description: "Learn how to ..."
+description: "Learn how to work with the data-driven inline fields supported by the Telerik Reporting HtmlTextBox report item and edit them in place or through a design-time editor."
 slug: htmltextbox_editing
 tags: telerik, reporting, report, items, htmltextbox, editing, inplace, designtime, editor
 published: True
-position: ...
+position: 3
 ---
 
 # Editing
 
-The HtmlTextBox supports data-driven in-line fields, which are editable either in-place or through a design-time editor, which is available in Visual Studio and the Standalone Report Designer. 
+The HtmlTextBox supports data-driven inline fields that are editable in-place or through a design-time editor. 
 
-The in-place editor for the HtmlTextBox report item allows you to quickly enter text directly into the designer rather than having to look for a property in the property grid. To activate the in-place editor, double-click the HtmlTextBox or select it and press F2. Once the in-place editor is activated: 
+## Using the In-Place Editor
 
-* Enter accepts all changes.
+The in-place editor for the HtmlTextBox report item allows you to quickly enter text directly into the designer instead of looking for a property in the **Property** grid. 
 
-* Esc discards all changes.
+To activate the in-place editor: 
 
-* Moving focus away from the HtmlTextBox also accepts all changes. 
+1. Double-click the HtmlTextBox, or select the report item and press `F2`. As a result, the in-place editor is activated.
+1. To accept all changes, press `Enter` or move the focus from the HtmlTextBox.
+1. To discard all changes, press `Esc`.
 
-The screenshot below shows an HtmlTextBox with the in-place editor active. 
+The screenshot below shows an HtmlTextBox with its in-place editor activated. 
 
-  ![](images/HtmlTextBox3.png)
+![An HtmlTextBox having its inplace editor activated](images/HtmlTextBox3.png)
 
-The design time editor supports two modes:
+## Using the Design-Time Editor
 
-1. Interactive (__Design view__) - you can select a portion of the text and make it bold, change its font, size, color, etc. using appropriate controls like comboboxes and buttons (WYSIWYG editor). Internally, the designer generates a valid HTML source and stores it in the Value property of the item. Adding embedded expressions is possible, but the entire HTML value cannot be an expression. You can switch to __HTML view__ at any time if needed. 
+The design-time editor is available in the Telerik Reporting Visual Studio and Standalone Report Designers and supports the following modes of operation: 
 
-   >Pressing the Enter key inserts a new paragraph or new list item depending on the current context. Note that it does NOT insert `<br />` (new line). To insert new line, use the button on the toolbar) 
+* Interactive (__Design view__)&mdash;Allows you to select a portion of the text and make it bold, change its font, size, color, and so on by using the appropriate controls such as combo-boxes and buttons (WYSIWYG editor). 
 
-  ![Html Text Box Design View](images/HtmlTextBox_DesignView.png)
+  Internally, the Report Designer generates a valid HTML source and stores it in the `Value` property of the item. Adding embedded expressions is possible, but the entire HTML value cannot be an expression. You can switch to the __HTML view__ anytime if needed. 
 
-1. Expression (__Html view__) - the user enters raw HTML tags and text into the source editor. The value can be an expression or text containing embedded expressions. The user can switch to __Design view__ unless the value is an expression. 
+  Pressing the `Enter` key inserts a new paragraph or a new list item depending on the current context. Note that it not insert a `<br />` (new line) element. To insert a new line, use the button on the toolbar. 
 
-  ![Html Text Box Html View](images/HtmlTextBox_HtmlView.png)
+  ![The HtmTextBox Design View](images/HtmlTextBox_DesignView.png)
 
-> MultiLine and TextWrap concepts are always true for HtmlTextBox. The __subscript__ and __superscript__ tags can be nested (i.e. `<sub>subscript1<sub>subscript2</sub></sub>`), resulting in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggles the __subscript__ or __superscript__ feature, so if nested tags are needed, the appropriate code should be added manually using the editor's __Html view__. 
+* Expression (__Html view__)&mdash;Enables the user to enter raw HTML tags and text into the source editor. The value can be an expression or text, which contains embedded expressions. The user can switch to the __Design view__ anytime unless the value is an expression. 
+
+  The `MultiLine` and `TextWrap` concepts are always true for the HtmlTextBox. You can nest the subscript and superscript tags, for example `<sub>subscript1<sub>subscript2</sub></sub>`, which will result in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggle the subscript or superscript feature and if you need nested tags, you need to manually add the appropriate code by using the __Html view__ of the editor. 
+  
+  ![The HtmlTextBox Html View](images/HtmlTextBox_HtmlView.png)
+
 

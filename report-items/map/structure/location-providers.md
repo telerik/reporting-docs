@@ -1,12 +1,11 @@
 ---
 title: Location Providers
-page_title: Location Providers 
+page_title: Location Providers of the Map Report Item 
 description: 
 slug: telerikreporting/designing-reports/report-structure/map/structure/location-providers
 tags: telerik, reporting, map, report, item, location, providers
 previous_url: /MapLocationProviders
 published: True
-position: 2
 ---
 
 # Location Providers

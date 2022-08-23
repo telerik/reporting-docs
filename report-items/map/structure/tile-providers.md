@@ -1,12 +1,11 @@
 ---
 title: Tile Providers
-page_title: Tile Providers 
+page_title: Tile Providers of the Map Report Item
 description: 
 slug: telerikreporting/designing-reports/report-structure/map/structure/tile-providers
 tags: telerik, reporting, map, report, item, tile, providers
 previous_url: /MapTileProviders
 published: True
-position: 1
 ---
 
 # Tile Providers

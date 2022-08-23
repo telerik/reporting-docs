@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/connecting-to-data
 tags: telerik, reporting, map, report, item, connecting, to, data
 previous_url: /MapConnectingToData
 published: True
-position: 2
+position: 3
 ---
 
 # Connecting to Data

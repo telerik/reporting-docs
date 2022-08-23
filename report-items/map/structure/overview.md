@@ -1,7 +1,7 @@
 ---
 title: Structure and Elements 
 page_title: Structure and Elements of the Map Report Item
-description: 
+description: "Learn more about the visual structure and elements of the Telerik Reporting Map report item." 
 slug: telerikreporting/designing-reports/report-structure/map/structure/overview
 tags: telerik, reporting, map, report, item, structure, elements, overview
 previous_url: /MapStructure
@@ -9,91 +9,114 @@ published: True
 position: 0
 ---
 
-# Structure Overview
+# Structure and Elements
 
-Map item enables you to visualize an aggregated business data in a geographical manner.
+The Map report item enables you to visualize aggregated business data in a geographical manner.
 
-## Map elements
+## Visual Structure 
 
-The image below show the basic elements of a map: 
+The following image displays a Map report item showing a Point map series.
 
   ![Map Elements](images/Map/MapElements.png)
 
-Fig.1 *Map Item showing a PointMap series* 
+## Parallels and Meridians
 
-## Parallels/Meridians
+The parallels and meridians, or the latitude and longitude lines, represent an imaginary grid over the Earth's surface thus forming the map coordinate system, called graticule. By combining longitude and latitude measurements, you can determine any location. The units of measurement for geographic coordinates are degrees (°), minutes ('), and seconds ("). For simplicity, the Map report item uses their decimal representation (decimal degrees). 
 
-The parallels and meridians (named also latitude and longitude lines) represent an imaginary grid over the Earth's surface thus forming the map coordinate system, called *graticule*. By combining longitude and latitude measurements, any location can be determined. The units of measurement for geographic coordinates are degrees (°), minutes ('), and seconds ("), but for simplicity the Map item uses their decimal representation (decimal degrees). 
-
-When using the [Mercator projection](#projection), the meridians are distributed equally along the coordinate system. However, when using this projection, the latitude lines are non-linear, hence the parallels are placed on a non-constant distance from each other. That's why the Map item gives the user the option to change the step at which the parallels/meridians are drawn. When not set, the latitude and longitude lines are drawn based on the given extent and scale factor. 
+When using the [Mercator projection](#projection), the meridians are distributed equally along the coordinate system. However, when using this projection, the latitude lines are non-linear and, therefore, the parallels are placed on a non-constant distance from each other. That's why the Map enables the user to change the step at which the parallels or meridians are drawn. When not set, the latitude and longitude lines are drawn based on the given extent and scale factor. 
 
 ## Data Points
 
-Data points are produced by the defined map Series groups and GeoLocation groups. Their position is uniquely identified by the latitude/longitude coordinates, returned either from a [Location Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) or from an expression. The data point can display one or more measures - for example, when using a [Point Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%}) series, the __Size__ property could represent some scalar value. 
+Data points are produced by the defined Map series groups and geolocation groups. Their position is uniquely identified by the latitude and longitude coordinates that are returned either from a [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) or from an expression. 
 
-## Data Point Labels
+The data point can display one or more measures, for example, when using a [Point map series]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%}), the __Size__ property can represent some scalar value. 
 
-Data point labels are used to display the exact value represented by a data point. However, when the map has lots of data points fit on a small plot area, the data point labels make it more difficult to read so they are created invisible by default. 
+## Labels
+
+Data point labels are used to display the exact value represented by a data point. However, when the map has lots of data points fit on a small plot area, the data point labels make it more difficult to read. Therefore, by default, they are invisible. 
 
 ## Series
 
-Series represent a number of data points that show individual measurements. The series in the Map item can be divided in two major categories depending on the groups they use and the data points they display. 
+Series represent a number of data points that show individual measurements. Depending on the groups they use and the data points they display, the series in the Map report item can be divided into two major categories. 
 
-The first category uses [GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup) to obtain a set of latitude/longitude coordinates or to query the define a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) in order to determine its data points position on the map. The PointMap, PieMap and ColumnMap series fall in that category, since they present similar data points, each one on a single location on the map. These series are called [LocationMapSeries](/reporting/api/Telerik.Reporting.LocationMapSeries). 
+* [`LocationMapSeries`](/reporting/api/Telerik.Reporting.LocationMapSeries)&mdash;To determine its data points position on the map, this category uses [`GeoLocationMapGroup`](/reporting/api/Telerik.Reporting.GeoLocationMapGroup) to obtain a set of latitude and longitude coordinates, or to query the defined [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}). Location map series are the Point, Pie, and Column map types because they present similar data points each one on a single location on the map. 
+ 
+* [`ShapeMapSeries`](/reporting/api/Telerik.Reporting.ShapeMapSeries)&mdash;This category uses a set of coordinates to determine the shape of the data point itself. In this case, the engine does not use a `LocationProvider` or a `GeoLocationMapGroup` because the data points are not determined by a single location on the map surface. 
 
-However, the [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) belongs to a second category that uses a set of coordinates to determine the shape of the data point itself. In this case the engine does not use a LocationProvider or a GeoLocationMapGroup, because the data points are not determined by a single location on the map surface. 
+The Map series can share existing `GeoLocation`, `ShapeMap`, and `Series` groups. 
 
-The Map series can share existing GeoLocation, ShapeMap and Series groups.
+> Although the Map series share common properties, a `ShapeMapSeries` can only use and share `ShapeMap` groups. The `LocationMapSeries` (Point, Pie, and Column) can only use and share a `GeoLocationmap` groups. 
 
-> Although the Map series share common properties, a __ShapeMapSeries__ can only use and share a __ShapeMap groups__. The __LocationMapSeries__ (PointMap, PieMap and ColumnMap) can only use and share a __GeoLocation groups__. 
+## Title
 
-## Map Title
-
-The Map Title is a report item used to set a header over a report item. It could be moved to a various position for a better visual effect. 
+The Map title sets a header over the report item. You can move the title to various positions to achieve a better visual effect. 
 
 ## Legend
 
-The Map Legend is a collection of legend items that are used to distinguish the map series. It has numerous styling and expression capabilities that are resolved in a hierarchical way as as explained in the [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) documentation article. 
+The Map legend is a collection of legend items that are used to distinguish the map series and supports numerous [styling and expression capabilities that are resolved in a hierarchical way]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}). 
 
 ## Scale
 
-The [MapScaleLegend](/reporting/api/Telerik.Reporting.MapScaleLegend) shows the scale of the current map extent, measured at the middle between its minimum and maximum latitude. The scale is calculated using the [Haversine formula](http://en.wikipedia.org/wiki/Haversine_formula), assuming the Earth is a perfect sphere. 
+The [`MapScaleLegend`](/reporting/api/Telerik.Reporting.MapScaleLegend) shows the scale of the current map extent measured in the middle between its minimum and maximum latitude. The scale is calculated by using the [Haversine formula](http://en.wikipedia.org/wiki/Haversine_formula) which assumes that the Earth is a perfect sphere. 
 
-* __Formatting the Scale Legend__ 
+### Formatting the Scale Legend 
 
-  The __ScaleLegend__ allows the user to see the map scale in metric, imperial or both units, depending how the [ScaleUnits](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_ScaleUnits) property is set. The value of the shown scale depends on the [Size](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_Size) property - the processing engine calculates the nearest round value that can be shown on the scale, using all the available width. The [Height](/reporting/api/Telerik.Reporting.Drawing.SizeU#Telerik_Reporting_Drawing_SizeU_Height) property in conjunction with [VerticalAlign](/reporting/api/Telerik.Reporting.Drawing.VerticalAlign) property determines how the scale will be positioned vertically. If the __Size.Height__ is set to a very small value (e.g. 0.1), the __ScaleLegend__ will grow vertically to display its content. 
+The `ScaleLegend` allows the user to see the map scale in metric, imperial, or both units, depending on the way the [`ScaleUnits`](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_ScaleUnits) property is set. 
 
-* __Styling the Scale Legend__ 
+The value of the displayed scale depends on the [`Size`](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_Size) property because the processing engine calculates the nearest round value that can be shown on the scale using all available width. 
 
-  Similar to the GraphSeries' [LegendItem](/reporting/api/Telerik.Reporting.LegendItem), the __MapScaleLegend__ provides two styles for more precise styling, named [Style](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_Style) and [ItemStyle](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_ItemStyle). The __ItemStyle__ is used to set the styling of the mark line and the label. The [LineStyle](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_LineStyle), [LineWidth](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_LineWidth) and the [LineColor](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_LineColor) properties define how the scale line would look like. The borders around the line are defined by the [BorderColor](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_BorderColor), [BorderStyle](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_BorderStyle) and [BorderWidth](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_BorderWidth) properties. The label styling is determined by the [Color](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_Color) and [Font](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_Font) properties The __Style__ property sets the styling of the container item, including the background color, borders and the vertical alignment of its content. 
+The [`Height`](/reporting/api/Telerik.Reporting.Drawing.SizeU#Telerik_Reporting_Drawing_SizeU_Height) in conjunction with [`VerticalAlign`](/reporting/api/Telerik.Reporting.Drawing.VerticalAlign) property determines how the scale will be positioned vertically. If the `Size.Height` is set to a very small value, for example, `0.1`, the `ScaleLegend` will grow vertically to display its content. 
+
+### Styling the Scale Legend
+
+Similar to the [`LegendItem`](/reporting/api/Telerik.Reporting.LegendItem) of the Graph series, the `MapScaleLegend` provides the [`Style`](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_Style) and [`ItemStyle`](/reporting/api/Telerik.Reporting.MapScaleLegend#Telerik_Reporting_MapScaleLegend_ItemStyle) properties for more precise styling. 
+
+The `ItemStyle` is used to set the styling of the mark line and the label:
+
+* The [`LineStyle`](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_LineStyle), [`LineWidth`](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_LineWidth), and the [`LineColor`](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_LineColor) properties define the rendering style of the scale line. 
+* The borders around the line are defined by the [`BorderColor`](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_BorderColor), [`BorderStyle`](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_BorderStyle), and [`BorderWidth`](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_BorderWidth) properties. 
+* The styling of the label is determined by the [`Color`](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_Color) and [`Font`](/reporting/api/Telerik.Reporting.Drawing.Style#Telerik_Reporting_Drawing_Style_Font) properties.  
+
+The `Style` property sets the styling of the container item, including the background color, borders, and the vertical alignment of its content. 
 
 ## Projection
 
-The projection is the representation model used to project the globe or celestial sphere on a surface. The projected coordinate system is defined on a flat two-dimensional surface and it is always based on a geographic coordinate system that represents a sphere or spheroid. In such a coordinate system, the locations are identified by a __x/y__ coordinates with the origin at the center of the grid. Each position has two values that reference it to that central location - one for the horizontal and one for the vertical position. The map item supports the following projections: 
+The projection is the representation model used to project the globe or celestial sphere on a surface. The projected coordinate system is defined on a flat two-dimensional surface and it is always based on a geographic coordinate system that represents a sphere or spheroid. 
 
-* [Mercator Projection](http://en.wikipedia.org/wiki/Mercator_projection) - a conformal map projection of which the meridians are drawn parallel to each other and the parallels of latitude are straight lines whose distance from each other increases with their distance from the equator. 
+In such a coordinate system, the locations are identified by a X and Y coordinates with the origin at the center of the grid. Each position has two values that reference it to that central location, one for the horizontal and one for the vertical position. 
+
+The Map report item supports the [Mercator projection](http://en.wikipedia.org/wiki/Mercator_projection) which is a conformal map projection of which the meridians are drawn parallel to each other, and the parallels of the latitude are straight lines whose distance from each other increases with their distance from the equator. 
 
 ## Extent
 
-__Map extent__ is a rectangular map area defined by geographical coordinates. It consists of 4 fields defining the sides of the extent area: *LatitudeMax* - usually the top side of the area rectangle, *LatitudeMin* - the bottom side, *LongitudeMin* - the left side, *LongitudeMax* - the right side of the area rectangle. The extent is displayed in the map viewport and can be defined in three ways: 
+The Map extent is a rectangular map area defined by geographical coordinates and consists of the following fields which define the sides of the extent area: 
 
-* __automatically__ - by the latitude and longitude coordinates of the data points. These coordinates can be retrieved by geocoding or set from the data source. 
+* **LatitudeMax**&mdash;Usually the top side of the area rectangle. 
+* **LatitudeMin**&mdash;The bottom side. 
+* **LongitudeMin**&mdash;The left side. 
+* **LongitudeMax**&mdash;The right side of the area rectangle. 
 
-* __explicitly__ - when the extent fields are set directly using the Property grid. If the defined extent is not conformant or has an invalid values, it will be automatically fixed when the map is panned or zoomed. 
+The extent is displayed in the Map viewport and can be defined in the following ways: 
 
-* __from the viewport__ - when the map is panned or zoomed in/out, the extent is being recalculated and its new values are populated in the Property grid. 
+* Automatically&mdash;By the latitude and longitude coordinates of the data points. To retrieve these coordinates, use geocoding or set them from the data source. 
+* Explicitly&mdash;When the extent fields are set directly through the **Property** grid. If the defined extent is not conformant or has an invalid values, it will be automatically fixed when the map is panned or zoomed. 
+* From the viewport&mdash;When the map is panned, or zoomed in or out, the extent is recalculated and its new values are populated in the **Property** grid. 
 
-The Map extent can be reset to its automatically calculated bounds by right-clicking on the map outside the plot area and selecting __Reset Map Extent__ from the context menu. This will restore its Latitude and Longitude values to its default state. 
+To reset the Map extent to its automatically calculated bounds, right-click outside of the plot area and select __Reset Map Extent__ from the context menu. This will restore its `Latitude` and `Longitude` values to its default state. 
 
 ## Tile Provider
 
-[Tile Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}) is used to request and download the imagery data for the specified map extent. This data is downloaded on a small images called *tiles* that form a background image, which can be used to give a better appearance of your maps. 
+The Tile Provider requests and downloads the imagery data for the specified map extent. For more information, refer to the dedicated article on the [tile provider Map element]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}).
 
 ## Location Provider
 
-The [Location Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) matches the addresses or locations with geographical coordinates (latitude and longitude). It is used in conjunction with the GeoLocation groups which is used to provide the geocoding request in order to retrieve the data point coordinates. The more detailed information is used in the query, the more accurate the results will be. 
+The Location Provider matches the addresses or locations with geographical coordinates. For more information, refer to the dedicated article on the [location provider Map element]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers %}). 
+
+## Layers and Hierarchy 
+
+The Map report item is a data item and allows you to present aggregated data by two hierarchical dimensions or groups. For more information, refer to the dedicated article on the [layers and hierarchy Map elements]({%slug telerikreporting/designing-reports/report-structure/map/connecting-to-data %}).
 
 ## Precision
 
-The Map item is not designed for scenarios where great precision is needed. The processing engine works with float numbers for performance reasons, which limits the data points precision to ~0.00001. Such difference in decimal degrees, measured as latitude at the equator, gives a distance of ~1.1 meters. If the coordinates of the data points are closer than that distance, they may be rendered overlapped. 
+The Map report item is designed for scenarios which do not require great precision. For performance reasons, the processing engine works with float numbers and limits the data points precision to ~0.00001. Such a difference in decimal degrees, measured as the latitude at the equator, gives a distance of ~1.1 meters. If the coordinates of the data points are closer than that distance, they may overlap. 
 

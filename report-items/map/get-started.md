@@ -1,15 +1,25 @@
 ---
-title: How to Add Map to Report
-page_title: How to Add Map to Report 
-description: How to Add Map to Report
-slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-map-to-report
-tags: how,to,add,map,to,report
+title: Getting Started
+page_title: Getting Started with the Map Report Item
+description: "Get up and running with Telerik Reporting, and learn how to create and use the Map report item in reports."
+slug: map_item_get_started
+tags: telerik, reporting, report, items, map, getting, started
 published: True
-position: 0
-previous_url: /MapHowToAddMapToReport
+position: 1
 ---
 
-# How to Add Map to Report
+# Getting Started with the Map Report Item
+
+This guide shows how to create and use the Telerik Reporting Map report item in reports. 
+
+* First, you will ...
+* Then, you will ... 
+
+After the completion of this guide, you will also be able to configure the Map with code and achieve the following result. 
+
+// add a demo here 
+
+How to Add Map to Report
 
 The simplest way to add a __Map__ item to your report is to run the Map Wizard. After you add a Map item to the design surface, you can click its elements to edit the selected element's properties in the *Properties* grid. Additionally in the Standalone Report Designer you can use the Ribbon tools. 
 
@@ -32,7 +42,4 @@ The simplest way to add a __Map__ item to your report is to run the Map Wizard. 
 1. When you finish the wizard a new Map item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
 
 ## See Also
-
-* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
-
-* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+ 

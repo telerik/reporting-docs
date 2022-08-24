@@ -1,15 +1,15 @@
 ---
-title: Understanding Crosstab Areas
-page_title: Understanding Crosstab Areas 
-description: Understanding Crosstab Areas
+title: Crosstab Areas
+page_title: Crosstab Areas 
+description: 
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas
-tags: understanding,crosstab,areas
+tags: telerik, reporting, report, items, table, crosstab, list, templates, understanding, crosstab, areas
+previous_url: /table-understanding-crosstab-areas, /report-items/table-crosstab-list/understanding-crosstab-areas
 published: True
 position: 2
-previous_url: /table-understanding-crosstab-areas
 ---
 
-# Understanding Crosstab Areas
+# Crosstab Areas
 
 A CrossTab item has four areas that contain table cells: corner, row group, column group and body. Cells in each area have a distinct function. You add cells to the body area to display detail and grouped data. The report designer adds cells to the row group or column group area when you create a group in order to display group instance values. The corner cells are created when both row groups and column groups exist.
 

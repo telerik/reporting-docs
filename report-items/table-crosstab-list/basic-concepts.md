@@ -1,12 +1,12 @@
 ---
 title: Basic Concepts
 page_title: Basic Concepts 
-description: Basic Concepts
+description: 
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts
-tags: basic,concepts
+tags: telerik, reporting, report, items, table, crosstab, list, templates, basic, concepts
+previous_url: /table-understanding-table-items
 published: True
 position: 1
-previous_url: /table-understanding-table-items
 ---
 
 # Basic Concepts

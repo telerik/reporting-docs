@@ -1,15 +1,15 @@
 ---
-title: Understanding table Cells, Rows and Columns
-page_title: Understanding table Cells, Rows and Columns 
-description: Understanding table Cells, Rows and Columns
+title: Table Fields
+page_title: Table Cells, Rows and Columns
+description: 
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns
-tags: understanding,table,cells,,rows,and,columns
+tags: telerik, reporting, report, items, table, crosstab, list, templates, understanding, cells, rows, columns
+previous_url: /table-understanding-cells-rows-columns, /report-items/table-crosstab-list/understanding-table-cells,-rows-and-columns
 published: True
 position: 3
-previous_url: /table-understanding-cells-rows-columns
 ---
 
-# Understanding table Cells, Rows and Columns
+# Table Cells, Rows, and Columns
 
 To control how the rows and columns of a Table display data in a report, you must understand how to specify rows and columns for detail data, for group data, and for labels and totals. In many cases, you can use the default structures for a Table, CrossTab or List to display your data. 
 

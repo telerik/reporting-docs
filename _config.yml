@@ -50,7 +50,7 @@ navigation:
         title: "Report"     
     report-items/table-crosstab-list:
         position: 13
-        title: "Table/Crosstab/List"    
+        title: "Table"    
     report-items/graph:
         position: 5
         title: "Graph"

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/un
 tags: telerik, reporting, report, items, table, crosstab, list, templates, understanding, cells, rows, columns
 previous_url: /table-understanding-cells-rows-columns, /report-items/table-crosstab-list/understanding-table-cells,-rows-and-columns
 published: True
-position: 3
+position: 5
 ---
 
 # Table Cells, Rows, and Columns

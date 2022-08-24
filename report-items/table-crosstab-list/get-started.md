@@ -19,46 +19,11 @@ After the completion of this guide, you will also be able to configure the Table
 
 // add a demo here 
 
-## Specifying the Barcode 
-
-1. To specify the type of the Barcode, use the [`Encoder`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder) property. After setting the desired encoder, you can further adjust the specific settings you require. 
-
-  ![barcode-encoder-property](images/Barcodes/barcode-encoder-property.png)
-
-1. Now, you need to encode the Barcode value through the [`Value`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value) property. `Value` can be a static string or an expression which is evaluated at runtime.
-
-  ![barcode-value-property](images/Barcodes/barcode-value-property.png)
-
-## Setting the Size and Appearance 
-
-1. You can now specify the width (size) of the Barcode elements. For the purposes of this guide, you will automatically calculate the width from the size of the item when the [`Stretch`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch) property is set to `true`. 
-
-  ![barcode-module-stretch-property](images/Barcodes/barcode-module-stretch-property.png)
-
-1. Align the bars to the edges of the item through the [`BarAlign`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign) property. 
-
-  Note that `BarAlign` is not applicable when the [`Stretch`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch) property is set to `true`. 
-
-  ![barcode-baralign-property](images/Barcodes/barcode-baralign-property.png)
-  
-1. Rotate the Barcode through the [`Angle`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle) property. 
-
-  Note that when the angle is not divisible by 90 degrees and the [`Stretch`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch) property is `true`, the Barcode will be scaled down so that it fits into the item bounds. 
-
-  ![barcode-angle-property](images/Barcodes/barcode-angle-property.png)
-	 
-1. Include a checksum in the Barcode by using the [`Checksum`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum) property. 
-
-  Note that some symbologies either do not provide a checksum or the checksum is part of the symbology specification. In these cases, `Checksum` will have no effect. 
+## ...
 
 
-## See Also
- 
-* [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)
-* [Encoder](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Encoder)
-* [Value](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value)
-* [Module](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Module)
-* [Stretch](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Stretch)
-* [BarAlign](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_BarAlign)
-* [Angle](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Angle)
-* [Checksum](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Checksum)
+## ...
+
+## See Also 
+
+...

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/un
 tags: telerik, reporting, report, items, table, crosstab, list, templates, understanding, crosstab, areas
 previous_url: /table-understanding-crosstab-areas, /report-items/table-crosstab-list/understanding-crosstab-areas
 published: True
-position: 2
+position: 4
 ---
 
 # Crosstab Areas

@@ -33,22 +33,29 @@ Groups are organized as members of group hierarchies. Row group and column group
 
 A tree structure represents nested row and column groups that have a parent/child relationship, for example, a category with sub categories. The parent group is the root of the tree and child groups are its branches. Groups can also have an independent, adjacent relationship, for example, sales by territory and sales by year. Multiple unrelated tree hierarchies are called a forest. In a Table, row groups and columns groups are each represented as an independent forest. 
 
-## The Table item
+## The Table Item
 
-A table has four areas for cells: corner, row group hierarchy, column group hierarchy, and table body, which always exists. The other areas are optional. Cells in table body area display detail and group data. 
+A Table displays the following cell fields:
 
-Cells in the Row Groups area are created automatically when you create a row group. These are row group header cells and display row group instance values by default. For example, when you group by "=Fields.ProductCategory", group instance values are the individual product categories that you are grouping by. 
+* Corner&mdash;The cells in the Table Corner area are created automatically when you define both the row and column groups. For more information, refer to the article on [Table fields]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}).
+* Row Group&mdash;The cells in the Row Group area are created automatically when you create a row group. These are row group header cells and display row group instance values by default. 
 
-Cells in the Column Groups area are created automatically when you create a column group. These are column group header cells and display column group instance values by default. For example, when you group by "=Fields.Year", group instance values are the individual years that you are grouping by. 
+  For example, when you group by `=Fields.ProductCategory`, group instance values are the individual product categories by which you are grouping the data. 
 
-Cells in the table corner area are created automatically when you have both row groups and column groups defined. For more info see [Understanding Table areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}). 
+* Column Group&mdash;The cells in the Column Groups area are created automatically when you create a column group. These are column group header cells and display column group instance values by default. 
+
+  For example, when you group by `=Fields.Year`, group instance values are the individual years by which you are grouping the data.
+
+* Table Body&mdash;The Table Body area always exists. Its cells display detail and group data.
+
+The other Table fields are optional.  
 
 ## Static and Dynamic Rows and Columns
 
-A table item organizes cells in rows and columns that are associated with groups. Because group structures for row groups and columns are identical, we would talk about row groups. You can apply the same concepts to column groups. 
+A Table item organizes cells in rows and columns that are associated with groups. Because group structures for row and column groups are identical, the documentation refers to them as row groups and you can apply the same concepts to column groups. 
 
 A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows display labels and totals. 
 
-A dynamic row is associated to one or more groups. A dynamic row renders once for every unique group value for the innermost group. Cells in a dynamic row are scoped to the innermost row group and column group to which the cell belongs. 
+A dynamic row is associated to one or more groups. A dynamic row renders once for every unique group value for the innermost group. Cells in a dynamic row are scoped to the innermost row and column group to which the cell belongs. 
 
 Dynamic detail rows are associated with the details group that is automatically created when you add a table or list to the design surface. By definition, the details group is the innermost group for a table. Cells in detail rows display detail data.

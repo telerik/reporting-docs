@@ -117,6 +117,7 @@ To define a custom monochromatic palette:
 
 ## See Also
 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Structure and Elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
 * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) 

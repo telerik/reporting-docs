@@ -65,3 +65,7 @@ By default, the wizard sets the __MinMarkerWidth__ to 6px. Note the gaps between
 Since you are using a DateTime field to create the categories, the wizard will automatically create a  [`DateTimeScale`](/reporting/api/Telerik.Reporting.DateTimeScale) for your X axis. The `DateTime` scale represents the values in a continuous domain which is the reason for you to see axis labels for 08.07.2017 and 09.07.2017 even if there is no data for these dates. 
 
 If you do not want to have such gaps, use a [`CategoryScale`](/reporting/api/Telerik.Reporting.CategoryScale) for your X axis. 
+
+## See Also 
+
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 

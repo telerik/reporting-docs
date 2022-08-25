@@ -74,3 +74,7 @@ In this step, you will configure the series of the chart:
 
 To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}). 
 
+## See Also 
+
+* [(Demo) Employee Sales Report with Area Charts](https://demos.telerik.com/reporting/employee-sales)
+* [(Demo) Crypto Dashboard Report with Area Charts](https://demos.telerik.com/reporting/crypto-dashboard)

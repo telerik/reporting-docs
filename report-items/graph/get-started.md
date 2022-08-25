@@ -37,5 +37,6 @@ For the purposes of this guide, you will add the Graph to the report by running 
 
 ## See Also 
 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [Connecting the Graph to Data]({% slug telerikreporting/designing-reports/report-structure/graph/structure %})
 * [Supported Chart Types]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview %})

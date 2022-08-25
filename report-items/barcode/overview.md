@@ -22,7 +22,9 @@ The Barcode report item automatically generates barcodes directly from a numeric
 
 
 ## See Also
- 
+
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting) 
 * [Getting Started with the Barcode Report Item]({% slug barcode_item_get_started %})
 * [1D Supported Barcodes]({% slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types %})
 * [2D Supported Barcodes]({% slug 2d_barcodes_overview %})

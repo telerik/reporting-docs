@@ -30,6 +30,8 @@ The Graph is most often used for building powerful OLAP and Pivot charts and pro
 
 ## See Also  
 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting) 
 * [Getting Started with the Graph Report Item]({% slug graph_item_get_started %})
 * [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/graph-item-actions%})
 * [Tooltips]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/tooltips%})

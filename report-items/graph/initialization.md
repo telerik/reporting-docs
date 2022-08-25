@@ -42,5 +42,6 @@ To start using the Graph in the Standalone or the Visual Studio Report Designer 
 
 ## See Also 
 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [Connecting the Graph to Data]({% slug telerikreporting/designing-reports/report-structure/graph/structure %})
 * [Supported Chart Types]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview %})

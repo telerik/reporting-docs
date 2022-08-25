@@ -54,6 +54,11 @@ After the completion of this guide, you will also be able to configure the Barco
   Note that some symbologies either do not provide a checksum or the checksum is part of the symbology specification. In these cases, `Checksum` will have no effect. 
 
 
+## Next Steps 
+
+* [(Demo) Barcodes Report](https://demos.telerik.com/reporting/barcodes-report)
+* [(Demo) Swiss QR Bill Report](https://demos.telerik.com/reporting/swiss-qr-bill-report)
+
 ## See Also
  
 * [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)

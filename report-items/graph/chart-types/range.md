@@ -80,3 +80,7 @@ To set the color palette, format the labels, define the values of the legend, an
 * It is not recommended to display markers on each data point in a Range chart.
 * Like the Area chart, in a plain Range chart, if the values in multiple series are similar, the series will overlap. In this scenario, you may want to use a Column Range or Bar Range chart instead of a plain Range chart.
 * You can create Gantt charts by using a Range Bar chart.
+
+## See Also 
+
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 

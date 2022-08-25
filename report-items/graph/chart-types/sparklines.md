@@ -45,3 +45,6 @@ You can make data bar versions of the following full charts:
 * __Bar Charts__&mdash;Clustered, Stacked, and 100% Stacked Bar charts.
 * __Column Charts__&mdash;Clustered, Stacked, and 100% Stacked Column charts. Column charts can be either Sparklines or data bars.
 
+## See Also 
+
+* [(Demo) Crypto Dashboard Report with Sparklines](https://demos.telerik.com/reporting/crypto-dashboard)

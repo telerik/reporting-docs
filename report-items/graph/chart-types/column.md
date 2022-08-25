@@ -79,3 +79,8 @@ To set the color palette, format the labels, define the values of the legend, an
 * Column charts are most commonly used to show comparisons between groups. If more than three series are present on the chart, consider using a Stacked Column chart. 
 * In a Column chart, you have less space for the category axis labels to display horizontally. If you have longer category labels, consider using a Bar chart or changing the rotation angle of the label through the __LabelAngle__ property of the axis. 
 * If there are many data points in your dataset that are relative to the size of your chart, the size of the columns and the spacing between them are reduced. To modify the width of the columns in a chart, consider changing the __SpacingSlotCount__ property of the __category__ axis scale. By default, the value is `1` which indicates equal widths of the column and the free space. The greater the value, the more free space is reserved between the columns. 
+
+## See Also 
+
+* [(Demo) Olympic Medals Map with Column Charts Report](https://demos.telerik.com/reporting/olympic-medals-map)
+* [(Demo) Employee Sales Report with Column Charts Report](https://demos.telerik.com/reporting/employee-sales)

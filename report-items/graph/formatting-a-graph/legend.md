@@ -90,6 +90,7 @@ The automatic sizing partially depends on the positioning of the legend as follo
 
 ## See Also
  
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [GraphLegend](/reporting/api/Telerik.Reporting.GraphLegend)  
 * [Legend](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Legend)
 

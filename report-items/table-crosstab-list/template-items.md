@@ -8,31 +8,45 @@ published: True
 position: 3
 ---
 
-# Template Items of the Table Report Item
+# Template Variations of the Table Report Item
 
-The Table report item supports the table, crosstab, and list templates which you can add directly from the Toolbox.
+The Table report item supports the Table, CrossTab, and List templates which you can add directly from the Toolbox.
 
 ## Table 
 
-Use a table item to display detail data, organize the data in row groups, or both. The Table contains three columns with a table header row and a details row for data. The following figure shows the initial table template, selected on the design surface: 
+The Table template item is useful for displaying detail data and organizing it in row groups. The Table contains three columns with a table header row and a details row for the data. 
 
-![](images/table1.png)
+The following image shows the initial Table template when selected on the design surface: 
 
-## Crosstab 
+![Initial Table template selected from the design surface](images/table1.png)
 
-Use a CrossTab template to display aggregated data summaries, grouped in rows and columns. The number of rows and columns for groups is determined by the number of unique values for each row and column groups. The following figure shows the initial crossTab template, selected on the design surface: 
+## CrossTab 
 
-![](images/table2.png)
+The CrossTab template item is useful for displaying aggregated data summaries that are grouped in rows and columns. The number of rows and columns for groups is determined by the number of unique values for each row and column groups. 
+
+The following image shows the CrossTab template when selected on the design surface: 
+
+![Initial CrossTab template selected from the design surface](images/table2.png)
 
 ## List 
 
-Use a list item to create a free-form layout. You are not limited to a grid layout, but can place fields freely inside the list. You can use a list to design a form for displaying many dataset fields or as a container to display multiple data regions side by side for grouped data. For example, you can define a group for a list; add a table, chart, and image; and display values in table and graphic form for each group value. 
+The List template item is useful for creating a free-form data layout. While you are not limited to a grid layout, you can freely place fields inside the List. 
 
-![](images/table3.png)
+You can use a List to design a form for displaying many dataset fields or as a container to display multiple data regions for grouped data side by side. For example, you can define a group for a List, add a table, chart, or image, and display values in a table and graphic form for each group value.
 
-Of course, you are not limited to your initial template choice. As you add groups, totals, and labels, you may find you want to modify your table design. For example, you might start with a table and then delete the details row and add column groups.
+The following image shows the List template when selected on the design surface: 
 
-You can continue to develop a Table, crossTab, or List by adding any table feature. Table features include displaying detail data or aggregates for grouped data on rows and columns. You can create nested groups, independent adjacent groups, or recursive groups. You can filter and sort grouped data, and easily combine groups by including multiple group expressions in a group definition.
+![Initial List template selected from the design surface](images/table3.png)
 
-> [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections ([PageHeaderSection/PageFooterSection]({%slug telerikreporting/designing-reports/overview%})), because the latter are processed after the report data has been processed. At this moment the report data source is not available anymore. 
+## General Considerations 
 
+You are not limited to your initial template choice. As you add groups, totals, and labels, the Table report item allows you to modify its design. For example, you can start with a Table and then delete the details row and add column groups.
+
+You can also continue to develop a Table, CrossTab, or List by adding any table feature. Table features include displaying detail data or aggregates for grouped data in rows and columns. You can create nested groups, independent adjacent groups, or recursive groups. You can filter and sort grouped data, and combine groups by including multiple group expressions in a group definition.
+
+> [Data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections ([PageHeaderSection/PageFooterSection]({%slug telerikreporting/designing-reports/overview%})), because page sections are processed after the report data, at which moment the report data source is not available anymore. 
+
+## See Also 
+
+* [Table Cells, Rows, and Columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns %})
+* [CrossTab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})

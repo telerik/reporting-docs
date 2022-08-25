@@ -84,7 +84,8 @@ The automatic sizing partially depends on the positioning of the legend as follo
 
 ## See Also
  
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [(API) MapLegend](/reporting/api/Telerik.Reporting.MapLegend)  
 * [(API) Legends](/reporting/api/Telerik.Reporting.Map#Telerik_Reporting_Map_Legends) 
-* [Overview of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 * [Structure and Elements of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

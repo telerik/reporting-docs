@@ -27,7 +27,9 @@ To change the Map title:
 
 ## See Also
  
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [(API) MapTitle](/reporting/api/Telerik.Reporting.MapTitle)  
 * [(API) Titles](/reporting/api/Telerik.Reporting.Map#Telerik_Reporting_Map_Titles) 
-* [Overview of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 * [Structure and Elements of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
+

@@ -45,7 +45,9 @@ Therefore, the `ShapeMapSeries` data points are created for each category group 
 
 ## See Also
 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [Overview of the Graph Report Item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
 * [(API) GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup)
 * [(API) ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries)
 * [(API) Location](/reporting/api/Telerik.Reporting.Location) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

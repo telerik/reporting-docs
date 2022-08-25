@@ -52,5 +52,9 @@ For an example on creating a Choropleth map type, refer to the article about [se
 
 ## See Also
 
+* [(Demo) Population Density Report with a Choropleth Map](https://demos.telerik.com/reporting/population-density)
+* [(Demo) Crypto Currency Info Report with Choropleth and Point Series](https://demos.telerik.com/reporting/crypto-currency-info)
 * [Overview of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 * [Structure and Elements of the Map]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

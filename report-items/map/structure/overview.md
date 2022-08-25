@@ -120,3 +120,7 @@ The Map report item is a data item and allows you to present aggregated data by 
 
 The Map report item is designed for scenarios which do not require great precision. For performance reasons, the processing engine works with float numbers and limits the data points precision to ~0.00001. Such a difference in decimal degrees, measured as the latitude at the equator, gives a distance of ~1.1 meters. If the coordinates of the data points are closer than that distance, they may overlap. 
 
+## See Also 
+
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

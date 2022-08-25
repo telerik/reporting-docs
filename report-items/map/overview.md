@@ -25,6 +25,10 @@ The Graph is most often used for building powerful OLAP and Pivot charts and pro
 
 ## See Also  
 
-* [Getting Started with the Graph Report Item]({% slug graph_item_get_started %})
-* [Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/graph-item-actions%})
-* [Tooltips]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/tooltips%})
+* [(Demo) Sales Dashboard Report with a Map](https://demos.telerik.com/reporting/sales-dashboard)
+* [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)
+* [(Demo) Population Density Report with a Choropleth Map](https://demos.telerik.com/reporting/population-density)
+* [(Demo) Crypto Currency Info Report with Choropleth and Point Series](https://demos.telerik.com/reporting/crypto-currency-info)
+* [Getting Started with the Map Report Item]({% slug map_item_get_started %})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

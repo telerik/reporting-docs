@@ -42,4 +42,7 @@ The simplest way to add a __Map__ item to your report is to run the Map Wizard. 
 1. When you finish the wizard a new Map item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
 
 ## See Also
- 
+
+* [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [Connecting the Map to Data]({% slug telerikreporting/designing-reports/report-structure/map/connecting-to-data %})

@@ -41,6 +41,11 @@ You can create the Shape at runtime and add it to a report item container (Secti
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CreateCustomShapeSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb region=CreateCustomShapeSnippet}}
 
+## Next Steps 
+
+* [(Demo) Crypto Dashboard Report with a Shape](https://demos.telerik.com/reporting/crypto-dashboard) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
 
 ## See Also
 

@@ -27,6 +27,11 @@ The following image shows a Panel which contains two [TextBox]({%slug telerikrep
 
 ![A Panel with two TextBox report items](images/Panel.png)
 
+## Next Steps 
+
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
+
 ## See Also
 
 * [Organizing the Report Layout with the Panel]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%})

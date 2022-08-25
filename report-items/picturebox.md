@@ -160,6 +160,11 @@ The SVG images are rendered in vector format where the rendering extension suppo
 * In OpenXML-based rendering extensions (DOCX, XLSX, PPTX, RTF), the SVG is rendered in a vector format by default, but can be rendered in a raster format if the `deviceInfo` setting `UseMetafile` is set to `false`. 
 * In the rest of the rendering extensions, the SVG is rendered as a raster image, but the size of the item is always taken into account for quality. 
 
+## Next Steps 
+
+* [(Demo) Product Catalog Report with a PictureBox](https://demos.telerik.com/reporting/product-catalog)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
 
 ## See Also
 

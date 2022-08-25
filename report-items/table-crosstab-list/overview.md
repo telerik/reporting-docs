@@ -28,5 +28,9 @@ The Table report item is an individual data region which utilizes its own [`Tele
 
 ## See Also  
 
+* [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
+* [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [Getting Started with the Table Report Item]({% slug table_item_get_started %})
-* [List-Bound Report Demo](https://demos.telerik.com/reporting/list-bound-report)
+* [(API) Table Report Item](https://docs.telerik.com/reporting/api/telerik.reporting.table)
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

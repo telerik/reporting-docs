@@ -45,6 +45,7 @@ When you add values to the PictureBox, note the following:
 To set an expression as a PictureBox value in the Report Designer:
 
 1. Right-click the item. Choose **Expression...**. 
+
 1. Enter the expression in the [**Edit Expression** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
 
 
@@ -54,24 +55,23 @@ To bind an image data to a PictureBox when using a Report Designer is a straight
 
 Alternatively, you can drag a PictureBox item to the design surface and use an expression to set its `Value` property to an existing field from the data source. The type of the `PictureBox.Value` property is [`Object`](http://msdn2.microsoft.com/en-us/library/system.object(VS.71).aspx) which allows for versatile data binding and you do not have to directly bind to a database field with an image column.
 
-The `Value` property accepts objects of type [`Image`](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx) and strings. The string can be either of the following: 
+The `Value` property accepts objects of type [`Image`](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx), byte array and strings. The string can be either of the following: 
 
-* An expression&mdash;The expression must evaluate to an [`Image`](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx), byte array, relative or absolute [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx), or a string representing a Base64-encoded image.  
-* A string literal&mdash;The string literal can be a relative or absolute [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx), or a string representing a Base64-encoded image.
+* An expression&mdash;The expression must evaluate to an [`Image`](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx), byte array, relative or absolute [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx), or a string representing a Base64-encoded image or an SVG markup.  
+* A string literal&mdash;The string literal can be a relative or absolute [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx), or a string representing a Base64-encoded image or an SVG markup.
 
 ### Binding to Binary Images
 
 You can directly assign a reference to an [`Image`](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx) to the `Value` property of a PictureBox. 
 
-    
-	````c#
+````C#
 using System.Drawing;
 Image image1 = Image.FromFile(@"C:\MyPictures\MyPicture.jpg");
 this.pictureBox1.Value = image1;
 Image image2 = Image.FromStream(imageStream);
 this.pictureBox2.Value = image2;
 ````
-	````vb.net
+````VB.NET
 Imports System.Drawing
 Dim image1 As Image = Image.FromFile("C:\MyPictures\MyPicture.jpg")
 Me.PictureBox1.Value = image1
@@ -79,23 +79,22 @@ Dim image2 As Image = Image.FromStream(imageStream)
 Me.PictureBox2.Value = image2
 ````
 
-While in design-time, if you click the ellipsis of the `Value` property, a dialog appears for you to choose the desired image. After you select the image, the Designer will automatically store it in the resources file for the report (`.resx`) and add a line of code to the `InitializeComponent` method that obtains a reference to the image stored in the resources and assigns it to the `Value` of the PictureBox: 
-    
-	````c#
+While in design-time within the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), if you click the ellipsis of the `Value` property, a dialog appears for you to choose the desired image. After you select the image, the Designer will automatically store it in the resources file for the report (`.resx`) and add a line of code to the `InitializeComponent` method that obtains a reference to the image stored in the resources and assigns it to the `Value` of the PictureBox: 
+
+````C#
 this.pictureBox1.Value = ((object)(resources.GetObject("pictureBox1.Value")));
 ````
 
 When the database field contains a relative path, either a file path or a URI, you can utilize the [user functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to specify the correct path to the image and then set the `Value` to the correct `=LoadImage(Fields.YourImagePathColumn)` expression. 
 
-    
-	````c#
+````C#
 public static Image LoadImage(string imageLocation)
 {
-	 string absoluteLocation = "C:\\" + imageLocation;
-	 return Image.FromFile(absoluteLocation);
+	string absoluteLocation = "C:\\" + imageLocation;
+	return Image.FromFile(absoluteLocation);
 }
 ````
-	````vb.net
+````VB.NET
 Public Shared Function LoadImage(imageLocation As String) As Image
 	Dim absoluteLocation As String = "C:\" + imageLocation
 	Return Image.FromFile(absoluteLocation)
@@ -107,18 +106,19 @@ End Function
 
 Alternatively, you can assign a string value to the `Value` property. This string value can be any of the following: 
 
-* An [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})&mdash;When binding to a data field with an expression, the Value property will accept both `binary` and `string` data fields.
-* A [URI](http://en.wikipedia.org/wiki/URI)&mdash;The `Value` property supports both absolute and relative URIs.
+* An [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})&mdash;When binding to a data field with an expression, the Value property will accept both `binary` and `string` data fields. 
+
+* A [URI](http://en.wikipedia.org/wiki/URI)&mdash;The `Value` property supports both absolute and relative URIs. 
+
 * A string representing a Base64-encoded image or a valid SVG markup&mdash;For optimization, the engine initially checks the length of the string value. 
 
-  If it is less than 80 characters, the value is considered to be an URI. Otherwise, the string is tested whether it is SVG markup (if its first 256 characters contain `<svg`) or a Base64-encoded string. 
-  
-  If the string is neither a valid SVG, nor a Base64-encoded string, the engine will still accept the string as a URI and will try to instantiate an image from it. 
+	If it is less than 80 characters, the value is considered to be an URI. Otherwise, the string is tested whether it is SVG markup (if its first 256 characters contain `<svg`) or a Base64-encoded string. 
+
+	If the string is neither a valid SVG, nor a Base64-encoded string, the engine will still accept the string as a URI and will try to instantiate an image from it. 
 
 To sum it up, the data source column of the PictureBox can store the image object, its Base64 string representation, an SVG markup, or a relative or absolute URI pointing to the image: 
 
-    
-  ````c#
+````C#
 this.pictureBox1.Value = "=Fields.MyImageBinary";//a binary data column
 this.pictureBox2.Value = "=Fields.MyImageURI";//a data column containing an URI
 this.pictureBox3.Value = @"C:\MyPictures\MyPicture.png";//absolute file path to a PNG file
@@ -126,7 +126,7 @@ this.pictureBox4.Value = @"C:\MyPictures\MySVGImage.svg";//absolute file path to
 this.pictureBox5.Value = @".\images\MyPicture.png";//relative path
 this.pictureBox6.Value = "http://www.mysite.com/images/img1.gif";//absolute URL
 ````
-	````vb.net
+````VB.NET
 Me.PictureBox1.Value = "=Fields.MyImageBinary" 'a binary data column
 Me.PictureBox2.Value = "=Fields.MyImageURI" 'a data column containing an URI
 Me.PictureBox3.Value = "C:\MyPictures\MyPicture.png" 'absolute file path to a PNG image

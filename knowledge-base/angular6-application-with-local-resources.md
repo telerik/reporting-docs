@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
 
-How can I integrate the [Telerik Angular Report Viewer]({% slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview %}) in an Angular 6 or higher application that works with local resources and doesn't reference any CDNs?
+How can I integrate the [Telerik Angular Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview %}) in an Angular 6 or higher application that works with local resources and doesn't reference any CDNs?
 
 ## Solution
 

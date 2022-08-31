@@ -1,7 +1,7 @@
 ---
 title: TextBox
-page_title: TextBox 
-description: TextBox
+page_title: TextBox Report Item Overview
+description: "Learn more about the Telerik Reporting TextBox report item, how to expand and shrink it depending on its contents, how to use embedded expressions, set its content, and use the in-place and Expression editors."
 slug: telerikreporting/designing-reports/report-structure/textbox
 tags: textbox
 published: True
@@ -9,92 +9,86 @@ position: 14
 previous_url: /report-items-text-box
 ---
 
-# TextBox
+# TextBox Report Item Overview
 
-The TextBox report item is used to display text on a report. This screenshot shows two TextBox report items.  
+The TextBox report item is used to display text on a report. 
 
-  ![](images/Textbox.png)
+The TextBox can display literal text for titles, descriptions, and labels, or dynamic text based on expressions. Every cell in a Table or CrossTab also contains a TextBox, which can be formatted in the same way as the standalone TextBoxes in the report. The expressions in a TextBox can contain literal text, point to a database field, or calculate data. 
 
-TextBox can display literal text for titles, descriptions, and labels, or dynamic text based on expressions. Every cell in a Table or CrossTab also contains a TextBox, which can be formatted the same way as stand-alone TextBoxes in your report. The expressions in a TextBox can contain literal text, point to a database field or calculate data. 
+To control the TextBox layout and its dependency on other report items, use a [Panel report item](/reporting/api/Telerik.Reporting.Panel). 
 
-Use a Panel item when you want to control the TextBox layout and dependency with other report items. For more information, see [Panel](/reporting/api/Telerik.Reporting.Panel). 
+To format separate chunks of text (different words) or insert HTML-formatted text into a report, use the [HtmlTextBox report item](/reporting/api/Telerik.Reporting.HtmlTextBox). 
 
-In order to format separate chunks of text (i.e. different words) or insert HTML-formatted text into a report, use the [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox) report item. 
+The following image shows two TextBox report items.  
+
+![Two TextBox report items](images/Textbox.png)
 
 ## Growing and Shrinking
 
-By default, TextBox items are a set size. If you want to allow a TextBox to expand vertically based on its contents, set the [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)  property to True (default value). If you want to allow a TextBox to shrink based on its contents set the [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)  property to True (default value is False). The TextBox would always grow to accomodate the first line of text even when CanGrow is False. 
+By default, the TextBox items have their size set. 
+
+* To allow a TextBox to expand vertically based on its content, set the [`CanGrow`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property to `True`, which is the default value. 
+* To allow a TextBox to shrink based on its content, set the [`CanShrink`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink) property to `True`. By default, `CanShrink` is set to `False`. The TextBox will always grow to accommodate the first line of the text even when `CanGrow` is `False`. 
 
 ## Text Orientation
 
-You can use the [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle) property to change the text orientation in a TextBox item. This can help you create more readable reports, support locale-specific text orientation, fit more columns on a printed report that has fixed page size, and create reports with a better graphical appeal. The layout of the tilted text starts from the very corner of the item's client rectangle and fits the text until finished. This produces short initial text lines which can be avoided if desired by adding some empty lines at the beginning of the text/expression: 
+To change the text orientation in a TextBox item, use the [`Angle`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle) property. This approach enables you to create more readable reports, supports locale-specific text orientation, fits more columns on a printed report that has a fixed page size, and creates reports with a better graphical appeal. 
 
-    
-````cs
+The layout of the tilted text starts from the corner of the client item rectangle and fits the text until finished. This behavior produces short initial text lines which can be avoided, if desired, by adding some empty lines at the beginning of the text or expression: 
+
+````CS
 this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
 ````
-````vb
+````VB.NET
 Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
 ````
 
-The item grows vertically enough to accommodate a full tilted line from the left to the right edge. This might produce significant growth of the item, specifically for angles closer to 90 degrees. To avoid that, you may set the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property to false. For the angles 90 and 270 degrees, the item will grow until the whole text gets fitted on a single line. This also can be controlled using the  [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property. 
+The item grows vertically to accommodate a full tilted line from the left to the right edge which may produce a significant growth of the item especially for angles nearing 90 degrees. To avoid this behavior, set the [`CanGrow`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property to `false`. 
 
-Reconsider the usage of tilted text for busy reports that will need to break the item into two pages. A split tilted text is hardly readable. 
+For angles in the 90-270 degree range, the item will grow until the whole text is fitted on a single line. To control this behavior, use the [`CanGrow`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property. 
 
-## Formatting Considerations
+For busy reports that will need to break the item into two pages, reconsider using tilted text as split tilted text is hardly readable. 
 
-Before you apply a format, you should consider the following: 
+## Using In-Place Editing
 
-* By default, numbers are formatted to reflect the cultural settings on the client computer. Use formatting strings to specify how numbers are displayed so that formatting is consistent regardless of where the person who is viewing the report is located. 
+The in-place editor for the [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report item allows you to quickly enter text directly into the designer. 
 
-* The formats provided on the Number page are a subset of the.NET Framework standard numeric format strings. To format a number or date using a custom format that is not shown in the dialog box, you can use any.NET Framework format strings for numbers or dates. For more information about custom format strings, see the [Formatting Types](http://msdn.microsoft.com/en-us/library/fbxft59x%28VS.95%29.aspx) topic on MSDN. 
+To activate the in-place editor:
 
-* If a custom format string has been specified, it has a higher priority over default settings that are culture-specific. For example, suppose you set a custom format string of "#,###" to show the number 1234 as 1,234. This may have different meaning to users in different parts of the world. Before specifying a custom format, consider how the chosen format will affect users of different cultures viewing the report. 
+1. Double-click the __TextBox__ report item or select the report item and press `F2`. As a result, the in-place editor is activated.
+1. To create a new line, press `CTRL`+`Enter`.
+1. To accept all changes, press `Enter` or move the focus away from the TextBox.
+1. To discard all changes, press `Esc`.
 
-* If you specify an invalid format string, it will override the actual Value.
+The following image shows a TextBox with an activated in-place editor. 
 
-See also [Format Builder Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog%}).         
+![A TextBox with a activated in-place editor](images/Items001.png)
 
-## Using In-place editing
+## Using the Expression Editor
 
-The in-place editor for [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report items allows you to quickly enter text directly into the designer where the report item is rather than having to go look for a property in the Property Window. To activate the in-place editor, double-click the __TextBox__ report item or select the report item and press F2. Once the in-place editor is activated: 
+For more information about how to use the Expression editor, refer to the article on the [**Edit Expression** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). Note that when pressing the `Enter` key inserts a new line in the expression. To insert a new line in the string resulting from the evaluated expression, enclose the new line within double quotes (`"..."`). 
 
-* CTRL-Enter creates a new line.
+![A TextBox with the Expression editor](images/UI014.png)
 
-* Enter accepts all changes.
+## Embedded Expressions
 
-* Esc discards all changes.
+The TextBox report item supports [embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}) to provide a mail merge functionality. Embedded expressions enable you to get and insert data-driven information directly into the TextBox report item to produce customized reports and mail merging. 
 
-* Moving focus away from the __TextBox__ also accepts all changes.
+## Considerations and Known Issues
 
-The screenshot below shows a __TextBox__ with the in-place editor active. 
+Before you apply a TextBox format, consider the following: 
 
->caption In Place Editor  
+* By default, numbers are formatted to reflect the cultural settings on the client computer. To specify how numbers are displayed and provide consistent formatting regardless of where the person who is viewing the report is located, use formatting strings. 
+* The formats provided on the **Number** page are a subset of the .NET Framework standard numeric format strings. To format a number or a date by using a custom format that is not shown in the dialog box, use any number or date .NET Framework format strings. For more information about custom format strings, refer to the [MSDN Formatting Types](http://msdn.microsoft.com/en-us/library/fbxft59x%28VS.95%29.aspx) topic. 
+* If you specify a custom format string, it will prevail over the default settings that are culture-specific. For example, if you set a custom format string of `#,###` to render 1234 as `1,234`, users in different parts of the world may interpret it in different ways. Before specifying a custom format, consider how the chosen format will affect users of different cultures viewing the report. 
+* If you specify an invalid format string, it will override the actual `Value`.
 
-  ![](images/Items001.png)
-
-## Using Expression editor
-
-Information on using the expression editor is available in the [Edit Expression Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}) article. 
-
-> Pressing the Enter key inserts a new line in the expression. Enclose the new line within double quotes ("") to insert a new line in the string resulting from the evaluated expression. 
-
-
-  ![](images/UI014.png)
-
-## Embedded expressions
-
-The item supports [embedded expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/embedded-expressions%}) for mail merge functionality. Embedded expressions give you the freedom to get and insert data-driven information directly into the text box report item to produce customized reports and mail merging. 
-
+For more information, refer to the article about the [**Format Builder** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog%}). 
 
 ## See Also
 
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
-
-* [TextBox](/reporting/api/Telerik.Reporting.TextBox)  
-
-* [Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)  
-
-* [Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)  
-
-* [HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox)
+* [(API) TextBox](/reporting/api/Telerik.Reporting.TextBox)  
+* [(API) Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)  
+* [(API) Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)  
+* [(API) HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox)

@@ -30,5 +30,5 @@ To add or remove report headers or footers:
 
 ## See Also
 
-* [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)
-* [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)
+* [(API) ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)
+* [(API) ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)

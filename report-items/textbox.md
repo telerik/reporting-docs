@@ -36,11 +36,10 @@ To change the text orientation in a TextBox item, use the [`Angle`](/reporting/a
 
 The layout of the tilted text starts from the corner of the client item rectangle and fits the text until finished. This behavior produces short initial text lines which can be avoided, if desired, by adding some empty lines at the beginning of the text or expression: 
 
-    
-````cs
+````CS
 this.textBox1.Value = "= \"\r\n\r\n\" + Fields.MyDataColumn";
 ````
-````vb
+````VB.NET
 Me.textBox1.Value = "= """ & vbCr & vbLf & vbCr & vbLf & """ + Fields.MyDataColumn"
 ````
 
@@ -80,11 +79,11 @@ The TextBox report item supports [embedded expressions]({%slug telerikreporting/
 Before you apply a TextBox format, consider the following: 
 
 * By default, numbers are formatted to reflect the cultural settings on the client computer. To specify how numbers are displayed and provide consistent formatting regardless of where the person who is viewing the report is located, use formatting strings. 
-* The formats provided on the **Number** page are a subset of the.NET Framework standard numeric format strings. To format a number or a date by using a custom format that is not shown in the dialog box, use any number or date .NET Framework format strings. For more information about custom format strings, refer to the [MSDN Formatting Types](http://msdn.microsoft.com/en-us/library/fbxft59x%28VS.95%29.aspx) topic. 
-* If you specify a custom format string, it will prevail over the default settings that are culture-specific. For example, if you set a custom format string of `#,###` to render 1234 as 1,234, users in different parts of the world may interpret it in different ways. Before specifying a custom format, consider how the chosen format will affect users of different cultures viewing the report. 
+* The formats provided on the **Number** page are a subset of the .NET Framework standard numeric format strings. To format a number or a date by using a custom format that is not shown in the dialog box, use any number or date .NET Framework format strings. For more information about custom format strings, refer to the [MSDN Formatting Types](http://msdn.microsoft.com/en-us/library/fbxft59x%28VS.95%29.aspx) topic. 
+* If you specify a custom format string, it will prevail over the default settings that are culture-specific. For example, if you set a custom format string of `#,###` to render 1234 as `1,234`, users in different parts of the world may interpret it in different ways. Before specifying a custom format, consider how the chosen format will affect users of different cultures viewing the report. 
 * If you specify an invalid format string, it will override the actual `Value`.
 
-For more information, refer to the article about the [**Format Builder** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog%}).         
+For more information, refer to the article about the [**Format Builder** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/format-builder-dialog%}). 
 
 ## See Also
 

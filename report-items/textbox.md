@@ -87,8 +87,8 @@ For more information, refer to the article about the [**Format Builder** dialog]
 
 ## See Also
 
-* [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
-* [(API) TextBox](/reporting/api/Telerik.Reporting.TextBox)  
-* [(API) Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)  
-* [(API) Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)  
+* [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
+* [(API) TextBox](/reporting/api/Telerik.Reporting.TextBox)
+* [(API) Angle](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Angle)
+* [(API) Format](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_Format)
 * [(API) HtmlTextBox](/reporting/api/Telerik.Reporting.HtmlTextBox)

@@ -32,16 +32,14 @@ The design-time editor is available in the Telerik Reporting Visual Studio and S
 
 * Interactive (__Design view__)&mdash;Allows you to select a portion of the text and make it bold, change its font, size, color, and so on by using the appropriate controls such as combo-boxes and buttons (WYSIWYG editor). 
 
-  Internally, the Report Designer generates a valid HTML source and stores it in the `Value` property of the item. Adding embedded expressions is possible, but the entire HTML value cannot be an expression. You can switch to the __HTML view__ anytime if needed. 
+	Internally, the Report Designer generates a valid HTML source and stores it in the `Value` property of the item. Adding embedded expressions is possible, but the entire HTML value cannot be an expression. You can switch to the __HTML view__ anytime if needed. 
 
-  Pressing the `Enter` key inserts a new paragraph or a new list item depending on the current context. Note that it not insert a `<br />` (new line) element. To insert a new line, use the button on the toolbar. 
+	Pressing the `Enter` key inserts a new paragraph or a new list item depending on the current context. Note that it does not insert a `<br />` (new line) element. To insert a new line, use the button on the toolbar. 
 
-  ![The HtmTextBox Design View](images/HtmlTextBox_DesignView.png)
+	![The HtmTextBox Design View](images/HtmlTextBox_DesignView.png)
 
 * Expression (__Html view__)&mdash;Enables the user to enter raw HTML tags and text into the source editor. The value can be an expression or text, which contains embedded expressions. The user can switch to the __Design view__ anytime unless the value is an expression. 
 
-  The `MultiLine` and `TextWrap` concepts are always true for the HtmlTextBox. You can nest the subscript and superscript tags, for example `<sub>subscript1<sub>subscript2</sub></sub>`, which will result in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggle the subscript or superscript feature and if you need nested tags, you need to manually add the appropriate code by using the __Html view__ of the editor. 
-  
-  ![The HtmlTextBox Html View](images/HtmlTextBox_HtmlView.png)
+	The `MultiLine` and `TextWrap` concepts are always true for the HtmlTextBox. You can nest the subscript and superscript tags, for example `<sub>subscript1<sub>subscript2</sub></sub>`, which will result in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggle the subscript or superscript feature and if you need nested tags, you need to manually add the appropriate code by using the __Html view__ of the editor. 
 
-
+	![The HtmlTextBox Html View](images/HtmlTextBox_HtmlView.png)

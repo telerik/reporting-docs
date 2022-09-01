@@ -82,5 +82,5 @@ When working with the SubReport item, note the following considerations:
 
 * [Creating Master-Detail Reports with the SubReport]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
 * [Binding the SubReport to Parent Report Data]({%slug how-to-bind-sub-report-to-main-report-s-data%})
-* [(API) SubReport](/reporting/api/Telerik.Reporting.SubReport) 
+* [(API) SubReport](/reporting/api/Telerik.Reporting.SubReport)
 * [(API) ReportSource](/reporting/api/Telerik.Reporting.SubReport#Telerik_Reporting_SubReport_ReportSource)

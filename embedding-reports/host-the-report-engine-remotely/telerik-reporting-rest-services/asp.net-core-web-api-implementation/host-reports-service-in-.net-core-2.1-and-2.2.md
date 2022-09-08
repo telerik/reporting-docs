@@ -43,7 +43,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder. 
 
-> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET Core projects. Existing .NET Framework report libraries can be migrated to declarative report definitions as well. The other available approach is designing reports in a separate Telerik Report Library created against .NET Framework 4.0+ which later must be migrated to a .NET Standard or .NET Core library. For more information, please refer to [Guidance for using reports from an existing .NET Framework 4+ report library in a .NET Core application](knowledge-base/use-existing-report-library-in-net-core-app) knowledge based article. Design-time support is not yet provided for .NET Core Telerik Report Library (Class Library) projects storing the report definitions. 
+> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET Core projects. Existing .NET Framework report libraries can be migrated to declarative report definitions as well. The other available approach is designing reports in a separate Telerik Report Library created against .NET Framework 4.0+ which later must be migrated to a .NET Standard or .NET Core library. For more information, please refer to [Guidance for using reports from an existing .NET Framework 4+ report library in a .NET Core application]({%slug use-existing-report-library-in-net-core-app%}) knowledge base article. Design-time support is not yet provided for .NET Core Telerik Report Library (Class Library) projects storing the report definitions. 
 
 
 ## Add the required dependencies
@@ -61,7 +61,7 @@ This guide applies the recommended NuGet package references approach to add the 
 The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) for this purpose. 
 
 .NET Core applications provide a new way of storing the configuration - a [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2) file named by default __appSettings.json__. The default ReportingEngineConfiguration: 
-    
+
 ````C#
 ReportingEngineConfiguration = sp.GetService<IConfiguration>()
 ````
@@ -71,62 +71,62 @@ will be initialized from __appSettings.json__ or __appsettings.{EnvironmentName}
 To activate JSON file configuration with a different name, for example, __reportingAppSettings.json__, call the [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/) extension method on an instance of [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder). 
 
 In this guide we will create a helper class loading the json-formatted setting: 
-    
+
 ````C#
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 static class ConfigurationHelper
 {
-    static IConfiguration ResolveConfiguration(IHostingEnvironment environment)
-    {
-        // If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
-        var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
-        return new ConfigurationBuilder()
-         .AddJsonFile(reportingConfigFileName, true)
-         .Build();
-    }
+	static IConfiguration ResolveConfiguration(IHostingEnvironment environment)
+	{
+		// If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
+		var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
+		return new ConfigurationBuilder()
+		.AddJsonFile(reportingConfigFileName, true)
+		.Build();
+	}
 }
 ````
 
 Finally, all configurations should be placed in the JSON configuration file (add one in the project root if such does not exist). For example, __ConnectionStrings__ setting should be configured in JSON-based format like this: 
-    
+
 ````JSON
 {
 ...
-  "ConnectionStrings": {
-    "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-  }
+	"ConnectionStrings": {
+		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
+	}
 }
 ````
 
 The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient* as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported: 
-    
+
 ````JSON
 {
 ...
-  "ConnectionStrings": {
-    "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-      "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-      "providerName": "System.Data.SqlClient"
-    }
-  }
+	"ConnectionStrings": {
+		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
+			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+			"providerName": "System.Data.SqlClient"
+		}
+	}
 }
 ````
 
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section. 
 
 The last supported type of __ConnectionStrings__ configuration uses an array to provide information about each connection string: 
-    
+
 ````JSON
 {
 ...
-  "ConnectionStrings": [
-    {
-      "name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-      "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-      "providerName": "System.Data.SqlClient"
-    }
-  ]
+	"ConnectionStrings": [
+	{
+		"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
+		"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+		"providerName": "System.Data.SqlClient"
+	}
+	]
 }
 ````
 
@@ -136,18 +136,18 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
 The __ConfigureServices__ method inside the __Startup.cs__ in the project should be modified in order to enable the Reports Service functionality. 
 
 Add the dedicated configuration object needed from the Reports Service in the dependency container. Note how the report source resolver will target the Reports folder we created earlier. 
-    
+
 ````C#
 // Configure dependencies for ReportsController.
 services.TryAddSingleton<IReportServiceConfiguration>(sp =>
-    new ReportServiceConfiguration
-    {
-        ReportingEngineConfiguration = ConfigurationHelper.ResolveConfiguration(sp.GetService<IHostingEnvironment>()),
-        HostAppId = "ReportingCore2App",
-        Storage = new FileStorage(),
-        ReportSourceResolver = new UriReportSourceResolver(
-            System.IO.Path.Combine(sp.GetService<IHostingEnvironment>().ContentRootPath, "Reports"))
-    });
+	new ReportServiceConfiguration
+	{
+		ReportingEngineConfiguration = ConfigurationHelper.ResolveConfiguration(sp.GetService<IHostingEnvironment>()),
+		HostAppId = "ReportingCore2App",
+		Storage = new FileStorage(),
+		ReportSourceResolver = new UriReportSourceResolver(
+			System.IO.Path.Combine(sp.GetService<IHostingEnvironment>().ContentRootPath, "Reports"))
+	});
 ````
 
 
@@ -156,21 +156,21 @@ services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 1. Implement a Reports controller. Right-click on the __Controllers__ folder and add a new item: Add - New item - __Web API Controller Class__ item. Name it ReportsController. This will be our Telerik Reporting REST service in the project. 
 
 1. Inherit the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look like: 
-    
+
 	````C#
 namespace AspNetCoreDemo.Controllers
 {
-    using Microsoft.AspNetCore.Mvc;
-    using Telerik.Reporting.Services;
-    using Telerik.Reporting.Services.AspNetCore;
-    [Route("api/reports")]
-    public class ReportsController : ReportsControllerBase
-    {
-        public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
-            : base(reportServiceConfiguration)
-        {
-        }
-    }
+	using Microsoft.AspNetCore.Mvc;
+	using Telerik.Reporting.Services;
+	using Telerik.Reporting.Services.AspNetCore;
+	[Route("api/reports")]
+	public class ReportsController : ReportsControllerBase
+	{
+		public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
+			: base(reportServiceConfiguration)
+		{
+		}
+	}
 }
 ````
 

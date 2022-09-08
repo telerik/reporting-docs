@@ -23,13 +23,13 @@ The following table lists the `ShapeType` property modes supported by the Shape.
 
 |Lines|Stars|Arrows|Other
 |:---|:---|:---|:---
-|Vertical Line|3-ray star|Top Arrow|Ellipse           
-|Horizontal Line|4-ray star|Bottom Arrow|Triangle          
-|Slant Line|5-ray star|Left Arrow|Square          
-|BackSlant Line|6-ray star|Right Arrow|Pentagon          
-||8-ray star||Hexagon           
-||||Octagon           
-||||Cross           
+|Vertical Line|3-ray star|Top Arrow|Ellipse 
+|Horizontal Line|4-ray star|Bottom Arrow|Triangle 
+|Slant Line|5-ray star|Left Arrow|Square 
+|BackSlant Line|6-ray star|Right Arrow|Pentagon 
+||8-ray star||Hexagon 
+||||Octagon 
+||||Cross 
 
 The Shape enables you to create custom shapes programmatically. The following code snippet shows how to inherit the [`ShapeBase`](/reporting/api/Telerik.Reporting.Drawing.Shapes.ShapeBase) class and provide a custom set of `PointF` arrays that will form the Shape. The coordinates of the points are relative and do not depend on the size or position of the item in the report. 
 
@@ -50,6 +50,6 @@ You can create the Shape at runtime and add it to a report item container (Secti
 ## See Also
 
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
-* [(API) Shape](/reporting/api/Telerik.Reporting.Shape)  
-* [(API) ShapeType](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType)  
+* [(API) Shape](/reporting/api/Telerik.Reporting.Shape) 
+* [(API) ShapeType](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType) 
 * [(API) Stretch](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch)

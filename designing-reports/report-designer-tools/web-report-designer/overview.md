@@ -38,7 +38,7 @@ The Web Report Designer consists of the following areas:
 * __Search__ - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item or change a property value with just a few keystrokes.
 
 
-* __Onboarding Guide__ - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded, if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. 
+* __Onboarding Guide__ - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded, if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
 
 ## How it works
 

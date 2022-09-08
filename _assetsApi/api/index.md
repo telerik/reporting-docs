@@ -191,8 +191,8 @@ The following tables list the most used members of the different libraries.
             <td>The Telerik Reporting ReportViewer for ASP.NET Web Forms applications. Wrapper of the pure Html5 Report Viewer</td>
         </tr>
 		<tr>
-            <td><a href="/reporting/api/Telerik.ReportViewer.Html5.MVC.html">Telerik.ReportViewer.Html5.MVC</a></td>
-            <td><a href="/reporting/api/Telerik.ReportViewer.Html5.MVC.ReportViewer.html">ReportViewer</a> ASP.NET MVC</td>
+            <td><a href="/reporting/api/Telerik.ReportViewer.MVC.html">Telerik.ReportViewer.MVC</a></td>
+            <td><a href="/reporting/api/Telerik.ReportViewer.MVC.html">ReportViewer</a> ASP.NET MVC</td>
             <td>The Telerik Reporting ReportViewer for ASP.NET MVC applications. Wrapper of the pure Html5 Report Viewer</td>
         </tr>
     </tbody>

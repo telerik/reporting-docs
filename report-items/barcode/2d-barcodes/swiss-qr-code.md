@@ -29,7 +29,7 @@ The most important characteristics of the Swiss QR Barcode are:
 
 * The quiet zone or area is the space surrounding the barcode modules. The QR barcode specification mandates that the quiet zone at least four modules wide, which equals to __1.6 mm__ given the minimum module size. 
 
-  The Swiss QR Code design specifications suggests the quiet zone to be set to __5 mm__. To satisfy this requirement the [`SwissQREncoder`](/reporting/api/Telerik.Reporting.Barcodes.SwissQREncoder) provides a dedicated property named [`QuietZone`](/reporting/api/Telerik.Reporting.Barcodes.SwissQREncoder#Telerik_Reporting_Barcodes_SwissQREncoder_QuietZone) that allows you to set the width of the quiet zone in a string format, for example, `5mm`, `0.5cm`, or `0.2in`. 
+	The Swiss QR Code design specifications suggests the quiet zone to be set to __5 mm__. To satisfy this requirement the [`SwissQRCodeEncoder`](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder) provides a dedicated property named [`QuietZone`](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_QuietZone) that allows you to set the width of the quiet zone in a string format, for example, `5mm`, `0.5cm`, or `0.2in`. 
 
 * To increase the recognizability, the Swiss QR Code contains an additional recognition symbol: a Swiss cross logo measuring __7 x 7 mm__. The logo is rendered in the center of the barcode, overlaying the existing barcode modules. 
 
@@ -47,15 +47,15 @@ The `Creditor` property contains information about the `Payable To` data entity.
 
 * __Address__&mdash;Determines the Creditor address fields, shown below in alphabetical order: 
 
-   + (Mandatory) __City__&mdash;35 characters max. 
+	+ (Mandatory) __City__&mdash;35 characters max. 
 
-   + (Mandatory) __Country__&mdash;Contains the two-letter country code as defined by ISO 3166-1. 
+	+ (Mandatory) __Country__&mdash;Contains the two-letter country code as defined by ISO 3166-1. 
 
-   + (Optional) __House Number__ 
+	+ (Optional) __House Number__ 
 
-   + (Mandatory) __Postal code__&mdash;16 characters max. 
+	+ (Mandatory) __Postal code__&mdash;16 characters max. 
 
-   + (Optional) __Street__
+	+ (Optional) __Street__
 
 * (Mandatory) __IBAN__&mdash;Must pass the validation check for an IBAN identifier. 
 
@@ -106,8 +106,6 @@ The `Payment` property contains information about the `Payment` data entity.
 ### Value from Bill Data
 
 `ValueFromBillData` determines whether the [`Value`](/reporting/api/Telerik.Reporting.Barcode#Telerik_Reporting_Barcode_Value) property of the barcode will obtain its value from the data configured in the [`BillData`](/reporting/api/Telerik.Reporting.Barcodes.SwissQRCodeEncoder#Telerik_Reporting_Barcodes_SwissQRCodeEncoder_BillData) property or not. If set to `true`, the data will be constructed from the fields in the `BillData` property. If set to `false`, the `BillData` fields will not be respected and the barcode item will encode the raw data used in the `Value` field. 
-
-
 
 ## See Also
 

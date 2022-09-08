@@ -20,7 +20,7 @@ You can connect to data from OpenEdge AppServer ABL procedures using the Telerik
 + Generated .NET 4.0 proxy assembly for the target procedure along with its dependencies: 
 
 	* [Preparing to generate proxies for a .NET client using ProxyGen or Batch ProxyGen](https://docs.progress.com/bundle/openedge-gui-for-dotnet-introduction-development-117/page/Preparing-to-generate-proxies-for-a-.NET-client-using-ProxyGen-or-Batch-ProxyGen.html)
-	
+
 	* [Generating Proxies and Web Service Definitions](https://docs.progress.com/bundle/openedge-open-client-toolkit-introduction-117/page/Generating-Proxies-and-Web-Service-Definitions.html)
 
 ## Configuring the OpenClientDataSource Component

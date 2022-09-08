@@ -71,7 +71,8 @@ The following table shows the most common reasons for failure when using the Tel
 
 | Problem | Cause |
 | ------ | ------ |
-|The viewer displays the message:<br />`A problem occurred while registering client.`|Check if the REST service is active and running - the easiest way is to make a request for the available document formats, as explained in [How to Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/add-rest-web-api-to-web-application%}).|
+|The viewer displays the message:<br />`A problem occurred while registering client.`|Check if the REST service is active and running - the easiest way is to make a request for the available document formats, as explained in [How to Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application
+%}).|
 |The viewer displays the message:<br />`System.OperationCanceledException: *{ReportName}* report cannot be resolved.`|Make sure the URL or type name specified in the __report source__ property is valid and can be resolved by the REST service.|
 |The viewer displays the message:<br />`System.Net.WebException: The remote name could not be resolved: {name}`|Make sure that the address specified in the connection string exists and represents a valid and running REST service instance.|
 

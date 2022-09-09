@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/binding-a
 tags: binding,a,data,item,to,data
 published: True
 position: 1
+previous_url: /data-items-binding-a-data-item-to-data
 ---
 
 # Binding a Data item to Data

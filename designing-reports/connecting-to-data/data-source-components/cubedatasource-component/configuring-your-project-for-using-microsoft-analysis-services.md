@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: configuring,your,project,for,using,microsoft,analysis,services
 published: True
 position: 1
+previous_url: /cubedatasource-configuring-project
 ---
 
 # Configuring your project for using Microsoft Analysis Services

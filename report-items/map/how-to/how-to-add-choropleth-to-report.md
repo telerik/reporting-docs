@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-
 tags: how,to,add,choropleth,to,report
 published: True
 position: 3
+previous_url: /HowToAddChoroplethToReport
 ---
 
 # How to Add Choropleth to Report

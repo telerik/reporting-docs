@@ -5,7 +5,8 @@ description: Performance Considerations
 slug: telerikreporting/designing-reports/performance-considerations
 tags: performance,considerations
 published: True
-position: 13
+position: 14
+previous_url: /designing-performance
 ---
 
 # Performance Considerations

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/structure/location
 tags: location,providers
 published: True
 position: 2
+previous_url: /MapLocationProviders
 ---
 
 # Location Providers

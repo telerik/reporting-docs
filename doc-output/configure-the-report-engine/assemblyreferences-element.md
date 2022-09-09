@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: assemblyreferences,element
 published: True
 position: 4
+previous_url: /configuring-telerik-reporting-assemblyreferences
 ---
 <style>
 table th:first-of-type {

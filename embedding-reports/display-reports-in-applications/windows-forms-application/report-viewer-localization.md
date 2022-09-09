@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: report,viewer,localization
 published: True
 position: 4
+previous_url: /report-viewer-localization
 ---
 
 # Report Viewer Localization

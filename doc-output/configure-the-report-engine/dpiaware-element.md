@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: dpiaware,element
 published: True
 position: 9
+previous_url: /configuring-telerik-reporting-dpiaware
 ---
 
 # dpiAware Element

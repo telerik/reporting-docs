@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressi
 tags: utility,functions
 published: True
 position: 10
+previous_url: /expressions-utility-functions
 ---
 <style>
 table th:first-of-type {

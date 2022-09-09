@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: import,report,wizard
 published: True
 position: 3
+previous_url: /import-report-wizard
 ---
 
 # Import Report Wizard

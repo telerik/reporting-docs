@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/tooltip
 tags: tooltips
 published: True
 position: 4
+previous_url: /designing-reports-interactivity-tooltips
 ---
 
 # Tooltips

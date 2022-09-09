@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/panel
 tags: panel
 published: True
 position: 8
+previous_url: /report-items-panel
 ---
 
 # Panel

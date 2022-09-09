@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: overview
 published: True
 position: 0
+previous_url: /report-events
 ---
 
 # Report Events Overview

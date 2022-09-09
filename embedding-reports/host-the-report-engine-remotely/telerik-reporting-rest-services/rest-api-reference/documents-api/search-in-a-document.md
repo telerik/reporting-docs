@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: search,in,a,document
 published: True
 position: 7
+previous_url: /telerik-reporting-rest-documents-api-search-in-document
 ---
 <style>
 table th:first-of-type {

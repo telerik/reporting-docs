@@ -6,16 +6,17 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: excel,2003,device,information,settings
 published: True
 position: 5
+previous_url: /device-information-settings-excel
 ---
 <style>
 table th:first-of-type {
-    width: 15%;
+    width: 23%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+    width: 7%;
 }
 table th:nth-of-type(3) {
-    width: 75%;
+    width: 70%;
 }
 </style>
 

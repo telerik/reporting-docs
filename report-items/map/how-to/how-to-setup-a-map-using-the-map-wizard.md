@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setu
 tags: how,to,setup,a,map,using,the,map,wizard
 published: True
 position: 1
+previous_url: /MapHowToSetupMapWithPieChartSeries
 ---
 
 # How to Setup a Map Using the Map Wizard

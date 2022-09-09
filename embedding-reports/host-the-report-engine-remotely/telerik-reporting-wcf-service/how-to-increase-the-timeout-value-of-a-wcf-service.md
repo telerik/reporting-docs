@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,increase,the,timeout,value,of,a,wcf,service
 published: True
 position: 5
+previous_url: /wcf-report-service-increasing-timeout
 ---
 
 # How to Increase the timeout value of a WCF service

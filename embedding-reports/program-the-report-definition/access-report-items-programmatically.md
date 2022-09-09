@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: access,report,items,programmatically
 published: True
 position: 5
+previous_url: /faq-accessing-items
 ---
 
 # Access Report Items Programmatically

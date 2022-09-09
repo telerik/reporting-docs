@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: parametertypes
 published: True
 position: 4
+previous_url: /html5-report-viewer-api-parametertypes
 ---
 
 # ParameterTypes

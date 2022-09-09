@@ -45,8 +45,11 @@ navigation:
     report-items/barcode/2d-barcodes:
         position: 30
         title: "2D Barcodes"     
+    report-items/report-item:
+        position: 10
+        title: "Report"     
     report-items/table-crosstab-list:
-        position: 12
+        position: 13
         title: "Table/Crosstab/List"    
     report-items/graph:
         position: 5
@@ -102,9 +105,6 @@ navigation:
     report-items/htmltextbox:
         position: 6
         title: "HtmlTextBox"
-    report-items/how-to:
-        position: 100
-        title: "How To"
     doc-output:
         position: 10
         title: "Document Output"
@@ -295,7 +295,7 @@ navigation:
         position: 4
         title: "Creating Reports"  
     designing-reports/report-designer-tools:
-        position: 2
+        position: 4
         title: "Report Designers"
     designing-reports/report-designer-tools/web-report-designer:
         position: 10
@@ -400,7 +400,7 @@ navigation:
         position: 14
         title: "Troubleshooting"
     designing-reports/report-book:
-        position: 10
+        position: 6
         title: "Report Book" 
     knowledge-base:
         position: 20

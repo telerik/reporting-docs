@@ -3,7 +3,7 @@ title: Adding the Private Telerik NuGet Feed
 page_title: Adding the Private Telerik  NuGet Feed to Visual Studio 
 description: "Get up and running with Telerik Reporting and learn how to add the Telerik private NuGet feed to Visual Studio."
 slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
-previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
+previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio, /add-the-telerik-private-nuget-feed-to-visual-studio
 tags: how,to,add,the,telerik,private,nuget,feed,to,visual,studio
 published: True
 position: 8
@@ -83,4 +83,5 @@ NuGet Sources Update -Name "telerik.com" -Source "https://nuget.telerik.com/v3/i
 
 ## See Also 
 
+* [Restoring NuGet Packages in Your CI Workflow]({% slug using-nuget-keys %})
 * [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({% slug nuget-feed-returned-unexpected-401-status-error %})

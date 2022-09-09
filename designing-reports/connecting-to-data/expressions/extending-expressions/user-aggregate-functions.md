@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/extendin
 tags: user,aggregate,functions
 published: True
 position: 2
+previous_url: /expressions-user-aggregate-functions
 ---
 
 # User Aggregate Functions

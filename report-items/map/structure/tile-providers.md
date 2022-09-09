@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/structure/tile-pro
 tags: tile,providers
 published: True
 position: 1
+previous_url: /MapTileProviders
 ---
 
 # Tile Providers

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: rtf,device,information,settings
 published: True
 position: 7
+previous_url: /device-information-settings-rtf
 ---
 <style>
 table th:first-of-type {

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: openaccessdatasource,wizard
 published: True
 position: 6
+previous_url: /openaccessdatasource-wizard
 ---
 
 # OpenAccessDataSource Wizard

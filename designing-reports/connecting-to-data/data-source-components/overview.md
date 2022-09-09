@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: overview
 published: True
 position: 0
+previous_url: /connecting-to-data-data-source-components
 ---
 
 # Data Source Components Overview
@@ -25,7 +26,7 @@ The Telerik Reporting engine includes the following data source objects:
 * [JsonDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%})
 
 * [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})– Enables you to work
-    with business objects or other classes and allows you to create reports that display data from the middle-tier.For backwards compatibility reasons Telerik Reporting supports binding directly to *IEnumberable* /*IListSource*  objects (*incl.*  arrays, collections, DataSet, DataTable, DataView, DbDataAdapter). Our recommendation is to avoid them and use the ObjectDataSource component that can handle these types of data sources.     
+    with business objects or other classes and allows you to create reports that display data from the middle-tier.For backwards compatibility reasons Telerik Reporting supports binding directly to *IEnumerable* / *IListSource*  objects (*incl.*  arrays, collections, DataSet, DataTable, DataView, DbDataAdapter). Our recommendation is to avoid them and use the ObjectDataSource component that can handle these types of data sources.     
 
 * [EntityDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/overview%})– Enables you to connect to the [ADO.NET Entity Framework](http://msdn.microsoft.com/en-us/library/bb399572.aspx) 
 

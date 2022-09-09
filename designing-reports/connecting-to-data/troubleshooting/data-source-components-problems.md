@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/troubleshooting/data
 tags: data,source,components,problems
 published: True
 position: 0
+previous_url: /troubleshooting-data-source-components-configurations
 ---
 
 # Data Source Components Problems

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-
 tags: how,to,add,locationmapseries,to,the,map,item
 published: True
 position: 5
+previous_url: /MapHowToAddLocationMapSeriesToTheMapItem
 ---
 
 # How to Add LocationMapSeries to the Map Item

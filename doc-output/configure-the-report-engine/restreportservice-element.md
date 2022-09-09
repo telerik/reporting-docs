@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: restreportservice,element
 published: True
 position: 5
+previous_url: /configuring-telerik-reporting-restreportservice
 ---
 <style>
 table th:first-of-type {

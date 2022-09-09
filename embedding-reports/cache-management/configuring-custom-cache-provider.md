@@ -3,7 +3,7 @@ title: Configuring Custom Cache Providers
 page_title: Configuring Custom Cache Providers
 description: "Learn how to configure a custom cache provider when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-custom-cache-provider
-previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-custom-cache-provider
+previous_url: /using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-custom-cache-provider, /configuring-telerik-reporting-custom-provider
 tags: telerik, reporting, embedding, reports, cache, management, configuring, custom, provider
 published: True
 position: 4

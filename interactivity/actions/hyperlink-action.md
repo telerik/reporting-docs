@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: hyperlink,action
 published: True
 position: 5
+previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action, /designing-reports-interactivity-hyperlinks
 ---
 
 # Hyperlink Action

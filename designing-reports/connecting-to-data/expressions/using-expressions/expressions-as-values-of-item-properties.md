@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-ex
 tags: expressions,as,values,of,item,properties
 published: True
 position: 1
+previous_url: /expressions-property-values
 ---
 
 # Expressions as Values of Item Properties

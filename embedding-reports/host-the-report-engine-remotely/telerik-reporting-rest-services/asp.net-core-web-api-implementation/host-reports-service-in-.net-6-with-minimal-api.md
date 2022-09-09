@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,minimal,api
 published: True
 position: 2
+previous_url: /telerik-reporting-rest-service-net6-minimal-api
 ---
 
 # How to Host Reports Service in ASP.NET Core in .NET 6 with Minimal API

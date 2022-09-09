@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: events
 published: True
 position: 1
+previous_url: /angular-report-viewer-api-events
 ---
 <style>
 table th:first-of-type {

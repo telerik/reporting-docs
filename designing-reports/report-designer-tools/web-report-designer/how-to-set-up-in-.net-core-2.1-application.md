@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: how,to,set,up,in,.net,core,2.1+,application
 published: True
 position: 3
+previous_url: /web-report-designer-setup-in-net-core
 ---
 
 # How to set up in .NET Core 2.1+ application

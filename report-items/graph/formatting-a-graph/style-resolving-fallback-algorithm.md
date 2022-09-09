@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: style,resolving,fallback,algorithm
 published: True
 position: 6
+previous_url: /style-resolving-fallback-algorithm
 ---
 
 # Style Resolving Fallback Algorithm

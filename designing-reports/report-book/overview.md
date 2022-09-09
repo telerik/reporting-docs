@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-book/overview
 tags: overview
 published: True
 position: 0
+previous_url: /designing-reports-general-explanation
 ---
 
 # Overview

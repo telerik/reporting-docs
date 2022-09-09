@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: connecting,the,cubedatasource,component,to,an,olap,database
 published: True
 position: 2
+previous_url: /cubedatasource-connecting-to-database
 ---
 
 # Connecting the CubeDataSource component to an OLAP database

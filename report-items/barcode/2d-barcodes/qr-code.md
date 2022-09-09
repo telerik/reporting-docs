@@ -3,7 +3,7 @@ title: QR Code
 page_title: QR Code
 description: "Learn more about the two-dimensional QR Code barcode type supported by the Telerik Reporting Barcode report item."
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code/overview
-previous_url: /report-items/barcode/barcode-types/2d-barcodes/qr-code/overview, /report-items/barcode/barcode-types/2d-barcodes/qr-code/settings
+previous_url: /report-items/barcode/barcode-types/2d-barcodes/qr-code/overview, /report-items/barcode/barcode-types/2d-barcodes/qr-code/settings, /report-items-barcode-qrcode-visual-structure
 tags: telerik, reporting, report, items, barcode, 2d, qr, code, overview
 published: True
 position: 1

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: understanding,events
 published: True
 position: 1
+previous_url: /understanding-events
 ---
 
 # Understanding Events

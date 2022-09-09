@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,connect,to,mysql,database
 published: False
 position: 5
+previous_url: /how-to-sqlDataSource-mySql
 ---
 
 # How to Connect to MySQL Database

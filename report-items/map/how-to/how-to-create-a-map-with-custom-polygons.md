@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-crea
 tags: how,to,create,a,map,with,custom,polygons
 published: True
 position: 8
+previous_url: /MapHow-to-create-map-with-custom-wkt
 ---
 
 # How to Create a Map with custom polygons

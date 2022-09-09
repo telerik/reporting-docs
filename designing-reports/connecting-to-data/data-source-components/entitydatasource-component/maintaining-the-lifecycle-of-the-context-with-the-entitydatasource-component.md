@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: maintaining,the,lifecycle,of,the,context,with,the,entitydatasource,component
 published: True
 position: 4
+previous_url: /entitydatasource-maintaining-the-lifecycle-of-the-objectContext
 ---
 
 # Maintaining the lifecycle of the Context with the EntityDataSource component

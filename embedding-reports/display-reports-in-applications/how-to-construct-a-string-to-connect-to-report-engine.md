@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,construct,a,string,to,connect,to,report,engine
 published: True
 position: 6
+previous_url: /report-engine-connectionstring
 ---
 <style>
 table th:first-of-type {

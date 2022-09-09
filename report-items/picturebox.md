@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/picturebox
 tags: picturebox
 published: True
 position: 9
+previous_url: /report-items-picture-box
 ---
 <style>
 table th:first-of-type {

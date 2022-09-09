@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: html,rendering,design,considerations
 published: True
 position: 1
+previous_url: /designing-reports-considerations-html
 ---
 
 # HTML Rendering Design Considerations

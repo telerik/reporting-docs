@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,bind,to,a,dataadapter
 published: True
 position: 3
+previous_url: /object-data-source-how-to-bind-to-data-adapter
 ---
 
 # How to Bind to a DataAdapter

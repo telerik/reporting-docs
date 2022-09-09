@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-
 tags: how,to,add,filtering,to,group
 published: True
 position: 1
+previous_url: /data-items-how-to-add-filtering-to-group
 ---
 
 # How to Add filtering to Group

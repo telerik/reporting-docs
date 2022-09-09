@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,html5,report,viewer,with,report,server
 published: True
 position: 3
+previous_url: /html5-report-viewer-howto-use-it-with-reportserver
 ---
 
 # How to Use HTML5 Report Viewer with Report Server

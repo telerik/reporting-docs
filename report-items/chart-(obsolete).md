@@ -5,7 +5,8 @@ description: "(Obsolete) Learn more about the Chart as a report item when using 
 slug: telerikreporting/designing-reports/report-structure/chart-(obsolete)
 tags: telerik, reporting, report, items, chart, obsolete
 published: True
-position: 14
+position: 50
+previous_url: /report-items-chart
 ---
 
 # (Obsolete) Chart 

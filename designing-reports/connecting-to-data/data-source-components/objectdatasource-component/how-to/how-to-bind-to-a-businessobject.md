@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,bind,to,a,businessobject
 published: True
 position: 0
+previous_url: /object-data-source-how-to-bind-to-business-object
 ---
 
 # How to Bind to a BusinessObject

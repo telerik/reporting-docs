@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: wpfxaml/wpfxamlinteractive,device,information,settings
 published: True
 position: 14
+previous_url: /device-information-settings-wpfxamlinteractive
 ---
 <style>
 table th:first-of-type {

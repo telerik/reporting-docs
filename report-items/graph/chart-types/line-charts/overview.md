@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/line
 tags: overview
 published: True
 position: 0
+previous_url: /LineCharts
 ---
 
 # Line Charts Overview

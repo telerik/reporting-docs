@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/connecting-to-da
 tags: connecting,to,data
 published: True
 position: 2
+previous_url: /GraphConnectingToData
 ---
 
 # Connecting to Data

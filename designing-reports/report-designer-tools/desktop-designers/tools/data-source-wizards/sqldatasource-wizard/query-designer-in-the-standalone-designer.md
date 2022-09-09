@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: query,designer,in,the,standalone,designer
 published: True
 position: 1
+previous_url: /sql-datasource-query-designer
 ---
 
 # Query Designer in the Standalone Designer

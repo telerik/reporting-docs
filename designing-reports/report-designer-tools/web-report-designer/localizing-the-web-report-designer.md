@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: localizing,the,web,report,designer
 published: True
 position: 6
+previous_url: /web-report-designer-localization
 ---
 
 # Localizing the Web Report Designer

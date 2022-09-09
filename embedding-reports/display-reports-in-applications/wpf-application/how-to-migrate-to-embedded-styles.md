@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,migrate,to,embedded,styles
 published: True
 position: 11
+previous_url: /wpf-report-viewer-migrate-to-embedded-styles
 ---
 
 # How to Migrate to embedded styles

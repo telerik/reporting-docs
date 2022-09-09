@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: how,to,import,reports,created,with,the,vs,report,designer
 published: True
 position: 6
+previous_url: /standalone-report-designer-import-clr-reports
 ---
 
 # How to import reports created with the VS Report Designer

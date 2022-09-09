@@ -6,6 +6,7 @@ slug: telerikreporting/getting-started/first-steps
 tags: telerik, reporting, first, steps, guide, design, a, report
 published: True
 position: 1
+previous_url: /getting-started/first-steps
 ---
 
 # Designing Reports (Guide) 

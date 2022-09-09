@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/us
 tags: using,report,parameters,programmatically
 published: True
 position: 3
+previous_url: /designing-reports-parameters-programmatic-control
 ---
 
 # Using Report Parameters programmatically

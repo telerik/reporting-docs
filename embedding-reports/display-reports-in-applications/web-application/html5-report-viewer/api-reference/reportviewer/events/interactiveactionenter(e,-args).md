@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: interactiveactionenter(e,,args)
 published: True
 position: 13
+previous_url: /html5-report-viewer-reportviewer-events-interactiveactionenter
 ---
 <style>
 table th:first-of-type {

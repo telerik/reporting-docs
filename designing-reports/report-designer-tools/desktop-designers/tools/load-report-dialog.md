@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: load,report,dialog
 published: True
 position: 15
+previous_url: /ui-choose-reportsource
 ---
 
 # Load Report Dialog

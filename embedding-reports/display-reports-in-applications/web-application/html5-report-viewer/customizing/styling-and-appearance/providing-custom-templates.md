@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: providing,custom,templates
 published: True
 position: 3
+previous_url: /html5-report-viewer-customizing-providing-template
 ---
 
 # Providing Custom Templates

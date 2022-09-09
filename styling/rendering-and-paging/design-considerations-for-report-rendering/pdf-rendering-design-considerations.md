@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/design-considerati
 tags: pdf,rendering,design,considerations
 published: True
 position: 3
+previous_url: /designing-reports-considerations-pdf
 ---
 <style>
 table th:first-of-type {

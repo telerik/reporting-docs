@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: setting,a,theme,(using,implicit,styles)
 published: True
 position: 2
+previous_url: /silverlight-report-viewer-implicit-styles
 ---
 
 # Setting a Theme (Using Implicit Styles)

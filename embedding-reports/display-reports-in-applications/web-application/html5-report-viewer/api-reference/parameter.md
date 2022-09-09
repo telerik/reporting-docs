@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: parameter
 published: True
 position: 4
+previous_url: /html5-report-viewer-api-parameter
 ---
 <style>
 table th:first-of-type {

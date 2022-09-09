@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: bind(eventname,,eventhandler)
 published: True
 position: 4
+previous_url: /html5-report-viewer-reportviewer-methods-bind-en-eh
 ---
 
 # bind(eventName, eventHandler)

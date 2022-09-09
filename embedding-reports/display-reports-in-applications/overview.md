@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: telerik, reporting, embedding, reports, displaying, reports, in, applications, overview
 published: True
 position: 0
+previous_url: /report-viewers-overview
 ---
 
 # Displaying Reports Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-crea
 tags: how,to,create,a,map,with,barchart,series,using,csv,data,source
 published: True
 position: 7
+previous_url: /How-to-create-map-with-BarChart-series-using-CSV-data-source
 ---
 
 # How to Create a Map with BarChart series using CSV data source

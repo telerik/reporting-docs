@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/ho
 tags: how,to,cascade,parameters,with,applied,filtering,on,data,source,level
 published: True
 position: 6
+previous_url: /designing-reports-parameters-cascading-paramerets-filtering-database-level
 ---
 
 # How to Cascade Parameters with applied filtering on data source level

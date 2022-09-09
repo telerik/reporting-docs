@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/htmltextbox/using-html
 tags: using,html,from,telerik,radeditor
 published: True
 position: 2
+previous_url: /report-items-html-text-box-using-html-from-radeditor
 ---
 
 # Using HTML from Telerik RadEditor

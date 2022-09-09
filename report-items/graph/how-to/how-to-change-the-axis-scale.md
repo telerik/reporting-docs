@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-ch
 tags: how,to,change,the,axis,scale
 published: True
 position: 5
+previous_url: /GraphHowToChangeAxisScale
 ---
 
 # How to Change the Axis Scale

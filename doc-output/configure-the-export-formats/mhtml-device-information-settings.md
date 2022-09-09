@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: mhtml,device,information,settings
 published: True
 position: 9
+previous_url: /device-information-settings-mhtml
 ---
 
 # MHTML Device Information Settings

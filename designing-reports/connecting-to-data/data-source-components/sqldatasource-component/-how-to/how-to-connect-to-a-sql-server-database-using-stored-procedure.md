@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: how,to,connect,to,a,sql,server,database,using,stored,procedure
 published: False
 position: 1
+previous_url: /how-to-sqlDataSource-sct-storedProcedure
 ---
 
 # How to Connect to a SQL Server Database Using Stored Procedure

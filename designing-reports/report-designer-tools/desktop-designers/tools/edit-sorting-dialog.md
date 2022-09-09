@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: edit,sorting,dialog
 published: True
 position: 9
+previous_url: /ui-sort
 ---
 
 # Edit Sorting Dialog

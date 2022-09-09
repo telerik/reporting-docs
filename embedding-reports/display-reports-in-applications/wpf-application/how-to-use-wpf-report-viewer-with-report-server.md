@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,wpf,report,viewer,with,report,server
 published: True
 position: 9
+previous_url: /wpf-report-viewer-howto-use-it-with-reportserver
 ---
 
 # How to Use WPF Report Viewer With Report Server

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressi
 tags: expression,scope,
 published: True
 position: 1
+previous_url: /expressions-scope
 ---
 
 # Expression Scope 

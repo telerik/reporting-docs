@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: reportsource()
 published: True
 position: 12
+previous_url: /html5-report-viewer-reportviewer-methods-reportsource
 ---
 <style>
 table th:first-of-type {

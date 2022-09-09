@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: edit,action,dialog
 published: True
 position: 13
+previous_url: /ui-action-dialog
 ---
 
 # Edit Action Dialog

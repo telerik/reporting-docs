@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: sorting,crosstab,top-level,group
 published: True
 position: 3
+previous_url: /interactive-sorting-action-crosstab-top-level
 ---
 
 # Sorting Crosstab Top-Level Group

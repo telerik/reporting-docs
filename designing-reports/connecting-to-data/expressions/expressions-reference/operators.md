@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressi
 tags: operators
 published: True
 position: 2
+previous_url: /expressions-operators
 ---
 <style>
 table th:first-of-type {

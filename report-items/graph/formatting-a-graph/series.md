@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: series
 published: True
 position: 2
+previous_url: /GraphFormatSeries
 ---
 
 # Series

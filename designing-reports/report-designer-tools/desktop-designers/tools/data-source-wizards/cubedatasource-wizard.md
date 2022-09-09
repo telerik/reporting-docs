@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: cubedatasource,wizard
 published: True
 position: 8
+previous_url: /cubedatasource-wizard
 ---
 
 # CubeDataSource Wizard

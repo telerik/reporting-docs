@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: deploying,web,applications
 published: True
 position: 7
+previous_url: /installation-deploying-on-web-application
 ---
 
 # Deploying Web Applications

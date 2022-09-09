@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/ba
 tags: basic,concepts
 published: True
 position: 1
+previous_url: /table-understanding-table-items
 ---
 
 # Basic Concepts

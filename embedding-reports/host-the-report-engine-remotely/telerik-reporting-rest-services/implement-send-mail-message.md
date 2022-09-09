@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: implement,send,mail,message
 published: True
 position: 7
+previous_url: /telerik-reporting-rest-implement-send-mail-message
 ---
 
 # Implement Send Mail Message

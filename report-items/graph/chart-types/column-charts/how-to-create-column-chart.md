@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/colu
 tags: how,to,create,column,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreateColumnChart
 ---
 
 # How to Create Column Chart

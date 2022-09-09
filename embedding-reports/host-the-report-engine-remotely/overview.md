@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: telerik, reporting, embedding, reports, host, engine, generate, remotely, overview
 published: True
 position: 0
+previous_url: /telerik-reporting-services
 ---
 
 # Generating Reports Remotely Overview

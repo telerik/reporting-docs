@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: pagescrollmodes
 published: True
 position: 2
+previous_url: /html5-report-viewer-api-pagescrollmodes
 ---
 
 # PageScrollModes

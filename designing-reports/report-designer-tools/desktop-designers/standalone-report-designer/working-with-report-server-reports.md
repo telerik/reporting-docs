@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: working,with,report,server,reports
 published: True
 position: 5
+previous_url: /standalone-report-designer-working-with-server-reports
 ---
 
 # Working with Report Server Reports

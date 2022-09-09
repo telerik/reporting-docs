@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: keep,client,alive
 published: True
 position: 2
+previous_url: /telerik-reporting-rest-api-keep-client-alive
 ---
 <style>
 table th:first-of-type {

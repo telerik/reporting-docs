@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,implement,and,use,custom,ireportresolver
 published: True
 position: 4
+previous_url: /WCF-report-service-How-to-add-custom-report-resolver
 ---
 
 # How to Implement and use custom IReportResolver

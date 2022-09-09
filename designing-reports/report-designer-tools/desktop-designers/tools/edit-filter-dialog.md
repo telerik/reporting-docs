@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: edit,filter,dialog
 published: True
 position: 8
+previous_url: /ui-edit-filter
 ---
 
 # Edit Filter Dialog

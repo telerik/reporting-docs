@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: connecting,the,csvdatasource,component,to,a,csv,source
 published: True
 position: 1
+previous_url: /csvdatasource-connecting-the-csvdatasource-component-to-a-csv-data
 ---
 
 # Connecting the CsvDataSource Component to a CSV Source

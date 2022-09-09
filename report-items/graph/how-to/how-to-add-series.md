@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-ad
 tags: how,to,add,series
 published: True
 position: 3
+previous_url: /GraphHowToAddSeries
 ---
 
 # How to add Series

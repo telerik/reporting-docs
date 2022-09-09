@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: formatinfo
 published: True
 position: 2
+previous_url: /telerik-reporting-rest-json-entities-formatinfo
 ---
 <style>
 table th:first-of-type {

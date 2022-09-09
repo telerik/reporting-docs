@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/style-inheritance-and-o
 tags: style,inheritance,and,overriding
 published: True
 position: 3
+previous_url: /style-style-inheritence-priorty-overriding
 ---
 
 # Style Inheritance and Overriding

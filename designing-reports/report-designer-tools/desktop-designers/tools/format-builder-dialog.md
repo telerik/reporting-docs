@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: format,builder,dialog
 published: True
 position: 14
+previous_url: /ui-format-builder
 ---
 
 # Format Builder Dialog

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-gra
 tags: overview
 published: True
 position: 0
+previous_url: /GraphFormatting
 ---
 
 # Formatting a Graph Overview

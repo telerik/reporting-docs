@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: methods
 published: True
 position: 2
+previous_url: /react-report-viewer-api-reference-methods
 ---
 <style>
 table th:first-of-type {

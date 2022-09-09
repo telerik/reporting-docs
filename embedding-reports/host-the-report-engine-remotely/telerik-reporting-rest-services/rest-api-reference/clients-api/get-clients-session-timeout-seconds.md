@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,clients,session,timeout,seconds
 published: True
 position: 3
+previous_url: /telerik-reporting-rest-api-get-clients-session-timeout-seconds
 ---
 
 # Get Clients Session Timeout Seconds

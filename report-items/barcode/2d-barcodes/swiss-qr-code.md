@@ -3,7 +3,7 @@ title: Swiss QR Code
 page_title: Swiss QR Code 
 description: "Learn more about the two-dimensional Swiss QR Code barcode type supported by the Telerik Reporting Barcode report item."
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/swiss-qr-code/overview
-previous_url: /report-items/barcode/barcode-types/2d-barcodes/swiss-qr-code/overview, /report-items/barcode/barcode-types/2d-barcodes/swiss-qr-code/settings
+previous_url: /report-items/barcode/barcode-types/2d-barcodes/swiss-qr-code/overview, /report-items/barcode/barcode-types/2d-barcodes/swiss-qr-code/settings, /report-items-barcode-swiss-qrcode-visual-structure
 tags: telerik, reporting, report, items, barcode, 2d, swiss, qr, code, overview
 published: True
 position: 2
@@ -113,4 +113,3 @@ The `Payment` property contains information about the `Payment` data entity.
 
 * [Swiss Implementation Guidelines QR-bill (PDF)](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
 * [Swiss QR Code Validator](https://www.swiss-qr-invoice.org/validator/)
-

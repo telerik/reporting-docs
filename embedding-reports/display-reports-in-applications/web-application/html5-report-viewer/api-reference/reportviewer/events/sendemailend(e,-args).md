@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: sendemailend(e,,args)
 published: True
 position: 5
+previous_url: /html5-report-viewer-reportviewer-events-sendemailend
 ---
 <style>
 table th:first-of-type {

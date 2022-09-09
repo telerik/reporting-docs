@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc
 tags: how,to,create,ohlc,chart
 published: True
 position: 1
+previous_url: /GraphHowToCreateOhlcChart
 ---
 
 # How to Create OHLC Chart

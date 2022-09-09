@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: overview
 published: True
 position: 0
+previous_url: /configuring-telerik-reporting
 ---
 <style>
 table th:first-of-type {

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: webservicedatasource,wizard
 published: True
 position: 4
+previous_url: /webservicedatasource-wizard
 ---
 <style>
 table th:first-of-type {

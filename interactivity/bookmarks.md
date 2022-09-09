@@ -5,6 +5,7 @@ description: Bookmarks Overview
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/bookmarks/overview
 tags: bookmarks,overview
 published: True
+previous_url: /designing-reports-interactivity-bookmarks
 ---
 
 # Bookmarks Overview

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: sorting,report,details
 published: True
 position: 5
+previous_url: /interactive-sorting-action-report-details
 ---
 
 # Sorting Report Details

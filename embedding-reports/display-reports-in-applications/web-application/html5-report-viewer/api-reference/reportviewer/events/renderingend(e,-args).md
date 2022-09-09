@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: renderingend(e,,args)
 published: True
 position: 10
+previous_url: /html5-report-viewer-reportviewer-events-renderingend
 ---
 <style>
 table th:first-of-type {

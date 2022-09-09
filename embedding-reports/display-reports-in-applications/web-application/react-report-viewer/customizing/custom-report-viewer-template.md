@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: custom,report,viewer,template
 published: True
 position: 0
+previous_url: /react-report-viewer-template
 ---
 
 # Custom Report Viewer Template

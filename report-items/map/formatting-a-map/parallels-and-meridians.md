@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/p
 tags: parallels,and,meridians
 published: True
 position: 1
+previous_url: /MapFormattingParallelsMeridians
 ---
 
 # Parallels and Meridians

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: client,events
 published: True
 position: 6
+previous_url: /html5-mvc-report-viewer-customizing-client-events
 ---
 <style>
 table th:first-of-type {

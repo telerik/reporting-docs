@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: how,to,implement,a,report,definition,storage
 published: True
 position: 5
+previous_url: /how-to-implement-a-report-definition-storage
 ---
 
 # How to implement a report definition storage

@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: pagemode(psm)
 published: True
 position: 10
+previous_url: /html5-report-viewer-reportviewer-methods-pagemode-psm
 ---
 <style>
 table th:first-of-type {

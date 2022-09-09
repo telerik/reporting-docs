@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-ad
 tags: how,to,add,graph,to,report
 published: True
 position: 0
+previous_url: /AddGraphToReport
 ---
 
 # How to add Graph to Report

@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressi
 tags: conversion,functions
 published: True
 position: 3
+previous_url: /expressions-conversion-functions
 ---
 
 # Conversion Functions

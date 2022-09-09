@@ -3,7 +3,7 @@ title: Overview
 page_title: Document Output Overview 
 description: "Learn more about the options for exporting Telerik Reporting reports."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats
-previous_url: /using-reports-in-applications/export-and-configure/export-formats
+previous_url: /using-reports-in-applications/export-and-configure/export-formats, /configuring-rendering-extensions
 tags: telerik, reporting, export, formats, document, output, overview
 published: True
 position: 0

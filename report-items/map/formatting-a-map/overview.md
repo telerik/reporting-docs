@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/o
 tags: overview
 published: True
 position: 0
+previous_url: /MapFormattingAMap
 ---
 
 # Formatting a Map Overview

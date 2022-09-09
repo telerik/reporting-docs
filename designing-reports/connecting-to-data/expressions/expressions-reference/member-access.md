@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressi
 tags: member,access
 published: True
 position: 4
+previous_url: /expressions-member-access
 ---
 
 # Member Access

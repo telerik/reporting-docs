@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/using-styles-to-customi
 tags: using,styles,to,customize,reports
 published: True
 position: 0
+previous_url: /style-using-styles-to-customize-reports
 ---
 
 # Using Styles to Customize Reports

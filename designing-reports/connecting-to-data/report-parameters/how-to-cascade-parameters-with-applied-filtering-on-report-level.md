@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/ho
 tags: how,to,cascade,parameters,with,applied,filtering,on,report,level
 published: True
 position: 5
+previous_url: /designing-reports-parameters-cascading-report-parameters
 ---
 
 # How to Cascade Parameters with applied filtering on Report level

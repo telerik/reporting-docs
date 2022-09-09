@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/barcode/overview
 tags: telerik, reporting, report, items, barcode, overview
 published: True
 position: 0
+previous_url: /report-items-barcode-general
 ---
 
 # Barcode Overview
@@ -22,6 +23,6 @@ The Barcode report item automatically generates barcodes directly from a numeric
 
 ## See Also
  
-* [Getting Started with the Barcode Report Item]({% slug barcode_item_get_started %})  
+* [Getting Started with the Barcode Report Item]({% slug barcode_item_get_started %})
 * [1D Supported Barcodes]({% slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types %})
 * [2D Supported Barcodes]({% slug 2d_barcodes_overview %})

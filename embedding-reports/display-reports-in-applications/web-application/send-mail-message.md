@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: send,mail,message
 published: True
 position: 12
+previous_url: /html5-report-viewer-send-mail
 ---
 
 # Send Mail Message

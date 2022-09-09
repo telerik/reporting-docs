@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: how,to,add,telerik,reporting,rest,web,api,to,web,application
 published: True
 position: 2
+previous_url: /telerik-reporting-rest-host-http-service-using-web-hosting
 ---
 
 # How to Add Telerik Reporting REST Web API to Web Application

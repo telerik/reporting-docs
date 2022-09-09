@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/rendering-and-paging/watermarks
 tags: watermarks
 published: True
 position: 3
+previous_url: /designing-reports-watermarks
 ---
 
 # Watermarks

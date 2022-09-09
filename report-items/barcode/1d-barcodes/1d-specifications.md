@@ -3,7 +3,7 @@ title: Specifications
 page_title: 1D Barcodes Specifications 
 description: "Learn about the common setting and the specifics of the Code128 and GS1-128 one-dimensional barcode types when working with the Telerik Reporting Barcode report item."
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/1d-barcodes
-previous_url: /report-items/barcode/barcode-types/1d-barcodes
+previous_url: /report-items/barcode/barcode-types/1d-barcodes, /report-items-barcode-types1D
 tags: telerik, reporting, report, items, 1d, barcodes, specifications, settings
 published: True
 position: 1
@@ -87,8 +87,6 @@ me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
 
 ## See Also
  
-* [`Telerik.Reporting.Barcode`](/reporting/api/Telerik.Reporting.Barcode)  
-* 
-* [`Telerik.Reporting.Barcodes.Encoder1D`](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D)  
-* 
-* [`ShowText`](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText)
+* [Telerik.Reporting.Barcode](/reporting/api/Telerik.Reporting.Barcode)
+* [Telerik.Reporting.Barcodes.Encoder1D](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D)
+* [ShowText](/reporting/api/Telerik.Reporting.Barcodes.Encoder1D#Telerik_Reporting_Barcodes_Encoder1D_ShowText)

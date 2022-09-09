@@ -6,6 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 position: 0
+previous_url: /html5-webforms-report-viewer-customizing-overview
 ---
 
 # Customizing Overview

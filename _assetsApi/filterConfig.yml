@@ -1,4 +1,4 @@
 apiRules:
 - exclude:
-    uidRegex: ^GoogleAnalytics
+    uidRegex: ^GoogleAnalytics$
     type: Namespace

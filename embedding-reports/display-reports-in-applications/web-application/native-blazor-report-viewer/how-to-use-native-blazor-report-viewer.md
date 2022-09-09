@@ -28,80 +28,86 @@ The following article will guide you on how to use the new Native Blazor Report 
 1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ (or __Telerik.ReportViewer.BlazorNative.Trial__) package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/embedding-reports/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). 
 
 1. Make sure app configuration inside the __Configure__ method of the __Startup.cs__ can serve static files: 
-    
-      ````c#
+
+	````C#
 app.UseStaticFiles();
-app.AddTelerikBlazor();
+	app.AddTelerikBlazor();
 ````
+
 
 1. Add JavaScript and CSS dependencies to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly): 
-    
-      ````html
+
+	````HTML
 <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
 
-<script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js" defer></script>
-@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
-@* <script src="_content/Telerik.ReportViewer.BlazorNative.Trial/js/reporting-blazor-viewer.js" defer></script> *@
+	<script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js" defer></script>
+	@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
+	@* <script src="_content/Telerik.ReportViewer.BlazorNative.Trial/js/reporting-blazor-viewer.js" defer></script> *@
 
-<link href="_content/Telerik.ReportViewer.BlazorNative/css/reporting-blazor-viewer.css" rel="stylesheet" />
-@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
-@* <link href="_content/Telerik.ReportViewer.BlazorNative.Trial/css/reporting-blazor-viewer.css" rel="stylesheet" /> *@
+	<link href="_content/Telerik.ReportViewer.BlazorNative/css/reporting-blazor-viewer.css" rel="stylesheet" />
+	@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
+	@* <link href="_content/Telerik.ReportViewer.BlazorNative.Trial/css/reporting-blazor-viewer.css" rel="stylesheet" /> *@
 ````
 
+
 1. Add [Telerik UI for Blazor Built-in Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__ : 
-    
-      ````html
+
+	````HTML
 <link rel="stylesheet" href="https://blazor.cdn.telerik.com/blazor/3.5.0/kendo-theme-default/all.css" />
 ````
 
+
 1. You can set the project to recognize all Telerik components without explicit __@using__ statements on every __.razor__ file. To achieve this, add the following to your  __~/_Imports.razor__: 
-    
-      ````
+
+	````C#
 @using Telerik.Blazor
-@using Telerik.Blazor.Components
-@using Telerik.ReportViewer.BlazorNative
+	@using Telerik.Blazor.Components
+	@using Telerik.ReportViewer.BlazorNative
 ````
+
 
 1. Wrap the content of the main layout file(by default, the __~/Shared/MainLayout.razor__ file in the Blazor project) with a razor component called __TelerikLayout.razor__:
-    
-      ````html
+
+	````HTML
 @inherits LayoutComponentBase
 
-<TelerikRootComponent>
-    @Body
-</TelerikRootComponent>
+	<TelerikRootComponent>
+		@Body
+	</TelerikRootComponent>
 ````
+
 
 1. Use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. Remember to set the actual __ReportSource__ along with eventual parameters: 
-    
-      ````
+
+	````
 @page "/"
 
-<PageTitle>Report Viewer</PageTitle>
+	<PageTitle>Report Viewer</PageTitle>
 
-<ReportViewer
-    ServiceUrl="https://demos.telerik.com/reporting/api/reports"
-    @bind-ReportSource="@ReportSource"
-    @bind-ScaleMode="@ScaleMode"
-    @bind-ViewMode="@ViewMode"
-    @bind-ParametersAreaVisible="@ParametersAreaVisible"
-    @bind-DocumentMapVisible="@DocumentMapVisible"
-    @bind-Scale="@Scale">
-</ReportViewer>
+	<ReportViewer
+		ServiceUrl="https://demos.telerik.com/reporting/api/reports"
+		@bind-ReportSource="@ReportSource"
+		@bind-ScaleMode="@ScaleMode"
+		@bind-ViewMode="@ViewMode"
+		@bind-ParametersAreaVisible="@ParametersAreaVisible"
+		@bind-DocumentMapVisible="@DocumentMapVisible"
+		@bind-Scale="@Scale">
+	</ReportViewer>
 
-@code {
-    public ScaleMode ScaleMode { get; set; } = ScaleMode.Specific;
-    public ViewMode ViewMode { get; set; } = ViewMode.Interactive;
-    public bool ParametersAreaVisible { get; set; }
-    public bool DocumentMapVisible { get; set; }
-    public double Scale { get; set; } = 1.0;
+	@code {
+		public ScaleMode ScaleMode { get; set; } = ScaleMode.Specific;
+		public ViewMode ViewMode { get; set; } = ViewMode.Interactive;
+		public bool ParametersAreaVisible { get; set; }
+		public bool DocumentMapVisible { get; set; }
+		public double Scale { get; set; } = 1.0;
 
-    public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>
-    {
-        // Add parameters if applicable
-    });
-}
+		public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>
+		{
+			// Add parameters if applicable
+		});
+	}
 ````
+
 
 1. Use the rest of the parameters exposed on the Blazor viewer component to setup its appearance and behavior as desired. 
 

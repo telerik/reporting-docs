@@ -19,7 +19,7 @@ To start using the Graph in the Standalone or the Visual Studio Report Designer 
 * (Standalone Report Designer) To add a Graph to the report by using the Standalone Report Designer: 
 
   1. Open the Standalone Report Designer. 
-  1. Run the required Chart Wizard, for example, **new Bar**, **Column**, **Area**, , or **Others**. 
+  1. Run the required Chart Wizard, for example, **new Bar**, **Column**, **Area**, or **Others**. 
   1. Add a Graph item to the design surface. 
   1. In the **Properties** grid, click the chart elements to edit the properties of the selected element. An alternative way to achieve the same result is to use the ribbon tools of the Standalone Report Designer. 
 
@@ -39,9 +39,8 @@ To start using the Graph in the Standalone or the Visual Studio Report Designer 
   1. Follow the Graph Wizard prompts.
   1. After you complete the instructions of the Wizard, the new Graph item will be created on the design surface. 
 
-
 ## See Also 
 
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Connecting the Graph to Data]({% slug telerikreporting/designing-reports/report-structure/graph/structure %})
 * [Supported Chart Types]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview %})

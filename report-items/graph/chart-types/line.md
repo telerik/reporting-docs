@@ -24,7 +24,7 @@ The following image displays a Line chart that contains three series.
 * __Smooth Line Chart__&mdash;A Line chart that uses curved lines instead of regular ones. 
 * __Stepped Line Chart__&mdash;A Line chart that uses horizontal and vertical lines to connect the data points and creates a step-like structure. 
 
-![Line Types](images/Graph/LineTypes.png)
+![Line Types](images/LineTypes.png)
 
 ## Creating Line Charts
 

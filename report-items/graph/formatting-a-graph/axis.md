@@ -91,12 +91,11 @@ Note that using this feature may ignore some of the scale properties, such as __
 ## See Also
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Structure and Elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) 
-* [GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)  
-* [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)  
-* [LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)  
-* [Scale](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_Scale)  
-* [Scale](/reporting/api/Telerik.Reporting.Scale)  
-* [MajorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MajorStep)  
+* [Structure and Elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
+* [GraphAxis](/reporting/api/Telerik.Reporting.GraphAxis)
+* [LabelFormat](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelFormat)
+* [LabelPlacement](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_LabelPlacement)
+* [Scale](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_Scale)
+* [Scale](/reporting/api/Telerik.Reporting.Scale)
+* [MajorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MajorStep)
 * [MinorStep](/reporting/api/Telerik.Reporting.NumericalScale#Telerik_Reporting_NumericalScale_MinorStep)
-

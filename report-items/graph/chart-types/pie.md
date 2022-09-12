@@ -106,7 +106,7 @@ For Pie charts with many data points, the best approach is to use a combination 
 
 > The algorithm that moves the data point labels, preventing them from overlapping, is activated only when the labels have their [`DataPointLabelAngle`](/reporting/api/Telerik.Reporting.GraphSeriesBase#Telerik_Reporting_GraphSeriesBase_DataPointLabelAngle) set to a multiple of `2*π` radians in degrees, for example, `0`, `360`, and so on. 
 
-![Outside Column Pie Chart](images/Graph/OutsideColumnPieChart.png)
+![Outside Column Pie Chart](images/OutsideColumnPieChart.png)
 
 
 ## Merging Pie Slices 

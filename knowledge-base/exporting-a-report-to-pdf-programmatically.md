@@ -20,13 +20,15 @@ res_type: kb
    
 ## Description
 
-This article explains how to export a report to PDF without the need to go through the web viewer.
+This article explains how to export a report to PDF without the need to go through a report viewer.
 
 ## Solution
 
-You can use the following code snippet to programmatically export the report into **PDF** format from a Web Site or Web Application project:  
+### For ASP.NET Framework
+
+You can use the following code snippet to programmatically export the report into `PDF` format from a Web Site or Web Application project:  
    
-````cs
+	````C#
 void ExportToPDF(Telerik.Reporting.Report reportToExport)
     {
         ReportProcessor reportProcessor = new ReportProcessor();
@@ -51,7 +53,7 @@ void ExportToPDF(Telerik.Reporting.Report reportToExport)
         Response.End();
     }    
 ````
-````vb
+	````vb
 Sub ExportToPDF(ByVal reportToExport As Telerik.Reporting.Report)   
    
         Dim reportProcessor As New ReportProcessor()
@@ -71,3 +73,68 @@ Sub ExportToPDF(ByVal reportToExport As Telerik.Reporting.Report)
     End Sub
 ````
 
+
+### For ASP.NET Core
+
+In ASP.NET Core, the `Response` object does not expose a `BinaryWrite` method, for that reason, the approach will need to change a little.
+We can instead convert the document bytes, of the result object returned by the `RenderReport` method, to a `Base64` string and we may then return it.
+
+	````C#
+[HttpGet]
+        public IActionResult GenerateReportPDF(string reportName)
+        {
+            var reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
+
+            // set any deviceInfo settings if necessary
+            var deviceInfo = new System.Collections.Hashtable();
+
+            var reportSource = new Telerik.Reporting.UriReportSource();
+	    
+            reportSource.Uri = @"C:\Program Files (x86)\Progress\Telerik Reporting Version\Report Designer\Examples\Dashboard.trdp";
+
+            Telerik.Reporting.Processing.RenderingResult result = reportProcessor.RenderReport("PDF", reportSource, deviceInfo);
+
+            var b64 = Convert.ToBase64String(result.DocumentBytes);
+            return new ContentResult() { Content = b64 };
+        }
+````
+
+Then, on the client side, we need to convert that Base64 string back to array, this function may be used for the task
+
+	````JS
+function base64ToArrayBuffer(data) {
+        var binaryString = window.atob(data);
+        var binaryLen = binaryString.length;
+        var bytes = new Uint8Array(binaryLen);
+        for (var i = 0; i < binaryLen; i++) {
+            var ascii = binaryString.charCodeAt(i);
+            bytes[i] = ascii;
+        }
+        return bytes;
+    };
+````
+
+Lastly, we can make an AJAX request to our controller method to get the rendered report, convert the returned Base64 string and then return the rendered report as an attachment using [Blobs](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
+
+	````JS
+$.ajax({
+            method: "GET",
+            url: '@Url.Action("GenerateReportPDF","ControllerName")',
+            async: false,
+            cache: false,
+            data: { reportName }
+        })
+            .done(function(result) {
+                //if the call was successful
+                if (result) {
+                    buffer = base64ToArrayBuffer(result)
+                    var file = new Blob([buffer], { type: "application/pdf" })
+
+                    var link = document.createElement('a')
+                    link.href = window.URL.createObjectURL(file)
+                    link.download = "Report.pdf";
+                    document.body.appendChild(link)
+                    link.click()
+                }
+            })
+````

@@ -25,11 +25,10 @@ To modify an existing Graph title:
 1. Click the Graph title you want to change. The selected title properties are listed in the __Property Browser__.
 1. Update the title properties as required. 
 
-
 ## See Also
  
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [GraphTitle](/reporting/api/Telerik.Reporting.GraphTitle)  
+* [GraphTitle](/reporting/api/Telerik.Reporting.GraphTitle)
 * [Titles](/reporting/api/Telerik.Reporting.Graph#Telerik_Reporting_Graph_Titles)
 
 

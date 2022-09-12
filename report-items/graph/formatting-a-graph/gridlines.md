@@ -31,11 +31,9 @@ To modify major and minor gridlines:
 
 1. Set up the gridlines properties according to your requirements. 
 
-
-
 ## See Also
  
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [MajorGridLineStyle](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_MajorGridLineStyle)  
+* [MajorGridLineStyle](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_MajorGridLineStyle)
 * [MinorGridLineStyle](/reporting/api/Telerik.Reporting.GraphAxis#Telerik_Reporting_GraphAxis_MinorGridLineStyle)
 

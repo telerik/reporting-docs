@@ -9,17 +9,15 @@ published: True
 position: 0
 ---
 
-<style> table { text-align: center; } </style>
-
 # HtmlTextBox Overview
 
 The HtmlTextBox report item enables you to insert HTML-formatted text into a report. 
 
 You can specify the HTML value at design time either through a WYSIWYG editor or through an expression editor, or retrieve it from a data source by using any simple or complex expression that evaluates to correctly formatted HTML. 
 
-| Design View of the HtmlTextBox Editor |
 |:---:|
-| ![The HtmTextBox Editor Design View](images/HtmlTextBox_DesignView.png) |
+|Design View of the HtmlTextBox Editor|
+|![The HtmTextBox Editor Design View](images/HtmlTextBox_DesignView.png)|
 
 ## Key Features 
 

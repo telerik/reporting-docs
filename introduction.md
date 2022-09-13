@@ -83,6 +83,7 @@ The Report Viewers are UI components which are tailored to a specific technology
 |Angular Report Viewer|Web|An Angular component wrapping the HTML5 Report Viewer. 
 |ReactJS Report Viewer|Web|A React component wrapping the HTML5 Report Viewer.
 |Blazor Report Viewer|Web|A Blazor component wrapping the HTML5 Report Viewer. 
+|Native Blazor Report Viewer|Web|A fully native Blazor component that can be used in Blazor applications.
 |WinForms Report Viewer|Desktop|A composite of standard Windows Forms controls targeting WinForms and WPF projects. 
 |WPF Report Viewer|Desktop|A composite of Telerik UI for WPF controls targeting WPF and WinForms projects. 
 |WinUI Report Viewer|Desktop|A composite of Telerik UI for WinUI controls targeting WinUI3 projects. 

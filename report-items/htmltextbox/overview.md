@@ -30,6 +30,6 @@ You can specify the HTML value at design time either through a WYSIWYG editor o
 
 ## See Also
 
-* [Anchor Tags vs. Hyperlink Actions in the HtmlTextBox]({%slug htmltextbox-with-anchor-tag-vs-hyperlink-action%})
+* [(KB Article) Anchor Tags vs. Hyperlink Actions in the HtmlTextBox]({%slug htmltextbox-with-anchor-tag-vs-hyperlink-action%})
 * [(KB Article) Error while Parsing EntityName]({%slug htmltextbox-an-error-occurred-while-parsing-entityname%})
 * [(w3.org) Full List of Special Entities](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent). 

@@ -97,7 +97,9 @@ RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
 
 1. Strip the HTML formatting from the pasted content, because users may paste content that is badly formatted and thus break the HtmlTextBox and its PDF export feature. To achieve this behavior, set the `StripFormattingOptions` property to `All` or to `AllExceptNewLines`.
 
-1. Use the following custom content filter, which will remove unsupported HTML tags. The supported tags are `FONT`, `STRONG`, `B`, `EM`, `I`, `U`, `A`, `OL`, `UL`, `SUB`, `SUP`, `LI`, `DIV`, `SPAN`, `P`, `BR`, `CENTER`.
+1. Use the following custom content filter, which will remove unsupported HTML tags. 
+
+	The supported tags are `FONT`, `STRONG`, `B`, `EM`, `I`, `U`, `A`, `OL`, `UL`, `SUB`, `SUP`, `LI`, `DIV`, `SPAN`, `P`, `BR`, `CENTER`.
 
 	````XML
 <telerik:RadEditor ID="RadEditor1" StripFormattingOptions="AllExceptNewLines" ToolsFile="~/HtmlTextBoxToolsFile.xml" OnClientLoad="editorLoaded" runat="server">

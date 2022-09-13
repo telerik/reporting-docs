@@ -32,7 +32,7 @@ The HtmlTextBox does not support the `table` and `img` tags.
 
 When you import text that contains HTML markup, the data is always parsed by the HtmlTextBox first. Because only a subset of HTML tags is supported, the HTML that is shown in the rendered report may differ from your original HTML. 
 
-Also, according to the HTML specification and the general XML specification, the `&` and `<" and ">` characters are considered as markup delimiters and you have to encode them so that they are treated as regular text. For example, you can escape the `&` character `& amp;` entity. For more information, refer to the [w3.org article](http://www.w3.org/TR/REC-xml/#syntax). 
+Also, according to the HTML specification and the general XML specification, the `&`, `<` and `>` characters are considered as markup delimiters and you have to encode them so that they are treated as regular text. For example, you can escape the `&` character `& amp;` entity. For more information, refer to the [w3.org article](http://www.w3.org/TR/REC-xml/#syntax). 
 
 Any other HTML markup tags will be ignored during the processing of the report. If the HTML represented by the expression in the HtmlTextBox is badly formatted, the HtmlTextBox will throw an exception. Note that all HTML tags are case-insensitive. 
 

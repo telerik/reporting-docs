@@ -9,6 +9,8 @@ published: True
 position: 0
 ---
 
+<style> table { text-align: center; } </style>
+
 # HtmlTextBox Overview
 
 The HtmlTextBox report item enables you to insert HTML-formatted text into a report. 

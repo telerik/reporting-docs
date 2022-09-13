@@ -19,7 +19,7 @@ The Graph is most often used for building powerful OLAP and Pivot charts and pro
 >* As of Telerik Reporting Q2 2013, the [Chart report item has been deprecated]({% slug telerikreporting/designing-reports/report-structure/chart-(obsolete) %}) and is now obsolete. 
 
 ![Area and Column chart from the Employee Sales Online Demo](images/GraphOverview_AreaAndColumn_EmployeeSalesOnlineDemo.png)
-*Area and Column chart from the [EmployeeSales Online Demo](https://demos.telerik.com/reporting/employee-sales)*
+>caption Area and Column chart from the [EmployeeSales Online Demo](https://demos.telerik.com/reporting/employee-sales)
 
 ## Key Features 
 

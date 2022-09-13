@@ -9,13 +9,13 @@ position: 3
 previous_url: /report-items-checkbox
 ---
 
-# Checkbox 
+# Checkbox Report Item Overview
 
 The CheckBox report item is used to display both text and a check mark on a report. 
 
 The following image shows a CheckBox report item with its `CheckAlign` property set to `TopCenter` and its text aligned to `Top` and `left`.  
 
-![](images/checkboxitem1.jpg)
+![A CheckBox report item set to top center and text to top left](images/checkboxitem1.jpg)
 
 ## Expanding and Shrinking
 
@@ -60,7 +60,7 @@ The following image shows the final result.
 ## See Also 
 
 * [Using Embedded Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
-* [Telerik.Reporting.CheckBox](/api/Telerik.Reporting.CheckBox)
-* [CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)
-* [CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)
-* [CheckAlign](/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)
+* [(API) Telerik.Reporting.CheckBox](/api/Telerik.Reporting.CheckBox)
+* [(API) CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)
+* [(API) CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)
+* [(API) CheckAlign](/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)

@@ -44,6 +44,6 @@ We have narrowed down this error to three categories:
 
 - **Session is unavailable** - (ASP<span>.</span>NET Report Viewer only). This can happen if your browser does not accept cookies. In such cases, configuring the [session as cookieless](http://msdn.microsoft.com/en-us/library/aa479314.aspx) would resolve this.
 
-## See Akso
+## See Also
 
 [Design Considerations for Out-proc Session State](../asp-net-report-viewer-outproc).

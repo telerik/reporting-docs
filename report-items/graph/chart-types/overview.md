@@ -30,7 +30,7 @@ For examples of the described chart types, refer to the sample reports in the lo
 | [Area Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview%})|||&#x2713;||
 | [Column Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%})|||&#x2713;||
 | [Pie Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%})|&#x2713;||||
-| [Doughnut Charts](9ed47840-c3ab-48c8-9845-f43066ba981e#choosing-a-chart-type)|&#x2713;||||
+| [Doughnut Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}#pie-chart-variations)|&#x2713;||||
 | [Polar Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview%})|&#x2713;||||
 | [Range Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%})|||&#x2713;|&#x2713;|
 | [Scatter Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|&#x2713;||&#x2713;||
@@ -40,5 +40,5 @@ For examples of the described chart types, refer to the sample reports in the lo
 
 ## See Also 
 
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

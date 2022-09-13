@@ -58,7 +58,6 @@ To move a report item:
 To change the size of a report item: 
 
 1. Click the report item to select it.
-
 1. Click and drag one of the size handles on the edge of the report item to the desired size. 
 
 ![](images/ReportDesign003.png)

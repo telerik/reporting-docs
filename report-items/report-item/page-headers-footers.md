@@ -47,5 +47,5 @@ For more information, refer to the `PageExec` description in the article on [fun
    
 ## See Also
 
-* [PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)
-* [PageFooterSection](/reporting/api/Telerik.Reporting.PageFooterSection)
+* [(API) PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)
+* [(API) PageFooterSection](/reporting/api/Telerik.Reporting.PageFooterSection)

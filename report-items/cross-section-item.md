@@ -9,7 +9,7 @@ position: 4
 previous_url: /report-items-cross-section-item
 ---
 
-# Cross-Section 
+# Cross-Section Report Item Overview
 
 The Cross-section report item is used to display a graphical primitive, such as a vertical line or a rectangle, across one or more report sections. 
 
@@ -75,4 +75,4 @@ Not all rendering extensions [support the Cross-section report item]({% slug tel
 
 ## See Also
 
-* [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+* [Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})

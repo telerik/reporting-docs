@@ -33,8 +33,7 @@ The [Levels](/reporting/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSe
 
 When the report hierarchy is deeper (has more levels) than the number of levels defined in the [Levels](/reporting/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) collection, the style of the last TOC level in the collection will be applied to the remaining TOC entries. 
 
->note When using a report book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the report book, you need to configure a [Report Book Table of Contents](../../report-book/report-book-table-of-contents). 
-
+> When using a report book to combine different reports, each separate TOC will be displayed as part of the report it belongs to. To display a single TOC for all of the reports in the report book, you need to configure a [Report Book Table of Contents]({%slug telerikreporting/designing-reports/report-book/report-book-table-of-contents%}). 
 
 >note TOC navigational links are handled internally as [Bookmark Actions](../actions/bookmark-action). When the report item/section/group does not have a [BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, a unique value will be automatically assigned to it at run-time. If you need to set the [BookmarkId](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) value, make sure that it is unique in the scope of the whole report (report book), otherwise the TOC navigational links may not work correctly. 
 
@@ -106,4 +105,4 @@ You can add a table of contents to the report and click on entries in the table 
 
 ## See Also
 
- * [How to Add a Table of Contents to Report Book]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book%})
+* [How to Add a Table of Contents to Report Book]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book%})

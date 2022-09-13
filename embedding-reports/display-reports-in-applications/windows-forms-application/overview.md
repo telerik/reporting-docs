@@ -10,13 +10,13 @@ previous_url: /winforms-report-viewer
 ---
 <style>
 table th:first-of-type {
-    width: 20%;
+	width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 30%;
+	width: 30%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
@@ -29,7 +29,7 @@ The Windows Forms Report Viewer control displays report documents that are gener
 The Windows Forms Report Viewer renders buttons and inputs in the dedicated toolbar to allow the following interactions with the currently loaded report:
 
 |Button or Input|Action
-|:---           |:---
+|:---|:---
 |__Navigate back in history__|Navigates to a previous report after the **Navigate to report** interactive action was triggered. 
 |__Navigate forward in history__|Navigates to a forward report after the **Navigate back** was used.
 |__Stop__|Cancels the loading of the current report if the chosen parameters make it too heavy. 
@@ -62,7 +62,7 @@ The Windows Forms Report Viewer renders buttons and inputs in the dedicated tool
 
 The Windows Forms Report Viewer control requires an implementation as a composite of standard Windows Forms controls. 
 
-> The toolbar of the Windows Forms Report Viewer is not customizable. To introduce custom commands or strip existing commands, hide the built-in toolbar and use the [API](/reporting/api/Telerik.Report Viewer.WinForms.Report Viewer) to add a custom UI that triggers the commands on the Viewer. 
+> The toolbar of the Windows Forms Report Viewer is not customizable. To introduce custom commands or strip existing commands, hide the built-in toolbar and use the [API](/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer) to add a custom UI that triggers the commands on the Viewer. 
 
 Depending on the configuration of the Viewer, the report generates its pages through the [Telerik Reporting Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}) as vector or raster images. 
 
@@ -77,14 +77,14 @@ To process and render the report, use any of the following locations:
 When using Windows Forms Report Viewer on a machine with the Windows Vista (and later) operating system, and with a DPI scale factor higher than 96, the form content (labels, buttons, rendered report image, and so on) may render fuzzy, pixelated, or other types of visual artifacts. The reason for this behavior is that the application in which you are using the Windows Forms Report Viewer is not declared as DPI-aware.
 
 It is recommended that you declare a DPI-aware application by adding a `dpiAware` element to its application manifest:
-    
-````xml
+
+````XML
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" >
-  <asmv3:application>
-    <asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
-      <dpiAware>True</dpiAware>
-    </asmv3:windowsSettings>
-  </asmv3:application>
+	<asmv3:application>
+	<asmv3:windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">
+		<dpiAware>True</dpiAware>
+	</asmv3:windowsSettings>
+	</asmv3:application>
 </assembly>
 ````
 

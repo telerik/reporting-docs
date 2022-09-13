@@ -9,7 +9,7 @@ position: 0
 previous_url: /report-items-html-text-box
 ---
 
-# HtmlTextBox Overview
+# HtmlTextBox Report Item Overview
 
 This document describes the HtmlTextBox report item, which you can style through HTML tags and CSS attributes. 
 

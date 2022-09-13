@@ -9,7 +9,7 @@ position: 0
 previous_url: /report-items-barcode-general
 ---
 
-# Barcode Overview
+# Barcode Report Item Overview
 
 The Barcode report item automatically generates barcodes directly from a numeric or character data. 
 

@@ -27,6 +27,5 @@ To serve a resource from the CDN, you can construct the URL as follows:
 https://reporting.cdn.telerik.com/**Version**/js/**NameOfFile**
 
 For example:
-https://reporting.cdn.telerik.com/16.2.22.914/js/webReportDesigner.min.js
-
+`https://reporting.cdn.telerik.com/16.2.22.914/js/webReportDesigner.min.js`
 

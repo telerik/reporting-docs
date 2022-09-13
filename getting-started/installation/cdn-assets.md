@@ -10,8 +10,8 @@ position: 21
 
 # Telerik Report Viewer and Telerik Web Report Designer Resources
 
-In order to run any of the HTML5-based report viewers, you need to add a reference to the JavaScript file of the viewer.
-When it comes to the Web Report Designer, in addition to the viewer's script,
+In order to run any of the [HTML5-based report viewers]({%slug telerikreporting/embedding-reports/display-reports-in-applications/overview%}), you need to add a reference to the JavaScript file of the viewer.
+When it comes to the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), in addition to the viewer's script,
 you also have to add the designer's scripts.
 
 ## Previous Approach
@@ -30,8 +30,3 @@ For example:
 https://reporting.cdn.telerik.com/16.2.22.914/js/webReportDesigner.min.js
 
 
-
-## See Also 
-
-* [Restoring NuGet Packages in Your CI Workflow]({% slug using-nuget-keys %})
-* [NuGet V2 Feed Error about Returned Unexpected 401 Status Code]({% slug nuget-feed-returned-unexpected-401-status-error %})

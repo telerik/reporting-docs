@@ -14,10 +14,6 @@ The HtmlTextBox enables you to control the style of its text presentation by sup
 
 ## Supported HTML Tags
 
-The HtmlTextBox does not support the `table` and `img` tags. 
-* Use the native Reporting [Table, List, and Crrostab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) report items instead of `table`, and the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item instead of `img`. 
-* The HtmlTextBox also supports custom approaches for rendering HTML as an image with a third-party tool and using the image with the PictureBox item. 
-
 The following `HtmlTextBoxVarious` formatting options are available and provide control over the HtmlTextBox text presentation:
 
 * Font, color (`<font>`), and size (relative size against the font size of the item). The default size value is `3` out of the 1-7 range.
@@ -26,6 +22,10 @@ The following `HtmlTextBoxVarious` formatting options are available and provide
 * HyperLink (`<a href target>`).
 * Lists (`<ol>`, `<ul>`, and `<li>`).
 * Text organization in paragraphs (`<div>`, `<span>`,`<p>`, `<br>`, and `<center>`).
+
+The HtmlTextBox does not support the `table` and `img` tags. 
+
+* Use the native Reporting [Table, List, and Crrostab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) report items instead of `table`, and the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item instead of `img`. 
 
 
 ## Supported CSS Attributes
@@ -45,5 +45,3 @@ The HtmlTextBox supports the following CSS attributes for styling its text:
 * `font-family`, `font-size`, `font-weight`
 * `padding`, `padding-bottom`, `padding-top`, `padding-right`, `padding-left`
 * `color`
-
-

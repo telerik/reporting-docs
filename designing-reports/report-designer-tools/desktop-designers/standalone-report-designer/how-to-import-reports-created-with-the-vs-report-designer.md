@@ -25,7 +25,7 @@ Should you need to import your existing reports created with the Visual Studio R
 
 1. Open the Report Designer and click on __Open Report...__ 
 
-1. In the Open dialog window, select __.NET Report Library__ from the file type combobox. 
+1. In the Open dialog window, select __.NET Report Library__ from the file type combobox. The assembly(.DLL) file of the report library, when built, should be selected here. For example: `CSharp.ReportLibrary.dll`
 
 1. Navigate to your existing.NET report library and click __Open__. The Import Report Wizard is started. 
 

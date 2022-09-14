@@ -22,29 +22,29 @@ res_type: kb
 	</tbody>
 </table>
 
-## Description  
+## Description
 
-This article explains how to change the ReportSource of the SubReport based on Main Report's Data.  
+This article explains how to change the ReportSource of the SubReport based on Main Report's Data.
   
 ## Solution  
 
-You can use a [user function](../expressions-user-functions) in a [binding](../expressions-bindings) to the SubReport item's ReportSource property. The function should return a valid [ReportSource object](../report-sources) that wraps a report - the subreport.
+You can use a [User Function](../expressions-user-functions) in a [Binding](../expressions-bindings) to the SubReport item's ReportSource property. The function should return a valid [ReportSource object]({% slug telerikreporting/designing-reports/report-sources/overview%}) that wraps a report - the subreport.
 
-For example, the following user function:    
+For example, the following user function:
 
-```cs
+````CS
 public static ReportSource SetReportSource(string field)
-  {
-      var TRS = new TypeReportSource();
-      TRS.Parameters.Add("Parameter1", field);
-      if (field.ToLower() == "yes")
-          TRS.TypeName = typeof(SubReport1).AssemblyQualifiedName;
-      else
-          TRS.TypeName = typeof(SubReport2).AssemblyQualifiedName;
-      return TRS;
-  }
-```
-  
+{
+	var TRS = new TypeReportSource();
+	TRS.Parameters.Add("Parameter1", field);
+	if (field.ToLower() == "yes")
+		TRS.TypeName = typeof(SubReport1).AssemblyQualifiedName;
+	else
+		TRS.TypeName = typeof(SubReport2).AssemblyQualifiedName;
+	return TRS;
+}
+````
+
 You should set the following Binding to the SubReport item in the Main report:
 
 **Property path:** ReportSource

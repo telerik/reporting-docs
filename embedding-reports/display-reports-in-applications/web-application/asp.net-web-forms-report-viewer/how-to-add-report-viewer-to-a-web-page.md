@@ -26,26 +26,26 @@ To use Telerik Reports in web application, you need the Web report viewer:
 	>The http handler is automatically registered in the web.config only when the report viewer control is dropped from the Toolbox to the design surface of a web form. If you drop the report viewer in the text editor (source view) or add it to the web form programatically, you should manually register the http handler using the xml markup below, where x.x.x.x is your Telerik Reporting assembly version. 
 
 	In the `<system.web>`/`<httpHandlers>` section: 
-	     
+
 	````XML
 <system.web>
-    ....
-        <httpHandlers>
-              <add path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"/>
-        </httpHandlers>
-    ....
-    </system.web>
+	....
+		<httpHandlers>
+			<add path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be"/>
+		</httpHandlers>
+	....
+	</system.web>
 ````
 
 	In the `<system.webServer>`/`<handlers>` section: 
 	
 	````XML
 <system.webServer>
-    	<handlers>
-    		<add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode"/>
-    	</handlers>
-    	<validation validateIntegratedModeConfiguration="false"/>
-    </system.webServer>
+		<handlers>
+			<add name="Telerik.ReportViewer.axd_*" path="Telerik.ReportViewer.axd" verb="*" type="Telerik.ReportViewer.WebForms.HttpHandler, Telerik.ReportViewer.WebForms, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" preCondition="integratedMode"/>
+		</handlers>
+		<validation validateIntegratedModeConfiguration="false"/>
+	</system.webServer>
 ````
 
 
@@ -64,7 +64,7 @@ In the __Page_Load__ event handler you create an instance report source and set 
 
 ## See Also
 
-* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})[](66CD7D60-7708-42D5-8BB4-506676E8679E)
+* [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
 
 * [ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
 

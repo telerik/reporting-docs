@@ -3,7 +3,7 @@ title: Report Globalization
 page_title: Report Globalization 
 description: Report Globalization
 slug: telerikreporting/designing-reports/report-globalization
-previous_url: /designing-reports/report-globalization, /designing-reports-report-globalization
+previous_url: /designing-reports/report-globalization
 tags: report,globalization
 published: True
 position: 11

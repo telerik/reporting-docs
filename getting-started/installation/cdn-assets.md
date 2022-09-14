@@ -18,14 +18,14 @@ you also have to add the designer's scripts.
 
 You could serve the files from the Telerik Reporting REST service or add them locally to your project by coping them from the installation folder
 of Telerik Reporting: 
-C:\Program Files (x86)\Progress\Telerik Reporting **Version**\Html5
+C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5
 
 ## Current Recommendation
 
 Now, these resources are served also by the Teleik Reporting CDN and we recommend it as a first-choice option.
 To serve a resource from the CDN, you can construct the URL as follows:
-https://reporting.cdn.telerik.com/**Version**/js/**NameOfFile**
+https://reporting.cdn.telerik.com/{{site.buildversion}}/js/**NameOfFile**
 
 For example:
-`https://reporting.cdn.telerik.com/16.2.22.914/js/webReportDesigner.min.js`
+`https://reporting.cdn.telerik.com/{{site.buildversion}}/js/webReportDesigner.min.js`
 

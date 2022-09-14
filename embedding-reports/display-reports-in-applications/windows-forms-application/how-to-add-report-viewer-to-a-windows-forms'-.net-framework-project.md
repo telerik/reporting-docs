@@ -50,7 +50,6 @@ If the selected engine is __REST Service__ additionally it will do the following
 * Register all the needed NuGet packages for the REST service. 
 
 	>In some cases the solution must be rebuilt in order to restore the NuGet packages and start the REST service project correctly. 
-   
 
 If the current application has to be declared as DPI-aware, an additional element needs to be added to the application manifest file, as explained in [Declaring the application as DPI-aware]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}#declaring-the-application-as-dpi-aware). 
 
@@ -58,7 +57,7 @@ If the current application has to be declared as DPI-aware, an additional elemen
 
 * [How to: Add New Project Items](https://msdn.microsoft.com/en-us/library/w0572c5b%28v=vs.100%29.aspx)
 
-* [How to Add manually report viewer to a Windows Forms'.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%})[](66CD7D60-7708-42D5-8BB4-506676E8679E)
+* [How to Add manually report viewer to a Windows Forms'.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project%})
 
 * [Windows Forms Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 

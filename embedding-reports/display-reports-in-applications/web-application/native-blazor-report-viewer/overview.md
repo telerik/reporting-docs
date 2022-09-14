@@ -89,4 +89,4 @@ The initial release of the Native Blazor Report Viewer component is missing the 
 
 ## Demo
 
-The complete example can be found in the installation folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting __Version__\Examples\CSharp\CSharp.BlazorNativeExample.VS2022.sln. 
+The complete example can be found in the installation folder of Telerik Reporting: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\CSharp.BlazorNativeExample.VS2022.sln`. 

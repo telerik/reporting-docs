@@ -21,6 +21,8 @@ With the official Q1 2014 release of Telerik Reporting you will have to disable 
 
 You will find the XAML files with the implicit styles in {Telerik Reporting installation path}/Wpf/__Themes__/_{Theme Name}_. 
 
+The available themes are listed in the Telerik UI for WPF article [Themes Suite](https://docs.telerik.com/devtools/wpf/styling-and-appearance/themes-suite/available-themes). 
+
 This article explains details on using implicit styles with the WPF Report Viewer and covers the following topics: 
 
 * [Applying Report Viewer theme globally in your application](#applying-report-viewer-theme-globally-in-your-application)
@@ -82,7 +84,7 @@ We will apply implicit styles for the Vista theme in our example project. Having
 * In the Themes folder of the project add the respective Report Viewer theme (in our case Vista) from __WPF/Themes__ folder.
 
 * The next step is to merge these ResourceDictionaries in the App.xaml file:
-    
+
 	````XML
 <Application x:Class="WpfApplication1.App"
 			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

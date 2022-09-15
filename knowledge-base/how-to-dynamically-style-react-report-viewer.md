@@ -37,7 +37,7 @@ Then, whenever we update the styles state, the page will be updated and the new 
 
 For example, we can hide the report viewer through a button with the following code:
 
-````JS
+````JavaScript
 import React, { useState } from 'react';
 import { TelerikReportViewer } from '@progress/telerik-react-report-viewer/dist/cjs/main';
 

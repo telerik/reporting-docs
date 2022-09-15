@@ -13,7 +13,7 @@ previous_url: /wpf-report-viewer-intro
 
 The WPF Report Viewer allows developers to deliver reports produced by Telerik Reporting to any rich application developed with WPF. 
 
-  ![WPF Report Viewer](images/WpfViewer_Windows11SystemTheme.png)
+  ![WPF Report Viewer with Windows11 System theme](images/WpfViewer_Windows11SystemTheme.png)
 
 The toolbar of the WPF Report Viewer provides basic functionality for interacting with the currently-loaded report: 
 

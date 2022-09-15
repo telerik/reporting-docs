@@ -28,8 +28,7 @@ res_type: kb
 ## Description
 
 In certain cases, one might want to change the styling of the React Report Viewer widget dynamically.
-Be it based on user interaction after the report viewer has loaded, or based on specific user selections, or etc., the styles can be controlled
-through the `viewerContainerStyle` property. 
+The styles can be controlled through the `viewerContainerStyle` property, even in run-time.
 
 ## Solution
 

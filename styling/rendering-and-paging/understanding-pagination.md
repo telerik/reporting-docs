@@ -47,7 +47,7 @@ You can change page size by changing the __PaperSize.Height__ and __PaperSize.Wi
 
 The __PaperSize.Height__  can be set to be undetermined through the __ContinuousPaper__ property. As a result the page will use all PageSettings properties, excluding __PaperSize.Height__  property. The height of the page will be determined by the height of the content. 
 
-By design, if the remaining part of the document is less than 1% of single-column width, this part will not be displayed. For example, if you add a textbox whose width is equal the to the report's width and you set a border to it, the right border will not be displayed in Print Preview mode. 
+By design, if the remaining part of the document is less than 1% of single-column width, this part will not be displayed. For example, if you add a textbox whose width is equal to the report's width and you set a border to it, the right border will not be displayed in Print Preview mode. 
 
 ### Margins
 
@@ -74,9 +74,13 @@ If the report body cannot fit in the available page width, a new page will be ad
 >caution If every other page in a report seems to be blank, the most probable reason is that a report item is stretching over the right page margin (appears over the vertical red line in report designer) and in case it has no background or border, you will not be able to detect it, but it is still there and is causing a new page to be created. 
 
 
-In the vertical direction, by default sections are not split across different pages, unless their KeepTogether property is set to false. If you want to force a page break before or after a section, use the section’s PageBreak property. 
+In the vertical direction, by default sections are not split across different pages. Soft page break is an instrument to cut the report content and continue on the next page. Here are the items with their respective properties that enable inserting a soft page break.
 
-Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction and is controlled using the  [Telerik.Reporting.TableGroup.PageBreak](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_PageBreak) property. 
+* If you want to force a page break before or after a section, use the section’s `PageBreak` property. 
+
+* Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction and is controlled using the  [Telerik.Reporting.TableGroup.PageBreak](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_PageBreak) property. 
+
+* Set the `KeepTogether` property of a Report item or section or `GroupKeepTogether` of a Report group to `false` to allow it to be split during the rendering.
 
 In older Telerik Reporting versions, simple report items (i.e. non-container items) are always kept together on a page if possible. If not, they are rendered at the beginning of the next page. If they still cannot fit, because they are longer than a whole page, they are split. The PictureBox, Shape and Chart items are always kept together. __In recent Telerik Reporting versions all items can be split between pages, if they do not fit in__.
 
@@ -89,7 +93,7 @@ By default, Table item is kept together. To force nested table to break set Keep
 >Example: Report group has GroupKeepTogether=FirstDetail, this means that the summary height of the group header, height of all child group headers (if any) and height of the first detail should be able to fit on a single page in order for the KeepTogether algorithm to work and move the whole Group on a new page. 
 
 
-##Horizontal Paging
+## Horizontal Paging
 
 If the report spans over several pages in width then its sections are stretched from the left edge of the left-most page’s printable area to the right edge of the right-most page’s printable area, as displayed in the following diagram:   
 

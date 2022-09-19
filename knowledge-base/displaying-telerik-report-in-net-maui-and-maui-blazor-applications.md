@@ -62,85 +62,73 @@ as well as a centralized storage for the reports and various ways to organize an
 1. Firstly, you need to create the .NET Maui app:
 2. Then you can directly add the pure Html5 Report Viewer through a Web View. For example:
 
-
 	````HTML
-  <WebView HeightRequest="600"
-                     WidthRequest="800">
-                <WebView.Source>
-                    <HtmlWebViewSource>
-                        <HtmlWebViewSource.Html>
-                            <![CDATA[
-                <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Telerik HTML5 Report Viewer Demo</title>
+<WebView HeightRequest="600" WidthRequest="800">
+		<WebView.Source>
+			<HtmlWebViewSource>
+				<HtmlWebViewSource.Html>
+					<![CDATA[
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title>Telerik HTML5 Report Viewer Demo</title>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
+			<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
+			<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
+			<style>
+				body {
+					font-family: Verdana, Arial, sans-serif;
+					margin: 5px;
+				}
+			
+				#reportViewer1 {
+				. . .
+				}
+			</style>
+		</head>
+		<body>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<div id="reportViewer1">
+				loading...
+			</div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$("#reportViewer1")
+						.telerik_ReportViewer({
+							serviceUrl: "https://demos.telerik.com/reporting/api/reports/",
+							reportSource: {
+								//parameters: {}
+								//parameters: { Year: [2001, 2003, 2004] }
+							},
+							// Report Server connection configuration
+							// If Report Server is used instead of hosting a REST Service, comment out 'serviceUrl' and 'reportSource' above
+							// uncomment 'reportServer' and 'reportSource' below
+							//reportServer: {
+							//    url: "http://report-server-host:83",
+							//    username: "admin",
+							//    password: "adminpass"
+							//},
+							//reportSource: {
+							//    // For Report Server, use "{Category}/{ReportName}"
+							//    report: "Samples/Dashboard"
+							//},
+						});
+				});
+			</script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
-    <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
-
-    <script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
-
-    <style>
-        body {
-            font-family: Verdana, Arial, sans-serif;
-            margin: 5px;
-        }
-
-        #reportViewer1 {
-         . . .
-        }
-    </style>
-</head>
-<body>
-
-    <div id="reportViewer1">
-        loading...
-    </div>
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            $("#reportViewer1")
-                .telerik_ReportViewer({
-                    serviceUrl: "https://demos.telerik.com/reporting/api/reports/",
-                    reportSource: {
-                        //parameters: {}
-                        //parameters: { Year: [2001, 2003, 2004] }
-                    },
-                    // Report Server connection configuration
-                    // If Report Server is used instead of hosting a REST Service, comment out 'serviceUrl' and 'reportSource' above
-                    // uncomment 'reportServer' and 'reportSource' below
-                    //reportServer: {
-                    //    url: "http://report-server-host:83",
-                    //    username: "admin",
-                    //    password: "adminpass"
-                    //},
-                    //reportSource: {
-                    //    // For Report Server, use "{Category}/{ReportName}"
-                    //    report: "Samples/Dashboard"
-                    //},
-                });
-        });
-    </script>
-
-</body>
-</html>
-                ]]>
-                        </HtmlWebViewSource.Html>
-                    </HtmlWebViewSource>
-                </WebView.Source>
-            </WebView>
+		</body>
+	</html>
+	]]>
+				</HtmlWebViewSource.Html>
+			</HtmlWebViewSource>
+		</WebView.Source>
+	</WebView>
 ````
 
-
 You can also put the page of the viewer into a separate html file and refer it into the web view.
-
 
 ## Embedding Telerik Reporting into a .NET MAUI Blazor App 
 
@@ -151,57 +139,53 @@ folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting V
  1. Create the Maui Blazor app:
  2.  Add the Telerik.ReportViewer.Blazor NuGet package
  3.  In the wwwroot -> index.html, add the following scripts 
- 
- 
-   ````JS
+  
+	````JavaScript
 <head>
-…
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
-<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
-</head>
-<body>
 	…
-<script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
-
-</body>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
+		<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
+	</head>
+	<body>
+	…
+		<script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
+	</body>
 ````
 
 
 4. Add the viewer to the Index.razor page:
-   ````HTML
+
+	````HTML
 @page "/"
-@using Telerik.ReportViewer.Blazor
-
-
-<h1>Telerik Reporting Blazor Report Viewer</h1>
-
-<style>
-    .trv-report-viewer {
-        width: 85%;
-        height: 600px;
-        padding-right: 50px;
-    }
-</style>
-
-<link rel="stylesheet" href="https://unpkg.com/@@progress/kendo-theme-default@5.0.1/dist/all.css" />
-
-<ReportViewer @ref="reportViewer1"
-              ViewerId="rv1"
-              ServiceUrl="https://demos.telerik.com/reporting/api/reports"
-              ReportSource="@(new ReportSourceOptions
-                              {
-                                  Report = "Conference report.trdx",
-                                                })"
-              Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
-              ScaleMode="@(ScaleMode.FitPage)"
-              Scale="1.0" />
-
-                              @code {
-    ReportViewer reportViewer1;
-}
+	@using Telerik.ReportViewer.Blazor
+	
+	<h1>Telerik Reporting Blazor Report Viewer</h1>
+	
+	<style>
+		.trv-report-viewer {
+			width: 85%;
+			height: 600px;
+			padding-right: 50px;
+		}
+	</style>
+	
+	<link rel="stylesheet" href="https://unpkg.com/@@progress/kendo-theme-default@5.0.1/dist/all.css" />
+	
+	<ReportViewer @ref="reportViewer1"
+		ViewerId="rv1"
+		ServiceUrl="https://demos.telerik.com/reporting/api/reports"
+		ReportSource="@(new ReportSourceOptions
+						{
+							Report = "Conference report.trdx",
+											})"
+		Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
+		ScaleMode="@(ScaleMode.FitPage)"
+		Scale="1.0" />
+		
+	@code {
+		ReportViewer reportViewer1;
+	}
 ````
  
 
@@ -210,6 +194,4 @@ Both projects can be found in our GitHub repository:
 
 - [Telerik Reporting in .NET Maui project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMaui)
 - [Telerik Reporting in .NET Maui Blazor project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMauiBlazor)
-
- 
-
+- 

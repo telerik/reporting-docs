@@ -14,7 +14,7 @@ The Map report item is a native Telerik Reporting item which enables you to visu
 
 The data may be presented in different formats that is determined by the [chosen Map Type]({%slug telerikreporting/designing-reports/report-structure/map/map-types%}).
 
-![An image of a Choropleth Map](images/Map/MapOverview-Choropleth.png)
+![An image of a Choropleth Map](images/Map/MapOverview-Choropleth-01.png)
 
 ## Key Features 
 

@@ -67,7 +67,7 @@ To add new `ShapeMapSeries` instance to the Map:
 
      >The engine will join the analytical data set with the spatial data set, preserving all the records from the spatial data set. In terms of SQL, if the spatial data set is `left` and the analytical data set is `right`, the processing engine will produce a [left outer join](http://en.wikipedia.org/wiki/Join_(SQL)#Left_outer_join). 
 
-     1. To make the boundaries of the data points more distinctive from each other, apply additional styling. 
+1. To make the boundaries of the data points more distinctive from each other, apply additional styling. 
 
 When all the properties are set, the `ShapeMapSeries` instance will look similar to the following one in the __Property Grid__: 
 

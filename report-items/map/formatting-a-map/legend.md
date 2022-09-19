@@ -72,20 +72,20 @@ The automatic sizing partially depends on the positioning of the legend as follo
 
 * Relatively positioned&mdash;The supported options are `Center`, `LeftTop`, `LeftCenter`, `LeftBottom`, `RightTop`, `RightCenter`, `RightBottom`. 
 
-  The width is absolute if set. Otherwise, the legend can grow horizontally. The legend can stretch up to the width of the plot area when `IsInsidePlotArea = True` and no more than half of the map width when `IsInsidePlotArea = False`. 
-  
-  The height is taken into account only if all items can fit in the provided space. Otherwise, the legend grows vertically, stretching to the limits of the map at maximum. The ordering of the items is "down then across", forming columns. 
-  
+	The width is absolute if set. Otherwise, the legend can grow horizontally. The legend can stretch up to the width of the plot area when `IsInsidePlotArea = True` and no more than half of the map width when `IsInsidePlotArea = False`. 
+
+	The height is taken into account only if all items can fit in the provided space. Otherwise, the legend grows vertically, stretching to the limits of the map at maximum. The ordering of the items is "down then across", forming columns. 
+
 * Relatively positioned&mdash;The supported values are `TopLeft`, `TopCenter`, `TopRight`, `BottomLeft`, `BottomCenter`, `BottomRight`. 
 
-  The height is absolute if set. Otherwise, the legend can grow vertically. The legend can stretch up to the height of the plot area when `IsInsidePlotArea = True` and no more than half of the map height when `IsInsidePlotArea = False`. 
-  
-  The width is taken into account only if all items can fit in the provided space. Otherwise, the legend grows horizontally, stretching to the limits of the map at maximum. The ordering of the items is "across then down", forming rows. 
+	The height is absolute if set. Otherwise, the legend can grow vertically. The legend can stretch up to the height of the plot area when `IsInsidePlotArea = True` and no more than half of the map height when `IsInsidePlotArea = False`. 
+
+	The width is taken into account only if all items can fit in the provided space. Otherwise, the legend grows horizontally, stretching to the limits of the map at maximum. The ordering of the items is "across then down", forming rows. 
 
 ## See Also
  
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [(API) MapLegend](/reporting/api/Telerik.Reporting.MapLegend)  
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [(API) MapLegend](/reporting/api/Telerik.Reporting.MapLegend)
 * [(API) Legends](/reporting/api/Telerik.Reporting.Map#Telerik_Reporting_Map_Legends) 
 * [Structure and Elements of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
 * [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

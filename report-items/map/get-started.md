@@ -43,6 +43,13 @@ The simplest way to add a __Map__ item to your report is to run the Map Wizard. 
 
 ## See Also
 
+* [(KB) Set Up Maps with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
+* [(KB) Add LocationMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%})
+* [(KB) Add ShapeMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
+* [(KB) Create Maps with BarCharts and CSV Data Sources]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})
+* [(KB) Add a Choropleth Map to the Report with the Choropleth Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-choropleth-to-report%})
+* [(KB) Add a Choropleth Map to the Report with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
+* [(KB) Create Maps with Custom Polygons]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-custom-polygons%})
+* [(KB) Set Up a Map Manually]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-manually%})
 * [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* [Connecting the Map to Data]({% slug telerikreporting/designing-reports/report-structure/map/connecting-to-data %})

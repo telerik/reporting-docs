@@ -36,8 +36,9 @@ and the [Blazor Report Viewer]({% slug telerikreporting/embedding-reports/displa
 
 ## Visual Studio Requirements
 If you develop on Windows, you will need the latest version of Visual Studio. 
-You can make a new installation of Visual Studio or modify your current installation and install the .NET Multi-platform 
-App UI development workload with its default optional installation options.
+You can make a new installation of Visual Studio or modify your current installation and install the .NET Multi-platform
+App UI development workload with its default installation options.
+The minimum version is 17.3.
 
 If you develop on Mac, then you will need Visual Studio 2022 for Mac 17.4 Preview. 
 Note that .NET MAUI apps that target Windows can only be launched and debugged using Visual Studio 2022.
@@ -131,13 +132,12 @@ as well as a centralized storage for the reports and various ways to organize an
 You can also put the page of the viewer into a separate html file and refer it into the web view.
 
 ## Embedding Telerik Reporting into a .NET MAUI Blazor App 
-
-For this example, we will use the the Blazor Report Viewer and the approach from the How to Use Blazor Report Viewer. 
+[How to Use Blazor Report Viewer]({% slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer %}). 
 You may also check our Native Blazor Report Viewer released in R3 2022. An example can be found in the installation
 folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting Version\Examples\CSharp\CSharp.BlazorNativeExample.VS2022.sln.
 
  1. Create the Maui Blazor app:
- 2.  Add the Telerik.ReportViewer.Blazor NuGet package
+ 2.  Add the `Telerik.ReportViewer.Blazor NuGet` package
  3.  In the wwwroot -> index.html, add the following scripts 
   
 	````JavaScript
@@ -154,7 +154,7 @@ folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting V
 ````
 
 
-4. Add the viewer to the Index.razor page:
+4. Add the viewer to the `Index.razor` page:
 
 	````HTML
 @page "/"

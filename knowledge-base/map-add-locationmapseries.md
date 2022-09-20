@@ -5,7 +5,7 @@ description: "Learn how to add a LocationMapSeries instance to the Map report it
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item
 tags: telerik, reporting, map, report, item, add, locationmapseries, instance
 previous_url: /MapHowToAddLocationMapSeriesToTheMapItem, /report-items/map/how-to/how-to-add-locationmapseries-to-the-map-item
-published: True
+res_type: kb
 ---
 
 ## Environment

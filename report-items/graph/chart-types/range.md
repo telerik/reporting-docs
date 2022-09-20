@@ -24,7 +24,7 @@ The following image displays a plain Range chart with one Range Area series:
 * __Bar range__&mdash;The Bar Range chart uses bars to represent the range. 
 * __Smooth range__&mdash;A Smooth Range chart uses curved lines to connect data points rather than straight ones.
 
-## Creating Area Charts
+## Creating Range Charts
 
 In this section, you will create a Range Area chart.
 

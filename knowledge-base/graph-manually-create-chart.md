@@ -10,19 +10,19 @@ res_type: kb
 ---
 <style>
 table th:first-of-type {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(3) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(4) {
-    width: 20%;
+	width: 20%;
 }
 table th:nth-of-type(5) {
-    width: 20%;
+	width: 20%;
 }
 </style>
 
@@ -44,7 +44,7 @@ How can I manually create a chart in the Graph?
 
 ## Solution 
 
-If you choose not to use the Graph Wizard but create your chart manually, first get acquainted with the [visual structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) and [data-connection capabilities]({%slug telerikreporting/designing-reports/report-structure/graph/connecting-to-data%}) of the Graph. 
+If you choose not to use the `Graph Wizard` but create your chart manually, first get acquainted with the [Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}) of the Graph. 
 
 Then, check out the following table that shows the basic configuration for each chart type: 
 
@@ -59,5 +59,3 @@ Then, check out the following table that shows the basic configuration for each 
 | [Range]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview %}) | _Name_: SG1<br/>_Grouping_: None or {expression} | _Name_: CG1<br/>_Grouping_: Empty or {expression} | _Type_: Cartesian<br/>_Name_: CS1<br/>_X axis_: CategoryScale<br/>_Y axis_: NumericalScale | _Type_: AreaSeries/BarSeries<br/>_CoordinateSystem_: CS1<br/>_SeriesGroup_: SG1<br/>_CategoryGroup_: CG1<br/>_Y_: {expression}<br/>_Y0_: {expression} |
 | [Scatter]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview %}) | _Name_: SG1<br/>_Grouping_: {expression} | _Name_: CG1<br/>_Grouping_: None | _Type_: Cartesian<br/>_Name_: CS1<br/>_X axis_: NumericalScale<br/>_Y axis_: NumericalScale | _Type_: LineSeries<br/>_CoordinateSystem_: CS1<br/>_SeriesGroup_: SG1<br/>_CategoryGroup_: CG1<br/>_LineStyle.Visible_: False<br/>_X_: {expression}<br/>_Y_: {expression} |
 | [Bubble]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview %}) | _Name_: SG1<br/>_Grouping_: {expression} | _Name_: CG1<br/>_Grouping_: None | _Type_: Cartesian<br/>_Name_: CS1<br/>_X axis_: NumericalScale<br/>_Y axis_: NumericalScale | _Type_: LineSeries<br/>_CoordinateSystem_: CS1<br/>_SeriesGroup_: SG1<br/>_CategoryGroup_: CG1<br/>_LineStyle.Visible_: False<br/>_X_: {expression}<br/>_Y_: {expression}<br/>_Size_: {expression} |
-
-

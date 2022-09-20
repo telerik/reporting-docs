@@ -5,7 +5,7 @@ description: "Learn how to set up a Map report item with the map Wizard when usi
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard
 tags: telerik, reporting, map, report, item, set, up, using, map, wizard
 previous_url: /MapHowToSetupMapWithPieChartSeries, /report-items/map/how-to/how-to-setup-a-map-using-the-map-wizard
-published: True
+res_type: kb
 ---
 
 ## Environment

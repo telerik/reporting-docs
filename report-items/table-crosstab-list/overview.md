@@ -1,6 +1,6 @@
 ---
-title: Table/Crosstab/List Overview
-page_title: Table/Crosstab/List Overview 
+title: Table, Crosstab, and List
+page_title: Table, Crosstab, and List Report Items Overview 
 description: Table/Crosstab/List differences and table designer overview 
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/overview
 tags: overview
@@ -9,7 +9,7 @@ position: 0
 previous_url: /table-working-with-table-cross-table-list-items
 ---
 
-# Table/Crosstab/List Overview
+# Table, Crosstab, and List Report Items Overview
 
 The Table report item is a separate data region and does not make use of the report's data source. It has its own [Telerik.Reporting.DataItem.DataSource](/reporting/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) property which you have to set in order to populate the item with data. 
 
@@ -57,10 +57,8 @@ Choosing a dynamic group from the [Group Explorer]({%slug telerikreporting/desig
 
   ![](images/TableGroupEditor.png)
 
-## In This Section
+## See Also
 
-[Basic Concepts]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})
-
-[Understanding Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
-
-[Understanding table Cells, Rows and Columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})
+* [Basic Concepts]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})
+* [Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
+* [Table Cells, Rows, and Columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})

@@ -35,12 +35,12 @@ There are two approaches to work around this limitation.
 For example, you may place the table in the Report Group Header section, and [Bind](../expressions-bindings) its DataSource to the parent's DataSource, that would be 
 the group data. The table will display the entire group data in the Table once. You may use the Report Group name in the _scope_ of the Page Functions.
 Note that in the detail section of the group you may still display Group data. If this is not necessary, you may set its _Visible_ property to _False_. 
-A sample based on this approch may be found in the [PageAggregateFromTableWithReportGroup.trdp](resources/PageAggregateFromTableWithReportGroup.trdp) demo report.
+A sample based on this approch may be found in the [PageAggregateFromTableWithReportGroup.trdp](https://github.com/telerik/reporting-docs/blob/master/knowledge-base/resources/PageAggregateFromTableWithReportGroup.trdp) demo report.
 
 2. The second approach is to keep the Table Grouping and introduce a Parent group to it. It needs to be grouped by the same [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) (e.g. field) 
 as the original group. This parent group will generate a new report item that spans the entire group. You may use this new item's name in the _scope_ of the Page Functions. 
 You may delete the content of this item and make it very small. It should be visible in order for the Expression to consider it though. A sample based on this approch may be 
-found in the [PageAggregateFromTableWithParentTableGroup.trdp](resources/PageAggregateFromTableWithParentTableGroup.trdp) demo report.
+found in the [PageAggregateFromTableWithParentTableGroup.trdp](https://github.com/telerik/reporting-docs/blob/master/knowledge-base/resources/PageAggregateFromTableWithParentTableGroup.trdp) demo report.
 
 ## See Also
 + [Table Groups](../data-items-how-to-add-groups-to-table-item-and-crosstab-item)

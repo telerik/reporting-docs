@@ -37,6 +37,9 @@ The Web Report Designer consists of the following areas:
 
 * __Search__ - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item or change a property value with just a few keystrokes.
 
+
+* __Onboarding Guide__ - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded, if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
+
 ## How it works
 
 The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backend. The service is responsible for the storage operations like creating, opening or saving report definitions in a specified folder, as well as handling the various requests that concern server-side processing and rendering. The public methods of the service can be overwritten to adjust its functionality to a specific scenario. 
@@ -131,10 +134,12 @@ Required widgets:
 
 * Kendo Autocomplete
 
+* Kendo Stepper
+
 The subset may be built with the following command:
 
 ````
-gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepicker,dropdowntree,grid,editor,filemanager,listbox,listview,menu,multiselect,panelbar,slider,splitter,tabstrip,tooltip,treeview,upload,window,touch,autocomplete
+gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepicker,dropdowntree,grid,editor,filemanager,listbox,listview,menu,multiselect,panelbar,slider,splitter,tabstrip,tooltip,treeview,upload,window,touch,autocomplete,stepper
 ````
 
 

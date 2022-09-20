@@ -35,10 +35,9 @@ the [Html5 Report Viewer]({% slug telerikreporting/embedding-reports/display-rep
 and the [Blazor Report Viewer]({% slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/overview %}).
 
 ## Visual Studio Requirements
-If you develop on Windows, you will need the latest version of Visual Studio. 
+If you develop on Windows, you will need the Visual Studio 2022 version 17.3 or higher. 
 You can make a new installation of Visual Studio or modify your current installation and install the .NET Multi-platform
 App UI development workload with its default installation options.
-The minimum version is 17.3.
 
 If you develop on Mac, then you will need Visual Studio 2022 for Mac 17.4 Preview. 
 Note that .NET MAUI apps that target Windows can only be launched and debugged using Visual Studio 2022.
@@ -46,13 +45,11 @@ Note that .NET MAUI apps that target Windows can only be launched and debugged u
 ## Telerik Reporting REST Service and Telerik Report Server
 Our HTML-based Report Viewers require a running instance of the 
 [Telerik Reporting REST Service]({% slug telerikreporting/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %})
-or the 
-[Telerik Report Server](https://www.telerik.com/report-server)
-to display reports.
+or the [Telerik Report Server](https://www.telerik.com/report-server) to display reports.
 Keep in mind that the report service should be hosted outside of the mobile app.
 
-The project that hosts the Telerik Reporting REST service can target .NET Framework or .NET Core. 
-You can find demos of the service in the installation folder of Telerik Reporting - Examples -> CSharp subfolder.
+The project that hosts the Telerik Reporting REST service can target .NET Framework or .NET Core/5/6. 
+You can find demos of the service in the installation folder of Telerik Reporting - `Examples\CSharp` subfolder.
 
 If you are not much familiar with .NET, you can use the Telerik Report Server. It is a server-based reporting platform that provides 
 comprehensive reports management, 
@@ -75,8 +72,8 @@ as well as a centralized storage for the reports and various ways to organize an
 			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-			<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
-			<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
+			<link href="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
+			<link href="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
 			<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
 			<style>
 				body {
@@ -132,19 +129,19 @@ as well as a centralized storage for the reports and various ways to organize an
 You can also put the page of the viewer into a separate html file and refer it into the web view.
 
 ## Embedding Telerik Reporting into a .NET MAUI Blazor App 
-[How to Use Blazor Report Viewer]({% slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer %}). 
+[How to Use Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%}). 
 You may also check our Native Blazor Report Viewer released in R3 2022. An example can be found in the installation
-folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting Version\Examples\CSharp\CSharp.BlazorNativeExample.VS2022.sln.
+folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\CSharp.BlazorNativeExample.VS2022.sln`.
 
  1. Create the Maui Blazor app:
  2.  Add the `Telerik.ReportViewer.Blazor NuGet` package
- 3.  In the wwwroot -> index.html, add the following scripts 
-  
+ 3.  In the `wwwroot\index.html`, add the following scripts 
+
 	````JavaScript
 <head>
 	…
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
+		<script src="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/js/kendo.all.min.js"></script>
 		<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
 	</head>
 	<body>
@@ -187,11 +184,10 @@ folder of Telerik Reporting: C:\Program Files (x86)\Progress\Telerik Reporting V
 		ReportViewer reportViewer1;
 	}
 ````
- 
+
 
 ## Source Code
-Both projects can be found in our GitHub repository:
+The two projects can be found in our GitHub repository:
 
-- [Telerik Reporting in .NET Maui project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMaui)
-- [Telerik Reporting in .NET Maui Blazor project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMauiBlazor)
-- 
+*[Telerik Reporting in .NET Maui project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMaui)
+*[Telerik Reporting in .NET Maui Blazor project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMauiBlazor)

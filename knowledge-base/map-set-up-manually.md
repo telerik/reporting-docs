@@ -5,7 +5,7 @@ description: "Learn how to manually configure a Map report item when using Teler
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-manually
 tags: telerik, reporting, map, report, item, configure, manually
 previous_url: /MapHowToSetupAMapManually, /report-items/map/how-to/how-to-setup-a-map-manually
-published: True
+res_type: kb
 ---
 
 ## Environment

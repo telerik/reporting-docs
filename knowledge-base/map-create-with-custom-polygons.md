@@ -5,7 +5,7 @@ description: "Learn how to create a Map report item with custom polygons when us
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-custom-polygons
 tags: telerik, reporting, map, report, item, create, with, custom, polygons
 previous_url: /MapHow-to-create-map-with-custom-wkt, /report-items/map/how-to/how-to-create-a-map-with-custom-polygons
-published: True
+res_type: kb
 ---
 
 ## Environment

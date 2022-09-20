@@ -1,53 +1,43 @@
 ---
 title: Parallels and Meridians
-page_title: Parallels and Meridians 
-description: Parallels and Meridians
+page_title: Styling and Formatting the Map Parallels and Meridians 
+description: "Learn how to style and format the parallels and meridians of the Telerik Reporting Map report item."
 slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/parallels-and-meridians
-tags: parallels,and,meridians
-published: True
-position: 1
+tags: telerik, reporting, map, report, item, parallels, and, meridians
 previous_url: /MapFormattingParallelsMeridians
+published: True
 ---
 
 # Parallels and Meridians
 
-The parallels and meridians represent the coordinate system grid, called *graticule*. You can format the graticule using the __Property Browser__. 
+The parallels and meridians represent the coordinate system grid that is called a graticule and can be formatted by using the __Property Browser__. 
 
-##Graticule Step
+## Setting the Step
 
-Both parallels and meridians define a step that determines the density of their lines. By default the step value is __NaN__, which causes the graticule lines to be automatically adjusted depending on the current map extent. The smaller the extent is, the smaller the graticule step becomes. 
+Both parallels and meridians define a step that determines the density of their lines. By default, the step value is __NaN__, which automatically adjust the graticule lines depending on the current map extent. The smaller the extent is, the smaller the graticule step becomes. 
 
-###To change the Parallels or Meridians step:
+To change the step of the parallels or meridians:
 
-1. Click the map item that you want to change. The selected map properties are listed in the __Property Browser__. 
-
-1. Expand the __Parallels/Meridians property__. 
-
+1. Click the Map item you want to change. The selected map properties are listed in the __Property Browser__. 
+1. Expand the __Parallels__ or __Meridians__ property. 
 1. Select the __Step__ property and set it to the desired value. 
-
 1. When you are done, press __Enter__. 
 
-##Graticule Style
+## Styling the Appearance
 
-You can change the parallels and meridians style by selecting the property and using the __Property Browser__ change Style properties. 
+You can change the style of the parallels and meridians by selecting the respective property and by using the __Style__ properties of the __Property Browser__. 
 
-###To change the Parallels or Meridians style:
+To change the style of the parallels or meridians:
 
-1. Click the map item that you want to change. The selected map properties are listed in the __Property Browser__. 
-
-1. Expand the __Parallels/Meridians property__. 
-
-1. In the __Style property__, click the __Edit Collection (…) button__. The Edit style dialog opens. 
-
-1. When you are done, click OK. 
-
+1. Click the map item you want to change. The selected map properties are listed in the __Property Browser__. 
+1. Expand the __Parallels__ or __Meridians__ property. 
+1. In the __Style__ property, click the __Edit Collection (…)__ button. As a result, the __Edit style__ dialog opens. 
+1. When you are done, click **OK**. 
 
 ## See Also
  
-* [GraticuleLine](/reporting/api/Telerik.Reporting.GraticuleLine)  
-
-* [Style](/reporting/api/Telerik.Reporting.Drawing.Style) 
-
-* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
-
-* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [(API) GraticuleLine](/reporting/api/Telerik.Reporting.GraticuleLine)
+* [(API) Style](/reporting/api/Telerik.Reporting.Drawing.Style)
+* [Structure and Elements of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

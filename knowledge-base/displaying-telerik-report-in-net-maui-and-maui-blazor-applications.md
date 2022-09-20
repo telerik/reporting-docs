@@ -31,8 +31,8 @@ res_type: kb
 
 ## Description
 In this article, you will see how to display a Telerik Reporting report into a .NET Maui and .NET Maui Blazor app by using 
-the [Html5 Report Viewer]({% slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/overview %})
-and the [Blazor Report Viewer]({% slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/overview %}).
+the [Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+and the [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}).
 
 ## Visual Studio Requirements
 If you develop on Windows, you will need the Visual Studio 2022 version 17.3 or higher. 
@@ -44,7 +44,7 @@ Note that .NET MAUI apps that target Windows can only be launched and debugged u
 
 ## Telerik Reporting REST Service and Telerik Report Server
 Our HTML-based Report Viewers require a running instance of the 
-[Telerik Reporting REST Service]({% slug telerikreporting/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %})
+[Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})
 or the [Telerik Report Server](https://www.telerik.com/report-server) to display reports.
 Keep in mind that the report service should be hosted outside of the mobile app.
 
@@ -129,7 +129,7 @@ as well as a centralized storage for the reports and various ways to organize an
 You can also put the page of the viewer into a separate html file and refer it into the web view.
 
 ## Embedding Telerik Reporting into a .NET MAUI Blazor App 
-[How to Use Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%}). 
+[How to Use Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%}). 
 You may also check our Native Blazor Report Viewer released in R3 2022. An example can be found in the installation
 folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\CSharp.BlazorNativeExample.VS2022.sln`.
 

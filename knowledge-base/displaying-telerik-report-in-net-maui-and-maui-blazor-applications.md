@@ -55,9 +55,9 @@ If you are not much familiar with .NET, you can use the Telerik Report Server. I
 comprehensive reports management, 
 as well as a centralized storage for the reports and various ways to organize and preview them.
 
-## Embedding Telerik Reporting  into  .NET MAUI App
+## Embedding Telerik Reporting into .NET MAUI App
 
-1. Firstly, you need to create the .NET Maui app:
+1. Firstly, you need to create the .NET Maui app. 
 2. Then you can directly add the pure Html5 Report Viewer through a Web View. For example:
 
 	````HTML
@@ -129,13 +129,13 @@ as well as a centralized storage for the reports and various ways to organize an
 You can also put the page of the viewer into a separate html file and refer it into the web view.
 
 ## Embedding Telerik Reporting into a .NET MAUI Blazor App 
-[How to Use Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%}). 
-You may also check our Native Blazor Report Viewer released in R3 2022. An example can be found in the installation
-folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\CSharp.BlazorNativeExample.VS2022.sln`.
 
- 1. Create the Maui Blazor app:
- 2.  Add the `Telerik.ReportViewer.Blazor NuGet` package
- 3.  In the `wwwroot\index.html`, add the following scripts 
+In this scenario, we will use the Blazor wrapper of the Html5 Report Viewer. For details, check the article [How to Use Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%}). 
+You may also check our Native Blazor Report Viewer released in [R3 2022](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-16-2-22-914). An example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\CSharp.BlazorNativeExample.VS2022.sln`.
+
+1. Create the Maui Blazor app.
+2. Add the `Telerik.ReportViewer.Blazor NuGet` package.
+3. In the `wwwroot\index.html`, add the following scripts 
 
 	````JavaScript
 <head>
@@ -186,8 +186,10 @@ folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Teleri
 ````
 
 
-## Source Code
+## Source Code 
+
 The two projects can be found in our GitHub repository:
 
-*[Telerik Reporting in .NET Maui project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMaui)
-*[Telerik Reporting in .NET Maui Blazor project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMauiBlazor)
+* [Telerik Reporting in .NET Maui project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMaui) 
+
+* [Telerik Reporting in .NET Maui Blazor project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMauiBlazor)

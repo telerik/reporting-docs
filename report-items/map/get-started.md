@@ -10,36 +10,27 @@ position: 1
 
 # Getting Started with the Map Report Item
 
-This guide shows how to create and use the Telerik Reporting Map report item in reports. 
+This guide shows how to add the Telerik Reporting Map report item in reports.
 
-* First, you will ...
-* Then, you will ... 
+The simplest way to add a __Map__ item to your report is to run the `Map Wizard`. After you add a Map item to the design surface of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), you can click its elements to edit the selected element's properties in the *Properties* grid. In the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) you can use the ribbon tools. 
 
-After the completion of this guide, you will also be able to configure the Map with code and achieve the following result. 
+## Add a Map item to a Report by using the _Visual Studio Report Designer Map Wizard_
 
-// add a demo here 
+1. Open the Visual Studio toolbox and select `Map Wizard` from the Telerik Reporting tab.
 
-How to Add Map to Report
+1. Click on the design surface where you want the upper-left corner of the Map item. The `Map Wizard` opens. 
 
-The simplest way to add a __Map__ item to your report is to run the Map Wizard. After you add a Map item to the design surface, you can click its elements to edit the selected element's properties in the *Properties* grid. Additionally in the Standalone Report Designer you can use the Ribbon tools. 
+1. Follow the steps in the `Map Wizard`.
 
-## To add a map to a report by using the Visual Studio Report Designer Map Wizard
+1. When you finish the wizard a new Map report item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
 
-1. Open the Visual Studio toolbox and select Map Wizard from the Telerik Reporting tab.
+## Add a Map to a report using the _Standalone Report Designer Map Wizard_
 
-1. Click on the design surface where you want the upper-left corner of the map. The Map Wizard opens. 
+1. Open the Ribbon *Insert* tab and select the Map item. The `Map Wizard` will start. 
 
-1. Follow the steps in the Map Wizard.
+1. Follow the steps in the `Map Wizard`.
 
-1. When you finish the wizard a new Map item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
-
-## To add a Map to a report using the Standalone Report Designer
-
-1. Open the Ribbon *Insert* tab and select the Map item. The Map Wizard will start. 
-
-1. Follow the steps in the Map Wizard.
-
-1. When you finish the wizard a new Map item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
+1. When you finish the wizard a new Map report item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
 
 ## See Also
 

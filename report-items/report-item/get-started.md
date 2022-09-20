@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Report Item Getting Started Guide
 description: "Get up and running with Telerik Reporting, and learn how to create and use the Report item in reports."
 slug: report_item_get_started
 tags: telerik, reporting, report, items, item, getting, started

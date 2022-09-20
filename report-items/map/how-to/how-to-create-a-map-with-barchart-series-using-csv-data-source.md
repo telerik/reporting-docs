@@ -182,7 +182,7 @@ Id,Name
 
      ![Point Map Data Point Conditional Formatting](images/Map/PointMapDataPointConditionalFormatting.png)
 
-1. Finally we will add a small Graph showing a [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/how-to-create-column-chart%}) that will be used to display the amount of medals won by each team. 
+1. Finally we will add a small Graph showing a [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview %}) that will be used to display the amount of medals won by each team. 
    + Start the Graph Wizard by selecting __Column__, __Clustered Column__ from the __Insert__ toolbar of the Standalone Report Designer. 
 
    + Select __medalsData__ as a Graph's data source. 
@@ -200,7 +200,7 @@ Id,Name
 
 In this example we demonstrated some of the newest features of Telerik Reporting along with a couple of advanced techniques that can be used to make your reports more dynamic and more interactive, and all that without writing a single line of code. 
 
-You can download this example report as a __.trdx__ report definition from the following link: [How to: Create а map with ColumnChart series using CSV data source.](http://blogs.telerik.com/docs/default-source/reporting/olympicmedalsbynationalteams.trdx?sfvrsn=2) 
+You can find this example as `OlympicMedalsByNationalTeams.trdp` report definition in the installation folder of the product. By default, this is `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples`.
 
 ## See Also
 

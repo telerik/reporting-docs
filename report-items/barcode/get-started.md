@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-page_title: Getting Started
+page_title: Barcode Report Item Getting Started Guide
 description: "Get up and running with Telerik Reporting, and learn how to create and use the Barcode report item in reports."
 slug: barcode_item_get_started
 tags: telerik, reporting, report, items, barcode, getting, started
@@ -53,6 +53,11 @@ After the completion of this guide, you will also be able to configure the Barco
 
   Note that some symbologies either do not provide a checksum or the checksum is part of the symbology specification. In these cases, `Checksum` will have no effect. 
 
+
+## Next Steps 
+
+* [(Demo) Barcodes Report](https://demos.telerik.com/reporting/barcodes-report)
+* [(Demo) Swiss QR Bill Report](https://demos.telerik.com/reporting/swiss-qr-bill-report)
 
 ## See Also
  

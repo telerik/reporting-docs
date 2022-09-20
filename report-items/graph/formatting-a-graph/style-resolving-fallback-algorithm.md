@@ -1,31 +1,34 @@
 ---
-title: Style Resolving Fallback Algorithm
+title: Series Style Propagation
 page_title: Style Resolving Fallback Algorithm 
-description: Style Resolving Fallback Algorithm
+description: "Learn more about the style resolving fallback algorithm and the way the styles of the Graph report item are propagated when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm
-tags: style,resolving,fallback,algorithm
+previous_url: /report-items/graph/formatting-a-graph/overview, /style-resolving-fallback-algorithm
+tags: telerik, reporting, report, items, graph, styling, formatting, style, resolving, fallback, algorithm, propagation 
 published: True
-position: 6
-previous_url: /style-resolving-fallback-algorithm
+position: 0
 ---
 
-# Style Resolving Fallback Algorithm
+# Propagation of the Graph Series Styles
 
-The following diagram shows how the Graph series styles are propagated and how the style resolving algorithm fallbacks among the style definitions.
+The diagram in this article illustrates the way the series styles of the Graph are propagated and how the style resolving algorithm falls back among the style definitions.
 
-The boxes on the top row represent the report items contained in a Graph series. __Applicable properties__ is a list of properties that are applied to the report item style. Below are listed the conditional formatting rule sets and the definitions that could affect the report item style, if set. 
+* The boxes on the top row represent the report items contained in a Graph series. 
+* __Applicable properties__ is a list of properties that are applied to the report item style. 
 
-> __Example:__ The LegendItem Mark consists of two parts - a line and a marker. The color of the mark line is set by the LineSeries' line color. The color of the marker and its line properties are affected by the DataPointStyle definition. Please note that setting a conditional formatting that changes the line style on the Line/Area series definition will affect the line style of the legend marker, but setting a similar conditional formatting on the DataPoint will not affect the LegendItem's marker style and it will be only applied on the DataPoint style. 
+If set, the [conditional formatting rules and definitions]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) affect the report item style. 
 
-  ![Style Resolving Fallback Algorithm](images/Graph/StyleResolvingFallbackAlgorithm.png)
+* The **LegendItem Mark** consists of a line and a marker. The color of the mark line is set by the line color of the **LineSeries**. The color of the marker and its line properties are affected by the **DataPointStyle** definition. 
+* Setting a conditional formatting rule that changes the line style on the Line or Area series definition will affect the line style of the legend marker. However, setting a similar conditional formatting rule on the **DataPoint** will not affect the marker style of the **LegendItem** and it will be only applied on the **DataPoint** style. 
 
+![Style Resolving Fallback Algorithm](images/Graph/StyleResolvingFallbackAlgorithm.png)
 
 ## See Also
 
-* [Graph Structure]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
-
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [Structure and Elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})
 * [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%})
-
 * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%}) 
-
 * [GraphSeries](/reporting/api/Telerik.Reporting.GraphSeries)
+
+

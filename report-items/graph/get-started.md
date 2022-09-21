@@ -15,7 +15,7 @@ This guide shows how to add the Telerik Reporting Graph report item in reports.
 
 The simplest way to add a __Graph__ item to your report is to run the Graph Wizard for [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) or to run a *new Bar*, *Column*, *Area*, *Line*, *Pie*, *Scatter*, or *Others* chart wizard in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). After you add a Graph item to the design surface of the _Visual Studio Report Designer_, you can click the chart elements to edit the selected element's properties in the *Properties* grid. In the _Standalone Report Designer_ you can use the ribbon tools. 
 
-## Add a Graph item to a Report by using the __Visual Studio report designer Graph Wizard__
+## Add a Graph item to a Report by using the _Visual Studio report designer Graph Wizard_
 
 1. Open the Visual Studio toolbox and select `Graph Wizard` from the Telerik Reporting tab.
 
@@ -25,7 +25,7 @@ The simplest way to add a __Graph__ item to your report is to run the Graph Wiza
 
 1. When you finish the wizard a new Graph report item will be created on the design surface. 
 
-## Add a Graph item to a report by using the __Standalone Report Designer Graph Wizard__
+## Add a Graph item to a report by using the _Standalone Report Designer Graph Wizard_
 
 1. Open the *Insert* tab from the ribbon bar and select the desired chart type. The Graph item will be placed in the center of the selected container.
 

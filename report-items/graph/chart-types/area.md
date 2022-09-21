@@ -28,7 +28,7 @@ The following image shows an example of a Stacked Area chart:
 
 In this section, you will create a Stacked Area chart.
 
-### 1. Add the Graph and Connect It to Data
+### 1. Add the Graph
 
 To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}). 
    

@@ -30,7 +30,7 @@ In this section, you will create a Stacked Area chart.
 
 ### 1. Add the Graph and Connect It to Data
 
-To add a new Graph report item to the report, refer to the [getting started with the Graph report item]({% slug graph_item_get_started %}). 
+To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}). 
    
 ### 2. Set the SeriesGroups Hierarchy 
 

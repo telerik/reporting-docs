@@ -27,7 +27,7 @@ previous_url: /how-to-blazor-web-report-designer
 
 1. Add required settings in the Startup.cs file.The __ConfigureServices__ method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer REST service. Make sure the application is configured for WebAPI controllers and call the *AddNewtonsoftJson* to enable the required NewtonsoftJson serialization: 
     
-	````C#
+````C#
 public void ConfigureServices(IServiceCollection services)
 	{
 		services.AddControllers();
@@ -40,7 +40,7 @@ public void ConfigureServices(IServiceCollection services)
 
 1. Add the required services in the __ConfigureServices__ method. The sample configuration below uses the `Reports` folder in the `WebRootPath` to open and save report definitions. It is required to create the `Reports` folder manually under `wwwroot` and optionally add some report definitions inside. 
     
-	````C#
+````C#
 ...
 	services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
 	{
@@ -61,26 +61,26 @@ public void ConfigureServices(IServiceCollection services)
 
 1. Make sure the endpoints configuration inside the __Configure__ method of the `Startup.cs` are configured for API controllers by adding the following line in the lambda expression argument: 
     
-	````C#
-app.UseEndpoints(endpoints =>
-	{
-		endpoints.MapControllers();
+````C#
+    app.UseEndpoints(endpoints =>
+    {
+	endpoints.MapControllers();
 	 ...
-	});
+    });
 ````
 
 
 1. If not already present, add this line to the __Configure__ method of the `Startup.cs` to assure that the application can serve static files: 
     
-	````C#
+````C#
 app.UseStaticFiles();
 ````
 
 
 1. Implement a Report Designer controller. Add a `Controllers` folder to the application and right-click on it to add a new __Web API Controller Class__ item. Name it *ReportDesignerController*. This will be the Telerik Web Report Designer REST service in the project. 
     
-	````C#
-using Microsoft.AspNetCore.Mvc;
+````C#
+        using Microsoft.AspNetCore.Mvc;
 	using Telerik.Reporting.Services;
 	using Telerik.WebReportDesigner.Services;
 	using Telerik.WebReportDesigner.Services.Controllers;
@@ -102,24 +102,24 @@ using Microsoft.AspNetCore.Mvc;
 
 1. Add JavaScript dependencies to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly): 
     
-	````HTML
+````HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
 	<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
-	<script src="/api/reportdesigner/designerresources/js/webReportDesigner-16.1.22.511.min.js/"></script>
+	<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
 ````
 
 
 1. Add [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly). The Razor syntax for a server application differs and you need to escape the `@` symbol as `@@` : 
     
-	````HTML
+````HTML
 <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
 ````
 
 
 1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the __body__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly): 
     
-	````HTML
+````HTML
 <script src="_content/telerik.webreportdesigner.blazor/telerikWebReportDesignerInterop.js" defer></script>
 	@* Or this one if using the Telerik.WebReportDesigner.Blazor.Trial package *@
 	@*<script src="_content/Telerik.WebReportDesigner.Blazor.Trial/telerikWebReportDesignerInterop.js" defer></script>*@
@@ -128,7 +128,7 @@ using Microsoft.AspNetCore.Mvc;
 
 1. Use the following snippet to place the designer component in a razor page like `Pages/Index.razor`. 
     
-	````HTML
+````HTML
 @page "/"
 	@using Telerik.WebReportDesigner.Blazor
 	<style>
@@ -141,10 +141,10 @@ using Microsoft.AspNetCore.Mvc;
 	</style>
 	@* Create the WebReportDesignerWidget *@
 	<WebReportDesigner DesignerId="wrd1"
-					   ServiceUrl="/api/reportdesigner"
-					   Report="SampleReport.trdp"
-					   ToolboxArea="new ToolboxAreaOptions() { Layout = ToolboxAreaLayout.List }"
-					   PropertiesArea="new PropertiesAreaOptions() { Layout = PropertiesAreaLayout.Categorized }" />
+				ServiceUrl="/api/reportdesigner"
+				Report="SampleReport.trdp"
+				ToolboxArea="new ToolboxAreaOptions() { Layout = ToolboxAreaLayout.List }"
+				PropertiesArea="new PropertiesAreaOptions() { Layout = PropertiesAreaLayout.Categorized }" />
 ````
 
 

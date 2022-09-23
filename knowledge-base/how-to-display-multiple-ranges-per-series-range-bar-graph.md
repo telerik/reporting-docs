@@ -43,17 +43,17 @@ Start,End,Category
 
 - First, let's create a new `Range Bar` graph from the `Insert` menu on the top. The graph fields may look as follows:
 
-![RangeBarArrangeFieldsMultipleSeriersKB](images/RangeBarArrangeFieldsMultipleSeriersKB.PNG)
+	![RangeBarArrangeFieldsMultipleSeriersKB](images/RangeBarArrangeFieldsMultipleSeriersKB.PNG)
 
-- In order force the Graph to render multiple ranges per series, we will now need to create an __empty__ series group:
+- In order to force the Graph to render multiple ranges per series, we will now need to create an __empty__ series group:
 
-![EmptySeriesGroupWizard](images/EmptySeriesGroupWizard.PNG)
+	![EmptySeriesGroupWizard](images/EmptySeriesGroupWizard.PNG)
 
-The multiple ranges will now be displayed, however, they will be at different positions vertically.
+	The multiple ranges will now be displayed, however, they will be at different positions vertically.
 
-- Set [GraphSeries.ArrangeMode](../api/telerik.reporting.graphseriesarrangemode) to `Overlapped`. Now, the series will be at the same vertical position.
+- Set [GraphSeries.ArrangeMode](/reporting/api/telerik.reporting.graphseriesarrangemode) to `Overlapped`. Now, the series will be at the same vertical position.
 
-![OverlappedGraphSeries](images/OverlappedGraphSeries.PNG)
+	![OverlappedGraphSeries](images/OverlappedGraphSeries.PNG)
 
 - Because of the `SeriesGroup` that we created, all ranges will now have their own colors. To fix that, we may create a new [ColorPalette]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/series%}#defining-custom-palettes) with only one color.
 

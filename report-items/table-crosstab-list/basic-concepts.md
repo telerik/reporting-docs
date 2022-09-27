@@ -21,11 +21,11 @@ As you define groups for a Table, CrossTab, or List, the Report Designer adds ro
 
 ## Detail vs. Grouped Data
 
-Detail data is all the data from a report data source as it comes back from the data source. Detail data is essentially what you see in the query designer results pane when you run a database query. 
+Detail data is all the data that comes back from the table data source. Detail data is essentially what you see in the query designer results pane when you run a database query. 
 
-The actual detail data includes, and is restricted by, filters that are set on the data source, data region, and details group. To display detail data on a detail row, use a simple expression such as `=Fields.ProductCategory`. When the report runs, the detail row repeats once for each row in the query results at runtime. 
+The actual detail data includes, and is restricted by, filters that are set on the data source, [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), data region, and details group. To display detail data on a detail row, use a simple expression such as `=Fields.ProductCategory`. When the report runs, the detail row repeats once for each row in the query results at runtime. 
 
-Grouped data is detail data that is organized by a value that you specify in the group definition, for example, `=Fields.ProductCategory`. To display grouped data in group rows and columns, use a simple expressions that aggregates the grouped data such as `=Sum(Fields.Quantity)`. 
+Grouped data is detail data that is organized by a value that you specify in the group definition, for example, `=Fields.ProductCategory`. To display grouped data in group rows and columns, use a simple expressions that aggregates the grouped data such as `=Sum(Fields.Quantity)`. The result will be the sum of all quantity values with the same product category as the current group. 
 
 ## Group Hierarchies
 
@@ -35,26 +35,26 @@ A tree structure represents nested row and column groups that have a parent/chil
 
 ## The Table Item
 
-A Table displays the following cell fields:
-
-* Corner&mdash;The cells in the Table Corner area are created automatically when you define both the row and column groups. For more information, refer to the article on [Table fields]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}).
-* Row Group&mdash;The cells in the Row Group area are created automatically when you create a row group. These are row group header cells and display row group instance values by default. 
-
-  For example, when you group by `=Fields.ProductCategory`, group instance values are the individual product categories by which you are grouping the data. 
-
-* Column Group&mdash;The cells in the Column Groups area are created automatically when you create a column group. These are column group header cells and display column group instance values by default. 
-
-  For example, when you group by `=Fields.Year`, group instance values are the individual years by which you are grouping the data.
+A Table consists of the following areas:
 
 * Table Body&mdash;The Table Body area always exists. Its cells display detail and group data.
 
-The other Table fields are optional.  
+The other Table fields are optional. 
+
+* Corner&mdash;The cells in the Table Corner area are created automatically when you define both the row and column groups. For more information, refer to the article on [Table Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}).
+* Row Group&mdash;The cells in the Row Group area are created automatically when you create a row group. These are row group header cells and display row group instance values by default. 
+
+	For example, when you group by `=Fields.ProductCategory`, group instance values are the individual product categories by which you are grouping the data. 
+
+* Column Group&mdash;The cells in the Column Group area are created automatically when you create a column group. These are column group header cells and display column group instance values by default. 
+
+	For example, when you group by `=Fields.Year`, group instance values are the individual years by which you are grouping the data.
 
 ## Static and Dynamic Rows and Columns
 
 A Table item organizes cells in rows and columns that are associated with groups. Because group structures for row and column groups are identical, the documentation refers to them as row groups and you can apply the same concepts to column groups. 
 
-A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows display labels and totals. 
+A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and agregates. If you don't specify an [aggregate function](%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) in a static row cell, by default the _First_ function will be used.
 
 A dynamic row is associated to one or more groups. A dynamic row renders once for every unique group value for the innermost group. Cells in a dynamic row are scoped to the innermost row and column group to which the cell belongs. 
 

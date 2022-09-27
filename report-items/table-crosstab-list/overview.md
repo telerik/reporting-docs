@@ -22,7 +22,7 @@ The Table report item is an individual [data region]({%slug telerikreporting/des
 * [Basic concepts]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})&mdash;Get to know the logic behind the implementation of the Table report item and learn more about the detail and group data, group hierarchies, table items, and static and dynamic table rows and columns.
 * [Template items]({%slug table_template_items%})&mdash;The Table report item supports the Table, CrossTab, and List templates which are actually optimized variations of the same concept for a specific data layout.
 * [Crosstab areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})&mdash;The CrossTab comes with the corner, row group, column group, and body areas that contain table cells.
-* [Table fields]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})&mdash;The Table report item provides a number of settings for controlling the behavior of its cells, rows, and columns.
+* [Table parts]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})&mdash;The Table report item provides a number of settings for controlling the behavior of its cells, rows, and columns.
 * [Context menu]({%slug table_context_menu%})&mdash;Besides the available TextBox item attributes, the Table template variations provide a context menu with additional settings.
 * [Group editor]({%slug table_group_editor%})&mdash;You can use the Table context menu which allows you to modify the properties of the selected group data. 
 

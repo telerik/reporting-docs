@@ -15,7 +15,7 @@ The Table report item is a generalized layout report item which displays report 
 
 The Table report item is an individual [data region]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) which utilizes its own [`Telerik.Reporting.DataItem.DataSource`](/reporting/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) to populate the fields with data. Thus, it defines its own [expression scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}). The dataset fields are displayed either as detail or grouped data in a grid or in a free-form layout. Each table cell can contain any report item, such as a TextBox, PictureBox, Graph, or another Table template variation. 
 
-![Crosstab from Product Sales online demo](images/TableOverview_ProductSalesDemo.png)
+![Crosstab from Product Sales online demo](images/TableOverview_ProductSalesDemo_01.png)
 
 ## Key Features 
 

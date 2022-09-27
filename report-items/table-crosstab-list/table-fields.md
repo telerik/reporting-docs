@@ -17,7 +17,7 @@ Usually, you can use the default Table templates of the [Table, CrossTab, or Lis
 
 ## Displaying Data in Rows and Columns
 
-A Table displays detail data on detail rows and detail columns, and grouped data on group rows and group columns. When you add row groups and column groups, the Table automatically adds rows and columns in which to display the data. You can manually add and remove rows and columns to customize a Table and to control the way your data displays in the report.
+A Table displays detail data on detail rows and detail columns, and aggregated group data on group row headers and group column headers. When you add row/column groups, the Table automatically adds row/column header in which to display the group data. You can manually add and remove rows and columns to customize a Table and to control the way your data displays in the report.
 
 This section elaborates on the specifics when you work with the Table rows and columns, and when you add rows to display detail and group data. Because rows have identical relations to row groups as columns have to column groups, note that the same principles apply when you add columns to display detail and grouped data:
 

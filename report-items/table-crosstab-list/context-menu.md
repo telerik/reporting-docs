@@ -16,7 +16,7 @@ To see an option, click either an item or the row or column handlers (the gray r
 
 The context menu is functionally dependent on the exact location of your click, and offers possible actions that are allowed and you can take as shown in the following image. 
 
-  ![The available actions in the Table context menu](images/CrossTabContextMenu2.png)
+![The available actions in the Table context menu](images/CrossTabContextMenu2.png)
 
 According to the hierarchy level, the Groups can be Parent, Child, and Adjacent. However, when it comes to row or column operations, they're referred to as inside and outside group, that is, a static row or column is added inside or outside the current group.
 

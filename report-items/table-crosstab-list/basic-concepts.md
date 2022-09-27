@@ -54,7 +54,7 @@ The other Table fields are optional.
 
 A Table item organizes cells in rows and columns that are associated with groups. Because group structures for row and column groups are identical, the documentation refers to them as row groups and you can apply the same concepts to column groups. 
 
-A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and agregates. If you don't specify an [aggregate function](%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) in a static row cell, by default the _First_ function will be used.
+A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and agregates. If you don't specify an [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) in a static row cell, by default the _First_ function will be used.
 
 A dynamic row is associated to one or more groups. A dynamic row renders once for every unique group value for the innermost group. Cells in a dynamic row are scoped to the innermost row and column group to which the cell belongs. 
 

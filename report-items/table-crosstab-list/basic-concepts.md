@@ -23,7 +23,7 @@ As you define groups for a Table, CrossTab, or List, the Report Designer adds ro
 
 Detail data is all the data that comes back from the table data source. Detail data is essentially what you see in the query designer results pane when you run a database query. 
 
-The actual detail data includes, and is restricted by, filters that are set on the data source, [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), data region, and details group. To display detail data on a detail row, use a simple expression such as `=Fields.ProductCategory`. When the report runs, the detail row repeats once for each row in the query results at runtime. 
+The actual detail data includes, and is restricted by, filters that are set on the data source, [data region]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), and details group. To display detail data on a detail row, use a simple expression such as `=Fields.ProductCategory`. When the report runs, the detail row repeats once for each row in the query results at runtime. 
 
 Grouped data is detail data that is organized by a value that you specify in the group definition, for example, `=Fields.ProductCategory`. To display grouped data in group rows and columns, use a simple expressions that aggregates the grouped data such as `=Sum(Fields.Quantity)`. The result will be the sum of all quantity values with the same product category as the current group. 
 

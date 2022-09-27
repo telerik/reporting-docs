@@ -1,5 +1,5 @@
 ---
-title: Table Fields
+title: Table Parts
 page_title: Table Cells, Rows, and Columns
 description: "Learn how to control the behavior of the cells, rows, and columns when working with the Telerik Reporting Table report item."
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns

@@ -56,11 +56,24 @@ The following image shows the final result.
 ![](images/CheckBoxEval3.png)
 
 
-
-## See Also 
+## Next Steps 
 
 * [Using Embedded Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
 * [(API) Telerik.Reporting.CheckBox](/api/Telerik.Reporting.CheckBox)
 * [(API) CanGrow](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow)
 * [(API) CanShrink](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink)
 * [(API) CheckAlign](/api/Telerik.Reporting.CheckBox#Telerik_Reporting_CheckBox_CheckAlign)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+
+## See Also 
+
+* [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
+* [Reporting Forums](https://www.telerik.com/forums/reporting)
+* [Reporting Blog](https://www.telerik.com/blogs/tag/reporting)
+* [Reporting Videos](https://www.telerik.com/videos/reporting)
+* [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
+* [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
+* [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
+
+

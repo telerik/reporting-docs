@@ -24,9 +24,21 @@ For more information on the specific structure of the Report item, refer to the 
 * [Creating report headers and footers]({% slug 2d_barcodes_overview %})—By default, new reports are created with no report headers or footers but you can add these sections if required.
 
 
-## See Also
+## Next Steps 
 
 * [Getting Started with the Report Item]({% slug report_item_get_started %})
 * [Page Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
 * [Report Headers and Footers]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%})
 * [Creating Multi-Column Reports]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-multi-column-report%})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+
+## See Also 
+
+* [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
+* [Reporting Forums](https://www.telerik.com/forums/reporting)
+* [Reporting Blog](https://www.telerik.com/blogs/tag/reporting)
+* [Reporting Videos](https://www.telerik.com/videos/reporting)
+* [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
+* [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
+* [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)

@@ -72,15 +72,24 @@ When working with the SubReport item, note the following considerations:
 * To remove blank vertical space in the detail section of a SubReport, set the `Height` of the `SubReport.ReportSource` __DetailSection__ to the height of the highest item. 
 * Sections can grow to accommodate their children but cannot shrink to hide empty space. To make the dtail section shrink only at runtime, set the `Height` property of the __DetailSection__ in the report constructor. Place the `Height` property assignment code right after the `IntializeComponent()` method call.
 
+
 ## Next Steps 
 
 * [(Demo) Invoice Report with a SubReport](https://demos.telerik.com/reporting/invoice) 
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
-
-## See Also
-
 * [Creating Master-Detail Reports with the SubReport]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
 * [Binding the SubReport to Parent Report Data]({%slug how-to-bind-sub-report-to-main-report-s-data%})
 * [(API) SubReport](/reporting/api/Telerik.Reporting.SubReport)
 * [(API) ReportSource](/reporting/api/Telerik.Reporting.SubReport#Telerik_Reporting_SubReport_ReportSource)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+
+## See Also 
+
+* [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
+* [Reporting Forums](https://www.telerik.com/forums/reporting)
+* [Reporting Blog](https://www.telerik.com/blogs/tag/reporting)
+* [Reporting Videos](https://www.telerik.com/videos/reporting)
+* [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
+* [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
+* [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
+

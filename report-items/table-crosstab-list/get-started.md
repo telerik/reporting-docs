@@ -24,9 +24,14 @@ After the completion of this guide, you will also be able to configure the Table
 
 ## ...
 
-## See Also 
+## Next Steps
 
 * [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
 * [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
-* [(API) Table Report Item](https://docs.telerik.com/reporting/api/telerik.reporting.table)
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
+* [Basic Concepts of the Table, Crosstab, and List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})
+* [Table Class API Reference](/api/telerik.reporting.table)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+
+## See Also
+

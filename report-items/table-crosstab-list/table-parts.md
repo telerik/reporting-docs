@@ -40,5 +40,5 @@ Each Table area comes with the following specifics that affect the cells inside:
 
 * [CrossTab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
 * [Template Variations of the Table Report Items]({%slug table_template_items %})
+* [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

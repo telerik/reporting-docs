@@ -26,13 +26,22 @@ The Table report item is an individual [data region]({%slug telerikreporting/des
 * [Context menu]({%slug table_context_menu%})&mdash;Besides the available TextBox item attributes, the Table template variations provide a context menu with additional settings.
 * [Group editor]({%slug table_group_editor%})&mdash;You can use the Table context menu which allows you to modify the properties of the selected group data. 
 
-## See Also 
+## Next Steps 
 
-* [Data Items Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%})
-* [Expression Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%})
+* [Getting Started with the Table Report Item]({%slug table_item_get_started%})
 * [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
 * [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
+* [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Getting Started with the Table Report Item]({%slug table_item_get_started%})
-* [(API) Table Report Item](https://docs.telerik.com/reporting/api/telerik.reporting.table)
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
+* [Knowledge Base Section](/knowledge-base)
+
+## See Also 
+
+* [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
+* [Reporting Forums](https://www.telerik.com/forums/reporting)
+* [Reporting Blog](https://www.telerik.com/blogs/tag/reporting)
+* [Reporting Videos](https://www.telerik.com/videos/reporting)
+* [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
+* [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
+* [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
+

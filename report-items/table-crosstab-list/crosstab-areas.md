@@ -1,7 +1,7 @@
 ---
 title: Crosstab Areas
 page_title: Crosstab Areas 
-description: 
+description: "Learn more about the Telerik Reporting CrossTab Corner, Row Group, Column Group, and Body areas, which contain table cells."
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas
 tags: telerik, reporting, report, items, table, crosstab, list, templates, understanding, crosstab, areas
 previous_url: /table-understanding-crosstab-areas, /report-items/table-crosstab-list/understanding-crosstab-areas
@@ -15,7 +15,7 @@ A CrossTab item provides the Corner, Row Group, Column Group, and Body areas tha
 
 The cells in each area have a distinct function, for example, when you create a group, the Report Designer adds cells to the Row Group or Column Group area to display group instance values.
  
-The following image shows the areas for a CrossTab with nested Row Groups, based on **ProductCategory** and **ProductSubCategory**, and nested Column Groups based on **OrderDate.Year**.
+The following image shows the areas of a CrossTab with nested Row Groups, based on **ProductCategory** and **ProductSubCategory**, and nested Column Groups, based on **OrderDate.Year**.
 
 ![CrossTab Row and Column Group areas](images/table4.png)
 
@@ -41,14 +41,20 @@ The following list describes each CrossTab area and its characteristics:
 
 When the report runs, column groups expand to the right for as many columns as there are unique values for the grouping expression. Row groups expand down the page. For more information, refer to the article on the [Table cells, rows, and columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%}). 
 
-The following image shows the CrossTab in Preview. 
+The following image shows the CrossTab in Preview:
+
+* The row group area displays group instances for **ProductCategory** (**Accessories** in the image). 
+* The column group displays four-year group instances for 2001, 2002, 2003, and 2004. 
+* The **Total** column row displays the row totals. 
+* The **Totals** row that repeats with the category group shows **productSubCategory** totals. 
+* The **Grand Total** row displays the category totals once for the CrossTab.
+
 
 ![A CrossTab in the Preview mode](images/table5.png)
 
->caption The row group area displays group instances for **ProductCategory** (**Accessories** from the screenshot). The column group displays four-year group instances for 2001, 2002, 2003, and 2004. The **Total** column row displays the row totals. The **Totals** row that repeats with the category group shows **productSubCategory** totals, and the **Grand Total** row displays the category totals once for the CrossTab.
 
 ## See Also 
 
 * [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
+* [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

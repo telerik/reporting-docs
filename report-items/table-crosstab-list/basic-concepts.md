@@ -1,6 +1,6 @@
 ---
 title: Basic Concepts
-page_title: Basic Concepts of the Table, Crosstab, and List Report Items
+page_title: Basic Concepts of the Table, Crosstab, and List 
 description: "Learn more about the basic ideas of the Telerik Reporting Table report item implementation and understand the detail and group data, group hierarchies, table items, and static and dynamic table rows and columns."
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts
 tags: telerik, reporting, report, items, table, crosstab, list, templates, basic, concepts, detail, group, data, hierarchies, static, dynamic, rows, columns
@@ -11,7 +11,7 @@ position: 2
 
 # Basic Concepts
 
-The Table is a powerful report item that enables you to display detail and grouped data. The detail report data is retrieved from the data source and you can also organize aggregated detail data into groups. 
+The Table is a powerful report item that enables you to display detail and grouped data. The Table retrieves the detail report data from the data source and also allows you to organize aggregated detail data into groups. 
 
 The Table report item supports the Table, CrossTab, and List template variations, which are actually optimized alternatives of the same concept for a specific data layout. By default, a Table item displays detail data in a grid layout, a CrossTab displays grouped data in a grid layout, and a List displays detail data in a free-form layout. 
 
@@ -37,16 +37,13 @@ A tree structure represents nested row and column groups that have a parent/chil
 
 A Table consists of the following areas:
 
-* Table Body&mdash;The Table Body area always exists. Its cells display detail and group data.
-
-The other Table fields are optional. 
-
-* Corner&mdash;The cells in the Table Corner area are created automatically when you define both the row and column groups. For more information, refer to the article on [Table Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}).
-* Row Group&mdash;The cells in the Row Group area are created automatically when you create a row group. These are row group header cells and display row group instance values by default. 
+* (Mandatory) Table Body&mdash;The Table Body area always exists. Its cells display detail and group data.
+* (Optional) Corner&mdash;The cells in the Table Corner area are created automatically when you define both the row and column groups. For more information, refer to the article on [Table Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}).
+* (Optional) Row Group&mdash;The cells in the Row Group area are created automatically when you create a row group. These are row group header cells and display row group instance values by default. 
 
 	For example, when you group by `=Fields.ProductCategory`, group instance values are the individual product categories by which you are grouping the data. 
 
-* Column Group&mdash;The cells in the Column Group area are created automatically when you create a column group. These are column group header cells and display column group instance values by default. 
+* (Optional) Column Group&mdash;The cells in the Column Group area are created automatically when you create a column group. These are column group header cells and display column group instance values by default. 
 
 	For example, when you group by `=Fields.Year`, group instance values are the individual years by which you are grouping the data.
 
@@ -54,7 +51,7 @@ The other Table fields are optional.
 
 A Table item organizes cells in rows and columns that are associated with groups. Because group structures for row and column groups are identical, the documentation refers to them as row groups and you can apply the same concepts to column groups. 
 
-A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and agregates. If you don't specify an [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) in a static row cell, by default the _First_ function will be used.
+A row is either static or dynamic. A static row is not associated to a group. When the report runs, a static row renders once. Table headers and footers are static rows. Static rows should display labels and aggregates. If you don't specify an [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) in a static row cell, the Table will use the `First` function by default.
 
 A dynamic row is associated to one or more groups. A dynamic row renders once for every unique group value for the innermost group. Cells in a dynamic row are scoped to the innermost row and column group to which the cell belongs. 
 
@@ -62,5 +59,9 @@ Dynamic detail rows are associated with the details group that is automatically 
 
 ## See Also 
 
+* [Getting Started with the Table Report Item]({%slug table_item_get_started%})
+* [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
+* [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
+* [Table Class API Reference](/api/telerik.reporting.table)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
+* [Knowledge Base Section](/knowledge-base)

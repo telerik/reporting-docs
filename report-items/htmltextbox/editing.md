@@ -43,3 +43,10 @@ The design-time editor is available in the Telerik Reporting Visual Studio and S
 	The `MultiLine` and `TextWrap` concepts are always true for the HtmlTextBox. You can nest the subscript and superscript tags, for example `<sub>subscript1<sub>subscript2</sub></sub>`, which will result in gradually smaller font sizes and offsets. However, the corresponding toolbar buttons only toggle the subscript or superscript feature and if you need nested tags, you need to manually add the appropriate code by using the __Html view__ of the editor. 
 
 	![The HtmlTextBox Html View](images/HtmlTextBox_HtmlView.png)
+
+
+## See Also 
+
+* [HtmlTextBox Class API Reference](api/telerik.reporting.htmltextbox)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)

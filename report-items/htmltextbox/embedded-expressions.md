@@ -15,3 +15,9 @@ The HtmlTextBox supports [embedded expressions]({%slug telerikreporting/designin
 Embedded expressions enable you to get and insert data-driven information directly into the HtmlTextBox report item and produce customized reports and mail merging. 
 
 After the expression is evaluated or replaced, the value of the HtmlTextBox must be valid XHTML.
+
+## See Also 
+
+* [HtmlTextBox Class API Reference](api/telerik.reporting.htmltextbox)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)

@@ -143,3 +143,11 @@ RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
 
 
 1. Set the `ConvertToXhtml` filter to its default state by enabling it.
+
+
+
+## See Also 
+
+* [HtmlTextBox Class API Reference](api/telerik.reporting.htmltextbox)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)

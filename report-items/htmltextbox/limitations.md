@@ -23,3 +23,8 @@ When working with the Telerik Reporting HtmlTextBox report item, note the follow
   
 For more information about all limitations of the HtmlTextBox in specific export formats, refer to the articles in the section on [design considerations for report rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%}).
 
+## See Also 
+
+* [HtmlTextBox Class API Reference](api/telerik.reporting.htmltextbox)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)

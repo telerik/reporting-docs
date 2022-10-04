@@ -23,10 +23,7 @@ The following `HtmlTextBoxVarious` formatting options are available and provide
 * Lists (`<ol>`, `<ul>`, and `<li>`).
 * Text organization in paragraphs (`<div>`, `<span>`,`<p>`, `<br>`, and `<center>`).
 
-The HtmlTextBox does not support the `table` and `img` tags. 
-
-* Use the native Reporting [Table, List, and Crrostab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) report items instead of `table`, and the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item instead of `img`. 
-
+While the HtmlTextBox does not support the `table` and `img` tags, you can use the native Telerik Reporting [Table, Crrostab, and List]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) report items instead of `table`, and the [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) report item instead of `img`. 
 
 ## Supported CSS Attributes
 
@@ -45,3 +42,9 @@ The HtmlTextBox supports the following CSS attributes for styling its text:
 * `font-family`, `font-size`, `font-weight`
 * `padding`, `padding-bottom`, `padding-top`, `padding-right`, `padding-left`
 * `color`
+
+## See Also 
+
+* [HtmlTextBox Class API Reference](api/telerik.reporting.htmltextbox)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)

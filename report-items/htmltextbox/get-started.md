@@ -33,7 +33,7 @@ The following image shows the result:
 
 ## Adding Some Styled Content 
 
-The HtmlTextBox you have just created contains the default text that is the item name. When this HtmTextBox is the first HtmlTextBox you add to your report, its default value will be **htmlTextBox1"**.
+The HtmlTextBox you have just created contains the default text that is the item name. When this HtmTextBox is the first HtmlTextBox you add to your report, its default value will be **htmlTextBox1**.
 
 Now, you'll add some styled content to your HtmlTextBox report item:  
 

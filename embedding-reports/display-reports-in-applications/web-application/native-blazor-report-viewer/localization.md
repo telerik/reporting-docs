@@ -37,23 +37,24 @@ This resource will contain the default `English` messages.
 
 1. Enable localization in the Blazor app from inside `Program.cs`(or `Startup.cs` if .NET 5 or older is used):
 
-    ````C#
+	````C#
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
-            builder.Services.Configure<RequestLocalizationOptions>(options =>
-            {
-                // define the list of cultures your app will support
-                var supportedCultures = new List<CultureInfo>()
-                {
-                    new CultureInfo("en-US"),
-                    new CultureInfo("bg-BG")
-                };
-
-                options.DefaultRequestCulture = new RequestCulture("en-US");
-
-                options.SupportedCultures = supportedCultures;
-                options.SupportedUICultures = supportedCultures;
-            });
+	builder.Services.Configure<RequestLocalizationOptions>(options =>
+	{
+		// define the list of cultures your app will support
+		var supportedCultures = new List<CultureInfo>()
+		{
+			new CultureInfo("en-US"),
+			new CultureInfo("bg-BG")
+		};
+	
+		options.DefaultRequestCulture = new RequestCulture("en-US");
+	
+		options.SupportedCultures = supportedCultures;
+		options.SupportedUICultures = supportedCultures;
+	});
 ````
+
 
 2. Add `.resx` files to the `~/Resources` folder
 
@@ -67,70 +68,74 @@ Make sure to:
 
 - Have the following in your `ProjectName.csproj` file so the designer file is generated. It should be added when you add the main messages file, or when you open and save it. Copy the snippet in case it is not added. If the `Designer` file does not get generated, open the `resx` file in Visual Studio and toggle its `Access Modifier` to `Public`.
 
-    ````XML
+	````XML
 <ItemGroup>
-	  <Compile Update="Resources\Messages.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>Messages.resx</DependentUpon>
-	  </Compile>
+		<Compile Update="Resources\Messages.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Messages.resx</DependentUpon>
+		</Compile>
 	</ItemGroup>
 
-<ItemGroup>
-      <EmbeddedResource Update="Resources\Messages.resx">
-	    <Generator>PublicResXFileCodeGenerator</Generator>
-	    <LastGenOutput>Messages.Designer.cs</LastGenOutput>
-	  </EmbeddedResource>
-    </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="Resources\Messages.resx">
+			<Generator>PublicResXFileCodeGenerator</Generator>
+			<LastGenOutput>Messages.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
 ````
+
 
 3. Create a custom localizer, that implements the `ITelerikReportingStringLocalizer` Interface. The localizer must provide strings based on keys. For this example, with `Messages.resx`, the localizer implementation might look as follows
 
-    ````C#
+	````C#
 using CSharp.Net6.BlazorNativeIntegrationDemo.Resources;
-using Telerik.ReportViewer.BlazorNative.Services;
+	using Telerik.ReportViewer.BlazorNative.Services;
 
-namespace CSharp.Net6.BlazorNativeIntegrationDemo
-{
-    public class CustomStringLocalizer : ITelerikReportingStringLocalizer
-    {
-        public string this[string name]
-        {
-            get
-            {
-                return GetStringFromResource(name);
-            }
-        }
-
-        public string GetStringFromResource(string key)
-        {
-            return Messages.ResourceManager.GetString(key, Messages.Culture);
-        }
-    }
-}
+	namespace CSharp.Net6.BlazorNativeIntegrationDemo
+	{
+		public class CustomStringLocalizer : ITelerikReportingStringLocalizer
+		{
+			public string this[string name]
+			{
+				get
+				{
+					return GetStringFromResource(name);
+				}
+			}
+		
+			public string GetStringFromResource(string key)
+			{
+				return Messages.ResourceManager.GetString(key, Messages.Culture);
+			}
+		}
+	}
 ````
+
 
 4. Register the custom localizer for the `ITelerikReportingStringLocalizer` interface, after registering the Telerik services
 
-    ````C#
+	````C#
 builder.Services.AddTelerikBlazor();
-...
-builder.Services.AddSingleton(typeof(ITelerikReportingStringLocalizer), typeof(CustomStringLocalizer));
+	...
+	builder.Services.AddSingleton(typeof(ITelerikReportingStringLocalizer), typeof(CustomStringLocalizer));
 ````
+
 
 5. (Optional) Now to test that the localization is working, you may change the culture in the component with the report viewer through the following code:
 
-    ````C#
+	````C#
 protected override void OnInitialized()
-    {
-        var culture = new CultureInfo("bg-BG");
-
-        CultureInfo.DefaultThreadCurrentCulture = culture;
-        CultureInfo.DefaultThreadCurrentUICulture = culture;
-
-        base.OnInitialized();
-    }
+	{
+		var culture = new CultureInfo("bg-BG");
+	
+		CultureInfo.DefaultThreadCurrentCulture = culture;
+		CultureInfo.DefaultThreadCurrentUICulture = culture;
+	
+		base.OnInitialized();
+	}
 ````
+
 
 > Since the Native Blazor Report Viewer uses __Telerik UI for Blazor__ components internally, you would also need to setup the __ITelerikStringLocalizer__ interface in the same fashion, to provide strings to the telerik components - [Telerik Blazor UI Localization](../../blazor-ui/globalization/localization)
 

@@ -4,7 +4,6 @@ page_title: Growing and Shrinking of the HtmlTextBox Report Item
 description: "Learn how to accommodate the content of the Telerik Reporting HtmlTextBox report item by allowing it to grow or shrink correspondingly."
 slug: htmltextbox_grow_and_shrink
 tags: telerik, reporting, report, items, htmltextbox, growing, shrinking, accommodate, content
-previous_url: /report-items-html-text-box
 published: True
 position: 5
 ---

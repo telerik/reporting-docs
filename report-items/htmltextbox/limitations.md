@@ -4,7 +4,6 @@ page_title: Known Limitations of the HtmlTextBox Report Item
 description: "Learn more about the considerations and known imitations of the Telerik Reporting HtmlTextBox report item."
 slug: htmltextbox_known_limitations
 tags: telerik, reporting, report, items, htmltextbox, considerations, known, limitations
-previous_url: /report-items-html-text-box
 published: True
 position: 20
 ---

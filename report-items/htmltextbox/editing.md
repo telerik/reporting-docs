@@ -47,6 +47,6 @@ The design-time editor is available in the Telerik Reporting Visual Studio and S
 
 ## See Also 
 
-* [HtmlTextBox Class API Reference](api/telerik.reporting.htmltextbox)
+* [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [Knowledge Base Section](/knowledge-base)

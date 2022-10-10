@@ -45,6 +45,6 @@ The following try-catch-block approach shows how to handle the exception:
 
 ## See Also 
 
-* [HtmlTextBox Class API Reference](api/telerik.reporting.htmltextbox)
+* [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [Knowledge Base Section](/knowledge-base)

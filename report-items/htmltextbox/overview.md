@@ -33,7 +33,7 @@ You can specify the HTML value at design time either through a WYSIWYG editor o
 * [Getting Started with the HtmlTextBox Report Item]({% slug barcode_item_get_started %})
 * [(KB) Anchor Tags vs. Hyperlink Actions in the HtmlTextBox]({%slug htmltextbox-with-anchor-tag-vs-hyperlink-action%})
 * [(KB) Error while Parsing EntityName]({%slug htmltextbox-an-error-occurred-while-parsing-entityname%})
-* [(w3.org) Full List of Special Entities](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent). 
+* [(w3.org) Full List of Special Entities](http://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
 * [Knowledge Base Section](/knowledge-base)
 
@@ -46,5 +46,4 @@ You can specify the HTML value at design time either through a WYSIWYG editor o
 * [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
 * [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
 * [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
-
 

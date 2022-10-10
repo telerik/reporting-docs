@@ -49,7 +49,7 @@ The HtmlTextBox we just created contains the default text that is the item name.
 
 1. Use the last button from the toolbar of the editor to add a link to our online demos. It will open a `Hyperlink Editor`, where you may type as URL: `https://demos.telerik.com/reporting/` and select as Target: `_blank` to open the web page on a new browser tab like shown below:
 
-![Add HtmlTextBox to the Detail section of an empty Report](images/HtmlTextBox-ContentWithLink.png)
+![Add styled content with hyperlink to the HtmlTextBox](images/HtmlTextBox-ContentWithLink.png)
 
 1. Switch to the `Html view` of the editor to see the generated HTML code. It should look like:
 

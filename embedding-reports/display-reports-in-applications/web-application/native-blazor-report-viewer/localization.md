@@ -122,7 +122,7 @@ builder.Services.AddTelerikBlazor();
 ````
 
 
-5. (Optional) Now to test that the localization is working, you may change the culture in the component with the report viewer through the following code:
+5. (_Optional_) Now to test that the localization is working, you may change the culture in the component with the report viewer through the following code:
 
 	````C#
 protected override void OnInitialized()

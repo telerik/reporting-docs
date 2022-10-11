@@ -64,9 +64,9 @@ builder.Services.AddLocalization(options => options.ResourcesPath = "Resources")
 
 	Make sure to:
 
-		- Mark the `resx` files as `Embedded Resource` (right click > Properties > Build Action).
+	- Mark the `resx` files as `Embedded Resource` (right click > Properties > Build Action).
 
-		- Have the following in your `ProjectName.csproj` file so the designer file is generated. It should be added when you add the main messages file, or when you open and save it. Copy the snippet in case it is not added. If the `Designer` file does not get generated, open the `resx` file in Visual Studio and toggle its `Access Modifier` to `Public`.
+	- Have the following in your `ProjectName.csproj` file so the designer file is generated. It should be added when you add the main messages file, or when you open and save it. Copy the snippet in case it is not added. If the `Designer` file does not get generated, open the `resx` file in Visual Studio and toggle its `Access Modifier` to `Public`.
 
 	````XML
 <ItemGroup>

@@ -12,9 +12,17 @@ position: 1
 
 The `Report` item is a unique report item that is a container for the rest of the report items. It consists of report sections, each one with a different purpose as explained in the article on [Telerik Reporting report sections]({%slug report_structure_groups_sections%}#report-sections).
 
-When you create a new report with any of the Telerik Reporting [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}), the report will automatically add the Report item by providing you with the following approaches to do that: 
+You may add a Report item to the Desktop Report Designers as follows:
 
-![Add New Report Item](images/ReportItemCreate.png)
+* For the Visual Studio Report Designer you may right-click over the .NET Framework ReportLibrary project and select `Add` > `New item...`. You need to select the corresopnding item from the available items under `Reporting` as shown in the below image:
+
+	![Add Report In Visual Studio Report Designer](images/ReportItemAddVS.png)
+
+* For the Standalone Report Designer you may select `File` from the Menu toolbar and choose the corresonding option from the `New` tab as displayed in the belwo image:
+
+	![Add New Report Item](images/ReportItemCreate.png)
+
+When you create a new report with any of the Telerik Reporting [Report Designer tools]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}), the report will automatically add the Report item by providing you with the following approaches to do that: 
 
 * (For all Report Designers) Select to add a **Blank report**&mdash;The Blank report contains the **Page Header**, **Details**, and **Page Footer** empty sections by default. You can add any of the other available report sections later. 
 

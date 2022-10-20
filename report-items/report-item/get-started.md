@@ -14,11 +14,11 @@ The `Report` item is a unique report item that is a container for the rest of th
 
 You may add a Report item to the Desktop Report Designers as follows:
 
-* For the Visual Studio Report Designer you may right-click over the .NET Framework ReportLibrary project and select `Add` > `New item...`. You need to select the corresopnding item from the available items under `Reporting` as shown in the below image:
+* For the Visual Studio Report Designer you may right-click over the .NET Framework ReportLibrary project and select `Add` > `New item...`. You need to choose the corresopnding item from the available items under `Reporting` as shown in the image below:
 
 	![Add Report In Visual Studio Report Designer](images/ReportItemAddVS.png)
 
-* For the Standalone Report Designer you may select `File` from the Menu toolbar and choose the corresonding option from the `New` tab as displayed in the belwo image:
+* For the Standalone Report Designer you may select `File` from the Menu toolbar and choose the corresonding option from the `New` tab as displayed in the image below:
 
 	![Add New Report Item](images/ReportItemCreate.png)
 
@@ -26,7 +26,7 @@ When you create a new report with any of the Telerik Reporting [Report Designer 
 
 * (For all Report Designers) Select to add a **Blank report**&mdash;The Blank report contains the **Page Header**, **Details**, and **Page Footer** empty sections by default. You can add any of the other available report sections later. 
 
-  For the specific steps to proceed further on, refer to the [guide on designing and configuring the Blank report sections]({% slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report). 
+	For the specific steps to proceed further on, refer to the [guide on designing and configuring the Blank report sections]({% slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report). 
 
 * (For the desktop Report Designers) Add a Report Template&mdash;The Telerik Reporting [report templates]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/report-templates%}) save time when you create reports with consistent layouts. 
 

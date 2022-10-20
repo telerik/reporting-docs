@@ -14,7 +14,7 @@ The `Report` item is a unique report item that is a container for the rest of th
 
 You may add a Report item to the Desktop Report Designers as follows:
 
-* For the Visual Studio Report Designer you may right-click over the .NET Framework ReportLibrary project and select `Add` > `New item...`. You need to choose the corresopnding item from the available items under `Reporting` as shown in the image below:
+* For the Visual Studio Report Designer you may right-click over the .NET Framework ReportLibrary project and select `Add` > `New item...`. You need to choose the corresponding item from the available items under `Reporting` as shown in the image below:
 
 	![Add Report In Visual Studio Report Designer](images/ReportItemAddVS.png)
 

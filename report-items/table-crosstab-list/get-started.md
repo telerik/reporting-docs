@@ -1,9 +1,9 @@
 ---
 title: Getting Started
-page_title: Getting Started with the Table Report Item
-description: "Get up and running with Telerik Reporting, and learn how to create and use the Table report item and its Crosstab and List template items in reports."
+page_title: Getting Started with the Crosstab Report Item
+description: "Get up and running with Telerik Reporting, and learn how to create and use the Crosstab report item in reports."
 slug: crosstab_item_get_started
-tags: telerik, reporting, report, items, table, crosstab, list, getting, started
+tags: telerik, reporting, report, items, crosstab, getting, started
 published: True
 position: 1
 ---
@@ -13,8 +13,8 @@ position: 1
 This guide shows how to create and use the Telerik Reporting Crosstab report item in reports with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
 
 * First, you will add a Crosstab item in an empty Report created with the Standalone Designer. You will use the Crosstab Wizard for this purpose.
-* Following the instructions in the wizard, you will create a SqlDataSource to feed the Crosstab with data.
-* The wizard will let us create also Groups with details and Totals. We will create one Row and one Column Group without Totals.
+* Following the instructions in the wizard, you will create an SqlDataSource to feed the Crosstab with data.
+* The wizard will also let us create Groups with details and Totals. We will create one Row and one Column Group without Totals.
 * Then, you will add a parent Row Group with Grand Totals outside the wizard to get acquainted with the process although the same may be done from the Wizard as well.
 
 After the completion of this guide, you will also be able to configure a Crosstab in the Standalone Designer and achieve the following result: 
@@ -57,11 +57,11 @@ You may preview the returned data and close the SqlDataSource wizard.
 
 ## Configure the Crosstab with the Crosstab Wizard
 
-1. When you return to the Crosstab Wizard you will see the fields of the just created SqlDataSource. The image below how it should look like:
+1. When you return to the Crosstab Wizard you will see the fields of the just created SqlDataSource. The image below shows how it should look like:
 
 	![Choose a Data Source in the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardChooseDataSource.png)
 
-1. You may click `Next` and continue to the __Arrange Fields__ page of the wizard. Drag and drop the field as follows: 
+1. You may click `Next` and continue to the __Arrange Fields__ page of the wizard. Drag and drop the fields as follows: 
 
 	* `ProductSubCategory` to the _Row Groups_
 	* `OrderDate.Year` to the _Column Groups_
@@ -76,7 +76,7 @@ You may preview the returned data and close the SqlDataSource wizard.
 
 	![Choose Layout in the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardChooseLayout.png)
 
-1. On the `Choose Style` page we may select a theme for the Crosstab layout. Let's try with the _Office_ theme:
+1. On the `Choose Style` page we may select a theme for the Crosstab layout. Let's try the _Office_ theme:
 
 	![Choose Office Style in the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardChooseOfficeStyle.png)
 
@@ -104,7 +104,7 @@ The Wizard will close leaving a fully configured Crosstab in the middle of the R
 
 	We may also increase the width of the LineTotal column to accommodate larger values. Just drag the right border of the Crosstab to the right.
 
-1. Lets add new grouping by Categories. Currently, we have the Products grouped by SubCategories. Grouping them into Categories will make the Crosstab better organized an more readable. We will use the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) in `Extended Mode`.
+1. Lets add new grouping by Categories. Currently, we have the Products grouped by SubCategories. Grouping them into Categories will make the Crosstab better organized and more readable. We will use the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) in `Extended Mode`.
 
 	1. Select the Crosstab and in the Group Explorer that by default is at the bottom of the designer click on the Ellipses beside the `productSubCategory` Row Group.
 
@@ -116,7 +116,7 @@ The Wizard will close leaving a fully configured Crosstab in the middle of the R
 
 		![Crosstab in Standalone Designer - Add Grouping to the new Parent Row Group](images/CrosstabParentRowGroupGrouping.png)
 
-1. Now we can think of displaying also some aggregate values, for example Totals for the numeric fields like _LineTotal_.
+1. Now we can think about displaying some aggregate values as well. For example Totals for the numeric fields like _LineTotal_.
 
 	We need to add a column on the right that is outside the detail group of the Crosstab. For this purpose:
 
@@ -128,15 +128,15 @@ The Wizard will close leaving a fully configured Crosstab in the middle of the R
 
 	1. We may leave the top header row that displays the year for the orders empty in the new column. The second header we may name `Line Grand Total` as this would be the overall total for all years.
 
-	1. Copy and Paste the Expression from the previous column `Line Total `. Note that when you preview the report it displays the correct Grand Total as the context for executing the Expression is not limited by year.
+	1. Copy and Paste the Expression from the previous column `Line Total`. Note that when you preview the report it displays the correct Grand Total as the context for executing the Expression is not limited by year.
 
 	1. Lets do some final adjustments like
 
-		* renaming _Product Name_ to `Products Line Count` that actually shows how many products from the line we have had
+		* renaming _Product Name_ to `Products Line Count`, since it actually shows how many products we have had from each line 
 
 		* increasing some column widths to accommodate all the content
 
-		* applying background color to the Grand Totals to distinguish them easier
+		* applying a background color to the Grand Totals to distinguish them easier
 
 The expected result is displayed in the beginning of our guide.
 

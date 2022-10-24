@@ -1,64 +1,46 @@
 ---
-title: Table, Crosstab, and List
-page_title: Table, Crosstab, and List Report Items Overview 
-description: Table/Crosstab/List differences and table designer overview 
+title: Overview
+page_title: Table, Crosstab, and List Overview 
+description: "Learn more about the Telerik Reporting Table report item and how to use its supported table, crosstab, and list template variations."
 slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/overview
-tags: overview
+previous_url: /table-working-with-table-cross-table-list-items
+tags: telerik, reporting, report, items, table, crosstab, list, templates, overview
 published: True
 position: 0
-previous_url: /table-working-with-table-cross-table-list-items
 ---
 
-# Table, Crosstab, and List Report Items Overview
+# Table Overview
 
-The Table report item is a separate data region and does not make use of the report's data source. It has its own [Telerik.Reporting.DataItem.DataSource](/reporting/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) property which you have to set in order to populate the item with data. 
+The Table report item is a generalized layout report item which displays report data in cells that are organized into rows and columns. 
 
-Use the table to display fields from a dataset either as detail data or as grouped data in a grid or free-form layout. Telerik Reporting provides three items that can be used as templates and you can add them directly from the Toolbox: table, crosstab, and list.
+The Table report item is an indi vidual [data region]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) which utilizes its own [`Telerik.Reporting.DataItem.DataSource`](/reporting/api/Telerik.Reporting.DataItem#Telerik_Reporting_DataItem_DataSource) to populate the fields with data. Thus, it defines its own [expression scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}). The dataset fields are displayed either as detail or grouped data in a grid or in a free-form layout. Each table cell can contain any report item, such as a TextBox, PictureBox, Graph, or another Table template variation. 
 
-## Overview
+![Crosstab from Product Sales online demo](images/TableOverview_ProductSalesDemo_01.png)
 
-* __Table:__ 
+## Key Features 
 
-  Use a table item to display detail data, organize the data in row groups, or both. The Table contains three columns with a table header row and a details row for data. The following figure shows the initial table template, selected on the design surface: 
+* [Basic concepts]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})&mdash;Get to know the logic behind the implementation of the Table report item and learn more about the detail and group data, group hierarchies, table items, and static and dynamic table rows and columns.
+* [Template items]({%slug table_template_items%})&mdash;The Table report item supports the Table, CrossTab, and List templates which are actually optimized variations of the same concept for a specific data layout.
+* [Crosstab areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})&mdash;The CrossTab comes with the corner, row group, column group, and body areas that contain table cells.
+* [Table parts]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})&mdash;The Table report item provides a number of settings for controlling the behavior of its cells, rows, and columns.
+* [Context menu]({%slug table_context_menu%})&mdash;Besides the available TextBox item attributes, the Table template variations provide a context menu with additional settings.
+* [Group editor]({%slug table_group_editor%})&mdash;You can use the Table context menu which allows you to modify the properties of the selected group data. 
 
-  ![](images/table1.png)
+## Next Steps 
 
-* __CrossTab:__ 
+* [Getting Started with the Table Report Item]({%slug table_item_get_started%})
+* [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
+* [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
+* [Table Class API Reference](/api/telerik.reporting.table)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
 
-  Use a CrossTab template to display aggregated data summaries, grouped in rows and columns. The number of rows and columns for groups is determined by the number of unique values for each row and column groups. The following figure shows the initial crossTab template, selected on the design surface: 
+## See Also 
 
-  ![](images/table2.png)
-
-* __List:__ 
-
-  Use a list item to create a free-form layout. You are not limited to a grid layout, but can place fields freely inside the list. You can use a list to design a form for displaying many dataset fields or as a container to display multiple data regions side by side for grouped data. For example, you can define a group for a list; add a table, chart, and image; and display values in table and graphic form for each group value. 
-
-  ![](images/table3.png)
-
-Of course, you are not limited to your initial template choice. As you add groups, totals, and labels, you may find you want to modify your table design. For example, you might start with a table and then delete the details row and add column groups.
-
-You can continue to develop a Table, crossTab, or List by adding any table feature. Table features include displaying detail data or aggregates for grouped data on rows and columns. You can create nested groups, independent adjacent groups, or recursive groups. You can filter and sort grouped data, and easily combine groups by including multiple group expressions in a group definition.
-
-> [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) cannot be used in page sections ([PageHeaderSection/PageFooterSection]({%slug telerikreporting/designing-reports/overview%})), because the latter are processed after the report data has been processed. At this moment the report data source is not available anymore. 
-
-## Context Menu
-
-When you click on a Table/Crosstab cell, you select a TextBox item. Although this is standard TextBox report item, when it is in the context of a Table/Crosstab/List item, its context menu would show settings for the Table/Crosstab/List item besides the [usual TextBox item's attributes it shows]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}). To see an option you need to click either on an item or on the row/column handlers (the gray rectangles appearing when the whole Table item is selected). The Context Menu is functionally dependent on where exactly you click, and offers possible actions that are allowed and you can take (see image below). 
-
-  ![](images/CrossTabContextMenu2.png)
-
-The Groups can be Parent, Child and Adjacent according to the hierarchy level. However when it comes to row/column operations they're referred to as inside and outside group i.e. a static row/column is added inside or outside of the current group.
-
-When you select several cells which belong to a single dynamic (or static) group, then the Ccontext Menu would show Merge Cells option. Once cells from a single group are merged they can be later split by selecting the merged cell and choosing Split Cells from the menu.
-
-## Table Group Editor
-
-Choosing a dynamic group from the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), shows a context menu which allows you to alter the           properties of the selected group. Choosing Group properties option, would open a "Edit Table Group" dialog from which you can control Filters, Grouping and Sorting along with specifying GroupKeepTogether. 
-
-  ![](images/TableGroupEditor.png)
-
-## See Also
-
-* [Basic Concepts]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})
-* [Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%})
-* [Table Cells, Rows, and Columns]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-table-cells,-rows-and-columns%})
+* [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
+* [Reporting Forums](https://www.telerik.com/forums/reporting)
+* [Reporting Blog](https://www.telerik.com/blogs/tag/reporting)
+* [Reporting Videos](https://www.telerik.com/videos/reporting)
+* [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
+* [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
+* [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)

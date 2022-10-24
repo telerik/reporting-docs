@@ -14,7 +14,7 @@ Once you have [added the CrossTab to your report, designed it in the Standalone 
 
 ![The final Crosstab created with the Standalone Designer](images/CrosstabFinal.png)
 
-## Formatting Total Numbers  
+## Formatting Numbers 
 
 The CrossTab also enables you to format the numbers for its **LineTotal**: 
 

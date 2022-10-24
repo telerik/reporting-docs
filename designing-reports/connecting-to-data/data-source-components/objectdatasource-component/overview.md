@@ -17,11 +17,13 @@ A common application design practice is to separate the presentation layer from 
 
 Any of the following data sources can be assigned to the DataSource property of the ObjectDataSource component:
 
-* Any component that implements __[IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx)__, including __[System.Array](http://msdn.microsoft.com/en-us/library/system.array.aspx)__,               __[IList](http://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx)__,               __[ICollection](http://msdn.microsoft.com/en-us/library/system.collections.icollection.aspx)__, and __[BindingSource](http://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource.aspx)__
+* Any component that implements __[IEnumerable](http://msdn.microsoft.com/en-us/library/system.collections.ienumerable.aspx)__, including __[System.Array](http://msdn.microsoft.com/en-us/library/system.array.aspx)__, __[IList](http://msdn.microsoft.com/en-us/library/system.collections.ilist.aspx)__,               __[ICollection](http://msdn.microsoft.com/en-us/library/system.collections.icollection.aspx)__, and __[BindingSource](http://msdn.microsoft.com/en-us/library/system.windows.forms.bindingsource.aspx)__
 
 * Any component that implements __[IListSource](http://msdn.microsoft.com/en-us/library/system.componentmodel.ilistsource.aspx)__, including __[DataTable](http://msdn.microsoft.com/en-us/library/system.data.datatable(VS.80).aspx)__, __[DataSet](http://msdn.microsoft.com/en-us/library/system.data.dataset.aspx)__ and DataView 
 
-* Any component that implements __[IDbDataAdapter](http://msdn.microsoft.com/en-us/library/system.data.idbdataadapter.aspx)__, including __SqlDataAdapter__ and __OleDbDataAdapter__ 
+* Any component that implements __[IDataAdapter](https://learn.microsoft.com/en-us/dotnet/api/system.data.idataadapter)__, including __SqlDataAdapter__ and __OleDbDataAdapter__ 
+
+* Any component that implements __[ITypedList](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedlist)__, including __[DataView](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataview)__ and __[DataViewManager](https://learn.microsoft.com/en-us/dotnet/api/system.data.dataviewmanager)__ 
 
 * System.Type which represents the type of the business object 
 

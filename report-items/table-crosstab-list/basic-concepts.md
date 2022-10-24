@@ -59,7 +59,7 @@ Dynamic detail rows are associated with the details group that is automatically 
 
 ## See Also 
 
-* [Getting Started with the Table Report Item]({%slug table_item_get_started%})
+* [Getting Started with the Crosstab Report Item]({%slug crosstab_item_get_started%})
 * [Manually Adjusting the CrossTab]({% slug manual_adjustment_crosstab %})
 * [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
 * [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)

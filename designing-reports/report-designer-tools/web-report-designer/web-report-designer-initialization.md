@@ -33,6 +33,7 @@ The Telerik Web Report Designer is a jQuery plugin - __jQuery.fn.telerik_WebRepo
 | __promptOnDiscardingModifiedReport__ | *boolean*, *optional*. Sets a value indicating whether a browser prompt will be displayed when a report is modified and the user attempts to leave the page.|
 | __toolboxArea__ | *json*, *optional*. Sets the Toolbox area options.|
 | __propertiesArea__ | *json*, *optional*. Sets the Properties area options.|
+| __skipOnboarding__ | *boolean, optional*; Sets a value indicating whether the _Onboarding Guide_ should be skipped on startup. If not set or set to false, the Onboarding Guide will check whether it has been run before and if not, it will start after the designer surface has loaded. If the guide has been run before, nothing will happen.|
 
 ## Examples
 
@@ -44,6 +45,10 @@ $(document).ready(function () {
         toolboxArea: {
             layout: "list"
         },
+		propertiesArea: {
+            layout: "alphabetical" 
+        },
+        skipOnboarding: false,
         serviceUrl: "api/reportdesigner/",
         report: "Report Catalog.trdp"
     }).data("telerik_WebDesigner");

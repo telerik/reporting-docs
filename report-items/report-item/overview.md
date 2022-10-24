@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Report Item Overview 
-description: "Learn more about the Telerik Reporting Report Item."
+description: "Learn more about the Telerik Reporting Report item."
 slug: report_item
 tags: telerik, reporting, report, items, item, overview
 published: True

@@ -15,7 +15,7 @@ The WinUI report viewer allows developers to deliver reports produced by Telerik
 
   ![winui-report-viewer](images/WinUIReportViewer/winui-report-viewer.png)
 
-The toolbar of the WPF report viewer provides basic functionality for interacting with the currently loaded report: 
+The toolbar of the WinUI Report Viewer provides basic functionality for interacting with the currently loaded report: 
 
 * Navigate back in history
 

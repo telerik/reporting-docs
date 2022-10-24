@@ -1,6 +1,6 @@
 ---
 title: (Obsolete) Chart 
-page_title: (Obsolete) Chart 
+page_title: Chart Report Item Overview 
 description: "(Obsolete) Learn more about the Chart as a report item when using Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/chart-(obsolete)
 tags: telerik, reporting, report, items, chart, obsolete
@@ -9,7 +9,7 @@ position: 50
 previous_url: /report-items-chart
 ---
 
-# (Obsolete) Chart 
+# (Obsolete) Chart Report Item Overview
 
 >* The Chart report item is now superseded by the more advanced [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) report item. The Graph is most often used for building powerful OLAP and Pivot charts. 
 >* The Chart report item is not supported in .NET Core projects and in projects deployed on Azure. 
@@ -70,4 +70,4 @@ To customize the Chart, right-click the item and select **Properties** from the
 ## See Also
 
 * [Telerik UI for ASP.NET AJAX Chart Documentation](https://docs.telerik.com/devtools/aspnet-ajax/controls/chart/overview)
-* [API of the Chart Report Item](/reporting/api/Telerik.Reporting.Chart)
+* [(API) Chart](/reporting/api/Telerik.Reporting.Chart)

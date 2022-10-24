@@ -47,7 +47,7 @@ You can connect to a SQL database using the Telerik __SqlDataSource__  component
    
      At the end, click __Test connection__ to verify that your connection works. Click __OK__. You should see the connection string's attributes written in the __Connection string__ text-box.                 
 
-     >Not all connection strings can be built with the __Connection Properties__ dialog, and in such cases the __Build...__ button remains disbled. The connection string will have to be typed manually.                   
+     >Not all connection strings can be built with the __Connection Properties__ dialog, and in such cases the __Build...__ button remains disabled. The connection string will have to be typed manually.                   
    
    
    For our tutorial we will connect to AdventureWorks database installed on MSSQL server instance:

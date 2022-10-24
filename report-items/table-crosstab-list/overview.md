@@ -44,4 +44,3 @@ The Table report item is an indi vidual [data region]({%slug telerikreporting/de
 * [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
 * [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
 * [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
-

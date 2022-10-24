@@ -26,26 +26,26 @@ This KB article gives a brief description of how to show "No Data" message when 
 ## Solution
 **For Report:**
 
-1. Insert a textbox in the Report Header section with value: "No data".
-2. Set the textbox property of Visible to False.
+1. Insert a textbox in the `Report Header` section with value: "No data".
+2. Set the textbox property of `Visible` to `False`.
 3. Add a new Conditional Formatting Rule. In the Filters section set the fields as follows:
 
 	```
 	Expression: =Count(1)
 	Operator: =
-	Value: 0
+	Value: =0
 	```
-4. Go to Style of the formatting rule -> uncheck the Visibility box -> click OK -> select again the Style of the rule -> check Visible  -> OK (This step is required because the designer needs  to determine that a change has been introduced so that it re-serializes the report, otherwise the message will not change its visibility).
+4. Go to `Style` of the formatting rule -> uncheck the `Visible` box -> click `OK` -> select again the Style of the rule -> check `Visible`  -> `OK` (This step is required because the designer needs  to determine that a change has been introduced so that it re-serializes the report, otherwise the message will not change its visibility).
 
 **For Subreport:**
 
 You can display a 'No Data' message in a sub report by using the same approach as for a Report.
-If you want to hide the SubReport item and its content, then you can add a binding in the textbox item's Bindings collection like:
+If you want to hide the SubReport item and its content, then you can add a binding in the textbox item's `Bindings` collection like:
 ```
 Property path: Parent.Parent.Parent.Visible
 Expression: = Count(1)>0
 ```
-The Property path has to be typed manually, where the Parent keyword can be used as many times as needed to get the item in the Main Report, which you want to hide.
+The Property path has to be typed manually, where the `Parent` keyword can be used as many times as needed to get the item in the Main Report, which you want to hide.
 
 ## See Also
 "No Data Message" feature allows you to display text, style or hide the empty space of a nested data item(Table, List, Crosstab, Graph, Map), which data source returns no records.

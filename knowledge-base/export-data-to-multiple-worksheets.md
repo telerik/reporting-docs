@@ -22,6 +22,16 @@ res_type: kb
 	</tr>
 </table>
 
+## Important
+We issued this article before introducing the SplitWorksheetOnPageBreak Excel device info setting, 
+allowing to split the resulting document into sheets based on the applied soft page breaks. See:
+
+* [Progress® Telerik® Reporting R2 2022 SP1 (16.1.22.622)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2022-sp1-16-1-22-622)
+* [Excel 2007 Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings%})
+* [Excel 2003 Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings%})
+* [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})
+
+You can still apply the approach described in the current article if it better suits your scenario.
 
 ## Description
 
@@ -37,6 +47,6 @@ ReportBook can be created programmatically or using [Standalone report designer]
 ReportBook support for Standalone designer was added in R1 2017 release. To start creating ReportBook, select **File | New** from the designer menu and choose a ReportBook report template.
 
 ## See Also
-[How to: Create a Report Book at run-time]({% slug telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time %})
 
-[Design Considerations for Excel Rendering]({% slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations %})
+[How to: Create a Report Book at run-time]({%slug telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time%})
+[Design Considerations for Excel Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations%})

@@ -1,54 +1,60 @@
 ---
-title: Map Types
-page_title: Map Types 
-description: Map Types
+title: Types
+page_title: Map Report Item Types 
+description: "learn more about the Map types supported by the Map report item when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/map/map-types
-tags: map,types
+tags: telerik, reporting, map, report, item, types
+previous_url: /MapChartTypes
 published: True
 position: 2
-previous_url: /MapChartTypes
 ---
 
 # Map Types
 
-It is important to choose an appropriate map type for the type of data that you are presenting. This will determine how well the data can be interpreted when put in map form.
+To present the Map data in the most user-friendly way, the Map report item supports a number of map types, which have unique characteristics to help you visualize your dataset. 
 
-## Choosing a Map Type
+The Map provides the following map types: 
 
-Each map type has unique characteristics to help you visualize your dataset. You can use any map type to display your data, but your data will be easier to read when you use a map type that is suitable to your data, based on what you are trying to show in your report. 
+* [Point map type](#point)
+* [Pie map type](#pie)
+* [Column map type](#column)
+* [Choropleth map type](#choropleth)
+ 
+## Point 
 
-The supported map types are: 
+Similar to the [Scatter chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}) of the Graph, the Point map type is used to display a correlations between two sets of values. The main difference is that the set of the first values is defined by geographical coordinates which will position every data point onto the Map. The set of he second values is used as a measure and displays a bubble of a variable size depending on the measured value, that is, the differences between the data points are based on the size of the point. The larger the point is, the greater the difference between the two data points becomes. 
 
-* __Point__ 
+![An image of a Map Point Chart](images/Map/MapPointChart.png)
 
-  Similar to the Graph's [Scatter Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}), it is used to display a correlations between two sets of values. The main difference is that the first values set is defined using a geographical coordinates, which will position every data point onto the map. The second values set is used as a measure and displays a bubble with variable size depending on the measured value, i.e. the differences between the data points are based on the size of the point. The larger the point is, the larger is the difference between the two data points. 
+## Pie 
 
-  ![Map Point Chart](images/Map/MapPointChart.png)
+Similar to the [Pie chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}) of the Graph, a Pie map type is a chart for displaying grouped data on every data point. As with the Point map type, the data point coordinates are defined by the `GeoLocation` group. The analytical data for creating the Pie chart is obtained through the child groups of the `GeoLocation` group. For more information about the setup, refer to the article on [setting the Map with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%}). 
 
-* __Pie__ 
+![An image of a Map Pie Chart](images/Map/MapPieChart.png)
 
-  Such a chart is used to display grouped data as a Graph's [Pie Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}) on every data point. As with the Point map type, the data point coordinates are defined by the GeoLocation group. The analytical data, needed to create the pie chart, is obtained using the child groups of the GeoLocation group. You may learn how to setup such a map in the article [How to Setup a Map Using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%}). 
+## Column 
 
-  ![Map Pie Chart](images/Map/MapPieChart.png)
+Identical to the Pie chart type of the Graph, the Column map type presents analytical data by using the [Column chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}). For an advanced example on creating a Column map type, refer to the article about [creating a Map with a BarChart series with a CSV data source]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%}). 
 
-* __Column__ 
+![An image of a Map Column Chart](images/Map/MapColumnChart.png)
 
-  Identical to the __Pie chart type__, with the only difference that the analytical data is presented using the Graph's [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}). A more advanced example that shows how to create such a map and add some additional extras, can be found in the article [How to Create a Map with BarChart series using CSV data source]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%}). 
+## Choropleth 
 
-  ![Map Column Chart](images/Map/MapColumnChart.png)
+The [Choropleth map type](http://en.wikipedia.org/wiki/Choropleth_map) is a thematic map that uses graded color differences to display a measure over predefined regions or areas, and is one of the most popular ways to visualize how a measure varies across a geographic area. 
 
-* [Choropleth](http://en.wikipedia.org/wiki/Choropleth_map) 
+The Choropleth item is basically a [Map item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%}) with a special kind of series and groups. To create a Choropleth map, you don't have to configure a [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) or use a [`GeoLocationMapGroup`](/reporting/api/Telerik.Reporting.GeoLocationMapGroup) to obtain the coordinates of the data points. Instead, the Choropleth uses a [`ShapeMapSeries`](/reporting/api/Telerik.Reporting.ShapeMapSeries) instance whose major distinction from the other Map series is that they define the source which will be used to provide the spatial data. This source can be either a string, formatted in compliance with the [Well-known text or Well-known binary](http://en.wikipedia.org/wiki/Well-known_text) standards, or an [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile). 
 
-  A thematic map that uses graded color differences to display a measure over predefined regions or areas. It is one of the most popular ways to visualize how a measure varies across a geographic area. An example how to create a Choropleth map can be found in the article [How to Setup a Choropleth Using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%}). 
+To achieve better appearance, the Map item can define a [tile provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}) which will draw an image of the requested Map extent as a background layer onto the plot area. 
 
-  ![Choropleth Chart Type](images/Map/Choropleth/Choropleth_ChartType.png) 
-  
-  The Choropleth item is basically a [Map item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%}) with a special kind of series and groups. To create a choropleth map, there is no need to configure a [Location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}) or use a [GeoLocationMapGroup](/reporting/api/Telerik.Reporting.GeoLocationMapGroup) to obtain the coordinates of the data points. Instead, it uses a [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries) instance, whose major distinction from the other Map series is that they define the source which will be used to provide the spatial data. This source can be either a string, formatted in compliance with the [Well-known text/Well-known binary](http://en.wikipedia.org/wiki/Well-known_text) standards, or an [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile). 
+For an example on creating a Choropleth map type, refer to the article about [setting up a Choropleth by using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%}). 
 
-To achieve better appearance, the Map item can define a [Tile Provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/tile-providers%}) which will draw an image of the requested map extent as a background layer onto the plot area. 
+![An image of a Choropleth Chart Type](images/Map/Choropleth/Choropleth_ChartType.png) 
 
 ## See Also
 
-* [Map Overview]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
-
-* [Map Structure]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [(Demo) Population Density Report with a Choropleth Map](https://demos.telerik.com/reporting/population-density)
+* [(Demo) Crypto Currency Info Report with Choropleth and Point Series](https://demos.telerik.com/reporting/crypto-currency-info)
+* [Overview of the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Structure and Elements of the Map]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview%})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

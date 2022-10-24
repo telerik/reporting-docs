@@ -28,7 +28,7 @@ The Table report item is an indi vidual [data region]({%slug telerikreporting/de
 
 ## Next Steps 
 
-* [Getting Started with the Table Report Item]({%slug table_item_get_started%})
+* [Getting Started with the Crosstab Report Item]({%slug crosstab_item_get_started%})
 * [(Demo) Product Sales Report with a CrossTab Summary](https://demos.telerik.com/reporting/product-sales)
 * [(Demo) List-Bound Report](https://demos.telerik.com/reporting/list-bound-report)
 * [Table Class API Reference](/api/telerik.reporting.table)

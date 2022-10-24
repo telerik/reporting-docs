@@ -5,7 +5,7 @@ description: "Learn more about the available Table, CrossTab, and List template 
 slug: table_template_items
 tags: telerik, reporting, report, items, table, crosstab, list, templates
 published: True
-position: 3
+position: 4
 ---
 
 # Template Variations of the Table Report Item

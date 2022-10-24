@@ -5,7 +5,7 @@ description: "Learn more about the available group editor options of the Telerik
 slug: table_group_editor
 tags: telerik, reporting, report, items, table, crosstab, list, group, editor
 published: True
-position: 7
+position: 8
 ---
 
 # Group Editor

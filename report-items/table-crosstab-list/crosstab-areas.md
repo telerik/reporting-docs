@@ -6,14 +6,14 @@ slug: telerikreporting/designing-reports/report-structure/table-crosstab-list/un
 tags: telerik, reporting, report, items, table, crosstab, list, templates, understanding, crosstab, areas
 previous_url: /table-understanding-crosstab-areas, /report-items/table-crosstab-list/understanding-crosstab-areas
 published: True
-position: 4
+position: 5
 ---
 
 # Crosstab Areas
 
 A CrossTab item provides the Corner, Row Group, Column Group, and Body areas that contain table cells. 
 
-The cells in each area have a distinct function, for example, when you create a group, the Report Designer adds cells to the Row Group or Column Group area to display group instance values.
+The cells in each area have a distinct function. For example, when you create a group, the Report Designer adds cells to the Row Group or Column Group area to display group instance values.
  
 The following image shows the areas of a CrossTab with nested Row Groups, based on **ProductCategory** and **ProductSubCategory**, and nested Column Groups, based on **OrderDate.Year**.
 

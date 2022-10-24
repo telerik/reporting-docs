@@ -10,19 +10,9 @@ position: 3
 
 # Manually Adjusting the Crosstab Report Item
 
-Once you have [added the CrossTab to your report, designed it in the Standalone Report Designer, and closed the wizard]({% slug crosstab_item_get_started %}), you can further adjust the configuration and rendering of the report item by manually setting its required specifics. 
+Once you have [added the CrossTab to your report, designed it in the Standalone Report Designer, and closed the wizard]({% slug crosstab_item_get_started %}), you can further adjust the configuration and rendering of the report item by manually setting its required specifics and achieve the following result.
 
-## Fine-Tuning the Layout 
-
-If you are not planning to add other components to your project, drag the Crosstab so that it starts from the top left corner of the report **Detail** section and collapse the detail section of your report. 
-
-You can also delete the **PageHeader** and **PageFooter** sections that were added by default. The following image shows the **`Design view** of the Crosstab after these changes:
-
-![Manually adjusting the Crosstab in Standalone Designer - Design view](images/CrosstabManualAdjustDesign.png)
-
-The image below shows the **Preview**:
-
-![Manually adjusting the Crosstab in Standalone Designer - Preview](images/CrosstabManualAdjustPreview.png)
+![The final Crosstab created with the Standalone Designer](images/CrosstabFinal.png)
 
 ## Formatting Total Numbers  
 
@@ -67,11 +57,8 @@ You can display some aggregate values in the CrossTab as well. For example, to a
 1. You can also implement the following final adjustments:
 
 	* Rename **Product Name** to **Products Line Count** because it will actually show the number of products you have had from each line. 
-
 	* Increase some column widths to accommodate all of their content.
-
 	* Apply a background color to the grand totals to distinguish them easier.
-
 
 ## Next Steps
 

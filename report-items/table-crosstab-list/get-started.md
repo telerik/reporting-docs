@@ -15,10 +15,11 @@ This guide shows how to create and use the Telerik Reporting Crosstab report ite
 * First, you will add a Crosstab item in an empty report created with the Standalone Designer. You will use the Crosstab Wizard for this purpose.
 * Following the instructions in the wizard, you will create an SqlDataSource to feed the Crosstab with data.
 * With the wizard, you will also create Groups with details and Totals. Additionally, you will create one Row and one Column Group without Totals.
+* Finally, you will manually add some minor adjustments to the layout of the CrossTab. 
 
 After the completion of this guide, you will also be able to configure a Crosstab in the Standalone Designer and achieve the following result: 
 
-![The final Crosstab created with the Standalone Designer](images/CrosstabFinal.png)
+![Manually adjusting the Crosstab in Standalone Designer - Preview](images/CrosstabManualAdjustPreview.png)
 
 ## Adding the Crosstab
 
@@ -29,7 +30,7 @@ To add the Crosstab report item to your report,
 1. Select the **Detail** section of the new report and, from the Standalone Designer Menu, select `Insert`. 
 1. Use the **Crosstab** button from the toolbar and, then, the **Crosstab Wizard** option from the drop-down to open the CrossTab wizard:
 
-![Open the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardStart.png)
+  ![Open the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardStart.png)
 
 1. In the Crosstab wizard, click the **Add New Data Source...** button. As a result, the Create New Data Source wizard will open.
 
@@ -93,6 +94,14 @@ FROM (((([Sales].[SalesOrderDetail]
 After the wizard closes, you will have a fully configured Crosstab in the middle of the Report Detail section:
 
 ![Crosstab in design view after finishing the Crosstab Wizard in the Standalone Designer](images/CrosstabAfterWizardDesign.png)
+
+## Fine-Tuning the Layout 
+
+If you are not planning to add other components to your project, drag the Crosstab so that it starts from the top left corner of the report **Detail** section and collapse the detail section of your report. 
+
+You can also delete the **PageHeader** and **PageFooter** sections that were added by default. The following image shows the **`Design view** of the Crosstab after these changes:
+
+![Manually adjusting the Crosstab in Standalone Designer - Design view](images/CrosstabManualAdjustDesign.png)
 
 ## Next Steps
 

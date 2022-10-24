@@ -14,7 +14,7 @@ This guide shows how to create and use the Telerik Reporting Crosstab report ite
 
 * First, you will add a Crosstab item in an empty report created with the Standalone Designer. You will use the Crosstab Wizard for this purpose.
 * Following the instructions in the wizard, you will create an SqlDataSource to feed the Crosstab with data.
-* With the wizard, you will also create Groups with details and Totals. Additionally, you will create one Row and one Column Group without Totals.
+* With the wizard, you will create one Row and one Column Group without Totals.
 * Finally, you will manually add some minor adjustments to the layout of the CrossTab. 
 
 After the completion of this guide, you will also be able to configure a Crosstab in the Standalone Designer and achieve the following result: 

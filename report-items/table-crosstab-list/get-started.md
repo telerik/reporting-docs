@@ -30,7 +30,7 @@ To add the Crosstab report item to your report,
 1. Select the **Detail** section of the new report and, from the Standalone Designer Menu, select `Insert`. 
 1. Use the **Crosstab** button from the toolbar and, then, the **Crosstab Wizard** option from the drop-down to open the CrossTab wizard:
 
-  ![Open the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardStart.png)
+	![Open the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardStart.png)
 
 1. In the Crosstab wizard, click the **Add New Data Source...** button. As a result, the Create New Data Source wizard will open.
 
@@ -39,24 +39,24 @@ To add the Crosstab report item to your report,
 1. From the list with the available DataSource components, select **SqlDataSource** and name it **crosstabSqlDataSource**.
 1. [Populate the report with data]({%slug telerikreporting/getting-started/first-steps%}#step-3-populate-the-report-with-data).
 
-For the purposes of this demo, you will use the following query from the __AdventureWorks__ sample database: 
+	For the purposes of this demo, you will use the following query from the __AdventureWorks__ sample database: 
 
-````SQL
+	````SQL
 SELECT
-	[Production].[Product].[Name] AS 'ProductName', 
-	[Production].[ProductCategory].[Name] AS 'ProductCategory', 
-	[Production].[ProductSubcategory].[Name] AS 'ProductSubCategory', 
-	[Sales].[SalesOrderDetail].[LineTotal], 
-	[Sales].[SalesOrderHeader].[OrderDate]
-FROM (((([Sales].[SalesOrderDetail]
- INNER JOIN [Sales].[SalesOrderHeader]
- ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID])
- INNER JOIN [Production].[Product]
- ON [Sales].[SalesOrderDetail].[ProductID] = [Production].[Product].[ProductID])
- INNER JOIN [Production].[ProductSubcategory]
- ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID])
- INNER JOIN [Production].[ProductCategory]
- ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID])
+		[Production].[Product].[Name] AS 'ProductName', 
+		[Production].[ProductCategory].[Name] AS 'ProductCategory', 
+		[Production].[ProductSubcategory].[Name] AS 'ProductSubCategory', 
+		[Sales].[SalesOrderDetail].[LineTotal], 
+		[Sales].[SalesOrderHeader].[OrderDate]
+	FROM (((([Sales].[SalesOrderDetail]
+		INNER JOIN [Sales].[SalesOrderHeader]
+		ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID])
+		INNER JOIN [Production].[Product]
+		ON [Sales].[SalesOrderDetail].[ProductID] = [Production].[Product].[ProductID])
+		INNER JOIN [Production].[ProductSubcategory]
+		ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID])
+		INNER JOIN [Production].[ProductCategory]
+		ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID])
 ````
 
 
@@ -99,7 +99,7 @@ After the wizard closes, you will have a fully configured Crosstab in the middle
 
 If you are not planning to add other components to your project, drag the Crosstab so that it starts from the top left corner of the report **Detail** section and collapse the detail section of your report. 
 
-You can also delete the **PageHeader** and **PageFooter** sections that were added by default. The following image shows the **`Design view** of the Crosstab after these changes:
+You can also delete the **PageHeader** and **PageFooter** sections that were added by default. The following image shows the **Design view** of the Crosstab after these changes:
 
 ![Manually adjusting the Crosstab in Standalone Designer - Design view](images/CrosstabManualAdjustDesign.png)
 

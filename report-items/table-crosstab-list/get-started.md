@@ -10,11 +10,13 @@ position: 1
 
 # Getting Started with the Crosstab Report Item
 
-This guide shows how to create and use the Telerik Reporting Crosstab report item in reports with the [Telerik Reporting Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).
+The Telerik Reporting Crosstab is a template variation of the Telerik Reporting Table report item, the difference between the two being that the Crosstab uses grouped data. As a result, the Crosstab is more frequently used in real-case scenarios and its Wizard provides more options for manipulating its data than the Table Wizard does.
+
+Therefore, this guide shows how to create and use the Telerik Reporting Crosstab report item in reports with the [Telerik Reporting Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). Note that the Crosstab Wizard of the Standalone Report Designer is identical to the Table Wizard, except for the grouping and total aggregates options, and, if required, you can add a Table instead of a Crosstab to your report by following the same steps from this guide.
 
 * First, you will add a Crosstab item in an empty report created with the Standalone Designer. You will use the Crosstab Wizard for this purpose.
 * Following the instructions in the wizard, you will create an SqlDataSource to feed the Crosstab with data.
-* With the wizard, you will create one Row and one Column Group without Totals.
+* With the wizard, you will also create one Row and one Column Group without Totals.
 * Finally, you will manually add some minor adjustments to the layout of the CrossTab. 
 
 After the completion of this guide, you will also be able to configure a Crosstab in the Standalone Designer and achieve the following result: 

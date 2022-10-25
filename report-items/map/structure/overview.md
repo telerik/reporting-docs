@@ -9,7 +9,7 @@ published: True
 position: 0
 ---
 
-# Map Structure and Elements Overview
+# Overview of the Map Structure and Elements
 
 The Map report item enables you to visualize aggregated business data in a geographical manner.
 

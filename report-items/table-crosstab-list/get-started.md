@@ -10,13 +10,13 @@ position: 1
 
 # Getting Started with the Crosstab Report Item
 
-The Telerik Reporting Crosstab is a template variation of the Telerik Reporting Table report item, the difference between the two being that the Crosstab uses grouped data. As a result, the Crosstab is more frequently used in real-case scenarios and provides more options for manipulating its data than the Table does.
+The Telerik Reporting Crosstab is a template variation of the Telerik Reporting Table report item, the difference between the two being that the Crosstab uses grouped data. As a result, the Crosstab is more frequently used in real-case scenarios and its Wizard provides more options for manipulating its data than the Table Wizard does.
 
 Therefore, this guide shows how to create and use the Telerik Reporting Crosstab report item in reports with the [Telerik Reporting Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). Note that the Crosstab Wizard of the Standalone Report Designer is identical to the Table Wizard, except for the grouping and total aggregates options, and, if required, you can add a Table instead of a Crosstab to your report by following the same steps from this guide.
 
 * First, you will add a Crosstab item in an empty report created with the Standalone Designer. You will use the Crosstab Wizard for this purpose.
 * Following the instructions in the wizard, you will create an SqlDataSource to feed the Crosstab with data.
-* With the wizard, you will also create Groups with details and Totals. Additionally, you will create one Row and one Column Group without Totals.
+* With the wizard, you will also create one Row and one Column Group without Totals.
 * Finally, you will manually add some minor adjustments to the layout of the CrossTab. 
 
 After the completion of this guide, you will also be able to configure a Crosstab in the Standalone Designer and achieve the following result: 
@@ -32,7 +32,7 @@ To add the Crosstab report item to your report,
 1. Select the **Detail** section of the new report and, from the Standalone Designer Menu, select `Insert`. 
 1. Use the **Crosstab** button from the toolbar and, then, the **Crosstab Wizard** option from the drop-down to open the CrossTab wizard:
 
-  ![Open the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardStart.png)
+	![Open the Crosstab Wizard in the Standalone Designer](images/CrosstabWizardStart.png)
 
 1. In the Crosstab wizard, click the **Add New Data Source...** button. As a result, the Create New Data Source wizard will open.
 
@@ -41,24 +41,24 @@ To add the Crosstab report item to your report,
 1. From the list with the available DataSource components, select **SqlDataSource** and name it **crosstabSqlDataSource**.
 1. [Populate the report with data]({%slug telerikreporting/getting-started/first-steps%}#step-3-populate-the-report-with-data).
 
-For the purposes of this demo, you will use the following query from the __AdventureWorks__ sample database: 
+	For the purposes of this demo, you will use the following query from the __AdventureWorks__ sample database: 
 
-````SQL
+	````SQL
 SELECT
-	[Production].[Product].[Name] AS 'ProductName', 
-	[Production].[ProductCategory].[Name] AS 'ProductCategory', 
-	[Production].[ProductSubcategory].[Name] AS 'ProductSubCategory', 
-	[Sales].[SalesOrderDetail].[LineTotal], 
-	[Sales].[SalesOrderHeader].[OrderDate]
-FROM (((([Sales].[SalesOrderDetail]
- INNER JOIN [Sales].[SalesOrderHeader]
- ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID])
- INNER JOIN [Production].[Product]
- ON [Sales].[SalesOrderDetail].[ProductID] = [Production].[Product].[ProductID])
- INNER JOIN [Production].[ProductSubcategory]
- ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID])
- INNER JOIN [Production].[ProductCategory]
- ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID])
+		[Production].[Product].[Name] AS 'ProductName', 
+		[Production].[ProductCategory].[Name] AS 'ProductCategory', 
+		[Production].[ProductSubcategory].[Name] AS 'ProductSubCategory', 
+		[Sales].[SalesOrderDetail].[LineTotal], 
+		[Sales].[SalesOrderHeader].[OrderDate]
+	FROM (((([Sales].[SalesOrderDetail]
+		INNER JOIN [Sales].[SalesOrderHeader]
+		ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID])
+		INNER JOIN [Production].[Product]
+		ON [Sales].[SalesOrderDetail].[ProductID] = [Production].[Product].[ProductID])
+		INNER JOIN [Production].[ProductSubcategory]
+		ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID])
+		INNER JOIN [Production].[ProductCategory]
+		ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID])
 ````
 
 
@@ -101,7 +101,7 @@ After the wizard closes, you will have a fully configured Crosstab in the middle
 
 If you are not planning to add other components to your project, drag the Crosstab so that it starts from the top left corner of the report **Detail** section and collapse the detail section of your report. 
 
-You can also delete the **PageHeader** and **PageFooter** sections that were added by default. The following image shows the **`Design view** of the Crosstab after these changes:
+You can also delete the **PageHeader** and **PageFooter** sections that were added by default. The following image shows the **Design view** of the Crosstab after these changes:
 
 ![Manually adjusting the Crosstab in Standalone Designer - Design view](images/CrosstabManualAdjustDesign.png)
 

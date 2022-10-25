@@ -1,6 +1,6 @@
 ---
-title: Structure and Elements 
-page_title: Structure and Elements of the Map Report Item
+title: Overview
+page_title: Structure and Elements Overview of the Map Report Item
 description: "Learn more about the visual structure and elements of the Telerik Reporting Map report item." 
 slug: telerikreporting/designing-reports/report-structure/map/structure/overview
 tags: telerik, reporting, map, report, item, structure, elements, overview
@@ -9,7 +9,7 @@ published: True
 position: 0
 ---
 
-# Structure and Elements
+# Map Structure and Elements Overview
 
 The Map report item enables you to visualize aggregated business data in a geographical manner.
 

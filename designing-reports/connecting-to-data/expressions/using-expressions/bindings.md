@@ -33,6 +33,6 @@ When constructing a Binding instance with Binding constructor, you must specify:
 
 ## See Also
 
-* [Telerik.Reporting.Binding](/reporting/api/Telerik.Reporting.Binding) 
-
-* [Telerik.Reporting.BindingCollection](/reporting/api/Telerik.Reporting.BindingCollection) 
+* [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%})
+* [Telerik.Reporting.Binding](/reporting/api/Telerik.Reporting.Binding)
+* [Telerik.Reporting.BindingCollection](/reporting/api/Telerik.Reporting.BindingCollection)

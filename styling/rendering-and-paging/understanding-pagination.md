@@ -100,7 +100,7 @@ By default, Table item is kept together. To force nested table to break set `Kee
 
 If the report spans over several pages in width then its sections are stretched from the left edge of the left-most page’s printable area to the right edge of the right-most page’s printable area, as displayed in the following diagram: 
 
-![](images/SectionSpan.jpg)
+![Horizontal Pagination](images/SectionSpan.jpg)
 
 >caution If your report item (table) is too wide to fit on the page it will cause a horizontal overflow and will continue on the next page. However whenever this happens if there is additional content below the table a blank page for each additional page (needed by the table) will be generated. To understand this better consider the following example: 
 

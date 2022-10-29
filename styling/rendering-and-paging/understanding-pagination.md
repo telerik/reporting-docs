@@ -91,8 +91,13 @@ By default, Table item is kept together. To force nested table to break set `Kee
 >
 >_Example_: Report group has `GroupKeepTogether = FirstDetail`, this means that the summary height of the group header, height of all child group headers (if any) and height of the first detail should be able to fit on a single page in order for the KeepTogether algorithm to work and move the whole Group on a new page. 
 
-
->The Page sections `Height` and `Visible` properties may be set dynamically with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}). This changes the available area for the rest of the report content that may be placed on the page. While these dynamic modifications are taken into account when calculating the available space for the content of the current page, they cannot be predicted on the previous page, when deciding whether an item or section should be split or entirely moved to the next page, for example, when the item's `KeepTogether` property is set to `True`. This behavior is by design and should be taken into account as in some corner cases may lead to unexpected behavior. 
+>One may change the Page sections' `Height` and `Visible` properties for particular pages applying 
+[Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}).
+This results in taller or shorter available space for the rest of the report content on the affected pages. 
+The paging logic respects the changed space when it fits content on the current page.
+However, it cannot predict if a change in the available space will occur on the next page.
+For that reason, while applying the paging rules on the current page, the logic assumes that the available space on the next page will not be changed dynamically, i.e., it will stay as designed in the report definition. 
+Consider this implication when applying such Bindings, as it may lead to unexpected pagination behavior.
 >
 >_Example_: If you have a _Panel_ with `KeepTogether = True`, the expectation is to have it entirely on a new page if it cannot fit on the current one but can fit on a new page. Lets assume that the _Panel_ `Height` is such that it fits on a physical page if it doesn't have a _PageHeader_ and cannot fit if it does. In this scenario, if your report has _PageHeader_, the _Panel_ will be split even if the _PageHeader_ `Visible` property is `False` or its `Height` is reduced with _Bindings_ to allow the _Panel_ to fit entirely on a new page. The reason is that the Reporting engine caclulates the expected available area for the next page based on the report definition property values for the Page sections' `Height`. The `Visible` property is not taken into account. If there is no _PageHeader_ section in the report, the _Panel_ `KeepTogether` will work as expected.
 

@@ -53,16 +53,18 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 			<Telerik.Reporting>
 				...
 				<traceListeners>
-					<add name="myListener" type="MyClassInheritingSystemDiagnosticsTraceListener" initializeData="StandaloneDesigner.Net.LOG" />
+					<add name="myCustomListener" type="CustomListenersNamespace.CustomListener, CustomListenersAssembly"  initializeData="Telerik.ReportDesigner.custom.log" />
 					<remove name="Default" />
 				</traceListeners>
 			</Telerik.Reporting>
 		</configuration>
 ````
 
-		The `type` _MyClassInheritingSystemDiagnosticsTraceListener_ in the snippet is a placeholder for the name of the type implementing the abstract class [System.Diagnostics.TraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelistener?view=net-6.0). You may use its implementations in `System.Diagnosics` like [System.Diagnostics.TextWriterTraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.textwritertracelistener?view=net-6.0) and they will be discovered automatically. 
+		The `type` specifies the Assembly Qualified Name of the Trace Listener type implementing the abstract class [System.Diagnostics.TraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelistener?view=net-6.0).
 
-		If you provide a custom `type`, you need to copy the assembly where it resides in the designer's folder (see its path below).
+		You may use its implementations in `System.Diagnosics` like [System.Diagnostics.TextWriterTraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.textwritertracelistener?view=net-6.0) and they will be discovered automatically even if you don't provide the assembly name specified as _CustomListenersAssembly_. 
+
+		If you provide a custom `type`, you need to copy its assembly in the designer's folder (see its path below). You need also to provide the assembly name _CustomListenersAssembly_ along with the full type name _CustomListenersNamespace.CustomListener_.
 
 		More details about the .NET Standalone Report Designer's configuration file are available in the [Configuration]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview%}) article. `Telerik.ReportDesigner.Net.dll.config` resides in the __[InstallDir]/Report Designer/.NET__ directory by default (it is recommended to create a backup copy before modifying it). 
 

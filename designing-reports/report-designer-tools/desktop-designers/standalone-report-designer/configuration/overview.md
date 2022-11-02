@@ -169,6 +169,7 @@ The following code example shows the default `Telerik.ReportDesigner.Net.dll.con
 	<!-- Add trace listeners (in .NET6 and later assemblies that contain custom listeners are resolved by file name)-->
 	<!--
 		<traceListeners>
+			<add name="myCustomListener" type="CustomListenersNamespace.CustomListener, CustomListenersAssembly"  initializeData="Telerik.ReportDesigner.custom.log" />
 			<add name="myListener" type="System.Diagnostics.TextWriterTraceListener"  initializeData="Telerik.ReportDesigner.Net.log" />
 			<remove name="Default" />
 		</traceListeners>
@@ -177,6 +178,9 @@ The following code example shows the default `Telerik.ReportDesigner.Net.dll.con
 </configuration>
 ````
 
+If you configure a custom Trace Listener, you need to provide in the `type` the Assembly Qualified Name of the Trace Listener type implementing the abstract class [System.Diagnostics.TraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelistener?view=net-6.0). The assembly name _CustomListenersAssembly_ must be specified along with the full type name _CustomListenersNamespace.CustomListener_. You need also to copy the assembly in the designer's folder, by default __[InstallDir]/Report Designer/.NET__. 
+
+You may use the Trace Listeners in `System.Diagnosics` like [System.Diagnostics.TextWriterTraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.textwritertracelistener?view=net-6.0) without the assembly name. The full type name _System.Diagnostics.TextWriterTraceListener_ is sufficient to discover and utilize the Trace Listener.
 
 ## See Also
 

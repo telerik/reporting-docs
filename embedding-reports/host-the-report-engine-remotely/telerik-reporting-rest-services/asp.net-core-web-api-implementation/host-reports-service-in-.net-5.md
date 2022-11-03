@@ -11,7 +11,7 @@ previous_url: /telerik-reporting-rest-service-aspnetcore-net5
 
 # How to Host Reports Service in ASP.NET Core in .NET 5
 
-This article guides you how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET 5 Web Application. 
+This article guides you how to host a Reports Web Ser  vice in order to expose the Reports Generation Engine to an ASP.NET Core in .NET 5 Web Application. 
 
 The guide is separated into sections for readability reasons. Along with the steps, it elaborates on the concepts and theory behind each step. 
 

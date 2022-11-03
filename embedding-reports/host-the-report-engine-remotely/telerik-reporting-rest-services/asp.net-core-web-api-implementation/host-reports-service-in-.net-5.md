@@ -11,7 +11,7 @@ previous_url: /telerik-reporting-rest-service-aspnetcore-net5
 
 # How to Host Reports Service in ASP.NET Core in .NET 5
 
-This article guides you how to host a Reports Web Ser  vice in order to expose the Reports Generation Engine to an ASP.NET Core in .NET 5 Web Application. 
+This article guides you how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET 5 Web Application. 
 
 The guide is separated into sections for readability reasons. Along with the steps, it elaborates on the concepts and theory behind each step. 
 
@@ -20,6 +20,16 @@ The guide is separated into sections for readability reasons. Along with the ste
 * [Visual Studio 2019, version 16.8+](https://www.visualstudio.com/vs/) 
 
 * [NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0) 
+
+## Using the REST Service Project Template
+
+In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL. 
+
+![REST Service Project Configuration menu](images/rest-service-project-configuration-menu.png)
+
+Set the Target Framework to .NET5
+
+Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution. 
 
 ## Creating a Sample ASP.NET Core in .NET 5 Project
 

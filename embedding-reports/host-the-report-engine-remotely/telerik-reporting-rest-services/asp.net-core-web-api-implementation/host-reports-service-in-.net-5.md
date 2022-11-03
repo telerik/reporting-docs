@@ -27,7 +27,7 @@ In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporti
 
 ![REST Service Project Configuration menu](images/rest-service-project-configuration-menu.png)
 
-Set the Target Framework to .NET5
+Set the Target Framework to .NET 5
 
 Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution. 
 

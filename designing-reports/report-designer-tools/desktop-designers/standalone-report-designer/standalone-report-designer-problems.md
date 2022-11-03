@@ -19,7 +19,7 @@ When the Standalone Report Designer crashes while working with Telerik Reporting
 
 * Try the reproduce the crash on another machine to exclude machine specific problems e.g., corrupted Telerik Reporting installation.
 
-* Provide us with a log file containing detailed information about the Standalone Report Designer crash. To create the log file, turn on tracing for the Standalone Report Designer and perform the actions which caused the crash. Below is the XML you need to add to the `Telerik.ReportDesigner.exe.config` file to enable tracing: 
+* Provide us with a log file containing detailed information about the Standalone Report Designer crash. To create the log file, turn on tracing for the Standalone Report Designer and perform the actions which caused the crash. Below is the XML you need to add to the designer's configuration file to enable tracing: 
 
 	+ For the `.NET Framework` Standalone Designer version
 

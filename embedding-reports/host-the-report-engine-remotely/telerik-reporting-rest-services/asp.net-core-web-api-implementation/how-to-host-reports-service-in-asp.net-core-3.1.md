@@ -21,6 +21,16 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 * [NET Core 3 SDK](https://www.microsoft.com/net/download/core) 
 
+## Using the REST Service Project Template
+
+In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL. 
+
+![REST Service Project Configuration menu](images/rest-service-project-configuration-menu-netcore31.png)
+
+Set the Target Framework to .NET Core 3.1
+
+Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution. 
+
 ## Creating a Sample ASP.NET Core 3.1 Project
 
 First, you need to create a new ASP.NET Core project: 

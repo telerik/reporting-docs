@@ -63,13 +63,11 @@ The Native Blazor Report Viewer is a native Blazor component which can be used i
 
 The current release of the Native Blazor Report Viewer component is missing the following functionalities:
 
-- Search report content functionality
-
 - Accessibility
 
-- Extensibility - customizing the toolbar with own tooltips, icons, aria-labels and viewer commands
+- Extensibility 
 
-- Report items tooltips
+- Tooltips
 
 > The above functionalities will be implemented in future releases of the Native Blazor Report Viewer
 

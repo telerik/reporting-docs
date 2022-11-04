@@ -25,7 +25,7 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL. 
 
-![REST Service Project Configuration menu](images/rest-service-project-configuration-menu.png)
+![REST Service Project Configuration menu](images/rest-service-project-configuration-menu-net5.png)
 
 Set the Target Framework to .NET 5
 

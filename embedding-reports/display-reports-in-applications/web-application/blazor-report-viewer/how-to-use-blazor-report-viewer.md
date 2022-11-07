@@ -65,7 +65,7 @@ Alternatively you can use the [Kendo UI Less-Based Themes](https://docs.telerik.
 @*<script src="_content/Telerik.ReportViewer.Blazor.Trial/interop.js" defer /script>*@
 ````
 
-1. If using Reports web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application the ServiceUrl setting should be the absolute URI to the service. Remember to set the actual __ReportSource__ along with eventual parameters: 
+1. If using Reports web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. Remember to set the actual __ReportSource__ along with eventual parameters: 
     
       ````
 @page "/"

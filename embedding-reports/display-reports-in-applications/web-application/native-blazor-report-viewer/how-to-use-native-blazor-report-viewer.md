@@ -76,8 +76,7 @@ app.UseStaticFiles();
 	</TelerikRootComponent>
 ````
 
-
-1. Use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. Remember to set the actual __ReportSource__ along with eventual parameters: 
+1. If using Reports web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. Remember to set the actual __ReportSource__ along with eventual parameters: 
 
 	````
 @page "/"
@@ -85,6 +84,7 @@ app.UseStaticFiles();
 	<PageTitle>Report Viewer</PageTitle>
 
 	<ReportViewer
+		ServiceType="@ReportViewerServiceType.REST"
 		ServiceUrl="https://demos.telerik.com/reporting/api/reports"
 		@bind-ReportSource="@ReportSource"
 		@bind-ScaleMode="@ScaleMode"
@@ -108,6 +108,39 @@ app.UseStaticFiles();
 	}
 ````
 
+1. If displaying reports from a Report Server instance use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Remember to set the actual __ReportServer__ and __ReportSource__ settings: 
+
+	````
+@page "/"
+
+<PageTitle>Report Viewer</PageTitle>
+
+<ReportViewer 
+    ServiceType="@ReportViewerServiceType.ReportServer" 
+    @bind-ReportSource="@ReportSource"
+    @bind-ScaleMode="@ScaleMode"
+    @bind-ViewMode="@ViewMode"
+    @bind-ParametersAreaVisible="@ParametersAreaVisible"
+    @bind-DocumentMapVisible="@DocumentMapVisible"
+    @bind-Scale="@Scale">
+    <ReportViewerSettings>
+        <ReportServerSettings Url="https://demos.telerik.com/report-server/" Username="demouser" Password="demopass"></ReportServerSettings>
+    </ReportViewerSettings>
+</ReportViewer>
+
+@code {
+    public ScaleMode ScaleMode { get; set; } = ScaleMode.Specific;
+    public ViewMode ViewMode { get; set; } = ViewMode.Interactive;
+    public bool ParametersAreaVisible { get; set; }
+    public bool DocumentMapVisible { get; set; }
+    public double Scale { get; set; } = 1.0;
+
+    public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Published/Dashboard", new Dictionary<string, object>
+    {
+        // Add parameters if applicable
+    });
+}
+````
 
 1. Use the rest of the parameters exposed on the Blazor viewer component to setup its appearance and behavior as desired. 
 

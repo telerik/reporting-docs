@@ -11,7 +11,12 @@ previous_url: /programmatic-xml-serialization
 
 # Serialize Report Definition in XML
 
-__Telerik Reporting__ supports serialization/deserialization of the report definition as plain __XML__. This is useful in various different scenarios and opens many possibilities that are not easily accomplished otherwise. For example, this allows adding or modifying reports in your application without recompiling or redeploying it. Another typical scenario is saving/loading of dynamically generated report definitions or transferring them over the network. 
+__Telerik Reporting__ supports serialization/deserialization of the report definition as plain __XML__. The `TRDX` and `TRDP` files are declarative XML report definitions:
+
+* `TRDX` is a self-contained XML report definition. All embedded images are serialized in the XML file.
+* `TRDP` is a ZIP archive containing the XML report definition. It may also contain resources like image and localization files packed in the archive.
+
+The report serialization/deserialization is useful in various different scenarios and opens many possibilities that are not easily accomplished otherwise. For example, this allows adding or modifying reports in your application without recompiling or redeploying it. Another typical scenario is saving/loading of dynamically generated report definitions or transferring them over the network. 
 
 > In order to better handle report definition resources we also provide a [ReportPackager](/reporting/api/Telerik.Reporting.ReportPackager) that serializes the report definition in XML and packages it together with its resources in a file with zip compression. For more information see: [Package Report Definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}). 
 

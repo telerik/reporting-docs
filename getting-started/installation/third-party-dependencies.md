@@ -15,7 +15,7 @@ The proper functioning of some specific Telerik Reporting features depends on th
 
 ## Deploying ADOMD.NET
 
-ADOMD.NET is a.NET object model that is used for building client applications which access XML for Analysis 1.1 compliant data providers such as the data provider by the XML for Analysis 1.1 SDK. To download the ADOMD.NET, refer to the [ADOMD.NET download link](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=790d631b-bff9-4f4a-b648-e9209e6ac8ad). 
+ADOMD.NET is a.NET object model that is used for building client applications which access XML for Analysis 1.1 compliant data providers such as the data provider by the XML for Analysis 1.1 SDK. To download the ADOMD.NET, refer to the [ADOMD.NET download link](https://www.microsoft.com/en-us/download/details.aspx?id=55264). 
 
 To connect to Microsoft Analysis Services and to execute an MDX query against the desired OLAP cube, the Telerik Reporting [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) component internally uses the ADOMD.NET client data provider. 
 
@@ -33,8 +33,6 @@ The `DocumentFormat.OpenXml` assembly has two versions with different Public Key
 
 > To generate compatible document types, always use the latest available version. To use later versions other than the versions previously listed, add [`bindingRedirect`](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx) for `DocumentFormat.OpenXml.dll` assembly to the configuration file of the application. 
 
-
 To download Open XML by using the NuGet feed, refer to the [`DocumentFormat.OpenXml` NuGet package](https://www.nuget.org/packages/DocumentFormat.OpenXml/). 
 
-To avoid using the NuGet feed and download Open XML, download and install [Open XML SDK 2.0 for Microsoft Office](http://www.microsoft.com/downloads/en/details.aspx?FamilyId=C6E744E5-36E9-45F5-8D8C-331DF206E0D0).
-
+To avoid using the NuGet feed and download Open XML, download and install [Open XML SDK 2.0 for Microsoft Office](https://learn.microsoft.com/en-us/previous-versions/office/developer/office-2010/bb456487(v=office.14)).

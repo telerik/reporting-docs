@@ -53,16 +53,16 @@ To set an expression as a PictureBox value in the Report Designer:
 
 To bind an image data to a PictureBox when using a Report Designer is a straight-forward process. You need to connect to a data source and drag the image field from the [**Data Explorer**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) window to your report. As a result, the report designer tool will associate each field based on its data type. 
 
-Alternatively, you can drag a PictureBox item to the design surface and use an expression to set its `Value` property to an existing field from the data source. The type of the `PictureBox.Value` property is [`Object`](http://msdn2.microsoft.com/en-us/library/system.object(VS.71).aspx) which allows for versatile data binding and you do not have to directly bind to a database field with an image column.
+Alternatively, you can drag a PictureBox item to the design surface and use an expression to set its `Value` property to an existing field from the data source. The type of the `PictureBox.Value` property is [`Object`](https://learn.microsoft.com/en-us/dotnet/api/system.object) which allows for versatile data binding and you do not have to directly bind to a database field with an image column.
 
-The `Value` property accepts objects of type [`Image`](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx), byte array and strings. The string can be either of the following: 
+The `Value` property accepts objects of type [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image), byte array and strings. The string can be either of the following: 
 
-* An expression&mdash;The expression must evaluate to an [`Image`](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx), byte array, relative or absolute [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx), or a string representing a Base64-encoded image or an SVG markup.  
-* A string literal&mdash;The string literal can be a relative or absolute [Uri](http://msdn.microsoft.com/en-us/library/system.uri.aspx), or a string representing a Base64-encoded image or an SVG markup.
+* An expression&mdash;The expression must evaluate to an [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image), byte array, relative or absolute [Uri](https://learn.microsoft.com/en-us/dotnet/api/system.uri), or a string representing a Base64-encoded image or an SVG markup.  
+* A string literal&mdash;The string literal can be a relative or absolute [Uri](https://learn.microsoft.com/en-us/dotnet/api/system.uri), or a string representing a Base64-encoded image or an SVG markup.
 
 ### Binding to Binary Images
 
-You can directly assign a reference to an [`Image`](http://msdn2.microsoft.com/en-us/library/system.drawing.image.aspx) to the `Value` property of a PictureBox. 
+You can directly assign a reference to an [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image) to the `Value` property of a PictureBox. 
 
 ````C#
 using System.Drawing;
@@ -141,7 +141,6 @@ Me.PictureBox6.Value = "http://www.mysite.com/images/img1.gif" 'absolute URL
 The clipping and positioning of an image in the display area of the PictureBox item is controlled by its `Sizing` property. 
 
 The following table lists the `Sizing` property modes. 
-
 
 | Name | Description |
 | ------ | ------ |

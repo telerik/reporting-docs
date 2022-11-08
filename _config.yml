@@ -50,58 +50,25 @@ navigation:
         title: "Report"     
     report-items/table-crosstab-list:
         position: 13
-        title: "Table/Crosstab/List"    
+        title: "Table"    
     report-items/graph:
         position: 5
         title: "Graph"
     report-items/graph/chart-types:
         position: 10
         title: "Chart Types"
-    report-items/graph/chart-types/area-charts:
-        position: 10
-        title: "Area Charts"
-    report-items/graph/chart-types/bar-charts:
-        position: 11
-        title: "Bar Charts"
-    report-items/graph/chart-types/column-charts:
-        position: 12
-        title: "Column Charts"
-    report-items/graph/chart-types/line-charts:
-        position: 13
-        title: "Line Charts"
-    report-items/graph/chart-types/pie-charts:
-        position: 14
-        title: "Pie Charts"
-    report-items/graph/chart-types/polar-charts:
-        position: 15
-        title: "Polar Charts"
-    report-items/graph/chart-types/range-charts:
-        position: 16
-        title: "Range Charts"
-    report-items/graph/chart-types/scatter-charts:
-        position: 17
-        title: "Scatter Charts"    
-    report-items/graph/chart-types/ohlc-charts:
-        position: 18
-        title: "OHLC Charts"
     report-items/graph/formatting-a-graph:
-        position: 11
-        title: "Formatting a Graph"
-    report-items/graph/how-to:
-        position: 12
-        title: "How To"
+        position: 20
+        title: "Styling and Formatting"
     report-items/map:
         position: 7
         title: "Map"
     report-items/map/structure:
         position: 10
-        title: "Structure"    
+        title: "Structure and Elements"    
     report-items/map/formatting-a-map:
         position: 11
-        title: "Formatting a Map"
-    report-items/map/how-to:
-        position: 12
-        title: "How To"
+        title: "Styling and Formatting"
     report-items/htmltextbox:
         position: 6
         title: "HtmlTextBox"

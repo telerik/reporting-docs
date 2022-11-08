@@ -28,7 +28,7 @@ Currently, the Barcode report item supports the following matrix barcode types:
 | ------ | ------ |
 |[QR Code]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/qr-code/overview%})|One of the most popular 2D barcodes with wide commercial application.|
 |[Swiss QR Code]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/swiss-qr-code/overview%})|A barcode based on the QR symbology used exclusively in Switzerland payment slips, named QR-bill.|
-|[PDF147]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417/overview%})|A stacked linear 2D barcode used by U.S. Postal Services, Department of Homeland Security, airline industry and others.|
+|[PDF417]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/pdf417/overview%})|A stacked linear 2D barcode used by U.S. Postal Services, Department of Homeland Security, airline industry and others.|
 |[Data Matrix]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/2d-barcodes/data-matrix/overview%})|A 2D barcode mostly used to mark smaller areas due to its high data density. Recommended by the US Electronic Industries Alliance. |
 
 

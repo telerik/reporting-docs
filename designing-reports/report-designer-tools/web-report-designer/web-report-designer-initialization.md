@@ -45,6 +45,10 @@ $(document).ready(function () {
         toolboxArea: {
             layout: "list"
         },
+		propertiesArea: {
+            layout: "alphabetical" 
+        },
+        skipOnboarding: false,
         serviceUrl: "api/reportdesigner/",
         report: "Report Catalog.trdp"
     }).data("telerik_WebDesigner");

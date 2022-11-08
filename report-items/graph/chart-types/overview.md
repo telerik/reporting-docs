@@ -1,9 +1,9 @@
 ---
-title: Chart Types Overview
+title: Overview
 page_title: Chart Types Overview
-description: Chart Types Overview
+description: "Learn more about the chart types supported by the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/overview
-tags: overview
+tags: telerik, reporting, report, items, graph, chart, types, overview
 published: True
 position: 0
 previous_url: /ChartTypes
@@ -11,15 +11,17 @@ previous_url: /ChartTypes
 
 # Chart Types Overview
 
-It is important to choose an appropriate chart type for the type of data that you are presenting. This will determine how well the data can be interpreted when put in chart form. For example, if your dataset contains a lot of data points relative to the size of the chart, it may be better presented using an area, line, or scatter chart. Details how to prepare your data depending on the selected chart type, see [Connecting to Data]({%slug telerikreporting/designing-reports/report-structure/graph/connecting-to-data%}).
+Choosing an appropriate chart type for successfully presenting data will determine how well the data can be interpreted when displayed in a chart form. For example, if your dataset contains a lot of data points relative to the size of the chart, it may be better presented by using an Area, Line, or Scatter chart. 
 
-## Choosing a Chart Type
+For more information about preparing your data depending on the selected chart type, refer to the article [Structure and Elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}).
 
-Each chart type has unique characteristics to help you visualize your dataset. You can use any chart type to display your data, but your data will be easier to read when you use a chart type that is suitable to your data, based on what you are trying to show in your report. The following table summarizes chart features that affect the suitability of a chart to your particular dataset.
+## Supported Chart Types
 
-You can change the chart type after you have created it. For more information, see [How to: Change a Chart Type]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-a-chart-type%}).
+Each chart type provides unique characteristics for visualizing datasets. You can use any chart type to display data, but the data will be easier to read when you use a suitable chart type based on what you are required to show in your report. 
 
-Examples of many of these types of charts are available as sample reports in the local demos located under [InstallDir]\Examples.
+The following table summarizes the specific chart features that affect the suitability of a chart to a particular dataset. Note that you can also [change the chart type after you have created it]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-a-chart-type%}).
+
+For examples of the described chart types, refer to the sample reports in the local demos located in `[InstallDir]\Examples`.
 
 | Chart type | Display ratio data | Display stock data | Display linear data | Display multi-value data |
 | ------ |:------:|:------:|:------:|:------:|
@@ -35,3 +37,8 @@ Examples of many of these types of charts are available as sample reports in the
 | [Bubble Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%})|&#x2713;||&#x2713;||
 | [Sparklines]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/sparklines%})|&#x2713;|&#x2713;|&#x2713;|&#x2713;|
 | [OHLC Charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%})||&#x2713;|&#x2713;|&#x2713;|
+
+## See Also 
+
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)

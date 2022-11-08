@@ -47,4 +47,4 @@ Each group type has a distinct group icon:
 
   ![Group Explorer Static Icon](images/GroupExplorerStaticIcon.png)
 
-Groups wihtout a name assigned to them will have the text "```<n/a>```" displayed in the group's Name field.
+Groups without a name assigned to them will have the text "```<n/a>```" displayed in the group's Name field.

@@ -1,6 +1,6 @@
 ---
 title: (Obsolete) Chart 
-page_title: (Obsolete) Chart 
+page_title: Chart Report Item Overview 
 description: "(Obsolete) Learn more about the Chart as a report item when using Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/chart-(obsolete)
 tags: telerik, reporting, report, items, chart, obsolete

@@ -13,7 +13,7 @@ position: 2
 
 The Swiss QR Barcode is used mostly in the QR-bill, which is a document designed to replace the payment slips and currently used in payment transactions in Switzerland. 
 
-The Swiss QR Barcode uses the QR symbology to encode its data, applying a few rules on the encoding parameters and physical (printed) dimensions. 
+The Swiss QR Barcode uses the QR symbology to encode its data, applying a few rules on the encoding parameters and physical (printed) dimensions. For a runnable example, refer to the [Swiss QR Bill Report demo](https://demos.telerik.com/reporting/swiss-qr-bill-report).
 
 ## Structure
 
@@ -109,5 +109,6 @@ The `Payment` property contains information about the `Payment` data entity.
 
 ## See Also
 
+* [(Demo) Swiss QR Bill Report](https://demos.telerik.com/reporting/swiss-qr-bill-report)
 * [Swiss Implementation Guidelines QR-bill (PDF)](https://www.paymentstandards.ch/dam/downloads/ig-qr-bill-2019-en.pdf)
 * [Swiss QR Code Validator](https://www.swiss-qr-invoice.org/validator/)

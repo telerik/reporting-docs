@@ -37,7 +37,7 @@ Once you have configured the rest of the options to your liking, click `Finish` 
 
 First, you need to create a new ASP.NET Core project: 
 
-1. Open __Visual Studio 2019__. 
+1. Open __Visual Studio 2019__ or newer. 
 
 1. From the __File__ menu, select __New > Project__. 
 

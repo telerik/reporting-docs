@@ -31,8 +31,8 @@ Below is a list of all options available during initialization of the native Bla
 		<tr>
 			<td>ServiceType</td>
 			<td>
-				<i>enum, required;</i></br>
-				Specifies the type of service that the report viewer will connect to. Available options are:</br>
+				<p><i>enum, required;</i>
+				Specifies the type of service that the report viewer will connect to. Available options are:</p>
 				<ul>
 					<li><strong>ReportViewerServiceType.REST</strong> - Telerik Reporting REST Service</li>
 					<li><strong>ReportViewerServiceType.ReportServer</strong> - Telerik Report Server</li>
@@ -110,10 +110,10 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 					</li>
 				</ul>
 				<pre><code>
-			&lt;ReportViewerSettings&gt;
-			&lt;ReportServerSettings Url="http://reportinghost:83" Username="user" Password="pass"&gt;&lt;/ReportServerSettings&gt;
-			&lt;SendEmailDialogSettings From="from@mail.com" To="to@mail.com" Format="CSV"&gt;&lt;/SendEmailDialogSettings&gt;
-				&lt;/ReportViewerSettings&gt;
+&lt;ReportViewerSettings&gt;
+	&lt;ReportServerSettings Url="http://reportinghost:83" Username="user" Password="pass"&gt;&lt;/ReportServerSettings&gt;
+	&lt;SendEmailDialogSettings From="from@mail.com" To="to@mail.com" Format="CSV"&gt;&lt;/SendEmailDialogSettings&gt;
+&lt;/ReportViewerSettings&gt;
 				</code></pre>
 			</td>
 		</tr>

@@ -68,7 +68,7 @@ The property was introduced with `R3 2022 SP1 (16.2.22.1109)`.
 
 It enables direct feeding of the inner report with data from the main report. When the property is set, its data will be used when processing the inner report instead of the data that is set up in the definition of the inner report.
 
-All the [data sources]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) supported in the [`DataSource` property](/reporting/api/Telerik.Reporting.DataItem.html#Telerik_Reporting_DataItem_DataSource) are applicable as a value of this property. 
+All the [data sources]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) supported in the [DataSource](/reporting/api/Telerik.Reporting.DataItem.html#Telerik_Reporting_DataItem_DataSource) property are applicable as a value of this property. 
 
 A common scenario would be to feed the inner report with data coming from the data context of the `SubReport` item. To do this, define a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to bind the `DataSource` property to a data field. 
 

@@ -74,13 +74,14 @@ This guide applies the recommended NuGet package references approach to add the 
 Modify the __Program.cs__ file in the project to enable the Reports Service functionality. 
 
 1. Make sure the application is configured for WebAPI controllers and call the __AddNewtonsoftJson__ on the IMvcBuilder object to place the NewtonsoftJson serialization: 
-    
+
 	````C#
 builder.Services.AddControllers().AddNewtonsoftJson();
 ````
 
+
 1. Add the dedicated configuration object needed from the Reports Service in the dependency container. Note how the report source resolver will target the Reports folder we created earlier. 
-    
+
 	````C#
 // Configure dependencies for ReportsController.
 	builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
@@ -96,8 +97,9 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 		});
 ````
 
+
 1. Make sure the endpoints are configured for API controllers by adding the following line in the lambda expression argument after the *UseRouting();* call: 
-    
+
 	````C#
 app.UseEndpoints(endpoints =>
 	{
@@ -112,7 +114,7 @@ app.UseEndpoints(endpoints =>
 The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-6.0) for this purpose. 
 
 The .NET 6 applications use a [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0) file named by default __appSettings.json__. The default ReportingEngineConfiguration: 
-    
+
 ````C#
 ReportingEngineConfiguration = sp.GetService<IConfiguration>()
 ````
@@ -122,7 +124,7 @@ will be initialized from __appSettings.json__ or __appsettings.{EnvironmentName}
 To activate JSON file configuration with a different name, for example, __reportingAppSettings.json__, call the [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/) extension method on an instance of [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder). 
 
 In this guide we will create a helper method loading the json-formatted setting: 
-    
+
 ````C#
 static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment environment)
 {
@@ -135,10 +137,10 @@ static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment 
 ````
 
 Finally, all configurations should be placed in the JSON configuraion file (add one in the project root if such does not exist). For example, __ConnectionStrings__ setting should be configured in JSON-based format like this: 
-    
+
 ````JSON
 {
-	...
+	//...
 	"ConnectionStrings": {
 		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
 	}
@@ -146,10 +148,10 @@ Finally, all configurations should be placed in the JSON configuraion file (add 
 ````
 
 The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient* as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported: 
-    
+
 ````JSON
 {
-	...
+	//...
 	"ConnectionStrings": {
 		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
 			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
@@ -162,10 +164,10 @@ The above type of connection string lacks information about the data provider an
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section. 
 
 The last supported type of __ConnectionStrings__ configuration uses an array to provide information about each connection string: 
-    
+
 ````JSON
 {
-...
+	//...
 	"ConnectionStrings": [
 		{
 			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
@@ -176,7 +178,6 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
 }
 ````
 
-
 ### Setting up the REST service
 
 1. Create folder __Controllers__. Right-click on the project name and select __Add > New folder__. Name it __Controllers__. 
@@ -184,7 +185,7 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
 1. Implement a Reports controller. Right-click on the __Controllers__ folder and add a new item: __Add > New item > API Controller - Empty__ item. Name it __ReportsController__. This will be our Telerik Reporting REST service in the project. 
 
 1. Inherit the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look like: 
-    
+
 	````C#
 namespace MinimalApi.Controllers
 	{
@@ -229,7 +230,7 @@ To ensure that the service operates, run the application and navigate to URL __{
 You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), for example, if you use the REST Service from clients hosted in different domains. 
 
 Add the following service to the *Program.cs* file to add a new CORS policy for the REST Service: 
-    
+
 ````C#
 builder.Services.AddCors(corsOption => corsOption.AddPolicy(
 	"ReportingRestPolicy",
@@ -243,11 +244,10 @@ builder.Services.AddCors(corsOption => corsOption.AddPolicy(
 ````
 
 Activate the above policy for the application by adding the code below in the application configuration part of the *Program.cs* file: 
-    
+
 ````C#
 app.UseCors("ReportingRestPolicy");
 ````
-
 
 ## Demo project
 

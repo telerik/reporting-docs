@@ -15,7 +15,7 @@ The SubReport item enables you to display reports within reports, and serves as 
 
 The following screenshot shows a SubReport item at design-time, allowing you to compose complex reports from various report sources. The data for each SubReport can be completely different, for example, you can combine a product listing, a sales summary, and a list of sales people each in their own sub-report with each sub-report drawing its data from a different source. You can also pass parameters to the SubReport by using the **Edit Parameters** collection editor.
 
-![](images/Subreport.png)
+![SubReport item in the Report Designer](images/Subreport.png)
 
 ## Defining the Parameters
 
@@ -28,11 +28,10 @@ To set up the SubReport:
 1. Assuming you have assigned the __ReportSource__ property, the __Parameter Name__ drop-down list will contain the names of parameters defined in the sub-report. Select a __Parameter Name__ from the combo-box to set the target for this parameter. 
 1. The __Parameter Value__ combo-box allows you to directly enter the value, create an `<Expression>` or a `<New Report Parameter>`. 
 1. When you are done, click __OK__. 
-  
+
 The following image shows the end result. 
 
 ![A SubReport with set parameters](images/DesignSubReport001.png)
-
 
 ## Setting the Report Source
 
@@ -48,7 +47,7 @@ To set the report source of the SubReport item by using a Telerik Report Designe
 1. In the __Properties__ of the item, click __ReportSource__. As a result, a **Load a Report from** dialog appears. Select a __ReportSource__. 
 1. Select the type of the report source you will use to specify a report. For the purposes of this example, click the __Instance Report Source__ option and select the report that will serve as the detail report. 
 1. To specify the parameters for the report , click the __Edit Parameters__ button. As a result, the __Edit Parameters__ dialog appears. Click __New__. 
-1. In the __Parameter Name__ column, select the name of a report parameter in the detail report. In the __Parameter Value__, type or select the value to pass to the parameter in the detail report.             
+1. In the __Parameter Name__ column, select the name of a report parameter in the detail report. In the __Parameter Value__, type or select the value to pass to the parameter in the detail report. 
 
 ### Defining Programmatically
 
@@ -62,6 +61,18 @@ Due to the format of the produced reports, the [Standalone Report Designer]({%sl
 The [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) provides the [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) options.
 
 If you are using the HTML5 or the Silverlight Report Viewer to preview the report, the main report will be rendered in HTML or XAML respectively and loaded on the client. The sub-report is considered as part of the main report content and its report source will be internally resolved without additional calls to the Reporting REST service (Reporting WCF Service respectively).  
+
+## The property DataSource of the SubReport item
+
+The property was introduced with `R3 2022 SP1 (16.2.22.1109)`. 
+
+It enables direct feeding of the inner report with data from the main report. When the property is set, its data will be used when processing the inner report instead of the data that is set up in the definition of the inner report.
+
+All the [data sources]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) supported in the `DataSource` property are applicable as a value of this property. 
+
+A common scenario would be to feed the inner report with data coming from the data context of the `SubReport` item. To do this, define a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to bind the `DataSource` property to a data field. 
+
+For example, define a `Binding` with `Path` __DataSource__ and `Expression` __=Fields.InvoiceRows__ to link the inner report DataSource to the collection with the invoice rows from the main report DataSource.
 
 ## Considerations and Known Limitations
 

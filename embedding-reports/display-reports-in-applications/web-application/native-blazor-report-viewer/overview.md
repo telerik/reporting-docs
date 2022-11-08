@@ -61,29 +61,13 @@ The Native Blazor Report Viewer is a native Blazor component which can be used i
 
 ## Comparison with Blazor Html5 Wrapper Report Viewer
 
-The initial release of the Native Blazor Report Viewer component is missing the following functionalities:
-
-- APIs for connecting to a [Telerik Report Server](https://www.telerik.com/report-server) instance
-
-- Report history functionality - Navigate back/forward according to the triggered __NavigateToReport__ actions
-
-- Search report content functionality
-
-- Stop Rendering button for the toolbar
-
-- Infinite scrolling
+The current release of the Native Blazor Report Viewer component is missing the following functionalities:
 
 - Accessibility
 
-- Localization (supported natively by Blazor)
+- Extensibility 
 
-- Extensibility - customizing the toolbar with own tooltips, icons, aria-labels and viewer commands
-
-- [Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%}) functionality
-
-- Freezing table column and row headers functionalities
-
-- Reports tooltips
+- Tooltips
 
 > The above functionalities will be implemented in future releases of the Native Blazor Report Viewer
 

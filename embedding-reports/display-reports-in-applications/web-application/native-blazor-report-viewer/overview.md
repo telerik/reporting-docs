@@ -25,8 +25,11 @@ The Native Blazor Report Viewer is a native Blazor component which can be used i
 
 ![Native Blazor Report Viewer image](../images/NativeBlazorReportViewer/NativeBlazorReportViewer.png)
 
-|Button or Input|Action
+|Button or Input(from left to right)|Action
 |:---|:---
+|__Navigate back in history__|Navigates to a previous report after the **Navigate to report** interactive action was triggered. 
+|__Navigate forward in history__|Navigates to a forward report after the **Navigate back** was used.
+|__Stop__|Cancels the loading of the current report if the chosen parameters make it too heavy. 
 |__Refresh__|Updates the current report with fresh data.
 |__First page__|Displays the respective page of the current report.
 |__Previous page__|Displays the respective page of the current report.
@@ -34,13 +37,17 @@ The Native Blazor Report Viewer is a native Blazor component which can be used i
 |__Total pages__|Shows the number of pages of the current report.
 |__Next page__|Displays the respective page of the current report.
 |__Last page__|Displays the respective page of the current report.
-|__Switch to Print Preview__|Switches the report view between the __Logical__ and __Physical__. __Logical__ provides a convenient on-screen preview experience. __Physical__ provides an exact preview of the eventual print operation.
-|__Switch to Fit Page Width__|Switches the report view scale mode between fitting the report to the entire page view port or to the viewer's view port. 
-|__Print__|Initiates printing of the current report.
+|__Switch the View mode__|Switches the report view between the __Logical__ and __Physical__. __Logical__ provides a convenient on-screen preview experience. __Physical__ provides an exact preview of the eventual print operation.
 |__Export__|Initiates an export operation. For more information, refer to the article on [export formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}). 
-|__Zoom__|Allows the user to view and change the zoom level of the report content.
-|__Show/Hide parameters area__|Allows the user to hide the report parameter inputs if any.
+|__Print__|Initiates printing of the current report.
+|__Send Email__|Displays the Send Email dialog.
 |__Show/Hide document map__|Allows the user to hide the document map tree if map nodes were defined in the report.
+|__Show/Hide parameters area__|Allows the user to hide the report parameter inputs if any.
+|__Zoom In__|Allows the user to increase the zoom level of the report content.
+|__Zoom Out__|Allows the user to decrease the zoom level of the report content.
+|__Switch the Scale mode__|Switches the report view scale mode between fitting the report to the entire page view port or to the viewer's view port.
+|__Seatch__|Allows searching in the report content.
+
 
 
 ## Requirements

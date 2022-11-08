@@ -31,8 +31,8 @@ Below is a list of all options available during initialization of the native Bla
 		<tr>
 			<td>ServiceType</td>
 			<td>
-				<p><i>enum, required;</i>
-				Specifies the type of service that the report viewer will connect to. Available options are:</p>
+				<p><i>enum, required;</i></p>
+				<p>Specifies the type of service that the report viewer will connect to. Available options are:</p>
 				<ul>
 					<li><strong>ReportViewerServiceType.REST</strong> - Telerik Reporting REST Service</li>
 					<li><strong>ReportViewerServiceType.ReportServer</strong> - Telerik Report Server</li>
@@ -42,43 +42,39 @@ Below is a list of all options available during initialization of the native Bla
 		<tr>
 			<td>ServiceUrl</td>
 			<td>
-				<i>string, required if ServiceType is REST;</i>
-				Sets the address of the Report REST Service;
+				<p><i>string, required if ServiceType is REST;</i></p>
+				<p>Sets the address of the Report REST Service;</p>
 			</td>
 		</tr>
 		<tr>
 			<td>ReportSource</td>
 			<td>
-				<i>ReportSourceOptions, required;</i>
-				Specifies the report and initial report parameter values to be displayed in the report viewer.
-				</br>
-				The <strong>ReportSourceOptions</strong> object is made up of the following properties:
-				</br>
+				<p><i>ReportSourceOptions, required;</i></p>
+				<p>Specifies the report and initial report parameter values to be displayed in the report viewer.</p>
+				<p>The <strong>ReportSourceOptions</strong> object is made up of the following properties:</p>
 				<ul>
 					<li><strong>Report(string)</strong> - Gets or sets a string that uniquely identifies a report from
 						the Reporting REST service or the Telerik Report Server. </li>
 					<li><strong>Parameters(IDictionary&lt;string, object&gt;)</strong> - Gets or sets an object with
 						properties name/value equal to the report parameters names and values used in the report
 						definition.</li>
-				</ul> </br>
-				<pre>
-				<code>
+				</ul>
+<pre>
+<code>
 public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdp", new Dictionary&lt;string, object&gt;
 {
 	// Add parameters if applicable
 });
-				</code>
-				</pre>
+</code>
+</pre>
 			</td>
 		</tr>
 		<tr>
 			<td>ReportViewerSettings</td>
 			<td>
-				<i><a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.renderfragment?view=aspnetcore-6.0"
-						target="_blank">RenderFragment</a>, optional</i>
-				</br>
-				Defines a renderfragment that contains all settings for the Report Viewer.</br>The currently available
-				settings are:
+				<p><i><a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.components.renderfragment?view=aspnetcore-6.0" target="_blank">RenderFragment</a>, optional</i></p>
+				<p>Defines a renderfragment that contains all settings for the Report Viewer.</p>
+				<p>The currently available settings are:</p>
 				<ul>
 					<li>
 						<strong>ReportServerSettings</strong> - Represents the settings that the report viewer will use
@@ -120,8 +116,9 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 		<tr>
 			<td>ScaleMode</td>
 			<td>
-				<i>enum, optional;</i>
-				Sets how the report pages to be scaled. Available options are: <ul>
+				<p><i>enum, optional;</i></p>
+				<p>Sets how the report pages to be scaled. Available options are:</p>
+				<ul>
 					<li> <strong>ScaleMode.FitPageWidth</strong> - the pages are scaled proportional to fit the entire
 						width in the viewer's view port;</li>
 					<li><strong>ScaleMode.FitPage</strong>- the pages are scaled proportional to fit the entire page in
@@ -136,18 +133,16 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 		<tr>
 			<td>Scale</td>
 			<td>
-				<i>double, optional;</i>
-				Sets the scale factor for the report pages. The scale takes effect when the <strong>ScaleMode</strong>
-				is set to <i>Specific</i>.
-				<br />
-				Default value is <strong>1.0 (100%); the original size of the report</strong>
+				<p><i>double, optional;</i></p>
+				<p>Sets the scale factor for the report pages. The scale takes effect when the <strong>ScaleMode</strong> is set to <i>Specific</i>.</p>
+				<p>Default value is <strong>1.0 (100%); the original size of the report</strong></p>
 			</td>
 		</tr>
 		<tr>
 			<td>ViewMode</td>
 			<td>
-				Sets if the report is displayed in interactive mode or in print preview. <br />
-				The available values are:
+				<p>Sets if the report is displayed in interactive mode or in print preview.</p>
+				<p>The available values are:</p>
 				<ul>
 					<li><strong>ViewMode.Interactive</strong> - enables drill-down interactivity, etc;</li>
 					<li><strong>ViewMode.PrintPreview</strong> - the report is paged according to the page settings;
@@ -162,8 +157,8 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 		<tr>
 			<td>PageMode</td>
 			<td>
-				Sets if the report is displayed in Single page or Continuous scroll mode. <br />
-				The available values are:
+				<p>Sets if the report is displayed in Single page or Continuous scroll mode.</p>
+				<p>The available values are:</p>
 				<ul>
 					<li><strong>PageMode.SinglePage</strong> - only one page is loaded in the view port;</li>
 					<li><strong>PageMode.ContinuousScroll</strong> - more than one page could be loaded in the view
@@ -176,10 +171,9 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 		<tr>
 			<td>PrintMode</td>
 			<td>
-				Specifies how the viewer should [print reports]({%slug
-				telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}).
-				<br />
-				The available values are:
+				<p>Specifies how the viewer should [print reports]({%slug
+				telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}).</p>
+				<p>The available values are:</p>
 				<ul>
 					<li><strong>PrintMode.AutoSelect</strong> - specifies that the viewer should automatically decide
 						which option for printing to use depending on browser's version and whether the PDF plug-in is
@@ -194,58 +188,49 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 		<tr>
 			<td>ParametersAreaVisible</td>
 			<td>
-				<i>boolean, optional;</i>
-				Determines whether the viewer's parameters area is displayed if any parameter editor exists.
-				<br />
-				Default value: <strong>false</strong>
+				<p><i>boolean, optional;</i></p>
+				<p>Determines whether the viewer's parameters area is displayed if any parameter editor exists.</p>
+				<p>Default value: <strong>false</strong></p>
 			</td>
 		</tr>
 		<tr>
 			<td>DocumentMapVisible</td>
 			<td>
-				<i>boolean, optional;</i>
-				Determines whether the viewer's document map is displayed if any bookmark is defined.
-				<br />
-				Default value: <strong>false</strong>
+				<p><i>boolean, optional;</i></p>
+				<p>Determines whether the viewer's document map is displayed if any bookmark is defined.</p>
+				<p>Default value: <strong>false</strong></p>
 			</td>
 		</tr>
 		<tr>
 			<td>KeepClientAlive</td>
 			<td>
-				<i>boolean, optional;</i>
-				Determines whether the client will be kept alive. When set to <i>true</i>, expiration of the client will
-				be prevented by continually sending a request to the server, determined by the Reporting REST service's
-				<strong>ClientSessionTimeout</strong>.
-				<br />
-				Default value: <strong>true</strong>
+				<p><i>boolean, optional;</i></p>
+				<p>Determines whether the client will be kept alive. When set to <i>true</i>, expiration of the client will be prevented by continually sending a request to the server, determined by the Reporting REST service's <strong>ClientSessionTimeout</strong>.</p>
+				<p>Default value: <strong>true</strong></p>
 			</td>
 		</tr>
 		<tr>
 			<td>EnableSendEmail</td>
 			<td>
-				<i>boolean, optional;</i>
-				Determines whether the Send Email functionality is enabled. If set to <i>false</i> the Send Email button
-				will not be displayed in the toolbar.
-				<br />
-				Default value: <strong>true</strong>
+				<p><i>boolean, optional;</i></p>
+				<p>Determines whether the Send Email functionality is enabled. If set to <i>false</i> the Send Email button will not be displayed in the toolbar.</p>
+				<p>Default value: <strong>true</strong></p>
 			</td>
 		</tr>
 		<tr>
 			<td>Width</td>
 			<td>
-				<i>string, optional;</i>
-				The width of the component.
-				<br />
-				Default value: <strong>100%</strong>
+				<p><i>string, optional;</i></p>
+				<p>The width of the component.</p>
+				<p>Default value: <strong>100%</strong></p>
 			</td>
 		</tr>
 		<tr>
 			<td>Height</td>
 			<td>
-				<i>string, optional;</i>
-				The height of the component.
-				<br />
-				Default value: <strong>700px</strong>
+				<p><i>string, optional;</i></p>
+				<p>The height of the component.</p>
+				<p>Default value: <strong>700px</strong></p>
 			</td>
 		</tr>
 	</table>

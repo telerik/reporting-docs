@@ -63,10 +63,10 @@ Below is a list of all options available during initialization of the native Bla
 				</ul> </br>
 				<pre>
 				<code>
-				public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdp", new Dictionary&lt;string, object&gt;
-				{
-				// Add parameters if applicable
-				});
+public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdp", new Dictionary&lt;string, object&gt;
+{
+	// Add parameters if applicable
+});
 				</code>
 				</pre>
 			</td>

@@ -59,14 +59,12 @@ Below is a list of all options available during initialization of the native Bla
 						properties name/value equal to the report parameters names and values used in the report
 						definition.</li>
 				</ul>
-<pre>
-<code>
+				<pre><code>
 public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdp", new Dictionary&lt;string, object&gt;
 {
 	// Add parameters if applicable
 });
-</code>
-</pre>
+				</code></pre>
 			</td>
 		</tr>
 		<tr>

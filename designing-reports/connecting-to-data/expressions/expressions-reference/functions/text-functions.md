@@ -29,6 +29,8 @@ Use Text functions to manipulate the text in your report. Text functions can use
 | __FormatWithCulture(cultureName, format, args)__ |Formats the value using the specified format string and culture name. <br/>Example:`=FormatWithCulture("en-GB", "Price: {0:C}", Fields.Price)`<br/>To use [invariant culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo.invariantculture?view=netframework-4.7.2#System_Globalization_CultureInfo_InvariantCulture), the first argument must be an empty string. Detailed information about culture names can be found in [Windows Language Code Identifier (LCID) Reference](https://msdn.microsoft.com/en-us/library/cc233982.aspx) article.|
 | __IndexOfSubstr(string, substring)__ |Returns the index of the first occurrence of a string, within the specified text.|
 | __IsValidXhtml(markup)__ |Determines if the provided markup is valid XHTML that HtmlTextBox can parse.|
+| __HtmlEncode(value)__ |HTML-encodes a text and returns the encoded text.<br/> For example: `=HtmlEncode("&Telerik")` will return `&amp;Telerik`|
+| __HtmlDecode(value)__ |Converts a text that has been HTML-encoded, into a decoded string.<br/> For example: `=HtmlDecode("&amp;Telerik")` will return `&Telerik`|
 | __Join(separator, strings)__ |Returns a string created by joining a number of substrings contained in an array.|
 | __Len(string)__ |Gets the number of characters in a string.|
 | __Replace(string, oldSubstring, newSubstring)__ |Returns a new string in which all occurrences of a substring in the current string are replaced with another specified substring.|

@@ -30,7 +30,7 @@ Use Text functions to manipulate the text in your report. Text functions can use
 | __IndexOfSubstr(string, substring)__ |Returns the index of the first occurrence of a string, within the specified text.|
 | __IsValidXhtml(markup)__ |Determines if the provided markup is valid XHTML that HtmlTextBox can parse.|
 | __HtmlEncode(value)__ |HTML-encodes a text and returns the encoded text.<br/> For example: `=HtmlEncode("&Telerik")` will return `&amp;Telerik`|
-| __HtmlDecode(value)__ |Converts a text that has been HTML-encoded, into a decoded string.<br/> For example: `=HtmlDecode("&amp;Telerik")` will return `&Telerik`|
+| __HtmlDecode(value)__ |Converts a text that has been HTML-encoded, into a decoded text.<br/> For example: `=HtmlDecode("&amp;Telerik")` will return `&Telerik`|
 | __Join(separator, strings)__ |Returns a string created by joining a number of substrings contained in an array.|
 | __Len(string)__ |Gets the number of characters in a string.|
 | __Replace(string, oldSubstring, newSubstring)__ |Returns a new string in which all occurrences of a substring in the current string are replaced with another specified substring.|

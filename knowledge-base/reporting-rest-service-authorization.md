@@ -33,12 +33,24 @@ Thus, we can suggest two possible approaches:
 
 1. Set the authorize attribute for the ReportsController methods - [REST service methods]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%}), instead of the whole class. These methods are virtual and you can override them like the following:
 
+	For ASP.NET Core
+
 	````CSharp
 [RESTAuthorize]
-	public override HttpResponseMessage CreateDocument(string clientID, string instanceID, CreateDocumentArgs args)
-	{
-		return base.CreateDocument(clientID, instanceID, args);
-	}
+        public override IActionResult CreateDocument(string clientID, string instanceID, [FromBody] CreateDocumentArgs args)
+        {
+            return base.CreateDocument(clientID, instanceID, args);
+        }
+````
+
+	For ASP.NET Framework
+
+	````CSharp
+[RESTAuthorize]
+        public override HttpResponseMessage CreateDocument(string clientID, string instanceID, CreateDocumentArgs args)
+        {
+            return base.CreateDocument(clientID, instanceID, args);
+        }
 ````
 
 

@@ -39,7 +39,7 @@ The following steps describe how to implement the required configuration:
 6. Enter the sender's email.
 7. Enter the name of the sender.
 
-![](images/mail-server-settings-01.png)
+![Mail server settings](images/mail-server-settings-01.png)
 
 
 ## Notes

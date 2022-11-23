@@ -53,7 +53,7 @@ FROM
 
 	![Add DataSource to the Bar Chart](images/BarChartWizardDataSource.png)
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+1. Arrange the Bar Chart:
 
 	* Drag the field _Category_ to the `Series`
 	* Drag the field _OrderDate.Year_ to the `Categories`

@@ -58,15 +58,21 @@ The Visual Studio Report Designer tool also provides an option for directly inse
 	Here is the Select command we are going to use:
 	
 	````SQL
-// Fields used by all graphs
-Name
-SubTotal
-OrderDate
-TotalDue
-Category
-LineTotal
-StoreName
-ProductCategory
+SELECT
+		[Sales].[SalesOrderHeader].[OrderDate],
+		[Sales].[SalesOrderHeader].[TotalDue],
+		[Sales].[SalesOrderHeader].[SubTotal],
+		[Sales].[SalesOrderDetail].[LineTotal],
+		[Sales].[Store].[Name] AS 'StoreName',
+		[Production].[ProductCategory].[Name] AS 'Category', 
+		[Sales].[SalesTerritory].[Name] AS 'TerritoryName',
+		[Person].[Contact].[FirstName] + ' ' + [Person].[Contact].[LastName] AS 'SalesPersonName'
+	FROM
+		(((([Person].[Contact] INNER JOIN [Sales].[SalesOrderHeader]
+		ON [Person].[Contact].[ContactID] = [Sales].[SalesOrderHeader].[ContactID]) INNER JOIN [Sales].[SalesOrderDetail]
+			ON [Sales].[SalesOrderHeader].[SalesOrderID] = [Sales].[SalesOrderDetail].[SalesOrderID] AND [Sales].[SalesOrderHeader].[SalesOrderID] = [Sales].[SalesOrderDetail].[SalesOrderID]) INNER JOIN [Sales].[SalesTerritory]
+				ON [Sales].[SalesOrderHeader].[TerritoryID] = [Sales].[SalesTerritory].[TerritoryID] AND [Sales].[SalesOrderHeader].[TerritoryID] = [Sales].[SalesTerritory].[TerritoryID]) INNER JOIN [Sales].[Store]
+					ON [Sales].[SalesOrderHeader].[CustomerID] = [Sales].[Store].[CustomerID]) CROSS JOIN [Production].[ProductCategory]
 ````
 
 	In the particular Charts we are going to create, we will use only part of the above fields, so you may shorten the above Query based on the Chart type you would like to create. The reason for this is that each Chart type is suitable for displaying different types of data, hence the different database columns that would fit better to different Charts.
@@ -74,12 +80,12 @@ ProductCategory
 1. Follow the instructions for the particular Chart type you would like to create. Here are the required database fields and the links to the tutorials with the steps:
 
 	[Creating Scatter Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}#creating-scatter-charts)
-	Name
+	SalesPersonName
 	SubTotal
 	OrderDate
 
 	[Creating Range Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%}#creating-range-charts)
-	Name
+	TerritoryName
 	TotalDue
 	OrderDate
 
@@ -94,7 +100,7 @@ ProductCategory
 	LineTotal
 
 	[Creating Line Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview%}#creating-line-charts)
-	ProductCategory
+	Category
 	OrderDate
 	LineTotal
 
@@ -113,7 +119,7 @@ ProductCategory
 	LineTotal
 
 	[Creating OHLC Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%}#creating-ohlc-charts)
-	The Open-High-Low-Close (OHLC) chart is typically used to illustrate movements in the price of a financial instrument over time. In the tutorial, we use a [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) with suitable data since it better illustrates the concept that the data available in the AdventureWorks sample database. Here is the CSV data:
+	The Open-High-Low-Close (OHLC) chart is typically used to illustrate movements in the price of a financial instrument over time. In the tutorial, we use a [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) with suitable data since it better illustrates the concept than the data available in the AdventureWorks sample database. Here is the CSV data:
 	
 	````
 data here

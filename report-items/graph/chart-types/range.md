@@ -44,8 +44,8 @@ Now you can set the **SeriesGropus** hierarchy of the Range Area chart:
 Next, you will have to define the **CategoryGroups** hierarchy of the Range Area chart:
 
 1. Open the __CategoryGroups__ collection editor and click __Add__. 
-1. Set the __Groupings__ to `=Fields.Name`.
-1. Set the __Sortings__ to `=Fields.Name`.
+1. Set the __Groupings__ to `=Fields.TerritoryName`.
+1. Set the __Sortings__ to `=Fields.TerritoryName`.
 1. Set the __Name__ to `categoryGroup1`. 
 
 ### 4. Configure the Coordinate System
@@ -83,4 +83,4 @@ To set the color palette, format the labels, define the values of the legend, an
 
 ## See Also 
 
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

@@ -14,9 +14,9 @@ A Bar chart displays data series as sets of horizontal bars, graphically summari
 
 Bar charts are also useful for comparing multiple series of data because they provide snapshots of data at specific times, and are popular for representing data that occurs over time, with a finite start and end date. Bar charts are also used to show categorical information because you can display the categories horizontally.
 
-The following image shows a typical Bar chart which is well suited for the visualized data because all three series share a common time period and allow for valid comparisons. 
+The following image shows a typical Bar chart which is well suited for the visualized data because all four series share a common time period and allow for valid comparisons. 
 
-![A basic Bar chart type](images/BarChart.png)
+![A basic Bar chart type](images/BarChartWizardPreview.png)
 
 ## Types
 
@@ -26,14 +26,49 @@ The following image shows a typical Bar chart which is well suited for the visua
 
 ![A configured Bar cart type](images/BarChart.png)
 
-## Creating Bar Charts
+## Creating Bar Charts with the Bar Chart Wizard
 
-In this section, you will create a Bar chart.
+In this section, you will learn how to create a Bar chart with our Bar Chart Wizard.
+We are going to create a `Clustered Bar` Chart that displays the LineTotal of the Product Categories by Years. The final report will look like the image above.
+In the general case, you may select `Stacked Bar` or `100% Stacked Bar`. The requiered settings are basically the same. 
+
+We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+
+````SQL
+SELECT
+	[Production].[ProductCategory].[Name] AS 'Category',
+	[Sales].[SalesOrderDetail].[LineTotal],
+	[Sales].[SalesOrderHeader].[OrderDate]
+FROM
+	[Sales].[SalesOrderHeader] INNER JOIN [Sales].[SalesOrderDetail]
+		ON [Sales].[SalesOrderHeader].[SalesOrderID] = [Sales].[SalesOrderDetail].[SalesOrderID] CROSS JOIN [Production].[ProductCategory]
+````
+
+
+1. Add Clustered Bar Chart as shown in the image below:
+
+	![Add Bar Chart Wizard](images/BarChartWizardAdd.png)
+
+1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+
+	![Add DataSource to the Bar Chart](images/BarChartWizardDataSource.png)
+
+1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+
+	* Drag the field _Category_ to the `Series`
+	* Drag the field _OrderDate.Year_ to the `Categories`
+	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+
+	![Arrange the Bar Chart](images/BarChartWizardArrangeFields.png)
+
+1. The LineTotal value is large, so let's change the barSeries `Data > X` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+
+## Creating Bar Charts Manually
 
 ### 1. Add the Graph
 
 To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}). 
-   
+
 ### 2. Set the SeriesGroups Hierarchy 
 
 Now you can set the **SeriesGropus** hierarchy of the Bar chart: 

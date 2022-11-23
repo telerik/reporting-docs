@@ -41,7 +41,7 @@ To add a new Graph report item to the report, refer to the article [getting star
 Now you can set the **SeriesGropus** hierarchy of the Bubble chart: 
 
 1. Open the __SeriesGroups__ collection editor and click __Add__.
-1. Set the __Groupings__ to `=Fields.Name`.
+1. Set the __Groupings__ to `=Fields.SalesPersonName`.
 1. Set the __Sortings__ to `=Sum(Fields.SubTotal)` with `Desc` order. 
 1. Set the __Name__ to `seriesGroup1`. 
 
@@ -76,7 +76,7 @@ In this step, you will configure the series of the chart:
 1. Set the __DataPointStyle.Visible__ to __True__. 
 1. Set the __MarkerType__ to __Circle__. 
 
-### 6. Style the Appearance   
+### 6. Style the Appearance
 
 To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}). 
 
@@ -89,4 +89,4 @@ To set the color palette, format the labels, define the values of the legend, an
 
 ## See Also 
 
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

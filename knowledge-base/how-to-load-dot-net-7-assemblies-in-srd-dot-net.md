@@ -43,13 +43,13 @@ System.IO.FileLoadException: Could not load file or assembly 'System.Runtime, Ve
 Could not find or load a specific file. (0x80131621)
 ```
 
-This happens because the RollForward property is set to **Major**, and the framework version is rolled forward only when the requested version is not present.
+This happens because the `RollForward` property is set to **Major**, and the framework version is rolled forward only when the requested version is not present.
 Thus, if you have .NET 6 installed, the application will be executed using .NET 6 runtime and it will not be able to load the custom .NET 7 assembly, throwing an exception as a result. 
 
-For further information about controlling the RollForward behavior at runtime, check the [related Microsoft documentation article](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#control-roll-forward-behavior).
+For further information about controlling the `RollForward` behavior at runtime, check the related Microsoft documentation article section [Control roll-forward behavior](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#control-roll-forward-behavior).
 
 ## Solution
-Start SRD.NET while setting the RollForward option to LatestMajor from the command prompt:
+Start SRD.NET while setting the `RollForward` option to **LatestMajor** from the command prompt:
 
 ```
 C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"
@@ -59,8 +59,6 @@ As explained in the ["Values" section of the aforementioned Microsoft documentat
 If you intend to use SRD.NET with .NET 7 runtime, create a shortcut with the parameter `--roll-forward LatestMajor` and use it to start the application.
 
 ## See Also
-[.NET 7 Breaking Changes](https://learn.microsoft.com/en-us/dotnet/core/compatibility/7.0)
-
-[Understanding .NET versioning](https://learn.microsoft.com/en-us/dotnet/core/versions/#semantic-versioning)
-
-[Using external assemblies with custom CLR objects in the Report Designer]({%slug how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer%})
+* [.NET 7 Breaking Changes](https://learn.microsoft.com/en-us/dotnet/core/compatibility/7.0)
+* [Understanding .NET versioning](https://learn.microsoft.com/en-us/dotnet/core/versions/#semantic-versioning)
+* [Using external assemblies with custom CLR objects in the Report Designer]({%slug how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer%})

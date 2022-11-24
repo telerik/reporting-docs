@@ -16,7 +16,7 @@ Line charts can also render series of data points to show trends over a period o
 
 The following image displays a Line chart that contains three series.
 
-![A basic Line chart type](images/LineChart.png)
+![A basic Line chart type](images/LineChartWizardPreview.png)
 
 ## Types
 
@@ -24,9 +24,47 @@ The following image displays a Line chart that contains three series.
 * __Smooth Line Chart__&mdash;A Line chart that uses curved lines instead of regular ones.
 * __Stepped Line Chart__&mdash;A Line chart that uses horizontal and vertical lines to connect the data points and creates a step-like structure.
 
-![Line Types](images/LineTypes.png)
+## Creating Line Charts with the Line Chart Wizard
 
-## Creating Line Charts
+In this section, you will learn how to create a Line chart with our Line Chart Wizard.
+We are going to create a `Line` Chart without Markers that displays the LineTotal of the Product Categories by Years. The final report will look like the image above.
+In the general case, you may select `Stacked Line` or `100% Stacked Line` with or without Markers. The requiered settings are basically the same. 
+
+We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+
+````SQL
+SELECT
+	[Production].[ProductCategory].[Name] AS 'Category',
+	[Sales].[SalesOrderHeader].[OrderDate],
+	[Sales].[SalesOrderDetail].[LineTotal]
+FROM[Production].[Product] INNER JOIN
+	[Production].[ProductSubcategory] ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID] INNER JOIN
+	[Production].[ProductCategory] ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID] INNER JOIN
+	[Sales].[SalesOrderDetail] ON [Production].[Product].[ProductID] = [Sales].[SalesOrderDetail].[ProductID] INNER JOIN
+	[Sales].[SalesOrderHeader] ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] AND [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] AND 
+	[Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID]
+````
+
+
+1. Add Line Chart as shown in the image below:
+
+	![Add Line Chart Wizard](images/LineChartWizardAdd.png)
+
+1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+
+	![Add DataSource to the Line Chart](images/LineChartWizardDataSource.png)
+
+1. Arrange the Line Chart:
+
+	* Drag the field _Category_ to the `Series`
+	* Drag the field _OrderDate.Year_ to the `Categories`
+	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+
+	![Arrange the Line Chart](images/LineChartWizardArrangeFields.png)
+
+1. The LineTotal value is large, so let's change the barSeries `Data > Y` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+
+## Creating Line Charts Manually
 
 In this section, you will create a Line chart.
 

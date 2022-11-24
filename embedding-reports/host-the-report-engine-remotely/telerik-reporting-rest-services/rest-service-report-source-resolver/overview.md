@@ -37,9 +37,9 @@ The Reporting REST Service's resolver is used when resolving information for a r
 
 ## Available built-in Report Source Resolver implementations:
 
-1. [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver) - resolves absolute path UriReportSource from relative path to report document created in [Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})). 
+1. [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver) - resolves absolute path UriReportSource from absolute or relative path to declarative report definition files. These are the `TRDX`, `TRDP` or `TRBP` files created in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}). 
 
-1. [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver) - resolves TypeReportSource from report type's [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk)  (reports created in Visual Studio Report Designer). 
+1. [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver) - resolves TypeReportSource from report type's [assembly qualified name](http://msdn.microsoft.com/en-us/library/30wyt9tk) (reports created in Visual Studio Report Designer). 
 
 > When working with other types of report sources for which there is no built-in report source resolver implementation, use a [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) implementation. For example, when using [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) with [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) the action will not work unless a custom report source resolver which can handle [XmlReportSource](/reporting/api/Telerik.Reporting.XmlReportSource) has been implemented. 
 

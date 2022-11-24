@@ -35,11 +35,14 @@ We will use a pre-defined SqlDataSource connecting to the example AdventureWorks
 ````SQL
 SELECT
 	[Production].[ProductCategory].[Name] AS 'Category',
-	[Sales].[SalesOrderDetail].[LineTotal],
-	[Sales].[SalesOrderHeader].[OrderDate]
-FROM
-	[Sales].[SalesOrderHeader] INNER JOIN [Sales].[SalesOrderDetail]
-		ON [Sales].[SalesOrderHeader].[SalesOrderID] = [Sales].[SalesOrderDetail].[SalesOrderID] CROSS JOIN [Production].[ProductCategory]
+	[Sales].[SalesOrderHeader].[OrderDate],
+	[Sales].[SalesOrderDetail].[LineTotal]
+FROM[Production].[Product] INNER JOIN
+	[Production].[ProductSubcategory] ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID] INNER JOIN
+	[Production].[ProductCategory] ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID] INNER JOIN
+	[Sales].[SalesOrderDetail] ON [Production].[Product].[ProductID] = [Sales].[SalesOrderDetail].[ProductID] INNER JOIN
+	[Sales].[SalesOrderHeader] ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] AND [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID] AND 
+	[Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID]
 ````
 
 

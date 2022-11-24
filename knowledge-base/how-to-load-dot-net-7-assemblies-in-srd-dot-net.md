@@ -63,4 +63,4 @@ If you intend to use SRD.NET with .NET 7 runtime, create a shortcut with the par
 
 [Understanding .NET versioning](https://learn.microsoft.com/en-us/dotnet/core/versions/#semantic-versioning)
 
-[Using external assemblies with custom CLR objects in the Report Designer] (https://docs.telerik.com/reporting/knowledge-base/how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer)
+[Using external assemblies with custom CLR objects in the Report Designer]({%slug how-to-use-external-assemblies-with-custom-clr-objects-in-the-report-designer%})

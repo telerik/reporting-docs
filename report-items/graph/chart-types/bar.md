@@ -16,15 +16,13 @@ Bar charts are also useful for comparing multiple series of data because they pr
 
 The following image shows a typical Bar chart which is well suited for the visualized data because all four series share a common time period and allow for valid comparisons. 
 
-![A basic Bar chart type](images/BarChartWizardPreview.png)
+![A Clustered Bar chart type](images/BarChartWizardPreview.png)
 
 ## Types
 
 * __Clustered Bar Charts__&mdash;A Bar chart for displaying series as sets of horizontal bars.
 * __Stacked Bar Charts__&mdash;A Bar chart where multiple series are stacked vertically. Stacked Bar charts compare contributions of values to a total across categories. If there is only one series in your chart, the Stacked Bar chart will display in the same way as a Bar chart. 
 * __100% Stacked Bar Charts__&mdash;A Bar chart where multiple series are stacked vertically to fit 100% of the chart area. 100% Stacked Bar Charts are used for three or more data series when you want to compare distributions within categories and at the same time display the differences between categories. Each bar represents 100% of the amounts for that category. If there is only one series in your chart, all the bars will fit to 100% of the chart area. 
-
-![A configured Bar cart type](images/BarChart.png)
 
 ## Creating Bar Charts with the Bar Chart Wizard
 

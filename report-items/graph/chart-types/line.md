@@ -37,7 +37,8 @@ SELECT
 	[Production].[ProductCategory].[Name] AS 'Category',
 	[Sales].[SalesOrderHeader].[OrderDate],
 	[Sales].[SalesOrderDetail].[LineTotal]
-FROM[Production].[Product] INNER JOIN
+FROM
+	[Production].[Product] INNER JOIN
 	[Production].[ProductSubcategory] ON [Production].[Product].[ProductSubcategoryID] = [Production].[ProductSubcategory].[ProductSubcategoryID] INNER JOIN
 	[Production].[ProductCategory] ON [Production].[ProductSubcategory].[ProductCategoryID] = [Production].[ProductCategory].[ProductCategoryID] INNER JOIN
 	[Sales].[SalesOrderDetail] ON [Production].[Product].[ProductID] = [Sales].[SalesOrderDetail].[ProductID] INNER JOIN

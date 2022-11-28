@@ -8,7 +8,7 @@ previous_url: /LineCharts, /GraphHowToCreateLineChart, /report-items/graph/chart
 published: True
 ---
 
-# Line Charts
+# Creating and Customizing Line Charts
 
 A Line chart displays series as sets of points connected by a single line and represents large amounts of data that occur over a continuous period of time.
 

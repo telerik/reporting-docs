@@ -15,7 +15,7 @@ Starting with version [`R1 2019 (13.0.19.116)`](https://www.telerik.com/support/
 
 The NuGet packages are available in the [Telerik NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\netcoreapp3.1\`, `\Bin\net5.0\`, `\Bin\net5.0-windows\`, `\Bin\net6.0\`, and `\Bin\net6.0-windows\` folders located in the Telerik Reporting installation directory. 
 
-The assemblies target .NET Standard 2.0 and the desktop viewers target .NET Core 3.1, .NET 5.0, or .NET 6.0, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability. 
+The assemblies target .NET Standard 2.0 and the desktop viewers target .NET Core 3.1, .NET 5.0, .NET 6.0, or .NET 7.0, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability. 
 
 ## Requirements
 
@@ -88,7 +88,7 @@ sudo apt-get install libc6-dev
 sudo apt-get install libgdiplus
 ````
 
-Since the libgdiplus library is not a perfect replacement for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and aligning. These problems mostly affect the [Image rendering extension]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}) and, therefore, it is not recommended to use it. 
+Since the `libgdiplus` library is not a perfect replacement for the Windows graphics library, the rendered reports may differ in terms of text positioning, word-wrapping, and aligning. These problems mostly affect the [Image rendering extension]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}) and, therefore, it is not recommended to use it. 
 
 The following JSON configuration snippet hides the Image rendering extension from the list of the available rendering extensions:
 
@@ -104,6 +104,10 @@ The following JSON configuration snippet hides the Image rendering extension fro
 ````
 
 On the Linux machine, you also need to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) configuration element. 
+
+>note The library [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) returns as a Family Font Name the `Preferred Family` rather than `Family` name from the font meta information. Details may be found in [Font.Name returns incorrect results on Linux](https://github.com/mono/libgdiplus/issues/617). The two names may be different in the general case. In such scenario, the font should be referenced with its `Family` name for Windows and `Preferred Family` name for Linux.
+>
+> In the rare case when the `Preferred Family` name of two fonts conincide and the `Family` names are different, on Linux only the second font registered as private would be respected as it will override the first one.
 
 ## Deploying on macOS
 

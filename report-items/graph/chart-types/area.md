@@ -41,7 +41,7 @@ FROM
 ````
 
 
-1. Add Area Chart as shown in the image below:
+1. Add Stacked Area Chart as shown in the image below:
 
 	![Add Area Chart Wizard](images/AreaChartWizardAdd.png)
 

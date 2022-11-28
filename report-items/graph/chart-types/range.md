@@ -27,7 +27,7 @@ The following image displays a plain Range chart with one Range Area series:
 ## Creating Range Charts with the Range Chart Wizard
 
 In this section, you will learn how to create a Range Area Chart with our Range Chart Wizard.
-The Range Chart is a modification of the more general Area Chart. That's why, its Wizard is under the Area Charts menu item. Our Range Chart will display the difference between years 2002 and 2003 for the earnings (field TotalDue from the below query) for the sales territories. The range value will be displayed as a Column range.  The final report will look like the image above.
+The Range Chart is a modification of the more general Area Chart. That's why, its Wizard is under the Area Charts menu item. Our Range Chart will display the difference between years 2002 and 2003 for the earnings (field _TotalDue_ from the below query) for the sales territories. The range value will be displayed as a Column range. The final report will look like the image above.
 
 We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
 
@@ -65,11 +65,12 @@ FROM
 	* `Y0`:	`=Sum(IIF(Fields.OrderDate.Year=2003, Fields.TotalDue, 0)) / 1000.0`
 
 	The above [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) set the range Value of our Range Area Chart to be the difference between years 2002 and 2003.
+
 	The TotalDue value is large, so we have also changed the areaSeries do display the value in thousands.
 
-1. Select the Graph Legend and set its `Style > Visible` to `False`. This way, we hide the legend to free some space for the Chart, as we have only one Series and it is not very informative.
+1. Select the Graph Legend and set its `Style > Visible` to `False`. This way, we hide the legend to free some space for the Chart, as we have only one Series and the legend is not very informative.
 
-1. If the Categories that represend territory names in our example are still too long and wrap on a new line, you may either shorten the names, or increase Graph width.
+1. If the Category Labels that represend territory names in our example are still too long and wrap on a new line, you may either shorten the names, or increase Graph width.
 
 ## Creating Range Charts Manually
 

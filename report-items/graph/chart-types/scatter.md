@@ -8,7 +8,7 @@ previous_url: /ScatterCharts, /GraphHowToCreateBubbleChart, /GraphHowToCreateSca
 published: True
 ---
 
-# Scatter Charts
+# Creating and Customizing Scatter Charts
 
 A Scatter (Point) chart shows correlations between two sets of values, enables users to observe the dependence of one value to another, and is often used for scientific data modeling. 
 
@@ -26,9 +26,53 @@ Bubble charts are a variation of the Scatter charts in which the data points are
 
 The following Bubble chart sample report has a category set to a sales person so that it aggregates sales data per sales person. However, the value of last year's sales is shown on the X-axis. 
 
-![A basic Bubble chart type](images/bubble-chart.png)
+![A basic Bubble chart type](images/BubbleChartWizardPreview.png)
 
-## Creating Scatter Charts
+
+
+
+## Creating Bubble with the Bubble Chart Wizard
+
+In this section, you will learn how to create a Bubble chart with our Bubble Chart Wizard.
+The Bubble Chart is a variation of the more general Scatter Chart and its wizard is under the Scatter Chart menu item. Our Bubble Chart will display          the LineTotal of the Product Categories by Years. The final report will look like the image above.
+In the general case, you may select `Stacked Bar` or `100% Stacked Bar`. The requiered settings are basically the same. 
+
+We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+
+````SQL
+SELECT
+	[Person].[Contact].[FirstName] + ' ' + [Person].[Contact].[LastName] AS 'SalesPersonName',
+	[Sales].[SalesOrderHeader].[OrderDate],
+	[Sales].[SalesOrderHeader].[SubTotal]
+FROM
+	[Person].[Contact] INNER JOIN
+	[Sales].[SalesOrderHeader] ON [Person].[Contact].[ContactID] = [Sales].[SalesOrderHeader].[ContactID]
+````
+
+
+1. Add Bubble Chart as shown in the image below:
+
+	![Add Bubble Chart Wizard](images/BubbleChartWizardAdd.png)
+
+1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+
+	![Add DataSource to the Bubble Chart](images/BubbleChartWizardDataSource.png)
+
+1. Arrange the Bubble Chart:
+
+	* Drag the field _Category_ to the `Series`
+	* Drag the field _OrderDate.Year_ to the `Categories`
+	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+
+	![Arrange the Bubble Chart](images/BubbleChartWizardArrangeFields.png)
+
+1. The LineTotal value is large, so let's change the barSeries `Data > X` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+
+
+
+
+
+## Creating Bubble Scatter Charts
 
 In this section, you will create a Bubble chart.
 

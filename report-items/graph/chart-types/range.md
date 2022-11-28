@@ -39,6 +39,8 @@ SELECT
 FROM
 	[Sales].[SalesOrderHeader] INNER JOIN
 	[Sales].[SalesTerritory] ON [Sales].[SalesOrderHeader].[TerritoryID] = [Sales].[SalesTerritory].[TerritoryID]
+WHERE
+	YEAR([Sales].[SalesOrderHeader].[OrderDate]) IN (2002, 2003)
 ````
 
 

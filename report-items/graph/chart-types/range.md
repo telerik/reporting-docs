@@ -8,7 +8,7 @@ previous_url: /RangeCharts, /GraphHowToCreateRangeChart, /report-items/graph/cha
 published: True
 ---
 
-# Range Charts
+# Creating and Customizing Range Area Charts
 
 A Range chart displays sets of data points, each of which is defined by multiple values for the same category, and emphasizes the distance between the two values. 
 
@@ -16,7 +16,7 @@ The category labels are displayed on the category axis. The plain Range chart fi
 
 The following image displays a plain Range chart with one Range Area series: 
 
-![A basic Range Area chart type](images/RangeAreaChart.png)
+![Range Area Chart](images/RangeChartWizardPreview.png)
 
 ## Types
 
@@ -24,14 +24,61 @@ The following image displays a plain Range chart with one Range Area series:
 * __Bar range__&mdash;The Bar Range chart uses bars to represent the range. 
 * __Smooth range__&mdash;A Smooth Range chart uses curved lines to connect data points rather than straight ones.
 
-## Creating Range Charts
+## Creating Range Charts with the Range Chart Wizard
+
+In this section, you will learn how to create a Range Area Chart with our Range Chart Wizard.
+The Range Chart is a modification of the more general Area Chart. That's why, its Wizard is under the Area Charts menu item. Our Range Chart will display the difference between years 2002 and 2003 for the earnings (field TotalDue from the below query) for the sales territories. The range value will be displayed as a Column range.  The final report will look like the image above.
+
+We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+
+````SQL
+SELECT
+	[Sales].[SalesTerritory].[Name] AS 'TerritoryName',
+	[Sales].[SalesOrderHeader].[OrderDate],
+	[Sales].[SalesOrderHeader].[TotalDue]
+FROM
+	[Sales].[SalesOrderHeader] INNER JOIN
+	[Sales].[SalesTerritory] ON [Sales].[SalesOrderHeader].[TerritoryID] = [Sales].[SalesTerritory].[TerritoryID]
+````
+
+
+1. Add Range Chart as shown in the image below:
+
+	![Add Range Chart Wizard](images/RangeChartWizardAdd.png)
+
+1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+
+	![Add DataSource to the Range Chart](images/RangeChartWizardDataSource.png)
+
+1. Arrange the Range Chart:
+
+	* Leave the `Series` empty
+	* Drag the field _TerritoryName_ to the `Categories`
+	* Drag the field _TotalDue_ to the `Value0`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	* Drag the field _TotalDue_ also to the `Value1`. Later, we will edit both Value fields manually to display the required information.
+
+	![Arrange the Range Chart](images/RangeChartWizardArrangeFields.png)
+
+1. Select the areaSeries and change its properties `Y` and `Y0` in the Properties Data tab from the current _=Sum(Fields.TotalDue)_ to the following values:
+
+	* `Y`:	`=Sum(IIF(Fields.OrderDate.Year=2002, Fields.TotalDue, 0)) / 1000.0`
+	* `Y0`:	`=Sum(IIF(Fields.OrderDate.Year=2003, Fields.TotalDue, 0)) / 1000.0`
+
+	The above [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) set the range Value of our Range Area Chart to be the difference between years 2002 and 2003.
+	The TotalDue value is large, so we have also changed the areaSeries do display the value in thousands.
+
+1. Select the Graph Legend and set its `Style > Visible` to `False`. This way, we hide the legend to free some space for the Chart, as we have only one Series and it is not very informative.
+
+1. If the Categories that represend territory names in our example are still too long and wrap on a new line, you may either shorten the names, or increase Graph width.
+
+## Creating Range Charts Manually
 
 In this section, you will create a Range Area chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}). 
-   
+To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({%slug graph_item_get_started%}). 
+
 ### 2. Set the SeriesGroups Hierarchy 
 
 Now you can set the **SeriesGropus** hierarchy of the Range Area chart: 
@@ -68,7 +115,7 @@ In this step, you will configure the series of the chart:
 1. Set the __Y__ value to `=Sum(IIF(Fields.OrderDate.Year=2002, Fields.TotalDue, 0))`.
 1. Set the __Y0__ value to `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.TotalDue, 0))`.
 
-### 6. Style the Appearance   
+### 6. Style the Appearance
 
 To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}). 
 

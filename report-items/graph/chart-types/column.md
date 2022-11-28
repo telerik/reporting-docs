@@ -8,7 +8,7 @@ previous_url: /ColumnCharts, /GraphHowToCreateColumnChart, /report-items/graph/c
 published: True
 ---
 
-# Column Charts
+# Creating and Customizing Column Charts
 
 A Column chart displays data series as sets of vertical bars that are grouped by category. 
 

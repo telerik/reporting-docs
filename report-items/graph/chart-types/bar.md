@@ -8,7 +8,7 @@ previous_url: /BarCharts, /GraphHowToCreateBarChart, /report-items/graph/chart-t
 published: True
 ---
 
-# Bar Charts
+# Creating and Customizing Bar Charts
 
 A Bar chart displays data series as sets of horizontal bars, graphically summarizes and renders data categories, and enables users to easily compare amounts or values between different categories. 
 

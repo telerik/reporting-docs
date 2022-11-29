@@ -17,6 +17,10 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Report Viewer</td>
+			<td>Angular Report Viewer</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -24,59 +28,57 @@ res_type: kb
 ## Description
 The article describes how to change the culture of the Kendo DatePicker widget used in the Angular Report Viewer.
 
+The general solution of the problem for localizing the DatePicker of the [pure Html5 Report Viewer](https://docs.telerik.com/reporting/html5-report-viewer) is described in the [Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 Report Viewer]({% slug how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer %}) article. 
+
+To also change the culture of the report viewer, it is required to import the necessary Kendo culture on the page with the report viewer.
+
 ## Solution
-The general solution of the problem for localizing the DatePicker of the 
-[pure Html5 Report Viewer](https://docs.telerik.com/reporting/html5-report-viewer) is described in the 
-[Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 Report Viewer]({% slug how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer %}) 
-article. The Angular viewer is a wrapper of the pure Html5 viewer that utilizes Kendo UI for jQuery widgets. For that reason, 
-in order to update the DatePicker in the Angular Viewer according to the above article, you need first to integrate the 
-Kendo UI for jQuery in the Angular application following the article 
-[Kendo UI for jQuery Integration](https://www.telerik.com/kendo-angular-ui/components/framework/kendo-jquery/). Here are the steps: 
 
-- Install Kendo UI for jQuery:
-```
-npm install --save @progress/kendo-ui
-``` 
+For this example, we will load the additional `kendo` cultures via the kendo CDN. To accomplish this in an Angular component, it is necessary to create a helper function that loads scripts from an URL, for example:
 
- - In the 'app.component.ts' import the components from Kendo and declare the 'kendo' object. Then in the 'AfterViewInit' add 
- the code for utilizing the corresponding culture:
 ```TypeScript
-...
-import '@progress/kendo-ui';
-declare var kendo: any;
-...
-export class AppComponent implements AfterViewInit {
-    @ViewChild('viewer1', { static: false }) viewer: TelerikReportViewerComponent;
+    loadScript(url: string) {
+        let body = <HTMLDivElement>document.body;
+        let script = document.createElement('script');
+        script.innerHTML = '';
+        script.src = url;
+        script.async = true;
+        script.defer = true;
+        body.appendChild(script);
+    }
+```
 
-    ngAfterViewInit(): void {
-        ...
-        kendo.culture("fr-FR");
-		...
+The script can be loaded in the `constructor` of the component loading the Angular Report Viewer, for example:
+
+```TypeScript
+export class ReportViewerComponent implements AfterViewInit {
+    @ViewChild('viewer1') viewer: TelerikReportViewerComponent;
+
+    constructor() {
+        this.loadScript(`http://kendo.cdn.telerik.com/2022.3.913/js/cultures/kendo.culture.bg-BG.min.js`);
     }
     ...
-}
-``` 
+  }
+```
 
-- Add the necessary Kendo scripts in the 'index.html' of the project. The 'head' section of the HTML page may look like:
+Then the actual change of the kendo current culture can happen in the [renderingBegin]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args) %}) event:
+
+```TypeScript
+    renderingBegin() {
+        kendo.culture("bg-BG");
+    }
+```
+
 ```HTML
-<head>
-  <meta charset="utf-8">
-  <title>Telerik Angular Report Viewer Demo</title>
-  <base href="/">
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="http://kendo.cdn.telerik.com/2019.1.115/styles/kendo.common.min.css" rel="stylesheet" />
-  <link href="http://kendo.cdn.telerik.com/2019.1.115/styles/kendo.blueopal.min.css" rel="stylesheet" />
-
-  <script src="http://kendo.cdn.telerik.com/2019.1.115/js/kendo.all.min.js"></script>
-  <script src="http://kendo.cdn.telerik.com/2019.1.115/js/cultures/kendo.culture.fr-FR.min.js"></script>
-</head>
-``` 
+<tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59655/api/reports/'"
+    [reportSource]="{
+        report: 'Employee Sales Summary.trdp',
+        parameters: {}
+    }" [viewMode]="'INTERACTIVE'" [renderingBegin]="renderingBegin"
+    [scaleMode]="'SPECIFIC'" [scale]="1.0"
+    [enableAccessibility]="false">
+</tr-viewer>
+```
 
 ## See Also
 - [Change the culture of Kendo DatePicker widget in the parameters area of the HTML5 Report Viewer]({% slug how-to-change-the-culture-of-the-datepicker-in-html5-report-viewer %}) 
-
-- [Kendo UI for jQuery Integration](https://www.telerik.com/kendo-angular-ui/components/framework/kendo-jquery/)

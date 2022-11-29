@@ -49,10 +49,10 @@ Important cache management related properties of the IReportServiceConfiguration
 
 * __[ReportSharingTimeout](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration#Telerik_Reporting_Services_IReportServiceConfiguration_ReportSharingTimeout) property__ Gets or sets a value in minutes indicating how long a rendered report document from a client will be available to be reused, by the current and other clients which request the same report document. Two report documents are considered the same when they both comply with the following conditions:
 	+ Use the same Report definition. For example, the same TRDP report file;
-	+ Use the same [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview}) values;
-	+ The [Interactive Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview}) are with the same state. For example, the _Toggle Visibility_ is either in expanded or collapsed state, or the _Sorting_ is in the same order;
-	+ Are rendered in the same [Export Format]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats}).
+	+ Use the same [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) values;
+	+ The [Interactive Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%}) are with the same state. For example, the _Toggle Visibility_ is either in expanded or collapsed state, or the _Sorting_ is in the same order;
+	+ Are rendered in the same [Export Format]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}).
 
 	When a report is rendered once for a given set of the above requirements, it can be reused for the time specified as `ReportSharingTimeout`. Setting the `ReportSharingTimeout` to `0` (`zero`, default) will cause each client request for a report to produce a new report document instead of reusing an already rendered document. 
 
->When you navigate to reports via [NavigateToReportAction]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) the Reporting engine always creates a new instance of the target report. 
+>When you navigate to reports via [NavigateToReportAction]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) the Reporting engine always creates a new instance of the target report.

@@ -25,7 +25,7 @@ The Pie chart supports the __Doughnut__ type which has an open space in the cent
 ## Creating Pie Charts with the Pie Chart Wizard
 
 In this section, you will learn how to create a Pie chart with our Pie Chart Wizard.
-We are going to displays the SubTotal for a Top 10 performing Store as a percentage of the SubTotal for all Stores. The final report will look like the image above.
+We are going to displays the SubTotal for the Top 10 performing Stores as a percentage of the SubTotal for all Stores. The final report will look like the image above.
 
 We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
 
@@ -57,8 +57,8 @@ FROM
 	![Arrange the Pie Chart](images/PieChartWizardArrangeFields.png)
 
 1. The total number of the Series in the Graph, i.e. the Stores, is too large, which results in a very segmented Pie Chart. In order to have a better visual experience, we will limit the Stores to the Top 10 performing ones. For this purpose, let's introduce `Filtering` to the Graph Series Group:
-	1. Select the `Graph` > `Data` > `SeriesGroups` and click on the ellipses `...` beside the property. This will open the _GraphGroup Collection Editor_.
-	1. Select the `Filters` property and click on the ellipses `...`. This opens the _Edit Filters` dialog.
+	1. Select the `Graph` > `Data` > `SeriesGroups` and click on the ellipses (`...`) beside the property. This will open the _GraphGroup Collection Editor_.
+	1. Select the `Filters` property and click on the ellipses (`...`). This opens the _Edit Filters_ dialog.
 	1. Enter the following filtering rule:
 		* For `Expression` use `=Sum(Fields.SubTotal)`
 		* For `Operator` select `Top N`

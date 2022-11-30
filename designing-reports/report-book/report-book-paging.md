@@ -26,18 +26,30 @@ __The value of the TextBox in the PageHeader is equal to = "Page: " + PageNumber
 
   
 
-  ![](images/ReportBook_PageNumberingContinue.png)
+  ![Continued Paging](images/ReportBook_PageNumberingContinue.png)
 >caption PageNumberingStyle.ResetNumbering
 
   
 
-  ![](images/ReportBook_PageNumberingStyleResetNumbering.png)
+  ![Resetting the PageNumber](images/ReportBook_PageNumberingStyleResetNumbering.png)
 >caption PageNumberingStyle.ResetNumberingAndCount
 
   
 
-  ![](images/ReportBook_PageNumberingStyleResetNumberingAndCount.png)
+  ![Resetting PageNumber and PageCount](images/ReportBook_PageNumberingStyleResetNumberingAndCount.png)
 
+## Multiple PageNumberingStyles and Reports order
+
+When working with the `PageNumberingStyle` property, if the Reports have different values set for that property, the order of reports will matter for the values of the `PageNumber` and `PageCount` objects.
+
+For example, if there is a Report Book of two reports - `Report1.trdp` that uses `PageNumberingStyle.ResetNumberingAndCount` and `Report2` that uses `PageNumberingStyle.Continue`, and the order of the reports is the following:
+
+- Report1.trdp - 5 total pages
+- Report2.trdp - 1 total page
+
+In such a case, when the total page count is being counted and the reporting engine goes to the second report, since it uses `PageNumberingStyle.Continue`, the total `PageCount` will be added to that of the `Report1.trdp` report and if it has a total of _5 pages_, and `Report2.trdp` is one page, the `PageCount` object will return `6` for both reports(only when rendered in the context of a Report Book).
+
+On the other hand, if the order of the two reports is switched and now `Report2.trdp` is first, since the next report(`Report1.trdp`) uses `PageNumberingStyle.ResetNumberingAndCount`, when the counting gets to it the `PageCount` will be restarted and it will now return the total page count of `5`.
 
 ## See Also
 

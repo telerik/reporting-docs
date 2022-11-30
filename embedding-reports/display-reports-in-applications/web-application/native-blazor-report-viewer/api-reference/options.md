@@ -59,8 +59,20 @@ Below is a list of all options available during initialization of the native Bla
 						properties name/value equal to the report parameters names and values used in the report
 						definition.</li>
 				</ul>
+				<p>To set the ReportSource to a physical <i>(TRDP/TRDX/TRBP)</i> file, provide a relative path to the <strong>Report</strong> property of the ReportSourceOptions object.</p>
 				<pre><code>
 public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdp", new Dictionary&lt;string, object&gt;
+{
+	// Add parameters if applicable
+});
+				</code></pre>
+				<p>To set the ReportSource to a <a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.TypeReportSource" target="_blank">type definition</a>:</p>
+				<ol>
+					<li>Add a reference to the project containing the type definition.</li>
+					<li>Pass the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0" target="_blank">assembly qualified name</a> <i>(format: "<strong>{type}, {assembly}</strong>")</i> of the report's type to the <strong>Report</strong> property of the ReportSourceOptions object.</li>
+				</ol>
+				<pre><code>
+public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary", new Dictionary&ltstring, object&gt
 {
 	// Add parameters if applicable
 });

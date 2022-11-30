@@ -72,7 +72,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 					<li>Pass the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0" target="_blank">assembly qualified name</a> <i>(format: "<strong>{type}, {assembly}</strong>")</i> of the report's type to the <strong>Report</strong> property of the ReportSourceOptions object.</li>
 				</ol>
 				<pre><code>
-public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary", new Dictionary&ltstring, object&gt
+public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary", new Dictionary&lt;string, object&gt;
 {
 	// Add parameters if applicable
 });

@@ -28,14 +28,10 @@ The following Bubble chart sample report has a category set to a sales person so
 
 ![A basic Bubble chart type](images/BubbleChartWizardPreview.png)
 
-
-
-
 ## Creating Bubble with the Bubble Chart Wizard
 
 In this section, you will learn how to create a Bubble chart with our Bubble Chart Wizard.
-The Bubble Chart is a variation of the more general Scatter Chart and its wizard is under the Scatter Chart menu item. Our Bubble Chart will display          the LineTotal of the Product Categories by Years. The final report will look like the image above.
-In the general case, you may select `Stacked Bar` or `100% Stacked Bar`. The requiered settings are basically the same. 
+The Bubble Chart is a variation of the more general Scatter Chart and its wizard is under the Scatter Chart menu item. Our Bubble Chart will display the decrease in the sales from 2003 to 2004 in Toronto for the employees from the region.
 
 We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
 
@@ -45,8 +41,13 @@ SELECT
 	[Sales].[SalesOrderHeader].[OrderDate],
 	[Sales].[SalesOrderHeader].[SubTotal]
 FROM
-	[Person].[Contact] INNER JOIN
-	[Sales].[SalesOrderHeader] ON [Person].[Contact].[ContactID] = [Sales].[SalesOrderHeader].[ContactID]
+	[Person].[Address] INNER JOIN
+	[Sales].[SalesOrderHeader] ON [Person].[Address].[AddressID] = [Sales].[SalesOrderHeader].[BillToAddressID] AND 
+		[Person].[Address].[AddressID] = [Sales].[SalesOrderHeader].[ShipToAddressID] INNER JOIN
+	[Person].[Contact] ON [Sales].[SalesOrderHeader].[ContactID] = [Person].[Contact].[ContactID] 
+WHERE
+	YEAR([Sales].[SalesOrderHeader].[OrderDate]) IN (2003, 2004) AND
+	[Person].[Address].[City] = 'Toronto'
 ````
 
 
@@ -60,17 +61,29 @@ FROM
 
 1. Arrange the Bubble Chart:
 
-	* Drag the field _Category_ to the `Series`
-	* Drag the field _OrderDate.Year_ to the `Categories`
-	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	* Drag the field _SalesPersonName_ to the `Series`
+	* Leave the `Categories` empty
+	* Drag the field _SubTotal_ to `X`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
+	* Drag the field _SubTotal_ to `Y`
+	* Drag the field _SubTotal_ to `Size`
 
 	![Arrange the Bubble Chart](images/BubbleChartWizardArrangeFields.png)
 
-1. The LineTotal value is large, so let's change the barSeries `Data > X` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+1. In the Graph properties, select the `CategoryGroups` and if the `Groupings` proprty is different from `Static`, click the ellipses (`...`) beside the property and delete the group as shown in the image below:
 
+	![Delete the Grouping in the Category Group of the Bubble Chart](images/BubbleChartWizardDeleteCategoryGrouping.png)
 
+1. We need to change `X`, `Y` and `Size` with the values they need to display for our purposes.
 
+	Select the LineSeries and change the properties as specified below:
 
+	`X`: `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))/1000.0`
+
+	`Y`: `=Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))/1000.0`
+
+	`Size`: `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0)) - Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))`
+
+	Note that since the SubTotal value is large, we set the Graph to display it in thousands.
 
 ## Creating Bubble Scatter Charts
 

@@ -66,9 +66,9 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 	// Add parameters if applicable
 });
 				</code></pre>
-				<p>To set the ReportSource to a <a href="https://docs.telerik.com/reporting/api/Telerik.Reporting.TypeReportSource" target="_blank">type definition</a>:</p>
+				<p>To set the ReportSource to a <a href="/api/Telerik.Reporting.TypeReportSource" target="_blank">type definition</a>:</p>
 				<ol>
-					<li>Make sure that the <a href="https://docs.telerik.com/reporting/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/overview" target="_blank">Reporting REST Service</a> project references the project containing the type definition.</li>
+					<li>Make sure that the <a href="{%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}" target="_blank">Reporting REST Service</a> project references the project containing the type definition.</li>
 					<li>Pass the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0" target="_blank">assembly qualified name</a> <i>(format: "<strong>{type}, {assembly}</strong>")</i> of the report's type to the <strong>Report</strong> property of the ReportSourceOptions object.</li>
 				</ol>
 				<pre><code>

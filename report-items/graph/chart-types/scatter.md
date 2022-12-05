@@ -149,4 +149,4 @@ To set the color palette, format the labels, define the values of the legend, an
 ## See Also 
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
-* (Demo TRDP Report) [BubbleChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BubbleChart.trdp)
+* [(Demo TRDP Report) BubbleChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BubbleChart.trdp)

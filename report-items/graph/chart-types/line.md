@@ -65,6 +65,8 @@ FROM
 
 1. The LineTotal value is large, so let's change the lineSeries `Data > Y` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
 
+You may find the report created following the above steps in our GitHub samples repository - [LineChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/LineChart.trdp).
+
 ## Creating Line Charts Manually
 
 In this section, you will create a Line chart.
@@ -123,3 +125,4 @@ To set the color palette, format the labels, define the values of the legend, an
 ## See Also
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [(Demo TRDP Report) LineChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/LineChart.trdp)

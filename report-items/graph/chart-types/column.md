@@ -65,63 +65,66 @@ FROM
 
 1. The LineTotal value is large, so let's change the barSeries `Data > Y` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
 
+You may find the report created following the above steps in our GitHub samples repository - [ColumnChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/ColumnChart.trdp).
+
 ## Creating Column Charts Manually
 
 In this section, you will create a Column chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}). 
+To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}).
 
-### 2. Set the SeriesGroups Hierarchy 
+### 2. Set the SeriesGroups Hierarchy
 
-Now you can set the **SeriesGropus** hierarchy of the Column chart: 
+Now you can set the **SeriesGropus** hierarchy of the Column chart:
 
 1. Open the __SeriesGroups__ collection editor and click __Add__.
 1. Set the __Groupings__ to `=Fields.OrderDate.Year`.
-1. Set the __Sortings__ to `=Fields.OrderDate.Year`. 
-1. Set the __Name__ to `seriesGroup1`. 
+1. Set the __Sortings__ to `=Fields.OrderDate.Year`.
+1. Set the __Name__ to `seriesGroup1`.
 
 ### 3. Set the CategoryGroups Hierarchy
 
 Next, you will have to define the **CategoryGroups** hierarchy of the Column chart:
 
-1. Open the __CategoryGroups__ collection editor and click __Add__. 
+1. Open the __CategoryGroups__ collection editor and click __Add__.
 1. Set the __Groupings__ to `=Fields.Category`.
 1. Set the __Sortings__ to `=Fields.Category`.
-1. Set the __Name__ to `categoryGroup1`. 
+1. Set the __Name__ to `categoryGroup1`.
  
 ### 4. Configure the Coordinate System
 
-Here you will specify the coordinate system details: 
+Here you will specify the coordinate system details:
 
-1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__. 
-1. Leave the __Name__ to `cartesianCoordinateSystem1`. 
-1. Set the __XAxis__ to __New Axis with Category Scale__. 
-1. Set the __YAxis__ to __New Axis with Numerical Scale__. 
+1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
+1. Leave the __Name__ to `cartesianCoordinateSystem1`.
+1. Set the __XAxis__ to __New Axis with Category Scale__.
+1. Set the __YAxis__ to __New Axis with Numerical Scale__.
  
 ### 5. Configure the Series
 
 In this step, you will configure the series of the chart:
 
-1. Open the __Series__ collection editor and __Add__ new __BarSeries__. 
-1. Set the __CategoryGroup__ to __categoryGroup1__. 
-1. Set the __SeriesGroup__ to __seriesGroup1__. 
-1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__. 
-1. Set the __ArrangeMode__ to __Clustered__. 
+1. Open the __Series__ collection editor and __Add__ new __BarSeries__.
+1. Set the __CategoryGroup__ to __categoryGroup1__.
+1. Set the __SeriesGroup__ to __seriesGroup1__.
+1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__.
+1. Set the __ArrangeMode__ to __Clustered__.
 1. Set the __Y__ value to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`.
 
-### 6. Style the Appearance   
+### 6. Style the Appearance
 
 To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}). 
 
 ## Design Considerations
 
-* Column charts are most commonly used to show comparisons between groups. If more than three series are present on the chart, consider using a Stacked Column chart. 
+* Column charts are most commonly used to show comparisons between groups. If more than three series are present on the chart, consider using a Stacked Column chart.
 * In a Column chart, you have less space for the category axis labels to display horizontally. If you have longer category labels, consider using a Bar chart or changing the rotation angle of the label through the __LabelAngle__ property of the axis. 
-* If there are many data points in your dataset that are relative to the size of your chart, the size of the columns and the spacing between them are reduced. To modify the width of the columns in a chart, consider changing the __SpacingSlotCount__ property of the __category__ axis scale. By default, the value is `1` which indicates equal widths of the column and the free space. The greater the value, the more free space is reserved between the columns. 
+* If there are many data points in your dataset that are relative to the size of your chart, the size of the columns and the spacing between them are reduced. To modify the width of the columns in a chart, consider changing the __SpacingSlotCount__ property of the __category__ axis scale. By default, the value is `1` which indicates equal widths of the column and the free space. The greater the value, the more free space is reserved between the columns.
 
-## See Also 
+## See Also
 
 * [(Demo) Olympic Medals Map with Column Charts Report](https://demos.telerik.com/reporting/olympic-medals-map)
 * [(Demo) Employee Sales Report with Column Charts Report](https://demos.telerik.com/reporting/employee-sales)
+* [(Demo TRDP Report) ColumnChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/ColumnChart.trdp)

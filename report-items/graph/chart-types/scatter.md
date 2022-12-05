@@ -85,7 +85,9 @@ WHERE
 
 	Note that since the SubTotal value is large, we set the Graph to display it in thousands.
 
-## Creating Bubble Scatter Charts
+You may find the report created following the above steps in our GitHub - [BubbleChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BubbleChart.trdp).
+
+## Creating Bubble Scatter Charts Manually
 
 In this section, you will create a Bubble chart.
 
@@ -107,35 +109,35 @@ Now you can set the **SeriesGropus** hierarchy of the Bubble chart:
 Next, you will have to define the **CategoryGroups** hierarchy of the Bubble chart:
 
 1. Open the __CategoryGroups__ collection editor and click __Add__. By default, this will add a new static group (group without grouping).
-1. Set the __Name__ to `categoryGroup1`. 
+1. Set the __Name__ to `categoryGroup1`.
 
 ### 4. Configure the Coordinate System
 
 Here you will specify the coordinate system details: 
 
-1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__. 
-1. Leave the __Name__ to `cartesianCoordinateSystem1`. 
-1. Set the __XAxis__ to __New Axis with Numerical Scale__. 
-1. Set the __YAxis__ to __New Axis with Numerical Scale__. 
+1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
+1. Leave the __Name__ to `cartesianCoordinateSystem1`.
+1. Set the __XAxis__ to __New Axis with Numerical Scale__.
+1. Set the __YAxis__ to __New Axis with Numerical Scale__.
 
 ### 5. Configure the Series
 
 In this step, you will configure the series of the chart:
 
-1. Open the __Series__ collection editor and __Add__ new __LineSeries__. 
-1. Set the __CategoryGroup__ to __categoryGroup1__. 
-1. Set the __SeriesGroup__ to __seriesGroup1__. 
-1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__. 
-1. Set the __X__ value to `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))`.
-1. Set the __Y__ value to `=Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))`.
-1. Set the __Size__ expression to `=Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0)) - Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))`.
-1. Set the __LineStyle.Visible__ to __False__. 
-1. Set the __DataPointStyle.Visible__ to __True__. 
-1. Set the __MarkerType__ to __Circle__. 
+1. Open the `Series` collection editor and __Add__ new `LineSeries`.
+1. Set the `CategoryGroup` to __categoryGroup1__.
+1. Set the `SeriesGroup` to __seriesGroup1__.
+1. Set the `CoordinateSystem` to __cartesianCoordinateSystem1__.
+1. Set the `X` value to `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))/1000.0`.
+1. Set the `Y` value to `=Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))/1000.0`.
+1. Set the `Size` expression to `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0)) - Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))`.
+1. Set the `LineStyle.Visible` to `False`.
+1. Set the `DataPointStyle.Visible` to `True`.
+1. Set the `MarkerType` to `Circle`.
 
 ### 6. Style the Appearance
 
-To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}). 
+To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}).
 
 ## Design Considerations 
 
@@ -147,3 +149,4 @@ To set the color palette, format the labels, define the values of the legend, an
 ## See Also 
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* (Demo TRDP Report)[BubbleChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BubbleChart.trdp)

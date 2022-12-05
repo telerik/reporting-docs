@@ -85,7 +85,7 @@ WHERE
 
 	Note that since the SubTotal value is large, we set the Graph to display it in thousands.
 
-You may find the report created following the above steps in our GitHub - [BubbleChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BubbleChart.trdp).
+You may find the report created following the above steps in our GitHub samples repository - [BubbleChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BubbleChart.trdp).
 
 ## Creating Bubble Scatter Charts Manually
 

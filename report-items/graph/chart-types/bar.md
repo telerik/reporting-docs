@@ -65,6 +65,8 @@ FROM
 
 1. The LineTotal value is large, so let's change the barSeries `Data > X` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
 
+You may find the report created following the above steps in our GitHub samples repository - [BarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BarChart.trdp).
+
 ## Creating Bar Charts Manually
 
 ### 1. Add the Graph
@@ -73,41 +75,41 @@ To add a new Graph report item to the report, refer to the article [getting star
 
 ### 2. Set the SeriesGroups Hierarchy 
 
-Now you can set the **SeriesGropus** hierarchy of the Bar chart: 
+Now you can set the **SeriesGropus** hierarchy of the Bar chart:
 
 1. Open the __SeriesGroups__ collection editor and click __Add__.
 1. Set the __Groupings__ to `=Fields.Category`.
-1. Set the __Sortings__ to `=Fields.Category`. 
-1. Set the __Filter__ to `=Fields.Category ```<>``` Bikes`. 
-1. Set the __Name__ to `seriesGroup1`. 
+1. Set the __Sortings__ to `=Fields.Category`.
+1. Set the __Filter__ to `=Fields.Category ```<>``` Bikes`.
+1. Set the __Name__ to `seriesGroup1`.
 
 ### 3. Set the CategoryGroups Hierarchy
 
 Next, you will have to define the **CategoryGroups** hierarchy of the Bar chart:
 
-1. Open the __CategoryGroups__ collection editor and click __Add__. 
+1. Open the __CategoryGroups__ collection editor and click __Add__.
 1. Set the __Groupings__ to `=Fields.OrderDate.Year`.
 1. Set the __Sortings__ to `=Fields.OrderDate.Year`.
-1. Set the __Name__ to `categoryGroup1`. 
+1. Set the __Name__ to `categoryGroup1`.
 
 ### 4. Configure the Coordinate System
 
 Here you will specify the coordinate system details: 
 
-1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__. 
-1. Leave the __Name__ to `cartesianCoordinateSystem1`. 
-1. Set the __XAxis__ to __New Axis with Numerical Scale__. 
-1. Set the __YAxis__ to __New Axis with Category Scale__. 
+1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
+1. Leave the __Name__ to `cartesianCoordinateSystem1`.
+1. Set the __XAxis__ to __New Axis with Numerical Scale__.
+1. Set the __YAxis__ to __New Axis with Category Scale__.
 
 ### 5. Configure the Series
 
 In this step, you will configure the series of the chart:
 
-1. Open the __Series__ collection editor and __Add__ new __BarSeries__. 
-1. Set the __CategoryGroup__ to __categoryGroup1__. 
-1. Set the __SeriesGroup__ to __seriesGroup1__. 
-1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__. 
-1. Set the __ArrangeMode__ to __Clustered__. 
+1. Open the __Series__ collection editor and __Add__ new __BarSeries__.
+1. Set the __CategoryGroup__ to __categoryGroup1__.
+1. Set the __SeriesGroup__ to __seriesGroup1__.
+1. Set the __CoordinateSystem__ to __cartesianCoordinateSystem1__.
+1. Set the __ArrangeMode__ to __Clustered__.
 1. Set the __X__ value to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`.
 
 ### 6. Style the Appearance   
@@ -122,7 +124,8 @@ To set the color palette, format the labels, define the values of the legend, an
 * When a Bar chart renders data point labels, the labels are placed on the outside end of each bar (**OutsideEnd**). This behavior may result in a label that is overlapped by its corresponding bar when the bar takes up all of the allotted space within the chart area. To change the position of the data point labels displayed for each bar, set the [`DataPointLabelAlignment`](/reporting/api/Telerik.Reporting.BarSeries#Telerik_Reporting_BarSeries_DataPointLabelAlignment) property in the **Properties** tool window.
 * If there are many data points in your dataset that are relative to the size of your chart, the size of the bars and the spacing between them are reduced. To modify the width of the bars in a chart, consider changing the __SpacingSlotCount__ property of the __category__ axis scale. By default, the value is `1` which indicates equal widths of the bars and the free space. The greater the value, the more free space is reserved between the bars.
 
-## See Also 
+## See Also
 
 * [(Demo) Product Line Sales Report with Bar Charts](https://demos.telerik.com/reporting/product-line-sales)
 * [(Demo) Dashboard Report with Bar Charts](https://demos.telerik.com/reporting/dashboard)
+* [(Demo TRDP Report) BarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BarChart.trdp)

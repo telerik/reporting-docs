@@ -137,5 +137,4 @@ protected override void OnInitialized()
 ````
 
 
-> Since the Native Blazor Report Viewer uses __Telerik UI for Blazor__ components internally, you would also need to setup the __ITelerikStringLocalizer__ interface in the same fashion, to provide strings to the telerik components - [Telerik Blazor UI Localization](../../blazor-ui/globalization/localization)
-
+> Since the Native Blazor Report Viewer uses __Telerik UI for Blazor__ components internally, you would also need to setup the __ITelerikStringLocalizer__ interface in the same fashion, to provide strings to the telerik components - [Telerik Blazor UI Localization](https://docs.telerik.com/blazor-ui/globalization/localization)

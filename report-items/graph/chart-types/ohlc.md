@@ -77,8 +77,8 @@ The field `date` is a DateTime with format `dd.MM.yyyy`. The rest of the fields 
 1. Leave the default DateTime scale settings.
 
 1. Format the axis labels as follows:
-	* Set the GraphAxis `Misc` > `LabelAngle` to `270`
-	* Set the GraphAxis `Misc` > `Format` to `{0:d}`
+	* Set the GraphAxis `Misc` > `LabelAngle` to `270`. This way the axis labels will be displayed vertically for better appearance.
+	* Set the GraphAxis `Misc` > `Format` to `{0:d}`. This will let the labels be displayed as dates only.
 
 You may find the report created following the above steps in our GitHub samples repository - [OhlcChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/OhlcChart.trdp).
 

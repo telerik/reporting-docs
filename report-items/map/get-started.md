@@ -108,6 +108,8 @@ SELECT
 
 1. When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer, and start requesting the geocode and tiles information from the providers asynchronously. Initially, it will take a few seconds to fetch all the data from the geocoding service, but the following requests will be executed faster. The tiles, needed to prepare the Map background, will be displayed as they arrive, but the Map will stay responsive and you can examine and change its definition. When finished, your Map will look similar to the one shown in beginning of this tutorial.
 
+You may download the demo report from our Reporting Samples GitHub repository - [MapWithMapWizard.trdp](https://github.com/telerik/reporting-samples/blob/master/map-samples/MapWithMapWizard.trdp).
+
 ## Next Steps
 
 * [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)

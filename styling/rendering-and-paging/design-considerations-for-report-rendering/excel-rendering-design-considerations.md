@@ -76,7 +76,7 @@ Background images are not supported.
 | ------ | ------ |
 |TextBox|TextBox values are converted to string or number cells in Excel depending on the actual value. If a supported .NET string format is supplied through the Format property of the TextBox, the resulting cell is accordingly formatted respecting the Culture of the TextBox. Item binding expressions are not converted to Excel formulas.|
 |Graph|Graph report items are rendered as an Excel Picture object and not Excel Chart object. In __Microsoft Excel 97-2003__ it is a Bitmap image; in __Microsoft Excel 2007 and above__ it is a Metafile(EMF).|
-|Barcode|Barcode is rendered as an Excel Picture object with a Bitmap image.|
+|Barcode|Barcode is rendered as an Excel Picture object with a Bitmap image. In __Microsoft Excel 97-2003__ it is a Bitmap image; in __Microsoft Excel 2007 and above__ it is a Metafile(EMF). Due to this if the barcode is small, when exported to the __Microsoft Excel 97-2003 (XLS)__ format, the image will be rasterized and the barcode might become unreadable. Exporting to __Microsoft Excel 2007 and above(XLSX)__ is advised because then the image will be in a vector format (EMF) |
 |Table|Table is rendered as a range of Excel cells.|
 |HtmlTextBox|HtmlTextBox is rendered as plain text with no formatting.|
 |Shape|Shape report items are rendered as Excel Picture objects with Bitmap images, not Microsoft Office Drawings.|

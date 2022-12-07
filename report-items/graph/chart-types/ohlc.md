@@ -54,15 +54,15 @@ date,open,high,low,close
 
 The field `date` is a DateTime with format `dd.MM.yyyy`. The rest of the fields are Decimal.
 
-1. Add OHLC Chart as shown in the image below:
+1. Add Candlestick (OHLC) Chart as shown in the image below:
 
-	![Add OHLC Chart Wizard](images/OhlcChartWizardAdd.png)
+	![Add Candlestick (OHLC) Chart Wizard](images/OhlcChartWizardAdd.png)
 
 1. Select the CsvDataSource, or create it with the button `Add New Data Source...` and the above inline CSV:
 
 	![Add DataSource to the OHLC Chart](images/OhlcChartWizardDataSource.png)
 
-1. Arrange the OHLC Chart:
+1. Arrange the Candlestick (OHLC) Chart:
 
 	* Leave the `Series` empty
 	* Drag the field _date_ to the `Categories`

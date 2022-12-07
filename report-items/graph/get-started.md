@@ -24,13 +24,13 @@ Depending on the Report Designer tool you are using, the Graph provides the foll
 
 ### Using the Standalone Report Designer
 
-To add a Graph item to your report in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), run a **new Bar**, **Column**, **Area**, **Line**, **Pie**, **Scatter**, or **Others** Chart Wizard, or use the ribbon tools: 
+To add a Graph item to your report in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), run a new `Bar`, `Column`, `Area`, `Line`, `Pie`, `Scatter`, or `Others` Chart Wizard, or use the ribbon tools: 
 
 1. From the ribbon bar, open the **Insert** tab and select the desired Chart type. As a result, the Graph will be placed in the center of the selected container.
 1. Follow the steps indicated by the Graph Wizard.
 1. When you finish with the prompts, a new Graph report item of the type you selected will appear on the design surface. 
 
-### Using the Visual Studio Designer
+### Using the Visual Studio Report Designer
 
 To add a Graph item to your report in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), run the Graph Wizard: 
 
@@ -41,90 +41,44 @@ To add a Graph item to your report in the [Visual Studio Report Designer]({%slug
 
 The Visual Studio Report Designer tool also provides an option for directly inserting the Graph into your report. With this approach, the user is fully responsible for the Graph configuration. The following section explains the required settings.
 
+	>note The Graph is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and cannot be added to [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
+
 ## Configuring the Graph Manually - Common Steps for the Supoprted Charts
 
 1. Add Graph to the Report
 	Let's assume that we have added the Graph item to our Report. We may do this as explained above, either with the Graph Wizard that would preconfigure it, or simply as an item (only in the Visual Studio Report Designer).
-	
-1. Open the **Property** grid.
+
+1. Open the **Properties** grid.
 	Here you may see the Graph properties. You may (re)configure them manually to customize the displayed Chart.
 
 1. Set the `DataSource` property to one of the available [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
 	The main purpose of the Graph is to display visually meaningful data. That said, it needs a DataSource that would be bound to the proper data.
 	Let's use the AdventureWorks sample database. This requires a [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) that would connect to the database and fetch the requested data in run-time through the specified `DataProvider`. The latter will use the `ConnectionString` for connecting, and execute the Query or Stored Procedure assigned to the `SelectCommand` property to get the data.
-	
+
 	Let's use the default `SqlClient Data Provider` with the named connection string from our demo reports that should be preset in your designer's configuration file `Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString`.
-	
-	Here is the Select command we are going to use:
-	
-	````SQL
-SELECT
-		[Sales].[SalesOrderHeader].[OrderDate],
-		[Sales].[SalesOrderHeader].[TotalDue],
-		[Sales].[SalesOrderHeader].[SubTotal],
-		[Sales].[SalesOrderDetail].[LineTotal],
-		[Sales].[Store].[Name] AS 'StoreName',
-		[Production].[ProductCategory].[Name] AS 'Category', 
-		[Sales].[SalesTerritory].[Name] AS 'TerritoryName',
-		[Person].[Contact].[FirstName] + ' ' + [Person].[Contact].[LastName] AS 'SalesPersonName'
-	FROM
-		(((([Person].[Contact] INNER JOIN [Sales].[SalesOrderHeader]
-		ON [Person].[Contact].[ContactID] = [Sales].[SalesOrderHeader].[ContactID]) INNER JOIN [Sales].[SalesOrderDetail]
-			ON [Sales].[SalesOrderHeader].[SalesOrderID] = [Sales].[SalesOrderDetail].[SalesOrderID] AND [Sales].[SalesOrderHeader].[SalesOrderID] = [Sales].[SalesOrderDetail].[SalesOrderID]) INNER JOIN [Sales].[SalesTerritory]
-				ON [Sales].[SalesOrderHeader].[TerritoryID] = [Sales].[SalesTerritory].[TerritoryID] AND [Sales].[SalesOrderHeader].[TerritoryID] = [Sales].[SalesTerritory].[TerritoryID]) INNER JOIN [Sales].[Store]
-					ON [Sales].[SalesOrderHeader].[CustomerID] = [Sales].[Store].[CustomerID]) CROSS JOIN [Production].[ProductCategory]
-````
 
-	In the particular Charts we are going to create, we will use only part of the above fields, so you may shorten the above Query based on the Chart type you would like to create. The reason for this is that each Chart type is suitable for displaying different types of data, hence the different database columns that would fit better to different Charts.
+	In the particular Charts we are going to create, we will use different SQL Queries that are provided in the dedicated articles. The reason for this is that each Chart type is suitable for displaying different types of data, hence the different database columns that would fit better to different Charts.
 
-1. Follow the instructions for the particular Chart type you would like to create. Here are the required database fields and the links to the tutorials with the steps:
-
-	[Creating Scatter Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}#creating-scatter-charts)
-	SalesPersonName
-	SubTotal
-	OrderDate
-
-	[Creating Range Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%}#creating-range-charts)
-	TerritoryName
-	TotalDue
-	OrderDate
-
-	[Creating Polar Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview%}#creating-polar-charts)
-	OrderDate
-	Category
-	LineTotal
-
-	[Creating Pie Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}#creating-pie-charts)
-	StoreName
-	SubTotal
-	LineTotal
-
-	[Creating Line Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview%}#creating-line-charts)
-	Category
-	OrderDate
-	LineTotal
-
-	[Creating Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}#creating-column-charts)
-	OrderDate
-	Category
-	LineTotal
+1. Follow the instructions for the particular Chart type you would like to create. Here are the links to the tutorials with the steps:
 
 	[Creating Bar Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/bar-charts/overview%}#creating-bar-charts)
-	OrderDate
-	Category
-	LineTotal
+
+	[Creating Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}#creating-column-charts)
+
+	[Creating Line Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview%}#creating-line-charts)
 
 	[Creating Area Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview%}#creating-area-charts)
-	OrderDate
-	LineTotal
+
+	[Creating Polar Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/polar-charts/overview%}#creating-polar-charts)
+
+	[Creating Pie Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}#creating-pie-charts)
+
+	[Creating Scatter Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}#creating-scatter-charts)
+
+	[Creating Range Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%}#creating-range-charts)
 
 	[Creating OHLC Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%}#creating-ohlc-charts)
-	The Open-High-Low-Close (OHLC) chart is typically used to illustrate movements in the price of a financial instrument over time. In the tutorial, we use a [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) with suitable data since it better illustrates the concept than the data available in the AdventureWorks sample database. Here is the CSV data:
-	
-	````
-data here
-````
-
+	The Open-High-Low-Close (OHLC) chart is typically used to illustrate movements in the price of a financial instrument over time. In the tutorial, we use a [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) with suitable data since it better illustrates the concept than the data available in the AdventureWorks sample database.
 
 ## Next Steps
 

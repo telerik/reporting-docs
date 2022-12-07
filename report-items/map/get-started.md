@@ -2,43 +2,111 @@
 title: Getting Started
 page_title: Getting Started with the Map Report Item
 description: "Get up and running with Telerik Reporting, and learn how to create and use the Map report item in reports."
-slug: map_item_get_started
+slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard
 tags: telerik, reporting, report, items, map, getting, started
 published: True
+previous_url: /MapHowToSetupMapWithPieChartSeries, /report-items/map/how-to/how-to-setup-a-map-using-the-map-wizard
 position: 1
 ---
 
+## Environment
+
+<table>
+	<tbody>
+		<tr>
+			<td>Product Version</td>
+			<td>All</td>
+		</tr>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+			<td>Map Report Item</td>
+		</tr>
+	</tbody>
+</table>
+
 # Getting Started with the Map Report Item
 
-This guide shows how to add the Telerik Reporting Map report item to reports. 
+This guide shows how to add the Telerik Reporting Map report item to reports.
 
-After the completion of this guide, you will be able to achieve the following result. 
+The suggested implementation demonstrates how to create a Map which will present the sales distribution by products among several states using the __Adventure Works__ sample database and the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). The steps are valid for the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) as well and can be reproduced with code too.
 
-// add an example 
+After the completion of this guide, you will be able to achieve the following result.
+
+![A Map Created with the Map Wizard](images/MapWithWizardPreview.png)
+
+## Prerequisites 
+
+* Obtain a valid Location Provider key to authenticate your geocoding requests.
+* If you don't want to use a location provider, provide the geographical coordinates of your points yourself and set up the `MapSeries` accordingly. For more information, refer to the article on [location providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}).
 
 ## Adding the Map
 
-Depending on the Report Designer tool you are using, the map provides the following approaches for including it in your report:
- 
-* [Adding the Map with the Map Wizard of the Standalone Report Designer](#using-the-standalone-report-designer)
-* [Adding the Map with the Visual Studio Report Designer](#using-the-visual-studio-report-designer)
++ (For new reports) Select the `Map Wizard` icon from the `Available Templates` page.
 
-### Using the Standalone Report Designer
+	![Item Template Map Wizard](images/ItemTemplate_MapWizard.png)
 
-To add a Map item to your report in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), use the ribbon tools:
++ (For existing reports) Select the `Map` item from the `Insert` menu. This will start the __Map Wizard__ which will guide you through the creation process. 
 
-1. From the ribbon bar, open the **Insert** tab and select the Map item. As a result, the map Wizard will open.
-1. Follow the steps indicated by the Map Wizard.
-1. When you finish with the prompts, a new Map report item will appear on the design surface. The Map item will be rendered with the real data and its initial extent will depend on the data you are using. 
+	![Insert Menu Select Map](images/InsertMenu_SelectMap.png)
 
-### Using the Visual Studio Designer
+## Adding the Data Source
 
-To add a Map item to your report in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), run the Map Wizard: 
+On the `Choose Data Source` page, add a new [SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). 
 
-1. Open the Visual Studio toolbox. From the **Telerik Reporting** tab, select **Map Wizard**.
-1. Click the design surface where you want to position the upper-left corner of the Map. As a result, the Map Wizard will open. 
-1. Follow the steps indicated by the Map Wizard.
-1. When you finish with the prompts, a new Map report item will appear on the design surface. The Map item will be rendered with the real data and its initial extent will depend on the data you are using. 
+1. Set the connection string to the demo AdventureWorks database.
+1. Paste the following query in the **Select Statement** box:
+
+	````SQL
+SELECT
+	PS.Name AS ProductSubCategory,
+	SP.Name + ', ' + CR.Name AS State,
+	SOD.LineTotal as LineTotal
+	FROM
+
+	Production.Product AS P
+	INNER JOIN Production.ProductSubcategory AS PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
+	INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.ProductCategoryID
+	INNER JOIN Sales.SalesOrderDetail AS SOD ON P.ProductID = SOD.ProductID
+	INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
+	INNER JOIN Person.Address AS ADDR ON ADDR.AddressID = SOH.ShipToAddressID
+	INNER JOIN Person.StateProvince AS SP ON SP.StateProvinceID = ADDR.StateProvinceID
+	INNER JOIN Person.CountryRegion AS CR ON CR.CountryRegionCode = SP.CountryRegionCode
+
+	WHERE
+	CR.Name IN ('Australia')
+	AND DATEPART(YEAR, SOH.OrderDate) IN (2003, 2004)
+	AND PC.Name = 'Bikes'
+````
+
+
+1. Click `Execute Query...` to check if everything is OK with the database connection.
+1. Click `Finish` when you are ready.
+
+## Building the Map Charts
+
+1. In the **Available data sources** list you will see the data source you've already created. Select it and click __Next__.
+1. On the next page, select the fields which will be used to build the Map charts. Since the map will use a location provider, you don't have to provide the  __Latitude__ and  __Longitude__ coordinates by yourself and you can leave these boxes empty. Define a location group which will set the geocoding string.
+1. From the **Datapoints type** box, select the __Pie Chart__ radio button.
+1. Select the __ProductSubCategory__ field and drag it to the **Series (color)** box.
+1. Select the __State__ field and drag it to the **Categories (location)** box.
+1. Select the __LineTotal__ field and drag it to the **Size** box where it will be transformed to __Sum(LineTotal)__.
+
+	Your __Arrange map fields__ page will look similar to one in the following image:
+
+	![Arrange Map Fields](images/ArrangeMapFields.png)
+
+1. Once the mandatory fields are set up, the __Next__ button will get enabled. Click it to go to the next page.
+
+## Defining the Location Provider
+
+1. On the __Choose a location provider__ page, select the location provider that will be used to geocode the __State__ field that was dragged in the **Categories (location)** box on the previous page. Currently, the supported providers are [`MapQuestOpenAPILocationProvider`](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider), [`MapQuestLocationProvider`](/reporting/api/Telerik.Reporting.MapQuestLocationProvider), and [`BingLocationProvider`](/reporting/api/Telerik.Reporting.BingLocationProvider). They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.
+
+	Once you obtain the key, paste it in the **Client token** box:
+
+	![ChooseALocation Provider](images/ChooseALocationProvider.png)
+
+1. When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer, and start requesting the geocode and tiles information from the providers asynchronously. Initially, it will take a few seconds to fetch all the data from the geocoding service, but the following requests will be executed faster. The tiles, needed to prepare the Map background, will be displayed as they arrive, but the Map will stay responsive and you can examine and change its definition. When finished, your Map will look similar to the one shown in beginning of this tutorial.
 
 ## Next Steps
 
@@ -49,7 +117,6 @@ To add a Map item to your report in the [Visual Studio Report Designer]({%slug t
 
 ## See Also
 
-* [(KB) Setting Up Maps with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
 * [(KB) Adding LocationMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%})
 * [(KB) Adding ShapeMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
 * [(KB) Creating Maps with BarCharts and CSV Data Sources]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})

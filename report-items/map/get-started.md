@@ -33,7 +33,7 @@ The suggested implementation demonstrates how to create a Map which will present
 
 After the completion of this guide, you will be able to achieve the following result.
 
-![A Map Created with the Map Wizard](images/MapWithWizardPreview.png)
+![A Map Created with the Map Wizard](images/map/MapWithWizardPreview.png)
 
 ## Prerequisites 
 
@@ -44,11 +44,11 @@ After the completion of this guide, you will be able to achieve the following re
 
 + (For new reports) Select the `Map Wizard` icon from the `Available Templates` page.
 
-	![Item Template Map Wizard](images/ItemTemplate_MapWizard.png)
+	![Item Template Map Wizard](images/map/ItemTemplate_MapWizard.png)
 
 + (For existing reports) Select the `Map` item from the `Insert` menu. This will start the __Map Wizard__ which will guide you through the creation process. 
 
-	![Insert Menu Select Map](images/InsertMenu_SelectMap.png)
+	![Insert Menu Select Map](images/map/InsertMenu_SelectMap.png)
 
 ## Adding the Data Source
 
@@ -94,7 +94,7 @@ SELECT
 
 	Your __Arrange map fields__ page will look similar to one in the following image:
 
-	![Arrange Map Fields](images/ArrangeMapFields.png)
+	![Arrange Map Fields](images/map/ArrangeMapFields.png)
 
 1. Once the mandatory fields are set up, the __Next__ button will get enabled. Click it to go to the next page.
 
@@ -104,7 +104,7 @@ SELECT
 
 	Once you obtain the key, paste it in the **Client token** box:
 
-	![ChooseALocation Provider](images/ChooseALocationProvider.png)
+	![ChooseALocation Provider](images/map/ChooseALocationProvider.png)
 
 1. When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer, and start requesting the geocode and tiles information from the providers asynchronously. Initially, it will take a few seconds to fetch all the data from the geocoding service, but the following requests will be executed faster. The tiles, needed to prepare the Map background, will be displayed as they arrive, but the Map will stay responsive and you can examine and change its definition. When finished, your Map will look similar to the one shown in beginning of this tutorial.
 

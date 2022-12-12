@@ -114,15 +114,15 @@ You may download the demo report from our Reporting Samples GitHub repository - 
 
 * [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)
 * [Map Class API Reference](/api/telerik.reporting.map)
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 
 ## See Also
 
-* [(KB) Adding LocationMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%})
-* [(KB) Adding ShapeMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
-* [(KB) Creating Maps with BarCharts and CSV Data Sources]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})
+* [Adding LocationMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%})
+* [Adding ShapeMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
+* [Creating Maps with BarCharts]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})
+* [Adding a Choropleth Map to the Report with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
 * [(KB) Adding a Choropleth Map to the Report with the Choropleth Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-choropleth-to-report%})
-* [(KB) Adding a Choropleth Map to the Report with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
 * [(KB) Creating Maps with Custom Polygons]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-custom-polygons%})
 * [(KB) Setting Up a Map Manually]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-manually%})

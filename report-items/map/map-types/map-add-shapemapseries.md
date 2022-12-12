@@ -7,27 +7,9 @@ tags: telerik, reporting, map, report, item, add, shapemapseries, instance
 previous_url: /MapHowToAddShapeMapSeriesToTheMapItem, /report-items/map/how-to/how-to-add-shapemapseries-to-the-map-item, /knowledge-base/map-add-shapemapseries
 ---
 
-## Environment
-
-<table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>All</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-			<td>Map Report Item</td>
-		</tr>
-	</tbody>
-</table>
-
-## Description
+# Learn How to Add ShapeMapSeries to the Map
 
 In this article, you will learn how to add a `ShapeMapSeries` instance to the Map report item.
-
-## Solution
 
 The [`ShapeMapSeries`](/reporting/api/Telerik.Reporting.ShapeMapSeries) uses its own source to obtain a set of coordinates which will determine the shape of the data points. These series do not use a `LocationProvider` or a `GeoLocationMapGroup`, because the data points are not determined by a single location on the map surface, as with the [`LocationMapSeries`](/reporting/api/Telerik.Reporting.LocationMapSeries). 
 

@@ -8,29 +8,9 @@ tags: telerik, reporting, map, report, item, add, choropleth, with, designers, w
 previous_url: /ChoroplethHowToSetupAChoroplethWithCsvAndShapefile, /report-items/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard, /knowledge-base/map-add-choropleth-with-map-wizard-to-reports
 ---
 
-## Environment
-
-<table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>All</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-			<td>Map Report Item</td>
-			<td>Choropleth Map with the Map Wizard</td>
-			<td>Standalone Report Designer</td>
-		</tr>
-	</tbody>
-</table>
-
-## Description
+# Learn How to Add a Choropleth Map to the Report with the Map Wizard
 
 In this article, you will learn how to add a Choropleth map to my report by using the Map Wizard and the Standalone Report Designer.
-
-## Solution
 
 The suggested approach will create and set up a Choropleth map that will show the world population for each country, coloring its area depending on the population density value.
 
@@ -38,7 +18,7 @@ You will use a [CSV Data Source]({%slug telerikreporting/designing-reports/repor
 
 The analytical data will be obtained from the [List of sovereign states and dependent territories by population density](http://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density) Wikipedia article. 
 
-### 1. Start the Map Wizard 
+## 1. Start the Map Wizard 
 
 + (For new reports) From the __Available Templates__ page, select the __Choropleth Wizard__ icon. 
 
@@ -46,7 +26,7 @@ The analytical data will be obtained from the [List of sovereign states and depe
 
 + (For existing reports) From the __Insert__ menu, select the __Choropleth__ item. As a result, the Choropleth Wizard will start and guide you through the creation process. 
 
-### 2. Add the Data Source 
+## 2. Add the Data Source 
 
 Now, you will add a new [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) and name it __populationData__. This data source will hold the information about the countries, their area, population, and density along with some additional data. 
 
@@ -64,7 +44,7 @@ Although you can copy the data directly from the Wikipedia page mentioned above,
 1. When you click __Parse CSV...__ on the next page, you will see the result of the parsed file. Click __Finish__ when you are ready. 
 1. In the **Available data sources** list, you can see the datasource you've already created. Select it and click __Next__. 
 
-### 3. Provide the Spatial Data 
+## 3. Provide the Spatial Data 
 
 On the next page, you have to select the source that will provide the spatial data to your choropleth. In this example, you will use a **Shapefile** bundle which consists of the `world.shp` and `world.dbf` files. The files are located in the `\Resources` subfolder of the directory where the `PopulationDensity.zip` file is extracted. 
 
@@ -80,7 +60,7 @@ On the next page, you have to select the source that will provide the spatial da
 
 1. When the mandatory fields are set up, the __Next__ button will be activated. Click **Next** and you will be able to go to the next page. 
 
-### 4. Set the Specific Fields 
+## 4. Set the Specific Fields 
 
 On the following page, you will set the fields that are specific to the Choropleth map. Note that in the **Available fields** you will see the fields from both the analytical and spatial data sets.
 

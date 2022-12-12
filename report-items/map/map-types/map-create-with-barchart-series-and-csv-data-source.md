@@ -1,5 +1,5 @@
 ---
-title: Create Maps with BarCharts and CSV Data Sources
+title: Create Maps with BarChart
 page_title: Create a Map with a BarChart Series and a CSV Data Source 
 description: "Learn how to create a Map report item with a BarChart series and using a CSV data source in Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source

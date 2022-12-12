@@ -7,27 +7,9 @@ tags: telerik, reporting, map, report, item, add, locationmapseries, instance
 previous_url: /MapHowToAddLocationMapSeriesToTheMapItem, /report-items/map/how-to/how-to-add-locationmapseries-to-the-map-item, /knowledge-base/map-add-locationmapseries
 ---
 
-## Environment
-
-<table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>All</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-			<td>Map Report Item</td>
-		</tr>
-	</tbody>
-</table>
-
-## Description
+# Learn How to Add LocationMapSeries to the Map
 
 In this article, you will learn how to add a `LocationMapSeries` instance to the Map report item.
-
-## Solution
 
 The [`LocationMapSeries`](/reporting/api/Telerik.Reporting.LocationMapSeries) are used when the data points have a single coordinate pair, obtained directly from the data set or by using a [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}). 
 

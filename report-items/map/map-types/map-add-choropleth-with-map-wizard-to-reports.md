@@ -28,7 +28,7 @@ previous_url: /ChoroplethHowToSetupAChoroplethWithCsvAndShapefile, /report-items
 
 ## Description
 
-How can I add a Choropleth map to my report by using the Map Wizard and the Standalone Report Designer?
+In this article, you will learn how to add a Choropleth map to my report by using the Map Wizard and the Standalone Report Designer.
 
 ## Solution
 

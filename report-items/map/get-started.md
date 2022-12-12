@@ -9,22 +9,6 @@ previous_url: /MapHowToSetupMapWithPieChartSeries, /report-items/map/how-to/how-
 position: 1
 ---
 
-## Environment
-
-<table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>All</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-			<td>Map Report Item</td>
-		</tr>
-	</tbody>
-</table>
-
 # Getting Started with the Map Report Item
 
 This guide shows how to add the Telerik Reporting Map report item to reports.

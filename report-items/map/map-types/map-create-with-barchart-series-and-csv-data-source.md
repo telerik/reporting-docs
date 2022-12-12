@@ -7,39 +7,20 @@ tags: telerik, reporting, map, report, item, create, barchart, series, using, cs
 previous_url: /How-to-create-map-with-BarChart-series-using-CSV-data-source, /report-items/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source, /knowledge-base/map-create-with-barchart-series-and-csv-data-source
 ---
 
-## Environment
-
-<table>
-	<tbody>
-		<tr>
-			<td>Product Version</td>
-			<td>All</td>
-		</tr>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-			<td>Map Report Item</td>
-			<td>BarChart Series</td>
-		</tr>
-	</tbody>
-</table>
-
-## Description
+# Learn to Create Maps with BarChart
 
 In this article, you will learn how to create a Map report item with a BarChart series.
-
-## Solution
 
 The suggested scenario will demonstrate how to create a Map which will present the [countries with the most medals won in Olympic Games](http://en.wikipedia.org/wiki/All-time_Olympic_Games_medal_table) divided by their continental [Association of National Olympic Committees](http://www.olympic.org/ioc-governance-national-olympic-committees). The example will also add some interactivity to the report, enabling the user to choose which countries will be displayed on the Map, highlighting the currently selected country, and displaying an additional chart with detailed information about it. The suggested implementation uses the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) and does not require the writing of any code.
 
 The suggested implementation corresponds to the sample `OlympicMedalsByNationalTeams.trdp` report definition that may be found in the installation folder of the Telerik Reporting product. By default, this is `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\Examples`.
 
-### Prerequisites 
+## Prerequisites 
 
 * Obtain a valid Location Provider key that will authenticate your geocoding requests.
 * If you don't want to use a location provider, provide the geographical coordinates of your points yourself and configure the `MapSeries` accordingly. For more information, refer to the article on [location providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}).
 
-### 1. Start the Map Wizard
+## 1. Start the Map Wizard
 
 * (For new reports) Select the __Map Wizard__ icon from the __Available Templates__ page.
 
@@ -49,7 +30,7 @@ The suggested implementation corresponds to the sample `OlympicMedalsByNationalT
 
 	![Insert Menu Select Map](images/InsertMenu_SelectMap.png)
 
-### 2. Add the Data Source 
+## 2. Add the Data Source 
 
 Now, you'll add a new [CSV data source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) and name it __medalsData__. This data source will hold the information about the countries, the ID of their respective Olympic association, which place and how many times they have occupied it.
 
@@ -62,7 +43,7 @@ Now, you'll add a new [CSV data source]({%slug telerikreporting/designing-report
 
 1. Click __Finish__ when you are ready.
 
-### 3. Build the Map Charts 
+## 3. Build the Map Charts 
 
 In the **Available data sources** list, you will see the data source you've already created. Select it and click __Next__.
 
@@ -79,7 +60,7 @@ In the **Available data sources** list, you will see the data source you've alre
 
 1. Once the mandatory fields are set up, the __Next__ button will be enabled. Click it to go to the next page.
 
-### 4. Set Up the Location Provider
+## 4. Set Up the Location Provider
 
 1. On the __Choose a location provider__ page, select the location provider that will be used to geocode the __State__ field that was dragged in the **Categories (location)** box on the previous page.
 
@@ -91,7 +72,7 @@ In the **Available data sources** list, you will see the data source you've alre
 
 	![Map Column Chart Done](images/MapColumnChart_Done.png)
 
-### 5. Add the PointMapSeries
+## 5. Add the PointMapSeries
 
 Now you will add a [`PointMapSeries`](/reporting/api/Telerik.Reporting.PointMapSeries) that will display a circle around each column chart. The circle size will be relevant to the whole number of medals each team has won. To add the series, select it and then start the respective Wizard. For the purposes of this example, start the Map Wizard again by clicking the **Map** toolbar icon.
 
@@ -105,7 +86,7 @@ On the __Arrange map fields__ page, perform the following steps:
 
 1. Click the __Finish__ button. As a result, the Map will display the two series together, rendered in the order they have been created. That's why you will see the column charts being overlapped by the circles.
 
-### 6. Style the Appearance
+## 6. Style the Appearance
 
 The Map needs some more configuration and styling to improve its rendering. Select the Map item, click the __Series__ item in the **Property** grid, and perform the following steps in the opened __MapSeries Collection Editor__:
 
@@ -123,7 +104,7 @@ The Map needs some more configuration and styling to improve its rendering. Sele
 
 	![Map Point And Column Chart Done](images/MapPointAndColumnChart_Done.png)
 
-### 7. Configure the Legend
+## 7. Configure the Legend
 
 As you may have noticed, the information about the occupied places is present in the CSV data as integer numbers, that's why the legend displays it this way. But the report will look better if the information about the places is displayed with medal names - __Gold__, __Silver__, and __Bronze__.
 
@@ -138,7 +119,7 @@ To achieve the desired scenario, you may use an expression for the [`LegendItem`
 
 1. Set the [`LegendItem`](/reporting/api/Telerik.Reporting.LegendItem) [`Value`](/reporting/api/Telerik.Reporting.LegendItem#Telerik_Reporting_LegendItem_Value) expression of the `columnMapSeries` to `=Fields.Medal` and style the legend by your choice.
 
-### 8. Reduce the Displayed Information
+## 8. Reduce the Displayed Information
 
 To reduce the amount of displayed information on the Map, use the [report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) and apply [filtering]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules%}). In this case, the filtering criteria will be based on the __AssociationId__ field. To display the meaningful names of the Olympic associations, you will add another CSV data source, which has a relation with the current `AssociationId` field of the data source and will be used only for displaying the report parameters.
 
@@ -166,7 +147,7 @@ Id,Name
 
 1. Select the Map item and add a filter rule that will filter out the teams with an `AssociationId` different than the ones selected in the __associationParam__. Set the __Expression__ to `=Fields.AssociationId`, the __Operator__ to `In`, and the __Value__ to `=Parameters.associationParam.Value`. When you close the **Filter Rules** dialog, the designer gets updated and the Map will show only the teams from the Pan-American Sports Organization. When you preview the report, you will be able to change the Map extent only by selecting different combinations of parameter values.
 
-### 9. Add the CrossTab
+## 9. Add the CrossTab
 
 Since the column charts on the Map are not suitable to display any labels on them, here you will add an additional _CrossTab_, which will show the number of medals and calculate their amount for each national team.
 
@@ -188,7 +169,7 @@ Since the column charts on the Map are not suitable to display any labels on the
 
 	![Crosstab Done](images/Crosstab_Done.png)
 
-### 10. Add Interactivity
+## 10. Add Interactivity
 
 In this step, you will add some interactivity to your report, allowing the user to select a national team from the crosstab and changing the Map extent according to its selection. The drill-through action will use an invisible report parameter which will store the selected team name and utilize it in conditional formatting and filtering options.
 
@@ -208,7 +189,7 @@ In this step, you will add some interactivity to your report, allowing the user 
 
 	![Point Map Data Point Conditional Formatting](images/PointMapDataPointConditionalFormatting.png)
 
-### 11. Add a Graph
+## 11. Add a Graph
 
 Finally, you will add a small Graph showing a [Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}) that will be used to display the amount of medals won by each team.
 

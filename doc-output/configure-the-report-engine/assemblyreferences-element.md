@@ -52,6 +52,8 @@ The following sections describe attributes, child elements, and parent elements.
 
 The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly assembly as source for user functions. In this example it would also search for assemblies in MyDir and SubDir application base subdirectories as we have explicitly instructed that via the `<probing>` Element. This is not mandatory, and when not specified, it would search in the application base, which is the root location where the application is being executed. 
 
+> The [probing](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element) element is not supported in the .NET Standalone Designer
+
 XML-based configuration file:
     
 ````XML

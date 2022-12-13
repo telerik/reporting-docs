@@ -10,10 +10,10 @@ previous_url: /configuring-telerik-reproting-privatefonts
 ---
 <style>
 table th:first-of-type {
-    width: 20%;
+	width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 80%;
+	width: 80%;
 }
 </style>
 
@@ -25,7 +25,11 @@ Defines a collection that allows the Reporting Engine to use a private version o
 
 >note __Known issue with Azure:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services. If private fonts are required our recommendation is to use Cloud Service plan. More details can be found in [Custom Fonts not working on Azure App Service](https://github.com/wkhtmltopdf/wkhtmltopdf/issues/4398). 
 
->note __Known issue with PDF rendering in .NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the  __privateFonts__ element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font, used in the report, is not available. 
+>note __Known issue with PDF rendering in .NET Core application on Linux:__ The PDF rendering engine needs to obtain the bytes for fonts used in the report. The font resolving mechanism currently relies on the __privateFonts__ element to provide path to each font along with a style description. This includes the substitute fonts that are picked by the runtime when the font, used in the report, is not available.
+
+>note __Known issue with `privateFonts` in .NET Core application on Linux:__ The library [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) that we use as GDI+ implementatin for Linux returns as a Family Font Name the `Preferred Family` rather than `Family` name from the font meta information. Details may be found in [Font.Name returns incorrect results on Linux](https://github.com/mono/libgdiplus/issues/617). The two names may be different in the general case. In such scenario, the font should be referenced with its `Family` name for Windows and `Preferred Family` name for Linux.
+>
+> In the rare case when the `Preferred Family` name of two fonts conincide and the `Family` names are different, on Linux only the second font registered as private would be respected as it will override the first one.
 
 The private fonts are used for all rendering extensions. Still the font rendering on the client computer depends on the viewer configuration and document format specifications: 
 
@@ -42,10 +46,10 @@ The private fonts are used for all rendering extensions. Still the font renderin
 + Windows Forms Report Viewer uses Image rendering to render in EMF+ that don't support private fonts. 
 
 As with most types of software, font files are licensed, rather than sold, and licenses that govern the use of fonts vary from vendor to vendor. As a developer it is your responsibility to ensure that you have the required license rights for any font you use as private font, or otherwise redistribute. 
-    
-````xml
+
+````XML
 <privateFonts>
-    <add />
+	<add />
 </privateFonts>
 ````
 
@@ -61,7 +65,6 @@ The following sections describe attributes, child elements, and parent elements.
 |Child Elements|__add__ - Optional element. Adds a font to the collection.|
 |Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the .NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
 
-
 >caption `<add>` element 
 
 |   |   |
@@ -75,42 +78,42 @@ The following sections describe attributes, child elements, and parent elements.
 The following example demonstrates how to configure the reporting engine to use Ubuntu and Courier New fonts. The fonts are part of the project with the following properties: 
 
 XML-based configuration file: 
-    
-````xml
+
+````XML
 <?xml version="1.0"?>
 <configuration>
 ...
-    <Telerik.Reporting>
-        <privateFonts>
-            <add fontFamily="Courier New" path="CourBI.ttf" fontStyle="Bold, Italic" />
-            <add fontFamily="ubuntu" path="Ubuntu-R.ttf" />
-            <add fontFamily="Courier New" path="CourI.ttf" fontStyle="Italic" />
-        </privateFonts>
-     </Telerik.Reporting>
+	<Telerik.Reporting>
+		<privateFonts>
+			<add fontFamily="Courier New" path="CourBI.ttf" fontStyle="Bold, Italic" />
+			<add fontFamily="ubuntu" path="Ubuntu-R.ttf" />
+			<add fontFamily="Courier New" path="CourI.ttf" fontStyle="Italic" />
+		</privateFonts>
+	</Telerik.Reporting>
 ...
 </configuration>
 ````
 
 JSON-based configuration file: 
-    
-````js
+
+````JSON
 "telerikReporting": {
-  "privateFonts": [
-    {
-      "fontFamily": "ubuntu",
-      "path": "Ubuntu-R.ttf",
-    },
-    {
-      "fontFamily": "Courier New",
-      "path": "CourI.ttf",
-      "fontStyle": "Italic"
-    },
-    {
-      "fontFamily": "CourBI",
-      "path": "CourBI.ttf",
-      "fontStyle": "Bold,Italic"
-    }
-  ]
+	"privateFonts": [
+	{
+		"fontFamily": "ubuntu",
+		"path": "Ubuntu-R.ttf",
+	},
+	{
+		"fontFamily": "Courier New",
+		"path": "CourI.ttf",
+		"fontStyle": "Italic"
+	},
+	{
+		"fontFamily": "CourBI",
+		"path": "CourBI.ttf",
+		"fontStyle": "Bold,Italic"
+	}
+	]
 }
 ````
 

@@ -52,7 +52,7 @@ This is a file where the user preferences like connection strings, last opened f
 `Progress_Software_Corpora\Telerik.ReportDesigner.ex_StrongName_xvg2ahozm2u22wxtsw2egsvlddrzt5hj\16.0.22.225\user.config`
 
 
-Note taht for the older versions, the main folder may be `Telerik_AD`, `Telerik`, or `Telerik_EAD`
+Note that for the older versions of Telerik Reporting the main folder may be `Telerik_AD`, `Telerik`, or `Telerik_EAD`
 
 
-Rename or move these files so the designer would load with default values instead of reading them from these configuration files.
+Rename or move these files so the designer would start with the default values instead of reading them from these configuration files.

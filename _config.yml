@@ -63,11 +63,14 @@ navigation:
     report-items/map:
         position: 7
         title: "Map"
-    report-items/map/structure:
+    report-items/map/map-types:
         position: 10
+        title: "Types and Customization"    
+    report-items/map/structure:
+        position: 15
         title: "Structure and Elements"    
     report-items/map/formatting-a-map:
-        position: 11
+        position: 20
         title: "Styling and Formatting"
     report-items/htmltextbox:
         position: 6

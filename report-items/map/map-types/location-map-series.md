@@ -1,17 +1,16 @@
 ---
-title: Add LocationMapSeries to the Map
-page_title: Add a LocationMapSeries Instance to the Map Report Item 
+title: Location Map Series
+page_title: Adding LocationMapSeries Instances to the Map 
 description: "Learn how to add a LocationMapSeries instance to the Map report item when using Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item
 tags: telerik, reporting, map, report, item, add, locationmapseries, instance
 previous_url: /MapHowToAddLocationMapSeriesToTheMapItem, /report-items/map/how-to/how-to-add-locationmapseries-to-the-map-item, /knowledge-base/map-add-locationmapseries
+position: 3
 ---
 
-# Learn How to Add LocationMapSeries to the Map
+# Adding LocationMapSeries Instances to the Map
 
 In this article, you will learn how to add a `LocationMapSeries` instance to the Map report item.
-
-The [`LocationMapSeries`](/reporting/api/Telerik.Reporting.LocationMapSeries) are used when the data points have a single coordinate pair, obtained directly from the data set or by using a [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}). 
 
 To add new `PointMap`, `PieMap`, or a `ColumnMap` series to the Map: 
 
@@ -28,3 +27,14 @@ To add new `PointMap`, `PieMap`, or a `ColumnMap` series to the Map:
 When all the properties are set, the `LocationMapSeries` instance will look similar to the following one in the __Property Grid__:
 
 ![Map Add Location Map Series](images/Map_AddLocationMapSeries.png)
+
+
+
+## See Also 
+
+* [Adding Choropleth Maps to Reports with the Map Wizard]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard %})
+* [Adding ShapeMapSeries Instances to the Map]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item %})
+* [Creating BarChart Series and CSV Data Source Maps]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source %})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+* [Map Class API Reference](/api/telerik.reporting.map)

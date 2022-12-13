@@ -26,7 +26,7 @@ Legend items are ordered according to the order in which they are processed by t
 
 To modify the text of the legend items, change the `Map.MapSeries` Legend [`Expression`]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}). 
 
-> When using a [ShapeMapSeries](/reporting/api/Telerik.Reporting.ShapeMapSeries), the LegendItem.Value expression allows the usage of two specific references: `RangeMin` and `RangeMax`, that determine the minimum and maximum values of the respective data range. 
+> When you use the [`ShapeMapSeries`](/reporting/api/Telerik.Reporting.ShapeMapSeries), the `LegendItem.Value` expression allows you to apply the `RangeMin` and `RangeMax` specific references, which determine the minimum and maximum values of the respective data range. 
 
 To change the text style of the legend items:  
 

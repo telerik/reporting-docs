@@ -1,18 +1,18 @@
 ---
-title: Add a Choropleth Map to the Report with the Map Wizard 
-page_title: Add a Choropleth Map to Report with the Map Wizard 
-description: "Learn how to add a Telerik Reporting Choropleth map to the report when using the Map Wizard and the Telerik Report Designers."
-type: how-to
+title: Choropleth Maps 
+page_title: Adding Choropleth Maps to the Report 
+description: "Learn how to add a Telerik Reporting Choropleth Map to the report when using the Map Wizard and the Telerik Report Designers."
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard
 tags: telerik, reporting, map, report, item, add, choropleth, with, designers, wizard 
 previous_url: /ChoroplethHowToSetupAChoroplethWithCsvAndShapefile, /report-items/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard, /knowledge-base/map-add-choropleth-with-map-wizard-to-reports
+position: 1
 ---
 
-# Learn How to Add a Choropleth Map to the Report with the Map Wizard
+# Adding Choropleth Maps to Reports with the Map Wizard
 
-In this article, you will learn how to add a Choropleth map to my report by using the Map Wizard and the Standalone Report Designer.
+This article demonstrates how to add a Choropleth map to your report by using the Map Wizard of the Standalone Report Designer.
 
-The suggested approach will create and set up a Choropleth map that will show the world population for each country, coloring its area depending on the population density value.
+The suggested approach will create and set up a Choropleth map that will show the world population for each country and coloring its area depending on the population density value.
 
 You will use a [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) for the analytical data and an [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile) for the spatial data. 
 
@@ -93,4 +93,13 @@ Another reason for having transparent areas is the mismatch of the fields that a
 
 For this screenshot, the data point labels are __visible__ and have the following expression set to them: `= Format('{0} {1}', Fields.CNTRY_NAME, Sum(Fields.[Density (pop./km2)]))`. Note that the expression uses the fields from both the spatial and the analytical data set. As a result, the Choropleth displays __Congo, DRC__ as a country name but does not display a valid population value for it. Since the countries are bound by name, the engine tries to find a country named __Congo, DRC__ in the analytical data set, but fails, because in the CSV data source this country is named __Democratic Republic of the Congo__ (Pos. 79). If you edit the CSV data and rename the country to __Congo, DRC__, you will see that the both records are matched, the country area is now colored, and a valid population value __(29.6)__ is displayed.
 
-This example demonstrated how to create a simple Choropleth map by using data from analytical and spatial data sources without writing a single line of code. You can find the actual report definition `PopulationDensity.trdx` in the contents of the `PopulationDensity.zip` archive that was used earlier.
+This example demonstrated how to create a simple Choropleth map by using data from analytical and spatial data sources without writing a single line of code. You can find the `PopulationDensity.trdx` actual report definition in the contents of the `PopulationDensity.zip` archive that was used earlier.
+
+## See Also 
+
+* [Adding ShapeMapSeries Instances to the Map]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item %})
+* [Adding LocationMapSeries Instances to the Map]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item %})
+* [Creating BarChart Series and CSV Data Source Maps]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source %})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+* [Map Class API Reference](/api/telerik.reporting.map)

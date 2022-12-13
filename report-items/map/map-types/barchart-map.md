@@ -1,13 +1,14 @@
 ---
-title: Create Maps with BarChart
-page_title: Create a Map with a BarChart Series and a CSV Data Source 
-description: "Learn how to create a Map report item with a BarChart series and using a CSV data source in Telerik Reporting."
+title: BarChart and CSV Data Source Maps
+page_title: Creating Maps with BarChart Series and CSV Data Sources 
+description: "Learn how to create a Map report item with a BarChart series and by using a CSV data source in Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source
 tags: telerik, reporting, map, report, item, create, barchart, series, using, csv, data, source
 previous_url: /How-to-create-map-with-BarChart-series-using-CSV-data-source, /report-items/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source, /knowledge-base/map-create-with-barchart-series-and-csv-data-source
+position: 4
 ---
 
-# Learn to Create Maps with BarChart
+# Creating BarChart Series and CSV Data Source Maps
 
 In this article, you will learn how to create a Map report item with a BarChart series.
 
@@ -204,3 +205,14 @@ Finally, you will add a small Graph showing a [Column Chart]({%slug telerikrepor
 1. When you are finished, preview your report which will look similar to the one in the following image:
 
 	![Map Olympic Medals Done](images/MapOlympicMedals_Done.png)
+
+
+
+## See Also 
+
+* [Adding Choropleth Maps to Reports with the Map Wizard]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard %})
+* [Adding ShapeMapSeries Instances to the Map]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item %})
+* [Adding LocationMapSeries Instances to the Map]({% slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item %})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+* [Map Class API Reference](/api/telerik.reporting.map)

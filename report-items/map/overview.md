@@ -20,7 +20,7 @@ The data may be presented in different formats that is determined by the [chosen
 
 * [Structure and elements]({%slug telerikreporting/designing-reports/report-structure/map/structure/overview %})&mdash;You can utilize all available elements the visual structure of the Map report item supports. 
 * [Connecting to data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data%})&mdash;The Map report item allows you to bind it to a single data object where you can control what data and in what way is geographically visualized through the Telerik Reporting Expression engine.
-* [Layers and Hierarchy]({%slug telerikreporting/designing-reports/report-structure/map/connecting-to-data%})&mdash;The analytical data from the data source will be presented geographically on the Map based on your settings.
+* [Layers and hierarchy]({%slug telerikreporting/designing-reports/report-structure/map/connecting-to-data%})&mdash;The analytical data from the data source will be presented geographically on the Map based on your settings.
 * [Map types]({%slug telerikreporting/designing-reports/report-structure/map/map-types%})&mdash;The Map enables you to create different map types.
 * [Styling and formatting]({%slug telerikreporting/designing-reports/report-structure/map/formatting-a-map/legend %})&mdash;The Map delivers extensive settings for configuring the rendering of its parallels and meridians, legend, and other elements.
 
@@ -46,6 +46,5 @@ The data may be presented in different formats that is determined by the [chosen
 * [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
 * [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
 * [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
-
 
 

@@ -35,6 +35,8 @@ This section explains the differences between both versions of Standalone Report
 
 * __HTML Expression Editor__ - The .NET Framework implementation of HTML Expression Editor relies on external assemblies like `mshtml.dll` that are not .NET-compatible. Currently the HTMLTextBox expression is edited in the Expression Editor window.
 
+* __Assembly Probing__ - The [probing](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element) element that was previously used for specifying application base subdirectories for the designer application to search when loading assemblies for the `ObjectDataSource` component and `User Functions` is not supported in `.NET Core`. With that being said, the subdirectory can instead be specified in the given assembly reference entry inside the [assemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) element, for example `<add name="bin/UserFunctions.dll" />`
+
 ## Starting the Standalone Report Designer for .NET Framework 4.0
 
 * __From the Windows Start menu:__ 

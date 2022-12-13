@@ -41,15 +41,25 @@ You can create the Shape at runtime and add it to a report item container (Secti
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ShapeSnippets.cs region=CreateCustomShapeSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ShapeSnippets.vb region=CreateCustomShapeSnippet}}
 
+
+
 ## Next Steps 
 
 * [(Demo) Crypto Dashboard Report with a Shape](https://demos.telerik.com/reporting/crypto-dashboard) 
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
-
-## See Also
-
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%}) 
 * [(API) Shape](/reporting/api/Telerik.Reporting.Shape) 
 * [(API) ShapeType](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_ShapeType) 
 * [(API) Stretch](/reporting/api/Telerik.Reporting.Shape#Telerik_Reporting_Shape_Stretch)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+
+## See Also 
+
+* [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
+* [Reporting Forums](https://www.telerik.com/forums/reporting)
+* [Reporting Blog](https://www.telerik.com/blogs/tag/reporting)
+* [Reporting Videos](https://www.telerik.com/videos/reporting)
+* [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
+* [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
+* [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
+

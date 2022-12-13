@@ -112,32 +112,40 @@ According to the type of the input data, the Graph supports the following scale 
 
 ## Series
 
-A series represents a series of data points that represents individual measurements. 
+A series represents a series of data points that represents individual measurements. This section lists the series types supported by the Graph report item. 
 
-The Graph item supports the following series types:
+### Bar Charts  
 
-* [Bar charts](http://en.wikipedia.org/wiki/Bar_chart)&mdash;Displays data points as bars to show comparisons between categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. 
+[Bar charts](http://en.wikipedia.org/wiki/Bar_chart) display data points as bars to show comparisons between categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. 
 
-  You can arrange the Bar series in different ways to emphasize various aspects of the data:
+You can arrange the Bar series in different ways to emphasize various aspects of the data:
 
-   + __Clustered Bar Graphs__&mdash;Bars are clustered in groups two or more series.
-   + __Stacked, Stacked 100% Bar Graphs__&mdash;Show the bars divided into subparts to display a cumulative effect. 
-   
-   In a Cartesian coordinate system the bars have a rectangular shape and can be horizontal (Bar chart) or vertical (sometime called Column chart). 
-   
-   In a Polar coordinate system the bars appears in a wedge shape. If the series are arranged on the radial axis, that is, the wedges start from the radial axis and goes by the angular axis, the result is a Pie chart. Otherwise, if the bars are arranged by the angular axis, the result is a Rose chart.
++ __Clustered Bar Graphs__&mdash;Bars are clustered in groups two or more series.
++ __Stacked, Stacked 100% Bar Graphs__&mdash;Show the bars divided into subparts to display a cumulative effect. 
 
-* [Line charts](http://en.wikipedia.org/wiki/Line_chart)&mdash;Displays a series of data points connected by straight or smooth line segments. Data points are represented by markers that can vary by shape (circle, square, diamond, cross, and so on) and can display a third variable or measure with its size (also known as Bubble charts). 
+In a Cartesian coordinate system the bars have a rectangular shape and can be horizontal (Bar chart) or vertical (sometime called Column chart). 
 
-  When a Line series is projected on a Polar coordinate system, the result is also known as a Radar or Spider Line chart. Line series may be stacked to show a cumulative effect (stacked or stacked 100%).
+In a Polar coordinate system the bars appears in a wedge shape. If the series are arranged on the radial axis, that is, the wedges start from the radial axis and goes by the angular axis, the result is a Pie chart. Otherwise, if the bars are arranged by the angular axis, the result is a Rose chart.
 
-* [Area charts](http://en.wikipedia.org/wiki/Area_chart)&mdash;Similar to the Line series. Area series display series of data points connected by straight or smooth line segments too but the area below the line is colored to indicate the volume. 
+### Line Charts 
 
-  When an Area series is projected on a Polar coordinate system, the result is also known as a Radar or Spider Area chart. Area series may be stacked to show a cumulative effect (stacked or stacked 100%).
+[Line charts](http://en.wikipedia.org/wiki/Line_chart) display a series of data points connected by straight or smooth line segments. Data points are represented by markers that can vary by shape (circle, square, diamond, cross, and so on) and can display a third variable or measure with its size (also known as Bubble charts). 
 
-* [Range Bar charts]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview %})&mdash;Similar to the Bar series. However, the bars do not start from the axis but at a given value. The Range Bar emphasizes the distance between two values or measures.
+When a Line series is projected on a Polar coordinate system, the result is also known as a Radar or Spider Line chart. Line series may be stacked to show a cumulative effect (stacked or stacked 100%).
 
-* [Range Area charts]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview %})&mdash;Similar to the Area series. However, the bottom point does not start from the axis but at a given value. The Range Area emphasizes the distance between two values/measures.
+### Area Charts 
+
+[Area charts](http://en.wikipedia.org/wiki/Area_chart) are similar to the Line series. Area series display series of data points connected by straight or smooth line segments too but the area below the line is colored to indicate the volume. 
+
+When an Area series is projected on a Polar coordinate system, the result is also known as a Radar or Spider Area chart. Area series may be stacked to show a cumulative effect (stacked or stacked 100%).
+
+### Range Bar Charts 
+
+[Range Bar charts]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview %}) are similar to the Bar series. However, the bars do not start from the axis but at a given value. The Range Bar emphasizes the distance between two values or measures.
+
+### Range Area Charts 
+
+[Range Area charts]({% slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview %}) are similar to the Area series. However, the bottom point does not start from the axis but at a given value. The Range Area emphasizes the distance between two values/measures.
 
 ## Legend
 

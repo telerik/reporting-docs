@@ -10,10 +10,10 @@ previous_url: /configuring-telerik-reporting-cacheDefinitionProperties
 ---
 <style>
 table th:first-of-type {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 90%;
+	width: 90%;
 }
 </style>
 # processing Element
@@ -32,64 +32,67 @@ The Processing element specifies the configuration settings that will be applied
 ### Example
 
 XML-based configuration file: 
-    
-````xml
+
+````XML
 <Telerik.Reporting>
-    <processing cacheDefinitionProperties="false">
+	<processing cacheDefinitionProperties="false">
 		<!--The element below represents a Path resource resolver:-->
-        <!--<resourceResolver provider="path">
-            <parameters>
-                <parameter name="directory" value="c:\\CommonResourcesDirectory\\" />
-            </parameters>
-        </resourceResolver>-->
+		<!--<resourceResolver provider="path">
+			<parameters>
+				<parameter name="directory" value="c:\\CommonResourcesDirectory\\" />
+			</parameters>
+		</resourceResolver>-->
 		<!-- The element below represents a custom implementation of resource resolver:-->
-        <resourceResolver provider="custom">
-            <parameters>
-                <parameter name="typeName" value="CustomResourceResolver.RawDataResourceResolver, CustomResourceResolver" />
-                <parameter name="constructorParameter1" value="constructorParameterValue1" />
-            </parameters>
-        </resourceResolver>
-    </processing>
+		<resourceResolver provider="custom">
+			<parameters>
+				<parameter name="typeName" value="CustomResourceResolver.RawDataResourceResolver, CustomResourceResolver" />
+				<parameter name="constructorParameter1" value="constructorParameterValue1" />
+			</parameters>
+		</resourceResolver>
+	</processing>
 </Telerik.Reporting>
 ````
 
 JSON-based configuration file: 
-    
-````js
+
+````JSON
 "telerikReporting": {
-  "processing": {
-    "cacheDefinitionProperties":  "false",
-    "resourceResolver": {
-      // The element below represents a Path resource resolver:
-      //"provider": "path",
-      //"parameters": [
-      //  {
-      //    "name": "directory",
-      //    "value": "C:\\Temp\\RestServiceStorage"
-      //  }
-      //]
-      // The element below represents a custom implementation of resource resolver:
-      "provider": "custom",
-      "parameters": [
-        {
-          "name": "typeName",
-          "value": "CustomResourceResolver.RawDataResourceResolver, CustomResourceResolver"
-        },
-        {
-          "name": "constructorParameter1",
-          "value": "constructorParameterValue1"
-        }
-	  ]
-    }
-  }
+	"processing": {
+		"cacheDefinitionProperties": "false",
+		"resourceResolver": {
+			// The element below represents a Path resource resolver:
+			//"provider": "path",
+			//"parameters": [
+			//	{
+			//		"name": "directory",
+			//		"value": "C:\\Temp\\RestServiceStorage"
+			//	}
+			//]
+			// The element below represents a custom implementation of resource resolver:
+			"provider": "custom",
+			"parameters": [
+				{
+					"name": "typeName",
+					"value": "CustomResourceResolver.RawDataResourceResolver, CustomResourceResolver"
+				},
+				{
+					"name": "constructorParameter1",
+					"value": "constructorParameterValue1"
+				}
+			]
+		}
+	}
 }
 ````
+
 
 ### CacheDefinitionProperties
 
 We provide a mechanism for caching the report definition properties that boosts the performance. Naturally it prevents modifying the report during processing stage. The default value of the property is __True__. 
 
-Basically, the [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) are not intended to be used to modify the report definition, as explained in the [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) article. For that reason, in R3 2016 for performance reasons, we introduced a change- cacheDefinitionProperties which caches the report definition properties, so such modifications are not respected. Setting the cacheDefinitionProperties to false will skip the definition item properties caching, which will allow the report definition to be changed in the report events. This may result in parformance penalty though. 
+Basically, the [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) are not intended to be used to modify the report definition, as explained in the [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) article. For that reason, in [R3 2016 (10.2.16.914)](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914)) for performance reasons, we introduced a change - `cacheDefinitionProperties` which caches the report definition properties, so such modifications are not respected. Setting the _cacheDefinitionProperties_ to _false_ will skip the definition item properties caching, which will allow the report definition to be changed in the report events. This may result in parformance penalty though. 
+
+Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109) `CacheDefinitionProperties` was exposed as a Report definition property in the `ReportEngineSettings` properties collecction, so that you may specify it per Report. The property value may be set to `Default`, `True`, or `False`. The `Default`, which is the default value, lets you specify that the Reporting engine should respect the _cacheDefinitionProperties_ set in its configuration on the project level.
 
 ### ResourceResolver
 
@@ -114,9 +117,6 @@ This __ResourceResolver__ is intended to be used in scenarios where the resource
 ## See Also
 
 * [Application Configuration Files](http://msdn.microsoft.com/en-us/library/windows/desktop/aa374182(v=vs.85).aspx)
-
 * [How the Runtime Locates Assemblies](https://docs.microsoft.com/en-us/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
-
 * [`<probing>` Element](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
-
 * [Configure the Reporting Engine (Overview)]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})

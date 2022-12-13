@@ -63,7 +63,7 @@ To create the Scatter chart by using the Scatter Chart Wizard:
 
 1. Arrange the Bubble Chart:
 
-	1. Drag the __SalesPersonName__ field to **Serie**.
+	1. Drag the __SalesPersonName__ field to **Series**.
 	1. Leave **Categories** empty.
 	1. Drag the __SubTotal__ field to **X**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
 	1. Drag the __SubTotal__ field to **Y**.

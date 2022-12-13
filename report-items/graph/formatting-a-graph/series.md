@@ -32,7 +32,7 @@ To modify the shape of the series data point:
 1. Locate the __MarkerType__ property in the __Data Point Marker__ section. If the property doesn't exist for the selected series, for example, Bar or Column, you will not be able to change the shape of the data point.
 1. Set the type of the marker from the drop-down menu. Set the __MarkerSize__ properties if necessary. 
 
-    >Only the marker types that form a closed contour support the __BackgroundImage__ property. If set, the markers that consists only of lines, that is, __X__, __Plus__, and __Minus__, will not render a background image. 
+    > Only the marker types that form a closed contour support the __BackgroundImage__ property. If set, the markers that consist only of lines, that is, __X__, __Plus__, and __Minus__, will not render a background image. 
 
 ## Formatting Data Point Labels
 

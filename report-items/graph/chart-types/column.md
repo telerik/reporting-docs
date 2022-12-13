@@ -20,6 +20,8 @@ The following image shows a typical Column chart:
 
 ## Types 
 
+The Graph supports the following Column chart types: 
+
 * __Clustered Column Charts__&mdash;The basic Column chart type for displaying series as sets of vertical bars that are grouped by category. 
 * __Stacked Column Chart__&mdash;A Column chart where multiple series are stacked vertically. Stacked Column charts compare contributions of values to a total across categories. If there is only one series in your chart, the Stacked Column chart will display in the same way as a Column chart. 
 * __100% Stacked Column Chart__&mdash;A Column chart where multiple series are stacked vertically to fit 100% of the chart area. 100% Stacked Column Charts are used when you have three or more data series and want to compare distributions within categories, and at the same time display the differences between categories. Each column bar represents 100% of the amounts for that category. If there is only one series in your chart, all the column bars will fit to 100% of the chart area. 
@@ -30,7 +32,7 @@ In this section, you will learn how to create a Column chart with our Column Cha
 We are going to create a `Clustered Column` Chart that displays the LineTotal of the Product Categories by Years. The final report will look like the image above.
 In the general case, you may select `Stacked Column` or `100% Stacked Column`. The requiered settings are basically the same. 
 
-We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
 ````SQL
 SELECT
@@ -47,33 +49,35 @@ FROM
 ````
 
 
+To create the Column chart by using the Column Chart Wizard: 
+
 1. Add Clustered Column Chart as shown in the image below:
 
 	![Add Column Chart Wizard](images/ColumnChartWizardAdd.png)
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
 	![Add DataSource to the Column Chart](images/ColumnChartWizardDataSource.png)
 
 1. Arrange the Column Chart:
 
-	* Drag the field _Category_ to the `Series`
-	* Drag the field _OrderDate.Year_ to the `Categories`
-	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __Category__ field to **Series**.
+	1. Drag the __OrderDate.Year__ field to **Categories**.
+	1. Drag the __LineTotal__ field to **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 
 	![Arrange the Column Chart](images/ColumnChartWizardArrangeFields.png)
 
-1. The LineTotal value is large, so let's change the barSeries `Data > Y` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+1. The `LineTotal` value is large, so let's change the `Data > Y` [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) of `barSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
 
-You may find the report created following the above steps in our GitHub samples repository - [ColumnChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/ColumnChart.trdp).
+To see the full implementation of the sample report, refer to the [ColumnChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/ColumnChart.trdp) project on GitHub.
 
 ## Creating Column Charts Manually
 
-In this section, you will create a Column chart.
+This section will show how to manually create a Column chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}).
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({% slug graph_item_get_started %}).
 
 ### 2. Set the SeriesGroups Hierarchy
 

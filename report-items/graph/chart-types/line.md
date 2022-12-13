@@ -20,6 +20,8 @@ The following image displays a Line chart that contains three series.
 
 ## Types
 
+The Graph supports the following Line chart types: 
+
 * __Straight Line Chart__&mdash;A Line chart that uses straight lines to connect the data points.
 * __Smooth Line Chart__&mdash;A Line chart that uses curved lines instead of regular ones.
 * __Stepped Line Chart__&mdash;A Line chart that uses horizontal and vertical lines to connect the data points and creates a step-like structure.
@@ -30,7 +32,7 @@ In this section, you will learn how to create a Line chart with our Line Chart W
 We are going to create a `Line` Chart without Markers that displays the LineTotal of the Product Categories by Years. The final report will look like the image above.
 In the general case, you may select `Stacked Line` or `100% Stacked Line` with or without Markers. The requiered settings are basically the same. 
 
-We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
 ````SQL
 SELECT
@@ -47,33 +49,35 @@ FROM
 ````
 
 
+To create the Line chart by using the Line Chart Wizard: 
+
 1. Add Line Chart as shown in the image below:
 
 	![Add Line Chart Wizard](images/LineChartWizardAdd.png)
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
 	![Add DataSource to the Line Chart](images/LineChartWizardDataSource.png)
 
 1. Arrange the Line Chart:
 
-	* Drag the field _Category_ to the `Series`
-	* Drag the field _OrderDate.Year_ to the `Categories`
-	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __Category__ field to **Series**.
+	1. Drag the __OrderDate.Year__ field to **Categories**.
+	1. Drag the __LineTotal__ field to **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 
 	![Arrange the Line Chart](images/LineChartWizardArrangeFields.png)
 
-1. The LineTotal value is large, so let's change the lineSeries `Data > Y` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+1. The `LineTotal` value is large, so let's change the `Data > Y` [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) of `lineSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
 
-You may find the report created following the above steps in our GitHub samples repository - [LineChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/LineChart.trdp).
+To see the full implementation of the sample report, refer to the [LineChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/LineChart.trdp) project on GitHub.
 
 ## Creating Line Charts Manually
 
-In this section, you will create a Line chart.
+This section will show how to manually create a Line chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}).
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({% slug graph_item_get_started %}).
 
 ### 2. Set the SeriesGroups Hierarchy
 

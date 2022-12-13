@@ -24,7 +24,6 @@ The Graph is most often used for building powerful OLAP and Pivot charts and pro
 
 ## Key Features 
 
-* [Getting Started]({%slug graph_item_get_started%})&mdash;The Graph provides different user experiences when initialized from the report designer tools supported by Telerik Reporting. 
 * [Structure and elements]({%slug telerikreporting/designing-reports/report-structure/graph/structure%})&mdash;You can utilize all available elements the visual structure of the Graph report item supports. 
 * [Connecting to data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data%})&mdash;The Graph report item allows you to bind it to a single data object where you can control what data and in what way is visualized through the Telerik Reporting Expression engine.
 * [Chart types]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/overview%})&mdash;The Graph comes with rich design-time support, and enables you to create different charts and add series of different chart types.

@@ -13,7 +13,7 @@ previous_url: /ChartTypes
 
 Choosing an appropriate chart type for successfully presenting data will determine how well the data can be interpreted when displayed in a chart form. For example, if your dataset contains a lot of data points relative to the size of the chart, it may be better presented by using an Area, Line, or Scatter chart. 
 
-For more information about preparing your data depending on the selected chart type, refer to the article [Structure and Elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}).
+For more information about preparing your data depending on the selected chart type, refer to the article on the [structure and elements of the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/structure%}).
 
 ## Supported Chart Types
 

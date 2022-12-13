@@ -33,7 +33,7 @@ The following Bubble chart sample report has a category set to a sales person so
 In this section, you will learn how to create a Bubble chart with our Bubble Chart Wizard.
 The Bubble Chart is a variation of the more general Scatter Chart and its wizard is under the Scatter Chart menu item. Our Bubble Chart will display the decrease in the sales from 2003 to 2004 in Toronto for the employees from the region.
 
-We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
 ````SQL
 SELECT
@@ -51,49 +51,51 @@ WHERE
 ````
 
 
+To create the Scatter chart by using the Scatter Chart Wizard: 
+
 1. Add Bubble Chart as shown in the image below:
 
 	![Add Bubble Chart Wizard](images/BubbleChartWizardAdd.png)
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
 	![Add DataSource to the Bubble Chart](images/BubbleChartWizardDataSource.png)
 
 1. Arrange the Bubble Chart:
 
-	* Drag the field _SalesPersonName_ to the `Series`
-	* Leave the `Categories` empty
-	* Drag the field _SubTotal_ to `X`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
-	* Drag the field _SubTotal_ to `Y`
-	* Drag the field _SubTotal_ to `Size`
+	1. Drag the __SalesPersonName__ field to **Serie**.
+	1. Leave **Categories** empty.
+	1. Drag the __SubTotal__ field to **X**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%})
+	1. Drag the __SubTotal__ field to **Y**.
+	1. Drag the __SubTotal__ field to **Size**.
 
 	![Arrange the Bubble Chart](images/BubbleChartWizardArrangeFields.png)
 
-1. In the Graph properties, select the `CategoryGroups` and if the `Groupings` proprty is different from `Static`, click the ellipses (`...`) beside the property and delete the group as shown in the image below:
+1. In the Graph properties, select the **CategoryGroups** and if the **Groupings** property is different from **Static**, click the ellipses (**...**) beside the property and delete the group as shown in the image below:
 
 	![Delete the Grouping in the Category Group of the Bubble Chart](images/BubbleChartWizardDeleteCategoryGrouping.png)
 
-1. We need to change `X`, `Y` and `Size` with the values they need to display for our purposes.
+1. You need to modify `X`, `Y`, and `Size` with the values they need to display for the purposes of this sample report.
 
 	Select the LineSeries and change the properties as specified below:
 
-	`X`: `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))/1000.0`
+	* `X`: `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0))/1000.0`
 
-	`Y`: `=Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))/1000.0`
+	* `Y`: `=Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))/1000.0`
 
-	`Size`: `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0)) - Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))`
+	* `Size`: `=Sum(IIF(Fields.OrderDate.Year=2003, Fields.SubTotal, 0)) - Sum(IIF(Fields.OrderDate.Year=2004, Fields.SubTotal, 0))`
 
-	Note that since the SubTotal value is large, we set the Graph to display it in thousands.
+	Note that since the **SubTotal** value is large, you need to configure the Graph to display it in thousands.
 
-You may find the report created following the above steps in our GitHub samples repository - [BubbleChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BubbleChart.trdp).
+To see the full implementation of the sample report, refer to the [BubbleChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BubbleChart.trdp) project on GitHub. 
 
 ## Creating Bubble Scatter Charts Manually
 
-In this section, you will create a Bubble chart.
+This section will show how to manually create a Bubble chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}). 
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({% slug graph_item_get_started %}). 
 
 ### 2. Set the SeriesGroups Hierarchy 
 

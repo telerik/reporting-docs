@@ -20,17 +20,19 @@ The following image shows a typical Bar chart which is well suited for the visua
 
 ## Types
 
+The Graph supports the following Bar chart types: 
+
 * __Clustered Bar Charts__&mdash;A Bar chart for displaying series as sets of horizontal bars.
 * __Stacked Bar Charts__&mdash;A Bar chart where multiple series are stacked vertically. Stacked Bar charts compare contributions of values to a total across categories. If there is only one series in your chart, the Stacked Bar chart will display in the same way as a Bar chart. 
 * __100% Stacked Bar Charts__&mdash;A Bar chart where multiple series are stacked vertically to fit 100% of the chart area. 100% Stacked Bar Charts are used for three or more data series when you want to compare distributions within categories and at the same time display the differences between categories. Each bar represents 100% of the amounts for that category. If there is only one series in your chart, all the bars will fit to 100% of the chart area. 
 
 ## Creating Bar Charts with the Bar Chart Wizard
 
-In this section, you will learn how to create a Bar chart with our Bar Chart Wizard.
-We are going to create a `Clustered Bar` Chart that displays the LineTotal of the Product Categories by Years. The final report will look like the image above.
-In the general case, you may select `Stacked Bar` or `100% Stacked Bar`. The requiered settings are basically the same. 
+In this section, you will learn how to create a Bar chart with the Telerik Reporting Bar Chart Wizard. You will create a Clustered Bar Chart that displays the **LineTotal** of the Product Categories by Years. The final report will look like the image above.
 
-We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+In the general case, you can select a Stacked Bar or a 100% Stacked Bar chart. The required settings are basically the same. 
+
+The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
 ````SQL
 SELECT
@@ -47,31 +49,35 @@ FROM
 ````
 
 
-1. Add Clustered Bar Chart as shown in the image below:
+To create the Bar chart by using the Bar Chart Wizard: 
+
+1. Add a Clustered Bar chart as shown in the image below:
 
 	![Add Bar Chart Wizard](images/BarChartWizardAdd.png)
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
 	![Add DataSource to the Bar Chart](images/BarChartWizardDataSource.png)
 
 1. Arrange the Bar Chart:
 
-	* Drag the field _Category_ to the `Series`
-	* Drag the field _OrderDate.Year_ to the `Categories`
-	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __Category__ field to **Series**.
+	1. Drag the __OrderDate.Year__ field to **Categories**.
+	1. Drag the __LineTotal__ field to the **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 
 	![Arrange the Bar Chart](images/BarChartWizardArrangeFields.png)
 
-1. The LineTotal value is large, so let's change the barSeries `Data > X` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+1. The `LineTotal` value is large, so let's change the `Data > X` [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) of `barSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
 
-You may find the report created following the above steps in our GitHub samples repository - [BarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BarChart.trdp).
+To see the full implementation of the sample report, refer to the [BarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/BarChart.trdp) project on GitHub.
 
 ## Creating Bar Charts Manually
 
+This section will show how to manually create a Bar chart.
+
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}). 
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({% slug graph_item_get_started %}). 
 
 ### 2. Set the SeriesGroups Hierarchy 
 

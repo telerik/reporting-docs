@@ -20,16 +20,18 @@ The following image displays a Rose Polar chart:
 
 ## Types 
 
+The Graph supports the following Polar chart types: 
+
 * __Line Polar Charts__&mdash;A Polar chart in which the data points are connected by a line.
 * __Area Polar Charts__&mdash;A Polar chart in which the data points are connected by a line with the area below the line filled with color.
 * __Rose Polar Charts__&mdash;A Polar chart in which the data points are represented by bars drawn in a polar coordinate system.
 
-## Creating Polar (Radar) Charts with the Radar Chart Wizard
+## Creating Radar Polar Charts with the Radar Chart Wizard
 
 In this section, you will learn how to create a Rose chart with our Rose Chart Wizard. This is a variation of the Polar (Radar) Chart type and is located under the `Other` Charts in the main menu.
 We are going to display the LineTotal of the Product Categories by Years. The final report will look like the image above.
 
-We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
 ````SQL
 SELECT
@@ -46,38 +48,40 @@ FROM
 ````
 
 
+To create the Polar chart by using the Polar Chart Wizard: 
+
 1. Add Rose Chart as shown in the image below:
 
 	![Add Rose Polar Chart Wizard](images/PolarChartWizardAdd.png)
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
 	![Add DataSource to the Rose Polar Chart](images/PolarChartWizardDataSource.png)
 
 1. Arrange the Rose Chart:
 
-	* Drag the field _Category_ to the `Categories`
-	* Drag the field _OrderDate.Year_ to the `Series`
-	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __Category__ field to **Series**.
+	1. Drag the __OrderDate.Year__ field to **Categories**.
+	1. Drag the __LineTotal__ field to **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 
 	![Arrange the Polar Chart](images/PolarChartWizardArrangeFields.png)
 
-1. The LineTotal value is large, so let's change the barSeries `Data > Y` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+1. The `LineTotal` value is large, so let's change the `Data > Y` [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) of `barSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
 
-1. The _LineTotal_ values for the _Bikes_ category are significantly higher than the other three categories, so let's use a Logarithmic Scale for the _RadialAxis_ to improve the user experience:
-	1. Select the `Graph` > `Presentation` > `CoordinateSystems` and click on the ellipses (`...`) beside the property. This will open the _GraphCoordinateSystem Collection Editor_.
-	1. Go to the `RadialAxis` property and select `<New Axis with Logarithmic Scale>` from the dropdown.
-	1. Expand the `RadialAxis1` property and change the `LabelAngle` to `90` degrees for better appearance.
+1. The `LineTotal` values for the `Bikes` category are significantly higher than the other three categories, so let's use a Logarithmic Scale for the `RadialAxis` to improve the user experience:
+	1. Select the **Graph** > **Presentation** > **CoordinateSystems**, and click on the ellipses (**...**) beside the property. This action will open the **GraphCoordinateSystem Collection Editor**.
+	1. Go to the **RadialAxis** property and select **<New Axis with Logarithmic Scale>** from the drop-down.
+	1. Expand the **RadialAxis1** property and change the **LabelAngle** to **90** degrees to improve the appearance.
 
-	Here is how the above settings should look in the designer, with the proper fields highlighted:
+	The following image with the proper fields highlighted shows how the above settings look in the designer:
 
 	![Change Radial Axis Scale to Logarithmic in the Rose Polar Chart](images/PolarChartWizardRadialAxis.png)
 
-You may find the report created following the above steps in our GitHub samples repository - [PolarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/PolarChart.trdp).
+To see the full implementation of the sample report, refer to the [PolarChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/PolarChart.trdp) project on GitHub. 
 
-## Creating Polar (Radar) Charts Manually
+## Creating Radar Polar Charts Manually
 
-In this section, you will create a Polar chart.
+This section will show how to manually create a Polar chart.
 
 ### 1. Add the Graph
 

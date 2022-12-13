@@ -27,7 +27,7 @@ The Pie chart supports the __Doughnut__ type which has an open space in the cent
 In this section, you will learn how to create a Pie chart with our Pie Chart Wizard.
 We are going to displays the SubTotal for the Top 10 performing Stores as a percentage of the SubTotal for all Stores. The final report will look like the image above.
 
-We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
 ````SQL
 SELECT
@@ -40,43 +40,45 @@ FROM
 ````
 
 
+To create the Pie chart by using the Pie Chart Wizard: 
+
 1. Add Pie Chart as shown in the image below:
 
 	![Add Pie Chart Wizard](images/PieChartWizardAdd.png)
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
 	![Add DataSource to the Pie Chart](images/PieChartWizardDataSource.png)
 
 1. Arrange the Pie Chart:
 
-	* Drag the field _StoreName_ to the `Series`
-	* Leave the `Categories` empty
-	* Drag the field _SubTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __StoreName__ field to **Series**.
+	1. Leave **Categories** empty.
+	1. Drag the __SubTotal__ field to **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 
 	![Arrange the Pie Chart](images/PieChartWizardArrangeFields.png)
 
-1. The total number of the Series in the Graph, i.e. the Stores, is too large, which results in a very segmented Pie Chart. In order to have a better visual experience, we will limit the Stores to the Top 10 performing ones. For this purpose, let's introduce `Filtering` to the Graph Series Group:
-	1. Select the `Graph` > `Data` > `SeriesGroups` and click on the ellipses (`...`) beside the property. This will open the _GraphGroup Collection Editor_.
-	1. Select the `Filters` property and click on the ellipses (`...`). This opens the _Edit Filters_ dialog.
+1. The total number of the Series in the Graph, that is, the **Stores**, is too large, which results in a very segmented Pie Chart. To provide better visual experience, limit the **Stores** to the top 10 performing ones. For this purpose, let's introduce filtering to the Graph Series Group:
+	1. Select **Graph** > **Data** > **SeriesGroups** and click on the ellipses (**...**) beside the property. This action will open the **GraphGroup Collection Editor**.
+	1. Select the **Filters** property and click on the ellipses (**...**). This action opens the **Edit Filters** dialog.
 	1. Enter the following filtering rule:
-		* For `Expression` use `=Sum(Fields.SubTotal)`
-		* For `Operator` select `Top N`
-		* For `Value` use `10`
+		* For `Expression`, use `=Sum(Fields.SubTotal)`.
+		* For `Operator`, select `Top N`.
+		* For `Value`, use `10`.
 
-	Here is how the above settings should look in the designer, with the proper fields highlighted:
+	The following image with the proper fields highlighted shows how the above settings look in the designer:
 
 	![Add Filter to Pie Chart Wizard](images/PieChartWizardFilter.png)
 
-You may find the report created following the above steps in our GitHub samples repository - [PieChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/PieChart.trdp).
+To see the full implementation of the sample report, refer to the [PieChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/PieChart.trdp) project on GitHub.
 
 ## Creating Pie Charts Manually
 
-In this section, you will create a Pie chart.
+This section will show how to manually create a Pie chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}). 
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({% slug graph_item_get_started %}). 
 
 ### 2. Set the SeriesGroups Hierarchy 
 

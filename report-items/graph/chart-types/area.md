@@ -20,16 +20,17 @@ The following image shows an example of a Stacked Area chart:
 
 ## Types 
 
+The Graph supports the following Area chart types: 
+
 * __Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart. 
 * __100% Percent Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically to fit the entire chart area. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart. 
 * __Smooth Area Charts__&mdash;An Area chart where the data points are connected by a smooth line instead of a regular line. Smooth Area charts are suitable for displaying trends rather than values of individual data points.
 
 ## Creating Area Charts with the Area Chart Wizard
 
-In this section, you will learn how to create an Area Chart with our Area Chart Wizard.
-Our Area Chart will be Stacked and will compare the total Montly Sales by Years. The final report will look like the image above.
+In this section, you will learn how to create an Area Chart with the Telerik Reporting Area Chart Wizard. For the purposes of this guide, the Area Chart will be Stacked and will compare the total monthly sales by years. The final report will look like the image above.
 
-We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
 ````SQL
 SELECT
@@ -41,35 +42,37 @@ FROM
 ````
 
 
-1. Add Stacked Area Chart as shown in the image below:
+To create the Stacked Area chart by using the Area Chart Wizard: 
 
-	![Add Area Chart Wizard](images/AreaChartWizardAdd.png)
+1. Add a Stacked Area chart:
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+	![Adding the Telerik Reporting Area Chart Wizard](images/AreaChartWizardAdd.png)
+
+1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
 	![Add DataSource to the Area Chart](images/AreaChartWizardDataSource.png)
 
 1. Arrange the Area Chart:
 
-	* Drag the field _OrderDate.Month_ to the `Categories`
-	* Drag the field _OrderDate.Year_ to the `Series`
-	* Drag the field _LineTotal_ to the `Values`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __OrderDate.Month__ field to **Categories**.
+	1. Drag the __OrderDate.Year__ field to the **Series**.
+	1. Drag the __LineTotal__ field to the **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 
 	![Arrange the Area Chart](images/AreaChartWizardArrangeFields.png)
 
-1. The LineTotal value is large, so let's change the areaSeries `Data > Y` [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) that is currently _=Sum(Fields.LineTotal)_ to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that we included also a Null check, so that the Null values to be replaced with 0 (zero).
+1. The `LineTotal` value is large, so let's change the `Data > Y` [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) of `areaSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
 
-1. Set the Graph Category's `Label` to `= Format("{0:MMM}", Fields.OrderDate)`. This will force the Category labels that are months in this example to be displayed with the months names abbreviations rather than the default month number.
+1. Set the Graph Category's `Label` to `= Format("{0:MMM}", Fields.OrderDate)`. This action will force the **Category** labels that are months in this example to be displayed with the abbreviations of the month names rather than the default month number.
 
-You may find the report created following the above steps in our GitHub samples repository - [AreaChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/AreaChart.trdp).
+To see the full implementation of the sample report, refer to the [AreaChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/AreaChart.trdp) project on GitHub.
 
 ## Creating Area Charts Manually
 
-In this section, you will create a Stacked Area chart.
+This section will shows how to manually create a Stacked Area chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article [getting started with the Graph report item]({% slug graph_item_get_started %}).
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({% slug graph_item_get_started %}).
 
 ### 2. Set the SeriesGroups Hierarchy 
 

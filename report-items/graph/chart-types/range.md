@@ -20,6 +20,8 @@ The following image displays a plain Range chart with one Range Area series:
 
 ## Types
 
+The Graph supports the following Range chart types: 
+
 * __Column range__&mdash;The Column Range chart uses columns to represent the range.
 * __Bar range__&mdash;The Bar Range chart uses bars to represent the range. 
 * __Smooth range__&mdash;A Smooth Range chart uses curved lines to connect data points rather than straight ones.
@@ -29,7 +31,7 @@ The following image displays a plain Range chart with one Range Area series:
 In this section, you will learn how to create a Range Area Chart with our Range Chart Wizard.
 The Range Chart is a modification of the more general Area Chart. That's why, its Wizard is under the Area Charts menu item. Our Range Chart will display the difference between years 2002 and 2003 for the earnings (field _TotalDue_ from the below query) for the sales territories. The range value will be displayed as a Column range. The final report will look like the image above.
 
-We will use a pre-defined SqlDataSource connecting to the example AdventureWorks database. Here is the query that returns the needed fields:
+The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
 ````SQL
 SELECT
@@ -44,41 +46,43 @@ WHERE
 ````
 
 
+To create the Range chart by using the Range Chart Wizard: 
+
 1. Add Range Chart as shown in the image below:
 
 	![Add Range Chart Wizard](images/RangeChartWizardAdd.png)
 
-1. Select the SqlDataSource, or create it with the button `Add New Data Source...` and the above query:
+1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
 	![Add DataSource to the Range Chart](images/RangeChartWizardDataSource.png)
 
 1. Arrange the Range Chart:
 
-	* Leave the `Series` empty
-	* Drag the field _TerritoryName_ to the `Categories`
-	* Drag the field _TotalDue_ to the `Value0`. The wizard automatically applies the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
-	* Drag the field _TotalDue_ also to the `Value1`. Later, we will edit both Value fields manually to display the required information.
+	1. Leave **Series** empty.
+	1. Drag the __TerritoryName__ field to **Categories**.
+	1. Drag the __TotalDue__ field to **Value0**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
+	1. Drag the __TotalDue__ field also to **Value1**. Later, you will edit both **Value** fields manually to display the required information.
 
 	![Arrange the Range Chart](images/RangeChartWizardArrangeFields.png)
 
-1. Select the areaSeries and change its properties `Y` and `Y0` in the Properties Data tab from the current _=Sum(Fields.TotalDue)_ to the following values:
+1. Select the areaSeries and change its properties `Y` and `Y0` in the Properties Data tab from the current `=Sum(Fields.TotalDue)` to the following values:
 
 	* `Y`:	`=Sum(IIF(Fields.OrderDate.Year=2002, Fields.TotalDue, 0)) / 1000.0`
 	* `Y0`:	`=Sum(IIF(Fields.OrderDate.Year=2003, Fields.TotalDue, 0)) / 1000.0`
 
-	The above [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) set the range Value of our Range Area Chart to be the difference between years 2002 and 2003.
+	The above [expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) set the range value of the Range Area Chart to be the difference between years 2002 and 2003.
 
-	The TotalDue value is large, so we have also changed the areaSeries do display the value in thousands.
+	The `TotalDue` value is large, so you have to also change the areaSeries to display the value in thousands.
 
-1. Select the Graph Legend and set its `Style > Visible` to `False`. This way, we hide the legend to free some space for the Chart, as we have only one Series and the legend is not very informative.
+1. Select the Graph **Legend** and set its **Style** > **Visible** to `False`. As a result, the legend will be hidden and will free space for the Chart itself as having only one series and the legend is not very informative.
 
-1. If the Category Labels that represend territory names in our example are still too long and wrap on a new line, you may either shorten the names, or increase Graph width.
+1. If the Category labels that represent territory names in the example are still too long and wrap on a new line, you can either shorten the names, or increase the Graph width.
 
-You may find the report created following the above steps in our GitHub samples repository - [RangeChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/RangeChart.trdp).
+To see the full implementation of the sample report, refer to the [RangeChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/RangeChart.trdp) project on GitHub.
 
 ## Creating Range Charts Manually
 
-In this section, you will create a Range Area chart.
+This section will show how to manually create a Range Area chart.
 
 ### 1. Add the Graph
 

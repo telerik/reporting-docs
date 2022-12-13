@@ -24,6 +24,8 @@ When you configure the ObjectDataSource component the settings below are obligat
 1. Open __Visual Studio__ and create a new [Class Library](https://docs.microsoft.com/en-us/cpp/mfc/class-library-overview?view=vs-2019).             
 
    >The Standalone Report Designer is a WPF application built against.NET Framework 4.0. For that reason, it cannot load and resolve classes from assemblies built against.NET Standard 2.1,.NET Core and.NET5. You can see the [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) which explains how and when the assemblies can be loaded in different framework versions. 
+   
+   >The new .NET Standalone Report Designer is built for __.NET 6__ and the above restrictions are not valid for it - [Starting the Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net)
 
 1. Add the following piece of code from [How to Bind to a BusinessObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject%}).
 
@@ -34,7 +36,7 @@ When you configure the ObjectDataSource component the settings below are obligat
 
 ## Configuration
 
-For security reasons the ObjectDataSource can resolve only types that are declared either in the current report's assembly or in AssemblyReferences element nodes in Telerik.Reporting section of application configuration file. During report processing, the ObjectDataSource component tries to resolve its type and if it is not listed in these two places, an exception will be thrown. 
+For security reasons the ObjectDataSource can resolve only types that are declared either in the current report's assembly or in AssemblyReferences element nodes in `Telerik.Reporting` section of application configuration file. During report processing, the ObjectDataSource component tries to resolve its type and if it is not listed in these two places, an exception will be thrown. 
 
 * Configuration in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}): In this case, you will need to add a reference to the Class Library project or to the dll which contains the data source definition. 
 
@@ -74,11 +76,32 @@ The additional attributes like __version__, __culture__ and __publicKeyToken__ a
 
 1. Select from the __Available data source types__ and follow the Wizard instructions until the process is completed. 
 
-## Configuration in the Report Viewers
+## Configuration for the Report Viewer/Web Report Designer
 
-1. Add the reference which contains the data source to the project. 
+The `ObjectDataSource` component is resolved, at runtime, using the configuration of the running application. For example, in the Standalone Report Designer that would be the `Telerik.ReportDesigner.exe.config` configuration file. However, when a report that uses an ObjectDataSource component is to be displayed in some application via a Report Viewer or via the Web Report Designer, the runtime configuration will be retrived through the`.config/.json` configuration file of that project. 
 
-1. Open the project's configuration file and add the same assembly reference like the one required for the Standalone designer. 
+This means that if the assembly used by the ObjectDataSource component is not referenced in the configuration file of that project via the [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) element, the report will display errors on Preview.
+
+Usually, in `.NET Framework` projects, the configuration file would be called `App.config/Web.config`, while `.NET Core` uses JSON-based configuration most often named `appSettings.json`. The AssemblyReferences element support both `XML` and `JSON` configuration files.
+
+To reference the assembly in the project so that it can be resolved by the Telerik Reporting Engine, the steps are as follows:
+
+1. [Add a reference to the assembly](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager) used by the ObjectDataSource to the project with the Reporting REST Service. Usually, that is the same project as the one where the Report Viewer/Web Report Designer is, however, that is not always the case(e.g. Blazor ASP.NET Core hosted). Instead of referencing the built assembly itself, it is also possible add a `Project Reference` to the project that the assembly is build from. The important thing is that assembly is available in the `bin` folder during the runtime of the application.  
+
+1. Open the project's configuration file and add the same assembly reference like the one required for the Standalone designer. If the project is `.NET Framework`, this step will be simply copying the necessary XML but for `.NET Core`, the XML has to be converted to JSON, for example:
+
+````JavaScript
+"telerikReporting": {
+    "assemblyReferences": [
+        {
+            "name": "MyUserFunctionsAssembly",
+            "version": "1.0.0.0",
+            "culture": "neutral",
+            "publicKeyToken": "null"
+        }
+    ]
+}
+````
 
 ## Sample
 

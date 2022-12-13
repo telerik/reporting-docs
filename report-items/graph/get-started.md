@@ -53,7 +53,7 @@ After you have added the Graph report item to your report, you can manually conf
 
 	To visualize its data, the Graph requires you to provide a DataSource and bind it to the desired data set. You will use the AdventureWorks sample database which requires an [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) that will connect to the database and fetch the requested data in run-time through the specified `DataProvider`. The data provider will use the `ConnectionString` for connecting, and execute the Query or Stored Procedure assigned to the `SelectCommand` property to get the data.
 
-	Now use the default `SqlClient Data Provider` with the named connection string from the demo reports that are be preset in the `Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString` configuration file of your designer.
+	Now use the default `SqlClient Data Provider` with the named connection string `Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString` from the demo reports that is preset in the the configuration file of your designer.
 
 1. Create the chart type you require. Depending on the specific charts you will create, you need to use different SQL Queries that are provided in the dedicated articles. The reason for this is that each Chart type is suitable for displaying different types of data, hence the different database columns that will fit better to different Charts.
 

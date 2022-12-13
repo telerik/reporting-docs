@@ -52,7 +52,7 @@ To create a Choropleth map type, refer to the article about [setting up a Chorop
 
 ## Customizing Map Types 
 
-The Map also provides specific approaches to build on top of its available options by allowing you to add [`ShapeMapSeries` instances](#shape-map-series) and [`LocationMapSeries` instances](#location-map-series) to the report item as well as to use the [BarChart and CSV data source](#barchart-and-csv-data-source-maps) to create a map. 
+The Map also provides specific approaches to build on top of its available options by allowing you to add [`ShapeMapSeries` instances](#shape-map-series) and [`LocationMapSeries` instances](#location-map-series) to the report item as well as to use the [BarChart Series](#barchart-and-csv-data-source-maps) in the map. 
 
 ### Shape Map Series 
 
@@ -66,9 +66,9 @@ The [`LocationMapSeries`](/reporting/api/Telerik.Reporting.LocationMapSeries) ar
 
 To create a Location Map Series map type, refer to the article about [adding a `LocationMapSeries` instance to the Map report item]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%}). 
 
-### BarChart and CSV Data Source Maps
+### Map with a BarChart Series
 
-To create a BarChart and CSV data source map type, refer to the article about [creating a Map report item with a BarChart and a CSV data source]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%}). 
+To create a Map with BarChart Series and CSV data source, refer to the article about [creating a Map report item with BarChart series]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%}). 
 
 ## See Also
 

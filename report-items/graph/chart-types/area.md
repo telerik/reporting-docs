@@ -68,7 +68,7 @@ To see the full implementation of the sample report, refer to the [AreaChart.trd
 
 ## Creating Area Charts Manually
 
-This section will shows how to manually create a Stacked Area chart.
+This section will show how to manually create a Stacked Area chart.
 
 ### 1. Add the Graph
 

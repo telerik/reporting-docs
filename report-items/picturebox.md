@@ -162,15 +162,22 @@ The SVG images are rendered in vector format where the rendering extension suppo
 ## Next Steps 
 
 * [(Demo) Product Catalog Report with a PictureBox](https://demos.telerik.com/reporting/product-catalog)
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
-* [Product Page for Telerik Reporting](https://www.telerik.com/products/reporting)
-
-## See Also
-
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
 * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
-* [Types of Bitmaps](http://msdn.microsoft.com/en-us/library/at62haz6.aspx)
-* [Images, Bitmaps, and Metafiles](http://msdn.microsoft.com/en-us/library/3ke1f63h.aspx)
-* [Scalable Vector Graphics (SVG)](https://www.w3.org/TR/SVG/)
 * [(API) PictureBox](/reporting/api/Telerik.Reporting.PictureBox) 
 * [(API) Sizing](/reporting/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Knowledge Base Section](/knowledge-base)
+
+## See Also 
+
+* [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
+* [Reporting Forums](https://www.telerik.com/forums/reporting)
+* [Reporting Blog](https://www.telerik.com/blogs/tag/reporting)
+* [Reporting Videos](https://www.telerik.com/videos/reporting)
+* [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
+* [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
+* [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
+
+
+

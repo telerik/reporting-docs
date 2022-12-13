@@ -2,45 +2,111 @@
 title: Getting Started
 page_title: Getting Started with the Map Report Item
 description: "Get up and running with Telerik Reporting, and learn how to create and use the Map report item in reports."
-slug: map_item_get_started
+slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard
 tags: telerik, reporting, report, items, map, getting, started
 published: True
+previous_url: /MapHowToSetupMapWithPieChartSeries, /report-items/map/how-to/how-to-setup-a-map-using-the-map-wizard, /knowledge-base/map-set-up-with-the-map-wizard
 position: 1
 ---
 
 # Getting Started with the Map Report Item
 
-This guide shows how to add the Telerik Reporting Map report item in reports.
+This guide shows how to add the Telerik Reporting Map report item to reports.
 
-The simplest way to add a __Map__ item to your report is to run the `Map Wizard`. After you add a Map item to the design surface of the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), you can click its elements to edit the selected element's properties in the *Properties* grid. In the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) you can use the ribbon tools. 
+The suggested implementation demonstrates how to create a Map which will present the sales distribution by products among several states using the __Adventure Works__ sample database and the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}). The steps are valid for the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) as well and can be reproduced with code too.
 
-## Add a Map item to a Report by using the _Visual Studio Report Designer Map Wizard_
+After the completion of this guide, you will be able to achieve the following result.
 
-1. Open the Visual Studio toolbox and select `Map Wizard` from the Telerik Reporting tab.
+![A Map Created with the Map Wizard](images/Map/MapWithWizardPreview.png)
 
-1. Click on the design surface where you want the upper-left corner of the Map item. The `Map Wizard` opens. 
+## Prerequisites 
 
-1. Follow the steps in the `Map Wizard`.
+* Obtain a valid Location Provider key to authenticate your geocoding requests.
+* If you don't want to use a location provider, provide the geographical coordinates of your points yourself and set up the `MapSeries` accordingly. For more information, refer to the article on [location providers]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}).
 
-1. When you finish the wizard a new Map report item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
+## Adding the Map
 
-## Add a Map to a report using the _Standalone Report Designer Map Wizard_
++ (For new reports) Select the `Map Wizard` icon from the `Available Templates` page.
 
-1. Open the Ribbon *Insert* tab and select the Map item. The `Map Wizard` will start. 
+	![Item Template Map Wizard](images/Map/ItemTemplate_MapWizard.png)
 
-1. Follow the steps in the `Map Wizard`.
++ (For existing reports) Select the `Map` item from the `Insert` menu. This will start the __Map Wizard__ which will guide you through the creation process. 
 
-1. When you finish the wizard a new Map report item will be created on the design surface. The Map item is rendered with the real data and its initial extent depends on the data you are using. 
+	![Insert Menu Select Map](images/Map/InsertMenu_SelectMap.png)
+
+## Adding the Data Source
+
+On the `Choose Data Source` page, add a new [SqlDataSource]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). 
+
+1. Set the connection string to the demo AdventureWorks database.
+1. Paste the following query in the **Select Statement** box:
+
+	````SQL
+SELECT
+	PS.Name AS ProductSubCategory,
+	SP.Name + ', ' + CR.Name AS State,
+	SOD.LineTotal as LineTotal
+	FROM
+
+	Production.Product AS P
+	INNER JOIN Production.ProductSubcategory AS PS ON P.ProductSubcategoryID = PS.ProductSubcategoryID
+	INNER JOIN Production.ProductCategory AS PC ON PS.ProductCategoryID = PC.ProductCategoryID
+	INNER JOIN Sales.SalesOrderDetail AS SOD ON P.ProductID = SOD.ProductID
+	INNER JOIN Sales.SalesOrderHeader AS SOH ON SOD.SalesOrderID = SOH.SalesOrderID
+	INNER JOIN Person.Address AS ADDR ON ADDR.AddressID = SOH.ShipToAddressID
+	INNER JOIN Person.StateProvince AS SP ON SP.StateProvinceID = ADDR.StateProvinceID
+	INNER JOIN Person.CountryRegion AS CR ON CR.CountryRegionCode = SP.CountryRegionCode
+
+	WHERE
+	CR.Name IN ('Australia')
+	AND DATEPART(YEAR, SOH.OrderDate) IN (2003, 2004)
+	AND PC.Name = 'Bikes'
+````
+
+
+1. Click `Execute Query...` to check if everything is OK with the database connection.
+1. Click `Finish` when you are ready.
+
+## Building the Map Charts
+
+1. In the **Available data sources** list you will see the data source you've already created. Select it and click __Next__.
+1. On the next page, select the fields which will be used to build the Map charts. Since the map will use a location provider, you don't have to provide the  __Latitude__ and  __Longitude__ coordinates by yourself and you can leave these boxes empty. Define a location group which will set the geocoding string.
+1. From the **Datapoints type** box, select the __Pie Chart__ radio button.
+1. Select the __ProductSubCategory__ field and drag it to the **Series (color)** box.
+1. Select the __State__ field and drag it to the **Categories (location)** box.
+1. Select the __LineTotal__ field and drag it to the **Size** box where it will be transformed to __Sum(LineTotal)__.
+
+	Your __Arrange map fields__ page will look similar to one in the following image:
+
+	![Arrange Map Fields](images/Map/ArrangeMapFields.png)
+
+1. Once the mandatory fields are set up, the __Next__ button will get enabled. Click it to go to the next page.
+
+## Defining the Location Provider
+
+1. On the __Choose a location provider__ page, select the location provider that will be used to geocode the __State__ field that was dragged in the **Categories (location)** box on the previous page. Currently, the supported providers are [`MapQuestOpenAPILocationProvider`](/reporting/api/Telerik.Reporting.MapQuestOpenAPILocationProvider), [`MapQuestLocationProvider`](/reporting/api/Telerik.Reporting.MapQuestLocationProvider), and [`BingLocationProvider`](/reporting/api/Telerik.Reporting.BingLocationProvider). They both require a valid client token (key) to authenticate the geocoding requests that will be sent from the Map item.
+
+	Once you obtain the key, paste it in the **Client token** box:
+
+	![ChooseALocation Provider](images/Map/ChooseALocationProvider.png)
+
+1. When you click __Finish__, the Wizard will create the definition of the Map item, show it in the designer, and start requesting the geocode and tiles information from the providers asynchronously. Initially, it will take a few seconds to fetch all the data from the geocoding service, but the following requests will be executed faster. The tiles, needed to prepare the Map background, will be displayed as they arrive, but the Map will stay responsive and you can examine and change its definition. When finished, your Map will look similar to the one shown in beginning of this tutorial.
+
+You may download the demo report from our Reporting Samples GitHub repository - [MapWithMapWizard.trdp](https://github.com/telerik/reporting-samples/blob/master/map-samples/MapWithMapWizard.trdp).
+
+## Next Steps
+
+* [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)
+* [Map Class API Reference](/api/telerik.reporting.map)
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [Knowledge Base Section](/knowledge-base)
 
 ## See Also
 
-* [(KB) Set Up Maps with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
-* [(KB) Add LocationMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%})
-* [(KB) Add ShapeMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
-* [(KB) Create Maps with BarCharts and CSV Data Sources]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})
-* [(KB) Add a Choropleth Map to the Report with the Choropleth Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-choropleth-to-report%})
-* [(KB) Add a Choropleth Map to the Report with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
-* [(KB) Create Maps with Custom Polygons]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-custom-polygons%})
-* [(KB) Set Up a Map Manually]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-manually%})
-* [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
+* [Adding LocationMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-locationmapseries-to-the-map-item%})
+* [Adding ShapeMapSeries to the Map]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item%})
+* [Creating Maps with BarCharts]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%})
+* [Adding a Choropleth Map to the Report with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%})
+* [(KB) Adding a Choropleth Map to the Report with the Choropleth Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-choropleth-to-report%})
+* [(KB) Creating Maps with Custom Polygons]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-custom-polygons%})
+* [(KB) Setting Up a Map Manually]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-manually%})

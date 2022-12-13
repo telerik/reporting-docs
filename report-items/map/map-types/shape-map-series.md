@@ -4,7 +4,7 @@ page_title: Adding ShapeMapSeries Instances to the Map
 description: "Learn how to add a ShapeMapSeries instance to the Map report item when using Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item
 tags: telerik, reporting, map, report, item, add, shapemapseries, instance
-previous_url: /MapHowToAddShapeMapSeriesToTheMapItem, /report-items/map/how-to/how-to-add-shapemapseries-to-the-map-item, /knowledge-base/map-add-
+previous_url: /MapHowToAddShapeMapSeriesToTheMapItem, /report-items/map/how-to/how-to-add-shapemapseries-to-the-map-item, /knowledge-base/map-add-shapemapseries
 position: 2
 ---
 

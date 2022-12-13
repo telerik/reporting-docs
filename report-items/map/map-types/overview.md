@@ -24,19 +24,19 @@ The Map supports the following map types:
 
 Similar to the [Scatter chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}) of the Graph, the Point map type is used to display a correlations between two sets of values. The main difference is that the set of the first values is defined by geographical coordinates which will position every data point onto the Map. The set of he second values is used as a measure and displays a bubble of a variable size depending on the measured value, that is, the differences between the data points are based on the size of the point. The larger the point is, the greater the difference between the two data points becomes. 
 
-![An image of a Map Point Chart](images/Map/MapPointChart.png)
+![An image of a Map Point Chart](../images/Map/MapPointChart.png)
 
 ## Pie 
 
 Similar to the [Pie chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/pie-charts/overview%}) of the Graph, a Pie map type is a chart for displaying grouped data on every data point. As with the Point map type, the data point coordinates are defined by the `GeoLocation` group. The analytical data for creating the Pie chart is obtained through the child groups of the `GeoLocation` group. For more information about the setup, refer to the article on [setting the Map with the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%}). 
 
-![An image of a Map Pie Chart](images/Map/MapPieChart.png)
+![An image of a Map Pie Chart](../images/Map/MapPieChart.png)
 
 ## Column 
 
 Identical to the Pie chart type of the Graph, the Column map type presents analytical data by using the [Column chart type]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}). For an advanced example on creating a Column map type, refer to the article about [creating a Map with a BarChart series with a CSV data source]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-create-a-map-with-barchart-series-using-csv-data-source%}). 
 
-![An image of a Map Column Chart](images/Map/MapColumnChart.png)
+![An image of a Map Column Chart](../images/Map/MapColumnChart.png)
 
 ## Choropleth 
 
@@ -48,7 +48,7 @@ To improve the appearance, the Map item can define a [tile provider]({%slug tele
 
 To create a Choropleth map type, refer to the article about [setting up a Choropleth by using the Map Wizard]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-choropleth-using-the-map-wizard%}). 
 
-![An image of a Choropleth Chart Type](images/Map/Choropleth/Choropleth_ChartType.png) 
+![An image of a Choropleth Chart Type](../images/Map/Choropleth/Choropleth_ChartType.png) 
 
 ## Customizing Map Types 
 

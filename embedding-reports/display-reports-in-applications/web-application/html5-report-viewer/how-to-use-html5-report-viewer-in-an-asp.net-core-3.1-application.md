@@ -25,8 +25,15 @@ The report viewer requires a reference to a running Reports Web Service. The rep
 
 In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}). 
 
+## Adding the HTML5 Report Viewer component using an item template
 
-## Adding the HTML5 Report Viewer
+The HTML5 Report Viewer item template allows you to quickly and easily add the HTML5 Report Viewer to your application.
+
+If you wish to connect the Report Viewer to a REST service, you can follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service](https://docs.telerik.com/reporting/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service) documentation article. 
+
+If you wish to connect the Report Viewer to a Report Server instance, refer to the [Configuring the HTML5 Report Viewer to work with Report Server using Item Templates](https://docs.telerik.com/reporting/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server#configuring-the-html5-report-viewer-to-work-with-report-server-using-item-templates) section in the [How to Use HTML5 Report Viewer with Report Server](https://docs.telerik.com/reporting/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server) documentation article.
+
+## Adding the HTML5 Report Viewer component manually
 
 1. This tutorial uses the __Barcodes Report.trdp__ report definitions file that must be located in a __Reports__ folder inside the project. Follow  [these steps](https://docs.telerik.com/reporting/telerik-reporting-rest-service-aspnetcore-mvc-core3#add-report-definitions) to    make the __Barcodes Report.trdp__ file available in your project. 
 

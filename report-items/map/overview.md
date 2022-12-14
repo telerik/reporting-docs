@@ -28,7 +28,7 @@ The data may be presented in different formats that is determined by the [chosen
 
 ## Next Steps 
 
-* [Getting Started with the Map Report Item]({%slug map_item_get_started%})
+* [Getting Started with the Map Report Item]({%slug telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard%})
 * [(Demo) Sales Dashboard Report with a Map](https://demos.telerik.com/reporting/sales-dashboard)
 * [(Demo) Product Catalog Report with a Document Map](https://demos.telerik.com/reporting/product-catalog)
 * [(Demo) Population Density Report with a Choropleth Map](https://demos.telerik.com/reporting/population-density)
@@ -46,5 +46,3 @@ The data may be presented in different formats that is determined by the [chosen
 * [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
 * [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
 * [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
-
-

@@ -126,7 +126,7 @@ Note that sharing quality feedback and ideas will not only benefit the community
 * [Telerik Reporting Videos](https://www.telerik.com/videos/reporting)
 * [Telerik Blog on Telerik Reporting](https://www.telerik.com/blogs/tag/reporting)
 * [Telerik Reporting Webinars](https://www.telerik.com/webinars/reporting)
-* [Knowledge Base Documentation Hub](/reporting/knowledge-base)
+* [Knowledge Base Documentation Hub](/knowledge-base)
 
 ## Next Steps
 

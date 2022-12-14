@@ -65,169 +65,169 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 	<table>
 		<tr>
 			<th>Command Name</th>
-            <th>Arguments</th>
+			<th>Arguments</th>
 			<th>Description</th>
 		</tr>
 		<tr>
 			<td>NavigateBackward</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Goes back to the previously rendered report from history.
+			<td>
+				Goes back to the previously rendered report from history.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>NavigateForward</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Goes forward to the previously rendered report from history.
+			<td>
+				Goes forward to the previously rendered report from history.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>StopRendering</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Stop the rendering of the current report at the first possible moment.
+			<td>
+				Stop the rendering of the current report at the first possible moment.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>Refresh</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Refreshes the report viewer.
+			<td>
+				Refreshes the report viewer.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>Print</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Triggers the report viewer printing operation.
+			<td>
+				Triggers the report viewer printing operation.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>SendMail</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Triggers the Email sending functionality if implemented.
+			<td>
+				Triggers the Email sending functionality if implemented.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>Search</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Shows or hides the search dialog.
+			<td>
+				Shows or hides the search dialog.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>Export</td>
 			<td>
-                The rendering extension name, e.g. "PDF"
+				The rendering extension name, e.g. "PDF"
 			</td>
-            <td>
-               Exports the report, using the respective rendering extension name.
+			<td>
+				Exports the report, using the respective rendering extension name.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>FirstPage</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Goes to the first page of the report.
+			<td>
+				Goes to the first page of the report.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>LastPage</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-              	Goes to the last page of the report
+			<td>
+				Goes to the last page of the report
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>NextPage</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Goes to the next page of the report.
+			<td>
+				Goes to the next page of the report.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>PreviousPage</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Goes to the previous page of the report.
+			<td>
+				Goes to the previous page of the report.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>ZoomIn</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Zoom-in the report.
+			<td>
+				Zoom-in the report.
 			</td>
 		</tr>
-        <tr>
+			<tr>
 			<td>ZoomOut</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Zoom-out the report.
+			<td>
+				Zoom-out the report.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>TogglePrintPreview</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Toggles between <strong>Print Preview</strong> and <strong>Interactive<strong> view modes - <a href="{%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}" target="_blank">Interactive vs Print Layout</a>
+			<td>
+				Toggles between <strong>Print Preview</strong> and <strong>Interactive<strong> view modes - <a href="{%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}" target="_blank">Interactive vs Print Layout</a>
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>ToggleScaleMode</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-              Changes the scale mode of the report.
+			<td>
+				Changes the scale mode of the report.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>ToggleDocumentMap</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-                Shows or hides the document map.
+			<td>
+					Shows or hides the document map.
 			</td>
 		</tr>
-        <tr>
+		<tr>
 			<td>ToggleParametersArea</td>
 			<td>
-                None
+				None
 			</td>
-            <td>
-               Shows or hides the parameters area.
+			<td>
+				Shows or hides the parameters area.
 			</td>
 		</tr>
 	</table>

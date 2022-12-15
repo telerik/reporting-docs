@@ -218,7 +218,7 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 				None
 			</td>
 			<td>
-					Shows or hides the document map.
+				Shows or hides the document map.
 			</td>
 		</tr>
 		<tr>

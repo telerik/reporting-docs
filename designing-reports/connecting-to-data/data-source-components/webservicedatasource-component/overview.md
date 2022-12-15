@@ -10,10 +10,10 @@ previous_url: /webservicedatasource-component
 ---
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
@@ -25,17 +25,17 @@ The web service may omit properties with empty values in the data response to sa
 
 The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown. 
 
-> In order to preview reports which use the WebServiceDataSource component it is required to reference the __Telerik.Reporting.WebServiceDataSource__ DLL or the corresponding NuGet package in your application. 
+> In order to preview reports which use the WebServiceDataSource component it is required to reference the __Telerik.Reporting.WebServiceDataSource__ DLL or the corresponding NuGet package in your application.
 
 ## Configuring the Component
 
-__Web Service Request Configuration:__ 
+__Web Service Request Configuration:__
 
 | Setting | Description |
 | ------ | ------ |
 |Service URL|The URL the request is sent to. Returns the data from the web service. Required if inline data string or external data file is not set.<br/>__The service URL should not contain any query parameters. Query parameters can be configured in the next wizard page.__ |
 |IgnoreResponseErrors|When set to *true* treats any response errors as if no data is returned from the web service. Default is *false*.|
-|Data Selector|The  [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data returned from the web service. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
+|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data returned from the web service. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 |Authentication|The authentication type. Basic and 2-step (Bearer) authentication are supported. 2-step (Bearer) authentication mode can be used for the OAuth 2.0 authorization framework. Additional information is available in the following sections.|
 |Encoding|Data encoding. Default is UTF-8.|
 |Method|HTTP request method. GET and POST are the supported methods.|
@@ -69,11 +69,11 @@ Below are listed the available settings for Basic authentication. The authentica
 
 Below are listed the available settings for 2-step (Bearer) authentication. The Bearer authentication scheme is defined in [The OAuth 2.0 Authorization Framework: Bearer Token Usage (RFC 6750)](https://tools.ietf.org/html/rfc6750). Bearer tokens can be used to access OAuth 2.0-protected resources. The WebServiceDataSource component supports the following OAuth 2.0 authorization mechanisms out-of-the-box: 
 
-*  [Password Grant](https://www.oauth.com/oauth2-servers/access-tokens/password-grant/) 
+* [Password Grant](https://www.oauth.com/oauth2-servers/access-tokens/password-grant/) 
 
-*  [Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/) 
+* [Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/) 
 
->  [Authorization Code Request](https://www.oauth.com/oauth2-servers/access-tokens/authorization-code-request/) is not supported since it requires user interaction in a browser window, which is not applicable to all Reporting use cases. 
+> [Authorization Code Request](https://www.oauth.com/oauth2-servers/access-tokens/authorization-code-request/) is not supported since it requires user interaction in a browser window, which is not applicable to all Reporting use cases. 
 
 | Setting | Description |
 | ------ | ------ |
@@ -83,7 +83,7 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 |Response|Specifies the type of the expected response from the Login URL. JSON and plain text are supported.|
 |Login Method|Specifies the HTTP request method to be used.|
 |Body|The body of the login HTTP request. Applicable only for POST HTTP request method. Needed for some authentication schemes such as OAuth 2.0 Password Grant.<br/>Example: *grant_type=password&username=user@example.com&password=12345* |
-|Token Path|This is a __regular expression__ that allows to retrieve the authentication or session key from the response received via the Login URL. For example, when the Login URL returns a JSON response containing the authentication token in the form:<br/>*{"access_token":"cbm9W3MeTeVPuO5CIq_DTvG5KbzydpRQ","token_type":"bearer","expires_in":1799,"userName":"demouser",".issued":"Tue, 15 May 2018 08:42:32 GMT",".expires":"Tue, 15 May 2018 09:12:32 GMT"}*<br/>the token path regular expression to retrieve the token would be:<br/>*(?:"access_token":")(.*?)(?:")*<br/> __Leaving this field empty will include the entire login-reponse as token.__ |
+|Token Path|This is a __regular expression__ that allows to retrieve the authentication or session key from the response received via the Login URL. For example, when the Login URL returns a JSON response containing the authentication token in the form:<br/>*{"access_token":"cbm9W3MeTeVPuO5CIq_DTvG5KbzydpRQ","token_type":"bearer","expires_in":1799,"userName":"demouser",".issued":"Tue, 15 May 2018 08:42:32 GMT",".expires":"Tue, 15 May 2018 09:12:32 GMT"}*<br/>the token path regular expression to retrieve the token would be `(?:"access_token":")([^"]*)(?:")*`<br/> __Leaving this field empty will include the entire login-reponse as token.__ |
 |Logout URL|This URL is called if the resource features a lockout for having too many sessions open. Refresh the report and try again after successfully logging out.|
 |Logout Method|Specifies the HTTP request method used for the Logout URL.|
 |Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields with the expression result or static value.|
@@ -96,11 +96,11 @@ It is possible to leverage the 2-Step Authentication mechanism above in order to
 
 ## Supported developer platforms
 
-*.NET Framework 4.0 and above             
+*.NET Framework 4.0 and above
 
-*.NET Core 2.0 and above             
+*.NET Core 2.0 and above
 
-*.NET Standard 2.0 and above             
+*.NET Standard 2.0 and above
 
 ## See Also
 

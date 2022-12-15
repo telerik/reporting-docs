@@ -212,11 +212,27 @@ The [WinForms Report Viewer control]({%slug telerikreporting/using-reports-in-ap
 
 + Report parameters' values (*client parameters*) are obtained from the TypeReportSource.Parameters|UriReportSource.Parameters collection. The *client parameters* can be sent through the viewer's Parameters Area, on creating the WinForms Report Viewer, or by updating the viewer's ReportSource property. 
 
+__Example of setting the ReportSource in code-behind:__ 
+    
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=Winviewer_SetReportSource}}
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=Winviewer_SetReportSource}}
+
 ### __WPF Report Viewer__ 
 
 The [WPF Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) can be connected to a __Telerik Reporting REST Service__ or __Telerik Report Server__ by setting its __ReportEngineConnection property__ - [How To: Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}). For more details check [How To: Use WPF Report Viewer with Report Server (REST Service)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%}). In this scenario the viewer's ReportSource property of type __Telerik.Reporting.ReportSource__ is considered as a __client-side ReportSource__. The client report source can be set in the same way as if the viewer is operating locally (go to section [Set up Report Viewer controls that work with Telerik Reporting Engine](#set-up-report-viewer-controls-that-work-with-telerik-reporting-engine)), where the __selection is limited to TypeReportSource and UriReportSource__ : 
 
-+ The *report description string* is obtained from the TypeReportSource.TypeName|UriReportSource.Uri property, that returns a string. The *report description string* is sent to the [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) which internally resolves it to a __TypeReportSource__ or a __UriReportSource__ on the machine where the service and Telerik Reporting Engine are running. 
++ The *report description string* is obtained from the TypeReportSource.TypeName|UriReportSource.Uri property, that returns a string. The *report description string* is sent to the [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) which internally resolves it to a __TypeReportSource__ or a __UriReportSource__ on the machine where the service and Telerik Reporting Engine are running.
+
+__Example of specifying the ReportSource declaratively__
+
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window1.xaml}}
+
+__Example of setting the ReportSource at runtime using the *Window.Loaded* event handler:__ 
+
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
+{{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml.cs}}
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}}
 
   >If you need an InstanceReportSource or XmlReportSource, you will have to send a custom string as *report description string*, and to resolve manually the *report description string* via custom resolver for the Reporting REST service. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) (available only if using a Telerik Reporting REST service instance). 
 

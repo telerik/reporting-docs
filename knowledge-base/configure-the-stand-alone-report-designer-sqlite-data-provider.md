@@ -36,7 +36,7 @@ Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requ
 
 **Step 1** Download the SQLite installer per your desired version of the `.NET Framework` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) Downloads page. 
 
-**Step 2** Copy the `System.Data.Sqlite.dll` file from the System.Data.Sqlite installation directory  to the Report Designer installation directory.
+**Step 2** Copy the `System.Data.Sqlite.dll` and `SQLite.Interop.dll` assemblies from the System.Data.Sqlite installation directory to the Report Designer installation directory.
 
 - SQLite Installation: ```C:\Program Files\System.Data.SQLite\2015\bin```
 - Telerik Reporting Installation: ```C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer```

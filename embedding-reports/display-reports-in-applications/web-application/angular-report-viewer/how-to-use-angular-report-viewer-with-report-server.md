@@ -54,6 +54,7 @@ npm install @progress/telerik-angular-report-viewer
     >````powershell
 npm login --registry=https://registry.npmjs.org --scope=@progress
 ````
+
 1. Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity) : 
     
     ````js
@@ -61,6 +62,7 @@ import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer'
 ...
 imports: [TelerikReportingModule]
 ````
+
 1. Add the desired report viewer container style using a property of the AppComponent class:
     
     ````js
@@ -112,10 +114,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   encapsulation: ViewEncapsulation.None
 ````
+
 1. Run the application:
     
     ````powershell
 ng serve
 ````
+
 ## See Also
 * [Make sure the service address is correct and enable CORS](https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service)

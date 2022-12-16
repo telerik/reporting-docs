@@ -29,7 +29,7 @@ res_type: kb
 How can I change a report's background image based on a specific value? Can I bind the image to a property?
 
 ## Solution
-To set the background image through a [Binding](https://docs.telerik.com/reporting/expressions-bindings), use the `Style.BackgroundImage.ImageData` property path. 
+To set the background image through a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}), use the `Style.BackgroundImage.ImageData` property path. 
 The following steps describe the recommended approach:
 
 1. Reset the `BackgroundImage` property and remove any configured images.

@@ -27,7 +27,7 @@ In case you need to host it locally, follow the article [How to Host Reports Ser
 
 ## Adding the HTML5 Report Viewer
 
-1. This tutorial uses the __Barcodes Report.trdp__ report definitions file that must be located in a __Reports__ folder inside the project. Follow [these steps](https://docs.telerik.com/reporting/telerik-reporting-rest-service-aspnetcore-mvc-core2#add-report-definitions) to make the __Barcodes Report.trdp__ file available in your project. 
+1. This tutorial uses the __Barcodes Report.trdp__ report definitions file that must be located in a __Reports__ folder inside the project. Follow [these steps]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2%}#add-report-definitions) to make the __Barcodes Report.trdp__ file available in your project. 
 
 1. Make sure that the app configuration inside the __Configure__ method of the __Startup.cs__ can serve static files: 
 

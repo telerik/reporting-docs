@@ -147,7 +147,7 @@ After the report header is all set, let's move on to the footer of the report:
 
 1. To add a barcode item, select __Insert__ > __Barcode__ from the toolbar. 
 
-1. Place the link `{%slug telerikreporting/designing-reports/report-structure/barcode/overview%}` in the __Value__ field of the __Barcode__. If you receive an error stating that the barcode is too large, change the __Encoder__ to `QRCode`.
+1. Place the link `{{ site.url | remove_first: "/reporting" }}{%slug telerikreporting/designing-reports/report-structure/barcode/overview%}` in the __Value__ field of the __Barcode__. If you receive an error stating that the barcode is too large, change the __Encoder__ to `QRCode`.
 
 1. Set the __BackgroundColor__ of the footer to `242, 242, 242`. 
 

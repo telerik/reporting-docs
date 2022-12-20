@@ -43,25 +43,27 @@ Lets assume that we already have a ReportLibrary project in .NET Framework. Here
 
 1. Create a new .NET Core 3.1/5/6 ClassLibrary project. You may delete the default CS file usually named _Class1.cs_. 
 
-2. Add references to the following assemblies/NuGet packages in the project: 
+1. Add references to the following assemblies/NuGet packages in the project:
 
-    * __Telerik.Reporting__ - defines the needed report definition elements
-    * __System.Resources.Extensions__ - needed to resolve the resources from the RESX file
+	* __Telerik.Reporting__ - defines the needed report definition elements
+	* __System.Resources.Extensions__ - needed to resolve the resources from the RESX file
 
-3. Add the corresponding CS report file from the .NET Framework project to the .NET Core project through the _Add_ -> _Existing Item..._ option of the project context menu. 
+1. Add the corresponding CS report file from the .NET Framework project to the .NET Core project through the _Add_ -> _Existing Item..._ option of the project context menu. 
 
 	![Add Existing Item](images/addexistingitem.png) 
 
-	When selecting the CS file make sure to select __Add As Link__ from the _Add Existing Item_ wizard. The corresponding DESIGNER.CS file will be added automatically. 
+	When selecting the CS file make sure to select __Add As Link__ from the _Add Existing Item_ wizard. The corresponding DESIGNER.CS file will be added automatically.
 
-	![Add As Link](images/addaslink.png) 
+	![Add As Link](images/addaslink.png)
 
-4. Add in the same way also the RESX file of the report definition. 
+1. Add in the same way also the RESX file of the report definition.
 
-5. Reference the .NET Core ClassLibrary project in your .NET Core project hosting the Telerik Reporting engine. Pass the [AssemblyQualifiedName](https://docs.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=netcore-3.1) of the report class to the Reporting engine. Use [TypeReportSourceResolver](/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver.html) for resolving your reports in a Telerik Reporting REST Service. 
+1. Reference the .NET Core ClassLibrary project in your .NET Core project hosting the Telerik Reporting engine. Pass the [AssemblyQualifiedName](https://docs.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=netcore-3.1) of the report class to the Reporting engine. Use [TypeReportSourceResolver](/api/Telerik.Reporting.Services.TypeReportSourceResolver) for resolving your reports in a Telerik Reporting REST Service.
 
 A demo solution demonstrating the approach may be found in our GitHub repo - [VS Designer in .NET Core](https://github.com/telerik/reporting-samples/tree/master/VS%20designer%20Core)
 
+> If you add [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) or [NavigatToReport Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) to your CLR reports in Visual Studio Report Designer and select [TypeReportSource](/api/telerik.reporting.typereportsource) suggested by the Wizard, it will include a reference to the corresponding .NET Framework ReportLibrary Report Class. You need to make sure the AssemblyQualifiedName is identical also when resolved from the .NET Core ClassLibrary project, or to correct it manually. Otherwise, you may recieve an exception for `Invalid report type`.
+
 ## See Also
 
-[Make Visual Studio designer work with .NET Core](https://feedback.telerik.com/reporting/1383925-make-visual-studio-designer-work-with-net-core-a-k-a-sdk-style-projects)
+* [Make Visual Studio designer work with .NET Core](https://feedback.telerik.com/reporting/1383925-make-visual-studio-designer-work-with-net-core-a-k-a-sdk-style-projects)

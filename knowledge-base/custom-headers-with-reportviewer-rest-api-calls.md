@@ -34,7 +34,7 @@ The Angular Report Viewer is a wrapper of the HTML5 Report Viewer, which is a jQ
 That's why you cannot add custom headers the Angular way - via the HTTP interceptor. In this article, we suggest two possible solutions.
 
 ### Solution 1
-The Angular Report Viewer comes with out-of-the-box support for an [*authenticationToken* option](https://docs.telerik.com/reporting/angular-report-viewer-api-options). 
+The Angular Report Viewer comes with out-of-the-box support for an [*authenticationToken* option]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}). 
 This option adds an *Authorization* header for every request to the REST service.
 
 ### Solution 2

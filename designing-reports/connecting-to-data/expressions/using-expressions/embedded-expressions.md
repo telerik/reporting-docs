@@ -21,7 +21,7 @@ In the example above the expressions Fields.FirstName and Fields.LastName are em
 
 __Hi Mr. Smith, John!__ 
 
-If used in a string literal, curly brackets - __{ }__ should be escaped with double brackets like this: `{{`  or `}}`.
+If used in a string literal, curly brackets - __{ }__ should be escaped with double brackets like this: `{%raw%}{{{%endraw%}` or `{%raw%}}}{%endraw%}`.
 
 The following properties support embedded expressions:
 

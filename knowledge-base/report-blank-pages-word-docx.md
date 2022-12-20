@@ -22,16 +22,17 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
-Blank pages occur only when the report is rendered in Word and the PageNumber expression is the same on the blank and the previous page.
-In other extensions like PDF blank pages are not observed.
-Telerik Reporting Word rendering pages the report according to the report page settings. However when the report is opened in 
-Word the report is once again paged. This second paging can sometimes result in blank pages.
+
+Blank pages occur only when the report is rendered in Word and the PageNumber expression is the same on the blank and the previous page. In other extensions like PDF blank pages are not observed. 
+
+Telerik Reporting Word rendering pages the report according to the report page settings. However when the report is opened in Word the report is once again paged. This second paging can sometimes result in blank pages.
 
 ## Suggested Workarounds
-In Telerik Reporting R2 2018 SP1 we have made some improvements to the Word rendering to better supports PageSettings.ContinuousPaper and
-we have introduced to the expressions Global Object RenderingFormat.Name. Thus now we can avoid the first paging with the following Binding:
+
+In Telerik Reporting R2 2018 SP1 we have made some improvements to the Word rendering to better supports __PageSettings.ContinuousPaper__ and
+we have introduced to the expressions [Global Object]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) `RenderingFormat.Name`. Thus now we can avoid the first paging with the following [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}):
+
 <table>
 	<tr>
 		<td>Property path</td>
@@ -44,7 +45,9 @@ we have introduced to the expressions Global Object RenderingFormat.Name. Thus n
 </table>
 
 ##Trade-off
-The PageNumber and PageCount expressions will evaluate to 1 on all pages.
+
+The `PageNumber` and `PageCount` expressions will evaluate to 1 on all pages.
 
 ## See Also
-[Function.prototype.bind()](https://docs.telerik.com/reporting/expressions-bindings)
+
+[Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%})

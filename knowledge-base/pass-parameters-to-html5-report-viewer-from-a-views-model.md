@@ -35,8 +35,8 @@ The following article describes a general approach that can be used to both achi
 	````C#
 public class ReportSourceModel
 {
-    public string Report { get; set; }
-    public Dictionary<string, object> Parameters { get; set; }
+	public string Report { get; set; }
+	public Dictionary<string, object> Parameters { get; set; }
 }
 ````
 
@@ -45,99 +45,52 @@ public class ReportSourceModel
 	````C#
 public class HomeController : Controller
 {
-    public IActionResult Index()
-    {
-        var reportSourceModel = new ReportSourceModel()
-        {
-            Report = "Barcodes Report.trdp",
-            Parameters = new Dictionary<string, object>()
-        };
-        reportSourceModel.Parameters.Add("MyParameter1", DateTime.Now);
-        reportSourceModel.Parameters.Add("MyParameter2", 42);
-
-        return View(reportSourceModel);
-    }
+	public IActionResult Index()
+	{
+		var reportSourceModel = new ReportSourceModel()
+		{
+			Report = "Barcodes Report.trdp",
+			Parameters = new Dictionary<string, object>()
+		};
+		reportSourceModel.Parameters.Add("MyParameter1", DateTime.Now);
+		reportSourceModel.Parameters.Add("MyParameter2", 42);
+	
+		return View(reportSourceModel);
+	}
 }
 ````
+
 
 1. Once this is done, it is important that **the value we provide to the Report Viewer widget is serialized to JSON, and any HTML encoding is removed**. We can use the `Json.Serialize()` and the `Html.Raw()` methods respectively to accomplish this.
 
 	````HTML
 @using Demo.Models
-@model ReportSourceModel
+	@model ReportSourceModel
 
-<div id="reportViewer1">
-    loading...
-</div>
+	<div id="reportViewer1">
+		loading...
+	</div>
 
-@{
-    var reportSource = Html.Raw(Json.Serialize(Model));
-}
+	@{
+		var reportSource = Html.Raw(Json.Serialize(Model));
+	}
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
-	$("#reportViewer1")
-		.telerik_ReportViewer({
-			id: "reportviewer1",
-			serviceUrl: "/api/reports/",
-			reportSource: @reportSource
+		$("#reportViewer1")
+			.telerik_ReportViewer({
+				id: "reportviewer1",
+				serviceUrl: "/api/reports/",
+				reportSource: @reportSource
+			});
 		});
-    });
-</script>
-````
-
-	````C#
-@using Demo.Models
-@model ReportSourceModel
-
-<div id="reportViewer1">
-    loading...
-</div>
-
-@{
-    var reportSource = Html.Raw(Json.Serialize(Model));
-}
-
-<script type="text/javascript">
-
-	$("#reportViewer1")
-		.telerik_ReportViewer({
-			id: "reportviewer1",
-			serviceUrl: "/api/reports/",
-			reportSource: @reportSource
-		});
-    });
-</script>
-````
-
-	````JavaScript
-@using Demo.Models
-@model ReportSourceModel
-
-<div id="reportViewer1">
-    loading...
-</div>
-
-@{
-    var reportSource = Html.Raw(Json.Serialize(Model));
-}
-
-<script type="text/javascript">
-
-	$("#reportViewer1")
-		.telerik_ReportViewer({
-			id: "reportviewer1",
-			serviceUrl: "/api/reports/",
-			reportSource: @reportSource
-		});
-    });
-</script>
+	</script>
 ````
 
 ## Demo Project
 
-You can find a sample project that implements the above in the [following GitHub repo]()
+You can find a sample project that implements the above in the [following GitHub repo](https://github.com/telerik/reporting-samples/tree/master/HTML5ViewerParametersDemo).
 
 ## See Also
 
-[How to use Visual Studio Report Designer to edit CS Reports in .Net Core Projects]({%slug how-to-use-vs-designer-in-dotnet-core%})
+* [How to use Visual Studio Report Designer to edit CS Reports in .Net Core Projects]({%slug how-to-use-vs-designer-in-dotnet-core%})

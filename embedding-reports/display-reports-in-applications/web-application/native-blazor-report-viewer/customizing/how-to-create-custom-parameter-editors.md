@@ -12,7 +12,7 @@ position: 3
 
 ## Overview of the Parameter Template Structure
 
-Telerik [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) come in many shapes and forms, for example, a report parameter can be a `String` which can be displayed with a simple `[Textbox](https://demos.telerik.com/blazor-ui/textbox/overview)` editor, it can also be a `DateTime` which can be displayed with a `[DatePicker](https://demos.telerik.com/blazor-ui/datepicker/overview)` editor or it can even have `[AvailableValues]()`requiring a more complex widget such as the `[DropDownList](https://demos.telerik.com/blazor-ui/dropdownlist/overview)`.
+Telerik [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) come in many shapes and forms, for example, a report parameter can be a `String` which can be displayed with a simple [`Textbox`](https://demos.telerik.com/blazor-ui/textbox/overview) editor, it can also be a `DateTime` which can be displayed with a [`DatePicker`](https://demos.telerik.com/blazor-ui/datepicker/overview) widget or it can even have [`AvailableValues`](/reporting/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) requiring a more complex widget such as the [`DropDownList`](https://demos.telerik.com/blazor-ui/dropdownlist/overview).
 
 Considering the variety of types of report parameters, we have created a `ParameterTemplate` for each type, allowing for easy singular customization:
 
@@ -104,7 +104,7 @@ The following examples use the default editors that we ship the report viewer wi
 
 ## How to use a custom parameter editor - Blazor UI ListView 
 
-Let's try to use a widget that the Native Blazor Report Viewer is not able to use out of the box. For this example, we will use the Telerik Blazor UI's `[ListView](https://demos.telerik.com/blazor-ui/listview/overview)` widget. The code is as follows:
+Let's try to use a widget that the Native Blazor Report Viewer is not able to use out of the box. For this example, we will use the Telerik Blazor UI's [`ListView`](https://demos.telerik.com/blazor-ui/listview/overview) widget. The code is as follows:
 
 ````CSHTML
 <ReportViewer
@@ -162,7 +162,7 @@ Let's try to use a widget that the Native Blazor Report Viewer is not able to us
 }
 ````
 
-In this example, we set the `ListView` widget to be used for both the `ParameterSingleSelectTemplate` and `ParameterMultiSelectTemplate` templates which means that all report parameters with available values will be rendered using the `ListView` widget regardless of the type of the report parameter(string, DateTime, etc.)
+In this example, we set the `ListView` widget to be used for both the `ParameterSingleSelectTemplate` and `ParameterMultiSelectTemplate` templates which means that all report parameters with available values will be rendered using the `ListView` widget, regardless of the type of the report parameter(string, DateTime, etc.)
 
 ## See Also
 

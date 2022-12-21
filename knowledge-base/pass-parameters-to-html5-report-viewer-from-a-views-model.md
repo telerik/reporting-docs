@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-When working with the HTML Report Viewer jQuery widget, passing parameters to it from the model of the view can be a bit tricky sometimes.
+When working with the HTML Report Viewer jQuery widget, passing parameters to it from the model of the view can be a bit tricky sometimes. This is due to the serialization and encoding of the model properties. 
 The following article describes a general approach that can be used to both achieve the above, and reduce the amount of JSON one needs to type to initialize the viewer.
 
 ## Solution

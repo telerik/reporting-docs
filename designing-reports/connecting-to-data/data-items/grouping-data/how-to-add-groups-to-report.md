@@ -103,17 +103,16 @@ Report groups are defined by adding __Group__ objects to the report’s __Groups
               
 1. Right click on the group and select __Delete Group__.
               
-1. When prompted to delete it, __Select Yes__. 
-              
+1. When prompted to delete it, __Select Yes__.              
 
 ## Adding a group to a Report programatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=AddNewGroupSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=AddNewGroupSnippet}}
 
+
 ## See Also
 
- * [Report](/reporting/api/Telerik.Reporting.Report) 
-
- * [Groups](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_Groups) 
+* [Report](/api/Telerik.Reporting.Report)
+* [Groups](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_Groups)
 

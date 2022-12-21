@@ -11,11 +11,11 @@ previous_url: /manual-setup-of-html5-report-viewer-in-asp-net-core-3
 
 # How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 application
 
-This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core 3.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1) web application. 
+This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core 3.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1) web application.
 
 ## Prerequisites
 
-The report viewer requires a reference to a running Reports Web Service. The report viewer can consume reports generated and served by any of the following Reports Web Service implementations: 
+The report viewer requires a reference to a running Reports Web Service. The report viewer can consume reports generated and served by any of the following Reports Web Service implementations:
 
 * A service that runs in another application.
 
@@ -23,7 +23,7 @@ The report viewer requires a reference to a running Reports Web Service. The rep
 
 * A service that is hosted locally in the same application.
 
-In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}). 
+In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}).
 
 ## Adding the HTML5 Report Viewer component using an item template
 

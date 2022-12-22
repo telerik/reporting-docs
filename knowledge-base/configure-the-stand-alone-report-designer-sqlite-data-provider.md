@@ -66,13 +66,13 @@ The Telerik Reporting directory will look like the following:
 
 **Step 1** Download the SQLite Binaries built for `.NET Standard 2.0` or `.NET Standard 2.1` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) Downloads page.
 
-**Step 2** Unpackage the zip with the binaries and copy the `System.Data.Sqlite.dll` file to the Report Designer installation directory.
+**Step 2** Unpackage the zip with the binaries and copy the `System.Data.Sqlite.dll` file to the .NET Report Designer installation directory.
 
-**Step 3** Download SQLite binaries built for `.NET Framework.4.X` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) page, for example [sqlite-netFx40-binary-x64-2010-1.0.117.0.zip](https://system.data.sqlite.org/downloads/1.0.117.0/sqlite-netFx40-binary-x64-2010-1.0.117.0.zip). Then unpackage the archive and copy the `SQLite.Interop.dll` assembly to the Report Designer installation directory.
+**Step 3** Download SQLite binaries built for `.NET Framework.4.X` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) page, for example [sqlite-netFx40-binary-x64-2010-1.0.117.0.zip](https://system.data.sqlite.org/downloads/1.0.117.0/sqlite-netFx40-binary-x64-2010-1.0.117.0.zip). Then unpackage the archive and copy the `SQLite.Interop.dll` assembly to the . NET Report Designer installation directory.
 
-![sqlite install folder](resources/sqlite_install.png)
+![sqlite net designer install folder](resources/sqlite_net_designer_install.png)
 
-The .NET 6 Standalone Report Designer will automatically locate and load the SQLite assemblies, thus the data provider will appear in the SqlDataSource wizard dropdown. There is no need to edit the configuration of the .NET Designer - [Differences between the .NET and .NET Framework designers' functionality]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#differences-between-the-net-and-net-framework-designers-functionality)
+The .NET 6 Standalone Report Designer will automatically locate and load the SQLite assemblies, thus the data provider will appear in the SqlDataSource wizard dropdown. There is no need to edit the configuration of the .NET Report Designer - [Differences between the .NET and .NET Framework designers' functionality]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#differences-between-the-net-and-net-framework-designers-functionality)
 
 ## See Also
 

@@ -68,6 +68,8 @@ In the .NET Framwework version, it can hold binding redirect to the latest versi
 
 For more information, see [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx). 
 
+> The configuration files of all Standalone Report Designer versions use `UTF-8` encoding. Make sure that your text editor of choice does not override the default encoding when you modify these files, as this can prevent the designers from loading.
+
 ## Default Configuration for the `.NET Framework` Standalone Report Designer
 
 The following code example shows the default `Telerik.ReportDesigner.exe.config` file that is distributed with the Report Designer for .NET Framework.

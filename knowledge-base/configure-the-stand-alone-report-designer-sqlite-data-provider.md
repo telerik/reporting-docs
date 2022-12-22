@@ -25,7 +25,6 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
 Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requires a few steps. If one is missed, the DataSource provider will not work in the Report Designer. Follow the below steps as to get this working.
@@ -34,12 +33,12 @@ Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requ
 
 ### Solution for the old Standalone Report Designer
 
-**Step 1** Download the SQLite installer per your desired version of the `.NET Framework` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) Downloads page. 
+**Step 1** Download the SQLite installer per your desired version of the `.NET Framework` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) Downloads page.
 
 **Step 2** Copy the `System.Data.Sqlite.dll` and `SQLite.Interop.dll` assemblies from the System.Data.Sqlite installation directory to the Report Designer installation directory.
 
-- SQLite Installation: ```C:\Program Files\System.Data.SQLite\2015\bin```
-- Telerik Reporting Installation: ```C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer```
+- SQLite Installation: `C:\Program Files\System.Data.SQLite\2015\bin`
+- Telerik Reporting Installation: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`
 
 The Telerik Reporting directory will look like the following:
 
@@ -49,7 +48,7 @@ The Telerik Reporting directory will look like the following:
 
 >note When updating the configruation file, use the version that matches the installed SQLite ADO.NET Provider, i.e., `64-bit (x64)` or `32-bit (x86)`.
 
-``` xml
+````XML
 <system.data>
 		<DbProviderFactories>
 				<remove invariant="System.Data.SQLite" />
@@ -57,12 +56,13 @@ The Telerik Reporting directory will look like the following:
 							type="System.Data.SQLite.SQLiteFactory, System.Data.SQLite, Version=1.0.117.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139" />
 		</DbProviderFactories>
 </system.data>
-```
+````
+
 **Step 4** Install the [SQLite/SQLServer Compact Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox) extension in visual studio. This will give you a similar experience to using Access.
 
 ### Solution for the new .NET Standalone Report Designer
 
->note The .NET Standalone Report Designer was released with the 16.2.22.914 version(R3 2022 release).
+>note The .NET Standalone Report Designer was released with the 16.2.22.914 version (R3 2022 release).
 
 **Step 1** Download the SQLite Binaries built for `.NET Standard 2.0` or `.NET Standard 2.1` from the [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) Downloads page.
 
@@ -72,9 +72,10 @@ The Telerik Reporting directory will look like the following:
 
 ![sqlite install folder](resources/sqlite_install.png)
 
-The .NET 6 Standalone Report Designer will automatically locate and load the SQLite assemblies, thus the data provider will appear in the SqlDataSource wizard dropdown. There is __no__ need to edit the configuration of the .NET Designer - [Differences between the .NET and .NET Framework designers' functionality]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#differences-between-the-net-and-net-framework-designers-functionality) 
+The .NET 6 Standalone Report Designer will automatically locate and load the SQLite assemblies, thus the data provider will appear in the SqlDataSource wizard dropdown. There is no need to edit the configuration of the .NET Designer - [Differences between the .NET and .NET Framework designers' functionality]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#differences-between-the-net-and-net-framework-designers-functionality)
 
 ## See Also
-*   [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki)
-*   [SQLite/SQLServer Compact Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox)
-*   [How-To use SQLite with Telerik Reporting Standalone Report Designer](https://telerikhelper.net/2016/12/29/how-to-use-sqlite-with-telerik-reporting-standalone-report-designer/)
+
+* [System.Data.Sqlite](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki)
+* [SQLite/SQLServer Compact Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox)
+* [How-To use SQLite with Telerik Reporting Standalone Report Designer](https://telerikhelper.net/2016/12/29/how-to-use-sqlite-with-telerik-reporting-standalone-report-designer/)

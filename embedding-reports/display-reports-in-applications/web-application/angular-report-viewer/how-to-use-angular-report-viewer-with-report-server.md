@@ -11,115 +11,123 @@ previous_url: /angular-report-viewer-with-report-server
 
 # How to Use Angular Report Viewer with Report Server
 
-This tutorial demonstrates how to add the Angular Report Viewer component to a new Angular application and display a report coming from the Telerik Report Server. 
+This tutorial demonstrates how to add the Angular Report Viewer component to a new Angular application and display a report coming from the Telerik Report Server.
 
 ## Prerequisites
 
-The following list describes the prerequisites for this tutorial: 
+The following list describes the prerequisites for this tutorial:
 
-* Review the Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements). 
+* Review the Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements).
 
-* [Angular CLI](https://cli.angular.io/). 
+* [Angular CLI](https://cli.angular.io/).
 
-* A running intance of the [Telerik Report Server](https://docs.telerik.com/report-server/introduction). 
+* A running intance of the [Telerik Report Server](https://docs.telerik.com/report-server/introduction).
 
 ## Using Angular Report Viewer in Angular application
 
-> All paths and url links in the described steps must be adapted according to your project setup.           
+> All paths and url links in the described steps must be adapted according to your project setup.
 
 ###Steps:
 
-1. Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.                 
+1. Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.
 
-1. Install  [jQuery](https://www.npmjs.com/package/jquery) by using the following command: 
-    
-    ````powershell
+1. Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:
+
+	````powershell
 npm install jquery
 ````
 
+
 1. Add a reference to jQuery in the scripts array of the.angular-cli.json (as of Angular 6 the file is renamed to angular.json):
-    
-    ````js
+
+	````TypeScript
 "scripts": ["../node_modules/jquery/dist/jquery.js"]
 ````
 
-1. Install the Telerik Angular Report Viewer NPM package by running: 
-    
-    ````powershell
+
+1. Install the Telerik Angular Report Viewer NPM package by running:
+
+	````powershell
 npm install @progress/telerik-angular-report-viewer
 ````
 
-    >If you receive a *403 Forbidden Error*, you need to register and login at [npmjs.com](https://www.npmjs.com/) before performing this step. 
+	>If you receive a *403 Forbidden Error*, you need to register and login at [npmjs.com](https://www.npmjs.com/) before performing this step.
 	>
-    >````powershell
+	>````powershell
 npm login --registry=https://registry.npmjs.org --scope=@progress
 ````
 
-1. Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity) : 
-    
-    ````js
+
+1. Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity) :
+
+	````TypeScript
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
-...
-imports: [TelerikReportingModule]
+	...
+	imports: [TelerikReportingModule]
 ````
+
 
 1. Add the desired report viewer container style using a property of the AppComponent class:
-    
-    ````js
+
+	````TypeScript
 export class AppComponent {
-  viewerContainerStyle = {
-    position: 'relative',
-    width: '1000px',
-    height: '800px',
-    ['font-family']: 'ms sans serif'
-  };
-}
+		viewerContainerStyle = {
+			position: 'relative',
+			width: '1000px',
+			height: '800px',
+			['font-family']: 'ms sans serif'
+		};
+	}
 ````
+
 
 1. Use the report viewer selector in the AppComponent template:
-    
-    ````HTML
+
+	````HTML
 <tr-viewer
-    [containerStyle]="viewerContainerStyle"
-    [reportServer]="{
-        url: 'http://localhost:83/',
-        username: 'myusername',
-        password: 'mypass'
-    }"
-    [reportSource]="{
-        report: 'Samples/Dashboard.trdp',
-        parameters: {}
-    }" 
-    [viewMode]="'INTERACTIVE'"
-    [scaleMode]="'SPECIFIC'"
-    [scale]="1.0">
-</tr-viewer>
+		[containerStyle]="viewerContainerStyle"
+		[reportServer]="{
+			url: 'http://localhost:83/',
+			username: 'myusername',
+			password: 'mypass'
+		}"
+		[reportSource]="{
+			report: 'Samples/Dashboard.trdp',
+			parameters: {}
+		}" 
+		[viewMode]="'INTERACTIVE'"
+		[scaleMode]="'SPECIFIC'"
+		[scale]="1.0">
+	</tr-viewer>
 ````
 
-    For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).                 
+	For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
 
-1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)  or  [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)): Add references to the Less-based CSS files in the ```<head>``` element of index.html:
-    
-    ````html
+1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)): Add references to the Less-based CSS files in the `<head>` element of index.html:
+
+	````HTML
 <!-- The required Less-based styles -->
-<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
-<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
-    >To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)). 
-    If you use the __styleUrls__ attribute to reference the CSS, it is required to set the view encapsulation to __None__ : 
-    
-    ````js
+	>To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)). 
+	If you use the __styleUrls__ attribute to reference the CSS, it is required to set the view encapsulation to __None__ :
+
+	````TypeScript
 import { Component, ViewEncapsulation } from '@angular/core';
-@Component({
-  encapsulation: ViewEncapsulation.None
+	@Component({
+		encapsulation: ViewEncapsulation.None
 ````
+
 
 1. Run the application:
-    
-    ````powershell
+
+	````powershell
 ng serve
 ````
 
+
 ## See Also
-* [Make sure the service address is correct and enable CORS](https://docs.telerik.com/reporting/knowledge-base/cannot-access-the-reporting-rest-service)
+
+* [Make sure the service address is correct and enable CORS]({%slug cannot-access-the-reporting-rest-service%})

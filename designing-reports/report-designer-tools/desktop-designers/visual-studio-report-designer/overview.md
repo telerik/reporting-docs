@@ -77,6 +77,7 @@ The Telerik Report Designer has the following elements:
 
 The Visual Studio Report Designer features also *Properties Explorer*, [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}), [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) and [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}). The first one is displayed by default in the Visual Studio. The other three can be opened from the Telerik Menu. 
 
+> If you are using **Visual Studio 2022**, make sure that the `Platform target` of your `Report Library` project is not set to `x86`, or you will not be able to preview your reports. This is due to the fact that **Visual Studio 2022** is a 64-bit application and, by design, `.NET` does not allow mixing 32-bit and 64-bit assemblies in the same process.
 
 ## See Also
 

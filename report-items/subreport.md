@@ -3,7 +3,7 @@ title: SubReport
 page_title: SubReport Report Item Overview
 description: "Learn more about the Telerik Reporting SubReport report item, how to define its parameters and set its report source."
 slug: telerikreporting/designing-reports/report-structure/subreport
-previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subreport, /report-items-sub-report
+previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subreport, /report-items-sub-report, /report-sources-subreport
 tags: telerik, reporting, report, items, subreport
 published: True
 position: 12

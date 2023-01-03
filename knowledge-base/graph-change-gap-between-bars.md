@@ -3,7 +3,7 @@ title: Change the Gap between the Bars in the Graph
 page_title: Change the Gap between the Bars in the Graph Report Item
 description: "Learn how to change the gap between the bars in the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-gap-between-the-bars
-previous_url: /report-items/graph/how-to/how-to-change-the-gap-between-the-bars
+previous_url: /report-items/graph/how-to/how-to-change-the-gap-between-the-bars, /graphhowtochangethegapbetweenthebars
 tags: telerik, reporting, graph, report, item, change, the, gap, between, bars
 type: how-to
 res_type: kb

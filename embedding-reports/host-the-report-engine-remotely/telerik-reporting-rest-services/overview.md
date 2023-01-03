@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-conception
+previous_url: /telerik-reporting-rest-conception, /using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview
 ---
 
 # Telerik Reporting REST Services Overview

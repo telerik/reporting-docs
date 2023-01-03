@@ -16,17 +16,17 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
-  <tr>
+	<tr>
 		<td>Report Designer</td>
 		<td>Visual Studio Report Designer</td>
 	</tr>
 </table>
 
-
 ## Description
-Reports that contain [subreport item](../report-items-sub-report) are failing to open in Visual Studio Report Designer.
+Reports that contain [subreport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}) are failing to open in Visual Studio Report Designer.
 
 ## Steps to Reproduce
+
 1. Create new report in Visual Studio through the item template
 2. Add a SubReport item
 3. Set ReportSource property of the sub report using the *Object Instance* option
@@ -35,12 +35,12 @@ Reports that contain [subreport item](../report-items-sub-report) are failing to
 6. The below error message is thrown
 
 ## Error Message
-```
-Error 'HRESULT E_FAIL has been returned from a call to a COM component'
-```
+
+`Error 'HRESULT E_FAIL has been returned from a call to a COM component'`
 
 Stack Trace:
-```
+
+````
 Instances of this error (1)
  
 at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
@@ -57,13 +57,16 @@ at System.ComponentModel.Design.Serialization.TypeCodeDomSerializer.Deserialize(
 at System.ComponentModel.Design.Serialization.CodeDomDesignerLoader.PerformLoad(IDesignerSerializationManager manager)
 at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.PerformLoad(IDesignerSerializationManager serializationManager)
 at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.DeferredLoadHandler.Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents.OnLoadCompleted(Int32 fReload)
-```
+````
 
 ## Cause\Possible Cause(s)
+
 Using **"Object instance"** when choosing a source for sub report, is a legacy approach. It would create an instance of each sub report in the main report's list of elements *(which is not best practice for multiple subreports approach)*.
 
 ## Solution
+
 Our recommendation is to use the **"Type name"** option for .NET type report definitions (.CS or .VB files).
 
 ## See Also
-  [How to: Set ReportSource for SubReport](../report-sources-subreport#how-to-set-reportsource-for-subreport)
+
+* [Set ReportSource for SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}#setting-the-report-source)

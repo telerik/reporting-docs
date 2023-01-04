@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/picturebox
 tags: telerik, reporting, report, items, picturebox, set, value, bind, binary, images, svg, base64, uri, string, literals, clip, render, position
 published: True
 position: 9
-previous_url: /report-items-picture-box
+previous_url: /report-items-picture-box, /designing-reports/report-structure/picturebox
 ---
 <style>
 table th:first-of-type {

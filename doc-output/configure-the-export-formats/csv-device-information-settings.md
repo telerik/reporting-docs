@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: csv,device,information,settings
 published: True
 position: 6
-previous_url: /device-information-settings-csv
+previous_url: /device-information-settings-csv, /using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings
 ---
 <style>
 table th:first-of-type {

@@ -26,7 +26,7 @@ In some scenarios, it may be necessary to pass custom object values directly to 
 [Global Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) as Report Parameters.
 
 ## Solution
-The [UserIdentity](/api/telerik.reporting.processing.useridentity.html) object has a property __Context__ that by default is _Null_. 
+The [UserIdentity](/api/telerik.reporting.processing.useridentity) object has a property __Context__ that by default is _Null_. 
 It is of type _System.Collections.Concurrent.ConcurrentDictionary<string, object>_. You may read more about how to pass a value to 
 this property in the 
 [How to use information from HttpContext in Custom Report Resolver]({% slug how-to-pass-information-from-httpcontext-to-reporting-engine %}) 

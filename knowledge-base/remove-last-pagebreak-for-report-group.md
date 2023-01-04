@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 In many reporting scenarios, you would like to have page breaks between report groups. You may easily achieve this, for example, by setting the 
-[PageBreak](/api/telerik.reporting.reportsection.html#collapsible-Telerik_Reporting_ReportSection_PageBreak) property of the Group Footer section to 'After'. However, the page break will occur also after 
+[PageBreak](/api/telerik.reporting.reportsection#collapsible-Telerik_Reporting_ReportSection_PageBreak) property of the Group Footer section to 'After'. However, the page break will occur also after 
 the last Group Footer. Here we explain how to avoid the last page break.
 
 ## Suggested Workarounds

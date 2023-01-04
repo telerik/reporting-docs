@@ -36,7 +36,7 @@ Expression: =ReportItem.DataObject
 
  When the subreport is loaded by a SubReport item in the main report, the sub report will get the data associated with the SubReport item.
 
-- You can change the scope to a greater parent by using the [Parent keyword](/api/telerik.reporting.reportitembase.html#collapsible-Telerik_Reporting_ReportItemBase_Parent). For example:
+- You can change the scope to a greater parent by using the [Parent keyword](/api/telerik.reporting.reportitembase#collapsible-Telerik_Reporting_ReportItemBase_Parent). For example:
 
 ````
 Property path: DataSource

@@ -59,7 +59,7 @@ Usually, this is related to not having Telerik Reporting rendering format specif
   
   The assembly references must be added in the project that handles reports:
 
-- If the project uses [ReportProcessor](/api/telerik.reporting.processing.reportprocessor.html) instance, assembly references must be added in that project's configuration file;
+- If the project uses [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) instance, assembly references must be added in that project's configuration file;
 
 - If the project uses a viewer that operates via [Telerik Reporting Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview%}), the assembly references must be added in the service project's configuration file;
 

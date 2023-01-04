@@ -35,7 +35,7 @@ A sample image is shown below:
 5. Set the new area series' Y property to 0 and Y0 property to 50. This will allow the area to span between 0 and 50 mark of the Y axis.
 6. Add two more area series using the same approach and set their Y and Y0 properties respectively to 50, 75 and 75, 100.
 7. Open the series editor and move the column series at the last position in the list, so it will be drawn on top of the area series.
-8. Assign the desired colors to the graph series using the graph's [ColorPalette](/api/telerik.reporting.graph.html#collapsible-Telerik_Reporting_Graph_ColorPalette) property.
+8. Assign the desired colors to the graph series using the graph's [ColorPalette](/api/telerik.reporting.graph#collapsible-Telerik_Reporting_Graph_ColorPalette) property.
 
 ## See Also
 

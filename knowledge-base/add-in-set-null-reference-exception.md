@@ -68,7 +68,7 @@ public void AddInSet(string key, string value)
 
 The `System.Diagnostics.Trace.WriteLine(error)` code line means that if a trace listener is attached, the error message above will be present in the trace listener log.
 
-The error message might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([`FileStorage`](/api/Telerik.Reporting.Cache.File.FileStorage.html) is not suitable for such environment.
+The error message might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([`FileStorage`](/api/Telerik.Reporting.Cache.File.FileStorage) is not suitable for such environment.
 
 Depending on the environment specifications, you can approach the issue in the following ways:
 

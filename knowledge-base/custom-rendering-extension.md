@@ -42,7 +42,7 @@ In the configuration file of the application, it is necessary to register the Cu
 ```
 
 Here is sample code of the _NameSpace.CustomRenderingExtension_ type implementing the 
-[IRenderingExtension](/api/telerik.reporting.processing.irenderingextension.html) interface, adapted from the example in the above 
+[IRenderingExtension](/api/telerik.reporting.processing.irenderingextension) interface, adapted from the example in the above 
 forum thread. The _XmlReportWriter_ is the class that renders the report items in the custom XML format. Its implementation 
 can be found in the sample from the forum thread.
 ```C#

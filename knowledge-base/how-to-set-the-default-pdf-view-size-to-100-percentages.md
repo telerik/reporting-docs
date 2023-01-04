@@ -50,7 +50,7 @@ The default PDF viewer zoom level could be changed in three ways:
 		</extensions>
 	</Telerik.Reporting>
 	```
-3. With the using of the [ReportProcessor.RenderReport Method](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) to render the report in the specified format
+3. With the using of the [ReportProcessor.RenderReport Method](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) to render the report in the specified format
 
 	There is a parameter called **deviceInfo** that contains parameters to pass to the rendering extension. Based on the [Export Report Programmatically: Exporting a report to a single document format]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}#exporting-a-report-to-a-single-document-format) example, is created the following code snippet for this case:
 	```CSharp

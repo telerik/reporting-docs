@@ -25,7 +25,7 @@ Handling errors occurring in a Custom Resolver used by a Reporting REST Service.
 
 ## Solution
 
-In general, a **.CS** Type Report has an [Error event](/api/telerik.reporting.report.html#collapsible-Telerik_Reporting_Report_Error) which fires due to problems with the report processing. Such errors can be handled in the report's Error event or/and in the HTML5 Viewer's [error event]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#examples).  
+In general, a **.CS** Type Report has an [Error event](/api/telerik.reporting.report#collapsible-Telerik_Reporting_Report_Error) which fires due to problems with the report processing. Such errors can be handled in the report's Error event or/and in the HTML5 Viewer's [error event]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#examples).  
 
  For example:  
 
@@ -93,7 +93,7 @@ $(document).ready(function () {
 ```
 
   
- If you use a [custom resolver for your Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}#custom-report-source-resolver-implementations), the report processing will not be started. Such errors can be caught and handled in the first request sent by the HTML5 Viewer to the Reporting REST service e.g. [ReportsControllerBase.GetParameters method](/api/telerik.reporting.services.webapi.reportscontrollerbase.html#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_GetParameters_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) - the request for information about the report's parameter.
+ If you use a [custom resolver for your Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}#custom-report-source-resolver-implementations), the report processing will not be started. Such errors can be caught and handled in the first request sent by the HTML5 Viewer to the Reporting REST service e.g. [ReportsControllerBase.GetParameters method](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_GetParameters_System_String_Telerik_Reporting_Services_WebApi_ClientReportSource_) - the request for information about the report's parameter.
 
  For example:  
 

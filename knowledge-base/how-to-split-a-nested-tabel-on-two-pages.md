@@ -33,7 +33,7 @@ However, a common requirement when using *nested* tables in the report is to for
   
 ## Solution
   
-To force a nested table to break between pages, set [**KeepTogether**](/api/telerik.reporting.processing.table.html#collapsible-Telerik_Reporting_Processing_Table_KeepTogether) property to *false* for the parent table and the **parent table's row** that is containing the nested table.  
+To force a nested table to break between pages, set [**KeepTogether**](/api/telerik.reporting.processing.table#collapsible-Telerik_Reporting_Processing_Table_KeepTogether) property to *false* for the parent table and the **parent table's row** that is containing the nested table.  
   
 ## Notes
 

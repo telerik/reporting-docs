@@ -26,7 +26,7 @@ The [HTML5 Viewer]({% slug telerikreporting/using-reports-in-applications/displa
  The available MVC and WebForms wrappers of the HTML5 Viewer let you specify which report to be displayed though the viewer's *ReportSource.Report*and *ReportSource.Parameters,* in code in a declarative manner.   
 
 - When you use a client-side **TypeReportSource** (Report = *TypeReportSource.TypeName* and Parameters = *TypeReportSource.Parameters*). The type name is an [assembly qualified name](https://docs.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname) of a report class.
-- When you use a client-side **UriReportSource** (Report = *UriReportSource.Uri* and Parameters=*UriReportSource.Parameters*). The URI is a relative path to a file on the server where the Reporting REST service is hosted. The relative  path is mapped to the folder specified by the service's [ReportFileResolver](/api/telerik.reporting.services.servicestack.reportfileresolver.html#constructors).
+- When you use a client-side **UriReportSource** (Report = *UriReportSource.Uri* and Parameters=*UriReportSource.Parameters*). The URI is a relative path to a file on the server where the Reporting REST service is hosted. The relative  path is mapped to the folder specified by the service's [ReportFileResolver](/api/telerik.reporting.services.servicestack.reportfileresolver#constructors).
 
  The HTML5 Javascript widget lets you specify directly the *reportSource.report* as string, and the *reportSource.parameters* as key-value pairs.
  
@@ -35,7 +35,7 @@ The [HTML5 Viewer]({% slug telerikreporting/using-reports-in-applications/displa
   
 ## Solution
 
-The following is an example of how to update a **TRDP** report's **DataSource** with a new **JsonDataSource**. The example code could used in a custom ReportSourceResolver's [Resolve method](/api/telerik.reporting.services.ireportsourceresolver.html#collapsible-Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary_System_String_System_Object__). This method is called whenever the engine needs to create a **ReportSource** instance based on the parameter named *report*.
+The following is an example of how to update a **TRDP** report's **DataSource** with a new **JsonDataSource**. The example code could used in a custom ReportSourceResolver's [Resolve method](/api/telerik.reporting.services.ireportsourceresolver#collapsible-Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary_System_String_System_Object__). This method is called whenever the engine needs to create a **ReportSource** instance based on the parameter named *report*.
 
 ```C#
 
@@ -66,7 +66,7 @@ The following is an example of how to update a **TRDP** report's **DataSource** 
  
 **Each HTML5 Viewer provides means to let you send a custom string and parameters collection, in case of using a [custom resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) for the reporting rest service. Such resolver is required if you need to create/customize a report before displaying it.**  
 
-**After creating/modifying the report on the server, you can return an [InstanceReportSource](/api/telerik.reporting.instancereportsource.html) instance from the resolver's [Resolve method](/api/telerik.reporting.services.ireportsourceresolver.html#collapsible-Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary_System_String_System_Object__).**  
+**After creating/modifying the report on the server, you can return an [InstanceReportSource](/api/telerik.reporting.instancereportsource) instance from the resolver's [Resolve method](/api/telerik.reporting.services.ireportsourceresolver#collapsible-Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary_System_String_System_Object__).**  
   
 ## See Also  
 

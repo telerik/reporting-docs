@@ -100,4 +100,4 @@ Reports have a general purpose and can be reused in different types of projects.
 
 ## See Also
 
-[ReportSource Class](/api/telerik.reporting.reportsource.html)
+[ReportSource Class](/api/telerik.reporting.reportsource)

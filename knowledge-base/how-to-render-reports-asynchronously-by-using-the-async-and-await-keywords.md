@@ -25,7 +25,7 @@ With the new .NET Framework (4.5), a new way to handle parallel programming has 
  
 ## Solution  
 
-First, we will have to start with the [*ReportProcessor*](/api/telerik.reporting.processing.reportprocessor.html) class and its [**RenderReport**](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method, which provides all the needed functionality for programmatic generation of reports. Since RenderReport returns [RenderingResult](/api/telerik.reporting.processing.renderingresult.html), in order to use it asynchronously, you will have to create a method that returns this result. However, since we want to achieve the task in an *async* manner, we will take advantage of the *Task* class:   
+First, we will have to start with the [*ReportProcessor*](/api/telerik.reporting.processing.reportprocessor) class and its [**RenderReport**](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method, which provides all the needed functionality for programmatic generation of reports. Since RenderReport returns [RenderingResult](/api/telerik.reporting.processing.renderingresult), in order to use it asynchronously, you will have to create a method that returns this result. However, since we want to achieve the task in an *async* manner, we will take advantage of the *Task* class:   
    
 ````C#
 public class AsyncWrappers

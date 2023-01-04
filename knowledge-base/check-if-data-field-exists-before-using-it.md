@@ -41,7 +41,7 @@ public static object IfFieldDoesNotExist(Telerik.Reporting.Processing.IDataObjec
     return defaultValue;
 }
 ```
-The function receives as arguments the [data object](/api/telerik.reporting.processing.processingelement.html#collapsible-Telerik_Reporting_Processing_ProcessingElement_DataObject) in the current 
+The function receives as arguments the [data object](/api/telerik.reporting.processing.processingelement#collapsible-Telerik_Reporting_Processing_ProcessingElement_DataObject) in the current 
 [data scope](,,/expressions-scope), the name of the field that is checked, and the default value that will be used when the field 
 does not exist in the data source.  
 The function can be used in the Report like:

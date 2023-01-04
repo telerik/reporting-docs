@@ -30,7 +30,7 @@ You may set the ColorPalette with [Bindings]({%slug telerikreporting/designing-r
 Property Path	|	Expression
 ColorPalette	|	= MyUserFunctionName(MyColor1, MyColor2, ...)
 ```
-The above [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) should return an object of type [Telerik.Reporting.Drawing.IColorPalette](/api/telerik.reporting.drawing.icolorpalette.html). A sample implementation in C# may look like:
+The above [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) should return an object of type [Telerik.Reporting.Drawing.IColorPalette](/api/telerik.reporting.drawing.icolorpalette). A sample implementation in C# may look like:
 ```CSharp
 public static IColorPalette UserColorPalette(params string[] hexColors)
 {

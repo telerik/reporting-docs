@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
   
- Using the [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}), you can set the amount of blank space between two adjacent data slots with [SpacingSlotCount](/api/telerik.reporting.scale.html#collapsible-Telerik_Reporting_Scale_SpacingSlotCount) property of the [Scale](/api/telerik.reporting.scale.html) class. However, in some scenarios there is a need to set the space **between** different series in a data slot.  
+ Using the [Graph item]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}), you can set the amount of blank space between two adjacent data slots with [SpacingSlotCount](/api/telerik.reporting.scale#collapsible-Telerik_Reporting_Scale_SpacingSlotCount) property of the [Scale](/api/telerik.reporting.scale) class. However, in some scenarios there is a need to set the space **between** different series in a data slot.  
   
 ## Solution 1
 

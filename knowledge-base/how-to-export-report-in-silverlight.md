@@ -30,13 +30,13 @@ In the following article are presented steps for exporting a report in Silverlig
 ## Solution
 
 To export a Telerik report from a Silverlight application without a Silverligh Report Viewer you have to instantiate the 
-[Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/api/telerik.reporting.service.silverlightclient.reportserviceclient.html) class, 
+[Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/api/telerik.reporting.service.silverlightclient.reportserviceclient) class, 
 which plays the role of proxy to the [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}).
 
-To specify that you want to render the report we use the [ReportServiceClient.RenderAsync](/api/telerik.reporting.service.silverlightclient.reportserviceclient.html#collapsible-Telerik_Reporting_Service_SilverlightClient_ReportServiceClient_RenderAsync_System_String_System_String_Telerik_Reporting_Service_NameValueDictionary_Telerik_Reporting_Service_NameValueDictionary_) 
+To specify that you want to render the report we use the [ReportServiceClient.RenderAsync](/api/telerik.reporting.service.silverlightclient.reportserviceclient#collapsible-Telerik_Reporting_Service_SilverlightClient_ReportServiceClient_RenderAsync_System_String_System_String_Telerik_Reporting_Service_NameValueDictionary_Telerik_Reporting_Service_NameValueDictionary_) 
 method of the ReportServiceClient, which invokes the respective method on the server (remember that it serves as proxy) that would return the rendered report.
 
-Since we’ve used an asynchronous method and we do not know when the render would finish, we need to handle the [ReportServiceClient.RenderCompleted](/api/telerik.reporting.service.silverlightclient.reportserviceclient.html#collapsible-Telerik_Reporting_Service_SilverlightClient_ReportServiceClient_RenderCompleted) 
+Since we’ve used an asynchronous method and we do not know when the render would finish, we need to handle the [ReportServiceClient.RenderCompleted](/api/telerik.reporting.service.silverlightclient.reportserviceclient#collapsible-Telerik_Reporting_Service_SilverlightClient_ReportServiceClient_RenderCompleted) 
 event. In the RenderCompleted event we get the result from the rendering and decide what to do with it - in this case write down the report.
 
 >The [ShowDialog](http://msdn.microsoft.com/en-us/library/system.windows.controls.savefiledialog.showdialog(VS.95).aspx) method is invoked prior to having the rendered report, because the dialog box, can only be called from user-initiated code, such as a button Click event. If ShowDialog is called from code that is not user-initiated, a SecurityException is thrown.
@@ -88,4 +88,4 @@ public partial class MainPage : UserControl
 ```
 
 ## See Also
-[Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/api/telerik.reporting.service.silverlightclient.reportserviceclient.html)
+[Telerik.Reporting.Service.SilverlightClient.ReportServiceClient](/api/telerik.reporting.service.silverlightclient.reportserviceclient)

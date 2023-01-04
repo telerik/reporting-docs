@@ -35,7 +35,7 @@ we introduced with [R1 2021 SP1]({%slug telerikreporting/upgrade/2021/r1-2021-sp
 don't contain data. In the case when there is no data returned at all, the entire report may not be rendered as explained in the article section 
 [Skip Blank Pages in the Rendered Report]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}#skip-blank-pages-in-the-rendered-report).  
 
-The solution is setting [SkipBlankPages](/api/telerik.reporting.processing.report.html#collapsible-Telerik_Reporting_Processing_Report_SkipBlankPages) of your Reports to __False__, which will revert the previous behavior.
+The solution is setting [SkipBlankPages](/api/telerik.reporting.processing.report#collapsible-Telerik_Reporting_Processing_Report_SkipBlankPages) of your Reports to __False__, which will revert the previous behavior.
 
 ## See Also
 [Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})

@@ -26,7 +26,7 @@ The article explains how to set the Document Title that will appear in the brows
 
 ## Solution
 1. If the Report already has [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%}) go to the next step.
-Otherwise, in the report definition set the [DocumentMapText](/api/telerik.reporting.reportitembase.html#collapsible-Telerik_Reporting_ReportItemBase_DocumentMapText) property of a report item (e.g. _TextBox_) to a valid value. The __DocumentMapText__ will introduce __Document Map__ in the Report. This way the __DocumentName__ of the Report would be included in the __bookmarkNodes__ collection of the __args__ object of the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) event of the viewer. 
+Otherwise, in the report definition set the [DocumentMapText](/api/telerik.reporting.reportitembase#collapsible-Telerik_Reporting_ReportItemBase_DocumentMapText) property of a report item (e.g. _TextBox_) to a valid value. The __DocumentMapText__ will introduce __Document Map__ in the Report. This way the __DocumentName__ of the Report would be included in the __bookmarkNodes__ collection of the __args__ object of the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) event of the viewer. 
 2. In the event handler of __renderingEnd__ the name of the Report can be taken from __args.bookmarkNodes__ and assigned to the title of the document:
 ```JavaScript
 function OnRenderingEnd(e, args) {

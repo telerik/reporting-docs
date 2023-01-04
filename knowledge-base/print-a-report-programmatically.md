@@ -43,11 +43,11 @@ The ability to print a report is widely used feature that a Reporting product ca
    
   Both Report Viewers come up with out of the box methods for printing the report through code.
 
-   - WinForms Report Viewer - [ReportViewerBase.PrintReport Method](/api/telerik.reportviewer.winforms.reportviewerbase.html#collapsible-Telerik_ReportViewer_WinForms_ReportViewerBase_PrintReport)
+   - WinForms Report Viewer - [ReportViewerBase.PrintReport Method](/api/telerik.reportviewer.winforms.reportviewerbase#collapsible-Telerik_ReportViewer_WinForms_ReportViewerBase_PrintReport)
 
-   - WPF Report Viewer - [ReportViewer.PrintReport Method](/api/telerik.reportviewer.wpf.reportviewer.html#collapsible-Telerik_ReportViewer_Wpf_ReportViewer_PrintReport)
+   - WPF Report Viewer - [ReportViewer.PrintReport Method](/api/telerik.reportviewer.wpf.reportviewer#collapsible-Telerik_ReportViewer_Wpf_ReportViewer_PrintReport)
 
- Alternatively, the [ReportProcessor.PrintReport()](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_) method could also be used. It accepts two parameters  - a [ReportSource](/api/telerik.reporting.reportsource.html) and the [PrinterSettings](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printersettings?view=net-5.0) that should be used. For example, the following is how we could print the Barcodes Report from the **ReportLibrary** class library project that is can be found in the installation folder of the Telerik Report Designer - {*appFolder*}\Examples\CSharp\.NET Framework\ReportLibrary.
+ Alternatively, the [ReportProcessor.PrintReport()](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_) method could also be used. It accepts two parameters  - a [ReportSource](/api/telerik.reporting.reportsource) and the [PrinterSettings](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.printing.printersettings?view=net-5.0) that should be used. For example, the following is how we could print the Barcodes Report from the **ReportLibrary** class library project that is can be found in the installation folder of the Telerik Report Designer - {*appFolder*}\Examples\CSharp\.NET Framework\ReportLibrary.
     
 ```cs
  ReportProcessor reportProcessor = new ReportProcessor();

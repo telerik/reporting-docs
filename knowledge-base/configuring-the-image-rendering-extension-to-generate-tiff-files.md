@@ -90,7 +90,7 @@ As a result, in the Report Viewer's drop-down with the available export formats,
 
 - In Telerik Reporting, device information settings are used to pass rendering parameters to a rendering extension.  
    
-- Device information settings can be set in a variety of ways. The &lt;Telerik.Reporting&gt; configuration section can be used to specify rendering parameters globally. Programmatically, the [ReportProcessor.RenderReport()](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method may be used. 
+- Device information settings can be set in a variety of ways. The &lt;Telerik.Reporting&gt; configuration section can be used to specify rendering parameters globally. Programmatically, the [ReportProcessor.RenderReport()](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method may be used. 
 
         
 ## See Also  

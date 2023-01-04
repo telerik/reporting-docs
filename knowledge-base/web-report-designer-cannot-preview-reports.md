@@ -67,7 +67,7 @@ The error message, displayed in the browser console, is the following:
 
 ## Possible Cause
 
-The known reason for this error is using a relative path for the [FileDefinitionStorage](/api/telerik.webreportdesigner.services.filedefinitionstorage.html) constructor of the Web Report Designer.
+The known reason for this error is using a relative path for the [FileDefinitionStorage](/api/telerik.webreportdesigner.services.filedefinitionstorage) constructor of the Web Report Designer.
 
 ## Solution
 

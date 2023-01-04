@@ -22,7 +22,7 @@ res_type: kb
 Do you want to create a PDF and open it directly within a webform? 
 
 ## Solution
-Use the [ReportProcessor.RenderReport](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method to create a stream of bytes and write those bytes to the ASP.NET Response object. 
+Use the [ReportProcessor.RenderReport](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method to create a stream of bytes and write those bytes to the ASP.NET Response object. 
 
 1. Reference the reporting engine in your web application by adding reference to the *Telerik.Reporting.dll* assembly.
 

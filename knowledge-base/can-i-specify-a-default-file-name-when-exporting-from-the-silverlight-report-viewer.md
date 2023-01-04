@@ -28,7 +28,7 @@ res_type: kb
    
 ## Solution
 
-By design, the [Report.DocumentName](/api/telerik.reporting.report.html#collapsible-Telerik_Reporting_Report_DocumentName) property is used as a default file name for all exported files from the Telerik report viewers. 
+By design, the [Report.DocumentName](/api/telerik.reporting.report#collapsible-Telerik_Reporting_Report_DocumentName) property is used as a default file name for all exported files from the Telerik report viewers. 
 
 However, in Silverlight the *SaveFileDialog.[DefaultFileName](http://msdn.microsoft.com/en-us/library/system.windows.controls.savefiledialog.defaultfilename%28v=vs.95%29.aspx)* setting is treated as security vulnerability. Thus, the **DefaultFileName** is only applied for [trusted applications](http://msdn.microsoft.com/en-us/library/ee721083%28v=vs.95%29.aspx).
 

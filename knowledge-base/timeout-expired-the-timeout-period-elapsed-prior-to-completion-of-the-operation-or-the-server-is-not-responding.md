@@ -35,7 +35,7 @@ Timeout expired. The timeout period elapsed prior to completion of the operation
 
 The common troubleshooting approach for connectivity issues (timeout issue) is extending the connections timeouts in SqlDataSource component. You can try the following suggestions:
 
-1. Test using a larger value for the [CommandTimeout](/api/telerik.reporting.sqldatasource.html#collapsible-Telerik_Reporting_SqlDataSource_CommandTimeout) property;
+1. Test using a larger value for the [CommandTimeout](/api/telerik.reporting.sqldatasource#collapsible-Telerik_Reporting_SqlDataSource_CommandTimeout) property;
 
 2. Test using a larger value in the connection string as well;
 

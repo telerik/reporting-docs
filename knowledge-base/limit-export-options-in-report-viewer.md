@@ -28,7 +28,7 @@ Sometimes, it is neccessary to limit export formats to certain formats only.
 ## Solution
 In Telerik Reporting, device information settings are used to pass rendering parameters to a rendering extension. 
 You can use the <Telerik.Reporting> configuration section to specify rendering parameters globally. Programmatically, 
-you can use the [ReportProcessor.RenderReport() method](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_).
+you can use the [ReportProcessor.RenderReport() method](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_).
 
 For Windows and WPF applications the configuration file is **app.config** and for ASP.NET applications – **web.config**. Both files are XML-based.
 The example below shows an XML-based configuration file that hides the RTF rendering extension:

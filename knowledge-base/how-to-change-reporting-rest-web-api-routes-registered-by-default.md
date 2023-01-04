@@ -28,7 +28,7 @@ In order to use the HTML5 Report Viewer, you need to have a running [Telerik Rep
   
 To ease the routes registering, there is the **ReportsControllerConfiguration.RegisterRoutes method**, which directly adds the required routes into the **GlobalConfiguration.Configuration**. The created routes follow a convention for [Routing in ASP.NET Web API](http://www.asp.net/web-api/overview/web-api-routing-and-actions/routing-in-aspnet-web-api "Routing in ASP.NET Web API") and their route templates contain "**api**" word to distinguish them from routes to custom controllers.  
   
- Since **Telerik Reporting** **R3 2017 SP1**, it is possible to change the first path segment included in the route template using the [ReportsControllerConfiguration.RegisterRoutes(HttpConfiguration, String)](/api/telerik.reporting.services.webapi.reportscontrollerconfiguration.html#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_) method overload. 
+ Since **Telerik Reporting** **R3 2017 SP1**, it is possible to change the first path segment included in the route template using the [ReportsControllerConfiguration.RegisterRoutes(HttpConfiguration, String)](/api/telerik.reporting.services.webapi.reportscontrollerconfiguration#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_) method overload. 
 
 For example, "*api*" is the default literal path segment in the "*api/{controller}*" route template. Use this overload and pass a unique path segment (e.g. "*reportingapi*") to avoid collisions with other Web API services.  
   

@@ -24,7 +24,7 @@ res_type: kb
   
 ## Description
 
-**The path is not of a legal form** error message is thrown on processing a [Telerik.Reporting.Report](/api/telerik.reporting.report.html) in a project targeting **.NET 4.6.2 framework**.    
+**The path is not of a legal form** error message is thrown on processing a [Telerik.Reporting.Report](/api/telerik.reporting.report) in a project targeting **.NET 4.6.2 framework**.    
    
 ## Error Message
 

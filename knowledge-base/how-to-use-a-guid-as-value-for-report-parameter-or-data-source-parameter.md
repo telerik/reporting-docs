@@ -23,9 +23,9 @@ The article explains how to use a Guid as value for report parameter or data sou
   
 ## Solution 1
 
-Set the Type of the [ReportParameter](/api/telerik.reporting.reportparameter.html) to String. Use the **CStr(System.Object)** [built-in conversion function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) to convert the Guid to String for the  [ValueMember](/api/telerik.reporting.reportparameteravailablevalues.html#collapsible-Telerik_Reporting_ReportParameterAvailableValues_ValueMember) property of the report parameter [AvailableValues](/api/telerik.reporting.reportparameteravailablevalues.html).  
+Set the Type of the [ReportParameter](/api/telerik.reporting.reportparameter) to String. Use the **CStr(System.Object)** [built-in conversion function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) to convert the Guid to String for the  [ValueMember](/api/telerik.reporting.reportparameteravailablevalues#collapsible-Telerik_Reporting_ReportParameterAvailableValues_ValueMember) property of the report parameter [AvailableValues](/api/telerik.reporting.reportparameteravailablevalues).  
 
-When using Guid [DataSourceParameter](/api/telerik.reporting.datasourceparameter.html) and its value is set to a [ReportParameter](/api/telerik.reporting.reportparameter.html), create an [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to handle the conversion:  
+When using Guid [DataSourceParameter](/api/telerik.reporting.datasourceparameter) and its value is set to a [ReportParameter](/api/telerik.reporting.reportparameter), create an [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to handle the conversion:  
 
 
 ````cs
@@ -40,7 +40,7 @@ Public Shared Function ConvertToGuid(guid As String) As Guid
 End Function
 ````  
 
-Finally, set the value for the [DataSourceParameter](/api/telerik.reporting.datasourceparameter.html):   
+Finally, set the value for the [DataSourceParameter](/api/telerik.reporting.datasourceparameter):   
 
 `= ConvertToGuid(Parameters.Parameter1.Value)`  
 

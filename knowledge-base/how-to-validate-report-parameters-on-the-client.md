@@ -30,7 +30,7 @@ Sometimes we need to validate the input data so that it will match our requireme
 
 ## Solution
 
-1. Start by creating custom parameter editors by defining them through the [ParameterEditors method](/api/telerik.reportviewer.mvc.ireportviewerbuilder.html#collapsible-Telerik_ReportViewer_Mvc_IReportViewerBuilder_ParameterEditors_System_Action_Telerik_ReportViewer_Mvc_IParameterEditorsBuilder__) when creating the report viewer widget:
+1. Start by creating custom parameter editors by defining them through the [ParameterEditors method](/api/telerik.reportviewer.mvc.ireportviewerbuilder#collapsible-Telerik_ReportViewer_Mvc_IReportViewerBuilder_ParameterEditors_System_Action_Telerik_ReportViewer_Mvc_IParameterEditorsBuilder__) when creating the report viewer widget:
 
     ```
     @(Html.TelerikReporting().ReportViewer()

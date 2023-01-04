@@ -80,6 +80,6 @@ It is recommended that you create a backup before resetting the storage.
 
 ## See Also
 
-* [REST Service Storage Overview](../telerik-reporting-rest-service-storage)
+* [REST Service Storage Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
 * [Configuring MS SQL Database Storage]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage %})
 * [Using Redis Storage]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage %})

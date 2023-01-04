@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-Usually, one may control the report appearance and the data it displays through report parameters. The Silverlight report viewer, offers built-in user interface that enables end users to interact with the reports. Still, there are cases when one may further need to control the report definition according to a custom logic that runs in the client application. However, since we have introduced the [Silverlight Report Viewer](../silverlight-report-viewer-embedding-the-silverlight-viewer), the greatest challenge our clients have faced is that there is no direct access to the report definition in the Silverlight application.
+Usually, one may control the report appearance and the data it displays through report parameters. The Silverlight report viewer, offers built-in user interface that enables end users to interact with the reports. Still, there are cases when one may further need to control the report definition according to a custom logic that runs in the client application. However, since we have introduced the [Silverlight Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}), the greatest challenge our clients have faced is that there is no direct access to the report definition in the Silverlight application.
 
 ## Solution
 

@@ -46,4 +46,4 @@ in the project that utilizes the ReportProcessor.
 
 ## See Also
 
-[JsonDataSource Component](../jsondatasource-component)
+[JsonDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%})

@@ -30,7 +30,7 @@ This article describes how to set the height and width of the ReportViewer compo
 
 ## Solution
 The Blazor Report Viewer is nested inside a `div` element and will resize itself based on the `div`'s width and height. 
-The article [How to Use Blazor Report Viewer](../blazor-report-viewer-how-to-use) demonstrates one possible approach: 
+The article [How to Use Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%}) demonstrates one possible approach: 
 a `style` element with the following code:
 
 ```

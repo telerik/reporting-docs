@@ -24,14 +24,14 @@ We provide also an option to create Custom Shapes. Here is how to do it.
 
 ## Solution
 
-1. The [ShapeType ](/api/Telerik.Reporting.ShapeItemBase.html#Telerik_Reporting_ShapeItemBase_ShapeType) must be set to a new implementation of the [ShapeBase class](../t-telerik-reporting-drawing-shapes-shapebase), i.e. create new class to represent the new custom shape:
+1. The [ShapeType ](/api/Telerik.Reporting.ShapeItemBase.html#Telerik_Reporting_ShapeItemBase_ShapeType) must be set to a new implementation of the [ShapeBase class](/api/telerik.reporting.drawing.shapes.shapebase.html), i.e. create new class to represent the new custom shape:
 
 	````CSharp
 class MyCustomShape : Telerik.Reporting.Drawing.Shapes.ShapeBase
 ````
 
 
-2. The method [CreateShape()](../m-telerik-reporting-drawing-shapes-shapebase-createshape) of the new class should be overridden to create the corresponding shape/geometry of the custom shape:
+2. The method [CreateShape()](/api/telerik.reporting.drawing.shapes.shapebase.html#collapsible-Telerik_Reporting_Drawing_Shapes_ShapeBase_CreateShape) of the new class should be overridden to create the corresponding shape/geometry of the custom shape:
 
 	````CSharp
 protected override void CreateShape()
@@ -53,7 +53,7 @@ protected override void CreateShape()
 ````
 
 
-3. The [Clone()](../m-telerik-reporting-drawing-shapes-shapebase-clone) method should also be overridden to return the new shape:
+3. The [Clone()](/api/telerik.reporting.drawing.shapes.shapebase.html#collapsible-Telerik_Reporting_Drawing_Shapes_ShapeBase_Clone) method should also be overridden to return the new shape:
 
 	````CSharp
 public override object Clone()

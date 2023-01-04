@@ -77,7 +77,7 @@ The last supported type of **ConnectionStrings** configuration uses an array to 
 }
 ```
 
-For more information about Telerik Reporting JSON-based configuration structure, please refer to the [Telerik Reporting Configuration Layout](../configuring-telerik-reporting#telerik-reporting-configuration-layout) help article.
+For more information about Telerik Reporting JSON-based configuration structure, please refer to the [Telerik Reporting Configuration Layout]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}#telerik-reporting-configuration-layout) help article.
 
 We have to build the configuration in *Startup.cs* as we implement a sample *ConfigurationService* class which ensures reading the **appsettings.json** as config file and used in the ReportsController constructor:
 ```CSharp
@@ -167,10 +167,10 @@ namespace AspNetCoreMvcDemo.Controllers
 }
 ```
 
-In the end, we should create the report viewer. As the [HTML5 ASP.NET MVC Report Viewer](../mvc-report-viewer-extension-overview) is a server-side wrapper for the [HTML5 JavaScript ReportViewer](../html5-report-viewer), it requires a reference to **Telerik.ReportViewer.Mvc.dll**. However, as this assembly is built against the *full .NET Framework*, the only possible approach is creating a pure HTML5 Viewer.
+In the end, we should create the report viewer. As the [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) is a server-side wrapper for the [HTML5 JavaScript ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), it requires a reference to **Telerik.ReportViewer.Mvc.dll**. However, as this assembly is built against the *full .NET Framework*, the only possible approach is creating a pure HTML5 Viewer.
 
 ## Notes
 The demo application could be downloaded from [here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/aspnetcoremvcdemo.zip?sfvrsn=32676553_2).
 
 ## See Also
-For additional information, you could refer to the new conceptual documentation article [.NET Core Support](../use-reports-in-net-core-apps) that explains how to use reports in pure .NET Core application for Windows and Linux platforms.
+For additional information, you could refer to the new conceptual documentation article [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}) that explains how to use reports in pure .NET Core application for Windows and Linux platforms.

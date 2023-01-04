@@ -22,7 +22,7 @@ res_type: kb
 </table>
 
 ## Description
-The [Blazor Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview) is not showing up on the page and there are errors in the console.
+The [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) is not showing up on the page and there are errors in the console.
 
 ![Blazor Report Viewer Interop is missing](resources/BlazorInteropNotFound.png)
 

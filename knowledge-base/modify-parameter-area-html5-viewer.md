@@ -41,4 +41,4 @@ Apply custom CSS to the __Parameters Area__ containers. For example:
 
 ## See Also
 
-[Customizing the HTML5 Report Viewer](../html5-report-viewer-customization)
+[Customizing the HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview%})

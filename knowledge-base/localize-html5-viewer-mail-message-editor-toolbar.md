@@ -22,8 +22,8 @@ res_type: kb
 
 
 ## Description
-The TextArea of the email message template is a [Kendo Editor](../../kendo-ui/controls/editors/editor/overview), which toolbar cannot be localized with the general 
-localization approach for the Html5 Viewer that is described in the [Localization](../html5-report-viewer-localization) article.
+The TextArea of the email message template is a [Kendo Editor](https://docs.telerik.com/kendo-ui/controls/editors/editor/overview), which toolbar cannot be localized with the general 
+localization approach for the Html5 Viewer that is described in the [Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}) article.
 
 ## Solution
 The Kendo Editor can be localized as explained in the [Localization in jQuery Editor Widget](https://demos.telerik.com/kendo-ui/editor/localization) article. 
@@ -39,6 +39,6 @@ the [Kendo GitHub repository](https://github.com/telerik/kendo-ui-core/tree/mast
 The meta tag with the encoding is needed in order to display the toolbar messages' special symbols correctly in most languages.
 
 ## See Also
-- [Localization of the Html5 Report Viewer](../html5-report-viewer-localization) 
+- [Localization of the Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}) 
 
 - [Localization in jQuery Editor Widget](https://demos.telerik.com/kendo-ui/editor/localization) 

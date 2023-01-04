@@ -27,7 +27,7 @@ res_type: kb
 
 ## Description  
   
-Cross-site scripting (XSS) with low impact is possible through the Telerik.ReportViewer.WebForms.dll in Telerik Reporting [ASP.NET WebForms ReportViewer](../asp-net-report-viewer) control before **R1 2017 SP2 (11.0.17.406)**. The Telerik.ReportViewer.axd handler allows third parties to inject arbitrary web script or HTML through the bgColor parameter.  
+Cross-site scripting (XSS) with low impact is possible through the Telerik.ReportViewer.WebForms.dll in Telerik Reporting [ASP.NET WebForms ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}) control before **R1 2017 SP2 (11.0.17.406)**. The Telerik.ReportViewer.axd handler allows third parties to inject arbitrary web script or HTML through the bgColor parameter.  
   
 Telerik Reporting Engine does not expose the application's server information to the client. Reports are processed and rendered server-side, where the AXD handler delivers the produced content at the client – includes ready HTML and CSS.  
   

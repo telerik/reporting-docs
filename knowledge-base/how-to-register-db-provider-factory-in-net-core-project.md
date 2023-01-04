@@ -58,5 +58,5 @@ In case the data provider does not provide a static instance, the provider can b
 Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("FirebirdSql.Data.FirebirdClient", "FirebirdSql.Data.FirebirdClient.FirebirdClientFactory, FirebirdSql.Data.FirebirdClient, Version=7.0.0.0");
 ```
 
-For web projects the recommended place to register the factory is the static constructor of the [ReportsController](../t-telerik-reporting-services-webapi-reportscontrollerbase) class.
+For web projects the recommended place to register the factory is the static constructor of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase.html) class.
 For desktop projects the provider registration can be done in the report viewer initialization code.

@@ -35,7 +35,7 @@ may not be applied to particular cells. These cells are in column groups that do
 The observed behavior is expected. The Conditional Formatting is applied to report items like TextBoxes and not to table cells or rows. 
 The Reporting engine determines the data for the report item in the cell by the intersection between the row group and the column group 
 it belongs to. When one of the groups has no data, the intersection is also empty. For that reason, all the data fields in the 
-[Expression Scope](../expressions-scope) will be _null_ and the Conditional Formatting rule will return _false_. 
+[Expression Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) will be _null_ and the Conditional Formatting rule will return _false_. 
 
 The solution is in the formatting rule to take the data field value in the scope only of the group that contains data. For example, 
 when this is the row group :

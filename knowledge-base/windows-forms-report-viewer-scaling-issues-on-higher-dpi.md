@@ -28,7 +28,7 @@ res_type: kb
 
 
 ## Description
-When using [Windows Forms Report Viewer](../winforms-report-viewer) on a machine with DPI scale factor higher than 96 (100%), Windows will resize the bitmap images in the application according to the current DPI value. This makes the report viewer and the report content blurry or be sized incorrectly in many common usage scenarios. Also, when printing the report, the application will scale the report contents incorrectly, because it cannot detect the current machine's DPI settings and the DPI value will always be reported as 96 dots per inch.
+When using [Windows Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}) on a machine with DPI scale factor higher than 96 (100%), Windows will resize the bitmap images in the application according to the current DPI value. This makes the report viewer and the report content blurry or be sized incorrectly in many common usage scenarios. Also, when printing the report, the application will scale the report contents incorrectly, because it cannot detect the current machine's DPI settings and the DPI value will always be reported as 96 dots per inch.
 
 ## Cause\Possible Cause(s)
 By default WinForms applications are declared as DPI Unaware. Declaring the application in which the Windows Forms Report Viewer is used as **DPI aware** application would resolve the issues. 
@@ -52,6 +52,6 @@ For reference, check our demos located in Telerik Reporting installation folder,
 
 
 ## See Also
-[Windows Forms Application - Declaring the application as DPI-aware](../winforms-report-viewer#declaring-the-application-as-dpi-aware)
+[Windows Forms Application - Declaring the application as DPI-aware]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}#declaring-the-application-as-dpi-aware)
 
 [Writing DPI-Aware Desktop and Win32 Applications](https://docs.microsoft.com/en-us/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows)

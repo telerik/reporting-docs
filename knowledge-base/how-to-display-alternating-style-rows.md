@@ -27,7 +27,7 @@ This look can be achieved with [conditional formatting]({% slug telerikreporting
 
 1. Select the detail section of your report.
 
-2. Select the **ConditionalFormatting** property in the [Context Menu](../ui-context-menu) or the Property Grid.
+2. Select the **ConditionalFormatting** property in the [Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}) or the Property Grid.
 
 3. Click the **New Rule** button.
 

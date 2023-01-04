@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 
-Starting from **Telerik Reporting Q1 2014** both the Silverlight and WPF report viewers will support only the **implicit styling**, i.e. style without the **x:Key** attribute. For more information regarding the implicit styling please check the related help article - [Setting a Theme (Using Implicit Styles)](../wpf-report-viewer-implicit-styles). Please note that this is valid only for the report viewer - if you have controls that need the style manager and the new report viewer that supports only implicit styling, you can still do that.
+Starting from **Telerik Reporting Q1 2014** both the Silverlight and WPF report viewers will support only the **implicit styling**, i.e. style without the **x:Key** attribute. For more information regarding the implicit styling please check the related help article - [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%}). Please note that this is valid only for the report viewer - if you have controls that need the style manager and the new report viewer that supports only implicit styling, you can still do that.
  
 After upgrading to **Q1 2014** both WPF/Silverlight report viewers may become blank. That is because the themes are no longer *embedded* in the assembly and are instead distributed as *separate* files. This means that the report viewer has no theme applied and it becomes blank. In order to apply a theme, you will have to migrate from **Style Manager** to **Implicit Styling**.
 

@@ -95,7 +95,7 @@ The `AutoValidateAntiforgeryToken` is recommended by Microsoft for non-API scena
     }
 ````
 
-* Override [all `ReportsController` public methods](../api/Telerik.Reporting.Services.WebApi.ReportsControllerBase.html#methods) and add the [`IgnoreAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to them. You may skip the `GET` HTTP methods.
+* Override [all `ReportsController` public methods](/api/telerik.reporting.services.webapi.reportscontrollerbase.html) and add the [`IgnoreAntiforgeryToken`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.ignoreantiforgerytokenattribute?view=aspnetcore-3.1) attribute to them. You may skip the `GET` HTTP methods.
 
     ````CSharp
 [IgnoreAntiforgeryToken]

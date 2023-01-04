@@ -33,15 +33,15 @@ res_type: kb
 
 - **Resources endpoints misconfiguration**
 
-The most probable reason is missing resource endpoint for the [Telerik Reporting WCF Service](../silverlight-wcf-service-overview) that is responsible for serving all images: Picturebox, Chart, Shapes and Barcodes.
+The most probable reason is missing resource endpoint for the [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) that is responsible for serving all images: Picturebox, Chart, Shapes and Barcodes.
 
-For proper configuration please refer to the [Hosting WCF Service in IIS](../silverlight-hosting-in-iis) help article.   
+For proper configuration please refer to the [Hosting WCF Service in IIS]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-add-telerik-reporting-wcf-service-to-web-application%}) help article.   
 
 The **Silverlight report viewer** lives entirely on the *client* side, while the report rendering is performed on the *server*. The **XAML** rendering extension (used by Silverlight report viewer) streams images as resources (similar to HTML), so if the resource endpoint is missing in the service configuration, the images would not be served. When exporting, images are embedded in the export file.  
    
 - **URL rewriting and load balancing scenarios**  
 
-Other reason for missing images in the rendered in XAML report is the usage of URL rewriting or load balancing where the Reporting WCF Service URL is not the same as the displayed in browser. In such scenarios inherit the report service and override its property [BaseAddress](../p-telerik-reporting-service-reportservicebase-baseaddress) which is the Uri used from the XamlRendering for the resources address (e.g., images).
+Other reason for missing images in the rendered in XAML report is the usage of URL rewriting or load balancing where the Reporting WCF Service URL is not the same as the displayed in browser. In such scenarios inherit the report service and override its property [BaseAddress](/api/telerik.reporting.service.reportservicebase.html#collapsible-Telerik_Reporting_Service_ReportServiceBase_BaseAddress) which is the Uri used from the XamlRendering for the resources address (e.g., images).
    
 Example:  
 

@@ -26,11 +26,11 @@ res_type: kb
 
 ## Description
 
-Sometimes we need to validate the input data so that it will match our requirements and rules. The validation could be on the Client or on the Server. The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer](../html5-report-viewer) based on the value of another report parameter. If you want to see this feature implemented on the Server-side, vote for it on our public [Portal](https://feedback.telerik.com/reporting/1424141-server-side-parameters-validation).The approach could be applied to any other HTML5 Web Report Viewer and with little customization to validate different scenarios.
+Sometimes we need to validate the input data so that it will match our requirements and rules. The validation could be on the Client or on the Server. The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) based on the value of another report parameter. If you want to see this feature implemented on the Server-side, vote for it on our public [Portal](https://feedback.telerik.com/reporting/1424141-server-side-parameters-validation).The approach could be applied to any other HTML5 Web Report Viewer and with little customization to validate different scenarios.
 
 ## Solution
 
-1. Start by creating custom parameter editors by defining them through the [ParameterEditors method](../m-telerik-reportviewer-mvc-ireportviewerbuilder-parametereditors) when creating the report viewer widget:
+1. Start by creating custom parameter editors by defining them through the [ParameterEditors method](/api/telerik.reportviewer.mvc.ireportviewerbuilder.html#collapsible-Telerik_ReportViewer_Mvc_IReportViewerBuilder_ParameterEditors_System_Action_Telerik_ReportViewer_Mvc_IParameterEditorsBuilder__) when creating the report viewer widget:
 
     ```
     @(Html.TelerikReporting().ReportViewer()
@@ -48,10 +48,10 @@ Sometimes we need to validate the input data so that it will match our requireme
     )
     ```
   
-    *Note:* You’ll need to create a [custom editor](../html5-mvc-report-viewer-customizing-custom-parameters-editor) for each parameter type that will be validating.
+    *Note:* You’ll need to create a [custom editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor%}) for each parameter type that will be validating.
   
 2. In this example, we have a single select editor with available values and a number parameter that has to be validated based on the first parameter value. That means that we are going to need a combobox editor and simple input editor.
-In this case, we have both UI elements that we are needing to represent our editors. The first one will be a [Kendo ComboBox widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox), which we have from the [Telerik Reporting](../html5-report-viewer-widget-requirements) scripts and
+In this case, we have both UI elements that we are needing to represent our editors. The first one will be a [Kendo ComboBox widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox), which we have from the [Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}) scripts and
 simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you wish to use some Kendo widget, that is not included in a subset of the used by default Kendo UI widgets from Telerik Reporting, you need to add manually the scripts for the additional widget or add [kendo.all.js](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service):
 
 3. Create the editors and apply the validation on [input change](https://api.jquery.com/change/):
@@ -140,4 +140,4 @@ simple [HTMl5 text input](https://www.w3schools.com/tags/tag_input.asp). If you 
   
 
 ## See Also
-[Cascading (dependent) parameters](../designing-reports-parameters#cascading-dependent-parameters)
+[Cascading (dependent) parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}#cascading-dependent-parameters)

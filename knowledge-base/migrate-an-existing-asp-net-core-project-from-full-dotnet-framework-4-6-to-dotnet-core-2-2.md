@@ -23,7 +23,7 @@ res_type: kb
 </table>
 
 ## Description
-As of [Telerik Reporting R1 2019](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116), we support report rendering runtime targeting .NET Core 2.1+ applications. For more information how to use reports in a .NET Core application for Windows and Linux platforms, please refer to [.NET Core Support](../use-reports-in-net-core-apps) help article.
+As of [Telerik Reporting R1 2019](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116), we support report rendering runtime targeting .NET Core 2.1+ applications. For more information how to use reports in a .NET Core application for Windows and Linux platforms, please refer to [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}) help article.
 
 Prior to that, the only available workaround was to switch the .NET Core application's target framework to full .NET Framework.
 
@@ -38,7 +38,7 @@ Now, how to migrate the existing ASP.NET Core project from full .NET Framework b
 	```
 and reload it back.
 
-2. Remove the old Telerik libraries. The new Telerik Reporting libraries for .NET Core projects are available through Telerik NuGet private feed - [Telerik Reporting NuGet packages](../installation-installing-from-msi#installing-telerik-reporting).
+2. Remove the old Telerik libraries. The new Telerik Reporting libraries for .NET Core projects are available through Telerik NuGet private feed - [Telerik Reporting NuGet packages]({%slug telerikreporting/installation%}#installing-telerik-reporting).
 
 3. Update Microsoft.AspNetCore libraries to newer version (if needed).
 

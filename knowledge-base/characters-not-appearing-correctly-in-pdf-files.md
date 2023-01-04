@@ -81,6 +81,6 @@ The settings can be edited in code if you export programmatically - <a href="../
   
 ## See Also
 
-[PDF Rendering Design Considerations](../designing-reports-considerations-pdf)
+[PDF Rendering Design Considerations]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%})
 
-[PDF Device Information Settings](../device-information-settings-pdf)
+[PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%})

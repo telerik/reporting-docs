@@ -29,13 +29,13 @@ res_type: kb
 The attached project demonstrates using a REST WebService with Post Method for the WebServiceDataSource. The Service returns a *Person* with  *Name* and *Surname*.
 
 ## Solution
-Configuration of the [WebServiceDataSource](../webservicedatasource-component) in the report :
-1. There are two [report parameters](../designing-reports-parameters)- *NameParameter* and *SurnameParameter*.
+Configuration of the [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) in the report :
+1. There are two [report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})- *NameParameter* and *SurnameParameter*.
 The **MultiValue** property of the second one is set to **True**.
-The **AvailableValues** come from a [CSV DataSource](../csvdatasource-component). 
+The **AvailableValues** come from a [CSV DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}). 
 Note that the single values include quotes so that the corresponding JSON values can be properly configured. 
 2. Set the **Value** property of the parameters with the default values.
-3. Add the [WebServiceDataSource](../webservicedatasource-component) and set the **Method** to **Post**.
+3. Add the [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) and set the **Method** to **Post**.
 4. Because the values will be defined through the parameters, set the **Body** as follows:
 
 ```

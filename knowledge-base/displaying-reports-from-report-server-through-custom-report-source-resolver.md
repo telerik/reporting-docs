@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-Sometimes you want to avoid adding the Report Server's credentials in the initialization of the viewer. This can be done by the usage of [Custom Report Source Resolver](../telerik-reporting-rest-custom-report-resolver).
+Sometimes you want to avoid adding the Report Server's credentials in the initialization of the viewer. This can be done by the usage of [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}).
 
 ## Solution
 In this scenario, you need to render the reports in a custom Reporting REST Service rather than in the Report Server. You will need a Custom ReportSource Resolver, in which to download the report definition from the server and return it wrapped in the proper server-side [ReportSource](./report-sources).

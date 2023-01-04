@@ -23,11 +23,11 @@ res_type: kb
 
 ## Description
 In many reporting scenarios, you would like to have page breaks between report groups. You may easily achieve this, for example, by setting the 
-[PageBreak](../p-telerik-reporting-reportsection-pagebreak) property of the Group Footer section to 'After'. However, the page break will occur also after 
+[PageBreak](/api/telerik.reporting.reportsection.html#collapsible-Telerik_Reporting_ReportSection_PageBreak) property of the Group Footer section to 'After'. However, the page break will occur also after 
 the last Group Footer. Here we explain how to avoid the last page break.
 
 ## Suggested Workarounds
-You may use [Bindings](../expressions-bindings) to set the __PageBreak__ property of the [Group Header or Footer](../data-items-how-to-add-groups-to-report-item) conditionally.
+You may use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to set the __PageBreak__ property of the [Group Header or Footer]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) conditionally.
 The exact conditional [Expression]({% slug telerikreporting/designing-reports/connecting-to-data/expressions/overview %}) will depend on the data that is grouped.  
 
 For example, in the following Expression, we compare the last value in the group with the last value of the entire report data, and if they coincide, 

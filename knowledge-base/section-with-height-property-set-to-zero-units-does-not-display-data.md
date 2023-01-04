@@ -41,4 +41,4 @@ As of **R3 2016**, sections and Panel items have a **CanShrink properties** tha
  
 ## See Also
 
-[Design Considerations for Report Item Layout](../designing-reports-design-considerations-report-layout).  
+[Design Considerations for Report Item Layout]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%}).  

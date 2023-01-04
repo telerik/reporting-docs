@@ -51,14 +51,14 @@ Web Site projects handle assembly references differently, which is the major rea
 
 ## Solution
 
-The recommended approach is to use reports designed with the [Standalone Report Designer](../standalone-report-designer), or reports from an external assembly referenced by the Web Site project. The Report Viewers have to be configured manually in Web Site projects:
+The recommended approach is to use reports designed with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), or reports from an external assembly referenced by the Web Site project. The Report Viewers have to be configured manually in Web Site projects:
 
-- [HTML5 Report Viewer Manual Setup](../html5-report-viewer-embedding)
-- [HTML5 ASP.NET MVC Viewer Manual Setup](../html5-mvc-report-viewer-embedding)
-- [HTML5 ASP.NET WebForms Viewer Manual Setup](../html5-webforms-report-viewer-manual-setup)
+- [HTML5 Report Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%})
+- [HTML5 ASP.NET MVC Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/manual-setup%})
+- [HTML5 ASP.NET WebForms Viewer Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/manual-setup%})
 
 ## Notes
 
 The automatic upgrade feature is not designed to work with Web Site projects as well. 
 
-Web Site projects must be upgraded manually - [Upgrading Telerik Reporting Projects](../installation-upgrading-newer-version).
+Web Site projects must be upgraded manually - [Upgrading Telerik Reporting Projects]({%slug telerikreporting/upgrade/overview%}).

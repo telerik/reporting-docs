@@ -29,7 +29,7 @@ In this article, we will explain how to show '*No Data Message*' or hide a repor
 - **For Table/List/Crosstab, Graph and Map items**.  
 
 You can use the *'NoDataMessage'* feature. Once the data item's NoDataMessage property is set, the message will appear if the item's DataSource gets no records from its source. You can also use the NoDataStyle properties to style the message or hide the item entirely.  
-For more details, check [How to: Set a No Data Message](../report-structure-dataitem-set-no-data-message).
+For more details, check [How to: Set a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%}).
 
 - **For Report.**  
 
@@ -52,4 +52,4 @@ Expression: = Count(1)>0
 
 ## See Also
 
-[How to Set a No Data Message](../report-structure-dataitem-set-no-data-message)
+[How to Set a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})

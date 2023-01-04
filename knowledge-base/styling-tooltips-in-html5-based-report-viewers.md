@@ -115,7 +115,7 @@ In case you need a custom solution for your tooltips, you can create your own on
 
 If the above links become non-functional, consider replacing them with working ones. Here is a link to the [jQuery UI – Releases](https://releases.jquery.com/ui/).
 
- - Then you need to subscribe to an appropriate event that will be raised from the report viewer. In this case the [pageReady()](../html5-report-viewer-reportviewer-events-pageready) event is suitable, because all the content will be ready and we can select the report items by their data-tooltip attributes. We’ll also add a handler to the [viewerToolTipOpening()](../html5-report-viewer-reportviewer-events-viewertooltipopening) event and explain its usage later:
+ - Then you need to subscribe to an appropriate event that will be raised from the report viewer. In this case the [pageReady()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args)%}) event is suitable, because all the content will be ready and we can select the report items by their data-tooltip attributes. We’ll also add a handler to the [viewerToolTipOpening()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)%}) event and explain its usage later:
     
 ```html
 <script type="text/javascript">

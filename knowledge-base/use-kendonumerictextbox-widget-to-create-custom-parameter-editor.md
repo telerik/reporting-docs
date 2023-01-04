@@ -70,4 +70,4 @@ You can download the sample application from [here](https://www.telerik.com/docs
 Note that it is a MVC application with HTML5 MVC Report Viewer.
 
 ## See Also
-- [How To: Create a Custom Parameter Editor](../html5-mvc-report-viewer-customizing-custom-parameters-editor)
+- [How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})

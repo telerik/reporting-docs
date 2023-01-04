@@ -60,4 +60,4 @@ Reference a [compressed](https://code.jquery.com/jquery-3.6.0.min.js)(min) or an
 
 - [Beware When Using the Slim Version of jQuery](https://webdesign.tutsplus.com/tutorials/quick-tip-beware-when-using-the-slim-version-of-jquery--cms-30935)
 
-- [Requirements and Browser Support for HTML5 Report Viewers](../html5-report-viewer-system-requirements)
+- [Requirements and Browser Support for HTML5 Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%})

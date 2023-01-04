@@ -29,11 +29,11 @@ res_type: kb
 This KB article explains the steps to create a graph whose last column contains merged values. It can collapse and expand on click. 
 
 ## Solution
-1) Add a [report parameter ](../designing-reports-parameters)from type _Boolean_. Set it as follows:
+1) Add a [report parameter ]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})from type _Boolean_. Set it as follows:
  -  **AutoRefresh** : True
  -  **Name** : *paramMerged*
  -  **Value** : *True*
-2) Add the [Graph](../graphoverview). Click on the *barSeries* and from the **Property** grid -> **Layout** -> expand **MergedDataPoints**. Apply the setting below:
+2) Add the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}). Click on the *barSeries* and from the **Property** grid -> **Layout** -> expand **MergedDataPoints**. Apply the setting below:
  - **MergeModel**: *SingleSlice* 
  -  **TresholdMode**: *Count* 
  -  **TresholdValue**:
@@ -50,7 +50,7 @@ In this [expression]({% slug telerikreporting/designing-reports/connecting-to-da
 ```
 In this way, **+** will be shown when the columns are merged and **-** when they are expanded.
 
-4) Add a [Drillthrough Report Action](../designing-reports-interactivity-drill-through-report-links) to the textbox which will point to the same report (i.e. to itself):  **Action** -> **Navigate to Report** -> **Select a report source** -> **URL or file** -> fill the path to the report ->**Edit Parameters:**
+4) Add a [Drillthrough Report Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) to the textbox which will point to the same report (i.e. to itself):  **Action** -> **Navigate to Report** -> **Select a report source** -> **URL or file** -> fill the path to the report ->**Edit Parameters:**
  - **Parameter Name**: paramMerged
  - **Parameter Value**: = Parameters.paramMerged.Value = 'False'
 

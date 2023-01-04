@@ -161,4 +161,4 @@ In Telerik Reporting ,the default element for editing DateTime Parameters is **k
 
 ## See Also
 
-* [How to Create a Custom Parameter Editor](../html5-report-viewer-howto-custom-parameter-editor).
+* [How to Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%}).

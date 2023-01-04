@@ -23,7 +23,7 @@ res_type: kb
 
 By default, the **CSV rendering extension** generates plain text files, without any formatting, and the first row contains the headers for all columns. You may choose whether to have this header row or not.   
 
-In Telerik Reporting, **device information settings** are used to pass rendering parameters to a rendering extension. You can specify device information settings in a variety of ways. You can use the &lt;Telerik.Reporting&gt; configuration section to specify the rendering parameters globally. Programmatically, you can use the [ReportProcessor.RenderReport()](../m-telerik-reporting-processing-reportprocessor-renderreport) method. For more information about specifying rendering parameters globally, see [Configuring Telerik Reporting](../configuring-telerik-reporting).  
+In Telerik Reporting, **device information settings** are used to pass rendering parameters to a rendering extension. You can specify device information settings in a variety of ways. You can use the &lt;Telerik.Reporting&gt; configuration section to specify the rendering parameters globally. Programmatically, you can use the [ReportProcessor.RenderReport()](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method. For more information about specifying rendering parameters globally, see [Configuring Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).  
    
 ## Solution
    
@@ -94,12 +94,12 @@ AddressID,City,PostalCode,32,Montreal,H1Y 2H5
 32,Montreal,H1Y 2H5  
 ```
 
-> JSON-based configuration files can also be configured, see [extensions Element](../configuring-telerik-reporting-extensions).
+> JSON-based configuration files can also be configured, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).
 
 ## See Also  
  
-- [Configuring Telerik Reporting](../configuring-telerik-reporting)
+- [Configuring Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
 
-- [Device Information Settings](../device-information-settings)
+- [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
 
 - [Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/)

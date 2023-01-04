@@ -61,7 +61,9 @@ public class ReportsController : ReportsControllerBase
 }
 ````
 
-The idea is to introduce a static string parameter, set its value in the `CreateInstance` method and use this value in the `CreateDocument` method. Note that the ReportsController gets instantiated on each request, hence if the variable holding the culture name is not static, the value will be lost between the requests.
+The idea is to introduce a static string property, set its value in the `CreateInstance` method and use this value in the `CreateDocument` method.
+
+>note The ReportsController gets instantiated on each request. Therefore, if the variable holding the culture name is not static, the value will be lost between the requests.
 
 ## See Also
 

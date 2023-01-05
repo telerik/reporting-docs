@@ -30,7 +30,7 @@ res_type: kb
 
 
 ## Description
-This article elaborates on an error for not found telerikReportViewer script after creating a new HTML5-based report viewer using [the built-in item template wizard](../html5-report-viewer-quick-start). 
+This article elaborates on an error for not found telerikReportViewer script after creating a new HTML5-based report viewer using [the built-in item template wizard]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}). 
 When you create solution structure where the Report Viewer and the Reporting REST Service's hosts are separated, the generated telerikReportViewer script is referenced by relative path. The path is evaluated at run-time against the viewer application host. Instead, it should try to get the resource from the REST Service host. The same applies for scenario where the viewer connects to the Report Server to get the reports.
 
 ## Steps to Reproduce
@@ -63,5 +63,5 @@ As this is caused by a relative path to the resource, you can just reference the
 ```
 
 ## See Also
-- [How To: Use HTML5 Report Viewer With REST Service](../html5-report-viewer-quick-start)
-- [How To: Use HTML5 Report Viewer With Report Server](../html5-report-viewer-howto-use-it-with-reportserver)
+- [How To: Use HTML5 Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
+- [How To: Use HTML5 Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})

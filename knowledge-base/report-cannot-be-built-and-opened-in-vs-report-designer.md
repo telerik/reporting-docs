@@ -19,12 +19,12 @@ res_type: kb
 
 
 ## Description
-CLR report (i.e. CS or VB type inheriting from [Telerik.Reporting.Report](../t-telerik-reporting-report)) cannot be opened in the Visual Studio Report Designer.
+CLR report (i.e. CS or VB type inheriting from [Telerik.Reporting.Report](/api/telerik.reporting.report)) cannot be opened in the Visual Studio Report Designer.
 
 ## Solution
 1. Run the [Upgrade Wizard]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard %}).
 2. Build the project. 
-3. Resolve any errors and warnings for removed or obsolete properties by checking the [Upgrade](../installation-upgrading-newer-version). 
+3. Resolve any errors and warnings for removed or obsolete properties by checking the [Upgrade]({%slug telerikreporting/upgrade/overview%}). 
 
 Changes in the Report Designer will automatically resolve obsolete code warnings in the report definition. 
 

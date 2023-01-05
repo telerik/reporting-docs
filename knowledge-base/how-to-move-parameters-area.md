@@ -31,7 +31,7 @@ res_type: kb
 This article is applicable for versions prior to R1 2019, e.g. till [R3 2018 SP2](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2018-sp2-12-2-18-1129), including. After R1 2019 Telerik Web Report Viewers use Kendo splitter for resizing Parameters and Document map areas. At this point, there is no way to change the Parameters Areas position.
 
 ## Description
-The following article demonstrate how to display the Parameters area and/or Document Map area on different place than the default ones. By default, the [HTML5 Viewer's](../html5-report-viewer) parameters area is positioned on the right sight of the viewer and the Document Map - on the left sight.
+The following article demonstrate how to display the Parameters area and/or Document Map area on different place than the default ones. By default, the [HTML5 Viewer's]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) parameters area is positioned on the right sight of the viewer and the Document Map - on the left sight.
 
 ## Solution
 To change their location, you can customize the viewer's HTML by apply custom CSS to the viewer's elements. The provided examples are modified with custom JS and CSS rules. 
@@ -65,7 +65,7 @@ function updateDocumentMapArea(condition, marginType) {
 	}
 }
 ```
-Then apply these functions in callback function *updateUi* that will be called every time the UI needs an update (for more information, please check [the full list of options during viewer's initialization](../html5-report-viewer-jquery-fn-telerik-reportviewer)):
+Then apply these functions in callback function *updateUi* that will be called every time the UI needs an update (for more information, please check [the full list of options during viewer's initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})):
 ``` JavaScript
 updateUi: function (e) {
     var rv = e.data.sender;

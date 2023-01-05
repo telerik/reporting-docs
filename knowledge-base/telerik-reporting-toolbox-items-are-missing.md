@@ -63,7 +63,7 @@ To understand the cause of Toolbox issues and resolve them, perform the followin
 
     "C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv" /ResetSkipPkgs /log "&lt;my\_folder&gt;\ActivityLog.xml"
     
-6. Open the report for edit in the [Report Designer](../ui-report-designer) and switch to the Toolbox. Toolbox items should appear after some time that is required for recreating all items on the first load.
+6. Open the report for edit in the [Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) and switch to the Toolbox. Toolbox items should appear after some time that is required for recreating all items on the first load.
 
 
 > If the activity log did not help you determine the cause of the problem, send us the Visual Studio Log file that has been created after step 6 - &lt; my\_folder&gt;\ActivityLog.xml.

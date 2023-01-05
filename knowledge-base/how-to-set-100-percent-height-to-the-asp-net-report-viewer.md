@@ -49,6 +49,6 @@ In order to have the Web ReportViewer display with 100% height, you need to spec
 In some cases you would need to remove the default doctype (or use a less restrictive one) in order to get this working (e.g. IE 6).
 
 ## See Also
-  [ASP.NET Web Forms Report Viewer](../asp-net-report-viewer)
+  [ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
   
-  [How to: Add report viewer to a web page](../asp-net-report-viewer-embedding)
+  [How to: Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%})

@@ -24,9 +24,9 @@ The available rendering formats are provided from the REST Service based on the 
 Setting different rendering extensions in the viewer per report definition is not available out of the box. 
   
 ## Solution
-You may bind on the [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) event of the viewer 
+You may bind on the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) event of the viewer 
 and hide the unwanted export options based on the report name 
-(as taken from the [reportSource](../html5-report-viewer-reportviewer-methods-reportsource)_.report_ property). 
+(as taken from the [reportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()%})_.report_ property). 
 Add the following classes to the Angular project:  
 
 ``` TypeScript

@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-There are styling issues in the [Html5 Report Viewer](../using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview) and its wrappers when you use it with the Kendo themes version 2022.1.119. For example, the Preview button of the Report Paramaeters' area is not styled, the ComboBox parameter 
+There are styling issues in the [Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and its wrappers when you use it with the Kendo themes version 2022.1.119. For example, the Preview button of the Report Paramaeters' area is not styled, the ComboBox parameter 
 editors are broken when opening the dropdown, etc.
 
 ## Suggested Workarounds

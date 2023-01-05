@@ -65,4 +65,4 @@ The method **ResolveSpecificReportingConfiguration** must be called in the **Sta
 
 
 ## See Also
-[How to Connect to an Oracle Database](../how-to-sqldatasource-oracle)
+[How to Connect to an Oracle Database]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/-how-to/how-to-connect-to-an-oracle-database%})

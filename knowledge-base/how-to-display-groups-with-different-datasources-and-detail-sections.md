@@ -19,15 +19,15 @@ res_type: kb
 </table>
 
 ## Solution
-Usually grouping is used to group the data together by some criteria. To allow different sets of data within a single report you can use [SubReport](../report-items-sub-report) items or [Table/CrossTab/List]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}) items. Each of those items can have a separate data source and use its own groupings.
+Usually grouping is used to group the data together by some criteria. To allow different sets of data within a single report you can use [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) items or [Table/CrossTab/List]({% slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview %}) items. Each of those items can have a separate data source and use its own groupings.
 
 For more details, see:
 
-- [How to: Add groups to Report](../data-items-how-to-add-groups-to-report-item)
+- [How to: Add groups to Report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%})
 
-- [How to: Add groups to Table item and Crosstab item](../data-items-how-to-add-groups-to-table-item-and-crosstab-item)
+- [How to: Add groups to Table item and Crosstab item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%})
 
 ## See Also
-  [How to: Create a Master-Detail Report Using a SubReport Item](../designing-reports-master-detail)
+  [How to: Create a Master-Detail Report Using a SubReport Item]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-subreport-item%})
 
-  [How to: Create a Master-Detail Report Using a Table](../table-howto-creating-master-detail-reports-using-table)
+  [How to: Create a Master-Detail Report Using a Table]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-create-a-master-detail-report-using-a-table%})

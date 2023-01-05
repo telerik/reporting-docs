@@ -32,11 +32,11 @@ The Detail section is rendered for each data record, so if there is no data, the
 
 To mimic hiding of the SubReport item inside the main report, you could set its height to '0' (zero). 
 This way it will not occupy space when there is nothing to render. However, when there is data in the sub-report, it will grow automatically to occupy the needed space.
-Setting the height of the SubReport item to '0' would make it invisible in the report designer. If you need to select it, you could use the [Report Explorer](../ui-report-explorer).
+Setting the height of the SubReport item to '0' would make it invisible in the report designer. If you need to select it, you could use the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}).
 
 ### Forcing the sub-report referenced by the SubReport item to render blank/empty when there is no data
 
-+ When the sub-report's data source is not directly dependent on the main report's data source, simply hiding the sub-report's ReportHeader/ReportFooter when there is no data would do. You could use [Bindings](../expressions-bindings) to set the ReportHeader/ReportFooter section _Visible_ property. For example:
++ When the sub-report's data source is not directly dependent on the main report's data source, simply hiding the sub-report's ReportHeader/ReportFooter when there is no data would do. You could use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to set the ReportHeader/ReportFooter section _Visible_ property. For example:
 	1. Select sub-report ReportHeader/ReportFooter _Properties_ -> _Bindings_ -> click on the ellipses to open the Bindings editor
 	2. Click _New_ to add new Binding to the ReportHeader/ReportFooter section
 	3. Under _Property path_ choose _Visible_

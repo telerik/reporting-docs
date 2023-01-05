@@ -26,7 +26,7 @@ This KB article explains how to use MultiValue Report Parameter in a SQL query.
   
 ## Solution 
 
-A multivalue report parameter's value is evaluated as an **array of objects** - [Using Multivalue Parameters](../designing-reports-parameters-using-multivalue-parameter).
+A multivalue report parameter's value is evaluated as an **array of objects** - [Using Multivalue Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/using-multivalue-parameters%}).
 
 - The value can be used directly in **SQL Text commands**. For example:
     
@@ -98,7 +98,7 @@ The above is an example of a stored procedure and a function splitting a string 
   
 ## Notes
 
- On configuring the SqlDataSource component, you can join the selected values of the multivalue report parameter into a single string by using the [Join built-in function](../expressions-text-functions):  
+ On configuring the SqlDataSource component, you can join the selected values of the multivalue report parameter into a single string by using the [Join built-in function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}):  
   
 ```
 = IIf(Parameters.SelectedValues.Value Is Null,
@@ -108,6 +108,6 @@ The above is an example of a stored procedure and a function splitting a string 
 
 ## See Also
 
-[Using Parameters with the SqlDataSource component](../sql-data-source-using-parameters)
+[Using Parameters with the SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})
 
 [Configuring Stored Procedure with Temporary Tables](./use-temporary-tables-in-stored-procedure)

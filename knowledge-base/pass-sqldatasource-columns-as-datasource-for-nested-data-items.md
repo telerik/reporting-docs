@@ -38,8 +38,8 @@ select c.ProductCategoryId, c.Name,
 from Production.ProductCategory c
 ```
 The fields _ProductCategoryId_ and _Name_ can be used for the main data item. The field _JSONOUT_ can be used as a _Source_ for a 
-[JsonDataSource](../jsondatasource-component) providing data to the nested data item. This source that will become available only at 
-runtime can be [bound](../expressions-bindings) to the DataSource property of the child data item with the following Expression:
+[JsonDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%}) providing data to the nested data item. This source that will become available only at 
+runtime can be [bound]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the DataSource property of the child data item with the following Expression:
 ```
 Property path		|	Expression
 DataSource.Source	|	=ReportItem.DataObject.JSONOUT
@@ -48,7 +48,7 @@ DataSource.Source	|	=ReportItem.DataObject.JSONOUT
 ## Design Time Support
 The above Binding will replace the design time _JsonDataSource_ -> _Source_ property of the JsonDataSource attached to the 
 child data item. Therefore, you may assign a dummy JSON data with the same schema (in the particular case the schema of the _ProductSubcategory_ table) to the child data item's DataSource for design purposes. This will allow you to use the 
-[Fields](../expressions-global-objects#fields) Global Object to easily design the layout of the nested data item.
+[Fields]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#fields) Global Object to easily design the layout of the nested data item.
 
 ## Notes
 Applicable for MS SQL Server 2016 and later

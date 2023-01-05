@@ -33,9 +33,9 @@ We will use the **CSharp.NetFramework.WpfIntegrationDemo** project that is shipp
 
 *C:\Program Files (x86)\Progress\\<Version\>\Examples\CSharp*.   
   
-The report we chose for this example is part of our **ReportingLibrary** and is called *PopulationDensity*. It displays a *choropleth* based on the world population by countries. We will show how to change the colors and display an informational tooltip for the country under the mouse cursor, using a [Custom](../designing-reports-interactivity-custom-action) action.
+The report we chose for this example is part of our **ReportingLibrary** and is called *PopulationDensity*. It displays a *choropleth* based on the world population by countries. We will show how to change the colors and display an informational tooltip for the country under the mouse cursor, using a [Custom]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%}) action.
 
-Additionally, we will show you how to cancel a [NavigateToUrl](../designing-reports-interactivity-hyperlinks) action before it is executed, depending on a confirmation dialog.  
+Additionally, we will show you how to cancel a [NavigateToUrl]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%}) action before it is executed, depending on a confirmation dialog.  
   
 ## Solution 
 
@@ -197,9 +197,9 @@ In this article we demonstrated how to add interactivity and customizations to a
 
 ## See Also
 
-[Designing Reports - Actions](../designing-reports-interactivity-actions)
+[Designing Reports - Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
 
-[Custom Action](../designing-reports-interactivity-custom-action)
+[Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%})
 
 [How to add interactivity to a report using action event handlers in WinForms report viewer](./how-to-add-interactivity-to-a-report-using-action-event-handlers-in-winforms-report-viewer)
 

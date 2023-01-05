@@ -27,7 +27,7 @@ This article provides the required steps for binding the SubReport to the Main R
 
 ## Solution
 
-- Open the report that will be used as a subreport in the designer and use the following [binding to the report's DataSource property](../expressions-bindings): 
+- Open the report that will be used as a subreport in the designer and use the following [binding to the report's DataSource property]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}): 
 
 ````
 Property path: DataSource
@@ -36,7 +36,7 @@ Expression: =ReportItem.DataObject
 
  When the subreport is loaded by a SubReport item in the main report, the sub report will get the data associated with the SubReport item.
 
-- You can change the scope to a greater parent by using the [Parent keyword](../p-telerik-reporting-reportitembase-parent). For example:
+- You can change the scope to a greater parent by using the [Parent keyword](/api/telerik.reporting.reportitembase#collapsible-Telerik_Reporting_ReportItemBase_Parent). For example:
 
 ````
 Property path: DataSource
@@ -49,4 +49,4 @@ In case you need to display data in a tabular format, another approach for organ
 
 ## See Also
 
-[How to use the ReportItem.DataObject property in expressions](../data-items-how-to-use-data-object). 
+[How to use the ReportItem.DataObject property in expressions]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}). 

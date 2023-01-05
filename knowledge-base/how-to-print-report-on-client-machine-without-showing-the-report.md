@@ -23,7 +23,7 @@ res_type: kb
 </table>
 
 ## Important note
-This article is related only to [the legacy ASP.NET Web Forms Report Viewer](../asp-net-report-viewer). For other projects check the [Print a report directly at client-side without displaying it in a Viewer](https://www.telerik.com/support/kb/reporting/details/print-a-report-directly-at-client-side-without-displaying-it-in-a-viewer) KB article.
+This article is related only to [the legacy ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}). For other projects check the [Print a report directly at client-side without displaying it in a Viewer](https://www.telerik.com/support/kb/reporting/details/print-a-report-directly-at-client-side-without-displaying-it-in-a-viewer) KB article.
 
 
 ## Solution

@@ -181,9 +181,9 @@ In this article we demonstrated how to add interactivity and customizations to a
 
 ## See Also
 
-[Designing Reports - Actions](../designing-reports-interactivity-actions)
+[Designing Reports - Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
 
-[Custom Action](../designing-reports-interactivity-custom-action)
+[Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%})
 
 [How to add interactivity to a report using action event handlers in WPF report viewer](./how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer)
 

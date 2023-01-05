@@ -23,7 +23,7 @@ res_type: kb
 
 ## Description
 This article demonstrates how to combine the [Chart (HTML5)](https://www.telerik.com/products/aspnet-ajax/html-chart.aspx) component 
-from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer](../webforms-report-viewer-controls-overview) in one page.
+from Telerik UI for ASP.NET AJAX and the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) in one page.
 
 ## Solution
 1. Load all Kendo scripts on the page and disable the those embedded in the AJAX DLLs:

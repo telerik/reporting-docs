@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-The HTML5 Viewer is a client-side widget consisting of **Kendo UI** widgets and functionality for communicating with a Telerik Reporting RESt service instance. The Ui and the functionality are added via *JavaScript* and *CSS* files loaded on the same page. The error is thrown when you try to load a page with the [HTML5 Viewer](../html5-report-viewer).  
+The HTML5 Viewer is a client-side widget consisting of **Kendo UI** widgets and functionality for communicating with a Telerik Reporting RESt service instance. The Ui and the functionality are added via *JavaScript* and *CSS* files loaded on the same page. The error is thrown when you try to load a page with the [HTML5 Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).  
 
 ## Error Message
  

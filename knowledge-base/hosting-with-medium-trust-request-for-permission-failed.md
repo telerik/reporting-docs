@@ -40,9 +40,9 @@ The error will be bubbled in the web viewer's preview window when the Reporting 
 
 ## Solution  
 
-1. Separate the Reporting REST Service and host it in an environment with Full Trust- check [How To: Self Host Telerik Reporting REST Web API](../telerik-reporting-rest-host-http-service-using-self-hosting) and [How To: Add Telerik Reporting REST Web API to Web Application](../telerik-reporting-rest-host-http-service-using-web-hosting)(you can find the VS project template in the Reporting category of VS templates). This may require you to [enable CORS](https://www.asp.net/web-api/overview/security/enabling-cross-origin-requests-in-web-api) for the service to let the HTML5 Viewer communicate with it.
+1. Separate the Reporting REST Service and host it in an environment with Full Trust- check [How To: Self Host Telerik Reporting REST Web API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api%}) and [How To: Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})(you can find the VS project template in the Reporting category of VS templates). This may require you to [enable CORS](https://www.asp.net/web-api/overview/security/enabling-cross-origin-requests-in-web-api) for the service to let the HTML5 Viewer communicate with it.
 
-2. [Export reports programmatically](../programmatic-exporting-report) without displaying them. Please check the [Medium Trust Support](../asp-net-medium-trust-support) article for more details, which rendering formats work.
+2. [Export reports programmatically]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) without displaying them. Please check the [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%}) article for more details, which rendering formats work.
 
 
 

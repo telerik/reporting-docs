@@ -22,10 +22,10 @@ res_type: kb
 
 
 ## Description
-Double-click in the Html5 Viewer content area switches between the __Scale modes__ *__full page__*, __*page width*__ and __*custom scale factor*__ - [Report Viewer Initialization](../html5-report-viewer-jquery-fn-telerik-reportviewer). The double-tap functionality is set via [kendoTouch](../../kendo-ui/api/javascript/mobile/ui/touch) settings on creating the viewer's HTML elements in the telerikReportViewer JavaScript file.
+Double-click in the Html5 Viewer content area switches between the __Scale modes__ *__full page__*, __*page width*__ and __*custom scale factor*__ - [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). The double-tap functionality is set via [kendoTouch](https://docs.telerik.com/kendo-ui/api/javascript/mobile/ui/touch) settings on creating the viewer's HTML elements in the telerikReportViewer JavaScript file.
 
 ## Solution
-The easiest option to remove this functionality is by unbinding the "doubletap" event in the __pageReady__ event of the viewer. For this purpose you may add the following handler for the __pageReady__ [Client Event](../html5-report-viewer-reportviewer-events-pageready):
+The easiest option to remove this functionality is by unbinding the "doubletap" event in the __pageReady__ event of the viewer. For this purpose you may add the following handler for the __pageReady__ [Client Event]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args)%}):
 ```JavaScript
 <script>
     function onReady(e, args) {

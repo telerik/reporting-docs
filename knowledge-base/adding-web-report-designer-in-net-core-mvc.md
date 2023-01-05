@@ -29,9 +29,9 @@ res_type: kb
 
 ## Description
 
-This KB article lists all necessary steps for integrating our [Web Report Designer](../web-report-designer) in .NET Core MVC 3.1 project. 
+This KB article lists all necessary steps for integrating our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in .NET Core MVC 3.1 project. 
 It is based on [How To Host Reports Service In ASP.NET Core 3+]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %})
-and [How to Set Up the WebReportDesigner in .NET Core Applications](../web-report-designer-setup-in-net-core). The same approach can be applied for .NET Core MVC 3.0 project.
+and [How to Set Up the WebReportDesigner in .NET Core Applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application%}). The same approach can be applied for .NET Core MVC 3.0 project.
  
 
 ## Solution

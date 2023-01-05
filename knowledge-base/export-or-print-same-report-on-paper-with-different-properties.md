@@ -23,7 +23,7 @@ res_type: kb
 Printer settings and Device Info settings passed to the _ReportProcessor_ have lower priority than report _PageSettings_. Here we suggest two approaches when it is necessary to print the same report on different paper types/sizes.
 
 ## Solution
-The [PageSettings](../properties-t-telerik-reporting-drawing-pagesettings) of the Report will be respected upon rendering in physical format and printing.  
+The [PageSettings](/api/telerik.reporting.drawing.pagesettings) of the Report will be respected upon rendering in physical format and printing.  
 
 1. Create a copy of the report for each specific paper type/size. The difference between the reports will be the _Report.PageSettings_ property, i.e in the corresponding _PaperKind_, _PaperSize_, _Margins_, etc.
 

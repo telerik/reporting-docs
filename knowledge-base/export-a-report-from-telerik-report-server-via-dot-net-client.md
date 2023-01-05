@@ -21,9 +21,9 @@ res_type: kb
 
 [Telerik Report Server](https://www.telerik.com/report-server) has its REST API exposed, allowing you to consume resources from third-party applications as an administrator, after logging in. You can find examples with JavaScript client in the REST API section of the online documentation:  
 
-- [Login and saving the access token for further usage](../../report-server/implementer-guide/apis/rest-api/examples/javascript/login)
-- [Resources - listing resources like reports available on the Report Server](../../report-server/implementer-guide/apis/rest-api/examples/javascript/get-resources)
-- [Export a report by getting its ID first](../../report-server/implementer-guide/apis/rest-api/examples/javascript/export) 
+- [Login and saving the access token for further usage](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/examples/javascript/login)
+- [Resources - listing resources like reports available on the Report Server](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/examples/javascript/get-resources)
+- [Export a report by getting its ID first](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/examples/javascript/export) 
   
 The same JavaScript client can be written as a .NET client that executes requests and handles their response in code. 
 
@@ -148,6 +148,6 @@ Please note that this is not an end solution, but an example illustrating how to
 
 ## See Also
 
-[REST API Reference](../../report-server/implementer-guide/apis/rest-api/api-reference)
+[REST API Reference](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/api-reference)
 
 [Displaying Reports From Report Server Through Custom Report Source Resolver](./displaying-reports-from-report-server-through-custom-report-source-resolver)

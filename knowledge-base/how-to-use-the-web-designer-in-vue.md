@@ -21,7 +21,6 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
 
 The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is built upon HTML5, CSS, JavaScript, jQuery and Kendo.
@@ -106,8 +105,8 @@ npm init vue@latest
 	````
 npm run dev
 ````
-  
-	
+
+
 ## See Also
 
-[Download the final Vue.js application](resources/reporting-vue.zip)
+* [Download the final Vue.js application](resources/reporting-vue.zip)

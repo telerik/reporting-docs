@@ -71,5 +71,5 @@ Disable the **RadCompression** to the [Reporting REST service]({% slug telerikre
 
  Where the *handlerPath* should point to the Reporting REST Service - the HTML5 Viewer's *serviceUrl*.  
   
- For more information about the above configuration, please follow the [RadCompression](../../devtools/aspnet-ajax/controls/radcompression) help article.
+ For more information about the above configuration, please follow the [RadCompression](https://docs.telerik.com/devtools/aspnet-ajax/controls/radcompression) help article.
 

@@ -35,9 +35,9 @@ Starting with [R1 2018 SP3 12.0.18.416](https://www.telerik.com/support/whats-ne
 Removing _HttpContext.Current_ in the report rendering thread was a necessary change. Its purpose was to allow the rendering engine to use a dedicated rendering thread queue with configurable count, which should significantly improve product's performance.
 
 ## Solution
-To access the current user context, you can use the [Telerik.Reporting.Processing.UserIdentity.Current](../p-telerik-reporting-processing-useridentity-current) static property. It is also possible to use the new [UserIdentity ](../expressions-global-objects#useridentity)object in the expression context as a global object: _=UserIdentity_.  
+To access the current user context, you can use the [Telerik.Reporting.Processing.UserIdentity.Current](/api/telerik.reporting.processing.useridentity#collapsible-Telerik_Reporting_Processing_UserIdentity_Current) static property. It is also possible to use the new [UserIdentity ]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}#useridentity)object in the expression context as a global object: _=UserIdentity_.  
 
-With the changes introduced in [Telerik Reporting 12.1.18.620](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620) it is possible to use the [UserIdentity.Context](../p-telerik-reporting-processing-useridentity-context) property to store user objects (for example from the _HttpContext_).
+With the changes introduced in [Telerik Reporting 12.1.18.620](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2018-sp1-12-1-18-620) it is possible to use the [UserIdentity.Context](/api/telerik.reporting.processing.useridentity#collapsible-Telerik_Reporting_Processing_UserIdentity_Context) property to store user objects (for example from the _HttpContext_).
 **UserIdentity.Context** can be filled up with the needed values in the _ReportsController_ by overriding the **GetUserIdentity()** method. Here is a sample code :  
 
 ```CSharp

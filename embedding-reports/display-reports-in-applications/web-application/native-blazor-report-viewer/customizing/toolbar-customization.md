@@ -16,7 +16,7 @@ The customization is done similar to the [Blazor Editor component](https://docs.
 
 ## Available Tools
 
-Here is the list of all the Tools that may be used in the toolbar:
+Here is the list of all the Tools that may be used in the toolbar in their default order of appearance as may be seen in the [Native Blazor Report Viewer Overview]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}):
 
 * `NavigateBackward`
 * `NavigateForward`

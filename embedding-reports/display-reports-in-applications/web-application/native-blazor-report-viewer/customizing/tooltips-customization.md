@@ -43,7 +43,7 @@ The following example shows how to set a tooltip template. It is a direct copy o
 </ReportViewer>
 ```` 
 
->note There is a bug in the [Blazor Tooltip component](https://docs.telerik.com/blazor-ui/components/tooltip/overview) that's used in the viewer, which causes the tooltip not to be shown when hovering over adjacent elements - [Tooltip not shown consistently when targets are next to each other](https://github.com/telerik/blazor/issues/5523)
+>note There is a bug in the [Blazor Tooltip component](https://docs.telerik.com/blazor-ui/components/tooltip/overview) that's used in the viewer, which causes the tooltip not to be shown when hovering over adjacent elements.
 
 ## See Also
 

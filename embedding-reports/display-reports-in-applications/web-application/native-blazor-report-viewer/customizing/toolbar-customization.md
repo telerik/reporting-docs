@@ -3,7 +3,7 @@ title: Customize the Toolbar
 page_title: Customizing Native Blazor Viewer's Toolbar
 description: How to Customize the Toolbar of the Native Blazor Report Viewer
 slug: native-blazor-report-viewer/toolbar-customization
-tags: custom,editor,widget,parameter,blazor,toolbar,menu
+tags: custom,editor,widget,blazor,toolbar,menu
 published: True
 position: 4
 ---

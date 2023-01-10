@@ -166,4 +166,4 @@ In this example, we set the `ListView` widget to be used for both the `Parameter
 
 ## See Also
 
-* [Blazo UI ListView Templates](https://docs.telerik.com/blazor-ui/components/listview/templates)
+* [Blazor UI ListView Templates](https://docs.telerik.com/blazor-ui/components/listview/templates)

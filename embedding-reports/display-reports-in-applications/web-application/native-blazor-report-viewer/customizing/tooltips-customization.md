@@ -18,7 +18,7 @@ This article explains how to customize the tooltips of the Report and the viewer
 
 You may provide a custom template for the tooltips used in the Blazor Native Report Viewer. The template receives a context of type `TooltipTemplateContext`, which has the following properties:
 
-* `Title`, _string_ - the title attribute of the underlying HTML element. This is provided by the [Blazor Tooltip component](https://docs.telerik.com/blazor-ui/components/tooltip/overview), and not used in the Report Viewer. The tooltips are set through data attributes.
+* `Title`, _string_ - the title attribute of the underlying HTML element. This is used by the [Blazor Tooltip component](https://docs.telerik.com/blazor-ui/components/tooltip/overview), and not used in the Report Viewer. The tooltips are set through data attributes.
 * `DataAttributes`, _Dictionary<string, string>_ - a dictionary of all data attributes set to the element. The keys are all converted from _kebab-case_ to _camelCase_, and the _data-_ prefix is stripped. So for instance `data-tooltip-title` is accessed through `tooltipTitle`.
 
 The Blazor Native Report Viewer provides two data attributes, which hold information:
@@ -30,7 +30,7 @@ The Blazor Native Report Viewer provides two data attributes, which hold informa
 
 The following example shows how to set a tooltip template. It is a direct copy of the default tooltip template:
 
-````HTML
+````CSHTML
 <ReportViewer
 	ServiceUrl="/api/reports"
 	...>

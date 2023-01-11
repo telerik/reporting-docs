@@ -243,5 +243,13 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 				<p>Default value: <strong>700px</strong></p>
 			</td>
 		</tr>
+		<tr>
+			<td>Tools</td>
+			<td>
+				<p><i>List&lt;IReportViewerTool&gt;, optional;</i></p>
+				<p>A collection of tools that will be displayed in the toolbar.</p>
+				<p>By default populates <strong>all available tools</strong> as listed in the [Customize the Toolbar of the Blazor Native Report Viewer]({%slug Customize the Toolbar of the Blazor Native Report Viewer%}) article.</p>
+			</td>
+		</tr>
 	</table>
 </body>

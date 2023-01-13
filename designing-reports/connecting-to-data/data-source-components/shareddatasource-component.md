@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 </style>
 # SharedDataSource Component
 
->note The SharedDataSource component as of __R1 2023__ is fully supported in the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}). Currently, the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) can open reports that use __SharedDataSource__ components, however, they cannot be edited from it. 
+> The SharedDataSource component as of __R1 2023__ is fully supported in the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}). Currently, the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) can open reports that use __SharedDataSource__ components, however, they cannot be edited from it. 
 
 The [SharedDataSource](/reporting/api/Telerik.Reporting.SharedDataSource) component enables report designers to easily create and reuse a data source component across multiple reports. 
 
@@ -37,7 +37,7 @@ The `SharedDataSource` component currently supports the following [data source c
 
 * [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
 
-> Existing data source components can be configured into __SharedDataSource__ components via the __Explorer__ tab in the __Web Report Designer__. Left-clicking the data source component will open the _context menu_ from which the option __Save As Shared Data Source__ can be chosen.  
+>note Existing data source components can be configured into __SharedDataSource__ components via the __Explorer__ tab in the __Web Report Designer__. Left-clicking the data source component will open the _context menu_ from which the option __Save As Shared Data Source__ can be chosen.  
 
 ## Configuring the Component
 

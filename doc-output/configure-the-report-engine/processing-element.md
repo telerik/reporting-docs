@@ -42,10 +42,21 @@ XML-based configuration file:
 				<parameter name="directory" value="c:\\CommonResourcesDirectory\\" />
 			</parameters>
 		</resourceResolver>-->
-		<!-- The element below represents a custom implementation of resource resolver:-->
+		<!-- The element below represents a custom implementation of resource resolver-->
+		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+		e.g. "CSharp.Net6.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net6.Html5IntegrationDemo"-->
 		<resourceResolver provider="custom">
 			<parameters>
-				<parameter name="typeName" value="CustomResourceResolver.RawDataResourceResolver, CustomResourceResolver" />
+				<parameter name="typeName" value="Namespace.CustomResourceResolverClass, AssemblyName" />
+				<parameter name="constructorParameter1" value="constructorParameterValue1" />
+			</parameters>
+		</resourceResolver>
+		<!-- The element below represents a custom implementation of a sharedDataSourcer resolver-->
+		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+		e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"-->
+		<sharedResourceResolver provider="custom">
+			<parameters>
+				<parameter name="typeName" value="Namespace.CustomSharedDataSourceResolverClass, AssemblyName" />
 				<parameter name="constructorParameter1" value="constructorParameterValue1" />
 			</parameters>
 		</resourceResolver>
@@ -68,17 +79,39 @@ JSON-based configuration file:
 			//		"value": "C:\\Temp\\RestServiceStorage"
 			//	}
 			//]
-			// The element below represents a custom implementation of resource resolver:
+			// The element below represents a custom implementation of resource resolver
+			//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net6.Html5IntegrationDemo"
 			"provider": "custom",
 			"parameters": [
 				{
 					"name": "typeName",
-					"value": "CustomResourceResolver.RawDataResourceResolver, CustomResourceResolver"
+					"value": "Namespace.CustomResourceResolverClass, AssemblyName"
 				},
 				{
 					"name": "constructorParameter1",
 					"value": "constructorParameterValue1"
 				}
+			]
+		},
+		"sharedDataSourceResolver": {
+			// The element below represents an implementation of a SharedDataSource resolver that uses a path provider:
+			//"provider": "path",
+			//"parameters": [
+			//  {
+			//    "name": "directory",
+			//    "value": "c:\\CommonSharedDataSources\\"
+			//  }
+			//],
+
+			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"
+			"provider": "custom",
+			"parameters": [
+			{
+				"name": "typename",
+				"value": "Namespace.CustomSharedDataSourceResolverClass, AssemblyName"
+			}
 			]
 		}
 	}
@@ -112,6 +145,20 @@ This __ResourceResolver__ is intended to be used in scenarios where the resource
 | ------ | ------ |
 |Attributes| __provider__ – required string attribute. Determines the provider type of the ResourceResolver instance. Only two types are supported:<ul><li>__path__ - Specifies to use an internal ResourceResolver instance that will resolve the resources from a given directory specified in the `<parameters>` element.</li><li>__custom__ - Specifies to use a custom ResourceResolver instance that implements [Telerik.Reporting.Interfaces.IResourceResolver](/reporting/api/Telerik.Reporting.Interfaces.IResourceResolver) interface. It will be instantiated at runtime from the type name specified in the `<parameters>` element.</li></ul>|
 |Child elements| __parameters__ – specifies a collection of parameters for the resource resolver in the `<resourceResolver>` element. Only one __parameters__ element can be used in the `<resourceResolver>` element.<br/>__Supported parameters for *path* provider__<ul><li>__name__ : _directory_</li><li>__value__ : the path to the directory that contains the resources to be resolved.</li></ul>__Supported parameters for *custom* provider__<ul><li>__name__ : _typeName_</li><li>__value__ : the assembly qualified name of the type that implements the [Telerik.Reporting.Interfaces.IResourceResolver](/reporting/api/Telerik.Reporting.Interfaces.IResourceResolver) interface.</li></ul>The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. If no additional parameters are specified, the parameterless constructor will be used.|
+|Parent element| __processing__ - specifies the parent element of the Telerik Reporting configuration settings.|
+
+### SharedDataSourceResolver
+
+__sharedDataSourceResolver__ element allows to alter the default shared DataSource(`.sdsx`)-resolving mechanism. This element determines what instance of the [Telerik.Reporting.Interfaces.ISharedDataSourceResolver](/reporting/api/Telerik.Reporting.Interfaces.ISharedDataSourceResolver) interface will be used by the processing engine to resolve the shared DataSources references that are specified in the report definition.
+
+This __SharedDataSourceResolver__ is intended to be used in scenarios where the `.sdsx` files are not retrieved from a local file path but rather obtained from a different type of storage. As an example, if a custom [Telerik.Reporting.Interfaces.ISharedDataSourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ISharedDataSourceStorage) is implemented where the `.sdsx` files are stored in a database, then a custom custom `SharedDataSourceResolver` would be necessary to provide specific logic that will retrieve the necessary `.sdsx` XML from the database and will then [Deserialize]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}#deserialize-from-xml) to an instance of the [Telerik.Reporting.DataSource](/reporting/api/Telerik.Reporting.DataSource) class and return it in the `Resolve` method. 
+
+### `<sharedDataSourceResolver>` element
+
+|   |   |
+| ------ | ------ |
+|Attributes| __provider__ – required string attribute. Determines the provider type of the SharedDataSourceResolver instance. Only two types are supported:<ul><li>__path__ - Specifies to use an internal SharedDataSourceResolver instance that will resolve the resources from a given directory specified in the `<parameters>` element.</li><li>__custom__ - Specifies to use a custom SharedDataSourceResolver instance that implements [Telerik.Reporting.Interfaces.ISharedDataSourceResolver](/reporting/api/Telerik.Reporting.Interfaces.ISharedDataSourceResolver) interface. It will be instantiated at runtime from the type name specified in the `<parameters>` element.</li></ul>|
+|Child elements| __parameters__ – specifies a collection of parameters for the resource resolver in the `<sharedDataSourceResolver>` element. Only one __parameters__ element can be used in the `<sharedDataSourceResolver>` element.<br/>__Supported parameters for *path* provider__<ul><li>__name__ : _directory_</li><li>__value__ : the path to the directory that contains the resources to be resolved.</li></ul>__Supported parameters for *custom* provider__<ul><li>__name__ : _typeName_</li><li>__value__ : the assembly qualified name of the type that implements the [Telerik.Reporting.Interfaces.ISharedDataSourceResolver](/reporting/api/Telerik.Reporting.Interfaces.ISharedDataSourceResolver) interface.</li></ul>The parameters collection of the __custom__ provider can contain additional entries that will be passed to the constructor of the type. If no additional parameters are specified, the parameterless constructor will be used.|
 |Parent element| __processing__ - specifies the parent element of the Telerik Reporting configuration settings.|
 
 ## See Also

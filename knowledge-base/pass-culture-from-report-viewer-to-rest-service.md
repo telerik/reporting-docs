@@ -31,7 +31,7 @@ The reports are rendered with the culture of the REST Service. If you need to re
 ## Solution
 
 ### WPF and WinForms Report Viewers
-You may pass the culture to the Telerik Reporting REST Service in the [RenderingBegin event of the WPF/Winforms Viewer](../e-telerik-reportviewer-wpf-reportviewer-renderingbegin). The argument [Telerik.ReportViewer.Common.RenderingBeginEventArgs](../t-telerik-reportviewer-common-renderingbegineventargs) _args_ has a [DeviceInfo](../p-telerik-reportviewer-common-renderingbegineventargs-deviceinfo) property, where you may set the new culture with a code like:
+You may pass the culture to the Telerik Reporting REST Service in the [RenderingBegin event of the WPF/Winforms Viewer](/api/telerik.reportviewer.wpf.reportviewer#Telerik_ReportViewer_Wpf_ReportViewer_RenderingBegin). The argument [Telerik.ReportViewer.Common.RenderingBeginEventArgs](/api/telerik.reportviewer.common.renderingbegineventargs) _args_ has a [DeviceInfo](/api/telerik.reportviewer.common.renderingbegineventargs#collapsible-Telerik_ReportViewer_Common_RenderingBeginEventArgs_DeviceInfo) property, where you may set the new culture with a code like:
 ```CSharp
 private void ReportViewer1_RenderingBegin(object sender, Telerik.ReportViewer.Common.RenderingBeginEventArgs args)
 {
@@ -42,7 +42,7 @@ private void ReportViewer1_RenderingBegin(object sender, Telerik.ReportViewer.Co
 ```
 
 ### HTML5-based Report Viewers
-The HTML5-based report viewers also have a [renderingBegin(e, args) event](../t-telerik-reportviewer-common-renderingbegineventargs) with second argument(*args*) that has a **deviceInfo** propery that may be used to pass the culture to the report. For example:
+The HTML5-based report viewers also have a [renderingBegin(e, args) event](/api/telerik.reportviewer.common.renderingbegineventargs) with second argument(*args*) that has a **deviceInfo** propery that may be used to pass the culture to the report. For example:
 
 ```js
     renderingBegin(e, { deviceInfo }) {
@@ -52,6 +52,6 @@ The HTML5-based report viewers also have a [renderingBegin(e, args) event](../t-
     }
 ```
 ## Notes
-You need to have the [Report localized](../advanced-localizing-reports) for the corresponding "yourCulture".  
+You need to have the [Report localized]({%slug telerikreporting/designing-reports/localizing-reports%}) for the corresponding "yourCulture".  
 
-Another approach you may use is through a [custom User Function](../expressions-user-functions) - see the article section [Centralizing the localization of reports](../advanced-localizing-reports#centralizing-the-localization-of-reports) for details.
+Another approach you may use is through a [custom User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) - see the article section [Centralizing the localization of reports]({%slug telerikreporting/designing-reports/localizing-reports%}#centralizing-the-localization-of-reports) for details.

@@ -68,7 +68,7 @@ public void AddInSet(string key, string value)
 
 The `System.Diagnostics.Trace.WriteLine(error)` code line means that if a trace listener is attached, the error message above will be present in the trace listener log.
 
-The error message might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([`FileStorage`](/api/Telerik.Reporting.Cache.File.FileStorage.html) is not suitable for such environment.
+The error message might mean that either the file storage got corrupted, or the service is in a multiple-instance environment (web farm environment) and the default implementation of the REST service storage ([`FileStorage`](/api/Telerik.Reporting.Cache.File.FileStorage) is not suitable for such environment.
 
 Depending on the environment specifications, you can approach the issue in the following ways:
 
@@ -80,6 +80,6 @@ It is recommended that you create a backup before resetting the storage.
 
 ## See Also
 
-* [REST Service Storage Overview](../telerik-reporting-rest-service-storage)
+* [REST Service Storage Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
 * [Configuring MS SQL Database Storage]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-configure-an-mssql-database-storage %})
 * [Using Redis Storage]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage %})

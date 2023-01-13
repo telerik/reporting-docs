@@ -46,4 +46,4 @@ We have narrowed down this error to three categories:
 
 ## See Also
 
-[Design Considerations for Out-proc Session State](../asp-net-report-viewer-outproc).
+[Design Considerations for Out-proc Session State]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview%}).

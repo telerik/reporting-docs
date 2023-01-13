@@ -42,7 +42,7 @@ Make sure the following are correctly set up:
 
 - Assembly References
 
-    The [AssemblyReferences](../configuring-telerik-reporting#-telerik-reporting-configuration-section) section contains assembly descriptions that are used to resolve the necessary assemblies during design and/or processing stage. When designing a report that uses ObjectDataSource in Visual Studio Designer, the engine will add the necessary AssemblyReferences entries in the configuration file of the current project. However, when you preview the report in a standalone application, you need to add these entries in the application configuration file so the processing engine would be able to resolve the necessary types.
+    The [AssemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}#-telerik-reporting-configuration-section) section contains assembly descriptions that are used to resolve the necessary assemblies during design and/or processing stage. When designing a report that uses ObjectDataSource in Visual Studio Designer, the engine will add the necessary AssemblyReferences entries in the configuration file of the current project. However, when you preview the report in a standalone application, you need to add these entries in the application configuration file so the processing engine would be able to resolve the necessary types.
 
 ## Notes
 
@@ -56,6 +56,6 @@ To debug the data access layer while using the Visual Studio Report Designer, yo
 
 [The Connection Strings Reference](https://www.connectionstrings.com/)
 
-[Visual Studio Problems](../troubleshooting-visual-studio-problems)
+[Visual Studio Problems]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%})
 
-[ObjectDataSource Component Problems](../troubleshooting-data-source-components-configurations#objectdatasource-component)
+[ObjectDataSource Component Problems]({%slug telerikreporting/designing-reports/connecting-to-data/troubleshooting/data-source-components-problems%}#objectdatasource-component)

@@ -39,7 +39,7 @@ The existing print functionality in web viewers is based on the following:
 
 In the above scenario, the PDF plugin is a must for the browser. The approach is based on PDF export because applications running in a browser do not have permissions to access the machine (technology restrictions). For more details, please check [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}).
 
-To export the report in a PDF file, you can use a [ReportProcessor](../api/Telerik.Reporting.Processing.ReportProcessor.html) in code instead of a viewer.
+To export the report in a PDF file, you can use a [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) in code instead of a viewer.
 
 ## Notes
 

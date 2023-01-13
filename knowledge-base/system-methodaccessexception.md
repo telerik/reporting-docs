@@ -34,7 +34,7 @@ The above error appears on the page when running a web application with the HTML
 
 ## Possible Cause
   
-The common reason for this error is that some assemblies that are required by the Reporting ASP.NET Web API service are missing - [Requirements for using Telerik Reporting REST WebAPI service](../telerik-reporting-rest-service-web-api-system-requirements).  
+The common reason for this error is that some assemblies that are required by the Reporting ASP.NET Web API service are missing - [Requirements for using Telerik Reporting REST WebAPI service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/requirements%}).  
   
 ## Solution  
   
@@ -65,4 +65,4 @@ To do this, add the following [bindingRedirects](ttps://docs.microsoft.com/en-us
 ```
 ## See Also
 
-[How To: Add Telerik Reporting REST Web API to Web Application](../telerik-reporting-rest-host-http-service-using-web-hosting).  
+[How To: Add Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%}).  

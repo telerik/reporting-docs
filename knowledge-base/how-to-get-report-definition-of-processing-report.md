@@ -23,7 +23,7 @@ res_type: kb
 When report definition is modified with code its final state is generally unknown. It is actually the report definition of the Processing Report. For debugging purposes it is helpful to know its layout after all modifications in the code. This KB explains how to get it.
 
 ## Solution
-We may use the _ItemDataBound_ event of the Report to [serialize the report definition](../programmatic-xml-serialization#serialize-to-xml) and save it to a TRDX/XML file, or pack it into a TRDP file. Here is a sample code :
+We may use the _ItemDataBound_ event of the Report to [serialize the report definition]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}#serialize-to-xml) and save it to a TRDX/XML file, or pack it into a TRDP file. Here is a sample code :
   
 
 ``` CSharp

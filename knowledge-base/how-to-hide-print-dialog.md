@@ -73,7 +73,7 @@ reportProcessor.PrintReport(typeReportSource, printerSettings)
 
 ## See Also
 
-* [ReportProcessor.PrintController](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_PrintController)
-* [ReportProcessor.PrintReport](/api/telerik.reporting.processing.reportprocessor.html#collapsible-Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_)
+* [ReportProcessor.PrintController](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_PrintController)
+* [ReportProcessor.PrintReport](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_PrintReport_Telerik_Reporting_ReportSource_System_Drawing_Printing_PrinterSettings_)
 * [System.Drawing.Printing.PrintController](http://msdn2.microsoft.com/en-us/library/bffaf7th)
 * [System.Drawing.Printing.StandardPrintController](http://msdn2.microsoft.com/en-us/library/xsy01e55)

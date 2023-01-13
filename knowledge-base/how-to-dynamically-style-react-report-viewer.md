@@ -37,41 +37,41 @@ Then, whenever we update the styles state, the page will be updated and the new 
 
 For example, we can hide the report viewer through a button with the following code:
 
-````JavaScript
+````TypeScript
 import React, { useState } from 'react';
 import { TelerikReportViewer } from '@progress/telerik-react-report-viewer/dist/cjs/main';
 
 export function ReportViewer() {
 
-    let viewer;
+	let viewer;
 
-    const [styles, setStyles] = useState({
-        position: 'absolute',
-        left: '5px',
-        right: '5px',
-        top: '40px',
-        bottom: '5px',
-        overflow: 'hidden',
-        clear: 'both',
-        fontFamily: 'ms sans serif'
-    })
+	const [styles, setStyles] = useState({
+		position: 'absolute',
+		left: '5px',
+		right: '5px',
+		top: '40px',
+		bottom: '5px',
+		overflow: 'hidden',
+		clear: 'both',
+		fontFamily: 'ms sans serif'
+	})
 
-    return (
-        <>
-            <TelerikReportViewer
-                ref={el => viewer = el}
-                serviceUrl="http://localhost:59655/api/reports/"
-                reportSource={{
-                    report: 'Barcodes Report.trdp',
-                }}
-                viewerContainerStyle={styles}
-                viewMode="INTERACTIVE"
-                scaleMode="SPECIFIC"
-                scale={1.0}
-                enableAccessibility={false} />
-            <button onClick={() => setStyles(prev => ({ ...prev, display: "none" }))}>Hide</button>
-        </>
-    )
+	return (
+		<>
+			<TelerikReportViewer
+				ref={el => viewer = el}
+				serviceUrl="http://localhost:59655/api/reports/"
+				reportSource={{
+					report: 'Barcodes Report.trdp',
+				}}
+				viewerContainerStyle={styles}
+				viewMode="INTERACTIVE"
+				scaleMode="SPECIFIC"
+				scale={1.0}
+				enableAccessibility={false} />
+			<button onClick={() => setStyles(prev => ({ ...prev, display: "none" }))}>Hide</button>
+		</>
+	)
 }
 ````
 

@@ -32,7 +32,7 @@ res_type: kb
 
 ## Description
 
-As of [Progress® Telerik® Reporting R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify device information settings per particular report as part of its definition, configuring the [RuntimeSettings](../p-telerik-reporting-report-runtimesettings) report property. 
+As of [Progress® Telerik® Reporting R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify device information settings per particular report as part of its definition, configuring the [RuntimeSettings](/api/telerik.reporting.report#collapsible-Telerik_Reporting_Report_RuntimeSettings) report property. 
 
 Besides setting the export parameters for particular extension, it allows hiding it and changing its description when listed to the end-user. 
 
@@ -62,10 +62,10 @@ report.RuntimeSettings.Add(pdfSettings);
 
 When exporting a report programmatically, you may also provide it with specific to the report device information settings.
 
-The respective method takes a [HashTable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.hashtable?redirectedfrom=MSDN&view=net-5.0) argument representing the desired export parameters for this particular rendering operation: [RenderReport](../overload-telerik-reporting-processing-reportprocessor-renderreport).
+The respective method takes a [HashTable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.hashtable?redirectedfrom=MSDN&view=net-5.0) argument representing the desired export parameters for this particular rendering operation: [RenderReport](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_).
 
 ## See Also
 
-[extensions Element](../configuring-telerik-reporting-extensions)
+[extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
 
 [How to limit export options in the report viewer](./limit-export-options-in-report-viewer)

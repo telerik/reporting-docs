@@ -26,7 +26,7 @@ res_type: kb
 
 
 ## Description
-If you create a [Custom Parameter Editor](../html5-report-viewer-howto-custom-parameter-editor) and enable Accessibility for the viewer (_enableAccessibility: true_), 
+If you create a [Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%}) and enable Accessibility for the viewer (_enableAccessibility: true_), 
 the result is an empty parameters area. There is no trace of the parameters in the HTML DOM either.
 The issue is logged in our public feedback portal - [The Html5 Viewer Parameters area disappears when using Custom Editor Parameters and EnableAccessibility is True](https://feedback.telerik.com/reporting/1537926-html5-viewer-parameters-area-disappears-when-using-custom-editor-parameters-and-enableaccessibility-is-true). 
 

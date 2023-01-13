@@ -20,12 +20,12 @@ res_type: kb
 
 ## Description
 
-Missing icon of the DateTime parameter editor in the [HTML5 ASP.NET WebForms ReportViewer](../webforms-report-viewer-controls-overview).   
+Missing icon of the DateTime parameter editor in the [HTML5 ASP.NET WebForms ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).   
 In the browser's console (**F12 Developer Tools**) you will see an error related to loading **http://&lt;host&gt;/BlueOpal/sprite.png**. The sprite is related to Telerik Kendo UI CSS used by the HTML5 Viewer.  
   
 ## Solution 
 
-1. Replace the HTML5 ASP.NET WebForms ReportViewer with the [HTML5 Javascript Viewer](../html5-report-viewer). It is the same viewer, where settings will have to be applied in JavaScript instead of C#|VB<span>.</span>NET.
+1. Replace the HTML5 ASP.NET WebForms ReportViewer with the [HTML5 Javascript Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}). It is the same viewer, where settings will have to be applied in JavaScript instead of C#|VB<span>.</span>NET.
 
 2. Load the correct Telerik Kendo UI CSS and JS files before creating the HTML5 ASP.NET WebForms ReportViewer. For example, in the &lt;head&gt; element of the page with the viewer load the CSS and JS files required by the viewer:  
 
@@ -46,5 +46,5 @@ In the browser's console (**F12 Developer Tools**) you will see an error related
 ```
 
 
-This will load the styles before the viewer requests the default resources from the Reporting REST service. For more details, check [HTML5 ASP.NET WebForms ReportViewer: Styling and Appearance](../html5-webforms-report-viewer-customizing-styling).
+This will load the styles before the viewer requests the default resources from the Reporting REST service. For more details, check [HTML5 ASP.NET WebForms ReportViewer: Styling and Appearance]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/styling-and-appearance%}).
 

@@ -18,7 +18,7 @@ res_type: kb
 
 ## Description
 
-Our recommendation is to avoid making changes to the report definition. Note that it is always better to design reports with the [available Report Designers](../report-designers) and let the designer serialize the settings in a manner that will cause minimum issues on upgrade.
+Our recommendation is to avoid making changes to the report definition. Note that it is always better to design reports with the [available Report Designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}) and let the designer serialize the settings in a manner that will cause minimum issues on upgrade.
 
 ## Solution
 
@@ -28,15 +28,15 @@ Our recommendation is to avoid making changes to the report definition. Note tha
 
 > In case the available designers and wizards do not help you to accomplish your task, the recommended approach to modify/create reports is before starting to process them (before displaying them).
 
-- **To modify a report**, you can create an instance of the report designed in the Visual Studio Report Designer, or you can [deserialize](../programmatic-xml-serialization#deserialize-report-definition-from-xml-file)/[unpackage](../report-packaging-trdp#unpackaging) a TRDX/TRDP file to get a *Telerik.Reporting.Report* instance for work. Once you have the report instance, you have access to all items in it through the report's Items collection. You can use the [Find method](../overload-telerik-reporting-reportitembase-itemcollection-find) to get a specific item/section that has to be modified.
+- **To modify a report**, you can create an instance of the report designed in the Visual Studio Report Designer, or you can [deserialize]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}#deserialize-report-definition-from-xml-file)/[unpackage]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}#unpackaging) a TRDX/TRDP file to get a *Telerik.Reporting.Report* instance for work. Once you have the report instance, you have access to all items in it through the report's Items collection. You can use the [Find method](/api/telerik.reporting.reportitembase.itemcollection#collapsible-Telerik_Reporting_ReportItemBase_ItemCollection_Find_System_String_System_Boolean_) to get a specific item/section that has to be modified.
  
 An example of such modification is illustrated in [Changing the connection string dynamically according to runtime data](./changing-the-connection-string-dynamically-according-to-runtime-data).
 
-> All modifications must be done before wrapping the report in a Report Source object on the server machine. If you are using a Reporting [REST](../telerik-reporting-rest-custom-report-resolver)or [WCF](../wcf-report-service-how-to-add-custom-report-resolver) service, modifications can be done in a **custom resolver** plugged in the service.
+> All modifications must be done before wrapping the report in a Report Source object on the server machine. If you are using a Reporting [REST]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%})or [WCF]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%}) service, modifications can be done in a **custom resolver** plugged in the service.
 
 - **To create a report**, our recommendation is to start by using the Visual Studio Report Designer. You can create a sample report with the desired layout and test data. The VS Report Designer will serialize automatically the settings in the report's **Designer.cs|vb** file. this code can be re-used and modified at run-time.
 
-> All modifications must be done before wrapping the report in a Report Source object on the server machine. If you are using a Reporting [REST](../telerik-reporting-rest-custom-report-resolver)or [WCF](../wcf-report-service-how-to-add-custom-report-resolver) service, modifications can be done in a **custom resolver** plugged in the service.
+> All modifications must be done before wrapping the report in a Report Source object on the server machine. If you are using a Reporting [REST]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%})or [WCF]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%}) service, modifications can be done in a **custom resolver** plugged in the service.
 
 ## Notes
 
@@ -44,4 +44,4 @@ Events are **not** recommended for modifying/creating items and data source comp
 
 ## See Also
 
-* [Understanding Events](../understanding-events)
+* [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%})

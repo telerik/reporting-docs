@@ -24,7 +24,7 @@ res_type: kb
 ## Description
 The article elaborates on how to change the default editors for visible multivalue parameters in the HTML5 Viewer's Parameters Area.
 
-Custom parameter editors are defined through the **parameterEditors** [(Report Viewer Initialization)](../html5-report-viewer-jquery-fn-telerik-reportviewer) array passed as an option when creating the report viewer widget. Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration.
+Custom parameter editors are defined through the **parameterEditors** [(Report Viewer Initialization)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) array passed as an option when creating the report viewer widget. Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration.
 
 Each editor is an object which contains two methods: **match** and **createEditor**.
 
@@ -106,4 +106,4 @@ The following example illustrates how to use the [Kendo CheckBoxGroup](https://d
 ## See Also
 [What's new in Kendo UI for jQuery](https://www.telerik.com/blogs/whats-new-kendo-ui-jquery-r1-2021) 
 
-[How to Create a Custom Parameter Editor](../html5-report-viewer-howto-custom-parameter-editor)
+[How to Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})

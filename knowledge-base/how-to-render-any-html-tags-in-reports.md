@@ -24,11 +24,11 @@ res_type: kb
 
 ## Description
 
-A frequently asked question is *how to render HTML tags and CSS attributes that are not supported by [HtmlTextBox item](../report-items-html-text-box)* in reports. The most requested tags that can, currently, be display only through this article's workaround are the **image** and **table** HTML tags. In the future, we plan to support them out of the box as well, but in the meantime this is the recommended approach for when you need to use unsupported functionalities of the HtmlTextBox. 
+A frequently asked question is *how to render HTML tags and CSS attributes that are not supported by [HtmlTextBox item]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%})* in reports. The most requested tags that can, currently, be display only through this article's workaround are the **image** and **table** HTML tags. In the future, we plan to support them out of the box as well, but in the meantime this is the recommended approach for when you need to use unsupported functionalities of the HtmlTextBox. 
   
 ## Solution  
   
-The approach includes utilizing a [WebBrowser](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.webbrowser?redirectedfrom=MSDN&view=net-5.0) control to render HTML to a bitmap with a help of a [user defined function](../expressions-user-functions) and a [PictureBox item](../report-items-picture-box) that will display the generated image (PNG). To use this solution, create a [binding](../expressions-bindings) to the PictureBox's *Value* property:
+The approach includes utilizing a [WebBrowser](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.webbrowser?redirectedfrom=MSDN&view=net-5.0) control to render HTML to a bitmap with a help of a [user defined function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) and a [PictureBox item]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) that will display the generated image (PNG). To use this solution, create a [binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the PictureBox's *Value* property:
 
 ```
 Property Path  Expression
@@ -93,13 +93,13 @@ static public Image HTML2BitMap(string url, Telerik.Reporting.Processing.Picture
   
 ## Notes
 
-This approach has several shortcomings and is far from perfect, but it seems to work in most cases and in all [export formats](../designing-reports-page-layout-rendering#rendering-extensions) (because all support the **PictureBox** item).   
+This approach has several shortcomings and is far from perfect, but it seems to work in most cases and in all [export formats]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}#rendering-extensions) (because all support the **PictureBox** item).   
   
 The attached project demonstrates the described approach. One thing to note is that you should set the HTML as a value for the *browser.DocumentText* property, in the attached example we used **URL** from the **RadEditor** examples to quickly illustrate the approach.
 
 ## See Also
 
-[User Functions](../expressions-user-functions)
+[User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
 
 ## Additional Resources
 

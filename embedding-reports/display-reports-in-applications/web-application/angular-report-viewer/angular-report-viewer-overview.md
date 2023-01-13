@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: angular,report,viewer,overview
 published: True
 position: 0
-previous_url: /angular-report-viewer
+previous_url: /angular-report-viewer, /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview
 ---
 
 # Angular Report Viewer Overview

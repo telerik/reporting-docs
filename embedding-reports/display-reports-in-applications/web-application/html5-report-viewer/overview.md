@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 position: 0
-previous_url: /html5-report-viewer
+previous_url: /html5-report-viewer, /using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview
 ---
 
 # HTML5 Report Viewer Overview

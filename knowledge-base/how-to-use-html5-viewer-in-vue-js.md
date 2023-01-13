@@ -30,7 +30,7 @@ res_type: kb
 
 ## Description
 
-The [HTML5 Report Viewer](../html5-report-viewer) is built upon HTML5, CSS, and JavaScript. This allows the viewer to be used in virtually any JavaScript framework.
+The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is built upon HTML5, CSS, and JavaScript. This allows the viewer to be used in virtually any JavaScript framework.
 [Vue.js](https://vuejs.org/) has been gaining a lot of traction and we would like to explore how the HTML5 Report Viewer could be implemented, together with its dependencies, in a Vue application.
 The solution we are about to examine is a very basic approach to create a new Vue.js application, include the viewer's dependencies, and display the report viewer.
 

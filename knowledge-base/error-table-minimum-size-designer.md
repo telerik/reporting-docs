@@ -44,7 +44,7 @@ Removing the problematic item from the report's definition or setting non-zero v
 
 1. Downgrade the report to the previous version using [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) which will allow opening the *Design view*. After that, locate the item using the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) and delete it or set non-zero values for Width(Height) properties (**recommended**).
 
-2. Open report's **.Designer.cs(vb)** file, locate the code for setting item's [Size property](/api/Telerik.Reporting.ReportItem.html#Telerik_Reporting_ReportItem_Size) and set Width and Height to values greater than 0.
+2. Open report's **.Designer.cs(vb)** file, locate the code for setting item's [Size property](/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Size) and set Width and Height to values greater than 0.
 
 ## Notes
 

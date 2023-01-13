@@ -39,7 +39,7 @@ If you export programmatically, the error message will be: **"X rendering format
 
 ## Possible Cause
 
-Usually, this is related to not having Telerik Reporting rendering format specific assemblies not being referenced in the project or the rendering format being unavailable altogether due limitations in .NET Core projects - [.NET Core Support](../use-reports-in-net-core-apps).
+Usually, this is related to not having Telerik Reporting rendering format specific assemblies not being referenced in the project or the rendering format being unavailable altogether due limitations in .NET Core projects - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).
 
 ## Solution
 
@@ -49,7 +49,7 @@ Usually, this is related to not having Telerik Reporting rendering format specif
   
 ### DOCX/PPTX/XLSX
  
-  **DOCX/PPTX/XLSX** rendering extensions are OpenXML formats and they require **Telerik.Reporting.OpenXmlRendering.dll** and [Open XML SDK 2.0 for Microsoft Office](../installation-deploying-openxml) (**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above).   
+  **DOCX/PPTX/XLSX** rendering extensions are OpenXML formats and they require **Telerik.Reporting.OpenXmlRendering.dll** and [Open XML SDK 2.0 for Microsoft Office]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above).   
   
  If you are using DocumentFormat.OpenXml of version  2.5.5631.0, you will need binding redirect for the DocumentFormat.OpenXml.dll assembly - [Deploy Telerik Reporting with newer OpenXML SDK version](./deploy-telerik-reporting-with-newer-openxml-sdk-version).   
   
@@ -59,15 +59,15 @@ Usually, this is related to not having Telerik Reporting rendering format specif
   
   The assembly references must be added in the project that handles reports:
 
-- If the project uses [ReportProcessor](../methods-t-telerik-reporting-processing-reportprocessor) instance, assembly references must be added in that project's configuration file;
+- If the project uses [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) instance, assembly references must be added in that project's configuration file;
 
-- If the project uses a viewer that operates via [Telerik Reporting Service](../telerik-reporting-services), the assembly references must be added in the service project's configuration file;
+- If the project uses a viewer that operates via [Telerik Reporting Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview%}), the assembly references must be added in the service project's configuration file;
 
-- If the project uses a desktop viewer or the [obsolete ASP.NET WebForms ReportViewer control](../asp-net-report-viewer), assembly references must be added in the viewer project's configuration file;
+- If the project uses a desktop viewer or the [obsolete ASP.NET WebForms ReportViewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}), assembly references must be added in the viewer project's configuration file;
 
-- If you are testing the design-time preview in the [Standalone Report Designer](../standalone-report-designer), it is configured to let export in DOCX, PPTX, XLSX and XPS without additional settings;
+- If you are testing the design-time preview in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), it is configured to let export in DOCX, PPTX, XLSX and XPS without additional settings;
 
-- If you are testing the design-time preview in [Visual Studio Report Designer](../ui-report-designer), you may not have all export options, unless OpenXML SDK 2.0 is installed on the machine, or if OpenXML SDK 2.5 or greater is installed and you manually add a binding redirect for DocumentFormat.OpenXml.dll assembly in the corresponding *devenev.exe.config* file (Visual Studio configuration file). During the [installation](../installation-installing-from-msi), Telerik Reporting assemblies are automatically registered in the machine's GAC and the design-preview will load them automatically.  
+- If you are testing the design-time preview in [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), you may not have all export options, unless OpenXML SDK 2.0 is installed on the machine, or if OpenXML SDK 2.5 or greater is installed and you manually add a binding redirect for DocumentFormat.OpenXml.dll assembly in the corresponding *devenev.exe.config* file (Visual Studio configuration file). During the [installation]({%slug telerikreporting/installation%}), Telerik Reporting assemblies are automatically registered in the machine's GAC and the design-preview will load them automatically.  
 
 ## Notes
 

@@ -26,13 +26,13 @@ res_type: kb
 Do you know how to pass multi-valued parameter from URL query string into the report? 
 
 ## Solution
-Construct the web API to take the query parameter values with some delimiter (for example ingredients=1,2,3,4) which then can be split and joined with [Join() function](../expressions-text-functions).
+Construct the web API to take the query parameter values with some delimiter (for example ingredients=1,2,3,4) which then can be split and joined with [Join() function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}).
 
 [Here](https://www.telerik.com/docs/default-source/knowledgebasearticleattachments/reporting/getparametersfromurl.zip?sfvrsn=daccb1e8_2), you can download a sample WebForms application that demonstrates the approach. The steps are the following:
 
-1. Create a report that retrieves sample data from a web service through [WebServiceDataSource component](../webservicedatasource-component). In the example project we have used users' sample data. 
+1. Create a report that retrieves sample data from a web service through [WebServiceDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}). In the example project we have used users' sample data. 
 
-2. While configuring the data source (use the [WebServiceDataSource Wizard](../webservicedatasource-wizard)), at the step 2 - *Configure request parameters*, create parameter with:
+2. While configuring the data source (use the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%})), at the step 2 - *Configure request parameters*, create parameter with:
 
   ```
   Name: Id

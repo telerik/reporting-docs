@@ -22,11 +22,11 @@ res_type: kb
 
 
 ## Description
-This article explains how to control all Drilldown report items with a single boolean [Report Parameter](../designing-reports-parameters).
+This article explains how to control all Drilldown report items with a single boolean [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}).
 
 ## Solution
-You may use the [ItemDataBinding event](../using-report-item-events) of the [data item](../data-items) where you use the 
-[Toggle Visibility Action](../designing-reports-interactivity-drill-down). For example, if you use ToggleVisibility to hide/show 
+You may use the [ItemDataBinding event]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-item-events%}) of the [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) where you use the 
+[Toggle Visibility Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drilldown-report-action%}). For example, if you use ToggleVisibility to hide/show 
 nested table groups in the Table _table1_ through the TextBoxes _textBox11_, and _textBox17_, you may use code like:
 
 ```CSharp

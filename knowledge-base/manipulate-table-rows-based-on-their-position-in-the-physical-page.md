@@ -26,7 +26,7 @@ In some scenarios with alternating table row colors, it is necessary on each new
 
 ## Solution
 The Reporting engine uses the GDI to calculate the space occupied by report elements. This functionality is not exposed in the Reporting API. Therefore, it is necessary to use [System.Reflection](https://docs.microsoft.com/en-us/dotnet/api/system.reflection?view=netframework-4.8) to modify the color of the items in a table row based on their position on the page.
-This can be done in the [ItemDataBinding event](../e-telerik-reporting-reportitembase-itemdatabinding) of a Page section (e.g. _PageHeader_). The main idea is to get the actual measured height of the table row (here we need reflection as these properties are not exposed) and calculate whether it will fit on the current page or needs to be transferred to the next page with its background color reset.
+This can be done in the [ItemDataBinding event](/api/telerik.reporting.reportitembase#collapsible-Telerik_Reporting_ReportItemBase_ItemDataBinding) of a Page section (e.g. _PageHeader_). The main idea is to get the actual measured height of the table row (here we need reflection as these properties are not exposed) and calculate whether it will fit on the current page or needs to be transferred to the next page with its background color reset.
 
 For simplicity in the code we assume that:
 * all the measures are in inches 

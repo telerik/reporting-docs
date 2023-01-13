@@ -22,10 +22,10 @@ res_type: kb
 
 
 ## Description
-In many scenarios, it is necessary to display different reports in modal windows. For example, a different report should pop-up depending on the button clicked by the user. Here we explain how this may be achieved effectively with Telerik Reporting and [Kendo MVC modal window](../../aspnet-mvc/helpers/layout/window/overview).
+In many scenarios, it is necessary to display different reports in modal windows. For example, a different report should pop-up depending on the button clicked by the user. Here we explain how this may be achieved effectively with Telerik Reporting and [Kendo MVC modal window](https://docs.telerik.com/aspnet-mvc/helpers/layout/window/overview).
 
 ## Solution
-Our recommendation is to create the [Html5 MVC Viewer](../mvc-report-viewer-extension-overview) once, for example, through a call to the corresponding MVC action, and then replace only the viewer's [reportSource](../html5-report-viewer-reportviewer-methods-reportsource-rs). You may use the 'open' event of the Kendo modal window. This way the action will be hit only once, upon initializing the Kendo window.
+Our recommendation is to create the [Html5 MVC Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) once, for example, through a call to the corresponding MVC action, and then replace only the viewer's [reportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}). You may use the 'open' event of the Kendo modal window. This way the action will be hit only once, upon initializing the Kendo window.
 Here is sample code for the 'open' event of the modal window:
 ```JavaScript
 <script type="text/javascript">
@@ -53,7 +53,7 @@ Here is sample code for the 'open' event of the modal window:
 ```
 This code will switch between two reports on each opening of the Kendo modal window.
 
-The set-up of the modal window may look like (note the [LoadContentFrom](../../aspnet-mvc/helpers/layout/window/content) option) :
+The set-up of the modal window may look like (note the [LoadContentFrom](https://docs.telerik.com/aspnet-mvc/helpers/layout/window/content) option) :
 ```JavaScript
 @(Html.Kendo().Window()
             .Name("winReports")

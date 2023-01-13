@@ -28,7 +28,7 @@ The article describes an approach for showing only a limited number (e.g. 3) of 
 Here are the major steps you may follow for each data field that should be displayed in the described way:
 
 - Set the detail section __CanShrink__ to __True__
-- Add a __TextBox__ for each data field and set its __Visible__ property with [Bindings](../expressions-bindings): 
+- Add a __TextBox__ for each data field and set its __Visible__ property with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}): 
 	+ Set __Property path__ to 'Visible' 
 	+ Set __Value__	to '= RowNumber()<=3' 
 	

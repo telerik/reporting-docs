@@ -20,7 +20,7 @@ res_type: kb
 
 
 ## Description
-When binding [ObjectDataSource component](../objectdatasource) to a collection of [ExpandoObject](https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx) instances the Reporting engine expects the collection to contain a list of business objects with *known properties*.
+When binding [ObjectDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}) to a collection of [ExpandoObject](https://msdn.microsoft.com/en-us/library/system.dynamic.expandoobject(v=vs.110).aspx) instances the Reporting engine expects the collection to contain a list of business objects with *known properties*.
 As ExpandoObject uses an internal dictionary of string and object (IDictionary<string,object>) to store the dynamically added properties the engine is not able to find them and throws an error:
 *"The expression contains object 'PropertyName' that is not defined in the current context".*
 

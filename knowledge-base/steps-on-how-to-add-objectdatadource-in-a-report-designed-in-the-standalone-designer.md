@@ -23,7 +23,7 @@ res_type: kb
 
 ## Solution
 1. Open **Visual Studio** and create a new **Class Library**.
-2. Add the following piece of code from [How to: Bind to a BusinessObject article](../object-data-source-how-to-bind-to-business-object).
+2. Add the following piece of code from [How to: Bind to a BusinessObject article]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject%}).
 
 ```CSharp
 class Product

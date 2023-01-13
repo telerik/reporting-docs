@@ -23,7 +23,7 @@ res_type: kb
 Sometimes it is necessary to modify the WebServiceDataSource URL dynamically, for example depending on the environment (i.e. test or production).
 
 ## Solution
-1. The **Service Url** property of the _WebServiceDataSource_ should be set as an inline parameter **@Url**, i.e. in _Configure data retrieval_ dialog of the [WebServiceDataSource Wizard](../webservicedatasource-wizard):
+1. The **Service Url** property of the _WebServiceDataSource_ should be set as an inline parameter **@Url**, i.e. in _Configure data retrieval_ dialog of the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}):
 	
 	_Service Url:_| __@Url__
 	---|---

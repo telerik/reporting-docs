@@ -106,4 +106,4 @@ If you use a newer version of *StackExchange.Redis.StrongName.dll*, you will ne
 
 ## See Also
 
-[How to: Use Redis storage](../telerik-reporting-rest-howto-use-redis-storage). 
+[How to: Use Redis storage]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/how-to-use-redis-storage%}). 

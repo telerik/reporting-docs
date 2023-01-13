@@ -32,7 +32,7 @@ This is desired for the different group instances but sometimes you want to rend
 | --- | --- |
 |PageBreak|`= IIF(RowNumber() > 1, 'Before', 'None')`|
   
-[PageBreak enum values](/reporting/api/Telerik.Reporting.PageBreak.html) are as follows:  
+[PageBreak enum values](/reporting/api/Telerik.Reporting.PageBreak) are as follows:  
   
 - None
 

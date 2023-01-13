@@ -83,4 +83,4 @@ Object reference not set to an instance of an object.
 
 If you need to upgrade, MSI files for installing Telerik Reporting can be found in [your Telerik account](https://www.telerik.com/account/) -> Downloads -> Reporting -> MSI.  
  
-For more details, check [Installing Telerik Reporting](../installation-installing-from-msi) and the changes mentioned in the corresponding [Upgrade Path](../upgradepathoverview) article.
+For more details, check [Installing Telerik Reporting]({%slug telerikreporting/installation%}) and the changes mentioned in the corresponding [Upgrade Path]({%slug telerikreporting/upgrade/overview%}) article.

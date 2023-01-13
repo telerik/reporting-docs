@@ -26,7 +26,7 @@ You may want to have the _Document Map_ tree expanded by default on the initial 
 The _DocumentMap_ area is a [Kendo UI TreeView](https://docs.telerik.com/kendo-ui/api/javascript/ui/treeview) widget. It may contain multiple nested nodes that are collapsed by default. Expanding initially all nodes is not supported out of the box.   
   
 You may get the _Kendo treeView_ widget and expand its nodes, for example with the [expand](https://docs.telerik.com/kendo-ui/api/javascript/ui/treeview/methods/expand) method. It will be necessary to iterate over all the nodes of the _Document Map_, for example using recursion - _expandAllNodes_ function in the code below.
-For expanding the nodes you may use the [RenderingEnd ](../html5-report-viewer-reportviewer-events-renderingend) event of the viewer, where the _args.documentMapAvailable_ property specifies whether the report has a _Document Map_ set.
+For expanding the nodes you may use the [RenderingEnd ]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) event of the viewer, where the _args.documentMapAvailable_ property specifies whether the report has a _Document Map_ set.
 Here is a sample code :  
   
 

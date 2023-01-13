@@ -53,4 +53,4 @@ public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
          })
 ```
 ## See Also
-[Manual Setup of HTML5 Report Viewer in an ASP.NET Core 3+ application](../manual-setup-of-html5-report-viewer-in-asp-net-core-3)
+[Manual Setup of HTML5 Report Viewer in an ASP.NET Core 3+ application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application%})

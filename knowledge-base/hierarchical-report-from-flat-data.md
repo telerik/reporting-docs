@@ -54,7 +54,7 @@ For example here is a sample JSON data:
 ````
 
 ## Solution
-The general idea is the main report to reference itself in a [SubReport item](../report-items-sub-report). The data of each subreport gets filtered based on the value of a [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}). This way, the report structure will be reproduced hierarchically based on the data, and the bottom of the recursion will be hit when all the data is filtered out.
+The general idea is the main report to reference itself in a [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}). The data of each subreport gets filtered based on the value of a [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}). This way, the report structure will be reproduced hierarchically based on the data, and the bottom of the recursion will be hit when all the data is filtered out.
 The solution is demonstrted in the [HierarchyFromFlatData.trdp](https://github.com/telerik/reporting-samples/blob/master/HierarchyFromFlatData.trdp) demo report.
 Next I have outlined the main points when designing the report.
 

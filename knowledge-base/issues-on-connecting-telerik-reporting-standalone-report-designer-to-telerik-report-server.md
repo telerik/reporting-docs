@@ -46,7 +46,7 @@ You might be using an older version of the product.
 
 ## Possible Cause
 
-[Telerik Report Server](../../report-server/introduction) uses the same [Standalone Report Designer](../../report-server/user-guide/report-designer) as the one provided by [Telerik Reporting](https://www.telerik.com/products/reporting.aspx). The versions of the Designer and the Report Server **must** be the same. The designer can be downloaded via **ClickOnce** in Internet Explorer, or by using the download link provided in Chrome, Firefox and other browsers lacking ClickOnce support, by users having access to the *Admin* module of the Report Server ([CALs](https://www.telerik.com/report-server/faq)).  
+[Telerik Report Server](https://docs.telerik.com/report-server/introduction) uses the same [Standalone Report Designer](https://docs.telerik.com/report-server/user-guide/report-designer) as the one provided by [Telerik Reporting](https://www.telerik.com/products/reporting.aspx). The versions of the Designer and the Report Server **must** be the same. The designer can be downloaded via **ClickOnce** in Internet Explorer, or by using the download link provided in Chrome, Firefox and other browsers lacking ClickOnce support, by users having access to the *Admin* module of the Report Server ([CALs](https://www.telerik.com/report-server/faq)).  
 
 ## Solution
 

@@ -23,7 +23,7 @@ res_type: kb
 </table>
 
 
-> This article relates to the [Legacy ASPNET Report Viewer](../asp-net-report-viewer).
+> This article relates to the [Legacy ASPNET Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}).
 
 ## Description
 

@@ -77,8 +77,8 @@ trv.printManager = function () {
 
 
 ## Workaround 2 for the HTML5-based Report Viewers
-Set the **FORCE_PDF_FILE** [printMode](../html5-report-viewer-api-printmodes) option of the report viewer, the widget will always export the report document to a PDF file with the special print script. For more information, check [Printing Reports](../html5-report-viewer-direct-print) article. 
-For example in the [HTML5 Report viewer](../html5-report-viewer), you need to add the following line in the initialization of the viewer:
+Set the **FORCE_PDF_FILE** [printMode]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/printmodes%}) option of the report viewer, the widget will always export the report document to a PDF file with the special print script. For more information, check [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}) article. 
+For example in the [HTML5 Report viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), you need to add the following line in the initialization of the viewer:
 
 ```JavaScript
 $("#reportViewer1")

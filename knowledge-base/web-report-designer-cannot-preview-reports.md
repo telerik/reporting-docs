@@ -67,7 +67,7 @@ The error message, displayed in the browser console, is the following:
 
 ## Possible Cause
 
-The known reason for this error is using a relative path for the [FileDefinitionStorage](../api/Telerik.WebReportDesigner.Services.FileDefinitionStorage.html#constructors) constructor of the Web Report Designer.
+The known reason for this error is using a relative path for the [FileDefinitionStorage](/api/telerik.webreportdesigner.services.filedefinitionstorage) constructor of the Web Report Designer.
 
 ## Solution
 
@@ -75,7 +75,7 @@ Pass an `absolute` path to the `FileDefinitionStorage` constructor
 
 ## Workarounds
 
-If it is not possible or wanted to pass absolute path to the constructor, create a custom `ResourceResolver` that implements the [IResourceResolver](../api/Telerik.Reporting.Interfaces.IResourceResolver) interface. 
+If it is not possible or wanted to pass absolute path to the constructor, create a custom `ResourceResolver` that implements the [IResourceResolver](/api/telerik.reporting.interfaces.iresourceresolver) interface. 
 
 The custom ResourceResolver class should then be registered in the application's configuration file, for example, `appsettings.json`:
 

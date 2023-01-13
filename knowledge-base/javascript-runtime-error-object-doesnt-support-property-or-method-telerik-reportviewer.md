@@ -32,7 +32,7 @@ res_type: kb
 
 ## Possible Cause
 
-The [HTML5 Report Viewer](../html5-report-viewer) is an HTML\CSS\JS client-side widget. The viewer requires a link to **jQuery v1.9.1. or above**, which may be in contradiction with other components loading jQuery on their own. 
+The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is an HTML\CSS\JS client-side widget. The viewer requires a link to **jQuery v1.9.1. or above**, which may be in contradiction with other components loading jQuery on their own. 
   
 ## Solution
  
@@ -40,9 +40,9 @@ The [HTML5 Report Viewer](../html5-report-viewer) is an HTML\CSS\JS client-side 
   
 ## Notes
 
-If you use [Telerik UI for ASP.NET AJAX RadScriptManager](../../devtools/aspnet-ajax/controls/scriptmanager/overview), it loads its *embedded* version of jQuery. You can use the external link to other jQuery file by setting the EnableEmbeddedjQuery property of RadScriptManager to false.  
+If you use [Telerik UI for ASP.NET AJAX RadScriptManager](https://docs.telerik.com/devtools/aspnet-ajax/controls/scriptmanager/overview), it loads its *embedded* version of jQuery. You can use the external link to other jQuery file by setting the EnableEmbeddedjQuery property of RadScriptManager to false.  
 
 ## See Also
 
-[Disabling the Embedded jQuery](../../devtools/aspnet-ajax/controls/scriptmanager/disabling-the-embedded-jquery).
+[Disabling the Embedded jQuery](https://docs.telerik.com/devtools/aspnet-ajax/controls/scriptmanager/disabling-the-embedded-jquery).
 

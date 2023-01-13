@@ -25,7 +25,7 @@ Additionally, end users of the [Web Report Designer]({%slug telerikreporting/des
 
 All `SharedDataSource` componenents are accessible, by default, to all end-users via the [`Asset Manager`]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager)
 
-The `SharedDataSource` component currently support the following [data source components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}):
+The `SharedDataSource` component currently supports the following [data source components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}):
 
 * [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
 
@@ -37,7 +37,7 @@ The `SharedDataSource` component currently support the following [data source co
 
 * [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
 
-> Existing data source components can be configured into __SharedDataSource__ components via the __Explorer__ tab in the __Web Report Designer__. Left-clicking the data source component will open the _context menu_ from the option __Save As Shared Data Source__ can be chosen.  
+> Existing data source components can be configured into __SharedDataSource__ components via the __Explorer__ tab in the __Web Report Designer__. Left-clicking the data source component will open the _context menu_ from which the option __Save As Shared Data Source__ can be chosen.  
 
 ## Configuring the Component
 

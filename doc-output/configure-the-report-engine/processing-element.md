@@ -104,14 +104,15 @@ JSON-based configuration file:
 			//  }
 			//],
 
-			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider
+			// The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
 			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"
 			"provider": "custom",
-			"parameters": [
-			{
-				"name": "typename",
-				"value": "Namespace.CustomSharedDataSourceResolverClass, AssemblyName"
-			}
+				"parameters": [
+				{
+					"name": "typename",
+					"value": "Namespace.CustomSharedDataSourceResolverClass, AssemblyName"
+				}
 			]
 		}
 	}
@@ -129,7 +130,7 @@ Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats
 
 ### ResourceResolver
 
-__resourceResolver__ element allows to alter the default resource-resolving mechanism. This element determines what instance of the [Telerik.Reporting.Interfaces.IResourceResolver](/reporting/api/Telerik.Reporting.Interfaces.IResourceResolver) interface will be used by the processing engine to resolve the resources that are specified in the report definition. Such resources are: 
+__resourceResolver__ element allows to alter the default resource-resolving mechanism. This element determines which implementation of the [Telerik.Reporting.Interfaces.IResourceResolver](/reporting/api/Telerik.Reporting.Interfaces.IResourceResolver) interface will be used by the processing engine to resolve the resources that are specified in the report definition. Such resources are: 
 
 * Images used by [Telerik.Reporting.PictureBox](/reporting/api/Telerik.Reporting.PictureBox) and [Telerik.Reporting.CheckBox](/reporting/api/Telerik.Reporting.CheckBox) report items, referenced by a relative path. 
 
@@ -149,9 +150,9 @@ This __ResourceResolver__ is intended to be used in scenarios where the resource
 
 ### SharedDataSourceResolver
 
-__sharedDataSourceResolver__ element allows to alter the default shared DataSource(`.sdsx`)-resolving mechanism. This element determines what instance of the [Telerik.Reporting.Interfaces.ISharedDataSourceResolver](/reporting/api/Telerik.Reporting.Interfaces.ISharedDataSourceResolver) interface will be used by the processing engine to resolve the shared DataSources references that are specified in the report definition.
+__sharedDataSourceResolver__ element allows to alter the default shared DataSource(`.sdsx`)-resolving mechanism. This element determines whihch implementation of the [Telerik.Reporting.Interfaces.ISharedDataSourceResolver](/reporting/api/Telerik.Reporting.Interfaces.ISharedDataSourceResolver) interface will be used by the processing engine to resolve the shared DataSources references that are specified in the report definition.
 
-This __SharedDataSourceResolver__ is intended to be used in scenarios where the `.sdsx` files are not retrieved from a local file path but rather obtained from a different type of storage. As an example, if a custom [Telerik.Reporting.Interfaces.ISharedDataSourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ISharedDataSourceStorage) is implemented where the `.sdsx` files are stored in a database, then a custom custom `SharedDataSourceResolver` would be necessary to provide specific logic that will retrieve the necessary `.sdsx` XML from the database and will then [Deserialize]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}#deserialize-from-xml) to an instance of the [Telerik.Reporting.DataSource](/reporting/api/Telerik.Reporting.DataSource) class and return it in the `Resolve` method. 
+This __SharedDataSourceResolver__ is intended to be used in scenarios where the `.sdsx` files are not retrieved from a local file path but rather obtained from a different type of storage. As an example, if a custom [Telerik.Reporting.Interfaces.ISharedDataSourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ISharedDataSourceStorage) is implemented where the `.sdsx` files are stored in a database, then a custom `SharedDataSourceResolver` would be necessary to provide specific logic that will retrieve the `.sdsx` XML from the database and will then [Deserialize]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}#deserialize-from-xml) it to an instance of the [Telerik.Reporting.DataSource](/reporting/api/Telerik.Reporting.DataSource) class and return it in the `Resolve` method. 
 
 ### `<sharedDataSourceResolver>` element
 

@@ -94,26 +94,26 @@ JSON-based configuration file:
 				}
 			]
 		},
-        "sharedDataSourceResolver": {
-        	// The element below represents an implementation of a SharedDataSource resolver that uses a path provider:
-        	//"provider": "path",
-        	//"parameters": [
-        	//  {
-        	//    "name": "directory",
-        	//    "value": "c:\\CommonSharedDataSources\\"
-        	//  }
-        	//],
+		"sharedDataSourceResolver": {
+			// The element below represents an implementation of a SharedDataSource resolver that uses a path provider:
+			//"provider": "path",
+			//"parameters": [
+			//  {
+			//    "name": "directory",
+			//    "value": "c:\\CommonSharedDataSources\\"
+			//  }
+			//],
 
-        	// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
+			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
 			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"
-        	"provider": "custom",
-        	"parameters": [
-         	 {
-            	"name": "typename",
-            	"value": "Namespace.CustomSharedDataSourceResolverClass, AssemblyName"
-          	}
-        	]
-      	}
+			"provider": "custom",
+			"parameters": [
+			{
+				"name": "typename",
+				"value": "Namespace.CustomSharedDataSourceResolverClass, AssemblyName"
+			}
+			]
+		}
 	}
 }
 ````

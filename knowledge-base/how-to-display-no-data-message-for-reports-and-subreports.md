@@ -49,4 +49,4 @@ The Property path has to be typed manually, where the `Parent` keyword can be us
 
 ## See Also
 "No Data Message" feature allows you to display text, style or hide the empty space of a nested data item(Table, List, Crosstab, Graph, Map), which data source returns no records.
-[How to: Set a No Data Message](../report-structure-dataitem-set-no-data-message)
+[How to: Set a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})

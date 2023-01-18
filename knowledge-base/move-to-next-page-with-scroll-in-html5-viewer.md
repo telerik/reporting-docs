@@ -23,17 +23,17 @@ res_type: kb
 
 
 ## Description
-The [Html5 Report Viewer](../html5-report-viewer) scrolls through the report and moves to the next pages when reaching the page end in CONTINUOUS_SCROLL page mode.
+The [Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) scrolls through the report and moves to the next pages when reaching the page end in CONTINUOUS_SCROLL page mode.
 If you would like to switch to the next page with the Scrollbar also in SINGLE_PAGE mode, you may follow the next approach.
 
 ## Suggested Workarounds
 You may use the dedicated commands of the viewer __goToPrevPage__ and __goToNextPage__ for switching between the pages - see the 
-[viewer commands](../html5-report-viewer-reportviewer-properties-commands).  
+[viewer commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}).  
 > Note that the viewer's scroll is on the element with CSS class __trv-page-container__.  
 
-You need to be sure that the [reportViewer](../html5-report-viewer-jquery-fn-telerik-reportviewer) has already been created and the report document rendered 
+You need to be sure that the [reportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) has already been created and the report document rendered 
 so that the element with CSS class __trv-page-container__ exists. For example, you may attach an event handler for the 'scroll' event to this element in the 
-[renderingEnd event of the viewer](../html5-report-viewer-reportviewer-events-renderingend). Here is the sample implementation of the event handler:  
+[renderingEnd event of the viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}). Here is the sample implementation of the event handler:  
 
 ```JavaScript
 function onRenderingEnd(e, args) {

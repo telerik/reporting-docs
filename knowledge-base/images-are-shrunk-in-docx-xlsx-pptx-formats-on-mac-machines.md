@@ -79,16 +79,16 @@ For .NET Core projects:
 
 ## Notes
 
-The DOCX/PPTX/XLSX rendering extensions require the **Telerik.Reporting.OpenXmlRendering.dll** and the [Open XML SDK 2.0 for Microsoft Office](../installation-deploying-openxml)(**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above with proper [binding redirects](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element?redirectedfrom=MSDN)).
+The DOCX/PPTX/XLSX rendering extensions require the **Telerik.Reporting.OpenXmlRendering.dll** and the [Open XML SDK 2.0 for Microsoft Office]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})(**DocumentFormat.OpenXml.dll v.2.0.5022.0** or above with proper [binding redirects](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element?redirectedfrom=MSDN)).
 
 ## See Also
 
- [Telerik Reporting Configuration Section](../configuring-telerik-reporting)
+ [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
  
- [Extensions Element](../configuring-telerik-reporting-extensions)
+ [Extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})
  
- [PPTX rendering extension's parameters](../device-information-settings-powerpoint) 
+ [PPTX rendering extension's parameters]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings%}) 
  
- [DOCX rendering extension's parameters](../device-information-settings-word) 
+ [DOCX rendering extension's parameters]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings%}) 
  
- [XLSX rendering extension's parameters](../device-information-settings-excel-2007) 
+ [XLSX rendering extension's parameters]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings%}) 

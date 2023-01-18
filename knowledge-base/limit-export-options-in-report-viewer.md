@@ -21,14 +21,14 @@ res_type: kb
 
 ## Description
 By default, the report viewer shows all the supported rendering extensions in its export dropdown. The available rendering extensions 
-are listed in the [Rendering Extensions](../configuring-rendering-extensions) help article.
+are listed in the [Rendering Extensions]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) help article.
 
 Sometimes, it is neccessary to limit export formats to certain formats only.
 
 ## Solution
 In Telerik Reporting, device information settings are used to pass rendering parameters to a rendering extension. 
 You can use the <Telerik.Reporting> configuration section to specify rendering parameters globally. Programmatically, 
-you can use the [ReportProcessor.RenderReport() method](../overload-telerik-reporting-processing-reportprocessor-renderreport).
+you can use the [ReportProcessor.RenderReport() method](/api/telerik.reporting.processing.reportprocessor#collapsible-Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_).
 
 For Windows and WPF applications the configuration file is **app.config** and for ASP.NET applications – **web.config**. Both files are XML-based.
 The example below shows an XML-based configuration file that hides the RTF rendering extension:
@@ -72,4 +72,4 @@ example below shows an JSON-based configuration file that hides the RTF renderin
   ```
 
 ## See Also
-[Configuring Telerik Reporting](../configuring-telerik-reporting)
+[Configuring Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})

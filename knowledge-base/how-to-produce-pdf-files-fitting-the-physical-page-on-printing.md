@@ -32,10 +32,10 @@ On printing a PDF file from a PDF Reader, there is an option **'Fit to Page'** 
     
     - Set the report's **PageSettings.PaperKind** property to **Custom**
     
-    - Set the report's **PagseSettings.PaperSize** property to a size allowing you to gather the whole content into a single page in [Print preview](../report-viewers-interactive-print-view).
+    - Set the report's **PagseSettings.PaperSize** property to a size allowing you to gather the whole content into a single page in [Print preview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).
     
 2. Configure the PDF rendering extension:
-    - Set its [ViewerPrintScaling](../device-information-settings-pdf) parameter to **AppDefault**. More details about the required settings can be found in [Telerik Reporting Configuration Section](../configuring-telerik-reporting) and [Extensions Element](../configuring-telerik-reporting-extensions).
+    - Set its [ViewerPrintScaling]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}) parameter to **AppDefault**. More details about the required settings can be found in [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) and [Extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).
     - Set its Javascript parameter to ```"this.print({bUI: true, bSilent: false, bShrinkToFit: true});"```. This will force the PDF reader to raise its Print Dialog on opening the PDF file.
 
  For example:  

@@ -27,16 +27,16 @@ res_type: kb
     
 ## Description
 
-Graph, Map and Barcode items are exported as EMF in DOCX files - [Design Considerations for Word Rendering](../designing-reports-considerations-word).
+Graph, Map and Barcode items are exported as EMF in DOCX files - [Design Considerations for Word Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/word-rendering-design-considerations%}).
 
 MS Word has issues with EMF content and fails to convert it correctly on an attempt to save the loaded DOCX file as PDF.  
   
 ## Solution   
   
-You can configure the reporting engine to render Graph, Map and Barcode items as **Bitmap** images - [Word Device Information Settings](../device-information-settings-word) (**UseMetafile** parameter).  
+You can configure the reporting engine to render Graph, Map and Barcode items as **Bitmap** images - [Word Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings%}) (**UseMetafile** parameter).  
   
 ## See Also
  
-[Telerik Reporting Configuration Section](../configuring-telerik-reporting).
+[Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
 
-[Extensions element](../configuring-telerik-reporting-extensions).  
+[Extensions element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).  

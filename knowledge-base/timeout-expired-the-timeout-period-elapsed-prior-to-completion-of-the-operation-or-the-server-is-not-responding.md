@@ -35,7 +35,7 @@ Timeout expired. The timeout period elapsed prior to completion of the operation
 
 The common troubleshooting approach for connectivity issues (timeout issue) is extending the connections timeouts in SqlDataSource component. You can try the following suggestions:
 
-1. Test using a larger value for the [CommandTimeout](../p-telerik-reporting-sqldatasource-commandtimeout) property;
+1. Test using a larger value for the [CommandTimeout](/api/telerik.reporting.sqldatasource#collapsible-Telerik_Reporting_SqlDataSource_CommandTimeout) property;
 
 2. Test using a larger value in the connection string as well;
 
@@ -45,7 +45,7 @@ The common troubleshooting approach for connectivity issues (timeout issue) is e
 <httpRuntime executionTimeout="7200" />
 ```
 
-In case the report retrieves a large amount of data, you might consider filtering the data on the retrieval. We suggest to review the information in [Filtering Data](../data-items-filtering-data) and [Performance Considerations](../designing-performance) help articles and see what can be applied to the current project.
+In case the report retrieves a large amount of data, you might consider filtering the data on the retrieval. We suggest to review the information in [Filtering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/overview%}) and [Performance Considerations]({%slug telerikreporting/designing-reports/performance-considerations%}) help articles and see what can be applied to the current project.
 
 
 ## Notes

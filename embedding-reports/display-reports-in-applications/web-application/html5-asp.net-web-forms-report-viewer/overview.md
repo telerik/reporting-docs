@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 position: 0
-previous_url: /webforms-report-viewer-controls-overview
+previous_url: /webforms-report-viewer-controls-overview, /webforms-report-viewer-controls-system-requirements
 ---
 
 # HTML5 ASP.NET Web Forms Report Viewer Overview

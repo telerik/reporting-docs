@@ -36,4 +36,4 @@ In this case, only the borders of each cell (TextBox item) will be visualized.
 
 ## See Also
 
-[Using Styles to Customize Reports](../style-using-styles-to-customize-reports)
+[Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})

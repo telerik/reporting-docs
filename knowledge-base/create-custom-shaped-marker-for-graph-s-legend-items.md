@@ -28,7 +28,7 @@ The Graph uses the same markers for its series and their respective legend items
   
 ## Solution  
 
-This can be achieved using a background image that supports transparency (i.e. PNG) and set it as [LegendItem](../properties-t-telerik-reporting-legenditem).[MarkStyle](../p-telerik-reporting-legenditem-markstyle).[BackgroundImage](../p-telerik-reporting-drawing-style-backgroundimage). 
+This can be achieved using a background image that supports transparency (i.e. PNG) and set it as [LegendItem](/api/telerik.reporting.legenditem).[MarkStyle](/api/telerik.reporting.legenditem#collapsible-Telerik_Reporting_LegendItem_MarkStyle).[BackgroundImage](/api/telerik.reporting.drawing.style#collapsible-Telerik_Reporting_Drawing_Style_BackgroundImage). 
 
 The transparent area on the image will allow the default series color to be displayed on the legend marker.
 

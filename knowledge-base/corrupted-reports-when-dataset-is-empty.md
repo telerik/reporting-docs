@@ -31,11 +31,11 @@ In the older versions, the same reports would have the sections that don't displ
 
 ## Solution
 The issue is caused by the change __Report rendering now skips the generated blank pages. Use the property *Report.SkipBlankPages* to control this behavior__ that 
-we introduced with [R1 2021 SP1](../upgrade-path-2021-r1-sp1). The property default value is _True_, which prevents the report from rendering the report sections that 
+we introduced with [R1 2021 SP1]({%slug telerikreporting/upgrade/2021/r1-2021-sp1%}). The property default value is _True_, which prevents the report from rendering the report sections that 
 don't contain data. In the case when there is no data returned at all, the entire report may not be rendered as explained in the article section 
-[Skip Blank Pages in the Rendered Report](../designing-reports-page-layout-rendering-understanding-rendering-behaviors#skip-blank-pages-in-the-rendered-report).  
+[Skip Blank Pages in the Rendered Report]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}#skip-blank-pages-in-the-rendered-report).  
 
-The solution is setting [SkipBlankPages](../p-telerik-reporting-processing-report-skipblankpages) of your Reports to __False__, which will revert the previous behavior.
+The solution is setting [SkipBlankPages](/api/telerik.reporting.processing.report#collapsible-Telerik_Reporting_Processing_Report_SkipBlankPages) of your Reports to __False__, which will revert the previous behavior.
 
 ## See Also
-[Understanding Rendering Behaviors](../designing-reports-page-layout-rendering-understanding-rendering-behaviors)
+[Understanding Rendering Behaviors]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%})

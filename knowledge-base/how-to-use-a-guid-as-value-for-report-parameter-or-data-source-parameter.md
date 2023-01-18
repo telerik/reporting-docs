@@ -23,9 +23,9 @@ The article explains how to use a Guid as value for report parameter or data sou
   
 ## Solution 1
 
-Set the Type of the [ReportParameter](../t-telerik-reporting-reportparameter) to String. Use the **CStr(System.Object)** [built-in conversion function](../expressions-functions) to convert the Guid to String for the  [ValueMember](../p-telerik-reporting-reportparameteravailablevalues-valuemember) property of the report parameter [AvailableValues](../properties-t-telerik-reporting-reportparameteravailablevalues).  
+Set the Type of the [ReportParameter](/api/telerik.reporting.reportparameter) to String. Use the **CStr(System.Object)** [built-in conversion function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) to convert the Guid to String for the  [ValueMember](/api/telerik.reporting.reportparameteravailablevalues#collapsible-Telerik_Reporting_ReportParameterAvailableValues_ValueMember) property of the report parameter [AvailableValues](/api/telerik.reporting.reportparameteravailablevalues).  
 
-When using Guid [DataSourceParameter](../t-telerik-reporting-datasourceparameter) and its value is set to a [ReportParameter](../t-telerik-reporting-reportparameter), create an [User Function](../expressions-user-functions) to handle the conversion:  
+When using Guid [DataSourceParameter](/api/telerik.reporting.datasourceparameter) and its value is set to a [ReportParameter](/api/telerik.reporting.reportparameter), create an [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to handle the conversion:  
 
 
 ````cs
@@ -40,11 +40,11 @@ Public Shared Function ConvertToGuid(guid As String) As Guid
 End Function
 ````  
 
-Finally, set the value for the [DataSourceParameter](../t-telerik-reporting-datasourceparameter):   
+Finally, set the value for the [DataSourceParameter](/api/telerik.reporting.datasourceparameter):   
 
 `= ConvertToGuid(Parameters.Parameter1.Value)`  
 
 ## Solution 2  
   
-Convert the Guid value to a **String** value in the data-retrieval method, or [add a calculated field](../datasource-calculated-fields) to the data source component by using the **CStr(System.Object)** [built-in conversion function](../expressions-functions) to convert the Guid to String. Then, you can use the *String* report parameters directly.
+Convert the Guid value to a **String** value in the data-retrieval method, or [add a calculated field]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields%}) to the data source component by using the **CStr(System.Object)** [built-in conversion function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) to convert the Guid to String. Then, you can use the *String* report parameters directly.
 

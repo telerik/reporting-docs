@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
   
-When you create Telerik Reports you can provide internal navigation in the report via [Document Map](../designing-reports-document-map). This interactivity feature is supported by Adobe PDF Readers and it can be controlled by adding Adobe JavaScript in the PDF produced by the Reporting engine.  
+When you create Telerik Reports you can provide internal navigation in the report via [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%}). This interactivity feature is supported by Adobe PDF Readers and it can be controlled by adding Adobe JavaScript in the PDF produced by the Reporting engine.  
   
 ## Solution
 
@@ -35,10 +35,10 @@ When you create Telerik Reports you can provide internal navigation in the repor
 app.execMenuItem('ShowHideBookmarks')
 ```
 
-- To add it in the PDF file that will be produced by Telerik Reporting, you need to pass it through the [JavaScript device setting of the PDF rendering mechanism](../device-information-settings-pdf).  
+- To add it in the PDF file that will be produced by Telerik Reporting, you need to pass it through the [JavaScript device setting of the PDF rendering mechanism]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}).  
   
  This can be done by: 
-- When you [export programmatically](../programmatic-exporting-report) - pass the Adobe JavaScipt as a device info ([Set rendering parameters programmatically](../configuring-telerik-reporting-extensions#set-rendering-parameters-programmatically)):  
+- When you [export programmatically]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) - pass the Adobe JavaScipt as a device info ([Set rendering parameters programmatically]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}#set-rendering-parameters-programmatically)):  
 
 
 ````C#
@@ -50,7 +50,7 @@ Dim deviceInfo As New System.Collections.Hashtable()
 deviceInfo.Add("JavaScript",  "app.execMenuItem('ShowHideBookmarks')")
 ````
 
-- When you export through a Report Viewer - [declare a Telerik Reporting section](../configuring-telerik-reporting) in the application's configuration file and set the JavaScript parameter of the [PDF extension](../configuring-telerik-reporting-extensions):  
+- When you export through a Report Viewer - [declare a Telerik Reporting section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) in the application's configuration file and set the JavaScript parameter of the [PDF extension]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}):  
   
 ```xml
 <configuration>

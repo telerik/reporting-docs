@@ -2,7 +2,7 @@
 title: Report Sources
 page_title: Report Sources
 description: "Learn how to specify the report that will be processed and what are the available options based on the Visual Studio or XML report format when working with Telerik Reporting."
-previous_url: /designing-reports/report-sources/overview
+previous_url: /designing-reports/report-sources/overview, /report-sources
 slug: telerikreporting/designing-reports/report-sources/overview
 tags: telerik, reporting, embedding, reports, report, sources, overview
 published: True

@@ -26,11 +26,11 @@ res_type: kb
 
 
 ## Description
-The article explains how to customize the appearance of the [WPF Report Viewer](../wpf-report-viewer-intro)
+The article explains how to customize the appearance of the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
 
 ## Suggested Workarounds
 We'll demonstrate two approaches of using custom commands by the WPF Report Viewer, each one of them executed by clicking a dedicated button on the report viewer's toolbar. In our demo we'll modify the report viewer template for the _Office 2019_ theme, which by default is located at _(TelerikReporting_Installation_Folder)\Wpf\Themes\Office2019\Telerik.ReportViewer.Wpf.xaml_. 
-Make sure you merge the resource dictionaries from the XAML files rather than from the default _Telerik.ReportViewer.Wpf.Themes_ assembly. See the article section [Setting Customizable Implicit Style for the WPF Report Viewer Example](../wpf-report-viewer-implicit-styles#setting-customizable-implicit-style-for-the-wpf-report-viewer-example) for details. The reason is that we need to modify the XAML files to add new controls and functionality to the viewer.
+Make sure you merge the resource dictionaries from the XAML files rather than from the default _Telerik.ReportViewer.Wpf.Themes_ assembly. See the article section [Setting Customizable Implicit Style for the WPF Report Viewer Example]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%}#setting-customizable-implicit-style-for-the-wpf-report-viewer-example) for details. The reason is that we need to modify the XAML files to add new controls and functionality to the viewer.
 
 Let's add two new buttons to the viewer's markup, as shown below::
 ```XAML

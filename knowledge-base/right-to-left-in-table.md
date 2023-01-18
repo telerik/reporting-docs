@@ -27,9 +27,9 @@ By default, the group value will be displayed on the left side of the table. The
 ## Solution
 Workaround 1 demonstrated in Report1:
 
-1) Add a [CSV DataSource](../csvdatasource-component) (with **Group**, **Item** and **Value** fields) and set it to be the **DataSource** of the report.
+1) Add a [CSV DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) (with **Group**, **Item** and **Value** fields) and set it to be the **DataSource** of the report.
 
-2) [Add a group to the report](../data-items-how-to-add-groups-to-report-item): right-click outside the report -> **Add New Group**
+2) [Add a group to the report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}): right-click outside the report -> **Add New Group**
 and set the **Expression** to be "=Fields.Group";
 
 3) In the **groupHeaderSection** add a textbox whose **Value** is  "=Fields.Group";
@@ -38,7 +38,7 @@ and set the **Expression** to be "=Fields.Group";
 
 Workaround 2 demonstrated in Report2:
 
-1) Add a [CSV DataSource](../csvdatasource-component) (with **Group**, **Item** and **Value** fields) but don't set it to be the datasource of the report;
+1) Add a [CSV DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) (with **Group**, **Item** and **Value** fields) but don't set it to be the datasource of the report;
 
 2) Add a table through the Table Wizard -> set its DataSource to the csvDataSource -> add only the **Item** and **Value** fields.
 

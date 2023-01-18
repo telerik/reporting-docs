@@ -24,7 +24,7 @@ res_type: kb
 	</tr>
 </table>
 
-> This article relates to the [Legacy ASP<span>.</span>NET Report Viewer](../asp-net-report-viewer).
+> This article relates to the [Legacy ASP<span>.</span>NET Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%}).
  
 ## Description  
  
@@ -40,7 +40,7 @@ Using an older DOCTYPE declaration such as **HTML4.1** resolves the issue with t
    
 ## Notes
 
-The [HTML5 Report Viewer](../html5-report-viewer) introduced in **Telerik Reporting Q3 2013** also provides solution for the issue. The viewer uses HTML5/JS/CSS3 technologies and is HTML5 browsers compliant.
+The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) introduced in **Telerik Reporting Q3 2013** also provides solution for the issue. The viewer uses HTML5/JS/CSS3 technologies and is HTML5 browsers compliant.
 
 ## See Also
 

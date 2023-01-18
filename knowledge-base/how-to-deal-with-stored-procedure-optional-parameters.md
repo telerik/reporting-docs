@@ -59,8 +59,8 @@ END
 ### Alter the Value Passed to the Stored Procedure Optional Parameter
 
 If you cannot alter the Stored Procedure, you need to assure that the value passed to the SqlDataSource parameter is not Null. For example, you may use the 
-following [Expression](../designing-reports/connecting-to-data/expressions/overview) when setting its value. It passes the hard-coded default 
-SqlDataSource parameter value when the [Report Parameter](../designing-reports/connecting-to-data/report-parameters/overview) 'grade' is _Null_: 
+following [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) when setting its value. It passes the hard-coded default 
+SqlDataSource parameter value when the [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) 'grade' is _Null_: 
 
 ```SQL
 = Parameters.grade.Value ?? 9

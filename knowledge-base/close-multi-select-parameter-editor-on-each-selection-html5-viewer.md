@@ -22,14 +22,14 @@ res_type: kb
 
 
 ## Description
-The multi-select parameter editor in the Html5 Report Viewer is a [Kendo Multiselect widget](../../kendo-ui/api/javascript/ui/multiselect) .Generally, you may control 
+The multi-select parameter editor in the Html5 Report Viewer is a [Kendo Multiselect widget](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) .Generally, you may control 
 whether its popup with the available values is opened or closed. In some cases, it is required that the popup closes on each item selection. 
 The implementation of the Html5 Viewer doesn't include this functionality and the popup with the available values stays opened until the user clicks outside the popup area.  
 The reason for this is that if the __AutoRefresh__ of the corresponding Report Parameter is __True__ and the popup closes on each item select, the report would be 
 automatically refreshed on each item selection, which may be overhead.
 
 ## Suggested Workarounds
-Here is a sample code you may apply in the [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) event handler of the viewer:
+Here is a sample code you may apply in the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) event handler of the viewer:
 ```JavaScript
 $("#reportViewer1")
     .telerik_ReportViewer({
@@ -42,4 +42,4 @@ $("#reportViewer1")
         }
     });
 ```
-Generally, the above function selects the Kendo Multiselect widget and sets up its [Change event](../../kendo-ui/api/javascript/ui/multiselect/events/change) handler to close the popup if it is opened.
+Generally, the above function selects the Kendo Multiselect widget and sets up its [Change event](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect/events/change) handler to close the popup if it is opened.

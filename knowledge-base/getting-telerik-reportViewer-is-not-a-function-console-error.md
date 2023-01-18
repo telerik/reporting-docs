@@ -31,7 +31,7 @@ telerik_reportViewer is not a function
 ```
 
 ## Cause\Possible Cause(s)
-Page containing an HTML5 Viewer must load only once jQuery library of version greater than 1.9.1 (according to the [Kendo UI requirements](http://docs.kendoui.com/getting-started/javascript-dependencies#jquery-version)). For more information, please check [HTML5 Viewer Requirements](../html5-report-viewer-system-requirements) help article.
+Page containing an HTML5 Viewer must load only once jQuery library of version greater than 1.9.1 (according to the [Kendo UI requirements](http://docs.kendoui.com/getting-started/javascript-dependencies#jquery-version)). For more information, please check [HTML5 Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}) help article.
 
 Such error can occur if:
 - jQuery is not loaded;
@@ -41,7 +41,7 @@ Such error can occur if:
 ## Solution
 Check if the link to jQuery is loaded before the viewer's script. 
 
-The recommended approach is to add the viewer using the [VS item template](../html5-report-viewer-quick-start#telerik-html5-report-viewer-item-template). The VS item template will add all required viewer resources to the page in the correct order.
+The recommended approach is to add the viewer using the [VS item template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}#telerik-html5-report-viewer-item-template). The VS item template will add all required viewer resources to the page in the correct order.
 
 ## Notes
 Check the examples under Telerik Reporting installation folder, i.e. *C:\Program Files (x86)\Progress\Telerik Reporting VERISON\Examples\CSharp|VB*. The web-based viewers are implemented in the *Html5Demo*, *MvcDemo*, and *WebFormsDemo* projects.

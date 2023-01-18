@@ -26,7 +26,7 @@ This article shows how to avod the warning in Excel indicating that **"The numbe
 which appears if you exported integer values which are indicated as String in the report.
 
 ## Solution
-1. Create a [User Function](../expressions-user-functions) that will return the records with the correct data type:
+1. Create a [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that will return the records with the correct data type:
 ```CSharp
 public static class ReturnTypeClass
 {
@@ -40,7 +40,7 @@ public static class ReturnTypeClass
 }
 ```
 
-2. [Register the User Function](../standalone-report-designer-extending-configuration).
+2. [Register the User Function]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).
 For example, if you are using the Standalone designer, you will need to add this piece of code in the **Telerik.ReportDesigner.exe.config** file:
 ```XML
 <Telerik.Reporting>

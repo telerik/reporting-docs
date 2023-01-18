@@ -55,4 +55,4 @@ The syntax of the SQL query must be considered with the specification of the sel
   
 ## See Also
 
-[Using Parameters with the SqlDataSource component.](../sql-data-source-using-parameters)  
+[Using Parameters with the SqlDataSource component.]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})  

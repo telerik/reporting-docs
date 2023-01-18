@@ -43,6 +43,6 @@ This can produce unexpected result in some rendering formats.
 
 ## See Also
 
-[Using Styles to Customize Reports](../style-using-styles-to-customize-reports)
+[Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
 
-[Style Inheritance and Overriding](../style-style-inheritence-priorty-overriding)
+[Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})

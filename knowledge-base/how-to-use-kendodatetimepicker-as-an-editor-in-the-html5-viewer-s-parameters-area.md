@@ -28,11 +28,11 @@ res_type: kb
   
 ## Description  
 
-Telerik Reporting provides an HTML5 Viewer that is a client-side HTML/CSS/JS widget built with [Telerik Kendo UI Widgets](../html5-report-viewer-widget-requirements). The viewer can be configured to use different than the default widgets in its structure, where the selected widgets should comply to the following requirements: 
+Telerik Reporting provides an HTML5 Viewer that is a client-side HTML/CSS/JS widget built with [Telerik Kendo UI Widgets]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}). The viewer can be configured to use different than the default widgets in its structure, where the selected widgets should comply to the following requirements: 
 
-- [HTML5 Viewer JavaScript declaration - How To: Create a Custom Parameter Editor](../html5-report-viewer-howto-custom-parameter-editor);
-- [ASP.NET MVC Wrapper of the HTML5 Viewer - How To: Create a Custom Parameter Editor](../html5-mvc-report-viewer-customizing-custom-parameters-editor);
-- [ASP.NET WebForms wrapper of the HTML5 Viewer - How To: Create a Custom Parameter Editor](../html5-webforms-report-viewer-customizing-custom-parameter-editor).
+- [HTML5 Viewer JavaScript declaration - How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%});
+- [ASP.NET MVC Wrapper of the HTML5 Viewer - How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor%});
+- [ASP.NET WebForms wrapper of the HTML5 Viewer - How To: Create a Custom Parameter Editor]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor%}).
 
 
 Telerik **kendoDateTimePicker** widget is not included in the Kendo UI JavaScript distributed by Telerik Reporting through *telerikReportViewer.kendo-x.x.x.min.js* file, or *kendo.subset.2015.3.930.min.js* in older versions. 
@@ -120,5 +120,5 @@ You will have to replace the Kendo UI subset with the full Kendo UI JavaScript e
 
 - We adjust the dates that we send and receive in order to always work with **UTC** dates. Working with local times may cause issues if the server machine is in other timezone than the client machines.  
   
-- If you prefer to not use the Parameters Area, you can create an external UI that updates the HTML5 Viewer's reportSource in JavaScript - [How To: Pass Values to Report Parameters](../html5-report-viewer-howto-custom-parameters).
+- If you prefer to not use the Parameters Area, you can create an external UI that updates the HTML5 Viewer's reportSource in JavaScript - [How To: Pass Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-pass-values-to-report-parameters%}).
 

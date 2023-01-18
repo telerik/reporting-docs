@@ -22,7 +22,7 @@ res_type: kb
 
 
 ## Description
-The [Web Report Designer](../web-report-designer) utilizes the [browser local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to keep 
+The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) utilizes the [browser local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to keep 
 the previously opened reports. For that reason, if you close the designer without closing the reports, on the next designer opening in the same browser, all 
 the previously opened reports will be re-opened. In some scenarios, this may cause failures.
 

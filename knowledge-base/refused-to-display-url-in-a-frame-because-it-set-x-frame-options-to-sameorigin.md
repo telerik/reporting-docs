@@ -40,4 +40,4 @@ There are two possible approaches that might fix the issue:
 
 1. Change the [X-Frame-Option](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) to **ALLOW FROM  &lt;address&gt;**;
 
-2. Change the HTML5 Viewer's **printMode** option to download the PDF file with the additional settings (*telerikReportViewer.PrintModes.FORCE_PDF_FILE*) - [Printing Reports](../html5-report-viewer-direct-print).
+2. Change the HTML5 Viewer's **printMode** option to download the PDF file with the additional settings (*telerikReportViewer.PrintModes.FORCE_PDF_FILE*) - [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%}).

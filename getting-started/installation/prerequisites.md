@@ -10,7 +10,7 @@ position: 1
 
 # Prerequisites
 
-This article lists the operating system, .NET, IIS, and IDE support provided by Telerik Reporting.
+This article lists the system requirements that include operating system, .NET, IIS, and IDE support provided by Telerik Reporting.
 
 * [Operating system support](https://www.telerik.com/products/reporting/system-requirements)
 * [.NET and IIS support](https://www.telerik.com/products/reporting/system-requirements)
@@ -22,3 +22,4 @@ To ensure the smooth functioning of the Telerik Reporting features when deployin
 
 * [Telerik Reporting Installation Approaches]({% slug telerikreporting/installation %})
 * [Included Assemblies]({% slug included-assemblies %})
+* [System Requirements](https://www.telerik.com/products/reporting/system-requirements)

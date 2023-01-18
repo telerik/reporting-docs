@@ -44,7 +44,7 @@ Total,0
 Note that the last column, *Total* doesn't have an explicitly set value, because it should be calculated as an aggregate of all the previous intermediate values.
 The steps, needed to produce a waterfall chart are listed below:
 
-1. Start by creating a clustered column chart with the graph wizard , as explained here: [How To: Create Column Chart](../graphhowtocreatecolumnchart).
+1. Start by creating a clustered column chart with the graph wizard , as explained here: [How To: Create Column Chart]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/column-charts/overview%}).
 2. When arranging the graph fields, drag the **Item** field for *Categories* box and **Value** field for *Values* box.
 3. Remove the sorting from the category group to ensure the data will be ordered as it is in the data source.
 4. Select a datapoint from the produced column series and set its Y property to 

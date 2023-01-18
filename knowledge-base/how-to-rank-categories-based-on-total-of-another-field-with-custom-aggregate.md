@@ -23,7 +23,7 @@ res_type: kb
 Sometimes it is necessary to determine the rank of a category value (e.g. competitor ID) based on some aggregate value (e.g. total score from several competitions).
 
 ## Solution
-It is necessary to create a [Custom Aggregate](../expressions-user-aggregate-functions) that achieves such requirement. Here is a sample code :
+It is necessary to create a [Custom Aggregate]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%}) that achieves such requirement. Here is a sample code :
 
 ```CSharp
 using System.Collections.Generic;

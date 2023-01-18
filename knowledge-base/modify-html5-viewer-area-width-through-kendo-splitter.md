@@ -33,7 +33,7 @@ Sometimes it may be necessary to increase/decrease the default width of the _Doc
 ## Solution
 In the Telerik Html5 Report Viewer, we have added Kendo splitter to control the sizes of the viewer's areas. This enables the end-user to resize them using the pointing device. By default _Document Map_ and _Parameter_ areas have width _210px_. This default/initial value is not configurable in our Html5 Viewers. As the Telerik Report Viewer uses Kendo UI widgets, the user could change the UI as desired through the corresponding Kendo widget settings and options.  
   
-To modify the _Document Map_ or _Parameter_ area width you may include the following code in the [renderingEnd](../html5-report-viewer-reportviewer-events-renderingend) or [pageReady](../html5-report-viewer-reportviewer-events-pageready) event of the viewer :   
+To modify the _Document Map_ or _Parameter_ area width you may include the following code in the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) or [pageReady]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args)%}) event of the viewer :   
   
 
 ```JavaScript

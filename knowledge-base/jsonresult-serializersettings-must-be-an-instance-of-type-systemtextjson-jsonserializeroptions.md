@@ -30,19 +30,20 @@ res_type: kb
 
 ## Description
 
-If the [Telerik Reporting REST Service](https://docs.telerik.com/reporting/telerik-reporting-rest-service-aspnetcore-mvc-core3) project is targeting .NET Core 3.0+ and is throwing the error `JSONResult.SerializerSettings Must Be of Type System.Text.Json.JsonSerializerOptions`
+If the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}) project is targeting .NET Core 3.0+ and is throwing the error `JSONResult.SerializerSettings Must Be of Type System.Text.Json.JsonSerializerOptions`
 
 ## Solution
 
 1. Add the NuGet Package, *Microsoft.AspNetCore.Mvc.NewtonsoftJson*
 1. Append `.AddNewtonsoftJson()` to any of the following services configurations:
 
-````C#
+	````C#
 services.AddControllers().AddNewtonsoftJson();
-services.AddControllersWithViews().AddNewtonsoftJson();
-services.AddRazorPages().AddNewtonsoftJson();
+	services.AddControllersWithViews().AddNewtonsoftJson();
+	services.AddRazorPages().AddNewtonsoftJson();
 ````
+
 
 ## See Also
 
-* [ASP.NET Core 3.0+ Telerik Reporting REST Service](https://docs.telerik.com/reporting/telerik-reporting-rest-service-aspnetcore-mvc-core3)
+* [ASP.NET Core 3.0+ Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%})

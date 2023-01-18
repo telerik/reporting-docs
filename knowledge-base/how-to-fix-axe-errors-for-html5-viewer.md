@@ -79,9 +79,9 @@ pageReady: function (e, args) {
 
 *Certain ARIA roles must contain particular children*
 
-The viewer renders [Document Map element](../designing-reports-document-map) with data-role="treeview" attribute. When the Document Map 
+The viewer renders [Document Map element]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%}) with data-role="treeview" attribute. When the Document Map 
 has no items the parent element will still be rendered but without the treeitem nodes. This is treated as a violation by the Axe. 
-The solution is to [add an item to the DocumentMap](../designing-reports-interactivity-how-to-add-document-map) so the treeitem node 
+The solution is to [add an item to the DocumentMap]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%}) so the treeitem node 
 is appended to the treeview parent in the viewer.
 
 The DocumentMap is visible by default on the initial rendering of the viewer. To hide it, you can set *documentMapVisible*
@@ -109,9 +109,9 @@ They can be fixed by applying high contrast colors to the report elements in the
 
 ## See Also
 
-[Accessibility](../html5-report-viewers-accessibility-support)
+[Accessibility]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%})
 
-[HTML5 Report Viewer options](../html5-report-viewer-jquery-fn-telerik-reportviewer)
+[HTML5 Report Viewer options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})
 
 
 

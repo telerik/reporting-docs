@@ -51,7 +51,7 @@ public class ProductRepository : IProductRepository
     }
 }
 ```  
-In this case you may use [Custom Resolver](../telerik-reporting-rest-custom-report-resolver) for resolving the TRDP reports and add the DataSource at run-time after instantiating the report. For the purpose it will be necessary to :  
+In this case you may use [Custom Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) for resolving the TRDP reports and add the DataSource at run-time after instantiating the report. For the purpose it will be necessary to :  
 
 1) Implement a sample *ConfigurationService* class:
 ```CSharp

@@ -11,11 +11,11 @@ previous_url: /manual-setup-of-html5-report-viewer-in-asp-net-core-3
 
 # How to Use HTML5 Report Viewer in an ASP.NET Core 3.1 application
 
-This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core 3.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1) web application. 
+This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core 3.1](https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-3.1) web application.
 
 ## Prerequisites
 
-The report viewer requires a reference to a running Reports Web Service. The report viewer can consume reports generated and served by any of the following Reports Web Service implementations: 
+The report viewer requires a reference to a running Reports Web Service. The report viewer can consume reports generated and served by any of the following Reports Web Service implementations:
 
 * A service that runs in another application.
 
@@ -23,14 +23,21 @@ The report viewer requires a reference to a running Reports Web Service. The rep
 
 * A service that is hosted locally in the same application.
 
-In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}). 
+In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}).
 
+## Adding the HTML5 Report Viewer component using an item template
 
-## Adding the HTML5 Report Viewer
+The HTML5 Report Viewer item template allows you to quickly and easily add the HTML5 Report Viewer to your application.
 
-1. This tutorial uses the __Barcodes Report.trdp__ report definitions file that must be located in a __Reports__ folder inside the project. Follow  [these steps](https://docs.telerik.com/reporting/telerik-reporting-rest-service-aspnetcore-mvc-core3#add-report-definitions) to    make the __Barcodes Report.trdp__ file available in your project. 
+If you wish to connect the Report Viewer to a REST service, you can follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}) documentation article.
 
-1. Make sure that the app configuration inside the __Configure__ method of the __Startup.cs__ can serve static files: 
+If you wish to connect the Report Viewer to a Report Server instance, refer to the article section [Configuring the HTML5 Report Viewer to work with Report Server using Item Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%}#configuring-the-html5-report-viewer-to-work-with-report-server-using-item-templates).
+
+## Adding the HTML5 Report Viewer component manually
+
+1. This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project. Follow the steps in the section [Add Report Definitions]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}#add-report-definitions) to make the `Barcodes Report.trdp` file available in your project.
+
+1. Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
 	````C#
 app.UseStaticFiles();
@@ -88,9 +95,9 @@ app.UseStaticFiles();
 ````
 
 
-1. Set the *launchSettings.json* launchUrl to the new HTML page. 
+1. Set the *launchSettings.json* `launchUrl` to the new HTML page.
 
-1. Finally, run the project to see the report. 
+1. Finally, run the project to see the report.
 
 ## See Also
 

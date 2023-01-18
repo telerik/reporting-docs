@@ -25,8 +25,8 @@ Sometimes it is necessary to change dynamically the connection string of a repor
 ## Solution
 The requirement can be achieved without writing additional code, **_directly in the report definition_** using dedicated report parameters. Here are the steps:
 
-1. In the report definition [introduce a new Report Parameter](../designing-reports-parameters-adding-parameters) (for example _ConnectionStringParameter_) - the connection string will be passed to the Report via this parameter.  
-2. In the Report or other [Data item](../data-items) (Table, List, etc.) where the connection string is supposed to be changed dynamically introduce a new [Binding](../expressions-bindings) as shown below:  
+1. In the report definition [introduce a new Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) (for example _ConnectionStringParameter_) - the connection string will be passed to the Report via this parameter.  
+2. In the Report or other [Data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) (Table, List, etc.) where the connection string is supposed to be changed dynamically introduce a new [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) as shown below:  
 
 	```XML
 	Property path                   |   Expression

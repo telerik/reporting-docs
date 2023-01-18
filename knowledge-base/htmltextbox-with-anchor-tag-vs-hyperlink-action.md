@@ -22,9 +22,9 @@ res_type: kb
 
 A frequently asked question is how to add links in documents produced by Telerik Reporting and which rendering formats will keep the link clickable.  
 
-- The [HtmlTextBox](../report-items-html-text-box) can display text-formatting HTML and CSS, including *Anchor* tags.  
+- The [HtmlTextBox]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%}) can display text-formatting HTML and CSS, including *Anchor* tags.  
 
-- The [Hyperlink Action (NavigateToUrlAction)](../designing-reports-interactivity-hyperlinks) is a Telerik Reporting mechanism for adding navigation to external resources via *URL*.  
+- The [Hyperlink Action (NavigateToUrlAction)]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%}) is a Telerik Reporting mechanism for adding navigation to external resources via *URL*.  
   
 ## Solution
 
@@ -36,4 +36,4 @@ Our recommendation is to use a **Hyperlink Action**, which will let the item be 
   
 ## See Also
 
-[Design Considerations for Report Rendering](../designing-reports-considerations-overview).  
+[Design Considerations for Report Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview%}).  

@@ -39,4 +39,4 @@ Add references to the following assemblies:
 
 ## See Also
 * [Deploy Telerik Reporting with newer OpenXML SDK version](https://www.telerik.com/support/kb/reporting/details/deploy-telerik-reporting-with-newer-openxml-sdk-version)
-* [Open XML SDK for Microsoft Office](../installation-deploying-openxml)
+* [Open XML SDK for Microsoft Office]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%})

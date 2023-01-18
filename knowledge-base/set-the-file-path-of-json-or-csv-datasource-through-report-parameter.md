@@ -22,13 +22,13 @@ res_type: kb
 
 
 ## Description
-This article explains how to set the file path of the CSV or JSON file of [JSON DataSource](../jsondatasource-component) or [CSV DataSource](../csvdatasource-component) through a [Report Parameter](../designing-reports-parameters).
+This article explains how to set the file path of the CSV or JSON file of [JSON DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%}) or [CSV DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) through a [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}).
 
 
 ## Solution
-You can use the [Utility function](../expressions-utility-functions) **GetUri**/**Uri** to set the CSV/JSON file through a report parameter. 
+You can use the [Utility function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/utility-functions%}) **GetUri**/**Uri** to set the CSV/JSON file through a report parameter. 
 1) Add a report parameter called **uriParameter**;
-2) Set the [Binding property](../expressions-bindings) of the data item(report, table, list, crosstab) that will use the datasource. In this example, we will set it to the table:
+2) Set the [Binding property]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the data item(report, table, list, crosstab) that will use the datasource. In this example, we will set it to the table:
 
 **Property path**: DataSource.Source
 
@@ -36,7 +36,7 @@ You can use the [Utility function](../expressions-utility-functions) **GetUri**/
 
 
 ## Workaround for older versions
-If the GetUri/ Uri function is not available in the report designer, the desired functionality can be also achieved through and [User function](../expressions-user-functions) that returns the Uri of the CSV or JSON file based on the passed report parameter. You can follow the steps below:
+If the GetUri/ Uri function is not available in the report designer, the desired functionality can be also achieved through and [User function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that returns the Uri of the CSV or JSON file based on the passed report parameter. You can follow the steps below:
 1) Create a new Class Library and add the method below. In this case, the sample is for the absolute path:
 
 ```CSharp
@@ -50,7 +50,7 @@ public static Uri setCsvSource(string path)
 
 2) Build the project;
 
-3) Register the generated dll as it is explained in the [Extending Report Designer](../standalone-report-designer-extending-configuration) article. You will need to open the **Telerik.ReportDesigner.exe.config** file and add the following XML:
+3) Register the generated dll as it is explained in the [Extending Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}) article. You will need to open the **Telerik.ReportDesigner.exe.config** file and add the following XML:
 
 ```XML
 	<Telerik.Reporting>
@@ -60,7 +60,7 @@ public static Uri setCsvSource(string path)
 	</Telerik.Reporting>
 ```
 
-4) Set the following [Binding](../expressions-bindings) to the data item that uses the datasource:
+4) Set the following [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the data item that uses the datasource:
 **Property path**: DataSource.Source
 
 **Expression**: = MyUserFunction.Class1.setCsvSource(Parameters.csvSource.Value)

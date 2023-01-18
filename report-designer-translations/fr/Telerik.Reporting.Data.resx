@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DesignCategory" xml:space="preserve">
+    <value>Conception</value>
+  </data>
+  <data name="DataSource_Description_Description" xml:space="preserve">
+    <value>Obtient ou définit la description de l’objet de source de données.</value>
+  </data>
+  <data name="SharedDataSource_Path_Description" xml:space="preserve">
+    <value>Chemin d’accès au composant de source de données référencé.</value>
+  </data>
+  <data name="SharedDataSource_DataSourceReference_Description" xml:space="preserve">
+    <value>Représente l’instance de source de données référencée</value>
+  </data>
+  <data name="DataSource_Description_Name" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="SharedDataSource_Path_Name" xml:space="preserve">
+    <value>Chemin</value>
+  </data>
+  <data name="SharedDataSource_DataSourceReference_Name" xml:space="preserve">
+    <value>Référence des sources de données</value>
+  </data>
   <data name="WebServiceDataSource_RequestTimeout_Description" xml:space="preserve">
     <value>Le temps en quelques secondes pour attendre avant que la demande ne s’évanouit.</value>
   </data>

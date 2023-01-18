@@ -143,6 +143,13 @@ using Microsoft.AspNetCore.Mvc;
 	<WebReportDesigner DesignerId="wrd1"
 				ServiceUrl="/api/reportdesigner"
 				Report="SampleReport.trdp"
+				ReportViewerOptions="@(new ReportViewerOptions() {
+					templateUrl = "api/reportdesigner/resources/templates/telerikReportViewerTemplate.html",
+					scaleMode = ScaleMode.Specific,
+					scale = 1.0,
+					pageMode = PageMode.ContinuousScroll,
+					viewMode = ViewMode.Interactive
+				})"
 				ToolboxArea="new ToolboxAreaOptions() { Layout = ToolboxAreaLayout.List }"
 				PropertiesArea="new PropertiesAreaOptions() { Layout = PropertiesAreaLayout.Categorized }" />
 ````

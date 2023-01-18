@@ -50,6 +50,9 @@ can configure different predefined folders on the backend as needed. The end-use
 The available reports on the server are listed in the Assets Manager as well. They reside in a dedicated __Reports__ root folder
 and may be organized into subfolders when created or uploaded.
 
+### Shared Data Sources organization
+The available [`SharedDataSource`]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}) components are also listed in the Asset Manager. From here, they can be `Downloaded`, `Renamed` or `Deleted`.
+
 ## Resources usage
 When a resource is needed to be referenced in a report as a value of a property the Assets Manager may be opened by the respective property editor.
 Such properties are for example the Value property of the PictureBox item and the Style -> Background image property of any report item. 

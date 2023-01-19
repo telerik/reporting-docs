@@ -92,8 +92,6 @@ List of Browsers covering the above requirements includes:
 
 * Desktop
 
-	+ Internet Explorer: 9+
-
 	+ Edge
 
 	+ Google Chrome

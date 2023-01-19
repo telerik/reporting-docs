@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DesignCategory" xml:space="preserve">
+    <value>Diseño</value>
+  </data>
+  <data name="DataSource_Description_Description" xml:space="preserve">
+    <value>Obtiene o establece la descripción del objeto de origen de datos.</value>
+  </data>
+  <data name="SharedDataSource_Path_Description" xml:space="preserve">
+    <value>Ruta de acceso al componente de origen de datos al que se hace referencia.</value>
+  </data>
+  <data name="SharedDataSource_DataSourceReference_Description" xml:space="preserve">
+    <value>Representa la instancia de origen de datos a la que se hace referencia</value>
+  </data>
+  <data name="DataSource_Description_Name" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="SharedDataSource_Path_Name" xml:space="preserve">
+    <value>Ruta</value>
+  </data>
+  <data name="SharedDataSource_DataSourceReference_Name" xml:space="preserve">
+    <value>Referencia de origen de datos</value>
+  </data>
   <data name="WebServiceDataSource_RequestTimeout_Description" xml:space="preserve">
     <value>El intervalo de tiempo en segundos que se debe esperar antes de que se adelante el tiempo de espera de la solicitud.</value>
   </data>

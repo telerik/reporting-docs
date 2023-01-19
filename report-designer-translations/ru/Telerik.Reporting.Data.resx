@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DesignCategory" xml:space="preserve">
+    <value>Дизайн</value>
+  </data>
+  <data name="DataSource_Description_Description" xml:space="preserve">
+    <value>Получает или задает описание объекта источника данных.</value>
+  </data>
+  <data name="SharedDataSource_Path_Description" xml:space="preserve">
+    <value>Путь к компоненту источника данных, на который указывает ссылка.</value>
+  </data>
+  <data name="SharedDataSource_DataSourceReference_Description" xml:space="preserve">
+    <value>Представляет экземпляр источника данных, на который указывает ссылка.</value>
+  </data>
+  <data name="DataSource_Description_Name" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="SharedDataSource_Path_Name" xml:space="preserve">
+    <value>Путь</value>
+  </data>
+  <data name="SharedDataSource_DataSourceReference_Name" xml:space="preserve">
+    <value>Справочник по источнику данных</value>
+  </data>
   <data name="WebServiceDataSource_RequestTimeout_Description" xml:space="preserve">
     <value>Промежуток времени в секундах, чтобы ждать, прежде чем запрос тайм-аут.</value>
   </data>

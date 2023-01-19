@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ReportEngineSettingsDescription" xml:space="preserve">
+    <value>Содержит параметры для конкретного отчета, которые будут соблюдаться обработчиком отчетов на этапе обработки и подготовки к просмотру жизненного цикла отчета.</value>
+  </data>
+  <data name="SubReport_DataSource_Description" xml:space="preserve">
+    <value>Используется для передачи данных из основного отчета во внутренний отчет.</value>
+  </data>
+  <data name="Report_ReportEngineSettingsProperty_Name" xml:space="preserve">
+    <value>Настройки модуля отчетов</value>
+  </data>
+  <data name="CacheDefinitionProperties_Name" xml:space="preserve">
+    <value>Свойства определения кэша</value>
+  </data>
+  <data name="CacheDefinitionProperties_Description" xml:space="preserve">
+    <value>Определяет, будут ли свойства определения отчета кэшироваться во время обработки, делая их неизменяемыми.</value>
+  </data>
+  <data name="InnerReportCategory" xml:space="preserve">
+    <value>Внутренний отчет</value>
+  </data>
   <data name="Map_GenericTileProvider_UserAgent_Name" xml:space="preserve">
     <value>Агент пользователя</value>
   </data>

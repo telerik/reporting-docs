@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ReportEngineSettingsDescription" xml:space="preserve">
+    <value>Contient les paramètres spécifiques au rapport qui seront respectés par le moteur de création de rapports pendant les étapes de traitement et de rendu du cycle de vie du rapport.</value>
+  </data>
+  <data name="SubReport_DataSource_Description" xml:space="preserve">
+    <value>Utilisé pour transmettre les données du rapport principal au rapport interne.</value>
+  </data>
+  <data name="Report_ReportEngineSettingsProperty_Name" xml:space="preserve">
+    <value>Paramètres du moteur de rapports</value>
+  </data>
+  <data name="CacheDefinitionProperties_Name" xml:space="preserve">
+    <value>Propriétés de définition du cache</value>
+  </data>
+  <data name="CacheDefinitionProperties_Description" xml:space="preserve">
+    <value>Détermine si les propriétés de définition de rapport seront mises en cache pendant le traitement, ce qui les rend immuables.</value>
+  </data>
+  <data name="InnerReportCategory" xml:space="preserve">
+    <value>Rapport intérieur</value>
+  </data>
   <data name="Map_GenericTileProvider_UserAgent_Name" xml:space="preserve">
     <value>Agent utilisateur</value>
   </data>

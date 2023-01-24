@@ -40,12 +40,12 @@ With [Telerik.UI.forBlazor 4.0.0](https://www.telerik.com/support/whats-new/blaz
 
 ## Solution
 
-Apply the followingn changes in:
+Apply the following changes in:
 
 * `_Layout.cshtml` for .NET 6 projects
 * `Host.cshtml` for .NET 7 projects
 
-1. Download the CSS file [icon-patch.css](./resources/icon-patch.css) from our GitHub repository and save it to your project, for example in folder `wwwroot/css`.
+1. Download the CSS file [icon-patch.css](./resources/icon-patch.css) from our GitHub repository and save it to your project, for example in the folder `wwwroot/css`.
 
 1. Reference the `icon-patch.css` after the CSS file of the viewer:
 

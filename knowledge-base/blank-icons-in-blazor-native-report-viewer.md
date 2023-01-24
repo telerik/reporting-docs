@@ -45,7 +45,7 @@ Apply the followingn changes in:
 * `_Layout.cshtml` for .NET 6 projects
 * `Host.cshtml` for .NET 7 projects
 
-1. Download the CSS file [icon-patch.css](https://github.com/telerik/reporting-docs/blob/master/knowledge-base/resources/icon-patch.css) from our GitHub repository and save it to your project, for example in folder `wwwroot/css`.
+1. Download the CSS file [icon-patch.css](/resources/icon-patch.css) from our GitHub repository and save it to your project, for example in folder `wwwroot/css`.
 
 1. Reference the `icon-patch.css` after the CSS file of the viewer:
 

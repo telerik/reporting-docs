@@ -1,6 +1,6 @@
 ---
 title: Introduction
-page_title: Introduction 
+page_title: Prelude To Telerik Reporting
 description: "Telerik Reporting is a .NET-based platform enabling you to create, design, export, and integrate reports in JavaScript, MVC, WebForms, Angular, React, and Blazor web applications, as well as in WinForms, WPF, WinUI desktop projects."
 slug: telerikreporting/welcome-to-telerik-reporting!
 tags: telerik, reporting, introduction, welcome

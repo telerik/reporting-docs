@@ -1,6 +1,6 @@
 ---
 title: Designing Reports (Guide)
-page_title: Designing Reports (Guide)
+page_title: An Introductory Step By Step Guide on Designing Telerik Reports
 description: "Get up and running with the designing process of Telerik Reporting and learn how to create a report, connect it to data, set its header and footer, add some styling, and export the report to PDF."
 slug: telerikreporting/getting-started/first-steps
 tags: telerik, reporting, first, steps, guide, design, a, report
@@ -9,7 +9,7 @@ position: 1
 previous_url: /getting-started/first-steps
 ---
 
-# Designing Reports (Guide) 
+# Tutorial on Designing Your First Telerik Report
 
 This guide targets users who need to quickly get up and running with Telerik Reporting and design and export a report. 
 

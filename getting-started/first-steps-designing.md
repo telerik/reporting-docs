@@ -9,7 +9,7 @@ position: 1
 previous_url: /getting-started/first-steps
 ---
 
-# Tutorial on Designing Your First Telerik Report
+# Create Your First Telerik Report
 
 This guide targets users who need to quickly get up and running with Telerik Reporting and design and export a report. 
 

@@ -65,7 +65,26 @@ The idea is to introduce a static string property, set its value in the `CreateI
 
 >note The ReportsController gets instantiated on each request. Therefore, if the variable holding the culture name is not static, the value will be lost between the requests.
 
+If you need to localize also the Text specifying the names of the Report Parameter editors in the Html5 Viewers, you need to use the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) event to select the parameter editor's element and change its text based on the selected culture. Here is a sample jQuery code for the event handler:
+
+````JavaScript
+renderingEnd: function (e, args) {
+	var langValue = e.data.sender.reportSource().parameters["lang"];
+
+	var langParam = $(`.trv-parameter-header div[title='Language']`);
+	if (langValue == "bg-BG") {
+		langParam.text("Език");
+	} else {
+		langParam.text("Language");
+	}
+}
+````
+
+The reason for this is that the Parameters area of the viewer gets rendered with viewer loading, after calling the [Get Report Parameters]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters%}) request that returns the visible Report Parameters with their default values. When the user selects new parameter values in the viewer, the _Get Report Parameters_ request is not performed and the names of the editors are not updated.
+
 ## See Also
 
 * [How to pass culture via AJAX call from the HTML5 Report Viewer]({%slug how-to-send-culture-from-client-to-service%})
 * [Localization of reports based on report parameter and RESX files]({%slug localization-of-reports-based-on-report-parameter-and-resx-files%})
+* [Html5 Report Viewer event renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%})
+* [Reporting REST Service Get Report Parameters request]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api/get-report-parameters%})

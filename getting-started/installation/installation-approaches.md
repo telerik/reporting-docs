@@ -1,6 +1,6 @@
 ---
 title: Installation Approaches
-page_title: Installation Approaches
+page_title: Available Approaches for Telerik Reporting Installation
 description: "Ger familiar with the available installation approaches supported by Telerik Reporting. Learn how to install the product based on your specific needs."
 slug: telerikreporting/installation
 tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, private, feed, visual, studio

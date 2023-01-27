@@ -8,7 +8,7 @@ published: true
 position: 3
 ---
 
-# Get Started Easily with our Video Onboarding Program
+# Jump Into Telerik Reporting With Our Video Onboarding Program
 
 Telerik Reporting has its own [video getting started course](https://learn.telerik.com/learn/course/external/view/elearning/38/telerik-reporting) available to both users with an active trial license and users with an active commercial license. The training course in Telerik's [Virtual Classroom](https://learn.telerik.com/learn) is developed to help you get started with the Telerik Reporting set of services and features. It aims to put you in the shoes of a report designer and an engineer who is integrating a reporting solution into an existing application.
 

@@ -87,6 +87,8 @@ By default, groups are not kept together on a single page. You can instruct the 
 
 By default, Table item is kept together. To force nested table to break set `KeepTogether = False` for parent table's row/column that contains nested table. 
 
+>note If the Report group has `GroupKeepTogether = FirstDetail` and the `Detail` section has `KeepTogether = False`, if even only a part of the detail section without any report items(essentially _blank_ content) can be rendered on the page with the __group header__, that part of the detail section will be treated as the first detail and the group header section will be rendered on the page.
+
 >note If the content that should be kept together is too large to fit on a single page, it is not moved and is left on the current page, forcing the rest of the content to move to next page, as if `KeepTogether` is `False`.
 >
 >_Example_: Report group has `GroupKeepTogether = FirstDetail`, this means that the summary height of the group header, height of all child group headers (if any) and height of the first detail should be able to fit on a single page in order for the KeepTogether algorithm to work and move the whole Group on a new page. 

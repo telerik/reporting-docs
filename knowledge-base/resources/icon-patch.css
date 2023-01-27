@@ -1,0 +1,31 @@
+﻿.k-icon.refresh::before {
+    content: "\e103";
+}
+
+.k-icon.seek-w::before {
+    content: "\e00b";
+}
+
+.k-icon.seek-e::before {
+    content: "\e009";
+}
+
+.k-icon.arrow-60-left::before {
+    content: "\e007";
+}
+
+.k-icon.arrow-60-right::before {
+    content: "\e005";
+}
+
+.k-icon.email::before {
+    content: "\e809";
+}
+
+.k-icon.dictionary-add::before {
+    content: "\e651";
+}
+
+.k-icon.match-full-word::before {
+    content: "\e06e";
+}

@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ReportEngineSettingsDescription" xml:space="preserve">
+    <value>Contiene la configuración específica del informe que respetará el motor de informes durante la etapa de procesamiento y representación del ciclo de vida del informe.</value>
+  </data>
+  <data name="SubReport_DataSource_Description" xml:space="preserve">
+    <value>Se utiliza para pasar datos del informe principal al informe interno.</value>
+  </data>
+  <data name="Report_ReportEngineSettingsProperty_Name" xml:space="preserve">
+    <value>Configuración del motor de informes</value>
+  </data>
+  <data name="CacheDefinitionProperties_Name" xml:space="preserve">
+    <value>Propiedades de definición de caché</value>
+  </data>
+  <data name="CacheDefinitionProperties_Description" xml:space="preserve">
+    <value>Determina si las propiedades de definición de informe se almacenarán en caché durante el procesamiento, haciéndolas inmutables.</value>
+  </data>
+  <data name="InnerReportCategory" xml:space="preserve">
+    <value>Informe interno</value>
+  </data>
   <data name="Map_GenericTileProvider_UserAgent_Name" xml:space="preserve">
     <value>Agente de usuario</value>
   </data>

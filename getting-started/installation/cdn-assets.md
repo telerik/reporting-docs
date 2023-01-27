@@ -1,7 +1,7 @@
 ---
 title: Telerik Reporting CDN
 page_title: Using the Telelerik Reporting CDN in Web Applications
-description: "Use the Telerik Reporting CDN to serve resources for the report viewer or the web report designer"
+description: "Use the Telerik Reporting CDN to serve resources for the html5-based report viewers and the web report designer. Includes the minimal required kendo subsets."
 slug: telerikreporting/getting-started/installation/cdn-assets
 tags: how,to,add,the,telerik,cdn,reportviewer,script
 published: True

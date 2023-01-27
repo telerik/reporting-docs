@@ -1,14 +1,14 @@
 ---
 title: Integrating Reports in Applications (Guide)
-page_title: Integrating Reports in Applications (Guide) 
-description: "Get up and running with Telerik Reporting and learn how to integrate your report into a web application."
+page_title: An Introductory Step by Step Guide on Integrating Telerik Reports in Web Applications
+description: "Get up and running with Telerik Reporting and learn how to integrate your Telerik Report into a web application. Use our dedicated Visual Studio Item Templates that make your life easier and more productive."
 slug: first-steps-integrating-reports
 tags: telerik, reporting, first, steps, guide, integrate, a, report, in, application
 published: True
 position: 2
 ---
 
-# Integrating Reports in Applications (Guide)
+# Create Your First Web Application For Previewing Telerik Reports
 
 This guide targets users who want to build custom reports and, then, present them in applications of their choice. For the purposes of this tutorial, the scenario will display the report in an ASP.NET Core application. 
 
@@ -64,7 +64,7 @@ In this final step, you'll integrate your report in an ASP.NET Core web applicat
 
 	The JSON configuration file looks similar to the following: 
     
-	````json
+	````JSON
 {
 	  "Logging": {
 		"LogLevel": {

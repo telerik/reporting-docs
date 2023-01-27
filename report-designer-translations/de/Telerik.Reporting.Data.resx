@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DesignCategory" xml:space="preserve">
+    <value>Design</value>
+  </data>
+  <data name="DataSource_Description_Description" xml:space="preserve">
+    <value>Ruft die Beschreibung des Datenquellenobjekts ab oder legt diese fest.</value>
+  </data>
+  <data name="SharedDataSource_Path_Description" xml:space="preserve">
+    <value>Der Pfad zur Datenquellenkomponente, auf die verwiesen wird.</value>
+  </data>
+  <data name="SharedDataSource_DataSourceReference_Description" xml:space="preserve">
+    <value>Stellt die referenzierte Datenquelleninstanz dar.</value>
+  </data>
+  <data name="DataSource_Description_Name" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="SharedDataSource_Path_Name" xml:space="preserve">
+    <value>Pfad</value>
+  </data>
+  <data name="SharedDataSource_DataSourceReference_Name" xml:space="preserve">
+    <value>Datenquellenreferenz</value>
+  </data>
   <data name="WebServiceDataSource_RequestTimeout_Description" xml:space="preserve">
     <value>Die Zeitspanne in Sekunden, die gewartet werden soll, bevor die Anforderung überschritten wird.</value>
   </data>

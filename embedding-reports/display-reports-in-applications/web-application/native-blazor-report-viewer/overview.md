@@ -60,7 +60,7 @@ The Native Blazor Report Viewer is a native Blazor component which can be used i
 
 1. Required UI libraries:
 
-	+ [Telerik UI for Blazor 3.5+](https://docs.telerik.com/blazor-ui/introduction)
+	+ [Telerik UI for Blazor 3.7+](https://docs.telerik.com/blazor-ui/introduction)
 
 1. Reference to one of the [Telerik UI for Blazor Built-in Themes](https://docs.telerik.com/blazor-ui/styling-and-themes/overview)
 
@@ -69,10 +69,6 @@ The Native Blazor Report Viewer is a native Blazor component which can be used i
 The current release of the Native Blazor Report Viewer component is missing the following functionalities:
 
 - Accessibility
-
-- Extensibility 
-
-- Tooltips
 
 > The above functionalities will be implemented in future releases of the Native Blazor Report Viewer
 

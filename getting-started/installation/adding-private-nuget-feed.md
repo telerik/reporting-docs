@@ -1,7 +1,7 @@
 ---
 title: Adding the Private Telerik NuGet Feed
-page_title: Adding the Private Telerik  NuGet Feed to Visual Studio 
-description: "Get up and running with Telerik Reporting and learn how to add the Telerik private NuGet feed to Visual Studio."
+page_title: Adding the Private Telerik NuGet Feed to Visual Studio through the NuGet Package Manager or NuGet CLI
+description: "Get up and running with Telerik Reporting and learn how to add quickly and easy the Telerik private NuGet feed to Visual Studio with this step-by-step tutorial."
 slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
 previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio, /add-the-telerik-private-nuget-feed-to-visual-studio
 tags: how,to,add,the,telerik,private,nuget,feed,to,visual,studio
@@ -9,7 +9,7 @@ published: True
 position: 8
 ---
 
-# Adding the Telerik Private NuGet Feed to Visual Studio
+# Steps to Add the Telerik Private NuGet Feed to Visual Studio
 
 > The legacy https://nuget.telerik.com/nuget server is now deprecated. Make sure you are using the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client. 
 
@@ -31,7 +31,7 @@ Telerik provides NuGet packages from the private Telerik NuGet feed which you ca
 	
 	>caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed 
 
-	![nuged feed](images/nuged-feed-in-npm.png)
+	![Telerik Nuget Feed in Visual Studio NuGet Package Manager](images/nuged-feed-in-npm.png)
 
 1. Create or load your project. 
 
@@ -47,7 +47,7 @@ Telerik provides NuGet packages from the private Telerik NuGet feed which you ca
 
 	>caption Enter your Telerik.com credentials to access the Telerik NuGet feed   
 
-	![nuget Wcredentials](images/nuget-credentials.png)
+	![Telerik.com credentials form to access the Telerik NuGet Feed](images/nuget-credentials.png)
 
 Now all the packages that are licensed to the above users are available in the Visual Studio NuGet Package manager. 
 

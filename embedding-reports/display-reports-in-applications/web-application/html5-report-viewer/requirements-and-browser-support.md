@@ -92,9 +92,7 @@ List of Browsers covering the above requirements includes:
 
 * Desktop
 
-	+ Internet Explorer: 9+
-
-	+ Edge
+	+ Microsoft Edge
 
 	+ Google Chrome
 
@@ -113,7 +111,3 @@ List of Browsers covering the above requirements includes:
 	+ Google Chrome for Android
 
 	+ Android Browser
-
-	+ Internet Explorer 10+ for Windows Phone
-
-	+ BlackBerry 7.0+ touchscreen devices

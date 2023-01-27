@@ -1,7 +1,7 @@
 ---
 title: Restoring NuGet Packages in CI
-page_title: Restoring NuGet Packages in CI 
-description: "Learn how to use NuGet Keys to authenticate with the Telerik NuGet server and restore Telerik Reporting packages in your CI or desktop environment."
+page_title: Authenticating and Restoring NuGet Packages in Continuous Integration
+description: "Learn how to use NuGet Keys to authenticate with the private Telerik NuGet server and restore Telerik Reporting packages in your CI or desktop environment."
 slug: using-nuget-keys
 tags: telerik, reporting, restore, nuget, packages, ci, continuous, integration, installation
 published: True
@@ -15,6 +15,7 @@ This article provides an overview of the most popular approaches for using token
 The Telerik NuGet server allows you to authenticate by using two methods:
 
 * Basic authentication by providing your Telerik user name and password.
+
 * Token-based authentication by providing a NuGet Key.
 
 When you need to restore Telerik NuGet packages as part of your CI, using NuGet keys is the more secure way to authenticate. This method does not require you to provide your Telerik username and password anywhere in the CI workflow.
@@ -27,7 +28,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 1. Select the **DOWNLOADS** tab and then **Manage NuGet Keys**.
 
-    ![Manage NuGet Keys](images/manage-nuget-keys.png)
+	![Manage NuGet Keys](images/manage-nuget-keys.png)
 
 1. To create a new key, select the **Generate New Key** button.
 
@@ -35,7 +36,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 1. To copy the key, select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **NuGet Keys** page displays only a portion of the key.
 
-    ![Copy Generated NuGet Key](images/copy-nuget-key.png)
+	![Copy Generated NuGet Key](images/copy-nuget-key.png)
 
 ## Storing a NuGet Key
 
@@ -67,22 +68,23 @@ For more information on how to use NuGet keys in a build, check the [Announcing 
 
 1. In your `nuget.config` file, set the `Username` value to `api-key` and the `ClearTextPassword` value to an environment variable name:
 
-    ```xml
-        <configuration>
-        <packageSources>
-            <clear/>
-            <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
-            <add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
-        </packageSources>
-        <packageSourceCredentials>
-            <MyTelerikFeed>
-            <add key="Username" value="api-key" />
-            <add key="ClearTextPassword" value="%MY_API_KEY%" />
-            </MyTelerikFeed>
-        </packageSourceCredentials>
-        ...
-        </configuration>
-    ```
+	````XML
+<configuration>
+		<packageSources>
+			<clear/>
+			<add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
+			<add key="MyTelerikFeed" value="https://nuget.telerik.com/v3/index.json" protocolVersion="3"/>
+		</packageSources>
+		<packageSourceCredentials>
+			<MyTelerikFeed>
+			<add key="Username" value="api-key" />
+			<add key="ClearTextPassword" value="%MY_API_KEY%" />
+			</MyTelerikFeed>
+		</packageSourceCredentials>
+		...
+	</configuration>
+````
+
 
 1. Set the `MY_API_KEY` environment variable by using the value of your pipeline/workflow secret.
 
@@ -94,15 +96,17 @@ You can use the CLI `add source` (or `update source`) command to set the credent
 
 * To set the credentials in Azure DevOps:
 
-    ```
-    dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text
-    ```
+	````
+dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '$(TELERIK_NUGET_KEY)' --configfile './nuget.config' --store-password-in-clear-text
+````
+
 
 * To set the credentials in GitHub Actions:
 
-    ```
-    dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_NUGET_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
-    ```
+	````
+dotnet nuget add source 'MyTelerikFeed' --source 'https://nuget.telerik.com/v3/index.json' --username 'api-key' --password '${{ secrets.TELERIK_NUGET_KEY }}' --configfile './nuget.config' --store-password-in-clear-text
+````
+
 
 ## Additional Resources
 
@@ -114,5 +118,5 @@ If you just start using the Telerik NuGet server in your CI or inter-department 
 
 ## See Also
 
-* [Telerik Reporting Installation Approaches]({% slug telerikreporting/installation %})
-* [Included Assemblies]({% slug included-assemblies %})
+* [Telerik Reporting Installation Approaches]({%slug telerikreporting/installation%})
+* [Included Assemblies]({%slug included-assemblies%})

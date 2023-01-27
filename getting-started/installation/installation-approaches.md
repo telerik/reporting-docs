@@ -1,7 +1,7 @@
 ---
 title: Installation Approaches
 page_title: Installation Approaches
-description: "Learn about the available installation approaches supported by Telerik Reporting."
+description: "Ger familiar with the available installation approaches supported by Telerik Reporting. Learn how to install the product based on your specific needs."
 slug: telerikreporting/installation
 tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, private, feed, visual, studio
 published: True
@@ -9,7 +9,7 @@ position: 2
 previous_url: /installation-system-requirements, /installation-installing-from-msi, /installation
 ---
 
-# Installation Approaches
+# Installing Telerik Reporting
 
 Telerik Reporting provides options for installing the product by [downloading the Control Panel](#downloading-the-control-panel), by [using the MSI installer file](#using-the-msi-file), or [with NuGet](#installing-with-nuget). 
 
@@ -49,7 +49,7 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog which appears after you execute the MSI file, confirm that you have read and accepted the License Agreement. 
 
-	![](images/installWizard1.png)
+	![Installation Wizard Welcome Page](images/installWizard1.png)
 
 1. In the dialog that opens, select the features you require. 
 
@@ -61,13 +61,13 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 	+ Alternatively, you can install AdventureWorks by manually executing the SQL script from the installer. To use this option, navigate to __[InstallDir]/Examples/Data/AdventureWorks OLTP__. For the script to run correctly, uncomment the `SET @data_path = 'C:\Program Files\Microsoft SQL Server\90\Tools\Samples\AdventureWorks OLTP\';` statement and specify the correct path to the CSV data files which are in the same folder as the SQL script file. 
 
-	![](images/installWizard2.png)
+	![Installation Wizard Configuration Page](images/installWizard2.png)
 
 1. (If __Examples Setup__ was selected) In the __Setup Wizard__ dialog, select your __Database Server__ and the authentication for the connection. The Wizard detects all running instances and lists them in the input field. 
 
 	> To enable the Wizard to detect all running SQL Server instances, run the [SQL Server Browser Service](https://docs.microsoft.com/en-us/previous-versions/sql/sql-server-2008-r2/ms181087(v=sql.105)). 
 
-	![](images/installWizard3.png)
+	![Installation Wizard Samples Database Setup Page](images/installWizard3.png)
 
 ## Installing with NuGet
 

@@ -1,14 +1,14 @@
 ---
 title: Video Onboarding
-page_title: Video Onboarding
-description: "Get started with Telerik Reporting by following a step-by-step video tutorial that helps you develop a real-life project."
+page_title: Video Tutorials for Starting with Telerik Reporting
+description: "Get started with Telerik Reporting by following our step-by-step video tutorials that walk you through different stages or report creation and integration and help you develop a real-life project."
 slug: getting-started/video-onboarding
 tags: get,started,video,onboarding,classroom,course,learning
 published: true
 position: 3
 ---
 
-# Video Onboarding
+# Get Started Easily with our Video Onboarding Program
 
 Telerik Reporting has its own [video getting started course](https://learn.telerik.com/learn/course/external/view/elearning/38/telerik-reporting) available to both users with an active trial license and users with an active commercial license. The training course in Telerik's [Virtual Classroom](https://learn.telerik.com/learn) is developed to help you get started with the Telerik Reporting set of services and features. It aims to put you in the shoes of a report designer and an engineer who is integrating a reporting solution into an existing application.
 
@@ -35,5 +35,3 @@ The Telerik Reporting technical online training has an approximate duration of 2
 * **Chapter 5: Styling the Reports** (Custom Styles, Header and Footer, Reusing Style Sheets)
 
 If you wish to learn more and continue with the video onboarding, [enroll in the training](https://learn.telerik.com/learn/course/external/view/elearning/38/telerik-reporting) from the [Virtual Classroom](https://learn.telerik.com/learn).
-  
-  

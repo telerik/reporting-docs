@@ -8,7 +8,7 @@ published: True
 position: 21
 ---
 
-# Telerik Report Viewer and Telerik Web Report Designer Resources
+# HTML5 Report Viewer and Web Report Designer Assets
 
 In order to run any of the [HTML5-based report viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}), you need to add a reference to the JavaScript file of the viewer.
 When it comes to the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), in addition to the viewer's script,

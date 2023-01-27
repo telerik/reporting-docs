@@ -31,7 +31,7 @@ Telerik provides NuGet packages from the private Telerik NuGet feed which you ca
 	
 	>caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed 
 
-	![nuged feed](images/nuged-feed-in-npm.png)
+	![Telerik Nuget Feed in Visual Studio NuGet Package Manager](images/nuged-feed-in-npm.png)
 
 1. Create or load your project. 
 
@@ -47,7 +47,7 @@ Telerik provides NuGet packages from the private Telerik NuGet feed which you ca
 
 	>caption Enter your Telerik.com credentials to access the Telerik NuGet feed   
 
-	![nuget Wcredentials](images/nuget-credentials.png)
+	![Telerik.com credentials form to access the Telerik NuGet Feed](images/nuget-credentials.png)
 
 Now all the packages that are licensed to the above users are available in the Visual Studio NuGet Package manager. 
 

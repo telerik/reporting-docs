@@ -1,7 +1,7 @@
 ---
 title: .NET Core Support
-page_title: Basic Guidance for using Telerik Reporting with .NET Core/6/7/Standard
-description:  "Learn how to use Telerik Reporting in .NET Core/6/7/Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
+page_title: Basic Guidance for using Telerik Reporting with .NET Core, 6, 7, or Standard
+description:  "Learn how to use Telerik Reporting in .NET Core, 6, 7, or Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
 previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-in-net-core-apps
 tags: telerik, reporting, dotnet, core, support, getting, started, download, and, installation

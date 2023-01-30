@@ -28,7 +28,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 1. Select the **DOWNLOADS** tab and then **Manage NuGet Keys**.
 
-	![Manage NuGet Keys](images/manage-nuget-keys.png)
+	![Go to the Manage NuGet Keys page in your Telerik Account](images/manage-nuget-keys.png)
 
 1. To create a new key, select the **Generate New Key** button.
 
@@ -36,7 +36,7 @@ Unlike your Telerik credentials, a NuGet Key has a limited scope and can be used
 
 1. To copy the key, select **Copy and Close**. Once you close the window, you can no longer copy the generated key. For security reasons, the **NuGet Keys** page displays only a portion of the key.
 
-	![Copy Generated NuGet Key](images/copy-nuget-key.png)
+	![Copy the Generated NuGet Key from your Telerik Account](images/copy-nuget-key.png)
 
 ## Storing a NuGet Key
 

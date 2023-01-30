@@ -9,7 +9,7 @@ previous_url: /best-practices-solution-structure
 position: 0
 ---
 
-# What is Telerik Reporting? Where and How You May Use the Tool?
+# Telerik Reporting at a Glance
 
 Telerik Reporting is an embedded tool for creating and displaying reports in a visually structured and logically grouped way. 
 

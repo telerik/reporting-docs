@@ -76,7 +76,7 @@ Apply the following changes in:
 * `_Layout.cshtml` for .NET 6 projects
 * `Host.cshtml` for .NET 7 projects
 
-1. Download the CSS file [icon-patch.css](./resources/icon-patch-4-0-1.css) from our GitHub repository and save it to your project, for example in the folder `wwwroot/css`.
+1. Download the CSS file [icon-patch-4-0-1.css](./resources/icon-patch-4-0-1.css) from our GitHub repository and save it to your project, for example in the folder `wwwroot/css`.
 
 1. Reference the `icon-patch-4-0-1.css` after the CSS file of the viewer:
 

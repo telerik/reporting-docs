@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Document Output Overview 
-description: "Learn more about the options for exporting Telerik Reporting reports."
+description: "Learn more about export formats (rendering extensions or document outputs) in Telerik Reporting and how you may control the available ones in your project."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats
 previous_url: /using-reports-in-applications/export-and-configure/export-formats, /configuring-rendering-extensions
 tags: telerik, reporting, export, formats, document, output, overview
@@ -10,32 +10,32 @@ position: 0
 ---
 <style>
 table th:first-of-type {
-    width: 15%;
+	width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 30%;
+	width: 30%;
 }
 table th:nth-of-type(3) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(4) {
-    width: 30%;
+	width: 30%;
 }
 </style>
 
-# Document Output Overview  
+# Overview of the Available Export Formats
 
-An export format is a component of the Telerik Reporting engine that transforms report data and layout into a device-specific format. The export formats are also referred to as rendering extensions because they render the report content into a specific output format and because they get plugged into the engine as extensions. By default Telerik Reporting outputs reports in the following formats: Image, PDF, HTML, MHTML, Excel 97-2003, XLSX, PPTX, DOCX, RTF, XAML and CSV. Interactive rendering extensions (IMAGEInteractive, HTML5Interactive, XAMLInteractive, WPFXAMLInteractive) are used internally by viewers to allow interaction with the content e.g., toggling the visibility of items/sections. Interactive rendering extensions are for Telerik Internal use only. 
+An export format is a component of the Telerik Reporting engine that transforms report data and layout into a device-specific format. The export formats are also referred to as rendering extensions because they render the report content into a specific output format and because they get plugged into the engine as extensions. By default Telerik Reporting outputs reports in the following formats: Image, PDF, HTML, MHTML, Excel 97-2003, XLSX, PPTX, DOCX, RTF, XAML and CSV. Interactive rendering extensions (IMAGEInteractive, HTML5Interactive, XAMLInteractive, WPFXAMLInteractive) are used internally by viewers to allow interaction with the content e.g., toggling the visibility of items/sections. Interactive rendering extensions are for Telerik Internal use only.
 
-You can specify rendering extension parameters in your application’s configuration file to override the default report rendering behavior. The rendering extension parameters are specified as device information settings. 
+You can specify rendering extension parameters in your application’s configuration file to override the default report rendering behavior. The rendering extension parameters are specified as device information settings.
 
-Adding device information settings to an application configuration file is useful when you want to override the default values that are provided by the reporting engine. Specifying device information settings in the configuration files affects rendering extensions globally in the application. The settings in the configuration files are used in place of default values whenever a particular rendering extension is used. If you want to specify device information settings, you need to add [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) and [Extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}). 
+Adding device information settings to an application configuration file is useful when you want to override the default values that are provided by the reporting engine. Specifying device information settings in the configuration files affects rendering extensions globally in the application. The settings in the configuration files are used in place of default values whenever a particular rendering extension is used. If you want to specify device information settings, you need to add [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) and [Extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).
 
-If you want to set rendering extension parameters for a specific report or rendering operation, you must specify device information programmatically using the [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method. For more information about specifying device information settings for a rendering operation, and to view the complete list of device information settings, see Telerik Reporting [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}). 
+If you want to set rendering extension parameters for a specific report or rendering operation, you must specify device information programmatically using the [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method. For more information about specifying device information settings for a rendering operation, and to view the complete list of device information settings, see Telerik Reporting [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}).
 
->note For Windows applications the configuration file is called _app.config_ and for ASP.NET applications – _web.config_. For more information about configuring a.NET application, see [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/). 
+>note For Windows applications the configuration file is called `app.config` and for ASP.NET applications – `web.config`. For more information about configuring a .NET application, see [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/).
 
-> All configuration settings on Telerik Reporting engine are applied only at runtime, not in design-time. 
+> All configuration settings on Telerik Reporting engine are applied only at runtime, not in design-time.
 
 The following table describes the rendering extensions that are included with Telerik Reporting:
 
@@ -61,4 +61,4 @@ The following table describes the rendering extensions that are included with Te
 |WPFXAML|Renders a report in XAML for WPF with [physical page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>(This is a multi-stream rendering extension and should be only used with [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)).|-|Telerik.Reporting.XamlRendering.WpfReport, Telerik.Reporting, Version= __x.x.x.x__, Culture=neutral, PublicKeyToken=a9d7983dfcc261be|
 |WPFXAMLInteractive|Renders a report in XAML for WPF with [interactive page layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}).<br/>(This is a multi-stream rendering extension and should be only used with [RenderReport](/reporting/api/Telerik.Reporting.Processing.ReportProcessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_Telerik_Reporting_Processing_CreateStream_System_String__)). __Telerik internal use only__.|-|Telerik.Reporting.XamlRendering.WpfReportInteractive, Telerik.Reporting, Version= __x.x.x.x__, Culture=neutral, PublicKeyToken=a9d7983dfcc261be|
 
-> Replace the  __x.x.x.x__ version number above with the version of Telerik Reporting assembly that you are using.
+> Replace the __x.x.x.x__ version number above with the version of Telerik Reporting assembly that you are using.

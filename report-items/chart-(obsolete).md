@@ -1,7 +1,7 @@
 ---
-title: (Obsolete) Chart 
-page_title: Chart Report Item Overview 
-description: "(Obsolete) Learn more about the Chart as a report item when using Telerik Reporting."
+title: (Obsolete) Chart
+page_title: Chart Report Item Overview (Obsolete)
+description: "(Obsolete) Learn more about the Chart as a report item when using Telerik Reporting. Consider using the Graph item instead."
 slug: telerikreporting/designing-reports/report-structure/chart-(obsolete)
 tags: telerik, reporting, report, items, chart, obsolete
 published: True
@@ -17,7 +17,7 @@ previous_url: /report-items-chart
 
 The Chart report item is used to display a chart on a report. 
 
-![Sparkline Chart\Sparkline Chart](images/Graph/SparklineChart.png)
+![Preview of the Obsolete Sparkline Chart](images/Graph/SparklineChart.png)
 
 ## Binding to Data
 
@@ -28,28 +28,27 @@ To bind the Chart report item, use either of the following approaches:
 
 When you are in the `NeedDataSource` event, you have to process the Chart item, for example:
 
-    
 ````C#
 private void chart1_NeedDataSource(object sender, System.EventArgs e)
 {
-    Telerik.Reporting.Processing.Chart procChart = (Telerik.Reporting.Processing.Chart)sender;
-    procChart.DataSource = your_datasource;
+	Telerik.Reporting.Processing.Chart procChart = (Telerik.Reporting.Processing.Chart)sender;
+	procChart.DataSource = your_datasource;
 }
 ````
 ````VB.NET
 Private Sub chart1_NeedDataSource(sender As Object, e As System.EventArgs)
-    Dim procChart As Telerik.Reporting.Processing.Chart = DirectCast(sender, Telerik.Reporting.Processing.Chart)
-    procChart.DataSource = your_datasource
+	Dim procChart As Telerik.Reporting.Processing.Chart = DirectCast(sender, Telerik.Reporting.Processing.Chart)
+	procChart.DataSource = your_datasource
 End Sub
 ````
 
 ## Customizing the Chart 
 
-To customize the Chart, right-click the item and select **Properties** from the context menu to open the Chart Wizard. 
+To customize the Chart, right-click the item and select **Properties** from the context menu to open the Chart Wizard.
 
 ## Key Features
 
-* Customizable Chart types&mdash;The Chart provides the Bar, Stacked Bar, Stacked Bar 100%, Pie, Gantt, Bezier, Spline, Spline Area, Stacked Spline Area, Stacked Spline Area 100%, Point, Bubble, Line, Area, Stacked Area, Stacked Area 100%, and CandleStick series. 	
+* Customizable Chart types&mdash;The Chart provides the Bar, Stacked Bar, Stacked Bar 100%, Pie, Gantt, Bezier, Spline, Spline Area, Stacked Spline Area, Stacked Spline Area 100%, Point, Bubble, Line, Area, Stacked Area, Stacked Area 100%, and CandleStick series.
 
 * Automatic text-wrapping&mdash;Text elements in the Chart can be wrapped automatically.
 
@@ -57,7 +56,7 @@ To customize the Chart, right-click the item and select **Properties** from the
 
 * Wizard&mdash;The Chart Wizard provides the most commonly used properties of the Chart in an intuitive way and enables you to quickly set up the basic structure of the report item. To invoke the Chart Wizard, use the context menu that appears when you right-click the Chart report item and select **Properties**.
 
-* Second Y axis&mdash;Except for the Pie Chart, all Chart series include an X and Y axis. Typically, the `ChartPlotArea.YAxis` displays values and the `ChartPlotArea.XAxis` displays categories. For example, the `ChartPlotArea.YAxis` may display **items sold** or **revenue**, while the `ChartPlotArea.XAxis` may indicate **Months** or **Products**. The X axis can also display values. The Chart provides a second `ChartPlotArea.YAxis2` Y-axis property for displaying a second scale of measurements. 
+* Second Y axis&mdash;Except for the Pie Chart, all Chart series include an X and Y axis. Typically, the `ChartPlotArea.YAxis` displays values and the `ChartPlotArea.XAxis` displays categories. For example, the `ChartPlotArea.YAxis` may display **items sold** or **revenue**, while the `ChartPlotArea.XAxis` may indicate **Months** or **Products**. The X axis can also display values. The Chart provides a second `ChartPlotArea.YAxis2` Y-axis property for displaying a second scale of measurements.
 
 * Empty values&mdash;The Chart automatically approximates missing values between known data points, simply by setting the _Empty_ property to _true_ on any chart series item. This works for bar, line and area based chart types. You also have complete control over the visual style of empty values. The empty value style can be articulated separately from the style for the main values.
 
@@ -67,14 +66,14 @@ To customize the Chart, right-click the item and select **Properties** from the
 
 * Styling&mdash;The Chart offers a set of [properties to modify the look and feel of its elements](/reporting/api/Telerik.Reporting.Chart).
 
-## Next Steps 
+## Next Steps
 
 * [Telerik UI for ASP.NET AJAX Chart Documentation](https://docs.telerik.com/devtools/aspnet-ajax/controls/chart/overview)
 * [(API) Chart](/reporting/api/Telerik.Reporting.Chart)
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 
-## See Also 
+## See Also
 
 * [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
 * [Reporting Forums](https://www.telerik.com/forums/reporting)
@@ -83,4 +82,3 @@ To customize the Chart, right-click the item and select **Properties** from the
 * [Reporting Roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap)
 * [Reporting Pricing](https://www.telerik.com/purchase/individual/reporting)
 * [Reporting Training](https://learn.telerik.com/learn/course/external/view/elearning/19/reporting-report-server-training)
-

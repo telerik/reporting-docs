@@ -37,39 +37,39 @@ The following prerequisites are required for accomplishing the scenario in this 
 
 Let's start with the installation of the Telerik Reporting controls, services, and demos:
 
-1. Log in to your [Telerik account](https://www.telerik.com/account). Click __Downloads__ and select __Progress Telerik Reporting__. 
+1. Log in to your [Telerik account](https://www.telerik.com/account). Click __Downloads__ and select __Progress Telerik Reporting__.
 
-1. Click __Latest public version__, download the MSI installation file, and run it. 
+1. Click __Latest public version__, download the MSI installation file, and run it.
 
-1. In the __Customization dialog__ of the Wizard, click __Examples Setup__ to set the examples and the used connection string. 
+1. In the __Customization dialog__ of the Wizard, click __Examples Setup__ to set the examples and the used connection string.
 
-  The examples use the MS SQL Server AdventureWorks sample database which you will need later for the report. 
+	The examples use the MS SQL Server AdventureWorks sample database which you will need later for the report.
 
-1. In the __Samples Database Setup__ dialog of the Wizard, select your __Database Server__ and the authentication for the connection. 
+1. In the __Samples Database Setup__ dialog of the Wizard, select your __Database Server__ and the authentication for the connection.
 
 	The Wizard detects all running instances and lists them in the input field. 
 
 	![The Page for Database Setup when Installing Telerik Reporting](images/Install.PNG)
 
-1. On each subsequent dialog that the Wizard will render, click __Install__ and select __Next__ until the installation is completed. 
+1. On each subsequent dialog that the Wizard will render, click __Install__ and select __Next__ until the installation is completed.
 
 ## Step 2: Create the Sample Report
 
 Next, you'll need to create the report:
 
-1. Navigate to the installation folder, for example, `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`, and run the `Telerik.ReportDesigner.exe` file which will start the Standalone Designer. 
+1. Navigate to the installation folder, for example, `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`, and run the `Telerik.ReportDesigner.exe` file which will start the Standalone Designer.
 
 1. Click __New__ > __Blank Report__ and choose a destination for saving the report.
 
-	Each newly created report renders the __pageHeaderSection__, __detailSection__, and __pageFooterSection__ sections. The report also provides the __Report Header__ and __Report Footer__ sections which are hidden by default. 
+	Each newly created report renders the __pageHeaderSection__, __detailSection__, and __pageFooterSection__ sections. The report also provides the __Report Header__ and __Report Footer__ sections which are hidden by default.
 
 	![The Design View of a Blank Report Created in the Standalone Report Designer](images/initialview.PNG)
 
 ## Step 3: Populate the Report with Data
 
-In this step, you'll add the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) and present the fetched data into a table item. 
+In this step, you'll add the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) and present the fetched data into a table item.
 
-This guide uses the __AdventureWorks__ sample database that may be deployed optionally with the installation of Telerik Reporting examples. The data sources that will be added to the report will generate their data representations. 
+This guide uses the __AdventureWorks__ sample database that may be deployed optionally with the installation of Telerik Reporting examples. The data sources that will be added to the report will generate their data representations.
 
 So, first, let's connect to the data and, then, you'll create the table to present it:
 

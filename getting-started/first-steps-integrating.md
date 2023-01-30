@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# A Guide on Integrating Reports in Web Applications
+# Guidance on Integrating Reports in Web Applications
 
 This guide targets users who want to build custom reports and, then, present them in applications of their choice. For the purposes of this tutorial, the scenario will display the report in an ASP.NET Core application.
 

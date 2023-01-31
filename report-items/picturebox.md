@@ -1,6 +1,6 @@
 ---
 title: PictureBox
-page_title: PictureBox Report Item Overview
+page_title: PictureBox Report Item at a Glance
 description: "Learn more about the Telerik Reporting PictureBox, how to set its value, bind it to binary images, expressions, URIs, base64, and SVG, and string literals, and how to clip, render, and position the report item."
 slug: telerikreporting/designing-reports/report-structure/picturebox
 tags: telerik, reporting, report, items, picturebox, set, value, bind, binary, images, svg, base64, uri, string, literals, clip, render, position
@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# PictureBox Report Item at a Glance
+# PictureBox Report Item Overview
 
 The PictureBox report item displays images in a report, and supports Base64-encoded images, SVG (Scalable Vector Graphics), and GDI+-supported (BMP, GIF, JPEG, EXIF, PNG, and TIFF) image formats.
 

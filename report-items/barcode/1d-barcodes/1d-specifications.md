@@ -63,10 +63,10 @@ The following table lists all Code128 control characters and their corresponding
 For example, the following code inserts the FNC4 control character in the middle of a Barcode:
 
 ````CSharp
-this.barcode1.Value = "ABCD" + "\u00FA" + "1234";
+this.Barcode1.Value = "ABCD" + "\u00FA" + "1234";
 ````
 ````VB.NET
-me.barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
+Me.Barcode1.Value = "ABCD" & ChrW(&HFA) & "1234"
 ````
 
 ## GS1-128 Specifics
@@ -76,10 +76,10 @@ GS1-128 is a special case of Code128. The only difference between GS1-128 and Co
 If you have a multi-part GS1-128 barcode which requires the FNC1 control character as a delimiter between the different parts, you have to insert it manually.
 
 ````C#
-this.barcode1.Value = "1234" + "\u00F7" + "5678";
+this.Barcode1.Value = "1234" + "\u00F7" + "5678";
 ````
 ````VB.NET
-me.barcode1.Value = "1234" & ChrW(&HF7) & "5678"
+Me.Barcode1.Value = "1234" & ChrW(&HF7) & "5678"
 ````
 
 

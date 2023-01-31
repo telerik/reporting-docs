@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Barcode Report Item Overview
+page_title: Barcode Report Item at a Glance
 description: "Learn what Barcode types are supported by the Telerik Reporting Barcode report item and where you may find more information about them."
 slug: telerikreporting/designing-reports/report-structure/barcode/overview
 tags: telerik, reporting, report, items, barcode, overview
@@ -9,7 +9,7 @@ position: 0
 previous_url: /report-items-barcode-general
 ---
 
-# Barcode Report Item at a Glance
+# Barcode Report Item Overview
 
 The Barcode report item automatically generates barcodes directly from a numeric or character data.
 

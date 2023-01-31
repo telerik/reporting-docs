@@ -1,19 +1,19 @@
 ---
 title: Overview
-page_title: 1D Barcodes Overview 
-description: "Learn more about the one-dimensional barcode support provided by the Telerik Reporting Barcode report item."
+page_title: 1D Barcodes Overview
+description: "Learn more about the linear one-dimensional barcode support provided by the Telerik Reporting Barcode report item."
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types
 previous_url: /report-items/barcode/barcode-types/supported-types, /report-items-barcode-types
-tags: telerik, reporting, report, items, 1d, barcodes, overview
+tags: telerik, reporting, report, items, 1d, barcodes, overview, linear, one-dimensional
 published: True
 position: 0
 ---
 <style>
 table th:first-of-type {
-    width: 20%;
+	width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 80%;
+	width: 80%;
 }
 </style>
 
@@ -48,5 +48,3 @@ Currently, the Barcode report item supports the following 1D barcode types:
 |UPC E|Short version of UPC symbol, six characters.|
 |UPC Supplement 2|Used to indicate magazines and newspaper issue numbers.|
 |UPC Supplement 5|Used to mark suggested retail price of books.|
-
-

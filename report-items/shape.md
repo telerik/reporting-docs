@@ -1,6 +1,6 @@
 ---
 title: Shape
-page_title: Shape Report Item Overview
+page_title: Shape Report Item at a Glance
 description: "Learn more about the Telerik Reporting Shape report item and how to choose the type of the supported lines, arrows, stars, and other shapes."
 slug: telerikreporting/designing-reports/report-structure/shape
 tags: telerik, reporting, report, items, shape, types, arrows, lines, stars
@@ -9,7 +9,7 @@ position: 11
 previous_url: /report-items-shape
 ---
 
-# Shape Report Item at a Glance
+# Shape Report Item Overview
 
 The Shape report item displays a single selection of predefined shapes in a report.
 

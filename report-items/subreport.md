@@ -1,6 +1,6 @@
 ---
 title: SubReport
-page_title: SubReport Report Item Overview
+page_title: SubReport Report Item at a Glance
 description: "Learn more about the Telerik Reporting SubReport report item, how to set its report source with the needed parameter values and how to pass data from the main report."
 slug: telerikreporting/designing-reports/report-structure/subreport
 previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-subreport, /report-items-sub-report, /report-sources-subreport
@@ -9,7 +9,7 @@ published: True
 position: 12
 ---
 
-# SubReport Item at a Glance
+# SubReport Item Overview
 
 The SubReport item enables you to display reports within reports, and serves as a container, similar to the report sections, growing in size depending on its children.
 

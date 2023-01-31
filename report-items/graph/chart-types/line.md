@@ -1,7 +1,7 @@
 ---
-title: Line Charts 
+title: Line Charts
 page_title: Line Charts Overview
-description: "Learn more about the Telerik Reporting Line Chart types supported by the Graph report item and learn how to create a Line chart."
+description: "Learn more about the Telerik Reporting Line Chart types supported by the Graph report item and how to create a basic Line chart."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/line-charts/overview
 tags: telerik, reporting, report, items, graph, line, chart, overview, creating
 previous_url: /LineCharts, /GraphHowToCreateLineChart, /report-items/graph/chart-types/line-charts/overview, /report-items/graph/chart-types/line-charts/how-to-create-line-chart
@@ -16,11 +16,11 @@ Line charts can also render series of data points to show trends over a period o
 
 The following image displays a Line chart that contains three series.
 
-![A basic Line chart type](images/LineChartWizardPreview.png)
+![Preview of Graph Item with Basic Line Chart](images/LineChartWizardPreview.png)
 
 ## Types
 
-The Graph supports the following Line chart types: 
+The Graph supports the following Line chart types:
 
 * __Straight Line Chart__&mdash;A Line chart that uses straight lines to connect the data points.
 * __Smooth Line Chart__&mdash;A Line chart that uses curved lines instead of regular ones.
@@ -30,7 +30,7 @@ The Graph supports the following Line chart types:
 
 In this section, you will learn how to create a Line chart with our Line Chart Wizard.
 We are going to create a `Line` Chart without Markers that displays the LineTotal of the Product Categories by Years. The final report will look like the image above.
-In the general case, you may select `Stacked Line` or `100% Stacked Line` with or without Markers. The requiered settings are basically the same. 
+In the general case, you may select `Stacked Line` or `100% Stacked Line` with or without Markers. The requiered settings are basically the same.
 
 The sample report will use a pre-defined SqlDataSource that connects to the example AdventureWorks database. The query that returns the needed fields is the following:
 
@@ -48,16 +48,15 @@ FROM
 	[Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID]
 ````
 
-
-To create the Line chart by using the Line Chart Wizard: 
+To create the Line chart by using the Line Chart Wizard:
 
 1. Add Line Chart as shown in the image below:
 
-	![Add Line Chart Wizard](images/LineChartWizardAdd.png)
+	![Adding the Telerik Reporting Line Chart Wizard from the Insert Menu Item of the Standalone Report Designer](images/LineChartWizardAdd.png)
 
 1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
-	![Add DataSource to the Line Chart](images/LineChartWizardDataSource.png)
+	![Add DataSource to the Line Chart with the Wizard of the Standalone Report Designer](images/LineChartWizardDataSource.png)
 
 1. Arrange the Line Chart:
 
@@ -65,7 +64,7 @@ To create the Line chart by using the Line Chart Wizard:
 	1. Drag the __OrderDate.Year__ field to **Categories**.
 	1. Drag the __LineTotal__ field to **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 
-	![Arrange the Line Chart](images/LineChartWizardArrangeFields.png)
+	![Arrange the Line Chart Series, Categories and Values from the Wizard in the Standalone Report Designer](images/LineChartWizardArrangeFields.png)
 
 1. The `LineTotal` value is large, so let's change the `Data > Y` [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) of `lineSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
 
@@ -77,7 +76,7 @@ This section will show how to manually create a Line chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({% slug graph_item_get_started %}).
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({%slug graph_item_get_started%}).
 
 ### 2. Set the SeriesGroups Hierarchy
 
@@ -99,7 +98,7 @@ Next, you will have to define the **CategoryGroups** hierarchy of the Stacked Ar
 
 ### 4. Configure the Coordinate System
 
-Here you will specify the coordinate system details: 
+Here you will specify the coordinate system details:
 
 1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
 1. Leave the __Name__ to `cartesianCoordinateSystem1`.

@@ -9,7 +9,7 @@ published: True
 position: 2
 ---
 
-# Configure the Swiss QR Code in Reports
+# Configuring the Swiss QR Code in Reports
 
 The Swiss QR Barcode is used mostly in the QR-bill, which is a document designed to replace the payment slips and currently used in payment transactions in Switzerland.
 

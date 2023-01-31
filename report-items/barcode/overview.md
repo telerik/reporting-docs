@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Barcode Report Item Overview
-description: "Learn more about the Telerik Reporting Barcode report item."
+description: "Learn what Barcode types are supported by the Telerik Reporting Barcode report item and where you may find more information about them."
 slug: telerikreporting/designing-reports/report-structure/barcode/overview
 tags: telerik, reporting, report, items, barcode, overview
 published: True
@@ -9,24 +9,24 @@ position: 0
 previous_url: /report-items-barcode-general
 ---
 
-# Barcode Report Item Overview
+# Barcode Report Item at a Glance
 
-The Barcode report item automatically generates barcodes directly from a numeric or character data. 
+The Barcode report item automatically generates barcodes directly from a numeric or character data.
 
-![barcode-overview](images/Barcodes/barcode-overview.png)
+![Preview of the demo Barcodes Report from our examples](images/Barcodes/barcode-overview.png)
 
 ## Key Features 
 
-* [Support for one-dimensional (1D) Barcodes]({% slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types %})—The Barcode report item supports linear barcode types such as EAN13, EAN8, UPC-A, UPC-E, and Code39.
-* [Support for two-dimensional (2D) Barcodes]({% slug 2d_barcodes_overview %})—The Barcode report item also supports matrix barcode types such as Data Matrix, QR Code, Swiss QR Code, and PDF417. 
+* [Support for one-dimensional (1D) Barcodes]({%slug telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types%})—The Barcode report item supports linear barcode types such as EAN13, EAN8, UPC-A, UPC-E, and Code39.
+* [Support for two-dimensional (2D) Barcodes]({%slug 2d_barcodes_overview%})—The Barcode report item also supports matrix barcode types such as Data Matrix, QR Code, Swiss QR Code, and PDF417.
 
-## Next Steps 
+## Next Steps
 
-* [Getting Started with the Barcode Report Item]({% slug barcode_item_get_started %})
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Getting Started with the Barcode Report Item]({%slug barcode_item_get_started%})
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 
-## See Also 
+## See Also
 
 * [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)
 * [Reporting Forums](https://www.telerik.com/forums/reporting)

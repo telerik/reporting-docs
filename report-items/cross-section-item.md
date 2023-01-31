@@ -1,6 +1,6 @@
 ---
 title: Cross-Section 
-page_title: Cross-Section Report Item Overview
+page_title: Cross-Section Report Item at a Glance
 description: "Learn more about the Telerik Reporting Cross-section report item, how to set its appearance and behavior with the designers that support it and with code."
 slug: telerikreporting/designing-reports/report-structure/cross-section-item
 tags: telerik, reporting, report, items, cross, section, item
@@ -9,7 +9,7 @@ position: 4
 previous_url: /report-items-cross-section-item
 ---
 
-# Cross-Section Report Item at a Glance
+# Cross-Section Report Item Overview
 
 The Cross-section report item is used to display a graphical primitive, such as a vertical line or a rectangle, across one or more report sections.
 

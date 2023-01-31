@@ -1,6 +1,6 @@
 ---
 title: Panel
-page_title: Panel Report Item Overview
+page_title: Panel Report Item at a Glance
 description: "Learn more about the Telerik Reporting Panel which acts as a container for other report items and how to arrange its layout and accommodate its content through the supported global properties."
 slug: telerikreporting/designing-reports/report-structure/panel
 tags: telerik, reporting, report, items, panel, organize, layout, accommodate, content, shrink, global, properties
@@ -9,7 +9,7 @@ position: 8
 previous_url: /report-items-panel
 ---
 
-# Panel Report Item at a Glance
+# Panel Report Item Overview
 
 The Panel report item serves as a container to group or separate multiple report items based on specific criteria, and is not associated with data.
 

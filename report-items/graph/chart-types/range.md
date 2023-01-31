@@ -1,7 +1,7 @@
 ---
 title: Range Charts
 page_title: Range Charts Overview
-description: "Learn more about the Telerik Reporting Range Chart types supported by the Graph report item and learn how to create a Range Area chart."
+description: "Learn more about the Telerik Reporting Range Chart types supported by the Graph report item and how to create a Range Area chart."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview
 tags: telerik, reporting, report, items, graph, range, chart, overview, creating
 previous_url: /RangeCharts, /GraphHowToCreateRangeChart, /report-items/graph/chart-types/range-charts/overview, /report-items/graph/chart-types/range-charts/how-to-create-range-chart
@@ -10,20 +10,20 @@ published: True
 
 # Creating and Customizing Range Area Charts
 
-A Range chart displays sets of data points, each of which is defined by multiple values for the same category, and emphasizes the distance between the two values. 
+A Range chart displays sets of data points, each of which is defined by multiple values for the same category, and emphasizes the distance between the two values.
 
 The category labels are displayed on the category axis. The plain Range chart fills in the area between the top and the bottom value for each data point.
 
-The following image displays a plain Range chart with one Range Area series: 
+The following image displays a plain Range chart with one Range Area series:
 
-![Range Area Chart](images/RangeChartWizardPreview.png)
+![Preview of Graph Item with Range Area Chart](images/RangeChartWizardPreview.png)
 
 ## Types
 
-The Graph supports the following Range chart types: 
+The Graph supports the following Range chart types:
 
 * __Column range__&mdash;The Column Range chart uses columns to represent the range.
-* __Bar range__&mdash;The Bar Range chart uses bars to represent the range. 
+* __Bar range__&mdash;The Bar Range chart uses bars to represent the range.
 * __Smooth range__&mdash;A Smooth Range chart uses curved lines to connect data points rather than straight ones.
 
 ## Creating Range Charts with the Range Chart Wizard
@@ -45,16 +45,15 @@ WHERE
 	YEAR([Sales].[SalesOrderHeader].[OrderDate]) IN (2002, 2003)
 ````
 
-
-To create the Range chart by using the Range Chart Wizard: 
+To create the Range chart by using the Range Chart Wizard:
 
 1. Add Range Chart as shown in the image below:
 
-	![Add Range Chart Wizard](images/RangeChartWizardAdd.png)
+	![Adding the Telerik Reporting Range Area Chart Wizard from the Insert Menu Item of the Standalone Report Designer](images/RangeChartWizardAdd.png)
 
 1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
-	![Add DataSource to the Range Chart](images/RangeChartWizardDataSource.png)
+	![Add DataSource to the Range Chart with the Wizard of the Standalone Report Designer](images/RangeChartWizardDataSource.png)
 
 1. Arrange the Range Chart:
 
@@ -63,7 +62,7 @@ To create the Range chart by using the Range Chart Wizard:
 	1. Drag the __TotalDue__ field to **Value0**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 	1. Drag the __TotalDue__ field also to **Value1**. Later, you will edit both **Value** fields manually to display the required information.
 
-	![Arrange the Range Chart](images/RangeChartWizardArrangeFields.png)
+	![Arrange the Range Chart Series, Categories, Value0 and Value1 from the Wizard in the Standalone Report Designer](images/RangeChartWizardArrangeFields.png)
 
 1. Select the areaSeries and change its properties `Y` and `Y0` in the Properties Data tab from the current `=Sum(Fields.TotalDue)` to the following values:
 

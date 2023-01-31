@@ -1,6 +1,6 @@
 ---
 title: TextBox
-page_title: TextBox Report Item Overview
+page_title: TextBox Report Item at a Glance
 description: "Learn more about the Telerik Reporting TextBox report item, how to expand and shrink it depending on its contents, how to add embedded expressions in-place and through Expression editors."
 slug: telerikreporting/designing-reports/report-structure/textbox
 tags: textbox
@@ -9,7 +9,7 @@ position: 14
 previous_url: /report-items-text-box
 ---
 
-# TextBox Report Item at a Glance
+# TextBox Report Item Overview
 
 The TextBox report item is used to display text on a report.
 

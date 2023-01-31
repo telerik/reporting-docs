@@ -1,6 +1,6 @@
 ---
 title: Checkbox
-page_title: Checkbox Report Item Overview
+page_title: Checkbox Report Item at a Glance
 description: "Learn more about the Telerik Reporting Checkbox report item, how to expand and shrink it depending on its contents, and how to use embedded expressions."
 slug: telerikreporting/designing-reports/report-structure/checkbox
 tags: telerik, reporting, report, items, checkbox, expanding, shrinking, embedded, expressions
@@ -9,7 +9,7 @@ position: 3
 previous_url: /report-items-checkbox
 ---
 
-# Checkbox Report Item at a Glance
+# Checkbox Report Item Overview
 
 The CheckBox report item is used to display both text and a check mark on a report.
 

@@ -69,7 +69,7 @@ The relevant part of the code in the CSHTML file should look like:
 <link rel="stylesheet" href="css/icon-patch.css" />
 ````
 
-### With Telerik Blazor UI version __4.0.1__
+### With Telerik Blazor UI version __4.0.1__ or higher
 
 Apply the following changes in:
 

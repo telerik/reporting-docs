@@ -20,7 +20,7 @@ The Graph is most often used for building powerful OLAP and Pivot charts and pro
 
 |![Area Chart from the Employee Sales Online Demo](images/GraphOverview_AreaAndColumn_EmployeeSalesOnlineDemo.png)|
 |:--:|
-|![Column Chart from the Employee Sales Online Demo](https://demos.telerik.com/reporting/employee-sales)|
+|[Column Chart from the Employee Sales Online Demo](https://demos.telerik.com/reporting/employee-sales)|
 
 ## Key Features
 

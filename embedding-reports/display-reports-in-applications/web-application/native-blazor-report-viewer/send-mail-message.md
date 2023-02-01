@@ -1,7 +1,7 @@
 ---
 title: Send Mail Message
 page_title: Send Mail Message Configuration
-description: "Learn how to enable and the Send Mail Message button of the Native Blazor Report Viewer and how to pre-configure the Send Mail Message Dialog."
+description: "Learn how to enable the Send Mail Message button of the Native Blazor Report Viewer and how to pre-configure the Send Mail Message Dialog."
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/send-mail-message
 tags: send,email,message,blazor,viewer
 published: True

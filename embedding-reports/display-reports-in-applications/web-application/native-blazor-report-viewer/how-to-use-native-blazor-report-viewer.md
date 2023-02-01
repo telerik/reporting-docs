@@ -1,7 +1,7 @@
 ---
 title: How to Use Native Blazor Report Viewer
 page_title: Integrating Native Blazor Report Viewer in Blazor Server or WebAssembly Application
-description: "Learn how to configure and integrate the Native Blazor Report Viewer built on top of Telerik Blazor UI widgets in you Blazor Server or WebAssembly Application."
+description: "Learn how to configure and integrate the Native Blazor Report Viewer built on top of the Telerik UI for Blazor widgets in your Blazor Server or WebAssembly Application."
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer
 tags: how, to, use, native, blazor, report, viewer, server, webassembly
 published: True

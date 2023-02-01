@@ -1,7 +1,7 @@
 ---
-title: Native Blazor Report Viewer Overview
-page_title: Native Blazor Report Viewer Overview
-description: Native Blazor Report Viewer Overview
+title: Overview
+page_title: Native Blazor Report Viewer at a Glance
+description: "Learn more about the Telerik Native Blazor Report Viewer requirements, user interface and available functionalities."
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview
 tags: overview
 published: True
@@ -52,15 +52,15 @@ The Native Blazor Report Viewer is a native Blazor component which can be used i
 
 1. Required Application Version:
 
-	+ Blazor 3.1+ application 
+	+ Blazor 3.1+ application
 
 1. Required Service:
 
-	+ The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. It can be hosted either in the same Blazor application or the viewer can reference a service hosted in another origin. In the later case make sure to [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.1) in the REST Service project. 
+	+ The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. It can be hosted either in the same Blazor application or the viewer can reference a service hosted in another origin. In the later case make sure to [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-3.1) in the REST Service project.
 
 1. Required UI libraries:
 
-	+ [Telerik UI for Blazor 3.7+](https://docs.telerik.com/blazor-ui/introduction)
+	+ [Telerik UI for Blazor](https://docs.telerik.com/blazor-ui/introduction) {{site.blazoruiversion}} or later
 
 1. Reference to one of the [Telerik UI for Blazor Built-in Themes](https://docs.telerik.com/blazor-ui/styling-and-themes/overview)
 

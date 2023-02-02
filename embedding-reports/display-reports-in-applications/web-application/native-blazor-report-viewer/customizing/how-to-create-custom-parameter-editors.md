@@ -118,7 +118,7 @@ Let's try to use a widget that the Native Blazor Report Viewer is not able to us
             <Template Context="listViewContext">
                 @{
                     var isSelected = context.Value?.Equals(listViewContext.Value) ?? false;
-                    var className = isSelected ? "k-state-selected" : string.Empty;
+                    var className = (isSelected ? "k-selected" : string.Empty) + " k-list-item";
                 }
                 <div class="@className" @onclick="@(()=> context.Value = listViewContext.Value)">@listViewContext.Name</div>
             </Template>
@@ -133,7 +133,7 @@ Let's try to use a widget that the Native Blazor Report Viewer is not able to us
             <Template Context="listViewContext">
                 @{
                     var isSelected = selectedValue?.Contains(listViewContext.Value) ?? false;
-                    var className = isSelected ? "k-state-selected" : string.Empty;
+                    var className = (isSelected ? "k-selected" : string.Empty) + " k-list-item";
                 }
                 <div class="@className" @onclick="@(()=> MultiSelectParameterTemplateItemClick(context, listViewContext.Value))">@listViewContext.Name</div>
             </Template>

@@ -1,7 +1,7 @@
 ---
 title: SAP Crystal Reports
 page_title: Converting reports created with SAP Crystal Reports 
-description: "Convert an existing report, created with the 'SAP Crystal Reports' reporting solution, into a 'Telerik Reporting' report definition."
+description: "Learn how to convert an existing report, created with the 'SAP Crystal Reports' reporting solution, into a 'Telerik Reporting' report definition."
 slug: telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter
 tags: telerik, reporting, importing, reports, crystal, reports, converter
 published: True

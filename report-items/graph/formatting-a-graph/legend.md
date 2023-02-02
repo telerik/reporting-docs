@@ -1,7 +1,7 @@
 ---
 title: Legend
 page_title: Graph Report Item Legend 
-description: "Learn how to order, filter, postition, style and format the legend of the Telerik Reporting Graph report item."
+description: "Learn how to order, filter, position, style and format the legend of the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/legend
 tags: telerik, reporting, report, items, graph, styling, formatting, legend, filter, order, sort, position
 published: True

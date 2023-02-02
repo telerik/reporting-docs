@@ -11,9 +11,9 @@ position: 1
 
 # Getting Started with the Graph Report Item
 
-This guide shows how to add the Telerik Reporting Graph report item to reports and use it to create the major supported Chart types. 
+This guide shows how to add the Telerik Reporting Graph report item to reports and use it to create the major supported Chart types.
 
-After the completion of this guide, you will be able to render different Chart types within a Graph report item. 
+After the completion of this guide, you will be able to render different Chart types within a Graph report item.
 
 ## Adding the Graph
 
@@ -24,18 +24,18 @@ Depending on the Report Designer tool you are using, the Graph provides the foll
 
 ### Using the Standalone Report Designer
 
-To add a Graph item to your report when working with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), run a new `Bar`, `Column`, `Area`, `Line`, `Pie`, `Scatter`, or `Others` Chart Wizard, or use the ribbon tools: 
+To add a Graph item to your report when working with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), run a new `Bar`, `Column`, `Area`, `Line`, `Pie`, `Scatter`, or `Others` Chart Wizard, or use the ribbon tools:
 
 1. From the ribbon bar, open the **Insert** tab and select the desired Chart type. As a result, the Graph will be placed in the center of the selected container.
 1. Follow the steps indicated by the Graph Wizard.
-1. When you finish with the prompts, a new Graph report item of the type you selected will appear on the design surface. 
+1. When you finish with the prompts, a new Graph report item of the type you selected will appear on the design surface.
 
 ### Using the Visual Studio Report Designer
 
-To add a Graph item to your report when working with the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), run the Graph Wizard: 
+To add a Graph item to your report when working with the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), run the Graph Wizard:
 
 1. Open the Visual Studio toolbox. From the **Telerik Reporting** tab, select **Graph Wizard**.
-1. Click the design surface where you want to position the upper-left corner of the Graph. As a result, the Graph Wizard will open. 
+1. Click the design surface where you want to position the upper-left corner of the Graph. As a result, the Graph Wizard will open.
 1. Follow the steps indicated by the Graph Wizard.
 1. When you finish with the prompts, a new Graph report item will appear on the design surface.
 
@@ -43,9 +43,9 @@ The Visual Studio Report Designer tool also provides an option for directly inse
 
 	>note The Graph is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and cannot be added to [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
 
-## Configuring the Graph Properties 
+## Configuring the Graph Properties
 
-After you have added the Graph report item to your report, you can manually configure its properties by following common steps that are valid for all supported chart types. 
+After you have added the Graph report item to your report, you can manually configure its properties by following common steps that are valid for all supported chart types.
 
 1. Open the **Properties** grid which displays all Graph properties. Through the grid, you can manually configure and reconfigure all Graph properties and customize the displayed chart type.
 
@@ -68,7 +68,6 @@ After you have added the Graph report item to your report, you can manually conf
 	* [Creating Scatter charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/scatter-charts/overview%}#creating-scatter-charts)
 	* [Creating Range charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/range-charts/overview%}#creating-range-charts)
 	* [Creating OHLC charts]({%slug telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview%}#creating-ohlc-charts)
-	
 
 ## Next Steps
 

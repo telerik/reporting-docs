@@ -1,14 +1,14 @@
 ---
 title: OHLC Charts
 page_title: OHLC Charts Overview
-description: "Learn more about the Telerik Reporting OHLC Chart types supported by the Graph report item and learn how to create a Candlestick chart."
+description: "Learn more about the Telerik Reporting OHLC Chart types supported by the Graph report item and how to create a basic Candlestick OHLC chart."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/ohlc-charts/overview
 tags: telerik, reporting, report, items, graph, ohlc, chart, overview, candlestick, creating
 previous_url: /OhlcCharts, /GraphHowToCreateOhlcChart, /report-items/graph/chart-types/ohlc-charts/overview, /report-items/graph/chart-types/ohlc-charts/how-to-create-ohlc-chart
 published: True
 ---
 
-# OHLC Charts
+# Creating and Customizing OHLC Charts
 
 An OHLC chart displays a series of candlestick or bar markers that represent information about the price movement of a stock over a period of time. The price movement is determined by the open, high, low, and close mark values of the stock price which create the layout of the marker.
 
@@ -16,7 +16,7 @@ Additionally, you can add colors to the markers depending on the movement of the
 
 The following image shows an example of a Candlestick OHLC chart:
 
-![A basic Candlestick chart type](images/OhlcChart.png)
+![Preview of Graph Item with basic Candlestick Chart](images/OhlcChart.png)
 
 ## Types
 
@@ -24,11 +24,11 @@ The Graph supports the following OHLC chart types. You can modify the appearance
 
 * __Candlestick marker__&mdash;The body of the Candlestick marker represents the open and close values of the stock price. The vertical lines (shadows or wicks) represent the high and low values. Based only on the shape of the marker, it is hard to tell if the stock price is rising or falling for the given period. In this case, you can add color to the marker body by using the conditional formatting rules of the data point.
 
-	![ohlc-series-candlestick-marker](images/ohlc-series-candlestick-marker.png)
+	![A Candlestick Marker for the OHLC Chart](images/ohlc-series-candlestick-marker.png)
 
 * __Bar marker__&mdash;The Bar markers represent the information about OHLC levels of the price using only lines. The low and high values are shown with a vertical line, and the open and close values are displayed with a horizontal lines. The horizontal line on the left side of the vertical line represents the opening price and the line on the right side represents the closing price. Although the bar marker doesn't need to be colored to understand the trend of the price, you can still apply additional conditional formatting for easier reading of the chart data.
 
-	![ohlc-series-bar-marker](images/ohlc-series-bar-marker.png)
+	![A Bar Marker for the OHLC Chart](images/ohlc-series-bar-marker.png)
 
 ## Creating OHLC Charts with the Candlestick Wizard
 
@@ -36,7 +36,7 @@ In this section, you will create a Candlestick chart with the Telerik Reporting 
 
 The report will display the daily changes in a financial marker and its final form will look like the following image:
 
-![OHLC Chart Preview](images/OhlcChartWizardPreview.png)
+![Preview of the Final OHLC Chart we are going to create in the Standalone Report Designer](images/OhlcChartWizardPreview.png)
 
 The sample report will use a pre-defined CsvDataSource with the following data:
 
@@ -53,16 +53,15 @@ date,open,high,low,close
 13.07.2017,18.4,19.4,18.3,18.7
 ````
 
-
 The `date` field is a DateTime with the `dd.MM.yyyy` format. The rest of the fields are decimal.
 
 1. Add a Candlestick (OHLC) Chart as shown in the image below:
 
-	![Add Candlestick (OHLC) Chart Wizard](images/OhlcChartWizardAdd.png)
+	![Adding the Telerik Reporting Candlestick (OHLC) Chart Wizard from the Insert Menu Item of the Standalone Report Designer](images/OhlcChartWizardAdd.png)
 
 1. Select the CsvDataSource, or create it with the **Add New Data Source...** button and by using the inline CSV above:
 
-	![Add DataSource to the OHLC Chart](images/OhlcChartWizardDataSource.png)
+	![Add DataSource to the OHLC Chart with the Wizard of the Standalone Report Designer](images/OhlcChartWizardDataSource.png)
 
 1. Arrange the Candlestick (OHLC) Chart:
 
@@ -74,7 +73,7 @@ The `date` field is a DateTime with the `dd.MM.yyyy` format. The rest of the fie
 	1. Drag the __close__ field to **Close**.
 	1. If you click the **Set default datapoint styling** checkbox, the wizard will add [conditional formatting]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/conditional-formatting%}) rules that will change the color of the data point depending on the open-close values.
 
-	![Arrange the OHLC Chart](images/OhlcChartWizardArrangeFields.png)
+	![Arrange the OHLC Chart Series, Categories and Open, High, Low and Close values from the Wizard in the Standalone Report Designer](images/OhlcChartWizardArrangeFields.png)
 
 1. Do not configure the default DateTime scale settings.
 
@@ -87,16 +86,16 @@ To see the full implementation of the sample report, refer to the [OhlcChart.trd
 
 The marker width is automatically calculated based on the following properties:
 
-* The [`SpacingSlotCount`](/reporting/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) property of the X scale.
-* The [`MinMarkerWidth`](/reporting/api/Telerik.Reporting.OhlcSeries#Telerik_Reporting_OhlcSeries_MinMarkerWidth) property of the series, which determines the minimum width of the marker, measured in [`Unit`](/reporting/api/Telerik.Reporting.Drawing.Unit), for example, `10px`, `1cm`, and so on.
+* The [`SpacingSlotCount`](/api/Telerik.Reporting.Scale#Telerik_Reporting_Scale_SpacingSlotCount) property of the X scale.
+* The [`MinMarkerWidth`](/api/Telerik.Reporting.OhlcSeries#Telerik_Reporting_OhlcSeries_MinMarkerWidth) property of the series, which determines the minimum width of the marker, measured in [`Unit`](/api/Telerik.Reporting.Drawing.Unit), for example, `10px`, `1cm`, and so on.
 
 By default, the Wizard sets the `MinMarkerWidth` to `6px`. Note the gaps between `07.07.2017` and `10.07.2017` where no data points are presented.
 
-Since you are using a **DateTime** field to create the categories, the Wizard will automatically create a [`DateTimeScale`](/reporting/api/Telerik.Reporting.DateTimeScale) for your X axis. The `DateTime` scale represents the values in a continuous domain which is the reason for you to see axis labels for `08/07/2017` and `09/07/2017` even if there is no data for these dates.
+Since you are using a **DateTime** field to create the categories, the Wizard will automatically create a [`DateTimeScale`](/api/Telerik.Reporting.DateTimeScale) for your X axis. The `DateTime` scale represents the values in a continuous domain which is the reason for you to see axis labels for `08/07/2017` and `09/07/2017` even if there is no data for these dates.
 
-If you do not want to have such gaps, use a [`CategoryScale`](/reporting/api/Telerik.Reporting.CategoryScale) for your X axis.
+If you do not want to have such gaps, use a [`CategoryScale`](/api/Telerik.Reporting.CategoryScale) for your X axis.
 
-## See Also 
+## See Also
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [(Demo TRDP Report) OhlcChart.trdp](https://github.com/telerik/reporting-samples/blob/master/graph-samples/OhlcChart.trdp)

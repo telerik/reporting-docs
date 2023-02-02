@@ -28,7 +28,7 @@ res_type: kb
 ## Description
 Sometimes you might encounter a TRDP or a TRDX report definition that you are unable to open, and the designer displays the following message `Cannot read a document with the specified schema <...> You might be using an older version of the product.`. This happens because the report was created with a newer version of the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) that uses a more recent XML schema. While the **best solution** is to update your Telerik Reporting installation to the latest version, in some cases, that might not be a desired option. As an alternative, you can use the following approach to be able to open the report.
 
->info Depending on how old your Standalone Report Designer version is and the features used in the report you are trying to open, you still might not be able to open it correctly. This is why the following approach is not a good long-term solution and should be used only as a "quick fix" for non-crucial reports.
+>caution Depending on how old your Standalone Report Designer version is and the features used in the report you are trying to open, you still might not be able to open it correctly. This is why the following approach is not a good long-term solution and should be used only as a "quick fix" for non-crucial reports.
 
 ## Solution
 

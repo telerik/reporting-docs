@@ -1,7 +1,7 @@
 ---
 title: Overview 
 page_title: Importing Reports Overview
-description: "Learn how to convert and import your reports from other reporting solutions to Telerik Reporting."
+description: "Convert and import existing reports from other reporting solutions such as 'Crystal Reports', 'Active Reports', and 'XtraReports' to Telerik Reporting."
 slug: telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview
 tags: telerik, reporting, importing, reports, converting, overview
 published: True

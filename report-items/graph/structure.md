@@ -29,9 +29,9 @@ The Graph is a data report item and, similarly to the [Table]({%slug telerikrepo
 
 The following images visually compare the data representation offered by the Graph and Table report items:
 
-![Table Reprot Item for Comparison](images/DataItems/Graph/TableComparison.png)
+![Table Report Item for Comparison](images/DataItems/Graph/TableComparison.png)
 
-![Graph Reprot Item for Comparison](images/DataItems/Graph/GraphComparison.png)
+![Graph Report Item for Comparison](images/DataItems/Graph/GraphComparison.png)
 
 Depending on its series type, the Graph enables you to display one or more measures. Like the other data-based report items, the Graph connects to a single data source and provides additional options for sorting and filtering the input data, binding, conditional formatting, and so on.
 

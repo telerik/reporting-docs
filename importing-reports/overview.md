@@ -16,13 +16,13 @@ previous_url: /faq-available-converters
 
 Telerik Reporting is currently able to convert reports from:
 
-* __Crystal Reports__  - requires build 13.0.2000.0 or later             
+* __Crystal Reports__ - requires build 13.0.2000.0 or later
 
-* __Active Reports__  - requires build 5.2.1013.2 or later             
+* __Active Reports__ - requires build 5.2.1013.2 or later
 
-* __XtraReports__  - requires build 8.1.6.0             
+* __XtraReports__ - requires build 8.1.6.0
 
-To convert reports, start the [Import Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard%}).         
+To convert reports, start the [Import Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard%}).
 
 The converters are compiled against the 3rd party product version specified above. If you have upgraded to a newer version of Crystal or Active Reports, you will need to add an assembly binding redirect statement to your Visual Studio configuration file. More info on this process is available in the following articles:
 

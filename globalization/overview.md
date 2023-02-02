@@ -1,15 +1,15 @@
 ---
 title: Report Globalization
-page_title: Report Globalization 
-description: Report Globalization
+page_title: Globalizing Reports for different Cultures
+description: "This article elaborates on how the Reports and individual Report Items are globalized, which properties depend on the selected culture and how the Culture is inherited across the Report and its Items."
 slug: telerikreporting/designing-reports/report-globalization
 previous_url: /designing-reports/report-globalization
-tags: report,globalization
+tags: report,globalization,culture
 published: True
 position: 11
 ---
 
-# Report Globalization
+# Report Globalization Overview
 
 
 Telerik Reporting offers the possibility to control the way numbers, dates and currencies are displayed and to layout text in different directions.

@@ -1,7 +1,7 @@
 ---
 title: Title
 page_title: Graph Report Item Title
-description: "Learn how to add, style and format the title of the Telerik Reporting Graph report item in the Report Desginers."
+description: "Learn how to add, style and format the title of the Telerik Reporting Graph report item in the Report Designers."
 slug: telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/title
 tags: telerik, reporting, report, items, graph, styling, formatting, title
 published: True

@@ -8,7 +8,7 @@ published: True
 previous_url: /GraphFormattingTitle
 ---
 
-# Title of the Graph
+# Graph Title
 
 While, by default, the Graph report item comes with a single title with the __TopCenter Position__, the report item enables you to add more titles to it.
 

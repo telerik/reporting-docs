@@ -1,7 +1,7 @@
 ---
 title: cache Element
-page_title: cache Element 
-description: cache Element
+page_title: cache Element Configuration
+description: "Learn how to change the the cache Element settings to control the cache management system used by the report viewers"
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/cache-element
 tags: cache,element
 published: True
@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# cache Element
+# cache Element Overview
 
 The Cache element specifies the configuration settings for the cache management system which is utilized by the viewers to store and cache rendered pages and resources. 
 

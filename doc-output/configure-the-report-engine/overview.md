@@ -1,7 +1,7 @@
 ---
-title: Configure the Report Engine Overview
-page_title: Configure the Report Engine Overview
-description: Configure the Report Engine Overview
+title: Configure the Report Engine
+page_title: Configuring the Report Engine
+description: "Learn how to use the Telerik.Reporting root element to configure the reporting engine for your needs."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview
 tags: overview
 published: True
@@ -17,19 +17,19 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Configure the Report Engine Overview
+# Report Engine Configuration Overview
 
-There are particular settings that can be applied to the Telerik Reporting engine to influence its behavior or extend it. These are defined in the application's configuration file. For __Windows and WPF applications__ the configuration file is called __app.config__ and for __ASP.NET applications__ – __web.config__. This configuration file is XML-based and its content is divided into sections. 
+There are particular settings that can be applied to the Telerik Reporting engine to influence its behavior or extend it. These are defined in the application's configuration file. For __Windows and WPF applications__ the configuration file is called `app.config`, for __ASP.NET Framework applications__ – `web.config`. These configuration file is XML-based and its content is divided into sections. 
 
-__.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named __appSettings.json__. For __.NET Core console applications__ both configuration types are supported, but __appSettings.json__ has precedence over __app.config__. __ASP.NET Core applications__ no longer use *web.config* so the configuration should be set to any of the supported [key-value based files](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.2). 
+On the other hand, __.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named `appsettings.json`. For __.NET Core console applications__ both configuration types are supported, but __appsettings.json__ has precedence over __app.config__. __ASP.NET Core applications__ no longer use *web.config* so the configuration should be set to any of the supported [key-value based files](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0). 
 
-> For more information about configuring a.NET application, see [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/). 
+> For more information about configuring a __.NET__ application, see [Configuring Apps by using Configuration Files](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/). 
 
 ## Telerik Reporting Configuration Layout
 
 __Telerik Reporting root element__ 
 
-The root element of the configuration is named `<Telerik.Reporting>` in XML-based configuration files and __"telerikReporting"__ in JSON-based configuration files. All the settings of the Reporting engine are nested in this root element. 
+The root element of the configuration is named `<Telerik.Reporting>` in XML-based configuration files and `"telerikReporting"` in JSON-based configuration files. All the settings of the Reporting engine are nested in this root element. 
 
 |   |   |
 | ------ | ------ |
@@ -40,11 +40,11 @@ The root element of the configuration is named `<Telerik.Reporting>` in XML-base
 
 ## XML-based Configuration
 
-The snippets in this section show the `<Telerik.Reporting>` configuration used in XML-based configuration files like __app.config__ and __web.config__.         
+The snippets in this section show the `<Telerik.Reporting>` configuration used in XML-based configuration files like `app.config` and `web.config`.         
 
-The settings for the Telerik Reporting engine are stored in a custom configuration section called *Telerik.Reporting*. The declaration of this section has to be included in a `<configSections>` element which should be the __first child element__ of `<configuration>`, like this: 
+The settings for the Telerik Reporting engine are stored in a custom configuration section called `Telerik.Reporting`. The declaration of this section has to be included in a `<configSections>` element which should be the __first child element__ of `<configuration>`, like this: 
     
-````xml
+````XML
 <configuration>
     <configSections>
         <section
@@ -59,7 +59,7 @@ The settings for the Telerik Reporting engine are stored in a custom configurati
 
 The custom configuration section's content: 
     
-````xml
+````XML
 <Telerik.Reporting>
   <extensions>
     <render>
@@ -106,9 +106,9 @@ The custom configuration section's content:
 
 ## JSON-based Configuration
 
-The JSON-based configuration structure used in __appSettings.json__ or other key-value based files looks like this: 
+The JSON-based configuration structure used in `appsettings.json` or other key-value based files look like the following: 
     
-````js
+````JSON
 "telerikReporting": {
     "extensions": [
       {

@@ -1,7 +1,7 @@
 ---
 title: CSV Device Information Settings
 page_title: CSV Device Information Settings at a glance
-description: "Learn about the different CSV rendering settings available, and understand their XML-based and JSON-based configuration file formats."
+description: "Learn more about the different CSV rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings
 tags: csv, device, information, settings, options
 published: True

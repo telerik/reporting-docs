@@ -1,9 +1,9 @@
 ---
 title: Excel 2003 Device Information Settings
-page_title: Excel 2003 Device Information Settings 
-description: Excel 2003 Device Information Settings
+page_title: Excel 2003 Device Information Settings at a glance
+description: "Learn about the different Excel 2003 rendering settings available, and understand their XML-based and JSON-based configuration file formats."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings
-tags: excel,2003,device,information,settings
+tags: excel, 2003, device, information, settings, options
 published: True
 position: 5
 previous_url: /device-information-settings-excel
@@ -20,11 +20,11 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Excel 2003 Device Information Settings
+# Device Information Settings for the Excel 2003 rendering format
 
 The following table lists the device information settings for rendering in Excel 97-2003 (XLS) format.
 
-## Excel Device Information Settings
+## Available Excel 2003 Device Information Settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |

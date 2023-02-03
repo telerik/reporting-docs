@@ -142,3 +142,8 @@ builder.Services.AddSwaggerGen(c => {
     	c.OperationProcessors.Add(new IncludeControllersInSwagger());
 });
 ```
+
+## See Also
+
+[NSwag filter namespace](https://stackoverflow.com/questions/52337355/nswag-filter-namespace)
+

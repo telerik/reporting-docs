@@ -1,7 +1,7 @@
 ---
 title: Localizing Reports
 page_title: Localization of the Reports Definitions 
-description: "This article expands on how the Telerik Reports can be localized for multiple languages across all of the available Report Designer tools."
+description: "Learn how to localize Telerik Reports for multiple languages across all of the available Report Designer tools."
 slug: telerikreporting/designing-reports/localizing-reports
 previous_url: /designing-reports/localizing-reports, /advanced-localizing-reports
 tags: localizing,reports

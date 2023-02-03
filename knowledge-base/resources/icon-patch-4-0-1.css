@@ -1,0 +1,63 @@
+﻿.k-button-icon {
+    width: 1em;
+    height: 1em;
+    outline: 0;
+    font-size: 16px;
+    font-family: "WebComponentsIcons";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    text-decoration: none;
+    flex-shrink: 0;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.k-icon.refresh::before,
+.k-button-icon.refresh::before {
+    content: "\e103";
+}
+
+.k-icon.seek-w::before,
+.k-button-icon.seek-w::before {
+    content: "\e00b";
+}
+
+.k-icon.seek-e::before,
+.k-button-icon.seek-e::before {
+    content: "\e009";
+}
+
+.k-icon.arrow-60-left::before,
+.k-button-icon.arrow-60-left::before {
+    content: "\e007";
+}
+
+.k-icon.arrow-60-right::before,
+.k-button-icon.arrow-60-right::before {
+    content: "\e005";
+}
+
+.k-icon.email::before,
+.k-button-icon.email::before {
+    content: "\e809";
+}
+
+.k-icon.dictionary-add::before,
+.k-button-icon.dictionary-add::before {
+    content: "\e651";
+}
+
+.k-icon.match-full-word::before,
+.k-button-icon.match-full-word::before {
+    content: "\e06e";
+}

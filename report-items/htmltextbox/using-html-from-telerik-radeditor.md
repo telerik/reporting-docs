@@ -1,6 +1,6 @@
 ---
 title: Formatting with the Telerik AJAX Editor
-page_title: Using HTML from the Telerik RadEditor 
+page_title: Using HTML from the Telerik RadEditor
 description: "Learn how to filter the unsupported HTML tags or CSS attributes and use HTML from the Telerik UI for ASP.NET AJAX Editor to format the Telerik Reporting HtmlTextbox report item."
 slug: telerikreporting/designing-reports/report-structure/htmltextbox/using-html-from-telerik-radeditor
 tags: telerik, reporting, report, items, htmltextbox, using, html, from, ajax, radeditor, editor
@@ -11,7 +11,7 @@ position: 7
 
 # Using HTML from the Telerik UI for ASP.NET AJAX Editor
 
-The HtmlTextBox supports text formatting options, such as a subset of HTML tags and CSS attributes, which are available only for styling labels and headers. Therefore, to avoid exceptions, you have to filter the unsupported HTML tags or CSS attributes. 
+The HtmlTextBox supports text formatting options, such as a subset of HTML tags and CSS attributes, which are available only for styling labels and headers. Therefore, to avoid exceptions, you have to filter the unsupported HTML tags or CSS attributes.
 
 This article outlines how to accomplish this scenario when the HTML data entry tool is the [Telerik UI for ASP.NET AJAX Editor](http://www.telerik.com/products/aspnet-ajax/editor.aspx).
 
@@ -97,7 +97,7 @@ RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
 
 1. Strip the HTML formatting from the pasted content, because users may paste content that is badly formatted and thus break the HtmlTextBox and its PDF export feature. To achieve this behavior, set the `StripFormattingOptions` property to `All` or to `AllExceptNewLines`.
 
-1. Use the following custom content filter, which will remove unsupported HTML tags. 
+1. Use the following custom content filter, which will remove unsupported HTML tags.
 
 	The supported tags are `FONT`, `STRONG`, `B`, `EM`, `I`, `U`, `A`, `OL`, `UL`, `SUB`, `SUP`, `LI`, `DIV`, `SPAN`, `P`, `BR`, `CENTER`.
 
@@ -144,10 +144,8 @@ RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
 
 1. Set the `ConvertToXhtml` filter to its default state by enabling it.
 
-
-
-## See Also 
+## See Also
 
 * [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)

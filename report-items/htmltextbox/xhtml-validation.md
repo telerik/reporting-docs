@@ -9,13 +9,13 @@ published: True
 position: 2
 ---
 
-# XHTML Validation
+# XHTML Validation in HtmlTextBox
 
-The HtmlTextBox requires you to provide valid XHTML and properly handle the content you set as its value. 
+The HtmlTextBox requires you to provide valid XHTML and properly handle the content you set as its value.
 
-To validate the defined content of the HtmlTextBox, use the `IsValidXhtml` expressions function or the [`Telerik.Reporting.Processing.XhtmlValidator.IsValidXhtml`](/reporting/api/Telerik.Reporting.Processing.XhtmlValidator#Telerik_Reporting_Processing_XhtmlValidator_IsValidXhtml_System_String_) static method. 
+To validate the defined content of the HtmlTextBox, use the `IsValidXhtml` expressions function or the [`Telerik.Reporting.Processing.XhtmlValidator.IsValidXhtml`](/api/Telerik.Reporting.Processing.XhtmlValidator#Telerik_Reporting_Processing_XhtmlValidator_IsValidXhtml_System_String_) static method.
 
-Specifically, the HtmlTextBox supports the following approaches for validating its XHTML content: 
+Specifically, the HtmlTextBox supports the following approaches for validating its XHTML content:
 
 * [Using the `IsValidXhtml` method in an expression](#using-the-isvalidxhtml-method-in-expression).
 * [Using an event and the `IsValidXhtml` method](#using-events-and-the-isvalidxhtml-method).
@@ -43,8 +43,8 @@ The following try-catch-block approach shows how to handle the exception:
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\HtmlTextBoxSnippets.vb region=Validate_Xhtml_Using_Event_And_ValueError_Snippet}}
 
 
-## See Also 
+## See Also
 
 * [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)

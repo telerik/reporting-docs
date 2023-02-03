@@ -1,9 +1,9 @@
 ---
 title: HTML5Interactive Device Information Settings
-page_title: HTML5Interactive Device Information Settings 
-description: HTML5Interactive Device Information Settings
+page_title: HTML5Interactive Device Information Settings at a glance
+description: "Learn more about the different HTML5Interactive rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5interactive-device-information-settings
-tags: html5interactive,device,information,settings
+tags: html5interactive, device, information, settings, options
 published: True
 position: 11
 previous_url: /device-information-settings-html5-interactive
@@ -20,11 +20,11 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# HTML5Interactive Device Information Settings
+# Device Information Settings for the HTML5Interactive rendering format
 
 The following table lists the device information settings for rendering in HTML5Interactive format.
 
-## HTML5Interactive Device Information Settings
+## Available HTML5Interactive Device Information Settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |

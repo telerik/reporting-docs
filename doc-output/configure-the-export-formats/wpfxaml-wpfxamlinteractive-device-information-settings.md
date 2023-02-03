@@ -1,9 +1,9 @@
 ---
 title: WPFXAML/WPFXAMLInteractive Device Information Settings
-page_title: WPFXAML/WPFXAMLInteractive Device Information Settings 
-description: WPFXAML/WPFXAMLInteractive Device Information Settings
+page_title: WPFXAML/WPFXAMLInteractive Device Information Settings at a glance
+description: "Learn more about the different WPFXAML/WPFXAMLInteractive rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/wpfxaml-wpfxamlinteractive-device-information-settings
-tags: wpfxaml/wpfxamlinteractive,device,information,settings
+tags: wpfxaml/wpfxamlinteractive, device, information, settings, options
 published: True
 position: 14
 previous_url: /device-information-settings-wpfxamlinteractive
@@ -20,13 +20,13 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# WPFXAML/WPFXAMLInteractive Device Information Settings
+# Device Information Settings for the WPFXAML/WPFXAMLInteractive rendering format
 
 The following table lists the device information settings for rendering in WPFXAML and WPFXAMLInteractive format.
 
 This rendering extension is used by the WPF Report Viewer and by default is not visible in viewer's available rendering extensions list.
 
-## WPFXAML/WPFXAMLInteractive Device Information Settings
+## Available WPFXAML/WPFXAMLInteractive Device Information Settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |

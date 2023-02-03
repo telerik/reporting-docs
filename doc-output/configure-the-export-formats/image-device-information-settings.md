@@ -1,9 +1,9 @@
 ---
 title: Image Device Information Settings
-page_title: Image Device Information Settings 
-description: Image Device Information Settings
+page_title: Image Device Information Settings at a glance
+description: "Learn about the different Image rendering settings available, and understand their XML-based and JSON-based configuration file formats."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/image-device-information-settings
-tags: image,device,information,settings
+tags: image, device, information, settings, options
 published: True
 position: 1
 previous_url: /device-information-settings-image
@@ -20,11 +20,11 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Image Device Information Settings
+# Device Information Settings for the Image rendering formats
 
 The following table lists the device information settings for rendering in __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats. 
 
-## Image Device Information Settings
+## Available Image Device Information settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |
@@ -44,7 +44,7 @@ The following example demonstrates how to configure the settings for __IMAGE__, 
 
 XML-based configuration file:
     
-````xml
+````XML
 <configuration>
 …
 	<Telerik.Reporting>
@@ -78,7 +78,7 @@ XML-based configuration file:
 
 JSON-based configuration file:
     
-````js
+````JavaScript
 "telerikReporting": {
   "extensions": [
     {

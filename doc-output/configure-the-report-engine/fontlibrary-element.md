@@ -1,7 +1,7 @@
 ---
 title: fontLibrary Element
-page_title: fontLibrary Element 
-description: fontLibrary Element
+page_title: fontLibrary Element Configuration
+description: "Learn how to configure which folders the rendering engine will traverse when searching for a specific font through the fontLibrary configuration element."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/fontlibrary-element
 tags: fontlibrary,element
 published: True
@@ -17,11 +17,11 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# fontLibrary Element
+# fontLibrary Element Overview
 
-__FontLibrary__ configuration element specifies the folders that will be used by the rendering engine when searching for a specific font. 
+The `FontLibrary` configuration element specifies the folders that will be used by the rendering engine when searching for a specific font. 
 
-This element is respected only when the PDF rendering extension is used in .NET Core applications under __Linux / MacOS__. The element is not respected in applications that run on Windows machine or when other than PDF rendering extension is used. 
+> This element is respected only when the PDF rendering extension is used in .NET Core applications under __Linux / MacOS__. The element is not respected in applications that run on Windows machine or when any other rendering extension is used. 
 
 ## Attributes and Elements
 
@@ -51,11 +51,11 @@ The following sections describe attributes, child elements, and parent elements.
 
 ## Example
 
-The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares a folder to be for used for font resolving. 
+The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares a which folder will be used for font resolving. 
 
 XML-based configuration file: 
     
-````xml
+````XML
 <?xml version="1.0"?>
 <configuration>
 ...
@@ -72,7 +72,7 @@ XML-based configuration file:
 
 JSON-based configuration file:
     
-````js
+````JSON
 "telerikReporting": {
 	"fontLibrary": {
 		"useDefaultLocations": "false",

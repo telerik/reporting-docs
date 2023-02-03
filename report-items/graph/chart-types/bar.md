@@ -16,7 +16,7 @@ Bar charts are also useful for comparing multiple series of data because they pr
 
 The following image shows a typical Bar chart which is well suited for the visualized data because all four series share a common time period and allow for valid comparisons.
 
-![[Preview of Graph Item with Clustered Bar Chart](images/BarChartWizardPreview.png)
+![Preview of Graph Item with Clustered Bar Chart](images/BarChartWizardPreview.png)
 
 ## Types
 

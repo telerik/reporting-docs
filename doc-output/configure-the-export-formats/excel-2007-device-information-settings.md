@@ -24,7 +24,7 @@ table th:nth-of-type(3) {
 
 The following table lists the device information settings for rendering in Excel 2007 (XLSX) format.
 
-## Available Excel Device Information Settings
+## Available Excel 2007 Device Information Settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |

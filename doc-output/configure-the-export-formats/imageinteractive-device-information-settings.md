@@ -1,7 +1,7 @@
 ---
 title: ImageInteractive Device Information Settings
 page_title: ImageInteractive Device Information Settings at a glance
-description: "Learn about the available ImageInteractive rendering settings, and understand their XML-based and JSON-based configuration file formats."
+description: "Find detailed information about the different ImageInteractive rendering settings available, and understand their XML-based and JSON-based configuration file formats."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/imageinteractive-device-information-settings
 tags: imageinteractive, device, information, settings, options
 published: True

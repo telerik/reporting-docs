@@ -1,7 +1,7 @@
 ---
 title: PowerPoint Device Information Settings
 page_title: PowerPoint Device Information Settings at a glance
-description: "Learn more about the different PowerPoint rendering settings available, and how to configure them."
+description: "Find detailed information about the different PowerPoint rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings
 tags: powerpoint, pptx, device, information, settings, options
 published: True

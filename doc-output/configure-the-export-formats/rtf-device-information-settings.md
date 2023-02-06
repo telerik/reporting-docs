@@ -1,7 +1,7 @@
 ---
 title: RTF Device Information Settings
 page_title: RTF Device Information Settings at a glance
-description: "Learn more about the different RTF rendering settings available, and how to configure them."
+description: "Find detailed information about the different RTF rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/rtf-device-information-settings
 tags: rtf, device, information, settings, options
 published: True

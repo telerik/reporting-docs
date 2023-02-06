@@ -78,7 +78,7 @@ SELECT
 
 	Your __Arrange map fields__ page will look similar to one in the following image:
 
-	![The Arrange Map Fields page of the Standalone Report Designer Map Wizard with Series, Categories and Size configured](images/Map/ArrangeMapFields.png)
+	![The Arrange Map Fields page of the Standalone Report Designer Map Wizard with selected Pie Chart and Series, Categories and Size configured](images/Map/ArrangeMapFields.png)
 
 1. Once the mandatory fields are set up, the __Next__ button will get enabled. Click it to go to the next page.
 

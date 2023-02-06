@@ -1,7 +1,7 @@
 ---
 title: WPFXAML/WPFXAMLInteractive Device Information Settings
 page_title: WPFXAML/WPFXAMLInteractive Device Information Settings at a glance
-description: "Learn more about the different WPFXAML/WPFXAMLInteractive rendering settings available, and how to configure them."
+description: "Find detailed information about the different WPFXAML/WPFXAMLInteractive rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/wpfxaml-wpfxamlinteractive-device-information-settings
 tags: wpfxaml/wpfxamlinteractive, device, information, settings, options
 published: True

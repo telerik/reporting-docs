@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Configuring the available Export Formats at a glance
-description: "Learn how to configure the available export formats either on the application level or on the report level."
+description: "Find detailed information about how to configure the available export formats either on the application level or on the report level."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview
 tags: overview, exporting
 published: True

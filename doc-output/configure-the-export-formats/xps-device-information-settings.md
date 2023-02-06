@@ -1,9 +1,9 @@
 ---
 title: XPS Device Information Settings
-page_title: XPS Device Information Settings 
-description: XPS Device Information Settings
+page_title: XPS Device Information Settings at a glance
+description: "Find detailed information about the different XPS rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/xps-device-information-settings
-tags: xps,device,information,settings
+tags: xps, device, information ,settings, options
 published: True
 position: 8
 previous_url: /device-information-settings-xps
@@ -20,11 +20,11 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# XPS Device Information Settings
+# Device Information Settings for the XPS rendering format
 
 The following table lists the device information settings for rendering in XPS format.
 
-## XPS Device Information Settings
+## Available XPS Device Information Settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |

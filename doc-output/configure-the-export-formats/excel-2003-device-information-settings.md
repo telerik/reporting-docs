@@ -1,7 +1,7 @@
 ---
 title: Excel 2003 Device Information Settings
 page_title: Excel 2003 Device Information Settings at a glance
-description: "Learn more about the different Excel 2003 rendering settings available, and how to configure them."
+description: "Find detailed information about the different Excel 2003 rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings
 tags: excel, 2003, device, information, settings, options
 published: True

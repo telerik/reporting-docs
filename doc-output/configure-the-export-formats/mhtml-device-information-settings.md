@@ -1,7 +1,7 @@
 ---
 title: MHTML Device Information Settings
 page_title: MHTML Device Information Settings at a glance
-description: "Learn more about the different MHTML rendering settings available, and how to configure them."
+description: "Find detailed information about the different MHTML rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/mhtml-device-information-settings
 tags: mhtml, device, information, settings, options
 published: True

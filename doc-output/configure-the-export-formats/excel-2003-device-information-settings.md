@@ -3,7 +3,7 @@ title: Excel 2003 Device Information Settings
 page_title: Excel 2003 Device Information Settings at a glance
 description: "Find detailed information about the different Excel 2003 rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings
-tags: excel, 2003, device, information, settings, options
+tags: excel, 2003, xls, device, information, settings, options
 published: True
 position: 5
 previous_url: /device-information-settings-excel
@@ -20,7 +20,7 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Device Information Settings for the Excel 2003 rendering format
+# Device Information Settings for the Excel 2003 (XLS) rendering format
 
 The following table lists the device information settings for rendering in Excel 97-2003 (XLS) format.
 

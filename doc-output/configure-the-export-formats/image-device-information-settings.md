@@ -1,7 +1,7 @@
 ---
 title: Image Device Information Settings
 page_title: Image Device Information Settings at a glance
-description: "Learn about the different Image rendering settings available, and understand their XML-based and JSON-based configuration file formats."
+description: "Find detailed information about the different Image rendering settings available, and understand their XML-based and JSON-based configuration file formats."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/image-device-information-settings
 tags: image, device, information, settings, options
 published: True

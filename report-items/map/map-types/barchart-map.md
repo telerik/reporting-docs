@@ -25,7 +25,7 @@ The suggested implementation corresponds to the sample `OlympicMedalsByNationalT
 
 * (For new reports) Select the __Map Wizard__ icon from the __Available Templates__ page.
 
-	![[Select the Map Wizard Item Template from the Standalone Report Designer File Menu](images/ItemTemplate_MapWizard.png)
+	![Select the Map Wizard Item Template from the Standalone Report Designer File Menu](images/ItemTemplate_MapWizard.png)
 
 * (For existing reports) Select the __Map__ item from the __Insert__ menu. As a result, the __Map Wizard__ will appear and guide you through the creation process.
 

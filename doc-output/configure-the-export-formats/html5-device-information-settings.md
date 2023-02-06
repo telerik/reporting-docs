@@ -1,7 +1,7 @@
 ---
 title: HTML5 Device Information Settings
 page_title: HTML5 Device Information Settings at a glance
-description: "Learn more about the different HTML5 rendering settings available, and how to configure them."
+description: "Find detailed information about the different HTML5 rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5-device-information-settings
 tags: html5, device, information, settings, options
 published: True

@@ -51,7 +51,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 ## Example
 
-The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares a which folder will be used for font resolving. 
+The following example demonstrates how to configure the reporting engine to skip searching the default font folders and declares which folder will be used for font resolving. 
 
 XML-based configuration file: 
     

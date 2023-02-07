@@ -45,7 +45,7 @@ The following sections describe attributes, child elements, and parent elements.
 >caption `<add>` element 
 |   |   |
 | ------ | ------ |
-|Attributes|<table><colgroup><col span="1" style="width: 15%;"><col span="1" style="width: 85%;"></colgroup><tbody><tr><tr><td><strong>path</strong></td><td>Required attribute. Specifies the path to a fonts folder. The path can be absolute or relative to the current application folder.</td></tr><tr><td><strong>searchSubfolders</strong></td><td>Required attribute. Determines if the subfolders of the specified path will be recursively traversed. </td></tr></tbody></table>|
+|Attributes|<table><colgroup><col span="1" style="width: 17%;"><col span="1" style="width: 83%;"></colgroup><tbody><tr><tr><td><strong>path</strong></td><td>Required attribute. Specifies the path to a fonts folder. The path can be absolute or relative to the current application folder.</td></tr><tr><td><strong>searchSubfolders</strong></td><td>Required attribute. Determines if the subfolders of the specified path will be recursively traversed. </td></tr></tbody></table>|
 |Child elements|None|
 |Parent element|__fontLocations__|
 

@@ -10,10 +10,10 @@ previous_url: /configuring-telerik-reporting-fontlibrary
 ---
 <style>
 table th:first-of-type {
-    width: 10%;
+    width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 90%;
+    width: 80%;
 }
 </style>
 

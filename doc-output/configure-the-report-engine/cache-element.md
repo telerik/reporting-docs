@@ -1,7 +1,7 @@
 ---
 title: cache Element
 page_title: cache Element Configuration
-description: "Learn how to change the the cache Element settings to control the cache management system used by the report viewers"
+description: "Learn how to change the cache Element settings to control the cache management system used by the report viewers"
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/cache-element
 tags: cache,element
 published: True

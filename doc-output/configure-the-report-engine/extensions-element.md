@@ -75,7 +75,7 @@ Parameter XML element specifies a parameter for the extension defined in the anc
 
 XML-based configuration file:
     
-````xml
+````XML
 <configuration>
     …
     <Telerik.Reporting>
@@ -95,7 +95,7 @@ XML-based configuration file:
 
 JSON-based configuration file:
     
-````js
+````JSON
 "telerikReporting": {
 	"extensions": [
 		{

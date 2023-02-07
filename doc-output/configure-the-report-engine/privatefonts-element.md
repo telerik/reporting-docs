@@ -1,7 +1,7 @@
 ---
 title: privateFonts Element
-page_title: privateFonts Element 
-description: privateFonts Element
+page_title: Configuring the privateFonts Element 
+description: "Learn how to use any TrueType font, without having to install it on the host machine, through the privateFonts configuration element."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element
 tags: privatefonts,element
 published: True
@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# privateFonts Element
+# privateFonts Element Overview
 
 Defines a collection that allows the Reporting Engine to use a private version of an existing font without the requirement to install the font on the host machine. If the font is already installed the installed font is used. 
 

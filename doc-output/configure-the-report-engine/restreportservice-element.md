@@ -1,7 +1,7 @@
 ---
 title: restReportService Element
-page_title: restReportService Element 
-description: restReportService Element
+page_title: Configuring the restReportService Element
+description: "Learn how to set the Reporting REST Service configuration settings from the configuration file of the running project via the restReportService configuration element."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element
 tags: restreportservice,element
 published: True
@@ -10,30 +10,33 @@ previous_url: /configuring-telerik-reporting-restreportservice
 ---
 <style>
 table th:first-of-type {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 90%;
+	width: 90%;
 }
 </style>
 
-# restReportService Element
+# restReportService Element Overview
 
-The __restReportService__ element specifies the configuration settings for the REST report service. In order for this element to be respected the corresponding Reports service implementation should pass a [ConfigSectionReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) instance instead of a [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.ReportServiceConfiguration) instance. For example, initializing the           [ReportServiceConfiguration](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) for the [ReportsControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) instance would look like this: 
-    
-````c#
+The `restReportService` element specifies the configuration settings for the Reporting REST Service. In order for this element to be respected, the corresponding Reports service implementation should pass a [ConfigSectionReportServiceConfiguration](/api/Telerik.Reporting.Services.ConfigSectionReportServiceConfiguration) instance instead of a [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration) instance.
+
+For example, initializing the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) for the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) instance would look like this:
+
+````CSharp
 configurationInstance = new ConfigSectionReportServiceConfiguration
 {
 	HostAppId = "Html5DemoApp",
-	ReportSourceResolver = resolver,
+	ReportSourceResolver = new UriReportSourceResolver("PATH_TO_REPORTS_FOLDER")
+		.AddFallbackResolver(new TypeReportSourceResolver());,
 };
 ````
 
-Note that the initialization block does not have the [Storage](/reporting/api/Telerik.Reporting.Services.IReportServiceConfiguration#Telerik_Reporting_Services_IReportServiceConfiguration_Storage) property set, because it would override the values obtained from the configuration file. 
+>note The initialization block does not have the [Storage](/api/Telerik.Reporting.Services.IReportServiceConfiguration#Telerik_Reporting_Services_IReportServiceConfiguration_Storage) property set, because it would override the values obtained from the configuration file.
 
 ## Attributes and Elements
 
-__`<restReportService>` element__ 
+__`<restReportService>` element__
 
 |   |   |
 | ------ | ------ |
@@ -41,7 +44,7 @@ __`<restReportService>` element__
 |Child elements|<ul><li>__reportResolver__ – specifies the report source resolver implementation that will be used for report resolving from the service.</li><li>__storage__ – specifies the storage implementation that will be used for internal storage from the report service.</li></ul>|
 |Parent element|__Telerik.Reporting__ – specifies the root element of the Telerik Reporting configuration settings. Only a single restReportService child element can be used inside the Telerik.Reporting root element.|
 
-__`<reportResolver>` element__ 
+__`<reportResolver>` element__
 
 |   |   |
 | ------ | ------ |
@@ -49,7 +52,7 @@ __`<reportResolver>` element__
 |Child elements|__parameters__ – specifies a collection of parameters for the current provider. Only one __parameters__ child element can be used in the __provider__ parent element.|
 |Parent element|__restReportService__|
 
-__`<storage>` element__ 
+__`<storage>` element__
 
 |   |   |
 | ------ | ------ |
@@ -60,8 +63,8 @@ __`<storage>` element__
 ## Examples
 
 XML-based configuration file:
-    
-````xml
+
+````XML
 <configuration>
 …
 	<Telerik.Reporting>
@@ -97,8 +100,8 @@ XML-based configuration file:
 ````
 
 JSON-based configuration file:
-    
-````js
+
+````JSON
 "telerikReporting": {
 	"restReportService": {
 		"hostAppId": "Application1",

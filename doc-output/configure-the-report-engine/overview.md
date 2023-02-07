@@ -1,6 +1,6 @@
 ---
 title: Configure the Report Engine
-page_title: Configuring the Report Engine
+page_title: Basic Configuration of the Reporting Engine
 description: "Learn how to use the Telerik.Reporting root element to configure the reporting engine for your needs."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview
 tags: overview

@@ -26,7 +26,7 @@ The following article will guide you on how to use the new Native Blazor Report 
 
 1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ (or __Telerik.ReportViewer.BlazorNative.Trial__) package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
-1. Make sure app configuration inside the __Configure__ method of the __Startup.cs__ can serve static files:
+1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET 6+ with Minimal API template is used)file can serve static files:
 
 	````C#
 app.UseStaticFiles();

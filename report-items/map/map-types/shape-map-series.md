@@ -1,6 +1,6 @@
 ---
 title: Shape Map Series
-page_title: Add Shape Map Series to the Map
+page_title: Initialize Shape Map Series in the Map Report Item
 description: "Learn how to add and configure a ShapeMapSeries instance to the Map report item when using Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-add-shapemapseries-to-the-map-item
 tags: telerik, reporting, map, report, item, add, shapemapseries, instance

@@ -1,6 +1,6 @@
 ---
 title: Page Headers and Footers
-page_title: Page Sections at a Glance
+page_title: Page Header and Footer Sections at a Glance
 description: "Learn more about the specifics of the page header and footer sections and how you may add or remove them when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections
 previous_url: /report-items/how-to/how-to-add-remove-page-header---footer-sections, /designing-reports-creating-page-headers-and-footers

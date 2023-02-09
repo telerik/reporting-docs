@@ -1,54 +1,54 @@
 ---
-title: Manual Adjustment  
+title: Manual Adjustment
 page_title: Manual Adjustment and Configuration of the Crosstab Report Item
-description: "Get up and running with the Telerik Reporting CrossTab report item, and further adjust its configuration and rendering by manually configuring its required specifics."
+description: "Get up and running with the Telerik Reporting Crosstab report item, and further adjust its layout by manually configuring its properties."
 slug: manual_adjustment_crosstab
 tags: telerik, reporting, report, items, crosstab, manual, configuration, config, adjust
 published: True
 position: 3
 ---
 
-# Manually Adjusting the Crosstab Report Item
+# Manually Adjusting the Crosstab
 
 Once you have [added the CrossTab to your report, designed it in the Standalone Report Designer, and closed the wizard]({% slug crosstab_item_get_started %}), you can further adjust the configuration and rendering of the report item by manually setting its required specifics and achieve the following result.
 
-![The final Crosstab created with the Standalone Designer](images/CrosstabFinal.png)
+![The Preview of the final Crosstab created with the Standalone Report Designer](images/CrosstabFinal.png)
 
-## Formatting Numbers 
+## Formatting Numbers
 
-The CrossTab also enables you to format the numbers for its **LineTotal**: 
+The CrossTab also enables you to format the numbers for its **LineTotal**:
 
 1. Select the detail cell under the **Line Total** column.
-1. Go to its **Properties** pane. By default, the pane is in the bottom-right corner of the Standalone Designer. 
+1. Go to its **Properties** pane. By default, the pane is in the bottom-right corner of the Standalone Designer.
 1. Choose the **Format** property and click the ellipses (`...`) to open the `Format Builder`. Select **Currency** from the **Categories** and leave its default options as shown below:
 
-	![Manually adjusting the Crosstab in Standalone Designer - Format Currency](images/CrosstabFormatCell.png)
+	![Manually adjusting the Currency Format of the Crosstab in the Standalone Report Designer](images/CrosstabFormatCell.png)
 
 You can also increase the width of the **LineTotal** column to accommodate larger values by dragging the right border of the Crosstab to the right.
 
-## Adding New Grouping 
+## Adding New Grouping
 
-Currently, you have the **Products** grouped by **SubCategories**. Grouping them into **Categories** will organize the data in the Crosstab in a better and more readable way. 
+Currently, you have the **Products** grouped by **SubCategories**. Grouping them into **Categories** will organize the data in the Crosstab in a better and more readable way.
 
 To add new grouping by **Categories**, use the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) in the **Extended Mode**.
 
 1. Select the Crosstab. In the **Group Explorer**, which, by default, is at the bottom of the designer, click the ellipses (`...`) beside the **productSubCategory** row group.
 
-1. Select **Add Group** > **Parent Group**. As a result, the **Table Group** editor will appear. 
+1. Select **Add Group** > **Parent Group**. As a result, the **Table Group** editor will appear.
 
-	![Crosstab in Standalone Designer - Add Parent Row Group Manually](images/CrosstabAddParentRowGroup.png)
+	![Add Manually a Parent Row Group to the Crosstab of the Standalone Report Designer](images/CrosstabAddParentRowGroup.png)
 
 1. Select `=Fields.ProductCategory` from the **Expression** drop-down as a value for the **Grouping** (shown as **Group By** in the editor):
 
-	![Crosstab in Standalone Designer - Add Grouping to the new Parent Row Group](images/CrosstabParentRowGroupGrouping.png)
+	![Add Grouping to the new Parent Row Group of the Crosstab in the Standalone Report Designer](images/CrosstabParentRowGroupGrouping.png)
 
-## Displaying Aggregate Values  
+## Displaying Aggregate Values
 
 You can display some aggregate values in the CrossTab as well. For example, to add **Totals** for numeric fields like **LineTotal**, add a column on the right that is outside the detail group of the Crosstab:
 
 1. Right-click over the last Crosstab column. From the context menu, select **Insert Column** > **Outside Group - Right**. As a result, a new column with empty cells will appear.
 
-	![Crosstab in Standalone Designer - Add New Column outside the Group](images/CrosstabAddColumnOutsideGroup.png)
+	![Add New Column outside the Group of the Crosstab in the Standalone Report Designer](images/CrosstabAddColumnOutsideGroup.png)
 
 1. In the new column, you can leave the top header row that displays the year for the orders empty. Name the second header, for example, **Line Grand Total** as this will show the overall total for all years.
 
@@ -56,7 +56,7 @@ You can display some aggregate values in the CrossTab as well. For example, to a
 
 1. You can also implement the following final adjustments:
 
-	* Rename **Product Name** to **Products Line Count** because it will actually show the number of products you have had from each line. 
+	* Rename **Product Name** to **Products Line Count** because it will actually show the number of products you have had from each line.
 	* Increase some column widths to accommodate all of their content.
 	* Apply a background color to the grand totals to distinguish them easier.
 

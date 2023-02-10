@@ -39,7 +39,7 @@ The lifecycle of a report includes the following stages:
 
 The following diagram demonstrates the stages of the report lifecycle−from designing a report definition to producing a report document.
 
-	![A schematic diagram showing the Report generation lifecycle](images/reportlifecycle3.png)
+![A schematic diagram showing the Report generation lifecycle](images/reportlifecycle3.png)
 
 ## Implications
 

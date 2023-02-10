@@ -1,5 +1,5 @@
 ---
-title: Table of Contents
+title: Overview
 page_title: Table of Contents in a Report 
 description: "Learn how to add a TOC(Table of Contents) section to your report, as well as how to change its Structure and how the TOC Levels are determined."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview

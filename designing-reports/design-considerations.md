@@ -35,7 +35,7 @@ In a report with complex layout, changing the visibility of an item does not gua
 
 The following visibility rules apply when rendering report items (red lines define layout dependency):
 
-	![Report with three items divided into four parts by a horizontal and a vertical red line](images/ReportItemLayout.png)
+![Report with three items divided into four parts by a horizontal and a vertical red line](images/ReportItemLayout.png)
 
 * If Item1 is hidden, all items below Item2 would remain in place.
 

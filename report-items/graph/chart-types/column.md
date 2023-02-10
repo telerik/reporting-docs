@@ -16,7 +16,7 @@ Column charts are useful for showing data changes over a period of time or for i
 
 The following image shows a typical Column chart:
 
-![[Preview of Graph Item with Clustered Column Chart](images/ColumnChartWizardPreview.png)
+![Preview of Graph Item with Clustered Column Chart](images/ColumnChartWizardPreview.png)
 
 ## Types 
 

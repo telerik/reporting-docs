@@ -41,7 +41,7 @@ If your data fields return two or three distinctive values, which are not `tru
 
 The `TrueValue` and `FalseValue` should be always set. If not, the `Checked` and `Unchecked` states become indetermined and you cannot show the corresponding images and check states. Generally, the `TrueValue` and `FalseValue` should be different. In the unexpected scenario where the two evaluate to the same value, the `FalseValue` will be prioritized, and the `Checked` state would become impossible to achieve.
 
->info If the checkbox `Value` may take more than three values, all values that are different from the `TrueValue` and `FalseValue` will be evaluated to the `IndeterminateValue`.
+>tip If the checkbox `Value` may take more than three values, all values that are different from the `TrueValue` and `FalseValue` will be evaluated to the `IndeterminateValue`.
 
 ## Example
 

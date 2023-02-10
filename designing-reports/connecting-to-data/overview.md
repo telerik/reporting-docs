@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Connecting to Data at a Glance
-description: "Learn the basics of Connecting to your Telerik Reports to Data, how to filter, order and group the data."
+description: "Learn the basics of Connecting your Telerik Reports to Data, how to filter, order and group the data."
 slug: telerikreporting/designing-reports/connecting-to-data/overview
 tags: overview
 published: True

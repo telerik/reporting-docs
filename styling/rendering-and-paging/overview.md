@@ -1,9 +1,9 @@
 ---
-title: Rendering and Paging Overview
-page_title: Rendering and Paging Overview
-description: Rendering and Paging Overview
+title: Rendering and Paging
+page_title: Rendering and Paging at a glance
+description: "Learn more about the availale rendering extensions (renderers) that allow you to export your reports to different formats. Understand how the different renderers behave and how pagination is handled."
 slug: telerikreporting/designing-reports/rendering-and-paging/overview
-tags: overview
+tags: rendering, extensions, renderers, paging
 published: True
 position: 0
 previous_url: /designing-reports-page-layout-rendering
@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Rendering and Paging Overview
+# Overview
 
 Telerik Reporting includes a set of rendering extensions (also referred to as renderers) for exporting reports to different formats. Each renderer applies set of rules when rendering reports. When exporting a report to file formats such as PDF which uses pagination based on physical page size, you might need to alter the layout of the report, so the exported report looks and prints correctly after the rules for the specific rendering extension are applied. 
 

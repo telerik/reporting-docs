@@ -1,5 +1,5 @@
 ---
-title: Table of Contents in the Report Book
+title: Report Book TOC
 page_title: Integrating Table of Contents inside a Report Book
 description: "Learn how to display the TOC(Table of Contents) section inside a Report Book."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/how-to-add-a-table-of-contents-to-report-book

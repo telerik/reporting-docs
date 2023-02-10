@@ -1,5 +1,5 @@
 ---
-title: Report Actions 
+title: Overview 
 page_title: Interactive Actions in Reports
 description: "Learn how to add all kinds of interactive actions(predefined or custom) to your reports via the Edit Action dialog."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview

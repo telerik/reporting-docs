@@ -1,9 +1,9 @@
 ---
 title: Styling Report Items
-page_title: Styling Report Items 
-description: The article provides the available properties that can be used for the report items styling
+page_title: Report item style properties
+description: "Find detailed information about the available styling properties that can be used to style different report items."
 slug: telerikreporting/designing-reports/styling-reports/styling-report-items
-tags: styling,report,items
+tags: styling, report, items, properties
 published: True
 position: 7
 ---
@@ -16,9 +16,8 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Styling Report Items
+# Styling Report Items Overview
 
-## Styling Report Items Overview
 Telerik Reporting uses a built-in styling model that is similar to CSS. The model provides for very fine-grained visual customization of all elements of a report directly in the Report designer. This CSS-like mechanism offers full control over such things as the background, colors, borders, and images for every item on your report.
 
  > All Style properties of a report item that have **not** been specifically set for that report item will inherit the corresponding value from the report item's parent.
@@ -200,4 +199,4 @@ For example, in the graph series' [DataPointStyle](/api/telerik.reporting.graphs
 
 ## See Also
 
-* [Style Class](/api/telerik.reporting.drawing.style.html)             
+* [Style Class](/api/telerik.reporting.drawing.style.html)

@@ -1,6 +1,6 @@
 ---
 title: Using MS Access Database in the Report
-description: "Learn how to configure the SqlDataSource with the MS Access database and use it it your Telerik reports."
+description: "Learn how to configure the SqlDataSource with the MS Access database and use it in your Telerik reports."
 type: how-to
 page_title: How to use MS Access Database in Telerik Report?
 slug: using-ms-access-database-in-the-report

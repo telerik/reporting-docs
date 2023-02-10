@@ -16,7 +16,7 @@ A document map provides a set of navigational links to report items in the rende
 
 The document map is also used to provide a set of navigational links to reports in a [Report Book]({%slug telerikreporting/designing-reports/report-book/overview%}).
 
-	![An image displaying the document map in a Report Viewer](images/SilverlightViewer1.png)
+![An image displaying the document map in a Report Viewer](images/SilverlightViewer1.png)
 
 The Document map is defined by setting the [DocumentMapText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_DocumentMapText) and [BookmarkId](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_BookmarkId) properties of any report item/group. The `BookmarkID` property should be unique for the whole [IReportDocument](/api/Telerik.Reporting.IReportDocument). If the `BookmarkID` is not set, then the Value of `DocumentMapText` is taken into account. Valid values are static text, expressions, or text with embedded expressions. The resulting text will be displayed in the document map tree.
 
@@ -58,11 +58,7 @@ A user can click items in the document map to jump to areas within a report.
 
 1. In __Design view__, right click outside the report sections, select View and open up the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
 1. Select a report group to which you want to add a document map. The properties for the selected group appear in the __Properties__ pane.
-1. In the [DocumentMapText](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_DocumentMapText) property, type the text
-
-	that you want to appear in the document map. Alternatively, click the ellipsis to open the __Expression__ dialog box to specify an 
-	expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
-
+1. In the [DocumentMapText](/api/Telerik.Reporting.Group#Telerik_Reporting_Group_DocumentMapText) property, type the text that you want to appear in the document map. Alternatively, click the ellipsis to open the __Expression__ dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
 1. Click __OK__.
 1. Repeat steps 1-4 for every group that you want to appear in the document map.
 1. Run the report - the document map displays the group values. Click any document map node to jump to the report page with that item.
@@ -76,11 +72,7 @@ A user can click items in the document map to jump to areas within a report.
 1. In __Design view__, right click outside the report sections, select View and open up the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}).
 1. Select a [Table](/api/Telerik.Reporting.Table), [Crosstab](/api/Telerik.Reporting.Crosstab) or [List](/api/Telerik.Reporting.List) report item, so the __Group Explorer__ shows the respective groups.
 1. Select a group to which you want to add a document map, right click on it and select __Group Properties__. The properties for the selected group appear in the __Edit Table Group__ dialog.
-1. In the [DocumentMapText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_DocumentMapText) property,
-
-	type the text that you want to appear in the document map. Alternatively, click the ellipsis to open the __Expression__ dialog box to specify an expression that evaluates to a text.
-	Typically for a group, the expression you type should match the group expression.
-
+1. In the [DocumentMapText](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_DocumentMapText) property, type the text that you want to appear in the document map. Alternatively, click the ellipsis to open the __Expression__ dialog box to specify an expression that evaluates to a text. Typically for a group, the expression you type should match the group expression.
 1. Click __OK__.
 1. Repeat steps 1-4 for every group that you want to appear in the document map.
 1. Run the report - the document map displays the group values. Click any document map node to jump to the report page with that item.

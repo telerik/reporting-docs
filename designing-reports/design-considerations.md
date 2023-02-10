@@ -71,7 +71,7 @@ This rendering behavior will affect how report item borders are rendered accordi
 
 * When two sibling report items are adjacent to each other the borders on the common side of the items will overlap according to the above rules. If the report item which was rendered second has a non-transparent background color or background image, the background will be rendered on top of the first report item's border.
 
-	![Borders of two TextBoxes are Overlapping](images/BorderOverlapping.png)
+	![A preview image of two TextBoxes whose Borders are Overlapping](images/BorderOverlapping.png)
 
 >important Setting __BorderStyle__ and __BorderWidth__ properties of report item to conflicting values (for example: BorderStyle=Solid, BorderWidth: 0px) can produce unexpected result in some rendering formats. To hide the border, set BorderStyle=None. Otherwise, the width of the border needs to be set greater than 0.
 

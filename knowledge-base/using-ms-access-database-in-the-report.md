@@ -8,7 +8,6 @@ position:
 tags: 
 ticketid: 1417017
 res_type: kb
-previous_url: /knowledge-base/using-ms-access-database-in-the-report 
 ---
 
 ## Environment

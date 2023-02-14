@@ -1,7 +1,7 @@
 ---
 title: Sorting Report Details
-page_title: Sorting Report Details 
-description: Sorting Report Details
+page_title: Configure a Sorting Rule for the Report Details 
+description: "Learn how to interactively sort the Report details via the Sorting Interactive Action."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-report-details
 tags: sorting,report,details
 published: True
@@ -9,7 +9,7 @@ position: 5
 previous_url: /interactive-sorting-action-report-details
 ---
 
-# Sorting Report Details
+# How to Sort the Report Details
 
 
 Prerequisites:       
@@ -20,9 +20,9 @@ Prerequisites:
 
 The examples are located in (Replace: Reporting X with your installation version)       
 
-* Standalone Report Designer - %PROGRAMFILES(x86)%\Reporting X\Report Designer\Examples         			
+* Standalone Report Designer - `%PROGRAMFILES(x86)%\Reporting X\Report Designer\Examples`        			
 
-* Visual Studio Integrated Designer – %PROGRAMFILES(x86)%\Reporting X\Examples\CSharp\         			
+* Visual Studio Integrated Designer – `%PROGRAMFILES(x86)%\Reporting X\Examples\CSharp\`         			
 
 
 Add an interactive sorting button to a page, group or report header item to enable a user to click the item adorner and sort the report details by the selected expression.          	
@@ -43,7 +43,7 @@ Add an interactive sorting button to a page, group or report header item to enab
 
 1. Click __OK__ .         		
 
-1. In Sort expressions drop-down select the field or write expression for which you are defining a sorting action For our example set the expression to =Fields.OrderQty Specifying a sort expression is required.
+1. In Sort expressions drop-down select the field or write expression for which you are defining a sorting action For our example, set the expression to `=Fields.OrderQty`. Specifying a sort expression is required.
 
 1. Click __OK__ .         		
 

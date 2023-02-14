@@ -93,7 +93,7 @@ __Example usage:__
 
 ## Graphical User Interface Installer  
 
-![datadirect-drivers-installer-gui](images/DataSources/datadirect-drivers-installer-gui.png)
+![The Graphical User Interface of the Telerik Reporting DataDirect ODBC Drivers Installer](images/DataSources/datadirect-drivers-installer-gui.png)
 
 The drivers can be installed or uninstalled using a Windows Forms application, which makes the installation process more intuitive and convenient. It provides the same options as the CLI installer and adds the ability to output the installation log to an external file. It also automatically detects the current application's platform and selects the corresponding __x86__ or __x64__ option.
 

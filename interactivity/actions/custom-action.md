@@ -1,7 +1,7 @@
 ---
 title: Custom Action
-page_title: Custom Action 
-description: Custom Action
+page_title: Configuring the Custom Action 
+description: "Learn more about to set up a Custom Report Action and how to utilize the Report Viewer interactive action event handers to apply changes at runtime."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action
 tags: custom,action
 published: True
@@ -9,13 +9,13 @@ position: 7
 previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-custom-action, /designing-reports-interactivity-custom-action
 ---
 
-# Custom Action
+# Custom Actions Overview
 
-A custom action is an action that contains a collection of parameters, defined by the user, that will be evaluated during report processing. It does not affect the currently viewed report in any way - its purpose is to be used in a report viewer's interactive action event handlers: __InteractiveActionExecuting()__, __InteractiveActionEnter()__ and __InteractiveActionLeave()__. 
+A custom action is an action that contains a collection of parameters, defined by the user, that will be evaluated during report processing. It does not affect the currently viewed report in any way - its purpose is to be used in a report viewer's interactive action event handlers: `InteractiveActionExecuting()`, `InteractiveActionEnter()` and `InteractiveActionLeave()`. 
 
-To define a [CustomAction](/reporting/api/Telerik.Reporting.CustomAction) use the [Edit Action Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%}) or create it programmatically in the report class body. 
+To define a [CustomAction](/api/Telerik.Reporting.CustomAction) use the [Edit Action Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog%}) or create it programmatically in the report class body. 
 
-Here is an example how to get the custom action's parameters in __InteractiveActionExecuting()__ event of __WinForms Report Viewer__. 
+Here is an example of how to get the custom action's parameters in the [`InteractiveActionExecuting`](/api/telerik.reportviewer.winforms.reportviewerbase#Telerik_ReportViewer_WinForms_ReportViewerBase_InteractiveActionExecuting) event of the __WinForms Report Viewer__. 
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsCustomInteractiveActionExecutingEventSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsCustomInteractiveActionExecutingEventSnippet}}

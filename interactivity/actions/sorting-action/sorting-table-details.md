@@ -1,7 +1,7 @@
 ---
 title: Sorting Table Details
-page_title: Sorting Table Details 
-description: Sorting Table Details
+page_title: Configure a Sorting Action for the Table Details 
+description: "Learn how to add and use a Sorting Interactive Action for the Table Details."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-table-details
 tags: sorting,table,details
 published: True
@@ -9,9 +9,9 @@ position: 1
 previous_url: /interactive-sorting-action-table-details
 ---
 
-# Sorting Table Details
+# How to Sort the Table Details
 
-This document demonstrates how to enable interactive sorting with the __Standalone Report Designer__ or with the __Visual Studio Report Designer__.        
+This document demonstrates how to enable interactive sorting with the `Standalone Report Designer` or with the `Visual Studio Report Designer`.        
 
 ## Prerequisites
 
@@ -25,11 +25,11 @@ To follow the steps in this guide, you need the following:
 
 The following steps describe how to add an interactive __sort__ button to a column header in the __Detail Section__ of a report. This enables a user to click on the button and sort the table rows by the value displayed in that column.         
 
-1. Locate the __Product Catalog__ sample report and open it with the __Standalone Report Designer__ or with the __Visual Studio Report Designer__. Depending on the Report Designer of your choice, you will locate the __Product Catalog__ sample report in one of the following folders:             
+1. Locate the `Product Catalog` sample report and open it with the __Standalone Report Designer__ or with the __Visual Studio Report Designer__. Depending on the Report Designer of your choice, you will locate the __Product Catalog__ sample report in one of the following folders:             
 
-   + Examples for the Standalone Report Designer - %PROGRAMFILES(x86)%\Progress\Telerik Reporting {Version}\Report Designer\Examples                 
+   + Examples for the Standalone Report Designer - `%PROGRAMFILES(x86)%\Progress\Telerik Reporting {Version}\Report Designer\Examples`                 
 
-   + Examples for the Visual Studio Report Designer – %PROGRAMFILES(x86)%\Progress\Telerik Reporting {Version}\Examples\CSharp\                 
+   + Examples for the Visual Studio Report Designer – `%PROGRAMFILES(x86)%\Progress\Telerik Reporting {Version}\Examples\CSharp\`                 
 
    >note Replace __{Version}__ in the Examples path with your Telerik Reporting version.               
 
@@ -47,7 +47,7 @@ The following steps describe how to add an interactive __sort__ button to a colu
 
 1. Select __table1 (Table)__ in the drop-down and click __OK__.             
 
-1. In the __Sort expressions__ drop-down menu, select the field that corresponds to the column for which you are defining a sorting action. In this case, use the __=Fields.ListPrice__ expression and click __OK__.             
+1. In the __Sort expressions__ drop-down menu, select the field that corresponds to the column for which you are defining a sorting action. In this case, use the `=Fields.ListPrice` expression and click __OK__.             
 
    >note Specifying a sort expression is required.
 

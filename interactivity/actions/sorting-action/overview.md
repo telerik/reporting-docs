@@ -14,7 +14,7 @@ previous_url: /conditional_visibility_and_other_interactive_features, /interacti
 
 You can add interactive sort buttons to enable a user to toggle between, raw, ascending and descending order for rows in a Table, for rows and columns in a `Crosstab`, for report details or groups and for `Graph` groups. The most common use of the interactive sorting action is to add a _sort button_ to every column header textbox/item. The user can then choose which column to sort by.       
 
-With that being, you can add an interactive sorting button to any report item, not just column header textboxes. For example, for a `TextBox` in a row outside a row group, for child group rows or columns, or for the detail rows or columns. You can also combine fields into a single expression, and then sort by multiple fields.       
+With that being said, you can add an interactive sorting button to any report item, not just column header textboxes. For example, for a `TextBox` in a row outside a row group, for child group rows or columns, or for the detail rows or columns. You can also combine fields into a single expression, and then sort by multiple fields.       
 
 ## Add Interactive Sorting Action
 

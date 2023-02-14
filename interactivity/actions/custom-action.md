@@ -1,7 +1,7 @@
 ---
 title: Custom Action
 page_title: Configuring the Custom Action 
-description: "Learn more about to set up a Custom Report Action and how to utilize the Report Viewer interactive action event handers to apply changes at runtime."
+description: "Learn more about to set up a Custom Report Action and how to utilize the Report Viewer interactive action event handlers to apply changes at runtime."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action
 tags: custom,action
 published: True

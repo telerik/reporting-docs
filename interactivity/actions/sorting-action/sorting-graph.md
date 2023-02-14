@@ -1,7 +1,7 @@
 ---
-title: Sorting Graph
-page_title: Sorting Graph 
-description: Sorting Graph
+title: Sorting Graphs
+page_title: Sort the Graph Report Item 
+description: "Learn how the Graph report item can be sorted dynamically via the Sorting Interactive Action."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-graph
 tags: sorting,graph
 published: True
@@ -9,8 +9,7 @@ position: 4
 previous_url: /interactive-sorting-action-graph
 ---
 
-# Sorting Graph
-
+# Sorting the Graph Report Item
 
 Prerequisites:       
 
@@ -20,16 +19,16 @@ Prerequisites:
 
 The examples are located in (Replace: Reporting X with your installation version)       
 
-* Standalone Report Designer - %PROGRAMFILES(x86)%\Reporting X\Report Designer\Examples         			
+* Standalone Report Designer - `%PROGRAMFILES(x86)%\Reporting X\Report Designer\Examples`         			
 
-* Visual Studio Integrated Designer – %PROGRAMFILES(x86)%\Reporting X\Examples\CSharp\         			
+* Visual Studio Integrated Designer – `%PROGRAMFILES(x86)%\Reporting X\Examples\CSharp\`         			
 
 
 Add an interactive sort button to a sibling or parent item to enable a user to click the item and sort the graph.         	
 
 1. Open in report design view the Dashboard example report         		
 
-1. In report design view, select a sibling or parent item to which you want to add an interactive sorting button. In this case we want to add the Sorting Action to a QUATERLY SALES DISTRIBUTION textbox located on the top of the SalesPersonQuarterBar graph item.         		
+1. In report design view, select a sibling or parent item to which you want to add an interactive sorting button. In this case we want to add the Sorting Action to a QUATERLY SALES DISTRIBUTION textbox located on the top of the `SalesPersonQuarterBar` graph item.         		
 
 1. From __Properties window__  open the __Actions__  editor.         		
 
@@ -43,7 +42,7 @@ Add an interactive sort button to a sibling or parent item to enable a user to c
 
 1. Click __OK__ .         		
 
-1. In Sort expressions drop-down you have to write a sort expression. In our case the graph barSeries1.Data.X is set to =Sum(Fields.LineTotal) and we want to sort based on the aggregated LineTotal so use the same expression. Specifying a sort expression is required.
+1. In Sort expressions drop-down you have to write a sort expression. In our case, the graph `barSeries1.Data.X` is set to `=Sum(Fields.LineTotal)` and we want to sort based on the aggregated LineTotal so use the same expression. Specifying a sort expression is required.
 
 1. Click __OK__ .         		
 

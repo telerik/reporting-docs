@@ -1,7 +1,7 @@
 ---
 title: Design Time Data
 page_title: Working With Data at Design Time Explained
-description: "Learn which data sources are available at design time, and which only at runtime and how to work with the data available at design time."
+description: "Learn which data sources are available at design time, and which only at runtime as well as how to work with the data available at design time."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/working-with-data-at-design-time
 tags: working,with,data,at,design,time
 published: True

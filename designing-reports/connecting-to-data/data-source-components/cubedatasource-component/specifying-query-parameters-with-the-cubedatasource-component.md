@@ -1,6 +1,6 @@
 ---
 title: Query Parameters
-page_title: Adding query parameters with the CubeDataSource component
+page_title: Adding query parameters to the CubeDataSource component
 description: "Learn how to specify query parameters for the MDX queries with the Telerik Reporting CubeDataSource component."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/specifying-query-parameters-with-the-cubedatasource-component
 tags: specifying,query,parameters,with,the,cubedatasource,component

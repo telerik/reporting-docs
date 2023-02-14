@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: CubeDataSource Component at a Glance
-description: "Learn the basics about the Telerik Reporting CubeDataSource Component and how you may use it in your Reports."
+description: "Learn about the basics of the Telerik Reporting CubeDataSource Component and how you may use it in your Reports."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview
 tags: overview
 published: True

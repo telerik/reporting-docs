@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Data Items at a Glance
-description: "Learn which Report Items are considered as Data Items in Telerik Reporting, why are they unique and more about their specifics."
+description: "Learn which Report Items are considered as Data Items in Telerik Reporting, why they are unique and more about their specifics."
 slug: telerikreporting/designing-reports/connecting-to-data/data-items/overview
 tags: overview,data,item,report,table,crosstab,subreport,map,graph
 published: True

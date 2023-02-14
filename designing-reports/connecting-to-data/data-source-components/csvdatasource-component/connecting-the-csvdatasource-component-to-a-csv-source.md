@@ -1,7 +1,7 @@
 ---
 title: Connecting to CSV Source
 page_title: Connecting CsvDataSource to CSV Data
-description: "Learn how to configure the CsvDataSource Component, which are the required settings and how to connect to the CSV Source."
+description: "Learn how to configure the CsvDataSource Component, which are the required settings and how to connect it to the CSV Source."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/connecting-the-csvdatasource-component-to-a-csv-source
 tags: connecting,the,csvdatasource,component,to,a,csv,source
 published: True

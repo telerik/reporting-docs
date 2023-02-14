@@ -1,7 +1,7 @@
 ---
 title: Sorting Crosstab Total
-page_title: Sorting Crosstab Total 
-description: Sorting Crosstab Total
+page_title: Sort the Crosstab Total 
+description: "Learn how to the Crosstab report item's totals via the Sorting Interactive Action."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-crosstab-total
 tags: sorting,crosstab,total
 published: True
@@ -9,8 +9,7 @@ position: 2
 previous_url: /interactive-sorting-action-crosstab-total
 ---
 
-# Sorting Crosstab Total
-
+# Sorting the Crosstab Total
 
 Prerequisites:       
 
@@ -20,9 +19,9 @@ Prerequisites:
 
 The examples are located in (Replace: Reporting X with your installation version)       
 
-* Standalone Report Designer - %PROGRAMFILES(x86)%\Reporting X\Report Designer\Examples         			
+* Standalone Report Designer - `%PROGRAMFILES(x86)%\Reporting X\Report Designer\Examples`         			
 
-* Visual Studio Integrated Designer – %PROGRAMFILES(x86)%\Reporting X\Examples\CSharp\         			
+* Visual Studio Integrated Designer – `%PROGRAMFILES(x86)%\Reporting X\Examples\CSharp\`         			
 
 
 Add an interactive sorting button to crosstab total column header item (top-level static group) to enable interactive sort for column items that shows aggregated data (total) in the Crosstab.         	
@@ -43,7 +42,7 @@ Add an interactive sorting button to crosstab total column header item (top-leve
 
 1. Click __OK__ .         		
 
-1. In the Sort expressions use the same aggregating expression as the one used in the items you want to sort. For this example use =Sum(Fields.LineTotal). Specifying a sort expression is required.
+1. In the Sort expressions use the same aggregating expression as the one used in the items you want to sort. For this example, use the `=Sum(Fields.LineTotal)` expresion. Specifying a sort expression is required.
 
 1. Click __OK__ .         		
 

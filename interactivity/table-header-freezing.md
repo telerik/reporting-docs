@@ -16,7 +16,7 @@ Freezing the table headers prevents the row and/or column headers of a table fro
 
 ## Settings in the Report Designers
 
-Each table or crosstab has [FreezeColumnHeaders](api/Telerik.Reporting.Table#Telerik_Reporting_Table_FreezeColumnHeaders) and [FreezeRowHeaders](/api/Telerik.Reporting.Table#Telerik_Reporting_Table_FreezeRowHeaders) properties:         
+Each table or crosstab has [FreezeColumnHeaders](/api/Telerik.Reporting.Table#Telerik_Reporting_Table_FreezeColumnHeaders) and [FreezeRowHeaders](/api/Telerik.Reporting.Table#Telerik_Reporting_Table_FreezeRowHeaders) properties:         
 
 * `FreezeColumnHeaders` keeps the column headers visible while scrolling vertically.             
 

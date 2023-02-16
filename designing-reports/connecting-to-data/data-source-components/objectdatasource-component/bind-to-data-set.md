@@ -5,7 +5,7 @@ description: "Learn how to Bind a Telerik Reporting ObjectDataSource component t
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-dataset
 tags: how,to,bind,to,a,dataset
 published: True
-position: 4
+position: 14
 previous_url: /object-data-source-how-to-bind-to-data-set
 ---
 

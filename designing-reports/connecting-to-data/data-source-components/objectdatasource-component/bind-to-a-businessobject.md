@@ -9,7 +9,7 @@ position: 0
 previous_url: /object-data-source-how-to-bind-to-business-object
 ---
 
-# Binding ObjectDataSource Compoenent to a BusinessObject
+# Binding ObjectDataSource Component to a BusinessObject
 
 The following code sample illustrates a custom middle-tier business object that can be used with an `ObjectDataSource` component that specifies a strongly typed source object. The example demonstrates also how to configure the report to use the `ObjectDataSource` and how to preview it in the Windows Forms Report Viewer.
 

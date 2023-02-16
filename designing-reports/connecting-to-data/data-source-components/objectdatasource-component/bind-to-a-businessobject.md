@@ -1,7 +1,7 @@
 ---
 title: Bind to a BusinessObject
 page_title: Binding ObjectDataSource to a BusinessObject
-description: "Learn how to Bind a Telerik Reporting ObjectDataSource compoenent to a BusinessObject after creating it with code."
+description: "Learn how to Bind a Telerik Reporting ObjectDataSource component to a BusinessObject after creating it with code."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject
 tags: how,to,bind,to,a,businessobject
 published: True

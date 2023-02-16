@@ -9,7 +9,7 @@ position: 3
 previous_url: /object-data-source-how-to-bind-to-data-adapter
 ---
 
-# Binding ObjectDataSource Compoenent to a DataAdapter
+# Binding ObjectDataSource Component to a DataAdapter
 
 The following example illustrates how to use a `DataAdapter` as the source for an `ObjectDataSource` component. The example demonstrates also how to configure the report to use the `ObjectDataSource` and how to preview it in the Windows Forms Report Viewer.
 

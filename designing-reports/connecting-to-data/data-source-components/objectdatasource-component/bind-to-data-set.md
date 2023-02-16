@@ -1,7 +1,7 @@
 ---
 title: Bind to a DataSet
 page_title: Binding ObjectDataSource to a DataSet
-description: "Learn how to Bind a Telerik Reporting ObjectDataSource compoenent to a DataSet after creating it with code."
+description: "Learn how to Bind a Telerik Reporting ObjectDataSource component to a DataSet after creating it with code."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-dataset
 tags: how,to,bind,to,a,dataset
 published: True
@@ -9,7 +9,7 @@ position: 4
 previous_url: /object-data-source-how-to-bind-to-data-set
 ---
 
-# Binding ObjectDataSource Compoenent to a DataSet
+# Binding ObjectDataSource Component to a DataSet
 
 The following example illustrates how to use a `DataSet` as the source for an `ObjectDataSource` component. The example demonstrates also how to configure the report to use the `ObjectDataSource` and how to preview it in the Windows Forms Report Viewer.
 

@@ -50,18 +50,18 @@ For security reasons the ObjectDataSource can resolve only types that are declar
 
 		````XML
 <?xml version="1.0"?>
-			<configuration>
-				<configSections>
-					<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-				</configSections>
-			...
-				<Telerik.Reporting>
-					<assemblyReferences>
-						<add name="yourAssemblyName"/>
-					</assemblyReferences>
-				</Telerik.Reporting>
-			...
-			</configuration>
+		<configuration>
+			<configSections>
+				<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
+			</configSections>
+		...
+			<Telerik.Reporting>
+				<assemblyReferences>
+					<add name="yourAssemblyName"/>
+				</assemblyReferences>
+			</Telerik.Reporting>
+		...
+		</configuration>
 ````
 
 

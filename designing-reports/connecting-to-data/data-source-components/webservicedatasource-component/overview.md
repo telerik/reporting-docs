@@ -1,7 +1,7 @@
 ---
-title: WebServiceDataSource Component Overview
-page_title: WebServiceDataSource Component Overview
-description: WebServiceDataSource Component Overview
+title: Overview
+page_title: WebServiceDataSource Component at a Glance
+description: "Learn more about the WebServiceDataSource Component in Telerik Reporting and how to use it in your reports."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview
 tags: overview
 published: True
@@ -19,13 +19,13 @@ table th:nth-of-type(2) {
 
 # WebServiceDataSource Component Overview
 
-The [WebServiceDataSource](/reporting/api/Telerik.Reporting.WebServiceDataSource) component enables data items to display data located on a service in JSON format, while using no code. Using WebServiceDataSource allows you to access and display data in a report without connecting and authenticating manually to the service and parsing the JSON. At design time the component can be configured using the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}). At run time the WebServiceDataSource automatically connects, authenticates to the service, and parses the retrieved JSON data. 
+The [WebServiceDataSource](/api/Telerik.Reporting.WebServiceDataSource) component enables data items to display data located on a service in JSON format, while using no code. Using WebServiceDataSource allows you to access and display data in a report without connecting and authenticating manually to the service and parsing the JSON. At design time the component can be configured using the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}). At run time the WebServiceDataSource automatically connects, authenticates to the service, and parses the retrieved JSON data.
 
 The web service may omit properties with empty values in the data response to save bandwidth. The result is that not all of the objects have the same list of properties. Due to this no errors will be shown in the report if an undefined data field name is used inside an expression. 
 
-The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown. 
+The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.
 
-> In order to preview reports which use the WebServiceDataSource component it is required to reference the __Telerik.Reporting.WebServiceDataSource__ DLL or the corresponding NuGet package in your application.
+> In order to preview reports which use the WebServiceDataSource component it is required to reference the `Telerik.Reporting.WebServiceDataSource` DLL or the corresponding NuGet package in your application.
 
 ## Configuring the Component
 
@@ -42,14 +42,14 @@ __Web Service Request Configuration:__
 |Body|The body of the POST method. Applicable only for POST HTTP request method.|
 |Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the Body fields with the expression result or static value.|
 
-__Inline Data String Configuration:__ 
+__Inline Data String Configuration:__
 
 | Setting | Description |
 | ------ | ------ |
 |Source|The inline data string containing the data. Required if Service URL or external data file is not set.<br/>Setting both Service URL and inline data string at the same time will reduce network load during design-time as no HTTP requests will be made while the report is designed. Instead the inline data will be used for any design-time operations. The Service URL will be used only at run-time (this includes data source preview and report preview operations).|
 |Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 
-__External Data File Configuration:__ 
+__External Data File Configuration:__
 
 | Setting | Description |
 | ------ | ------ |
@@ -58,7 +58,7 @@ __External Data File Configuration:__
 
 ## Basic Authentication Settings
 
-Below are listed the available settings for Basic authentication. The authentication scheme is defined in [The 'Basic' HTTP Authentication Scheme (RFC 7617)](https://tools.ietf.org/html/rfc7617). This scheme transmits credentials as username/password pairs, encoded using base64. 
+Below are listed the available settings for Basic authentication. The authentication scheme is defined in [The 'Basic' HTTP Authentication Scheme (RFC 7617)](https://tools.ietf.org/html/rfc7617). This scheme transmits credentials as username/password pairs, encoded using base64.
 
 | Setting | Description |
 | ------ | ------ |
@@ -67,13 +67,12 @@ Below are listed the available settings for Basic authentication. The authentica
 
 ## 2-Step (Bearer) Authentication Settings
 
-Below are listed the available settings for 2-step (Bearer) authentication. The Bearer authentication scheme is defined in [The OAuth 2.0 Authorization Framework: Bearer Token Usage (RFC 6750)](https://tools.ietf.org/html/rfc6750). Bearer tokens can be used to access OAuth 2.0-protected resources. The WebServiceDataSource component supports the following OAuth 2.0 authorization mechanisms out-of-the-box: 
+Below are listed the available settings for 2-step (Bearer) authentication. The Bearer authentication scheme is defined in [The OAuth 2.0 Authorization Framework: Bearer Token Usage (RFC 6750)](https://tools.ietf.org/html/rfc6750). Bearer tokens can be used to access OAuth 2.0-protected resources. The WebServiceDataSource component supports the following OAuth 2.0 authorization mechanisms out-of-the-box:
 
-* [Password Grant](https://www.oauth.com/oauth2-servers/access-tokens/password-grant/) 
+* [Password Grant](https://www.oauth.com/oauth2-servers/access-tokens/password-grant/)
+* [Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/)
 
-* [Client Credentials](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/) 
-
-> [Authorization Code Request](https://www.oauth.com/oauth2-servers/access-tokens/authorization-code-request/) is not supported since it requires user interaction in a browser window, which is not applicable to all Reporting use cases. 
+> [Authorization Code Request](https://www.oauth.com/oauth2-servers/access-tokens/authorization-code-request/) is not supported since it requires user interaction in a browser window, which is not applicable to all Reporting use cases.
 
 | Setting | Description |
 | ------ | ------ |
@@ -90,17 +89,16 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 
 ## Cookie-Based Authentication
 
-It is possible to leverage the 2-Step Authentication mechanism above in order to retrieve a session cookie from the server which will authenticate subsequent requests. In this scenario first a request will be sent to the server for authentication purposes and the response should contain the generated cookie for the authenticated user. If the cookie domain and path matches the Web Service Data Source Service URL the cookie will be sent in the following data retrieval request. 
+It is possible to leverage the 2-Step Authentication mechanism above in order to retrieve a session cookie from the server which will authenticate subsequent requests. In this scenario first a request will be sent to the server for authentication purposes and the response should contain the generated cookie for the authenticated user. If the cookie domain and path matches the Web Service Data Source Service URL the cookie will be sent in the following data retrieval request.
 
-> When using cookie-based authentication, consider using '()' as value for the __Token Path__ when configuring the 2-step authentication. This will ensure that no token is found in the login-response and no token will be included in the subsequent requests.
+> When using cookie-based authentication, consider using '()' as value for the `Token Path` when configuring the 2-step authentication. This will ensure that no token is found in the login-response and no token will be included in the subsequent requests.
 
 ## Supported developer platforms
 
-*.NET Framework 4.0 and above
-
-*.NET Core 2.0 and above
-
-*.NET Standard 2.0 and above
+* .NET Framework 4.0 and above
+* .NET Core 2.0 and above
+* .NET 5 and above
+* .NET Standard 2.0 and above
 
 ## See Also
 

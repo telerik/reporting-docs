@@ -1,6 +1,6 @@
 ---
 title: Using JSONPath
-page_title: Using JSONPath for filtering JSON data with examples
+page_title: Writing JSONPath expressions to filter JSON data
 description: "Learn how to use JSONPath to filter JSON data with the JsonDataSource and WebServiceDataSource in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data
 tags: how,to,use,jsonpath,to,filter,json,data,web,service,source

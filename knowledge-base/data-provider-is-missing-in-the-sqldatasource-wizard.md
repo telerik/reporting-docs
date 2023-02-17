@@ -1,6 +1,6 @@
 ---
 title: Data Provider is Missing in the SqlDataSource Wizard
-description: "Learn how to solve the problem when the SqlDataSource Wizard cannot find the selected data provider."
+description: "Learn how to solve the problem where the SqlDataSource Wizard cannot find the selected data provider."
 type: troubleshooting
 page_title: Data provider is not found by the SqlDataSource wizard
 slug: data-provider-is-missing-in-the-sqldatasource-wizard

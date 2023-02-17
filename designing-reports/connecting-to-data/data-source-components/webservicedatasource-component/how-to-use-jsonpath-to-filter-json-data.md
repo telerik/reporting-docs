@@ -9,7 +9,7 @@ position: 1
 previous_url: /how-to-use-jsonpath
 ---
 
-# Useing JSONPath to Filter JSON data
+# Using JSONPath to Filter JSON data
 
 In this article we are going to discuss how to use JSONPath expressions in the Data Selector in order to query and filter JSON data returned from the web service. For a complete overview of the JSONPath syntax please refer to [JSONPath - XPath for JSON](https://goessner.net/articles/JsonPath/).
 

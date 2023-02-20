@@ -1,7 +1,7 @@
 ---
-title: ReportBook Rendering Settings
-page_title: Page Settings, Sizes and Naming 
-description: "Learn how to render multiple reports with different page settings, sizes and naming via the Telerik ReportBook item."
+title: Page Settings, Sizes and Naming
+page_title: Configuring the ReportBook Page Settings, Size and Name 
+description: "Learn how to render multiple reports with different page settings, sizes and naming via the Telerik ReportBook component."
 slug: telerikreporting/designing-reports/report-book/page-settings,-sizes-and-naming
 tags: page,settings,,sizes,and,naming
 published: True
@@ -9,7 +9,7 @@ position: 4
 previous_url: /designing-reports-reportbook-settings
 ---
 
-# Page Settings, Sizes and Naming of Telerik ReportBooks
+# Page Settings, Sizes and Naming in ReportBooks
 
 ## Page Settings and Sizes
 

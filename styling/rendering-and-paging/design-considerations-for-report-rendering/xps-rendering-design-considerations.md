@@ -1,5 +1,5 @@
 ---
-title: XPS Rendering Design Considerations
+title: XPS Rendering
 page_title: XPS Rendering Design Considerations at a glance
 description: "Learn important details about the behavior and limitations of the XPS rendering format, that need to be taken into account when designing a report with XPS rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/xps-rendering-design-considerations

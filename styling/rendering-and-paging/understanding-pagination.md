@@ -3,7 +3,7 @@ title: Understanding Pagination
 page_title: Pagination at a glance
 description: "Understand how report pagination works. Learn more about the different report page settings, the Keep Together functionality, the Horizontal Paging, and how report sections behave."
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagination
-tags: understanding,pagination
+tags: understanding, pagination
 published: True
 position: 2
 previous_url: /designing-reports-page-layout-rendering-understanding-pagination

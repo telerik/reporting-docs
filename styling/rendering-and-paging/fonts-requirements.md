@@ -1,9 +1,9 @@
 ---
 title: Fonts Requirements
-page_title: Fonts Requirements 
-description: Fonts Requirements
+page_title: Fonts Requirements at a glance
+description: "Learn important details about the general Fonts requirements, as well as specifics when using a certain rendering format, font style, etc."
 slug: telerikreporting/designing-reports/rendering-and-paging/fonts-requirements
-tags: fonts,requirements
+tags: fonts, requirements
 published: True
 position: 5
 previous_url: /rendering-fonts-in-reports

@@ -1,5 +1,5 @@
 ---
-title: HTML Rendering Design Considerations
+title: HTML Rendering
 page_title: "Learn important details about the behavior and limitations of the HTML5 and MHTML rendering formats, that need to be taken into account when designing a report with HTML rendering in mind."
 description: HTML Rendering Design Considerations
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations

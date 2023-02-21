@@ -1,5 +1,5 @@
 ---
-title: Word Rendering Design Considerations
+title: Word Rendering
 page_title: Word Rendering Design Considerations at a glance
 description: "Learn important details about the behavior and limitations of the Word rendering format, that need to be taken into account when designing a report with Word rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/word-rendering-design-considerations

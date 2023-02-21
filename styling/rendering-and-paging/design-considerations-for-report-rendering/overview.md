@@ -1,5 +1,5 @@
 ---
-title: Design Considerations for Report Rendering
+title: Overview
 page_title: Design Considerations for Report Rendering at a glance
 description: "Learn more about important considerations that need to be taken into account when designing a report, as different output formats have specific characteristics that determine their usage and impose ceratin limitations."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/overview
@@ -10,7 +10,6 @@ previous_url: /designing-reports-considerations-overview
 ---
 
 # Overview of the Design Considerations for Report Rendering
-
 
 All __Telerik Reporting__ output formats have specific characteristics that determine their usage and impose ceratin limitations, which need to be taken into consideration when designing reports. For example, the CSV rendering extension is useful for creating reports that can be used as a data source by another application or process, layout rendering extensions produce reports in a format suitable for viewing by users, while physical rendering extensions are intended for precise printing.
 

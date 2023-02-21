@@ -1,7 +1,7 @@
 ---
 title: Understanding Pagination
-page_title: Understanding Pagination 
-description: Understanding Pagination
+page_title: Pagination at a glance
+description: "Understand how report pagination works. Learn more about the different report page settings, the Keep Together functionality, the Horizontal Paging, and how report sections behave."
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagination
 tags: understanding,pagination
 published: True
@@ -9,7 +9,7 @@ position: 2
 previous_url: /designing-reports-page-layout-rendering-understanding-pagination
 ---
 
-# Understanding Pagination
+# Pagination Overview
 
 Pagination refers to the number of pages within a report and how report items are arranged on these pages. Pagination varies depending on the used renderer, page break and keep-together options you configure the report to use. 
 
@@ -107,7 +107,7 @@ Consider this implication when applying such Bindings, as it may lead to unexpec
 
 If the report spans over several pages in width then its sections are stretched from the left edge of the left-most page’s printable area to the right edge of the right-most page’s printable area, as displayed in the following diagram: 
 
-![Horizontal Pagination](images/SectionSpan.jpg)
+![Image illustrating how the horizontal paging behaves.](images/SectionSpan.jpg)
 
 >caution If your report item (table) is too wide to fit on the page it will cause a horizontal overflow and will continue on the next page. However whenever this happens if there is additional content below the table a blank page for each additional page (needed by the table) will be generated. To understand this better consider the following example: 
 

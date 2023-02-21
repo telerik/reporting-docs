@@ -1,7 +1,7 @@
 ---
-title: Expressions Overview
-page_title: Expressions Overview
-description: Expressions Overview
+title: Overview
+page_title: Expressions Explained in Brief
+description: "Learn the basics about the Expressions in Telerik Reporting, what you may use them for and how to define them."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/overview
 tags: overview
 published: True
@@ -19,7 +19,7 @@ Parameters can be used with expressions to provide additional flexibility for ch
 
 Expressions begin with an equal `=` and can include a combination of constants, operators, and references to built-in values (fields, parameters, and functions), and to external or custom code.
 
->important The Expressions __cannot begin with whitespace__. The expression '  =Fields.Data', will be interpreted as a hardcoded string. The correct value is '=Fields.Data'. 
+>important The Expressions __cannot begin with whitespace__. The expression '	   =Fields.Data', will be interpreted as a hardcoded string. The correct value is '=Fields.Data'. 
 
 >important Expressions are __case-insensitive__. Thus, it is strongly recommended that the data fields, functions, and other objects used in expressions throughout the report are case-insensitive unique. Otherwise, the expression engine will not be able to distinguish between the objects which may lead to unexpected results. 
 

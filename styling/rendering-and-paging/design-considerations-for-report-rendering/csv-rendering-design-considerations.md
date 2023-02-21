@@ -1,5 +1,5 @@
 ---
-title: CSV Rendering Design Considerations
+title: CSV Rendering
 page_title: CSV Rendering Design Considerations at a glance
 description: "Learn important details about the behavior and limitations of the CSV rendering format, that need to be taken into account when designing a report with CSV rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/csv-rendering-design-considerations

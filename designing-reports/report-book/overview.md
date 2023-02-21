@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Report Book Explained
-description: "Learn what is the Telerik Report Book and how, as well as when, it should be used to best benefit from its functionalities."
+description: "Learn what is the Telerik Report Book and how and when it should be used to best benefit from its functionalities."
 slug: telerikreporting/designing-reports/report-book/overview
 tags: overview
 published: True

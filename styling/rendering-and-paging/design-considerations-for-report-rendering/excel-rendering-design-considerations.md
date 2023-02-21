@@ -1,5 +1,5 @@
 ---
-title: Excel Rendering Design Considerations
+title: Excel Rendering
 page_title: Excel Rendering Design Considerations at a glance
 description: "Learn important details about the behavior and limitations of the different Excel rendering formats, that need to be taken into account when designing a report with Excel rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations

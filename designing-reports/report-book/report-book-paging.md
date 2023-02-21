@@ -1,7 +1,7 @@
 ---
-title: Report Book Paging
-page_title: Report Book Paging 
-description: Report Book Paging
+title: Paging
+page_title: Report Book Paging Explained
+description: "Learn more about the Telerik Reporting ReportBook Paging and how you may control its order and appearance."
 slug: telerikreporting/designing-reports/report-book/report-book-paging
 tags: report,book,paging
 published: True
@@ -11,32 +11,31 @@ previous_url: /designing-reports-reportbook-paging
 
 # Report Book Paging
 
+Reports are displayed in the order they were added to the report book, each report starting on a new page. The way pages are counted (the evaluation of the `PageNumber` global object) may be different in the context of a report book compared to counting pages in a single report. The Report class has a property of type `PageNumberingStyle` that will let you control the behavior of page counting in the context of a report book.
 
-## Report Book Paging
+>note The  `PageNumberingStyle` property has meaning and effect only when the report is part of a report book.
 
-Reports are displayed in the order they were added to the report book, each report starting on a new page. The way pages are counted (the evaluation of the 'PageNumber' global object) may be different in the context of a report book compared to counting pages in a single report. The Report class has a property of type __PageNumberingStyle__ that will let you control the behavior of page counting in the context of a report book.
+The `PageNumberingStyle` enumeration has three values with the default being `Continue`:
 
->note The  __PageNumberingStyle__  property has meaning and effect only when the report is part of a report book.
+- `ResetNumbering` - resets page numbering while page count aggregation continues;
+- `ResetNumberingAndCount` - resets both page numbering and page count;
+- `Continue` - indicates that both page numbering and page count aggregations continue from where the previous report in the book has left off.
 
-
-The PageNumberingStyle enumeration has three values with self-explanatory names. "ResetNumbering" resets page numbering while page count aggregation continues, ResetNumberingAndCount resets both page numbering and page count and "Continue" indicates that both page numbering and page count aggregations continue from where the previous report in the book has left off. The default value of this property is "Continue". Below is a small example of how to use the PageNumberingStyle assuming that each of the three reports has a total of two pages:
+Below is a small example of how to use the PageNumberingStyle assuming that each of the three reports has a total of two pages:
 
 __The value of the TextBox in the PageHeader is equal to = "Page: " + PageNumber + " of " + PageCount__ 
+
 >caption PageNumberingStyle.Continue
 
-  
+![An image demonstrating how the Telerik ReportBook will be paged with Continued PageNumberingStyle](images/ReportBook_PageNumberingContinue.png)
 
-  ![Continued Paging](images/ReportBook_PageNumberingContinue.png)
 >caption PageNumberingStyle.ResetNumbering
 
-  
+![An image demonstrating how the Telerik ReportBook will be paged with ResetNumbering PageNumberingStyle](images/ReportBook_PageNumberingStyleResetNumbering.png)
 
-  ![Resetting the PageNumber](images/ReportBook_PageNumberingStyleResetNumbering.png)
 >caption PageNumberingStyle.ResetNumberingAndCount
 
-  
-
-  ![Resetting PageNumber and PageCount](images/ReportBook_PageNumberingStyleResetNumberingAndCount.png)
+![An image demonstrating how the Telerik ReportBook will be paged with ResetNumberinAndCount PageNumberingStyle](images/ReportBook_PageNumberingStyleResetNumberingAndCount.png)
 
 ## Multiple PageNumberingStyles and Reports order
 
@@ -53,6 +52,5 @@ On the other hand, if the order of the two reports is switched and now `Report2.
 
 ## See Also
 
- * [Report Book Parameters]({%slug telerikreporting/designing-reports/report-book/report-book-parameters%})
-
- * [Page Settings, Sizes and Naming]({%slug telerikreporting/designing-reports/report-book/page-settings,-sizes-and-naming%})
+* [Report Book Parameters]({%slug telerikreporting/designing-reports/report-book/report-book-parameters%})
+* [Page Settings, Sizes and Naming]({%slug telerikreporting/designing-reports/report-book/page-settings,-sizes-and-naming%})

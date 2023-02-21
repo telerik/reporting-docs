@@ -3,7 +3,7 @@ title: Rendering Behaviors
 page_title: Rendering Behaviors at a glance
 description: "Understand how the different report renderers behave. Learn more about how the rules for paging and displaying report items change depending on the chosen renderin method."
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors
-tags: understanding,rendering,behaviors
+tags: understanding, rendering, behaviors
 published: True
 position: 1
 previous_url: /designing-reports-page-layout-rendering-understanding-rendering-behaviors

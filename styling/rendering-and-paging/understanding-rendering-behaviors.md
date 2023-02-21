@@ -1,7 +1,7 @@
 ---
-title: Understanding Rendering Behaviors
-page_title: Understanding Rendering Behaviors 
-description: Understanding Rendering Behaviors
+title: Rendering Behaviors
+page_title: Rendering Behaviors at a glance
+description: "Understand how the different report renderers behave. Learn more about how the rules for paging and displaying report items change depending on the chosen renderin method."
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors
 tags: understanding,rendering,behaviors
 published: True
@@ -10,7 +10,6 @@ previous_url: /designing-reports-page-layout-rendering-understanding-rendering-b
 ---
 
 # Understanding Rendering Behaviors
-
 
 Depending on the renderer you select, certain rules are applied when rendering the report. How report items fit together on a page is determined by the combination of these factors: 			
 

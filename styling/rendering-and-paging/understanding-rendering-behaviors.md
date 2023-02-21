@@ -11,7 +11,7 @@ previous_url: /designing-reports-page-layout-rendering-understanding-rendering-b
 
 # Understanding Rendering Behaviors
 
-Depending on the renderer you select, certain rules are applied when rendering the report. How report items fit together on a page is determined by the combination of these factors: 			
+Depending on the renderer you select, certain rules are applied when rendering the report. How report items fit together on a page is determined by the combination of these factors:
 
 * Rendering rules.
 
@@ -23,11 +23,11 @@ Depending on the renderer you select, certain rules are applied when rendering t
 
 * Renderer-specific support for paging.
 
-This topic discusses the general rules that are applied by Telerik Reporting. For more information, see [Design Considerations for Report Item Layout]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%}). 			
+This topic discusses the general rules that are applied by Telerik Reporting. For more information, see [Design Considerations for Report Item Layout]({%slug telerikreporting/designing-reports/report-structure/design-considerations-for-report-item-layout%}).
 
 ## General Behaviors for Logical Page Renderers
 
-Reports exported using MHTML and Excel formats are optimized for a computer screen-based experience where pages can be various lengths. To determine how a report will appear in a logical page renderer, use Interactive View of any Report Viewer. The corresponding rendering extension will be used - IMAGEInteractive, HTML5Interactive, XAMLInteractive or WPFXAMLInteractive. The report will appear as it would in a MHTML or Excel format. 				
+Reports exported using MHTML and Excel formats are optimized for a computer screen-based experience where pages can be various lengths. To determine how a report will appear in a logical page renderer, use Interactive View of any Report Viewer. The corresponding rendering extension will be used - IMAGEInteractive, HTML5Interactive, XAMLInteractive or WPFXAMLInteractive. The report will appear as it would in a MHTML or Excel format.
 
 When exporting a report to MHTML or Excel, the following rules are followed:
 
@@ -41,10 +41,9 @@ When exporting a report to MHTML or Excel, the following rules are followed:
 
 ## General Behaviors for Physical Page Renderers
 
-Reports exported using PDF and Image are optimized for a book-like or printed experience where pages are a consistent size. Page breaks are inserted vertically and horizontally at specific locations within the report. These specific locations are determined by the page width and page height settings. 				
+Reports exported using PDF and Image are optimized for a book-like or printed experience where pages are a consistent size. Page breaks are inserted vertically and horizontally at specific locations within the report. These specific locations are determined by the page width and page height settings.
 
->note To determine how a report will appear in a physical page renderer, switch to Print Preview in any of the report viewers. The report appears as it would in PDF or Image formats. 					
-
+>note To determine how a report will appear in a physical page renderer, switch to Print Preview in any of the report viewers. The report appears as it would in PDF or Image formats.
 
 When exporting a report to Image, PDF, RTF, XPS, Powerpoint, and Word, the following general rules are followed:
 
@@ -52,31 +51,31 @@ When exporting a report to Image, PDF, RTF, XPS, Powerpoint, and Word, the follo
 
 * Explicitly set page breaks can cause report items to push other items to the next page.
 
-* If a page break occurs through report items that must be kept together (e.g. placed in a Panel), the items that must be kept together are moved to the next page. 					
+* If a page break occurs through report items that must be kept together (e.g. placed in a Panel), the items that must be kept together are moved to the next page.
 
-* If an item cannot be kept together, for example a text box that grows too large to fit within the vertical usable page area, then the item will be clipped at the physical page boundary and will continue on the next page. 					
+* If an item cannot be kept together, for example a text box that grows too large to fit within the vertical usable page area, then the item will be clipped at the physical page boundary and will continue on the next page.
 
 * Pagination is applied to reports vertically and horizontally.
 
 ## Skip Blank Pages in the Rendered Report
 
-Since R1 2021 SP1, the rendering engine may be forced to skip all pages that do not contain significant content. The latter are considered blank and this includes all pages that __only__  contain items of the following type: Report, Group, any Section, empty SubReport item, Cross-section item, i.e., they do not contain items like TextBox, PicturePox, Table, etc.         
+Since R1 2021 SP1, the rendering engine may be forced to skip all pages that do not contain significant content. The latter are considered blank and this includes all pages that __only__  contain items of the following type: Report, Group, any Section, empty SubReport item, Cross-section item, i.e., they do not contain items like TextBox, PicturePox, Table, etc.
 
-You can still control this rendering behavior, so that pages that do not contain significant content get rendered by setting the __SkipBlankPages__  property of the report to __False__.         
+You can still control this rendering behavior, so that pages that do not contain significant content get rendered by setting the __SkipBlankPages__  property of the report to __False__.
 
-Please, consider the following specifics of this rendering behavior:         
+Please, consider the following specifics of this rendering behavior:
 
-* If a Subreport is missing from the final output, it might be because it contains errors. In that case, try setting the __SkipBlankPages__  property to __False__  in order to examine the actual error.             
+* If a Subreport is missing from the final output, it might be because it contains errors. In that case, try setting the __SkipBlankPages__  property to __False__  in order to examine the actual error.
 
-* The algorithm does not consider the content of the PageHeader, PageFooter and Watermarks as significant. The report’s body must contain significant content for the page to get rendered.              
+* The algorithm does not consider the content of the PageHeader, PageFooter and Watermarks as significant. The report’s body must contain significant content for the page to get rendered.
 
-* All [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) and paged export formats (without RTF-Table mode) conform to this behavior. 
+* All [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) and paged export formats (without RTF-Table mode) conform to this behavior.
 
-* The viewers show a dedicated message in the report area when it appears that the report has no pages to display. 
+* The viewers show a dedicated message in the report area when it appears that the report has no pages to display.
 
 ## Page Header and Footer sections
 
-The following rules apply to page headers and footers when rendered on the page: 				
+The following rules apply to page headers and footers when rendered on the page:
 
 * The header or footer is rendered at the top and bottom of every page within the usable page area (when present).
 
@@ -90,7 +89,7 @@ The following rules apply to page headers and footers when rendered on the page:
 
 * In multi-column reports (supported only in Physical paging), there is only one page header and footer per page, regardless of the number of columns.
 
-* Page Footer section Visibility should NOT depend on [PageCount]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}). The total page count depends on the Visibility of the Page Footer section as this changes the available space for the rest of the report content. Hence, if the Visibility of the Page Footer is set to depend on the PageCount, uncertainty will be introduced. The result will be incorrect PageCount.             
+* Page Footer section Visibility should NOT depend on [PageCount]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/page-functions%}). The total page count depends on the Visibility of the Page Footer section as this changes the available space for the rest of the report content. Hence, if the Visibility of the Page Footer is set to depend on the PageCount, uncertainty will be introduced. The result will be incorrect PageCount.
 
 
 ## See Also

@@ -1,7 +1,7 @@
 ---
 title: HTML Rendering
-page_title: "Learn important details about the behavior and limitations of the HTML5 and MHTML rendering formats, that need to be taken into account when designing a report with HTML rendering in mind."
-description: HTML Rendering Design Considerations
+page_title: HTML Rendering Design Considerations at a glance
+description: "Learn important details about the behavior and limitations of the HTML5 and MHTML rendering formats, that need to be taken into account when designing a report with HTML rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations
 tags: html, rendering, design, considerations
 published: True
@@ -72,7 +72,6 @@ The following rendering specifics apply to MHTML:
 * Table of contents interactivity (navigational links to report items) is not supported.
 
 ## See Also
-
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
 

@@ -1,5 +1,5 @@
 ---
-title: RTF Rendering Design Considerations
+title: RTF Rendering
 page_title: RTF Rendering Design Considerations at a glance
 description: "Learn important details about the behavior and limitations of the RTF rendering format, that need to be taken into account when designing a report with RTF rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/rtf-rendering-design-considerations

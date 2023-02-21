@@ -1,9 +1,9 @@
 ---
-title: Web Report Designer Overview
-page_title: Web Report Designer Overview
-description: Web Report Designer Overview
+title: Overview
+page_title: The Web Report Designer Explained
+description: "Learn what is the Telerik Web Report Designer, what are its dependencies and how it works compared to the other designing tools."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview
-tags: overview
+tags: overview,web,report,designer,tool,design,create,report
 published: True
 position: 0
 previous_url: /web-report-designer
@@ -20,25 +20,25 @@ Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that
 The Web Report Designer consists of the following areas: 
 
 
- ![Web Report Designer With Dashboard Report](images/Designer/web-report-designer-dashboard.png)
+ ![An image highlighting the Web Report Designer's main areas/functionalities](images/Designer/web-report-designer-dashboard.png)
 	
 	
-* __Design surface__ - shows the design layout of the report. Provides tools for selecting, moving, resizing and editing the report items. 
+* `Design surface` - shows the design layout of the report. Provides tools for selecting, moving, resizing and editing the report items. 
 
-* __Menu area__ - provides buttons for creating a new report and opening, saving or previewing an already existing one. Also, allows switching between loaded reports and shows their save state. 
+* `Menu area` - provides buttons for creating a new report and opening, saving or previewing an already existing one. Also, allows switching between loaded reports and shows their save state. 
 
-* __Properties area__ - displays the properties of the selected report item. In case multiple items are selected, shows only the properties that are marked as "mergeable", in other words properties that can be applied to all items in the current selection. The list of the properties can be organized in categories or in alphabetical order. 
+* `Properties area` - displays the properties of the selected report item. In case multiple items are selected, shows only the properties that are marked as "mergeable", in other words properties that can be applied to all items in the current selection. The list of the properties can be organized in categories or in alphabetical order. 
 
-* __Components__ - lists the available report components that can be added to the report. The items are organized in groups based on their type. The area supports two kinds of layout - grid and list. List is the default view. 
+* `Components` - lists the available report components that can be added to the report. The items are organized in groups based on their type. The area supports two kinds of layout - grid and list. List is the default view. 
 
-* __Explorer__ - represents the report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties. 
+* `Explorer` - represents the report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties. 
 
-* __Assets Manager__ - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
+* `Assets Manager` - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
 
-* __Search__ - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item or change a property value with just a few keystrokes.
+* `Search` - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item or change a property value with just a few keystrokes.
 
 
-* __Onboarding Guide__ - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded, if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
+* `Onboarding Guide` - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded, if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
 
 ## How it works
 
@@ -46,7 +46,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Requirements:
 
-* The Web Report Designer can be integrated in any ASP.NET Web Application, both under __.NET Framework 4.5.1+__ or __.NET Core 2.1+__. 
+* The Web Report Designer can be integrated in any ASP.NET Web Application, both under `.NET Framework 4.5.1+` or `.NET Core 2.1+`. 
 
 * The following NuGet packages are required: 
 

@@ -1,5 +1,5 @@
 ---
-title: PDF Rendering Design Considerations
+title: PDF Rendering
 page_title: PDF Rendering Design Considerations at a glance
 description: "Learn important details about the behavior and limitations of the PDF rendering format, that need to be taken into account when designing a report with PDF rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations

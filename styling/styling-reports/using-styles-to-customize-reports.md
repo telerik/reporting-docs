@@ -1,5 +1,5 @@
 ---
-title: Styling Reports
+title: Styling the Report
 page_title: Using Styles to Customize Reports
 description: "Learn how to customize the visuals of your report using the fine-grained, built-in styling model, similar to the Cascading Style Sheets (CSS) model."
 slug: telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports

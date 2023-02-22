@@ -1,5 +1,5 @@
 ---
-title: Styling using the Context Menu
+title: Context Menu
 page_title: Styling report items using the Context Menu
 description: "Find out how you can style existing report items quickly using the context menu, instead of having to search for the style options in the property window."
 slug: telerikreporting/designing-reports/styling-reports/styling-using-the-context-menu
@@ -15,13 +15,13 @@ The context menu for a report's report item allows you to modify styles easily.
 
 Right-clicking on a report item opens the following context menu:
 
-  ![Image of the context menu of a report item.](images/ReportContextA.png)
+![Image of the context menu of a report item](images/ReportContextA.png)
 
 ## Style...
 
 The __Style...__ option will open the Edit style dialog so that you can make changes to the formatting of the report item.
 
-  ![Image of the style editor window, showing the available styling properties.](images/ReportContextB.png)
+![Image of the style editor window, showing the available styling properties](images/ReportContextB.png)
 
 ## Copy Style
 
@@ -39,6 +39,5 @@ If a report item's style properties were modified, clicking Reset Style will rem
 
 ## See Also
 
- * [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})
-
- * [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
+* [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})
+* [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})

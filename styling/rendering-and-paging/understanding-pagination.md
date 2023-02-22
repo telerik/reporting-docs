@@ -1,6 +1,6 @@
 ---
 title: Understanding Pagination
-page_title: Pagination at a glance
+page_title: Pagination Explained
 description: "Understand how report pagination works. Learn more about the different report page settings, the Keep Together functionality, the Horizontal Paging, and how report sections behave."
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagination
 tags: understanding, pagination
@@ -75,7 +75,7 @@ In the vertical direction, by default sections are not split across different pa
 
 * If you want to force a page break before or after a section, use the section’s `PageBreak` property.
 
-* Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction and is controlled using the [Telerik.Reporting.TableGroup.PageBreak](/reporting/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_PageBreak) property.
+* Table/Crosstab items also support page breaks before and/or after each TableGroup instance. This is supported in both horizontal and vertical direction and is controlled using the [Telerik.Reporting.TableGroup.PageBreak](/api/Telerik.Reporting.TableGroup#Telerik_Reporting_TableGroup_PageBreak) property.
 
 * Set the `KeepTogether` property of a Report item or section or `GroupKeepTogether` of a Report group to `false` to allow it to be split during the rendering.
 

@@ -9,7 +9,7 @@ position: 1
 previous_url: /designing-reports-considerations-html
 ---
 
-# Design Considerations for the HTML Rendering formats
+# Design Considerations for the HTML Rendering
 
 The HTML rendering extension renders a report into __HTML5__ or __MHTML__ format.
 

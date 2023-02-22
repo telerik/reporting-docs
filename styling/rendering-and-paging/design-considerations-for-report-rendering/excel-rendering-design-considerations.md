@@ -65,6 +65,7 @@ The native Excel page header/footer is not displayed on the Excel worksheet in N
 ## ReportBook
 
 Each report in a ReportBook will occupy a separate worksheet in the Excel workbook. Each worksheet of the Excel workbook will have the name of the respective report.
+
 ## Styling
 
 Background images are not supported.

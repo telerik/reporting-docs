@@ -1,15 +1,15 @@
 ---
-title: Image Rendering Design Considerations
-page_title: Image Rendering Design Considerations 
-description: Image Rendering Design Considerations
+title: Image Rendering
+page_title: Image Rendering Design Considerations at a glance
+description: "Learn important details about the behavior and limitations of the Image rendering format, that need to be taken into account when designing a report with Image rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations
-tags: image,rendering,design,considerations
+tags: image, rendering, design, considerations
 published: True
 position: 2
 previous_url: /designing-reports-considerations-image
 ---
 
-# Image Rendering Design Considerations
+# Design Considerations for the Image Rendering format
 
 The Image rendering extension renders a report to a bitmap or metafile. By default, the Image rendering extension produces a TIFF file of the report, which can be viewed in multiple pages. When the client receives the image, it can be displayed in an image viewer and printed.
 
@@ -21,9 +21,9 @@ The Image rendering extension processes the report by assembling all elements of
 
 ## Rendering
 
-Rendering takes into consideration the rules defined in [General Behaviors for PDF, Image, HTML and Print]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}) topic. 
+Rendering takes into consideration the rules defined in [General Behaviors for PDF, Image, HTML and Print]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}) topic.
 
-Report item's solid type borders will use miter joints when two adjacent border segments have different color, or their color is transparent. 
+Report item's solid type borders will use miter joints when two adjacent border segments have different color, or their color is transparent.
 
 ## Limitations
 
@@ -37,7 +37,7 @@ Rendering reports with many items with justified text may be slower.
 
 ## Pagination
 
-Paging takes into consideration the rules defined in [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}) topic. 
+Paging takes into consideration the rules defined in [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}) topic.
 
 ## Interactivity
 

@@ -1,9 +1,9 @@
 ---
-title: Excel Rendering Design Considerations
-page_title: Excel Rendering Design Considerations 
-description: Excel Rendering Design Considerations
+title: Excel Rendering
+page_title: Excel Rendering Design Considerations at a glance
+description: "Learn important details about the behavior and limitations of the different Excel rendering formats, that need to be taken into account when designing a report with Excel rendering in mind."
 slug: telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations
-tags: excel,rendering,design,considerations
+tags: excel, excel-2007, excel-97-2003, rendering, design, considerations
 published: True
 position: 4
 previous_url: /designing-reports-considerations-excel
@@ -17,54 +17,54 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Excel Rendering Design Considerations
+# Design Considerations for the Excel Rendering format
 
-__Telerik Reporting__  produces Excel files in: 
+__Telerik Reporting__ produces Excel files in:
 
 * Microsoft Excel 2007 and above (OpenXML 2.0). This rendering extension requires [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}).
 * Microsoft Excel 97-2003 (BIFF, v.8)
 
-Telerik Reporting does not rely on Microsoft Office being installed in order to export to both formats. __Microsoft Excel 97-2003__  files can be opened by Microsoft Excel 97 for Windows and later. 
+Telerik Reporting does not rely on Microsoft Office being installed in order to export to both formats. __Microsoft Excel 97-2003__ files can be opened by Microsoft Excel 97 for Windows and later.
 
-__Microsoft Excel 2007__ files can be opened by Microsoft Excel 2007 for Windows and later and has the following advantages over __Microsoft Excel 97-2003__ : 
+__Microsoft Excel 2007__ files can be opened by Microsoft Excel 2007 for Windows and later and has the following advantages over __Microsoft Excel 97-2003__ :
 
 * Works in Medium Trust.
 * Supports up to 16 million colors.
 * Hyperlinks support.
-* Graph items are rendered as Metafiles (EMF). This guarantees best quality in any scale factor and when printing. The format must be considered if the Excel file will be post-processed by third party tool. 
+* Graph items are rendered as Metafiles (EMF). This guarantees best quality in any scale factor and when printing. The format must be considered if the Excel file will be post-processed by third party tool.
 
-The Excel Rendering Extensions tries to reproduce as much of the original report as possible regarding layout and styling, but there are certain limitations that are imposed by the physical and logical structure of an Excel Document. 
+The Excel Rendering Extensions tries to reproduce as much of the original report as possible regarding layout and styling, but there are certain limitations that are imposed by the physical and logical structure of an Excel Document.
 
 ## Report Item Layout
 
 * The layout of the generated Excel document is controlled by the device info parameter [SplitWorksheetOnPageBreak]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}). By default, the entire report is rendered into a single Excel worksheet and the paging is not applied. If the _SplitWorksheetOnPageBreak_ is set to **true**, new worksheet gets generated on each page break configured in the report defintition.
 * Overlapping items are not supported and will be moved down/right by the Excel renderer so that they do not overlap.
-* When the TextBox grows vertically to accommodate larger content, Excel may render the text with larger space between the lines. 
+* When the TextBox grows vertically to accommodate larger content, Excel may render the text with larger space between the lines.
 
 	The Reporting engine measures each line of text and sets the cell height to match the accumulated line heights. However, Excel text rendering engine might use a different line spacing and padding within the cell bounds, which might cause the text at the bottom not to fit into the visible part of the cell. This is easily noticeable on the image below, which shows the difference in line spacings between the Image rendering and Excel rendering.
 
 	>caption PrintPreview in Designer vs Excel Rendering
 
-	![PrintPreview vs Excel](images/PreviewVsExcelRendering.png)
+	![Image showing the subtle difference in line spacing between the PrintPreview and Excel output format.](images/PreviewVsExcelRendering.png)
 
 * When you use the CanGrow and CanShrink properties, the Rendering Engine will utilize the AutoFit functionality of Excel. That means that cell content will resize according to Excel behavior which might not produce the expected result. Furthermore, AutoFit is applied by Excel only for horizontal text, so if you have rotated text (at an angle different than zero), the CanGrow and CanShrink properties might not behave as expected. Rotated text is realized via Excel's built-in cell rotation settings.
 * Multi-column reports are not supported.
 
 ## Page Headers and Footers
 
-The page header and footer render differently depending on the [Excel 2003 Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings%}). The page header can be rendered in two ways: as a sequence of frozen rows at the top of the worksheet, or in the native Excel page header. The page footer can also be rendered in two ways: as sequence of excel cells at the bottom of the worksheet or in the native Excel page footer. The native Excel page sections are divided in three – left, middle and right. Report items will enter the respective page footer section according to their original location in design-time. 
+The page header and footer render differently depending on the [Excel 2003 Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings%}). The page header can be rendered in two ways: as a sequence of frozen rows at the top of the worksheet, or in the native Excel page header. The page footer can also be rendered in two ways: as sequence of excel cells at the bottom of the worksheet or in the native Excel page footer. The native Excel page sections are divided in three – left, middle and right. Report items will enter the respective page footer section according to their original location in design-time.
 
->note Because of Excel limitations, TextBoxes are the only type of report item that can be rendered in the native Excel header/footer section. 
+>note Because of Excel limitations, TextBoxes are the only type of report item that can be rendered in the native Excel header/footer section.
 
-With default configuration (__UseNativePageHeader__ is False and __UseNativePageFooter__ is True), the page header is rendered as frozen rows at the top of the worksheet and the page footer is rendered in the native Excel page footer. 
+With default configuration (__UseNativePageHeader__ is False and __UseNativePageFooter__ is True), the page header is rendered as frozen rows at the top of the worksheet and the page footer is rendered in the native Excel page footer.
 
-The native Excel page header/footer is not displayed on the Excel worksheet in Normal view - it is displayed only in Page Layout view and on the printed pages. For more information see [Headers and footers in a worksheet](https://support.office.com/en-us/article/Headers-and-footers-in-a-worksheet-cae2a88c-64a7-42ab-96a4-28d2fc16ad31). 
+The native Excel page header/footer is not displayed on the Excel worksheet in Normal view - it is displayed only in Page Layout view and on the printed pages. For more information see [Headers and footers in a worksheet](https://support.office.com/en-us/article/Headers-and-footers-in-a-worksheet-cae2a88c-64a7-42ab-96a4-28d2fc16ad31).
 
->caution The __PageNumber__ and  __PageCount__ global objects' behavior depends on the __UseNativePageHeader__ and __UseNativePageFooter__ configuration. Since the report rendered to Excel is not in a page-oriented format and is contained in a single worksheet (regarded as a single page) __PageNumber__ and __PageCount__  will always return a value of 1. However, if you intend to print the Excel document and would like to let Excel handle the page numbering instead, you can do so by setting both  __UseNativePageHeader__ and __UseNativePageFooter__ to __True__. This configuration will force the Reporting engine to use the native Excel page number and page count tokens, instead of the default value of 1, so the page number and count are correct when the document is printed in Excel. When the native Excel page tokens are used, any arithmetic operations on the PageNumber/PageCount are not supported. Since the PageNumber() and PageCount() functions use arithmetic operations internally, they are also not supported in the native page header/page footer sections. 
+>caution The __PageNumber__ and  __PageCount__ global objects' behavior depends on the __UseNativePageHeader__ and __UseNativePageFooter__ configuration. Since the report rendered to Excel is not in a page-oriented format and is contained in a single worksheet (regarded as a single page) __PageNumber__ and __PageCount__ will always return a value of 1. However, if you intend to print the Excel document and would like to let Excel handle the page numbering instead, you can do so by setting both  __UseNativePageHeader__ and __UseNativePageFooter__ to __True__. This configuration will force the Reporting engine to use the native Excel page number and page count tokens, instead of the default value of 1, so the page number and count are correct when the document is printed in Excel. When the native Excel page tokens are used, any arithmetic operations on the PageNumber/PageCount are not supported. Since the PageNumber() and PageCount() functions use arithmetic operations internally, they are also not supported in the native page header/page footer sections.
 
 ## ReportBook
 
-Each report in a ReportBook will occupy a separate worksheet in the Excel workbook. Each worksheet of the Excel workbook will have the name of the respective report. 
+Each report in a ReportBook will occupy a separate worksheet in the Excel workbook. Each worksheet of the Excel workbook will have the name of the respective report.
 
 ## Styling
 
@@ -153,7 +153,7 @@ A subset of the .NET string formats (set through the TextBox.Format property) is
 * P or p (Percent)
 * and others ...
 
-To preserve the result from previewing the rendered document, formats are saved as custom formatting strings in the Excel file. This behavior can be modified by setting __UseExtendedFormatting = False__  in the Excel device information settings. 
+To preserve the result from previewing the rendered document, formats are saved as custom formatting strings in the Excel file. This behavior can be modified by setting __UseExtendedFormatting = False__ in the Excel device information settings.
 
 ##Standard DateTime Format Strings
 
@@ -174,9 +174,9 @@ To preserve the result from previewing the rendered document, formats are saved 
 
 ## Currency Format Strings
 
-Currency format strings are always hard-coded with "Custom Format". This way the currency formatting from the report definition is preserved and does not depend on the client machine locale. This behavior can be modified by setting __UseExtendedFormatting = False__ in the Excel device information settings. 
+Currency format strings are always hard-coded with "Custom Format". This way the currency formatting from the report definition is preserved and does not depend on the client machine locale. This behavior can be modified by setting __UseExtendedFormatting = False__ in the Excel device information settings.
 
-If a valid format string is detected by the rendering extension, the raw value will be stored in the cell as a Number and an Excel Number Format will be applied. Otherwise, the value will be stored in the cell, again as a Number, but without formatting. Even unformatted, it would be possible to use the resulting cell in Excel functions. 
+If a valid format string is detected by the rendering extension, the raw value will be stored in the cell as a Number and an Excel Number Format will be applied. Otherwise, the value will be stored in the cell, again as a Number, but without formatting. Even unformatted, it would be possible to use the resulting cell in Excel functions.
 
 ## Excel Limitations
 
@@ -214,9 +214,9 @@ Excel places limitations on exported reports due to the format capabilities. The
 
 ## Interactivity
 
-__Microsoft Excel 2007 and above__ format supports Navigate to URL actions on report items, which are rendered as Excel hyperlinks in the cell in which the report item's text is rendered. When you click the hyperlink, the default Web browser opens and navigates to the specified URL. 
+__Microsoft Excel 2007 and above__ format supports Navigate to URL actions on report items, which are rendered as Excel hyperlinks in the cell in which the report item's text is rendered. When you click the hyperlink, the default Web browser opens and navigates to the specified URL.
 
-__Microsoft Excel 97-2003__ format does not support any interactive features. 
+__Microsoft Excel 97-2003__ format does not support any interactive features.
 
 ## See Also
 

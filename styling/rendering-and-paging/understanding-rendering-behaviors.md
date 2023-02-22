@@ -3,7 +3,7 @@ title: Rendering Behaviors
 page_title: Rendering Behaviors Explained
 description: "Learn more about the Rendering of Telerik Reports. Understand how the reports get paginated and how you may control this process."
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors
-tags: understanding,rendering,behaviors
+tags: understanding, rendering, behaviors
 published: True
 position: 1
 previous_url: /designing-reports-page-layout-rendering-understanding-rendering-behaviors

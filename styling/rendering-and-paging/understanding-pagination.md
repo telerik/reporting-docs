@@ -1,5 +1,5 @@
 ---
-title: Understanding Pagination
+title: Pagination
 page_title: Pagination Explained
 description: "Understand how report pagination works. Learn more about the different report page settings, the Keep Together functionality, the Horizontal Paging, and how report sections behave."
 slug: telerikreporting/designing-reports/rendering-and-paging/understanding-pagination
@@ -9,7 +9,7 @@ position: 2
 previous_url: /designing-reports-page-layout-rendering-understanding-pagination
 ---
 
-# Pagination Overview
+# Understanding Pagination
 
 Pagination refers to the number of pages within a report and how report items are arranged on these pages. Pagination varies depending on the used renderer, page break and keep-together options you configure the report to use.
 

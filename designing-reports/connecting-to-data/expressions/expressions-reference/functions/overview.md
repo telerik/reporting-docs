@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Functions Explained
-description: "Learn more about the Functions in Telerik Reporting and how to integrate them in report expressions."
+description: "Learn more about the available Functions in Telerik Reporting and how to integrate them in report expressions."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview
 tags: overview
 published: True

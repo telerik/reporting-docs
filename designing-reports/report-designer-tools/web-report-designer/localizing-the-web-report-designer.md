@@ -1,7 +1,7 @@
 ---
-title: Localizing the Web Report Designer
+title: Localization
 page_title: Localizing the Web Report Designer 
-description: Localizing the Web Report Designer
+description: "Learn how the Telerik Web Report Designer may be localized for multiple languages."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/localizing-the-web-report-designer
 tags: localizing,the,web,report,designer
 published: True
@@ -9,11 +9,11 @@ position: 6
 previous_url: /web-report-designer-localization
 ---
 
-# Localizing the Web Report Designer
+# Web Report Designer Localization
 
 This article elaborates on how to localize the strings used and displayed by the Web Report Designer.
 
-1. __Include script containing strings__. Create a JavaScript file in your application, in a location where it can be referenced by the HTML-page/View containing the Web Report Designer initialization script. This can for example be inside the 'Scripts' folder of your website. You may use:
+1. __Include script containing strings__. Create a JavaScript file in your application, in a location where it can be referenced by the HTML-page/View containing the Web Report Designer initialization script. This can for example be inside the `Scripts` folder of your website. You may use:
 
 	* the resource file that gets deployed with the installation of the product in the subfolder `Html5\ReportDesigner\js\WebReportDesignerStringsBase-{{site.buildversion}}.js`, for example: 
 	

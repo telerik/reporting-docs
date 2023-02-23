@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Design Considerations for the Excel Rendering format
+# Design Considerations for the Excel Rendering
 
 __Telerik Reporting__ produces Excel files in:
 

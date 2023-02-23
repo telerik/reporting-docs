@@ -9,7 +9,7 @@ position: 7
 previous_url: /designing-reports-considerations-xps
 ---
 
-# Design Considerations for the XPS Rendering format
+# Design Considerations for the XPS Rendering
 
 The XPS Rendering Extension of Telerik Reporting produces XPS files that comply with version 1.0 of the XML Paper Specification.
 
@@ -22,7 +22,6 @@ For information common to the Image rendering extension and the XPS rendering e
 ## Styling
 
 * If a TextBox item with justified text is rendered on two or more pages, the last line of each page (except the last page) will be left-aligned.
-
 * Cross-section items are not supported.
 
 ## Interactivity
@@ -34,7 +33,5 @@ This rendering extension does not support any interactive features.
 ## See Also
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
-
  * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
-
  * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})

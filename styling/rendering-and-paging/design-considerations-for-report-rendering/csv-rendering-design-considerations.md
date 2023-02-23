@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Design Considerations for the CSV Rendering format
+# Design Considerations for the CSV Rendering
 
 The Comma-Separated Value (CSV) rendering output reports as a flattened representation of a report data in a plain-text format.
 

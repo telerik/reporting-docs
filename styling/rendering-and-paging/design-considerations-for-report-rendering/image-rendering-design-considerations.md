@@ -9,7 +9,7 @@ position: 2
 previous_url: /designing-reports-considerations-image
 ---
 
-# Design Considerations for the Image Rendering format
+# Design Considerations for the Image Rendering
 
 The Image rendering extension renders a report to a bitmap or metafile. By default, the Image rendering extension produces a TIFF file of the report, which can be viewed in multiple pages. When the client receives the image, it can be displayed in an image viewer and printed.
 
@@ -45,8 +45,6 @@ This rendering extension does not support any interactive features.
 
 ## See Also
 
- * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
- 
- * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
- 
+ * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) 
+ * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}) 
  * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})

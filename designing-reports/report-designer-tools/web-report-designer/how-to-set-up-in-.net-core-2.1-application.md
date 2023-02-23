@@ -1,7 +1,7 @@
 ---
-title: How to set up in .NET Core 2.1+ application
-page_title: How to set up in .NET Core 2.1+ application 
-description: How to set up in .NET Core 2.1+ application
+title: How to set up in .NET Core 2.1 application
+page_title: Setting up the Web Report Designer in .NET Core 2.1 application 
+description: "Learn how to set up the Telerik Web Report Designer in an ASP.NET Core 2.1 application."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application
 tags: how,to,set,up,in,.net,core,2.1+,application
 published: True
@@ -9,7 +9,7 @@ position: 3
 previous_url: /web-report-designer-setup-in-net-core
 ---
 
-# How to set up in .NET Core 2.1+ application
+# Overview
 
 This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in а .NET Core 2.1 application. 
 
@@ -21,25 +21,25 @@ The following list describes the prerequisites for this guide:
 
 1. Add the required dependencies: 
 
-   + Telerik.WebReportDesigner.Services 
+   + `Telerik.WebReportDesigner.Services` 
 
-   + Telerik.Reporting.Services.AspNetCore 
+   + `Telerik.Reporting.Services.AspNetCore`
 
-   + Telerik.Reporting.JsonSerialization 
+   + `Telerik.Reporting.JsonSerialization` 
 
-   + Telerik.Reporting.WebServiceDataSource 
+   + `Telerik.Reporting.WebServiceDataSource` 
 
-   + Telerik.Reporting 
+   + `Telerik.Reporting` 
 
-When you use NuGet packages, you may add only the __Telerik.WebReportDesigner.Services__ package as it depends on the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). 
+When you use NuGet packages, you may add only the `Telerik.WebReportDesigner.Services` package as it depends on the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). 
 
 If you don't use NuGet packages, along with the above assemblies, you need to add also all their dependencies manually to the project. 
 
-> If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/) and the Telerik.Reporting.OpenXmlRendering NuGet packages. For more information about the required package versions, see [Deploying Open XML]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}#deploying-open-xml). 
+> If you need to enable users to export reports in Office OpenXML document formats (XLSX, DOCX and PPTX), you must install the [DocumentFormat.OpenXML](https://www.nuget.org/packages/DocumentFormat.OpenXml/) and the `Telerik.Reporting.OpenXmlRendering` NuGet packages. For more information about the required package versions, see [Deploying Open XML]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}#deploying-open-xml). 
 
 ## Add Required Settings in the Startup.cs file
 
-> Some of the Visual Studio template projects may have the required settings already added by default. In other .NET Core 2.1 Web projects you may need to add manually some or all of the settings.           
+> Some of the Visual Studio template projects may have the required settings already added by default. In other .NET Core 2.1 Web projects, you may need to add manually some or all of the settings.           
 
 1. Inject the [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) and [IHostingEnvironment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment?view=aspnetcore-2.1) in the constructor of the Startup class. We will need them later to get the configuration settings and the relative paths: 
     
@@ -131,6 +131,7 @@ public void ConfigureServices(IServiceCollection services)
 				Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting")),
 			ResourceStorage = new ResourceStorage(
 				Path.Combine(reportsPath, "Resources")),
+			SharedDataSourceStorage = new FileSharedDataSourceStorage(reportsPath, "Shared Data Sources"))
 		});
 	}
 ````
@@ -146,7 +147,7 @@ The REST service works as a backend and is responsible for storage operations li
 
 1. Implement a Report Designer controller. Create the `Controllers` folder if it doesn't exist, right-click on it and add a new item: Add > New item... > __API Controller - Empty__ item. Name it ReportDesignerController. This will be our Telerik Web Report Designer REST service in the project. 
 
-1. Inherit the [ReportDesignerControllerBase](/reporting/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase) type and inject the required configuration settings in the constructor. Along with the ReportServiceConfiguration there is another configuration instance named ReportDesignerServiceConfiguration, which will initialize the definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is how a basic implementation of the controller should look like: 
+1. Inherit the [ReportDesignerControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportDesignerControllerBase) type and inject the required configuration settings in the constructor. Along with the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) there is another configuration instance named [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration), which will initialize the definition storage. This is the class responsible for opening, saving, etc. the report definitions. This is how a basic implementation of the controller should look like: 
     
 	````C#
 namespace CSharp.AspNetCoreDemo.Controllers
@@ -218,4 +219,4 @@ namespace CSharp.AspNetCoreDemo.Controllers
 
 ## Examples
 
-Find the complete example setup of the Web Report Designer in the __AspNetCoreDemo__ located in Telerik Reporting installation folder. For example, *%PROGRAMFILES(x86)%\Progress\Telerik Reporting*. The Web Report Designer’s page is in `wwwroot` folder. To setup the page to be a startup page, change the launchUrl to webReportDesigner.html in *launchSettings.json*. 
+The complete example setup of the Web Report Designer can be found in the `AspNetCoreDemo` located in Telerik Reporting installation folder. For example, `%PROGRAMFILES(x86)%\Progress\Telerik Reporting {{suiteversion}}\CSharp\.NET Core 2.1`. The Web Report Designer’s page is in `wwwroot` folder. To setup the page to be a startup page, change the _launchUrl_ to _webReportDesigner.html_ in `launchSettings.json`. 

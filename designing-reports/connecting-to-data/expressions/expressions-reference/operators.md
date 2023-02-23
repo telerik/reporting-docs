@@ -1,7 +1,7 @@
 ---
 title: Operators
 page_title: Operators Explained
-description: "Find out what Operators exposes Telerik Reporting and how you may use them in the expressions in reports."
+description: "Find out what Operators are exposed in Telerik Reporting and how you may use them in the expressions in reports."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/operators
 tags: operators,report,expression,use
 published: True

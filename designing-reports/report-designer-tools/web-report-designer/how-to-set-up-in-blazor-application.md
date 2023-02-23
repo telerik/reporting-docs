@@ -1,9 +1,9 @@
 ---
-title: How to set up in Blazor application
-page_title: How to set up in Blazor application 
-description: How to set up in Blazor application
+title: Setup in Blazor Applications
+page_title: How to integrate the Web Report Designer in Blazor Projects 
+description: "Learn how to set up the Telerik Web Report Designer in a Blazor application."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application
-tags: how,to,set,up,in,blazor,application
+tags: how,to,set,up,in,blazor,wasm,webassembly,server,application
 published: True
 position: 2
 previous_url: /how-to-blazor-web-report-designer
@@ -17,15 +17,17 @@ previous_url: /how-to-blazor-web-report-designer
 
 * [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
 
-* Existing ASP.NET Core 3.1, .NET 5, or .NET 6 Blazor Server or WebAssembly application 
+* Existing ASP.NET Core 3.1, .NET 5, .NET 6 or .NET 7 Blazor Server or WebAssembly application 
 
 * The designer consumes reports generated and served from a running REST Service. Such can be referenced from another application or it can be hosted locally in the Blazor application as described below. 
 
 ## Adding the Report Designer REST service and configuration
 
+>note If Blazor WebAssembly project is used, this section's steps should be implemented in a separate ASP.NET Core Web API project because the service runs on the server and Blazor WebAssembly is strictly client-side - [`Hosting Reports Service in ASP.NET Core in .NET 6 with Top-Level Statements Explained`]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}) 
+
 1. Use NuGet package manager to add the `Telerik.WebReportDesigner.Services` package. This will also resolve other dependencies automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). 
 
-1. Add required settings in the Startup.cs file.The __ConfigureServices__ method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer REST service. Make sure the application is configured for WebAPI controllers and call the *AddNewtonsoftJson* to enable the required NewtonsoftJson serialization: 
+1. Add required settings in the Startup.cs file.The `ConfigureServices` method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer REST service. Make sure the application is configured for WebAPI controllers and call the `AddNewtonsoftJson` to enable the required NewtonsoftJson serialization: 
 
 	````C#
 public void ConfigureServices(IServiceCollection services)
@@ -53,13 +55,14 @@ public void ConfigureServices(IServiceCollection services)
 	{
 		DefinitionStorage = new FileDefinitionStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports")),
 		SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting")),
-		ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Resources"))
+		ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Resources")),
+		SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Shared Data Sources")),
 	});
 	...
 ````
 
 
-1. Make sure the endpoints configuration inside the __Configure__ method of the `Startup.cs` are configured for API controllers by adding the following line in the lambda expression argument: 
+1. Make sure the endpoints configuration inside the `Configure` method of the `Startup.cs` are configured for API controllers by adding the following line in the lambda expression argument: 
 
 	````C#
 app.UseEndpoints(endpoints =>

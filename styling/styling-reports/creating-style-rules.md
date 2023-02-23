@@ -51,7 +51,7 @@ See [Understanding Style Selectors]({%slug telerikreporting/designing-reports/st
 1. Modify any properties you wish to define formatting to be applied to the __TextBox__ report item.
 1. Click __OK__ to save the rules and close the editor window.
 
-![Image of the StyleRule Collection Editor window, showing the expanded Style properties of the currently selected TypeSelector rule](images/ReportStyleRuleD.png)
+	![Image of the StyleRule Collection Editor window, showing the expanded Style properties of the currently selected TypeSelector rule](images/ReportStyleRuleD.png)
 
 ### Creating a TypeSelector StyleRule in Code
 

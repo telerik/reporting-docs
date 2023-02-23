@@ -16,7 +16,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Web Report Designer Initialization Overview
+# Web Report Designer Initialization
 
 The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebReportDesigner(options)`. Below is a list of all options available during initialization.
 

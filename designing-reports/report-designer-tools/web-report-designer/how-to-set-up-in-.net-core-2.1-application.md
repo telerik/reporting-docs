@@ -36,7 +36,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 > Some of the Visual Studio template projects may have the required settings already added by default. In other .NET Core 2.1 Web projects, you may need to add manually some or all of the settings.
 
-1. Inject the [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) and [IHostingEnvironment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment?view=aspnetcore-2.1) in the constructor of the Startup class. We will need them later to get the configuration settings and the relative paths: 
+1. Inject the [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) and [IHostingEnvironment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment?view=aspnetcore-2.1) in the constructor of the Startup class. We will need them later to get the configuration settings and the relative paths:
 
 	````CSharp
 public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
@@ -87,7 +87,7 @@ To activate JSON file configuration with a different name, for example, `reporti
 1. Add a new `ResolveSpecificReportingConfiguration` class as a separate file or in the Startup.cs file (optional)
 
 	````CSharp
-	static IConfiguration ResolveSpecificReportingConfiguration(IHostingEnvironment environment)
+static IConfiguration ResolveSpecificReportingConfiguration(IHostingEnvironment environment)
 	{
 		// If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
 		var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
@@ -95,7 +95,7 @@ To activate JSON file configuration with a different name, for example, `reporti
 		 .AddJsonFile(reportingConfigFileName, true)
 		 .Build();
 	}
-	````
+````
 
 
 1. Add the required services in the `ConfigureServices` method. Here is how it may look finally:

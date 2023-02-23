@@ -30,7 +30,6 @@ The following article will guide you on how to use the new Native Blazor Report 
 
 	````C#
 app.UseStaticFiles();
-	app.AddTelerikBlazor();
 ````
 
 

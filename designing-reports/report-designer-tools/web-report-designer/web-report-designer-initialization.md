@@ -1,7 +1,7 @@
 ---
-title: Web Report Designer Initialization
-page_title: Web Report Designer Initialization
-description: Web Report Designer Initialization Options
+title: Initialization
+page_title: Web Report Designer Initialization Options
+description: "Learn more about the initialization options of the Telerik Web Report Designer and how to configure them."
 slug: telerikreporting/report-designer-tools/web-report-designer/web-report-designer-initialization
 tags: report,webreportdesigner,initialization
 published: True
@@ -16,9 +16,9 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Web Report Designer Initialization
+# Web Report Designer Initialization Overview
 
-The Telerik Web Report Designer is a jQuery plugin - __jQuery.fn.telerik_WebReportDesigner(options)__. Below is a list of all options available during initialization. 
+The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebReportDesigner(options)`. Below is a list of all options available during initialization.
 
 ## Options
 

@@ -1,7 +1,7 @@
 ---
-title: Setup in Blazor Applications
-page_title: How to integrate the Web Report Designer in Blazor Projects 
-description: "Learn how to set up the Telerik Web Report Designer in a Blazor application."
+title: Setting up in Blazor Applications
+page_title: How to integrate the Web Report Designer in Blazor Projects
+description: "Learn how to set up the Telerik Web Report Designer and the required REST Services in a Blazor application."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application
 tags: how,to,set,up,in,blazor,wasm,webassembly,server,application
 published: True
@@ -11,25 +11,22 @@ previous_url: /how-to-blazor-web-report-designer
 
 # How to set up in Blazor application
 
-> The following article guides you how to use the Blazor Web Report Designer in a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web application. 
+> The following article guides you how to use the Blazor Web Report Designer in a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web application.
 
 ## Prerequisites
 
-* [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/) 
-
-* Existing ASP.NET Core 3.1, .NET 5, .NET 6 or .NET 7 Blazor Server or WebAssembly application 
-
-* The designer consumes reports generated and served from a running REST Service. Such can be referenced from another application or it can be hosted locally in the Blazor application as described below. 
+* [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/)
+* Existing ASP.NET Core 3.1, .NET 5, .NET 6 or .NET 7 Blazor Server or WebAssembly application
+* The designer consumes reports generated and served from a running REST Service. Such can be referenced from another application or it can be hosted locally in the Blazor application as described below.
 
 ## Adding the Report Designer REST service and configuration
 
->note If Blazor WebAssembly project is used, this section's steps should be implemented in a separate ASP.NET Core Web API project because the service runs on the server and Blazor WebAssembly is strictly client-side - [`Hosting Reports Service in ASP.NET Core in .NET 6 with Top-Level Statements Explained`]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}) 
+>note If Blazor WebAssembly project is used, this section's steps should be implemented in a separate ASP.NET Core Web API project because the service runs on the server and Blazor WebAssembly is strictly client-side - [`Hosting Reports Service in ASP.NET Core in .NET 6 with Top-Level Statements Explained`]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
 
-1. Use NuGet package manager to add the `Telerik.WebReportDesigner.Services` package. This will also resolve other dependencies automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). 
+1. Use NuGet package manager to add the `Telerik.WebReportDesigner.Services` package. This will also resolve other dependencies automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. Add required settings in the Startup.cs file.The `ConfigureServices` method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer REST service. Make sure the application is configured for WebAPI controllers and call the `AddNewtonsoftJson` to enable the required NewtonsoftJson serialization:
 
-1. Add required settings in the Startup.cs file.The `ConfigureServices` method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer REST service. Make sure the application is configured for WebAPI controllers and call the `AddNewtonsoftJson` to enable the required NewtonsoftJson serialization: 
-
-	````C#
+	````CSharp
 public void ConfigureServices(IServiceCollection services)
 	{
 		services.AddControllers();
@@ -40,9 +37,9 @@ public void ConfigureServices(IServiceCollection services)
 ````
 
 
-1. Add the required services in the __ConfigureServices__ method. The sample configuration below uses the `Reports` folder in the `WebRootPath` to open and save report definitions. It is required to create the `Reports` folder manually under `wwwroot` and optionally add some report definitions inside. 
+1. Add the required services in the __ConfigureServices__ method. The sample configuration below uses the `Reports` folder in the `WebRootPath` to open and save report definitions. It is required to create the `Reports` folder manually under `wwwroot` and optionally add some report definitions inside.
 
-	````C#
+	````CSharp
 ...
 	services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
 	{
@@ -62,9 +59,9 @@ public void ConfigureServices(IServiceCollection services)
 ````
 
 
-1. Make sure the endpoints configuration inside the `Configure` method of the `Startup.cs` are configured for API controllers by adding the following line in the lambda expression argument: 
+1. Make sure the endpoints configuration inside the `Configure` method of the `Startup.cs` are configured for API controllers by adding the following line in the lambda expression argument:
 
-	````C#
+	````CSharp
 app.UseEndpoints(endpoints =>
 	{
 		endpoints.MapControllers();
@@ -75,14 +72,14 @@ app.UseEndpoints(endpoints =>
 
 1. If not already present, add this line to the __Configure__ method of the `Startup.cs` to assure that the application can serve static files: 
 
-	````C#
+	````CSharp
 app.UseStaticFiles();
 ````
 
 
-1. Implement a Report Designer controller. Add a `Controllers` folder to the application and right-click on it to add a new __Web API Controller Class__ item. Name it *ReportDesignerController*. This will be the Telerik Web Report Designer REST service in the project. 
+1. Implement a Report Designer controller. Add a `Controllers` folder to the application and right-click on it to add a new __Web API Controller Class__ item. Name it *ReportDesignerController*. This will be the Telerik Web Report Designer REST service in the project.
 
-	````C#
+	````CSharp
 using Microsoft.AspNetCore.Mvc;
 	using Telerik.Reporting.Services;
 	using Telerik.WebReportDesigner.Services;
@@ -101,9 +98,8 @@ using Microsoft.AspNetCore.Mvc;
 
 ## Adding the Blazor Web Report Designer component
 
-1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). 
-
-1. Add JavaScript dependencies to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly): 
+1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. Add JavaScript dependencies to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly):
 
 	````HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -113,14 +109,14 @@ using Microsoft.AspNetCore.Mvc;
 ````
 
 
-1. Add [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly). The Razor syntax for a server application differs and you need to escape the `@` symbol as `@@` : 
+1. Add [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly). The Razor syntax for a server application differs and you need to escape the `@` symbol as `@@`:
 
 	````HTML
 <link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
 ````
 
 
-1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the __body__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly): 
+1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the __body__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly):
 
 	````HTML
 <script src="_content/telerik.webreportdesigner.blazor/telerikWebReportDesignerInterop.js" defer></script>
@@ -129,7 +125,7 @@ using Microsoft.AspNetCore.Mvc;
 ````
 
 
-1. Use the following snippet to place the designer component in a razor page like `Pages/Index.razor`. 
+1. Use the following snippet to place the designer component in a razor page like `Pages/Index.razor`.
 
 	````HTML
 @page "/"

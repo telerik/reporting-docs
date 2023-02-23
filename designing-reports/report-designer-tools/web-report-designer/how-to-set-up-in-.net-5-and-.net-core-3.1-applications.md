@@ -1,5 +1,5 @@
 ---
-title: Setting it up in .NET Core 3.1+
+title: Setting up in .NET Core 3.1+
 page_title: How to set up the Web Report Designer in .NET Core 3.1+ applications 
 description: "Learn how to set up the Telerik Web Report Designer in .NET Core 3.1+ applications via the Visual Studio Item Templates or Manually."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications

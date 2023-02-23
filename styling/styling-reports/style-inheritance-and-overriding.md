@@ -57,4 +57,4 @@ If you have overridden a style using a report item's Style properties, it is pos
 1. Right-click the report item to open its context menu.
 1. Click __Reset Style__.
 
-![Image showing how you can reset the style of a particular report item by right-clicking it and choosing the Reset Style option from the context menu](images/ReportStyleRuleG.png)
+	![Image showing how you can reset the style of a particular report item by right-clicking it and choosing the Reset Style option from the context menu](images/ReportStyleRuleG.png)

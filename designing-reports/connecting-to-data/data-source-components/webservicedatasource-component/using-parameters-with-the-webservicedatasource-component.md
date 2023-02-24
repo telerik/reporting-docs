@@ -1,91 +1,85 @@
 ---
-title: Using Parameters with the WebServiceDataSource component
-page_title: Using Parameters with the WebServiceDataSource component 
-description: Using Parameters with the WebServiceDataSource component
+title: Using Parameters
+page_title: Using Parameters with the WebServiceDataSource component explained with examples
+description: "Learn how to configure and use Inline, Query, Header and Cookie Parameters with the WebServiceDataSource component in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/using-parameters-with-the-webservicedatasource-component
-tags: using,parameters,with,the,webservicedatasource,component
+tags: using,parameters,with,the,webservicedatasource,component,inline,query,header,cookie,fiddler,configure
 published: True
 position: 3
 previous_url: /web-service-data-source-using-parameters
 ---
 
-# Using Parameters with the WebServiceDataSource component
+# Using Parameters with the WebServiceDataSource Component
 
-The __WebServiceDataSource__ component can request data in JSON format from a running web service. It requires the base URL of the servcie specified in the __Service URL__ property. The WebServiceDataSource can take parameters. The supported data source parameter types are: 
+The `WebServiceDataSource` component can request data in JSON format from a running web service. It requires the base URL of the servcie specified in the `Service URL` property. The WebServiceDataSource can take parameters. The supported data source parameter types are:
 
-* __Inline Parameters__ 
+* __Inline Parameters__
 
-   The values of this parameter type replace the corresponding part of the *Service URL*, and can be included in the body of a POST request. 
+	The values of this parameter type replace the corresponding part of the `Service URL`, and can be included in the body of a POST request.
 
-   + *Using Inline Parameters in Service Url* 
-   
-     In the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}), the Service URL can be provided as __constantUrl__, for example:                 
+	+ *__Using Inline Parameters in Service Url__*
 
-     ![Web Service Data Source Urlx 750](images/WebServiceDataSourceUrlx750.png) 
-	 
-	 
-	 In the next step of the Wizard it is necessary to set the run-time and the design-time values for the parameter:                 
+		In the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}), the Service URL can be provided as __constantUrl__, for example:
 
+		![The ServiceUrl of the WebServiceDataSource configured with an inline parameter](images/WebServiceDataSourceUrlx750.png)
 
-     ![Web Service Data Source Inline Parameterx 750](images/WebServiceDataSourceInlineParameterx750.png) 
-	 
-	 The final request made by the WebServiceDataSource component to the web service with the design-time parameter value as captured by [Fiddler](https://www.telerik.com/download/fiddler) will look like: 
+		In the next step of the Wizard it is necessary to set the run-time and the design-time values for the parameter:
 
-     ![Web Service Data Source Inline Parameter Request Urlx 750](images/WebServiceDataSourceInlineParameterRequestUrlx750.png) 
-	 
-	 The entire Service URL can also be set to a WebServiceDataSource parameter, for example to __@serviceUrl__. This allows for larger flexibility in using different end-points of a Web Service, or even different Web Services for the same data item. 
+		![Set the Inline parameter value in the WebServiceDataSource Wizard](images/WebServiceDataSourceInlineParameterx750.png)
 
-   + *Using Inline Parameters in the Body of the POST request* 
-   
-     The single-value parameter should be surrounded by quotation marks. The multi-value parameter is provided as it is. For example, in the next set-up, *@name* is a single-value parameter and *@surname* is a multi-value parameter: 
+		The final request made by the WebServiceDataSource component to the web service with the design-time parameter value as captured by [Fiddler](https://www.telerik.com/download/fiddler) will look like:
 
-     ![Web Service Data Source Url Bodyx 750](images/WebServiceDataSourceUrlBodyx750.png) 
-	 
-	 It is necessary to provide an additional Header "Content-Type" with value "application/json". Generally, the Header Names are case-insensitive. The 'Content-Type' header that is needed for the POST requests is case-sensitive. 
-	 
-	 The multi-value parameter run-time and design-time values should be surrounded in square brackets to indicate an array: 
+		![The request performed by the WebServiceDataSource component with the design-time Inline parameter value as part of the ServiceUrl as seen in Fiddler](images/WebServiceDataSourceInlineParameterRequestUrlx750.png)
 
-     ![Web Service Data Source Inline Parameter Bodyx 750](images/WebServiceDataSourceInlineParameterBodyx750.png) 
-	 
-	 The final request performed by the WebServiceDataSource component with the design-time values as seen in Fiddler:                 
+		The entire Service URL can also be set to a WebServiceDataSource parameter, for example to `@serviceUrl`. This allows for larger flexibility in using different end-points of a Web Service, or even different Web Services for the same data item.
 
-     ![Web Service Data Source Inline Parameter Request Url Bodyx 750](images/WebServiceDataSourceInlineParameterRequestUrlBodyx750.png)
+	+ *__Using Inline Parameters in the Body of the POST request__*
 
-* __Query Parameters__ 
+		The single-value parameter should be surrounded by quotation marks. The multi-value parameter is provided as it is. For example, in the next set-up, `@name` is a single-value parameter and `@surname` is a multi-value parameter:
 
-  The query type parameters will be automatically concatenated to the Service URL. The final URL will be in the format 
-  
-  ````
-  serviceUrl?queryParameterName1=value1&queryParameterName2=value2&...
-  ````  
-  
-  For example, in a Web Api project to call the Action *GetWithQueryParameters(int id, string category)* the default service URL will be *http://localhost:50160/api/data/GetWithQueryParameters*. The images display how to set the query parameters in the Web Service Data Source Wizard of the Report Designer: 
+		![The ServiceUrl of the WebServiceDataSource configured as a constant and inline parameters provided in the body of the request](images/WebServiceDataSourceUrlBodyx750.png)
 
-  ![Web Service Data Source Query Parameterx 750](images/WebServiceDataSourceQueryParameterx750.png) 
-  
-  and how will the generated final URL for the design-time parameter values look in Fiddler:             
+		It is necessary to provide an additional Header "Content-Type" with value "application/json". Generally, the Header Names are case-insensitive. The 'Content-Type' header that is needed for the POST requests is case-sensitive.
 
-  ![Web Service Data Source Query Parameter Request Urlx 750](images/WebServiceDataSourceQueryParameterRequestUrlx750.png)
+		The multi-value parameter run-time and design-time values should be surrounded in square brackets to indicate an array:
 
-* __Header Parameters__ 
+		![Set the Inline parameter values and the required header parameter Content-Type in the WebServiceDataSource Wizard](images/WebServiceDataSourceInlineParameterBodyx750.png)
 
-  The parameter will be included as a *Header*  in the request with Header Name the name of the parameter, and Header Value the value of the parameter. A setup in the Web Service Data Source Wizard like: 
+		The final request performed by the WebServiceDataSource component with the design-time values as seen in Fiddler:
 
-  ![Web Service Data Source Header Parameterx 750](images/WebServiceDataSourceHeaderParameterx750.png) 
-  
-  will result in a request with the Header named *headerParameter* and value *MyHeader* for its design-time values:             
+		![The request performed by the WebServiceDataSource component with the design-time Inline parameter values from the body and the Header parameter Content-Type as seen in Fiddler](images/WebServiceDataSourceInlineParameterRequestUrlBodyx750.png)
 
-  ![Web Service Data Source Header Parameter Request Urlx 750](images/WebServiceDataSourceHeaderParameterRequestUrlx750.png)
+* __Query Parameters__
 
-* __Cookie Parameters__ 
+	The query type parameters will be automatically concatenated to the Service URL. The final URL will be in the format `serviceUrl?queryParameterName1=value1&queryParameterName2=value2&...`.
 
-  The parameter will be included as a Header *Cookie* in the request. For example, the parameter setup in the Web Service Data Source Wizard as:             
+	For example, in a Web Api project to call the Action `GetWithQueryParameters(int id, string category)` the default service URL will be `http://localhost:50160/api/data/GetWithQueryParameters`. The images display how to set the query parameters in the Web Service Data Source Wizard of the Report Designer:
 
-  ![Web Service Data Source Cookie Parameterx 750](images/WebServiceDataSourceCookieParameterx750.png) 
-  
-  for its design-time values will result in a request with a *Cookie* Header as captured by Fiddler:             
+	![Set the Query parameter values in the WebServiceDataSource Wizard](images/WebServiceDataSourceQueryParameterx750.png)
 
-  ![Web Service Data Source Cookie Parameter Request Urlx 750](images/WebServiceDataSourceCookieParameterRequestUrlx750.png)
+	and how will the generated final URL for the design-time parameter values look in Fiddler:
+
+	![The request performed by the WebServiceDataSource component with the design-time Query parameter values as seen in Fiddler](images/WebServiceDataSourceQueryParameterRequestUrlx750.png)
+
+* __Header Parameters__
+
+	The parameter will be included as a `Header` in the request with Header Name the name of the parameter, and Header Value the value of the parameter. A setup in the Web Service Data Source Wizard like:
+
+	![Set the Header parameter value in the WebServiceDataSource Wizard](images/WebServiceDataSourceHeaderParameterx750.png)
+
+	will result in a request with the Header named `headerParameter` and value `MyHeader` for its design-time values:
+
+	![The request performed by the WebServiceDataSource component with the design-time Header parameter value as seen in Fiddler](images/WebServiceDataSourceHeaderParameterRequestUrlx750.png)
+
+* __Cookie Parameters__
+
+	The parameter will be included as a Header `Cookie` in the request. For example, the parameter setup in the Web Service Data Source Wizard as:
+
+	![Set the Cookie parameter value in the WebServiceDataSource Wizard](images/WebServiceDataSourceCookieParameterx750.png) 
+
+	for its design-time values will result in a request with a `Cookie` Header as captured by Fiddler:
+
+	![The request performed by the WebServiceDataSource component with the design-time Cookie parameter value as seen in Fiddler](images/WebServiceDataSourceCookieParameterRequestUrlx750.png)
 
 ## See Also
 

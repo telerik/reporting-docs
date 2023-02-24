@@ -1,7 +1,7 @@
 ---
-title: Table of Contents Overview
-page_title: Table of Contents Overview 
-description: Table of Contents Structure and Levels Explained
+title: Overview
+page_title: Table of Contents in a Report 
+description: "Learn how to add a TOC(Table of Contents) section to your report, as well as how to change its Structure and how the TOC Levels are determined."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview
 tags: overview
 published: True
@@ -13,11 +13,11 @@ previous_url: /table-of-contents
 
 The table of contents (TOC) provides a summary/overview of the report structure and a set of navigational links to report items in the rendered report and displays the page numbers of the pages where these report items are located. The user can click the entries in the table of contents to navigate to the report page which displays that item. The table of contents is part of the report and can be displayed before or after the report header/footer section. As such it will be included in the page numbering of the report. The following image illustrates the table of contents section during design-time and at run-time.
 
-![TOC in Design and in Run time](images/toc01.png)
+![A Preview image of how the TOC section appears in Design and in Run time](images/toc01.png)
 
 The table of contents can be added to the report by enabling it from the report's context menu:
 
-![TOC Add from Report Context Menu](images/tocReportContextMenu.png)
+![A Preview image of how a TOC section can be added from the Report Context Menu](images/tocReportContextMenu.png)
 
 ## Structure
 
@@ -27,7 +27,7 @@ At run-time, the table of contents entries are defined by the [TocText](/api/Tel
 
 The table of contents definition contains a title and a hierarchy of levels. The title text can be configured using the [Title](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Title) property. Its style is controlled via the [TitleStyle](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_TitleStyle) property.
 
-![TOC Context Menu](images/tocContextMenu.png)
+![A Preview image of the TOC Context Menu that appears when the section is right-clicked](images/tocContextMenu.png)
 
 The [Levels](/api/Telerik.Reporting.TocSection#Telerik_Reporting_TocSection_Levels) property contains the properties and styles for each TOC level. The hierarchy of levels corresponds to the hierarchical structure of the report sections, items, and groups for which the [TocText](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_TocText) property is set. The properties and styles of a particular level in the Levels collection will be applied only to TOC entries for report sections/items/groups which have the exact same level in the report hierarchy.
 

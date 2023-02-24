@@ -1,6 +1,6 @@
 ---
-title: Automatic Layout for Report Items
-page_title: Automatic Layout for Report Items
+title: Automatic Layout
+page_title: Automatic Layout for Report Items with Anchoring and Docking
 description: "Learn more about setting an automatic layout for the report items of your report by docking and anchoring when using Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/automatic-layout-(dock-and-anchor)
 tags: telerik, reporting, report, items, designing, reports, automatic, layout, docking, anchoring
@@ -25,16 +25,15 @@ Like with anchoring, you specify an edge where the item is docked,  but unlike 
 
 Note that anchoring and docking are really effective only when the container can be resized. With regard to Telerik Reporting report sections and panels usually contain all report items in a report and there are a couple of reasons for why they can grow:
 
-* A child TextBoxitem with CanGrowenabled can grow in height to accommodate the longer text that it should display;
+* A child `TextBox` item with CanGrow enabled can grow in height to accommodate the longer text that it should display;
 
-* A SubReportitem can grow in width and height according to the source report it contains;
+* A `SubReport` item can grow in width and height according to the source report it contains;
 
-* A PictureBoxitem with auto sizing enabled (PictureBox.SizingMode= AutoSize) can grow to fit the bigger image when needed.
+* A `PictureBox` item with auto sizing enabled (PictureBox.SizingMode= AutoSize) can grow to fit the bigger image when needed.
 
-> Anchor and Dock both require parent item to have KeepTogether turned on (KeepTogether=true). They cannot work with KeepTogether=false, as they are bound to the container in some way.
-
+> `Anchoring` and `Docking` both require parent item to have `KeepTogether` turned on (`=true`). They cannot work with KeepTogether=false, as they should be bound to the container.
 
 ## See Also
- 
-* [Anchoring](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Anchoring)  
-* [Docking](/reporting/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Docking)
+
+* [Anchoring](/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Anchoring)
+* [Docking](/api/Telerik.Reporting.ReportItem#Telerik_Reporting_ReportItem_Docking)

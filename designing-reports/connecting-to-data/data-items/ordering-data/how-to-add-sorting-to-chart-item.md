@@ -11,9 +11,7 @@ previous_url: /data-items-how-to-add-sorting-to-chart-item
 
 # How to Add sorting to Chart item
 
-
-
-In the Chart item the sorting is performed at data item level and sets       the order of appearance of the detail rows.
+In the Chart item the sorting is performed at data item level and sets the order of appearance of the detail rows.
 
 ## Adding sorting to Table/Crosstab data item using Report Designer
 
@@ -21,15 +19,13 @@ In the Chart item the sorting is performed at data item level and sets       the
 
 1. Click the Sorting ellipsis.
 
-1. 
-
-For each sort expression, follow these steps:                      
+For each sort expression, follow these steps:
 
 1. Click New.
 
 1. Type or select an expression by which to sort the data.
 
-1. From the Direction column drop-down list, choose the sort direction                 for each expression. ASC sorts the expression in ascending order. DESC sorts                 the expression in descending order.
+1. From the Direction column drop-down list, choose the sort direction for each expression. ASC sorts the expression in ascending order. DESC sorts the expression in descending order.
 
 1. Click OK.
 
@@ -38,13 +34,8 @@ For each sort expression, follow these steps:
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ChartSnippets.cs region=AddNewSortSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ChartSnippets.vb region=AddNewSortSnippet}}
 
-
 ## See Also
- 
 
-* [Chart](/reporting/api/Telerik.Reporting.Chart)  
-
-* [Sorting](/reporting/api/Telerik.Reporting.Sorting)  
-
+* [Chart](/reporting/api/Telerik.Reporting.Chart)
+* [Sorting](/reporting/api/Telerik.Reporting.Sorting)
 * [SortingCollection](/reporting/api/Telerik.Reporting.SortingCollection)
-

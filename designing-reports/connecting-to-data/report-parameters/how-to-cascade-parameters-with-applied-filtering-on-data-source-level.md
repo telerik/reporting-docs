@@ -1,6 +1,6 @@
 ---
 title: Cascade Parameters with Data Source Filtering
-page_title: Cascade Parameters with filtering on the data source
+page_title: Cascade Parameters with filtering on the data source explained
 description: "Learn how to implement Cascading Parameters with applied filtering on data source level in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level
 tags: how,to,cascade,parameters,with,applied,filtering,on,data,source,level

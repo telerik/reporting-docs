@@ -1,7 +1,7 @@
 ---
 title: ObjectDataSource Wizard
-page_title: ObjectDataSource Wizard 
-description: ObjectDataSource Wizard
+page_title: ObjectDataSource Wizard Tutorial 
+description: "Learn how to connect your business object with Telerik Reports through the dedicated Web Report Designer's ObjectDataSource Wizard."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/objectdatasource-wizard
 tags: objectdatasource,wizard
 published: True
@@ -9,17 +9,17 @@ position: 3
 previous_url: /web-report-designer-tools-objectdatasource-wizard
 ---
 
-# ObjectDataSource Wizard
+# ObjectDataSource Wizard Overview
 
 The Object Data Source Wizard allows you to create a new or edit an existing [ObjectDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}) in the Telerik Web Report Designer. This article describes how to create a project with business objects and how to add them by using the  Object Data Source Wizard that you can invoke from the Report Designer toolbox with components. 
 
 ## Creating the DataSource
 
-The purpose of the ObjectDataSource component is to provide business objects data to data items in a declarative manner. For that reason, firstly, you need to create a project with the datasource. Note that it is highly recommended extracting the business objects into a separate project. By doing this, you will be able to use the class in the Standalone designer by just copying the assembly in the designer folder and registering it in the designer config file. In order to select the right type of.NET implementation and version, you can use the [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) which explains how and when the assemblies can be loaded in different framework versions. 
+The purpose of the ObjectDataSource component is to provide business objects data to data items in a declarative manner. For that reason, firstly, you need to create a project with the datasource. Note that it is highly recommended extracting the business objects into a separate project. By doing this, you will be able to use the class in the Standalone designer by just copying the assembly in the designer folder and registering it in the designer config file. In order to select the right type of .NET implementation and version, you can use the [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) which explains how and when the assemblies can be loaded in different framework versions. 
 
-In this example, we will use a.NET Standard 2.0 Class Library which is suitable for both.NET Framework and.NET Core applications. It will contain the business objects which in this case will be cars. Below you can see all required steps for building the project. 
+In this example, we will use a `.NET Standard 2.0 Class Library` which is suitable for both .NET Framework and .NET Core applications. It will contain the business objects which in this case will be cars. Below you can see all required steps for building the project. 
 
-1. Open Visual Studio and create a new.NET Standard 2.0 Class Library. Name the project __CarObjects__. 
+1. Open Visual Studio and create a new `.NET Standard 2.0 Class Library`. Name the project __CarObjects__. 
 
 1. Add a new class named __Car__ which will contain the model of the car. 
     
@@ -92,13 +92,13 @@ Now you have the project with data. The next step is to make the configurations 
 
 ## Configuring the DataSource in the WebReportDesigner
 
-When started, the application that hosts the Web Report Designer will try to resolve the registered assemblies in the configuration folder of the project. Resolving them means that the.NET runtime will try to load the assemblies into the application domain. For example the \bin\Debug\ folder. 
+When started, the application that hosts the Web Report Designer will try to resolve the registered assemblies in the configuration folder of the project. Resolving them means that the .NET runtime will try to load the assemblies into the application domain. For example, the `\bin\Debug\net6.0` folder. 
 
 1. You need to add the assembly as a reference to the project or copy it through a post-build action to the output directory of the application. Note that if the assembly depends on other assemblies, you will also have to add the dependent assemblies to the working folder. 
 
 1. In order to use the custom assembly for ObjectDataSource, it needs to be registered in the application's configuration file. 
 
-   + For.NET Core applications, this is done in the __appsettings.json__ file: 
+   + For.NET Core applications, this is done in the `appsettings.json` file: 
     
       ````js
 "telerikReporting": {
@@ -130,7 +130,7 @@ Another option is by custom implementation of the [IConfiguration](https://docs.
 </configuration>
 ````
 
-We are ready with the configuration. Now let's step to the wizard. 
+We are ready with the configuration. Now, let's step to the wizard. 
 
 ## Adding the ObjectDataSource through the Wizard
 

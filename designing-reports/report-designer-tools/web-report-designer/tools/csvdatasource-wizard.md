@@ -1,7 +1,7 @@
 ---
 title: CsvDataSource Wizard
-page_title: CsvDataSource Wizard 
-description: CsvDataSource Wizard
+page_title: CsvDataSource Wizard Tutorial 
+description: "Learn how to use CSV data in Telerik Report with the dedicated CsvDataSource Wizard."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/csvdatasource-wizard
 tags: csvdatasource,wizard
 published: True
@@ -9,19 +9,19 @@ position: 1
 previous_url: /web-report-designer-tools-csvdatasource-wizard
 ---
 
-# CsvDataSource Wizard
+# CsvDataSource Wizard Overview
 
-The CSV Data Source Wizard allows you to create a new or edit an existing CsvDataSource component in the Telerik Web Report Designer. This article describes the steps you can follow after the wizard appears, after being invoked from the Report Designer toolbox. 
+The CSV Data Source Wizard allows you to create a new or edit an existing [`CsvDataSource`]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) component in the Telerik Web Report Designer. This article describes the steps you can follow after the wizard appears, after being invoked from the Report Designer toolbox. 
 
 1. __Choose a CSV source__ Select how the CSV source should be retrieved for the component. 
 
    + __Upload CSV file__ from the local computer                 
 
-   + __Use existing CSV file__ that previously has been uploaded and/or exists in the [IResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.IResourceStorage) The default implementation of the [IResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.IResourceStorage) interface - [ResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage) stores resources like CSV files to the location provided as a string parameter in the constructor [#ctor](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage#Telerik_WebReportDesigner_Services_ResourceStorage_#ctor_System_String_). When choosing the option __"Use existing CSV file"__, any existing CSV files found in this directory will populate the dropdown list. 
+   + __Use existing CSV file__ that previously has been uploaded and/or exists in the [IResourceStorage](/api/Telerik.WebReportDesigner.Services.IResourceStorage) The default implementation of the [IResourceStorage](/api/Telerik.WebReportDesigner.Services.IResourceStorage) interface - [ResourceStorage](/api/Telerik.WebReportDesigner.Services.ResourceStorage) stores resources like CSV files to the location provided as a string parameter in the constructor [#ctor](/api/Telerik.WebReportDesigner.Services.ResourceStorage#Telerik_WebReportDesigner_Services_ResourceStorage_#ctor_System_String_). When choosing the option __"Use existing CSV file"__, any existing CSV files found in this directory will populate the dropdown list. 
 
    + __Use CSV inline__ to paste in a string in the text area 
 
-1. __Modify your CSV file__ If you have chosen to __"Upload CSV file"__ or __"Use existing CSV file"__ you have the option to store this inside the report definition by checking __"Embed CSV file in report definition"__ option. By checking this option the CSV data can be directly edited in the text area, and will no longer be dependent on having the CSV file available in [ResourceStorage](/reporting/api/Telerik.WebReportDesigner.Services.ResourceStorage). 
+1. __Modify your CSV file__ If you have chosen to __"Upload CSV file"__ or __"Use existing CSV file"__ you have the option to store this inside the report definition by checking __"Embed CSV file in report definition"__ option. By checking this option the CSV data can be directly edited in the text area, and will no longer be dependent on having the CSV file available in [ResourceStorage](/api/Telerik.WebReportDesigner.Services.ResourceStorage). 
 
 1. __Configure CSV Data Source - Separators__ Select at least one separator for both __"Field (column) separator"__ and __"Record (row) separator"__. To define a different separator than what is available in the list, choose __"Other"__ and define the symbol in the input-field. Check the consecutive field/record separators option (or both) if empty fields/records have to be omitted. If the CSV data has headers as its first row, check the __"This CSV has header row"__ option. 
 

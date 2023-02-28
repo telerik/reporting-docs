@@ -46,17 +46,17 @@ public class ReportSourceModel
 public class HomeController : Controller
 {
 	public IActionResult Index()
-	{
-		var reportSourceModel = new ReportSourceModel()
-		{
-			Report = "Barcodes Report.trdp",
-			Parameters = new Dictionary<string, object>()
-		};
-		reportSourceModel.Parameters.Add("MyParameter1", DateTime.Now);
-		reportSourceModel.Parameters.Add("MyParameter2", 42);
-	
-		return View(reportSourceModel);
-	}
+        {
+            var reportSourceModel = new ReportSourceModel()
+            {
+                Report = "Product Line Sales.trdp",
+                Parameters = new Dictionary<string, object>()
+            };
+            reportSourceModel.Parameters.Add("ProductCategory", "Clothing");
+            reportSourceModel.Parameters.Add("ProductSubcategory", new string[] { "Caps", "Gloves", "Vests" });
+
+            return View(reportSourceModel);
+        }
 }
 ````
 

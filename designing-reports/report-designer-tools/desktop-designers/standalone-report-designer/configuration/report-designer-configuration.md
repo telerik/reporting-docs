@@ -1,6 +1,6 @@
 ---
 title: Configuration Sections
-page_title: Standalone Report Designer Configuration Sections
+page_title: Standalone Report Designer Configuration Sections Explained
 description: "Learn which are the configuration sections related to the Telerik Reporting Engine and Report Designer and what settings may be provided there."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/report-designer-configuration
 tags: report,designer,configuration
@@ -9,7 +9,7 @@ position: 1
 previous_url: /standalone-report-designer-default-configuration
 ---
 
-# Standalone Report Designer Configuration Sections Overview
+# Standalone Report Designer Configuration Sections
 
 The settings of the Telerik Reporting engine are defined in a custom configuration section called `Telerik.Reporting`. This section should be added to the Report Designer configuration file `Telerik.ReportDesigner.exe.config`: 
 

@@ -1,7 +1,7 @@
 ---
-title: Keyboard Support and Shortcuts
-page_title: Keyboard Support and Shortcuts 
-description: Keyboard Support and Shortcuts
+title: Keyboard Shortcuts
+page_title: Keyboard Support and Shortcuts
+description: "Learn more about the Keyboard Support in the Telerik Standalone Report Designer and what Shortcuts may facilitate report edition."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/keyboard-support-and-shortcuts
 tags: keyboard,support,and,shortcuts
 published: True
@@ -9,11 +9,11 @@ position: 2
 previous_url: /standalone-report-designer-keyboard-shortcuts
 ---
 
-# Keyboard Support and Shortcuts
+# Keyboard Support and Shortcuts Overview
 
-When you work in [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you have access to many shortcut keys to improve your report designing experience. 
+When you work in [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), you have access to many shortcut keys to improve your report designing experience.
 
-[Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})          provides many right-click menus for quick access to frequently used dialog boxes and commands. Right-click menus are dynamic and may contain different options, depending on the user configuration and the currently selected objects. 
+[Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) provides many right-click menus for quick access to frequently used dialog boxes and commands. Right-click menus are dynamic and may contain different options, depending on the user configuration and the currently selected objects.
 
 | Description | Key Combination |
 | ------ | ------ |
@@ -44,4 +44,3 @@ When you work in [Standalone Report Designer]({%slug telerikreporting/designing-
 |Zoom in on map view area when a map viewport is selected.|CTRL+Plus sign (+)|
 |Zoom out on map view area when a map viewport is selected.|CTRL+Minus sign (-)|
 |Close the current report tab.|CTRL+F4|
-

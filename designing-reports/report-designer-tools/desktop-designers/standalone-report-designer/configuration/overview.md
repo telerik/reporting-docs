@@ -1,7 +1,7 @@
 ---
-title: Configuration Overview
-page_title: Configuration Overview
-description: Configuration Overview
+title: Overview
+page_title: Standalone Report Designer Configuration Overview
+description: "Learn how to configure the Standalone Report Designer in Telerik Reporting through its Configuration file."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/overview
 tags: overview
 published: True
@@ -9,7 +9,7 @@ position: 0
 previous_url: /standalone-report-designer-configuration
 ---
 
-# Configuration Overview
+# Standalone Report Designer Configuration File
 
 The Telerik Report Designer application can be configured through its configuration file. Application configuration files contain settings specific to the application. This file contains configuration settings such as connectionStrings, traceListeners, assembly binding policy (for the .NET Framework version only), and so on. For example this file can specify a global connection string that can be used by all reports created with the Report Designer:
 
@@ -49,7 +49,7 @@ or it can define Trace Listeners to log important information for troubleshootin
 ````
 
 
-In the .NET Framwework version, it can hold binding redirect to the latest version of the Reporting engine: 
+In the .NET Framwework version, it can hold binding redirect to the latest version of the Reporting engine:
 
 ````XML
 <runtime>
@@ -66,7 +66,7 @@ In the .NET Framwework version, it can hold binding redirect to the latest versi
 </runtime>
 ````
 
-For more information, see [Application Configuration Files](http://msdn.microsoft.com/en-us/library/ms229689%28v=vs.90%29.aspx). 
+For more information, see [Application Configuration Files](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/ms229689(v=vs.90)).
 
 > The configuration files of all Standalone Report Designer versions use `UTF-8` encoding. Make sure that your text editor of choice does not override the default encoding when you modify these files, as this can prevent the designers from loading.
 
@@ -180,7 +180,7 @@ The following code example shows the default `Telerik.ReportDesigner.Net.dll.con
 </configuration>
 ````
 
-If you configure a custom Trace Listener, you need to provide in the `type` the Assembly Qualified Name of the Trace Listener type implementing the abstract class [System.Diagnostics.TraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelistener?view=net-6.0). The assembly name _CustomListenersAssembly_ must be specified along with the full type name _CustomListenersNamespace.CustomListener_. You need also to copy the assembly in the designer's folder, by default __[InstallDir]/Report Designer/.NET__. 
+If you configure a custom Trace Listener, you need to provide in the `type` the Assembly Qualified Name of the Trace Listener type implementing the abstract class [System.Diagnostics.TraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.tracelistener?view=net-6.0). The assembly name _CustomListenersAssembly_ must be specified along with the full type name _CustomListenersNamespace.CustomListener_. You need also to copy the assembly in the designer's folder, by default __[InstallDir]/Report Designer/.NET__.
 
 You may use the Trace Listeners in `System.Diagnosics` like [System.Diagnostics.TextWriterTraceListener](https://learn.microsoft.com/en-us/dotnet/api/system.diagnostics.textwritertracelistener?view=net-6.0) without the assembly name. The full type name _System.Diagnostics.TextWriterTraceListener_ is sufficient to discover and utilize the Trace Listener.
 

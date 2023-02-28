@@ -1,7 +1,7 @@
 ---
 title: Edit Action Dialog
 page_title: Edit Action Dialog at a Glance
-description: "Learnd more about the Edit Action Dialog in the Telerik Reporting Desktop Designers, from where you may invoke it and what are the actions you may define with it."
+description: "Learn more about the Edit Action Dialog in the Telerik Reporting Desktop Designers, how to invoke it and what are the actions you may define with it."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-action-dialog
 tags: edit,action,dialog
 published: True

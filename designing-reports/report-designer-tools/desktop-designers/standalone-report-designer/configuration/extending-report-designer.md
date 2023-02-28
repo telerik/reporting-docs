@@ -9,7 +9,7 @@ position: 2
 previous_url: /standalone-report-designer-extending-configuration
 ---
 
-# Extending Report Designer to Recognize Custom Objects
+# Extending Report Designer to Recognize Custom Assemblies
 
 It is a common requirement to add your own [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) or bind to custom CLR objects, data models (such as an Telerik Data Access model), external assemblies with custom data source objects, data feeds (including OData), and web services.
 

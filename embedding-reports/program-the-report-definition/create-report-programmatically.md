@@ -1,7 +1,7 @@
 ---
 title: Create a Report
 page_title: Creating a Report with code
-description: "Learn how to create a Telerik Reporting report programmatically, by instantiating a Telerik.Reporting.Report object and setting its properties."
+description: "Create a Telerik Reporting report programmatically, by instantiating a Telerik.Reporting.Report object and setting its properties."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/create-report-programmatically
 tags: create, report, programmatically, code
 published: True

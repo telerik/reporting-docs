@@ -1,7 +1,7 @@
 ---
 title: Conditional Formatting Rules Dialog
 page_title: Conditional Formatting Rules Dialog at a Glance
-description: "Learn more about Conditional Formatting Rules Dialog in Telerik Report Designers and how to add and remove filtering rules."
+description: "Learn more about the Conditional Formatting Rules Dialog in Telerik Report Designers and how to add and remove filtering rules."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/conditional-formatting-rules-dialog
 tags: conditional,formatting,rules,dialog
 published: True

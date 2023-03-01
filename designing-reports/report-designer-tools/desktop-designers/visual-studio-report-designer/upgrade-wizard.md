@@ -1,7 +1,7 @@
 ---
 title: Upgrade Wizard
-page_title: Upgrade Wizard 
-description: Upgrade Wizard
+page_title: Using the Upgrade Wizard  
+description: " Learn how the Upgrade Wizard can be used to upgrade a .NET Framework project by following the wizard steps."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard
 tags: upgrade,wizard
 published: True
@@ -9,28 +9,28 @@ position: 3
 previous_url: /ui-upgrade-wizard
 ---
 
-# Upgrade Wizard
+# Upgrade Wizard Overview
 
 The __Upgrade Wizard__ will guide you through the process of upgrading Telerik Reporting projects to a newer (or older) version of Telerik Reporting. This wizard will upgrade the following: 
 
 * The references to Telerik Reporting assemblies to the selected version
 
-* The project’s config file
+* The project’s `.config` file
 
-* All web page/user control files (aspx/ascx) with references to the Telerik Reporting assemblies
+* All web page/user control files (`aspx`/`ascx`) with references to the Telerik Reporting assemblies
 
-* All resource files (resx) with references to the Telerik Reporting assemblies
+* All resource files (`resx`) with references to the Telerik Reporting assemblies
 
 The wizard __will not__ change any code, namespaces, nor will it remove obsolete properties, events and methods. You may need to manually update your code after this wizard completes. 
 
-> Web Site projects are not supported by the Upgrade Wizard. In Web Sites assembly references are handled differently, and our recommendation is to upgrade manually or to turn the project into a Web Application that can be upgraded automatically - [Web Application Projects versus Web Site Projects in Visual Studio](https://msdn.microsoft.com/en-us/library/dd547590(v=vs.110).aspx). 
+> Web Site projects are not supported by the Upgrade Wizard. In Web Sites assembly references are handled differently, and our recommendation is to upgrade manually or to turn the project into a Web Application that can be upgraded automatically - [Web Application Projects versus Web Site Projects in Visual Studio](https://learn.microsoft.com/en-us/previous-versions/aspnet/dd547590(v=vs.110)). 
 
 
->.NET Core projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version: 
+> `.NET Core` projects are not supported by the Upgrade Wizard. You need to upgrade manually to the selected version: 
 >
 > * The references to the Telerik Reporting assemblies or NuGet packages
 >
-> * The Htm5 Report Viewer scripts
+> * The HTML5 Report Viewer scripts
 
 
 The Upgrade Wizard works only with project items. It is registered in Visual Studio and keeps tracks on Telerik Reporting installation folders on the machine. Telerik Reporting references are updated by using the selected in the wizard version and the installation folder registered for that version. If Telerik Reporting assemblies are referenced from a custom location, not the installation folder, the Upgrade Wizard will not update the content of the custom folder and references will be pointed to the installation folder. 
@@ -51,7 +51,7 @@ You can also review a detailed log of the upgrade once the solution is loaded in
 
 Once your solution is opened in the IDE, it would notify you with "File Modification Detected" prompt that your project(s) have been modified outside of the environment and you should press "Reload" in order to reload the updated project:   
 
-![](images/upgwiz5.png)
+![A preview of the dialog that is displayed when the Upgrade Wizard has finished updating the files](images/upgwiz5.png)
 
 ## In case you receive compilation errors and/or warnings
 

@@ -1,7 +1,7 @@
 ---
 title: Event Binding
-page_title: Event Binding 
-description: Event Binding
+page_title: Handling Angular Report Viewer Events 
+description: "Learn about what are the events exposed by the Angular Report Viewer and how to attach event handlesr to said events."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/event-binding
 tags: event,binding
 published: True
@@ -9,13 +9,13 @@ position: 3
 previous_url: /angular-report-viewer-event-binding
 ---
 
-# Event Binding
+# Event Binding Overview
 
-The Angular Report Viewer exposes these [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}) as input properties of the viewer component. 
+The Angular Report Viewer exposes these [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}) as input properties of the viewer component.
 
 ## Bind to a report viewer event
 
-To attach an event handler to the viewer, specify the name of your function when binding the corresponding input property of the viewer component. For example, we can attach to the __ready__ and __viewerToolTipOpening__ events of the viewer: 
+To attach an event handler to the viewer, specify the name of your function when binding the corresponding input property of the viewer component. For example, we can attach to the `ready` and `viewerToolTipOpening` events of the viewer: 
     
 ````HTML
 <tr-viewer
@@ -27,7 +27,7 @@ To attach an event handler to the viewer, specify the name of your function when
 
 Then we create the event handler functions in the component where the viewer is used: 
     
-````js
+````JavaScript
 export class AppComponent {
   myReadyHandler() {
     console.log('The viewer is ready!');
@@ -39,4 +39,3 @@ export class AppComponent {
 ````
 
 For a complete list of event handler options please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%}).
-

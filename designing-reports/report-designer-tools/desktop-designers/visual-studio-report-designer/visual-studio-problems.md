@@ -1,15 +1,15 @@
 ---
 title: Visual Studio Problems
-page_title: Visual Studio Problems 
-description: Visual Studio Problems
+page_title: Troubleshooting Visual Studio Problems 
+description: "Learn how to troubleshoot Visual Studio related problems, what are the most common Visual Studio Report Desiner issues and how to fix them."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems
-tags: visual,studio,problems
+tags: visual,studio,report,designer,problems
 published: True
 position: 4
 previous_url: /troubleshooting-visual-studio-problems
 ---
 
-# Visual Studio Problems
+# How to troubleshoot Visual Studio Problems
 
 ## Visual Studio Crashes
 
@@ -19,7 +19,7 @@ When Visual Studio crashes while working with Telerik Reporting, the way to dete
 
 * Try the reproduce the crash on another machine to exclude machine specific problems e.g., corrupted Telerik Reporting installation.
 
-* Provide us with a log file containing detailed information about the Visual Studio crash. To create the log file, turn on tracing for the Visual Studio IDE and perform the actions which caused the crash. Below is the XML you need to add to the __devenv.exe.config__ file to enable tracing: 
+* Provide us with a log file containing detailed information about the Visual Studio crash. To create the log file, turn on tracing for the Visual Studio IDE and perform the actions which caused the crash. Below is the XML you need to add to the `devenv.exe.config` file to enable tracing: 
     
       ````xml
 <?xml version ="1.0"?>
@@ -36,13 +36,13 @@ When Visual Studio crashes while working with Telerik Reporting, the way to dete
 </configuration>
 ````
 
-__devenv.exe.config__ resides in C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE by default (it is recommended to create a backup copy before modifying it). 
+The `devenv.exe.config` file resides in `C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE` by default (it is recommended to create a backup copy before modifying it). 
 
-* Start Visual Studio with the log switch: [/Log (devenv.exe)](https://msdn.microsoft.com/en-us/library/ms241272.aspx) which could also provide more info on the error. 
+* Start Visual Studio with the log switch: [/Log (devenv.exe)](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2015/ide/reference/log-devenv-exe?view=vs-2015) which could also provide more info on the error. 
 
 * Check the event viewer logs for any logs that could provide more info about the problem.
 
-* Attach to the __devenv.exe__ running process with another Visual Studio instance, in order to pinpoint where the error occurs. 
+* Attach to the `devenv.exe` running process with another Visual Studio instance, in order to pinpoint where the error occurs. 
 
 After you generate the log files from the above steps, archive them and attach them to a support ticket. Include the steps which have to be followed in order to reproduce the issue. 
 

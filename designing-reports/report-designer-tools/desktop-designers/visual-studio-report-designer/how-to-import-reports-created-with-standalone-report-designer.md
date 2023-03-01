@@ -1,6 +1,6 @@
 ---
 title: Importing Declarative Report Definitions
-page_title: Importing reports created with Standalone Report Designer 
+page_title: Importing Declarative Report Definitions created with Standalone or Web Report Designer
 description: "Learn how to use the Import Report Wizard Visual Studio item template to turn TRDP and TRDX reports into type reports that can be designed with the Visual Studio Report Designer."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer
 tags: how,to,import,reports,created,with,standalone,report,designer,trdp,trdx
@@ -9,7 +9,7 @@ position: 1
 previous_url: /how-to-import-reports-created-with-standalone-report-designer
 ---
 
-# How to import reports created with Standalone Report Designer
+# Importing Reports Created with the Standalone or Web Report Designer
 
 Should you need to import your existing reports created with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) our recommendation is to use the TRDX|TRDP converter available in the [Import Report Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/import-report-wizard%}).
 

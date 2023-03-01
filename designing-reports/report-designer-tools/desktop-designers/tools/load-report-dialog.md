@@ -1,7 +1,7 @@
 ---
 title: Edit Report Source Dialog
 page_title: Edit Report Source Dialog at a Glance
-description: "Learn more about the Edit Report Source Dialog at a Glance in the Telerik Reporting Desktop Designers, how to invoke it and how to configure the Report and Parameter values."
+description: "Learn more about the Edit Report Source Dialog in the Telerik Reporting Desktop Designers, how to invoke it and how to configure the Report and Parameter values."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog
 tags: load,report,dialog,edit,reportsource,parameters,designer
 published: True

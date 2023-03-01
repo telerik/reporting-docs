@@ -1,7 +1,7 @@
 ---
 title: Using Report Events
 page_title: How to use Report Events
-description: "Understand the ItemDataBinding, NeedDataSource, and ItemDataBound Report Event, and find out how to use them through an example."
+description: "Understand the ItemDataBinding, NeedDataSource, and ItemDataBound Report Events, and find out how to use them through an example."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-events
 tags: using, report, events, ItemDataBinding, NeedDataSource, ItemDataBound
 published: True

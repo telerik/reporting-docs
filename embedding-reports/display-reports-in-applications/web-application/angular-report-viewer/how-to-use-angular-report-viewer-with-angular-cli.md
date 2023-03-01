@@ -1,7 +1,7 @@
 ---
-title: How to Use Angular Report Viewer with Angular CLI
+title: Integration with Angular CLI
 page_title: How to Use Angular Report Viewer with Angular CLI 
-description: How to Use Angular Report Viewer with Angular CLI
+description: "Learn about how to the Angular Report Viewer can be used in an Angular CLI application with a few simple steps."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli
 tags: how,to,use,angular,report,viewer,with,angular,cli
 published: True
@@ -9,7 +9,7 @@ position: 1
 previous_url: /angular-report-how-to-use-with-angular-cli
 ---
 
-# How to Use Angular Report Viewer with Angular CLI
+# Integrating the Angular Report Viewer with Angular CLI
 
 This tutorial demonstrates how to add the Angular Report Viewer component to a new Angular application. The app's settings are similar to the settings of the local Angular demo project installed by default under `[TelerikReporting_InstallDir]\Examples\Angular\CLI`.
 
@@ -19,11 +19,11 @@ The following list describes the prerequisites for this tutorial:
 
 * Review the Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements).
 
-* [Angular CLI](https://cli.angular.io/).
+* [Angular CLI](https://angular.io/cli).
 
-* A running application that hosts a Reporting REST service at address /api/reports. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+* A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
 
-* Copy of the "Product Catalog.trdp" report file from `[TelerikReporting_InstallDir]\Report Designer\Examples` placed in the folder used by the [ReportFileResolver](/reporting/api/Telerik.Reporting.Services.WebApi.ReportFileResolver) in the Reporting REST service implementation.
+* Copy of the "Product Catalog.trdp" report file from `[TelerikReporting_InstallDir]\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 
 * Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file of the project hosting the Reporting REST service:
 
@@ -42,7 +42,7 @@ The following list describes the prerequisites for this tutorial:
 
 ###Steps:
 
-1. Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.
+1. Create new Angular application using the [Angular CLI](https://angular.io/cli) tutorial.
 
 1. Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:
 
@@ -51,7 +51,7 @@ npm install jquery
 ````
 
 
-1. Add a reference to jQuery in the scripts array of the.angular-cli.json (as of Angular 6 the file is renamed to angular.json):
+1. Add a reference to jQuery in the scripts array of the `angular-cli.json` (as of Angular 6 the file is renamed to `angular.json`):
 
 	````TypeScript
 "scripts": ["../node_modules/jquery/dist/jquery.js"]

@@ -9,7 +9,7 @@ position: 4
 previous_url: /ui-data-explorer
 ---
 
-# Data Explorer of Report Designer
+# Data Explorer of the Report Designer
 
 The Data Explorer provides an overview of the database fields that are available to your report and the calculated fields you have created. It is available whenever you have a report open in design view.
 

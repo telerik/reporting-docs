@@ -9,7 +9,7 @@ position: 0
 previous_url: /ui-crosstab-table-wizard
 ---
 
-# Table and CrossTab Wizards in the Report Designer
+# Table and CrossTab Wizards of the Report Designer
 
 The Table and CrossTab Wizards are introduced as guide through the process of creating a Table or CrossTab for your reports. Their intuitive step by step instructions would get you going in no time as no previous experience is needed when using the wizards:
 

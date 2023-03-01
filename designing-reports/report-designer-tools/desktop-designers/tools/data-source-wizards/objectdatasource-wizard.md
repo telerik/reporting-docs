@@ -29,7 +29,7 @@ After the __ObjectDataSource__ wizard appears you have to perform the following 
 		}
 ````
 		````VB
-<System.ComponentModel.DataObject> _
+<System.ComponentModel.DataObject>
 		Public Class Cars
 			Inherits List(Of Car)
 			....

@@ -9,7 +9,7 @@ position: 3
 previous_url: /import-report-wizard
 ---
 
-# Import Report Wizard in the Report Designer
+# Import Report Wizard of the Report Designer
 
 Import Report Wizard guides you through the process of converting a report from another reporting format. The reporting solutions we can convert from are listed in [Overview]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview%}).
 

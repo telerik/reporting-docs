@@ -9,7 +9,7 @@ position: 3
 previous_url: /ui-group-explorer
 ---
 
-# Group Explorer in the Report Designer
+# Group Explorer of the Report Designer
 
 The Group Explorer is an aid to navigating report/table groups. The Group Explorer allows you to see the structure of the groups, to select them and change the Grouping, Sorting and Filtering. The Group Explorer can be especially handy for complex reports where there might be a lot of groups and it would be difficult to select a group and distinguish group hierarchy.
 

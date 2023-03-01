@@ -1,7 +1,7 @@
 ---
-title: How to Use Angular Report Viewer with Report Server
-page_title: How to Use Angular Report Viewer with Report Server 
-description: How to Use Angular Report Viewer with Report Server
+title: Integration with Telerik Report Server
+page_title: How to Use Angular Report Viewer with Telerik Report Server 
+description: "Learn about how the Angular Report Viewer can be used as an external viewer to display reports located in a Telerik Report Server."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-report-server
 tags: how,to,use,angular,report,viewer,with,report,server
 published: True
@@ -9,7 +9,7 @@ position: 3
 previous_url: /angular-report-viewer-with-report-server
 ---
 
-# How to Use Angular Report Viewer with Report Server
+# Integrating the Angular Report Viewer with Report Server
 
 This tutorial demonstrates how to add the Angular Report Viewer component to a new Angular application and display a report coming from the Telerik Report Server.
 
@@ -19,7 +19,7 @@ The following list describes the prerequisites for this tutorial:
 
 * Review the Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements).
 
-* [Angular CLI](https://cli.angular.io/).
+* [Angular CLI](https://angular.io/cli).
 
 * A running intance of the [Telerik Report Server](https://docs.telerik.com/report-server/introduction).
 
@@ -29,7 +29,7 @@ The following list describes the prerequisites for this tutorial:
 
 ###Steps:
 
-1. Create new Angular application using the [Angular CLI](https://cli.angular.io/) tutorial.
+1. Create new Angular application using the [Angular CLI](https://angular.io/cli) tutorial.
 
 1. Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:
 
@@ -38,7 +38,7 @@ npm install jquery
 ````
 
 
-1. Add a reference to jQuery in the scripts array of the.angular-cli.json (as of Angular 6 the file is renamed to angular.json):
+1. Add a reference to jQuery in the scripts array of the `angular-cli.json` (as of Angular 6 the file is renamed to `angular.json`):
 
 	````TypeScript
 "scripts": ["../node_modules/jquery/dist/jquery.js"]

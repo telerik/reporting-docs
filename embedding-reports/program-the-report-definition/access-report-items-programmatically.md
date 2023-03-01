@@ -1,9 +1,9 @@
 ---
-title: Access Report Items Programmatically
-page_title: Access Report Items Programmatically 
-description: Access Report Items Programmatically
+title: Access Report Items
+page_title: Accessing Report Items with code
+description: "Learn about the available methods you can use to access a Telerik Reporting report item programmatically and find relevant CSharp/VB examples for each method."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/access-report-items-programmatically
-tags: access,report,items,programmatically
+tags: access, report, items, programmatically, code
 published: True
 position: 5
 previous_url: /faq-accessing-items
@@ -25,7 +25,7 @@ In the examples below we show how to access a report item from within the report
 
 1. Use the ElementTreeHelper.__GetChildByName()__ method to locate an item on the report. In the code example below __GetChildByName__ is used to retrieve "textBox1" TextBox.
 
-> In the code example below we are referring to a `Processing.TextBox`, not `Report1.TextBox`. 
+> In the code example below we are referring to a `Processing.TextBox`, not `Report1.TextBox`.
 > The `Processing.TextBox` represents the TextBox during processing and has a different set of properties than the `Report1.TextBox` used when defining the report.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddSectionDataBindingSnippet}}

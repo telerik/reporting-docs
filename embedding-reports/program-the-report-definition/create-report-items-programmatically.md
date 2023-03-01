@@ -1,9 +1,9 @@
 ---
-title: Create Report Items Programmatically
-page_title: Create Report Items Programmatically 
-description: Create Report Items Programmatically
+title: Create Report Items
+page_title: Creating Report Items with code
+description: "Create a Telerik Reporting report item programmatically, by instantiating a report item object, setting its properties, and adding it to the Items collection of the section where you wish the control to appear."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/create-report-items-programmatically
-tags: create,report,items,programmatically
+tags: create, report, items, programmatically, code
 published: True
 position: 3
 previous_url: /programmatic-creating-controls
@@ -50,17 +50,17 @@ detail.Items.AddRange(New Telerik.Reporting.ReportItemBase() {panel1})
 
 
 ## See Also
- 
-* [TextBox](/reporting/api/Telerik.Reporting.TextBox)  
 
-* [PictureBox](/reporting/api/Telerik.Reporting.PictureBox)  
+* [TextBox](/reporting/api/Telerik.Reporting.TextBox)
 
-* [Panel](/reporting/api/Telerik.Reporting.Panel)  
+* [PictureBox](/reporting/api/Telerik.Reporting.PictureBox)
 
-* [SubReport](/reporting/api/Telerik.Reporting.SubReport)  
+* [Panel](/reporting/api/Telerik.Reporting.Panel)
 
-* [Shape](/reporting/api/Telerik.Reporting.Shape)  
+* [SubReport](/reporting/api/Telerik.Reporting.SubReport)
 
-* [Table](/reporting/api/Telerik.Reporting.Table)  
+* [Shape](/reporting/api/Telerik.Reporting.Shape)
+
+* [Table](/reporting/api/Telerik.Reporting.Table)
 
 * [CheckBox](/reporting/api/Telerik.Reporting.CheckBox)

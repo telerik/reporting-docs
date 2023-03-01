@@ -1,6 +1,6 @@
 ---
 title: Understanding Events
-page_title: Understanding Report Events
+page_title: Understanding what Events are
 description: "Get a deeper understanding about what Report Events are and what is actually happening during the definition, processing, and rendering stages of the report lifecycle."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events
 tags: understanding, events
@@ -9,7 +9,7 @@ position: 1
 previous_url: /understanding-events
 ---
 
-# Understanding Events
+# Understanding the Events
 
 ## Report Events 
 

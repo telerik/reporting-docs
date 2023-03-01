@@ -9,7 +9,7 @@ position: 5
 previous_url: /ProductCatalogWizardWalkthrough
 ---
 
-# Product Catalog Report Wizard in the Report Designer
+# Product Catalog Report Wizard of the Report Designer
 
 Product catalogs are among the most useful business presentation documents and Telerik reporting provides a way to create such catalogs easy and quick. The current walkthrough will explain how to generate product catalogs using the Product Catalog Template using only a report designer of your choice.
 

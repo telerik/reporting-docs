@@ -1,9 +1,9 @@
 ---
 title: Package Report Definition
-page_title: Package Report Definition 
-description: Package Report Definition
+page_title: Packaging the different Report Definitions
+description: "Learn how to package the different Telerik Reporting report definitions, using the available ReportPackager class."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition
-tags: package,report,definition
+tags: package, report, definition, reportpackager, TRDX, TRDP, CLR
 published: True
 position: 6
 previous_url: /report-packaging-trdp

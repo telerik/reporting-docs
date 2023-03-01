@@ -1,7 +1,7 @@
 ---
 title: Create Sections
 page_title: Creating Sections with code
-description: "Learn how to create Telerik Reporting sections programmatically, by instantiating the appropriate object, setting its properties, and adding it to the Report object's Items."
+description: "Create Telerik Reporting sections programmatically, by instantiating the appropriate object, setting its properties, and adding it to the Report object's Items."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/create-sections-programmatically
 tags: create, sections, programmatically, code
 published: True

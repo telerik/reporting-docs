@@ -1,9 +1,9 @@
 ---
-title: Create Sections Programmatically
-page_title: Create Sections Programmatically 
-description: Create Sections Programmatically
+title: Create Sections
+page_title: Creating Sections with code
+description: "Learn how to create Telerik Reporting sections programmatically, by instantiating the appropriate object, setting its properties, and adding it to the Report object's Items."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/create-sections-programmatically
-tags: create,sections,programmatically
+tags: create, sections, programmatically, code
 published: True
 position: 2
 previous_url: /programmatic-creating-sections
@@ -45,16 +45,16 @@ report.Items.Add(DirectCast(detail, ReportItemBase)
 
 ## See Also
  
-* [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)  
+* [ReportHeaderSection](/reporting/api/Telerik.Reporting.ReportHeaderSection)
 
-* [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)  
+* [ReportFooterSection](/reporting/api/Telerik.Reporting.ReportFooterSection)
 
-* [DetailSection](/reporting/api/Telerik.Reporting.DetailSection)  
+* [DetailSection](/reporting/api/Telerik.Reporting.DetailSection)
 
-* [GroupHeaderSection](/reporting/api/Telerik.Reporting.GroupHeaderSection)  
+* [GroupHeaderSection](/reporting/api/Telerik.Reporting.GroupHeaderSection)
 
-* [GroupFooterSection](/reporting/api/Telerik.Reporting.GroupFooterSection)  
+* [GroupFooterSection](/reporting/api/Telerik.Reporting.GroupFooterSection)
 
-* [PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)  
+* [PageHeaderSection](/reporting/api/Telerik.Reporting.PageHeaderSection)
 
 * [PageFooterSection](/reporting/api/Telerik.Reporting.PageFooterSection)

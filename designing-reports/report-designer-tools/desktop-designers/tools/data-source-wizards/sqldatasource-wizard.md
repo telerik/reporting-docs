@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: overview
 published: True
 position: 1
-previous_url: /sqlDataSource-wizard
+previous_url: /sqlDataSource-wizard,/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview
 ---
 
 # SqlDataSource Wizard of the Report Designer

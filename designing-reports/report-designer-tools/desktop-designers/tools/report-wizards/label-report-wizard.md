@@ -18,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Label Report Wizard in the Report Designer
+# Label Report Wizard of the Report Designer
 
 Label Report Wizard guides you through the process of creating a report with label layout.
 

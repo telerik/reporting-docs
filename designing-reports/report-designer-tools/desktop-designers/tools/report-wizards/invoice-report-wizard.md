@@ -9,7 +9,7 @@ position: 4
 previous_url: /InvoiceWizardWalkthrough
 ---
 
-# Invoice Report Wizard in the Report Designer
+# Invoice Report Wizard of the Report Designer
 
 Invoices are one of the most common business documents, that’s why their preparation should be as simple and fast as possible. Telerik Reporting has introduced a template for making invoices and the current article will explain the key points of the process.
 

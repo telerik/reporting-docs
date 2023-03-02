@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Embedding Reports Basics
-description: "Learn how you may design reports, render them in applications and display the report documents in didicated viewers with Telerik Reporting."
+description: "Learn how you may design reports, render them in applications and display the report documents in the dedicated report viewers with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/overview
 previous_url: /using-reports-in-applications/overview, /use-reports-in-applications
 tags: telerik, reporting, embedding, reports, overview

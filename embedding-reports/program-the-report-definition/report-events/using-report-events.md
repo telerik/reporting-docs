@@ -1,5 +1,5 @@
 ---
-title: Using Events
+title: Using Report Events
 page_title: Using Report Events explained with an example
 description: "Understand the ItemDataBinding, NeedDataSource, and ItemDataBound Report Events, and find out how to use them through an example."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-events
@@ -9,7 +9,7 @@ position: 2
 previous_url: /using-report-events
 ---
 
-# Using Report Events
+# Using Events of the Report Item
 
 The __Report__ object exposes these events:
 

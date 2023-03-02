@@ -9,7 +9,7 @@ position: 2
 previous_url: /using-report-events
 ---
 
-# Using Events of the Report Item
+# Using Events of the Report
 
 The __Report__ object exposes these events:
 

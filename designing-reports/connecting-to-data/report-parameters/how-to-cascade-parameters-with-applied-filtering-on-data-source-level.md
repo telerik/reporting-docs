@@ -1,7 +1,7 @@
 ---
-title: How to Cascade Parameters with applied filtering on data source level
-page_title: How to Cascade Parameters with applied filtering on data source level 
-description: How to Cascade Parameters with applied filtering on data source level
+title: Cascade Parameters with Data Source Filtering
+page_title: Cascade Parameters with filtering on the data source explained
+description: "Learn how to implement Cascading Parameters with applied filtering on data source level in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-data-source-level
 tags: how,to,cascade,parameters,with,applied,filtering,on,data,source,level
 published: True
@@ -9,7 +9,7 @@ position: 6
 previous_url: /designing-reports-parameters-cascading-paramerets-filtering-database-level
 ---
 
-# How to Cascade Parameters with applied filtering on data source level
+# Cascade Parameters with Applied Filtering on Data Source Level
 
 To create cascading report parameters with applied filtering on data source level follow the steps below:
 
@@ -29,7 +29,7 @@ SELECT
 		(Production.Product.ProductSubcategoryID = @ProductSubcategoryID)
 ````
 
-	Note that there is a __WHERE__ clause that filters the datasource based on the _ProductSubcategoryID_ parameter. 
+	Note that there is a __WHERE__ clause that filters the datasource based on the _ProductSubcategoryID_ parameter.
 
 1. Click the __Next__ button and the __"Configure Data Source Parameters"__ step of the __SqlDataSource__ appears. Set the __DbType__ of the ProductSubcategoryID
  parameter to __Int32__ and select "New Report Parameter" for the Value.
@@ -43,7 +43,7 @@ SELECT
 
 	````SQL
 SELECT
-		ProductSubcategoryID, 
+		ProductSubcategoryID,
 		Name AS SubcategoryName
 	FROM
 		Production.ProductSubcategory
@@ -51,7 +51,7 @@ SELECT
 		(ProductCategoryID = @ProductCategoryID)
 ````
 
-Note that there is a __WHERE__ clause that filters the datasource based on the ProductSubcategoryID parameter. 
+	Note that there is a __WHERE__ clause that filters the datasource based on the _ProductSubcategoryID_ parameter.
 
 1. Click the __Next__ button and the __"Configure Data Source Parameters"__ step of the __SqlDataSource__ appears. Set the __DbType__ of the __ProductCategoryID__ parameter to __Int32__ and select "__New Report Parameter__" for the __Value__.
 1. This invokes the __Report Parameter Editor__.

@@ -1,7 +1,7 @@
 ---
 title: Telerik Reporting Menu
-page_title: Telerik Reporting Menu 
-description: Telerik Reporting Menu
+page_title: Telerik Reporting Menu Functionalities 
+description: "Learn what is the Telerik Reporting Menu shown when the Reporting Visual Studio extension is expaned and what functionalities it offers."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu
 tags: telerik,reporting,menu
 published: True
@@ -9,7 +9,7 @@ position: 2
 previous_url: /ui-telerik-reporting-menu
 ---
 
-# Telerik Reporting Menu
+# Telerik Reporting Menu Overview
 
 The __Telerik Reporting menu__ can be accessed whenever an area of the report designer is selected. From here you can call: 
 
@@ -25,4 +25,4 @@ The "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-
 
 > If the report designer is opened, but still only the "[Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%})" is visible, make sure the Report Designer is the active window i.e. it has focus.   
 
-  ![TelerikVSMenu](images/TelerikVSMenu.png)
+  ![A preview of the Menu shown when the Reporting Visual Studio extension is expanded](images/TelerikVSMenu.png)

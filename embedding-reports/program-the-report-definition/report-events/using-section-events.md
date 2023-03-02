@@ -1,28 +1,28 @@
 ---
 title: Using Section Events
-page_title: Using Section Events 
-description: Using Section Events
+page_title: Using Section Events explained with an example
+description: "Understand the ItemDataBinding and ItemDataBound Section Events, and find out how to use them through an example."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-section-events
-tags: using,section,events
+tags: using, section, events, ItemDataBinding, ItemDataBound
 published: True
 position: 3
 previous_url: /using-section-events
 ---
 
-# Using Section Events
+# Using the Events of the Sections
 
-The various report __Section__ objects expose these events: 
+The various report __Section__ objects expose these events:
 
 | Event | Description |
 | ------ | ------ |
-|[ItemDataBinding](/reporting/api/Telerik.Reporting.ReportItemBase.html#collapsible-Telerik_Reporting_ReportItemBase_ItemDataBinding)|Fires just before the item is bound to data.|
-|[ItemDataBound](/reporting/api/Telerik.Reporting.ReportItemBase.html#collapsible-Telerik_Reporting_ReportItemBase_ItemDataBound)|Fires just after the item is bound to data.|
+|[ItemDataBinding](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_ItemDataBinding)|Fires just before the item is bound to data.|
+|[ItemDataBound](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_ItemDataBound)|Fires just after the item is bound to data.|
 
-In _ItemDataBinding_ and _ItemDataBound_ events use the "sender" argument of the event handler to get a reference to the section object. From the section object you can reference any of the items the section contains, i.e. TextBoxes, PictureBoxes, etc. You can also use the section DataObject property to access the data fields for the section. 
+In _ItemDataBinding_ and _ItemDataBound_ events use the "sender" argument of the event handler to get a reference to the section object. From the section object you can reference any of the items the section contains, i.e. TextBoxes, PictureBoxes, etc. You can also use the section DataObject property to access the data fields for the section.
 
-> Be aware that the "sender" section object is of type __Telerik.Reporting.Processing.ReportItemBase__, not the definition item  __Telerik.Reporting.ReportItemBase__. 
+> Be aware that the "sender" section object is of type __Telerik.Reporting.Processing.ReportItemBase__, not the definition item  __Telerik.Reporting.ReportItemBase__.
 
-The example below demonstrates getting a reference to the detail section of the report and finding a specific TextBox within the section. The example also shows retrieving data source column values for the section and using it to alter the TextBox. 
+The example below demonstrates getting a reference to the detail section of the report and finding a specific TextBox within the section. The example also shows retrieving data source column values for the section and using it to alter the TextBox.
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\EventsSnippets.cs region=AddSectionDataBindingSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\EventsSnippets.vb region=AddSectionDataBindingSnippet}}

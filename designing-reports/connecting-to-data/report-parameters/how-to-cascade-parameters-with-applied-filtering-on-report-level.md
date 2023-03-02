@@ -1,7 +1,7 @@
 ---
-title: How to Cascade Parameters with applied filtering on Report level
-page_title: How to Cascade Parameters with applied filtering on Report level 
-description: How to Cascade Parameters with applied filtering on Report level
+title: Cascade Parameters with Filtering Set on Report
+page_title: Cascade Parameters with filtering set on Report level explained
+description: "Learn how to implement Cascading Parameters with applied filtering on Report level in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-cascade-parameters-with-applied-filtering-on-report-level
 tags: how,to,cascade,parameters,with,applied,filtering,on,report,level
 published: True
@@ -9,7 +9,7 @@ position: 5
 previous_url: /designing-reports-parameters-cascading-report-parameters
 ---
 
-# How to Cascade Parameters with applied filtering on Report level
+# Cascade Parameters with Applied Filtering on Report Level
 
 To create cascading report parameters with applied filtering on report level follow the steps below: 
 
@@ -26,6 +26,7 @@ FROM
 	INNER JOIN Production.ProductSubcategory
 		ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
 ````
+
 
 1. Click the ellipses on the __Report.ReportParameters__ property. This invokes the __ReportParameter Collection editor__.
 1. Add new Report Parameter.

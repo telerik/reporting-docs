@@ -1,7 +1,7 @@
 ---
 title: Table/Crosstab Wizard
-page_title: Table/Crosstab Wizard 
-description: Table/Crosstab Wizard
+page_title: Table/Crosstab Wizard Tutorial
+description: "Learn how to display tables in Telerik Reports via the dedicated Web Report Designer's Table/Crosstab Wizard."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard
 tags: table/crosstab,wizard
 published: True
@@ -9,9 +9,9 @@ position: 2
 previous_url: /web-report-designer-table-crosstab-wizard
 ---
 
-# Table/Crosstab Wizard
+# Table/Crosstab Wizard Overview
 
-This wizard guides you through the process of adding a Table or a Crosstab item to a report that you created with the Telerik Web Report Designer. To invoke the wizard, click on the *Table Wizard* or *Crosstab Wizard* item in the toolbox. As a result, a new tab will appear on the right-hand side of the Web Report Designer. 
+This wizard guides you through the process of adding a Table or a Crosstab item to a report that you created with the Telerik Web Report Designer. To invoke the wizard, click on the `Table Wizard` or `Crosstab Wizard` item in the toolbox. As a result, a new tab will appear on the right-hand side of the Web Report Designer. 
 
 ## Wizard Structure
 

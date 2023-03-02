@@ -11,8 +11,8 @@ previous_url: /programmatic-creating-report
 
 # Create a Report Programmatically
 
-To create a Telerik report in code, you need to instantiate a [Telerik.Reporting.Report](/reporting/api/Telerik.Reporting.Report) object and set its properties. For example, this code will create a report and set up its data source:
-    
+To create a Telerik report in code, you need to instantiate a [Telerik.Reporting.Report](/api/Telerik.Reporting.Report) object and set its properties. For example, this code will create a report and set up its data source:
+
 ````C#
 MyReport report = new MyReport();
 string selectCommand = @"SELECT * FROM Sales.Store";
@@ -37,5 +37,5 @@ When you create reports programmatically, you must use a [Custom Report Source R
 You can also [programmatically export the report]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) that you created.
 
 ## See Also
- 
-* [Report](/reporting/api/Telerik.Reporting.Report)
+
+* [Report](/api/Telerik.Reporting.Report)

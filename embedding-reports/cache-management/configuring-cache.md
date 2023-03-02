@@ -1,5 +1,5 @@
 ---
-title: Configuring the Cache Management
+title: Cache Management
 page_title: Configuring the Cache Management System of the Reporting Engine
 description: "Learn how to configure the cache management system of the Reporting engine by specifying a cache provider when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-cache

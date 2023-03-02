@@ -1,6 +1,6 @@
 ---
 title: Understanding Events
-page_title: Understanding what Events are
+page_title: Report Events Explained
 description: "Get a deeper understanding about what Report Events are and what is actually happening during the definition, processing, and rendering stages of the report lifecycle."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events
 tags: understanding, events
@@ -9,9 +9,7 @@ position: 1
 previous_url: /understanding-events
 ---
 
-# Understanding the Events
-
-## Report Events 
+# Understanding Report Events
 
 Delivering a Telerik Report to the end user is a process involving several stages. Knowledge of the [Report Life Cycle]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}) is crucial to understanding how events work in Telerik Reporting.
 
@@ -23,7 +21,7 @@ Let's illustrate this with an example. While in design-time, if you add a TextBo
 
 > The __InitializeComponent__ method initializes (creates) a Report and its child items. It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
 
-This object will later serve as the definition for creating a concrete instance of the TextBox for each row from the data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example [Telerik.Reporting.TextBox](/reporting/api/Telerik.Reporting.TextBox.html).
+This object will later serve as the definition for creating a concrete instance of the TextBox for each row from the data source. These definition objects are of the types that reside in the Telerik.Reporting namespace, for example [Telerik.Reporting.TextBox](/api/Telerik.Reporting.TextBox.html).
 
 In order to programmatically change the report definition before rendering a report you need to place your code in the constructor of the report, right after the InitializeComponent call (if present).
 

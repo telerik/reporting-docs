@@ -1,7 +1,7 @@
 ---
-title: Using Report Item Events
-page_title: How to use Report Item Events
-description: "Understand the ItemDataBinding and ItemDataBound Report Item Events, and find out how to use them through an example."
+title: Using Report Items Events
+page_title: Using Report Items Events explained with example
+description: "Understand the ItemDataBinding and ItemDataBound Report Items Events, and find out how to use them through an example."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-item-events
 tags: using, report, item, events, ItemDataBinding, ItemDataBound
 published: True
@@ -9,14 +9,14 @@ position: 4
 previous_url: /using-report-item-events
 ---
 
-# Using the Report Item Events
+# Using the Events of Report Items
 
 Each [report item]({%slug telerikreporting/designing-reports/report-structure/overview%}) on a report exposes these events:
 
 | Event | Description |
 | ------ | ------ |
-|[ItemDataBinding](/reporting/api/Telerik.Reporting.ReportItemBase.html#collapsible-Telerik_Reporting_ReportItemBase_ItemDataBinding)|Fires just before the item is bound to data.|
-|[ItemDataBound](/reporting/api/Telerik.Reporting.ReportItemBase.html#collapsible-Telerik_Reporting_ReportItemBase_ItemDataBound)|Fires just after the item is bound to data.|
+|[ItemDataBinding](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_ItemDataBinding)|Fires just before the item is bound to data.|
+|[ItemDataBound](/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_ItemDataBound)|Fires just after the item is bound to data.|
 
 > The [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) expose one additional event: __NeedDataSource__. This event fires when the item does not have data source bound to it. For example, the [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) _NeedDataSource_ event will fire when _SubReport.ReportSource_ does not have data source.
 

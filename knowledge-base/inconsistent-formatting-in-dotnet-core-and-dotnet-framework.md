@@ -28,6 +28,8 @@ res_type: kb
 
 When rendering report in .NET environment, including the [Standalone Report Designer for .NET 6]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net), the formatting and rounding of float values is not consistent with the ones in the .NET Framework, including the [Standalone Designer for .NET Framework]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net-framework-40). In the latter the rounding and the formatting work as expected.
 
+Here are screenshots showing the difference when previewing the same report in the two designers:
+
 >caption Formatting in the Standalone Designer for .NET Framework 4.0
 
 ![Formatting of float values with the last significant decimal digit 5 in the Standalone Designer for .NET Framework 4.0](images/InconsistentFormattingFramework.png)

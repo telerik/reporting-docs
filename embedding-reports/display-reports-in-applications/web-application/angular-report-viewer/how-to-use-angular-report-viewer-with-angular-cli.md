@@ -25,14 +25,31 @@ The following list describes the prerequisites for this tutorial:
 
 * Copy of the "Product Catalog.trdp" report file from `[TelerikReporting_InstallDir]\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
 
-* Entry with the default connection string used by Telerik Reporting sample reports in the __web.config__ file of the project hosting the Reporting REST service:
+* Entry with the default connection string used by Telerik Reporting sample reports in the `web.config`/`appsettings.json` file of the project hosting the Reporting REST service.
 
-	````XML
+XML-based configuration file:
+    
+      ````XML
 <connectionStrings>
-		<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-				connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-				providerName="System.Data.SqlClient" />
-	</connectionStrings>
+     <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
+                connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
+                providerName="System.Data.SqlClient" />
+</connectionStrings>
+````
+
+JSON-based configuration file:
+
+    ````JSON
+  "ConnectionStrings": {
+    //This connection string will use System.Data.SqlClient as data provider invariant name.
+    //"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
+
+    //This connection string explicitly states the data provider invariant name - mandatory for databases other than MSSQL Server.
+    "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
+      "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+      "providerName": "System.Data.SqlClient"
+    }
+  }
 ````
 
 

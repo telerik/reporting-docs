@@ -19,6 +19,37 @@ table th:nth-of-type(2) {
 
 # Events Overview
 
+## How to use the Events
+
+1. Create a handler function in the component's `.TS` file:
+
+    ````TypeScript
+export class ReportViewerComponent implements AfterViewInit {
+    @ViewChild('viewer1') viewer: TelerikReportViewerComponent;
+    ...
+    ready() {
+        console.log('ready');
+    }
+    viewerToolTipOpening(e: any, args: any) {
+        console.log('viewerToolTipOpening ' + args.toolTip.text);
+    }
+  }
+````
+
+1. In the `.HTML` component file, assing the handler to the corresponding event:
+
+    ````HTML
+<tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59655/api/reports/'"
+    [reportSource]="{
+        report: 'Report1.trdp',
+        parameters: {}
+    }"
+    [ready]="ready"
+    [viewerToolTipOpening]="viewerToolTipOpening"
+    [enableAccessibility]="false">
+</tr-viewer>
+````
+
 Below is a list of all available report viewer events.
 
 ## Events

@@ -1,9 +1,9 @@
 ---
-title: React Report Viewer Overview
-page_title: React Report Viewer Overview 
-description: React Report Viewer Overview
+title: Overview
+page_title: React Report Viewer at a glance 
+description: "Find out more about the available non-native React Report Viewer, the requirements to use it, and its browser support."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview
-tags: react,report,viewer,overview
+tags: react, report, viewer, overview
 published: True
 position: 0
 previous_url: /react-report-viewer, /using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview
@@ -25,7 +25,7 @@ To successfully integrate the React Report Viewer component, ensure the followin
 
 1. Required Service: 
 
-   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api)  in the REST Service project. 
+   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api)  in the REST Service project. 
 
 1. Required JavaScript libraries:
 
@@ -41,9 +41,9 @@ To successfully integrate the React Report Viewer component, ensure the followin
 
 1. Required references to Telerik Kendo UI styles:
 
-   +  [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or                 
+   +  [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview); or                 
 
-   +  [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) 
+   +  [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) 
 
 ## Browser Support
 

@@ -13,7 +13,7 @@ previous_url: /react-report-viewer, /using-reports-in-applications/display-repor
 
 You can integrate the React Report Viewer component in your React applications. Note that the viewer is introduced in [R1 2022]({%slug telerikreporting/upgrade/2022/r1-2022%}).       
 
-The React component is built on top of the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is the base for all Web-technologies report viewers as well. 
+The React component is built on top of the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is the foundation for all Web-based report viewers as well. 
 
 ## Requirements
 

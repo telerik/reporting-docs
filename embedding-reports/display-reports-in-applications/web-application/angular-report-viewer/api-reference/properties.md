@@ -8,15 +8,16 @@ published: True
 position: 3
 previous_url: /angular-report-viewer-api-properties
 ---
+
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
@@ -29,7 +30,7 @@ The report viewer exposes various commands via the `commands` property.
 The `commands` collection contains:
 
 Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the `exec()` method being the one that actually triggers the command. The other two methods, `enabled()` and `checked()` return a bool value and can be used prior to executing a command or to find in what state the UI for the command should be.
-    
+
 ````TypeScript
 <tr-viewer #viewer1
 ...
@@ -63,4 +64,3 @@ The following table is a list of all commands:
 |toggleZoomMode|none|Changes the zoom mode of the report.|
 |toggleSideMenu|none|Shows or hides the side menu.|
 |toggleSearchDialog|none|Shows or hides the search dialog.|
-

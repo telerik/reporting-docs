@@ -1,6 +1,6 @@
 ---
 title: Implement Send Mail Message
-page_title: Implement Send Mail Message Explained with Sample
+page_title: Implementing the Send Mail Message Tutorial
 description: "Learn how to Implement Send Mail Message in Telerik Reporting Report Viewers that work with REST Service."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/implement-send-mail-message
 tags: implement,send,mail,message

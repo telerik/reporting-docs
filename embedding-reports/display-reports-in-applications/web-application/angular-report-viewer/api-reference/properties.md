@@ -27,12 +27,10 @@ The report viewer exposes various commands via the `commands` property.
 
 ## Commands
 
-The `commands` collection contains:
-
 Each [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) is an object with the `exec()` method being the one that actually triggers the command. The other two methods, `enabled()` and `checked()` return a bool value and can be used prior to executing a command or to find in what state the UI for the command should be.
 
-````TypeScript
-<tr-viewer #viewer1
+````HTML
+<tr-viewer #viewer1 />
 ...
 <button (click)="viewer1.commands.print.exec()">Print</button>
 ````

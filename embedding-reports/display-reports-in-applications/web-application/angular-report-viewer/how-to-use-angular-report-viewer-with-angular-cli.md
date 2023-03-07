@@ -1,5 +1,5 @@
 ---
-title: Integration with Angular CLI
+title: Integrating with Angular CLI
 page_title: Using Angular Report Viewer with Angular CLI
 description: "Learn how the Angular Report Viewer can be used in an Angular CLI application with a few simple steps."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli

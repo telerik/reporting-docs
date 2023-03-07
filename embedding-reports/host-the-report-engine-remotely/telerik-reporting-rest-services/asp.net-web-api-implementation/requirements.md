@@ -26,8 +26,8 @@ previous_url: /telerik-reporting-rest-service-web-api-system-requirements
 
 		````XML
 <?xml version="1.0" encoding="utf-8" ?>
-			<configuration>
-			  <runtime>
+		<configuration>
+			<runtime>
 				<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
 				  <dependentAssembly>
 					<assemblyIdentity name="System.Web.Http" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
@@ -38,8 +38,8 @@ previous_url: /telerik-reporting-rest-service-web-api-system-requirements
 					<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
 				  </dependentAssembly>
 				</assemblyBinding>
-			  </runtime>
-			</configuration>
+			</runtime>
+		</configuration>
 ````
 
 
@@ -48,5 +48,5 @@ previous_url: /telerik-reporting-rest-service-web-api-system-requirements
 	These assemblies add up to the __Telerik Reporting Engine__ functionality and should be used only if you need the specific feature. They are responsible for additional support formats or retrieving data from an OLAP cube. The asseblies must be deployed along with the application that hosts the __Telerik Reporting REST WebAPI Service__.
 
 	+ XPS rendering extension requires __Telerik.Reporting.XpsRendering__ assembly (Telerik.Reporting.XpsRendering.dll).
-	+ DOCX/PPTX/XLSX rendering extensions require __Telerik.Reporting.OpenXmlRendering.dll__ and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (_DocumentFormat.OpenXml.dll_ v.2.0.5022.0 or above with [proper binding redirect](http://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx)).
+	+ DOCX/PPTX/XLSX rendering extensions require __Telerik.Reporting.OpenXmlRendering.dll__ and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (_DocumentFormat.OpenXml.dll_ v.2.0.5022.0 or above with [proper binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element)).
 	+ [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) requires __Telerik.Reporting.Adomd.dll__ and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (_Microsoft.AnalysisServices.AdomdClient.dll_ v.10.0.0.0 or above with [proper binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%})).

@@ -1,9 +1,9 @@
 ---
-title: How to Use React Report Viewer with REST Service
-page_title: How to Use React Report Viewer with REST Service 
-description: How to Use React Report Viewer with REST Service
+title: Using with REST Service
+page_title: Using the React Report Viewer with a Reporting REST Service 
+description: "Understand the prerequisites and steps necessary to add the React Report Viewer component to a new React application. Learn how to display a report coming from a Telerik Reporting REST Service."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service
-tags: how,to,use,react,report,viewer,with,rest,service
+tags: how, to, use, react, report, viewer, with, rest, service
 published: True
 position: 1
 previous_url: /react-report-viewer-with-rest-service
@@ -113,7 +113,7 @@ let viewer;
     );
 ````
 
-1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)): Add references to the Less-based CSS files in the `<head>` element of index.html:
+1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) or [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview)): Add references to the Less-based CSS files in the `<head>` element of index.html:
     
     ````html
 <!-- The required Less-based styles -->
@@ -121,7 +121,7 @@ let viewer;
     <link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
-    >note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)). 
+    >note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)). 
 
 1. Run the application:
     

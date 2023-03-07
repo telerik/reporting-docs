@@ -103,9 +103,9 @@ app.UseEndpoints(endpoints =>
 
 ### Add Configuration Settings to the Program.cs file (Optional)
 
-The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-6.0) for this purpose.
+The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-6.0) for this purpose.
 
-The .NET 6 applications use a [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
+The .NET 6 applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
 
 ````CSharp
 ReportingEngineConfiguration = sp.GetService<IConfiguration>();
@@ -113,7 +113,7 @@ ReportingEngineConfiguration = sp.GetService<IConfiguration>();
 
 will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
-To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/) extension method on an instance of [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder).
+To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile?view=dotnet-plat-ext-7.0) extension method on an instance of [ConfigurationBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.configurationbuilder?view=dotnet-plat-ext-7.0).
 
 In this guide we will create a helper method loading the json-formatted setting:
 

@@ -1,6 +1,6 @@
 ---
 title: Integration with Angular CLI
-page_title: How to Use Angular Report Viewer with Angular CLI 
+page_title: Using Angular Report Viewer with Angular CLI
 description: "Learn about how to the Angular Report Viewer can be used in an Angular CLI application with a few simple steps."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli
 tags: how,to,use,angular,report,viewer,with,angular,cli
@@ -18,38 +18,34 @@ This tutorial demonstrates how to add the Angular Report Viewer component to a n
 The following list describes the prerequisites for this tutorial:
 
 * Review the Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}#requirements).
-
 * [Angular CLI](https://angular.io/cli).
-
 * A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
-
 * Copy of the "Product Catalog.trdp" report file from `[TelerikReporting_InstallDir]\Report Designer\Examples` placed in the folder used by the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver) in the Reporting REST service implementation.
-
 * Entry with the default connection string used by Telerik Reporting sample reports in the `web.config`/`appsettings.json` file of the project hosting the Reporting REST service.
 
-XML-based configuration file:
-    
-      ````XML
+	XML-based configuration file:
+
+	````XML
 <connectionStrings>
-     <add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
-                connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
-                providerName="System.Data.SqlClient" />
-</connectionStrings>
+		<add name="Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString"
+			connectionString="Data Source=(local);Initial Catalog=AdventureWorks;Integrated Security=SSPI"
+			providerName="System.Data.SqlClient" />
+	</connectionStrings>
 ````
 
-JSON-based configuration file:
+	JSON-based configuration file:
 
-    ````JSON
-  "ConnectionStrings": {
-    //This connection string will use System.Data.SqlClient as data provider invariant name.
-    //"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-
-    //This connection string explicitly states the data provider invariant name - mandatory for databases other than MSSQL Server.
-    "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-      "connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-      "providerName": "System.Data.SqlClient"
-    }
-  }
+	````JSON
+"ConnectionStrings": {
+		//This connection string will use System.Data.SqlClient as data provider invariant name.
+		//"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
+		
+		//This connection string explicitly states the data provider invariant name - mandatory for databases other than MSSQL Server.
+		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
+			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
+			"providerName": "System.Data.SqlClient"
+		}
+	}
 ````
 
 
@@ -60,7 +56,6 @@ JSON-based configuration file:
 ###Steps:
 
 1. Create new Angular application using the [Angular CLI](https://angular.io/cli) tutorial.
-
 1. Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:
 
 	````powershell
@@ -88,7 +83,7 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 ````
 
 
-1. Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/docs/ts/latest/guide/ngmodule.html#!#angular-modularity):
+1. Once installed, import the TelerikReportingModule in [your application root module](https://angular.io/guide/ngmodules#!#angular-modularity):
 
 	````TypeScript
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
@@ -127,9 +122,9 @@ export class AppComponent {
 	</tr-viewer>
 ````
 
-	For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).                 
+	For all available report viewer options refer to [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
 
-1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) or [Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)): Add references to the Less-based CSS files in the `<head>` element of _index.html_:
+1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) or [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview)): Add references to the Less-based CSS files in the `<head>` element of _index.html_:
 
 	````HTML
 <!-- The required Less-based styles -->
@@ -137,7 +132,7 @@ export class AppComponent {
 	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
-	>To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)). 
+	>To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).
 
 	If you use the __styleUrls__ attribute to reference the CSS, it is required to set the view encapsulation to __None__:
 

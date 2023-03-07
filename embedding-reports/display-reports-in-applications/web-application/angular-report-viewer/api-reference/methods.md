@@ -1,9 +1,9 @@
 ---
 title: Methods
-page_title: Methods 
-description: Methods
+page_title: Angular Report Viewer Methods 
+description: "Learn about what are the methods exposed by the Angular Report Viewer and how they may be used in your application."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods
-tags: methods
+tags: methods,angular,report,viewer
 published: True
 position: 2
 previous_url: /angular-report-viewer-api-methods
@@ -17,9 +17,9 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Methods
+# Methods Overview
 
-Each method can be called using a reference to the report viewer component. 
+Each method can be called using a reference to the report viewer component.
     
 ````TypeScript
 <tr-viewer #viewer1
@@ -27,9 +27,9 @@ Each method can be called using a reference to the report viewer component.
 <button (click)="viewer1.refreshReport()">Refresh</button>
 ````
 
-The example above refreshes the report viewer.         
+The example above refreshes the report viewer.
 
-The following table lists the available methods:         
+The following table lists the available methods:
 
 |  __Method__ |  __Description__ |
 | ------ | ------ |

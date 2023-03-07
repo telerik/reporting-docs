@@ -1,5 +1,5 @@
 ---
-title: Hosting in ASP.NET Core in .NET 5
+title: Hosting in .NET 5
 page_title: Hosting Telerik Reporting REST Service in ASP.NET Core in .NET 5
 description: "Learn how to configure the Telerik Reporting REST Service in an ASP.NET Core application in .NET 5 through the Visual Studio project template or manually."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5
@@ -24,7 +24,7 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
 
-![Telerik Reporting REST Service Project Configuration menu in Visual Studio](images/rest-service-project-configuration-menu-net5.png)
+![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net5.png)
 
 Set the Target Framework to .NET 5.
 

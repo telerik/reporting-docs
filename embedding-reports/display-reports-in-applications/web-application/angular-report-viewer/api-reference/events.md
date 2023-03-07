@@ -1,7 +1,7 @@
 ---
 title: Events
-page_title: Events 
-description: Events
+page_title: Angular Report Viewer Events 
+description: "Learn about what are the events exposed by the Angular Report Viewer and how to use them in your application."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events
 tags: events
 published: True
@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Events
+# Events Overview
 
 Below is a list of all available report viewer events.
 

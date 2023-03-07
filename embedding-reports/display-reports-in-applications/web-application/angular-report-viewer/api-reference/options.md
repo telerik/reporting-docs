@@ -1,6 +1,6 @@
 ---
 title: Options
-page_title: Angular Report Viewer Options 
+page_title: Angular Report Viewer Options
 description: "Learn about what are the initialization options exposed by the Angular Report Viewer and how to configure them."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options
 tags: options
@@ -8,12 +8,13 @@ published: True
 position: 0
 previous_url: /angular-report-viewer-api-options, /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-api-options
 ---
+
 <style>
 table th:first-of-type {
-    width: 30%;
+	width: 30%;
 }
 table th:nth-of-type(2) {
-    width: 70%;
+	width: 70%;
 }
 </style>
 
@@ -25,40 +26,39 @@ Below is a list of all options available during initialization.
 
 The options can be set from the `.HTML`/`.TS` component file or both(combined):
 
-    ````HTML
+````HTML
 <tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59655/api/reports/'"
-    [reportSource]="{
-        report: 'Report2.trdp',
-        parameters: {}
-    }" [viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
-    [viewerToolTipOpening]="viewerToolTipOpening" [enableAccessibility]="false">
+	[reportSource]="{
+		report: 'Report2.trdp',
+		parameters: {}
+	}" [viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
+	[viewerToolTipOpening]="viewerToolTipOpening" [enableAccessibility]="false">
 </tr-viewer>
 ````
-
-    ````TypeScript
+````TypeScript
 export class ReportViewerComponent implements AfterViewInit {
-    @ViewChild('viewer1') viewer: TelerikReportViewerComponent;
-    
-    ...
-    
-    title = "Report Viewer";
-    viewerContainerStyle = {
-        position: 'absolute',
-        left: '5px',
-        right: '5px',
-        top: '40px',
-        bottom: '5px',
-        overflow: 'hidden',
-        clear: 'both',
-        ['font-family']: 'ms sans serif'
-    };
-    
-    ready() {
-        console.log('ready');
-    }
-    viewerToolTipOpening(e: any, args: any) {
-        console.log('viewerToolTipOpening ' + args.toolTip.text);
-    }
+	@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
+
+	...
+
+	title = "Report Viewer";
+	viewerContainerStyle = {
+		position: 'absolute',
+		left: '5px',
+		right: '5px',
+		top: '40px',
+		bottom: '5px',
+		overflow: 'hidden',
+		clear: 'both',
+		['font-family']: 'ms sans serif'
+	};
+
+	ready() {
+		console.log('ready');
+	}
+	viewerToolTipOpening(e: any, args: any) {
+		console.log('viewerToolTipOpening ' + args.toolTip.text);
+	}
 }
 ````
 
@@ -92,4 +92,3 @@ export class ReportViewerComponent implements AfterViewInit {
 | __searchMetadataOnDemand__ | *boolean*, *optional*. Determines whether the search metadata will be delivered on demand __(true)__ or by default __(false)__. <br/>Default value: *false*;|
 | __initialPageAreaImageUrl__ | *string*, *optional*. The image URL for the PageArea background image. Used only when the parameter values are missing or invalid. The image should be in __PNG__, __GIF__, or __JPG__ file format.|
 | __keepClientAlive__ | *boolean* | *optional*. Determines whether the client will be kept alive. When set to true expiration of the client will be prevented by continually sending a request to the server, determined by the Reporting REST service's __ClientSessionTimeout__. <br/>Default Value is: *true*;|
-

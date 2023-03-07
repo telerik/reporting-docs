@@ -1,7 +1,7 @@
 ---
-title: ASP.NET Core in .NET 6+ with Top-Level Statements
-page_title: Hosting Reports Service in ASP.NET Core in .NET 6 with Top-Level Statements Explained
-description: "Learn how to Host Reports Service in ASP.NET Core in .NET 6 and above with Top-Level Statements in this step by step tutorial."
+title: Hosting in .NET 6+ with Top-Level Statements
+page_title: Hosting Telerik Reporting REST Service in ASP.NET Core in .NET 6 with Top-Level Statements
+description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET 6 and above with Top-Level Statements in this step by step tutorial."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,statements
 published: True
@@ -9,7 +9,7 @@ position: 2
 previous_url: /telerik-reporting-rest-service-net6-minimal-api
 ---
 
-# Hosting the Reports Service in ASP.NET Core in .NET 6 and .NET 7 with Top-Level Statements
+# Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 7 with Top-Level Statements
 
 This article guides you how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET 6 Web Application with Top-Level Statements implementation. Check the [Microsoft Tutorial: Explore ideas using top-level statements to build code as you learn](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) for general details on the approach.
 
@@ -47,7 +47,7 @@ First, you need to create a new ASP.NET Core project:
 In this tutorial, the resulting service will use the sample report definitions deployed with the Telerik Reporting product installer:
 
 1. Find the sample reports in *{Telerik Reporting installation path}\Report Designer\Examples*.
-1. Add a new folder to your solution called __Reports__ and copy all sample reports into it.
+1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
 1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder.
 
 > It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET 6 projects.
@@ -59,13 +59,13 @@ This guide applies the recommended NuGet package references approach to add the 
 1. Reference the __Telerik.Reporting.Services.AspNetCore__ (or __Telerik.Reporting.Services.AspNetCore.Trial__) package.
 1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX and PPTX) as export options, reference the __Telerik.Reporting.OpenXmlRendering__ (or __Telerik.Reporting.OpenXmlRendering.Trial__) NuGet package.
 
-> The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project bringing easier dependency management. Alternatively, the assemblies are available in the __\Bin\net6.0\__ and  __\Bin\netstandard2.0\__ folders of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Core Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [Microsoft.AspNetCore.Mvc.NewtonsoftJson version 5.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/) and [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/). Note that you need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.
+> The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project bringing easier dependency management. Alternatively, the assemblies are available in the `\Bin\net6.0\` and  `\Bin\netstandard2.0\` folders of Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Core Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [Microsoft.AspNetCore.Mvc.NewtonsoftJson version 5.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/) and [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/). Note that you need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the GDI+ API which is available on the Windows OS. On Linux and macOS we use library called [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) instead. The GDI+ API is required for measuring, laying out, rendering the text glyphs and images.
 
 ### Setup the Program.cs file as a starting point of your Reporting REST Service project with Top-Level Statements
 
-Modify the __Program.cs__ file in the project to enable the Reports Service functionality.
+Modify the `Program.cs` file in the project to enable the Reports Service functionality.
 
-1. Make sure the application is configured for WebAPI controllers and call the __AddNewtonsoftJson__ on the IMvcBuilder object to place the NewtonsoftJson serialization:
+1. Make sure the application is configured for WebAPI controllers and call the `AddNewtonsoftJson` on the IMvcBuilder object to place the NewtonsoftJson serialization:
 
 	````CSharp
 builder.Services.AddControllers().AddNewtonsoftJson();
@@ -103,9 +103,9 @@ app.UseEndpoints(endpoints =>
 
 ### Add Configuration Settings to the Program.cs file (Optional)
 
-The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-6.0) for this purpose.
+The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-6.0) for this purpose.
 
-The .NET 6 applications use a [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-6.0) file named by default __appSettings.json__. The default ReportingEngineConfiguration:
+The .NET 6 applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
 
 ````CSharp
 ReportingEngineConfiguration = sp.GetService<IConfiguration>();
@@ -113,7 +113,7 @@ ReportingEngineConfiguration = sp.GetService<IConfiguration>();
 
 will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
-To activate JSON file configuration with a different name, for example, __reportingAppSettings.json__, call the [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/) extension method on an instance of [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder).
+To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile?view=dotnet-plat-ext-7.0) extension method on an instance of [ConfigurationBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.configurationbuilder?view=dotnet-plat-ext-7.0).
 
 In this guide we will create a helper method loading the json-formatted setting:
 
@@ -172,8 +172,8 @@ The last supported type of __ConnectionStrings__ configuration uses an array to 
 
 ### Setting up the REST service
 
-1. Create folder __Controllers__. Right-click on the project name and select __Add__ > __New folder__. Name it __Controllers__.
-1. Implement a Reports controller. Right-click on the __Controllers__ folder and add a new item: __Add__ > __New item__ > __API Controller - Empty__ item. Name it __ReportsController__. This will be our Telerik Reporting REST service in the project.
+1. Create folder `Controllers`. Right-click on the project name and select __Add__ > __New folder__. Name it `Controllers`.
+1. Implement a Reports controller. Right-click on the `Controllers` folder and add a new item: __Add__ > __New item__ > __API Controller - Empty__ item. Name it `ReportsController`. This will be our Telerik Reporting REST service in the project.
 1. Inherit the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look like:
 
 	````CSharp
@@ -213,7 +213,7 @@ namespace TopLevelStatements.Controllers
 
 ### Test the service implementation
 
-To ensure that the service operates, run the application and navigate to URL __{applicationRoot}/api/reports/formats__. It should return a JSON representing the supported rendering extensions.
+To ensure that the service operates, run the application and navigate to either of the General REST Service API URLs `{applicationRoot}/api/reports/formats` or `{applicationRoot}/api/reports/version`. The first should return a [JSON representing the supported rendering extensions]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}), and the second - the [version of the Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version%}).
 
 ### Enable Cross-Origin Resource Sharing (CORS) (Optional)
 

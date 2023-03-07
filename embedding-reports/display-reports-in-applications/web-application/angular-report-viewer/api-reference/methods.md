@@ -22,8 +22,8 @@ table th:nth-of-type(3) {
 
 Each method can be called using a reference to the report viewer component.
 
-````TypeScript
-<tr-viewer #viewer1
+````HTML
+<tr-viewer #viewer1 />
 ...
 <button (click)="viewer1.refreshReport()">Refresh</button>
 ````

@@ -1,7 +1,7 @@
 ---
 title: Options
-page_title: Options 
-description: Options
+page_title: Angular Report Viewer Options 
+description: "Learn about what are the initialization options exposed by the Angular Report Viewer and how to configure them."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options
 tags: options
 published: True
@@ -17,11 +17,52 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Options
+# Options Overview
 
-Below is a list of all options available during initialization. 
+Below is a list of all options available during initialization.
 
-## Options
+## How to configure the options
+
+The options can be set from the `.HTML`/`.TS` component file or both(combined):
+
+    ````HTML
+<tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59655/api/reports/'"
+    [reportSource]="{
+        report: 'Report2.trdp',
+        parameters: {}
+    }" [viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
+    [viewerToolTipOpening]="viewerToolTipOpening" [enableAccessibility]="false">
+</tr-viewer>
+````
+
+    ````TypeScript
+export class ReportViewerComponent implements AfterViewInit {
+    @ViewChild('viewer1') viewer: TelerikReportViewerComponent;
+    
+    ...
+    
+    title = "Report Viewer";
+    viewerContainerStyle = {
+        position: 'absolute',
+        left: '5px',
+        right: '5px',
+        top: '40px',
+        bottom: '5px',
+        overflow: 'hidden',
+        clear: 'both',
+        ['font-family']: 'ms sans serif'
+    };
+    
+    ready() {
+        console.log('ready');
+    }
+    viewerToolTipOpening(e: any, args: any) {
+        console.log('viewerToolTipOpening ' + args.toolTip.text);
+    }
+}
+````
+
+## Available Options
 
 | Parameter | Description |
 | ------ | ------ |

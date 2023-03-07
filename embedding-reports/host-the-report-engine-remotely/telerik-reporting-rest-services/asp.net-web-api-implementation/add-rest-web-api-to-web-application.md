@@ -41,21 +41,21 @@ The project has a preconfigured implementation of reports controller that uses t
 	>
 	>````XML
 <?xml version="1.0" encoding="utf-8" ?>
-		...
-		<configuration>
-			<runtime>
-				<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-					<dependentAssembly>
-						<assemblyIdentity name="System.Web.Http" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
-						<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
-					</dependentAssembly>
-					<dependentAssembly>
-						<assemblyIdentity name="System.Net.Http.Formatting" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
-						<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
-					</dependentAssembly>
-				</assemblyBinding>
-			</runtime>
-		</configuration>
+	...
+	<configuration>
+		<runtime>
+			<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+				<dependentAssembly>
+					<assemblyIdentity name="System.Web.Http" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
+					<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
+				</dependentAssembly>
+				<dependentAssembly>
+					<assemblyIdentity name="System.Net.Http.Formatting" culture="neutral" publicKeyToken="31bf3856ad364e35"/>
+					<bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="5.1.0.0"/>
+				</dependentAssembly>
+			</assemblyBinding>
+		</runtime>
+	</configuration>
 ````
 
 	>[Visual Studio NuGet Package Manager](https://docs.nuget.org/consume/installing-nuget) will add the required binding redirects automatically, if you use it to update the NuGet packages.
@@ -70,7 +70,7 @@ The project has a preconfigured implementation of reports controller that uses t
 
 1. [Implement the reports controller]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
 1. (_Only for Empty Web Application_) Add new item "Global Application Class"
-1. Invoke [RegisterRoutes](/reporting/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_) at the beginning of the `Global.Application_Start (Global.asax)` method:
+1. Invoke [RegisterRoutes](/api/Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_) at the beginning of the `Global.Application_Start (Global.asax)` method:
 
 	{{source=CodeSnippets\MvcCS\Global.asax.cs region=ReportsControllerConfiguration_RegisterRoutes}}
 	{{source=CodeSnippets\MvcVB\Global.asax.vb region=ReportsControllerConfiguration_RegisterRoutes}}

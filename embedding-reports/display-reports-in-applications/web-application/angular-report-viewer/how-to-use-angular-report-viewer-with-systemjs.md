@@ -146,7 +146,7 @@ export class AppComponent {
 
 	````HTML
 <!-- The required LESS-based styles -->
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}styles/kendo.common.min.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
 	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 

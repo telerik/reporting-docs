@@ -35,4 +35,4 @@ The body contains the newly registered client’s identifier.
 
 		HTTP/1.1 200 OK
 
-		{"clientId":"a5f3"}
+		{"clientId": "a5f3"}

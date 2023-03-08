@@ -1,35 +1,33 @@
 ---
-title: REST API Reference Overview
-page_title: REST API Reference Overview
-description: REST API Reference Overview
+title: Overview
+page_title: REST API Reference at a Glance
+description: "Find out which are the requests exposed by the Telerik Reporting REST Service API, what is their HTTP method and relative URI."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview
-tags: overview
+tags: overview,rest,api,uri,http,service,reporting,request
 published: True
 position: 0
 previous_url: /telerik-reporting-rest-api
 ---
+
 <style>
 table th:first-of-type {
-    width: 30%;
+	width: 30%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 60%;
+	width: 60%;
 }
 </style>
 
 # REST API Reference Overview
 
-The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD operations as follows: 
+The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD operations as follows:
 
 * GET retrieves the representation of the resource at a specified URI. GET have no side effects on the server.
-
 * PUT updates a resource at a specified URI.
-
 * POST creates a new resource. The server assigns the ID for the new object and returns this ID as part of the response message.
-
 * DELETE deletes a resource at a specified URI.
 
 The API represent resources as hierarchical URIs in order to force the clients to use certain request sequence.

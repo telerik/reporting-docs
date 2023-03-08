@@ -34,4 +34,5 @@ The body contains the clients session timeout in seconds
 * Response
 
 		HTTP/1.1 200 OK
+
 		{"clientSessionTimeout":900}

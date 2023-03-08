@@ -1,56 +1,57 @@
 ---
 title: DocumentInfo
-page_title: DocumentInfo 
-description: DocumentInfo
+page_title: DocumentInfo JSON Entity at a Glance
+description: "Learn more about the DocumentInfo JSON Entity in Telerik Reporting REST Service and the type and meaning of each field."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/documentinfo
 tags: documentinfo
 published: True
 position: 1
 previous_url: /telerik-reporting-rest-json-entities-documentinfo
 ---
+
 <style>
 table th:first-of-type {
-    width: 20%;
+	width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(4) {
-    width: 60%;
+	width: 60%;
 }
 </style>
 
-# DocumentInfo
+# DocumentInfo Overview
 
-Document info indicating the status of the document resource. 
+Document info indicating the status of the document resource.
 
-````JSON 
+````JSON
 {
-  ‘documentReady’: true,
-  ‘pageCount’: 10,
-  ‘documentMapAvailable’: false,
-  ‘BookmarkNodes’: [
-      {
-        ‘id’: ‘Bikes’,
-        ‘text’: ‘Bikes’,
-        ‘page’: 3,
-        ‘items’: [
-          {
-            ‘id’: ‘Bikes’,
-            ‘text’: ‘Bikes’,
-            ‘page’: 3,
-          }
-     ]
-      },
-      {
-        ‘id’: ‘Bikes’,
-        ‘text’: ‘Bikes’,
-        ‘page’: 3,
-      },
- ],
+	"documentReady": true,
+	"pageCount": 10,
+	"documentMapAvailable": false,
+	"BookmarkNodes": [
+		{
+			"id": "Bikes",
+			"text": "Bikes",
+			"page": 3,
+			"items": [
+				{
+				"id": "Bikes",
+				"text": "Bikes",
+				"page": 3,
+				}
+			]
+		},
+		{
+			"id": "Bikes",
+			"text": "Bikes",
+			"page": 3,
+		},
+	],
 }
 ````
 

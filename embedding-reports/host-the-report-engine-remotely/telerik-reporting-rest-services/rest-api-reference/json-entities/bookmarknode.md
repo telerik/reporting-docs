@@ -1,38 +1,39 @@
 ---
 title: BookmarkNode
-page_title: BookmarkNode 
-description: BookmarkNode
+page_title: BookmarkNode JSON Entity at a Glance
+description: "Learn more about the BookmarkNode JSON Entity in Telerik Reporting REST Service and the type and meaning of each field."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/bookmarknode
 tags: bookmarknode
 published: True
 position: 0
 previous_url: /telerik-reporting-rest-json-entities-bookmarknode
 ---
+
 <style>
 table th:first-of-type {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(4) {
-    width: 70%;
+	width: 70%;
 }
 </style>
 
-# BookmarkNode
+# BookmarkNode Overview
 
-Bookmark node representing a node in a document map.       
+Bookmark node representing a node in a document map.
 
-````JSON 
+````JSON
 {
-  ‘id’: ‘Bikes’,
-  ‘text’: ‘Bikes’,
-  ‘page’: 3,
-  ‘items’: [{ ‘id’: ‘Bikes’, ‘text’: ‘Bikes’, ‘page’: 3 }]
+	"id": "Bikes",
+	"text": "Bikes",
+	"page": 3,
+	"items": [{ "id": "Bikes", "text": "Bikes", "page": 3 }]
 }
 ````
 

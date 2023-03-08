@@ -1,14 +1,14 @@
 ---
 title: Get Version
-page_title: Get Version 
-description: Get Version
+page_title: Get Version Request Revealed
+description: "Learn how to make the Get Version request to the Telerik Reporting REST Service and what response to expect."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version
 tags: get,version
 published: True
 position: 1
 ---
 
-# Get Version
+# `Get Version` Overview
 
 Public interface for retrieving the Telerik Reporting REST Service version.
 
@@ -22,17 +22,17 @@ Public interface for retrieving the Telerik Reporting REST Service version.
 | ------ | ------ |
 |`200 OK`|The Version of the Telerik Reporting REST Service retrieved successfully|
 
-__Response Body__ 
+__Response Body__
 
-A string, which represent the version of the Telerik Reporting REST Service. 
+A string, which represent the version of the Telerik Reporting REST Service.
 
 ## Sample
 
-* Request 
+* Request
 
 		GET /api/reports/version HTTP/1.1
 
-* Response 
+* Response
 
 		HTTP/1.1 200 OK
 

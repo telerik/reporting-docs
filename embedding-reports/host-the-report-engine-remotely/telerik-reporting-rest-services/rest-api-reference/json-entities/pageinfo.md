@@ -1,48 +1,49 @@
 ---
 title: PageInfo
-page_title: PageInfo 
-description: PageInfo
+page_title: PageInfo JSON Entity at a Glance
+description: "Learn more about the PageInfo JSON Entity in Telerik Reporting REST Service and the type and meaning of each field."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/pageinfo
 tags: pageinfo
 published: True
 position: 4
 previous_url: /telerik-reporting-rest-json-entities-pageinfo
 ---
+
 <style>
 table th:first-of-type {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(4) {
-    width: 70%;
+	width: 70%;
 }
 </style>
 
-# PageInfo
+# PageInfo Overview
 
-Page info representing the state of a single document page and its content. 
+Page info representing the state of a single document page and its content.
 
-When the page is not available: 
+When the page is not available:
 
-````JSON 
+````JSON
 {
-	‘pageReady’: false,
-	‘pageNumber’: 1,
+	"pageReady": false,
+	"pageNumber": 1,
 }
 ````
 
 When the page is  available: 
 
-````JSON 
+````JSON
 {
-  ‘pageReady’: true,
-  ‘pageNumber’: 1,
-  ‘pageContent’: ‘<html>My page content</html>’,
+	"pageReady": true,
+	"pageNumber": 1,
+	"pageContent": "<html>My page content</html>",
 }
 ````
 

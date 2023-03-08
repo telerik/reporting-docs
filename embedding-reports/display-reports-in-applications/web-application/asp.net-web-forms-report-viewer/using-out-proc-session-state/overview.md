@@ -1,6 +1,6 @@
 ---
-title: Using Out-proc Session State
-page_title: Use Out-proc Session State with ASP.NET WebForms Report Viewer
+title: Overview
+page_title: Using Out-proc Session State with ASP.NET WebForms Report Viewer
 description: "Learn how the Out-proc session state can be used with ASP.NET WebForms Report Viewer and when one should or should not use it."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state/overview
 tags: overview

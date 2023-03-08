@@ -9,7 +9,7 @@ position: 0
 previous_url: /telerik-reporting-rest-api-register-client
 ---
 
-# `Register Client` Request Overview
+# `Register Client` Overview
 
 ## Request
 

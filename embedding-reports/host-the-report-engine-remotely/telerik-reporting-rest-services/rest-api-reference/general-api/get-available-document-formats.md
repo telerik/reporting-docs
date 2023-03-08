@@ -38,13 +38,13 @@ An array containing [FormatInfo]({%slug telerikreporting/using-reports-in-applic
 		HTTP/1.1 200 OK
 
 		[
-			{"name":"PDF","localizedName":"Acrobat (PDF) file"},
-			{"name":"CSV","localizedName":"CSV (comma delimited)"},
-			{"name":"XLS","localizedName":"Excel 97-2003"},
-			{"name":"XLSX","localizedName":"Excel Worksheet"},
-			{"name":"PPTX","localizedName":"PowerPoint Presentation"},
-			{"name":"RTF","localizedName":"Rich Text Format"},
-			{"name":"IMAGE","localizedName":"TIFF file"},
-			{"name":"DOCX","localizedName":"Word Document"},
-			{"name":"XPS","localizedName":"XPS Document"}
+			{"name": "PDF", "localizedName": "Acrobat (PDF) file"},
+			{"name": "CSV", "localizedName": "CSV (comma delimited)"},
+			{"name": "XLS", "localizedName": "Excel 97-2003"},
+			{"name": "XLSX", "localizedName": "Excel Worksheet"},
+			{"name": "PPTX", "localizedName": "PowerPoint Presentation"},
+			{"name": "RTF", "localizedName": "Rich Text Format"},
+			{"name": "IMAGE", "localizedName": "TIFF file"},
+			{"name": "DOCX", "localizedName": "Word Document"},
+			{"name": "XPS", "localizedName": "XPS Document"}
 		]

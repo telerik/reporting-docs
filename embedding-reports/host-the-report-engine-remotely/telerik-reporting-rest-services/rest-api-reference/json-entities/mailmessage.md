@@ -1,39 +1,40 @@
 ---
 title: MailMessage
-page_title: MailMessage 
-description: MailMessage
+page_title: MailMessage JSON Entity at a Glance
+description: "Learn more about the MailMessage JSON Entity in Telerik Reporting REST Service and the type and meaning of each field."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/mailmessage
 tags: mailmessage
 published: True
 position: 8
 previous_url: /telerik-reporting-rest-json-entities-mailmessage
 ---
+
 <style>
 table th:first-of-type {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(4) {
-    width: 70%;
+	width: 70%;
 }
 </style>
 
-# MailMessage
+# MailMessage Overview
 
-Mail message 
+Mail message
 
-````JSON 
+````JSON
 {
-	'from': 'john.doe@mycompany.com',
-	'to': 'jane.doe@mycompany.com',
-	'cc': 'john.doe.jr@mycompany.com',
-	'subject': 'my mail subject',
-	'body': 'my mail body',
+	"from": "john.doe@mycompany.com",
+	"to": "jane.doe@mycompany.com",
+	"cc": "john.doe.jr@mycompany.com",
+	"subject": "my mail subject",
+	"body": "my mail body",
 }
 ````
 

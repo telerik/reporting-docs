@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Localization of the native Blazor Report Viewer
+# Localization of the Native Blazor Report Viewer
 
 ## Overview
 
@@ -23,7 +23,6 @@ Blazor already has an established way of providing Localization support for appl
 When localizing a Blazor app, make sure you are familiar with the way localization works in the framework. You can start from the following resources:
 
 - [Globalization and Localization in Blazor](https://learn.microsoft.com/en-us/aspnet/core/blazor/globalization-localization?view=aspnetcore-6.0&pivots=server)
-
 - [Localization in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-6.0)
 
 ## How to Localize the Native Blazor Report Viewer

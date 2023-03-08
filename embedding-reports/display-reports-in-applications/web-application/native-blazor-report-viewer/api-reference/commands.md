@@ -20,7 +20,7 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Overview
+# Native Blazor Report Viewer Commands Overview
 
 The Native Blazor Report Viewer exposes __commands__ that allow to control its behavior from application code.
 

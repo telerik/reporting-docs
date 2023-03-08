@@ -18,28 +18,29 @@ The Blazor Report Viewer exposes events as properties of the `ClientEventsOption
 To attach an event handler to the viewer, specify the name of the event handler function in the `ClientEventsOptions` object. The function name should be fully qualified, e.g. `window.trvEventHandlers.exportBegin`, or just `trvEventHandlers.exportBegin` (the "*window* " qualifier is optional). The event handler functions should be implemented inside **wwwroot/index.html** (Blazor WebAssembly) or **Pages/\_Host.cshtml** (Blazor Server).
 
 For example, we can attach handlers to the `ExportBegin` and `ExportEnd` events of the viewer:
-    
+
 ````CSHTML
 <ReportViewer
- ...
-    ClientEvents="@(new ClientEventsOptions() {
-        ExportBegin = "trvEventHandlers.exportBegin",
-        ExportEnd = "trvEventHandlers.exportEnd"
-    })" />
+...
+	ClientEvents="@(new ClientEventsOptions() {
+		ExportBegin = "trvEventHandlers.exportBegin",
+		ExportEnd = "trvEventHandlers.exportEnd"
+	})" />
 ````
 
 Then, we can create the event handler functions in the **wwwroot/index.html** (Blazor WebAssembly) or **Pages/\_Host.cshtml** (Blazor Server):
-    
+
 ````HTML
 <script>
-        window.trvEventHandlers = {
-            exportBegin: function (e, args) {
-                console.log("This event handler will be called before exporting the report in " + args.format + " format.");
-            },
-            exportEnd: function (e, args) {
-                console.log("This event handler will be called after exporting the report.");
-                console.log("The exported report can be found at: " + window.location.origin + args.url);
-            }
-        }
-    </script>
+	window.trvEventHandlers = {
+		exportBegin: function (e, args) {
+			console.log("This event handler will be called before exporting the report in " + args.format + " format.");
+		},
+		exportEnd: function (e, args) {
+			console.log("This event handler will be called after exporting the report.");
+			console.log("The exported report can be found at: " + window.location.origin + args.url);
+		}
+	}
+</script>
 ````
+

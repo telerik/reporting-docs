@@ -21,7 +21,7 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# `Keep Client Alive` Request Overview
+# `Keep Client Alive` Overview
 
 ## Request
 

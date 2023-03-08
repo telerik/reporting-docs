@@ -42,8 +42,8 @@ Mail message
 
 | Field | Type | Required | Description |
 | ------ | ------ | ------ | ------ |
-|`from`|`string`|`true`||
-|`to`|`string`|`true`||
-|`cc`|`string`|`false`||
-|`subject`|`string`|`false`||
-|`body`|`string`|`false`||
+|`from`|`string`|`true`| Email sender |
+|`to`|`string`|`true`| Email primary recipient |
+|`cc`|`string`|`false`| The additional (CC) email recipients |
+|`subject`|`string`|`false`| The subject of the email |
+|`body`|`string`|`false`| The content of the email |

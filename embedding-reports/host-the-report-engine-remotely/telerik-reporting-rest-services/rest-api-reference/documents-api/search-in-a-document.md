@@ -70,7 +70,7 @@ When the return status is `OK` the response body contains a JSON array of [Searc
 		HTTP/1.1 200 Ok
 
 		{
-			"description":"Quarterly Sales Dashboard for 2003",
-			"id":"a082030a03fa4e349abe183d161a35ea",
-			"page":1
+			"description": "Quarterly Sales Dashboard for 2003",
+			"id": "a082030a03fa4e349abe183d161a35ea",
+			"page": 1
 		}

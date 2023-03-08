@@ -59,7 +59,7 @@ __Response Body__
 		HTTP/1.1 202 Accepted
 
 		{
-			‘documentReady’: false,
-			‘PageCount’: 2,
-			‘DocumentMapAvailable’: false,
+			"documentReady": false,
+			"PageCount": 2,
+			"DocumentMapAvailable": false,
 		}

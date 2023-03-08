@@ -1,32 +1,33 @@
 ---
 title: Release Document
-page_title: Release Document 
-description: Release Document
+page_title: Release Document Request Revealed
+description: "Learn how to make the Release Document request to the Telerik Reporting REST Service and what response to expect."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/release-document
 tags: release,document
 published: True
 position: 8
 previous_url: /telerik-reporting-rest-documents-api-destroy-document
 ---
+
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
-# Release Document
+# `Release Document` Overview
 
 ## Request
-   
+
 	DELETE /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
 
-__Path parameters__ 
+__Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
@@ -44,10 +45,10 @@ __Path parameters__
 
 ## Sample
 
-* Request 
-    
+* Request
+
 		DELETE /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
 
-* Response 
+* Response
 
 		HTTP/1.1 204 NoContent

@@ -55,11 +55,11 @@ __Request Body__
 		POST /api/reports/clients/2c3d/instances/4d3c/documents/5x3a/send HTTP/1.1
 
 		{
-			'from': 'john.doe@mycompany.com',
-			'to': 'jane.doe@mycompany.com',
-			'cc': 'john.doe.jr@mycompany.com',
-			'subject': 'my mail subject',
-			'body': 'my mail body',
+			"from": "john.doe@mycompany.com",
+			"to": "jane.doe@mycompany.com",
+			"cc": "john.doe.jr@mycompany.com",
+			"subject": "my mail subject",
+			"body": "my mail body",
 		}
 
 * Response

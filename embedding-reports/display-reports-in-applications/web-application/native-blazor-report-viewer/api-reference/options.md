@@ -16,7 +16,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Overview
+# Native Blazor Report Viewer Options Overview
 
 Below is a list of all options available during initialization of the native Blazor Report Viewer.
 

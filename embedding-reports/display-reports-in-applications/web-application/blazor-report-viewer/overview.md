@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Blazor Report Viewer at Glance
+page_title: Blazor Report Viewer at a Glance
 description: "Learn about the requirements and browser support of the Telerik Reporting Blazor HTML5 Wrapper Report Viewer."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview
 tags: overview

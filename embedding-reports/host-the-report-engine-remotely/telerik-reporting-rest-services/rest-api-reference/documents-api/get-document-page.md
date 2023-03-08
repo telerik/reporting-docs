@@ -60,6 +60,6 @@ __Response Body__
 		HTTP/1.1 202 Accepted
 
 		{
-			‘pageReady’: false,
-			‘pageNumber’: 1
+			"pageReady": false,
+			"pageNumber": 1
 		}

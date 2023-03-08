@@ -9,7 +9,7 @@ position: 3
 previous_url: /telerik-reporting-rest-api-get-clients-session-timeout-seconds
 ---
 
-# `Get Clients Session Timeout Seconds` Overview
+# Get Clients Session Timeout Seconds Overview
 
 ## Request
 

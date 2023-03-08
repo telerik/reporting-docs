@@ -21,7 +21,7 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# `Unregister Client` Request Overview
+# `Unregister Client` Overview
 
 ## Request
 

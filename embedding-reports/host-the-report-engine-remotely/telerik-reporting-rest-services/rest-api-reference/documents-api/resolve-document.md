@@ -58,11 +58,11 @@ When the return status is `Accepted/Created` the body contains a document identi
 		POST /api/reports/clients/2c3d/instances/4d3c/documents HTTP/1.1
 
 		{
-			‘format’: ‘HTML5’,
-			‘deviceInfo’: { ‘xxx’: ‘zzz’ },
-			‘useCache’: true,
-			‘baseDocumentId’: ‘xxxx’,
-			‘actionId’: ‘xxxx’
+			"format": "HTML5",
+			"deviceInfo": { "xxx": "zzz" },
+			"useCache": true,
+			"baseDocumentId": "xxxx",
+			"actionId": "xxxx"
 		}
 
 * Response

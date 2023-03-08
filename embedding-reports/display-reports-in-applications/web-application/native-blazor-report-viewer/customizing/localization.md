@@ -1,14 +1,14 @@
 ---
 title: Localization
-page_title: Localization
-description: Localization
+page_title: Native Blazor Report Viewer Localization
+description: "Learn how to dynamically localize the Telerik Reporting native Blazor Report Viewer messages for multiple languages."
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/localization
 tags: localization,blazor
 published: True
 position: 2
 ---
 
-# Localization
+# Localization of the Native Blazor Report Viewer
 
 ## Overview
 
@@ -16,21 +16,20 @@ This article elaborates on how to localize the messages displayed by the Native 
 
 Blazor already has an established way of providing Localization support for applications. The introduction of this into the Native Blazor Telerik ReportViewer boils down to providing a default __Resource__ with English strings, and exposing a __Service Interface__ that developers can implement in order to provide their own Resources.
 
-> The approach is identical with how localization works in [Telerik UI for Blazor](https://www.telerik.com/blazor-ui). 
+> The approach is identical with how localization works in [Telerik UI for Blazor](https://www.telerik.com/blazor-ui).
 
-## How to Enable Localization in a Blazor App 
+## How to Enable Localization in a Blazor App
 
 When localizing a Blazor app, make sure you are familiar with the way localization works in the framework. You can start from the following resources:
 
 - [Globalization and Localization in Blazor](https://learn.microsoft.com/en-us/aspnet/core/blazor/globalization-localization?view=aspnetcore-6.0&pivots=server)
-
 - [Localization in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-6.0)
 
 ## How to Localize the Native Blazor Report Viewer
 
 The string resources used to localize the report viewer can be in whatever format is preferred - `JSON`, `XML`, `RESX`, etc. 
 
-For this example, we will have a `Resources` folder containing the `Messages.resx` embedded resource of the report viewer. 
+For this example, we will have a `Resources` folder containing the `Messages.resx` embedded resource of the report viewer.
 
 This resource will contain the default `English` messages.
 

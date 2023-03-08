@@ -1,7 +1,7 @@
 ---
-title: Native Blazor Report Viewer Commands
-page_title: Native Blazor Report Viewer Commands 
-description: Native Blazor Report Viewer Commands
+title: Commands
+page_title: Native Blazor Report Viewer Commands
+description: "Learn about what are the commands exposed by the Native Blazor Report Viewer and how they can be used to perform certain operations from code."
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands
 tags: command,commands,method,methods,blazor,native,report,viewer,api
 published: True
@@ -20,7 +20,7 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Overview
+# Native Blazor Report Viewer Commands Overview
 
 The Native Blazor Report Viewer exposes __commands__ that allow to control its behavior from application code.
 
@@ -32,9 +32,9 @@ To execute a command, it is required to first get a reference to the report view
 void ExecuteCommand(string commandName, string commandValue(optional))
 ````
 
-All commands, except for the `Export` command, require a single argument for this method, which is the `commandName`. The `commandValue` is used only by the `Export` command to specify the exporting format. 
+All commands, except for the `Export` command, require a single argument for this method, which is the `commandName`. The `commandValue` is used only by the `Export` command to specify the exporting format.
 
-For example, the `Refresh` and `Export` commands of the current report can be triggered like this: 
+For example, the `Refresh` and `Export` commands of the current report can be triggered like this:
     
 ````C#
 <button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>

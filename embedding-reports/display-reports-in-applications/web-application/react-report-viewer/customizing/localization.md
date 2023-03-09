@@ -15,7 +15,7 @@ The article elaborates on how to localize the messages displayed by the React Re
 
 1. To localize the report viewer, create a new TypeScript file __stringResources.ts__:
 
-   ````TypeScript
+	````TypeScript
 export class StringResources {
 		static english = {
 			loadingReport: 'Loading...',
@@ -29,7 +29,7 @@ export class StringResources {
 }
 ````
 
-   The file can contain all or only a part of the string resources which would be localized. For a full list of the report viewer string resources which could be localized, please refer to [HTML5 Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}).
+	The file can contain all or only a part of the string resources which would be localized. For a full list of the report viewer string resources which could be localized, please refer to [HTML5 Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}).
 
 2. Import the new file in the component where the viewer is used:
 

@@ -11,9 +11,9 @@ previous_url: /telerik-reporting-rest-howto-use-mssql-storage
 
 # Configuring an MSSQL Database Storage for the Reporting REST Service
 
-This article will explain how to configure an MSSQL database for report engine storage.
+This article explains how to configure an MSSQL Database for the Reporting REST Service storage.
 
-1. Ensure a database instance is available for report engine storage. This may be a dedicated database or a shared database for both app data and report engine storage.
+1. Ensure a database instance is available for Reporting REST Service storage. This may be a dedicated database or a shared database for both app data and Reporting REST Service storage.
 
 	1. Start the __Telerik Database Cache Configurator__ tool located in the *{Telerik Reporting installation folder}/Tools* folder.
 	1. In *Choose database usage* combo-box select the "Configure REST service storage database" option.

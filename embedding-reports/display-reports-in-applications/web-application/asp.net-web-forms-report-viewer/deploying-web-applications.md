@@ -1,7 +1,7 @@
 ---
-title: Deploying on Web Applications
-page_title: Deploying the ASP.NET WebForms Report Viewer on Web Applications
-description: "Learn what are the required and optional assemblies for deploying the ASP.NET WebForms Report Viewer on Web Application projects."
+title: Deploying Web Applications
+page_title: Deploying Web Applications with embedded ASP.NET WebForms Report Viewer
+description: "Learn what are the required and optional assemblies for deploying Web Application with embedded ASP.NET WebForms Report Viewer."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-applications
 tags: deploying,web,applications
 published: True
@@ -20,7 +20,6 @@ During the installation of Telerik Reporting on your machine, the Telerik assemb
 __Required assemblies:__
 
 * `Telerik.Reporting.dll`
-
 * `Telerik.ReportViewer.WebForms.dll`
 
 __Optional assemblies:__
@@ -28,11 +27,7 @@ __Optional assemblies:__
 These assemblies add up to the core reporting functionality and should be used only if you need the specific feature. They are responsible for additional support formats, database session, retrieving data from an OLAP cube or using the Silverlight report viewer.
 
 * XPS rendering extension requires the __Telerik.Reporting.XpsRendering__ assembly (`Telerik.Reporting.XpsRendering.dll`).
-
 * DOCX/PPTX/XLSX rendering extensions require `Telerik.Reporting.OpenXmlRendering.dll` and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (`DocumentFormat.OpenXml.dll v.2.0.5022.0` or above with [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element?redirectedfrom=MSDN).
-
 * The Telerik Reporting WCF Service (if needed) requires __Telerik.Reporting.Service__ assembly (`Telerik.Reporting.Service.dll`).
-
 * [Database Cache Provider]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/other-reportviewer-controls/configuring-the-database-cache-provider%}) requires `Telerik.Reporting.Cache.Database.dll` and `Telerik Data Access`.
-
 * [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) requires `Telerik.Reporting.Adomd.dll` and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (`Microsoft.AnalysisServices.AdomdClient.dll v.10.0.0.0` or above with proper [binding redirects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/configuring-your-project-for-using-microsoft-analysis-services%})).

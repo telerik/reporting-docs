@@ -9,7 +9,7 @@ position: 3
 previous_url: /react-report-viewer-event-binding
 ---
 
-# Event Binding
+# Binding to Events
 
 The React Report Viewer exposes these [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/events%}) as input properties of the viewer component.
 

@@ -1,32 +1,33 @@
 ---
 title: Get Document
-page_title: Get Document 
-description: Get Document
+page_title: Get Document Request Revealed
+description: "Learn how to make the Get Document request to the Telerik Reporting REST Service and what response to expect."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document
 tags: get,document
 published: True
 position: 2
 previous_url: /telerik-reporting-rest-documents-api-get-document
 ---
+
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
-# Get Document
+# `Get Document` Overview
 
 ## Request
-    
+
 	GET /api/reports/clients/{clientId}/instances/{instanceId}/documents/{documentId}
 
-__Path parameters__ 
+__Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
@@ -42,21 +43,20 @@ __Path parameters__
 |`410 Gone`|The specified clientId cannot be found (expired).|
 |`404 Not Found`|The specified instanceId or documentId cannot be found.|
 
-__Response Body__ 
+__Response Body__
 
-The document content bytes as attachment.         
+The document content bytes as attachment.
 
 ## Sample
 
-* Request 
+* Request
 
 		GET /api/reports/clients/2c3d/instances/4d3c/documents/5x3a HTTP/1.1
-        
 
-* Response 
+* Response
 
 		HTTP/1.1 200 OK
-		
+
 		Content-Disposition: attachment; filename=ProductCatalog.pdf
-		
+
 		bytes

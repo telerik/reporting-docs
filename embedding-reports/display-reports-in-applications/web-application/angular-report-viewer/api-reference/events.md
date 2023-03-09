@@ -1,23 +1,57 @@
 ---
 title: Events
-page_title: Events 
-description: Events
+page_title: Angular Report Viewer Events
+description: "Learn about what are the events exposed by the Angular Report Viewer and how to use them in your application."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events
-tags: events
+tags: events,angular,report,viewer
 published: True
 position: 1
 previous_url: /angular-report-viewer-api-events
 ---
+
 <style>
 table th:first-of-type {
-    width: 30%;
+	width: 30%;
 }
 table th:nth-of-type(2) {
-    width: 70%;
+	width: 70%;
 }
 </style>
 
-# Events
+# Events Overview
+
+## How to use the Events
+
+1. Create a handler function in the component's `.TS` file:
+
+	````TypeScript
+export class ReportViewerComponent implements AfterViewInit {
+		@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
+		...
+		ready() {
+			console.log('ready');
+		}
+		viewerToolTipOpening(e: any, args: any) {
+			console.log('viewerToolTipOpening ' + args.toolTip.text);
+		}
+	}
+````
+
+
+1. In the `.HTML` component file, assing the handler to the corresponding event:
+
+	````HTML
+<tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59655/api/reports/'"
+		[reportSource]="{
+			report: 'Report1.trdp',
+			parameters: {}
+		}"
+		[ready]="ready"
+		[viewerToolTipOpening]="viewerToolTipOpening"
+		[enableAccessibility]="false">
+	</tr-viewer>
+````
+
 
 Below is a list of all available report viewer events.
 

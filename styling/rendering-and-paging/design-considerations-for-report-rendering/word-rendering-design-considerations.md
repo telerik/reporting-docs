@@ -47,27 +47,27 @@ Since Word repaginates the entire document when opening it, the same behavior is
 
 ## Styling
 
-The following is a brief description of how styles are rendered in Word.         
+The following is a brief description of how styles are rendered in Word.
 
-*  __Colors__ - Colors are rendered as exact RGB values. Transparent colors with alpha channel are not supported.
-*  __Borders__ - Borders of report items are rendered as table cell borders. Borders of adjacent report items are collapsed automatically, following the Word’s own border collapse rules.
+* `Colors` - Colors are rendered as exact RGB values. Transparent colors with alpha channel are not supported.
+* `Borders` - Borders of report items are rendered as table cell borders. Borders of adjacent report items are collapsed automatically, following the Word’s own border collapse rules.
 
-               >note Word application applies a margin value to the table cell by default. This will produce a space between the nested table borders and the parent table borders. To remove the space, the margin needs to be removed manually after opening the document in MS Word.
+	>note Word application applies a margin value to the table cell by default. This will produce a space between the nested table borders and the parent table borders. To remove the space, the margin needs to be removed manually after opening the document in MS Word.
 
-*  __Background__ - Background colors are rendered as background shading of table cells. Background images are not supported.
-*  __Fonts__ - Fonts and their settings are rendered exactly as they are specified in the report definition. In order to display correctly a document that uses a specific font, that font must be installed on the client machine. The rendering extension does not provide a fallback mechanism in case of missing fonts.
+* `Background` - Background colors are rendered as background shading of table cells. Background images are not supported.
+* `Fonts` - Fonts and their settings are rendered exactly as they are specified in the report definition. In order to display correctly a document that uses a specific font, that font must be installed on the client machine. The rendering extension does not provide a fallback mechanism in case of missing fonts.
 
-            >note Text boxes which do not contain a value (contain a null value, empty string, etc.) will be rendered with font size of 1pt.
+	>note Text boxes which do not contain a value (contain a null value, empty string, etc.) will be rendered with font size of 1pt.
 
-*  __Text__ - Text justification and alignment is preserved when exporting to Word. Note that if a justified text goes from one page to another, the last line of the first page will be left-aligned. Text orientation is supported only for the angles of 0, 90 and 270 degrees. Rotated text on other angles is not supported and is approximated to the closest match.
-*  __HTML__ - HTML text is rendered using Word’s own HTML rendering engine. This might produce a result that is slightly different from the output generated in Web browsers.
+* `Text` - Text justification and alignment is preserved when exporting to Word. Note that if a justified text goes from one page to another, the last line of the first page will be left-aligned. Text orientation is supported only for the angles of 0, 90 and 270 degrees. Rotated text on other angles is not supported and is approximated to the closest match.
+* `HTML` - HTML text is rendered using Word’s own HTML rendering engine. This might produce a result that is slightly different from the output generated in Web browsers.
 
 ## Report items
 
 The following rules apply to rendered report items:
 
 * The PictureBox report item's Sizing property should be set to AutoSize for best image quality or the PictureBox.Size should match the actual image size. In case you get a blurred image at run-time, change the Sizing mode or resize the PictureBox item to match the size of the produced image.
-* The Cross-section item renders its graphical primitives as images. It is recommended to set the *Position*  property to __Front__ to allow rendering it on top of the other items, otherwise the Word application may apply undesired offset to it.
+* The Cross-section item renders its graphical primitives as images. It is recommended to set the *Position* property to `Front` to allow rendering it on top of the other items, otherwise the Word application may apply undesired offset to it.
 
 ## Interactivity
 
@@ -79,11 +79,11 @@ Actions on report sections are not supported.
 
 ## Limitations
 
-Text Watermarks do not support __strikethrough__ and __underline__ text decorations.
+Text Watermarks do not support `strikethrough` and `underline` text decorations.
 
 ## See Also
 
- * [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})
- * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
- * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
- * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
+* [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%})
+* [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
+* [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
+* [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})

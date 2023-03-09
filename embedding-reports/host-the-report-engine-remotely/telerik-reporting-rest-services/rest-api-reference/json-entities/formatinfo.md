@@ -1,36 +1,37 @@
 ---
 title: FormatInfo
-page_title: FormatInfo 
-description: FormatInfo
+page_title: FormatInfo JSON Entity at a Glance
+description: "Learn more about the FormatInfo JSON Entity in Telerik Reporting REST Service and the type and meaning of each field."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities/formatinfo
 tags: formatinfo
 published: True
 position: 2
 previous_url: /telerik-reporting-rest-json-entities-formatinfo
 ---
+
 <style>
 table th:first-of-type {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(4) {
-    width: 70%;
+	width: 70%;
 }
 </style>
 
-# FormatInfo
+# FormatInfo Overview
 
-Format info object representing a document format that can be used for document creation. 
+Format info object representing a document format that can be used for document creation.
 
-````JSON 
+````JSON
 {
-  "name":"PDF",
-  "localizedName":"Acrobat (PDF) file"
+	"name": "PDF",
+	"localizedName": "Acrobat (PDF) file"
 }
 ````
 

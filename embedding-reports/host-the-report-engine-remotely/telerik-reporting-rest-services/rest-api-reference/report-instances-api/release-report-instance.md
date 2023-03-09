@@ -1,32 +1,33 @@
 ---
 title: Release Report Instance
-page_title: Release Report Instance 
-description: Release Report Instance
+page_title: Release Report Instance Request Revealed
+description: "Learn how to make the Release Report Instance request to the Telerik Reporting REST Service and what response to expect."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/release-report-instance
 tags: release,report,instance
 published: True
 position: 1
 previous_url: /telerik-reporting-rest-report-instances-api-destroy-report-instance
 ---
+
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
-# Release Report Instance
+# `Release Report Instance` Overview
 
 ## Request
- 
+
 	DELETE /api/reports/clients/{clientId}/instances/{instanceId}
 
-__Path parameters__ 
+__Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
@@ -43,10 +44,10 @@ __Path parameters__
 
 ## Sample
 
-* Request 
+* Request
 
 		DELETE /api/reports/clients/2c3d/instances/4d3c HTTP/1.1
 
-* Response 
+* Response
 
 		HTTP/1.1 204 NoContent

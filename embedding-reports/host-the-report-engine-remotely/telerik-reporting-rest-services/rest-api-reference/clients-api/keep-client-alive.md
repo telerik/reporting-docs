@@ -1,32 +1,33 @@
 ---
 title: Keep Client Alive
-page_title: Keep Client Alive 
-description: Keep Client Alive
+page_title: Keep Client Alive Request Revealed
+description: "Learn how to make the Keep Client Alive request to the Telerik Reporting REST Service and what response to expect."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/keep-client-alive
 tags: keep,client,alive
 published: True
 position: 2
 previous_url: /telerik-reporting-rest-api-keep-client-alive
 ---
+
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
-# Keep Client Alive
+# `Keep Client Alive` Overview
 
 ## Request
 
 	POST /api/reports/clients/keepAlive/{clientID}
 
-__Path parameters__ 
+__Path parameters__
 
 | Name | Type | Description |
 | ------ | ------ | ------ |
@@ -44,7 +45,7 @@ __Path parameters__
 * Request 
 
 		POST /api/reports/clients/2c3d HTTP/1.1
-    
-* Response 
 
-		HTTP/1.1 204 NoContent     
+* Response
+
+		HTTP/1.1 204 NoContent

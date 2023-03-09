@@ -18,11 +18,8 @@ This tutorial demonstrates how to add the React Report Viewer component to a new
 The following list describes the prerequisites for this tutorial:
 
 * Review the React Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}#requirements).
-
 * A running application that hosts a Reporting REST service at address /api/reports. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
-
-* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\Report Designer\Examples__ placed in the folder used by the  [UriReportSourceResolver](/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver) in the Reporting REST service project.
-
+* Copy of the "Product Catalog.trdp" report file from __[TelerikReporting_InstallDir]\Report Designer\Examples__ placed in the folder used by the [UriReportSourceResolver](/api/Telerik.Reporting.Services.UriReportSourceResolver) in the Reporting REST service project.
 * Entry with the default connection string used by Telerik Reporting sample reports in the configuration file of the project hosting the Reporting REST service. For example:
 
 	__web.config__ file:
@@ -50,6 +47,7 @@ The following list describes the prerequisites for this tutorial:
 	}
 ````
 
+
 ## Using React Report Viewer in React application
 
 	>note All paths and URL links in the described steps must be adapted according to your project setup.
@@ -63,11 +61,13 @@ npx create-react-app my-app-with-viewer
 	cd my-app-with-viewer
 ````
 
+
 1. Install [jQuery](https://www.npmjs.com/package/jquery) by using the following command:
 
 	````powershell
 npm install jquery
 ````
+
 
 1. Install the Telerik React Report Viewer NPM package by running:
 
@@ -75,11 +75,13 @@ npm install jquery
 npm install @progress/telerik-react-report-viewer
 ````
 
+
 1. Once installed, import the TelerikReportViewer in the index.js file:
 
 	````JavaScript
 import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
 ````
+
 
 1. Add the report viewer to the page:
 
@@ -113,6 +115,7 @@ let viewer;
 	);
 ````
 
+
 1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) or [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview)): Add references to the Less-based CSS files in the `<head>` element of index.html:
 
 	````HTML
@@ -129,14 +132,13 @@ let viewer;
 npm start
 ````
 
+
 ## Demo project
 
-A sample project can be found in the installation folder of Telerik Reporting __[TelerikReporting_InstallDir]\Examples\React__. 
+A sample project can be found in the installation folder of Telerik Reporting __[TelerikReporting_InstallDir]\Examples\React__.
 
 ## See Also
 
 * [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%})
-
 * [React Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
-
 * [How to Use React Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-report-server%})

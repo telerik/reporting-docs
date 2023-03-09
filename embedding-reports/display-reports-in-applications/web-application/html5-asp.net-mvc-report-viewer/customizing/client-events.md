@@ -33,7 +33,7 @@ To attach a client event handler you have to set the appropriate `ClientEvents` 
 	}
 </script>
 ````
-````XML
+````CSHTML
 @(Html.TelerikReporting().ReportViewer()
 	.ClientEvents(
 		events => events

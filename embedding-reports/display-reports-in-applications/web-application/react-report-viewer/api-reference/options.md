@@ -17,11 +17,9 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Options
+# React Report Viewer Options
 
 Below is a list of all options available during initialization.
-
-## Options
 
 | Parameter | Description |
 | ------ | ------ |

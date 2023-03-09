@@ -9,48 +9,35 @@ position: 0
 previous_url: /asp-net-report-viewer
 ---
 
-# ASP.NET Web Forms Report Viewer
+# ASP.NET Web Forms Report Viewer Overview
 
 This document provides a brief overview of the *legacy* ASP.NET WebForms Report Viewer.
 
 > If you are building a new project, we strongly recommend using the latest WebForms Report Viewer - the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}). It includes a lot of improvements and new features.
 
-## Overview
+## Purpose and Features
 
 The ASP.NET ReportViewer is designed to render __Telerik Reports__ within ASP.NET WebForms projects.
 
-  ![An image of the ASP.NET WebForms Report Viewer displaying the Product Line Sales report](images/AspNetViewer.png)
+![An image of the ASP.NET WebForms Report Viewer displaying the Product Line Sales report](images/AspNetViewer.png)
 
 > The ASP.NET Report Viewer uses `ASP.NET Session` and `ASP.NET Cache` to preserve the report instance assigned to its `Report` property during page postbacks and for some design reasons as well, so `Session` must be enabled at all times.
 
 The ASP.NET Report Viewer has the following useful features:
 
 * Navigate back in history
-
 * Navigate forward in history
-
 * Go to first page
-
 * Go to previous page
-
 * Go to a specific page
-
 * Total number of pages
-
 * Go to next page
-
 * Go to last page
-
 * Export: see [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}) for available export formats.
-
 * Refresh
-
 * Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.
-
 * Print: see [True Print]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/true-print%}) for more info.
-
 * Show/Hide parameters area
-
 * Show/Hide document map
 
 ## How it works
@@ -68,13 +55,8 @@ The ASP.NET ReportViewer control's content is rendered in [`IFRAME`](https://dev
 ## See Also
 
 * [How to Add report viewer to a web page]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/how-to-add-report-viewer-to-a-web-page%})
-
 * [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/report-viewer-localization%})
-
 * [Deploying Web ReportViewer in SharePoint]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-reportviewer-in-sharepoint%})
-
 * [Medium Trust Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/medium-trust-support%})
-
 * [AJAX support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/ajax-support%})
-
 * [Client-Side API]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/client-side-api%})

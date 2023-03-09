@@ -1,9 +1,9 @@
 ---
 title: Methods
-page_title: Methods 
-description: Methods
+page_title: Methods of the React Report Viewer
+description: "Find a list of all of the available React Report Viewer methods and an example how to call them. Understand what each method does, using the provided descriptions."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/methods
-tags: methods
+tags: react, report, viewer, methods
 published: True
 position: 2
 previous_url: /react-report-viewer-api-reference-methods
@@ -17,26 +17,26 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Methods
+# React Report Viewer Methods
 
-Each method can be called using a reference to the report viewer component. 
-    
+Each method can be called using a reference to the report viewer component.
+
 ````JavaScript
 let viewer;
 ReactDOM.render(
-    <div>
-      <TelerikReportViewer
-      ...
-     />
-      <button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
-    </div>,
-  document.getElementById('root')
+	<div>
+		<TelerikReportViewer
+		...
+		/>
+		<button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
+	</div>,
+	document.getElementById('root')
 );
 ````
 
-The example above refreshes the report viewer. 
+The example above refreshes the report viewer.
 
-The following table lists the available methods: 
+The following table lists the available methods:
 
 |  __Method__ |  __Description__ |
 | ------ | ------ |

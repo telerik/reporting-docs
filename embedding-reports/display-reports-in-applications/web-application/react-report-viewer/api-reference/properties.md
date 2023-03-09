@@ -8,21 +8,20 @@ published: True
 position: 3
 previous_url: /react-report-viewer-api-reference-properties
 ---
+
 <style>
 table th:first-of-type {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(2) {
-    width: 25%;
+	width: 25%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
 # React Report Viewer Properties
-
-The React Report Viewer has several properties.
 
 ## Commands
 
@@ -66,4 +65,3 @@ The following table is a list of all commands:
 |toggleZoomMode|none|Changes the zoom mode of the report.|
 |toggleSideMenu|none|Shows or hides the side menu.|
 |toggleSearchDialog|none|Shows or hides the search dialog.|
-

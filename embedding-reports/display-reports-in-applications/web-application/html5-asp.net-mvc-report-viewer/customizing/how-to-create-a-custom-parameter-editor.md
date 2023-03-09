@@ -1,7 +1,7 @@
 ---
-title: How to Create a Custom Parameter Editor
-page_title: How to Create a Custom Parameter Editor 
-description: How to Create a Custom Parameter Editor
+title: Creating Custom Parameter Editors
+page_title: Using Custom Parameter Editors in HTML5 MVC Report Viewer
+description: "Learn how to create and then use custom Parameter Editors with the HTML5 MVC Report Viewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor
 tags: how,to,create,a,custom,parameter,editor
 published: True
@@ -9,31 +9,23 @@ position: 4
 previous_url: /html5-mvc-report-viewer-customizing-custom-parameters-editor
 ---
 
-# How to Create a Custom Parameter Editor
+# Creating Custom Parameter Editors Overview
 
-The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area. 
+The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.
 
-Custom parameter editors are defined through the ParameterEditors method when creating the report viewer widget. Check out the following list with the available parameter editors: 
+Custom parameter editors are defined through the ParameterEditors method when creating the report viewer widget. Check out the following list with the available parameter editors:
 
-* SingleSelectEditor 
+* SingleSelectEditor
+* MultiSelectEditor
+* MultiValueEditor
+* DateTimeEditor
+* StringEditor
+* NumberEditor
+* BooleanEditor
+* DefaultEditor
+* CustomEditors
 
-* MultiSelectEditor 
-
-* MultiValueEditor 
-
-* DateTimeEditor 
- 
-* StringEditor 
- 
-* NumberEditor 
- 
-* BooleanEditor 
- 
-* DefaultEditor 
- 
-* CustomEditors 
-
-The following example illustrates how to use the Kendo DropDownList widget for a single parameter value parameter editor which also has available values: 
+The following example illustrates how to use the [`Kendo DropDownList`](https://demos.telerik.com/kendo-ui/dropdownlist/index) widget for a `single` parameter value parameter editor which also has [available values](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues):
 
 ````JavaScript
 function createSingleSelectEditor(placeholder, options) {
@@ -60,7 +52,7 @@ function createSingleSelectEditor(placeholder, options) {
     };
 }
 ````
-````XML
+````CSHTML
 @(Html.TelerikReporting().ReportViewer()
      .Id("reportViewer1")
      .ParameterEditors(
@@ -71,13 +63,13 @@ function createSingleSelectEditor(placeholder, options) {
 ````
 
 
-If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor. Each custom editor requires two JavaScript functions provided as attributes: __MatchFunction__ and __CreateEditorFunction__. 
+If the predefined parameter types are not covering your scenario you can define a CustomParameterEditor. Each custom editor requires two JavaScript functions provided as attributes: `MatchFunction` and `CreateEditorFunction`.
 
-The __customMatch__ method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name, allowNull, availableValues, multiValue, type and etc. 
+The `customMatch` method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like `name`, `allowNull`, `availableValues`, `multiValue`, `type` and etc.
 
-The main work for creating and utilizing the parameter editor is done in the __createCustomEditor__ method. Its purpose is to create the parameter editor UI and wire it to the __parameterChanged__ callback when a new value is selected. The return result is a new object containing the __beginEdit__ method which is the entry point for creating the editor from the viewer. 
+The main work for creating and utilizing the parameter editor is done in the `createCustomEditor` method. Its purpose is to create the parameter editor UI and wire it to the `parameterChanged` callback when a new value is selected. The return result is a new object containing the `beginEdit` method which is the entry point for creating the editor from the viewer.
 
-The following example illustrates how to use the Kendo DropDownList widget for a boolean single parameter value parameter editor which also has available values: 
+The following example illustrates how to use the [`Kendo DropDownList`](https://demos.telerik.com/kendo-ui/dropdownlist/index) widget for a boolean single parameter value parameter editor which also has available values:
 
 ````JavaScript
 function customMatch(parameter) {
@@ -111,9 +103,9 @@ function createCustomEditor(placeholder, options) {
 ````
 
 
-Passing the parameter editor to the viewer: 
+Passing the parameter editor to the viewer:
 
-````XML
+````CSHTML
 @(Html.TelerikReporting().ReportViewer()
      .Id("reportViewer1")
      .ParameterEditors(
@@ -128,7 +120,7 @@ Passing the parameter editor to the viewer:
 ````
 
 
-> You can use any other custom UI covering the requirements of the createEditor method. 
+> You can use any other custom UI covering the requirements of the createEditor method.
 
 ## See Also
 

@@ -1,7 +1,7 @@
 ---
 title: Client Events
-page_title: Client Events 
-description: Client Events
+page_title: Using Client Events with HTML5 MVC Report Viewer
+description: "Learn how the HTML5 MVC Report Viewer client events can be handled with custom functions in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/client-events
 tags: client,events
 published: True
@@ -9,21 +9,21 @@ position: 6
 previous_url: /html5-mvc-report-viewer-customizing-client-events
 ---
 <style>
-table th:first-of-type {
-	width: 25%;
-}
-table th:nth-of-type(2) {
-	width: 75%;
-}
+	table th:first-of-type {
+		width: 25%;
+	}
+	table th:nth-of-type(2) {
+		width: 75%;
+	}
 </style>
 
-# Client Events
+# Client Events Overview
 
-This article explains how to attach client event handlers to an MVC ReportViewer instance. 
+This article explains how to attach client event handlers to an MVC ReportViewer instance.
 
-To attach a client event handler you have to set the appropriate __ClientEvents__ widget method as shown below: 
+To attach a client event handler you have to set the appropriate `ClientEvents` widget method as shown below:
 
-````JavaScript
+````HTML
 <script>
 	function onRenderingBegin() {
 		console.log("rendering begin!");
@@ -44,9 +44,9 @@ To attach a client event handler you have to set the appropriate __ClientEvents_
 ````
 
 
-The following table list the available client events: 
+The following table list the available client events:
 
-|  __Event__ |  __Description__ |
+| __Event__ | __Description__ |
 | ------ | ------ |
 |RenderingBegin|Occurs before rendering the report. For the underlying JS methods see [RenderingBegin]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)%})|
 |RenderingEnd|Occurs after rendering the report. For the underlying JS methods see [RenderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%})|

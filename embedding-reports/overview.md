@@ -41,8 +41,7 @@ There are many ways to add the report engine. You can [Host the Report Engine Re
 
 ### Generating Reports Remotely
 
-* [Telerik Reporting Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) - provide an Application Programming Interface (API) over HTTP to the report’s generation engine. It can be used by web and desktop report viewers as well as by any third-party client applications.
-* [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) - is based on [Windows Communication Foundation (WCF)](https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/dd456779(v=vs.100)) and is designed for the purposes of the [Telerik Silverlight Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/overview%}).
+[Telerik Reporting Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) - provide an Application Programming Interface (API) over HTTP to the report’s generation engine. It can be used by web and desktop report viewers as well as by any third-party client applications.
 
 ### Generating Reports Locally
 

@@ -24,7 +24,7 @@ __Required assemblies:__
 
 __Optional assemblies:__
 
-These assemblies add up to the core reporting functionality and should be used only if you need the specific feature. They are responsible for additional support formats, database session, retrieving data from an OLAP cube or using the Silverlight report viewer.
+These assemblies add up to the core reporting functionality and should be used only if you need the specific feature. They are responsible for additional support formats, database session, or retrieving data from an OLAP cube.
 
 * XPS rendering extension requires the __Telerik.Reporting.XpsRendering__ assembly (`Telerik.Reporting.XpsRendering.dll`).
 * DOCX/PPTX/XLSX rendering extensions require `Telerik.Reporting.OpenXmlRendering.dll` and [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}) (`DocumentFormat.OpenXml.dll v.2.0.5022.0` or above with [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element?redirectedfrom=MSDN).

@@ -60,7 +60,7 @@ Due to the format of the produced reports, the [Standalone Report Designer]({%sl
 
 The [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) provides the [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}) options.
 
-If you are using the HTML5 or the Silverlight Report Viewer to preview the report, the main report will be rendered in HTML or XAML respectively and loaded on the client. The sub-report is considered as part of the main report content and its report source will be internally resolved without additional calls to the Reporting REST service (Reporting WCF Service respectively).
+If you are using the HTML5 Report Viewer to preview the report, the main report will be rendered in HTML or XAML respectively and loaded on the client. The sub-report is considered as part of the main report content and its report source will be internally resolved without additional calls to the Reporting REST service (Reporting WCF Service respectively).
 
 ## The property DataSource of the SubReport item
 

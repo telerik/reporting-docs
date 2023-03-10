@@ -28,7 +28,7 @@ The following table describes the folder structure for the Telerik Reporting mai
 
 | Directory | Description |
 | ------ | ------ |
-|`...Progress\Telerik Reporting {{site.suiteversion}}\Bin`|<ul><li>`Telerik.Reporting.dll`</li><li>`Telerik.ReportViewer.Mvc.dll`</li><li>`Telerik.ReportViewer.WebForms.dll`</li><li>`Telerik.ReportViewer.WinForms.dll`</li><li>`Telerik.ReportViewer.Silverlight.dll`</li><li>`Telerik.ReportViewer.Wpf.dll`</li><li>`Telerik.Reporting.Adomd.dll`</li><li>`Telerik.Reporting.Service.dll`</li><li>`Telerik.Reporting.Services.ServiceStack.dll`</li><li>`Telerik.Reporting.Services.WebApi.dll`</li><li>`Telerik.Reporting.XpsRendering.dll`</li><li>`Telerik.Reporting.OpenXmlRendering.dll`</li><li>`Telerik.Reporting.Cache.Database.dll`</li></ul>|
+|`...Progress\Telerik Reporting {{site.suiteversion}}\Bin`|<ul><li>`Telerik.Reporting.dll`</li><li>`Telerik.ReportViewer.Mvc.dll`</li><li>`Telerik.ReportViewer.WebForms.dll`</li><li>`Telerik.ReportViewer.WinForms.dll`</li><li>`Telerik.ReportViewer.Wpf.dll`</li><li>`Telerik.Reporting.Adomd.dll`</li><li>`Telerik.Reporting.Service.dll`</li><li>`Telerik.Reporting.Services.ServiceStack.dll`</li><li>`Telerik.Reporting.Services.WebApi.dll`</li><li>`Telerik.Reporting.XpsRendering.dll`</li><li>`Telerik.Reporting.OpenXmlRendering.dll`</li><li>`Telerik.Reporting.Cache.Database.dll`</li></ul>|
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Bin\netstandard2.0`|<ul><li>`Telerik.Reporting.dll`</li><li>`Telerik.WebReportDesigner.Services.dll`</li><li>`Telerik.ReportViewer.Blazor.dll`</li><li>`Telerik.Reporting.WebServiceDataSource.dll`</li><li>`Telerik.Reporting.Services.HttpClient.dll`</li><li>`Telerik.Reporting.Services.AspNetCore.dll`</li><li>`Telerik.Reporting.OpenXmlRendering.2.7.2.dll`</li><li>`Telerik.Reporting.JsonSerialization.dll`</li><li>`Telerik.Reporting.Data.Schema.dll`</li><li>`Telerik.Reporting.Cache.StackExchangeRedis.dll`</li><li>`Telerik.Reporting.Cache.StackExchangeRedis.2.dll`</li></ul>|
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Bin\netcoreapp3.1`|<ul><li>`Telerik.Reporting.Services.AspNetCore.dll`</li><li>`Telerik.WebReportDesigner.Services.dll`</li><li>`Telerik.ReportViewer.WinForms.dll`</li><li>`Telerik.ReportViewer.Wpf.dll`</li><li>`Telerik.ReportViewer.Wpf.Themes.dll`</li></ul>|
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Bin\net6.0`|<ul><li>`Telerik.WebReportDesigner.Services.dll`</li><li>`Telerik.Reporting.Services.AspNetCore.dll`</li></ul>|
@@ -72,7 +72,6 @@ The following table describes the folder structure for the miscellaneous Report 
 | Directory | Description |
 | ------ | ------ |
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer`|The JavaScript and CSS files, and the template for the HTML5 Report Viewer.|
-|`...Progress\Telerik Reporting {{site.suiteversion}}\Silverlight\Themes`|The Silverlight Report Viewer themes.|
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Wpf\Themes`|The WPF Report Viewer themes.|
 
 ## Administrative Utilities

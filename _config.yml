@@ -222,43 +222,40 @@ navigation:
     embedding-reports/host-the-report-engine-remotely:
         position: 5
         title: "Generating Reports Remotely"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services:
-        position: 12
-        title: "Telerik Reporting REST Services"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation:
+    embedding-reports/host-the-report-engine-remotely/asp.net-web-api-implementation:
         position: 10
         title: "ASP.NET Web API Implementation"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation:
+    embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation:
         position: 11
         title: "ASP.NET Core Web API Implementation"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation:
+    embedding-reports/host-the-report-engine-remotely/servicestack-implementation:
         position: 12
         title: "ServiceStack Implementation"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver:
+    embedding-reports/host-the-report-engine-remotely/rest-service-report-source-resolver:
         position: 13
         title: "REST Service Report Source Resolver"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage:
+    embedding-reports/host-the-report-engine-remotely/rest-service-storage:
         position: 14
         title: "REST Service Storage"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference:
         position: 15
         title: "REST API Reference"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/clients-api:
         position: 10
         title: "Clients API"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-parameters-api:
         position: 11
         title: "Report Parameters API"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-instances-api:
         position: 12
         title: "Report Instances API"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/documents-api:
         position: 13
         title: "Documents API"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api:
         position: 14
         title: "General API"
-    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities:
+    embedding-reports/host-the-report-engine-remotely/rest-api-reference/json-entities:
         position: 15
         title: "JSON Entities"
     designing-reports:

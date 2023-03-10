@@ -12,372 +12,372 @@ exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd
 exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service","embedding-reports/display-reports-in-applications/silverlight-application"]
 navigation:
 ## List your directory names and order here, like this:
-	getting-started:
-		position: 2
-		title: "Getting Started"
-	getting-started/installation:
-		position: 5
-		title: "Download & Installation"
-	upgrade:
-		position: 11
-		title: "Upgrade"
-	styling:
-		position: 7
-		title: "Styles & Appearance"
-	styling/rendering-and-paging:
-		position: 8
-		title: "Rendering and Paging"
-	styling/rendering-and-paging/design-considerations-for-report-rendering:
-		position: 15
-		title: "Design Considerations for Report Rendering"
-	styling/styling-reports:
-		position: 1
-		title: "Styling"
-	report-items:
-		position: 3
-		title: "Report Items"
-	report-items/barcode:
-		position: 2
-		title: "Barcode"
-	report-items/barcode/1d-barcodes:
-		position: 20
-		title: "1D Barcodes"
-	report-items/barcode/2d-barcodes:
-		position: 30
-		title: "2D Barcodes"
-	report-items/report-item:
-		position: 10
-		title: "Report"
-	report-items/table-crosstab-list:
-		position: 13
-		title: "Table"
-	report-items/graph:
-		position: 5
-		title: "Graph"
-	report-items/graph/chart-types:
-		position: 10
-		title: "Chart Types"
-	report-items/graph/formatting-a-graph:
-		position: 20
-		title: "Styling and Formatting"
-	report-items/map:
-		position: 7
-		title: "Map"
-	report-items/map/map-types:
-		position: 10
-		title: "Types and Customization"
-	report-items/map/structure:
-		position: 15
-		title: "Structure and Elements"
-	report-items/map/formatting-a-map:
-		position: 20
-		title: "Styling and Formatting"
-	report-items/htmltextbox:
-		position: 6
-		title: "HtmlTextBox"
-	doc-output:
-		position: 10
-		title: "Document Output"
-	doc-output/configure-the-report-engine:
-		position: 10
-		title: "Configuring the Report Engine"
-	doc-output/configure-the-export-formats:
-		position: 11
-		title: "Configuring the Output Formats"
-	interactivity:
-		position: 8
-		title: "Interactivity"
-	interactivity/bookmarks:
-		position: 10
-		title: "Bookmarks"
-	interactivity/actions:
-		position: 11
-		title: "Actions"
-	interactivity/actions/sorting-action:
-		position: 11
-		title: "Sorting Action"
-	interactivity/actions/how-to:
-		position: 12
-		title: "How To"
-	interactivity/document-map:
-		position: 12
-		title: "Document Map"
-	interactivity/table-of-contents:
-		position: 13
-		title: "Table of Contents"
-	globalization:
-		position: 9
-		title: "Globalization"
-	importing-reports:
-		position: 6
-		title: "Importing Reports"
-	embedding-reports:
-		position: 5
-		title: "Embedding Reports"
-	embedding-reports/cache-management:
-		position: 7
-		title: "Cache Management"  
-	embedding-reports/program-the-report-definition:
-		position: 8
-		title: "Managing Reports Programmatically"
-	embedding-reports/program-the-report-definition/report-events:
-		position: 15
-		title: "Report Events"
-	embedding-reports/display-reports-in-applications:
-		position: 6
-		title: "Displaying Reports"
-	embedding-reports/display-reports-in-applications/web-application:
-		position: 10
-		title: "Web Application"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer:
-		position: 10
-		title: "HTML5 Report Viewer"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing:
-		position: 10
-		title: "Customizing"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance:
-		position: 15
-		title: "Styling and Appearance"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference:
-		position: 12
-		title: "API Reference"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer:
-		position: 10
-		title: "ReportViewer"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events:
-		position: 10
-		title: "Events"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods:
-		position: 11
-		title: "Methods"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties:
-		position: 12
-		title: "Properties"
-	embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace:
-		position: 12
-		title: "telerikReportViewer Namespace"
-	embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer:
-		position: 11
-		title: "HTML5 ASP.NET MVC Report Viewer"
-	embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing:
-		position: 15
-		title: "Customizing"
-	embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer:
-		position: 12
-		title: "HTML5 ASP.NET Web Forms Report Viewer" 
-	embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
-		position: 15
-		title: "Customizing"
-	embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
-		position: 13
-		title: "Angular Report Viewer"
-	embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing:
-		position: 12
-		title: "Customizing"
-	embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
-		position: 14
-		title: "API Reference"
-	embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
-		position: 16
-		title: "React Report Viewer"
-	embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing:
-		position: 12
-		title: "Customizing"
-	embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference:
-		position: 14
-		title: "API Reference"
-	embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer:
-		position: 15
-		title: "Blazor Report Viewer"
-	embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer:
-		position: 14
-		title: "Native Blazor Report Viewer"
-	embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing:
-		position: 12
-		title: "Customizing"
-	embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference:
-		position: 14
-		title: "API Reference"
-	embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer:
-		position: 17
-		title: "ASP.NET Web Forms Report Viewer"
-	embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state:
-		position: 15
-		title: "Design Considerations for Out-proc Session State"
-	embedding-reports/display-reports-in-applications/windows-forms-application:
-		position: 11
-		title: "Windows Forms Application"
-	embedding-reports/display-reports-in-applications/windows-forms-application/troubleshooting:
-		position: 15
-		title: "Troubleshooting"
-	embedding-reports/display-reports-in-applications/winui-3-desktop-application:
-		position: 1150
-		title: "WinUI 3 Desktop Application"
-	embedding-reports/display-reports-in-applications/wpf-application:
-		position: 12
-		title: "WPF Application"
-	embedding-reports/display-reports-in-applications/wpf-application/troubleshooting:
-		position: 15
-		title: "Troubleshooting"
-	embedding-reports/host-the-report-engine-remotely:
-		position: 5
-		title: "Generating Reports Remotely"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services:
-		position: 12
-		title: "Telerik Reporting REST Services"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation:
-		position: 10
-		title: "ASP.NET Web API Implementation"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation:
-		position: 11
-		title: "ASP.NET Core Web API Implementation"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation:
-		position: 12
-		title: "ServiceStack Implementation"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver:
-		position: 13
-		title: "REST Service Report Source Resolver"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage:
-		position: 14
-		title: "REST Service Storage"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference:
-		position: 15
-		title: "REST API Reference"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api:
-		position: 10
-		title: "Clients API"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api:
-		position: 11
-		title: "Report Parameters API"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api:
-		position: 12
-		title: "Report Instances API"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api:
-		position: 13
-		title: "Documents API"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api:
-		position: 14
-		title: "General API"
-	embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities:
-		position: 15
-		title: "JSON Entities"
-	designing-reports:
-		position: 4
-		title: "Creating Reports"
-	designing-reports/report-designer-tools:
-		position: 4
-		title: "Report Designers"
-	designing-reports/report-designer-tools/web-report-designer:
-		position: 10
-		title: "Web Report Designer"
-	designing-reports/report-designer-tools/web-report-designer/tools:
-		position: 10
-		title: "Tools"
-	designing-reports/report-designer-tools/web-report-designer/tools/table:
-		position: 10
-		title: "Table"
-	designing-reports/report-designer-tools/desktop-designers:
-		position: 11
-		title: "Desktop Designers"
-	designing-reports/report-designer-tools/desktop-designers/standalone-report-designer:
-		position: 10
-		title: "Standalone Report Designer"
-	designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration:
-		position: 10
-		title: "Configuration"
-	designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer:
-		position: 11
-		title: "Visual Studio Report Designer"
-	designing-reports/report-designer-tools/desktop-designers/tools:
-		position: 12
-		title: "Tools" 
-	designing-reports/report-designer-tools/desktop-designers/tools/report-wizards:
-		position: 10
-		title: "Report Wizards"
-	designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard:
-		position: 10
-		title: "Band Report Wizard"
-	designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards:
-		position: 11
-		title: "Data Source Wizards"
-	designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard:
-		position: 11
-		title: "SqlDataSource Wizards"
-	designing-reports/connecting-to-data:
-		position: 5
-		title: "Connecting to Data"
-	designing-reports/connecting-to-data/data-source-components:
-		position: 10
-		title: "Data Source Components"
-	designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
-		position: 10
-		title: "SqlDataSource Component"
-	designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
-		position: 11
-		title: "CsvDataSource Component"
-	designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
-		position: 12
-		title: "WebServiceDataSource Component"
-	designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
-		position: 13
-		title: "ObjectDataSource Component"
-	designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to:
-		position: 15
-		title: "How To"
-	designing-reports/connecting-to-data/data-source-components/entitydatasource-component:
-		position: 14
-		title: "EntityDataSource Component"
-	designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component:
-		position: 15
-		title: "OpenAccessDataSource Component"
-	designing-reports/connecting-to-data/data-source-components/cubedatasource-component:
-		position: 16
-		title: "CubeDataSource Component"
-	designing-reports/connecting-to-data/data-source-components/openclientdatasource-component:
-		position: 17
-		title: "OpenClientDataSource Component"
-	designing-reports/connecting-to-data/data-items:
-		position: 11
-		title: "Data Items"
-	designing-reports/connecting-to-data/data-items/filtering-data:
-		position: 10
-		title: "Filtering Data"
-	designing-reports/connecting-to-data/data-items/ordering-data:
-		position: 11
-		title: "Ordering Data"
-	designing-reports/connecting-to-data/data-items/grouping-data:
-		position: 12
-		title: "Grouping Data"
-	designing-reports/connecting-to-data/expressions:
-		position: 12
-		title: "Expressions"
-	designing-reports/connecting-to-data/expressions/using-expressions:
-		position: 10
-		title: "Using Expressions"
-	designing-reports/connecting-to-data/expressions/expressions-reference:
-		position: 11
-		title: "Expressions Reference"
-	designing-reports/connecting-to-data/expressions/expressions-reference/functions:
-		position: 15
-		title: "Functions"
-	designing-reports/connecting-to-data/expressions/extending-expressions:
-		position: 12
-		title: "Extending Expressions"
-	designing-reports/connecting-to-data/report-parameters:
-		position: 13
-		title: "Report Parameters"
-	designing-reports/connecting-to-data/troubleshooting:
-		position: 14
-		title: "Troubleshooting"
-	designing-reports/report-book:
-		position: 6
-		title: "Report Book" 
-	knowledge-base:
-		position: 20
-		title: "Knowledge Base"
-	api:
-		position: 30
-		title: "API Reference"
+    getting-started:
+        position: 2
+        title: "Getting Started"
+    getting-started/installation:
+        position: 5
+        title: "Download & Installation"
+    upgrade:
+        position: 11
+        title: "Upgrade"
+    styling:
+        position: 7
+        title: "Styles & Appearance"
+    styling/rendering-and-paging:
+        position: 8
+        title: "Rendering and Paging"
+    styling/rendering-and-paging/design-considerations-for-report-rendering:
+        position: 15
+        title: "Design Considerations for Report Rendering"
+    styling/styling-reports:
+        position: 1
+        title: "Styling"
+    report-items:
+        position: 3
+        title: "Report Items"
+    report-items/barcode:
+        position: 2
+        title: "Barcode"
+    report-items/barcode/1d-barcodes:
+        position: 20
+        title: "1D Barcodes"
+    report-items/barcode/2d-barcodes:
+        position: 30
+        title: "2D Barcodes"
+    report-items/report-item:
+        position: 10
+        title: "Report"
+    report-items/table-crosstab-list:
+        position: 13
+        title: "Table"
+    report-items/graph:
+        position: 5
+        title: "Graph"
+    report-items/graph/chart-types:
+        position: 10
+        title: "Chart Types"
+    report-items/graph/formatting-a-graph:
+        position: 20
+        title: "Styling and Formatting"
+    report-items/map:
+        position: 7
+        title: "Map"
+    report-items/map/map-types:
+        position: 10
+        title: "Types and Customization"
+    report-items/map/structure:
+        position: 15
+        title: "Structure and Elements"
+    report-items/map/formatting-a-map:
+        position: 20
+        title: "Styling and Formatting"
+    report-items/htmltextbox:
+        position: 6
+        title: "HtmlTextBox"
+    doc-output:
+        position: 10
+        title: "Document Output"
+    doc-output/configure-the-report-engine:
+        position: 10
+        title: "Configuring the Report Engine"
+    doc-output/configure-the-export-formats:
+        position: 11
+        title: "Configuring the Output Formats"
+    interactivity:
+        position: 8
+        title: "Interactivity"
+    interactivity/bookmarks:
+        position: 10
+        title: "Bookmarks"
+    interactivity/actions:
+        position: 11
+        title: "Actions"
+    interactivity/actions/sorting-action:
+        position: 11
+        title: "Sorting Action"
+    interactivity/actions/how-to:
+        position: 12
+        title: "How To"
+    interactivity/document-map:
+        position: 12
+        title: "Document Map"
+    interactivity/table-of-contents:
+        position: 13
+        title: "Table of Contents"
+    globalization:
+        position: 9
+        title: "Globalization"
+    importing-reports:
+        position: 6
+        title: "Importing Reports"
+    embedding-reports:
+        position: 5
+        title: "Embedding Reports"
+    embedding-reports/cache-management:
+        position: 7
+        title: "Cache Management"  
+    embedding-reports/program-the-report-definition:
+        position: 8
+        title: "Managing Reports Programmatically"
+    embedding-reports/program-the-report-definition/report-events:
+        position: 15
+        title: "Report Events"
+    embedding-reports/display-reports-in-applications:
+        position: 6
+        title: "Displaying Reports"
+    embedding-reports/display-reports-in-applications/web-application:
+        position: 10
+        title: "Web Application"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer:
+        position: 10
+        title: "HTML5 Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing:
+        position: 10
+        title: "Customizing"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance:
+        position: 15
+        title: "Styling and Appearance"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference:
+        position: 12
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer:
+        position: 10
+        title: "ReportViewer"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events:
+        position: 10
+        title: "Events"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods:
+        position: 11
+        title: "Methods"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties:
+        position: 12
+        title: "Properties"
+    embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace:
+        position: 12
+        title: "telerikReportViewer Namespace"
+    embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer:
+        position: 11
+        title: "HTML5 ASP.NET MVC Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing:
+        position: 15
+        title: "Customizing"
+    embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer:
+        position: 12
+        title: "HTML5 ASP.NET Web Forms Report Viewer" 
+    embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
+        position: 15
+        title: "Customizing"
+    embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
+        position: 13
+        title: "Angular Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing:
+        position: 12
+        title: "Customizing"
+    embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
+        position: 16
+        title: "React Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing:
+        position: 12
+        title: "Customizing"
+    embedding-reports/display-reports-in-applications/web-application/react-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer:
+        position: 15
+        title: "Blazor Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer:
+        position: 14
+        title: "Native Blazor Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing:
+        position: 12
+        title: "Customizing"
+    embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference:
+        position: 14
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer:
+        position: 17
+        title: "ASP.NET Web Forms Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state:
+        position: 15
+        title: "Design Considerations for Out-proc Session State"
+    embedding-reports/display-reports-in-applications/windows-forms-application:
+        position: 11
+        title: "Windows Forms Application"
+    embedding-reports/display-reports-in-applications/windows-forms-application/troubleshooting:
+        position: 15
+        title: "Troubleshooting"
+    embedding-reports/display-reports-in-applications/winui-3-desktop-application:
+        position: 1150
+        title: "WinUI 3 Desktop Application"
+    embedding-reports/display-reports-in-applications/wpf-application:
+        position: 12
+        title: "WPF Application"
+    embedding-reports/display-reports-in-applications/wpf-application/troubleshooting:
+        position: 15
+        title: "Troubleshooting"
+    embedding-reports/host-the-report-engine-remotely:
+        position: 5
+        title: "Generating Reports Remotely"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services:
+        position: 12
+        title: "Telerik Reporting REST Services"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation:
+        position: 10
+        title: "ASP.NET Web API Implementation"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation:
+        position: 11
+        title: "ASP.NET Core Web API Implementation"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation:
+        position: 12
+        title: "ServiceStack Implementation"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver:
+        position: 13
+        title: "REST Service Report Source Resolver"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage:
+        position: 14
+        title: "REST Service Storage"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference:
+        position: 15
+        title: "REST API Reference"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api:
+        position: 10
+        title: "Clients API"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-parameters-api:
+        position: 11
+        title: "Report Parameters API"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api:
+        position: 12
+        title: "Report Instances API"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api:
+        position: 13
+        title: "Documents API"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api:
+        position: 14
+        title: "General API"
+    embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/json-entities:
+        position: 15
+        title: "JSON Entities"
+    designing-reports:
+        position: 4
+        title: "Creating Reports"
+    designing-reports/report-designer-tools:
+        position: 4
+        title: "Report Designers"
+    designing-reports/report-designer-tools/web-report-designer:
+        position: 10
+        title: "Web Report Designer"
+    designing-reports/report-designer-tools/web-report-designer/tools:
+        position: 10
+        title: "Tools"
+    designing-reports/report-designer-tools/web-report-designer/tools/table:
+        position: 10
+        title: "Table"
+    designing-reports/report-designer-tools/desktop-designers:
+        position: 11
+        title: "Desktop Designers"
+    designing-reports/report-designer-tools/desktop-designers/standalone-report-designer:
+        position: 10
+        title: "Standalone Report Designer"
+    designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration:
+        position: 10
+        title: "Configuration"
+    designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer:
+        position: 11
+        title: "Visual Studio Report Designer"
+    designing-reports/report-designer-tools/desktop-designers/tools:
+        position: 12
+        title: "Tools" 
+    designing-reports/report-designer-tools/desktop-designers/tools/report-wizards:
+        position: 10
+        title: "Report Wizards"
+    designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard:
+        position: 10
+        title: "Band Report Wizard"
+    designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards:
+        position: 11
+        title: "Data Source Wizards"
+    designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard:
+        position: 11
+        title: "SqlDataSource Wizards"
+    designing-reports/connecting-to-data:
+        position: 5
+        title: "Connecting to Data"
+    designing-reports/connecting-to-data/data-source-components:
+        position: 10
+        title: "Data Source Components"
+    designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
+        position: 10
+        title: "SqlDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
+        position: 11
+        title: "CsvDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
+        position: 12
+        title: "WebServiceDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
+        position: 13
+        title: "ObjectDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to:
+        position: 15
+        title: "How To"
+    designing-reports/connecting-to-data/data-source-components/entitydatasource-component:
+        position: 14
+        title: "EntityDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component:
+        position: 15
+        title: "OpenAccessDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/cubedatasource-component:
+        position: 16
+        title: "CubeDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/openclientdatasource-component:
+        position: 17
+        title: "OpenClientDataSource Component"
+    designing-reports/connecting-to-data/data-items:
+        position: 11
+        title: "Data Items"
+    designing-reports/connecting-to-data/data-items/filtering-data:
+        position: 10
+        title: "Filtering Data"
+    designing-reports/connecting-to-data/data-items/ordering-data:
+        position: 11
+        title: "Ordering Data"
+    designing-reports/connecting-to-data/data-items/grouping-data:
+        position: 12
+        title: "Grouping Data"
+    designing-reports/connecting-to-data/expressions:
+        position: 12
+        title: "Expressions"
+    designing-reports/connecting-to-data/expressions/using-expressions:
+        position: 10
+        title: "Using Expressions"
+    designing-reports/connecting-to-data/expressions/expressions-reference:
+        position: 11
+        title: "Expressions Reference"
+    designing-reports/connecting-to-data/expressions/expressions-reference/functions:
+        position: 15
+        title: "Functions"
+    designing-reports/connecting-to-data/expressions/extending-expressions:
+        position: 12
+        title: "Extending Expressions"
+    designing-reports/connecting-to-data/report-parameters:
+        position: 13
+        title: "Report Parameters"
+    designing-reports/connecting-to-data/troubleshooting:
+        position: 14
+        title: "Troubleshooting"
+    designing-reports/report-book:
+        position: 6
+        title: "Report Book" 
+    knowledge-base:
+        position: 20
+        title: "Knowledge Base"
+    api:
+        position: 30
+        title: "API Reference"
 ## The application virtual path
 baseurl: /reporting
 
@@ -390,22 +390,22 @@ registry_url: 'https://registry.npm.telerik.com/'
 ## Assign layout and category per different paths
 defaults:
 -
-	scope:
-		path: ""
-	values:
-		layout: "documentation"
-		category: "default"
-		product: "reporting"
-		editable: true
+    scope:
+        path: ""
+    values:
+        layout: "documentation"
+        category: "default"
+        product: "reporting"
+        editable: true
 -
-	scope:
-		path: "api"
-	values:
-		kind: "api"
-		res_type: "api"
-		description_suffix: "- Save development time with the complete Telerik Reporting reference listing publicly available classes, methods, and properties."
-		title_suffix: "Telerik Reporting API Reference"
-		
+    scope:
+        path: "api"
+    values:
+        kind: "api"
+        res_type: "api"
+        description_suffix: "- Save development time with the complete Telerik Reporting reference listing publicly available classes, methods, and properties."
+        title_suffix: "Telerik Reporting API Reference"
+        
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 suiteversion: "R1 2023"

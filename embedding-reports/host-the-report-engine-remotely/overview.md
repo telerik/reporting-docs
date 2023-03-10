@@ -4,7 +4,7 @@ page_title: Generating Reports Remotely at a Glance
 description: "Learn how to generate reports remotely by hosting the report engine in a REST Service when working with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview
 tags: telerik, reporting, embedding, reports, host, engine, generate, remotely, overview
-published: True
+published: False
 position: 0
 previous_url: /telerik-reporting-services
 ---

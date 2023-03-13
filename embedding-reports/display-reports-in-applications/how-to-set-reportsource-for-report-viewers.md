@@ -46,7 +46,7 @@ The specified report is processed locally on the same machine where the Report V
 
 ## Set up Report Viewers that operate via Telerik Reporting Services
 
-The following Report Viewers are designed to work as clients of [Telerik Reporting Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview%}):
+The following Report Viewers are designed to work as clients of [Telerik Reporting Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}):
 
 * __HTML5 Report Viewer__ (go to section [HTML5 Viewer](#html5-report-viewer))
 * __HTML5 ASP.NET MVC Report Viewer__ (go to section [MVC Viewer](#html5-aspnet-mvc-report-viewer))
@@ -182,7 +182,7 @@ __Example of setting the ReportSource in code-behind:__
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=Winviewer_SetReportSource}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=Winviewer_SetReportSource}}
 
-### __WPF Report Viewer__ 
+### __WPF Report Viewer__
 
 The [WPF Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) can be connected to a __Telerik Reporting REST Service__ or __Telerik Report Server__ by setting its __ReportEngineConnection property__ - [How To: Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}). For more details check [How To: Use WPF Report Viewer with Report Server (REST Service)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%}). In this scenario the viewer's ReportSource property of type __Telerik.Reporting.ReportSource__ is considered as a __client-side ReportSource__. The client report source can be set in the same way as if the viewer is operating locally (go to section [Set up Report Viewer controls that work with Telerik Reporting Engine](#set-up-report-viewer-controls-that-work-with-telerik-reporting-engine)), where the __selection is limited to TypeReportSource and UriReportSource__:
 

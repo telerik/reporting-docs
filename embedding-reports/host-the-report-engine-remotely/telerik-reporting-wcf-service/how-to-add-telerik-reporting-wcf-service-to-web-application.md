@@ -11,6 +11,8 @@ previous_url: /silverlight-hosting-in-iis
 
 # How to Add Telerik Reporting WCF Service to Web Application
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 This topic describes how to host the Telerik Reporting WCF Service in IIS. For this purpose you should follow the steps below to configure your web application:
 
 1. Required assembly references:

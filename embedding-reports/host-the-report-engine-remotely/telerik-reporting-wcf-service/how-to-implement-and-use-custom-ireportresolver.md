@@ -11,6 +11,8 @@ previous_url: /WCF-report-service-How-to-add-custom-report-resolver
 
 # Implementing and Using Custom IReportResolver
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 The client programs invoke the report rendering from the service using a string report description. Based on the report description the service’s report resolvers try to create an IReportDocument instance needed by the ReportProcessor.
 
 The IReportDocument interface represents a report document. This includes a single Report or ReportBook. The IReportDocument returned by the report resolver will be further handled by the ReportProcessor.

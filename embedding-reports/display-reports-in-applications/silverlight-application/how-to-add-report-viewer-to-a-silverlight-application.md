@@ -11,6 +11,8 @@ previous_url: /silverlight-report-viewer-embedding_the_Silverlight_Viewer, /silv
 
 # Add report viewer to a Silverlight application
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 This article explains the steps needed to create an application which uses the Silverlight report viewer.
 
 1. First you need to create a Silverlight project. Once you do, add references to the following NoXaml assemblies in your Silverlight project:

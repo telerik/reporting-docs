@@ -11,6 +11,8 @@ previous_url: /silverlight-report-viewer-using-custom-bindings
 
 # Using Custom Bindings for ReportServiceClient
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 You might encounter a need to use custom Bindings for the __ReportServiceClient__ in certain scenarios. To do that create your own __ReportServiceClient__ object instance and initialize it according to your needs.
 
 You need to implement the __IReportServiceClientFactory__ interface and its only method should create and return a new instance of the __ReportServiceClient__ class using any of its constructors. This way you attach your custom Binding to be used for connecting to the Report Service.

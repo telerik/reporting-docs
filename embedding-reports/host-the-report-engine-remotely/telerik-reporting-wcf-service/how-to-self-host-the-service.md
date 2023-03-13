@@ -11,6 +11,8 @@ previous_url: /self-hosted-telerik-reporting-wcf-service
 
 # Self Hosting the WCF Reporting Service
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 The advantages of a Self-Hosted service:
 
 * Easy to use: With only a few lines of code you have your service running.

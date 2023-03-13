@@ -11,6 +11,8 @@ previous_url: /silverlight-enable-ssl-for-telerik-reporting-wcf-service
 
 # Enabling SSL for the Reporting WCF service
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 When using HTTP as the transport, security is provided by a Secure Sockets Layer (SSL) implementation. SSL is widely used on the Internet to authenticate a service to a client, and then to provide confidentiality (encryption) to the channel. This topic explains how to enable SSL for the Telerik Reporting WCF service.
 
 The solution is to configure corresponding bindings to use [Transport security mode](https://learn.microsoft.com/en-us/dotnet/framework/wcf/feature-details/transport-security-overview). Use the [bindingConfiguration property](https://learn.microsoft.com/en-us/dotnet/api/system.servicemodel.configuration.serviceendpointelement.bindingconfiguration?view=netframework-4.8.1#System_ServiceModel_Configuration_ServiceEndpointElement_BindingConfiguration) inside your endpoint definition to point to your custom bindings. 

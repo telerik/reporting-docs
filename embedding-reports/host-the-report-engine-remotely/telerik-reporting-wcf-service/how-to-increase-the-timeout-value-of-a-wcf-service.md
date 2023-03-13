@@ -11,6 +11,8 @@ previous_url: /wcf-report-service-increasing-timeout
 
 # Increase the Timeout of a WCF Service
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 To avoid timeouts when using the Telerik Reporting WCF Service, one should set several attributes on the client and server side.
 
 ## Timeouts on server binding

@@ -11,6 +11,8 @@ previous_url: /report-viewer-localization3
 
 # Silverlight Report Viewer Localization
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 In the Silverlight Report Viewer, localized resources are stored in separate __RESX__ resource files and loaded according to the current UI culture settings. To understand how localized resources are loaded, it is useful to think of them as being organized in a hierarchical manner.
 
 ## Types of Resources in the Hierarchy

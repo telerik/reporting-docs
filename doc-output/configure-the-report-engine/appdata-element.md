@@ -1,7 +1,7 @@
 ---
 title: appData Element
-page_title: appData Element 
-description: appData Element
+page_title: appData Element Information 
+description: "Learn how to use the appData Element to the choose where temporary application settings will be stored on the file system"
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/appdata-element
 tags: appdata,element
 published: True
@@ -10,14 +10,14 @@ previous_url: /configuring-telerik-reporting-appdata
 ---
 <style>
 table th:first-of-type {
-    width: 10%;
+    width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 90%;
+    width: 80%;
 }
 </style>
 
-# appData Element
+# appData Element Overview
 
 The appData element specifies the configuration settings for the temporary application data stored on the machine. 
 
@@ -34,7 +34,7 @@ __`<appData>` element__
 
 XML-based configuration file:
     
-````xml
+````XML
 <configuration>
     …
     <Telerik.Reporting>
@@ -46,7 +46,7 @@ XML-based configuration file:
 
 JSON-based configuration file:
     
-````js
+````JSON
 "telerikReporting": {
   "appData": {
     "path": "c:\\temp"

@@ -1,7 +1,7 @@
 ---
 title: extensions Element
-page_title: extensions Element 
-description: extensions Element
+page_title: extensions Element Configuration 
+description: "Learn how to configure the device info settings for all report rendering formats through the extensions configuration element."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element
 tags: extensions,element
 published: True
@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# extensions Element
+# extensions Element Overview
 
 Extensions XML element specifies a collection of extension types, for which configuration is applied.
 
@@ -75,7 +75,7 @@ Parameter XML element specifies a parameter for the extension defined in the anc
 
 XML-based configuration file:
     
-````xml
+````XML
 <configuration>
     …
     <Telerik.Reporting>
@@ -95,7 +95,7 @@ XML-based configuration file:
 
 JSON-based configuration file:
     
-````js
+````JSON
 "telerikReporting": {
 	"extensions": [
 		{
@@ -114,15 +114,15 @@ JSON-based configuration file:
 
 ## Configuring Multiple Entries for a Rendering Extension
 
-You can specify multiple instances of a single rendering extension to vary rendering behavior. If you configure multiple instances, make sure that each extension __name__ is unique. Then you can use the rendering extension programmatically by using the extension name to identify which particular instance to use for a particular rendering operation. 
+You can specify multiple instances of a single rendering extension to vary rendering behavior. If you configure multiple instances, make sure that each extension `name` is unique. Then, you can edit the rendering extension programmatically by using the extension name to identify which particular instance to use for a particular rendering operation. 
 
-You should also specify the __description__ attribute of the Extension element. The string you specify for __description__ will be visible to users in the list of export options for the report. If you are configuring multiple versions of the same extension, be sure to provide a value for the __description__. Otherwise, all versions of the extension will have the same export option name. 
+You should also specify the `description` attribute of the Extension element. The string you specify for `description` will be visible to users in the list of export options for the report. If you are configuring multiple versions of the same extension, be sure to provide a value for the `description`. Otherwise, all versions of the extension will have the same export option name. 
 
-The following example illustrates how to use the default Image rendering extension (which produces TIFF output) alongside a second instance that outputs reports in EMF. Notice that the extension name distinguishes one instance from the other: 
+The following example illustrates how to use the default Image rendering extension (which produces `TIFF` output) alongside a second instance that outputs reports in `EMF`. Notice that the extension name distinguishes one instance from the other: 
 
 XML-based configuration file:
     
-````xml
+````XML
 <Telerik.Reporting>
     <extensions>
         <render>
@@ -140,7 +140,7 @@ XML-based configuration file:
 
 JSON-based configuration file:
     
-````js
+````JSON
 "telerikReporting": {
 	"extensions": [
 		{
@@ -162,7 +162,7 @@ JSON-based configuration file:
 
 ## Set rendering parameters programmatically
 
-To define device rendering parameters programmatically, we need a key/value pair, and what better than a [HashTable](http://msdn.microsoft.com/en-us/library/system.collections.hashtable.aspx) which represents collection of key/value pairs. If the collection contains rendering parameters that are not supported by the specified rendering extension, they would be ignored. 
+To define device rendering parameters programmatically, we need a key/value pair, and what better than a [HashTable](https://learn.microsoft.com/en-us/dotnet/api/system.collections.hashtable) which represents collection of key/value pairs. If the collection contains rendering parameters that are not supported by the specified rendering extension, they would be ignored. 
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Processing\ReportProcessorSnippets.cs region=Add_Device_Settings_Snippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Processing\ReportProcessorSnippets.vb region=Add_Device_Settings_Snippet}}

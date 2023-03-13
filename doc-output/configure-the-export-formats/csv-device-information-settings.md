@@ -1,9 +1,9 @@
 ---
 title: CSV Device Information Settings
-page_title: CSV Device Information Settings 
-description: CSV Device Information Settings
+page_title: CSV Device Information Settings at a glance
+description: "Find detailed information about the different CSV rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings
-tags: csv,device,information,settings
+tags: csv, device, information, settings, options
 published: True
 position: 6
 previous_url: /device-information-settings-csv, /using-reports-in-applications/export-and-configure/configure-the-export-formats/csv-device-information-settings
@@ -20,11 +20,11 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# CSV Device Information Settings
+# Device Information Settings for the CSV rendering format
 
 The following table lists the device information settings for rendering in CSV format.
 
-## CSV Device Information Settings
+## Available CSV Device Information Settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |

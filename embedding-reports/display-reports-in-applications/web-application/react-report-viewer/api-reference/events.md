@@ -1,9 +1,9 @@
 ---
 title: Events
-page_title: Events 
-description: Events
+page_title: Events of the React Report Viewer
+description: "Find a list of all of the available React Report Viewer events. Understand the purpose of each event, using the provided descriptions."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/events
-tags: events
+tags: react, report, viewer, events
 published: True
 position: 1
 previous_url: /react-report-viewer-api-reference-events
@@ -17,11 +17,9 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Events
+# React Report Viewer Events
 
 Below is a list of all available report viewer events.
-
-## Events
 
 | Parameter | Description |
 | ------ | ------ |
@@ -43,4 +41,3 @@ Below is a list of all available report viewer events.
 | __viewerToolTipOpening__ | *function(e, args);optional;* A callback function that will be called when a tooltip is being opened.|
 
 For more details on each event and its arguments/return value, please refer to the [HTML5 Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)%}).
-

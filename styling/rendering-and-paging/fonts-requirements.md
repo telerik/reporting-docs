@@ -1,21 +1,21 @@
 ---
 title: Fonts Requirements
-page_title: Fonts Requirements 
-description: Fonts Requirements
+page_title: Fonts Requirements at a glance
+description: "Learn important details about the general Fonts requirements, as well as specifics when using a certain rendering format, font style, etc."
 slug: telerikreporting/designing-reports/rendering-and-paging/fonts-requirements
-tags: fonts,requirements
+tags: fonts, requirements
 published: True
 position: 5
 previous_url: /rendering-fonts-in-reports
 ---
 
-# Fonts Requirements
+# Fonts Requirements Overview
 
 Telerik Reporting engine uses GDI+ methods to create reports with native objects for the selected rendering format. This requires all used fonts to be supported by GDI+.
 
 ## Requirements
 
-* .NET supports only __TrueType__  fonts. You can check your available fonts in __%windir%\fonts__;
+* .NET supports only `TrueType` fonts. You can check your available fonts in `%windir%\fonts`;
 
 * The selected fonts should be considered with the text that will be visualized. Special glyphs and icons will require you to use a font with Unicode characters support like Arial Unicode MS.
 

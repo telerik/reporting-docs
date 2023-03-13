@@ -1,7 +1,7 @@
 ---
 title: Area Charts
 page_title: Area Charts Overview
-description: "Learn more about the Telerik Reporting Area Chart types supported by the Graph report item and learn how to create a Stacked Area chart."
+description: "Learn more about the Telerik Reporting Area Chart types supported by the Graph report item and how to create a Stacked Area chart."
 slug: telerikreporting/designing-reports/report-structure/graph/chart-types/area-charts/overview
 tags: telerik, reporting, report, items, graph, area, chart, overview, creating
 previous_url: /report-items/graph/chart-types/area-charts/how-to-create-area-chart, /report-items/graph/chart-types/area-charts/overview, /GraphHowToCreateAreaChart, /AreaCharts
@@ -10,20 +10,20 @@ published: True
 
 # Creating and Customizing Area Charts
 
-An Area chart displays a series as a set of points connected by a line with the whole area filled in under the line. 
+An Area chart displays a series as a set of points connected by a line with the whole area filled in under the line.
 
-Area charts are appropriate for visualizing data that fluctuates over a period of time and can be useful for emphasizing trends. Values that don't vary too wildly work best for Area charts. 
+Area charts are appropriate for visualizing data that fluctuates over a period of time and can be useful for emphasizing trends. Values that don't vary too wildly work best for Area charts.
 
-The following image shows an example of a Stacked Area chart: 
+The following image shows an example of a Stacked Area chart:
 
-![Stacked Area Chart](images/AreaChartWizardPreview.png)
+![Preview of Graph Item with Stacked Area Chart](images/AreaChartWizardPreview.png)
 
-## Types 
+## Types
 
-The Graph supports the following Area chart types: 
+The Graph supports the following Area chart types:
 
-* __Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart. 
-* __100% Percent Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically to fit the entire chart area. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart. 
+* __Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart.
+* __100% Percent Stacked Area Charts__&mdash;An Area chart where multiple series are stacked vertically to fit the entire chart area. If there is only one series in the chart, the Stacked Area chart will appear in the same way as an Area chart.
 * __Smooth Area Charts__&mdash;An Area chart where the data points are connected by a smooth line instead of a regular line. Smooth Area charts are suitable for displaying trends rather than values of individual data points.
 
 ## Creating Area Charts with the Area Chart Wizard
@@ -41,16 +41,15 @@ FROM
 	[Sales].[SalesOrderHeader] ON [Sales].[SalesOrderDetail].[SalesOrderID] = [Sales].[SalesOrderHeader].[SalesOrderID]
 ````
 
-
 To create the Stacked Area chart by using the Area Chart Wizard: 
 
 1. Add a Stacked Area chart:
 
-	![Adding the Telerik Reporting Area Chart Wizard](images/AreaChartWizardAdd.png)
+	![Adding the Telerik Reporting Area Chart Wizard from the Insert Menu Item of the Standalone Report Designer](images/AreaChartWizardAdd.png)
 
 1. Select the SqlDataSource, or create it with the **Add New Data Source...** button and by using the query above:
 
-	![Add DataSource to the Area Chart](images/AreaChartWizardDataSource.png)
+	![Add DataSource to the Area Chart with the Wizard of the Standalone Report Designer](images/AreaChartWizardDataSource.png)
 
 1. Arrange the Area Chart:
 
@@ -58,7 +57,7 @@ To create the Stacked Area chart by using the Area Chart Wizard:
 	1. Drag the __OrderDate.Year__ field to the **Series**.
 	1. Drag the __LineTotal__ field to the **Values**. The wizard will automatically apply the `Sum` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}).
 
-	![Arrange the Area Chart](images/AreaChartWizardArrangeFields.png)
+	![Arrange the Area Chart Series, Categories and Values from the Wizard in the Standalone Report Designer](images/AreaChartWizardArrangeFields.png)
 
 1. The `LineTotal` value is large, so let's change the `Data > Y` [expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) of `areaSeries` that is currently `=Sum(Fields.LineTotal)` to `=ISNULL(Sum(Fields.LineTotal), 0) / 1000.0`. Note that a `Null` check is also included and the `Null` values to be replaced with a `0` (zero).
 
@@ -72,7 +71,7 @@ This section will show how to manually create a Stacked Area chart.
 
 ### 1. Add the Graph
 
-To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({% slug graph_item_get_started %}).
+To add a new Graph report item to the report, refer to the article on [getting started with the Graph report item]({%slug graph_item_get_started%}).
 
 ### 2. Set the SeriesGroups Hierarchy 
 
@@ -94,7 +93,7 @@ Next, you will have to define the **CategoryGroups** hierarchy of the Stacked Ar
 
 ### 4. Configure the Coordinate System
 
-Here you will specify the coordinate system details: 
+Here you will specify the coordinate system details:
 
 1. Open the __CoordinateSystems__ collection editor and __Add__ a new __CartesianCoordinateSystem__.
 1. Leave the __Name__ to `cartesianCoordinateSystem1`.
@@ -116,7 +115,7 @@ In this step, you will configure the series of the chart:
 
 To set the color palette, format the labels, define the values of the legend, and elaborate on any other styling options, refer to the section on [formatting the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/formatting-a-graph/style-resolving-fallback-algorithm%}).
 
-## See Also 
+## See Also
 
 * [(Demo) Employee Sales Report with Area Charts](https://demos.telerik.com/reporting/employee-sales)
 * [(Demo) Crypto Dashboard Report with Area Charts](https://demos.telerik.com/reporting/crypto-dashboard)

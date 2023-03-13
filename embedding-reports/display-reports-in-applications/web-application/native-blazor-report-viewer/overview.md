@@ -21,9 +21,7 @@ table th:nth-of-type(2) {
 
 The Native Blazor Report Viewer is a native Blazor component which can be used in Blazor applications.
 
-> It is our newest report viewer, included with the latest release, and as such, it is still being actively developed. There are some missing functionalities that will be implemented in the future.
-
-![Native Blazor Report Viewer image](../images/NativeBlazorReportViewer/NativeBlazorReportViewer.png)
+![The preview of the demo report Dashboard in the Native Blazor Report Viewer in Firefox browser](../images/NativeBlazorReportViewer/NativeBlazorReportViewer.png)
 
 |Button or Input(from left to right)|Action
 |:---|:---

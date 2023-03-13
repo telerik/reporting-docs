@@ -1,7 +1,7 @@
 ---
 title: processing Element
-page_title: processing Element 
-description: processing Element
+page_title: Configuring the processing Element 
+description: "Learn how to configure the processing options of the reporting engine such as whether the definiton properties should be cached, or to set up custom SharedDataSource and Resources resolvers."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element
 tags: processing,element
 published: True
@@ -16,7 +16,7 @@ table th:nth-of-type(2) {
 	width: 90%;
 }
 </style>
-# processing Element
+# processing Element Overview
 
 The Processing element specifies the configuration settings that will be applied during the processing of the report. 
 
@@ -26,6 +26,7 @@ The Processing element specifies the configuration settings that will be applied
 | ------ | ------ |
 |Attributes|__cacheDefinitionProperties__ - optional boolean attribute. Determines if the report definition properties will be cached during the processing, making them immutable.|
 |Child elements|__resourceResolver__ – optional element. Changes the behavior of the default resource resolving mechanism. Only one `resourceResolver` element can be used in the `<processing>` element.|
+|Child elements|__sharedDataSourceResolver__ – optional element. Changes the behavior of the default shareddatasource resolving mechanism. Only one `sharedDataSourceResolver` element can be used in the `<processing>` element.|
 |Parent element|__Telerik.Reporting__ - specifies the root element of the Telerik Reporting configuration settings. Only one `<processing>` element can be used in the `Telerik.Reporting` element.|
 
 

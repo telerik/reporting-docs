@@ -1,9 +1,9 @@
 ---
 title: assemblyReferences Element
-page_title: assemblyReferences Element 
-description: assemblyReferences Element
+page_title: assemblyReferences Element Configuration
+description: "Learn how to set up the assemblyReferences Element in order to use custom user functions in the report and create ObjectDataSource components"
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element
-tags: assemblyreferences,element
+tags: assemblyreferences,element, user, function, ObjectDataSource
 published: True
 position: 4
 previous_url: /configuring-telerik-reporting-assemblyreferences
@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# assemblyReferences Element
+# assemblyReferences Element Overview
 
 Defines a collection of assembly references that are used from Reporting Engine during processing stage to resolve names of user functions and user aggregate functions and also the types used by ObjectDataSource component. 
 

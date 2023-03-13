@@ -8,16 +8,16 @@ published: True
 position: 5
 ---
 
-# Growing and Shrinking
+# Growing and Shrinking of HtmlTextBox
 
 By default, the HtmlTextBox report item has its size set.
 
-To allow the HtmlTextBox to expand vertically based on its content, set its [`CanGrow`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property to its default `True` value. 
+To allow the HtmlTextBox to expand vertically based on its content, set its [`CanGrow`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanGrow) property to its default `True` value.
 
-To allow the HtmlTextBox to shrink based on its content, set its [`CanShrink`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink) property to `True`. By default, `CanShrink` is set to `False`. Note that the HtmlTextBox will always grow to accommodate the first line of text even when `CanGrow` is `False`. 
+To allow the HtmlTextBox to shrink based on its content, set its [`CanShrink`](/reporting/api/Telerik.Reporting.TextItemBase#Telerik_Reporting_TextItemBase_CanShrink) property to `True`. By default, `CanShrink` is set to `False`. Note that the HtmlTextBox will always grow to accommodate the first line of text even when `CanGrow` is `False`.
 
-## See Also 
+## See Also
 
 * [HtmlTextBox Class API Reference](/api/telerik.reporting.htmltextbox)
-* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting) 
+* [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)

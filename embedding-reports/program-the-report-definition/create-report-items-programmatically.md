@@ -1,9 +1,9 @@
 ---
-title: Create Report Items Programmatically
-page_title: Create Report Items Programmatically 
-description: Create Report Items Programmatically
+title: Create Report Items
+page_title: Creating Report Items with code
+description: "Create a Telerik Reporting report item programmatically, by instantiating a report item object, setting its properties, and adding it to the Items collection of the section where you wish the control to appear."
 slug: telerikreporting/using-reports-in-applications/program-the-report-definition/create-report-items-programmatically
-tags: create,report,items,programmatically
+tags: create, report, items, programmatically, code
 published: True
 position: 3
 previous_url: /programmatic-creating-controls
@@ -12,7 +12,7 @@ previous_url: /programmatic-creating-controls
 # Create Report Items Programmatically
 
 To create a report item in code, instantiate a report item object, set its properties, and add it to the _Items_ collection of the section where you wish the control to appear. For example, this code will add one __TextBox__ report item in a __Panel__ inside the __detail__ section of the report:
-    
+
 ````C#
 Telerik.Reporting.Panel panel1 = new Telerik.Reporting.Panel();
 Telerik.Reporting.TextBox textBox1 = new Telerik.Reporting.TextBox();
@@ -50,17 +50,11 @@ detail.Items.AddRange(New Telerik.Reporting.ReportItemBase() {panel1})
 
 
 ## See Also
- 
-* [TextBox](/reporting/api/Telerik.Reporting.TextBox)  
 
-* [PictureBox](/reporting/api/Telerik.Reporting.PictureBox)  
-
-* [Panel](/reporting/api/Telerik.Reporting.Panel)  
-
-* [SubReport](/reporting/api/Telerik.Reporting.SubReport)  
-
-* [Shape](/reporting/api/Telerik.Reporting.Shape)  
-
-* [Table](/reporting/api/Telerik.Reporting.Table)  
-
-* [CheckBox](/reporting/api/Telerik.Reporting.CheckBox)
+* [TextBox](/api/Telerik.Reporting.TextBox)
+* [PictureBox](/api/Telerik.Reporting.PictureBox)
+* [Panel](/api/Telerik.Reporting.Panel)
+* [SubReport](/api/Telerik.Reporting.SubReport)
+* [Shape](/api/Telerik.Reporting.Shape)
+* [Table](/api/Telerik.Reporting.Table)
+* [CheckBox](/api/Telerik.Reporting.CheckBox)

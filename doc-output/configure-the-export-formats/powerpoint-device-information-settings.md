@@ -1,9 +1,9 @@
 ---
 title: PowerPoint Device Information Settings
-page_title: PowerPoint Device Information Settings 
-description: PowerPoint Device Information Settings
+page_title: PowerPoint Device Information Settings at a glance
+description: "Find detailed information about the different PowerPoint rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings
-tags: powerpoint,device,information,settings
+tags: powerpoint, pptx, device, information, settings, options
 published: True
 position: 13
 previous_url: /device-information-settings-powerpoint
@@ -20,11 +20,11 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# PowerPoint Device Information Settings
+# Device Information Settings for the PowerPoint rendering format
 
 The following table lists the device information settings for rendering in PowerPoint (PPTX) format.
 
-## PowerPoint Device Information Settings
+## Available PowerPoint Device Information Settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |

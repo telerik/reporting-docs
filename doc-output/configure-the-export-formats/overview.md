@@ -1,9 +1,9 @@
 ---
-title: Configure the Export Formats Overview
-page_title: Configure the Export Formats Overview
-description: Configure the Export Formats Overview
+title: Overview
+page_title: Configuring the available Export Formats at a glance
+description: "Find detailed information about how to configure the available export formats either on the application level or on the report level."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview
-tags: overview
+tags: overview, exporting
 published: True
 position: 0
 previous_url: /device-information-settings

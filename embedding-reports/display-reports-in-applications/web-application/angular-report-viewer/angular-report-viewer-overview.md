@@ -1,7 +1,7 @@
 ---
-title: Angular Report Viewer Overview
-page_title: Angular Report Viewer Overview 
-description: Angular Report Viewer Overview
+title: Overview
+page_title: Integrating the Angular Report Viewer
+description: "Learn about the requirements of the Angular Report Viewer, what module loaders can be used and what are the supported browsers."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview
 tags: angular,report,viewer,overview
 published: True
@@ -11,7 +11,7 @@ previous_url: /angular-report-viewer, /using-reports-in-applications/display-rep
 
 # Angular Report Viewer Overview
 
-Integrate the Angular Report Viewer component in your Angular applications regardless of the module loader that you use (__WebPack__ or __SystemJS__). 
+Integrate the Angular Report Viewer component in your Angular applications regardless of the module loader that you use (`WebPack` or `SystemJS`). 
 
 The Angular component is built on top of the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is the base for all Web-technologies report viewers as well. 
 

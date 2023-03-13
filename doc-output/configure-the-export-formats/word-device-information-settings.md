@@ -1,9 +1,9 @@
 ---
 title: Word Device Information Settings
-page_title: Word Device Information Settings 
-description: Word Device Information Settings
+page_title: Word Device Information Settings at a glance
+description: "Find detailed information about the different Word rendering settings available, and how to configure them."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings
-tags: word,device,information,settings
+tags: word, docx, device, information, settings, options
 published: True
 position: 12
 previous_url: /device-information-settings-word
@@ -20,11 +20,11 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# Word Device Information Settings
+# Device Information Settings for the Word rendering format
 
 The following table lists the device information settings for rendering in Word (DOCX) format.
 
-## Word Device Information Settings
+## Available Word Device Information Settings
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |

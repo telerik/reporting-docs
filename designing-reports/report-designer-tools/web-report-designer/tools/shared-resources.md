@@ -1,14 +1,14 @@
 ---
 title: Report shared resources
-page_title: Report shared resources 
-description: Add and reference shared resources like images and data in the Web Report Designer
+page_title: Sharing resources within the Web Report Designer 
+description: "Learn how to add and reference shared resources like images and data in the Web Report Designer."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources
 tags: resources,Assets Manager,sharing
 published: True
 position: 5
 ---
 
-# Report shared resources
+# Shared Resources in the Web Report Designer
 
 Reports often need external resources to display and reference to achieve the desired outcome. 
 These include any images that are used as branding or backgrounds, data files like CSV or JSON or shape data,
@@ -25,7 +25,7 @@ The container folders can be organized as well by creating, renaming, and deleti
 
 The Assets Manager displays the resources of the currently selected folder as big icons but can also be switched to display them in a grid view
 with columns that give additional details for each resource. Details can also be displayed using a dedicated details panel switched on from the 
-__View Details__ toggle in the top-right of the tool.
+`View Details` toggle in the top-right of the tool.
 
 The primary benefit of using the Assets manager is to keep all needed resources in one place, on the server.
 The other benefit is that, once uploaded, the resources may be reused from multiple reports. 
@@ -47,7 +47,7 @@ These predefined folders cannot be renamed and deleted from the end-users. Howev
 can configure different predefined folders on the backend as needed. The end-users can only create and manage the subfolders of those predefined folders.
 
 ### Reports organization
-The available reports on the server are listed in the Assets Manager as well. They reside in a dedicated __Reports__ root folder
+The available reports on the server are listed in the Assets Manager as well. They reside in a dedicated `Reports` root folder
 and may be organized into subfolders when created or uploaded.
 
 ### Shared Data Sources organization

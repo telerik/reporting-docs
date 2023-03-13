@@ -1,7 +1,7 @@
 ---
 title: Localizing Reports
-page_title: Localizing Reports 
-description: Localizing Reports
+page_title: Localization of the Reports Definitions 
+description: "Learn how to localize Telerik Reports for multiple languages across all of the available Report Designer tools."
 slug: telerikreporting/designing-reports/localizing-reports
 previous_url: /designing-reports/localizing-reports, /advanced-localizing-reports
 tags: localizing,reports
@@ -9,7 +9,7 @@ published: True
 position: 12
 ---
 
-# Localizing Reports
+# Localizing Reports Overview
 
 Localization is used to display the reports in the language of a specific culture. The article elaborates how to localize reports with resource files. The resource files format depends on the used Report Designer: 
 

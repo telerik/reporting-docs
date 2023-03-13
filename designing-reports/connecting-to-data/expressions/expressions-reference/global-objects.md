@@ -1,7 +1,7 @@
 ---
 title: Global Objects
-page_title: Global Objects 
-description: Global Objects
+page_title: Global Objects Explained
+description: "Learn what are the Global Objects in Telerik Reporting and how you may use them in the expressions in reports."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects
 tags: global,objects
 published: True
@@ -9,7 +9,7 @@ position: 3
 previous_url: /expressions-global-objects
 ---
 
-# Global Objects
+# Global Objects Overview
 
 Telerik script language provides the following intrinsic (or "built-in") objects that may be used in [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) inside the report definition.
 
@@ -43,13 +43,13 @@ The current page number that can be used only in page header and footer.
 
 The total number of pages in the report that can be used only in page header and footer.
 
->note The page numbering behavior in a report contained in a report book may be controlled through the [PageNumberingStyle](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_PageNumberingStyle) property.
+>note The page numbering behavior in a report contained in a report book may be controlled through the [PageNumberingStyle](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_PageNumberingStyle) property.
 
 ## RenderingFormat
 
 Represents the runtime rendering extension currently used to render the report.
 
-For information regarding the available child properties, check out the [RenderingFormat](/reporting/api/Telerik.Reporting.Processing.RenderingFormat) API reference or use the Expression Builder dialog.
+For information regarding the available child properties, check out the [RenderingFormat](/api/Telerik.Reporting.Processing.RenderingFormat) API reference or use the Expression Builder dialog.
 
 This global object will be populated while rendering the report in any report viewer or programmatically. The object will not be available in the ReportParameters properties evaluation as the parameters get evaluated before the rendering operation gets started.
 
@@ -65,14 +65,14 @@ For information regarding the available processing ReportItem properties, check 
 
 The current report definition.
 
-For information regarding the available Report definition properties, check out the [Report](/reporting/api/Telerik.Reporting.Report) API reference.
+For information regarding the available Report definition properties, check out the [Report](/api/Telerik.Reporting.Report) API reference.
 
 ## UserIdentity
 
 Represents the current user identity in which context the expression is evaluated.
 
-For information regarding the available child properties, check out the [UserIdentity](/reporting/api/Telerik.Reporting.Processing.UserIdentity) API reference or use the Expression Builder dialog.
+For information regarding the available child properties, check out the [UserIdentity](/api/Telerik.Reporting.Processing.UserIdentity) API reference or use the Expression Builder dialog.
 
 This global object will be populated for all web report previews based on the HTML5 report viewer. The default user identity resolution can be substituted for each reports rendering service by overriding the corresponding GetUserIdentity method.
 
-When exporting a report programmatically the global object can be populated by setting the static property [Telerik.Reporting.Processing.UserIdentity.Current](/reporting/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).
+When exporting a report programmatically the global object can be populated by setting the static property [Telerik.Reporting.Processing.UserIdentity.Current](/api/Telerik.Reporting.Processing.UserIdentity#Telerik_Reporting_Processing_UserIdentity_Current).

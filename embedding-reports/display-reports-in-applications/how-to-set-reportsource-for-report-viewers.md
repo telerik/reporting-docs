@@ -221,5 +221,4 @@ These Report Viewers do not have direct access to Telerik Reporting Engine. Repo
 
 ## See Also
 
-* [How to: Implement and use custom IReportResolver (Reporting WCF Service's Report Resolver)]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/how-to-implement-and-use-custom-ireportresolver%})
 * [Reporting REST Service's Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%})

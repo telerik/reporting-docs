@@ -37,7 +37,7 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 
 ## Adding the Report Engine
 
-There are many ways to add the report engine. You can [Host the Report Engine Remotely]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/overview%}), you can [Call the Report Engine via APIs]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}), or you can use the [Telerik Report Server](https://www.telerik.com/report-server):
+There are many ways to add the report engine. You can [Host the Report Engine Remotely]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), you can [Call the Report Engine via APIs]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}), or you can use the [Telerik Report Server](https://www.telerik.com/report-server):
 
 ### Generating Reports Remotely
 

@@ -11,6 +11,8 @@ previous_url: /silverlight-wcf-service-overview
 
 # Telerik Reporting WCF Service Overview
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 ## Overview
 
 Telerik Reporting WCF Service enables the remote access to the [ReportProcessor](/reporting/api/Telerik.Reporting.Processing.ReportProcessor). The service acts as a communication interface between the client programs and the reporting engine. The service is responsible for managing the reports state and resources. 

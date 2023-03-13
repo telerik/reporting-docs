@@ -19,7 +19,7 @@ __Telerik Reporting__ uses a dedicated cache management system to store and cach
 
 * __WinForms ReportViewer__ - settings must be applied in the application configuration file. By default the viewer keeps the report state in memory;
 * __WPF ReportViewer__ - settings must be applied in the application configuration file. By default the viewer keeps the report state in memory;
-* __Silverlight ReportViewer (obsolete since R1 2023 SP1)__ - settings must be applied in the [Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) application configuration file. By default the viewer keeps the report state in memory;
+* __Silverlight ReportViewer (not supported since R1 2023 SP1)__ - settings must be applied in the [Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}) application configuration file. By default the viewer keeps the report state in memory;
 * __ASP.NET WebForms ReportViewer (obsolete web viewer)__ - settings must be applied in the application configuration file. By default the viewer keeps the report state in the ASP.NET Session;
 
 > The cache settings mentioned in this article are not obligatory, and they do not apply to the __HTML5 Report Viewer__ or its Angular, WebForms, MVC and other wrappers. Details about the Cache Storage of the Reporting REST Service that works with the HTML5 Report Viewer are available in [Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%}).

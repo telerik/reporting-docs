@@ -11,6 +11,8 @@ previous_url: /silverlight-report-viewer-intro
 
 # Silverlight Application Overview
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 The Silverlight Report Viewer allows developers to deliver reports produced by Telerik Reporting to any rich application developed with Silverlight. The Silverlight viewer lives entirely on the client side, while the reports and the rendering engine are on the server side (accessible through the [Telerik Reporting WCF Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%})). 
 
   ![](images/SilverlightViewer1.png)

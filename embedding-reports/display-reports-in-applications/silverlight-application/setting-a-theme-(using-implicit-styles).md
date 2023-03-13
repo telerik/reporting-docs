@@ -11,6 +11,8 @@ previous_url: /silverlight-report-viewer-implicit-styles
 
 # Setting a Theme (Using Implicit Styles)
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 With the official Q1 2014 release of Telerik Reporting you will have to disable the Telerik StyleManager and to style the controls using implicit styles (e.g. Style without x:Key attribute). There are a number of benefits of using implicit styles over the Telerik StyleManager. Some are listed below: 
 
 * Custom themes are now much easier  - created only via merged dictionaries

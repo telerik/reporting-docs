@@ -1,8 +1,8 @@
 ---
-title: Hide Sub Report (both Report Header and the Detail Section) if there is no data
-description: Hide Sub Report (both Report Header and the Detail Section) if there is no data
+title: Hide empty Sub Report
+description: "Learn how to hide a SubReport report item if the report referenced by the aforementioned item has no data in it."
 type: how-to
-page_title: Hide Sub Report (both Report Header and the Detail Section) if there is no data
+page_title: Hiding a Sub Report (both Report Header and the Detail Section) if there is no data
 slug: hide-sub-report-if-there-is-no-data
 position: 
 tags: SubReport, Expressions
@@ -34,4 +34,4 @@ To hide the SubReport Header, use a [binding rule]({%slug telerikreporting/desig
 ```
 In main report, set the height of the SubReport item to 0 (zero). This way it will not occupy space when there is nothing to render in the SubReport.
 
-For more available approaches, please refer to [How to hide a SubReport with no data](knowledge-base/how-to-hide-subreport-with-no-data).
+For more available approaches, please refer to [How to hide a SubReport with no data]({%slug how-to-hide-subreport-with-no-data%}).

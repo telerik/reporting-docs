@@ -65,7 +65,7 @@ The following rules apply to page headers and footers when rendered on the page:
 
 * The header or footer is rendered at the top and bottom of every page within the usable page area (when present).
 * When the page header or footer section is hidden on certain pages, it gets collapsed and its height is used from the rest of the report content.
-* The header and footer do not grow or shrink. They are rendered on every page at the height specified when you created the respective page section.
+* The header and footer do not grow or shrink based on their content. They are rendered on every page at the height specified when you created the respective page section, or the one set with Binding as explained in the article [The Basic Structure of the Report]({%slug report_structure_groups_sections%}) - section [Page Header]({%slug report_structure_groups_sections%}#page-header).
 * If the contents of the header or footer grow beyond the boundaries of the header or footer, the contents are clipped. Any report item that doesn't fit entirely in the section is removed, i.e. not rendered at all.
 * Page sections of report used as SubReport get neglected. Only page sections of the main report are rendered.
 * In multi-column reports (supported only in Physical paging), there is only one page header and footer per page, regardless of the number of columns.

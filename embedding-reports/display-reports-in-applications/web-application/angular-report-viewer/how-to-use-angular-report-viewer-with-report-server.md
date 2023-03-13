@@ -89,7 +89,7 @@ export class AppComponent {
 			password: 'mypass'
 		}"
 		[reportSource]="{
-			report: 'Samples/Dashboard.trdp',
+			report: 'Samples/Dashboard',
 			parameters: {}
 		}" 
 		[viewMode]="'INTERACTIVE'"

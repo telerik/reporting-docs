@@ -1,9 +1,9 @@
 ---
-title: Custom Report Viewer Template
-page_title: Custom Report Viewer Template 
-description: Custom Report Viewer Template
+title: Custom Template
+page_title: Customizing the Report Viewer Template
+description: "Understand how the template of the React Report Viewer component works and learn how to customize it with the provided steps and sample code snippet."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/custom-report-viewer-template
-tags: custom,report,viewer,template
+tags: react, custom, report, viewer, template
 published: True
 position: 0
 previous_url: /react-report-viewer-template
@@ -12,7 +12,7 @@ previous_url: /react-report-viewer-template
 # Custom Report Viewer Template
 The React Report Viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and it uses the same [styling]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%}) mechanism.
 
-# Adding Custom Report Viewer Template
+## Adding a Custom Report Viewer Template
 
 1. The [template of the viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}) can be found in the installation folder of Telerik Reporting:
 C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Html5\ReportViewer\templates
@@ -23,15 +23,15 @@ C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Html5\ReportViewe
 
 1. Set the **templateUrl** property of the viewer:
 
-   ````js
+	````JavaScript
 <TelerikReportViewer
-        ref={el => viewer = el}     
-        templateUrl="telerikReportViewerTemplate-VERSION.html/"
-        reportSource={{
-          report: 'MyReport.trdp',
-          parameters: {}
-        }}
-        >
+		ref={el => viewer = el}
+		templateUrl="telerikReportViewerTemplate-VERSION.html/"
+		reportSource={{
+			report: 'MyReport.trdp',
+			parameters: {}
+		}}
+		>
 ````
 
 

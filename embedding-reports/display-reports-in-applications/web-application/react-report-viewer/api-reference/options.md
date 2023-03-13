@@ -1,9 +1,9 @@
 ---
 title: Options
-page_title: Options 
-description: Options
+page_title: Options of the React Report Viewer
+description: "Find a list of all options available during the initialization of the React Report Viewer component. Understand the purpose of each option using the provided descriptions."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/api-reference/options
-tags: options
+tags: react, report, viewer, api, options
 published: True
 position: 0
 previous_url: /react-report-viewer-api-reference-options
@@ -17,11 +17,9 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Options
+# React Report Viewer Options
 
-Below is a list of all options available during initialization. 
-
-## Options
+Below is a list of all options available during initialization.
 
 | Parameter | Description |
 | ------ | ------ |
@@ -35,7 +33,7 @@ Below is a list of all options available during initialization.
 | __scaleMode__ | *string*, *optional*; Sets how the report pages to be scaled. Available options are: <ul><li>*“FIT_PAGE_WIDTH”* - the pages are scaled proportional to fit the entire width in the viewer’s view port;</li> <li>*“FIT_PAGE”* - the pages are scaled proportional to fit the entire page in the view port;</li> <li>*“SPECIFIC”* - the pages are scaled with the __scale value__;<br/>Default value is: *“FIT_PAGE”*.</li></ul>|
 | __viewMode__ | *string*, *optional*; Sets if the report is displayed in interactive mode or in print preview. <br/>The available values are: <ul><li>*“INTERACTIVE”* - enables drill-down interactivity, etc;</li> <li>*“PRINT_PREVIEW”* - the report is paged according to the page settings;For more information please see [Interactive vs. Print Layout]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}). <br/>Default value is: *'Interactive'*.</li></ul>|
 | __pageMode__ | *string*, *optional*; Sets if the report is displayed in Single page or Continuous scroll mode. <br/>The available values are: <ul><li>*“SINGLE_PAGE”* - only one page is loaded in the view port;</li> <li>*“CONTINUOUS_SCROLL”* - more than one page could be loaded in the view port; <br/>Default value is: *'CONTINUOUS_SCROLL'*.</li></ul>|
-| __persistSession__ | *boolean*, *optional*. Sets whether the viewer’s client session to be persisted between the page’s refreshes(ex. postback). The session is stored in the browser’s [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) and is available for the duration of the page session. A page session lasts for as long as the browser is open and survives over page reloads and restores. Opening a page in a new tab or window will cause a new session to be initiated.<br/>The viewer’s state is persisted in the global sessionStorage object under a key defined by the viewer’s __id__. In order to enable the correct session to be loaded on the next page reload please use the same __id__ as in the first load. This means that if you need to persist the client session between page reloads you should set the viewer’s __id__ (or the id of the target element) to a constant value that should not be changed dynamically during the page lifecycle.<br/>Default Value is: *false*;|
+| __persistSession__ | *boolean*, *optional*. Sets whether the viewer’s client session to be persisted between the page’s refreshes(ex. postback). The session is stored in the browser’s [sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) and is available for the duration of the page session. A page session lasts for as long as the browser is open and survives over page reloads and restores. Opening a page in a new tab or window will cause a new session to be initiated.<br/>The viewer’s state is persisted in the global sessionStorage object under a key defined by the viewer’s __id__. In order to enable the correct session to be loaded on the next page reload please use the same __id__ as in the first load. This means that if you need to persist the client session between page reloads you should set the viewer’s __id__ (or the id of the target element) to a constant value that should not be changed dynamically during the page lifecycle.<br/>Default Value is: *false*;|
 | __parameters__ | *object*, *optional*; Allows user to defined parameters options for the report parameters. <br/><table><thead><tr><th>Option</th><th>Description</th></tr></thead><tbody><tr><td><strong>editors</strong></td><td><em>object</em>, <em>optional</em>; Allows user to defined editors type for the report parameters. <br/>The available editors are: <ul><li>__singleSelect__ (*string*, *optional*) - defineds the editor type for the single select parameters. <br/>The available values are: <ul><li>*“COMBO_BOX”* - uses [Kendo UI ComboBox](https://docs.telerik.com/kendo-ui/api/javascript/ui/combobox) widget as an editor;</li> <li>*“LIST_VIEW”* - uses [Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview) widget as an editor;</li></ul>Default value is: *'LIST_VIEW'*</li> <li>__multiSelect__ (*string*, *optional*) - defineds the editor type for the multi select parameters.<br/>The available values are: <ul><li>*“COMBO_BOX”* - uses [Kendo UI MultiSelect](https://docs.telerik.com/kendo-ui/api/javascript/ui/multiselect) widget as an editor;</li> <li>*“LIST_VIEW”* - uses [Kendo UI ListView](https://docs.telerik.com/kendo-ui/api/javascript/ui/listview) widget as an editor;</li></ul>Default value is: *'LIST_VIEW'*</li></ul></td></tr></tbody></table> |
 | __parameterEditors__ | *array*, *optional*; Allows user to defined custom editors for the report parameters.|
 | __authenticationToken__ | *string*, *optional*; If provided, a *Bearer* token will be set in the *Authorization* header for every request to the REST service.|
@@ -43,7 +41,7 @@ Below is a list of all options available during initialization.
 | __selector__ | *string*, *optional*. A selector used in conjunction with the data- attributes. Whenever a command is attached to an element outside of the report viewer via the data-attributes this selector must be provided.|
 | __disabledButtonClass__ | *string*, *optional*. A class used in conjunction with the data- attributes. Whenever a command is in the disabled state this class will be added to the respective button.|
 | __checkedButtonClass__ | *string*, *optional*. A class used in conjunction with the data- attributes. Whenever a command is in the checked state this class will be added to the respective button.|
-| __enableAccessibility__ | *boolean*, *optional*. Determines whether the viewer should provide support for accessibility features. You can find more detailed information [here]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}). <br/>Default value: *false*;|
+| __enableAccessibility__ | *boolean*, *optional*. Determines whether the viewer should provide support for accessibility features. You can find more detailed information in the [Web Application Accessibility]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility%}) documentation article. <br/>Default value: *false*;|
 | __parametersAreaVisible__ | *boolean* | *optional*. Determines whether the viewer's parameters area is displayed if any parameter editor exists. <br/>Default value: *true*;|
 | __documentMapVisible__ | *boolean* | *optional*. Determines whether the viewer's document map is displayed if any bookmark is defined. <br/>Default value: *true*;|
 | __parametersAreaPosition__ | *string*, *optional*. Specifies where the Parameters Area should be displayed <br/>The available values are: <ul><li>*“RIGHT”*</li> <li>*“TOP”*</li> <li>*“LEFT”*</li> <li>*“BOTTOM”*</li></ul>Default value: *RIGHT*;|

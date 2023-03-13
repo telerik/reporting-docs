@@ -1,9 +1,9 @@
 ---
-title: How to Create a Custom Parameter Editor
-page_title: How to Create a Custom Parameter Editor 
-description: How to Create a Custom Parameter Editor
+title: Custom Parameter Editor
+page_title: Creating a Custom Parameter Editor
+description: "Understand how to change the default editors for visible parameters in the React Report Viewer's Parameters Area, using the provided steps and sample code snippets."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/customizing/how-to-create-a-custom-parameter-editor
-tags: how,to,create,a,custom,parameter,editor
+tags: react, report, viewer, how, to, create, custom, parameter, editor
 published: True
 position: 1
 previous_url: /react-report-viewer-custom-parameter-editor
@@ -13,7 +13,7 @@ previous_url: /react-report-viewer-custom-parameter-editor
 
 The article elaborates how to change the default editors for visible parameters in the React Report Viewer's Parameters Area.
 
-Custom parameter editors are defined through the **parameterEditors**  array passed as an option when creating the report viewer widget. Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration. 
+Custom parameter editors are defined through the **parameterEditors** array passed as an option when creating the report viewer widget. Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration.
 
 ## Setting the Custom Parameter Editor
 
@@ -21,7 +21,7 @@ The following example illustrates how to use the [Kendo DateTimePicker](https://
 
 1. Each editor is an object which contains two methods: match and createEditor.
 
-	````js
+	````JavaScript
 function match(parameter) {
 		return parameter.type === "System.DateTime";
 	}
@@ -60,7 +60,7 @@ function match(parameter) {
 For that reason, we need to load the Kendo All script. Note that currently we need to use this special logic for loading the viewer to the fact that jQuery has
 to be loaded before Kendo All:
 
-	````js
+	````JavaScript
 let viewer;
 	
 	function loadScript(callback) {
@@ -98,7 +98,7 @@ let viewer;
 	ReactDOM.render(
 		<App2/>,
 		document.getElementById('root')
-	);   
+	);
 ````
 
 

@@ -60,4 +60,10 @@ This article includes details how to specify a __target report__ for a [Navigate
 
 The [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) you can use all available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).
 
+<<<<<<< HEAD
 >tip If the report will be displayed in an HTML5-based Report Viewer, the main report is rendered in HTML and it is loaded at the client. The rendered content contains a link rendered for the `NavigateToReportAction`, that will not be valid and working if the target report is specified via `InstanceReportSource` or `XmlReportSource`.
+=======
+The [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) you can use all available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).         
+
+>tip If the report will be displayed in an HTML5-based Report Viewer or the Silverlight ReportViewer, the main report is rendered in HTML (or XAML respectively) and it is loaded at the client. The rendered content contains a link rendered for the `NavigateToReportAction`, that will not be valid and working if the target report is specified via `InstanceReportSource` or `XmlReportSource`.        
+>>>>>>> master

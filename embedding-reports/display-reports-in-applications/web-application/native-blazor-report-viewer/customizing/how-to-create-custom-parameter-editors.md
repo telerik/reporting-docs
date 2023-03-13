@@ -121,7 +121,6 @@ Let's try to use a widget that the Native Blazor Report Viewer is not able to us
 		@{
 			var selectedValue = ((IEnumerable)context.Parameter.Value)?.Cast<object>()?.ToList();
 		}
-
 		<TelerikListView Data="@context.Parameter.AvailableValues">
 			<Template Context="listViewContext">
 				@{

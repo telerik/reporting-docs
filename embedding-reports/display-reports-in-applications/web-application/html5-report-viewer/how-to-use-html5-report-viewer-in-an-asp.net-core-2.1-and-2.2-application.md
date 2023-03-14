@@ -9,7 +9,7 @@ position: 6
 previous_url: /html5-report-viewer-asp-net-core-2, /manual-setup-of-html5-report-viewer-in-asp-net-core-2
 ---
 
-# Using HTML5 Report Viewer in ASP.NET Core 2.1 and 2.2 Applications
+# Using the HTML5 Report Viewer in ASP.NET Core 2.1 and 2.2 Applications
 
 This article guides you on how to add the HTML5 Report Viewer in an [ASP.NET Core 2.1 or 2.2](https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-2.1) web application.
 

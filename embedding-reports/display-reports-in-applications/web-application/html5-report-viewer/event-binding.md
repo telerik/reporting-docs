@@ -1,7 +1,7 @@
 ---
 title: Event Binding
-page_title: Event Binding 
-description: Event Binding
+page_title: Event Binding in HTML5 ReportViewer Explained
+description: "Learn how to bind to and unbind from Client Events in the HTML5 Report Viewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/event-binding
 tags: event,binding
 published: True
@@ -9,7 +9,7 @@ position: 9
 previous_url: /html5-report-viewer-event-binding
 ---
 
-# Event Binding
+# Event Binding in the HTML5 Report Viewer
 
 The HTML5 Report Viewer exposes the events listed in [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}). 
 
@@ -35,14 +35,13 @@ $(function () {
 });
 ````
 
+For a complete list of event handler options please check [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) and for a complete list of all event names exposed through telerikReportViewer.Events please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}).
 
-For a complete list of event handler options please check [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) and for a complete list of all event names exposed through telerikReportViewer.Events please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}). 
-
-The report viewer passes one argument to the event handler, the Event object. This is the Event object implemented by jQuery so for more information you can check the official jQuery documentation. The sender of the event is passed through [jQuery's event.data](https://api.jquery.com/event.data/) - e.data.sender and for all events this is the report viewer. 
+The report viewer passes one argument to the event handler, the Event object. This is the Event object implemented by jQuery so for more information you can check the official jQuery documentation. The sender of the event is passed through [jQuery's event.data](https://api.jquery.com/event.data/) - e.data.sender and for all events this is the report viewer.
 
 ## Unbind from a report viewer widget event
 
-In order to unbind from a given event you should keep reference to the event handler function and call the unbind method with this reference as an argument. 
+In order to unbind from a given event you should keep reference to the event handler function and call the unbind method with this reference as an argument.
 
 ````JavaScript
 function onPageReady(e) {
@@ -63,7 +62,6 @@ $(function () {
 });
 ````
 
-
-To __unbind all event handlers__ from the event just call the unbind method with only one argument, the event name. 
+To __unbind all event handlers__ from the event just call the unbind method with only one argument, the event name.
 
 > You can unbind anonymous event handlers by calling the unbind method with one argument.

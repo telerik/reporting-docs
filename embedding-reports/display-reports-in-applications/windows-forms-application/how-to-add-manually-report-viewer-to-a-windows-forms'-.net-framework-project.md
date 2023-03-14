@@ -9,7 +9,7 @@ position: 3
 previous_url: /winforms-report-viewer-manual-setup
 ---
 
-# How to Add manually report viewer to a Windows Forms' .NET Framework project
+# How to add the WinForms Report Viewer to a Windows Forms .NET Framework project manually
 
 ## Assign report to the viewer in design time
 

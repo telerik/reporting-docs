@@ -1,9 +1,9 @@
 ---
 title: Accessibility
-page_title: Accessibility 
-description: Accessibility
+page_title: Accessibility features
+description: "Find out what accessibility features are suported in the HTML5-based viewers and HTML5-rendered report contents. Understand how to set up accessibility and what its known limitations are."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/accessibility
-tags: accessibility
+tags: HTML5, accessibility
 published: True
 position: 10
 previous_url: /html5-report-viewers-accessibility-support
@@ -16,26 +16,26 @@ table th:first-of-type {
 
 # Accessibility
 
-Telerik Reporting aims to provide a reporting solution accessible to a wider user audience. This includes users with motor control restrictions and ones working with assistive technologies. In our product we follow the recommended practices in [Section 508 of the Rehabilitation Act](http://www.section508.gov/) and [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/), building our web content according to standards set by [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/). 
+Telerik Reporting aims to provide a reporting solution accessible to a wider user audience. This includes users with motor control restrictions and ones working with assistive technologies. In our product we follow the recommended practices in [Section 508 of the Rehabilitation Act](http://www.section508.gov/) and [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/), building our web content according to standards set by [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/).
 
 ## Setting up accessibility features in HTML5-based viewers
 
-The accessibility features are enabled or disabled using an optional boolean parameter named __enableAccessibility__ (the exact letter casing varies among the HTML5-based viewers). The default value of this property is __false__ (no additional accessibility markup is emitted). This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__ is set to __true__, the exported PDF will be created according to [PDF/UA (ISO standard 14289-1)](https://en.wikipedia.org/wiki/PDF/UA) specification. 
+The accessibility features are enabled or disabled using an optional boolean parameter named __enableAccessibility__ (the exact letter casing varies among the HTML5-based viewers). The default value of this property is __false__ (no additional accessibility markup is emitted). This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__ is set to __true__, the exported PDF will be created according to [PDF/UA (ISO standard 14289-1)](https://en.wikipedia.org/wiki/PDF/UA) specification.
 
-The accessibility codebase is part of the *telerikReportViewer.{product version}.js* file. This file can be found in the __\bin\js__ subfolder of the Telerik Reporting installation folder. The product also provides a minified version of the script, which can be used in production environments. 
+The accessibility codebase is part of the *telerikReportViewer.{product version}.js* file. This file can be found in the __\bin\js__ subfolder of the Telerik Reporting installation folder. The product also provides a minified version of the script, which can be used in production environments.
 
-The accessibility script operates using the DOM elements from the [viewer template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}), so if you have modified the template, you will probably need to apply changes to the accessibility part of the script as well. 
+The accessibility script operates using the DOM elements from the [viewer template]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}), so if you have modified the template, you will probably need to apply changes to the accessibility part of the script as well.
 
-The accessibility script captures the keyboard events to provide shortcut key access to the viewer areas. It is possible some of these shortcuts to interfere with the default browser behavior. In this case the keys mapping can be changed through the [accessibilityKeyMap(keyMap)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap(keymap)%}) method or by editing the *telerikReportViewer.{product version}.js* file manually. 
+The accessibility script captures the keyboard events to provide shortcut key access to the viewer areas. It is possible some of these shortcuts to interfere with the default browser behavior. In this case the keys mapping can be changed through the [accessibilityKeyMap(keyMap)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap(keymap)%}) method or by editing the *telerikReportViewer.{product version}.js* file manually.
 
-The accessibility script supports localization. You can modify its message and label strings, following the procedure, described in the article [Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}). 
+The accessibility script supports localization. You can modify its message and label strings, following the procedure, described in the article [Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}).
 
-> Please note that all the dynamically provided markup, added when the accessibility is enabled, might result in a small performance penalty, especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs. 
+> Please note that all the dynamically provided markup, added when the accessibility is enabled, might result in a small performance penalty, especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.
 
 
 ## Supported accessibility features in HTML5-based viewers
 
-Our HTML5-based report viewers support the following important accessibility features: 
+Our HTML5-based report viewers support the following important accessibility features:
 
 |   |   |
 | ------ | ------ |
@@ -46,7 +46,7 @@ Our HTML5-based report viewers support the following important accessibility fea
 
 ## Supported accessibility features in HTML5-rendered report contents
 
-All the report items have a property called [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription). The property value is an expression and it determines what will be the accessibility label when the report is rendered. Its value is set as an [alternate text](https://www.w3schools.com/tags/att_img_alt.asp) for images in __PictureBox__ items and as an accessible label for the other elements. According to [ARIA specifications](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA), the attribute that should be used in scenarios, where no text labeling element is available, is [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label). 
+All the report items have a property called [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription). The property value is an expression and it determines what will be the accessibility label when the report is rendered. Its value is set as an [alternate text](https://www.w3schools.com/tags/att_img_alt.asp) for images in __PictureBox__ items and as an accessible label for the other elements. According to [ARIA specifications](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA), the attribute that should be used in scenarios, where no text labeling element is available, is [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label). 
 
 The value of __aria-label__ attribute is created using the following pattern: `{type} {additional information} {description} `: 
 
@@ -56,15 +56,15 @@ The value of __aria-label__ attribute is created using the following pattern: `{
 
    + if the current item has some interactive action set, this token will contain the type of the action. 
 
-   + if the current item is __Table__ or __Crosstab__, the token will contain information about the row and column count. 
-
-   + if the current item is nested in a __Table__ or __Crosstab__, the token will contain information about the current cell's row and column zero-based index. Additionally, if the cell is used as a header, this information will be also included in the label. 
-
    + if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked). 
 
 * __{description}__ provides relevant information about the current item contents. Its value is evaluated using the item's *AccessibleDescription* property and if it is empty, falls back to the item's *Value* or *Text* property, whichever is available. 
 
-For example, if a report contains a __TextBox__ with `Value = "Sorts by Category"`, that performs a sorting action and is nested in a table's first (header) row and third column, the generated *aria-label* value will be: *Text box. Performs a sorting action. Column header. Column 2 Row 0. Sorts by Category.* 
+For example, if a report contains a __TextBox__ with `Value = "Sorts by Category"`, that performs a sorting action, the generated *aria-label* value will be: *Text box. Performs a sorting action. Sorts by Category.*
+
+As of Telerik Reporting version __R1 2023 SP1__, all report items have an additional property called [AccessibleRole](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleRole). The property value is an expression and it determines the HTML __role__ attribute of each report item. When no explicit value is provided, an appropriate placeholder is calculated based on the item type. In addition, the [ARIA Table pattern](https://www.w3.org/WAI/ARIA/apg/patterns/table/) has been implemented for Table/Crosstab items using [ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
+
+>note It is important to note that, currently, the [ARIA Table pattern](https://www.w3.org/WAI/ARIA/apg/patterns/table/) is implemented only when the **HTML5 Interactive** *(not paged)* rendering is used. When a report is displayed with paged HTML, the old *(__R1 2023__ and earlier)* HTML writing logic is applied and additional information will be added to the __aria-label__ of a table/crosstab item and its descendants.
 
 ## Known issues
 

@@ -1,13 +1,14 @@
 ---
 title: data attributes
-page_title: data attributes 
-description: data attributes
+page_title: data attributes of the HTML5 Report Viewer explained
+description: "Learn what do the data attributes represent in the Telerik Reporting HTML5 Report Viewer and how to use them."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes
 tags: data,attributes
 published: True
 position: 2
 previous_url: /html5-report-viewer-data-attributes
 ---
+
 <style>
 table th:first-of-type {
 	width: 42%;
@@ -17,11 +18,11 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# data attributes
+# The `data attributes` of the HTML5 Report Viewer
 
-Behavior can be added to HTML DOM elements either with *data-* attributes or through the [commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}) property of the report viewer. 
+Behavior can be added to HTML DOM elements either with *data-* attributes or through the [commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/commands%}) property of the report viewer.
 
-The *data-* attributes give a lot of flexibility to the application since commands can be attached to HTML elements only by adding a *data-command* attribute along with a *data-target-report-viewer* to target the specific report viewer (since there can exist multiple report viewers on a single page): 
+The *data-* attributes give a lot of flexibility to the application since commands can be attached to HTML elements only by adding a *data-command* attribute along with a *data-target-report-viewer* to target the specific report viewer (since there can exist multiple report viewers on a single page):
 
 ````HTML
 <button id="printButton" data-command="telerik_ReportViewer_print" data-target-report-viewer="#reportViewer1">Print report</button>
@@ -40,9 +41,9 @@ $("#reportViewer1").telerik_ReportViewer({
 ````
 
 
-The button above will simply print the report currently displayed. Elements do not need to exist prior to the viewer initialization - they can be created on the fly and as soon as they have the *data-command* and *data-target-report-viewer* attribute the command can be executed. 
+The button above will simply print the report currently displayed. Elements do not need to exist prior to the viewer initialization - they can be created on the fly and as soon as they have the *data-command* and *data-target-report-viewer* attribute the command can be executed.
 
-The following table is a list of all available commands for the *data-command* attribute: 
+The following table is a list of all available commands for the *data-command* attribute:
 
 | Command | Description |
 | ------ | ------ |

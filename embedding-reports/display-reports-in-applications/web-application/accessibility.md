@@ -54,17 +54,23 @@ The value of __aria-label__ attribute is created using the following pattern: `{
 
 * __{additional information}__ is intended to give some meaningful information about the context where the current item is in, or about its additional properties. The cases where it is most useful, are: 
 
-   + if the current item has some interactive action set, this token will contain the type of the action. 
-
-   + if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked). 
+   + if the current item has some interactive action set, this token will contain the type of the action.
+   
+   + if the current item is Table or Crosstab and **paged** HTML rendering is used, the token will contain information about the row and column count.
+   
+   + if the current item is nested in a Table or Crosstab and **paged** HTML rendering is used, the token will contain information about the current cell's row and column zero-based index. Additionally, if the cell is used as a header, this information will be included in the label as well.
+   
+   + if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked).
 
 * __{description}__ provides relevant information about the current item contents. Its value is evaluated using the item's *AccessibleDescription* property and if it is empty, falls back to the item's *Value* or *Text* property, whichever is available. 
 
-For example, if a report contains a __TextBox__ with `Value = "Sorts by Category"`, that performs a sorting action, the generated *aria-label* value will be: *Text box. Performs a sorting action. Sorts by Category.*
+For example, if a report contains a __TextBox__ with `Value = "Sorts by Category"`, that performs a sorting action and is nested in a table's first (header) row and third column, the generated *aria-label* value in **paged** HTML rendering will be: *Text box. Performs a sorting action. Column header. Column 2 Row 0. Sorts by Category.*
+
+>note Tha additional information stored in the __aria-label__ attribute of Table/Crosstab items and items semantically related to them is "shortened" when the HTML5 **interactive** rendering is used. This is done to avoid redundancy because the [ARIA Table pattern](https://www.w3.org/WAI/ARIA/apg/patterns/table/) has been implemented for the **interactive** HTML rendering.
 
 As of Telerik Reporting version __R1 2023 SP1__, all report items have an additional property called [AccessibleRole](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleRole). The property value is an expression and it determines the HTML __role__ attribute of each report item. When no explicit value is provided, an appropriate placeholder is calculated based on the item type. In addition, the [ARIA Table pattern](https://www.w3.org/WAI/ARIA/apg/patterns/table/) has been implemented for Table/Crosstab items using [ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles).
 
->note It is important to note that, currently, the [ARIA Table pattern](https://www.w3.org/WAI/ARIA/apg/patterns/table/) is implemented only when the **HTML5 Interactive** *(not paged)* rendering is used. When a report is displayed with paged HTML, the old *(__R1 2023__ and earlier)* HTML writing logic is applied and additional information will be added to the __aria-label__ of a table/crosstab item and its descendants.
+>note It is important to remember that, currently, the [ARIA Table pattern](https://www.w3.org/WAI/ARIA/apg/patterns/table/) is implemented only when the **HTML5 Interactive** *(not paged)* rendering is used. Thus, when a report is displayed with **paged** HTML, no [ARIA Roles](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) will be added, and instead additional information will be shown in the *aria-labels* of table/crosstab items and their relatives, as described in the bullet points above.
 
 ## Known issues
 

@@ -9,7 +9,7 @@ position: 2
 previous_url: /winforms-report-viewer-add-to-net-core-project
 ---
 
-# How to Add report viewer to a Windows Forms' .NET Core project
+# How to add the WinForms Report Viewer control to a Windows Forms .NET Core project
 
 This article explains the steps needed to integrate the WinForms report viewer to a .NET Core 3.1, .NET 5 and .NET 6 projects.
 

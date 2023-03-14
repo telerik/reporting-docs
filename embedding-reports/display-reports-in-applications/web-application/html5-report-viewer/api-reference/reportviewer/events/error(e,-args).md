@@ -1,7 +1,7 @@
 ---
 title: error(e, args)
-page_title: error(e, args) 
-description: error(e, args)
+page_title: The error(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the error(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/error(e,-args)
 tags: error(e,,args)
 published: True
@@ -17,10 +17,9 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# error(e, args)
+# The `error(e, args)` Event of the HTML5 Report Viewer
 
 Parameters:
-
 
 | Parameter | Description |
 | ------ | ------ |
@@ -42,7 +41,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

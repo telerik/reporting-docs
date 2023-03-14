@@ -1,13 +1,14 @@
 ---
 title: pageReady(e, args)
-page_title: pageReady(e, args) 
-description: pageReady(e, args)
+page_title: The pageReady(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the pageReady(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args)
 tags: pageready(e,,args)
 published: True
 position: 6
 previous_url: /html5-report-viewer-reportviewer-events-pageready
 ---
+
 <style>
 table th:first-of-type {
 	width: 25%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# pageReady(e, args)
+# The `pageReady(e, args)` Event of the HTML5 Report Viewer
 
 Occurs after a page of the report is ready.
 
@@ -43,7 +44,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

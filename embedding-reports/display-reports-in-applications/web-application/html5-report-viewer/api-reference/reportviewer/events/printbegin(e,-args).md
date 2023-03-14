@@ -1,13 +1,14 @@
 ---
 title: printBegin(e, args)
-page_title: printBegin(e, args) 
-description: printBegin(e, args)
+page_title: The printBegin(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the printBegin(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/printbegin(e,-args)
-tags: printbegin(e,,args)
+tags: printbegin,args
 published: True
 position: 7
 previous_url: /html5-report-viewer-reportviewer-events-printbegin
 ---
+
 <style>
 table th:first-of-type {
 	width: 25%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# printBegin(e, args)
+# The `printBegin(e, args)` Event of the HTML5 Report Viewer
 
 Occurs before printing the report.
 
@@ -40,7 +41,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

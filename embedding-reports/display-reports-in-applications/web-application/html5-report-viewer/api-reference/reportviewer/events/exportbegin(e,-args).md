@@ -1,7 +1,7 @@
 ---
 title: exportBegin(e, args)
-page_title: exportBegin(e, args) 
-description: exportBegin(e, args)
+page_title: The exportBegin(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the exportBegin(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportbegin(e,-args)
 tags: exportbegin(e,,args)
 published: True
@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# exportBegin(e, args)
+# The `exportBegin(e, args)` Event of the HTML5 Report Viewer
 
 Occurs before exporting the report.
 
@@ -40,7 +40,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

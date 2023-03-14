@@ -1,13 +1,14 @@
 ---
 title: updateUi(e)
-page_title: updateUi(e) 
-description: updateUi(e)
+page_title: The updateUi(e) Event of the HTML5 Report Viewer explained
+description: "Learn more about the updateUi(e) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/updateui(e)
-tags: updateui(e)
+tags: updateui,viewer,html5
 published: True
 position: 11
 previous_url: /html5-report-viewer-reportviewer-events-updateui
 ---
+
 <style>
 table th:first-of-type {
 	width: 15%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# updateUi(e)
+# The `updateUi(e)` Event of the HTML5 Report Viewer
 
 Parameters:
 
@@ -37,7 +38,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

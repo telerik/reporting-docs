@@ -1,13 +1,14 @@
 ---
 title: interactiveActionEnter(e, args)
-page_title: interactiveActionEnter(e, args) 
-description: interactiveActionEnter(e, args)
+page_title: The interactiveActionEnter(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the interactiveActionEnter(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionenter(e,-args)
 tags: interactiveactionenter(e,,args)
 published: True
 position: 13
 previous_url: /html5-report-viewer-reportviewer-events-interactiveactionenter
 ---
+
 <style>
 table th:first-of-type {
 	width: 15%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# interactiveActionEnter(e, args)
+# The `interactiveActionEnter(e, args)` Event of the HTML5 Report Viewer
 
 Occurs when the mouse cursor enters the area of an interactive action.
 
@@ -43,9 +44,7 @@ $(function () {
 });
 ````
 
-
 ## See Also
 
 * [ReportViewer events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%})
-
 * [Interactive actions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/interactive-actions%})

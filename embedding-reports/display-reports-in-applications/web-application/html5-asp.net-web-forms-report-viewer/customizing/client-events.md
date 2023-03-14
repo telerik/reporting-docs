@@ -1,13 +1,14 @@
 ---
 title: Client Events
-page_title: Client Events 
-description: Client Events
+page_title: Client Events at a Glance
+description: "Learn what are the Client Events exposed by the HTML5 ASP.NET WebForms Report Viewer in Telerik Reporting and how to configure them."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/client-events
 tags: client,events
 published: True
 position: 6
 previous_url: /html5-webforms-report-viewer-customizing-client-api
 ---
+
 <style>
 table th:first-of-type {
 	width: 25%;
@@ -17,11 +18,11 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Client Events
+# Client Events Overview
 
-This article explains how to attach client event handlers to an WebForms wrapper of the HTML5 Report Viewer instance. 
+This article explains how to attach client event handlers to an WebForms wrapper of the HTML5 Report Viewer instance.
 
-To attach a client event handler you have to set the appropriate ClientEvents tag as shown below: 
+To attach a client event handler you have to set the appropriate ClientEvents tag as shown below:
 
 ````XML
 <telerik:ReportViewer ID="reportViewer1" runat="server">

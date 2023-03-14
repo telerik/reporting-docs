@@ -1,7 +1,7 @@
 ---
 title: Styling and Appearance
-page_title: Styling and Appearance 
-description: Styling and Appearance
+page_title: Styling and Appearance of the HTML5 ASP.NET WebForms ReportViewer
+description: "Learn how the styling and appearance of the HTML5 ASP.NET WebForms Report Viewer can be changed in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/styling-and-appearance
 tags: styling,and,appearance
 published: True
@@ -9,11 +9,11 @@ position: 1
 previous_url: /html5-webforms-report-viewer-customizing-styling
 ---
 
-# Styling and Appearance
+# Styling and Appearance of the HTML5 WebForms Report Viewer
 
 The article elaborates on the styles used by the WebForms wrapper of the HTML5 Report Viewer, and how they can be loaded manually in order to be modified.
 
-The required stylesheets are provided automatically through a HTTPHandler via request to the Reporting REST service. If you want to customize the viewer styling you can stop the HTTPHandler from providing report viewer required Kendo CSS and JavaScripts by manually registering the Kendo JavaScript and CSS in the page head. The same approach should be used also when it is required to change the default theme of the viewer. Here is an example: 
+The required stylesheets are provided automatically through a HTTPHandler via request to the Reporting REST service. If you want to customize the viewer styling you can stop the HTTPHandler from providing report viewer required Kendo CSS and JavaScripts by manually registering the Kendo JavaScript and CSS in the page head. The same approach should be used also when it is required to change the default theme of the viewer. Here is an example:
 
 ````XML
 <head>
@@ -30,15 +30,12 @@ The required stylesheets are provided automatically through a HTTPHandler via re
 </head>
 ````
 
+The HTML5 Web Forms Report Viewer is using the default viewer template. In order to use your own viewer template you have to provide path to your customized one to the [TemplateUrl](/api/Telerik.ReportViewer.Html5.WebForms.ReportViewer#Telerik_ReportViewer_Html5_WebForms_ReportViewer_TemplateUrl).
 
-The HTML5 Web Forms Report Viewer is using the default viewer template. In order to use your own viewer template you have to provide path to your customized one to the [TemplateUrl](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportViewer#Telerik_ReportViewer_Html5_WebForms_ReportViewer_TemplateUrl). 
-
-For more information on the used stylesheets and report viewer templates check out the following HTML5 Report Viewer articles: 
+For more information on the used stylesheets and report viewer templates check out the following HTML5 Report Viewer articles:
 
 ## See Also
 
-* [Styling and Appearance Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%}) 
-
-* [Templates Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}) 
-
+* [Styling and Appearance Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/overview%})
+* [Templates Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%})
 * [Templates Structure]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure %})

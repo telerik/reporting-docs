@@ -88,7 +88,7 @@ It is recommended that you declare a DPI-aware application by adding a `dpiAware
 </assembly>
 ````
 
-As of Windows 10 Anniversary Update, the Windows runtime has improved the UX for Windows Forms applications that are not DPI-aware. However, this behavior may lead to incorrect calculations of the interactive item positions and it is recommended that you always declare the Windows Forms application as DPI-aware. For more information about DPI-aware desktop applications, refer to the [High DPI Desktop Application Development on Windows](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows?redirectedfrom=MSDN) MSDN article.
+As of Windows 10 Anniversary Update, the Windows runtime has improved the UX for Windows Forms applications that are not DPI-aware. However, this behavior may lead to incorrect calculations of the interactive item positions and it is recommended that you always declare the Windows Forms application as DPI-aware. For more information about DPI-aware desktop applications, refer to the [High DPI Desktop Application Development on Windows](https://learn.microsoft.com/en-us/windows/win32/hidpi/high-dpi-desktop-application-development-on-windows) MSDN article.
 
 ## Keyboard Shortcuts
 

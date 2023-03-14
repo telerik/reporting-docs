@@ -56,7 +56,7 @@ The value of __aria-label__ attribute is created using the following pattern: `{
 
    + if the current item has some interactive action set, this token will contain the type of the action.
    
-   + if the current item is Table or Crosstab and **paged** HTML rendering is used, the token will contain information about the row and column count.
+   + if the current item is **Table** or **Crosstab** and **paged** HTML rendering is used, the token will contain information about the row and column count.
    
    + if the current item is nested in a Table or Crosstab and **paged** HTML rendering is used, the token will contain information about the current cell's row and column zero-based index. Additionally, if the cell is used as a header, this information will be included in the label as well.
    

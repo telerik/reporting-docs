@@ -1,6 +1,6 @@
 ---
-title: Searching report contents
-page_title: How to search in report contents
+title: Search
+page_title: Searching in report contents of the Windows Forms Report Viewer
 description: "Learn how to use the Windows Forms Report Viewer control to search in report contents. Understand how to control the default seach behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/search-in-report-contents
 tags: search, in, report, contents
@@ -9,7 +9,7 @@ position: 10
 previous_url: /winforms-report-viewer-search
 ---
 
-# Search in Report Contents
+# Searching in Report Contents
 
 WinForms Report Viewer provides the capability to search in report contents. Since the viewer renders the report as image, the search process uses metadata, gathered during the report processing. The metadata entries are added per each textual report item and contain text contents and physical bounds, which determine the highlighted areas of the currently found and selected search items. The metadata text contents are used by the search dialog to perform the actual search.
 

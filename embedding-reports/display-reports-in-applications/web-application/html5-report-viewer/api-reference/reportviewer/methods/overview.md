@@ -1,23 +1,24 @@
 ---
-title: Methods Overview
-page_title: Methods Overview
-description: Methods Overview
+title: Overview
+page_title: Methods of the HTML5 Report Viewer at a Glance
+description: "Learn more about the Methods of the HTML5 Report Viewer and how you may use them to customize its appearance and functionality."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/overview
 tags: overview
 published: True
 position: 0
 previous_url: /html5-report-viewer-reportviewer-methods
 ---
+
 <style>
 table th:first-of-type {
-    width: 35%;
+	width: 35%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
-# Methods Overview
+# Methods of the HTML5 Report Viewer
 
 | Method | Description |
 | ------ | ------ |
@@ -39,4 +40,3 @@ table th:nth-of-type(3) {
 | [viewMode(vm)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/viewmode(vm)%})|Sets the view mode and automatically reloads the current report (if any) into the new view;|
 | [pageMode()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode()%})|Gets the current page mode. For more information please see jQuery.fn.telerik_ReportViewer’s pageMode option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}#options).|
 | [pageMode(psm)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/pagemode(psm)%})|Sets the page mode and automatically reloads the current report (if any) into the new view.|
-

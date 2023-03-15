@@ -1,5 +1,5 @@
 ---
-title: Usage with Reporting REST Service
+title: Using with REST Service
 page_title: Using the Windows Forms Report Viewer with a Reporting REST Service Explained
 description: "Understand how to integrate the Windows Forms Report Viewer control with a Reporting REST Service, using the provided steps. See the prerequisites and common troubleshooting steps."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service
@@ -9,7 +9,7 @@ position: 8
 previous_url: /winforms-viewer-howto-use-it-with-rest-service
 ---
 
-# Using the Windows Forms Report Viewer With a Reporting REST Service
+# Using the Windows Forms Report Viewer With a REST Service
 
 This topic explains how to setup the Windows Forms Report Viewer to work with Telerik Reporting REST Service
 

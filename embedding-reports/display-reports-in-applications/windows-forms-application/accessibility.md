@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# Accessibility
+# WinForms Accessibility
 
 Telerik Reporting aims to provide a reporting solution accessible to a wider user audience. This includes users with motor control restrictions and ones working with assistive technologies. In our product we follow the recommended practices in [Section 508 of the Rehabilitation Act](https://www.section508.gov/) adding accessibility features to our WinForms report viewer.
 

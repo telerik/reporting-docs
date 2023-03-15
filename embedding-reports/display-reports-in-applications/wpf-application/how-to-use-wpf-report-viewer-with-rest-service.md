@@ -24,7 +24,7 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
 1. As soon as the report viewer is on your form, select it and locate the `ReportEngineConnection` property. Invoke the UI editor by pressing the ellipsis button. The `Report Engine Connection` dialog should appear:
 
-  ![An image ofthe Report Engine Connection dialog which serves for choosing whether the reports will be rendered by the viewer, from a Reporting Service or Report Server](images/wpf-connection-editor-rest-service.png)
+  ![An image ofthe Report Engine Connection dialog with REST Service option selected](images/wpf-connection-editor-rest-service.png)
 
 1. The __Reporting engine__ combobox provides the following options:
 
@@ -46,7 +46,7 @@ This topic explains how to setup the WPF Report Viewer to work with Telerik Repo
 
 1. Locate the __ReportSource__ property. Invoke the UI editor by pressing the ellipsis button. The `Report Source Editor` dialog should appear:
 
-	![An image of the Wpf Report Source Editor used for selecting the type of ReportSource to be used by the WPF Report Viewer](images/WpfReportSourceEditor.png)
+	![An image of the Wpf Report Source Editor with UriReportSource being the selected option](images/WpfReportSourceEditor.png)
 
 	>When the [ReportEngineConnection](/api/Telerik.ReportViewer.Wpf.ReportViewer#Telerik_ReportViewer_Wpf_ReportViewer_ReportEngineConnection) property has `Engine` set to `RestService`, the viewer will serialize the report source identifier property (`URI` for [UriReportSource](/api/Telerik.Reporting.UriReportSource), `TypeName` for [TypeReportSource](/api/Telerik.Reporting.TypeReportSource), `ReportDocument` for [InstanceReportSource](/api/Telerik.Reporting.InstanceReportSource) and `XML` for [XmlReportSource](/api/Telerik.Reporting.XmlReportSource)) and send it to the service resolver. The *REST service* will use the `ReportSourceResolver` instances included in its [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ReportServiceConfiguration) to resolve the report by the provided identifier. However, the *REST service*'s default implementation includes only [UriReportSourceResolver](/api/Telerik.Reporting.Services.UriReportSourceResolver) and [TypeReportSourceResolver](/api/Telerik.Reporting.Services.TypeReportSourceResolver), so you need to provide a [Custom Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) if you use another type of [ReportSource](/api/Telerik.Reporting.ReportSource).
 

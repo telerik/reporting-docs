@@ -1,43 +1,42 @@
 ---
 title: Accessibility
-page_title: Accessibility 
-description: Accessibility
+page_title: Windows Forms Accessibility
+description: "Learn more about the available accessibility features in the Windows Forms Report Viewer and HTML rendered report contents. Find out how to enable accessibility using the provided explanation."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/accessibility
-tags: accessibility
+tags: windows, forms, accessibility
 published: True
 position: 6
 previous_url: /winforms-report-viewer-accessibility
 ---
 <style>
 table th:first-of-type {
-    width: 20%;
+	width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 80%;
+	width: 80%;
 }
 </style>
 
-# Accessibility
+# Windows Forms Report Viewer Accessibility
 
-Telerik Reporting aims to provide a reporting solution accessible to a wider user audience. This includes users with motor control restrictions and ones working with assistive technologies. In our product we follow the recommended practices in [Section 508 of the Rehabilitation Act](http://www.section508.gov/) adding accessibility features to our WinForms report viewer. 
+Telerik Reporting aims to provide a reporting solution accessible to a wider user audience. This includes users with motor control restrictions and ones working with assistive technologies. In our product we follow the recommended practices in [Section 508 of the Rehabilitation Act](https://www.section508.gov/) adding accessibility features to our WinForms report viewer.
 
 ## Setting up accessibility features in WinForms viewer
 
-The accessibility features are enabled or disabled using a Boolean property named __EnableAccessibility__. When the property is set to __true__, additional meta-information is added to the report content and the report viewer controls’ behavior is changed so they respond differently to the user’s input. The default value of this property is __false__. This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__ is set to __true__, the exported PDF will be created according to [PDF/UA (ISO standard 14289-1)](https://en.wikipedia.org/wiki/PDF/UA) specification. 
+The accessibility features are enabled or disabled using a Boolean property named __EnableAccessibility__. When the property is set to __true__, additional meta-information is added to the report content and the report viewer controls’ behavior is changed so they respond differently to the user’s input. The default value of this property is __false__. This option also affects the accessibility of the exported PDF documents, i.e. if __enableAccessibility__ is set to __true__, the exported PDF will be created according to [PDF/UA (ISO standard 14289-1)](https://en.wikipedia.org/wiki/PDF/UA) specification.
 
-The accessibility routines capture the keyboard events to provide shortcut key access to the viewer areas. It is possible some of these shortcuts to interfere with the designed application behavior. In this case the keys mapping can be changed through the property [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.WinForms#Telerik_ReportViewer_WinForms_AccessibilityKeyMap), which provides access to the internal dictionary of keycodes and shortcut definitions. The code snippets below demonstrate how to change the default shortcut for navigating to the menu area: 
+The accessibility routines capture the keyboard events to provide shortcut key access to the viewer areas. It is possible some of these shortcuts to interfere with the designed application behavior. In this case the keys mapping can be changed through the property [AccessibilityKeyMap](/reporting/api/Telerik.ReportViewer.WinForms#Telerik_ReportViewer_WinForms_AccessibilityKeyMap), which provides access to the internal dictionary of keycodes and shortcut definitions. The code snippets below demonstrate how to change the default shortcut for navigating to the menu area:
 
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\WinForms\Form1.cs region=WinFormsViewerAccessibilityKeyMapSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\WinForms\Form1.vb region=WinFormsViewerAccessibilityKeyMapSnippet}}
 
-All the accessibility messages and labels support localization. You can modify them, following the procedure, described in the article [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}). 
+All the accessibility messages and labels support localization. You can modify them, following the procedure, described in the article [Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/report-viewer-localization%}).
 
-> Please note that the meta-information, added to the report content when the accessibility is enabled, might result in a small performance penalty, especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs. 
-
+> Please note that the meta-information, added to the report content when the accessibility is enabled, might result in a small performance penalty, especially on machines with outdated hardware. For best experience we recommend to enable the accessibility features conditionally according to your user's needs.
 
 ## Supported accessibility features in WinForms report viewer
 
-The WinForms report viewer supports the following important accessibility features:         
+The WinForms report viewer supports the following important accessibility features:
 
 |   |   |
 | ------ | ------ |
@@ -47,29 +46,22 @@ The WinForms report viewer supports the following important accessibility featur
 
 ## Supported accessibility features in rendered report contents
 
-All the report items have a property called [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription). The property value is an expression and it determines what will be the accessibility label when the report is rendered. Its value is set as a meta-information label that is output to the screen readers through the standard [WinForms Accessibility API](https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.accessibleobject). 
+All the report items have a property called [AccessibleDescription](/reporting/api/Telerik.Reporting.ReportItemBase#Telerik_Reporting_ReportItemBase_AccessibleDescription). The property value is an expression and it determines what will be the accessibility label when the report is rendered. Its value is set as a meta-information label that is output to the screen readers through the standard [WinForms Accessibility API](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.accessibleobject?view=windowsdesktop-7.0).
 
-The value of this label is created using the following pattern: `{type} {additional information} {description} `: 
+The value of this label is created using the following pattern: `{type} {additional information} {description} `:
 
-* __{type}__ is a placeholder that contains the type name of the currently rendered element - "Details section", "Text box", "Table", etc. The report item names are localizable and can be substituted with any appropriate strings, even with empty values, if there is no need to include the report item name in the label. 
+* __{type}__ is a placeholder that contains the type name of the currently rendered element - "Details section", "Text box", "Table", etc. The report item names are localizable and can be substituted with any appropriate strings, even with empty values, if there is no need to include the report item name in the label.
+* __{additional information}__ is intended to give some meaningful information about the context where the current item is in, or about its additional properties. The cases where it is most useful, are:
+	+ if the current item has some interactive action set, this token will contain the type of the action.
+	+ if the current item is __Table__ or __Crosstab__, the token will contain information about the row and column count.
+	+ if the current item is nested in a __Table__ or __Crosstab__, the token will contain information about the current cell's row and column __zero-based index__. Additionally, if the cell is used as a header, this information will be also included in the label.
+	+ if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked).
+* __{description}__ provides relevant information about the current item contents. Its value is evaluated using the item's *AccessibleDescription* property and if it is empty, falls back to the item's *Value* or *Text* property, whichever is available.
 
-* __{additional information}__ is intended to give some meaningful information about the context where the current item is in, or about its additional properties. The cases where it is most useful, are: 
-
-   + if the current item has some interactive action set, this token will contain the type of the action. 
-
-   + if the current item is __Table__ or __Crosstab__, the token will contain information about the row and column count. 
-
-   + if the current item is nested in a __Table__ or __Crosstab__, the token will contain information about the current cell's row and column __zero-based index__. Additionally, if the cell is used as a header, this information will be also included in the label. 
-
-   + if the current item is a __CheckBox__, the token will contain information about the current checkbox status (checked/unchecked). 
-
-* __{description}__ provides relevant information about the current item contents. Its value is evaluated using the item's *AccessibleDescription* property and if it is empty, falls back to the item's *Value* or *Text* property, whichever is available. 
-
-For example, if a report contains a __TextBox__ with `Value = "Sorts by Category"`, that performs a sorting action and is nested in a table's first (header) row and third column, the generated *accessibility label* value will be: *Text box. Performs a sorting action. Column header. Column 2 Row 0. Sorts by Category.* 
+For example, if a report contains a __TextBox__ with `Value = "Sorts by Category"`, that performs a sorting action and is nested in a table's first (header) row and third column, the generated *accessibility label* value will be: *Text box. Performs a sorting action. Column header. Column 2 Row 0. Sorts by Category.*
 
 ## Known issues
 
-* When a disabled toolbar button is selected, its accessible properties are not output to the screen reader. 
-
+* When a disabled toolbar button is selected, its accessible properties are not output to the screen reader.
 * When the focus is within a multiselect parameter, the current item state (checked/unchecked) is not output to the screen reader.
 

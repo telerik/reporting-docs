@@ -1,7 +1,6 @@
 ﻿<div id="footer" class="container-fluid pb-40">
-  {% if page.is_search_page != true and page.is_main != true %}
-  {% include feedback.html %}
-  {% endif %}
+  <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
+{{>partials/feedback}}
   <div class="row mt-60">
     <div class="col-lg-8 col-lg-offset-2">
       <div class="row">

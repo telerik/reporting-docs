@@ -1,5 +1,5 @@
 ---
-title: Creating Custom Parameter Editors
+title: Custom Parameter Editors
 page_title: Using Custom Parameter Editors in HTML5 MVC Report Viewer
 description: "Learn how to create and then use custom Parameter Editors with the HTML5 MVC Report Viewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing/how-to-create-a-custom-parameter-editor
@@ -9,7 +9,7 @@ position: 4
 previous_url: /html5-mvc-report-viewer-customizing-custom-parameters-editor
 ---
 
-# Creating Custom Parameter Editors Overview
+# Custom Parameter Editors in MVC Report Viewer
 
 The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.
 

@@ -1,7 +1,7 @@
 ---
-title: How to Set ReportSource for Report Viewers
-page_title: How to Set ReportSource for Report Viewers 
-description: How to Set ReportSource for Report Viewers
+title: Setting ReportSource to ReportViewers
+page_title: Setting ReportSource to ReportViewers Explained
+description: "Learn what is ReportSource and How to Set ReportSource for the supported Report Viewers in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers
 tags: how,to,set,reportsource,for,report,viewers
 published: True
@@ -9,7 +9,7 @@ position: 7
 previous_url: /report-sources-viewers
 ---
 
-# How to Set ReportSource for Report Viewers
+# Setting ReportSource to Report Viewers Overview
 
 To display a report in a Report Viewer, you must specify the [Report Source]({%slug telerikreporting/designing-reports/report-sources/overview%}) object. This document explains how to specify a Report Source for each of the following Report Viewer types:
 
@@ -37,7 +37,7 @@ The specified report is processed locally on the same machine where the Report V
 	1. In its __Properties__, find and click __ReportSource__.
 	1. A __"Load a Report from"__ dialog appears which allows you to select a __ReportSource__.
 	1. Select the type of the report source you would use and specify a report. For this example, we would use a __UriReportSource__, click 'URL or file' option and select the report that would be shown in the viewer. If you have to specify parameters for the report, continue with the next step.
-	1. Click __Edit Parameters__ button - __Edit Parameters__ dialog appears. Click __New__. In the __Parameter Name__ column select the name of a report parameter in the report. In the __Parameter Value__, type or select the value to pass to the parameter in the report. 
+	1. Click __Edit Parameters__ button - __Edit Parameters__ dialog appears. Click __New__. In the __Parameter Name__ column select the name of a report parameter in the report. In the __Parameter Value__, type or select the value to pass to the parameter in the report.
 
 * __Set the Report Source programmatically__
 
@@ -59,12 +59,12 @@ These Report Viewers do not have direct access to Telerik Reporting Engine. Repo
 __How this works:__
 
 1. The Report Viewer has a __client-side ReportSource__ that describes the report we want to display (*report description string* and *client parameters*). The *report description string* 's content must consider technology limitations in the size of sent messages and in the used characters. The *client parameters* must match by names (case sensitive) the report parameters;
-1. The Report Viewer (as a client) sends the *report description string* to the server, where the content is handled by the corresponding __Telerik Reporting Service's Report Source Resolver__. The purpose of the resolver is to create a valid [server-side Report Source]({%slug telerikreporting/designing-reports/report-sources/overview%}). 
+1. The Report Viewer (as a client) sends the *report description string* to the server, where the content is handled by the corresponding __Telerik Reporting Service's Report Source Resolver__. The purpose of the resolver is to create a valid [server-side Report Source]({%slug telerikreporting/designing-reports/report-sources/overview%}).
 
-	>The default resolvers used by  __Telerik Reporting Services__ can produce TypeReportSource and UriReportSource on the server ([Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})). Each Telerik Reporting Service provides mechanism for plugging a custom report source resolver allowing you to create and return any of the available Report Sources (see the links at the bottom of the article). The reports' assembly or TRDX|TRDP files must be accessible on the server where the Reporting Service and Telerik Reporting Engine are running. 
+	>The default resolvers used by  __Telerik Reporting Services__ can produce TypeReportSource and UriReportSource on the server ([Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})). Each Telerik Reporting Service provides mechanism for plugging a custom report source resolver allowing you to create and return any of the available Report Sources (see the links at the bottom of the article). The reports' assembly or TRDX|TRDP files must be accessible on the server where the Reporting Service and Telerik Reporting Engine are running.
 
 1. The Report Viewer (as a client) sends the *client parameters* to the server. The Reporting Service applies the values to the __server-side Report Source's Parameters collection__ that is generated in memory.
-1. After the Reporting Service resolves the *report description string* and *client parameters*, the Reporting Engine processes the document on the server. Finally, the Reporting Service returns the following: 
+1. After the Reporting Service resolves the *report description string* and *client parameters*, the Reporting Engine processes the document on the server. Finally, the Reporting Service returns the following:
 
 	+ Information about Visible parameters - the Report Viewer displays its Parameters Area and corresponding parameters editors;
 	+ The processed and rendered report - the rendering format depends on the viewer e.g. XAML for WPF Report Viewers and HTML for the HTML5 Viewer, or on the operation - export/print;
@@ -74,7 +74,7 @@ __Setting the Client-Side ReportSource:__
 
 ### __HTML5 Report Viewer__
 
-The [HTML5 Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is a client-side widget that has a __client-side reportSource__. The __reportSource.report__ part is a string - the *report description string* that can be a path to a TRDP or TRDX file, an assembly qualified name of a report class, or other custom information set via string. For example: 
+The [HTML5 Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is a client-side widget that has a __client-side reportSource__. The __reportSource.report__ part is a string - the *report description string* that can be a path to a TRDP or TRDX file, an assembly qualified name of a report class, or other custom information set via string. For example:
 
 ````HTML
 reportSource: {
@@ -92,13 +92,13 @@ reportSource: {
 }
 ````
 
-The *report description string* is sent to the [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) which internally resolves it to a __TypeReportSource__ or a __UriReportSource__ on the machine where the service and Telerik Reporting Engine are running. The __reportSource.parameters__ part is a collection of key-value pairs - the *client parameters*. Report parameters' values can be sent through the viewer's Parameters Area or on creating the HTML5 Viewer object in JavaScript. To display another report or to update the *client parameters* ' values of the current HTML5 Viewer object, you can update the HTML5 Viewer's reportSource by using the viewer object's [reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method in JavaScript. Or you can recreate the HTML5 Report Viewer. 
+The *report description string* is sent to the [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) which internally resolves it to a __TypeReportSource__ or a __UriReportSource__ on the machine where the service and Telerik Reporting Engine are running. The __reportSource.parameters__ part is a collection of key-value pairs - the *client parameters*. Report parameters' values can be sent through the viewer's Parameters Area or on creating the HTML5 Viewer object in JavaScript. To display another report or to update the *client parameters* ' values of the current HTML5 Viewer object, you can update the HTML5 Viewer's reportSource by using the viewer object's [reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method in JavaScript. Or you can recreate the HTML5 Report Viewer.
 
-> __The HTML5 Report Viewer works only with__ ([UriReportSource and TypeReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources)). If you need an InstanceReportSource or XmlReportSource, you will have to resolve manually the *report description string* via custom resolver for the Reporting REST service. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) (available only if using a Telerik Reporting REST service instance). 
+> __The HTML5 Report Viewer works only with__ ([UriReportSource and TypeReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources)). If you need an InstanceReportSource or XmlReportSource, you will have to resolve manually the *report description string* via custom resolver for the Reporting REST service. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) (available only if using a Telerik Reporting REST service instance).
 
 ### __HTML5 ASP.NET MVC Report Viewer__ 
 
-The [HTML5 ASP.NET MVC Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) is an MVC wrapper of the __HTML5 Viewer__ that renders a string on the page. The string contains the HTML elements and the JavaScript methods required for initializing the HTML5 Viewer JavaScript widget. The HTML5 ASP.NET MVC Viewer has a [ReportSource](/reporting/api/Telerik.ReportViewer.Mvc.IReportViewerBuilder#Telerik_ReportViewer_Mvc_IReportViewerBuilder_ReportSource) method, creating a client-side report source via server-side code (C# or VB.NET): 
+The [HTML5 ASP.NET MVC Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) is an MVC wrapper of the __HTML5 Viewer__ that renders a string on the page. The string contains the HTML elements and the JavaScript methods required for initializing the HTML5 Viewer JavaScript widget. The HTML5 ASP.NET MVC Viewer has a [ReportSource](/api/Telerik.ReportViewer.Mvc.IReportViewerBuilder#Telerik_ReportViewer_Mvc_IReportViewerBuilder_ReportSource) method, creating a client-side report source via server-side code (C# or VB.NET):
 
 + `ReportSource(UriReportSource uriReportSource)` - the *report description string* is obtained from the *UriReportSource.Uri* property, and the *client parameters* from the *UriReportSource.Parameters* collection.
 + `ReportSource(TypeReportSource typeReportSource)` - the *report description string* is obtained from the *TypeReportSource.TypeName* property, and the *client parameters* from the *TypeReportSource.Parameters* collection.
@@ -116,11 +116,11 @@ To display another report or to update the *client parameters* ' values of the c
 
 ### __HTML5 ASP.NET WebForms Report Viewer__
 
-The [HTML5 ASP.NET WebForms Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) is a server-side wrapper of the __HTML5 Viewer__, suitable for ASP.NET WebForms applications. The control renders the HTML elements and the JavaScript methods required for initializing the HTML5 Viewer JavaScript widget. The ReportSource property of the HTML5 ASP.NET WebForms Report Viewer control is of type [Telerik.ReportViewer.Html5.WebForms.ReportSource](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportSource):
+The [HTML5 ASP.NET WebForms Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) is a server-side wrapper of the __HTML5 Viewer__, suitable for ASP.NET WebForms applications. The control renders the HTML elements and the JavaScript methods required for initializing the HTML5 Viewer JavaScript widget. The ReportSource property of the HTML5 ASP.NET WebForms Report Viewer control is of type [Telerik.ReportViewer.Html5.WebForms.ReportSource](/api/Telerik.ReportViewer.Html5.WebForms.ReportSource):
 
-+ The *report description string* is obtained from the [Telerik.ReportViewer.Html5.WebForms.ReportSource.Identifier](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportSource#Telerik_ReportViewer_Html5_WebForms_ReportSource_Identifier) property, which accepts a string. The string can be a path to a TRDP or TRDX file, an assembly qualified name of a report class or custom information provided in a string. For example:(__Identifier="./DashboardReport.trdp"__) or (__Identifier="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"__).
-+ Report parameters' values are obtained from the [ReportSource.Parameters](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportSource#Telerik_ReportViewer_Html5_WebForms_ReportSource_Parameters) property - the *client parameters*.
-+ The [Telerik.ReportViewer.Html5.WebForms.ReportSource.IdentifierType](/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportSource#Telerik_ReportViewer_Html5_WebForms_ReportSource_IdentifierType) property hints which resolver can be used for resolving the report description string on the server.
++ The *report description string* is obtained from the [Telerik.ReportViewer.Html5.WebForms.ReportSource.Identifier](/api/Telerik.ReportViewer.Html5.WebForms.ReportSource#Telerik_ReportViewer_Html5_WebForms_ReportSource_Identifier) property, which accepts a string. The string can be a path to a TRDP or TRDX file, an assembly qualified name of a report class or custom information provided in a string. For example:(__Identifier="./DashboardReport.trdp"__) or (__Identifier="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"__).
++ Report parameters' values are obtained from the [ReportSource.Parameters](/api/Telerik.ReportViewer.Html5.WebForms.ReportSource#Telerik_ReportViewer_Html5_WebForms_ReportSource_Parameters) property - the *client parameters*.
++ The [Telerik.ReportViewer.Html5.WebForms.ReportSource.IdentifierType](/api/Telerik.ReportViewer.Html5.WebForms.ReportSource#Telerik_ReportViewer_Html5_WebForms_ReportSource_IdentifierType) property hints which resolver can be used for resolving the report description string on the server.
 
 __Example of setting the client-side ReportSource in code-behind:__
 
@@ -173,7 +173,7 @@ The [WinForms Report Viewer control]({%slug telerikreporting/using-reports-in-ap
 
 + The *report description string* is obtained from the TypeReportSource.TypeName|UriReportSource.Uri property that returns a string. The *report description string* is sent to the [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), which internally resolves it to a __TypeReportSource__ or a __UriReportSource__ on the machine where the service and Telerik Reporting Engine are running.
 
-	>If you need an InstanceReportSource or XmlReportSource, you will have to send custom string as *report description string*, and to resolve manually the *report description string* via custom resolver for the Reporting REST service. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) (available only if using a Telerik Reporting REST service instance).
+	> If you need an InstanceReportSource or XmlReportSource, you will have to send custom string as *report description string*, and to resolve manually the *report description string* via custom resolver for the Reporting REST service. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) (available only if using a Telerik Reporting REST service instance).
 
 + Report parameters' values (*client parameters*) are obtained from the TypeReportSource.Parameters|UriReportSource.Parameters collection. The *client parameters* can be sent through the viewer's Parameters Area, on creating the WinForms Report Viewer, or by updating the viewer's ReportSource property.
 
@@ -188,7 +188,7 @@ The [WPF Report Viewer control]({%slug telerikreporting/using-reports-in-applica
 
 + The *report description string* is obtained from the TypeReportSource.TypeName|UriReportSource.Uri property, that returns a string. The *report description string* is sent to the [Telerik Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) which internally resolves it to a __TypeReportSource__ or a __UriReportSource__ on the machine where the service and Telerik Reporting Engine are running.
 
-  >If you need an InstanceReportSource or XmlReportSource, you will have to send a custom string as *report description string*, and to resolve manually the *report description string* via custom resolver for the Reporting REST service. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) (available only if using a Telerik Reporting REST service instance).
+	> If you need an InstanceReportSource or XmlReportSource, you will have to send a custom string as *report description string*, and to resolve manually the *report description string* via custom resolver for the Reporting REST service. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) (available only if using a Telerik Reporting REST service instance).
 
 + Report parameters' values (*client parameters*) are obtained from the TypeReportSource.Parameters|UriReportSource.Parameters collection. The *client parameters* can be sent through the viewer's Parameters Area, on creating the WPF Report Viewer, or by updating the viewer's ReportSource property.
 
@@ -201,7 +201,6 @@ __Example of setting the ReportSource at runtime using the *Window.Loaded* event
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml.cs}}
 
-
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}} 
 
@@ -209,7 +208,7 @@ __Example of setting the ReportSource at runtime using the *Window.Loaded* event
 
 > [Telerik Report Server](http://www.telerik.com/report-server)'s REST Service can use only its built-in Report Source Resolver, capable of handling client-side UriReportSource into a server-side UriReportSource on the server ([Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})). Reports must be [serialized in TRDX files]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) or [packaged in TRDP files]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) which can be published on Telerik Report Server - [Working with Report Server Reports]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports%}). Thus the __client-side ReportSource is limited to UriReportSource__, where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard" which will request the Dashboard.trdx|trdp file that is published on Telerik Report Server under the "Samples" category.
 
-The following Report Viewers are designed to work as clients of [Telerik Report Server](http://www.telerik.com/report-server) : 
+The following Report Viewers are designed to work as clients of [Telerik Report Server](https://www.telerik.com/report-server):
 
 * __HTML5 Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
 * __HTML5 ASP.NET MVC Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__

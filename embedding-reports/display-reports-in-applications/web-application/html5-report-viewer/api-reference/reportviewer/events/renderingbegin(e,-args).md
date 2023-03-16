@@ -1,13 +1,14 @@
 ---
 title: renderingBegin(e, args)
-page_title: renderingBegin(e, args) 
-description: renderingBegin(e, args)
+page_title: The renderingBegin(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the renderingBegin(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)
-tags: renderingbegin(e,,args)
+tags: renderingbegin,args
 published: True
 position: 9
 previous_url: /html5-report-viewer-reportviewer-events-renderingbegin
 ---
+
 <style>
 table th:first-of-type {
 	width: 25%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# renderingBegin(e, args)
+# The `renderingBegin(e, args)` Event of the HTML5 Report Viewer
 
 Occurs before rendering the report.
 
@@ -40,7 +41,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

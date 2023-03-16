@@ -1,7 +1,7 @@
 ---
 title: refreshReport()
-page_title: refreshReport() 
-description: refreshReport()
+page_title: The refreshReport() method of the HTML5 Report Viewer explained
+description: "Learn more about the refreshReport() method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/refreshreport()
 tags: refreshreport()
 published: True
@@ -9,14 +9,13 @@ position: 11
 previous_url: /html5-report-viewer-reportviewer-methods-refreshreport
 ---
 
-# refreshReport()
+# The `refreshReport()` method of the HTML5 Report Viewer
 
 Reloads/refreshes the current report.
 
 Returns: the current *ReportViewer* object.
 
-    
-````js
+````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.refreshReport();
 ````

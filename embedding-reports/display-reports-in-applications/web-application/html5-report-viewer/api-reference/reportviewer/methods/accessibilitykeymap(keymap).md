@@ -1,7 +1,7 @@
 ---
 title: accessibilityKeyMap(keyMap)
-page_title: accessibilityKeyMap(keyMap) 
-description: accessibilityKeyMap(keyMap)
+page_title: The accessibilityKeyMap(keyMap) method of the HTML5 Report Viewer explained
+description: "Learn more about the accessibilityKeyMap(keyMap) method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/accessibilitykeymap(keymap)
 tags: accessibilitykeymap(keymap)
 published: True
@@ -9,20 +9,19 @@ position: 2
 previous_url: /html5-report-viewer-reportviewer-methods-accessibility-keymap-km
 ---
 
-# accessibilityKeyMap(keyMap)
+# The `accessibilityKeyMap(keyMap)` method of the HTML5 Report Viewer
 
-Sets the current key shortcuts map, used when the report viewer is in accessible mode. 
+Sets the current key shortcuts map, used when the report viewer is in accessible mode.
 
-    
-````js
+````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.accessibilityKeyMap(
 {
-    CONFIRM_KEY: 32,
-    CONTENT_AREA_KEY: 82, //R
-    DOCUMENT_MAP_AREA_KEY: 77, //M
-    MENU_AREA_KEY: 85, //U
-    PARAMETERS_AREA_KEY: 80 //P
+	CONFIRM_KEY: 32,
+	CONTENT_AREA_KEY: 82, //R
+	DOCUMENT_MAP_AREA_KEY: 77, //M
+	MENU_AREA_KEY: 85, //U
+	PARAMETERS_AREA_KEY: 80 //P
 });
 ````
 

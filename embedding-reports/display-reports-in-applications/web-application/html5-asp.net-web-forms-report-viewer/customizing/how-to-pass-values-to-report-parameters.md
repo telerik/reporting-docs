@@ -1,6 +1,6 @@
 ---
 title: Passing Values to Report Parameters
-page_title: Passing Values to Report Parameters from outside the HTML5 ASP.NET WebForms ReportViewer
+page_title: Sending Values to Report Parameters from outside the HTML5 ASP.NET WebForms ReportViewer
 description: "Learn How to pass Values to Report Parameters from Components Located Outside the HTML5 ASP.NET WebForms ReportViewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-pass-values-to-report-parameters
 tags: how,to,pass,values,to,report,parameters

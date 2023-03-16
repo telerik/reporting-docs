@@ -1,7 +1,7 @@
 ---
-title: How to Use HTML5 Report Viewer in an ASP.NET Core in .NET 5 application
-page_title: How to Use HTML5 Report Viewer in an ASP.NET Core in .NET 5 application 
-description: How to Use HTML5 Report Viewer in an ASP.NET Core in .NET 5 application
+title: Using in .NET 5
+page_title: Using HTML5 Report Viewer in ASP.NET Core in .NET 5
+description: "Learn How to integrate the Telerik Reporting HTML5 Report Viewer in ASP.NET Core applications in .NET 5."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application
 tags: how,to,use,html5,report,viewer,in,an,asp.net,core,in,.net,5,application
 published: True
@@ -9,7 +9,7 @@ position: 5
 previous_url: /manual-setup-of-html5-report-viewer-in-aspnetcore-net5
 ---
 
-# How to Use HTML5 Report Viewer in an ASP.NET Core in .NET 5 application
+# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 5
 
 This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in.NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/) web application.
 
@@ -18,9 +18,7 @@ This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core
 The report viewer requires a reference to a running Reports Web Service. The report viewer can consume reports generated and served by any of the following Reports Web Service implementations:
 
 * A service that runs in another application.
-
 * A service that runs in a Telerik Report Server instance.
-
 * A service that is hosted locally in the same application.
 
 In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core in.NET 5]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}).
@@ -36,7 +34,6 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 ## Adding the HTML5 Report Viewer component manually
 
 1. This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project.
-
 1. Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
 
 	````C#
@@ -96,7 +93,6 @@ app.UseStaticFiles();
 
 
 1. Set the *launchSettings.json* `launchUrl` to the new HTML page.
-
 1. Finally, run the project to see the report.
 
 ## Demo project

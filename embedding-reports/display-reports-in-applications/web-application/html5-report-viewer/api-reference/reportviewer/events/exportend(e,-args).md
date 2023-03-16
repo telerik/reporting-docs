@@ -1,13 +1,14 @@
 ---
 title: exportEnd(e, args)
-page_title: exportEnd(e, args) 
-description: exportEnd(e, args)
+page_title: The exportEnd(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the exportEnd(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/exportend(e,-args)
 tags: exportend(e,,args)
 published: True
 position: 3
 previous_url: /html5-report-viewer-reportviewer-events-exportend
 ---
+
 <style>
 table th:first-of-type {
 	width: 25%;
@@ -17,12 +18,11 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# exportEnd(e, args)
+# The `exportEnd(e, args)` Event of the HTML5 Report Viewer
 
 Occurs after exporting the report.
 
 Parameters:
-
 
 | Parameter | Description |
 | ------ | ------ |
@@ -45,7 +45,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

@@ -1,5 +1,5 @@
 ---
-title: Report Viewer Initialization
+title: Initialization
 page_title: HTML5 Report Viewer Options Overview
 description: "Learn what are the options that may be set when initializing the HTML5 Report Viewer and what functionalities they control."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization
@@ -19,7 +19,7 @@ table th:nth-of-type(2) {
 
 # Initializing the HTML5 Report Viewer
 
-The Telerik HTML5 Report Viewer is a jQuery plugin - __jQuery.fn.telerik_ReportViewer(options)__. Below is a list of all options available during initialization. 
+The Telerik HTML5 Report Viewer is a jQuery plugin - `jQuery.fn.telerik_ReportViewer(options)`. Below is a list of all options available during initialization.
 
 ## Options
 
@@ -76,11 +76,11 @@ To create a ReportViewer:
 $("#reportViewer1").telerik_ReportViewer({
 	serviceUrl: "api/reports",
 	templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
-	reportSource: { report: "product catalog.trdp" }
+	reportSource: { report: "Product Catalog.trdp" }
 });
 ````
 
-To get the __ReportViewer__ object from the HTML element: 
+To get the __ReportViewer__ object from the HTML element:
 
 ````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");

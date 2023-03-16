@@ -1,28 +1,27 @@
 ---
 title: parameter
-page_title: parameter 
-description: parameter
+page_title: The parameter of the HTML5 Report Viewer explained
+description: "Learn what is the parameter of the Telerik Reporting HTML5 Report Viewer and what are its properties."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parameter
 tags: parameter
 published: True
 position: 4
 previous_url: /html5-report-viewer-api-parameter
 ---
+
 <style>
 table th:first-of-type {
-    width: 20%;
+	width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 35%;
+	width: 35%;
 }
 table th:nth-of-type(3) {
-    width: 45%;
+	width: 45%;
 }
 </style>
 
-# parameter
-
-## parameter
+# The `parameter` of the HTML5 Report Viewer
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |
@@ -39,4 +38,3 @@ table th:nth-of-type(3) {
 | __text__ |string|specifies the text for the parameter editor|
 | __type__ | __telerikReportViewer.ParameterTypes__ |specifies the type of the parameter|
 | __value__ |object|specifies the value of the parameter|
-

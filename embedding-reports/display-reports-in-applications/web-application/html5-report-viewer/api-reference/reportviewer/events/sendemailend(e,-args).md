@@ -1,13 +1,14 @@
 ---
 title: sendEmailEnd(e, args)
-page_title: sendEmailEnd(e, args) 
-description: sendEmailEnd(e, args)
+page_title: The sendEmailEnd(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the sendEmailEnd(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailend(e,-args)
-tags: sendemailend(e,,args)
+tags: sendemailend,args
 published: True
 position: 5
 previous_url: /html5-report-viewer-reportviewer-events-sendemailend
 ---
+
 <style>
 table th:first-of-type {
 	width: 25%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# sendEmailEnd(e, args)
+# The `sendEmailEnd(e, args)` Event of the HTML5 Report Viewer
 
 Occurs after the report is exported and before the E-mail message is sent.
 
@@ -44,7 +45,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

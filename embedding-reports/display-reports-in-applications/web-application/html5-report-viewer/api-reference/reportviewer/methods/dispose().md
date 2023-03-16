@@ -1,7 +1,7 @@
 ---
 title: dispose()
-page_title: dispose() 
-description: dispose()
+page_title: The dispose() method of the HTML5 Report Viewer explained
+description: "Learn more about the dispose() method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/dispose()
 tags: dispose()
 published: True
@@ -9,12 +9,11 @@ position: 7
 previous_url: /html5-report-viewer-reportviewer-methods-dispose-en
 ---
 
-# dispose()
+# The `dispose()` method of the HTML5 Report Viewer
 
-Stops sending keep alive requests to the server, if keep client alive was enabled. 
+Stops sending keep alive requests to the server, if keep client alive was enabled.
 
-    
-````js
+````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.dispose();
 ````

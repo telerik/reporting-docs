@@ -130,7 +130,7 @@ navigation:
         position: 10
         title: "Web Application"
     embedding-reports/display-reports-in-applications/web-application/html5-report-viewer:
-        position: 10
+        position: 1
         title: "HTML5 Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/customizing:
         position: 10
@@ -157,19 +157,19 @@ navigation:
         position: 12
         title: "telerikReportViewer Namespace"
     embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer:
-        position: 11
+        position: 6
         title: "HTML5 ASP.NET MVC Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/customizing:
         position: 15
         title: "Customizing"
     embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer:
-        position: 12
+        position: 7
         title: "HTML5 ASP.NET Web Forms Report Viewer" 
     embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
         position: 15
         title: "Customizing"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
-        position: 13
+        position: 4
         title: "Angular Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing:
         position: 12
@@ -178,7 +178,7 @@ navigation:
         position: 14
         title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
-        position: 16
+        position: 5
         title: "React Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing:
         position: 12
@@ -187,10 +187,10 @@ navigation:
         position: 14
         title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/blazor-report-viewer:
-        position: 15
+        position: 3
         title: "Blazor Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer:
-        position: 14
+        position: 2
         title: "Native Blazor Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/customizing:
         position: 12
@@ -199,7 +199,7 @@ navigation:
         position: 14
         title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer:
-        position: 17
+        position: 9
         title: "ASP.NET Web Forms Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state:
         position: 15

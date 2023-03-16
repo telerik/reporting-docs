@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Displaying Reports in Applications Overview
-description: "Learn more about the approaches to display Telerik Reporting reports in applications."
+description: "Learn more about the approaches to display Telerik Reporting reports in the supported desktop and web applications."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/overview
 tags: telerik, reporting, embedding, reports, displaying, reports, in, applications, overview
 published: True
@@ -25,10 +25,11 @@ Telerik Reporting provides the following report viewers:
 
 	+ *Vue.js*. A step-by-step example for integrating the viewer in Vue.js application can be found in the [How to use HTML5 Report Viewer in Vue.js]({%slug how-to-use-html5-viewer-in-vue-js%}) KB article
 	+ *ASP.NET Core*. The exact implementation depends on the framework version. Use the following resources for the recommended approach:
+
 		- [How to Use HTML5 Report Viewer in an ASP.NET Core in .NET 5 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application%})
-		- [How To: Use HTML5 Report Viewer in an ASP.NET Core 3.1 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application%})  
-		- [How To: Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})  
-		- [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC]({%slug how-to-implement-telerik-reporting-in-asp-net-core-mvc%})  
+		- [How To: Use HTML5 Report Viewer in an ASP.NET Core 3.1 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application%})
+		- [How To: Use HTML5 Report Viewer in an ASP.NET Core 2.1 and 2.2 application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application%})
+		- [How to implement Telerik Reporting in ASP.NET Core 2.1 MVC]({%slug how-to-implement-telerik-reporting-in-asp-net-core-mvc%})
 
 * [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})
 
@@ -56,11 +57,11 @@ Telerik Reporting provides the following report viewers:
 
 * [WinForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 
-	The WinForms Report Viewer is suitable for WinForms and WPF projects. The viewer is built with standard Microsoft controls. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](http://www.telerik.com/report-server).
+	The WinForms Report Viewer is suitable for WinForms and WPF projects. The viewer is built with standard Microsoft controls. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](https://www.telerik.com/report-server).
 
 * [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
 
-	The WPF Report Viewer is suitable for WPF and WinForms projects. The viewer is built with Telerik UI for WPF controls providing better look and feel, and functionality. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](http://www.telerik.com/report-server).
+	The WPF Report Viewer is suitable for WPF and WinForms projects. The viewer is built with Telerik UI for WPF controls providing better look and feel, and functionality. It can operate with an embedded reporting engine or as a client of [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Telerik Report Server](https://www.telerik.com/report-server).
 
 * [ASP.NET WebForms Report Viewer (obsolete)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})
 

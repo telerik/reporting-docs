@@ -5,6 +5,7 @@ type: how-to
 page_title: How To Initialize The Report Parameter Values in Telerik Reporting Silverlight Viewer Through Code
 slug: programmatic-initialization-of-report-parameter-values-in-telerik-reporting-silverlight-viewer
 res_type: kb
+sitemap: false
 ---
 
 ## Environment
@@ -22,6 +23,8 @@ res_type: kb
 		<td>Silverlight viewer</td>
 	</tr>
 </table>
+
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
 
 ## Description
 

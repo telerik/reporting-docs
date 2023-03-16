@@ -5,6 +5,7 @@ type: how-to
 page_title: The Silverlight report viewer does not render Images, Charts, Barcodes and Shapes.
 slug: images-charts-barcodes-and-shapes-are-not-being-displayed-in-the-silverlight-report-viewer
 res_type: kb
+sitemap: false
 ---
 
 ## Environment
@@ -25,7 +26,9 @@ res_type: kb
 	</tbody>
 </table>
 
-## Description  
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).\
+
+## Description
 
  When a report is previewed in the Silverlight report viewer, Images, Charts, Barcodes and Shapes are missing, however they are present when exporting to one of the supported formats.  
    

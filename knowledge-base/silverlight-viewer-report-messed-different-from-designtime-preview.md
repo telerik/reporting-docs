@@ -7,6 +7,7 @@ tags: telerik, reporting, troubleshoot, silverlight, reportviewer, report, messe
 published: True
 type: troubleshooting
 res_type: kb
+sitemap: false
 ---
 
 ## Environment
@@ -27,6 +28,8 @@ res_type: kb
 		</tr>
 	</tbody>
 </table>
+
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
 
 ## Description
 

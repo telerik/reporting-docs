@@ -7,6 +7,7 @@ tags: telerik, reporting, troubleshoot, silverlight, reportviewer, xaml, resourc
 published: True
 type: troubleshooting
 res_type: kb
+sitemap: false
 ---
 
 ## Environment
@@ -28,6 +29,8 @@ res_type: kb
 	</tbody>
 </table>
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
+
 ## Description
 
 XAML resources-related errors occur on building an application that uses the Silverlight ReportViewer.
@@ -41,9 +44,8 @@ The error messages are similar to `The name "XYZControl" does not exist in the n
 The possible causes are the following:
 
 * As of Telerik Reporting Q1 2014, the Silverlight ReportViewer uses implicit styles. Therefore, when the `Telerik.ReportViewer.Silverlight.xaml` template file is not loaded correctly, the viewer is not displayed.
-
 * Error messages may occur if the additionally required XAML files are not loaded or are not of a version synchronized with Telerik Reporting.
 
-## Solution  
+## Solution
 
 Double-check if the XAML resources are loaded in the application and [if the dependencies between Telerik Reporting and Telerik UI for Silverlight are considered]({%slug telerikreporting/upgrade/overview%}). For more details about the settings required by the Silverlight ReportViewer, refer to the article on [adding the report viewer to a Silverlight application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}).

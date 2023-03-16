@@ -5,6 +5,7 @@ type: how-to
 page_title: The WPF/Silverlight report viewer does not render anything after upgrading from version prior to Q1 2014 to Q1 2014 or later
 slug: the-wpf-silverlight-report-viewer-is-blank-after-upgrading-from-version-prior-to-q1-2014-to-q1-2014-or-later
 res_type: kb
+sitemap: false
 ---
 
 ## Environment
@@ -20,6 +21,7 @@ res_type: kb
 	</tr>
 </table>
 
+> The Silverlight Report Viewer and its WCF Reporting Service are no longer supported and deployed with the installation of Telerik Reporting. The last release of Telerik Reporting with included Silverlight Report Viewer is [R1 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2023-17-0-23-118).
 
 ## Description
 
@@ -28,21 +30,17 @@ Starting from **Telerik Reporting Q1 2014** both the Silverlight and WPF report 
 After upgrading to **Q1 2014** both WPF/Silverlight report viewers may become blank. That is because the themes are no longer *embedded* in the assembly and are instead distributed as *separate* files. This means that the report viewer has no theme applied and it becomes blank. In order to apply a theme, you will have to migrate from **Style Manager** to **Implicit Styling**.
 
 ## Solution
- 
+
 1. Add references to the following Telerik UI for WPF assemblies, which are usually located at the following path:
 
  - For WPF - *C:\Program Files (x86)\Progress\Telerik Reporting < Version >\Bin\WpfViewerDependencies*
- 
  - For Silverlight - *C:\Program Files (x86)\Progress\Telerik Reporting < Version >\Bin*
- 
+
  In case you are still not prepared to migrate to implicit styling, you can use the binaries that include the xaml. However, you will still have to add all the xaml files mentioned in the next step, otherwise, the Report Viewer will not show up as it will have no style:
 
    - **Telerik.Windows.Controls.dll**
- 
    - **Telerik.Windows.Controls.Input.dll**
- 
    - **Telerik.Windows.Controls.Navigation.dll**
- 
    - **Telerik.ReportViewer.Wpf.dll** (for Silverlight it is **Telerik.ReportViewer.Silverlight.dll**)
 
 2. Add the respective xaml files for the desired theme. The themes are usually located at the following paths:

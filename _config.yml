@@ -402,7 +402,18 @@ defaults:
         res_type: "api"
         description_suffix: "- Save development time with the complete Telerik Reporting reference listing publicly available classes, methods, and properties."
         title_suffix: "Telerik Reporting API Reference"
-        
+## Don't include all the files from the WCF and Silverlight folders in the sitemap
+-
+    scope:
+        path: embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service
+    values:
+        sitemap: false
+-
+    scope:
+        path: embedding-reports/display-reports-in-applications/silverlight-application
+    values:
+        sitemap: false
+
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
 suiteversion: "R1 2023"

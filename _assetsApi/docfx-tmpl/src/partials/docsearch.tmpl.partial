@@ -15,17 +15,22 @@
             </div>
             <div id="refine-search-popup" style="display: none">
                <ul>
-                  <li>
-                     <label class="custom-checkbox unselectable">
-                     <input type="checkbox" data-bind="checked: documentation" /><span class="k-icon k-i-check"></span>Search in Documentation
-                     </label>
-                  </li>
-                  <li>
-                     <label class="custom-checkbox unselectable">
-                     <input type="checkbox" disabled="true" data-bind="checked: api" /><span class="k-icon k-i-check"></span>Search in API Reference
-                     </label>
-                  </li>
-               </ul>
+               <li>
+                  <label class="custom-checkbox unselectable">
+                  <input type="checkbox"  disabled="true"  data-bind="checked: documentation" /><span class="k-icon k-i-check"></span>Search in Documentation
+                  </label>
+               </li>
+               <li>
+                  <label class="custom-checkbox unselectable">
+                  <input type="checkbox"  data-bind="checked: kb" /><span class="k-icon k-i-check"></span>Search in Knowledge Base
+                  </label>
+               </li>
+               <li>
+                  <label class="custom-checkbox unselectable">
+                  <input type="checkbox"  data-bind="checked: api" /><span class="k-icon k-i-check"></span>Search in API Reference
+                  </label>
+               </li>
+            </ul>
             </div>
          </div>
       </form>
@@ -34,7 +39,7 @@
          var gcsInstance = '001595215763381649090:jt1stbj813w';
          var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
          isKbPage =  false ;
-         siteHasKbPortal = '';
+         siteHasKbPortal = 'true';
          showSearchPopup = false;
        </script>
        <script type="text/javascript" src="/reporting/assets/search-results.js"></script>

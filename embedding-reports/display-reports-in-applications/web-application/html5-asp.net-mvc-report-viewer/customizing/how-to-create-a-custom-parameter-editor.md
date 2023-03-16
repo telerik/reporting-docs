@@ -9,9 +9,9 @@ position: 4
 previous_url: /html5-mvc-report-viewer-customizing-custom-parameters-editor
 ---
 
-# Custom Parameter Editors in MVC Report Viewer
+# Custom Parameter Editors in the MVC Report Viewer
 
-The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.
+The article elaborates how to change the default editors for visible parameters in the HTML5 MVC Report Viewer's Parameters Area.
 
 Custom parameter editors are defined through the ParameterEditors method when creating the report viewer widget. Check out the following list with the available parameter editors:
 

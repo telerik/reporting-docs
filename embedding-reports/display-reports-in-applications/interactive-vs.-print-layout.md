@@ -5,7 +5,7 @@ description: "Learn what are the Interactive and Print Layouts in Telerik Report
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout
 tags: interactive,vs.,print,layout
 published: True
-position: 9
+position: 2
 previous_url: /report-viewers-interactive-print-view
 ---
 

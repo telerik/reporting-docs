@@ -1,8 +1,8 @@
 ---
-title: How to Use KendoDateTimePicker for Parameter Editors in the Angular Report Viewer
-description: See how to use the KendoDateTimePicker for selecting date and time for the report parameter by creating custom parameter editor in the Angular Report Viewer
+title: Using KendoDateTimePicker in the Angular Report Viewer
+description: "Learn how to use the KendoDateTimePicker for selecting date and time for the report parameter by creating custom parameter editor in the Angular Report Viewer."
 type: how-to
-page_title: Using KendoDateTimePicker in Angular Report Viewer
+page_title: Using KendoDateTimePicker instead of the default DatePicker in Angular Report Viewer
 slug: how-to-use-kendodatetimepicker-for-parameter-editors-in-the-angular-report-viewer
 position: 
 tags: angular, reportviewer, kendodatetimepicker
@@ -11,6 +11,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -28,11 +29,10 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
+
 This article describes how to use the [KendoDateTimePicker](https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker) as a custom parameter editor
 in [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}). This approach allows the selection of date and time for the **DateTime** [report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}).
-
 
 ## Solution
 > Telerik kendoDateTimePicker widget is not included in the Kendo UI JavaScript distributed by 
@@ -43,77 +43,78 @@ Also, you need to make sure that Kendo all is loaded after jQuery. Because of th
 of the viewer after Kendo all is loaded:
 
 1. In the initializaion of the viewer, specify the parameterEditors [option]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
-```TypeScript
+
+	````TypeScript
 <tr-viewer #viewer1 *ngIf="visible"
-    [containerStyle]="viewerContainerStyle"
-    [serviceUrl]="'http://localhost:59654/api/reports/'"
-    [reportSource]="{
-        report: 'MyReport.trdp',
-        parameters: {}
-    }"
-    [parameterEditors]="[{
-        match: match,
-        createEditor: createEditor
-    }]"
-</tr-viewer>
-```
+		[containerStyle]="viewerContainerStyle"
+		[serviceUrl]="'http://localhost:59654/api/reports/'"
+		[reportSource]="{
+			report: 'MyReport.trdp',
+			parameters: {}
+		}"
+		[parameterEditors]="[{
+			match: match,
+			createEditor: createEditor
+		}]"
+	</tr-viewer>
+````
 
-2. Then in the **app.component.ts** implement the createEditor function. You see that we set the visibility of the viewer to True once kendo.all.min.js is loaded::
 
-```TypeScript
+1. Then in the **app.component.ts** implement the createEditor function. You see that we set the visibility of the viewer to True once `kendo.all.min.js` is loaded:
+
+	````TypeScript
 export class AppComponent implements OnInit {
-    @ViewChild('viewer1', { static: false }) viewer: TelerikReportViewerComponent;
+		@ViewChild('viewer1', { static: false }) viewer: TelerikReportViewerComponent;
 
-    private visible: boolean = false;
-    . . .
+		private visible: boolean = false;
+		...
 
-    ngOnInit() {
-        this.loadScript("http://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js")
-            .then(() => {
-                this.visible = true;
-            });
-    }
+		ngOnInit() {
+			this.loadScript("http://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js")
+				.then(() => {
+					this.visible = true;
+				});
+		}
 
-   . . .
-    match(parameter) {
-        return parameter.type === "System.DateTime";
-    }
+		...
+		match(parameter) {
+			return parameter.type === "System.DateTime";
+		}
 
-    createEditor (placeholder, options){
-        var dateTimePicker = $(placeholder).html('<input type="datetime"/>'),
-            parameter,
-            valueChangedCallback = options.parameterChanged,
-            dropDownList;
+		createEditor (placeholder, options){
+			var dateTimePicker = $(placeholder).html('<input type="datetime"/>'),
+				parameter,
+				valueChangedCallback = options.parameterChanged,
+				dropDownList;
 
-        function onChange() {
-            var val = dropDownList.value();
-            valueChangedCallback(parameter, val);
-        }
+			function onChange() {
+				var val = dropDownList.value();
+				valueChangedCallback(parameter, val);
+			}
 
-        return {
-            beginEdit: function (param) {
+			return {
+				beginEdit: function (param) {
 
-                parameter = param;
+					parameter = param;
 
-                $(dateTimePicker).find("input").kendoDateTimePicker({
-                    dataTextField: "name",
-                    dataValueField: "value",
-                    value: parameter.value,
-                    dataSource: parameter.availableValues,
-                    change: onChange
-                });
+					$(dateTimePicker).find("input").kendoDateTimePicker({
+						dataTextField: "name",
+						dataValueField: "value",
+						value: parameter.value,
+						dataSource: parameter.availableValues,
+						change: onChange
+					});
 
-                dropDownList = $(dateTimePicker).find("input").data("kendoDateTimePicker");
-            }
-        };
-    }
-}
-```
+					dropDownList = $(dateTimePicker).find("input").data("kendoDateTimePicker");
+				}
+			};
+		}
+	}
+````
+
 
 ## See Also
-- [KendoDateTimePicker](https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker))
 
-- [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})
-
-- [Report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})
-
+* [KendoDateTimePicker](https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker))
+* [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})
+* [Report parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%})

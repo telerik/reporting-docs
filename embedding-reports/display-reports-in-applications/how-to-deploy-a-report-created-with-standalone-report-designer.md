@@ -5,7 +5,7 @@ description: "Learn How to Deploy Declarative Report definitions Created with St
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-deploy-a-report-created-with-standalone-report-designer
 tags: how,to,deploy,a,report,created,with,standalone,report,designer
 published: True
-position: 8
+position: 3
 previous_url: /standalone-report-designer-display-report-viewer
 ---
 

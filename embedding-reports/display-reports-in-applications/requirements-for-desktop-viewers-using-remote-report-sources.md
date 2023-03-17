@@ -5,7 +5,7 @@ description: "Learn what are the Requirements for the Desktop Report Viewers sho
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources
 tags: requirements,for,desktop,viewers,using,remote,report,sources
 published: True
-position: 11
+position: 6
 previous_url: /requirements-for-desktop-viewers-using-remote-report-sources
 ---
 

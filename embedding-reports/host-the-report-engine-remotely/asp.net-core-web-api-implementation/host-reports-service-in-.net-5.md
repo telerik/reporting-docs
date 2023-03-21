@@ -7,6 +7,7 @@ tags: how,to,host,reports,service,in,asp.net,core,in,.net,5
 published: True
 position: 3
 previous_url: /telerik-reporting-rest-service-aspnetcore-net5,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-5
+sitemap: false
 ---
 
 # Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 5

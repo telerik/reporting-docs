@@ -9,7 +9,7 @@ position: 1
 previous_url: /web-report-designer-setup-in-net-core3
 ---
 
-# Setting up the Web Report Designer in .NET Core 3.1 and .NET applications
+# Setting up the Web Report Designer in .NET and .NET Core 3.1 applications
 
 This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET Core 3.1+` applications.
 

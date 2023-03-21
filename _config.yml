@@ -402,6 +402,7 @@ defaults:
         res_type: "api"
         description_suffix: "- Save development time with the complete Telerik Reporting reference listing publicly available classes, methods, and properties."
         title_suffix: "Telerik Reporting API Reference"
+
 ## Don't include all the files from the WCF and Silverlight folders in the sitemap
 -
     scope:

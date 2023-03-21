@@ -1,17 +1,17 @@
 ---
-title: Using in .NET 5
-page_title: Using HTML5 Report Viewer in ASP.NET Core in .NET 5
-description: "Learn How to integrate the Telerik Reporting HTML5 Report Viewer in ASP.NET Core applications in .NET 5."
+title: Using in .NET
+page_title: Using HTML5 Report Viewer in ASP.NET Core in .NET 6+
+description: "Learn How to integrate the Telerik Reporting HTML5 Report Viewer in ASP.NET Core applications in .NET 6 and .NET 7."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application
-tags: how,to,use,html5,report,viewer,in,an,asp.net,core,in,.net,5,application
+tags: how,to,use,html5,report,viewer,in,an,asp.net,core,in,.net,application
 published: True
 position: 5
 previous_url: /manual-setup-of-html5-report-viewer-in-aspnetcore-net5
 ---
 
-# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 5
+# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 6 and .NET 7
 
-This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in.NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/) web application.
+This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET 6](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-6.0?view=aspnetcore-6.0) web application.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ The report viewer requires a reference to a running Reports Web Service. The rep
 * A service that runs in a Telerik Report Server instance.
 * A service that is hosted locally in the same application.
 
-In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core in.NET 5]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}).
+In case you need to host it locally, follow the article [How to Host Reports Service in ASP.NET Core in .NET]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}).
 
 ## Adding the HTML5 Report Viewer component using an item template
 
@@ -47,7 +47,7 @@ app.UseStaticFiles();
 <!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in.NET 5</title>
+	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET 6</title>
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
@@ -97,8 +97,8 @@ app.UseStaticFiles();
 
 ## Demo project
 
-A full example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 5\Html5IntegrationDemo`.
+A full example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\Html5IntegrationDemo`.
 
 ## See Also
 
-* [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in.NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)
+* [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)

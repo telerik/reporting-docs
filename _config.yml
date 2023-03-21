@@ -9,7 +9,7 @@ has_cta_panels: true
 
 # Exclude files which should not be in the output
 exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd,TodorReadme.txt,report-designer-translations,_assetsApi]
-exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/*","embedding-reports/display-reports-in-applications/silverlight-application/*"]
+exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/*","embedding-reports/display-reports-in-applications/silverlight-application/*","embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/host-reports-service-in-.net-core-2.1-and-2.2.md","embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-2.1-and-2.2-application.md"]
 navigation:
 ## List your directory names and order here, like this:
     getting-started:

@@ -1,9 +1,9 @@
 ---
 title: Adjust Crosstab to Page Width
-description: "Learn how to adjust dynamically the corsstab column width based on the incoming grouping data so that it always fits within a single page."
+description: "Learn how to adjust dynamically the Crosstab column width based on the incoming grouping data so that it always fits within a single page."
 type: how-to
 page_title: Modify crosstab column width dynamically to always fit in the page
-slug: adjust-corsstab-to-page-width
+slug: adjust-crosstab-to-page-width
 tags: telerik,reporting,crosstab,data,adjust,dynamically
 ticketid: 1602092
 res_type: kb
@@ -36,7 +36,7 @@ The paper width and margins are in the format `1.5in`, so the above Expression r
 
 If there is other content that needs to be on the page away from the crosstab, it may be necessary to subtract other (constant) values from the total available page width.
 
-It is important also to note that the column width may only grow dynamically. For that reason, you need to make its default (design-time) width smaller than the minimum expected column width.
+>important The column width may only grow dynamically. For that reason, you need to make its default (design-time) width smaller than the minimum expected column width.
 
 A demo report demonstrating the approach may be found in our Reporting Samples Github Repository [DynamicCrosstabColumn.trdp](https://github.com/telerik/reporting-samples/blob/master/DynamicCrosstabColumn.trdp).
 

@@ -1,15 +1,15 @@
 ---
 title: ready()
-page_title: ready() 
-description: ready()
+page_title: The ready() Event of the HTML5 Report Viewer explained
+description: "Learn more about the ready() Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/ready()
-tags: ready()
+tags: ready,viewer,html5
 published: True
 position: 0
 previous_url: /html5-report-viewer-reportviewer-events-ready
 ---
 
-# ready()
+# The `ready()` Event of the HTML5 Report Viewer
 
 A callback function that will be called when the viewer content has been loaded from the template and is ready to display reports or perform any other operations on it. The function is executed in the context of the ReportViewer object that is available through the __this__ object.
 
@@ -26,7 +26,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

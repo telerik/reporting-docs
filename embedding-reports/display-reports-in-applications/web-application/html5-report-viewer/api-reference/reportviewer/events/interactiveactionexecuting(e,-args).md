@@ -1,13 +1,14 @@
 ---
 title: interactiveActionExecuting(e, args)
-page_title: interactiveActionExecuting(e, args) 
-description: interactiveActionExecuting(e, args)
+page_title: The interactiveActionExecuting(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the interactiveActionExecuting(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionexecuting(e,-args)
 tags: interactiveactionexecuting(e,,args)
 published: True
 position: 12
 previous_url: /html5-report-viewer-reportviewer-events-interactiveactionexecuting
 ---
+
 <style>
 table th:first-of-type {
 	width: 15%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# interactiveActionExecuting(e, args)
+# The `interactiveActionExecuting(e, args)` Event of the HTML5 Report Viewer
 
 Occurs before an interactive action is executed, providing the ability to cancel the execution.
 
@@ -45,9 +46,7 @@ $(function () {
 });
 ````
 
-
 ## See Also
 
 * [ReportViewer events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%})
-
 * [Interactive actions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/interactive-actions%})

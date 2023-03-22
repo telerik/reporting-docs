@@ -1,13 +1,14 @@
 ---
 title: sendEmailBegin(e, args)
-page_title: sendEmailBegin(e, args) 
-description: sendEmailBegin(e, args)
+page_title: The sendEmailBegin(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the sendEmailBegin(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/sendemailbegin(e,-args)
-tags: sendemailbegin(e,,args)
+tags: sendemailbegin,args
 published: True
 position: 4
 previous_url: /html5-report-viewer-reportviewer-events-sendemailbegin
 ---
+
 <style>
 table th:first-of-type {
 	width: 15%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# sendEmailBegin(e, args)
+# The `sendEmailBegin(e, args)` Event of the HTML5 Report Viewer
 
 Occurs before the report is exported and the E-mail message is sent.
 
@@ -40,7 +41,6 @@ $(function () {
 	});
 });
 ````
-
 
 ## Event Binding
 

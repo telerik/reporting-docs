@@ -34,7 +34,7 @@ The VS item template will integrate HTML5 WebForms Report Viewer in an.aspx page
 		+ __Report Server URI__ - enter a valid Report Server URI.
 		+ __Runtime credentials__ - enter Username and Password for Registered user or choose [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled.
 
-		![The Visual Studio item template Add new Report Viewer on the page Configure reporting engine](images/item-template-reporting-engine-rs.png)
+		![The Visual Studio item template Add new Report Viewer on the page Configure reporting engine with selected Report Server](images/item-template-reporting-engine-rs.png)
 
 	1. __'Setup Report Source for Report Server'__ will choose a report definition for the report viewer. There are two things that you should select, but in case you are using Guest account, you will have to fill-in the fields manually. It is because the Guest user cannot read the available categories and reports for security reasons:
 

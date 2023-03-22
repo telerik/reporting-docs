@@ -1,28 +1,28 @@
 ---
 title: authenticationToken(token)
-page_title: authenticationToken(token) 
-description: authenticationToken(token)
+page_title: The authenticationToken(token) method of the HTML5 Report Viewer explained
+description: "Learn more about the authenticationToken(token) method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)
 tags: authenticationtoken(token)
 published: True
 position: 3
 previous_url: /html5-report-viewer-reportviewer-methods-authenticationtoken
 ---
+
 <style>
 table th:first-of-type {
-    width: 15%;
+	width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 85%;
+	width: 85%;
 }
 </style>
 
-# authenticationToken(token)
+# The `authenticationToken(token)` method of the HTML5 Report Viewer
 
 Sets the authentication token.
 
 Parameters:
-
 
 | Parameter | Description |
 | ------ | ------ |
@@ -31,8 +31,7 @@ Parameters:
 
 Returns: the current *ReportViewer* object.
 
-    
-````js
+````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.authenticationToken("bad18eba1ff45jk7858b8ae88a77fa30");
 ````

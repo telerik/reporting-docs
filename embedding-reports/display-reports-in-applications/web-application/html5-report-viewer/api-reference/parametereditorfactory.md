@@ -1,13 +1,14 @@
 ---
 title: parameterEditorFactory
-page_title: parameterEditorFactory 
-description: parameterEditorFactory
+page_title: parameterEditorFactory of the HTML5 Report Viewer explained
+description: "Learn what does the parameterEditorFactory of the Telerik Reporting HTML5 Report Viewer do and how to use it."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parametereditorfactory
 tags: parametereditorfactory
 published: True
 position: 5
 previous_url: /html5-report-viewer-api-parametereditorfactory
 ---
+
 <style>
 table th:first-of-type {
 	width: 20%;
@@ -20,9 +21,7 @@ table th:nth-of-type(3) {
 }
 </style>
 
-# parameterEditorFactory
-
-## parameterEditorFactory
+# The `parameterEditorFactory` of the HTML5 Report Viewer
 
 | Parameter | Type | Description |
 | ------ | ------ | ------ |

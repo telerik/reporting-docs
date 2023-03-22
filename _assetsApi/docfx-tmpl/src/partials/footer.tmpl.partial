@@ -1,4 +1,4 @@
-﻿<div id="footer" class="container-fluid pb-40">
+<div id="footer" class="container-fluid pb-40">
                 <input id="hidden-sheet-id" type="hidden" value="1toT2XTrYzmmQGUq5xCmXIkMWkwah3QCNZ9Aj5RLaeoo">
 {{>partials/feedback}}
   <div class="row mt-60">

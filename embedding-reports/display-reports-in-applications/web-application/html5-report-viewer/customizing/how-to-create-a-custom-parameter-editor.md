@@ -1,7 +1,7 @@
 ---
-title: How to Create a Custom Parameter Editor
-page_title: How to Create a Custom Parameter Editor 
-description: How to Create a Custom Parameter Editor
+title: Custom Parameter Editors
+page_title: Creating and Using Custom Parameter Editors in HTML5 ReportViewer
+description: "Learn How to Create and use Custom Parameter Editors in the HTML5 ReportViewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor
 tags: how,to,create,a,custom,parameter,editor
 published: True
@@ -9,19 +9,19 @@ position: 3
 previous_url: /html5-report-viewer-howto-custom-parameter-editor
 ---
 
-# How to Create a Custom Parameter Editor
+# Custom Parameter Editors in the HTML5 Report Viewer
 
-The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area. 
+The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.
 
-Custom parameter editors are defined through the parameterEditors ([Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})) array passed as an option when creating the report viewer widget. Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration. 
+Custom parameter editors are defined through the parameterEditors ([Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})) array passed as an option when creating the report viewer widget. Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration.
 
-Each editor is an object which contains two methods: __match__ and __createEditor__. 
+Each editor is an object which contains two methods: `match` and `createEditor`.
 
-The __match__ method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name, allowNull, availableValues, multiValue, type and etc. 
+The `match` method accepts a report parameter to be edited as an argument and returns a boolean value which indicates whether the parameter editor is suitable for this parameter. The parameter variable exposes the properties of the report parameter like name, allowNull, availableValues, multiValue, type and etc.
 
-The main work for creating and utilizing the parameter editor is done in the __createEditor__ method. Its purpose is to create the parameter editor UI and wire it to the __parameterChanged__ callback when a new value is selected. The return result is a new object containing the __beginEdit__ method which is the entry point for creating the editor from the viewer. 
+The main work for creating and utilizing the parameter editor is done in the `createEditor` method. Its purpose is to create the parameter editor UI and wire it to the `parameterChanged` callback when a new value is selected. The return result is a new object containing the `beginEdit` method which is the entry point for creating the editor from the viewer.
 
-The following example illustrates how to use the Kendo DropDownList widget for a single parameter value parameter editor which also has available values: 
+The following example illustrates how to use the Kendo DropDownList widget for a single parameter value parameter editor which also has available values:
 
 ````JavaScript
 {
@@ -56,8 +56,7 @@ The following example illustrates how to use the Kendo DropDownList widget for a
 }
 ````
 
-
-Passing the parameter editor to the viewer: 
+Passing the parameter editor to the viewer:
 
 ````JavaScript
 <script type="text/javascript">
@@ -94,9 +93,8 @@ Passing the parameter editor to the viewer:
 </script>
 ````
 
-
-> You can use any other custom UI covering the requirements of the createEditor method.
+>tip You can use any other custom UI covering the requirements of the `createEditor` method.
 
 ## See Also
 
-* [How To: Pass Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-pass-values-to-report-parameters%})
+* [Passing Values to Report Parameters]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-pass-values-to-report-parameters%})

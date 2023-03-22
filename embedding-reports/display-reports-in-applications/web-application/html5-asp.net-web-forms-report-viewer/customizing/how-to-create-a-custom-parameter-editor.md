@@ -1,7 +1,7 @@
 ---
-title: Custom Parameter Editor
-page_title: Creating Custom Parameter Editor in HTML5 ASP.NET WebForms ReportViewer
-description: "Learn How to Create a Custom Parameter Editor in the HTML5 ASP.NET WebForms ReportViewer in Telerik Reporting."
+title: Custom Parameter Editors
+page_title: Creating and Using Custom Parameter Editors in HTML5 ASP.NET WebForms ReportViewer
+description: "Learn how to Create and use Custom Parameter Editors in the HTML5 ASP.NET WebForms ReportViewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing/how-to-create-a-custom-parameter-editor
 tags: how,to,create,a,custom,parameter,editor
 published: True
@@ -9,7 +9,7 @@ position: 4
 previous_url: /html5-webforms-report-viewer-customizing-custom-parameter-editor
 ---
 
-# Creating a Custom Parameter Editor in the HTML5 WebForms Report Viewer
+# Custom Parameter Editors in the HTML5 WebForms Report Viewer
 
 The article elaborates how to change the default editors for visible parameters in the HTML5 Viewer's Parameters Area.
 

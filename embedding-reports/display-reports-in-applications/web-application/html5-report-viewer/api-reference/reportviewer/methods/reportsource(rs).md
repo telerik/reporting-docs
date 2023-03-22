@@ -1,13 +1,14 @@
 ---
 title: reportSource(rs)
-page_title: reportSource(rs) 
-description: reportSource(rs)
+page_title: The reportSource(rs) method of the HTML5 Report Viewer explained
+description: "Learn more about the reportSource(rs) method of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)
 tags: reportsource(rs)
 published: True
 position: 13
 previous_url: /html5-report-viewer-reportviewer-methods-reportsource-rs
 ---
+
 <style>
 table th:first-of-type {
 	width: 25%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# reportSource(rs)
+# The `reportSource(rs)` method of the HTML5 Report Viewer
 
 Sets the report source.
 

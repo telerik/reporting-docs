@@ -1,13 +1,14 @@
 ---
 title: viewerToolTipOpening(e, args)
-page_title: viewerToolTipOpening(e, args) 
-description: viewerToolTipOpening(e, args)
+page_title: The viewerToolTipOpening(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the viewerToolTipOpening(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/viewertooltipopening(e,-args)
-tags: viewertooltipopening(e,,args)
+tags: viewertooltipopening,args
 published: True
 position: 15
 previous_url: /html5-report-viewer-reportviewer-events-viewertooltipopening
 ---
+
 <style>
 table th:first-of-type {
 	width: 15%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# viewerToolTipOpening(e, args)
+# The `viewerToolTipOpening(e, args)` Event of the HTML5 Report Viewer
 
 The event occurs before a tooltip is opened, providing the ability to cancel its opening.
 

@@ -1,13 +1,14 @@
 ---
 title: interactiveActionLeave(e, args)
-page_title: interactiveActionLeave(e, args) 
-description: interactiveActionLeave(e, args)
+page_title: The interactiveActionLeave(e, args) Event of the HTML5 Report Viewer explained
+description: "Learn more about the interactiveActionLeave(e, args) Event of the Telerik Reporting HTML5 Report Viewer and how to use it to customize the viewer's behavior."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/interactiveactionleave(e,-args)
 tags: interactiveactionleave(e,,args)
 published: True
 position: 14
 previous_url: /html5-report-viewer-reportviewer-events-interactiveactionleave
 ---
+
 <style>
 table th:first-of-type {
 	width: 15%;
@@ -17,7 +18,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# interactiveActionLeave(e, args)
+# The `interactiveActionLeave(e, args)` Event of the HTML5 Report Viewer
 
 Occurs when the mouse cursor leaves the area of an interactive action.
 
@@ -43,9 +44,7 @@ $(function () {
 });
 ````
 
-
 ## See Also
 
 * [ReportViewer events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%})
-
 * [Interactive actions]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/interactive-actions%})

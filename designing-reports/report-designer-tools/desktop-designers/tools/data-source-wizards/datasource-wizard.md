@@ -1,6 +1,6 @@
 ---
 title: DataSource Wizard
-page_title: DataSource Wizard 
+page_title: DataSource Wizard at a Glance
 description: "Learn more about the DataSource Wizard of the Telerik Reporting Desktop Designers and how to configure a DataSource for your data items with it."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/datasource-wizard
 tags: datasource,wizard
@@ -9,7 +9,7 @@ position: 0
 previous_url: /ui-datasource-wizard
 ---
 
-# DataSource Wizard
+# DataSource Wizard Overview
 
 The Data Source Wizard allows you to select from one of the available data source components:
 

@@ -38,7 +38,7 @@ If the incoming data doesn't let predicting whether it will fit within a single 
 ````
 The idea is to take the longest data field and based on its maximum length calculate the number of rows that are needed to fit its content within the cell.
 
-If the scenario is more complicated and the [built-in user functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) doesn't fit your needs, you may create a [custom user function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to return the detail row height.
+If the scenario is more complicated and the [built-in user functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}) don't fit your needs, you may create a [custom user function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) to return the detail row height.
 
 ## See Also
 

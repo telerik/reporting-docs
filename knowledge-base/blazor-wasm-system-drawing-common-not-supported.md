@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
 
-When trying to render Telerik reports programmatically with the [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) in a Blazor WebAssembly (WASM) project the following error gets thrown.
+When trying to render Telerik reports programmatically with the [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) in a [Blazor WebAssembly (WASM)](https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-7.0#blazor-webassembly) project the following error gets thrown.
 
 ## Error Message
 
@@ -52,6 +52,10 @@ For that reason Blazor WASM projects don't support the System.Drawing.Common fun
 
 * [Adding system.drawing.common to a Blazor app causes the linker to fail](https://github.com/mono/mono/issues/15806)
 * [blazor - captcha issue System.Drawing.Common is not supported](https://stackoverflow.com/questions/65679594/blazor-captcha-issue-system-drawing-common-is-not-supported)
+
+## Suggested Workarounds
+
+The ReportProcessor should be hosted in a different project type, for example, [Blazor Server](https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-7.0#blazor-server), which supports System.Drawing.Common.
 
 ## Notes
 

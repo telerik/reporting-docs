@@ -43,12 +43,12 @@ System.PlatformNotSupportedException: System.Drawing.Common is not supported on 
 
 ## Cause\Possible Cause(s)
 
-The problem relates to the fact that Blazor WASM is built on [Mono project](https://www.mono-project.com/), and for that reason doesn't support the System.Drawing.Common:
+The problem relates to the fact that Blazor WASM is built on the [Mono project](https://www.mono-project.com/):
 
 * [Will Blazor WebAssembly use Mono or .Net Core 3.1?](https://stackoverflow.com/questions/58651518/will-blazor-webassembly-use-mono-or-net-core-3-1)
 * [.NET ecosystem](https://learn.microsoft.com/en-us/dotnet/core/introduction#net-ecosystem)
 
-Here are some more threads that discuss the issue:
+For that reason Blazor WASM projects don't support the System.Drawing.Common functionality as discussed in the following threads:
 
 * [Adding system.drawing.common to a Blazor app causes the linker to fail](https://github.com/mono/mono/issues/15806)
 * [blazor - captcha issue System.Drawing.Common is not supported](https://stackoverflow.com/questions/65679594/blazor-captcha-issue-system-drawing-common-is-not-supported)

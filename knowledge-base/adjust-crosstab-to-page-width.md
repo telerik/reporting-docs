@@ -34,6 +34,8 @@ Here is a sample Expression:
 
 The paper width and margins are in the format `1.5in`, so the above Expression removes the unit 'in' to be able to divide the available width by the total number of columns, and then re-adds the unit 'in' to the final width. If you use different units, i.e. 'cm', etc., you need to change the expression correspondingly.
 
+>important The Expression assumes that the page mode is __Portrait__. When the page is in Landscape mode, you have to replace the Width with the Height and the Right/Left margins with the Top/Bottom ones.
+
 If there is other content that needs to be on the page away from the crosstab, it may be necessary to subtract other (constant) values from the total available page width.
 
 >important The column width may only grow dynamically. For that reason, you need to make its default (design-time) width smaller than the minimum expected column width.

@@ -55,11 +55,13 @@ For that reason Blazor WASM projects don't support the System.Drawing.Common fun
 
 ## Suggested Workarounds
 
-The ReportProcessor should be hosted in a different project type, for example, [Blazor Server](https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-7.0#blazor-server), which supports System.Drawing.Common.
+The ReportProcessor or the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) should be hosted in a different project type, for example, [Blazor Server](https://learn.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-7.0#blazor-server), which supports System.Drawing.Common.
+
+The generated reports may be displayed in the [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) or [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) hosted in a Blazor WebAssembly project.
 
 ## Notes
 
-The problem will be solved when we implement the feature request described in [Future of Linux support for reporting](https://feedback.telerik.com/reporting/1537361-future-of-linux-support-for-reporting). There is no workaround until then as Telerik Reporting relies entirely on System.Drawing for rendering at the moment.
+The problem will be solved when we implement the feature request described in [Future of Linux support for reporting](https://feedback.telerik.com/reporting/1537361-future-of-linux-support-for-reporting).
 
 ## See Also
 

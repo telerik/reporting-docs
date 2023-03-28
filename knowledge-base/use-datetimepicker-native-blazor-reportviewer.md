@@ -1,5 +1,5 @@
 ---
-title: Integrate the DateTimePicker Widget in the Native Blazor Report Viewer
+title: Integrating the DateTimePicker Widget in the Native Blazor Report Viewer
 description: "Learn how to use the DateTimePicker widget from the Telerik UI for Blazor as a DateTime Report Parameter editor in the Native Blazor Report Viewer."
 type: how-to
 page_title: Using the Telerik UI Blazor DateTimePicker widget in the Native Blazor Report Viewer

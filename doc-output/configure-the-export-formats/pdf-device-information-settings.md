@@ -8,15 +8,16 @@ published: True
 position: 3
 previous_url: /device-information-settings-pdf
 ---
+
 <style>
 table th:first-of-type {
-    width: 20%;
+	width: 20%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 70%;
+	width: 70%;
 }
 </style>
 
@@ -25,6 +26,8 @@ table th:nth-of-type(3) {
 The following table lists the device information settings for rendering in PDF format.
 
 ## Available PDF Device Information Settings
+
+> The names of the properties in Device Information Settings are __Case-Sensitive__.
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |
@@ -59,12 +62,11 @@ The following table lists the device information settings for rendering in PDF f
 |ViewerPrintScaling|String|The page scaling option to be selected when a print dialog is displayed for this document. Valid values are __None__, which indicates that the print dialog should reflect no page scaling, and __AppDefault__, which indicates that applications should use the current print scaling. Default value: __None__.|
 |ViewerRenderToolTips|Boolean|Determines if the tooltips in the report document will be rendered in the PDF document. The tooltips are displayed using __text annotations__, represented by a visible icon that shows a tooltip when hovered. Default value: __false__.|
 
-For an example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}). 
+For an example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).
 
-For more detailed explanation about the device information settings and their effect on the produced PDF document, see [Design Considerations for PDF Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%}). 
+For more detailed explanation about the device information settings and their effect on the produced PDF document, see [Design Considerations for PDF Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/pdf-rendering-design-considerations%}).
 
 ## See Also
 
 * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
-
 * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

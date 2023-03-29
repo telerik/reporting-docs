@@ -8,36 +8,39 @@ published: True
 position: 2
 previous_url: /device-information-settings-imageinteractive
 ---
+
 <style>
 table th:first-of-type {
-    width: 15%;
+	width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
-# Device Information Settings for the ImageInteractive rendering format
+# Device Information Settings for the ImageInteractive Rendering Format
 
 The following table lists the device information settings for rendering in IMAGEInteractive format.
 
 ## Available ImageInteractive Device Information Settings
 
+> The names of the properties in Device Information Settings are __Case-Sensitive__.
+
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |
 |OutputFormat|String|Defines the output format of the produced image. Supported formats are: __BMP__, __EMF__, __EMFPLUS__, __GIF__, __JPEG__, __PNG__.|
-|TextRenderingHint|string|Sets the rendering mode for text using a [TextRenderingHint](https://msdn.microsoft.com/en-us/library/ssazt6bs(v=vs.110).aspx) enumeration member. The default value depends on the machine settings - if it has [ClearType](https://www.microsoft.com/en-us/Typography/ClearTypeInfo.aspx) enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting. If text rendering hinting is not supported, the __SystemDefault__ value will be used.|
+|TextRenderingHint|string|Sets the rendering mode for text using a [TextRenderingHint](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.text.textrenderinghint?view=dotnet-plat-ext-7.0) enumeration member. The default value depends on the machine settings - if it has [ClearType](https://learn.microsoft.com/en-us/typography/cleartype) enabled, then __ClearTypeGridFit__ will be used. Otherwise the rendering algorithm will use __AntiAliasGridFit__ hinting. If text rendering hinting is not supported, the __SystemDefault__ value will be used.|
 
-For a detailed example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}). 
+For a detailed example of how to set up the settings for a rendering extension, see [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%}).
 
 ## Example
 
 XML-based configuration file:
-    
-````xml
+
+````XML
 <configuration>
 …
 	<Telerik.Reporting>
@@ -57,8 +60,8 @@ XML-based configuration file:
 ````
 
 JSON-based configuration file:
-    
-````js
+
+````JSON
 "telerikReporting": {
 	"extensions": [
 		{
@@ -78,9 +81,7 @@ JSON-based configuration file:
 }
 ````
 
-
 ## See Also
 
 * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
-
 * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

@@ -81,11 +81,11 @@ This article explains the steps needed to create an application which uses the S
 
 1. Next we need to set the __ReportServiceUri__ and __Report__ properties of the viewer. 
 
-	* [Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_ReportServiceUri) should point to [Telerik Reporting WCF service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-wcf-service/overview%}): 
+	* `Telerik.ReportViewer.Silverlight.ReportViewer.ReportServiceUri` should point to `Telerik Reporting WCF service`: 
 
 		`ReportServiceUri="../ReportService.svc"`
 
-	* [Telerik.ReportViewer.Silverlight.ReportViewer.Report](/reporting/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_Report) should be set to the assembly qualified name of the report you want to show: 
+	* `Telerik.ReportViewer.Silverlight.ReportViewer.Report` should be set to the assembly qualified name of the report you want to show: 
 
 		`Report="Telerik.Reporting.Examples.CSharp.BarcodesReport, CSharp.ReportLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"`
 

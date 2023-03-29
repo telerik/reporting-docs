@@ -8,15 +8,16 @@ published: True
 position: 8
 previous_url: /device-information-settings-xps
 ---
+
 <style>
 table th:first-of-type {
-    width: 15%;
+	width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
@@ -26,6 +27,8 @@ The following table lists the device information settings for rendering in XPS f
 
 ## Available XPS Device Information Settings
 
+> The names of the properties in Device Information Settings are __Case-Sensitive__.
+
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |
 |StartPage|Integer|The first page of the report to render. A value of __0__ indicates that all pages are rendered.|
@@ -34,5 +37,4 @@ The following table lists the device information settings for rendering in XPS f
 ## See Also
 
 * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
-
 * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

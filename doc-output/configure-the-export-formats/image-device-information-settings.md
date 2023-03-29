@@ -8,23 +8,26 @@ published: True
 position: 1
 previous_url: /device-information-settings-image
 ---
+
 <style>
 table th:first-of-type {
-    width: 15%;
+	width: 15%;
 }
 table th:nth-of-type(2) {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(3) {
-    width: 75%;
+	width: 75%;
 }
 </style>
 
-# Device Information Settings for the Image rendering formats
+# Device Information Settings for the Image Rendering Formats
 
-The following table lists the device information settings for rendering in __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats. 
+The following table lists the device information settings for rendering in __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats.
 
 ## Available Image Device Information settings
+
+> The names of the properties in Device Information Settings are __Case-Sensitive__.
 
 |__Name__|__Type__|__Description__|
 | ------ | ------ | ------ |
@@ -40,10 +43,10 @@ For a detailed example of how to set up the settings for a rendering extension, 
 
 ## Example
 
-The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats. 
+The following example demonstrates how to configure the settings for __IMAGE__, __IMAGEPrintPreview__ and __IMAGEPrint__ formats.
 
 XML-based configuration file:
-    
+
 ````XML
 <configuration>
 …
@@ -77,60 +80,58 @@ XML-based configuration file:
 ````
 
 JSON-based configuration file:
-    
-````JavaScript
+
+````JSON
 "telerikReporting": {
-  "extensions": [
-    {
-      "name": "IMAGE",
-      "parameters": [
-        {
-          "Name": "OutputFormat",
-          "Value": "TIFF"
-        },
-        {
-          "Name": "TiffCompression",
-          "Value": "RLE"
-        }
-	  ]
-    },
-    {
-      "name": "IMAGEPrintPreview",
-      "parameters": [
-        {
-          "Name": "OutputFormat",
-          "Value": "JOEG"
-        }
-	  ]
-    },
-    {
-      "name": "IMAGEPrint",
-      "parameters": [
-        {
-          "Name": "OutputFormat",
-          "Value": "PNG"
-        },
-        {
-          "Name": "TextRenderingHint",
-          "Value": "AntiAliasGridFit"
-        },
-        {
-          "Name": "DpiX",
-          "Value": "1200"
-        },
-        {
-          "Name": "DpiY",
-          "Value": "1200"
-        },
-	  ]
-    }
-  ]
+	"extensions": [
+	{
+		"name": "IMAGE",
+		"parameters": [
+		{
+			"Name": "OutputFormat",
+			"Value": "TIFF"
+		},
+		{
+			"Name": "TiffCompression",
+			"Value": "RLE"
+		}
+	]
+	},
+	{
+		"name": "IMAGEPrintPreview",
+		"parameters": [
+		{
+			"Name": "OutputFormat",
+			"Value": "JOEG"
+		}
+	]
+	},
+	{
+		"name": "IMAGEPrint",
+		"parameters": [
+		{
+			"Name": "OutputFormat",
+			"Value": "PNG"
+		},
+		{
+			"Name": "TextRenderingHint",
+			"Value": "AntiAliasGridFit"
+		},
+		{
+			"Name": "DpiX",
+			"Value": "1200"
+		},
+		{
+			"Name": "DpiY",
+			"Value": "1200"
+		},
+	]
+	}
+	]
 }
 ````
-
 
 ## See Also
 
 * [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%})
-
 * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

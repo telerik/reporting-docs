@@ -5,7 +5,7 @@ description: "Learn more about the Common issues that may occur when you use the
 slug: troubleshooting-nuget
 tags: long, nuget, package, installation
 published: True
-position: 10
+position: 17
 ---
 
 # Troubleshooting Issues with Telerik NuGet Packages

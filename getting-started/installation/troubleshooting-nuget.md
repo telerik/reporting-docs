@@ -59,5 +59,5 @@ Alternatively, use Windows Credentials Manager to remove the saved credentials:
 
 	![Remove credentials from Windows Credential Manager](images/windows-credential-manager.png)
 
-1. Add the Telerik NuGet Feed again, and then enter the correct credentials. For more details, see the [Installing with Nuget]({% slug winforms/nuget%}) article.
+1. [Add the Telerik NuGet Feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) again, and then enter the correct credentials. For more details, see the [Installing with Nuget]({%slug telerikreporting/installation%}#installing-with-nuget) article section.
 1. If desired, verify the NuGet credentials by inspecting the `NuGet.config` file located in `%AppData%\NuGet\NuGet.config`

@@ -1,14 +1,14 @@
 ---
 title: Included Assemblies
-page_title: Telerik Reporting Assemblies and Assets
-description: "Familiarize with the available assemblies and other resources you can use when working with Telerik Reporting. Learn where you may find them by default, and what you may use them for."
+page_title: Available Assemblies and Assets
+description: "Get to now the available assemblies and other resources you can use when working with Telerik Reporting. Learn where you may find them by default, and what you may use them for."
 slug: included-assemblies
 tags: telerik, reporting, included, assemblies, installation
 published: True
 position: 3
 ---
 
-# Assemblies and Assets Included with the Installation
+# Assemblies and Assets Included in the Installation
 
 This article explains what assemblies and other assets are included in the [Telerik Reporting](https://www.telerik.com/products/reporting.aspx) product installation.
 

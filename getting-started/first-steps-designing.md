@@ -1,7 +1,7 @@
 ---
 title: Designing Reports (Guide)
-page_title: An Introductory Step By Step Guide on Designing Telerik Reports
-description: "Get up and running with the designing process of Telerik Reporting and learn how to create a report, connect it to data, set its header and footer, add some styling, and export the report to PDF."
+page_title: Step-by-Step Guide on Designing Telerik Reports
+description: "Get up and running with the designing process of Telerik Reporting and learn how to create a report with the Standalone Report Designer, connect it to data, set its header and footer, add some styling, and export the report to PDF."
 slug: telerikreporting/getting-started/first-steps
 tags: telerik, reporting, first, steps, guide, design, a, report
 published: True
@@ -9,25 +9,25 @@ position: 1
 previous_url: /getting-started/first-steps
 ---
 
-# Create Your First Telerik Report
+# Designing Your First Telerik Report
 
-This guide targets users who need to quickly get up and running with Telerik Reporting and design and export a report. 
+This guide targets users who need to quickly get up and running with Telerik Reporting and design and export a report.
 
 * First, you will install Telerik Reporting from an MSI file and load the demos.
 
-* Next, you'll create a sample report with the Standalone Report Designer, connect it to data, and visualize the result. 
+* Next, you'll create a sample report with the Standalone Report Designer, connect it to data, and visualize the result.
 
 * Then, you will set the report title, header, and footer, and add some basic styling.
 
 * Finally, you will export the report to a PDF file.
 
-At the end, you'll be able to achieve the following result. 
+At the end, you'll be able to achieve the following result.
 
 ![Preview of the final version of the Demo Report](images/DemoReport.PNG)
 
 For an advanced first-steps scenario on integrating a Telerik Report in an application, refer to the getting started guide on [integrating a report in a web application]({% slug first-steps-integrating-reports %}).
 
-## Prerequisites 
+## Prerequisites
 
 The following prerequisites are required for accomplishing the scenario in this tutorial. For more information on the third-party tooling versions supported by Telerik Reporting, refer to the [list with system requirements](https://www.telerik.com/products/reporting/system-requirements).
 
@@ -47,7 +47,7 @@ Let's start with the installation of the Telerik Reporting controls, services, a
 
 1. In the __Samples Database Setup__ dialog of the Wizard, select your __Database Server__ and the authentication for the connection.
 
-	The Wizard detects all running instances and lists them in the input field. 
+	The Wizard detects all running instances and lists them in the input field.
 
 	![The Page for Database Setup when Installing Telerik Reporting](images/Install.PNG)
 
@@ -73,13 +73,13 @@ This guide uses the __AdventureWorks__ sample database that may be deployed opti
 
 So, first, let's connect to the data and, then, you'll create the table to present it:
 
-1. Select the predefined connection string in the Standalone Designer by choosing from its toolbar __Data__ > __SQL Data Source__ > __Existing data connections__ > __local:/Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__. 
+1. Select the predefined connection string in the Standalone Designer by choosing from its toolbar __Data__ > __SQL Data Source__ > __Existing data connections__ > __local:/Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__.
 
 	![How to Choose Data Connection in the SqlDataSource Wizard](images/3.PNG)
 
-1. Click __Next__ > __Use as a shared connection__ > __Next__. 
+1. Click __Next__ > __Use as a shared connection__ > __Next__.
 
-1. On the screen that loads, fill in the __Select Statement__ field with the query below. The query will extract only the first 14 employees and they will be listed in ascending order according to their `id`, that is, the employee with an `id=1` will be the first one, the employee with an `id=2` will come second, and so on. 
+1. On the screen that loads, fill in the __Select Statement__ field with the query below. The query will extract only the first 14 employees and they will be listed in ascending order according to their `id`, that is, the employee with an `id=1` will be the first one, the employee with an `id=2` will come second, and so on.
 
 	````SQL
 SELECT
@@ -104,7 +104,7 @@ SELECT
 
 1. From the window that opens, select a predefined style for your table, for example, __Office__. Click __Next__ and __Finish__.
 
-## Step 4: Style the Table and Set Its Title 
+## Step 4: Style the Table and Set Its Title
 
 Now, you may add some styling to the table and define its title.
 
@@ -122,7 +122,7 @@ Now, you may add some styling to the table and define its title.
 
 ## Step 5: Set the Page Header and Footer
 
-In this step, you'll define and style the page header and footer of your report. First, let's start with the header: 
+In this step, you'll define and style the page header and footer of your report. First, let's start with the header:
 
 1. Click __pageHeaderSection__. From the property grid, select __Style__ > __BackgroundColor__. Set the color to `0, 105, 104`.
 

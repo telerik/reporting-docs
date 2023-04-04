@@ -1,7 +1,7 @@
 ---
 title: Adding the Private Telerik NuGet Feed
-page_title: Adding the Private Telerik NuGet Feed to Visual Studio through the NuGet Package Manager or NuGet CLI
-description: "Get up and running with Telerik Reporting and learn how to add quickly and easy the Telerik private NuGet feed to Visual Studio with this step-by-step tutorial."
+page_title: Adding Telerik NuGet Feed to VS with Package Manager or CLI
+description: "Get up and running with Telerik Reporting and learn how to add quickly and easy the Telerik private NuGet feed to Visual Studio with the NuGet Package Manager or NuGet CLI in this step-by-step tutorial."
 slug: telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio
 previous_url: /using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio, /add-the-telerik-private-nuget-feed-to-visual-studio
 tags: how,to,add,the,telerik,private,nuget,feed,to,visual,studio
@@ -9,7 +9,7 @@ published: True
 position: 8
 ---
 
-# Adding the Telerik Private NuGet Feed to Visual Studio
+# Adding the Telerik Private NuGet Feed to VS
 
 > The legacy https://nuget.telerik.com/nuget server is now deprecated. Make sure you are using the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client.
 
@@ -29,7 +29,7 @@ Telerik provides NuGet packages from the private Telerik NuGet feed which you ca
 
 1. Choose the feed __Name__, set the feed __URL__ to __https://nuget.telerik.com/v3/index.json__ and click __OK__.
 
-	>caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed 
+	>caption The Visual Studio NuGet Package Manager and the Telerik NuGet Feed
 
 	![Telerik Nuget Feed in Visual Studio NuGet Package Manager](images/nuged-feed-in-npm.png)
 

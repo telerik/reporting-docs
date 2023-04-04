@@ -16,7 +16,7 @@ In this course, you will use ASP.NET Core with Blazor and your job is to add a d
 
 ## Course Overview
 
-The next video shares a glimpse of the format and structure of the whole training and provides a brief overview of what will be accomplished through the steps. 
+The next video shares a glimpse of the format and structure of the whole training and provides a brief overview of what will be accomplished through the steps.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3hrlUfmTzSI" title="Telerik Reporting - Overview of the Onboarding Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Project Overview

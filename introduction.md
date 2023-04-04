@@ -1,6 +1,6 @@
 ---
 title: Introduction
-page_title: Prelude To Telerik Reporting
+page_title: Introduction to Telerik Reporting by Progress
 description: "Telerik Reporting is a .NET-based platform enabling you to create, design, export, and integrate reports in JavaScript, MVC, WebForms, Angular, React, and Blazor web applications, as well as in WinForms, WPF, WinUI desktop projects."
 slug: telerikreporting/welcome-to-telerik-reporting!
 tags: telerik, reporting, introduction, welcome
@@ -11,21 +11,21 @@ previous_url: /overview, /quick-start-overview
 
 # Welcome to Telerik Reporting
 
-Progress® Telerik® Reporting is a .NET embedded reporting tool which enables you to create, design, export, and integrate reports in cloud-based, web, and desktop applications. 
+Progress® Telerik® Reporting is a .NET embedded reporting tool which enables you to create, design, export, and integrate reports in cloud-based, web, and desktop applications.
 
 Telerik Reporting provides web and desktop report designers and services, and report viewer controls. The desktop components and the services are .NET-only, whereas the HTML5-based components can be integrated in virtually any website or application.
 
-With Telerik Reporting you can retrieve and process data from relational, multi-dimensional, ORM, or custom data-layer-based data sources. 
+With Telerik Reporting you can retrieve and process data from relational, multi-dimensional, ORM, or custom data-layer-based data sources.
 
-End users can view the ready reports in PDF, Microsoft Office Word, Excel, and PowerPoint document formats, or use a dedicated viewer in a Web or .NET desktop application. 
+End users can view the ready reports in PDF, Microsoft Office Word, Excel, and PowerPoint document formats, or use a dedicated viewer in a Web or .NET desktop application.
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-introduction.html %}
 {% endif %}
 
-## Supported Platforms 
+## Supported Platforms
 
-Telerik Reporting helps you create reports that run on the following operating systems: 
+Telerik Reporting helps you create reports that run on the following operating systems:
 
 * Windows
 * Linux
@@ -44,20 +44,20 @@ Telerik Reporting helps you create reports that run on the following operating s
 |Blazor|Web
 |WinForms|Desktop
 |WPF|Desktop
-|WinUI|Desktop 
+|WinUI|Desktop
 
 
-## Key Components 
+## Key Components
 
 The lifecycle of a Telerik report is divided in three main steps&mdash;designing the report, populating the report with data and rendering it in a viewer, and exporting the report to a document file.
 
-The Telerik Report Designers and Viewers are the main components of Telerik Reporting and accompany the users in their journey along the lifecycle of the report. 
+The Telerik Report Designers and Viewers are the main components of Telerik Reporting and accompany the users in their journey along the lifecycle of the report.
 
-### Report Designers 
+### Report Designers
 
-The Report Designers are responsible for the designing process. 
+The Report Designers are responsible for the designing process.
 
-* Report Designers are tools which help you create the report you require, connect it to a data source to load the information you need, style its header, footer, and general appearance, make reports collections if necessary, and export its content to PDF, for example. 
+* Report Designers are tools which help you create the report you require, connect it to a data source to load the information you need, style its header, footer, and general appearance, make reports collections if necessary, and export its content to PDF, for example.
 
 * Which Report Designer you will choose depends on the specific functionality you want to use in the process.
 
@@ -69,39 +69,39 @@ The Report Designers are responsible for the designing process.
 
 ### Report Viewers
 
-The Report Viewers are UI components which are tailored to a specific technology. 
+The Report Viewers are UI components which are tailored to a specific technology.
 
-* Report Viewers are tools which enable you to deploy and render your report in applications that are built on various technologies such as ASP.NET Core or Angular. 
+* Report Viewers are tools which enable you to deploy and render your report in applications that are built on various technologies such as ASP.NET Core or Angular.
 
 * Which Report Viewer you will choose to use depends on the targeted technology of the application.
 
 |Report Viewer|App Type|Essentials
 |:---|:---|:---
-|HTML5 Report Viewer|Web|An HTML, CSS, JavaScript and jQuery client-side targeting all web application working with JavaScript. 
-|HTML5 MVC Report Viewer| Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications. 
+|HTML5 Report Viewer|Web|An HTML, CSS, JavaScript and jQuery client-side targeting all web application working with JavaScript.
+|HTML5 MVC Report Viewer| Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications.
 |HTML5 WebForms Report Viewer|Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in WebForms applications.  
-|Angular Report Viewer|Web|An Angular component wrapping the HTML5 Report Viewer. 
+|Angular Report Viewer|Web|An Angular component wrapping the HTML5 Report Viewer.
 |ReactJS Report Viewer|Web|A React component wrapping the HTML5 Report Viewer.
-|Blazor Report Viewer|Web|A Blazor component wrapping the HTML5 Report Viewer. 
+|Blazor Report Viewer|Web|A Blazor component wrapping the HTML5 Report Viewer.
 |Native Blazor Report Viewer|Web|A fully native Blazor component that can be used in Blazor applications.
-|WinForms Report Viewer|Desktop|A composite of standard Windows Forms controls targeting WinForms and WPF projects. 
-|WPF Report Viewer|Desktop|A composite of Telerik UI for WPF controls targeting WPF and WinForms projects. 
-|WinUI Report Viewer|Desktop|A composite of Telerik UI for WinUI controls targeting WinUI3 projects. 
+|WinForms Report Viewer|Desktop|A composite of standard Windows Forms controls targeting WinForms and WPF projects.
+|WPF Report Viewer|Desktop|A composite of Telerik UI for WPF controls targeting WPF and WinForms projects.
+|WinUI Report Viewer|Desktop|A composite of Telerik UI for WinUI controls targeting WinUI3 projects.
 
 
 ## About the Demos
 
-The [Telerik Reporting online demos](https://demos.telerik.com/reporting) provide a set of pre-built live demos that are designed to demonstrate the Telerik Reporting capabilities. The demos use the HTML5-based web report viewers. 
+The [Telerik Reporting online demos](https://demos.telerik.com/reporting) provide a set of pre-built live demos that are designed to demonstrate the Telerik Reporting capabilities. The demos use the HTML5-based web report viewers.
 
 The sample reports are also available in Visual Studio and the examples contain applications for all supported platforms. To open the projects:
 
 1. Navigate to the **Start** menu.
 
-1. Select __Telerik__  > __Reporting__  > __Visual Studio Examples__ > __C#/VB.NET Solution__. 
+1. Select __Telerik__  > __Reporting__  > __Visual Studio Examples__ > __C#/VB.NET Solution__.
 
 ## Support Options
 
-For any issues you might come across while working with Telerik Reporting, use any of the following available support channels. 
+For any issues you might come across while working with Telerik Reporting, use any of the following available support channels.
 
 Note that sharing quality feedback and ideas will not only benefit the community and improve the products, but may also win you [Telerik points](https://www.telerik.com/community/telerik-points).
 

@@ -1,5 +1,5 @@
 ---
-title: List of Prerequisites
+title: Prerequisites
 page_title: Prerequisites for Working with Telerik Reporting
 description: "Check the operating system requirements for working with Telerik Reporting and get information about the provided .NET, Windows IIS, and IDE support."
 slug: system-requirements
@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# Prerequisites
+# List of Prerequisites
 
 This article lists the system requirements that include operating system, .NET, IIS, and IDE support provided by Telerik Reporting.
 

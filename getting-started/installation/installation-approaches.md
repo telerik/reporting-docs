@@ -1,6 +1,6 @@
 ---
 title: Installation Approaches
-page_title: Available Approaches for Telerik Reporting Installation
+page_title: Available Installation Approaches
 description: "Ger familiar with the available installation approaches supported by Telerik Reporting. Learn how to install the product based on your specific needs."
 slug: telerikreporting/installation
 tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, private, feed, visual, studio
@@ -9,11 +9,11 @@ position: 2
 previous_url: /installation-system-requirements, /installation-installing-from-msi, /installation
 ---
 
-# Installation Approaches with Telerik Reporting
+# Installation Approaches for Telerik Reporting
 
-Telerik Reporting provides options for installing the product by [downloading the Control Panel](#downloading-the-control-panel), by [using the MSI installer file](#using-the-msi-file), or [with NuGet](#installing-with-nuget). 
+Telerik Reporting provides options for installing the product by [downloading the Control Panel](#downloading-the-control-panel), by [using the MSI installer file](#using-the-msi-file), or [with NuGet](#installing-with-nuget).
 
-## Downloading the Control Panel 
+## Downloading the Control Panel
 
 You can install Telerik Reporting by downloading the Control Panel. For the complete instructions, refer to the [Optimizing Use of the Telerik Control Panel](https://www.telerik.com/blogs/optimizing-use-of-the-telerik-control-panel) blog post.
 
@@ -51,7 +51,7 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 	![The Welcome Page of the Telerik Reporting Installation Wizard](images/installWizard1.png)
 
-1. In the dialog that opens, select the features you require. 
+1. In the dialog that opens, select the features you require.
 
 	+ If Telerik Reporting does not locate a local SQL server instance on your machine or if your SQL browser service is stopped, the examples from the __Examples__ dialog option will be installed but the configuration files for the application will not have valid connection strings. However, you can still access the working demos on the [Telerik Reporting Demos page](http://demos.telerik.com/reporting).
 

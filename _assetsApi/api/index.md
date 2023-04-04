@@ -100,18 +100,18 @@ The following tables list the most used members of the different libraries.
 			<th><span style="font-weight: bold;">Description</span></th>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting">Telerik.Reporting</a></td>
-			<td><a href="/api/Telerik.Reporting.Report">Report</a> Definition Item</td>
+			<td><a href="/reporting/api/Telerik.Reporting">Telerik.Reporting</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Report">Report</a> Definition Item</td>
 			<td>The base Report Definition Item class. It contains empty Page Header, Details and Page Footer sections.</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting">Telerik.Reporting</a></td>
-			<td><a href="/api/Telerik.Reporting.List">List</a>, <a href="/api/Telerik.Reporting.Table">Table</a>, <a href="/api/Telerik.Reporting.Crosstab">Crosstab</a>, <a href="/api/Telerik.Reporting.Graph">Graph</a> Definition Data Items</td>
+			<td><a href="/reporting/api/Telerik.Reporting">Telerik.Reporting</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.List">List</a>, <a href="/reporting/api/Telerik.Reporting.Table">Table</a>, <a href="/reporting/api/Telerik.Reporting.Crosstab">Crosstab</a>, <a href="/reporting/api/Telerik.Reporting.Graph">Graph</a> Definition Data Items</td>
 			<td>The most used Data Items in the report.</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting">Telerik.Reporting</a></td>
-			<td><a href="/api/Telerik.Reporting.SqlDataSource">SqlDataSource</a>, <a href="/api/Telerik.Reporting.WebServiceDataSource">WebServiceDataSource</a>, <a href="/api/Telerik.Reporting.ObjectDataSource">ObjectDataSource</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting">Telerik.Reporting</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.SqlDataSource">SqlDataSource</a>, <a href="/reporting/api/Telerik.Reporting.WebServiceDataSource">WebServiceDataSource</a>, <a href="/reporting/api/Telerik.Reporting.ObjectDataSource">ObjectDataSource</a></td>
 			<td>The most used Data Source components in the report.</td>
 		</tr>
 	</tbody>
@@ -127,13 +127,13 @@ The following tables list the most used members of the different libraries.
 			<th><span style="font-weight: bold;">Description</span></th>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting.Processing">Telerik.Reporting.Processing</a></td>
-			<td><a href="/api/Telerik.Reporting.Processing.Report">Report</a> Processing Item</td>
+			<td><a href="/reporting/api/Telerik.Reporting.Processing">Telerik.Reporting.Processing</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Processing.Report">Report</a> Processing Item</td>
 			<td>The Processing Report Item class.</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting.Processing">Telerik.Reporting.Processing</a></td>
-			<td><a href="/api/Telerik.Reporting.Processing.ReportProcessor">ReportProcessor</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Processing">Telerik.Reporting.Processing</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Processing.ReportProcessor">ReportProcessor</a></td>
 			<td>The Reporting Engine class. Use to export and print reports programmatically</td>
 		</tr>
 	</tbody>
@@ -149,23 +149,23 @@ The following tables list the most used members of the different libraries.
 			<th><span style="font-weight: bold;">Description</span></th>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting.Services">Telerik.Reporting.Services</a></td>
-			<td><a href="/api/Telerik.Reporting.Services.ReportSourceResolverBase">ReportSourceResolverBase</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Services">Telerik.Reporting.Services</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Services.ReportSourceResolverBase">ReportSourceResolverBase</a></td>
 			<td>The Telerik Reporting REST Service basic ReportSource Resolver class for ASP.NET Framework.</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting.Services">Telerik.Reporting.Services</a></td>
-			<td><a href="/api/Telerik.Reporting.Services.TypeReportSourceResolver">TypeReportSourceResolver</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Services">Telerik.Reporting.Services</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Services.TypeReportSourceResolver">TypeReportSourceResolver</a></td>
 			<td>The Telerik Reporting REST Service built-in ReportSource Resolver for CLR (CS/VB) report definitions.</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting.Services">Telerik.Reporting.Services</a></td>
-			<td><a href="/api/Telerik.Reporting.Services.UriReportSourceResolver">UriReportSourceResolver</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Services">Telerik.Reporting.Services</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Services.UriReportSourceResolver">UriReportSourceResolver</a></td>
 			<td>The Telerik Reporting REST Service built-in ReportSource Resolver for declarative (TRDP/TRDX/TRBP) report definitions from a local directory.</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.Reporting.Services">Telerik.Webreportdesigner.Services</a></td>
-			<td><a href="/api/telerik.webreportdesigner.services.filedefinitionstorage">FileDefinitionStorage</a></td>
+			<td><a href="/reporting/api/Telerik.Reporting.Services">Telerik.Webreportdesigner.Services</a></td>
+			<td><a href="/reporting/api/telerik.webreportdesigner.services.filedefinitionstorage">FileDefinitionStorage</a></td>
 			<td>The Telerik Web Report Designer REST Service built-in file-based definition storage to resolve declarative (TRDP/TRDX/TRBP) report definitions from a local directory.</td>
 		</tr>
 	</tbody>
@@ -181,23 +181,23 @@ The following tables list the most used members of the different libraries.
 			<th><span style="font-weight: bold;">Description</span></th>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.ReportViewer.WinForms">Telerik.ReportViewer.WinForms</a></td>
-			<td><a href="/api/Telerik.ReportViewer.WinForms.ReportViewer">ReportViewer</a> WinForms</td>
+			<td><a href="/reporting/api/Telerik.ReportViewer.WinForms">Telerik.ReportViewer.WinForms</a></td>
+			<td><a href="/reporting/api/Telerik.ReportViewer.WinForms.ReportViewer">ReportViewer</a> WinForms</td>
 			<td>The Telerik Reporting ReportViewer for .NET Framework Windows Forms applications.</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.ReportViewer.WPF">Telerik.ReportViewer.WPF</a></td>
-			<td><a href="/api/Telerik.ReportViewer.WPF.ReportViewer">ReportViewer</a> WPF</td>
+			<td><a href="/reporting/api/Telerik.ReportViewer.WPF">Telerik.ReportViewer.WPF</a></td>
+			<td><a href="/reporting/api/Telerik.ReportViewer.WPF.ReportViewer">ReportViewer</a> WPF</td>
 			<td>The Telerik Reporting ReportViewer for .NET Framework WPF applications.</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.ReportViewer.Html5.WebForms">Telerik.ReportViewer.Html5.WebForms</a></td>
-			<td><a href="/api/Telerik.ReportViewer.Html5.WebForms.ReportViewer">ReportViewer</a> ASP.NET WebForms</td>
+			<td><a href="/reporting/api/Telerik.ReportViewer.Html5.WebForms">Telerik.ReportViewer.Html5.WebForms</a></td>
+			<td><a href="/reporting/api/Telerik.ReportViewer.Html5.WebForms.ReportViewer">ReportViewer</a> ASP.NET WebForms</td>
 			<td>The Telerik Reporting ReportViewer for ASP.NET Web Forms applications. Wrapper of the pure Html5 Report Viewer</td>
 		</tr>
 		<tr>
-			<td><a href="/api/Telerik.ReportViewer.MVC">Telerik.ReportViewer.MVC</a></td>
-			<td><a href="/api/Telerik.ReportViewer.MVC">ReportViewer</a> ASP.NET MVC</td>
+			<td><a href="/reporting/api/Telerik.ReportViewer.MVC">Telerik.ReportViewer.MVC</a></td>
+			<td><a href="/reporting/api/Telerik.ReportViewer.MVC">ReportViewer</a> ASP.NET MVC</td>
 			<td>The Telerik Reporting ReportViewer for ASP.NET MVC applications. Wrapper of the pure Html5 Report Viewer</td>
 		</tr>
 	</tbody>

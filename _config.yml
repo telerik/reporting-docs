@@ -437,7 +437,7 @@ product_url: https://www.telerik.com/reporting
 platform: reporting
 download: https://www.telerik.com/try/reporting
 
-api_reference_url: "api/"
+api_reference_url: "api"
 
 nav:
   "Demos": https://demos.telerik.com/reporting
@@ -477,3 +477,4 @@ assets:
 ## Do not edit below this line
 safe: false
 markdown: MarkdownProcessor
+

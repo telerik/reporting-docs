@@ -396,7 +396,7 @@ defaults:
         editable: true
 -
     scope:
-        path: "api"
+        path: "api/"
     values:
         kind: "api"
         res_type: "api"

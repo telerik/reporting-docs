@@ -105,19 +105,3 @@ span.all-components-expanded-icon {
   text-decoration: none;
   display: inline-block;
 }
-
-.k-i-arrow-chevron-up::before {
-  content: "\e013";
-}
-
-.k-i-arrow-chevron-right::before {
-  content: "\e014";
-}
-
-.k-i-arrow-chevron-down::before {
-  content: "\e015";
-}
-
-.k-i-arrow-chevron-left::before {
-  content: "\e016";
-}

@@ -9,7 +9,7 @@
             <input id="local-search" placeholder="Search for &hellip;" name="q" />
             <div id='refine-search-container'>
                <div id='refine-search-button' class='unselectable'>
-                  <span id='refine-search-label' data-bind='text: label'></span>
+                  <span id='refine-search-label' data-bind='text: label'>Search all</span>
                   <span class='k-icon k-i-arrow-chevron-down'></span>
                </div>
             </div>
@@ -35,7 +35,7 @@
          var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
          isKbPage =  false ;
          siteHasKbPortal = '';
-         showSearchPopup = false;
+         showSearchPopup = true;
        </script>
        <script type="text/javascript" src="/reporting/assets/search-results.js"></script>
    </div>

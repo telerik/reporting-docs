@@ -35,7 +35,7 @@
          var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
          isKbPage =  false ;
          siteHasKbPortal = '';
-         showSearchPopup = false;
+         showSearchPopup = true;
        </script>
        <script type="text/javascript" src="/reporting/assets/search-results.js"></script>
    </div>

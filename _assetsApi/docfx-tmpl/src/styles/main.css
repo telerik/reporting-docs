@@ -106,6 +106,18 @@ span.all-components-expanded-icon {
   display: inline-block;
 }
 
-.k-i-wpf::before {
-  content: "\e658";
+.k-i-arrow-chevron-up::before {
+  content: "\e013";
+}
+
+.k-i-arrow-chevron-right::before {
+  content: "\e014";
+}
+
+.k-i-arrow-chevron-down::before {
+  content: "\e015";
+}
+
+.k-i-arrow-chevron-left::before {
+  content: "\e016";
 }

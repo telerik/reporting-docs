@@ -164,7 +164,7 @@ The following tables list the most used members of the different libraries.
 			<td>The Telerik Reporting REST Service built-in ReportSource Resolver for declarative (TRDP/TRDX/TRBP) report definitions from a local directory.</td>
 		</tr>
 		<tr>
-			<td><a href="/reporting/api/Telerik.Reporting.Services">Telerik.Webreportdesigner.Services</a></td>
+			<td><a href="/reporting/api/telerik.webreportdesigner.services">Telerik.WebReportDesigner.Services</a></td>
 			<td><a href="/reporting/api/telerik.webreportdesigner.services.filedefinitionstorage">FileDefinitionStorage</a></td>
 			<td>The Telerik Web Report Designer REST Service built-in file-based definition storage to resolve declarative (TRDP/TRDX/TRBP) report definitions from a local directory.</td>
 		</tr>

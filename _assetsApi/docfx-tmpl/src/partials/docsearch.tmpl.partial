@@ -38,5 +38,6 @@
          showSearchPopup = true;
        </script>
        <script type="text/javascript" src="/reporting/assets/search-results.js"></script>
+       <script type="text/javascript" src="/reporting/assets/search-popup.js"></script>
    </div>
 </div>

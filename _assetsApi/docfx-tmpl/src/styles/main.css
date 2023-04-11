@@ -1,15 +1,15 @@
 ﻿a.all-components {
-  background-image: url("/reporting/assets/images/article-menu.svg");
+  background-image: url("/reporting/assets/article-menu.svg");
 }
 
 span.all-components-expanded-icon {
-  background-image: url("/reporting/assets/images/group-expand-collapse.svg");
+  background-image: url("/reporting/assets/group-expand-collapse.svg");
 }
 
 /* Feedback Styles */
 
 .feedback-row {
-  background-image: url("/reporting/assets/images/feedback-bgr.svg");
+  background-image: url("/reporting/assets/feedback-bgr.svg");
   background-size: cover;
   background-repeat: repeat-x;
   padding-top: 14px;
@@ -26,17 +26,17 @@ span.all-components-expanded-icon {
   border: 0;
   width: 32px;
   height: 32px;
-  background: url("/reporting/assets/images/close.svg") no-repeat 50% 50%;
+  background: url("/reporting/assets/close.svg") no-repeat 50% 50%;
 }
 
 /* Search */
 
 .global-search input {
-  background-image: url("/reporting/assets/images/search.svg");
+  background-image: url("/reporting/assets/search.svg");
 }
 
 .local-search input {
-  background: url("/reporting/assets/images/search.svg") #fff no-repeat 10px 50%;
+  background: url("/reporting/assets/search.svg") #fff no-repeat 10px 50%;
 }
 
 #refine-search-popup li:hover {

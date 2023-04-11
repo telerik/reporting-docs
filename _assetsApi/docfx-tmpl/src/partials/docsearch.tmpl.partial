@@ -34,11 +34,9 @@
          var gcsInstance = '001595215763381649090:jt1stbj813w';
          var gcsKey = 'AIzaSyDOW6NJLQOTngTI3AXBQaTDaWhrL2tdo_M';
          isKbPage =  false ;
-         siteHasKbPortal = '';
-         showSearchPopup = true;
-         assetsFolderPath = "/reporting/assets";
+         siteHasKbPortal = 'false';
+         showSearchPopup = false;
        </script>
        <script type="text/javascript" src="/reporting/assets/search-results.js"></script>
-       <script type="text/javascript" src="/reporting/assets/search-popup.js"></script>
    </div>
 </div>

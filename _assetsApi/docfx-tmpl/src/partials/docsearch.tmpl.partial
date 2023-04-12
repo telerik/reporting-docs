@@ -38,6 +38,7 @@
          showSearchPopup = true;
 		 isSearchPopupInitialized = true;
 		 assetsFolderPath = '/reporting/assets';
+		 loadedScripts = ['/reporting/assets/search-popup.js'];
        </script>
 	   <script type="text/javascript" src="/reporting/assets/search-popup.js"></script>
        <script type="text/javascript" src="/reporting/assets/search-results.js"></script>

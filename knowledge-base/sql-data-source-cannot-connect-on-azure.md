@@ -2,7 +2,7 @@
 title: SqlDataSource Connects to the Database when Running Locally but Fails on Azure
 description: The SqlDataSource Successfully Connects to the Database when Running Locally with Named ConnectionString but Fails when Deployed on Azure as the Connection Strings Defined in Azure Portal Override Those in the Web.config files
 type: troubleshooting
-page_title: SqlDataSource with named connectionstring connects successfully on local environment but fails when deployed on Azure
+page_title: On Azure SqlDataSource with named connectionstring fails to connect
 slug: sql-data-source-cannot-connect-on-azure
 position: 
 tags: Azure,connection string,sqldatasource,data provider

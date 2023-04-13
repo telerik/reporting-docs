@@ -74,6 +74,8 @@ Telerik Reporting supports the following functionalities:
 
 ## Deploying on Linux
 
+> Currently, .NET 7 is not supported on Linux due to a breaking change introduced by Microsoft as explained in [System.Drawing.Common is not supported on non-Windows platforms - .NET 6 and .NET 7 under Linux]({%slug system-drawing-common-is-not-supported-on-non-windows-platforms%})
+
 When deploying to a Linux machine, make sure you have the [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) library installed. The library is a Mono implementation of GDI+ API for non-Windows operating systems.
 
 The following snippet demonstrates how to update and install the necessary libraries on Ubuntu or Debian:
@@ -106,6 +108,8 @@ On the Linux machine, you also need to install the fonts you use in the reports.
 > In the rare case when the `Preferred Family` name of two fonts conincide and the `Family` names are different, on Linux only the second font registered as private would be respected as it will override the first one.
 
 ## Deploying on macOS
+
+> Currently, .NET 7 is not supported on macOS due to a breaking change introduced by Microsoft as explained in [System.Drawing.Common is not supported on non-Windows platforms - .NET 6 and .NET 7 under Linux]({%slug system-drawing-common-is-not-supported-on-non-windows-platforms%})
 
 To use .NET/.NET Core on mascOS:
 

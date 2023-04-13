@@ -2,7 +2,7 @@
 title: SqlDataSource Connects to the Database when Running Locally but Fails on Azure
 description: The SqlDataSource Successfully Connects to the Database when Running Locally with Named ConnectionString but Fails when Deployed on Azure as the Connection Strings Defined in Azure Portal Override Those in the Web.config files
 type: troubleshooting
-page_title: SqlDataSource with named connectionstring connects successfully on locally environment but fails when deployed on Azure
+page_title: SqlDataSource with named connectionstring connects successfully on local environment but fails when deployed on Azure
 slug: sql-data-source-cannot-connect-on-azure
 position: 
 tags: Azure,connection string,sqldatasource,data provider
@@ -89,11 +89,11 @@ Unable to establish a connection to the database. Please verify that your connec
 
 The stack trace of the error suggests that the SqlDataSource uses the old data provider `System.Data.SqlClient`. This means that it is referenced somewhere else, for example in Azure portal as explained in the Stack Overflow thread [EF6 with AAD auth works locally, but not on deployed app in Azure](https://stackoverflow.com/questions/75243421/ef6-with-aad-auth-works-locally-but-not-on-deployed-app-in-azure). In the last update from the author in that thread, he mentions that in Azure, his connection string was being configured in the Azure portal which was resulting in the old data provider being used.
 
-The issue occurs as the Azure portal connectionstring overrids the `web.config` one.
+The issue occurs as the Azure portal connectionstring overrides the `web.config` one.
 
 ## Suggested Workarounds
 
-* Configure the connectionstring in the `web.config` instead of Azure portal
+* Configure the connectionstrings only in the `web.config` and drop the connectionstrings from the Azure portal
 * Change the Azure Web App Settings 'Connection strings' `Type` to `Custom`
 
 	Azure Web App Settings hold the connectionstrings as environmental variables based on the `Type` chosen with the connection string app setting as explained in [Configure an App Service app - Configure connection strings](https://learn.microsoft.com/en-gb/azure/app-service/configure-common?tabs=portal#configure-connection-strings). Set the `Type` to `Custom`.
@@ -102,7 +102,7 @@ The issue occurs as the Azure portal connectionstring overrids the `web.config` 
 
 	In Telerik.Reporting .NET Standard version, the configuration is provided as an [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-7.0) implementation. By default, the code reads from the `appsettings.json`. However, you may provide it with a custom `IConfiguration` implementation. See the KB article [How to pass configuration settings to ReportProcessor in ASP.NET Core application that does not use REST Service]({%slug pass-configuration-to-report-processor-in-asp-dot-net-core-without-rest-service%}) for hints.
 
-	.NET Framework versions 4.6.2 and higher support .NET Standard 2.0 - see [.NET Standard versions](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0#net-implementation-support)
+	>note .NET Framework versions 4.6.2 and higher support .NET Standard 2.0 - see [.NET Standard versions](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0#net-implementation-support)
 
 ## See Also
 

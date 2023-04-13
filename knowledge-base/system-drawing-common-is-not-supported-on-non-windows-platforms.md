@@ -72,7 +72,7 @@ The reason for the problem is described in the Microsoft article [System.Drawing
 
 * .NET 7
 
-	Currently, there is no workaround for this framework.
+	Currently, there is no workaround for this .NET 7.
 
 > The Telerik Reporting team has prioritized the feature request described in [Future of Linux support for reporting](https://feedback.telerik.com/reporting/1537361-future-of-linux-support-for-reporting). Our target is to deliver it with 2023 R3 release scheduled for the middle of October 2023.
 

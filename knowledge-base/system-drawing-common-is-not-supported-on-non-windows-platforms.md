@@ -1,6 +1,6 @@
 ---
-title: System.Drawing.Common is not supported on non-Windows platforms - .NET 6 and .NET 7 under Linux
-description: The report cannot be resolved under Linux in .NET 6 and .NET 7 but works in Windows
+title: System.Drawing.Common is not supported on non-Windows platforms - .NET 6 and .NET 7 under Linux and MacOS
+description: The report cannot be resolved under Linux and MacOS in .NET 6 and .NET 7 but works in Windows
 type: troubleshooting
 page_title: System.Drawing.Common is not supported on non-Windows platforms starting with .NET 6
 slug: system-drawing-common-is-not-supported-on-non-windows-platforms
@@ -26,7 +26,7 @@ res_type: kb
 
 ## Description
 
-The .NET 6 and .NET 7 project project runs correctly in Windows environment. The following error occurs when running it under a Linux environment, for example, in Linux Docker container.
+The .NET 6 and .NET 7 project project runs correctly in Windows environment. The following error occurs when running it under a Linux and MacOS environment, for example, in Linux Docker container.
 
 ## Error Message
 

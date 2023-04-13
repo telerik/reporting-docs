@@ -1,7 +1,7 @@
 ---
-title: First few report items have an incorrect font
+title: First Few Report Items Have an Incorrect Font
 page_title: The font of the first few report items is not consistent with the rest
-description: "Learn how to handle the scenario when the font of the first few report items is different from the rest, even though they use the same font and style."
+description: "Learn how to handle the scenario when the font of the first few report items is different from the rest, even though they use the same font and style in the report definition."
 type: how-to
 slug: inconsistent-font-of-the-first-few-report-items
 res_type: kb

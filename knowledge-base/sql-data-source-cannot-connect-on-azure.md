@@ -27,11 +27,11 @@ res_type: kb
 
 ## Description
 
-I have an ASP.NET Web application with embedded Html5 Report Viewer and Reporting REST Service. The reports use [SqlDataSource]({slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview}) with [named/shared connectionstring](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/connection-strings-and-configuration-files) with system managed identity for passwordless connections defined in the `web.config` file of the application. Here is how the connectionstring looks like:
+I have an ASP.NET Web application with embedded Html5 Report Viewer and Reporting REST Service. The reports use [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) with [named/shared connectionstring](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/connection-strings-and-configuration-files) with system managed identity for passwordless connections defined in the `web.config` file of the application. Here is how the connectionstring looks like:
 
 `Server=tcp:MyAzureServer,1433; Database=MyDB; Authentication=Active Directory Default; TrustServerCertificate=True; Encrypt=true;`
 
-The Web application uses [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace?view=sql-server-ver16) and the Reporting project configuration file specifically sets the `providerName="Microsoft.Data.SqlClient";` and registers the provider as explained in the KB [Registering SqlDataSource Data Providers Without Installing Driver]({slug how-to-register-sqldatasource-data-providers-without-driver-installation}).
+The Web application uses [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado-net/introduction-microsoft-data-sqlclient-namespace?view=sql-server-ver16) and the Reporting project configuration file specifically sets the `providerName="Microsoft.Data.SqlClient";` and registers the provider as explained in the KB [Registering SqlDataSource Data Providers Without Installing Driver]({%slug how-to-register-sqldatasource-data-providers-without-driver-installation%}).
 
 The whole application works locally as expected.
 
@@ -111,4 +111,4 @@ The issue occurs as the Azure portal connectionstring overrides the `web.config`
 * [Named/Shared connectionstring](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/connection-strings-and-configuration-files)
 * [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-7.0)
 * [How to pass configuration settings to ReportProcessor in ASP.NET Core application that does not use REST Service]({%slug pass-configuration-to-report-processor-in-asp-dot-net-core-without-rest-service%})
-* [Registering SqlDataSource Data Providers Without Installing Driver]({slug how-to-register-sqldatasource-data-providers-without-driver-installation})
+* [Registering SqlDataSource Data Providers Without Installing Driver]({%slug how-to-register-sqldatasource-data-providers-without-driver-installation%})

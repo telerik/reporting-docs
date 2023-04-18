@@ -27,7 +27,9 @@ Below is a list of all options available during initialization.
 The options can be set from the `.HTML`/`.TS` component file or both(combined):
 
 ````HTML
-<tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59655/api/reports/'"
+<tr-viewer #viewer1
+	[containerStyle]="viewerContainerStyle"
+	[serviceUrl]="'http://localhost:59655/api/reports/'"
 	[reportSource]="{
 		report: 'Report2.trdp',
 		parameters: {}

@@ -67,9 +67,9 @@ A sample configuration that can be used in Azure, because it forces the report t
 ```
 ## Additional settings
 When the report is exported in any of the formats that use the OpenXML SDK, additional rendering extension parameter determines how the Graph and Map items will be rendered.
-The parameter is named **useMetafile** and its default value is *true*, which ensures better image quality in Microsoft Office applications.
+The parameter is named **UseMetafile** and its default value is *true*, which ensures better image quality in Microsoft Office applications.
 This setting will be respected only if the rendering machine supports metafiles - otherwise a Bitmap instance is used to render the Graph and Map items.
-If the export to Microsoft Office formats fails in Azure environment, set the **useMetafile** to *false*. 
+If the export to Microsoft Office formats fails in Azure environment, set the **UseMetafile** to *false*. 
 
 ## See Also
 - [Configuring Telerik Reporting Extensions]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})

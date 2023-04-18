@@ -231,11 +231,15 @@ __Example of setting the ReportSource at runtime using the *Window.Loaded* event
 
 The following Report Viewers are designed to work as clients of [Telerik Report Server](https://www.telerik.com/report-server):
 
-* __HTML5 Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
-* __HTML5 ASP.NET MVC Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
-* __HTML5 ASP.NET WebForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
-* __WinForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
-* __WPF Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
+* __HTML5 Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __Angular Report Viewer__ the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __React Report Viewer__ the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __Blazor Report Viewer__ the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __Native Blazor Report Viewer__ the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __HTML5 ASP.NET MVC Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __HTML5 ASP.NET WebForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __WinForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __WPF Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
 
 These Report Viewers do not have direct access to Telerik Reporting Engine. Reports are processed and rendered on a remote machine where Telerik Report Server is running, and the content is delivered to the client by __Telerik Report Server's REST Service__.
 

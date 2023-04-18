@@ -91,7 +91,7 @@ The [HTML5 Report Viewer control]({%slug telerikreporting/using-reports-in-appli
 
 ````HTML
 reportSource: {
-	report: "Dashboard.trdp",
+	report: "Product Catalog.trdp",
 	parameters: { CultureID: "en" }
 }
 ````
@@ -111,11 +111,57 @@ The *report description string* is sent to the [Telerik Reporting REST service](
 
 ### __Angular Report Viewer__
 
-The [Angular Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})is an Angular wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__.
+The [Angular Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})is an Angular wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__. For example:
+
+````HTML
+<tr-viewer #viewer1
+	...
+	[reportSource]="{
+		report: 'Product Catalog.trdp',
+		parameters: { CultureID: 'en' }
+	}"
+	...>
+</tr-viewer>
+````
+
+or
+
+````HTML
+<tr-viewer #viewer1
+	...
+	[reportSource]="{
+		report: 'Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary',
+		parameters: { CultureID: 'en' }
+	}"
+	...>
+</tr-viewer>
+````
 
 ### __React Report Viewer__
 
-The [React Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})is a React wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__.
+The [React Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})is a React wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__. For example:
+
+````HTML
+<TelerikReportViewer
+		...
+		reportSource={{
+			report: 'Product Catalog.trdp',
+			parameters: { CultureID: 'en' }
+		}}
+		... />
+````
+
+or
+
+````HTML
+<TelerikReportViewer
+		...
+		reportSource={{
+			report: 'Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary',
+			parameters: { CultureID: 'en' }
+		}}
+		... />
+````
 
 ### __Blazor Report Viewer__
 

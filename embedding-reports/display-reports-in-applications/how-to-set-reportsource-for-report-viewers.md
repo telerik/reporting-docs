@@ -185,7 +185,7 @@ The [Blazor Report Viewer control]({%slug telerikreporting/using-reports-in-appl
 
 ### __Native Blazor Report Viewer__
 
-The [Native Blazor Report Viewer control]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) is a native Blazor widget built on top of `Telerik UI for Blazor` components. It's ReportSource is defined through the same `ReportSourceOptions` model as the Blazor wrapper of the HTML5 Viewer:
+The [Native Blazor Report Viewer control]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) is a native Blazor widget built on top of [Telerik UI for Blazor](https://docs.telerik.com/blazor-ui/introduction) components. It's ReportSource is defined through the same `ReportSourceOptions` model as the Blazor wrapper of the HTML5 Viewer:
 
 ````CSharp
 <ReportViewer

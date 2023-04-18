@@ -111,7 +111,7 @@ The *report description string* is sent to the [Telerik Reporting REST service](
 
 ### __Angular Report Viewer__
 
-The [Angular Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%})is an Angular wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__. For example:
+The [Angular Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) is an Angular wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__. For example:
 
 ````HTML
 <tr-viewer #viewer1
@@ -139,7 +139,7 @@ or
 
 ### __React Report Viewer__
 
-The [React Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})is a React wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__. For example:
+The [React Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) is a React wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__. For example:
 
 ````HTML
 <TelerikReportViewer
@@ -165,7 +165,7 @@ or
 
 ### __Blazor Report Viewer__
 
-The [Blazor Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})is a Blazor wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__ through the model `ReportSourceOptions`:
+The [Blazor Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) is a Blazor wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__ through the model `ReportSourceOptions`:
 
 ````CSHTML
 <ReportViewer ViewerId="rv1"
@@ -201,7 +201,7 @@ or
 
 ### __Native Blazor Report Viewer__
 
-The [Native Blazor Report Viewer control]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})is a native Blazor widget built on top of Telerik UI for Blazor components. It's ReportSource is defined through the same `ReportSourceOptions` model as the Blazor wrapper of the HTML5 Viewer:
+The [Native Blazor Report Viewer control]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) is a native Blazor widget built on top of `Telerik UI for Blazor` components. It's ReportSource is defined through the same `ReportSourceOptions` model as the Blazor wrapper of the HTML5 Viewer:
 
 ````CSHTML
 <ReportViewer

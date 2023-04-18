@@ -27,11 +27,14 @@ Below is a list of all options available during initialization.
 The options can be set from the `.HTML`/`.TS` component file or both(combined):
 
 ````HTML
-<tr-viewer #viewer1 [containerStyle]="viewerContainerStyle" [serviceUrl]="'http://localhost:59655/api/reports/'"
+<tr-viewer #viewer1
+	[containerStyle]="viewerContainerStyle"
+	[serviceUrl]="'http://localhost:59655/api/reports/'"
 	[reportSource]="{
 		report: 'Report2.trdp',
 		parameters: {}
-	}" [viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
+	}"
+	[viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
 	[viewerToolTipOpening]="viewerToolTipOpening" [enableAccessibility]="false">
 </tr-viewer>
 ````

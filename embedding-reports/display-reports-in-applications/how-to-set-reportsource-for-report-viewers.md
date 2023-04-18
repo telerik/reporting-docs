@@ -167,29 +167,13 @@ or
 
 The [Blazor Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) is a Blazor wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__ through the model `ReportSourceOptions`:
 
-````CSHTML
+````CSharp
 <ReportViewer ViewerId="rv1"
 			...
 			ReportSource="@(new ReportSourceOptions
 						{
 							Report = "Product Line Sales.trdp",
-							Parameters = new Dictionary<string, object>
-							{
-								{ "ProductCategory", "Clothing" },
-								{ "ProductSubcategory", new [] { "Caps", "Gloves" } }
-							}
-						})"
-			.../>
-````
-
-or
-
-````CSHTML
-<ReportViewer ViewerId="rv1"
-			...
-			ReportSource="@(new ReportSourceOptions
-						{
-							Report = "Telerik.Reporting.Examples.CSharp.ProductLineSales, CSharp.ReportLibrary",
+							//or "Telerik.Reporting.Examples.CSharp.ProductLineSales, CSharp.ReportLibrary",
 							Parameters = new Dictionary<string, object>
 							{
 								{ "ProductCategory", "Clothing" },
@@ -201,9 +185,9 @@ or
 
 ### __Native Blazor Report Viewer__
 
-The [Native Blazor Report Viewer control]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) is a native Blazor widget built on top of `Telerik UI for Blazor` components. It's ReportSource is defined through the same `ReportSourceOptions` model as the Blazor wrapper of the HTML5 Viewer:
+The [Native Blazor Report Viewer control]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) is a native Blazor widget built on top of [Telerik UI for Blazor](https://docs.telerik.com/blazor-ui/introduction) components. It's ReportSource is defined through the same `ReportSourceOptions` model as the Blazor wrapper of the HTML5 Viewer:
 
-````CSHTML
+````CSharp
 <ReportViewer
 	...
 	@bind-ReportSource="@ReportSource"

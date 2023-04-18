@@ -165,7 +165,39 @@ or
 
 ### __Blazor Report Viewer__
 
-The [Blazor Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})is a Blazor wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__.
+The [Blazor Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%})is a Blazor wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__ through the model `ReportSourceOptions`:
+
+````CSHTML
+<ReportViewer ViewerId="rv1"
+			...
+			ReportSource="@(new ReportSourceOptions
+						{
+							Report = "Product Line Sales.trdp",
+							Parameters = new Dictionary<string, object>
+							{
+								{ "ProductCategory", "Clothing" },
+								{ "ProductSubcategory", new [] { "Caps", "Gloves" } }
+							}
+						})"
+			.../>
+````
+
+or
+
+````CSHTML
+<ReportViewer ViewerId="rv1"
+			...
+			ReportSource="@(new ReportSourceOptions
+						{
+							Report = "Telerik.Reporting.Examples.CSharp.ProductLineSales, CSharp.ReportLibrary",
+							Parameters = new Dictionary<string, object>
+							{
+								{ "ProductCategory", "Clothing" },
+								{ "ProductSubcategory", new [] { "Caps", "Gloves" } }
+							}
+						})"
+			.../>
+````
 
 ### __Native Blazor Report Viewer__
 

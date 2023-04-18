@@ -31,7 +31,8 @@ The options can be set from the `.HTML`/`.TS` component file or both(combined):
 	[reportSource]="{
 		report: 'Report2.trdp',
 		parameters: {}
-	}" [viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
+	}"
+	[viewMode]="'INTERACTIVE'" [scaleMode]="'SPECIFIC'" [scale]="1.0" [ready]="ready"
 	[viewerToolTipOpening]="viewerToolTipOpening" [enableAccessibility]="false">
 </tr-viewer>
 ````

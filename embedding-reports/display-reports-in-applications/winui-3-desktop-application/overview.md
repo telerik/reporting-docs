@@ -56,6 +56,8 @@ Due to the XAML-based nature of WinUI, the WinUI report viewer reuses parts of t
 * [Integrating the WPF Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service%})
 * [Integrating the WPF Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%})
 
+You may set the ReportSource of the WinUI Viewer as explained in the WinUI sections of the article [Setting ReportSource to Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}).
+
 ## Known Limitations
 
 Currently the WinUI Report Viewer does not provide the following functionalities:

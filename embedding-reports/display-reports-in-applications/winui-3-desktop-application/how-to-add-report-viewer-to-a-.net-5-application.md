@@ -21,7 +21,7 @@ This article explains the steps needed to integrate the WinUI report viewer to a
 
 ## Use the example projects as a reference
 
-Since __R3 2021__, the examples we distribute along with our product contain two new projects: `CSharp.Net6.WinUIIntegrationDemo` and `CSharp.Net6.WinUIIntegrationDemo (Package)`. These projects are designed as a showcase of our WinUI report viewer and can be used as a reference when configuring the viewer in your own WinUI application.
+Since __R1 2023__, the examples we distribute along with our product contain two new projects: `CSharp.Net6.WinUIIntegrationDemo` and `CSharp.Net6.WinUIIntegrationDemo (Package)`. These projects are designed as a showcase of our WinUI report viewer and can be used as a reference when configuring the viewer in your own WinUI application.
 
 The project `CSharp.Net6.WinUIIntegrationDemo.csproj` targets .NET 6 and contains the references to the necessary Nuget packages. This project also contains the XAML files that configure the application and the window that will host the ReportViewer control. The project `CSharp.Net6.WinUIIntegrationDemo.wapproj` is a Windows Application Packaging Project and specifies which project will be packed as `.appx` and loaded for execution.
 

@@ -65,6 +65,7 @@ public class Report
 		public float Size { get; set; }
 
 		[Column("ParentUri")]
+		[Required]
 		public string ParentUri { get; set; }
 
 		[Column("Uri")]
@@ -87,6 +88,7 @@ public class ReportFolder
 		public string Name { get; set; }
 
 		[Column("ParentUri")]
+		[Required]
 		public string ParentUri { get; set; }
 	
 		[Column("HasSubFolders")]
@@ -123,7 +125,8 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
 			{
 				if (!optionsBuilder.IsConfigured)
 				{
-					optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;");
+					optionsBuilder
+					.UseSqlServer(@"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;");
 				}
 			}
 		}
@@ -182,7 +185,9 @@ using System;
 				return new EFCore.Models.ReportFolder() {
 					Name = createFolderModel.Name,
 					ParentUri = createFolderModel.ParentUri,
-					Uri = (string.IsNullOrEmpty(createFolderModel.ParentUri) ? createFolderModel.ParentUri : createFolderModel.ParentUri + "\\") + createFolderModel.Name,
+					Uri = (string.IsNullOrEmpty(createFolderModel.ParentUri) 
+					? createFolderModel.ParentUri 
+					: createFolderModel.ParentUri + "\\") + createFolderModel.Name,
 					CreatedOn = DateTime.Now,
 					ModifiedOn = DateTime.Now
 				};
@@ -195,7 +200,9 @@ using System;
 					Name = saveResourceModel.Name,
 					Bytes = data,
 					ParentUri = saveResourceModel.ParentUri,
-					Uri = (string.IsNullOrEmpty(saveResourceModel.ParentUri) ? saveResourceModel.ParentUri : saveResourceModel.ParentUri + "\\") + saveResourceModel.Name,
+					Uri = (string.IsNullOrEmpty(saveResourceModel.ParentUri) 
+					? saveResourceModel.ParentUri 
+					: saveResourceModel.ParentUri + "\\") + saveResourceModel.Name,
 					Size = data.Length,
 					CreatedOn = DateTime.Now,
 					ModifiedOn = DateTime.Now
@@ -310,7 +317,9 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 				uri = (uri ?? string.Empty);
 
 				var reps = this._dbContext.Reports.Where(r => r.ParentUri == uri).Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
-				var folders = this._dbContext.ReportFolders.Where(f => f.ParentUri == uri).Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
+				var folders = this._dbContext.ReportFolders
+				.Where(f => f.ParentUri == uri)
+				.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
 
 				var result = folders.Union(reps);
 		
@@ -480,7 +489,6 @@ var builder = WebApplication.CreateBuilder(args);
 	builder.Services.TryAddScoped<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
 	{
 		DefinitionStorage =sp.GetRequiredService<IDefinitionStorage>(),
-		//DefinitionStorage = new MyFileDefinitionStorage(reportsPath, new[] { "Resources", "Shared Data Sources" }),
 		ResourceStorage = new ResourceStorage(Path.Combine(reportsPath, "Resources")),
 		SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(reportsPath, "Shared Data Sources")),
 		SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))

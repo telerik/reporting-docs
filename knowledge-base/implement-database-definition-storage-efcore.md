@@ -1,8 +1,8 @@
 ---
-title: Implementing a custom IDefinitionStorage that stores reports in a database
-description: Implementing a custom IDefinitionStorage that stores reports in a database
+title: Implementing an EFCore IDefinitionStorage
+description: "Learn how to create a custom IDefinitionStorage in Telerik Reporting that stores reports in a database using EntityFramework Core."
 type: how-to
-page_title: Implementing a custom IDefinitionStorage that stores reports in a database
+page_title: Using an MSSQL Server database as Reports Storage for Web Report Designer
 slug: implement-database-definition-storage-efcore
 position:
 tags: Web Report Designer
@@ -27,14 +27,18 @@ res_type: kb
 
 ## Description
 
+Out of the box, Telerik Reporting offers the [FileDefinitionStorage](/api/telerik.webreportdesigner.services.filedefinitionstorage) class which can be used to store the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) report definitions in a local directory.
+
+In certain cases, one may want to instead store the report definitions in a custom place, for example, a database. For this reason, we have exposed the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface. By implementing this interface, one will be able to store the report definitions in any place, be it SQL or NoSQL database, [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs/), etc.
+
+In this article, we will demonstrate how the report definitions can be stored in a MSSQL Server database using [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
+
 ## Solution
 
-The first step is to create EFCore models for the Reports and their Folders.
+1. The first step is to create Entity Framework Core models for the Report definitions and their Folders. These models will be used later to create database tables. 
 
-For this example, the Report model will be as follows:
-
-```C#
-    public class Report
+	````C#
+public class Report
     {
         [Column("Id")]
         [Required]
@@ -66,12 +70,11 @@ For this example, the Report model will be as follows:
         [Column("Uri")]
         public string Uri { get; set; }
     }
-```
+````
 
-And the Folder model will be the followin:
 
-```C#
-    public class ReportFolder
+	````C#
+public class ReportFolder
     {
 
         [Column("Id")]
@@ -100,12 +103,39 @@ And the Folder model will be the followin:
         [Column("ModifiedOn")]
         public DateTime ModifiedOn { get; set; }
     }
-```
+````
 
-We will often need to convert from a database model to the models of the Web Report Designer service, and for that reason, it will be handy
-to have an _extension_ class handling those conversions for us. For example:
 
-```C#
+1. Next, we will create the custom [`DbContext`](https://learn.microsoft.com/en-us/ef/core/dbcontext-configuration/) that the will be used for querying and saving the data from inside the definition storage implementation. Additionally, we can have our `Report` and `ReportFolder` table created automatically:
+
+````C#
+using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace CSharp.Net7.Html5IntegrationDemo.EFCore
+{
+    public class SqlDefinitionStorageContext : DbContext
+    {
+
+        public DbSet<Report> Reports { get; set; }
+
+        public DbSet<ReportFolder> ReportFolders { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;");
+            }
+        }
+    }
+}
+````
+
+
+1. We will need to convert the data of the database model to the [Telerik.WebReportDesigner.Services.Models](/api/telerik.webreportdesigner.services.models), and for that reason, it will be handy to have an _extension_ class handling those conversions for us. For example:
+
+	````C#
 using System;
 using Telerik.WebReportDesigner.Services.Models;
 
@@ -175,12 +205,12 @@ namespace CSharp.Net7.Html5IntegrationDemo.EFCore.Models
         }
     }
 }
+````
 
-```
 
-With all of the above prepared, we can now implement the [IDefinitionStorage] interface:
+1. With all of the above prepared, we can now proceed with implementing the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface:
 
-```C#
+````C#
 using CSharp.Net7.Html5IntegrationDemo.EFCore;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -432,8 +462,37 @@ namespace CSharp.Net7.Html5IntegrationDemo
 
     }
 }
-```
+````
 
-## Notes
+1. Lastly, the [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration) should be set to use the `CustomDefinitionStorage` class implemented above:
+
+	````C#
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllers();
+builder.Services.AddRazorPages()
+                .AddNewtonsoftJson();
+
+builder.Services.AddDbContext<SqlDefinitionStorageContext>();
+builder.Services.AddScoped<IDefinitionStorage, CustomDefinitionStorage>();
+
+var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "..", "..", "..", "..", "Report Designer", "Examples");
+
+// Configure dependencies for ReportDesignerController.
+builder.Services.TryAddScoped<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
+{
+    DefinitionStorage =sp.GetRequiredService<IDefinitionStorage>(),
+    //DefinitionStorage = new MyFileDefinitionStorage(reportsPath, new[] { "Resources", "Shared Data Sources" }),
+    ResourceStorage = new ResourceStorage(Path.Combine(reportsPath, "Resources")),
+    SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(reportsPath, "Shared Data Sources")),
+    SettingsStorage = new FileSettingsStorage(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
+});
+
+var app = builder.Build();
+````
+
 
 ## See Also
+
+* [Using Custom Report Definition Storage]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage%})

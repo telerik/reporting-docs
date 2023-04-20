@@ -31,9 +31,9 @@ The Report Parameter values in both server-side and client-sider Report Source a
 
 These are viewers that operate on the same machine where reports are processed rendered. These viewers include mechanisms for resolving reports:
 
-* __[WindowsForms Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with the Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
-* __[WPF Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with the Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
-* __[WinUI Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%})__ : reports are processed and rendered on the local machine;
+* __[WindowsForms Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with remote Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
+* __[WPF Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with remote Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
+* __[WinUI Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with remote Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
 * __[ASP.NET WebForms Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})__ : reports are processed and rendered on the server machine where the Report Viewer is hosted.
 
 Each of these viewer controls has a ReportSource property of type __Telerik.Reporting.ReportSource__, which can be set to an instance of one of the available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).
@@ -66,6 +66,7 @@ The following Report Viewers are designed to work as clients of [Telerik Reporti
 * __HTML5 ASP.NET WebForms Report Viewer__ (go to section [WebForms Viewer](#html5-aspnet-webforms-report-viewer))
 * __WinForms Report Viewer__ (go to section [WinForms Viewer](#winforms-report-viewer))
 * __WPF Report Viewer__ (go to section [WPF Viewer](#wpf-report-viewer))
+* __WinUI Report Viewer__ (go to section [WinUI Viewer](#winui-report-viewer))
 
 These Report Viewers do not have direct access to Telerik Reporting Engine. Reports are processed and rendered on a remote machine, and the content is delivered to the client by the corresponding __Telerik Reporting Service__.
 
@@ -314,7 +315,21 @@ __Example of setting the ReportSource at runtime using the *Window.Loaded* event
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml.cs}}
 
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
-{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}} 
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}}
+
+### __WinUI Report Viewer__
+
+The [WinUI Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%}) can be connected to a __Telerik Reporting REST Service__ or __Telerik Report Server__ by setting its __ReportEngineConnection property__ - [How To: Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}). The configuration is practically identical to the one for the [WPF Report Viewer](#wpf-report-viewer).
+
+__Example of specifying the ReportSource declaratively__
+
+````XAML
+<telerikReporting:ReportViewer x:Name="reportViewer" Grid.Row="1" ReportEngineConnection="engine=RestService;uri=http://localhost:59655/api/reports">
+	<telerikReporting:ReportViewer.ReportSource>
+		<telerikReportingCore:UriReportSource Uri="Dashboard.trdp" />
+	</telerikReporting:ReportViewer.ReportSource>
+</telerikReporting:ReportViewer>
+````
 
 ## Set up Report Viewer controls that are integrated with Telerik Report Server
 
@@ -331,6 +346,7 @@ The following Report Viewers are designed to work as clients of [Telerik Report 
 * __HTML5 ASP.NET WebForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
 * __WinForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
 * __WPF Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __WinUI Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
 
 These Report Viewers do not have direct access to Telerik Reporting Engine. Reports are processed and rendered on a remote machine where Telerik Report Server is running, and the content is delivered to the client by __Telerik Report Server's REST Service__.
 

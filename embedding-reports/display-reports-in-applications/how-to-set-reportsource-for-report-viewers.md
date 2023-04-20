@@ -315,11 +315,21 @@ __Example of setting the ReportSource at runtime using the *Window.Loaded* event
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml.cs}}
 
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
-{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}} 
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}}
 
 ### __WinUI Report Viewer__
 
 The [WinUI Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%}) can be connected to a __Telerik Reporting REST Service__ or __Telerik Report Server__ by setting its __ReportEngineConnection property__ - [How To: Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}). The configuration is practically identical to the one for the [WPF Report Viewer](#wpf-report-viewer).
+
+__Example of specifying the ReportSource declaratively__
+
+````XAML
+<telerikReporting:ReportViewer x:Name="reportViewer" Grid.Row="1" ReportEngineConnection="engine=RestService;uri=http://localhost:59655/api/reports">
+	<telerikReporting:ReportViewer.ReportSource>
+		<telerikReportingCore:UriReportSource Uri="Dashboard.trdp" />
+	</telerikReporting:ReportViewer.ReportSource>
+</telerikReporting:ReportViewer>
+````
 
 ## Set up Report Viewer controls that are integrated with Telerik Report Server
 

@@ -266,7 +266,7 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 			public Task DeleteAsync(string uri)
 			{
 				var report = this._dbContext.Reports
-				.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
+					.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
 				this._dbContext.Reports.Remove(report);
 				this._dbContext.SaveChanges();
 				return Task.CompletedTask;
@@ -422,8 +422,7 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 			{
 				DeleteReportsInFolder(folder);
 
-				var subfolders = this._dbContext.ReportFolders
-				.Where(f => f.ParentUri == folder.Uri).ToList();
+				var subfolders = this._dbContext.ReportFolders.Where(f => f.ParentUri == folder.Uri).ToList();
 				
 				this._dbContext.ReportFolders.Remove(folder);
 

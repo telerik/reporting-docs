@@ -319,12 +319,12 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 				uri = (uri ?? string.Empty);
 
 				var reps = this._dbContext.Reports
-				.Where(r => r.ParentUri == uri)
-				.Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
+					.Where(r => r.ParentUri == uri)
+					.Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
 				
 				var folders = this._dbContext.ReportFolders
-				.Where(f => f.ParentUri == uri)
-				.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
+					.Where(f => f.ParentUri == uri)
+					.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
 
 				var result = folders.Union(reps);
 		

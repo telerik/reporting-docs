@@ -125,8 +125,8 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
 			{
 				if (!optionsBuilder.IsConfigured)
 				{
-					optionsBuilder
-					.UseSqlServer(@"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;");
+					var connenctionString = @"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;";
+					optionsBuilder.UseSqlServer(connectionString);
 				}
 			}
 		}
@@ -249,7 +249,8 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 
 				if (!string.IsNullOrEmpty(model.ParentUri))
 				{
-					var parentFolder = this._dbContext.ReportFolders.FirstOrDefault(f => f.Uri == model.ParentUri);
+					var parentFolder = this._dbContext.ReportFolders
+					.FirstOrDefault(f => f.Uri == model.ParentUri);
 
 					if (parentFolder != null)
 					{
@@ -264,7 +265,8 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 
 			public Task DeleteAsync(string uri)
 			{
-				var report = this._dbContext.Reports.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
+				var report = this._dbContext.Reports
+				.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
 				this._dbContext.Reports.Remove(report);
 				this._dbContext.SaveChanges();
 				return Task.CompletedTask;
@@ -316,7 +318,10 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 			{
 				uri = (uri ?? string.Empty);
 
-				var reps = this._dbContext.Reports.Where(r => r.ParentUri == uri).Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
+				var reps = this._dbContext.Reports
+				.Where(r => r.ParentUri == uri)
+				.Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
+				
 				var folders = this._dbContext.ReportFolders
 				.Where(f => f.ParentUri == uri)
 				.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
@@ -417,7 +422,9 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 			{
 				DeleteReportsInFolder(folder);
 
-				var subfolders = this._dbContext.ReportFolders.Where(f => f.ParentUri == folder.Uri).ToList();
+				var subfolders = this._dbContext.ReportFolders
+				.Where(f => f.ParentUri == folder.Uri).ToList();
+				
 				this._dbContext.ReportFolders.Remove(folder);
 
 				if (subfolders.Count == 0)

@@ -186,8 +186,8 @@ using System;
 					Name = createFolderModel.Name,
 					ParentUri = createFolderModel.ParentUri,
 					Uri = (string.IsNullOrEmpty(createFolderModel.ParentUri) 
-					? createFolderModel.ParentUri 
-					: createFolderModel.ParentUri + "\\") + createFolderModel.Name,
+						? createFolderModel.ParentUri 
+						: createFolderModel.ParentUri + "\\") + createFolderModel.Name,
 					CreatedOn = DateTime.Now,
 					ModifiedOn = DateTime.Now
 				};
@@ -201,8 +201,8 @@ using System;
 					Bytes = data,
 					ParentUri = saveResourceModel.ParentUri,
 					Uri = (string.IsNullOrEmpty(saveResourceModel.ParentUri) 
-					? saveResourceModel.ParentUri 
-					: saveResourceModel.ParentUri + "\\") + saveResourceModel.Name,
+						? saveResourceModel.ParentUri 
+						: saveResourceModel.ParentUri + "\\") + saveResourceModel.Name,
 					Size = data.Length,
 					CreatedOn = DateTime.Now,
 					ModifiedOn = DateTime.Now
@@ -266,7 +266,7 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 			public Task DeleteAsync(string uri)
 			{
 				var report = this._dbContext.Reports
-					.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
+						.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
 				this._dbContext.Reports.Remove(report);
 				this._dbContext.SaveChanges();
 				return Task.CompletedTask;
@@ -311,7 +311,9 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 			{
 				// it is not necessar to implement this one
 				var folder = this._dbContext.ReportFolders.FirstOrDefault(f => f.Uri == uri);
-				return folder == null ? throw new ResourceFolderNotFoundException() : Task.FromResult(folder.ToResourceFolderModel());
+				return folder == null 
+					? throw new ResourceFolderNotFoundException() 
+					: Task.FromResult(folder.ToResourceFolderModel());
 			}
 
 			public Task<IEnumerable<ResourceModelBase>> GetFolderContentsAsync(string uri)
@@ -423,7 +425,6 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 				DeleteReportsInFolder(folder);
 
 				var subfolders = this._dbContext.ReportFolders.Where(f => f.ParentUri == folder.Uri).ToList();
-				
 				this._dbContext.ReportFolders.Remove(folder);
 
 				if (subfolders.Count == 0)

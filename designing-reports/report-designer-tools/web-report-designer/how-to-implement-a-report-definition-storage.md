@@ -31,3 +31,7 @@ Then, you can set the new definition storage implementation in the `ReportDesign
 
 {{source=CodeSnippets\CS\API\Telerik\WebReportDesigner\ReportDesignerController.cs region=ReportDesignerServiceConfiguration}}
 
+
+## See Also
+
+* [Implementing EFCore MSSQL IDefinitionStorage]({%slug implement-database-definition-storage-efcore%})

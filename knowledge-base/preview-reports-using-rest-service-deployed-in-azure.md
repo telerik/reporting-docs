@@ -1,6 +1,6 @@
 ---
 title: Preview Reports in Desktop Viewers Using REST Service Deployed in Azure
-description: How to preview reports in desktop viewers using the Reporting REST Service deployed in Azure
+description: "Learn how to preview Telerik Reporting reports in desktop viewers using the Reporting REST Service deployed in Azure."
 type: how-to
 page_title: Use Report Viewers with REST Service on Azure
 slug: preview-reports-using-rest-service-deployed-in-azure.md

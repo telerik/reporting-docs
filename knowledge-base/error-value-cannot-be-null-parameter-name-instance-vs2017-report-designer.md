@@ -50,6 +50,7 @@ You can download MSI file to install Telerik Reporting as described in the [How 
 	`msiexec /i [installer_file_name].msi PRODUCTDIR="C:\Program Files (x86)\Microsoft Visual Studio\[version]\[edition]"`
 
 	_Example for VS 2019 Professional edition_:
+
 	`msiexec /i Telerik_Reporting_R1_2023_SP1_DEV.msi PRODUCTDIR="C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional"`
 
 * VS 2022
@@ -57,6 +58,7 @@ You can download MSI file to install Telerik Reporting as described in the [How 
 	`msiexec /i [installer_file_name].msi PRODUCTDIR="C:\Program Files\Microsoft Visual Studio\[version]\[edition]"`
 
 	_Example for VS 2022 Professional edition_:
+
 	`msiexec /i Telerik_Reporting_R1_2023_SP1_DEV.msi PRODUCTDIR="C:\Program Files\Microsoft Visual Studio\2022\Professional"`
 
 In the code above the parameters are as follows:
@@ -69,8 +71,8 @@ Once Telerik Reporting is installed with support for the specific Visual Studio,
 
 ## Notes
 
-The VS Report Designer is not fully functional in VS2017 for version of Telerik Reporting prior to [R1 2017 (11.0.17.118)](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r1-2017-(version-11-0-17-118)).
-
-The VS Report Designer is not fully functional in VS2019 for version of Telerik Reporting prior to [R2 2019 (13.1.19.514)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2019-13-1-19-514).
+* The VS Report Designer is not fully functional in VS2017 for version of Telerik Reporting prior to [R1 2017 (11.0.17.118)](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r1-2017-(version-11-0-17-118)).
+* The VS Report Designer is not fully functional in VS2019 for version of Telerik Reporting prior to [R2 2019 (13.1.19.514)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2019-13-1-19-514).
+* The VS Report Designer is not fully functional in VS2022 for version of Telerik Reporting prior to [R3 2021 SP1 (15.2.21.1110)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2021-sp1-15-2-21-1110).
 
 Therefore, our recommendation is to [upgrade]({%slug telerikreporting/upgrade/overview%}) the project to the newest version (check our [Release History](https://www.telerik.com/support/whats-new/reporting/release-history)) by running the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).

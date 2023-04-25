@@ -1,8 +1,8 @@
 ---
-title: Value cannot be null. Parameter name instance. when trying to open the Report Designer in Visual Studio 2017
-description: VS Report Designer cannot be opened in VS 2017
+title: Value cannot be null. Parameter name instance. when trying to open the Report Designer in Visual Studio 2017 or newer
+description: "Learn how to fix the error 'Value cannot be null. Parameter name instance.' in Visual Studio 2017 or newer when trying to open the VS Report Designer."
 type: troubleshooting
-page_title: Exception while opening report is VS 2017 Report Designer
+page_title: Cannot open report in Visual Studio Report Designer
 slug: error-value-cannot-be-null-parameter-name-instance-vs2017-report-designer
 position: 
 tags: 
@@ -11,6 +11,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -18,10 +19,9 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
 
-When attempting to bring up the Report Designer in  Visual Studio 2017, an error with message _'Value cannot be null. Parameter name: instance'_ is thrown. The stack trace of the error is:
+When attempting to bring up the Report Designer in  Visual Studio 2017 or later, an error with message `Value cannot be null. Parameter name: instance` is thrown. The stack trace of the error is:
 
 ````
 at System.ComponentModel.TypeDescriptor.AddAttributes(Object instance, Attribute[] attributes)
@@ -39,18 +39,38 @@ at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.D
 
 ## Solution
 
-[The error]({%slug report-cannot-be-built-and-opened-in-vs-report-designer%}) indicates that the project uses a version of _Telerik Reporting_ that is not registered in Visual Studio 2017\. This might be due to Telerik Reporting being installed before installation of Visual Studio 2017.
+[The error]({%slug report-cannot-be-built-and-opened-in-vs-report-designer%}) indicates that the project uses a version of __Telerik Reporting__ that is not registered in the corresonding Visual Studio. This might be due to Telerik Reporting being installed before installation of the Visual Studio.
 
-You should re-install Telerik Reporting with support for Visual Studio 2017.
+You should re-install Telerik Reporting with support for the particular Visual Studio version and edition.
 
 You can download MSI file to install Telerik Reporting as described in the [How to download Telerik Reporting installer](%slug telerikreporting/installation%}#using-the-msi-file). After downloading the installer, our recommendation is to run the MSI file per Visual Studio edition:
 
-`msiexec /i [installer_file_name].msi PRODUCTDIRVS2017ENTERPRISE="C:\Program Files (x86)\Microsoft Visual Studio\2017\[edition]"`
+* VS 2017 and VS 2019
 
-In the code above **[installer_file_name].msi** is the exact name of the installer, and should look like _Telerik_Reporting_R1_2018_SP2_DEV.msi_.
-The second parameter **[edition]** is the Visual Studio edition - _Enterprise_, _Professional_, or _Community_.
+	`msiexec /i [installer_file_name].msi PRODUCTDIR="C:\Program Files (x86)\Microsoft Visual Studio\[version]\[edition]"`
 
-Once Telerik Reporting is installed with support for VS2017, you can load the project in Visual Studio.
+	_Example for VS 2019 Professional edition_:
+	`msiexec /i Telerik_Reporting_R1_2023_SP1_DEV.msi PRODUCTDIR="C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional"`
 
-The VS Report Designer is not fully functional in VS2017 for version of Telerik Reporting prior to R1 2017\.
+* VS 2022
+
+	`msiexec /i [installer_file_name].msi PRODUCTDIR="C:\Program Files\Microsoft Visual Studio\[version]\[edition]"`
+
+	_Example for VS 2022 Professional edition_:
+	`msiexec /i Telerik_Reporting_R1_2023_SP1_DEV.msi PRODUCTDIR="C:\Program Files\Microsoft Visual Studio\2022\Professional"`
+
+In the code above the parameters are as follows:
+
+1. `[installer_file_name].msi` - the exact name of the installer, and should look like `Telerik_Reporting_R1_2023_SP1_DEV.msi`.
+1. `[version]` - the Visual Studio version - `2017`, `2019`, or `2022`.
+1. `[edition]` - the Visual Studio edition - `Enterprise`, `Professional`, or `Community`.
+
+Once Telerik Reporting is installed with support for the specific Visual Studio, you can load the project.
+
+## Notes
+
+The VS Report Designer is not fully functional in VS2017 for version of Telerik Reporting prior to [R1 2017 (11.0.17.118)](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r1-2017-(version-11-0-17-118)).
+
+The VS Report Designer is not fully functional in VS2019 for version of Telerik Reporting prior to [R2 2019 (13.1.19.514)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2019-13-1-19-514).
+
 Therefore, our recommendation is to [upgrade]({%slug telerikreporting/upgrade/overview%}) the project to the newest version (check our [Release History](https://www.telerik.com/support/whats-new/reporting/release-history)) by running the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).

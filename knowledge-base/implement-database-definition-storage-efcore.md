@@ -65,7 +65,6 @@ public class Report
 		public float Size { get; set; }
 
 		[Column("ParentUri")]
-		[Required]
 		public string ParentUri { get; set; }
 
 		[Column("Uri")]
@@ -125,8 +124,8 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
 			{
 				if (!optionsBuilder.IsConfigured)
 				{
-					optionsBuilder
-					.UseSqlServer(@"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;");
+					var connenctionString = @"Server=.\SQLEXPRESS;Database=DefinitionStorage;Trusted_Connection=True;TrustServerCertificate=True;";
+					optionsBuilder.UseSqlServer(connectionString);
 				}
 			}
 		}
@@ -186,8 +185,8 @@ using System;
 					Name = createFolderModel.Name,
 					ParentUri = createFolderModel.ParentUri,
 					Uri = (string.IsNullOrEmpty(createFolderModel.ParentUri) 
-					? createFolderModel.ParentUri 
-					: createFolderModel.ParentUri + "\\") + createFolderModel.Name,
+						? createFolderModel.ParentUri 
+						: createFolderModel.ParentUri + "\\") + createFolderModel.Name,
 					CreatedOn = DateTime.Now,
 					ModifiedOn = DateTime.Now
 				};
@@ -201,8 +200,8 @@ using System;
 					Bytes = data,
 					ParentUri = saveResourceModel.ParentUri,
 					Uri = (string.IsNullOrEmpty(saveResourceModel.ParentUri) 
-					? saveResourceModel.ParentUri 
-					: saveResourceModel.ParentUri + "\\") + saveResourceModel.Name,
+						? saveResourceModel.ParentUri 
+						: saveResourceModel.ParentUri + "\\") + saveResourceModel.Name,
 					Size = data.Length,
 					CreatedOn = DateTime.Now,
 					ModifiedOn = DateTime.Now
@@ -249,7 +248,8 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 
 				if (!string.IsNullOrEmpty(model.ParentUri))
 				{
-					var parentFolder = this._dbContext.ReportFolders.FirstOrDefault(f => f.Uri == model.ParentUri);
+					var parentFolder = this._dbContext.ReportFolders
+					.FirstOrDefault(f => f.Uri == model.ParentUri);
 
 					if (parentFolder != null)
 					{
@@ -264,7 +264,8 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 
 			public Task DeleteAsync(string uri)
 			{
-				var report = this._dbContext.Reports.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
+				var report = this._dbContext.Reports
+						.FirstOrDefault(r => r.Uri == this.PrepareResourceUri(uri)) ?? throw new ReportNotFoundException();
 				this._dbContext.Reports.Remove(report);
 				this._dbContext.SaveChanges();
 				return Task.CompletedTask;
@@ -309,17 +310,22 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 			{
 				// it is not necessar to implement this one
 				var folder = this._dbContext.ReportFolders.FirstOrDefault(f => f.Uri == uri);
-				return folder == null ? throw new ResourceFolderNotFoundException() : Task.FromResult(folder.ToResourceFolderModel());
+				return folder == null 
+					? throw new ResourceFolderNotFoundException() 
+					: Task.FromResult(folder.ToResourceFolderModel());
 			}
 
 			public Task<IEnumerable<ResourceModelBase>> GetFolderContentsAsync(string uri)
 			{
 				uri = (uri ?? string.Empty);
 
-				var reps = this._dbContext.Reports.Where(r => r.ParentUri == uri).Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
+				var reps = this._dbContext.Reports
+					.Where(r => r.ParentUri == uri)
+					.Select(r => r.ToResourceFileModel()).AsEnumerable<ResourceModelBase>();
+				
 				var folders = this._dbContext.ReportFolders
-				.Where(f => f.ParentUri == uri)
-				.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
+					.Where(f => f.ParentUri == uri)
+					.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
 
 				var result = folders.Union(reps);
 		
@@ -470,6 +476,41 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 ````
 
 
+1. In order to be able to preview the reports stored in the database, the [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) interface also has to be implemented. Since we already have the `DbContext`, that will be pretty straightforward:
+
+	````CSharp
+public class CustomReportSourceResolver : IReportSourceResolver
+	{
+
+		private SqlDefinitionStorageContext _dbContext { get; }
+		public CustomReportSourceResolver(SqlDefinitionStorageContext context) {
+			this._dbContext = context;
+		}
+
+		public ReportSource Resolve(string uri, OperationOrigin operationOrigin, IDictionary<string, object> currentParameterValues)
+		{
+			var reportPackager = new ReportPackager();
+			var report = this._dbContext.Reports.FirstOrDefault(r => r.Uri == uri.Replace("/", "\\"));
+
+			if (report == null)
+			{
+				throw new FileNotFoundException();
+			}
+
+			MemoryStream stream = new(report.Bytes);
+			Report report1 = (Report)reportPackager.UnpackageDocument(stream);
+
+			var instanceReportSource = new InstanceReportSource
+			{
+				ReportDocument = report1
+			};
+
+			return instanceReportSource;
+		}
+	}
+````
+
+
 1. Lastly, the [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration) should be set to use the `CustomDefinitionStorage` class implemented above:
 
 	````CSharp
@@ -482,8 +523,23 @@ var builder = WebApplication.CreateBuilder(args);
 
 	builder.Services.AddDbContext<SqlDefinitionStorageContext>();
 	builder.Services.AddScoped<IDefinitionStorage, CustomDefinitionStorage>();
+	builder.Services.AddScoped<IReportSourceResolver, CustomReportSourceResolver>();
 
 	var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "..", "..", "..", "..", "Report Designer", "Examples");
+	
+	// Configure dependencies for ReportsController.
+	builder.Services.TryAddScoped<IReportServiceConfiguration>(sp =>
+		new ReportServiceConfiguration
+		{
+			// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
+			ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
+	
+			// In case the ReportingEngineConfiguration needs to be loaded from a specific configuration file, use the approach below:
+			//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
+			HostAppId = "SqlDefinitionStorageExample",
+			Storage = new FileStorage(),
+			ReportSourceResolver = sp.GetRequiredService<IReportSourceResolver>(),
+		});
 
 	// Configure dependencies for ReportDesignerController.
 	builder.Services.TryAddScoped<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
@@ -495,9 +551,74 @@ var builder = WebApplication.CreateBuilder(args);
 	});
 
 	var app = builder.Build();
+	
+	using (var serviceScope = app.Services.CreateScope())
+	{
+		serviceScope.ServiceProvider
+			.GetService<SqlDefinitionStorageContext>()
+			.Database
+			.EnsureCreated();
+	}
 ````
 
+
+## Notes
+
+Since there will be no data in the database, initially, the [ReportNotFoundException](/api/telerik.webreportdesigner.services.reportnotfoundexception) will be thrown a couple of times, you can safely `Continue` until you see the Web Report Designer loaded with no report. At this point, you can now create a new report from the main menu.
+
+One way to avoid this would be to, manually, insert a sample report when the application is started if the database table for the reports is empty. For this, the following extension class `ReportsInitializer` can be created:
+
+````CSharp
+public static class ReportsInitializer
+	{
+		public static WebApplication Seed(this WebApplication app)
+		{
+			using var scope = app.Services.CreateScope();
+			var context =  scope.ServiceProvider.GetRequiredService<SqlDefinitionStorageContext>();
+
+			try {
+
+				if (!context.Reports.Any())
+				{
+						var saveResourceModel = new SaveResourceModel()
+						{
+							Name = "SampleReport.trdp",
+							ParentUri = string.Empty
+						};
+
+						var reportBytes = System.IO.File.ReadAllBytes(pathToSampleReport);
+						var entity = saveResourceModel.ToDbReportModel(reportBytes);
+
+						context.Reports.Add(entity);
+						context.SaveChanges();
+				}
+
+				return app;
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+		}
+	}
+````
+
+
+The operation can be triggered in the initialization of the application, for example, in `Program.cs`:
+
+````CSharp
+// Add initial data to database
+	app.Seed();
+
+	app.Run();
+````
+
+
+## Sample Project
+
+* [SqlDefinitionStorageExample](https://github.com/telerik/reporting-samples/tree/master/SqlDefinitionStorageExample)
 
 ## See Also
 
 * [Using Custom Report Definition Storage]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage%})
+* [Implementing Custom ReportSource and ReportDocument Resolvers]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%})

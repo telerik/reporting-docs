@@ -46,7 +46,7 @@ It is necessary to extract the `<div>` place holder of the designer outside the 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://reporting.cdn.telerik.com/16.2.22.1109/js/webReportDesigner.kendo.min.js"></script>
 	<script src="http://localhost:59655/api/reportdesigner/resources/js/telerikReportViewer"></script>
-	<script src="http://localhost:59655/api/reportdesigner/designerresources/js/webReportDesigner-6.2.22.1109.min.js/"></script>
+	<script src="http://localhost:59655/api/reportdesigner/designerresources/js/webReportDesigner-16.2.22.1109.min.js/"></script>
 	
 	<script type="text/javascript">
 		$(document).ready(function () {

@@ -476,7 +476,7 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 ````
 
 
-1. In order to be able to preview the reports stored in the database, the [IReportSourceResolver]() interface also has to be implemented. Since we already have the `DbContext`, that will be pretty straightforward:
+1. In order to be able to preview the reports stored in the database, the [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) interface also has to be implemented. Since we already have the `DbContext`, that will be pretty straightforward:
 
 	````CSharp
 public class CustomReportSourceResolver : IReportSourceResolver

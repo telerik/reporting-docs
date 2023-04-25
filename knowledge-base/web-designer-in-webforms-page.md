@@ -28,7 +28,7 @@ res_type: kb
 
 ## Description
 
-The initial page load works fine and it connects to the Reporting REST API successfully. However some page actions within the report designer appear to refresh the page.
+The initial page load works fine and it connects to the Reporting REST API successfully. However, some page actions within the report designer appear to refresh the page.
 
 For example, clicking on the menu and selecting _New Report_ works fine and brings up the "Create a Report" popup window. However, clicking the Save/Cancel buttons on that popup causes the page to refresh which then appears to restart the report designer.
 

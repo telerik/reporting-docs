@@ -76,3 +76,4 @@ If the export to Microsoft Office formats fails in Azure environment, set the **
 * [Rendering Extensions]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})
 * [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
 * [Unable to Print Reports from Azure Environment]({%slug unable-to-print-reports-from-azure-environment%})
+* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})

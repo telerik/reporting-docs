@@ -63,3 +63,4 @@ Please consider that the default resolution of printed image is *96 DPI*. If the
 ## See Also
 
 * [Preview Reports in Desktop Viewers Using REST Service Deployed in Azure]({%slug preview-reports-using-rest-service-deployed-in-azure.md%})
+* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})

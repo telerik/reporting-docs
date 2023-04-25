@@ -43,7 +43,7 @@ The reason for the error is that Windows Azure Web Apps restricts application f
 1. Use Azure Web Role to host the application or the module handling the report processing and rendering e.g., switch to Azure Cloud Service or other plan.
 1. Use Azure Web Apps - Basic and Standard modes only. As of [July, 2014 Microsoft released an update](https://social.msdn.microsoft.com/forums/azure/en-US/d14bc4fa-256e-4f8f-9682-432ab556f74d/report-viewer-control-fix-for-export-to-pdf-available?forum=windowsazurewebsitespreview) allowing applications hosted in Azure Web Apps to generate PDF and Excel files. If the reports contain Barcode, Map, Graph item or other rendered as a Metafile(EMF), you will need to turn of the usage of Metafile and use Bitmap.
 
-For the purpose:
+	For the purpose:
 
 	* Declare [Telerik.Reporting Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%})
 	* Add the setting for the [DOCX]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/word-device-information-settings%}), [PPTX]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/powerpoint-device-information-settings%}), [XLSX]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2007-device-information-settings%}), and [RTF]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/rtf-device-information-settings%}) rendering extensions:

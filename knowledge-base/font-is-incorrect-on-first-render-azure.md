@@ -38,9 +38,11 @@ This turns out to also be tricky because the `wwwroot` folder gets [duplicated i
 
 ## Steps to Reproduce
 
-Host an .NET Core web application project on Azure, then use it to render a report that display text with custom font.
+Host a .NET Core web application project on Azure, then use it to render a report that display text with custom font.
 
 ## Solution
+
+>note __Known issue with Azure App Services:__ The required .NET API for handling private fonts is making GDI calls that are blocked in Azure App Services. Our recommendation is to use Cloud Service plan. More details can be found in [Custom Fonts not working on Azure App Service](https://github.com/wkhtmltopdf/wkhtmltopdf/issues/4398).
 
 - Ensure that the fonts are present in the `wwwroot` folder of the project(which is the root folder of the app when it is run in Azure App service) 
 
@@ -69,4 +71,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 * [Azure Web App wwwroot duplicates on publish](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish)
 * [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%})
+* [privateFonts Element Overview]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})
+* [First Few Report Items Have an Incorrect Font]({%slug inconsistent-font-of-the-first-few-report-items%})
+* [Custom Fonts not working on Azure App Service](https://github.com/wkhtmltopdf/wkhtmltopdf/issues/4398)
 * [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})

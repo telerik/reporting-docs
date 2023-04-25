@@ -1,6 +1,6 @@
 ---
-title: The report item is rendered with an incorrect font on the first render in Azure
-description: When viewing a report that is rendered in Azure environment the font is replaced on the first instance
+title: The Report Item is Rendered with an Incorrect Font on the First Render in Azure
+description: When viewing a report that is rendered in Azure environment the font is replaced with a default one on the first instance
 type: troubleshooting
 page_title: The first instance of a report item is with different font than the rest
 slug: font-is-incorrect-on-first-render-azure
@@ -11,6 +11,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -31,9 +32,9 @@ When viewing a report that is rendered in Azure environment, the font is replace
 
 Our reporting engine requires the fonts to either be installed in the hosting environment or to be referenced through the use of the [privateFonts element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}).
 
-Installing a font on an Azure app service can sometimes be not an easy task so people end up using the **privateFonts** variant.
+Installing a font on an Azure app service can sometimes be not an easy task so people end up using the `privateFonts` variant.
 
-This turns out to also be tricky because the **wwwroot** folder gets [duplicated in Azure Web apps](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish) and if the font is in there, that could mess up the path where the reporting engine looks for to find the font.
+This turns out to also be tricky because the `wwwroot` folder gets [duplicated in Azure Web apps](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish) and if the font is in there, that could mess up the path where the reporting engine looks for to find the font.
 
 ## Steps to Reproduce
 
@@ -66,6 +67,6 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 
 ## See Also
 
-- [Azure Web App wwwroot duplicates on publish](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish)
-
-- [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%})
+* [Azure Web App wwwroot duplicates on publish](https://stackoverflow.com/questions/50747590/azure-web-app-wwwroot-duplicates-on-publish)
+* [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%})
+* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})

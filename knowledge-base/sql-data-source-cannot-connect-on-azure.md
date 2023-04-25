@@ -112,3 +112,4 @@ The issue occurs as the Azure portal connectionstring overrides the `web.config`
 * [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-7.0)
 * [How to pass configuration settings to ReportProcessor in ASP.NET Core application that does not use REST Service]({%slug pass-configuration-to-report-processor-in-asp-dot-net-core-without-rest-service%})
 * [Registering SqlDataSource Data Providers Without Installing Driver]({%slug how-to-register-sqldatasource-data-providers-without-driver-installation%})
+* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})

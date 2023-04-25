@@ -23,5 +23,5 @@ table th:nth-of-type(2) {
 
 | Function | Description |
 | ------ | ------ |
-| `Fields(fieldName)` |Returns the value of the field with the specified name in the current dat scope. Use this function when you want to dynamically change the referred field. For example you may define string parameter _SortField_ and use<br/> `=Fields(Parameters.SortField)` <br/>expression as Sorting of a report.|
-| `Parameters(parameterName)` |Returns the report parameter with the specified name|
+| `Fields(name)` |Returns the value of the field with the specified name in the current dat scope. Use this function when you want to dynamically change the referred field. For example you may define string parameter _SortField_ and use<br/> `=Fields(Parameters.SortField)` <br/>expression as Sorting of a report.|
+| `Parameters(name)` |Returns the report parameter with the specified name|

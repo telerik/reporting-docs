@@ -85,3 +85,4 @@ Keep in mind that Windows Azure Web Apps (in **Free** and **Shared** modes) rest
 ## See Also
 
 * [OutOfMemoryException on exporting or printing Telerik report from Azure Web Apps]({%slug outofmemoryexception-on-exporting-or-printing-telerik-report-from-azure-webapps%})
+* [Problems When Rendering Teleik Reports in Azure]({%slug azure-reporting-problems%})

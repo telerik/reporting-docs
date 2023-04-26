@@ -20,7 +20,7 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>.Net Framework</td>
-			<td>Version 4.8</td>
+			<td>Version 4.5.1+</td>
 		</tr>
 	</tbody>
 </table>
@@ -30,7 +30,7 @@ res_type: kb
 
 The initial page load works fine and it connects to the Reporting REST API successfully. However, some page actions within the report designer appear to refresh the page.
 
-For example, clicking on the menu and selecting _New Report_ works fine and brings up the "Create a Report" popup window. However, clicking the Save/Cancel buttons on that popup causes the page to refresh which then appears to restart the report designer.
+For example, clicking on the menu and selecting _New Report_ works fine and brings up the _Create a Report_ popup window. However, clicking the _Save_/_Cancel_ buttons on that popup causes the page to refresh which then appears to restart the report designer.
 
 Another example is when setting the designer's option `skipOnboarding: false`. The buttons on the onboarding popup cause the page refresh and the report designer restarts, only to reopen the onboarding popup again (creating a loop you can't progress past).
 
@@ -69,7 +69,7 @@ It is necessary to extract the `<div>` place holder of the designer outside the 
 </body>
 ````
 
-The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is a pure jQuery widget and needs to live outside the ASPX Form in order to behave as expected, without making post-back requests.
+The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is a pure HTML5/CSS3/jQuery widget and we recommend to host it outside the ASPX Form in order to behave as expected, without making post-back requests.
 
 ## See Also
 

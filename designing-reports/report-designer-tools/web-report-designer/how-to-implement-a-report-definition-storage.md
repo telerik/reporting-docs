@@ -27,7 +27,9 @@ The default implementation of the storage is the [`FileDefinitionStorage`](/api/
 
 {{source=CodeSnippets\CS\API\Telerik\WebReportDesigner\ReportDesignerController.cs region=ReportDesignerServiceConfiguration}}
 
+A full implementation of a custom `IDefinitionStorage` using MSSQL database and Entity Framework Core for .NET 7 is available in our GitHub Reporting Samples repository [SqlDefinitionStorageExample](https://github.com/telerik/reporting-samples/tree/master/SqlDefinitionStorageExample). More details about the specific implementation may be found also in the KB article [Implementing EFCore MSSQL IDefinitionStorage]({%slug implement-database-definition-storage-efcore%})
 
 ## See Also
 
 * [Implementing EFCore MSSQL IDefinitionStorage]({%slug implement-database-definition-storage-efcore%})
+* Sample Project [SqlDefinitionStorageExample](https://github.com/telerik/reporting-samples/tree/master/SqlDefinitionStorageExample)

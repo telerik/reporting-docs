@@ -260,7 +260,7 @@ SampleCodeForTheMainMethod()
 ````
 
 
-1.(_Optional_)Add Table Footer with Totals.
+1. (_Optional_)Add Table Footer with Totals.
 
 	If you need to display a row with data aggregates, for example, totals or averages of the numerical fields, you may do it with the below code that adds a new footer to the table. Below are only the changes you need to apply to the method `FormatTableBasedOnColumnNames`. Note that there is a new boolean argument `addTotalRow` added indicating whether you want or not to add such a footer. The footer would be added only when you pass `addTotalRow = true`:
 

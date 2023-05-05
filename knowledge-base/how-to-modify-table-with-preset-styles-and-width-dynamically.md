@@ -302,6 +302,8 @@ void FormatTableBasedOnColumnNames(Table table, IList<string> columnNames, bool 
 
 The exported report definition should contain the desired Table with the necessary columns and the footer row, if requested.
 
+## Additional Resources
+
 You may find a runnable .NET 6 Console Application implementing the described functionality in our GitHub Reporting Samples - [DynamicTablePresetStylesDemo](https://github.com/telerik/reporting-samples/tree/master/DynamicTablePresetStylesExample).
 
 The demo exports the report definition as `NewReport.trdx` and a PDF report document as `NewReport.pdf` and saves them in the `\bin\Debug\net6.0\Reports\` subfolder of the project.

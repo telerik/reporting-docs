@@ -1,6 +1,6 @@
 ---
 title: Modify Table with Preset Styles and Width Dynamically
-description: "Learn how to change table columns count without changing table width and styles in Telerik Reporting with code."
+description: "Learn how to change table columns count without changing table width and styles in Telerik Reporting with code. Add Totals in a Table Footer as an option."
 type: how-to
 page_title: Preserve table styles and width after modifying its data source
 slug: how-to-modify-table-with-preset-styles-and-width-dynamically
@@ -33,128 +33,128 @@ Step by step instructions follow:
 
 	````XML
 <?xml version="1.0" encoding="utf-8"?>
-<Report Width="4.39999993642171in" Name="BlankReport" xmlns="http://schemas.telerik.com/reporting/2017/3.0">
-	<Items>
-		<PageHeaderSection Height="0.5in" Name="pageHeaderSection1">
-			<Style BackgroundColor="128, 255, 128" />
-			<Items>
-				<TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.150000015894572in" Value="PAGE HEADER" Name="textBox4">
-					<Style TextAlign="Center" VerticalAlign="Middle" />
-				</TextBox>
-			</Items>
-		</PageHeaderSection>
-		<DetailSection Height="1.19999995827675in" Name="detail">
-			<Style BackgroundColor="128, 255, 255" />
-			<Items>
-				<Table Width="4.39992141723633in" Height="0.400000005960464in" Left="0.00003941853841146in" Top="0.399999936421712in" Name="table1" StyleName="Civic.TableNormal">
-					<Body>
-						<Cells>
-							<TableCell RowIndex="0" ColumnIndex="0" RowSpan="1" ColumnSpan="1">
+	<Report Width="4.39999993642171in" Name="BlankReport" xmlns="http://schemas.telerik.com/reporting/2017/3.0">
+		<Items>
+			<PageHeaderSection Height="0.5in" Name="pageHeaderSection1">
+				<Style BackgroundColor="128, 255, 128" />
+				<Items>
+					<TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.150000015894572in" Value="PAGE HEADER" Name="textBox4">
+						<Style TextAlign="Center" VerticalAlign="Middle" />
+					</TextBox>
+				</Items>
+			</PageHeaderSection>
+			<DetailSection Height="1.19999995827675in" Name="detail">
+				<Style BackgroundColor="128, 255, 255" />
+				<Items>
+					<Table Width="4.39992141723633in" Height="0.400000005960464in" Left="0.00003941853841146in" Top="0.399999936421712in" Name="table1" StyleName="Civic.TableNormal">
+						<Body>
+							<Cells>
+								<TableCell RowIndex="0" ColumnIndex="0" RowSpan="1" ColumnSpan="1">
+									<ReportItem>
+										<TextBox Width="4.39992141723633in" Height="0.200000002980232in" Left="0in" Top="0in" Name="textBox3" StyleName="Civic.TableBody" />
+									</ReportItem>
+								</TableCell>
+							</Cells>
+							<Columns>
+								<Column Width="4.39992141723633in" />
+							</Columns>
+							<Rows>
+								<Row Height="0.200000002980232in" />
+							</Rows>
+						</Body>
+						<Corner />
+						<RowGroups>
+							<TableGroup>
+								<Groupings>
+									<Grouping />
+								</Groupings>
+							</TableGroup>
+						</RowGroups>
+						<ColumnGroups>
+							<TableGroup>
 								<ReportItem>
-									<TextBox Width="4.39992141723633in" Height="0.200000002980232in" Left="0in" Top="0in" Name="textBox3" StyleName="Civic.TableBody" />
+									<TextBox Width="4.39992141723633in" Height="0.200000002980232in" Left="0in" Top="0in" Name="textBox1" StyleName="Civic.TableHeader" />
 								</ReportItem>
-							</TableCell>
-						</Cells>
-						<Columns>
-							<Column Width="4.39992141723633in" />
-						</Columns>
-						<Rows>
-							<Row Height="0.200000002980232in" />
-						</Rows>
-					</Body>
-					<Corner />
-					<RowGroups>
-						<TableGroup>
-							<Groupings>
-								<Grouping />
-							</Groupings>
-						</TableGroup>
-					</RowGroups>
-					<ColumnGroups>
-						<TableGroup>
-							<ReportItem>
-								<TextBox Width="4.39992141723633in" Height="0.200000002980232in" Left="0in" Top="0in" Name="textBox1" StyleName="Civic.TableHeader" />
-							</ReportItem>
-						</TableGroup>
-					</ColumnGroups>
-				</Table>
-				<TextBox Width="3.50000063578288in" Height="0.199999968210856in" Left="0.449999650319417in" Top="0.899999936421712in" Value="OTHER DETAIL SECTION CONTENT" Name="textBox2">
-					<Style BackgroundColor="Yellow" TextAlign="Center" VerticalAlign="Middle" />
-				</TextBox>
-				<TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.10003924369812in" Value="OTHER DETAIL SECTION CONTENT" Name="textBox6">
-					<Style BackgroundColor="Yellow" TextAlign="Center" VerticalAlign="Middle" />
-				</TextBox>
-			</Items>
-		</DetailSection>
-		<PageFooterSection Height="1in" Name="pageFooterSection1">
-			<Style BackgroundColor="Lime" />
-			<Items>
-				<TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.100000063578288in" Value="PAGE FOOTER" Name="textBox5">
-					<Style TextAlign="Center" VerticalAlign="Middle" />
-				</TextBox>
-			</Items>
-		</PageFooterSection>
-	</Items>
-	<PageSettings PaperKind="Letter">
-		<Margins>
-			<MarginsU Left="1in" Right="1in" Top="1in" Bottom="1in" />
-		</Margins>
-	</PageSettings>
-	<StyleSheet>
-		<StyleRule>
-			<Style>
-				<Padding Left="2pt" Right="2pt" />
-			</Style>
-			<Selectors>
-				<TypeSelector Type="TextItemBase" />
-				<TypeSelector Type="HtmlTextBox" />
-			</Selectors>
-		</StyleRule>
-		<StyleRule>
-			<Style Color="Black">
-				<Font Name="Georgia" Size="9pt" />
-				<BorderStyle Default="Solid" />
-				<BorderColor Default="Black" />
-				<BorderWidth Default="1px" />
-			</Style>
-			<Selectors>
-				<StyleSelector Type="Table" StyleName="Civic.TableNormal" />
-			</Selectors>
-		</StyleRule>
-		<StyleRule>
-			<Style BackgroundColor="White">
-				<Font Name="Georgia" Size="9pt" />
-				<BorderStyle Default="Solid" />
-				<BorderColor Default="Black" />
-				<BorderWidth Default="1px" />
-			</Style>
-			<Selectors>
-				<DescendantSelector>
-					<Selectors>
-						<TypeSelector Type="Table" />
-						<StyleSelector Type="ReportItem" StyleName="Civic.TableBody" />
-					</Selectors>
-				</DescendantSelector>
-			</Selectors>
-		</StyleRule>
-		<StyleRule>
-			<Style BackgroundColor="LightBlue" Color="228, 238, 243" VerticalAlign="Middle">
-				<Font Name="Georgia" Size="10pt" />
-				<BorderStyle Default="Solid" />
-				<BorderColor Default="Black" />
-				<BorderWidth Default="1px" />
-			</Style>
-			<Selectors>
-				<DescendantSelector>
-					<Selectors>
-						<TypeSelector Type="Table" />
-						<StyleSelector Type="ReportItem" StyleName="Civic.TableHeader" />
-					</Selectors>
-				</DescendantSelector>
-			</Selectors>
-		</StyleRule>
-	</StyleSheet>
-</Report>
+							</TableGroup>
+						</ColumnGroups>
+					</Table>
+					<TextBox Width="3.50000063578288in" Height="0.199999968210856in" Left="0.449999650319417in" Top="0.899999936421712in" Value="OTHER DETAIL SECTION CONTENT" Name="textBox2">
+						<Style BackgroundColor="Yellow" TextAlign="Center" VerticalAlign="Middle" />
+					</TextBox>
+					<TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.10003924369812in" Value="OTHER DETAIL SECTION CONTENT" Name="textBox6">
+						<Style BackgroundColor="Yellow" TextAlign="Center" VerticalAlign="Middle" />
+					</TextBox>
+				</Items>
+			</DetailSection>
+			<PageFooterSection Height="1in" Name="pageFooterSection1">
+				<Style BackgroundColor="Lime" />
+				<Items>
+					<TextBox Width="3.50000071525574in" Height="0.19999997317791in" Left="0.449999650319417in" Top="0.100000063578288in" Value="PAGE FOOTER" Name="textBox5">
+						<Style TextAlign="Center" VerticalAlign="Middle" />
+					</TextBox>
+				</Items>
+			</PageFooterSection>
+		</Items>
+		<PageSettings PaperKind="Letter">
+			<Margins>
+				<MarginsU Left="1in" Right="1in" Top="1in" Bottom="1in" />
+			</Margins>
+		</PageSettings>
+		<StyleSheet>
+			<StyleRule>
+				<Style>
+					<Padding Left="2pt" Right="2pt" />
+				</Style>
+				<Selectors>
+					<TypeSelector Type="TextItemBase" />
+					<TypeSelector Type="HtmlTextBox" />
+				</Selectors>
+			</StyleRule>
+			<StyleRule>
+				<Style Color="Black">
+					<Font Name="Georgia" Size="9pt" />
+					<BorderStyle Default="Solid" />
+					<BorderColor Default="Black" />
+					<BorderWidth Default="1px" />
+				</Style>
+				<Selectors>
+					<StyleSelector Type="Table" StyleName="Civic.TableNormal" />
+				</Selectors>
+			</StyleRule>
+			<StyleRule>
+				<Style BackgroundColor="White">
+					<Font Name="Georgia" Size="9pt" />
+					<BorderStyle Default="Solid" />
+					<BorderColor Default="Black" />
+					<BorderWidth Default="1px" />
+				</Style>
+				<Selectors>
+					<DescendantSelector>
+						<Selectors>
+							<TypeSelector Type="Table" />
+							<StyleSelector Type="ReportItem" StyleName="Civic.TableBody" />
+						</Selectors>
+					</DescendantSelector>
+				</Selectors>
+			</StyleRule>
+			<StyleRule>
+				<Style BackgroundColor="LightBlue" Color="228, 238, 243" VerticalAlign="Middle">
+					<Font Name="Georgia" Size="10pt" />
+					<BorderStyle Default="Solid" />
+					<BorderColor Default="Black" />
+					<BorderWidth Default="1px" />
+				</Style>
+				<Selectors>
+					<DescendantSelector>
+						<Selectors>
+							<TypeSelector Type="Table" />
+							<StyleSelector Type="ReportItem" StyleName="Civic.TableHeader" />
+						</Selectors>
+					</DescendantSelector>
+				</Selectors>
+			</StyleRule>
+		</StyleSheet>
+	</Report>
 ````
 
 
@@ -260,9 +260,9 @@ SampleCodeForTheMainMethod()
 ````
 
 
-1.(Optional)Add Table Footer with Totals.
+1.(_Optional_)Add Table Footer with Totals.
 
-	If you need to display a row with some aggregates, for example, sums or averages of the numerical fields, you may add such a table row with code. Below are the changes you need to apply to the method `FormatTableBasedOnColumnNames` so that you can have an additional footer in the table. Note that there is a new boolean argument added indicating whether you want or not to add such a footer:
+	If you need to display a row with data aggregates, for example, totals or averages of the numerical fields, you may do it with the below code that adds a new footer to the table. Below are only the changes you need to apply to the method `FormatTableBasedOnColumnNames`. Note that there is a new boolean argument `addTotalRow` added indicating whether you want or not to add such a footer. The footer would be added only when you pass `addTotalRow = true`:
 
 	````CSharp
 void FormatTableBasedOnColumnNames(Table table, IList<string> columnNames, bool addTotalRow)
@@ -299,9 +299,16 @@ void FormatTableBasedOnColumnNames(Table table, IList<string> columnNames, bool 
 	}
 ````
 
-	The code above contains only the new snippets that should be added to the method `FormatTableBasedOnColumnNames` listed above.
 
-	You may find a runnable .NET 6 Console Application implementing the described functionality in our GitHub Reporting Samples - [DynamicTablePresetStylesDemo]().
+The exported report definition should contain the desired Table with the necessary columns and the footer row, if requested.
 
-The exported report definition should contain the desired Table with the necessary columns. The demo also exports a PDF report document and saves it in the `\bin\Debug\net6.0\Reports\` subfolder of the project in the file `NewReport.pdf`.
+You may find a runnable .NET 6 Console Application implementing the described functionality in our GitHub Reporting Samples - [DynamicTablePresetStylesDemo](https://github.com/telerik/reporting-samples/tree/master/DynamicTablePresetStylesExample).
 
+The demo exports the report definition as `NewReport.trdx` and a PDF report document as `NewReport.pdf` and saves them in the `\bin\Debug\net6.0\Reports\` subfolder of the project.
+
+## See also
+
+* [How to Create a Dynamic Table, Crosstab, or List Item]({%slug how-to-create-a-dynamic-table-crosstab-list-item%})
+* [How to add multiple tables dynamically based on the data source]({%slug how-to-add-multiple-tables-dynamically-based-on-data-source%})
+* [Basic Concepts when Working with Tables]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/basic-concepts%})
+* [(Example) DynamicTablePresetStylesDemo](https://github.com/telerik/reporting-samples/tree/master/DynamicTablePresetStylesExample)

@@ -41,8 +41,8 @@ In such scenarios you may continue troubleshooting on the hardware side rather t
 
 ## Solution
 
-You need to select from the Printer Settings a PaperKind with Paper Height that is sufficient to accommodate the printed single-page document.
+Select, from the Printer Settings, a [`PaperKind`](/api/telerik.reporting.drawing.pagesettings#Telerik_Reporting_Drawing_PageSettings_PaperKind) with Paper Height that is sufficient to accommodate the printed single-page document.
 
-For example, the physical label printer that we test on is "Epson-TM-T20II-M267D". It supports few 'Roll Paper' paper kinds with a length of 3276mm. When we select such paper kind, usually, the long reports with `ContinuousPaper = True` are printed as expected. However, selecting a shorter paper when printing the same report may cut it when report's height is more than the printer paper size.
+For example, the physical label printer that we tested on is "Epson-TM-T20II-M267D". It supports few 'Roll Paper' paper kinds with a length of **3276mm**. When we select such a paper kind, usually, the long reports with `ContinuousPaper = True` are printed as expected. However, selecting a shorter paper when printing the same report may cut it when report's height is more than the printer paper size.
 
-If the printer doesn't support long paper, you need to set report's `ContinuousPaper` to `False` and print the document paginated, with `PaperKind` and `PaperSize` that are supported by the specific printer.
+If the printer doesn't support long paper, you need to set report's `ContinuousPaper` to `False` and print the document paginated, with [`PaperKind`](/api/telerik.reporting.drawing.pagesettings#Telerik_Reporting_Drawing_PageSettings_PaperKind) and [`PaperSize`](/api/telerik.reporting.drawing.pagesettings#Telerik_Reporting_Drawing_PageSettings_PaperSize) that are supported by the specific printer.

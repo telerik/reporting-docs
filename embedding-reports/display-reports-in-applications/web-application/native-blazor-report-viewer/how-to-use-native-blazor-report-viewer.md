@@ -32,6 +32,8 @@ The following article will guide you on how to use the new Native Blazor Report 
 app.UseStaticFiles();
 ````
 
+	>note When it comes to Blazor WebAssembly applications, the above step should be implemented in the project used as the *Server* where the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) is located. With the [ASP.NET Core Hosted](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-7.0&pivots=windows) template, that would be the `Blazor.Server` project.
+
 
 1. Add JavaScript and CSS dependencies to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly):
 

@@ -1,5 +1,5 @@
 ---
-title: How to Use Native Blazor Report Viewer
+title: Using in .NET
 page_title: Integrating Native Blazor Report Viewer in Blazor Server or WebAssembly Application
 description: "Learn how to configure and integrate the Native Blazor Report Viewer built on top of the Telerik UI for Blazor widgets in your Blazor Server or WebAssembly Application."
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer
@@ -15,23 +15,21 @@ The following article will guide you on how to use the new Native Blazor Report 
 ## Prerequisites
 
 * [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/)
-
 * Existing ASP.NET Core 3.1 and higher Blazor Server App or ASP.NET Core 3.1 and higher hosted Blazor WebAssembly App
-
-* The report viewer consumes reports generated and served from a running Reports Web Service. Such can be referenced from another application, or it can be hosted locally in a Blazor Server application.
-
+* The report viewer consumes reports generated and served from a running Reports Web Service. Such can be referenced from another application, or it can be hosted locally in a Blazor Server application
 * Blazor WebAssembly applications are executed directly on the browser UI thread. In other words, Blazor WebAssembly are stictly client-side applications and the Reports Web Service cannot be hosted in the same project. When using Blazor WebAssembly, the Reports Web Service has to be hosted in a separate project. For more information, see [Blazor WebAssembly vs. Server](https://www.telerik.com/faqs/blazor-ui/what-is-the-difference-between-blazor-webassembly-vs-server). To host the Reporting Service locally, please follow the approach from either the [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}) or the [Hosting the Reports Service in ASP.NET Core in .NET 6 and .NET 7 with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}) articles.
 
 ## Adding the Native Blazor component
 
 1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ (or __Telerik.ReportViewer.BlazorNative.Trial__) package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
-1. Make sure app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET 6+ with Minimal API template is used) file can serve static files:
+1. Make sure app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET 6+ with Top Level Statements is used) file can serve static files:
 
 	````C#
 app.UseStaticFiles();
 ````
 
+	>note When it comes to Blazor WebAssembly applications, the above step should be implemented in the project used as the *Server* where the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) is located. With the [ASP.NET Core Hosted](https://learn.microsoft.com/en-us/aspnet/core/blazor/tooling?view=aspnetcore-7.0&pivots=windows) template, that would be the `Blazor.Server` project.
 
 1. Add JavaScript and CSS dependencies to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly):
 

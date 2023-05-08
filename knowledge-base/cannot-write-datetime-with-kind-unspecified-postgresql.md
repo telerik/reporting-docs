@@ -31,19 +31,17 @@ res_type: kb
 
 ## Description
 
-I have a PostgreSQL database and am using the [Npgsql](https://www.npgsql.org/) data provider to connect to said database. I filter the query by *date* and also have a [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) of type `DateTime` that I pass to the [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) component. On previewing the report, there are red error messages in place of my data items.
+I have a PostgreSQL database and I am using the [Npgsql](https://www.npgsql.org/) data provider to connect to said database. I filter the query by *date* and also have a [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) of type `DateTime` that I pass to the [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) component. On previewing the report, there are red error messages in place of my data items.
 
 ## Steps to Reproduce
 
 1. Install or add without installation, the [Npgsql data provider with version 6.0](https://www.npgsql.org/doc/release-notes/6.0.html) or newer.
 1. Create an SqlDataSource with query that has a parameter with `DbType=DateTime` and map it to the value of a Report Parameter of `Type=DateTime`
-1. Set the SqlDataSource as the data source of the report or a data item inside the report, and preview it.
+1. Set the SqlDataSource as the data source of the report or a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) inside the report, and preview it.
 
 ## Error Message
 
-```
-Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array/range. See the Npgsql.EnableLegacyTimestampBehavior AppContext switch to enable legacy behavior.
-```
+`Cannot write DateTime with Kind=Unspecified to PostgreSQL type 'timestamp with time zone', only UTC is supported. Note that it's not possible to mix DateTimes with different Kinds in an array/range. See the Npgsql.EnableLegacyTimestampBehavior AppContext switch to enable legacy behavior.`
 
 ## Cause\Possible Cause(s)
 

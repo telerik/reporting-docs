@@ -19,10 +19,31 @@ This article explains how to create a custom report source resolver for the __Te
 	{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportResolver_Implementation}}
 
 
-1. Find the __ReportSourceResolver property__ in the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) settings of the implementation of the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class, and set it to an instance of the custom report source resolver or to a chain of resolver instances including the custom one:
+1. Find the `ReportSourceResolver` property of the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration), and set it to an instance of the custom report source resolver or to a chain of resolver instances including the custom one:
 
-	{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_ReportsController_Implementation}}
-	{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportResolver_ReportsController_Implementation}}
+	* In `.NET Framework` the property is in the implementation of the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class
+
+		{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_ReportsController_Implementation}}
+		{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportResolver_ReportsController_Implementation}}
+
+
+	* In `.NET` and `.NET Core` the `ReportServiceConfiguration` is usually added as a Singleton in the DI Container in the starting point of the application:
+
+		````C#
+// Configure dependencies for ReportsController.
+		builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
+			new ReportServiceConfiguration
+			{
+				// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
+				ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
+
+				HostAppId = "ReportingNet6",
+				Storage = new FileStorage(),
+				ReportSourceResolver = new TypeReportSourceResolver()
+					.AddFallbackResolver(new UriReportSourceResolver(reportsPath)
+						.AddFallbackResolver(new CustomReportSourceResolver()));
+			});
+````
 
 
 1. Request the report from the HTML5 Report Viewer on the client:
@@ -70,10 +91,31 @@ USE [master]
 	{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportSourceResolverFallBack_Implementation}}
 	{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportSourceResolverFallBack_Implementation}}
 
-1. Add to the ReportServiceConfiguration the IReportSourceResolver implementations in a chain. Thus the custom one will be executed first, if it fails the second one and so on. 
+1. Add to the `ReportServiceConfiguration` the `IReportSourceResolver` implementations in a chain. Thus the custom one will be executed first, if it fails the second one and so on.
 
-	{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomResolverWithFallback_ReportsController_Implementation}}
-	{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomResolverWithFallback_ReportsController_Implementation}}
+	* In `.NET Framework` the `ReportServiceConfiguration` is configured in the implementation of the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class
+
+		{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomResolverWithFallback_ReportsController_Implementation}}
+		{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomResolverWithFallback_ReportsController_Implementation}}
+
+
+	* In `.NET` and `.NET Core` the `ReportServiceConfiguration` is usually added as a Singleton in the DI Container in the starting point of the application:
+
+		````C#
+// Configure dependencies for ReportsController.
+		builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
+			new ReportServiceConfiguration
+			{
+				// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
+				ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
+
+				HostAppId = "ReportingNet6",
+				Storage = new FileStorage(),
+				ReportSourceResolver = new CustomReportSourceResolverWithFallBack(new TypeReportSourceResolver()
+					.AddFallbackResolver(new UriReportSourceResolver(reportsPath)));
+			});
+````
+
 
 	You can use for fallback the default IReportSourceResolver implementations:
 

@@ -1,8 +1,8 @@
 ---
-title: Seeking is not supported
+title: "Seeking is not supported in a System.IO.Packaging.ZipWrappingStream" Error
 description: "Learn why the 'Seeking is not supported in a System.IO.Packaging.ZipWrappingStream' error occurs and how to resolve it in Telerik Reporting."
 type: troubleshooting
-page_title: "Seeking is not supported in a System.IO.Packaging.ZipWrappingStream"
+page_title: "Seeking is not supported in a System.IO.Packaging.ZipWrappingStream" error thrown when unpackaging report 
 slug: seeking-is-not-supported-in-a-zipwrappingstream
 position: 
 tags: .NET Core, .NET

@@ -24,11 +24,8 @@ The report content is displayed in the report items. To use report items, select
 To display and arrange the report items in Visual Studio:
 
 1. Open the report in design view.
-
 1. Expand the __Telerik Reporting__ tab of the **Toolbox**.
-
 1. Select the report item that you want to place.
-
 1. Drag the report item from the **Toolbox** to the design surface of the report.
 
 	Alternatively, select the section of the report where you want the report item to appear by clicking the section header. Then, double-click the report item in the **Toolbox**. You can also select the report item in the **Toolbox** and draw a bounding rectangle to indicate the area the report item will occupy.
@@ -38,17 +35,34 @@ To display and arrange the report items in Visual Studio:
 To display and arrange the report items in the Standalone Designer:
 
 1. Open the report in design view.
-
 1. Click the __Insert__ tab of the ribbon.
-
 1. Select the report item that you want to place and click on it.
+
+### Selecting Report Items and Sections
+
+There are several approaches for selecting a report item or section depending on its position with respect to the other parts of the report definition.
+
+* The report item/section is on the surface, i.e. doesn't serve as a parent or container for other items:
+
+	* Hover over the item/section in the __Report Sections__ area of the designer and when the cross hair cursor appears, click on it.
+	* Find the report section or item in the report definition tree in the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) of the designer and click on it to select it also in the __Report Sections__ area.
+	
+* The report item/section contains and is covered by other report items:
+
+	* From the __Report Sections__ area of the designer:
+
+		1. Select any of the report items within the desired one.
+		1. Press `Esc` button to move the focus one level up to the parent element. You may need to repeat this step until you reach the needed report item or section.
+
+	* From the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}) of the designer:
+
+		Find the report section or item in the report definition tree and click on it. It will be automatically selected also in the __Report Sections__ area of the designer. You may need to expand the parent section or items if the desired report item is child of any. To expand the container, click on the _plus_ sign beside it in the _Report Explorer_.
 
 ### Relocating Report Items
 
 To move a report item:
 
 1. Hover over the report item.
-
 1. When the cross hair cursor appears, click and drag the report item.
 
 ![Cross Hair Cursor in a Selected PictureBox item](images/ReportDesign002.png)

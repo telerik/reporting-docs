@@ -31,14 +31,14 @@ Learn how to find the repository to download and install `libgdiplus` on __CentO
 
 ## Solution
 
-The `libgdiplus` library for __CentOS__ Linux distributions resides in the `Epel` package repository. For most of the __CentOS__ versions this repository is available by default. __Amazon Linux__ is based on __CentOS__ but not all of its versions contain `Epel` by default. Here are the commands for installing this repository. Note that they may vary depending on the exact distribution, version, etc. You may need to run the terminal as administrator, or use `sudo` to authorize.
+The `libgdiplus` library for __CentOS__ Linux distributions resides in the `Epel` package repository. For most of the __CentOS__ versions this repository is available by default. __Amazon Linux__ is based on __CentOS__ but not all of its versions contain `Epel` by default. Below are the commands necessary for installing this repository. Note that they may vary depending on the exact distribution, version, etc. You may need to run the terminal as administrator, or use `sudo` to authorize.
 
 ````
 wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 rpm -ihv --nodeps ./epel-release-latest-8.noarch.rpm
 ````
 
-After successfully installing the reporsitory with the above instructions, you may assure that you have the `Epel` repository listed with the output from the following command:
+After successfully installing the repository with the above instructions, you may assure that you have the `Epel` repository listed with the output from the following command:
 
 `yum repolist`
 
@@ -78,4 +78,7 @@ If you see the error, run the next command to fix it:
 
 `ln -s /lib64/libdl.so.2 /lib64/libdl.so`
 
-For more details you may check the GitHub thread https://github.com/dotnet/runtime/issues/24070.
+## See Also
+
+* [System.Drawing on CentOS: Unable to load DLL 'libdl'](https://github.com/dotnet/runtime/issues/24070)
+* [libgdiplus Docs](https://www.mono-project.com/docs/gui/libgdiplus/)

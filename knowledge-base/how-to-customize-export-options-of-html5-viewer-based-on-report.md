@@ -67,7 +67,7 @@ You may bind on the [renderingEnd]({%slug telerikreporting/using-reports-in-appl
                     sideMenu = $(".trv-side-menu").children("ul").data('kendoPanelBar'),
                     largeMenu = $(".trv-menu-large").data("kendoMenu");
 		
-	    	// bind to the 'open' event of the main menu
+	    	// bind to the 'activate' event of the main menu
 		if (!largeMenuBound && largeMenu) {
                     largeMenu.bind("activate", function (e) {
                         hidingOptions();
@@ -76,7 +76,7 @@ You may bind on the [renderingEnd]({%slug telerikreporting/using-reports-in-appl
                     largeMenuBound = true;
                 }
 
-	    	// bind to the 'activate' event of the side menu
+	    	// bind to the 'expand' event of the side menu
                 if (!sideMenuBound && smallMenu) {
                     sideMenu.bind("expand", function (e) {
                         hidingOptions();

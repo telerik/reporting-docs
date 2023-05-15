@@ -69,7 +69,7 @@ You may bind on the [renderingEnd]({%slug telerikreporting/using-reports-in-appl
 		
 	    	// bind to the 'open' event of the main menu
 		if (!largeMenuBound && largeMenu) {
-                    largeMenu.bind("open", function (e) {
+                    largeMenu.bind("activate", function (e) {
                         hidingOptions();
                     });
 
@@ -78,7 +78,7 @@ You may bind on the [renderingEnd]({%slug telerikreporting/using-reports-in-appl
 
 	    	// bind to the 'activate' event of the side menu
                 if (!sideMenuBound && smallMenu) {
-                    sideMenu.bind("activate", function (e) {
+                    sideMenu.bind("expand", function (e) {
                         hidingOptions();
                     });
 

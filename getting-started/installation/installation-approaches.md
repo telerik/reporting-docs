@@ -90,10 +90,8 @@ If your password contains a special character, those characters need to be escap
 
 We strongly discourage entering your password into an online encoder utility, use Powershell instead. Here's one example:
 
-````powershell
-Add-Type -AssemblyName System.Web
-[System.Web.HttpUtility]::HtmlEncode('my§uper&P@§§word')
-````
+	Add-Type -AssemblyName System.Web
+	[System.Web.HttpUtility]::HtmlEncode('my§uper&P@§§word')
 
 Result:
 

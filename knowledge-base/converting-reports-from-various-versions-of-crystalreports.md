@@ -58,7 +58,15 @@ For 64 bit Windows you should look in the `C:\Program Files (x86)\Microsoft Vis
       <dependentAssembly>  
         <assemblyIdentity name="CrystalDecisions.Shared" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
         <bindingRedirect oldVersion="x.x.x.x" newVersion="x.x.x.x"/>  
-      </dependentAssembly>  
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="CrystalDecisions.ReportAppServer.DataDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
+        <bindingRedirect oldVersion="x.x.x.x" newVersion="x.x.x.x"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="CrystalDecisions.ReportAppServer.ReportDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
+        <bindingRedirect oldVersion="x.x.x.x" newVersion="x.x.x.x"/>
+      </dependentAssembly>	    
     </assemblyBinding>  
   </runtime>  
 </configuration>
@@ -93,7 +101,15 @@ Here you can find some presets of the binding redirections you need according to
       <dependentAssembly>  
         <assemblyIdentity name="CrystalDecisions.Shared" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
         <bindingRedirect oldVersion="10.2.3600.0" newVersion="11.5.3700.0"/>  
-      </dependentAssembly>  
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="CrystalDecisions.ReportAppServer.DataDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
+        <bindingRedirect oldVersion="10.2.3600.0" newVersion="11.5.3700.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="CrystalDecisions.ReportAppServer.ReportDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
+        <bindingRedirect oldVersion="10.2.3600.0" newVersion="11.5.3700.0"/>
+      </dependentAssembly>	    
     </assemblyBinding>  
   </runtime>  
 </configuration>
@@ -119,7 +135,15 @@ Here you can find some presets of the binding redirections you need according to
       <dependentAssembly>  
         <assemblyIdentity name="CrystalDecisions.Shared" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
         <bindingRedirect oldVersion="10.2.3600.0" newVersion="12.0.2000.0"/>  
-      </dependentAssembly>  
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="CrystalDecisions.ReportAppServer.DataDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
+        <bindingRedirect oldVersion="10.2.3600.0" newVersion="12.0.1100.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="CrystalDecisions.ReportAppServer.ReportDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
+        <bindingRedirect oldVersion="10.2.3600.0" newVersion="12.0.1100.0"/>
+      </dependentAssembly>	    
     </assemblyBinding>  
   </runtime>  
 </configuration> 
@@ -145,7 +169,15 @@ Here you can find some presets of the binding redirections you need according to
       <dependentAssembly>  
         <assemblyIdentity name="CrystalDecisions.Shared" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
         <bindingRedirect oldVersion="10.2.3600.0" newVersion="10.5.3700.0"/>  
-      </dependentAssembly>  
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="CrystalDecisions.ReportAppServer.DataDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
+        <bindingRedirect oldVersion="10.2.3600.0" newVersion="10.5.3700.0"/>
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="CrystalDecisions.ReportAppServer.ReportDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>  
+        <bindingRedirect oldVersion="10.2.3600.0" newVersion="10.5.3700.0"/>
+      </dependentAssembly>	    
     </assemblyBinding>  
   </runtime>  
 </configuration>

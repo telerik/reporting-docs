@@ -14,6 +14,14 @@ res_type: kb
 
 This article provides solutions to common issues that you may observe when working with the Telerik NuGet server and the NuGet packages that it provides.
 
+## Networking Problems
+
+One common problem is that your machine (PC or DevOps agent) is behind a proxy. To check if you're experiencing a networking issue, open the following URL in your web browser:
+
+https://nuget.telerik.com/v3/search?q=reporting
+
+After you enter your telerik.com `username` and `password`, you should see a JSON search result containing a list of all the __Telerik Reporting__ packages available with your license.
+
 ## Issue: The NuGet Package Takes Too Long to Install or Update on Visual Studio
 
 The NuGet package takes too long to install or update on Visual Studio. How to improve the installation and update times?
@@ -36,7 +44,11 @@ As an alternative, you can [reset your Telerik NuGet Feed credentials from the W
 
 ## Issue: Unable to load the service index for source https://nuget.telerik.com/v3/index.json
 
-Make sure that the Telerik NuGet Feed is live at [https://status.telerik.com/](https://status.telerik.com/).
+The error may occur if the `nuget.telerik.com server` is down.
+
+Test for [Networking Problems](#networking-problems).
+
+If you hit that error, make sure that the Telerik NuGet Feed is live at [https://status.telerik.com/](https://status.telerik.com/).
 
 ## Issue: Resetting Telerik Nuget Credentials
 
@@ -51,15 +63,22 @@ Try resetting your credentials by using the approach suggested in the [Telerik N
 Alternatively, use Windows Credentials Manager to remove the saved credentials:
 
 1. In Visual Studio navigate to **Tools** > **NuGet Package Manager** > **Package Manager Settings**. Select **NuGet Package Manager**, click **Package Sources**, and remove the listed Telerik NuGet package source.
-1. Close Visual Studio.
+1. Close all open Visual Studio instances (this is so that all NuGet package manager tasks are stopped).
 1. Open the Windows Credentials Manager. To access it, navigate to **Control Panel** > **User Accounts** > **Credential Manager**.
 1. Click **Windows Credentials**.
-1. Remove the following saved credentials:
+1. Scroll through all the entries until you find any that are for `nuget.telerik.com` and remove them. Usually, these should be the following:
 
 	* `nuget.telerik.com`
-	* `VSCredentials_nuget.telerik.com`	
+	* `VSCredentials_nuget.telerik.com`
 
 	![Remove credentials from Windows Credential Manager](images/windows-credential-manager.png)
 
 1. [Add the Telerik NuGet Feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) again, and then enter the correct credentials. For more details, see the [Installing with Nuget]({%slug telerikreporting/installation%}#installing-with-nuget) article section.
-1. If desired, verify the NuGet credentials by inspecting the `NuGet.config` file located in `%AppData%\NuGet\NuGet.config`
+1. If desired, verify the NuGet credentials by inspecting the `NuGet.config` file located in `%AppData%\NuGet\NuGet.config`.
+1. Reopen Visual Studio and access the Telerik NuGet server.
+
+## See Also
+
+* [Adding the Telerik Private NuGet Feed to VS]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%})
+* [Restoring NuGet Packages in Your CI Workflow]({%slug using-nuget-keys%})
+* [Installing with NuGet]({%slug telerikreporting/installation%}#installing-with-nuget)

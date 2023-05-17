@@ -128,6 +128,10 @@ The PDF rendering extension can render SVG images in either vector-based or rast
 
 The SVG rendering mode is controlled by a key in the device information settings object. The key is named __UseSvgVectorRendering__ and accepts a boolean value. Its default value is __true__.
 
+## Watermark
+
+The PDF rendering extension does support [Report Watermarks]({%slug telerikreporting/designing-reports/rendering-and-paging/watermarks%}), however, when it comes to `Text` Watermarks, [newline](https://en.wikipedia.org/wiki/Newline) characters are not respected. Thus, displaying multiline text with the `Watermark` property is not possible.
+
 ## See Also
 
  * [Export Formats]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%})

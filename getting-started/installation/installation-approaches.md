@@ -11,7 +11,7 @@ previous_url: /installation-system-requirements, /installation-installing-from-m
 
 # Installation Approaches for Telerik Reporting
 
-Telerik Reporting provides options for installing the product by [downloading the Control Panel](#downloading-the-control-panel), by [using the MSI installer file](#using-the-msi-file), or [with NuGet](#installing-with-nuget).
+Telerik Reporting provides options for installing the product by [downloading the Control Panel](#downloading-the-control-panel), by [using the MSI installer file](#using-the-msi-file), or [with NuGet](#installing-with-nuget)(adds assemblies to the project, no design time support).
 
 ## Downloading the Control Panel
 
@@ -60,11 +60,11 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 	![The Setup Page for the Samples Database of the Telerik Reporting Installation Wizard](images/installWizard3.png)
 
-## Installing with NuGet
+## Using NuGet Packages
 
-You can install Telerik Reporting by using the [Telerik Reporting NuGet packages](https://nuget.telerik.com/v3/index.json). The NuGet packages are a single ZIP file with the `.nupkg` extension.
+You can add Telerik Reporting to a project by using the [Telerik Reporting NuGet packages](https://nuget.telerik.com/v3/index.json). The NuGet packages are a single ZIP file with the `.nupkg` extension.
 
-* The `.nupkg` file contains the libraries for.NET Core projects, the Reporting Engine, and the implementation of the [Reporting REST WebAPI-based service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) where you can use the packages with the standard.NET 4.6.1 framework.
+* The `.nupkg` file contains the libraries for .NET Core projects, the Reporting Engine, and the implementation of the [Reporting REST WebAPI-based service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) where you can use the packages with the standard .NET 4.6.1 framework.
 * The Telerik Reporting NuGet packages do not include design-time support.
 * The legacy https://nuget.telerik.com/nuget server is now deprecated. Make sure to switch to the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client. For more information on how to add a NuGet feed, refer to the [official Microsoft documentation](https://www.visualstudio.com/en-us/docs/package/nuget/consume).
 

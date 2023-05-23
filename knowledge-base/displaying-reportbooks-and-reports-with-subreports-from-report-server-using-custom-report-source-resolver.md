@@ -131,4 +131,4 @@ public class CustomReportSourceResolver : IReportSourceResolver
 
 ## See Also
 
-* [Displaying Reports From Report Server Through Custom Report Source Resolver]({%slug displaying-reports-from-report-server-through-custom-report-source-resolver%})
+* [Displaying Reports From Report Server through Custom ReportSource Resolver]({%slug displaying-reports-from-report-server-through-custom-report-source-resolver%})

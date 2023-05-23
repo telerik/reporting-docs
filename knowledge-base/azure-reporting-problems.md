@@ -1,5 +1,5 @@
 ---
-title: Problems When Rendering Teleik Reports in Azure
+title: Problems When Rendering Telerik Reports in Azure
 description: "Learn what are the major problems we have already hit when rendering Telerik Reports in Azure environment and how you may work around them."
 type: troubleshooting
 page_title: Telerik Reporting Problems on Azure Environment

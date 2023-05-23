@@ -1,8 +1,8 @@
 ---
-title: Displaying Report Books and Reports containing Sub Reports from the Report Server through Custom Report Source Resolver
-description: How to display Report Books and Reports containing Sub Reports from the Report Server through Custom Report Source Resolver
+title: Displaying Complex Report Documents from the Report Server through Custom ReportSource Resolver
+description: "Learn How to display Report Books and Reports containing Sub Reports stored in the Report Server through Custom ReportSource Resolver."
 type: how-to
-page_title: How to display Report Books and Reports containing Sub Reports from the Report Server through Custom Report Source Resolver
+page_title: Read Complex Report Documents from ReportServer in Custom Resolver
 slug: displaying-reportbooks-and-reports-with-subreports-from-report-server-using-custom-report-source-resolver
 position: 
 tags: 
@@ -11,6 +11,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -27,9 +28,9 @@ res_type: kb
 
 ## Description
 
-Sometimes you want to be able to render reports stored in your Report Server in a **custom Reporting REST Service**, rather than in your Report Server's instance. This can be done through the use of a [`Custom Report Source Resolver`](%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%), as shown in the [Displaying Reports From Report Server Through Custom Report Source Resolver](%slug displaying-reports-from-report-server-through-custom-report-source-resolver%) KB article.
+Sometimes you want to be able to render reports stored in your Report Server in a **custom Reporting REST Service**, rather than in your Report Server's instance. This can be done through the use of a [`Custom Report Source Resolver`]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}), as shown in the [Displaying Reports From Report Server Through Custom Report Source Resolver]({%slug displaying-reports-from-report-server-through-custom-report-source-resolver%}) KB article.
 
-Even though the aforementioned article covers the base scenario, when you are working with a more complex report, for example a [Report Book](%slug telerikreporting/designing-reports/report-book/overview%) or a Report that contains [SubReport](%slug telerikreporting/designing-reports/report-structure/subreport%) items, you may encounter additional difficulties.
+Even though the aforementioned article covers the base scenario, when you are working with a more complex report, for example a [Report Book]({%slug telerikreporting/designing-reports/report-book/overview%}) or a Report that contains [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) items, you may encounter additional difficulties.
 
 To cover these scenarios we will implement a `Custom Report Source Resolver` that retrieves a ReportBook containing Reports which have Sub Reports in their definitions.
 
@@ -37,9 +38,9 @@ To cover these scenarios we will implement a `Custom Report Source Resolver` tha
 
 The general idea behind this solution is the following:
 1. Find all report sources that point to reports, residing in the Report Server instance.
-2. Retrieve the report definitions from the Server using the [`ReportServerClient`](/api/telerik.reportserver.httpclient.reportserverclient) class, and wrap them in an [InstanceReportSource](/api/telerik.reporting.instancereportsource).
-3. Replace the original report sources *(as they are invalid outside of the Report Server environment)* with the InstanceReportSources created in the previous step.
-4. Repeat the above for every nested report *(SubReport/Report Book member)*.
+1. Retrieve the report definitions from the Server using the [`ReportServerClient`](/api/telerik.reportserver.httpclient.reportserverclient) class, and wrap them in an [InstanceReportSource](/api/telerik.reporting.instancereportsource).
+1. Replace the original report sources *(as they are invalid outside of the Report Server environment)* with the InstanceReportSources created in the previous step.
+1. Repeat the above for every nested report *(SubReport/Report Book member)*.
 
 	````C#
 public class CustomReportSourceResolver : IReportSourceResolver
@@ -133,4 +134,4 @@ public class CustomReportSourceResolver : IReportSourceResolver
 
 ## See Also
 
-* [Displaying Reports From Report Server Through Custom Report Source Resolver](%slug displaying-reports-from-report-server-through-custom-report-source-resolver%)
+* [Displaying Reports From Report Server Through Custom Report Source Resolver]({%slug displaying-reports-from-report-server-through-custom-report-source-resolver%})

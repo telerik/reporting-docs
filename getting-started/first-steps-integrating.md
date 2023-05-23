@@ -1,6 +1,6 @@
 ---
-title: Integrating Reports in Applications (Guide)
-page_title: An Introductory Step by Step Guide on Integrating Telerik Reports in Web Applications
+title: Integrating Reports in Apps (Guide)
+page_title: Step-by-Step Guide on Integrating Telerik Reports in Web Applications
 description: "Get up and running with Telerik Reporting and learn how to integrate your Telerik Report into a web application. Use the dedicated Visual Studio Item Templates that make your life easier and more productive."
 slug: first-steps-integrating-reports
 tags: telerik, reporting, first, steps, guide, integrate, a, report, in, application
@@ -8,7 +8,7 @@ published: True
 position: 2
 ---
 
-# Guidance on Integrating Reports in Web Applications
+# Integrating Your Telerik Report in Web Applications
 
 This guide targets users who want to build custom reports and, then, present them in applications of their choice. For the purposes of this tutorial, the scenario will display the report in an ASP.NET Core application.
 
@@ -62,7 +62,7 @@ In this final step, you'll integrate your report in an ASP.NET Core web applicat
 
 1. Now, you have to include the connection string in the `appsettings.json` file because you added a named connection string to the report. If the report uses an embedded connection, you do not have to add it again to the Visual Studio project.
 
-	The JSON configuration file looks similar to the following: 
+	The JSON configuration file looks similar to the following:
 
 	````JSON
 {

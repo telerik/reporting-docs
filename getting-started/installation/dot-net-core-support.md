@@ -1,6 +1,6 @@
 ---
 title: .NET Core Support
-page_title: Basic Guidance for using Telerik Reporting with .NET Core, 6, 7, or Standard
+page_title: Using Telerik Reporting with .NET Core, 6, 7, or Standard
 description:  "Learn how to use Telerik Reporting in .NET Core, 6, 7, or Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
 previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-in-net-core-apps
@@ -9,7 +9,7 @@ published: True
 position: 7
 ---
 
-# Using Telerik Reporting for .NET on Different Operating Systems and Docker Containers
+# Available .NET Support for Operating Systems and Docker Containers
 
 Starting with version [`R1 2019 (13.0.19.116)`](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116) Telerik Reporting provides a set of assemblies and NuGet packages that are designed for .NET projects and enable you to use Telerik reports in .NET applications on Windows, Linux, and macOS platforms.
 
@@ -74,6 +74,8 @@ Telerik Reporting supports the following functionalities:
 
 ## Deploying on Linux
 
+> Currently, .NET 7 is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft as explained in [System.Drawing.Common is not supported on non-Windows platforms]({%slug system-drawing-common-is-not-supported-on-non-windows-platforms%})
+
 When deploying to a Linux machine, make sure you have the [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) library installed. The library is a Mono implementation of GDI+ API for non-Windows operating systems.
 
 The following snippet demonstrates how to update and install the necessary libraries on Ubuntu or Debian:
@@ -106,6 +108,8 @@ On the Linux machine, you also need to install the fonts you use in the reports.
 > In the rare case when the `Preferred Family` name of two fonts conincide and the `Family` names are different, on Linux only the second font registered as private would be respected as it will override the first one.
 
 ## Deploying on macOS
+
+> Currently, .NET 7 is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft as explained in [System.Drawing.Common is not supported on non-Windows platforms]({%slug system-drawing-common-is-not-supported-on-non-windows-platforms%})
 
 To use .NET/.NET Core on mascOS:
 

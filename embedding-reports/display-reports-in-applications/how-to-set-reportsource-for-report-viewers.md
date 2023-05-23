@@ -17,14 +17,23 @@ To display a report in a Report Viewer, you must specify the [Report Source]({%s
 * [Report Viewers that operate via the Telerik Reporting Services](#set-up-report-viewers-that-operate-via-telerik-reporting-services) - for example, HTML5, HTML5 ASP.NET MVC, HTML5 ASP.NET WebForms, WinForms, and WPF Report Viewers;
 * [Report Viewer controls that are integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server) - for example, HTML5, HTML5 ASP.NET MVC, HTML5 ASP.NET WebForms Report Viewers, WinForms and WPF Report Viewer controls.
 
-We use Report Viewers to load reports that are already processed and rendered server-side. To request a report to be processed and rendered, you must wrap it in a Report Source object. The report's rendering format and the settings of the Report Source vary depending on the type of the Report Viewer. We describe how to set up each of the three Report Viewer types below.
+We use Report Viewers to load reports that are already processed and rendered server-side. To request a report to be processed and rendered, you must wrap it in a Report Source object. The report's rendering format and the settings of the Report Source vary depending on the type of the Report Viewer. Before describing how to set up each of the three Report Viewer types, let's explain the defference between the two main Report Source types.
+
+## Server-Side __ReportSource__ vs. Client-Side __*reportSource*__
+
+The Telerik Reporting Engine accepts only __[Server-Side ReportSources]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources)__. The Server-Side ReportSource contains an instance of the report definition ([InstanceReportSource](/api/Telerik.Reporting.InstanceReportSource)), or an information on where to find the report definition and how to instantiate it ([TypeReportSource](/api/Telerik.Reporting.TypeReportSource), [UriReportSource](/api/Telerik.Reporting.UriReportSource), [XmlReportSource](/api/Telerik.Reporting.XmlReportSource)). For example, the __TypeReportSource__ references a CLR (CSharp or VB.NET) class that would be instantiated with reflection from its assembly qualified name provided through the property [TypeName](/api/Telerik.Reporting.TypeReportSource#Telerik_Reporting_TypeReportSource_TypeName).
+
+The __*Client-Side reportSource*__ contains only a string identifying the report definition. For example, the [reportSource of the Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) exposes the `report` property as a report definition identifier. It cannot be passed directly to the Reporting engine as the latter doesn't know how to create a report instance from this string. The identifier gets resolved to a server-side ReportSource in the `Resolve` method of the [ReportSource Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) of the [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) that the viewer utilizing client-side reportSources requires.
+
+The Report Parameter values in both server-side and client-sider Report Source are Dictionary with a _string_ key and _object_ value.
 
 ## Set up Report Viewer controls that work with Telerik Reporting Engine
 
 These are viewers that operate on the same machine where reports are processed rendered. These viewers include mechanisms for resolving reports:
 
-* __[WindowsForms Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with the Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
-* __[WPF Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with the Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
+* __[WindowsForms Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with remote Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
+* __[WPF Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with remote Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
+* __[WinUI Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%})__ : reports are processed and rendered on the local machine, unless the viewer uses integration with remote Reporting REST service or Telerik Report Server ([Report Viewer controls integrated with Telerik Report Server](#set-up-report-viewer-controls-that-are-integrated-with-telerik-report-server));
 * __[ASP.NET WebForms Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/overview%})__ : reports are processed and rendered on the server machine where the Report Viewer is hosted.
 
 Each of these viewer controls has a ReportSource property of type __Telerik.Reporting.ReportSource__, which can be set to an instance of one of the available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).
@@ -49,10 +58,15 @@ The specified report is processed locally on the same machine where the Report V
 The following Report Viewers are designed to work as clients of [Telerik Reporting Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}):
 
 * __HTML5 Report Viewer__ (go to section [HTML5 Viewer](#html5-report-viewer))
+* __Angular Report Viewer__ (go to section [Angular Viewer](#angular-report-viewer))
+* __React Report Viewer__ (go to section [React Viewer](#react-report-viewer))
+* __Blazor Report Viewer__ (go to section [Blazor Viewer](#blazor-report-viewer))
+* __Native Blazor Report Viewer__ (go to section [Native Blazor Viewer](#native-blazor-report-viewer))
 * __HTML5 ASP.NET MVC Report Viewer__ (go to section [MVC Viewer](#html5-aspnet-mvc-report-viewer))
 * __HTML5 ASP.NET WebForms Report Viewer__ (go to section [WebForms Viewer](#html5-aspnet-webforms-report-viewer))
 * __WinForms Report Viewer__ (go to section [WinForms Viewer](#winforms-report-viewer))
 * __WPF Report Viewer__ (go to section [WPF Viewer](#wpf-report-viewer))
+* __WinUI Report Viewer__ (go to section [WinUI Viewer](#winui-report-viewer))
 
 These Report Viewers do not have direct access to Telerik Reporting Engine. Reports are processed and rendered on a remote machine, and the content is delivered to the client by the corresponding __Telerik Reporting Service__.
 
@@ -78,7 +92,7 @@ The [HTML5 Report Viewer control]({%slug telerikreporting/using-reports-in-appli
 
 ````HTML
 reportSource: {
-	report: "Dashboard.trdp",
+	report: "Product Catalog.trdp",
 	parameters: { CultureID: "en" }
 }
 ````
@@ -96,7 +110,106 @@ The *report description string* is sent to the [Telerik Reporting REST service](
 
 > __The HTML5 Report Viewer works only with__ ([UriReportSource and TypeReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources)). If you need an InstanceReportSource or XmlReportSource, you will have to resolve manually the *report description string* via custom resolver for the Reporting REST service. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) (available only if using a Telerik Reporting REST service instance).
 
-### __HTML5 ASP.NET MVC Report Viewer__ 
+### __Angular Report Viewer__
+
+The [Angular Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) is an Angular wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__. For example:
+
+````HTML
+<tr-viewer #viewer1
+	...
+	[reportSource]="{
+		report: 'Product Catalog.trdp',
+		parameters: { CultureID: 'en' }
+	}"
+	...>
+</tr-viewer>
+````
+
+or
+
+````HTML
+<tr-viewer #viewer1
+	...
+	[reportSource]="{
+		report: 'Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary',
+		parameters: { CultureID: 'en' }
+	}"
+	...>
+</tr-viewer>
+````
+
+### __React Report Viewer__
+
+The [React Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) is a React wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__. For example:
+
+````HTML
+<TelerikReportViewer
+		...
+		reportSource={{
+			report: 'Product Catalog.trdp',
+			parameters: { CultureID: 'en' }
+		}}
+		... />
+````
+
+or
+
+````HTML
+<TelerikReportViewer
+		...
+		reportSource={{
+			report: 'Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary',
+			parameters: { CultureID: 'en' }
+		}}
+		... />
+````
+
+### __Blazor Report Viewer__
+
+The [Blazor Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) is a Blazor wrapper of the __HTML5 Viewer__. It works in the same way as the pure HTML5 Report Viewer and requires jQuery. It exposes identical __client-side reportSource__ through the model `ReportSourceOptions`:
+
+````CSHTML
+<ReportViewer ViewerId="rv1"
+			...
+			ReportSource="@(new ReportSourceOptions
+						{
+							Report = "Product Line Sales.trdp",
+							//or "Telerik.Reporting.Examples.CSharp.ProductLineSales, CSharp.ReportLibrary",
+							Parameters = new Dictionary<string, object>
+							{
+								{ "ProductCategory", "Clothing" },
+								{ "ProductSubcategory", new [] { "Caps", "Gloves" } }
+							}
+						})"
+			.../>
+````
+
+### __Native Blazor Report Viewer__
+
+The [Native Blazor Report Viewer control]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) is a native Blazor widget built on top of [Telerik UI for Blazor](https://docs.telerik.com/blazor-ui/introduction) components. It's ReportSource is defined through the same `ReportSourceOptions` model as the Blazor wrapper of the HTML5 Viewer:
+
+````CSHTML
+<ReportViewer
+	...
+	@bind-ReportSource="@ReportSource"
+	...>
+</ReportViewer>
+
+@code {
+	...
+	public ReportSourceOptions ReportSource { get; set; } = 
+				new ReportSourceOptions(
+						"Product Line Sales.trdp",
+						//or "Telerik.Reporting.Examples.CSharp.ProductLineSales, CSharp.ReportLibrary",
+						new Dictionary<string, object>
+							{
+								{ "ProductCategory", "Clothing" },
+								{ "ProductSubcategory", new [] { "Caps", "Gloves" } }
+							});
+}
+````
+
+### __HTML5 ASP.NET MVC Report Viewer__
 
 The [HTML5 ASP.NET MVC Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) is an MVC wrapper of the __HTML5 Viewer__ that renders a string on the page. The string contains the HTML elements and the JavaScript methods required for initializing the HTML5 Viewer JavaScript widget. The HTML5 ASP.NET MVC Viewer has a [ReportSource](/api/Telerik.ReportViewer.Mvc.IReportViewerBuilder#Telerik_ReportViewer_Mvc_IReportViewerBuilder_ReportSource) method, creating a client-side report source via server-side code (C# or VB.NET):
 
@@ -202,7 +315,21 @@ __Example of setting the ReportSource at runtime using the *Window.Loaded* event
 {{source=CodeSnippets\CS\API\Telerik\ReportViewer\Wpf\Window3.xaml.cs}}
 
 {{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml}}
-{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}} 
+{{source=CodeSnippets\VB\API\Telerik\ReportViewer\Wpf\Window3.xaml.vb}}
+
+### __WinUI Report Viewer__
+
+The [WinUI Report Viewer control]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%}) can be connected to a __Telerik Reporting REST Service__ or __Telerik Report Server__ by setting its __ReportEngineConnection property__ - [How To: Construct a string to connect to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}). The configuration is practically identical to the one for the [WPF Report Viewer](#wpf-report-viewer).
+
+__Example of specifying the ReportSource declaratively__
+
+````XAML
+<telerikReporting:ReportViewer x:Name="reportViewer" Grid.Row="1" ReportEngineConnection="engine=RestService;uri=http://localhost:59655/api/reports">
+	<telerikReporting:ReportViewer.ReportSource>
+		<telerikReportingCore:UriReportSource Uri="Dashboard.trdp" />
+	</telerikReporting:ReportViewer.ReportSource>
+</telerikReporting:ReportViewer>
+````
 
 ## Set up Report Viewer controls that are integrated with Telerik Report Server
 
@@ -210,11 +337,16 @@ __Example of setting the ReportSource at runtime using the *Window.Loaded* event
 
 The following Report Viewers are designed to work as clients of [Telerik Report Server](https://www.telerik.com/report-server):
 
-* __HTML5 Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
-* __HTML5 ASP.NET MVC Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
-* __HTML5 ASP.NET WebForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
-* __WinForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
-* __WPF Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__
+* __HTML5 Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __Angular Report Viewer__ the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __React Report Viewer__ the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __Blazor Report Viewer__ the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __Native Blazor Report Viewer__ the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__  where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __HTML5 ASP.NET MVC Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __HTML5 ASP.NET WebForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __WinForms Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __WPF Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
+* __WinUI Report Viewer__ - the client report source is set in the same way as if the viewer is connected to a __Telerik Reporting REST Service__ where the *report description string* must be in a format: __[CategoryName]/[ReportNameWithoutFileExtension]__ e.g. "Samples/Dashboard"
 
 These Report Viewers do not have direct access to Telerik Reporting Engine. Reports are processed and rendered on a remote machine where Telerik Report Server is running, and the content is delivered to the client by __Telerik Report Server's REST Service__.
 

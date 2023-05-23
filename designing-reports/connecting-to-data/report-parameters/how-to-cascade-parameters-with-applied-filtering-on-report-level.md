@@ -17,14 +17,14 @@ To create cascading report parameters with applied filtering on report level fol
 
 	````SQL
 SELECT
-	Production.Product.ProductNumber,
-	Production.Product.Name AS ProductName,
-	Production.Product.ProductSubcategoryID,
-	Production.ProductSubcategory.Name AS SubcategoryName
-FROM
-	Production.Product
-	INNER JOIN Production.ProductSubcategory
-		ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
+		Production.Product.ProductNumber,
+		Production.Product.Name AS ProductName,
+		Production.Product.ProductSubcategoryID,
+		Production.ProductSubcategory.Name AS SubcategoryName
+	FROM
+		Production.Product
+		INNER JOIN Production.ProductSubcategory
+			ON Production.Product.ProductSubcategoryID = Production.ProductSubcategory.ProductSubcategoryID
 ````
 
 

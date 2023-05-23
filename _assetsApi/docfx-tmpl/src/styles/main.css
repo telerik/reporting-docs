@@ -1,15 +1,15 @@
 ﻿a.all-components {
-  background-image: url("/reporting/assets/images/article-menu.svg");
+  background-image: url("/reporting/assets/article-menu.svg");
 }
 
 span.all-components-expanded-icon {
-  background-image: url("/reporting/assets/images/group-expand-collapse.svg");
+  background-image: url("/reporting/assets/group-expand-collapse.svg");
 }
 
 /* Feedback Styles */
 
 .feedback-row {
-  background-image: url("/reporting/assets/images/feedback-bgr.svg");
+  background-image: url("/reporting/assets/feedback-bgr.svg");
   background-size: cover;
   background-repeat: repeat-x;
   padding-top: 14px;
@@ -26,17 +26,17 @@ span.all-components-expanded-icon {
   border: 0;
   width: 32px;
   height: 32px;
-  background: url("/reporting/assets/images/close.svg") no-repeat 50% 50%;
+  background: url("/reporting/assets/close.svg") no-repeat 50% 50%;
 }
 
 /* Search */
 
 .global-search input {
-  background-image: url("/reporting/assets/images/search.svg");
+  background-image: url("/reporting/assets/search.svg");
 }
 
 .local-search input {
-  background: url("/reporting/assets/images/search.svg") #fff no-repeat 10px 50%;
+  background: url("/reporting/assets/search.svg") #fff no-repeat 10px 50%;
 }
 
 #refine-search-popup li:hover {
@@ -47,8 +47,8 @@ span.all-components-expanded-icon {
 
 @font-face {
   font-family: 'WebComponentsIcons';
-  src: url("/reporting/assets/fonts/WebComponentsIcons.eot");
-  src: url("/reporting/assets/fonts/WebComponentsIcons.eot"), url("/reporting/assets/fonts/WebComponentsIcons.woff"), url("/reporting/assets/fonts/WebComponentsIcons.ttf"), url("/reporting/assets/fonts/WebComponentsIcons.svg");
+  src: url("/reporting/assets/WebComponentsIcons.eot");
+  src: url("/reporting/assets/WebComponentsIcons.eot"), url("/reporting/assets/WebComponentsIcons.woff"), url("/reporting/assets/WebComponentsIcons.ttf"), url("/reporting/assets/WebComponentsIcons.svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -104,8 +104,4 @@ span.all-components-expanded-icon {
   text-transform: none;
   text-decoration: none;
   display: inline-block;
-}
-
-.k-i-wpf::before {
-  content: "\e658";
 }

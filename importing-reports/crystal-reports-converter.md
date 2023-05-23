@@ -80,13 +80,21 @@ The output from the *gacutil.exe* above shows that the current version of the in
           <bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
         </dependentAssembly>
         <dependentAssembly>
+          <assemblyIdentity name="CrystalDecisions.Enterprise.Framework" publicKeyToken="692fbea5521e1304" culture="neutral"/>
+          <bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
+        </dependentAssembly>
+        <dependentAssembly>
+          <assemblyIdentity name="CrystalDecisions.Enterprise.InfoStore" publicKeyToken="692fbea5521e1304" culture="neutral"/>
+          <bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
+        </dependentAssembly>
+        <dependentAssembly>
           <assemblyIdentity name="CrystalDecisions.ReportAppServer.DataDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>
           <bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
         </dependentAssembly>
         <dependentAssembly>
           <assemblyIdentity name="CrystalDecisions.ReportAppServer.ReportDefModel" publicKeyToken="692fbea5521e1304" culture="neutral"/>
           <bindingRedirect oldVersion="0.0.0.0-13.0.3500.0" newVersion="13.0.3500.0"/>
-        </dependentAssembly>
+        </dependentAssembly>	    
 ...
     </assemblyBinding>
 </runtime>

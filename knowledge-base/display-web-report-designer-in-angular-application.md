@@ -1,6 +1,6 @@
 ---
-title: Displaying the Web Report Designer in Angular application
-description: Use Telerik Web Report Designer in Angular application
+title: Integrate the Web Report Designer in Angular
+description: "Learn how to embed the Telerik Web Report Designer in an Angular application."
 type: troubleshooting
 page_title: Displaying the Web Report Designer in Angular application.
 slug: display-web-report-designer-in-angular-application
@@ -44,7 +44,7 @@ in the main html page of the application. In the demo project linked below, this
 <head>
    ...   
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
     
     <script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
     <script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
@@ -72,8 +72,8 @@ this.designer = $("#webReportDesigner").telerik_WebReportDesigner({
 - Reference the Kendo LESS themes for the report viewer in `viewer.component.html`
 
 	````HTML
-<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
-<link href="https://kendo.cdn.telerik.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
+<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
+<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
 <div id="reportViewer">
     <div>
 ````

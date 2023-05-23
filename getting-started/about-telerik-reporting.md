@@ -1,6 +1,6 @@
 ---
 title: About Telerik Reporting
-page_title: General Information on Starting with Telerik Reporting
+page_title: Basic Concepts and Logic
 description: "Learn more about the concepts and logic behind Telerik Reporting. Get general knowledge on what is Telerik Report, how you may create reports, connect them to data and preview the results."
 slug: on-telerik-reporting
 tags: telerik, reporting, basic, concepts, explanations, logic
@@ -9,7 +9,7 @@ previous_url: /best-practices-solution-structure
 position: 0
 ---
 
-# Getting Started with Telerik Reporting
+# Basic Concepts in Telerik Reporting
 
 Telerik Reporting is an embedded tool for creating and displaying reports in a visually structured and logically grouped way.
 

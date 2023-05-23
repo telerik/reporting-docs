@@ -1,11 +1,11 @@
 ---
 title: Filter export options based on the selected report in the Html5 Report Viewer
-description: How to customize the export options of the viewer based on the report
+description: "Learn how to customize the export options displayed by the HTML5 Report Viewer based on the currently selected report."
 type: how-to
 page_title: Modify available rendering extensions in the Html5 Report Viewer based on report name
 slug: how-to-customize-export-options-of-html5-viewer-based-on-report
 position: 
-tags: 
+tags: html5, report, viewer, hide, filter, export, options, client-side
 ticketid: 1397565
 res_type: kb
 ---
@@ -67,9 +67,9 @@ You may bind on the [renderingEnd]({%slug telerikreporting/using-reports-in-appl
                     sideMenu = $(".trv-side-menu").children("ul").data('kendoPanelBar'),
                     largeMenu = $(".trv-menu-large").data("kendoMenu");
 		
-	    	// bind to the 'open' event of the main menu
+	    	// bind to the 'activate' event of the main menu
 		if (!largeMenuBound && largeMenu) {
-                    largeMenu.bind("open", function (e) {
+                    largeMenu.bind("activate", function (e) {
                         hidingOptions();
                     });
 

@@ -18,10 +18,6 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
-		<tr>
-			<td>.NET Framework</td>
-			<td>Version 4.5</td>
-		</tr>
 	</tbody>
 </table>
 
@@ -37,6 +33,7 @@ To cover these scenarios we will implement a `Custom Report Source Resolver` tha
 ## Solution
 
 The general idea behind this solution is the following:
+
 1. Find all report sources that point to reports, residing in the Report Server instance.
 1. Retrieve the report definitions from the Server using the [`ReportServerClient`](/api/telerik.reportserver.httpclient.reportserverclient) class, and wrap them in an [InstanceReportSource](/api/telerik.reporting.instancereportsource).
 1. Replace the original report sources *(as they are invalid outside of the Report Server environment)* with the InstanceReportSources created in the previous step.

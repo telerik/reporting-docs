@@ -1,5 +1,5 @@
 ---
-title: Displaying Complex Report Documents from the Report Server through Custom ReportSource Resolver
+title: Displaying Complex Report Documents from Report Server through Custom ReportSource Resolver
 description: "Learn How to display Report Books and Reports containing Sub Reports stored in the Report Server through Custom ReportSource Resolver."
 type: how-to
 page_title: Read Complex Report Documents from ReportServer in Custom Resolver

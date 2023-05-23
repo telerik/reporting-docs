@@ -93,13 +93,13 @@ this.viewer = $("#reportViewer").telerik_ReportViewer({
 
 
 ## Additional resources
-[Download the demo application](resources/telerik-report-web-designer-angular-app.zip).
+[Download the demo application from the Reporting Samples Repo](https://github.com/telerik/reporting-samples/tree/master/telerik-angular-viewer-and-designer).
 
 To run the example:
 
 - npm install
 
-- npm start
+- ng serve
 
 ## Known issues
 Several things that you should keep in mind when using Telerik Web Report Designer in your projects.

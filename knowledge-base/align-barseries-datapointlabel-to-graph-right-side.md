@@ -1,6 +1,6 @@
 ---
 title: Align BarSeries DataPointLabel to the Graph Right Side
-description: "Learn how to align the Graph BarSeries DataPointLabel to the Graph Area Right Edge."
+description: "Learn how to align the Graph BarSeries DataPointLabel to the Graph Area Right Edge in Telerik Reporting."
 type: how-to
 page_title: Show Data Point Labels Aligned to the Right
 slug: align-barseries-datapointlabel-to-graph-right-side

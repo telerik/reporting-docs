@@ -8,6 +8,7 @@ published: True
 position: 9
 previous_url: /report-items-picture-box, /designing-reports/report-structure/picturebox
 ---
+
 <style>
 table th:first-of-type {
 	width: 20%;
@@ -38,6 +39,12 @@ The following screenshot shows a PictureBox report item at design-time. Note the
 When you add values to the PictureBox, note the following:
 
 * When the `Value` property is a string that is not an expression (a string which doesn't start with `=`), the PictureBox assumes the value is a URI, a Base64-encoded image, or an SVG markup.
+
+	The __Relative Path__ will be resolved as follows:
+
+	+ For __declarative report definitions (TRDP and TRDX files)__ - with respect to the report location.
+	+ For __type report definitions (CS and VB reports)__ - with respect to the application starting point.
+
 * Clicking the ellipsis for `Value` will open a **Browse** dialog to navigate to a file on your hard drive. The engine will try to determine the type of the selected file and populate the `Value` property with a descriptive text.
 * When a raster image file (BMP, GIF, JPEG, PNG, EXIF, or TIFF) is selected, its bytes will be serialized in the report definition. When a Base64-encoded image file is selected, the report definition will persist the string representation of the Base64-encoded image. When an SVG image file is selected, the report definition persist its markup and it will be accessible in Edit Expression dialog.
 * You can also paste a path to an image file, a Base64-encoded string, or an SVG markup in the `Value` property editor or in the **Edit Expression** dialog. Note that the maximum length supported by the `Value` editor is 32767 characters, so if the new string value is longer than that, you need to use the **Edit Expression** dialog instead.
@@ -45,7 +52,6 @@ When you add values to the PictureBox, note the following:
 To set an expression as a PictureBox value in the Report Designer:
 
 1. Right-click the item. Choose **Expression...**.
-
 1. Enter the expression in the [**Edit Expression** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
 
 ## Binding to Data

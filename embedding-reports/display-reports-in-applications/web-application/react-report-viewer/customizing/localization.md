@@ -13,7 +13,7 @@ previous_url: /react-report-viewer-localization
 
 The article elaborates on how to localize the messages displayed by the React Report Viewer.
 
-1. To localize the report viewer, create a new TypeScript file __stringResources.ts__:
+1. To localize the report viewer, create a new TypeScript file `stringResources.ts`:
 
 	````TypeScript
 export class StringResources {
@@ -26,7 +26,7 @@ export class StringResources {
 			// override other string resources here
 		}
 		// override string resources for other cultures here
-}
+	}
 ````
 
 	The file can contain all or only a part of the string resources which would be localized. For a full list of the report viewer string resources which could be localized, please refer to [HTML5 Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%}).

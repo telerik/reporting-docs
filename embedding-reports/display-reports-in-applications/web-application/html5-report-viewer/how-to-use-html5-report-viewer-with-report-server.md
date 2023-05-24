@@ -80,7 +80,7 @@ reportServer: {
 		url: "http://yourReportServerUrl:port",
 		username: null,
 		password: null
-},
+	},
 ````
 
 

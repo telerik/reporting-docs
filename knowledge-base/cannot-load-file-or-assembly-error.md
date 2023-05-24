@@ -1,7 +1,7 @@
 ---
 title: Cannot Load File or Assembly
 page_title: Cannot Load File or Assembly Error Occurs
-description: "Learn how to handle the error 'Cannot Load File or Assembly' which occurs when the system cannot load a required Telerik Reporting assembly."
+description: "Learn how to handle the error 'Cannot Load File or Assembly' which occurs when the system cannot load the required Telerik Reporting assemblies."
 slug: cannot-load-file-assembly-error
 tags: telerik, reporting, run, time, cannot, load, file, assembly, error, occurs
 published: True

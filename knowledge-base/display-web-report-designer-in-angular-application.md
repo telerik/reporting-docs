@@ -99,7 +99,7 @@ To run the example:
 
 - npm install
 
-- ng serve
+- npm start
 
 ## Known issues
 Several things that you should keep in mind when using Telerik Web Report Designer in your projects.

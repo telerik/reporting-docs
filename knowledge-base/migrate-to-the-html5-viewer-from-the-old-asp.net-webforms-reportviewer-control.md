@@ -1,6 +1,6 @@
 ---
-title: Upgrade your ASP.NET WebForms ReportViewer control to the new HTML5 Report Viewer.
-description: Replace the old ASP.NET WebForms ReportViewer control with the HTML5 Report Viewer.
+title: Upgrade your ASP.NET WebForms ReportViewer control to the new HTML5 Report Viewer
+description: "Learn how to Replace the old ASP.NET WebForms ReportViewer control with the HTML5 WebForms Report Viewer."
 type: how-to
 page_title: Switch to using the HTML5 Viewer instead of the old ASP.NET WebForms ReportViewer control
 slug: migrate-to-the-html5-viewer-from-the-old-asp.net-webforms-reportviewer-control

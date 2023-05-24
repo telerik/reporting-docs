@@ -43,7 +43,7 @@ I want to show my report in a ReportViewer control, but when I click the arrow
 
 ## Solution  
 
-Follow the Telerik Reporting [best practices]({% slug on-telerik-reporting %}) and specify the report in a separate class library that is referenced in the application or website. Check if the class library containing the report is referenced in your application or website and that you have rebuilt the project.
+Follow the Telerik Reporting [best practices]({%slug on-telerik-reporting%}) and specify the report in a separate class library that is referenced in the application or website. Check if the class library containing the report is referenced in your application or website and that you have rebuilt the project.
 
 The most reliable way to handle this scenario is to programmatically specify a report for the ReportViewer. For example, if you're using the ASP.NET ReportViewer, state the following in the `Page_Load` event of the page:         
 

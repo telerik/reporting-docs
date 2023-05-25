@@ -1,6 +1,6 @@
 ---
-title: Changes on items in report events are not applied
-description: Modifying report items in report events does not work.
+title: Changes on Items in Report Events Are Not Applied
+description: "Learn why the modifying of report items in report event handlers may not work after R3 2016 Telerik Reporting release."
 type: how-to
 page_title: Editing report items in report events does not take effect
 slug: changes-on-items-in-report-events-are-not-applied

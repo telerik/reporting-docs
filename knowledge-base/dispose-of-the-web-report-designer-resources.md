@@ -1,11 +1,11 @@
 ---
 title: Disposing of the Web Report Designer Resources
-description: "Learn how to dispose of the resources loaded by the Web Report Designer in Telerik Reporting."
+description: "Learn when and how to dispose of the resources loaded by the Web Report Designer in Telerik Reporting."
 type: how-to
 page_title: Removing the Resources of the Telerik Web Report Designer
 slug: dispose-of-the-web-report-designer-resources
-position:
-tags:
+position: 
+tags: 
 ticketid: 1566062
 res_type: kb
 ---
@@ -43,9 +43,9 @@ The following code can be executed after the Web Report Designer has been remove
 ````JavaScript
 $("link").each(function () 
 	{ 
-		var isReportingLink = $(this).attr("href").indexOf("api/reportdesigner") > -1 
+		var isReportingLink = $(this).attr("href").indexOf("api/reportdesigner") > -1;
 		if(isReportingLink){
-			$(this).remove()
+			$(this).remove();
 		}
 	})
 ````

@@ -1,16 +1,16 @@
 ---
-title: Cannot implicitly convert type Telerik.Reporting.XXXReportSource to Telerik.ReportViewer.Html5.WebForms.ReportSource
-description: When using HTML5 WebForms viewer there is an error Cannot implicitly convert type Telerik.Reporting.XXXReportSource to Telerik.ReportViewer.Html5.WebForms.ReportSource
+title: Cannot Convert ReportSource in Html5 WebForms Viewer
+description: "Learn why when using HTML5 WebForms viewer there is an error 'Cannot implicitly convert type Telerik.Reporting.XXXReportSource to Telerik.ReportViewer.Html5.WebForms.ReportSource'."
 type: troubleshooting
-page_title: Cannot implicitly convert type Telerik.Reporting.XXXReportSource to Telerik.ReportViewer.Html5.WebForms.ReportSource when using HTML5 WebForms report viewer
+page_title: Cannot implicitly convert ReportSource type in Html5 WebForms viewer
 slug: cannot-convert-to-telerik-reportviewer-html5-webforms-reportsource
 position: 
 tags: reportsource,html5webformsviewer
-ticketid:
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -20,44 +20,15 @@ res_type: kb
 
 
 ## Description
-Cannot implicitly convert type 'Telerik.Reporting.XXXReportSource' to 'Telerik.ReportViewer.Html5.WebForms.ReportSource' error when setting the ReportSource of the HTML5 WebForms Report Viewer.
+
+`Cannot implicitly convert type 'Telerik.Reporting.XXXReportSource' to 'Telerik.ReportViewer.Html5.WebForms.ReportSource` error when setting the ReportSource of the HTML5 WebForms Report Viewer.
 
 ## Solution
-[HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) works with a client-side report source which is of type **Telerik.ReportViewer.Html5.WebForms.ReportSource**. 
 
-*ReportSource.IdentifierType* property specifies which [resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}#overview) will be used for resolving the report description string on the server.
-
-*ReportSource.Identifier* property accepts a string that contains information about the report. This string can be a path to a TRDP or TRDX file that can be resolved by [ReportFileResolver](/api/telerik.reporting.services.webapi.reportfileresolver), an assembly-qualified name of the report class which can be resolved by [ReportTypeResolver](/api/telerik.reporting.services.webapi.reporttyperesolver) or custom information which can be resolved by [custom report resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}#custom-report-resolver-implementations).
-
-Examples of setting the ReportSource of HTML5 WebForms Report Viewer:
-
-*C#*
-```c#
-protected void Page_Load(object sender, EventArgs e)
-{
-    if (!IsPostBack)
-    {
-        Telerik.ReportViewer.Html5.WebForms.ReportSource reportSource = new Telerik.ReportViewer.Html5.WebForms.ReportSource();
-        reportSource.IdentifierType = Telerik.ReportViewer.Html5.WebForms.IdentifierType.UriReportSource;
-        reportSource.Identifier = "Report1.trdp";            
-        reportViewer1.ReportSource = reportSource;
-    }
-}
-```
-
-*VB*
-```vb
-Protected Sub Page_Load(sender As Object, e As EventArgs)
-    If Not IsPostBack Then
-        Dim reportSource As New Telerik.ReportViewer.Html5.WebForms.ReportSource()
-        reportSource.IdentifierType = Telerik.ReportViewer.Html5.WebForms.IdentifierType.UriReportSource
-        reportSource.Identifier = "Report1.trdp"
-        reportViewer1.ReportSource = reportSource
-    End If
-End Sub
-```
+The problem and the solution are described in the KB [Cannot Implicitly Convert Type 'Telerik.Reporting.XXXReportSource']({%slug cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error%})
 
 ## See Also
-[How to: Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
 
-[How to display a report via InstanceReportSource in the HTML5 Viewer](https://www.telerik.com/support/kb/reporting/details/how-to-display-a-report-via-instancereportsource-in-the-html5-viewer)
+* [Cannot Implicitly Convert Type 'Telerik.Reporting.XXXReportSource']({%slug cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error%})
+* [Set ReportSource for Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%})
+* [How to display a report via InstanceReportSource in the HTML5 Viewer]({%slug how-to-display-a-report-via-instancereportsource-in-the-html5-viewer%})

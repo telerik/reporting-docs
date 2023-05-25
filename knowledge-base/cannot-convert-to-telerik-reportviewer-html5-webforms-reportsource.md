@@ -25,7 +25,7 @@ res_type: kb
 
 ## Solution
 
-The problem and the solution are described in the KB [Cannot Implicitly Convert Type 'Telerik.Reporting.XXXReportSource']({%slug cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error%})
+The problem and the solution are described in the KB [Cannot Implicitly Convert Type 'Telerik.Reporting.XXXReportSource']({%slug cannot-implicitly-convert-type-telerik.reporting.xxxreportsource-to-telerik.reportviewer.html5.webforms.reportsource-error%}).
 
 ## See Also
 

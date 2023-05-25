@@ -175,5 +175,5 @@ In this article we demonstrated how to add interactivity and customizations to a
 
 * [Designing Reports - Actions]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/overview%})
 * [Custom Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%})
-* [How to add interactivity to a report using action event handlers in WPF report viewer]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer%})
-* [How to add interactivity to a report using action event handlers in HTML5-based report viewers]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers%})
+* [Add Interactivity to Report in WPF Viewer]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-in-wpf-report-viewer%})
+* [Add Interactivity to Report in HTML5-based Viewers]({%slug how-to-add-interactivity-to-a-report-using-action-event-handlers-with-html5-based-report-viewers%})

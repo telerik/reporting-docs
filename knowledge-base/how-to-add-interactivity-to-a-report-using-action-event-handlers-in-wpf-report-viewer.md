@@ -32,7 +32,7 @@ In this article we will show how to use these events to add more interactivity a
 
 We will use the `CSharp.NetFramework.WpfIntegrationDemo` project that is shipped with your Telerik Reporting installation and is part of the `CSharp.ReportExamples.VSxxxx` solution that can be found by default in `C:\Program Files (x86)\Progress\\<Version\>\Examples\CSharp`.
 
-The report we chose for this example is part of our `ReportingLibrary` and is called `PopulationDensity`. It displays a *choropleth* based on the world population by countries. We will show how to change the colors and display an informational tooltip for the country under the mouse cursor, using a [Custom]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%}) action.
+The report we chose for this example is part of our `ReportLibrary` and is called `PopulationDensity`. It displays a *choropleth* based on the world population by countries. We will show how to change the colors and display an informational tooltip for the country under the mouse cursor, using a [Custom]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/custom-action%}) action.
 
 Additionally, we will show you how to cancel a [NavigateToUrl]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action%}) action before it is executed, depending on a confirmation dialog.
 

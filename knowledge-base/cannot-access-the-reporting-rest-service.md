@@ -1,6 +1,6 @@
 ---
 title: Cannot access the Reporting REST service
-description: "Learn why the error message Cannot access the Reporting REST service. (serviceUrl = '/api/reports'). Make sure the service address is correct and enable CORS if needed (https://enable-cors.org) may occur in the report viewer."
+description: "Learn why the error message 'Cannot access the Reporting REST service. (serviceUrl = '/api/reports'). Make sure the service address is correct and enable CORS if needed (https://enable-cors.org)' may occur in the report viewer."
 type: troubleshooting
 page_title: Cannot access the Reporting REST service. Enable CORS if needed.
 slug: cannot-access-the-reporting-rest-service

@@ -1,6 +1,6 @@
 ---
 title: Post Method to Pass Parameter in WebServiceDataSource
-description: "Learn hot to pass parameter with POST method in WebServiceDataSource component in Telerik Reporting."
+description: "Learn how to pass parameters with POST method in WebServiceDataSource component in Telerik Reporting."
 type: how-to
 page_title: Pass Parameter in WebServiceDataSource with Post Method
 slug: post-method-to-pass-parameter-in-webservicedatasource

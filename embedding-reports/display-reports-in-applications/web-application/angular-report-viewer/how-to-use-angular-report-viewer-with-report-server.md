@@ -38,9 +38,9 @@ npm install jquery
 1. Add a reference to jQuery in the scripts array of the `angular-cli.json` (as of Angular 6 the file is renamed to `angular.json`):
 
 	````TypeScript
-"scripts": ["../node_modules/jquery/dist/jquery.js"]
+"scripts": ["./node_modules/jquery/dist/jquery.js"]
 ````
-
+>note If your `node_modules` folder is not in the same directory as the `angular.json` file, adjust this path to that alternate location.
 
 1. Install the Telerik Angular Report Viewer NPM package by running:
 

@@ -44,14 +44,14 @@ The sample scenario is valid when you are working with the Telerik Reporting [St
 	1. Set the connection string to the demo AdventureWorks database.
 	1. Set the query to the following one:
 
-	````SQL
+		````SQL
 SELECT SOD.LineTotal, SOH.OrderDate
-	FROM
-	Sales.SalesPerson S
-	INNER JOIN Sales.SalesOrderHeader SOH ON SOH.SalesPersonID = S.SalesPersonID
-	INNER JOIN Sales.SalesOrderDetail SOD ON SOH.SalesOrderID = SOD.SalesOrderID
-	WHERE SOH.OrderDate between cast('2003-01-01' as datetime) and cast('2003-12-31' as datetime)
-	and S.SalesPersonId = 283
+		FROM
+			Sales.SalesPerson S
+		INNER JOIN Sales.SalesOrderHeader SOH ON SOH.SalesPersonID = S.SalesPersonID
+		INNER JOIN Sales.SalesOrderDetail SOD ON SOH.SalesOrderID = SOD.SalesOrderID
+		WHERE SOH.OrderDate between cast('2003-01-01' as datetime) and cast('2003-12-31' as datetime)
+			and S.SalesPersonId = 283
 ````
 
 

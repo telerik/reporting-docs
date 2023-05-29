@@ -25,10 +25,10 @@ Modifying report in events prior to **R3 2016**:
 
 ````C#
 void report_NeedDataSource(object sender, EventArgs e)
-	{
-		this.DataSource = GetReportData();
-		this.table.DataSource = GetTableData();
-	}
+{
+	this.DataSource = GetReportData();
+	this.table.DataSource = GetTableData();
+}
 ````
 
 With **[R3 2016]({%slug telerikreporting/upgrade/2016/r3-2016%}#api-breaking-changes)**, we applied an optimization change in the report rendering algorithm and now each definition item property values are read and cached once the report rendering starts.
@@ -98,4 +98,4 @@ If you have many legacy reports and changing the code in events in all of them i
 * [Databind to Collection Properties]({%slug how-to-databind-to-collection-properties%})
 * [How to bind Sub Report to Main Report's Data]({%slug how-to-bind-sub-report-to-main-report-s-data%})
 * [Change Sub Report based on Main Report's Data]({%slug change-sub-report-based-on-main-report-s-data%})
-* [Changing the connection string dynamically according to runtime data]({%slug changing-the-connection-string-dynamically-according-to-runtime-data%}) (the same approach can be used if you need to change data sources and to modify the report structure at run-time)
+* [Changing the connection string dynamically according to runtime data]({%slug changing-the-connection-string-dynamically-according-to-runtime-data%})

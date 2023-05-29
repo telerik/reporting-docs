@@ -5,7 +5,7 @@ description: "Learn how to serialize the session state when working with the leg
 slug: cannot-serialize-sessions-state
 tags: telerik, reporting, run, time, cannot, unable, to, serizalize, sessions, state
 published: True
-component:
+component: 
 type: troubleshooting
 res_type: kb
 ---

@@ -184,5 +184,5 @@ You may also check our Native Blazor Report Viewer released in [R3 2022](https:/
 
 The two projects can be found in our GitHub repository:
 
-* [Telerik Reporting in .NET MAUI project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMaui) 
+* [Telerik Reporting in .NET MAUI project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMaui)
 * [Telerik Reporting in .NET MAUI Blazor project](https://github.com/telerik/reporting-samples/tree/master/TelerikReportingMauiBlazor)

@@ -43,6 +43,8 @@ Angular requires folder called assets to be used for serving custom files, so th
 ],
 ````
 
+>note Depending on the Angular version, it may be necessary to add the full path for each asset in the `assets` array rather than the whole folder, for example,  `src/assets/telerikReportViewerTemplate.html`
+
 Check out the documentation for this feature here to learn how to use it: [https://github.com/angular/angular-cli/wiki/stories-asset-configuration](https://github.com/angular/angular-cli/wiki/stories-asset-configuration).
 
 ## Important notes

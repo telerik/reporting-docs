@@ -1,6 +1,6 @@
 ---
 title: Using HTML5 Report Viewer in React Application
-description: "Learn how to integrate the Telerik Reporting pure HTML5 Report Viewer in a React Application."
+description: "Learn how to integrate the Telerik Reporting pure HTML5 Report Viewer in a React Application in this step-by-step tutorial."
 type: how-to
 page_title: HTML5 Report Viewer in React Application
 slug: how-to-use-html5-viewer-in-react-js

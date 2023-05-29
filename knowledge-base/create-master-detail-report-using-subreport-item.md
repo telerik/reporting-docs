@@ -67,7 +67,7 @@ The detail report in the designer will now look like the following.
 
 ### Configuring the Report Parameter and Filter
 
-Now you have to create a report parameter and a filter that uses the report parameter. The master report passes in the current **ProductCategoryID** for each record and the detail report prints all products that have that **ProductCategoryID**.
+Now, create a report parameter and a filter that uses the report parameter. The master report passes in the current **ProductCategoryID** for each record and the detail report prints all products that have that **ProductCategoryID**.
 
 1. In the __Property Window__, navigate to the __ReportParameters__ property and click the ellipses.
 1. In the ReportParameter Collection Editor, click the __Add__ button. In the **Name** property for the parameter enter __ProductCategoryID__. Enter zero for the __Value__  property.

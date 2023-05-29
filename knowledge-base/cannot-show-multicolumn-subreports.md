@@ -41,8 +41,8 @@ The multi-column functionality is intended to be used only in the main report be
 
 This issue occurs by design and it is not intended for multi-column reports to be used as subreports.
 
-As a workaround, you may try the approach from the KB [How to Create a Multi-Column Report - Across the Page and Then Down]({%slug how-to-create-multi-column-report---across-the-page-and-then-down%}) in the subreport.\
+As a workaround, you may try the approach from the KB [How to Create a Multi-Column Report - Across the Page and Then Down]({%slug how-to-create-multi-column-report---across-the-page-and-then-down%}) in the subreport.
 
 ## See Also
 
-[How to Create a Multi-Column Report - Across the Page and Then Down]({%slug how-to-create-multi-column-report---across-the-page-and-then-down%})
+* [How to Create a Multi-Column Report - Across the Page and Then Down]({%slug how-to-create-multi-column-report---across-the-page-and-then-down%})

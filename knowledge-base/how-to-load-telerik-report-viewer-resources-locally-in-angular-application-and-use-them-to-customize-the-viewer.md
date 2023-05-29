@@ -1,12 +1,12 @@
 ---
-title: How to load Telerik Report viewer resources locally in Angular application and use them to customize the viewer
-description: In some cases a modification of the default behavior, layout or styles of the HTML5 Report Viewer in an Angualr application is needed. This article elaborates further on how to load the required default resources locally.
+title: Customize Report Viewer in Angular by Loading Its Resources Locally
+description: "Learn why in some cases a modification of the default behavior, layout or styles of the HTML5 Report Viewer in an Angualr application is needed. This article elaborates further on how to load the required default resources locally."
 type: how-to
-page_title: How to load Telerik Report viewer resources locally in Angular application and use them to customize the viewer
+page_title: Loading Report Viewer resources locally in Angular to customize it
 slug: how-to-load-telerik-report-viewer-resources-locally-in-angular-application-and-use-them-to-customize-the-viewer
 position: 
 tags: AngularReportViewer
-ticketid:
+ticketid: 
 res_type: kb
 ---
 
@@ -55,7 +55,7 @@ The following three scenarios could be applied together (if all resources have t
 
 ### Scenario 1
 
-How to load viewer's script locally **(i.e. telerikReportViewer-<VERSION>.js)**?
+How to load viewer's script (`telerikReportViewer-<VERSION>.js`) locally?
 
 #### Example
 
@@ -64,7 +64,7 @@ I would like to change the behavior of the report viewer widget (toolbar, parame
 #### How to
 
 1. Copy the script file from `C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Html5\ReportViewer\js\telerikReportViewer-<VERSION>.js` to assets folder
-2. In `index.html` load jQuery library (required for the JS logic) and the local file itself:
+1. In `index.html` load jQuery library (required for the JS logic) and the local file itself:
 
 	````HTML
 <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
@@ -74,7 +74,7 @@ I would like to change the behavior of the report viewer widget (toolbar, parame
 
 ### Scenario 2
 
-How to load viewer's HTML template locally **(i.e. telerikReportViewerTemplate.html)**?
+How to load viewer's HTML template (`telerikReportViewerTemplate.html`) locally?
 
 #### Example
 
@@ -82,8 +82,8 @@ I would like to change the layout of the report viewer widget (hide toolbar butt
 
 #### How to
 
-1. Copy the template file from *C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Html5\ReportViewer\templates\telerikReportViewerTemplate.html* to assets folder
-2. Load it setting **templateUrl** option of the report viewer like:
+1. Copy the template file from `C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Html5\ReportViewer\templates\telerikReportViewerTemplate.html` to assets folder
+1. Load it setting **templateUrl** option of the report viewer like:
 
 	````JavaScript
 <tr-viewer #viewer1 
@@ -100,7 +100,7 @@ I would like to change the layout of the report viewer widget (hide toolbar butt
 
 ### Scenario 3
 
-How to load viewer's styles locally **(i.e. telerikReportViewer.css)**?
+How to load viewer's styles (`telerikReportViewer.css`) locally?
 
 #### Example
 
@@ -108,9 +108,9 @@ I would like to change the default styling of the viewer widget.
 
 #### How to
 
-1. **Important:** This depends on the template, so make sure that local **telerikReportViewerTemplate.html** is used (check Scenario 2). 
-2. Copy the stylesheet file from *C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Html5\ReportViewer\styles\telerikReportViewer.css* to assets folder
-3. Open **telerikReportViewerTemplate.html** file and change the path to the stylesheet resource from:
+1. **Important:** This depends on the template, so make sure that local `telerikReportViewerTemplate.html` is used (check Scenario 2). 
+1. Copy the stylesheet file from `C:\Program Files (x86)\Progress\Telerik Reporting <VERSION>\Html5\ReportViewer\styles\telerikReportViewer.css` to assets folder
+1. Open `telerikReportViewerTemplate.html` file and change the path to the stylesheet resource from:
 
 	````HTML
 <link href="{service}resources/styles/telerikReportViewer-css" rel="stylesheet" />

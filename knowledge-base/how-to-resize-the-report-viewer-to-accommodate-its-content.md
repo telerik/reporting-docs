@@ -145,24 +145,24 @@ $(document).ready(function () {
 
 	````JavaScript
 <script type="text/javascript">
-	function onPageReady() {
-		resizeViewer();
-	}
-
-	function resizeViewer() {
-		var pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2, // Calculate the report page height
-			viewer = $("#reportViewer1"),
-			viewerHeight = viewer.height();
-	
-		if (viewerHeight !== pageHeight ) {
-			viewer.height(pageHeight);
-			var documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
-			documentMapSplitter.resize(true);
-	
-			var parameterSplitter = $(".trv-parameters-splitter").data("kendoSplitter");
-			parameterSplitter.resize(true);
+		function onPageReady() {
+			resizeViewer();
 		}
-	}
-</script>
+
+		function resizeViewer() {
+			var pageHeight = $(".trv-pages-area .trv-page-wrapper").height() + $(".trv-nav").outerHeight() + 2, // Calculate the report page height
+				viewer = $("#reportViewer1"),
+				viewerHeight = viewer.height();
+		
+			if (viewerHeight !== pageHeight ) {
+				viewer.height(pageHeight);
+				var documentMapSplitter = $(".trv-document-map-splitter").data("kendoSplitter");
+				documentMapSplitter.resize(true);
+		
+				var parameterSplitter = $(".trv-parameters-splitter").data("kendoSplitter");
+				parameterSplitter.resize(true);
+			}
+		}
+	</script>
 ````
 

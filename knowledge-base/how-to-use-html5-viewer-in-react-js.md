@@ -1,12 +1,11 @@
 ---
-title: How to use HTML5 Report Viewer in React Application
-description: How to use HTML5 Report Viewer in React Application
+title: Using HTML5 Report Viewer in React Application
+description: "Learn how to integrate the Telerik Reporting pure HTML5 Report Viewer in a React Application."
 type: how-to
 page_title: HTML5 Report Viewer in React Application
 slug: how-to-use-html5-viewer-in-react-js
 position: 
 tags: react,viewer,report,reporting
-ticketid:
 res_type: kb
 ---
 
@@ -29,11 +28,11 @@ res_type: kb
 
 ## Description
 
->important Starting with [R1 2022 (16.0.22.119)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2022-16-0-22-119) we introduced a dedicated [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}). 
+>important Starting with [R1 2022 (16.0.22.119)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2022-16-0-22-119) we introduced a dedicated [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}).
 
 The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is built upon HTML5, CSS, and JavaScript. This allows the viewer to be used in virtually any JavaScript framework.
-[React](https://reactjs.org/) has been gaining a lot of traction and we would like to explore how the HTML5 Report Viewer could be implemented, together with its dependencies, in a React application.
-The solution we are about to demonstrate is a very basic approach to create a new React application, include the viewer's dependencies and lastly, display the report viewer.
+
+[React](https://reactjs.org/) has been gaining a lot of traction and we would like to explore how the HTML5 Report Viewer could be implemented, together with its dependencies, in a React application. The solution we are about to demonstrate is a very basic approach to create a new React application, include the viewer's dependencies and lastly, display the report viewer.
 
 ## Solution
 
@@ -49,40 +48,38 @@ npx create-react-app my-app
 
 	>note You’ll need to have **Node >= 6** and **npm >= 5.2** on your machine.
 
-2. The viewer depends on **jQuery**. Add a CDN link to jQuery library in **public/index.html**:
+1. The viewer depends on **jQuery**. Add a CDN link to jQuery library in `public/index.html`:
 
 	````HTML
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 ````
 
 
-3. Add the desired [Kendo UI Less-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) to **index.html** in order to style the viewer:
+1. Add the desired [Kendo UI Less-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) to `index.html` in order to style the viewer:
 
 	````HTML
 <head>
 		<link href="http://kendo.cdn.telerik.com/2020.1.114/styles/kendo.common.min.css" rel="stylesheet" />
 		<link href="http://kendo.cdn.telerik.com/2020.1.114/styles/kendo.default.min.css" rel="stylesheet" />
-		...
+		//...
 ````
 
 
-4. Create new **assets** folder inside **public** and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js*).
-Refer the path to the file in **index.html** as:
+1. Create new `assets` folder inside `public` and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js`. Refer the path to the file in `index.html` as:
 
 	````HTML
 <script src="/assets/telerikReportViewer-15.0.21.120.min.js"></script>
 ````
 
 
-5. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the
-HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js\telerikReportViewer.kendo-15.0.21.120.min.js*) 
-and can be copied to the React application's **public/assets** folder. Then reference it in **index.html**:
+1. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js\telerikReportViewer.kendo-15.0.21.120.min.js` and can be copied to the React application's `public/assets` folder. Then reference it in `index.html`:
 
 	````HTML
 <script src="/assets/telerikReportViewer.kendo-15.0.21.120.min.js"></script>
 ````
 
-6. Create a new report viewer component (*components/ReportViewer.js*) and configure the routes accordingly. The new component would contain the following template, scripts, and styles:
+
+1. Create a new report viewer component (`components/ReportViewer.js`) and configure the routes accordingly. The new component would contain the following template, scripts, and styles:
 
 	````TypeScript
 import React, { Component } from 'react';
@@ -110,37 +107,36 @@ import React, { Component } from 'react';
 ````
 
 
-7. In the required page (for example *App.js*), render the React component:
+1. In the required page (for example `App.js`), render the React component:
 
 	````TypeScript
 import React, { Component } from 'react';
 	import './App.css';
-
 	import ReportViewer from './components/ReportViewer';
 
 	class App extends Component {
-	render() {
-	return (
-		<div className="App">
-		Welcome to React App
-		<ReportViewer />
-		</div>
-	);
-	}
+		render() {
+			return (
+				<div className="App">
+					Welcome to React App
+					<ReportViewer />
+				</div>
+			);
+		}
 	}
 
 	export default App;
 ````
 
 
-8. Set the default styles of the report viewer to the corresponing page stylesheet file (for example *App.css*):
+1. Set the default styles of the report viewer to the corresponing page stylesheet file (for example `App.css`):
 
 	````HTML
 body {
 		font-family: Verdana, Arial;
 		margin: 5px;
 	}
-	
+
 	#reportViewer1 {
 		position: absolute;
 		top: 70px;
@@ -153,13 +149,14 @@ body {
 ````
 
 
-9. Run
+1. Run
 
 	````
 npm start
 ````
 
-	![HTML5 Report Viewer in React](resources/report-viewer-in-react-app.png)
+
+![HTML5 Report Viewer in React application showing the Report Catalog demo](resources/report-viewer-in-react-app.png)
 
 ## Additional resources
 
@@ -167,4 +164,5 @@ npm start
 
 ## See Also
 
+* [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%})
 * [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)

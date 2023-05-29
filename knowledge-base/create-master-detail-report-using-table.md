@@ -86,6 +86,6 @@ This step creates a filter that uses the [`ReportItem.DataObject`]({%slug teleri
 
 Click the **Preview** button to preview the report. Note that product numbers and names from the detail table are displayed under each product category from the master report.
 
-	![The Preview result in the Visual Studio Report Designer for the category Accessories](images/MasterDetailTable0002.png)
+![The Preview result in the Visual Studio Report Designer for the category Accessories](images/MasterDetailTable0002.png)
 
 >You can create the same report layout with the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}).

@@ -57,9 +57,9 @@ Here we demonstrate the approach step-by-step with an [ObjectDataSource]({%slug 
 
 	![Assembly Microsoft.EntityFrameworkCore properties in VS 2019 with its path](images/assemblypathinvs.png)
 
-	or in the folder where NuGet packages for the user are generally stored - `C:\Users\\_username_\\.nuget\\packages\\_packagename_\\_version_\\lib\\_framework_`, for example, `C:\Users\arabadzhiev\.nuget\packages\microsoft.entityframeworkcore\3.1.1\lib\netstandard2.0`.
+	or in the folder where NuGet packages for the user are generally stored - `C:\Users\{username}\.nuget\packages\{packagename}\{version}\lib\{framework}`, for example, `C:\Users\arabadzhiev\.nuget\packages\microsoft.entityframeworkcore\3.1.1\lib\netstandard2.0`.
 
-	Some packages can be used globally on the machine and are stored in `C:\Program Files\dotnet\sdk\NuGetFallbackFolder\\_packagename_\\_version_\\lib\\_framework_`, for example `C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\3.1.1\lib\netstandard2.0`.
+	Some packages can be used globally on the machine and are stored in `C:\Program Files\dotnet\sdk\NuGetFallbackFolder\{packagename}\{version}\lib\{framework}`, for example `C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\3.1.1\lib\netstandard2.0`.
 
 1. Close the designer and repeat steps 4-6 until the assembly is discovered by the designer.
 
@@ -69,4 +69,4 @@ The [FuslogvwLogs.zip](resources/fuslogvwlogs.zip) file contains the ObjectDataS
 
 A screenshot of the entire log folder can be seen below:
 
-	![The log folder created by Fuslogvw showing the assemblies that failed to load in the Standalone Designer](images/fuslogvwforreportdesigner.png)
+![The log folder created by Fuslogvw showing the assemblies that failed to load in the Standalone Designer](images/fuslogvwforreportdesigner.png)

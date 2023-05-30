@@ -1,6 +1,6 @@
 ---
-title: Toolbar Icons and Search Dialog of the Native Blazor Viewer Appear Blank
-page_title: Icons are not visualized in the toolbar and search dialog of the Native Blazor Viewer
+title: Toolbar Icons and Search Dialog of Native Blazor Viewer Are Blank
+page_title: Icons not shown in toolbar and search dialog of Native Blazor Viewer
 description: "Learn how to visualize all the toolbar and search dialog icons of the Native Blazor Report Viewer built with Telerik Blazor UI 3.7.0 when using Telerik Blazor UI 4.0.0."
 type: how-to
 slug: blank-icons-in-blazor-native-report-viewer
@@ -47,7 +47,7 @@ Apply the following changes in:
 * `_Layout.cshtml` for .NET 6 projects
 * `Host.cshtml` for .NET 7 projects
 
-1. Download the CSS file [icon-patch.css](./resources/icon-patch.css) from our GitHub repository and save it to your project, for example in the folder `wwwroot/css`.
+1. Download the CSS file [icon-patch.css](resources/icon-patch.css) from our GitHub repository and save it to your project, for example in the folder `wwwroot/css`.
 1. Reference the `icon-patch.css` after the CSS file of the viewer:
 
 	`<link rel="stylesheet" href="css/icon-patch.css" />`
@@ -75,7 +75,7 @@ Apply the following changes in:
 * `_Layout.cshtml` for .NET 6 projects
 * `Host.cshtml` for .NET 7 projects
 
-1. Download the CSS file [icon-patch-4-0-1.css](./resources/icon-patch-4-0-1.css) from our GitHub repository and save it to your project, for example in the folder `wwwroot/css`.
+1. Download the CSS file [icon-patch-4-0-1.css](resources/icon-patch-4-0-1.css) from our GitHub repository and save it to your project, for example in the folder `wwwroot/css`.
 1. Reference the `icon-patch-4-0-1.css` after the CSS file of the viewer:
 
 	`<link rel="stylesheet" href="css/icon-patch-4-0-1.css" />`

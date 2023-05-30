@@ -63,7 +63,7 @@ Country,City,Lat,Long,Value
 	* `AutoRefresh`: True 
 	* `Value` to France and `Visible` to True so it has some initial state.
 
-1. Add new Filter in map’s **Filters** collection and set it as  **Expression** to `=Fields.Country`, **Operator** to `=` and **Value** to `=Parameters.paramCountry.Value`.
+1. Add new Filter in map’s **Filters** collection and set its **Expression** to `=Fields.Country`, **Operator** to `=` and **Value** to `=Parameters.paramCountry.Value`.
 
 	If you preview the report, it should see your map and the parameter above. Changing the parameter values you will notice that the map extent changes accordingly. The extent is dynamically calculated for Germany and France but for Switzerland it defaults to "whole world", because in our data Switzerland has only one point.
 

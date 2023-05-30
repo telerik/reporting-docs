@@ -6,7 +6,6 @@ slug: installer-fails
 previous_url: troubleshooting/installation
 tags: telerik, reporting, troubleshoot, installer, fails
 published: True
-component:
 type: troubleshooting
 res_type: kb
 ---

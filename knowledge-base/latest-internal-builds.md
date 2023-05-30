@@ -21,7 +21,7 @@ res_type: kb
 
 ## What is LIB?
 
-The Latest Internal Build (LIB) or а nightly build is a distribution of the Telerik Reporting assemblies, built against the latest development environment.
+The Latest Internal Build (LIB) or a nightly build is a distribution of the Telerik Reporting assemblies, built against the latest development environment.
 
 It contains all the newest bug fixes.
 

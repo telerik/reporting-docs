@@ -2,9 +2,8 @@
 title: Implementing an EFCore IDefinitionStorage
 description: "Learn how to create a custom IDefinitionStorage in Telerik Reporting that stores reports in a database using EntityFramework Core."
 type: how-to
-page_title: Using an MSSQL Server database as Reports Storage for Web Report Designer
+page_title: MSSQL Server database as Reports Storage for Web Report Designer
 slug: implement-database-definition-storage-efcore
-position:
 tags: Web Report Designer
 ticketid: 1600996
 res_type: kb
@@ -149,7 +148,7 @@ using System;
 				{
 					return null;
 				}
-	
+
 				return new ResourceFileModel()
 				{
 					FileName = dbReportModel.Name,
@@ -328,7 +327,7 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 					.Select(f => f.ToResourceFolderModel()).AsEnumerable<ResourceModelBase>();
 
 				var result = folders.Union(reps);
-		
+
 				return Task.FromResult<IEnumerable<ResourceModelBase>>(result);
 			}
 
@@ -348,9 +347,9 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 					report.Name = model.Name;
 					report.Uri = report.Uri.Replace(oldName, model.Name);
 					report.ModifiedOn = DateTime.Now;
-		
+
 					this._dbContext.SaveChanges();
-		
+
 					return Task.FromResult(report.ToResourceFileModel());
 				}
 				throw new ResourceNotFoundException();
@@ -364,7 +363,7 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore;
 					await RenameFolderAndSubFolders(folder, model);
 					folder.ModifiedOn = DateTime.Now;
 					this._dbContext.SaveChanges();
-		
+
 					return folder.ToResourceFolderModel();
 				}
 				throw new ResourceFolderNotFoundException();
@@ -483,7 +482,8 @@ public class CustomReportSourceResolver : IReportSourceResolver
 	{
 
 		private SqlDefinitionStorageContext _dbContext { get; }
-		public CustomReportSourceResolver(SqlDefinitionStorageContext context) {
+		public CustomReportSourceResolver(SqlDefinitionStorageContext context)
+		{
 			this._dbContext = context;
 		}
 
@@ -526,14 +526,14 @@ var builder = WebApplication.CreateBuilder(args);
 	builder.Services.AddScoped<IReportSourceResolver, CustomReportSourceResolver>();
 
 	var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "..", "..", "..", "..", "Report Designer", "Examples");
-	
+
 	// Configure dependencies for ReportsController.
 	builder.Services.TryAddScoped<IReportServiceConfiguration>(sp =>
 		new ReportServiceConfiguration
 		{
 			// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
 			ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
-	
+
 			// In case the ReportingEngineConfiguration needs to be loaded from a specific configuration file, use the approach below:
 			//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
 			HostAppId = "SqlDefinitionStorageExample",
@@ -551,7 +551,7 @@ var builder = WebApplication.CreateBuilder(args);
 	});
 
 	var app = builder.Build();
-	
+
 	using (var serviceScope = app.Services.CreateScope())
 	{
 		serviceScope.ServiceProvider
@@ -603,7 +603,6 @@ public static class ReportsInitializer
 	}
 ````
 
-
 The operation can be triggered in the initialization of the application, for example, in `Program.cs`:
 
 ````CSharp
@@ -612,7 +611,6 @@ The operation can be triggered in the initialization of the application, for exa
 
 	app.Run();
 ````
-
 
 ## Sample Project
 

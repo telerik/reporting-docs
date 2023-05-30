@@ -25,7 +25,7 @@ res_type: kb
 
 ## Description
 
-Sometimes we need to validate the input data so that it will match our requirements and rules. The validation could be on the Client or on the Server. The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) based on the value of another report parameter. If you want to see this feature implemented on the Server-side, vote for it on our public [Portal](https://feedback.telerik.com/reporting/1424141-server-side-parameters-validation).The approach could be applied to any other HTML5 Web Report Viewer and with little customization to validate different scenarios.
+Sometimes we need to validate the input data so that it will match our requirements and rules. The validation could be on the Client or on the Server. The following guide shows how to apply Client-side validation on a report parameter in [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) based on the value of another report parameter. If you want to see this feature implemented on the Server-side, vote for it on [our public feedback portal](https://feedback.telerik.com/reporting/1424141-server-side-parameters-validation). The approach could be applied to any other HTML5 Web Report Viewer and with little customization to validate different scenarios.
 
 ## Solution
 

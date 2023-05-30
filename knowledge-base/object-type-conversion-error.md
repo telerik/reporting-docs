@@ -1,11 +1,10 @@
 ---
-title: Error Message about Object Type Conversion Occurs
-page_title: Error Message about Object Type Conversion Occurs Troubleshooting
-description: "Learn how to fix an error about failed object type conversion in Telerik Reporting."
+title: Error Message About Object Type Conversion
+page_title: Troubleshooting Error Message about Object Type Conversion
+description: "Learn how to troubleshoot and fix an error about failed object type conversion from the same type in Telerik Reporting."
 slug: object-type-conversion-error
 tags: telerik, reporting, troubleshoot, error, object, type, conversion
 published: True
-component:
 type: troubleshooting
 res_type: kb
 ---
@@ -22,7 +21,7 @@ res_type: kb
 			<td>Version</td>
 			<td>Q2 2012 and later</td>
 		</tr>
-	        <tr>
+		<tr>
 			<td>Report Viewers</td>
 			<td>WinForms, WPF, ASP.NET</td>
 		</tr>
@@ -31,16 +30,19 @@ res_type: kb
 
 ## Description
 
-An `Object of type 'XXX' cannot be converted to type 'XXX'` occurs where `XXX` is the same `Type`.         
+An `Object of type 'XXX' cannot be converted to type 'XXX'` occurs where `XXX` is the same `Type`.
 
 ## Cause
 
-The possible reason for the issue is that not all Telerik Reporting assemblies are upgraded to the same version.  
+The possible reason for the issue is that not all Telerik Reporting assemblies are upgraded to the same version.
 
 ## Solution
 
-1. Run the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).             
+1. Run the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}).
+1. Restart Visual Studio.
+1. Manually verify that all Telerik Reporting assemblies are upgraded to the same version. For more information, refer to the article on [upgrading Telerik Reporting projects]({%slug telerikreporting/upgrade/overview%}).
 
-1. Restart Visual Studio.             
+## See Also
 
-1. Manually verify that all Telerik Reporting assemblies are upgraded to the same version. For more information, refer to the article on [upgrading Telerik Reporting projects]({%slug telerikreporting/upgrade/overview%}).             
+* [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%})
+* [Upgrading Telerik Reporting Projects]({%slug telerikreporting/upgrade/overview%})

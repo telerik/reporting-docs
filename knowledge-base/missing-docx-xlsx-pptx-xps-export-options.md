@@ -32,10 +32,13 @@ Trying to export a report to a rendering format is failing due to that rendering
 
 ## Error Message
 
-````
-Missing DOCX, XLSX, PPTX, XPS export options.
-If you export programmatically, the error message will be: **"X rendering format is not available"**, where X is DOCX, XLSX, PPTX, XPS.
-````
+`Missing DOCX, XLSX, PPTX, XPS export options.`
+
+If you export programmatically, the error message will be: 
+
+`{X} rendering format is not available`
+
+where {X} is DOCX, XLSX, PPTX, or XPS.
 
 ## Possible Cause
 

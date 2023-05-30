@@ -65,7 +65,7 @@ Country,City,Lat,Long,Value
 
 1. Add new Filter in map’s **Filters** collection and set its **Expression** to `=Fields.Country`, **Operator** to `=` and **Value** to `=Parameters.paramCountry.Value`.
 
-	If you preview the report, it should see your map and the parameter above. Changing the parameter values you will notice that the map extent changes accordingly. The extent is dynamically calculated for Germany and France but for Switzerland it defaults to "whole world", because in our data Switzerland has only one point.
+	If you preview the report, it should show the map and the parameter above. Changing the parameter values you will notice that the map extent changes accordingly. The extent is dynamically calculated for Germany and France but for Switzerland it defaults to "whole world", because in our data Switzerland has only one point.
 
 1. Add two new [PointMapSeries](/api/telerik.reporting.pointmapseries) instances to the map’s Series collection. They will contain the virtual points that are positioned on the same parallel or meridian with the real point, ensuring a valid extent. Keep in mind that the meridians converge at the Poles so your extent won’t cover the same area everywhere on Earth. However, Mercator projection we use "stretches" the globe near the Poles so it’s up to you to determine the offset of the virtual points. In our case we will position the virtual points at `1 degree` east and west from the real point, so set the series properties as follows:  **Latitude**: `=Fields.Lat`, **Longitude**: `=Fields.Long-1` (respectively `=Fields.Long+1` for the second series).
 

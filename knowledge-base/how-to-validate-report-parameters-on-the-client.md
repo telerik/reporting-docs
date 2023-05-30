@@ -6,7 +6,6 @@ page_title: Client-side report parameters validation in HTML5 Report Viewers
 slug: how-to-validate-report-parameters-on-the-client
 position: 
 tags: viewer,report,reporting, report parameters, validation, client-side validation, report parameters validation
-ticketid:
 res_type: kb
 ---
 

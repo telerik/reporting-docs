@@ -1,16 +1,15 @@
 ---
-title: Modify exported report document prior serving it to the viewer client
-description: This article elaborates on how to modify exported report document prior serving it to the viewer client
+title: Modifying Report Document Before Serving It To the Viewer
+description: "Learn how to modify the exported report document prior serving it to the viewer client in Telerik Reporting."
 type: how-to
-page_title: Modify exported report document prior serving it to the viewer client
+page_title: Modifying exported report document prior serving it to viewer client
 slug: modify-exported-report-document-before-serving-it-to-the-viewer-client
-position: 
 tags: 
-ticketid:
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -21,105 +20,93 @@ res_type: kb
 
 ## Description
 
-As of Telerik Reporting R3 2016 we introduced a points granting you access to rendered reports before providing them to the client.
+With [Telerik Reporting R3 2016](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914)) we introduced a point granting you access to rendered reports before providing them to the client.
 
-In the following code snippets is demonstrated how to modify a report rendered in PDF format from desktop report viewers or service prior serving the report to the viewer client. The code snippets cover both desktop viewers and web viewers.
+In the following code snippets we demonstrate how to modify a report rendered in PDF format from desktop report viewers or service prior serving the report to the viewer client. The code snippets cover both desktop viewers and web viewers.
 
 ## Solution
 
-#### Desktop Viewers
+### Desktop Viewers
 
-Open the Windows Form or WPF Window code behind (F7) and handle report viewer ExportEnd as shown in the following snippet:
+Open the Windows Form or WPF Window code behind (press `F7`) and handle report viewer event `ExportEnd` as shown in the following snippet:
 
-C#
-```C#
+````C#
 public ReportViewerFormOrWindow()
 {
-    InitializeComponent();
-    this.reportViewer1.ExportEnd += ReportViewer1ExportEnd;
+	InitializeComponent();
+	this.reportViewer1.ExportEnd += ReportViewer1ExportEnd;
 }
 
-private void ReportViewer1ExportEnd(object sender, 
-                                    Telerik.ReportViewer.Common.ExportEndEventArgs args)
+private void ReportViewer1ExportEnd(object sender, Telerik.ReportViewer.Common.ExportEndEventArgs args)
 {
-    if(args.DocumentExtension.Equals("pdf"))  
-    {  
-      //modify the rendered document in args.DocumentBytes 
-    } 
+	if(args.DocumentExtension.Equals("pdf"))
+	{
+		//modify the rendered document in args.DocumentBytes 
+	}
 }
-```
-
-VB
-```VB
+````
+````VB
 Public Sub New()
-    InitializeComponent()
-    AddHandler Me.reportViewer1.ExportEnd, AddressOf ReportViewer1ExportEnd
+	InitializeComponent()
+	AddHandler Me.reportViewer1.ExportEnd, AddressOf ReportViewer1ExportEnd
 End Sub
 
-Private Sub ReportViewer1ExportEnd(sender As Object,
-                                   args As Telerik.ReportViewer.Common.ExportEndEventArgs)
-    'modify the rendered document in args.DocumentBytes 
-    If args.DocumentExtension.Equals("pdf") Then
-    End If
+Private Sub ReportViewer1ExportEnd(sender As Object, args As Telerik.ReportViewer.Common.ExportEndEventArgs)
+	If args.DocumentExtension.Equals("pdf") Then
+		'modify the rendered document in args.DocumentBytes
+	End If
 End Sub
-```
+````
 
-#### Web Viewers
+### Web Viewers
 
-In case you use Web viewer you have to overide the Telerik Reporting service OnGetDocument:
+In case you use Web viewer you have to overide the Telerik Reporting service method `OnGetDocument`:
 
-##### Web API
+#### Web API
 
-C#
-```C#
+````C#
 public class ReportController : Telerik.Reporting.Services.WebApi.ReportsControllerBase
 {
-    protected override void OnGetDocument(Telerik.Reporting.Services.GetDocumentEventArgs args)
-    {
-        if(args.Extension.Equals("pdf"))  
-        {  
-          //modify the rendered document in args.DocumentBytes 
-        } 
-    }
+	protected override void OnGetDocument(Telerik.Reporting.Services.GetDocumentEventArgs args)
+	{
+		if(args.Extension.Equals("pdf"))
+		{
+			//modify the rendered document in args.DocumentBytes 
+		}
+	}
 }
-```
-
-VB
-```VB
-Public Class ReportController
-    Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
-    Protected Overrides Sub OnGetDocument(args As Telerik.Reporting.Services.GetDocumentEventArgs)
-        'modify the rendered document in args.DocumentBytes 
-        If args.Extension = "PDF" Then
-        End If
-    End Sub
+````
+````VB
+Public Class ReportController Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
+	Protected Overrides Sub OnGetDocument(args As Telerik.Reporting.Services.GetDocumentEventArgs)
+		If args.Extension = "PDF" Then
+			'modify the rendered document in args.DocumentBytes
+		End If
+	End Sub
 End Class
-```
+````
 
 #### ServiceStack
 
-C#
-```C#
+````C#
 public class ReportController : Telerik.Reporting.Services.WebApi.ReportsControllerBase
 {
-    protected override void OnGetDocument(Telerik.Reporting.Services.GetDocumentEventArgs args)
-    {
-        if(args.Extension.Equals("pdf"))  
-        {  
-          //modify the rendered document in args.DocumentBytes 
-        } 
-    }
+	protected override void OnGetDocument(Telerik.Reporting.Services.GetDocumentEventArgs args)
+	{
+		if(args.Extension.Equals("pdf"))
+		{
+			//modify the rendered document in args.DocumentBytes 
+		}
+	}
 }
-```
-
-VB
-```VB
-Public Class ReportController
-    Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
-    Protected Overrides Sub OnGetDocument(args As Telerik.Reporting.Services.GetDocumentEventArgs)
-        'modify the rendered document in args.DocumentBytes 
-        If args.Extension = "PDF" Then
-        End If
-    End Sub
+````
+````VB
+Public Class ReportController Inherits Telerik.Reporting.Services.WebApi.ReportsControllerBase
+	Protected Overrides Sub OnGetDocument(args As Telerik.Reporting.Services.GetDocumentEventArgs)
+		If args.Extension = "PDF" Then
+			'modify the rendered document in args.DocumentBytes
+		End If
+	End Sub
 End Class
-```
+````
+

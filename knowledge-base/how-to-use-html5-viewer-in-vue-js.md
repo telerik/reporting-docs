@@ -1,11 +1,11 @@
 ---
-title: How to use HTML5 Report Viewer in Vue.js
-description: How to use HTML5 Report Viewer in Vue.js
+title: Report Viewer and Designer in Vue
+description: "Learn how to implement the HTML5 Report Viewer and Web Report Designer in a Vue application."
 type: how-to
-page_title: HTML5 Report Viewer in Vue.js
-slug: how-to-use-html5-viewer-in-vue-js
+page_title: Using the Report Viewer and Designer in Vue
+slug: how-to-use-viewer-and-designer-in-vue
 position: 
-tags: vue,viewer,report,reporting
+tags: vue,viewer,report,designer,reporting
 ticketid:
 res_type: kb
 ---
@@ -15,165 +15,145 @@ res_type: kb
 <table>
 	<tr>
 		<td>Product</td>
-		<td>Progress® Telerik® Reporting R2 2020</td>
+		<td>Progress® Telerik® Reporting R3 2022+</td>
 	</tr>
 	<tr>
 		<td>Framework</td>
-		<td>Vue.js</td>
-	</tr>
-	<tr>
-		<td>Report Viewer</td>
-		<td>HTML5</td>
+		<td>Vue</td>
 	</tr>
 </table>
 
 
 ## Description
 
-The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is built upon HTML5, CSS, and JavaScript. This allows the viewer to be used in virtually any JavaScript framework.
-[Vue.js](https://vuejs.org/) has been gaining a lot of traction and we would like to explore how the HTML5 Report Viewer could be implemented, together with its dependencies, in a Vue application.
-The solution we are about to examine is a very basic approach to create a new Vue.js application, include the viewer's dependencies, and display the report viewer.
+The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) are built upon HTML5, CSS, and JavaScript. This allows using them to be used in virtually any JavaScript framework including [Vue.js](https://vuejs.org/).
+
+The solution we are about to examine is a very basic approach to create a new Vue application, include the viewer and designer dependencies, and display them in separate views.
 
 ## Solution
 
-The following guide assumes previous knowledge of Vue.js:
+The following guide assumes previous knowledge of Vue:
 
 1. Start by creating a new Vue application using the following CLI command:
 
-	```
-	vue init webpack hello-world
-	```
+	````PowerShell
+npm init vue@latest
+````
 
-2. The viewer depends on **jQuery**. In the application folder run:
+1. Next, include the necessary JS dependencies of the viewer and designer in `index.html`. This includes the [jQuery](https://jquery.com/) library, [Kendo](https://www.telerik.com/kendo-ui). For this example, we will be retrieving the Report Viewer and Report Designer JS resources from the [online demos](https://demos.telerik.com/reporting).
 
-	```
-	npm install jquery --save
-	```
+	````HTML
+<body>
+		<div id="app"></div>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://kendo.cdn.telerik.com/{{site.kendosubsetversion}}/js/kendo.all.min.js"></script>
+		<script src="https://demos.telerik.com/reporting/api/reports/resources/js/telerikReportViewer"></script>
+		<script src="https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner"></script>
+		<script type="module" src="/src/main.js"></script>
+</body>
+````
 	
-3. Open **build/webpack.base.conf.js** and add **plugins**:
+1. Then, add the default Kendo SASS theme again in `index.html`, inside the `head` element, to style the report viewer and designer
 
-	```
-	const webpack = require('webpack')
-	...
-	```
+	````HTML
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/5.9.0/default/default-main.css" />
+````
 
-	```
-	module.exports = {
-	  plugins: [
-		new webpack.ProvidePlugin({
-		  $: 'jquery',
-		  jquery: 'jquery',
-		  'window.jQuery': 'jquery',
-		  jQuery: 'jquery'
-		})
-	  ]
-	  ...
-	```
+1. Create a new report viewer component and configure the routes accordingly. The new component contains a *div* element to hold the report viewer object and applies CSS to this element. The component calls the `telerik_ReportViewer` method to create the report viewer with the specified configuration options. It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}).
 
-4. If you are using **ESLint**, open **.eslintrc.js** and add **globals**:
+	````
+<template>
+	<div class="hello">
+	<h1></h1>
+	<div id="reportViewer1">loading...</div>
+	</div>
+</template>
 
-	```
-	module.exports = {
-	  globals: {
-		"$": true,
-		"jQuery": true
-	  },
-	  ...
-	```
-
-5. Add the desired [Kendo UI Less-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling) to **index.html** in order to style the viewer:
-
-	```
-	<head>
-	  <link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.common.min.css" rel="stylesheet" />
-	  <link href="https://kendo.cdn.telerik.com/2020.1.114/styles/kendo.default.min.css" rel="stylesheet" />
-	...
-	```
-	
-6. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the
-HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R2 2020\Html5\ReportViewer\js\telerikReportViewer.kendo-14.1.20.618.min.js*) 
-and can be copied to the Vue application's **assets** folder (*src/assets/ReportViewer/js*). Then reference it in **App.vue**:
-
-	```
-	<script>
-	import './assets/ReportViewer/js/telerikReportViewer.kendo-14.1.20.618.min.js'
-	...
-	```
-	
-	To avoid getting errors from **ESLint** for any report viewer dependencies, add them to **.eslintignore**:
-	
-	```
-	src/assets/ReportViewer/
-	src/components/ReportViewer.vue	
-	```
-
-7. Add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder (*C:\Program Files (x86)\Progress\Telerik Reporting R2 2020\Html5\ReportViewer\js*) to **assets** (*src/assets/ReportViewer/js*).
-
-8. Create a new report viewer component and configure the routes accordingly. The new component contains a *div* element to hold the report viewer object and applies CSS to this element. The component calls the **telerik_ReportViewer** method to create the report viewer with the specified configuration options. It is important that the **serviceUrl** option points to the URL of a working [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}). How to implement this service is described [here]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}).
-
-	```
-	<template>
-	  <div class="hello">
-		<h1>{{ msg }}</h1>
-		<div id="reportViewer1">loading...</div>
-	  </div>
-	</template>
-
-	<script>
-	import '../assets/ReportViewer/js/telerikReportViewer-14.1.20.618.min.js'
-
-	export default {
-	  name: 'ReportViewer',
-	  data () {
-		return {
-		  msg: 'Welcome to Your Vue.js App'
-		}
-	  },
-	  mounted () {
-		this.$nextTick(function () {
-		  $('#reportViewer1')
-			.telerik_ReportViewer({
-			  serviceUrl: 'http://my.service.url/api/reports/',
-			  reportSource: {
-				report: 'Telerik.Reporting.Examples.CSharp.ReportCatalog, CSharp.ReportLibrary'
-			  },
-			  viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
-			  scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
-			  scale: 1.0,
-			  sendEmail: { enabled: true }
-			})
-		})
-	  }
+<script>
+export default {
+	name: 'ReportViewer',
+	data () {
+	return {
+		msg: 'Welcome to Your Vue.js App'
 	}
-	</script>
+	},
+	mounted () {
+	this.$nextTick(function () {
+		$('#reportViewer1')
+		.telerik_ReportViewer({
+			serviceUrl: 'http://demos.telerik.com/reporting/api/reports/',
+			reportSource: {
+			report: 'Dashboard.trdx'
+			},
+			viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
+			scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
+			scale: 1.0,
+			sendEmail: { enabled: true }
+		})
+	})
+	}
+}
+</script>
 
-	<!-- Add "scoped" attribute to limit CSS to this component only -->
-	<style scoped>
-	  body {
-		  font-family: Verdana, Arial;
-		  margin: 5px;
-	  }
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+	body {
+		font-family: Verdana, Arial;
+		margin: 5px;
+	}
 
-	  #reportViewer1 {
-		  position: absolute;
-		  top: 70px;
-		  bottom: 10px;
-		  left: 10px;
-		  right: 10px;
-		  overflow: hidden;
-		  clear: both;
-	  }
-	</style>
-	```
+	#reportViewer1 {
+		position: relative;
+		width: 80vw;
+		height: 1000px;
+	}
+</style>
+````
 
-9. Run
+1. Create a new report designer component and configure the routes accordingly. The new component contains a *div* element to hold the report designer object and applies CSS to this element. The component calls the `telerik_WebReportDesigner` method to create the report viewer with the specified configuration options. It is important that the `serviceUrl` option points to the URL of a working [Reporting REST Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}).
 
-	```
+	````
+<template>
+	<div id="wrd1">...</div>
+</template>
+
+<script>
+	export default {
+	name: "WebReportDesigner",
+	mounted() {
+		this.$nextTick(function () {
+		$("#wrd1")
+			.telerik_WebReportDesigner({
+			toolboxArea: {
+				layout: "list", //Change to "grid" to display the contents of the Components area in a flow grid layout.
+			},
+			serviceUrl: "https://demos.telerik.com/reporting/api/reportdesigner/",
+			report: "Barcodes Report.trdx",
+			})
+			.data("telerik_WebDesigner");
+		});
+	},
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+	#wrd1 {
+	position: relative;
+	width: 100%;
+	height: 880px;
+	}
+</style>
+````
+
+1. Run the `dev` script to start the application in development mode:
+
+	````PowerShell
 	npm run dev
-	```
+````
 	
 	![HTML5 Report Viewer in Vue.js](resources/vuer-webpack.png)
 	
 ## See Also
 
-[Download the final Vue.js application](resources/vuer-webpack.zip).
+* [See the sample Vite + Vue3 application](https://github.com/telerik/reporting-samples/tree/master/reporting-vue).

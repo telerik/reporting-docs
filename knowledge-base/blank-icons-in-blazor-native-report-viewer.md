@@ -1,6 +1,6 @@
 ---
 title: Toolbar Icons and Search Dialog of Native Blazor Viewer Are Blank
-page_title: Icons not shown in toolbar and search dialog of Native Blazor Viewer
+page_title: Icons are not shown in toolbar and search dialog of Native Blazor Viewer
 description: "Learn how to visualize all the toolbar and search dialog icons of the Native Blazor Report Viewer built with Telerik Blazor UI 3.7.0 when using Telerik Blazor UI 4.0.0."
 type: how-to
 slug: blank-icons-in-blazor-native-report-viewer

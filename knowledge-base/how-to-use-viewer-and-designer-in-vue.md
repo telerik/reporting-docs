@@ -23,7 +23,6 @@ previous_url: /knowledge-base/how-to-use-html5-viewer-in-vue-js
 	</tr>
 </table>
 
-
 ## Description
 
 The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) are built upon HTML5, CSS, and JavaScript. This allows using them in virtually any JavaScript framework including [Vue.js](https://vuejs.org/).
@@ -39,6 +38,7 @@ The following guide assumes previous knowledge of Vue:
 	````PowerShell
 npm init vue@latest
 ````
+
 
 1. Next, include the necessary JS dependencies of the viewer and designer in `index.html`. This includes the [jQuery](https://jquery.com/) library, [Kendo](https://www.telerik.com/kendo-ui). For this example, we will be retrieving the Report Viewer and Report Designer JS resources from the [online demos](https://demos.telerik.com/reporting):
 
@@ -159,7 +159,6 @@ Here is how the starting page of the application should look like:
 ## Additional resources
 
 Download the final Vue.js application from [Sample Vite + Vue3 Application](https://github.com/telerik/reporting-samples/tree/master/reporting-vue).
-
 
 ## See Also
 

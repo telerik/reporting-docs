@@ -35,6 +35,9 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 * [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) - a composite of Telerik UI for WPF controls that is suitable for WPF and WinForms projects.
 * [WinUI Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%}) - a composite of Telerik UI for WinUI desktop controls that is suitable for WinUI 3 projects.
 
+### Requirements
+.NET 6 introduced a [globalization-invariant mode](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/globalization) which, if enabled, does not allow creation of any culture except the invariant culture. The Report Engine relies on instantiating cultures to support localization, formatting, and units conversion, so enabling invariant globalization will break the engine's functionality. Refer to [this KB article]({%slug /knowledge-base/disable-invariant-globalization%}) to see how to disable the Invariant Globalization mode.
+
 ## Adding the Report Engine
 
 There are many ways to add the report engine. You can [Host the Report Engine Remotely]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), you can [Call the Report Engine via APIs]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}), or you can use the [Telerik Report Server](https://www.telerik.com/report-server):
@@ -75,4 +78,4 @@ If you are just starting with Telerik Reporting, look at our [First Steps]({%slu
 
 Wondering about specific report design? You might find helpful suggestions on how to present the data in [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%}) section.
 
-Are you into ASP.NET Core? See how to display reports in a.NET Core application for Windows, Linux, and macOS platforms here - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).
+Are you into ASP.NET Core? See how to display reports in a .NET Core application for Windows, Linux, and macOS platforms here - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).

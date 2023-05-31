@@ -33,7 +33,7 @@ The figure below shows TextBox items for `Name` and `Summary` fields, the detail
 
 	**CanShrink and CanGrow set to false**
 
-	![The report previewed in the designer with TextBoxes CanShrink and CanGrow set to false showing only the content that fits withing the TextBox boundaries](resources/FAQ5.png)
+	![The report previewed in the designer with TextBoxes CanShrink and CanGrow set to false showing only the content that fits within the TextBox boundaries](resources/FAQ5.png)
 
 * The `CanShrink` property for the Name TextBox is set to `true` and the `CanGrow` property for the Summary TextBox is set to `true`. Here you can see that the Name and Summary TextBoxes are sized to fit the data exactly.
 
@@ -53,4 +53,4 @@ Name
 
 	**CanShrink and CanGrow true with fields arranged vertically**
 
-	![The vertically aranged report previewed in the designer with CanShrink set to True for Name and CanGrow set to true for Summary showing how the data fits in the TextBox with hidden TextBoxes when there is no data](resources/FAQ7.png)
+	![The vertically arranged report previewed in the designer with CanShrink set to True for Name and CanGrow set to true for Summary showing how the data fits in the TextBox with hidden TextBoxes when there is no data](resources/FAQ7.png)

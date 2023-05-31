@@ -54,7 +54,7 @@ This section explains the differences between both versions of Standalone Report
 
 ## Major UI Elements in the Standalone Report Designer  
 
-![Шге major UI elements in the Standalone Report Designer](images/Designer/standalone-report-designer-overview.png)
+![The major UI elements in the Standalone Report Designer](images/Designer/standalone-report-designer-overview.png)
 
 The image above shows the major UI elements in the Standalone Report Designer:
 

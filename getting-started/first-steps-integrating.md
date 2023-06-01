@@ -10,7 +10,7 @@ position: 2
 
 # Integrating Your Telerik Report in Web Applications
 
-This guide targets users who want to build custom reports and, then, [present them in applications of their choice](https://www.telerik.com/products/reporting/embedded-reporting.aspx). For the purposes of this tutorial, the scenario will display the report in an ASP.NET Core application.
+This guide targets [users who want to build custom reports and, then, present them in applications of their choice](https://www.telerik.com/products/reporting/embedded-reporting.aspx). For the purposes of this tutorial, the scenario will display the report in an ASP.NET Core application.
 
 * First, you will install Telerik Reporting.
 

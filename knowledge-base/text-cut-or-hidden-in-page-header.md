@@ -4,13 +4,13 @@ description: "Learn why items in the Page Header of the Telerik Reporting report
 type: troubleshooting
 page_title: Textbox element not showing or part of text hidden in a page section
 slug: text-cut-or-hidden-in-page-header
-position:
 tags: textbox, hidden, pageheader, page, header, expand, big text, values
 ticketid: 1495964
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>

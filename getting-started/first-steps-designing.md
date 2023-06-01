@@ -11,7 +11,7 @@ previous_url: /getting-started/first-steps
 
 # Designing Your First Telerik Report
 
-This guide targets users who need to quickly get up and running with Telerik Reporting and design and export a report.
+This guide targets [users who need to quickly get up and running with Telerik Reporting](https://www.telerik.com/products/reporting/embedded-reporting.aspx) and design and export a report.
 
 * First, you will install Telerik Reporting from an MSI file and load the demos.
 

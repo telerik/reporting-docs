@@ -11,7 +11,7 @@ previous_url: /web-report-designer
 
 # Web Report Designer Overview
 
-Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that allows developers to integrate a report designer into their web applications. The styling is based on the Kendo UI Sass Default theme. The Telerik Web Report Designer previews reports in an HTML5 Report Viewer.
+Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that allows developers to integrate a report designer [into their web applications](https://www.telerik.com/products/reporting/embedded-reporting.aspx). This way every business app can enable its users to design, stylize and preview reports without leaving the web browser. The styling is based on the Kendo UI Sass Default theme. The Telerik Web Report Designer previews reports in an HTML5 Report Viewer.
 
 > The current version of the Web Report Designer offers beyond-basics functionality, but is still under active development. Please give it a thorough review to make sure the designer fits your scenario before including it in a production project.
 

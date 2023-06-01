@@ -11,7 +11,7 @@ position: 0
 
 # Embedding Reports Overview
 
-You can add reports to diverse types of web and desktop applications. The purpose of integrating Telerik Reporting into applications is to deliver interactive reports directly to your business system. The integration allows users to view and effortlessly export the report document to various formats.
+You can add reports to diverse types of web and desktop applications. [The purpose of integrating Telerik Reporting](https://www.telerik.com/products/reporting/embedded-reporting.aspx) into applications is to deliver interactive reports directly to your business system. The integration allows users to view and effortlessly export the report document to various formats.
 
 This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting.
 

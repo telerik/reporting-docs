@@ -2,30 +2,29 @@
 title: Parameter 'Culture' is an invalid culture identifier
 description: "Learn why the error 'type initializer for Telerik.Reporting.Interfaces.LocalizationContext threw an exception' may be thrown and how to resolve it."
 type: troubleshooting
-page_title: Only the invariant culture is supported in globalization-invariant mode
+page_title: Only invariant culture is supported in globalization-invariant mode
 slug: only-invariant-culture-is-supported-in-globalization-invariant-mode-error
-position: 
 tags: .NET 6.0, .NET 7, .NET 8
-ticketid:
 res_type: kb
 ---
 
 ## Environment
+
 <table>
-    <tbody>
-        <tr>
-            <td>Product</td>
-            <td>Progress® Telerik® Reporting</td>
-        </tr>
-        <tr>
-            <td>Project Type</td>
-            <td>ASP.NET Core Web API</td>
-        </tr>
-        <tr>
-            <td>Target Framework</td>
-            <td>.NET 6+</td>
-        </tr>
-    </tbody>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Project Type</td>
+			<td>ASP.NET Core Web API</td>
+		</tr>
+		<tr>
+			<td>Target Framework</td>
+			<td>.NET 6+</td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -33,12 +32,11 @@ res_type: kb
 
 I have created a new ASP.NET Core project using the Visual Studio project templates targetting `.NET 8+` and upon integrating the HTML5 Report [Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})/[Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) on one of the pages of the web application, the below error is displayed on the page instead of the specified report.
 
-
 ## Steps to Reproduce
 
 Run the ASP.NET Core application in [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md). Projects created with Visual Studio's ASP.NET Core Web API that target .NET 6+ use this setting by default.
 
-The `Invariant Mode` can be turned on in multiple ways with the most common being the project(`.csproj`) file:
+The `Invariant Mode` can be turned on in multiple ways with the most common being the project`.csproj` file:
 
 ````XML
 <Project Sdk="Microsoft.NET.Sdk">
@@ -65,6 +63,7 @@ The `InvariantGlobalization` property causes the runtime to throw a [`CultureNot
 ## Suggested Workarounds
 
 ### Workaround 1
+
 Disable the *Invariant* globalization setting from the project file:
 
 ````XML
@@ -76,6 +75,7 @@ Disable the *Invariant* globalization setting from the project file:
 ````
 
 ### Workaround 2
+
 Disable the *Invariant* globalization setting from the `runtimeconfig.json` file:
 
 ````JSON
@@ -89,14 +89,13 @@ Disable the *Invariant* globalization setting from the `runtimeconfig.json` file
 ````
 
 ### Workaround 3
+
 Use the `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` environment variable whose values can be:
 
-- `0` - Access to cultural data
-- `1` - Run in invariant mode
-
+* `0` - Access to cultural data
+* `1` - Run in invariant mode
 
 ## See Also
 
 * [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md)
 * [Runtime configuration options for globalization](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/globalization)
-

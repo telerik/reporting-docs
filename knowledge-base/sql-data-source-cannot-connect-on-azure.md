@@ -1,16 +1,16 @@
 ---
-title: SqlDataSource Connects to the Database when Running Locally but Fails on Azure
-description: The SqlDataSource Successfully Connects to the Database when Running Locally with Named ConnectionString but Fails when Deployed on Azure as the Connection Strings Defined in Azure Portal Override Those in the Web.config files
+title: SqlDataSource Connection Fails on Azure
+description: "SqlDataSource Successfully Connects to the Database when Running Locally with Named ConnectionString but Fails when Deployed on Azure as Connection Strings Defined in Azure Portal Override Those in Web.config."
 type: troubleshooting
 page_title: On Azure SqlDataSource with named connectionstring fails to connect
 slug: sql-data-source-cannot-connect-on-azure
-position: 
 tags: Azure,connection string,sqldatasource,data provider
 ticketid: 1601143
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -55,7 +55,7 @@ Unable to establish a connection to the database. Please verify that your connec
 	See [how to attach a trace listener to the .NET Framework application](https://learn.microsoft.com/en-us/dotnet/framework/debug-trace-profile/how-to-create-and-initialize-trace-listeners) to get the below log:
 
 	````
-	Telerik.Reporting.Processing.Data.SqlDataSourceException: Unable to establish a connection to the database. Please verify that your connection string is valid. In case you use a named connection string from the application configuration file, make sure the name is correct and the connection string settings are present in the configuration file of your application. ---> System.ArgumentException: Invalid value for key 'authentication'.
+Telerik.Reporting.Processing.Data.SqlDataSourceException: Unable to establish a connection to the database. Please verify that your connection string is valid. In case you use a named connection string from the application configuration file, make sure the name is correct and the connection string settings are present in the configuration file of your application. ---> System.ArgumentException: Invalid value for key 'authentication'.
 
 		at System.Data.Common.DbConnectionStringBuilderUtil.ConvertToAuthenticationType(String keyword, Object value)
 		at System.Data.SqlClient.SqlConnectionString.ConvertValueToAuthenticationType()

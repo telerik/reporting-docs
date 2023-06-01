@@ -4,9 +4,7 @@ description: "Learn how to choose the best strategy for using the existing repor
 type: troubleshooting
 page_title: Using CLR reports from existing .NET Framework ReportLibrary in .NET
 slug: use-existing-report-library-in-net-core-app
-position: 
 tags: 
-ticketid:
 res_type: kb
 ---
 

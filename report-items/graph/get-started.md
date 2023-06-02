@@ -41,7 +41,7 @@ To add a Graph item to your report when working with the [Visual Studio Report D
 
 The Visual Studio Report Designer tool also provides an option for directly inserting the Graph into your report. With this approach, the user is fully responsible for the Graph configuration. The following section explains the required settings.
 
-	>note The Graph is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and cannot be added to [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
+>note The Graph is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and cannot be added to [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
 
 ## Configuring the Graph Properties
 

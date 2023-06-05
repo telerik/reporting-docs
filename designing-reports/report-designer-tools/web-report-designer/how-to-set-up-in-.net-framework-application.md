@@ -1,6 +1,6 @@
 ---
 title: Set up in ASP.NET Framework
-page_title: Configure the web report designer in ASP.NET Framework application
+page_title: Configure web report designer in ASP.NET Framework
 description: "Learn how to configure the web report designer and its controller in the same ASP.NET Framework application."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application
 tags: how,to,set,up,in,.net,framework,application
@@ -9,7 +9,7 @@ position: 4
 previous_url: /web-report-designer-setup-in-dot-net-framework
 ---
 
-# Congfiguring in ASP.NET Framework application
+# Configuring the Web Report Designer in ASP.NET Framework application
 
 This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in an ASP.NET application.
 

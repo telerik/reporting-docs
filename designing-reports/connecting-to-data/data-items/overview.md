@@ -21,3 +21,4 @@ To make the best choice of data item to use for displaying report data, it helps
 * __List__ The List item is derived from the Table item and contains one row that repeats for each value in the data source and displays data in a free-form format. For example, you might use a list to design a form or display both a table and a chart. Arrange text boxes anywhere in the list to create your layout.
 * __Graph__ The Graph item enables you to present large volumes of aggregated information at a glance in a visual format.
 * __Map__ The Map item enables you to represent geospatial related data on top of the world map.
+* __Gauge__ The Gauge report item enables the display of key performance indicators (KPIs) that track the amount of progress made towards achieving the targets or goals.

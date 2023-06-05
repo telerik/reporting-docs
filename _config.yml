@@ -51,6 +51,9 @@ navigation:
     report-items/table-crosstab-list:
         position: 13
         title: "Table"
+    report-items/gauge:
+        position: 16
+        title: "Gauge"
     report-items/graph:
         position: 5
         title: "Graph"

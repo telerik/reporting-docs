@@ -26,11 +26,11 @@ Telerik Reporting provides the following Radial Gauge report item presets out of
 
 * Single-Range
 
-	![An image of the default look of the Single-Range Radial Gauge](../images/radial-gauge-simple.png)
+	![An image of the default look of the Single-Range Radial Gauge](../images/radial-gauge-single-range.png)
 
 * Multi-Range
 
-	![An Image of the default look of the Multi-Range Radial Gauge](../images/radial-gauge-three-range.png)
+	![An Image of the default look of the Multi-Range Radial Gauge](../images/radial-gauge-multi-range.png)
 
 ## Next Steps
 

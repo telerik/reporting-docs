@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Gauge Overview
 page_title: Gauge Report Item at a Glance
 description: "Learn more about the Telerik Reporting Gauge item which is used to display key performance indicators (KPIs) in a single radial or linear gauge and how to arrange its layout and position its content through the supported properties."
 slug: telerikreporting/designing-reports/report-structure/gauge/overview

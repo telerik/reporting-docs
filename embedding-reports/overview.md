@@ -11,7 +11,7 @@ position: 0
 
 # Embedding Reports Overview
 
-You can add reports to diverse types of web and desktop applications. The purpose of integrating Telerik Reporting into applications is to deliver interactive reports directly to your business system. The integration allows users to view and effortlessly export the report document to various formats.
+You can add reports to diverse types of web and desktop applications. [The purpose of integrating Telerik Reporting](https://www.telerik.com/products/reporting/embedded-reporting.aspx) into applications is to deliver interactive reports directly to your business system. The integration allows users to view and effortlessly export the report document to various formats.
 
 This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting.
 
@@ -34,6 +34,9 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 * [WinForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%}) - a composite of standard Windows Forms controls that is suitable for WinForms and WPF projects.
 * [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}) - a composite of Telerik UI for WPF controls that is suitable for WPF and WinForms projects.
 * [WinUI Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%}) - a composite of Telerik UI for WinUI desktop controls that is suitable for WinUI 3 projects.
+
+### Requirements
+.NET 6 introduced a [globalization-invariant mode](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/globalization) which, if enabled, does not allow creation of any culture except the invariant culture. The Report Engine relies on instantiating cultures to support localization, formatting, and units conversion, so enabling invariant globalization will break the engine's functionality. Refer to the [Only invariant culture is supported in globalization-invariant mode]({%slug only-invariant-culture-is-supported-in-globalization-invariant-mode-error%}) article for instructions on how to disable the `Invariant Globalization` mode.
 
 ## Adding the Report Engine
 
@@ -75,4 +78,4 @@ If you are just starting with Telerik Reporting, look at our [First Steps]({%slu
 
 Wondering about specific report design? You might find helpful suggestions on how to present the data in [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%}) section.
 
-Are you into ASP.NET Core? See how to display reports in a.NET Core application for Windows, Linux, and macOS platforms here - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).
+Are you into ASP.NET Core? See how to display reports in a .NET Core application for Windows, Linux, and macOS platforms here - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).

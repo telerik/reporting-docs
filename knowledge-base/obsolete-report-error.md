@@ -1,11 +1,10 @@
 ---
 title: Obsolete Report Error Occurs
-page_title: An Obsolete Report Error Occurs Troubleshooting
-description: "Learn how to fix an error for an obsolete report when working with the Telerik .NET Reporting tool for web and desktop applications."
+page_title: Troubleshooting the Obsolete Report error
+description: "Learn how to fix an error about obsolete Report object when working with the Telerik Reporting tool for web and desktop applications."
 slug: obsolete-report-error
 tags: telerik, reporting, troubleshoot, obsolete, report, error, occurs
 published: True
-component:
 type: troubleshooting
 res_type: kb
 ---
@@ -22,7 +21,7 @@ res_type: kb
 			<td>Version</td>
 			<td>Q2 2012 and later</td>
 		</tr>
-	        <tr>
+		<tr>
 			<td>Report Viewers</td>
 			<td>WinForms, WPF, ASP.NET</td>
 		</tr>
@@ -31,7 +30,7 @@ res_type: kb
 
 ## Description
 
-The Telerik Reporting project throws a `The report is now obsolete. Please use the ReportSource property instead.` error.          
+The Telerik Reporting project throws a `The report is now obsolete. Please use the ReportSource property instead.` error.
 
 ## Cause
 
@@ -39,4 +38,8 @@ This message may appear in projects which use a Telerik Reporting Q2 2012 or lat
 
 ## Solution
 
-To fix this issue, refer to the article on [migrating your project to utilize the new `ReportSource` objects]({% slug how-to-migrate-your-project-to-utilize-the-new-reportsource-objects %}).         
+To fix this issue, refer to the article on [migrating your project to utilize the new `ReportSource` objects]({%slug how-to-migrate-your-project-to-utilize-the-new-reportsource-objects%}).
+
+## See Also
+
+* [Migrating your project to utilize the ReportSource object]({%slug how-to-migrate-your-project-to-utilize-the-new-reportsource-objects%})

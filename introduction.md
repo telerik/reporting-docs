@@ -11,7 +11,7 @@ previous_url: /overview, /quick-start-overview
 
 # Welcome to Telerik Reporting
 
-Progress® Telerik® Reporting is a .NET embedded reporting tool which enables you to create, design, export, and integrate reports in cloud-based, web, and desktop applications.
+Progress® Telerik® Reporting is a .NET [embedded reporting tool](https://www.telerik.com/products/reporting/embedded-reporting.aspx) which enables you to create, design, export, and integrate reports in cloud-based, web, and desktop applications.
 
 Telerik Reporting provides web and desktop report designers and services, and report viewer controls. The desktop components and the services are .NET-only, whereas the HTML5-based components can be integrated in virtually any website or application.
 

@@ -30,7 +30,7 @@ Out of the box, Telerik Reporting offers the [FileDefinitionStorage](/api/teleri
 
 In certain cases, one may want to instead store the report definitions in a custom place, for example, a database. For this reason, we have exposed the [IDefinitionStorage](/api/Telerik.WebReportDesigner.Services.IDefinitionStorage) interface. By implementing this interface, one will be able to store the report definitions in any place, be it SQL or NoSQL database, [Azure Blob Storage](https://azure.microsoft.com/en-us/products/storage/blobs/), etc.
 
-In this article, we will demonstrate how the report definitions can be stored in a MSSQL Server database using [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
+In this article, we will demonstrate how the report definitions can be stored in a MSSQL Server database using [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/).
 
 ## Solution
 

@@ -41,14 +41,13 @@ To add a Graph item to your report when working with the [Visual Studio Report D
 
 The Visual Studio Report Designer tool also provides an option for directly inserting the Graph into your report. With this approach, the user is fully responsible for the Graph configuration. The following section explains the required settings.
 
-	>note The Graph is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and cannot be added to [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
+> The Graph is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and cannot be added to [Page Sections]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})
 
 ## Configuring the Graph Properties
 
 After you have added the Graph report item to your report, you can manually configure its properties by following common steps that are valid for all supported chart types.
 
 1. Open the **Properties** grid which displays all Graph properties. Through the grid, you can manually configure and reconfigure all Graph properties and customize the displayed chart type.
-
 1. Set the **DataSource** property to one of the available [Data Source components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
 
 	To visualize its data, the Graph requires you to provide a DataSource and bind it to the desired data set. You will use the AdventureWorks sample database which requires an [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) that will connect to the database and fetch the requested data in run-time through the specified `DataProvider`. The data provider will use the `ConnectionString` for connecting, and execute the Query or Stored Procedure assigned to the `SelectCommand` property to get the data.

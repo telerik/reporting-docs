@@ -51,6 +51,9 @@ navigation:
     report-items/table-crosstab-list:
         position: 13
         title: "Table"
+    report-items/gauge:
+        position: 16
+        title: "Gauge"
     report-items/graph:
         position: 5
         title: "Graph"
@@ -417,9 +420,9 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
-suiteversion: "R1 2023"
+suiteversion: "R2 2023"
 kendosubsetversion: "2022.3.913"
-buildversion: "17.0.23.315"
+buildversion: "17.1.23.606"
 blazoruiversion: "4.0.1"
 
 # Feedback Form Google Sheet ID

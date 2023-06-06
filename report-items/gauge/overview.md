@@ -22,15 +22,15 @@ Currently, the `Gauge` report item supports only `Radial` gauges.
 
 Radial gauges are circular, or degrees of circular, and resemble speedometers. The gauge pointers are often needles, but can be markers or bars too. The radial gauge is typically used when you want to express the data as a velocity.
 
-Telerik Reporting provider the following Gauge report item presets out of the box:
+Telerik Reporting provides the following Gauge report item presets out of the box:
 
-- Simple
+* Simple
 
-![An image of the default look of the Simple Radial Gauge](../images/radial-gauge-simple.png)
+	![An image of the default look of the Simple Radial Gauge](../images/radial-gauge-simple.png)
 
-- Three-range
+* Three-range
 
-![An Image of the default look of the Three-range Radial Gauge ](../images/radial-gauge-three-range.png)
+	![An Image of the default look of the Three-range Radial Gauge](../images/radial-gauge-three-range.png)
 
 ## Next Steps
 

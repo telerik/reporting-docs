@@ -1,6 +1,6 @@
 ---
 title: Using Parameters
-page_title: Using Parameters with the WebServiceDataSource component explained with examples
+page_title: Using Parameters with WebServiceDataSource explained with examples
 description: "Learn how to configure and use Inline, Query, Header and Cookie Parameters with the WebServiceDataSource component in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/using-parameters-with-the-webservicedatasource-component
 tags: using,parameters,with,the,webservicedatasource,component,inline,query,header,cookie,fiddler,configure

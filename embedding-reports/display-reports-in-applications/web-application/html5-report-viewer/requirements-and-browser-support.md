@@ -1,6 +1,6 @@
 ---
 title: Requirements and Browser Support
-page_title: Requirements and Browser Support for the HTML5 Report Viewer
+page_title: HTML5 Report Viewer Requirements and Browser Support
 description: "Learn what are the Requirements for integrating the Telerik Reporting HTML5 Report Viewer in a web page and what Browsers it supports."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support
 tags: requirements,and,browser,support

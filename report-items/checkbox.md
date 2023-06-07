@@ -5,7 +5,7 @@ description: "Learn more about the Telerik Reporting Checkbox report item, how t
 slug: telerikreporting/designing-reports/report-structure/checkbox
 tags: telerik, reporting, report, items, checkbox, expanding, shrinking, embedded, expressions
 published: True
-position: 3
+position: 2
 previous_url: /report-items-checkbox
 ---
 

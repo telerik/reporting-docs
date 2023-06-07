@@ -5,7 +5,7 @@ description: "Learn more about the Telerik Reporting Cross-section report item, 
 slug: telerikreporting/designing-reports/report-structure/cross-section-item
 tags: telerik, reporting, report, items, cross, section, item
 published: True
-position: 4
+position: 3
 previous_url: /report-items-cross-section-item
 ---
 

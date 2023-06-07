@@ -2,7 +2,7 @@
 title: Adding Overall Total That Doesn't Exist as a Data Field in Graph
 description: "Learn how to add a Total that doesn't come from the data source in the Graph in Telerik Reporting."
 type: how-to
-page_title: Add Total that is not sepcified as a data field in the Graph
+page_title: Add Total that is not specified as a data field in the Graph
 slug: add-total-in-graph
 tags: graph, total
 ticketid: 1549075

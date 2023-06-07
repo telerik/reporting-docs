@@ -1,6 +1,6 @@
 ---
 title: Retrieving Data from an Entity Data Model
-page_title: Retrieving data from an Entity Data Model with the EntityDataSource component explained
+page_title: Retrieving data from an Entity Data Model with the EntityDataSource
 description: "Learn how to retrieve data from an Entity Data Model with the EntityDataSource component in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/entitydatasource-component/retrieving-data-from-an-entity-data-model-with-the-entitydatasource-component
 tags: retrieving,data,from,an,entity,data,model,with,the,entitydatasource,component

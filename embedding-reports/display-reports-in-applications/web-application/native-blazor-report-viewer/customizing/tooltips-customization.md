@@ -1,7 +1,7 @@
 ---
 title: Customize the Tooltips
 page_title: Customizing Native Blazor Viewer's Tooltips
-description: How to Customize the Tooltips of the Native Blazor Report Viewer
+description: "Learn how the Tooltips of the Native Blazor Report Viewer work in Telerik Reporting and how to customize them."
 slug: native-blazor-report-viewer/tooltips-customization
 tags: custom,editor,widget,blazor,tooltips
 published: True

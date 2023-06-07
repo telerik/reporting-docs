@@ -42,6 +42,6 @@ The available [`SharedDataSource`]({%slug telerikreporting/designing-reports/con
 
 ## Resources usage
 
-When a resource is needed to be referenced in a report as a value of a property the Assets Manager may be opened by the respective property editor. Such properties are for example the Value property of the PictureBox item and the Style -> Background image property of any report item. If not already available, the needed resource can be uploaded and then selected for usage.
+When a resource is needed to be referenced in a report as a value of a property, the Assets Manager may be opened by the respective property editor. Such properties are, for example, the `Value` property of the PictureBox item and the `Style` -> `BackgroundImage` property of any report item. If not already available, the needed resource can be uploaded and then selected for usage.
 
 Naturally, the properties that need to reference a report, e.g., the target report of a [NavigateToreport interactive action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}), also trigger the Assets Manager to do the job.

@@ -1,6 +1,6 @@
 ---
 title: Retrieving Data from a Telerik Data Access Model
-page_title: Retrieving data from a Telerik Data Access Model with the OpenAccessDataSource component explained
+page_title: Get data from Telerik Data Access Model with OpenAccessDataSource
 description: "Learn how to retrieve data from a Telerik Data Access Model with the OpenAccessDataSource component in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/retrieving-data-from-a-telerik-data-access-model-with-the-openaccessdatasource-component
 tags: retrieving,data,from,a,telerik,data,access,model,with,the,openaccessdatasource,component

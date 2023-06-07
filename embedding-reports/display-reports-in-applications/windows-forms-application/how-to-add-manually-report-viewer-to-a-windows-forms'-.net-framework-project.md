@@ -1,6 +1,6 @@
 ---
 title: Configuring Manually in .NET Framework
-page_title: Manually adding the Windows Forms Report Viewer control to a Windows Forms .NET Framework project
+page_title: Manually adding WinForms Viewer in .NET Framework WinForms project
 description: "Learn how to add the Windows Forms Report Viewer control to a Windows Forms .NET Framework project manually, using the provided steps and sample code snippets. Do it either through the designer or programmatically."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-manually-report-viewer-to-a-windows-forms'-.net-framework-project
 tags: how, to, add, manually, report, viewer, to, a, windows, forms, .net, framework, project

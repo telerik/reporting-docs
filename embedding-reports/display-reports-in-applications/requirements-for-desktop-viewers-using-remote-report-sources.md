@@ -1,6 +1,6 @@
 ---
 title: Requirements for Desktop Viewers Using Remote Service
-page_title: Requirements For Desktop Viewers Using Remote Reporting Services at a Glance
+page_title: Requirements For Desktop Viewers Using Remote Reporting Services
 description: "Learn what are the Requirements for the Desktop Report Viewers showing reports from the Telerik Reporting REST Service or Report Server."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/requirements-for-desktop-viewers-using-remote-report-sources
 tags: requirements,for,desktop,viewers,using,remote,report,sources

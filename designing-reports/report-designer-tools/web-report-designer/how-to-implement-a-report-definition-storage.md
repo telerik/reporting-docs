@@ -1,6 +1,6 @@
 ---
 title: Implementing Report Definition Storage
-page_title: Implementing a custom report definition storage for the web report designer
+page_title: Implementing custom report definition storage for the web designer
 description: "Learn how to implement a custom report definition storage for the Telerik Web Report Designer though the IDefinitionStorage interface."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-implement-a-report-definition-storage
 tags: how,to,implement,a,report,definition,storage

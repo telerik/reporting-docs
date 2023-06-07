@@ -1,5 +1,5 @@
 ---
-title: Gauge
+title: Overview
 page_title: Gauge Report Item at a Glance
 description: "Learn more about the Telerik Reporting Gauge item which is used to display key performance indicators (KPIs) in a single radial or linear gauge and how to arrange its layout and position its content through the supported properties."
 slug: telerikreporting/designing-reports/report-structure/gauge/overview
@@ -22,20 +22,20 @@ Currently, the `Gauge` report item supports only `Radial` gauges.
 
 Radial gauges are circular, or degrees of circular, and resemble speedometers. The gauge pointers are often needles, but can be markers or bars too. The radial gauge is typically used when you want to express the data as a velocity.
 
-Telerik Reporting provides the following Gauge report item presets out of the box:
+Telerik Reporting provides the following Radial Gauge report item presets out of the box:
 
-* Simple
+* Single-Range
 
-	![An image of the default look of the Simple Radial Gauge](../images/radial-gauge-simple.png)
+	![An image of the default look of the Single-Range Radial Gauge](../images/radial-gauge-single-range.png)
 
-* Three-range
+* Multi-Range
 
-	![An Image of the default look of the Three-range Radial Gauge](../images/radial-gauge-three-range.png)
+	![An Image of the default look of the Multi-Range Radial Gauge](../images/radial-gauge-multi-range.png)
 
 ## Next Steps
 
 * [Getting Started with the Radial Gauge Report Item]({%slug telerikreporting/designing-reports/report-structure/gauge/radial-gauge%})
-* [Gauge Class API Reference](/api/telerik.reporting.gauge)
+* [RadialGauge Class API Reference](/api/Telerik.Reporting.RadialGauge)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 

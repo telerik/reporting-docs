@@ -1,6 +1,6 @@
 ---
 title: Deploying Declarative Reports
-page_title: Deploying Declarative Reports Created with Standalone or Web Report Designers
+page_title: Deploying Declarative Reports Created with Standalone or Web Designer
 description: "Learn How to Deploy Declarative Report definitions Created with Standalone or Web Report Designers in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-deploy-a-report-created-with-standalone-report-designer
 tags: how,to,deploy,a,report,created,with,standalone,report,designer

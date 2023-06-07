@@ -1,6 +1,6 @@
 ---
 title: Interactive Actions
-page_title: Interactive Actions available in the interactiveAction events of the HTML5 Report Viewer
+page_title: Properties in the interactiveAction events of the HTML5 Report Viewer
 description: "Learn what are the interactive actions properties you may access in the interactiveActionExecuting, interactiveActionEnter and interactiveActionLeave event handlers of the HTML5 Report Viewer."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/interactive-actions
 tags: interactive,actions

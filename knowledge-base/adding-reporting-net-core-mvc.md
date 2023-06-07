@@ -1,6 +1,6 @@
 ---
 title: Integrate Telerik Reporting in ASP.NET Core 3.1 MVC Projects
-page_title: Adding Telerik Reporting in ASP.NET Core MVC Projects tergeting .NET
+page_title: Adding Telerik Reporting in ASP.NET Core MVC Projects targeting .NET
 description: "Learn how to add Telerik Reporting in ASP.NET Core MVC projects targeting .NET or .NET Core in this step-by-step tutorial."
 type: how-to
 slug: adding-reporting-net-core-mvc

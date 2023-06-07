@@ -1,6 +1,6 @@
 ---
 title: Using with Report Server
-page_title: Using the Windows Forms Report Viewer control with Report Server Explained
+page_title: Using the Windows Forms Report Viewer control with Report Server
 description: "Understand how to integrate the Windows Forms Report Viewer control with a Report Server instance, using the provided steps. See the prerequisites and common troubleshooting steps."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server
 tags: how, to, use, windows, forms, report, viewer, with, report, server

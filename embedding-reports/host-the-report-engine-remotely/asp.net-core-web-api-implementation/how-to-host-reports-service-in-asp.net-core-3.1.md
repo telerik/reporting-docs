@@ -1,6 +1,6 @@
 ---
 title: Hosting in .NET Core 3.1
-page_title: Hosting Telerik Reporting REST Service in ASP.NET Core in .NET Core 3.1
+page_title: Hosting Reporting REST Service in ASP.NET Core in .NET Core 3.1
 description: "Learn how to configure the Telerik Reporting REST Service in an ASP.NET Core application in .NET Core 3.1 through the Visual Studio project template or manually."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1
 tags: how,to,host,reports,service,in,asp.net,core,3.1

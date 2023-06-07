@@ -1,6 +1,6 @@
 ---
 title: Hosting in .NET Core 2.1 and 2.2
-page_title: Hosting Telerik Reporting REST Service in ASP.NET Core in .NET Core 2.1 and 2.2
+page_title: Hosting REST Service in ASP.NET Core in .NET Core 2.1 and 2.2
 description: "Learn how to configure the Telerik Reporting REST Service in an ASP.NET Core application in .NET Core 2.1 and 2.2."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-2.1-and-2.2
 tags: how,to,host,reports,service,in,asp.net,core,2.1,and,2.2

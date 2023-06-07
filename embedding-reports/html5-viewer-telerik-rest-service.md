@@ -1,6 +1,6 @@
 ---
 title: Report Viewer and Reporting REST Service
-page_title: The Communication between the Report Viewer and Reporting REST Service Explained
+page_title: The Communication between the Viewer and the REST Service Explained
 description: "Learn how to use the Telerik Report Viewer and how to configure the Telerik Reporting REST Service so that they can communicate fluently."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services
 previous_url: /using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services, /using-telerik-reporting-in-applications-rest-service-cache-management-overview

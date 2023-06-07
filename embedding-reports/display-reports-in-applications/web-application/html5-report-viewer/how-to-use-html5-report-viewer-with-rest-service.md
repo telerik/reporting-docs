@@ -1,6 +1,6 @@
 ---
 title: Using with REST Service
-page_title: Configuring the HTML5 Report Viewer to use with Telerik Reporting REST Service
+page_title: Configuring HTML5 Report Viewer with Telerik Reporting REST Service
 description: "Learn what are the Prerequisites and how to configure and use the HTML5 Report Viewer with the Telerik Reporting REST Service."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service
 tags: how,to,use,html5,report,viewer,with,rest,service

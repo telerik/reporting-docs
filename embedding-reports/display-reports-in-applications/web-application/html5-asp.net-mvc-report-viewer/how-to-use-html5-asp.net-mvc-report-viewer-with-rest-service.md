@@ -1,6 +1,6 @@
 ---
 title: Using With Reporting REST Service
-page_title: Integrating the HTML5 ASP.NET MVC Report Viewer With Reporting REST Service 
+page_title: Integrating ASP.NET MVC Report Viewer With Reporting REST Service
 description: "Learn how the Telerik Reporting HTML5 MVC Report Viewer can integrated into a MVC application with a few simple steps."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service
 tags: how,to,use,html5,asp.net,mvc,report,viewer,with,rest,service

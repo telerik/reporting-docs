@@ -1,6 +1,6 @@
 ---
 title: Adding to a .NET Framework project
-page_title: Adding the Windows Forms Report Viewer control to a Windows Forms .NET Framework Project Explained
+page_title: Adding WinForms Viewer to a Windows Forms .NET Framework project
 description: "Learn how to automatically add the Windows Forms Report Viewer control to a Windows Forms .NET Framework project using the built-in Visual Studio item template."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project
 tags: how, to, add, report, viewer, to, a, windows, forms , .net, framework, project

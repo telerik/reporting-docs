@@ -1,6 +1,6 @@
 ---
 title: Send Mail Message
-page_title: Send Mail Message functionality in the HTML5-based Report Viewers Explained
+page_title: Send Mail Message functionality in the HTML5-based Report Viewers
 description: "Learn the basics of the Send Mail Message functionality in the HTML5-based Report Viewers in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message
 tags: send,mail,message

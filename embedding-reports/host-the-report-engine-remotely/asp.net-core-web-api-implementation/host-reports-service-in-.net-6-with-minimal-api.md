@@ -1,6 +1,6 @@
 ---
 title: Hosting in .NET 6+ with Top-Level Statements
-page_title: Hosting Telerik Reporting REST Service in ASP.NET Core in .NET 6 with Top-Level Statements
+page_title: Hosting REST Service in ASP.NET Core with Top-Level Statements
 description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET 6 and above with Top-Level Statements in this step by step tutorial."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,statements

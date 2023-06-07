@@ -1,6 +1,6 @@
 ---
 title: Using with Report Server
-page_title: Configuring the HTML5 ASP.NET Web Forms Report Viewer to use the Telerik Report Server
+page_title: Configuring HTML5 ASP.NET Web Forms Report Viewer with Report Server
 description: "Learn How to configure and use the HTML5 ASP.NET Web Forms Report Viewer with the Telerik Report Server."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-report-server
 tags: how,to,use,html5,asp.net,web,forms,report,viewer,with,report,server

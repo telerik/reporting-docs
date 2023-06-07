@@ -1,6 +1,6 @@
 ---
 title: Configuring the Database Connectivity
-page_title: Database connectivity with the OpenAccessDataSource component explained
+page_title: Database connectivity with the OpenAccessDataSource component
 description: "Learn how to configure the database connectivity with the OpenAccessDataSource component in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/configuring-the-database-connectivity-with-the-openaccessdatasource-component
 tags: configuring,the,database,connectivity,with,the,openaccessdatasource,component

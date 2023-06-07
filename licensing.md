@@ -9,7 +9,7 @@ position: 12
 previous_url: /installation-trial-license-limitation
 ---
 
-# Licensing
+# Telerik Reporting Licensing
 
 Telerik Reporting comes in trial and developer (or commercial) licenses.
 

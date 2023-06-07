@@ -1,6 +1,6 @@
 ---
 title: Deploying Web Applications
-page_title: Deploying Web Applications with embedded ASP.NET WebForms Report Viewer
+page_title: Deploying Web Applications with ASP.NET WebForms Report Viewer
 description: "Learn what are the required and optional assemblies for deploying Web Application with embedded ASP.NET WebForms Report Viewer."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/deploying-web-applications
 tags: deploying,web,applications

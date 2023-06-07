@@ -1,14 +1,15 @@
 ---
 title: Add the Same Export Extension Twice with Different Configuration
-description: How to add the same extension twice for exporting with different configuration
+description: "Learn how to add the same extension twice for exporting with different configuration in Telerik Reporting."
 type: how-to
-page_title: How to duplicate a rendering format with specific settings
+page_title: Duplicating a rendering format with specific settings
 slug: add-same-rendering-extension-twice-with-different-configuration
 ticketid: 1569011
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -20,31 +21,30 @@ res_type: kb
 
 ## Description
 
-In some scenarios, you may need to add the same extension twice. For example, for XLSX once with a native header and once without. 
+In some scenarios, you may need to add the same extension twice. For example, for XLSX once with a native header and once without.
 
 ## Suggested Workarounds
 
-You may register the second extension with a different name, i.e. `XLSX1` as a custom extension, and set its `type` to the built-in type from our code that renders in the corresponding format, for example, XLSX. The following configuration generates two XLSX rendering types, one with `UseNativePageHeader` set to _true_, and the other to _false_:
+You may register the second extension with a different name, i.e. `XLSX1` as a custom extension, and set its `type` to the built-in type from our code that renders in the corresponding format, for example, XLSX. The following configuration generates two XLSX rendering types, one with `UseNativePageHeader` set to `true`, and the other to `false`:
 
 ````XML
 <Telerik.Reporting>
-  <extensions>
-    <render>
-      <extension name="XLSX" description="abc">
-        <parameters>
-          <parameter name="UseNativePageHeader" value="true" />
-        </parameters>
-      </extension>
-      <extension name="XLSX1" type="Telerik.Reporting.OpenXmlRendering.Spreadsheet.SpreadsheetReport, Telerik.Reporting.OpenXmlRendering" description="xlsx1">
-        <parameters>
-          <parameter name="UseNativePageHeader" value="false" />
-        </parameters>
-      </extension>
-    </render>
-  </extensions>
+	<extensions>
+		<render>
+			<extension name="XLSX" description="abc">
+				<parameters>
+					<parameter name="UseNativePageHeader" value="true" />
+				</parameters>
+			</extension>
+			<extension name="XLSX1" type="Telerik.Reporting.OpenXmlRendering.Spreadsheet.SpreadsheetReport, Telerik.Reporting.OpenXmlRendering" description="xlsx1">
+				<parameters>
+					<parameter name="UseNativePageHeader" value="false" />
+				</parameters>
+			</extension>
+		</render>
+	</extensions>
 </Telerik.Reporting>
 ````
-
 
 Here is how you may register some alternative rendering extension with the built-in renderers in Telerik Reporting:
 
@@ -57,7 +57,6 @@ Here is how you may register some alternative rendering extension with the built
 <extension name="PDF1" type="Telerik.Reporting.ImageRendering.PdfReport, Telerik.Reporting" description="pdf1" />
 ````
 
-
 ## See Also
 
-[How to Create Custom Rendering Extension]({%slug custom-rendering-extension%})
+* [How to Create Custom Rendering Extension]({%slug custom-rendering-extension%})

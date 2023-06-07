@@ -1,14 +1,15 @@
 ---
 title: Adding Telerik Web Report Designer in ASP.NET Core 3.1 MVC Project
-description: Learn how to add the Telerik Web Report Designer in ASP.NET Core 3.1 MVC project
+description: "Learn how to add the Telerik Web Report Designer in ASP.NET Core 3.1 MVC project targeting .NET or .NET Core."
 type: how-to
-page_title: How to Add Telerik Web Report Designer in ASP.NET Core 3.1 MVC Project
+page_title: Adding Web Designer in ASP.NET Core MVC Project targeting .NET Core
 slug: adding-web-report-designer-in-net-core-mvc
 ticketid: 1478336
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -26,27 +27,20 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
-This KB article lists all necessary steps for integrating our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in .NET Core MVC 3.1 project. 
-It is based on [How To Host Reports Service In ASP.NET Core 3+]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %})
-and [How to Set Up the WebReportDesigner in .NET Core Applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application%}). The same approach can be applied for .NET Core MVC 3.0 project.
- 
+This KB article lists all necessary steps for integrating our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in .NET Core MVC 3.1 project. It is based on [How To Host Reports Service In ASP.NET Core 3+]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}) and [How to Set Up the WebReportDesigner in .NET Core Applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1+-application%}). The same approach can be applied for .NET Core MVC 3.0 project.
 
 ## Solution
 
 1. Add the following NuGet packages:
 
-	+ Telerik.Reporting.Services.AspNetCore
-	
-	+ Telerik.WebReportDesigner.Services
-	
-	+ Microsoft.AspNetCore.Mvc.NewtonsoftJson
+	* `Telerik.Reporting.Services.AspNetCore`
+	* `Telerik.WebReportDesigner.Services`
+	* `Microsoft.AspNetCore.Mvc.NewtonsoftJson`
 
-2. Add a folder with the TRDP / TRDX reports.
-
-3. Add the `ReportDesignerController`:
+1. Add a folder with the `TRDP` / `TRDX` reports.
+1. Add the `ReportDesignerController`:
 
 	````CSharp
 namespace WebApplication1.Controllers
@@ -55,7 +49,7 @@ namespace WebApplication1.Controllers
 		using Telerik.Reporting.Services;
 		using Telerik.WebReportDesigner.Services;
 		using Telerik.WebReportDesigner.Services.Controllers;
-		
+
 		[Route("api/reportdesigner")]
 		public class ReportDesignerController : ReportDesignerControllerBase
 		{
@@ -68,7 +62,7 @@ namespace WebApplication1.Controllers
 ````
 
 
-4. Add a new class named `ConfigurationHelper`:
+1. Add a new class named `ConfigurationHelper`:
 
 	````CSharp
 using Microsoft.AspNetCore.Hosting;
@@ -90,7 +84,7 @@ using Microsoft.AspNetCore.Hosting;
 ````
 
 
-5. Add the required configurations in the `Startup.cs` from [Set Up the Startup.cs File for the Reports Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service):
+1. Add the required configurations in the `Startup.cs` from [Set Up the Startup.cs File for the Reports Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service):
 
 	````CSharp
 public class Startup
@@ -99,9 +93,9 @@ public class Startup
 		{
 			Configuration = configuration;
 		}
-	
+
 		public IConfiguration Configuration { get; }
-	
+
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
@@ -123,7 +117,7 @@ public class Startup
 					ReportResolver = new ReportFileResolver(
 						System.IO.Path.Combine(sp.GetService<IWebHostEnvironment>().ContentRootPath, "Reports"))
 				});
-	
+
 			services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
 			{
 				DefinitionStorage = new FileDefinitionStorage(
@@ -132,7 +126,7 @@ public class Startup
 					Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
 			});
 		}
-	
+
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
@@ -144,12 +138,10 @@ public class Startup
 			{
 				app.UseExceptionHandler("/Home/Error");
 			}
+
 			app.UseStaticFiles();
-	
 			app.UseRouting();
-	
 			app.UseAuthorization();
-	
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapControllers();
@@ -162,37 +154,35 @@ public class Startup
 ````
 
 
-6. The initialization of the designer has to look as follows:
+1. The initialization of the designer has to look as follows:
 
 	````JavaScript
 <!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
-		
-		<title>Telerik HTML5 Report Viewer Demo</title>
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	</head>
-	<body>
-		<div id="webReportDesigner">
-			loading...
-		</div>
-	</body>
+		<head>
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+
+			<title>Telerik HTML5 Report Viewer Demo</title>
+
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		</head>
+		<body>
+			<div id="webReportDesigner">
+				loading...
+			</div>
+		</body>
 	</html>
 
 	@section scripts
-		{
+	{
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://kendo.cdn.telerik.com/2020.1.114/js/kendo.all.min.js"></script>
-		
+
 		<script src="/api/reports/resources/js/telerikReportViewer"></script>
-		
 		<script src="api/reportdesigner/designerresources/js/webReportDesigner-14.1.20.618.min.js/"></script>
-		
+
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$("#webReportDesigner").telerik_WebReportDesigner({
@@ -208,7 +198,7 @@ public class Startup
 ````
 
 
-7. If you are using [SQL DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with Shared connection string, add a connection string in the `appsettings.json` file. Here is a sample for the MSSQL database:
+1. If you are using [SQL DataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) with Named/Shared connection string, add the connection string in the `appsettings.json` file. Here is a sample for the MSSQL database:
 
 	````
 "ConnectionStrings": [

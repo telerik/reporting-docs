@@ -37,7 +37,7 @@ navigation:
         position: 3
         title: "Report Items"
     report-items/barcode:
-        position: 2
+        position: 1
         title: "Barcode"
     report-items/barcode/1d-barcodes:
         position: 20
@@ -52,7 +52,7 @@ navigation:
         position: 13
         title: "Table"
     report-items/gauge:
-        position: 16
+        position: 4
         title: "Gauge"
     report-items/graph:
         position: 5

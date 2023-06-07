@@ -1,7 +1,7 @@
 ---
 title: Customize the Toolbar
 page_title: Customizing Native Blazor Viewer's Toolbar
-description: How to Customize the Toolbar of the Native Blazor Report Viewer
+description: "Learn what tool are used in the Toolbar of the Telerik Reporting Native Blazor Report Viewer and how to customize it."
 slug: native-blazor-report-viewer/toolbar-customization
 tags: custom,editor,widget,blazor,toolbar,menu
 published: True

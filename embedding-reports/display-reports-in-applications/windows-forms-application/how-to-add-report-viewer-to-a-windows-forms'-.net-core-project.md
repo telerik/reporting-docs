@@ -1,6 +1,6 @@
 ---
 title: Adding to a .NET Core project
-page_title: Adding the Windows Forms Report Viewer control to a Windows Forms .NET Core project
+page_title: Adding WinForms Report Viewer to Windows Forms .NET Core project
 description: "Learn how to add the Windows Forms Report Viewer control to a Windows Forms .NET Core project manually, using the provided steps and sample code snippets."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project
 tags: how, to, add, report ,viewer , to, a, windows, forms, .net, core, project

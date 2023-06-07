@@ -1,6 +1,6 @@
 ---
 title: Maintaining the Lifecycle of the OpenAccessContext
-page_title: Maintaining the lifecycle of the OpenAccessContext with the OpenAccessDataSource component explained
+page_title: Maintaining the OpenAccessContext lifecycle with OpenAccessDataSource
 description: "Learn how to maintain the lifecycle of the OpenAccessContext with the OpenAccessDataSource component in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/openaccessdatasource-component/maintaining-the-lifecycle-of-the-openaccesscontext-with-the-openaccessdatasource-component
 tags: maintaining,the,lifecycle,of,the,openaccesscontext,with,the,openaccessdatasource,component

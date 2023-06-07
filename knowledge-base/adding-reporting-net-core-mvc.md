@@ -1,7 +1,7 @@
 ---
-title: Add Telerik Reporting in ASP .Net Core 3.1 MVC Projects
-page_title: Add Telerik Reporting in ASP.Net Core 3.1 MVC Projects
-description: "Learn how to add Telerik Reporting in ASP .Net Core 3.1 MVC projects."
+title: Integrate Telerik Reporting in ASP.NET Core 3.1 MVC Projects
+page_title: Adding Telerik Reporting in ASP.NET Core MVC Projects targeting .NET
+description: "Learn how to add Telerik Reporting in ASP.NET Core MVC projects targeting .NET or .NET Core in this step-by-step tutorial."
 type: how-to
 slug: adding-reporting-net-core-mvc
 tags: telerik, reporting, add, in, asp, net, core, 3.1, mvc, projects
@@ -38,10 +38,8 @@ How can I integrate a Telerik Report in a .NET Core MVC 3.1 project?
 The demonstrated approach to solve this issue is based on the [Host Reports Service In ASP.NET Core 3+]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}) article. You can also apply the same approach to .NET Core MVC 3.1 project.
 
 1. Add the following `Telerik.Reporting.Services.AspNetCore` and `Microsoft.AspNetCore.Mvc.NewtonsoftJson` packages.
-
-2. Add a folder with the reports.
-
-3. Add the `ReportsController`:
+1. Add a folder with the reports.
+1. Add the `ReportsController`:
 
 	````CSharp
 namespace WebApplication1.Controllers
@@ -78,7 +76,7 @@ namespace WebApplication1.Controllers
 ````
 
 
-4. Add a new class named `ConfigurationHelper`:
+1. Add a new class named `ConfigurationHelper`:
 
 	````CSharp
 using Microsoft.AspNetCore.Hosting;
@@ -100,7 +98,7 @@ using Microsoft.AspNetCore.Hosting;
 ````
 
 
-5. Add the required configurations in the `Startup.cs` from the [Set Up the Startup.cs File for the Reports Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service) article:
+1. Add the required configurations in the `Startup.cs` from the [Set Up the Startup.cs File for the Reports Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1 %}#setup-the-startup-cs-file-for-the-reports-service) article:
 
 	````CSharp
 public class Startup
@@ -109,9 +107,9 @@ public class Startup
 		{
 			Configuration = configuration;
 		}
-		
+
 		public IConfiguration Configuration { get; }
-		
+
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
@@ -121,8 +119,7 @@ public class Startup
 			{
 				options.AllowSynchronousIO = true;
 			});
-			services.AddRazorPages()
-			.AddNewtonsoftJson();
+			services.AddRazorPages().AddNewtonsoftJson();
 			// Configure dependencies for ReportsController.
 			services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 				new ReportServiceConfiguration
@@ -134,7 +131,7 @@ public class Startup
 						System.IO.Path.Combine(sp.GetService<IWebHostEnvironment>().ContentRootPath, "Reports"))
 				});
 		}
-		
+
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 		{
@@ -147,11 +144,9 @@ public class Startup
 				app.UseExceptionHandler("/Home/Error");
 			}
 			app.UseStaticFiles();
-	
 			app.UseRouting();
-	
 			app.UseAuthorization();
-	
+
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapControllers();
@@ -164,105 +159,64 @@ public class Startup
 ````
 
 
-6. The view has to look as demonstrated in the following example:
+1. The view has to look as demonstrated in the following example:
 
 	````HTML
 <!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-		
-		<link href="https://kendo.cdn.telerik.com/2019.1.115/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
-		<link href="https://kendo.cdn.telerik.com/2019.1.115/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
-		
-		<style>
-			body {
-				margin: 5px;
-				font-family: Verdana, Arial, sans-serif;
-			}
-		
-			#reportViewer1 {
-				position: absolute;
-				left: 5px;
-				right: 5px;
-				top: 160px;
-				bottom: 5px;
-				overflow: hidden;
-				clear: both;
-			}
-		</style>
-		
-		<title>Telerik HTML5 Report Viewer Demo</title>
-		
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	
-	</head>
-	<body>
-	
-		<div id="reportViewer1">
-			loading...
-		</div>
-	
-	</body>
+		<head>
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+			<link href="https://kendo.cdn.telerik.com/2019.1.115/styles/kendo.common.min.css" rel="stylesheet" id="common-css" />
+			<link href="https://kendo.cdn.telerik.com/2019.1.115/styles/kendo.blueopal.min.css" rel="stylesheet" id="skin-css" />
+
+			<style>
+				body {
+					margin: 5px;
+					font-family: Verdana, Arial, sans-serif;
+				}
+
+				#reportViewer1 {
+					position: absolute;
+					left: 5px;
+					right: 5px;
+					top: 160px;
+					bottom: 5px;
+					overflow: hidden;
+					clear: both;
+				}
+			</style>
+
+			<title>Telerik HTML5 Report Viewer Demo</title>
+
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		</head>
+		<body>
+			<div id="reportViewer1">
+				loading...
+			</div>
+		</body>
 	</html>
-	
+
 	@section scripts
-		{
+	{
 		<script src="/api/reports/resources/js/telerikReportViewer"></script>
-		
+
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$("#reportViewer1")
 					.telerik_ReportViewer({
-						// The URL of the service which will serve reports.
-						// The URL corresponds to the name of the controller class (ReportsController).
-						// For more information on how to configure the service, refer to http://www.telerik.com/help/reporting/telerik-reporting-rest-conception.html.
 						serviceUrl: "api/reports/",
-		
-						// The URL for the report viewer template. The template can be edited -
-						// new functionalities can be added and unneeded ones can be removed.
-						// For more information, refer to http://www.telerik.com/help/reporting/html5-report-viewer-templates.html.
-						// templateUrl: 'ReportViewer/templates/telerikReportViewerTemplate.html',
-		
-						//ReportSource - holds the report description
 						reportSource: {
-		
-							// The report can be set to a report file name (.trdx or .trdp report definition)
-							// or CLR type name (report class definition).
 							report: "Product Sales.trdp",
 							// Parameters name value dictionary
 							//parameters: {}
 						},
-	
-						//parameters: {
-						//    editors: {
-						//        singleSelect: telerikReportViewer.ParameterEditorTypes.COMBO_BOX,
-						//        multiSelect: telerikReportViewer.ParameterEditorTypes.COMBO_BOX,
-						//    }
-						//},
-		
-						// Specifies whether the viewer is in the interactive or print preview mode.
-						// PRINT_PREVIEW - Displays the paginated report as if it is printed on paper. Interactivity is not enabled.
-						// INTERACTIVE - Displays the report in its original width and height without paging. Additionally, interactivity is enabled.
 						viewMode: telerikReportViewer.ViewModes.INTERACTIVE,
-	
-						// Sets the scale mode of the viewer.
-						// Three modes currently exist:
-						// FIT_PAGE - The whole report will fit on the page (will zoom in or out), regardless of its width and height.
-						// FIT_PAGE_WIDTH - The report will be zoomed in or out so that the width of the screen and the width of the report match.
-						// SPECIFIC - Uses the scale to zoom in and out the report.
 						scaleMode: telerikReportViewer.ScaleModes.SPECIFIC,
-	
-						// Zoom in and out the report using the scale
-						// 1.0 is equal to 100%, that is, the original size of the report.
 						scale: 1.0,
-	
-						//Enables or disables the accessibility features of the report viewer and its contents.
 						enableAccessibility: false,
-	
-						//If set to true, shows the Send Mail Message toolbar button.
 						sendEmail: { enabled: true }
 					});
 			});

@@ -1,6 +1,6 @@
 ---
 title: Third-Party Dependencies
-page_title: Third-Party Dependencies for Enriching Telerik Reporting Functionalities
+page_title: Third-Party Dependencies for Enriching Reporting Functionalities
 description: "Learn more about the third-party dependencies when working with Telerik Reporting that let you use specific features like Open XML rendering and ADOMD.NET."
 slug: telerikreporting/using-reports-in-applications/third-party-dependencies
 previous_url: /using-reports-in-applications/third-party-dependencies, /installation-deploying-adomd.net, /installation-deploying-openxml

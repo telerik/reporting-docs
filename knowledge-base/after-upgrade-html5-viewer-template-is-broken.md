@@ -1,7 +1,7 @@
 ---
 title: HTML5 ReportViewer Layout Breaks after Upgrade
 page_title: HTML5 ReportViewer with broken appearance after Upgrade
-description: "Learn why the HTML5 Report Viewer appearance may not be as expecterd after upgrading Telerik Reporting and how to fix the problem."
+description: "Learn why the HTML5 Report Viewer appearance may not be as expected after upgrading Telerik Reporting and how to fix the problem."
 type: troubleshooting
 slug: after-upgrade-html5-viewer-template-is-broken
 tags: telerik, reporting, HTML5, reportviewer, templates, upgrade

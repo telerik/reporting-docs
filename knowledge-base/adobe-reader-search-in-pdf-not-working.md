@@ -1,7 +1,7 @@
 ---
-title: Search inside PDF Content in Adobe Reader Returns Incorrect Results
+title: Search Inside PDF Content in Adobe Reader Returns Incorrect Results
 page_title: PDF Content Search in Adobe Reader Returns Incorrect Results
-description: "Learn how to fix the search functionality inside Adobe Reader."
+description: "Learn how to fix the search functionality inside Adobe Reader when it returns incorrect results from documents generated with Telerik Reporting."
 type: troubleshooting
 slug: adobe-reader-search-in-pdf-not-working
 tags: telerik, reporting, pdf, search, incorrect, adobe, acrobat

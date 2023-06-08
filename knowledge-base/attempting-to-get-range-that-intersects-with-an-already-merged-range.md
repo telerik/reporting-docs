@@ -1,7 +1,7 @@
 ---
 title: Exporting Reports to Excel 2003 Causes an Error
-page_title: Exporting Reports to Excel 2003 Causes an Error
-description: "Learn how to handle the error that attempting to get a range that intersects with an already merged range when exporting to Excel 20303."
+page_title: Error occurring when exporting Telerik Reports to Excel 2003
+description: "Learn how to handle the error thrown by the Telerik Reporting engine when trying to export to Excel 2003."
 type: troubleshooting
 slug: attempting-to-get-range-that-intersects-with-an-already-merged-range
 tags: telerik, reporting, export, to, excel, 2003, throws, an, error
@@ -32,7 +32,7 @@ How can I handle the error that occurs when I export the report to Excel 2003?
 
 ## Error Message
 
-```
+````
 System.InvalidOperationException: Attempting to get range {X,Y}{X,Y},Merged=False,Parent=Telerik.Reporting.OpenXmlRendering.Spreadsheet.Worksheet, that intersects with an already merged range.
    at Telerik.Reporting.OpenXmlRendering.Spreadsheet.Worksheet.GetRange(Int32 col, Int32 row, Int32 colSpan, Int32 rowSpan)
    at Telerik.Reporting.ExcelRendering.RenderingItem.GetRange(IWorksheet worksheet, TableLayoutInfo layoutInfo)
@@ -52,12 +52,16 @@ System.InvalidOperationException: Attempting to get range {X,Y}{X,Y},Merged=Fals
    at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
    at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
-```
+````
 
 ## Cause
 
-Usually, this error occurs as a result of incorrect report layout which might be caused by overlapping or growing items. As described in the [Design Considerations for Excel Rendering]({% slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations %}) article, overlapped items are not allowed in Excel and may lead to unexpected results.
+Usually, this error occurs as a result of incorrect report layout which might be caused by overlapping or growing items. As described in the [Design Considerations for Excel Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations%}) article, overlapped items are not allowed in Excel and may lead to unexpected results.
 
 ## Solution
 
 To solve this issue, double-check for any overlapping items in the **Design** view of the report and make sure none of the items overlap. Overlapping items are located in the report surface and are marked with yellow triangle with an exclamation mark as a warning sign.
+
+## See Also
+
+* [Design Considerations for Excel Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/excel-rendering-design-considerations%})

@@ -1,10 +1,9 @@
 ---
-title: Blazor WASM Project Throws System.Drawing.Common Is Not Supported on this Platform
-description: "Learn why Blazor WebAssembly(WASM) projects may fail with the error System.Drawing.Common is not supported on this platform when hosting Telerik Reporting engine."
+title: Blazor WASM Project Throws System.Drawing.Common Is Not Supported
+description: "Learn why Blazor WebAssembly(WASM) projects may fail with the error 'System.Drawing.Common is not supported on this platform' when hosting Telerik Reporting engine."
 type: troubleshooting
-page_title: Error System.Drawing.Common is not supported on this platform when hosting Telerik Reporting in Blazor WebAssembly(WASM) project
+page_title: System.Drawing.Common is not supported on this platform in Blazor WASM
 slug: blazor-wasm-system-drawing-common-not-supported
-position: 
 tags: webassembly,wasm,blazor,system,drawing,common,report,error,supported
 ticketid: 1590379
 res_type: kb

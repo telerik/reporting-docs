@@ -129,7 +129,7 @@ export class AppComponent {
 	````HTML
 <tr-viewer
 		[containerStyle]="viewerContainerStyle"
-		[serviceUrl]="'http://myrestserviceurl/api/reports'"
+		[serviceUrl]="'http://localhost/api/reports'"
 		[reportSource]="{
 			report: 'Product Catalog.trdp',
 			parameters: {}

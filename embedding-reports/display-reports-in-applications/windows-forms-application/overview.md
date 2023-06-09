@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /winforms-report-viewer
 ---
+
 <style>
 table th:first-of-type {
 	width: 20%;
@@ -67,7 +68,7 @@ To process and render the report, use any of the following locations:
 
 * On the client machine with the report generation engine embedded in the desktop application.
 * On a server machine with the report generation engine embedded in a web application and exposed as [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
-* On a [Telerik Report Server](http://www.telerik.com/report-server) instance.
+* On a [Telerik Report Server](https://www.telerik.com/report-server) instance.
 
 ## Declaring the Application as DPI-Aware
 
@@ -105,7 +106,6 @@ The Windows Forms Report Viewer supports the following keyboard and mouse comman
 |+ (Plus)|n/a|Zooms in.|
 |- (Minus)|n/a|Zooms out.|
 |F|n/a|Opens the **Search** dialog.|
-
 
 ## See Also
 

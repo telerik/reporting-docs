@@ -34,13 +34,12 @@ Defines a collection that allows the Reporting Engine to use a private version o
 
 The private fonts are used for all rendering extensions. Still the font rendering on the client computer depends on the viewer configuration and document format specifications:
 
-+ PDF: The rendering extension embeds fonts by default. This functionality is controlled by the [FontEmbedding device information setting]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%});
-+ HTML5 Rendering: In order web browser to render HTML with private fonts you have to set up font-face rules. For more information see the [W3.org article for font-face rules](https://www.w3.org/TR/css-fonts-3/#font-face-rule);
-
-+ WPF XAML rendering: embeds private fonts by default;
-+ Silverlight XAML rendering: In addition to add the private fonts as content to the WCF hosting project you have to add the fonts as resources to the Silverlight project with the same relative path;
-+ For all other document formats the Reporting Engine is using private fonts but in order the document viewer to use them the fonts should be installed on the client computer;
-+ Windows Forms Report Viewer uses Image rendering to render in EMF+ that don't support private fonts.
+* PDF: The rendering extension embeds fonts by default. This functionality is controlled by the [FontEmbedding device information setting]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%});
+* HTML5 Rendering: In order web browser to render HTML with private fonts you have to set up font-face rules. For more information see the [W3.org article for font-face rules](https://www.w3.org/TR/css-fonts-3/#font-face-rule);
+* WPF XAML rendering: embeds private fonts by default;
+* Silverlight XAML rendering: In addition to add the private fonts as content to the WCF hosting project you have to add the fonts as resources to the Silverlight project with the same relative path;
+* For all other document formats the Reporting Engine is using private fonts but in order the document viewer to use them the fonts should be installed on the client computer;
+* Windows Forms Report Viewer uses Image rendering to render in EMF+ that don't support private fonts.
 
 As with most types of software, font files are licensed, rather than sold, and licenses that govern the use of fonts vary from vendor to vendor. As a developer it is your responsibility to ensure that you have the required license rights for any font you use as private font, or otherwise redistribute.
 
@@ -66,7 +65,7 @@ The following sections describe attributes, child elements, and parent elements.
 
 |   |   |
 | ------ | ------ |
-|Attribute|<table><colgroup><col span="1" style="width: 10%;"><col span="1" style="width: 90%;"></colgroup><tbody><tr><td><strong>fontFamily</strong></td><td>The attribute is required and case sensitive.</td></tr><tr><td><strong>path</strong></td><td>The attribute is required and is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see MSDN <a href="https://msdn.microsoft.com/en-us/library/system.io.directory.getcurrentdirectory.aspx">Directory.GetCurrentDirectory() method</a><br/>For web projects you can use ~ operator to specify a root-relative path for a font. For more informarion see MSDN <a href="https://msdn.microsoft.com/en-us/library/ms178116.aspx">ASP.NET Web Project Paths</a>.</td></tr><tr><td><strong>fontStyle</strong></td><td>The attribute is optional with valid values Regular, Bold, Italic, Strikeout and Underline. The default value is Regular. Specify this attribute if you have to specify font family with multiple font files for different style or if specified font file is not containing Regular style.</td></tr></tbody></table>|
+|Attribute|<table><colgroup><col span="1" style="width: 10%;"><col span="1" style="width: 90%;"></colgroup><tbody><tr><td><strong>fontFamily</strong></td><td>The attribute is required and case sensitive.</td></tr><tr><td><strong>path</strong></td><td>The attribute is required and is permitted to specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, see MSDN <a href="https://learn.microsoft.com/en-us/dotnet/api/system.io.directory.getcurrentdirectory?view=net-7.0#System_IO_Directory_GetCurrentDirectory">Directory.GetCurrentDirectory() method</a><br/>For web projects you can use ~ operator to specify a root-relative path for a font. For more informarion see MSDN <a href="https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)">ASP.NET Web Project Paths</a>.</td></tr><tr><td><strong>fontStyle</strong></td><td>The attribute is optional with valid values Regular, Bold, Italic, Strikeout and Underline. The default value is Regular. Specify this attribute if you have to specify font family with multiple font files for different style or if specified font file is not containing Regular style.</td></tr></tbody></table>|
 |Child elements|None|
 |Parent element|__privateFonts__|
 

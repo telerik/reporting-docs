@@ -36,7 +36,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 > Some of the Visual Studio template projects may have the required settings already added by default. In other .NET Core 2.1 Web projects, you may need to add manually some or all of the settings.
 
-1. Inject the [IConfiguration](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) and [IHostingEnvironment](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment?view=aspnetcore-2.1) in the constructor of the Startup class. We will need them later to get the configuration settings and the relative paths:
+1. Inject the [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) and [IHostingEnvironment](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment?view=aspnetcore-2.1) in the constructor of the Startup class. We will need them later to get the configuration settings and the relative paths:
 
 	````CSharp
 public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
@@ -72,9 +72,9 @@ app.UseStaticFiles();
 
 ## Add Configuration Settings in the Startup.cs file
 
-The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) for this purpose.
+The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) for this purpose.
 
-The .NET Core 2.1 applications use a [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
+The .NET Core 2.1 applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
 
 ````CSharp
 ReportingEngineConfiguration = sp.GetService<IConfiguration>()
@@ -82,7 +82,7 @@ ReportingEngineConfiguration = sp.GetService<IConfiguration>()
 
 will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
-To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/) extension method on an instance of [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder). Here are the exact steps you may follow:
+To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile?view=dotnet-plat-ext-7.0) extension method on an instance of [ConfigurationBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.configurationbuilder?view=dotnet-plat-ext-7.0). Here are the exact steps you may follow:
 
 1. Add a new `ResolveSpecificReportingConfiguration` class as a separate file or in the Startup.cs file (optional)
 

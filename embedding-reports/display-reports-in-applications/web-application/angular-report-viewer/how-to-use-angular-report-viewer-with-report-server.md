@@ -40,7 +40,8 @@ npm install jquery
 	````TypeScript
 "scripts": ["./node_modules/jquery/dist/jquery.js"]
 ````
->note If your `node_modules` folder is not in the same directory as the `angular.json` file, adjust this path to that alternate location.
+
+	>note If your `node_modules` folder is not in the same directory as the `angular.json` file, adjust this path to that alternate location.
 
 1. Install the Telerik Angular Report Viewer NPM package by running:
 
@@ -108,7 +109,7 @@ export class AppComponent {
 	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
-	>To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](http://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes#getting-the-themes)). 
+	>To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview#getting-the-themes)).
 	If you use the __styleUrls__ attribute to reference the CSS, it is required to set the view encapsulation to __None__:
 
 	````TypeScript

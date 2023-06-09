@@ -21,29 +21,26 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 1. Required Application Version:
 
-   + Angular 13+ application
+	+ Angular 13+ application
 
 1. Required Service:
 
-   + The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://docs.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api)  in the REST Service project.
+	+ The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api)  in the REST Service project.
 
 1. Required JavaScript libraries:
 
-   +  [jQuery 3.2.1+](https://jquery.com/download/)
+	+ [jQuery 3.2.1+](https://jquery.com/download/)
 
 1. The [Angular Report Viewer package](https://www.npmjs.com/package/@progress/telerik-angular-report-viewer) requires the following peer dependencies:
 
-   + `@angular/common: ">=13.0.0"`
-
-   + `@angular/core: ">=13.0.0"`
-
-   + `rxjs: ">=6.5.0"`
+	+ `@angular/common: ">=13.0.0"`
+	+ `@angular/core: ">=13.0.0"`
+	+ `rxjs: ">=6.5.0"`
 
 1. Required references to Telerik Kendo UI styles:
 
-   +  [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or
-
-   +  [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
+	+ [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or
+	+ [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
 ## Browser Support
 
@@ -53,6 +50,4 @@ The Angular viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting
 ## See Also
 
 * [How to Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
-
 * [How to Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})
-

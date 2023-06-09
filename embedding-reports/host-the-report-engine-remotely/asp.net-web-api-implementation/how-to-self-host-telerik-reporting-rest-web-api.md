@@ -20,7 +20,7 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 	`netsh http add urlacl url=http://+:8080/ user=DOMAIN\user`
 
 1. On Visual Studio, create a “Console Application” project
-1. Install the [Microsoft.AspNet.WebApi.SelfHost 4.0.30506](http://www.nuget.org/packages/Microsoft.AspNet.WebApi.SelfHost/4.0.30506) NuGet package
+1. Install the [Microsoft.AspNet.WebApi.SelfHost 4.0.30506](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.SelfHost/4.0.30506) NuGet package
 
 	>The Reporting REST WebAPI Service is built against WebAPI 1. In case you have to use __newer version of Microsoft.AspNet.WebApi.SelfHost (e.g. WebAPI 2)__ you have to redirect the System.Web.Http and System.Net.Http.Formatting to their newer version. To do this, add the following bindingRedirects to your app.config and replace 5.1.0.0 with the exact version:
 	>
@@ -54,7 +54,6 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 	+ System.Net.Http.Formatting.dll
 
 1. Implement the reports controller as explained in the article [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
-
 1. Implement the starting point of the application:
 
 	{{source=CodeSnippets\MvcCS\SelfHostedSnippets\Program.cs region=SelfHostedRestService}}
@@ -62,7 +61,6 @@ ASP.NET Web API does not require IIS. You can self-host a Web API in your own ho
 
 
 1. Run the console app
-
 1. To verify whether the service works correctly you can make a sample request for the available document formats using the following URL:
 
 	`http://localhost: [portnumber]/api/reports/formats`

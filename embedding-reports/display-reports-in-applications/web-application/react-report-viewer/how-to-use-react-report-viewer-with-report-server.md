@@ -18,7 +18,6 @@ This tutorial demonstrates how to add the React Report Viewer component to a new
 The following list describes the prerequisites for this tutorial:
 
 * Review the React Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}#requirements).
-
 * A running intance of the [Telerik Report Server](https://docs.telerik.com/report-server/introduction).
 
 ## Using React Report Viewer in React application
@@ -62,33 +61,33 @@ import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
 let viewer;
 	ReactDOM.render(
 		<div>
-		  <TelerikReportViewer
-			ref={ el => viewer = el }
-			reportServer={{
-				url: 'http://mytelerikreportserver:83/',
-				username: 'myusername',
-				password: 'mypass'
-			}}
-			reportSource={{
-				report: 'Samples/Dashboard.trdp',
-				parameters: {}
-			}}
-			viewerContainerStyle = {{
-				position: 'absolute',
-				left: '5px',
-				right: '5px',
-				top: '40px',
-				bottom: '5px',
-				overflow: 'hidden',
-				clear: 'both',
-				fontFamily: 'ms sans serif'
-			}}
-			viewMode="INTERACTIVE"
-			scaleMode="SPECIFIC"
-			scale={1.0}
-			enableAccessibility={false} />
-		  <button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
-		  <button onClick={ () => viewer.commands.print.exec() }>Print</button>
+			<TelerikReportViewer
+				ref={ el => viewer = el }
+				reportServer={{
+					url: 'https://mytelerikreportserver:83/',
+					username: 'myusername',
+					password: 'mypass'
+				}}
+				reportSource={{
+					report: 'Samples/Dashboard.trdp',
+					parameters: {}
+				}}
+				viewerContainerStyle = {{
+					position: 'absolute',
+					left: '5px',
+					right: '5px',
+					top: '40px',
+					bottom: '5px',
+					overflow: 'hidden',
+					clear: 'both',
+					fontFamily: 'ms sans serif'
+				}}
+				viewMode="INTERACTIVE"
+				scaleMode="SPECIFIC"
+				scale={1.0}
+				enableAccessibility={false} />
+			<button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
+			<button onClick={ () => viewer.commands.print.exec() }>Print</button>
 		</div>,
 		document.getElementById('root')
 	);

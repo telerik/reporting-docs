@@ -77,14 +77,14 @@ $("#reportViewer1")
 
 	````JavaScript
 reportServer: {
-		url: "http://yourReportServerUrl:port",
+		url: "https://yourReportServerUrl:port",
 		username: null,
 		password: null
 	},
 ````
 
 
-	Substitute the `yourReportServerUrl:port` with the actual url of your Report Server instance along with the port if needed. Specifying the username and password can be omitted (in this case the Report Server's Guest account will be used) or can be set to an actual account, defined in Report Server.
+	Substitute the `https://yourReportServerUrl:port` with the actual url of your Report Server instance along with the port if needed. Specifying the username and password can be omitted (in this case the Report Server's Guest account will be used) or can be set to an actual account, defined in Report Server.
 
 1. If you have modified the Telerik Report Viewer Template HTML file, you can leave the `templateUrl` option intact. Otherwise it is recommended to delete the line `templateUrl: '/ReportViewer/templates/telerikReportViewerTemplate-{{site.buildversion}}.html'`, so the template will be downloaded automatically from the server.
 1. Locate the lines that sets the report source's report definition (it should start with `report: "...`). Replace them with the following line: `report: "{Category}/{ReportName}"`, where `{Category}` and `{ReportName}` are the actual names of the category and report that can be accessed by the Guest user or by the user you have provided login credentials for. Setup the report parameters if needed.
@@ -94,7 +94,7 @@ reportServer: {
 $("#reportViewer1")
 		.telerik_ReportViewer({
 			reportServer: {
-				url: "http://yourReportServerUrl:port",
+				url: "https://yourReportServerUrl:port",
 				username: null,
 				password: null
 			},

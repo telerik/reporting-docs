@@ -15,7 +15,7 @@ The Object Data Source Wizard allows you to create a new or edit an existing [Ob
 
 ## Creating the DataSource
 
-The purpose of the ObjectDataSource component is to provide business objects data to data items in a declarative manner. For that reason, firstly, you need to create a project with the datasource. Note that it is highly recommended extracting the business objects into a separate project. By doing this, you will be able to use the class in the Standalone designer by just copying the assembly in the designer folder and registering it in the designer config file. In order to select the right type of .NET implementation and version, you can use the [.NET Standard compatibility chart](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) which explains how and when the assemblies can be loaded in different framework versions.
+The purpose of the ObjectDataSource component is to provide business objects data to data items in a declarative manner. For that reason, firstly, you need to create a project with the datasource. Note that it is highly recommended extracting the business objects into a separate project. By doing this, you will be able to use the class in the Standalone designer by just copying the assembly in the designer folder and registering it in the designer config file. In order to select the right type of .NET implementation and version, you can use the [.NET Standard compatibility chart](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0) which explains how and when the assemblies can be loaded in different framework versions.
 
 In this example, we will use a `.NET Standard 2.0 Class Library` which is suitable for both .NET Framework and .NET Core applications. It will contain the business objects which in this case will be cars. Below you can see all required steps for building the project.
 
@@ -75,10 +75,10 @@ public class Cars : List<Car>
 		public Cars()
 		{
 			Car car;
-			car = new Car("Honda", "NSX GT", 2003, "http://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
+			car = new Car("Honda", "NSX GT", 2003, "https://www.telerik.com/images/reporting/cars/NSXGT_7.jpg"
 			, new string[] { "Black", "Red", "White", "Orange" });
 			this.Add(car);
-			car = new Car("Nissan", "Skyline R34 GT-R", 2005, "http://www.telerik.com/images/reporting/cars/EVLR34_1.jpg"
+			car = new Car("Nissan", "Skyline R34 GT-R", 2005, "https://www.telerik.com/images/reporting/cars/EVLR34_1.jpg"
 			, new string[] { "Black", "White" });
 			this.Add(car);
 		...

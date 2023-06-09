@@ -7,6 +7,7 @@ tags: options,blazor,native,report,viewer,api,initialization
 published: True
 position: 0
 ---
+
 <style>
 table th:first-of-type {
 	width: 20%;
@@ -117,7 +118,7 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 				</ul>
 				<pre><code>
 &lt;ReportViewerSettings&gt;
-	&lt;ReportServerSettings Url="http://reportinghost:83" Username="user" Password="pass"&gt;&lt;/ReportServerSettings&gt;
+	&lt;ReportServerSettings Url="https://reportinghost:83" Username="user" Password="pass"&gt;&lt;/ReportServerSettings&gt;
 	&lt;SendEmailDialogSettings From="from@mail.com" To="to@mail.com" Format="CSV"&gt;&lt;/SendEmailDialogSettings&gt;
 &lt;/ReportViewerSettings&gt;
 				</code></pre>

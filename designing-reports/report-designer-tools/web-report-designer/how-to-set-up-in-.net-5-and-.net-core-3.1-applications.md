@@ -22,10 +22,10 @@ For full control, instead of using the item template, you can manually configure
 1. Create a sample ASP.NET Core 3.1+ Project. It may be an empty Web project or a Web API project.
 1. Add the required dependencies:
 
-	+ `Telerik.WebReportDesigner.Services`
-	+ `Telerik.Reporting.Services.AspNetCore`
-	+ `Telerik.Reporting.JsonSerialization`
-	+ `Telerik.Reporting`
+	* `Telerik.WebReportDesigner.Services`
+	* `Telerik.Reporting.Services.AspNetCore`
+	* `Telerik.Reporting.JsonSerialization`
+	* `Telerik.Reporting`
 
 When you use NuGet packages, you may add only the `Telerik.WebReportDesigner.Services` package as it depends on the rest of the required Telerik Reporting assemblies, so they will be added automatically. Their dependencies will also be resolved automatically. For more information, see [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
@@ -64,9 +64,9 @@ app.UseStaticFiles();
 
 ## Add Configuration Settings in the Startup.cs file
 
-The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) for this purpose.
+The report generation engine can retrieve Sql Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-5.0) for this purpose.
 
-The ASP.NET Core applications use a [key-value JSON-based](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-3.1) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
+The ASP.NET Core applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-3.1) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
 
 ````CSharp
 ReportingEngineConfiguration = sp.GetService<IConfiguration>()
@@ -74,7 +74,7 @@ ReportingEngineConfiguration = sp.GetService<IConfiguration>()
 
 will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
-To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile/) extension method on an instance of [ConfigurationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.configurationbuilder). Here are the exact steps to follow:
+To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile?view=dotnet-plat-ext-7.0) extension method on an instance of [ConfigurationBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.configurationbuilder?view=dotnet-plat-ext-7.0). Here are the exact steps to follow:
 
 1. Add a new `ResolveSpecificReportingConfiguration` class as a separate file or in the Startup.cs file
 

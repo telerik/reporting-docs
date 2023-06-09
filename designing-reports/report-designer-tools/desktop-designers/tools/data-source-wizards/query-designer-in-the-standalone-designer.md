@@ -16,7 +16,7 @@ Standalone Report Designer provides both a graphical query designer and a text-b
 * [Microsoft SQL Server](https://docs.telerik.com/data-access/developers-guide/database-specifics/microsoft-sql-server/database-specifics-sql-overview)
 * [Microsoft SQL Server Compact Edition](https://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-sqlce-overview)
 * [Microsoft SQL Azure](https://docs.telerik.com/data-access/developers-guide/database-specifics/microsoft-sql-azure/getting-started-root-quickstart-azure-overview)
-* [Oracle](https://docs.telerik.com/data-access/developers-guide/database-specifics/oracle/database-shttp://www.telerik.com/data-accesspecifics-oracle-overview)
+* [Oracle](https://docs.telerik.com/data-access/developers-guide/database-specifics/oracle/database-specifics-oracle-overview)
 * [MySql](https://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-mysql-overview)
 * [Advantage Database Server](https://docs.telerik.com/data-access/developers-guide/database-specifics/database-specifics-ads-overview)
 * [SQL Anywhere](https://docs.telerik.com/data-access/developers-guide/database-specifics/sql-anywhere/database-specifics-sqlanywhere-voerview)

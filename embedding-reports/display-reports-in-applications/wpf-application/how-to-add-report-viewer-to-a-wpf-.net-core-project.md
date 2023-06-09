@@ -74,7 +74,7 @@ xmlns:tr="http://schemas.telerik.com/wpf"
 1. Add the WPF Report Viewer declaration to the target Window and set the proper UriReportSource.Uri relative path.
 
 	+ When using an __Embedded Reporting engine__ :
-	
+
 		Reference a descriptive report definition (TRDP or TRDX report) from a local folder, or type report definition (CS or VB report) from a report library project. For example, add a new folder named *Reports* in the application main folder, copy your TRDP reports there, and reference one of them. Don't forget to set their property 'Copy to Output Directory' to 'Copy always' or 'Copy if newer':
 
 		````XAML
@@ -113,7 +113,7 @@ xmlns:tr="http://schemas.telerik.com/wpf"
 		</tr:ReportViewer>
 ````
 
-	 With the above setting, the Report Server running on http://yourreportserver:83 will look for the report named "MyReportName.trdp" in the category "MyCategory". Note that you need to provide valid username and password so that the viewer can login successfully, or have the guest user enabled in the Report Server.
+	 With the above setting, the Report Server running on `http://yourreportserver:83` will look for the report named "MyReportName.trdp" in the category "MyCategory". Note that you need to provide valid username and password so that the viewer can login successfully, or have the guest user enabled in the Report Server.
 
 ## See Also
 

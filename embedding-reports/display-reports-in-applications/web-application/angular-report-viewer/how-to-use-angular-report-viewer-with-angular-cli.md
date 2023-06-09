@@ -68,7 +68,8 @@ npm install jquery
 	````TypeScript
 "scripts": ["./node_modules/jquery/dist/jquery.js"]
 ````
->note If your `node_modules` folder is not in the same directory as the `angular.json` file, adjust this path to that location.
+
+	>note If your `node_modules` folder is not in the same directory as the `angular.json` file, adjust this path to that location.
 
 1. Install the Telerik Angular Report Viewer NPM package by running:
 
@@ -111,7 +112,7 @@ export class AppComponent {
 	````HTML
 <tr-viewer
 		[containerStyle]="viewerContainerStyle"
-		[serviceUrl]="'http://myrestserviceurl/api/reports'"
+		[serviceUrl]="'http://localhost/api/reports'"
 		[reportSource]="{
 			report: 'Product Catalog.trdp',
 			parameters: {}

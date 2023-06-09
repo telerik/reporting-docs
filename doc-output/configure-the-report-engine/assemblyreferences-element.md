@@ -8,12 +8,13 @@ published: True
 position: 4
 previous_url: /configuring-telerik-reporting-assemblyreferences
 ---
+
 <style>
 table th:first-of-type {
-    width: 10%;
+	width: 10%;
 }
 table th:nth-of-type(2) {
-    width: 90%;
+	width: 90%;
 }
 </style>
 
@@ -22,17 +23,17 @@ table th:nth-of-type(2) {
 Defines a collection of assembly references that are used from Reporting Engine during processing stage to resolve names of user functions and user aggregate functions and also the types used by ObjectDataSource component. 
 
 XML-based configuration file:
-    
+
 ````XML
 <assemblyReferences>
-    <add />
-    <clear />
-    <remove />
+	<add />
+	<clear />
+	<remove />
 </assemblyReferences>
 ````
 
 JSON-based configuration file:
-    
+
 ````JSON
 "assemblyReferences": [
 ],
@@ -50,34 +51,34 @@ The following sections describe attributes, child elements, and parent elements.
 
 ## Example
 
-The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly assembly as source for user functions. In this example it would also search for assemblies in MyDir and SubDir application base subdirectories as we have explicitly instructed that via the `<probing>` Element. This is not mandatory, and when not specified, it would search in the application base, which is the root location where the application is being executed. 
+The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly assembly as source for user functions. In this example it would also search for assemblies in MyDir and SubDir application base subdirectories as we have explicitly instructed that via the `<probing>` Element. This is not mandatory, and when not specified, it would search in the application base, which is the root location where the application is being executed.
 
 > The [probing](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element) element is not supported in the .NET Standalone Designer
 
 XML-based configuration file:
-    
+
 ````XML
 <?xml version="1.0"?>
 <configuration>
-    <configSections>
+	<configSections>
 		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
-    </configSections>
-    <runtime>
+	</configSections>
+	<runtime>
 		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
 			  <probing privatePath="MyDir; MyDir2\SubDir"/>
 		</assemblyBinding>
-    </runtime>
-    <Telerik.Reporting>
+	</runtime>
+	<Telerik.Reporting>
 		<assemblyReferences>
 			<add name="MyUserFunctionsAssembly" version="1.0.0.0" culture="neutral" publicKeyToken ="null" />
 		</assemblyReferences>
-    </Telerik.Reporting>
+	</Telerik.Reporting>
 ...
 </configuration>
 ````
 
 JSON-based configuration file:
-    
+
 ````JSON
 "telerikReporting": {
 	"assemblyReferences": [
@@ -91,18 +92,13 @@ JSON-based configuration file:
 }
 ````
 
-> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections` element of configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://msdn.microsoft.com/en-us/library/system.configuration.configurationerrorsexception(v=vs.110).aspx) with following text: *Configuration system failed to initialize*. 
+> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections` element of configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with following text: *Configuration system failed to initialize*.
 
 ## See Also
 
-* [How the Runtime Locates Assemblies](https://docs.microsoft.com/en-us/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
-
-* [Specifying an Assembly's Location](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/specify-assembly-location)
-
-* [`<probing>` Element](https://docs.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
-
-* [Application Configuration Files](http://msdn.microsoft.com/en-us/library/windows/desktop/aa374182(v=vs.85).aspx)
-
+* [How the Runtime Locates Assemblies](https://learn.microsoft.com/en-us/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
+* [Specifying an Assembly's Location](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/specify-assembly-location)
+* [`<probing>` Element](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
+* [Application Configuration Files](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-configuration-files)
 * [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
-
 * [User Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})

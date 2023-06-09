@@ -1,8 +1,8 @@
 ---
-title: Cannot connect WPF/WinForms ReportViewer to Report Server or REST Service
-description: On attempt to connect WPF or WinForms ReportViewer to an engine of remote type, i.e. Report Server or REST Service, an error "The assembly Telerik.Reporting.Services.HttpClient.dll cannot be loaded." occurs.
+title: Cannot Connect WPF/WinForms Viewer to Report Server/REST Service
+description: "Learn why on attempt to connect WPF or WinForms ReportViewer to an engine of remote type, i.e. Report Server or REST Service, an error 'The assembly Telerik.Reporting.Services.HttpClient.dll cannot be loaded' occurs."
 type: troubleshooting
-page_title: Cannot connect WPF/WinForms ReportViewer to Report Server or REST Service
+page_title: Fail connecting desktop Report Viewer to remote Reporting engine
 slug: cannot-connect-wpf-or-winforms-report-viewer-to-report-server-or-rest-service
 position: 
 tags: WPFViewer, WinFormsVIewer, RestService, ReportServer
@@ -45,7 +45,7 @@ As a side note, we strongly suggest using the [Telerik Report Viewer Window Item
 
 ## See Also
 
-* [How To: Use WPF Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%})
-* [How To: Use WPF Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service%})
-* [How To: Use Windows Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%})
-* [How To: Use Windows Forms Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%})
+* [Using WPF Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-report-server%})
+* [Using WPF Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service%})
+* [Using Windows Forms Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-rest-service%})
+* [Using Windows Forms Report Viewer With Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-use-windows-forms-report-viewer-with-report-server%})

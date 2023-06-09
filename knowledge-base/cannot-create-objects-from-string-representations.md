@@ -1,6 +1,6 @@
 ---
 title: Cannot Create Objects from String Representations
-page_title: Cannot Create Objects from String Representations in the Report Property
+page_title: Report Property Cannot Create Objects from String Representations
 description: "Learn why you may see the error Cannot Create Objects from String Representations in the Report Property when working with Telerik Reporting in WebSite projects."
 slug: cannot-create-objects-from-string-representations
 tags: telerik, reporting, run, time, cannot, create, objects- from, their, string, representations, in, report, property

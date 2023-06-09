@@ -3,7 +3,7 @@ title: Change the Axis Scale in the Graph
 page_title: Change the Axis Scale in the Graph Report Item
 description: "Learn how to change the axis scale of the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-axis-scale
-previous_url: /report-items/graph/how-to/how-to-change-the-axis-scale
+previous_url: /report-items/graph/how-to/how-to-change-the-axis-scale, /graphhowtochangeaxisscale
 tags: telerik, reporting, graph, report, item, change, the, axis, scale
 type: how-to
 res_type: kb

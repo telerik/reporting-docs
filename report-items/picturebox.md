@@ -58,7 +58,7 @@ To set an expression as a PictureBox value in the Report Designer:
 
 To bind an image data to a PictureBox when using a Report Designer is a straight-forward process. You need to connect to a data source and drag the image field from the [**Data Explorer**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) window to your report. As a result, the report designer tool will associate each field based on its data type.
 
-Alternatively, you can drag a PictureBox item to the design surface and use an expression to set its `Value` property to an existing field from the data source. The type of the `PictureBox.Value` property is [`Object`](https://learn.microsoft.com/en-us/dotnet/api/system.object) which allows for versatile data binding and you do not have to directly bind to a database field with an image column.
+Alternatively, you can drag a PictureBox item to the design surface and use an expression to set its `Value` property to an existing field from the data source. The type of the `PictureBox.Value` property is [`Object`](https://learn.microsoft.com/en-us/dotnet/api/system.object) which allows for versatile data binding and you do not have to directly bind to a database field with an image column.
 
 The `Value` property accepts objects of type [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image), byte array and strings. The string can be either of the following:
 
@@ -67,7 +67,7 @@ The `Value` property accepts objects of type [`Image`](https://learn.microsoft.c
 
 ### Binding to Binary Images
 
-You can directly assign a reference to an [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image) to the `Value` property of a PictureBox.
+You can directly assign a reference to an [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image) to the `Value` property of a PictureBox.
 
 ````C#
 using System.Drawing;
@@ -84,7 +84,7 @@ Dim image2 As Image = Image.FromStream(imageStream)
 Me.PictureBox2.Value = image2
 ````
 
-While in design-time within the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), if you click the ellipsis of the `Value` property, a dialog appears for you to choose the desired image. After you select the image, the Designer will automatically store it in the resources file for the report (`.resx`) and add a line of code to the `InitializeComponent` method that obtains a reference to the image stored in the resources and assigns it to the `Value` of the PictureBox:
+While in design-time within the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}), if you click the ellipsis of the `Value` property, a dialog appears for you to choose the desired image. After you select the image, the Designer will automatically store it in the resources file for the report (`.resx`) and add a line of code to the `InitializeComponent` method that obtains a reference to the image stored in the resources and assigns it to the `Value` of the PictureBox:
 
 ````C#
 this.pictureBox1.Value = ((object)(resources.GetObject("pictureBox1.Value")));
@@ -107,14 +107,12 @@ End Function
 ````
 
 
-### Binding to Expressions, URIs, Base64, and SVG
+### Binding to Expressions, URIs, Base64, and SVG
 
 Alternatively, you can assign a string value to the `Value` property. This string value can be any of the following:
 
-* An [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})&mdash;When binding to a data field with an expression, the Value property will accept both `binary` and `string` data fields.
-
-* A [URI](http://en.wikipedia.org/wiki/URI)&mdash;The `Value` property supports both absolute and relative URIs.
-
+* An [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})&mdash;When binding to a data field with an expression, the Value property will accept both `binary` and `string` data fields.
+* A [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)&mdash;The `Value` property supports both absolute and relative URIs.
 * A string representing a Base64-encoded image or a valid SVG markup&mdash;For optimization, the engine initially checks the length of the string value.
 
 	If it is less than 80 characters, the value is considered to be an URI. Otherwise, the string is tested whether it is SVG markup (if its first 256 characters contain `<svg`) or a Base64-encoded string.
@@ -125,19 +123,19 @@ To sum it up, the data source column of the PictureBox can store the image objec
 
 ````C#
 this.pictureBox1.Value = "=Fields.MyImageBinary";//a binary data column
-this.pictureBox2.Value = "=Fields.MyImageURI";//a data column containing an URI
+this.pictureBox2.Value = "=Fields.MyImageURI";//a data column containing an URI
 this.pictureBox3.Value = @"C:\MyPictures\MyPicture.png";//absolute file path to a PNG file
 this.pictureBox4.Value = @"C:\MyPictures\MySVGImage.svg";//absolute file path to an SVG file
 this.pictureBox5.Value = @".\images\MyPicture.png";//relative path
-this.pictureBox6.Value = "http://www.mysite.com/images/img1.gif";//absolute URL
+this.pictureBox6.Value = "https://www.mysite.com/images/img1.gif";//absolute URL
 ````
 ````VB.NET
 Me.PictureBox1.Value = "=Fields.MyImageBinary" 'a binary data column
-Me.PictureBox2.Value = "=Fields.MyImageURI" 'a data column containing an URI
+Me.PictureBox2.Value = "=Fields.MyImageURI" 'a data column containing an URI
 Me.PictureBox3.Value = "C:\MyPictures\MyPicture.png" 'absolute file path to a PNG image
 Me.PictureBox4.Value = "C:\MyPictures\MySVGImage.svg" 'absolute file path to an SVG file
 Me.PictureBox5.Value = ".\images\MyPicture.png" 'relative path
-Me.PictureBox6.Value = "http://www.mysite.com/images/img1.gif" 'absolute URL
+Me.PictureBox6.Value = "https://www.mysite.com/images/img1.gif" 'absolute URL
 ````
 
 

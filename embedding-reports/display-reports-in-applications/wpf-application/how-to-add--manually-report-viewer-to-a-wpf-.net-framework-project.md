@@ -23,7 +23,7 @@ This article explains the steps needed to manually create an application which u
 	+ *Telerik.Windows.Controls.Input.dll*
 	+ *Telerik.Windows.Controls.Navigation.dll*
 	+ *Telerik.Windows.Data.dll*
-    
+
 	In case you are still not prepared to migrate to *Implicit Styling*, you can use the binaries that include the XAML. However, you will still have to merge all the XAML files mentioned in the next step, otherwise, the Report Viewer will not show up as it will have no styling.
 	
 	In case [Telerik UI for WPF](https://www.telerik.com/products/wpf/overview.aspx) is used only for the WPF Report Viewer, reference the *Telerik UI for WPF* assemblies available with Telerik Reporting. They are internally unlocked for the WPF Report Viewer but can only be used with the report viewer. The `.NET Framework` assemblies containing *Telerik UI for WPF* are located in `%programfiles(x86)%\Progress\Telerik Reporting {{site.suiteversion}}\Bin\WpfViewerDependencies\Framework`.
@@ -75,15 +75,11 @@ In case you use *Telerik UI for WPF* version greater than the __latest official 
 ## How to add the WPF ReportViewer to the toolbox
 
 1. Select a WPF window file (e.g. `Window1.xaml`).
-
 1. Open the toolbox and add your own tab or click on the General tab.
-
 1. Right click in the selected tab area and select **Choose Items…** from the context menu.
-
 1. The previous step will open **Choose Toolbox Items** dialog. Select the **WPF Components** tab and find the **ReportViewer** component from the **Telerik.ReportViewer.Wpf** assembly.
-
 1. Click **OK**.
 
 ## See Also
 
-* [How to Add report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
+* [Adding Report Viewer to a WPF .NET Framework Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})

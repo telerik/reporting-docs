@@ -188,7 +188,7 @@ Excel places limitations on exported reports due to the format capabilities. The
 * TextBoxes are rendered within one Excel cell. Font size, font face, decoration, font style and text/vertical align are the only formatting that is supported on individual text within an Excel cell.
 * Telerik Reporting expressions are not converted to Excel formulas. TextBox values that are expressions are evaluated during report processing and the result is exported as content of Excel cell.
 * Excel does not support background images for individual cells, so Background images for report items (including Report) are ignored.
-* Excel native page headers and footers support a maximum of 255 characters including [Formatting and VBA Codes for Headers and Footers](https://learn.microsoft.com/en-us/previous-versions/office/developer/office-2007/bb225426(v=office.12)?redirectedfrom=MSDN). The rendering extension truncates the string at 255 characters.
+* Excel native page headers and footers support a maximum of 255 characters including [Formatting and VBA Codes for Headers and Footers](https://learn.microsoft.com/en-us/previous-versions/office/developer/office-2007/bb225426(v=office.12)). The rendering extension truncates the string at 255 characters.
 * Excel does not support Watermarks.
 * Underlining justified text will only underline the words and not the spaces between them.
 * Table of contents is not supported.

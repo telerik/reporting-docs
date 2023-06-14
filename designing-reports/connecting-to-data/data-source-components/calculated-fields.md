@@ -18,7 +18,7 @@ You specify a calculated field manually by creating an expression. To open the E
 * Right click on the target DataSource component and select the Properties option from the context menu.
 * Click on the `CalculatedFields` property ellipsis.
 
-	![The Edit Calculated Fields Dialog in the Report Designer with a sample Expression for the Calculated Field named Field1 of type String](images/CalculatedFields.png)
+	![Edit Calculated Fields Dialog in Report Designer with a sample Expression for a Calculated Field of type String](images/CalculatedFields.png "Calculated Fields Dialog")
 
 The dialog accepts `Name` , `DataType` and `Expression`.
 

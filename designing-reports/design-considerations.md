@@ -35,7 +35,7 @@ In a report with complex layout, changing the visibility of an item does not gua
 
 The following visibility rules apply when rendering report items (red lines define layout dependency):
 
-![Report with three items divided into four parts by a horizontal and a vertical red line](images/ReportItemLayout.png)
+![Report with three items divided into four parts by a horizontal and a vertical red line.](images/ReportItemLayout.png "Layout Dependency")
 
 * If Item1 is hidden, all items below Item2 would remain in place.
 * If Item1 is hidden, all items right to Item3 would remain in place.
@@ -63,7 +63,7 @@ This rendering behavior will affect how report item borders are rendered accordi
 * When two sibling report items overlap the item which is rendered second will be drawn on top of the other item.
 * When two sibling report items are adjacent to each other the borders on the common side of the items will overlap according to the above rules. If the report item which was rendered second has a non-transparent background color or background image, the background will be rendered on top of the first report item's border.
 
-	![A preview image of two TextBoxes whose Borders are Overlapping](images/BorderOverlapping.png)
+	![A preview of two TextBoxes whose Borders are Overlapping.](images/BorderOverlapping.png "Overlapping Borders")
 
 >important Setting __BorderStyle__ and __BorderWidth__ properties of report item to conflicting values (for example: BorderStyle=Solid, BorderWidth: 0px) can produce unexpected result in some rendering formats. To hide the border, set BorderStyle=None. Otherwise, the width of the border needs to be set greater than 0.
 

@@ -40,7 +40,6 @@ Data point labels are used to display the exact value represented by a data poin
 Series represent a number of data points that show individual measurements. Depending on the groups they use and the data points they display, the series in the Map report item can be divided into two major categories.
 
 * [`LocationMapSeries`](/api/Telerik.Reporting.LocationMapSeries)&mdash;To determine its data points position on the map, this category uses [`GeoLocationMapGroup`](/api/Telerik.Reporting.GeoLocationMapGroup) to obtain a set of latitude and longitude coordinates, or to query the defined [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}). Location map series are the Point, Pie, and Column map types because they present similar data points each one on a single location on the map.
-
 * [`ShapeMapSeries`](/api/Telerik.Reporting.ShapeMapSeries)&mdash;This category uses a set of coordinates to determine the shape of the data point itself. In this case, the engine does not use a `LocationProvider` or a `GeoLocationMapGroup` because the data points are not determined by a single location on the map surface.
 
 The Map series can share existing `GeoLocation`, `ShapeMap`, and `Series` groups.
@@ -57,7 +56,7 @@ The Map legend is a collection of legend items that are used to distinguish the 
 
 ## Scale
 
-The [`MapScaleLegend`](/api/Telerik.Reporting.MapScaleLegend) shows the scale of the current map extent measured in the middle between its minimum and maximum latitude. The scale is calculated by using the [Haversine formula](http://en.wikipedia.org/wiki/Haversine_formula) which assumes that the Earth is a perfect sphere.
+The [`MapScaleLegend`](/api/Telerik.Reporting.MapScaleLegend) shows the scale of the current map extent measured in the middle between its minimum and maximum latitude. The scale is calculated by using the [Haversine formula](https://en.wikipedia.org/wiki/Haversine_formula) which assumes that the Earth is a perfect sphere.
 
 ### Formatting the Scale Legend
 

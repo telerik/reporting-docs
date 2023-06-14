@@ -20,11 +20,11 @@ The map supports the following location providers:
 
 	The query arguments order is of a huge significance. In the example above, if you switch the query arguments to **Austria, Vienna**, the service will return no results.
 
-* [`MapQuestLocationProvider`](/api/Telerik.Reporting.MapQuestLocationProvider)&mdash;Uses the [MapQuest Geocoding API](http://developer.mapquest.com/web/products/dev-services/geocoding-ws) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.
+* [`MapQuestLocationProvider`](/api/Telerik.Reporting.MapQuestLocationProvider)&mdash;Uses the [MapQuest Geocoding API](https://developer.mapquest.com/documentation/geocoding-api/) geocoding service to provide a single-line address and receive potential geographical coordinates of the geocoded location.
 
 	The query arguments order is of a huge significance. In the example above, if you switch the query arguments to **Austria, Vienna**, the service will return **Vienna, Dooly County, GA, USA**.
 
-* [`BingLocationProvider`](/api/Telerik.Reporting.BingLocationProvider)&mdash;Uses the [Bing™ Maps Locations API](http://msdn.microsoft.com/en-us/library/ff701715.aspx) to get location information about the requested address.
+* [`BingLocationProvider`](/api/Telerik.Reporting.BingLocationProvider)&mdash;Uses the [Bing™ Maps Locations API](https://learn.microsoft.com/en-us/bingmaps/rest-services/locations/) to get location information about the requested address.
 
 ## See Also
 

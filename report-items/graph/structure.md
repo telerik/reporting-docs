@@ -61,7 +61,7 @@ Depending on the series type, the Graph can visualize one or more measures:
 
 ## Coordinate Systems
 
-The Graph item uses a two-dimensional [coordinate system](http://en.wikipedia.org/wiki/Coordinate_system) that uniquely identifies the position of each data point. Each coordinate system consists of two reference lines called "coordinate axes" (or just "axes") and an "origin".
+The Graph item uses a two-dimensional [coordinate system](https://en.wikipedia.org/wiki/Coordinate_system) that uniquely identifies the position of each data point. Each coordinate system consists of two reference lines called "coordinate axes" (or just "axes") and an "origin".
 
 The Graph provides support for the Cartesian and Polar two-dimensional coordinate systems. Since there is a direct conversion between the two coordinate systems, they are interchangeable in the Graph report item. The coordinates of the data points in the Graph are represented by the `(x, y)` pair that for the Polar coordinate system is converted to `(ϴ, r)`, that is, `(x, y)` ⇔ `(ϴ, r)`.
 
@@ -69,7 +69,7 @@ The coordinate system also defines the default appearance and style of the two a
 
 ### Cartesian
 
-In a [Cartesian coordinate system](http://en.wikipedia.org/wiki/Cartesian_coordinate_system), each point is defined by an ordered pair of two coordinates which are the distances of the point to the two perpendicular axes.
+In a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system), each point is defined by an ordered pair of two coordinates which are the distances of the point to the two perpendicular axes.
 
 The Cartesian coordinate system provides the following axes:
 
@@ -78,7 +78,7 @@ The Cartesian coordinate system provides the following axes:
 
 ### Polar
 
-A [Polar coordinate system](http://en.wikipedia.org/wiki/Polar_coordinate_system) is used where each point on a plane is determined by a distance from the origin (called the radial coordinate or radius) and an angle from a fixed direction (the angular coordinate, polar angle, or azimuth).
+A [Polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system) is used where each point on a plane is determined by a distance from the origin (called the radial coordinate or radius) and an angle from a fixed direction (the angular coordinate, polar angle, or azimuth).
 
 The Polar coordinate system provides the following axes:
 
@@ -116,7 +116,7 @@ A series represents a series of data points that represents individual measureme
 
 ### Bar Charts
 
-[Bar charts](http://en.wikipedia.org/wiki/Bar_chart) display data points as bars to show comparisons between categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value.
+[Bar charts](https://en.wikipedia.org/wiki/Bar_chart) display data points as bars to show comparisons between categories. One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value.
 
 You can arrange the Bar series in different ways to emphasize various aspects of the data:
 
@@ -129,13 +129,13 @@ In a Polar coordinate system the bars appears in a wedge shape. If the series ar
 
 ### Line Charts
 
-[Line charts](http://en.wikipedia.org/wiki/Line_chart) display a series of data points connected by straight or smooth line segments. Data points are represented by markers that can vary by shape (circle, square, diamond, cross, and so on) and can display a third variable or measure with its size (also known as Bubble charts).
+[Line charts](https://en.wikipedia.org/wiki/Line_chart) display a series of data points connected by straight or smooth line segments. Data points are represented by markers that can vary by shape (circle, square, diamond, cross, and so on) and can display a third variable or measure with its size (also known as Bubble charts).
 
 When a Line series is projected on a Polar coordinate system, the result is also known as a Radar or Spider Line chart. Line series may be stacked to show a cumulative effect (stacked or stacked 100%).
 
 ### Area Charts
 
-[Area charts](http://en.wikipedia.org/wiki/Area_chart) are similar to the Line series. Area series display series of data points connected by straight or smooth line segments too but the area below the line is colored to indicate the volume.
+[Area charts](https://en.wikipedia.org/wiki/Area_chart) are similar to the Line series. Area series display series of data points connected by straight or smooth line segments too but the area below the line is colored to indicate the volume.
 
 When an Area series is projected on a Polar coordinate system, the result is also known as a Radar or Spider Area chart. Area series may be stacked to show a cumulative effect (stacked or stacked 100%).
 

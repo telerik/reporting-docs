@@ -30,7 +30,7 @@ Add NuGet package reference to `Telerik.Reporting.Cache.StackExchangeRedis` or `
 
 	+ In your application project add reference to the [StackExchange.Redis.StrongName](https://www.nuget.org/packages/StackExchange.Redis.StrongName) (not to be mistaken with StackExchange.Redis) NuGet package with version 1.0.320 or greater. This will add a dll reference to StackExchange.Redis.StrongName.dll version 1.0.316.0 or greater.
 
-		>When using greater version, a [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx) should be added in the application configuration file to the currently referenced dll version.
+		>When using greater version, a [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) should be added in the application configuration file to the currently referenced dll version.
 
 	+ Add reference to the `Telerik.Reporting.Cache.StackExchangeRedis` library located in the {Telerik Reportng installation folder}/Bin folder.
 
@@ -38,7 +38,7 @@ Add NuGet package reference to `Telerik.Reporting.Cache.StackExchangeRedis` or `
 
 	+ In your application project add reference to the [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis) NuGet package with version 2.0.601 or greater. This will add a dll reference to StackExchange.Redis.dll.
 
-		>When using greater version, a [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys(v=vs.110).aspx) should be added in the application configuration file to the currently referenced dll version.
+		>When using greater version, a [binding redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) should be added in the application configuration file to the currently referenced dll version.
 
 	+ Add reference to the `Telerik.Reporting.Cache.StackExchangeRedis.2` library located in the {Telerik Reportng installation folder}/Bin/netstandard2.0 folder.
 
@@ -50,3 +50,4 @@ Where needed in your application create an instance of the [RedisStorage](/repor
 
 * [Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-storage/overview%})
 * [REST Report Service Configuration]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})
+* [Binding Redirect](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element)

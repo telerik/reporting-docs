@@ -324,11 +324,16 @@ The [WinUI Report Viewer control]({%slug telerikreporting/using-reports-in-appli
 __Example of specifying the ReportSource declaratively__
 
 ````XAML
-<telerikReporting:ReportViewer x:Name="reportViewer" Grid.Row="1" ReportEngineConnection="engine=RestService;uri=http://localhost:59655/api/reports">
-	<telerikReporting:ReportViewer.ReportSource>
-		<telerikReportingCore:UriReportSource Uri="Dashboard.trdp" />
-	</telerikReporting:ReportViewer.ReportSource>
-</telerikReporting:ReportViewer>
+<telerikReportingCore:ReportViewer x:Name="reportViewer" Grid.Row="1" ReportEngineConnection="engine=RestService;uri=http://localhost:59655/api/reports">
+	<telerikReportingCore:ReportViewer.ReportSource>
+		<telerikReportingCore:UriReportSource Uri="MyReport.trdp">
+			<telerikReportingCore:ReportSource.Parameters>
+				<telerikReportingCore:Parameter Name="ParameterName_01" Value="ParameterValue_01"/>
+				<telerikReportingCore:Parameter Name="ParameterName_02" Value="ParameterValue_02"/>
+			</telerikReportingCore:ReportSource.Parameters>
+		</telerikReportingCore:UriReportSource>
+	</telerikReportingCore:ReportViewer.ReportSource>
+</telerikReportingCore:ReportViewer>
 ````
 
 ## Set up Report Viewer controls that are integrated with Telerik Report Server

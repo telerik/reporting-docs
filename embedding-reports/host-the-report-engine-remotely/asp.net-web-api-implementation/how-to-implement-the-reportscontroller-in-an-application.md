@@ -36,7 +36,7 @@ The Telerik Reporting REST Web API service is represented by the abstract [Repor
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementation}}
 		{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=ReportsControllerImplementation}}
 
-		[ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) inherits [System.Web.Http.ApiController](http://msdn.microsoft.com/en-us/library/system.web.http.apicontroller.aspx) and implements all necessary API actions. The provided sample implementation will resolve.trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root. Other option is to reference a reports library and provide report [type assembly qualified name](http://msdn.microsoft.com/en-us/library/system.type.assemblyqualifiedname.aspx) from the service clients.
+		[ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) inherits [System.Web.Http.ApiController](https://learn.microsoft.com/en-us/dotnet/api/system.web.http.apicontroller?view=aspnet-webapi-5.2) and implements all necessary API actions. The provided sample implementation will resolve.trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root. Other option is to reference a reports library and provide report [type assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0) from the service clients.
 
 		>note Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.
 
@@ -49,10 +49,8 @@ The Telerik Reporting REST Web API service is represented by the abstract [Repor
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsControllerConfigSection.cs region=ReportsControllerConfigSectionImplementation}}
 		{{source=CodeSnippets\MvcVB\Controllers\ReportsControllerConfigSection.vb region=ReportsControllerConfigSectionImplementation}}
 
-
 		Then add the __restReportService__ configuration element containing the service settings to the [Telerik Reporting Configuration Section]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).
 
 		{{source=CodeSnippets\MvcCS\ReportServiceConfigurationSnippets\ConfigSectionConfiguration.xml}}
-
 
 		For more information see [restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%}).

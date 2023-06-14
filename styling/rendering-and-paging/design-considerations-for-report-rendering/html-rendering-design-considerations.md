@@ -41,8 +41,8 @@ The legacy ASP.NET viewer renders tooltips on SVG elements using the `<title>` a
 
 ### Browsers and limitations
 
-* Internet Explorer Quirks Mode is not supported, since it is based on Internet Explorer 5.5. For more details check the [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article.
-* Compatibility View for Internet Explorer is not supported, since it is based on Internet Explorer 7. For more details check the [Defining document compatibility](http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx) MSDN article.
+* Internet Explorer Quirks Mode is not supported, since it is based on Internet Explorer 5.5. For more details check the [Defining document compatibility](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) MSDN article.
+* Compatibility View for Internet Explorer is not supported, since it is based on Internet Explorer 7. For more details check the [Defining document compatibility](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) MSDN article.
 * Internet Explorer has a limitation for the number of HTML elements that can be rendered on a single page. This limitation may prevent the displaying of reports with large amount of items rendered without page breaks. Displaying the report in Print preview will page the content.
 * Depending on the browser's layout engine fonts can be measured differently, which may lead to displaying clipped text in reports. The used in the reports fonts should be considered with the targeted browsers.
 
@@ -50,7 +50,7 @@ The legacy ASP.NET viewer renders tooltips on SVG elements using the `<title>` a
 
 ### Rendering
 
-Reports can be output as MHTML (Web archive or "MIME Encapsulation of Aggregate HTML Documents") standard. MHTML is used for including resources in the same file as the HTML code. This is particularly useful when sending email because all resources, such as image and sound files, are included in a single file.
+Reports can be output as MHTML (Web archive or "MIME Encapsulation of Aggregate HTML Documents") standard. MHTML is used for including resources in the same file as the HTML code. This is particularly useful when sending email because all resources, such as image and sound files, are included in a single file.
 
 The following rendering specifics apply to MHTML:
 

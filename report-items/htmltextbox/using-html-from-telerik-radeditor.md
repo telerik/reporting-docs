@@ -13,7 +13,7 @@ position: 7
 
 The HtmlTextBox supports text formatting options, such as a subset of HTML tags and CSS attributes, which are available only for styling labels and headers. Therefore, to avoid exceptions, you have to filter the unsupported HTML tags or CSS attributes.
 
-This article outlines how to accomplish this scenario when the HTML data entry tool is the [Telerik UI for ASP.NET AJAX Editor](http://www.telerik.com/products/aspnet-ajax/editor.aspx).
+This article outlines how to accomplish this scenario when the HTML data entry tool is the [Telerik UI for ASP.NET AJAX Editor](https://www.telerik.com/products/aspnet-ajax/editor.aspx).
 
 Before you start, note the following considerations:
 
@@ -96,7 +96,6 @@ RadEditor1.DisableFilter(Telerik.Web.UI.EditorFilters.ConvertFontToSpan)
 
 
 1. Strip the HTML formatting from the pasted content, because users may paste content that is badly formatted and thus break the HtmlTextBox and its PDF export feature. To achieve this behavior, set the `StripFormattingOptions` property to `All` or to `AllExceptNewLines`.
-
 1. Use the following custom content filter, which will remove unsupported HTML tags.
 
 	The supported tags are `FONT`, `STRONG`, `B`, `EM`, `I`, `U`, `A`, `OL`, `UL`, `SUB`, `SUP`, `LI`, `DIV`, `SPAN`, `P`, `BR`, `CENTER`.

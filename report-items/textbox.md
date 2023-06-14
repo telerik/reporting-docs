@@ -66,7 +66,7 @@ The following image shows a TextBox with an activated in-place editor.
 
 ## Using the Expression Editor
 
-For more information about how to use the Expression editor, refer to the article on the [**Edit Expression** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). Note that when pressing the `Enter` key inserts a new line in the expression. To insert a new line in the string resulting from the evaluated expression, enclose the new line within double quotes (`"..."`).
+For more information about how to use the Expression editor, refer to the article on the [**Edit Expression** dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}). Note that when pressing the `Enter` key inserts a new line in the expression. To insert a new line in the string resulting from the evaluated expression, enclose the new line within double quotes (`"..."`).
 
 ![The Expression Editor used to Enter Value in a TextBox in the Report Designer](images/UI014.png)
 
@@ -79,7 +79,7 @@ The TextBox report item supports [embedded expressions]({%slug telerikreporting/
 Before you apply a TextBox format, consider the following:
 
 * By default, numbers are formatted to reflect the cultural settings on the client computer. To specify how numbers are displayed and provide consistent formatting regardless of where the person who is viewing the report is located, use formatting strings.
-* The formats provided on the **Number** page are a subset of the .NET Framework standard numeric format strings. To format a number or a date by using a custom format that is not shown in the dialog box, use any number or date .NET Framework format strings. For more information about custom format strings, refer to the [MSDN Formatting Types](http://msdn.microsoft.com/en-us/library/fbxft59x%28VS.95%29.aspx) topic.
+* The formats provided on the **Number** page are a subset of the .NET Framework standard numeric format strings. To format a number or a date by using a custom format that is not shown in the dialog box, use any number or date .NET Framework format strings. For more information about custom format strings, refer to the article [Formatting Types](https://learn.microsoft.com/en-us/dotnet/standard/base-types/formatting-types) topic.
 * If you specify a custom format string, it will prevail over the default settings that are culture-specific. For example, if you set a custom format string of `#,###` to render 1234 as `1,234`, users in different parts of the world may interpret it in different ways. Before specifying a custom format, consider how the chosen format will affect users of different cultures viewing the report.
 * If you specify an invalid format string, it will override the actual `Value`.
 

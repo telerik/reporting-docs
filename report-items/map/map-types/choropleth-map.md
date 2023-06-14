@@ -14,9 +14,9 @@ This article demonstrates how to add a Choropleth map to your report by using th
 
 The suggested approach will create and set up a Choropleth map that will show the world population for each country and coloring its area depending on the population density value.
 
-You will use a [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) for the analytical data and an [ESRI Shapefile](http://en.wikipedia.org/wiki/Shapefile) for the spatial data.
+You will use a [CSV Data Source]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard%}) for the analytical data and an [ESRI Shapefile](https://en.wikipedia.org/wiki/Shapefile) for the spatial data.
 
-The analytical data will be obtained from the [List of sovereign states and dependent territories by population density](http://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_population_density) Wikipedia article.
+The analytical data will be obtained from the [List of sovereign states and dependent territories by population density](https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population_density) Wikipedia article.
 
 ## 1. Start the Map Wizard
 

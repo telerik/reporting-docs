@@ -8,6 +8,7 @@ published: True
 position: 4
 previous_url: /designing-reports-considerations-excel
 ---
+
 <style>
 table th:first-of-type {
 	width: 20%;
@@ -24,9 +25,9 @@ __Telerik Reporting__ produces Excel files in:
 * Microsoft Excel 2007 and above (OpenXML 2.0). This rendering extension requires [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}).
 * Microsoft Excel 97-2003 (BIFF, v.8)
 
-Telerik Reporting does not rely on Microsoft Office being installed in order to export to both formats. __Microsoft Excel 97-2003__ files can be opened by Microsoft Excel 97 for Windows and later.
+Telerik Reporting does not rely on Microsoft Office being installed in order to export to both formats. __Microsoft Excel 97-2003__ files can be opened by Microsoft Excel 97 for Windows and later.
 
-__Microsoft Excel 2007__ files can be opened by Microsoft Excel 2007 for Windows and later and has the following advantages over __Microsoft Excel 97-2003__ :
+__Microsoft Excel 2007__ files can be opened by Microsoft Excel 2007 for Windows and later and has the following advantages over __Microsoft Excel 97-2003__ :
 
 * Works in Medium Trust.
 * Supports up to 16 million colors.
@@ -47,7 +48,7 @@ The Excel Rendering Extensions tries to reproduce as much of the original report
 
 	![Image showing the subtle difference in line spacing between the PrintPreview and Excel output format.](images/PreviewVsExcelRendering.png)
 
-* When you use the CanGrow and CanShrink properties, the Rendering Engine will utilize the AutoFit functionality of Excel. That means that cell content will resize according to Excel behavior which might not produce the expected result. Furthermore, AutoFit is applied by Excel only for horizontal text, so if you have rotated text (at an angle different than zero), the CanGrow and CanShrink properties might not behave as expected. Rotated text is realized via Excel's built-in cell rotation settings.
+* When you use the CanGrow and CanShrink properties, the Rendering Engine will utilize the AutoFit functionality of Excel. That means that cell content will resize according to Excel behavior which might not produce the expected result. Furthermore, AutoFit is applied by Excel only for horizontal text, so if you have rotated text (at an angle different than zero), the CanGrow and CanShrink properties might not behave as expected. Rotated text is realized via Excel's built-in cell rotation settings.
 * Multi-column reports are not supported.
 
 ## Page Headers and Footers
@@ -60,7 +61,7 @@ With default configuration (__UseNativePageHeader__ is False and __UseNativePage
 
 The native Excel page header/footer is not displayed on the Excel worksheet in Normal view - it is displayed only in Page Layout view and on the printed pages. For more information see [Headers and footers in a worksheet](https://support.office.com/en-us/article/Headers-and-footers-in-a-worksheet-cae2a88c-64a7-42ab-96a4-28d2fc16ad31).
 
->caution The __PageNumber__ and  __PageCount__ global objects' behavior depends on the __UseNativePageHeader__ and __UseNativePageFooter__ configuration. Since the report rendered to Excel is not in a page-oriented format and is contained in a single worksheet (regarded as a single page) __PageNumber__ and __PageCount__ will always return a value of 1. However, if you intend to print the Excel document and would like to let Excel handle the page numbering instead, you can do so by setting both  __UseNativePageHeader__ and __UseNativePageFooter__ to __True__. This configuration will force the Reporting engine to use the native Excel page number and page count tokens, instead of the default value of 1, so the page number and count are correct when the document is printed in Excel. When the native Excel page tokens are used, any arithmetic operations on the PageNumber/PageCount are not supported. Since the PageNumber() and PageCount() functions use arithmetic operations internally, they are also not supported in the native page header/page footer sections.
+>caution The __PageNumber__ and  __PageCount__ global objects' behavior depends on the __UseNativePageHeader__ and __UseNativePageFooter__ configuration. Since the report rendered to Excel is not in a page-oriented format and is contained in a single worksheet (regarded as a single page) __PageNumber__ and __PageCount__ will always return a value of 1. However, if you intend to print the Excel document and would like to let Excel handle the page numbering instead, you can do so by setting both  __UseNativePageHeader__ and __UseNativePageFooter__ to __True__. This configuration will force the Reporting engine to use the native Excel page number and page count tokens, instead of the default value of 1, so the page number and count are correct when the document is printed in Excel. When the native Excel page tokens are used, any arithmetic operations on the PageNumber/PageCount are not supported. Since the PageNumber() and PageCount() functions use arithmetic operations internally, they are also not supported in the native page header/page footer sections.
 
 ## ReportBook
 
@@ -127,7 +128,7 @@ The following standard paper kinds are supported:
 * Number11Envelope (4.5” x 10.375”)
 * Number12Envelope (4.75” x 11”)
 * Number14Envelope (5” x 11.5”)
-* DSheet  (22” x 34”)
+* DSheet (22” x 34”)
 * ESheet (34” x 44”)
 * MonarchEnvelope (3.875” x 7.5”)
 * PersonalEnvelope (3.625” x 6.5”)
@@ -165,7 +166,7 @@ To preserve the result from previewing the rendered document, formats are saved 
 * F (Full date/time pattern with long time)
 * g (General date/time pattern with short time)
 * G (General date/time pattern with long time)
-* M or m (Month  day pattern)
+* M or m (Month day pattern)
 * R or r (RFC1123 pattern)
 * s (Sortable date/time pattern; conforms to ISO 8601)
 * u (Universal sortable date/time pattern)
@@ -187,7 +188,7 @@ Excel places limitations on exported reports due to the format capabilities. The
 * TextBoxes are rendered within one Excel cell. Font size, font face, decoration, font style and text/vertical align are the only formatting that is supported on individual text within an Excel cell.
 * Telerik Reporting expressions are not converted to Excel formulas. TextBox values that are expressions are evaluated during report processing and the result is exported as content of Excel cell.
 * Excel does not support background images for individual cells, so Background images for report items (including Report) are ignored.
-* Excel native page headers and footers support a maximum of 255 characters including [Formatting and VBA Codes for Headers and Footers](http://msdn.microsoft.com/en-us/library/bb225426.aspx). The rendering extension truncates the string at 255 characters.
+* Excel native page headers and footers support a maximum of 255 characters including [Formatting and VBA Codes for Headers and Footers](https://learn.microsoft.com/en-us/previous-versions/office/developer/office-2007/bb225426(v=office.12)). The rendering extension truncates the string at 255 characters.
 * Excel does not support Watermarks.
 * Underlining justified text will only underline the words and not the spaces between them.
 * Table of contents is not supported.

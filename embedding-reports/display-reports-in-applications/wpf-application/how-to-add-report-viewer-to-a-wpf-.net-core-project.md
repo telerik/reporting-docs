@@ -73,19 +73,24 @@ xmlns:tr="http://schemas.telerik.com/wpf"
 
 1. Add the WPF Report Viewer declaration to the target Window and set the proper UriReportSource.Uri relative path.
 
-	+ When using an __Embedded Reporting engine__ :
+	+ When using an __Embedded Reporting engine__:
 
 		Reference a descriptive report definition (TRDP or TRDX report) from a local folder, or type report definition (CS or VB report) from a report library project. For example, add a new folder named *Reports* in the application main folder, copy your TRDP reports there, and reference one of them. Don't forget to set their property 'Copy to Output Directory' to 'Copy always' or 'Copy if newer':
 
 		````XAML
 <tr:ReportViewer Grid.Row="1" x:Name="ReportViewer1" HorizontalAlignment="Stretch">
 			<tr:ReportViewer.ReportSource>
-				<telerikReporting:UriReportSource Uri="Reports\MyReportName.trdp" />
+				<telerikReporting:UriReportSource Uri="Reports\MyReportName.trdp">
+					<telerikReporting:ReportSource.Parameters>
+						<telerikReporting:Parameter Name="ParameterName_01" Value="ParameterValue_01"/>
+						<telerikReporting:Parameter Name="ParameterName_02" Value="ParameterValue_02"/>
+					</telerikReporting:ReportSource.Parameters>
+				</telerikReporting:UriReportSource>
 			</tr:ReportViewer.ReportSource>
 		</tr:ReportViewer>
 ````
 
-	+ When using a __Telerik Reporting REST Service__ :
+	+ When using a __Telerik Reporting REST Service__:
 
 		The reports get rendered server-side and need to be accessible by the service. For that reason, you need to reference a descriptive report definition (TRDP or TRDX report) from a folder accessible by the service, or type report definition (CS or VB report) from a report library project that is accessible by the service.
 
@@ -93,14 +98,19 @@ xmlns:tr="http://schemas.telerik.com/wpf"
 <tr:ReportViewer Grid.Row="1" x:Name="ReportViewer1" HorizontalAlignment="Stretch"
 						ReportEngineConnection="engine=RestService;uri=http://localhost:59654/api/reports;timeout=100;keepClientAlive=True">
 			<tr:ReportViewer.ReportSource>
-				<telerikReporting:UriReportSource Uri="MyReportName.trdp" />
+				<telerikReporting:UriReportSource Uri="MyReportName.trdp">
+					<telerikReporting:ReportSource.Parameters>
+						<telerikReporting:Parameter Name="ParameterName_01" Value="ParameterValue_01"/>
+						<telerikReporting:Parameter Name="ParameterName_02" Value="ParameterValue_02"/>
+					</telerikReporting:ReportSource.Parameters>
+				</telerikReporting:UriReportSource>
 			</tr:ReportViewer.ReportSource>
 		</tr:ReportViewer>
 ````
 
 	 With the above setting, the REST Service running on `http://localhost:59654/api/reports` will look for the report named "MyReportName.trdp" in the folder specified as an argument of the [UriReportSourceResolver](/api/Telerik.Reporting.Services#Telerik_Reporting_Services_UriReportSourceResolver_System_String_) constructor.
 
-	+ When using a __Telerik Report Server__ :
+	+ When using a __Telerik Report Server__:
 
 	 The reports will be rendered by the Report Server. For that reason, you need to reference a descriptive report definition (TRDP or TRDX report) that is hosted on the server.
 
@@ -109,6 +119,11 @@ xmlns:tr="http://schemas.telerik.com/wpf"
 						 ReportEngineConnection="engine=ReportServer;uri=http://yourreportserver:83/;username=yourusername;password=yourpassword">
 			<tr:ReportViewer.ReportSource>
 				<telerikReporting:UriReportSource Uri="MyCategory/MyReportName.trdp" />
+					<telerikReporting:ReportSource.Parameters>
+						<telerikReporting:Parameter Name="ParameterName_01" Value="ParameterValue_01"/>
+						<telerikReporting:Parameter Name="ParameterName_02" Value="ParameterValue_02"/>
+					</telerikReporting:ReportSource.Parameters>
+				</telerikReporting:UriReportSource>
 			</tr:ReportViewer.ReportSource>
 		</tr:ReportViewer>
 ````

@@ -4,7 +4,6 @@ description: "Learn how the Telerik Reporting REST Service can be used to render
 type: how-to
 page_title: Rendering Reports through the Reporting REST Service without Report Viewer
 slug: how-to-use-reporting-rest-service-api-with-csharp-client
-position: 
 tags: 
 ticketid: 1381883
 res_type: kb

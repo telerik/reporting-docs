@@ -15,10 +15,6 @@ res_type: kb
 		<td>Product</td>
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
-	<tr>
-		<td>Preferred Language</td>
-		<td>C#</td>
-	</tr>
 </table>
 
 
@@ -499,7 +495,7 @@ static async Task ExportReportFromServiceAsync(string reportName, string format,
 
 ## Sample Project
 
-* [Sample Project]()
+* [Sample Project](https://github.com/telerik/reporting-samples/tree/master/RenderReportFromService)
 
 ## See Also
 

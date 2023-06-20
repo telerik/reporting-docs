@@ -23,9 +23,13 @@ Since its introduction in 2013 R2, the Standalone Report Designer is built again
 Starting with 2022 R3, a new version of Standalone Report Designer is available. It is named Telerik.ReportDesigner.Net and is built against .NET 6.0. Its main purpose is to allow the report authors to load and use their assemblies compiled against .NET Standard, .NET Core and .NET 5+. The Standalone Report Designer for .NET is currently distributed as two .ZIP packages, each for the corresponding x86 or x64 flavor of the application.
 
 ## Differences between the .NET and .NET Framework designers' functionality
+
 This section explains the differences between both versions of Standalone Report Designer - for .NET Framework and .NET 6.0. Although lots of code was shared between the versions, the .NET induced some changes that are listed below.
 
 * __Automatic discovery of 3rd party ADO.NET Data Providers__ - The Standalone Report Designer for .NET Framework required manually adding an entry in DbProviderFactories section in the application configuration file when needed to use a third party ADO.NET provider. The Report Designer for .NET will try to discover and automatically load the available ADO.NET data providers when building a new SQL connection. The supported providers are: `Microsoft.Data.SqlClient`, `System.Data.SqlClient`, `Npgsql for PostgreSQL`, `System.Data.SQLite`, `MySql.Data.MySqlClient`, `Oracle.ManagedDataAccess.Client`. `ODBC` and `OleDB` data sources are also supported.
+
+	> If any of the supported data providers doesn't appear in the dropbox of the SqlDataSource wizard you need to add its DLL in the folder with the `Telerik.ReportDesigner.Net.exe` file.
+
 * __Query Builder__ - the Query Builder uses Telerik OpenAccess to define the relations between the tables in a database. Telerik OpenAccess has a limited support for .NET, so currently the Query Builder functionality for the .NET designer is restricted.
 * __Import Report Wizard__ - the Import Report functionality relies on external 3rd-party assemblies that do not have .NET-compatible versions. The Import Report Wizard option is not available in the .NET designer's initial page.
 * __Report Server__ - Connecting and working with Telerik Report Server is currently not supported.

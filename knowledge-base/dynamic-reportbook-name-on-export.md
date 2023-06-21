@@ -26,11 +26,11 @@ I want to set the default file name of the [ReportBook]({%slug telerikreporting/
 
 ## Solution
 
-The `DocumentName` of the ReportBook is used as default document name when exporting from the viewer. The Standalone Report Designer won't use DocumentName when exporting. It will rather use the Report name.
+The [DocumentName of the ReportBook](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_DocumentName) is used as default document name when exporting from the viewer. The Standalone Report Designer won't use `DocumentName` when exporting. It will rather use the Report `Name`.
 
-The Report Book is a collection of Reports that implements the [IReportDocument interface]((/api/telerik.reporting.ireportdocument)). The [implicit implementation of ReportParameters](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_Telerik_Reporting_IReportDocument_ReportParameters) obtains its value by merging the parameters of individual reports that have their `Mergeable` property set to true plus adding all non-mergeable parameters.
+The Report Book is a collection of Reports that implements the [IReportDocument interface]((/api/telerik.reporting.ireportdocument)). The implicit implementation of the property [ReportParameters](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_Telerik_Reporting_IReportDocument_ReportParameters) obtains its value by merging the parameters of individual reports that have their `Mergeable` property set to `true` plus adding all non-mergeable parameters.
 
-The [DocumentName of the ReportBook](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_DocumentName) may be set to an Expression like `=Parameters.ParameterName.Value`. ParameterName should be a valid parameter name from any of the reports in the ReportBook. You need to type manually the expression as it won't be displayed in the designer's wizard. You may use also more complex Expressions based on all report parameters throughout the reports in the ReportBook, and [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).
+The `DocumentName` of the ReportBook may be set to an Expression like `=Parameters.ParameterName.Value`. _ParameterName_ should be a valid parameter name from any of the reports in the ReportBook. You need to type manually the expression as it won't be displayed in the designer's wizard. You may use also more complex Expressions based on all report parameters throughout the reports in the ReportBook, and [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).
 
 ## See Also
 

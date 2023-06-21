@@ -10,6 +10,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -30,7 +31,7 @@ res_type: kb
 
 ## Description
 
-I need to be able to dynamically load a report and its report parameters through the current URL's query parameters, how can I do achieve that with the Blazor Report Viewer?
+I need to be able to dynamically load a report and its report parameters through the current URL's query parameters, how can I achieve this with the Native Blazor Report Viewer?
 
 For the below example, we will be using the Dashboard report - [Dashboard Report Demo](https://demos.telerik.com/reporting/dashboard). The report is shipped with the installation of the Telerik Reporting product and with a default installation, it would be at the following path:
 
@@ -59,7 +60,7 @@ For the below example, we will be using the Dashboard report - [Dashboard Report
 		ServiceType="@ReportViewerServiceType.REST"
 		Height="800px"
 		Width="100%">
-</ReportViewer>
+	</ReportViewer>
 
 
 	@code {

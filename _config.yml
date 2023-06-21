@@ -423,7 +423,7 @@ defaults:
 suiteversion: "R2 2023"
 kendosubsetversion: "2022.3.913"
 buildversion: "17.1.23.606"
-blazoruiversion: "4.0.1"
+blazoruiversion: "4.1.0"
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'

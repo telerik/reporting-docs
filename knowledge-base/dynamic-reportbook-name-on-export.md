@@ -1,6 +1,6 @@
 ---
 title: Dynamic ReportBook Name on Export
-description: "Learn how to set the name of the ReportBook document exported from a viewer dynamically ."
+description: "Learn how to set the name of the ReportBook document exported from a viewer dynamically in Telerik Reporting."
 type: how-to
 page_title: Setting ReportBook Name dynamically when exporting from a viewer
 slug: dynamic-reportbook-name-on-export
@@ -12,27 +12,28 @@ res_type: kb
 ## Environment
 
 <table>
-    <tbody>
-        <tr>
-            <td>Product</td>
-            <td>Progress® Telerik® Reporting</td>
-        </tr>
-    </tbody>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
 </table>
 
 ## Description
 
-I want to set the default file name of the ReportBook I export from the viewer with an Expression, for example, a parameter value.
+I want to set the default file name of the [ReportBook]({%slug telerikreporting/designing-reports/report-book/overview%}) exported from the viewer with an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}), for example, to a [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) value.
 
 ## Solution
 
- Report Book is simply a collection of Reports that implements also IReportDocument. The implicit implementation of ReportParameters states that the parameter values for the Report Book are obtained by merging the parameters of individual reports that have their Mergeable property set to true plus adding all non-mergeable parameters.
+The `DocumentName` of the ReportBook is used as default document name when exporting from the viewer. The Standalone Report Designer won't use DocumentName when exporting. It will rather use the Report name.
 
-I tested setting the DocumentName of the ReportBook to the Expression '=Parameters.ReportYear.Value' and then exporting the book from a viewer. The DocumentName was respected as you may see in the linked muted video. You need to type manually the parameter name as it won't be displayed in the designer's wizard. You should be able to use also more complex Expressions based on the report parameters and user functions.
+The Report Book is a collection of Reports that implements the [IReportDocument interface]((/api/telerik.reporting.ireportdocument)). The [implicit implementation of ReportParameters](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_Telerik_Reporting_IReportDocument_ReportParameters) obtains its value by merging the parameters of individual reports that have their `Mergeable` property set to true plus adding all non-mergeable parameters.
 
-That said, you may pass the file name you would like to be used from the web application as a Report Parameter and set it as DocumentName in the ReportBook as shown in the above video. Note that the Standalone Report Designer won't use DocumentName when exporting. It will rather use the Report name by design.
+The [DocumentName of the ReportBook](/api/telerik.reporting.reportbook#Telerik_Reporting_ReportBook_DocumentName) may be set to an Expression like `=Parameters.ParameterName.Value`. ParameterName should be a valid parameter name from any of the reports in the ReportBook. You need to type manually the expression as it won't be displayed in the designer's wizard. You may use also more complex Expressions based on all report parameters throughout the reports in the ReportBook, and [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).
 
 ## See Also
 
+* [Report Book]({%slug telerikreporting/designing-reports/report-book/overview%})
 * [Interface IReportDocument](/api/telerik.reporting.ireportdocument)
 * [Class ReportBook](/api/telerik.reporting.reportbook)

@@ -31,11 +31,35 @@ Telerik Reporting provides the following Radial Gauge report item presets out of
 * Multi-Range
 
 	![An Image of the default look of the Multi-Range Radial Gauge](../images/radial-gauge-multi-range.png)
+	
+### Linear
+
+Linear gauges are characterized by a linear scale which can be horizontal or vertical. They typically display a metric as a percentage of the length of a linear scale.
+
+Telerik Reporting provides the following Linear Gauge report item presets out of the box:
+
+* Single-Range Horizontal
+
+	![An image of the default look of the Single-Range Horizontal Linear Gauge](../images/linear-horizontal-gauge-single-range.png)
+
+* Single-Range Vertical
+
+	![An image of the default look of the Single-Range Vertical Linear Gauge](../images/linear-vertical-gauge-single-range.png)
+
+* Multi-Range Horizontal
+
+	![An Image of the default look of the Multi-Range Horizontal Linear Radial Gauge](../images/linear-horizontal-gauge-multi-range.png)
+
+* Multi-Range Vertical
+
+	![An Image of the default look of the Multi-Range Vertical Linear Radial Gauge](../images/linear-vertical-gauge-multi-range.png)
 
 ## Next Steps
 
 * [Getting Started with the Radial Gauge Report Item]({%slug telerikreporting/designing-reports/report-structure/gauge/radial-gauge%})
+* [Getting Started with the Linear Gauge Report Item]({%slug telerikreporting/designing-reports/report-structure/gauge/linear-gauge%})
 * [RadialGauge Class API Reference](/api/Telerik.Reporting.RadialGauge)
+* [LinearGauge Class API Reference](/api/Telerik.Reporting.LinearGauge)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Knowledge Base Section](/knowledge-base)
 

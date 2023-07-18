@@ -422,7 +422,7 @@ defaults:
 # "foo": "Bar"
 suiteversion: "R2 2023"
 kendosubsetversion: "2022.3.913"
-buildversion: "17.1.23.606"
+buildversion: "17.1.23.718"
 blazoruiversion: "4.1.0"
 
 # Feedback Form Google Sheet ID

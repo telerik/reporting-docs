@@ -420,10 +420,10 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
-suiteversion: "R2 SP1 2023"
+suiteversion: "R2 2023"
 kendosubsetversion: "2022.3.913"
-buildversion: "17.1.23.606"
-blazoruiversion: "4.4.0"
+buildversion: "17.1.23.718"
+blazoruiversion: "4.1.0"
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'

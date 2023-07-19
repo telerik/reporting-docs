@@ -16,8 +16,6 @@ The Gauge report item is used to display the key performance indicators (KPIs) t
 
 ## Gauge Types
 
-Currently, the `Gauge` report item supports only `Radial` gauges.
-
 ### Radial
 
 Radial gauges are circular, or degrees of circular, and resemble speedometers. The gauge pointers are often needles, but can be markers or bars too. The radial gauge is typically used when you want to express the data as a velocity.

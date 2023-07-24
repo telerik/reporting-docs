@@ -23,7 +23,7 @@ On attempt to add `[Authorize]` attribute above the ReportsController class, the
 
 ## Solution
 
-By design, the ReportsController methods are internally authorized except the requests for resources. The resource requests are left unauthorized because they are made by the browser and an authentication token for them cannot be sent by the viewers. All resources are generated with unique random IDs that cannot be guessed directly.
+By design, the ReportsController methods for the resources are marked with the `[AllowAnonymous]` attribute _(i.e. they do not require authorization)_. The resource requests are left unauthorized because they are made by the browser and an authentication token for them cannot be sent by the viewers. However, all resources are generated with unique random IDs that cannot be guessed directly.
 
 When the authorization attribute is set to the entire ReportsController, the methods not requiring authentication by default will be overridden and will require an authorization token that is not sent by the viewer when requesting formats or resources.
 

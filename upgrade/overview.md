@@ -13,7 +13,7 @@ previous_url: /installation-upgrading-newer-version, /installation-upgrading-new
 
 Depending on the new features and changes in each new Telerik Reporting release, you may have to upgrade your project.
 
-> __All *Telerik Reporting* and *Telerik Report Server* resources that interact must match in version__. For example, Html5 Report Viewer with version {{site.buildversion}}, Angular Report Viewer {{site.angularviewerversion}}, and React Report Viewer {{site.reactviewerversion}} must use a Reporting REST Service {{site.buildversion}}, or Telerik Report Server with version {{site.reportserverversion}}.
+> __All *Telerik Reporting* and *Telerik Report Server* resources that interact must match in version__. For example, Html5 Report Viewer with version {{site.buildversion}}, Angular Report Viewer {{site.angularviewerversion}}, and React Report Viewer {{site.reactviewerversion}} must use a Reporting REST Service {{site.buildversion}}, or Telerik Report Server with version {{site.reportserverversion}}. Upon upgrading Telerik Reporting or Report Server ensure the browser hasn't cached the viewer's files with older version.
 
 > The PDF documentation is updated less often than the online documentation, and may contain outdated or imprecise information.
 

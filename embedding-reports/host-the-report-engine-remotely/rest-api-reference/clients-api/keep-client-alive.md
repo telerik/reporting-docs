@@ -44,7 +44,7 @@ __Path parameters__
 
 * Request 
 
-		POST /api/reports/clients/2c3d HTTP/1.1
+		POST /api/reports/clients/keepAlive/bfe79165c60 HTTP/1.1
 
 * Response
 

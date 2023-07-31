@@ -29,6 +29,8 @@ Oftentimes the data needed for your Table, Chart, or another data item will alre
 
 `= ReportItem.DataObject`
 
+![Image showing the bindings applied to a list.](./images/DataItems/ReportItemDataObjectBinding.png)
+
 The __DataObject__ property is an object instance representing the data that an item is bound to when processed. Depending on the [Data Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) in which the data item is present, __DataObject__ may return all of the parent's data or a selection of its data rows. For example, binding a Graph located inside a report group will result in the Graph retrieving data only for the current report group instance.
 
 > To reach the data of an item that is higher in the hierarchy, you can use __Parent__ keyword: `= ReportItem.Parent.DataObject`. Parent keyword can be used as many times as neccessary in order to reach the required item.

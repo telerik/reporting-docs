@@ -119,7 +119,7 @@ using Microsoft.AspNetCore.Mvc;
 1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the __body__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly):
 
 	````HTML
-<script src="_content/telerik.webreportdesigner.blazor/telerikWebReportDesignerInterop.js" defer></script>
+<script src="_content/Telerik.WebReportDesigner.Blazor/telerikWebReportDesignerInterop.js" defer></script>
 	@* Or this one if using the Telerik.WebReportDesigner.Blazor.Trial package *@
 	@*<script src="_content/Telerik.WebReportDesigner.Blazor.Trial/telerikWebReportDesignerInterop.js" defer></script>*@
 ````

@@ -11,7 +11,11 @@ previous_url: /installation-upgrading-newer-version, /installation-upgrading-new
 
 # Upgrading Telerik Reporting
 
-Depending on the new features and changes in each new Telerik Reporting release, you may have to upgrade your project. 
+Depending on the new features and changes in each new Telerik Reporting release, you may have to upgrade your project.
+
+> __All *Telerik Reporting* and *Telerik Report Server* resources that interact must match in version__. For example, Html5 Report Viewer with version {{site.buildversion}}, Angular Report Viewer {{site.angularviewerversion}}, and React Report Viewer {{site.reactviewerversion}} must use a Reporting REST Service {{site.buildversion}}, or Telerik Report Server with version {{site.reportserverversion}}. Upon upgrading Telerik Reporting or Report Server ensure the browser hasn't cached the viewer's files with the older version.
+
+> The PDF documentation is updated less often than the online documentation and may contain outdated or imprecise information.
 
 ## General Workflow
 
@@ -31,8 +35,8 @@ For any persisting issues, use either of the following options:
 
 Telerik Reporting supports the following types of releases:
 
-* Major versions&mdash;They can simultaneously coexist on the same machine. For example, major versions are the [Q3 2013]({%slug telerikreporting/upgrade/2013/q3-2013%}) and [Q1 2014]({%slug telerikreporting/upgrade/2014/q1-2014%}) releases.
-* Minor versions, or Service Packs (SP)&mdash;A major version can coexist on the same machine with only a single minor version from the same release. For example, when you upgrade the major Q1 2014 release to the later minor Q1 2014 SP1 release, the installer will first uninstall the Q1 2014 version and then install Q1 2014 SP1.
+* Major versions&mdash; Can simultaneously coexist on the same machine. For example, major versions are the [Q3 2013]({%slug telerikreporting/upgrade/2013/q3-2013%}) and [Q1 2014]({%slug telerikreporting/upgrade/2014/q1-2014%}) releases.
+* Minor versions, or Service Packs (SP)&mdash; A major version can coexist on the same machine with only a single minor version from the same release. For example, when you upgrade the major Q1 2014 release to the later minor Q1 2014 SP1 release, the installer will first uninstall the Q1 2014 version and then install Q1 2014 SP1.
 
 If the new Telerik Reporting version is a major release, it will be installed next to the earlier releases. If the new Telerik Reporting version is a minor release, it will replace the corresponding major release.
 

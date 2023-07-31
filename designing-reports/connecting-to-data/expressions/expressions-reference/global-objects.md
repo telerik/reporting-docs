@@ -23,11 +23,13 @@ Example: Fields.ProductID - returns the value of the field ProductID in the curr
 
 Another option of accessing the values in the fields collection is the global function [Fields(fieldName)]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).
 
+> In the context of a [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) like Table, `Fields` refers to its inner data. The `ReportItem.DataObject` references the parent's Data Item data. This lets you bind them, for example, to filter the inner item data. For details see [Use parent data item data for child data item datasource parameter]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}#use-parent-data-item-data-for-child-data-item-datasource-parameter).
+
 ## Parameters
 
 Represents the collection of report parameters, each of which can be single-value or multi-value. See [Adding Parameters to Report]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}).
 
-Examples: 
+Examples:
 
 * `=Parameters.Product.Value` - returns the actual `Value` of the report parameter with name Product.
 * `=Parameters.Product.Label` - when the parameter Product has AvailableValues, returns its property `AvailableValues.DisplayMember`. When there are no AvailableValues or the DisplayMember is not specified, it falls back to the actual `Value` of the parameter.

@@ -26,12 +26,13 @@ Due to the data driven nature of Telerik Reporting this can be easily achieved w
 
 ## Solution
 
-* Add a List item to your report definition;
+* Add a List to your report definition;
 * Set the List.DataSource according to your datasource. For more info see: [Connecting to Data]({%slug telerikreporting/designing-reports/connecting-to-data/overview%}) help articles;
 * Open the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) in extended mode;
+	![Screenshot showing the Group Explorer in extended mode](./images/GroupExplorerExtended.png)
 * Set the (Detail) row group Grouping expression to: `=Fields.MyDataIndex/3`, where the number (i.e. 3) should equal the number of expected columns;
 * Set the (Static) column group Grouping expression to: `=Fields.MyDataIndex%3`, where the number (i.e. 3) should equal the number of expected columns;
-* Add the necessary items to the List item's Panel;
+* Add the necessary items to the List's Panel;
 * Preview the report.
 
 > The `MyDataIndex` field should start at `0`.

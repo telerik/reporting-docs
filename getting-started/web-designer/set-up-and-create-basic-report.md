@@ -94,6 +94,7 @@ Our next goal is to create a brand new report with the just configured Web Repor
 
 ## See Also
 
+* YouTube video tutorial [Getting Started with the Web Report Designer: Part 1](https://www.youtube.com/watch?v=L-utkcB8-5c)
 * [Web Report Designer](%{slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Setting up the Web Report Designer in .NET and .NET Core 3.1 applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

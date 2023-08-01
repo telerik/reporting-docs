@@ -12,13 +12,21 @@ This is a step-by-step tutorial that shows how to integrate the [Web Report Desi
 
 * First, you will create a Web Application and add Telerik Web Report Designer through its Visual Studio Item Template.
 * Next, you'll create and style a new report.
-* Then, you will add a DataSource and connect it to a new Graph in the report.
+* Then, you will add a remote DataSource and connect it to a new Graph in the report.
 * At the end you will have a web application with embedded Telerik Web Report Designer with the default `SampleReport.trdp` and the newly created `ProductSales.trdp` reports in its storage that you may preview and edit.
 
 The entire process is described in the YouTube video tutorial [Getting Started with the Web Report Designer: Part 1](https://www.youtube.com/watch?v=L-utkcB8-5c).
 
 # Setting up the Web Report Designer in .NET 6
 
+Lets create an ASP.NET Core application in Visual Studio and embed the Telerik Web Report Designer in it:
+
+1. Open Visual Studio 2022 and create a new project through the project template `ASP.NET Core Web App`. Name the project and select `.NET 6.0` as a Target Framework.
+1. Right-click on the project and select `Add New Item`. You may search for "telerik reporting" to list the available Reporting item templates. Add `Telerik Web Report Designer HTML5 Page {{site.suiteversion}}`. The version may vary, depending on the last Reporting version installed. Name the new page `webReportDesigner.html` (this is the default name), and build the project when prompted by Visual Studio.
+1. In the popped-up Web Designer Wizard, select `Create new REST service` as we don't have an existing one.
+1. On the next step the wizard will ask for the initial report to load. Select the `Sample report definition` option to create a new sample report if you don't have any. When you click `Finish` you should see a status page confirming that everything was set up correctly.
+1. (optional) Add to the file `launchSetting.json` in folder `Properties` the property, setting the opening project page `"launchUrl": "webReportDesigner.html"`.
+1.
 
 # Creating Your First Report
 

@@ -29,9 +29,11 @@ Lets create an ASP.NET Core application in Visual Studio and embed the Telerik W
 
 	`"launchUrl": "webReportDesigner.html"`.
 
-1. Run the project. If everything is fine, you should see the web page with the designer with the Sample Report opened, and the onboarding guide to walk you through the main tools in the designer. We recommend to get familiar with them by clicking on the `Next` button. You may skip the guide at any step through the button `End Tour`.
+1. Run the project. If everything is fine, you should see the web page with the designer with the Sample Report opened, and the onboarding guide to walk you through the main tools in the designer. We recommend to get familiar with them by clicking on the `Next` button. You may skip the guide at any step through the button `End Tour`. Pay attention to the Search functionality of the designer that lets you locate any report item, section or property easily.
 
 # Creating Your First Report
+
+
 
 Data Source URL https://demos.telerik.com/reporting/api/data/ProductSales.min
 

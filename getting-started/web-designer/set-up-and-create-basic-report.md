@@ -25,30 +25,30 @@ Lets create an ASP.NET Core application in Visual Studio and embed the Telerik W
 1. Right-click on the project and select `Add New Item`. You may search for "telerik reporting" to list the available Reporting item templates. Add `Telerik Web Report Designer HTML5 Page {{site.suiteversion}}`. The version may vary, depending on the last Reporting version installed. Name the new page `webReportDesigner.html` (this is the default name), and build the project when prompted by Visual Studio.
 1. In the popped-up Web Designer Wizard, select `Create new REST service` as we don't have an existing one.
 1. On the next step the wizard will ask for the initial report to load. Select the `Sample report definition` option to create a new sample report if you don't have any. When you click `Finish` you should see a status page confirming that everything was set up correctly.
-1. (optional) Add to the file `launchSetting.json` in folder `Properties` the property, setting the opening project page:
+1. (optional) Add to the file `launchSetting.json` in the folder `Properties` the property, setting the opening project page:
 
 	`"launchUrl": "webReportDesigner.html"`.
 
-1. Run the project. If everything is fine, you should see the web page with the designer with the Sample Report opened, and the onboarding guide to walk you through the main tools in the designer. We recommend to get familiar with them by clicking on the `Next` button. You may skip the guide at any step through the button `End Tour`. Pay attention to the Search functionality of the designer that lets you locate any report item, section or property easily.
+1. Run the project. If everything is fine, you should see the web page with the designer with the Sample Report opened, and the onboarding guide to walk you through the main tools in the designer. We recommend getting familiar with them by clicking on the `Next` button. You may skip the guide at any step through the button `End Tour`. Pay attention to the Search functionality of the designer that lets you locate any report item, section or property easily.
 
 # Creating Your First Report
 
 Our next goal is to create a brand new report with the just configured Web Report Designer:
 
-1. Go the the main toolbar `Menu` and select `New Report`. The `Create Report` dialog opens and lets you enter the `File Name`, and select its `Type` and `Location`. Lets name the report `ProductSales`, leave its `Type` to be `TRDP` standing for _Telerik Report Definition Packed_ and place it in the `Demo` folder. Click Save to apply the settings.
-1. The new empty report should open in the designer with its default Page Header, Detail and Page Footer sections. Lets delete the page sections by selecting them and pressing the `Delete` key from the keyboard.
+1. Go to the main toolbar `Menu` and select `New Report`. The `Create Report` dialog opens and lets you enter the `File Name`, and select its `Type` and `Location`. Let's name the report `ProductSales`, leave its `Type` to be `TRDP` standing for _Telerik Report Definition Packed_ and place it in the `Demo` folder. Click Save to apply the settings.
+1. The new empty report should open in the designer with its default Page Header, Detail, and Page Footer sections. Let's delete the page sections by selecting them and pressing the `Delete` key from the keyboard.
 1. Next, we want to add a [Report Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}). Press `Ctrl+F` to focus the Search box, type `Report Header`, and press `Enter` key to focus the report section in the `Components` menu. Click the item to add the section to the report.
-1. Lets add the company logo to the report.
+1. Let's add the company logo to the report.
 
 	1. We need to add a [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) to the Report Header. You may search for the report item, drag it to the Report Header and adjust it as needed.
-	1. To upload the logo, search for the PictureBox Value property, click on the icon beside it. It opens the `Select File` dialog, which represents the Assets Manager. The latter contains all report assets as images, stylesheets, etc.
-	1. Select the `Images` folder and click the `Upload` button to upload the image. Click on the `Browse` and find the image on your system and open it. Add the selected image by clicking on the `Upload`. Now the image is in the Assets Manager and you may click `Save`. The value should be populated and the image should be displayed in the PictureBox.
+	1. To upload the logo, search for the PictureBox Value property, and click on the icon beside it. It opens the `Select File` dialog, which represents the Assets Manager. The latter contains all report assets as images, stylesheets, etc.
+	1. Select the `Images` folder and click the `Upload` button to upload the image. Click on `Browse` and find the image on your system and open it. Add the selected image by clicking on the `Upload`. Now the image is in the Assets Manager and you may click `Save`. The value should be populated and the image should be displayed in the PictureBox.
 
 1. Add title to the report. We may use [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}).
 
 	1. Search in the global search box of the designer and drag the item to the Report Header.
-	1. You may change the text inline. Lets type `Sales by Category`.
-	1. Apply Styles by selecting the TextBox, searching for _Style_ and finding the appropriate _Font_ styles. Lets use default Font with Size 22pt, bolded, centered and aligned to the middle.
+	1. You may change the text inline. Let's type `Sales by Category`.
+	1. Apply Styles by selecting TextBox, searching for _Style_, and finding the appropriate _Font_ styles. Let's use the default Font with Size 22pt, bolded, centered, and aligned to the middle.
 	1. Position and realign the TextBox so that the content fits and looks beautiful.
 
 1. Our next step would be to add a DataSource component to the Report. Let it be the [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) fetching data from a remote source.

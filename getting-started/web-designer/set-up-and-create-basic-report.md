@@ -26,7 +26,7 @@ Lets create an ASP.NET Core application in Visual Studio and embed the Telerik W
 1. In the popped-up Web Designer Wizard, select `Create new REST service` as we don't have an existing one.
 1. On the next step the wizard will ask for the initial report to load. Select the `Sample report definition` option to create a new sample report if you don't have any. When you click `Finish` you should see a status page confirming that everything was set up correctly.
 1. (optional) Add to the file `launchSetting.json` in folder `Properties` the property, setting the opening project page `"launchUrl": "webReportDesigner.html"`.
-1.
+1. Run the project. If everything is fine, you should see the web page with the designer with the Sample Report opened, and the onboarding guide to walk you through the main tools in the designer. We recommend to get familiar with them by clicking on the `Next` button. You may skip the guide at any step through the button `End Tour`.
 
 # Creating Your First Report
 

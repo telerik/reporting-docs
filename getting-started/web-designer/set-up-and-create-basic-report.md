@@ -51,11 +51,27 @@ Our next goal is to create a brand new report with the just configured Web Repor
 	1. Apply Styles by selecting the TextBox, searching for _Style_ and finding the appropriate _Font_ styles. Lets use default Font with Size 22pt, bolded, centered and aligned to the middle.
 	1. Position and realign the TextBox so that the content fits and looks beautiful.
 
-1. Next, lets add the chart that is going to show the sales data.
+1. Our next step would be to add a DataSource component to the Report. Let it be the [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) fetching data from a remote source.
 
+	1. Search for the component and add it to the report. It opens the _Configure Web Service DataSource_ wizard.
+	1. For `ServiceUrl` we will add the known URL to our demo site `https://demos.telerik.com/reporting/api/data/ProductSales.min`. It points to a reliable JSON data file. Leave the other options with their default values.
+	1. Skip the next page, where you may add request parameters, as we don't have any.
+	1. Skip also the third page that asks whether in design-time you would like to use real or mocked data. We will use real data.
+	1. Preview the data on the next page and click `Finish`.
+	1. The wizard closes and in the designer's `Explorer` tab you should see the new WebServiceDataSource component with its data fields listed.
 
-Data Source URL https://demos.telerik.com/reporting/api/data/ProductSales.min
+1. Next, lets add the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) that is going to show the sales data.
 
+	1. Search for `Column` and drag the Column chart from the `Explorer` ment to the report Detail section. This will open a chart configurator to the right pane.
+	1. Select the WebServiceDataSource from the dropdown of the DataSource property. The fields will be listed.
+	1. Drag the `ProductCategory` field to the `Categories`.
+	1. For the `Values` property use the `LineTotal` field. Click on `Create` to render the chart with real data and show it in the report.
+	1. Finally, style the column graph:
+
+		* Find and remove the `Legend` by unchecking its `Style` > `Visible` checkbox.
+		* Enter the `Titles` section, select the graph title and uncheck the `Visible` checkbox in the `Style` section from the opened `Edit item` dialog.
+
+1. Preview the pixel-perfect report document by clicking on the designers `Preview` button at the top right corner.
 
 ## See Also
 

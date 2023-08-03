@@ -25,14 +25,14 @@ The entire process is described in the YouTube video tutorial [Getting Started w
 
 Lets create an ASP.NET Core application in Visual Studio and embed the Telerik Web Report Designer in it:
 
-1. Open Visual Studio 2022 and create a new project through the project template `ASP.NET Core Web App`. Name the project, for example, "Telerik.WRD.GettingStarted" and select `.NET 6.0` as a Target Framework.
+1. Open Visual Studio 2022 and create a new project through the project template `ASP.NET Core Web App`. Name the project, for example, `Telerik.WRD.GettingStarted` and select `.NET 6.0` as a Target Framework.
 1. Add the Web Designer to the project:
 
-	1. Right-click on the project and select `Add New Item`.
+	1. Right-click on the project and select `Add` > `New Item...`.
 
 		![Open the menu for adding new item to your project through Visual Studio item template.](images/add-vs-item-template.png)
 
-	1. You may search for "telerik reporting" to list the available Reporting item templates. Add `Telerik Web Report Designer HTML5 Page {{site.suiteversion}}`. The version may vary, depending on the last Reporting version installed.
+	1. You may search for `telerik reporting` to list the available Reporting item templates. Add `Telerik Web Report Designer HTML5 Page {{site.suiteversion}}`. The version may vary, depending on the last Reporting version installed.
 	1. Name the new page `webReportDesigner.html` (this is the default name).
 
 		![Searcing for and adding Web Report Desiger page 'webReportDesigner.html' through the Visual Studio item template.](images/add-web-report-designer-page.png)
@@ -70,9 +70,9 @@ Our next goal is to create a brand new report with the just configured Web Repor
 1. Go to the main toolbar `Menu` and select `New Report`. The `Create Report` dialog opens and lets you:
 
 	1. Enter the `File Name`. Let's name the report `ProductSales`.
-	1. Select the `Type`. Leave the `Type` to be `TRDP` standing for _Telerik Report Definition Packed_.
+	1. Select the `Type`. Leave the `Type` to be `TRDP` standing for _Telerik Report Definition Packed_, the recommended Declarative [Report Definition]({%slug on-telerik-reporting%}#report-definition).
 	1. Enter `Location`. Type `Demo` to place the report in the _Demo_ subfolder.
-	1. Click Save to apply the settings.
+	1. Click `Save` to apply the settings.
 
 	![The 'Create Report' dialog of the web designer with the above settings for our new report.](images/create-trdp-report-web-designer.png)
 
@@ -84,7 +84,7 @@ Our next goal is to create a brand new report with the just configured Web Repor
 1. Let's add the company logo to the report.
 
 	1. We need to add a [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) to the Report Header. You may search for the report item, drag it to the Report Header and adjust its size and position as needed.
-	1. To upload the logo, search for the Value property in the PictureBox, and click on the icon beside it. It opens the `Select File` dialog, which represents the [Assets Manager]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager). The latter contains report assets such as images, external stylesheets, etc.
+	1. To upload the logo, search for the `Value` property in the PictureBox, and click on the icon beside it. It opens the `Select File...` dialog, which represents the [Assets Manager]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager). The latter contains report assets such as images, external stylesheets, etc.
 
 		![The 'Select file...' dialog of the web designer opened when adding a value for the PictureBox.](images/select-image-for-picturebox-web-designer.png)
 
@@ -94,7 +94,7 @@ Our next goal is to create a brand new report with the just configured Web Repor
 
 	1. Search in the global search box of the designer and drag the item from the `Components` menu to the Report Header.
 	1. You may change the text inline. Double-click on the item to enter it and type `Sales by Category`.
-	1. Apply Styles by selecting the TextBox, searching for _Style_, and finding the appropriate _Font_ styles. Let's use the default Font with Size 22pt, bolded, centered, and aligned to the middle.
+	1. Apply Styles by selecting the TextBox, searching for _Style_, and finding the appropriate _Font_ styles. Let's use the default Font "Arial", with Size 22pt, bolded, centered, and aligned to the middle.
 	1. Position and realign the TextBox so that the content fits and looks beautiful.
 
 	![The TextBox 'Sales by Category' styled and aligned in the web designer.](images/style-and-align-textbox-web-designer.png)

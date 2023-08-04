@@ -30,7 +30,7 @@ You can specify the HTML value at design time either through a WYSIWYG editor or
 
 ## Next Steps
 
-* [Getting Started with the HtmlTextBox Report Item]({%slug barcode_item_get_started%})
+* [Getting Started with the HtmlTextBox Report Item]({%slug htmltextbox_item_get_started%})
 * [(KB) Anchor Tags vs. Hyperlink Actions in the HtmlTextBox]({%slug htmltextbox-with-anchor-tag-vs-hyperlink-action%})
 * [(KB) Error while Parsing EntityName]({%slug htmltextbox-an-error-occurred-while-parsing-entityname%})
 * [(w3.org) Full List of Special Entities](https://www.w3.org/TR/xhtml1/DTD/xhtml-special.ent)

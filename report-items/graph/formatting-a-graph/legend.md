@@ -87,6 +87,9 @@ The automatic sizing partially depends on the positioning of the legend as follo
 
 	The width is taken into account only if all items can fit in the provided space. Otherwise, the legend grows horizontally, stretching to the limits of the graph at maximum. The ordering of the items is "across then down", forming rows.
 
+
+> If the contents of the Legend do not fit within the maximum space available, an ellipsis `...` will be shown as a placeholder.
+
 ## See Also
 
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

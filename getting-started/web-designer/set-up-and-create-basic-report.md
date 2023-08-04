@@ -135,8 +135,8 @@ Our next goal is to create a brand new report with the just configured Web Repor
 
 ## See Also
 
-* YouTube video tutorial [Getting Started with the Web Report Designer: Part 1](https://www.youtube.com/watch?v=L-utkcB8-5c)
-* YouTube video tutorial [Getting Started with the Web Report Designer: Part 2](https://www.youtube.com/watch?v=DXKlgq-MYIU)
+* [Video tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
+* [Video tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
 * [Implement a Common Master-Detail Report Scenario]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
 * [Web Report Designer](%{slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Setting up the Web Report Designer in .NET and .NET Core 3.1 applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})

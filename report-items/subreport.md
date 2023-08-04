@@ -13,7 +13,7 @@ position: 12
 
 The SubReport item enables you to display reports within reports, and serves as a container, similar to the report sections, growing in size depending on its children.
 
-The following screenshot shows a SubReport item at design-time, allowing you to compose complex reports from various report sources. The data for each SubReport can be completely different, for example, you can combine a product listing, a sales summary, and a list of sales people each in their own sub-report with each sub-report drawing its data from a different source. You can also pass parameters to the SubReport by using the **Edit Parameters** collection editor.
+The following screenshot shows a SubReport item at design-time, allowing you to compose complex reports from various report sources. The data for each SubReport can be completely different, for example, you can combine a product listing, a sales summary, and a list of sales people each in their own sub-report with each sub-report drawing its data from a different source. You can also pass parameters to the SubReport by using the **Edit Parameters** collection editor.
 
 ![SubReport report item in the Report Designer](images/Subreport.png)
 
@@ -22,10 +22,10 @@ The following screenshot shows a SubReport item at design-time, allowing you to 
 To set up the SubReport:
 
 1. Click the report item you want to change. The selected SubReport properties are listed in the __Property Browser__.
-1. In the __ReportSource__ property, click the __Edit Collection (…)__ button. As a result, the __Load a Report From__ window opens.
+1. In the `ReportSource` property, click the __Edit Collection (…)__ button. As a result, the __Load a Report From__ window opens.
 1. Click the __Edit Parameters__ button to add a parameter. As a result, the __Edit Parameters__ window opens.
 1. Click the __New__ button to add a new parameter mapping.
-1. Assuming you have assigned the __ReportSource__ property, the __Parameter Name__ drop-down list will contain the names of parameters defined in the sub-report. Select a __Parameter Name__ from the combo-box to set the target for this parameter.
+1. Assuming you have assigned the `ReportSource` property, the __Parameter Name__ drop-down list will contain the names of parameters defined in the sub-report. Select a __Parameter Name__ from the combo-box to set the target for this parameter.
 1. The __Parameter Value__ combo-box allows you to directly enter the value, create an `<Expression>` or a `<New Report Parameter>`.
 1. When you are done, click __OK__.
 
@@ -44,7 +44,7 @@ The SubReport enables you to set up the report source either by using a Telerik 
 To set the report source of the SubReport item by using a Telerik Report Designer:
 
 1. In the **Design** view, right-click a SubReport item to which you want to set a report source and click __Properties__.
-1. In the __Properties__ of the item, click __ReportSource__. As a result, a **Load a Report from** dialog appears. Select a __ReportSource__.
+1. In the __Properties__ of the item, click `ReportSource`. As a result, a **Load a Report from** dialog appears. Select a `ReportSource`.
 1. Select the type of the report source you will use to specify a report. For the purposes of this example, click the __Instance Report Source__ option and select the report that will serve as the detail report.
 1. To specify the parameters for the report , click the __Edit Parameters__ button. As a result, the __Edit Parameters__ dialog appears. Click __New__.
 1. In the __Parameter Name__ column, select the name of a report parameter in the detail report. In the __Parameter Value__, type or select the value to pass to the parameter in the detail report.
@@ -72,16 +72,23 @@ All the [data sources]({%slug telerikreporting/designing-reports/connecting-to-d
 
 A common scenario would be to feed the inner report with data coming from the data context of the `SubReport` item. To do this, define a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to bind the `DataSource` property to a data field.
 
-For example, define a `Binding` with `Path` __DataSource__ and `Expression` __=Fields.InvoiceRows__ to link the inner report DataSource to the collection with the invoice rows from the main report DataSource.
+For example, define a `Binding` with `Path` `DataSource` and `Expression` `=Fields.InvoiceRows` to link the inner report DataSource to the collection with the invoice rows from the main report DataSource.
 
 ## Considerations and Known Limitations
 
-When working with the SubReport item, note the following considerations:
+When working with the SubReport item, mind the following:
 
-* Page sections are not related to the report itself, but are relative to the paper or screen. Therefore, page sections of nested or detail reports are ignored and only the page sections of the main report are visible.
-* To render page sections that appear on each page, similar to page sections, consider using an unbound group (no grouping criteria specified) and set the [`PrintOnEveryPage`](/api/Telerik.Reporting.GroupSection#Telerik_Reporting_GroupSection_PrintOnEveryPage) property of its sections to `True`. Note that you cannot use the __PageCount__ and __PageNumber__ global objects in group sections.
-* To remove blank vertical space in the detail section of a SubReport, set the `Height` of the `SubReport.ReportSource` __DetailSection__ to the height of the highest item.
-* Sections can grow to accommodate their children but cannot shrink to hide empty space. To make the dtail section shrink only at runtime, set the `Height` property of the __DetailSection__ in the report constructor. Place the `Height` property assignment code right after the `IntializeComponent()` method call.
+* Page sections are not related to the report itself, but are relative to the paper or screen. Therefore, page sections of nested or detail reports are ignored and only the page sections of the main report are visible.
+* To render page sections that appear on each page, similar to page sections, consider using an unbound group (no grouping criteria specified) and set the [`PrintOnEveryPage`](/api/Telerik.Reporting.GroupSection#Telerik_Reporting_GroupSection_PrintOnEveryPage) property of its sections to `True`. Note that you cannot use the `PageCount` and `PageNumber` global objects in group sections.
+* To remove blank vertical space in the detail section of a SubReport, set the `Height` of the `SubReport.ReportSource` `DetailSection` to the height of the highest item.
+* Sections can grow to accommodate their children but cannot shrink to hide empty space. To make the dtail section shrink only at runtime, set the `Height` property of the `DetailSection` in the report constructor. Place the `Height` property assignment code right after the `IntializeComponent()` method call.
+* The default styles used in the subreports may be overriden by inherited styles from their parent reports.
+
+	When Report items and sections use default styles (i.e. their styles are not set explicitly), they will inherit the Styles from their parents. This is valid for the SubReport item and the corresponding subreport specified by its ReportSource. This may lead to inconsistencies when rendering the subreport as a separete report and in a main report. Here is an example for clarity:
+
+	Lets have a report definition (referenced below as _subreport_) that doesn't have Font specified. It will be rendered with Font size `10pt` that is a default value, which is not explicitly set. If you have a TextBox in this report, with default Font, the text will be rendered with `10pt` when you render the _subreport_ as a separate report.
+
+	Lets consider a main report, with Font size set explicitly to `20pt`. If we use the above _subreport_ in our main report, the _subreport_ text will inherit the Font size from the main report and the same text will appear with size `20pt`.
 
 ## Next Steps
 

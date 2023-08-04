@@ -1,5 +1,5 @@
 ---
-title: Improving Report
+title: Improving Basic Report
 page_title: Improving Your First Report
 description: "Learn how to edit reports in the Telerik Web Report Designer, add SharedDataSources and Actions, copy content between reports and more in this step by step tutorial."
 slug: telerikreporting/getting-started/web-designer/improving-basic-report
@@ -32,8 +32,8 @@ The entire process is described in the YouTube video tutorial [Getting Started w
 
 ## See Also
 
-* YouTube video tutorial [Getting Started with the Web Report Designer: Part 2](https://www.youtube.com/watch?v=DXKlgq-MYIU)
-* YouTube video tutorial [Getting Started with the Web Report Designer: Part 1](https://www.youtube.com/watch?v=L-utkcB8-5c)
+* [Video tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
+* [Video tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
 * [Embedding the Web Report Designer in .NET 6 and Creating Your First Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
 * [Web Report Designer](%{slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

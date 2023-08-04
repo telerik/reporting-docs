@@ -25,7 +25,7 @@ res_type: kb
 
 This KB article lists the required steps for configuring the [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) component to connect to a [PostgreSQL](https://www.postgresql.org/) database with the `Npgsql` data provider.
 
-## Solution for Npgsql version <= 3.2.7 
+## Solution for Npgsql version 3.2.7 
 
 1. Install [Npgsql version 3.2.7](https://github.com/npgsql/npgsql/releases/tag/v3.2.7) by using the `.MSI` file. Note that the [SqlDataSource]({% slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview %}) component will list and work with any `ADO.NET` provider that is correctly registered on the device;
 
@@ -39,9 +39,9 @@ Host=reporting7x64.telerik.com;Username=postgres;Password=password;Database=post
 
 4. Click **Next** -> fill in the **Select Statement** or use the **Query Builder** -> **Finish**.
 
-## Solution for Npgsql version >= 3.2.7 
+## Solution for Npgsql version >= 4.1.11 
 
-1. Create a sample Console application and add the `Npgsql 4.1.4.0` NuGet package;
+1. Create a sample Console application and add the `Npgsql 4.1.11.0` NuGet package;
 
 2. Build the project, then copy the assemblies which are related to the data provider from the `bin` folder of the application;
 
@@ -52,12 +52,27 @@ Host=reporting7x64.telerik.com;Username=postgres;Password=password;Database=post
 5. Open the configuration file of the Standalone designer (`Telerik.ReportDesigner.exe.config`) and add the binding redirects:
 
 	````XML
-<runtime>
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<configSections>
+		<section
+				name="Telerik.Reporting"
+				type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting"
+				allowLocation="true"
+				allowDefinition="Everywhere"/>
+	</configSections>
+	
+	
+	<runtime>
 		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
 		<!--
 		<probing privatePath="path-to-the-assemblies"/>
 		-->
 		. . . 
+		<dependentAssembly>
+			<assemblyIdentity name="Npgsql" culture="neutral" publicKeyToken="5d8b90d52f46fda7"/>
+			<bindingRedirect oldVersion="0.0.0.0-4.1.11.0" newVersion="4.1.11.0" />
+		</dependentAssembly>
 		<dependentAssembly>
 			<assemblyIdentity name="Microsoft.Bcl.AsyncInterfaces" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
 			<bindingRedirect oldVersion="0.0.0.0-1.0.0.0" newVersion="1.0.0.0" />
@@ -84,6 +99,17 @@ Host=reporting7x64.telerik.com;Username=postgres;Password=password;Database=post
 		</dependentAssembly>
 		</assemblyBinding>
 	</runtime>
+	
+	
+	<system.data>
+		<DbProviderFactories>
+			<add name="Npgsql Data Provider"
+				invariant="Npgsql"
+				description=".NET Framework Data Provider for Postgresql Server"
+				type="Npgsql.NpgsqlFactory, Npgsql, Version=4.1.11.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7" />
+		</DbProviderFactories>
+	</system.data>
+<configuration>
 ````
 
 

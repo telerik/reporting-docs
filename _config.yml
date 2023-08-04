@@ -15,8 +15,11 @@ navigation:
     getting-started:
         position: 2
         title: "Getting Started"
-    getting-started/installation:
+    getting-started/web-designer:
         position: 5
+        title: "Web Report Designer"
+    getting-started/installation:
+        position: 6
         title: "Download & Installation"
     upgrade:
         position: 11

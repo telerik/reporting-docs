@@ -4,20 +4,20 @@ description: "Learn how to resolve the 'The type initializer for GlobalTypeMappe
 type: troubleshooting
 page_title: GlobalTypeMapper type initializer error
 slug: the-type-initializer-npgsql-globaltypemapper-threw-exception
-position: 
 tags: postgresql, npgsql
 ticketid: 1618548
 res_type: kb
 ---
 
 ## Environment
+
 <table>
-    <tbody>
-        <tr>
-            <td>Product</td>
-            <td>Progress® Telerik® Reporting</td>
-        </tr>
-    </tbody>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+	</tbody>
 </table>
 
 
@@ -27,15 +27,15 @@ The connection to the PostgreSQL database fails despite the connection string be
 
 ## Error Message
 
-```
+````
 System.TypeInitializationException: The type initializer for 'Npgsql.TypeMapping.GlobalTypeMapper' threw an exception
 
 Method 'DisposeAsync' in type 'Npgsql.NpgsqlBinaryExporter' from assembly 'Npgsql, Version=4.1.3.1, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7' does not have an implementation.":"Npgsql.NpgsqlBinaryExporter"} | System.Exception {System.TypeLoadException}
-```
+````
 
 ## Solution
 
-This is an issue introduced with version `4.1.3` of the `Npgsql` data provider. We recommend using version >=`4.1.10` of the `Npgsql` data provider instead - [Configuring the Npgsql data provider]({%slug configuring-postgres-with-npgsql%})  
+This is an issue introduced with version `4.1.3` of the `Npgsql` data provider. We recommend using version >=`4.1.10` of the `Npgsql` data provider instead - [Configuring the Npgsql data provider]({%slug configuring-postgres-with-npgsql%}).
 
 ## See Also
 

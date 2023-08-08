@@ -4,13 +4,13 @@ description: "Learn how to set another language/culture for the Kendo DatePicker
 type: how-to
 page_title: Changing the culture of the DatePicker in MVC Report Viewer
 slug: set-another-language-datepicker-html5-reportviewer-mvc
-position: 
 tags: Localization, HTML5MVCReportViewer
 ticketid: 1495437
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -22,12 +22,14 @@ res_type: kb
 
 
 ## Description
+
 The datepicker is a [Kendo widget](https://docs.telerik.com/kendo-ui/controls/editors/datepicker/overview).
 That is why the Html5 MVC Report Viewer localization will not affect its date representation.
 
-This KB article gives a brief description of how to set another language. The example will demonstrate the date representation in **Spanish**.
+This KB article gives a brief description of how to set up another language. The example will demonstrate the date representation in **Spanish**.
 
 ## Solution
+
 1. Add the following script after the script for the report viewer:
 
 	````HTML
@@ -44,5 +46,5 @@ This KB article gives a brief description of how to set another language. The ex
 
 
  ## Demo
- A sample project can be found in our [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/Change%20of%20Culture%20of%20Kendo%20DatePicker%20in%20the%20HTML5%20MVC%20RV).
  
+ A sample project can be found in our [GitHub repository](https://github.com/telerik/reporting-samples/tree/master/Change%20of%20Culture%20of%20Kendo%20DatePicker%20in%20the%20HTML5%20MVC%20RV).

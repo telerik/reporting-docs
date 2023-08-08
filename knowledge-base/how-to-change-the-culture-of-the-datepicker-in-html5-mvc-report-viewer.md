@@ -1,8 +1,8 @@
 ---
 title: Set DatePicker Culture in MVC Report Viewer
-description: "Learn how to set another language/culture for the Kendo DatePicker widget in HTML5 MVC Report Viewer."
+description: "Learn how to set another language/culture for the Kendo DatePicker widget in MVC Report Viewer."
 type: how-to
-page_title: Changing the culture of the DatePicker in HTML5 Report Viewer
+page_title: Changing the culture of the DatePicker in MVC Report Viewer
 slug: set-another-language-datepicker-html5-reportviewer-mvc
 position: 
 tags: Localization, HTML5MVCReportViewer

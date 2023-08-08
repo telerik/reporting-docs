@@ -60,14 +60,14 @@ npx create-react-app my-app
 ````
 
 
-1. Create new `assets` folder inside `public` and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting {{suiteversion}}\Html5\ReportViewer\js`. Refer the path to the file in `index.html` as:
+1. Create new `assets` folder inside `public` and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js`. Refer the path to the file in `index.html` as:
 
 	````HTML
 <script src="/assets/telerikReportViewer-{{buildversion}}.min.js"></script>
 ````
 
 
-1. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js\telerikReportViewer.kendo-{{buildversion}}.min.js` and can be copied to the React application's `public/assets` folder. Then reference it in `index.html`:
+1. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js\telerikReportViewer.kendo-{{site.buildversion}}.min.js` and can be copied to the React application's `public/assets` folder. Then reference it in `index.html`:
 
 	````HTML
 <script src="/assets/telerikReportViewer.kendo-{{buildversion}}.min.js"></script>
@@ -80,7 +80,7 @@ npx create-react-app my-app
 import React, { Component } from 'react';
 
 	export default class ReportViewer extends Component {
-		// The componentDidMount() method runs after the component output has been rendered to the DOM. 
+		// The componentDidMount() method runs after the component output has been rendered to the DOM.
 		componentDidMount() {
 			window.jQuery('#reportViewer1')
 				.telerik_ReportViewer({

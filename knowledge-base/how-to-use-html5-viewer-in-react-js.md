@@ -13,10 +13,6 @@ res_type: kb
 
 <table>
 	<tr>
-		<td>Product</td>
-		<td>up to R3 2021 SP2 (15.2.21.1125)</td>
-	</tr>
-	<tr>
 		<td>Framework</td>
 		<td>React</td>
 	</tr>
@@ -59,23 +55,22 @@ npx create-react-app my-app
 
 	````HTML
 <head>
-		<link href="http://kendo.cdn.telerik.com/2020.1.114/styles/kendo.common.min.css" rel="stylesheet" />
-		<link href="http://kendo.cdn.telerik.com/2020.1.114/styles/kendo.default.min.css" rel="stylesheet" />
-		//...
+		<link href="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
+		<link href="http://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.default.min.css" rel="stylesheet" />
 ````
 
 
-1. Create new `assets` folder inside `public` and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js`. Refer the path to the file in `index.html` as:
+1. Create new `assets` folder inside `public` and add the HTML5 Report Viewer JS library from the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting {{suiteversion}}\Html5\ReportViewer\js`. Refer the path to the file in `index.html` as:
 
 	````HTML
-<script src="/assets/telerikReportViewer-15.0.21.120.min.js"></script>
+<script src="/assets/telerikReportViewer-{{buildversion}}.min.js"></script>
 ````
 
 
-1. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js\telerikReportViewer.kendo-15.0.21.120.min.js` and can be copied to the React application's `public/assets` folder. Then reference it in `index.html`:
+1. Add [Kendo UI for jQuery](https://www.telerik.com/kendo-ui) JS library. An alternative approach is to add only the subset of Kendo widgets required for the proper work of the HTML5 Report Viewer. The subset is available in the Telerik Reporting installation folder `C:\Program Files (x86)\Progress\Telerik Reporting R1 2021\Html5\ReportViewer\js\telerikReportViewer.kendo-{{buildversion}}.min.js` and can be copied to the React application's `public/assets` folder. Then reference it in `index.html`:
 
 	````HTML
-<script src="/assets/telerikReportViewer.kendo-15.0.21.120.min.js"></script>
+<script src="/assets/telerikReportViewer.kendo-{{buildversion}}.min.js"></script>
 ````
 
 
@@ -152,7 +147,7 @@ body {
 1. Run
 
 	````
-npm start
+npm run start
 ````
 
 

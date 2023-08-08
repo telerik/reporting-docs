@@ -19,51 +19,51 @@ A drillthrough report typically contains parameters that are passed to it by the
 
 To define a drill-through action add a [NavigateToReportAction](/api/Telerik.Reporting.NavigateToReportAction) on an item.
 
->note The Target report of a drill-through action should always have a default constructor, so it can be instantiated.
+> The Target report of a drill-through action should always have a default constructor, so it can be instantiated.
 
-# How to Add a Drillthrough/Navigate To Report Action
+## Adding a Drillthrough/Navigate To Report Action
 
 A report can contain links to other reports. The report that opens when you click the link in the main report is known as a drillthrough report. Drillthrough reports must be published to the same report server as the main report, but they can be in different folders. You can add a drillthrough link to any item that has an `Action` property.
 
 > We recommend the usage of `TypeReportSource` ('Type name' option) or `UriReportSource` ('Url or file' option) in the [Load Report Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/load-report-dialog%})) on configuring the target report. `InstanceReportSource` ('Object instance' option) is only supported for WinForms and WPF Report Viewers in Embedded mode.
 
-## Adding a drillthrough action using the Report Designer
+### Adding a drillthrough action using the Report Designer
 
-1. In Design view, right-click a report item to which you want to add a link and then click __Properties__.
+1. In the Design view, right-click a report item to which you want to add a link and then click __Properties__.
 1. In the item's __Properties__ dialog box, click __Action__.
-1. Select __Navigate to Report__. Additional section appears which allows you to select a __ReportSource__.
+1. Select __Navigate to Report__. An additional section appears that allows you to select a __ReportSource__.
 1. In the __Choose a Report Source__ dialog, select how you would navigate to the report, For this example we would use __Type Report Source__ , click that option and select the report that you would like to navigate to. If you have to specify parameters for the drillthrough report, follow the next step.
 1. Click __Edit Parameters__ button - __Edit Parameters__ dialog appears. Click __New__. In the __Parameter Name__ column select the name of the report parameter in the drillthrough report. In the __Parameter Value__ , type or select the value to pass to the parameter in the drillthrough report.
 1. To test the link, run the report and click the report item with the applied __Action__. For TextBoxes, it is helpful to change the color and effect of the text to indicate that the text is a link. For example, change the color to blue and the effect to underline by setting the corresponding __Font__ properties of the TextBox.
 
-## Adding a drillthrough action programatically
+### Adding a drillthrough action programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewNavigateToReportSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToReportSnippet}}
 
-# How to Set ReportSource for Drillthrough/Navigate To Report Action
+## Setting ReportSource for Drillthrough/Navigate To Report Action
 
-This article includes details how to specify a __target report__ for a [Navigate to Report (Drill-through) Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}). You will need a [Report Source]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.
+This article includes details on how to specify a __target report__ for a [Navigate to Report (Drill-through) Action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}). You will need a [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) object.
 
-## Setting the Report Source through the Report Designer
+> When you reference reports stored in the [Telerik Report Server](https://docs.telerik.com/report-server/introduction) ensure using the *[CategoryName]/[ReportName]* path for the URI as specified in the article [Working with Report Server Reports]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports%}).
 
-1. In Design view, right-click a report item to which you want to add a drill-through action and then click __Properties__.
+### Setting the ReportSource through the Report Designer
+
+1. In the Design view, right-click a report item to which you want to add a drill-through action and then click __Properties__.
 1. In the item's __Properties__ dialog box, click __Action__.
-1. Select __Navigate to Report__. Additional section appears which allows you to select a __ReportSource__.
-1. In the __Choose a Report Source__ dialog, select how you would navigate to the report, For this example we would use __Type Report Source__ , click that option and select the report that you would like to navigate to. If you have to specify parameters for the drillthrough report, follow the next step.
-1. Click __Edit Parameters__ button - __Edit Parameters__ dialog appears. Click __New__. In the __Parameter Name__ column select the name of the report parameter in the drillthrough report. In the __Parameter Value__ , type or select the value to pass to the parameter in the drillthrough report.
+1. Select __Navigate to Report__. An additional section appears that allows you to select a __ReportSource__.
+1. In the __Choose a Report Source__ dialog, select how you would navigate to the report, For this example, we would use __Type Report Source__, click that option, and select the report that you would like to navigate to. If you have to specify parameters for the drillthrough report, follow the next step.
+1. Click __Edit Parameters__ button - __Edit Parameters__ dialog appears. Click __New__. In the __Parameter Name__ column select the name of the report parameter in the drillthrough report. In the __Parameter Value__, type or select the value to pass to the parameter in the drillthrough report.
 
-## Setting the Report Source Programmatically
+### Setting the Report Source Programmatically
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ActionSnippets.cs region=AddNewNavigateToReportSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ActionSnippets.vb region=AddNewNavigateToReportSnippet}}
 
 The [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) you can use all available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).
 
-<<<<<<< HEAD
 >tip If the report will be displayed in an HTML5-based Report Viewer, the main report is rendered in HTML and it is loaded at the client. The rendered content contains a link rendered for the `NavigateToReportAction`, that will not be valid and working if the target report is specified via `InstanceReportSource` or `XmlReportSource`.
-=======
-The [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) you can use all available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).         
 
->tip If the report will be displayed in an HTML5-based Report Viewer or the Silverlight ReportViewer, the main report is rendered in HTML (or XAML respectively) and it is loaded at the client. The rendered content contains a link rendered for the `NavigateToReportAction`, that will not be valid and working if the target report is specified via `InstanceReportSource` or `XmlReportSource`.        
->>>>>>> master
+The [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) includes only XmlReportSource and UriReportSource options due to the format of the produced reports. In [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) you can use all available [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%}).
+
+>tip If the report will be displayed in an HTML5-based Report Viewer or the Silverlight ReportViewer, the main report is rendered in HTML (or XAML respectively) and it is loaded at the client. The rendered content contains a link rendered for the `NavigateToReportAction`, that will not be valid and working if the target report is specified via `InstanceReportSource` or `XmlReportSource`.

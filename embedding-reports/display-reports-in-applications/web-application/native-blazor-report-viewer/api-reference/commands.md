@@ -39,23 +39,29 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 ````C#
 <button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
 <button type="button" class="btn btn-light btn-sm" @onclick="Export">Export Report to PDF</button>
+<button type="button" class="btn btn-light btn-sm" @onclick="UpdateAuthenticationToken">Update Token</button>
 ...
 <ReportViewer
-    ServiceUrl="/api/reports"
-    @ref="@ViewerInstance"
+	ServiceUrl="/api/reports"
+	@ref="@ViewerInstance"
 </ReportViewer>
 ...
 @code {
-    public ReportViewer ViewerInstance { get; set; } 
+	public ReportViewer ViewerInstance { get; set; } 
 
-    void RefreshReport()
-    {
-         ViewerInstance.ExecuteCommand("Refresh");
-    }
-    void Export()
-    {
-        ViewerInstance.ExecuteCommand("Export", "PDF");
-    }
+	void RefreshReport()
+	{
+		ViewerInstance.ExecuteCommand("Refresh");
+	}
+	void Export()
+	{
+		ViewerInstance.ExecuteCommand("Export", "PDF");
+	}
+	
+	void UpdateAuthenticationToken()
+	{
+		ViewerInstance.ExecuteCommand("SetAuthenticationToken", "access_token");
+	}
 }
 ````
 
@@ -120,6 +126,15 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 			</td>
 			<td>
 				Triggers the Email sending functionality if implemented.
+			</td>
+		</tr>
+		<tr>
+			<td>SetAuthenticationToken</td>
+			<td>
+				The access token, e.g. "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+			</td>
+			<td>
+				Updates the `AuthenticationToken` property of the report viewer with the new value to be used in any new requests made by the viewer to the reporting service.
 			</td>
 		</tr>
 		<tr>

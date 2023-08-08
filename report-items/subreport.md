@@ -88,9 +88,9 @@ When working with the SubReport item, mind the following:
 
 	When Report items and sections use default styles (i.e. their styles are not set explicitly), they will inherit the Styles from their parents. This is valid for the SubReport item and the corresponding subreport specified by its ReportSource. This may lead to inconsistencies when rendering the subreport as a separate report and in a main report. Here is an example for clarity:
 
-	Lets have a report definition (referenced below as _subreport_) that doesn't have Font specified. It will be rendered with Font size `10pt` which is a default value, which is not explicitly set. If you have a TextBox in this report, with default Font, the text will be rendered with `10pt` when you render the _subreport_ as a separate report.
+	Let's have a report definition (referenced below as _subreport_) that doesn't have a Font specified. It will be rendered with Font size `10pt` which is a default value, which is not explicitly set. If you have a TextBox in this report, with default Font, the text will be rendered with `10pt` when you render the _subreport_ as a separate report.
 
-	Lets consider a main report, with Font size set explicitly to `20pt`. If we use the above _subreport_ in our main report, the _subreport_ text will inherit the Font size from the main report and the same text will appear with size `20pt`.
+	Let's consider a main report, with Font size set explicitly to `20pt`. If we use the above _subreport_ in our main report, the _subreport_ text will inherit the Font size from the main report and the same text will appear with size `20pt`.
 
 ## Next Steps
 

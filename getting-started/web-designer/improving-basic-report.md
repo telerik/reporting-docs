@@ -1,7 +1,7 @@
 ---
 title: Improving Basic Report
 page_title: Improving Your First Report
-description: "Learn how to edit reports in the Telerik Web Report Designer, add SharedDataSources and Actions, copy content between reports and more in this step by step tutorial."
+description: "Learn how to edit reports in the Telerik Web Report Designer, add SharedDataSources and Actions, copy content between reports, and more in this step-by-step tutorial."
 slug: telerikreporting/getting-started/web-designer/improving-basic-report
 tags: how,web,designer,report,navigate,action,shareddatasource
 published: True
@@ -150,11 +150,14 @@ Our first goal is to create a new report within the Web Report Designer. It will
 	1. Add a new Parameter to the `Parameters` collection of the _Report source_ with `Name` corresponding to the child report's parameter, i.e. `Category`, and `Value` being the value of the current product category field, i.e. `=Fields.ProductCategory`.
 	1. Click `Save` to preserve the configuration.
 
+	![The column chart in the main report with configured Navigate to Report action.](images/navigate-to-report-action-in-main-report-chart.png)
+
 1. Test how the reports interact:
 
-	1. Navigate from the main report to the child one by clicking on a particular Product Category
-	1. Navigate back to the main report from the child one through the [Viewer's Toolbar]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#toolbar) button __Navigate back in history__.
+	1. Navigate from the main report to the child report by clicking on a particular Product Category in the Column Chart.
+	1. Navigate back to the main report from the child report through the [Viewer's Toolbar]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#toolbar) button __Navigate back in history__.
 
+	[The child report in the web designer preview opened by clicking on the 'Accessories' category of the column chart in the main report.](images/child-report-opened-by-clicking-on-accessories-category-in-main-report.png)
 
 The entire process is described in the YouTube video tutorial [Getting Started with the Web Report Designer: Part 2](https://www.youtube.com/watch?v=DXKlgq-MYIU).
 

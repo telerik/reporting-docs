@@ -32,35 +32,50 @@ Our first goal is to create a new report within the Web Report Designer. It will
 1. We'll remove the Page Header and Footer sections again.
 1. We can add the same [Report Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) as in the main report:
 
-	1. Search for the `report header` in the Search box and add it to the child report.
+	1. Search for `report header` in the Search box and add it to the child report.
 	1. If necessary, increase its height.
-	1. Go to the main report and select PictureBox and TextBox from its Report Header.
-	1. Open the `Context menu` by clicking on the ellipses (...) beside the selected items in the `Explorer` tab of the Menu. Select `Copy` to copy the items to the clipboard.
-	1. Return to the child report, select the Report Header, and invoke its `Context menu` to `Paste` the selected items.
+	1. Go to the main report and select the PictureBox and TextBox from its Report Header.
+	1. Open the `Context menu` by clicking on the ellipses (...) beside the selecte items in the `Explorer` tab of the Menu. Select `Copy` to copy the items to the clipboard.
+	1. Return to the child report, select the Report Header and invoke its `Context menu` to `Paste` the selected items.
 	1. Adjust their position, if necessary.
 
 1. Next, we'll [add a Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) that will receive the Category from the parent report.
 
 	We will use the parameter to filter the data from the WebServiceDataSource.
 
-	1. Search for the `report parameter` in the Search box.
+	1. Search for `report parameter` in the Search box.
 	1. Select `+` to open the `Add New Item` dialog that lets you add a new parameter to the collection.
 	1. Let's name the parameter `Category` and use the same for the `Text` property that is used as a label.
 	1. We'll add the default `Value` _Bikes_ as we know this category exists.
-	1. Mark the parameter as `Visible` in the user interface.
+	1. Mark the paramete as `Visible` in the user interface.
 	1. Click `Save` to preserve the new parameter settings.
 
 1. Let's update the report title to display the selected category available in the new Report Parameter:
 
-	1. Select TextBox in the Report Header.
+	1. Select the TextBox in the Report Header.
 	1. Click on the ellipses (...) beside its `Value` property in the Property editor. This opens the `Edit Value` dialog.
 	1. Select the `Report Parameters` from the list on the left.
 	1. Double-click on the `Category Value` from the middle list.
 	1. Update the Expression by concatenating a string at the end to become `= Parameters.Category.Value + "Sales by Subcategory"`.
 	1. `Save` and `Preview` the child report. The report should display the default category in the Report Header.
 
-1. Configure the child report to reuse the DataSource from the main report.
+1. Configure the child report to reuse the DataSource from the main report:
 
+	1. Convert the WebServiceDataSource from the main report to a [SharedDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}):
+
+		1. Navigate to the main report.
+		1. Select its WebServiceDataSource from the `Explorer` tab of the Menu.
+		1. Invoke the `Context menu` by clicking on the ellipses (...) and select `Save As Shared Data Source`.
+		1. In the opened `Create Shared Data Source` dialog name the component `productSalesData` and check the `Replace data source in report` to let both reports use the SharedDataSource that is stored in the Assets manager.
+		1. Click `Save` and ensure the webServiceDataSource1 hab been moved from `Inline Data Sources` to `Shared Data Sources`.
+
+	1. Navigate back to the child report.
+
+		1. Open the context menu of the `Shared Data Sources` and select `Add Existing Shared Data Source`.
+		1. In the popped-up `Browse For Folder` dialog sele `Shared Data Sources` on the left and choose the `productSalesData.sdsx` file, which is our shared data source.
+		1. Click `Save` and ensure the `productSalesData1` component appears under the `Shared Data Sources`.
+
+1. Let's use the SharedDataSource to create our PieChart.
 
 The entire process is described in the YouTube video tutorial [Getting Started with the Web Report Designer: Part 2](https://www.youtube.com/watch?v=DXKlgq-MYIU).
 

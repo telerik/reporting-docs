@@ -32,27 +32,27 @@ Our first goal is to create a new report within the Web Report Designer. It will
 1. We'll remove the Page Header and Footer sections again.
 1. We can add the same [Report Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) as in the main report:
 
-	1. Search for `report header` in the Search box and add it to the child report.
+	1. Search for the `report header` in the Search box and add it to the child report.
 	1. If necessary, increase its height.
-	1. Go to the main report and select the PictureBox and TextBox from its Report Header.
-	1. Open the `Context menu` by clicking on the ellipses (...) beside the selecte items in the `Explorer` tab of the Menu. Select `Copy` to copy the items to the clipboard.
-	1. Return to the child report, select the Report Header and invoke its `Context menu` to `Paste` the selected items.
+	1. Go to the main report and select PictureBox and TextBox from its Report Header.
+	1. Open the `Context menu` by clicking on the ellipses (...) beside the selected items in the `Explorer` tab of the Menu. Select `Copy` to copy the items to the clipboard.
+	1. Return to the child report, select the Report Header, and invoke its `Context menu` to `Paste` the selected items.
 	1. Adjust their position, if necessary.
 
 1. Next, we'll [add a Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) that will receive the Category from the parent report.
 
 	We will use the parameter to filter the data from the WebServiceDataSource.
 
-	1. Search for `report parameter` in the Search box.
+	1. Search for the `report parameter` in the Search box.
 	1. Select `+` to open the `Add New Item` dialog that lets you add a new parameter to the collection.
 	1. Let's name the parameter `Category` and use the same for the `Text` property that is used as a label.
 	1. We'll add the default `Value` _Bikes_ as we know this category exists.
-	1. Mark the paramete as `Visible` in the user interface.
+	1. Mark the parameter as `Visible` in the user interface.
 	1. Click `Save` to preserve the new parameter settings.
 
 1. Let's update the report title to display the selected category available in the new Report Parameter:
 
-	1. Select the TextBox in the Report Header.
+	1. Select TextBox in the Report Header.
 	1. Click on the ellipses (...) beside its `Value` property in the Property editor. This opens the `Edit Value` dialog.
 	1. Select the `Report Parameters` from the list on the left.
 	1. Double-click on the `Category Value` from the middle list.
@@ -65,9 +65,9 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 		1. Navigate to the main report.
 		1. Select its WebServiceDataSource from the `Explorer` tab of the Menu.
-		1. Invoke the `Context menu` by clicking on the ellipses (...) and select `Save As Shared Data Source`.
+		1. Invoke the `Context menu` by clicking on the ellipses (...) and selecting `Save As Shared Data Source`.
 		1. In the opened `Create Shared Data Source` dialog name the component `productSalesData` and check the `Replace data source in report` to let both reports use the SharedDataSource that is stored in the Assets manager.
-		1. Click `Save` and ensure the webServiceDataSource1 hab been moved from `Inline Data Sources` to `Shared Data Sources`.
+		1. Click `Save` and ensure the `webServiceDataSource1` has been moved from `Inline Data Sources` to `Shared Data Sources`.
 
 	1. Navigate back to the child report.
 
@@ -80,7 +80,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 	1. Search for `pie` to bring up the `Configure Pie Chart` pane on the right side of the web report designer.
 	1. Select the `Data Source`.
 	1. Drag the `ProductSubcategory` field to the `Series` box. This way, we will create the Pie Chart slices from the Product SubCategories.
-	1. Drag the `LineTotal` into the `Values` box. The aggreagate function `Sum` is automatically applied to the field, so the Values of each Pie slice will be the sum of `LineTotal`.
+	1. Drag the `LineTotal` into the `Values` box. The aggregate function `Sum` is automatically applied to the field, so the Values of each Pie slice will be the sum of `LineTotal`.
 	1. Click `Create` and you should see a Pie Chart that contains all the data from the DataSource.
 	1. Since we want to see only the data for a specific category, we need to add a rule to filter the data based on the value of our report parameter.
 
@@ -88,7 +88,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 		1. Add as Expression `=Fields.ProductCategory`.
 		1. Select `Equal` as Operator.
 		1. For `Value` enter the value of the report parameter `= Parameters.Category.Value`.
-		1. You should see immediate update for the `Bikes` category since this is the parameter's default value.
+		1. You should see an immediate update for the `Bikes` category since this is the parameter's default value.
 
 	1. Format the Pie Chart:
 

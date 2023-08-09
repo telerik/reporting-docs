@@ -75,12 +75,50 @@ Our first goal is to create a new report within the Web Report Designer. It will
 		1. In the popped-up `Browse For Folder` dialog sele `Shared Data Sources` on the left and choose the `productSalesData.sdsx` file, which is our shared data source.
 		1. Click `Save` and ensure the `productSalesData1` component appears under the `Shared Data Sources`.
 
-1. Let's use the SharedDataSource to create our PieChart.
+1. Let's use the SharedDataSource to create our Pie Chart:
+
+	1. Search for `pie` to bring up the `Configure Pie Chart` pane on the right side of the web report designer.
+	1. Select the `Data Source`.
+	1. Drag the `ProductSubcategory` field to the `Series` box. This way, we will create the Pie Chart slices from the Product SubCategories.
+	1. Drag the `LineTotal` into the `Values` box. The aggreagate function `Sum` is automatically applied to the field, so the Values of each Pie slice will be the sum of `LineTotal`.
+	1. Click `Create` and you should see a Pie Chart that contains all the data from the DataSource.
+	1. Since we want to see only the data for a specific category, we need to add a rule to filter the data based on the value of our report parameter.
+
+		1. Search for `filters` and add a new filter to the Graph.
+		1. Add as Expression `=Fields.ProductCategory`.
+		1. Select `Equal` as Operator.
+		1. For `Value` enter the value of the report parameter `= Parameters.Category.Value`.
+		1. You should see immediate update for the `Bikes` category since this is the parameter's default value.
+
+	1. Format the Pie Chart:
+
+		1. Hide the `Title`.
+		1. Update the series by adding DataPointLabelConnectors:
+
+			* Check the `DataPointLabelConnectorStyle` > `Visible` property.
+			* Set `DataPointLabelOffset` to `5mm`.
+			* For `DataPointLabelAlignment` use `OutsideColumn` from the dropdown.
+			* Click `Save`.
+
+	1. The live preview should display the updated Pie Chart
+
+1. Connect the main and the child report with the Drillthrough Action:
+
+	1. Navigate to the main report.
+	1. Search for `category group` in the Search box and select the `productCategoryGroup1`.
+	1. In the `Edit Item` dialog go to `Action` and select `Navigate to report` from the dropdown.
+	1. Set the _Report source_ `Type` to __UriReportSource__.
+	1. Open the Assets manager from the icon next to `Uri` and select the `SalesBySubcategory.trdp` report from the `Demo` folder.
+	1. Add a new Parameter to the `Parameters` collection of the _Report source_ with `Name` corresponding to the child report's parameter, i.e. `Category`, and `Value` being the value of the current product category field, i.e. `=Fields.ProductCategory`.
+	1. Click `Save` to preserve the configuration.
+
+1. Test how the reports interact:
+
+	1. Navigate from the main report to the child one by clicking on a particular Product Category
+	1. Navigate back to the main report from the child one through the [Viewer's Toolbar]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#toolbar) button __Navigate back in history__.
+
 
 The entire process is described in the YouTube video tutorial [Getting Started with the Web Report Designer: Part 2](https://www.youtube.com/watch?v=DXKlgq-MYIU).
-
-
-
 
 ## See Also
 

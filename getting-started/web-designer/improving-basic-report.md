@@ -157,7 +157,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 	1. Navigate from the main report to the child report by clicking on a particular Product Category in the Column Chart.
 	1. Navigate back to the main report from the child report through the [Viewer's Toolbar]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#toolbar) button __Navigate back in history__.
 
-	[The child report in the web designer preview opened by clicking on the 'Accessories' category of the column chart in the main report.](images/child-report-opened-by-clicking-on-accessories-category-in-main-report.png)
+	![The child report in the web designer preview opened by clicking on the 'Accessories' category of the column chart in the main report.](images/child-report-opened-by-clicking-on-accessories-category-in-main-report.png)
 
 The entire process is described in the YouTube video tutorial [Getting Started with the Web Report Designer: Part 2](https://www.youtube.com/watch?v=DXKlgq-MYIU).
 

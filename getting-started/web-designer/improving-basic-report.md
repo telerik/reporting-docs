@@ -22,7 +22,7 @@ In this step-by-step tutorial, we will improve the basic report created in the p
 
 Our first goal is to create a new report within the Web Report Designer. It will serve as a child report for displaying the detailed data for the selected category from the main report we created previously:
 
-1. Go to the main toolbar `Menu` and select `New Report`. The `Create Report` dialog opens and lets you:
+1. Go to the main toolbar `Menu` and select `New Report`. The `Create Report` dialog opens:
 
 	1. Let's name the report `SalesBySubcategory`.
 	1. Let it be a `TRDP` report as the main one.
@@ -30,12 +30,12 @@ Our first goal is to create a new report within the Web Report Designer. It will
 	1. Click Save to apply the settings.
 
 1. We'll remove the Page Header and Footer sections again.
-1. We can add the same [Report Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) as in the main report:
+1. We can add the same [Report Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) as in the main report. We will copy it from the latter:
 
 	1. Search for the `report header` in the Search box and add it to the child report.
 	1. If necessary, increase its height.
 	1. Go to the main report and select PictureBox and TextBox from its Report Header.
-	1. Open the `Context menu` by clicking on the ellipses (...) beside the selected items in the `Explorer` tab of the Menu. Select `Copy` to copy the items to the clipboard.
+	1. Open the `Context menu` by clicking on the ellipses (...) beside the selected items in the `Explorer` tab of the Menu. Select `Copy` to copy the items.
 
 		![Choosing 'Copy' command from the context menu of the selected items in the main report.](images/copy-report-header-items-from-main-report.png)
 
@@ -43,7 +43,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 		![Choosing 'Paste' command from the context menu of the Report Header in the child report.](images/paste-copied-items-to-child-report-header.png)
 
-	1. Adjust their position, if necessary.
+	1. Adjust the pasted items' position, if necessary.
 
 1. Next, we'll [add a Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) that will receive the Category from the parent report.
 
@@ -51,7 +51,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 	1. Search for the `report parameter` in the Search box.
 	1. Select `+` to open the `Add New Item` dialog that lets you add a new parameter to the collection.
-	1. Let's name the parameter `Category` and use the same for the `Text` property that is used as a label.
+	1. Let's name the parameter `Category` and use the same for the `Text` property. The latter represents the label in the parameter's editor.
 	1. We'll add the default `Value` _Bikes_ as we know this category exists.
 	1. Mark the parameter as `Visible` in the user interface.
 	1. Click `Save` to preserve the new parameter settings.
@@ -60,7 +60,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 1. Let's update the report title to display the selected category available in the new Report Parameter:
 
-	1. Select TextBox in the Report Header.
+	1. Select the TextBox in the Report Header.
 	1. Click on the ellipses (...) beside its `Value` property in the Property editor. This opens the `Edit Value` dialog.
 	1. Select the `Report Parameters` from the list on the left.
 	1. Double-click on the `Category Value` from the middle list.
@@ -93,11 +93,11 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 			![Adding an existing shared data source to the child report from the Assets manager.](images/add-existing-shared-data-source.png)
 
-		1. In the popped-up `Browse For Folder` dialog sele `Shared Data Sources` on the left and choose the `productSalesData.sdsx` file, which is our shared data source.
+		1. In the popped-up `Browse For Folder` dialog select `Shared Data Sources` on the left and choose the `productSalesData.sdsx` file, which is our shared data source that we just saved from the main report.
 
 			![Selecting an existing shared data source SDSX file from the 'Browse For Folder' dialog in the child report.](images/select-existing-shared-data-source.png)
 
-		1. Click `Save` and ensure the `productSalesData1` component appears under the `Shared Data Sources`.
+		1. Click `Save` and ensure the `productSalesData1` component appears under the `Shared Data Sources` of the child report.
 
 1. Let's use the SharedDataSource to create our Pie Chart:
 
@@ -136,7 +136,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 		![Styling the pie chart series data point labels in the child report.](images/pie-chart-series-datapointlabelalignment.png)
 
-	1. The live preview should display the updated Pie Chart
+	1. The live preview should display the updated Pie Chart in the design view of the Web Report Designer.
 
 	![The final pie chart in design time view of the child report.](images/design-view-child-report.png)
 

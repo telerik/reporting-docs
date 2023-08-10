@@ -41,7 +41,11 @@ In the table, the first column header is the value of the first parameter `= Par
 
 Correspondingly, the value of the detail row in the first column is set with the [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) `= Fields(Parameters.Column1.Value)`, for the second column of the detail row  `= Fields(Parameters.Column2.Value)`, etc. Note that the expressions utilize the [Report Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions%}) `Fields(name)` with an argument the corresponding parameter value. This is equivallent to `=Fields.[ColumnName]`.
 
-To hide/show the table column, we may introduce a [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) or [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `Visible` property of the columns. The corresponding Expression should check whether the corresponding parameter is Null, for example the Conditional Formatting Filtering Rule may have as _Expression_ `= Parameters.Column5.Value; _Operator_ `<>` and _Value_ `Null`.
+To hide/show the table column, we may introduce a [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) or [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `Visible` property of the columns. The corresponding Expression should check whether the corresponding parameter is Null, for example the Conditional Formatting Filtering Rule may have as:
+
+* _Expression_ `= Parameters.Column5.Value`
+* _Operator_ `<>`
+* _Value_ `Null`
 
 The above setting will let the user switch/hide/show the table columns directly, with the Report Parameters by selecting a column name for the corresponding position.
 

@@ -23,22 +23,43 @@ res_type: kb
 
 ## Description
 
+A common requirement is to be able to switch the order of table columns, or to be able to hide/show them based on user choice.
+
+In this article we will demonstate how you may achieve this functionality entirely inside the report definition.
 
 ## Solution
 
-I have attached a sample report that demonstrates one of the possible approaches. All the required functionality is inside the report definition. Let me explain the idea.
+### Basic Approach with Report Parameters
 
-I introduced 5 parameters in the report, which correspond to the columns in the table. Each parameter takes the name of one of the columns. The first parameter holds the name of the first column, the second parameter - the name of the second column, etc.
+Let's [introduce a new Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) for each table column. Each parameter will hold the name of one of the table columns. The first parameter will hold the name of the first column, the second parameter - the name of the second column, etc. That said, the Report Parameters will set the order of the table columns. Let's name the parameters `Column1`, `Column2`, etc.
 
-In the table, the first column header is the value of the first parameter, and so on. The value of the detail row in the first column is set with the Expression:
+We will use a [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%}) to set the `AvailableValues` of the parameters. It will have a single column with table column names.
 
-`= Fields(Parameters.Column1.Value)`
+Let's also make the parameters `Nullable`. This will let us hide the corresponding column when the parameter that represents it is Null.
 
-Note that the above expression utilizes the Report Functions Fields with an argument the first parameter value.
+In the table, the first column header is the value of the first parameter `= Parameters.Column1.Value`, the second column header is the value of the second parameter `= Parameters.Column2.Value`and so on
 
-You may switch/hide/show the table columns directly, with the Report Parameters by selecting a column name for the corresponding position.
+Correspondingly, the value of the detail row in the first column is set with the [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) `= Fields(Parameters.Column1.Value)`, for the second column of the detail row  `= Fields(Parameters.Column2.Value)`, etc. Note that the expressions utilize the [Report Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions%}) `Fields(name)` with an argument the corresponding parameter value. This is equivallent to `=Fields.[ColumnName]`.
 
-You may also use arrows with Navigate to Report action to render the same report with reordered parameters. It simulates switching columns.
+To hide/show the table column, we may introduce a [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) or [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `Visible` property of the columns. The corresponding Expression should check whether the corresponding parameter is Null, for example the Conditional Formatting Filtering Rule may have as _Expression_ `= Parameters.Column5.Value; _Operator_ `<>` and _Value_ `Null`.
+
+The above setting will let the user switch/hide/show the table columns directly, with the Report Parameters by selecting a column name for the corresponding position.
+
+### Enhancing the Report UI with Navigate to Report Actions
+
+Lets try to improve the User Experienc by adding arrows in the columns that will let us move the column to the right or to the left.
+
+We need to replace the TextBoxes in the table headers with [Panels]({%slug telerikreporting/designing-reports/report-structure/panel%}) that may host multiple report items. More specifically, we need a TextBox with the column name, and one or two arrows to move the column to the right/left.
+
+We will use [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) for the arrows and will set their `Action` property to [Navigate to Report action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}). The idea is to render the same report with reordered parameters, which will simulate switching table columns order. For that reason, we set the `URI` of the action's `ReportSource` to the same report file, and in the `Parameters` collection add the same parameter values, with two neighbour values switched, so that the report gets rendered with switched table columns.
+
+For example, the third column right arrow should make the currently third column fourth, and vice versa, hence we need to set the `ReportSource.Parameters` as follows:
+
+* (preserved) ReportSource parameter `Column1` to have the value `= Parameters.Column1.Value`
+* (preserved) ReportSource parameter `Column2` to have the value `= Parameters.Column2.Value`
+* (switched) ReportSource parameter `Column3` to have the value `= Parameters.Column4.Value`
+* (switched) ReportSource parameter `Column4` to have the value `= Parameters.Column3.Value`
+* (preserved) ReportSource parameter `Column5` to have the value `= Parameters.Column5.Value`
 
 ## Sample
 

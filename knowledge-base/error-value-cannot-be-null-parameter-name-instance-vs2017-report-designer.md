@@ -1,11 +1,10 @@
 ---
-title: Value cannot be null. Parameter name instance. when trying to open the Report Designer in Visual Studio 2017 or newer
+title: Cannot open report in Visual Studio Report Designer
 description: "Learn how to fix the error 'Value cannot be null. Parameter name instance.' in Visual Studio 2017 or newer when trying to open the VS Report Designer."
 type: troubleshooting
-page_title: Cannot open report in Visual Studio Report Designer
+page_title: Value cannot be null. Parameter name instance. when trying to open the Report Designer in Visual Studio 2017 or newer
 slug: error-value-cannot-be-null-parameter-name-instance-vs2017-report-designer
-position: 
-tags: 
+tags: visual,studio,designer,update,upgrade
 ticketid: 1156994
 res_type: kb
 ---
@@ -21,7 +20,9 @@ res_type: kb
 
 ## Description
 
-When attempting to bring up the Report Designer in  Visual Studio 2017 or later, an error with message `Value cannot be null. Parameter name: instance` is thrown. The stack trace of the error is:
+When attempting to bring up the Report Designer in `Visual Studio 2017` or later, an error with the message `Value cannot be null. Parameter name: instance` is thrown. 
+
+## Error Message
 
 ````
 at System.ComponentModel.TypeDescriptor.AddAttributes(Object instance, Attribute[] attributes)
@@ -37,13 +38,19 @@ at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.P
 at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.DeferredLoadHandler.Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferDataEvents.OnLoadCompleted(Int32 fReload)
 ````
 
-## Solution
+## Solutions
 
-[The error]({%slug report-cannot-be-built-and-opened-in-vs-report-designer%}) indicates that the project uses a version of __Telerik Reporting__ that is not registered in the corresonding Visual Studio. This might be due to Telerik Reporting being installed before installation of the Visual Studio.
+[The error]({%slug report-cannot-be-built-and-opened-in-vs-report-designer%}) indicates that the project uses a version of __Telerik Reporting__ that is not registered in the corresponding Visual Studio. This might be due to Telerik Reporting being installed before the installation of the Visual Studio.
 
-You should re-install Telerik Reporting with support for the particular Visual Studio version and edition.
+### Solution 1 - Upgrade Wizard
 
-You can download MSI file to install Telerik Reporting as described in the [How to download Telerik Reporting installer](%slug telerikreporting/installation%}#using-the-msi-file). After downloading the installer, our recommendation is to run the MSI file per Visual Studio edition:
+1. Find the Telerik Reporting extension in the **Visual Studio extensions** window.
+1. Check the version of the currently installed Telerik Reporting extension
+1. Use the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) to upgrade/downgrade the project to the version of the extension.
+
+## Solution 2 - Re-install Telerik Reporting
+
+You can download `MSI` file to install Telerik Reporting as described in the [How to download Telerik Reporting installer]({%slug telerikreporting/installation%}#using-the-msi-file). After downloading the installer, our recommendation is to run the MSI file per Visual Studio edition:
 
 * VS 2017 and VS 2019
 

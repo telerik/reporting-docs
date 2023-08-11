@@ -1,5 +1,5 @@
 ---
-title: Cannot open report in Visual Studio Report Designer
+title: Cannot Open a Report in Visual Studio Report Designer
 description: "Learn how to fix the error 'Value cannot be null. Parameter name instance.' in Visual Studio 2017 or newer when trying to open the VS Report Designer."
 type: troubleshooting
 page_title: Value cannot be null. Parameter name instance. when trying to open the Report Designer in Visual Studio 2017 or newer
@@ -48,9 +48,9 @@ at Microsoft.VisualStudio.Design.Serialization.CodeDom.VSCodeDomDesignerLoader.D
 1. Check the version of the currently installed Telerik Reporting extension
 1. Use the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) to upgrade/downgrade the project to the version of the extension.
 
-## Solution 2 - Re-install Telerik Reporting
+### Solution 2 - Re-install Telerik Reporting
 
-You can download `MSI` file to install Telerik Reporting as described in the [How to download Telerik Reporting installer]({%slug telerikreporting/installation%}#using-the-msi-file). After downloading the installer, our recommendation is to run the MSI file per Visual Studio edition:
+You can download the `MSI` file to install Telerik Reporting as described in the [How to download Telerik Reporting installer]({%slug telerikreporting/installation%}#using-the-msi-file). After downloading the installer, our recommendation is to run the MSI file per Visual Studio edition:
 
 * VS 2017 and VS 2019
 

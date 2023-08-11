@@ -1,5 +1,5 @@
 ---
-title: Setting up and Creating Report
+title: Setting up Designer and Creating Basic Report
 page_title: Embedding the Web Report Designer in .NET 6 and Creating Your First Report
 description: "Learn how to set up the Telerik Web Report Designer in .NET 6 applications via the Visual Studio Item Templates and how to create a report with Logo and Graph in this step by step tutorial."
 slug: telerikreporting/getting-started/web-designer/set-up-and-create-basic-report
@@ -135,7 +135,9 @@ Our next goal is to create a brand new report with the just configured Web Repor
 
 ## See Also
 
-* YouTube video tutorial [Getting Started with the Web Report Designer: Part 1](https://www.youtube.com/watch?v=L-utkcB8-5c)
+* [Video tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
+* [Video tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
+* [Implement a Common Master-Detail Report Scenario]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
 * [Web Report Designer](%{slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Setting up the Web Report Designer in .NET and .NET Core 3.1 applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

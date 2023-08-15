@@ -1,11 +1,10 @@
 ---
 title: Integrate the Web Report Designer in Angular
 description: "Learn how to embed the Telerik Reporting Web Report Designer in an Angular application in this step-by-step tutorial."
-type: troubleshooting
+type: how-to
 page_title: Displaying the Web Report Designer in Angular application
 slug: display-web-report-designer-in-angular-application
-position: 
-tags: 
+tags: angular,web,designer
 ticketid: 1462933
 res_type: kb
 ---
@@ -35,7 +34,7 @@ With the [Telerik® Reporting R3 2019](https://www.telerik.com/support/whats-new
 
 ## Solution
 
-Here are the major steps for integrating the jQuery-based Telerik Web Report Designer and HTML5 Report Viewer in Angular application:
+Here are the major steps for integrating the jQuery-based Telerik Web Report Designer and HTML5 Report Viewer in an Angular application:
 
 * Add a reference to all required [Telerik Web Report Designer resources]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}#prerequisites) in the main html page of the application. In the demo project linked below, this is `index.html`:
 
@@ -106,9 +105,11 @@ To run the example:
 
 Several things that you should keep in mind when using Telerik Web Report Designer in your projects.
 
-1.[Telerik Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) does not support theming. The Web Designer is built to use a customized version of Kendo SASS Default theme. The Designer loads all styles that are required by itself. There is no additional option that could prevent it. The required styles are added to the body header of the document. If the application uses other Kendo theme, there will be conflicts between the two themes.
-1. Because the Telerik Web Report Designer loads all required styles, when the designer widget is created, and in the latest version there is no check, if the resources are already loaded, you will need to clean up the duplicated resources. See designer.component.ts in the demo project for more details.
-1. Telerik Web Report Designer could not be integrated in angular application together with Angular Telerik Report Viewer. That is why this article shows how to use the Telerik Web Report Designer in angular application with jQuery-based HTML5 Telerik Report Viewer.
+1.[Telerik Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) does not support theming. The Web Designer is built to use a customized version of the Kendo SASS Default theme. The Designer loads all styles that are required by itself. There is no additional option that could prevent it. The required styles are added to the body header of the document. If the application uses another Kendo theme, there will be conflicts between the two themes.
+
+1. Because the Telerik Web Report Designer loads all required styles when the designer widget is created, and in the latest version there is no check, if the resources are already loaded, you will need to clean up the duplicated resources. See `designer.component.ts` in the demo project for more details.
+
+1. Telerik Web Report Designer could not be integrated into an angular application together with Angular Telerik Report Viewer. That is why this article shows how to use the Telerik Web Report Designer in an angular application with jQuery-based HTML5 Telerik Report Viewer.
 
 ## See Also
 

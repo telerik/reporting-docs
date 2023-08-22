@@ -1,6 +1,6 @@
 ---
 title: Select page of TIFF image
-description: "Learn how to render a certain page of a mulri-page TIFF file using a custom user function in Telerik Reporting."
+description: "Learn how to render a certain page of a multi-page TIFF file using a custom user function in Telerik Reporting."
 type: how-to
 page_title: Choose page to render from a TIFF
 slug: select-page-of-tiff-image

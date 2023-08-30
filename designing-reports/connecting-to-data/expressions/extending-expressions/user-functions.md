@@ -21,7 +21,7 @@ There are two ways to utilize user functions:
 
 	`= ResolveUrl("~/Images/Logo.jpg")`
 
-1. When any __public static__ (__Public Shared__ in VB.NET) method reside in a loaded assembly. In this case they can be invoked from an expression by their fully qualified name, including the full namespace and the name of the type they belong to, and specifying the necessary parameters in the braces:
+1. When any __public static__ (__Public Shared__ in VB.NET) method reside in a loaded assembly. In this case, they can be invoked from an expression by their fully qualified name, including the full namespace and the name of the type they belong to, and specifying the necessary parameters in the braces:
 
 	__Invoking a User Function from loaded assembly__
 
@@ -42,11 +42,11 @@ Attributes are attached to a component by preceding the component with a referen
 
 __FunctionAttribute__
 
-The FunctionAttribute allows you to specify metadata for user function. This metadata describes the Category, Name, Namespace, Description and whether this function should be visible (IsVisible) for the reporting engine or not. If it is visible, it would be displayed in the Edit Expression Dialog so you can utilize it in an Expression.
+The FunctionAttribute allows you to specify metadata for user functions. This metadata describes the Category, Name, Namespace, Description, and whether this function should be visible (IsVisible) for the reporting engine or not. If it is visible, it will be displayed in the Edit Expression Dialog so you can utilize it in an Expression.
 
 __DescriptionAttribute__
 
-The DescriptionAttribute allows you to specify a description for the user function parameters. The description would be displayed in the Edit Expression Dialog when you select a User Function.
+The DescriptionAttribute allows you to specify a description for the user function parameters. The description will be displayed in the Edit Expression Dialog when you select a User Function.
 
 __Example:__
 
@@ -59,7 +59,7 @@ To invoke this function, set the following expression:
 
 ## Extending Reporting Engine with User Functions
 
-If your custom user functions are linked from an external assembly, in order the designer to recognize them, you will have to [extend the configuration of the start application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).
+If your custom user functions are linked from an external assembly, in order for the designer to recognize them, you will have to [extend the configuration of the start application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).
 
 For the Visual Studio Report Designer this is the 'deveng.exe.config' file that resides in 'C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE' by default (it is recommended to create a backup copy before modifying it). You can type the expression by specifying the full assembly qualified name of the function and passing a parameter of the expected type.
 

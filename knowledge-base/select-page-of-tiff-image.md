@@ -30,7 +30,7 @@ By default, the [PictureBox]({%slug telerikreporting/designing-reports/report-st
 In order to render a certain page from the TIFF file, a [custom user function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that selects that image is required. The function may look as bellow:
 
 ````CSharp
-public static Image GetPageFromTiff(string path, int page)
+		public static Image GetPageFromTiff(string path, int page)
 		{
 			Image tiffImage;
 			List<Image> images;

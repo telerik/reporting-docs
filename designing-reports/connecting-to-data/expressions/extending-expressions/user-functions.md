@@ -17,13 +17,13 @@ There are two ways to utilize user functions:
 
 1. When any __public static__ (__Public Shared__ in VB.NET) method is part of the current report class. In this case they can be invoked from an expression by their name, specifying the necessary parameters in the braces:
 
-	__Invoking an User Function from the same report class__
+	__Invoking a User Function from the same report class__
 
 	`= ResolveUrl("~/Images/Logo.jpg")`
 
-1. When any __public static__  (__Public Shared__  in VB.NET) method reside in a loaded assembly. In this case they can be invoked from an expression by their fully qualified name, including the full namespace and the name of the type they belong to, and specifying the necessary parameters in the braces:
+1. When any __public static__ (__Public Shared__ in VB.NET) method reside in a loaded assembly. In this case they can be invoked from an expression by their fully qualified name, including the full namespace and the name of the type they belong to, and specifying the necessary parameters in the braces:
 
-	__Invoking an User Function from loaded assembly__
+	__Invoking a User Function from loaded assembly__
 
 	`= Telerik.Reporting.Report.Report1.ResolveUrl("~/Images/Logo.jpg")`
 
@@ -38,7 +38,7 @@ __Example:__
 
 You can provide descriptive metadata about your user functions through attributes. Attributes are specialized classes that are applied to code elements. At compile time, attributes are emitted into metadata that is available to the common language runtime and reporting engine.
 
-Attributes are attached to a component by preceding the component with a reference to the attribute and providing any relevant parameters. This call to the constructor is placed within angle brackets << in Visual Basic and regular brackets [] in C#.
+Attributes are attached to a component by preceding the component with a reference to the attribute and providing any relevant parameters. This call to the constructor is placed within angle brackets `<>` in Visual Basic and regular brackets `[]` in C#.
 
 __FunctionAttribute__
 
@@ -46,7 +46,7 @@ The FunctionAttribute allows you to specify metadata for user function. This met
 
 __DescriptionAttribute__
 
-The DescriptionAttribute allows you to specify a description for the user function parameters. The description would be displayed in the Edit Expression Dialog when you select an user function.
+The DescriptionAttribute allows you to specify a description for the user function parameters. The description would be displayed in the Edit Expression Dialog when you select a User Function.
 
 __Example:__
 

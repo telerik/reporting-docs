@@ -46,7 +46,7 @@ The `FunctionAttribute` allows you to specify metadata for user functions. This 
 
 __DescriptionAttribute__
 
-The DescriptionAttribute allows you to specify a description for the user function parameters. The description will be displayed in the Edit Expression Dialog when you select a User Function.
+The `DescriptionAttribute` allows you to specify a description for the user function parameters. The description will be displayed in the _Edit Expression Dialog_ when you select a User Function.
 
 __Example:__
 

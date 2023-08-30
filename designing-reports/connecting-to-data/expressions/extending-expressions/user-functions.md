@@ -1,7 +1,7 @@
 ---
 title: Custom User Functions
 page_title: Custom User Functions Explained
-description: "Learn how to create, incorporate and use custom User Functions in expressions in Telerik Reporting."
+description: "Learn how to create, incorporate, and use custom User Functions in expressions in Telerik Reporting."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions
 tags: user,functions,expressions,create,report
 published: True
@@ -12,6 +12,8 @@ previous_url: /expressions-user-functions
 # Custom User Functions Overview
 
 User functions allow you to extend the default behavior of the Telerik Reporting engine. User functions are __public static__ (__Public Shared__ in VB.NET) methods that should always return a value and can take an arbitrary number of input parameters.
+
+> Optional parameters are not supported. The Reporting engine uses reflection to discover and invoke the custom user functions. This requires exact match between the number and the type of the function parameters.
 
 There are two ways to utilize user functions:
 

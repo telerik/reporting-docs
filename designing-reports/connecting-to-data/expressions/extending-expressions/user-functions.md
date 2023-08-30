@@ -42,7 +42,7 @@ Attributes are attached to a component by preceding the component with a referen
 
 __FunctionAttribute__
 
-The FunctionAttribute allows you to specify metadata for user functions. This metadata describes the Category, Name, Namespace, Description, and whether this function should be visible (IsVisible) for the reporting engine or not. If it is visible, it will be displayed in the Edit Expression Dialog so you can utilize it in an Expression.
+The `FunctionAttribute` allows you to specify metadata for user functions. This metadata describes the _Category_, _Name_, _Namespace_, _Description_, and whether this function should be visible (_IsVisible_) for the Reporting Engine or not. If it is visible, it will be displayed in the _Edit Expression Dialog_ so you can utilize it in an Expression.
 
 __DescriptionAttribute__
 

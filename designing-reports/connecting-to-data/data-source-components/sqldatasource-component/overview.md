@@ -8,6 +8,7 @@ published: True
 position: 0
 previous_url: /SqlDataSource
 ---
+
 <style>
 table th:first-of-type {
 	width: 30%;
@@ -22,7 +23,7 @@ table th:nth-of-type(3) {
 
 # SqlDataSource Component Overview
 
-The `SqlDataSource` component enables data items to display data located in a relational database, including __Microsoft SQL Server__ and __Oracle__ databases, as well as __OLE DB__ and __ODBC__ data sources, using little or no code. Using `SqlDataSource` allows you to access and display data in a report without using `ADO.NET` classes directly. You provide a connection string to connect to the database and define the SQL statement or the stored procedure to retrieve the data. At run time, `SqlDataSource` automatically opens the database connection, executes the SQL statement or stored procedure, returns the selected data, and then closes the connection. The SqlDataSource component would list and work with any [ADO.NET provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview) that is correctly registered on the device. The list with ADO.NET providers is taken as described in [Obtaining the DbProviderFactory MSDN article](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory) and lists all of the provider factories registered in the machine.config.
+The `SqlDataSource` component enables data items to display data located in a relational database, including __Microsoft SQL Server__ and __Oracle__ databases, as well as __OLE DB__ and __ODBC__ data sources, using little or no code. Using `SqlDataSource` allows you to access and display data in a report without using `ADO.NET` classes directly. You provide a connection string to connect to the database and define the SQL statement or the stored procedure to retrieve the data. At run time, `SqlDataSource` automatically opens the database connection, executes the SQL statement or stored procedure, returns the selected data, and then closes the connection. The SqlDataSource component would list and work with any [ADO.NET provider](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ado-net-overview) that is correctly registered on the device. The list with ADO.NET providers is taken as described in [Obtaining the DbProviderFactory MSDN article](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory) and lists all of the provider factories registered in the `machine.config`.
 
 ## Supported providers
 
@@ -35,7 +36,7 @@ The `SqlDataSource` component uses `ADO.NET` classes to interact with any databa
 |OleDb Data Provider|System.Data.OleDb|.Net Framework Data Provider for OleDb|
 |Odbc Data Provider|System.Data.Odbc|.Net Framework Data Provider for Odbc|
 |MySQL Data Provider|MySql.Data.MySqlClient|.Net Framework Data Provider for MySQL|
-|Oracle Data Provider for.NET|Oracle.DataAccess.Client|Oracle Data Provider for.NET|
+|Oracle Data Provider for .NET|Oracle.DataAccess.Client|Oracle Data Provider for .NET|
 
 ## Supported developer platforms
 

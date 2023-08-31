@@ -141,7 +141,7 @@ Me.PictureBox6.Value = "https://www.mysite.com/images/img1.gif" 'absolute URL
 
 ## Clipping, Rendering, and Positioning
 
-The clipping and positioning of an image in the display area of the PictureBox item is controlled by its `Sizing` property.
+The clipping and positioning of an image in the display area of the PictureBox item is controlled by its `Sizing` and `ImageAlignment` properties.
 
 The following table lists the `Sizing` property modes.
 
@@ -151,9 +151,25 @@ The following table lists the `Sizing` property modes.
 |`Center`|The image is displayed in the center of the PictureBox. If the image is larger than the PictureBox, the outside edges are clipped.|
 |`Normal`|The image is placed in the upper-left corner of the PictureBox. The image is clipped if it's larger than the PictureBox which contains it.|
 |`Stretch`|The image within the PictureBox is stretched or shrunk as appropriate to fit the size of the PictureBox.|
-|`ScaleProportional`|The image is sized proportionally (without clipping), so that it's best fitted to the PictureBox.<br/> If the height and width ratio of the PictureBox is the same as the ratio of the image, it will be resized to exactly fit into the PictureBox. Otherwise, the closest fitting side (height or width) of the image will be sized to the item and the other side (height or width) of the image sized proportionally (leaving empty space).|
+|`ScaleProportional`|The image is sized proportionally (without clipping) so that it's best fitted to the PictureBox.<br/> If the height and width ratio of the PictureBox is the same as the ratio of the image, it will be resized to exactly fit into the PictureBox. Otherwise, the closest fitting side (height or width) of the image will be sized to the item and the other side (height or width) of the image sized proportionally (leaving empty space).|
 
-The PictureBox renders the image depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary. For example, if you are using an 120dpi image in your PictureBox with __Sizing__ set to `AutoSize` or `Normal` and the machine settings are set to `96dpi`, the image will look smaller due to the higher amount of pixels per inch. To properly resize the image, set its __Sizing__ to `Stretch` or `ScaleProportional`.
+The `ImageAlignment` property dictates the alignment of the image if it does not conform to the specified PictureBox size. *Not respected when the __Sizing__ property is set to __AutoSize__, __Center__, or __Stretch__.*
+The following table lists the `ImageAlignment` property modes.
+
+| Name | Description |
+| ------ | ------ |
+|`Auto`|Retains the original alignment of the __Normal__ and __ScaleProportional__ sizing modes.<br/>This is the default mode.|
+|`Center`|Aligns the image to the **center** of the PictureBox's **X-axis** and to the **center** of the PictureBox's **Y-axis**.|
+|`Left`|Aligns the image to the **left** of the PictureBox's **X-axis** and to the **center** of the PictureBox's **Y-axis**.|
+|`Top`|Aligns the image to the **center** of the PictureBox's **X-axis** and to the **top** of the PictureBox's **Y-axis**.|
+|`Right`|Aligns the image to the **right** of the PictureBox's **X-axis** and to the **center** of the PictureBox's **Y-axis**.|
+|`Bottom`|Aligns the image to the **center** of the PictureBox's **X-axis** and to the **bottom** of the PictureBox's **Y-axis**.|
+|`TopLeft`|Aligns the image to the **left** of the PictureBox's **X-axis** and to the **top** of the PictureBox's **Y-axis**.|
+|`TopRight`|Aligns the image to the **right** of the PictureBox's **X-axis** and to the **top** of the PictureBox's **Y-axis**.|
+|`BottomLeft`|Aligns the image to the **left** of the PictureBox's **X-axis** and to the **bottom** of the PictureBox's **Y-axis**.|
+|`BottomRight`|Aligns the image to the **right** of the PictureBox's **X-axis** and to the **bottom** of the PictureBox's **Y-axis**.|
+
+The PictureBox renders the image depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary. For example, if you are using a 120dpi image in your PictureBox with __Sizing__ set to `AutoSize` or `Normal` and the machine settings are set to `96dpi`, the image will look smaller due to the higher amount of pixels per inch. To properly resize the image, set its __Sizing__ to `Stretch` or `ScaleProportional`.
 
 The SVG images are rendered in vector format where the rendering extension supports it.
 

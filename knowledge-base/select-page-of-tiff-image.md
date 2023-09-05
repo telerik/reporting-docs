@@ -1,16 +1,16 @@
 ---
-title: Select page of TIFF image
+title: Select Page of TIFF Image
 description: "Learn how to render a certain page of a multi-page TIFF file using a custom user function in Telerik Reporting."
 type: how-to
 page_title: Choose page to render from a TIFF
 slug: select-page-of-tiff-image
-position: 
 tags: TIFF
 ticketid: 1620320
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -31,30 +31,30 @@ In order to render a certain page from the TIFF file, a [custom user function]({
 
 ````CSharp
 public static Image GetPageFromTiff(string path, int page)
-		{
-			Image tiffImage;
-			List<Image> images;
+{
+	Image tiffImage;
+	List<Image> images;
 
-			tiffImage = Image.FromFile(path);
-			images = GetAllPages(tiffImage);
+	tiffImage = Image.FromFile(path);
+	images = GetAllPages(tiffImage);
 
-			return images[page];
-		}
+	return images[page];
+}
 
-		private static List<Image> GetAllPages(Image multiPageImage)
-		{
-			List<Image> images = new List<Image>();
-			int count = multiPageImage.GetFrameCount(FrameDimension.Page);
-			for (int i = 0; i < count; i++)
-			{
-				multiPageImage.SelectActiveFrame(FrameDimension.Page, i);
-				MemoryStream byteStream = new MemoryStream();
-				multiPageImage.Save(byteStream, ImageFormat.Tiff);
-				images.Add(Image.FromStream(byteStream));
-				byteStream.Dispose();
-			}
-			return images;
-		}
+private static List<Image> GetAllPages(Image multiPageImage)
+{
+	List<Image> images = new List<Image>();
+	int count = multiPageImage.GetFrameCount(FrameDimension.Page);
+	for (int i = 0; i < count; i++)
+	{
+		multiPageImage.SelectActiveFrame(FrameDimension.Page, i);
+		MemoryStream byteStream = new MemoryStream();
+		multiPageImage.Save(byteStream, ImageFormat.Tiff);
+		images.Add(Image.FromStream(byteStream));
+		byteStream.Dispose();
+	}
+	return images;
+}
 ````
 
 Then, in the Report Designer, to call the function we need to provide a path to the TIFF image and the desired page to be displayed, for example:
@@ -66,4 +66,3 @@ Then, in the Report Designer, to call the function we need to provide a path to 
 ## See Also
 
 * [Custom User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
-

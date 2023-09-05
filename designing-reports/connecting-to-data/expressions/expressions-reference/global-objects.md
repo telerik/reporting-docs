@@ -63,7 +63,7 @@ The current processing item in which context the expression is evaluated. The ob
 
 The ReportItem is an object passed from each item to its children. The `ReportItem.DataObject` in particular holds the data of the parent item, which makes it available to its children. If the parent item is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) with groups, only the group data is passed as `ReportItem.DataObject` to the corresponding groups and the items within these groups.
 
-When the child is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), it passes as `ReportItem.DataItem` its own data to its children. If the child isn't a data item and doesn't have a DataSource, it passes the `ReportItem.DataObject` received from its parent also to its children.
+When the child is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), it passes as `ReportItem.DataObject` its own data to its children. If the child isn't a data item and doesn't have a DataSource, it passes the `ReportItem.DataObject` received from its parent also to its children.
 
 For example, the `Fields` from a Table DataSource are passed as `ReportItem.DataObject` to its cells' items, e.g. TexBoxes. Therefore, in these no-data items, the Expression `=Fields.fieldName` is equivalent to the Expression `=ReportItem.DataObject.fieldName`.
 

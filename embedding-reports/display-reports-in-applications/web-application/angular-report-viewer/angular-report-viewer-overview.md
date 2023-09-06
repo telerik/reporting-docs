@@ -32,7 +32,7 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 1. Required JavaScript libraries:
 
 	+ [jQuery 3.2.1+](https://jquery.com/download/)
- 	+ Node.js - The required version will depend on the version of the Angular project - [Angular versions under active support](https://angular.io/guide/versions)
+ 	+ [Node.js](https://nodejs.org/) - The required version will depend on the version of the Angular project - [Angular versions under active support](https://angular.io/guide/versions)
 
 1. The [Angular Report Viewer package](https://www.npmjs.com/package/@progress/telerik-angular-report-viewer) requires the following peer dependencies:
 

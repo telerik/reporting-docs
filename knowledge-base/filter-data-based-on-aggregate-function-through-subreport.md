@@ -38,21 +38,21 @@ Aggregates may be used on the group filtering level, however, this will take int
 
 ## Solution
 
-Let's use a [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) in the [Report Group Header or Footer]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) instead of a Table. We will bind its DataSource to its parent DataSource, which is the group data. The idea is to apply the filtering on the value of `Fields.Type` in the subreport and pass different DataSource with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to the Tables that are going to represent each case.
+Let's use a [SubReport]({%slug telerikreporting/designing-reports/report-structure/subreport%}) in the [Report Group Header or Footer]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}) instead of a Table. We will bind its DataSource to its parent DataSource, which is the group data. The idea is to apply the filtering by the value of `Fields.Type` in the subreport and pass different DataSources with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to different Tables that are going to represent each case.
 
-We simulate the filtering with aggregate functions with a Binding for the inner [Data Items']({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) DataSources.
+We simulate the filtering with an aggregate function with a Binding for the inner [Data Items']({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) DataSources.
 
-Here are the steps for implementation
+Here are the sample steps for implementation:
 
-1. Add `SubReport` in the Report Group Header and use Bindings to set its DataSource to `ReportItem.DataObject`. 
-1. Create a new report and use it in the ReportSource of the main report. 
+1. Add a `SubReport` item in the Report Group Header and use Bindings to set its DataSource to `ReportItem.DataObject`. 
+1. Create a new report definition and use it as a ReportSource of the main report SubReport. 
 1. Add a new `Filter` to the subreport with [Filtering Rule]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/filter-rules%}) to display only particular Types. 
 1. Set the subreport Report Header/Footer `CanShrink` to `True` to allow the section to shrink when some of its items are hidden. 
 1. Add 3 (three) tables in the subreport Report Header/Footer - one for each case. For each table configure the following properties: 
 
-	* Set `NoDataMessage` to a valid string or whitespace. 
+	* Set `NoDataMessage` to a valid string or whitespace. This is needed in order for the `NoDataStyle` to be applied.
 	* Set `NoDataStyle` > `Visible` to `False`. 
-	* Bind the `DataSource` of each table to the following Expressions: 
+	* Bind the `DataSource` of each table to the corresponding Expression: 
 
 		1. Case 1 `= If(CountDistinct(Fields.Name) >= 3, ReportItem.DataObject, Null)` 
 		1. Case 2 `= If(CountDistinct(Fields.Name) = 2, ReportItem.DataObject, Null)` 
@@ -60,11 +60,11 @@ Here are the steps for implementation
 
 	* Configure and Style each table as required. 
 
-With the above settings, for any number of names in the corresponding type only one table will have data and will be shown, simulating filtering based on an aggregate of its inner data.
+With the above settings, for any number of names (i.e. _Fields.Name_) in the corresponding type (i.e. _Fields.Type_) only one table will have data and will be shown, simulating filtering based on an aggregate of its inner data.
 
 ## Example
 
-Download the sample main report and subreport from our Reporting Samples GitHub repository: [FilteringWithSubReport](https://github.com/telerik/reporting-samples/tree/master/FilteringWithSubReport)
+Download the sample main report and subreport from our Reporting Samples GitHub repository: [FilteringWithSubReport](https://github.com/telerik/reporting-samples/tree/master/FilteringWithSubReport).
 
 ## See Also
 

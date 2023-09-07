@@ -23,6 +23,7 @@ res_type: kb
 ## Description
 
 Imagine the following scenario.
+
 We want to group a report, and in each group to show a table that is filtered to show only records with a specific field value, for example, set as a [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) value. We also want the table to be with a different layout depending on the number of records it will display. Here are the more specific requirements for clarity:
 
 We want to show all groups and a different table in each group:

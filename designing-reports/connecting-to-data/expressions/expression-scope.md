@@ -15,7 +15,10 @@ Expressions are evaluated against the data scopes. The data scopes are determine
 
 Data scopes are defined by the data items and groups. Data items contain all data from their data source and define the outermost scope. For example, the report item `Report1` defines the scope named `"Report1"` and contains all data filtered and ordered by the Filtering and Sorting criteria defined for the Report (if any). Data items can contain groups that partition the data by its grouping criteria into smaller sets and define the hierarchy of inner scopes. The detail groups or DetailSection define the innermost scope that contains a single data record from the corresponding data item.
 
-The data items change the data scope. This means that all report items on the same hierarchy level as the data item, including the latter, live in the scope of their parent. The data scope of the items within the data item is determined by the DataSource of the data item.
+The data items change the data scope. This means that all report items on the same report hierarchy level as the data item, including the latter, live in the scope of their parent. The data scope of the items within the data item is switched by the latter and is determined by the DataSource of the data item. This results in some data item specifics that you may observe on the surface of a data item:
+
+	* The `Fields` [Global Object]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}) represents the parent data scope when used with [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) and [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}). The inner fields of the data item DataSource cannot be accessed in them.
+	* The [Filters property]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/filtering-data/how-to-add-filtering-to-report%}) recognizes as `Fields` the fields from the current data item DataSource. In this property you may access the parent data scope through the `ReportItem.DataObject` Global Object.
 
 The report processor evaluates the expressions in a named scope or the default scope. The default scope depends on the report item property that the report processor is evaluating.
 

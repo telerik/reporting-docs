@@ -18,7 +18,6 @@ res_type: kb
 	</tr>
 </table>
 
-
 ## Description
 
 The Telerik Reporting engine requires GDI+ (the [System.Drawing](https://learn.microsoft.com/en-us/dotnet/api/system.drawing?view=net-7.0) functionality) that is not available for Android and for non-Windows applications built with .NET 7. For that reason, the Telerik Reports cannot be rendered within a .NET MAUI project. However, the PDF report documents generated with Telerik Reporting may be previewed in the [Telerik UI for Blazor PDF Viewer](https://docs.telerik.com/blazor-ui/components/pdfviewer/overview). The document generated in a Reporting service may be passed to the PDF Viewer through Web requests.
@@ -98,7 +97,7 @@ private async Task GetPdfAsync(string reportName)
 				FileData = await WebClient.GetByteArrayAsync($"{BaseAddress}/{reportName}");
 				return;
 			}
-	
+
 		// Render report in the Reporting online demo
 		case ReportService.ReportingOnlineDemo:
 			{
@@ -108,3 +107,15 @@ private async Task GetPdfAsync(string reportName)
 	}
 }
 ````
+
+## Download Samples
+
+Download the demo from our Reporting Samples GitHub repo: [MauiBlazorPdfReporting](https://github.com/telerik/reporting-samples/tree/master/MauiBlazorPdfReporting).
+
+## See Also
+
+* [Using Reporting Service API with HttpClient]({%slug how-to-use-reporting-rest-service-api-with-csharp-client%})
+* [Generating Reports Locally with Code]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
+* [Telerik UI for Blazor PDF Viewer](https://docs.telerik.com/blazor-ui/components/pdfviewer/overview)
+* [TelerikDropDownList](https://docs.telerik.com/blazor-ui/components/dropdownlist/overview)
+* [TelerikLoaderContainer](https://demos.telerik.com/blazor-ui/loadercontainer/overview)

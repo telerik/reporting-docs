@@ -2,7 +2,7 @@
 title: Filter Data Based on Aggregate Function through SubReport
 description: "Learn how you may apply complex filtering to a data item or group through inner subreport and proper data binding."
 type: how-to
-page_title: Data Item Filtering Based on Aggregate Function Achieved with a SubReport as a Middleman
+page_title: Data Item Filtering Based on Aggregate Function Achieved with a SubReport
 slug: filter-data-based-on-aggregate-function-through-subreport
 tags: filter,subreport,aggregate,function,data,item
 ticketid: 1616214

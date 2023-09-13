@@ -47,7 +47,7 @@ else
 }
 ````
 
-In the web page, above the PDF Viewer component there is a [TelerikDropDownList](https://docs.telerik.com/blazor-ui/components/dropdownlist/overview) to allow the user to select a report that is available on the service. The component should be filled with the list of available reports from the service itself when such an endpoint is available. In the case with Reporting online demos there is no such endpoint, so we have hardcoded the list with reports. Here is the configuration code of the drop down list component:
+In the web page, above the PDF Viewer component, there is a [TelerikDropDownList](https://docs.telerik.com/blazor-ui/components/dropdownlist/overview) to allow the user to select a report that is available on the service. The component should be filled with the list of available reports from the service itself when such an endpoint is available. In the case of Reporting online demos, there is no such endpoint, so we have hardcoded the list with reports. Here is the configuration code of the drop-down list component:
 
 ````CSHTML
 <TelerikDropDownList @ref="@DropDownListRef"
@@ -110,11 +110,11 @@ private async Task GetPdfAsync(string reportName)
 
 ## Platform Specific Settings
 
-For Android platforms you should consider the following:
+For Android platforms, you should consider the following:
 
-	* The Local Service (`http://localhost:5186` in Windows) runs in `http://10.0.2.2:5186` on Android. See [Connect to local web services from Android emulators and iOS simulators](https://learn.microsoft.com/en-us/dotnet/maui/data-cloud/local-web-services) for details.
-	* For Android you need to set `UsesCleartextTraffic` to `true` in the file `Platforms/Android/MainApplication.cs` as explained in the StackOverflow thread [How to fix 'Cleartext HTTP traffic to x not permitted' in xamarin android](https://stackoverflow.com/questions/67071052/how-to-fix-cleartext-http-traffic-to-x-not-permitted-in-xamarin-android).
-	* The blazor web view for Android requires newer Android OS. It works with emulator `Pixel 5 - API 33 -> Android 13 - API 33` and doesn't work with `Pixex 5 - API 31`.
+* The Local Service (`http://localhost:5186` in Windows) runs in `http://10.0.2.2:5186` on Android. See [Connect to local web services from Android emulators and iOS simulators](https://learn.microsoft.com/en-us/dotnet/maui/data-cloud/local-web-services) for details.
+* For Android you need to set `UsesCleartextTraffic` to `true` in the file `Platforms/Android/MainApplication.cs` as explained in the StackOverflow thread [How to fix 'Cleartext HTTP traffic to x not permitted' in xamarin android](https://stackoverflow.com/questions/67071052/how-to-fix-cleartext-http-traffic-to-x-not-permitted-in-xamarin-android).
+* The blazor web view for Android requires a newer Android OS. It works with emulator `Pixel 5 - API 33 -> Android 13 - API 33` and doesn't work with `Pixex 5 - API 31`.
 
 ## Download Samples
 

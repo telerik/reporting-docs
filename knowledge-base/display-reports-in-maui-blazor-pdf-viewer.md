@@ -108,6 +108,14 @@ private async Task GetPdfAsync(string reportName)
 }
 ````
 
+## Platform Specific Settings
+
+For Android platforms you should consider the following:
+
+	* The Local Service (`http://localhost:5186` in Windows) runs in `http://10.0.2.2:5186` on Android. See [Connect to local web services from Android emulators and iOS simulators](https://learn.microsoft.com/en-us/dotnet/maui/data-cloud/local-web-services) for details.
+	* For Android you need to set `UsesCleartextTraffic` to `true` in the file `Platforms/Android/MainApplication.cs` as explained in the StackOverflow thread [How to fix 'Cleartext HTTP traffic to x not permitted' in xamarin android](https://stackoverflow.com/questions/67071052/how-to-fix-cleartext-http-traffic-to-x-not-permitted-in-xamarin-android).
+	* The blazor web view for Android requires newer Android. It works with emulator `Pixel 5 - API 33 -> Android 13 - API 33` and doesn't work with `Pixex 5 - API 31`.
+
 ## Download Samples
 
 Download the demo from our Reporting Samples GitHub repo: [MauiBlazorPdfReporting](https://github.com/telerik/reporting-samples/tree/master/MauiBlazorPdfReporting).

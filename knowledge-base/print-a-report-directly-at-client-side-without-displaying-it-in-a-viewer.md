@@ -88,6 +88,7 @@ function printReport() {
 	}
 ````
 
+
 You can download the [ASP.NET Core Client Print Example](https://github.com/telerik/reporting-samples/tree/master/PrintReportDirectlyAtClientSide) to see the full solution.
 
 ## Notes

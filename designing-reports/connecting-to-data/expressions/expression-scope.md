@@ -15,6 +15,8 @@ Expressions are evaluated against the data scopes. The data scopes are determine
 
 Data scopes are defined by the data items and groups. Data items contain all data from their data source and define the outermost scope. For example, the report item `Report1` defines the scope named `"Report1"` and contains all data filtered and ordered by the Filtering and Sorting criteria defined for the Report (if any). Data items can contain groups that partition the data by its grouping criteria into smaller sets and define the hierarchy of inner scopes. The detail groups or DetailSection define the innermost scope that contains a single data record from the corresponding data item.
 
+The data items change the data scope. This means that all report items on the same hierarchy level as the data item, including the latter, live in the scope of their parent. The data scope of the items within the data item is determined by the DataSource of the data item.
+
 The report processor evaluates the expressions in a named scope or the default scope. The default scope depends on the report item property that the report processor is evaluating.
 
 The rule used for resolving the default data scope is the following: Each expression is used in some property of a report item. The processor finds the nearest ancestor item defining a data scope. This scope is used for the expression evaluation.

@@ -1,6 +1,6 @@
 ---
 title: Properties and Settings
-page_title: Properties and Settings of the Report definition
+page_title: Properties and Settings of the Report Definition
 description: "Learn what the properties and settings of the Report item are and how to use them to control the design-time and run-time behavior when working with Telerik Reporting."
 slug: report_item_properties_settings
 tags: telerik, reporting, report, item, properties, settings
@@ -42,15 +42,15 @@ For more detailed information, refer to the following articles:
 
 The Report item exposes a set of properties that allow you to control some aspects of its processing and rendering.
 
-* `SkipBlankPages`&mdash;As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [`SkipBlankPages`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
+* `SkipBlankPages`&mdash; As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [`SkipBlankPages`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
 
 	For example, `SkipBlankPages` may be kept `True` to remove the empty pages due to horizontal page brakes. For more information, refer to the articles on [horizontal paging]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}#horizontal-paging) and on [skipping blank pages in the rendered report]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-rendering-behaviors%}#skip-blank-pages-in-the-rendered-report).
 
-* `RuntimeSettings`&mdash;As of [R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify [device information settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) per particular report as part of its definition by configuring the [`RuntimeSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_RuntimeSettings) report property.
+* `RuntimeSettings`&mdash; As of [R2 2021 (15.1.21.512)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r2-2021-15-1-21-512), you can specify [device information settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) per particular report as part of its definition by configuring the [`RuntimeSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_RuntimeSettings) report property.
 
 	Apart from setting the export parameters for a particular extension, `RuntimeSettings` allows you to hide it and change its description when listed to the end-user.
 
-* `ReportEngineSettings`&mdash;As of [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109), you can set the property [CacheDefinitionProperties](/api/Telerik.Reporting.ReportEngineSettings#Telerik_Reporting_ReportEngineSettings_CacheDefinitionProperties) per particular report as part of its definition by configuring it as an element of the [`ReportEngineSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_ReportEngineSettings) report property.
+* `ReportEngineSettings`&mdash; As of [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109), you can set the property [CacheDefinitionProperties](/api/Telerik.Reporting.ReportEngineSettings#Telerik_Reporting_ReportEngineSettings_CacheDefinitionProperties) per particular report as part of its definition by configuring it as an element of the [`ReportEngineSettings`](/api/Telerik.Reporting.Report#Telerik_Reporting_Report_ReportEngineSettings) report property.
 
 	The available values are described in the API Reference in [Enum CacheDefinitionProperties](/api/Telerik.Reporting.CacheDefinitionProperties). Setting the property to `Yes`/`No` would force the Reporting engine to enable/disable the property for the specific report. Selecting `Default` would let the Reporting engine use the 'cacheDefinitionProperties' key in the 'processing' element from the application configuration file - [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}).
 
@@ -60,9 +60,9 @@ The Report item exposes a set of properties that allow you to control some aspec
 
 ## Styling and Design
 
-The Report item exposes a set of properties that allow you to control styling and other design-time related processes.
+The Report item exposes a set of properties that allow you to control styling and other design-time-related processes.
 
-* `StyleSheet`&mdash;Enables you to create custom styles through a built-in styling model that is similar to CSS. You can assign these styles by using CSS selectors such as `Type`, `Attribute`, `Style`, and `Descendent`.
+* `StyleSheet`&mdash; Enables you to create custom styles through a built-in styling model that is similar to CSS. You can assign these styles by using CSS selectors such as `Type`, `Attribute`, `Style`, and `Descendent`.
 
 	For more information about the process, refer to the following articles:
 
@@ -71,11 +71,11 @@ The Report item exposes a set of properties that allow you to control styling an
 	+ [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
 	+ [Style Inheritance and Overriding]({%slug telerikreporting/designing-reports/styling-reports/style-inheritance-and-overriding%})
 
-* `ExternalStyleSheets`&mdash;Imports StyleSheets previously created and stored in XML files. For more information, refer to the article on [exporting and reusing stylesheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}).
+* `ExternalStyleSheets`&mdash; Imports StyleSheets previously created and stored in XML files. For more information, refer to the article on [exporting and reusing stylesheets]({%slug telerikreporting/designing-reports/styling-reports/exporting-and-reusing-style-sheets%}).
 
-* `UnitOfMeasure`&mdash;Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, and so on in this [`UnitType`](/api/Telerik.Reporting.Drawing.UnitType). For new reports, the unit of measure is automatically determined based on the machine's regional settings - if the current machine uses metric culture, the default unit of measure will be set to *cm*, otherwise - *inch*.
+* `UnitOfMeasure`&mdash; Specifies the default unit of measure for the report. All newly created report items will have their locations, sizes, and so on in this [`UnitType`](/api/Telerik.Reporting.Drawing.UnitType). For new reports, the unit of measure is automatically determined based on the machine's regional settings - if the current machine uses metric culture, the default unit of measure will be set to *cm*, otherwise - *inch*.
 
-* `SnapGridSize`&mdash;Controls the step of the `Rulers` in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#major-ui-elements-in-the-standalone-report-designer) and in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
+* `SnapGridSize`&mdash; Controls the step of the `Rulers` in the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#major-ui-elements-in-the-standalone-report-designer) and in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
 
 ## See Also
 

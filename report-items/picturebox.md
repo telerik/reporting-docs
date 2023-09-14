@@ -155,26 +155,26 @@ The following table lists the `Sizing` property modes.
 
 The `ImageAlignment` property dictates the alignment of the image if it does not conform to the specified PictureBox size.
 
-> The `ImageAlignment` property is ot respected when the __Sizing__ property is set to __AutoSize__, __Center__, or __Stretch__.
+> The `ImageAlignment` property is not respected when the __Sizing__ property is set to __AutoSize__, __Center__, or __Stretch__.
 
 The following table lists the available `ImageAlignment` property modes.
 
 | Name | Horizontal Alignment | Vertical Alignment |
 | ------ | ------ | ------ |
-|`Auto`\*|*none*|*none*|
-|`Center`|center|center|
-|`Left`|left|center|
-|`Top`|center|top|
-|`Right`|right|center|
-|`Bottom`|center|bottom|
-|`TopLeft`|left|top|
-|`TopRight`|right|top|
-|`BottomLeft`|left|bottom|
-|`BottomRight`|right|bottom|
+|`Auto`\*|Default|Default|
+|`Center`|Center|Center|
+|`Left`|Left|Center|
+|`Top`|Center|Top|
+|`Right`|Right|Center|
+|`Bottom`|Center|Bottom|
+|`TopLeft`|Left|Top|
+|`TopRight`|Right|Top|
+|`BottomLeft`|Left|Bottom|
+|`BottomRight`|Right|Bottom|
 
 > \* The `Auto` mode retains the original alignment of the __Normal__ and __ScaleProportional__ sizing modes.<br/>This is the default mode.
 
-The PictureBox renders the image depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary. For example, if you are using an 120dpi image in your PictureBox with __Sizing__ set to `AutoSize` or `Normal` and the machine settings are set to `96dpi`, the image will look smaller due to the higher amount of pixels per inch. To properly resize the image, set its __Sizing__ to `Stretch` or `ScaleProportional`.
+The PictureBox renders the image depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary. For example, if you are using a 120dpi image in your PictureBox with __Sizing__ set to `AutoSize` or `Normal` and the machine settings are set to `96dpi`, the image will look smaller due to the higher amount of pixels per inch. To properly resize the image, set its __Sizing__ to `Stretch` or `ScaleProportional`.
 
 The SVG images are rendered in vector format where the rendering extension supports it.
 

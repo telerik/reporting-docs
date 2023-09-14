@@ -15,7 +15,7 @@ Telerik script language provides the following intrinsic (or "built-in") objects
 
 ## Fields
 
-The `Fields` collection represents the set of fields specified by the report data source plus any additional calculated fields that you create. It is a function that requires the string argument with the name of the data field and not an object like `ReportItem.DataObject`.
+The `Fields` collection represents the set of fields specified by the report data source plus any additional calculated fields that you create. It is a __function__ that requires a string argument with the name of the data field and not an __object__ like `ReportItem.DataObject`.
 
 After you create a data source for a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) (Report, Table, Crosstab, List, Chart), the field collection appears in the [Data Explorer toolbox]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}).
 
@@ -61,13 +61,13 @@ It is strongly recommended to use this property only for report visual output cu
 
 The current processing item in which context the expression is evaluated. The object is not evaluated when the processing item is not available, i.e. when using it in report parameters.
 
-The ReportItem is an object passed from each item to its children. The `ReportItem.DataObject` in particular holds the data of the parent item, which makes it available to its children. If the parent item is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) with groups, only the group data is passed as `ReportItem.DataObject` to the corresponding groups and the items within these groups.
+The `ReportItem` is an __object__ passed from each item to its children. The `ReportItem.DataObject` in particular holds the data of the parent item, which makes it available to its children. If the parent item is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) with groups, only the group data is passed as `ReportItem.DataObject` to the corresponding groups and the items within these groups.
 
-When the child is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), it passes as `ReportItem.DataObject` its own data to its children. If the child isn't a data item and doesn't have a DataSource, it passes the `ReportItem.DataObject` received from its parent also to its children.
+When the child is a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), it passes as `ReportItem.DataObject` its own data to its children. If the child isn't a data item and doesn't have a DataSource, it passes the `ReportItem.DataObject` received from its parent to its children.
 
 For example, the `Fields` from a Table DataSource are passed as `ReportItem.DataObject` to its cells' items, e.g. TexBoxes. Therefore, in these no-data items, the Expression `=Fields.fieldName` is equivalent to the Expression `=ReportItem.DataObject.fieldName`.
 
-On the Table item though, the `ReportItem.DataObject` comes from its parent, for example, from the Report. For that reason, `=ReportItem.DataObject.fieldName` is different from `=Fields.fieldName` in the Table. The `Fields` function represents the Table DataSource, whereas the `ReportItem.DataObject` object represents its parent (e.g. Report) DataSource.
+On the Table item though, the `ReportItem.DataObject` comes from its parent, for example, from the Report item. For that reason, `=ReportItem.DataObject.fieldName` is different from `=Fields.fieldName` in the Table. The `Fields` __function__ represents the Table DataSource, whereas the `ReportItem.DataObject` __object__ represents its parent (e.g. Report) DataSource.
 
 For information regarding the available processing ReportItem properties, check out the corresponding processing item API reference.
 

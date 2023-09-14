@@ -141,7 +141,7 @@ Me.PictureBox6.Value = "https://www.mysite.com/images/img1.gif" 'absolute URL
 
 ## Clipping, Rendering, and Positioning
 
-The clipping and positioning of an image in the display area of the PictureBox item is controlled by its `Sizing` property.
+The clipping and positioning of an image in the display area of the PictureBox item is controlled by its `Sizing` and `ImageAlignment` properties.
 
 The following table lists the `Sizing` property modes.
 
@@ -153,7 +153,28 @@ The following table lists the `Sizing` property modes.
 |`Stretch`|The image within the PictureBox is stretched or shrunk as appropriate to fit the size of the PictureBox.|
 |`ScaleProportional`|The image is sized proportionally (without clipping), so that it's best fitted to the PictureBox.<br/> If the height and width ratio of the PictureBox is the same as the ratio of the image, it will be resized to exactly fit into the PictureBox. Otherwise, the closest fitting side (height or width) of the image will be sized to the item and the other side (height or width) of the image sized proportionally (leaving empty space).|
 
-The PictureBox renders the image depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary. For example, if you are using an 120dpi image in your PictureBox with __Sizing__ set to `AutoSize` or `Normal` and the machine settings are set to `96dpi`, the image will look smaller due to the higher amount of pixels per inch. To properly resize the image, set its __Sizing__ to `Stretch` or `ScaleProportional`.
+The `ImageAlignment` property dictates the alignment of the image if it does not conform to the specified PictureBox size.
+
+> The `ImageAlignment` property is not respected when the __Sizing__ property is set to __AutoSize__, __Center__, or __Stretch__.
+
+The following table lists the available `ImageAlignment` property modes.
+
+| Name | Horizontal Alignment | Vertical Alignment |
+| ------ | ------ | ------ |
+|`Auto`\*|Default|Default|
+|`Center`|Center|Center|
+|`Left`|Left|Center|
+|`Top`|Center|Top|
+|`Right`|Right|Center|
+|`Bottom`|Center|Bottom|
+|`TopLeft`|Left|Top|
+|`TopRight`|Right|Top|
+|`BottomLeft`|Left|Bottom|
+|`BottomRight`|Right|Bottom|
+
+> \* The `Auto` mode retains the original alignment of the __Normal__ and __ScaleProportional__ sizing modes.<br/>This is the default mode.
+
+The PictureBox renders the image depending on the underlying image DPI settings, so the physical dimensions of the rendered item may vary. For example, if you are using a 120dpi image in your PictureBox with __Sizing__ set to `AutoSize` or `Normal` and the machine settings are set to `96dpi`, the image will look smaller due to the higher amount of pixels per inch. To properly resize the image, set its __Sizing__ to `Stretch` or `ScaleProportional`.
 
 The SVG images are rendered in vector format where the rendering extension supports it.
 

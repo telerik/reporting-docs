@@ -24,6 +24,9 @@ res_type: kb
 	</tbody>
 </table>
 
+> The article is related to the Standalone Report Designer for the .NET Framework.
+> For the Standalone Designer targeting the .NET 6 consider [Loading .NET 7 assemblies in the Standalone Report Designer for .NET]({%slug how-to-load-dot-net-7-assemblies-in-srd-dot-net%})
+
 ## Description
 
 The [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) for the .NET Framework may not recognize the main ObjectDataSource assembly even though the assembly is properly added to the designer folder and registered in its configuration file when this assembly depends on other assemblies.
@@ -70,3 +73,9 @@ The [FuslogvwLogs.zip](resources/fuslogvwlogs.zip) file contains the ObjectDataS
 A screenshot of the entire log folder can be seen below:
 
 ![The log folder created by Fuslogvw showing the assemblies that failed to load in the Standalone Designer](images/fuslogvwforreportdesigner.png)
+
+## See Also
+
+* [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
+* [Fuslogvw](https://learn.microsoft.com/en-us/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer)
+* [Loading .NET 7 assemblies in the Standalone Report Designer for .NET]({%slug how-to-load-dot-net-7-assemblies-in-srd-dot-net%})

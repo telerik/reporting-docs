@@ -35,7 +35,7 @@ For more details see topics in [Data Source Components]({%slug telerikreporting/
 
 For more details see topics in [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) section.
 
-> Starting with [R3 2019 (13.2.19.918)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2019-13-2-19-918), when two or more __data items__ use the same DataSource component, the raw data is reused between them.
+> Starting with [R3 2019 (13.2.19.918)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2019-13-2-19-918), when two or more __data items__ use the same DataSource component, the raw data is reused between them. For example, if a Table and a Graph use the same SqlDataSource, the data will be fetched just once from the database when rendering the report.
 
 ## Expressions
 

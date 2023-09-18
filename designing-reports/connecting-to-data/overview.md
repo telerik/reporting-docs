@@ -53,4 +53,4 @@ For more details see topics in [Expressions]({%slug telerikreporting/designing-r
 
 For more details see topics in [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) section.
 
-> The optimization for reusing the raw data from the same DataSource component is valid only for __data items__. It doesn't concern the Report Parameters with AvailableValues relying on DataSource components. Even if there are several parameters that fetch their AvailableValues from the same DataSource, the latter will be called once for each parameter.
+> The optimization for reusing the raw data from the same DataSource component is valid only for __data items__. It doesn't concern the Report Parameters with [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) relying on DataSource components. Even if there are several parameters that fetch their [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) from the same DataSource, the latter will be called once for each parameter.

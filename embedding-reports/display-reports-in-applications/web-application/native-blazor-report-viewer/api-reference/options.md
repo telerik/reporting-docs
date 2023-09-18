@@ -252,12 +252,5 @@ public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions(
 				<p>By default populates <strong>all available tools</strong> as listed in the [Customize the Toolbar of the Blazor Native Report Viewer]({%slug native-blazor-report-viewer/toolbar-customization%}) article.</p>
 			</td>
 		</tr>
-		<tr>
-			<td>AuthenticationToken</td>
-			<td>
-				<p><i>string, optional;</i></p>
-				<p> If provided, a `Bearer` token will be set in the `Authorization` header for requests to the Reporting REST service. The token is not sent only when requesting [document resources]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/get-document-resource%}). The reason is that resources like images are referenced with relative URLs in the HTML of the report document, hence the requests for them are made by the browser.</p>
-			</td>
-		</tr>
 	</table>
 </body>

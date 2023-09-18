@@ -7,6 +7,7 @@ tags: command,commands,method,methods,blazor,native,report,viewer,api
 published: True
 position: 1
 ---
+
 <style>
 table th:first-of-type {
 	width: 20%;
@@ -22,24 +23,23 @@ table th:nth-of-type(3) {
 
 # Native Blazor Report Viewer Commands Overview
 
-The Native Blazor Report Viewer exposes __commands__ that allow to control its behavior from application code.
+The Native Blazor Report Viewer exposes **commands** that allow to control its behavior from application code.
 
 ## Executing A Command
 
-To execute a command, it is required to first get a reference to the report viewer object using the __@ref__ attribute. Then, the referenced property/field can be used to invoke the `ExecuteCommand` method. The `ExecuteCommand` method has the following signature:
+To execute a command, it is required to first get a reference to the report viewer object using the **@ref** attribute. Then, the referenced property/field can be used to invoke the `ExecuteCommand` method. The `ExecuteCommand` method has the following signature:
 
-````C#
+```C#
 void ExecuteCommand(string commandName, string commandValue(optional))
-````
+```
 
 All commands, except for the `Export` command, require a single argument for this method, which is the `commandName`. The `commandValue` is used only by the `Export` command to specify the exporting format.
 
 For example, the `Refresh` and `Export` commands of the current report can be triggered like this:
-    
-````C#
+
+```C#
 <button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
 <button type="button" class="btn btn-light btn-sm" @onclick="Export">Export Report to PDF</button>
-<button type="button" class="btn btn-light btn-sm" @onclick="UpdateAuthenticationToken">Update Token</button>
 ...
 <ReportViewer
 	ServiceUrl="/api/reports"
@@ -47,7 +47,7 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 </ReportViewer>
 ...
 @code {
-	public ReportViewer ViewerInstance { get; set; } 
+	public ReportViewer ViewerInstance { get; set; }
 
 	void RefreshReport()
 	{
@@ -57,13 +57,8 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 	{
 		ViewerInstance.ExecuteCommand("Export", "PDF");
 	}
-	
-	void UpdateAuthenticationToken()
-	{
-		ViewerInstance.ExecuteCommand("SetAuthenticationToken", "access_token");
-	}
 }
-````
+```
 
 ## Commands List
 
@@ -126,15 +121,6 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 			</td>
 			<td>
 				Triggers the Email sending functionality if implemented.
-			</td>
-		</tr>
-		<tr>
-			<td>SetAuthenticationToken</td>
-			<td>
-				The access token, e.g. "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
-			</td>
-			<td>
-				Updates the `AuthenticationToken` property of the report viewer with the new value to be used in any new requests made by the viewer to the reporting service.
 			</td>
 		</tr>
 		<tr>
@@ -250,4 +236,4 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 
 ## See Also
 
-* [Native Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%})
+- [Native Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%})

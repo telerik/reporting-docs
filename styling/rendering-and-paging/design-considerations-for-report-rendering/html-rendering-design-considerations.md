@@ -20,7 +20,7 @@ The HTML5 rendering extension is based on the Image rendering extension, with so
 ### Rendering
 
 * All report items are rendered as separate absolute positioned `<div>` elements.
-* The TextBox with rotated text is rendered as an image and displayed in `<img>` element in the `<div>` of the report item. This is necessary as the browsers do not support rotated text.
+* The TextBox with rotated text is rendered as an image and displayed in `<img>` element inside the `<div>` of the report item. This is necessary as the browsers do not support rotated text.
 * All output is generated with __UTF8 encoding.__
 * The strings are measured using GDI+. This can lead to differences between Image rendering and the Web Browsers. Also justified text may require to be adjusted due to the difference in the measurement algorithms.
 * In Interactive preview the Table/Crosstab/List item is rendered on a single page without page breaks.

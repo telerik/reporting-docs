@@ -37,6 +37,7 @@ The following table lists the available methods:
 | __refreshReport()__ |Reloads/refreshes the current report. <br/>__Returns__ : the current ReportViewer object.|
 | __getReportSource(): any__ |Gets the current ReportSource - report and parameters. <br/>__Returns__ : object with properties: <ul><li>report: string</li><li>parameters: JSON</li></ul>|
 | __setReportSource(rs: JSON)__ |Sets the report source - report and parameters. Automatically reloads the report (if any) into the view. <br/>__Parameters__ : rs; rs is an object with the following properties: <ul><li>report: string</li><li>parameters: JSON</li></ul>__Returns__ : the current ReportViewer object.|
+| __getReportParameters(): any__ |Returns an immutable array of name-value objects representing the current evaluated report parameters.<br/>__Returns__ : array containing the name and the value of each report parameter.|
 | __getViewMode(): string__ |Gets the current view mode. <br/>__Returns__ : string.|
 | __setViewMode(vm: string)__ |Sets the view mode and automatically reloads the current report (if any) into the new view. <br/>__Parameters__ : vm: string <br/>__Returns__ : the current ReportViewer object.|
 | __getScale(): any__ |Gets the viewer’s scale factor and scale mode. <br/>__Returns__ : object with properties: <ul><li>scale: number</li><li>scaleMode: string</li></ul>|

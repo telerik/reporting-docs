@@ -8,12 +8,13 @@ published: True
 position: 2
 previous_url: /react-report-viewer-api-reference-methods
 ---
+
 <style>
 table th:first-of-type {
-    width: 30%;
+	width: 30%;
 }
 table th:nth-of-type(3) {
-    width: 50%;
+	width: 50%;
 }
 </style>
 
@@ -43,6 +44,7 @@ The following table lists the available methods:
 | __refreshReport()__ |Reloads/refreshes the current report. <br/>__Returns__ : the current ReportViewer object.|
 | __getReportSource(): any__ |Gets the current ReportSource - report and parameters. <br/>__Returns__ : object with properties: <ul><li>report: string</li><li>parameters: JSON</li></ul>|
 | __setReportSource(rs: JSON)__ |Sets the report source - report and parameters. Automatically reloads the report (if any) into the view. <br/>__Parameters__ : rs; rs is an object with the following properties: <ul><li>report: string</li><li>parameters: JSON</li></ul>__Returns__ : the current ReportViewer object.|
+| __getReportParameters(): any__ |Returns an immutable array of name-value objects representing the current evaluated report parameters.<br/>__Returns__ : array containing the name and the value of each report parameter.|
 | __getViewMode(): string__ |Gets the current view mode. <br/>__Returns__ : string.|
 | __setViewMode(vm: string)__ |Sets the view mode and automatically reloads the current report (if any) into the new view. <br/>__Parameters__ : vm: string <br/>__Returns__ : the current ReportViewer object.|
 | __getScale(): any__ |Gets the viewer’s scale factor and scale mode. <br/>__Returns__ : object with properties: <ul><li>scale: number</li><li>scaleMode: string</li></ul>|
@@ -56,4 +58,3 @@ The following table lists the available methods:
 | __getAccessibilityKeyMap(): JSON__ |Gets the shortcut keys used when the report viewer is in accessible mode (has its enableAccessibility set to true. The keys in the map are listed below: <br/><table><thead><tr><th>Key</th><th>Default Value</th><th>Description</th></tr></thead><tbody><tr><td>CONFIRM_KEY</td><td>13 <em>('enter')</em></td><td>Key for triggering the actions in the report content and previewing the report from the <strong>Preview</strong> button in parameters area, if available.</td></tr><tr><td>MENU_AREA_KEY</td><td>77 <em>('m')</em></td><td>Key for moving the focus to the menu area, if visible.</td></tr><tr><td>CONTENT_AREA_KEY</td><td>67 <em>('c')</em></td><td>Key for moving the focus to the report content area, if visible.</td></tr><tr><td>PARAMETERS_AREA_KEY</td><td>80 <em>('p')</em></td><td>Key for moving the focus to the parameters area, if visible.</td></tr><tr><td>DOCUMENT_MAP_AREA_KEY</td><td>68 <em>('d')</em></td><td>Key for moving the focus to the document map area, if visible.</td></tr></tbody></table> |
 | __setAccessibilityKeyMap(keyMap: JSON)__ |Sets the shortcut keys used when the report viewer is in accessible mode. It is recommended to set the new key map when the report rendering is complete, because the accessibility routines require the report viewer template to be loaded. <br/>__Parameters__ : keyMap: JSON|
 | __dispose()__ |Stops sending keep alive requests to the server, if keep client alive was enabled.|
-

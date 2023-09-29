@@ -34,8 +34,9 @@ Learn how to find the repository to download and install `libgdiplus` on __CentO
 The `libgdiplus` library for __CentOS__ Linux distributions resides in the `Epel` package repository. For most of the __CentOS__ versions this repository is available by default. __Amazon Linux__ is based on __CentOS__ but not all of its versions contain `Epel` by default. Below are the commands necessary for installing this repository. Note that they may vary depending on the exact distribution, version, etc. You may need to run the terminal as administrator, or use `sudo` to authorize.
 
 ````
-wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-rpm -ihv --nodeps ./epel-release-latest-8.noarch.rpm
+yum install epel-release -y
+# Note: if 'yum install epel-release' doesn't work for you, try manually update the source
+# rpm -ihv --nodeps https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 ````
 
 After successfully installing the repository with the above instructions, you may assure that you have the `Epel` repository listed with the output from the following command:

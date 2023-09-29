@@ -62,7 +62,7 @@ XML-based configuration file:
 				<parameter name="typeName" value="Namespace.CustomSharedDataSourceResolverClass, AssemblyName" />
 				<parameter name="constructorParameter1" value="constructorParameterValue1" />
 			</parameters>
-		</resourceResolver>
+		</sharedResourceResolver>
 	</processing>
 </Telerik.Reporting>
 ````

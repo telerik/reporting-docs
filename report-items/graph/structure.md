@@ -1,9 +1,9 @@
 ---
 title: Structure and Elements 
 page_title: Structure and Elements of the Graph
-description: "Learn more about the visual structure and elements of the Telerik Reporting Graph report item, Graph types and how they group and present the data."
+description: "Learn more about the visual structure and elements of the Telerik Reporting Graph report item, Graph types, and how they group and present the data."
 slug: telerikreporting/designing-reports/report-structure/graph/structure
-tags: telerik, reporting, graph, report, item,, visual, structure, elements
+tags: telerik, reporting, graph, report, item, visual, structure, elements
 published: True
 position: 3
 previous_url: /GraphStructure
@@ -11,7 +11,7 @@ previous_url: /GraphStructure
 
 # Composition and Functionality of the Graph Report Item
 
-The Graph is a powerful and complex report item which displays a variety of elements to adequately display visual information as required.
+The Graph is a powerful and complex report item that displays a variety of elements to adequately display visual information as required.
 
 ## Visual Structure
 
@@ -112,7 +112,9 @@ According to the type of the input data, the Graph supports the following scale 
 
 ## Series
 
-A series represents a series of data points that represents individual measurements. This section lists the series types supported by the Graph report item.
+A Graph Series represents a series of data points that constitute an individual measurement. This section lists the series types supported by the Graph report item.
+
+Graph Series support [Tooltips]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/tooltips%}). The Tooltips are related to the data points of the Series. Therefore, in LineSeries, the `DataPointStyle.Visible` should be `True` and the Data Point Marker `MarkerSize` should be non-zero to have the Tooltips appear in the preview.
 
 ### Bar Charts
 
@@ -120,12 +122,12 @@ A series represents a series of data points that represents individual measureme
 
 You can arrange the Bar series in different ways to emphasize various aspects of the data:
 
-+ __Clustered Bar Graphs__&mdash;Bars are clustered in groups two or more series.
++ __Clustered Bar Graphs__&mdash;Bars are clustered in groups of two or more series.
 + __Stacked, Stacked 100% Bar Graphs__&mdash;Show the bars divided into subparts to display a cumulative effect.
 
-In a Cartesian coordinate system the bars have a rectangular shape and can be horizontal (Bar chart) or vertical (sometime called Column chart).
+In a Cartesian coordinate system the bars have a rectangular shape and can be horizontal (Bar chart) or vertical (sometimes called Column chart).
 
-In a Polar coordinate system the bars appears in a wedge shape. If the series are arranged on the radial axis, that is, the wedges start from the radial axis and goes by the angular axis, the result is a Pie chart. Otherwise, if the bars are arranged by the angular axis, the result is a Rose chart.
+In a Polar coordinate system, the bars appear in a wedge shape. If the series are arranged on the radial axis, that is, the wedges start from the radial axis and go by the angular axis, the result is a Pie chart. Otherwise, if the bars are arranged by the angular axis, the result is a Rose chart.
 
 ### Line Charts
 

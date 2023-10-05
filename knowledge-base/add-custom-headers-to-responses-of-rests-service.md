@@ -49,9 +49,11 @@ public class ReportsController : ReportsControllerBase
 }
 ````
 
-If the headers should be added to all responses, it may be better to implement a universal solution. There are some suggestions in the Stackoverflow thread [How to add custom header to ASP.NET Core Web API response](https://stackoverflow.com/questions/46183171/how-to-add-custom-header-to-asp-net-core-web-api-response).
+If the headers should be added to all responses, it may be better to implement a universal solution.
 
-For example, you may add the header in the `Program.cs` file of .NET 6/7 project hosting the Reporting REST Service:
+The Stackoverflow thread [How to add custom header to ASP.NET Core Web API response](https://stackoverflow.com/questions/46183171/how-to-add-custom-header-to-asp-net-core-web-api-response) suggests some solutions.
+
+With the below approach, you configure the application in the `Program.cs` file of .NET 6/7 project hosting the Reporting REST Service to add the custom headers to all responses, not only Reporting REST Service ones:
 
 ````CSharp
 var app = builder.Build();
@@ -70,11 +72,11 @@ app.Use(async (context, next) =>
 // ...
 ````
 
-This above code addd the header `"cross-origin-embedder-policy": "require-corp"` to all responses from the `ReportsController`.
+This above code adds the header `"cross-origin-embedder-policy": "require-corp"` to all responses from the `ReportsController` and any other controller configured in the project.
 
 ### .NET Framework
 
-The solution is similar with the corresponding tools provided by the framework.
+The solution is similar with the corresponding tools provided by the target framework.
 
 The Stackoverflow thread [Add a custom response header in ApiController](https://stackoverflow.com/questions/32017686/add-a-custom-response-header-in-apicontroller) elaborates on the available approaches.
 

@@ -177,6 +177,9 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
         position: 4
         title: "Angular Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer:
+        position: 5
+        title: "Native Angular Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing:
         position: 12
         title: "Customizing"

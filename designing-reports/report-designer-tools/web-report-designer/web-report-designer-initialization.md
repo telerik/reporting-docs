@@ -7,6 +7,7 @@ tags: report,webreportdesigner,initialization
 published: True
 position: 7
 ---
+
 <style>
 table th:first-of-type {
 	width: 28%;
@@ -59,8 +60,49 @@ $(document).ready(function () {
 			templateUrl: "api/reportdesigner/resources/templates/telerikReportViewerTemplate.html/",
 			viewMode: "INTERACTIVE",
 			pageMode: "SINGLE_PAGE"
-		}
+		},
+		error: onError,
+		notificationShowing: onNotificationShowing
 	}).data("telerik_WebDesigner");
 });
+
+function onError(e, args) {
+	// e: jQuery event;
+	// args: IErrorEventArgs ->
+		// message: error message, string;
+		// error: JS's Error instance.
+
+	if (args.error) {
+		console.log(`An error occurred! Message: ${args.message}; Error type: ${args.error.constructor.name}`);
+	} else {
+		console.log(`An error occurred! Message: ${args.message};`);
+	}
+}
+
+function onNotificationShowing(e, args) {
+	// e: jQuery event
+	// args: INotificationErrorEventArgs ->
+		// type: string, obtained from NotificationTypes. Available values: info, warning, error, success
+		// message: notification message, string.
+		// error: JS's Error instance
+		// cancel: boolean, determines if showing the notification will be canceled.
+	switch (args.type) {
+		case "success":
+		case "info":
+		case "warning":                    
+			console.log(`Message: ${args.message}`);
+			// disable the notification pop-up.
+			args.cancel = true;
+			break;
+
+		case "error":
+			if (args.error) {
+				console.log(`Error message: ${args.message}; Error type: ${args.error.constructor.name}`);
+			} else {
+				console.log(`Error message: ${args.message};`);
+			}
+			break;
+	}
+}
 ````
 

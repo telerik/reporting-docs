@@ -28,15 +28,8 @@ The following list describes the prerequisites for this tutorial:
 1. Install the Native Angular Report Viewer NPM package with the following command:
 
 	````powershell
-npm install @progress/to-be-named
+npm install -f @progress/telerik-angular-report-viewer-native
 ````
-
->For [Node.js](https://nodejs.org) version `16.0.0` and above, use the following flag to ensure all the correct peer dependencies versions are installed in your project.
-	>
-	>````powershell
-npm install @progress/to-be-named --legacy-peer-deps
-````
-
 
 	>If you receive a *403 Forbidden Error*, you need to register and login at [npmjs.com](https://www.npmjs.com/) before performing this step.
 	>
@@ -48,7 +41,7 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 1. Once installed, import the `ReportingAngularViewerModule` in [your application root module](https://angular.io/guide/ngmodules#!#angular-modularity):
 
 	````TypeScript
-import { ReportingAngularViewerModule } from 'viewer/src/lib/reporting-angular-viewer.module';
+import { ReportingAngularViewerModule } from '@progress/telerik-angular-report-viewer-native';
 	...
 	@NgModule({
 		declarations: [
@@ -65,7 +58,7 @@ import { ReportingAngularViewerModule } from 'viewer/src/lib/reporting-angular-v
 ````
 
 
-1. Use the report viewer selector in the component's template:
+1. Use the report viewer selector - `reporting-angular-viewer` in the component's template:
 
 	````HTML
 <reporting-angular-viewer
@@ -81,18 +74,18 @@ import { ReportingAngularViewerModule } from 'viewer/src/lib/reporting-angular-v
 		}"
 		viewMode="interactive"
 		[keepClientAlive]="true">
-</re	porting-angular-viewer>
+</reporting-angular-viewer>
 ````
 
 
-1. Install one or more of the supported [Kendo UI for Angular themes](https://www.telerik.com/kendo-angular-ui/components/styling/):
+1. Install the Angular `localize` package - [Add the localize package](https://angular.io/guide/i18n-common-add-package#add-the-localize-package). This is required for the report viewer's localization functionality
 
 	````powershell
-npm install --save @progress/kendo-theme-default
+ng add @angular/localize
 ````
 
 
-1. In the `angular.json` configuration, add the desired theme inside the `styles` array - [Angular workspace configuration
+1. Reference one of the default(`kendo-theme-default`) [Kendo UI for Angular theme](https://www.telerik.com/kendo-angular-ui/components/styling/) in the project using one of the supported approaches - [Compiling Themes from SCSS Source Files](https://www.telerik.com/kendo-angular-ui/components/styling/#toc-compiling-themes-from-scss-source-files). In this example, we will use the approach with the `angular.json` configuration which consists of adding the desired theme inside the `styles` array - [Angular workspace configuration
 : Styles and scripts configuration](https://angular.io/guide/workspace-config#styles-and-scripts-configuration):
 
 	````JSON
@@ -103,7 +96,7 @@ npm install --save @progress/kendo-theme-default
 ````
 
 
-1. Run the application:
+1. Run the application `start` script
 
 	````powershell
 npm run start

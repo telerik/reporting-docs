@@ -186,6 +186,9 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
         position: 14
         title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference:
+        position: 15
+        title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
         position: 5
         title: "React Report Viewer"

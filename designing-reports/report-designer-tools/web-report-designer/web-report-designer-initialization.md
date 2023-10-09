@@ -34,6 +34,8 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 | __toolboxArea__ | *json*, *optional*; Sets the Toolbox area options.|
 | __propertiesArea__ | *json*, *optional*; Sets the Properties area options.|
 | __skipOnboarding__ | *boolean, optional*; Sets a value indicating whether the _Onboarding Guide_ should be skipped on startup. If not set or set to false, the Onboarding Guide will check whether it has been run before and if not, it will start after the designer surface has loaded. If the guide has been run before, nothing will happen.|
+| __error__ | *function(e, args)*;*optional*; A callback function that will be called when an error occurs.<ul><li>__e__: jQuery event;</li><li>__args__: `IErrorEventArgs` with properties:<ul><li>__message__: error message, *string*;</li><li>__error__: JavaScript Error instance;</li></ul></li></ul>|
+| __notificationShowing__ | *function(e, args)*;*optional*; A callback function that will be called when the user should be notified for an error, etc.<ul><li>__e__: jQuery event;</li><li>__args__: `INotificationErrorEventArgs` with properties:<ul><li>__type__: *string*, obtained from `NotificationTypes`. Available values: `info`, `warning`, `error`, `success`</li><li>__message__: error message, *string*;</li><li>__error__: JavaScript Error instance;</li><li>__cancel__: *boolean*, determines whether to cancel showing  notifications;</li></ul></li></ul>|
 
 ## Examples
 

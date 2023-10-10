@@ -20,8 +20,7 @@ The following list describes the prerequisites for completing the tutorial:
 * [Angular CLI Project](https://angular.io/cli).
 * A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
 
-
-###Steps:
+### Steps:
 
 1. Create new Angular application using the [Angular CLI](https://angular.io/cli).
 1. Install the Native Angular Report Viewer NPM package with the following command:
@@ -80,14 +79,13 @@ ng add @angular/localize
 ````
 
 
-1. Reference one of the default(`kendo-theme-default`) [Kendo UI for Angular theme](https://www.telerik.com/kendo-angular-ui/components/styling/) in the project using one of the supported approaches - [Compiling Themes from SCSS Source Files](https://www.telerik.com/kendo-angular-ui/components/styling/#toc-compiling-themes-from-scss-source-files). In this example, we will use the approach with the `angular.json` configuration which consists of adding the desired theme inside the `styles` array - [Angular workspace configuration
-: Styles and scripts configuration](https://angular.io/guide/workspace-config#styles-and-scripts-configuration):
+1. Reference one of the default(`kendo-theme-default`) [Kendo UI for Angular theme](https://www.telerik.com/kendo-angular-ui/components/styling/) in the project using one of the supported approaches - [Compiling Themes from SCSS Source Files](https://www.telerik.com/kendo-angular-ui/components/styling/#toc-compiling-themes-from-scss-source-files). In this example, we will use the approach with the `angular.json` configuration which consists of adding the desired theme inside the `styles` array - [Angular workspace configuration: Styles and scripts configuration](https://angular.io/guide/workspace-config#styles-and-scripts-configuration):
 
 	````JSON
 "styles": [
 		"src/styles.scss",
 		"node_modules/@progress/kendo-theme-default/dist/default-ocean-blue.scss"
-		],
+	],
 ````
 
 

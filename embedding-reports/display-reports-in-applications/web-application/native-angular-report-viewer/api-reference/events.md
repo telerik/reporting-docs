@@ -459,7 +459,7 @@ import { ReportingAngularViewerComponent } from '@progress/telerik-angular-repor
 
 ### loadedReportChange
 
-The `loadedReportChange` event will be emitted when the loaded report is changed.
+The `loadedReportChange` event will be emitted when the previewed report is __changed__ or __refreshed__.
 
 ````HTML
 <reporting-angular-viewer

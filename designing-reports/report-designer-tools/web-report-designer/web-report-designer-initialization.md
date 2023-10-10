@@ -7,6 +7,7 @@ tags: report,webreportdesigner,initialization
 published: True
 position: 7
 ---
+
 <style>
 table th:first-of-type {
 	width: 28%;
@@ -34,6 +35,8 @@ The Telerik Web Report Designer is a jQuery plugin - `jQuery.fn.telerik_WebRepor
 | __toolboxArea__ | *json*, *optional*; Sets the Toolbox area options.|
 | __propertiesArea__ | *json*, *optional*; Sets the Properties area options.|
 | __skipOnboarding__ | *boolean, optional*; Sets a value indicating whether the _Onboarding Guide_ should be skipped on startup. If not set or set to false, the Onboarding Guide will check whether it has been run before and if not, it will start after the designer surface has loaded. If the guide has been run before, nothing will happen.|
+| __error__ | *function(e, args)*;*optional*; A callback function that will be called when an error occurs.<ul><li>__e__: jQuery event;</li><li>__args__: `IErrorEventArgs` with properties:<ul><li>__message__: error message, *string*;</li><li>__error__: JavaScript Error instance;</li></ul></li></ul>|
+| __notificationShowing__ | *function(e, args)*;*optional*; A callback function that will be called when the user should be notified for an error, etc.<ul><li>__e__: jQuery event;</li><li>__args__: `INotificationErrorEventArgs` with properties:<ul><li>__type__: *string*, obtained from `NotificationTypes`. Available values: `info`, `warning`, `error`, `success`</li><li>__message__: error message, *string*;</li><li>__error__: JavaScript Error instance;</li><li>__cancel__: *boolean*, determines whether to cancel showing  notifications;</li></ul></li></ul>|
 
 ## Examples
 
@@ -57,8 +60,49 @@ $(document).ready(function () {
 			templateUrl: "api/reportdesigner/resources/templates/telerikReportViewerTemplate.html/",
 			viewMode: "INTERACTIVE",
 			pageMode: "SINGLE_PAGE"
-		}
+		},
+		error: onError,
+		notificationShowing: onNotificationShowing
 	}).data("telerik_WebDesigner");
 });
+
+function onError(e, args) {
+	// e: jQuery event;
+	// args: IErrorEventArgs ->
+		// message: error message, string;
+		// error: JS's Error instance.
+
+	if (args.error) {
+		console.log(`An error occurred! Message: ${args.message}; Error type: ${args.error.constructor.name}`);
+	} else {
+		console.log(`An error occurred! Message: ${args.message};`);
+	}
+}
+
+function onNotificationShowing(e, args) {
+	// e: jQuery event
+	// args: INotificationErrorEventArgs ->
+		// type: string, obtained from NotificationTypes. Available values: info, warning, error, success
+		// message: notification message, string.
+		// error: JS's Error instance
+		// cancel: boolean, determines if showing the notification will be canceled.
+	switch (args.type) {
+		case "success":
+		case "info":
+		case "warning":                    
+			console.log(`Message: ${args.message}`);
+			// disable the notification pop-up.
+			args.cancel = true;
+			break;
+
+		case "error":
+			if (args.error) {
+				console.log(`Error message: ${args.message}; Error type: ${args.error.constructor.name}`);
+			} else {
+				console.log(`Error message: ${args.message};`);
+			}
+			break;
+	}
+}
 ````
 

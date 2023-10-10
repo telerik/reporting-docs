@@ -177,11 +177,17 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
         position: 4
         title: "Angular Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer:
+        position: 5
+        title: "Native Angular Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing:
         position: 12
         title: "Customizing"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
         position: 14
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference:
+        position: 15
         title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
         position: 5
@@ -423,13 +429,13 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
-suiteversion: "R2 2023"
-buildversion: "17.1.23.718"
-reportserverversion: "9.1.23.718"
-angularviewerversion: "19.23.718"
-reactviewerversion: "19.23.718"
+suiteversion: "R3 2023"
+buildversion: "17.2.23.1011"
+reportserverversion: "9.2.23.1011"
+angularviewerversion: "19.23.1011"
+reactviewerversion: "19.23.1011"
 kendosubsetversion: "2022.3.913"
-blazoruiversion: "4.1.0"
+blazoruiversion: "4.4.0"
 
 # Feedback Form Google Sheet ID
 ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'

@@ -26,7 +26,7 @@ The Native Angular Report Viewer exposes the ability to trigger various commands
 
 ## Commands Usage Example
 
-The following example a illustrates a list of all the available commands in the viewer, and how they may be invoked:
+The following example illustrates a list of all the available commands in the viewer, and how they may be invoked:
 
 ````HTML
 <reporting-angular-viewer

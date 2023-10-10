@@ -10,19 +10,19 @@ position: 8
 
 # Web Report Designer Customization
 
-Starting with R3 2023, the Telerik Web Report Designer provides customization options.
+Starting with R3 2023, the Telerik Web Report Designer can be customized either for all users or for particular users based on certain criteria.
 
 ## Customization Options
 
-The customization options the developer may pass to the client of the Web Report Designer in the latest Reporting version {{site.buildversion}} are:
+Customization options the developer may pass to the client of the Web Report Designer in the latest Telerik Reporting version {{site.buildversion}}:
 
-* __Permissions__: a list of permissions that will be denied client-side
+* __Permissions__: a list of permissions that will be denied to the user client-side
 
 There are two approaches for providing the customization options to the ReportDesigner.
 
 ## Customizing Web Report Designer for All Users
 
-The customization options like denied permissions may be configured for all users of the Web Report Designer through the corresponding property in the `ReportDesignerServiceConfiguration`.
+The customization options like denied permissions may be configured for all users of the Web Report Designer through the corresponding property in the `ReportDesignerServiceConfiguration`. For the permissions, this is the property `DeniedPermissions`:
 
 ````CSharp
 services.TryAddSingleton((Func<IServiceProvider, IReportDesignerServiceConfiguration>)(sp => new ReportDesignerServiceConfiguration
@@ -39,7 +39,7 @@ The above code will deny the Web Report Designer client to add PictureBox and HT
 
 ## Fine Tune the Customization in the Web Report Designer
 
-By overriding the virtual methods exposed for the corresponding property.
+The Web Designer may customized per user or based on other conditions by overriding the Reporting REST Service virtual methods exposed for the corresponding property.
 
 For example, by overriding the virtual method `GetDeniedPermissions` you may create logic that returns different permissions per user.
 
@@ -62,3 +62,4 @@ public override IActionResult GetDeniedPermissions()
 }
 ````
 
+The code above denies the users (all in this case) to add PictureBox and HTMLTextBox items. It also hides the menu command Document > NewCombined, forbids the user to delete and edit an existing SharedDataSource, and hides the AssetsManager.

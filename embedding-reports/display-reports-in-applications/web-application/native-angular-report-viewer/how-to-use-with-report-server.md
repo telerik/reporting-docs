@@ -89,7 +89,7 @@ ng add @angular/localize
 
 	````JSON
 "styles": [
-		"example/src/styles.scss",
+		"src/styles.scss",
 		"node_modules/@progress/kendo-theme-default/dist/default-ocean-blue.scss"
 	],
 ````

@@ -35,9 +35,9 @@ The options can be set from the `.HTML`/`.TS` component file or both(combined):
 </reporting-angular-viewer>
 ````
 ````TypeScript
-import { Component } from '@angular/core';
-	import { ReportingAngularViewerComponent } from '@progress/reporting-angular-viewer'
-	import { ReportSourceOptions } from '@progress/telerik-common-report-viewe'
+import { Component, ViewChild  } from '@angular/core';
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportSourceOptions } from '@progress/telerik-common-report-viewe'
 	
 	@Component({
 		selector: 'app-root',
@@ -48,7 +48,7 @@ import { Component } from '@angular/core';
 	export class AppComponent {
 		title = 'Native Angular Report Viewer Demo';
 	
-		public viewer!: ReportingAngularViewerComponent;
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
 	
 		reportSource: ReportSourceOptions = { report: "Dashboard.trdx", parameters: { ReportYear: 2004 } };
 		serviceUrl: string = "https://demos.telerik.com/reporting/api/reports";

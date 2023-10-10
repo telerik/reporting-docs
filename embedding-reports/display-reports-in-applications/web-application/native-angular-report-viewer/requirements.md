@@ -51,6 +51,12 @@ To check your Node.js version, run `node --version` in a terminal or console win
 
 The Native Angular Report Viewer is built with the [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) suite and as such, the Angular versions that it can be used on depend on the supported versions of said components - [Kendo UI for Angular Supported Versions](https://www.telerik.com/kendo-angular-ui/components/installation/requirements/#toc-angular)
 
+## Kendo UI for Angular
+
+The Native Angular Report Viewer is built using the [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) component library and thus using the viewer requires a license for said product - [Buy Kendo UI](https://www.telerik.com/purchase/kendo-ui).
+
+The Native Angular Report Viewer is built with version [13.2.0 (2023-07-18)](https://www.telerik.com/kendo-angular-ui/components/changelogs/kendo-angular-ui/#v13.2.0) of [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) and will not support older versions.
+
 
 ## Browser Support
 

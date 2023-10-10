@@ -10,19 +10,42 @@ position: 8
 
 # Web Report Designer Customization
 
-Starting with R3 2023, the Telerik Web Report Designer provides customization options. The available customization options are listed in the `Permission` enumeration.
+Starting with R3 2023, the Telerik Web Report Designer provides customization options.
+
+## Customization Options
+
+The customization options the developer may pass to the client of the Web Report Designer in the latest Reporting version {{site.buildversion}} are:
+
+* __Permissions__: a list of permissions that will be denied client-side
 
 There are two approaches for providing the customization options to the ReportDesigner.
 
 ## Customizing Web Report Designer for All Users
 
-The permissions may be configured for all users of the Web Report Designer in the `ReportDesignerServiceConfiguration`.
+The customization options like denied permissions may be configured for all users of the Web Report Designer through the corresponding property in the `ReportDesignerServiceConfiguration`.
 
-## Fine Tune the Permissions in the Web Report Designer
+````CSharp
+services.TryAddSingleton((Func<IServiceProvider, IReportDesignerServiceConfiguration>)(sp => new ReportDesignerServiceConfiguration
+{
+	//...
+	DeniedPermissions = ReportDesignerPermissionsBuilder.Build(
+		Permission.Create_Components_ReportItems_PictureBox,
+		Permission.Create_Components_ReportItems_HTMLTextBox
+		)
+}));
+````
 
-By overriding the virtual method `GetDeniedPermissions` you may create logic that returns different permissions per user or based on other conditions.
+The above code will deny the Web Report Designer client to add PictureBox and HTMLTextBox items. The user will still be able to edit existing ones.
+
+## Fine Tune the Customization in the Web Report Designer
+
+By overriding the virtual methods exposed for the corresponding property.
+
+For example, by overriding the virtual method `GetDeniedPermissions` you may create logic that returns different permissions per user.
 
 ### Example:
+
+Sample implementation of the `GetDeniedPermissions`. The returned permissions are the ones that will be __denied__ to the user(s):
 
 ````CSharp
 public override IActionResult GetDeniedPermissions()

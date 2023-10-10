@@ -16,7 +16,7 @@ Starting with R3 2023, the Telerik Web Report Designer can be customized either 
 
 Customization options the developer may pass to the client of the Web Report Designer in the latest Telerik Reporting version {{site.buildversion}}:
 
-* __Permissions__: a list of permissions that will be denied to the user client-side
+* __DeniedPermissions__: a list of permissions that will be denied to the user client-side
 
 There are two approaches for providing the customization options to the ReportDesigner.
 

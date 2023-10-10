@@ -26,7 +26,7 @@ The following list describes the prerequisites for completing the tutorial:
 1. Install the Native Angular Report Viewer NPM package with the following command:
 
 	````powershell
-npm install -f @progress/telerik-angular-report-viewer-native
+npm install -f @progress/telerik-angular-native-report-viewer
 ````
 
 	>If you receive a *403 Forbidden Error*, you need to register and login at [npmjs.com](https://www.npmjs.com/) before performing this step.
@@ -39,7 +39,7 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 1. Once installed, import the `ReportingAngularViewerModule` in [your application root module](https://angular.io/guide/ngmodules#!#angular-modularity):
 
 	````TypeScript
-import { ReportingAngularViewerModule } from '@progress/telerik-angular-report-viewer-native';
+import { ReportingAngularViewerModule } from '@progress/telerik-angular-native-report-viewer';
 	...
 	@NgModule({
 		declarations: [

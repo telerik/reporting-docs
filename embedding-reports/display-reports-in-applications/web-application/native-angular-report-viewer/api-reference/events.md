@@ -42,7 +42,7 @@ The `updateUI` event will be emitted when the state of the viewer changes.
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -81,7 +81,7 @@ The `printStarted` event will be emitted when the printing starts.
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -120,7 +120,7 @@ The `printDocumentReady` event will be emitted after the viewer finishes printin
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -159,7 +159,7 @@ The `exportStarted` event will be emitted when an export operation is triggered.
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -198,7 +198,7 @@ The `exportDocumentReady` event will be emitted after the viewer finishes export
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -237,7 +237,7 @@ The `beforeLoadReport` event will be emitted before the rendering of a report be
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -276,7 +276,7 @@ The `beginLoadReport` event will be emitted after the rendering of a report begi
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -315,7 +315,7 @@ The `reportLoadProgress` event will be emitted after each successful [`Get Docum
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 import { DocumentInfo } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
@@ -356,7 +356,7 @@ The `reportLoadComplete` event will be emitted after the rendering of a report e
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 import { DocumentInfo } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
@@ -397,7 +397,7 @@ The `renderingStopped` event will be emitted when report rendering is cancelled.
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -436,7 +436,7 @@ The `error` event will be emitted when viewer encounters an error.
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -476,7 +476,7 @@ The `loadedReportChange` event will be emitted when the previewed report is __ch
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -515,7 +515,7 @@ The `pageReady` event will be emitted when the viewer content has been loaded fr
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 import { PageInfo } from '@progress/telerik-common-report-viewer'
 	
 	@Component({
@@ -556,7 +556,7 @@ The `navigateToReport` event will be emitted when the viewer navigates to a new 
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -595,7 +595,7 @@ The `currentPageChanged` event will be emitted when the viewer changes its curre
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -635,7 +635,7 @@ The `interactiveActionExecuting` event will be emitted before an interactive act
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -674,7 +674,7 @@ The `reportVersionMismatch` event will be emitted when there is mismatch between
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 	
 	@Component({
 		selector: 'app-root',
@@ -713,7 +713,7 @@ The `parametersLoaded` event will be emitted after the [`Get Report Parameters `
 ````
 ````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 import { ReportParameterInfo } from '@progress/telerik-common-report-viewer'
 	
 	@Component({

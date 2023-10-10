@@ -49,7 +49,7 @@ The following example illustrates a list of all the available commands in the vi
 ````
 ````TypeScript
 import { Component, ViewChild  } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 import { ReportSourceOptions } from '@progress/telerik-common-report-viewer'
 	
 interface commandButtons {

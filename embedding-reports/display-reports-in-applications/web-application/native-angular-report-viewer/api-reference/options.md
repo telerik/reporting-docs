@@ -36,7 +36,7 @@ The options can be set from the `.HTML`/`.TS` component file or both(combined):
 ````
 ````TypeScript
 import { Component, ViewChild  } from '@angular/core';
-import { ReportingAngularViewerComponent } from '@progress/telerik-angular-report-viewer-native'
+import { ReportingAngularViewerComponent } from '@progress/telerik-angular-native-report-viewer'
 import { ReportSourceOptions } from '@progress/telerik-common-report-viewe'
 	
 	@Component({

@@ -123,7 +123,8 @@ export class AppComponent {
 |navigateToNextPage|none|Goes to the next page of the report.|
 |navigateToLastPage|none|Goes to the last page of the report.|
 |setViewMode|none|Toggles between Print Preview and Interactive view modes.|
-|setScaleMode| An object with `scaleMode`(and `scale` too if 'specific' scale mode is used)|Changes the viewer's scaleMode.
+|setScaleMode| An object with `scaleMode`(and `scale` for'specific' scale mode is used)|Changes the viewer's scaleMode|
+|setAuthenticationToken | authentication token| A bearer token to be added in the Authorization token of each request|
 |exportReport|rendering extension name|Exports the report, using the respective rendering extension name.|
 |printReport|none|Triggers the report printing.|
 |toggleDocumentMap|none|Shows or hides the document map.|

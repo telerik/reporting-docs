@@ -6,7 +6,6 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,use,native,angular,report,viewer,with,report,server
 published: True
 position: 3
-previous_url: /angular-report-viewer-with-report-server
 ---
 
 # Integrating the Angular Report Viewer with the Report Server

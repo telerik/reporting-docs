@@ -432,8 +432,8 @@ defaults:
 suiteversion: "R3 2023"
 buildversion: "17.2.23.1010"
 reportserverversion: "9.2.23.1010"
-angularviewerversion: "19.23.1010"
-reactviewerversion: "19.23.1010"
+angularviewerversion: "20.23.1010"
+reactviewerversion: "20.23.1010"
 kendosubsetversion: "2022.3.913"
 blazoruiversion: "4.4.0"
 

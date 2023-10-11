@@ -1,8 +1,8 @@
 ---
 title: Overview
 page_title: Integrating the Native Angular Report Viewer
-description: "Learn about the requirements of the Native Angular Report Viewer, what module loaders can be used and what are the supported browsers."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/native-angular-report-viewer-overview
+description: "Learn about the requirements of the Native Angular Report Viewer, what module loaders can be used, and what are the supported browsers."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview
 tags: angular,native,report,viewer,overview
 published: True
 position: 0
@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-The Native Angular Report Viewer is a native Angular component which can be used in Angular applications.
+The Native Angular Report Viewer is a native Angular component that can be used in Angular applications.
 
 ![The preview of the demo report 'Report Catalog' in the Native Angular Report Viewer in the Microsoft Edge browser](../images/NativeAngularReportViewer/angular-report-viewer-overview.png)
 
@@ -50,4 +50,4 @@ A complete example with the native Angular Report Viewer can be found in the ins
 * [Native Angular Report Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%})
 * [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
 * [Native Angular Report Viewer Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands%})
-* [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
+* [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events%})

@@ -1,14 +1,14 @@
 ---
 title: Integration with Reporting REST Service
-page_title: Using Angular Report Viewer with a Reporting REST Service
-description: "Learn how the Angular Report Viewer can be implemented in an Angular application that connects to a Reporting service with a few simple steps."
+page_title: Using Native Angular Report Viewer with a Reporting REST Service
+description: "Learn how the Native Angular Report Viewer can be implemented in an Angular application that connects to a Reporting service with a few simple steps."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service
 tags: how,to,use,angular,report,viewer,with,angular,cli
 published: True
 position: 2
 ---
 
-# Integrating the Angular Report Viewer with Reporting Service
+# Integrating the Native Angular Report Viewer with the Reporting Service
 
 This tutorial demonstrates how to add the native Angular Report Viewer component to a new Angular application.
 
@@ -103,4 +103,4 @@ npm run start
 * [Enabling CORS for the Reporting REST Service]({%slug cannot-access-the-reporting-rest-service%})
 * [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
 * [Native Angular Report Viewer Commands]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/commands%})
-* [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})
+* [Native Angular Report Viewer Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/events%})

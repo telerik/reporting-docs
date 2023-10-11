@@ -174,20 +174,20 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/customizing:
         position: 15
         title: "Customizing"
-    embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
-        position: 4
-        title: "Angular Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer:
         position: 5
         title: "Native Angular Report Viewer"
+    embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference:
+        position: 15
+        title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
+        position: 4
+        title: "Angular Report Viewer"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing:
         position: 12
         title: "Customizing"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference:
         position: 14
-        title: "API Reference"
-    embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference:
-        position: 15
         title: "API Reference"
     embedding-reports/display-reports-in-applications/web-application/react-report-viewer:
         position: 5
@@ -492,4 +492,3 @@ assets:
 ## Do not edit below this line
 safe: false
 markdown: MarkdownProcessor
-

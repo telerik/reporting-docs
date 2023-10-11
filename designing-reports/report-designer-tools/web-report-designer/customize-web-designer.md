@@ -10,7 +10,7 @@ position: 8
 
 # Web Report Designer Customization
 
-Starting with R3 2023, the Telerik Web Report Designer can be customized either for all users or for particular users based on certain criteria.
+Starting with [R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010), the Telerik Web Report Designer can be customized either for all users or for particular users based on certain criteria.
 
 ## Customization Options
 
@@ -45,7 +45,7 @@ For example, by overriding the virtual method `GetDeniedPermissions` you may cre
 
 ### Example:
 
-Sample implementation of the `GetDeniedPermissions`. The returned permissions are the ones that will be __denied__ to the user(s):
+A sample implementation of the `GetDeniedPermissions`. The returned permissions are the ones that will be __denied__ to the user(s):
 
 ````CSharp
 public override IActionResult GetDeniedPermissions()

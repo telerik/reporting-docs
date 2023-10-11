@@ -39,6 +39,12 @@ XML-based configuration file:
 ````XML
 <Telerik.Reporting>
 	<processing cacheDefinitionProperties="false">
+		<!--The element below sets the graphics engine used for measurement and rendering.
+		Available values for engineName: "Skia", "Gdi", "PlatformDependent". Default value: PlatformDependent.-->
+
+		<graphicsEngine engineName="PlatformDependent">
+		</graphicsEngine>
+
 		<!--The element below represents a Path resource resolver:-->
 		<!--<resourceResolver provider="path">
 			<parameters>
@@ -62,7 +68,7 @@ XML-based configuration file:
 				<parameter name="typeName" value="Namespace.CustomSharedDataSourceResolverClass, AssemblyName" />
 				<parameter name="constructorParameter1" value="constructorParameterValue1" />
 			</parameters>
-		</resourceResolver>
+		</sharedResourceResolver>
 	</processing>
 </Telerik.Reporting>
 ````
@@ -72,6 +78,10 @@ JSON-based configuration file:
 ````JSON
 "telerikReporting": {
 	"processing": {
+			// The element below sets the graphics engine used for measurement and rendering. Available values for engineName: "Skia", "Gdi", "PlatformDependent". Default value: PlatformDependent.
+		"graphicsEngine": {
+        	"engineName": "PlatformDependent" 
+      	},
 		"cacheDefinitionProperties": "false",
 		"resourceResolver": {
 			// The element below represents a Path resource resolver:
@@ -129,6 +139,20 @@ We provide a mechanism for caching the report definition properties that boosts 
 Basically, the [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) are not intended to be used to modify the report definition, as explained in the [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) article. For that reason, in [R3 2016 (10.2.16.914)](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914)) for performance reasons, we introduced a change - `cacheDefinitionProperties` which caches the report definition properties, so such modifications are not respected. Setting the _cacheDefinitionProperties_ to _false_ will skip the definition item properties caching, which will allow the report definition to be changed in the report events. This may result in parformance penalty though.
 
 Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109) `CacheDefinitionProperties` was exposed as a Report definition property in the `ReportEngineSettings` properties collecction, so that you may specify it per Report. The property value may be set to `Default`, `True`, or `False`. The `Default`, which is the default value, lets you specify that the Reporting engine should respect the _cacheDefinitionProperties_ set in its configuration on the project level.
+
+### GraphicsEngine
+
+The __graphicsEngine__ element sets the graphics engine used for processing and rendering the reports. There are two implementations of graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET 7 or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
+
+If the __graphicsEngine__ element is not present in the configuration file, the *PlatformDependent* value will be used.
+Skia implementation is not available in applications that target .NET Framework. They can work only with the GDI graphics engine implementation.
+
+### `<graphicsEngine>` element
+
+|   |   |
+| ------ | ------ |
+|Attributes| __engineName__ – required string attribute. Determines the type of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) used in the application. Available values:<ul><li>__PlatformDependent__ - the default value. On Windows platform the application will use GDI graphics engine. On non-Windows platforms the application will use Skia graphics engine.</li><li>__Gdi__ - the application will use GDI graphics engine. On non-Windows platforms in applications that target .NET 7 or higher, this will cause runtime exceptions of type __PlatformNotSupported__ to be thrown. For .NET 6 and lower frameworks this setting will require installing __libgdiplus__ library that handles GDI calls.</li><li>__Skia__ - the application will use the Skia graphics engine through the SkiaSharp implementation. Can be used on Windows and non-Windows platforms in applications that target .NET 6 or higher framework.</li></ul>|
+
 
 ### ResourceResolver
 

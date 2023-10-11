@@ -19,7 +19,7 @@ You need to implement the __IReportServiceClientFactory__ interface and its only
 
 Once you have implemented __IReportServiceClientFactory__, you should provide an instance to the report viewer so it will use it the next time it creates a new instance of the __ReportServiceClient__ - that is when the report or report service Uri have changed or the __RefreshReportCommand__ is executed through the __ReportViewerModel__.
 
-The ReportViewer usually passes absolute [Uri](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/txt7706a(v=vs.95)) to the _IReportServiceClientFactory.Create()_ method. For more information on how the ReportServiceUri is resolved to absolute please review [Telerik.ReportViewer.Silverlight.ReportViewer.EnsureAbsoluteUri](/api/Telerik.ReportViewer.Silverlight.ReportViewer#Telerik_ReportViewer_Silverlight_ReportViewer_EnsureAbsoluteUri_System_Uri_)
+The ReportViewer usually passes absolute [Uri](https://learn.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/txt7706a(v=vs.95)) to the _IReportServiceClientFactory.Create()_ method. For more information on how the ReportServiceUri is resolved to absolute please review __Telerik.ReportViewer.Silverlight.ReportViewer.EnsureAbsoluteUri__.
 
 The example below illustrates how to implement and use a custom __IReportServiceClientFactory__:
 

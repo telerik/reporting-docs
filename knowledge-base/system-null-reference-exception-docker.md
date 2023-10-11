@@ -42,6 +42,6 @@ System.NullReferenceException: Object reference not set to an instance of an obj
 ```
 
 ## Solution
-[Install the Microsoft true type fonts](https://www.maketecheasier.com/install-microsoft-truetype-fonts-linux/) in the container and point the fonts folder in the application configuratino file, for example, __app.config__ file for desktop applications.
+[Install the Microsoft true type fonts](https://www.maketecheasier.com/install-microsoft-truetype-fonts-linux/) in the container and point the fonts folder in the application configuration file, for example, __app.config__ file for desktop applications.
 
 

@@ -15,21 +15,21 @@ The [ReportPackager](/api/Telerik.Reporting.ReportPackager) serializes the repor
 
 ## Packaging .TRDX report definition
 
-The following sample code snipped demonstrates how to package a predefined .TRDX (XML) report definition:
+The following sample code snippet demonstrates how to package a predefined .TRDX (XML) report definition:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromXmlReportSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromXmlReportSnippet}}
 
 ## Packaging CLR report definition
 
-The following sample code snipped demonstrates how to package a predefined CLR (C# or VB) report definition:
+The following sample code snippet demonstrates how to package a predefined CLR (C# or VB) report definition:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=CreatePackageFromClrReportSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=CreatePackageFromClrReportSnippet}}
 
 ## Unpackaging
 
-The following sample code snipped demonstrates how to unpackage a predefined .TRDP report definition:
+The following sample code snippet demonstrates how to unpackage a predefined .TRDP report definition:
 
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportPackagerSnippets.cs region=UnpackageTrdpSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportPackagerSnippets.vb region=UnpackageTrdpSnippet}}

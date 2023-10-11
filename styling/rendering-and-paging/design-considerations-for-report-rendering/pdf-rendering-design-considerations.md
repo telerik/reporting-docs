@@ -19,7 +19,7 @@ table th:nth-of-type(2) {
 
 # Design Considerations for the PDF Rendering
 
-The PDF Rendering Extension of Telerik Reporting produces a version __1.6 PDF file__ . The file can be opened with __Adobe Acrobat 7.0__  or later.  The file is compressed using the FlateDecode filter. The PDF rendering extension is a physical page renderer, thus has pagination behavior that differs from other rendering extensions such as HTML and Excel, which are not page oriented. PDF and Image Export Formats share the same high-level layout engine. Therefore all rules and design considerations that apply for the __Image Rendering Extension__ apply for __PDF__ as well.
+The PDF Rendering Extension of Telerik Reporting produces a version __1.6 PDF file__ . The file can be opened with __Adobe Acrobat 7.0__  or later.  The file is compressed using the FlateDecode filter. The PDF rendering extension is a physical page renderer, thus has pagination behavior that differs from other rendering extensions such as HTML and Excel, which are not page-oriented. PDF and Image Export Formats share the same high-level layout engine. Therefore all rules and design considerations that apply for the __Image Rendering Extension__ apply for __PDF__ as well.
 
 The __PDF rendering__ extension is based on the Image rendering extension, with some differences. For information common to the Image rendering extension and the PDF rendering extension, see [Design Considerations for Image Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/image-rendering-design-considerations%}). This topic describes features that are specific to the PDF rendering extension.
 
@@ -31,7 +31,7 @@ Due to anti-aliasing which some PDF viewers apply, report item borders may not b
 
 The PDF rendering extension embeds fonts by default. This functionality is controlled by the [FontEmbedding]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}) device information setting. Fonts that are used in a report must be installed on the machine where the application is running or [privateFonts]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) must be configured, so the PDF rendering can embed them. If you disable font embedding, the fonts used in the report must be installed on the client computers used to view the report. When the report engine generates a report in PDF format, it uses the information stored in the font to measure and create character mappings within the PDF file. If the referenced font is not available, the resulting PDF file might not contain the correct mappings and might not display correctly when viewed. Before deploying the report on a production server, you should test the PDF output on client computers to verify that the report renders correctly. Do not rely on the Designer Preview or rendering to HTML, because GDI font substitution in those formats behaves differently than PDF. If there are Unicode Glyphs missing on the server, you may see characters replaced with a question mark and if there is a font missing on the client, you may see characters replaced with boxes.
 
->warning When designing a report that would be exported to PDF, you should make sure that the font you use in the report supports the characters that would be displayed. For example when you use a font that does not support non-Latin characters, but then non-Latin characters are added to the report and it is exported to PDF, they would be replaced by question mark character (?) as PDF doesn’t automatically substitute fonts.
+>warning When designing a report that would be exported to PDF, you should make sure that the font you use in the report supports the characters that would be displayed. For example when you use a font that does not support non-Latin characters, but then non-Latin characters are added to the report and it is exported to PDF, they would be replaced by question mark characters (?) as PDF doesn’t automatically substitute fonts.
 
 
 To view the list of fonts that are embedded in a PDF file, open the file in Adobe Acrobat and from the __File__ menu, view __Properties__ . The __Fonts__  tab displays the list of fonts that are embedded in the file.
@@ -54,7 +54,7 @@ Digital Signature functionality is not available due to the missing support for 
 
 ## Password Protection
 
-The PDF rendering extension allows password protection with document content encryption. You can specify owner password and user password. The user password gives read only permissions. The passwords are defined with the rendering extension device info. For more information see: [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}).
+The PDF rendering extension allows password protection with document content encryption. You can specify the owner password and user password. The user password gives read-only permissions. The passwords are defined with the rendering extension device info. For more information see: [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}).
 
 ## Digital Signature
 
@@ -64,7 +64,7 @@ In the PDF document model, the validation is performed per signature. A signed d
 
 To sign a PDF document a path to a X.509 certificate is specified in the rendering extension device info. For more information see: [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}).
 
->important You need to reference a `.PFX` file. The reason is that it includes both the public and private key that are required for the associated certificate. A '.cer' file embeds only the public key.
+>important You need to reference a `.PFX` file. The reason is that it includes both the public and private keys that are required for the associated certificate. A '.cer' file embeds only the public key.
 
 ## Metadata
 
@@ -72,8 +72,8 @@ The PDF rendering extension writes the following information to the PDF file:
 
 | PDF property | Value |
 | ------ | ------ |
-|Creator|If custom value is not specified with [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}), the default value is Telerik Reporting product name and version.|
-|Producer|If custom value is not specified with [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}), the default value is Telerik Reporting product name and version.|
+|Creator|If a custom value is not specified with [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}), the default value is Telerik Reporting product name and version.|
+|Producer|If a custom value is not specified with [PDF Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/pdf-device-information-settings%}), the default value is Telerik Reporting product name and version.|
 |CreationDate|Report execution time|
 
 
@@ -111,20 +111,22 @@ The PDF Rendering extension has the following performance considerations:
 
 The accessibility of the PDF document is controlled by the __EnableAccessibility__ option in the device information settings or by the same option in the report viewer that exports a document in PDF format. If __EnableAccessibility__ is set to __true__, the produced PDF document will contain additional metadata and structure elements in order to satisfy the [PDF/UA (ISO standard 14289-1)](https://en.wikipedia.org/wiki/PDF/UA) requirements. Adding accessibility information to a PDF document will result in an increased file size compared to a PDF file with disabled accessibility features.
 
-Below are listed the most important characteristics of a PDF document generated by Telerik Reporting engine:
+Below are listed the most important characteristics of a PDF document generated by the Telerik Reporting engine:
 
-* *Tagged contents* - all items in the report will have a corresponding specific entries in the PDF structure that will contain the actual text recognized by the screen readers and other assistive technologies. The rules to generate the text in tagged contents are the same used to generate the metadata in [report viewers with enabled accessibility.]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/accessibility%})
-* *Description for non-textual items* - the PictureBox, Graph and Map items should provide meaningful accessible descriptions in the report definition. This description will be persisted used in a tag elements with configured actual and alternate text. Other graphical primitives like borders will be treated as non-informational elements and will be added in the PDF document structure as *artifacts*.
+* *Tagged contents* - All items in the report will have corresponding specific entries in the PDF structure that will contain the actual text recognized by the screen readers and other assistive technologies. The rules to generate the text in tagged contents are the same used to generate the metadata in [report viewers with enabled accessibility.]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/accessibility%})
+* *Description for non-textual items* - The PictureBox, Graph, and Map items should provide meaningful accessible descriptions in the report definition. This description will be persisted and used in tag elements with configured actual and alternate text. Other graphical primitives like borders will be treated as non-informational elements and will be added to the PDF document structure as *artifacts*.
 * *Annotations* - all the links in the document will have a respective link annotation object in the PDF structure.
-* *Document Title* - the title should be provided from the device information settings object. In case it is unavailable, the [DocumentName](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_DocumentName) property of the report will be used instead.
-* *Document Natural Language* - the document language should be provided from the device information settings object. In case it is unavailable, the __Name__  of the [Culture](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_Culture)  property of the report will be used instead.
+* *Document Title* - The title should be provided from the device information settings object. In case it is unavailable, the [DocumentName](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_DocumentName) property of the report will be used instead.
+* *Document Natural Language* - The document language should be provided from the device information settings object. In case it is unavailable, the __Name__  of the [Culture](/reporting/api/Telerik.Reporting.Report#Telerik_Reporting_Report_Culture)  property of the report will be used instead.
+
+>important Merged table cells might not be interpreted correctly by accessibility assessment tools resulting in warnings about those structure elements.
 
 ## SVG Rendering
 
 The PDF rendering extension can render SVG images in either vector-based or raster-based graphic primitives.
 
-* The vector-based rendering preserves the image quality regardless the current zoom, but does not support all SVG elements like gradients and embedded images.
-* The raster-based rendering can be used with every SVG image and produces a bitmap which looks best at 100% scale, but does not preserve its quality when zooming in/out in the PDF document.
+* The vector-based rendering preserves the image quality regardless of the current zoom but does not support all SVG elements like gradients and embedded images.
+* The raster-based rendering can be used with every SVG image and produces a bitmap that looks best at 100% scale but does not preserve its quality when zooming in/out in the PDF document.
 
 The SVG rendering mode is controlled by a key in the device information settings object. The key is named __UseSvgVectorRendering__ and accepts a boolean value. Its default value is __true__.
 

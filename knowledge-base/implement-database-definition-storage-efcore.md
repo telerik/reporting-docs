@@ -119,6 +119,8 @@ using CSharp.Net7.Html5IntegrationDemo.EFCore.Models;
 
 			public DbSet<ReportFolder> ReportFolders { get; set; }
 
+			public SqlDefinitionStorageContext(DbContextOptions<SqlDefinitionStorageContext> options) : base(options) { }
+
 			protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 			{
 				if (!optionsBuilder.IsConfigured)
@@ -498,7 +500,7 @@ public class CustomReportSourceResolver : IReportSourceResolver
 			}
 
 			MemoryStream stream = new(report.Bytes);
-			Report report1 = (Report)reportPackager.UnpackageDocument(stream);
+			Telerik.Reporting.Report report1 = (Telerik.Reporting.Report)reportPackager.UnpackageDocument(stream);
 
 			var instanceReportSource = new InstanceReportSource
 			{
@@ -511,7 +513,50 @@ public class CustomReportSourceResolver : IReportSourceResolver
 ````
 
 
-1. Lastly, the [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration) should be set to use the `CustomDefinitionStorage` class implemented above:
+1. The custom `ReportSourceResolver` defined above will be sufficient for most scenario, however, when there are [`SubReports`]({%slug telerikreporting/designing-reports/report-structure/subreport%}) inserted in the report or when the [`NavigateToReport`]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) action is triggered, the engine will try to resolve those reports using the default `ReportDocumentResolver` which will try to resolve them by URI. That won't work in our case because the reports are stored in the database, thus, we need a custom implementation that may look as follows:
+
+
+	````CSharp
+using Microsoft.EntityFrameworkCore;
+	using SqlDefinitionStorageExample.EFCore;
+	using System;
+	using System.IO;
+	using System.Linq;
+	using Telerik.Reporting;
+	using Telerik.Reporting.Services;
+	
+	namespace SqlDefinitionStorageExample
+	{
+		public class CustomReportDocumentResolver : IReportDocumentResolver
+		{
+			public IReportDocument Resolve(ReportSource reportSource)
+			{
+				// The main report is wrapped in an InstanceReportSource by CustomReportSourceResolver
+				if (reportSource is InstanceReportSource)
+				{
+					return (reportSource as InstanceReportSource).ReportDocument;
+				}
+				// the subreport is resolved in the context of the main report SubReport
+				else if (reportSource is UriReportSource)
+				{
+					var reportPackager = new ReportPackager();
+					var uri = (reportSource as UriReportSource).Uri.Replace(AppDomain.CurrentDomain.BaseDirectory, string.Empty);
+					var optionsBuilder = new DbContextOptionsBuilder<SqlDefinitionStorageContext>();
+	
+					// It is necessary to initialize a new dbContent because this code will be executed in a new thread
+					using SqlDefinitionStorageContext dbContext = new(optionsBuilder.Options);
+					var report = dbContext.Reports.FirstOrDefault(r => r.Uri == uri) ?? throw new FileNotFoundException();
+					MemoryStream stream = new(report.Bytes);
+					return reportPackager.UnpackageDocument(stream);
+				}
+				return null;
+			}
+		}
+	}
+````
+
+
+1. Lastly, the [ReportDesignerServiceConfiguration](/api/Telerik.WebReportDesigner.Services.ReportDesignerServiceConfiguration) should be set to use the `CustomDefinitionStorage` class as well as the `CustomReportSourceResolver` and the `CustomReportDocumentResolver`:
 
 	````CSharp
 var builder = WebApplication.CreateBuilder(args);
@@ -521,9 +566,11 @@ var builder = WebApplication.CreateBuilder(args);
 	builder.Services.AddRazorPages()
 					.AddNewtonsoftJson();
 
+	// Add the custom resolvers and storages
 	builder.Services.AddDbContext<SqlDefinitionStorageContext>();
 	builder.Services.AddScoped<IDefinitionStorage, CustomDefinitionStorage>();
 	builder.Services.AddScoped<IReportSourceResolver, CustomReportSourceResolver>();
+	builder.Services.AddScoped<IReportDocumentResolver, CustomReportDocumentResolver>();
 
 	var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "..", "..", "..", "..", "Report Designer", "Examples");
 
@@ -538,7 +585,9 @@ var builder = WebApplication.CreateBuilder(args);
 			//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
 			HostAppId = "SqlDefinitionStorageExample",
 			Storage = new FileStorage(),
+			// Using the custom resolver implementations
 			ReportSourceResolver = sp.GetRequiredService<IReportSourceResolver>(),
+			ReportDocumentResolver = sp.GetRequiredService<IReportDocumentResolver>()
 		});
 
 	// Configure dependencies for ReportDesignerController.

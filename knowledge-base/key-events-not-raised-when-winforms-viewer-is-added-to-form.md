@@ -1,11 +1,10 @@
 ---
-title: Key Events Not Raised When WinForms Report Viewer is Added to Form
-description: "Learn how to propagate the key events from the WinForms Report Viewer to the Form or Telerik RadForm that hosts the viewer."
+title: Key and Mouse Events Not Raised When WinForms Report Viewer is Added to Form
+description: "Learn how to propagate the key and mouse events from the WinForms Report Viewer to the Form or Telerik RadForm that hosts the viewer."
 type: how-to
-page_title: WinForms Report Viewer doesn't raise Key Events
+page_title: WinForms Report Viewer doesn't raise Key and Mouse Events
 slug: key-events-not-raised-when-winforms-viewer-is-added-to-form
-position: 
-tags: 
+tags: event,key,mouse,form,report,viewer
 ticketid: 1608058
 res_type: kb
 ---
@@ -28,7 +27,6 @@ res_type: kb
 		</tr>
 	</tbody>
 </table>
-
 
 ## Description
 
@@ -65,8 +63,11 @@ Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys
 End Function
 ````
 
+Regarding the Mouse events you may use the approach suggested in the StackOverflow thread [Capture mouse click anywhere on Form (without IMessageFilter)](https://stackoverflow.com/questions/21312587/capture-mouse-click-anywhere-on-form-without-imessagefilter).
+
 ## See Also
 
 * [Windows Forms Application Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 * [Form.KeyPreview Property](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.keypreview?view=netframework-4.8)
 * [Form.ProcessCmdKey(Message, Keys) Method](https://learn.microsoft.com/en-us/dotnet/api/system.windows.forms.form.processcmdkey?view=netframework-4.8)
+* [Capture mouse click anywhere on Form (without IMessageFilter)](https://stackoverflow.com/questions/21312587/capture-mouse-click-anywhere-on-form-without-imessagefilter)

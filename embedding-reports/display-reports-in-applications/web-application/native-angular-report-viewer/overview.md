@@ -2,7 +2,7 @@
 title: Overview
 page_title: Integrating the Native Angular Report Viewer
 description: "Learn about the requirements of the Native Angular Report Viewer, what module loaders can be used and what are the supported browsers."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/native-angular-report-viewer-overview
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview
 tags: angular,native,report,viewer,overview
 published: True
 position: 0

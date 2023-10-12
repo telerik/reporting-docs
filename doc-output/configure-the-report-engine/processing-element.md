@@ -134,7 +134,7 @@ JSON-based configuration file:
 
 ### CacheDefinitionProperties
 
-We provide a mechanism for caching the report definition properties that boost the performance. Naturally, it prevents modifying the report during the processing stage. The default value of the property is __True__.
+We provide a mechanism for caching the report definition properties that boosts the performance. Naturally, it prevents modifying the report during the processing stage. The default value of the property is __True__.
 
 Basically, the [Report Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/overview%}) are not intended to be used to modify the report definition, as explained in the [Understanding Events]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/understanding-events%}) article. For that reason, in [R3 2016 (10.2.16.914)](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-r3-2016-(version-10-2-16-914)) for performance reasons, we introduced a change - `cacheDefinitionProperties` which caches the report definition properties, so such modifications are not respected. Setting the _cacheDefinitionProperties_ to _false_ will skip the definition item properties caching, which will allow the report definition to be changed in the report events. This may result in a performance penalty though.
 
@@ -145,7 +145,7 @@ Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats
 The __graphicsEngine__ element sets the graphics engine used for processing and rendering the reports. There are two implementations of the graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET 7 or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
 
 If the __graphicsEngine__ element is not present in the configuration file, the *PlatformDependent* value will be used.
-Skia implementation is not available in applications that target the .NET Framework. They can work only with the GDI graphics engine implementation.
+Skia implementation is not available in applications that target .NET Framework. They can work only with the GDI graphics engine implementation.
 
 ### `<graphicsEngine>` element
 

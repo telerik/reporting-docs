@@ -10,7 +10,7 @@ position: 0
 
 # Overview
 
-The Native Angular Report Viewer is a native Angular component that can be used in Angular applications.
+The Native Angular Report Viewer is a native Angular component built with [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components. It was introduced with [Telerik Reporting R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010).
 
 ![The preview of the demo report 'Report Catalog' in the Native Angular Report Viewer in the Microsoft Edge browser](../images/NativeAngularReportViewer/angular-report-viewer-overview.png)
 
@@ -37,11 +37,9 @@ The Native Angular Report Viewer is a native Angular component that can be used 
 |__Switch the Scale mode__|Switches the report view scale mode between fitting the report to the entire page view port or to the viewer's view port.
 |__Search__|Allows searching in the report content.
 
-
 ## Demo
 
 A complete example with the native Angular Report Viewer can be found in the installation folder of Telerik Reporting: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\Angular\native-angular-report-viewer-example`.
-
 
 ## See Also
 

@@ -22,7 +22,7 @@ There are two approaches for providing the customization options to the ReportDe
 
 ## Customizing Web Report Designer for All Users
 
-The customization options like denied permissions may be configured for all users of the Web Report Designer through the corresponding property in the `ReportDesignerServiceConfiguration`. For the permissions, this is the property `DeniedPermissions`:
+The customization options like denied permissions may be configured for all users of the Web Report Designer through the corresponding property in the [ReportDesignerServiceConfiguration](/api/telerik.webreportdesigner.services.reportdesignerserviceconfiguration). For the permissions, this is the property [DeniedPermissions](/api/telerik.webreportdesigner.services.reportdesignerserviceconfiguration#Telerik_WebReportDesigner_Services_ReportDesignerServiceConfiguration_DeniedPermissions):
 
 ````CSharp
 services.TryAddSingleton((Func<IServiceProvider, IReportDesignerServiceConfiguration>)(sp => new ReportDesignerServiceConfiguration
@@ -35,13 +35,13 @@ services.TryAddSingleton((Func<IServiceProvider, IReportDesignerServiceConfigura
 }));
 ````
 
-The above code will deny the Web Report Designer client to add PictureBox and HTMLTextBox items. The user will still be able to edit existing ones.
+The above code will deny the Web Report Designer client to add _PictureBox_ and _HTMLTextBox_ items. The user will still be able to edit existing ones.
 
 ## Fine Tune the Customization in the Web Report Designer
 
 The Web Designer may customized per user or based on other conditions by overriding the Reporting REST Service virtual methods exposed for the corresponding property.
 
-For example, by overriding the virtual method `GetDeniedPermissions` you may create logic that returns different permissions per user.
+For example, by overriding the virtual method [GetDeniedPermissions](/api/telerik.webreportdesigner.services.controllers.reportdesignercontrollerbase#Telerik_WebReportDesigner_Services_Controllers_ReportDesignerControllerBase_GetDeniedPermissions) you may create logic that returns different permissions per user.
 
 ### Example:
 
@@ -62,4 +62,4 @@ public override IActionResult GetDeniedPermissions()
 }
 ````
 
-The code above denies the users (all in this case) to add PictureBox and HTMLTextBox items. It also hides the menu command Document > NewCombined, forbids the user to delete and edit an existing SharedDataSource, and hides the AssetsManager.
+The code above denies the users (all in this case) to add _PictureBox_ and _HTMLTextBox_ items. It also hides the menu command for creating ReportBook _Document_ > _NewCombined_, forbids the user to delete and edit an existing _SharedDataSource_, and hides the _AssetsManager_.

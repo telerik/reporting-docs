@@ -24,7 +24,7 @@ res_type: kb
 	</tbody>
 </table>
 
->tip Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) we introduced a new graphics engine implementation, based on SkiaSharp library, which allows truly cross-platform deployment of Telerik Reporting applications, targeting .NET 6+. This release brings SkiaSharp-based rendering to web report viewers and PDF export format, and the rest are soon to follow. Check [GraphicsEngine]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}#graphicsengine) article section for details.
+>tip Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) we introduced a new graphics engine implementation, based on the [SkiaSharp](https://github.com/mono/SkiaSharp) library, which allows truly cross-platform deployment of Telerik Reporting applications, targeting .NET 6+. This release brings SkiaSharp-based rendering to web report viewers and PDF export format, and the rest are soon to follow. Check [GraphicsEngine]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}#graphicsengine) article section for details.
 
 ## Description
 

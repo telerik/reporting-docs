@@ -20,9 +20,9 @@ table th:nth-of-type(2) {
 
 # Report Engine Configuration Overview
 
-There are particular settings that can be applied to the Telerik Reporting engine to influence its behavior or extend it. These are defined in the application's configuration file. For __Windows and WPF applications__ the configuration file is called `app.config`, for __ASP.NET Framework applications__ – `web.config`. These configuration file is XML-based and its content is divided into sections.
+There are particular settings that can be applied to the Telerik Reporting engine to influence its behavior or extend it. These are defined in the application's configuration file. For __Windows and WPF applications__ the configuration file is called `app.config`, for __ASP.NET Framework applications__ – `web.config`. This configuration file is XML-based and its content is divided into sections.
 
-On the other hand, __.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named `appsettings.json`. For __.NET Core console applications__ both configuration types are supported, but __appsettings.json__ has precedence over __app.config__. __ASP.NET Core applications__ no longer use *web.config* so the configuration should be set to any of the supported [key-value based files](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0).
+On the other hand, __.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named `appsettings.json`. For __.NET Core console applications__ both configuration types are supported, but __appsettings.json__ has precedence over __app.config__. __ASP.NET Core applications__ no longer use *web.config* so the configuration should be set to any of the supported [key-value-based files](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0).
 
 > For more information about configuring a __.NET__ application, see [Configuring Apps by using Configuration Files](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/).
 
@@ -35,8 +35,8 @@ The root element of the configuration is named `<Telerik.Reporting>` in XML-base
 |   |   |
 | ------ | ------ |
 |Attributes|No attributes are defined for this element|
-|Child elements| [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})- specifies a collection of extensions, for which the configuration is applied<br/>[cache Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/cache-element%})- specifies the configuration settings for the cache management system which is utilized by the viewers to store and cache rendered pages and resources.<br/>[restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})- specifies the configuration settings for the REST report service.<br/>[assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})- specifies a collection of assembly references that are used from Reporting Engine during processing stage to resolve names of user functions and user aggregate functions.<br/>[privateFonts Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})- specifies a collection that allows the Reporting Engine to use a private version of a font without installing the font on the host machine. This element is __mandatory__ for rendering PDF files on Linux in a.Net Core application.<br/>[appData Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/appdata-element%})- specifies the configuration settings for the temporary application data stored on the machine.<br/>[dpiAware Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/dpiaware-element%})- specifies the application's DPI awareness setting which affects the reports rendering.|
-|Parent element| __Configuration__ - Specifies the required root element in every configuration file that is used by the common language runtime and the.NET Framework applications. Only one Telerik.Reporting element can be used in the Configuration element.|
+|Child elements| [extensions Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/extensions-element%})- specifies a collection of extensions, for which the configuration is applied<br/>[cache Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/cache-element%})- specifies the configuration settings for the cache management system which is utilized by the viewers to store and cache rendered pages and resources.<br/>[restReportService Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/restreportservice-element%})- specifies the configuration settings for the REST report service.<br/>[assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%})- specifies a collection of assembly references that are used from Reporting Engine during processing stage to resolve names of user functions and user aggregate functions.<br/>[privateFonts Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%})- specifies a collection that allows the Reporting Engine to use a private version of a font without installing the font on the host machine. This element is __mandatory__ for rendering PDF files on Linux in a .Net Core application.<br/>[appData Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/appdata-element%})- specifies the configuration settings for the temporary application data stored on the machine.<br/>[dpiAware Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/dpiaware-element%})- specifies the application's DPI awareness setting which affects the reports rendering.|
+|Parent element| __Configuration__ - Specifies the required root element in every configuration file that is used by the common language runtime and the .NET Framework applications. Only one Telerik.Reporting element can be used in the Configuration element.|
 
 ## XML-based Configuration
 
@@ -79,6 +79,20 @@ The custom configuration section's content:
 			</provider>
 		</providers>
 	</cache>
+	<processing>
+		<graphicsEngine>
+		</graphicsEngine>
+		<resourceResolver>
+			<parameters>
+				<parameter/>
+			</parameters>
+		</resourceResolver>
+		<sharedResourceResolver>
+			<parameters>
+				<parameter/>
+			</parameters>
+		</sharedResourceResolver>
+	</processing>
 	<restReportService>
 		<reportResolver/>
 		<storage>
@@ -106,7 +120,7 @@ The custom configuration section's content:
 
 ## JSON-based Configuration
 
-The JSON-based configuration structure used in `appsettings.json` or other key-value based files look like the following:
+The JSON-based configuration structure used in `appsettings.json` or other key-value-based files looks like the following:
 
 ````JSON
 "telerikReporting": {
@@ -134,6 +148,34 @@ The JSON-based configuration structure used in `appsettings.json` or other key-v
 				]
 			}
 		]
+	},
+	"processing": {
+		"graphicsEngine": {
+			"engineName": null
+		},
+		"cacheDefinitionProperties": null,
+		"resourceResolver": {
+			"provider": null,
+			"parameters": [
+				{
+					"name": null,
+					"value": null
+				},
+				{
+					"name": null,
+					"value": null
+				}
+			]
+		},
+		"sharedDataSourceResolver": {
+			"provider": null,
+				"parameters": [
+				{
+					"name": null,
+					"value": null
+				}
+			]
+		}
 	},
 	"restReportService": {
 		"hostAppId": null,

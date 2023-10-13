@@ -27,7 +27,7 @@ res_type: kb
 
 I receive the error message `Could not load file or assembly 'System.Resources.NetStandard'` in [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010).
 
-The problem occurs since with _R3 2023 (17.2.23.1010)_ we started using a _ResXResourceReader_ implementation for reading the embedded assembly resources. This class is not supported in .NET Standard and is not a part of .NET runtime, so we used a NuGet package to obtain this functionality. The name of the package is [ResXResourceReader.NetStandard](https://www.nuget.org/packages/ResXResourceReader.NetStandard), it uses an MIT license and has a strong-name variant.
+The problem occurs since with _R3 2023 (17.2.23.1010)_ we started using a __ResXResourceReader__ implementation for reading the embedded assembly resources. This class is not supported in .NET Standard and is not a part of .NET runtime, so we used a NuGet package to obtain this functionality. The name of the package is [ResXResourceReader.NetStandard](https://www.nuget.org/packages/ResXResourceReader.NetStandard), it uses an MIT license and has a strong-name variant.
 
 ## Error
 

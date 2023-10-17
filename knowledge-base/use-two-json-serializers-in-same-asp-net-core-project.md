@@ -28,11 +28,11 @@ A common requirement is to use [System.Text.Json](https://learn.microsoft.com/en
 
 The most suitable workarounds are explained in the feature request [Migrate to System.Text.Json for serialization, instead of using Newtonsoft.Json](https://feedback.telerik.com/reporting/1506593-migrate-to-system-text-json-for-serialization-instead-of-using-newtonsoft-json).
 
-In this article you may find a link to a sample with the implementation suggested in the Stackoverflow thread [How to configure two JSON serializers and select the correct one based on the route](https://stackoverflow.com/questions/59650907/how-to-configure-two-json-serializers-and-select-the-correct-one-based-on-the-ro).
+In this article, you may find a link to a sample with the implementation suggested in the Stackoverflow thread [How to configure two JSON serializers and select the correct one based on the route](https://stackoverflow.com/questions/59650907/how-to-configure-two-json-serializers-and-select-the-correct-one-based-on-the-ro).
 
-The sample project may be downloaded from our reporting-samples Github repository [Two Json Serializers](https://github.com/telerik/reporting-samples/tree/master/TwoJsonSerializers).
+The sample project may be downloaded from our `reporting-samples` Github repository [Two Json Serializers](https://github.com/telerik/reporting-samples/tree/master/TwoJsonSerializers).
 
-To ensure that the approach works you may put break points in the conditional statements for the two formatters in the method `ReadRequestBodyAsync` or `WriteResponseBodyAsync` of the `Controllers\CustomJsonFormatters.cs` file. The `Newtonsoft.Json` formatter should be hit when the Reporting REST Service is called by the viewer or by calling manually the service, for example, at the `~/api/reports/version`. The `System.Text.Json` formatter should be used when calling the Values controller, for example, at the end-point `~/api/values`.
+To ensure that the approach works, you may put break points in the conditional statements for the two formatters in the method `ReadRequestBodyAsync` or `WriteResponseBodyAsync` of the `Controllers\CustomJsonFormatters.cs` file. The `Newtonsoft.Json` formatter should be hit when the Reporting REST Service is called by the viewer or by calling manually the service, for example, at the `~/api/reports/version`. The `System.Text.Json` formatter should be used when calling the Values controller, for example, at the end-point `~/api/values`.
 
 Here is the code of the class that is not implemented in the Stackoverflow thread:
 

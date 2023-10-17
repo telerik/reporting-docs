@@ -32,7 +32,7 @@ In this article you may find a link to a sample with the implementation suggeste
 
 The sample project may be downloaded from our reporting-samples Github repository [Two Json Serializers](https://github.com/telerik/reporting-samples/tree/master/TwoJsonSerializers).
 
-To ensure that the approach works you may put break points in the conditional statements for the two formatters in the method `ReadRequestBodyAsync` or `WriteResponseBodyAsync` of the `Controllers\CustomJsonFormatters.cs` file. The `Newtonsoft.Json` formatter should be hit when the Reporting REST Service is called by the viewer or by calling manually the service, for example, at the '~/api/reports/version`. The `System.Text.Json` formatter should be used when calling the Values controller, for example, at the end-point `~/api/values`.
+To ensure that the approach works you may put break points in the conditional statements for the two formatters in the method `ReadRequestBodyAsync` or `WriteResponseBodyAsync` of the `Controllers\CustomJsonFormatters.cs` file. The `Newtonsoft.Json` formatter should be hit when the Reporting REST Service is called by the viewer or by calling manually the service, for example, at the '/api/reports/version`. The `System.Text.Json` formatter should be used when calling the Values controller, for example, at the end-point `/api/values`.
 
 Here is the code of the class that is not implemented in the Stackoverflow thread:
 

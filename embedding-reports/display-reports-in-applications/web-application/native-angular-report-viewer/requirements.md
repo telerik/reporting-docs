@@ -8,7 +8,6 @@ published: True
 position: 1
 ---
 
-
 <style>
 table th:first-of-type {
 	width: 10%;
@@ -30,20 +29,17 @@ table th:nth-of-type(6) {
 }
 </style>
 
-
 # System Requirements
 
-This article states the system requirements you need to work with the Native Angular Report Viwer.
-
+This article states the system requirements you need to work with the Native Angular Report Viewer.
 
 ## Operating Systems
 
-The Native Angular Report Viwer is OS agnostic.
-
+The Native Angular Report Viewer is OS agnostic.
 
 ## Node.js
 
-The required [Node.js](https://nodejs.org) version is 14.0.0 or later. Alongside the Node.js installation, a supported [NPM](https://www.npmjs.com/) version will be installed.
+The required [Node.js](https://nodejs.org) version is {{site.nodeversion}} or later. Alongside the Node.js installation, a supported [NPM](https://www.npmjs.com/) version will be installed.
 
 To check your Node.js version, run `node --version` in a terminal or console window.
 
@@ -55,8 +51,7 @@ The Native Angular Report Viewer is built with the [Kendo UI for Angular](https:
 
 The Native Angular Report Viewer is built using the [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) component library and thus using the viewer requires a license for said product - [Buy Kendo UI](https://www.telerik.com/purchase/kendo-ui).
 
-The Native Angular Report Viewer is built with version [13.2.0 (2023-07-18)](https://www.telerik.com/kendo-angular-ui/components/changelogs/kendo-angular-ui/#v13.2.0) of [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) and will not support older versions.
-
+The Native Angular Report Viewer is built with version [{{site.angularsubsetversion}}](https://www.telerik.com/kendo-angular-ui/components/changelogs/kendo-angular-ui/#v{{site.angularsubsetversion}}) of [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) and will not support older versions.
 
 ## Browser Support
 

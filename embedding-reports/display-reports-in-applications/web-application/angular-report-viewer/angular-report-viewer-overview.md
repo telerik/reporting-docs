@@ -11,7 +11,7 @@ previous_url: /angular-report-viewer, /using-reports-in-applications/display-rep
 
 # Angular Report Viewer Overview
 
-> The current Angular Report Viewer version is `{{site.angularviewerversion}}` and should be used with `Reporting REST Service {{site.buildversion}}` or `Telerik Report Server {{site.reportserverversion}}`.
+> The current Angular Report Viewer version is `{{site.spaviewerversion}}` and should be used with `Reporting REST Service {{site.buildversion}}` or `Telerik Report Server {{site.reportserverversion}}`.
 
 Integrate the Angular Report Viewer component in your Angular applications regardless of the module loader that you use (`WebPack` or `SystemJS`).
 

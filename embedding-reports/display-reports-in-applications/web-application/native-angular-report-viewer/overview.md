@@ -8,8 +8,10 @@ published: True
 position: 0
 ---
 
-# Overview
+# Native Angular Report Viewer Overview
 
+> The current Native Angular Report Viewer version is `{{site.spaviewerversion}}` and should be used with `Reporting REST Service {{site.buildversion}}` or `Telerik Report Server {{site.reportserverversion}}`.
+> 
 The Native Angular Report Viewer is a native Angular component built with [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components. It was introduced with [Telerik Reporting R3 2023](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010).
 
 ![The preview of the demo report 'Report Catalog' in the Native Angular Report Viewer in the Microsoft Edge browser](../images/NativeAngularReportViewer/angular-report-viewer-overview.png)

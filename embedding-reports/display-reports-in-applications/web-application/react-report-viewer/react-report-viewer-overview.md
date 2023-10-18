@@ -11,7 +11,7 @@ previous_url: /react-report-viewer, /using-reports-in-applications/display-repor
 
 # React Report Viewer Overview
 
-> The current React Report Viewer version is `{{site.reactviewerversion}}` and should be used with `Reporting REST Service {{site.buildversion}}` or `Telerik Report Server {{site.reportserverversion}}`.
+> The current React Report Viewer version is `{{site.spaviewerversion}}` and should be used with `Reporting REST Service {{site.buildversion}}` or `Telerik Report Server {{site.reportserverversion}}`.
 
 You can integrate the React Report Viewer component in your React applications. Note that the viewer is introduced in [R1 2022]({%slug telerikreporting/upgrade/2022/r1-2022%}).
 

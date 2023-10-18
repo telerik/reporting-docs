@@ -180,6 +180,9 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference:
         position: 15
         title: "API Reference"
+    embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing:
+        position: 14
+        title: "Customizing"
     embedding-reports/display-reports-in-applications/web-application/angular-report-viewer:
         position: 5
         title: "Angular Report Viewer"

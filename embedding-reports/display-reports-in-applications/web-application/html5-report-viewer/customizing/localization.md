@@ -16,9 +16,9 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 1. To localize the report viewer messages, create a new JavaScript file with the required string resources. You may use:
 
 	* the resource file that gets deployed with the installation of the product in the subfolder `Html5\ReportViewer\js\telerikReportViewer.stringResources-{{site.buildversion}}.js`, for example:
-	
+
 		`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\js\telerikReportViewer.stringResources-{{site.buildversion}}.js`
-	
+
 	* the following code snippet:
 
 		{{source=CodeSnippets\js\telerikReportViewer.stringResources}}
@@ -31,7 +31,7 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 <script src="stringResources.fr-BE.js"></script>
 ````
 
-	>The localization file must be loaded on the page before viewer's script `telerikReportViewer.js` and after jQuery script.
+	>The localization file must be loaded on the page before viewer's script `telerikReportViewer.js` and after jQuery script. Once loaded, the localization strings cannot be reloaded or modified on the same viewer due to the workflow.
 
 1. Translate the texts for the specified culture
 

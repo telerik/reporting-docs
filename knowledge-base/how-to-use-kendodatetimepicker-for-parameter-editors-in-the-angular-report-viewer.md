@@ -36,24 +36,23 @@ This article describes how to use the [KendoDateTimePicker](https://docs.telerik
 This approach allows the selection of date and time for the `DateTime` [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) that do not have available values.
 
 ## Solution
-> The [kendoDateTimePicker]((https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker) ) widget is not included in the Kendo UI JavaScript distributed by Telerik Reporting through the `telerikReportViewer.kendo.min.js` file, or `kendo.subset.2015.3.930.min.js` and older versions. For that reason, you will have to replace the Kendo UI subset with the full Kendo UI JavaScript e.g. `kendo.all.min.js`.
-
+> The [kendoDateTimePicker](https://docs.telerik.com/kendo-ui/api/javascript/ui/datetimepicker) widget is not included in the Kendo UI JavaScript distributed by Telerik Reporting through the `telerikReportViewer.kendo.min.js` file, or `kendo.subset.2015.3.930.min.js` and older versions. For that reason, you will have to replace the Kendo UI subset with the full Kendo UI JavaScript e.g. `kendo.all.min.js`.
 
 1. In the initializaion of the report viewer,`{component}.html`, specify the `parameterEditors` [option]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%}).
 
 	````HTML
 <tr-viewer #viewer1 *ngIf="visible"
-	[containerStyle]="viewerContainerStyle"
-	[serviceUrl]="'https://demos.telerik.com/reporting/api/reports/'"
-	[reportSource]="{
-		report: 'Product Line Sales.trdx',
-		parameters: {}
-	}" 
-	[parameterEditors]="[{
-		match: match,
-		createEditor: createEditor
-	}]" >
-</tr-viewer>
+		[containerStyle]="viewerContainerStyle"
+		[serviceUrl]="'https://demos.telerik.com/reporting/api/reports/'"
+		[reportSource]="{
+			report: 'Product Line Sales.trdx',
+			parameters: {}
+		}" 
+		[parameterEditors]="[{
+			match: match,
+			createEditor: createEditor
+		}]" >
+	</tr-viewer>
 ````
 
 

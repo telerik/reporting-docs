@@ -11,7 +11,7 @@ previous_url: /designing-reports-parameters
 
 # Report Parameters Overview
 
-This document describes the main uses of report parameters, report parameter properties, and parameter values. Report parameters allow you to control the report's content, to connect related reports, or to use them as arguments in functions.
+This document describes the main uses of report parameters, report parameter properties, and parameter values. Report parameters allow you to control the report's content, connect related reports, or use them as arguments in functions.
 
 To design a report that uses parameters effectively, you need to understand how parameters and [Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) components work together, how parameters and expressions work together, and how to manage parameters.
 
@@ -33,7 +33,7 @@ Report parameters can have the following properties:
 
 * [Type](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Type) 
 
-	Determines the type of the values that are acceptable. The allowed types are `Boolean`, `DateTime`, `Integer`, `Float`, and `String`. Acceptable values for each type are listed here: [ReportParameterType](/api/Telerik.Reporting.ReportParameterType) The default parameter type is `String`.
+	Determines the type of the values that are acceptable. The allowed types are `Boolean`, `DateTime`, `Integer` (values are converted to `System.Int64` or `long`), `Float`(values are converted to `System.Double` or `double`), and `String`. Acceptable values for each type are listed here: [ReportParameterType](/api/Telerik.Reporting.ReportParameterType) The default parameter type is `String`.
 
 * [Name](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Name)
 
@@ -65,7 +65,7 @@ Report parameters can have the following properties:
 
 * [MultiValue](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_MultiValue) 
 
-	Determines if a collection of values (of the specified `Type`) is acceptable as value of the parameter. Parameters with `MultiValue` turned on are mainly used with the __IN__ logical operator.
+	Determines if a collection of values (of the specified `Type`) is acceptable as a value of the parameter. Parameters with `MultiValue` turned on are mainly used with the __IN__ logical operator.
 
 * [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) 
 
@@ -90,7 +90,7 @@ Report parameters can have the following properties:
 
 ## Report Parameter Validation
 
-When a report enters in the processing stage, its value is validated against its validation properties. If one or more parameters do not have valid values, processing is aborted. The following properties are used to validate the supplied parameter’s value:
+When a report enters the processing stage, its value is validated against its validation properties. If one or more parameters do not have valid values, processing is aborted. The following properties are used to validate the supplied parameter’s value:
 
 * Type
 * AllowNull

@@ -14,13 +14,16 @@ table th:first-of-type {
 	width: 20%;
 }
 table th:nth-of-type(2) {
-	width: 80%;
+	width: 40%;
+}
+table th:nth-of-type(3) {
+	width: 40%;
 }
 </style>
 
 # PictureBox Report Item Overview
 
-The PictureBox report item displays images in a report, and supports Base64-encoded images, SVG (Scalable Vector Graphics), and GDI+-supported (BMP, GIF, JPEG, EXIF, PNG, and TIFF) image formats.
+The PictureBox report item displays images in a report and supports Base64-encoded images, SVG (Scalable Vector Graphics), and GDI+-supported (BMP, GIF, JPEG, EXIF, PNG, and TIFF) image formats.
 
 This document explains how to add an image to a report with the help of the PictureBox item and how to configure its layout.
 
@@ -32,21 +35,21 @@ As its value, the PictureBox accepts an [expression]({%slug telerikreporting/des
 * A URI (local path or URL) that points to a bitmap or an SVG file.
 * A string that represents either a Base64-encoded image or an SVG markup.
 
-The following screenshot shows a PictureBox report item at design-time. Note the image thumbnail in the upper left corner.
+The following screenshot shows a PictureBox report item at design time. Note the image thumbnail in the upper left corner.
 
 ![Setting the value of a PictureBox shown in a report at design-time](images/PictureBox.png)
 
 When you add values to the PictureBox, note the following:
 
-* When the `Value` property is a string that is not an expression (a string which doesn't start with `=`), the PictureBox assumes the value is a URI, a Base64-encoded image, or an SVG markup.
+* When the `Value` property is a string that is not an expression (a string that doesn't start with `=`), the PictureBox assumes the value is a URI, a Base64-encoded image, or an SVG markup.
 
 	The __Relative Path__ will be resolved as follows:
 
 	+ For __declarative report definitions (TRDP and TRDX files)__ - with respect to the report location.
 	+ For __type report definitions (CS and VB reports)__ - with respect to the application starting point.
 
-* Clicking the ellipsis for `Value` will open a **Browse** dialog to navigate to a file on your hard drive. The engine will try to determine the type of the selected file and populate the `Value` property with a descriptive text.
-* When a raster image file (BMP, GIF, JPEG, PNG, EXIF, or TIFF) is selected, its bytes will be serialized in the report definition. When a Base64-encoded image file is selected, the report definition will persist the string representation of the Base64-encoded image. When an SVG image file is selected, the report definition persist its markup and it will be accessible in Edit Expression dialog.
+* Clicking the ellipsis for `Value` will open a **Browse** dialog to navigate to a file on your hard drive. The engine will try to determine the type of the selected file and populate the `Value` property with descriptive text.
+* When a raster image file (BMP, GIF, JPEG, PNG, EXIF, or TIFF) is selected, its bytes will be serialized in the report definition. When a Base64-encoded image file is selected, the report definition will persist the string representation of the Base64-encoded image. When an SVG image file is selected, the report definition persists its markup and it will be accessible in the Edit Expression dialog.
 * You can also paste a path to an image file, a Base64-encoded string, or an SVG markup in the `Value` property editor or in the **Edit Expression** dialog. Note that the maximum length supported by the `Value` editor is 32767 characters, so if the new string value is longer than that, you need to use the **Edit Expression** dialog instead.
 
 To set an expression as a PictureBox value in the Report Designer:
@@ -56,14 +59,14 @@ To set an expression as a PictureBox value in the Report Designer:
 
 ## Binding to Data
 
-To bind an image data to a PictureBox when using a Report Designer is a straight-forward process. You need to connect to a data source and drag the image field from the [**Data Explorer**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) window to your report. As a result, the report designer tool will associate each field based on its data type.
+To bind an image data to a PictureBox when using a Report Designer is a straightforward process. You need to connect to a data source and drag the image field from the [**Data Explorer**]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}) window to your report. As a result, the report designer tool will associate each field based on its data type.
 
 Alternatively, you can drag a PictureBox item to the design surface and use an expression to set its `Value` property to an existing field from the data source. The type of the `PictureBox.Value` property is [`Object`](https://learn.microsoft.com/en-us/dotnet/api/system.object) which allows for versatile data binding and you do not have to directly bind to a database field with an image column.
 
-The `Value` property accepts objects of type [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image), byte array and strings. The string can be either of the following:
+The `Value` property accepts objects of type [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image), byte array, and strings. The string can be either of the following:
 
 * An expression&mdash;The expression must evaluate to an [`Image`](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image), byte array, relative or absolute [Uri](https://learn.microsoft.com/en-us/dotnet/api/system.uri), or a string representing a Base64-encoded image or an SVG markup.
-* A string literal&mdash;The string literal can be a relative or absolute [Uri](https://learn.microsoft.com/en-us/dotnet/api/system.uri), or a string representing a Base64-encoded image or an SVG markup.
+* A string literal&mdash; The string literal can be a relative or absolute [Uri](https://learn.microsoft.com/en-us/dotnet/api/system.uri), or a string representing a Base64-encoded image or an SVG markup.
 
 ### Binding to Binary Images
 
@@ -111,13 +114,13 @@ End Function
 
 Alternatively, you can assign a string value to the `Value` property. This string value can be any of the following:
 
-* An [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})&mdash;When binding to a data field with an expression, the Value property will accept both `binary` and `string` data fields.
-* A [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)&mdash;The `Value` property supports both absolute and relative URIs.
-* A string representing a Base64-encoded image or a valid SVG markup&mdash;For optimization, the engine initially checks the length of the string value.
+* An [item binding expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})&mdash; When binding to a data field with an expression, the Value property will accept both `binary` and `string` data fields.
+* A [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)&mdash; The `Value` property supports both absolute and relative URIs.
+* A string representing a Base64-encoded image or a valid SVG markup&mdash; For optimization, the engine initially checks the length of the string value.
 
-	If it is less than 80 characters, the value is considered to be an URI. Otherwise, the string is tested whether it is SVG markup (if its first 256 characters contain `<svg`) or a Base64-encoded string.
+	If it is less than 80 characters, the value is considered to be a URI. Otherwise, the string is tested whether it is SVG markup (if its first 256 characters contain `<svg`) or a Base64-encoded string.
 
-	If the string is neither a valid SVG, nor a Base64-encoded string, the engine will still accept the string as a URI and will try to instantiate an image from it.
+	If the string is neither a valid SVG nor a Base64-encoded string, the engine will still accept the string as a URI and will try to instantiate an image from it.
 
 To sum it up, the data source column of the PictureBox can store the image object, its Base64 string representation, an SVG markup, or a relative or absolute URI pointing to the image:
 

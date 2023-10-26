@@ -11,7 +11,7 @@ previous_url: /standalone-report-designer-configuration
 
 # Standalone Report Designer Configuration File
 
-The Telerik Report Designer application can be configured through its configuration file. Application configuration files contain settings specific to the application. This file contains configuration settings such as connectionStrings, traceListeners, assembly binding policy (for the .NET Framework version only), and so on. For example this file can specify a global connection string that can be used by all reports created with the Report Designer:
+The Telerik Report Designer application can be configured through its configuration file. Application configuration files contain settings specific to the application. This file contains configuration settings such as connectionStrings, traceListeners, assembly binding policy (for the .NET Framework version only), and so on. For example, this file can specify a global connection string that can be used by all reports created with the Report Designer:
 
 ````XML
 <connectionStrings>
@@ -49,7 +49,7 @@ or it can define Trace Listeners to log important information for troubleshootin
 ````
 
 
-In the .NET Framwework version, it can hold binding redirect to the latest version of the Reporting engine:
+In the .NET Framework version, it can hold binding redirect to the latest version of the Reporting engine:
 
 ````XML
 <runtime>
@@ -70,7 +70,7 @@ For more information, see [Application Configuration Files](https://learn.micros
 
 > The configuration files of all Standalone Report Designer versions use `UTF-8` encoding. Make sure that your text editor of choice does not override the default encoding when you modify these files, as this can prevent the designers from loading.
 
-## Default Configuration for the `.NET Framework` Standalone Report Designer
+## Default Configuration for the .NET Framework Standalone Report Designer
 
 The following code example shows the default `Telerik.ReportDesigner.exe.config` file that is distributed with the Report Designer for .NET Framework.
 
@@ -133,7 +133,7 @@ The following code example shows the default `Telerik.ReportDesigner.exe.config`
 ````
 
 
-## Default Configuration for the `.NET` Standalone Report Designer
+## Default Configuration for the .NET 6 Standalone Report Designer
 
 The following code example shows the default `Telerik.ReportDesigner.Net.dll.config` file that is distributed with the Report Designer for .NET. A major difference with the designer for .NET Framework is that the Trace Listener for .NET is in the `Telerik.Reporting` section rather than in the `system.diagnostics` section as in .NET Framework.
 

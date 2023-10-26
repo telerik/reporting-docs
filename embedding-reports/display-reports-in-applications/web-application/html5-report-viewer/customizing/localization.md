@@ -24,9 +24,9 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 		{{source=CodeSnippets\js\telerikReportViewer.stringResources}}
 
 
-1. Specify the name of the file using the following convention: `stringResources.[culture].js` where *[culture]* is the name of the culture for the specified localization resource. For example, to provide a localization resource for the French Belgian culture, the corresponding resource file could be named as follows: `stringResources.fr-BE.js`.
+1. Specify the name of the file using the following convention: `stringResources.[culture].js` where *[culture]* is the name of the culture for the specified localization resource. For example, to provide a localization resource for the French-Belgian culture, the corresponding resource file could be named as follows: `stringResources.fr-BE.js`.
 1. Translate the texts for the specified culture
-1. `import` the localized `sr` object where the report viewer is displayed, and use the [extend]() jQuery function to update the `stringResources` reference of the report viewer object:
+1. `import` the localized `sr` object where the report viewer is displayed, and use the [extend](https://api.jquery.com/jQuery.extend/) jQuery function to update the `stringResources` reference of the report viewer object:
 
 	````HTML
 <script type="module">

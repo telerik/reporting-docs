@@ -33,7 +33,7 @@ Report parameters can have the following properties:
 
 * [Type](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Type) 
 
-	Determines the type of the values that are acceptable. The allowed types are `Boolean`, `DateTime`, `Integer` (values are converted to `System.Int64` or `long`), `Float`(values are converted to `System.Double` or `double`), and `String`. Acceptable values for each type are listed here: [ReportParameterType](/api/Telerik.Reporting.ReportParameterType) The default parameter type is `String`.
+	Determines the type of the values that are acceptable. The allowed types are `Boolean`, `DateTime`, `Integer` (values are converted to `System.Int64` i.e. `long`), `Float`(values are converted to `System.Double` i.e. `double`), and `String`. Acceptable values for each type are listed here: [ReportParameterType](/api/Telerik.Reporting.ReportParameterType) The default parameter type is `String`.
 
 * [Name](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Name)
 

@@ -37,7 +37,7 @@ The `report` variable is of the type [Telerik.Reporting.Report](/api/telerik.rep
 
 The warning appears when compiling on MacOS or Linux but not on Windows.
 
-## Description of the Reason
+## Cause/Possible Causes
 
 The Report `PageSettings` properties values are from the [System.Drawing.Printing namespace](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=dotnet-plat-ext-7.0) that is supported only on Windows starting with .NET 6.
 

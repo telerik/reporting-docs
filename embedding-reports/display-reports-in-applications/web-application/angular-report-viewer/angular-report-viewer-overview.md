@@ -15,6 +15,8 @@ previous_url: /angular-report-viewer, /using-reports-in-applications/display-rep
 
 Integrate the Angular Report Viewer component in your Angular applications regardless of the module loader that you use (`WebPack` or `SystemJS`).
 
+>note Check out also the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) built on the top of Telerik UI for Angular components.
+
 The Angular component is built on top of the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is the base for other Web-technologies report viewers as well.
 
 ## Requirements
@@ -32,7 +34,7 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 1. Required JavaScript libraries:
 
 	+ [jQuery 3.2.1+](https://jquery.com/download/)
- 	+ [Node.js](https://nodejs.org/) - The required version will depend on the version of the Angular project - [Angular versions under active support](https://angular.io/guide/versions)
+	+ [Node.js](https://nodejs.org/) - The required version will depend on the version of the Angular project - [Angular versions under active support](https://angular.io/guide/versions)
 
 1. The [Angular Report Viewer package](https://www.npmjs.com/package/@progress/telerik-angular-report-viewer) requires the following peer dependencies:
 
@@ -49,8 +51,8 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 The Angular viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), thus the client browser should conform to the HTML5 Report Viewer [Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#browser-support).
 
-
 ## See Also
 
 * [How to Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
 * [How to Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})
+* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%})

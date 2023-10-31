@@ -17,6 +17,11 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>OS</td>
+			<td>Linux</td>
+			<td>MacOS</td>
+		</tr>
 	</tbody>
 </table>
 
@@ -34,9 +39,11 @@ The warning appears when compiling on MacOS or Linux but not on Windows.
 
 ## Description of the Reason
 
-The report `PageSettings` properties values are from the [System.Drawing.Printing namespace](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=dotnet-plat-ext-7.0) that is supported only on Windows starting with .NET 6. Generally, the Telerik Reporting printing functionality depends on the System.Drawing and for that reason is relevant only for the Windows machines.
+The Report `PageSettings` properties values are from the [System.Drawing.Printing namespace](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=dotnet-plat-ext-7.0) that is supported only on Windows starting with .NET 6.
 
-The [enumerations from the namespace](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=dotnet-plat-ext-7.0#enums), including [enum PaperKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.paperkind?view=dotnet-plat-ext-7.0) may be considered as cross-platform although they are part of the System.Drawing as they will not throw a [PlatformNotSupportedException](https://learn.microsoft.com/en-us/dotnet/api/system.platformnotsupportedexception?view=net-7.0) since they don't contain any code. The reason for the warning is that the entire assembly is attributed with [assembly: SupportedOSPlatform("windows")] - see [SupportedOSPlatformAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.versioning.supportedosplatformattribute?view=net-7.0).
+The [enumerations from the namespace](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=dotnet-plat-ext-7.0#enums), including [enum PaperKind](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing.paperkind?view=dotnet-plat-ext-7.0) may be considered as cross-platform although they are part of the `System.Drawing` as they will not throw a [PlatformNotSupportedException](https://learn.microsoft.com/en-us/dotnet/api/system.platformnotsupportedexception?view=net-7.0) since they don't contain any code
+
+The reason for the warning is that the entire assembly is attributed with [assembly: SupportedOSPlatform("windows")] - see [SupportedOSPlatformAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.versioning.supportedosplatformattribute?view=net-7.0).
 
 ## Suggested Workarounds
 

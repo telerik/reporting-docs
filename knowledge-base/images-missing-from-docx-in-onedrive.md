@@ -36,13 +36,13 @@ When I export a report that contains an image to DOCX with the Reporting version
 
 `The linked image cannot be displayed. The file may have been moved, renamed, or deleted. Verify that the link points to the correct file and location.`
 
-## Cause/Possible Causes
+## Cause
 
-Microsoft have deprecated some previously supported tags in the OpenXML.
+Microsoft has deprecated some previously supported tags in the OpenXML.
 
 With [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) we started replacing these tags in the reports rendered in OpenXML formats - `PictureBox item uses DrawingML instead of VML in OpenXML rendering extensions`.
 
-Here is how the XML generated for an image embedded in the OpenXML looks like in:
+Here is what the XML generated for an image embedded in the OpenXML looks like in:
 
 * R2 2023 SP1 and before:
 

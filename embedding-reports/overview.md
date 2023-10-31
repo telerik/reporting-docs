@@ -24,10 +24,11 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 * [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) - an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript.
 * [HTML5 MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in MVC applications.
 * [HTML5 WebForms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}) - a server-side wrapper that allows you to configure the HTML5 Viewer in WebForms applications.
+* [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) - a native Angular component built with [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui) components.
 * [Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) - an Angular component that wraps the HTML5 Report Viewer.
 * [ReactJS Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) - A ReactJS component that wraps the HTML5 Report Viewer.
 * [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) - a Blazor component that wraps the HTML5 Report Viewer.
-* [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) - a Native Blazor component built with [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components.
+* [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) - a native Blazor component built with [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components.
 
 ### Desktop Applications
 

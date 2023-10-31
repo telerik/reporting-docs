@@ -37,7 +37,7 @@ The `report` variable is of the type [Telerik.Reporting.Report](/api/telerik.rep
 
 The warning appears when compiling on MacOS or Linux but not on Windows.
 
-## Cause/Possible Causes
+## Cause
 
 The Report `PageSettings` properties values are from the [System.Drawing.Printing namespace](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.printing?view=dotnet-plat-ext-7.0) that is supported only on Windows starting with .NET 6.
 
@@ -45,7 +45,7 @@ The [enumerations from the namespace](https://learn.microsoft.com/en-us/dotnet/a
 
 The reason for the warning is that the entire assembly is attributed with `[assembly: SupportedOSPlatform("windows")]` - see [SupportedOSPlatformAttribute](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.versioning.supportedosplatformattribute?view=net-7.0).
 
-## Suggested Workarounds
+## Suggested Workaround
 
 The warning cannot be avoided unless Microsoft decides to remove the attribute on the assembly level and add it only to the functionality that is actually not supported.
 

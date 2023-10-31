@@ -42,7 +42,7 @@ Microsoft have deprecated some previously supported tags in the OpenXML.
 
 With [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) we started replacing these tags in the reports rendered in OpenXML formats - `PictureBox item uses DrawingML instead of VML in OpenXML rendering extensions`.
 
-Here is the XML generated for the image embedded in the OpenXML:
+Here is how the XML generated for an image embedded in the OpenXML looks like in:
 
 * R2 2023 SP1 and before:
 
@@ -58,7 +58,7 @@ Here is the XML generated for the image embedded in the OpenXML:
 
 ## Solution
 
-To fix the problem you need to use our latest version R3 2023 (17.2.23.1010) as we use the new tags there.
+To fix the problem you need to use our latest version R3 2023 (17.2.23.1010) as we switched to the supported tags starting from this version.
 
 ## See Also
 

@@ -19,8 +19,7 @@ res_type: kb
 		</tr>
 		<tr>
 			<td>OS</td>
-			<td>Linux</td>
-			<td>MacOS</td>
+			<td>Linux, MacOS</td>
 		</tr>
 	</tbody>
 </table>

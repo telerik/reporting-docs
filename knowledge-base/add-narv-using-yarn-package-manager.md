@@ -1,16 +1,16 @@
 ---
-title: Using Native Angular Report Viewer with yarn
+title: Using Native Angular Report Viewer with Yarn
 description: "Learn how the native Angular Report Viewer can be added to an Angular project that uses the yarn package manager."
 type: how-to
 page_title: Install the Native Angular Report Viewer using yarn
 slug: add-narv-using-yarn-package-manager
-position: 
 tags: Angular, Native Angular Report Viewer, Yarn
 ticketid: 1628141
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -28,7 +28,6 @@ res_type: kb
 	</tbody>
 </table>
 
-
 ## Description
 
 After adding the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) to my project that uses the [yarn](https://yarnpkg.com/) package manager, the project does not build and there are warnings about unresolved peer dependencies and packages with incorrect versions.
@@ -40,32 +39,32 @@ After adding the [Native Angular Report Viewer]({%slug telerikreporting/using-re
 
 	````JSON
 {
-	...
-	"resolutions": {
-		"@progress/kendo-angular-buttons": "~13.2.0",
-		"@progress/kendo-angular-common": "~13.2.0",
-		"@progress/kendo-angular-dateinputs": "~13.2.0",
-		"@progress/kendo-angular-dialog": "~13.2.0",
-		"@progress/kendo-angular-dropdowns": "~13.2.0",
-		"@progress/kendo-angular-icons": "~13.2.0",
-		"@progress/kendo-angular-indicators": "~13.2.0",
-		"@progress/kendo-angular-inputs": "~13.2.0",
-		"@progress/kendo-angular-intl": "~13.2.0",
-		"@progress/kendo-angular-l10n": "~13.2.0",
-		"@progress/kendo-angular-label": "~13.2.0",
-		"@progress/kendo-angular-layout": "~13.2.0",
-		"@progress/kendo-angular-listbox": "~13.2.0",
-		"@progress/kendo-angular-navigation": "~13.2.0",
-		"@progress/kendo-angular-pager": "~13.2.0",
-		"@progress/kendo-angular-popup": "~13.2.0",
-		"@progress/kendo-angular-progressbar": "~13.2.0",
-		"@progress/kendo-angular-toolbar": "~13.2.0",
-		"@progress/kendo-angular-tooltip": "~13.2.0",
-		"@progress/kendo-angular-treeview": "~13.2.0",
-		"@progress/kendo-licensing": "^1.0.2",
-		"@progress/telerik-common-report-viewer": "20.23.1010"
+		...
+		"resolutions": {
+			"@progress/kendo-angular-buttons": "~13.2.0",
+			"@progress/kendo-angular-common": "~13.2.0",
+			"@progress/kendo-angular-dateinputs": "~13.2.0",
+			"@progress/kendo-angular-dialog": "~13.2.0",
+			"@progress/kendo-angular-dropdowns": "~13.2.0",
+			"@progress/kendo-angular-icons": "~13.2.0",
+			"@progress/kendo-angular-indicators": "~13.2.0",
+			"@progress/kendo-angular-inputs": "~13.2.0",
+			"@progress/kendo-angular-intl": "~13.2.0",
+			"@progress/kendo-angular-l10n": "~13.2.0",
+			"@progress/kendo-angular-label": "~13.2.0",
+			"@progress/kendo-angular-layout": "~13.2.0",
+			"@progress/kendo-angular-listbox": "~13.2.0",
+			"@progress/kendo-angular-navigation": "~13.2.0",
+			"@progress/kendo-angular-pager": "~13.2.0",
+			"@progress/kendo-angular-popup": "~13.2.0",
+			"@progress/kendo-angular-progressbar": "~13.2.0",
+			"@progress/kendo-angular-toolbar": "~13.2.0",
+			"@progress/kendo-angular-tooltip": "~13.2.0",
+			"@progress/kendo-angular-treeview": "~13.2.0",
+			"@progress/kendo-licensing": "^1.0.2",
+			"@progress/telerik-common-report-viewer": "20.23.1010"
+		}
 	}
-}
 ````
 
 
@@ -74,13 +73,15 @@ After adding the [Native Angular Report Viewer]({%slug telerikreporting/using-re
 	````powershell
 yarn add @angular-devkit/schematics @angular-devkit/core @progress/kendo-angular-upload @progress/kendo-drawing @progress/kendo-svg-icons
 ````
+
+
 1. Lastly, run `yarn` or `yarn install` to make sure that all packages are installed.
 
 ## Notes
 
 Depending on the Angular version used in the project, the command from the 3rd step may need to be modified to install the correct version of the `@angular` packages, for example, with an **Angular 16** project:
 
-	````powershell
+````powershell
 yarn add @angular-devkit/schematics@16 @angular-devkit/core@16 @progress/kendo-angular-upload @progress/kendo-drawing @progress/kendo-svg-icons
 ````
 

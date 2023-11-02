@@ -140,7 +140,7 @@ Basically, the [Report Events]({%slug telerikreporting/using-reports-in-applicat
 
 Starting with [R3 2022 SP1 (16.2.22.1109)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-sp1-16-2-22-1109) `CacheDefinitionProperties` was exposed as a Report definition property in the `ReportEngineSettings` properties collection, so that you may specify it per Report. The property value may be set to `Default`, `True`, or `False`. The `Default`, which is the default value, lets you specify that the Reporting engine should respect the _cacheDefinitionProperties_ set in its configuration on the project level.
 
-### GraphicsEngine
+### Graphics Engine
 
 The __graphicsEngine__ element sets the graphics engine used for processing and rendering the reports. There are two implementations of the graphics engine: GDI-based and SkiaSharp-based. GDI is not supported on non-Windows platforms for applications that target .NET 7 or higher. Skia implementation has cross-platform support. The active implementation is determined by the value of the  __engineName__ element which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine](/api/Telerik.Drawing.Contract.GraphicsEngine) enumeration.
 

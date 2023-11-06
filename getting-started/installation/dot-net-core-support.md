@@ -1,6 +1,6 @@
 ---
-title: .NET Core Support
-page_title: Using Telerik Reporting with .NET Core, 6, 7, or Standard
+title: .NET Support
+page_title: Using Telerik Reporting with .NET 6, 7, or Standard
 description:  "Learn how to use Telerik Reporting in .NET Core, 6, 7, or Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
 previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-in-net-core-apps
@@ -83,9 +83,9 @@ When using SkiaSharp make sure to reference the `Telerik.Drawing.SkiaSharp` NuGe
 The next libraries should also be referenced when using SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
 
 ````
-RUN apt-get update
-RUN apt-get install -y libfreetype6
-RUN apt-get install -y libfontconfig1
+sudo apt-get update
+sudo apt-get install -y libfreetype6
+sudo apt-get install -y libfontconfig1
 ````
 
 ### Using System.Drawing(`libgdiplus`)
@@ -146,12 +146,33 @@ To use .NET/.NET Core on macOS:
 
 ## Using Container Platforms
 
-You can use Telerik Reporting in a Docker image if it meets the GDI+ requirements. The Microsoft-distributed `microsoft/windowsservercore` images contain the graphics library. However, their size is significantly bigger compared to the size of the .NET runtime in a Linux container. Such a container requires you to install only the libgdiplus library and its accompanying libraries.
+You can use Telerik Reporting in a Docker image if it meets the graphics engine requirements.
+
+To use Telerik Reporting in a Windows container, target a Windows base image that includes GDI support. The same approach is [recommended by Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images#choosing-a-base-image).
+
+The Microsoft-distributed `microsoft/windowsservercore` images contain the GDI+ graphics library. However, their size is significantly bigger compared to the size of the .NET runtime in a Linux container. Such a container requires you to install only the libgdiplus library and its accompanying libraries.
+
+### Using `SkiaSharp` on Linux Docker Container
+
+Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) we introduced SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the __engineName__ element of the [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}) which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).
+
+When using SkiaSharp make sure to reference the `Telerik.Drawing.SkiaSharp` NuGet package or assembly.
+
+The next libraries should also be referenced when using SkiaSharp. The snippet is relevant for Ubuntu or Debian and may differ for other Linux distributions:
+
+````
+FROM microsoft/dotnet:7.0-runtime AS base
+RUN apt-get update
+RUN apt-get install -y libfreetype6
+RUN apt-get install -y libfontconfig1
+````
+
+### Using System.Drawing(`libgdiplus`) on Linux Docker Container
 
 The following `dockerfile` snippet demonstrates how to achieve the desired outcome. When these three libraries are installed, Telerik Reporting will run on the produced Docker image.
 
 ````
-FROM microsoft/dotnet:2.1-runtime AS base
+FROM microsoft/dotnet:6.0-runtime AS base
 RUN apt-get update \
 	&& apt-get install -y --allow-unauthenticated \
 		libc6-dev \
@@ -159,8 +180,6 @@ RUN apt-get update \
 		libx11-dev \
 	&& rm -rf /var/lib/apt/lists/*
 ````
-
-To use Telerik Reporting in a Windows container, target a Windows base image that includes GDI support. The same approach is [recommended by Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images#choosing-a-base-image).
 
 ## Sample Projects
 

@@ -18,7 +18,6 @@ The assemblies come sorted in several folders so that you can use the ones you n
 
 * If you target `.NET Framework`, use the assemblies from the `Bin` folder.
 * If you target `.NET Standard`, use the assemblies from the `\Bin\netstandard2.0` folder.
-* If you target `.NET Core`, use the assemblies from the `\Bin\netcoreapp3.1` folder.
 * If you target `.NET 6`, use the assemblies from the `\Bin\net6.0` and `\Bin\net6.0-windows` folders.
 * If you target `.NET 7`, use the assemblies from the `\Bin\net7.0` and `\Bin\net7.0-windows` folders.
 
@@ -30,7 +29,6 @@ The following table describes the folder structure for the Telerik Reporting mai
 | ------ | ------ |
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Bin`|<ul><li>`Telerik.Reporting.dll`</li><li>`Telerik.ReportViewer.Mvc.dll`</li><li>`Telerik.ReportViewer.WebForms.dll`</li><li>`Telerik.ReportViewer.WinForms.dll`</li><li>`Telerik.ReportViewer.Wpf.dll`</li><li>`Telerik.Reporting.Adomd.dll`</li><li>`Telerik.Reporting.Services.ServiceStack.dll`</li><li>`Telerik.Reporting.Services.WebApi.dll`</li><li>`Telerik.Reporting.XpsRendering.dll`</li><li>`Telerik.Reporting.OpenXmlRendering.dll`</li><li>`Telerik.Reporting.Cache.Database.dll`</li></ul>|
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Bin\netstandard2.0`|<ul><li>`Telerik.Reporting.dll`</li><li>`Telerik.WebReportDesigner.Services.dll`</li><li>`Telerik.ReportViewer.Blazor.dll`</li><li>`Telerik.Reporting.WebServiceDataSource.dll`</li><li>`Telerik.Reporting.Services.HttpClient.dll`</li><li>`Telerik.Reporting.Services.AspNetCore.dll`</li><li>`Telerik.Reporting.OpenXmlRendering.2.7.2.dll`</li><li>`Telerik.Reporting.JsonSerialization.dll`</li><li>`Telerik.Reporting.Data.Schema.dll`</li><li>`Telerik.Reporting.Cache.StackExchangeRedis.dll`</li><li>`Telerik.Reporting.Cache.StackExchangeRedis.2.dll`</li></ul>|
-|`...Progress\Telerik Reporting {{site.suiteversion}}\Bin\netcoreapp3.1`|<ul><li>`Telerik.Reporting.Services.AspNetCore.dll`</li><li>`Telerik.WebReportDesigner.Services.dll`</li><li>`Telerik.ReportViewer.WinForms.dll`</li><li>`Telerik.ReportViewer.Wpf.dll`</li><li>`Telerik.ReportViewer.Wpf.Themes.dll`</li></ul>|
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Bin\net6.0`|<ul><li>`Telerik.WebReportDesigner.Services.dll`</li><li>`Telerik.Reporting.Services.AspNetCore.dll`</li></ul>|
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Bin\net6.0-windows`|<ul><li>`Telerik.ReportViewer.WinForms.dll`</li><li>`Telerik.ReportViewer.Wpf.dll`</li><li>`Telerik.ReportViewer.Wpf.Themes.dll`</li><li>`Telerik.ReportViewer.WinUI.dll`</li><li>`Telerik.ReportViewer.WinUI.Themes.dll`</li><li>`Telerik.WinUI.Controls\`</li></ul>|
 |`...Progress\Telerik Reporting {{site.suiteversion}}\Bin\net7.0`|<ul><li>`Telerik.WebReportDesigner.Services.dll`</li><li>`Telerik.Reporting.Services.AspNetCore.dll`</li></ul>|

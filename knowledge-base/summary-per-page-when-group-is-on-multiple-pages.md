@@ -1,8 +1,8 @@
 ---
-title: How to create a "summary per page" when a group is printed on multiple pages
-description: How to display the running page value at the beginning and the end of the group page
+title: How to Create a "Summary Per Page" When a Group is Printed on Multiple Pages
+description: Learn how to display a running page aggregate at the beginning and at the end of each page a group is printed on.
 type: how-to
-page_title: How to create a "summary per page" when a group is printed on multiple pages
+page_title: Creating a "Summary Per Page" When a Group is Printed on More Than One Page
 slug: summary-per-page-when-group-is-on-multiple-pages
 position: 
 tags: 
@@ -24,7 +24,7 @@ res_type: kb
 ## Description 
 For clarity, I will explain the requirement in a particular context, as requested by a user.  
 
-When generating a report that displays the list of movements for a list of accounts, it's possible (and quite frequent) for a single account to require multiple pages for printing. In order to help the users understand what they are seeing and potentially quickly find errors in their external documents (for instance, bank statement), it is convenient to print on the bottom of each page the total credit, debit amount up to this point in the printout. The above should only be displayed when a group is printed on multiple pages and the current one is not the last page.
+When generating a report that displays the list of movements for a list of accounts, it's possible (and quite frequent) for a single account to require multiple pages for printing. In order to help the users understand what they are seeing and potentially quickly find errors in their external documents (for instance, bank statements), it is convenient to print on the bottom of each page the total credit, and debit amount up to this point in the printout. The above should only be displayed when a group is printed on multiple pages and the current one is not the last page.
 
 Here is how this can be done with Telerik Reporting.
 
@@ -32,7 +32,7 @@ Here is how this can be done with Telerik Reporting.
 
 Next, you may find two [custom user aggregate functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%}) that can be used to accomplish the requirement. 
 
-The fields in the classes need to be static, because for each page we create a new instance of the aggregate and we need to preserve the data from all pages. On the other hand the fields are marked with _[ThreadStatic]_ so that if two report renderings occur simultaneously (like in a web application) they do not interfere.
+The fields in the classes need to be static because for each page we create a new instance of the aggregate and we need to preserve the data from all pages. On the other hand, the fields are marked with _[ThreadStatic]_ so that if two report renderings occur simultaneously (like in a web application) they do not interfere.
 
 The first aggregate is for the Page Footer: 
 
@@ -192,7 +192,7 @@ PageExec("detailSection1", PageFooterSumUntilNow(Fields.value, Fields.account)))
 "")
 ````
 
-This expression compares the last 'account' values for the detail and the group footer scopes on the same page, and types the message that the account continues on the next page and the accumulated sum when they differ, or there is no group footer on the page.  
+This expression compares the last 'account' values for the detail and the group footer scopes on the same page and types the message that the account continues on the next page and the accumulated sum when they differ, or there is no group footer on the page.  
 A sample report definition and a ClassLibrary project with the custom aggregate functions demonstrating the approach may be found in our reporting samples GitHub repo - [Summary per page](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page).
 
 ## Important Notes 
@@ -279,7 +279,7 @@ The particular workaround we suggest is to pass the __ReportDefinition__ [Global
 				currentPage = -1;
 			}
 
-			// skip the second pass through the report
+			// Skip the second pass through the report
 			if (currentPage > page)
 			{
 				result = 0;
@@ -335,13 +335,13 @@ The particular workaround we suggest is to pass the __ReportDefinition__ [Global
 	)
 ````
 
-	The same problem may occurr also with the function _PageHeaderSumFromPrevPage_, for example, when the report has only one group. The reason for this would be that the _result_ is reset only when the group chagnes. To overcome this, we may apply the same approach. Here is the needed modification in the Accumulate method of the implementation: 
+	The same problem may occur also with the function _PageHeaderSumFromPrevPage_, for example, when the report has only one group. The reason for this would be that the _result_ is reset only when the group changes. To overcome this, we may apply the same approach. Here is the needed modification in the Accumulate method of the implementation: 
 
 	````C#
 //...
 	var page = (int)values[2];
 
-	// skip the second pass through the report
+	// Skip the second pass through the report
 	if (currentPage > page)
 	{
 		result = 0;
@@ -355,3 +355,6 @@ The particular workaround we suggest is to pass the __ReportDefinition__ [Global
 		//...
 ````
 
+
+## See Also
+* [Sample Report](https://github.com/telerik/reporting-samples/tree/master/Summary%20per%20page)

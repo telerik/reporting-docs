@@ -1,7 +1,7 @@
 ---
 title: Using the Blazor Report Viewer
 page_title: Integrating the Telerik Reporting Blazor Report Viewer 
-description: "Learn how to the Telerik Reporting Blazor Report Viewer can integrated into a Blazor Server or Blazor WebAssembly application."
+description: "Learn how the Telerik Reporting Blazor Report Viewer can be integrated into a Blazor Server or Blazor WebAssembly application."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer
 tags: how,to,use,blazor,report,viewer
 published: True
@@ -11,18 +11,17 @@ previous_url: /blazor-report-viewer-how-to-use
 
 # Integrating the Blazor Report Viewer
 
-> The following article guides you how to use Blazor Report Viewer in a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web application.
-
+> The following article guides you on how to use Blazor Report Viewer in a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web application.
 
 ## Prerequisites
 
 * [Visual Studio 2019, version 16.4 or later](https://visualstudio.microsoft.com/vs/)
 
-* Existing ASP.NET Core 3.1 and higher Blazor Server App or ASP.NET Core 3.1 and higher hosted Blazor WebAssembly App
+* Existing .NET 6 and higher Blazor Server App or .NET 6 and higher hosted Blazor WebAssembly App
 
 * The report viewer consumes reports generated and served from a running Telerik Reporting Web Service. Such can be referenced from another application or Telerik Report Server instance, or it can be hosted within the Blazor Server application.
 
-* Blazor WebAssembly applications are executed directly on the browser UI thread. In other words, Blazor WebAssembly are stictly client-side applications and the Reports Web Service cannot be hosted in the same project. When using Blazor WebAssembly, the Reports Web Service has to be hosted in a separate project or [Telerik Report Server](https://www.telerik.com/report-server) may be used. For more information, see [Blazor WebAssembly vs. Server](https://www.telerik.com/faqs/blazor-ui/what-is-the-difference-between-blazor-webassembly-vs-server). To host the Reporting Service locally, please follow the approach from either the [How to Host Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%}) or the [How to Host Reports Service in ASP.NET Core in.NET 5]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}) articles.
+* Blazor WebAssembly applications are executed directly on the browser UI thread. In other words, Blazor WebAssembly is strictly a client-side application and the Reports Web Service cannot be hosted in the same project. When using Blazor WebAssembly, the Reports Web Service has to be hosted in a separate project or [Telerik Report Server](https://www.telerik.com/report-server) may be used. For more information, see [Blazor WebAssembly vs. Server](https://www.telerik.com/faqs/blazor-ui/what-is-the-difference-between-blazor-webassembly-vs-server). To host the Reporting Service locally, please follow the approach from either the [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 7 with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}) or the [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6 and .NET 7 with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}) articles.
 
 ## Adding the Blazor Report Viewer component using an item template
 
@@ -37,7 +36,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 ## Adding the Blazor Report Viewer component manually
 
-1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` (or `Telerik.ReportViewer.Blazor.Trial`) package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` (or `Telerik.ReportViewer.Blazor.Trial`) package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
 1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET 6+ is used) can serve static files:
 
@@ -80,9 +79,9 @@ app.UseStaticFiles();
 ````
 
 
-1. If using Telerik Reporting web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
+1. If using the Telerik Reporting web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
 
-	>note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. Please remember to set the actual `ReportSource` along with eventual parameters:
+	>note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. Please remember to set the actual `ReportSource` along with the eventual parameters:
 
 	````CSHTML
 @page "/"
@@ -129,7 +128,7 @@ app.UseStaticFiles();
 ````
 
 
-1. Use the rest of the parameters exposed on the Blazor viewer component to setup its appearance and behavior as desired.
+1. Use the rest of the parameters exposed on the Blazor viewer component to set up its appearance and behavior as desired.
 
 1. Finally, run the project to see the rendered report.
 

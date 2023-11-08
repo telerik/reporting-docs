@@ -35,8 +35,8 @@ app.UseStaticFiles();
 
 	````HTML
 <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
-@* Or this one if using the Telerik.UI.for.Blazor.Trial package *@
-@* <script src="_content/Telerik.UI.for.Blazor.Trial/js/telerik-blazor.js" defer></script> *@
+	@* Or this one if using the Telerik.UI.for.Blazor.Trial package *@
+	@* <script src="_content/Telerik.UI.for.Blazor.Trial/js/telerik-blazor.js" defer></script> *@
 
 	<script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js" defer></script>
 	@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
@@ -105,7 +105,7 @@ app.UseStaticFiles();
 		public double Scale { get; set; } = 1.0;
 
 		public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", 
-  			new Dictionary<string, object>
+			new Dictionary<string, object>
 			{
 				// Add parameters if applicable
 			});

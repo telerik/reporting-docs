@@ -1,7 +1,7 @@
 ---
 title: .NET Support
-page_title: Using Telerik Reporting with .NET 6, 7, or Standard
-description:  "Learn how to use Telerik Reporting in .NET Core, 6, 7, or Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
+page_title: Using Telerik Reporting with .NET 6+ or Standard
+description:  "Learn how to use Telerik Reporting in .NET 6+ or .NET Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
 previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-in-net-core-apps
 tags: telerik, reporting, dotnet, core, support, getting, started, download, and, installation
@@ -130,14 +130,14 @@ On the Linux machine, you also need to install the fonts you use in the reports.
 
 > Currently, .NET 7 is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft as explained in [System.Drawing.Common is not supported on non-Windows platforms]({%slug system-drawing-common-is-not-supported-on-non-windows-platforms%})
 
-To use .NET/.NET Core on macOS:
+To use .NET on macOS:
 
-1. Install [.NET/.NET Core for macOS](https://dotnet.microsoft.com/en-us/download).
+1. Install [.NET for macOS](https://dotnet.microsoft.com/en-us/download).
 1. Install [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) by using [Homebrew](https://brew.sh/).
 
 	`brew install mono-libgdiplus`
 
-1. Create your .NET/.NET Core application or copy an existing one from a Windows machine.
+1. Create your .NET application or copy an existing one from a Windows machine.
 1. Add the `nuget.config` file with a path to your NuGet repository.
 1. Add a section in the `appsettings.json` file for any font fallback.
 1. Run the following command to build the project and run the application. If you run the project in the debug mode, Visual Studio Code will ask you to add the debug configuration to the `launch.json` file.

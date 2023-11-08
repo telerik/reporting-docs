@@ -22,6 +22,8 @@ table th:nth-of-type(2) {
 
 Occurs before rendering the report.
 
+_The event is triggered only on preview. Export and print operations each have a dedicated event._
+
 Parameters:
 
 | Parameter | Description |

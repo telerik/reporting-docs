@@ -15,7 +15,7 @@ The proper functioning of some specific Telerik Reporting features depends on th
 
 ## Deploying ADOMD.NET
 
-ADOMD.NET is a.NET object model that is used for building client applications which access XML for Analysis 1.1 compliant data providers such as the data provider by the XML for Analysis 1.1 SDK. To download the ADOMD.NET, refer to the [ADOMD.NET download link](https://www.microsoft.com/en-us/download/details.aspx?id=55264).
+ADOMD.NET is a .NET Framework object model that is used for building client applications which access XML for Analysis 1.1 compliant data providers such as the data provider by the XML for Analysis 1.1 SDK. To download the ADOMD.NET, refer to the [ADOMD.NET download link](https://www.microsoft.com/en-us/download/details.aspx?id=55264).
 
 To connect to Microsoft Analysis Services and to execute an MDX query against the desired OLAP cube, the Telerik Reporting [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) component internally uses the ADOMD.NET client data provider.
 

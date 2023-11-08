@@ -35,10 +35,16 @@ app.UseStaticFiles();
 
 	````HTML
 <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
+	@* Or this one if using the Telerik.UI.for.Blazor.Trial package *@
+	@* <script src="_content/Telerik.UI.for.Blazor.Trial/js/telerik-blazor.js" defer></script> *@
 
 	<script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js" defer></script>
 	@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
 	@* <script src="_content/Telerik.ReportViewer.BlazorNative.Trial/js/reporting-blazor-viewer.js" defer></script> *@
+
+	<link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
+	@* Or this one if using the Telerik.UI.for.Blazor.Trial package *@
+	@* <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor.Trial/css/kendo-theme-default/all.css" /> *@
 
 	<link href="_content/Telerik.ReportViewer.BlazorNative/css/reporting-blazor-viewer.css" rel="stylesheet" />
 	@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
@@ -98,10 +104,11 @@ app.UseStaticFiles();
 		public bool DocumentMapVisible { get; set; }
 		public double Scale { get; set; } = 1.0;
 
-		public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", new Dictionary<string, object>
-		{
-			// Add parameters if applicable
-		});
+		public ReportSourceOptions ReportSource { get; set; } = new ReportSourceOptions("Report Catalog.trdx", 
+			new Dictionary<string, object>
+			{
+				// Add parameters if applicable
+			});
 	}
 ````
 

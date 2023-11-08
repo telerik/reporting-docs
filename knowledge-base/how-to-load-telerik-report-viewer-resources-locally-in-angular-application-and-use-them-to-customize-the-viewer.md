@@ -70,7 +70,7 @@ I would like to change the behavior of the report viewer widget (toolbar, parame
 
 	````HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="assets/telerikReportViewer-{{site.buildversion}}.js"></script>
+	<script src="assets/telerikReportViewer-{{buildversion}}.js"></script>
 ````
 
 
@@ -115,12 +115,12 @@ I would like to change the default styling of the viewer widget.
 1. Open `telerikReportViewerTemplate-{{site.buildversion}}.html` file and change the path to the stylesheet resource from:
 
 	````HTML
-<link href="{service}resources/styles/telerikReportViewer-{{site.buildversion}}.css" rel="stylesheet" />
+<link href="{service}resources/styles/telerikReportViewer-{{buildversion}}.css" rel="stylesheet" />
 ````
 	To:
 
 	````HTML
-<link href="assets/telerikReportViewer-{{site.buildversion}}.css" rel="stylesheet" />
+<link href="assets/telerikReportViewer-{{buildversion}}.css" rel="stylesheet" />
 ````
 
 

@@ -2,3 +2,9 @@ apiRules:
 - exclude:
     uidRegex: ^GoogleAnalytics$
     type: Namespace
+- exclude:
+    uidRegex: ^Newtonsoft
+    type: Namespace
+- exclude:
+    uidRegex: ^System
+    type: Namespace

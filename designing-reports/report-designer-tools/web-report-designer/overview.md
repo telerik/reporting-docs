@@ -36,7 +36,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Requirements:
 
-* The Web Report Designer can be integrated in any ASP.NET Web Application, both under `.NET Framework 4.5.1+` or `.NET Core 2.1+`.
+* The Web Report Designer can be integrated in any ASP.NET Web Application, both under `.NET Framework 4.5.1+` or `.NET 6+`.
 * The following NuGet packages are required:
 
 	+ Telerik.Reporting
@@ -61,7 +61,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 Since the Web Report Designer uses [Kendo UI](https://www.telerik.com/kendo-ui) for its template it is possible to use it even with a custom build instead of using the entire Kendo bundle. You may do this using the [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp).
 
-Below you can find the list of widgets that the Web Report Designer requires in order to work properly. Note that the widgets have other dependencies. The _Touch_ widget is required only for the gestures. Kendo's _MVVM_ is a set of few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data.
+Below you can find the list of widgets that the Web Report Designer requires in order to work properly. Note that the widgets have other dependencies. The _Touch_ widget is required only for the gestures. Kendo's _MVVM_ is a set of a few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data.
 
 Required widgets:
 
@@ -101,5 +101,5 @@ gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepic
 
 ## See Also
 
-* [How to set up in .NET 5 and .NET Core 3.1 applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
-* [How to set up in.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
+* [How to set up in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
+* [How to set up in .NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})

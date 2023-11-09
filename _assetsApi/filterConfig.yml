@@ -1,7 +1,10 @@
 apiRules:
 - exclude:
-    uidRegex: ^Newtonsoft\.Json*
+    uidRegex: ^GoogleAnalytics
     type: Namespace
 - exclude:
-    uidRegex: ^System\.Net\.Http*
+    uidRegex: ^Newtonsoft\.Json
+    type: Namespace
+- exclude:
+    uidRegex: ^System\.Net\.Http
     type: Namespace

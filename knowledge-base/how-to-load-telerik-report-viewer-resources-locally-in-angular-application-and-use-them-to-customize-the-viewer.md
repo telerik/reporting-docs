@@ -76,7 +76,7 @@ I would like to change the behavior of the report viewer widget (toolbar, parame
 
 ### Scenario 2
 
-How to load the viewer's HTML template (`telerikReportViewerTemplate.html`) locally?
+How to load the viewer's HTML template (`telerikReportViewerTemplate-{{site.buildversion}}.html`) locally?
 
 #### Example
 
@@ -87,10 +87,10 @@ I would like to change the layout of the report viewer widget (hide toolbar butt
 1. Copy the template file from `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\templates\telerikReportViewerTemplate-{{site.buildversion}}.html` to assets folder
 1. Load it setting `templateUrl` option of the report viewer like:
 
-	````JavaScript
+	````HTML
 <tr-viewer #viewer1 
 		[serviceUrl]="'http://localhost:12345/api/reports/'"
-		[templateUrl]="'assets\\telerikReportViewerTemplate.html'"
+		[templateUrl]="'assets\\telerikReportViewerTemplate-{{buildversion}}.html'"
 		[reportSource]="{
 			report: 'SampleReport.trdp',
 			parameters: {}

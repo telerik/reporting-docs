@@ -99,6 +99,7 @@ export class AppComponent {
 		{ name: 'zoomIn', commandName: 'zoomIn' },
 		{ name: 'zoomOut', commandName: 'zoomOut' },
 		{ name: 'setScaleMode', commandName: 'setScaleMode', commandValue: { scale: 3, scaleMode: 'Specific' } },
+		{ name: 'setReportSource', commandName: 'setReportSource', commandValue: { report: 'Invoice.trdx', parameters: { OrderNumber: 'SO51088' }}},
 		{ name: 'exportReport', commandName: 'exportReport', commandValue: 'csv'  },
 		{ name: 'setAuthenticationToken', commandName: 'setAuthenticationToken', commandValue: 'Sample Authentication Token'  },
 		{ name: 'printReport', commandName: 'printReport' },
@@ -124,6 +125,7 @@ export class AppComponent {
 |navigateToLastPage|none|Goes to the last page of the report.|
 |setViewMode|none|Toggles between Print Preview and Interactive view modes.|
 |setScaleMode| An object with `scaleMode`(and `scale` for'specific' scale mode is used)|Changes the viewer's scaleMode|
+|setReportSource| An object with `report` and `parameters` properties| Changes the report souce and refreshes the viewer.|
 |setAuthenticationToken | authentication token| A bearer token to be added in the Authorization token of each request|
 |exportReport|rendering extension name|Exports the report, using the respective rendering extension name.|
 |printReport|none|Triggers the report printing.|

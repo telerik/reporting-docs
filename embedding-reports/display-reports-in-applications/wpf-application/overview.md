@@ -11,11 +11,11 @@ previous_url: /wpf-report-viewer-intro
 
 # WPF Report Viewer Overview
 
-The WPF Report Viewer allows developers to deliver reports produced by Telerik Reporting to any rich application developed with WPF.
+The WPF Report Viewer allows developers to deliver reports produced by Telerik Reporting to any rich application developed with WPF.
 
-  ![An image of the WPF Report Viewer with the Windows11 System theme](images/WpfViewer_Windows11SystemTheme02.png)
+![An image of the WPF Report Viewer with the Windows11 System theme](images/WpfViewer_Windows11SystemTheme02.png)
 
-The toolbar of the WPF Report Viewer provides basic functionality for interacting with the currently-loaded report:
+The toolbar of the WPF Report Viewer provides basic functionality for interacting with the currently-loaded report:
 
 * Navigate back in history
 * Navigate forward in history
@@ -33,14 +33,13 @@ The toolbar of the WPF Report Viewer provides basic functionality for interacti
 * Show/Hide parameters area
 * Zooming
 
-In order to use the WPF Report Viewer, you need a WPF application. In order to create such, you need the following tools installed:
+In order to use the WPF Report Viewer, you need a WPF application. In order to create such, you need the following tools installed:
 
 ## System Requirements
 
-* Visual Studio 2010 or later.
+* Visual Studio 2012 or later.
 * .NET Framework 4 or above (.NET Framework 4 __Client Profile__ is not supported)
-* .NET Core 3.1
-* .NET 5+
+* .NET 6+
 * (optional) Expression Blend
 
 ## How it works
@@ -54,5 +53,4 @@ The purpose of the WPF ReportViewer control is to display Telerik Reports and al
 ## See Also
 
 * [How to Add report viewer to a WPF.NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
-
 * [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})

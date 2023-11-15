@@ -8,13 +8,14 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
-         <tr>
+		<tr>
 			<td>Version</td>
 			<td>15.2.21.1110 and higher</td>
 		</tr>
@@ -36,7 +37,6 @@ Let's assume that the report file is with the `TRDP` extension, then the followi
 ````C#
 var query = "SQL_QUERY_HERE";
 var reportPackager = new ReportPackager();
-var reportProcessor = new ReportProcessor();
 Telerik.Reporting.Report report = null;
 
 using (var sourceStream = System.IO.File.OpenRead("Report1.trdp"))
@@ -45,23 +45,22 @@ using (var sourceStream = System.IO.File.OpenRead("Report1.trdp"))
 }
 
 var sqlDS = report.GetDataSources().OfType<SqlDataSource>();
-            
+
 foreach (var sqlDataSource in sqlDS)
 {
 	sqlDataSource.ConnectionString = "CONNECTION_STRING_HERE";
 	sqlDataSource.SelectCommand = query;
 }
-           
+
 var irs = new InstanceReportSource() { ReportDocument = report };
 ````
 
 
 ## Notes
 
-If the above code is to be used for modifying reports displayed by an **HTML5-based Report Viewer**, the code must be placed in the `Resolve` method of a custom [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver) used by the **Reporting REST service**. 
+If the above code is to be used for modifying reports displayed by an **HTML5-based Report Viewer**, the code must be placed in the `Resolve` method of a custom [IReportSourceResolver](/reporting/api/Telerik.Reporting.Services.IReportSourceResolver) used by the **Reporting REST service**.
 
 ## See Also
 
-[Embedded Report Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
-
-[How to display a report via InstanceReportSource in the HTML5 Viewer]({%slug how-to-display-a-report-via-instancereportsource-in-the-html5-viewer%})
+* [Embedded Report Engine]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%})
+* [How to display a report via InstanceReportSource in the HTML5 Viewer]({%slug how-to-display-a-report-via-instancereportsource-in-the-html5-viewer%})

@@ -22,7 +22,7 @@ Alternatively, you can derive from the ReportBook class and initialize the book 
 
 >note The [ReportBook](/api/telerik.reporting.reportbook) is an [IReportDocument](/api/telerik.reporting.ireportdocument). The latter exposes [ReportParameters property](/api/telerik.reporting.ireportdocument#Telerik_Reporting_IReportDocument_ReportParameters) that is _obsolete_ and the ReportBook doesn't implement it. Thus, the ReportBook doesn't have a collection of parameters.
 >
->The [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources) with a ReportBook as report document may host also [ParameterCollection](/api/telerik.reporting.parametercollection). The values from the collection will be distributed among the reports in the ReportBook as explained in the article [Report Book Parameters]({%slug telerikreporting/designing-reports/report-book/report-book-parameters%}).
+>The [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources) with a ReportBook as report document exposes [ParameterCollection](/api/telerik.reporting.parametercollection). The values from the collection will be distributed among the reports in the ReportBook as explained in the article [Report Book Parameters]({%slug telerikreporting/designing-reports/report-book/report-book-parameters%}).
 
 In the sample below we add two reports and a Table of Contents (TOC):
 

@@ -3,7 +3,7 @@ title: Creating a Report Book at Runtime
 page_title: Instantiating Report Books at runtime
 description: "Learn how a Telerik ReportBook object can be created and edited at runtime through code in order to render multiple reports at the same time."
 slug: telerikreporting/designing-reports/report-book/how-to-create-a-report-book-at-run-time
-tags: how,to,create,instantiate,a,report,book,at,runtime
+tags: how,create,instantiate,report,book,runtime
 published: True
 position: 6
 previous_url: /designing-reports-reportbook-creating-reportbook-run-time
@@ -19,6 +19,10 @@ The following steps are required to create a report book at runtime:
 1. Add the necessary ReportSources to its `ReportSources` collection.
 
 Alternatively, you can derive from the ReportBook class and initialize the book in the constructor if you want to separate the report book implementation details from the rest of your code.
+
+>note The [ReportBook](/api/telerik.reporting.reportbook) is an [IReportDocument](/api/telerik.reporting.ireportdocument). The latter exposes [ReportParameters property](/api/telerik.reporting.ireportdocument#Telerik_Reporting_IReportDocument_ReportParameters) that is _obsolete_ and the ReportBook doesn't implement it. Thus, the ReportBook doesn't have a collection of parameters.
+>
+>The [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources) with a ReportBook as report document may host also [ParameterCollection](/api/telerik.reporting.parametercollection). The values from the collection will be distributed among the reports in the ReportBook as explained in the article [Report Book Parameters]({%slug telerikreporting/designing-reports/report-book/report-book-parameters%}).
 
 In the sample below we add two reports and a Table of Contents (TOC):
 

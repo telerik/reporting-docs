@@ -40,9 +40,9 @@ There are several ways to add a Report Parameter to the Report depending on the 
 ## Configure the Properties of a Report Parameter using Report Designer
 
 1. In `Name`, type the name of the parameter.
-1. In `Text` type the text for the parameter to be displayed in the report viewer as prompt to the end user. If not set, the Name of the parameter will be used instead.
+1. In `Text` type the text for the parameter to be displayed in the report viewer as a prompt to the end user. If not set, the Name of the parameter will be used instead.
 1. In `Type`, select the data type for the parameter value. By default `String` type is selected.
-1. You can leave the `Value` property blank, enter a literal value or click the ellipses to invoke the [Expression Edit Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
+1. You can leave the `Value` property blank, enter a literal value, or click the ellipses to invoke the [Expression Edit Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}).
 1. If the parameter can contain a blank value, set `AllowBlank` accordingly.
 1. If the parameter can contain a null value, set `AllowNull` accordingly.
 1. To allow a user to select more than one value for the parameter, set `MultiValue` accordingly.
@@ -50,13 +50,13 @@ There are several ways to add a Report Parameter to the Report depending on the 
 
 ## Defining AvailableValues for ReportParameter’s UI using Report Designer
 
-Expand the `AvailableValues` property of the report parameter and fill the following settings to determine the values the end user can choose from.
+Expand the `AvailableValues` property of the report parameter and fill in the following settings to determine the values the end user can choose from.
 
-* Set the `DataSource` property to specify data source from which the available values of the editor will be loaded. The same object types used as data source for the report can be used as data source for the report parameters. If no DataSource is specified, available values are not loaded.
+* Set the `DataSource` property to specify the data source from which the available values of the editor will be loaded. The same object types used as data sources for the report can be used as data sources for the report parameters. If no DataSource is specified, available values are not loaded.
 * In the `ValueMember` property choose a column from the data source from which the editor to load the values.
 * In the `DisplayMember` property choose a column from the data source from which the editor to draw the value labels.
-* In the `Filters` you can limit the number of records in the available values based on specified filter rules. If the conditions of the rules are met the record is included. Filters are defined using the [Edit Filter Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog%}).
-* Sorting can be performed on the available values through the `Sorting` property. Sorting controls the order of the items provided to the user to choose from. Sorting is defined using the [Edit Sorting Dialog.]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog%})
+* In the `Filters` you can limit the number of records in the available values based on specified filter rules. If the conditions of the rules are met the record is included. Filters are defined using the [Edit Filter Dialog]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-filter-dialog%}).
+* Sorting can be performed on the available values through the `Sorting` property. Sorting controls the order of the items provided to the user to choose from. Sorting is defined using the [Edit Sorting Dialog.]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-sorting-dialog%})
 
 ## Add a Report Parameter programmatically
 
@@ -68,3 +68,4 @@ Expand the `AvailableValues` property of the report parameter and fill the follo
 {{source=CodeSnippets\CS\API\Telerik\Reporting\ReportSnippets.cs region=Define_AvailableValues_for_ReportParameter_Snippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\ReportSnippets.vb region=Define_AvailableValues_for_ReportParameter_Snippet}}
 
+In the above snippet, the Expressions `=Fields.[Field Name]` reference fields from the data source of the report parameter, i.e. from its `AvailableValues.DataSource`. The applied filter will limit the parameter `AvailableValues` only to the data rows that have the same `=Fields.ProductCategory` value as the one specified by the other Report Parameter `=Parameters.ProductCategory`. After the filtering, the values in the `AvailableValues` will be sorted based on the field specified as an `Expression` for the sorting and its `Direction`, i.e. `=Fields.ProductSubcategory`, in ascending order.

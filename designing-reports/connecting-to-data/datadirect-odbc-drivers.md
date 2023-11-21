@@ -15,7 +15,7 @@ Our product can connect to virtually any database through an ADO.NET or ODBC dat
 
 ## Progress DataDirect® ODBC Drivers Bundle
 
->note These DataDirect ODBC drivers are branded and will work exclusively with Telerik Reporting and Telerik ReportServer runtime. They are not intended to be used in a 3rd party application and will display a warning message when used without authorization.
+>note These DataDirect ODBC drivers are branded and will work exclusively with Telerik Reporting and Telerik ReportServer .NET Framework applications. The drivers are not intended to be used in .NET Core+ apps, or in a 3rd party application. In such cases a warning message will be displayed.
 
 The drivers library and installers can be downloaded as a separate ZIP-file from the user's account. The archive contains three files:
 

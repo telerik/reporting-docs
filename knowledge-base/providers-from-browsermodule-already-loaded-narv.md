@@ -4,7 +4,6 @@ description: "Learn what causes the 'Providers from the BrowserModule have alrea
 type: troubleshooting
 page_title: BrowserModule runtime exception when loading the ReportingAngularViewerModule
 slug: providers-from-browsermodule-already-loaded-narv
-position: 
 tags: Native Angular Report Viewer, Angular
 ticketid: 1631545
 res_type: kb
@@ -27,7 +26,7 @@ res_type: kb
 
 ## Description
 
-I have integrated the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) in the project and it build successfully, however, upon loading the page with the viewer it remains blank and there is an error in the browser's console.
+I have integrated the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) in the project and it builds successfully, however, upon loading the page with the viewer it remains blank and there is an error in the browser's console.
 
 ## Steps to Reproduce
 

@@ -23,11 +23,11 @@ table th:nth-of-type(3) {
 
 # Native Blazor Report Viewer Commands Overview
 
-The Native Blazor Report Viewer exposes **commands** that allow to control its behavior from application code.
+The Native Blazor Report Viewer exposes **commands** that allow it to control its behavior from application code.
 
 ## Executing A Command
 
-To execute a command, it is required to first get a reference to the report viewer object using the **@ref** attribute. Then, the referenced property/field can be used to invoke the `ExecuteCommand` method. The `ExecuteCommand` method has the following signature:
+To execute a command, it is required to first get a reference to the report viewer object using the `@ref` attribute. Then, the referenced property/field can be used to invoke the `ExecuteCommand` method. The `ExecuteCommand` method has the following signature:
 
 ```C#
 void ExecuteCommand(string commandName, string commandValue(optional))
@@ -40,12 +40,13 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 ```C#
 <button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
 <button type="button" class="btn btn-light btn-sm" @onclick="Export">Export Report to PDF</button>
-...
+<button type="button" class="btn btn-light btn-sm" @onclick="UpdateToken">Update Authentication Token</button>
+
 <ReportViewer
 	ServiceUrl="/api/reports"
 	@ref="@ViewerInstance"
 </ReportViewer>
-...
+
 @code {
 	public ReportViewer ViewerInstance { get; set; }
 
@@ -56,6 +57,11 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 	void Export()
 	{
 		ViewerInstance.ExecuteCommand("Export", "PDF");
+	}
+
+	void SetToken()
+	{
+		ViewerInstance.ExecuteCommand("SetAuthenticationToken", "SAMPLE_TOKEN");
 	}
 }
 ```
@@ -120,7 +126,7 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 				None
 			</td>
 			<td>
-				Triggers the Email sending functionality if implemented.
+				Triggers the Email-sending functionality if implemented.
 			</td>
 		</tr>
 		<tr>
@@ -130,6 +136,15 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 			</td>
 			<td>
 				Shows or hides the search dialog.
+			</td>
+		</tr>
+		<tr>
+			<td>SetAuthenticationToken</td>
+			<td>
+				The token string
+			</td>
+			<td>
+				Sets the token that will be used in the Authorization header of the requests made by the viewer.
 			</td>
 		</tr>
 		<tr>

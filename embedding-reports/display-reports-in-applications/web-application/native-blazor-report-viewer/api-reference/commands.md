@@ -1,7 +1,7 @@
 ---
 title: Commands
 page_title: Native Blazor Report Viewer Commands
-description: "Learn about what are the commands exposed by the Native Blazor Report Viewer and how they can be used to perform certain operations from code."
+description: "Learn about the commands exposed by the Native Blazor Report Viewer and how they can be used to perform certain operations from code."
 slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/commands
 tags: command,commands,method,methods,blazor,native,report,viewer,api
 published: True
@@ -23,29 +23,30 @@ table th:nth-of-type(3) {
 
 # Native Blazor Report Viewer Commands Overview
 
-The Native Blazor Report Viewer exposes **commands** that allow to control its behavior from application code.
+The Native Blazor Report Viewer exposes **commands** that allow it to control its behavior from application code.
 
 ## Executing A Command
 
-To execute a command, it is required to first get a reference to the report viewer object using the **@ref** attribute. Then, the referenced property/field can be used to invoke the `ExecuteCommand` method. The `ExecuteCommand` method has the following signature:
+To execute a command, it is required to first get a reference to the report viewer object using the `@ref` attribute. Then, the referenced property/field can be used to invoke the `ExecuteCommand` method. The `ExecuteCommand` method has the following signature:
 
-```C#
+````C#
 void ExecuteCommand(string commandName, string commandValue(optional))
-```
+````
 
 All commands, except for the `Export` command, require a single argument for this method, which is the `commandName`. The `commandValue` is used only by the `Export` command to specify the exporting format.
 
 For example, the `Refresh` and `Export` commands of the current report can be triggered like this:
 
-```C#
+````C#
 <button type="button" class="btn btn-light btn-sm" @onclick="RefreshReport">Refresh Report</button>
 <button type="button" class="btn btn-light btn-sm" @onclick="Export">Export Report to PDF</button>
-...
+<button type="button" class="btn btn-light btn-sm" @onclick="UpdateToken">Update Authentication Token</button>
+
 <ReportViewer
 	ServiceUrl="/api/reports"
 	@ref="@ViewerInstance"
 </ReportViewer>
-...
+
 @code {
 	public ReportViewer ViewerInstance { get; set; }
 
@@ -57,8 +58,13 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 	{
 		ViewerInstance.ExecuteCommand("Export", "PDF");
 	}
+
+	void SetToken()
+	{
+		ViewerInstance.ExecuteCommand("SetAuthenticationToken", "SAMPLE_TOKEN");
+	}
 }
-```
+````
 
 ## Commands List
 
@@ -120,7 +126,7 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 				None
 			</td>
 			<td>
-				Triggers the Email sending functionality if implemented.
+				Triggers the Email-sending functionality if implemented.
 			</td>
 		</tr>
 		<tr>
@@ -130,6 +136,15 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 			</td>
 			<td>
 				Shows or hides the search dialog.
+			</td>
+		</tr>
+		<tr>
+			<td>SetAuthenticationToken</td>
+			<td>
+				The token string
+			</td>
+			<td>
+				Sets the token that will be used in the Authorization header of the requests made by the viewer.
 			</td>
 		</tr>
 		<tr>
@@ -183,7 +198,7 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 				None
 			</td>
 			<td>
-				Zoom-in the report.
+				Zoom in the report.
 			</td>
 		</tr>
 			<tr>
@@ -192,7 +207,7 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 				None
 			</td>
 			<td>
-				Zoom-out the report.
+				Zoom out the report.
 			</td>
 		</tr>
 		<tr>
@@ -236,4 +251,4 @@ For example, the `Refresh` and `Export` commands of the current report can be tr
 
 ## See Also
 
-- [Native Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%})
+* [Native Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%})

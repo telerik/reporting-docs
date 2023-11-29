@@ -98,6 +98,10 @@ The subset may be built with the following command:
 gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepicker,dropdowntree,grid,editor,filemanager,listbox,listview,menu,multiselect,panelbar,slider,splitter,tabstrip,tooltip,treeview,upload,window,touch,autocomplete,stepper
 ````
 
+## Learn More
+
+* [Configure Web Report Designer and Create a Basic Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
+* [Implement a Common Master-Detail Report Scenario with the Web Report Designer]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
 
 ## See Also
 

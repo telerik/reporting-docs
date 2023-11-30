@@ -1,7 +1,7 @@
 ---
 title: Linear Gauge
 page_title: Linear Gauge Configuration and Usage
-description: "Learn how to insert and configure the Telerik Reporting Linear Gaugein order to display linear scales such as thermometers, tanks, color indicators (LED)."
+description: "Learn how to insert and configure the Telerik Reporting Linear Gauge in order to display linear scales such as thermometers, tanks, color indicators (LED)."
 slug: telerikreporting/designing-reports/report-structure/gauge/linear-gauge
 tags: telerik, reporting, report, items, Linear, gauge, properties
 published: True
@@ -16,11 +16,11 @@ The steps below will demonstrate how to add the Telerik Reporting Linear Gauge r
 
 * [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) - The Gauge item can be inserted from the `Insert Ribbon`:
 
-	![An image of the Standalone Report Designer Insert Ribbon with the Gauge Report Item](../images/standalone-ribbon-linear-gauge-item.png)
+	![The Standalone Report Designer Insert Ribbon with the Gauge Report Item in .NET Reporting](../images/standalone-ribbon-linear-gauge-item.png)
 
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) - The Gauge item can be inserted using the `Components Tab`:
 
-	![An image of the Web Report Designer Components Tab with the Gauge Report Item](../images/web-report-designer-linear-gauge-component.png)
+	![The Web Report Designer Components Tab with the Gauge Report Item in .NET Reporting](../images/web-report-designer-linear-gauge-component.png)
 
 * [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) - The Gauge item can be inserted from the [Visual Studio Toolbox](https://learn.microsoft.com/en-us/visualstudio/ide/reference/toolbox)
 

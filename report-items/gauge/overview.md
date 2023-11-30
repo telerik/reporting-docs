@@ -18,17 +18,17 @@ The Gauge report item is used to display the key performance indicators (KPIs) t
 
 ### Radial
 
-Radial gauges are circular, or degrees of circular, and resemble speedometers. The gauge pointers are often needles, but can be markers or bars too. The radial gauge is typically used when you want to express the data as a velocity.
+Radial gauges are circular, or degrees of circular, and resemble speedometers. The gauge pointers are often needles but can be markers or bars too. The radial gauge is typically used when you want to express the data as a velocity.
 
 Telerik Reporting provides the following Radial Gauge report item presets out of the box:
 
 * Single-Range
 
-	![An image of the default look of the Single-Range Radial Gauge](../images/radial-gauge-single-range.png)
+	![The default look of the Single-Range Radial Gauge](../images/radial-gauge-single-range.png)
 
 * Multi-Range
 
-	![An Image of the default look of the Multi-Range Radial Gauge](../images/radial-gauge-multi-range.png)
+	![The default look of the Multi-Range Radial Gauge](../images/radial-gauge-multi-range.png)
 	
 ### Linear
 
@@ -38,19 +38,19 @@ Telerik Reporting provides the following Linear Gauge report item presets out of
 
 * Single-Range Horizontal
 
-	![An image of the default look of the Single-Range Horizontal Linear Gauge](../images/linear-horizontal-gauge-single-range.png)
+	![The default look of the Single-Range Horizontal Linear Gauge](../images/linear-horizontal-gauge-single-range.png)
 
 * Single-Range Vertical
 
-	![An image of the default look of the Single-Range Vertical Linear Gauge](../images/linear-vertical-gauge-single-range.png)
+	![The default look of the Single-Range Vertical Linear Gauge](../images/linear-vertical-gauge-single-range.png)
 
 * Multi-Range Horizontal
 
-	![An Image of the default look of the Multi-Range Horizontal Linear Radial Gauge](../images/linear-horizontal-gauge-multi-range.png)
+	![The default look of the Multi-Range Horizontal Linear Radial Gauge](../images/linear-horizontal-gauge-multi-range.png)
 
 * Multi-Range Vertical
 
-	![An Image of the default look of the Multi-Range Vertical Linear Radial Gauge](../images/linear-vertical-gauge-multi-range.png)
+	![The default look of the Multi-Range Vertical Linear Radial Gauge](../images/linear-vertical-gauge-multi-range.png)
 
 ## Next Steps
 

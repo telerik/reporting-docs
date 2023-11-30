@@ -1,9 +1,9 @@
 ---
 title: Overview
-page_title: The Web Report Designer Explained
-description: "Learn what is the Telerik Web Report Designer, what are its dependencies and how it works compared to the other designing tools."
+page_title: Web Report Designer Explained
+description: "Learn what Telerik Web Report Designer is, what its dependencies are, and how it helps your web reporting activities."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview
-tags: overview,web,report,designer,tool,design,create,report
+tags: overview,web,report,designer,tool,design,create,report,web reporting
 published: True
 position: 0
 previous_url: /web-report-designer
@@ -11,32 +11,32 @@ previous_url: /web-report-designer
 
 # Web Report Designer Overview
 
-Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that allows developers to integrate a report designer [into their web applications](https://www.telerik.com/products/reporting/embedded-reporting.aspx). This way every business app can enable its users to design, stylize and preview reports without leaving the web browser. The styling is based on the Kendo UI Sass Default theme. The Telerik Web Report Designer previews reports in an HTML5 Report Viewer.
+Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that allows developers to [embed a report designer](https://www.telerik.com/products/reporting/embedded-reporting.aspx) into their web reporting applications. This way every business app can enable its users to design, stylize, and preview reports without leaving the web browser. The styling is based on the Kendo UI Sass Default theme. The Telerik Web Report Designer previews reports in an HTML5 Report Viewer.
 
-> The current version of the Web Report Designer offers beyond-basics functionality, but is still under active development. Please give it a thorough review to make sure the designer fits your scenario before including it in a production project.
+> The current version of the Web Report Designer offers beyond-basics functionality but is still under active development. Please give it a thorough review to make sure the designer fits your scenario before including it in a production project.
 
 ## Web Report Designer elements
 
 The Web Report Designer consists of the following areas:
 
-![An image highlighting the Web Report Designer's main areas/functionalities](images/Designer/web-report-designer-dashboard.png)
+![Highlighting the Web Report Designer's main areas and functionalities.](images/Designer/web-report-designer-dashboard.png)
 
-* `Design surface` - shows the design layout of the report. Provides tools for selecting, moving, resizing and editing the report items.
-* `Menu area` - provides buttons for creating a new report and opening, saving or previewing an already existing one. Also, allows switching between loaded reports and shows their save state.
-* `Properties area` - displays the properties of the selected report item. In case multiple items are selected, shows only the properties that are marked as "mergeable", in other words properties that can be applied to all items in the current selection. The list of the properties can be organized in categories or in alphabetical order.
-* `Components` - lists the available report components that can be added to the report. The items are organized in groups based on their type. The area supports two kinds of layout - grid and list. List is the default view.
+* `Design surface` - shows the design layout of the report. Provides tools for selecting, moving, resizing, and editing the report items.
+* `Menu area` - provides buttons for creating a new report and opening, saving, or previewing an already existing one. Also, allows switching between loaded reports and shows their saved state.
+* `Properties area` - displays the properties of the selected report item. In case multiple items are selected, shows only the properties that are marked as "mergeable", in other words, properties that can be applied to all items in the current selection. The list of the properties can be organized in categories or in alphabetical order.
+* `Components` - lists the available report components that can be added to the report. The items are organized in groups based on their type. The area supports two kinds of layout - grid and list. The list is the default view.
 * `Explorer` - represents the report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties.
 * `Assets Manager` - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
-* `Search` - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item or change a property value with just a few keystrokes.
-* `Onboarding Guide` - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded, if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
+* `Search` - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item, or change a property value with just a few keystrokes.
+* `Onboarding Guide` - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
 
 ## How it works
 
-The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backend. The service is responsible for the storage operations like creating, opening or saving report definitions in a specified folder, as well as handling the various requests that concern server-side processing and rendering. The public methods of the service can be overwritten to adjust its functionality to a specific scenario.
+The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backend. The service is responsible for the storage operations like creating, opening or saving report definitions in a specified folder, as well as handling the various requests that concern server-side processing and rendering. The public methods of the service can be overwritten to adjust its functionality to a specific web reporting scenario.
 
 ## Requirements:
 
-* The Web Report Designer can be integrated in any ASP.NET Web Application, both under `.NET Framework 4.5.1+` or `.NET 6+`.
+* The Web Report Designer can be integrated into any ASP.NET Web Application, both under `.NET Framework 4.5.1+` or `.NET 6+`.
 * The following NuGet packages are required:
 
 	+ Telerik.Reporting
@@ -61,7 +61,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 Since the Web Report Designer uses [Kendo UI](https://www.telerik.com/kendo-ui) for its template it is possible to use it even with a custom build instead of using the entire Kendo bundle. You may do this using the [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp).
 
-Below you can find the list of widgets that the Web Report Designer requires in order to work properly. Note that the widgets have other dependencies. The _Touch_ widget is required only for the gestures. Kendo's _MVVM_ is a set of a few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data.
+Below you can find the list of widgets that the Web Report Designer requires in order to work properly in your web reporting application. Note that the widgets have other dependencies. The _Touch_ widget is required only for the gestures. Kendo's _MVVM_ is a set of a few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data.
 
 Required widgets:
 
@@ -98,6 +98,10 @@ The subset may be built with the following command:
 gulp custom -c mvvm,button,buttongroup,combobox,dateinput,datepicker,datetimepicker,dropdowntree,grid,editor,filemanager,listbox,listview,menu,multiselect,panelbar,slider,splitter,tabstrip,tooltip,treeview,upload,window,touch,autocomplete,stepper
 ````
 
+## Learn More
+
+* [Configure Web Report Designer and Create a Basic Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
+* [Implement a Common Master-Detail Report Scenario with the Web Report Designer]({%slug telerikreporting/getting-started/web-designer/improving-basic-report%})
 
 ## See Also
 

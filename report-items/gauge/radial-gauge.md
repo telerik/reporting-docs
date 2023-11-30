@@ -16,11 +16,11 @@ The steps below will demonstrate how to add the Telerik Reporting Radial Gauge r
 
 * [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) - The Gauge item can be inserted from the `Insert Ribbon`:
 
-	![An image of the Standalone Report Designer Insert Ribbon with the Gauge Report Item](../images/standalone-ribbon-gauge-item.png)
+	![The Standalone Report Designer Insert Ribbon with the Gauge Report Item in .NET Reporting](../images/standalone-ribbon-gauge-item.png)
 
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) - The Gauge item can be inserted using the `Components Tab`:
 
-	![An image of the Web Report Designer Components Tab with the Gauge Report Item](../images/web-report-designer-gauge-component.png)
+	![The Web Report Designer Components Tab with the Gauge Report Item in .NET Reporting](../images/web-report-designer-gauge-component.png)
 
 * [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) - The Gauge item can be inserted from the [Visual Studio Toolbox](https://learn.microsoft.com/en-us/visualstudio/ide/reference/toolbox)
 

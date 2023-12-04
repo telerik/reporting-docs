@@ -40,8 +40,7 @@ public void ConfigureServices(IServiceCollection services)
 1. Add the required services in the __ConfigureServices__ method. The sample configuration below uses the `Reports` folder in the `WebRootPath` to open and save report definitions. It is required to create the `Reports` folder manually under `wwwroot` and optionally add some report definitions inside.
 
 	````CSharp
-...
-	services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
+services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
 	{
 		ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
 		HostAppId = "BlazorWebReportDesignerDemo",
@@ -55,7 +54,6 @@ public void ConfigureServices(IServiceCollection services)
 		ResourceStorage = new ResourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Resources")),
 		SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(sp.GetService<IWebHostEnvironment>().WebRootPath, "Reports", "Shared Data Sources")),
 	});
-	...
 ````
 
 
@@ -65,7 +63,6 @@ public void ConfigureServices(IServiceCollection services)
 app.UseEndpoints(endpoints =>
 	{
 		endpoints.MapControllers();
-		...
 	});
 ````
 
@@ -99,7 +96,7 @@ using Microsoft.AspNetCore.Mvc;
 ## Adding the Blazor Web Report Designer component
 
 1. Add NuGet package reference to the `Telerik.WebReportDesigner.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
-1. Add JavaScript dependencies to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly):
+1. Add JavaScript dependencies to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `App.razor` (Blazor Web App):
 
 	````HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -109,14 +106,7 @@ using Microsoft.AspNetCore.Mvc;
 ````
 
 
-1. Add [Telerik Kendo UI Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly). The Razor syntax for a server application differs and you need to escape the `@` symbol as `@@`:
-
-	````HTML
-<link rel="stylesheet" href="https://unpkg.com/@progress/kendo-theme-default@latest/dist/all.css" />
-````
-
-
-1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the __body__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly):
+1. Add the dedicated `telerikWebReportDesignerInterop.js` dependency at the end of the __body__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or in `App Razor` (Blazor Web App):
 
 	````HTML
 <script src="_content/Telerik.WebReportDesigner.Blazor/telerikWebReportDesignerInterop.js" defer></script>
@@ -129,7 +119,10 @@ using Microsoft.AspNetCore.Mvc;
 
 	````HTML
 @page "/"
+	@* For Blazor Web Apps, an interactive render mode should be used, for example: *@
+	@* @rendermode InteractiveServer *@
 	@using Telerik.WebReportDesigner.Blazor
+
 	<style>
 		#wrd1 {
 			position: relative;

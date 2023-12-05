@@ -37,6 +37,7 @@ The sample project may be downloaded from our `reporting-samples` Github reposit
 To ensure that the approach works, you may put break points in the conditional statements for the two formatters in the method `ReadRequestBodyAsync` or `WriteResponseBodyAsync` of the `Controllers\CustomJsonFormatters.cs` file. The `Newtonsoft.Json` formatter should be hit when the Reporting REST Service is called by the viewer or by calling manually the service, for example, at the `~/api/reports/version`. The `System.Text.Json` formatter should be used when calling the Values controller, for example, at the end-point `~/api/values`.
 
 Here is the code of the class that is not implemented in the Stackoverflow thread:
+
 ````CSharp
 internal class MySuperJsonOutputFormatter : TextOutputFormatter
 {
@@ -77,11 +78,12 @@ internal class MySuperJsonOutputFormatter : TextOutputFormatter
 ````
 
 ### Local
-To use the above solutions solution you would need to configure the Json settings/options and MvcOptions globally in Program.cs.
 
-If you don't want to configure serialization options glabally, you can create ServiceFilterAttribute, which you can attach to any controller that need to use a different Json serialization.
+To use the above solutions solution you would need to configure the JSON settings/options and MvcOptions globally in the `Startup` class.
 
-It will take the result object of any endpoint, use the newtonsoft serializer to produce a json string and replace the endpoint result with that. 
+If you don't want to configure serialization options globally, you can create `ServiceFilterAttribute`, which you can attach to any controller that need to use a different JSON serialization.
+
+It will take the result object of any endpoint, use the Newtonsoft serializer to produce a JSON string, and replace the endpoint result with that.
 
 ````CSharp
 public class ToNewtonsoftActionFilter : IAsyncResultFilter 
@@ -102,12 +104,14 @@ public class ToNewtonsoftActionFilter : IAsyncResultFilter
 }
 ````
 
+
 ````CSharp
 [ServiceFilter(typeof(ToNewtonsoftActionFilter))]
 public class ReportDesignerControllerSTJBase : ReportDesignerControllerBase
 ````
 
-You would also need to create ModelBinderAttribute attached which will cause the objects to be deserialized by newtonsoft.
+You would also need to create `ModelBinderAttribute` attached which will cause the objects to be deserialized by Newtonsoft.
+
 ````CSharp
 public class NewtonsoftJsonModelBinder : IModelBinder 
 {
@@ -124,18 +128,18 @@ public class NewtonsoftJsonModelBinder : IModelBinder
 }
 ````
 
+
 ````CSharp
 public virtual new IActionResult GetMembers([ModelBinder(typeof(NewtonsoftJsonModelBinder))] TypeInfoWithFilter input) => base.GetMembers(input);
 ````
 
-Finally you would need to register ToNewtonsoftActionFilter as a Singleton service in the Program.cs but the usage is completely confined to the specific controllers. 
+Finally, you would need to register ToNewtonsoftActionFilter as a Singleton service in the Program.cs but the usage is completely confined to the specific controllers. 
 
 ````CSharp
 builder.Services.AddSingleton<ToNewtonsoftActionFilter>();
 ````
 
 The sample project may be downloaded from our `reporting-samples` Github repository [Two Json Serializers Local](https://github.com/telerik/reporting-samples/tree/master/TwoJsonSerializersLocal).
-
 
 ## See Also
 

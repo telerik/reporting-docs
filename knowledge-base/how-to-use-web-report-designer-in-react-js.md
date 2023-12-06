@@ -133,6 +133,57 @@ import React, { Component } from 'react';
 npm run start
 ````
 
+## Notes
+
+If you do not wish to load the scripts for the designer and viewer in the `index.html` since it would increase the initial load time, the scripts may be loaded in the component itself. In this scenario, steps 3 through 5 can be skipped.
+
+To load the `jquery` and `kendo` subsets in the component where the Web Report Designer will be used, the following packages must be installed:
+
+````powershell
+> npm install jquery
+> npm install @progress/kendo-ui
+```` 
+
+Then, the component needs to be edited as follows:
+
+````TypeScript
+import React, { Component } from 'react';
+import * as $ from 'jquery';
+import '@progress/kendo-ui';
+
+export default class ReportDesigner extends Component {
+
+    componentDidMount() {
+        window.jQuery = $;
+        window.$ = $;
+        this.loadScriptPromise("https://demos.telerik.com/reporting/api/reportdesigner/designerresources/js/webReportDesigner/").then(a => {
+            $('#reportDesigner1')
+            .telerik_WebReportDesigner({
+                toolboxArea: {
+                    layout: "list" //Change to "grid" to display the contents of the Components area in a flow grid layout.
+                },
+                serviceUrl: "https://demos.telerik.com/reporting/api/reportdesigner/",
+                report: "Barcodes report.trdx"
+            }).data("telerik_WebDesigner");
+        })
+
+	this.loadScriptPromise("https://demos.telerik.com/reporting/api/reportdesigner/resources/js/telerikReportViewer/")
+    }
+
+    render() {
+        return <div id="reportDesigner1"></div>
+    }
+
+    loadScriptPromise(scriptUrl) {
+        return new Promise(resolve => {
+          const scriptElement = document.createElement('script');
+          scriptElement.src = scriptUrl;
+          scriptElement.onload = resolve;
+          document.body.appendChild(scriptElement);
+        });
+      }
+}
+````
 
 ## Additional resources
 

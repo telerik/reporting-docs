@@ -1,10 +1,10 @@
 ---
 title: Overview
 page_title: Structure and Elements Overview of the Map Report Item
-description: "Learn more about the visual structure, main elements and settings of the Telerik Reporting Map report item."
+description: "Learn more about the visual structure, main elements, and settings of the Telerik Reporting Map report item."
 slug: telerikreporting/designing-reports/report-structure/map/structure/overview
 tags: telerik, reporting, map, report, item, structure, elements, overview
-previous_url: /MapStructure
+previous_url: /MapStructure, /report-items/map/structure/
 published: True
 position: 0
 ---
@@ -21,9 +21,9 @@ The following image displays a Map report item showing a Point map series.
 
 ## Parallels and Meridians
 
-The parallels and meridians, or the latitude and longitude lines, represent an imaginary grid over the Earth's surface thus forming the map coordinate system, called graticule. By combining longitude and latitude measurements, you can determine any location. The units of measurement for geographic coordinates are degrees (°), minutes ('), and seconds ("). For simplicity, the Map report item uses their decimal representation (decimal degrees).
+The parallels and meridians, or the latitude and longitude lines, represent an imaginary grid over the Earth's surface thus forming the map coordinate system, called graticule. By combining longitude and latitude measurements, you can determine any location. The units of measurement for geographic coordinates are degrees (°), minutes ('), and seconds ("). For simplicity, the Map report item uses its decimal representation (decimal degrees).
 
-When using the [Mercator projection](#projection), the meridians are distributed equally along the coordinate system. However, when using this projection, the latitude lines are non-linear and, therefore, the parallels are placed on a non-constant distance from each other. That's why the Map enables the user to change the step at which the parallels or meridians are drawn. When not set, the latitude and longitude lines are drawn based on the given extent and scale factor.
+When using the [Mercator projection](#projection), the meridians are distributed equally along the coordinate system. However, when using this projection, the latitude lines are non-linear, and, therefore, the parallels are placed at a non-constant distance from each other. That's why the Map enables the user to change the step at which the parallels or meridians are drawn. When not set, the latitude and longitude lines are drawn based on the given extent and scale factor.
 
 ## Data Points
 
@@ -39,12 +39,12 @@ Data point labels are used to display the exact value represented by a data poin
 
 Series represent a number of data points that show individual measurements. Depending on the groups they use and the data points they display, the series in the Map report item can be divided into two major categories.
 
-* [`LocationMapSeries`](/api/Telerik.Reporting.LocationMapSeries)&mdash;To determine its data points position on the map, this category uses [`GeoLocationMapGroup`](/api/Telerik.Reporting.GeoLocationMapGroup) to obtain a set of latitude and longitude coordinates, or to query the defined [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}). Location map series are the Point, Pie, and Column map types because they present similar data points each one on a single location on the map.
-* [`ShapeMapSeries`](/api/Telerik.Reporting.ShapeMapSeries)&mdash;This category uses a set of coordinates to determine the shape of the data point itself. In this case, the engine does not use a `LocationProvider` or a `GeoLocationMapGroup` because the data points are not determined by a single location on the map surface.
+* [`LocationMapSeries`](/api/Telerik.Reporting.LocationMapSeries)&mdash; To determine its data points' position on the map, this category uses [`GeoLocationMapGroup`](/api/Telerik.Reporting.GeoLocationMapGroup) to obtain a set of latitude and longitude coordinates, or to query the defined [location provider]({%slug telerikreporting/designing-reports/report-structure/map/structure/location-providers%}). Location map series are the Point, Pie, and Column map types because they present similar data points each one on a single location on the map.
+* [`ShapeMapSeries`](/api/Telerik.Reporting.ShapeMapSeries)&mdash; This category uses a set of coordinates to determine the shape of the data point itself. In this case, the engine does not use a `LocationProvider` or a `GeoLocationMapGroup` because the data points are not determined by a single location on the map surface.
 
 The Map series can share existing `GeoLocation`, `ShapeMap`, and `Series` groups.
 
->tip Although the Map series share common properties, a `ShapeMapSeries` can only use and share `ShapeMap` groups. The `LocationMapSeries` (Point, Pie, and Column) can only use and share a `GeoLocationmap` groups.
+>tip Although the Map series share common properties, a `ShapeMapSeries` can only use and share `ShapeMap` groups. The `LocationMapSeries` (Point, Pie, and Column) can only use and share a `GeoLocationmap` group.
 
 ## Title
 

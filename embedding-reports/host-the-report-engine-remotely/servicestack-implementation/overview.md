@@ -6,18 +6,18 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-service-service-stack,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/overview
+previous_url: /telerik-reporting-rest-service-service-stack,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/overview, /embedding-reports/host-the-report-engine-remotely/servicestack-implementation/
 ---
 
 # ServiceStack Implementation Overview
 
-The ServiceStack implementation of the Telerik Reporting REST Service is a __REST__ ful web service built upon the [ServiceStack](https://servicestack.net/) framework.
+The ServiceStack implementation of the Telerik Reporting REST Service is a __REST__ full web service built upon the [ServiceStack](https://servicestack.net/) framework.
 
-In order to utilize the service, you have to create a new class which inherits from the abstract [ReportsHostBase](/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase) class. The *ReportsHostBase* class contains one important property needed by the reporting engine: [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration).
+In order to utilize the service, you have to create a new class that inherits from the abstract [ReportsHostBase](/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase) class. The *ReportsHostBase* class contains one important property needed by the reporting engine: [ReportServiceConfiguration](/api/Telerik.Reporting.Services.ServiceStack.ReportsHostBase#Telerik_Reporting_Services_ServiceStack_ReportsHostBase_ReportServiceConfiguration).
 
 The service can be hosted on [IIS]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/servicestack-implementation/how-to-add-telerik-reporting-rest-servicestack-to-web-application%}) or self-hosted.
 
-As Telerik Reporting ServiceStack REST service is a pure HTTP web service it can be accessed with any HTTP-capable client. For example you can create one of the following clients in order to utilize the service:
+As Telerik Reporting ServiceStack REST service is a pure HTTP web service it can be accessed with any HTTP-capable client. For example, you can create one of the following clients in order to utilize the service:
 
 * JavaScript client
 * C# client
@@ -27,7 +27,7 @@ The service can be used from the [HTML5 Report Viewer]({%slug telerikreporting/u
 
 The current ServiceStack implementation is based on [ServiceStack](https://servicestack.net/) V3 __(3.9.70.0)__
 
-> The __Telerik Reporting ServiceStack REST Service__ should be the only ServiceStack based Web Service in a project, as all ServiceStack services have [a single AppHost per AppDomain](https://docs.servicestack.net/modularizing-services).
+> The __Telerik Reporting ServiceStack REST Service__ should be the only ServiceStack-based Web Service in a project, as all ServiceStack services have [a single AppHost per AppDomain](https://docs.servicestack.net/modularizing-services).
 
 ## See Also
 

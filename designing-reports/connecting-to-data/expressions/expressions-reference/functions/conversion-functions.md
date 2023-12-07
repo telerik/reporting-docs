@@ -17,6 +17,6 @@ Use the Conversion functions to convert a value from one data type to another. C
 | ------ | ------ |
 | `CBool(expression)` |Converts an expression to `Boolean` value.|
 | `CDbl(expression)` |Converts an expression to `Double` value.|
-| `CInt(expression)` |Converts an expression to `Integer` value.|
+| `CInt(expression)` |Converts an expression to `System.Int32`, i.e. `int` value.|
 | `CDate(expression)` |Converts an expression to `Date` value.|
 | `CStr(expression)` |Converts an expression to `String` value.|

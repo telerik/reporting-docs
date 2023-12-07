@@ -29,12 +29,13 @@ In order to produce a PDF that visualizes content correctly via Telerik Reportin
 
 ## Possible Causes
 
-- The used font is not TrueType;
+- The used font is not TrueType.
 
-- The used font does not support the characters you need to display;
+- The used font does not support the characters you need to display.
 
 - The used font is not available on the server and/or the client machines.
 
+- The font author has restricted font embedding _(see [Fonts Requirements]({%slug telerikreporting/designing-reports/rendering-and-paging/fonts-requirements%}))_.
   
 ## Solution
   
@@ -42,7 +43,7 @@ In order to produce a PDF that visualizes content correctly via Telerik Reportin
   
 - If the **font cannot be installed on the server machine**, where reports are processed and rendered, you can use <a href="../configuring-telerik-reproting-privatefonts" target="_blank">**Telerik Reporting privateFonts settings**</a>. The settings are applicable only through the configuration file of the application. You will need to <a href="../configuring-telerik-reporting" target="_blank">declare a Telerik.Reporting section first</a>.  
   
-- If the **font is not available on the client machine**, you can fully embed the fonts in the PDF file during its generation. You will need to <a href="../configuring-telerik-reporting" target="_blank">declare a Telerik.Reporting section first</a>. Then you need to configure the PDF extension and its <a href="../device-information-settings-pdf" target="_blank">**FontEmbedding**</a> parameter:  
+- If the **font is not available on the client machine**, you can fully embed the fonts in the PDF file during its generation _(will not work if font embedding is restricted)_. You will need to <a href="../configuring-telerik-reporting" target="_blank">declare a Telerik.Reporting section first</a>. Then you need to configure the PDF extension and its <a href="../device-information-settings-pdf" target="_blank">**FontEmbedding**</a> parameter:  
 
 ```html
 <Telerik.Reporting>

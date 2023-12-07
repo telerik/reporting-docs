@@ -6,6 +6,7 @@ slug: telerikreporting/embedding-reports/display-reports-in-applications/web-app
 tags: options,blazor,native,report,viewer,api,initialization
 published: True
 position: 0
+previous_url: /embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/
 ---
 
 <style>
@@ -19,7 +20,7 @@ table th:nth-of-type(2) {
 
 # Native Blazor Report Viewer Options Overview
 
-Below is a list of all options available during initialization of the native Blazor Report Viewer.
+Below is a list of all options available during the initialization of the native Blazor Report Viewer.
 
 ## Options
 

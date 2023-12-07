@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-service-aspnetcore-mvc,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview
+previous_url: /telerik-reporting-rest-service-aspnetcore-mvc,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview, /embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/
 ---
 
 # ASP.NET Core Web API Implementation in .NET and .NET Core

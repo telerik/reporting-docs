@@ -133,6 +133,7 @@ import React, { Component } from 'react';
 npm run start
 ````
 
+
 ## Notes
 
 If you do not wish to load the scripts for the designer and viewer in the `index.html` since it would increase the initial load time, the scripts may be loaded in the component itself. In this scenario, steps 3 through 5 can be skipped.

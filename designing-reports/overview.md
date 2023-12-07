@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/overview
 tags: telerik, reporting, creating, designing, reports, overview
 published: True
 position: 0
-previous_url: /designing-reports, /creating-the-report, /designing-reports/
+previous_url: /creating-the-report, /designing-reports/
 ---
 
 # Creating Reports Overview

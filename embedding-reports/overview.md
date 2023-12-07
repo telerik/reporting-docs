@@ -1,9 +1,9 @@
 ---
 title: Overview
 page_title: Embedding Reports Basics
-description: "Learn how you may design reports, render them in applications and display the report documents in the dedicated report viewers with Telerik Reporting."
+description: "Learn how you may design reports, render them in applications, and display the report documents in the dedicated report viewers with Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/overview
-previous_url: /using-reports-in-applications/overview, /use-reports-in-applications
+previous_url: /using-reports-in-applications/overview, /use-reports-in-applications, /embedding-reports/
 tags: telerik, reporting, embedding, reports, overview
 published: True
 position: 0
@@ -37,7 +37,7 @@ Telerik Reporting offers numerous ways to [Display Reports in Applications]({%sl
 * [WinUI Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview%}) - a composite of Telerik UI for WinUI desktop controls that is suitable for WinUI 3 projects.
 
 ### Requirements
-.NET 6 introduced a [globalization-invariant mode](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/globalization) which, if enabled, does not allow creation of any culture except the invariant culture. The Report Engine relies on instantiating cultures to support localization, formatting, and units conversion, so enabling invariant globalization will break the engine's functionality. Refer to the [Only invariant culture is supported in globalization-invariant mode]({%slug only-invariant-culture-is-supported-in-globalization-invariant-mode-error%}) article for instructions on how to disable the `Invariant Globalization` mode.
+.NET 6 introduced a [globalization-invariant mode](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/globalization) which, if enabled, does not allow the creation of any culture except the invariant culture. The Report Engine relies on instantiating cultures to support localization, formatting, and unit conversion, so enabling invariant globalization will break the engine's functionality. Refer to the [Only invariant culture is supported in globalization-invariant mode]({%slug only-invariant-culture-is-supported-in-globalization-invariant-mode-error%}) article for instructions on how to disable the `Invariant Globalization` mode.
 
 ## Adding the Report Engine
 
@@ -53,7 +53,7 @@ If you choose the [Embedded Report Engine]({%slug telerikreporting/using-reports
 
 ### Telerik Report Server
 
-Telerik Report Server is a server-based platform powered by Telerik Reporting that provides a centralized storage for reports and comprehensive reports management.
+Telerik Report Server is a server-based platform powered by Telerik Reporting that provides centralized storage for reports and comprehensive reports management.
 
 Connect the Report Viewer to the Telerik Report Server’s engine:
 

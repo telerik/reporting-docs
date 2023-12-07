@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/export-and-configure/config
 tags: overview
 published: True
 position: 0
-previous_url: /configuring-telerik-reporting
+previous_url: /configuring-telerik-reporting, /doc-output/configure-the-report-engine/
 ---
 
 <style>
@@ -20,7 +20,7 @@ table th:nth-of-type(2) {
 
 # Report Engine Configuration Overview
 
-There are particular settings that can be applied to the Telerik Reporting engine to influence its behavior or extend it. These are defined in the application's configuration file. For __Windows and WPF applications__ the configuration file is called `app.config`, for __ASP.NET Framework applications__ – `web.config`. This configuration file is XML-based and its content is divided into sections.
+Particular settings can be applied to the Telerik Reporting engine to influence its behavior or extend it. These are defined in the application's configuration file. For __Windows and WPF applications__ the configuration file is called `app.config`, for __ASP.NET Framework applications__ – `web.config`. This configuration file is XML-based and its content is divided into sections.
 
 On the other hand, __.NET Core applications__ provide another way of storing configuration - a key-value JSON-based file named `appsettings.json`. For __.NET Core console applications__ both configuration types are supported, but __appsettings.json__ has precedence over __app.config__. __ASP.NET Core applications__ no longer use *web.config* so the configuration should be set to any of the supported [key-value-based files](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-7.0).
 

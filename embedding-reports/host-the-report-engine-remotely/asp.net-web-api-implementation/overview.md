@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-service-web-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview
+previous_url: /telerik-reporting-rest-service-web-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview, /embedding-reports/host-the-report-engine-remotely/asp.net-web-api-implementation/
 ---
 
 # Telerik Reporting REST Service ASP.NET Web API Implementation
@@ -20,7 +20,7 @@ You need to satisfy the following [Requirements]({%slug telerikreporting/using-r
 * [Adding Telerik Reporting REST Web API to Web Application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})
 * [Self Hosting Telerik Reporting REST Web API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-self-host-telerik-reporting-rest-web-api%})
 
-Afterwards follow this article in order to add the service entrance point: [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
+Afterward follow this article to add the service entrance point: [How to implement the ReportsController in an application]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application%})
 
 The service can be used from:
 

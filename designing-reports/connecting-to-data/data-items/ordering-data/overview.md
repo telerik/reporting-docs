@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/ordering-
 tags: overview,ordering,sorting,data,item,group
 published: True
 position: 0
-previous_url: /data-items-ordering-data
+previous_url: /data-items-ordering-data, /designing-reports/connecting-to-data/data-items/ordering-data/
 ---
 
 # Ordering Data Overview

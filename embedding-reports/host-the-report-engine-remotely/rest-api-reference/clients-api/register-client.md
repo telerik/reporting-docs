@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: register,client
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-api-register-client,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client
+previous_url: /telerik-reporting-rest-api-register-client,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/clients-api/register-client, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/clients-api/
 ---
 
 # `Register Client` Overview

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/report-parameters/ov
 tags: overview,report,parameters
 published: True
 position: 0
-previous_url: /designing-reports-parameters
+previous_url: /designing-reports-parameters, /designing-reports/connecting-to-data/report-parameters/
 ---
 
 # Report Parameters Overview

@@ -33,7 +33,9 @@ Report parameters can have the following properties:
 
 * [Type](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Type) 
 
-	Determines the type of the values that are acceptable. The allowed types are `Boolean`, `DateTime`, `Integer` (values are converted to `System.Int64` i.e. `long`), `Float`(values are converted to `System.Double` i.e. `double`), and `String`. Acceptable values for each type are listed here: [ReportParameterType](/api/Telerik.Reporting.ReportParameterType) The default parameter type is `String`.
+	Determines the type of the acceptable values. The allowed types are `Boolean`, `DateTime`, `Integer` (values are converted to `System.Int64` i.e. `long`), `Float`(values are converted to `System.Double` i.e. `double`), and `String`. Acceptable values for each type are listed here: [ReportParameterType](/api/Telerik.Reporting.ReportParameterType) The default parameter type is `String`.
+
+	>note In some scenarios you may need to convert the Integer Parameter Value to `System.Int32` i.e. `int`, for example, to pass it to a User Function, DataSource parameter, etc. In these cases, apply the [Conversion Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions%}) `CInt` to the parameter before passing the value to avoid the potential failure of the cast from `System.Int64` to `System.Int32`.
 
 * [Name](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Name)
 
@@ -73,7 +75,7 @@ Report parameters can have the following properties:
 
 	+ `DataSource` – a data source for the value/label pairs. The same data sources are supported as for the [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/binding-a-data-item-to-data%}), including the Telerik Reporting [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}).
 
-		> The optimization for reusing the raw data from the same DataSource component introduced with [R3 2019 (13.2.19.918)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2019-13-2-19-918) is valid only for __data items__. It doesn't concern the Report Parameters with [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) relying on DataSource components. Even if there are several parameters that fetch their [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) from the same DataSource, the latter will be called once for each parameter.
+		> The optimization for reusing the raw data from the same DataSource component introduced with [R3 2019 (13.2.19.918)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2019-13-2-19-918) is valid only for __data items__. It doesn't concern the Report Parameters with [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) relying on DataSource components. Even if several parameters fetch their [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) from the same DataSource, the latter will be called once for each parameter.
 
 	+ `ValueMember` – a column name, expression, or embedded expression based on the __DataSource__ schema. It is used as `Value` in the value/label pair. May be accessed in Expressions with the Global Object `=Parameters.[Parameter Name].Value`.
 	+ `DisplayMember` – a column name, expression, or embedded expression based on the __DataSource__ schema. It is used as `Label` in the value/label pair. May be accessed in Expressions with the Global Object `=Parameters.[Parameter Name].Label`. If omitted the `ValueMember` will be used as `DisplayMember` as well. Optional.

@@ -3,9 +3,10 @@ title: Overview
 page_title: 2D Barcodes Overview
 description: "Learn more about the two-dimensional, matrix barcode support provided by the Telerik Reporting Barcode report item."
 slug: 2d_barcodes_overview
-tags: telerik, reporting, report, items, 2d, barcodes, overview, matrix, two-dimensional
+tags: telerik, reporting, report, items, 2D, barcodes, overview, matrix, two-dimensional
 published: True
 position: 0
+previous_url: /report-items/barcode/2d-barcodes/
 ---
 <style>
 table th:first-of-type {
@@ -18,9 +19,9 @@ table th:nth-of-type(2) {
 
 # Two-Dimensional Barcodes Overview
 
-The matrix barcode is a two-dimensional (2D) way for representing information.
+The matrix barcode is a two-dimensional (2D) way of representing information.
 
-It can also be referred to as a 2D barcode or simply a 2D code. 2D barcodes are similar to the linear (1D) barcodes, but can represent more data per unit area.
+It can also be referred to as a 2D barcode or simply a 2D code. 2D barcodes are similar to linear (1D) barcodes but can represent more data per unit area.
 
 Currently, the Barcode report item supports the following matrix barcode types:
 

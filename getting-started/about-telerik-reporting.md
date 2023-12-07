@@ -5,7 +5,7 @@ description: "Learn more about the concepts and logic behind Telerik Reporting. 
 slug: on-telerik-reporting
 tags: telerik, reporting, basic, concepts, explanations, logic
 published: True
-previous_url: /best-practices-solution-structure
+previous_url: /best-practices-solution-structure, /getting-started/
 position: 0
 ---
 

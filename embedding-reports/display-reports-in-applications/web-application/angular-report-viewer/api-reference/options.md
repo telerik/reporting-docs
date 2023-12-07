@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: options
 published: True
 position: 0
-previous_url: /angular-report-viewer-api-options, /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-api-options
+previous_url: /angular-report-viewer-api-options, /using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-api-options, /embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/api-reference/
 ---
 
 <style>

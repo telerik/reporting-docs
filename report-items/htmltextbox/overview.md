@@ -4,7 +4,7 @@ page_title: HtmlTextBox Report Item at a Glance
 description: "Learn more about the Telerik Reporting HtmlTextBox report item and its key features covering style through HTML tags and CSS attributes, using embedded expressions, and more."
 slug: telerikreporting/designing-reports/report-structure/htmltextbox/overview
 tags: telerik, reporting, report, items, htmltextbox, overview, key, features
-previous_url: /report-items-html-text-box
+previous_url: /report-items-html-text-box, /report-items/htmltextbox/
 published: True
 position: 0
 ---

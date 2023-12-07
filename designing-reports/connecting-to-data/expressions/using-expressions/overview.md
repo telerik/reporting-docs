@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-ex
 tags: overview
 published: True
 position: 0
-previous_url: /designing-reports-item-binding-expressions
+previous_url: /designing-reports-item-binding-expressions, /designing-reports/connecting-to-data/expressions/using-expressions/
 ---
 
 # Using Expressions Overview

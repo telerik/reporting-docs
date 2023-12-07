@@ -6,12 +6,12 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: overview,object,business,component,.NET,types,requirements
 published: True
 position: 0
-previous_url: /ObjectDataSource
+previous_url: /ObjectDataSource, /designing-reports/connecting-to-data/data-source-components/objectdatasource-component/
 ---
 
 # ObjectDataSource Component Overview
 
-A common application design practice is to separate the presentation layer from business logic and encapsulate the business logic in business objects. These business objects form a layer between the presentation layer and the data tier, resulting in a multi-tier application architecture. The ObjectDataSource component supports the multi-tier architecture by providing a way for you to bind the Data Report Items to a middle-tier business object without extensive code. The ObjectDataSource component represents the middle-tier object (business object or any other class) and provides data retrieval capabilities.
+A common application design practice is to separate the presentation layer from the business logic and encapsulate the business logic in business objects. These business objects form a layer between the presentation layer and the data tier, resulting in a multi-tier application architecture. The ObjectDataSource component supports the multi-tier architecture by providing a way for you to bind the Data Report Items to a middle-tier business object without extensive code. The ObjectDataSource component represents the middle-tier object (business object or any other class) and provides data retrieval capabilities.
 
 ## Supported object types
 
@@ -35,7 +35,7 @@ Any of the following data sources can be assigned to the DataSource property of 
 
 * If the name of the `DataMember` (i.e. the table to bind to) is not specified, __the first Table of the DataSet__ will be bound to the `DataSource`.
 * If the `DataSource` references a strongly typed array of objects (business objects) these objects must contain public properties.
-* If the `DataSource` is a business object, the `DataMember` property specifies the name of the method which should be invoked to retrieve the data.
+* If the `DataSource` is a business object, the `DataMember` property specifies the name of the method that should be invoked to retrieve the data.
 * If the `DataMember` property is not specified, the constructor of the type will be invoked.
 * If the constructor or the method contains arguments they can be specified through the `Parameters` collection of the `ObjectDataSource` component.
 * You can also bind to an `ArrayList`. A feature of the `ArrayList` is that it can contain objects of multiple types. The `ObjectDataSource` component binds to such a list despite the types of items in it. The only requirement is that they provide public properties with the same names as they are used in the expressions.

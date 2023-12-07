@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: overview
 published: True
 position: 0
-previous_url: /SqlDataSource
+previous_url: /SqlDataSource,/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/
 ---
 
 <style>

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/converting-reports-from-other-reporting
 tags: telerik, reporting, importing, reports, converting, overview
 published: True
 position: 0
-previous_url: /faq-available-converters
+previous_url: /faq-available-converters, /importing-reports/
 ---
 
 # Importing Reports Overview
@@ -32,7 +32,7 @@ The converters are compiled against the 3rd party product version specified abov
 
 Converting from XtraReports does not require any additional steps. It is built against the version described in the right-hand panel of the information panel of the "Report Choice Page" of the "Report Wizard".
 
->caution The converters are just a helper utility we did out of good will to save some time. They do not guarantee a one-to-one complete conversion and are provided as is. Please have in mind that there are some parts (items/sections) that have no analog on our end and vice versa, thus you would need to review and fix the converted reports manually. Complex expressions will not be converted and should also be edited manually.
+>caution The converters are just a helper utility we did out of goodwill to save some time. They do not guarantee a one-to-one complete conversion and are provided as is. Please keep in mind that there are some parts (items/sections) that have no analog on our end and vice versa, thus you would need to review and fix the converted reports manually. Complex expressions will not be converted and should also be edited manually.
 
 
 The conversion depends on the 3rd party products' object model to create Telerik Reports and often there are additional adjustments that need to be carried out by the developer. Parsing the code is far more complicated since you may use any .NET programming language which makes the task almost impossible, and that is why only the report definition is inspected and all events and custom logic is skipped i.e. it should be added manually by the developer. The same goes for parts that have no counterpart on our end.

@@ -6,12 +6,12 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: get,version
 published: True
 position: 1
-previous_url: /embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version
+previous_url: /embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/general-api/
 ---
 
 # `Get Version` Overview
 
-Public interface for retrieving the Telerik Reporting REST Service version.
+The public interface for retrieving the Telerik Reporting REST Service version.
 
 ## Request
 
@@ -25,7 +25,7 @@ Public interface for retrieving the Telerik Reporting REST Service version.
 
 __Response Body__
 
-A string, which represent the version of the Telerik Reporting REST Service.
+A string, which represents the version of the Telerik Reporting REST Service.
 
 ## Sample
 

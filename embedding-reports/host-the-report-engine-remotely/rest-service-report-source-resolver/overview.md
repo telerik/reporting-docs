@@ -1,12 +1,12 @@
 ---
 title: Overview
 page_title: Reporting REST Service ReportSource Resolver at a Glance
-description: "Learn more about the Telerik Reporting REST Service ReportSource Resolver, what is its purpose and what built-in implementations are available."
+description: "Learn more about the Telerik Reporting REST Service ReportSource Resolver, what is its purpose, and what built-in implementations are available."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview
 tags: overview,report,reportsource,resolver,implementation,built-in,rest,service
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-service-report-resolver,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview
+previous_url: /telerik-reporting-rest-service-report-resolver,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview, /embedding-reports/host-the-report-engine-remotely/rest-service-report-source-resolver/
 ---
 
 # REST Service ReportSource Resolver Overview
@@ -17,7 +17,7 @@ When implementing the ReportsController you need to provide an [IReportSourceRes
 
 The Reporting REST Service's ReportSourceResolver handles reports on the server.
 
-[IReportSourceResolver](/api/Telerik.Reporting.Services.IReportSourceResolver) defines the behavior of an object which takes a string as an argument and resolves it to a valid __server-side__ [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) object. The format of this string argument is a matter of imlpementation, which should contain rules for collaboration between the service clients and the report resolver on the server. For example, if the resolver implementation expects a string containing a path relative to the application root directory, then the client should send a string containing such path. If the resolver is built to resolve reports from a type name, then a type name should be provided from the service client. Other scenario might require a resolver implementation which expects a report id and pulls the XML report definition from a database storage by that report id, then returns it as an [XmlReportSource](/api/Telerik.Reporting.XmlReportSource).
+[IReportSourceResolver](/api/Telerik.Reporting.Services.IReportSourceResolver) defines the behavior of an object which takes a string as an argument and resolves it to a valid __server-side__ [ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}) object. The format of this string argument is a matter of implementation, which should contain rules for collaboration between the service clients and the report resolver on the server. For example, if the resolver implementation expects a string containing a path relative to the application root directory, then the client should send a string containing such a path. If the resolver is built to resolve reports from a type name, then a type name should be provided by the service client. Another scenario might require a resolver implementation that expects a report id and pulls the XML report definition from database storage by that report id, then returns it as an [XmlReportSource](/api/Telerik.Reporting.XmlReportSource).
 
 The Reporting REST Service's resolver is used when resolving information for a report on the server, which includes:
 
@@ -25,9 +25,9 @@ The Reporting REST Service's resolver is used when resolving information for a r
 * Returning a valid __server-side ReportSource__;
 * Applying client-side parameters' values;
 * Exporting the report in a selected format;
-* Printing the report which is based on export in PDF file with additional Adobe JavaScript secttings - [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%});
+* Printing the report which is based on export in PDF file with additional Adobe JavaScript settings - [Printing Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/printing-reports%});
 * Refresh calls;
-* Navigation to other report that is considered as a request for a new report.
+* Navigation to another report that is considered as a request for a new report.
 
 ## Available built-in ReportSource Resolver implementations:
 
@@ -40,7 +40,7 @@ The Reporting REST Service's resolver is used when resolving information for a r
 
 Implementing the [IReportSourceResolver](/api/Telerik.Reporting.Services.IReportSourceResolver) interface allows you to include custom logic for creating, modifying, or accessing existing reports on the server, and to use any of the available [report sources]({%slug telerikreporting/designing-reports/report-sources/overview%}). An example implementation is available in [How To Implement a Custom ReportSource Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}).
 
-> The [Telerik.Reporting.Services.IReportSourceResolver.Resolve](/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_) method will be called each time when the Reporting engine needs the report source. This can happen serveral times until the report document is completely rendered. It is important that when the method is invoked multiple times it returns exactly the same report source for a given value of the passed string argument.
+> The [Telerik.Reporting.Services.IReportSourceResolver.Resolve](/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_) method will be called each time when the Reporting engine needs the report source. This can happen several times until the report document is completely rendered. It is important that when the method is invoked multiple times it returns exactly the same report source for a given value of the passed string argument.
 
 ## See Also
 

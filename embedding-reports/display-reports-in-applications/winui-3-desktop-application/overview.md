@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 position: 0
-previous_url: /winui-report-viewer
+previous_url: /winui-report-viewer, /embedding-reports/display-reports-in-applications/winui-3-desktop-application/
 ---
 
 # WinUI Report Viewer Overview
@@ -21,12 +21,12 @@ The toolbar of the WinUI Report Viewer provides basic functionality for interac
 * Navigate forward in history
 * Stop rendering
 * Refresh
-* Go to first page
-* Go to previous page
+* Go to the first page
+* Go to the previous page
 * Go to a specific page
 * Total number of pages
-* Go to next page
-* Go to last page
+* Go to the next page
+* Go to the last page
 * Page settings
 * Print Preview: switches between __Logical__ and __Physical__ page renderer. See [Rendering and Paging]({%slug telerikreporting/designing-reports/rendering-and-paging/overview%}) for more info.
 * Print
@@ -34,11 +34,11 @@ The toolbar of the WinUI Report Viewer provides basic functionality for interac
 * Show/Hide document map (where applicable)
 * Show/Hide parameters area (where applicable)
 
-The bottom panel of the WinUI report viewer contains a slider and drop-down list that control the current zoom level applied on the loaded report contents.
+The bottom panel of the WinUI report viewer contains a slider and drop-down list that control the current zoom level applied to the loaded report contents.
 
-> Visual Studio 2019 and Visual Studio 2019 Preview have known issues when building WinUI applications targeting .NET 5, while having .NET 6 SDK installed on the machine. For a smooth development experience, we recommend using `Visual Studio 2022` and `.NET 6 SDK Preview 6 or later`. Otherwise, you might need to *deinstall* .NET 6 SDK in order to build WinUI 3 applications.
+> Visual Studio 2019 and Visual Studio 2019 Preview have known issues when building WinUI applications targeting .NET 5 while having .NET 6 SDK installed on the machine. For a smooth development experience, we recommend using `Visual Studio 2022` and `.NET 6 SDK Preview 6 or later`. Otherwise, you might need to *deinstall* .NET 6 SDK to build WinUI 3 applications.
 
-In order to use the WinUI report viewer, you need a `WinUI 3` desktop application. In order to create such, the following tools must be installed:
+To use the WinUI report viewer, you need a `WinUI 3` desktop application. To create such, the following tools must be installed:
 
 * `Visual Studio 2022 with enabled Universal Windows Platform development`
 * `Windows 10 SDK 10.0.18362 or later installed`
@@ -48,9 +48,9 @@ In order to use the WinUI report viewer, you need a `WinUI 3` desktop applicati
 
 The WinUI ReportViewer control is a composite of Telerik UI for WinUI desktop controls. The viewer's functionality resides in `Telerik.ReportViewer.WinUI.dll` and the viewer's UI in `Telerik.ReportViewer.WinUI.Themes.dll`.
 
-The purpose of the WinUI ReportViewer control is to display Telerik Reports and allow the user to interact with them. Reports may be processed and rendered on the client machine when the viewer utilizes an embedded Reporting engine, or remotely, by a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Teleirk Report Server](https://docs.telerik.com/report-server/introduction). The report in the viewer is rendered as standard XAML elements, as Canvas and TextBlock, through Telerik Reporting XAML rendering mechanism, adjusted for WinUI specifics.
+The purpose of the WinUI ReportViewer control is to display Telerik Reports and allow the user to interact with them. Reports may be processed and rendered on the client machine when the viewer utilizes an embedded Reporting engine, or remotely, by a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Teleirk Report Server](https://docs.telerik.com/report-server/introduction). The report in the viewer is rendered as standard XAML elements, as Canvas and TextBlock, through the Telerik Reporting XAML rendering mechanism, adjusted for WinUI specifics.
 
-Due to the XAML-based nature of WinUI, the WinUI report viewer reuses parts of the source code written for the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}), allowing better maintainability and ensuring error-proof development. This is the reason why specific classes used by the WinUI report viewer might have the `Telerik.ReportViewer.Wpf` namespace. For the same reason, the configuration of the WinUI viewer is almost identical to the configuration of the WPF viewer for the supported functionalities. Check the corresonding WPF Viewer articles depending on the scenario:
+Due to the XAML-based nature of WinUI, the WinUI report viewer reuses parts of the source code written for the [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%}), allowing better maintainability and ensuring error-proof development. This is the reason why specific classes used by the WinUI report viewer might have the `Telerik.ReportViewer.Wpf` namespace. For the same reason, the configuration of the WinUI viewer is almost identical to the configuration of the WPF viewer for the supported functionalities. Check the corresponding WPF Viewer articles depending on the scenario:
 
 * [Integrating the WPF Report Viewer in .NET and .NET Core]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
 * [Integrating the WPF Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-use-wpf-report-viewer-with-rest-service%})
@@ -60,7 +60,7 @@ You may set the ReportSource of the WinUI Viewer as explained in the WinUI secti
 
 ## Known Limitations
 
-Currently the WinUI Report Viewer does not provide the following functionalities:
+Currently, the WinUI Report Viewer does not provide the following functionalities:
 
 * Search in report contents.
 * Enabled accessibility features for the report viewer and rendered report.

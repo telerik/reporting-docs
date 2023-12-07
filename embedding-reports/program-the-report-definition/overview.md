@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/program-the-report-definiti
 tags: telerik, reporting, embedding, reports, managing, reports, programmatically, overview
 published: True
 position: 0
-previous_url: /programmatic-control-of-reports
+previous_url: /programmatic-control-of-reports, /embedding-reports/program-the-report-definition/
 ---
 
 # Managing Reports Programmatically

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-
 tags: overview,data,item,report,group
 published: True
 position: 0
-previous_url: /data-items-grouping-data
+previous_url: /data-items-grouping-data, /designing-reports/connecting-to-data/data-items/grouping-data/
 ---
 
 # Grouping Data Overview

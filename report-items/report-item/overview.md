@@ -6,6 +6,7 @@ slug: report_item
 tags: telerik, reporting, report, items, item, overview
 published: True
 position: 0
+previous_url: /report-items/report-item/
 ---
 
 # Report Item Overview

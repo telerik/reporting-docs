@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/overview
 tags: overview
 published: True
 position: 0
-previous_url: /designing-reports-connecting-data-to-report
+previous_url: /designing-reports-connecting-data-to-report, /designing-reports/connecting-to-data/
 ---
 
 # Connecting to Data Overview
@@ -17,7 +17,7 @@ The topics in this section describe how to connect Telerik Reports to a data sou
 
 * Data Source components are used to connect [data items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) to different types of data without writing any code.
 * Most of the Data Source components allow working with data source parameters which are used to filter the data on retrieval. Data source parameters can be mapped to report parameters, data fields, or the result of the expression.
-* Data source components allow adding calculated fields in order to create new values that do not exist in the data source.
+* Data source components allow adding calculated fields to create new values that do not exist in the data source.
 
 For more details see topics in [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) section.
 
@@ -39,8 +39,8 @@ For more details see topics in [Data Items]({%slug telerikreporting/designing-re
 
 ## Expressions
 
-* Expressions are widely used while designing reports in order to manipulate the report's data, style, and behavior. When the report runs, the report processor evaluates the expressions using a built-in scripting language and substitutes the property values where expressions were used with the result of the expression.
-* There are built-in functions that allow to perform complex calculations in expressions. Users confident with any of the.NET languages can extend the expression engine in order to use custom functions in their reports.
+* Expressions are widely used while designing reports to manipulate the report's data, style, and behavior. When the report runs, the report processor evaluates the expressions using a built-in scripting language and substitutes the property values where expressions were used with the result of the expression.
+* There are built-in functions that allow to perform complex calculations in expressions. Users confident with any of the.NET languages can extend the expression engine to use custom functions in their reports.
 * Examples of expression usage: grouping, sorting, filtering operations, properties of the report and report items(sections), bindings, conditional formatting, report parameters, etc.
 
 For more details see topics in [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) section.
@@ -53,4 +53,4 @@ For more details see topics in [Expressions]({%slug telerikreporting/designing-r
 
 For more details see topics in [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) section.
 
-> The optimization for reusing the raw data from the same DataSource component is valid only for __data items__. It doesn't concern the Report Parameters with [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) relying on DataSource components. Even if there are several parameters that fetch their [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) from the same DataSource, the latter will be called once for each parameter.
+> The optimization for reusing the raw data from the same DataSource component is valid only for __data items__. It doesn't concern the Report Parameters with [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) relying on DataSource components. Even if several parameters fetch their [AvailableValues](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_AvailableValues) from the same DataSource, the latter will be called once for each parameter.

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: overview
 published: True
 position: 0
-previous_url: /conditional_visibility_and_other_interactive_features, /interactive-sorting-action
+previous_url: /conditional_visibility_and_other_interactive_features, /interactive-sorting-action, /interactivity/actions/sorting-action/
 ---
 
 # Sorting Action Overview

@@ -6,7 +6,7 @@ slug: telerikreporting/upgrade/overview
 tags: telerik, reporting, upgrading, major, minor, releases, desktop, website, other, projects, manually, overview
 published: True
 position: 0
-previous_url: /installation-upgrading-newer-version, /installation-upgrading-newer_version, /upgradepathoverview
+previous_url: /installation-upgrading-newer-version, /installation-upgrading-newer_version, /upgradepathoverview, /upgrade/
 ---
 
 # Upgrading Telerik Reporting

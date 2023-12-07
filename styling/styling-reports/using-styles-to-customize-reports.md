@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/using-styles-to-customi
 tags: using, styles, to, customize, reports
 published: True
 position: 0
-previous_url: /style-using-styles-to-customize-reports
+previous_url: /style-using-styles-to-customize-reports, /styling/styling-reports/
 ---
 
 # Customizing Reports using Styles
@@ -19,13 +19,13 @@ To create a style sheet for a report, follow these steps:
 
 1. Open the report in design view.
 1. Select the Report object.
-1. Click in the __StyleSheet__ property, click the ellipsis button to open the StyleRule Collection Editor.
+1. Click in the __StyleSheet__ property, and click the ellipsis button to open the StyleRule Collection Editor.
 1. Click __Add__ to add a new __StyleRule__.
 1. Expand the __Style__ property and customize your new __StyleRule__. For example, the screenshot below shows a __StyleRule__ that specifies a yellow background, blue text, and bold Times New Roman font.
 
 	![Image of the StyleRule Collection Editor window, showing the existing style rules on the left-hand side, and the properties of the currently selected style rule on the right-hand side](images/Style1.png)
 
-1. Click in the __Selectors__ property, click the ellipsis button to open the TypeSelector Collection Editor.
+1. Click in the __Selectors__ property, and click the ellipsis button to open the TypeSelector Collection Editor.
 1. Click the drop-down arrow on the __Add__ button and select the type of selector to add. See the type of selectors in [Understanding Style Selectors]({%slug telerikreporting/designing-reports/styling-reports/understanding-style-selectors%})
 1. Use the properties area of the TypeSelector Collection Editor to customize the new selector. For example, the screenshot below shows a __StyleSelector__ named __DataField__ which applies to __TextBox__ report items only.
 

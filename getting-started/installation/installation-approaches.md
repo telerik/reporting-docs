@@ -6,7 +6,7 @@ slug: telerikreporting/installation
 tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, private, feed, visual, studio
 published: True
 position: 2
-previous_url: /installation-system-requirements, /installation-installing-from-msi, /installation
+previous_url: /installation-system-requirements, /installation-installing-from-msi, /installation, /getting-started/installation/
 ---
 
 # Installation Approaches for Telerik Reporting
@@ -40,8 +40,8 @@ During the MSI installation process, consider the following:
 To install Telerik Reporting through the MSI automatic installer file:
 
 1. Log into your [Telerik account](https://www.telerik.com/account). Click the __Downloads__ tab to view the available trial and commercial products and select __Telerik Reporting__.
-1. From the next page, download the MSI installation and the documentation files and download the automatic installation MSI file. The source code is available for download only for commercial-license holders.
-1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog which appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.
+1. From the next page, download the MSI installation and the documentation files and download the automatic installation MSI file. The source code is available for download only for commercial license holders.
+1. When the download completes, run `Telerik_Reporting_[suiteversion].msi`. In the dialog that appears after you execute the MSI file, confirm that you have read and accepted the License Agreement.
 
 	![The Welcome Page of the Telerik Reporting Installation Wizard](images/installWizard1.png)
 
@@ -86,7 +86,7 @@ To configure the Telerik NuGet Feed in Visual Studio:
 If your password contains a special character, those characters need to be escaped or it may fail authentication resulting in *Error 401 login failure* from the NuGet server. A common character that needs to be escaped is the ampersand `&`, but it can be as unique as the section character `§`. There are two ways to handle this.
 
 1. Change the password so that it only includes characters that do not need to be escaped
-1. HTML encode the password so the special characters are escaped (e.g. `my§uper&P@§§word` becomes `my&sect;uper&amp;P@&sect;&sect;word`).
+1. HTML encodes the password so the special characters are escaped (e.g. `my§uper&P@§§word` becomes `my&sect;uper&amp;P@&sect;&sect;word`).
 
 We strongly discourage entering your password into an online encoder utility, use Powershell instead. Here's one example:
 

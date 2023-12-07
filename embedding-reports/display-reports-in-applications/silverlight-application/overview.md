@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 position: 0
-previous_url: /silverlight-report-viewer-intro
+previous_url: /silverlight-report-viewer-intro, /embedding-reports/display-reports-in-applications/silverlight-application/
 ---
 
 # Silverlight Application Overview

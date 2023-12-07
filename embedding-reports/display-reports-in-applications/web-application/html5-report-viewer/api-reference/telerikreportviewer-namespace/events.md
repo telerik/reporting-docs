@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: events
 published: True
 position: 0
-previous_url: /html5-report-viewer-api-events
+previous_url: /html5-report-viewer-api-events, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/
 ---
 
 # telerikReportViewer.Events

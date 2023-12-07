@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/web-report-design
 tags: resources,Assets Manager,sharing
 published: True
 position: 5
+previous_url: /designing-reports/report-designer-tools/web-report-designer/tools/
 ---
 
 # Shared Resources in the Web Report Designer

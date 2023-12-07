@@ -3,7 +3,7 @@ title: Overview
 page_title: Document Output Overview 
 description: "Learn more about export formats (rendering extensions or document outputs) in Telerik Reporting and how you may control the available ones in your project."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/export-formats
-previous_url: /using-reports-in-applications/export-and-configure/export-formats, /configuring-rendering-extensions
+previous_url: /using-reports-in-applications/export-and-configure/export-formats, /configuring-rendering-extensions, /doc-output/
 tags: telerik, reporting, export, formats, document, output, overview
 published: True
 position: 0

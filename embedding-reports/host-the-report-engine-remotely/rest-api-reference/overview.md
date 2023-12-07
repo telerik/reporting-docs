@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview,rest,api,uri,http,service,reporting,request
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview
+previous_url: /telerik-reporting-rest-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/
 ---
 
 <style>
@@ -25,14 +25,14 @@ table th:nth-of-type(3) {
 
 The four main HTTP methods (GET, PUT, POST, and DELETE) are mapped to CRUD operations as follows:
 
-* GET retrieves the representation of the resource at a specified URI. GET have no side effects on the server.
+* GET retrieves the representation of the resource at a specified URI. GET has no side effects on the server.
 * PUT updates a resource at a specified URI.
 * POST creates a new resource. The server assigns the ID for the new object and returns this ID as part of the response message.
 * DELETE deletes a resource at a specified URI.
 
-The API represent resources as hierarchical URIs in order to force the clients to use certain request sequence.
+The API represents resources as hierarchical URIs to force the clients to use certain request sequences.
 
-## The reports API exposes following methods:
+## The reports API exposes the following methods:
 
 | Action | HTTP method | Relative URI |
 | ------ | ------ | ------ |

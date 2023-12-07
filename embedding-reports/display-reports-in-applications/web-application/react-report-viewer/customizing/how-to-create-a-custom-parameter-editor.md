@@ -6,12 +6,12 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: react, report, viewer, how, to, create, custom, parameter, editor
 published: True
 position: 1
-previous_url: /react-report-viewer-custom-parameter-editor
+previous_url: /react-report-viewer-custom-parameter-editor, /embedding-reports/display-reports-in-applications/web-application/react-report-viewer/customizing/
 ---
 
 # How to Create a Custom Parameter Editor
 
-The article elaborates how to change the default editors for visible parameters in the React Report Viewer's Parameters Area.
+The article elaborates on how to change the default editors for visible parameters in the React Report Viewer's Parameters Area.
 
 Custom parameter editors are defined through the **parameterEditors** array passed as an option when creating the report viewer widget. Each object represents a parameter editor factory for creating editors suitable to edit a specific report parameter configuration.
 
@@ -58,7 +58,7 @@ function match(parameter) {
 
 
 1. The viewer is using a special Kendo subset that contains only the required widgets and the Kendo DateTimePicker widget is not part of the subset.
-For that reason, we need to load the Kendo All script. Note that currently we need to use this special logic for loading the viewer to the fact that jQuery has
+For that reason, we need to load the Kendo All script. Note that currently, we need to use this special logic for loading the viewer to the fact that jQuery has
 to be loaded before Kendo All:
 
 	````JavaScript

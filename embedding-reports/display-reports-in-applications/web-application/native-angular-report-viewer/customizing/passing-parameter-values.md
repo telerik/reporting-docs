@@ -6,13 +6,14 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,pass,values,to,report,parameters,in,native,angular,report,viewer
 published: True
 position: 0
+previous_url: /embedding-reports/display-reports-in-applications/web-application/native-angular-report-viewer/customizing/
 ---
 
 # Updating the Report Parameters of the Native Angular Report Viewer
 
 This topic explains how to update the report parameters with values passed from a custom UI outside the report viewer instead of using the report viewer's built-in parameters area. 
 
-The report identifier and all required parameters values for it are packed in a `reportSource` object. To update the report source, the `setReportSource` command can be used.
+The report identifier and all required parameter values for it are packed in a `reportSource` object. To update the report source, the `setReportSource` command can be used.
 
 ## Example of using the setReportSource command
 

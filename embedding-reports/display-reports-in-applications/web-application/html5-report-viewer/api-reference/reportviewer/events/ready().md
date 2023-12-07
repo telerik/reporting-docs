@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: ready,viewer,html5
 published: True
 position: 0
-previous_url: /html5-report-viewer-reportviewer-events-ready
+previous_url: /html5-report-viewer-reportviewer-events-ready, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/
 ---
 
 # The `ready()` Event of the HTML5 Report Viewer

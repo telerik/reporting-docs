@@ -4,7 +4,7 @@ page_title: Map Report Item Types
 description: "Learn more about the Map types supported by the Map report item when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/report-structure/map/map-types
 tags: telerik, reporting, map, report, item, types
-previous_url: /MapChartTypes, /report-items/map/map-types
+previous_url: /MapChartTypes, /report-items/map/map-types, /report-items/map/map-types/
 published: True
 position: 0
 ---

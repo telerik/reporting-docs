@@ -3,7 +3,7 @@ title: Overview
 page_title: 1D Barcodes Overview
 description: "Learn more about the linear one-dimensional barcode support provided by the Telerik Reporting Barcode report item."
 slug: telerikreporting/designing-reports/report-structure/barcode/barcode-types/supported-types
-previous_url: /report-items/barcode/barcode-types/supported-types, /report-items-barcode-types
+previous_url: /report-items/barcode/barcode-types/supported-types, /report-items-barcode-types, /report-items/barcode/1d-barcodes/
 tags: telerik, reporting, report, items, 1d, barcodes, overview, linear, one-dimensional
 published: True
 position: 0

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/table-o
 tags: overview
 published: True
 position: 0
-previous_url: /table-of-contents
+previous_url: /table-of-contents, /interactivity/table-of-contents/
 ---
 
 # Table of Contents Overview

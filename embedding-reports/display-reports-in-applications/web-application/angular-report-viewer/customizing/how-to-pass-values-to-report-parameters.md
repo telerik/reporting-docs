@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: how,to,pass,values,to,report,parameters,in,angular,report,viewer
 published: True
 position: 0
-previous_url: /angular-report-viewer-howto-custom-parameters
+previous_url: /angular-report-viewer-howto-custom-parameters, /embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/customizing/
 ---
 
 # Updating the Values of Report Parameters from the Angular Report Viewer

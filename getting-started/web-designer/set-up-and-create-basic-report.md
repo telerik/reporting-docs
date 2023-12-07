@@ -6,6 +6,7 @@ slug: telerikreporting/getting-started/web-designer/set-up-and-create-basic-repo
 tags: how,configure,.net,applications,web,designer,report
 published: True
 position: 1
+previous_url: /getting-started/web-designer/
 ---
 
 # Configure Web Report Designer and Create a Basic Report
@@ -23,7 +24,7 @@ The entire process is described in the YouTube video tutorial [Getting Started w
 
 ## Setting up the Web Report Designer in .NET 6
 
-Lets create an ASP.NET Core application in Visual Studio and embed the Telerik Web Report Designer in it:
+Let's create an ASP.NET Core application in Visual Studio and embed the Telerik Web Report Designer in it:
 
 1. Open Visual Studio 2022 and create a new project through the project template `ASP.NET Core Web App`. Name the project, for example, `Telerik.WRD.GettingStarted` and select `.NET 6.0` as a Target Framework.
 1. Add the Web Designer to the project:
@@ -59,7 +60,7 @@ Lets create an ASP.NET Core application in Visual Studio and embed the Telerik W
 
 1. Run the project. If everything is fine, you should see the web page with the designer with the sample report opened, and the onboarding guide to walk you through the main tools in the designer.
 
-	We recommend getting familiar with the Web Report Desiger by clicking on the `Next` button in the guide. You may skip the guide at any step through the button `End Tour`. Pay attention to the Search functionality of the designer that lets you locate any report item, section, or property easily.
+	We recommend getting familiar with the Web Report Designer by clicking on the `Next` button in the guide. You may skip the guide at any step through the button `End Tour`. Pay attention to the Search functionality of the designer that lets you locate any report item, section, or property easily.
 
 	![The web report designer onboarding guide on the last step describing the global Search box.](images/web-designer-guide-search-box.png)
 
@@ -83,7 +84,7 @@ Our next goal is to create a brand new report with the just configured Web Repor
 
 1. Let's add the company logo to the report.
 
-	1. We need to add a [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) to the Report Header. You may search for the report item, drag it to the Report Header and adjust its size and position as needed.
+	1. We need to add a [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) to the Report Header. You may search for the report item, drag it to the Report Header, and adjust its size and position as needed.
 	1. To upload the logo, search for the `Value` property in the PictureBox, and click on the icon beside it. It opens the `Select File...` dialog, which represents the [Assets Manager]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager). The latter contains report assets such as images, external stylesheets, etc.
 
 		![The 'Select file...' dialog of the web designer opened when adding a value for the PictureBox.](images/select-image-for-picturebox-web-designer.png)
@@ -110,7 +111,7 @@ Our next goal is to create a brand new report with the just configured Web Repor
 	1. Skip also the third page that asks whether in design-time you would like to use real or mocked data. We will use real data (the default setting).
 	1. Preview the data on the next page and click `Finish`.
 
-		![The last page of the 'Configure WebServiceDataSource' wizard in the web designer showing the 'Preview data source results'.](images/preview-data-web-service-data-source-web-designer.png)
+		![The last page of the 'Configure WebServiceDataSource' wizard in the web designer shows the 'Preview data source results'.](images/preview-data-web-service-data-source-web-designer.png)
 
 	1. The wizard closes and in the designer's `Explorer` tab you should see the new WebServiceDataSource component with its data fields listed.
 
@@ -127,11 +128,11 @@ Our next goal is to create a brand new report with the just configured Web Repor
 	1. Finally, style the column graph:
 
 		* Find and remove the `Legend` by unchecking its `Style` > `Visible` checkbox.
-		* Enter the `Titles` section, select the graph title and uncheck the `Visible` checkbox in the `Style` section from the opened `Edit item` dialog.
+		* Enter the `Titles` section, select the graph title, and uncheck the `Visible` checkbox in the `Style` section from the opened `Edit item` dialog.
 
 		![Styling the Column Chart in the web report designer.](images/style-column-chart-web-designer.png)
 
-1. Preview the pixel-perfect report document by clicking on the designers `Preview` button at the top right corner.
+1. Preview the pixel-perfect report document by clicking on the designer `Preview` button at the top right corner.
 
 ## See Also
 

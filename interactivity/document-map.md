@@ -5,7 +5,7 @@ description: "Learn how to use the document map functionality by configuring the
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview
 tags: overview,document,map,bookmark 
 published: True
-previous_url: /designing-reports-document-map, /designing-reports-interactivity-how-to-add-document-map
+previous_url: /designing-reports-document-map, /designing-reports-interactivity-how-to-add-document-map, /interactivity/
 ---
 
 # Document Map Overview

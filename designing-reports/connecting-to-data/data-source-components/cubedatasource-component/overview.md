@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: overview
 published: True
 position: 0
-previous_url: /CubeDataSource
+previous_url: /CubeDataSource, /designing-reports/connecting-to-data/data-source-components/cubedatasource-component/
 ---
 
 # CubeDataSource Component Overview

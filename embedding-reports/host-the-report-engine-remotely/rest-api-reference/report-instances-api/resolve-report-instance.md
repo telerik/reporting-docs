@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: resolve,report,instance
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-report-instances-api-create-report-instance,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance
+previous_url: /telerik-reporting-rest-report-instances-api-create-report-instance,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/report-instances-api/resolve-report-instance, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/report-instances-api/
 ---
 
 <style>

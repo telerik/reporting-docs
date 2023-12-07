@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: resolve,document
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-documents-api-request-document,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document
+previous_url: /telerik-reporting-rest-documents-api-request-document,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/documents-api/resolve-document, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/documents-api/
 ---
 
 <style>

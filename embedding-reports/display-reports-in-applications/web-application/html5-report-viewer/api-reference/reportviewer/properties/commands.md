@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: commands
 published: True
 position: 0
-previous_url: /html5-report-viewer-reportviewer-properties-commands
+previous_url: /html5-report-viewer-reportviewer-properties-commands, /embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/properties/
 ---
 
 <style>

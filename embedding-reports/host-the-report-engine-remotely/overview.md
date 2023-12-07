@@ -6,12 +6,12 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview,rest,service,configure,reporting,basics
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-conception, /using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview,/telerik-reporting-services,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/overview
+previous_url: /telerik-reporting-rest-conception, /using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview,/telerik-reporting-services,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/overview, /embedding-reports/host-the-report-engine-remotely/
 ---
 
 # Telerik Reporting REST Services Overview
 
-The Telerik Reporting REST service provides an Application Programming Interface (API) over HTTP to the reports generation engine. This engine allows exporting report documents in all supported rendering formats. The server-client communication relies on simple [Data Transfer Objects](https://martinfowler.com/eaaCatalog/dataTransferObject.html) (DTOs). All DTOs are JSON encoded.
+The Telerik Reporting REST service provides an Application Programming Interface (API) over HTTP to the reports generation engine. This engine allows the exporting of report documents in all supported rendering formats. The server-client communication relies on simple [Data Transfer Objects](https://martinfowler.com/eaaCatalog/dataTransferObject.html) (DTOs). All DTOs are JSON encoded.
 
 The primary usage of the service is in the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) ecosystem. It leverages the pure client-side implementation of the viewer.
 

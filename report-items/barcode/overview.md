@@ -6,12 +6,12 @@ slug: telerikreporting/designing-reports/report-structure/barcode/overview
 tags: telerik, reporting, report, items, barcode, overview
 published: True
 position: 0
-previous_url: /report-items-barcode-general
+previous_url: /report-items-barcode-general, /report-items/barcode/
 ---
 
 # Barcode Report Item Overview
 
-The Barcode report item automatically generates barcodes directly from a numeric or character data.
+The Barcode report item automatically generates barcodes directly from numeric or character data.
 
 ![Preview of the demo Barcodes Report from our examples](images/Barcodes/barcode-overview.png)
 

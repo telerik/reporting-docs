@@ -4,7 +4,7 @@ page_title: Styling and Formatting the Map Title
 description: "Learn how to add and configure the Title of the Telerik Reporting Map report item through the properties it exposes."
 slug: telerikreporting/designing-reports/report-structure/map/formatting-a-map/title
 tags: telerik, reporting, map, report, item, title, configure, style, format
-previous_url: /MapFormattingTitle
+previous_url: /MapFormattingTitle, /report-items/map/formatting-a-map/
 published: True
 ---
 

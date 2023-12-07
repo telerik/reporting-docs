@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 tags: overview
 published: True
 position: 0
-previous_url: /designing-reports-interactivity-actions
+previous_url: /designing-reports-interactivity-actions, /interactivity/actions/
 ---
 
 # Actions Overview

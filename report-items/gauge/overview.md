@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/gauge/overview
 tags: telerik, reporting, report, items, radial, linear, gauge, properties
 published: True
 position: 1
+previous_url: /report-items/gauge/
 ---
 
 # Gauge Report Item Overview

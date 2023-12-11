@@ -45,7 +45,7 @@ app.UseStaticFiles();
 ````
 
 
-1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly): 
+1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App): 
 
 	````HTML
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -70,7 +70,7 @@ app.UseStaticFiles();
 ````
 
 
-1. Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly):
+1. Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
 	````HTML
 <script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
@@ -85,6 +85,8 @@ app.UseStaticFiles();
 
 	````CSHTML
 @page "/"
+	@* For Blazor Web Apps, an interactive render mode should be used, for example: *@
+	@* @rendermode InteractiveServer *@
 	@using Telerik.ReportViewer.Blazor
 	<style>
 		#rv1 {
@@ -109,6 +111,8 @@ app.UseStaticFiles();
 
 	````CSHTML
 @page "/"
+	@* For Blazor Web Apps, an interactive render mode should be used, for example: *@
+	@* @rendermode InteractiveServer *@
 	@using Telerik.ReportViewer.Blazor
 	<style>
 		#rv1 {
@@ -132,4 +136,6 @@ app.UseStaticFiles();
 
 1. Finally, run the project to see the rendered report.
 
-Learn more about Blazor Reporting in [Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting) documentation article.
+
+## See Also
+* [Blazor Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting) documentation article.

@@ -7,6 +7,7 @@ tags: styling, report, items, properties
 published: True
 position: 7
 ---
+
 <style>
 table th:first-of-type {
 	width: 20%;
@@ -20,7 +21,7 @@ table th:nth-of-type(2) {
 
 Telerik Reporting uses a built-in styling model that is similar to CSS. The model provides for very fine-grained visual customization of all elements of a report directly in the Report designer. This CSS-like mechanism offers full control over such things as the background, colors, borders, and images for every item on your report.
 
- > All Style properties of a report item that have **not** been specifically set for that report item will inherit the corresponding value from the report item's parent.
+> All Style properties of a report item that have **not** been specifically set for that report item will inherit the corresponding value from the report item's parent.
 
 Below is a list of the available styling options alongside short summaries of what they represent:
 
@@ -33,7 +34,7 @@ Below is a list of the available styling options alongside short summaries of wh
 		<tr>
 			<td>BackgroundColor</td>
 			<td>A Color that represents the background color of the report item.
-				Can be selected from the widget or written by hand as RGB, RGBA or Hex color.
+				Can be selected from the widget or written by hand as RGB, RGBA, or Hex color.
 				<i>
 				The default value is Empty, which indicates
 				that this property is not set.
@@ -43,7 +44,7 @@ Below is a list of the available styling options alongside short summaries of wh
 		<tr>
 			<td>BackgroundImage</td>
 			<td>Represents the image to display in the background of the report item. 
-				Supports BMP, GIF, JPG, JPEG, PNG, ICO, EMF and WMF image files.
+				Supports BMP, GIF, JPG, JPEG, PNG, ICO, EMF, and WMF image files.
 				<ul>
 					<li>ImageData - An Image containing the image data of this BackgroundImage. Use this property if you
 						want to bind the BackgroundImage to an image that is not in the data source.</li>
@@ -51,7 +52,7 @@ Below is a list of the available styling options alongside short summaries of wh
 					<li>Repeat - Indicates how a background image will be repeated.
 						The available values are:
 						<ul>
-							<li>NoRepeat - The background-image will be displayed only once.</li>
+							<li>NoRepeat - The background image will be displayed only once.</li>
 							<li>Repeat - The background image will be repeated vertically and horizontally.</li>
 							<li>RepeatX - The background image will be repeated horizontally.</li>
 							<li>RepeatY - The background image will be repeated vertically.
@@ -67,14 +68,14 @@ Below is a list of the available styling options alongside short summaries of wh
 		<tr>
 			<td>BorderColor</td>
 			<td>The border color of the item can be set by using the properties Default, Left, Right, Top, and Bottom.
-				The Default property is used to set all borders colors at once.
+				The Default property is used to set all border colors at once.
 				<i>All borders are Black by default.</i>
 			</td>
 		</tr>
 		<tr>
 			<td>BorderStyle</td>
 			<td>The border style of the item can be set by using the properties Default, Left, Right, Top, and Bottom.
-				The Default property is used to set all borders styles at once.
+				The Default property is used to set all border styles at once.
 				The available border styles are:
 				<ul>
 					<li>None - No line.</li>
@@ -94,7 +95,7 @@ Below is a list of the available styling options alongside short summaries of wh
 		<tr>
 			<td>BorderWidth</td>
 			<td>The border width of the item can be set by using the properties Default, Left, Right, Top, and Bottom.
-				The Default property is used to set all borders widths at once, however, the more specific rules will override the Default setting.
+				The Default property is used to set all border widths at once, however, the more specific rules will override the Default setting.
 				For example, if you set the Default and then you set only the Top, then the Default will be applied to Bottom, Left, and Right only.
 				<i>All borders are 1pt wide by default.</i>
 			</td>
@@ -102,7 +103,7 @@ Below is a list of the available styling options alongside short summaries of wh
 		<tr>
 			<td>Color</td>
 			<td>The foreground Color of the report item.
-				Can be selected from the widget or written by hand as RGB, RGBA or Hex color.
+				Can be selected from the widget or written by hand as RGB, RGBA, or Hex color.
 				<i>The default color is Black.</i>
 			</td>
 		</tr>
@@ -159,7 +160,7 @@ Below is a list of the available styling options alongside short summaries of wh
 		</tr>
 		<tr>
 			<td>TextAlign</td>
-			<td>Represents the horizontal alignment of text in the report item. The following horizonal alignments are
+			<td>Represents the horizontal alignment of text in the report item. The following horizontal alignments are
 				available:
 				<ul>
 					<li>Left - Specifies that the text is aligned to the left.</li>
@@ -193,9 +194,13 @@ Below is a list of the available styling options alongside short summaries of wh
 
 ## Notes
 
-Some of the style properties behave differently in specific scenario.
+* Some of the style properties behave differently in specific scenarios.
 
-For example, in the graph series' [DataPointStyle](/api/telerik.reporting.graphseriesbase), instead of using the BorderColor/BorderStyle/BorderWidth properties to style the graph's data points, you should use the LineColor/LineWidth/LineStyle properties.
+	For example, in the graph series' [DataPointStyle](/api/telerik.reporting.graphseriesbase), instead of using the BorderColor/BorderStyle/BorderWidth properties to style the graph's data points, you should use the LineColor/LineWidth/LineStyle properties.
+
+* Consider using numerical codes as (A)RGB or HEX when setting style colors. Using color names is not guaranteed to work in all scenarios.
+
+	For example, the color name '_ControlDarkDark_' corresponds to [SystemColors.ControlDarkDark](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.systemcolors.controldarkdark) is translated to [ThreeDDarkShadow](https://www.w3.org/wiki/CSS/Properties/color/keywords) color, which is an obsolete CSS2 color and is rendered as RGB (0,0,0) by modern browsers.
 
 ## See Also
 

@@ -14,7 +14,7 @@ The Blazor HTML5 Report Viewer is based on the [pure HTML5 Report Viewer]({%slug
 
 To assign the _stringResources_ object with the localized texts on the report viewer object, we may use the [renderingBegin]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingbegin(e,-args)%}) event which can be defined in the root file of the application, for example, `wwwroot/index.html`:
 
-```HTML
+````HTML
 <script type="module">
 	import { sr } from '/stringResources.bg-BG.js'
 
@@ -25,11 +25,11 @@ To assign the _stringResources_ object with the localized texts on the report vi
 		}
 	}
 </script>
-```
+````
 
 Then, in the component with the [Blazor HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}), the event must be referenced in the initialization code:
 
-```HTML
+````HTML
 <ReportViewer @ref="reportViewer1"
 		ViewerId="rv1"
 		ServiceUrl="/api/reports"
@@ -40,7 +40,7 @@ Then, in the component with the [Blazor HTML5 Report Viewer]({%slug telerikrepor
 		ClientEvents="@(new ClientEventsOptions() {
 							RenderingBegin = "trvEventHandlers.renderingBegin"
 						})" />
-```
+````
 
 ## See Also
 

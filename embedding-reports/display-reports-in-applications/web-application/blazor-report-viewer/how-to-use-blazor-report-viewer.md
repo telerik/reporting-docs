@@ -56,7 +56,7 @@ app.UseStaticFiles();
 ````
 
 
-1. Add [Telerik Kendo UI SASS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
+1. Add [Telerik Kendo UI SASS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
 
 	````HTML
 <link rel="stylesheet" href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.default-main.min.css" />

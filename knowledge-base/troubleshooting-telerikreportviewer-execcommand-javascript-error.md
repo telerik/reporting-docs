@@ -27,9 +27,9 @@ When I try to print a report using any of the [HTML5-based Report Viewers]({%slu
 - For the Edge browser, navigate to `edge://settings/content/pdfDocuments`
 - For the Google Chrome browser, navigate to `chrome://settings/content/pdfDocuments`
 
-Then, disable the `Download PDFs` setting and enable the other option(name varies per browser) for viewing PDF files in the browser.
+Then, disable the `Download PDFs` setting so that the PDF documents are not automatically downloaded. This is required since the printing functionality of the web viewers is based on rendering the report in PDF format with special settings so when the PDF file opens in a browser, the PDF plug-in's `Print dialog` is directly invoked.
 
-![image]()
+![Image displaying the PDF Document settings view in the Microsoft Edge browser](images/browser-pdfsettings.png)
 
 ## See Also
 

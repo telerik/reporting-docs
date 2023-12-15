@@ -1,16 +1,16 @@
 ---
-title: Cannot write DateTime with Kind=Unspecified to PostgreSQL
+title: Cannot Write DateTime with Kind=Unspecified to PostgreSQL
 description: "Using DateTime Report Parameters in expressions leads to errors when using the Npgsql data provider with version 6.0 or higher"
 type: troubleshooting
 page_title: DateTime Parameters throw errors when using Npgsql data provider
 slug: cannot-write-datetime-with-kind-unspecified-postgresql
-position: 
 tags: npgsql, postgresql
 ticketid: 1603919
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tbody>
 		<tr>
@@ -36,7 +36,7 @@ I have a PostgreSQL database and I am using the [Npgsql](https://www.npgsql.org/
 ## Steps to Reproduce
 
 1. Install or add without installation, the [Npgsql data provider with version 6.0](https://www.npgsql.org/doc/release-notes/6.0.html) or newer.
-1. Create an SqlDataSource with query that has a parameter with `DbType=DateTime` and map it to the value of a Report Parameter of `Type=DateTime`
+1. Create a SqlDataSource with a query that has a parameter with `DbType=DateTime` and map it to the value of a Report Parameter of `Type=DateTime`
 1. Set the SqlDataSource as the data source of the report or a [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) inside the report, and preview it.
 
 ## Error Message
@@ -45,17 +45,15 @@ I have a PostgreSQL database and I am using the [Npgsql](https://www.npgsql.org/
 
 ## Cause\Possible Cause(s)
 
-Starting with version 6.0 of the Npgsql data provider, UTC timestamps have been cleanly separated from non-UTC timestamps, aligning with the PostgreSQL types. The former are represented by `timestamp with time zone` and DateTime with Kind UTC, the latter by `timestamp without time zone` and DateTime with Kind Local or Unspecified.
+Starting with version 6.0 of the Npgsql data provider, UTC timestamps have been cleanly separated from non-UTC timestamps, aligning with the PostgreSQL types. The former is represented by `timestamp with time zone` and DateTime with _Kind_ `UTC`, the latter by `timestamp without time zone` and DateTime with _Kind_ `Local` or `Unspecified`.
 
 ## Suggested Workarounds
 
-Since the Npgsql data provider now expects an UTC value, we can work around the problem by calling the [DateTime.ToUniversalTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.touniversaltime) method on the `Value` property of the DateTime Report Parameter.
+Since the Npgsql data provider now expects a UTC value, we can work around the problem by calling the [DateTime.ToUniversalTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime.touniversaltime) method on the `Value` property of the DateTime Report Parameter.
 
 For example:
 
-```
-= Parameters.Parameter1.Value.ToUniversalTime()
-```
+`= Parameters.Parameter1.Value.ToUniversalTime()`
 
 ## See Also
 

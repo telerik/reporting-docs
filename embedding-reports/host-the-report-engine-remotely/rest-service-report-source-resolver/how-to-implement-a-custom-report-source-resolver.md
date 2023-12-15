@@ -1,7 +1,7 @@
 ---
 title: Implementing a Custom ReportSource Resolver
 page_title: Implementing a Custom ReportSource Resolver Explained with Example
-description: "Learn how to Implement a Custom ReportSource Resolver for the Telerik Reporting REST Service and how to chaing it with other resolvers through the fallback mechanism."
+description: "Learn how to Implement a Custom ReportSource Resolver for the Telerik Reporting REST Service and how to chain it with other resolvers through the fallback mechanism."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver
 tags: how,to,implement,a,custom,report,source,resolver
 published: True
@@ -11,7 +11,7 @@ previous_url: /telerik-reporting-rest-custom-report-resolver,/embedding-reports/
 
 # Steps for Implementing a Custom ReportSource Resolver
 
-This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__. In this example, the resolver purpose will be to return a [XmlReportSource](/api/Telerik.Reporting.XmlReportSource) with an XML report definition obtained from an SQL Server database.
+This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__. In this example, the resolver's purpose will be to return a [XmlReportSource](/api/Telerik.Reporting.XmlReportSource) with an XML report definition obtained from an SQL Server database.
 
 1. Create a class which implements the  [IReportSourceResolver](/api/Telerik.Reporting.Services.IReportSourceResolver) interface. Its [Resolve](/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_) method will be called whenever the engine needs to create a [ReportSource](/api/Telerik.Reporting.ReportSource) instance based on the parameter named *report*. The value of the *report* parameter will be initialized with the value of the __Report__ property of the report viewer's ReportSource object.
 
@@ -86,12 +86,12 @@ USE [master]
 
 ## How to implement and use custom IReportSourceResolver with fallback mechanism:
 
-1. Add to your IReportSourceResolver implementation a constructor with parameter IReportSourceResolver parentResolver. Then use the parentResolver if the custom report source resolving mechanism fails.
+1. Add to your IReportSourceResolver implementation a constructor with the parameter IReportSourceResolver parentResolver. Then use the parentResolver if the custom report source resolving mechanism fails.
 
 	{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportSourceResolverFallBack_Implementation}}
 	{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportSourceResolverFallBack_Implementation}}
 
-1. Add to the `ReportServiceConfiguration` the `IReportSourceResolver` implementations in a chain. Thus the custom one will be executed first, if it fails the second one and so on.
+1. Add to the `ReportServiceConfiguration` the `IReportSourceResolver` implementations in a chain. Thus the custom one will be executed first, if it fails the second one, and so on.
 
 	* In `.NET Framework` the `ReportServiceConfiguration` is configured in the implementation of the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class
 
@@ -99,7 +99,7 @@ USE [master]
 		{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomResolverWithFallback_ReportsController_Implementation}}
 
 
-	* In `.NET` and `.NET Core` the `ReportServiceConfiguration` is usually added as a Singleton in the DI Container in the starting point of the application:
+	* In `.NET` and `.NET Core` the `ReportServiceConfiguration` is usually added as a Singleton in the DI Container at the starting point of the application:
 
 		````C#
 // Configure dependencies for ReportsController.
@@ -120,4 +120,4 @@ USE [master]
 	You can use for fallback the default IReportSourceResolver implementations:
 
 	+ TypeReportSourceResolver - Resolves IReportDocument from Assembly Qualified Name of a Report or ReportBook class
-	+ UriReportSourceResolver - Resolves IReportDocument from physical path to `TRDP`, `TRDX` or `TRBP` file
+	+ UriReportSourceResolver - Resolves IReportDocument from the physical path to `TRDP`, `TRDX` or `TRBP` file

@@ -13,11 +13,11 @@ previous_url: /expressions-user-functions
 
 User functions allow you to extend the default behavior of the Telerik Reporting engine. User functions are __public static__ (__Public Shared__ in VB.NET) methods that should always return a value and can take an arbitrary number of input parameters.
 
-> Optional parameters are not supported. The Reporting engine uses reflection to discover and invoke the custom user functions. This requires exact match between the number and the type of the function parameters.
+> Optional parameters are not supported. The Reporting engine uses reflection to discover and invoke the custom user functions. This requires an exact match between the number and the type of the function parameters.
 
 There are two ways to utilize user functions:
 
-1. When any __public static__ (__Public Shared__ in VB.NET) method is part of the current report class. In this case they can be invoked from an expression by their name, specifying the necessary parameters in the braces:
+1. When any __public static__ (__Public Shared__ in VB.NET) method is part of the current report class. In this case, they can be invoked from an expression by their name, specifying the necessary parameters in the braces:
 
 	__Invoking a User Function from the same report class__
 
@@ -29,7 +29,7 @@ There are two ways to utilize user functions:
 
 	`= Telerik.Reporting.Report.Report1.ResolveUrl("~/Images/Logo.jpg")`
 
-If the loaded assembly contains many __public static__ (__Public Shared__ in VB.NET) methods, this might produce some clutter in the Edit Expression dialog, when browsing for existing user functions. In order to overcome this problem, you can use the IsVisible attribute to hide any methods, which are not intended to be used as user functions. See the code example below:
+If the loaded assembly contains many __public static__ (__Public Shared__ in VB.NET) methods, this might produce some clutter in the Edit Expression dialog, when browsing for existing user functions. To overcome this problem, you can use the IsVisible attribute to hide any methods, which are not intended to be used as user functions. See the code example below:
 
 __Example:__
 
@@ -61,9 +61,9 @@ To invoke this function, set the following expression:
 
 ## Extending Reporting Engine with User Functions
 
-If your custom user functions are linked from an external assembly, in order for the designer to recognize them, you will have to [extend the configuration of the start application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).
+If your custom user functions are linked from an external assembly, for the designer to recognize them, you will have to [extend the configuration of the start application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%}).
 
-For the Visual Studio Report Designer this is the 'deveng.exe.config' file that resides in 'C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE' by default (it is recommended to create a backup copy before modifying it). You can type the expression by specifying the full assembly qualified name of the function and passing a parameter of the expected type.
+For the Visual Studio Report Designer this is the 'devenv.exe.config' file that resides in 'C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE' by default (it is recommended to create a backup copy before modifying it). You can type the expression by specifying the full assembly qualified name of the function and passing a parameter of the expected type.
 
 To run the report in other projects, use the same approach - add the assembly to the root folder from where the application is executed and configure it to load the external assembly by extending the configuration.
 

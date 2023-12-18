@@ -20,11 +20,11 @@ In some scenarios, you may need to quickly export a bunch of small reports. You 
 
 ## Solution
 
-You can achieve that using [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview) by loading the Telerik Reporting assembly, as well as any other assemblies your report may depend on, and generating the report with the [ReportProcessor class](/api/telerik.reporting.processing.reportprocessor), as described in the [Generate Reports Programmatically]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) article.
+You can achieve that using [PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/overview) by loading the `Telerik.Reporting` assembly, as well as any other assemblies your report may depend on, and generating the report with the [ReportProcessor class](/api/telerik.reporting.processing.reportprocessor), as described in the [Generate Reports Programmatically]({%slug telerikreporting/using-reports-in-applications/call-the-report-engine-via-apis/embedded-report-engine%}) article.
 
 The following PowerShell script illustrates how you can export a report to PDF:
 
-```PowerShell
+````PowerShell
 Add-Type -path "Telerik\Reporting\Installation\Directory\Bin\netstandard2.0\Telerik.Reporting.dll";
 
 $reportProcessor = New-Object Telerik.Reporting.Processing.ReportProcessor;
@@ -42,15 +42,15 @@ $fileName = $renderingResult.DocumentName + "." + $renderingResult.Extension;
 $path = "Location\Of\PDF\Export\" + $fileName
 
 [System.IO.File]::WriteAllBytes($path, $renderingResult.DocumentBytes)
-```
+````
 
 If you encounter any errors, you can add the following snippet at the beginning of the script to generate a trace log. This log should contain more specific information about what is going wrong and help you narrow down the issue faster.
 
-```PowerShell
+````PowerShell
 $listener = new-object System.Diagnostics.TextWriterTraceListener "Location\Of\Trace\Log.txt"
 [System.Diagnostics.Trace]::Listeners.Add($listener)
 [System.Diagnostics.Trace]::AutoFlush = $True;
-```
+````
 
 ## See Also
 

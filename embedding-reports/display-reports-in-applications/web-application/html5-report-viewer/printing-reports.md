@@ -24,7 +24,7 @@ The print functionality requires:
 
 > In __Google Chrome 77+__ [printing is allowed only in response to a user gesture](https://pdfium.googlesource.com/pdfium.git/+/2021804f1b414c97667c03d7ab19daf66f6a19ef). This prevents the print dialog from opening automatically when a PDF is embedded in a web page and the user needs to click on the print button manually to invoke the print preview dialog.
 
-> In __Chromium-based__ browsers, there is an option option to always and automatically download PDF documents in the `pdfDocuments` settings. If enabled, it prevents the print dialog from opening and must be disabled for the printing functionality to work as expected - [Troubleshooting TelerikReportViewer execCommand JavaScript Error]({%slug troubleshooting-telerikreportviewer-execcommand-javascript-error-edge%}).
+> In __Chromium-based__ browsers, there is an option to always and automatically download PDF documents in the `pdfDocuments` settings. If enabled, it prevents the print dialog from opening and must be disabled for the printing functionality to work as expected - [Troubleshooting TelerikReportViewer execCommand JavaScript Error]({%slug troubleshooting-telerikreportviewer-execcommand-javascript-error-edge%}).
 
 > In __Firefox 19+__ the default viewing option for PDF files is the __PDF.js__, which is not added as a plug-in and Firefox does not expose the content type viewing preferences - [Firefox bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=840439). Thus the Adobe PDF plug-in is always active whether or not it is the preferred viewing option. To ensure the print operation in Firefox will be accomplished, clicking the print button will export the report to PDF which will be printed with the available client viewing tools.
 

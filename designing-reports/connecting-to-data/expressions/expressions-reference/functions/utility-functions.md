@@ -27,6 +27,6 @@ table th:nth-of-type(3) {
 
 | Function | Parameters | Description |
 | ------ | ------ | ------ |
-|`Array(args)`|args (_object []_)|Returns an array of the passed object instances.<br/> For example: `=Array("item1","item2")` will return `object [] {"item1", "item2"}`|
-|`Item(index, collection)`|index (_int_)<br/>collection (IEnumerable)|Returns the element of the collection with the given index (zero-based).<br/> Example 1: `=Item(0, Array(10,20,30))` will return `10`<br/> Example 2: `= Item(1, Parameters.Parameter1.Value)` will return the second item from the Multivalue Report Parameter `Parameter1`|
-|`Uri(uriString, uriKind)`|uriString (_string_)<br/>uriKind (_string_) *optional, the default is RelativeOrAbsolute* |Returns an instance of *System.Uri* <br/> For example: `=Uri("c:\temp\myFile.json", "absolute")` will return `new Uri("c:\temp\myFile.json", System.UriKind.Absolute)`|
+|`Array(args)`|args (_object []_)|Returns an array of the passed object instances.<br/>_Example_: `=Array("item1","item2")` will return `object [] {"item1", "item2"}`|
+|`Item(index, collection)`|index (_int_)<br/>collection (IEnumerable)|Returns the element of the collection with the given index (zero-based).<br/> _Example 1_: `=Item(0, Array(10,20,30))` will return `10`<br/>_Example 2_: Let's have a Multivalue String Report Parameter named `Parameter1` and the user has selected the values `a`, `b`, `c`, and `d`. The Expression `= Item(1, Parameters.Parameter1.Value)` will return the second item from `Parameter1`, `b`|
+|`Uri(uriString, uriKind)`|uriString (_string_)<br/>uriKind (_string_) *optional, the default is RelativeOrAbsolute* |Returns an instance of *System.Uri* <br/>_Example_: `=Uri("c:\temp\myFile.json", "absolute")` will return `new Uri("c:\temp\myFile.json", System.UriKind.Absolute)`|

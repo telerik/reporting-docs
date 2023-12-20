@@ -25,31 +25,31 @@ You can achieve that using [PowerShell](https://learn.microsoft.com/en-us/powers
 The following PowerShell script illustrates how you can export a report to PDF:
 
 ````PowerShell
-Add-Type -path "Telerik\Reporting\Installation\Directory\Bin\netstandard2.0\Telerik.Reporting.dll";
-
-$reportProcessor = New-Object Telerik.Reporting.Processing.ReportProcessor;
-$format = "PDF"
-$deviceInfo = New-Object System.Collections.Hashtable;
-$reportSource = New-Object Telerik.Reporting.UriReportSource;
-$reportSource.Uri = "Location\Of\TRDP\Or\TRDX\Report.trdp";
-$param1 = "Necessary parameter";
-$param2 = 10;
-$reportSource.Parameters.Add("ReportParameterName1", $param1);
-$reportSource.Parameters.Add("ReportParameterName2", $param2);
-
-$renderingResult = $reportProcessor.RenderReport($format, $reportSource, $deviceInfo)
-$fileName = $renderingResult.DocumentName + "." + $renderingResult.Extension;
-$path = "Location\Of\PDF\Export\" + $fileName
-
-[System.IO.File]::WriteAllBytes($path, $renderingResult.DocumentBytes)
+	Add-Type -path "Telerik\Reporting\Installation\Directory\Bin\netstandard2.0\Telerik.Reporting.dll";
+	
+	$reportProcessor = New-Object Telerik.Reporting.Processing.ReportProcessor;
+	$format = "PDF"
+	$deviceInfo = New-Object System.Collections.Hashtable;
+	$reportSource = New-Object Telerik.Reporting.UriReportSource;
+	$reportSource.Uri = "Location\Of\TRDP\Or\TRDX\Report.trdp";
+	$param1 = "Necessary parameter";
+	$param2 = 10;
+	$reportSource.Parameters.Add("ReportParameterName1", $param1);
+	$reportSource.Parameters.Add("ReportParameterName2", $param2);
+	
+	$renderingResult = $reportProcessor.RenderReport($format, $reportSource, $deviceInfo)
+	$fileName = $renderingResult.DocumentName + "." + $renderingResult.Extension;
+	$path = "Location\Of\PDF\Export\" + $fileName
+	
+	[System.IO.File]::WriteAllBytes($path, $renderingResult.DocumentBytes)
 ````
 
 If you encounter any errors, you can add the following snippet at the beginning of the script to generate a trace log. This log should contain more specific information about what is going wrong and help you narrow down the issue faster.
 
 ````PowerShell
-$listener = new-object System.Diagnostics.TextWriterTraceListener "Location\Of\Trace\Log.txt"
-[System.Diagnostics.Trace]::Listeners.Add($listener)
-[System.Diagnostics.Trace]::AutoFlush = $True;
+	$listener = New-Object System.Diagnostics.TextWriterTraceListener "Location\Of\Trace\Log.txt"
+	[System.Diagnostics.Trace]::Listeners.Add($listener)
+	[System.Diagnostics.Trace]::AutoFlush = $True;
 ````
 
 ## See Also

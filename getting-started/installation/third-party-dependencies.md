@@ -15,7 +15,7 @@ The proper functioning of some specific Telerik Reporting features depends on th
 
 ## Deploying ADOMD.NET
 
-ADOMD.NET is a .NET Framework object model that is used for building client applications which access XML for Analysis 1.1 compliant data providers such as the data provider by the XML for Analysis 1.1 SDK. To download the ADOMD.NET, refer to the [ADOMD.NET download link](https://www.microsoft.com/en-us/download/details.aspx?id=55264).
+ADOMD.NET is a .NET Framework object model that is used for building client applications that access XML for Analysis 1.1 compliant data providers such as the data provider by the XML for Analysis 1.1 SDK. To download the ADOMD.NET, refer to the [ADOMD.NET download link](https://www.microsoft.com/en-us/download/details.aspx?id=55264).
 
 To connect to Microsoft Analysis Services and to execute an MDX query against the desired OLAP cube, the Telerik Reporting [CubeDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/cubedatasource-component/overview%}) component internally uses the ADOMD.NET client data provider.
 
@@ -30,7 +30,7 @@ The `DocumentFormat.OpenXml` assembly has two versions with different Public Key
 * `Telerik.Reporting.OpenXmlRendering.dll`−Supports 2.0.5022.0 and 2.5.5631.0 `DocumentFormat.OpenXml.dll` versions.
 * `Telerik.Reporting.OpenXmlRendering.2.7.2.dll`−Supports 2.7.2.0 and later `DocumentFormat.OpenXml.dll` versions.
 
-> To generate compatible document types, always use the latest available version. To use later versions other than the versions previously listed, add [`bindingRedirect`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) for `DocumentFormat.OpenXml.dll` assembly to the configuration file of the application.
+> Currently, we do not support DocumentFormat.OpenXml `3.x.x` due to breaking changes. To generate compatible document types, always use the latest available `2.x.x` version. To use later versions other than the versions previously listed, add [`bindingRedirect`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) for `DocumentFormat.OpenXml.dll` assembly to the configuration file of the .NET Framework applications.
 
 To download Open XML by using the NuGet feed, refer to the [`DocumentFormat.OpenXml` NuGet package](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 

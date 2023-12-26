@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: ASP.NET Core Web API Implementation Overview
-description: "Learn more about the ASP.NET Core Web API Implementation of Telerik Reporting REST Service in .NET and .NET Core."
+description: "Learn more about the ASP.NET Core Web API Implementation of Telerik Reporting REST Service in .NET."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview
 tags: overview
 published: True
@@ -19,7 +19,6 @@ These are the options for the service hosting:
 
 * [Hosting Reports Service in ASP.NET Core in .NET 6 with Top Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
 * [Hosting Reports Service in ASP.NET Core in .NET]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
-* [Hosting Reports Service in ASP.NET Core 3.1]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1%})
 
 The service can be used from:
 

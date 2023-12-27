@@ -23,6 +23,9 @@ res_type: kb
 
 I want to merge neighbor cells with identical content in a table or crosstab. The desired result is shown in the following image.
 
+![Merged neighbor table cells with identical content.](https://github.com/telerik/reporting-docs/assets/19798249/52eba037-962d-4ec7-9d51-c74fc21bdd82)
+
+
 ### Solution
 
 We will create the desired layout combining two different approaches for the left and right-hand columns of the Crosstab.

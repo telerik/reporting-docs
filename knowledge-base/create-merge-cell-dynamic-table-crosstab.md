@@ -33,9 +33,9 @@ We will create the desired layout combining two different approaches for the lef
 
 	1. Open or create the report in Telerik Report Designer.
 	1. Use the [Crosstab Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards%}) to add a Crosstab to your report.
-	1. Group the Crosstab on the columns `questName`, `questDetail`, and `risk`. This will create the necessary groupings and merged cells automatically.
+	1. Group the Crosstab on the columns `questName`, `questDetail`, and `risk`. This will create the necessary groupings and merge cells automatically.
 
-* The second part is to merge the cells with identical content in the detail part of the Crosstab, including those that belong to different groups. Let's apply table borders to mimic thia merging and proper [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) for the Values of the merged cells to avoid multiplication in the merged cell:
+* The second part is to merge the cells with identical content in the detail part of the Crosstab, including those that belong to different groups. Let's apply table borders to mimic this merging and proper [Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) for the Values of the merged cells to avoid multiplication in the merged cell:
 
 	1. Set all `Bottom` borders to `None`.
 	1. Set the `Top` border of a repeated value to `None` and the one of a new value to `Solid`. Here is a sample expression for the [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the property `Style.BorderStyle.Top` of the last column in our sample:
@@ -73,8 +73,7 @@ We will create the desired layout combining two different approaches for the lef
 
 ## Example
 
-Check the example in our reporting-samples Github repository 
-
+Download the sample report [MergedTableCells.trdp in our reporting-samples Github repository]( https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/MergedTableCells.trdp).
 
 ## See Also
 

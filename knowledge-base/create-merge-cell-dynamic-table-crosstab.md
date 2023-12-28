@@ -73,7 +73,7 @@ We will create the desired layout combining two different approaches for the lef
 
 ## Example
 
-Download the sample report [MergedTableCells.trdp in our reporting-samples Github repository](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/MergedTableCells.trdp).
+Download the sample report [MergedTableCells.trdp in our reporting-samples Github repository](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/MergedTableCells.trdx).
 
 ## See Also
 

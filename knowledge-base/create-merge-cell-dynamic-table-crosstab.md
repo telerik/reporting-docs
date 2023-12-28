@@ -55,6 +55,7 @@ We will create the desired layout combining two different approaches for the lef
 			If(Previous('questDetail', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency, Fields.responsibilityAgency)))
 ````
 
+
 		We used the `Previous` [Data Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%}) to check whether a value repeats the previous one in the column. When the value is the first for the current group, it needs to be compared with the last one from the previous group in the parent scope, hence the use of the `Last` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in these cases.
 
 	1. Repeat the previous steps for each detail crosstab column, changing only the Expression (for example, the name of the Field).

@@ -20,7 +20,6 @@ This article elaborates on how to localize the strings used and displayed by the
 	````JavaScript
 export class WebReportDesignerStringsBase  {
 		constructor() {
-			super(...arguments);
 			this.Report = "Report";
 			this.CombinedReport = "Combined Report";
 			this.SharedDataSource = "Shared Data Source";

@@ -42,7 +42,9 @@ We will create the desired layout combining two different approaches for the lef
 
 		`
 		= If(Previous(Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? '' : Fields.responsibilityAgency,
+
 			If(Previous('risk', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency,
+
 			If(Previous('questDetail', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency, Fields.responsibilityAgency)))
 		`
 
@@ -50,7 +52,9 @@ We will create the desired layout combining two different approaches for the lef
 
 		`
 		= If(Previous(Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? '' : Fields.responsibilityAgency,
+
 			If(Previous('risk', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency,
+
 			If(Previous('questDetail', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency, Fields.responsibilityAgency)))
 		`
 
@@ -66,8 +70,11 @@ We will create the desired layout combining two different approaches for the lef
 
 	`
 	= If(Previous(Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? 'None' : 'Solid',
+
 		If(Previous('risk', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? 'None' : 'Solid',
+  
 		If(Previous('questDetail', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? 'None' : 'Solid',
+  
 		If(Previous('questName', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questName', Last(Fields.responsibilityAgency))) ? 'None' : 'Solid', 'Solid'))))
 	`
 

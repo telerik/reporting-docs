@@ -107,10 +107,10 @@ namespace CSharp.MvcDemo.Controllers
 		<div id="webReportDesigner">
 			loading...
 		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>>
-		<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}//js/kendo.all.min.js"></script>>
-		<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>>
-		<script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}//js/kendo.all.min.js"></script>
+		<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
+		<script src="/api/reportdesigner/designerresources/js/webReportDesigner"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$("#webReportDesigner").telerik_WebReportDesigner({
@@ -127,7 +127,7 @@ namespace CSharp.MvcDemo.Controllers
 	</html>
 ````
 
-	The *ReportDesignerController* we added above is configured to search for its reports in a sub-folder named `Reports`. The Report Designer widget we just configured will try to load a report named `SampleReport.trdp`. Add a new folder named `Reports` to the solution and add an existing report named `SampleReport.trdp` in it.
+	The *ReportDesignerController* we added above is configured to search for its reports in a sub-folder named `Reports`. The Report Designer widget we just configured will try to load a report named `SampleReport.trdp`. Add a new folder named `Reports` to the solution and add an existing report named `SampleReport.trdp` to it.
 
 1. Register the *ReportsControllerConfiguration* and *ReportDesignerControllerConfiguration* routes in the `Application_Start()` method of the `Global.asax` file. It is important to register them before the default routes as shown below:
 

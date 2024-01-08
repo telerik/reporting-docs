@@ -41,18 +41,24 @@ We will create the desired layout combining two different approaches for the lef
 	1. Set the `Top` border of a repeated value to `None` and the one of a new value to `Solid`. Here is a sample expression for the [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the property `Style.BorderStyle.Top` of the last column in our sample:
 
 		````Expression
-= If(Previous(Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? '' : Fields.responsibilityAgency,
-
-			If(Previous('risk', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency,
-
-			If(Previous('questDetail', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency, Fields.responsibilityAgency)))
+= If(Previous(Fields.responsibilityAgency) is Not Null,
+			(Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? 
+				'' : Fields.responsibilityAgency,
+			If(Previous('risk', Fields.responsibilityAgency) is Not Null,
+				(Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? 
+					'' : Fields.responsibilityAgency,
+				If(Previous('questDetail', Fields.responsibilityAgency) is Not Null,
+					(Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? 
+						'' : Fields.responsibilityAgency, 
+					Fields.responsibilityAgency)))
 ````
 
 
 	1. Set the cell Value to an empty string for a repeated value and to the corresponding Expression (for example, Field) for a new value. Here is a sample Expression for the same column of our demo:
 
 		````Expression
-= If(Previous(Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? '' : Fields.responsibilityAgency,
+= If(Previous(Fields.responsibilityAgency) is Not Null,
+	(Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? '' : Fields.responsibilityAgency,
 
 			If(Previous('risk', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency,
 

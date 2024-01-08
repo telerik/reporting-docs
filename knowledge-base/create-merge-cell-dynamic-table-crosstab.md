@@ -40,7 +40,7 @@ We will create the desired layout combining two different approaches for the lef
 	1. Set all `Bottom` borders to `None`.
 	1. Set the `Top` border of a repeated value to `None` and the one of a new value to `Solid`. Here is a sample expression for the [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the property `Style.BorderStyle.Top` of the last column in our sample:
 
-		````
+		````Expression
 = If(Previous(Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? '' : Fields.responsibilityAgency,
 
 			If(Previous('risk', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency,

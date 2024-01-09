@@ -69,7 +69,11 @@ We will create the desired layout combining two different approaches for the lef
 					Fields.responsibilityAgency)))
 ````
 
-	We used the `Previous` [Data Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%}) to check whether a value repeats the previous one in the column. When the value is the first for the current group, it needs to be compared with the last one from the previous group in the parent scope, hence the use of the `Last` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in these cases.
+	We used the `Previous` [Data Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%}) to check whether a value repeats the previous one in the column group.
+
+	When the value is the first for the current group, it needs to be compared with the last one from the previous group in the parent scope, hence the use of the `Last` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in these cases.
+
+	More precisely, the function `Previous` finds the previous instance of the specified scope - the corresponding table group, for example, 'risk'. If there is no such instance, i.e. the current group instance is the first one, the returned value is `Null`. If the previous group instance is found, the `Last` function returns the last value of the particular field in this group instance. The value is compared with the (first) field value in the current group instance.
 
 	1. Repeat the previous steps for each detail crosstab column, changing only the Expression (for example, the name of the Field).
 	1. Save and run the report to see the merged cells in the Crosstab.

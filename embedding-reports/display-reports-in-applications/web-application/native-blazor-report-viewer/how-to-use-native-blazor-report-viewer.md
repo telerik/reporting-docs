@@ -112,6 +112,7 @@ app.UseStaticFiles();
 	}
 ````
 
+	> The `ReportSource` of the viewer should be set as in the above example. i.e. with the binding `@bind-ReportSource="@ReportSource"`. Setting the `ReportSource` directly, for example, like `ReportSource="@(new ReportSourceOptions("Report Catalog.trdp", new Dictionary<string, object>()))"` introduces circular dependency that causes endless refreshes of the Report Viewer that lead to infinite sequence of requests to the Reporting REST Service starting with Registe Client, etc.
 
 1. If displaying reports from a Report Server instance use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Remember to set the actual __ReportServer__ and __ReportSource__ settings:
 

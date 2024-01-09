@@ -42,15 +42,15 @@ We will create the desired layout combining two different approaches for the lef
 
 		````Expression
 = If(Previous(Fields.responsibilityAgency) is Not Null,
-			(Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? 
-				'' : Fields.responsibilityAgency,
+			(Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ?
+				'None' : 'Solid',
 			If(Previous('risk', Fields.responsibilityAgency) is Not Null,
-				(Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? 
-					'' : Fields.responsibilityAgency,
+				(Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ?
+					'None' : 'Solid',
 				If(Previous('questDetail', Fields.responsibilityAgency) is Not Null,
-					(Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? 
-						'' : Fields.responsibilityAgency, 
-					Fields.responsibilityAgency)))
+					(Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ?
+						'None' : 'Solid',
+					'Solid'))))
 ````
 
 
@@ -58,14 +58,22 @@ We will create the desired layout combining two different approaches for the lef
 
 		````Expression
 = If(Previous(Fields.responsibilityAgency) is Not Null,
-	(Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? '' : Fields.responsibilityAgency,
-
-			If(Previous('risk', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency,
-
-			If(Previous('questDetail', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? '' : Fields.responsibilityAgency, Fields.responsibilityAgency)))
+			(Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ?
+				'' : Fields.responsibilityAgency,
+			If(Previous('risk', Fields.responsibilityAgency) is Not Null,
+				(Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ?
+					'' : Fields.responsibilityAgency,
+				If(Previous('questDetail', Fields.responsibilityAgency) is Not Null,
+					(Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ?
+						'' : Fields.responsibilityAgency,
+					Fields.responsibilityAgency)))
 ````
 
-	We used the `Previous` [Data Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%}) to check whether a value repeats the previous one in the column. When the value is the first for the current group, it needs to be compared with the last one from the previous group in the parent scope, hence the use of the `Last` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in these cases.
+	We used the `Previous` [Data Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%}) to check whether a value repeats the previous one in the column group.
+
+		When the value is the first for the current group, it needs to be compared with the last one from the previous group in the parent scope, hence the use of the `Last` [aggregate function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions%}) in these cases.
+
+		More precisely, the function `Previous` finds the previous instance of the specified scope - the corresponding table group, for example, `risk`. If there is no such instance, i.e. the current group instance is the first one, the returned value is `Null`. If the previous group instance is found, the `Last` function returns the last value of the particular field in this (i.e. previous) group instance. The value is compared with the field value in the current group instance, which is the first for the current group.
 
 	1. Repeat the previous steps for each detail crosstab column, changing only the Expression (for example, the name of the Field).
 	1. Save and run the report to see the merged cells in the Crosstab.
@@ -76,13 +84,19 @@ We will create the desired layout combining two different approaches for the lef
 * The sample merges cells among the groups `questDetail` and `risk`. You may add merging with the top-level group `guestName` by changing the Expressions to test for repeated value also in this group. For example, the Top Border Style Expression will become:
 
 	````Expression
-= If(Previous(Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ? 'None' : 'Solid',
-
-		If(Previous('risk', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ? 'None' : 'Solid',
-
-		If(Previous('questDetail', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ? 'None' : 'Solid',
-
-		If(Previous('questName', Fields.responsibilityAgency) is Not Null, (Fields.responsibilityAgency = Previous('questName', Last(Fields.responsibilityAgency))) ? 'None' : 'Solid', 'Solid'))))
+= If(Previous(Fields.responsibilityAgency) is Not Null,
+		(Fields.responsibilityAgency = Previous(Fields.responsibilityAgency)) ?
+			'None' : 'Solid',
+		If(Previous('risk', Fields.responsibilityAgency) is Not Null,
+			(Fields.responsibilityAgency = Previous('risk', Last(Fields.responsibilityAgency))) ?
+				'None' : 'Solid',
+			If(Previous('questDetail', Fields.responsibilityAgency) is Not Null,
+				(Fields.responsibilityAgency = Previous('questDetail', Last(Fields.responsibilityAgency))) ?
+					'None' : 'Solid',
+				If(Previous('questName', Fields.responsibilityAgency) is Not Null,
+					(Fields.responsibilityAgency = Previous('questName', Last(Fields.responsibilityAgency))) ?
+						'None' : 'Solid',
+					'Solid'))))
 ````
 
 

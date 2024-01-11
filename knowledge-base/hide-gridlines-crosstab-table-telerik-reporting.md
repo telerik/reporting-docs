@@ -68,3 +68,4 @@ If there are more grouping levels, the expressions should evolve accordingly by 
 ## See Also
 
 * [Data Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/data-functions%})
+* [Styling Report Items]({%slug telerikreporting/designing-reports/styling-reports/styling-report-items%})

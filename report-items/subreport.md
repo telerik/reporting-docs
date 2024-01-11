@@ -39,6 +39,11 @@ To specify a sub-report for a [SubReport item]({%slug telerikreporting/designing
 
 The SubReport enables you to set up the report source either by using a Telerik Report Designer tool or programmatically.
 
+When using relative path to the report in the __UriReportSource__ of the SubReport, it gets resolved by default as follows:
+
+* In the Standalone Report Designer, Reporting REST Services and Report Viewers with respect to the main report that calls the subreport;
+* In custom applications rendering reports programmatically with the [ReportProcessor class](/api/telerik.reporting.processing.reportprocessor) with respect to the application starting point.
+
 > When you reference reports stored in the [Telerik Report Server](https://docs.telerik.com/report-server/introduction) ensure using the *[CategoryName]/[ReportName]* path for the URI as specified in the article [Working with Report Server Reports]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/working-with-report-server-reports%}).
 
 ### Using a Report Designer
@@ -47,7 +52,7 @@ To set the report source of the SubReport item by using a Telerik Report Designe
 
 1. In the **Design** view, right-click a SubReport item to which you want to set a report source and click __Properties__.
 1. In the __Properties__ of the item, click `ReportSource`. As a result, a **Load a Report from** dialog appears. Select a `ReportSource`.
-1. Select the type of report source you will use to specify a report. For the purposes of this example, click the __Instance Report Source__ option and select the report that will serve as the detailed report.
+1. Select the type of report source you will use to specify a report. For this example, click the __Instance Report Source__ option and select the report that will serve as the detailed report.
 1. To specify the parameters for the report, click the __Edit Parameters__ button. As a result, the __Edit Parameters__ dialog appears. Click __New__.
 1. In the __Parameter Name__ column, select the name of a report parameter in the detail report. In the __Parameter Value__, type or select the value to pass to the parameter in the detail report.
 

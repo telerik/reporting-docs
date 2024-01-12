@@ -61,8 +61,8 @@ The least significant group is the 'detail', and its expression should include c
 ````Expression
 = (Previous(Fields.group0) = Fields.group0) Or
   (Previous('group2', Fields.group0) = Fields.group0) Or
-  (Previous('group1', Fields.group0) = Fields.group0)
-	? "None" : "Solid"
+  (Previous('group1', Fields.group0) = Fields.group0) ?
+	"None" : "Solid"
 ````
 
 If there are more grouping levels, the expressions should evolve accordingly by adding a new check for the less significant (inner) groups.

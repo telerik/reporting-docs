@@ -1,5 +1,5 @@
 ---
-title: Show Borderrs Only Around A Group in Crosstab
+title: Show Borders Only Around A Group in Crosstab
 description: "Learn how to create a crosstab/table with borders only around the major group in Telerik Reporting."
 type: how-to
 page_title: Group Borders in Crosstab/Table | Telerik Reporting
@@ -23,15 +23,18 @@ I want to create a crosstab/table in Telerik Reporting with no horizontal/vertic
 
 To achieve this, you can use the `Style` > `BorderStyle` property in Telerik Reporting. Follow these steps:
 
-* Set all border styles for the Crosstab to `None` initially.
+* Set all border styles for the Crosstab __cells__ to `None`. Keep the Crosstab item borders with the default `Solid` style to get the borders around the entire Crosstab.
 * Add a [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) for the `Style` > `BorderStyle` > `Top` property and set it to `Solid` conditionally when the previous grouping value differs from the current one.
+
+The next sections discuss the particular Binding Expression for the top border style based on the scenario.
 
 ### One Table Group
 
 Let's start with the simplest case when there is only one group in the crosstab/table. Remember that each data item has also a 'detail' group that is instantiated for each data record. That said, in this case, we have two groups. Here is the expression that may be used in both group cells to set the border:
 
 ````Expression
-= Previous(Fields.group) = Fields.group ? "None" : "Solid"
+= Previous(Fields.group) = Fields.group ?
+	"None" : "Solid"
 ````
 
 The field 'group' is the grouping field in the crosstab/table DataSource.
@@ -48,13 +51,18 @@ If there are more groups, you may use the above Expression for the two most sign
 The third group's expression should include conditions for the previous group as well. Here's an example from the sample report 'ThreeGroups.trdx':
 
 ````Expression
-= (Previous(Fields.group0) = Fields.group0) Or (Previous('group1', Fields.group0) = Fields.group0) ? "None" : "Solid"
+= (Previous(Fields.group0) = Fields.group0) Or
+  (Previous('group1', Fields.group0) = Fields.group0) ?
+	"None" : "Solid"
 ````
 
 The least significant group is the 'detail', and its expression should include checks for the previous groups up to the second most significant one. Here's an example:
 
 ````Expression
-= (Previous(Fields.group0) = Fields.group0) Or (Previous('group2', Fields.group0) = Fields.group0) Or (Previous('group1', Fields.group0) = Fields.group0) ? "None" : "Solid"
+= (Previous(Fields.group0) = Fields.group0) Or
+  (Previous('group2', Fields.group0) = Fields.group0) Or
+  (Previous('group1', Fields.group0) = Fields.group0) ?
+	"None" : "Solid"
 ````
 
 If there are more grouping levels, the expressions should evolve accordingly by adding a new check for the less significant (inner) groups.

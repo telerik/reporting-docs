@@ -1,5 +1,5 @@
 ---
-title: Show Borderrs Only Around A Group in Crosstab
+title: Show Borders Only Around A Group in Crosstab
 description: "Learn how to create a crosstab/table with borders only around the major group in Telerik Reporting."
 type: how-to
 page_title: Group Borders in Crosstab/Table | Telerik Reporting

@@ -22,7 +22,7 @@ I want to embed the report document inside the mail message sent by the [Send Ma
 
 The default method used for sending the email is [CreateMailMessage(SendDocumentArgs, DocumentData)](/api/telerik.reporting.services.webapi.reportscontrollerbase#collapsible-Telerik_Reporting_Services_WebApi_ReportsControllerBase_CreateMailMessage_Telerik_Reporting_Services_WebApi_SendDocumentArgs_Telerik_Reporting_Services_Engine_DocumentData_) which always returns the report document as attachment. A new method needs to be implemented to avoid that.
 
-1. Before implementing a new endpoint, we need to create helper class for rendering the reports to images since the report will be embedded in the email body using the [img](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) element.
+1. Before implementing a new endpoint, we need to create a helper class for rendering the reports to images since the report will be embedded in the email body using the [img](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) element.
 
 	````CSharp
 public class ReportRenderer
@@ -144,7 +144,7 @@ public override JsonResult GetDocumentFormats()
 ````
 
 
-1. The next step is to create the new endpoint that will handle creating the images using the helper class, embed them in the body of the email and send it.
+1. The next step is to create the new endpoint that will handle creating the images using the helper class, embed them in the body of the email, and send it.
 
 	````CSharp
 [Route("cmail")]

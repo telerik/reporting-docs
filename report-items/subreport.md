@@ -87,6 +87,7 @@ When working with the SubReport item, mind the following:
 
 * Page sections are not related to the report itself, but are relative to the paper or screen. Therefore, page sections of nested or detail reports are ignored and only the page sections of the main report are visible.
 * To render page sections that appear on each page, similar to page sections, consider using an unbound group (no grouping criteria specified) and set the [`PrintOnEveryPage`](/api/Telerik.Reporting.GroupSection#Telerik_Reporting_GroupSection_PrintOnEveryPage) property of its sections to `True`. Note that you cannot use the `PageCount` and `PageNumber` global objects in group sections.
+* The [Table of Contents (TOC) section]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/table-of-contents/overview%}) is designed to be displayed at the top/bottom of the entire report document. For that reason, the TOC section of the subreport is ignored.
 * To remove blank vertical space in the detail section of a SubReport, set the `Height` of the `SubReport.ReportSource` `DetailSection` to the height of the highest item.
 * Sections can grow to accommodate their children but cannot shrink to hide empty spaces. To make the detail section shrink only at runtime, set the `Height` property of the `DetailSection` in the report constructor. Place the `Height` property assignment code right after the `IntializeComponent()` method call.
 * The default styles used in the subreports may be overridden by inherited styles from their parent reports.

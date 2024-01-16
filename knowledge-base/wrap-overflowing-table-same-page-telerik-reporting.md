@@ -35,7 +35,7 @@ That's it! Your table will now wrap and display the column headers on each new r
 
 ## Sample Report
 
-
+Download the demo report [WrappingRotatedTable.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/WrappingRotatedTable.trdx) from our Reporting Samples GitHub repository.
 
 ## Notes
 
@@ -44,3 +44,4 @@ Make sure to adjust the `ItemsOnPage` Parameter value based on the number of ite
 ## See Also
 
 * [Telerik Reporting Documentation](https://docs.telerik.com/reporting/overview)
+* [Use DataObject as a datasource for nested data items (Table, List, Crosstab, Graph)]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/how-to-use-the-reportitem.dataobject-property-in-expressions%}#use-dataobject-as-a-datasource-for-nested-data-items-table-list-crosstab-graph)

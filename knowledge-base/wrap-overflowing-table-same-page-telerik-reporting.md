@@ -25,9 +25,10 @@ To achieve this, you can use [Report Groups]({%slug telerikreporting/designing-r
 Follow these steps to wrap the overflowing table on the same page in Telerik Reporting:
 
 1. Add an Integer [Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) to the report to define the count of items in each row. Let's name it `ItemsOnPage`.
-1. Add a Report Group with Grouping `= Fields.Index / Parameters.ItemsOnPage.Value`, where the `Index` field is a zero-based indexing field for the data. This allows you to easily split the data into sets with a proper count determined by the integer Parameter value.
+1. Assign a DataSource to the Report. It should contain a zero-based indexing field. Let's name it `Index`.
+1. Add a Report Group with Grouping `= Fields.Index / Parameters.ItemsOnPage.Value`. This allows you to easily split the data into sets with a proper count determined by the integer Parameter value.
 1. Place the Table in the Group Header or Footer section and [Bind]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) the Table DataSource to the parent DataSource, which contains only the data for the corresponding Report Group.
-1. Set the Table's `RowHeadersPrintOnEveryPage` to `True`.
+1. Set the Table's `RowHeadersPrintOnEveryPage` to `True` so that the headers to be displayed on each row.
 1. Run the report in `PrintPreview` mode and select a Report Parameter value that prevents the table from spilling onto the next page when you test.
 
 That's it! Your table will now wrap and display the column headers on each new row.

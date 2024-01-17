@@ -35,7 +35,7 @@ To set the content of the [JsonDataSource]({%slug telerikreporting/designing-rep
 use the following [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) in the table:
 
     Property path: DataSource.Source
-    Expression: Parameters.Parameter1.Value
+    Expression: = Parameters.Parameter1.Value
 
 The same approach can be applied if the datasource is assigned to the report or any other [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}). In this case, the Binding has to be added to the report/ data item.
 

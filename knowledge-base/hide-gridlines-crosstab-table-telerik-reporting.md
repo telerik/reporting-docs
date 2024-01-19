@@ -76,16 +76,18 @@ The next steps let you keep each group on the same page when the table occupies 
 * Set `GroupKeepTogether` to `True` for the major group. This will let the page break occur after the last group that may entirely fit on the page.
 * Set all Table item borders `Border Style` to `None`. This will remove the extra border lines that extend to the end of the page. It will also remove the Table's top, left, and right borders that we need.
 * Add the Top Border to the cells of the Table Header row to recover the Table's top border.
-* Set the right-most cells' `Right Border Style` to `Solid` so that the Table has its right borders.
-* Set the left-most cells' `Left Border Style` to `Solid` so that the Table has its left borders.
-* The above steps let each group be rendered together on the same page and have proper borders, excluding the last one on the page. We need also to add a bottom border to the last group.
+* Set the right-most cells' `Right Border Style` to `Solid` so that the Table recovers its right borders.
+* Set the left-most cells' `Left Border Style` to `Solid` so that the Table recovers its left borders.
+
+The above steps let each group be rendered together on the same page and have proper borders, excluding the last one on the page. We need also to add a bottom border to the last group.
 
 One easy approach is through the following steps that are implemented in the sample report [ThreeGroupsPageBreak.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/TableGroupBorders/ThreeGroupsPageBreak.trdx):
 
 * Right-click on the last table row and select 'Insert Row > Below'.
-* Select the cells of the new row and set all outer borders to `Solid`, and all the others to `None`.
+* Select the cells of the new row and set all outer borders to `Solid`, and all the rest to `None`.
 * Minimize the new row's height as it will be used only to display borders and won't show any data.
-* The above will result in a small space below each group, as the table row has a minimal allowed height.
+
+The above solution will result in a small whitespace below each group content, as the table row has a minimal allowed height.
 
 An alternative workaround for the bottom table border when wrapping the table on a new page would be to use the `Last` [aggregate function](slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/aggregate-functions) in the Binding for setting the Border Style. If the current value is equal to the Last for the group, we may draw the bottom border. This will work only if there is a data field with unique values. Otherwise, the comparison with the Last value may return True for some of the inner records and draw an unwanted border in the middle of the group.
 

@@ -74,10 +74,10 @@ When a table group wraps on the next page, there will be a break in the borders 
 The next steps let you keep each group on the same page when the table occupies more than one page:
 
 * Set `GroupKeepTogether` to `True` for the major group. This will let the page break occur after the last group that may entirely fit on the page.
-* Set all Table item borders `Border Style` to `None`. This will remove the extra border lines that extend to the end of the page. It will also remove the Table top, left and right borders.
-* Add Top Border to the cells of the Table Header row to recover the Table top border.
-* Set the right-most cells' `Right Border Style` to `Solid` so that the Table has its right borders
-* Set the left-most cells' `Left Border Style` to `Solid` so that the Table has its left borders
+* Set all Table item borders `Border Style` to `None`. This will remove the extra border lines that extend to the end of the page. It will also remove the Table's top, left, and right borders that we need.
+* Add the Top Border to the cells of the Table Header row to recover the Table's top border.
+* Set the right-most cells' `Right Border Style` to `Solid` so that the Table has its right borders.
+* Set the left-most cells' `Left Border Style` to `Solid` so that the Table has its left borders.
 * The above steps let each group be rendered together on the same page and have proper borders, excluding the last one on the page. We need also to add a bottom border to the last group.
 
 One easy approach is through the following steps that are implemented in the sample report [ThreeGroupsPageBreak.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/TableGroupBorders/ThreeGroupsPageBreak.trdx):

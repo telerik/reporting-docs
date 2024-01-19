@@ -31,13 +31,13 @@ To display a triangle matrix table design, follow these steps:
 1. Set the Border Styles of the row header cells to `Solid`. This includes the cell on the second row/first column with the value '= Fields.RowSize'.
 1. Hide the Row Header of the Crosstab by setting the `Visible` property to `False`.
 1. Add a Row Footer to the Crosstab to display the sizes at the bottom of the matrix. Right-click on the last Crosstab row and select 'Insert Row > Outside Group > Below'. Set the Default Border Style of the new row's right cell to `Solid`.
-1. For the detail cell of the Crosstab (middle row, right column) with the value '= Fields.Value', use a Binding to set the `Style.BorderStyle.Default` property as follows. The Expression ensures borders are displayed only for the cells with content that is part of the desired triangle matrix:
+1. For the detail cell of the Crosstab (middle row/right column) with the value '= Fields.Value', use a Binding to set the `Style.BorderStyle.Default` property as follows. The Expression ensures borders are displayed only for the cells with content, i.e. that are part of the desired triangle matrix:
 
 	`= (Fields.Value is Null) Or (Fields.Value = "") ? "None" : "Solid"`
 
 1. You can also use a second Binding for the same cell to set the font color (Style.Color) based on the value. For example, you can set different colors based on specific ranges of values like in the referenced sample report:
 
-	````
+	````Expression
 = (Fields.Value is Null) Or (Fields.Value = "") ? "white" : Ifs(
 		Fields.Value < 150, "green", 
 		Fields.Value < 250, "red", 

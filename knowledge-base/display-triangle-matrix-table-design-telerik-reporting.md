@@ -18,7 +18,7 @@ res_type: kb
 
 I want to display a triangle matrix table design in Telerik Reporting. The matrix should have left and bottom header rows with identical content that represents sie in inches as in the next image:
 
-![The required triangle matrix layout.](/images/TriangleMatrixLayout.png "Triangle Matrix Layout")
+![The required triangle matrix layout.](images/TriangleMatrixLayout.png "Triangle Matrix Layout")
 
 ## Solution
 

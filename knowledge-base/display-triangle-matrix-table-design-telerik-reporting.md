@@ -22,13 +22,13 @@ I want to display a triangle matrix table design in Telerik Reporting. The matri
 
 ## Solution
 
-You can achieve the desired layout by using a proper DataSource that includes empty or Null records for the grid/matrix cells that shouldn't be displayed. The Reporting product is data-driven, so the table/crosstab layout depends on the received data.
+You can achieve the desired layout by using a proper DataSource that includes empty or Null records for the matrix cells that shouldn't be displayed. The Reporting product is data-driven, so the table/crosstab layout depends on the received data.
 
 To display a triangle matrix table design, follow these steps:
 
 1. Use a proper DataSource that includes Null or empty values for the top-right area of the matrix. For example, you can use a CsvDataSource with columns `RowSize`, `ColumnSize`, and `Value`. The `RowSize` and `ColumnSize` fields represent the Crosstab Row and Column Headers, while the `Value` field holds the data for each cell. Set the `Value` as an empty string when the `ColumnSize` is larger than the `RowSize`.
 1. Add a Crosstab to your report and configure the Row grouping by `RowSize` and Column grouping by `ColumnSize`. Make sure to set the Crosstab Border Styles to `None`.
-1. Set the Border Styles of the row header cells to `Solid`. This includes the cell on the second row, first column with the value '= Fields.RowSize'.
+1. Set the Border Styles of the row header cells to `Solid`. This includes the cell on the second row/first column with the value '= Fields.RowSize'.
 1. Hide the Row Header of the Crosstab by setting the `Visible` property to `False`.
 1. Add a Row Footer to the Crosstab to display the sizes at the bottom of the matrix. Right-click on the last Crosstab row and select 'Insert Row > Outside Group > Below'. Set the Default Border Style of the new row's right cell to `Solid`.
 1. For the detail cell of the Crosstab (middle row, right column) with the value '= Fields.Value', use a Binding to set the `Style.BorderStyle.Default` property as follows. The Expression ensures borders are displayed only for the cells with content that is part of the desired triangle matrix:

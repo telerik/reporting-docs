@@ -10,13 +10,13 @@ res_type: kb
 
 ## Environment
 
-| Product |
-| ------- |
-| Progress Telerik Reporting |
+| Property | Value |
+|----------|-------|
+| Product  | Telerik Reporting |
 
 ## Description
 
-I want to display a triangle matrix table design in Telerik Reporting. The matrix should have left and bottom header rows with identical content that represents sie in inches as in the next image:
+I want to display a triangle matrix table design in Telerik Reporting. The matrix should have left and bottom header rows with identical content that represents the size in inches as in the next image:
 
 ![The required triangle matrix layout.](images/TriangleMatrixLayout.png "Triangle Matrix Layout")
 

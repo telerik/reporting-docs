@@ -52,6 +52,6 @@ To display a triangle matrix table design, follow these steps:
 ````
 
 
-## Sample Reporting
+## Sample Report
 
 * [TriangleMatrix.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/TriangleMatrix.trdx)

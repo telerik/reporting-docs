@@ -8,6 +8,7 @@ res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -23,7 +24,7 @@ res_type: kb
 
 By default, the **CSV rendering extension** generates plain text files, without any formatting, and the first row contains the headers for all columns. You may choose whether to have this header row or not.   
 
-In Telerik Reporting, **device information settings** are used to pass rendering parameters to a rendering extension. You can specify device information settings in a variety of ways. You can use the &lt;Telerik.Reporting&gt; configuration section to specify the rendering parameters globally. Programmatically, you can use the [ReportProcessor.RenderReport()](/api/telerik.reporting.processing.reportprocessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method. 
+In Telerik Reporting, **device information settings** are used to pass rendering parameters to a rendering extension. You can specify device information settings in a variety of ways. You can use the `Telerik.Reporting` configuration section to specify the rendering parameters globally. Programmatically, you can use the [ReportProcessor.RenderReport()](/api/telerik.reporting.processing.reportprocessor#Telerik_Reporting_Processing_ReportProcessor_RenderReport_System_String_Telerik_Reporting_ReportSource_System_Collections_Hashtable_) method. 
 
 For more information about specifying rendering parameters globally, see [Configuring Telerik Reporting]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/overview%}).  
    
@@ -80,7 +81,6 @@ For more information about specifying rendering parameters globally, see [Config
 }
 ````
 
-
 If the report exported with default settings looked like this:  
    
 ````CSV
@@ -99,7 +99,6 @@ AddressID,City,PostalCode,30,Orlando,32804
 AddressID,City,PostalCode,31,Ottawa,K4B 1T7  
 AddressID,City,PostalCode,32,Montreal,H1Y 2H5  
 ````
-
 
 With the given device information settings, the result will be:  
    

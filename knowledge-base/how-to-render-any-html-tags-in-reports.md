@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
 
-A frequently asked question is *how to render HTML tags and CSS attributes that are not supported by [HtmlTextBox item]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%})* in reports. The most requested tags that can, currently, be display only through this article's workaround are the [img](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) and [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) HTML tags.
+A frequently asked question is *how to render HTML tags and CSS attributes that are not supported by [HtmlTextBox item]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%})* in reports. The most requested tags that can, currently, be displayed only through this article's workaround are the [img](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) and [table](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table) HTML tags.
 
 The workaround that this article will demonstrate is to render the HTML/CSS content as a [Bitmap](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.bitmap?view=dotnet-plat-ext-8.0) or [Image](https://learn.microsoft.com/en-us/dotnet/api/system.drawing.image) in an [User Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) and then have that function invoked on the [Value](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_Value) property of a [PictureBox item]({%slug telerikreporting/designing-reports/report-structure/picturebox%}).
 
@@ -48,8 +48,8 @@ namespace UserFunctions
 ````
 
 
-1.Build the project, then copy the project assembly as well as the `HtmlRenderer.WinForms.dll` assembly from the project's `bin` folder to the folder where the Report Designer exe is located, e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`.
-1.Open the `Telerik.ReportDesigner.exe.config` file and use the [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) to add references to the Class Library project's assembly and the `HtmlRenderer.WinForms.dll` assembly:
+1. Build the project, then copy the project assembly as well as the `HtmlRenderer.WinForms.dll` assembly from the project's `bin` folder to the folder where the Report Designer exe is located, e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`.
+1. Open the `Telerik.ReportDesigner.exe.config` file and use the [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) to add references to the Class Library project's assembly and the `HtmlRenderer.WinForms.dll` assembly:
 
 	````XML
 <Telerik.Reporting>

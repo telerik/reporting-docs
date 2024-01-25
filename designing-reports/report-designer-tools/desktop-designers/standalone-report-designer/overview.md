@@ -20,15 +20,16 @@ The Standalone Report Designer empowers report authors with creating, editing, a
 The Standalone Report Designer is distributed as a single EXE file, which simplifies its distribution and does not require installation. Visual Studio is not required to create reports with the Standalone Report Designer. Reports are processed on the client's machine.
 
 Since its introduction in 2013 R2, the Standalone Report Designer is built against .NET Framework 4.0 and is distributed as a part of the Telerik Reporting package. The designer comes in two flavors - Telerik.ReportDesigner.x86.exe which is compiled as a 32-bit application, and Telerik.ReportDesigner.exe, which is compiled as a 64-bit application.
-Starting with 2022 R3, a new version of Standalone Report Designer is available. It is named Telerik.ReportDesigner.Net and is built against .NET 6.0. Its main purpose is to allow the report authors to load and use their assemblies compiled against .NET Standard, .NET Core, and .NET 5+. The Standalone Report Designer for .NET is currently distributed as two .ZIP packages, each for the corresponding x86 or x64 flavor of the application.
+
+Starting with 2022 R3, a new version of Standalone Report Designer is available. It is named Telerik.ReportDesigner.Net and originally was built against .NET 6. With 2024 Q1 its target framework was changed to .NET 8. Its main purpose is to allow the report authors to load and use their assemblies compiled against .NET Standard, .NET Core, and .NET 5+. The Standalone Report Designer for .NET is distributed with the product installer, and also as .ZIP packages, containing the x86 or x64 flavor of the application.
 
 ## Differences between the .NET and .NET Framework designers' functionality
 
-This section explains the differences between both versions of Standalone Report Designer - for .NET Framework and .NET 6.0. Although lots of code was shared between the versions, the .NET induced some changes that are listed below.
+This section explains the differences between both versions of Standalone Report Designer - for .NET Framework and .NET 8. Although lots of code was shared between the versions, the .NET induced some changes that are listed below.
 
 * __Automatic discovery of 3rd party ADO.NET Data Providers__ - The Standalone Report Designer for the .NET Framework required manually adding an entry in the DbProviderFactories section in the application configuration file when needed to use a third-party ADO.NET provider. The Report Designer for .NET will try to discover and automatically load the available ADO.NET data providers when building a new SQL connection. The supported providers are: `Microsoft.Data.SqlClient`, `System.Data.SqlClient`, `Npgsql for PostgreSQL`, `System.Data.SQLite`, `MySql.Data.MySqlClient`, `Oracle.ManagedDataAccess.Client`. `ODBC` and `OleDB` data sources are also supported.
 
-	> If any of the supported data providers doesn't appear in the dropbox of the SqlDataSource wizard you need to add its DLL in the folder with the `Telerik.ReportDesigner.Net.exe` file.
+	> If any of the supported data providers doesn't appear in the dropbox of the SqlDataSource wizard you need to add its .dll and its dependency .dll files in the folder with the `Telerik.ReportDesigner.Net.exe` file.
 
 * __Query Builder__ - the Query Builder uses Telerik OpenAccess to define the relations between the tables in a database. Telerik OpenAccess has limited support for .NET, so currently the Query Builder functionality for the .NET designer is restricted.
 * __Import Report Wizard__ - the Import Report functionality relies on external 3rd-party assemblies that do not have .NET-compatible versions. The Import Report Wizard option is not available on the .NET designer's initial page.
@@ -50,11 +51,19 @@ This section explains the differences between both versions of Standalone Report
 
 * __From your Telerik Account:__
 
-	1. Navigate to the Progress Telerik Reporting installation folder. By default, it is `%PROGRAMFILES(x86)%\Progress\`.
-	1. Navigate to the `.net` subfolder.
+	1. Navigate to the Progress Telerik Reporting installation folder. By default, it is `%PROGRAMFILES(x86)%\Progress\Telerik Reporting YYYY RR` where YYYY RR stands for the currently installed year and release moniker.
+	1. Navigate to the `Report Designer\.NET` subfolder.
 	1. Start the Telerik.ReportDesigner.Net.exe to run the 64-bit flavor of Standalone Report Designer for .NET.
 	1. Navigate to the `x86` subfolder and start the Telerik.ReportDesigner.Net.x86.exe to run the 32-bit flavor of Standalone Report Designer for .NET.
 	1. The Standalone Report Designer opens, and you can create or open a report.
+
+* __Starting Standalone Report Designer using latest installed .NET runtime:__
+The Standalone Report Designer will be targeting LTS (Long-Term-Support) versions of .NET. If needed to run the application against STS (Standard-Term-Support) .NET versions like .NET 9, or pre-release version of LTS .NET, please use the `RollForward` feature of .NET runtime. Start the Standalone Report Designer from a command prompt, adding the `--roll-forward` parameter:
+
+`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"`
+
+For further information about controlling the `RollForward` behavior at runtime, check the related Microsoft documentation article section [Control roll-forward behavior](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#control-roll-forward-behavior).
+
 
 ## Major UI Elements in the Standalone Report Designer  
 

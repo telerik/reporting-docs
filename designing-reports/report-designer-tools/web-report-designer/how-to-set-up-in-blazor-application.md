@@ -103,6 +103,7 @@ using Microsoft.AspNetCore.Mvc;
 	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
 	<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
 	<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
 ````
 
 

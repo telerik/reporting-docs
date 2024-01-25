@@ -37,6 +37,16 @@ Examples:
 
 Another option for accessing the report parameters' collection is the global function [Parameters(parameterName)]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions%}).
 
+## Environment
+
+Represents a read-only type that contains information about the environment in which the reporting engine works. Contains two properties: `OperatingSystem` and `GraphicsEngine`.
+ - `OperatingSystem` returns the identifier of the operating system in which the current application is running, as provided by the [OperatingSystem.VersionString](https://learn.microsoft.com/en-us/dotnet/api/system.operatingsystem.versionstring) property (e.g. 'Microsoft Windows NT 6.2.9200.0').
+ - `GraphicsEngine` returns a [GraphicsEngine](/api/telerik.drawing.contract.graphicsengine) member representing the currently used graphics engine. Available values: `Gdi` and `Skia`, accessible also through the **ReportingConstants.GraphicsEngine** options. Example: ```=Switch(Environment.GraphicsEngine, GraphicsEngine.Gdi, "Using GDI", GraphicsEngine.Skia, "Using Skia", "N\A")```
+
+## ExecutionTime
+
+A [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) instance containing the date and time of the moment when the current report started its procesing by the reporting engine.
+
 ## PageNumber
 
 The current page number. It can be used only in the page header and footer. 

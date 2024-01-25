@@ -42,7 +42,7 @@ Still, if needed, you can use *newer* Open XML SDK version. Add a binding redire
 ...
 ````
 
-In newer versions, the DocumentFormat.OpenXml assembly the **PublicKeyToken** is changed. Thus, if you are using DocumentFormat.OpenXml of version **2.7.2.0**, you have to reference **Telerik.Reporting.OpenXmlRendering.2.7.2.** 
+In newer versions, the DocumentFormat.OpenXml assembly the **PublicKeyToken** is changed. Thus, if you are using DocumentFormat.OpenXml of version **2.7.2.0** or later, you have to reference **Telerik.Reporting.OpenXmlRendering.2.7.2.** or **Telerik.Reporting.OpenXmlRendering.3.0.1.**
 
 For even newer versions add the required binding redirect as shown in the following example configuration for DocumentFormat.OpenXml 2.8.1.0: 
 

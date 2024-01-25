@@ -28,9 +28,10 @@ To export its reports in Open XML formats, such as `.docx`, `.xlsx`, or `.pptx`,
 The `DocumentFormat.OpenXml` assembly has two versions with different Public Key Tokens. To provide support for both, Telerik Reporting delivers the following `Telerik.Reporting.OpenXmlRendering` assemblies:
 
 * `Telerik.Reporting.OpenXmlRendering.dll`−Supports 2.0.5022.0 and 2.5.5631.0 `DocumentFormat.OpenXml.dll` versions.
-* `Telerik.Reporting.OpenXmlRendering.2.7.2.dll`−Supports 2.7.2.0 and later `DocumentFormat.OpenXml.dll` versions.
+* `Telerik.Reporting.OpenXmlRendering.2.7.2.dll`−Supports 2.7.2.0 and later `DocumentFormat.OpenXml.dll` versions up to version 3.x.x.x
+* `Telerik.Reporting.OpenXmlRendering.3.0.1.dll`−Supports 3.0.1.0 and later `DocumentFormat.OpenXml.dll` versions.
 
-> Currently, we do not support DocumentFormat.OpenXml `3.x.x` due to breaking changes. To generate compatible document types, always use the latest available `2.x.x` version. To use later versions other than the versions previously listed, add [`bindingRedirect`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) for `DocumentFormat.OpenXml.dll` assembly to the configuration file of the .NET Framework applications.
+>To use later versions other than the versions previously listed, add [`bindingRedirect`](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/bindingredirect-element) for `DocumentFormat.OpenXml.dll` assembly to the configuration file of the .NET Framework applications.
 
 To download Open XML by using the NuGet feed, refer to the [`DocumentFormat.OpenXml` NuGet package](https://www.nuget.org/packages/DocumentFormat.OpenXml/).
 

@@ -5,7 +5,7 @@ description: "Learn about the major items in the Context Menu of the Table item 
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-context-menu
 tags: context, menu, web, designer
 published: True
-position: 15
+position: 9
 ---
 
 # Web Report Designer Table Context Menu

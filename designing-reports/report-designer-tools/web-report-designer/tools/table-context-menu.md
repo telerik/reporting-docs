@@ -36,12 +36,12 @@ The context menu items are as follows. Some of the options may be hidden or disa
 * __Copy, Paste, Reset Style__: Use to copy the style from one table column to another, or reset the default style.
 * __Cut, Copy, Paste__: Use to copy the content from one table column to another.
 * __Delete__: Delete the content of the table column.
-* __Insert Column__: Let's you insert a new column. Available options: __Left__ or __Right__ of the current one.
-* __Insert Row__: Let's you insert a new row. Available options: __Above__ or __Below__ the current one.
+* __Insert Column__: Let's you insert a new column. Available options: `Left` or `Right` of the current one.
+* __Insert Row__: Let's you insert a new row. Available options: `Above` or`Below` the current one.
 * __Delete Columns__: Use to delete the corresponding columns.
 * __Delete Rows__: Use to delete the corresponding rows.
 * __Rotate Layout__: Rotate the table so that its columns become rows and vice-versa.
-* __Add Group__: Use to add Row/Column group. Available options for __Row Group__ / __Column Group__: `Parent`, `Child`, `Adjacent Above/Left` or `Adjacent Below/Right`.
+* __Add Group__: Use to add Row/Column group. Available options for `Row Group` / `Column Group`: `Parent`, `Child`, `Adjacent Above/Left` or `Adjacent Below/Right`.
 * __Move Column__: Use to move a column or selection of columns. Only columns from static groups may be moved. If there are merged cells in the column, all the columns within the merged cells will be automatically selected and moved. Works only in tables and not in crosstabs. The designer automatically detects the possible moving directions. Available options: `Move Left` and `Move Right`.
 
 ## Context Menu for a Table Row
@@ -56,7 +56,7 @@ The context menu items are as follows. Some of the options may be hidden or disa
 * __Cut, Copy, Paste__: Use to copy the content from one table row to another.
 * __Delete__: Delete the content of the table row.
 * __Insert Row__: Let's you insert a new row. Available options:
-	+ For static groups: __Above__ or __Below__.
+	+ For static groups: `Above` or `Below`.
 	+ When the table has dynamic groups, you may add the new row as part of the current table group: `Inside Group - Above`, `Inside Group - Below`, or outside it: `Outside Group - Above`, `Outside Group - Below`.
 * __Delete Rows__: Use to delete the corresponding row.
 * __Rotate Layout__: Rotate the table so that its rows become columns and vice-versa.

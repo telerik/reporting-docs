@@ -12,7 +12,7 @@ position: 9
 
 The table context menu may be opened from the ellipses(`...`) displayed when you hover over the corresponding table or table column. The exact options in the menu depend on the selected table part - see [Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}).
 
-## Context Menu for the entire Table item.
+## Context Menu for the entire Table item
 
 Hover over the top left table corner to open the Context Menu for the entire table
 
@@ -25,7 +25,7 @@ The context menu items are:
 * __Cut, Copy, Paste__: Use to copy the entire table.
 * __Delete__: Delete the corresponding table.
 
-## Context Menu for a Table Column.
+## Context Menu for a Table Column
 
 Hover over the top right corner of the specific table column to open its Context Menu.
 
@@ -44,7 +44,7 @@ The common context menu items are:
 * __Add Group__: Use to add Row/Column group. Available options for __Row Group__ / __Column Group__: `Parent`, `Child`, `Adjacent Above/Left` or `Adjacent Below/Right`.
 * __Move Column__: Use to move a column or selection of columns. Only columns from static groups may be moved. If there are merged cells in the column, all the columns from the merged cells will be automatically selected and moved. Works only in tables and not in crosstabs. Available options: `Move Left` and `Move Right`.
 
-## Context Menu for a Table Row.
+## Context Menu for a Table Row
 
 Hover over the left top corner of the specific table row to open its Context Menu.
 

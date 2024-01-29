@@ -10,7 +10,12 @@ position: 9
 
 # Web Report Designer Table Context Menu
 
-The table context menu may be opened from the ellipses (`...`) displayed when you hover over the corresponding table, table column, or table row. The exact options in the menu depend on the selected table part - see [Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}). They are determined by the static and dynamic groups the column/row falls in, whether there are merged cells, etc.
+The table context menu may be opened in two ways:
+
+*  Hover over the corresponding table, table column, or table row. Click on the ellipses (`...`) that will appear when you hover.
+*  Open the _Explorer_ tab in the Components/Explorer area of the Web Designer and find the corresponding table. Expand the groups. Click on the ellipses (`...`) beside the item.
+
+The exact options in the menu depend on the selected table part - see [Crosstab Areas]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}). They are determined by the static and dynamic groups the column/row falls in, whether there are merged cells, etc.
 
 ## Context Menu for the entire Table item
 

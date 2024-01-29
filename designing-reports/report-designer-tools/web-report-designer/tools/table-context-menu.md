@@ -16,7 +16,7 @@ The table context menu may be opened from the ellipses(`...`) displayed when you
 
 Hover over the top left table corner to open the Context Menu for the entire table
 
-	![The Table Context Menu of the Web Report Designer which lets you act over the entire table.](images/WebDesignerContextMenu-Table.png)
+![The Table Context Menu of the Web Report Designer which lets you act over the entire table.](images/WebDesignerContextMenu-Table.png)
 
 The context menu items are:
 
@@ -29,7 +29,7 @@ The context menu items are:
 
 Hover over the top right corner of the specific table column to open its Context Menu.
 
-	![The Table Column Context Menu of the Web Report Designer which lets you act over the selected table column.](images/WebDesignerContextMenu-TableColumn.png)
+![The Table Column Context Menu of the Web Report Designer which lets you act over the selected table column.](images/WebDesignerContextMenu-TableColumn.png)
 
 The common context menu items are:
 
@@ -48,7 +48,7 @@ The common context menu items are:
 
 Hover over the left top corner of the specific table row to open its Context Menu.
 
-	![The Table Row Context Menu of the Web Report Designer which lets you act over the selected table row.](images/WebDesignerContextMenu-TableRow-2.png)
+![The Table Row Context Menu of the Web Report Designer which lets you act over the selected table row.](images/WebDesignerContextMenu-TableRow-2.png)
 
 * __Copy, Paste, Reset Style__: Use to copy the style from one table row to another, or reset the default style.
 * __Cut, Copy, Paste__: Use to copy the content from one table row to another.

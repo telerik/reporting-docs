@@ -57,15 +57,17 @@ This section explains the differences between both versions of Standalone Report
 	1. Navigate to the `x86` subfolder and start the Telerik.ReportDesigner.Net.x86.exe to run the 32-bit flavor of Standalone Report Designer for .NET.
 	1. The Standalone Report Designer opens, and you can create or open a report.
 
-* __Starting Standalone Report Designer using latest installed .NET runtime:__
-The Standalone Report Designer will be targeting LTS (Long-Term-Support) versions of .NET. If needed to run the application against STS (Standard-Term-Support) .NET versions like .NET 9, or pre-release version of LTS .NET, please use the `RollForward` feature of .NET runtime. Start the Standalone Report Designer from a command prompt, adding the `--roll-forward` parameter:
+* __Starting Standalone Report Designer using the latest installed .NET runtime:__
+The Standalone Report Designer will be targeting LTS (Long-Term-Support) versions of .NET. If it is necessary to run the application against STS (Standard-Term-Support) .NET versions like .NET 9, or a pre-release version of LTS .NET, please use the `RollForward` feature of .NET runtime. Start the Standalone Report Designer from a command prompt, adding the `--roll-forward` parameter:
 
-`C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"`
+	````powershell
+C:\Program Files (x86)\Progress\Telerik Reporting {Version}\Report Designer\.NET>Telerik.ReportDesigner.Net.exe --roll-forward LatestMajor"
+````
+
 
 For further information about controlling the `RollForward` behavior at runtime, check the related Microsoft documentation article section [Control roll-forward behavior](https://learn.microsoft.com/en-us/dotnet/core/versions/selection#control-roll-forward-behavior).
 
-
-## Major UI Elements in the Standalone Report Designer  
+## Major UI Elements in the Standalone Report Designer
 
 ![The major UI elements in the Standalone Report Designer](images/Designer/standalone-report-designer-overview.png "The major UI elements of the Standalone Designer")
 
@@ -74,7 +76,7 @@ The image above shows the major UI elements in the Standalone Report Designer:
 * __View tab:__ Lets you open the [Report Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-explorer%}), [Data Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-explorer%}), [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}), __Property Browser__ or navigate to __Startup Page__
 * __Report selector button:__ Clicking this button makes the report active in the `Properties` window.
 * __Rulers:__ Located on the top and left side of the designer, they provide a point of reference for the report layout.
-* __Report Sections__ : The high-level report design consists of report sections for the report header, report footer, page header, page footer, detail, group header, and group footer. Each section can be resized by dragging the sizing grips at the bottom/right of each section. Most sections except the detail can be deleted by selecting the section and hitting the delete key. To delete a group section, you have to delete the whole group from the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
+* __Report Sections__: The high-level report design consists of report sections for the report header, report footer, page header, page footer, detail, group header, and group footer. Each section can be resized by dragging the sizing grips at the bottom/right of each section. Most sections except the detail can be deleted by selecting the section and hitting the delete key. To delete a group section, you have to delete the whole group from the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
 * __Component Tray:__ Shows the [DataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) that are used in this report.
 * __View Mode Buttons:__ Use these buttons to switch between the `Design`, and `Preview` views.
 * [Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%}) (not shown on the image above): Appears on right-click and conditionally displays content depending on the area that was right-clicked.
@@ -83,7 +85,7 @@ The image above shows the major UI elements in the Standalone Report Designer:
 
 Additionally, the Standalone Report Designer includes the following helpful elements:
 
-* __ToolStrip__ : This is a UI element that includes various buttons that are designed to ease you while you design reports. The `ToolStrip`, which is shown in the image below, is placed in the lower-left corner of the design surface.
+* __ToolStrip__: This is a UI element that includes various buttons that are designed to ease you while you design reports. The `ToolStrip`, which is shown in the image below, is placed in the lower-left corner of the design surface.
 
 	![The Standalone Designer ToolStrip, which is placed in the lower-left corner of the design surface.](images/Designer/report-designer-toolstrip.png "The Standalone Designer ToolStrip")
 

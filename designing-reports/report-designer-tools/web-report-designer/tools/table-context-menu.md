@@ -58,7 +58,7 @@ Hover over the left top corner of the specific table row to open its Context Men
 	+ When the table has dynamic groups, you may add the new row as part of the current table group: __Inside Group - Above__, __Inside Group - Below__, or outside it: __Outside Group - Above__, __Outside Group - Below__.
 * __Delete Rows__: Use to delete the corresponding row.
 * __Rotate Layout__: Rotate the table so that it rows become columns and vice-versa.
-* __Split Cells_: Use to split the merged cells on the row.
+* __Split Cells__: Use to split the merged cells on the row.
 * __Add Group__: Use to add Row/Column group. Available options: `Parent`, `Child`, `Adjacent Above/Left` or `Adjacent Below/Right`.
-* __Row Group_: Use to delete the group. You may choose whether to delete only the group, or the related items as well.
+* __Row Group__: Use to delete the group. You may choose whether to delete only the group, or the related items as well.
 * __Add Total Row__: Add a row with totals. The row will contain the Sum of the cell contents in the corresponding column if applicable.

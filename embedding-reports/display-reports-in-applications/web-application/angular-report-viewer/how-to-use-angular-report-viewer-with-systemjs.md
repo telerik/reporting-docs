@@ -11,6 +11,8 @@ previous_url: /angular-report-how-to-use-with-systemjs
 
 # Integrating the Angular Report Viewer with SystemJS
 
+> Starting with the `Q1 2024` release, the SystemJS Angular examples is no longer distributed with the product and this article will receive no further updates.
+
 This article elaborates on how to add the Angular Report Viewer component to an Angular application with a `SystemJS` module loader. It shows the steps to implement the required configuration when you use the *Angular Quickstart* project template. As a result, we create a new Angular application with settings similar to these of the local `systemjs` project, installed by default under `[TelerikReporting_InstallDir]\Examples\Angular\`.
 
 > To use the Angular Report Viewer with SystemJS, you must explicitly list the package entry points.

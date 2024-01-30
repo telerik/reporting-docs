@@ -56,7 +56,9 @@ The `XPS` rendering extension requires the `Telerik.Reporting.XpsRendering.dll` 
 
 If you are using `DocumentFormat.OpenXml` of version `2.5.5631.0`, you will need binding redirect for the `DocumentFormat.OpenXml.dll` assembly - [Deploy Telerik Reporting with newer OpenXML SDK version]({%slug deploy-telerik-reporting-with-newer-openxml-sdk-version%}).
 
-In newer versions of the `DocumentFormat.OpenXml` assembly the `PublicKeyToken` is changed. Thus, if you are using `DocumentFormat.OpenXml` of version `2.7.2.0` you have to reference `Telerik.Reporting.OpenXmlRendering.2.7.2.`
+In newer versions of the `DocumentFormat.OpenXml` assembly the `PublicKeyToken` is changed. Thus, if you are using `DocumentFormat.OpenXml` of version `2.7.2.0` or newer you have to reference `Telerik.Reporting.OpenXmlRendering.2.7.2.` or `Telerik.Reporting.OpenXmlRendering.3.0.1.`
+
+**Note:** `Telerik.Reporting.OpenXmlRendering.3.0.1.` is introduced in Telerik Reporting 2024 Q1 (18.0.24.130)
 
 > For even newer versions, also add the required `binding redirect`.
 

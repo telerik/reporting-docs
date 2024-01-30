@@ -66,4 +66,5 @@ CSharp.Net7.Html5IntegrationDemo Error: 0 : An error occurred while rendering th
 
 # Solution
 
-To resolve this issue, you need to ensure that the 'DocumentFormat.OpenXml' version referenced in the project is 2.7.2 or higher, but lower than 3.0.0.
+- If you are using version of Telerik Reporting prior to 2024 Q1 (18.0.24.130), you need to ensure that the 'DocumentFormat.OpenXml' version referenced in the project is 2.7.2 or higher, but lower than 3.0.0.
+- If you are using version of Telerik Reporting version 18.0.24.130 or newer, please reference 'Telerik.Reporting.OpenXmlRendering.3.0.1' which works with 'DocumentFormat.OpenXml' version 3.0.1 or newer.

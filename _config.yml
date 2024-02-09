@@ -288,6 +288,9 @@ navigation:
     designing-reports/report-designer-tools/web-report-designer/tools/table:
         position: 10
         title: "Table"
+    designing-reports/report-designer-tools/web-report-designer/user-guide:
+        position: 20
+        title: "User Guide"        
     designing-reports/report-designer-tools/desktop-designers:
         position: 11
         title: "Desktop Designers"

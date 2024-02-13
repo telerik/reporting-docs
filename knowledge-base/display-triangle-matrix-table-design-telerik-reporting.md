@@ -1,10 +1,10 @@
 ---
 title: Displaying a Triangle Matrix Table Design in Telerik Reporting
-description: "Learn how to display a triangle matrix table design in Telerik Reporting."
+description: "Learn how to display a correlation matrix with crosstab or table in Telerik Reporting."
 type: how-to
-page_title: How to Display a Triangle Matrix Table Design in Telerik Reporting
+page_title: How to Display a Correlation Matrix (Triangle Table) in Telerik Reporting
 slug: display-triangle-matrix-table-design-telerik-reporting
-tags: telerik-reporting, matrix-table, dynamic-table, design
+tags: telerik-reporting, matrix-table, dynamic-table, design, correlation matrix
 res_type: kb
 ---
 

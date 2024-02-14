@@ -1,7 +1,7 @@
 ---
 title: Creating a Simple Report
 page_title: Creating a Simple Report
-description: "Learn how to create you first report by using Telerik Web Report Designer: you will add a data source, a company logo, and a custom title, and a graph that will display the report's data."racters."
+description: "Learn how to create you first report by using Telerik Web Report Designer: you will add a data source, a company logo, and a custom title, and a graph that will display the report's data."
 slug: designing-reports/report-designer-tools/web-report-designer/user-guide/creating-report-in-wrd
 tags: tutorial,web,report,designer,tool,design,create
 published: True
@@ -10,22 +10,35 @@ position: 5
 
 # Creating a Simple Report
 
-This tutorial demonstrates the fundamental steps that will help you create a new report in the Web Report Designer.
+This tutorial demonstrates the fundamental steps that will allow you to make a new report in the Web Report Designer.
 
-You will create a new report and connect it to a data source. Then, you will customize it by adding a company logo, title, and graphs that will visualize the report's data.
+You will start by creating a blank report and styling it by adding a custom header, company logo, and a title. Then, you will connect the report to a data source. Finally, you will add graphs that will visualize the report's data.
 
-1. Go to the main toolbar `Menu` and select `New Report`. The `Create Report` dialog opens and lets you:
+To create the report:
 
-	1. Enter the `File Name`. Let's name the report `ProductSales`.
-	1. Select the `Type`. Leave the `Type` to be `TRDP` standing for _Telerik Report Definition Packed_, the recommended Declarative [Report Definition]({%slug on-telerik-reporting%}#report-definition).
-	1. Enter `Location`. Type `Demo` to place the report in the _Demo_ subfolder.
-	1. Click `Save` to apply the settings.
+1. Go to the Report Designer's main **Menu** and select **New Report**. This opens the **Create a Report** dialog.
 
-	![The 'Create Report' dialog of the web designer with the above settings for our new report.](../../../../getting-started/web-designer/images/create-trdp-report-web-designer.png)
+1. In the **File Name** field, enter the desired name for the report, for example, `ProductSales`.
 
-1. The new empty report should open in the designer with its default Page Header, Detail, and Page Footer sections. Let's delete the page sections by selecting them and pressing the `Delete` key from the keyboard.
+1. In the **Save as type** drop-down, select the TRDP report type. TRDP is the recommended report type and stands for Telerik Report Definition Packed.
 
-1. Next, we want to add a [Report Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-report-header---footer-sections%}). Press `Ctrl+F` to focus the Search box, type `Report Header`, and press `Enter` key to focus the report section in the `Components` menu. Click the item to add the section to the report.
+1. Select the location for the report and click **Save**.
+
+	![The 'Create Report' dialog of the Telerik Web Report Designer](../../../../getting-started/web-designer/images/create-trdp-report-web-designer.png)
+
+## Styling the Report
+
+Newly created reports contain default elements such as headers, footers, and detail sections. When customizing the report, you can change these default elements and add new once, for example, images.
+
+To style the sample report:
+
+1. Delete the default page header (at the top of the page), footer (at the top of the page), and detail section (the main body of the report) by selecting each of them and pressing the `Delete` keyboard key. 
+
+1. Add a new custom report header:
+
+   2.1. Press `Ctrl+F` to focus the Search box.
+   2.2. Type `Report Header`, and press `Enter`. This will focus the **Page Header** report section in the **Components** menu. 
+   2.3. Click the item to add the section to the report.
 
 	![Searching for the 'Report Header' and locating it in the web designer's 'Components' menu.](../../../../getting-started/web-designer/images/locate-report-header-component.png)
 
@@ -47,6 +60,8 @@ You will create a new report and connect it to a data source. Then, you will cus
 
 	![The TextBox 'Sales by Category' styled and aligned in the web designer.](../../../../getting-started/web-designer/images/style-and-align-textbox-web-designer.png)
 
+## Adding the Report Data
+
 1. Our next step would be to add a [DataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) to the Report. Let it be the [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) fetching data from a remote source.
 
 	1. Search for the component and add it to the report. It opens the _Configure Web Service DataSource_ wizard.
@@ -61,6 +76,8 @@ You will create a new report and connect it to a data source. Then, you will cus
 		![The last page of the 'Configure WebServiceDataSource' wizard in the web designer shows the 'Preview data source results'.](../../../../getting-started/web-designer/images/preview-data-web-service-data-source-web-designer.png)
 
 	1. The wizard closes and in the designer's `Explorer` tab you should see the new WebServiceDataSource component with its data fields listed.
+
+## Adding a Graph
 
 1. Next, lets add the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item that is going to show the sales data.
 

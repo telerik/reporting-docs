@@ -1,6 +1,6 @@
 ---
 title: Web Report Designer User Guide
-page_title: Overview
+page_title: Web Report Designer User Guide
 description: "Explore the comprehensive Web Report Designer user guide and discover how to apply the powerful features of the report designer to effortlessly craft rich dynamic reports."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/user-guide/overview
 tags: overview,web,report,designer,tool,design,create,report,web
@@ -27,7 +27,7 @@ This section briefly describes the content highlights.
 
 ## Next Steps
 
-* [Step 1]()
+* [Create a Simple Report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/creating-report-in-wrd%})
 * [Step 2]()
 
 {% if site.has_cta_panels == true %}

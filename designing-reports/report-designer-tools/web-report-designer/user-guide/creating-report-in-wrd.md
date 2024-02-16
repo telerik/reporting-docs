@@ -36,29 +36,45 @@ To style the sample report:
 
 1. Add a new custom report header:
 
-   2.1. Press `Ctrl+F` to focus the Search box.
-   2.2. Type `Report Header`, and press `Enter`. This will focus the **Page Header** report section in the **Components** menu. 
-   2.3. Click the item to add the section to the report.
+   2.1. Use `Ctrl+F` to focus the search box.
+
+   2.2. Type `Report Header`, and press `Enter`. This will focus the **Page Header** report section in the **Components** menu.
+
+   2.3. Click the **Page Header** item to add this section to the report.
 
 	![Searching for the 'Report Header' and locating it in the web designer's 'Components' menu.](../../../../getting-started/web-designer/images/locate-report-header-component.png)
 
-1. Let's add the company logo to the report.
+1. Add a company logo to the report header by using a picture box:
 
-	1. We need to add a [PictureBox]({%slug telerikreporting/designing-reports/report-structure/picturebox%}) to the Report Header. You may search for the report item, drag it to the Report Header, and adjust its size and position as needed.
-	1. To upload the logo, search for the `Value` property in the PictureBox, and click on the icon beside it. It opens the `Select File...` dialog, which represents the [Assets Manager]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager). The latter contains report assets such as images, external stylesheets, etc.
+	3.1. Use `Ctrl+F` to focus the search box.
 
-		![The 'Select file...' dialog of the web designer opened when adding a value for the PictureBox.](../../../../getting-started/web-designer/images/select-image-for-picturebox-web-designer.png)
+	3.2. Type `PictureBox`, and press `Enter`. This will focus the **PictureBox** report component in the **Components** menu.
 
-	1. Select the `Images` folder and click the `Upload` button to upload the image. Click on the `Browse` button to find the image on your system and open it. Add the selected image by clicking on the `Upload` button. Now the image is in the Assets Manager and you may click `Save`. The value should be populated and the image should be displayed in the PictureBox.
+    3.3. Click the **PictureBox** item and drag it to the report header. Adjust its size and position as needed.
 
-1. Add title to the report. You may use the [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) report item.
+	3.4. Make sure that the picture box is focused (selected), locate the **DATA** category in the properties area of the Web Report Designer. The properties area is the pane on the right, which contains properties specific to the currently selected report item.
 
-	1. Search in the global search box of the designer and drag the item from the `Components` menu to the Report Header.
-	1. You may change the text inline. Double-click on the item to enter it and type `Sales by Category`.
-	1. Apply Styles by selecting the TextBox, searching for _Style_, and finding the appropriate _Font_ styles. Let's use the default Font "Arial", with Size 22pt, bolded, centered, and aligned to the middle.
-	1. Position and realign the TextBox so that the content fits and looks beautiful.
+	3.5. Go to **DATA** > **Value** and click the ![The 'Select file...' button in the Telerik Web Report Designer](./images/select-file-button.png) button to open the Assets Manager.
+	
+	3.6. Select the **Images** folder and then click the **Upload** button to upload an image from your device.
+	
+	3.7. Select the newly uploaded image and click **Save**.
 
-	![The TextBox 'Sales by Category' styled and aligned in the web designer.](../../../../getting-started/web-designer/images/style-and-align-textbox-web-designer.png)
+	![Saving a new image in the Assets Manager of the Telerik Web Report Designer](./images/add-image-to-picture-box.png)
+
+1. Add a title to the report by using a text box:
+
+	4.1. Use `Ctrl+F` to focus the search box.
+	
+	4.2. Type `TextBox`, and press `Enter`. This will focus the **TextBox** report component in the **Components** menu. 
+    
+	4.3. Click the **TextBox** item and drag it to the report header. Adjust its size and position as needed.
+	
+	4.4. Double-click on the text box and type `Sales by Category`.
+	
+	4.5. To change the text font, go to **APPEARANCE** > **Style** > **Font** in the properties area pane on the right and apply the desired styles, for example, Arial with size 22 pt in bold.
+
+	![The TextBox 'Sales by Category' styled and aligned in the Telerik Web Report Designer.](../../../../getting-started/web-designer/images/style-and-align-textbox-web-designer.png)
 
 ## Adding the Report Data
 

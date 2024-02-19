@@ -19,8 +19,7 @@ The assemblies target .NET Standard 2.0 and the desktop viewers target .NET 6.0,
 
 ## Requirements
 
-* (For web projects) ASP.NET Core 2.1 or later.
-* (For desktop projects) .NET 6.0 or later.
+__.NET 6.0__ or later.
 
 To use NuGet, you are required to provide the following NuGet packages. Note that when using the Telerik NuGet packages, the required dependencies are resolved automatically. Otherwise, you need to manually add them to the project.
 

@@ -24,7 +24,7 @@ When you configure the ObjectDataSource component the settings below are obligat
 
 	>The Standalone Report Designer for .NET Framework is a WPF application built against __.NET Framework 4.0__. For that reason, it cannot load and resolve classes from assemblies built against .NET Standard 2.1 or .NET 6+. You can see the [.NET Standard compatibility chart](https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-2-0) which explains how and when the assemblies can be loaded in different framework versions.
 
-	>The new .NET Standalone Report Designer is built for __.NET 6__ and can resolve assemblies built with `.NET Standard`, `.NET 6` and higher - [Starting the Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net). However, it is not guaranteed to resolve assemblies built with the .NET Framework. For .NET 7/8 assemblies, please, check the KB article [Loading .NET 7 assemblies in the Standalone Report Designer for .NET]({%slug how-to-load-dot-net-7-assemblies-in-srd-dot-net%}).
+	>The new .NET Standalone Report Designer is built for __.NET 8__ and can resolve assemblies built with `.NET Standard`, `.NET 6` and higher - [Starting the Standalone Report Designer for .NET]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}#starting-the-standalone-report-designer-for-net).
 
 1. Add the following piece of code from [Bind to a BusinessObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject%}).
 

@@ -18,6 +18,10 @@ res_type: kb
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
 		<tr>
+			<td>Version</td>
+			<td>up to R3 2023 SP1</td>
+		</tr>
+		<tr>
 			<td>Report Designer</td>
 			<td>.NET Standalone Designer</td>
 		</tr>

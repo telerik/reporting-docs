@@ -1,24 +1,26 @@
 ---
 title: How to Resolve the "You can assign System.String, IImage, System.Drawing.Image" Error in Telerik Reporting
-description: Learn how to resolve the error message "You can assign System.String, IImage, System.Drawing.Image (for GDI rendering), or SKBitmap (for Skia rendering) instances only" when using the graphicsEngine property with Telerik Reporting version 18.0.24.130.
+description: "Learn how to resolve the error message 'You can assign System.String, IImage, System.Drawing.Image (for GDI rendering), or SKBitmap (for Skia rendering) instances only'."
 type: how-to
 page_title: Resolving the "You can assign System.String, IImage, System.Drawing.Image" Error in Telerik Reporting
-slug: resolving-error-assign-System-String-IImage-System-Drawing-Image-telerik-reporting
+slug: embedded-image-clr-report-skia-error
 tags: telerik-reporting, error, graphicsEngine, migration
 res_type: kb
 ---
 
 ## Environment
+
 | Property | Value |
 | --- | --- |
 | Product | Progress® Telerik® Reporting |
-| Version | 12.2.18.1129 |
+| Version | 17.2.23.1010+ |
 
 ## Description
-I received an error message "You can assign System.String, IImage, System.Drawing.Image (for GDI rendering), or SKBitmap (for Skia rendering) instances only" when using the `graphicsEngine` property with Telerik Reporting version 18.0.24.130. This error occurred while migrating from Telerik Report version 17.1.23.606 to version 18.0.24.130.
+
+I received an error message `You can assign System.String, IImage, System.Drawing.Image (for GDI rendering), or SKBitmap (for Skia rendering) instances only` when using the `graphicsEngine` property with Telerik Reporting version 18.0.24.130. This error occurred while migrating from Telerik Report version 17.1.23.606 to version 18.0.24.130.
 
 ## Solution
-To resolve this error, you need to change the type of the image used in your CS reports to a type that is valid for both Skia and System.Drawing (GDI) rendering. Skia does not support all types from the GDI namespace `System.Drawing`.
+To resolve this error, you need to change the type of image used in your CS reports to a type that is valid for both Skia and System.Drawing (GDI) rendering. Skia does not support all types from the GDI namespace `System.Drawing`.
 
 Follow these steps to fix the error:
 

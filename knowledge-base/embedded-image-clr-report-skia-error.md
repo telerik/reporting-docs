@@ -14,6 +14,7 @@ res_type: kb
 | --- | --- |
 | Product | Progress® Telerik® Reporting |
 | Version | 17.2.23.1010+ |
+| Graphics Engine | Skia |
 
 ## Description
 

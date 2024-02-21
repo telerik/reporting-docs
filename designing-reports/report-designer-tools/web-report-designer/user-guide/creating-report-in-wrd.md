@@ -10,9 +10,9 @@ position: 5
 
 # Creating a Simple Report
 
-This tutorial demonstrates the fundamental steps that will allow you to make a new report in the Web Report Designer.
+This tutorial demonstrates the essential steps necessary to create a new report in the Web Report Designer.
 
-You will start by creating a blank report and styling it by adding a custom header, company logo, and a title. Then, you will connect the report to a data source. Finally, you will add graphs that will visualize the report's data.
+You will start from scratch by creating a blank report and styling it by adding a custom header, company logo, and a title. Then, you will connect the report to a data source. Finally, you will add graphs that will visualize the report's data.
 
 To create the report:
 
@@ -78,42 +78,52 @@ To style the sample report:
 
 ## Adding the Report Data
 
-1. Our next step would be to add a [DataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) to the Report. Let it be the [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) fetching data from a remote source.
+The report in this tutorial will visualize data fetched from a remote source that is accessible through a URL.
 
-	1. Search for the component and add it to the report. It opens the _Configure Web Service DataSource_ wizard.
-	1. For `ServiceUrl` we will add the known URL to our demo site `https://demos.telerik.com/reporting/api/data/ProductSales.min`. It points to a reliable JSON data file. Leave the other options with their default values.
+To add data to the report:
 
-		![The first page of the 'Configure WebServiceDataSource' wizard in the web designer.](../../../../getting-started/web-designer/images/configure-web-service-data-source-web-designer.png)
+1. Locate the **DATA SOURCES** category in the **Components** menu of the Web Report Designer.
 
-	1. Skip the next page, where you may add request parameters, as we don't have any.
-	1. Skip also the third page that asks whether in design-time you would like to use real or mocked data. We will use real data (the default setting).
-	1. Preview the data on the next page and click `Finish`.
+1. Click the **Web Service Data Source** item to start the data source configuration wizard.
+    
+1. Click the **TextBox** item and drag it to the report header. Adjust its size and position as needed.
 
-		![The last page of the 'Configure WebServiceDataSource' wizard in the web designer shows the 'Preview data source results'.](../../../../getting-started/web-designer/images/preview-data-web-service-data-source-web-designer.png)
+1. In the **Service URL** field, enter `https://demos.telerik.com/reporting/api/data/ProductSales.min`—the URL of the service providing the data for the report.
 
-	1. The wizard closes and in the designer's `Explorer` tab you should see the new WebServiceDataSource component with its data fields listed.
+## Adding a Chart
 
-## Adding a Graph
+To visualize the data you will add a Column Chart component:
 
-1. Next, lets add the [Graph]({%slug telerikreporting/designing-reports/report-structure/graph/overview%}) item that is going to show the sales data.
+1. Locate the **CHARTS** category in the **Components** menu of the Web Report Designer.
 
-	1. Search for `Column` and drag the Column chart from the `Explorer` menu to the report Detail section. This will open a chart configurator to the right pane.
-	1. Select the WebServiceDataSource from the dropdown of the Graph DataSource property. The fields will be listed.
+1. Click the **Column** item and drag it to the detail section of the report. This will load the Column Chart configurator on the right.
 
-		![Configuring the Column Chart in the web report designer.](../../../../getting-started/web-designer/images/configure-column-chart-web-designer.png)
+1. In the **DATA** > **Data Source** dropdown, select `webServiceDataSource1`—this will populate the **Data Source Fields** in the Column Chart configurator.
 
-	1. Drag the `ProductCategory` field to the `Categories`.
-	1. For the `Values` property use the `LineTotal` field.
-	1. Click on `Create` to render the chart with real data and show it in the report.
-	1. Finally, style the column graph:
+	![Configuring the Column Chart in the web report designer.](../../../../getting-started/web-designer/images/configure-column-chart-web-designer.png)
 
-		* Find and remove the `Legend` by unchecking its `Style` > `Visible` checkbox.
-		* Enter the `Titles` section, select the graph title, and uncheck the `Visible` checkbox in the `Style` section from the opened `Edit item` dialog.
+1. Drag the `ProductCategory` field from **DATA** > **Data Source Fields** to **FIELDS ARRANGEMENT** > **Categories** .
 
-		![Styling the Column Chart in the web report designer.](../../../../getting-started/web-designer/images/style-column-chart-web-designer.png)
+1. Drag the `LineTotal` field from **DATA** > **Data Source Fields** to **FIELDS ARRANGEMENT** > **Values** .
 
+1. Click **Create** to add the configured chart to the report.
 
-1. Preview the pixel-perfect report document by clicking on the designer `Preview` button at the top right corner.
+## Styling the Chart
+
+Optionally, you can adjust the appearance of the Chart:
+
+1. Select the Chart in the report detail section.
+
+1. In the configuration pane on the right, go to **APPEARANCE** > **Style** and clear the **Visible** checkbox. This will remove the legend from the Chart.
+
+1. Go to **PRESENTATION** > **Titles** and select the `graphTitle1` item to open the **Edit Item** dialog.
+
+1. Expand the **Style** category and clear the **Visible** checkbox. This will remove the Chart's title.
+
+	![Styling the Column Chart in the web report designer.](../../../../getting-started/web-designer/images/style-column-chart-web-designer.png)
+
+## Next Steps
+
 
 ## See Also
 

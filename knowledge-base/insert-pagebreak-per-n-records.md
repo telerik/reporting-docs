@@ -10,9 +10,14 @@ res_type: kb
 
 ## Environment
 
-| Key          | Value                      |
-|--------------|----------------------------|
-| Product      | Progress Telerik Reporting |
+## Environment
+
+<table>
+	<tr>
+		<td>Product</td>
+		<td>Progress® Telerik® Reporting</td>
+	</tr>
+</table>
 
 ## Description
 

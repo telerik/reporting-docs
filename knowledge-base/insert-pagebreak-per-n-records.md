@@ -27,7 +27,7 @@ The `ROW_NUMBER` function can be used to add a custom field to the result set - 
 ````SQL
 SELECT
     (row_number() over (order by EmployeeID) -1)/10 as 'GroupIdx',
-    [HumanResources].[vEmployee].[EmployeeID] ,
+    [HumanResources].[vEmployee].[EmployeeID],
     [HumanResources].[vEmployee].[FirstName],
     [HumanResources].[vEmployee].[LastName],
     [HumanResources].[vEmployee].[JobTitle],
@@ -37,13 +37,11 @@ WHERE [HumanResources].[vEmployee].[EmployeeID] <= 30
 ORDER BY 1 ASC
 ````
 
-Then, we can create a [report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%})/[table]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) group based on the `GroupIdx` field and set the group's [PageBreak](/api/telerik.reporting.tablegroup#Telerik_Reporting_TableGroup_PageBreak) property to `After` so that a new page starts after each 10 records.
-
-![image]()
+Then, create a [report]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%})/[table]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) group based on the `GroupIdx` field and set the group's [PageBreak](/api/telerik.reporting.tablegroup#Telerik_Reporting_TableGroup_PageBreak) property to `After` so that a new page starts after each 10 records.
 
 ## Additional Resources
 
-Download the sample report from the [reporting-samples repo]().
+Download the sample report from the [reporting-samples repo](https://github.com/telerik/reporting-samples/blob/master/PageBreakPerNRecords.trdx).
 
 ## See Also
 

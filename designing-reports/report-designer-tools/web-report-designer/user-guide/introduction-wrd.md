@@ -28,7 +28,7 @@ This section briefly describes the content highlights.
 ## Next Steps
 
 * [Create a Simple Report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/creating-report-in-wrd%})
-* [Step 2]()
+* [Explore the Structure of a Report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/report-structure%})
 
 {% if site.has_cta_panels == true %}
 {% include cta-panel-overview.html %}

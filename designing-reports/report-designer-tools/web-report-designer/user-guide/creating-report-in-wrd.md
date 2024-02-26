@@ -124,6 +124,8 @@ Optionally, you can adjust the appearance of the Chart:
 
 ## Next Steps
 
+* [Reference 1]()
+* [Reference 2]()
 
 ## See Also
 

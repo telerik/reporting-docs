@@ -1,10 +1,10 @@
 ---
-title: Parameter 'Culture' is an invalid culture identifier
+title: Parameter 'Culture' Is an Invalid Culture Identifier
 description: "Learn how to resolve the error message 'Only invariant culture is supported in globalization-invariant mode'."
 type: troubleshooting
 page_title: Only invariant culture is supported in globalization-invariant mode
 slug: only-invariant-culture-is-supported-in-globalization-invariant-mode-error
-tags: .NET 6.0, .NET 7, .NET 8
+tags: .NET 6, .NET 7, .NET 8
 res_type: kb
 ---
 
@@ -36,7 +36,7 @@ I have created a new ASP.NET Core project using the Visual Studio project templa
 
 Run the ASP.NET Core application in [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/main/docs/design/features/globalization-invariant-mode.md). Projects created with Visual Studio's ASP.NET Core Web API that target .NET 6+ use this setting by default.
 
-The `Invariant Mode` can be turned on in multiple ways with the most common being the project`.csproj` file:
+The `Invariant Mode` can be turned on in multiple ways with the most common being the project `.csproj` file:
 
 ````XML
 <Project Sdk="Microsoft.NET.Sdk">
@@ -54,7 +54,7 @@ The `Invariant Mode` can be turned on in multiple ways with the most common bein
 
 - For newer versions:
 
-	`Unable to get report parameters. An error has occurred. Only the invariant culture is supported in globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'culture') 1033 (0x0409) is an invalid culture identifier.`
+	`Unable to get report parameters. An error has occurred. Only the invariant culture is supported in the globalization-invariant mode. See https://aka.ms/GlobalizationInvariantMode for more information. (Parameter 'culture') 1033 (0x0409) is an invalid culture identifier.`
 
 ## Cause
 

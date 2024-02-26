@@ -1,6 +1,6 @@
 ---
 title: Parameter 'Culture' is an invalid culture identifier
-description: "Learn why the error 'type initializer for Telerik.Reporting.Interfaces.LocalizationContext threw an exception' may be thrown and how to resolve it."
+description: "Learn how to resolve the error message 'Only invariant culture is supported in globalization-invariant mode'."
 type: troubleshooting
 page_title: Only invariant culture is supported in globalization-invariant mode
 slug: only-invariant-culture-is-supported-in-globalization-invariant-mode-error

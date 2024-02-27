@@ -14,11 +14,10 @@ In [2024 Q1 (18.0.24.130)](https://www.telerik.com/support/whats-new/reporting/r
 
 ![Look at the HtmlTextBox editor of the Web Report Designer.](images/wrd-htmltextbox-editor-screenshot.png)
 
-The editor lets you easily add [Embedded Expressions in HtmlTextBox]({%slug htmltextbox_embedded_expressions%}).
+The editor lets you easily add [Embedded Expressions in HtmlTextBox]({%slug htmltextbox_embedded_expressions%}) along with the static text. The content may be HTML-formatted as explained in the article [Styling and Formatting HtmlTextBox]({%slug htmltextbox_formatting_and_styling%}).
 
 ## See Also
 
-* [Styling and Formatting HtmlTextBox]({%slug htmltextbox_formatting_and_styling%})
 * [Growing and Shrinking of HtmlTextBox]({%slug htmltextbox_grow_and_shrink%})
 * [Known Limitations of the HtmlTextBox]({%slug htmltextbox_known_limitations%})
 * [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)

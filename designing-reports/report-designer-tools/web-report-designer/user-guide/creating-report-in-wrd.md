@@ -12,7 +12,7 @@ position: 5
 
 This tutorial demonstrates the essential steps necessary to create a new report in the Web Report Designer.
 
-You will start from scratch by creating a blank report and styling it by adding a custom header, company logo, and a title. Then, you will connect the report to a data source. Finally, you will add graphs that will visualize the report's data.
+You will start from scratch by creating a blank report and styling it by adding a custom header, company logo, and title. Then, you will connect the report to a data source. Finally, you will add graphs that will visualize the report's data.
 
 To create the report:
 
@@ -28,7 +28,7 @@ To create the report:
 
 ## Styling the Report
 
-Newly created reports contain default elements such as headers, footers, and detail sections. When customizing the report, you can change these default elements and add new once, for example, images.
+Newly created reports contain default elements such as headers, footers, and detail sections. When customizing the report, you can change these default elements and add new ones, for example, images.
 
 To style the sample report:
 
@@ -52,7 +52,7 @@ To style the sample report:
 
     3.3. Click the **PictureBox** item and drag it to the report header. Adjust its size and position as needed.
 
-	3.4. Make sure that the picture box is focused (selected), locate the **DATA** category in the properties area of the Web Report Designer. The properties area is the pane on the right, which contains properties specific to the currently selected report item.
+	3.4. Make sure that the picture box is focused (selected), and locate the **DATA** category in the properties area of the Web Report Designer. The properties area is the pane on the right, which contains properties specific to the currently selected report item.
 
 	3.5. Go to **DATA** > **Value** and click the ![The 'Select file...' button in the Telerik Web Report Designer](./images/select-file-button.png) button to open the Assets Manager.
 	
@@ -102,9 +102,9 @@ To visualize the data you will add a Column Chart component:
 
 	![Configuring the Column Chart in the web report designer.](../../../../getting-started/web-designer/images/configure-column-chart-web-designer.png)
 
-1. Drag the `ProductCategory` field from **DATA** > **Data Source Fields** to **FIELDS ARRANGEMENT** > **Categories** .
+1. Drag the `ProductCategory` field from **DATA** > **Data Source Fields** to **FIELDS ARRANGEMENT** > **Categories**.
 
-1. Drag the `LineTotal` field from **DATA** > **Data Source Fields** to **FIELDS ARRANGEMENT** > **Values** .
+1. Drag the `LineTotal` field from **DATA** > **Data Source Fields** to **FIELDS ARRANGEMENT** > **Values**.
 
 1. Click **Create** to add the configured chart to the report.
 

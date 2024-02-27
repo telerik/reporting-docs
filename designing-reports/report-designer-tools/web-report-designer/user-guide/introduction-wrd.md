@@ -1,7 +1,7 @@
 ---
 title: Web Report Designer User Guide
 page_title: Web Report Designer User Guide
-description: "Explore the comprehensive Web Report Designer user guide and discover how to apply the powerful features of the report designer to effortlessly craft rich dynamic reports."
+description: "Explore the Web Report Designer user guide and discover how to apply the powerful features of the report designer to effortlessly craft rich dynamic reports."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/user-guide/overview
 tags: overview,web,report,designer,tool,design,create,report,web
 published: True
@@ -16,14 +16,13 @@ The Web Report Designer User Guide is intended to assist the users of business a
 
 ## What is the Web Report Designer?
 
-The Web Report designer is a tool developed to let business application users design, create, and export reports directly in their web browser, without needing any additional software. The reports can source their data from various databases, for example, relational, multi-dimensional, ORM, or custom data-layer-based data sources.
+The Web Report Designer is a tool developed to let business application users design, create, and export reports directly in their web browser without needing any additional software. The reports can source their data from various databases, for example, relational, multi-dimensional, ORM, or custom data-layer-based data sources.
 
 ![Main areas and functionalities of the Telerik Web Report Designer](../images/Designer/web-report-designer-dashboard.png)
 
 ## What's in this User Guide?
 
-This is a placeholder! 
-This section briefly describes the content highlights.
+This user guide includes articles that describe common scenarios related to the design and configuration of reports. In addition, you will also find conceptual information that illustrates basic reporting principles, for example, how to [structure a report]({%slug designing-reports/report-designer-tools/web-report-designer/user-guide/report-structure%}).
 
 ## Next Steps
 

@@ -20,6 +20,8 @@ To add an embedded expression to the HtmlTextBox content double-click the list o
 
 When you select content from the HtmlTextBox, you may format it with the functionality of the KendoUI Editor. The proper styling will be automatically applied as inline CSS styles. The supported styles are liseted in the article [Styling and Formatting HtmlTextBox]({%slug htmltextbox_formatting_and_styling%}).
 
+When you have finished editing the HtmlTextBox content, click the `Save` button at the bottom of the editor to populate the `Value` property of the item. Alternatively, you may cancel the operation by clicking the `Cancel` button.
+
 ## See Also
 
 * [Growing and Shrinking of HtmlTextBox]({%slug htmltextbox_grow_and_shrink%})

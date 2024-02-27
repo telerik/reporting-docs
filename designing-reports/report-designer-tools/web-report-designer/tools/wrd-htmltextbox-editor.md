@@ -12,7 +12,7 @@ position: 9
 
 In [2024 Q1 (18.0.24.130)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q1-18-0-24-130) we replaced the plain-text editor for the `Value` property of the [HtmlTextBox item]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%}) with a [KendoUI Editor component](https://docs.telerik.com/kendo-ui/controls/editor/get-started). This lets the user have an instant visual feedback on how their HTML will look like in the rendered report.
 
-![Look at the HtmlTextBox editor of the Web Report Designer.](images/wrd-htmltextbox-editor-screenshot.png]
+![Look at the HtmlTextBox editor of the Web Report Designer.](images/wrd-htmltextbox-editor-screenshot.png)
 
 ## See Also
 

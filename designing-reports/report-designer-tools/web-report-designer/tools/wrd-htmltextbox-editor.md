@@ -16,7 +16,7 @@ The editor lets you easily add [Embedded Expressions in HtmlTextBox]({%slug html
 
 ![Look at the HtmlTextBox editor of the Web Report Designer.](images/wrd-htmltextbox-editor-screenshot.png)
 
-To add an embedded expression to the HtmlTextBox content double-click the list of elements in the bottom middle list. This will add the corresponding dynamic object wrapped in curly brackets. You may further edit the content inside the brackets manually by adding other dynamic objects and relations between them. The entire embedded expression will be evaluated and replaced in runtime by the Reporting engine.
+To add an embedded expression to the HtmlTextBox content double-click an element from the bottom middle list. This will add the corresponding dynamic object wrapped in curly brackets. You may further edit the content inside the brackets manually by adding other dynamic objects and relations between them. The entire embedded expression will be evaluated and replaced in runtime by the Reporting engine.
 
 When you select content from the HtmlTextBox, you may format it with the functionality of the KendoUI Editor. The proper styling will be applied automatically as inline CSS styles. The supported styles are listed in the article [Styling and Formatting HtmlTextBox]({%slug htmltextbox_formatting_and_styling%}).
 

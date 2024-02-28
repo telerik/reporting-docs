@@ -10,7 +10,7 @@ position: 9
 
 # Editing in HtmlTextBox
 
-In [2024 Q1 (18.0.24.130)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q1-18-0-24-130) we replaced the plain-text editor for the `Value` property of the [HtmlTextBox item]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%}) with a [KendoUI Editor component](https://docs.telerik.com/kendo-ui/controls/editor/get-started). This lets the user have instant visual feedback on how their HTML will look in the rendered report.
+In the [2024 Q1 (18.0.24.130)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q1-18-0-24-130) release, we replaced the plain-text editor for the `Value` property of the [HtmlTextBox item]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview%}) with a [KendoUI Editor component](https://docs.telerik.com/kendo-ui/controls/editor/get-started). This lets the user have instant visual feedback on how their HTML will look in the rendered report.
 
 The editor lets you easily add [Embedded Expressions in HtmlTextBox]({%slug htmltextbox_embedded_expressions%}) through the list of predefined and dynamic elements that can be used in your expression. A list of expression element categories is located in the lower left-hand list of the editor, the elements for each category are located in the lower middle list, and descriptions are displayed in the lower right-hand panel.
 

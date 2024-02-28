@@ -22,10 +22,10 @@ In addition to the default sections above, you can also add:
 
 * Table of Contents (TOC)
 * Report Header
+* Report Footer
 * Report Groups
 * Group Header
 * Group Footer
-* Report Footer
 
 ## Page Header
 
@@ -52,18 +52,6 @@ Use the report header to place information typical for a cover page, such as log
 * If you place a Page Header on the first page, the Report Header will appear after it.
 * If the report has a TOC section, you can place it before or after the Report Header.
 
-## Report Groups
-
-Report groups allow you to visually separate logically related data sets. To show the group boundaries and display introductory and summary information for each group, you can use group header and footer sections. For example, you can use different report groups to represent the detailed sales data for each region, and the group header may contain the name of the region while the footer can contain the total number of sales for that specific region.
-
-## Group Header
-
-The Group Header section is printed at the beginning of each new group of records. Use the group header to print the group name. For example, in a report that is grouped by product, use the group header to print the product name.
-
-## Group Footer
-
-The Group Footer section is printed at the end of each group of records. Use a group footer to print a summary related to the group.
-
 ## Report Footer
 
 Use the report footer to print report totals or other summary information for the entire report. The Report Footer section is printed once at the end of the report:
@@ -78,6 +66,18 @@ Report items are the individual elements or components that make up a report. Th
 * Text boxes displaying the report title, date, and other descriptive information.
 * Images representing the company logo or brands.
 * Charts showing sales data, such as product sales by region.
+
+## Report Groups
+
+Report groups allow you to visually separate logically related data sets. To show the group boundaries and display introductory and summary information for each group, you can use group header and footer sections. For example, you can use different report groups to represent the detailed sales data for each region, and the group header may contain the name of the region while the footer can contain the total number of sales for that specific region.
+
+## Group Header
+
+The Group Header section is printed at the beginning of each new group of records. Use the group header to print the group name. For example, in a report that is grouped by product, use the group header to print the product name.
+
+## Group Footer
+
+The Group Footer section is printed at the end of each group of records. Use a group footer to print a summary related to the group.
 
 ## Next Steps
 

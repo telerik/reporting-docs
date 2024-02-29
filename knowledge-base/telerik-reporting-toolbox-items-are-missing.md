@@ -70,7 +70,7 @@ To understand the cause of Toolbox issues and resolve them, perform the followin
 
 You can also review this Log file to resolve Toolbox issues manually:
 
-### Issue 1: Toolbox items are missing**  
+### Issue 1: Toolbox items are missing
   
 - If using Visual Studio 2015 you can test adding the missing items manually:  
   

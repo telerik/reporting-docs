@@ -10,8 +10,6 @@ res_type: kb
 
 ## Environment
 
-## Environment
-
 <table>
 	<tr>
 		<td>Product</td>

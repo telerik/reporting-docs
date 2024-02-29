@@ -50,7 +50,7 @@ The Telerik Upgrade Wizard does not support website projects because [websites h
 
 The Telerik Upgrade Wizard does not support .NET Core projects. To upgrade your .NET project, manually upgrade the references to the Telerik Reporting assemblies or NuGet packages and the HTML5 Report Viewer scripts to the required version.
 
-You can only manually update website, WPF, and Silverlight projects which use the WPF and Silverlight Report Viewers but do not have separately purchased Telerik UI for WPF and Telerik UI for Silverlight products.
+You can only manually update the website projects and WPF projects that use the WPF Report Viewers but do not have separately purchased Telerik UI for WPF product.
 
 ## Upgrading Projects Manually
 
@@ -58,7 +58,7 @@ You can manually upgrade class library and website projects, and desktop and web
 
 1. In `Solution Explorer`, click the __Show All Files__ button. Open __References__ and locate the references to the previous Telerik Reporting assemblies.
 
-	Service Pack assemblies are marked with yellow exclamation marks which show that the assemblies cannot be located. This behavior is normal and indicates that you have an uninstalled the version to which they belong. 
+	Service Pack assemblies are marked with yellow exclamation marks which show that the assemblies cannot be located. This behavior is normal and indicates that you have uninstalled the version to which they belong. 
 
 1. Select the old assemblies that you identified in the previous step and click __Delete__ to remove them. Keep the names of the deleted assemblies for further reference.
 1. Right-click __References__ and select __Add Reference__ > __Add all__ to add all required references to the new Telerik Reporting assembly versions. These versions correspond to the deleted ones from the previous step. As a result, the newly added references appear in __References__ without the yellow exclamation marks which means that they are valid.
@@ -76,8 +76,6 @@ You can manually upgrade class library and website projects, and desktop and web
 
 	(For WPF applications only) Update the references to Telerik UI for WPF and the corresponding binding redirects, if any. For more information, refer to the article on [manually setting up the WPF ReportViewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%}). Update the XAML resources which correspond to the updated Telerik UI for WPF assemblies.
 
-	(For Silverlight applications only) [Update the references to Telerik UI for Silverlight]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/silverlight-application/how-to-add-report-viewer-to-a-silverlight-application%}) and the XAML resources which correspond to the updated Telerik UI for Silverlight assemblies.
-
 1. Open all report resource files as XML―each `.resx` file appears under the respective report file. Locate all occurrences of a Telerik Reporting Assembly and update the version number to the new one. Unlike the version name (for example, `Q1 2008`), the version number is a technical identifier (for example, `2.5.8.414`).
 1. Restart Visual Studio and rebuild all updated projects.
 1. If compilation errors or warnings occur, review the Telerik Reporting [Release History](https://www.telerik.com/support/whats-new/reporting/release-history) for any obsolete or deleted properties, methods, and events, and handle these according to the instructions. Review the release history for all releases between the previous and the latest version you installed.
@@ -93,7 +91,7 @@ To upgrade your website project manually:
 
 	+ `<configSections>`―The location in which you can alter the attributes of the rendering extensions.
 	+ `<httpHandlers>`/`<handlers>`―The location in which the ASP.NET Report Viewer registers its handler.
-	+ `<assemblies>`―The Telerik Reporting assemblies that are referenced in the website.
+	+ `<assemblies>`―The Telerik Reporting assemblies that are referenced on the website.
 
 1. Open the `.aspx/.master` pages and change the version of the Report Viewer in the `Register` directive.
 1. Open all report resource files as XML―Each `.resx` file appears under the respective report file. Locate all occurrences of a Telerik Reporting Assembly and update their version number to the new one. Unlike the version name (for example, Q1 2014), the version number is a technical identifier (for example, 8.0.14.225).

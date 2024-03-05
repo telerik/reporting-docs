@@ -15,7 +15,7 @@ Reports can contain report headers and footers. By default, new reports are crea
 
 ## Specifics
 
-In the report output, any control you place in the report header will be rendered once at the top of the entre report and after the first page header section (if any); any control you place in the report footer will be rendered once at the bottom of the entire report, and before the last page footer section (if any).
+In the report output, any control you place in the report header will be rendered once at the top of the entire report and after the first page header section (if any); any control you place in the report footer will be rendered once at the bottom of the entire report, and before the last page footer section (if any).
 
 ## Adding and Removing 
 

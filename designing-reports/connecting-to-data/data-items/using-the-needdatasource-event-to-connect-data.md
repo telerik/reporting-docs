@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/using-the
 tags: using,the,needdatasource,event,to,connect,data
 published: True
 position: 5
-previous_url: /data-items-need-data-source-event
+previous_url: /data-items-need-data-source-event, /designing-reports-adding-data-source-needdatasource
 ---
 
 # Using the NeedDataSource Event to Connect to Data

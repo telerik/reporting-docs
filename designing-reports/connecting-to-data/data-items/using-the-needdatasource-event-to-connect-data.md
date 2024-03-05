@@ -6,16 +6,16 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/using-the
 tags: using,the,needdatasource,event,to,connect,data
 published: True
 position: 5
-previous_url: /data-items-need-data-source-event
+previous_url: /data-items-need-data-source-event, /designing-reports-adding-data-source-needdatasource
 ---
 
 # Using the NeedDataSource Event to Connect to Data
 
-In certain scenarios you may find it impossible to connect to your data at design time. [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) provide suitable event to notify you that they are about to process so you may provide data for them to render, otherwise they will be processed as unbound items.
+In certain scenarios, you may find it impossible to connect to your data at design time. [Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) provide a suitable event to notify you that they are about to process so you may provide data for them to render, otherwise, they will be processed as unbound items.
 
 The `NeedDataSource` event is raised by the reporting engine to inform you that the data item is about to be processed and still has no data source attached. The sender of the event is always the processing counterpart of the data item and it is the receiver of the data source.
 
-This event is meant to be used only for providing data source to the report. Once the report is bound, the data source is cached and `NeedDataSource` event is no longer fired, unless it depends on report or data source parameter. Every time the report is previewed, exported or printed through the viewer it is processed and rendered from scratch, and the data caching improves the performance for these operations. Any other code irrelevant to providing data to the report should be moved to `ItemDataBinding` event which is fired regardless of whether the report is bound or not.
+This event is meant to be used only for providing data source for the report. Once the report is bound, the data source is cached, and the `NeedDataSource` event is no longer fired, unless it depends on the report or data source parameter. Every time the report is previewed, exported, or printed through the viewer it is processed and rendered from scratch, and the data caching improves the performance of these operations. Any other code irrelevant to providing data to the report should be moved to the `ItemDataBinding` event which is fired regardless of whether the report is bound or not.
 
 Below is an example that illustrates how to provide data source to the __Report__ item using the `Report.NeedDataSource` event.
 

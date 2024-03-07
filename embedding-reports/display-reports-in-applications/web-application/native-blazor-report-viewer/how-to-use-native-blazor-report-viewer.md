@@ -39,7 +39,7 @@ app.UseStaticFiles();
 	@* <script src="_content/Telerik.UI.for.Blazor.Trial/js/telerik-blazor.js" defer></script> *@
 
 	<script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js" defer></script>
-	@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
+	@* Or this one if using the Telerik.ReportViewer.BlazorNative.Trial package *@
 	@* <script src="_content/Telerik.ReportViewer.BlazorNative.Trial/js/reporting-blazor-viewer.js" defer></script> *@
 
 	<link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
@@ -47,7 +47,7 @@ app.UseStaticFiles();
 	@* <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor.Trial/css/kendo-theme-default/all.css" /> *@
 
 	<link href="_content/Telerik.ReportViewer.BlazorNative/css/reporting-blazor-viewer.css" rel="stylesheet" />
-	@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
+	@* Or this one if using the Telerik.ReportViewer.BlazorNative.Trial package *@
 	@* <link href="_content/Telerik.ReportViewer.BlazorNative.Trial/css/reporting-blazor-viewer.css" rel="stylesheet" /> *@
 ````
 

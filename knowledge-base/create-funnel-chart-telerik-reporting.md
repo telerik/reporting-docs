@@ -20,8 +20,10 @@ I would like to create a funnel chart in Telerik Reporting. How can I achieve th
 
 ## Solution
 
-While there is no out-of-the-box funnel chart type in Telerik Reporting, one can achieve a similar result using the existing bar chart by [adding two bar series]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-series%}) that share a category group and have opposite values.
+To create a bar chart that resembles a funnel chart [add two bar series]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-series%}) that share a category group and have opposite values.
+
 For example, if the value field is called "Value", the X-axis expression can be `= Sum(Fields.Value) / 2.0` for one of the series and `= - Sum(Fields.Value) / 2.0` for the other.
+
 This will force the two series to display on both sides of the Y-axis and center the bars in the graph's surface area.
 
 ## Demo

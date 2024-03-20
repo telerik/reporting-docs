@@ -21,12 +21,12 @@ This item template will do the following:
 
 * Build the project and check that the project is using a compatible .NET Framework version.
 * Open the Add New Report Viewer dialog to choose a report definition for the report viewer.
-* Verify that the project is having all the required references to Telerik UI for WPF and if a reference is missing it will ask you to add them according the Telerik Reporting license.
+* Verify that the project has all the required references to Telerik UI for WPF and if a reference is missing it will ask you to add them according to the Telerik Reporting license.
 * Verify that the required styles are merged in the project `App.xaml` (`Application.xaml` for VB.NET).
-* If missing, add the Telerik Reporting references (T`elerik.Reporting`, `Telerik.ReportViewer.Wpf`, `Telerik.ReportViewer.Wpf.Themes`, `Telerik.Reporting.XpsRendering`). 
+* If missing, add the Telerik Reporting references (`Telerik.Reporting`, `Telerik.ReportViewer.Wpf`, `Telerik.ReportViewer.Wpf.Themes`, `Telerik.Reporting.XpsRendering`). 
 * Add a Window with WPF Report Viewer.
 * Setup the viewer's [connection]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) depending on selected __engine type__.
-* Show a summary log that list all of the made changes.
+* Show a summary log that lists all of the made changes.
 
 If the selected engine is of remote type (`REST Service` or `Report Server`), the item template will:
 
@@ -44,9 +44,6 @@ If the selected engine is `REST Service`, additionally, it will do the following
 ## See Also
 
 * [How to Add  manually report viewer to a WPF .NET Framework project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add--manually-report-viewer-to-a-wpf-.net-framework-project%})
-
 * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
-
 * [WPF Application]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
-
 * [Setting a Theme (Using Implicit Styles)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)%})

@@ -102,7 +102,7 @@ JSON-based configuration file:
 		"parameters": [
 		{
 			"Name": "OutputFormat",
-			"Value": "JOEG"
+			"Value": "JPEG"
 		}
 	]
 	},

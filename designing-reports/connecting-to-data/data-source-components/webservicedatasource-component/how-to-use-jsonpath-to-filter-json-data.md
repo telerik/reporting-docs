@@ -11,11 +11,11 @@ previous_url: /how-to-use-jsonpath
 
 # Using JSONPath to Filter JSON data
 
-In this article we are going to discuss how to use JSONPath expressions in the Data Selector in order to query and filter JSON data returned from the web service. For a complete overview of the JSONPath syntax please refer to [JSONPath - XPath for JSON](https://goessner.net/articles/JsonPath/).
+In this article, we are going to discuss how to use JSONPath expressions in the Data Selector to query and filter JSON data returned from the web service. For a complete overview of the JSONPath syntax please refer to [JSONPath - XPath for JSON](https://goessner.net/articles/JsonPath/).
 
 ## Bind to Inner Objects
 
-Very often the JSON data returned from a web service contains a single parent object which wraps child objects and/or arrays. If the parent object is used directly the report would not display any detail records. Therefore it is more convenient to return an array of the child objects or a particular nested array using a JSONPath expression.
+Very often the JSON data returned from a web service contains a single parent object that wraps child objects and/or arrays. If the parent object is used directly the report will not display any detail records. Therefore it is more convenient to return an array of the child objects or a particular nested array using a JSONPath expression.
 
 >caption Example
 
@@ -65,7 +65,7 @@ Very often the JSON data returned from a web service contains a single parent ob
 
 ## Filter Arrays
 
-In other scenarios it might be useful to filter the JSON data in order to display only objects matching specific criteria.
+In other scenarios, it might be useful to filter the JSON data to display only objects matching specific criteria.
 
 >caption Example
 
@@ -107,3 +107,4 @@ In other scenarios it might be useful to filter the JSON data in order to displa
 ]
 ````
 
+>tip When testing for equality use `==` and for inequality `!=`.

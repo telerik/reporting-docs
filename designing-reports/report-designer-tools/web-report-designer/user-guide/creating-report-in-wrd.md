@@ -70,7 +70,7 @@ To add data to the report:
 1. Click the **Web Service Data Source** item to start the data source configuration wizard.
 1. Click the **TextBox** item and drag it to the report header. Adjust its size and position as needed.
 1. In the **Service URL** field, enter `https://demos.telerik.com/reporting/api/data/ProductSales.min` — the URL of the service providing the data for the report.
-1. Skip the next pages, until you reach the preview data page, where you may click `Finish`.
+1. Skip the next pages, until you reach the **Preview data source results** page, where you may view the data and click `Finish` to close the wizard.
 
 	![The last page of the 'Configure WebServiceDataSource' wizard in the web designer shows the 'Preview data source results'.](../../../../getting-started/web-designer/images/preview-data-web-service-data-source-web-designer.png)
 

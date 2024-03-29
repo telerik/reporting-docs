@@ -1,6 +1,6 @@
 ---
 title: Creating a Simple Report
-page_title: Creating a Report
+page_title: Creating a Simple Report
 description: "Learn how to create your first report by using Telerik Web Report Designer: you will add a data source, a company logo, a custom title, and a graph that will display the report's data."
 slug: designing-reports/report-designer-tools/web-report-designer/user-guide/creating-report-in-wrd
 tags: tutorial,web,report,designer,tool,design,create
@@ -8,7 +8,7 @@ published: True
 position: 5
 ---
 
-# Creating a New Report
+# Creating a Simple Report
 
 This tutorial demonstrates the essential steps necessary to create a new report in the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}).
 
@@ -72,7 +72,7 @@ To add data to the report:
 1. In the **Service URL** field, enter `https://demos.telerik.com/reporting/api/data/ProductSales.min` — the URL of the service providing the data for the report.
 1. Skip the next pages, until you reach the preview data page, where you may click `Finish`.
 
-	![The last page of the 'Configure WebServiceDataSource' wizard in the web designer shows the 'Preview data source results'.](images/preview-data-web-service-data-source-web-designer.png)
+	![The last page of the 'Configure WebServiceDataSource' wizard in the web designer shows the 'Preview data source results'.](../../../../getting-started/web-designer/images/preview-data-web-service-data-source-web-designer.png)
 
 ## Adding a Chart
 

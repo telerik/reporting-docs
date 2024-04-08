@@ -87,7 +87,7 @@ $("#reportViewer1")
        serviceUrl: "api/reports/",
        ...
        ready: function () {
-           $("[data-command*='telerik_ReportViewer_historyBack']").parent().hide();
+           $("[data-command='telerik_ReportViewer_historyBack']").parent().hide();
        }
 });
 ```

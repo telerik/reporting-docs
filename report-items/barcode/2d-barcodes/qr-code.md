@@ -59,7 +59,7 @@ The QR Code barcode provides a number of settings you can use to fine-tune its b
 
 ### Version
 
-`Version` is an integer value in the range from __1__ to __40__, representing the desired barcode version. If `Version` is not set, the encoder internally calculates the lowest possible version and uses it instead.
+The `Version` is an integer value in the range from __1__ to __40__, representing the desired barcode version. If `Version` is not set, the encoder internally calculates the lowest possible version and uses it instead.
 
 ### Error Correction Level
 

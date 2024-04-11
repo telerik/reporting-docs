@@ -441,8 +441,8 @@ angularsubsetversion: "14.0.0"
 kendosubsetversion: "2022.3.913"
 blazoruiversion: "4.4.0"
 
-# Feedback Form Google Sheet ID
-ff-sheet-id: '1oqaFdgKdIlX6pbd7aeptzbAUv0tfzrC3UwaubBeEwcg'
+# Feedback Form Product code
+productCode: REPORTING
 
 # The google services configuration
 google_tag_manager: GTM-6X92

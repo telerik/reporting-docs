@@ -13,6 +13,10 @@ previous_url: /how-to-blazor-web-report-designer
 
 > The following article guides you on how to use the Blazor Web Report Designer in a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web application.
 
+The quickest way to add the web report designer to a Blazor web project is with the __Telerik Blazor Report Designer__ item template in Visual Studio. The item template adds a page with the Web Report Designer and, if needed, enables the Web Report Designer REST Service. To start the item template wizard, in Visual Studio `Solution Explorer`, select the target .NET project. On the Project menu, click `Add` -> `New Item`. In the Add New Item search box enter "*Telerik Blazor Report Designer*" and select the item template that corresponds to your project type.
+
+For full control, instead of using the item template, you can manually configure the REST service and add the web report designer as elaborated in the rest of this article.
+
 ## Prerequisites
 
 * [Visual Studio 2022](https://www.visualstudio.com/vs/)

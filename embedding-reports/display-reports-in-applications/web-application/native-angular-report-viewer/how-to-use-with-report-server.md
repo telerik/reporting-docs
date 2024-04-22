@@ -5,7 +5,7 @@ description: "Learn how the Native Angular Report Viewer can be used as an exter
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-report-server
 tags: how,to,use,native,angular,report,viewer,with,report,server
 published: True
-position: 3
+position: 4
 ---
 
 # Integrating the Angular Report Viewer with the Report Server

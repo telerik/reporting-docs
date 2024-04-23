@@ -41,7 +41,7 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 
 	![VS Code context menu option location - last](images/vs-code-context-menu-option.png)
 
-1. The scaffolding wizard will open, showing the available component options. Set the `Service url` option to the URL of your Reporting REST Service API, the `Report` option to the report you wish to preview, and click `Create`. If you do not set these options, the Public Reporting Demos API will be used and the report will be "Report Catalog.trdx".
+1. The scaffolding wizard will open, showing the available component options. Set the `Service url` option to the URL of your Reporting REST Service API, the `Report` option to the report you wish to preview, and click `Create`. If you do not set these options, the [Public Reporting Demos](https://demos.telerik.com/reporting) API will be used and the report will be "Report Catalog.trdx".
 
 	![VS Code Telerik Reporting Project Item Generator](images/vs-code-telerik-reporting-project-item-generator.png)
 

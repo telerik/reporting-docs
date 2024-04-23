@@ -5,7 +5,7 @@ description: "Learn how the Native Angular Report Viewer can be implemented in a
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service
 tags: how,to,use,angular,report,viewer,with,angular,cli
 published: True
-position: 2
+position: 3
 ---
 
 # Integrating the Native Angular Report Viewer with the Reporting Service

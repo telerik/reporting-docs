@@ -13,7 +13,7 @@ previous_url: /creating-the-report, /designing-reports/
 
 To help you in creating effective reports, the __Telerik Reporting__ package provides three different implementations of a [complete graphical report designer]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}). Depending on your requirements, you can choose between a [standalone desktop application]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}), a [web report designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), or a [report designer that runs in Visual Studio]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}).
 
-This document presents some general report designing tips that you can apply regardless of which report designer you use.
+This document presents some general report designing tips that you can apply regardless of which [Report Designer](https://www.telerik.com/products/reporting/creating-reports.aspx) you use.
 
 ## Report Definition Types
 

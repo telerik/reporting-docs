@@ -13,7 +13,7 @@ previous_url: /report-viewers-overview, /embedding-reports/display-reports-in-ap
 
 Telerik Reporting provides UI components called Report Viewers that you can use to display reports in applications. The Report Viewers cover various technologies (Angular, HTML5/JS, WPF, ASP.NET, Windows Forms, etc.) and allow you to display a report document in the application's UI and to interact with it.
 
-This document provides a brief overview of the different Telerik Report Viewer flavors. If you are interested in the Report Viewer for a specific technology, follow the corresponding link to learn more.
+This document provides a brief overview of the different [Telerik Report Viewer](https://www.telerik.com/products/reporting/delivering-viewing-exporting-reports.aspx) flavors. If you are interested in the Report Viewer for a specific technology, follow the corresponding link to learn more.
 
 Telerik Reporting provides the following report viewers:
 

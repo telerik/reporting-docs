@@ -11,7 +11,7 @@ previous_url: /report-designers, /designing-reports/report-designer-tools/
 
 # Report Designer Tools Overview
 
-Use Report Designers to create Telerik Reporting report definitions. We provide three different report designers. All report authoring environments include features such as WYSIWYG report design surface, enhanced support for expressions and wizards for creating graphs, maps, crosstabs, tables, band, and label reports. Define interactive features such as parameters, bookmarks, drillthrough, and drilldown actions.
+Use [Report Designers](https://www.telerik.com/products/reporting/creating-reports.aspx) to create Telerik Reporting report definitions. We provide three different report designers. All report authoring environments include features such as WYSIWYG report design surface, enhanced support for expressions, and wizards for creating graphs, maps, crosstabs, tables, band, and label reports. Define interactive features such as parameters, bookmarks, drillthrough, and drilldown actions.
 
 This document gives a brief overview of the available Report Designers.
 

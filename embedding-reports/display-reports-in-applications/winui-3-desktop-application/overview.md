@@ -46,7 +46,7 @@ To use the WinUI report viewer, you need a `WinUI 3` desktop application. To cr
 
 ## How it works
 
-The WinUI ReportViewer control is a composite of Telerik UI for WinUI desktop controls. The viewer's functionality resides in `Telerik.ReportViewer.WinUI.dll` and the viewer's UI in `Telerik.ReportViewer.WinUI.Themes.dll`.
+The WinUI [ReportViewer](https://www.telerik.com/products/reporting/delivering-viewing-exporting-reports.aspx) control is a composite of Telerik UI for WinUI desktop controls. The viewer's functionality resides in `Telerik.ReportViewer.WinUI.dll` and the viewer's UI in `Telerik.ReportViewer.WinUI.Themes.dll`.
 
 The purpose of the WinUI ReportViewer control is to display Telerik Reports and allow the user to interact with them. Reports may be processed and rendered on the client machine when the viewer utilizes an embedded Reporting engine, or remotely, by a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) or [Teleirk Report Server](https://docs.telerik.com/report-server/introduction). The report in the viewer is rendered as standard XAML elements, as Canvas and TextBlock, through the Telerik Reporting XAML rendering mechanism, adjusted for WinUI specifics.
 

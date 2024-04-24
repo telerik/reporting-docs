@@ -1,7 +1,7 @@
 ---
-title: Introduction
+title: Introduction to Telerik Reporting by Progress
 page_title: Introduction to Telerik Reporting by Progress
-description: "Telerik Reporting is a .NET/.NET Framework-based platform enabling you to create, design, export, and integrate reports in JavaScript, MVC, WebForms, Angular, React, and Blazor web applications, as well as in WinForms, WPF, WinUI desktop projects."
+description: "Telerik Reporting is a .NET platform enabling you to create, design, and integrate reports in Blazor, Angular, ASP.NET Core, WPF, and more."
 slug: telerikreporting/welcome-to-telerik-reporting!
 tags: telerik, reporting, introduction, welcome
 published: True
@@ -11,7 +11,7 @@ previous_url: /overview, /quick-start-overview
 
 # Welcome to Telerik Reporting
 
-Progress® Telerik® Reporting is a .NET/.NET Framework [embedded reporting tool](https://www.telerik.com/products/reporting/embedded-reporting.aspx) that enables you to create, design, export, and integrate reports in cloud-based, web, and desktop applications.
+Progress® Telerik® Reporting is a [.NET Reporting](https://www.telerik.com/products/reporting.aspx) [embedding tool](https://www.telerik.com/products/reporting/embedded-reporting.aspx) that enables you to create, design, export, and integrate reports in cloud-based, web, and desktop applications.
 
 Telerik Reporting provides web and desktop report designers and services, and report viewer controls. The desktop components and the services are .NET/.NET Framework-only, whereas the HTML5-based components can be integrated into virtually any website or application.
 

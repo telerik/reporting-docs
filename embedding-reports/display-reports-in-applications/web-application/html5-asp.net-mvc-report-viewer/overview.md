@@ -11,7 +11,7 @@ previous_url: /mvc-report-viewer-extension-overview, /embedding-reports/display-
 
 # HTML5 ASP.NET MVC Report Viewer Overview
 
-The HTML5 MVC Report Viewer provides a server-side wrapper that can be used in MVC applications. The MVC wrapper is built on top of the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).
+The HTML5 MVC [Report Viewer](https://www.telerik.com/products/reporting/delivering-viewing-exporting-reports.aspx) provides a server-side wrapper that can be used in MVC applications. The MVC wrapper is built on top of the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}).
 
 The HTML5 ASP.NET MVC Report Viewer exposes all the HTML5 Report Viewer options. The MVC wrapper renders the widget with the configured options on the page.
 

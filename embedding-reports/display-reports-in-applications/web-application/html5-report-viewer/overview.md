@@ -11,7 +11,7 @@ previous_url: /html5-report-viewer, /using-reports-in-applications/display-repor
 
 # HTML5 Report Viewer Overview
 
-The HTML5 Report Viewer is a pure HTML5/JavaScript/CSS3 jQuery-based widget that enables the display of Telerik reports in an HTML page.
+The HTML5 [Report Viewer](https://www.telerik.com/products/reporting/delivering-viewing-exporting-reports.aspx) is a pure HTML5/JavaScript/CSS3 jQuery-based widget that enables the display of Telerik reports in an HTML page.
 
 The HTML5 Report Viewer renders its content through the [Reporting HTML Rendering mechanism]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).
 

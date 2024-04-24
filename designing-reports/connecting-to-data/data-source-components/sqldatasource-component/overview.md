@@ -41,6 +41,5 @@ The `SqlDataSource` component uses `ADO.NET` classes to interact with any databa
 ## Supported developer platforms
 
 * .NET Framework 4.0 and above
-* .NET Core 2.0 and above
-* .NET 5 and above
+* .NET 6 and above
 * .NET Standard 2.0 and above

@@ -103,6 +103,20 @@ The Native Angular Report Viewer is a native Angular component built with [Kendo
 	</tr>
 </table>
 
+## Missing Features
+
+The currently released version of the `Native Angular Report Viewer` component is missing the following functionalities:
+
+- Accessiblity
+- Localization
+- Send Email Dialog
+- Toolbar Reordering/Customization
+- Tooltips Customization
+- Parameter Editors Customization
+- Parameters Area Repositioning
+
+> The above functionalities will be implemented in future releases of the `Native Angular Report Viewer` and are already available in the [wrapper Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview%}) component.
+
 ## Demo
 
 A complete example with the native Angular Report Viewer can be found in the installation folder of Telerik Reporting: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\Angular\native-angular-report-viewer-example`.

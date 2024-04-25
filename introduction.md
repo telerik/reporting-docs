@@ -1,5 +1,5 @@
 ---
-title: Introduction to Telerik Reporting by Progress
+title: Introduction to Reporting
 page_title: Introduction to Telerik Reporting by Progress
 description: "Telerik Reporting is a .NET platform enabling you to create, design, and integrate reports in Blazor, Angular, ASP.NET Core, WPF, and more."
 slug: telerikreporting/welcome-to-telerik-reporting!

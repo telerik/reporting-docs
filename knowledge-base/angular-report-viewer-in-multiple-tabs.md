@@ -123,7 +123,6 @@ export class AppComponent {
     }
   }
 }
-
 ````
 
 By default, the tab content is eagerly loaded. Eagerly loaded tabs will initialize the child components but not inject them into the DOM until the tab is activated.

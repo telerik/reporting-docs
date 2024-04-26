@@ -1,12 +1,11 @@
 ---
 title:  The certificate chain was issued by an authority that is not trusted
-description: "Learn how to troubleshoot the issue where the Query Builder cannot open when using new SqlClient data provider."
+description: "Learn how to troubleshoot the issue where the Query Builder cannot open when using the new SqlClient data provider in Visual Studio Report Designer."
 type: troubleshooting
-page_title: An error occured during the login process - Authority not trusted
+page_title: An error occurred during the login process - Authority not trusted
 slug: certificate-was-issued-by-authority-not-trusted
 position: 
 tags: SqlDataSource, MSSQL Server, Microsoft.Data.SqlClient, Query Builder, Query Designer
-ticketid: 
 res_type: kb
 ---
 
@@ -27,7 +26,7 @@ res_type: kb
 
 ## Description
 
-When attempting to use the [Query Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}) in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) or in the other [Reports Designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}) when explicitly having selected the `Microsoft.Data.SqlClient` data provider, the connection fails during the login process.
+When attempting to use the [Query Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}) in the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) or in the other [Report Designers]({%slug telerikreporting/designing-reports/report-designer-tools/overview%}) when explicitly having selected the `Microsoft.Data.SqlClient` data provider, the connection fails during the login process.
 
 ## Error Message
 
@@ -39,13 +38,13 @@ In versions 4.0.0 or newer of the `Microsoft.Data.SqlClient` data provider, the 
 
 ## Solution
 
-### Short-term Solutiom
+### Short-term Solution
 
 Use`TrustServerCertificate=True` in the connection string. The SQL Server will create a self-signed certificate if you don't install one for it to use, but it won't be trusted by the caller since it's not CA-signed, unless you tell the connection string to trust any server cert by default.
 
 ### Long-term Solution
 
-Install a CA-signed from a trusted CA such as [Let's Encrypt`](https://letsencrypt.org/).
+Install a CA-signed certificate from a trusted CA such as [Let's Encrypt`](https://letsencrypt.org/).
 
 ## See Also
 

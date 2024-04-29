@@ -22,7 +22,7 @@ res_type: kb
 
 ## Description
 
-The article explains how to set the Document Title that will appear in the browser tab of the Web Page hosting the [Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) or any of its wrappers to the `DocumentName` of the Report. The referred sample project is built with the [Html5 Web Forms Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).
+The article explains how to set the [Document Title](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) that will appear in the browser tab of the Web Page hosting the [HHTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) or any of its wrappers to the `DocumentName` of the Report. 
 
 ## Solution
 
@@ -31,12 +31,21 @@ The article explains how to set the Document Title that will appear in the brows
 2. In the event handler of `renderingEnd` the name of the Report can be taken from `args.bookmarkNodes` and assigned to the title of the document:
 
 	````JavaScript
-function OnRenderingEnd(e, args) {
-		document.title = args.bookmarkNodes[0].text;
-	}
+$("#reportViewer1")
+                .telerik_ReportViewer({
+                    serviceUrl: "https://demos.telerik.com/reporting/api/reports/",
+                    reportSource: {
+                        report: "ReportBook.trbp",
+                    },
+                    renderingEnd: function (e, args) {
+                            document.title = args.bookmarkNodes[0].text;
+                    }
+                });
 ````
 
 
-3. The `Document Map` may be hidden in the viewer's initialization by setting `DocumentMapVisible` to `false`.
+3. The `Document Map` may be hidden in the viewer's initialization by setting the `documentMapVisible` property to `false` - [Initializing the HTML5 Report Viewer]({&slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
 
-A sample WebForms project in C# can be found in our samples GitHub repository - [ReportNameAsWebPageTitle](https://github.com/telerik/reporting-samples/tree/master/ReportNameAsWebPageTitle).
+## Demo Project
+
+A sample ASP.NET Core project using the `HTML5 Report Viewer` can be found in our samples GitHub repository - [ReportNameAsWebPageTitle](https://github.com/telerik/reporting-samples/tree/master/ReportNameAsWebPageTitle).

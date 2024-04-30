@@ -22,21 +22,30 @@ res_type: kb
 
 ## Description
 
-The article explains how to set the Document Title that will appear in the browser tab of the Web Page hosting the [Html5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) or any of its wrappers to the `DocumentName` of the Report. The referred sample project is built with the [Html5 Web Forms Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}).
+The article explains how to set the [Document Title](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) that will appear in the browser tab of the Web Page hosting the [HHTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) or any of its wrappers to the `DocumentName` of the Report. 
 
 ## Solution
 
 1. If the Report already has [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%}) go to the next step. Otherwise, in the report definition set the [DocumentMapText](/api/telerik.reporting.reportitembase#collapsible-Telerik_Reporting_ReportItemBase_DocumentMapText) property of a report item (e.g. _TextBox_) to a valid value. The `DocumentMapText` will introduce `Document Map` in the Report. This way the `DocumentName` of the Report would be included in the `bookmarkNodes` collection of the `args` object of the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) event of the viewer.
 
-2. In the event handler of `renderingEnd` the name of the Report can be taken from `args.bookmarkNodes` and assigned to the title of the document:
+1. In the event handler of `renderingEnd` the name of the Report can be taken from `args.bookmarkNodes` and assigned to the title of the document:
 
 	````JavaScript
-function OnRenderingEnd(e, args) {
-		document.title = args.bookmarkNodes[0].text;
-	}
+$("#reportViewer1")
+			.telerik_ReportViewer({
+				serviceUrl: "https://demos.telerik.com/reporting/api/reports/",
+				reportSource: {
+					report: "ReportBook.trbp",
+				},
+				renderingEnd: function (e, args) {
+						document.title = args.bookmarkNodes[0].text;
+				}
+			});
 ````
 
 
-3. The `Document Map` may be hidden in the viewer's initialization by setting `DocumentMapVisible` to `false`.
+1. The `Document Map` may be hidden in the viewer's initialization by setting the `documentMapVisible` property to `false` - [Initializing the HTML5 Report Viewer]({&slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
 
-A sample WebForms project in C# can be found in our samples GitHub repository - [ReportNameAsWebPageTitle](https://github.com/telerik/reporting-samples/tree/master/ReportNameAsWebPageTitle).
+## Demo Project
+
+A sample ASP.NET Core project using the `HTML5 Report Viewer` can be found in our samples GitHub repository - [ReportNameAsWebPageTitle](https://github.com/telerik/reporting-samples/tree/master/ReportNameAsWebPageTitle).

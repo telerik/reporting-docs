@@ -30,14 +30,14 @@ res_type: kb
 
 The Telerik [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML5/JavaScript/CSS3 jQuery-based widget that allows integration into your web applications built on virtually any JavaScript framework.
 
-With it, users can create or modify existing declarative (TRDX, TRDP and TRBP) reports directly from inside the React application. 
-The solution we are about to demonstrate is a very basic approach to create a new React application, include the web report designer's dependencies and lastly, display the web report designer.
+With it, users can create or modify existing declarative (TRDX, TRDP, and TRBP) reports directly from inside the React application. 
+The solution we are about to demonstrate is a very basic approach to creating a new React application, including the web report designer's dependencies and displaying the web report designer.
 
 ## Solution
 
 The following guide assumes previous knowledge of React:
 
-1. Start by creating a new React application using following CLI commands:
+1. Start by creating a new React application using the following CLI commands:
 
 	````
 npx create-react-app my-app
@@ -48,20 +48,20 @@ npx create-react-app my-app
 
 	>note You’ll need to have **Node >= 6** and **npm >= 5.2** on your machine.
 
-2. Create a new .NET or .NET Core Web Application that will host the Rest Service for the web report desiger.  The required steps depending on the framework can be found in:
+2. Create a new .NET or .NET Core Web Application that will host the Rest Service for the web report designer. The required steps depending on the framework can be found in:
 
 	- [Setting up the Web Report Designer in .NET and .NET Core 3.1 applications]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%})
 
 	- [How to set up the Web Report Designer service in .NET Framework application]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%})
 
-	You can also find a demo projects with the .NET Core imeplementation in the installation folder of `Telerik Reporting` -> `Examples` -> `CSharp` -> `.NET 6` -> `ReportingRestServiceCorsDemo` subfolder.
+	You can also find demo projects with the .NET Core implementation in the installation folder of `Telerik Reporting` -> `Examples` -> `CSharp` -> `.NET 6` -> `ReportingRestServiceCorsDemo` subfolder.
 
 	For this example, we will use the REST service from our [online demos](https://demos.telerik.com/reporting).
 
-4. The deisner depends on **jQuery**. Add a CDN link to jQuery library in `public/index.html`:
+4. The designer depends on **jQuery**. Add a CDN link to the jQuery library in `public/index.html`:
 
 	````HTML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 ````
 
 
@@ -138,7 +138,7 @@ npm run start
 
 If you do not wish to load the scripts for the designer and viewer in the `index.html` since it would increase the initial load time, the scripts may be loaded in the component itself. In this scenario, steps 3 through 5 can be skipped.
 
-To load the `jquery` and `kendo` subsets in the component where the Web Report Designer will be used, the following packages must be installed:
+To load the `jQuery` and `Kendo` subsets in the component where the Web Report Designer will be used, the following packages must be installed:
 
 ````powershell
 > npm install jquery

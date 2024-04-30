@@ -28,23 +28,23 @@ The article explains how to set the [Document Title](https://developer.mozilla.o
 
 1. If the Report already has [Document Map]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/document-map/overview%}) go to the next step. Otherwise, in the report definition set the [DocumentMapText](/api/telerik.reporting.reportitembase#collapsible-Telerik_Reporting_ReportItemBase_DocumentMapText) property of a report item (e.g. _TextBox_) to a valid value. The `DocumentMapText` will introduce `Document Map` in the Report. This way the `DocumentName` of the Report would be included in the `bookmarkNodes` collection of the `args` object of the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) event of the viewer.
 
-2. In the event handler of `renderingEnd` the name of the Report can be taken from `args.bookmarkNodes` and assigned to the title of the document:
+1. In the event handler of `renderingEnd` the name of the Report can be taken from `args.bookmarkNodes` and assigned to the title of the document:
 
 	````JavaScript
 $("#reportViewer1")
-                .telerik_ReportViewer({
-                    serviceUrl: "https://demos.telerik.com/reporting/api/reports/",
-                    reportSource: {
-                        report: "ReportBook.trbp",
-                    },
-                    renderingEnd: function (e, args) {
-                            document.title = args.bookmarkNodes[0].text;
-                    }
-                });
+			.telerik_ReportViewer({
+				serviceUrl: "https://demos.telerik.com/reporting/api/reports/",
+				reportSource: {
+					report: "ReportBook.trbp",
+				},
+				renderingEnd: function (e, args) {
+						document.title = args.bookmarkNodes[0].text;
+				}
+			});
 ````
 
 
-3. The `Document Map` may be hidden in the viewer's initialization by setting the `documentMapVisible` property to `false` - [Initializing the HTML5 Report Viewer]({&slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
+1. The `Document Map` may be hidden in the viewer's initialization by setting the `documentMapVisible` property to `false` - [Initializing the HTML5 Report Viewer]({&slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
 
 ## Demo Project
 

@@ -1,10 +1,9 @@
 ---
-title: Cannot access the Reporting REST service
+title: Cannot Access the Reporting REST Service
 description: "Learn why you may see the following error message in the report viewer 'Cannot access the Reporting REST service. (serviceUrl = '/api/reports'). Make sure the service address is correct and enable CORS if needed (https://enable-cors.org).'"
 type: troubleshooting
 page_title: Cannot access the Reporting REST service. Enable CORS if needed.
 slug: cannot-access-the-reporting-rest-service
-position: 
 tags: HTML5ReportViewer, RestService
 ticketid: 1347340
 res_type: kb
@@ -57,7 +56,7 @@ There are two main reasons for this error. In order to identify that, check the 
 
 This will let you check requests to the Reporting REST service and whether the URLs are correct (if relative paths are resolved correctly). Relative paths may need adjustment depending on how the application is hosted.
 
-If the problem persists, record a log with **Fiddler Jam** while running the application and share the log as a link with us in a support ticket - see [First Steps with the Fiddler Jam Chrome Extension](https://docs.telerik.com/fiddler-jam/fj-extension/get-started-extension).
+If the problem persists, [record a SAZ file](https://docs.telerik.com/fiddler/save-and-load-traffic/tasks/createsaz) with [Fiddler](https://www.telerik.com/download/fiddler) while running the application and share the log as a link with us in a support ticket.
 
 To help troubleshoot the issue, you may also record a trace listener log:
 

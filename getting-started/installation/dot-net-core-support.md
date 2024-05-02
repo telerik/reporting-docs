@@ -123,7 +123,7 @@ The following JSON configuration snippet hides the Image rendering extension fro
 }
 ````
 
-On the Linux machine, you also need to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) configuration element.
+On the Linux machine, you need also to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) configuration element.
 
 ## Deploying on macOS
 
@@ -188,15 +188,15 @@ Sample projects are available in the subfolders with the corresponding framework
 
 ### Docker Samples
 
-With [2024 Q2 (18.1.24.515)] we started distributing sample Docker files for deploying the Telerik Reporting CSharp .NET Web Examples with Skia Sharp Graphics Engine on Linux Docker containers. The distributed Docker files should be used to build the Docker image from the terminal. They are unsuitable for use from Visual Studio due to the specific folder structure of the Reporting examples. The Visual Studio projects use by default TRDP reports deployed in a folder that cannot be accessed by the Docker file when run from the Visual Studio.
+With [2024 Q2 (18.1.24.515)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q2-(18-1-24-515)) we started distributing sample Docker files for deploying the Telerik Reporting Web Examples for .NET with Skia Sharp Graphics Engine on Linux Docker containers. The distributed Docker files should be used to build the Docker image from the terminal. They are unsuitable for use from Visual Studio due to the specific folder structure of the Reporting examples. The Visual Studio projects use by default TRDP reports deployed in a folder that cannot be accessed by the Docker file when run from the Visual Studio.
 
-The Docker files may be found in the folder of the corresponding project. For example, the `Docklerfile` for the .NET 8 Teleirk Reporting REST Service project with enabled CORS may be found by default in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 8\ReportingRestServiceCorsDemo`. The Docklerfile starts with instructions for building the image and running the Docker container. You need to replace the placeholders in the curly brackets with the corresponding details: __TelerikNuGetApiKey__, __Telerik Reporting Installation Folder__, and __Connection String to AdventureWorks Database Accessible From the Docker Container__. Here is a sample content of the file. The deployed Reporting REST Service with enabled CORS will run on `localhost:4040`:
+The Docker files may be found in the folder of the corresponding project. For example, the `Docklerfile` for the .NET 8 Telerik Reporting REST Service project with enabled CORS may be found by default in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 8\ReportingRestServiceCorsDemo`. The Docklerfile starts with instructions for building the image and running the Docker container. Replace the placeholders in the curly brackets with the corresponding details: __TelerikNuGetApiKey__, __Telerik Reporting Installation Folder__, and __Connection String to AdventureWorks Database Accessible From the Docker Container__. Here is a sample content of the file. The deployed Reporting REST Service project with enabled CORS will run on `localhost:4040` in the browser:
 
 ````
-# command to BUILD docker IMAGE from the Windows Termianal:
+# command to BUILD docker IMAGE from the Windows Terminal:
 # docker image build -f "{Replace With Installation Folder}\Examples\CSharp\.NET 8\ReportingRestServiceCorsDemo\Dockerfile" -t net8reportingrestservicecorsdemo --build-arg TelerikNugetServerApiKey={Replace With Your TelerikNuGetApiKey} "{Replace With Installation Folder}"
 
-# command to RUN docker CONTAINER from the Windows Termianal:
+# command to RUN docker CONTAINER from the Windows Terminal:
 # docker run -e ConnectionStrings__Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__connectionString="{Replace With Connection String to AdventureWorks Database Accessible From the Docker Container}" -it -p 4040:8080 net8reportingrestservicecorsdemo
 
 

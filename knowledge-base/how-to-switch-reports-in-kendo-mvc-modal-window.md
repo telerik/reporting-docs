@@ -1,8 +1,8 @@
 ---
-title: Switch Reports Displayed in Kendo MVC Modal Window
-description: How to switch reports effectively in Html5 MVC Report Viewer hosted in Kendo MVC modal window
+title: Switch Reports Displayed in Kendo Modal Window
+description: "Learn how to switch reports effectively in HTML5-based Report Viewers rendered within a Kendo Modal window."
 type: how-to
-page_title: Display different reports in Kendo modal window
+page_title: Render different reports in Kendo Modal Window
 slug: how-to-switch-reports-in-kendo-mvc-modal-window
 position: 
 tags: 
@@ -22,52 +22,90 @@ res_type: kb
 
 
 ## Description
-In many scenarios, it is necessary to display different reports in modal windows. For example, a different report should pop-up depending on the button clicked by the user. Here we explain how this may be achieved effectively with Telerik Reporting and [Kendo MVC modal window](https://docs.telerik.com/aspnet-mvc/helpers/layout/window/overview).
+In many scenarios, it is necessary to display different reports in modal windows. For example, a different report should pop up depending on a button clicked by the user. In this article, we will demonstrate how this may be achieved effectively with Telerik Reporting and the [Kendo UI for jQuery Window](https://demos.telerik.com/kendo-ui/window/index) widget.
+
+In this example, the button for switching the report will be a custom action on the `Kendo Window` itself - [Customizing Actions](https://demos.telerik.com/kendo-ui/window/actions).
 
 ## Solution
-Our recommendation is to create the [Html5 MVC Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%}) once, for example, through a call to the corresponding MVC action, and then replace only the viewer's [reportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}). You may use the 'open' event of the Kendo modal window. This way the action will be hit only once, upon initializing the Kendo window.
-Here is sample code for the 'open' event of the modal window:
-```JavaScript
-<script type="text/javascript">
-    const FirstReport = "FirstReport.trdp";
-    const SecondReport = "SecondReport.trdp";
 
-    var showFirst = false;
+1. Create the element that is to be used for the initialization of the window, and insert in it the element that will be used for initializing the HTML5 Report Viewer.
+   
+	````HTML
+ <div id="winReports">
+        <div id="reportViewer1">
+            Loading...
+        </div>
+    </div>
+````
 
-    function Reports_onWindowOpenNew(e) {
-        var viewer = $("#reportViewer1").data("telerik_ReportViewer");
-        if (viewer) {
-            var reportname = SecondReport;
-            if (showFirst) {
-                reportname = FirstReport;
-            }
 
-            showFirst = !showFirst;
-            viewer.reportSource({
-                report: reportname,
-                parameters: {}
+1. Create the function for switching the reports - `switchReport` and the function that will initialize the Kendo Window widget - `showWindow`:
+
+	````JavaScript
+ function switchReport() {
+            var viewer = $("#reportViewer1").data("telerik_ReportViewer");
+
+                showFirst = !showFirst;
+                viewer.reportSource({
+                    report: showFirst ? FirstReport : SecondReport,
+                    parameters: {}
+                });
+        }
+
+        function showWindow() {
+            var windowOptions = {
+                actions: [ "Custom", "Close"],
+                title: {
+                    text: "Reports",
+                },
+                modal: true,
+                draggable: true,
+                visible: false,
+                width: "1200px",
+                open: switchReport
+            };
+
+            const kendoWindow = $("#winReports").kendoWindow(windowOptions).data("kendoWindow");
+
+            kendoWindow.center(true).open();
+
+            // custom action for report switching
+            var customAction = kendoWindow.wrapper.find(".k-window-actions [aria-label='Custom']");
+
+            // edit custom button look
+            customAction.find("span").removeClass().text("Switch Report");
+
+            customAction.click(function (e) {
+                e.preventDefault();
+                switchReport();
             });
         }
-    }
-</script>
-```
-This code will switch between two reports on each opening of the Kendo modal window.
+ ````
 
-The set-up of the modal window may look like (note the [LoadContentFrom](https://docs.telerik.com/aspnet-mvc/helpers/layout/window/content) option) :
-```JavaScript
-@(Html.Kendo().Window()
-            .Name("winReports")
-            .Title("Reports")
-            .Draggable()
-            .Actions(actions => actions.Close())
-            .Events(e => e.Open("Reports_onWindowOpenNew"))
-            .Modal(true)
-            .LoadContentFrom("DisplayReportViewer", "Home")
-            .Visible(false)
-            .Width(1000)
-            .HtmlAttributes(new { style = "margin: 3px" })
-)
-```
-'DisplayReportViewer' is the action from the 'Home' controller that initializes the viewer upon Kendo modal window creation. This is done only once, on the load of the page.
 
-The sample project can be found in [our GitHub demos repository](https://github.com/telerik/reporting-samples/tree/master/SwitchReportsInMvcKendoModal).
+1. When the document is ready - [$( document ).ready()](https://learn.jquery.com/using-jquery-core/document-ready/), initialize an empty report viewer and the Kendo Window, as well as some globally scope variables to keep the state of the report viewer(which report is currently loaded):
+
+	````HTML
+ <script type="text/javascript">
+        const FirstReport = "Barcodes Report.trdx";
+        const SecondReport = "Dashboard.trdx";
+        var showFirst = true;
+
+        $(document).ready(function () {
+
+            // init empty report viewer
+            $("#reportViewer1")
+                .telerik_ReportViewer({
+                    serviceUrl: "https://demos.telerik.com/reporting/api/reports/",
+                });
+
+            // init and open kendo window
+            showWindow()
+        });
+    </script>
+````
+
+
+## Sample Project
+
+The sample project can be found in [our GitHub demos repository - SwitchReportsInKendoModal](https://github.com/telerik/reporting-samples/tree/master/SwitchReportsInMvcKendoModal).

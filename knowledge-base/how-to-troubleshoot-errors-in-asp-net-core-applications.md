@@ -1,16 +1,16 @@
 ---
-title: Troubleshooting reporting implementation into ASP.NET Core application
-description: How to troubleshoot errors in ASP.NET Core applications when crashing
+title: Troubleshooting Reporting Implementation Into ASP.NET Core Application
+description: "Learn how to troubleshoot errors in ASP.NET Core applications when crashing."
 type: how-to
-page_title: How to troubleshoot errors in ASP.NET Core projects 
-slug: how-to-troubleshoot-errors-in-asp-net-core-applications 
-position: 
+page_title: How to troubleshoot errors in ASP.NET Core projects
+slug: how-to-troubleshoot-errors-in-asp-net-core-applications
 tags: ASP.NET Core, Configuration
 ticketid: 1383767
 res_type: kb
 ---
 
 ## Environment
+
 <table>
 	<tr>
 		<td>Product</td>
@@ -28,33 +28,31 @@ res_type: kb
 
 
 ## Description
-If you are experiencing problems while working with Telerik Reporting, the right way to determine what have caused them is described in the following steps.
+
+If you are experiencing problems while working with Telerik Reporting, the right way to determine what has caused them is described in the following steps.
 
 ## Solution
-- Upgrade to the latest version of the product in case the reason for the crash has been fixed.
 
-- Try the reproduce the crash on another machine to exclude machine specific problems e.g., corrupted Telerik Reporting installation.
+* Upgrade to the latest version of the product in case the reason for the crash has been fixed.
+* Try reproducing the crash on another machine to exclude machine-specific problems, for example, corrupted Telerik Reporting installation.
+* Provide us with a log file containing detailed information about the error. To create the log file, go to the project that hosts the [Rest Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) and add the below settings in the `Program.cs` file in the `Main` method:
 
-- Provide us with a log file containing detailed information about the error. To create the log file, go to the project that hosts the [Rest Service]({% slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview %}) and add the below settings in the `Program.cs` file in the `Main` method:
-
-
-````CSharp
+	````CSharp
 public static void Main(string[] args)
-{
-     EnableTracing();
-     BuildWebHost(args).Run();
-}
+	{
+		EnableTracing();
+		BuildWebHost(args).Run();
+	}
 
-static void EnableTracing()
-{
-     System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.TextWriterTraceListener(File.CreateText("log.txt")));
-     System.Diagnostics.Trace.AutoFlush = true;
-}
+	static void EnableTracing()
+	{
+		System.Diagnostics.Trace.Listeners.Add(new System.Diagnostics.TextWriterTraceListener(File.CreateText("log.txt")));
+		System.Diagnostics.Trace.AutoFlush = true;
+	}
 ````
 
+	Upon running the project and reproducing the error, it will generate an `aspnetcoredemo.log` file at the application root.
 
-Upon running the project and reproducing the error, it will be generated an *aspnetcoredemo.log* file at the root of the application.
+* Another recommended troubleshooting approach is using [Fiddler](https://www.telerik.com/fiddler/fiddler-classic) or another proxy tool to check the requests, responses, and statuses. Please, create a SAZ file (see [Create a Session Archive Zip (SAZ) Traffic archive](https://docs.telerik.com/fiddler/save-and-load-traffic/tasks/createsaz)).
 
-- Other recommended troubleshooting approach is to use [Fiddler Jam](https://www.telerik.com/fiddler-jam) or other proxy tool to check the requests, their responses and statuses. Please, create Fiddler trace (see [How to Record a Log with the Fiddler Jam Extension](https://www.youtube.com/watch?v=AegKWavRSv0)).
-
-> After you generate the log files from the above steps, archive them and attach them to a support ticket. Include the steps which have to be followed in order to reproduce the issue.
+> After you generate the log files from the above steps, archive them and attach them to a support ticket. Include the steps which have to be followed to reproduce the issue.

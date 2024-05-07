@@ -24,7 +24,7 @@ res_type: kb
 
 ## Description
 
-When you add a [List data item]({%slug table_template_items%}#list) in the report designer, it contains only a detail group with a Panel inside:
+When you add a [List data item]({%slug table_template_items%}#list) in the report designer, it contains only a detail group with a [Panel]({%slug telerikreporting/designing-reports/report-structure/panel%}) inside:
 
 ![List item when added to a new report in the Standalone Report Designer.](images/AddList.png)
 
@@ -36,7 +36,7 @@ The List is a variation of the Table as explained in the article [Template Varia
 
 By default, the List lacks the Table Header, so we need to add it to use the property and display a header on every page. Here are the necessary steps:
 
-1. Insert a Row to the List:
+1. Insert a Row into the List:
 
 	* Right-click over the List to open the [Context Menu]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/context-menu%})
 	* Select `Insert Row` -> `Outside Group - Above`

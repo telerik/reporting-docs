@@ -26,7 +26,7 @@ res_type: kb
 
 When you add a [List data item]({%slug table_template_items%}#list) in the report designer, it contains only a detail group with a Panel inside:
 
-![List item when added to a new report in the Standalone Report Designer.](images\AddList.png)
+![List item when added to a new report in the Standalone Report Designer.](images/AddList.png)
 
 In many scenarios, you may need to add and display Headers in the List that repeat on every page.
 
@@ -59,4 +59,4 @@ By default, the List lacks the Table Header, so we need to add it to use the pro
 
 	The wizard adds a new Table Header to the List. This is the header that respects the `ColumnHeadersPrintOnEveryPage` property.
 
-1. (optional) Delete the row we added initially, if you don't need it
+1. (optional) Delete the row we added initially if you don't need it

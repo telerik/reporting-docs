@@ -26,9 +26,9 @@ res_type: kb
 
 When you add a [List data item]({%slug table_template_items%}#list) in the report designer, it contains only a detail group with a Panel inside:
 
-![List item when added to a new report in the Standalone Report Designer.]()
+![List item when added to a new report in the Standalone Report Designer.](images\AddList.png)
 
-In many scenarios you may need to add and display Headers in the List that repeat on every page.
+In many scenarios, you may need to add and display Headers in the List that repeat on every page.
 
 ## Solution
 

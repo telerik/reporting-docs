@@ -45,7 +45,7 @@ By default, the List lacks the Table Header, so we need to add it to use the pro
 	
 	The new row is a header for your List. You may display aggregated values from the DataSource of the List like Totals, Averages, etc. This row cannot be displayed on every page.
 
-1. Add a Parent Group to the group defined by the just inserted row:
+1. Add a Parent Group to the Column group defined by the just inserted row:
 
 	* Select the List and go to the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%})
 	* Right-click over the column group to open the Context Menu
@@ -60,3 +60,5 @@ By default, the List lacks the Table Header, so we need to add it to use the pro
 	The wizard adds a new Table Header to the List. This is the header that respects the `ColumnHeadersPrintOnEveryPage` property.
 
 1. (optional) Delete the row we added initially if you don't need it
+
+The same steps may be adapted to add Table Row Headers printable on every page. You need to insert a Column instead of a Row in the first step and Add a Parent Group to the created Row Group associated with the new column in the second.

@@ -10,8 +10,6 @@ previous_url: /getting-started/installation/troubleshooting-nuget
 res_type: kb
 ---
 
-# Troubleshooting Issues with Telerik NuGet Packages
-
 This article provides solutions to common issues that you may observe when working with the Telerik NuGet server and the NuGet packages that it provides.
 
 ## Networking Problems

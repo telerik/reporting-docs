@@ -32,7 +32,7 @@ In many scenarios, you may need to add and display Headers in the List that repe
 
 ## Solution
 
-The List is a variation of the Table as explained in the article [Template Variations of the Table Report Item]({%slug table_template_items%}) and exposes the property [ColumnHeadersPrintOnEveryPage](/api/telerik.reporting.table#Telerik_Reporting_Table_ColumnHeadersPrintOnEveryPage). The property lets you print the Table Header on every page where the table/list appears.
+The List is a variation of the Table as explained in the article [Template Variations of the Table Report Item]({%slug table_template_items%}) and exposes the property [ColumnHeadersPrintOnEveryPage](/api/telerik.reporting.table#Telerik_Reporting_Table_ColumnHeadersPrintOnEveryPage). The property lets you print the Table Header on every page where the table/list appears.
 
 By default, the List lacks the Table Header, so we must add it to use the property and display a header on every page. Here are the necessary steps:
 

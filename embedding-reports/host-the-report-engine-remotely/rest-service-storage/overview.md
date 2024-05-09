@@ -41,7 +41,7 @@ Let's overview the relation between the clients' assets. Each client holds 'refr
 
 The report 'instance' will remain when the client that requested it expires if a second viewer has requested a report document based on the same report instance.
 
-The report 'document' may remain although its requester has expired if the `ReportSharingTimeout` has a positive value (the default is 0). For example, when two clients request the same report with the same parameter values and states of its actions, the second client will reuse (in the time frame determined by the ReportSharingTimeout) the document created upon the first client request even if the latter has expired. Therefore, the corresponding 'document' remains referenced by the second client and doesn't expire with the first one. The corresponding 'instance' also remains as the unexpired 'document' references it.
+The report 'document' may remain although its requester has expired if the `ReportSharingTimeout` has a positive value (the default is _0_). For example, when two clients request the same report with the same parameter values and states of its actions, the second client will reuse (in the time frame determined by the `ReportSharingTimeout`) the document created upon the first client request even if the latter has expired. Therefore, the corresponding 'document' remains referenced by the second client and doesn't expire with the first one. The corresponding 'instance' also remains as the unexpired 'document' references it.
 
 ## See Also
 

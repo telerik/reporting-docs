@@ -68,7 +68,6 @@ The Native Blazor Report Viewer is a native Blazor component that can be used in
 The current release of the Native Blazor Report Viewer component is missing the following functionalities:
 
 - Accessibility
-- Event Binding
 
 > The above functionalities will be implemented in future releases of the Native Blazor Report Viewer
 

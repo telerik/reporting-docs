@@ -73,6 +73,9 @@ When at least one visible report parameter has the _AutoRefresh_ property turned
 
 For more details, visit the [Report Parameters section of the HTML5 Viewer Overview article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#report-parameters).
 
+## Localization
+
+The Angular Report Viewer may be localized with the mechanism provided by the _HTML5 Report Viewer_ that it wraps. Details may be found in the dedicated article [Angular Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization%}).
 
 ## See Also
 

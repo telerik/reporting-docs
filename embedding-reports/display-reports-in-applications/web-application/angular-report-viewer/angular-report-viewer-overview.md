@@ -1,6 +1,6 @@
 ---
 title: Overview
-page_title: Integrating the Angular Report Viewer
+page_title: Angular Report Viewer Integration - Telerik Reporting
 description: "Learn about the requirements of the Angular Report Viewer, what module loaders can be used, and what are the supported browsers."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview
 tags: angular,report,viewer,overview

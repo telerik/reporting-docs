@@ -47,6 +47,16 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 	+ [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or
 	+ [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
+## Browser Support
+
+The Angular viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), thus the client browser should conform to the HTML5 Report Viewer [Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#browser-support).
+
+## Types of Reports
+
+The Angular Report Viewer lets you display both `declarative` and `type` [report definitions]({%slug on-telerik-reporting%)#report-definition). All report definitions should be accessible server-side by the Reporting REST Service.
+
+Report definitions created in run-time, fetched from custom storages, etc. may also be displayed in the viewer. This requires a [Custom ReportSource Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) associating the [client-side ReportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()%}) Report property with the [server-side ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources) passed to the Reporting engine.
+
 ## Preview, Export, Print, and Share Reports
 
 The Angular Report Viewer lets your users Preview, Export, and Print their reports from your Angular Reporting application. The functionalities are triggered from the corresponding [Toolbar Menu buttons]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#toolbar).
@@ -63,9 +73,6 @@ When at least one visible report parameter has the _AutoRefresh_ property turned
 
 For more details, visit the [Report Parameters section of the HTML5 Viewer Overview article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#report-parameters).
 
-## Browser Support
-
-The Angular viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), thus the client browser should conform to the HTML5 Report Viewer [Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#browser-support).
 
 ## See Also
 

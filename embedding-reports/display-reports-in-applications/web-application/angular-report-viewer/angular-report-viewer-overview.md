@@ -53,6 +53,16 @@ The Angular Report Viewer lets your users Preview, Export, and Print their repor
 
 The [Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%}) option lets you share your report documents with anyone.
 
+## Report Parameters
+
+The parameters pane provides an intuitive UI for user input. The HTML5-based Angular Report Viewers uses [Kendo UI widgets](https://www.telerik.com/kendo-ui) for its default parameter editors, creating a suitable editor UI based on the type of the parameter.
+
+The parameter area is shown when at least one [report parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) has its _Visible_ property set to _True_. The parameter layout on the parameter area is formatted automatically. The order is determined by the order in which parameters appear in the [ReportParameters collection editor]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/reportparameter-collection-editor%}).
+
+When at least one visible report parameter has the _AutoRefresh_ property turned off a __Preview__ button appears. In this case, to preview the report, the end user should click the _Preview_ button. If all parameters have default values, the report runs automatically on the first view. You can show or hide the parameters area from the __Parameters__ button in the report viewer’s toolbar.
+
+For more details, visit the [Report Parameters section of the HTML5 Viewer Overview article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#report-parameters).
+
 ## Browser Support
 
 The Angular viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), thus the client browser should conform to the HTML5 Report Viewer [Browser Support]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#browser-support).

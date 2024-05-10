@@ -13,7 +13,7 @@ previous_url: /angular-report-viewer, /using-reports-in-applications/display-rep
 
 > The current Angular Report Viewer version is `{{site.spaviewerversion}}` and should be used with `Reporting REST Service {{site.buildversion}}` or `Telerik Report Server {{site.reportserverversion}}`.
 
-Integrate the Angular Report Viewer component in your Angular applications regardless of the module loader that you use (`WebPack` or `SystemJS`).
+Integrate the Angular Report Viewer component in your Angular Reporting applications regardless of the module loader that you use (`WebPack` or `SystemJS`).
 
 >note Check out also the [Native Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) built on the top of Telerik UI for Angular components.
 
@@ -21,7 +21,7 @@ The Angular component is built on top of the [HTML5 Report Viewer]({%slug teleri
 
 ## Requirements
 
-To successfully integrate the Angular Report Viewer component, ensure the following:
+To successfully integrate the Angular Report Viewer component, ensure the following are fullfilled in your Angular Reporting application:
 
 1. Required Application Version:
 
@@ -46,6 +46,12 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 	+ [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or
 	+ [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
+
+## Preview, Export, Print, and Share Reports
+
+The Angular Report Viewer lets your users Preview, Export, and Print their reports from your Angular Reporting application. The functionalities are triggered from the corresponding [Toolbar Menu buttons]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}#toolbar).
+
+The [Send Mail Message]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%}) option lets you share your report documents with anyone.
 
 ## Browser Support
 

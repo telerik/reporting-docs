@@ -77,6 +77,15 @@ For more details, visit the [Report Parameters section of the HTML5 Viewer Overv
 
 The Angular Report Viewer may be localized with the mechanism provided by the _HTML5 Report Viewer_ that it wraps. Details may be found in the dedicated article [Angular Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization%}).
 
+## API
+
+The Angular Report Viewer exposes the following client API:
+
+* [Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/options%})
+* [Properties]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/properties%})
+* [Methods]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/methods%})
+* [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/api-reference/events%})
+
 ## See Also
 
 * [How to Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})

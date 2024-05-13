@@ -65,11 +65,9 @@ The Native Blazor Report Viewer is a native Blazor component that can be used in
 
 ## Comparison with Blazor Html5 Wrapper Report Viewer
 
-The current release of the Native Blazor Report Viewer component is missing the following functionalities:
+The current release of the Native Blazor Report Viewer component is missing only the `Accessibility` functionality which is present in its [`Blazor Wrapper Report Viewer`]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) counterpart.
 
-- Accessibility
-
-> The above functionalities will be implemented in future releases of the Native Blazor Report Viewer
+> The above functionality will be added in a future release of the Native Blazor Report Viewer.
 
 ## Demo
 

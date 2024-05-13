@@ -15,13 +15,13 @@ previous_url: /telerik-reporting-rest-service-web-api-system-requirements,/embed
 1. Telerik Reporting ASP.NET Web API service implementation requires the following ASP.NET and third-party assemblies.
 
 	+ [Microsoft ASP.NET](https://learn.microsoft.com/en-us/aspnet/overview) 4.0
-	+ System.Web.dll (4.0.0.0)
-	+ System.Net.Http.dll (2.0.0.0)
-	+ System.Net.Http.Formatting.dll (4.0.0.0)
-	+ [Web API](https://learn.microsoft.com/en-us/aspnet/web-api/) 4.0.30506
-	+ System.Web.Http.dll (4.0.0.0)
-	+ System.Web.Http.WebHost.dll (4.0.0.0) required for hosting in IIS
-	+ System.Web.Http.SelfHost.dll (4.0.0.0) required for SelHosting
+		+ System.Web.dll (4.0.0.0)
+		+ System.Net.Http.dll (4.0.0.0)
+		+ System.Net.Http.Formatting.dll (4.0.0.0)
+	+ [Microsoft.AspNet.WebApi](https://www.nuget.org/packages/Microsoft.AspNet.WebApi/4.0.30506) 4.0.30506
+		+ System.Web.Http.dll (4.0.0.0)
+		+ System.Web.Http.WebHost.dll (4.0.0.0) required for hosting in IIS
+		+ System.Web.Http.SelfHost.dll (4.0.0.0) required for SelHosting
 	+ [Newtonsoft.Json.dll](https://www.newtonsoft.com/json) 13.0.0.0 (latest available via NuGet is recommended) You can use a newer WebAPI version by updating the corresponding (Microsoft.AspNet.WebApi.WebHost and Microsoft.AspNet.WebApi.SelfHost) NuGet packages and applying the following bindingRedirects to your application configuration file. Just replace 5.1.0.0 with the exact version:
 
 		````XML

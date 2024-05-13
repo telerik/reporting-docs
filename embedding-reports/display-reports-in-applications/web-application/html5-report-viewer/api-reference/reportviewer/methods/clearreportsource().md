@@ -11,7 +11,7 @@ previous_url: /html5-report-viewer-reportviewer-methods-clearreportsource
 
 # The `clearReportSource()` method of the HTML5 Report Viewer
 
-Clears the current reportSource from the viewer internal state and from its persisted session in the browser. Called in order to force the viewer to respect the newly set reportSource on a server postback.
+Clears the current reportSource from the viewer's internal state and its persisted session in the browser. Called in order to force the viewer to respect the newly set reportSource on a server postback.
 
 Returns: a reference for the reportViewer object.
 
@@ -27,3 +27,7 @@ $(document).ready(function () {
 });
 ````
 
+
+## See Also
+
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

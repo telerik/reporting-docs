@@ -198,5 +198,6 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 ## See Also
 
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Localizing Reports]({%slug telerikreporting/designing-reports/localizing-reports%})
 * [Localizing the Angular Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/customizing/localization%})

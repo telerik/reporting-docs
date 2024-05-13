@@ -41,7 +41,7 @@ $("#reportViewer1").telerik_ReportViewer({
 ````
 
 
-The button above will simply print the report currently displayed. Elements do not need to exist prior to the viewer initialization - they can be created on the fly and as soon as they have the *data-command* and *data-target-report-viewer* attribute the command can be executed.
+The button above will simply print the report currently displayed. Elements do not need to exist before the viewer initialization - they can be created on the fly and as soon as they have the *data-command* and *data-target-report-viewer* attributes the command can be executed.
 
 The following table is a list of all available commands for the *data-command* attribute:
 
@@ -84,3 +84,7 @@ The following table is a list of all available commands for the *data-command* a
 | __XPS Document__ |XPS|
 
 Depending on the report and the history of browsed reports some of the buttons might be disabled and others toggled. The commands automatically keep track of their state, but if custom widgets are used this state will not be displayed properly. Therefore a disabledButtonClass and checkedButtonClass can be provided to the report viewer upon initialization - these classes will be added when the custom button is disabled or toggled, respectively.
+
+## See Also
+
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

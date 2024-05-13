@@ -1,9 +1,9 @@
 ---
 title: Using with REST Service
 page_title: Configuring HTML5 Report Viewer with Telerik Reporting REST Service
-description: "Learn what are the Prerequisites and how to configure and use the HTML5 Report Viewer with the Telerik Reporting REST Service."
+description: "Learn what the prerequisites are and how to configure and use the HTML5 Report Viewer with the Telerik Reporting REST Service."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service
-tags: how,to,use,html5,report,viewer,with,rest,service
+tags: how,use,html5,report,viewer,rest,service
 published: True
 position: 2
 previous_url: /html5-report-viewer-quick-start
@@ -31,23 +31,23 @@ The item template adds.html page with HTML5 Report Viewer and if needed enables 
 	1. __'Configure reporting engine'__ will configure the type of reporting engine that will process and render the reports. You have two options - REST service or Report server. Choose __Rest service__ option. This way, the reports will be processed and rendered by the REST service on the specified URL. On the right side of the dialog, there are two options:
 
 		+ __Create new REST service__ - in case there is no REST service project setup in the solution. Choosing this option, the REST Service will be configured within the project.
-		+ __Use existing REST service__ - in case there is a REST service already configured. Choosing this option, will require to enter a valid REST service URI.
+		+ __Use existing REST service__ - in case there is a REST service already configured. Choosing this option will require to enter a valid REST service URI.
 
 		![The Visual Studio item template Add new Report Viewer on the page Configure reporting engine with Create new REST service selected](images/item-template-reporting-engine-rest.png)
 
-	1. __'Configure report source'__ will choose a report definition for the report viewer. If __Create new REST service__ option was previously selected, you will have to choose one of the following three options. If, however, __Use existing REST service__ option was previously selected, you will only have the option to choose an existing report definition.
+	1. __'Configure report source'__ will choose a report definition for the report viewer. If the __Create new REST service__ option was previously selected, you will have to choose one of the following three options. If, however, the __Use existing REST service__ option was previously selected, you will only have the option to choose an existing report definition.
 
 		+ __Sample report definition__ - this option will create a sample report definition which will be shown in the new report viewer. It will be placed in a newly created folder called Reports at the root of the application. It can be either modified or changed with another.
-		+ __New report definition__ - this option will create a new report definition that will be opened for editing in the respective report designer. On the right side of the dialog there are two possible options:
+		+ __New report definition__ - this option will create a new report definition that will be opened for editing in the respective report designer. On the right side of the dialog, there are two possible options:
 
 			+ __TRDP report definition__ - will create a TRDP file with the entered __Report name__.
 			+ __Type report definition__ - will create a CS|VB file with the entered __Report name__ either in an existing report library project or in a newly created one.
 
-		+ __Existing report definition__ - this option will prompt you to choose an existing report definition that will be shown in the report viewer. On the right side of the dialog there are three possible options:
+		+ __Existing report definition__ - this option will prompt you to choose an existing report definition that will be shown in the report viewer. On the right side of the dialog, there are three possible options:
 
-			+ __TRDP, TRBP or TRDX report definition__ - enter the path or browse to the report definition. Also, there is an option to enable adding the report definition to the project. In this case the report viewer will use a UriReportSource with the provided path to the file.
+			+ __TRDP, TRBP or TRDX report definition__ - enter the path or browse to the report definition. Also, there is an option to enable adding the report definition to the project. In this case, the report viewer will use a UriReportSource with the provided path to the file.
 			+ __Enter type report definition created in Visual Studio__ - enter the Assembly qualified name of the type report definition. In this case the report viewer will use a TypeReportSource with the provided Assembly qualified name.
-			+ __Select type report definition created in Visual Studio__ - select the type report definition from the resolved types in the solution. The engine will search for report types in all projects in the solution that have Telerik Reporting reference included. The VS item template will add the required __connection string__ from the reports project configuration file (if exists). 
+			+ __Select type report definition created in Visual Studio__ - select the type report definition from the resolved types in the solution. The engine will search for report types in all projects in the solution that have Telerik Reporting reference included. The VS item template will add the required __connection string__ from the reports project configuration file (if it exists). 
 
 		![The Visual Studio item template Add new Report Viewer on the page Configure report source with selected BarcodesReport.cs CLR existing report definition](images/item-template-report-source-rest.png)
 
@@ -70,5 +70,6 @@ You can find the complete example setup in the Telerik Reporting installation pa
 
 ## See Also
 
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Using HTML5 Report Viewer with Report Server]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-report-server%})
 * [How to: Add New Project Items](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))

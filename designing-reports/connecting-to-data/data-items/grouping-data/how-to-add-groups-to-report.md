@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-items/grouping-
 tags: how,to,add,groups,to,report,edit,delete,remove,programmatically,designer
 published: True
 position: 2
-previous_url: /data-items-how-to-add-groups-to-report-item
+previous_url: /data-items-how-to-add-groups-to-report-item, /designing-reports-create-grouping
 ---
 
 # Adding Groups to Report

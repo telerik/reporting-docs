@@ -30,9 +30,10 @@ The following sections describe the function of each pane.
 
 ### Database View Pane
 
-The __Database View__ pane is positioned on the left-hand side of the form. It displays the metadata for database objects that you have permission to view. The permission is determined by the data source connection and credentials. The hierarchical view displays database objects organized by database schema. Expand the node for each schema to view tables and views. Expand a table or view to display its columns.
+The __Database View__ pane is positioned on the left-hand side of the form. It displays the metadata for database objects that you have permission to view. The permission is determined by the data source connection and credentials. The hierarchical view displays database objects organized by database schema. Expand the node for each schema to view tables and views. Expand a table or view to display its columns. 
 
-The relationship editor opens automatically when more than one table is selected.
+The columns checked in this pane are automatically transferred to the Selected Fields pane. If a table is checked, all of its columns will be transferred to the Selected Fields pane.
+The relationship editor opens automatically when more than one table is checked.
 
 ### Selected Fields Pane
 
@@ -101,6 +102,8 @@ The following options are available:
 After clicking _Save_, the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) Select Statement will be replaced with the currently generated SQL query.
 
 The Query Builder keeps the current setup state. However, if you modify the SQL query outside it and then use the Query Builder, it will override the manual SQL query modifications.
+
+> The functionalities of the __Web Report Designer Query Builder__ and [__Standalone Report Designer Query Builder__]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer%}) are not identical. Thus, if a report that has been edited by the Query Builder of the Web Report Designer is opened in the Query Builder of the Standalone Report Designer, an error message about an inconsistent query state may be shown.
 
 ## See Also
 

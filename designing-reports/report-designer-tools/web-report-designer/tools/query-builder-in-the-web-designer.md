@@ -26,7 +26,7 @@ The following sections describe the function of each pane.
 * [Selected Fields](#selected-fields-pane) Displays the list of database field names from the selected items in the Database View pane.
 * [Relationships](#relationships-pane) Displays a list of relationships between the selected tables.
 * [Filters](#filters-pane) Displays a list of filter criteria for tables or views.
-* [Result](#data-preview-pane) Displays sample data for the automatically generated query.
+* [Result](#result-pane) Displays sample data for the automatically generated query.
 
 ### Database View Pane
 

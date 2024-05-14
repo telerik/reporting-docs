@@ -39,11 +39,11 @@ When a viewer gets closed, there is no notification, and the service does not kn
 
 The assets cached when a report gets rendered are generated in hierarchical manner with each resource holding reference to its parent resource. To release a particular resource, the system counts the child resources that depend on this resource and if there are none, it is considered as expired and gets released. Here are the resources from child to parent:
 
-* client session - Kept for `ClientSessionTimeout` minutes (15 by default) after the last request from the originating client. The client session keeps the requested document refreshes alive.
-* document refresh - A representation of report document rendered at particular moment in time. Contains the actual rendering assets like pages, images, docs (for the export format). Keeps the originating report instance alive
-* report instance - this is the report definition with particular report parameter values, i.e., the report address.
+* __client session__ - Kept for `ClientSessionTimeout` minutes (15 by default) after the last request from the originating client. The client session keeps the requested _document refreshes_ alive.
+* __document refresh__ - A representation of report document rendered at particular moment in time. Contains the actual rendering assets like pages, images, docs (for the export format). Keeps the originating _report instance_ alive
+* __report instance__ - this is the report definition with particular report parameter values, i.e., the report address.
 
-You may reuse document refreshes by assigning the `ReportSharingTimeout` a positive value (the default is _0_). For example, when two clients request the same report with the same parameter values and states of its actions within `ReportSharingTimeout` minutes, the second client will reuse the document refresh created upon the first client's request. Thus, there will be two clients holding reference to this document refresh, and the latter will remain even if one of these clients expires.
+You may reuse _document refreshes_ by assigning the `ReportSharingTimeout` a positive value (the default is _0_). For example, when two clients request the same report with the same parameter values and states of its actions within `ReportSharingTimeout` minutes, the second client will reuse the _document refresh_ created upon the first client's request. Thus, there will be two clients holding reference to this _document refresh_, and the latter will remain even if one of these clients expires.
 
 ## See Also
 

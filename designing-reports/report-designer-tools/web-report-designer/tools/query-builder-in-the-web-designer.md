@@ -2,8 +2,8 @@
 title: Query Builder
 page_title: Query Builder in the Web Report Designer at a Glance
 description: "Learn more about the Query Builder in the Web Report Designer and how to use it to create basic queries easily in Telerik Reporting."
-slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/query-builder-in-the-web-designer
-tags: query,designer,in,the,web,designer
+slug: web-report-designer-query-builder
+tags: query,builder,web,report,designer
 published: True
 position: 0
 ---

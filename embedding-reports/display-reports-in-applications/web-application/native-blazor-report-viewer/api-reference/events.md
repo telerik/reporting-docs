@@ -2,7 +2,7 @@
 title: Events
 page_title: Native Blazor Report Viewer Events
 description: "Learn about the events exposed by the Native Blazor Report Viewer and how they can be used to execute custom code when they are emitted."
-slug:telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/events
+slug: telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/events
 tags: event,events,emit,fire,throw,execute,method,methods,blazor,native,report,viewer,api
 published: True
 position: 2
@@ -71,9 +71,9 @@ Sample usage:
 
 Occurs before exporting the report. This event has one argument of type `ExportStartEventArgs` which is an object with the following properties:
 
-	- DeviceInfo - The device info that will be used for the export operation.
-	- Format - The document format of the exported report.
-	- IsCancelled - Prevents the default render and export operation. Default value: `false`.
+- DeviceInfo - The device info that will be used for the export operation.
+- Format - The document format of the exported report.
+- IsCancelled - Prevents the default render and export operation. Default value: `false`.
 
 Sample usage: 
 
@@ -107,10 +107,10 @@ Sample usage:
 
 Occurs after exporting the report. This event has one argument of type `ExportEndEventArgs` which is an object with the following properties:
 
-	- Url - The url of the exported report as a resource.
-	- Format - The document format of the exported report.
-	- Handled - Prevents the default export operation. Default value: `false`.
-	- WindowOpenTarget - Changes the `target` attribute specifying where to open the browser window. Default value is `self`.
+- Url - The url of the exported report as a resource.
+- Format - The document format of the exported report.
+- Handled - Prevents the default export operation. Default value: `false`.
+- WindowOpenTarget - Changes the `target` attribute specifying where to open the browser window. Default value is `self`.
 
 Sample usage: 
 

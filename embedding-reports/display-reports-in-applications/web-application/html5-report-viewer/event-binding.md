@@ -37,11 +37,11 @@ $(function () {
 
 For a complete list of event handler options please check [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) and for a complete list of all event names exposed through telerikReportViewer.Events please check [Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}).
 
-The report viewer passes one argument to the event handler, the Event object. This is the Event object implemented by jQuery so for more information you can check the official jQuery documentation. The sender of the event is passed through [jQuery's event.data](https://api.jquery.com/event.data/) - e.data.sender and for all events this is the report viewer.
+The report viewer passes one argument to the event handler, the Event object. This is the Event object implemented by jQuery so for more information you can check the official jQuery documentation. The sender of the event is passed through [jQuery's event.data](https://api.jquery.com/event.data/) - e.data.sender and for all events, this is the report viewer.
 
 ## Unbind from a report viewer widget event
 
-In order to unbind from a given event you should keep reference to the event handler function and call the unbind method with this reference as an argument.
+To unbind from a given event you should keep a reference to the event handler function and call the unbind method with this reference as an argument.
 
 ````JavaScript
 function onPageReady(e) {
@@ -65,3 +65,8 @@ $(function () {
 To __unbind all event handlers__ from the event just call the unbind method with only one argument, the event name.
 
 > You can unbind anonymous event handlers by calling the unbind method with one argument.
+
+
+## See Also
+
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

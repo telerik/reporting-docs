@@ -98,14 +98,14 @@ $('#invoiceId').change(function () {
 			report: viewer.reportSource().report,
 			parameters: { OrderNumber: $(this).val() }
 		});
-		//setting the HTML5 Viewer's reportSource, causes a refresh automatically
-		//if you need to force a refresh for other case, use:
+		//setting the HTML5 Viewer's reportSource causes a refresh automatically
+		//if you need to force a refresh for other cases, use:
 		//viewer.refreshReport();
 	});
 ````
 
 
-1. The HTML page that we have just created should looks like this:
+1. The HTML page that we have just created should look like this:
 
 	````HTML
 <!DOCTYPE html>
@@ -159,7 +159,7 @@ $('#invoiceId').change(function () {
 					parameters: { OrderNumber: $(this).val() }
 				});
 				//setting the HTML5 Viewer's reportSource, causes a refresh automatically
-				//if you need to force a refresh for other case, use:
+				//if you need to force a refresh for other cases, use:
 				//viewer.refreshReport();
 			});
 		</script>
@@ -172,4 +172,5 @@ $('#invoiceId').change(function () {
 
 ## See Also
 
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Custom Parameter Editors]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})

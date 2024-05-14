@@ -1,9 +1,9 @@
 ---
 title: Requirements and Browser Support
 page_title: HTML5 Report Viewer Requirements and Browser Support
-description: "Learn what are the Requirements for integrating the Telerik Reporting HTML5 Report Viewer in a web page and what Browsers it supports."
+description: "Learn what the requirements are for integrating the Telerik Reporting HTML5 Report Viewer in a web page and what Browsers it supports."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support
-tags: requirements,and,browser,support
+tags: requirements,browser,support
 published: True
 position: 1
 previous_url: /html5-report-viewer-system-requirements, /using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support, /html5-report-viewer-widget-requirements
@@ -21,7 +21,7 @@ previous_url: /html5-report-viewer-system-requirements, /using-reports-in-applic
 
 	+ [jQuery](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) __minimum required version 1.9.1__. As the HTML5 Report Viewer uses Kendo UI widgets, conform the jQuery version according to the [Kendo UI requirements](https://docs.telerik.com/kendo-ui/intro/supporting/jquery-support). Note that the jQuery slim build is **not** supported.
 	+ Reference to HTML5 Report Viewer JavaScript called __telerikReportViewer-{{site.buildversion}}.min.js__. By default, it is served from the Telerik Reporting REST Service.
-	+ [Kendo UI](https://www.telerik.com/kendo-ui) {{site.kendosubsetversion}} or higher. Kendo UI Professional license is not required if you are only going to use the default widgets by the HTML5 Report Viewer. Telerik Reporting provides a JS file containing a subset of the used by default Kendo UI widgets called __telerikReportViewer.kendo-{{site.buildversion}}.min.js__. For more information refer to [Telerik Reporting License Agreement](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s) (point 4.2). By default, the subset is served from the Telerik Reporting REST Service.
+	+ [Kendo UI](https://www.telerik.com/kendo-ui) {{site.kendosubsetversion}} or higher. A Kendo UI Professional license is not required if you are only going to use the default widgets by the HTML5 Report Viewer. Telerik Reporting provides a JS file containing a subset of the used by default Kendo UI widgets called __telerikReportViewer.kendo-{{site.buildversion}}.min.js__. For more information refer to [Telerik Reporting License Agreement](https://www.telerik.com/purchase/license-agreement/reporting-dlw-s) (point 4.2). By default, the subset is served from the Telerik Reporting REST Service.
 
 1. Required HTML5 compliant browser. For more information see: [Browser Support](#browser-support).
 
@@ -84,3 +84,7 @@ List of Browsers covering the above requirements includes:
 	+ Google Chrome for iOS
 	+ Google Chrome for Android
 	+ Android Browser
+
+## See Also
+
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

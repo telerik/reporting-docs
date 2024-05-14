@@ -36,3 +36,7 @@ var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");
 reportViewer.authenticationToken("bad18eba1ff45jk7858b8ae88a77fa30");
 ````
 
+
+## See Also
+
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

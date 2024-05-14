@@ -1,7 +1,7 @@
 ---
 title: Manual Setup
 page_title: Manual Setup of the HTML5 Report Viewer
-description: "Learn how to setup manually the Telerik Reporting HTML5 Report Viewer in Web applications in the .NET Framework."
+description: "Learn how to set up manually the Telerik Reporting HTML5 Report Viewer in Web applications in the .NET Framework."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup
 tags: manual,setup
 published: True
@@ -78,7 +78,7 @@ The following steps produce an HTML page with settings similar to these of the l
 
 	>The report viewer JavaScript must be referenced after any other Kendo widgets or bundles.
 
-	If no Kendo widgets are utilized in the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:
+	If no Kendo widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:
 
 	````HTML
 <!--
@@ -147,7 +147,7 @@ The following steps produce an HTML page with settings similar to these of the l
 	</script>
 ````
 
-	The relative paths that you use must reflect the project's structure. The default template is using TelerikWebUI icons. If you prefer a template with *FontAwesome* icons, you have to set the templateUrl option to `/ReportViewer/templates/telerikReportViewerTemplate-FA-{{site.buildversion}}.html`.
+	The relative paths that you use must reflect the project's structure. The default template uses TelerikWebUI icons. If you prefer a template with *FontAwesome* icons, you have to set the templateUrl option to `/ReportViewer/templates/telerikReportViewerTemplate-FA-{{site.buildversion}}.html`.
 
 	>The viewer's  __reportSource__ consists of report and parameters attributes, where __report__ is the string description of the report that will be displayed, and __parameters__ is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}). The above example uses the [assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0#System_Type_AssemblyQualifiedName) of a report's type (report created in Visual Studio Report Designer). This string description will be handled automatically by the [ReportTypeResolver](/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver).
 
@@ -167,7 +167,7 @@ The following steps produce an HTML page with settings similar to these of the l
 	</style>
 ````
 
-	>The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in other container, use *position:relative* and provide width and height values.
+	>The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use *position:relative* and provide width and height values.
 
 1. The HTML page that we have just created should look like this:
 
@@ -215,3 +215,7 @@ The following steps produce an HTML page with settings similar to these of the l
 
 
 1. Run the project and navigate to the page with the HTML5 Report Viewer that we have just created.
+
+## See Also
+
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

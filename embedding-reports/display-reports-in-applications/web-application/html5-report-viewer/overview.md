@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: HTML5 Report Viewer at a Glance
-description: "Learn what is the Telerik Reporting HTML5 Report Viewer, what are its structure and modes and how it works."
+description: "HTML5 Report Viewer is an HTML5/JavaScript/CSS3 jQuery-based widget that displays Telerik reports in an HTML page."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview
 tags: overview
 published: True
@@ -11,28 +11,27 @@ previous_url: /html5-report-viewer, /using-reports-in-applications/display-repor
 
 # HTML5 Report Viewer Overview
 
-The HTML5 [Report Viewer](https://www.telerik.com/products/reporting/delivering-viewing-exporting-reports.aspx) is a pure HTML5/JavaScript/CSS3 jQuery-based widget that enables the display of Telerik reports in an HTML page.
+The HTML5 [Report Viewer](https://www.telerik.com/products/reporting/delivering-viewing-exporting-reports.aspx) is a pure HTML5/JavaScript/CSS3 jQuery-based widget that enables the display of Telerik HTML reports in an HTML page.
 
 The HTML5 Report Viewer renders its content through the [Reporting HTML Rendering mechanism]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).
 
 The layout and styling are based on pure HTML5 templates and CSS3 styles and are fully customizable. The default implementation supports mobile as well as desktop browsers. The responsive layout adapts itself to the device display for the best viewing experience. You can customize its visual appearance by using the Kendo UI themes.
 
-![The visual appearance of the HTML5-based Web Viewer with its main areas highlighted](images/HTML5ReportViewer/html5-report-viewer.png)
+![The visual appearance of the HTML5-based Report Web Viewer with its main areas highlighted](images/HTML5ReportViewer/html5-report-viewer.png)
 
 If you encounter any issues when working with the HTML5 Report Viewer, note the following:
 
 * The recommended troubleshooting approach is to use the [Telerik Fiddler Everywhere](https://www.telerik.com/fiddler) or another debugging proxy tool. Fiddler enables you to check the requests, their responses, and statuses by navigating to **Inspectors** > **Request/Response** > **Raw**. In this way, you can check requests made to the Reporting REST service and determine if its URLs are correct and if the relative paths are correctly resolved. Depending on the way the application is hosted, you may need to [adjust relative paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)).
-* Alternatively, you can use the [Telerik Fiddler Jam](https://docs.telerik.com/fiddler-jam/fj-extension/get-started-extension) troubleshooting solution. Fiddler Jam installs as a browser extension and collects logs for requests and responses performed in the browser. The logs are securely stored and later you can share them with a third party for examination through a URL. Fiddler Jam is being actively developed and, in terms of deployment and integration, might be a better choice than Fiddler Everywhere.
 
-## Report Preview Area
+## HTML Report Preview Area
 
-The Report Preview area provides the placeholder for the rendered report. All commands provided by the toolbar operate on the report currently shown in this area.
+The Report Preview area provides the placeholder for the rendered HTML report. All commands provided by the toolbar operate on the HTML report currently shown in this area.
 
 It has built-in support for end-user interactions such as drill-down and drill-through, navigation to bookmarks in the report, and external URLs.
 
-## Toolbar
+## HTML Report Toolbar
 
-The toolbar of the HTML5 report viewer provides basic functionality for interacting with the currently loaded report:
+The toolbar of the HTML5 report viewer provides basic functionality for interacting with the currently loaded HTML report:
 
 |   |   |
 | ------ | ------ |
@@ -47,9 +46,9 @@ The toolbar of the HTML5 report viewer provides basic functionality for interact
 | ![The HTML5-based Web Viewer Toolbar button Send Email](images/HTML5ReportViewer/send-email.png)|Toggles the send email window that allows sending a report as an attachment, with specific parameters, to a list of users. Check the [send email message article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message%}) for more information.|
 | ![The HTML5-based Web Viewer Toolbar button Toggle Parameters Area](images/HTML5ReportViewer/parameters-area.png)|Toggles the parameters area|
 | ![The HTML5-based Web Viewer Toolbar area Zoom](images/HTML5ReportViewer/zoom.png)|Scale the pages for the best viewing experience including __full page__, __page width__ or __custom scale factor__.|
-| ![The HTML5-based Web Viewer Toolbar button Search](images/HTML5ReportViewer/search.png)|Toggles the search window widget that allows searching in report contents. Check the [search article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search%}) for more information.|
+| ![The HTML5-based Web Viewer Toolbar button Search](images/HTML5ReportViewer/search.png)|Toggles the search window widget that allows searching in HTML report contents. Check the [search article]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search%}) for more information.|
 
-## Report Parameters
+## HTML Report Parameters
 
 The parameters pane provides an intuitive UI for user input. The HTML5-based Report Viewers use [Kendo UI widgets](https://www.telerik.com/kendo-ui) for parameter editors out-of-the-box. Based on the type of parameters, a suitable editor UI is created.
 
@@ -62,27 +61,27 @@ When at least one [report parameter]({%slug telerikreporting/designing-reports/c
 
 When at least one visible report parameter has the AutoRefresh property turned off a __Preview__ button appears. In this case, to preview the report, the end user should click the Preview button. If all parameters have default values, the report runs automatically on the first view. You can show or hide the parameters area from the __Parameters__ button in the report viewer’s toolbar.
 
-## Document Map
+## HTML Report Document Map
 
-The document map pane provides a set of navigational links to report items in a rendered report. When you view a report that has a document map, a separate side pane appears next to the report preview area. A user can click a link in the document map to jump to the report page that displays the corresponding item. Report sections and groups are arranged in the hierarchy of links. Clicking items in the document map refreshes the report preview and displays the area of the report that corresponds to the item in the document map.
+The document map pane provides a set of navigational links to report items in a rendered report. When you view a report that has a document map, a separate side pane appears next to the report preview area. A user can click a link in the document map to jump to the HTML report page that displays the corresponding item. Report sections and groups are arranged in the hierarchy of links. Clicking items in the document map refreshes the report preview and displays the area of the report that corresponds to the item in the document map.
 
 To add links to the document map, you set the __DocumentMapText__ property of the report item to text that you create or to an expression that evaluates to the text that you want to be displayed in the document map.
 
-## Page Modes
+## HTML Report Page Modes
 
 The [page modes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) are two. __Continuous scrolling__ and __Single page__. The Single page mode renders only one page in the viewport. This mode does not hinder the browser with a lot of DOM objects, actions or event listeners, but limits the report data that the user could read.
 
-The Continuous scroll mode gives the user the ability to read all report pages at once. When the report is ready, in the viewport are rendered N number of pages to fill in the visible part of your report viewer. Each next or previous page will be loaded on demand if the user scrolls up or down. If the user navigates to 5th page for example, in the DOM tree will be rendered all pages that are visible in the viewport, before and after the wanted page, plus all their actions and event listeners. All other pages, that are out of the visible part, will not be loaded. On their place will be added skeleton pages, that will be replaced with the actual page, only if the user scrolls to them.
+The Continuous scroll mode gives the user the ability to read all HTML report pages at once. When the report is ready, in the viewport are rendered N number of pages to fill in the visible part of your report viewer. Each next or previous page will be loaded on demand if the user scrolls up or down. If the user navigates to 5th page for example, in the DOM tree will be rendered all pages that are visible in the viewport, before and after the wanted page, plus all their actions and event listeners. All other pages, that are out of the visible part, will not be loaded. On their place will be added skeleton pages, that will be replaced with the actual page, only if the user scrolls to them.
 
 Continuous scroll mode is the default page mode. To change the page mode, check __pageMode__ option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) article.
 
-## How it works
+## How does HTML5 Report Viewer work?
 
 The HTML5 Report Viewer is a composite of Telerik Kendo Ui widgets, whose template consists of three files: HTML (UI), CSS (styles), and JS (functionality). The viewer can be styled and customized with standard JavaScript, CSS, and custom HTML. For more details refer to [HTML5 Report Viewer Customizing]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/overview%}) articles.
 
 The purpose of the HTML5 Report Viewer is to display Telerik Reports and allow the user to interact with them. Reports are processed and rendered on the server where __Telerik Reporting engine__ and __Reporting REST service__ run. Reports and their resources are handled and delivered to the viewer through the [Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
 
-The HTML5 Report Viewer's content is rendered in __DIV__ elements. The report in the viewer is rendered through the HTML rendering mechanism based on the [Design Considerations for HTML Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).
+The HTML5 Report Viewer's content is rendered in __DIV__ elements. The HTML report in the viewer is rendered through the HTML rendering mechanism based on the [Design Considerations for HTML Rendering]({%slug telerikreporting/designing-reports/rendering-and-paging/design-considerations-for-report-rendering/html-rendering-design-considerations%}).
 
 ## See Also
 

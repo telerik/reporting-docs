@@ -29,7 +29,7 @@ table th:nth-of-type(3) {
 | __multivalue__ |boolean|specifies whether the parameter can hold more than one value|
 | __allowBlank__ |boolean|specifies whether the parameter allows an empty string to be passed. Only for parameters of type string|
 | __allowNull__ |boolean|specifies whether the parameter allows a <null> value to be passed from its editor|
-| __autoRefresh__ |boolean|specifies whether the report viewer should auto update the report when its value has changed|
+| __autoRefresh__ |boolean|specifies whether the report viewer should auto-update the report when its value has changed|
 | __hasChildParameters__ |boolean|specifies whether the parameter is a cascading one (has dependencies)|
 | __id__ |boolean|represents parameter’s unique identifier|
 | __isVisible__ |boolean|determines whether the parameter editor is visible or not|
@@ -38,3 +38,7 @@ table th:nth-of-type(3) {
 | __text__ |string|specifies the text for the parameter editor|
 | __type__ | __telerikReportViewer.ParameterTypes__ |specifies the type of the parameter|
 | __value__ |object|specifies the value of the parameter|
+
+## See Also
+
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

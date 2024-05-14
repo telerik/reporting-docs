@@ -30,7 +30,7 @@ All viewer-related classes are supplied by a single CSS stylesheet referenced in
 </script>
 ````
 
-In addition, the Kendo UI CSS needs to be supplied in order for the Kendo UI widgets to be operational:
+In addition, the Kendo UI CSS needs to be supplied for the Kendo UI widgets to be operational:
 
 ````HTML
 <link href="/kendo/styles/kendo.common.min.css" rel="stylesheet" />
@@ -48,7 +48,7 @@ Additionally, we provide a template that depends on  [Font Awesome](https://font
 
 > Please note that you are not required nor limited to using our font or Font Awesome. The distributed templates provide only a base/reference implementation of the report viewer’s content that can be modified according to your needs.
 
-In order to use Font Awesome you have to specify the Font Awesome template. The template is located in (%programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Html5\ReportViewer\templates):
+To use Font Awesome you have to specify the Font Awesome template. The template is located in (%programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Html5\ReportViewer\templates):
 
 ````JavaScript
 <script type="text/javascript">
@@ -67,5 +67,5 @@ The default viewer template and stylesheet depend on CSS media queries to adapt 
 
 ## See Also
 
-* [HTML5 Report Viewer - Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})

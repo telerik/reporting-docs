@@ -21,7 +21,7 @@ The assemblies target .NET Standard 2.0 and the desktop viewers target .NET 6.0,
 
 __.NET 6.0__ or later.
 
-To use NuGet, you are required to provide the following NuGet packages. Note that when using the Telerik NuGet packages, the required dependencies are resolved automatically. Otherwise, you need to manually add them to the project.
+To use NuGet, you are required to provide the following NuGet packages. Note that when using the Telerik NuGet packages, the required dependencies are resolved automatically. Otherwise, you need to add them manually to the project.
 
 | Package Name | Version |
 | ------ | ------ |
@@ -53,14 +53,14 @@ Most of the processing and rendering features that work on Windows and are using
 
 As a downside, the report item designers are not .NET Standard-compatible. As a result, no design-time support in Visual Studio is available and type reports are not supported. Therefore, you are recommended to [convert]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer%}) such reports to `.trdx` or `.trdp` definitions with the Standalone Report Designer.
 
-Also, you can use these classes as runtime-created report instances. You can use report definitions that are created in Visual Studio as report instances in .NET applications, but their code must not include any calls to CodeDOM-specific classes like `ResourceManager`.
+Also, you can use these classes as runtime-created report instances. You can use report definitions created in Visual Studio as report instances in .NET applications, but their code must not include any calls to CodeDOM-specific classes like `ResourceManager`.
 
 Telerik Reporting supports the following functionalities:
 
 * All rendering extensions except MHTML (HTML archive), XPS (XML Paper Specification), and XLS (Microsoft Excel 97 - 2003).
 * HTML, PDF, and OpenXML-based renderings are supported on Linux and macOS. Due to graphics library incompatibilities, in some cases, Graph-based items in the OpenXML renderings are incorrectly displayed.
-* Except for the obsolete Chart report item, all report items are supported.
-* The supported report definition types are `TRDX`, `TRDP`, and report classes that are created in Visual Studio without the VS designer-specific code.
+* All report items except the obsolete Chart item, are supported.
+* The supported report definition types are `TRDX`, `TRDP`, and report classes created in Visual Studio without the VS designer-specific code.
 * Telerik Reporting supports the following Data Source components:
 
 	+ [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})
@@ -123,7 +123,7 @@ The following JSON configuration snippet hides the Image rendering extension fro
 }
 ````
 
-On the Linux machine, you also need to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) configuration element.
+On the Linux machine, you need also to install the fonts you use in the reports. Otherwise, the font substitution algorithm will replace them with a system font. When rendering a PDF document, the fonts get resolved only if they are listed in the [`<privateFonts>`]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/privatefonts-element%}) configuration element.
 
 ## Deploying on macOS
 
@@ -182,9 +182,61 @@ RUN apt-get update \
 
 ## Sample Projects
 
-Telerik Reporting ships with ready-made .NET examples that demonstrate how to show the sample reports in an ASP.NET Core, WinForms, and WPF application. The ASP.NET Core demo also shows how to inject an `appsettings.json` configuration file to the controller and how to initialize a WebHostBuilder so it runs under Windows and Linux.
+Telerik Reporting ships with ready-made .NET examples demonstrating how to show the sample reports in an ASP.NET Core, WinForms, and WPF application. The ASP.NET Core demo also shows how to inject an `appsettings.json` configuration file to the controller and how to initialize a WebHostBuilder so it runs under Windows and Linux.
 
 Sample projects are available in the subfolders with the corresponding framework names in the `\Examples\CSharp` subfolder of the Telerik Reporting installation directory. For example, our .NET 6 ASP.NET Core demo may be found by default in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\Html5IntegrationDemo`.
+
+### Docker Samples
+
+With [2024 Q2 (18.1.24.514)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q2-18-1-24-514) we started distributing sample Docker files for deploying the Telerik Reporting Web Examples for .NET with Skia Sharp Graphics Engine on Linux Docker containers. The distributed Docker files should be used to build the Docker image from the terminal. They are unsuitable for use from Visual Studio due to the specific folder structure of the Reporting examples. The Visual Studio projects use by default TRDP reports deployed in a folder that cannot be accessed by the Docker file when run from the Visual Studio.
+
+The Docker files may be found in the folder of the corresponding project. For example, the `Docklerfile` for the .NET 8 Telerik Reporting REST Service project with enabled CORS may be found by default in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 8\ReportingRestServiceCorsDemo`. The Docklerfile starts with instructions for building the image and running the Docker container. Replace the placeholders in the curly brackets with the corresponding details: __TelerikNuGetApiKey__, __Telerik Reporting Installation Folder__, and __Connection String to AdventureWorks Database Accessible From the Docker Container__. Here is a sample content of the file. The deployed Reporting REST Service project with enabled CORS will run on `localhost:4040` in the browser:
+
+````
+# command to BUILD docker IMAGE from the Windows Terminal:
+# docker image build -f "{Replace With Installation Folder}\Examples\CSharp\.NET 8\ReportingRestServiceCorsDemo\Dockerfile" -t net8reportingrestservicecorsdemo --build-arg TelerikNugetServerApiKey={Replace With Your TelerikNuGetApiKey} "{Replace With Installation Folder}"
+
+# command to RUN docker CONTAINER from the Windows Terminal:
+# docker run -e ConnectionStrings__Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString__connectionString="{Replace With Connection String to AdventureWorks Database Accessible From the Docker Container}" -it -p 4040:8080 net8reportingrestservicecorsdemo
+
+
+#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+
+WORKDIR /app
+EXPOSE 8080
+
+RUN apt-get update
+RUN apt-get install -y libfreetype6
+RUN apt-get install -y libfontconfig1
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+
+COPY ["Report Designer/Examples", "Reports"]
+COPY ["Examples/CSharp/.NET 8/ReportingRestServiceCorsDemo", ".NET 8/ReportingRestServiceCorsDemo/"]
+COPY ["Examples/CSharp/Business Objects", "Business Objects/"]
+COPY ["Examples/CSharp/nuget.config", ""]
+
+ARG TelerikNugetServerApiKey
+ENV TelerikNugetServer_API_KEY $TelerikNugetServerApiKey
+
+RUN dotnet restore "/src/.NET 8/ReportingRestServiceCorsDemo/CSharp.Net8.ReportingRestServiceCorsDemo.csproj"
+
+WORKDIR "/src/.NET 8/ReportingRestServiceCorsDemo"
+RUN dotnet build "./CSharp.Net8.ReportingRestServiceCorsDemo.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./CSharp.Net8.ReportingRestServiceCorsDemo.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app/Examples/CSharp/NET8/ReportingRestServiceCorsDemo
+COPY --from=publish /app/publish .
+COPY --from=build ["/src/Reports", "/app/Report Designer/Examples"]
+ENTRYPOINT ["dotnet", "CSharp.Net8.ReportingRestServiceCorsDemo.dll"]
+````
 
 ## See Also
 

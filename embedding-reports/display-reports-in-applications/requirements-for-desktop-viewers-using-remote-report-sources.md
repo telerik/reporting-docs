@@ -15,10 +15,10 @@ When using WinForms and WPF report viewers to show reports that are hosted in a 
 
 * __Telerik.Reporting.Services.HttpClient.dll__ - this assembly contains the client used to make requests and process response from the REST service Web API. The assembly can be found in the __\bin__ subfolder of the Telerik Reporting installation folder. Make sure the *CopyLocal* property is set to __true__.
 * [System.Net.Http.Formatting.dll](https://learn.microsoft.com/en-us/previous-versions/aspnet/hh834517(v=vs.118)) - contains classes for serializing and deserializing HTTP message body in a format based on the requested media type.
-* [System.Net.Http.dll](https://learn.microsoft.com/en-us/dotnet/api/system.net.http?view=net-7.0) - contains classes of HTTP attributes.
+* [System.Net.Http.dll](https://learn.microsoft.com/en-us/dotnet/api/system.net.http) - contains classes of HTTP attributes.
 * [Newtonsoft.Json.dll](https://www.newtonsoft.com/json) - a popular high-performance JSON framework for .NET
 
-The recommended way of obtaining the three third-party assemblies is via NuGet package. The package that contains all three of them is [Microsoft ASP.NET Web API Client v.4.0.30506 NuGet package.](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/4.0.30506) Note that the higher versions of this package require updating the project's target framework to .NET 4.5 or later.
+The recommended way of obtaining the three third-party assemblies is via NuGet package. The package that contains all three of them is [Microsoft ASP.NET Web API Client v.6.0.0 NuGet package.](https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Client/6.0.0) Note that the higher versions of this package require updating the project's target framework to .NET 4.6.2 or later.
 
 ## See Also
 

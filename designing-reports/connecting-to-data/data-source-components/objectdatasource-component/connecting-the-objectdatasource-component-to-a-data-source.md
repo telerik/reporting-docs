@@ -100,7 +100,7 @@ Here are the steps you may follow when referencing the assembly in the project s
 When rendering a report relying on custom assemblies with the [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) class in a [.NET application](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet), it is necessary to manually pass an [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) instance to the constructor of the `ReportProcessor` class, for example:
 
 ````CSharp
- IConfiguration configuration = new ConfigurationBuilder()
+IConfiguration configuration = new ConfigurationBuilder()
 	.SetBasePath(Directory.GetCurrentDirectory())
 	.AddJsonFile("appsettings.json")
 	.Build();

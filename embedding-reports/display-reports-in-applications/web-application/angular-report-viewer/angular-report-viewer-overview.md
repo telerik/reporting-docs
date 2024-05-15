@@ -21,7 +21,7 @@ The Angular component is built on top of the [HTML5 Report Viewer]({%slug teleri
 
 ## Requirements
 
-To successfully integrate the Angular Report Viewer component, ensure the following are fullfilled in your Angular Reporting application:
+To successfully integrate the Angular Report Viewer component, ensure the following are fulfilled in your Angular Reporting application:
 
 1. Required Application Version:
 
@@ -29,7 +29,7 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 1. Required Service:
 
-	+ The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api)  in the REST Service project.
+	+ The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project.
 
 1. Required JavaScript libraries:
 

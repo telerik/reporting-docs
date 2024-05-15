@@ -19,7 +19,7 @@ To include aggregated values in your report, use the __Aggregates__ node in the 
 | ------ | ------ | ------ |
 | `AllDistinctValues(Expression, IncludeNullValues)` |Returns an array of all distinct values from the specified expression. The optional *IncludeNullValues* parameter determines if Null values<br/> should be included in the aggregation. By default Null values are included.|Returns an array of type `Object []`.|
 | `AllValues(Expression, IncludeNullValues)` |Returns an array of all values from the specified expression. The optional *IncludeNullValues* parameter determines if Null values<br/> should be included in the aggregation. By default Null values are included.|Returns an array of type `Object []`.|
-| `Avg(Expression)` |Returns the average of all non-null values from the specified expression.|The return type is determined by the type of the evaluated result of expression.|
+| `Avg(Expression)` |Returns the average of all non-null values from the specified expression.|The return type is determined by the type of the evaluated result of the expression.|
 | `Count(Expression)` |Returns a count of the non-null values from the specified expression.|Returns an `Integer`.|
 | `CountDistinct(Expression)` |Returns a count of the distinct values from the specified expression.|Returns an `Integer`.|
 | `First(Expression)` |Returns the first value from the specified expression.|Determined by the type of expression.|
@@ -28,7 +28,7 @@ To include aggregated values in your report, use the __Aggregates__ node in the 
 | `Min(Expression)` |Returns the minimum value from all non-null values <br/> of the specified expression.|Determined by the type of the expression.|
 | `StDev(Expression)` |Estimates standard deviation based on a sample. The standard deviation is a measure of how widely values are dispersed <br/> from the average value (the mean). Null values are ignored.|Returns `float`.|
 | `StDevP(Expression)` |Calculates standard deviation based on the entire population. The standard deviation is a measure of how widely values are<br/> dispersed from the average value (the mean). Null values are ignored.|Returns `float`.|
-| `Sum(Expression)` |Returns a sum of the values of the specified expression.|Returns the summation of all expression values in the most precise expression data type.|
+| `Sum(Expression)` |Returns a sum of the values of the specified expression.|Returns the summation of all expression values based on the data type of the __first__ expression value.|
 | `Var(Expression)` |Estimates variance based on a sample. Null values are ignored.|Returns `float`.|
 | `VarP(Expression)` |Calculates variance based on the entire population. Null values are ignored.|Returns `float`|
 

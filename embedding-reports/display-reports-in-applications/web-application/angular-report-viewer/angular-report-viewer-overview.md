@@ -21,7 +21,7 @@ The Angular component is built on top of the [HTML5 Report Viewer]({%slug teleri
 
 ## Requirements
 
-To successfully integrate the Angular Report Viewer component, ensure the following are fullfilled in your Angular Reporting application:
+To successfully integrate the Angular Report Viewer component, ensure the following are fulfilled in your Angular Reporting application:
 
 1. Required Application Version:
 
@@ -29,7 +29,7 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 1. Required Service:
 
-	+ The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api)  in the REST Service project.
+	+ The viewer requires a running instance of [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in order to display reports. Make sure to [enable Cross-Origin Requests (CORS)](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api) in the REST Service project.
 
 1. Required JavaScript libraries:
 
@@ -53,7 +53,7 @@ The Angular viewer is based on the [HTML5 Report Viewer]({%slug telerikreporting
 
 ## Types of Reports
 
-The Angular Report Viewer can display both `declarative` and `type` [report definitions]({%slug on-telerik-reporting%)#report-definition). All report definitions should be accessible server-side by the Reporting REST Service.
+The Angular Report Viewer can display both `declarative` and `type` [report definitions]({%slug on-telerik-reporting%})#report-definition). All report definitions should be accessible server-side by the Reporting REST Service.
 
 Report definitions created in run-time, fetched from custom storages, etc. may also be displayed in the viewer. This requires a [Custom IReportSourceResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) associating the [client-side ReportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource()%}) Report property with the [server-side ReportSource]({%slug telerikreporting/designing-reports/report-sources/overview%}#available-report-sources) passed to the Reporting engine.
 

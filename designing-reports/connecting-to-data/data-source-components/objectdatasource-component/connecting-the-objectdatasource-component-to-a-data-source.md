@@ -108,7 +108,7 @@ IConfiguration configuration = new ConfigurationBuilder()
 var reportProcessor = new ReportProcessor(configuration);
 ````
 
-The `appsettings.json` configuration file provided to the `ReportProcessor` must have the assembly registered in the [assemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) section as shown the section above.
+The `appsettings.json` configuration file provided to the `ReportProcessor` must have the assembly registered in the [assemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) section as shown in the section above.
 
 ## Sample
 

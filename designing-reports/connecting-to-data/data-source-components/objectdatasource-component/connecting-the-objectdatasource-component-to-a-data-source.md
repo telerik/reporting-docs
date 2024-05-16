@@ -95,9 +95,24 @@ Here are the steps you may follow when referencing the assembly in the project s
 ````
 
 
+## Configuration for the ReportProcessor in .NET
+
+When rendering a report relying on custom assemblies with the [ReportProcessor](/api/telerik.reporting.processing.reportprocessor) class in a [.NET application](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet), it is necessary to manually pass an [IConfiguration](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) instance to the constructor of the `ReportProcessor` class, for example:
+
+````CSharp
+IConfiguration configuration = new ConfigurationBuilder()
+	.SetBasePath(Directory.GetCurrentDirectory())
+	.AddJsonFile("appsettings.json")
+	.Build();
+       
+var reportProcessor = new ReportProcessor(configuration);
+````
+
+The `appsettings.json` configuration file provided to the `ReportProcessor` must have the assembly registered in the [assemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) section as shown in the section above.
+
 ## Sample
 
-Sample report that uses Object DataSource can be found at the installation folder of Telerik Reporting `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET Framework\ReportLibrary\DataBinding`
+Sample report that uses Object DataSource can be found in the installation folder of Telerik Reporting `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET Framework\ReportLibrary\DataBinding`
 
 
 ## See Also

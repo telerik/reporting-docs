@@ -21,6 +21,7 @@ table th:nth-of-type(2) {
 # The `reportSource()` method of the HTML5 Report Viewer
 
 Gets the current report source - report and parameters.
+The viewer's report source is updated dynamically as the users navigate between reports and change parameter values.
 
 Returns: an object with properties:
 

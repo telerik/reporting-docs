@@ -10,9 +10,8 @@ position: 7
 
 # The `getReportParameters()` method of the HTML5 Report Viewer
 
-Returns an immutable array of name-value objects representing the current evaluated report parameters.
-
-Returns: array containing the name and the value of each report parameter.
+Returns an object with properties, the names of which are the report parameters’ IDs, and values - the report parameters’ values.
+The values of multivalue parameters include their display and value members.
 
 ````JavaScript
 var reportViewer = $("#reportViewer1").data("telerik_ReportViewer");

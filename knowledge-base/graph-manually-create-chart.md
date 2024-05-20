@@ -3,7 +3,7 @@ title: Manually Create a Chart in the Graph
 page_title: Manually Create a Chart in the Graph Report Item
 description: "Learn how to manually create a Chart in the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-chart-step-by-step
-previous_url: /report-items/graph/how-to/how-to-create-chart-step-by-step
+previous_url: /report-items/graph/how-to/how-to-create-chart-step-by-step, /graphhowtocreatechart
 tags: telerik, reporting, graph, report, item, create, chart, manually
 type: how-to
 res_type: kb

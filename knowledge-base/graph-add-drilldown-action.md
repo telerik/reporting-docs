@@ -3,7 +3,7 @@ title: Add a Drilldown Action to the Graph
 page_title: Add Drilldown Actions to the Graph Report Item
 description: "Learn how to add a drilldown action to the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-drilldown-action-to-the-graph-item
-previous_url: /report-items/graph/how-to/how-to-add-drilldown-action-to-the-graph-item
+previous_url: /report-items/graph/how-to/how-to-add-drilldown-action-to-the-graph-item, /graphhowtoadddrilldownaction
 tags: telerik, reporting, graph, report, item, add, drilldown, action
 type: how-to
 res_type: kb

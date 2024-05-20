@@ -6,7 +6,7 @@ slug: map_report_item_overview
 tags: telerik, reporting, map, report, item, overview
 published: True
 position: 0
-previous_url: /report-items/map/
+previous_url: /report-items/map/, /mapoverview
 ---
 
 # Map Overview

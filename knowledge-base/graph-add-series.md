@@ -3,7 +3,7 @@ title: Add Series to the Graph
 page_title: Add Series to the Graph Report Item
 description: "Learn how to add a chart series to the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-series
-previous_url: /report-items/graph/how-to/how-to-add-series
+previous_url: /report-items/graph/how-to/how-to-add-series, /graphhowtoaddseries
 tags: telerik, reporting, graph, report, item, add, chart, series
 type: how-to
 res_type: kb

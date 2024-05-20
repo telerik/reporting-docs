@@ -3,7 +3,7 @@ title: Swap Graph Axes in the Graph
 page_title: Swap Graph Axes in the Graph Report Item
 description: "Learn how to swap the axes in the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-swap-graph-axes
-previous_url: /report-items/graph/how-to/how-to-swap-graph-axes
+previous_url: /report-items/graph/how-to/how-to-swap-graph-axes, /graphhowtoswapaxes
 tags: telerik, reporting, graph, report, item, swap, axes
 type: how-to
 res_type: kb

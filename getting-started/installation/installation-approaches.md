@@ -6,7 +6,7 @@ slug: telerikreporting/installation
 tags: telerik, reporting, installation, approaches, msi, control, panel, nuget, private, feed, visual, studio
 published: True
 position: 2
-previous_url: /installation-system-requirements, /installation-installing-from-msi, /installation, /getting-started/installation/
+previous_url: /installation-system-requirements, /installation-installing-from-msi, /installation, /getting-started/installation/, /installation-deploying-on-server
 ---
 
 # Installation Approaches for Telerik Reporting

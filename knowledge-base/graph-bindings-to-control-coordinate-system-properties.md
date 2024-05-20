@@ -3,7 +3,7 @@ title: Use Bindings to Control the Coordinate System Properties in the Graph
 page_title: Use Bindings to Control the Coordinate System Properties in the Graph Report Item
 description: "Learn how to use bindings to control the coordinate system properties in the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties
-previous_url: /report-items/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties
+previous_url: /report-items/graph/how-to/how-to-use-bindings-to-control-the-coordinate-system-properties, /graphhowtousebindingstocontrolcsproperties
 tags: telerik, reporting, graph, report, item, use, bindings, to, control, coordinate, system, properties
 type: how-to
 res_type: kb

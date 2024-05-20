@@ -3,7 +3,7 @@ title: Overview
 page_title: Report Items Overview
 description: "Learn more about the items a Telerik Reporting report can contain, how you may arrange them, and control their layouts."
 slug: telerikreporting/designing-reports/report-structure/overview
-previous_url: /report-items/how-to/how-to-layout-report-items, /designing-reports-understanding-report-structure, /report-items/
+previous_url: /report-items/how-to/how-to-layout-report-items, /designing-reports-understanding-report-structure, /report-items/, /report-items-intro
 tags: telerik, reporting, report, items, overview
 published: True
 position: 0

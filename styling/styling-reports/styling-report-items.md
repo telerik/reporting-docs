@@ -6,6 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/styling-report-items
 tags: styling, report, items, properties
 published: True
 position: 7
+previous_url: /style-overview
 ---
 
 <style>

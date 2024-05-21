@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: overview
 published: True
 position: 0
-previous_url: /asp-net-report-viewer, /embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/
+previous_url: /asp-net-report-viewer, /embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/, /asp-net-report-viewer-overview
 ---
 
 # ASP.NET Web Forms Report Viewer Overview

@@ -2,7 +2,7 @@
 title: Report Sources
 page_title: Report Sources at a Glance
 description: "Learn what is a server-side ReportSource in the context of Telerik Reporting and how to use it to pass report definition and parameter values to the Reporting engine."
-previous_url: /designing-reports/report-sources/overview, /report-sources
+previous_url: /designing-reports/report-sources/overview, /report-sources, /report-sources-navigatetoreport
 slug: telerikreporting/designing-reports/report-sources/overview
 tags: telerik, reporting, embedding, reports, report, sources, overview
 published: True

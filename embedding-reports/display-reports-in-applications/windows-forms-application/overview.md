@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/display-reports-in-applicat
 tags: windows, forms, report, viewer, overview
 published: True
 position: 0
-previous_url: /winforms-report-viewer, /embedding-reports/display-reports-in-applications/windows-forms-application/
+previous_url: /winforms-report-viewer, /embedding-reports/display-reports-in-applications/windows-forms-application/, /winforms-report-viewer-overview
 ---
 
 <style>

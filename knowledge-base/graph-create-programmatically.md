@@ -3,7 +3,7 @@ title: Programmatically Create a Chart in the Graph
 page_title: Programmatically Create a Chart in the Graph Report Item
 description: "Learn how to programmatically create a Chart in the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-chart-programmatically
-previous_url: /report-items/graph/how-to/how-to-create-chart-programmatically
+previous_url: /report-items/graph/how-to/how-to-create-chart-programmatically, /graphhowtocreateprogrammaticallygraph
 tags: telerik, reporting, graph, report, item, create, chart, programmatically
 type: how-to
 res_type: kb

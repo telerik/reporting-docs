@@ -3,7 +3,7 @@ title: Drillthrough Report Action
 page_title: Configuring the Drillthrough Report Action 
 description: "Learn more about the drill-through interactivity report action when working with Telerik Reporting."
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action
-previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-navigatetoreport-action, /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action, /designing-reports-interactivity-drill-through-report-links
+previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-navigatetoreport-action, /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action, /designing-reports-interactivity-drill-through-report-links, /designing-reports-interactivity-how-to-add-drillthrough-action
 tags: drillthrough,report,action
 published: True
 position: 3

@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/connecting-to-data/data-source-componen
 tags: selecting,data,with,the,sqldatasource,component,query,stored procedure
 published: True
 position: 2
-previous_url: /sql-data-source-selecting-data
+previous_url: /sql-data-source-selecting-data, /how-to-sqldatasource-sct-storedprocedure
 ---
 
 # Selecting Data with the SqlDataSource Component

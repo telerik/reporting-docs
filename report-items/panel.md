@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-structure/panel
 tags: telerik, reporting, report, items, panel, organize, layout, accommodate, content, shrink, global, properties
 published: True
 position: 8
-previous_url: /report-items-panel
+previous_url: /report-items-panel, /reportitemspanel
 ---
 
 # Panel Report Item Overview

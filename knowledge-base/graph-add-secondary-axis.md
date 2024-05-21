@@ -3,7 +3,7 @@ title: Add a Secondary Axis to the Graph
 page_title: Add a Secondary Axis to the Graph Report Item
 description: "Learn how to add a secondary axis to the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-add-secondary-axis
-previous_url: /report-items/graph/how-to/how-to-add-secondary-axis
+previous_url: /report-items/graph/how-to/how-to-add-secondary-axis, /graphhowtoaddsecondaryaxis
 tags: telerik, reporting, graph, report, item, add, secondary, axis
 type: how-to
 res_type: kb

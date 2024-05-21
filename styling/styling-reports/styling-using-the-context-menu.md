@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/styling-reports/styling-using-the-conte
 tags: styling, using, the, context, menu
 published: True
 position: 5
-previous_url: /style-styling-context-menu
+previous_url: /style-styling-context-menu, /stylestylingcontextmenu
 ---
 
 # Styling items using the Context Menu

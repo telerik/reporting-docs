@@ -3,7 +3,7 @@ title: Switch Rows and Columns in the Graph
 page_title: Switch Rows and Columns in the Graph Report Item
 description: "Learn how to switch rows and columns in the Telerik Reporting Graph report item."
 slug: telerikreporting/designing-reports/report-structure/graph/how-to/how-to-switch-row---column
-previous_url: /report-items/graph/how-to/how-to-switch-row---column
+previous_url: /report-items/graph/how-to/how-to-switch-row---column, /graphhowtoswitchrowcolumn
 tags: telerik, reporting, graph, report, item, switch, rows, columns
 type: how-to
 res_type: kb

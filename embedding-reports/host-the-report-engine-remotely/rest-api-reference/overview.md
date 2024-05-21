@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remo
 tags: overview,rest,api,uri,http,service,reporting,request
 published: True
 position: 0
-previous_url: /telerik-reporting-rest-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/
+previous_url: /telerik-reporting-rest-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview, /embedding-reports/host-the-report-engine-remotely/rest-api-reference/, /telerik-reporting-rest-json-entities
 ---
 
 <style>

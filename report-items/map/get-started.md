@@ -5,7 +5,7 @@ description: "Get up and running with Telerik Reporting, and learn how to create
 slug: telerikreporting/designing-reports/report-structure/map/how-to/how-to-setup-a-map-using-the-map-wizard
 tags: telerik, reporting, report, items, map, getting, started, configure
 published: True
-previous_url: /MapHowToSetupMapWithPieChartSeries, /report-items/map/how-to/how-to-setup-a-map-using-the-map-wizard, /knowledge-base/map-set-up-with-the-map-wizard
+previous_url: /MapHowToSetupMapWithPieChartSeries, /report-items/map/how-to/how-to-setup-a-map-using-the-map-wizard, /knowledge-base/map-set-up-with-the-map-wizard, /mapconnectingtodata, /maphowtoaddseriestothemapitem
 position: 1
 ---
 

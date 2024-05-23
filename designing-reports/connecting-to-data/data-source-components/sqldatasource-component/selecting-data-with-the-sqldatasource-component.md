@@ -13,6 +13,8 @@ previous_url: /sql-data-source-selecting-data, /how-to-sqldatasource-sct-storedp
 
 You can specify a SQL query for the `SqlDataSource` component to execute by setting its `SelectCommand` property.
 
+> The `SqlDataSource` is designed to read data from the database but internally it uses the [_DbCommand.ExecuteReader_ method](https://learn.microsoft.com/en-us/dotnet/api/system.data.common.dbcommand.executereader?view=net-8.0) which does not limit the commands that can executed against the database connection. Therefore, the command typed in the `SelectCommand` property will be executed as-is, even if it contains statements such as DELETE, UPDATE, DROP, etc. To prevent potentially unwanted modifications to your database, we strongly recommend using connections with read-only permissions to fetch the data.
+
 > If the SQL query returns more than one result sets, only the first set will be used.
 
 The following example demonstrates a SQL query that retrieves a result set consisting of the names of all the persons in the `Contact` table from the __AdventureWorks__ sample database:

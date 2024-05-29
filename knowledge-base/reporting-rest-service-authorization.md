@@ -19,7 +19,7 @@ res_type: kb
 
 ## Description
 
-On attempt to add `[Authorize]` attribute above the ReportsController class, the report viewer no longer displays.
+On an attempt to add the `[Authorize]` attribute above the ReportsController class, the report viewer no longer displays.
 
 ## Solution
 
@@ -57,3 +57,7 @@ Thus, we can suggest two possible approaches:
 ## Notes
 
 How to use the authorize attribute is not related to Telerik Reporting directly. Please refer to the [Token-Based Authentication for Web Service APIs in C# MVC .NET](https://www.primaryobjects.com/2015/05/08/token-based-authentication-for-web-service-apis-in-c-mvc-net/) article that gives additional information on how to implement the validation process.
+
+## See Also
+
+* [Request to '/api/reports/.../{documentId}' Is Not Authorized]({%slug why-get-document-request-is-unauthorized%})

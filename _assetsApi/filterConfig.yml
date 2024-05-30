@@ -6,5 +6,11 @@ apiRules:
     uidRegex: ^Newtonsoft\.Json
     type: Namespace
 - exclude:
-    uidRegex: ^System\.Net\.Http
+    uidRegex: ^System
+    type: Namespace
+- exclude:
+    uidRegex: ^antlr
+    type: Namespace
+- exclude:
+    uidRegex: ^OpenAccessRuntime
     type: Namespace

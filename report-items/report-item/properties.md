@@ -10,7 +10,13 @@ position: 1
 
 # Major Properties and Settings of Report Item
 
-The Report item contains a number of specific properties that control the design-time and run-time behavior as well as the general layout and functionality of the generated report documents.
+The Report item contains several specific properties that control the design-time and run-time behavior as well as the general layout and functionality of the generated report documents.
+
+## DocumentName
+
+The [`DocumentName`](/api/telerik.reporting.report#Telerik_Reporting_Report_DocumentName) specifies the default document name when exporting from a Report Viewer. The Standalone Report Designer won't use `DocumentName` when exporting. It will rather use the Report `Name`.
+
+The `DocumentName` may be set to an [Expression]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/overview%}) containing [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) and other [Gloabal Objects]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/global-objects%}). The DataSource fields are not accessible at this Report level and cannot be used - see [Expression Scope]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expression-scope-%}) for more details.
 
 ## Paging
 

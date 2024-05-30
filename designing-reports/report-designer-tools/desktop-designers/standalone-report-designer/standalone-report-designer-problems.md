@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers
 tags: standalone,report,designer,problems
 published: True
 position: 8
-previous_url: /Troubleshooting-Standalone-Report-Designer-problems, /troubleshooting-design-time
+previous_url: /Troubleshooting-Standalone-Report-Designer-problems, /troubleshooting-design-time/
 ---
 
 # Troubleshooting Standalone Report Designer

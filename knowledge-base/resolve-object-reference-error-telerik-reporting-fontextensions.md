@@ -4,7 +4,7 @@ description: Learn how to fix the 'System.NullReferenceException' error related 
 type: troubleshooting
 page_title: Fix System.NullReferenceException for FontExtensions.ToEngineFont in Telerik Reporting on Alpine Docker
 slug: resolve-object-reference-error-telerik-reporting-fontextensions
-tags: progress® telerik® reporting, .net core, docker, alpine, kubernetes, font, system.nullreferenceexception
+tags: progress® telerik® reporting, .net8, docker, alpine, kubernetes, font, system.nullreferenceexception
 res_type: kb
 ticketid: 1653593
 ---
@@ -15,7 +15,11 @@ ticketid: 1653593
 
 ## Description
 
-When deploying a .NET Core 8 application to an Alpine Docker Container Image running on Kubernetes, an error occurs during report rendering. The error message is: "System.NullReferenceException: Object reference not set to an instance of an object at Telerik.Reporting.Drawing.FontExtensions.ToEngineFont(IFont font) ...". This issue is related to the application's inability to resolve fonts correctly within the Alpine environment.
+When deploying a .NET 8 application to an Alpine Docker Container Image running on Kubernetes, the following error occurs during report rendering. This issue is related to the application's inability to resolve fonts correctly within the Alpine environment.
+
+## Error Message
+
+`System.NullReferenceException: Object reference not set to an instance of an object at Telerik.Reporting.Drawing.FontExtensions.ToEngineFont(IFont font) ...`
 
 ## Cause
 

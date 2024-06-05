@@ -1,6 +1,6 @@
 ---
-title: Resolving Object Reference Error with Telerik.Reporting.Drawing.FontExtensions.ToEngineFont in .NET Core on Alpine Docker
-description: Learn how to fix the 'System.NullReferenceException' error related to font processing in Telerik Reporting within a .NET Core application deployed on Alpine Docker.
+title: Resolving Object Reference Error with Telerik.Reporting.Drawing.FontExtensions.ToEngineFont in .NET on Alpine Docker
+description: Learn how to fix the 'System.NullReferenceException' error related to font processing in Telerik Reporting within a .NET application deployed on Alpine Docker.
 type: troubleshooting
 page_title: Fix System.NullReferenceException for FontExtensions.ToEngineFont in Telerik Reporting on Alpine Docker
 slug: resolve-object-reference-error-telerik-reporting-fontextensions
@@ -15,7 +15,7 @@ ticketid: 1653593
 
 ## Description
 
-When deploying a .NET 8 application to an Alpine Docker Container Image running on Kubernetes, the following error occurs during report rendering. This issue is related to the application's inability to resolve fonts correctly within the Alpine environment.
+When deploying a .NET application to an Alpine Docker Container Image running on Kubernetes, the following error occurs during report rendering. This issue is related to the application's inability to resolve fonts correctly within the Alpine environment.
 
 ## Error Message
 

@@ -11,10 +11,24 @@ ticketid: 1653593
 
 ## Environment
 
---- | ---
- Product | Progress® Telerik® Reporting 
- OS | Linux Alpine 
- Target Framework | .NET 
+## Environment
+
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>OS</td>
+			<td>Linux Alpine</td>
+		</tr>
+		<tr>
+			<td>Target Framework</td>
+			<td>.NET</td>
+		</tr>
+	</tbody>
+</table>
 
 ## Description
 

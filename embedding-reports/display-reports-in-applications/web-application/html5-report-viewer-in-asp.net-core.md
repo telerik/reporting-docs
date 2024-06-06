@@ -73,7 +73,7 @@ The above setting is required since Telerik Reporting supports only the full.NET
 
 ## Adding the NuGet Packages
 
-ASP.NET Core does not support references to assemblies, but instead works with references to NuGet packages. To setup the Reporting REST service you have to download __Telerik.Reporting__ and __Telerik.Reporting.Services.AspNetCore__ NuGet packages from the private Telerik NuGet feed at [https://nuget.telerik.com/nuget](https://nuget.telerik.com/nuget). How to add a NuGet feed is explained in [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume) 
+ASP.NET Core does not support references to assemblies, but instead works with references to NuGet packages. To setup the Reporting REST service you have to download __Telerik.Reporting__ and __Telerik.Reporting.Services.AspNetCore__ NuGet packages from the private Telerik NuGet feed at [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json). How to add a NuGet feed is explained in [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume) 
 
 You will need to enter [your Telerik account](https://www.telerik.com/account) credentials for this operation. 
 

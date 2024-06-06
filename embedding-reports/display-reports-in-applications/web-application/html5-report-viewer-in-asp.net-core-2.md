@@ -84,7 +84,7 @@ ASP.NET Core does not support references to assemblies, but instead works with N
 > 
 > * __Microsoft.AspNetCore.Mvc__ 
 
-To setup the Reporting REST service download __Telerik.Reporting__ and __Telerik.Reporting.Services.AspNetCore__ NuGet packages from the private Telerik NuGet feed at [https://nuget.telerik.com/nuget](https://nuget.telerik.com/nuget). How to add a NuGet feed is explained in [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume). 
+To setup the Reporting REST service download __Telerik.Reporting__ and __Telerik.Reporting.Services.AspNetCore__ NuGet packages from the private Telerik NuGet feed at [https://nuget.telerik.com/v3/index.json](https://nuget.telerik.com/v3/index.json). How to add a NuGet feed is explained in [https://www.visualstudio.com/en-us/docs/package/nuget/consume](https://www.visualstudio.com/en-us/docs/package/nuget/consume). 
 
 [Telerik account](https://www.telerik.com/account) is required to access the private repository. 
 

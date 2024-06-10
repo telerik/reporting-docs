@@ -11,7 +11,7 @@ position: 8
 
 # Adding the Telerik Private NuGet Feed to VS
 
-> The legacy https://nuget.telerik.com/nuget server is now deprecated. Make sure you are using the new https://nuget.telerik.com/v3/index.json server, which is faster, lighter, and reduces the number of requests from your NuGet client.
+> The old **https://nuget.telerik.com/nuget** server is deprecated and we encourage our clients to switch to the v3 API. The new v3 API is faster, lighter, and reduces the number of requests from NuGet clients. The **NuGet v2** server at https://nuget.telerik.com/nuget will be sunset in **November 2024**. The new v3 protocol offers faster package searches and restores, improved security, and more reliable infrastructure. To redirect your feed to the NuGet v3 protocol, all you have to do is to change your NuGet package source URL to https://nuget.telerik.com/v3/index.json.  
 
 Telerik provides NuGet packages from the private Telerik NuGet feed which you can add to the Visual Studio NuGet package manager.
 

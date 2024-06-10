@@ -27,6 +27,8 @@ The __XML__ serialization/deserialization of report definitions is achieved thro
 {{source=CodeSnippets\CS\API\Telerik\Reporting\XmlSerializationSnippets.cs region=ReportDefinitionSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\XmlSerializationSnippets.vb region=ReportDefinitionSnippet}}
 
+>note **Report1** is a derivative of the basic Report class. A similar implementation can be found in the installation folder of the Telerik Reporting product usually located at the following path: Progress\Telerik Reporting [YYYY Q]\Examples\CSharp\.NET Framework\ReportLibrary. You can refer to the **ProductCatalog** implementation. However, the code is valid for the basic Report implementation as well. It will contain a more simplified design with just the text boxes added to the report.
+
 ## Serialize to XML
 
 The following sample code snipped demonstrates how to serialize the above report definition to an XML file:

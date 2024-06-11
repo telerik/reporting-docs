@@ -8,7 +8,7 @@ published: True
 position: 4
 ---
 
-# Integrating the Angular Report Viewer with the Report Server
+# Integrating the Native Angular Report Viewer with the Report Server
 
 This tutorial demonstrates how to add the Angular Report Viewer component to a new Angular application and display a report coming from the Telerik Report Server.
 

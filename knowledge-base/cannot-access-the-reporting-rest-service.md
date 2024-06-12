@@ -33,7 +33,7 @@ The error indicates that the [Telerik Reporting REST Service]({%slug telerikrepo
 
 ## Solution
 
-There are two main reasons for this error. In order to identify that, check the response to `/api/reports/formats` GET request that should return the available document formats - see [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}) article.
+There are two main reasons for this error. To identify that, check the response to `/api/reports/formats` GET request that should return the available document formats - see [Get Available Document Formats]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}) article.
 
 1. **The REST Service is missing or not configured correctly**:
 
@@ -48,11 +48,11 @@ There are two main reasons for this error. In order to identify that, check the 
 	* Test adding `~` or remove the first `/` - [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)?redirectedfrom=MSDN)
 	* The issue might be related to WebAPI controllers duplicating routes, which can be avoided by [changing the registered by default Telerik Reporting REST Web API routes]({%slug how-to-change-reporting-rest-web-api-routes-registered-by-default%}).
 
-1. **CORS is not configured correctly**: If the REST Service is returning the available export formats, the report viewer client may not be able to access the service due to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) limitations. When such issue is present you will see a CORS related error message in the browser's developer tools console (press `F12` to open it). When hosting the service in a separate application you will need to enable CORS as explained in [Enable cross-origin requests in ASP.NET Web API 2 article](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api).
+1. **CORS is not configured correctly**: If the REST Service is returning the available export formats, the report viewer client may not be able to access the service due to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) limitations. When such an issue is present you will see a CORS-related error message in the browser's developer tools console (press `F12` to open it). When hosting the service in a separate application you will need to enable CORS as explained in [Enable cross-origin requests in ASP.NET Web API 2 article](https://learn.microsoft.com/en-us/aspnet/web-api/overview/security/enabling-cross-origin-requests-in-web-api).
 
 ## Notes
 
-Тhe recommended troubleshooting approach is to use [Fiddler Jam](https://www.telerik.com/fiddler-jam) or other proxy tool to check the requests, their responses and statuses.
+The recommended troubleshooting approach is to use [Fiddler](https://www.telerik.com/fiddler/fiddler-classic) or another proxy tool to check the requests, responses, and their statuses.
 
 This will let you check requests to the Reporting REST service and whether the URLs are correct (if relative paths are resolved correctly). Relative paths may need adjustment depending on how the application is hosted.
 

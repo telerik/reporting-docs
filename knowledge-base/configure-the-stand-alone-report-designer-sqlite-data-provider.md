@@ -1,11 +1,10 @@
 ---
-title: How to configure SQLite ADO.NET Provider for Stand-alone Report Designer
+title: How to configure SQLite ADO.NET Provider for Standalone Report Designer
 description: Follow these steps to properly configure the SQLite Datasource provider in the Telerik Reporting Stand-alone Report Designer.
 type: how-to
 page_title: Configure the Stand-Alone Report Designer SQLite Data Provider
 slug: configure-the-stand-alone-report-designer-sqlite-data-provider
-position: 
-tags: 
+tags: standalone,report,designer,sqlite,provider
 ticketid: 1455156
 res_type: kb
 ---
@@ -27,7 +26,7 @@ res_type: kb
 
 ## Description
 
-Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requires a few steps. If one is missed, the DataSource provider will not work in the Report Designer. Follow the below steps as to get this working.
+Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requires a few steps. If one is missed, the DataSource provider will not work in the Report Designer. Follow the below steps to get this working.
 
 ## Solutions
 
@@ -46,7 +45,7 @@ The Telerik Reporting directory will look like the following:
 
 **Step 3** Add the DbProvider Factory declaration to the appropriate Stand-alone Report Designer configuration file. `Telerik.ReportDesigner.exe.config` is for 64-bit (x64) and `Telerik.ReportDesigner.x86.exe.config` is for 32-bit (x86).
 
->note When updating the configruation file, use the version that matches the installed SQLite ADO.NET Provider, i.e., `64-bit (x64)` or `32-bit (x86)`.
+>note When updating the configuration file, use the version that matches the installed SQLite ADO.NET Provider, i.e., `64-bit (x64)` or `32-bit (x86)`.
 
 ````XML
 <system.data>

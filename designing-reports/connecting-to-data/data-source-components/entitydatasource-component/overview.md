@@ -38,4 +38,4 @@ Partial Class AdventureWorksContext
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
+* .NET Framework 4.6.2 and above

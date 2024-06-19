@@ -13,26 +13,22 @@ ticketid: 1655171
 
 | Product | Progress® Telerik® Reporting |
 | --- | --- |
-| Version | 18.1.24.514 |
+| Project Type | ASP.NET Framework |
 
 ## Description
 
-After upgrading Telerik Reporting to a newer version, attempting to open a report results in an error indicating that the Reporting REST service cannot be accessed. The error message suggests verifying the service URL and enabling CORS if necessary. Additionally, navigating to `/api/reports/formats` produces an error due to multiple actions matching the request.
+After implementing the [Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) in an ASP.NET Framework application - [Telerik Reporting REST Service ASP.NET Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}), when the application starts, the error page is displayed with details about a problem with the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase).
 
 ## Error Message
 
-```
-Cannot access the Reporting REST service. (serviceUrl = '/api/reports/'). Make sure the service address is correct and enable CORS if needed. (https://enable-cors.org)
-```
-
-```
+````HTML
 <Error>
-<Message>An error has occurred.</Message>
-<ExceptionMessage>Multiple actions were found that match the request: Formats on type SmartBiz.Controllers.ReportsController GetClientsSessionTimeoutSeconds on type SmartBiz.Controllers.ReportsController Version on type SmartBiz.Controllers.ReportsController</ExceptionMessage>
-<ExceptionType>System.InvalidOperationException</ExceptionType>
-<StackTrace> at System.Web.Http.Controllers.ApiControllerActionSelector.ActionSelectorCacheItem.SelectAction(HttpControllerContext controllerContext) at System.Web.Http.ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken) at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()</StackTrace>
+    <Message>An error has occurred.</Message>
+    <ExceptionMessage>Multiple actions were found that match the request: Formats on type Controllers.ReportsController GetClientsSessionTimeoutSeconds on type Controllers.ReportsController Version on type     Controllers.ReportsController</ExceptionMessage>
+    <ExceptionType>System.InvalidOperationException</ExceptionType>
+    <StackTrace> at System.Web.Http.Controllers.ApiControllerActionSelector.ActionSelectorCacheItem.SelectAction(HttpControllerContext controllerContext) at System.Web.Http.ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken) at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()</StackTrace>
 </Error>
-```
+````
 
 ## Cause
 
@@ -42,9 +38,9 @@ The issue is likely caused by a greedy route in the route configuration, which i
 
 To resolve this issue, ensure that the reporting routes are registered before the default ones. This action gives them priority and prevents them from being overridden by other more general routes. Use the following steps:
 
-1. Register the reporting routes before any default or other custom routes in your Web API configuration.
+1. Register the reporting routes before any default or other custom routes in your Web API configuration:
 
-    ```csharp
+    ````CSharp
     Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config);
 
     config.Routes.MapHttpRoute(
@@ -52,16 +48,12 @@ To resolve this issue, ensure that the reporting routes are registered before th
         routeTemplate: "api/{controller}/{action}/{id}",
         defaults: new { id = RouteParameter.Optional }
     );
-    ```
+````
 
-2. Ensure that the `ReportsControllerConfiguration.RegisterRoutes(HttpConfiguration)` method is invoked correctly in your project. This step is crucial for setting up the routes for the Reports controller. Avoid manually configuring these routes.
 
-3. Verify that the route template includes the `{action}` part. Omitting this can cause issues due to multiple actions matching the same route template.
-
-Following these recommendations should resolve the access issues to the Reporting REST service after upgrading Telerik Reporting.
+1. Verify that the [`routeTemplate`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.routing.template.routetemplate?view=aspnetcore-8.0) includes the `{action}` part. Omitting this can cause issues due to multiple actions matching the same route template.
 
 ## See Also
 
-- [Telerik Reporting - REST Service](https://docs.telerik.com/reporting/t-telerik-reporting-services-webapi-reportscontrollerconfiguration-registerroutes)
-- [Enable CORS](https://enable-cors.org/)
+- [Hosting Telerik Reporting REST Service in ASP.NET]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})
 - [Multiple actions were found that match the request in Web API - Stack Overflow](https://stackoverflow.com/questions/14534167/multiple-actions-were-found-that-match-the-request-in-web-api)

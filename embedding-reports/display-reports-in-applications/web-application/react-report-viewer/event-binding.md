@@ -20,7 +20,7 @@ To attach an event handler to the viewer, specify the name of your function when
 ````HTML
 <TelerikReportViewer
 	...
-	ready='readyHandler'
+	ready='myReadyHandler'
 	viewerToolTipOpening='myViewerToolTipOpeningHandler' />
 ````
 

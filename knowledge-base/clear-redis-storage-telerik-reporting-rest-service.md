@@ -2,7 +2,7 @@
 title: Clearing the Redis Storage of the Telerik Reporting REST Service
 description: Learn how to clear the Telerik Reporting REST Service cache from Redis storage when redeploying or restarting your application.
 type: how-to
-page_title: How to Clear the Redis Storage of the Telerik Reporting REST Service on Redeploy or Restart
+page_title: Cleaning up the Redis Storage of the Telerik Reporting REST Service on Redeploy or Restart
 slug: clear-redis-storage-telerik-reporting-rest-service
 tags: progress® telerik® report server, redis, cache, rest service, redeploy, restart
 res_type: kb
@@ -17,10 +17,10 @@ ticketid: 1609460
 
 ## Description
 
-When redeploying or restarting an application that uses Telerik Reporting REST Service, it might be necessary to clear the Reporting REST Service cache stored in Redis. This task can be accomplished through the Redis CLI by deleting all keys associated with the Reporting service. Keys can be identified by the Reporting version used or the [HostAppId](https://docs.telerik.com/reporting/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) set in the report service configuration.
+When redeploying or restarting an application that uses the Telerik Reporting REST Service, it might be necessary to clear the Reporting REST Service cache stored in Redis. This task can be accomplished through the [Redis CLI](https://redis.io/docs/latest/develop/connect/cli/) by deleting all keys associated with the Reporting service. Keys can be identified by the Reporting version used or the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) set in the report service configuration.
 
 This KB article also answers the following questions:
-- How do I remove Reporting REST Service cache from Redis on application restart?
+- How do I remove the Reporting REST Service cache from Redis on application restart?
 - What is the method to delete Telerik Reporting cache keys in Redis?
 - How can I ensure a clean Reporting cache in Redis for a new deployment?
 

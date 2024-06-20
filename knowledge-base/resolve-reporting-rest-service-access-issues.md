@@ -41,7 +41,7 @@ To resolve this issue, ensure that the reporting routes are registered before th
 1. Register the reporting routes before any default or other custom routes in your Web API configuration:
 
     ````CSharp
-    Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config);
+Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config);
 
     config.Routes.MapHttpRoute(
         name: "DefaultApi",

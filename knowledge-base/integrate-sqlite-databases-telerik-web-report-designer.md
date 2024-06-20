@@ -19,6 +19,8 @@ ticketid: 1655822
 
 When attempting to use the [Web Report Designer](https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/overview) with an SQLite database in a Blazor project, the SQLite option is available in the SharedDataSource SQL dropdown list of providers. However, attempting to connect to a local SQLite database file results in an error: "Cannot load type for DbProviderTypeName `System.Data.SQLite.SQLiteFactory`."
 
+![SQLiteFactory Error](images/sqlite-web-report-designer-error.png)   
+
 This KB article also answers the following questions:
 - How to connect the Telerik Web Report Designer to an SQLite database?
 - What steps are needed to resolve the `System.Data.SQLite.SQLiteFactory` error in Telerik Reporting?
@@ -30,15 +32,22 @@ To successfully integrate an SQLite database with the Telerik Web Report Designe
 
 1. Ensure the System.Data.SQLite NuGet package is installed in your project. This package is necessary for the Telerik Reporting to interface with SQLite databases.
 
+
+![System.Data.SQLite NuGet](images/sqlite-web-report-designer-step-1.png)  
+
 2. Place your SQLite database file (e.g., `northwind.db`) in the main folder of your project. This location makes it easier to reference the database in your connection strings.
 
-3. Use a sample connection string formatted as follows to test the data connection: 
+![SQLite database](images/sqlite-web-report-designer-step-2.png)  
+
+3. Use a sample connection string formatted as follows to test the data connection:  
     ```
     Data Source=northwind.db;Version=3;FailIfMissing=True;
     ```
     This connection string assumes the database file is named `northwind.db` and is located in the root directory of your project.
 
 Following these steps should allow the Web Report Designer to successfully connect to and use the SQLite database without encountering the `System.Data.SQLite.SQLiteFactory` error.
+
+![Connected Successfully](images/sqlite-web-report-designer-step-3.png)   
 
 ## Notes
 
@@ -49,3 +58,4 @@ Following these steps should allow the Web Report Designer to successfully conne
 
 - [Introduction to Telerik Web Report Designer](https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/overview)
 - [System.Data.SQLite NuGet Package](https://www.nuget.org/packages/System.Data.SQLite/)
+- [How to configure SQLite ADO.NET Provider for Stand-alone Report Designer](https://docs.telerik.com/reporting/knowledge-base/configure-the-stand-alone-report-designer-sqlite-data-provider#solution-for-the-new-net-standalone-report-designer)

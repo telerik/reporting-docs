@@ -36,6 +36,8 @@ The issue is likely caused by a greedy route in the route configuration, which i
 
 ## Solution
 
+### Solution 1
+
 To resolve this issue, ensure that the reporting routes are registered before the default ones. This action gives them priority and prevents them from being overridden by other more general routes. Use the following steps:
 
 1. Register the reporting routes before any default or other custom routes in your Web API configuration:
@@ -52,6 +54,12 @@ Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(
 
 
 1. Verify that the [`routeTemplate`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.routing.template.routetemplate?view=aspnetcore-8.0) includes the `{action}` part. Omitting this can cause issues due to multiple actions matching the same route template.
+
+### Solution 2
+
+Change the first path segment included in the route template using the [ReportsControllerConfiguration.RegisterRoutes(HttpConfiguration, String)](/api/telerik.reporting.services.webapi.reportscontrollerconfiguration#Telerik_Reporting_Services_WebApi_ReportsControllerConfiguration_RegisterRoutes_System_Web_Http_HttpConfiguration_System_String_) method overload.
+
+For example, "api" is the default literal path segment in the "api/{controller}" route template. Use this overload and pass a unique path segment (e.g. "reportingapi") to avoid collisions with other Web API services - `Telerik.Reporting.Services.WebApi.ReportsControllerConfiguration.RegisterRoutes(config, "reportingapi");`
 
 
 ## See Also

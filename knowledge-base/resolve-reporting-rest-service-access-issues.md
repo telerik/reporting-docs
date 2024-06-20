@@ -53,7 +53,9 @@ To resolve this issue, ensure that the reporting routes are registered before th
 
 1. Verify that the [`routeTemplate`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.routing.template.routetemplate?view=aspnetcore-8.0) includes the `{action}` part. Omitting this can cause issues due to multiple actions matching the same route template.
 
+
 ## See Also
 
-- [Hosting Telerik Reporting REST Service in ASP.NET]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})
+- [How to change the registered by default Telerik Reporting REST Web API routes]({%slug how-to-change-reporting-rest-web-api-routes-registered-by-default%})
 - [Multiple actions were found that match the request in Web API - Stack Overflow](https://stackoverflow.com/questions/14534167/multiple-actions-were-found-that-match-the-request-in-web-api)
+- [Hosting Telerik Reporting REST Service in ASP.NET]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-add-telerik-reporting-rest-web-api-to-web-application%})

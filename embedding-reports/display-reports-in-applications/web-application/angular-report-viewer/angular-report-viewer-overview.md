@@ -25,7 +25,7 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 1. Required Application Version:
 
-	+ Angular 13+ application
+	+ Angular 15+ Application
 
 1. Required Service:
 
@@ -33,18 +33,17 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 1. Required JavaScript libraries:
 
-	+ [jQuery 3.2.1+](https://jquery.com/download/)
 	+ [Node.js](https://nodejs.org/) - The required version will depend on the version of the Angular project - [Angular versions under active support](https://angular.io/guide/versions)
 
 1. The [Angular Report Viewer package](https://www.npmjs.com/package/@progress/telerik-angular-report-viewer) requires the following peer dependencies:
 
-	+ `@angular/common: ">=13.0.0"`
-	+ `@angular/core: ">=13.0.0"`
-	+ `rxjs: ">=6.5.0"`
+	+ `@angular/common: ">=15.0.0"`
+	+ `@angular/core: ">=15.0.0"`
+	+ `"jquery": "^1.10.0 || ^2.2.0 || ^3.7.0"`
 
 1. Required references to Telerik Kendo UI styles:
 
-	+ [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling); or
+	+ [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/appearance-styling)
 	+ [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes)
 
 ## Browser Support

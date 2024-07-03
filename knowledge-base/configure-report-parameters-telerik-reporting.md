@@ -11,9 +11,9 @@ ticketid: 1655580
 
 ## Environment
 
-| Version | Product | Author |  
-| --- | --- | ---- |  
-| 17.0.23.118| Standalone Report Designer |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
+| Product | Author |  
+| --- | ---- |  
+| Standalone Report Designer |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description
 
@@ -36,15 +36,13 @@ To resolve the issue where a report parameter is not recognized in the report pr
 
     ![SqlDataSourceParameter](images/report-parameter.png)      
 
-2. Ensure that each SqlDataSource parameter is linked to an expression, such as a report parameter value, in the report definition. SqlDataSource parameters cannot directly receive values from the ReportSource.Parameters collection. Review the [Using Parameters with the SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%}) for more details.
+    For detailed steps on adding and configuring report parameters, consult the [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) guide.
+
+1. Ensure that each SqlDataSource parameter is linked to an expression, such as a report parameter value, in the report definition. SqlDataSource parameters cannot directly receive values from the ReportSource.Parameters collection. Review the [Using Parameters with the SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%}) for more details.
 
     >caption SqlDataSourceParameter
 
     ![SqlDataSourceParameter](images/sqldatasource-parameter.png)        
-
-3. In your report definition, connect the SqlDataSource parameter to the report parameter through the SqlDataSource's SelectCommand. This involves setting up a SqlDataSourceParameter that references the report parameter.
-
-4. For detailed steps on adding and configuring report parameters, consult the [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) guide.
 
 By following these steps, you ensure that your report parameters are correctly recognized during the preview, preventing errors related to undefined objects in the current context.
 
@@ -54,5 +52,3 @@ By following these steps, you ensure that your report parameters are correctly r
 - [Using Parameters with the SqlDataSource Component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-parameters-with-the-sqldatasource-component%})
 - [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
 - [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
-
----

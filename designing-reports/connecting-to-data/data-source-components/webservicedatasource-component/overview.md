@@ -95,9 +95,8 @@ It is possible to leverage the 2-step Authentication mechanism above to retrieve
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
-* .NET Core 2.0 and above
-* .NET 5 and above
+* .NET Framework 4.6.2 and above
+* .NET 6 and above
 * .NET Standard 2.0 and above
 
 ## See Also

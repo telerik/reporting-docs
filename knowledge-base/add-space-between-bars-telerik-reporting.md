@@ -31,10 +31,12 @@ To introduce space between bars in the same category, follow these steps:
 
 ```csharp
 DataPointStyle.LineColor = Transparent;
-DataPointStyle.LineWidth = 2;  // Adjust the value as needed
+DataPointStyle.LineWidth = 2;  // Adjust the value as needed 
 ```
 
 **Note:** Applying this workaround will also affect the top and bottom parts of the bars, making them appear slightly thinner.
+
+![Bar Chart Spacing](images/bar-chart-spacing.png)   
 
 ## Notes
 
@@ -42,5 +44,5 @@ This workaround manipulates the visual appearance of the bars to create the illu
 
 ## See Also
 
-- [Telerik Reporting Documentation](https://docs.telerik.com/reporting/)
-- [BarSeries Properties](https://docs.telerik.com/reporting/p-telerik-reporting-barseries)
+- [Telerik Reporting Documentation]({%slug telerikreporting/welcome-to-telerik-reporting!%})
+- [BarSeries Properties]({%slug https://docs.telerik.com/reporting/report-items/graph/chart-types/bar%})

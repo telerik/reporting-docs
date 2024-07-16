@@ -29,18 +29,26 @@ This KB article also answers the following questions:
 To clear the Reporting REST Service cache from the Redis database, follow these steps:
 
 1. Open the Redis CLI.
-2. Use the `KEYS` command to find all keys related to Telerik Reporting. Replace `18.1.24.514` with the version of Telerik Reporting used in your application or a pattern that matches your application's HostAppId. 
+2. Use the `KEYS` command to find all keys related to Telerik Reporting. Replace `18.1.24.514` with the version of Telerik Reporting used in your application or a pattern that matches your application's HostAppId.
+
 	````shell
 redis-cli KEYS "\*18.1.24.514\*"
 ````
+
+
 3. Delete the identified keys by passing them to the `DEL` command.
+
 	````shell
 redis-cli KEYS "*18.1.24.514*" | xargs redis-cli DEL
 ````
+
+
 4. If the command from step 3 does not work for you, examine the output of the command from step 2 and make sure the keys are returned correctly. For example, if they contain spaces you may need to wrap them in quotes:
+
 	````shell
 redis-cli KEYS "*18.1.24.514*" | sed 's/\(.*\)/"\1"/' | xargs redis-cli DEL
 ````
+
 
 By following these steps, you can ensure that the Telerik Reporting REST Service cache in Redis is cleared whenever your application is redeployed or restarted.
 

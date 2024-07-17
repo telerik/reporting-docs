@@ -30,12 +30,19 @@ To wrap text in data labels for a Column chart in the Graph Report Item, use the
 = Replace(Fields.CategoryNamePlusPercent, ' ', '
 ')
 ````
+![Set Replace Expression](images/replace-expression-data-point-labels.png)    
+
+![Wrapped Data Point Labels](images/wrapped-data-point-labels.png)  
 
 This function replaces spaces with a new line character, effectively wrapping the text.
 
 Additionally, consider extending expressions for more complex formatting needs. For more details, refer to the [Extending Expressions](%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/overview%) section in the documentation.
 
-An alternative approach is to rotate the labels and center the text to fit the data labels within the column's width.
+An alternative approach is to **rotate** the labels and center the text to fit the data labels within the column's width.
+
+![Set Label Angle](images/set-angle-data-point-labels.png)     
+
+![Rotated Data Point Labels](images/rotated-data-point-labels.png)     
 
 ## Suggested Workarounds
 

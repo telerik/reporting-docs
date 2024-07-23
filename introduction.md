@@ -20,7 +20,7 @@ With Telerik Reporting you can retrieve and process data from relational, multi-
 End users can view the ready reports in PDF, Microsoft Office Word, Excel, and PowerPoint document formats, or use a dedicated viewer in a Web or .NET/.NET Framework desktop application.
 
 {% if site.has_cta_panels == true %}
-{% include cta-panel-introduction-reporting.html %}
+{% include cta-panel-introduction.html %}
 {% endif %}
 
 ## Supported Platforms

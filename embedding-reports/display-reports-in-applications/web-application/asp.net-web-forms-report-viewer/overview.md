@@ -13,7 +13,7 @@ previous_url: /asp-net-report-viewer, /embedding-reports/display-reports-in-appl
 
 This document provides a brief overview of the *legacy* ASP.NET WebForms Report Viewer.
 
-> If you are building a new project, we strongly recommend using the latest WebForms Report Viewer - the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}). It includes a lot of improvements and new features.
+> Starting with the 2024 Q4 release, the ASP.NET WebForms Report Viewer will no longer be distributed with Telerik Reporting. We strongly recommend using its successor - the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}), which includes the latest features, performance enhancements, and security improvements offered by both Microsoft and Telerik.
 
 ## Purpose and Features
 

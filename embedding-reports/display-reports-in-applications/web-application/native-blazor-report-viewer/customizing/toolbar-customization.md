@@ -12,7 +12,7 @@ position: 4
 
 This article explains how to customize the default set and order of tools displayed in the Blazor Native ReportViewer toolbar.
 
-The customization is done similar to the [Blazor Editor component](https://docs.telerik.com/blazor-ui/components/editor/built-in-tools).
+The customization is done similar to the [Blazor Editor component](https://www.telerik.com/blazor-ui/editor).
 
 ## Available Tools
 
@@ -79,5 +79,5 @@ Use the `Tools` [option of the viewer]({%slug telerikreporting/embedding-reports
 
 ## See Also
 
-* [Blazor Editor component](https://docs.telerik.com/blazor-ui/components/editor/built-in-tools)
+* [Blazor Editor component](https://www.telerik.com/blazor-ui/editor)
 * [Blazor Report Viewer Options]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/api-reference/options%}#options)

@@ -23,7 +23,9 @@ Example: `Fields.ProductID` - returns the value of the field ProductID in the cu
 
 >note If the data source field name is not a valid name in terms of programming languages (contains spaces, punctuation marks, etc.) enclose its name in square brackets, for example =Fields.[My Column]; Because brackets are special characters, you must use a backslash (`\\`) to escape the bracket, if it is part of a data field name. For example, a data field named `Field[1]` would be referenced as `Fields.[Field\\[1\\]]`.
 
-Another option of accessing the values in the fields collection is the global function [Fields(fieldName)]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).
+Another option for accessing the values in the fields collection is the global function [Fields(fieldName)]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).
+
+When the DataSource is a collection of objects that don't contain named fields, for example, an array of integers/strings, you may access the collection items in the Report Expressions as `= Fields.Item` or `= Fields("Item")`.
 
 ## Parameters
 
@@ -46,7 +48,7 @@ Represents a read-only type that contains information about the environment in w
 
 ## ExecutionTime
 
-A [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) instance containing the date and time of the moment when the current report started its procesing by the reporting engine.
+A [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) instance containing the date and time of the moment when the current report started its processing by the reporting engine.
 
 ## PageNumber
 

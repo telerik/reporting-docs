@@ -1,7 +1,7 @@
 ---
 title: Report Functions
 page_title: Report Functions Explained
-description: "Find out what are the built-in Report Functions in Telerik Reporting and how to use them in expressions in reports."
+description: "Find out what the built-in Report Functions in Telerik Reporting are and how to use them in expressions in reports."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/report-functions
 tags: report,functions
 published: True
@@ -23,5 +23,5 @@ table th:nth-of-type(2) {
 
 | Function | Description |
 | ------ | ------ |
-| `Fields(name)` |Returns the value of the field with the specified name in the current dat scope. Use this function when you want to dynamically change the referred field. For example you may define string parameter _SortField_ and use<br/> `=Fields(Parameters.SortField)` <br/>expression as Sorting of a report.|
+| `Fields(name)` |Returns the value of the field with the specified name in the current data scope. Use this function when you want to dynamically change the referred field. For example, you may define string parameter _SortField_ and use<br/> `=Fields(Parameters.SortField)` <br/>expression as Sorting of a report.|
 | `Parameters(name)` |Returns the report parameter with the specified name|

@@ -35,7 +35,17 @@ Report parameters can have the following properties:
 
 	Determines the type of the acceptable values. The allowed types are `Boolean`, `DateTime`, `Integer` (values are converted to `System.Int64` i.e. `long`), `Float`(values are converted to `System.Double` i.e. `double`), and `String`. Acceptable values for each type are listed here: [ReportParameterType](/api/Telerik.Reporting.ReportParameterType) The default parameter type is `String`.
 
-	>note In some scenarios you may need to convert the Integer Parameter Value to `System.Int32` i.e. `int`, for example, to pass it to a User Function, DataSource parameter, etc. In these cases, apply the [Conversion Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions%}) `CInt` to the parameter before passing the value to avoid the potential failure of the cast from `System.Int64` to `System.Int32`.
+	+ __DateTime__
+
+		The DateTime values in the report are evaluated based on the Reporting Engine time zone:
+
+		When you use the HTML5-based web viewers, the DateTime parameter values that come from the Reporting REST Service/Report Server are considered UTC values and the Kendo widget transforms the DateTime to local time, i.e. the user sees it in local time. When the user selects another DateTime value for the corresponding Report Parameter, the latter gets converted back to UTC when sending it to the service. This ensures all users will see the correct local times, and send the correct times to the server.
+
+		The desktop viewers may have an embedded Reporting Engine that will work with its local time. If you connect them to a REST Service or Report Server they will also show the reports rendered with the service time.
+
+	+ __Integer__
+
+		In some scenarios you may need to convert the Integer Parameter Value to `System.Int32` i.e. `int`, for example, to pass it to a User Function, DataSource parameter, etc. In these cases, apply the [Conversion Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/conversion-functions%}) `CInt` to the parameter before passing the value to avoid the potential failure of the cast from `System.Int64` to `System.Int32`.
 
 * [Name](/api/Telerik.Reporting.ReportParameter#Telerik_Reporting_ReportParameter_Name)
 

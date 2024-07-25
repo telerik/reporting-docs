@@ -25,7 +25,7 @@ Example: `Fields.ProductID` - returns the value of the field ProductID in the cu
 
 Another option for accessing the values in the fields collection is the global function [Fields(fieldName)]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/overview%}).
 
-When the DataSource is a collection of objects that don't contain named fields, for example, and array of integers/strings, you may access the collection items in the Report Expressions as `= Fields.Item` or `= Fields("Item")`.
+When the DataSource is a collection of objects that don't contain named fields, for example, an array of integers/strings, you may access the collection items in the Report Expressions as `= Fields.Item` or `= Fields("Item")`.
 
 ## Parameters
 

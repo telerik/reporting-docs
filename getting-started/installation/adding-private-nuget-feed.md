@@ -51,6 +51,8 @@ Telerik provides NuGet packages from the private Telerik NuGet feed which you ca
 
 Now all the packages that are licensed to the above users are available in the Visual Studio NuGet Package manager.
 
+> If you work with Visual Studio Code on Linux or Mac OS, use the Nuget CLI to set up the Telerik NuGet feed.
+
 ## Setup with NuGet CLI
 
 1. Download the latest [NuGet executable](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
@@ -64,6 +66,8 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/inde
 	-UserName "your login email" -Password "your password"
 ````
 
+> Note that encrypted passwords are only supported on Windows.
+
 	If you are unable to connect to the feed by using encrypted credentials, store your credentials in clear text.
 
 	````powershell
@@ -71,6 +75,8 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/inde
 	-UserName "your login email" -Password "your password" ^
 	-StorePasswordInClearText
 ````
+
+> Note that encrypted passwords are only supported on Windows.
 
 	If you have already stored a token instead of storing the credentials as clear text, update the definition in the `%AppData%\NuGet\NuGet.config` file by using the following command:
 

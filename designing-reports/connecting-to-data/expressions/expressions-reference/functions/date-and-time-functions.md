@@ -18,7 +18,7 @@ Use these functions to calculate date and time values. Their default format is d
 All DateTime functions return a [DateTime](https://learn.microsoft.com/en-us/dotnet/api/system.datetime) instance. For example, the Expression `= Date(2024, 7, 29)` returns `7/29/2024 12:00:00 AM`. When you need to display only the Date part, you may use one of the following approaches:
 
 * Set the `Format` property of the corresponding report item (e.g. `{0:d}`), for example, through the _Format Builder_ as suggested above;
-* Wrap the DateTime function in the [Text Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}) `Format` or `FormatWithCulture`. In the context of the above example, the Expression should be changed to `= Format('{0:d}', Date(2024, 7, 31))`, and the result would be `7/29/2024`.
+* Wrap the DateTime function in the [Text Function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%}) `Format` or `FormatWithCulture`. In the context of the above example, the Expression should be changed to `= Format('{0:d}', Date(2024, 7, 29))`, and the result would be `7/29/2024`.
 
 The following table lists the available date and time functions with sample output taken on `7/29/2024` at `2:22:22 PM`.
 

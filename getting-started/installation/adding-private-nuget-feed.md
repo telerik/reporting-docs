@@ -66,8 +66,6 @@ NuGet Sources Add -Name "telerik.com" -Source "https://nuget.telerik.com/v3/inde
 	-UserName "your login email" -Password "your password"
 ````
 
-> Note that encrypted passwords are only supported on Windows.
-
 	If you are unable to connect to the feed by using encrypted credentials, store your credentials in clear text.
 
 	````powershell

@@ -27,7 +27,7 @@ The [menu]({%slug telerikreporting/designing-reports/report-designer-tools/deskt
 
 ### Design Views Buttons
 
-Use these buttons to switch between __Design__, __Preview__ and __HTML__ view mode of the report.
+Use these buttons to switch between __Design__, __Preview__, and __HTML__ view mode of the report.
 
 ### Report Selector Button
 
@@ -120,7 +120,7 @@ Double-click on the report type in the [Visual Studio Solution Explorer](https:/
 
 ## Working with Code
 
-All Telerik Reporting CS/VB reports, for example, _ReportName.cs_ inherit from the base [Telerik.Reporting.Report](/api/telerik.reporting.report) type. The Visual Studio Report Designer generates automatically the code in the `InitializeComponent` method of the _ReportName_ type that resides in the `ReportName.designer.cs` file. It is a special method recognized and parsed by the Report Designer in order to display the report in design-time.
+All Telerik Reporting CS/VB reports, for example, _ReportName.cs_ inherit from the base [Telerik.Reporting.Report](/api/telerik.reporting.report) type. The Visual Studio Report Designer generates automatically the code in the `InitializeComponent` method of the _ReportName_ type that resides in the `ReportName.designer.cs` file. It is a special method recognized and parsed by the Report Designer to display the report in design time.
 
 You may add custom code to the _ReportName_ type in the `ReportName.cs` file, where you may find by default only the parameterless constructor of the _ReportName_ type. For example, you may add [Report Event Handlers]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-events%}), etc.
 

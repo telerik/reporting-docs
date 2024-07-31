@@ -77,64 +77,48 @@ End Sub
 ### For ASP.NET Core
 
 In ASP.NET Core, the `Response` object does not expose a `BinaryWrite` method. For that reason, the approach will need to change a little.
-We can instead convert the document bytes, of the result object returned by the `RenderReport` method, to a `Base64` string and we may then return it.
+We can instead use the document bytes of the result object returned by the `RenderReport` method to return a [FileContentResult](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.filecontentresult?view=aspnetcore-8.0):
 
 ````C#
-[HttpGet]
-public IActionResult GenerateReportPDF(string reportName)
-{
-	var reportProcessor = new Telerik.Reporting.Processing.ReportProcessor();
+        [Route("exportreport")]
+        public IActionResult GenerateReportPDF(string reportName)
+        {
+            ReportProcessor reportProcessor = new ReportProcessor();
+            Telerik.Reporting.UriReportSource uriReportSource = new Telerik.Reporting.UriReportSource();
+            uriReportSource.Uri = Path.Combine(_environment.ContentRootPath, "Reports", reportName);
+            RenderingResult result = reportProcessor.RenderReport("PDF", uriReportSource, null);
 
-	// set any deviceInfo settings if necessary
-	var deviceInfo = new System.Collections.Hashtable();
-
-	var reportSource = new Telerik.Reporting.UriReportSource();
-
-	reportSource.Uri = @"C:\Program Files (x86)\Progress\Telerik Reporting Version\Report Designer\Examples\Dashboard.trdp";
-
-	Telerik.Reporting.Processing.RenderingResult result = reportProcessor.RenderReport("PDF", reportSource, deviceInfo);
-
-	var b64 = Convert.ToBase64String(result.DocumentBytes);
-	return new ContentResult() { Content = b64 };
-}
+            return File(result.DocumentBytes, result.MimeType);
+        }
 ````
 
-Then, on the client side, we need to convert that Base64 string back to array. The following function may be used for the task:
+Then, we can make an AJAX request to our controller method to get the rendered report and return it as an attachment using [Blobs](https://developer.mozilla.org/en-US/docs/Web/API/Blob).
 
 ````JS
-function base64ToArrayBuffer(data) {
-		var binaryString = window.atob(data);
-		var binaryLen = binaryString.length;
-		var bytes = new Uint8Array(binaryLen);
-		for (var i = 0; i < binaryLen; i++) {
-			var ascii = binaryString.charCodeAt(i);
-			bytes[i] = ascii;
-		}
-		return bytes;
-	};
+        function exportReport(reportName) {
+            fetch(`/api/sample/exportreport?reportName=${reportName}`)
+                 .then(res => {
+                     if (res.status === 200) {
+                         return res.blob();
+                     } else {
+                         console.log("Could not retrieve PDF document.");
+                     }
+                 })
+                 .then(blob => {
+                    let link = document.createElement('a');
+                    let documentName = reportName.slice(0, -4);
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = `${documentName}.pdf`;
+                    document.body.appendChild(link);
+                    link.click();
+                });
+        }
 ````
 
-Lastly, we can make an AJAX request to our controller method to get the rendered report, convert the returned Base64 string and then return the rendered report as an attachment using [Blobs](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
+## Notes
 
-````JS
-$.ajax({
-	method: "GET",
-	url: '@Url.Action("GenerateReportPDF","ControllerName")',
-	async: false,
-	cache: false,
-	data: { reportName }
-}).done(function(result) {
-	//if the call was successful
-	if (result) {
-		buffer = base64ToArrayBuffer(result)
-		var file = new Blob([buffer], { type: "application/pdf" })
+Whether the report will be downloaded or previewed in the browser depends on the browser's PDF document settings, for example:
 
-		var link = document.createElement('a')
-		link.href = window.URL.createObjectURL(file)
-		link.download = "Report.pdf";
-		document.body.appendChild(link)
-		link.click()
-	}
-})
-````
+- [PDF Settings on Edge](edge://settings/content/pdfDocuments)
+- [PDF Settings on Chrome](chrome://settings/content/pdfDocuments) 
 

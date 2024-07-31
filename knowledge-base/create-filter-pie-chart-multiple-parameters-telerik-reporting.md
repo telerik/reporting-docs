@@ -37,6 +37,10 @@ To create and filter a pie chart with multiple parameters in Telerik Reporting, 
 
     ![An image of the filter applied to the Pie Chart](images/pie-chart-sample-filter-for-multivalue-parameter.png)
 
+In the end, when previewed(for example in the [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})), the pie chart will look as follows:
+
+![An image of the pie chart with the filtered applied to it and previewed in the HTML5 Report Viewer](images/pie-chart-filtered-view-in-web-report-viewer.png)
+
 ## See Also
 
 - [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})

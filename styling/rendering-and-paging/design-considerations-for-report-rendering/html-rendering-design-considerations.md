@@ -22,11 +22,12 @@ The HTML5 rendering extension is based on the Image rendering extension, with so
 * All report items are rendered as separate absolute positioned `<div>` elements.
 * The TextBox with rotated text is rendered as an image and displayed in `<img>` element inside the `<div>` of the report item. This is necessary as the browsers do not support rotated text.
 * All output is generated with __UTF8 encoding.__
-* The strings are measured using GDI+. This can lead to differences between Image rendering and the Web Browsers. Also justified text may require to be adjusted due to the difference in the measurement algorithms.
-* In Interactive preview the Table/Crosstab/List item is rendered on a single page without page breaks.
-* By default the Graph, Map and Barcode items are rendered as SVG elements. In older browsers without support for SVG, the items are rendered automatically as Bitmap objects displayed in IMG elements. The usage of SVG elements can be explicitly controlled through the [HTML5]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5-device-information-settings%}) and [HTML5Interactive]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5interactive-device-information-settings%}) device information settings. More details how to apply the settings are available in the [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) overview.
+* The strings are measured using [GDI+](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) on Windows and [Skia](https://skia.org/) on non-Windows systems. This can lead to differences between Image rendering and previewing in web browsers. Additionally, justified text may require to be adjusted due to the difference in the measurement algorithms.
+* In Interactive preview the Table/Crosstab/List item is rendered on a **single page without page breaks**.
+* Lines thinner than `1px` may not be rendered consistently.
+* By default the Graph, Map, and Barcode items are rendered as `SVG` elements. In older browsers without support for SVG, the items are rendered automatically as [Bitmap](https://en.wikipedia.org/wiki/Bitmap) objects displayed in [IMG elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). The usage of SVG elements can be explicitly controlled through the [HTML5]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5-device-information-settings%}) and [HTML5Interactive]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/html5interactive-device-information-settings%}) device information settings. More details on how to apply the settings are available in the [Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}) overview.
 
->note If the subreport report BackgroundColor is not Transparent (by default is White) subreport item borders may not be rendered. In order to avoid this set the subreport report BackgroundColor to Transparent.
+>note If the subreport report `BackgroundColor` is not `Transparent` (by default is White), subreport item borders may not be rendered. This can be avoided by setting the subreport report `BackgroundColor` to `Transparent`.
 
 ### Pagination
 
@@ -42,8 +43,8 @@ The legacy ASP.NET viewer renders tooltips on SVG elements using the `<title>` a
 
 * Internet Explorer Quirks Mode is not supported, since it is based on Internet Explorer 5.5. For more details check the [Defining document compatibility](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) Microsoft article.
 * Compatibility View for Internet Explorer is not supported, since it is based on Internet Explorer 7. For more details check the [Defining document compatibility](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) Microsoft article.
-* Internet Explorer has a limitation for the number of HTML elements that can be rendered on a single page. This limitation may prevent the displaying of reports with large amount of items rendered without page breaks. Displaying the report in Print preview will page the content.
-* Depending on the browser's layout engine fonts can be measured differently, which may lead to displaying clipped text in reports. The used in the reports fonts should be considered with the targeted browsers.
+* Internet Explorer has a limitation for the number of HTML elements that can be rendered on a single page. This limitation may prevent the displaying of reports with large amounts of items rendered without page breaks. Displaying the report in "Print Preview" will page the content.
+* Depending on the browser's layout engine fonts can be measured differently, which may lead to displaying clipped text in reports. The fonts used in the reports should be considered with the targeted browsers.
 
 ## MHTML Output
 
@@ -53,7 +54,7 @@ Reports can be output as MHTML (Web archive or "MIME Encapsulation of Aggregate 
 
 The following rendering specifics apply to MHTML:
 
-* Styles specified in report item properties are injected to the HEAD tag for use in the corresponding HTML elements.
+* Styles specified in report item properties are injected into the `HEAD` tag for use in the corresponding HTML elements.
 * The size of report items is the same as in design-time and the browser is responsible for sizing them.
 
 ### Interactivity

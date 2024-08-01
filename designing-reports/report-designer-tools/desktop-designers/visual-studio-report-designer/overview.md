@@ -19,9 +19,38 @@ To start/open the designer, double-click on an existing CS/VB file containing th
 
 ## Opening Reports in the Designer
 
-Double-click on the report type in the [Visual Studio Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022) to invoke the Visual Studio Report Designer and open the corresponding report for editing.
+You may create new Reports in the Visual Studio Report Designer, or open existing ones for editing. The designer lets you also import files from other supported formats.
 
-You may import/open also declarative report definitions (TRDX and TRDP files) as explained in the article [Importing Reports Created with the Standalone or Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
+### Creating New Reports and Importing Reports from other formats in the Designer
+
+You may create a new report through the Telerik Reporting Visual Studio Item Template. Here are the steps to follow:
+
+1. Right-click over the project you want to add the new Report type to. We recommend the ReportLibrary or ClassLibrary project types. Select __Add > New Item...__ From the context menu:
+
+	![Add new item to a ReportLibrary project in Visual Studio.](images/AddNewReportVSDesigner.png)
+
+1. From the popped-up `Add New Item` Wizard, select the `Installed` > `C# Items` (for C# projects) or `Common Items` (for VB projects) > `Reporting` section. It gives you three choices:
+
+	![Select Blank Telerik Report from the Reporting submenu in Add New Item wizard of Visual Studio.](images/SelectBlankTelerikReport.png)
+
+	* `Telerik Reporting {{site.suiteversion}} (Blank)` option creates a new report
+	* `Telerik Reporting {{site.suiteversion}} Import Wizard` option lets you import a report from a supported format and open it in the designer for editing:
+
+		![Convert a report and add it to a ReportLibrary project in Visual Studio.](images/ReportConverterPageVSDesigner.png)
+
+		The wizard lets you select one of the external formats we support as explained in the [Importing Reports Overview]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview%}), or import/open a declarative report definition (TRDX and TRDP files) as explained in the article [Importing Reports Created with the Standalone or Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
+
+	* `Telerik Reporting {{site.suiteversion}} Wizard` option lets you create a new blank report or use one of our wizards to create a specific template:
+
+		![Select a report template for your new Telerik Report in Visual Studio.](images/ChooseReportTemplateVSDesigner.png)
+
+1. (optional)If the _Security Warning_ window pops up, click `Trust` to let the Visual Studio Report Designer create/open the selected report definition:
+
+	![Security Warning window in Visual Studio.](images/SecurityWarningVSDesigner.png)
+
+### Opening existing C#/VB Reports in the Designer
+
+Double-click on the report type in the [Visual Studio Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022) to invoke the Visual Studio Report Designer and open the corresponding report for editing.
 
 ## Structure of the Visual Studio Report Designer
 

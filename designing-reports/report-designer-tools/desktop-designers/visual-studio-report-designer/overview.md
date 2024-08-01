@@ -17,9 +17,7 @@ The Visual Studio Report Designer is dedicated to editing CLR/type report defini
 
 ## Starting the Designer and Opening Reports
 
-To start/open the designer, double-click on an existing CS/VB file containing the report definition or right-click on it and select "View Designer". If there is no such file, you may create it using the __Add --> New Item --> Telerik Report *version*__ (from the *Reporting* menu of the wizard).
-
-You may create new Reports in the Visual Studio Report Designer, or open existing ones for editing. The designer lets you also import files from other supported formats.
+To start/open the designer, open an existing CS/VB file containing the report definition, import or create it as explained below.
 
 ### Creating New Reports and Importing Reports from other formats in the Designer
 
@@ -50,7 +48,7 @@ You may create a new report through the Telerik Reporting Visual Studio Item Tem
 
 ### Opening existing C#/VB Reports in the Designer
 
-Double-click on the report type in the [Visual Studio Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022) to invoke the Visual Studio Report Designer and open the corresponding report for editing.
+Double-click on the report type in the [Visual Studio Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022) or right-click on it and select "View Designer" to invoke the Visual Studio Report Designer and open the corresponding report for editing.
 
 ## Structure of the Visual Studio Report Designer
 

@@ -2,7 +2,7 @@
 title: Adding Authorization Header to the Web Report Designer Requests
 description: "Learn how to add an Authorization header to the requests made by the Web Report Designer for better security."
 type: how-to
-page_title: How to Secure the Web Report Designer Requests with an Authozation Header
+page_title: How to Secure the Web Report Designer Requests with an Authorization Header
 slug: add-authentication-header-webreportdesigner
 tags: progress, telerik, reporting, webreportdesigner, authentication
 res_type: kb
@@ -24,29 +24,29 @@ The Web Report Designer, currently, does not expose a property for passing the a
 ## Workaround
 
 ````JavaScript
-    const fetchOverride = window.fetch;
+const fetchOverride = window.fetch;
 
-    window.fetch = function (url, args) {
-        // Retrieve authData from your authentication provider
-        const authData = { token: "your_token_here" };
+window.fetch = function (url, args) {
+    // Retrieve authData from your authentication provider
+    const authData = { token: "your_token_here" };
 
-        if (!args) {
-            args = {
-                headers: {
-                    Authorization: "Bearer " + authData.token,
-                },
-            };
-        } else if (!args.headers || !args.headers.entries) {
-            args.headers = {
-                ...args.headers ?? {},
+    if (!args) {
+        args = {
+            headers: {
                 Authorization: "Bearer " + authData.token,
-            };
-        } else if (args.headers.entries) {
-            args.headers.append("Authorization", "Bearer " + authData.token);
-        }
+            },
+        };
+    } else if (!args.headers || !args.headers.entries) {
+        args.headers = {
+            ...args.headers ?? {},
+            Authorization: "Bearer " + authData.token,
+        };
+    } else if (args.headers.entries) {
+        args.headers.append("Authorization", "Bearer " + authData.token);
+    }
 
-        return fetchOverride(url, args);
-    };
+    return fetchOverride(url, args);
+};
 ````
 
 ## Notes
@@ -78,7 +78,6 @@ function onViewerInitializing(e, args) {
     args.reportViewerOptions.authenticationToken = token;
 }
 ````
-
 
 ## See Also
 

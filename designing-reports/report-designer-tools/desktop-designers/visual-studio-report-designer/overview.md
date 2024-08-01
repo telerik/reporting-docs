@@ -17,9 +17,15 @@ To start/open the designer, double-click on an existing CS/VB file containing th
 
 > The Visual Studio Report Designer works only with the last installed Reporting version. If you have multiple Reporting versions installed on the machine, you will be able to edit CS/VB Reports from the last installed version. Consider the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) for upgrading your ReportLibrary projects.
 
+## Opening Reports in the Designer
+
+Double-click on the report type in the [Visual Studio Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022) to invoke the Visual Studio Report Designer and open the corresponding report for editing.
+
+You may import/open also declarative report definitions (TRDX and TRDP files) as explained in the article [Importing Reports Created with the Standalone or Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
+
 ## Structure of the Visual Studio Report Designer
 
-The Telerik Report Designer has the following elements:
+After you have opened a report in the Telerik Visual Studio Report Designer, you may use the following elements it exposes:
 
 ### Telerik Reporting Menu
 
@@ -113,10 +119,6 @@ Alignment determines how an element resizes. For example, a left-aligned element
 The Visual Studio Report Designer features also `Properties Explorer`, `Report Explorer`, `Group Explorer`, and `Data Explorer`. The first one is displayed by default in the Visual Studio. The other three can be opened from the Telerik Menu.
 
 > If you are using **Visual Studio 2022**, ensure that the `Platform target` of your `Report Library` project is not set to `x86`, or you won't be able to preview your reports. This is because **Visual Studio 2022** is a 64-bit application and, by design, `.NET` does not allow mixing 32-bit and 64-bit assemblies in the same process.
-
-## Opening Reports in the Designer
-
-Double-click on the report type in the [Visual Studio Solution Explorer](https://learn.microsoft.com/en-us/visualstudio/ide/use-solution-explorer?view=vs-2022) to invoke the Visual Studio Report Designer and open the corresponding report for editing.
 
 ## Working with Code
 

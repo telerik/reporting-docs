@@ -13,6 +13,12 @@ previous_url: /ui-report-designer, /designing-reports/report-designer-tools/desk
 
 The Visual Studio Report Designer is dedicated to editing CLR/type report definitions (i.e. `CS` or `VB` files) in the Visual Studio environment. The Visual Studio designer is available only under the `.NET Framework`. Due to technical limitations, we do not yet provide one for `.NET Core`.
 
+## Installation
+
+The Visual Studio Report Designer requires installation on a Windows machine.
+
+The designer gets installed automatically with the [installation of the Telerik Reporting product]({%slug telerikreporting/installation%}). The installation process detects the installed Visual Studio versions on your Windows machine and lets you select which of the supported ones would be integrated with Telerik Reporting - see [System Requirements - IDE Support](https://www.telerik.com/products/reporting/system-requirements).
+
 > The Visual Studio Report Designer works only with the last installed Reporting version. If you have multiple Reporting versions installed on the machine, you will be able to edit CS/VB Reports from the last installed version. Consider the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) for upgrading your ReportLibrary projects.
 
 ## Starting the Designer and Opening Reports

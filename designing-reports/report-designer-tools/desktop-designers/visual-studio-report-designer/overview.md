@@ -159,6 +159,12 @@ All Telerik Reporting CS/VB reports, for example, _ReportName.cs_ inherit from t
 
 You may add custom code to the _ReportName_ type in the `ReportName.cs` file, where you may find by default only the parameterless constructor of the _ReportName_ type. For example, you may add [Report Event Handlers]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-events%}), etc.
 
+## Troubleshooting
+
+The designer uses internally multiple Visual Studio services, which behavior may change with Visual Studio upgrades. We are trying to keep up with the Microsoft changes and test against each new version that appears and we claim to support it. There may be corner cases we miss, causing failures under specific conditions. To troubleshoot such and any other problems related to the Visual Studio Report Designer, please, follow the suggestions in the article [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%}).
+
 ## See Also
 
-* [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%})
+* [How to use Visual Studio Report Designer to edit CS Reports in .NET Projects]({%slug how-to-use-vs-designer-in-dotnet-core%})
+* [Standalone Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
+* [Web Report Designer Overview]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})

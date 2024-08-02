@@ -42,13 +42,13 @@ You may create a new report through the Telerik Reporting Visual Studio Item Tem
 
 		![Convert a report and add it to a ReportLibrary project in Visual Studio.](images/ReportConverterPageVSDesigner.png)
 
-		The wizard lets you select one of the external formats we support as explained in the [Importing Reports Overview]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview%}), or import/open a declarative report definition (TRDX and TRDP files) as explained in the article [Importing Reports Created with the Standalone or Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
+		The wizard lets you select one of the external formats we support as explained in the [Importing Reports Overview]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/overview%}), or import/open a declarative report definition (TRDX and TRDP files) as explained in the article [Importing Reports Created with the Standalone or Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
 
 	* `Telerik Reporting {{site.suiteversion}} Wizard` option lets you create a new blank report or use one of our wizards to create a specific template:
 
 		![Select a report template for your new Telerik Report in Visual Studio.](images/ChooseReportTemplateVSDesigner.png)
 
-1. (optional)If the _Security Warning_ window pops up, click `Trust` to let the Visual Studio Report Designer create/open the selected report definition:
+1. (optional) If the _Security Warning_ window pops up, click `Trust` to let the Visual Studio Report Designer create/open the selected report definition:
 
 	![Security Warning window in Visual Studio.](images/SecurityWarningVSDesigner.png)
 
@@ -161,7 +161,7 @@ You may add custom code to the _ReportName_ type in the `ReportName.cs` file, wh
 
 ## Troubleshooting
 
-The designer uses internally multiple Visual Studio services, which behavior may change with Visual Studio upgrades. We are trying to keep up with the Microsoft changes and test against each new version that appears and we claim to support it. There may be corner cases we miss, causing failures under specific conditions. To troubleshoot such and any other problems related to the Visual Studio Report Designer, please, follow the suggestions in the article [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%}).
+Internally the designer uses multiple Visual Studio services, whose behavior may change with Visual Studio upgrades. We try to keep up with Microsoft's changes and test against each new version and we claim to support it. There may be corner cases we miss, causing failures under specific conditions. To troubleshoot such and any other problems related to the Visual Studio Report Designer, please, follow the suggestions in the article [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%}).
 
 ## See Also
 

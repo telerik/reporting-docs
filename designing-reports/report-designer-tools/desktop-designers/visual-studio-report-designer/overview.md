@@ -161,7 +161,7 @@ You may add custom code to the _ReportName_ type in the `ReportName.cs` file, wh
 
 ## Troubleshooting
 
-Internally the designer uses multiple Visual Studio services, whose behavior may change with Visual Studio upgrades. We try to keep up with Microsoft's changes and test against each new version and we claim to support it. There may be corner cases we miss, causing failures under specific conditions. To troubleshoot such and any other problems related to the Visual Studio Report Designer, please, follow the suggestions in the article [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%}).
+Internally the designer uses multiple Visual Studio services, whose behavior may change with Visual Studio upgrades. We try to keep up with Microsoft's changes and test against each new version that we claim to support. There may be corner cases we miss, causing failures under specific conditions. To troubleshoot such and any other problems related to the Visual Studio Report Designer, please, follow the suggestions in the article [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%}).
 
 ## See Also
 

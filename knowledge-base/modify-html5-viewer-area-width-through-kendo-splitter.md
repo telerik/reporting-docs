@@ -22,8 +22,7 @@ res_type: kb
 	</tr>
 	<tr>
 		<td>Report Viewer</td>
-		<
-td>All Html5 Report Viewers</td>
+		<td>All Html5 Report Viewers</td>
 	</tr>
 </table>
 

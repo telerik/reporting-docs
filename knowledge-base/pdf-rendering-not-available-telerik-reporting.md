@@ -1,6 +1,6 @@
 ---
 title: Resolving PDF Rendering Format Not Available in ASP.NET Core Applications
-description: "Learn how to fix the "PDF rendering format is not available" error in Telerik Reporting when upgrading to .NET 8 and using ASP.NET Core applications."
+description: "Learn how to fix the 'PDF rendering format is not available' error in Telerik Reporting when upgrading to .NET 8 and using ASP.NET Core applications."
 type: troubleshooting
 page_title: Fixing PDF Rendering Format Unavailability in Telerik Reporting for ASP.NET Core
 slug: pdf-rendering-not-available-telerik-reporting

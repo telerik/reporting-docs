@@ -27,6 +27,12 @@ Starting with 2022 R3, a new version of Standalone Report Designer is available.
 
 This section explains the differences between both versions of Standalone Report Designer - for .NET Framework and .NET 8. Although lots of code was shared between the versions, the .NET induced some changes that are listed below.
 
+* __Preview and Export using Skia Graphics Engine__ - The Standalone Report Designer for .NET can switch between graphics engines (GDI+ and Skia) when previewing and exporting reports. This functionality is useful for report authors that design their reports on Windows machines but the target platform for their application is Linux or macOS, where Skia library is used for processing and rendering. Since Skia does not support EMF format (vector drawing for image rendering), the previewed image may look blurry when zoomed in or out. Switching the state is applied to all reports currently loaded in the Standalone Report Designer.
+  
+    ![image](https://github.com/user-attachments/assets/f4e4bef3-952e-4295-a030-591ea5f45f7d)
+
+
+
 * __Automatic discovery of 3rd party ADO.NET Data Providers__ - The Standalone Report Designer for the .NET Framework required manually adding an entry in the DbProviderFactories section in the application configuration file when needed to use a third-party ADO.NET provider. The Report Designer for .NET will try to discover and automatically load the available ADO.NET data providers when building a new SQL connection. The supported providers are: `Microsoft.Data.SqlClient`, `System.Data.SqlClient`, `Npgsql for PostgreSQL`, `System.Data.SQLite`, `MySql.Data.MySqlClient`, `Oracle.ManagedDataAccess.Client`. `ODBC` and `OleDB` data sources are also supported.
 
 	> If any of the supported data providers doesn't appear in the dropbox of the SqlDataSource wizard you need to add its .dll and its dependency .dll files in the folder with the `Telerik.ReportDesigner.Net.exe` file.

@@ -11,7 +11,7 @@ previous_url: /ui-report-designer, /designing-reports/report-designer-tools/desk
 
 # Visual Studio Report Designer Overview
 
-The Visual Studio Report Designer is dedicated to editing CLR/type report definitions (i.e. `CS` or `VB` files) in the Visual Studio environment. The Visual Studio designer is available only under the `.NET Framework`. Due to technical limitations, we do not yet provide one for `.NET Core`.
+The Visual Studio Report Designer is dedicated to editing CLR/type report definitions (i.e. `CS` or `VB` files) in the Visual Studio environment. The Visual Studio designer is available only under the `.NET Framework`. Due to technical limitations, we do not yet provide one for `.NET`. For example, internally the designer uses multiple Visual Studio services that are not available for .NET.
 
 ## Installation
 
@@ -161,7 +161,7 @@ You may add custom code to the _ReportName_ type in the `ReportName.cs` file, wh
 
 ## Troubleshooting
 
-Internally the designer uses multiple Visual Studio services, whose behavior may change with Visual Studio upgrades. We try to keep up with Microsoft's changes and test against each new version that we claim to support. There may be corner cases we miss, causing failures under specific conditions. To troubleshoot such and any other problems related to the Visual Studio Report Designer, please, follow the suggestions in the article [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%}).
+To troubleshoot problems related to the Visual Studio Report Designer and Visual Studio Project/Item Templates, please, follow the suggestions in the article [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%}).
 
 ## See Also
 

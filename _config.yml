@@ -437,7 +437,7 @@ buildversion: "18.2.24.806"
 reportserverversion: "10.2.24.806"
 spaviewerversion: "23.24.806"
 nodeversion: "16.0.0"
-angularsubsetversion: "15.0.0"
+angularsubsetversion: "16.1.0"
 kendosubsetversion: "2022.3.913"
 blazoruiversion: "4.6.0"
 

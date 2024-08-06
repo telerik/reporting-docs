@@ -1,29 +1,43 @@
 ---
-title: Integration with Reporting REST Service
-page_title: Using Native Angular Report Viewer with a Reporting REST Service
-description: "Learn how the Native Angular Report Viewer can be implemented in an Angular application that connects to a Reporting service with a few simple steps."
-slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-reporting-service
-tags: how,to,use,angular,report,viewer,with,angular,cli
+title: Integration with Angular Standalone Components
+page_title: Using Native Angular Report Viewer with Standalone Components
+description: "Learn how the Native Angular Report Viewer can be implemented in an Angular application that uses the Standalone Components approach."
+slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/how-to-use-with-standalone-components
+tags: how,to,use,native,angular,report,viewer,with,standalone,components
 published: True
-position: 3
+position: 5
 ---
 
-# Integrating the Native Angular Report Viewer with the Reporting Service
+# Integrating the Native Angular Report Viewer in a Standalone Component
 
-This tutorial demonstrates how to add the native Angular Report Viewer component to a new Angular application.
+This tutorial demonstrates how to add the native Angular Report Viewer component to a new Angular application that uses the Standalone Components approach which was made enabled by default for new Angular applications starting with the [Angular 17](https://blog.angular.dev/introducing-angular-v17-4d7033312e4b) release.
 
 ## Prerequisites
 
 The following list describes the prerequisites for completing the tutorial:
 
 * Review the Native Angular Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%}).
-* [Angular CLI Project](https://angular.io/cli).
+* [Angular CLI Project](https://angular.dev/tools/cli).
 * A running application that hosts a Reporting REST service at address `/api/reports`. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
 
 ### Steps:
 
-1. Create a new Angular application using the [Angular CLI](https://angular.io/cli).
-1. Install the Native Angular Report Viewer NPM package with the following command:
+1. Create a new Angular application using the [Angular CLI](https://angular.dev/tools/cli).
+1. Enable Angular Animations in the project by following the [Enabling the animations module](https://angular.dev/guide/animations#enabling-the-animations-module) article. For example, the `provideAnimations` function can be invoked in the `bootstrapApplication` function call in `app.config.ts`:
+
+	````TypeScript
+import { ApplicationConfig } from '@angular/core';
+import { provideRouter } from '@angular/router';
+import { routes } from './app.routes';
+import { provideAnimations } from '@angular/platform-browser/animations';
+
+export const appConfig: ApplicationConfig = {
+	providers: [provideRouter(routes), provideAnimations()]
+};
+````
+
+
+1. Install the `Native Angular Report Viewer` NPM package with the following command:
 
 	````powershell
 npm install @progress/telerik-angular-native-report-viewer
@@ -36,24 +50,25 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 ````
 
 
-1. Once installed, import the `ReportingAngularViewerModule` in [your application root module](https://angular.io/guide/ngmodules#!#angular-modularity):
+1. Once installed, `import` the `ReportingAngularViewerModule` in one of your standalone components of choice - [Importing in Standalone components](https://angular.dev/guide/components/importing#standalone-components):
 
 	````TypeScript
-import { ReportingAngularViewerModule } from '@progress/telerik-angular-native-report-viewer';
-	
-	@NgModule({
-		declarations: [
-			AppComponent
-		],
-		imports: [
-			BrowserModule,
-			AppRoutingModule,
-			BrowserAnimationsModule,
-			ReportingAngularViewerModule
-		],
-		providers: [],
-		bootstrap: [AppComponent]
+import { Component, ViewChild } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { ReportingAngularViewerComponent, ReportingAngularViewerModule } from '@progress/telerik-angular-native-report-viewer'
+
+@Component({
+	selector: 'app-root',
+	standalone: true,
+	imports: [RouterOutlet, ReportingAngularViewerModule],
+	templateUrl: './app.component.html',
+	styleUrl: './app.component.scss'
 	})
+	export class AppComponent {
+	title = 'Native Angular Report Viewer Demo';
+	
+	@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+}
 ````
 
 
@@ -106,7 +121,7 @@ npm run start
 
 ## See Also
 
-* [Angular CLI](https://angular.io/cli)
+* [Angular CLI](https://angular.dev/tools/cli)
 * [Native Angular Report Viewer Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/requirements%})
 * [Enabling CORS for the Reporting REST Service]({%slug cannot-access-the-reporting-rest-service%})
 * [Native Angular Report Viewer Options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/api-reference/options%})

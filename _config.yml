@@ -432,14 +432,14 @@ defaults:
 
 # Aliases available in the markdown template. The below will expand {{site.foo}} to Bar in the output
 # "foo": "Bar"
-suiteversion: "2024 Q2"
-buildversion: "18.1.24.709"
-reportserverversion: "10.1.24.709"
-spaviewerversion: "22.24.709"
+suiteversion: "2024 Q3"
+buildversion: "18.2.24.806"
+reportserverversion: "10.2.24.806"
+spaviewerversion: "23.24.806"
 nodeversion: "16.0.0"
-angularsubsetversion: "14.0.0"
+angularsubsetversion: "16.1.0"
 kendosubsetversion: "2022.3.913"
-blazoruiversion: "4.4.0"
+blazoruiversion: "4.6.0"
 
 # Feedback Form Product code
 productCode: REPORTING

@@ -27,13 +27,13 @@ The following list describes the prerequisites for completing the tutorial:
 
 	````TypeScript
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { routes } from './app.routes';
-import { provideAnimations } from '@angular/platform-browser/animations';
+	import { provideRouter } from '@angular/router';
+	import { routes } from './app.routes';
+	import { provideAnimations } from '@angular/platform-browser/animations';
 
-export const appConfig: ApplicationConfig = {
-	providers: [provideRouter(routes), provideAnimations()]
-};
+	export const appConfig: ApplicationConfig = {
+		providers: [provideRouter(routes), provideAnimations()]
+	};
 ````
 
 
@@ -54,21 +54,21 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 
 	````TypeScript
 import { Component, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ReportingAngularViewerComponent, ReportingAngularViewerModule } from '@progress/telerik-angular-native-report-viewer'
+	import { RouterOutlet } from '@angular/router';
+	import { ReportingAngularViewerComponent, ReportingAngularViewerModule } from '@progress/telerik-angular-native-report-viewer'
 
-@Component({
-	selector: 'app-root',
-	standalone: true,
-	imports: [RouterOutlet, ReportingAngularViewerModule],
-	templateUrl: './app.component.html',
-	styleUrl: './app.component.scss'
-	})
-	export class AppComponent {
-	title = 'Native Angular Report Viewer Demo';
-	
-	@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
-}
+	@Component({
+		selector: 'app-root',
+		standalone: true,
+		imports: [RouterOutlet, ReportingAngularViewerModule],
+		templateUrl: './app.component.html',
+		styleUrl: './app.component.scss'
+		})
+		export class AppComponent {
+		title = 'Native Angular Report Viewer Demo';
+		
+		@ViewChild('viewer') public viewer!: ReportingAngularViewerComponent;
+	}
 ````
 
 

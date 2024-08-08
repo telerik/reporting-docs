@@ -1,6 +1,6 @@
 ---
 title: Error registering the viewer with the service. Access to the path X is denied.
-description: "Learn why after deploying on IIS there is an error Access to the path 'C:\Windows\TEMP\<NAME>\<VERSION>\LCT\value.dat' is denied and how to fix it."
+description: Learn why after deploying on IIS there is an error 'Access to the path C:\Windows\TEMP\<NAME>\<VERSION>\LCT\value.dat is denied' and how to fix it.
 type: troubleshooting
 page_title: Fixing the problem Error registering the viewer with the service. Access to the path X is denied.
 slug: error-registering-the-viewer-with-the-service

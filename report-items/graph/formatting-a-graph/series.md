@@ -103,6 +103,7 @@ To define a custom color palette:
 
 1. Click the chart series that you want to change. The selected axis properties are listed in the __Property Browser__.
 1. In the __Appearance__ group. Set the __ColorPalette property__ to - __Color Palette__.
+1. One of the three options must be selected from the drop-down menu no matter which one.
 1. In the __Colors property__, click the __Edit Collection (…) button__. The Color Collection Editor opens.
 1. Click __Add__ to add a color and select a color from the drop-down.
 1. Click __Add__ to add more colors to the palette.

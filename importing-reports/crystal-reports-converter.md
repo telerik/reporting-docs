@@ -15,7 +15,9 @@ This article explains how to convert a report created with SAP Crystal Reports t
 
 ## Changes Information
 
-The Telerik Crystal Reports Converter is built against Crystal Reports 13.0.20.2399. In case you need to convert a Crystal Reports definition that has a version lower than 13.0.2000, please use Telerik Reporting R3 2019 or earlier and check this KB article for more details: [Converting reports from various versions of CrystalReports]({%slug converting-reports-from-various-versions-of-crystalreports%}).
+The latest Telerik Crystal Reports Converter is built against Crystal Reports 13.0.20.2399. It offers an improved conversion process, supports more report items, and provides a better user experience. It is actively developed and extended to cover more user scenarios.
+
+Converting a Crystal Reports definition with a version lower than 13.0.2000 is not supported. We strongly recommend first upgrading such older Crystal Reports definitions to a supported version and then utilizing the latest Crystal Reports converter. If this is not an option, you can try an older converter available in Telerik Reporting R3 2019 or earlier versions. Note that this would result in a conversion with lower quality. More info is available in this KB article: [Converting reports from various versions of CrystalReports]({%slug converting-reports-from-various-versions-of-crystalreports%}).
 
 ![Image of the Report Converter tool showing a list of the available converters, a description of the currently selected converter, and a field for the source of the report definition to convert](images/Designer/crystal-reports-converter.png)
 

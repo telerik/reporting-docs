@@ -1,6 +1,6 @@
 ---
 title: Enabling Text Input in Send Email Dialog with React Report Viewer in a Material UI Modal
-description: Learn how to resolve the inability to edit fields in the Send Email dialog of React Report Viewer when used inside a Material UI Modal.
+description: "Learn how to resolve the inability to edit fields in the Send Email dialog of React Report Viewer when used inside a Material UI Modal."
 type: troubleshooting
 page_title: How to Make Text Fields Editable in Send Email Dialog of React Report Viewer in Material UI Modal
 slug: enable-text-input-send-email-dialog-react-reportviewer-material-ui-modal
@@ -10,20 +10,32 @@ ticketid: 1662132
 ---
 
 ## Environment
-| Product | Progress® Telerik® Reporting |
-| --- | --- |
-| Version | 18.2.24.806 |
+
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Report Viewer</td>
+			<td>React Report Viewer </td>
+		</tr>
+	</tbody>
+</table>
 
 ## Description
-When using the [Telerik ReportViewer](https://docs.telerik.com/reporting/react-report-viewer) in a React application with the Material UI Modal component, the text fields in the "Send Email" dialog become uneditable, although dropdowns can still be modified. This issue occurs because the Material UI Modal enforces focus on itself, preventing any interactions with the "Send Email" dialog.
+When using the [React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview%}) in a React application with the [Material UI Modal component](https://mui.com/material-ui/react-modal/), the text fields in the "Send Email" dialog become uneditable, although dropdowns can still be modified. 
 
 ## Cause
-The Material UI Modal component enforces focus within itself, which restricts user interactions with modal dialogs that open on top of it, such as the "Send Email" dialog of the Telerik ReportViewer.
+
+This issue occurs because the Material UI Modal enforces focus on itself, preventing any interactions with the "Send Email" dialog.
 
 ## Solution
-To resolve this issue, set the `disableEnforceFocus` property of the Material UI Modal to `true`. This action allows focus to be moved to the "Send Email" dialog, enabling text input in its fields. Here is an example on how to implement this:
 
-```jsx
+To resolve this issue, set the `disableEnforceFocus` property of the Material UI Modal to `true`. This action allows focus to be moved to the "Send Email" dialog, enabling text input in its fields:
+
+````JavaScript
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -79,10 +91,10 @@ export default function BasicModal() {
     </div>
   );
 }
-```
+````
 
 By setting `disableEnforceFocus={true}`, the focus is no longer strictly enforced within the Material UI Modal, allowing for interaction with the "Send Email" dialog fields.
 
 ## See Also
 
-- [Material UI Modal API](https://mui.com/material-ui/api/modal/)
+* [Material UI Modal API](https://mui.com/material-ui/api/modal/)

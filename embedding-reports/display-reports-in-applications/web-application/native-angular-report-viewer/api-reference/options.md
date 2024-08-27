@@ -206,14 +206,6 @@ reportSource: ReportSourceOptions = { report: "Telerik.Reporting.Examples.CSharp
 			</td>
 		</tr>
 		<tr>
-			<td>enableSendEmail</td>
-			<td>
-				<p><i>boolean, optional;</i></p>
-				<p>Determines whether the Send Email functionality is enabled. If set to <i>true</i> the Send Email button will be displayed in the toolbar.</p>
-				<p>Default value: <strong>false</strong></p>
-			</td>
-		</tr>
-		<tr>
 			<td>width</td>
 			<td>
 				<p><i>string, optional;</i></p>

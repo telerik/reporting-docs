@@ -231,6 +231,9 @@ navigation:
     embedding-reports/display-reports-in-applications/wpf-application:
         position: 12
         title: "WPF Application"
+    embedding-reports/display-reports-in-applications/wpf-application/customizing:
+        position: 23
+        title: "Customizing"
     embedding-reports/display-reports-in-applications/wpf-application/troubleshooting:
         position: 15
         title: "Troubleshooting"

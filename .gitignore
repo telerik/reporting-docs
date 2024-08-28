@@ -9,6 +9,8 @@
 /_assets/
 /_build/
 /_buildApi/
+/_includes/
+/_tools/RemoveHtmlExtensionFromApiRefSitemap/
 /_common/root/
 /_data/
 /_layouts/

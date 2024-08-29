@@ -5,8 +5,8 @@ description: "Learn how to set the theme of the WPF Report Viewer using implicit
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)
 tags: setting,a,theme,(using,implicit,styles)
 published: True
-position: 5
-previous_url: /wpf-report-viewer-implicit-styles
+position: 2
+previous_url: /wpf-report-viewer-implicit-styles, /embedding-reports/display-reports-in-applications/wpf-application/setting-a-theme-(using-implicit-styles)
 ---
 
 # Setting a Theme (Using Implicit Styles)

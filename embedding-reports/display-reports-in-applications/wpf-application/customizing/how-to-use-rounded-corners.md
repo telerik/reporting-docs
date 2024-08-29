@@ -1,7 +1,7 @@
 ---
 title: Using Rounded Corners
 page_title: Set Rounded Corners in the WPF Report Viewer
-description: "Learn how to change the corner radisu of the WPF Report Viewer in Telerik Reporting."
+description: "Learn how to change the corner radius of the WPF Report Viewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/customizing/how-to-use-rounded-corners
 tags: how,to,use,rounded,corners,border,radius
 published: True
@@ -10,7 +10,7 @@ position: 0
 
 # Defining the Border Radius
 
-With the [Progress® Telerik® Reporting 2024 Q3 (18.2.24.806)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q3-18-2-24-806) release of Telerik Reporting, the border radius of the borders of the WPF Report Viewer can be modified from code behind or from the XAML:
+With the [2024 Q3 (18.2.24.806)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q3-18-2-24-806) release of Telerik Reporting, the border radius of the WPF Report Viewer's borders can be modified from the code behind or the XAML:
 
 ````C#
 public MainWindow()
@@ -35,7 +35,7 @@ public MainWindow()
 ````
 
 
-Supported for all of the themes available to the WPF Report Viewer.
+Supported in all of the themes available to the WPF Report Viewer.
 
 ## See Also
 

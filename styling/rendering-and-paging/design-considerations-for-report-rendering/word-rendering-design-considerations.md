@@ -66,8 +66,8 @@ The following is a brief description of how styles are rendered in Word.
 
 The following rules apply to rendered report items:
 
-* The [PictureBox report item]({%slug telerikreporting/designing-reports/report-structure/picturebox%})'s Sizing property should be set to AutoSize for best image quality or the PictureBox.The size should match the actual image size. In case you get a blurred image at run-time, change the Sizing mode or resize the PictureBox item to match the size of the produced image.
-* The [Cross-Section item]({%slug telerikreporting/designing-reports/report-structure/cross-section-item%}) renders its graphical primitives as images. It is recommended to set the *Position* property to `Front` to allow rendering it on top of the other items, otherwise the Word application may apply undesired offset to it.
+* The [PictureBox report item]({%slug telerikreporting/designing-reports/report-structure/picturebox%})'s Sizing property should be set to AutoSize for best image quality or the PictureBox.Size should match the actual image size. In case you get a blurred image at run-time, change the Sizing mode or resize the PictureBox item to match the size of the produced image.
+* The [Cross-Section item]({%slug telerikreporting/designing-reports/report-structure/cross-section-item%}) renders its graphical primitives as images. It is recommended to set the *Position* property to `Front` to allow rendering it on top of the other items. Otherwise, the Word application may apply an undesired offset to it.
 * The [Checkbox item]({%slug telerikreporting/designing-reports/report-structure/checkbox%}) is rendered in two parts. The _Checked_ status is shown as an image, and the _Text_ value is displayed as text beside it.
 
 ## Interactivity

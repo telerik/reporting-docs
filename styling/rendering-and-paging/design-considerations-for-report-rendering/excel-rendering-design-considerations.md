@@ -25,20 +25,20 @@ __Telerik Reporting__ produces Excel files in:
 * Microsoft Excel 2007 and above (OpenXML 2.0). This rendering extension requires [Third-Party Dependencies]({%slug telerikreporting/using-reports-in-applications/third-party-dependencies%}).
 * Microsoft Excel 97-2003 (BIFF, v.8)
 
-Telerik Reporting does not rely on Microsoft Office being installed in order to export to both formats. __Microsoft Excel 97-2003__ files can be opened by Microsoft Excel 97 for Windows and later.
+Telerik Reporting does not rely on Microsoft Office being installed to export to both formats. __Microsoft Excel 97-2003__ files can be opened by Microsoft Excel 97 for Windows and later.
 
 __Microsoft Excel 2007__ files can be opened by Microsoft Excel 2007 for Windows and later and has the following advantages over __Microsoft Excel 97-2003__ :
 
 * Works in Medium Trust.
 * Supports up to 16 million colors.
 * Hyperlinks support.
-* Graph items are rendered as Metafiles (EMF). This guarantees best quality in any scale factor and when printing. The format must be considered if the Excel file will be post-processed by third party tool.
+* Graph items are rendered as Metafiles (EMF). This guarantees the best quality in any scale factor and when printing. The format must be considered if the Excel file will be post-processed by a third-party tool.
 
-The Excel Rendering Extensions tries to reproduce as much of the original report as possible regarding layout and styling, but there are certain limitations that are imposed by the physical and logical structure of an Excel Document.
+The Excel Rendering Extensions tries to reproduce as much of the original report as possible regarding layout and styling, but certain limitations are imposed by the physical and logical structure of an Excel Document.
 
 ## Report Item Layout
 
-* The layout of the generated Excel document is controlled by the device info parameter [SplitWorksheetOnPageBreak]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}). By default, the entire report is rendered into a single Excel worksheet and the paging is not applied. If the _SplitWorksheetOnPageBreak_ is set to **true**, new worksheet gets generated on each page break configured in the report defintition.
+* The layout of the generated Excel document is controlled by the device info parameter [SplitWorksheetOnPageBreak]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/overview%}). By default, the entire report is rendered into a single Excel worksheet and the paging is not applied. If the _SplitWorksheetOnPageBreak_ is set to **true**, a new worksheet gets generated on each page break configured in the report definition.
 * Overlapping items are not supported and will be moved down/right by the Excel renderer so that they do not overlap.
 * When the TextBox grows vertically to accommodate larger content, Excel may render the text with larger space between the lines.
 
@@ -53,7 +53,7 @@ The Excel Rendering Extensions tries to reproduce as much of the original report
 
 ## Page Headers and Footers
 
-The page header and footer render differently depending on the [Excel 2003 Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings%}). The page header can be rendered in two ways: as a sequence of frozen rows at the top of the worksheet, or in the native Excel page header. The page footer can also be rendered in two ways: as sequence of excel cells at the bottom of the worksheet or in the native Excel page footer. The native Excel page sections are divided in three – left, middle and right. Report items will enter the respective page footer section according to their original location in design-time.
+The page header and footer render differently depending on the [Excel 2003 Device Information Settings]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-export-formats/excel-2003-device-information-settings%}). The page header can be rendered in two ways: as a sequence of frozen rows at the top of the worksheet, or in the native Excel page header. The page footer can also be rendered in two ways: as a sequence of Excel cells at the bottom of the worksheet or in the native Excel page footer. The native Excel page sections are divided into three – left, middle, and right. Report items will enter the respective page footer section according to their original location in design time.
 
 >note Because of Excel limitations, TextBoxes are the only type of report item that can be rendered in the native Excel header/footer section.
 
@@ -76,8 +76,8 @@ Background images are not supported.
 | Report Item | Rendering Notes |
 | ------ | ------ |
 |TextBox|TextBox values are converted to string or number cells in Excel depending on the actual value. If a supported .NET string format is supplied through the Format property of the TextBox, the resulting cell is accordingly formatted respecting the Culture of the TextBox. Item binding expressions are not converted to Excel formulas.|
-|Graph|Graph report items are rendered as an Excel Picture object and not Excel Chart object. In __Microsoft Excel 97-2003__ it is a Bitmap image; in __Microsoft Excel 2007 and above__ it is a Metafile(EMF).|
-|Barcode|Barcode is rendered as an Excel Picture object with a Bitmap image. In __Microsoft Excel 97-2003__ it is a Bitmap image; in __Microsoft Excel 2007 and above__ it is a Metafile(EMF). Due to this if the barcode is small, when exported to the __Microsoft Excel 97-2003 (XLS)__ format, the image will be rasterized and the barcode might become unreadable. Exporting to __Microsoft Excel 2007 and above(XLSX)__ is advised because then the image will be in a vector format (EMF) |
+|Graph|Graph report items are rendered as an Excel Picture object and not an Excel Chart object. In __Microsoft Excel 97-2003__ it is a Bitmap image; in __Microsoft Excel 2007 and above__ it is a Metafile(EMF).|
+|Barcode|Barcode is rendered as an Excel Picture object with a Bitmap image. In __Microsoft Excel 97-2003__ it is a Bitmap image; in __Microsoft Excel 2007 and above__ it is a Metafile(EMF). Due to this if the barcode is small when exported to the __Microsoft Excel 97-2003 (XLS)__ format, the image will be rasterized and the barcode might become unreadable. Exporting to __Microsoft Excel 2007 and above(XLSX)__ is advised because then the image will be in a vector format (EMF) |
 |Table|Table is rendered as a range of Excel cells.|
 |HtmlTextBox|HtmlTextBox is rendered as plain text with no formatting.|
 |Shape|Shape report items are rendered as Excel Picture objects with Bitmap images, not Microsoft Office Drawings.|
@@ -89,13 +89,13 @@ Background images are not supported.
 
 ## Merging Cells
 
-The Excel renderer is mainly a layout renderer. Its purpose is to replicate the layout of the report being rendered as closely as possibly in an Excel worksheet and consequently cells might be merged in the worksheet to keep the WYSIWYG report layout. Merged cells are possible source for problems, since the sort functionality in Excel requires cells to be merged in a very specific way for sort to work properly e.g. Excel requires that the ranges of merged cells have the same size in order to be sorted. 
+The Excel renderer is mainly a layout renderer. Its purpose is to replicate the layout of the report being rendered as closely as possible in an Excel worksheet and consequently, cells might be merged in the worksheet to keep the WYSIWYG report layout. Merged cells are a possible source for problems since the sort functionality in Excel requires cells to be merged in a very specific way for sort to work properly e.g. Excel requires that the ranges of merged cells have the same size to be sorted. 
 
-If sorting is important for your exported to Excel reports, the guidelines below can help you reduce the number of merged cells in your Excel worksheets, which is the common cause for difficulties with Excel sort functionality: 
+If sorting is important for your exported Excel reports, the guidelines below can help you reduce the number of merged cells in your Excel worksheets, which is the common cause of difficulties with Excel sort functionality: 
 
 * The most common cause of merged cells is improper or missing left/right alignment of report items. Make sure the left and right edges of all report items line up with one another. The alignment and applying the same width to report items will usually solve the problem.
-* Aligning items precisely might not be enough, and in some rare cases columns might continue to be merged. This is likely caused by internal unit conversion and rounding when the Excel worksheet is rendered. In the report definition, you can specify location and size in different measurement units such as inches, pixels, centimeters, and points, but internally Excel uses points. So in order to minimize conversion and the potential inaccuracy of rounding when converting inches and centimeters to points, consider specifying all measurements in points (one inch is 72 points).
-* The Page Header of the report interferes with the exported columns in Excel. A horizontal page break (see [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})) that splits a report item in two parts will result in an additional Excel column in the item. For that reason, you need to make sure that the report physical page is wide enough to accommodate the entire report content so that there is no horizontal page break introduced. The report designers indicate when the report is wider than the physical page through a yellow warning triangle at the top left corner of the report. You may check the warning message by hovering over the triangle.
+* Aligning items precisely might not be enough, and in some rare cases, columns might continue to be merged. This is likely caused by internal unit conversion and rounding when the Excel worksheet is rendered. In the report definition, you can specify location and size in different measurement units such as inches, pixels, centimeters, and points, but internally Excel uses points. So to minimize conversion and the potential inaccuracy of rounding when converting inches and centimeters to points, consider specifying all measurements in points (one inch is 72 points).
+* The Page Header of the report interferes with the exported columns in Excel. A horizontal page break (see [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%})) that splits a report item into two parts will result in an additional Excel column in the item. For that reason, you need to make sure that the report's physical page is wide enough to accommodate the entire report content so that there is no horizontal page break introduced. The report designers indicate when the report is wider than the physical page through a yellow warning triangle at the top left corner of the report. You may check the warning message by hovering over the triangle.
 
 ## Page Settings
 
@@ -140,7 +140,7 @@ If any other paper size is specified, the default printer settings will be used.
 
 ## Formatting Strings
 
-Formatting Strings used in reports are applied on rendering the document in the selected format. To preserve the result from previewing the document, formats are saved as custom formatting strings in the Excel file. Otherwise, culture specififc setting can change the data meaning in the Excel file. 
+Formatting Strings used in reports are applied to rendering the document in the selected format. To preserve the result from previewing the document, formats are saved as custom formatting strings in the Excel file. Otherwise, culture-specific settings can change the data meaning in the Excel file. 
 
 >tip If an item's Value property is evaluated as a string, the Numeric/DateTime formatting string will not be applied.
 
@@ -185,25 +185,25 @@ If a valid format string is detected by the rendering extension, the raw value w
 
 Excel places limitations on exported reports due to the format capabilities. The most significant are the following:
 
-* TextBoxes are rendered within one Excel cell. Font size, font face, decoration, font style and text/vertical align are the only formatting that is supported on individual text within an Excel cell.
+* TextBoxes are rendered within one Excel cell. Font size, font face, decoration, font style, and text/vertical alignment are the only formatting that is supported on individual text within an Excel cell.
 * Telerik Reporting expressions are not converted to Excel formulas. TextBox values that are expressions are evaluated during report processing and the result is exported as content of Excel cell.
 * Excel does not support background images for individual cells, so Background images for report items (including Report) are ignored.
 * Excel native page headers and footers support a maximum of 255 characters including [Formatting and VBA Codes for Headers and Footers](https://learn.microsoft.com/en-us/previous-versions/office/developer/office-2007/bb225426(v=office.12)). The rendering extension truncates the string at 255 characters.
 * Excel does not support Watermarks.
 * Underlining justified text will only underline the words and not the spaces between them.
 * Table of contents is not supported.
-* The maximum length of Excel Worksheet name is 25 characters. Longer names would be trimmed. The limitation set by Microsoft Excel is 31 characters. Six (6) of them are preserved to secure the uniqueness of Worksheet names, for example when exporting a Report Book containing reports with the same Document Name.
+* The maximum length of the Excel Worksheet name is 25 characters. Longer names would be trimmed. The limitation set by Microsoft Excel is 31 characters. Six (6) of them are preserved to secure the uniqueness of Worksheet names, for example when exporting a Report Book containing reports with the same Document Name.
 
 ### Excel 97-2003
 
 * Supported only in the `.NET Framework`.
-* Excel supports a palette of up to 56 colors. The first 56 unique colors used in the report are defined in a custom palette. If more than 56 colors are used in the report, the rendering extension matches the required color to one of the 56 colors already available in the palette. Excel’s color matching algorithm is used to match colors to ones already existing in the palette.
+* Excel supports a palette of up to 56 colors. The first 56 unique colors used in the report are defined in a custom palette. If more than 56 colors are used in the report, the rendering extension matches the required color to one of the 56 colors already available in the palette. Excel’s color-matching algorithm is used to match colors to ones already existing in the palette.
 * The maximum number of rows in a worksheet is limited to 65,536. If this is exceeded, the renderer displays an error message.
 * The maximum number of columns in a worksheet is limited to 256. If this is exceeded, the renderer displays an error message.
 * The maximum column width is limited to 255 characters or 1726.5 points. The renderer does not verify that the column width is less than the limit.
 * The maximum row height is 409 points. If the contents of the row cause the row height to increase beyond 409 points, the contents are split and added to the next row instead.
 * The maximum number of characters in a cell is limited to 32,767. If this is exceeded, the renderer displays an error message.
-* In FIPS enabled environments a report export in Excel 97-2003 format will fail.
+* In FIPS-enabled environments a report export in Excel 97-2003 format will fail.
 * When the result of an expression is not a number (i.e. double.NaN) or infinite value (i.e. double.PositiveInfinity or double.NegativeInfinity) then double.MaxValue or double.Min value will be written to the Excel cell.
 
 ### Excel 2007 and above

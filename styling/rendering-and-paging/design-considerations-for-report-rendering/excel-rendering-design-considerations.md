@@ -82,7 +82,7 @@ Background images are not supported.
 |HtmlTextBox|HtmlTextBox is rendered as plain text with no formatting.|
 |Shape|Shape report items are rendered as Excel Picture objects with Bitmap images, not Microsoft Office Drawings.|
 |CheckBox|CheckBox report items are rendered as Excel Picture objects with Bitmap images – including check marks and text.|
-|PictureBox|PictureBox is rendered as an Excel Picture object. PictureBox report item's Sizing property should be set to AutoSize for best image quality or the PictureBox.The size should match the actual image size. In case you get a blurred image at run-time, change the Sizing mode or resize the PictureBox item to match the size of the produced image.|
+|PictureBox|PictureBox is rendered as an Excel Picture object. PictureBox report item's Sizing property should be set to AutoSize for best image quality or the PictureBox.Size should match the actual image size. In case you get a blurred image at run-time, change the Sizing mode or resize the PictureBox item to match the size of the produced image.|
 |Panel|Panel is rendered as a range of Excel cells.|
 |SubReport|SubReport is rendered as a range of Excel cells.|
 |Cross-section item|Cross-section items are not supported|

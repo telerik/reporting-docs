@@ -1,7 +1,7 @@
 ---
 title: Security
 page_title: Best Security Practices when Embedding Telerik Reporting
-description: "Check the recommended security practices when embedding Telerik Reporting and working with its reports, services and viewers."
+description: "Check the recommended security practices when embedding Telerik Reporting and working with its reports, services, and viewers."
 slug: security-best-practices
 tags: telerik, reporting, security, best, practices
 published: True

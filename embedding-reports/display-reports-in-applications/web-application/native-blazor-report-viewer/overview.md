@@ -22,6 +22,8 @@ table th:nth-of-type(2) {
 
 The Native Blazor Report Viewer is a native Blazor component that can be used in Blazor applications.
 
+> The Native Blazor Report Viewer is a native Blazor component built with [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components and a license for this suite is required to use the report viewer.
+
 ![The preview of the demo report Dashboard in the Native Blazor Report Viewer in Firefox browser](../images/NativeBlazorReportViewer/NativeBlazorReportViewer.png)
 
 |Button or Input(from left to right)|Action

@@ -1,3 +1,5 @@
+https://github.com/telerik/reporting-docs/issues/1475
+
 ---
 title: Security
 page_title: Best Security Practices when Embedding Telerik Reporting

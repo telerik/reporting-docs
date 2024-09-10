@@ -41,9 +41,16 @@ do not include connection strings and credentials in report files
 
 ## Reporting Services
 
-It is your responsibility to Authorize Reporting REST API - ReportsController. The requests for resources are not authenticated by design
+The [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) is represented by the [abstract ReportsControllerBase class](/api/telerik.reporting.services.webapi.reportscontrollerbase). Its methods are not authorized. They are virtual and it is your responsibility to authorize the Reporting REST API defined in the custom ReportsController inheriting the ReportsControllerBase.
 
-Web Designer - use https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/customize-web-designer#fine-tune-the-customization-in-the-web-report-designer
+The requests for resources are marked with the [AllowAnonymous attribute](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authorization.allowanonymousattribute?view=aspnetcore-8.0) by design. For that reason, the [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) won't add [authenticationToken]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)%}) to these requests. If you need to authenticate the whole Web API of the Reporting REST Service, you need to add the header with custom approach, for example, as explained in the following resources:
+
+* [Request to '/api/reports/.../{documentId}' Is Not Authorized]({%slug why-get-document-request-is-unauthorized%})
+* [Authorization in REST Service Controller]({%slug reporting-rest-service-authorization%})
+
+## Web Report Designer
+
+Use https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/customize-web-designer#fine-tune-the-customization-in-the-web-report-designer
 
 
 

@@ -65,7 +65,7 @@ namespace CSharp.Net8.Html5IntegrationDemo
 }
 ````
 
-To use the custom [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver), it must be registered on the [ReportSourceResolver]() property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) class in `Program.cs`/`Startup.cs`:
+To use the custom [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver), it must be registered on the [ReportSourceResolver](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_ReportSourceResolver) property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) class in `Program.cs`/`Startup.cs`:
 
 ````CSharp
 // Configure dependencies for ReportsController.
@@ -80,13 +80,79 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 ### Decrypting Connection Strings for SqlDataSource Components in SubReports/Navigate To Report Action - HTML5 Report Viewers
 
+To use the decrypted connection strings in [SqlDataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) of reports that are used as [SubReports]({%slug telerikreporting/designing-reports/report-structure/subreport%}) or those who are loaded with the [Navigate To Report]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) action, it is necessary to also implement the [IReportDocumentResolver](/api/telerik.reporting.services.ireportdocumentresolver) interface since it handles those cases. We can use the approach from the previous section:
 
+````CSharp
+using System.IO;
+using System;
+using Telerik.Reporting;
+using Telerik.Reporting.Services;
+using System.Linq;
+using Microsoft.Extensions.Configuration;
+
+namespace CSharp.Net8.Html5IntegrationDemo
+{
+    public class CustomDocumentResolver(IConfiguration configuration) : IReportDocumentResolver
+    {
+        private IConfiguration _configuration = configuration;
+        readonly string BaseDir = "C:\\Reports";
+        public IReportDocument Resolve(ReportSource reportSource)
+        {
+            // The main report is wrapped in an InstanceReportSource by CustomReportSourceResolver
+            if (reportSource is InstanceReportSource)
+            {
+                return (reportSource as InstanceReportSource).ReportDocument;
+            }
+            // the subreport is resolved in the context of the main report SubReport
+            else if (reportSource is UriReportSource)
+            {
+                var reportPackager = new ReportPackager();
+                var uri = (reportSource as UriReportSource).Uri.Replace(AppDomain.CurrentDomain.BaseDirectory, string.Empty);
+
+                var reportPacker = new ReportPackager();
+                Report report = null;
+
+                using (var sourceStream = System.IO.File.OpenRead(Path.Combine(BaseDir, uri)))
+                {
+                    report = (Report)reportPacker.UnpackageDocument(sourceStream);
+                }
+
+                var sqlDataSources = report.GetDataSources().OfType<SqlDataSource>();
+
+                foreach (var sqlDataSource in sqlDataSources)
+                {
+                    string encryptedConnectionString = _configuration.GetSection($"ConnectionStrings:{sqlDataSource.ConnectionString}").Value; // Get the encrypted connection string from the config
+                    sqlDataSource.ConnectionString = DecryptClass.DecryptConnectionString(encryptedConnectionString); // Decrypt the connection string and assign it to the SqlDataSource componnent 
+                }
+
+                return report;
+            }
+            return null;
+        }
+    }
+}
+
+````
+
+To use the custom [IReportDocumentResolver](/api/telerik.reporting.services.ireportdocumentresolver), it must be registered on the [ReportDocumentResolver](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_ReportDocumentResolver) property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) class in `Program.cs`/`Startup.cs`:
+
+````CSharp
+// Configure dependencies for ReportsController.
+builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
+    new ReportServiceConfiguration
+    {
+        HostAppId = "ReportingNet8",
+        Storage = new FileStorage(),
+        ReportSourceResolver = new CustomReportSourceResolver(sp.GetService<IConfiguration>()),
+        ReportDocumentResolver = new CustomReportDocumentResolver(sp.GetService<IConfiguration>())
+    });
+````
 
 ### Decrypting Connection Strings for SqlDataSource Components - Web Report Designer
 
 If using the Web Report Designer, implement the `ISettingsStorage` interface to return decrypted connections. Set the custom implementation in the `ReportDesignerServiceConfiguration`. 
 
-```csharp
+````CSharp
 new ReportDesignerServiceConfiguration
 {
     DefinitionStorage = new FileDefinitionStorage(reportsPath, new[] { "Resources", "Shared Data Sources" }),
@@ -94,15 +160,13 @@ new ReportDesignerServiceConfiguration
     SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(reportsPath, "Shared Data Sources")),
     SettingsStorage = new CustomSettingsStorage(),
 }
-```
-
-For previewing reports through the Web Report Designer's internal viewer, implement the `IReportSourceResolver` interface to decrypt the connection strings for the reports.
+````
 
 ### Decrypting Connection Strings for SharedDataSource Components
 
-For reports utilizing SharedDataSource components, the solution involves implementing the `ISharedDataSourceResolver` interface. This approach allows passing the decrypted connection string to your components.
+For reports utilizing the [SharedDataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}), the solution is a custom implementation of the [ISharedDataSourceResolver](/api/telerik.reporting.processing.data.ishareddatasourceresolver) interface:
 
-```csharp
+```CSharp
 public class CustomSharedDataSourceResolver : ISharedDataSourceResolver
 {
     readonly string BaseDir = "C:\\Shared Data Sources Directory";
@@ -113,25 +177,39 @@ public class CustomSharedDataSourceResolver : ISharedDataSourceResolver
         var sqlDataSource = (Telerik.Reporting.SqlDataSource)new Telerik.Reporting.XmlSerialization.ReportXmlSerializer()
             .Deserialize(fileStream);
 
-        sqlDataSource.ConnectionString = "DECRYPTED_CONNECTION_STRING";
+        sqlDataSource.ConnectionString = DecryptClass.DecryptConnectionString(sqlDataSource.ConnectionString);
 
         return sqlDataSource;
     }
 }
 ```
 
-Register the custom resolver in the project's configuration file (e.g., Web.config) to ensure it's utilized when rendering reports.
+Register the custom [ISharedDataSourceResolver](/api/telerik.reporting.processing.data.ishareddatasourceresolver) in the project's configuration file (e.g., `appsettings.json`) to ensure it is utilized when rendering the reports.
 
-For more detailed instructions, refer to the [Configuring the processing Element](https://docs.telerik.com/reporting/doc-output/configure-the-report-engine/processing-element#shareddatasourceresolver) article in the Telerik Reporting documentation.
+````JSON
+  "telerikReporting": {
+    "processing": {
+      "sharedDataSourceResolver": {
+        "provider": "custom",
+        "parameters": [
+          {
+            "name": "typename",
+            "value": "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"
+          }
+        ]
+      }
+    }
+  }
+````
+
+> For more detailed instructions on how to register the custom resolver, refer to the [Configuring the processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}#shareddatasourceresolver) article.
 
 ### Notes
 
-- Ensure the encrypted connection string is correctly decrypted before assigning it to the data source.
-- The custom implementations for `ISettingsStorage` and `ISharedDataSourceResolver` must be adjusted based on the specific project's structure and requirements.
+* Ensure the encrypted connection string is correctly decrypted before assigning it to the data source.
+* The custom implementations for `ISettingsStorage` and `ISharedDataSourceResolver` must be adjusted based on the specific project's structure and requirements.
 
 ## See Also
 
-- [SqlDataSource Component Overview](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)
-- [Web Report Designer Overview](https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/overview)
-- [Implementing Custom ISettingsStorage](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.isettingsstorage)
-- [Configuring the Processing Element](https://docs.telerik.com/reporting/doc-output/configure-the-report-engine/processing-element#shareddatasourceresolver)
+* [Implementing Custom ISettingsStorage](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.isettingsstorage)
+* [Configuring the Processing Element](https://docs.telerik.com/reporting/doc-output/configure-the-report-engine/processing-element#shareddatasourceresolver)

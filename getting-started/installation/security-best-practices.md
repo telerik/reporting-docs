@@ -14,12 +14,15 @@ position: 4
 
 This article explains the recommended practices related to Security when working with Telerik Reporting.
 
-
 ## Configuration Settings
 
-app configuration settings (assembly and types whitelisting, unsafe mode)
+The suggestions in this section are responsibility of the developer embedding Telerik Reporting in a custom application.
 
-rate-limiting in Reporting - responsibility of the client.
+Run your applications hosting the [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) and [Web Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) under [HTTPS protocol](https://developer.mozilla.org/en-US/docs/Glossary/HTTPS) and with the [CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS) enabled at the minimum required level.
+
+Avoid the [Unsafe Code](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/unsafe-code#c-language-specification) in your projects and their references.
+
+Consider implementing [Rate Limiting](https://learn.microsoft.com/en-us/aspnet/core/performance/rate-limit?view=aspnetcore-8.0) in your Reporting Services to limit network traffic and prevent bad agents from exhausting system resources. 
 
 ## Extending Telerik Reporting
 
@@ -48,9 +51,9 @@ do not include connection strings and credentials in report files
 
 ## Reporting Services
 
-The [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) is represented by the [abstract ReportsControllerBase class](/api/telerik.reporting.services.webapi.reportscontrollerbase). Its methods are not authorized. They are virtual and it is your responsibility to authorize the Reporting REST API defined in the custom ReportsController inheriting the ReportsControllerBase.
+The Telerik Reporting REST Service is represented by the [abstract ReportsControllerBase class](/api/telerik.reporting.services.webapi.reportscontrollerbase). Its methods are not authorized. They are virtual and it is your responsibility to authorize the Reporting REST API defined in the custom ReportsController inheriting the ReportsControllerBase.
 
-The requests for resources are marked with the [AllowAnonymous attribute](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authorization.allowanonymousattribute?view=aspnetcore-8.0) by design. For that reason, the [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) won't add [authenticationToken]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)%}) to these requests. If you need to authenticate the whole Web API of the Reporting REST Service, you need to add the header with custom approach, for example, as explained in the following resources:
+The requests for resources are marked with the [AllowAnonymous attribute](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authorization.allowanonymousattribute?view=aspnetcore-8.0) by design. For that reason, the [Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) won't add [authenticationToken]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/authenticationtoken(token)%}) to these requests. If you need to authenticate the whole Web API of the Reporting REST Service, you need to add the header with a custom approach, for example, as explained in the following resources:
 
 * [Request to '/api/reports/.../{documentId}' Is Not Authorized]({%slug why-get-document-request-is-unauthorized%})
 * [Authorization in REST Service Controller]({%slug reporting-rest-service-authorization%})

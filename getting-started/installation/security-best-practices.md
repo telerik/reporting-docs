@@ -4,6 +4,10 @@ https://supportcenter.devexpress.com/ticket/details/t190349/false-positive-vulne
 
 https://docs.devexpress.com/GeneralInformation/403365/security/security
 
+https://docs.devexpress.com/XtraReports/119146/reporting-security
+
+
+
 ---
 title: Security
 page_title: Best Security Practices when Embedding Telerik Reporting
@@ -40,7 +44,7 @@ Telerik Reporting lets you extend its built-in functionality with custom code, f
 
 ## Report Definitions
 
-The [Report Definitions]({%slug on-telerik-reporting%}#report-definition) get instantiated by the Reporting Engine in runtime. The developer should ensure they come from trusted sources and don't contain malicious code.
+The [Report Definitions]({%slug on-telerik-reporting%}#report-definition) gets instantiated by the Reporting Engine in runtime. The developer should ensure they come from trusted sources and don't contain malicious code.
 
 The _Type_ report definitions are instantiated with reflection from the provided assembly. The advice from the section [Extending Telerik Reporting](#extending-telerik-reporting) is valid for these reports. Note that the assemblies with _Type_ reports don't require registration in the _assemblyReference_ of the configuration. It is the responsibility of the developer to ensure they don't threaten the environment.
 

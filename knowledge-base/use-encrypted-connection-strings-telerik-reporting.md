@@ -150,16 +150,141 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 ### Decrypting Connection Strings for SqlDataSource Components - Web Report Designer
 
-If using the Web Report Designer, implement the `ISettingsStorage` interface to return decrypted connections. Set the custom implementation in the `ReportDesignerServiceConfiguration`. 
+When using the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), if connection strings stored in the coonfiguration file(e.g. `appsettings.json`) are encrypted, it will be necessary to use a custom implementation of the [ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage) interface to return decrypted connections. 
+
+In the [ISettingsStorage.GetConnections()](/api/telerik.webreportdesigner.services.isettingsstorage#collapsible-Telerik_WebReportDesigner_Services_ISettingsStorage_GetConnections) method, we must return a list of the connections with *decrypted* connection strings. This list will be used by the Web Report Designer on the client to send the connections to the server, and retrieve data.
+
+The [ISettingsStorage.AddConnection(ConnectionInfo)](/api/telerik.webreportdesigner.services.isettingsstorage#Telerik_WebReportDesigner_Services_ISettingsStorage_AddConnection_Telerik_Reporting_Data_Schema_ConnectionInfo_) method will be executed when an end-user adds a new connection through the Web Report Designer client. The connection string here will be as is and we will need to save it decrypted in the configuration.
 
 ````CSharp
-new ReportDesignerServiceConfiguration
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Telerik.Reporting.Data.Schema;
+using Telerik.WebReportDesigner.Services;
+
+namespace CSharp.Net8.Html5IntegrationDemo
+{
+    public class CustomSettingsStorage(IConfiguration configuration, string settingsDirectory) : ISettingsStorage
+    {
+        readonly FileSettingsManager settingsManager = new FileSettingsManager(settingsDirectory);
+        readonly IConfiguration _configuration = configuration;
+
+        public IEnumerable<ConnectionInfo> GetConnections()
+        {
+            var configConnections = _configuration.GetSection("ConnectionStrings").GetChildren();
+            var settingsConnections = this.settingsManager.GetConnections().ToList();
+
+            foreach (var settingConnection in settingsConnections)
+            {
+                // Decrypt the saved connections in the WebReportDesigner.json file 
+                settingConnection.ConnectionString = DecryptClass.DecryptConnectionString(settingConnection.ConnectionString)
+            }
+
+            foreach (var connection in configConnections)
+            {
+                var connectionInfo = new ConnectionInfo
+                {
+                    Name = connection.Key,
+                    // Decrypt the connection saved in the .json configuration file loaded by the project itself
+                    ConnectionString = DecryptClass.DecryptConnectionString(connection.GetSection("connectionString").Value),
+                    Provider = connection.GetSection("providerName").Value
+                };
+                settingsConnections.Add(connectionInfo);
+            }
+
+            return settingsConnections;
+        }
+
+        public void AddConnection(ConnectionInfo connectionInfo)
+        {
+            // Encrypt the connection before saving it
+            connectionInfo.ConnectionString = EncryptClass.EncryptConnectionString(connectionInfo.ConnectionString);
+            this.settingsManager.AddConnection(connectionInfo);
+        }
+    }
+
+    class WebReportDesignerSettings
+    {
+        public List<ConnectionInfo> ConnectionStrings { get; set; }
+
+        public WebReportDesignerSettings()
+        {
+            this.ConnectionStrings = new List<ConnectionInfo>();
+        }
+    }
+
+    class FileSettingsManager
+    {
+        static object padlock = new object();
+
+        readonly string settingsDir;
+        readonly string settingsFilePath;
+        WebReportDesignerSettings settings;
+
+        public FileSettingsManager(string settingsDir)
+        {
+            const string SettingsFileName = "WebReportDesignerSettings.json";
+            this.settingsDir = settingsDir;
+            this.settingsFilePath = Path.Combine(settingsDir, SettingsFileName);
+
+            this.InitSettings();
+        }
+
+        void InitSettings()
+        {
+            lock (padlock)
+            {
+                if (File.Exists(this.settingsFilePath))
+                {
+                    var text = File.ReadAllText(this.settingsFilePath);
+                    this.settings = JsonConvert.DeserializeObject<WebReportDesignerSettings>(text);
+                }
+                else
+                {
+                    Directory.CreateDirectory(this.settingsDir);
+                    using (File.Create(this.settingsFilePath))
+                    {
+                    }
+                }
+            }
+
+            if (this.settings == null)
+            {
+                this.settings = new WebReportDesignerSettings();
+            }
+        }
+
+        public void AddConnection(ConnectionInfo connection)
+        {
+            lock (padlock)
+            {
+                this.settings.ConnectionStrings.Add(connection);
+                File.WriteAllText(this.settingsFilePath, JsonConvert.SerializeObject(this.settings));
+            }
+        }
+
+        public IEnumerable<ConnectionInfo> GetConnections()
+        {
+            return this.settings.ConnectionStrings;
+        }
+    }
+}
+
+````
+
+Afterward, set the custom implementation in the [ReportDesignerServiceConfiguration](/api/telerik.webreportdesigner.services.reportdesignerserviceconfiguration). 
+
+````CSharp
+builder.Services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new ReportDesignerServiceConfiguration
 {
     DefinitionStorage = new FileDefinitionStorage(reportsPath, new[] { "Resources", "Shared Data Sources" }),
     ResourceStorage = new ResourceStorage(Path.Combine(reportsPath, "Resources")),
     SharedDataSourceStorage = new FileSharedDataSourceStorage(Path.Combine(reportsPath, "Shared Data Sources")),
-    SettingsStorage = new CustomSettingsStorage(),
-}
+    SettingsStorage = new CustomSettingsStorage(sp.GetService<IConfiguration>(), Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Telerik Reporting"))
+});
 ````
 
 ### Decrypting Connection Strings for SharedDataSource Components
@@ -211,5 +336,6 @@ Register the custom [ISharedDataSourceResolver](/api/telerik.reporting.processin
 
 ## See Also
 
-* [Implementing Custom ISettingsStorage](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.isettingsstorage)
-* [Configuring the Processing Element](https://docs.telerik.com/reporting/doc-output/configure-the-report-engine/processing-element#shareddatasourceresolver)
+* [Implementing Custom IReportSourceResolver and IReportDocumentResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%})
+* [Implementing Custom ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage)
+* [Configuring the SharedDataSourceResolver via the Processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}#shareddatasourceresolver)

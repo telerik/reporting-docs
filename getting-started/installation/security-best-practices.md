@@ -1,5 +1,9 @@
 https://github.com/telerik/reporting-docs/issues/1475
 
+https://supportcenter.devexpress.com/ticket/details/t190349/false-positive-vulnerabilities-known-alerts-detected-by-various-security-scanners-and
+
+https://docs.devexpress.com/GeneralInformation/403365/security/security
+
 ---
 title: Security
 page_title: Best Security Practices when Embedding Telerik Reporting
@@ -14,9 +18,13 @@ position: 4
 
 This article explains the recommended practices related to Security when working with Telerik Reporting.
 
+## General Security Considerations
+
+
+
 ## Configuration Settings
 
-The suggestions in this section are responsibility of the developer embedding Telerik Reporting in a custom application.
+The suggestions in this section are the responsibility of the developer embedding Telerik Reporting in a custom application.
 
 Run your applications hosting the [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) and [Web Report Viewers]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%}) under [HTTPS protocol](https://developer.mozilla.org/en-US/docs/Glossary/HTTPS) and with the [CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS) enabled at the minimum required level.
 
@@ -57,6 +65,21 @@ The requests for resources are marked with the [AllowAnonymous attribute](https:
 
 * [Request to '/api/reports/.../{documentId}' Is Not Authorized]({%slug why-get-document-request-is-unauthorized%})
 * [Authorization in REST Service Controller]({%slug reporting-rest-service-authorization%})
+
+
+## Report Viewers
+
+Don't expose sensitive information when working with the Report Viewers. Consider the following:
+
+* URL taking the user to the Report Viewer
+
+	Don't pass the report identifier, parameter values, or other sensitive information as inline or query parameters as they become part of the URL.
+
+* Viewer's [reportSource]({%telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}), etc.
+
+	The viewer's/client-side _reportSource_ is sent to the service with the request. Avoid sending sensitive information with it. For example, you may pass the connection string to the report as a Report Parameter Value as explained in the KB article [Change Connection String dynamically through a report parameter]({%slug how-to-pass-connectionstring-to-report-dynamically-through-report-parameter%}). The value will be sent in the body of the request, which may be insecure, especially when the application runs under HTTP.
+	
+	When using HTTPS, the requests are encrypted and generally considered as secure. If you want an additional level of security, consider the [ReportSource Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) that resolves the client-side reportSource to a server-side one. For example, use as _reportSource.report_ insensitive identifiers that may be resolved to the actual ones in the resolver.
 
 ## Web Report Designer
 

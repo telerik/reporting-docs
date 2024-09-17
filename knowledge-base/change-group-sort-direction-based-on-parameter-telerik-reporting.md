@@ -17,7 +17,7 @@ ticketid: 1664543
 
 | --- | --- | ---- |  
 
-| 18.1.24.514| Telerik Reporting|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
+| | Telerik Reporting|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description
 
@@ -27,23 +27,24 @@ Learn how to change the sort direction dynamically of a group within a report ba
 
 To dynamically control the sort direction of a group based on a parameter, follow these steps:
 
-1. Define a report parameter with the appropriate value type, for example, `SortByDirection`. This parameter will will be used in the expression for sorting the data to achieve interactivity. The **AvailableValues** are: 'ASC' and 'DESC'.
+1. Define a report parameter with the appropriate value type, for example, `SortByDirection`. This parameter will be used in the expression for sorting the data to achieve interactivity. The **AvailableValues** are: 'ASC' and 'DESC'.
 
 ![SortByDirection Report Parameter](images/sortbydirection-report-parameter.png)     
 
-2. In the report designer, navigate to the report properties. Then, the SortByDirections parameter can be used for the report's **Sortings** collection:
+1. In the report designer, navigate to the report properties. Then, the SortByDirections parameter can be used for the report's **Sortings** collection:
 
 ![Sortings Collection](images/sortings-collection.png)      
  
 ![Edit Sorting](images/edit-sorting.png)      
 
-3. Apply the changes and preview the report. The sorting direction of the specified group will change based on the value of the `SortByDirection` parameter.
+1. Apply the changes and preview the report. The sorting direction of the specified group will change based on the value of the `SortByDirection` parameter.
 
 ![Preview Sorting Result](images/preview-sorting-result.gif)   
 
 >note A sample report can be found in the [Sample Reports folder](https://github.com/telerik/reporting-samples/tree/master/Sample%20Reports) >> Sorting and Filtering with Report Parameters.trdp.
 
 For more information on sorting data in reports and using report parameters, refer to the following Telerik Documentation articles:
+
 - [Ordering Data]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/ordering-data/overview%})
 - [How to Add Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
 

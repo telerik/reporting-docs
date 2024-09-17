@@ -1,9 +1,7 @@
 ---
 title: Changing Sort Direction Based on a Parameter in Telerik Reporting
 description: Learn how to dynamically change the sort direction of a group in Telerik Reporting based on a parameter value.
-type: how-toResources
-Quality and Feedback
-Generate KB Article
+type: how-to
 page_title: How to Dynamically Change Sorting Direction of Groups in Reports Based on Parameters
 slug: change-group-sort-direction-based-on-parameter-telerik-reporting
 tags: parameters, sorting, groups, telerik, reporting

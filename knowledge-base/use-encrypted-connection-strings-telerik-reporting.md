@@ -12,8 +12,6 @@ ticketid: 1659115
 ## Environment
 
 | Product | Progress® Telerik® Reporting |
-| --- | --- |
-| Version | 18.1.24.514 |
 
 ## Description
 
@@ -55,7 +53,7 @@ namespace CSharp.Net8.Html5IntegrationDemo
             foreach (var sqlDataSource in sqlDataSources)
             {
                 string encryptedConnectionString = _configuration.GetSection($"ConnectionStrings:{sqlDataSource.ConnectionString}").Value; // Get the encrypted connection string from the config
-                sqlDataSource.ConnectionString = DecryptClass.DecryptConnectionString(encryptedConnectionString); // Decrypt the connection string and assign it to the SqlDataSource componnent 
+                sqlDataSource.ConnectionString = DecryptClass.DecryptConnectionString(encryptedConnectionString); // Decrypt the connection string and assign it to the SqlDataSource component 
             }
 
             return new InstanceReportSource() { ReportDocument = report };
@@ -122,7 +120,7 @@ namespace CSharp.Net8.Html5IntegrationDemo
                 foreach (var sqlDataSource in sqlDataSources)
                 {
                     string encryptedConnectionString = _configuration.GetSection($"ConnectionStrings:{sqlDataSource.ConnectionString}").Value; // Get the encrypted connection string from the config
-                    sqlDataSource.ConnectionString = DecryptClass.DecryptConnectionString(encryptedConnectionString); // Decrypt the connection string and assign it to the SqlDataSource componnent 
+                    sqlDataSource.ConnectionString = DecryptClass.DecryptConnectionString(encryptedConnectionString); // Decrypt the connection string and assign it to the SqlDataSource component 
                 }
 
                 return report;
@@ -131,7 +129,6 @@ namespace CSharp.Net8.Html5IntegrationDemo
         }
     }
 }
-
 ````
 
 To use the custom [IReportDocumentResolver](/api/telerik.reporting.services.ireportdocumentresolver), it must be registered on the [ReportDocumentResolver](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_ReportDocumentResolver) property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) class in `Program.cs`/`Startup.cs`:
@@ -150,7 +147,7 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
 
 ### Decrypting Connection Strings for SqlDataSource Components - Web Report Designer
 
-When using the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), if connection strings stored in the coonfiguration file(e.g. `appsettings.json`) are encrypted, it will be necessary to use a custom implementation of the [ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage) interface to return decrypted connections. 
+When using the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), if connection strings stored in the configuration file (e.g. `appsettings.json`) are encrypted, it will be necessary to use a custom implementation of the [ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage) interface to return decrypted connections.
 
 In the [ISettingsStorage.GetConnections()](/api/telerik.webreportdesigner.services.isettingsstorage#collapsible-Telerik_WebReportDesigner_Services_ISettingsStorage_GetConnections) method, we must return a list of the connections with *decrypted* connection strings. This list will be used by the Web Report Designer on the client to send the connections to the server, and retrieve data.
 
@@ -272,7 +269,6 @@ namespace CSharp.Net8.Html5IntegrationDemo
         }
     }
 }
-
 ````
 
 Afterward, set the custom implementation in the [ReportDesignerServiceConfiguration](/api/telerik.webreportdesigner.services.reportdesignerserviceconfiguration). 
@@ -312,19 +308,19 @@ public class CustomSharedDataSourceResolver : ISharedDataSourceResolver
 Register the custom [ISharedDataSourceResolver](/api/telerik.reporting.processing.data.ishareddatasourceresolver) in the project's configuration file (e.g., `appsettings.json`) to ensure it is utilized when rendering the reports.
 
 ````JSON
-  "telerikReporting": {
-    "processing": {
-      "sharedDataSourceResolver": {
-        "provider": "custom",
-        "parameters": [
-          {
-            "name": "typename",
-            "value": "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"
-          }
-        ]
-      }
+"telerikReporting": {
+  "processing": {
+    "sharedDataSourceResolver": {
+      "provider": "custom",
+      "parameters": [
+        {
+          "name": "typename",
+          "value": "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"
+        }
+      ]
     }
   }
+}
 ````
 
 > For more detailed instructions on how to register the custom resolver, refer to the [Configuring the processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}#shareddatasourceresolver) article.
@@ -337,5 +333,5 @@ Register the custom [ISharedDataSourceResolver](/api/telerik.reporting.processin
 ## See Also
 
 * [Implementing Custom IReportSourceResolver and IReportDocumentResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%})
-* [Implementing Custom ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage)
+* [ISettingsStorage](/api/telerik.webreportdesigner.services.isettingsstorage)
 * [Configuring the SharedDataSourceResolver via the Processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}#shareddatasourceresolver)

@@ -33,7 +33,9 @@ To dynamically control the sort direction of a group based on a parameter, follo
 
 	![Edit Sorting](images/edit-sorting.png)
 
-	The idea is to introduce two Sorting rules, with 'ASC' and 'DESC' order, and apply sorting by only one of them, with the corresponding order. For example, when the user selects _ASC_ for the _SortByDirections_ parameter, we apply proper Sorting Expression for the corresponding _ASC_ rule, otherwise, the Expression returns _Null_ (or other constant) guaranteeing there will be no change in the data order caused by this rule.
+	The idea is to introduce two Sorting rules, with 'ASC' and 'DESC' order, and apply sorting by only one of them, with the corresponding order.
+
+	For example, when the user selects _ASC_ for the _SortByDirections_ parameter, we apply proper Sorting Expression for the corresponding _ASC_ rule. In this case, the Sorting Expression for the _DESC_ rule returns _Null_ (or other constant), guaranteeing no change in the data order caused by it. This way, the sorting is done in ascending order.
 
 1. Apply the changes and preview the report. The sorting direction of the specified group will change based on the value of the `SortByDirection` parameter.
 

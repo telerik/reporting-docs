@@ -12,9 +12,7 @@ ticketid: 1664543
 ## Environment
 
 | Version | Product | Author |
-
 | --- | --- | ---- |
-
 | | Telerik Reporting|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)|
 
 ## Description

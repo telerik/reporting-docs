@@ -18,7 +18,7 @@ position: 4
 
 # Security Best Practices
 
-The article recommends general and reporting-specific security practices for embedding Telerik Reporting in custom projects. It is not a complete security guidance and may be regarded as a necessary but not as sufficient for keeping your applications secure.
+The article recommends general and reporting-specific security practices for embedding Telerik Reporting in custom projects. It may be regarded as necessary but not sufficient for keeping your applications secure. It doesn't claim to be a complete security guidance.
 
 ## General Security Considerations
 

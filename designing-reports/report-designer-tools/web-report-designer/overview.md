@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: Web Report Designer Explained
-description: "Learn what Telerik Web Report Designer is, what its dependencies are, and how it helps your web reporting activities."
+description: "Learn what Telerik Web Report Designer is, its dependencies, and how it helps your web reporting and web report design activities."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview
 tags: overview,web,report,designer,tool,design,create,report,web reporting
 published: True
@@ -21,18 +21,18 @@ The Web Report Designer consists of the following areas:
 
 ![Highlighting the Web Report Designer's main areas and functionalities.](images/Designer/web-report-designer-dashboard.png)
 
-* `Design surface` - shows the design layout of the report. Provides tools for selecting, moving, resizing, and editing the report items.
+* `Design surface` - shows the web design report layout. Provides tools for selecting, moving, resizing, and editing the report items.
 * `Menu area` - provides buttons for creating a new report and opening, saving, or previewing an already existing one. Also, allows switching between loaded reports and shows their saved state.
 * `Properties area` - displays the properties of the selected report item. In case multiple items are selected, shows only the properties that are marked as "mergeable", in other words, properties that can be applied to all items in the current selection. The list of the properties can be organized in categories or in alphabetical order.
-* `Components` - lists the available report components that can be added to the report. The items are organized in groups based on their type. The area supports two kinds of layout - grid and list. The list is the default view.
-* `Explorer` - represents the report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties.
+* `Components` - lists the available report components that can be added to the web design report. The items are organized in groups based on their type. The area supports two kinds of layout - grid and list. The list is the default view.
+* `Explorer` - represents the web design report structure in a tree-like view. Allows the selection of the visual and non-visual report components and configures their properties.
 * `Assets Manager` - enables users to organize resources in the Resource Storage of the server. Files and folders can be created, moved, renamed, and deleted, and files can also be uploaded and downloaded. It is accessible through the main menu. It is also used as an editor to select the source for a PictureBox, external stylesheets, CSV and JSON data source, and reports for Subreport items and ReportBooks (Combined Reports).
 * `Search` - provides the ability to search throughout all the designer areas: components, existing report items, or the available properties. Now you can add a new component, navigate to the needed report item, or change a property value with just a few keystrokes.
 * `Onboarding Guide` - The guide will walk you through the main tools used in the Web Report Designer. The guide is started automatically when the report designer is first loaded if it has not been run before. If the user has already seen the guide, it will not start on startup. The guide can also be manually restarted through the `Search` by typing "Start Onboarding" and selecting it from the dropdown or clicking enter. The content for each step of the guide is fully localizable.
 
 ## How it works
 
-The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backend. The service is responsible for the storage operations like creating, opening or saving report definitions in a specified folder, as well as handling the various requests that concern server-side processing and rendering. The public methods of the service can be overwritten to adjust its functionality to a specific web reporting scenario.
+The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backend. The service is responsible for storage operations like creating, opening, or saving web design report definitions in a specified folder, as well as handling the various requests that concern server-side processing and rendering. The public methods of the service can be overwritten to adjust its functionality to a specific web reporting scenario.
 
 ## Requirements:
 

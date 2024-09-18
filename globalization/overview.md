@@ -35,6 +35,8 @@ Culture affects the way strings are formatted in Telerik Reporting. For example,
 
 Middle Eastern languages such as Hebrew and Arabic are generally written from right to left. If your TextBox will contain text written using an RTL script, then you simply need to specify the appropriate Culture, for example, "he" for Hebrew and "ar" for Arabic.
 
+>important As of __Q3 2024 (18.2.24.806)__ culture properties, such as the [__CurrencyNegativePattern__](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.numberformatinfo.currencynegativepattern?view=net-8.0) property, are resolved based on the machine's local settings instead of the default globalization settings of the current culture.
+
 ## See Also
 
 * [HTML5 Report Viewer Localization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/localization%})

@@ -6,10 +6,6 @@ https://docs.devexpress.com/GeneralInformation/403365/security/security
 
 https://docs.devexpress.com/XtraReports/119146/reporting-security
 
-
-https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-8.0
-
-
 ---
 title: Security
 page_title: Best Security Practices when Embedding Telerik Reporting
@@ -36,7 +32,7 @@ Run your applications hosting the [Telerik Reporting REST Services]({%slug teler
 
 Avoid the [Unsafe Code](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/unsafe-code#c-language-specification) in your projects and their references.
 
-Consider implementing [Rate Limiting](https://learn.microsoft.com/en-us/aspnet/core/performance/rate-limit?view=aspnetcore-8.0) in your Reporting Services to limit network traffic and prevent bad agents from exhausting system resources. 
+Consider implementing [Rate Limiting](https://learn.microsoft.com/en-us/aspnet/core/performance/rate-limit?view=aspnetcore-8.0) in your Reporting Services to limit network traffic and prevent bad agents from exhausting system resources.
 
 ## Extending Telerik Reporting
 
@@ -52,16 +48,15 @@ The _Type_ report definitions are instantiated with reflection from the provided
 
 The declarative report definitions (_TRDP_, _TRDX_, and _TRBP_ files) describe the report layout with XML code. The Reporting Engine [unpackages]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) or [deserializes]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) them to make the required [Telerik.Reporting.Report](/api/telerik.reporting.report) instance. The developer should ensure no content may result in malicious executable code that may result in a security breach.
 
+The Reporting Engine fetches the data from the DataSource components based on its properties. For example, the SqlDataSource provides a connection string, data provider and a command, which may be an inline query or stored procedure name. The connection is delegated entirely to the specified provider and relies on the connection string. Our recommendation:
 
+* use data connections with the least necessary permissions
 
+	Data is fetched by the data provider by executing the command. Ensure the user doesn't have permission, for example, to delete information from the data tables.
 
+* do not include connection strings and credentials in report files
 
-data connections must be with the least permissions.
-
-data fetching can delete info from tables.
-
-do not include connection strings and credentials in report files
-
+	Use named rather than embedded connection strings. The Reporting Engine will resolve them from the application configuration.
 
 ## Reporting Services
 

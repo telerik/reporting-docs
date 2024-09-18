@@ -7,6 +7,8 @@ https://docs.devexpress.com/GeneralInformation/403365/security/security
 https://docs.devexpress.com/XtraReports/119146/reporting-security
 
 
+https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-8.0
+
 
 ---
 title: Security

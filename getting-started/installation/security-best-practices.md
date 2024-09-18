@@ -18,7 +18,7 @@ position: 4
 
 # Security Best Practices
 
-This article explains the recommended practices related to Security when working with Telerik Reporting.
+The article recommends general and reporting-specific security practices for embedding Telerik Reporting in custom projects. It is not a complete security guidance and may be regarded as a necessary but not as sufficient for keeping your applications secure.
 
 ## General Security Considerations
 
@@ -52,7 +52,7 @@ The Reporting Engine fetches the data from the DataSource components based on it
 
 * use data connections with the least necessary permissions
 
-	Data is fetched by the data provider by executing the command. Ensure the user doesn't have permission, for example, to delete information from the data tables.
+	Data is fetched by the data provider by executing the command. Ensure the user doesn't have permissions, for example, to delete information from the data tables.
 
 * do not include connection strings and credentials in report files
 

@@ -18,7 +18,7 @@ position: 4
 
 # Security Best Practices
 
-The article discusses general and reporting-specific security practices, which we recommend to follow when embedding Telerik Reporting in your projects. While the advises may be regarded as necessary, they may not be sufficient to keep your applications secure. The article should not be regarded as a complete and comprehensive security guidance.
+The article discusses general and reporting-specific security practices. While the recommendations may be necessary to keep your applications embedding Telerik Reporting secure, they may not be sufficient. The article should not be regarded as a complete and comprehensive security guidance.
 
 ## General Security Considerations
 
@@ -42,7 +42,7 @@ The _Type_ report definitions are instantiated with reflection from the provided
 
 The declarative report definitions (_TRDP_, _TRDX_, and _TRBP_ files) describe the report layout with XML code. The Reporting Engine [unpackages]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) or [deserializes]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) them to make the required [Telerik.Reporting.Report](/api/telerik.reporting.report) instance. The developer should ensure no content may result in malicious executable code that may result in a security breach.
 
-The Reporting Engine fetches the data from the DataSource components based on its properties. For example, the SqlDataSource provides a connection string, data provider and a command, which may be an inline query or stored procedure name. The connection is delegated entirely to the specified provider and relies on the connection string. Our recommendation:
+The Reporting Engine fetches the data from the DataSource components based on its properties. For example, the SqlDataSource provides a connection string, data provider, and a command, which may be an inline query or stored procedure name. The connection is delegated entirely to the specified provider and relies on the connection string. Our recommendation:
 
 * use data connections with the least necessary permissions
 

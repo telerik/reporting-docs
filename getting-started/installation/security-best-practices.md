@@ -18,13 +18,11 @@ position: 4
 
 # Security Best Practices
 
-In this article, we provide security practices, both general and reporting-specific, that we recommend to comply with when embedding Telerik Reporting in your projects. It may be regarded as necessary but not sufficient for keeping your applications secure. It doesn't claim to be a complete and comprehensive security guidance.
+The article discusses general and reporting-specific security practices, which we recommend to follow when embedding Telerik Reporting in your projects. While the advises may be regarded as necessary, they may not be sufficient to keep your applications secure. The article should not be regarded as a complete and comprehensive security guidance.
 
 ## General Security Considerations
 
-
-
-## Configuration Settings
+### Configuration Settings
 
 The suggestions in this section are the responsibility of the developer embedding Telerik Reporting in a custom application.
 
@@ -34,13 +32,9 @@ Avoid the [Unsafe Code](https://learn.microsoft.com/en-us/dotnet/csharp/language
 
 Consider implementing [Rate Limiting](https://learn.microsoft.com/en-us/aspnet/core/performance/rate-limit?view=aspnetcore-8.0) in your Reporting Services to limit network traffic and prevent bad agents from exhausting system resources.
 
-## Extending Telerik Reporting
+## Reporting Specific Considerations
 
-Telerik Reporting lets you extend its built-in functionality with custom code, for example by introducing [Custom User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}), [Custom Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%}) and [ObjectDataSources]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}). The Reporting Engine invokes the custom functionality with reflection. The allowed assemblies should be whitelisted in the configuration of the application hosting the Reporting Engine as explained in the article [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}). The entire responsibility for registering the custom assemblies and the security of their code is delegated to the developer.
-
->tip Use only trusted assemblies that are signed with a public key token (see [Assembly (CLI)](https://en.wikipedia.org/wiki/Assembly_(CLI))) and cannot be replaced when extending the Reporting functionality in your projects, avoiding remote code execution and other malicious actions.
-
-## Report Definitions
+### Report Definitions
 
 The [Report Definitions]({%slug on-telerik-reporting%}#report-definition) gets instantiated by the Reporting Engine in runtime. The developer should ensure they come from trusted sources and don't contain malicious code.
 
@@ -58,7 +52,7 @@ The Reporting Engine fetches the data from the DataSource components based on it
 
 	Use named rather than embedded connection strings. The Reporting Engine will resolve them from the application configuration.
 
-## Reporting Services
+### Reporting Services
 
 The Telerik Reporting REST Service is a Web API application. Use the Microsoft recommendations [ASP.NET Core security topics](https://learn.microsoft.com/en-us/aspnet/core/security/?view=aspnetcore-8.0) to ensure it is secure.
 
@@ -69,8 +63,13 @@ The requests for resources are marked with the [AllowAnonymous attribute](https:
 * [Request to '/api/reports/.../{documentId}' Is Not Authorized]({%slug why-get-document-request-is-unauthorized%})
 * [Authorization in REST Service Controller]({%slug reporting-rest-service-authorization%})
 
+### Extending the Reporting Engine
 
-## Report Viewers
+Telerik Reporting lets you extend its built-in functionality with custom code, for example by introducing [Custom User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}), [Custom Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%}) and [ObjectDataSources]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%}). The Reporting Engine invokes the custom functionality with reflection. The allowed assemblies should be whitelisted in the configuration of the application hosting the Reporting Engine as explained in the article [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}). The entire responsibility for registering the custom assemblies and the security of their code is delegated to the developer.
+
+>tip Use only trusted assemblies that are signed with a public key token (see [Assembly (CLI)](https://en.wikipedia.org/wiki/Assembly_(CLI))) and cannot be replaced when extending the Reporting functionality in your projects, avoiding remote code execution and other malicious actions.
+
+### Report Viewers
 
 Don't expose sensitive information when working with the Report Viewers. Consider the following:
 
@@ -84,7 +83,7 @@ Don't expose sensitive information when working with the Report Viewers. Conside
 	
 	When using HTTPS, the requests are encrypted and generally considered as secure. If you want an additional level of security, consider the [ReportSource Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}) that resolves the client-side reportSource to a server-side one. For example, use as _reportSource.report_ insensitive identifiers that may be resolved to the actual ones in the resolver.
 
-## Web Report Designer
+### Web Report Designer
 
 Use https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/customize-web-designer#fine-tune-the-customization-in-the-web-report-designer
 

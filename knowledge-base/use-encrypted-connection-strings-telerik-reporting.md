@@ -287,7 +287,7 @@ builder.Services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => new 
 
 For reports utilizing the [SharedDataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}), the solution is a custom implementation of the [ISharedDataSourceResolver](/api/telerik.reporting.processing.data.ishareddatasourceresolver) interface:
 
-```CSharp
+````CSharp
 public class CustomSharedDataSourceResolver : ISharedDataSourceResolver
 {
     readonly string BaseDir = "C:\\Shared Data Sources Directory";
@@ -303,7 +303,7 @@ public class CustomSharedDataSourceResolver : ISharedDataSourceResolver
         return sqlDataSource;
     }
 }
-```
+````
 
 Register the custom [ISharedDataSourceResolver](/api/telerik.reporting.processing.data.ishareddatasourceresolver) in the project's configuration file (e.g., `appsettings.json`) to ensure it is utilized when rendering the reports.
 

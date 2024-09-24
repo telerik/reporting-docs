@@ -1,7 +1,7 @@
 ---
 title: assemblyReferences Element
 page_title: assemblyReferences Element Configuration
-description: "Learn how to set up the assemblyReferences Element in order to use custom user functions in the report and create ObjectDataSource components"
+description: "Learn how to set up the assemblyReferences Element to use custom user functions in the report and create ObjectDataSource components"
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element
 tags: assemblyreferences,element, user, function, ObjectDataSource
 published: True
@@ -20,7 +20,9 @@ table th:nth-of-type(2) {
 
 # assemblyReferences Element Overview
 
-Defines a collection of assembly references that are used from Reporting Engine during processing stage to resolve names of user functions and user aggregate functions and also the types used by ObjectDataSource component. 
+Defines a collection of assembly references used by the Reporting Engine during processing stage to resolve names of user functions, user aggregate functions, and types used by ObjectDataSource component and Report Event Handlers.
+
+The types from the assemblies included in the _assemblyReferences_ element do not need to be registered explicitly in the [_typeReferences_ Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}).
 
 XML-based configuration file:
 
@@ -92,13 +94,13 @@ JSON-based configuration file:
 }
 ````
 
-> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections` element of configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with following text: *Configuration system failed to initialize*.
+> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections` element of the configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with the following text: *Configuration system failed to initialize*.
 
 ## See Also
 
 * [How the Runtime Locates Assemblies](https://learn.microsoft.com/en-us/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
 * [Specifying an Assembly's Location](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/specify-assembly-location)
-* [`<probing>` Element](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
+* [<probing> Element](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element)
 * [Application Configuration Files](https://learn.microsoft.com/en-us/windows/win32/sbscs/application-configuration-files)
 * [User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})
 * [User Aggregate Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-aggregate-functions%})

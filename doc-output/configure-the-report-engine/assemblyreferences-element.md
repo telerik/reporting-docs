@@ -22,7 +22,7 @@ table th:nth-of-type(2) {
 
 Defines a collection of assembly references used by the Reporting Engine during processing stage to resolve names of user functions, user aggregate functions, and types used by ObjectDataSource component and Report Event Handlers.
 
-All dependencies of an assembly added in this configuration element will be automatically loaded by the Reporting engine and don't need to be registered explicitly.
+The types from the assemblies included in the _assemblyReferences_ element do not need to be registered explicitly in the [_typeReferences_ Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element%}).
 
 XML-based configuration file:
 

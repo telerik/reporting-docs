@@ -19,7 +19,7 @@ table th:nth-of-type(2) {
 
 # typeValidation Element Overview
 
-The typeValidation element defines configuration settings for the type validation performed by the Reporting engine.
+As Telerik Reporting consumes report definitions, they are a potential attack vector and a malicious actor could utilize a modified report to execute an attack against a system that uses Telerik Reporting. To prevent that, the Reporting engine validates the serialization types of the report definition and the expression types used in the report. The typeValidation element defines configuration settings for this validation.
 
 XML-based configuration file:
 

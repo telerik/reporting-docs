@@ -42,7 +42,7 @@ The following sections describe attributes and parent elements.
 
 |   |   |
 | ------ | ------ |
-|Attributes|<ul><li>__validateExpressionTypes__ – optional boolean attribute. Specifies whether expression types should be validated by the Reporting engine. True by default.</li><li>__validateSerializationTypes__ – optional boolean attribute. Specifies whether serialization types should be validated by the Reporting engine. True by default.</li></ul>|
+|Attributes|<ul><li>__validateExpressionTypes__ – optional boolean attribute. Specifies whether expression types should be validated by the Reporting engine. True by default. You can disable the validation of expression types if the expressions in your reports are input by a trusted external source.</li><li>__validateSerializationTypes__ – optional boolean attribute. Specifies whether serialization types should be validated by the Reporting engine. True by default. If the report definitions consumed by your application are from a trusted source, you can disable the validation of serialization types.</li></ul>|
 |Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the .NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
 
 ## Example

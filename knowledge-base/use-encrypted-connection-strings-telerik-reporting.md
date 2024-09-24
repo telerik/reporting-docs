@@ -1,6 +1,6 @@
 ---
 title: Implementing Encrypted Connection Strings with Telerik Reporting
-description: "Learn how to use encrypted connection strings with Telerik Reporting, including handling encrypted strings for data sources and shared data sources in .NET Framework and .NET Core projects".
+description: "Learn how to use encrypted connection strings with Telerik Reporting, including handling encrypted strings for data sources and shared data sources in .NET Framework and .NET Core projects."
 type: how-to
 page_title: How to Use Encrypted Connection Strings in Telerik Reporting
 slug: use-encrypted-connection-strings-telerik-reporting

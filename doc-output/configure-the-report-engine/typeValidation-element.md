@@ -19,7 +19,7 @@ table th:nth-of-type(2) {
 
 # typeValidation Element Overview
 
-As Telerik Reporting consumes report definitions, they are a potential attack vector and a malicious actor could utilize a modified report to execute an attack against a system that uses Telerik Reporting. To prevent that, the Reporting engine validates the serialization types of the report definition and the expression types used in the report. The typeValidation element defines configuration settings for this validation.
+As Telerik Reporting consumes report definitions, they are a potential attack vector and a malicious actor could utilize a modified report to execute an attack against a system that uses Telerik Reporting. To prevent that, the Reporting engine validates the serialization types of the report definition and the expression types used in the report. The `typeValidation` element defines the configuration settings for this validation.
 
 XML-based configuration file:
 
@@ -77,7 +77,7 @@ JSON-based configuration file:
 }
 ````
 
-> When adding the `Telerik.Reporting` section manually, do not forget to register it in `configSections` element of the configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with the following text: *Configuration system failed to initialize*.
+> When adding the `Telerik.Reporting` section manually, do not forget to register it in the `configSections` element of the configuration file. Failing to do so will result in a [ConfigurationErrorsException](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configurationerrorsexception?view=dotnet-plat-ext-7.0) with the following text: *Configuration system failed to initialize*.
 
 ## See Also
 

@@ -53,8 +53,6 @@ The following table is a list of all available commands for the *data-command* a
 | __telerik_ReportViewer_refresh__ |Refresh the report|
 | __telerik_ReportViewer_goToFirstPage__ |Go to the first page of the report|
 | __telerik_ReportViewer_goToPrevPage__ |Go to the previous page of the report|
-| __telerik_ReportViewer_PageNumberInput__ |Enter the desired report page manually|
-| __telerik_ReportViewer_PageCountLabel__ |Displays the total count of the pages|
 | __telerik_ReportViewer_goToNextPage__ |Go to the next page of the report|
 | __telerik_ReportViewer_goToLastPage__ |Go to the last page of the report|
 | __telerik_ReportViewer_togglePrintPreview__ |Toggle between Print Preview and Interactive modes|

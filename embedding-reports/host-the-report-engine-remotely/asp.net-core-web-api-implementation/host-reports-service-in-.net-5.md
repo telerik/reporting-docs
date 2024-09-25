@@ -9,7 +9,7 @@ position: 3
 previous_url: /telerik-reporting-rest-service-aspnetcore-net5,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-5
 ---
 
-# Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6, .NET 7, and .NET 8 with Startup.cs
+# Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6 and .NET 8 with Startup.cs
 
 This article guides you how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET Web Application. The configuration of the application in this tutorial is set up in the `Startup.cs` file of the project. 
 
@@ -28,7 +28,7 @@ In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporti
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net5.png)
 
-Set the Target Framework to .NET 6, or correspondingly to .NET 7 or .NET 8.
+Set the Target Framework to .NET 6 or .NET 8.
 
 Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution.
 
@@ -41,7 +41,7 @@ First, you need to create a new ASP.NET Core project:
 1. Open __Visual Studio 2019__ or newer.
 1. From the __File__ menu, select __New > Project__.
 1. In the __Add a new Project__ dialog select __ASP.NET Core Web Application__ project template. Choose a name and location for the project and click __Next__.
-1. In the __Create a new ASP.NET Core web application__ dialog select from the drop down __.NET 6.0 (Long Term Support)__, or correspondingly .NET 7 or .NET 8. Click on __Create__.
+1. In the __Create a new ASP.NET Core web application__ dialog select from the drop down __.NET 6.0 (Long Term Support)__ or .NET 8. Click on __Create__.
 
 ### Add Report Definitions
 

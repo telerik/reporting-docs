@@ -35,7 +35,7 @@ Set @localVariable='SELECT * FROM MYTABLE'
 Exec(@localVariable)
 ````
  
-- If the above is set as SQL text, the [SqlDataSource Wizard]({%telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) will return an error like:  
+- If the above is set as SQL text, the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}) will return an error like:  
 
 `The variable name '@localVariable' has already been declared. Variable names must be unique within a query batch or stored procedure.`
   

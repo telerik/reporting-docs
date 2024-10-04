@@ -35,13 +35,22 @@ In the Telerik Html5 Report Viewer, we have added Kendo splitter to control the 
   
 To modify the _Document Map_ or _Parameter_ area width you may include the following code in the [renderingEnd]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/renderingend(e,-args)%}) or [pageReady]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/pageready(e,-args)%}) event of the viewer :   
   
+### Solution for Document Map
+````JavaScript
+renderingEnd: function () {
+    var splitter = $(".trv-document-map-splitter").data("kendoSplitter");
+    splitter.options.panes[0].size = "350px";
+    splitter.resize(true);
+}
+````
 
-```JavaScript
+### Solution for Parameter area
+````JavaScript
 var splitter = $("#reportViewerId").find(".k-splitter").data("kendoSplitter")
 
-splitter.options.panes[0].size = "350px";// use array index 0 for Parameter area and 1 for Document Map area
+splitter.options.panes[1].size = "350px";
 
 splitter.resize(true);
-```
+````
   
 The above code will resize the _Document Map_ area to the wanted size (_350px_). To resize the _Parameters_ area use index 1 (one).

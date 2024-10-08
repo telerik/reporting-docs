@@ -17,7 +17,7 @@ The Report Definition Storage is a mandatory dependency component of the server-
 
 Out of the box, Telerik Reporting provides the [`FileDefinitionStorage`](/api/telerik.webreportdesigner.services.filedefinitionstorage) storage implementation that enables using the server-side file system as a reports repository. It supports all declarative [report definition]({%slug on-telerik-reporting%}#report-definition) files, e.g., `TRDP`, `TRDX`, and `TRBP`. It accepts a base directory that represents the root of the reports repository.
 
-Additionally, an `IDefinitionStorage` implementation using MSSQL database and Entity Framework Core for .NET 7 is available in our GitHub Reporting Samples repository [SqlDefinitionStorageExample](https://github.com/telerik/reporting-samples/tree/master/SqlDefinitionStorageExample). More details about the specific implementation may also be found in the KB article [Implementing EFCore MSSQL IDefinitionStorage]({%slug implement-database-definition-storage-efcore%})
+Additionally, an `IDefinitionStorage` implementation using MSSQL database and Entity Framework Core for .NET 8 is available in our GitHub Reporting Samples repository [SqlDefinitionStorageExample](https://github.com/telerik/reporting-samples/tree/master/SqlDefinitionStorageExample). More details about the specific implementation may also be found in the KB article [Implementing EFCore MSSQL IDefinitionStorage]({%slug implement-database-definition-storage-efcore%})
 
 ## Using Custom Report Definition Storage
 

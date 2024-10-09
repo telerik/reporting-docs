@@ -4,7 +4,6 @@ description: "Learn how to change the default Document Map and Parameter Area si
 type: how-to
 page_title: Resize the default Document Map and Parameter Area sizes through the splitter
 slug: modify-html5-viewer-area-width-through-kendo-splitter
-position: 
 tags: 
 ticketid: 1398733
 res_type: kb
@@ -28,7 +27,7 @@ res_type: kb
 
 
 ## Description
-Sometimes it may be necessary to increase/decrease the default width of the _Document Map_ and _Parameters_ Area inside report viewer on initial load.
+Sometimes it may be necessary to increase/decrease the default width of the _Document Map_ and _Parameters_ Area inside the report viewer on initial load.
 
 In the Telerik HTML5 Report Viewer, we have added a [Kendo Splitter](https://demos.telerik.com/kendo-ui/splitter/index) to control the sizes of the viewer's areas. This enables the end-user to resize them using the pointing device. By default, _Document Map_ and _Parameter_ areas have a width of `210px`. This default value is not configurable in our HTML5 Report Viewers. As the Telerik Report Viewer uses Kendo UI widgets, the user could change the UI as desired through the corresponding Kendo widget settings and options.  
 
@@ -55,3 +54,4 @@ renderingEnd: function () {
 	splitter.resize(true);
 }
 ````
+

@@ -71,14 +71,13 @@ To resolve this issue and use Report Books with version `18.2.24.924`, register 
 }
 ````
 ````XML
-<?xml version="1.0"?>
 <configuration>
     <configSections>
         <section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
     </configSections>
     <Telerik.Reporting>
         <TypeReferences>
-            <add typeName="Telerik.Reporting.UserReportBook" assemblyName="Telerik.Reporting" publicKeyToken ="a9d7983dfcc261be" />
+            <add typeName="Telerik.Reporting.UserReportBook" assemblyName="Telerik.Reporting" publicKeyToken="a9d7983dfcc261be" />
         </TypeReferences>
     </Telerik.Reporting>
 </configuration>

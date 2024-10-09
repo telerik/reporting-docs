@@ -62,7 +62,7 @@ XML-based configuration file:
 	</configSections>
 	<Telerik.Reporting>
 		<TypeReferences>
-			<add typeName="MyNamespace.MyClassName" assemblyName="MyAssemblyName" publicKeyToken ="my-assembly-public-key-token" />
+			<add typeName="MyNamespace.MyClassName" assemblyName="MyAssemblyName" publicKeyToken="my-assembly-public-key-token" />
 		</TypeReferences>
 	</Telerik.Reporting>
 ...

@@ -327,6 +327,9 @@ navigation:
     designing-reports/connecting-to-data/data-source-components/sqldatasource-component:
         position: 10
         title: "SqlDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers:
+        position: 10
+        title: "Using Data Providers"
     designing-reports/connecting-to-data/data-source-components/csvdatasource-component:
         position: 11
         title: "CsvDataSource Component"

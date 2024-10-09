@@ -14,10 +14,10 @@ position: 0
 
 ## Setting up the Npgsql Data Provider in the .NET Standalone Report Designer
 
-1. Create a new [.NET Comsole Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
+1. Create a new [.NET 8 Comsole Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
 1. Install the [Npgsql](https://www.nuget.org/packages/Npgsql/) NuGet package to it and `build` the project.
-1. Navigate to the `bin/Debug` subdirectory of the project, and copy all assemblies there except for the assembly with the name of the project.
-1. Paste the assemblies in the .NET Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q3\Report Designer\.NET`.
+1. Navigate to the `bin/Debug/net8.0` subdirectory of the project, and copy all assemblies there except for the assembly with the name of the project.
+1. Paste the assemblies in the .NET Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
 1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) which should trigger the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). The `Npgsql` data provider should now be listen among the rest of the data providers when building a new connection.
 
 
@@ -35,10 +35,10 @@ position: 0
 
 ### Manual Configuration
 
-1. Create a new [.NET Comsole Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
+1. Create a new [.NET Framework 4.6.2 Comsole Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
 1. Install the [Npgsql 8.0.4](https://www.nuget.org/packages/Npgsql/8.0.4) NuGet package to it and `build` the project. package;
 1. Navigate to the `bin/Debug` subdirectory of the project, and copy all assemblies there except for the assembly with the name of the project.
-1. Paste the assemblies in the .NET Framework Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q3\Report Designer`.
+1. Paste the assemblies in the .NET Framework Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`.
 1. Open the `App.config` file of the application and copy the binding redirects;
 1. Open the configuration file of the Standalone designer (`Telerik.ReportDesigner.exe.config`) and add the binding redirects:
 

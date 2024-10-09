@@ -43,10 +43,10 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 		"oracle":{
 			"connectionString":"Data Source=TORCL;User Id=myUsername;Password=myPassword;",
 			"providerName":"Oracle.ManagedDataAccess.Client"
-		}
+			}
 	}
 }
-````
+
 
 ## See Also
 

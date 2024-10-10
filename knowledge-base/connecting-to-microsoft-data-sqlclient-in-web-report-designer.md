@@ -25,6 +25,9 @@ res_type: kb
 </table>
 
 ## Description
+
+> Visit the updated [Integrating the Microsoft SQL Client Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-microsfost-data-sqlclient-data-provider%}) article for a how-to on connecting to MS SQL Databases.
+
 The Telerik Reporting engine is extensible and it provides options to register virtually any DbProvider to be used in your application.
 For .NET Framework this is done in the application configuration file,
 as explained in this article: 

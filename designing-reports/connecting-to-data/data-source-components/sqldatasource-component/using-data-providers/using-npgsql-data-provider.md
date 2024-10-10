@@ -1,31 +1,16 @@
 ---
-title: Connecting to PostgreSQL DB
-description: "Learn how to configure the SqlDataSource component for PostgreSQL database using the Npgsql data provider."
-type: how-to
-page_title: Configuring the Npgsql data provider
-slug: configuring-postgres-with-npgsql
-tags: 
-ticketid: 1453133
-res_type: kb
+title: Using the Npgsql Data Provider
+page_title: Integrating the Npgsql Data Provider
+description: "Learn more about how the Npgsql data provider can be used by the SqlDataSource component in Telerik Reporting."
+slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-npgsql-data-provider
+tags: Npgsql,data,provider,PostgreSQL
+published: True
+position: 0
 ---
 
-## Environment
+# Overview
 
-<table>
-	<tbody>
-		<tr>
-			<td>Product</td>
-			<td>Progress® Telerik® Reporting</td>
-		</tr>
-	</tbody>
-</table>
-
-
-# Description
-
-This KB article lists the required steps for configuring the [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) component to connect to a [PostgreSQL](https://www.postgresql.org/) database with the `Npgsql` data provider.
-
-# Solutions
+[Npgsql](https://www.npgsql.org/) is an open source ADO.NET Data Provider for PostgreSQL, it allows programs written in C#, Visual Basic, F# to access the PostgreSQL database server and execute queries to it.
 
 ## Setting up the Npgsql Data Provider in the .NET Standalone Report Designer
 
@@ -129,8 +114,7 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 }
 ````
 
-
 ## See Also
 
 * [PostgreSQL connection strings](https://www.connectionstrings.com/postgresql/)
-* [Connecting to PostgreSQL DB]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-npgsql-data-provider%})
+* [Connecting to PostgreSQL DB]({%slug configuring-postgres-with-npgsql%})

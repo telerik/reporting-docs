@@ -26,6 +26,8 @@ res_type: kb
 
 ## Description
 
+> Visit the updated [Integrating the SQLite Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-sqlite-data-provider%}) article for a how-to on connecting to SQLite Databases.
+
 Configuring the SQLite ADO.NET Provider for the Stand-alone Report Designer requires a few steps. If one is missed, the DataSource provider will not work in the Report Designer. Follow the below steps to get this working.
 
 ## Solutions

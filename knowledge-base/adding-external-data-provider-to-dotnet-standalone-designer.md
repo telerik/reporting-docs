@@ -31,6 +31,8 @@ res_type: kb
 
 ## Description
 
+> Visit the updated [Integrating the Microsoft SQL Client Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-microsfost-data-sqlclient-data-provider%}) article for a how-to on connecting to MS SQL Databases.
+
 With [R3 2022](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2022-16-2-22-914), we started shipping a Stanadalone Report Designer compiled for .NET 6.0 runtime which allows resolving assemblies that target .NET Core/5/6. The designer now has the ability to automatically discover assemblies which means that there is no need to register them in the configuration file.
 
 The designer can be found in the installation folder of Telerik Reporting -> `\Report Designer\.NET`.

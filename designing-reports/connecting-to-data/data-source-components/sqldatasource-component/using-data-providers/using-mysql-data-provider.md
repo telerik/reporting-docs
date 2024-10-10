@@ -41,18 +41,18 @@ The [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/) 
 
 	````XML
 <system.data>
-	<DbProviderFactories>
-			<add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=9.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"/>
-	</DbProviderFactories>
+		<DbProviderFactories>
+				<add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=9.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"/>
+		</DbProviderFactories>
 </system.data>
 ````
 
 	> The example was made with version `9.0.0` of the MySQL data provider, correct the version number in the above snippet if a newer/older version was downloaded instead.	
 
 
-## Setting up the ODP.NET Data Provider in .NET Applications
+## Setting up the MySQL Connector/NET Data Provider in .NET Applications
 
-The [Oracle Data Provider for .NET (ODP.NET)](https://www.oracle.com/database/technologies/appdev/dotnet/odp.html) data provider is automatically registered in the `Telerik.Reporting.Processing.Data.DbProviderFactories`. To use this data provider, it should be enough to install the [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core) NuGet package to the project.
+The [MySQL Connector/NET](https://dev.mysql.com/doc/connector-net/en/) data provider is automatically registered in the `Telerik.Reporting.Processing.Data.DbProviderFactories`. To use this data provider, it should be enough to install the [MySql.Data](https://www.nuget.org/packages/MySql.Data) NuGet package to the project.
 
 If the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) uses a `shared` connection where it is retrieved from the configuration file of the project(e.g. `appsettings.json`), the provider name must be specified in the connection. For example:
 
@@ -67,8 +67,18 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 }
 ````
 
+
+## Web Report Designer
+
+In the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%}) of the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), on the first page, the `Data Provider` must be `MySql.Data.MySqlClient`, but the option is limited only to MySql.Data.
+ 
+Since the engine cannot determine the type of the data provider by that name, it falls back to `System.Data.SqlClient` and claims that `"Port" is not a supported keyword`.
+
+The workaround is to avoid using the SQL DataSource wizard and edit the data source properties directly in the `Properties` grid
+
 ## See Also
 
+* [Connection unsuccessfull when Trying to Connect to MySQL Database in the Web Report Desginer]({%slug how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer%})
 * [MySQL connection strings](https://www.connectionstrings.com/mysql/)
 * [Installing Connector/NET on Windows](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-windows.html)
 * [Installing Connector/NET Using the Standalone Installer](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-binary-windows-installer.html)

@@ -46,6 +46,7 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 			}
 	}
 }
+````
 
 
 ## See Also

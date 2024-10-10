@@ -54,11 +54,6 @@ position: 0
 		</configSections>
 
 		<runtime>
-			<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-			<!--
-			<probing privatePath="path-to-the-assemblies"/>
-			-->
-			. . . 
 			<dependentAssembly>
 				<assemblyIdentity name="Npgsql" culture="neutral" publicKeyToken="5d8b90d52f46fda7"/>
 				<bindingRedirect oldVersion="0.0.0.0-8.0.4.0" newVersion="8.0.4.0" />

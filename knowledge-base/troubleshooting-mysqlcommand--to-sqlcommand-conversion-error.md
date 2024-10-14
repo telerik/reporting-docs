@@ -12,40 +12,92 @@ ticketid: 1667172
 ## Environment
 
 <table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® Reporting</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>18.2.24.924</td>
-</tr>
+  <tbody>
+    <tr>
+      <td>Product</td>
+      <td>Progress® Telerik® Reporting</td>
+    </tr>
+    <tr>
+      <td>Version</td>
+      <td>18.2.24.924</td>
+    </tr>
+  <tbody>
 </table>
 
 ## Description
 
-After updating to Telerik Reporting version 18.2.24.924, an error occurs when retrieving data using SqlDataSource with Stored Procedures on a MySQL database. The error indicates that `Mysql.Data.MySqlClient.MySqlCommand` cannot be converted to type `System.Data.SqlClient.SqlCommand`. This issue affects the execution of Stored Procedures, both with and without parameters.
+After updating to Telerik Reporting version `18.2.24.924`, an error occurs when retrieving data using the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) with **Stored Procedures** on a MySQL database. The error indicates that `Mysql.Data.MySqlClient.MySqlCommand` cannot be converted to type `System.Data.SqlClient.SqlCommand`. This issue affects the execution of Stored Procedures, both with and without parameters.
+
+## Error Message
+
+```
+System.ArgumentException: Object of type 'MySql.Data.MySqlClient.MySqlCommand' cannot be converted to type 'System.Data.SqlClient.SqlCommand'.
+   at System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   at System.Reflection.MethodBase.CheckArguments(Object[] parameters, Binder binder, BindingFlags invokeAttr, CultureInfo culture, Signature sig)
+   at System.Reflection.RuntimeMethodInfo.InvokeArgumentsCheck(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Telerik.Reporting.Processing.Data.SqlProviderFactory.DeriveParameters(IDbCommand command)
+   at Telerik.Reporting.Processing.Data.SqlCommandProvider.ResolveProcedure(IDbCommand command, SqlDataSourceParameterCollection parameters)
+   at Telerik.Reporting.Processing.Data.SqlQueryProvider.CreateCommandCore(IDbConnection connection, Boolean evaluateParameters)
+   at Telerik.Reporting.Processing.Data.SqlQueryProvider.CreateCommand(IDbConnection connection)
+   at Telerik.Reporting.Processing.Data.SqlDataEnumerable.<GetEnumerator>d__2.MoveNext()
+   at Telerik.Reporting.Processing.Data.LazyList`1.LazyListEnumerator.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Telerik.Reporting.Processing.Data.SeedDataAdapter.Execute(IEnumerable`1 data)
+   at Telerik.Reporting.Processing.Data.ResultSetAdapter.Execute(IEnumerable`1 data)
+   at Telerik.Reporting.Processing.Data.MultidimentionalDataProvider.Execute(MultidimensionalQuery query)
+   at Telerik.Reporting.Processing.DataItemResolveDataAlgorithm.GetDataCore(IDataSource dataSource, MultidimensionalQuery query, IServiceProvider serviceProvider, EvalObject expressionContext, IProcessingContext processingContext)
+   at Telerik.Reporting.Processing.Report.GetDataCore(IDataSource dataSource, MultidimensionalQuery query)
+   at Telerik.Reporting.Processing.DataItemResolveDataAlgorithm.ResolveData(String processingId, InMemoryState inMemoryState, MultidimensionalQuery query, Func`1 getDataCore, EvalObject expressionContext)
+   at Telerik.Reporting.Processing.Report.ResolveData()
+   at Telerik.Reporting.Processing.Report.ProcessItemCore()
+   at Telerik.Reporting.Processing.Report.ProcessItem()
+   at Telerik.Reporting.Processing.ReportItemBase.ProcessElement()
+   at Telerik.Reporting.Processing.ProcessingElement.Process(IDataMember dataContext)
+```
 
 ## Cause
 
-The issue is caused by a change in the code of Telerik Reporting version 18.2.24.924, which affects the compatibility with the MySQL Connection/NET data provider when using Stored Procedures. Inline SQL queries work as expected, but Stored Procedures throw a conversion error.
+The issue is caused by changes related to the [Type Restrictions]({%slug telerikreporting/upgrade/2024/2024-q3-18-2-24-924%}#type-restrictions) introduced with the [Telerik Reporting 2024 Q3(18.2.24.924)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q3-(18-2-24-924)) release.
 
-## Solution
+Inline SQL queries work as expected, but Stored Procedures throw a conversion error for any data provider other than [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient).
 
-### Workaround Using ObjectDataSource
+## Workaround
 
-To circumvent this issue while a fix is being developed, consider manually executing the stored procedures with custom code using the [ObjectDataSource](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/bind-to-a-businessobject) component. This approach allows you to continue using the latest version of Telerik Reporting without encountering the MySqlCommand conversion error.
+Manually invoking the **Stored Procedures** works for both scenarios - with and without parameters. The syntax for invoking a **Stored Procedure** depends on the data provider and the database:
 
-### Using CALL Statement for Stored Procedures
+- MySQL
 
-Another workaround is to manually invoke stored procedures using the CALL Statement. This method has been tested and confirmed to successfully execute Stored Procedures, both with and without parameters. Example:
+  ````SQL
+CALL Stored_Procedure;
+````
 
-```sql
-CALL Stored_Procedure_1;
-```
+
+- Oracle
+
+  ````SQL
+EXECUTE Stored_Procedure;
+````
+
+
+- PostgreSQL
+
+  ````SQL
+CALL Stored_Procedure();
+````
+
+
+- MSSQL
+
+  ````SQL
+EXEC Stored_Procedure;
+````
+
 
 ## See Also
 
-- [Binding ObjectDataSource to a BusinessObject - Telerik Reporting](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/bind-to-a-businessobject)
-- [How To Use Stored Procedures in MySQL | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-stored-procedures-in-mysql#creating-a-stored-procedure-with-an-input-parameter)
+* [How To Use Stored Procedures in MySQL | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-stored-procedures-in-mysql#creating-a-stored-procedure-with-an-input-parameter)
+* [Using CALL Command to Invoke a Stored Procedure in PostgreSQL](https://www.postgresql.org/docs/current/sql-call.html)
+* [Using EXECUTE Command to Invoke a Stored Procedure in Oracle](https://docs.oracle.com/cd/E11882_01/olap.112/e17122/dml_app_dbms_aw021.htm#OLADM984)
+* [Using EXEC Command to Invoke a Stored Procedure in MSSQL](https://learn.microsoft.com/en-us/sql/relational-databases/stored-procedures/execute-a-stored-procedure)

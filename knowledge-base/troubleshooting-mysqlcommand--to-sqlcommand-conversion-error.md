@@ -1,5 +1,5 @@
 ---
-title: MySqlCommand tp SqlCpmmand Conversion Error
+title: MySqlCommand to SqlCpmmand Conversion Error
 description: "Learn how to resolve the MySqlCommand conversion error when using Stored Procedures with a MySQL database in Telerik Reporting.
 type: troubleshooting"
 page_title: Fix MySqlCommand to SqlCommand Conversion Error with Stored Procedures

@@ -10,16 +10,15 @@ position: 0
 
 # Overview
 
-[Npgsql](https://www.npgsql.org/) is an open source ADO.NET Data Provider for PostgreSQL, it allows programs written in C#, Visual Basic, F# to access the PostgreSQL database server and execute queries to it.
+[Npgsql](https://www.npgsql.org/) is an open-source ADO.NET Data Provider for PostgreSQL, it allows programs written in C#, Visual Basic, and F# to access the PostgreSQL database server and execute queries to it.
 
 ## Setting up the Npgsql Data Provider in the .NET Standalone Report Designer
 
-1. Create a new [.NET 8 Comsole Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
+1. Create a new [.NET 8 Console Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
 1. Install the [Npgsql](https://www.nuget.org/packages/Npgsql/) NuGet package to it and `build` the project.
 1. Navigate to the `bin/Debug/net8.0` subdirectory of the project, and copy all assemblies there except for the assembly with the name of the project.
 1. Paste the assemblies in the .NET Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
-1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) which should trigger the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). The `Npgsql` data provider should now be listen among the rest of the data providers when building a new connection.
-
+1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) which should trigger the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). The `Npgsql` data provider should now be listed among the rest of the data providers when building a new connection.
 
 ## Setting up the Npgsql Data Provider in the .NET Framework Standalone Report Designer
 

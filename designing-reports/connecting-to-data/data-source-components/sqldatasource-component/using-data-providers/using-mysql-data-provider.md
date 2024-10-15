@@ -38,7 +38,7 @@ The [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/) 
 	````XML
 <system.data>
 		<DbProviderFactories>
-			<add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=9.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"/>
+			<add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" 			type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=9.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"/>
 		</DbProviderFactories>
 	</system.data>
 ````

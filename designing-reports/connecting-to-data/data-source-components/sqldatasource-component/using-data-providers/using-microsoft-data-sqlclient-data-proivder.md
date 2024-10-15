@@ -28,23 +28,22 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
 ### .NET Application with the Web Report Designer
 
 1. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) NuGet package to it and `build` the project.
-
 1. Register the [SqlClientFactory.Instance](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlclientfactory.instance) in the `Telerik.Reporting.Processing.Data.DbProviderFactories` using the `RegisterFactory` method within the `static` constructor of the controller that inherits from [ReportDesignerControllerBase](/api/telerik.webreportdesigner.services.controllers.reportdesignercontrollerbase). For example:
 
 	````CSharp
 [Route("api/reportdesigner")]
-public class ReportDesignerController : ReportDesignerControllerBase
-{
+	public class ReportDesignerController : ReportDesignerControllerBase
+	{
 
-		static ReportDesignerController()
-		{
-			Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", Microsoft.Data.SqlClient.SqlClientFactory.Instance);
-		}
-		public ReportDesignerController(IReportDesignerServiceConfiguration reportDesignerServiceConfiguration, IReportServiceConfiguration reportServiceConfiguration)
-			: base(reportDesignerServiceConfiguration, reportServiceConfiguration)
-		{
-		}
-}
+			static ReportDesignerController()
+			{
+				Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", Microsoft.Data.SqlClient.SqlClientFactory.Instance);
+			}
+			public ReportDesignerController(IReportDesignerServiceConfiguration reportDesignerServiceConfiguration, IReportServiceConfiguration reportServiceConfiguration)
+				: base(reportDesignerServiceConfiguration, reportServiceConfiguration)
+			{
+			}
+	}
 ````
 
 
@@ -52,35 +51,34 @@ public class ReportDesignerController : ReportDesignerControllerBase
 
 	````JSON
 {
-		"ConnectionStrings":{
-			"mssql":{
-				"connectionString":"Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;",
-				"providerName":"Microsoft.Data.SqlClient"
+			"ConnectionStrings":{
+				"mssql":{
+					"connectionString":"Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;",
+					"providerName":"Microsoft.Data.SqlClient"
+				}
 			}
-		}
-}
+	}
 ````
 
 
 ### .NET Application with Web Report Viewer
 
 1. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) NuGet package to it and `build` the project.
-
 1. Register the [SqlClientFactory.Instance](https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlclientfactory.instance) in the `Telerik.Reporting.Processing.Data.DbProviderFactories` using the `RegisterFactory` method within the `static` constructor of the controller that inherits from [ReportsControllerBase](/api/telerik.reporting.services.webapi.reportscontrollerbase). For example:
 	````CSharp
 [Route("api/reports")]
-public class ReportsController : ReportsControllerBase
-{
+	public class ReportsController : ReportsControllerBase
+	{
 
-		static ReportsController()
-		{
-			Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", Microsoft.Data.SqlClient.SqlClientFactory.Instance);
-		}
-		public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
-			: base(reportServiceConfiguration)
-		{
-		}
-}
+			static ReportsController()
+			{
+				Telerik.Reporting.Processing.Data.DbProviderFactories.RegisterFactory("Microsoft.Data.SqlClient", Microsoft.Data.SqlClient.SqlClientFactory.Instance);
+			}
+			public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
+				: base(reportServiceConfiguration)
+			{
+			}
+	}
 ````
 
 
@@ -88,13 +86,13 @@ public class ReportsController : ReportsControllerBase
 
 	````JSON
 {
-		"ConnectionStrings":{
-			"mssql":{
-				"connectionString":"Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;",
-				"providerName":"Microsoft.Data.SqlClient"
+			"ConnectionStrings":{
+				"mssql":{
+					"connectionString":"Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;",
+					"providerName":"Microsoft.Data.SqlClient"
+				}
 			}
-		}
-}
+	}
 ````
 
 

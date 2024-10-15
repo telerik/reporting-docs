@@ -19,7 +19,7 @@ The Standalone Report Designer empowers report authors with creating, editing, a
 
 The Standalone Report Designer is distributed as a single EXE file, which simplifies its distribution and does not require installation. Visual Studio is not required to create reports with the Standalone Report Designer. Reports are processed on the client's machine.
 
-Since its introduction in 2013 R2, the Standalone Report Designer is built against .NET Framework 4.0 and is distributed as a part of the Telerik Reporting package. The designer comes in two flavors - Telerik.ReportDesigner.x86.exe which is compiled as a 32-bit application, and Telerik.ReportDesigner.exe, which is compiled as a 64-bit application.
+Since its introduction in 2013 R2, the Standalone Report Designer is built against `.NET Framework 4.6.2` and is distributed as a part of the Telerik Reporting package. The designer comes in two flavors - Telerik.ReportDesigner.x86.exe which is compiled as a 32-bit application, and Telerik.ReportDesigner.exe, which is compiled as a 64-bit application.
 
 Starting with 2022 R3, a new version of Standalone Report Designer is available. It is named Telerik.ReportDesigner.Net and originally was built against .NET 6. With 2024 Q1 its target framework was changed to .NET 8. Its main purpose is to allow the report authors to load and use their assemblies compiled against .NET Standard, .NET Core, and .NET 5+. The Standalone Report Designer for .NET is distributed with the product installer, and also as .ZIP packages, containing the x86 or x64 flavor of the application.
 
@@ -41,7 +41,7 @@ This section explains the differences between both versions of Standalone Report
 * __HTML Expression Editor__ - The .NET Framework implementation of HTML Expression Editor relies on external assemblies like `mshtml.dll` that are not .NET-compatible. Currently, the HTMLTextBox expression is edited in the Expression Editor window.
 * __Assembly Probing__ - The [probing](https://learn.microsoft.com/en-us/dotnet/framework/configure-apps/file-schema/runtime/probing-element) element that was previously used for specifying application base subdirectories for the designer application to search when loading assemblies for the `ObjectDataSource` component and `User Functions` is not supported in `.NET Core`. With that being said, the subdirectory can instead be specified in the given assembly reference entry inside the [assemblyReferences]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) element, for example `<add name="bin/UserFunctions.dll" />`
 
-## Starting the Standalone Report Designer for .NET Framework 4.0
+## Starting the Standalone Report Designer for .NET Framework 4.6.2
 
 * __From the Windows Start menu:__
 

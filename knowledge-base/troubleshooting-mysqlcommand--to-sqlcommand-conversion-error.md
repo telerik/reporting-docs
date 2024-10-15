@@ -1,10 +1,10 @@
 ---
-title: MySqlCommand to SqlCpmmand Conversion Error
-description: "Learn how to resolve the MySqlCommand conversion error when using Stored Procedures with a MySQL database in Telerik Reporting.
-type: troubleshooting"
-page_title: Fix MySqlCommand to SqlCommand Conversion Error with Stored Procedures
-slug: troubleshooting-mysqlcommand--to-sqlcommand-conversion-error
-tags: telerik, reporting, mysql, stored-procedures, conversion-error
+title: SqlCommand Conversion Error
+description: "Learn how to resolve the SqlCommand conversion error when using Stored Procedures in Telerik Reporting."
+type: troubleshooting
+page_title: Fix SqlCommand Conversion Error with Stored Procedures
+slug: troubleshooting-sqlcommand-conversion-error
+tags: telerik, reporting, mysql, oracle, postgresql, mssql, stored-procedures, conversion-error
 res_type: kb
 ticketid: 1667172
 ---
@@ -26,7 +26,9 @@ ticketid: 1667172
 
 ## Description
 
-After updating to Telerik Reporting version `18.2.24.924`, an error occurs when retrieving data using the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) with **Stored Procedures** on a MySQL database. The error indicates that `Mysql.Data.MySqlClient.MySqlCommand` cannot be converted to type `System.Data.SqlClient.SqlCommand`. This issue affects the execution of Stored Procedures, both with and without parameters.
+After updating to Telerik Reporting version `18.2.24.924`, an error occurs when retrieving data using the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) with **Stored Procedures** when using a data provider different from the default [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient). 
+
+For example, the below error indicates that the type `Mysql.Data.MySqlClient.MySqlCommand` cannot be converted to type `System.Data.SqlClient.SqlCommand`. This issue affects the execution of Stored Procedures, both with and without parameters.
 
 ## Error Message
 

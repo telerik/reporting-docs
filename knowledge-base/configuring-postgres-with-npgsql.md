@@ -20,11 +20,9 @@ res_type: kb
 	</tbody>
 </table>
 
-# Description
+## Description
 
 This KB article lists the required steps for configuring the [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) component to connect to a [PostgreSQL](https://www.postgresql.org/) database with the `Npgsql` data provider.
-
-# Solutions
 
 ## Setting up the Npgsql Data Provider in the .NET Standalone Report Designer
 

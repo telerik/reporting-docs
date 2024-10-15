@@ -8,11 +8,9 @@ published: True
 position: 2
 ---
 
-
 # Overview
 
 The `MySQL Connector/NET` is a fully managed ADO.NET data provider written in pure C# which can be used to connect to [MySQL](https://www.mysql.com/), [MariaDB](https://mariadb.org/), etc. databases.
-
 
 ## Setting up the MySQL Connector/NET Data Provider in the .NET Standalone Report Designer
 
@@ -20,15 +18,13 @@ The `MySQL Connector/NET` is a fully managed ADO.NET data provider written in pu
 1. Install the [MySql.Data](https://www.nuget.org/packages/MySql.Data) NuGet package to it and `build` the project.
 1. Navigate to the `bin/Debug/net8.0` subdirectory of the project, and copy all assemblies there except for the assembly with the name of the project.
 1. Paste the assemblies in the .NET Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.
-1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) which should trigger the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). The `MySQL` data provider should now be listen among the rest of the data providers when building a new connection.
-
+1. Start the .NET Standalone Report Designer from the same directory and add a new [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) which should trigger the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview%}). The `MySQL` data provider should now be listed among the rest of the data providers when building a new connection.
 
 ## Setting up the MySQL Connector/NET Data Provider in the .NET Framework Standalone Report Designer
 
+### Using MSI Installer
 
-### Using MSI Intaller
-
-MySQL provides a `x86 32-bit` MSI installer that will install the MySQL data provider and register it in the `machine.config` - [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/).
+MySQL provides an `x86 32-bit` MSI installer that will install the MySQL data provider and register it in the `machine.config` - [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/).
 
 ### Using the Source Code
 
@@ -42,13 +38,12 @@ The [MySQL Community Downloads](https://dev.mysql.com/downloads/connector/net/) 
 	````XML
 <system.data>
 		<DbProviderFactories>
-				<add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=9.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"/>
+			<add name="MySQL Data Provider" invariant="MySql.Data.MySqlClient" description=".Net Framework Data Provider for MySQL" type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data, Version=9.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d"/>
 		</DbProviderFactories>
-</system.data>
+	</system.data>
 ````
 
-	> The example was made with version `9.0.0` of the MySQL data provider, correct the version number in the above snippet if a newer/older version was downloaded instead.	
-
+	> The example was made with version `9.0.0` of the MySQL data provider, correct the version number in the above snippet if a newer/older version was downloaded instead.
 
 ## Setting up the MySQL Connector/NET Data Provider in .NET Applications
 
@@ -67,18 +62,17 @@ If the [SqlDataSource component]({%slug telerikreporting/designing-reports/conne
 }
 ````
 
-
 ## Web Report Designer
 
 In the [SqlDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%}) of the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}), on the first page, the `Data Provider` must be `MySql.Data.MySqlClient`, but the option is limited only to MySql.Data.
- 
+
 Since the engine cannot determine the type of the data provider by that name, it falls back to `System.Data.SqlClient` and claims that `"Port" is not a supported keyword`.
 
-The workaround is to avoid using the SQL DataSource wizard and edit the data source properties directly in the `Properties` grid
+The workaround is to avoid using the SQL DataSource wizard and edit the data source properties directly in the `Properties` grid.
 
 ## See Also
 
-* [Connection unsuccessfull when Trying to Connect to MySQL Database in the Web Report Desginer]({%slug how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer%})
+* [Connection unsuccessful when Trying to Connect to MySQL Database in the Web Report Desginer]({%slug how-to-connect-to-mysql-database-through-the-sql-datasource-wizard-in-the-web-reportdesginer%})
 * [MySQL connection strings](https://www.connectionstrings.com/mysql/)
 * [Installing Connector/NET on Windows](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-windows.html)
 * [Installing Connector/NET Using the Standalone Installer](https://dev.mysql.com/doc/connector-net/en/connector-net-installation-binary-windows-installer.html)

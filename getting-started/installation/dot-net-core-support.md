@@ -161,9 +161,8 @@ The next libraries should also be referenced when using SkiaSharp. The snippet i
 
 ````
 FROM microsoft/dotnet:7.0-runtime AS base
-RUN apt-get update
-RUN apt-get install -y libfreetype6
-RUN apt-get install -y libfontconfig1
+RUN apt-get update && \
+    apt-get install -y libfreetype6 libfontconfig1
 ````
 
 ### Linux Docker Container with System.Drawing(`libgdiplus`)
@@ -206,9 +205,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 8080
 
-RUN apt-get update
-RUN apt-get install -y libfreetype6
-RUN apt-get install -y libfontconfig1
+RUN apt-get update && \
+    apt-get install -y libfreetype6 libfontconfig1
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release

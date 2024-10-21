@@ -19,6 +19,8 @@ table th:nth-of-type(2) {
 
 # TypeReferences Element Overview
 
+>note This element was first introduced in the 2024 Q1 (18.0.24.305) Reporting version.
+
 Defines a collection of type references used by the Reporting Engine to resolve the custom types permitted to be used during the design and processing stages. The assemblies used by the types in TypeReferences section are loaded into application domain if the type is successfully resolved, so it's not necessary to declare the assembly also in the AssemblyReferences section.
 
 XML-based configuration file:

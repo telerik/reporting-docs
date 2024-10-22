@@ -1,3 +1,5 @@
+Sned to Dancho
+
 https://github.com/telerik/reporting-docs/issues/1475
 
 https://supportcenter.devexpress.com/ticket/details/t190349/false-positive-vulnerabilities-known-alerts-detected-by-various-security-scanners-and

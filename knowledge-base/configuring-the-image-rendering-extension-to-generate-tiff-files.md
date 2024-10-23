@@ -34,7 +34,7 @@ The example below shows a sample application [configuration file](https://docs.m
   <configSections> 
     <section 
       name="Telerik.Reporting" 
-      type="Telerik.Reporting.Processing.Config.ReportingConfigurationSection, Telerik.Reporting, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" 
+      type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting, Version=x.x.x.x, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" 
       allowLocation="true" 
       allowDefinition="Everywhere"/> 
   </configSections> 

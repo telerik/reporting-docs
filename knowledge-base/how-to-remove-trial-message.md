@@ -1,6 +1,6 @@
 ---
-title: Removing Trial Message
-description: This article explains how to remove the trial message after the license is purchased
+title: How to Upgrade Trial to Licensed Version
+description: This tutorial explains in details how to upgrade your Telerik trial to a licensed version of Telerik Reporting
 type: how-to
 page_title: How to Remove the Trial Message After the License is Purchased
 slug: how-to-remove-trial-message
@@ -19,6 +19,16 @@ res_type: kb
 		</tr>
 	</tbody>
 </table>
+
+## Description
+
+This tutorial explains in detail how to upgrade your Telerik [Trial]({%slug telerikreporting/licensing%}) to a Licensed version of the [Telerik Reporting](https://www.telerik.com/account/product-download?product=REPORTING).
+
+Let's start with having a trial version installed on your machine and a project that uses the trial version:
+
+>caption Access to the Trial version of product files in the Downloads section of your Telerik account
+
+![upgrade-trial-to-licensed-version 001](images/upgrade-trial-to-licensed-version001.png) 
 
 ## Solution
 

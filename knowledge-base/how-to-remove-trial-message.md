@@ -4,7 +4,7 @@ description: This tutorial explains in details how to upgrade your Telerik trial
 type: how-to
 page_title: How to Remove the Trial Message After the License is Purchased
 slug: how-to-remove-trial-message
-tags: how-to-remove-trial-message
+tags: trial, message, license, report, reporting
 ticketid: 1459034
 res_type: kb
 ---
@@ -22,18 +22,56 @@ res_type: kb
 
 ## Description
 
-This tutorial explains in detail how to upgrade your Telerik [Trial]({%slug telerikreporting/licensing%}) to a Licensed version of the [Telerik Reporting](https://www.telerik.com/account/product-download?product=REPORTING).
+This tutorial explains in detail how to upgrade your Telerik [Trial]({%slug telerikreporting/licensing%}) to a Licensed version of [Telerik Reporting](https://www.telerik.com/account/product-download?product=REPORTING).
 
-Let's start with having a trial version installed on your machine and a project that uses the trial version:
+Let's start with having a trial version installed on your machine and a project that uses the trial version. Access to the Trial version of product files in the Downloads section of your Telerik account: 
 
->caption Access to the Trial version of product files in the Downloads section of your Telerik account
+![Downloads Trial](images/downloads-section-trial-license.png)  
 
-![upgrade-trial-to-licensed-version 001](images/upgrade-trial-to-licensed-version001.png) 
+The difference between the developer and trial versions of the assemblies/ NuGet packages is that the trial version adds a copyright message to the produced reports:
+
+![Report Trial Message](images/report-trial-message.png)  
 
 ## Solution
 
-After purchasing the Developer license, you need to download the Telerik Reporting DEV installer from your [Telerik account -> Downloads](https://www.telerik.com/account/product-download?product=REPORTING). Refer to the Documentation article - [How to download Telerik Reporting installer]({%slug telerikreporting/installation%}#msi-installation) for instructions. Select `Purchase` from the `Licence` dropdown menu and you will be able to download the developers `.msi` file.
+Once you purchase a Telerik license, you will have access to the **Purchase License** Type in your Telerik account:
 
-The installer will replace the trial version with the developer's one.
+![Downloads License Version](images/downloads-section-purchase-license.png)   
+
+## Upgrade the Trial Assemblies
+
+1. Download the DEV .msi file for the Purchase version: [How to download Telerik Reporting installer]({%slug telerikreporting/installation%}#msi-installation).
+
+2. Uninstall the already installed Trial version, e.g. from the Windows Control Panel >> Programs and Features.
+
+3. Install the downloaded .msi file in step 1.
+
+4. Update the references in your project with the assemblies from the licensed installation. It is necessary to delete the old trial assemblies first:
+
+	![Remove Assembly](images/remove-assembly.png)   
+
+5. Then, add the licensed ones:
+
+	![Add Assembly](images/add-assembly.png)    
+
+	Right-clicking on the assembly to show its Properties allows you to check if it is a **TRIAL** assembly:
+
+	![Trial Assembly](images/trial-assembly.png)    
+
+6. Rebuild your project, close Visual Studio and open it again to make sure that no references are kept in the memory by Visual Studio.
 
 For additional details, you may also check the [Upgrading Trial to Purchase]({%slug telerikreporting/licensing%}#upgrading-from-trial-to-developer) article section.
+
+## Upgrade the Trial NuGet packages
+
+1. Open the **NuGet Package Manager**, e.g. select the Manage NuGet Packages... option
+
+	![Open NuGet Package Manager](images/open-nuget-package-manager.png) 
+
+2. Uninstall any Trial Telerik NuGet packages:
+
+	![Uninstall Trial Package](images/uninstall-trial-package.png) 
+
+3. Intall the respective Purchase version of the NuGet packages, without the word "Trial" in its name:
+
+	![Install Licensed Package](images/install-dev-package.png)  

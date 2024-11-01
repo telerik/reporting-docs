@@ -1,6 +1,6 @@
 ---
 title: How to Upgrade Trial to Licensed Version
-description: This tutorial explains in details how to upgrade your Telerik trial to a licensed version of Telerik Reporting
+description: This tutorial explains in detail how to upgrade your Telerik trial to a licensed version of Telerik Reporting
 type: how-to
 page_title: How to Remove the Trial Message After the License is Purchased
 slug: how-to-remove-trial-message
@@ -41,16 +41,13 @@ Once you purchase a Telerik license, you will have access to the **Purchase Lice
 ## Upgrade the Trial Assemblies
 
 1. Download the DEV .msi file for the Purchase version: [How to download Telerik Reporting installer]({%slug telerikreporting/installation%}#msi-installation).
-
-2. Uninstall the already installed Trial version, e.g. from the Windows Control Panel >> Programs and Features.
-
-3. Install the downloaded .msi file in step 1.
-
-4. Update the references in your project with the assemblies from the licensed installation. It is necessary to delete the old trial assemblies first:
+1. Uninstall the already installed Trial version, e.g. from the Windows Control Panel >> Programs and Features.
+1. Install the downloaded .msi file in step 1.
+1. Update the references in your project with the assemblies from the licensed installation. It is necessary to delete the old trial assemblies first:
 
 	![Remove Assembly](images/remove-assembly.png)   
 
-5. Then, add the licensed ones:
+1. Then, add the licensed ones:
 
 	![Add Assembly](images/add-assembly.png)    
 
@@ -58,7 +55,7 @@ Once you purchase a Telerik license, you will have access to the **Purchase Lice
 
 	![Trial Assembly](images/trial-assembly.png)    
 
-6. Rebuild your project, close Visual Studio and open it again to make sure that no references are kept in the memory by Visual Studio.
+1. Rebuild your project, close Visual Studio, and open it again to make sure that no references are kept in the memory by Visual Studio.
 
 For additional details, you may also check the [Upgrading Trial to Purchase]({%slug telerikreporting/licensing%}#upgrading-from-trial-to-developer) article section.
 
@@ -68,10 +65,10 @@ For additional details, you may also check the [Upgrading Trial to Purchase]({%s
 
 	![Open NuGet Package Manager](images/open-nuget-package-manager.png) 
 
-2. Uninstall any Trial Telerik NuGet packages:
+1. Uninstall any Trial Telerik NuGet packages:
 
 	![Uninstall Trial Package](images/uninstall-trial-package.png) 
 
-3. Intall the respective Purchase version of the NuGet packages, without the word "Trial" in its name:
+1. Install the respective Purchase version of the NuGet packages, without the word "Trial" in its name:
 
 	![Install Licensed Package](images/install-dev-package.png)  

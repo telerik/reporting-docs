@@ -32,7 +32,7 @@ __`<appData>` element__
 
 ## Example
 
-XML-based configuration file:
+Windows-based example:
     
 ````XML
 <configuration>
@@ -42,10 +42,7 @@ XML-based configuration file:
     </Telerik.Reporting>
     …
 </configuration>
-````
-
-JSON-based configuration file:
-    
+````    
 ````JSON
 "telerikReporting": {
   "appData": {
@@ -54,3 +51,21 @@ JSON-based configuration file:
 }
 ````
 
+Unix-based example:
+
+````XML
+<configuration>
+    …
+    <Telerik.Reporting>
+        <appData path="/tmp/reportingAppData" />
+    </Telerik.Reporting>
+    …
+</configuration>
+````    
+````JSON
+"telerikReporting": {
+  "appData": {
+    "path": "/tmp/reportingAppData"
+  }
+}
+````

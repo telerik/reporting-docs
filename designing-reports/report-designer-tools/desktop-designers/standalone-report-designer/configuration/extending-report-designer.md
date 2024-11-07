@@ -33,6 +33,10 @@ In order to expose your data, so it can be utilized by the Object/OpenAccess/Ent
 </configuration>
 ````
 
+This can be achieved either manually or by using the Standalone Report Designer's Options page.
+
+## Manually Update the Designer Configuration File 
+
 The section should be added to the designer configuration file, __Telerik.ReportDesigner.exe.config__ that can be found in the Report Designer folder, which is the root location where the application is being executed. By default this is '(*Telerik Reporting installation folder*)\Report Designer'. The Report Designer would also search the assembly itself in this base folder.
 
 To instruct the Report Designer to look for assemblies in other locations as well, use the [`<probing>` Element](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/823z9h8w(v=vs.80)). For more information, see [Locating the Assembly through Codebases or Probing](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/15hyw9x3(v=vs.100)):
@@ -53,7 +57,11 @@ To instruct the Report Designer to look for assemblies in other locations as wel
 ...
 </configuration>
 ````
+## Automatically Update the Designer Configuration File  
 
+As of **Q4 2024** the Standalone Report Designer's **Options** page contains a new section: **Assembly References**:
+
+![CS0618 Warning](images/srd-assembly-reference-ui.png)  
 
 ## See Also
 

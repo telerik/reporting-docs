@@ -1,7 +1,7 @@
 ---
 title: Extending Report Designer
 page_title: Extending Report Designer at a Glance
-description: "Learn how to make the Telerik Reporting Standalone Designer recognize custom CLR public methods and properties to be used as User functions and ObjectDataSources."
+description: Learn how to make the Telerik Reporting Standalone Designer recognize custom CLR public methods and properties to be used as User functions and ObjectDataSources.
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer
 tags: extending,report,designer
 published: True
@@ -32,12 +32,35 @@ In order to expose your data, so it can be utilized by the Object/OpenAccess/Ent
 	</Telerik.Reporting>
 </configuration>
 ````
+This can be achieved either by manually editing the configuration file or by using the Standalone Report Designer's **Options** page.
 
-This can be achieved either manually or by using the Standalone Report Designer's Options page.
+## Update the Designer Configuration File Throught the UI
+
+As of **Q4 2024** the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})'s **Options** page contains a new section: **Assembly References**:
+
+![Assembly Reference in the Standalone Report Designer's Options](images/srd-assembly-reference-ui.png)  
+
+It contains a grid listing the currently registered assemblies, similar to the grid used in Data Connections section: 
+
+![Registered Assembly Reference in the Standalone Report Designer's Options](images/srd-registered-assemblies-ui.png)  
+
+Adding an assembly by clicking the **Add** button will essentially open a new OpenFile dialog set to show *.dll and *.exe files. If the selected assembly is targeting a .NET version which is different than the current runtime, the following confirmation message occurs:
+
+![Assembly Reference in the Standalone Report Designer's Options](images/srd-assembly-reference-warning-ui.png)   
+
+Closing the dialog will trigger the routine for registering assemblies in application configuration file and loading them in app domain.
+
+Deleting an Assembly Reference is performed by clicking the "X" button:
+
+![Delete an Assembly Reference in the Standalone Report Designer's Options](images/srd-delete-assembly-reference-ui.png).   
+
+Closing the dialog will trigger the routine for un-registering assemblies in application configuration file.
+
+>note Deleting an Assembly Reference in the Standalone Report Designer for .NET Framework requires restarting the application.
 
 ## Manually Update the Designer Configuration File 
 
-The section should be added to the designer configuration file, __Telerik.ReportDesigner.exe.config__ that can be found in the Report Designer folder, which is the root location where the application is being executed. By default this is '(*Telerik Reporting installation folder*)\Report Designer'. The Report Designer would also search the assembly itself in this base folder.
+The section should be added to the designer configuration file, __Telerik.ReportDesigner.exe.config__ that can be found in the Report Designer folder, which is the root location where the application is being executed. By default, this is '(*Telerik Reporting installation folder*)\Report Designer'. The Report Designer would also search the assembly itself in this base folder.
 
 To instruct the Report Designer to look for assemblies in other locations as well, use the [`<probing>` Element](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-2.0/823z9h8w(v=vs.80)). For more information, see [Locating the Assembly through Codebases or Probing](https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/15hyw9x3(v=vs.100)):
 
@@ -57,11 +80,6 @@ To instruct the Report Designer to look for assemblies in other locations as wel
 ...
 </configuration>
 ````
-## Automatically Update the Designer Configuration File  
-
-As of **Q4 2024** the Standalone Report Designer's **Options** page contains a new section: **Assembly References**:
-
-![CS0618 Warning](images/srd-assembly-reference-ui.png)  
 
 ## See Also
 

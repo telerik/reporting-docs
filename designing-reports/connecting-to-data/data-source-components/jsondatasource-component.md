@@ -1,7 +1,7 @@
 ---
 title: JsonDataSource
 page_title: JsonDataSource Component at a Glance
-description: "Learn more about the JsonDataSource Component in Telerik Reporting, how you may configure the source of its data and its internal JSONPath filtering."
+description: "Learn more about the JsonDataSource Component in Telerik Reporting, how you may configure the source of its data, and its internal JSONPath filtering."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component
 tags: jsondatasource,component
 published: True
@@ -19,13 +19,13 @@ table th:nth-of-type(2) {
 
 # JsonDataSource Component
 
-The [JsonDataSource](/api/Telerik.Reporting.JsonDataSource) component enables data items to display JSON data located in a local file, or saved directly into the report while using no code. At design time the component can be configured using the [JsonDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard%}). At run time the JsonDataSource automatically parses the JSON data.
+The [JsonDataSource](/api/Telerik.Reporting.JsonDataSource) component enables data items to display JSON data located in a local file or saved directly into the report while using no code. At design time the component can be configured using the [JsonDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard%}). At run time the JsonDataSource automatically parses the JSON data.
 
-The provided JSON data may omit properties with empty values. The result is that not all of the objects have the same list of properties. Due to this no errors will be shown in the report if an undefined data field name is used inside an expression.
+The provided JSON data may omit properties with empty values. The result is that not all of the objects have the same list of properties. Due to this, no errors will be shown in the report if an undefined data field name is used inside an expression.
 
 The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.
 
-> The JSON data source relies and reuses some of the Web Service data source functionalities. In order to preview JSON data source reports in your application it is required to reference the __Telerik.Reporting.WebServiceDataSource__ DLL or the corresponding NuGet package in the application.
+> The JSON data source relies on and reuses some of the Web Service data source functionalities. To preview JSON data source reports in your application it is required to reference the __Telerik.Reporting.WebServiceDataSource__ DLL or the corresponding NuGet package in the application.
 
 ## Configuring the Component
 
@@ -45,7 +45,6 @@ __Inline Data String Configuration:__
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
-* .NET Core 2.0 and above
-* .NET 5 and above
+* .NET Framework 4.6.2 and above
+* .NET 6 and above
 * .NET Standard 2.0 and above

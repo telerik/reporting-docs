@@ -44,11 +44,10 @@ Below are listed the available settings for formatting the data retrieved from t
 |`Decimal separator`|Configures the decimal separator when parsing numbers.|
 |`Thousand separator`|Configures the thousand separator when parsing numbers.|
 |`DateTime format`|A [Custom Date and Time Format String](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) which configures the format of the date and time when parsing date and time strings to DateTime data field values. A custom format string consists of one or more custom date and time format specifiers. For more information on date and time format specifiers please refer to the [Custom Date and Time Format Strings](https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings) MSDN article. For example, to correctly parse the string "12-30-11" to a valid DateTime you need to use the following DateTime format: "MM-dd-yy". If the date string does not conform to the specified DateTime format, the DateTime field will appear empty in the Data Preview window.|
-|`Columns`|Configures the column - data type mapping.|
+|`Columns`|Configures the column-data type mapping.|
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
-* .NET Core 2.0 and above
-* .NET 5 and above
+* .NET Framework 4.6.2 and above
+* .NET 6 and above
 * .NET Standard 2.0 and above

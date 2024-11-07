@@ -11,7 +11,7 @@ previous_url: /OpenClientDataSource, /designing-reports/connecting-to-data/data-
 
 # OpenClientDataSource Component Overview
 
-OpenClient data source is a component dedicated to feeding report data items from OpenEdge AppServer ABL procedures. In order to communicate with the AppServer the data source component uses an Open Client .NET proxy class library that is generated using the OpenEdge .NET Proxy Generator tool:
+OpenClient data source is a component dedicated to feeding report data items from OpenEdge AppServer ABL procedures. To communicate with the AppServer the data source component uses an Open Client .NET proxy class library that is generated using the OpenEdge .NET Proxy Generator tool:
 
 * [Preparing to generate proxies for a .NET client using ProxyGen or Batch ProxyGen](https://docs.progress.com/bundle/openedge-dotnet-open-clients-117/page/Preparing-to-generate-proxies-for-a-.NET-client-using-ProxyGen-or-Batch-ProxyGen.html?labelkey=product_openedge_117)
 * [Generating Proxies and Web Service Definitions](https://docs.progress.com/bundle/openedge-open-client-toolkit-introduction-117/page/Generating-Proxies-and-Web-Service-Definitions.html)
@@ -26,7 +26,7 @@ To be suitable for reporting purposes the ABL procedure has to have the followin
 
 ## Supported developer platforms
 
-* .NET Framework 4.0 and above
+* .NET Framework 4.6.2 and above
 
 ## See Also
 

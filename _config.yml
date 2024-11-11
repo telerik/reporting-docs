@@ -441,7 +441,7 @@ defaults:
 suiteversion: "2024 Q4"
 buildversion: "18.3.24.1112"
 reportserverversion: "10.3.24.1112"
-spaviewerversion: "23.24.1112"
+spaviewerversion: "24.24.1112"
 nodeversion: "16.0.0"
 angularsubsetversion: "16.1.0"
 kendosubsetversion: "2022.3.913"

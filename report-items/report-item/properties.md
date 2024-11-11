@@ -54,10 +54,11 @@ The Report item exposes a set of properties that allow you to control some aspec
 	
 	When `AutoRun=False`:
 	
-		- The Report Viewer displays the **Preview** button in the Parameters Area even if all [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) have [`AutoRefresh`](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_AutoRefresh)`=True`.
-		- If all [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) have valid values, the Report Viewer does not trigger report rendering and displays prompt message in the Report Area to the end user with information on how they may trigger the rendering(*by clicking on the Preview button*).
-		
-		>note Currently, the [`AutoRun`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) functionality is not supported in the [Native Blazor]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) and [Native Angular]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) Report Viewers.
+	- The Report Viewer displays the **Preview** button in the Parameters Area even if all [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) have [`AutoRefresh`](/api/telerik.reporting.reportparameter#Telerik_Reporting_ReportParameter_AutoRefresh)`=True`.
+	
+	- If all [Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/overview%}) have valid values, the Report Viewer does not trigger report rendering and displays prompt message in the Report Area to the end user with information on how they may trigger the rendering(*by clicking on the Preview button*).
+	
+	>note Currently, the [`AutoRun`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) functionality is not supported in the [Native Blazor]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) and [Native Angular]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview%}) Report Viewers.
 
 * `SkipBlankPages`&mdash; As of [R1 2021 SP1 (15.0.21.224)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2021-sp1-15-0-21-224), you can indicate to the Reporting engine whether to ignore the pages with non-significant content by using the [`SkipBlankPages`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_SkipBlankPages) property. By default, `SkipBlankPages` is `True`.
 

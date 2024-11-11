@@ -75,16 +75,16 @@ builder.Services.AddNewtonsoftJson();
 ````
 
 
-1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver). 
+1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver): 
 
 	````CSharp
 var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "Reports");
 
-builder.Services.AddTelerikReporting("ReportingNet", reportsPath);
+	builder.Services.AddTelerikReporting("ReportingNet", reportsPath);
 ````
 
 
-1. Register the Telerik Reportig Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method: 
+1. Register the Telerik Reporting Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method: 
 
 	````CSharp
 app.UseTelerikReporting();
@@ -127,7 +127,6 @@ The last supported type of `ConnectionStrings` configuration uses an array to pr
 
 ````JSON
 {
-	//...
 	"ConnectionStrings": [
 		{
 			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
@@ -173,4 +172,4 @@ app.UseCors("ReportingRestPolicy");
 
 A full example can be found in the installation folder of Telerik Reporting:
 
-`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\ReportingRestServiceCorsDemo\CSharp.Net8.ReportingRestServiceCorsDemo`
+`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\ReportingRestServiceCorsDemo\CSharp.Net6.ReportingRestServiceCorsDemo`

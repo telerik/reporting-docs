@@ -62,7 +62,7 @@ Don't expose sensitive information when working with the Report Viewers. Conside
 
 	Don't pass the report identifier, parameter values, or other sensitive information as inline or query parameters as they become part of the URL.
 
-* Client-side ReportSource, for example, the [HTML Report Viewer's reportSource]({%telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}).
+* Client-side ReportSource, for example, the [HTML Report Viewer's reportSource]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}).
 
 	The viewer's/client-side _reportSource_ is sent to the service with the request. Avoid sending sensitive information with it. For example, you may pass the connection string to the report as a Report Parameter Value as explained in the KB article [Change Connection String dynamically through a report parameter]({%slug how-to-pass-connectionstring-to-report-dynamically-through-report-parameter%}). The value will be sent in the body of the request, which may be insecure, especially when the application runs under HTTP.
 	

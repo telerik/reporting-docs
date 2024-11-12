@@ -1,7 +1,7 @@
 ---
 title: Extending Report Designer
 page_title: Extending Report Designer at a Glance
-description: Learn how to make the Telerik Reporting Standalone Designer recognize custom CLR public methods and properties to be used as User functions and ObjectDataSources.
+description: "Learn how to make the Telerik Reporting Standalone Designer recognize custom CLR public methods and properties to be used as User functions and ObjectDataSources."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer
 tags: extending,report,designer
 published: True
@@ -32,6 +32,7 @@ In order to expose your data, so it can be utilized by the Object/OpenAccess/Ent
 	</Telerik.Reporting>
 </configuration>
 ````
+
 This can be achieved either by manually editing the configuration file or by using the Standalone Report Designer's **Options** page.
 
 ## Update the Designer Configuration File Throught the UI
@@ -56,7 +57,7 @@ Deleting an Assembly Reference is performed by clicking the "X" button:
 
 Closing the dialog will trigger the routine for un-registering assemblies in application configuration file.
 
->note Deleting an Assembly Reference in the Standalone Report Designer for .NET Framework requires restarting the application.
+> Deleting an Assembly Reference in the Standalone Report Designer for .NET Framework requires restarting the application.
 
 ## Manually Update the Designer Configuration File 
 

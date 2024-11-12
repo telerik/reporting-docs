@@ -9,7 +9,7 @@ position: 5
 previous_url: /manual-setup-of-html5-report-viewer-in-aspnetcore-net5
 ---
 
-# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 6 and .NET 8
+# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 6, .NET 8 and .NET 9
 
 This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET 6](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-6.0?view=aspnetcore-6.0) web application.
 
@@ -97,7 +97,7 @@ app.UseStaticFiles();
 
 ## Demo project
 
-A full example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\Html5IntegrationDemo`. Examples are available also for .NET 8 in the corresponding subfolders.
+A full example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\Html5IntegrationDemo`. Examples are available also for .NET 8 and .NET 9 in the corresponding subfolders.
 
 ## See Also
 

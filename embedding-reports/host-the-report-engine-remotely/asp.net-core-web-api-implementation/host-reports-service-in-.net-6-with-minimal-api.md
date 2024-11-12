@@ -10,7 +10,7 @@ position: 2
 previous_url: /telerik-reporting-rest-service-net6-minimal-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-6-with-minimal-api
 ---
 
-# Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 8 with Top-Level Statements
+# Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6, .NET 8 and .NET 9 with Top-Level Statements
 
 This article guides you how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET 6 and higher Web Application with Top-Level Statements implementation. Check the [Microsoft Tutorial: Explore ideas using top-level statements to build code as you learn](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) for general details on the approach.
 
@@ -27,7 +27,7 @@ In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporti
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
-Set the Target Framework to .NET 6 or .NET 8.
+Set the Target Framework to .NET 6, .NET 8 or .NET 9.
 
 Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution.
 
@@ -41,7 +41,7 @@ First, you need to create a new ASP.NET Core project:
 1. From the __File__ menu, select __New__ > __Project__.
 1. In the __Create a new project__ dialog select __ASP.NET Core Web App__ project template and click __Next__.
 1. In the __Configure your new project__ dialog choose a name and location for the project and click __Next__.
-1. In the __Additional information__ dialog select from the drop down __.NET 6.0 (Long-term support)__ or .NET 8. If you configure the project for HTTPS make sure to have a proper certificate assigned. Click on __Create__.
+1. In the __Additional information__ dialog select from the drop down __.NET 6.0 (Long-term support)__ , .NET 8 or .NET 9. If you configure the project for HTTPS make sure to have a proper certificate assigned. Click on __Create__.
 
 ### Add Report Definitions
 

@@ -15,7 +15,7 @@ Starting with version [`R1 2019 (13.0.19.116)`](https://www.telerik.com/support/
 
 The NuGet packages are available in the [Telerik NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net6.0\`, and `\Bin\net6.0-windows\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
 
-The assemblies target .NET Standard 2.0 and the desktop viewers target .NET 6.0, or .NET 8.0, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability.
+The assemblies target .NET Standard 2.0 and the desktop viewers target .NET 6.0, .NET 8.0 or .NET 9, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability.
 
 ## Requirements
 
@@ -89,7 +89,7 @@ sudo apt-get install -y libfontconfig1
 
 ### Using System.Drawing(`libgdiplus`)
 
-> System.Drawing for .NET 8 is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft as explained in [System.Drawing.Common is not supported on non-Windows platforms]({%slug system-drawing-common-is-not-supported-on-non-windows-platforms%})
+> System.Drawing for .NET 8+ is not supported on non-Windows platforms (Linux and MacOS) due to a breaking change introduced by Microsoft as explained in [System.Drawing.Common is not supported on non-Windows platforms]({%slug system-drawing-common-is-not-supported-on-non-windows-platforms%})
 
 When deploying to a Linux machine, make sure you have the [libgdiplus](https://www.mono-project.com/docs/gui/libgdiplus/) library installed. The library is a Mono implementation of GDI+ API for non-Windows operating systems.
 

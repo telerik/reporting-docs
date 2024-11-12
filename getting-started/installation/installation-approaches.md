@@ -15,7 +15,7 @@ Telerik Reporting provides options for installing the product by [downloading th
 
 ## Downloading the Control Panel
 
-You can install Telerik Reporting by downloading the Control Panel. For the complete instructions, refer to the [Optimizing Use of the Telerik Control Panel](https://www.telerik.com/blogs/optimizing-use-of-the-telerik-control-panel) blog post.
+You can install Telerik Reporting by downloading the Control Panel. For the complete instructions, refer to the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction) online documentation.
 
 ## Using the MSI File
 

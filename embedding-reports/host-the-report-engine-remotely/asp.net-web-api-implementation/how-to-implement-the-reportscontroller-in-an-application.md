@@ -35,6 +35,11 @@ The Telerik Reporting REST Web API service is represented by the abstract [Repor
 
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementation}}
 		{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=ReportsControllerImplementation}}
+		
+		>note Starting with the [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-(18-3-24-1112)), it is possible to define the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration) with less code using the `AddTelerikReporting` extension method:
+		
+		{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementationMinimal}}
+		{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=ReportsControllerImplementationMinimal}}
 
 		[ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) inherits [System.Web.Http.ApiController](https://learn.microsoft.com/en-us/dotnet/api/system.web.http.apicontroller?view=aspnet-webapi-5.2) and implements all necessary API actions. The provided sample implementation will resolve.trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root. Other option is to reference a reports library and provide report [type assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0) from the service clients.
 

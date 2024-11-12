@@ -1,7 +1,7 @@
 ---
 title: appData Element
-page_title: appData Element Information 
-description: "Learn how to use the appData Element to the choose where temporary application settings will be stored on the file system"
+page_title: appData Element Configuration 
+description: "Learn how to use the appData Element to choose where temporary application settings will be stored on the file system"
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/appdata-element
 tags: appdata,element
 published: True
@@ -27,12 +27,12 @@ __`<appData>` element__
 
 |   |   |
 | ------ | ------ |
-|Attributes|__path__ – string attribute. Specifies the absolute path to the folder which will be used to store temp data, such as Map tiles cache and SQLite assemblies.|
+|Attributes|__path__ – string attribute. Specifies the absolute path to the folder that will be used to store temp data, such as Map tiles cache and SQLite assemblies.|
 |Parent element|__Telerik.Reporting__ – specifies the root element of the Telerik Reporting configuration settings. Only one appData child element can be used inside the Telerik.Reporting root element.|
 
 ## Example
 
-XML-based configuration file:
+Windows-based example:
     
 ````XML
 <configuration>
@@ -42,14 +42,30 @@ XML-based configuration file:
     </Telerik.Reporting>
     …
 </configuration>
-````
-
-JSON-based configuration file:
-    
+````    
 ````JSON
 "telerikReporting": {
   "appData": {
     "path": "c:\\temp"
+  }
+}
+````
+
+Unix-based example:
+
+````XML
+<configuration>
+    …
+    <Telerik.Reporting>
+        <appData path="/tmp/reportingAppData" />
+    </Telerik.Reporting>
+    …
+</configuration>
+````    
+````JSON
+"telerikReporting": {
+  "appData": {
+    "path": "/tmp/reportingAppData"
   }
 }
 ````

@@ -101,8 +101,8 @@ End Class
 
 ## Notes
 
-The Redis storage requires *StackExchange.Redis.StrongName.dll*,and *Telerik.Reporting.Cache.StackExchangeRedis.dll* built against *StackExchange.Redis.StrongName.dll v1.0.316.0*.   
-If you use a newer version of *StackExchange.Redis.StrongName.dll*, you will need a [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys%28v=vs.110%29.aspx) for the assembly in the Reporting REST service project's configuration file.  
+The Redis storage requires *StackExchange.Redis.dll*, and *Telerik.Reporting.Cache.StackExchangeRedis.dll* built against *StackExchange.Redis.dll v2.8.16*.   
+If you use a newer version of *StackExchange.Redis.dll*, you will need a [binding redirect](https://msdn.microsoft.com/en-us/library/eftw1fys%28v=vs.110%29.aspx) for the assembly in the Reporting REST service project's configuration file.  
 
 ## See Also
 

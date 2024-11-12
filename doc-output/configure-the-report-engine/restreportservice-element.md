@@ -7,6 +7,7 @@ tags: restreportservice,element
 published: True
 position: 5
 previous_url: /configuring-telerik-reporting-restreportservice
+
 ---
 <style>
 table th:first-of-type {
@@ -56,7 +57,7 @@ __`<storage>` element__
 
 |   |   |
 | ------ | ------ |
-|Attributes|<ul><li>__provider__<ul><li>__redis__ or __redis2__ if you are using __StackExchange.Redis__ version 2.0 and greater <ul><li>__configuration__ - string parameter. The [Redis configuration string](https://stackexchange.github.io/StackExchange.Redis/Configuration). </li><li>__databaseNumber__ - optional integer parameter. Determines the number of the database that should be used.</li></ul></li><li>__msSqlServer__<ul><li>__connectionString__ - string parameter. The connection string to the backend storage.</li><li>__commandTimeout__ - optional integer parameter. Determines the CommandTimeout that will be used when executing database commands, in seconds. The default value is 30.</li></ul></li><li>__file__<ul><li>__directory__ - optional string parameter. The directory which will contain the files representing the stored values.</li></ul></li><li>__database__<ul><li>__backendName__ - string parameter. Specifies which database engine should be used.</li><li>__connectionString__ - string parameter. A connection string that should be used to connect to the cache database.</li></ul></li></ul></li></ul>|
+|Attributes|<ul><li>__provider__<ul><li>__redis__<ul><li>__configuration__ - string parameter. The [Redis configuration string](https://stackexchange.github.io/StackExchange.Redis/Configuration). </li><li>__databaseNumber__ - optional integer parameter. Determines the number of the database that should be used.</li></ul></li><li>__msSqlServer__<ul><li>__connectionString__ - string parameter. The connection string to the backend storage.</li><li>__commandTimeout__ - optional integer parameter. Determines the CommandTimeout that will be used when executing database commands, in seconds. The default value is 30.</li></ul></li><li>__file__<ul><li>__directory__ - optional string parameter. The directory which will contain the files representing the stored values.</li></ul></li><li>__database__<ul><li>__backendName__ - string parameter. Specifies which database engine should be used.</li><li>__connectionString__ - string parameter. A connection string that should be used to connect to the cache database.</li></ul></li></ul></li></ul>|
 |Child elements|__parameters__ – specifies a collection of parameters for the current provider. Only one __parameters__ child element can be used in the __provider__ parent element.|
 |Parent element|__restReportService__|
 
@@ -76,12 +77,6 @@ XML-based configuration file:
 				</parameters>
 			</storage>
 			<!--<storage provider="Redis">
-				<parameters>
-					<parameter name="configuration" value="localhost:10001" />
-					<parameter name="databaseNumber" value="1" />
-				</parameters>
-			</storage>-->
-			<!--<storage provider="Redis2"> Used for StackExchange.Redis version 2.0+
 				<parameters>
 					<parameter name="configuration" value="localhost:10001" />
 					<parameter name="databaseNumber" value="1" />

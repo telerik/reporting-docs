@@ -20,7 +20,6 @@ The assemblies come sorted in several folders so that you can use the ones you n
 * If you target `.NET Standard`, use the assemblies from the `\Bin\netstandard2.0` folder.
 * If you target `.NET 6`, use the assemblies from the `\Bin\net6.0` and `\Bin\net6.0-windows` folders.
 * If you target `.NET 8`, use the assemblies from the `\Bin\net8.0` and `\Bin\net8.0-windows` folders.
-* If you target `.NET 9`, use the assemblies from the `\Bin\net9.0` and `\Bin\net9.0-windows` folders.
 
 ## Main Assemblies
 

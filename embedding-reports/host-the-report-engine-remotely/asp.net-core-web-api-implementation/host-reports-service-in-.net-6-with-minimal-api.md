@@ -1,6 +1,6 @@
 ---
-title: Hosting in .NET 6+ with Minimal API
-page_title: Hosting REST Service in ASP.NET Core with Minimal API
+title: Hosting in .NET with Minimal API
+page_title: Hosting the Reporting REST Service in ASP.NET Core with Minimal API
 description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET 6 and above with Minimal API in this step by step tutorial."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,statements
@@ -65,6 +65,8 @@ Alternatively, the assemblies are available in the `\Bin\net6.0\` and  `\Bin\net
 Note that you need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the [GDI+ API](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) which is available on the Windows OS. On Linux and macOS we use the [SkiaSharp](https://github.com/mono/SkiaSharp) 2D Graphics Library based on Google's [Skia](https://skia.org/) Graphics Library.
 
 ### Setup the Program.cs file as a starting point of the Reporting REST Service project with Minimal APIs
+
+> When the [Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) approach for hosting the Reporting REST Service is used, exceptions thrown by the service are propagated to and displayed in the Report Viewer. If this is undesired, set up the service using the 'Controllers' approach - [Hosting the Reporting REST Service in ASP.NET Core with Controllers]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
 
 Modify the `Program.cs` file in the project to enable the Reports Service functionality.
 

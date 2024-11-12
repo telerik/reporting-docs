@@ -27,7 +27,7 @@ In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporti
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
-Set the Target Framework to .NET 6, or correspondingly to .NET 7, or .NET 8.
+Set the Target Framework to .NET 6, .NET 8 or .NET 9.
 
 Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution.
 
@@ -41,7 +41,7 @@ First, you need to create a new ASP.NET Core project:
 1. From the __File__ menu, select __New__ > __Project__.
 1. In the __Create a new project__ dialog select __ASP.NET Core Web App__ project template and click __Next__.
 1. In the __Configure your new project__ dialog choose a name and location for the project and click __Next__.
-1. In the __Additional information__ dialog select from the drop down __.NET 6.0 (Long-term support)__, or correspondingly .NET 7, or .NET 8. If you configure the project for HTTPS make sure to have a proper certificate assigned. Click on __Create__.
+1. In the __Additional information__ dialog select from the drop down __.NET 6.0 (Long-term support)__ , .NET 8 or .NET 9. If you configure the project for HTTPS make sure to have a proper certificate assigned. Click on __Create__.
 
 ### Add Report Definitions
 

@@ -13,7 +13,7 @@ ticketid: 1669949
 
 | Version | Product | Author |  
 | --- | --- | ---- |  
-| 18.1.24.514| Telerik Reporting|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
+| 18.3.24.1112| Telerik Reporting|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description
 

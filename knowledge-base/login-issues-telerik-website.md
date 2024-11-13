@@ -23,10 +23,10 @@ To troubleshoot and potentially resolve login issues on the Telerik website, fol
 
 1. Ensure the used browser is up-to-date. Check the browser's official website for information on the latest version and update if necessary.
 2. Clear the browser's cache and cookies. This step removes saved website data that might be causing the issue.
-3. Disable all browser extensions including Test Studio Extension. Extensions can interfere with website functionality, including login processes.
-4. Confirm that JavaScript is enabled in the browser settings. JavaScript is essential for many website interactions.
+3. Disable all browser extensions. Extensions can interfere with website functionality, including login processes.
+4. Confirm that **JavaScript is enabled** in the browser settings. JavaScript is essential for many website interactions.
 5. Ensure that cookies are enabled. Cookies are necessary for maintaining a login session.
-6. Try accessing the website again using incognito or private browsing mode. This mode uses a fresh session without saved cookies or cache.
+6. Try accessing the website again using **incognito** or **private** browsing mode. This mode uses a fresh session without saved cookies or cache.
 7. Test the login process with a different browser or device to rule out browser-specific issues.
 8. Attempt to access the website from a different network. Some networks may have restrictions that impact website functionality.
 

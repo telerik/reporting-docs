@@ -1,6 +1,6 @@
 ---
 title: Resolving "No report instance" Error
-description: "Learn how to fix the 'No report instance' console error when using Telerik Reporting in a .NET 9 project with the HTML5 Report Viewer."
+description: "Learn how to fix the 'No report instance' console error when using Telerik Reporting in a .NET projects with the HTML5-based Report Viewers."
 type: troubleshooting
 page_title: Fix "No report instance" Console Error when using HTML5 Report Viewer
 slug: resolve-no-report-instance-error-telerik-reporting
@@ -12,48 +12,47 @@ ticketid: 1670454
 ## Environment
 
 <table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® Reporting</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>18.3.24.1112</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td>Product</td>
+            <td>Progress® Telerik® Reporting</td>
+        </tr>
+        <tr>
+            <td>Version</td>
+            <td>18.3.24.1112</td>
+        </tr>
+    </tbody>
 </table>
 
 ## Description
 
-After upgrading a project to .NET 9 and the latest Telerik Reporting version 18.3.24.1112, the reports fail to load with a console error stating "No report instance" found. This issue typically occurs when custom JsonSerializerSettings are added in the `AddNewtonsoftJson` method in the `Program.cs` file.
+After upgrading a project to use the [Progress® Telerik® Reporting 2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112) version of the Telerik Reporting assemblies, the reports fail to load with a console error stating `No report instance` was found. 
 
 ## Cause
 
-The problem is caused by custom `JsonSerializerSettings` specified in the `AddNewtonsoftJson` method which interfere with the serialization process required for the Telerik Reporting to function properly.
+The problem is most commonly caused by custom [JsonSerializerSettings](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm) specified in the `AddNewtonsoftJson` method which interferes with the serialization process required for the Telerik Reporting to function properly.
 
 ## Solution
 
-To resolve the "No report instance" error, consider one of the following approaches:
+To resolve the `No report instance` error, consider one of the following approaches:
 
-### Using Default Serializer Settings
+### Using Default JsonSerializerSettings
 
-Update the `AddNewtonsoftJson` method in the `Program.cs` file to use the default serializer settings:
+Update the [AddNewtonsoftJson](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) method in the `Program.cs` file of the project to use the default [JsonSerializerSettings](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm):
 
-```csharp
+````CSharp
 var builder = WebApplication.CreateBuilder(args);
 
-// Add framework services.
-builder.Services.AddNewtonsoftJson();
-```
+    builder.Services.AddNewtonsoftJson();
+````
 
-### Creating an Action Filter for Custom Serializer Settings
+### Creating an Action Filter for custom JsonSerializerSettings
 
-If using the default serializer settings is not an option due to application requirements, create an action filter to customize the serializer settings for the reports:
+If using the default serializer settings is not an option due to application requirements, create an [ActionFilter](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionfilterattribute) to customize the [JsonSerializerSettings](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm) for the reports controller:
 
-1. Implement the `JsonConfigFilterAttribute` action filter:
+1. Implement the `JsonConfigFilterAttribute` [ActionFilter](https://learn.microsoft.com/en-us/dotnet/api/system.web.mvc.actionfilterattribute):
 
-```csharp
+    ````CSharp
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Newtonsoft.Json;
@@ -88,27 +87,27 @@ public class JsonConfigFilterAttribute : ActionFilterAttribute
         base.OnResultExecuting(context);
     }
 }
-```
+````
 
-2. Annotate the `ReportsController` with the `JsonConfigFilter` attribute:
 
-```csharp
+1. Annotate the `ReportsController` with the newly created `JsonConfigFilter` attribute:
+
+    ````CSharp
 [Route("api/[controller]")]
 [ApiController]
 [JsonConfigFilter]
 public class ReportsController : ReportsControllerBase
 {
-            public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
-            : base(reportServiceConfiguration)
+    public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
+    : base(reportServiceConfiguration)
         {
         }
 }
-```
+````
 
-Applying either of these solutions will address the issue, allowing Telerik Reports to load correctly in a .NET 9 project with the HTML5 Report Viewer.
 
 ## See Also
 
-- [JsonSerializerSettings Documentation](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm)
-- [Understanding Action Filters in ASP.NET MVC](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-cs)
-- [NewtonsoftJsonOutputFormatter Class](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.formatters.newtonsoftjsonoutputformatter?view=aspnetcore-8.0)
+* [JsonSerializerSettings Documentation](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_JsonSerializerSettings.htm)
+* [Understanding Action Filters in ASP.NET MVC](https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-cs)
+* [NewtonsoftJsonOutputFormatter Class](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.mvc.formatters.newtonsoftjsonoutputformatter?view=aspnetcore-8.0)

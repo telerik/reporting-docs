@@ -44,6 +44,10 @@ To achieve a fixed number of detail lines in a Telerik Reporting table layout, f
 
 1. **Create a Custom ObjectDataSource**: Implement a custom [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%}) that ensures your dataset always includes a minimum of 10 records. This might involve adding empty or placeholder records to the data returned by your data source.
 1. **Bind to the Table**: Use this ObjectDataSource as the data source for your table in the report.
+
+## Additional Resources
+
+Download a [Sample Report](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/MinTableRows.trdp) from our GitHub Reporting-Samples repository.
  
 ## See Also
 

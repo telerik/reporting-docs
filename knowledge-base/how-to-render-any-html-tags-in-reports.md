@@ -48,7 +48,7 @@ namespace UserFunctions
 ````
 
 
-1. Build the project, then copy the project assembly as well as the `HtmlRenderer.WinForms.dll` assembly from the project's `bin` folder to the folder where the Report Designer exe is located, e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`.
+1. Build the project, then copy the project assembly as well as the `HtmlRenderer.WinForms.dll` and `HtmlRenderer.dll` assemblies from the project's `bin` folder to the folder where the Report Designer exe is located, e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer`.
 1. Open the `Telerik.ReportDesigner.exe.config` file and use the [assemblyReferences Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}) to add references to the Class Library project's assembly and the `HtmlRenderer.WinForms.dll` assembly:
 
 	````XML
@@ -69,7 +69,7 @@ namespace UserFunctions
 
 ## Notes
 
-To display a report that uses this approach in a separate application, the assembly of the Class Library project and the `HtmlRenderer.WinForms.dll` assembly should be referenced in the project where Reporting will be used - [Configuration for the Report Viewer/Web Report Designer]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%}#configuration-for-the-report-viewerweb-report-designer).
+To display a report that uses this approach in a separate application, the assembly of the Class Library project, the `HtmlRenderer.dll` and the `HtmlRenderer.WinForms.dll` assemblies should be referenced in the project where Reporting will be used - [Configuration for the Report Viewer/Web Report Designer]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%}#configuration-for-the-report-viewerweb-report-designer).
 
 ## See Also
 

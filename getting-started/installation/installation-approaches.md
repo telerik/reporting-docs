@@ -60,6 +60,10 @@ To install Telerik Reporting through the MSI automatic installer file:
 
 	![The Setup Page for the Samples Database of the Telerik Reporting Installation Wizard](images/installWizard3.png)
 
+	![Installation Step](images/installWizard4.png) 
+
+	![Finish Step](images/installWizard5.png) 
+
 ## Using NuGet Packages
 
 You can add Telerik Reporting to a project by using the [Telerik Reporting NuGet packages](https://nuget.telerik.com/v3/index.json). The NuGet packages are a single ZIP file with the `.nupkg` extension.

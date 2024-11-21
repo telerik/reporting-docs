@@ -42,6 +42,16 @@ Some common problems with these large reports are that they contain data fields 
 
 If you have reports that do not need to have live execution, set the service ReportSharingTimeout to an appropriate value. For more information see: [HTML5 Report Viewer and Reporting REST services]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
 
+### Use Telerik ReportViewer's PrintPreview Mode
+
+When you have a huge Table/List/Crosstab in your report's detail section, it will be rendered fully before being displayed in the Viewer, when the latter is in its default _Interactive View_ mode. The reason is that this mode supports only soft pagination that occurs at the end of the section when it occupies more space than the specified page size. With tables of thousands of rows, the soft page size may be hundreds of times larger than the specified hard page size.
+
+To avoid this problem you may switch the viewer's View Mode to __Print Preview__, which respects the Report PageSettings and the corresponding Page Size. In _Print Preview_, the rendered pages are with the specified size, which in this case results in more pages with smaller sizes. The improved performance comes from the smaller content for a single page, which may be a key performing factor in HTML and XAML renderings.
+
+The [Interactive and Print Layouts]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/interactive-vs.-print-layout%}) elaborates further on the View modes.
+
+The pagination is explained in more detail in the article [Understanding Pagination]({%slug telerikreporting/designing-reports/rendering-and-paging/understanding-pagination%}).
+
 ### Deliver Rendered Reports for Non-browser Formats
 
 To reduce the load on your reporting environment, you can use our Report Server where one may schedule a report in off-peak hours and send it by mail when ready, thus avoiding the waiting and this comes out of the box.

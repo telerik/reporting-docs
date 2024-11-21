@@ -8,13 +8,15 @@ published: True
 position: 6
 ---
 
+# Embedding Telerik Reporting in ASP.NET Core Reporting applications
+
 [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core) is an advanced Web technology that lets you build modern cross-platform client-side, server-side and combined applications. This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting in ASP.NET Core Web Reporting applications.
 
 ## Supported Operating Systems and Docker Containers
 
 The article [Available .NET Support for Operating Systems and Docker Containers]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}) elaborates on the specifics when deploying Telerik Reporting on different environments.
 
-## Displaying Reports in ASP.NET Core Reporting Applications
+## Displaying Reports in ASP.NET Core Web Reporting Applications
 
 The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. This makes it the perfect widget for displaying Telerik Reporting Reports in all Web Reporting Applications.
 
@@ -24,9 +26,9 @@ The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/
 
 ### Implementation
 
-The article [Using the HTML5 Report Viewer in an ASP.NET Core application in .NET]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application%}) is a step-by-step tutorial on embedding the HTML5 Report Viewer in ASP.NET Core Reporting projects.
+The article [Using the HTML5 Report Viewer in an ASP.NET Core application in .NET]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application%}) is a step-by-step tutorial on embedding the HTML5 Report Viewer in ASP.NET Core Web Reporting projects.
 
-## Generating Reports in ASP.NET Core Reporting Applications
+## Generating Reports in ASP.NET Core Web Reporting Applications
 
 The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) provide an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the assembly/package `Telerik.Reporting.Services.AspNetCore`. It may be embedded in any ASP.NET Core Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
 

@@ -44,12 +44,13 @@ There are different methods for configuring the Telerik Reporting REST Service i
 
 The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the ASP.NET Core Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
 
-### Requirements
+### Web Report Designer Requirements
 
+The Web Report Designer requires a Report Designer REST service, which fully functional implementation resides in the assembly/package `Telerik.WebReportDesigner.Services` as explained in the section [Web Report Designer Implementation](#Web-Report-Designer-Implementation).
 
-### Implementation
+### Web Report Designer Implementation
 
-The tutorial [Setting up the Web Report Designer in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}) elaborates on implementing the web designer in ASP.NET Core Web Reporting projects.
+The tutorial [Setting up the Web Report Designer in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}) elaborates on implementing the web designer widget and its REST Service in ASP.NET Core Web Reporting projects.
 
 ## See Also
 

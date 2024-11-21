@@ -172,5 +172,6 @@ app.UseCors("ReportingRestPolicy");
 
 ## See Also
 
+* [Embedding Telerik Reporting in ASP.NET Core Reporting Applications]({%slug asp-net-core-reporting%})
 * [ASP.NET Core Web API Implementation Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
 * [Hosting in .NET 6+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})

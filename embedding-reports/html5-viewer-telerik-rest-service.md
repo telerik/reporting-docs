@@ -55,4 +55,4 @@ Important cache management-related properties of the IReportServiceConfiguration
 
 ## See Also
 
-* [Embedding Telerik Reporting in ASP.NET Core Reporting Applications]({%slug asp-net-core-reporting%})
+* [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})

@@ -8,8 +8,6 @@ published: True
 position: 6
 ---
 
-# Overview
-
 [ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core) is an advanced Web technology that lets you build modern cross-platform client-side, server-side and combined applications. This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting in ASP.NET Core Web Reporting applications.
 
 ## Supported Operating Systems and Docker Containers

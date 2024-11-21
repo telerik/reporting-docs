@@ -40,6 +40,17 @@ There are different methods for configuring the Telerik Reporting REST Service i
 * [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 8 with __Top-Level Statements__]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
 * [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6, .NET 8 and .NET 9 with __Startup.cs__]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
 
+## Designing Reports in ASP.NET Core Web Reporting Applications
+
+The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the ASP.NET Core Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
+
+### Requirements
+
+
+### Implementation
+
+The tutorial [Setting up the Web Report Designer in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}) elaborates on implementing the web designer in ASP.NET Core Web Reporting projects.
+
 ## See Also
 
 * [Displaying Reports]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/overview%})

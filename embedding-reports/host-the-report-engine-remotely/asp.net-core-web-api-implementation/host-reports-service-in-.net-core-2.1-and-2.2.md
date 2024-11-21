@@ -171,3 +171,7 @@ namespace AspNetCoreDemo.Controllers
 ## Test the service implementation
 
 To ensure that the service operates, run the application and navigate to either of the General REST Service API URLs `{applicationRoot}/api/reports/formats` or `{applicationRoot}/api/reports/version`. The first should return a [JSON representing the supported rendering extensions]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-available-document-formats%}), and the second - the [version of the Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/general-api/get-version%}).
+
+## See Also
+
+* [Embedding Telerik Reporting in ASP.NET Core Reporting Applications]({%slug asp-net-core-reporting%})

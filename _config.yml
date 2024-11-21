@@ -448,7 +448,7 @@ spaviewerversion: "24.24.1112"
 nodeversion: "16.0.0"
 angularsubsetversion: "16.1.0"
 kendosubsetversion: "2022.3.913"
-blazoruiversion: "4.6.0"
+blazoruiversion: "6.2.0"
 
 # Feedback Form Product code
 productCode: REPORTING

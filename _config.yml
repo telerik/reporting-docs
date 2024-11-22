@@ -124,16 +124,16 @@ navigation:
         position: 5
         title: "Embedding Reports"
     embedding-reports/cache-management:
-        position: 7
+        position: 70
         title: "Cache Management"  
     embedding-reports/program-the-report-definition:
-        position: 8
+        position: 80
         title: "Managing Reports Programmatically"
     embedding-reports/program-the-report-definition/report-events:
         position: 15
         title: "Report Events"
     embedding-reports/display-reports-in-applications:
-        position: 6
+        position: 60
         title: "Displaying Reports"
     embedding-reports/display-reports-in-applications/web-application:
         position: 10
@@ -241,7 +241,7 @@ navigation:
         position: 15
         title: "Troubleshooting"
     embedding-reports/host-the-report-engine-remotely:
-        position: 5
+        position: 50
         title: "Generating Reports Remotely"
     embedding-reports/host-the-report-engine-remotely/asp.net-web-api-implementation:
         position: 10

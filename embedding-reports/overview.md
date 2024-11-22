@@ -80,3 +80,7 @@ If you are just starting with Telerik Reporting, look at our [First Steps]({%slu
 Wondering about specific report design? You might find helpful suggestions on how to present the data in [Report Structure]({%slug telerikreporting/designing-reports/report-structure/overview%}) section.
 
 Are you into ASP.NET Core? See how to display reports in a .NET Core application for Windows, Linux, and macOS platforms here - [.NET Core Support]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}).
+
+## See Also
+
+* [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})

@@ -52,3 +52,7 @@ Important cache management-related properties of the IReportServiceConfiguration
 	When a report is rendered once for a given set of the above requirements, it can be reused for the time specified as `ReportSharingTimeout`. Setting the `ReportSharingTimeout` to `0` (`zero`, default) will cause each client request for a report to produce a new report document instead of reusing an already rendered document.
 
 > When you navigate to reports via [NavigateToReportAction]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) the Reporting engine always creates a new instance of the target report.
+
+## See Also
+
+* [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})

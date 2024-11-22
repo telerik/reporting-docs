@@ -241,3 +241,7 @@ app.UseCors("ReportingRestPolicy");
 A full example can be found in the installation folder of Telerik Reporting:
 
 `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET Core 3.1\ReportingRestServiceCorsDemo\CSharp.Core31.ReportingRestServiceCorsDemo`
+
+## See Also
+
+* [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})

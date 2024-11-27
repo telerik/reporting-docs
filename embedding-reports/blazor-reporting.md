@@ -10,7 +10,7 @@ position: 7
 
 # Embedding Telerik Reporting in Blazor Reporting Applications
 
-[Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) is an advanced Web technology that lets you build modern cross-platform client-side, server-side and combined applications. This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting in Blazor Web Reporting applications.
+[Blazor](https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor) is the latest Microsoft Web technology letting you build modern cross-platform client-side, server-side, and combined applications relying entirely on C Sharp code for the page functionality. This article offers an overview of the most popular approaches to integrate Telerik Reporting in Blazor Web Reporting applications.
 
 ## Supported Operating Systems and Docker Containers
 

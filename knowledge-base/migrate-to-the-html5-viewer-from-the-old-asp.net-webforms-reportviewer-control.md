@@ -28,7 +28,7 @@ res_type: kb
   
 ## Description
 
-> The **ASP.NET ReportViewer control is obsolete** as of [Telerik Reporting Q3 2015](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-(version-9-2-15-930)).  
+> The **ASP.NET ReportViewer control is obsolete** as of [Telerik Reporting Q3 2015](https://www.telerik.com/support/whats-new/reporting/release-history/telerik-reporting-q3-2015-(version-9-2-15-930)). It was removed in version [2024 Q4 18.3.24.1112](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112).  
   
 In **Q3 2013** we introduced the HTML5 Report Viewer which is suitable for any web application and it will be further developed. It is recommended to use the HTML5 Viewer of the latest available Telerik Reporting version.  
   

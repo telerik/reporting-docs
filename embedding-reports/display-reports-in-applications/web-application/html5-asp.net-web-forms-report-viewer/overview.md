@@ -27,6 +27,8 @@ The WebForms viewer works like the HTML5 Viewer in a client-server pair with the
 >
 >	* Is suitable for WebForms projects only.
 
+> Starting with the [2024 Q4](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112) release, the ASP.NET WebForms Report Viewer will no longer be distributed with Telerik Reporting. We strongly recommend using its successor - the [HTML5 Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%}), which includes the latest features, performance enhancements, and security improvements offered by both Microsoft and Telerik.
+
 ## Requirements
 
 * The HTML5 ASP.NET Web Forms Report Viewer is built on and requires [ASP.NET 4 Web Forms](https://learn.microsoft.com/en-us/aspnet/web-forms/) or a newer framework.

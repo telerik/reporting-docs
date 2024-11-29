@@ -18,7 +18,7 @@ The article [Available .NET Support for Operating Systems and Docker Containers]
 
 ## Displaying Reports in SPA Web Reporting Applications
 
-The Telerik Reporting product comes with ready to use Report Viewers for the following SPA Frameworks:
+The Telerik Reporting product comes with ready-to-use Report Viewers for the following SPA Frameworks:
 
 * [Angular](https://angular.dev/overview)
 
@@ -48,7 +48,7 @@ The Telerik Reporting product comes with ready to use Report Viewers for the fol
 
 	Follow the instructions in the article [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%}).
 
-## Generating Reports in Single Page Web Reporting Applications
+## Generating Reports for Single Page Web Reporting Applications
 
 The Single Page Applications hosting a Telerik Report Viewer require a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to serve the report documents. The service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the assembly/package `Telerik.Reporting.Services.AspNetCore`. It may be embedded in any ASP.NET Core and Blazor Server Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
 

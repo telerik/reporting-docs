@@ -10,19 +10,10 @@ ticketid: 1669311
 ---
 
 ## Environment
+| Version | Product | Author |  
+| --- | --- | ---- |  
+| 18.2.24.806| TelerikReporting |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
-<table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® Reporting</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>18.2.24.806</td>
-</tr>
-</tbody>
-</table>
 
 ## Description
 When developing an application with Telerik Reporting that involves multiple users connecting to different databases, it becomes essential to dynamically set the connection strings based on the user. This KB article also answers the following questions:
@@ -38,9 +29,9 @@ To handle multiple users connecting to different databases in Telerik Reporting,
 
 2. **Implement Custom ISettingsStorage**: For user-specific connections, implement a custom version of the [ISettingsStorage](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.isettingsstorage) interface. Override the `GetConnections()` method to dynamically set the connection string based on the current user. Create a list of `ConnectionInfo` objects where the `Name` remains the same, and only the `ConnectionString` is set dynamically.
 
-    A sample implementation can be found in the article [Implementing Encrypted Connection Strings with Telerik Reporting](https://docs.telerik.com/reporting/knowledge-base/use-encrypted-connection-strings-telerik-reporting). Although it focuses on decrypting connection strings, it provides a clear example of how to dynamically adjust connection strings.
+    A sample implementation can be found in the article [Implementing Encrypted Connection Strings with Telerik Reporting]({%slug use-encrypted-connection-strings-telerik-reporting%}). Although it focuses on decrypting connection strings, it provides a clear example of how to dynamically adjust connection strings.
 
-3. **Adjust Connection String at Preview**: When a report is previewed in the Web Report Designer, use the `ReportSourceResolver` of the `ReportServiceConfiguration` object to dynamically change the connection string. The process for changing connection strings during report preview is detailed in [Decrypting Connection Strings for SqlDataSource Components - HTML5 Report Viewers](https://docs.telerik.com/reporting/knowledge-base/use-encrypted-connection-strings-telerik-reporting#decrypting-connection-strings-for-sqldatasource-components---html5-report-viewers).
+3. **Adjust Connection String at Preview**: When a report is previewed in the Web Report Designer, use the `ReportSourceResolver` of the `ReportServiceConfiguration` object to dynamically change the connection string. The process for changing connection strings during report preview is detailed in [Decrypting Connection Strings for SqlDataSource Components - HTML5 Report Viewers]({%slug use-encrypted-connection-strings-telerik-reporting%}).
 
 By following these steps, you can efficiently manage multiple users connecting to different databases in your Telerik Reporting application.
 
@@ -48,5 +39,4 @@ By following these steps, you can efficiently manage multiple users connecting t
 
 - [ISettingsStorage Interface](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.isettingsstorage)
 - [FileSettingsStorage Class](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.filesettingsstorage)
-- [Implementing Encrypted Connection Strings with Telerik Reporting](https://docs.telerik.com/reporting/knowledge-base/use-encrypted-connection-strings-telerik-reporting)
 - [ReportServiceConfiguration Object](https://docs.telerik.com/reporting/api/telerik.reporting.services.reportserviceconfiguration)

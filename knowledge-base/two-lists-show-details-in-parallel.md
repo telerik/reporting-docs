@@ -42,7 +42,7 @@ Let's try with [Report Groups]({%slug telerikreporting/designing-reports/connect
 
 Here are the main steps for achieving the requirement with the above approach:
 
-1. Add Report Group by a unique field, for example, '= Fields.Number' from the main DataSource in the sample report. In the Group Header include the section with the header _check_ information and let it be rendered only once per group by leaving its 'PrintOnEveryPage' to be 'False' (default).
+1. [Add Report Group]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) grouped by a unique field, for example, '= Fields.Number' from the main DataSource in the sample report. In the Group Header include the section with the header _check_ information and let it be rendered only once per group by leaving its 'PrintOnEveryPage' to be 'False' (default).
 1. In the detail section of the Report add a List ('list1' in the sample). In the list default Panel 'panel1' add one Panel at the top ('panel5') and two identical Panels ('panel2' and 'Payment Stub Panel') with inner Lists ('list2' and 'list3') following it. Use the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) to introduce a Grouping to the detail group of the outer List, which should depend on the number of rows per page. In our sample, we may have 2 lines per page, and the grouping is '= Fields.Index/ 2'. In other scenarios, you would divide by more, depending on the maximum number of rows per page.
 
 	Other settings for the outer List:

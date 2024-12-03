@@ -33,9 +33,8 @@ The report layout consists of three parts. The top part contains the main inform
 
 The main challenge here is that if there are more _stub_ lines within a single _check_ that cannot fit on a single page, we need to ensure:
 
-	* The second, third, etc. page for the same check contains the static text ('Void') in its header instead of the content in the first _check_ page
-	* The second, third, etc. page for the same check contains only the remaining stub lines in both lists
-
+* The second, third, etc. page for the same check contains the static text ('Void') in its header instead of the content in the first _check_ page
+* The second, third, etc. page for the same check contains only the remaining stub lines in both lists
 
 We may use two [Lists/Tables]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) for the duplicated _check stub_s. In Telerik Reporting, the report items are rendered orderly. This means, that the Reporting Engine will render the first List and then will continue with the second List. Therefore, the requirement cannot be achieved with the regular workflow.
 
@@ -56,4 +55,4 @@ Here are the main steps for achieving the requirement with the above approach:
 
 	Use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to set the `DataSource` to the corresponding `= ReportItem.DataObject`. This Expression transfers the parent data to the list.
 
-	Lets display the total for the _stubs_ on the page in a separate TextBox below the List - 'textBox22' and 'textBox23', correspondingly for the two identical lists.
+	Let's display the total for the _stubs_ on the page in a separate TextBox below the List - 'textBox22' and 'textBox23', correspondingly for the two identical lists.

@@ -29,7 +29,7 @@ The purpose of the report we are going to create is to list a number of _checks_
 
 ## Solution
 
-The report layout consists of three parts. The top part contains the main information about the _check_, or the static text ('Void') in a header. The middle and bottom parts would represent the two identical (or different, depending on the scenario, but representing the same data rows) _check stub_s.
+The report layout consists of three parts. The top part contains the main information about the _check_, or the static text ('Void') in a header. The middle and bottom parts would represent the two identical (or different, depending on the scenario, but representing the same data rows) _check stubs_.
 
 The main challenge here is that if there are more _stub_ lines within a single _check_ that cannot fit on a single page, we need to ensure:
 

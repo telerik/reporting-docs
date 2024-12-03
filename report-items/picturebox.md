@@ -186,7 +186,7 @@ The SVG images are rendered in vector format where the rendering extension suppo
 * In OpenXML-based rendering extensions (DOCX, XLSX, PPTX, RTF), the SVG is rendered in a vector format by default, but can be rendered in a raster format if the `deviceInfo` setting `UseMetafile` is set to `false`.
 * In the rest of the rendering extensions, the SVG is rendered as a raster image, but the size of the item is always taken into account for quality.
 
-> \* With version 18.3.24.1112 the image supports __NoDataMessage__. For more information, you can look here - ({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})
+> \* With version 18.3.24.1112 the PictureBox item supports [__NoDataMessage__](/api/telerik.reporting.dataitem#Telerik_Reporting_DataItem_NoDataMessage). For more information, you can look here - [Setting a No Data Message to Data Items]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})
 
 ## Next Steps
 

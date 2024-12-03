@@ -1,7 +1,7 @@
 ---
 title: No Data Message
 page_title: Configuring the NoDataMessage property
-description: "Learn how to set a No Data Message for the nested data items and how to work around the lack of NoDataMessage property for the Report item."
+description: "Learn how to set a No Data Message for the nested data items or PictureBox items and how to work around the lack of NoDataMessage property for the Report item."
 slug: telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message
 tags: how, set, configure, data, message, report, item, nested
 published: True
@@ -9,16 +9,16 @@ position: 6
 previous_url: /report-structure-dataitem-set-no-data-message
 ---
 
-# Setting a No Data Message to Data Items
+# Setting a No Data Message
 
-The `No Data Message` feature allows you to display text, style or hide the empty space of a nested [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}), which data source returns no records.
+The `No Data Message` feature allows you to display text, style or hide the empty space of a nested [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) and [PictureBox item]({%slug telerikreporting/designing-reports/report-structure/picturebox%}#picturebox-report-item-overview), which data source returns no records.
 
 ## Usage
 
-When you want to specify text to show in the rendered report in place of a nested [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) that has no data, set the data item `NoDataMessage` property. At run time, the report engine retrieves the datasource result set and if the result set is empty and the NoDataMessage is specfied, in place of the data item the NoDataMessage is rendered.
+When you want to specify text to show in the rendered report in place of a nested [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) or [PictureBox item]({%slug telerikreporting/designing-reports/report-structure/picturebox%}#picturebox-report-item-overview) that has no data, set the data item `NoDataMessage` property. At run time, the report engine retrieves the datasource result set and if the result set is empty and the NoDataMessage is specfied, in place of the data item the NoDataMessage is rendered.
 
->note The "No Data Message" feature is available for nested Data items: Table, List, Crosstab, Graph, Map.
->The condition to use the feature is to have a nested Data item with DataSource property set to a valid data object, different than NULL. If the data object is filtered to zero returned records, the feature is triggered.
+>note The "No Data Message" feature is available for PictureBox items and nested Data items: Table, List, Crosstab, Graph, Map.
+>The condition to use the feature is to have a PictureBox item or a nested Data item with DataSource property set to a valid data object, different than NULL. If the data object is filtered to zero returned records, the feature is triggered.
 
 ### How To Set NoDataMessage:
 

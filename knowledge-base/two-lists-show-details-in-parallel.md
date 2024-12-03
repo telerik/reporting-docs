@@ -29,11 +29,26 @@ The purpose of the report we are going to create is to list a number of _checks_
 
 ## Solution
 
-The report layout consists of three parts. The top part contains the main information about the _check_, or the static text ('Void') in a [Page Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})). The middle and bottom parts would represent the two _check stub_s.
+The report layout consists of three parts. The top part contains the main information about the _check_, or the static text ('Void') in a header. The middle and bottom parts would represent the two identical (or different, depending on the scenario, but representing the same data rows) _check stub_s.
 
 The main challenge here is that if there are more _stub_ lines within a single _check_ that cannot fit on a single page, we need to ensure:
 
+	* The second, third, etc. page for the same check contains the static text ('Void') in its header instead of the content in the first _check_ page
 	* The second, third, etc. page for the same check contains only the remaining stub lines in both lists
-	* The second, third, etc. page for the same check contains the static text ('Void') in its Page Header instead of the content in the first _check_ page
 
 
+We may use two [Lists/Tables]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%}) for the duplicated _check stub_s. In Telerik Reporting, the report items are rendered orderly. This means, that the Reporting Engine will render the first List and then will continue with the second List. Therefore, the requirement cannot be achieved with the regular workflow.
+
+Let's try with [Report Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-report%}) and inner [List Groups]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/grouping-data/how-to-add-groups-to-table-item-and-crosstab-item%}). This will let us split the data in groups, and render each one on different pages. This will require proper grouping criteria to split the content into groups. For example, an index, if we knew the number of lines on each page. Therefore, the zero-based 'Index' field is included in the _stub check_ schema.
+
+
+
+I had to add groups, Lists, Panels, etc, and change their KeepTogether and CanShring properties to achieve the exact behavior.
+
+1. Add Report Group by '= Fields.Number' - I assume it is unique. In the Group Header include the 'Printed Check' section and let it be rendered only once per group, as required - leave its 'PrintOnEveryPage' to be 'False' (default).
+
+2. In the detail section of the Report add a new List with a Panel and move inside the current Lists. Introduce a Grouping to the detail group of the new List, which should depend on the number of rows per page. In my case, I may have 2 lines per page, and the grouping is '= Fields.Index/ 2'. In your scenario, you would divide by 5-6 or more, depending on the maximum number of rows per page.
+
+3. In the Panel 'panel1' of the new List add above the inner lists another Panel, where to display the 'VOID' text or other content when the data is split into multiple pages. It should have the same height as the Group Header, as it would replace it on the second and further pages for the group. We need to hide this panel for the first page of the group, which may be done with Conditional Formatting when '= Fields.Index = 0' as on the second and next pages the first index will have other value.
+
+4. I changed some PageBreaks, KeepTogether, and CanShrink from the previous version of the report. I may miss some of them, so I won't specify them here. You may check them from the attached sample report.

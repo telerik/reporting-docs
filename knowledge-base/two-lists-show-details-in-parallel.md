@@ -22,16 +22,18 @@ res_type: kb
 
 ## Description
 
-The purpose of the report we are going to create is to list a number of checks, each containing details representing multiple payments, and let them be printed with particular requirements:
+The purpose of the report we are going to create is to list a number of _checks_, each containing details representing multiple _check stubs_, and let them be printed with particular requirements:
 
-1. Each check main/header information should be printed only on the page header of the first page associated with this check. The rest of the pages related to the check must contain static text in the page header, for example, 'Void'.
-1. The details should be printed twice in parallel. The idea is for the printed reports to allow these two sections to be separated/cut, one going to the client and the other staying with the service provider.
+1. Each _check_ should start on a new page and its main/header information should be printed only on the page header of the first page associated with this _check_. The rest of the pages related to the _check_ must contain static text in the page header, for example, 'Void'.
+1. The _stubs_ for the _check_ should be printed twice in parallel. The idea is for the printed reports to allow these two sections with the _check stubs_ to be easily cut, one going to the payees for their records.
+
+## Solution
+
+The report layout consists of three parts. The top part contains the main information about the _check_, or the static text ('Void') in a [Page Header]({%slug telerikreporting/designing-reports/report-structure/how-to/how-to-add-remove-page-header---footer-sections%})). The middle and bottom parts would represent the two _check stub_s.
+
+The main challenge here is that if there are more _stub_ lines within a single _check_ that cannot fit on a single page, we need to ensure:
+
+	* The second, third, etc. page for the same check contains only the remaining stub lines in both lists
+	* The second, third, etc. page for the same check contains the static text ('Void') in its Page Header instead of the content in the first _check_ page
 
 
-The report layout consists of three parts. The top part contains the main information about the check.
-
-
-
-
-
-the middle and bottom thirds will be slight variations on the check stub. The layout must be sufficiently flexible as to be able to handle an arbitrary number of PrintedCheck classes in the list. Furthermore, the check stub sections need to be sufficiently intelligent such that if there are more stub lines than will fit in a single section, a 2nd page will be generated which contains only the remaining stub lines but does not reprint the check in the top third.

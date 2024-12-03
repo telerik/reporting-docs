@@ -186,13 +186,14 @@ The SVG images are rendered in vector format where the rendering extension suppo
 * In OpenXML-based rendering extensions (DOCX, XLSX, PPTX, RTF), the SVG is rendered in a vector format by default, but can be rendered in a raster format if the `deviceInfo` setting `UseMetafile` is set to `false`.
 * In the rest of the rendering extensions, the SVG is rendered as a raster image, but the size of the item is always taken into account for quality.
 
-> \* With version `18.3.24.1112` of Telerik Reporting, the PictureBox item now supports [__NoDataMessage__](api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_NoDataMessage). For more information, you can look here - [Setting a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%}).
+> Since version `18.3.24.1112` of Telerik Reporting, the PictureBox item now supports [__NoDataMessage__](/api/telerik.reporting.picturebox#Telerik_Reporting_PictureBox_NoDataMessage). For more information, refer to the [Setting a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%}) article.
 
 ## Next Steps
 
 * [(Demo) Product Catalog Report with a PictureBox](https://demos.telerik.com/reporting/product-catalog)
 * [Using Styles to Customize Reports]({%slug telerikreporting/designing-reports/styling-reports/using-styles-to-customize-reports%})
 * [Using Expressions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/overview%})
+* [Setting a No Data Message]({%slug telerikreporting/designing-reports/connecting-to-data/how-to-set-a-no-data-message%})
 * [(API) PictureBox](/api/Telerik.Reporting.PictureBox)
 * [(API) Sizing](/api/Telerik.Reporting.PictureBox#Telerik_Reporting_PictureBox_Sizing)
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)

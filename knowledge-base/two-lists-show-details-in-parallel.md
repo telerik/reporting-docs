@@ -51,4 +51,6 @@ I had to add groups, Lists, Panels, etc, and change their KeepTogether and CanSh
 
 1. Inner Lists???
 
+https://supportheroes.telerik.com/ticket/1670679
+
 4. I changed some PageBreaks, KeepTogether, and CanShrink from the previous version of the report. I may miss some of them, so I won't specify them here. You may check them from the attached sample report.

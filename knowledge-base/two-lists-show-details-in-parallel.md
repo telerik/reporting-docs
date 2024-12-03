@@ -43,14 +43,17 @@ Let's try with [Report Groups]({%slug telerikreporting/designing-reports/connect
 
 Here are the main steps for achieving the requirement with the above approach:
 
-I had to add groups, Lists, Panels, etc, and change their KeepTogether and CanShring properties to achieve the exact behavior.
-
 1. Add Report Group by a unique field, for example, '= Fields.Number' from the main DataSource in the sample report. In the Group Header include the section with the header _check_ information and let it be rendered only once per group by leaving its 'PrintOnEveryPage' to be 'False' (default).
-1. In the detail section of the Report add a List with one Panel at the top and two identical inner Lists following it. Introduce a Grouping to the detail group of the outer List, which should depend on the number of rows per page. In our sample, we may have 2 lines per page, and the grouping is '= Fields.Index/ 2'. In other scenarios, you would divide by more, depending on the maximum number of rows per page.
-1. In the top Panel of the outer List, we will display the 'VOID' text or other static content when the data is split into multiple pages. It should have the same height as the Group Header, as it would replace it on the second and further pages for the group. We need to hide this panel for the first page of the group, which may be done with [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) when `= First(Fields.Index)     =     0` as on the second and next pages the first index will have other value.
+1. In the detail section of the Report add a List ('list1' in the sample). In the list default Panel 'panel1' add one Panel at the top ('panel5') and two identical Panels ('panel2' and 'Payment Stub Panel') with inner Lists ('list2' and 'list3') following it. Use the [Group Explorer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/group-explorer%}) to introduce a Grouping to the detail group of the outer List, which should depend on the number of rows per page. In our sample, we may have 2 lines per page, and the grouping is '= Fields.Index/ 2'. In other scenarios, you would divide by more, depending on the maximum number of rows per page.
 
-1. Inner Lists???
+	Other settings for the outer List:
+	* Use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to set the `DataSource` to the corresponding data field of the main DataSource. In the sample use `= Fields.StubLines`.
+	* `CanShrink` of the List main Panel 'panel1' should be `True`.
+	* Set `GroupKeepTogether` for the DetailGroup of the List to `True`.
 
-https://supportheroes.telerik.com/ticket/1670679
+1. In the top Panel `panel5` of the outer List, we will display the 'VOID' text or other static content when the data is split into multiple pages. It should have the same height as the Report Group Header, as it would replace it on the second and further pages for the _check_. We need to hide this panel for the first page of the group, which may be done with [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) when `= First(Fields.Index)     =     0` as on the second and next pages the first index will have other value. Use the Conditional Formatting to set the `Visible` property of the top Panel `panel5` to `False`.
+1. The inner identical panels with the _check stubs_ should contain the inner lists with the details and the stub headers. Let the latter be in TextBoxes outside the list.
 
-4. I changed some PageBreaks, KeepTogether, and CanShrink from the previous version of the report. I may miss some of them, so I won't specify them here. You may check them from the attached sample report.
+	Use [Bindings]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) to set the `DataSource` to the corresponding `= ReportItem.DataObject`. This Expression transfers the parent data to the list.
+
+	Lets display the total for the _stubs_ on the page in a separate TextBox below the List - 'textBox22' and 'textBox23', correspondingly for the two identical lists.

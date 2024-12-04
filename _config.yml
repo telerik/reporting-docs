@@ -13,10 +13,10 @@ exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engin
 navigation:
 ## List your directory names and order here, like this:
     getting-started:
-        position: 1
+        position: 10
         title: "Getting Started"
     security:
-        position: 2
+        position: 20
         title: "Security"
     getting-started/web-designer:
         position: 5
@@ -25,10 +25,10 @@ navigation:
         position: 6
         title: "Download & Installation"
     upgrade:
-        position: 11
+        position: 110
         title: "Upgrade"
     styling:
-        position: 7
+        position: 70
         title: "Styles & Appearance"
     styling/rendering-and-paging:
         position: 8
@@ -40,7 +40,7 @@ navigation:
         position: 1
         title: "Styling"
     report-items:
-        position: 3
+        position: 30
         title: "Report Items"
     report-items/barcode:
         position: 1
@@ -85,7 +85,7 @@ navigation:
         position: 6
         title: "HtmlTextBox"
     doc-output:
-        position: 10
+        position: 100
         title: "Document Output"
     doc-output/configure-the-report-engine:
         position: 10
@@ -94,7 +94,7 @@ navigation:
         position: 11
         title: "Configuring the Output Formats"
     interactivity:
-        position: 8
+        position: 80
         title: "Interactivity"
     interactivity/bookmarks:
         position: 10
@@ -115,13 +115,13 @@ navigation:
         position: 13
         title: "Table of Contents"
     globalization:
-        position: 9
+        position: 90
         title: "Globalization"
     importing-reports:
-        position: 6
+        position: 60
         title: "Importing Reports"
     embedding-reports:
-        position: 5
+        position: 50
         title: "Embedding Reports"
     embedding-reports/cache-management:
         position: 70
@@ -280,7 +280,7 @@ navigation:
         position: 15
         title: "JSON Entities"
     designing-reports:
-        position: 4
+        position: 40
         title: "Creating Reports"
     designing-reports/report-designer-tools:
         position: 4
@@ -394,10 +394,10 @@ navigation:
         position: 6
         title: "Report Book" 
     knowledge-base:
-        position: 20
+        position: 200
         title: "Knowledge Base"
     api:
-        position: 30
+        position: 300
         title: "API Reference"
 ## The application virtual path
 baseurl: /reporting

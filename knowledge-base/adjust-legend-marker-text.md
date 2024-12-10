@@ -40,7 +40,7 @@ We may use the [Position](/api/telerik.reporting.graphlegend#Telerik_Reporting_G
 
 For more precise control over the spacing between the legend markers and the text, the `Series.LegendItem.Style.Padding` property offers a flexible solution. By applying negative padding, you can move the legend text closer to the markers. The `Padding` property affects the space around the legend text, allowing for fine-tuning of its position relative to the legend markers.
 
-![Image of how to move the legend text with Padding](image/padding.png)
+![Image of how to move the legend text with Padding](images/padding.png)
 
 This image demonstrates how to customize the left padding of the legend item's style, effectively moving the text closer to the legend markers. Adjust the padding value according to your specific layout requirements.
 

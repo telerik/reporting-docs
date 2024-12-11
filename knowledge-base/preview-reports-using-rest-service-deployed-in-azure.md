@@ -63,6 +63,46 @@ The Reporting engine can be configured to use different output formats for rende
 	</extensions>
 </Telerik.Reporting>
 ````
+````JSON
+"extensions": [
+      {
+        "name": "IMAGEInteractive",
+        "parameters": [
+          {
+            "name": "OutputFormat",
+            "value": "PNG"
+          }
+        ]
+      },
+      {
+        "name": "IMAGE",
+        "parameters": [
+          {
+            "name": "OutputFormat",
+            "value": "PNG"
+          }
+        ]
+      },
+      {
+        "name": "IMAGEPrintPreview",
+        "parameters": [
+          {
+            "name": "OutputFormat",
+            "value": "PNG"
+          }
+        ]
+      },
+      {
+        "name": "IMAGEPrint",
+        "parameters": [
+          {
+            "name": "OutputFormat",
+            "value": "PNG"
+          }
+        ]
+      }   
+]
+````
 
 ## Additional settings
 

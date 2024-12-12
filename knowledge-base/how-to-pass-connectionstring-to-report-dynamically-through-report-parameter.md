@@ -26,20 +26,24 @@ Sometimes it is necessary to change dynamically the connection string of a repor
 The requirement can be achieved without writing additional code, **_directly in the report definition_** using dedicated report parameters. Here are the steps:
 
 1. In the report definition [introduce a new Report Parameter]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%}) (for example _ConnectionStringParameter_) - the connection string will be passed to the Report via this parameter.  
-2. In the Report or other [Data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) (Table, List, etc.) where the connection string is supposed to be changed dynamically introduce a new [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) as shown below:  
+1. In the Report or another [Data Item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) (Table, List, etc.) where the connection string is supposed to be changed dynamically, introduce a new [Binding]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) as shown below:  
 
 	```XML
 	Property path                   |   Expression
 
 	DataSource.ConnectionString     |   = Parameters.ConnectionStringParameter.Value
 	```
+ 
+![Changed dynamically the connection string by using Binding](images/ChangeConnectionStringdynamicallywithBinding.png)
 
 ## Notes
-The _DataSource.ConnectionString_ property is not listed in the dropdown and must be typed manually.
 
-The proposed approach cannot be used to modify the Connection String of Report Parameter -\> AvailableValues -\> DataSource as report parameters do not expose Bindings.
+The `DataSource.ConnectionString` property is not listed in the dropdown and must be typed manually.
 
-The same approach can be used to modify the _SelectCommand_ Property of the SqlDataSource. The _DataSource.SelectCommand_ should be set in the above code snippet in this case.
+The proposed approach *cannot* be used to modify the Connection String of Report Parameter -\> AvailableValues -\> DataSource as report parameters do not expose `Bindings`.
+
+The same approach can be used to modify the `SelectCommand` Property of the SqlDataSource. The `DataSource.SelectCommand` should be set in the above code snippet in this case.
 
 ## See Also
-[Changing the connection string dynamically according to runtime data](https://www.telerik.com/support/kb/reporting/details/changing-the-connection-string-dynamically-according-to-runtime-data)
+
+* [Changing the connection string dynamically according to runtime data](https://www.telerik.com/support/kb/reporting/details/changing-the-connection-string-dynamically-according-to-runtime-data)

@@ -33,7 +33,7 @@ The requirement can be achieved without writing additional code, **_directly in 
 
 	DataSource.ConnectionString     |   = Parameters.ConnectionStringParameter.Value
 	```
-![Changed dynamically the connection string by using Binding](images/Binding.png)
+![Changed dynamically the connection string by using Binding](images/ChangeConnectionStringdynamicallywithBinding.png)
 
 ## Notes
 The _DataSource.ConnectionString_ property is not listed in the dropdown and must be typed manually.

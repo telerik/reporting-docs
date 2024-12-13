@@ -5,7 +5,7 @@ description: "Desktop Reporting is a framework for generating and delivering dyn
 slug: desktop-reporting
 tags: telerik, reporting, reports, desktop, net
 published: True
-position: 10
+position: 95
 ---
 
 # Embedding Telerik Reporting in Desktop Reporting Applications

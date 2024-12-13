@@ -5,7 +5,7 @@ description: "Blazor Reporting is a framework for generating and delivering dyna
 slug: blazor-reporting
 tags: telerik, reporting, reports, web, blazor
 published: True
-position: 7
+position: 91
 ---
 
 # Embedding Telerik Reporting in Blazor Reporting Applications

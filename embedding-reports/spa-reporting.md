@@ -5,7 +5,7 @@ description: "Generate and deliver dynamic reports to Single Page Applications u
 slug: spa-reporting
 tags: telerik, reporting, reports, web, spa, angular, react
 published: True
-position: 8
+position: 92
 ---
 
 # Embedding Telerik Reporting in Single Page Web Reporting Applications

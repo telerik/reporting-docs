@@ -5,7 +5,7 @@ description: "ASP.NET Core Reporting is a framework for generating and deliverin
 slug: asp-net-core-reporting
 tags: telerik, reporting, reports, web, asp, net, core
 published: True
-position: 6
+position: 90
 ---
 
 # Embedding Telerik Reporting in ASP.NET Core Reporting Applications

@@ -5,7 +5,7 @@ description: "ASP.NET Reporting is a framework for generating and delivering dyn
 slug: asp-net-reporting
 tags: telerik, reporting, reports, web, asp, net
 published: True
-position: 9
+position: 93
 ---
 
 # Embedding Telerik Reporting in ASP.NET Reporting Applications

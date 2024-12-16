@@ -33,5 +33,5 @@ An *"#ERROR# An error occurred while parsing EntityName."* occurs at the place o
 The input can be escaped:  
 
 - In the data-retrieval method. This will warry between data bases. For example, with SQL Server 2016 (13.x) and later, [STRING_ESCAPE](https://docs.microsoft.com/en-us/sql/t-sql/functions/string-escape-transact-sql?view=sql-server-ver15) can be used.
-- In the expression with the [HtmlEncode utility function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/utility-functions%});
+- In the expression with the `HtmlEncode` [Text function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/text-functions%});
 - In a [custom function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) used in the **HtmlTextBox.Value** property's expression through a binding.

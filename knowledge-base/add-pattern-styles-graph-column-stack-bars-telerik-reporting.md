@@ -45,8 +45,12 @@ To add a pattern style to graph column stack bars in Telerik Reporting, use the 
 
 By following these steps, you can achieve a pattern style similar to the desired design in your Telerik Report. Experiment with different sizes and designs of the background image to find the perfect pattern for your report.
 
+## Sample Report
+
+* [CustomPatternGraph.trdx](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/CustomPatternGraph/CustomPatternGraph.trdx) 
+
 ## See Also
 
-- [Telerik Reporting Graphs]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
-- [Create a Graph with Column and Line Series]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-graph-with-column-and-line-series%})
-- [Change the Gap between the Bars in the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-gap-between-the-bars%})
+* [Telerik Reporting Graphs]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
+* [Create a Graph with Column and Line Series]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-create-graph-with-column-and-line-series%})
+* [Change the Gap between the Bars in the Graph]({%slug telerikreporting/designing-reports/report-structure/graph/how-to/how-to-change-the-gap-between-the-bars%})

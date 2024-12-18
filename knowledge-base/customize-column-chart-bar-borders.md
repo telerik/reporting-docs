@@ -1,6 +1,6 @@
  ---
 title: Setting Borders on Column Chart Bars
-description: Learn how to customize the borders of bar elements within a column chart in Telerik Reporting.
+description: "Learn how to customize the borders of bar elements within a column chart in Telerik Reporting."
 type: how-to
 page_title: How to Customize Column Chart Bar Borders
 slug: customize-column-chart-bar-borders
@@ -31,8 +31,8 @@ To customize the borders of the bars in a column chart, follow these steps:
 2. Expand the **DataPointStyle** property of the selected bar.
 3. To define the appearance of the bar borders, use the **LineWidth**, **LineColor**, and **LineStyle** properties. 
    - **LineWidth**: Sets the thickness of the border. If it's set to 0, no border will be displayed. To show the border, specify a positive value, such as `5px`.
-   - **LineColor**: Determines the colour of the border.
-   - **LineStyle**: Defines the style of the borderline, such as solid, dashed, or dotted.
+   - **LineColor**: Determines the color of the border.
+   - **LineStyle**: Defines the style of the border lines, such as solid, dashed, or dotted.
 
 The following screenshot shows what the bar would look like with borders.
 

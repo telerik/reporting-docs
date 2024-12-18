@@ -33,10 +33,10 @@ This knowledge-base article also answers the following questions:
 
 To add a pattern style to graph column stack bars in Telerik Reporting, use the background image property of the graph column. Creating patterns involves using small images and taking advantage of the repeat functionality. The key is to adjust the size of the background image to control the pattern's density.
 
-1. Create a small image (e.g., 10x10 pixels) using an image editing tool like Paint. This image will serve as the pattern.
+1. Create a small image (e.g., 10x10 pixels) using an image editing tool like Paint. This image will serve as the pattern. 
 1. Save the image in an accessible location for your Telerik Report project.
 1. In your Telerik Report Designer, select the graph column stack bar you wish to style. 
-1. Set the `BackgroundImage` property of the graph column stack bar to the path of your created image.
+1. Set the `BackgroundImage` property of the graph column stack bar to the path of your created image. You can use [Conditional Formatting]({%slug telerikreporting/designing-reports/styling-reports/conditional-formatting%}) if you have a series group and you want different groups to have different patterns.
 
     ![Adding Pattern Styles to Graph Column Stack Bars](images/CustomPatternsGraph.png)
    

@@ -21,7 +21,7 @@ Generally, you can use Telerik Reporting for two main purposes.
 
 The first case is if you want to quickly connect to some data, either from a database or a remote web service, display it in a report, and share it with someone by exporting the content in PDF, for example. In this case, you can only install the product and use some of the basic functions provided by the Telerik Report Designers.
 
-However, it's more likely that you'll need the full potential of Telerik Reporting&mdash;a highly functional tool with built-in wizards and templates, which provides a great number of options for customizing your reports and for presenting data in a beautiful, convenient, and easy-to-grasp way. Apart from designing your report in one of the Report Designers, you can display it in virtually any .NET/.NET Framework or web application, and it will run on Windows, Linux, or MacOS.
+However, it's more likely that you'll need the full potential of Telerik Reporting&mdash;a highly functional tool with built-in wizards and templates, which provides a great number of options for customizing your reports and for presenting data in a beautiful, convenient, and easy-to-grasp way. Apart from designing your report in one of the Report Designers, you can display it in any .NET/.NET Framework application like Blazor and ASP.NET Core; and Single Page Applications like Angular and React, and this report will run on Windows, Linux, or macOS.
 
 ## Creating Reports with Report Designers
 

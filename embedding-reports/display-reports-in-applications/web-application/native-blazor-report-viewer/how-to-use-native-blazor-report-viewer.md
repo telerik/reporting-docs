@@ -54,6 +54,10 @@ app.UseStaticFiles();
 	@* Or this one if using the Telerik.ReportViewer.BlazorNative.Trial package *@
 	@* <script src="_content/Telerik.ReportViewer.BlazorNative.Trial/js/reporting-blazor-viewer.js" defer></script> *@
 
+        @* The version of the Kendo Utils should be updated according to the version of the Kendo theme used by the Telerik UI for Blazor package. *@
+        @* The version of the Kendo Theme can be seen in the release notes of the Telerik UI for Blazor version - https://www.telerik.com/support/whats-new/blazor-ui/release-history. *@
+	<link href="https://kendo.cdn.telerik.com/themes/8.2.1/utils/all.css" rel="stylesheet" />
+
 	<link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
 	@* Or this one if using the Telerik.UI.for.Blazor.Trial package *@
 	@* <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor.Trial/css/kendo-theme-default/all.css" /> *@

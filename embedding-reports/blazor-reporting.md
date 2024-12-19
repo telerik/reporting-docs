@@ -19,7 +19,7 @@ The article [Available .NET Support for Operating Systems and Docker Containers]
 
 ## Displaying Reports in Blazor Web Reporting Applications
 
-We provide two Web Report Viewers suitable for Blazor Web Reporting applications:
+Telerik Reporting provides two Web Report Viewers suitable for Blazor Web Reporting applications:
 
 * The [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) is a wrapper of the [pure HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. The Blazor Report Viewer does not use [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components and doesn't require a subscription for this suite.
 

@@ -47,7 +47,7 @@ The Telerik Reporting product comes with ready-to-use Report Viewers for the fol
 
 * React
 
-	Follow the instructions in the article [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%}).
+	Follow the instructions in [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%}).
 
 ## Generating Reports for Single Page Web Reporting Applications
 

@@ -14,6 +14,7 @@ This article offers an overview of the most popular approaches for integrating T
 
 ## Supported Operating Systems and Docker Containers
 
+The Blazor technology allows deploying seamlessly your Web Reporting Applications in multiple environments.
 The article [Available .NET Support for Operating Systems and Docker Containers]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}) elaborates on the specifics when deploying Telerik Reporting on different environments.
 
 ## Displaying Reports in Blazor Web Reporting Applications

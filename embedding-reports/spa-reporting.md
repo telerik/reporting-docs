@@ -17,6 +17,33 @@ position: 92
 The Telerik Reporting REST Service for .NET and SPA Report Viewers let you deploy seamlessly your Web Reporting Applications in multiple environments.
 The article [Available .NET Support for Operating Systems and Docker Containers]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}) elaborates on the specifics when deploying Telerik Reporting on different environments.
 
+## Designing Reports in SPA Web Reporting Applications
+
+The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the SPA Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
+
+### Web Report Designer Requirements
+
+The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the `Telerik.WebReportDesigner.Services` assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
+
+### Web Report Designer Implementation
+
+The following tutorials elaborate on implementing the web report designer widget SPA Reporting projects. The widgets require a Report Designer REST service:
+
+* [Integrate the Web Report Designer in Angular]({%slug display-web-report-designer-in-angular-application%})
+* [How to use Web Report Designer in React Application]({%slug how-to-use-web-report-designer-in-react-js%})
+
+## Generating Reports for Single Page Web Reporting Applications
+
+The Single Page Applications hosting a Telerik Report Viewer require a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to serve the report documents. The service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.AspNetCore` assembly/package. It may be embedded in any ASP.NET Core and Blazor Server Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
+
+### Implementation
+
+There are different methods for configuring the Telerik Reporting REST Service in an ASP.NET Core or Blazor Server Reporting project:
+
+* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
+* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 8 with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
+* [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6, .NET 8, and .NET 9 with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
+
 ## Displaying Reports in SPA Web Reporting Applications
 
 The Telerik Reporting product comes with ready-to-use Report Viewers for the following SPA Frameworks:
@@ -48,33 +75,6 @@ The Telerik Reporting product comes with ready-to-use Report Viewers for the fol
 * React
 
 	Follow the instructions in [How to Use React Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/how-to-use-react-report-viewer-with-rest-service%}).
-
-## Generating Reports for Single Page Web Reporting Applications
-
-The Single Page Applications hosting a Telerik Report Viewer require a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to serve the report documents. The service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.AspNetCore` assembly/package. It may be embedded in any ASP.NET Core and Blazor Server Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
-
-### Implementation
-
-There are different methods for configuring the Telerik Reporting REST Service in an ASP.NET Core or Blazor Server Reporting project:
-
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 8 with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
-* [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6, .NET 8, and .NET 9 with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
-
-## Designing Reports in SPA Web Reporting Applications
-
-The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the SPA Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
-
-### Web Report Designer Requirements
-
-The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the `Telerik.WebReportDesigner.Services` assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
-
-### Web Report Designer Implementation
-
-The following tutorials elaborate on implementing the web report designer widget SPA Reporting projects. The widgets require a Report Designer REST service:
-
-* [Integrate the Web Report Designer in Angular]({%slug display-web-report-designer-in-angular-application%})
-* [How to use Web Report Designer in React Application]({%slug how-to-use-web-report-designer-in-react-js%})
 
 ## See Also
 

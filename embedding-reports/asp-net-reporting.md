@@ -10,7 +10,7 @@ position: 93
 
 # Embedding Telerik Reporting in ASP.NET Reporting Applications
 
-ASP.NET is a mature Microsoft Web technology for building client-side, server-side, and combined applications. This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting in ASP.NET Web Reporting applications.
+ASP.NET is a mature Microsoft Web technology for building client-side, server-side, and combined applications. This article offers a brief overview of the most popular approaches for integrating and using Telerik Reporting into ASP.NET Web Reporting applications.
 
 ## Displaying Reports in ASP.NET Web Reporting Applications
 

@@ -37,9 +37,9 @@ The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-a
 
 There are different methods for configuring the Telerik Reporting REST Service in an ASP.NET Core Reporting project:
 
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6+ with __Minimal API__]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 8 with __Top-Level Statements__]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
-* [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6, .NET 8 and .NET 9 with __Startup.cs__]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
+* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
+* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 6 and .NET 8 with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
+* [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6, .NET 8, and .NET 9 with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
 
 ## Designing Reports in ASP.NET Core Web Reporting Applications
 

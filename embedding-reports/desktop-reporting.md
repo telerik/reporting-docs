@@ -8,7 +8,7 @@ published: True
 position: 95
 ---
 
-# Embedding Telerik Reporting in Desktop Reporting Applications
+# Developing Desktop Reporting Applications
 
 Microsoft provides different Desktop frameworks for Windows operating systems. This article offers an overview of the most popular approaches for integrating and using Telerik Reporting into Desktop Reporting applications.
 

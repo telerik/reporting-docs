@@ -59,5 +59,5 @@ The tutorial [Setting up the Web Report Designer in .NET applications]({%slug te
 * [Telerik Report Viewer and Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/export-and-configure/cache-management/html5-report-viewer-and-reporting-rest-services%})
 * [REST API Reference]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-api-reference/overview%})
 * [Report Sources]({%slug telerikreporting/designing-reports/report-sources/overview%})
-* [Embedding Telerik Reporting in Blazor Reporting Applications]({%slug blazor-reporting%})
+* [Developing Blazor Reporting Applications]({%slug blazor-reporting%})
 * [Embedding Telerik Reporting in Single Page Web Reporting Applications]({%slug spa-reporting%})

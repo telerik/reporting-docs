@@ -51,7 +51,7 @@ The Telerik Reporting product comes with ready-to-use Report Viewers for the fol
 
 ## Generating Reports for Single Page Web Reporting Applications
 
-The Single Page Applications hosting a Telerik Report Viewer require a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to serve the report documents. The service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the assembly/package `Telerik.Reporting.Services.AspNetCore`. It may be embedded in any ASP.NET Core and Blazor Server Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
+The Single Page Applications hosting a Telerik Report Viewer require a [Telerik Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) to serve the report documents. The service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.AspNetCore` assembly/package. It may be embedded in any ASP.NET Core and Blazor Server Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
 
 ### Implementation
 
@@ -67,7 +67,7 @@ The [Web Report Designer]({%slug telerikreporting/designing-reports/report-desig
 
 ### Web Report Designer Requirements
 
-The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the assembly/package `Telerik.WebReportDesigner.Services` as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
+The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the `Telerik.WebReportDesigner.Services` assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
 
 ### Web Report Designer Implementation
 

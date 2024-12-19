@@ -28,7 +28,7 @@ To include aggregated values in your report, use the __Aggregates__ node in the 
 | `Min(Expression)` |Returns the minimum value from all non-null values <br/> of the specified expression.|Determined by the type of the expression.|
 | `StDev(Expression)` |Estimates standard deviation based on a sample. The standard deviation is a measure of how widely values are dispersed <br/> from the average value (the mean). Null values are ignored.|Returns `float`.|
 | `StDevP(Expression)` |Calculates standard deviation based on the entire population. The standard deviation is a measure of how widely values are<br/> dispersed from the average value (the mean). Null values are ignored.|Returns `float`.|
-| `Sum(Expression)` |Returns a sum of the values of the specified expression. The type of the values is inferred from the first value in the data. For example, if the first value is an `integer`, the rest of the values will also be treated as such even if they are floating point numbers. Those numbers would also be rounded to an integer(e.g. 10.2 would become 10 while 10.9 would become 11). |Returns the summation of all expression values based on the data type of the __first__ expression value.|
+| `Sum(Expression)` |Returns a sum of the values of the specified expression.|Returns the summation of all expression values based on the data type of the __first__ expression value.|
 | `Var(Expression)` |Estimates variance based on a sample. Null values are ignored.|Returns `float`.|
 | `VarP(Expression)` |Calculates variance based on the entire population. Null values are ignored.|Returns `float`|
 

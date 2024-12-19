@@ -10,10 +10,11 @@ position: 90
 
 # Embedding Telerik Reporting in ASP.NET Core Reporting Applications
 
-[ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core) is an advanced Web technology that lets you build modern cross-platform client-side, server-side and combined applications. This article offers a brief overview of the most popular approaches to integrate and use Telerik Reporting in ASP.NET Core Web Reporting applications.
+[ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core) is an advanced Web technology that lets you build modern cross-platform client-side, server-side and combined applications. This article offers a brief overview of the most popular approaches for integrating and using Telerik Reporting into ASP.NET Core Web Reporting applications.
 
 ## Supported Operating Systems and Docker Containers
 
+The ASP.NET Core Framework allows deploying seamlessly your Web Reporting Applications in multiple environments.
 The article [Available .NET Support for Operating Systems and Docker Containers]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}) elaborates on the specifics when deploying Telerik Reporting on different environments.
 
 ## Displaying Reports in ASP.NET Core Web Reporting Applications

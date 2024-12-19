@@ -27,8 +27,8 @@ The article [Using the HTML5 Report Viewer with REST Service]({%slug telerikrepo
 
 The steps for integrating the viewers in ASP.NET MVC and Web Forms projects are as follows:
 
-* [Using HTML5 ASP.NET __MVC__ Report Viewer With Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
-* [Using the HTML5 ASP.NET __Web Forms__ Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
+* [Using HTML5 ASP.NET MVC Report Viewer With Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
+* [Using the HTML5 ASP.NET Web Forms Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
 
 ## Generating Reports in ASP.NET Web Reporting Applications
 

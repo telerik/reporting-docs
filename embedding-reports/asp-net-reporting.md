@@ -12,6 +12,26 @@ position: 93
 
 ASP.NET is a mature Microsoft Web technology for building client-side, server-side, and combined applications. This article offers a brief overview of the most popular approaches for integrating and using Telerik Reporting into ASP.NET Web Reporting applications.
 
+## Designing Reports in ASP.NET Web Reporting Applications
+
+The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the ASP.NET Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
+
+### Web Report Designer Requirements
+
+The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the [Telerik.WebReportDesigner.Services](/api/telerik.webreportdesigner.services) assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
+
+### Web Report Designer Implementation
+
+The tutorial [Configuring the Web Report Designer in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}) elaborates on implementing the web designer widget and its REST Service in ASP.NET Web Reporting projects.
+
+## Generating Reports in ASP.NET Web Reporting Applications
+
+The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) provide an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the [Telerik.Reporting.Services.WebApi](/api/telerik.reporting.services.webapi) assembly/package. It may be embedded in any ASP.NET Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
+
+### Implementation
+
+The article [Telerik Reporting REST Service ASP.NET Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) elaborates on the requirements, implementation, and hosting of the REST Service.
+
 ## Displaying Reports in ASP.NET Web Reporting Applications
 
 The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. This makes it the perfect widget for displaying Telerik Reporting Reports in all Web Reporting Applications.
@@ -29,26 +49,6 @@ The steps for integrating the viewers in ASP.NET MVC and Web Forms projects are 
 
 * [Using HTML5 ASP.NET MVC Report Viewer With Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
 * [Using the HTML5 ASP.NET Web Forms Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
-
-## Generating Reports in ASP.NET Web Reporting Applications
-
-The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) provide an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the [Telerik.Reporting.Services.WebApi](/api/telerik.reporting.services.webapi) assembly/package. It may be embedded in any ASP.NET Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
-
-### Implementation
-
-The article [Telerik Reporting REST Service ASP.NET Web API Implementation]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/overview%}) elaborates on the requirements, implementation, and hosting of the REST Service.
-
-## Designing Reports in ASP.NET Web Reporting Applications
-
-The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the ASP.NET Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
-
-### Web Report Designer Requirements
-
-The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the [Telerik.WebReportDesigner.Services](/api/telerik.webreportdesigner.services) assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
-
-### Web Report Designer Implementation
-
-The tutorial [Configuring the Web Report Designer in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}) elaborates on implementing the web designer widget and its REST Service in ASP.NET Web Reporting projects.
 
 ## See Also
 

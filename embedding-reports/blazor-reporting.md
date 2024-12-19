@@ -8,7 +8,7 @@ published: True
 position: 91
 ---
 
-# Embedding Telerik Reporting in Blazor Reporting Applications
+# Embedding Reporting in Blazor Applications
 
 This article offers an overview of the most popular approaches for integrating Telerik Reporting into Blazor Web Reporting applications.
 

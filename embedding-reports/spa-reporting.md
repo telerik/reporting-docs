@@ -10,10 +10,11 @@ position: 92
 
 # Embedding Telerik Reporting in Single Page Web Reporting Applications
 
-[Single-Page Applications (SPA)](https://en.wikipedia.org/wiki/Single-page_application) dynamically rewrite the web page content rather than loading entire new pages, making the website faster and feel more like a native app. This article summarizes the most popular approaches to integrate and use Telerik Reporting in SPA Reporting applications.
+[Single-Page Applications (SPA)](https://en.wikipedia.org/wiki/Single-page_application) dynamically rewrite the web page content rather than loading entire new pages, making the website faster and feel more like a native app. This article summarizes the most popular approaches for integrating and using Telerik Reporting into SPA Reporting applications.
 
 ## Supported Operating Systems and Docker Containers
 
+The Telerik Reporting REST Service for .NET and SPA Report Viewers let you deploy seamlessly your Web Reporting Applications in multiple environments.
 The article [Available .NET Support for Operating Systems and Docker Containers]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}) elaborates on the specifics when deploying Telerik Reporting on different environments.
 
 ## Displaying Reports in SPA Web Reporting Applications

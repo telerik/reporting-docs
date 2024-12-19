@@ -57,7 +57,7 @@ The Web Report Designer requires a Report Designer REST service, whose fully fun
 
 ### Web Report Designer Implementation
 
-The tutorial [How to set up in Blazor application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application%}) elaborates on implementing the web designer widget and its REST Service in Blazor Web Reporting projects.
+The tutorial [How to set up reporting in Blazor applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application%}) elaborates on implementing the web designer widget and its REST Service in Blazor Web Reporting projects.
 
 ## See Also
 

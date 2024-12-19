@@ -16,7 +16,7 @@ ASP.NET is a mature Microsoft Web technology for building client-side, server-si
 
 The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. This makes it the perfect widget for displaying Telerik Reporting Reports in all Web Reporting Applications.
 
-We provide also dedicated wrappers of the pure HTML5 Report Viewer for the most popular ASP.NET MVC and Web Forms frameworks:
+Telerik Reporting provides also dedicated wrappers of the pure HTML5 Report Viewer for the most popular ASP.NET MVC and Web Forms frameworks:
 
 * [HTML5 ASP.NET MVC Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview%})
 * [HTML5 ASP.NET Web Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview%})

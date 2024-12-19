@@ -31,7 +31,7 @@ Telerik Reporting provides two Web Report Viewers suitable for Blazor Web Report
 
 ### Implementation
 
-* Follow the instructions in the article [Integrating the Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%}) to embed the Blazor HTML5 Report Viewer in your Web Reporting client application.
+* Follow the instructions in [Integrating the Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/how-to-use-blazor-report-viewer%}) to embed the Blazor HTML5 Report Viewer in your Web Reporting client application.
 
 * The article [Using Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/how-to-use-native-blazor-report-viewer%}) is a step-by-step tutorial on embedding the Native Blazor Report Viewer in Web Reporting projects.
 

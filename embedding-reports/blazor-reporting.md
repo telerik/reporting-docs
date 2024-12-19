@@ -23,7 +23,7 @@ Telerik Reporting provides two Web Report Viewers suitable for Blazor Web Report
 
 * The [Blazor Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview%}) is a wrapper of the [pure HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}), which is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. The Blazor Report Viewer does not use [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components and doesn't require a subscription for this suite.
 
-* The [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) is a native Blazor widget built on top of Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components and as such requires subscription for this suite.
+* The [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%}) is a native Blazor widget built on top of [Telerik UI for Blazor](https://www.telerik.com/blazor-ui) components and as such requires subscription for this suite.
 
 ### Requirements
 

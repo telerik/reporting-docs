@@ -53,7 +53,7 @@ The [Web Report Designer]({%slug telerikreporting/designing-reports/report-desig
 
 ### Web Report Designer Requirements
 
-The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the assembly/package `Telerik.WebReportDesigner.Services` as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
+The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the `Telerik.WebReportDesigner.Services` assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
 
 ### Web Report Designer Implementation
 

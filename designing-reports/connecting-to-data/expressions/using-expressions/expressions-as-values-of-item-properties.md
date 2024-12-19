@@ -17,6 +17,8 @@ This expression:
 
 `='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!'`
 
+![Expressions as Values](images/ExpressionsAsValues.png)
+
 when evaluated will result in:
 
 `Hi Mr. Smith, John!`

@@ -26,7 +26,13 @@ Sometimes you are unable to add any Telerik Reporting items in Visual Studio. Th
 
 ## Cause\Possible Cause(s)
 
-A possible reason for the issue can be that the **Telerik Reporting** and/or **Telerik.CommonPackage** extensions might be disabled or they are not installed. 
+A possible reason for the issue can be that the **Telerik Reporting** and/or **Telerik.CommonPackage** extensions might be disabled or they are not installed.
+
+## Solutions
+
+You may experience the issue if you are running Visual Studio as an administrator, and the extension is installed by another user. In this case:
+
+Go to the menu `Tools`-> `Options` -> `Environment` -> `Extensions` / `Extensions and Updates`, and check **Load per user extension when running as administrator**.
 
 ## Visual Studio 2022
 

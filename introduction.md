@@ -33,6 +33,8 @@ Telerik Reporting helps you create reports that run on the following operating s
 
 ## Supported Frameworks
 
+We provide widgets and functionality letting you integrate Telerik Reporting seamlessly in multiple Web and Desktop Frameworks:
+
 |Supported Framework|Media
 |:--|:--
 |ASP.NET Core|Web

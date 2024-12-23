@@ -19,7 +19,7 @@ The article [Available .NET Support for Operating Systems and Docker Containers]
 
 ## Designing Reports in ASP.NET Core Web Reporting Applications
 
-The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the ASP.NET Core Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
+The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side jQuery widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the ASP.NET Core Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
 
 ### Web Report Designer Requirements
 
@@ -27,7 +27,7 @@ The Web Report Designer requires a Report Designer REST service, whose fully fun
 
 ### Web Report Designer Implementation
 
-The tutorial [Setting up the Web Report Designer in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}) elaborates on implementing the web designer widget and its REST Service in ASP.NET Core Web Reporting projects.
+The tutorial [Setting up the Web Report Designer in .NET applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications%}) elaborates on implementing the web designer jQuery widget and its REST Service in ASP.NET Core Web Reporting projects.
 
 ## Generating Reports in ASP.NET Core Web Reporting Applications
 

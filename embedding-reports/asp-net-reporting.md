@@ -14,7 +14,7 @@ ASP.NET is a mature Microsoft Web technology for building client-side, server-si
 
 ## Designing Reports in ASP.NET Web Reporting Applications
 
-The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the ASP.NET Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
+The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side jQuery widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the ASP.NET Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
 
 ### Web Report Designer Requirements
 
@@ -22,7 +22,7 @@ The Web Report Designer requires a Report Designer REST service, whose fully fun
 
 ### Web Report Designer Implementation
 
-The tutorial [Configuring the Web Report Designer in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}) elaborates on implementing the web designer widget and its REST Service in ASP.NET Web Reporting projects.
+The tutorial [Configuring the Web Report Designer in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}) elaborates on implementing the web designer jQuery widget and its REST Service in ASP.NET Web Reporting projects.
 
 ## Generating Reports in ASP.NET Web Reporting Applications
 

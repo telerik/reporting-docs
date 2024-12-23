@@ -19,7 +19,7 @@ The article [Available .NET Support for Operating Systems and Docker Containers]
 
 ## Designing Reports in Blazor Web Reporting Applications
 
-The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the Blazor Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
+The [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) is an HTML/CSS/JS client-side jQuery widget that lets developers embed a report designer into their web reporting applications. It is ready for embedding in the Blazor Reporting Applications to allow the users to create, edit, and preview their Telerik Web Reports directly from the browser.
 
 ### Web Report Designer Requirements
 
@@ -27,7 +27,7 @@ The Web Report Designer requires a Report Designer REST service, whose fully fun
 
 ### Web Report Designer Implementation
 
-The tutorial [How to set up Web Report Designer in Blazor applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application%}) elaborates on implementing the web designer widget and its REST Service in Blazor Web Reporting projects.
+The tutorial [How to set up Web Report Designer in Blazor applications]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-blazor-application%}) elaborates on implementing the web designer jQuery widget and its REST Service in Blazor Web Reporting projects.
 
 ## Generating Reports in Blazor Web Reporting Applications
 

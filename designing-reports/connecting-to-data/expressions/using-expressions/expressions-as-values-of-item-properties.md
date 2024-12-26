@@ -17,7 +17,7 @@ This expression:
 
 `='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!'`
 
-![Expressions as Values](images/ExpressionsAsValues.png)
+![Expressions as Values in the Edit Expressions dialog](images/ExpressionsAsValues.png)
 
 when evaluated will result in:
 

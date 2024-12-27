@@ -51,6 +51,8 @@ The attached report demonstrates the described approach.
 
 The **Series.DataPointStyle.LineWidth** property can also be used to add the space between the series in combination with **series.DataPointStyle.LineColor** property set to *"White"* or *"Transparent"*. The unwanted effect of this approach can be that it will add the space between the series and the Axis as well.  
 
+A step-by-step tutorial is demonstrated in the [Simulating Space Between Bars with LineWidth in the Same Category for Telerik Reporting]({%slug add-space-between-bars-telerik-reporting%}) article.
+
 ## Additional resources
 [Download the sample report](resources/changespacebetweenseries.zip).
 

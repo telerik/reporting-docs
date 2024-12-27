@@ -63,3 +63,7 @@ public override IActionResult GetDeniedPermissions()
 ````
 
 The code above denies the users (all in this case) to add _PictureBox_ and _HTMLTextBox_ items. It also hides the menu command for creating ReportBook _Document_ > _NewCombined_, forbids the user to delete and edit an existing _SharedDataSource_, and hides the _AssetsManager_.
+
+## See Also
+
+- [Customizing Report Parameters Area in Web Report Designer using CSS and JavaScript]({%slug customize-report-parameters-area-web-report-designer%})

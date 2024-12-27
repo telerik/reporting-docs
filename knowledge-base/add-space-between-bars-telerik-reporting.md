@@ -1,10 +1,10 @@
 ---
-title: Adding Space Between Bars in the Same Category for Telerik Reporting
+title: Simulating Space Between Bars with LineWidth in the Same Category for Telerik Reporting
 description: Learn how to introduce space between bars within the same category in charts created using Telerik Reporting.
 type: how-to
 page_title: How to Create Space Between Bars in the Same Category Slot in Telerik Reporting
 slug: add-space-between-bars-telerik-reporting
-tags: telerik, reporting, chart, barchart, spacing, workaround
+tags: telerik, reporting, chart, bar, spacing, workaround, gap
 res_type: kb
 ticketid: 1654483
 ---

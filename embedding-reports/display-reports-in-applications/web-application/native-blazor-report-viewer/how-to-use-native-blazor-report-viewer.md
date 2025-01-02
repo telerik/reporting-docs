@@ -10,7 +10,7 @@ position: 1
 
 # Using Native Blazor Report Viewer
 
-The following article will guide you on how to use the new Native Blazor Report Viewer in a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web application.
+The following articles will guide you on [how to use the new Native Blazor Report Viewer](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) and [embed the Native Blazor Report Viewer](https://www.telerik.com/blogs/embed-reporting-native-blazor-applications) in a web application.
 
 ## Prerequisites
 

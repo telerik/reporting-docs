@@ -1,8 +1,8 @@
 ---
 title: System.Data.OracleClient Data Provider for Oracle Database
-description: "Learn which .NET Framework data provider to use to retrieve data for reports from an Oracle database in Telerik Reporting."
+description: "System.Data.OracleClient is a .NET library for connecting to Oracle databases, enabling data access, commands, and transactions."
 type: how-to
-page_title: System.Data.OracleClient is deprecated in .NET Framework
+page_title: System.Data.OracleClient is Deprecated
 slug: should-i-use-system-data-oracleclient-net-data-provider
 res_type: kb
 ---
@@ -15,8 +15,12 @@ res_type: kb
 		<td>Progress® Telerik® Reporting</td>
 	</tr>
 	<tr>
-		<td>Report Item</td>
-		<td>SqlDataSource Component</td>
+		<td>Report Component</td>
+		<td>SqlDataSource</td>
+	</tr>
+	<tr>
+		<td>Data Providere</td>
+		<td>System.Data.OracleClient</td>
 	</tr>
 </table>
 
@@ -34,4 +38,4 @@ You may also check out [Data provider is missing in the SqlDataSource wizard]({%
 
 ## Notes
 
-Each .NET Framework data provider has its own specification how to read SQL queries. If you use *SQL parameters*, please check the valid syntax for typing parameters in the SQL query.
+Each .NET Framework data provider has its own specification of how to read SQL queries. If you use *SQL parameters*, please check the valid syntax for typing parameters in the SQL query.

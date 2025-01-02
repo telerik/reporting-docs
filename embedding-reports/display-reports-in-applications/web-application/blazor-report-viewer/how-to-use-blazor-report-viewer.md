@@ -11,7 +11,7 @@ previous_url: /blazor-report-viewer-how-to-use
 
 # Integrating the Blazor Report Viewer
 
-> The following article guides you on how to use Blazor Report Viewer in a [Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor) web application.
+> The following article will guide you on [how to use the Blazor Report Viewer](https://www.telerik.com/blogs/embed-reporting-everywhere) in a web application.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ previous_url: /blazor-report-viewer-how-to-use
 
 ## Adding the Blazor Report Viewer component using an item template
 
-The Blazor Report Viewer item template allows you to quickly and easily add the Blazor Report Viewer to your application.
+The Blazor Report Viewer item template allows you to quickly and easily [add the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-modern-ui-report-viewer-demo) and [embed the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-sdk-report-server-dynamic-duo) to your application.
 
 If you wish to connect the Report Viewer to a Reporting REST service, you can analogically follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}) documentation article.
 Just make sure that you select __Blazor Report Viewer page__, instead of __HTML5 Report Viewer page__ when adding a new item to your project, and follow the steps in the __'Add new Report Viewer'__ dialog.

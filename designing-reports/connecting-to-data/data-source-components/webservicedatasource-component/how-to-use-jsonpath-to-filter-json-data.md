@@ -1,9 +1,9 @@
 ---
 title: Using JSONPath
-page_title: Writing JSONPath expressions to filter JSON data
-description: "Learn how to use JSONPath to filter JSON data with the JsonDataSource and WebServiceDataSource in Telerik Reporting."
+page_title: Using JSONPath to Filter JSON data
+description: "JSONPath filters JSON data by allowing you to select specific elements based on conditions."
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data
-tags: how,to,use,jsonpath,to,filter,json,data,web,service,source
+tags: how,use,jsonpath,to,filter,json,data,web,service,source
 published: True
 position: 1
 previous_url: /how-to-use-jsonpath
@@ -11,7 +11,7 @@ previous_url: /how-to-use-jsonpath
 
 # Using JSONPath to Filter JSON data
 
-In this article, we are going to discuss how to use JSONPath expressions in the Data Selector to query and filter JSON data returned from the web service. For a complete overview of the JSONPath syntax please refer to [JSONPath - XPath for JSON](https://goessner.net/articles/JsonPath/).
+In this article, we discuss using JSONPath expressions in the Data Selector to query and filter JSON data returned from the web service. For a complete overview of the JSONPath filter syntax please refer to [JSONPath - XPath for JSON](https://goessner.net/articles/JsonPath/).
 
 ## Bind to Inner Objects
 
@@ -63,7 +63,7 @@ Very often the JSON data returned from a web service contains a single parent ob
 ]
 ````
 
-## Filter Arrays
+## JSONPath Filter Arrays
 
 In other scenarios, it might be useful to filter the JSON data to display only objects matching specific criteria.
 
@@ -107,4 +107,4 @@ In other scenarios, it might be useful to filter the JSON data to display only o
 ]
 ````
 
->tip When testing for equality use `==` and for inequality `!=`.
+>tip When testing for equality in JSONPath filter, use `==` for equality and `!=` for inequality.

@@ -11,7 +11,7 @@ previous_url: /blazor-report-viewer-how-to-use
 
 # Integrating the Blazor Report Viewer
 
-> The following articles guide you on [how to use Blazor Report Viewer](https://www.telerik.com/blogs/embed-reporting-everywhere) and [integrate Blazor Report Viewer](https://www.telerik.com/blogs/embed-reporting-native-blazor-applications) in a web application.
+> The following article will guide you on [how to use the Blazor Report Viewer](https://www.telerik.com/blogs/embed-reporting-everywhere) in a web application.
 
 ## Prerequisites
 

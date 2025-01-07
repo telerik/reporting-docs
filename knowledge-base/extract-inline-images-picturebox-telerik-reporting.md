@@ -38,7 +38,7 @@ To extract and save the original image embedded in a PictureBox within a Telerik
 1. Navigate to the `Images` folder within the extracted contents. Here, you will find the original image file embedded in the PictureBox.
 1. Once located, you can copy the image file to another location for editing or use as needed.
 
-**Important:** Always work with a copy of the report file to avoid any potential data loss or corruption of your original report template.
+>important Always work with a copy of the report file to avoid any potential data loss or corruption of your original report template.
 
 ## See Also
 

@@ -11,13 +11,13 @@ position: 99
 # Developing VB.NET Reporting Applications
 
 Microsoft provides different programming language for its most popular `.NET` and `.NET Framework` environments. The Visual Basic (VB or VB.NET) is an advanced programming language fully supported by Telerik Reporting.
-This article elaborates on developing Telerik Reporting Type [report definitions]({%slug on-telerik-reporting%}#report-definition) with VB, and integrating Telerik Reporting into Web and Desktop Reporting applications.
+This article elaborates on developing Telerik Reporting [report definitions]({%slug on-telerik-reporting%}#report-definition) with VB, and integrating Telerik Reporting into VB Desktop and Web Reporting applications.
 
 ## Developing VB.NET Report Definitions
 
 The VB Type report definitions are VB Types inheriting the Telerik Reporting base [Report](/api/telerik.reporting.report) type.
 
-The easiest and recommended approach for creating such a report in the .NET Framework is with the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). The designer offers also a converter from declarative report definitions (TRDP and TRDX files) as explained in the article [Importing Reports Created with the Standalone or Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
+The easiest and recommended approach for creating such a report in the .NET Framework is with the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}). The designer offers also a converter from declarative (TRDP and TRDX files) to VB type report definitions as explained in the article [Importing Reports Created with the Standalone or Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
 
 VB reports are supported also in .NET. The Visual Studio Report Designer is not yet available for .NET and the recommended approach for developing such reports is described in the KB article [How to use Visual Studio Report Designer to edit CS Reports in .NET Projects]({%slug how-to-use-vs-designer-in-dotnet-core%}).
 
@@ -33,7 +33,7 @@ The Telerik Reporting product provides the following Report Viewers:
 
 #### Implementation
 
-The Desktop Report Viewers may be embedded in .NET and .NET Framework Visual Basic projects. The steps for the corresponding viewers and environments are described in the following sections:
+The Desktop Report Viewers may be embedded in .NET Framework and .NET Visual Basic projects. The steps for the corresponding viewers and environments are described in the following sections:
 
 ##### Implementing in VB projects targeting .NET Framework 4.6.2 and above
 
@@ -54,7 +54,7 @@ The VB Desktop Report Viewers may use an Embedded Reporting Engine, a [Telerik R
 
 The Embedded Reporting Engine is integrated within the viewer of the VB Reporting project.
 
-The Reporting REST Service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.WebApi` (for the .NET Framework) and `Telerik.Reporting.Services.AspNetCore` (for .NET) assembly/package. It may be embedded in any VB.NET Web Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web VB Reporting, Desktop VB Reporting, and other third-party client applications.
+The Reporting REST Service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.WebApi` (for the .NET Framework) and `Telerik.Reporting.Services.AspNetCore` (for .NET) assembly/package. It may be embedded in any VB.NET Web Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by VB Web Reporting, VB Desktop Reporting, and other third-party client applications.
 
 The Report Server is a separate application exposing a [Web API](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/v2/api-reference) that may be used by the viewers in VB.NET Reporting applications to request reports.
 
@@ -76,7 +76,7 @@ The tutorial [Configuring the Web Report Designer in ASP.NET Framework applicati
 
 ### Generating Reports in VB Web Reporting Applications in .NET Framework
 
-The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) provide an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the [Telerik.Reporting.Services.WebApi](/api/telerik.reporting.services.webapi) assembly/package. It may be embedded in any VB ASP.NET Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
+The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) provide an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the [Telerik.Reporting.Services.WebApi](/api/telerik.reporting.services.webapi) assembly/package. It may be embedded in any VB ASP.NET Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by VB Web Reporting, VB Desktop Reporting, and other third-party client applications.
 
 #### Implementation in .NET Framework
 
@@ -114,9 +114,9 @@ The tutorial [Setting up the Web Report Designer in .NET applications]({%slug te
 
 !!! NO VB CODE in the referenced article !!!
 
-## Generating Reports in ASP.NET Core Web Reporting Applications
+## Generating Reports in .NET 6.0+ VB Web Reporting Applications
 
-The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) provide an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.AspNetCore` assembly/package. It may be embedded in any ASP.NET Core Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by Web Reporting, Desktop Reporting, and other third-party client applications.
+The [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}) provide an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.AspNetCore` assembly/package. It may be embedded in any VB ASP.NET Core Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by VB Web Reporting, VB Desktop Reporting, and other third-party client applications.
 
 ### Implementation in .NET 6.0+
 
@@ -128,7 +128,7 @@ There are different methods for configuring the Telerik Reporting REST Service i
 
 !!! NO VB CODE in the referenced articles !!!
 
-## Displaying Reports in ASP.NET Core Web Reporting Applications
+## Displaying Reports in .NET 6.0+ VB Web Reporting Applications
 
 The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. This makes it the perfect widget for displaying Telerik Reporting Reports in all VB Web Reporting Applications.
 

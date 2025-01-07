@@ -168,6 +168,12 @@ To use Telerik Reporting in a Windows container, target a Windows-based image wi
 
 The Microsoft-distributed `microsoft/windowsservercore` images contain the GDI+ graphics library. However, their size is significantly bigger than the size of the .NET runtime in a Linux container. Such a container requires you to install only the libgdiplus library and its accompanying libraries.
 
+>tip Some Docker Containers are created with __invariant culture__. This means that the locales like currency symbol ('$' in 'en-US') may appear unexpected. Use the following code in the Dockerfile to add your culture ('en-US' in the example) to the container:
+>
+> `ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8`
+>
+> `LC_ALL` stands for all locales, and `LANG` stands for the language.
+
 ### Linux Docker Container with `SkiaSharp`
 
 Starting with [R3 2023 (17.2.23.1010)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r3-2023-17-2-23-1010) we introduced SkiaSharp-based graphics engine, which is cross-platform. The active graphics engine is determined by the value of the __engineName__ element of the [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}) which corresponds with the members of the [Telerik.Drawing.Contract.GraphicsEngine enumeration](/api/telerik.drawing.contract.graphicsengine).

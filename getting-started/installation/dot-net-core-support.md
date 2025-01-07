@@ -172,7 +172,7 @@ The Microsoft-distributed `microsoft/windowsservercore` images contain the GDI+ 
 >
 > `ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8`
 >
-> `LC_ALL` stands for all locales, and `LANG` stands for the language.
+> __LC_ALL__ stands for all locales, and __LANG__ stands for the language.
 
 ### Linux Docker Container with `SkiaSharp`
 

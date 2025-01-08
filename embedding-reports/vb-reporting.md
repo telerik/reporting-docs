@@ -10,7 +10,8 @@ position: 99
 
 # Developing VB.NET Reporting Applications
 
-Microsoft provides different programming language for its most popular `.NET` and `.NET Framework` environments. The Visual Basic (VB or VB.NET) is an advanced programming language fully supported by Telerik Reporting.
+Microsoft provides different programming languages for its most popular `.NET` and `.NET Framework` environments. Visual Basic (VB or VB.NET) is an advanced programming language fully supported by Telerik Reporting.
+
 This article elaborates on developing Telerik Reporting [report definitions]({%slug on-telerik-reporting%}#report-definition) with VB, and integrating Telerik Reporting into VB Desktop and Web Reporting applications.
 
 ## Developing VB.NET Report Definitions
@@ -62,7 +63,7 @@ The Report Server is a separate application exposing a [Web API](https://docs.te
 
 #### Windows Forms Report Viewer Sample
 
-The following code adds the Windows Forms Report Viewer control to the form named 'Form1' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports':
+The following code adds the Windows Forms Report Viewer control to the form named 'Form1' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports'. The viewer is with the default Embedded Reporting Engine:
 
 ````VB.NET
 Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -129,7 +130,7 @@ The steps for integrating the viewers in ASP.NET MVC and Web Forms projects are 
 
 ## VB.NET Web Reporting Applications in .NET 6.0 and above
 
-Microsoft don't have plans to provide Visual Studio templates for ASP.NET Core in Visual Basic as explained in the post [Can VB be used for a net core api project?](https://learn.microsoft.com/en-us/answers/questions/773434/can-vb-be-used-for-a-net-core-api-project).
+Microsoft doesn't have plans to provide Visual Studio templates for ASP.NET Core in Visual Basic as explained in the post [Can VB be used for a net core api project?](https://learn.microsoft.com/en-us/answers/questions/773434/can-vb-be-used-for-a-net-core-api-project).
 
 
 

@@ -49,20 +49,6 @@ The following Report Viewers may be configured manually in VB desktop projects. 
 * [Integrating the WPF Report Viewer in .NET]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
 * [Integrating the WinUI Report Viewer in .NET 6]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
 
-### Generating Reports in VB Desktop Reporting Applications
-
-The VB Desktop Report Viewers may use an Embedded Reporting Engine, a [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), or a [Telerik Report Server](https://docs.telerik.com/report-server/introduction). The [Connection String to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) determines the engine type used by the viewer.
-
-The Embedded Reporting Engine is integrated within the viewer of the VB Reporting project.
-
-The Reporting REST Service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.WebApi` (for the .NET Framework) and `Telerik.Reporting.Services.AspNetCore` (for .NET) assembly/package. It may be embedded in any VB.NET Web Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by VB Web Reporting, VB Desktop Reporting, and other third-party client applications.
-
-The Report Server is a separate application exposing a [Web API](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/v2/api-reference) that may be used by the viewers in VB.NET Reporting applications to request reports.
-
-### Samples in VB.NET
-
-#### Windows Forms Report Viewer Sample
-
 The following code adds the Windows Forms Report Viewer control to the form named 'Form1' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports'. The viewer is with the default Embedded Reporting Engine:
 
 ````VB.NET
@@ -83,8 +69,15 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 End Sub
 ````
 
-#### WPF Report Viewer Sample
+### Generating Reports in VB Desktop Reporting Applications
 
+The VB Desktop Report Viewers may use an Embedded Reporting Engine, a [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), or a [Telerik Report Server](https://docs.telerik.com/report-server/introduction). The [Connection String to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) determines the engine type used by the viewer.
+
+The Embedded Reporting Engine is integrated within the viewer of the VB Reporting project.
+
+The Reporting REST Service provides an Application Programming Interface (API) over HTTP to the Reporting Engine that processes and renders [Telerik Reports]({%slug on-telerik-reporting%}#report-definition). The fully functional implementation of the service is available in the `Telerik.Reporting.Services.WebApi` (for the .NET Framework) and `Telerik.Reporting.Services.AspNetCore` (for .NET) assembly/package. It may be embedded in any VB.NET Web Reporting Application and exposed in a custom controller (for example, `ReportsController`) inheriting the basic `ReportsControllerBase` class. The `ReportsController` may be used as a source of Report documents by VB Web Reporting, VB Desktop Reporting, and other third-party client applications.
+
+The Report Server is a separate application exposing a [Web API](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/v2/api-reference) that may be used by the viewers in VB.NET Reporting applications to request reports.
 
 ## VB.NET Web Reporting Applications in .NET Framework
 

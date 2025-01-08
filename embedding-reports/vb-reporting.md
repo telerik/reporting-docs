@@ -69,6 +69,10 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 End Sub
 ````
 
+Sample Windows Forms and WPF projects may be found in the Telerik GitHub Reporting Samples repository:
+    * [VB Reporting-WinFormsViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WinFormsViewerNet8)
+    * [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8)
+
 ### Generating Reports in VB Desktop Reporting Applications
 
 The VB Desktop Report Viewers may use an Embedded Reporting Engine, a [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}), or a [Telerik Report Server](https://docs.telerik.com/report-server/introduction). The [Connection String to Report Engine]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-construct-a-string-to-connect-to-report-engine%}) determines the engine type used by the viewer.
@@ -93,7 +97,7 @@ The VB Web Report Designer requires a Report Designer REST service, whose fully 
 
 The tutorial [Configuring the Web Report Designer in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}) elaborates on implementing the web designer jQuery widget and its REST Service in ASP.NET Web Reporting projects.
 
-A sample project may be found in the Telerik GitHub Reporting Samples repository - [VB Reporting](https://github.com/telerik/reporting-samples). The solution/project name is _WebDesignerNetFramework_.
+A sample project may be found in the Telerik GitHub Reporting Samples repository - [VB Reporting-WebDesignerNetFramework](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WebDesignerNetFramework).
 
 ### Generating Reports in VB Web Reporting Applications in .NET Framework
 

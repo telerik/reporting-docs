@@ -58,6 +58,33 @@ The Reporting REST Service provides an Application Programming Interface (API) o
 
 The Report Server is a separate application exposing a [Web API](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/v2/api-reference) that may be used by the viewers in VB.NET Reporting applications to request reports.
 
+### Samples in VB.NET
+
+#### Windows Forms Report Viewer Sample
+
+The following code adds the Windows Forms Report Viewer control to the form named 'Form1' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports':
+
+````VB.NET
+Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Dim reportSource1 As UriReportSource = New UriReportSource()
+    reportSource1.Uri = "Reports\SampleReport.trdp"
+    reportSource1.Parameters.Add("Parameter1_Name", "Parameter1_Value")
+    reportSource1.Parameters.Add("Parameter2_Name", "Parameter2_Value")
+
+    Dim reportViewer = New Telerik.ReportViewer.WinForms.ReportViewer()
+    reportViewer.ReportSource = reportSource1
+    reportViewer.Dock = System.Windows.Forms.DockStyle.Fill
+    reportViewer.Name = "reportViewer1"
+    reportViewer.TabIndex = 1
+    reportViewer.RefreshReport()
+
+    Me.Controls.Add(reportViewer)
+End Sub
+````
+
+#### WPF Report Viewer Sample
+
+
 ## VB.NET Web Reporting Applications in .NET Framework
 
 ### Designing Reports in .NET Framework VB Web Reporting Applications

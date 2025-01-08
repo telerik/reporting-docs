@@ -70,6 +70,7 @@ End Sub
 ````
 
 Sample Windows Forms and WPF projects may be found in the Telerik GitHub Reporting Samples repository:
+
     * [VB Reporting-WinFormsViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WinFormsViewerNet8)
     * [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8)
 

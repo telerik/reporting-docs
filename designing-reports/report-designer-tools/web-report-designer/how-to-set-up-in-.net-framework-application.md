@@ -88,9 +88,9 @@ namespace CSharp.MvcDemo.Controllers
 
 ## Adding the Web Report Designer:
 
-1. Navigate to `Views` -> `Home` and add a new CSHTML Page for the Web Report Designer. Name the file `Index.cshtml`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
+1. Navigate to `Views` -> `Home` and add a new CSHTML Page for the Web Report Designer. Name the file `Index.cshtml`. Add the required references to load the font, jQuery, Telerik Kendo UI libraries, telerikReportViewer, and webReportDesigner scripts listed in the example below. Finally, add the initialization of the telerik_WebReportDesigner widget. Note that the Web Report Designer container has a minimum width of 1200px. The complete report viewer page should look like this:
 
-	````HTML
+	````CSHTML
 @using Telerik.Reporting
 	@{
 		Layout = null;
@@ -131,7 +131,7 @@ namespace CSharp.MvcDemo.Controllers
 
 1. Register the *ReportsControllerConfiguration* and *ReportDesignerControllerConfiguration* routes in the `Application_Start()` method of the `Global.asax` file. It is important to register them before the default routes as shown below:
 
-	````HTML
+	````C#
 protected void Application_Start()
 	{
 		AreaRegistration.RegisterAllAreas();

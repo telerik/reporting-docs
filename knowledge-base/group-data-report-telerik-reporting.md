@@ -15,11 +15,7 @@ ticketid: 1588256
   <tbody>
     <tr>
       <td>Product</td>
-        <td>Progress® Telerik® Reporting</td>
-          </tr>
-          <tr>
-        <td>Version</td>
-      <td>15.1.21.616</td>
+      <td>Progress® Telerik® Reporting</td>
     </tr>
   </tbody>
 </table>

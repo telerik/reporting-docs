@@ -72,7 +72,7 @@ The VB Web Report Designer requires a Report Designer REST service, whose fully 
 
 The tutorial [Configuring the Web Report Designer in ASP.NET Framework application]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-framework-application%}) elaborates on implementing the web designer jQuery widget and its REST Service in ASP.NET Web Reporting projects.
 
-!!! NO VB CODE in the referenced article !!!
+A sample project may be found in the Telerik GitHub Reporting Samples repository - [VB Reporting](https://github.com/telerik/reporting-samples). The solution/project name is _WebDesignerNetFramework_.
 
 ### Generating Reports in VB Web Reporting Applications in .NET Framework
 

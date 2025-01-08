@@ -48,7 +48,7 @@ For more detailed information, refer to the following articles:
 
 The Report item exposes a set of properties that allow you to control some aspects of its processing and rendering.
 
-* `AutoRun`&mdash; As of [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-(18-3-24-1112)), it is possible to have control over the automatically initiated rendering process by using the [`AutoRun`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) property. By default, `AutoRun` is `True`.
+* `AutoRun`&mdash; As of [2024 Q4 (18.3.24.1112)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q4-18-3-24-1112), it is possible to have control over the automatically initiated rendering process by using the [`AutoRun`](/api/Telerik.Reporting.Report.html#Telerik_Reporting_Report_AutoRun) property. By default, `AutoRun` is `True`.
 
 	When `AutoRun=True`, the report loading behavior does not change: the report is automatically loaded if all parameters have valid values, or waits until all parameter values are valid.
 	

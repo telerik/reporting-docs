@@ -1,6 +1,6 @@
 ---
 title: Ensuring Consistent Border Width in Table Cells in Telerik Reporting
-description: This article describes how to maintain uniform border widths across table cells in Telerik Reporting by managing background color settings.
+description: "Learn how to maintain uniform border widths across table cells in Telerik Reporting by managing background color settings."
 type: how-to
 page_title: How to Achieve Uniform Border Widths in Telerik Reporting Table Cells
 slug: ensure-consistent-border-width-telerik-reporting
@@ -34,13 +34,13 @@ To achieve consistent border widths across all table cells, ensure that the back
 Follow these steps to resolve the issue:
 
 1. Check the background color settings for each table cell. Identify if any cells have their background color explicitly set to 'White' or any other color, while others are left as default.
-2. Reset any explicitly set background colors to their default value. This ensures that all cells have uniform background settings, eliminating discrepancies in border visibility.
-3. Alternatively, explicitly set a background color for all cells. This uniform application of background color will also ensure that the borders appear consistently across the table.
+1. Ensure the background colors of all table cells are either set to valid colors, or left to the default (transparrent) value:
+	* Reset any explicitly set background colors to their default value. This ensures that all cells have uniform background settings, eliminating discrepancies in border visibility.
+	* Alternatively, explicitly set a background color for all cells. This uniform application of background color will also ensure that the borders appear consistently across the table.
 
 This approach addresses the root cause of the issue by aligning the rendering behavior of borders and background colors, ensuring uniform border thickness visibility across your report.
 
 ## See Also
 
-- [Telerik Reporting Table Item](https://docs.telerik.com/reporting/table-working-with-table-cross-table-list-items)
-- [Styling Report Items](https://docs.telerik.com/reporting/styling-report-items)
-- [Report Item Properties](https://docs.telerik.com/reporting/report-items-properties)
+- [Telerik Reporting Table Item]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/overview%})
+- [Styling Report Items]({%slug telerikreporting/designing-reports/styling-reports/styling-report-items%})

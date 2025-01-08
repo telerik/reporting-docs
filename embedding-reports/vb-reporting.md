@@ -102,6 +102,11 @@ The steps for integrating the viewers in ASP.NET MVC and Web Forms projects are 
 
 ## VB.NET Web Reporting Applications in .NET 6.0 and above
 
+Microsoft don't have plans to provide Visual Studio templates for ASP.NET Core in Visual Basic as explained in the post [Can VB be used for a net core api project?](https://learn.microsoft.com/en-us/answers/questions/773434/can-vb-be-used-for-a-net-core-api-project).
+
+
+
+
 As a pure HTML/CSS/JS client-side jQuery widget the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) can be used in any web reporting application. It is ready for embedding in the VB ASP.NET Core Reporting Applications.
 
 ### Web Report Designer Requirements in .NET 6.0+

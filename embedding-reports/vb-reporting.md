@@ -87,7 +87,7 @@ The VB Desktop Report Viewers may use an Embedded Reporting Engine, a [Telerik R
 
 The Embedded Reporting Engine is integrated within the viewer of the VB Reporting project.
 
-The [Reporting REST Service](#generating-reports-in-vb-web-reporting-applications-in-.net-framework) may also deliver reports to the Desktop Viewers.
+The [Reporting REST Service](#generating-reports-in-vb-web-reporting-applications-in-net-framework) may also deliver reports to the Desktop Viewers.
 
 The Report Server is a separate application exposing a [Web API](https://docs.telerik.com/report-server/implementer-guide/apis/rest-api/v2/api-reference) that may be used by the viewers in VB.NET Reporting applications to request reports.
 

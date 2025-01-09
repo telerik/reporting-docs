@@ -128,7 +128,7 @@ The steps for integrating the viewers in ASP.NET MVC and Web Forms projects are 
 
 ## VB.NET Web Reporting Applications in .NET 6.0 and above
 
-Microsoft doesn't have plans to provide Visual Studio templates for ASP.NET Core in Visual Basic as explained in the post [Can VB be used for a net core api project?](https://learn.microsoft.com/en-us/answers/questions/773434/can-vb-be-used-for-a-net-core-api-project). Therefore, we don't provide examples or steps for implementing such applications in Visual Basic, as it may require significantly more efforts.
+Microsoft doesn't have plans to provide Visual Studio templates for ASP.NET Core in Visual Basic as explained in the post [Can VB be used for a net core api project?](https://learn.microsoft.com/en-us/answers/questions/773434/can-vb-be-used-for-a-net-core-api-project) Therefore, we don't provide examples or steps for implementing such applications in Visual Basic, as it may require significantly more efforts than with Visual Studio templates.
 
 ### Web Report Designer in .NET 6.0+
 

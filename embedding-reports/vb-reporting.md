@@ -132,7 +132,7 @@ Microsoft doesn't have plans to provide Visual Studio templates for ASP.NET Core
 
 ### Web Report Designer in .NET 6.0+
 
-As a pure HTML/CSS/JS client-side jQuery widget the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) can be used in any web reporting application, including those coded the Visual Basic.
+As a pure HTML/CSS/JS client-side jQuery widget the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) can be used in any web reporting application, including those coded in Visual Basic.
 
 The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the `Telerik.WebReportDesigner.Services` assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
 

@@ -69,13 +69,13 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
 ````
 
-    Sample Windows Forms project may be found in the Telerik GitHub Reporting Samples repository: [VB Reporting-WinFormsViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WinFormsViewerNet8).
+    Sample Windows Forms project may be downloaded from the Telerik GitHub Reporting Samples repository: [VB Reporting-WinFormsViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WinFormsViewerNet8).
 
 * [Integrating the WPF Report Viewer in .NET]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
 
     The WPF Viewer may be configured entirely with XAML which may be found in the above article and used in VB projects.
 
-    Sample WPF project may be found in the Telerik GitHub Reporting Samples repository: [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8).
+    Sample WPF project may be downloaded from the Telerik GitHub Reporting Samples repository: [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8).
 
 * [Integrating the WinUI Report Viewer in .NET 6]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
 

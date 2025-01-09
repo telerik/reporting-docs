@@ -26,7 +26,7 @@ VB reports are supported also in .NET. The Visual Studio Report Designer is not 
 
 ### Displaying Reports in VB Desktop Reporting Applications
 
-The Telerik Reporting product provides the following Report Viewers:
+The Telerik Reporting product provides the following Desktop Report Viewers:
 
 * [Windows Forms Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview%})
 * [WPF Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview%})
@@ -38,41 +38,48 @@ The Desktop Report Viewers may be embedded in .NET Framework and .NET Visual Bas
 
 ##### Implementing in VB projects targeting .NET Framework 4.6.2 and above
 
+Here are the Desktop Report Viewers that may be embedded in VB desktop projects targeting the .NET Framework through the Visual Studio templates we provide, or manually:
+
 * [Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
 * [Integrating the WPF Report Viewer in .NET Framework]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
 
 ##### Implementing in VB projects targeting .NET 6.0 and above
 
-The following Report Viewers may be configured manually in VB desktop projects. There are no Visual Studio Reporting templates available for Visual Basic projects targeting .NET:
+The following Desktop Report Viewers may be configured manually in VB desktop projects targeting .NET. There are no Visual Studio Reporting templates available for Visual Basic projects targeting .NET:
 
 * [Adding the Windows Forms Report Viewer Control to a Windows Forms .NET Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-core-project%})
-* [Integrating the WPF Report Viewer in .NET]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
-* [Integrating the WinUI Report Viewer in .NET 6]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
 
-The following code adds the Windows Forms Report Viewer control to the form named 'Form1' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports'. The viewer is with the default Embedded Reporting Engine:
+    The following code adds the Windows Forms Report Viewer control to the form named 'Form1' in its 'Load' event handler. The viewer displays the TRDP report named 'SampleReport.trdp' from the application subfolder 'Reports'. The viewer is with the default Embedded Reporting Engine:
 
-````VB.NET
+    ````VB.NET
 Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    Dim reportSource1 As UriReportSource = New UriReportSource()
-    reportSource1.Uri = "Reports\SampleReport.trdp"
-    reportSource1.Parameters.Add("Parameter1_Name", "Parameter1_Value")
-    reportSource1.Parameters.Add("Parameter2_Name", "Parameter2_Value")
-
-    Dim reportViewer = New Telerik.ReportViewer.WinForms.ReportViewer()
-    reportViewer.ReportSource = reportSource1
-    reportViewer.Dock = System.Windows.Forms.DockStyle.Fill
-    reportViewer.Name = "reportViewer1"
-    reportViewer.TabIndex = 1
-    reportViewer.RefreshReport()
-
-    Me.Controls.Add(reportViewer)
-End Sub
+        Dim reportSource1 As UriReportSource = New UriReportSource()
+        reportSource1.Uri = "Reports\SampleReport.trdp"
+        reportSource1.Parameters.Add("Parameter1_Name", "Parameter1_Value")
+        reportSource1.Parameters.Add("Parameter2_Name", "Parameter2_Value")
+    
+        Dim reportViewer = New Telerik.ReportViewer.WinForms.ReportViewer()
+        reportViewer.ReportSource = reportSource1
+        reportViewer.Dock = System.Windows.Forms.DockStyle.Fill
+        reportViewer.Name = "reportViewer1"
+        reportViewer.TabIndex = 1
+        reportViewer.RefreshReport()
+    
+        Me.Controls.Add(reportViewer)
+    End Sub
 ````
 
-Sample Windows Forms and WPF projects may be found in the Telerik GitHub Reporting Samples repository:
+    Sample Windows Forms project may be found in the Telerik GitHub Reporting Samples repository: [VB Reporting-WinFormsViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WinFormsViewerNet8).
 
-* [VB Reporting-WinFormsViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WinFormsViewerNet8)
-* [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8)
+* [Integrating the WPF Report Viewer in .NET]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-core-project%})
+
+    The WPF Viewer may be configured entirely with XAML which may be found in the above article and used in VB projects.
+
+    Sample WPF project may be found in the Telerik GitHub Reporting Samples repository: [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8).
+
+* [Integrating the WinUI Report Viewer in .NET 6]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
+
+    Microsoft doesn't provide VB templates for WinUI - [Create your first WinUI 3 (Windows App SDK) project](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app). Technically, it should be possible to use also VB for WinUI projects, however, this may be much more complicated without the Visual Studio templates.
 
 ### Generating Reports in VB Desktop Reporting Applications
 

@@ -99,7 +99,7 @@ The [Web Report Designer]({%slug telerikreporting/designing-reports/report-desig
 
 #### VB Web Report Designer Requirements in .NET Framework
 
-The VB Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the [Telerik.WebReportDesigner.Services](/api/telerik.webreportdesigner.services) assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
+The VB Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the [Telerik.WebReportDesigner.Services](/api/telerik.webreportdesigner.services) assembly/package as explained in the next section.
 
 #### VB Web Report Designer Implementation in .NET Framework
 
@@ -141,7 +141,7 @@ Microsoft doesn't have plans to provide Visual Studio templates for ASP.NET Core
 
 As a pure HTML/CSS/JS client-side jQuery widget the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) can be used in any web reporting application, including those coded in Visual Basic.
 
-The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the `Telerik.WebReportDesigner.Services` assembly/package as explained in the section [Web Report Designer Implementation](#web-report-designer-implementation).
+The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the `Telerik.WebReportDesigner.Services` assembly/package.
 
 ### Displaying Reports in .NET 6.0+ VB Web Reporting Applications
 

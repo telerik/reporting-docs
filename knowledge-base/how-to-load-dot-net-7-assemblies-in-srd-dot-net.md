@@ -4,7 +4,7 @@ description: "Learn how to load custom .NET 9 assemblies in the Standalone Repor
 type: how-to
 page_title: Loading .NET 9 assemblies in the Standalone Report Designer for .NET
 slug: how-to-load-dot-net-7-assemblies-in-srd-dot-net
-tags: 
+tags: standalone,report,designer,for,.net
 ticketid: 1383925
 res_type: kb
 ---

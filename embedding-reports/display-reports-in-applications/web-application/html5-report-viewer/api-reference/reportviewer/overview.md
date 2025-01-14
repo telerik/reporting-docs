@@ -41,7 +41,7 @@ The commands are implemented by using a command object with three methods - for 
 
 Along with the commands the report viewer also exposes events, which are fired at different moments during the lifecycle of the report viewer. For a complete list of the events please check [telerikReportViewer Namespace, Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}). Each event passes the Event object as an argument and for each event the [jQuery's event.data](https://api.jquery.com/event.data/) is used and e.data.sender is set to be the report viewer. This gives you the option to check the state of the report viewer in each event through the methods exposed - for example, the view mode or the current page displayed. You can also check the state of a certain command through its enabled() and checked() (for toggle buttons) methods.
 
-Checking the command state is especially useful if you are implementing your own custom toolbar - in such case if you do not rely on [data attributes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes%}) you can attach an event handler to the updateUi event. Then in your event handler you can set the states of your custom buttons by checking the states of each report viewer command.
+Checking the command state is especially useful if you are implementing your own custom toolbar - in such case if you do not rely on [data attributes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes%}) you can attach an event handler to the updateUi event. Then in your event handler, you can set the states of your custom buttons by checking the states of each report viewer command.
 
 Additionally, you can change the state of the report viewer in your event handler if needed through the report viewer methods or commands. Consider the following snippet:
 
@@ -57,4 +57,4 @@ $(function () {
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

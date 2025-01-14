@@ -1,7 +1,7 @@
 ---
 title: parameterEditor
 page_title: parameterEditor of the HTML5 Report Viewer explained
-description: "Learn what does the parameterEditor of the Telerik Reporting HTML5 Report Viewer do and how to use it."
+description: "Learn what the parameterEditor of the Telerik Reporting HTML5 Report Viewer does and how to use it."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/parametereditor
 tags: parametereditor
 published: True
@@ -26,4 +26,4 @@ table th:nth-of-type(2) {
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

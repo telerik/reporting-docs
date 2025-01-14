@@ -22,7 +22,7 @@ The quickest way to add an HTML5 Report Viewer to your web project is with the _
 
 ## Configuring the HTML5 Report Viewer to work with the Report Server using Item Templates
 
-The VS item template will integrate the HTML5 Report Viewer in a.html page and will connect to the [Telerik Report Server](https://docs.telerik.com/report-server/introduction) to process and render reports. The following describes what steps you should perform in order to add it to your application:
+The VS item template will integrate the HTML5 Report Viewer in a.html page and will connect to the [Telerik Report Server](https://docs.telerik.com/report-server/introduction) to process and render reports. The following describes what steps you should perform to add it to your application:
 
 * To start the item template wizard, in __Solution Explorer__, select the target project. On the __Project menu__, click __Add -> New Item__. In the [Add New Item](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)) dialog box, navigate to the __Web__ category. Select __Telerik HTML5 Report Viewer Page__ item.
 * You will be prompted to accept building the project. Click 'OK'.
@@ -31,11 +31,11 @@ The VS item template will integrate the HTML5 Report Viewer in a.html page and w
 	1. __'Configure reporting engine'__ will configure the type of reporting engine that will process and render the reports. You have two options - REST service or Report server. Choose __Report Server__ option. This way, the reports will be processed and rendered by the specified Report Server instance. On the right side of the dialog, there are two things that you should enter:
 
 		+ __Report Server URI__ - enter a valid Report Server URI.
-		+ __Runtime credentials__ - enter Username and Password for the Registered user or choose [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled.
+		+ __Runtime credentials__ - enter _Username_ and _Password_ for the Registered user or choose [Guest user](https://docs.telerik.com/report-server/implementer-guide/user-management/guest-user) if it suits your needs. Make sure your Report Server instance has its Guest account enabled.
 
 		![The Visual Studio item template Add new Report Viewer on the page Configure reporting engine with selected Report Server](images/item-template-reporting-engine-rs.png)
 
-	1. __'Setup Report Source for Report Server'__ will choose a report definition for the report viewer. There are two things that you should select, but in case you are using the Guest account, you will have to fill in the fields manually. It is because the Guest user cannot read the available categories and reports for security reasons:
+	1. __'Setup Report Source for Report Server'__ will choose a report definition for the report viewer. There are two things you should select, but in case you are using the _Guest_ account, you will have to fill in the fields manually. It is because the Guest user cannot read the available categories and reports for security reasons:
 
 		+ __Category__ - select a category from the drop-down menu that contains the desired report.
 		+ __Report name__ - select a report from the available reports.
@@ -127,7 +127,7 @@ The most common reasons for failure are related to the authentication against th
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [How To: Use HTML5 Report Viewer With REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%})
 * [Telerik Report Server](https://docs.telerik.com/report-server/introduction)
 * [How to: Add New Project Items](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100))

@@ -1,7 +1,7 @@
 ---
 title: Events
 page_title: Events of the telerikReportViewer
-description: "Learn what are the Events of the telerikReportViewer object in the Telerik Reporting HTML5 Report Viewer."
+description: "Learn about the Events of the telerikReportViewer object in the Telerik Reporting HTML5 Report Viewer."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events
 tags: events
 published: True
@@ -33,4 +33,4 @@ previous_url: /html5-report-viewer-api-events, /embedding-reports/display-report
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

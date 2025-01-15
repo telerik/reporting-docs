@@ -11,9 +11,7 @@ res_type: kb
 ## Environment
 
 | Version | Product | Author |  
-
-| --- | --- | ---- |  
-
+| ---- | ---- | ---- |  
 |N/A| Telerik Reporting|[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description

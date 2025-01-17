@@ -3,7 +3,7 @@ title: Passing Values to Report Parameters
 page_title: Sending Values to Report Parameters from outside HTML5 ReportViewer
 description: "Learn How to pass Values to Report Parameters from Components Located Outside the HTML5 ReportViewer in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-pass-values-to-report-parameters
-tags: how,to,pass,values,to,report,parameters
+tags: how,pass,values,report,parameters
 published: True
 position: 4
 previous_url: /html5-report-viewer-howto-custom-parameters
@@ -172,5 +172,5 @@ $('#invoiceId').change(function () {
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Custom Parameter Editors]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/how-to-create-a-custom-parameter-editor%})

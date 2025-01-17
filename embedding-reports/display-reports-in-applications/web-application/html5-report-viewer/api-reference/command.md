@@ -22,10 +22,10 @@ table th:nth-of-type(2) {
 
 | Method | Description |
 | ------ | ------ |
-| __exec__ |The method that actually triggers the command.|
+| __exec__ |The method that triggers the command.|
 | __enabled__ |Returns a bool value and can be used to find in what state the UI associated with the command should be.|
 | __checked__ |Returns a bool value and can be used to find in what state the UI associated with the command should be.|
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

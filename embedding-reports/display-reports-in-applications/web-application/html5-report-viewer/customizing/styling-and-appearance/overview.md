@@ -42,7 +42,7 @@ While these classes provide layout settings the HTML5 Report Viewer depends on t
 <link href="/kendo/styles/kendo.blueopal.min.css" rel="stylesheet" />
 ````
 
-The default template depends on the Telerik Web UI font, that is provided by the Reporting REST service. 
+The default template depends on the Telerik Web UI font provided by the Reporting REST service. 
 
 Additionally, we provide a template that depends on  [Font Awesome](https://fontawesome.com/)  for the menu icons. Font Awesome is not part of the Telerik HTML5 Report Viewer distribution and could be obtained from [https://fontawesome.com/download](https://fontawesome.com/download).
 
@@ -67,5 +67,5 @@ The default viewer template and stylesheet depend on CSS media queries to adapt 
 
 ## See Also
 
-* [HTML5 Report Viewer Overview]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
 * [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%})

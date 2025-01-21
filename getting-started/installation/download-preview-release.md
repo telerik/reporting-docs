@@ -3,9 +3,9 @@ title: Preview Releases
 page_title: Preview Releases
 description: This article describes the Telerik Reporting Preview release and how to download it to get the latest bug fixes.
 slug: installation-telerik-reporting-preview-releases
-tags: using,the,hotfix,(dlls,only), lib, latest, internal, build, preview
+tags: using,the,hotfix, lib, latest, internal, build, preview
 published: True
-position: 5
+position: 8
 ---
 
 # Preview Release
@@ -24,11 +24,17 @@ Alternatively, you can __download the Preview assemblies__ from [your telerik.co
 	
 2. Click on the __Download__ button in the __Latest Preview__ banner. This will download an archive with the Reporting __assemblies__.
 
-To get a specific version of the Preview, open the __Previews__ tab on the download page. Then, select a version from the list.
+	To get a specific version of the Preview, open the __Previews__ tab on the download page. Then, select a version from the list.
+
+	![Telerik Reporting Progress Site for Reporting Preview Tab](images/TelerikReportingLastestPreview.png)
 	
 ## Version Number Breakdown
 
-The numbers in the name of the dlls are determined by the source code build date. In other words, the version number corresponds to the date when the dlls were built.
+The numbers in the name are determined by the source code build date. In other words, the version number corresponds to the date when the msi was built.
+
+The following image shows the name of the Preview generated on the 22nd of December (12th month), in the 2024 Q4 release sprint.
+
+![Telerik Reporting Internal Build Version Number Breakdown](images/TelerikReportingVersionNumber.png)
  
 ## See Also  
 * [Installation Approaches for Telerik Reporting]({%telerikreporting/installation%})

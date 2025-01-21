@@ -15,6 +15,9 @@ navigation:
     getting-started:
         position: 10
         title: "Getting Started"
+    ide-integration:
+        position: 15
+        title: "IDE Integration"
     security:
         position: 20
         title: "Security"

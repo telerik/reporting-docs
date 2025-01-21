@@ -6,7 +6,7 @@ slug: telerikreporting/using-reports-in-applications/third-party-dependencies
 previous_url: /using-reports-in-applications/third-party-dependencies, /installation-deploying-adomd.net, /installation-deploying-openxml
 tags: third-party,dependencies
 published: True
-position: 20
+position: 7
 ---
 
 # External Dependencies for Enriched Functionality

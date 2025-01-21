@@ -5,7 +5,7 @@ description: "Learn how to use NuGet Keys to authenticate with the private Teler
 slug: using-nuget-keys
 tags: telerik, reporting, restore, nuget, packages, ci, continuous, integration, installation
 published: True
-position: 15
+position: 6
 ---
 
 # Restoring NuGet Packages in Your CI Workflow

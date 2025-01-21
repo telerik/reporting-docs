@@ -5,7 +5,7 @@ description: "Use the Telerik Reporting CDN to serve resources for the html5-bas
 slug: telerikreporting/getting-started/installation/cdn-assets
 tags: how,to,add,the,telerik,cdn,reportviewer,script
 published: True
-position: 21
+position: 9
 ---
 
 # HTML5 Report Viewer and Web Report Designer Assets

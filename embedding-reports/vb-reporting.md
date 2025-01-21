@@ -79,7 +79,7 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 * [Integrating the WinUI Report Viewer in .NET 6]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
 
-    Microsoft doesn't provide VB templates for WinUI - [Create your first WinUI 3 (Windows App SDK) project](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app). Technically, it should be possible to use also VB for WinUI projects, however, this may be much more complicated without the Visual Studio templates.
+    Microsoft doesn't provide VB templates for WinUI - [Create your first WinUI 3 (Windows App SDK) project](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app). Technically, it should be possible to use also VB for WinUI projects, however, this may be much more complicated without using the Visual Studio templates.
 
 ### Generating Reports in VB Desktop Reporting Applications
 

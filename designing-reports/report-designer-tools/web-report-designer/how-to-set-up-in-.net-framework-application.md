@@ -105,7 +105,7 @@ Imports System.IO
 			Dim reportsPath = Path.Combine(appPath, "Reports")
 			'Add report source resolver for trdx/trdp report definitions,
 			'then add resolver for class report definitions as fallback resolver;
-			'finally create the resolver And use it in the ReportServiceConfiguration instance.
+			'finally create the resolver and use it in the ReportServiceConfiguration instance.
 			Dim resolver = New UriReportSourceResolver(reportsPath).AddFallbackResolver(New TypeReportSourceResolver())
 
 			Dim reportServiceConfiguration As New ReportServiceConfiguration()

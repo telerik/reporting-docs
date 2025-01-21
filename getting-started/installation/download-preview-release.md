@@ -16,7 +16,7 @@ The Preview is a minor release for Telerik Reporting assemblies, that is uploade
 
 The previews are available only if they are released after an official release. Once a new official version is out and no previews are released afterwards, the previous previews are no longer available.
 
-The Preview is __available as a NuGet__ package. Note that the Preview packages are not uploaded on the [Telerik NuGet Feed]({%telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}), but are available only as [local nuget package]({%setup-local-nuget-feed%}).
+The Preview is __available as a NuGet__ package. Note that the Preview packages are not uploaded on the [Telerik NuGet Feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}), but are available only as [local nuget package]({%slug setup-local-nuget-feed%}).
 
 Alternatively, you can __download the Preview assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
 
@@ -37,5 +37,5 @@ The following image shows the name of the Preview generated on the 22nd of Decem
 ![Telerik Reporting Internal Build Version Number Breakdown](images/TelerikReportingVersionNumber.png)
  
 ## See Also  
-* [Installation Approaches for Telerik Reporting]({%telerikreporting/installation%})
-* [Telerik Reporting Licensing]({%telerikreporting/licensing%})  
+* [Installation Approaches for Telerik Reporting]({%slug telerikreporting/installation%})
+* [Telerik Reporting Licensing]({%slug telerikreporting/licensing%})  

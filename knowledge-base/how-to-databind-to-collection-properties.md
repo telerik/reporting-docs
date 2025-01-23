@@ -28,58 +28,58 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 
 1. Create a **ClassLibrary** project with the following definition:
 
-````CSharp
-using System.ComponentModel;
+	````CSharp
+	using System.ComponentModel;
 
-namespace ContactsClassLibrary
-{
-    public class ContactsCollection
-    {
+	namespace ContactsClassLibrary
+	{
+		public class ContactsCollection
+		{
 
-        BindingList<Contact> _contacts;
-        public ContactsCollection()
-        {
+			BindingList<Contact> _contacts;
+			public ContactsCollection()
+			{
 
-            _contacts = new BindingList<Contact>();
-            for (int i = 0; i < 5; i++)
-            {
-                BindingList<Phone> phones = new BindingList<Phone>();
-                for (int j = 0; j < 3; j++)
-                {
-                    phones.Add(new Phone("Phone" + i + "." + j));
-                }
-                _contacts.Add(new Contact("Contact" + i, phones));
-            }
-        }
-        public BindingList<Contact> AllContacts { get { return _contacts; } }
+				_contacts = new BindingList<Contact>();
+				for (int i = 0; i < 5; i++)
+				{
+					BindingList<Phone> phones = new BindingList<Phone>();
+					for (int j = 0; j < 3; j++)
+					{
+						phones.Add(new Phone("Phone" + i + "." + j));
+					}
+					_contacts.Add(new Contact("Contact" + i, phones));
+				}
+			}
+			public BindingList<Contact> AllContacts { get { return _contacts; } }
 
-    }
+		}
 
-    public class Contact
-    {
-        public Contact(string _name, BindingList<Phone> _phones)
-        {
-            this.Name = _name;
-            this.Phones = _phones;
-        }
-        public string Name { get; set; }
-        public BindingList<Phone> Phones { get; set; }
-    }
+		public class Contact
+		{
+			public Contact(string _name, BindingList<Phone> _phones)
+			{
+				this.Name = _name;
+				this.Phones = _phones;
+			}
+			public string Name { get; set; }
+			public BindingList<Phone> Phones { get; set; }
+		}
 
-    public class Phone
-    {
-        public Phone(string _number)
-        {
-            this.Number = _number;
-        }
-        public string Number { get; set; }
-    }
-}
-````
+		public class Phone
+		{
+			public Phone(string _number)
+			{
+				this.Number = _number;
+			}
+			public string Number { get; set; }
+		}
+	}
+	````
 
 1. Build the project to ensure that **ContactsClassLibrary.dll** is produced in the **bin** folder.
 
-1. [Extend the Report Designer to Recognize the Custom Assembly](({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
+1. [Extend the Report Designer to Recognize the Custom Assembly]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/configuration/extending-report-designer%})
 
 1. Create a brand new report and add an **ObjectDataSource** data item bound to the ContactsCollection.**AllContacts** property:
 

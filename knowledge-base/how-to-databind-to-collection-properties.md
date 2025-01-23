@@ -28,7 +28,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 
 1\. Create a **ClassLibrary** project with the following definition:
 
-	````CSharp
+````CSharp
 	using System.ComponentModel;
 
 	namespace ContactsClassLibrary
@@ -75,7 +75,7 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 			public string Number { get; set; }
 		}
 	}
-	````
+````
 
 2\. Build the project to ensure that **ContactsClassLibrary.dll** is produced in the **bin** folder.
 

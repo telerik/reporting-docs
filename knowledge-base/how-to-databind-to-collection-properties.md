@@ -83,31 +83,31 @@ Consider the scenario illustrating a custom business object `Contact` having as 
 
 4\. Create a brand new report and add an **ObjectDataSource** data item bound to the ContactsCollection.**AllContacts** property:
 
-	![Binding ObjectDataSource](images/binding-object-data-source.png) 
+![Binding ObjectDataSource](images/binding-object-data-source.png) 
 
 5\. Create a Table Report Item using the wizard and bind it to the defined **ObjectDataSource**:
 
-	![Table Wizard](images/table-wizard.png)  
+![Table Wizard](images/table-wizard.png)  
 
 6\. Previewing the report at this state is expected to produce the following result:
 
-	![Initial Preview](images/initial-preview.png)   
+![Initial Preview](images/initial-preview.png)   
 
 7\. Select the **=Fields.Phones** TextBox and replace it with an empty Table item:
 
-	![Replace with Empty Table](images/replace-with-empty-table.png)    
+![Replace with Empty Table](images/replace-with-empty-table.png)    
 
 8\. Adjust the empty Table's **DataSource** via Bindings:
 
-	![Bind the Empty Table](images/bind-the-empty-table.png)   
+![Bind the Empty Table](images/bind-the-empty-table.png)   
 
 9\. Select one of the generated TextBoxes in the empty Table and set its **Value** property to the desired property of the **Phone** class, e.g. "Number":
 
-	![Bind the Nested Property](images/bind-the-nested-property.png)    
+![Bind the Nested Property](images/bind-the-nested-property.png)    
 
 10\. Preview the report and see the phones for each contact:
 
-	![Hierarchical Table](images/hierarchical-table.png)    
+![Hierarchical Table](images/hierarchical-table.png)    
 
 ## Notes
 

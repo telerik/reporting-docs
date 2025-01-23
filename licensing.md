@@ -41,6 +41,8 @@ To upgrade the trial version of your license to a developer license:
 1. Uninstall the __Trial__ version either by using the __Start Menu__ shortcut or the __Add/Remove Programs__ dialog.
 1. Obtain the new __Dev__ installer and [install Telerik Reporting]({%slug telerikreporting/installation%}).
 
+>note More information is available in the following KB article: [How to Upgrade Trial to Licensed Version]({%slug how-to-remove-trial-message%}).
+
 ## .NET Licensing Mechanism
 
 As of Q2 2015, Telerik Reporting uses the [standard .NET licensing mechanism](https://learn.microsoft.com/bg-bg/dotnet/framework/tools/lc-exe-license-compiler), which means that using the tool in design-time causes Visual Studio to add a `license.licx` to the solution. This file is used only in design-mode and is not needed for deployment explicitly. The .NET framework (`lc.exe`) will embed it in the assembly when your web application is built for deployment.

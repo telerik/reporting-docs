@@ -69,9 +69,9 @@ To add links to the document map, you set the __DocumentMapText__ property of th
 
 ## HTML Report Page Modes
 
-The [page modes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) are two. __Continuous scrolling__ and __Single page__. The Single page mode renders only one page in the viewport. This mode does not hinder the browser with a lot of DOM objects, actions or event listeners, but limits the report data that the user could read.
+The [page modes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) are two. __Continuous scrolling__ and __Single page__. The Single page mode renders only one page in the viewport. This mode does not hinder the browser with a lot of DOM objects, actions, or event listeners, but limits the report data that the user could read.
 
-The Continuous scroll mode gives the user the ability to read all HTML report pages at once. When the report is ready, in the viewport are rendered N number of pages to fill in the visible part of your report viewer. Each next or previous page will be loaded on demand if the user scrolls up or down. If the user navigates to 5th page for example, in the DOM tree will be rendered all pages that are visible in the viewport, before and after the wanted page, plus all their actions and event listeners. All other pages, that are out of the visible part, will not be loaded. On their place will be added skeleton pages, that will be replaced with the actual page, only if the user scrolls to them.
+The Continuous scroll mode gives the user the ability to read all HTML report pages at once. When the report is ready, in the viewport are rendered N number of pages to fill in the visible part of your report viewer. Each next or previous page will be loaded on demand if the user scrolls up or down. If the user navigates to the 5th page for example, in the DOM tree will be rendered all pages that are visible in the viewport, before and after the wanted page, plus all their actions and event listeners. All other pages, that are out of the visible part, will not be loaded. On their place will be added skeleton pages, that will be replaced with the actual page, only if the user scrolls to them.
 
 Continuous scroll mode is the default page mode. To change the page mode, check __pageMode__ option in [Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}) article.
 
@@ -85,7 +85,13 @@ The HTML5 Report Viewer's content is rendered in __DIV__ elements. The HTML repo
 
 ## How to display the HTML5 Report Viewer in Web Applications
 
-[![Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET](https://img.youtube.com/vi/GeCUGTgZziI/0.jpg)]([https://www.youtube.com/watch?v=GeCUGTgZziI)](https://www.youtube.com/watch?v=GeCUGTgZziI))
+<div style="position: relative; width: 100%; height: 100%;">
+    <iframe src="https://www.youtube.com/embed/GeCUGTgZziI" 
+            title="Setting up Telerik Html5 Report Viewer with an external Telerik Reporting REST Service in .NET" frameborder="0" allowfullscreen
+            allow="accelerometer; autoplay; picture-in-picture" 
+            style="position: absolute; width: 100%; height: 100%;">
+    </iframe>
+</div>
 
 ## See Also
 

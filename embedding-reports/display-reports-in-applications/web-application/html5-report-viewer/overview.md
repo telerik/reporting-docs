@@ -85,7 +85,7 @@ The HTML5 Report Viewer's content is rendered in __DIV__ elements. The HTML repo
 
 ## How to display the HTML5 Report Viewer in Web Applications
 
-[![Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET](https://img.youtube.com/vi/GeCUGTgZziI/0.jpg)]([https://www.youtube.com/watch?v=video-id](https://www.youtube.com/watch?v=GeCUGTgZziI))
+[![Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET](https://img.youtube.com/vi/GeCUGTgZziI/0.jpg)]([https://www.youtube.com/watch?v=GeCUGTgZziI)](https://www.youtube.com/watch?v=GeCUGTgZziI))
 
 ## See Also
 

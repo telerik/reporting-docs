@@ -2,7 +2,7 @@
 title: Add License Key to CI Services
 page_title: "Learn how to add your License Key to CI/CD Services."
 slug: license-key-ci-services
-tags: license,key, telerik, reporting,ci
+tags: license, key, telerik, reporting, ci
 published: True
 position: 2
 ---
@@ -49,6 +49,6 @@ env:
 
 # See Also
 
-* [License Activation Errors and Warnings]()
+* [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
 * [Setting Up Your License Key]({%slug license-key%}))
-* [Frequently Asked Questions about Your [Telerik Reporting License Key]()
+* [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})

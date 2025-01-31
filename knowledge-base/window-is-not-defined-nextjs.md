@@ -4,7 +4,6 @@ description: Telerik React Report Viewer not working in NextJS
 type: troubleshooting
 page_title: Telerik React Report Viewer not working in NextJS
 slug: window-is-not-defined-nextjs
-position: 
 tags: Web, ReactJS, React, HTML5, Report Viewer
 ticketid: 1581204
 res_type: kb

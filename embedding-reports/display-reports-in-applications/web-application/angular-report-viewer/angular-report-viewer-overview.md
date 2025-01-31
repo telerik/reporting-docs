@@ -25,7 +25,7 @@ To successfully integrate the Angular Report Viewer component, ensure the follow
 
 1. Required Application Version:
 
-	+ Angular 15+ Application
+	+ Angular 16+ Application
 
 1. Required Service:
 

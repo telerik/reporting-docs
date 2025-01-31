@@ -1,52 +1,74 @@
 ---
-title: User Guide - Overview
-page_title: Web Report Designer - User Guide
-description: Explore the Web Report Designer's user guide and discover how to apply the powerful features of the report designer to effortlessly craft rich dynamic reports.
-slug: web-report-designer-user-guide-overview
-tags: overview, web, report, design, tool, create, report, web 
+title: Web Report Designer - Getting Started
+page_title: Web Report Designer - Getting Started
+description: Creating a report from scratch with the Web report Designer offered by Telerik Reporting.
+slug: web-report-designer-user-guide-getting-started
+tags: web, report, design, tool, create, report, web, started 
 published: True
-position: 0
+position: 2
 ---
+<style>
+img[alt$="><"] {
+  border: 1px solid lightgrey;
+}
+</style>
 
-# User Guide - Getting Started with Web Report Designer
+# Getting Started 
 
+This tutorial will guide you through your first steps of creating a report from scratch using the Web Report Designer.
 
-You are expected to see the sample report and the first time a user loads the Web report designer, they will see the onboarding guide which walks you through the main tools in the designer:
+1. Create a new empty Report:
 
-![Onboarding Guide](images/wrd-onboarding-guide.png)    
+    ![Create New Report ><](images/wrd-create-new-report.gif)   
 
-We have the interactive **Design surface** where you actually create and style your report:
+2. In the **Components** tab, under the **Data Sources** group, select the **Web Service Data Source** option:
 
-![Design Surface](images/wrd-design-surface.png)    
+    ![Create Web Service Data Source ><](images/wrd-create-web-service-data-source.png)  
 
-The **Components tray** which contains all of the items that you can add to the report:
+3. Using the [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%}), we will add a new [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%}) that will be used for the data population in our first report.
 
-![Components Tray](images/wrd-components-tray.png)   
+    * Enter directly the *Service URL*, e.g. *https://demos.telerik.com/reporting/api/reports/formats*, and display data located on a service in JSON format while using no code.
+    
+    ![Web Service Data Source Wizard Step 1 ><](images/wrd-create-web-service-data-source-wizard-step1.png)   
 
-The **Explorer** which provides a tree-based structure of everything that is already in the report including data structure:
+    * You can **Finish** the wizard or go through the **Next** steps if other fine-tuning is necessary:
 
-![Explorer](images/wrd-explorer.png)   
+        * Configure request parameters (if such are required)
 
-On the right, we have a **Properties area** which will show you all of the properties and set values for the currently selected component:
+        ![Web Service Data Source Wizard Step 2 ><](images/wrd-create-web-service-data-source-wizard-step2.png) 
 
-![Properties Area](images/wrd-properties-area.png)  
+        * Choose desing-time data - select the *Use real data while designing the report* option
 
-At the top left, the **Main menu** allows you to open, save and interact with all of your reports on a global level along with the **Asset Manager** which is where you store all of your reports assets.
+        ![Web Service Data Source Wizard Step 6 ><](images/wrd-create-web-service-data-source-wizard-step6.png)  
 
-![Main Menu](images/wrd-main-menu.png)  
+        * Preview data source results - It is expected to see the data preview in JSON format:
 
-![Asset Manager](images/wrd-asset-manager.png)    
+        ![Web Service Data Source Wizard Step 7 ><](images/wrd-create-web-service-data-source-wizard-step7.png)  
 
-We have a **Preview** button which shows you a pixel perfect rendering of what the report will look like:
+    Once the wizard is completed, the Web Service Data Source object should be available in the **Explorer** tab under the **Inline DataSources** group:
 
-![Report Preview](images/wrd-preview-button.png)  
+    ![Web Service Data Source Wizard Step Instance ><](images/wrd-create-web-service-data-instance.png) 
 
-And finally, at the top we have a global **Search box** which allows you to search the report instance for any property value, component data source, etc.:
+4. Go back to the **Components** tab, select the report's **Detail section** and trigger the [Table Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/table-and-crosstab-wizards%}) option:  
 
-![Global Search](images/wrd-global-search.png) 
+    ![Table Wizard ><](images/wrd-table-wizard.png) 
+
+5. Configure the Table:
+
+    ![Table Wizard Usage ><](images/wrd-table-wizard-usage.gif)  
+
+6. Style the Table using the [Properties Area]({%slug web-report-designer-user-guide-structure%}):
+
+    ![Table Style ><](images/wrd-table-style.png)   
+
+7. Congratulations! Click the **Preview** button at the top right corner to see your first report with a table, populated with data coming from a web service. The tollbar allows you to easily export the report to the desired [format]({%slug telerikreporting/using-reports-in-applications/export-and-configure/export-formats%}):
+
+    ![Preview Report ><](images/wrd-preview-report.png)  
 
 ## See Also
 
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [WebServiceDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})
+* [WebServiceDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard%})
 
 

@@ -2,7 +2,7 @@
 title: FAQs
 page_title: "Frequently Asked Questions about Telerik Reporting Licensing."
 slug: license-frequently-asked-questions
-tags: license,key, telerik, reporting, faq, questions
+tags: license, telerik, reporting, faq, questions
 published: True
 position: 9
 ---
@@ -94,6 +94,6 @@ This depends on your license:
 
 # See Also
 
-* [License Activation Errors and Warnings]()
+* [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
 * [Setting Up Your License Key]({%slug license-key%}))
 * [Adding the License Key to CI Services]({%slug license-key-ci-services%}))

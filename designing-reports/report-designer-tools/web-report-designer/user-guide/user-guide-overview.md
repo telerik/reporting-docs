@@ -8,9 +8,27 @@ published: True
 position: 0
 ---
 
+<style>
+    img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
+
+img[alt$="--"] {
+  border: 1px solid lightgrey;
+}
+</style>
+
 # Web Report Designer - User Guide
 
 The [Web Report Designer's]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) User Guide is intended to assist the end-users of business applications that integrate [Telerik Reporting]({%slug telerikreporting/welcome-to-telerik-reporting!%}). It aims to provide the required knowledge for the successful crafting and maintenance of reports without the necessity of having any previous knowledge about the [lifecycle of the Telerik Report]({%slug telerikreporting/designing-reports/understanding-the-report-lifecycle%}) or the internal engine for processing it. 
+
+![Ninja Looking ><](images/ninja_looking.png)  
+
+![Web Report Designer Overview --](images/wrd-overview.gif)  
 
 ## See Also
 

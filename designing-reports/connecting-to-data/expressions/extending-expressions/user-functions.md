@@ -36,13 +36,15 @@ __Example:__
 {{source=CodeSnippets\CS\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.cs region=UserFunctionsAttributeIsVisibleSnippet}}
 {{source=CodeSnippets\VB\API\Telerik\Reporting\Expressions\UserFunctionsSnippets.vb region=UserFunctionsAttributeIsVisibleSnippet}}
 
+## User Functions Visibility in Report Designers
+
 As of 2025 Q1(version 19.0.25.211), the __User Function__ resolution behavior has been changed. The `IsVisible` property of the Function attribute can now be used to more precisely control which functions are loaded by the Reporting Engine. Below you will see what the new features are:
 
 * By default, all public static methods in a chosen assembly(ies) are loaded;
-* If at least one public static method in the assembly(ies) is decorated with the Function attribute and has its `IsVisible` property set to `True` (True by default), only public static methods with the same configuration will be loaded.
-* If public static methods that are not decorated with the Function attribute or have their `IsVisible` properties set to `False`, will not be loaded.
-* If a type is decorated with the Function attribute and has its `IsVisible` property set to `False`, none of the methods in this class will be loaded.
-* If a type is decorated with the Function attribute and has its `IsVisible` property set to `True`, all methods in it, except for the ones decorated with IsVisible = False, will be loaded.
+* If at least one public static method in the assembly(ies) is decorated with the Function attribute and has its [IsVisible](/api/telerik.reporting.expressions.functionattribute#Telerik_Reporting_Expressions_FunctionAttribute_IsVisible) property set to `True` (True by default), only public static methods with the same configuration will be loaded.
+* If public static methods that are not decorated with the Function attribute or have their [IsVisible](/api/telerik.reporting.expressions.functionattribute#Telerik_Reporting_Expressions_FunctionAttribute_IsVisible) properties set to `False`, will not be loaded.
+* If a type is decorated with the Function attribute and has its [IsVisible](/api/telerik.reporting.expressions.functionattribute#Telerik_Reporting_Expressions_FunctionAttribute_IsVisible) property set to `False`, none of the methods in this class will be loaded.
+* If a type is decorated with the Function attribute and has its [IsVisible](/api/telerik.reporting.expressions.functionattribute#Telerik_Reporting_Expressions_FunctionAttribute_IsVisible) property set to `True`, all methods in it, except for the ones decorated with IsVisible = False, will be loaded.
 
 ## Providing metadata for functions
 

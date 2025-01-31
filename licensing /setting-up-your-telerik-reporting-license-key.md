@@ -2,7 +2,7 @@
 title: Setting Up Telerik Reporting License Key
 page_title: "Learn how to set up the Telerik Reporting License Key."
 slug: license-key
-tags: license,key, telerik, reporting
+tags: license, key, telerik, reporting
 published: True
 position: 1
 ---
@@ -70,6 +70,6 @@ Whenever you purchase a new license or renew an existing one, always [download](
 
 # See Also
 
-* [License Activation Errors and Warnings]()
+* [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
 * [Adding the License Key to CI Services]({%slug license-key-ci-services%}))
-* [Frequently Asked Questions about Your [Telerik Reporting License Key]()
+* [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})

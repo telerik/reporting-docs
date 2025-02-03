@@ -15,11 +15,11 @@ The implementation of the 2025 product licensing requirements will occur in two 
 
 * Phase 1 - Starting with the 2025 Q1 release, a missing or invalid license logs a warning in the build log.
 * Phase 2 - Starting with the 2025 Q2 release, a missing, expired, or invalid license will result in:
-  - A watermark appearing on application startup.
-  - A modal dialog appearing on application startup. Clicking the **OK** button of the dialog closes the dialog and removes the banner until the next application startup.
+  
+  - A watermark appearing on each report document page.
   - A warning message appearing in the build log:
   
-  .............
+    `.............`
 
 ## Invalid License
 
@@ -36,6 +36,7 @@ An invalid license can be caused by any of the following:
 
 Using the Telerik Reporting in a project with an expired or missing license, the `Telerik.Licensing` build task will indicate the following errors:
 
+`...........`
 
 In addition, the following conditions will be logged:
 

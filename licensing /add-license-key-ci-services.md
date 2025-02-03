@@ -13,8 +13,6 @@ This article describes how to set up and activate your Telerik Reporting [licens
 
 When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet package as a project dependency. This package activates Telerik Reporting at build time by using the provided license key.
 
-> If you cannot use NuGet packages in your project, see the workaround in the [Adding Your License Key to CI Platforms as a Code Snippet](.............) KB article.
-
 The license activation process in a CI/CD environment involves the following steps:
 
 1. [Download]({%slug license-key%}#downloading-the-license-key) a license key from [your Telerik account](https://www.telerik.com/account/your-licenses/license-keys).

@@ -11,12 +11,12 @@ position: 1
 
 Starting with the Q1 2025 release, Telerik Reporting requires activation through a license key (trial or commercial). This article describes how to download or update your personal license key and use it to activate the Telerik Reporting product.
 
-An invalid license results in [errors and warnings](LINK TO ARTICLE) during build and run-time indicators such as watermarks and banners.
+An invalid license results in [errors and warnings]({%slug license-errors-and-warnings%}) during build and run-time indicators such as watermarks and banners.
 
 The implementation of the 2025 licensing requirements will occur in two phases:
 
-- Phase 1 - Starting with the 2025 Q1 release, a missing or invalid license causes [warnings during build](#license-activation-errors-and-warnings). The commercial distributions of the libraries do not exhibit any functional restrictions.
-- Phase 2 - Starting with the 2025 Q2 release, a missing or invalid license will result in [build errors and run-time indicators](#license-activation-errors-and-warnings), such as watermarks and banners.
+- Phase 1 - Starting with the 2025 Q1 release, a missing or invalid license causes [warnings during build]({%slug license-errors-and-warnings%}). The commercial distributions of the product do not exhibit any functional restrictions.
+- Phase 2 - Starting with the 2025 Q2 release, a missing or invalid license will result in [build errors and run-time indicators]({%slug license-errors-and-warnings%}), such as watermarks and banners.
 
 Note that future updates of the product may restrict or disable some features when no valid license is present. You can send us feedback through the _Contact Us_ form or by [opening a support ticket](https://www.telerik.com/account/support-center/contact-us?utm_source=licensing&utm_medium=console&utm_campaign=no_references).
 
@@ -24,9 +24,9 @@ Note that future updates of the product may restrict or disable some features wh
 
 You need to install the package `<PackageReference Include="Telerik.Licensing" Version="1.*" />`.
 
-We strongly recommend the above package for licensing. If this is not an option in your scenario, you may [add a License Key without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
+We strongly recommend the above package for licensing. If adding the package is not an option in your scenario, you may [add a License Key without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
 
->tip We recommend using Telerik Reporting NuGet packages in your projects rather than direct assembly references. The main reason is that the packages add automatically all dependencies, whereas when using references you need to add them manually. This is not related to the licensing and it will work with both approaches.
+>tip We recommend using Telerik Reporting NuGet packages in your projects rather than direct assembly references. The main reason is that the packages add automatically all dependencies, whereas when using references you need to add them manually. The advice is not related to the licensing that will work with both approaches for adding Telerik Reporting to your projects.
 
 ## Downloading the License Key
 
@@ -37,7 +37,7 @@ To download a license key for Telerik Reporting, you must have either a develope
 
 	![Download License Key](images/download-license-key.png)
 
-	The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel), automated MSI installer, and the Visual Studio Extensions (if available) of each product will automatically download and store your license key in your home directory. This makes it available for all projects that you develop on your local machine.
+	The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel), automated MSI installer, and the Visual Studio Extensions of Telerik Reporting will automatically download and store your license key in your home directory. This makes it available for all projects you develop on your local machine.
 
 ## Activating Telerik Reporting
 

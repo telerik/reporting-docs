@@ -38,7 +38,6 @@ This depends on your license type.
 * __Trial licenses__ will prevent you from building or running the application. The following will happen if you try to build or run the application:
 
 	- A watermark appears on application startup.
-	- A modal dialog appears on application startup.
 	- A warning message similar to the following is logged in the build log.
     See the [Invalid License]() section for more information.
 

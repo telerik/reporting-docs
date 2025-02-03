@@ -26,20 +26,20 @@ You will need to obtain and install a new license key after starting a trial, re
 
 This depends on your license type.
 
-* __Perpetual licenses__ will continue to function normally with an expired license key. However, the following will happen if you update or install a package version which is released after the expiration date of the license:
+* __Perpetual licenses__ will continue to function normally with an expired license key. However, the following will happen if you update or install a package version that is released after the expiration date of the license:
 
 	- A watermark appears on application startup.
-	- A modal dialog appears on application startup.
 	- A warning message is logged in the build log.
   
-	See the [Invalid License]() section for more information.
+	See the [Invalid License]({%slug license-errors-and-warnings%}#invalid-license) section for more information.
 	
 * __Subscription licenses__ will prevent you from building the application with an expired license key. Deployed applications will continue to function normally.
 * __Trial licenses__ will prevent you from building or running the application. The following will happen if you try to build or run the application:
 
 	- A watermark appears on application startup.
 	- A warning message similar to the following is logged in the build log.
-    See the [Invalid License]() section for more information.
+
+	See the [Invalid License]({%slug license-errors-and-warnings%}#invalid-license) section for more information.
 
 Note that future updates of the library may restrict or disable some features when no valid license is present.
 
@@ -83,7 +83,7 @@ To enforce the use of the license key file, unset the environment variable.
 
 ## Are earlier versions of Telerik Reporting affected?
 
-No, versions released prior to _January 2025_ do not require a license key.
+No, versions released before _January 2025_ do not require a license key.
 
 ## [2025 Q2] What happens if I make a change to non-Telerik parts of the code after the subscription expires?
 This depends on your license:

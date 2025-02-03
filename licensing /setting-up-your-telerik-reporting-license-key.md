@@ -15,12 +15,18 @@ An invalid license results in [errors and warnings](LINK TO ARTICLE) during buil
 
 The implementation of the 2025 licensing requirements will occur in two phases:
 
->important Please install **&lt;PackageReference Include="Telerik.Licensing" Version="1.*" /&gt;**.
-
 - Phase 1 - Starting with the 2025 Q1 release, a missing or invalid license causes [warnings during build](#license-activation-errors-and-warnings). The commercial distributions of the libraries do not exhibit any functional restrictions.
 - Phase 2 - Starting with the 2025 Q2 release, a missing or invalid license will result in [build errors and run-time indicators](#license-activation-errors-and-warnings), such as watermarks and banners.
 
 Note that future updates of the product may restrict or disable some features when no valid license is present. You can send us feedback through the _Contact Us_ form or by [opening a support ticket](https://www.telerik.com/account/support-center/contact-us?utm_source=licensing&utm_medium=console&utm_campaign=no_references).
+
+## Licensing Dependencies
+
+You need to install the package `<PackageReference Include="Telerik.Licensing" Version="1.*" />`.
+
+We strongly recommend the above package for licensing. If this is not an option in your scenario, you may [add a License Key without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
+
+>tip We recommend using Telerik Reporting NuGet packages in your projects rather than direct assembly references. The main reason is that the packages add automatically all dependencies, whereas when using references you need to add them manually. This is not related to the licensing and it will work with both approaches.
 
 ## Downloading the License Key
 

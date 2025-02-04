@@ -31,8 +31,7 @@ This depends on your license type.
 	- A watermark appears on each report document page.
 	- A warning message is logged in the build log:
 
-		````
-Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License file found.
+		Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License file found.
 		Telerik and Kendo UI Licensing warning TKL002: The following locations were searched:
 		Telerik and Kendo UI Licensing warning TKL002:  * TELERIK_LICENSE (EnvironmentVariable)
 		Telerik and Kendo UI Licensing warning TKL002:  * KENDO_UI_LICENSE (EnvironmentVariable)
@@ -57,9 +56,8 @@ Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License f
 		Telerik and Kendo UI Licensing warning TKL002: Activate a License Key file at https://prgress.co/3PBSVoC
 		Telerik and Kendo UI Licensing warning TKL101: Telerik Reporting is not listed in your current license file.
 		Telerik and Kendo UI Licensing warning TKL004: Unable to locate licenses for all products.
-````
 
-	
+
 * __Subscription licenses__ will prevent you from building the application with an expired license key. Deployed applications will continue to function normally.
 * __Trial licenses__ will prevent you from building or running the application. The following will happen if you try to build or run the application:
 

@@ -59,8 +59,6 @@ Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License f
 		Telerik and Kendo UI Licensing warning TKL004: Unable to locate licenses for all products.
 ````
 
-  
-	See the [Invalid License]({%slug license-errors-and-warnings%}#invalid-license) section for more information.
 	
 * __Subscription licenses__ will prevent you from building the application with an expired license key. Deployed applications will continue to function normally.
 * __Trial licenses__ will prevent you from building or running the application. The following will happen if you try to build or run the application:
@@ -97,7 +95,7 @@ Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License f
 ````
 
 
-	See the [Invalid License]({%slug license-errors-and-warnings%}#invalid-license) section for more information.
+See the [Invalid License]({%slug license-errors-and-warnings%}#invalid-license) section for more information.
 
 Note that future updates of Telerik Reporting may restrict or disable some features when no valid license is present.
 

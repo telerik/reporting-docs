@@ -12,6 +12,9 @@ exclude: [README.md,Gemfile,Gemfile.lock,api_sort.rb,build_kb.rb,switch-ruby.cmd
 exclude_navigation: ["knowledge-base/*","embedding-reports/host-the-report-engine-remotely/telerik-reporting-wcf-service/*","embedding-reports/display-reports-in-applications/silverlight-application/*","embedding-reports/host-the-report-engine-remotely/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-3.1","embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-3.1-application","designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-core-2.1-application","embedding-reports/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs","embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/*"]
 navigation:
 ## List your directory names and order here, like this:
+    licensing:
+          position: 25
+          title: "Licensing"
     getting-started:
         position: 10
         title: "Getting Started"

@@ -28,10 +28,37 @@ This depends on your license type.
 
 * __Perpetual licenses__ will continue to function normally with an expired license key. However, the following will happen if you update or install a package version that is released after the expiration date of the license:
 
-	- A watermark appearing on each report document page.
+	- A watermark appears on each report document page.
 	- A warning message is logged in the build log:
 
-		`..........`
+		````
+Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License file found.
+		Telerik and Kendo UI Licensing warning TKL002: The following locations were searched:
+		Telerik and Kendo UI Licensing warning TKL002:  * TELERIK_LICENSE (EnvironmentVariable)
+		Telerik and Kendo UI Licensing warning TKL002:  * KENDO_UI_LICENSE (EnvironmentVariable)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Examples\CSharp\.NET 6\WinFormsIntegrationDemo\telerik-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Examples\CSharp\.NET 6\WinFormsIntegrationDemo\kendo-ui-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Examples\CSharp\.NET 6\telerik-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Examples\CSharp\.NET 6\kendo-ui-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Examples\CSharp\telerik-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Examples\CSharp\kendo-ui-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Examples\telerik-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Examples\kendo-ui-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\telerik-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\kendo-ui-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\telerik-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\Progress\kendo-ui-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\telerik-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Program Files (x86)\kendo-ui-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\telerik-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\kendo-ui-license.txt (RecursiveFilePath)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Users\user1\AppData\Roaming\Telerik\telerik-license.txt (UserDirectory)
+		Telerik and Kendo UI Licensing warning TKL002:  * C:\Users\user1\AppData\Roaming\Telerik\kendo-ui-license.txt (UserDirectory)
+		Telerik and Kendo UI Licensing warning TKL002: Activate a License Key file at https://prgress.co/3PBSVoC
+		Telerik and Kendo UI Licensing warning TKL101: Telerik Reporting is not listed in your current license file.
+		Telerik and Kendo UI Licensing warning TKL004: Unable to locate licenses for all products.
+````
+
   
 	See the [Invalid License]({%slug license-errors-and-warnings%}#invalid-license) section for more information.
 	

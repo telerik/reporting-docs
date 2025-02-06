@@ -22,9 +22,35 @@ Note that future updates of the product may restrict or disable some features wh
 
 ## Licensing Dependencies
 
-You need to install the package `<PackageReference Include="Telerik.Licensing" Version="1.*" />`.
+You need to install the package `Telerik.Licensing`. We recommend using the [NuGet Package Manager in Visual Studio](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio). It automatically adds all the required code to your project files. Here are the changes it will make, depending on the project type:
 
-We strongly recommend the above package for licensing. If adding the package is not an option in your scenario, you may [add a License Key without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
+### The older .NET Framework project types
+
+* Add package reference to the `packages.config` file:
+
+	````XML
+<package id="Telerik.Licensing" version="1.*" targetFramework="net4*" />
+````
+ 
+
+* Update the `cproj` file with the DLL reference:
+
+	````XML
+<Reference Include="Telerik.Licensing, Version=1.*, Culture=neutral, PublicKeyToken=*, processorArchitecture=MSIL">
+		<HintPath>..\..\packages\Telerik.Licensing\lib\net4*\Telerik.Licensing.dll</HintPath>
+	</Reference>
+````
+
+
+### .NET project types
+
+Update the `cproj` file like below:
+
+````XML
+<PackageReference Include="Telerik.Licensing" Version="1.*" />
+````
+
+We strongly recommend adding the above package for licensing. If adding the package is not an option in your scenario, you may [add a License Key without NuGet References](#adding-a-license-key-to-projects-without-nuget-references).
 
 >tip We recommend using Telerik Reporting NuGet packages in your projects rather than direct assembly references. The main reason is that the packages add automatically all dependencies, whereas when using references you need to add them manually. The advice is not related to the licensing that will work with both approaches for adding Telerik Reporting to your projects.
 

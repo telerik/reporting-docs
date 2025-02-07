@@ -40,7 +40,7 @@ __GraphQL Request Configuration:__
 |Query|The GraphQL query to be executed against the GraphQL service. This query should be written in the GraphQL query language and must conform to the schema defined by the GraphQL service. For more information on writing GraphQL queries, refer to the [GraphQL documentation](https://graphql.org/learn/queries/).|
 |Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL query with an expression result or static value.|
 
-# todo: add information about the limitation - no variables support/can use inline parameters though
+# todo: add information about the limitation - no variables support except for pagination (https://graphql.org/learn/pagination/)/can use inline parameters though
 
 __Inline Data String Configuration:__
 

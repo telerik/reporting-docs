@@ -5,7 +5,7 @@ description: "Learn how to make the Telerik Reporting end-user experience more f
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/interactive-action-events
 tags: interactive,action,events
 published: True
-position: 8
+position: 100
 previous_url: /designing-reports-interactive-action-events
 ---
 

@@ -5,7 +5,7 @@ description: "Learn more about how the end-user can interact with the report to 
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/bookmark-action
 tags: bookmark,action
 published: True
-position: 4
+position: 40
 previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-bookmark-action, /designing-reports-interactivity-bookmark-action, /designing-reports-interactivity-how-to-add-bookmark
 ---
 

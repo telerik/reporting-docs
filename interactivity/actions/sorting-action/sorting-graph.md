@@ -5,7 +5,7 @@ description: "Learn how the Graph item can be ordered dynamically in Telerik Rep
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-graph
 tags: sorting,graph
 published: True
-position: 4
+position: 40
 previous_url: /interactive-sorting-action-graph
 ---
 

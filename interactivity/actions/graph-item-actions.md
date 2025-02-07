@@ -5,7 +5,7 @@ description: "Learn how actions can be integrated with the Graph report item's C
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/graph-item-actions
 tags: graph,item,actions
 published: True
-position: 6
+position: 60
 previous_url: /designing-reports-interactivity-graph-item
 ---
 

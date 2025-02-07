@@ -6,7 +6,7 @@ slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions
 previous_url: /designing-reports/report-sources/how-to-set-reportsource-for-navigatetoreport-action, /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-drillthrough-navigate-to-report-action, /designing-reports-interactivity-drill-through-report-links, /designing-reports-interactivity-how-to-add-drillthrough-action
 tags: drillthrough,report,action
 published: True
-position: 3
+position: 30
 ---
 
 # Drillthrough/Navigate To Report Action

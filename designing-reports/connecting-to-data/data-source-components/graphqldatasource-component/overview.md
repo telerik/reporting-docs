@@ -18,9 +18,7 @@ table th:nth-of-type(2) {
 
 # GraphQLDataSource Component
 
-The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to display data, returned in JSON format, from a GraphQL service. At design time, the component can be configured using the [GraphQL Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%}) in the Standalone or Visual Studio Report Designer. As of now, the Web Report Designer does not feature a wizard, but the data source can be configured through the ({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}#web-report-designer-elements)[Properties Area]. At run time, it automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
-
-The GraphQL service may omit properties with empty values in the data response to save bandwidth. The result is that not all of the objects have the same list of properties. Due to this, no errors will be shown in the report if an undefined data field name is used inside an expression.
+The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQL Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%}) in the Standalone and the Visual Studio Report Designer. As of now, the Web Report Designer does not feature a wizard, but the data source can be configured through the ({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}#web-report-designer-elements)[Properties Area]. At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
 
 The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.
 
@@ -39,8 +37,6 @@ __GraphQL Request Configuration:__
 |Encoding|Data encoding. The default is UTF-8.|
 |Query|The GraphQL query to be executed against the GraphQL service. This query should be written in the GraphQL query language and must conform to the schema defined by the GraphQL service. For more information on writing GraphQL queries, refer to the [GraphQL documentation](https://graphql.org/learn/queries/).|
 |Parameters|The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL query with an expression result or static value.|
-
-# todo: add information about the limitation - no variables support except for pagination (https://graphql.org/learn/pagination/)/can use inline parameters though
 
 __Inline Data String Configuration:__
 
@@ -81,7 +77,7 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 |Password|The password used to authenticate. Optional. The username and password are needed only when the Login URL uses Basic Authentication to retrieve the authentication token/key.|
 |Response|Specifies the type of the expected response from the Login URL. JSON and plain text are supported.|
 |Login Method|Specifies the HTTP request method to be used.|
-|Body|The body of the login HTTP request. Applicable only for POST HTTP request method. Needed for some authentication schemes such as OAuth 2.0 Password Grant.<br/>Example: *grant_type=password&username=user@example.com&password=12345* |
+|Body|The body of the login HTTP request. Needed for some authentication schemes such as OAuth 2.0 Password Grant.<br/>Example: *grant_type=password&username=user@example.com&password=12345* |
 |Token Path|This is a __regular expression__ that allows retrieving the authentication or session key from the response received via the Login URL. For example, when the Login URL returns a JSON response containing the authentication token in the form:<br/>*{"access_token":"cbm9W3MeTeVPuO5CIq_DTvG5KbzydpRQ","token_type":"bearer","expires_in":1799,"userName":"demouser",".issued":"Tue, 15 May 2018 08:42:32 GMT",".expires":"Tue, 15 May 2018 09:12:32 GMT"}*<br/>the token path regular expression to retrieve the token would be `(?:"access_token"\s*:\s*")([^"]*)(?:")*`<br/> __Leaving this field empty will include the entire login-response as a token.__ |
 |Logout URL|This URL is called if the resource features a lockout for having too many sessions open. Refresh the report and try again after successfully logging out.|
 |Logout Method|Specifies the HTTP request method used for the Logout URL.|
@@ -102,3 +98,5 @@ It is possible to leverage the 2-step Authentication mechanism above to retrieve
 ## See Also
 
 * [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%})
+* [Using JSONPath to Filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/how-to-use-jsonpath-to-filter-json-data%})
+* [Using Parameters with GraphQLDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/using-parameters-with-the-graphqldatasource-component%})

@@ -13,6 +13,14 @@ previous_url: /graphqldatasource-service-data-source-using-parameters
 
 The `GraphQLDataSource` component can request data in JSON format from a running GraphQL service. It requires the base URL of the service specified in the `Service URL` property, as well as a GraphQL query in the `Query` property. The GraphQLDataSource can take parameters. The supported data source parameter types are:
 
+* [Inline Parameters](#inline-parameters)
+* [Query Parameters](#query-parameters)
+* [Header Parameters](#header-parameters)
+* [Cookie Parameters](#cookie-parameters)
+
+>caution Currently, Telerik Reporting supports variables only for the built-in pagination fields, for more information check the section [Cursor-Based Pagination Support](#cursor-based-pagination-support).
+> For other dynamic values in your GraphQL query, use [inline parameters](#inline-parameters) instead. 
+
 ## Inline Parameters
 
 The values of this parameter type replace the corresponding part of the `Service URL`, and can be included in the the GraphQL query of the request.
@@ -23,60 +31,80 @@ In the [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/repo
 
 ![The ServiceUrl of the GraphQL configured with an inline parameter](images/GraphQLDataSourceUrl.png)
 
-In the next step of the Wizard it is necessary to set the run-time and the design-time values for the parameter:
+In the next step of the wizard, it is necessary to set the run-time and the design-time values for the parameter:
 
-![Set the Inline parameter value in the WebServiceDataSource Wizard](images/GraphQLDataSourceInlineParameterEndpoint.png)
+![Set the Inline parameter value in the GraphQLDataSource Wizard](images/GraphQLDataSourceInlineParameterEndpoint.png)
 
 The entire Service URL can also be set to a GraphQLDataSource parameter, for example to `@serviceUrl`. This allows for larger flexibility in using different end-points of a GraphQL Service, or even different GraphQL Services for the same data item.
 
 ### Using Inline Parameters in the GraphQL Query
 
-The single-value parameter should be surrounded by quotation marks. The multi-value parameter is provided as it is. For example, in the next set-up, `@name` is a single-value parameter and `@surname` is a multi-value parameter:
+When you inject string values from inline parameters into a GraphQL query, the `GraphQLDataSource` does not include quotation marks around them. This allows you to use inline parameters to replace field names, type values, and so on. However, if you want to use these values as string literals, you need to add the quotation marks manually. For example, in the next set-up, `"@name"` is a string literal, `@status` is an enum value, and `@data` is a field name:
 
-![The ServiceUrl of the WebServiceDataSource configured as a constant and inline parameters provided in the body of the request](images/WebServiceDataSourceUrlBodyx750.png)
+![Inline parameters provided in the query of the GraphQLDataSource. The "name" parameter is used for a string literal, the "status" is used for an enum value, and the "data" parameter serves to specify a field name.](images/GraphQLDataSourceQueryInlineParameters.png)
 
-It is necessary to provide an additional Header "Content-Type" with the value "application/json". Generally, the Header Names are case-insensitive. The 'Content-Type' header that is needed for the POST requests is case-sensitive.
+In this example, the inline parameters are configured as follows:
 
-The multi-value parameter run-time and design-time values should be surrounded in square brackets to indicate an array:
+![Inline parameters for "name", "status", and "data", configured in the GraphQLDataSource Wizard.](images/GraphQLDataSourceInlineParameters.png)
 
-![Set the Inline parameter values and the required header parameter Content-Type in the WebServiceDataSource Wizard](images/WebServiceDataSourceInlineParameterBodyx750.png)
+Finally, during design time, these inline parameters get resolved as follows in the end GraphQL query:
 
-The final request performed by the WebServiceDataSource component with the design-time values as seen in Fiddler:
-
-![The request performed by the WebServiceDataSource component with the design-time Inline parameter values from the body and the Header parameter Content-Type as seen in Fiddler](images/WebServiceDataSourceInlineParameterRequestUrlBodyx750.png)
+| **Parameter** | **Resolved to in the Query**              |
+|---------------|-------------------------------------------|
+| @data         | url                                       |
+| @status       | CLOSED                                    |
+| "@name"       | "reporting"                               |
 
 ## Query Parameters
 
-The query type parameters will be automatically concatenated to the Service URL. The final URL will be in the format `serviceUrl?queryParameterName1=value1&queryParameterName2=value2&...`.
+The query type parameters are automatically concatenated to the Service URL. The final URL will be in the format `serviceUrl?queryParameterName1=value1&queryParameterName2=value2&...`. This is especially helpful if the GraphQL service supports REST-like behavior for handling query parameters alongside GraphQL queries. 
 
-For example, in a Web Api project to call the Action `GetWithQueryParameters(int id, string category)` the default service URL will be `http://localhost:50160/api/data/GetWithQueryParameters`. The images display how to set the query parameters in the Web Service Data Source Wizard of the Report Designer:
+Below is an example of how query parameters can be configured in the GraphQLDataSource Wizard.
 
-![Set the Query parameter values in the WebServiceDataSource Wizard](images/WebServiceDataSourceQueryParameterx750.png)
+![Set the Query parameter values in the WebServiceDataSource Wizard](images/GraphQLDataSourceQueryParameter.png)
 
-and how will the generated final URL for the design-time parameter values look in Fiddler:
-
-![The request performed by the WebServiceDataSource component with the design-time Query parameter values as seen in Fiddler](images/WebServiceDataSourceQueryParameterRequestUrlx750.png)
+In this example, if the service URL for this GraphQLDataSource component was `http:\\localhost:50000\graphql`, the HTTP request during design time would be sent to `http:\\localhost:50000\graphql?userId=12345`.
 
 ## Header Parameters
 
-The parameter will be included as a `Header` in the request with Header Name the name of the parameter, and Header Value the value of the parameter. A setup in the Web Service Data Source Wizard like:
+Header parameters are sent as [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) within the request. The name of each header parameter corresponds to the name of the HTTP header, while the value of the parameter corresponds to the value of the HTTP header. A common use case for this type of parameter is attaching HTTP headers, such as [Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) required by the GraphQL service to allow access to protected resources. For example, a setup in the GraphQLDataSource Wizard could look as follows:
 
-![Set the Header parameter value in the WebServiceDataSource Wizard](images/WebServiceDataSourceHeaderParameterx750.png)
+![An Authorization HTTP header set in the GhaphSQLDataSource Wizard.](images/GraphQLDataSourceHeaderParameter.png)
 
-will result in a request with the Header named `headerParameter` and value `MyHeader` for its design-time values:
+This results in an HTTP request that includes the `Authorization` header with the value `Bearer YOUR_AUTHORIZATION_TOKEN` during design time, as you can see in [Fiddler Everywhere](https://www.telerik.com/fiddler/fiddler-everywhere):
 
-![The request performed by the WebServiceDataSource component with the design-time Header parameter value as seen in Fiddler](images/WebServiceDataSourceHeaderParameterRequestUrlx750.png)
+![A request performed by the GraphQLDataSource component and captured by Fiddler. The request has an Authorization HTTP header.](images/AuthorizationTokenFiddlerEverywhere.png)
 
 ## Cookie Parameters
 
-The parameter will be included as a Header `Cookie` in the request. For example, the parameter setup in the Web Service Data Source Wizard as:
+Cookie parameters are included in the [Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie) of the HTTP request. They're especially helpful if the GraphQL service requires certain cookies for session management, or to maintain state between requests. For example, if you have a parameter setup in the GraphQLDataSource Wizard, such as:
 
-![Set the Cookie parameter value in the WebServiceDataSource Wizard](images/WebServiceDataSourceCookieParameterx750.png) 
+![A session cookie set through the GhaphSQLDataSource Wizard.](images/GraphQLDataSourceCookieParameter.png) 
 
-for its design-time values will result in a request with a `Cookie` Header as captured by Fiddler:
+During design time, the HTTP request sent to the GraphQL service will include the cookie, as indicated in the [Fiddler Everywhere](https://www.telerik.com/fiddler/fiddler-everywhere) snapshot:
 
-![The request performed by the WebServiceDataSource component with the design-time Cookie parameter value as seen in Fiddler](images/WebServiceDataSourceCookieParameterRequestUrlx750.png)
+![A request performed by the GraphQLDataSource component and captured by Fiddler. There is a session cookie appended to it.](images/CookieSessionFiddlerEverywhere.png)
+
+## Cursor-Based Pagination Support
+
+The GraphQLDataSource component includes automatic support for cursor-based pagination in GraphQL queries. Instead of retrieving all items in one massive request, it allows you to fetch data in manageable chunks, using a *cursor*. This approach can prevent performance issues as large one-off requests can cause slowdowns of timeouts. When your GraphQL query references an `after` argument (or similar pagination fields), Telerik Reporting detects that the query is using cursor-based pagination and automatically:
+
+1. Extracts the `endCursor` value from the `pageInfo` object returned in the GraphQL response.
+1. Injects that value into the next request’s `variables` object.
+1. Continues paginating as long as `hasNextPage` is `true`.
+
+Below is an example of a query that uses cursor-based pagination.
+
+![A query that uses cursors for pagination.](images/GraphQLDataSourceQueryCursor.png)
+
+In this case, the GraphQLDataSource component automatically sends consecutive requests to retrieve data in batches. It continues making requests as long as there are more items to fetch, determined by the `pageInfo.hasNextPage` field in each response. After it retrieves all available data, the component seamlessly merges the results into a single, unified response.
+
+![Multiple requests captured by Fiddler Everywhere.](images/FiddlerEverywhereMultipleRequestsCursors.png)
+
+>tip The variable name does not matter—Telerik Reporting identifies the pagination pattern by analyzing the query argument `(after: $someVariable)` and the response fields (`pageInfo.endCursor`, `pageInfo.hasNextPage`).
 
 ## See Also
 
-* [Using Parameters with Data Source objects]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/using-parameters-with-data-source-objects%})
+* [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%})
+* [Using JSONPath to Filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/how-to-use-jsonpath-to-filter-json-data%})
+* [Using Parameters with GraphQLDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/using-parameters-with-the-graphqldatasource-component%})

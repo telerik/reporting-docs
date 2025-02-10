@@ -54,6 +54,24 @@ foreach (var sqlDataSource in sqlDS)
 
 var irs = new InstanceReportSource() { ReportDocument = report };
 ````
+````VB.NET
+Dim query As String = "SQL_QUERY_HERE"
+Dim reportPackager As New ReportPackager()
+Dim report As Telerik.Reporting.Report = Nothing
+
+Using sourceStream As FileStream = File.OpenRead("Report1.trdp")
+    report = CType(reportPackager.UnpackageDocument(sourceStream), Telerik.Reporting.Report)
+End Using
+
+Dim sqlDS As IEnumerable(Of SqlDataSource) = report.GetDataSources().OfType(Of SqlDataSource)()
+
+For Each sqlDataSource As SqlDataSource In sqlDS
+    sqlDataSource.ConnectionString = "CONNECTION_STRING_HERE"
+    sqlDataSource.SelectCommand = query
+Next
+
+Dim irs As New InstanceReportSource() With {.ReportDocument = report}
+````
 
 
 ## Notes

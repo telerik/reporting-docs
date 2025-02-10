@@ -59,7 +59,7 @@ Dim query As String = "SQL_QUERY_HERE"
 Dim reportPackager As New ReportPackager()
 Dim report As Telerik.Reporting.Report = Nothing
 
-Using sourceStream As FileStream = File.OpenRead("C:\Program Files (x86)\Progress\Telerik Reporting 2024 Q4\Report Designer\Examples\Invoice.trdp")
+Using sourceStream As FileStream = File.OpenRead("Report1.trdp")
     report = CType(reportPackager.UnpackageDocument(sourceStream), Telerik.Reporting.Report)
 End Using
 

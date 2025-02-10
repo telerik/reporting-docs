@@ -29,11 +29,14 @@ The suggestions in this section are the responsibility of the developer embeddin
 * The [Report Definitions]({%slug on-telerik-reporting%}#report-definition) gets instantiated by the Reporting Engine in runtime. The developer should ensure they come from trusted sources and don't contain malicious code.
 * The _Type_ report definitions are instantiated with reflection from the provided assembly. The advice from the section [Extending Telerik Reporting](#extending-telerik-reporting) is valid for these reports. Note that the assemblies with _Type_ reports don't require registration in the _assemblyReference_ of the configuration. It is the responsibility of the developer to ensure they don't threaten the environment.
 * The declarative report definitions (_TRDP_, _TRDX_, and _TRBP_ files) describe the report layout with XML code. The Reporting Engine [unpackages]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/package-report-definition%}) or [deserializes]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/serialize-report-definition-in-xml%}) them to make the required [Telerik.Reporting.Report](/api/telerik.reporting.report) instance. The developer should ensure no content may result in malicious executable code that may result in a security breach.
+
+ 	Starting with 2025 Q1, only report source paths within the application base folder can be resolved by default. This is determined by the `validateReportPaths` (optional, boolean, __enabled__ by default) attribute of the configuration [processing Element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/processing-element%}). We recommend keeping the `true` value of `validateReportPaths`. To resolve report paths outside the application folder, set the attribute to _false_ and ensure no malicious agents may access your report definitions.
+  
 * The Reporting Engine fetches the data from the [DataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) based on its properties. For example, the [SqlDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) provides a connection string, data provider, and a command, which may be an inline query or stored procedure name. The connection is delegated entirely to the specified provider and relies on the connection string. Our recommendation:
 
 	- use data connections with the least necessary permissions
 
-	Data is fetched by the data provider by executing the command. Ensure the user doesn't have permissions, for example, to delete information from the data tables.
+	Data is fetched by the data provider by executing the command. Ensure the user doesn't have permission, for example, to delete information from the data tables.
 
 	- do not include connection strings and credentials in report files
 

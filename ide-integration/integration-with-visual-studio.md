@@ -1,13 +1,13 @@
 ---
 title: Integration with Visual Studio
-page_title: Integration with Visual Studio
-description: Integration with Visual Studio
+page_title: Using Visual Studio Extensions
+description: Learn how to facilitate the development process for Telerik Reporting with the Visual Studio Extensions.
 slug: reporting-integration-with-visual-studio
-tags: integration,visual,studio,reporting,configure,wizard
+tags: integration,visual,studio,reporting,configure,wizard, extension
 published: True
 position: 0
 ---
-# Integration with Visual Studio
+# Visual Studio Extensions
 
 The **Visual Studio Extensions** for the **Telerik Reporting** product aim to help developers when creating applications with Telerik Reporting. They can be accessed through the *Extensions | Telerik | Reporting* menu.
 

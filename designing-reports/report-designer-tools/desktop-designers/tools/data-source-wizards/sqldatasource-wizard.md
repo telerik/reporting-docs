@@ -5,7 +5,7 @@ description: "Learn more about the SqlDataSource Wizard of the Telerik Reporting
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview
 tags: overview
 published: True
-position: 1
+position: 10
 previous_url: /sqlDataSource-wizard,/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/overview
 ---
 

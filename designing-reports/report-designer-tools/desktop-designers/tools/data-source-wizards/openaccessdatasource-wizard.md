@@ -5,7 +5,7 @@ description: "Learn more about the OpenAccessDataSource Wizard of the Telerik Re
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/openaccessdatasource-wizard
 tags: openaccessdatasource,wizard
 published: True
-position: 6
+position: 70
 previous_url: /openaccessdatasource-wizard
 ---
 

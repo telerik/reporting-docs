@@ -5,7 +5,7 @@ description: "Learn more about the CubeDataSource Wizard of the Telerik Reportin
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/cubedatasource-wizard
 tags: cubedatasource,wizard
 published: True
-position: 8
+position: 90
 previous_url: /cubedatasource-wizard
 ---
 

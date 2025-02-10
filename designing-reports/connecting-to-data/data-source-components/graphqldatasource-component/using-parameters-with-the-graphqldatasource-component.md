@@ -105,6 +105,6 @@ In this case, the GraphQLDataSource component automatically sends consecutive re
 
 ## See Also
 
+* [GraphQLDataSource Component Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview%})
 * [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%})
 * [Using JSONPath to Filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/how-to-use-jsonpath-to-filter-json-data%})
-* [Using Parameters with GraphQLDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/using-parameters-with-the-graphqldatasource-component%})

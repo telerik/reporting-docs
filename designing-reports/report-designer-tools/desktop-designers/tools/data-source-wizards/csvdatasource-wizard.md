@@ -5,7 +5,7 @@ description: "Learn more about the CsvDataSource Wizard of the Telerik Reporting
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/csvdatasource-wizard
 tags: csvdatasource,wizard
 published: True
-position: 3
+position: 30
 previous_url: /csvdatasource-wizard
 ---
 

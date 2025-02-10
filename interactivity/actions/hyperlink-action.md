@@ -5,7 +5,7 @@ description: "Learn how to make direct URL redirects from the Telerik Report to 
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/hyperlink-action
 tags: hyperlink,action
 published: True
-position: 5
+position: 50
 previous_url: /designing-reports/adding-interactivity-to-reports/actions/how-to/how-to-add-a-hyperlink-action, /designing-reports-interactivity-hyperlinks, /designing-reports-interactivity-how-to-add-hyperlink
 ---
 

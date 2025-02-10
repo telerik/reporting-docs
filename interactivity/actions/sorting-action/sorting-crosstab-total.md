@@ -5,7 +5,7 @@ description: "Learn how to order the Crosstab item's totals in Telerik Reporting
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-crosstab-total
 tags: sorting,crosstab,total
 published: True
-position: 2
+position: 20
 previous_url: /interactive-sorting-action-crosstab-total
 ---
 

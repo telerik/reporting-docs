@@ -5,7 +5,7 @@ description: "Learn how to interactively order the Report details in Telerik Rep
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-report-details
 tags: sorting,report,details
 published: True
-position: 5
+position: 50
 previous_url: /interactive-sorting-action-report-details
 ---
 

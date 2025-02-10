@@ -5,7 +5,7 @@ description: "Learn how to configure and use a Sorting Interactive Action for th
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/actions/sorting-action/sorting-table-details
 tags: sorting,table,details
 published: True
-position: 1
+position: 10
 previous_url: /interactive-sorting-action-table-details
 ---
 

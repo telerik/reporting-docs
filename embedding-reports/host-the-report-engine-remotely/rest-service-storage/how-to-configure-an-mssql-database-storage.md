@@ -95,6 +95,7 @@ This article explains how to configure an MSSQL Database for the Reporting REST 
 				}
 ````
 
+> The MSSQL storage relies on `System.Data.SqlClient` to connect to the provided database in .NET Framework applications, and on `Microsoft.Data.SqlClient` in .NET Core applications.
 
 ## See Also
 

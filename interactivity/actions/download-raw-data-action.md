@@ -14,7 +14,7 @@ The 'Download Raw Data' action allows the users to download the data associated 
 
 In contrast with the other interactive actions, the 'Download Raw Data' action is not configurable in the designer. It is automatically created per each data item when the report is processed. The action is represented by a download icon displayed in the top-right corner of the data item when the mouse cursor hovers within its bounds.
 
-![An image showing the download-raw-data action on a graph item.](images/download-raw-data-action-on-graph.png)
+![An image showing the download-raw-data action on a graph item.](../images/download-raw-data-action-on-graph.png)
 
 When triggered, the 'Download Raw Data' action will open a Save File dialog, asking for a location where the data will be saved. Upon confirmation, the data used for the data item's binding will be fetched from its data context and exported to the specified location in CSV format. 
 
@@ -30,7 +30,7 @@ The action is currently supported in [WinForms Report Viewer]({%slug telerikrepo
 
 The export logic of the action is reused in features available during the designing of a report. The context menu of all data items has a new item - 'Data Source Raw Data' - which will open the Preview page of the corresponding data source Wizard. The Preview page has a button that will fetch the data source's data and save it in a local file.
 
-![An image showing the download-raw-data action on a graph item at design-time.](images/download-raw-data-action-designer-context-menu.png)
+![An image showing the download-raw-data action on a graph item at design-time.](../images/download-raw-data-action-designer-context-menu.png)
 
 # See Also
 

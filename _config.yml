@@ -339,8 +339,11 @@ navigation:
     designing-reports/connecting-to-data/data-source-components/webservicedatasource-component:
         position: 12
         title: "WebServiceDataSource Component"
-    designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
+    designing-reports/connecting-to-data/data-source-components/graphqldatasource-component:
         position: 13
+        title: "WebServiceDataSource Component"
+    designing-reports/connecting-to-data/data-source-components/objectdatasource-component:
+        position: 14
         title: "ObjectDataSource Component"
     designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to:
         position: 15

@@ -50,13 +50,13 @@ Depending on the user's selection, the respective wizard is displayed, e.g. [Ban
 
 ## Upgrade Wizard
 
-The [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) allows you to upgrade Telerik Reporting to a newer version. It can be started by using the *Extensions > Telerik > Reporting > Upgrade Wizard* menu item:
+The [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) allows you to upgrade/downgrade a .NET Framework project to any installed Telerik Reporting version. It can be started by using the *Extensions > Telerik > Reporting > Upgrade Wizard* menu item:
 
 ![Start Upgrade Wizard](images/start-upgrade-wizard.png) 
 
-After [installing Telerik Reporting]({%slug telerikreporting/installation%}) you can benefit the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) which facilitates the creation of new reports and importing reports from other formats in the Designer.
+After [installing Telerik Reporting]({%slug telerikreporting/installation%}) you can benefit the [Visual Studio Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview%}) in a .NET Framework project which facilitates the creation of new reports and importing reports from other formats in the Designer.
 
-During the [installation process]({%slug telerikreporting/installation%}) of Telerik Reporting on your machine, the Telerik assemblies are added to Global Assemby Cache (GAC) as well. This enables the respective items in the Visual Studio Toolbox:
+During the [installation process]({%slug telerikreporting/installation%}) of Telerik Reporting on your machine, the Telerik assemblies are added to Global Assemby Cache (GAC) as well. This enables the respective items in the Visual Studio Toolbox for a .NET Framework project as well:
 
 ![Toolbox Items](images/toolbox-items.png) 
 

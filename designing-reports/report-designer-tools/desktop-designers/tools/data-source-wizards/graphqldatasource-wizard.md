@@ -84,6 +84,8 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 
 	!["Preview data source results" window of the GraphQLDataSource Wizard. On the left, there is a "Download" button, responsible for displaying the data. On the right, there is a text box allowing to configure the JSONPath data selector to further filter the result.](images/DataSources/graphql/preview-data-source-results.png)
 
+	| Setting | Description |
+	| ------ | ------ |
 	|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the data. For more information, refer to [How to Use JSONPath to filter JSON data]({%slug graphqldatasource-filter-json-data%}).|
 
 

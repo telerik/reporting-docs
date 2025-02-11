@@ -5,7 +5,7 @@ description: "Learn more about the JsonDataSource Component in Telerik Reporting
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component
 tags: jsondatasource,component
 published: True
-position: 2
+position: 7
 previous_url: /jsondatasource-component
 ---
 <style>

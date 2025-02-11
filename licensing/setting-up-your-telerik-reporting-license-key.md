@@ -24,9 +24,9 @@ Note that future updates of the product may restrict or disable some features wh
 
 Your projects have to reference the package `Telerik.Licensing`. We recommend using the [NuGet Package Manager in Visual Studio](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio). It automatically adds all the required code to your project files.
 
->tip We recommend using Telerik Reporting NuGet packages in your projects rather than direct assembly references. The main reason is that the packages add automatically all dependencies, whereas when using references you need to add them manually. The `Telerik.Licensing` package will be added automatically as a dependency for the `Telerik.Reporting` package.
+>tip We recommend using `Telerik Reporting` NuGet packages in your projects rather than direct assembly references. The main reason is that the packages add automatically all dependencies, whereas when using references you need to add them manually. The `Telerik.Licensing` package will be added automatically as a dependency for the `Telerik.Reporting` package.
 
-Here are the changes it will make, depending on the project type:
+Here are the changes the Visual Studio NuGet Package Manager will make, depending on the project type:
 
 ### The older .NET Framework project types
 
@@ -58,14 +58,17 @@ We strongly recommend adding the above package for licensing. If adding the pack
 
 ## Downloading the License Key
 
+To download a license key for Telerik Reporting, you must have either a developer license or a trial license. 
+
 The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) will automatically download and store your license key in your home directory. This makes it available for all projects you develop on your local machine.
 
 You may automatically download and store your license key in your home directory also from the Visual Studio Extensions of Telerik Reporting:
 
 ![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
 
-To download a license key for Telerik Reporting, you must have either a developer license or a trial license. If you are new, you can sign up for a [free trial](https://www.telerik.com/account/trials) first, and then follow the steps below.
+To download manually a license key for Telerik Reporting, you must follow the steps below:
 
+1. (_optional_) If you are new, you can sign up for a [free trial](https://www.telerik.com/account/trials) first.
 1. Go to the [License Keys](https://www.telerik.com/account/your-licenses/license-keys) page in your Telerik account.
 1. Click the **Download License Key** button.
 

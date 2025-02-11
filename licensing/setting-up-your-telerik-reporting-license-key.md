@@ -62,7 +62,7 @@ The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/cont
 
 You may automatically download and store your license key in your home directory also from the Visual Studio Extensions of Telerik Reporting:
 
-	![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extensions-download-key.png)
+![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extensions-download-key.png)
 
 To download a license key for Telerik Reporting, you must have either a developer license or a trial license. If you are new, you can sign up for a [free trial](https://www.telerik.com/account/trials) first, and then follow the steps below.
 

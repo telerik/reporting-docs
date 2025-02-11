@@ -5,7 +5,7 @@ description: "Learn more about the JsonDataSource Wizard of the Telerik Reportin
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/jsondatasource-wizard
 tags: jsondatasource,wizard
 published: True
-position: 2
+position: 20
 previous_url: /jsondatasource-wizard
 ---
 

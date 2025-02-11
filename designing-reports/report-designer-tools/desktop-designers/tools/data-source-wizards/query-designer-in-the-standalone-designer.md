@@ -5,7 +5,7 @@ description: "Learn more about the Query Designer in the Standalone Designer and
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer
 tags: query,designer,standalone,designer
 published: True
-position: 15
+position: 99
 previous_url: /sql-datasource-query-designer,/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/sqldatasource-wizard/query-designer-in-the-standalone-designer
 ---
 

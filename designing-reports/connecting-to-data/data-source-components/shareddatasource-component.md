@@ -5,7 +5,7 @@ description: "Learn more about the SharedDataSource Component in Telerik Reporti
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component
 tags: shareddatasource,component,shared,data,source,designer,report
 published: True
-position: 1
+position: 3
 ---
 <style>
 table th:first-of-type {

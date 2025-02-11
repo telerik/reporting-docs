@@ -5,7 +5,7 @@ description: "Learn how you may Reuse Data Source components across Telerik Repo
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/reuse-data-source-components-across-reports
 tags: reuse,data,source,components,across,reports
 published: True
-position: 13
+position: 35
 previous_url: /data-source-how-to-add-project-data-source
 ---
 

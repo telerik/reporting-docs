@@ -5,7 +5,7 @@ description: "Learn what are the Calculated Fields in Telerik Reporting and how 
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/calculated-fields
 tags: calculated,fields,report,use,create
 published: True
-position: 11
+position: 2
 previous_url: /datasource-calculated-fields
 ---
 

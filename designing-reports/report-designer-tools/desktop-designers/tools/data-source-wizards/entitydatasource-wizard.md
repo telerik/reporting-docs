@@ -5,7 +5,7 @@ description: "Learn more about the EntityDataSource Wizard of the Telerik Report
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/entitydatasource-wizard
 tags: entitydatasource,wizard,designer,data,item
 published: True
-position: 7
+position: 80
 previous_url: /entitydatasource-wizard
 ---
 

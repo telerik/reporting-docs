@@ -5,7 +5,7 @@ description: "Learn which data sources are available at design time, and which o
 slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/working-with-data-at-design-time
 tags: working,with,data,at,design,time
 published: True
-position: 10
+position: 30
 previous_url: /connecting-to-data-working-with-data-at-design-time
 ---
 

@@ -5,7 +5,7 @@ description: "Learn more about the WebServiceDataSource Wizard of the Telerik Re
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/webservicedatasource-wizard
 tags: webservicedatasource,wizard
 published: True
-position: 4
+position: 40
 previous_url: /webservicedatasource-wizard
 ---
 

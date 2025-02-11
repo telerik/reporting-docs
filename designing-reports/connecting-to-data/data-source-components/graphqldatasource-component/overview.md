@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 
 # GraphQLDataSource Component
 
-The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQL Wizard]({%slug desktop-graphqldatasource-wizard%}) in the [Standalone]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview %}) and the [Visual Studio Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview %}). As of now, the [Web Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}) does not feature a wizard, but the data source can be configured through the ({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}#web-report-designer-elements)[Properties Area]. At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
+The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%}) in the [Standalone]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview %}) and the [Visual Studio Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview %}). As of now, the [Web Report Designer]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}) does not feature a wizard, but the data source can be configured through the [Properties Area]({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}#web-report-designer-elements). At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
 
 The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.
 
@@ -30,7 +30,7 @@ __GraphQL Request Configuration:__
 | Setting | Description |
 | ------ | ------ |
 |Service URL|The URL the request is sent to. Returns the data from the GraphQL service. Required if inline data string or external data file is not set.<br/>__The service URL should not contain any query parameters. Query parameters can be configured in the next wizard page.__ |
-|IgnoreResponseErrors|When set to *true* treats any response errors as if no data is returned from the web service. The default is *false*.|
+|IgnoreResponseErrors|When set to *true* treats any response errors as if no data is returned from the GraphQL service. The default is *false*.|
 |Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data returned from the GraphQL service. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug graphqldatasource-filter-json-data%}).|
 |Authentication|The authentication type. Basic and 2-step (Bearer) authentication is supported. A 2-step (Bearer) authentication mode can be used for the OAuth 2.0 authorization framework. Additional information is available in the following sections.|
 |Encoding|Data encoding. The default is UTF-8.|
@@ -83,7 +83,7 @@ Below are listed the available settings for 2-step (Bearer) authentication. The 
 
 ## Cookie-Based Authentication
 
-It is possible to leverage the 2-step Authentication mechanism above to retrieve a session cookie from the server which will authenticate subsequent requests. In this scenario first, a request will be sent to the server for authentication purposes and the response should contain the generated cookie for the authenticated user. If the cookie domain and path match the Web Service Data Source Service URL the cookie will be sent in the following data retrieval request.
+It is possible to leverage the 2-step Authentication mechanism above to retrieve a session cookie from the server which will authenticate subsequent requests. In this scenario first, a request will be sent to the server for authentication purposes and the response should contain the generated cookie for the authenticated user. If the cookie domain and path match the GraphQL Data Source Service URL the cookie will be sent in the following data retrieval request.
 
 > When using cookie-based authentication, consider using '()' as the value for the `Token Path` when configuring the 2-step authentication. This will ensure that no token is found in the login response and no token will be included in the subsequent requests.
 

@@ -30,7 +30,6 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 	|Service URL|The URL the request is sent to. Returns the data from the GraphQL service. Required.|
 	|Authentication Type|The authentication type. The supported options are Basic and 2-step authentications.|
 	|Encoding|Data encoding. Default is UTF-8.|
-	|Method|HTTP request method. GET and POST are the supported methods.|
 
 	And/or enter data inline:
 
@@ -48,7 +47,7 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 	| ------ | ------ |
 	|Source|The external data file containing the data. The URI to the file might be relative or absolute. Required if Service URL or inline data string is not set.|
 
-1. __Configure request parameters__: The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value.
+1. __Configure request parameters__: The parameters of the HTTP request to be applied. The supported types are Query, Header, Cookie, and Inline. The inline parameters are parameters that are used to replace parameter tokens (@param1) in the URL and the GraphQL Query fields with an expression result or static value. For more information about the different types of parameters, refer to [Using Parameters in the GraphQLDataSource]({% slug graphqldatasource-parameters %}).
 
 	!["Configure request parameters" window of the GraphQLDataSource Wizard. Includes 5 pre-configured parameters: a header parameter for the HTTP header "Authorization" and four inline parameters, named "data", "status", "name", and "endpoint".](images/DataSources/graphql/configure-request-parameters.png)
 

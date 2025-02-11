@@ -66,7 +66,7 @@ In this example, if the service URL for this GraphQLDataSource component was `ht
 
 ## Header Parameters
 
-Header parameters are sent as [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) within the request. The name of each header parameter corresponds to the name of the HTTP header, while the value of the parameter corresponds to the value of the HTTP header. A common use case for this type of parameter is attaching HTTP headers, such as [Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization) required by the GraphQL service to allow access to protected resources. For example, a setup in the GraphQLDataSource Wizard could look as follows:
+Header parameters are sent as [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) within the request. The name of each header parameter corresponds to the name of the HTTP header, while the value of the parameter corresponds to the value of the HTTP header. A common use case for this type of parameter is attaching HTTP headers, such as [Authorization](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization), required by the GraphQL service to allow access to protected resources. For example, a setup in the GraphQLDataSource Wizard could look as follows:
 
 ![An Authorization HTTP header set in the GhaphSQLDataSource Wizard.](images/GraphQLDataSourceHeaderParameter.png)
 
@@ -100,7 +100,7 @@ In this case, the GraphQLDataSource component automatically sends consecutive re
 
 ![Multiple requests captured by Fiddler Everywhere.](images/FiddlerEverywhereMultipleRequestsCursors.png)
 
->tip The variable name does not matter—Telerik Reporting identifies the pagination pattern by analyzing the query argument `(after: $someVariable)` and the response fields (`pageInfo.endCursor`, `pageInfo.hasNextPage`).
+>tip The variable name does not matter—Telerik Reporting identifies the pagination pattern by analyzing the query argument (`after: $someVariable`) and the response fields (`pageInfo.endCursor`, `pageInfo.hasNextPage`).
 
 ## See Also
 

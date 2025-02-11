@@ -43,7 +43,9 @@ Behind the scenes, the Reporting engine calls the [ADO.NET GetSchema method](htt
 null,Production,ProductCategory
 ````
 
-> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above. 
+> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above.
+
+> The schema restrictions work only with .Net 6+
 
 ![Image of the SQL Data Source wizard showing the schema restrictions field and the query builder dialog](images/srd-sqlds-wzrd-schema-restrictions.png)
 

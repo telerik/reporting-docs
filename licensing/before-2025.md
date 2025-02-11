@@ -1,15 +1,15 @@
 ---
-title: Licensing
-page_title: Licensing explained
-description: "Learn more about Licensing in Telerik Reporting and how you may upgrade your Trial license to Developer's."
+title: Licensing before 2025
+page_title: "Licensing mechanism before 2025 explained."
+description: "Learn more about Licensing in Telerik Reporting before the year 2025 and how you may upgrade your Trial license to Developer's."
 slug: telerikreporting/licensing
 tags: licensing
 published: True
-position: 12
+position: 32
 previous_url: /installation-trial-license-limitation
 ---
 
-# Telerik Reporting Licensing
+# Telerik Reporting Licensing before 2025
 
 Telerik Reporting comes in trial and developer (or commercial) licenses.
 

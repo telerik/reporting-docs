@@ -18,6 +18,20 @@ The following figure shows the graphical query builder.
 
 Use the graphical query builder to explore the database tables and views, interactively build SQL SELECT statements, and view the result. The select statement specifies the database tables, views and columns from which to retrieve data for an [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}). If you choose multiple related tables, you need to specify the relationship between each set of two tables.
 
+## Schema Restrictions
+
+As of 2025 Q1, the Query Builder of the Web Report Designer accepts a new property called [SchemaRestrictions](/api/telerik.reporting.sqldatasource#Telerik_Reporting_SqlDataSource_SchemaRestrictions). The value of this property is a comma-separated list of schema restrictions that will be used by the chosen data provider to query a subset of data from the database schema. This allows report creators to load only the necessary schema information and benefit from faster load times.
+
+Behind the scenes, the Reporting engine calls the [ADO.NET GetSchema method](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/getschema-and-schema-collections) on the [columns collection](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/schema-restrictions#columns) and passes the schema restrictions specified by the user. The exact number and order of schema restriction arguments can vary depending on the selected data provider. For example, provided we have a connection to the Microsoft SQL Server AdventureWorks sample database, we can pass the following string to the schema restrictions field to instruct the Query Builder to load the schema of the ProductCategory table only.
+
+````
+null,Production,ProductCategory
+````
+
+> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above. The schema restrictions work only with .Net 6+.
+
+![Image of the SQL Data Source wizard showing the schema restrictions field and the query builder dialog](images/wrd-sqlds-wzrd-schema-restrictions.png)
+
 ## Query Builder Panes
 
 The following sections describe the function of each pane.

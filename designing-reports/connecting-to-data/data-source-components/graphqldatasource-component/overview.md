@@ -2,10 +2,9 @@
 title: Overview
 page_title: GraphQLDataSource Component at a Glance
 description: "Learn how to use the GraphQLDataSource Component in Telerik Reporting to fetch data from GraphQL endpoints and display it in your reports."
-slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component
+slug: graphqldatasource
 published: True
 position: 0
-previous_url: /graphqldatasource-component, /designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/
 ---
 <style>
 table th:first-of-type {
@@ -18,7 +17,7 @@ table th:nth-of-type(2) {
 
 # GraphQLDataSource Component
 
-The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQL Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%}) in the Standalone and the Visual Studio Report Designer. As of now, the Web Report Designer does not feature a wizard, but the data source can be configured through the ({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}#web-report-designer-elements)[Properties Area]. At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
+The [GraphQLDataSource](/api/Telerik.Reporting.GraphQLDataSource) component enables data items to retrieve data in JSON format from a GraphQL service. At design time, the component can be configured using the [GraphQL Wizard]({%slug desktop-graphqldatasource-wizard%}) in the Standalone and the Visual Studio Report Designer. As of now, the Web Report Designer does not feature a wizard, but the data source can be configured through the ({% slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview %}#web-report-designer-elements)[Properties Area]. At run time, the GraphQLDataSource component automatically issues the GraphQL request, applies authentication tokens if needed, and retrieves the data.
 
 The data field names for this data source are __case-sensitive__. It is required to use the correct data field names in expressions, otherwise no data will be shown.
 
@@ -32,7 +31,7 @@ __GraphQL Request Configuration:__
 | ------ | ------ |
 |Service URL|The URL the request is sent to. Returns the data from the GraphQL service. Required if inline data string or external data file is not set.<br/>__The service URL should not contain any query parameters. Query parameters can be configured in the next wizard page.__ |
 |IgnoreResponseErrors|When set to *true* treats any response errors as if no data is returned from the web service. The default is *false*.|
-|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data returned from the GraphQL service. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
+|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data returned from the GraphQL service. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug graphqldatasource-filter-json-data%}).|
 |Authentication|The authentication type. Basic and 2-step (Bearer) authentication is supported. A 2-step (Bearer) authentication mode can be used for the OAuth 2.0 authorization framework. Additional information is available in the following sections.|
 |Encoding|Data encoding. The default is UTF-8.|
 |Query|The GraphQL query to be executed against the GraphQL service. This query should be written in the GraphQL query language and must conform to the schema defined by the GraphQL service. For more information on writing GraphQL queries, refer to the [GraphQL documentation](https://graphql.org/learn/queries/).|
@@ -43,14 +42,12 @@ __Inline Data String Configuration:__
 | Setting | Description |
 | ------ | ------ |
 |Source|The inline data string containing the data. Required if Service URL or external data file is not set.<br/>Setting both Service URL and inline data string at the same time will reduce network load during design time as no HTTP requests will be made while the report is designed. Instead, the inline data will be used for any design-time operations. The Service URL will be used only at run-time (this includes data source preview and report preview operations).|
-|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 
 __External Data File Configuration:__
 
 | Setting | Description |
 | ------ | ------ |
 |Source|The external data file containing the data. The URI to the file might be relative or absolute. Required if Service URL or inline data string is not set.<br/>Setting both Service URL and external data file at the same time will reduce network load during design time as no HTTP requests will be made while the report is designed. Instead, the external data file will be used for any design-time operations. The Service URL will be used only at run-time (this includes data source preview and report preview operations).|
-|Data Selector|The [JSONPath](https://www.newtonsoft.com/json/help/html/QueryJsonSelectTokenJsonPath.htm) expression string which will be used to query the JSON data. For more information please refer to [How to Use JSONPath to filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
 
 ## Basic Authentication Settings
 
@@ -97,6 +94,6 @@ It is possible to leverage the 2-step Authentication mechanism above to retrieve
 
 ## See Also
 
-* [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%})
-* [Using JSONPath to Filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/how-to-use-jsonpath-to-filter-json-data%})
-* [Using Parameters with GraphQLDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/using-parameters-with-the-graphqldatasource-component%})
+* [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%})
+* [Using JSONPath to Filter JSON data]({%slug graphqldatasource-filter-json-data%})
+* [Using Parameters with GraphQLDataSource]({%slug graphqldatasource-parameters%})

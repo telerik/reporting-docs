@@ -2,11 +2,10 @@
 title: Using Parameters
 page_title: Using Parameters with GraphQLDataSource explained with examples
 description: "Learn how to configure and use Inline, Query, Header, and Cookie Parameters with the GraphQLDataSource component in Telerik Reporting."
-slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/using-parameters-with-the-graphqldatasource-component
+slug: graphqldatasource-parameters
 tags: using,parameters,with,the,graphqldatasource,component,inline,query,header,cookie,fiddler,configure
 published: True
 position: 3
-previous_url: /graphqldatasource-service-data-source-using-parameters
 ---
 
 # Using Parameters with the GraphQLDataSource Component
@@ -27,7 +26,7 @@ The values of this parameter type replace the corresponding part of the `Service
 
 ### Using Inline Parameters in Service Url
 
-In the [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%}), the Service URL can be provided as __constantUrl__, for example:
+In the [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%}), the Service URL can be provided as __constantUrl__, for example:
 
 ![The ServiceUrl of the GraphQL configured with an inline parameter](images/GraphQLDataSourceUrl.png)
 
@@ -105,6 +104,6 @@ In this case, the GraphQLDataSource component automatically sends consecutive re
 
 ## See Also
 
-* [GraphQLDataSource Component Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component%})
-* [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%})
-* [Using JSONPath to Filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/how-to-use-jsonpath-to-filter-json-data%})
+* [GraphQLDataSource Component Overview]({%slug graphqldatasource%})
+* [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%})
+* [Using JSONPath to Filter JSON data]({%slug graphqldatasource-filter-json-data%})

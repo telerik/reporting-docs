@@ -2,11 +2,10 @@
 title: GraphQLDataSource Wizard
 page_title: GraphQLDataSource Wizard at a Glance
 description: "Learn more about the GraphQLDataSource Wizard of the Telerik Reporting Desktop Designers and how to configure the GraphQLDataSource properties with it."
-slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard
+slug: desktop-graphqldatasource-wizard
 tags: graphqldatasource,wizard
 published: True
 position: 50
-previous_url: /graphqldatasource-wizard
 ---
 
 <style>

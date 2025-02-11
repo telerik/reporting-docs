@@ -2,10 +2,9 @@
 title: Using JSONPath
 page_title: Using JSONPath to Filter JSON data
 description: "JSONPath filters JSON data by allowing you to select specific elements based on conditions."
-slug: telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/how-to-use-jsonpath-to-filter-json-data
+slug: graphqldatasource-filter-json-data
 published: True
 position: 1
-previous_url: /how-to-use-jsonpath
 ---
 
 # Using JSONPath to Filter JSON data
@@ -110,6 +109,6 @@ In other scenarios, it might be useful to filter the JSON data to display only o
 
 ## See Also
 
-* [GraphQLDataSource Component Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component%})
-* [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%})
-* [Using Parameters with GraphQLDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/using-parameters-with-the-graphqldatasource-component%})
+* [GraphQLDataSource Component Overview]({%slug graphqldatasource%})
+* [GraphQLDataSource Wizard]({%slug desktop-graphqldatasource-wizard%})
+* [Using Parameters with GraphQLDataSource]({%slug graphqldatasource-parameters%})

@@ -90,6 +90,6 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 
 ## See Also
 
-* [GraphQLDataSource Component Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview%})
+* [GraphQLDataSource Component Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component%})
 * [Using JSONPath to Filter JSON data]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/how-to-use-jsonpath-to-filter-json-data%})
 * [Using Parameters with GraphQLDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/using-parameters-with-the-graphqldatasource-component%})

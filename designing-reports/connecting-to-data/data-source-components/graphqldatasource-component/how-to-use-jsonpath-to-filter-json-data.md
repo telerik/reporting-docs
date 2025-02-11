@@ -110,6 +110,6 @@ In other scenarios, it might be useful to filter the JSON data to display only o
 
 ## See Also
 
-* [GraphQLDataSource Component Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview%})
+* [GraphQLDataSource Component Overview]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component%})
 * [GraphQLDataSource Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/data-source-wizards/graphqldatasource-wizard%})
 * [Using Parameters with GraphQLDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/using-parameters-with-the-graphqldatasource-component%})

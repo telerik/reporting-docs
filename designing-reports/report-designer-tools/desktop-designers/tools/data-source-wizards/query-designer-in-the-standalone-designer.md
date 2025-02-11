@@ -1,4 +1,4 @@
-				---
+---
 title: Query Designer
 page_title: Query Designer in the Standalone Report Designer at a Glance
 description: "Learn more about the Query Designer in the Standalone Designer and how to use it to create basic queries easily in Telerik Reporting."
@@ -43,10 +43,8 @@ Behind the scenes, the Reporting engine calls the [ADO.NET GetSchema method](htt
 null,Production,ProductCategory
 ````
 
-> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above.
-
-> The schema restrictions work only with .Net 6+
-
+> Schema restrictions are case-sensitive and empty arguments are respected. If you need to provide a null value for a specific argument, you can use the `null` keyword as demonstrated in the example above. The schema restrictions work only with .Net 6+
+ 
 ![Image of the SQL Data Source wizard showing the schema restrictions field and the query builder dialog](images/srd-sqlds-wzrd-schema-restrictions.png)
 
 ## Query Designer Panes

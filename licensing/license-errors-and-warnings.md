@@ -13,8 +13,8 @@ Starting with the 2025 Q1 release, using Telerik Reporting without a license or 
 
 The implementation of the 2025 product licensing requirements will occur in two phases:
 
-* Phase 1 - Starting with the 2025 Q1 release, a missing or invalid license logs a warning in the build log.
-* Phase 2 - Starting with the 2025 Q2 release, a missing, expired, or invalid license will result in:
+* Phase 1 - Starting with the 2025 Q1 release, a missing or invalid license logs a warning in the build log and the report will show a watermark with a trial message. The trial distribution won't show the trial message when activated with a trial license. There will be no change in the commercial distribution.
+* Phase 2 - Starting with the 2025 Q2 release, there will be only one distribution of the product with different licenses. A missing, expired, or invalid license will result in:
 
   - A watermark appears on each report document page.
   - A warning message appearing in the build log:

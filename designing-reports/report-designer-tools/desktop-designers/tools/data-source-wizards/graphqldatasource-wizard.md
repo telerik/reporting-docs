@@ -19,7 +19,7 @@ table th:nth-of-type(2) {
 
 # GraphQLDataSource Wizard of the Report Designer
 
-The __GraphQL Data Source Wizard__ allows you to create new or edit existing __GraphQLServiceDataSource__ components based on several settings. After the wizard appears, you have to perform the following steps:
+The __GraphQL Data Source Wizard__ allows you to create new or edit existing __GraphQLDataSource__ components based on several settings. After the wizard appears, you have to perform the following steps:
 
 1. __Configure data retrieval__: Setup the properties of the HTTP request which will retrieve data from the GraphQL service: 
 
@@ -69,11 +69,9 @@ The __GraphQL Data Source Wizard__ allows you to create new or edit existing __G
 	|Login URL|This URL returns the authentication token or session key that allows you to access the API. Required.|
 	|Username|The username used to authenticate. The username and password are needed only when the Login URL uses Basic Authentication to retrieve the authentication token/key.|
 	|Password|The password used to authenticate.|
-	|Response|Specifies the type of the expected response from the Login URL. JSON and plain text are supported.|
     |Body|The body of the login HTTP request.|
 	|Token Path|This is a regular expression that allows to retrieve the authentication or session key from the response received via the Login URL. For example, when the Login URL returns a JSON response containing the authentication token in the form: *{"access_token":"cbm9W3MeTeVPuO5CIq_DTvG5KbzydpRQ","token_type":"bearer","expires_in":1799,"userName":"demouser",".issued":"Tue, 15 May 2018 08:42:32 GMT",".expires":"Tue, 15 May 2018 09:12:32 GMT"}* the token path regular expression to retrieve the token would be: *(?:"access_token":")(.*?)(?:")* |
 	|Logout URL|This URL is called if the resource features a lockout for having too many sessions open. Refresh the report and try again after successfully logging out.|
-	|Logout Method|Specifies the HTTP request method used for the Logout URL.|
 	|Logout Body|The body of the logout HTTP request.|
 
 

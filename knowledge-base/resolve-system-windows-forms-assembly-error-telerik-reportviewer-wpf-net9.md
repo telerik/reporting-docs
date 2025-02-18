@@ -34,9 +34,9 @@ ticketid: 1678405
 
 ## Description
 When deploying a WPF application with the Telerik ReportViewer component and upgrading to .NET 9, an error stating that the `System.Windows.Forms` assembly could not be loaded is encountered on the first launch of a print window. This issue does not occur on subsequent openings of the print window. This knowledge-base article also answers the following questions:
-- How to fix the `System.Windows.Forms` assembly loading error in Telerik ReportViewer WPF on .NET 9?
-- What is the solution for a missing `System.Windows.Forms` assembly error when using Telerik ReportViewer WPF in a .NET 9 application?
-- How to ensure the Telerik ReportViewer WPF component loads correctly in .NET 9 on the first attempt?
+* How to fix the `System.Windows.Forms` assembly loading error in Telerik ReportViewer WPF on .NET 9?
+* What is the solution for a missing `System.Windows.Forms` assembly error when using Telerik ReportViewer WPF in a .NET 9 application?
+* How to ensure the Telerik ReportViewer WPF component loads correctly in .NET 9 on the first attempt?
 
 ## Solution
 To address the issue of the `System.Windows.Forms` assembly not loading during the first use of the Telerik ReportViewer WPF component in a .NET 9 application, especially when deployed via MSIX, add the `UseWindowsForms` property set to `true` in the main WPF project file. This ensures that the `System.Windows.Forms` dependencies are correctly referenced, allowing the Telerik ReportViewer to initialize without errors on its first load.
@@ -52,5 +52,5 @@ Modify the project file (.csproj) of your WPF application to include the followi
 This configuration explicitly informs the project that Windows Forms components are utilized, ensuring the necessary assemblies are available at runtime. This solution is particularly relevant for applications packaged with MSIX, where dependency management may differ from traditional deployment methods.
 
 ## See Also
-- [WPF Project SDK Documentation](https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props-desktop)
-- [MSIX Packaging Documentation](https://docs.microsoft.com/en-us/windows/msix/)
+* [WPF Project SDK Documentation](https://docs.microsoft.com/en-us/dotnet/core/project-sdk/msbuild-props-desktop)
+* [MSIX Packaging Documentation](https://docs.microsoft.com/en-us/windows/msix/)

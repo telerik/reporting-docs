@@ -14,7 +14,7 @@ The 'Download Raw Data' action allows the users to download the data associated 
 
 In contrast with the other interactive actions, the 'Download Raw Data' action is not configurable in the designer. It is automatically created per each data item when the report is processed. The action is represented by a download icon displayed in the top-right corner of the data item when the mouse cursor hovers within its bounds.
 
-![An image showing the download-raw-data action on a graph item.](../images/download-raw-data-action-on-graph.png)
+![An image showing the download-raw-data action on a graph item.](../images/download-raw-data-action-preview-on-graph.png)
 
 When triggered, the 'Download Raw Data' action will open a Save File dialog, asking for a location where the data will be saved. Upon confirmation, the data used for the data item's binding will be fetched from its data context and exported to the specified location in CSV format. 
 

@@ -26,13 +26,13 @@ This article explains how to set the file path of the CSV or JSON file of [JSON 
 
 
 ## Solution
-You can use the [Utility function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/utility-functions%}) **GetUri**/**Uri** to set the CSV/JSON file through a report parameter. 
+You can use the [Utility function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/utility-functions%}) **Uri** to set the CSV/JSON file through a report parameter. 
 1) Add a report parameter called **uriParameter**;
 2) Set the [Binding property]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the data item(report, table, list, crosstab) that will use the datasource. In this example, we will set it to the table:
 
 **Property path**: DataSource.Source
 
-**Expression**: = GetUri(Parameters.uriParameter.Value, "relative")
+**Expression**: = Uri(Parameters.uriParameter.Value, "relative")
 
 
 ## Workaround for older versions

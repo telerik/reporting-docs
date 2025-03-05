@@ -24,7 +24,7 @@ Note that future updates of the product may restrict or disable some features wh
 
 Your projects have to reference the package `Telerik.Licensing`. We recommend using the [NuGet Package Manager in Visual Studio](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio). It automatically adds all the required code to your project files.
 
->tip We recommend using `Telerik Reporting` NuGet packages in your projects rather than direct assembly references. The main reason is that the packages add automatically all dependencies, whereas when using references you need to add them manually. The `Telerik.Licensing` package will be added automatically as a dependency for the `Telerik.Reporting` package.
+>tip We recommend using `Telerik Reporting` NuGet packages in your projects rather than direct assembly references. The main reason is that the packages automatically add all dependencies, whereas when using references, you need to add them manually. The `Telerik.Licensing` package will be added automatically as a dependency for the `Telerik.Reporting` package.
 
 Here are the changes the Visual Studio NuGet Package Manager will make, depending on the project type:
 
@@ -80,8 +80,8 @@ To activate Telerik Reporting:
 
 * Copy the [downloaded](#downloading-the-license-key) `telerik-license.txt` license key file to your home directory. This makes the license key available to all projects that you develop on your computer.
 
-	+ For Windows: `%AppData%\Telerik\telerik.license.txt`
-	+ For Mac/Linux: `~/.telerik/telerik.license.txt`
+	+ For Windows: `%AppData%\Telerik\telerik-license.txt`
+	+ For Mac/Linux: `~/.telerik/telerik-license.txt`
 
 * Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
 

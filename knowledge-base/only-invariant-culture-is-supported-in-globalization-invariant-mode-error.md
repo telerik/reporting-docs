@@ -1,5 +1,5 @@
 ---
-title: Parameter 'Culture' Is an Invalid Culture Identifier
+title: Only invariant culture is supported in globalization-invariant mode
 description: "Learn how to resolve the error message 'Only invariant culture is supported in globalization-invariant mode'."
 type: troubleshooting
 page_title: Only invariant culture is supported in globalization-invariant mode

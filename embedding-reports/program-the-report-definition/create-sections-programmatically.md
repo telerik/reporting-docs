@@ -24,16 +24,16 @@ To create sections in code, instantiate the appropriate object, set its properti
 For example, this code creates a detail section and adds it to the report:
 
 ````C#
-DetailSection detail = new DetailSection();
+Telerik.Reporting.DetailSection detail = new Telerik.Reporting.DetailSection();
 this.detail.Height = new Telerik.Reporting.Drawing.Unit(3.0, Telerik.Reporting.Drawing.UnitType.Inch);
 this.detail.Name = "detail";
-report.Items.Add((ReportItemBase)detail);
+report.Items.Add((Telerik.Reporting.ReportItemBase)detail);
 ````
 ````VB.NET
-Dim detail As New DetailSection()
+Dim detail As New Telerik.Reporting.DetailSection()
 Me.detail.Height = New Telerik.Reporting.Drawing.Unit(3, Telerik.Reporting.Drawing.UnitType.Inch)
 Me.detail.Name = "detail";
-report.Items.Add(DirectCast(detail, ReportItemBase)
+report.Items.Add(DirectCast(detail, Telerik.Reporting.ReportItemBase))
 ````
 
 

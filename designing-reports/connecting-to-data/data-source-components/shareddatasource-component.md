@@ -24,7 +24,7 @@ The [SharedDataSource](/api/Telerik.Reporting.SharedDataSource) component enable
 
 Additionally, end users of the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) will be able to easily design their own reports with predefined `SharedDataSource` components.
 
-All `SharedDataSource` componenents are accessible, by default, to all end-users via the [`Asset Manager`]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager)
+All `SharedDataSource` componenents are accessible, by default, to all end-users via the [`Asset Manager`]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/shared-resources%}#assets-manager).
 
 The `SharedDataSource` component currently supports the following [data source components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}):
 
@@ -33,6 +33,16 @@ The `SharedDataSource` component currently supports the following [data source c
 * [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})
 * [JsonDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%})
 * [CsvDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%})
+
+To add an existing shared data source to your report, follow these steps:
+
+1. Open the __Explorer__ tab in the __Web Report Designer__.
+1. Locate the __[Shared Data Sources]__ item in the tree, then hover on it.
+1. Click the __...__ icon right next to the item.
+1. Select __Add Existing Shared Data Source__.
+1. Choose the desired shared data source, then click __Save__.
+
+![A context menu with the "Add Existing Shared Data Source" option.](./images/add-existing-shared-data-source-context-menu.png)
 
 >tip Existing data source components can be configured into `SharedDataSource` components via the __Explorer__ tab in the __Web Report Designer__. Left-clicking the data source component will open the _context menu_ from which the option __Save As Shared Data Source__ can be chosen.
 

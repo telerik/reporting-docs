@@ -2,7 +2,7 @@
 title: Set the File Path of JSON or CSV DataSource Through Report Parameter
 description: This article explains how to set the file path of the CSV or JSON file of JSON or CSV DataSource through a report parameter
 type: how-to
-page_title: Setшсхж the File Path of JSON or CSV DataSource Through Report Parameter
+page_title: Set the File Path of JSON or CSV DataSource Through Report Parameter
 slug: set-the-file-path-of-json-or-csv-datasource-through-report-parameter
 position: 
 tags: JsonDataSource, CsvDataSource, Report Parameter

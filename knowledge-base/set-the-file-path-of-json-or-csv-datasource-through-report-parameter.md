@@ -40,7 +40,7 @@ You can use the [Utility function]({%slug telerikreporting/designing-reports/con
 
 ## Workaround for older versions
 
-If the **GetUri/Uri** function is not available in the report designer, the desired functionality can be also achieved through a custom [User function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that returns the [Uri](https://learn.microsoft.com/en-us/dotnet/api/system.uri) of the CSV or JSON file based on the passed report parameter. 
+If the **Uri** function is not available in the report designer, the desired functionality can be also achieved through a custom [User function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%}) that returns the [Uri](https://learn.microsoft.com/en-us/dotnet/api/system.uri) of the CSV or JSON file based on the passed report parameter. 
 You can follow the steps below:
 
 1. [Create a new Class Library](https://learn.microsoft.com/en-us/dotnet/core/tutorials/library-with-visual-studio) and add the **static** method below. In this case, the sample is for an *absolute* path:

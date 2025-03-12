@@ -24,6 +24,8 @@ category: knowledge-base
 
 ## Description
 
+> Visit the updated [Integrating the Npgsql Data Provider]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/using-data-providers/using-npgsql-data-provider%}) article for a how-to on connecting to PostgreSQL Databases.
+
 How can I register a .NET Framework data provider for Telerik Reporting without installing its driver?
 
 Telerik Reporting allows fetching data from a variety of data sources (details in [Data Source Components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%})). The [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) would list and work with any ADO.NET provider that is correctly registered on the device. The usual way of registering .NET Framework data providers is through installing the corresponding driver. Installation would typically add the required information about the data provider in the *machine.config* file, and store the necessary assemblies in the *Global Assembly Cache (GAC)*. More information on registering .NET Framework data providers could be found in [Obtaining a DbProviderFactory](https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/obtaining-a-dbproviderfactory) Microsoft article.

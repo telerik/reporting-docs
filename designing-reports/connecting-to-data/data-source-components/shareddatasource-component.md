@@ -42,6 +42,8 @@ To add an existing shared data source to your report, follow these steps:
 1. Select __Add Existing Shared Data Source__.
 1. Choose the desired shared data source, then click __Save__.
 
+![A context menu with the "Add Existing Shared Data Source" option.](./images/add-existing-shared-data-source-context-menu.png)
+
 >tip Existing data source components can be configured into `SharedDataSource` components via the __Explorer__ tab in the __Web Report Designer__. Left-clicking the data source component will open the _context menu_ from which the option __Save As Shared Data Source__ can be chosen.
 
 ## Configuring the Component

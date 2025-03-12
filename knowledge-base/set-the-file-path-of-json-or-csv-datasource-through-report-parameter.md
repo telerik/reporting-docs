@@ -28,7 +28,7 @@ This article explains how to set the file path of the CSV or JSON file of [JsonD
 
 ## Solution
 
-You can use the [Utility function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/utility-functions%}) **Uri** to set the CSV/JSON file through a report parameter. For example
+You can use the [Utility function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/utility-functions%}) **Uri** to set the CSV/JSON file through a report parameter. For example:
 
 1. Create a Report Parameter called **uriParameter** - [Approaches for Adding Report Parameters]({%slug telerikreporting/designing-reports/connecting-to-data/report-parameters/how-to-add-report-parameters%})
 1. Set the [Binding property]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/bindings%}) of the [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) that will use the data source component:

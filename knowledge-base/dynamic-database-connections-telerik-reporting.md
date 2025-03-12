@@ -16,6 +16,7 @@ ticketid: 1669311
 
 
 ## Description
+
 When developing an application with Telerik Reporting that involves multiple users connecting to different databases, it becomes essential to dynamically set the connection strings based on the user. This KB article also answers the following questions:
 - How can I set connection strings dynamically for each user in Telerik Reporting?
 - What is the best practice for handling multiple database connections in a multi-user environment with Telerik Reporting?
@@ -26,17 +27,16 @@ When developing an application with Telerik Reporting that involves multiple use
 To handle multiple users connecting to different databases in Telerik Reporting, follow the steps below:
 
 1. **Store Common Connections**: For connections that should be available to all users, store them in the `appsettings.json` file. Telerik Reporting resolves connection strings using the alias(name) of the connection by reading from the configuration file loaded by the application.
+1. **Implement Custom ISettingsStorage**: For user-specific connections, implement a custom version of the [ISettingsStorage](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.isettingsstorage) interface. Override the [GetConnections()](/api/telerik.webreportdesigner.services.isettingsstorage#collapsible-Telerik_WebReportDesigner_Services_ISettingsStorage_GetConnections) method to dynamically set the connection string based on the current user. Create a list of `ConnectionInfo` objects where the `Name` remains the same, and only the `ConnectionString` is set dynamically.
 
-2. **Implement Custom ISettingsStorage**: For user-specific connections, implement a custom version of the [ISettingsStorage](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.isettingsstorage) interface. Override the `GetConnections()` method to dynamically set the connection string based on the current user. Create a list of `ConnectionInfo` objects where the `Name` remains the same, and only the `ConnectionString` is set dynamically.
+    > A sample implementation can be found in the article [Implementing Encrypted Connection Strings with Telerik Reporting]({%slug use-encrypted-connection-strings-telerik-reporting%}). Although it focuses on decrypting connection strings, it provides a clear example of how to dynamically adjust connection strings.
 
-    A sample implementation can be found in the article [Implementing Encrypted Connection Strings with Telerik Reporting]({%slug use-encrypted-connection-strings-telerik-reporting%}). Although it focuses on decrypting connection strings, it provides a clear example of how to dynamically adjust connection strings.
-
-3. **Adjust Connection String at Preview**: When a report is previewed in the Web Report Designer, use the `ReportSourceResolver` of the `ReportServiceConfiguration` object to dynamically change the connection string. The process for changing connection strings during report preview is detailed in [Decrypting Connection Strings for SqlDataSource Components - HTML5 Report Viewers]({%slug use-encrypted-connection-strings-telerik-reporting%}).
+1. **Adjust Connection String at Preview**: When a report is previewed in the Web Report Designer, use the [ReportSourceResolver](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_ReportSourceResolver) property of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object to set up a custom [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) where you can dynamically change the connection string. The process for changing connection strings during report preview is detailed in [Decrypting Connection Strings for SqlDataSource Components - HTML5 Report Viewers]({%slug use-encrypted-connection-strings-telerik-reporting%}).
 
 By following these steps, you can efficiently manage multiple users connecting to different databases in your Telerik Reporting application.
 
 ## See Also
 
-- [ISettingsStorage Interface](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.isettingsstorage)
-- [FileSettingsStorage Class](https://docs.telerik.com/reporting/api/telerik.webreportdesigner.services.filesettingsstorage)
-- [ReportServiceConfiguration Object](https://docs.telerik.com/reporting/api/telerik.reporting.services.reportserviceconfiguration)
+- [ISettingsStorage Interface](/api/telerik.webreportdesigner.services.isettingsstorage)
+- [FileSettingsStorage Class](/api/telerik.webreportdesigner.services.filesettingsstorage)
+- [ReportServiceConfiguration Object](/api/telerik.reporting.services.reportserviceconfiguration)

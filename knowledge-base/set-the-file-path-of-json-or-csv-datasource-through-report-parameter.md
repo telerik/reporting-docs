@@ -86,4 +86,4 @@ public static Uri setCsvSource(string path)
 
 ## Demo
 
-You can find a sample report with the **Uri/GetUri** function, a project with for the User Function and a report that uses it in our [GitHib repository](https://github.com/telerik/reporting-samples/tree/master/Set%20URI%20of%20CSV%20or%20JSON%20DataSource%20dynamically).
+You can find a sample report with the **Uri** function, a project with for the User Function, and a report that uses it in our [GitHib repository](https://github.com/telerik/reporting-samples/tree/master/Set%20URI%20of%20CSV%20or%20JSON%20DataSource%20dynamically).

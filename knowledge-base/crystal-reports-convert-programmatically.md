@@ -157,30 +157,30 @@ static void Main(string[] args)
 	
 	Start the application and examine the console window that will open. Consult with the troubleshooting steps below in case there are exceptions thrown during program execution.
 
-- **Troubleshooting**
+## Troubleshooting
 
-	+ _"Error: Could not load file or assembly 'CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified."_
++ _"Error: Could not load file or assembly 'CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified."_
   
-		This error indicates that the Crystal Reports runtime is either not installed or its assemblies cannot be loaded. `Telerik.ReportConverter.CrystalReports` assembly references the following Crystal Reports assemblies:
-		
-		* CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
-		* CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
-		* CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
-		* CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
+	This error indicates that the Crystal Reports runtime is either not installed or its assemblies cannot be loaded. `Telerik.ReportConverter.CrystalReports` assembly references the following Crystal Reports assemblies:
+	
+	* CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
+	* CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
+	* CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
+	* CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
 
-		In case you have installed a different version of Crystal Reports runtime, you have to add binding redirect rules to the application configuration file. Check the [Converting SAP Crystal Reports]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter%}) article, section **Configuring the Report Designer to Use the Converter** for the binding redirect snippets.
+	In case you have installed a different version of Crystal Reports runtime, you have to add binding redirect rules to the application configuration file. Check the [Converting SAP Crystal Reports]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter%}) article, section **Configuring the Report Designer to Use the Converter** for the binding redirect snippets.
   
-	+ _"System.IO.FileNotFoundException: 'Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified.'"_
++ _"System.IO.FileNotFoundException: 'Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified.'"_
   
-		This error indicates that the assembly `log4net.dll`, which is referenced by Crystal Reports assemblies, cannot be loaded. This assembly should be installed and registered in GAC by the Crystal Reports runtime installer. In case it is missing, reinstall Crystal Reports and try again.
+	This error indicates that the assembly `log4net.dll`, which is referenced by Crystal Reports assemblies, cannot be loaded. This assembly should be installed and registered in GAC by the Crystal Reports runtime installer. In case it is missing, reinstall Crystal Reports and try again.
 
-		Please note that the referenced version 1.2.10.0 of `log4net.dll` differs from the same version of the same assembly that can be obtained via NuGet packages. The *publicKeyToken* of the assembly, referenced by Crystal Reports, is **692fbea5521e1304**, while the same version of the publicly available assembly is **1b44e1d426115821**.
+	Please note that the referenced version 1.2.10.0 of `log4net.dll` differs from the same version of the same assembly that can be obtained via NuGet packages. The *publicKeyToken* of the assembly, referenced by Crystal Reports, is **692fbea5521e1304**, while the same version of the publicly available assembly is **1b44e1d426115821**.
 
-- **Download sample application**
+## Download sample application
 
-	The sample application `CrystalReportsConverter` is uploaded to our [reporting-samples](https://github.com/telerik/reporting-samples) GitHub repo. You can download it from the link [CrystalReportsConverter](https://github.com/telerik/reporting-samples/tree/master/ApplicationExamples/CrystalReportsConverter).
+The sample application `CrystalReportsConverter` is uploaded to our [reporting-samples](https://github.com/telerik/reporting-samples) GitHub repo. You can download it from the link [CrystalReportsConverter](https://github.com/telerik/reporting-samples/tree/master/ApplicationExamples/CrystalReportsConverter).
 
-	The application references Telerik Reporting version 19.0.25.211. Please adjust the references according to the version of Telerik Reporting you're using.
+The application references Telerik Reporting version 19.0.25.211. Please adjust the references according to the version of Telerik Reporting you're using.
 
 ## See Also
 

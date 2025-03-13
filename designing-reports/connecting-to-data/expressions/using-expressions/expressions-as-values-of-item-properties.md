@@ -1,9 +1,9 @@
 ---
 title: Expressions as Values
 page_title: Using Expressions as Values of Item Properties 
-description: "Learn how to use Expressions as Values of Item Properties, what are the specifics and how to proceed in particular scenarios."
+description: "Learn how to use Expressions as Values of Item Properties, what the specifics are, and how to proceed in particular scenarios."
 slug: telerikreporting/designing-reports/connecting-to-data/expressions/using-expressions/expressions-as-values-of-item-properties
-tags: expressions,as,values,of,item,properties
+tags: expressions,values,item,properties
 published: True
 position: 1
 previous_url: /expressions-property-values
@@ -11,19 +11,19 @@ previous_url: /expressions-property-values
 
 # Expressions as Values of Item Properties
 
-By default the report items’ properties are strongly typed. Anyway you can use expressions as value for some of them. To specify that the value of a property is an expression, the value should be a string starting with equal `=` sign. If the equal sign is not present the value will be interpreted as a string literal.
+By default, the report items’ properties are strongly typed. Anyway, you can use expressions as values for some of them. To specify that the value of a property is an expression, the value should be a string starting with the equal `=` sign. If the equal sign is not present, the value will be interpreted as a string literal.
 
 This expression:
 
 `='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!'`
 
-![Expressions as Values in the Edit Expressions dialog](images/ExpressionsAsValues.png)
+![Expressions as Values in the Edit Expressions dialog](images/UI/ExpressionsAsValues.png)
 
 when evaluated will result in:
 
 `Hi Mr. Smith, John!`
 
-If you want part of the expression to be put on another line you have to insert a new line character in a string literal. For example here is how the expresion should look in the [Expression Editor]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}):
+If you want part of the expression to be put on another line, you have to insert a new line character in a string literal. For example, here is how the expression should look in the [Expression Editor]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/edit-expression-dialog%}):
 
 ````
 ='Hi Mr.' + Fields.LastName + ', ' + Fields.FirstName + '!
@@ -39,7 +39,7 @@ Hi Mr. Smith, John!
 How are you today?
 ````
 
-On the design surface expressions are usually displayed surrounded by square brackets `[]`. For example, the expression `=Fields.PersonID` when used in `TextBox.Value` property would appear as `[=Fields.PersonID]`.
+On the design surface, expressions are usually displayed surrounded by square brackets `[]`. For example, the expression `=Fields.PersonID`, when used in `TextBox.Value` property, would appear as `[=Fields.PersonID]`.
 
 The following objects and properties support expressions as property values:
 

@@ -32,7 +32,7 @@ Both [Visual Studio Report Designer] ({%slug telerikreporting/designing-reports/
 
 ## Solution  
 
-Converting multiple Crystal Report files to Telerik Reporting `.trdx` or `.trdp` files can be done programmatically. In the steps below we'll show how to build a simple console application that performs bulk conversion of all the Crystal Report files in a particular folder and outputs the conversion log to the console.
+Converting multiple Crystal Report files to Telerik Reporting `.trdx` or `.trdp` files can be done programmatically. In the steps below, we'll show how to build a simple console application that performs bulk conversion of all the Crystal Report files in a particular folder and outputs the conversion log to the console.
 
 - **Prerequisites**
 
@@ -41,23 +41,23 @@ Converting multiple Crystal Report files to Telerik Reporting `.trdx` or `.trdp`
 - **Create a .NET Framework Command-line Application**
     
 	+ Use Visual Studio to create a .NET Framework console application. Specify .NET Framework 4.6.2 or greater as a target framework.
-	+ Create a project folder that will contain the referenced assemblies - both Telerik and Crystal Reports ones. In this KB we'll name it `\ext`.	
-	+ Add reference to `Telerik.Reporting.dll`. You can reference it from the Telerik Reporting installation directory, or use the NuGet feed.
+	+ Create a project folder that will contain the referenced assemblies - both Telerik and Crystal Reports ones. In this KB, we'll name it `\ext`.	
+	+ Add reference to `Telerik.Reporting.dll`. You can reference it from the Telerik Reporting installation directory or use the NuGet feed.
 
 - **Obtain Telerik.ReportConverter.CrystalReports.dll**
 
-    The assembly that contains the converter code is distributed with the Telerik Reporting MSI installer. It is not deployed in the installation directory because it is not intended to be referenced in user projects. It is installed in the machine's GAC in order to be accessible from various Telerik Reporting designers.
+    The assembly that contains the converter code is distributed with the Telerik Reporting MSI installer. It is not deployed in the installation directory because it is not intended to be referenced in user projects. It is installed in the machine's GAC to be accessible from various Telerik Reporting designers.
 
-	+ Ensure you have Telerik Reporting installed. Search in machine's GAC folder (usually `C:\Windows\Microsoft.NET\assembly\GAC_MSIL`)for the assembly `Telerik.ReportConverter.CrystalReports.dll`. The path to it should look like the one below:
+	+ Ensure you have Telerik Reporting installed. Search in the machine's GAC folder (usually *C:\Windows\Microsoft.NET\assembly\GAC_MSIL*) for the assembly `Telerik.ReportConverter.CrystalReports.dll`. The path to it should look like the one below:
 	
-	`C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Telerik.ReportConverter.CrystalReports\v4.0_16.0.22.119__a9d7983dfcc261be\Telerik.ReportConverter.CrystalReports.dll`.
+		*C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Telerik.ReportConverter.CrystalReports\v4.0_16.0.22.119__a9d7983dfcc261be\Telerik.ReportConverter.CrystalReports.dll*
 
 	+ Copy the assembly to the `\ext` project folder.
 	+ Add it as an assembly reference to your project.
 
 - **Add code for reports conversion**
 
-	Add a new class `Converter.cs` to your application. It will scan a specified folder for Crystal Reports `.rpt` files and convert them to Telerik Reporting `.trdx` definitions. This class would contain the following code:
+	Add a new class, `Converter.cs`, to your application. It will scan a specified folder for Crystal Reports `.rpt` files and convert them to Telerik Reporting `.trdx` definitions. This class would contain the following code:
 
 	````CSharp
 namespace CrystalReportsConverter
@@ -153,27 +153,28 @@ static void Main(string[] args)
 
 - **Start the application**
 
-	At this point the application should be runnable, given the assembly/NuGet references are correctly configured.
+	At this point, the application should be runnable, given that the assembly/NuGet references are correctly configured.
 	
 	Start the application and examine the console window that will open. Consult with the troubleshooting steps below in case there are exceptions thrown during program execution.
 
 - **Troubleshooting**
 
-	+ `Error: Could not load file or assembly 'CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified.`
+	+ _"Error: Could not load file or assembly 'CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified."_
   
-	This error indicates that the Crystal Reports runtime is either not installed, or its assemblies cannot be loaded. `Telerik.ReportConverter.CrystalReports` assembly references the following Crystal Reports assemblies:
+		This error indicates that the Crystal Reports runtime is either not installed or its assemblies cannot be loaded. `Telerik.ReportConverter.CrystalReports` assembly references the following Crystal Reports assemblies:
+		
 		* CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
 		* CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
 		* CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
 		* CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304
 
-	In case you have installed a different version of Crystal Reports runtime, you have to add binding redirect rules to the application configuration file. Check the [Converting SAP Crystal Reports]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter%}) article, section **Configuring the Report Designer to Use the Converter** for the binding redirect snippets.
+		In case you have installed a different version of Crystal Reports runtime, you have to add binding redirect rules to the application configuration file. Check the [Converting SAP Crystal Reports]({%slug telerikreporting/designing-reports/converting-reports-from-other-reporting-solutions/crystal-reports-converter%}) article, section **Configuring the Report Designer to Use the Converter** for the binding redirect snippets.
   
-	+ `System.IO.FileNotFoundException: 'Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified.'`
+	+ _"System.IO.FileNotFoundException: 'Could not load file or assembly 'log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304' or one of its dependencies. The system cannot find the file specified.'"_
   
-    This error indicates that the assembly `log4net.dll`, which is referenced by Crystal Reports assemblies, cannot be loaded. This assembly should be installed and registered in GAC by the Crystal Reports runtime installer. In case it is missing, reinstall Crystal Reports and try again.
+		This error indicates that the assembly `log4net.dll`, which is referenced by Crystal Reports assemblies, cannot be loaded. This assembly should be installed and registered in GAC by the Crystal Reports runtime installer. In case it is missing, reinstall Crystal Reports and try again.
 
-    Please note that the referenced version 1.2.10.0 of `log4net.dll` differs from the same version of the same assembly that can be obtained via NuGet packages. The *publicKeyToken* of the assembly, referenced by Crystal Reports, is **692fbea5521e1304**, while the same version of the publicly available assembly is **1b44e1d426115821**.
+		Please note that the referenced version 1.2.10.0 of `log4net.dll` differs from the same version of the same assembly that can be obtained via NuGet packages. The *publicKeyToken* of the assembly, referenced by Crystal Reports, is **692fbea5521e1304**, while the same version of the publicly available assembly is **1b44e1d426115821**.
 
 - **Download sample application**
 

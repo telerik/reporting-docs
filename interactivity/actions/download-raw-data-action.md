@@ -10,7 +10,9 @@ position: 80
 
 # Download Raw Data
 
-The 'Download Raw Data' action allows the users to download the data associated with a particular [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) (e.g. List, Table, Graph, Map, and Report itself). The purpose of the action is to provide a quick way of examining the raw data used to databind data items during the report preview. This is useful when verifying data accuracy and gaining deeper insights into the underlying information.
+The functionality is introduced in [2025 Q1 (19.0.25.211)]([2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211)).
+
+The 'Download Raw Data' action allows the users to download the data associated with a particular [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) (e.g., List, Table, Graph, Map, and Report itself). The purpose of the action is to provide a quick way of examining the raw data used to databind data items during the report preview. This is useful when verifying data accuracy and gaining deeper insights into the underlying information.
 
 In contrast with the other interactive actions, the 'Download Raw Data' action is not configurable in the designer. It is automatically created per each data item when the report is processed. The action is represented by a download icon displayed in the top-right corner of the data item when the mouse cursor hovers within its bounds.
 

@@ -5,7 +5,7 @@ description: "Learn about the structure of the Visual Studio Report Designer, an
 slug: visual-studio-report-designer-structure
 tags: visual,studio,report,designer,tool,structure
 published: True
-position: 1
+position: 5
 ---
 
 # Structure of the Visual Studio Report Designer

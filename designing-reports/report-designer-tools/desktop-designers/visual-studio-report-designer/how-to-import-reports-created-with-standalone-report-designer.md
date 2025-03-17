@@ -5,7 +5,7 @@ description: "Learn how to use the Import Report Wizard Visual Studio item templ
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer
 tags: how,to,import,reports,created,with,standalone,report,designer,trdp,trdx
 published: True
-position: 1
+position: 11
 previous_url: /how-to-import-reports-created-with-standalone-report-designer
 ---
 

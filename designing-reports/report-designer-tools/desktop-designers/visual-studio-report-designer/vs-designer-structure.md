@@ -5,8 +5,7 @@ description: "Learn about the structure of the Visual Studio Report Designer, an
 slug: visual-studio-report-designer-structure
 tags: visual,studio,report,designer,tool,structure
 published: True
-position: 0
-previous_url: /ui-report-designer, /designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/, /reportitemsinplaceeditor
+position: 1
 ---
 
 # Structure of the Visual Studio Report Designer

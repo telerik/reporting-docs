@@ -1,7 +1,7 @@
 ---
 title: Overview
-page_title: Visual Studio Report Designer Explained
-description: "Learn how to open and use Visual Studio Report Designer, and what its main areas and features are. Discover how to edit report definitions."
+page_title: Visual Studio Report Designer
+description: "The Visual Studio Report Designer allows for editing CLR / type report definitions (CS or VB files) in the Visual Studio environment."
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/overview
 tags: overview,visual,studio,report,designer,tool
 published: True
@@ -21,7 +21,7 @@ The designer gets installed automatically with the [installation of the Telerik 
 
 > The Visual Studio Report Designer works only with the last installed Reporting version. If you have multiple Reporting versions installed on the machine, you will be able to edit CS/VB Reports from the last installed version. Consider the [Upgrade Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/upgrade-wizard%}) for upgrading your ReportLibrary projects.
 
-## Starting the Designer and Opening Reports
+## Starting the Visual Studio Report Designer and Opening Reports
 
 To start/open the designer, open an existing CS/VB file containing the report definition, import or create it as explained below.
 
@@ -62,7 +62,7 @@ Opening a report in the Telerik Visual Studio Report Designer lets you use its k
 
 ![Visual Studio Report Designer's key features.](images/Designer/visual-studio-report-designer-2017.png)
 
-Here is the list of the key elements exposed by the VS Report Designer. More detailеd information for all of them may be found in the article [Structure of the Visual Studio Report Designer]({%slug visual-studio-report-designer-structure%}):
+Here is the list of the key elements exposed by the VS Report Designer. More detailed information for all of them may be found in the article [Structure of the Visual Studio Report Designer]({%slug visual-studio-report-designer-structure%}):
 
 * Telerik Reporting Menu
 * Design Views Buttons
@@ -87,7 +87,7 @@ All Telerik Reporting CS/VB reports, for example, _ReportName.cs_ inherit from t
 
 You may add custom code to the _ReportName_ type in the `ReportName.cs` file, where you may find by default only the parameterless constructor of the _ReportName_ type. For example, you may add [Report Event Handlers]({%slug telerikreporting/using-reports-in-applications/program-the-report-definition/report-events/using-report-events%}), etc.
 
-## Troubleshooting
+## Visual Studio Report Designer Troubleshooting
 
 To troubleshoot problems related to the Visual Studio Report Designer and Visual Studio Project/Item Templates, please, follow the suggestions in the article [Visual Studio Report Designer Troubleshooting]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems%}).
 

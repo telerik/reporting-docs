@@ -13,9 +13,13 @@ previous_url: /installation-system-requirements, /installation-installing-from-m
 
 Telerik Reporting provides options for installing the product by [downloading the Control Panel](#downloading-the-control-panel), by [using the MSI installer file](#using-the-msi-file), or [with NuGet](#installing-with-nuget)(adds assemblies to the project, no design time support).
 
+>note After installing the product, you will need to [download and activate/update your Telerik Reporting License Key]({%slug license-key%}).
+
 ## Downloading the Control Panel
 
 You can install Telerik Reporting by downloading the Control Panel. For the complete instructions, refer to the [Progress Control Panel](https://docs.telerik.com/controlpanel/introduction) online documentation.
+
+The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) will automatically download and store your license key in your home directory. This makes it available for all projects you develop on your local machine. For details, check the article [Setting Up Telerik Reporting License Key]({%slug license-key%}).
 
 ## Using the MSI File
 

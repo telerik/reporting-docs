@@ -66,10 +66,10 @@ To download a license key for Telerik Reporting, you must have either a develope
 	![Download License Key](images/download-license-key.png)
 
 >note The [Progress Control Panel](https://www.telerik.com/download-trial-file/v2/control-panel) will automatically download and store your license key in your home directory. This makes it available for all projects you develop on your local machine.
->
-> You may automatically download and store your license key in your home directory also from the Visual Studio Extensions of Telerik Reporting:
->
-> ![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
+
+You may automatically download and store your license key in your home directory also from the Visual Studio Extensions of Telerik Reporting:
+
+![Download License Key through Visual Studio Extension for Telerik Reporting.](images/vs-extension-download-key.png)
 
 ## Activating Telerik Reporting
 

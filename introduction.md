@@ -75,17 +75,17 @@ The Report Viewers are UI components that are tailored to a specific technology.
 
 |Report Viewer|App Type|Essentials
 |:---|:---|:---
-|HTML5 Report Viewer|Web|An HTML, CSS, JavaScript, and jQuery client-side targeting all web applications working with JavaScript.
-|HTML5 MVC Report Viewer| Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications.
-|HTML5 WebForms Report Viewer|Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in WebForms applications.
-|Native Angular Report Viewer|Web|A fully native Angular widget built with Telerik UI for Angular components.
-|Angular Report Viewer|Web|An Angular component wrapping the HTML5 Report Viewer.
-|ReactJS Report Viewer|Web|A React component wrapping the HTML5 Report Viewer.
-|Blazor Report Viewer|Web|A Blazor component wrapping the HTML5 Report Viewer.
-|Native Blazor Report Viewer|Web|A fully native Blazor widget built with Telerik UI for Blazor components.
-|WinForms Report Viewer|Desktop|A composite of standard Windows Forms controls targeting WinForms and WPF projects.
-|WPF Report Viewer|Desktop|A composite of Telerik UI for WPF controls targeting WPF and WinForms projects.
-|WinUI Report Viewer|Desktop|A composite of Telerik UI for WinUI controls targeting WinUI3 projects.
+|[HTML5 Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview %})|Web|An HTML, CSS, JavaScript, and jQuery client-side targeting all web applications working with JavaScript.
+|[HTML5 MVC Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/overview %})| Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in MVC applications.
+|[HTML5 WebForms Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/overview %})|Web|A server-side wrapper allowing you to configure the HTML5 Report Viewer in WebForms applications.
+|[Native Angular Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/native-angular-report-viewer/overview %})|Web|A fully native Angular widget built with Telerik UI for Angular components.
+|[Angular Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/angular-report-viewer-overview %})|Web|An Angular component wrapping the HTML5 Report Viewer.
+|[ReactJS Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/react-report-viewer/react-report-viewer-overview %})|Web|A React component wrapping the HTML5 Report Viewer.
+|[Blazor Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/overview %})|Web|A Blazor component wrapping the HTML5 Report Viewer.
+|[Native Blazor Report Viewer]({% slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview %})|Web|A fully native Blazor widget built with Telerik UI for Blazor components.
+|[WinForms Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/overview %})|Desktop|A composite of standard Windows Forms controls targeting WinForms and WPF projects.
+|[WPF Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/overview %})|Desktop|A composite of Telerik UI for WPF controls targeting WPF and WinForms projects.
+|[WinUI Report Viewer]({% slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/overview %})|Desktop|A composite of Telerik UI for WinUI controls targeting WinUI3 projects.
 
 ## About the Demos
 

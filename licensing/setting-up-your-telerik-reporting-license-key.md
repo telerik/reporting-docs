@@ -81,7 +81,7 @@ To activate Telerik Reporting:
 	+ For Mac/Linux: `~/.telerik/telerik-license.txt`
 	+ Alternatively, copy the `telerik-license.txt` license key file to the root folder of your project. This makes the license key available only to this project. Do not commit the file to source control as this is your personal license key.
 
-1. Add the `Telerik.Licensingpackage` from NuGet.org as a project dependency: `<PackageReference Include="Telerik.Licensing" Version="1.*" />`
+1. Add the `Telerik.Licensing` package from [NuGet.org](https://www.nuget.org/) as a project dependency: `<PackageReference Include="Telerik.Licensing" Version="1.*" />`
 
 When you build the project, the `Telerik.Licensing` NuGet package automatically locates the license file and uses it to activate Telerik Reporting.
 

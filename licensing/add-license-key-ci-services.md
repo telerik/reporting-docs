@@ -47,7 +47,7 @@ env:
 
 [Secure files](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops) are an alternative approach for sharing the license key file in Azure Pipelines that does not have the size limitations of environment variables.
 
-You have two options for the file-based approach. Set the `TELERIK_LICENSE_PATH` variable or add a file named `telerik-license.txt` to the project directory or a parent directory.
+You have two options for the file-based approach. Set the `TELERIK_LICENSE_PATH` variable or add a file named `telerik-license.txt` to the project directory or parent directory.
 
 >note Make sure you’re referencing `Telerik.Licensing v1.4.10` or later.
 
@@ -55,7 +55,7 @@ You have two options for the file-based approach. Set the `TELERIK_LICENSE_PATH`
 
 With a YAML pipeline, you can use the [DownloadSecureFile@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/download-secure-file-v1?view=azure-pipelines) task, then use `$(name.secureFilePath)` to reference it. For example:
 
-````powershell
+````yaml
 - task: DownloadSecureFile@1
   name: DownloadTelerikLicenseFile # defining the 'name' is important
   displayName: 'Download Telerik License Key File'

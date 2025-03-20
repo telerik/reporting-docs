@@ -15,7 +15,7 @@ previous_url: /knowledge-base/how-to-install-libgdiplus-centos-amazon-linux
 	<tbody>
 		<tr>
 			<td>Product Version</td>
-			<td>13.0.19.116</td>
+			<td>13.0.19.116 and later</td>
 		</tr>
 		<tr>
 			<td>Product</td>

@@ -1,12 +1,11 @@
 ---
 title: How to Install libgdiplus Library on CentOS and Amazon Linux
-description: "Learn how to find and install the libgdiplus library on CentOS and its derived Amazon Linux operating system in this step by step tutorial."
+description: "Learn how to find and install the libgdiplus library on CentOS and its derived Amazon Linux operating system in this step-by-step tutorial."
 type: how-to
 page_title: Install libgdiplus library on CentOS and Amazon Linux
+published: False
 slug: how-to-install-libgdiplus-centos-amazon-linux
-position: 
 tags: Linux,CentOS,Amazon,libgdiplus,tutorial
-ticketid: 
 res_type: kb
 ---
 

@@ -30,9 +30,13 @@ The menu lets you trigger the following functionalities:
 
 Use these buttons to switch between __Design__, __Preview__, and __HTML__ view mode of the report.
 
+![Visual Studio Report Designer's design views buttons.](images/Designer/vs-design-views-buttons.png)
+
 ## Report Selector Button
 
 Located in the upper left-hand of the report designer. Clicking this button makes the report active in the __Properties__ window.
+
+![Visual Studio Report Designer's report selector button.](images/Designer/vs-report-selector-button.png)
 
 ## Rulers
 
@@ -45,6 +49,8 @@ The high-level report design consists of report sections for the report header, 
 ## Component Tray
 
 Shows the [DataSource components]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/overview%}) that are used in this report.
+
+![Visual Studio Report Designer's component tray.](images/Designer/vs-designer-component-tray.png)
 
 ## Context Menu
 

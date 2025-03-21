@@ -5,7 +5,7 @@ description: "Learn how to troubleshoot Visual Studio-related problems, what are
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/visual-studio-problems
 tags: visual,studio,report,designer,problems
 published: True
-position: 4
+position: 41
 previous_url: /troubleshooting-visual-studio-problems
 ---
 

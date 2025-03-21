@@ -5,7 +5,7 @@ description: "Learn what is the Telerik Reporting Menu shown when the Reporting 
 slug: telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/telerik-reporting-menu
 tags: telerik,reporting,menu
 published: True
-position: 2
+position: 21
 previous_url: /ui-telerik-reporting-menu
 ---
 

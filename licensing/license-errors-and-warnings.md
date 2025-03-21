@@ -9,7 +9,7 @@ position: 7
 
 # License Activation Errors and Warnings
 
-Starting with the 2025 Q1 release, using Telerik Reporting without a license or with an invalid license causes specific license warnings and errors. This article defines what an invalid license is, explains what is causing it, and describes the related license warnings and errors.
+Starting with the [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) release, using Telerik Reporting without a license or with an invalid license causes specific license warnings and errors. This article defines what an invalid license is, explains what is causing it, and describes the related license warnings and errors.
 
 The implementation of the 2025 product licensing requirements will occur in two phases:
 
@@ -68,7 +68,7 @@ Using the Telerik Reporting in a project with an expired or missing license, the
 |`No license key is detected`|TKL002|[Install a license key]({%slug license-key%}) to activate Telerik Reporting and remove the error message.|
 |`Invalid license key`|TKL003|[Download a new license key]({%slug license-key%}#downloading-the-license-key) and install it to activate Telerik Reporting and remove the error message.|
 |`Your subscription license has expired.`|TKL103; TKL104|Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key).|
-|`Your perpetual license is invalid.`|TKL102||You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following: <ul><li>Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key)</li><li>Downgrade to a Telerik Reporting version covered by your perpetual license, as specified in the message.</li></ul>|
+|`Your perpetual license is invalid.`|TKL102||You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following: <ul><li>Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key)</li><li>Downgrade to a Telerik Reporting version included in your perpetual license, as indicated in the message.</li></ul>|
 |`Your trial license has expired.`|TKL105|Purchase a commercial license to continue using the product.|
 |`Your license is not valid for the detected product(s).`|TKL101|Review the purchase options for the listed products.<br />Alternatively, remove the references to the listed packages from `package.json`.|
 

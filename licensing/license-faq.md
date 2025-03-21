@@ -26,17 +26,27 @@ You will need to obtain and install a new license key after starting a trial, re
 
 This depends on your license type.
 
-* __Perpetual licenses__ will continue to function normally with an expired license key. However, the following will happen if you update or install a package version that is released after the expiration date of the license:
+* __Perpetual licenses__ will continue to function normally with an expired license key. 
+
+	However, the following will happen if you update or install a package version that is released after the expiration date of the license:
 
 	- A watermark appears on each report document page
 	- A warning message similar to the one shown below is logged in the build log
 
-* __Subscription licenses__ will prevent you from building the application with an expired license key. Deployed applications will continue to function normally.
-* __Trial licenses__ will prevent you from building or running the application. The following will happen if you try to build or run the application:
+* __Subscription licenses__ used in deployed applications will continue to function normally.
+
+	However, the following will happen if you rebuild the application with an expired subscription license:
+	
+	- A watermark appears on each report document page
+	- A warning message similar to the one shown below is logged in the build log
+		
+* __Trial licenses__ will prevent the applications from functioning normally once the trial period has expired.
+
+	The following will happen if you try to build or run the application:
 
 	- A watermark appears on each report document page.
-	- A warning message similar to the following is logged in the build log:
-
+	- A warning message similar to the following one is logged in the build log:
+	
 ````
 Telerik and Kendo UI Licensing warning TKL002: No Telerik and Kendo UI License file found.
 Telerik and Kendo UI Licensing warning TKL002: The following locations were searched:
@@ -71,7 +81,7 @@ Note that future updates of Telerik Reporting may restrict or disable some featu
 
 ## I updated the version of the Telerik Reporting packages in my project and the invalid license errors have appeared. What is the cause of this behavior?
 
-If this happens, the possible reason is that the end date of the license activated in your application is before the release date of the newly installed product. To fix this issue:
+The most likely cause is that the newly installed Telerik Reporting was released after the expiration date of your current license. To fix this issue:
 
 1. [Download a new license key]({%slug license-key%}#downloading-the-license-key).
 1. [Activate the new license key]({%slug license-key%}#activating-telerik-reporting) in your project.
@@ -85,8 +95,6 @@ However, each individual developer must use a unique personal license key.
 ## Do I need an Internet connection to activate the license?
 
 No, the license activation and validation are performed entirely offline.
-
-The license is not validated with our services at any point in the project lifecycle.
 
 ## Do I have to add the license key to source control?
 
@@ -109,14 +117,14 @@ To enforce the use of the license key file, unset the environment variable.
 
 ## Are earlier versions of Telerik Reporting affected?
 
-No, versions released before __January 2025__ do not require a license key.
+No, versions released prior to __January 2025__ do not require a license key.
 
 ## What happens if I make a change to non-Telerik parts of the code after the subscription expires?
 
 This depends on your license:
 
 * If you have a perpetual license, you can build the application with Telerik Reporting.
-* If you have an expired subscription license, the build will fail.
+* If you have an expired subscription license, the build will generate warnings.
 
 # See Also
 

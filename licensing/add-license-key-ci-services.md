@@ -16,22 +16,13 @@ When working with CI/CD platforms, always add the `Telerik.Licensing` NuGet pack
 The license activation process in a CI/CD environment involves the following steps:
 
 1. [Download]({%slug license-key%}#downloading-the-license-key) a license key from [your Telerik account](https://www.telerik.com/account/your-licenses/license-keys).
-1. Add the `Telerik.Licensing` NuGet package as a project dependency: `<PackageReference Include="Telerik.Licensing" Version="1.*" />`
-1. [Create an environment variable](#creating-an-environment-variable) named `TELERIK_LICENSE` and add your Telerik Reporting license key as a value.
+1. [Create an environment variable](#creating-an-environment-variable) named `TELERIK_LICENSE` and add your Telerik Reporting license key as a value. Alternatively, use the [Azure Secure files approach](#using-secure-files-on-azure-devops).
 
 ## Creating an Environment Variable
 
 The recommended approach for providing your license key to the `Telerik.Licensing` NuGet package is to use environment variables. Each CI/CD platform has a different process for setting environment variables and this article lists only some of the most popular examples.
 
-### Azure Pipelines (YAML)
-
-1. Create a new [User-defined Variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch) named `TELERIK_LICENSE`.
-1. Paste the contents of the license key file as a value.
-
-### Azure Pipelines (Classic)
-
-1. Create a new [user-defined variable](https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=classic%2Cbatch) named `TELERIK_LICENSE`.
-1. Paste the contents of the license key file as a value.
+> If your CI/CD service is not listed in this article, don’t hesitate to contact the Telerik technical support.
 
 ### GitHub Actions
 
@@ -45,7 +36,71 @@ env:
 ````
 
 
-# See Also
+### Azure Pipelines (YAML)
+
+1. Create a new [secret variable](https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&tabs=yaml%2Cbatch#secret-variables) named `TELERIK_LICENSE`.
+1. Paste the contents of the license key file as a value.
+
+>note Always consider the _Variable size limit_—if you are using a [Variable Group](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=azure-pipelines-ui%2Cyaml), the license key will typically exceed the character limit for the variable values. The only way to have a long value in the Variable Group is to [link it from Azure Key Vault](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/link-variable-groups-to-key-vaults?view=azure-devops). If you cannot use a Key Vault, then use a normal pipeline variable instead (see above) or the [Secure files approach](#using-secure-files-on-azure-devops).
+
+## Using Secure Files on Azure DevOps
+
+[Secure files](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/secure-files?view=azure-devops) are an alternative approach for sharing the license key file in Azure Pipelines that does not have the size limitations of environment variables.
+
+You have two options for the file-based approach. Set the `TELERIK_LICENSE_PATH` variable or add a file named `telerik-license.txt` to the project directory or parent directory.
+
+>note Make sure you’re referencing `Telerik.Licensing v1.4.10` or later.
+
+### YAML Pipeline
+
+With a YAML pipeline, you can use the [DownloadSecureFile@1](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/download-secure-file-v1?view=azure-pipelines) task, then use `$(name.secureFilePath)` to reference it. For example:
+
+````yaml
+- task: DownloadSecureFile@1
+  name: DownloadTelerikLicenseFile # defining the 'name' is important
+  displayName: 'Download Telerik License Key File'
+  inputs:
+    secureFile: 'telerik-license.txt'
+
+- task: MSBuild@1
+  displayName: 'Build Project'
+  inputs:
+    solution: 'myapp.csproj'
+    platform: Any CPU
+    configuration: Release
+    msbuildArguments: '/p:RestorePackages=false'
+  env:
+    # use the name.secureFilePath value to set TELERIK_LICENSE_PATH
+    TELERIK_LICENSE_PATH: $(DownloadTelerikLicenseFile.secureFilePath)
+````
+
+### Classic Pipeline
+
+With a classic pipeline, use the “Download secure file” task and a PowerShell script to set `TELERIK_LICENSE_PATH` to the secure file path.
+
+1. Add a "Download secure file" task and set the output variable's name to `telerikLicense`.
+
+![Download Telerik License as secure file on Azure DevOps through Classic Pipeline.](images/download-telerik-license-secure-file.png)
+
+1. Add a PowerShell task and set the `TELERIK_LICENSE_PATH` variable to the `secureFilePath` property of the output variable:
+
+![Set Telerik License Path on Azure DevOps through Classic Pipeline.](images/set-telerik-license-path.png)
+
+The script to set the environment variable is quoted below:
+
+````powershell
+Write-Host "Setting TELERIK_LICENSE_PATH to $(telerikLicense.secureFilePath)"
+Write-Host "##vso[task.setvariable variable=TELERIK_LICENSE_PATH;]$(telerikLicense.secureFilePath)"
+````
+
+Alternatively, copy the file into the repository directory:
+
+````powershell
+echo "Copying $(telerikLicense.secureFilePath) to $(Build.Repository.LocalPath)/telerik-license.txt"
+Copy-Item -Path $(telerikLicense.secureFilePath) -Destination "$(Build.Repository.LocalPath)/telerik-license.txt" -Force
+````
+
+## See Also
 
 * [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
 * [Setting Up Your License Key]({%slug license-key%}))

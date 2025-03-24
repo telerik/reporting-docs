@@ -10,23 +10,23 @@ ticketid: 1682367
 ---
 
 ## Description
-When designing reports, aligning chart legends and text correctly is crucial for readability and aesthetics. This knowledge-based article explains how to adjust the legend text alignment in a graph within Telerik Reporting. This article also answers the following questions:
+When designing reports, aligning chart legends and text correctly is crucial for readability and aesthetics. This knowledge-based article explains how to adjust the legend text alignment in a graph within Telerik Reporting. Also answers the following questions:
 - How do I center align legend text in Telerik Reporting?
 - What property adjusts the legend text alignment in a graph?
 - How can I ensure my graph's legend text is properly centered?
 
 ## Environment
 <table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® Reporting</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>18.1.24.709</td>
-</tr>
-</tbody>
+  <tbody>
+      <tr>
+        <td>Product</td>
+        <td>Progress® Telerik® Reporting</td>
+      </tr>
+      <tr>
+        <td>Version</td>
+        <td>18.1.24.709</td>
+      </tr>
+    </tbody>
 </table>
 
 ## Solution
@@ -40,7 +40,9 @@ To center align the legend text in a graph component, follow these steps:
 
 This approach ensures that the legend text is centered, improving the visual appeal and legibility of your reports.
 
+![](images/)
+
 ## See Also
-- [Graph Product Documentation](https://docs.telerik.com/reporting/graphoverview)
-- [Styling the Graph](https://docs.telerik.com/reporting/graph-styling)
-- [Report Items Overview](https://docs.telerik.com/reporting/report-items-overview)
+* [Graph Product Documentation]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})
+* [Styling the Graph]({%slug add-pattern-styles-graph-column-stack-bars-telerik-reporting%})
+* [Report Items Overview]({%slug telerikreporting/designing-reports/report-structure/overview%})

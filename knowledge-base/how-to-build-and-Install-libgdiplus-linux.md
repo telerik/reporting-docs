@@ -28,7 +28,7 @@ previous_url: /knowledge-base/how-to-install-libgdiplus-centos-amazon-linux
 
 Step-by-step article on how to build and install libgdiplus from source and prebuilt .deb package.
 
-In a [special section](#solution-for-centos-and-amazon-linux) we will Learn how to find the repository to download and install `libgdiplus` on __CentOS__ and its derived __Amazon Linux__ operating system.
+In a [special section](#solution-for-centos-and-amazon-linux) we will learn how to find the repository to download and install `libgdiplus` on __CentOS__ and its derived __Amazon Linux__ operating system.
 
 ## General Solution
 

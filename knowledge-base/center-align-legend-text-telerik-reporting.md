@@ -40,7 +40,7 @@ To center align the legend text in a graph component, follow these steps:
 
 This approach ensures that the legend text is centered, improving the visual appeal and legibility of your reports.
 
-![](images/)
+![How to center align legend text](images/centerAlignLegendText.png)
 
 ## See Also
 * [Graph Product Documentation]({%slug telerikreporting/designing-reports/report-structure/graph/overview%})

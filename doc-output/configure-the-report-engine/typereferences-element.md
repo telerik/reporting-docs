@@ -40,7 +40,9 @@ JSON-based configuration file:
 ],
 ````
 
-The `typeReferences` element is introduced to allow only specific types from restricted assemblies, i.e., assemblies that are not listed in the `assemblyReferences` section. 
+The `typeReferences` element was introduced to let you allow only specific types from restricted assemblies, i.e., assemblies not listed in the `assemblyReferences` section.
+
+If you want to allow all the types from a DLL, use the [assemblyReferences section] instead.
 
 ## Attributes and Elements
 

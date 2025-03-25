@@ -59,6 +59,8 @@ When providing the Public Key Token, the Reporting Engine will try to match it w
 
 >tip Use only trusted assemblies that are signed with a public key token (see [Assembly (CLI)](https://en.wikipedia.org/wiki/Assembly_(CLI))) and cannot be replaced when extending the Reporting functionality in your projects, avoiding remote code execution and other malicious actions.
 
+In the `assemblyReferences` element `name` attribute, you may specify the full path to the DLL file, and the Reporting Engine will load it if it finds it there. In this case, the rest of the attributes (`version`, `culture`, and `publicKeyToken`) will be ignored.
+
 ### Report Viewers
 
 Don't expose sensitive information when working with the Report Viewers. Consider the following:

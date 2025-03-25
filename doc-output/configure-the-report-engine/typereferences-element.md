@@ -40,9 +40,9 @@ JSON-based configuration file:
 ],
 ````
 
-The `typeReferences` element was introduced to let you allow only specific types from restricted assemblies, i.e., assemblies not listed in the `assemblyReferences` section.
+The `typeReferences` element was introduced to let you allow only specific types from restricted assemblies, i.e., assemblies not listed in the `assemblyReferences` element.
 
-If you want to allow all the types from a DLL, use the [assemblyReferences section] instead.
+If you want to allow all the types from a DLL, use the [assemblyReferences element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}). instead.
 
 ## Attributes and Elements
 

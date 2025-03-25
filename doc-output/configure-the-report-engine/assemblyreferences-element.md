@@ -53,6 +53,8 @@ The following sections describe attributes, child elements, and parent elements.
 
 When providing the Public Key Token, the Reporting Engine will try to match it with the Public Key Token of the found DLL. It will not load an assembly with the same name and a different Public Key Token and will throw an exception instead. If the Public Key Token is omitted, the Reporting Engine will load the first DLL, which name matches the provided Assembly Name. Potentially, this may allow bad agents to replace trusted assemblies with malicious ones and constitutes a security vulnerability. The Public Key Token provides an extra security layer to your reports.
 
+In the `assemblyReferences` element `name` attribute, you may specify the full path to the DLL file, and the Reporting Engine will load it if it finds it there. In this case, the rest of the attributes (`version`, `culture`, and `publicKeyToken`) will be ignored.
+
 ## Example
 
 The following code example demonstrates how to configure the reporting engine to use MyUserFunctionsAssembly assembly as a source for user functions. In this example, it would also search for assemblies in MyDir and SubDir application base sub-directories as we have explicitly instructed via the `<probing>` Element. This is not mandatory, and when not specified, it will search in the application base, which is the root location where the application is being executed.

@@ -11,7 +11,7 @@ previous_url: /getting-started/first-steps, /first-steps
 
 # Designing Your First Telerik Report
 
-This guide targets [users who need to quickly get up and running with Telerik Reporting](https://www.telerik.com/products/reporting/embedded-reporting.aspx) and design and export a report.
+This guide targets users who need to quickly get up and running with <a href="https://www.telerik.com/products/reporting/embedded-reporting.aspx" target="_blank">Telerik Reporting</a> and design and export a report.
 
 * First, you will install Telerik Reporting from an MSI file and load the demos.
 
@@ -39,9 +39,9 @@ Let's start with the installation of the Telerik Reporting controls, services, a
 
 1. Log in to your [Telerik account](https://www.telerik.com/account). Click __Downloads__ and select __Progress Telerik Reporting__.
 
-1. Click __Latest public version__, download the MSI installation file, and run it.
+1. Download the latest version of the MSI file in the __Installation__ section.
 
-1. In the __Customization dialog__ of the Wizard, click __Examples Setup__ to set the examples and the used connection string.
+1. In the __Customization__ step, make sure that the Examples are selected for installation.
 
 	The examples use the MS SQL Server AdventureWorks sample database which you will need later for the report.
 

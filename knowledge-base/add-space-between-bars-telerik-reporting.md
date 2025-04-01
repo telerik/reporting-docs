@@ -12,9 +12,7 @@ ticketid: 1654483
 ## Environment
 
 | Product | Author |  
-
-| --- | ---- |  
-
+| ---- | ---- |  
 | Telerik Report Designer |[Desislava Yordanova](https://www.telerik.com/blogs/author/desislava-yordanova)| 
 
 ## Description

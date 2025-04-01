@@ -82,7 +82,7 @@ So, first, let's connect to the data and, then, you'll create the table to prese
 1. On the screen that loads, fill in the __Select Statement__ field with the query below. The query will extract only the first 14 employees and they will be listed in ascending order according to their `id`, that is, the employee with an `id=1` will be the first one, the employee with an `id=2` will come second, and so on.
 
 	````SQL
-SELECT
+	SELECT
 		[HumanResources].[vEmployee].[EmployeeID] ,
 		[HumanResources].[vEmployee].[FirstName],
 		[HumanResources].[vEmployee].[LastName],
@@ -93,10 +93,11 @@ SELECT
 	ORDER BY 1 ASC
 ````
 
-
 1. Click __Next__ to execute the query and the __Execute Query...__ button on the next screen to preview the result. Then, click __Finish__.
 
-1. From the property grid, change the name of the data source to `tableDataSource` so you can later refer it and render its data in the report.
+1. In the __Properties__ pane (__Property Browser__) on the right, change the name of the data source to `tableDataSource` so you can later refer it and render its data in the report.
+
+   ![Renaming the SqlDataSource in the Telerik Standalone Report Designer](images/property-browser-pane.png)
 
 1. Select the __datailSection__. From the toolbar, go to __Insert__ > __Table__ > __Table Wizard__. Under __Data Sources__, select __tableDataSource__ and click __Next__.
 

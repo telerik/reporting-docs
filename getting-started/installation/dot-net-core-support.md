@@ -1,7 +1,7 @@
 ---
 title: .NET Support
-page_title: Using Telerik Reporting with .NET 6+ or Standard
-description:  "Learn how to use Telerik Reporting in .NET 6, .NET 8, .NET 9 or .NET Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
+page_title: Using Telerik Reporting with .NET 8+ or Standard
+description:  "Learn how to use Telerik Reporting in .NET 8, .NET 9 or .NET Standard applications on Windows, Linux, and macOS platforms and how to deploy them in Docker images."
 slug: telerikreporting/using-reports-in-applications/dot-net-core-support
 previous_url: /using-reports-in-applications/dot-net-core-support, /use-reports-in-net-core-apps
 tags: telerik, reporting, dotnet, core, support, getting, started, download, and, installation
@@ -13,13 +13,13 @@ position: 4
 
 Starting with version [`R1 2019 (13.0.19.116)`](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-r1-2019-13-0-19-116) Telerik Reporting provides a set of assemblies and NuGet packages that are designed for .NET projects and enable you to use Telerik reports in .NET applications on Windows, Linux, and macOS platforms.
 
-The NuGet packages are available in the [Telerik NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net6.0\`, and `\Bin\net6.0-windows\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
+The NuGet packages are available in the [Telerik NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}). Additionally, the assemblies are available in the `\Bin\netstandard2.0\`, `\Bin\net8.0\`, and `\Bin\net8.0-windows\` folders located in the Telerik Reporting installation directory.
 
-The assemblies target .NET Standard 2.0 and the desktop viewers target .NET 6.0, .NET 8.0, or .NET 9, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability.
+The assemblies target .NET Standard 2.0 and the desktop viewers target .NET 8.0 or .NET 9, which ensures compatibility with a greater variety of frameworks and applications. Also, the NuGet packages resolve the external dependencies to provide better dependency management and code portability.
 
 ## Requirements
 
-__.NET 6.0__, __.NET 8.0__ or __.NET 9.0__.
+__.NET 8.0__ or __.NET 9.0__.
 
 To use NuGet, you are required to provide the following NuGet packages. Note that when using the Telerik NuGet packages, the required dependencies are resolved automatically. Otherwise, you need to add them manually to the project.
 
@@ -206,7 +206,7 @@ RUN apt-get update \
 
 Telerik Reporting ships with ready-made .NET examples demonstrating how to show the sample reports in an ASP.NET Core, WinForms, and WPF application. The ASP.NET Core demo also shows how to inject an `appsettings.json` configuration file to the controller and how to initialize a WebHostBuilder so it runs under Windows and Linux.
 
-Sample projects are available in the subfolders with the corresponding framework names in the `\Examples\CSharp` subfolder of the Telerik Reporting installation directory. For example, our .NET 6 ASP.NET Core demo may be found by default in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\Html5IntegrationDemo`.
+Sample projects are available in the subfolders with the corresponding framework names in the `\Examples\CSharp` subfolder of the Telerik Reporting installation directory. For example, our .NET 8 ASP.NET Core demo may be found by default in `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 8\Html5IntegrationDemo`.
 
 ### Docker Samples
 

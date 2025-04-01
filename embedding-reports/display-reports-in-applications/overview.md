@@ -26,7 +26,7 @@ Telerik Reporting provides the following report viewers:
 	+ *Vue.js*. A step-by-step example for integrating the viewer in a Vue.js application can be found in the [How to use HTML5 Report Viewer in Vue.js]({%slug how-to-use-html5-viewer-in-vue-js%}) KB article
 	+ *ASP.NET Core*. The exact implementation depends on the framework version. Use the following resources for the recommended approach:
 
-		- [Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 6, .NET 8 and .NET 9]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application%})
+		- [Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 8 and .NET 9]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application%})
 
 * [Native Blazor Report Viewer]({%slug telerikreporting/embedding-reports/display-reports-in-applications/web-application/native-blazor-report-viewer/overview%})
 

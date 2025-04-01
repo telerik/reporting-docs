@@ -1,7 +1,7 @@
 ---
 title: Using in .NET
 page_title: HTML5 Report Viewer in ASP.NET Core - Telerik Reporting
-description: "Learn how to add an HTML5 Report Viewer in an ASP.NET Core in .NET 6, .NET 7, and .NET 8 web app."
+description: "Learn how to add an HTML5 Report Viewer in an ASP.NET Core in .NET 8 and .NET 9 web app."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application
 tags: how,use,html5,report,viewer,asp.net,core,.net,application
 published: True
@@ -9,9 +9,9 @@ position: 5
 previous_url: /manual-setup-of-html5-report-viewer-in-aspnetcore-net5
 ---
 
-# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 6, .NET 8 and .NET 9
+# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 8 and .NET 9
 
-This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET 6](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-6.0?view=aspnetcore-6.0) web application.
+This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET 8+](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-6.0?view=aspnetcore-8.0) web application.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ app.UseStaticFiles();
 <!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET 6</title>
+	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET 8+</title>
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
@@ -102,7 +102,7 @@ app.UseStaticFiles();
 
 ## Demo project
 
-A full example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\Html5IntegrationDemo`. Examples are available also for .NET 8 and .NET 9 in the corresponding subfolders.
+A full example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 8\Html5IntegrationDemo`. Examples are available also for .NET 8 and .NET 9 in the corresponding subfolders.
 
 ## See Also
 

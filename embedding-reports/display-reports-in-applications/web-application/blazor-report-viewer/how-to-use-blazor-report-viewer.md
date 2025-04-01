@@ -17,7 +17,7 @@ previous_url: /blazor-report-viewer-how-to-use
 
 * [Visual Studio 2019, version 16.4 or later](https://visualstudio.microsoft.com/vs/)
 
-* Existing .NET 6 and higher Blazor Server App or .NET 6 and higher hosted Blazor WebAssembly App
+* Existing .NET 8 and higher Blazor Server App or .NET 8 and higher hosted Blazor WebAssembly App
 
 * The report viewer consumes reports generated and served from a running Telerik Reporting Web Service. Such can be referenced from another application or Telerik Report Server instance, or it can be hosted within the Blazor Server application.
 
@@ -38,7 +38,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1. Add NuGet package reference to the `Telerik.ReportViewer.Blazor` package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the Visual Studio setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
-1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET 6+ is used) can serve static files:
+1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET 8+ is used) can serve static files:
 
 	````CSharp
 app.UseStaticFiles();

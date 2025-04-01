@@ -43,7 +43,7 @@ Here are the Desktop Report Viewers that may be embedded in VB desktop projects 
 * [Adding the Windows Forms Report Viewer to a Windows Forms .NET Framework Project]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/windows-forms-application/how-to-add-report-viewer-to-a-windows-forms'-.net-framework-project%})
 * [Integrating the WPF Report Viewer in .NET Framework]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/wpf-application/how-to-add-report-viewer-to-a-wpf-.net-framework-project%})
 
-##### Implementing in VB projects targeting .NET 6.0 and above
+##### Implementing in VB projects targeting .NET 8.0 and above
 
 The following Desktop Report Viewers may be configured manually in VB desktop projects targeting .NET. There are no Visual Studio Reporting templates available for Visual Basic projects targeting .NET:
 
@@ -77,7 +77,7 @@ Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     >important Sample WPF project may be downloaded from the Telerik GitHub Reporting Samples repository: [VB Reporting-WPFViewerNet8](https://github.com/telerik/reporting-samples/tree/master/VB%20Reporting/WPFViewerNet8).
 
-* [Integrating the WinUI Report Viewer in .NET 6]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
+* [Integrating the WinUI Report Viewer in .NET 8]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/winui-3-desktop-application/how-to-add-report-viewer-to-a-.net-5-application%})
 
     Microsoft doesn't provide VB templates for WinUI - [Create your first WinUI 3 (Windows App SDK) project](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/create-your-first-winui3-app). Technically, it should be possible to use also VB for WinUI projects, however, this may be much more complicated without using the Visual Studio templates.
 
@@ -133,17 +133,17 @@ The steps for integrating the viewers in ASP.NET MVC and Web Forms projects are 
 * [Using HTML5 ASP.NET MVC Report Viewer With Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-mvc-report-viewer/how-to-use-html5-asp.net-mvc-report-viewer-with-rest-service%})
 * [Using the HTML5 ASP.NET Web Forms Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-asp.net-web-forms-report-viewer/how-to-use-html5-asp.net-web-forms-report-viewer-with-rest-service%})
 
-## VB.NET Web Reporting Applications in .NET 6.0 and above
+## VB.NET Web Reporting Applications in .NET 8.0 and above
 
 Microsoft doesn't have plans to provide Visual Studio templates for ASP.NET Core in Visual Basic as explained in the post [Can VB be used for a net core api project?](https://learn.microsoft.com/en-us/answers/questions/773434/can-vb-be-used-for-a-net-core-api-project) Therefore, we don't provide examples or steps for implementing such applications in Visual Basic, as it may require significantly more efforts than with Visual Studio templates.
 
-### Web Report Designer in .NET 6.0+
+### Web Report Designer in .NET 8.0+
 
 As a pure HTML/CSS/JS client-side jQuery widget the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) can be used in any web reporting application, including those coded in Visual Basic.
 
 The Web Report Designer requires a Report Designer REST service, whose fully functional implementation resides in the `Telerik.WebReportDesigner.Services` assembly/package.
 
-### Displaying Reports in .NET 6.0+ VB Web Reporting Applications
+### Displaying Reports in .NET 8.0+ VB Web Reporting Applications
 
 The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) is an HTML/CSS/JS client-side widget suitable for any web application that works with JavaScript. This makes it the perfect widget for displaying Telerik Reporting Reports in all Web Reporting Applications, including those implemented in Visual Basic.
 

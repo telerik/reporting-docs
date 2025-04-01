@@ -51,7 +51,7 @@ XML-based configuration file:
 		</resourceResolver>-->
 		<!-- The element below represents a custom implementation of resource resolver-->
 		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-		e.g. "CSharp.Net6.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net6.Html5IntegrationDemo"-->
+		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<resourceResolver provider="custom">
 			<parameters>
 				<parameter name="typeName" value="Namespace.CustomResourceResolverClass, AssemblyName" />
@@ -60,7 +60,7 @@ XML-based configuration file:
 		</resourceResolver>
 		<!-- The element below represents a custom implementation of a sharedDataSourcer resolver-->
 		<!-- The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-		e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"-->
+		e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"-->
 		<sharedResourceResolver provider="custom">
 			<parameters>
 				<parameter name="typeName" value="Namespace.CustomSharedDataSourceResolverClass, AssemblyName" />
@@ -92,7 +92,7 @@ JSON-based configuration file:
 			//]
 			// The element below represents a custom implementation of a resource resolver
 			//The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net6.Html5IntegrationDemo"
+			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomResourceResolver, CSharp.Net8.Html5IntegrationDemo"
 			"provider": "custom",
 			"parameters": [
 				{
@@ -117,7 +117,7 @@ JSON-based configuration file:
 
 			// The element below represents an implementation of a SharedDataSource resolver that uses a custom type provider
 			// The typeName should include first the class of the custom ResourceResolver(including the namespace) and the second part, be separated by a comma, is the name of the assembly that will contain that code(can be the same project)
-			// e.g. "CSharp.Net6.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net6.Html5IntegrationDemo"
+			// e.g. "CSharp.Net8.Html5IntegrationDemo.CustomSharedDataSourceResolver, CSharp.Net8.Html5IntegrationDemo"
 			"provider": "custom",
 				"parameters": [
 				{

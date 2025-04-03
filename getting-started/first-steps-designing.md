@@ -99,9 +99,9 @@ So, first, let's connect to the data and, then, you'll create the table to prese
 
    ![Renaming the SqlDataSource in the Telerik Standalone Report Designer](images/property-browser-pane.png)
 
-1. Select the __datailSection__. From the toolbar, go to __Insert__ > __Table__ > __Table Wizard__. Under __Data Sources__, select __tableDataSource__ and click __Next__.
+1. Select the __detailSection__ (the middle section of the report). From the toolbar, go to __Insert__ > __Table__ > __Table Wizard__. Under __Data Sources__, select __tableDataSource__ and click __Next__.
 
-1. On the screen that loads, mark all columns and drag them to the __Table Columns__. Click __Next__.
+1. On the screen that loads, select all listed data source fields and drag them to the __Table Columns__. Click __Next__.
 
 1. From the window that opens, select a predefined style for your table, for example, __Office__. Click __Next__ and __Finish__.
 
@@ -109,29 +109,39 @@ So, first, let's connect to the data and, then, you'll create the table to prese
 
 Now, you may add some styling to the table and define its title.
 
-1. Select the table and apply the following __Styling__ to it:
+1. Select the table, and in the __Properties__ pane expand the __Style__ node:
 
 	+ Set __BackgroundColor__ and __BorderColor__ > __Default__ to `34, 181, 115`.
 
 	+ Set __Font > Name__ to `SegoeUI`.
 
-	+ Mark the table header and set the __Color__ property to `White`.
+	+ Select the table header and set the __Color__ property to `White`.
 
-1. To set the title of the table, add a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) above it in the __detailSection__ and set its __Value__ to `Employees`. Center the text by setting __Style__ > __TextAlign__ to `Center`.
+1. To set the title of the table, add a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) above it:
+	
+	+ Click the __detailSection__ and select __Insert__ > __Text Box__.
+	
+	+ In the __Properties__ pane, set the __Value__ of the Text Box to `Employees`. 
+	
+	+ Center the text by setting __Style__ > __TextAlign__ to `Center`.
 
-1. Let's insert two [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) on the sides of the title. Set the __ShapeType__ to `Horizontal Line` and the __Color__ to `Silver`.
+1. Let's insert two [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) on the sides of the title:
+
+	+ Select __Insert__ > __Shape__ from the __Report Items__ section.
+
+	+ Set the __ShapeType__ to `Horizontal Line` and the __Color__ to `Silver`.
 
 ## Step 5: Set the Page Header and Footer
 
 In this step, you'll define and style the page header and footer of your report. First, let's start with the header:
 
-1. Click __pageHeaderSection__. From the property grid, select __Style__ > __BackgroundColor__. Set the color to `0, 105, 104`.
+1. Click the __pageHeaderSection__. From the __Properties__ pane, select __Style__ > __BackgroundColor__. Set the color to `0, 105, 104`.
 
 1. To add the title, select __Insert__ from the toolbar. Click __TextBox__ to automatically place the TextBox in the header.
 
-1. Set the __Value__ to `Telerik`. Add one more TextBoxes with text `Demo Report`.
+1. Set the __Value__ to `Telerik`. Add one more TextBoxe with text `Demo Report`.
 
-1. Choose the two textboxes by holding the `Shift` or `Ctrl` key while selecting with the left mouse button. From the property grid, apply the following settings:
+1. Select both TextBoxes by holding the `Shift` or `Ctrl` key while clicking them with the left mouse button. From the __Properties__ pane, apply the following settings:
 
 	+ Set __Style__ > __Font__ > __Name__ to `Segoe UI`.
 
@@ -139,11 +149,11 @@ In this step, you'll define and style the page header and footer of your report.
 
 	+ Set __Style__ > __TextAlign__ to `Center`.
 
-1. Add a Shape between the textboxes. Set the __ShapeType__ to `Vertical Line` and the __LineColor__ property to `White`.
+1. Add a Shape between the TextBoxes. Set the __ShapeType__ to `Vertical Line` and the __LineColor__ property to `White`.
 
 After the report header is all set, let's move on to the footer of the report:
 
-1. Click __pageFooterSection__. Add a Textbox which will display the current date and time.
+1. Click the __pageFooterSection__. Add a Textbox which will display the current date and time.
 
 1. Set the __Expression__ of the __Value__ property to the `=Now()` [Date and Time function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%}).
 

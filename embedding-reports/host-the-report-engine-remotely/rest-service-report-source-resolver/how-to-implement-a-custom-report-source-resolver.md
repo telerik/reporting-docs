@@ -1,7 +1,7 @@
 ---
 title: Implementing a Custom ReportSource Resolver
 page_title: Implementing a Custom ReportSource Resolver Explained with Example
-description: "Learn how to Implement a Custom ReportSource Resolver for the Telerik Reporting REST Service and how to chain it with other resolvers through the fallback mechanism."
+description: "Learn how to implement a Custom ReportSource Resolver for the Telerik Reporting REST Service and how to chain it with other resolvers through the fallback mechanism."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver
 tags: how,to,implement,a,custom,report,source,resolver
 published: True
@@ -13,21 +13,23 @@ previous_url: /telerik-reporting-rest-custom-report-resolver,/embedding-reports/
 
 This article explains how to create a custom report source resolver for the __Telerik Reporting REST service__. In this example, the resolver's purpose will be to return a [XmlReportSource](/api/Telerik.Reporting.XmlReportSource) with an XML report definition obtained from an SQL Server database.
 
+>tip The report sources passed from the [Report Viewers using Reporting REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/how-to-set-reportsource-for-report-viewers%}#set-up-report-viewers-that-operate-via-telerik-reporting-services) and [Navigate To Report action]({%slug telerikreporting/designing-reports/adding-interactivity-to-reports/actions/drillthrough-report-action%}) are resolved by the ReportSource Resolver of the service. The ReportSource of the [SubReport item]({%slug telerikreporting/designing-reports/report-structure/subreport%}) is resolved in the context of the Reporting Engine and doesn't use the ReportSource Resolver of the REST Service. Use the ReportDocument Resolver to resolve them with custom code as explained in [Implementing Custom ReportSource and ReportDocument Resolvers To Fully Control the Report in Run Time]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-use-custom-report-source-resolver-and-custom-report-document-resolver%}).
+
 1. Create a class which implements the  [IReportSourceResolver](/api/Telerik.Reporting.Services.IReportSourceResolver) interface. Its [Resolve](/api/Telerik.Reporting.Services.IReportSourceResolver#Telerik_Reporting_Services_IReportSourceResolver_Resolve_System_String_Telerik_Reporting_Services_OperationOrigin_System_Collections_Generic_IDictionary{System_String_System_Object}_) method will be called whenever the engine needs to create a [ReportSource](/api/Telerik.Reporting.ReportSource) instance based on the parameter named *report*. The value of the *report* parameter will be initialized with the value of the __Report__ property of the report viewer's ReportSource object.
 
 	{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_Implementation}}
 	{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportResolver_Implementation}}
 
 
-1. Find the `ReportSourceResolver` property of the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration), and set it to an instance of the custom report source resolver or to a chain of resolver instances including the custom one:
+1. Find the `ReportSourceResolver` property of the [ReportServiceConfiguration](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase#Telerik_Reporting_Services_WebApi_ReportsControllerBase_ReportServiceConfiguration), and set it to an instance of the custom report source resolver or to a chain of resolver instances, including the custom one:
 
-	* In `.NET Framework` the property is in the implementation of the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class
+	* In `.NET Framework`, the property is in the implementation of the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class
 
 		{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportResolver_ReportsController_Implementation}}
 		{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportResolver_ReportsController_Implementation}}
 
 
-	* In `.NET` and `.NET Core` the `ReportServiceConfiguration` is usually added as a Singleton in the DI Container in the starting point of the application:
+	* In `.NET` and `.NET Core`, the `ReportServiceConfiguration` is usually added as a Singleton in the DI Container in the starting point of the application:
 
 		````C#
 // Configure dependencies for ReportsController.
@@ -60,7 +62,7 @@ This article explains how to create a custom report source resolver for the __Te
 ````
 
 
-1. To create the database use the following script:
+1. To create the database, use the following script:
 
 	````SQL
 USE [master]
@@ -82,7 +84,7 @@ USE [master]
 ````
 
 
-1. To enter some data into the database you can manually edit the __Reports__ table. XML report definitions can be obtained from the sample __.trdx__ report files installed together with the product and are located in __[Telerik_Reporting_Install_Dir]\Report Designer\Examples__. In newer versions, all sample reports of the Standalone Report Designer are in TRDP format. You can use the *Standalone Report Designer - File - Save As* option to convert them to TRDX files.
+1. To enter some data into the database, you can manually edit the __Reports__ table. XML report definitions can be obtained from the sample __.trdx__ report files installed together with the product and are located in __[Telerik_Reporting_Install_Dir]\Report Designer\Examples__. In newer versions, all sample reports of the Standalone Report Designer are in TRDP format. You can use the *Standalone Report Designer - File - Save As* option to convert them to TRDX files.
 
 ## How to implement and use custom IReportSourceResolver with fallback mechanism:
 
@@ -91,7 +93,7 @@ USE [master]
 	{{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=CustomReportSourceResolverFallBack_Implementation}}
 	{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomReportSourceResolverFallBack_Implementation}}
 
-1. Add to the `ReportServiceConfiguration` the `IReportSourceResolver` implementations in a chain. Thus the custom one will be executed first, if it fails the second one, and so on.
+1. Add to the `ReportServiceConfiguration` the `IReportSourceResolver` implementations in a chain. Thus, the custom one will be executed first, if it fails the second one, and so on.
 
 	* In `.NET Framework` the `ReportServiceConfiguration` is configured in the implementation of the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) class
 
@@ -99,7 +101,7 @@ USE [master]
 		{{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=CustomResolverWithFallback_ReportsController_Implementation}}
 
 
-	* In `.NET` and `.NET Core` the `ReportServiceConfiguration` is usually added as a Singleton in the DI Container at the starting point of the application:
+	* In `.NET` and `.NET Core`, the `ReportServiceConfiguration` is usually added as a Singleton in the DI Container at the starting point of the application:
 
 		````C#
 // Configure dependencies for ReportsController.
@@ -120,4 +122,4 @@ USE [master]
 	You can use for fallback the default IReportSourceResolver implementations:
 
 	+ TypeReportSourceResolver - Resolves IReportDocument from Assembly Qualified Name of a Report or ReportBook class
-	+ UriReportSourceResolver - Resolves IReportDocument from the physical path to `TRDP`, `TRDX` or `TRBP` file
+	+ UriReportSourceResolver - Resolves IReportDocument from the physical path to `TRDP`, `TRDX`, or `TRBP` file

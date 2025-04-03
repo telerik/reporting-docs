@@ -2,7 +2,7 @@
 title: TypeReferences Element
 page_title: TypeReferences Element Configuration
 description: "Learn how to set up the TypeReferences Element, allowing you to use custom user functions in the report and create ObjectDataSource components."
-slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/TypeReferences-element
+slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element
 tags: typeReferences,element, user, function, ObjectDataSource
 published: True
 position: 11

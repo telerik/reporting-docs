@@ -1,8 +1,8 @@
 ---
-title: typeReferences Element
-page_title: typeReferences Element Configuration
-description: "Learn how to set up the typeReferences Element allowing you to use custom user functions in the report and create ObjectDataSource components."
-slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element
+title: TypeReferences Element
+page_title: TypeReferences Element Configuration
+description: "Learn how to set up the TypeReferences Element, allowing you to use custom user functions in the report and create ObjectDataSource components."
+slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/TypeReferences-element
 tags: typeReferences,element, user, function, ObjectDataSource
 published: True
 position: 11
@@ -17,11 +17,11 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# typeReferences Element Overview
+# TypeReferences Element Overview
 
 >note This element was first introduced in the [2024 Q1 (18.0.24.305)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q1-(18-0-24-305)) Reporting version.
 
-Defines a collection of type references used by the Reporting Engine to resolve the custom types permitted to be used during the design and processing stages. The assemblies used by the types in the `typeReferences` section are loaded into the application domain if the type is successfully resolved, so it's not necessary to also declare the assembly in the `assemblyReferences` section.
+Defines a collection of type references used by the Reporting Engine to resolve the custom types permitted to be used during the design and processing stages. The assemblies used by the types in the `TypeReferences` section are loaded into the application domain if the type is successfully resolved, so it's not necessary to also declare the assembly in the `assemblyReferences` section.
 
 XML-based configuration file:
 
@@ -36,11 +36,11 @@ XML-based configuration file:
 JSON-based configuration file:
 
 ````JSON
-"typeReferences": [
+"TypeReferences": [
 ],
 ````
 
-The `typeReferences` element was introduced to let you allow only specific types from restricted assemblies, i.e., assemblies not listed in the `assemblyReferences` element.
+The `TypeReferences` element was introduced to let you allow only specific types from restricted assemblies, i.e., assemblies not listed in the `assemblyReferences` element.
 
 If you want to allow all the types from a DLL, use the [assemblyReferences element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}). instead.
 
@@ -54,7 +54,7 @@ The following sections describe attributes, child elements, and parent elements.
 |Child Elements|<ul><li>__add__ - Optional element. Adds a type reference to the collection.</li><li>__clear__ - Optional element. Removes all references to inherited type names, allowing only the references that are added by the current add element.</li><li>__remove__ - Optional element. Removes a reference to an inherited type name from the collection.</li></ul>|
 |Parent Elements|<ul><li>__configuration__ - Specifies the root element in every configuration file that is used by the common language runtime and the .NET Framework applications.</li><li>__Telerik.Reporting__ - Configures all settings that Telerik Reporting Engine uses.</li></ul>|
 
-When providing the Public Key Token, the Reporting Engine will try to match it with the Public Key Token of the found DLL. It will not load an assembly with the same name and a different Public Key Token and will throw an exception instead. If the Public Key Token is omitted in the configuration, the Reporting Engine will load the first DLL, which name matches the provided Assembly Name. Potentially, this may allow bad agents to replace trusted assemblies with malicious ones and constitutes a security vulnerability. The Public Key Token provides an extra security layer to your reports.
+When providing the Public Key Token, the Reporting Engine will try to match it with the Public Key Token of the found DLL. It will not load an assembly with the same name and a different Public Key Token and will throw an exception instead. If the Public Key Token is omitted in the configuration, the Reporting Engine will load the first DLL, which name matches the provided Assembly Name. Potentially, this may allow bad agents to replace trusted assemblies with malicious ones and constitutes a security vulnerability. Since the Public Key Token provides an extra security layer to your application, we advise to always include it in the configuration file.
 
 ## Example
 
@@ -81,7 +81,7 @@ JSON-based configuration file:
 
 ````JSON
 "telerikReporting": {
-	"typeReferences": [
+	"TypeReferences": [
 		{
 			"typeName": "MyNamespace.MyClassName",
 			"assemblyName": "MyAssemblyName",

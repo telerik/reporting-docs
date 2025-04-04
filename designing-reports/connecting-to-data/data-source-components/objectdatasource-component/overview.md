@@ -44,7 +44,7 @@ Any of the following data sources can be assigned to the DataSource property of 
 ## Supported developer platforms
 
 * .NET Framework 4.6.2 and above
-* .NET 6 and above
+* .NET 8 and above
 * .NET Standard 2.0 and above
 
 ## See Also

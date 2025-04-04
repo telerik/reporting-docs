@@ -53,7 +53,7 @@ The Windows Forms Report Viewer renders buttons and inputs in the dedicated tool
 
 * Visual Studio 2012 or later.
 * .NET Framework 4 or above (.NET Framework 4 __Client Profile__ is not supported)
-* .NET 6+
+* .NET 8+
 
 ## How It Works
 

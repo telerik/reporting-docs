@@ -175,7 +175,7 @@ function onNotificationShowing(e, args) {
 
 ### `viewerInitializing` Event
 
-The `viewerInitializing` event will be fired when the Web Report Designer widget is first initialized on the page. The event may be used to furthet modify the viewer options and attach event handlers to the events of the report viewer.
+The `viewerInitializing` event will be fired when the Web Report Designer widget is first initialized on the page. The event may be used to further modify the viewer options and attach event handlers to the events of the report viewer.
 
 ````JavaScript
 $(document).ready(function () {

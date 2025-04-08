@@ -11,7 +11,7 @@ previous_url: /manual-setup-of-html5-report-viewer-in-aspnetcore-net5
 
 # Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 8 and .NET 9
 
-This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET 8+](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-6.0?view=aspnetcore-8.0) web application.
+This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET {{site.mindotnetversion}}+](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-6.0?view=aspnetcore-8.0) web application.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ app.UseStaticFiles();
 <!DOCTYPE html>
 	<html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET 8+</title>
+	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET {{site.mindotnetversion}}+</title>
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>

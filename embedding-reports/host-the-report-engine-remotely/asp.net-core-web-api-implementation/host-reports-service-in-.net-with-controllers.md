@@ -2,14 +2,14 @@
 
 title: Hosting in .NET with Controllers
 page_title: Hosting the Reporting REST Service in ASP.NET Core with Controllers
-description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET 8+ and above with Top-Level Statements and controller-based APIs in this step by step tutorial."
+description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ and above with Top-Level Statements and controller-based APIs in this step by step tutorial."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers
 tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,statements,and,controllers
 published: True
 position: 3
 ---
 
-# Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 8+ with Top-Level Statements
+# Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Top-Level Statements
 
 This article guides you how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET 8 and higher Web Application with Top-Level Statements implementation. Check the [Microsoft Tutorial: Explore ideas using top-level statements to build code as you learn](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) for general details on the approach.
 
@@ -32,7 +32,7 @@ Once you have configured the rest of the options to your liking, click `Finish` 
 
 ## Manually configuring the Telerik.Reporting REST Service
 
-### Creating a Sample ASP.NET Core in .NET 8+ Project
+### Creating a Sample ASP.NET Core in .NET {{site.mindotnetversion}}+ Project
 
 First, you need to create a new ASP.NET Core project:
 
@@ -50,7 +50,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
 1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder.
 
-> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET 8+ projects.
+> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
 
 ### Add the Required Dependencies
 

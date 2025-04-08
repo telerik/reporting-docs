@@ -10,7 +10,7 @@ position: 2
 
 # Implement a Common Master-Detail Report Scenario
 
-In this step-by-step tutorial, we will improve the basic report created in the previous tutorial [Embedding the Web Report Designer in .NET 8 and Creating Your First Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%}) by adding a common business requirement to click a data series to show more details in a child report.
+In this step-by-step tutorial, we will improve the basic report created in the previous tutorial [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%}) by adding a common business requirement to click a data series to show more details in a child report.
 
 * First, we will create a second report to display the details data.
 * Then, we will learn how to add a [SharedDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/shareddatasource-component%}) to share data source between reports.
@@ -165,7 +165,7 @@ Our first goal is to create a new report within the Web Report Designer. It will
 
 * [Video tutorial 'Getting Started with the Web Report Designer: Part 2'](https://www.youtube.com/watch?v=DXKlgq-MYIU)
 * [Video tutorial 'Getting Started with the Web Report Designer: Part 1'](https://www.youtube.com/watch?v=L-utkcB8-5c)
-* [Embedding the Web Report Designer in .NET 8 and Creating Your First Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
+* [Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%})
 * [Web Report Designer](%{slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Demo Page for Telerik Reporting](https://demos.telerik.com/reporting)
 * [Telerik Reporting Homepage](https://www.telerik.com/products/reporting)

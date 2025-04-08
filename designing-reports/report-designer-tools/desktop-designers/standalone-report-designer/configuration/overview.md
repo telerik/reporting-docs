@@ -161,14 +161,14 @@ The following code example shows the default `Telerik.ReportDesigner.Net.dll.con
 	<Telerik.ReportDesigner DefaultWorkingDir="Examples">
 	</Telerik.ReportDesigner>
 	<Telerik.Reporting>
-	<!-- Add assembly references (in .NET8 and later assemblies are resolved by file name) -->
+	<!-- Add assembly references (in .NET{{site.mindotnetversion}} and later assemblies are resolved by file name) -->
 	<!--
 		<AssemblyReferences>
 			<add name="MyUserFunctions" />
 			<add name="MyBusinessObjects" />
 		</AssemblyReferences>
 	-->
-	<!-- Add trace listeners (in .NET8 and later assemblies that contain custom listeners are resolved by file name)-->
+	<!-- Add trace listeners (in .NET{{site.mindotnetversion}} and later assemblies that contain custom listeners are resolved by file name)-->
 	<!--
 		<traceListeners>
 			<add name="myCustomListener" type="CustomListenersNamespace.CustomListener, CustomListenersAssembly"  initializeData="Telerik.ReportDesigner.custom.log" />

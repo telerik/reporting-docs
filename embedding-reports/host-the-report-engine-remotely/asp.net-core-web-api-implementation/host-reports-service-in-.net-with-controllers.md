@@ -11,7 +11,7 @@ position: 3
 
 # Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Top-Level Statements
 
-This article guides you how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET 8 and higher Web Application with Top-Level Statements implementation. Check the [Microsoft Tutorial: Explore ideas using top-level statements to build code as you learn](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) for general details on the approach.
+This article guides you how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET {{site.mindotnetversion}} and higher Web Application with Top-Level Statements implementation. Check the [Microsoft Tutorial: Explore ideas using top-level statements to build code as you learn](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) for general details on the approach.
 
 The guide is separated into sections for readability reasons. Along with the steps, it elaborates on the concepts and theory behind each step.
 
@@ -26,7 +26,7 @@ In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporti
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
-Set the Target Framework to .NET 8 or .NET 9.
+Set the Target Framework to .NET {{site.mindotnetversion}} or higher.
 
 Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution.
 
@@ -40,7 +40,7 @@ First, you need to create a new ASP.NET Core project:
 1. From the __File__ menu, select __New__ > __Project__.
 1. In the __Create a new project__ dialog select __ASP.NET Core Web App__ project template and click __Next__.
 1. In the __Configure your new project__ dialog choose a name and location for the project and click __Next__.
-1. In the __Additional information__ dialog select from the drop down __.NET 8.0 (Long-term support)__ or .NET 8. If you configure the project for HTTPS make sure to have a proper certificate assigned. Click on __Create__.
+1. In the __Additional information__ dialog select from the drop down __.NET {{site.mindotnetversion}}.0 (Long-term support)__ or a higher .NET version. If you configure the project for HTTPS make sure to have a proper certificate assigned. Click on __Create__.
 
 ### Add Report Definitions
 
@@ -85,7 +85,7 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 			ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
 			// In case the ReportingEngineConfiguration needs to be loaded from a specific configuration file, use the approach below:
 			//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
-			HostAppId = "ReportingNet8",
+			HostAppId = "ReportingNet{{site.mindotnetversion}}",
 			Storage = new FileStorage(),
 			ReportSourceResolver = new UriReportSourceResolver(System.IO.Path.Combine(sp.GetService<IWebHostEnvironment>().ContentRootPath, "Reports"))
 		});
@@ -244,7 +244,7 @@ app.UseCors("ReportingRestPolicy");
 
 A full example can be found in the installation folder of Telerik Reporting:
 
-`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 8\ReportingRestServiceCorsDemo\CSharp.Net8.ReportingRestServiceCorsDemo`
+`C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET {{site.mindotnetversion}}\ReportingRestServiceCorsDemo\CSharp.Net8.ReportingRestServiceCorsDemo`
 
 ## See Also
 

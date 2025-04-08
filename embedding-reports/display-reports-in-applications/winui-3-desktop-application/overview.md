@@ -36,13 +36,13 @@ The toolbar of the WinUI Report Viewer provides basic functionality for interac
 
 The bottom panel of the WinUI report viewer contains a slider and drop-down list that control the current zoom level applied to the loaded report contents.
 
-> Visual Studio 2019 and Visual Studio 2019 Preview have known issues when building WinUI applications targeting .NET 5 while having .NET 8 SDK installed on the machine. For a smooth development experience, we recommend using `Visual Studio 2022` and `.NET 8 SDK Preview 6 or later`. Otherwise, you might need to *deinstall* .NET 8 SDK to build WinUI 3 applications.
+> Visual Studio 2019 and Visual Studio 2019 Preview have known issues when building WinUI applications targeting .NET 5 while having .NET {{site.mindotnetversion}} SDK installed on the machine. For a smooth development experience, we recommend using `Visual Studio 2022` and `.NET {{site.mindotnetversion}} SDK Preview 6 or later`. Otherwise, you might need to *deinstall* .NET {{site.mindotnetversion}} SDK to build WinUI 3 applications.
 
 To use the WinUI report viewer, you need a `WinUI 3` desktop application. To create such, the following tools must be installed:
 
 * `Visual Studio 2022 with enabled Universal Windows Platform development`
 * `Windows 10 SDK 10.0.18362 or later installed`
-* `.NET 8 SDK Preview 6 or later`
+* `.NET {{site.mindotnetversion}} SDK Preview 6 or later`
 
 ## How it works
 

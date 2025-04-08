@@ -17,7 +17,7 @@ previous_url: /blazor-report-viewer-how-to-use
 
 * [Visual Studio 2019, version 16.4 or later](https://visualstudio.microsoft.com/vs/)
 
-* Existing .NET 8 and higher Blazor Server App or .NET 8 and higher hosted Blazor WebAssembly App
+* Existing .NET {{site.mindotnetversion}} and higher Blazor Server App or .NET {{site.mindotnetversion}} and higher hosted Blazor WebAssembly App
 
 * The report viewer consumes reports generated and served from a running Telerik Reporting Web Service. Such can be referenced from another application or Telerik Report Server instance, or it can be hosted within the Blazor Server application.
 

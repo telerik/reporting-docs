@@ -1,7 +1,7 @@
 ---
 title: Setting up Designer and Creating Basic Report
-page_title: Embedding the Web Report Designer in .NET 8 and Creating Your First Report
-description: "Learn how to set up the Telerik Web Report Designer in .NET 8 applications via the Visual Studio Item Templates and how to create a report with Logo and Graph in this step by step tutorial."
+page_title: Embedding the Web Report Designer in .NET {{site.mindotnetversion}} and Creating Your First Report
+description: "Learn how to set up the Telerik Web Report Designer in .NET {{site.mindotnetversion}} applications via the Visual Studio Item Templates and how to create a report with Logo and Graph in this step by step tutorial."
 slug: telerikreporting/getting-started/web-designer/set-up-and-create-basic-report
 tags: how,configure,.net,applications,web,designer,report
 published: True
@@ -11,7 +11,7 @@ previous_url: /getting-started/web-designer/
 
 # Configure Web Report Designer and Create a Basic Report
 
-This is a step-by-step tutorial that shows how to integrate the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET 8` ASP.NET Core application in Visual Studio 2022.
+This is a step-by-step tutorial that shows how to integrate the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET {{site.mindotnetversion}}` ASP.NET Core application in Visual Studio 2022.
 
 * First, you will create a Web Application and add Telerik Web Report Designer through its Visual Studio Item Template.
 * Next, you'll create and style a new report.
@@ -22,11 +22,11 @@ This is a step-by-step tutorial that shows how to integrate the [Web Report Desi
 
 The entire process is described in the YouTube video tutorial [Getting Started with the Web Report Designer: Part 1](https://www.youtube.com/watch?v=L-utkcB8-5c).
 
-## Setting up the Web Report Designer in .NET 8
+## Setting up the Web Report Designer in .NET {{site.mindotnetversion}}
 
 Let's create an ASP.NET Core application in Visual Studio and embed the Telerik Web Report Designer in it:
 
-1. Open Visual Studio 2022 and create a new project through the project template `ASP.NET Core Web App`. Name the project, for example, `Telerik.WRD.GettingStarted` and select `.NET 8.0` as a Target Framework.
+1. Open Visual Studio 2022 and create a new project through the project template `ASP.NET Core Web App`. Name the project, for example, `Telerik.WRD.GettingStarted` and select `.NET {{site.mindotnetversion}}.0` as a Target Framework.
 1. Add the Web Designer to the project:
 
 	1. Right-click on the project and select `Add` > `New Item...`.

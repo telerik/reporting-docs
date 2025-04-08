@@ -35,7 +35,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
-1. Make sure app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET 8+ with Top Level Statements is used) file can serve static files:
+1. Make sure app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET {{site.mindotnetversion}}+ with Top Level Statements is used) file can serve static files:
 
 	````C#
 app.UseStaticFiles();

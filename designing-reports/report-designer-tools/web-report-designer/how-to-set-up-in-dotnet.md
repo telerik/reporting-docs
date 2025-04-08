@@ -1,9 +1,9 @@
 ---
 title: Setting up in .NET
-page_title: Embedding the Web Report Designer in .NET 8+
-description: "Learn how to set up the Telerik Web Report Designer in .NET 8 and higher applications via the Visual Studio Item Templates or Manually."
+page_title: Embedding the Web Report Designer in .NET {{site.mindotnetversion}}+
+description: "Learn how to set up the Telerik Web Report Designer in .NET {{site.mindotnetversion}} and higher applications via the Visual Studio Item Templates or Manually."
 slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
-tags: how,to,set,up,in,.net,8,applications
+tags: how,to,set,up,in,.net,{{site.mindotnetversion}},applications
 published: True
 position: 1
 previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-designer-tools/web-report-designer/how-to-set-up-in-.net-5-and-.net-core-3.1-applications
@@ -11,9 +11,9 @@ previous_url: /web-report-designer-setup-in-net-core3,/designing-reports/report-
 
 # Setting up the Web Report Designer in .NET applications
 
-This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET 8+` applications.
+This article shows how to integrate our [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in `.NET {{site.mindotnetversion}}+` applications.
 
-The quickest way to add the web report designer to a web project is with the __Telerik Web Report Designer__ item template in Visual Studio. The item template is compatible with projects targetting `.NET 8+`. The item template adds a page with the Web Report Designer and, if needed, enables the Web Report Designer REST Service. To start the item template wizard, in Visual Studio `Solution Explorer`, select the target project. On the Project menu, click `Add` -> `New Item`. In the Add New Item search box enter "*Telerik Web Report Designer*" and select the item template which corresponds to your project type.
+The quickest way to add the web report designer to a web project is with the __Telerik Web Report Designer__ item template in Visual Studio. The item template is compatible with projects targetting `.NET {{site.mindotnetversion}}+`. The item template adds a page with the Web Report Designer and, if needed, enables the Web Report Designer REST Service. To start the item template wizard, in Visual Studio `Solution Explorer`, select the target project. On the Project menu, click `Add` -> `New Item`. In the Add New Item search box enter "*Telerik Web Report Designer*" and select the item template which corresponds to your project type.
 
 For full control, instead of using the item template, you can manually configure the REST service and add the web report designer as elaborated in the rest of this article.
 

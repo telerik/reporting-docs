@@ -14,7 +14,7 @@ The [Microsoft.Data.SqlClient](https://learn.microsoft.com/en-us/sql/connect/ado
 
 ## Setting up the Microsoft.Data.SqlClient Data Provider in the .NET Standalone Report Designer
 
-1. Create a new [.NET 8 Console Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
+1. Create a new [.NET {{site.mindotnetversion}} Console Application](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/console-teleprompter) project.
 1. Install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/) NuGet package to it and `build` the project.
 1. Navigate to the `bin/Debug/net8.0` subdirectory of the project, and copy all assemblies there except for the assembly with the name of the project.
 1. Paste the assemblies in the .NET Standalone Report Designer installation directory e.g. `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Report Designer\.NET`.

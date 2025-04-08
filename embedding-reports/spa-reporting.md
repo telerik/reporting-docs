@@ -40,7 +40,7 @@ The Single Page Applications hosting a Telerik Report Viewer require a [Telerik 
 
 There are different methods for configuring the Telerik Reporting REST Service in an ASP.NET Core or Blazor Server Reporting project:
 
-* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 8+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
+* [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
 * [Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET 8 with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%})
 * [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 8 and .NET 9 with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%})
 

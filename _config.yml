@@ -459,7 +459,7 @@ angularsubsetversion: "17.2.0"
 kendosubsetversion: "2022.3.913"
 blazoruiversion: "7.1.0"
 mindotnetversion: "8"
-mindotnetoutputdir: "\bin\Debug\net8.0"
+mindotnetoutputdir: "\\bin\\Debug\\net8.0"
 dotnetversions: ".NET 8 and .NET 9"
 
 # Feedback Form Product code

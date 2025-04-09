@@ -37,7 +37,7 @@ This article explains how to create a custom report source resolver for the __Te
 				// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
 				ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
 
-				HostAppId = "ReportingNet{{site.mindotnetversion}}",
+				HostAppId = "ReportingNet8",
 				Storage = new FileStorage(),
 				ReportSourceResolver = new TypeReportSourceResolver()
 					.AddFallbackResolver(new UriReportSourceResolver(reportsPath)
@@ -109,7 +109,7 @@ USE [master]
 				// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
 				ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
 
-				HostAppId = "ReportingNet{{site.mindotnetversion}}",
+				HostAppId = "ReportingNet8",
 				Storage = new FileStorage(),
 				ReportSourceResolver = new CustomReportSourceResolverWithFallBack(new TypeReportSourceResolver()
 					.AddFallbackResolver(new UriReportSourceResolver(reportsPath)));

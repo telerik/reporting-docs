@@ -85,7 +85,7 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 			ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
 			// In case the ReportingEngineConfiguration needs to be loaded from a specific configuration file, use the approach below:
 			//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
-			HostAppId = "ReportingNet{{site.mindotnetversion}}",
+			HostAppId = "ReportingNet8",
 			Storage = new FileStorage(),
 			ReportSourceResolver = new UriReportSourceResolver(System.IO.Path.Combine(sp.GetService<IWebHostEnvironment>().ContentRootPath, "Reports"))
 		});

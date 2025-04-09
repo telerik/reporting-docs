@@ -20,7 +20,7 @@ Alternatively, instead of using the item template, the Designer REST service and
 ## Prerequisites
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/)
-* Existing .NET 6 or higher `Blazor Web App/Server/ WebAssembly` application
+* Existing .NET {{site.mindotnetversion}} or higher `Blazor Web App/Server/ WebAssembly` application
 * The designer consumes reports generated and served from a running REST Service. Such can be referenced from another application or it can be hosted locally in the Blazor application as described below.
 
 ## Adding the Report Designer REST Service and Configuration

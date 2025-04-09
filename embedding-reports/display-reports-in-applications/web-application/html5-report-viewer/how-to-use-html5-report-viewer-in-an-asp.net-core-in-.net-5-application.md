@@ -11,7 +11,7 @@ previous_url: /manual-setup-of-html5-report-viewer-in-aspnetcore-net5
 
 # Using the HTML5 Report Viewer in an ASP.NET Core application in {{site.dotnetversions}}
 
-This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET {{site.mindotnetversion}}+](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-6.0?view=aspnetcore-8.0) web application.
+This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET {{site.mindotnetversion}}+](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-{{site.mindotnetversion}}.0?view=aspnetcore-{{site.mindotnetversion}}.0) web application.
 
 ## Prerequisites
 

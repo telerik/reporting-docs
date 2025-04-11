@@ -94,14 +94,14 @@ The [ReportsController](/api/telerik.reporting.services.webapi.reportscontroller
 
 ````CSharp
 [ApiExplorerSettings(IgnoreApi = true)]
-    [Route("api/reportdesigner")]
-    public class ReportDesignerController : ReportDesignerControllerBase
+[Route("api/reportdesigner")]
+public class ReportDesignerController : ReportDesignerControllerBase
+{
+    public ReportDesignerController(IReportDesignerServiceConfiguration reportDesignerServiceConfiguration, IReportServiceConfiguration reportServiceConfiguration)
+        : base(reportDesignerServiceConfiguration, reportServiceConfiguration)
     {
-        public ReportDesignerController(IReportDesignerServiceConfiguration reportDesignerServiceConfiguration, IReportServiceConfiguration reportServiceConfiguration)
-            : base(reportDesignerServiceConfiguration, reportServiceConfiguration)
-        {
-        }
     }
+}
 ````
 
 ## See Also

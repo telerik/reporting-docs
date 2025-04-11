@@ -23,6 +23,8 @@ table th:nth-of-type(2) {
 | Parameter | Description |
 | ------ | ------ |
 | __beginEdit(parameter)__ |creates the editor UI and populates it with the parameter settings<ul><li>parameter</li></ul>|
+| __addAccessibility(parameter)__ |adds accessibility to the parameter editor and populates its string resources<ul><li>parameter</li></ul>|
+| __setAccessibilityErrorState(parameter)__ |sets the error state of the parameter editor's accessibility functionality and its error attributes<ul><li>parameter</li></ul>|
 
 ## See Also
 

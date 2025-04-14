@@ -39,7 +39,7 @@ To use the WPF Report Viewer, you need a WPF application. To create such, you ne
 
 * Visual Studio 2012 or later.
 * .NET Framework 4 or above (.NET Framework 4 __Client Profile__ is not supported)
-* .NET 6+
+* .NET {{site.mindotnetversion}}+
 * (optional) Expression Blend
 
 ## How it works

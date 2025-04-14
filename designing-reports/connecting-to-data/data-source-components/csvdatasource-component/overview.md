@@ -49,5 +49,5 @@ Below are listed the available settings for formatting the data retrieved from t
 ## Supported developer platforms
 
 * .NET Framework 4.6.2 and above
-* .NET 6 and above
+* .NET {{site.mindotnetversion}} and above
 * .NET Standard 2.0 and above

@@ -3,7 +3,7 @@ title: ReportsController in ASP.NET
 page_title: Implementing the ReportsController in an ASP.NET Application Explained
 description: "Learn how to implement the ReportsController of the Telerik Reporting REST Service in an ASP.NET application."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application
-tags: how,to,implement,the,reportscontroller,in,an,application
+tags: reports, controller, aspnet
 published: True
 position: 4
 previous_url: /telerik-reporting-rest-implementing-http-service,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-web-api-implementation/how-to-implement-the-reportscontroller-in-an-application
@@ -27,7 +27,7 @@ The Telerik Reporting REST Web API service is represented by the abstract [Repor
 
 	>Without setting Telerik Reporting references' _Copy Local_ to true the assemblies may not be loaded correctly on running the application.
 
-1. Inherit this base class in your hosting application (usually in the Controllers folder of a MVC application).
+1. Inherit this base class in your hosting application (usually in the Controllers folder of an MVC application).
 
 	+ __ReportsControllerBase configuration in code:__
 
@@ -41,11 +41,11 @@ The Telerik Reporting REST Web API service is represented by the abstract [Repor
 		{{source=CodeSnippets\MvcCS\Controllers\ReportsController.cs region=ReportsControllerImplementationMinimal}}
 		{{source=CodeSnippets\MvcVB\Controllers\ReportsController.vb region=ReportsControllerImplementationMinimal}}
 
-		[ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) inherits [System.Web.Http.ApiController](https://learn.microsoft.com/en-us/dotnet/api/system.web.http.apicontroller?view=aspnet-webapi-5.2) and implements all necessary API actions. The provided sample implementation will resolve.trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root. Other option is to reference a reports library and provide report [type assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0) from the service clients.
+		[ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) inherits [System.Web.Http.ApiController](https://learn.microsoft.com/en-us/dotnet/api/system.web.http.apicontroller?view=aspnet-webapi-5.2) and implements all necessary API actions. The provided sample implementation will resolve.trdx|.trdp report definitions from the Reports subfolder of the hosting ASP.NET application root. Another option is to reference a reports library and provide a report [type assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0) from the service clients.
 
 		>note Do not forget to add all necessary (i.e., referred from the report definitions) connection strings to the application configuration file.
 
-		>The above implementation uses the [FileStorage](/api/Telerik.Reporting.Cache.File.FileStorage) method in order to create a storage object instance. All Visual Studio item templates for adding the Reporting REST service use the default __FileStorage__ constructor. The second overload of the FileStorage constructor allows you to specify a folder, and it is recommended for usage in production environment.
+		>The above implementation uses the [FileStorage](/api/Telerik.Reporting.Cache.File.FileStorage) method in order to create a storage object instance. All Visual Studio item templates for adding the Reporting REST service use the default __FileStorage__ constructor. The second overload of the FileStorage constructor allows you to specify a folder, and it is recommended for usage in a production environment.
 
 	+ __ReportsControllerBase configuration in configuration file:__
 

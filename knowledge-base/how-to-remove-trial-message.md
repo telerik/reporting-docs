@@ -12,7 +12,7 @@ res_type: kb
 ## Environment
 
 | Version | Product |  
-| ---- | ---- | ---- | 
+| ---- | ---- |
 | Valid until Q2 2025 | Telerik Reporting | 
 
 ## Description

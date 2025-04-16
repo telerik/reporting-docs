@@ -19,7 +19,7 @@ res_type: kb
 
 This tutorial explains in detail how to upgrade your Telerik [Trial]({%slug telerikreporting/licensing%}) to a Licensed version of [Telerik Reporting](https://www.telerik.com/account/product-download?product=REPORTING).
 
->caution This approach is valid for versions [before Q2 2025]({%slug telerikreporting/licensing%}). For later versions, it is just necessary to update the [license key]({%slug setting-up-license-key%}).
+>caution This approach is valid for versions [before Q2 2025]({%slug telerikreporting/licensing%}). After launching the [new licensing mechanism](https://www.telerik.com/blogs/license-key-files-telerik-kendo-ui-products-2025-update), the activation is performed through a [license key]({%slug setting-up-license-key%}) (trial or commercial). Upgrading from a Trial to Developer (or commercial) version requires only updating the license key without the necessity of reinstalling the respective Telerik product.
 
 Let's start with having a trial version installed on your machine and a project that uses the trial version. Access to the Trial version of product files in the Downloads section of your Telerik account: 
 

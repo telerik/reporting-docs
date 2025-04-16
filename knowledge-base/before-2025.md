@@ -11,7 +11,9 @@ previous_url: /installation-trial-license-limitation
 
 # Telerik Reporting Licensing before 2025
 
-Telerik Reporting comes in trial and developer (or commercial) licenses.
+Telerik Reporting used to come in separate **Trial** and **Developer** (or commercial) assets distribution until **Q2 2025**.
+
+>caution After launching the [new licensing mechanism in Q1 2025](https://www.telerik.com/blogs/license-key-files-telerik-kendo-ui-products-2025-update), the activation is performed through a [license key]({%slug setting-up-license-key%}) (trial or commercial). Upgrading from a Trial to Developer (or commercial) version requires only updating the license key without the necessity of reinstalling the respective Telerik product.
 
 ## Trial Licenses
 

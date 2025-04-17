@@ -60,4 +60,4 @@ By following these steps, you create a visual representation of ratings using st
 
 ## Sample Report
 
-* []()
+* [RatingStars.trdp](https://github.com/telerik/reporting-samples/blob/master/Sample%20Reports/RatingStars/RatingStars.trdp)

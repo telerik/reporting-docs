@@ -72,26 +72,15 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 
 1. Call the [`AddNewtonsoftJson`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object to enable the **NewtonsoftJson** serialization:
 
-	````CSharp
-builder.Services.AddNewtonsoftJson();
-````
-
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=AddNewtonsoftJson}}
 
 1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver): 
 
-	````CSharp
-var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "Reports");
-
-	builder.Services.AddTelerikReporting("ReportingNet", reportsPath);
-````
-
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=ReportServiceConfiguration Minimal API}}
 
 1. Register the Telerik Reporting Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method: 
 
-	````CSharp
-app.UseTelerikReporting();
-app.UseRouting();
-````
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=UseReporting Minimal API}}
 
 
 ### Adding Connection Strings to the Configuration
@@ -123,6 +112,9 @@ The above type of connection string lacks information about the data provider an
 }
 ````
 
+__From appsettings.Development.json:__
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.Development.json}}
+
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section.
 
 The last supported type of `ConnectionStrings` configuration uses an array to provide information about each connection string:
@@ -152,23 +144,11 @@ You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.
 
 Add the following service to the **Program.cs** file to add a new CORS policy for the REST Service:
 
-````CSharp
-builder.Services.AddCors(corsOption => corsOption.AddPolicy(
-	"ReportingRestPolicy",
-	corsBuilder =>
-	{
-		corsBuilder.AllowAnyOrigin()
-			.AllowAnyMethod()
-			.AllowAnyHeader();
-	}
-));
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=AddCors}}
 
 Activate the above policy for the application by adding the code below in the application configuration part of the **Program.cs** file:
 
-````CSharp
-app.UseCors("ReportingRestPolicy");
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=UseCors}}
 
 ## Demo project
 

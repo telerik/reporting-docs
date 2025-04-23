@@ -112,7 +112,8 @@ The above type of connection string lacks information about the data provider an
 }
 ````
 
-__From appsettings.Development.json:__
+__From appsettings.Development.json:__ 
+
 {{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.Development.json}}
 
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section.

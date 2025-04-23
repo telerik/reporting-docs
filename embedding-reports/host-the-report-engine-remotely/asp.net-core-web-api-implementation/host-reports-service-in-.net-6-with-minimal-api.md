@@ -3,7 +3,7 @@ title: Hosting in .NET with Minimal API
 page_title: Hosting the Reporting REST Service in ASP.NET Core with Minimal API
 description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET 8 and above with Minimal API in this step by step tutorial."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api
-tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,statements
+tags: host,reports,service,.net,top-level,statements
 published: True
 position: 2
 previous_url: /telerik-reporting-rest-service-net6-minimal-api,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-6-with-minimal-api
@@ -11,7 +11,7 @@ previous_url: /telerik-reporting-rest-service-net6-minimal-api,/embedding-report
 
 # Hosting the Telerik Reporting REST Service in ASP.NET Core in .NET {{site.mindotnetversion}}+ with Minimal API
 
-This article guides you how to host a Reporting REST Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET {{site.mindotnetversion}}+ Web Application with Minimal APIs. 
+This article guides you on how to host a Reporting REST Service to expose the Reports Generation Engine to an ASP.NET Core in {{site.mindotnetversion}}+ Web Application with Minimal APIs. 
 
 Check the [Minimal APIs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/overview) article for general details on the approach.
 The guide is separated into sections for readability reasons. Along with the steps, it elaborates on the concepts and theory behind each step.
@@ -23,7 +23,7 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 ## Using the REST Service Project Template
 
-In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
+In Visual Studio, open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
@@ -49,7 +49,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 1. Find the sample reports in *{Telerik Reporting installation path}\Report Designer\Examples*.
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
-1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder.
+1. Later in the tutorial, we will make sure that the ReportsController can resolve the definitions for the requested reports from this project folder.
 
 > It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
 
@@ -100,7 +100,7 @@ The report generation engine can retrieve SQL Connection Strings and specific Re
 
 The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/) file named by default `appSettings.json`. The default `ReportingEngineConfiguration` will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
-All Reporting-related configurations should be placed in the JSON configuraion file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
+All Reporting-related configurations should be placed in the JSON configuration file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
 
 ````JSON
 {

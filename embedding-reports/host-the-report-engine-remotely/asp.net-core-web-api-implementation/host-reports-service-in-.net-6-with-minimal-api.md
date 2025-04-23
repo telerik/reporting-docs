@@ -101,19 +101,6 @@ All Reporting-related configurations should be placed in the JSON configuration 
 
 The above type of connection string lacks information about the data provider and will use [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient) as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
 
-````JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	}
-}
-````
-
-__From appsettings.Development.json:__ 
-
 {{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.Development.json}}
 
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section.

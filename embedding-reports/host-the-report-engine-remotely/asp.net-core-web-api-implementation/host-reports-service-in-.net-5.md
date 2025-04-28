@@ -72,26 +72,15 @@ The [`ConfigureServices`](https://learn.microsoft.com/en-us/dotnet/api/microsoft
 
 1. Call the [`AddNewtonsoftJson`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object to enable the **NewtonsoftJson** serialization:
 
-	````C#
-services.AddNewtonsoftJson();
-````
-
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Startup.cs region=AddNewtonsoftJson Main Method}}
 
 1. Set up the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) by invoking the `AddTelerikReporting` extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object. In the code below, the first argument will represent the [HostAppId](/api/telerik.reporting.services.reportserviceconfiguration#Telerik_Reporting_Services_ReportServiceConfiguration_HostAppId) of the [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object, while the second is the path that will be passed to the [UriReportSourceResolver](/api/telerik.reporting.services.urireportsourceresolver): 
 
-	````CSharp
-var reportsPath = Path.Combine(builder.Environment.ContentRootPath, "Reports");
-
-	services.AddTelerikReporting("ReportingNet", reportsPath);
-````
-
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Startup.cs region=ReportServiceConfiguration Main Method}}
 
 1. Register the Telerik Reporting Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method: 
 
-	````CSharp
-app.UseTelerikReporting();
-app.UseRouting();
-````
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Startup.cs region=UseReporting Main Method}}
 
 
 ### Adding Connection Strings to the Configuration
@@ -102,44 +91,17 @@ The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/e
 
 All Reporting-related configurations should be placed in the JSON configuration file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
 
-````JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-	}
-}
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_0.json}}
 
 The above type of connection string lacks information about the data provider and will use [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient) as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
 
-````JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	}
-}
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_1.json}}
 
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section.
 
 The last supported type of `ConnectionStrings` configuration uses an array to provide information about each connection string:
 
-````JSON
-{
-	//...
-	"ConnectionStrings": [
-		{
-			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	]
-}
-````
-
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_2.json}}
 
 ### Test the service implementation
 
@@ -151,24 +113,11 @@ You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.
 
 Add the following code to the *ConfigureServices* method of the *Startup.cs* file to add a new CORS policy for the REST Service:
 
-````C#
-services.AddCors(corsOption => corsOption.AddPolicy(
-	"ReportingRestPolicy",
-	corsBuilder =>
-	{
-		corsBuilder.AllowAnyOrigin()
-			.AllowAnyMethod()
-			.AllowAnyHeader();
-	}
-));
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=AddCors}}
 
 Activate the above policy for the application by adding the next code in the `Configure` method of the `Startup.cs` file:
 
-````C#
-app.UseCors("ReportingRestPolicy");
-````
-
+{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=UseCors}}
 
 ## See Also
 

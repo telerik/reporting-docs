@@ -11,7 +11,7 @@ previous_url: /telerik-reporting-rest-service-aspnetcore-net5,/embedding-reports
 
 # Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in {{site.dotnetversions}} with Startup.cs
 
-This article guides you on how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET Web Application. The configuration of the application in this tutorial is set up in the `Startup.cs` file of the project. 
+This article guides you on how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in a .NET Web Application. The configuration of the application in this tutorial is set up in the `Startup.cs` file of the project. 
 
 If you prefer to use [top level statements introduced with .NET 6](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements), refer to the article [Hosting in .NET {{site.mindotnetversion}}+ with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
 
@@ -24,7 +24,7 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 ## Using the REST Service Project Template
 
-In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
+In Visual Studio, open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create`р a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net5.png)
 
@@ -49,9 +49,9 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 1. Find the sample reports in *{Telerik Reporting installation path}\Report Designer\Examples*.
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
-1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder.
+1. Later in the tutorial, we will make sure that the ReportsController can resolve the definitions for the requested reports from this project folder.
 
-> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET projects.
+> It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET projects.
 
 ### Add the Required Dependencies
 
@@ -68,7 +68,7 @@ Note that you need the last reference only to enable the Office OpenXML document
 
 > When the [Minimal API](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis) approach for hosting the Reporting REST Service is used, exceptions thrown by the service are propagated to and displayed in the Report Viewer. If this is undesired, set up the service using the 'Controllers' approach - [Hosting the Reporting REST Service in ASP.NET Core with Controllers]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers%}).
 
-The [`ConfigureServices`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.webhostbuilder.configureservices) method inside the `Startup.cs` file in the project should be modified in order to enable the Reports Service functionality.
+The [`ConfigureServices`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.hosting.webhostbuilder.configureservices) method inside the `Startup.cs` file in the project should be modified to enable the Reports Service functionality.
 
 1. Call the [`AddNewtonsoftJson`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object to enable the **NewtonsoftJson** serialization:
 
@@ -100,7 +100,7 @@ The report generation engine can retrieve SQL Connection Strings and specific Re
 
 The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/) file named by default `appSettings.json`. The default `ReportingEngineConfiguration` will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
-All Reporting-related configurations should be placed in the JSON configuraion file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
+All Reporting-related configurations should be placed in the JSON configuration file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
 
 ````JSON
 {

@@ -23,7 +23,7 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 ## Using the REST Service Project Template
 
-In Visual Studio, open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
+In Visual Studio, open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create`, a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
@@ -91,34 +91,17 @@ The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/e
 
 All Reporting-related configurations should be placed in the JSON configuration file - (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
 
-````JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-	}
-}
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_0.json}}
 
 The above type of connection string lacks information about the data provider and will use [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient) as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
 
-{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.Development.json}}
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_1.json}}
 
 The two types of connection string notations specified above can coexist in a single ConnectionStrings section.
 
 The last supported type of `ConnectionStrings` configuration uses an array to provide information about each connection string:
 
-````JSON
-{
-	"ConnectionStrings": [
-		{
-			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	]
-}
-````
-
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_2.json}}
 
 ### Test the Service Implementation
 

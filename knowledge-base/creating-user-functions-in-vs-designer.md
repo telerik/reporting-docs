@@ -21,7 +21,7 @@ This tutorial shows how to create and utilize custom [user functions]({%slug tel
 
 ## Solution
 
-Let's start with creating a Class library (**.NET Framework**) project and add a **Report** class using the [Item Templates]({%slug treporting-integration-with-visual-studio%}) in Visual Studio. 
+Let's start with creating a Class library (**.NET Framework**) project and add a **Report** class using the [Item Templates]({%slug reporting-integration-with-visual-studio%}) in Visual Studio. 
 
 ### User Functions Defined in the Report class
 
@@ -88,5 +88,5 @@ The custom function accepts an image url and returns an Image object that can be
 
 ## See Also
 
-- [Visual Studio Templates]({%slug treporting-integration-with-visual-studio%})
+- [Visual Studio Templates]({%slug reporting-integration-with-visual-studio%})
 - [Custom User Functions]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/extending-expressions/user-functions%})

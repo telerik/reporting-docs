@@ -21,7 +21,7 @@ This tutorial shows how to configure and use the [ObjectDataSource]({%slug teler
 ## Solution
 
 1. Let's start with creating a Class library (**.NET Framework**) project (e.g. CarsLibraryDemo) that will be used as a data collection for feeding the [ObjectDataSource]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%}). Build the project to produce a dll in the bin folder.
-1. Create another Class library (**.NET Framework**) project and add a **Report** class using the [Item Templates]({%slug treporting-integration-with-visual-studio%}) in Visual Studio. Add a reference to the Class Library project or to the dll that contains the data source definition.
+1. Create another Class library (**.NET Framework**) project and add a **Report** class using the [Item Templates]({%slug reporting-integration-with-visual-studio%}) in Visual Studio. Add a reference to the Class Library project or to the dll that contains the data source definition.
 1. Extend the Visual Studio Report Designer by adding an AssemblyReferences in Telerik.Reporting section of the application configuration file. The **'devenv.exe.config'** file resides in *'C:\Program Files (x86)\Microsoft Visual Studio X.0\Common7\IDE'* by default (it is recommended to create a backup copy before modifying it). 
 
 	````XML
@@ -46,6 +46,6 @@ This tutorial shows how to configure and use the [ObjectDataSource]({%slug teler
 
 ## See Also
 
-- [Visual Studio Templates]({%slug treporting-integration-with-visual-studio%})
+- [Visual Studio Templates]({%slug reporting-integration-with-visual-studio%})
 - [Connecting the ObjectDataSource component to a Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/connecting-the-objectdatasource-component-to-a-data-source%})
 - [Binding ObjectDataSource Component to a BusinessObject]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/how-to/how-to-bind-to-a-businessobject%})

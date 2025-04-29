@@ -11,7 +11,7 @@ previous_url: /getting-started/first-steps, /first-steps
 
 # Designing Your First Telerik Report
 
-This guide targets [users who need to quickly get up and running with Telerik Reporting](https://www.telerik.com/products/reporting/embedded-reporting.aspx) and design and export a report.
+This guide targets users who need to quickly get up and running with <a href="https://www.telerik.com/products/reporting/embedded-reporting.aspx" target="_blank">Telerik Reporting</a> and design and export a report.
 
 * First, you will install Telerik Reporting from an MSI file and load the demos.
 
@@ -39,9 +39,9 @@ Let's start with the installation of the Telerik Reporting controls, services, a
 
 1. Log in to your [Telerik account](https://www.telerik.com/account). Click __Downloads__ and select __Progress Telerik Reporting__.
 
-1. Click __Latest public version__, download the MSI installation file, and run it.
+1. Download the latest version of the MSI file in the __Installation__ section.
 
-1. In the __Customization dialog__ of the Wizard, click __Examples Setup__ to set the examples and the used connection string.
+1. In the __Customization__ step, make sure that the Examples are selected for installation.
 
 	The examples use the MS SQL Server AdventureWorks sample database which you will need later for the report.
 
@@ -93,14 +93,15 @@ SELECT
 	ORDER BY 1 ASC
 ````
 
-
 1. Click __Next__ to execute the query and the __Execute Query...__ button on the next screen to preview the result. Then, click __Finish__.
 
-1. From the property grid, change the name of the data source to `tableDataSource` so you can later refer it and render its data in the report.
+1. In the __Properties__ pane (__Property Browser__) on the right, change the name of the data source to `tableDataSource` so you can later refer it and render its data in the report.
 
-1. Select the __datailSection__. From the toolbar, go to __Insert__ > __Table__ > __Table Wizard__. Under __Data Sources__, select __tableDataSource__ and click __Next__.
+   ![Renaming the SqlDataSource in the Telerik Standalone Report Designer](images/property-browser-pane.png)
 
-1. On the screen that loads, mark all columns and drag them to the __Table Columns__. Click __Next__.
+1. Select the __detailSection__ (the middle section of the report). From the toolbar, go to __Insert__ > __Table__ > __Table Wizard__. Under __Data Sources__, select __tableDataSource__ and click __Next__.
+
+1. On the screen that loads, select all listed data source fields and drag them to the __Table Columns__. Click __Next__.
 
 1. From the window that opens, select a predefined style for your table, for example, __Office__. Click __Next__ and __Finish__.
 
@@ -108,29 +109,39 @@ SELECT
 
 Now, you may add some styling to the table and define its title.
 
-1. Select the table and apply the following __Styling__ to it:
+1. Select the table, and in the __Properties__ pane expand the __Style__ node:
 
 	+ Set __BackgroundColor__ and __BorderColor__ > __Default__ to `34, 181, 115`.
 
 	+ Set __Font > Name__ to `SegoeUI`.
 
-	+ Mark the table header and set the __Color__ property to `White`.
+	+ Select the table header and set the __Color__ property to `White`.
 
-1. To set the title of the table, add a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) above it in the __detailSection__ and set its __Value__ to `Employees`. Center the text by setting __Style__ > __TextAlign__ to `Center`.
+1. To set the title of the table, add a [TextBox]({%slug telerikreporting/designing-reports/report-structure/textbox%}) above it:
+	
+	+ Click the __detailSection__ and select __Insert__ > __Text Box__.
+	
+	+ In the __Properties__ pane, set the __Value__ of the Text Box to `Employees`. 
+	
+	+ Center the text by setting __Style__ > __TextAlign__ to `Center`.
 
-1. Let's insert two [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) on the sides of the title. Set the __ShapeType__ to `Horizontal Line` and the __Color__ to `Silver`.
+1. Let's insert two [Shapes]({%slug telerikreporting/designing-reports/report-structure/shape%}) on the sides of the title:
+
+	+ Select __Insert__ > __Shape__ from the __Report Items__ section.
+
+	+ Set the __ShapeType__ to `Horizontal Line` and the __Color__ to `Silver`.
 
 ## Step 5: Set the Page Header and Footer
 
 In this step, you'll define and style the page header and footer of your report. First, let's start with the header:
 
-1. Click __pageHeaderSection__. From the property grid, select __Style__ > __BackgroundColor__. Set the color to `0, 105, 104`.
+1. Click the __pageHeaderSection__. From the __Properties__ pane, select __Style__ > __BackgroundColor__. Set the color to `0, 105, 104`.
 
 1. To add the title, select __Insert__ from the toolbar. Click __TextBox__ to automatically place the TextBox in the header.
 
-1. Set the __Value__ to `Telerik`. Add one more TextBoxes with text `Demo Report`.
+1. Set the __Value__ to `Telerik`. Add one more TextBox with text `Demo Report`.
 
-1. Choose the two textboxes by holding the `Shift` or `Ctrl` key while selecting with the left mouse button. From the property grid, apply the following settings:
+1. Select both TextBoxes by holding the `Shift` or `Ctrl` key while clicking them with the left mouse button. From the __Properties__ pane, apply the following settings:
 
 	+ Set __Style__ > __Font__ > __Name__ to `Segoe UI`.
 
@@ -138,11 +149,11 @@ In this step, you'll define and style the page header and footer of your report.
 
 	+ Set __Style__ > __TextAlign__ to `Center`.
 
-1. Add a Shape between the textboxes. Set the __ShapeType__ to `Vertical Line` and the __LineColor__ property to `White`.
+1. Add a Shape between the TextBoxes. Set the __ShapeType__ to `Vertical Line` and the __LineColor__ property to `White`.
 
 After the report header is all set, let's move on to the footer of the report:
 
-1. Click __pageFooterSection__. Add a Textbox which will display the current date and time.
+1. Click the __pageFooterSection__. Add a Textbox which will display the current date and time.
 
 1. Set the __Expression__ of the __Value__ property to the `=Now()` [Date and Time function]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/functions/date-and-time-functions%}).
 

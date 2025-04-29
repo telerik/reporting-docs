@@ -82,7 +82,7 @@ So, first, let's connect to the data and, then, you'll create the table to prese
 1. On the screen that loads, fill in the __Select Statement__ field with the query below. The query will extract only the first 14 employees and they will be listed in ascending order according to their `id`, that is, the employee with an `id=1` will be the first one, the employee with an `id=2` will come second, and so on.
 
 	````SQL
-	SELECT
+SELECT
 		[HumanResources].[vEmployee].[EmployeeID] ,
 		[HumanResources].[vEmployee].[FirstName],
 		[HumanResources].[vEmployee].[LastName],
@@ -139,7 +139,7 @@ In this step, you'll define and style the page header and footer of your report.
 
 1. To add the title, select __Insert__ from the toolbar. Click __TextBox__ to automatically place the TextBox in the header.
 
-1. Set the __Value__ to `Telerik`. Add one more TextBoxe with text `Demo Report`.
+1. Set the __Value__ to `Telerik`. Add one more TextBox with text `Demo Report`.
 
 1. Select both TextBoxes by holding the `Shift` or `Ctrl` key while clicking them with the left mouse button. From the __Properties__ pane, apply the following settings:
 

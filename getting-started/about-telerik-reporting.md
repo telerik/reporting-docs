@@ -11,7 +11,7 @@ position: 0
 
 # Basic Concepts in Telerik Reporting
 
-Telerik Reporting is an embedded tool for creating and displaying reports in a visually structured and logically grouped way. You can integrate the Telerik reports in virtually any web or desktop application regardless of the underlying framework.
+Telerik Reporting is an <a href="https://www.telerik.com/products/reporting/embedded-reporting.aspx" target="_blank">embedded tool</a> for creating and displaying reports in a visually structured and logically grouped way. You can integrate the Telerik reports in virtually any web or desktop application regardless of the underlying framework.
 
 ## Scenarios for Using Telerik Reporting
 

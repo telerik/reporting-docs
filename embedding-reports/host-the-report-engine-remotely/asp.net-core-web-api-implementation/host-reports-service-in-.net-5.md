@@ -11,7 +11,7 @@ previous_url: /telerik-reporting-rest-service-aspnetcore-net5,/embedding-reports
 
 # Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in {{site.dotnetversions}} with Startup.cs
 
-This article guides you on how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in a .NET Web Application. The configuration of the application in this tutorial is set up in the `Startup.cs` file of the project. 
+This article guides you on how to host a Reports Web Service to expose the Reports Generation Engine to an ASP.NET Core in a .NET Web Application. The configuration of the application in this tutorial is set up in the `Startup.cs` file of the project. 
 
 If you prefer to use [top level statements introduced with .NET 6](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements), refer to the article [Hosting in .NET {{site.mindotnetversion}}+ with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
 
@@ -85,7 +85,7 @@ The [`ConfigureServices`](https://learn.microsoft.com/en-us/dotnet/api/microsoft
 
 ### Adding Connection Strings to the Configuration
 
-The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) for this purpose.
+The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility for the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) for this purpose.
 
 The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/) file named by default `appSettings.json`. The default `ReportingEngineConfiguration` will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 

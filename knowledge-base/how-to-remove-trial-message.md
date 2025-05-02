@@ -17,9 +17,14 @@ res_type: kb
 			<td>Product</td>
 			<td>Progress® Telerik® Reporting</td>
 		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2025 Q1 (19.0.25.313) and older</td>
+		</tr>
 	</tbody>
 </table>
 
+>
 ## Description
 
 This tutorial explains in detail how to upgrade your Telerik [Trial]({%slug telerikreporting/licensing%}) to a Licensed version of [Telerik Reporting](https://www.telerik.com/account/product-download?product=REPORTING).

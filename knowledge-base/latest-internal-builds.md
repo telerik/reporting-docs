@@ -33,11 +33,7 @@ The purpose of the LIB is to allow the users to test the latest bug fixes. So, i
 
 Go to [Downloads for Progress® Telerik® Reporting](https://www.telerik.com/account/product-download?product=REPORTING) page, click on Internal Builds and look for the `.msi` containing the LIB:
 
-`Telerik_Reporting_{VERSION}_TRIAL.msi`
-
-or
-
-`Telerik_Reporting_{VERSION}_DEV.msi`
+`Telerik_Reporting_{VERSION}.msi`
 
 ![Latest Internal Build Download page for Telerik Reporting with Purchase version 13.1.19.618 selected](resources/download-lib.png)
 

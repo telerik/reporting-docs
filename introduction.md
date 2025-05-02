@@ -102,7 +102,7 @@ For any issues you might come across while working with Telerik Reporting, use a
 
 Note that sharing quality feedback and ideas will not only benefit the community and improve the products but may also win you [Telerik points](https://www.telerik.com/community/telerik-points).
 
-* Telerik Reporting license holders and anyone in an active trial can take advantage of the Telerik Reporting outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Telerik Reporting support system](https://www.telerik.com/account/support-tickets).
+* Telerik Reporting license holders can take advantage of the Telerik Reporting outstanding customer support delivered by the actual developers who built the tool. To submit a support ticket, use the [Telerik Reporting support system](https://www.telerik.com/account/support-tickets).
 * The [Telerik Reporting forum](https://www.telerik.com/forums/reporting) is part of the free support you can get from the community and from the Telerik Reporting team on all kinds of general issues.
 * [Telerik Reporting feedback portal](https://feedback.telerik.com/reporting) and [Telerik Reporting roadmap](https://www.telerik.com/support/whats-new/reporting/roadmap) provide information on the features in discussion and also the planned ones for release.
 * For any features that have already been released, visit the [Telerik Reporting Release History](https://www.telerik.com/support/whats-new/reporting/release-history) page.
@@ -122,4 +122,5 @@ Note that sharing quality feedback and ideas will not only benefit the community
 ## Next Steps
 
 * [First Steps with Telerik Reporting]({%slug telerikreporting/getting-started/first-steps%})
-* [Trial and Commercial Telerik Reporting License and License Agreement]({%slug telerikreporting/licensing%})
+* [Setting Up Your Telerik Reporting License Key]({%slug license-key%})
+* [Licensing Frequently Asked Questions]({%slug license-frequently-asked-questions%})

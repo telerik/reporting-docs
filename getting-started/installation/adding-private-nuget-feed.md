@@ -17,9 +17,9 @@ Telerik provides NuGet packages from the private Telerik NuGet feed which you ca
 
 ## Prerequisites
 
-* Visual Studio 2012 or later.
+* Visual Studio 2015 or later.
 
-* Valid Telerik Reporting trial or commercial license.
+* Valid Telerik Reporting license.
 
 ## Setup
 

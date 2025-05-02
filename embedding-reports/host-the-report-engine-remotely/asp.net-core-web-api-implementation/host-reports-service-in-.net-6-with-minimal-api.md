@@ -27,7 +27,7 @@ In Visual Studio, open the __Add New Project__ dialog and select *Telerik Report
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
-Set the Target Framework to .NET 6, .NET 8 or .NET 9.
+Set the Target Framework to .NET 6, .NET 8, or .NET 9.
 
 Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution.
 
@@ -81,7 +81,6 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 1. Register the Telerik Reporting Minimal API by invoking the `UseTelerikReporting` extension method on the [WebApplication](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.webapplication) object. The application must also enable the endpoint routing middleware added by the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) method: 
 
 	{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=UseReporting Minimal API}}
-
 
 ### Adding Connection Strings to the Configuration
 

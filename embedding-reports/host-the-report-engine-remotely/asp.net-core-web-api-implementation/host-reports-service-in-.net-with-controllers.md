@@ -114,40 +114,7 @@ The last supported type of `ConnectionStrings` configuration uses an array to pr
 1. Implement a Reports controller. Right-click on the `Controllers` folder and add a new item: __Add__ > __New item__ > __API Controller - Empty__ item. Name it `ReportsController`. This will be our Telerik Reporting REST service in the project.
 1. Inherit the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look:
 
-	````CSharp
-namespace TopLevelStatements.Controllers
-	{
-		using System.Net;
-		using System.Net.Mail;
-		using Microsoft.AspNetCore.Mvc;
-		using Telerik.Reporting.Services;
-		using Telerik.Reporting.Services.AspNetCore;
-
-		[Route("api/[controller]")]
-		[ApiController]
-		public class ReportsController : ReportsControllerBase
-		{
-			public ReportsController(IReportServiceConfiguration reportServiceConfiguration)
-			: base(reportServiceConfiguration)
-			{
-			}
-
-			protected override HttpStatusCode SendMailMessage(MailMessage mailMessage)
-			{
-				throw new System.NotImplementedException("This method should be implemented in order to send mail messages");
-
-				// using (var smtpClient = new SmtpClient("smtp01.mycompany.com", 25))
-				// {
-				//     smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
-				//     smtpClient.EnableSsl = false;
-				//     smtpClient.Send(mailMessage);
-				// }
-				// return HttpStatusCode.OK;
-			}
-		}
-	}
-````
-
+	{{source=CodeSnippets\AspNetCoreWebApiCS\ReportsControllerTopLevelStatements.cs}}
 
 ### Test the service implementation
 

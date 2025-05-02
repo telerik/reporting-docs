@@ -82,7 +82,6 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 
 	{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=UseReporting Minimal API}}
 
-
 ### Adding Connection Strings to the Configuration
 
 The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration) for this purpose.

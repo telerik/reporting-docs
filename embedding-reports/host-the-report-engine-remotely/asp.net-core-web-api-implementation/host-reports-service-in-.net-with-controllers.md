@@ -68,39 +68,15 @@ Modify the `Program.cs` file in the project to enable the Reports Service functi
 
 1. Make sure the application is configured for WebAPI controllers using the [AddControllers()](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addcontrollers) extension method and call the [AddNewtonsoftJson](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson) extension method on the [IMvcBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.imvcbuilder) object to enable the **NewtonsoftJson** serialization:
 
-	````CSharp
-builder.Services.AddControllers().AddNewtonsoftJson();
-````
-
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=AddNewtonsoftJson}}
 
 1. Add the dedicated [ReportServiceConfiguration](/api/telerik.reporting.services.reportserviceconfiguration) object needed from the Reports Service in the dependency container. Note how the report source resolver will target the `Reports` folder we created earlier. 
 
-	````CSharp
-// Configure dependencies for ReportsController.
-	builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
-		new ReportServiceConfiguration
-		{
-			// The default ReportingEngineConfiguration will be initialized from appsettings.json or appsettings.{EnvironmentName}.json:
-			ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
-			// In case the ReportingEngineConfiguration needs to be loaded from a specific configuration file, use the approach below:
-			//ReportingEngineConfiguration = ResolveSpecificReportingConfiguration(sp.GetService<IWebHostEnvironment>()),
-			HostAppId = "ReportingNet6",
-			Storage = new FileStorage(),
-			ReportSourceResolver = new UriReportSourceResolver(System.IO.Path.Combine(sp.GetService<IWebHostEnvironment>().ContentRootPath, "Reports"))
-		});
-````
-
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=ReportServiceConfiguration Controllers}}
 
 1. Make sure the endpoints are configured for API controllers by adding the following line in the lambda expression argument after the [UseRouting](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.endpointroutingapplicationbuilderextensions.userouting) call: 
 
-	````CSharp
-app.UseEndpoints(endpoints =>
-	{
-		endpoints.MapControllers();
-		//...
-	});
-````
-
+	{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=UseReporting Controllers}}
 
 ### Add Configuration Settings to the Program.cs file (Optional)
 
@@ -108,9 +84,7 @@ The report generation engine can retrieve SQL Connection Strings and specific Re
 
 The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
 
-````CSharp
-ReportingEngineConfiguration = sp.GetService<IConfiguration>();
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=Default Configuration Controllers}}
 
 will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.json`.
 
@@ -118,16 +92,7 @@ To activate JSON file configuration with a different name, for example, `reporti
 
 In this guide, we will create a helper method to load the JSON-formatted setting:
 
-````CSharp
-static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment environment)
-{
-	// If a specific configuration needs to be passed to the reporting engine, add it through a new IConfiguration instance.
-	var reportingConfigFileName = System.IO.Path.Combine(environment.ContentRootPath, "reportingAppSettings.json");
-	return new ConfigurationBuilder()
-		.AddJsonFile(reportingConfigFileName, true)
-		.Build();
-}
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=Resolve Specific Reporting Configuration}}
 
 Finally, all configurations should be placed in the JSON configuration file (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
 

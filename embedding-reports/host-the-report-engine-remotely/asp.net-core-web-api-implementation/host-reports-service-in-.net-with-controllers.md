@@ -155,27 +155,15 @@ To ensure that the service operates, run the application and navigate to either 
 
 ### Enable Cross-Origin Resource Sharing (CORS) (Optional)
 
-You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), for example, if you use the REST Service from clients hosted in different domains.
+You may need to enable [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS), for example, if the Reporting REST Service is used from clients hosted in different domains.
 
-Add the following service to the *Program.cs* file to add a new CORS policy for the REST Service:
+Add the following service to the **Program.cs** file to add a new CORS policy for the REST Service:
 
-````CSharp
-builder.Services.AddCors(corsOption => corsOption.AddPolicy(
-	"ReportingRestPolicy",
-	corsBuilder =>
-	{
-		corsBuilder.AllowAnyOrigin()
-			.AllowAnyMethod()
-			.AllowAnyHeader();
-	}
-));
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=AddCors}}
 
-Activate the above policy for the application by adding the code below in the application configuration part of the `Program.cs` file:
+Activate the above policy for the application by adding the code below in the application configuration part of the **Program.cs** file:
 
-````CSharp
-app.UseCors("ReportingRestPolicy");
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\Program.cs region=UseCors}}
 
 ## Demo project
 

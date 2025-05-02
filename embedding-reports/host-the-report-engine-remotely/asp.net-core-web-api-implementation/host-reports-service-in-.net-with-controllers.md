@@ -1,10 +1,9 @@
 ---
-
 title: Hosting in .NET with Controllers
 page_title: Hosting the Reporting REST Service in ASP.NET Core with Controllers
 description: "Learn how to Host Telerik Reporting REST Service in ASP.NET Core in .NET 8+ and above with Top-Level Statements and controller-based APIs in this step by step tutorial."
 slug: telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-with-controllers
-tags: how,to,host,reports,service,in,asp.net,core,in,.net,6,with,top-level,statements,and,controllers
+tags: host,service,asp.net,core,.net,top-level,statements,controllers
 published: True
 position: 3
 ---
@@ -22,7 +21,7 @@ The guide is separated into sections for readability reasons. Along with the ste
 
 ## Using the REST Service Project Template
 
-In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create` a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
+In Visual Studio, open the __Add New Project__ dialog and select *Telerik Reporting REST Service* project template. After clicking `Create`, a menu pops up that allows you to configure the following properties of the REST Service: target framework, service clients (report viewer and report designer), Cross-Origin Resource Sharing, Host Application ID, and Application URL.
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net6.png)
 
@@ -48,7 +47,7 @@ In this tutorial, the resulting service will use the sample report definitions d
 
 1. Find the sample reports in *{Telerik Reporting installation path}\Report Designer\Examples*.
 1. Add a new folder to your solution called `Reports` and copy all sample reports into it.
-1. Later in the tutorial we will make sure that the ReportsController is able to resolve the definitions for the requested reports from this project folder.
+1. Later in the tutorial, we will make sure that the ReportsController can resolve the definitions for the requested reports from this project folder.
 
 > It is recommended to use declarative definitions (TRDP/TRDX/TRBP) authored using the [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%}) or the [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) in order to take advantage of their design-time tooling because the VS integrated report designer tooling is still not available in .NET {{site.mindotnetversion}}+ projects.
 
@@ -105,7 +104,7 @@ app.UseEndpoints(endpoints =>
 
 ### Add Configuration Settings to the Program.cs file (Optional)
 
-The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility of the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-6.0) for this purpose.
+The report generation engine can retrieve SQL Connection Strings and specific Report Generation Engine Settings that provide flexibility for the deployed application. It utilizes the [IConfiguration interface](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=dotnet-plat-ext-6.0) for this purpose.
 
 The .NET applications use a [key-value JSON-based](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0) file named by default `appSettings.json`. The default ReportingEngineConfiguration:
 
@@ -117,7 +116,7 @@ will be initialized from `appSettings.json` or `appsettings.{EnvironmentName}.js
 
 To activate JSON file configuration with a different name, for example, `reportingAppSettings.json`, call the [AddJsonFile](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.jsonconfigurationextensions.addjsonfile?view=dotnet-plat-ext-7.0) extension method on an instance of [ConfigurationBuilder](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.configurationbuilder?view=dotnet-plat-ext-7.0).
 
-In this guide we will create a helper method loading the json-formatted setting:
+In this guide, we will create a helper method to load the JSON-formatted setting:
 
 ````CSharp
 static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment environment)
@@ -130,52 +129,25 @@ static IConfiguration ResolveSpecificReportingConfiguration(IWebHostEnvironment 
 }
 ````
 
-Finally, all configurations should be placed in the JSON configuraion file (add one in the project root if such does not exist). For example, __ConnectionStrings__ setting should be configured in JSON-based format like this:
+Finally, all configurations should be placed in the JSON configuration file (add one in the project root if such does not exist). For example, the `ConnectionStrings` setting should be configured in JSON-based format like this:
 
-````JSON
-{
-	//...
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true"
-	}
-}
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_0.json}}
 
-The above type of connection string lacks information about the data provider and will use *System.Data.SqlClient* as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
+The above type of connection string lacks information about the data provider and will use [System.Data.SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient) as provider invariant name. When it's necessary to specify a different data provider, the following notation is also supported:
 
-````JSON
-{
-	"ConnectionStrings": {
-		"Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString": {
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	}
-}
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_1.json}}
 
-The two types of connection string notations specified above can coexist in a single `ConnectionStrings` section.
+The two types of connection string notations specified above can coexist in a single ConnectionStrings section.
 
-The last supported type of __ConnectionStrings__ configuration uses an array to provide information about each connection string:
+The last supported type of `ConnectionStrings` configuration uses an array to provide information about each connection string:
 
-````JSON
-{
-	//...
-	"ConnectionStrings": [
-		{
-			"name": "Telerik.Reporting.Examples.CSharp.Properties.Settings.TelerikConnectionString",
-			"connectionString": "Data Source=.\\SQLEXPRESS;Initial Catalog=AdventureWorks;Integrated Security=true",
-			"providerName": "System.Data.SqlClient"
-		}
-	]
-}
-````
+{{source=CodeSnippets\AspNetCoreWebApiCS\appsettings.ConnectionString_2.json}}
 
 ### Setting up the Reporting REST service
 
-1. Create folder `Controllers`. Right-click on the project name and select __Add__ > __New folder__. Name it `Controllers`.
+1. Create a folder `Controllers`. Right-click on the project name and select __Add__ > __New folder__. Name it `Controllers`.
 1. Implement a Reports controller. Right-click on the `Controllers` folder and add a new item: __Add__ > __New item__ > __API Controller - Empty__ item. Name it `ReportsController`. This will be our Telerik Reporting REST service in the project.
-1. Inherit the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look like:
+1. Inherit the [ReportsControllerBase](/api/Telerik.Reporting.Services.WebApi.ReportsControllerBase) type and inject the configuration settings in the constructor. This is how a basic implementation of the controller should look:
 
 	````CSharp
 namespace TopLevelStatements.Controllers

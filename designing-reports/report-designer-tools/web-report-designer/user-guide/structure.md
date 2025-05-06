@@ -16,39 +16,43 @@ img[alt$="><"] {
 
 # Structure of Web Report Designer
 
-You are expected to see the sample report and the first time a user loads the Web report designer, they will see the onboarding guide which walks you through the main tools in the designer:
+You are expected to see the sample report and the first time a user loads the Web report designer, they will see the **onboarding guide** which walks you through the main tools in the designer:
 
-![Onboarding Guide ><](images/wrd-onboarding-guide.png)    
+![Onboarding Guide Popup ><](images/wrd-onboarding-guide-welcome.png)   
 
-We have the interactive **Design surface** where you actually create and style your report:
 
-![Design Surface ><](images/wrd-design-surface.png)    
+1. **Design surface** - Represents the interactive design surface where you actually create and style your report.
 
-The **Components tray** which contains all of the items that you can add to the report:
+    ![Onboarding Guide Popup ><](images/wrd-design-surface-cropped.png)    
 
-![Components Tray ><](images/wrd-components-tray.png)   
 
-The **Explorer** which provides a tree-based structure of everything that is already in the report including data structure:
+2. **Components tray** - Contains all of the items that you can add to the report.
 
-![Explorer ><](images/wrd-explorer.png)   
+    ![Components Tray ><](images/wrd-components-tray-cropped.png)   
 
-On the right, we have a **Properties area** which will show you all of the properties and set values for the currently selected component:
+3. **Explorer** - Provides a tree-based structure of everything that is already in the report including data structure.
 
-![Properties Area ><](images/wrd-properties-area.png)  
+    ![Explorer ><](images/wrd-explorer-cropped.png)   
 
-At the top left, the **Main menu** allows you to open, save and interact with all of your reports on a global level along with the **Asset Manager** which is where you store all of your reports assets.
+4. **Properties area** - Area on the right side which will show you all of the properties and set values for the currently selected component:
 
-![Main Menu ><](images/wrd-main-menu.png)  
+    ![Properties Area ><](images/wrd-properties-area-cropped.png)    
 
-![Asset Manager ><](images/wrd-asset-manager.png)    
+5. **Main menu** - At the top left, the menu allows you to open, save and interact with all of your reports on a global level along with the **Asset Manager** which is where you store all of your reports assets.
 
-We have a **Preview** button which shows you a pixel perfect rendering of what the report will look like:
+    ![Main Menu ><](images/wrd-main-menu-cropped.png)   
 
-![Report Preview ><](images/wrd-preview-button.png)  
+    ![Asset Manager ><](images/wrd-asset-manager-cropped.png)  
 
-And finally, at the top we have a global **Search box** which allows you to search the report instance for any property value, component data source, etc.:
+6. **Preview** - Represents a `Preview` button which shows you a pixel perfect rendering of what the report will look like:
 
-![Global Search ><](images/wrd-global-search.png) 
+    ![Report Preview ><](images/wrd-preview-button-cropped.png)   
+
+7. **Search box** - At the top we have a global **Search box** which allows you to search the report instance for any property value, component data source, etc.:
+
+    ![Global Search ><](images/wrd-global-search-cropped.png) 
+
+ 
 
 ## See Also
 

@@ -10,32 +10,33 @@ position: 8
 
 # Preview Release
 
-The Preview is a minor release for Telerik Reporting assemblies, that is uploaded between the major releases (Q1, Q2, Q3, and Q4). The Preview is released on demand so its frequency vary from none to several versions between two major releases. The purpose of the Preview is to allow the users to test the latest bug fixes before the major release. 
+A preview release is a minor release with bug fixes that is published between the major releases (Q1, Q2, Q3, and Q4). Preview releases are published on demand and have no release cadence.
+
+If a preview version gets released, it remains available for download only until the release of the next official version. Once the official version is published, the preview that preceded it is removed from the [Downloads](https://www.telerik.com/account/downloads/product-download?product=REPORTING) section of your Telerik account.
 
 ## Downloading the Preview Release
 
-The previews are available only if they are released after an official release. Once a new official version is out and no previews are released afterwards, the previous previews are no longer available.
+The preview versions are available in the [Downloads](https://www.telerik.com/account/downloads/product-download?product=REPORTING) section of your Telerik account where you can select your preferred distribution asset type: NuGet packages, MSI, or a ZIP archive.
 
-The Preview is __available as a NuGet__ package. Note that the Preview packages are not uploaded on the [Telerik NuGet Feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}), but are available only as [local nuget package]({%slug setup-local-nuget-feed%}).
+To download a preview release:
 
-Alternatively, you can __download the Preview assemblies__ from [your telerik.com account](https://www.telerik.com/account/).
+1. Go to the Telerik Reporting [Downloads page](https://www.telerik.com/account/downloads/product-download?product=REPORTING).
 
-1. Go to the Telerik Reporting for Reporting product [download page](https://www.telerik.com/account/downloads/product-download?product=REPORTING). 
-	
-2. Click on the __Download__ button in the __Latest Preview__ banner. This will download an archive with the Reporting __assemblies__.
+2. Click the __Download__ button in the __Latest Preview__ banner.
 
-	To get a specific version of the Preview, open the __Previews__ tab on the download page. Then, select a version from the list.
+3. (Optional) To get a specific version of the preview (if multiple versions are available), click the __Previews__ tab on the download page. Then, select a version from the list.
 
-	![Telerik Reporting Progress Site for Reporting Preview Tab](images/TelerikReportingLastestPreview.png)
-	
+   ![Telerik Reporting Progress Site for Reporting Preview Tab](images/TelerikReportingLastestPreview.png)
+
 ## Version Number Breakdown
 
-The numbers in the name are determined by the source code build date. In other words, the version number corresponds to the date when the msi was built.
+The numbers in the name are determined by the build time of the source code.
 
 The following image shows the name of the Preview generated on the 22nd of December (12th month), in the 2024 Q4 release sprint.
 
-![Telerik Reporting Internal Build Version Number Breakdown](images/TelerikReportingVersionNumber.png)
- 
-## See Also  
+   ![Telerik Reporting Internal Build Version Number Breakdown](images/TelerikReportingVersionNumber.png)
+
+## See Also
+
 * [Installation Approaches for Telerik Reporting]({%slug telerikreporting/installation%})
 * [Telerik Reporting Licensing]({%slug telerikreporting/licensing%})  

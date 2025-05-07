@@ -22,9 +22,9 @@ To download a preview release:
 
 1. Go to the Telerik Reporting [Downloads page](https://www.telerik.com/account/downloads/product-download?product=REPORTING).
 
-2. Click the __Download__ button in the __Latest Preview__ banner.
+1. Click the __Download__ button in the __Latest Preview__ banner.
 
-3. (Optional) To get a specific version of the preview (if multiple versions are available), click the __Previews__ tab on the download page. Then, select a version from the list.
+1. (Optional) To get a specific version of the preview (if multiple versions are available), click the __Previews__ tab on the download page. Then, select a version from the list.
 
    ![Telerik Reporting Progress Site for Reporting Preview Tab](images/TelerikReportingLastestPreview.png)
 

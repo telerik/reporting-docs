@@ -31,10 +31,10 @@ You can further customize your theme through one of the following approaches:
 
 Adjust predefined variables to effect global changes across colors, fonts, and other styling aspects. This approach is ideal for maintaining consistency and quickly applying broad changes. Some key variables to consider include:
 
-- **`kendo-color-primary`**: Sets the main accent color for the report viewer. This affects components such as the toolbar buttons’ selected state and the focused state of the splitter.
-- **`kendo-color-base`**: Defines the secondary accent color of the report viewer.
-- **`kendo-color-subtle`**: Determines the subtle text color used in the icons of toolbox buttons.
-- **`kendo-default-typography`**: Configures the default typography for the report viewer, and additionally influences the icons in toolbox buttons (since they are essentially font icons).
+- `kendo-color-primary`: Sets the main accent color for the report viewer. This affects components such as the toolbar buttons’ selected state and the focused state of the splitter.
+- `kendo-color-base`: Defines the secondary accent color of the report viewer.
+- `kendo-color-subtle`: Determines the subtle text color used in the icons of toolbox buttons.
+- `kendo-default-typography`: Configures the default typography for the report viewer, and additionally influences the icons in toolbox buttons (since they are essentially font icons).
 
 ### Customize Component Properties
 

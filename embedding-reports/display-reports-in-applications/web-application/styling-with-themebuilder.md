@@ -44,7 +44,7 @@ For more granular control, you can directly tweak the styling properties of spec
 
 After finalizing your customizations, you can export your theme. Click **Export All** in the upper-right corner of the ThemeBuilder app. This action will download a ZIP package containing the CSS and Sass files, which you can reference in your project with the report viewer. 
 
-For example, copy the CSS file from the `css` folder in the exported package and add it to your project. In the report viewer, replace the existing references to Telerik and Kendo UI themes with the ThemeBuilder-exported theme:
+For example, copy the CSS file from the `css` folder in the exported package and add it to your project. In the report viewer file, replace the existing references to Telerik and Kendo UI themes with the ThemeBuilder-exported theme:
 
 ```html
 <!--

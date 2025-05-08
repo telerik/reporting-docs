@@ -1,7 +1,7 @@
 ---
 title: Event Binding
 page_title: Handling Blazor Report Viewer Events
-description: "Learn about what are the events exposed by the Telerik Reporting Blazor Report Viewer and how to attach event handlers to said events."
+description: "Learn about what events are exposed by the Telerik Reporting Blazor Report Viewer and how to attach handlers to them."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/blazor-report-viewer/event-binding
 tags: event,binding
 published: True
@@ -22,6 +22,10 @@ To attach an event handler to the viewer, specify the name of the event handler 
 
 For example, we can attach handlers to the `ExportBegin` and `ExportEnd` events of the viewer:
 
+__from CodeSnippets\BlazorAppSnippets\Components\Shared\_ViewerAddEvent.cshtml__
+{{source=CodeSnippets\BlazorAppSnippets\Components\Shared\_ViewerAddEvent.cshtml}}
+
+__current__
 ````CSHTML
 <ReportViewer
 	ClientEvents="@(new ClientEventsOptions() {
@@ -32,6 +36,10 @@ For example, we can attach handlers to the `ExportBegin` and `ExportEnd` events 
 
 Then, we can create the event handler functions in the **wwwroot/index.html** (Blazor WebAssembly) or **Pages/\_Host.cshtml** (Blazor Server):
 
+__from CodeSnippets\BlazorAppSnippets\Components\Shared\_EventsScirpts.cshtml__
+{{source=CodeSnippets\BlazorAppSnippets\Components\Shared\_EventsScirpts.cshtml}}
+
+__current__
 ````HTML
 <script>
 	window.trvEventHandlers = {

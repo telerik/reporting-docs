@@ -5,7 +5,7 @@ description: "Learn the basics of the Send Mail Message functionality in the HTM
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/send-mail-message
 tags: send,mail,message
 published: True
-position: 12
+position: 13
 previous_url: /html5-report-viewer-send-mail
 ---
 

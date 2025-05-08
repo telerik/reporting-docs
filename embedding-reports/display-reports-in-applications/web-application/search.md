@@ -5,7 +5,7 @@ description: "Learn the basics of the Search functionality in the HTML5-based Re
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/search
 tags: search
 published: True
-position: 11
+position: 12
 previous_url: /html5-report-viewer-search
 ---
 

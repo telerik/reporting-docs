@@ -35,10 +35,10 @@ We have four available options for the `friendlyName` setting
 
 |  |  |
 | ------ | ------ |
-|Microsoft.Extensions.AzureAIInference.Core|DefaultProviderInfoFactory.MicrosoftExtensionsAzureAIInference|
-|Microsoft.Extensions.AzureOpenAI.Core|DefaultProviderInfoFactory.MicrosoftExtensionsAzureOpenAI|
-|Microsoft.Extensions.AzureOllama.Core|DefaultProviderInfoFactory.MicrosoftExtensionsOllama|
-|Microsoft.Extensions.OpenAI.Core|DefaultProviderInfoFactory.MicrosoftExtensionsOpenAI|
+|Microsoft.Extensions.AI.AzureAIInference|"MicrosoftExtensionsAzureAIInference"|
+|Microsoft.Extensions.AI.OpenAI + Azure.AI.OpenAI|"MicrosoftExtensionsAzureOpenAI"|
+|Microsoft.Extensions.AI.Ollama|"MicrosoftExtensionsOllama"|
+|Microsoft.Extensions.AI.OpenAI|"MicrosoftExtensionsOpenAI"|
 
 ````JSON
 "AIClient": {

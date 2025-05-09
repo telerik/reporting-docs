@@ -37,10 +37,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1. Make sure app configuration inside the `Configure` method of the `Startup.cs`(or `Program.cs` if .NET 6+ is used) can serve static files:
 
-	````CSharp
-app.UseStaticFiles();
-````
-
+	{{source=CodeSnippets\BlazorAppSnippets\Program.cs region=UseStaticFiles}}
 
 1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App): 
 

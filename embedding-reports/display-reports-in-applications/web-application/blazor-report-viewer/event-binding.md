@@ -22,35 +22,9 @@ To attach an event handler to the viewer, specify the name of the event handler 
 
 For example, we can attach handlers to the `ExportBegin` and `ExportEnd` events of the viewer:
 
-__from CodeSnippets\BlazorAppSnippets\Components\Shared\_ViewerAddEvent.cshtml__
 {{source=CodeSnippets\BlazorAppSnippets\Components\Shared\_ViewerAddEvent.cshtml}}
-
-__current__
-````CSHTML
-<ReportViewer
-	ClientEvents="@(new ClientEventsOptions() {
-		ExportBegin = "trvEventHandlers.exportBegin",
-		ExportEnd = "trvEventHandlers.exportEnd"
-	})" />
-````
 
 Then, we can create the event handler functions in the **wwwroot/index.html** (Blazor WebAssembly) or **Pages/\_Host.cshtml** (Blazor Server):
 
-__from CodeSnippets\BlazorAppSnippets\Components\Shared\_EventsScirpts.cshtml__
 {{source=CodeSnippets\BlazorAppSnippets\Components\Shared\_EventsScirpts.cshtml}}
-
-__current__
-````HTML
-<script>
-	window.trvEventHandlers = {
-		exportBegin: function (e, args) {
-			console.log("This event handler will be called before exporting the report in " + args.format + " format.");
-		},
-		exportEnd: function (e, args) {
-			console.log("This event handler will be called after exporting the report.");
-			console.log("The exported report can be found at: " + window.location.origin + args.url);
-		}
-	}
-</script>
-````
 

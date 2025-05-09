@@ -20,14 +20,25 @@ The AI-powered insights in Report Preview provide comprehensive capabilities, in
 
 ## Configure the AI
 
-|   |   |
+| Setting | Description |
 | ------ | ------ |
-|friendlyName||
-|model||
-|endpoint||
-|credential||
-|allowOnlyPredefinedPrompts|This setting is set to false by default. If you set it to true you will not be allowed to ask anything except the predefined prompts. For example, if you write "Hi" it will throw an exception|
-|predefinedPrompts||
+|friendlyName|This setting specifies the name corresponding to the type of AI client you wish to use. For example, setting friendlyName to "MicrosoftExtensionsAzureOpenAI" indicates that the Azure OpenAI client is being utilized|
+|model|This setting specifies the AI model to be used for generating responses. For example, setting the model to "gpt-4o-mini" indicates that the GPT-4 model variant is being utilized|
+|endpoint|This setting specifies the URL of the AI service endpoint|
+|credential|This setting specifies the authentication credentials required to access the AI service. It ensures that the AI client can securely connect to the specified endpoint|
+|allowOnlyPredefinedPrompts|This setting is set to false by default. If you set it to `True`, you will not be allowed to ask anything except the predefined prompts. For example, if you write "Hi" it will throw an exception|
+|predefinedPrompts|This setting specifies a list of predefined prompts that the AI client can use. Each prompt is defined by a text attribute, which contains the prompt's content|
+
+__AI clients__
+
+We have four available options for the `friendlyName` setting
+
+|  |  |
+| ------ | ------ |
+|Microsoft.Extensions.AzureAIInference.Core|DefaultProviderInfoFactory.MicrosoftExtensionsAzureAIInference|
+|Microsoft.Extensions.AzureOpenAI.Core|DefaultProviderInfoFactory.MicrosoftExtensionsAzureOpenAI|
+|Microsoft.Extensions.AzureOllama.Core|DefaultProviderInfoFactory.MicrosoftExtensionsOllama|
+|Microsoft.Extensions.OpenAI.Core|DefaultProviderInfoFactory.MicrosoftExtensionsOpenAI|
 
 ````JSON
 "AIClient": {
@@ -46,7 +57,7 @@ The AI-powered insights in Report Preview provide comprehensive capabilities, in
 ````XML
 <Telerik.Reporting>
 <AIClient
-     friendlyName="MicrosoftExtensionsAzureOpenAI"
+     friendlyName "MicrosoftExtensionsAzureOpenAI"
      model="gpt-4o-mini"
      endpoint="https://ai-explorations.openai.azure.com/"
      credential="ce278499c31c4bfca3fffe0ad49b4330"

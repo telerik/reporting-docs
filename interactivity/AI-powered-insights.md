@@ -69,3 +69,10 @@ We have four available options for the `friendlyName` setting
 </AIClient>
 </Telerik.Reporting>
 ````
+## Extensibility
+
+* If the existing clients are insufficient, custom implementations can be developed and added to the REST service configuration
+
+* Predefined prompts in the REST service controllers can be intercepted and modified
+
+* Certain metadata sent to AI models can be altered through resx files

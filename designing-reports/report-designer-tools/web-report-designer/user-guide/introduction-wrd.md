@@ -10,7 +10,7 @@ position: 1
 
 # Web Report Designer User Guide: An Overview
 
-The Web Report Designer User Guide is intended to assist the users of business applications that integrate Telerik Reporting. It aims at providing the knowledge required for the successful crafting and maintenance of reports. Although this user guide is nested in the common developer docs, its primary audience are business application users.
+The Web Report Designer User Guide is intended to assist the users of business applications with integrated Telerik Reporting. This guide aims to provide the knowledge required for the successful crafting and maintenance of reports. The primary audience for this user guide are business application users.
 
 > If you are a developer who integrates Telerik Reporting into web applications, see the [developer-oriented technical section]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%}) of the Web Report Designer documentation or the [Getting Started tutorial]({%slug telerikreporting/getting-started/web-designer/set-up-and-create-basic-report%}). 
 

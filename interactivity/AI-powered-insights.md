@@ -71,8 +71,21 @@ We have four available options for the `friendlyName` setting
 ````
 ## Extensibility
 
-* If the existing clients are insufficient, custom implementations can be developed and added to the REST service configuration
+* If necessary, the Reporting engine can use a custom Telerik.Reporting.AI.IClient implementation, which can be registered in the Reporting REST Service configuration:
 
-* Predefined prompts in the REST service controllers can be intercepted and modified
+````C#
+builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
+{
+    HostAppId = "MyApp",
+    AIClientFactory = GetCustomAIClient,
+    ...
+});
+static Telerik.Reporting.AI.IClient GetCustomAIClient()
+{
+    return new MyCustomAIClient(...);
+}
+````
 
-* Certain metadata sent to AI models can be altered through resx files
+* The configured predefined prompts can be modified at runtime by overriding the "UpdateAIPrompts" method of the ReportsController class.
+
+* Parts of the metadata sent by the Reporting engine to the AI model can be customized through resx files

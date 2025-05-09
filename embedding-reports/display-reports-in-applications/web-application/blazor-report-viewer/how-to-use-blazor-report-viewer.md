@@ -41,95 +41,33 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App): 
 
-	````HTML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	@* For Reports service hosted in the same project: *@
-	<script src="/api/reports/resources/js/telerikReportViewer"></script>
-	@* For Reports service hosted in another application / Report Server use absolute URI: *@
-	@*<script src="https://demos.telerik.com/report-server/api/reports/resources/js/telerikReportViewer"></script>*@
-````
-
+	{{source=CodeSnippets\BlazorAppSnippets\wwwroot\JavaScriptDependencies.html}}
 
 1. Add [Telerik Kendo UI SASS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs, and you need to escape the __@__ symbol as __@@__:
 
-	````HTML
-<link rel="stylesheet" href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.default-main.min.css" />
-````
+	{{source=CodeSnippets\BlazorAppSnippets\wwwroot\KendoSassTheme.html}}
 
 	Alternatively, you can use the [Kendo UI LESS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) (Kendo UI LESS-Based Themes are not compatible with Telerik UI for Blazor and should not be used together):
 
-	````HTML
-<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
-````
-
+	{{source=CodeSnippets\BlazorAppSnippets\wwwroot\KendoLessTheme.html}}
 
 1. Add the dedicated `interop.js` dependency at the end of the `body` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App):
 
-	````HTML
-<script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
-	@* Or this one if using the Telerik.ReportViewer.Blazor.Trial package *@
-	@*<script src="_content/Telerik.ReportViewer.Blazor.Trial/interop.js" defer></script>*@
-````
-
+	{{source=CodeSnippets\BlazorAppSnippets\wwwroot\InteropDependency.html}}
 
 1. If using the Telerik Reporting web service (either locally hosted or in another application), use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`.
 
 	>note When referencing the Reports service from another application, the `ServiceUrl` setting should be the absolute URI to the service. Please remember to set the actual `ReportSource` along with the eventual parameters:
 
-	````CSHTML
-@page "/"
-	@* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-	@* @rendermode InteractiveServer *@
-	@using Telerik.ReportViewer.Blazor
-	<style>
-		#rv1 {
-			position: relative;
-			width: 1200px;
-			height: 600px;
-		}
-	</style>
-	<ReportViewer ViewerId="rv1"
-				  ServiceUrl="/api/reports"
-				  ReportSource="@(new ReportSourceOptions()
-								  {
-										Report = "YOUR_REPORT_HERE.trdp"
-								  })"
-				  Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
-				  ScaleMode="@(ScaleMode.Specific)"
-				  Scale="1.0" />
-````
-
+	{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\ViewerRestService.razor}}
 
 1. If displaying reports from a Report Server instance, use the following snippet to place the viewer component in a Razor page like `Pages/Index.razor`. Please remember to set the actual `ReportServer` and `ReportSource` settings:
 
-	````CSHTML
-@page "/"
-	@* For Blazor Web Apps, an interactive render mode should be used, for example: *@
-	@* @rendermode InteractiveServer *@
-	@using Telerik.ReportViewer.Blazor
-	<style>
-		#rv1 {
-			position: relative;
-			width: 1200px;
-			height: 600px;
-		}
-	</style>
-	<ReportViewer ViewerId="rv1"
-				  ReportServer="@(new ReportServerOptions {  Url = "https://demos.telerik.com/report-server/", Username = "demouser", Password = "demopass" })"
-				  ReportSource="@(new ReportSourceOptions()
-								  {
-										Report = "Published/Dashboard"
-								  })"
-				  ScaleMode="@(ScaleMode.Specific)"
-				  Scale="1.0" />
-````
-
+	{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\ViewerReportServer.razor}}
 
 1. Use the rest of the parameters exposed on the Blazor viewer component to set up its appearance and behavior as desired.
 
 1. Finally, run the project to see the rendered report.
-
 
 ## See Also
 

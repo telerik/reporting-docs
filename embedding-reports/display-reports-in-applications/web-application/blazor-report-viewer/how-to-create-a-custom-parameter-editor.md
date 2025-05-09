@@ -27,11 +27,11 @@ The following example uses the **Dashboard** example report that we ship with th
 
 - In **\_Host.cshtml**
 
-{{source=CodeSnippets\BlazorAppSnippets\Components\Shared\_CustomParameterEditor_Host.cshtml}}
+  {{source=CodeSnippets\BlazorAppSnippets\Components\Shared\_CustomParameterEditor_Host.cshtml}}
 
 - Then in the Blazor Report Viewer Initialization:
 
-{{source=CodeSnippets\BlazorAppSnippets\Components\Shared\_CustomParameterEditor_Viewer.cshtml}}
+  {{source=CodeSnippets\BlazorAppSnippets\Components\Shared\_CustomParameterEditor_Viewer.cshtml}}
 
 
 ## See Also

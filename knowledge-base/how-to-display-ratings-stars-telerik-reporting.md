@@ -1,6 +1,6 @@
 ---
-title: Displaying Ratings with Stars in Telerik Report Designer Using JSON Data
-description: Learn how to visually represent ratings by stars in Telerik Reporting using data from a JSON data source.
+title: Displaying Ratings with Stars in Telerik Report
+description: "Learn how to visually represent ratings by stars in Telerik Reporting using data from a JSON data source."
 type: how-to
 page_title: How to Show Ratings by Stars in Reports
 slug: how-to-display-ratings-stars
@@ -17,10 +17,6 @@ ticketid: 1684841
             <td>Product</td>
             <td>Progress® Telerik® Reporting</td>
         </tr>
-        <tr>
-            <td>Version</td>
-            <td>18.2.24.806</td>
-        </tr>
     </tbody>
 </table>
 
@@ -36,25 +32,24 @@ To display ratings by stars using a JSON data source in Telerik Reporting, follo
 
 1. **Prepare the JSON Data Source**: Use the following sample JSON structure as the data source for the report:
 
-    ```json
-    [
-        { "product": "Product A", "rating": 4 },
-        { "product": "Product B", "rating": 5 },
-        { "product": "Product C", "rating": 3 }
-    ]
-    ```
+	````JSON
+[
+		{ "product": "Product A", "rating": 4 },
+		{ "product": "Product B", "rating": 5 },
+		{ "product": "Product C", "rating": 3 }
+	]
+````
 
-2. **Create Report Parameters**: Define three report parameters: `MinRating`, `MaxRating`, and `RatingDataPoints`.
-    * `MinRating` (integer) and `MaxRating` (integer) determine the range of the ratings. For a 5-star rating system, set `MinRating` to 0 and `MaxRating` to 4.
-    * `RatingDataPoints` uses the expression `= Space(CInt(Parameters.MaxRating.Value))` to generate a string with spaces equal to the maximum rating, which will later be split into individual elements for each star.
 
-3. **Add a List to the Detail Section**: Insert a [List]({%slug table_template_items%}) in the detail section of the report and bind it with the expression `= Split(" ", Parameters.RatingDataPoints.Value)`.
+1. **Create Report Parameters**: Define three report parameters: `MinRating`, `MaxRating`, and `RatingDataPoints`.
 
-4. **Insert a Star Shape**: Within the list, add a [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%}), and set its `ShapeType` property to a star.
+	* `MinRating` (integer) and `MaxRating` (integer) determine the range of the ratings. For a 5-star rating system, set `MinRating` to 0 and `MaxRating` to 4.
+	* `RatingDataPoints` uses the expression `= Space(CInt(Parameters.MaxRating.Value))` to generate a string with spaces equal to the maximum rating, which will later be split into individual elements for each star.
 
-5. **Apply Conditional Formatting**: To visually represent the actual ratings, apply conditional formatting to the star shapes. This step involves comparing each item's rating against the row number to determine whether the star should be filled or not.
-
-6. **Utilize Functions**: The solution makes use of several Telerik Reporting functions, including `Space()`, `CInt()`, and `Split()`, for manipulating data and bindings. More about these functions can be found in the [Telerik Reporting Functions Reference]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/overview%}).
+1. **Add a List to the Detail Section**: Insert a [List]({%slug table_template_items%}) in the detail section of the report and bind it with the expression `= Split(" ", Parameters.RatingDataPoints.Value)`.
+1. **Insert a Star Shape**: Within the list, add a [Shape]({%slug telerikreporting/designing-reports/report-structure/shape%}), and set its `ShapeType` property to a star.
+1. **Apply Conditional Formatting**: To visually represent the actual ratings, apply conditional formatting to the star shapes. This step involves comparing each item's rating against the row number to determine whether the star should be filled or not.
+1. **Utilize Functions**: The solution makes use of several Telerik Reporting functions, including `Space()`, `CInt()`, and `Split()`, for manipulating data and bindings. More about these functions can be found in the [Telerik Reporting Functions Reference]({%slug telerikreporting/designing-reports/connecting-to-data/expressions/expressions-reference/overview%}).
 
 By following these steps, you create a visual representation of ratings using stars based on JSON data in Telerik Reporting. This approach can be customized to suit different rating scales and visual preferences.
 

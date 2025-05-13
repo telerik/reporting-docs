@@ -107,3 +107,4 @@ Whenever you purchase a new Telerik Reporting license or renew an existing one, 
 * [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
 * [Adding the License Key to CI Services]({%slug license-key-ci-services%}))
 * [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})
+* [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version]({%slug upgrade-q1-2025-trial-to-q2-2025-purchase-license%})

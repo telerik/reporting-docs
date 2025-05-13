@@ -3,13 +3,13 @@ title: Using in .NET
 page_title: HTML5 Report Viewer in ASP.NET Core - Telerik Reporting
 description: "Learn how to add an HTML5 Report Viewer in an ASP.NET Core in .NET 6, .NET 7, and .NET 8 web app."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-in-an-asp.net-core-in-.net-5-application
-tags: how,use,html5,report,viewer,asp.net,core,.net,application
+tags: html5,report,viewer,asp.net,core,.net,application
 published: True
 position: 5
 previous_url: /manual-setup-of-html5-report-viewer-in-aspnetcore-net5
 ---
 
-# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 6, .NET 8 and .NET 9
+# Using the HTML5 Report Viewer in an ASP.NET Core application in .NET 6, .NET 8, and .NET 9
 
 This article guides you on how to add an HTML5 Report Viewer in an [ASP.NET Core in .NET 6](https://learn.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-6.0?view=aspnetcore-6.0) web application.
 
@@ -30,7 +30,7 @@ The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/
 * `Telerik Razor Report Viewer Page {{site.suiteversion}}`
 * `Telerik HTML5 Report Viewer Page {{site.suiteversion}}`
 
-The first template should be used when the project uses [Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/razor-pages/) while the second can be used in all other scenario. The item templates allow you to quickly and easily add the HTML5 Report Viewer to the application. The wizards are the same for both item templates.
+The first template should be used when the project uses [Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/razor-pages/), while the second can be used in all other scenarios. The item templates allow you to quickly and easily add the HTML5 Report Viewer to the application. The wizards are the same for both item templates.
 
 If you wish to connect the Report Viewer to a REST service, you can follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}) documentation article.
 
@@ -102,7 +102,7 @@ app.UseStaticFiles();
 
 ## Demo project
 
-A full example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\Html5IntegrationDemo`. Examples are available also for .NET 8 and .NET 9 in the corresponding subfolders.
+A full example can be found in the installation folder of Telerik Reporting, by default: `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 6\Html5IntegrationDemo`. Examples are also available for .NET 8 and .NET 9 in the corresponding subfolders.
 
 ## See Also
 

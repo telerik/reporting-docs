@@ -33,9 +33,9 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 ## Adding the Native Blazor Report Viewer Component Manually
 
-1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ (or __Telerik.ReportViewer.BlazorNative.Trial__) package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ (or __Telerik.ReportViewer.BlazorNative.Trial__) package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS settings using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
-1. Make sure app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET 6+ with Top Level Statements is used) file can serve static files:
+1. Make sure the app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET 6+ with Top Level Statements is used) file can serve static files:
 
 	````C#
 app.UseStaticFiles();
@@ -68,7 +68,7 @@ app.UseStaticFiles();
 ````
 
 
-1. Add [Telerik UI for Blazor Built-in Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
+1. Add [Telerik UI for Blazor Built-in Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs, and you need to escape the __@__ symbol as __@@__:
 
 	````HTML
 <link rel="stylesheet" href="https://blazor.cdn.telerik.com/blazor/{{blazoruiversion}}/kendo-theme-default/all.css" />
@@ -95,7 +95,7 @@ app.UseStaticFiles();
 ````
 
 
-1. If using the Reports web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. Remember to set the actual __ReportSource__ along with eventual parameters:
+1. If using the Reports web service (either locally hosted or in another application), use the following snippet to place the viewer component in a Razor page like __Pages/Index.razor__. Note that when referencing the Reports service from another application, the `ServiceUrl` setting should be the absolute URI to the service. Remember to set the actual __ReportSource__ along with eventual parameters:
 
 	````CSHTML
 @page "/"
@@ -132,7 +132,7 @@ app.UseStaticFiles();
 
 	> The `ReportSource` of the viewer should be set as in the above example. i.e. with the binding `@bind-ReportSource="@ReportSource"`. Setting the `ReportSource` directly, for example, like `ReportSource="@(new ReportSourceOptions("Report Catalog.trdp", new Dictionary<string, object>()))"` introduces circular dependency that causes endless refreshes of the Report Viewer that lead to infinite sequence of requests to the Reporting REST Service starting with Registe Client, etc.
 
-1. If displaying reports from a Report Server instance use the following snippet to place the viewer component in a razor page like __Pages/Index.razor__. Remember to set the actual __ReportServer__ and __ReportSource__ settings:
+1. If displaying reports from a Report Server instance, use the following snippet to place the viewer component in a Razor page like __Pages/Index.razor__. Remember to set the actual __ReportServer__ and __ReportSource__ settings:
 
 	````CSHTML
 @page "/"

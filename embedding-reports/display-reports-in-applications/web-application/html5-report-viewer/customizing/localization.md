@@ -18,13 +18,13 @@ The article elaborates on how to localize the messages displayed by the HTML5 Re
 
 	{{source=CodeSnippets\js\telerikReportViewer.stringResources}}
 
-	{{source=CodeSnippets\BlazorAppSnippets\wwwroot\manual-setup\HardCodedStringResources.js}}
+	{{source=CodeSnippets\BlazorAppSnippets\wwwroot\customize\HardCodedStringResources.js}}
 
 1. Specify the name of the file using the following convention: `stringResources.[culture].js` where *[culture]* is the name of the culture for the specified localization resource. For example, to provide a localization resource for the French-Belgian culture, the corresponding resource file could be named as follows: `stringResources.fr-BE.js`.
 1. Translate the texts for the specified culture
 1. Load the `JS` file with the translated text before loading the report viewer:
 
-	{{source=CodeSnippets\BlazorAppSnippets\wwwroot\manual-setup\AddTranslatedStringResources.html}}
+	{{source=CodeSnippets\BlazorAppSnippets\wwwroot\customize\AddTranslatedStringResources.html}}
 
 > To modify the HTML5 Viewer's HTML template that contains the toolbar, Preview, Parameters, and DocumentMap areas, you will have to set the viewer's `templateUrl`. For more details on this, please check [Providing Templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/providing-custom-templates%}).
 

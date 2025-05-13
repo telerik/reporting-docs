@@ -3,7 +3,7 @@ title: Using with REST Service
 page_title: Configuring HTML5 Report Viewer with Telerik Reporting REST Service
 description: "Learn what the prerequisites are and how to configure and use the HTML5 Report Viewer with the Telerik Reporting REST Service."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service
-tags: how,use,html5,report,viewer,rest,service
+tags: html5,report,viewer,rest,service
 published: True
 reporting_area: HTML5
 position: 2
@@ -23,7 +23,7 @@ For full control, manually configure the REST service and add HTML5 Report Viewe
 
 ## Telerik HTML5 Report Viewer Page Item Template
 
-The item template adds.html page with HTML5 Report Viewer and if needed enables the [Telerik Reporting REST WebAPI Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}). The following describes the item template wizard steps:
+The item template adds an HTML page with HTML5 Report Viewer, and if needed, enables the [Telerik Reporting REST WebAPI Service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}). The following describes the item template wizard steps:
 
 * To start the item template wizard, in __Solution Explorer__, select the target project. On the __Project menu__, click __Add -> New Item__. In the [Add New Item](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)) dialog box, navigate to the __Web__ category and select the __Telerik HTML5 Report Viewer Page__ item.
 * Accept the project build prompt. Click 'OK'.
@@ -38,7 +38,7 @@ The item template adds.html page with HTML5 Report Viewer and if needed enables 
 
 	1. __'Configure report source'__ will choose a report definition for the report viewer. If the __Create new REST service__ option was previously selected, you will have to choose one of the following three options. If, however, the __Use existing REST service__ option was previously selected, you will only have the option to choose an existing report definition.
 
-		+ __Sample report definition__ - this option will create a sample report definition which will be shown in the new report viewer. It will be placed in a newly created folder called Reports at the root of the application. It can be either modified or changed with another.
+		+ __Sample report definition__ - this option will create a sample report definition, which will be shown in the new report viewer. It will be placed in a newly created folder called Reports at the root of the application. It can be either modified or changed with another.
 		+ __New report definition__ - this option will create a new report definition that will be opened for editing in the respective report designer. On the right side of the dialog, there are two possible options:
 
 			+ __TRDP report definition__ - will create a TRDP file with the entered __Report name__.
@@ -48,7 +48,7 @@ The item template adds.html page with HTML5 Report Viewer and if needed enables 
 
 			+ __TRDP, TRBP or TRDX report definition__ - enter the path or browse to the report definition. Also, there is an option to enable adding the report definition to the project. In this case, the report viewer will use a UriReportSource with the provided path to the file.
 			+ __Enter type report definition created in Visual Studio__ - enter the Assembly qualified name of the type report definition. In this case, the report viewer will use a TypeReportSource with the provided Assembly-qualified name.
-			+ __Select type report definition created in Visual Studio__ - select the type report definition from the resolved types in the solution. The engine will search for report types in all projects in the solution that have Telerik Reporting reference included. The VS item template will add the required __connection string__ from the reports project configuration file (if it exists). 
+			+ __Select type report definition created in Visual Studio__ - select the type report definition from the resolved types in the solution. The engine will search for report types in all projects in the solution that have a Telerik Reporting reference included. The VS item template will add the required __connection string__ from the reports project configuration file (if it exists). 
 
 		![The Visual Studio item template Add new Report Viewer on the page Configure report source with selected BarcodesReport.cs CLR existing report definition](images/item-template-report-source-rest.png)
 

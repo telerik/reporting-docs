@@ -12,35 +12,25 @@ previous_url: /html5-report-viewer-styling-and-appearance, /embedding-reports/di
 
 # Styling and Appearance of the HTML5 Report Viewer
 
-The article elaborates on the styles used by the HTML5 Report Viewer, and how they can be loaded manually to be modified.
+The article elaborates on the styles used by the HTML5 Report Viewer and how they can be loaded manually to be modified.
 
 The styling and appearance of the HTML5 Report Viewer are controlled entirely through a set of CSS3 styles organized in classes with predefined names.
 
-All viewer-related classes are supplied by a single CSS stylesheet that is referenced in the report viewer HTML template. The template is provided by the Reporting REST service. To enforce a custom template with a custom or default CSS, specify the **templateUrl** of the HTML5 Viewer widget option.
+> All path references in the article should be adapted according to your project setup. For more information, please refer to the MSDN article [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)). The mentioned Report Viewer Template files are provided with your Telerik Reporting Installation - [Installation Directories]({%slug telerikreporting/installation%}#directories-and-asemblies).
 
-For reference, you can use the templates located in **%programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Html5\ReportViewer\templates**:
+All viewer-related classes are supplied by a single CSS stylesheet referenced in the report viewer HTML template. The template is provided by the Reporting REST service. To force a custom template with  a custom or default CSS, specify the __templateUrl__ of the HTML5 Viewer widget option. For reference, you can use the templates located in __%programfiles(x86)%\Progress\Reporting {{site.suiteversion}}\Html5\ReportViewer\templates__:
 
-```JavaScript
-<script type="text/javascript">
-	$("#reportViewer1")
-	.telerik_ReportViewer({
-		serviceUrl: "/api/reports/",
-		templateUrl: "/custom-templates-directory/templates/telerikReportViewerTemplate-{{buildversion}}.html"
-	});
-</script>
-```
+{{source=CodeSnippets\BlazorAppSnippets\wwwroot\customize\AddTemplate.html}}
 
-The template relies on the [Kendo UI SASS Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to provide layout settings and the color schema for the HTML5 Report Viewer:
+In addition, the Kendo UI CSS needs to be supplied for the Kendo UI widgets to be operational. While these classes provide layout settings, the HTML5 Report Viewer depends on the Kendo UI themes for its colors (theme):
 
-```HTML
-<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
-```
+{{source=CodeSnippets\BlazorAppSnippets\wwwroot\manual-setup\AddKendoStyles.html}}
 
-The default report viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display. For the media queries to be activated properly, the browser’s viewport needs to be configured as follows:
+The default template depends on the Telerik Web UI font provided by the Reporting REST service. 
 
-```HTML
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-```
+The default viewer template and stylesheet also depend on CSS media queries to adapt their layout according to the device and display. For the media queries to be activated properly, the browser’s viewport needs to be initialized like this:
+
+{{source=CodeSnippets\BlazorAppSnippets\wwwroot\manual-setup\InitializeViewport.html}}
 
 ## See Also
 

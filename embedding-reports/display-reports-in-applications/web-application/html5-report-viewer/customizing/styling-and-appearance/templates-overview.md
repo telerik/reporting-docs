@@ -26,21 +26,17 @@ All these elements of the HTML5 Report Viewer are provided through the __trv-rep
 
 While loading the template content, the widget looks for elements marked with the data-role attribute and maps its value to a [jQuery plugin function](https://plugins.jquery.com/) that provides the element behavior. For example:
 
-````HTML
-<div class="trv-parameters-area k-widget" data-role="telerik_ReportViewer_ParametersArea"> … </div>
-````
+{{source=CodeSnippets\BlazorAppSnippets\wwwroot\customize\data-role-attribute.html}}
 
 is mapped to:
 
-````JavaScript
-jQuery.fn.telerik_ReportViewer_ParametersArea(options)
-````
+{{source=CodeSnippets\BlazorAppSnippets\wwwroot\customize\data-role-attribute-map.js}}
 
-If such a function exists, it is invoked onto the HTML element (that owns the data-role attribute) passing an options object with the following properties:
+If such a function exists, it is invoked on the HTML element (that owns the data-role attribute), passing an options object with the following properties:
 
 * __controller__ - a `telerikReportViewer.ReportViewerController` object that is responsible for the basic viewer operations;
 * __commands__ - a `telerikReportViewer.CommandSet` object that contains all commands;
-* __templates__ - an object that contains all templates loaded for the current report viewer instance. The id of the template is used as a property’s name, and the value is the template HTML content.
+* __templates__ - an object that contains all templates loaded for the current report viewer instance. The id of the template is used as a property’s name, and the value is the template's HTML content.
 
 Using this declarative approach of describing the report viewer’s layout and behavior allows users to easily tweak any parts of it by simply modifying the templates. Following the above pattern, one can create their own data role and extend the default viewer behavior.
 

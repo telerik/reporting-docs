@@ -9,9 +9,9 @@ reporting_area: NativeBlazor
 position: 3
 ---
 
-# Using Send Mail Message Functionality in Native Blazor Report Viewer
+# Using the Send Mail Message Functionality in Native Blazor Report Viewer
 
-The native Blazor Report Viewer provides the capability to send the currently displaced report in the specified document format with an e-mail message.
+The native Blazor Report Viewer provides the capability to send the currently displayed report in the specified document format with an email message.
 
 ## Enabling the send mail message functionality
 
@@ -21,41 +21,21 @@ Web browsers cannot initiate the sending of e-mail messages containing attachmen
 
 Once ready, the send mail message toolbar button can be enabled through the `EnableSendEmail` initialization option.
 
-````CSHTML
-<ReportViewer 
-...
-EnableSendEmail="false" />
-````
+{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\Native_EnableSendEmail.cshtml}}
 
 ## Send Mail Message Dialog
 
-The `Send Mail Message` dialog is a [Telerik Blazor UI Window](https://docs.telerik.com/blazor-ui/components/window/overview) widget, that stays on top of the report viewer.
+The `Send Mail Message` dialog is a [Telerik Blazor UI Window](https://docs.telerik.com/blazor-ui/components/window/overview) widget that stays on top of the report viewer.
 
 ![Send Email Message Dialog that pops up after clicking on the Send Email button](../images/NativeBlazorReportViewer/BlazorNativeSendMail.png)
 
 ## Pre-configuring the Send Mail Message Dialog Settings
 
-The settings are populated from a `SendEmailDialogSettings` tag, that sits inside the `ReportViewerSettings` parent tag. The values are used __only__ for the initial population of the fields. Two-way binding is __not__ supported for those settings.
+The settings are populated from a `SendEmailDialogSettings` tag that sits inside the `ReportViewerSettings` parent tag. The values are used __only__ for the initial population of the fields. Two-way binding is __not__ supported for those settings.
 
 ### Markup Example
 
-````CSHTML
-<ReportViewer
-	ServiceUrl="/api/reports"
-	@bind-ReportSource="@ReportSource"
-	EnableSendEmail="true">
-	<ReportViewerSettings>
-		<SendEmailDialogSettings
-			From="from@mail.com"
-			To="to@mail.com"
-			Cc="Cc"
-			Subject=""
-			Body=""
-			Format="CSV">
-		</SendEmailDialogSettings>
-	</ReportViewerSettings>
-</ReportViewer>
-````
+{{source=CodeSnippets\BlazorAppSnippets\Components\Pages\Native_SendEmail.razor}}
 
 ### Setting Fields
 
@@ -64,7 +44,7 @@ The settings are populated from a `SendEmailDialogSettings` tag, that sits insid
 * __CC__ (Optional) - E-mail addresses used for the MailMessage `CC` value. Use `,`(comma) to separate multiple e-mail addresses.
 * __Subject__ (Optional) - The MailMessage subject.
 * __Body__ (Optional) - The MailMessage body.
-* __Format__ - If empty, or not present in the list of supported formats by the report, the first available format from the list is chosen instead. Uses non-localized values, such as `PDF`, `CSV` etc.
+* __Format__ - If empty or not present in the list of supported formats by the report, the first available format from the list is chosen instead. Uses non-localized values, such as `PDF`, `CSV`, etc.
 
 ## See Also
 

@@ -11,10 +11,7 @@ position: 7
 
 Starting with the [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) release, using Telerik Reporting without a license or with an invalid license causes specific license warnings and errors. This article defines what an invalid license is, explains what is causing it, and describes the related license warnings and errors.
 
-The implementation of the 2025 product licensing requirements will occur in two phases:
-
-* Phase 1 - Starting with the 2025 Q1 release, a missing or invalid license logs a warning in the build log and the report will show a watermark with a trial message. The trial distribution won't show the trial message when activated with a trial license. There will be no change in the commercial distribution.
-* Phase 2 - Starting with the 2025 Q2 release, there will be only one distribution of the product with different licenses. A missing, expired, or invalid license will result in:
+A missing, expired, or invalid license will result in:
 
   - A watermark appears on each report document page.
   - A warning message appearing in the build log:
@@ -71,6 +68,8 @@ Using the Telerik Reporting in a project with an expired or missing license, the
 |`Your perpetual license is invalid.`|TKL102||You are using a product version released outside the validity period of your perpetual license. To remove the error message, do either of the following: <ul><li>Renew your subscription and [download a new license key]({%slug license-key%}#downloading-the-license-key)</li><li>Downgrade to a Telerik Reporting version included in your perpetual license, as indicated in the message.</li></ul>|
 |`Your trial license has expired.`|TKL105|Purchase a commercial license to continue using the product.|
 |`Your license is not valid for the detected product(s).`|TKL101|Review the purchase options for the listed products.<br />Alternatively, remove the references to the listed packages from `package.json`.|
+|`Unable to locate licenses for all products`|TKL004|Your license is not valid for all Telerik and Kendo products added to your project. If you have already purchased the required license, then update your license key]({%slug license-key%}).|
+|`No Telerik or Kendo UI product references detected in project`|TKL001|<ul><li>If you use Telerik products and see this message, update the Telerik.Licensing package to version 1.4.9 or later.</li><li>If you do not use Telerik products, remove the Telerik.Licensing NuGet reference from your project.</li></ul>|
 
 Starting with the 2025 Q2 release of Telerik Reporting, all conditions above will be treated as errors.
 

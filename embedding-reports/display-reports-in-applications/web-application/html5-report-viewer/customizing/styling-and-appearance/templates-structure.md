@@ -1,7 +1,7 @@
 ---
 title: Templates Structure
 page_title: Templates Structure of the HTML5 Report Viewer Explained in details
-description: "Learn more about the detailed structure of the HTML5 Report Viewer Templates in Telerik Reporting which is the basic template file."
+description: "Learn more about the detailed structure of the HTML5 Report Viewer Templates in Telerik Reporting, which is the basic template file."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-structure
 tags: templates,structure
 published: True
@@ -20,8 +20,8 @@ All report viewer templates are supplied by a single-page markup - `C:\Program F
 
 The templates are recognized by well-known identifiers supplied by the `id` attribute. These templates are:
 
-* __trv-report-viewer__ - provides the base viewer markup. The default viewer template contains a page area, a document map, a parameters area, a large menu when displaying on desktop browsers, and a small menu and a side menu optimized for mobile browsers;
-* __trv-parameter__ - provides the default markup for the report parameter editors including the title, error message box, and the editor itself;
+* __trv-report-viewer__ - provides the base viewer markup. The default viewer template contains a page area, a document map, a parameters area, a large menu when displaying on desktop browsers, and a small menu and a side menu optimized for mobile browsers.
+* __trv-parameter__ - provides the default markup for the report parameter editors, including the title, error message box, and the editor itself;
 * __trv-parameter-editor-available-values-multiselect__ - the default ListView editor for report parameters of any type with specified available values and an option to select more than one value;
 * __trv-parameter-editor-available-values-multiselect-combo__ - the default ComboBox editor for report parameters of any type with specified available values and an option to select more than one value;
 * __trv-parameter-editor-available-values__ - the default ListView editor for report parameters of any type with specified available values and limited to selecting a single value;

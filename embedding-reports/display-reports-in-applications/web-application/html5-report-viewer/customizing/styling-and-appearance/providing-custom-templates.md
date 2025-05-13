@@ -16,50 +16,17 @@ The article elaborates on how to use a customized HTML template for the HTML5 Re
 
 Once you create a custom HTML template, you can provide it to the HTML5 Report through the `templateUrl` property:
 
-````JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-	serviceUrl: "api/reports/",
-	templateUrl: '/custom-template-directory/telerikReportViewerTemplate.html',
-	reportSource: { 
-		report: "Product Catalog.trdp" 
-		}
-});
-````
+{{source=CodeSnippets\BlazorAppSnippets\wwwroot\customize\AddTemplate.html}}
 
 The HTML template file is essentially a page that includes HTML document fragments nested inside __template__ tags. For example, this is what the report parameter template looks like:
 
-````HTML
-    <template id="trv-parameter">
-        <div class="trv-parameter-container k-card">
-            <div class="trv-parameter-header k-card-header">
-                <div class="trv-parameter-title k-card-title"></div>
-            </div>
-            <div class="trv-parameter-error k-notification k-notificaiton-error">
-                <span class="k-notification-status k-icon k-i-x-outline"></span>
-                <span class="trv-parameter-error-message k-notification-content"></span>
-            </div>
-            <div class="trv-parameter-value k-card-body"></div>
-        </div>
-    </template>
-````
+{{source=CodeSnippets\BlazorAppSnippets\wwwroot\customize\HtmlTemplate.html}}
 
 The templates are loaded during the initialization of the __telerik_ReportViewer__ widget. Since this is an asynchronous network operation(the template HTML is loaded with an `HTTP GET` request) that takes an unpredictable amount of time, the widget is not functional until the template is loaded successfully. 
 
 To find when the report viewer is loaded, provide an event handler function for the __telerik_ReportViewer__ widget's [ready()]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/ready()%}) event:
 
-````JavaScript
-$("#reportViewer1").telerik_ReportViewer({
-	serviceUrl: "api/reports/",
-	templateUrl: '/custom-template-directory/telerikReportViewerTemplate.html',
-	reportSource: { 
-		report: "Product Catalog.trdp" 
-		},
-	ready: function() {
-		// report viewer is now ready for action
-	}
-});
-````
-
+{{source=CodeSnippets\BlazorAppSnippets\wwwroot\customize\AddTemplateAndReadyEvent.html}}
 
 ## See Also
 

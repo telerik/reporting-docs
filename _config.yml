@@ -456,7 +456,8 @@ reportserverversion: "11.0.25.313"
 spaviewerversion: "25.25.313"
 nodeversion: "16.0.0"
 angularsubsetversion: "17.2.0"
-kendosubsetversion: "2022.3.913"
+kendosubsetversion: "2025.1.227"
+kendothemeversion: "10.2.0"
 blazoruiversion: "7.1.0"
 
 # Feedback Form Product code

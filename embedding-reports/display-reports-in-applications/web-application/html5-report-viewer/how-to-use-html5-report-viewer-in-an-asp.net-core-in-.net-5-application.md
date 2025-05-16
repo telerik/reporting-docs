@@ -55,17 +55,16 @@ app.UseStaticFiles();
 	  <title>Telerik HTML5 Report Viewer Demo in ASP.NET Core in .NET 6</title>
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-	  <link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-	  <link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+
+	  <link href="https://kendo.cdn.telerik.com/themes/{{kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
 	  <script src="/api/reports/resources/js/telerikReportViewer"> </script>
+
 	  <style>
 		  #reportViewer1 {
 			  position: absolute;
-			  left: 5px;
-			  right: 5px;
-			  top: 50px;
-			  bottom: 5px;
+			  inset: 5px;	
 			  overflow: hidden;
 			  font-family: Verdana, Arial;
 		  }

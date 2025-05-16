@@ -1,9 +1,9 @@
 ---
-title: Web Report Designer - Components
-page_title: Web Report Designer - Structure
+title: Components - Overview
+page_title: Get familiar with the available report items in the Components tray of Web Report Designer.
 description: Explore the available report components offered by the Web Report Designer.
 slug: web-report-designer-user-guide-components
-tags: web, report, design, report, components
+tags: web, report, design, report, components, overview
 published: True
 position: 0
 ---
@@ -26,7 +26,7 @@ Each report is constructed by [report items]({%slug telerikreporting/designing-r
 |**Maps**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
 |**Charts**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
 |**Report Sections**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
-|**DataSources**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
+|[DataSources]({%slug web-report-designer-user-guide-components-data-sources%})|<ul><li>SQL Data Source</li><li>CSV Data Source</li><li>Web Service Data Source</li><li>JSON Data Source</li><li>Object Data Source</li></ul>|
 
 
 

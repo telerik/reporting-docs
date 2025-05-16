@@ -5,7 +5,7 @@ description: Explore the available Data Source report components offered by the 
 slug: web-report-designer-user-guide-components-data-sources
 tags: web, report, design, report, components, data, source
 published: True
-position: 0
+position: 7
 ---
 
 <style>
@@ -13,32 +13,42 @@ img[alt$="><"] {
   border: 1px solid lightgrey;
 }
 
-table, th, td {
+/* table, th, td {
 	border: 1px solid;
-}
+} */
 table th:first-of-type {
-	width: 20%;
+	width: 30%;
 }
 table th:nth-of-type(2) {
-	width: 20%;
+	width: 70%;
 } 
-table th:nth-of-type(3) {
-	width: 60%;
-} 
+ 
 </style>
 
 # Data Sources
 
 The **Web Report Designer** offers a **Data Sources** section inside the **Components** tray allowing the end-user to fetch data from different storages: 
+ 
+<table>
+<tr>    
+  <th style="width:30%"></th><th></th>
+</tr>
+<tr>
+  <td>
+    <img alt="><" title="Components tray" src="images/wrd-components-tray-data-sources.png" />
+  </td>
+  <td>   
 
-
-<table><tr>    
-<th></th><th>Data Source</th><th>Description</th></tr>
-<tr><td rowspan=5>![Components Tray ><](images/wrd-components-tray-data-sources.png)</td><td>[SQL Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})</td><td>Enables data items to display data located in a relational database, including [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) and Oracle databases, as well as OLE DB and ODBC data sources, using little or no code. </td></tr>
-<tr><td>[CSV Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%})</td><td>Enables data items to display data located in a CSV document, including files (*.csv, *.tsv, *.txt, and others), inline string or stream.</td></tr>
-<tr><td>[Web Service Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})</td><td>Enables data items to display data located on a service in [JSON format]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).</td></tr>
-<tr><td>[JSON Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%})</td><td>Enables data items to display JSON data located in a local file or saved directly into the report.</td></tr>
-<tr><td>[Object Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})</td><td>Provides a way to bind the Data Report Items to a middle-tier business object.</td></tr>
+  |Data Source|Description|
+  |----|----|
+  |[SQL Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%})|Enables data items to display data located in a relational database, including [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) and Oracle databases, as well as OLE DB and ODBC data sources, using little or no code.|
+  |[CSV Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview%})|Enables data items to display data located in a CSV document, including files (*.csv, *.tsv, *.txt, and others), inline string or stream.|
+  |[Web Service Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview%})|Enables data items to display data located on a service in [JSON format]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%}).|
+  |[JSON Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component%})|Enables data items to display JSON data located in a local file or saved directly into the report.|
+  |[Object Data Source]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview%})|Provides a way to bind the Data Report Items to a middle-tier business object.|  
+  
+  </td>
+</tr>
 </table>
 
 
@@ -54,12 +64,12 @@ If you want to skip any further fine-tuning, click the `Finish` button to confir
 
 |Wizard step|Description|
 |----|----|
-|1. **Choose data connection**|Select an existing or build a new data connection.|
-|2. **Data connection options**|Specify whether to use the connection as shared or embed it in the report.|
-|3. **Configure data source command**|Specify a *select statement* or a *stored procedure* to retrieve data from the data source. The [Query Builder]({%slug web-report-designer-query-builder%}) helps you create queries to retrieve data from a relational database for a SqlDataSource component.|
-|4. **Configure data source parameters**|This step occurs if you select *Stored procedure* in step 3. Specify a database type and a default value or an expression to evaluate for each data source parameter.|
-|5. **Configure design time parameters**|Specify an appropriate design time value for each data source parameter.|
-|6. **Preview data source results**|Preview the result set returned by this data source|
+|1. Choose data connection|Select an existing or build a new data connection.|
+|2. Data connection options|Specify whether to use the connection as shared or embed it in the report.|
+|3. Configure data source command|Specify a *select statement* or a *stored procedure* to retrieve data from the data source. The [Query Builder]({%slug web-report-designer-query-builder%}) helps you create queries to retrieve data from a relational database for a SqlDataSource component.|
+|4. Configure data source parameters|This step occurs if you select *Stored procedure* in step 3. Specify a database type and a default value or an expression to evaluate for each data source parameter.|
+|5. Configure design time parameters|Specify an appropriate design time value for each data source parameter.|
+|6. Preview data source results|Preview the result set returned by this data source|
 
 >caption Select and Preview SQL Data
 
@@ -77,12 +87,12 @@ If you want to skip any further fine-tuning, click the `Finish` button to confir
 
 |Wizard step|Description|
 |----|----|
-|1. **Choose a CSV source**|Select an existing or select a new CSV file or use inline CSV data.|
-|2. **Modify your CSV file**|If you upload a CSV file, you can make the selected file inline and modify its content.|
-|3. **Configure CSV Data Source - Separators**|Specify the column/row separators and whether the data include headers or not.|
-|4. **Configure CSV Data Source - Escape Format**|Specifies the [escape format]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats%}).|
-|5. **Map Columns to Type**|Specify the columns types as by default they come in string type. |
-|6. **Preview data source results**|Preview the result set returned by this data source.|
+|1. Choose a CSV source|Select an existing or select a new CSV file or use inline CSV data.|
+|2. Modify your CSV file|If you upload a CSV file, you can make the selected file inline and modify its content.|
+|3. Configure CSV Data Source - Separators|Specify the column/row separators and whether the data include headers or not.|
+|4. Configure CSV Data Source - Escape Format|Specifies the [escape format]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/csvdatasource-escape-formats%}).|
+|5. Map Columns to Type|Specify the columns types as by default they come in string type. |
+|6. Preview data source results|Preview the result set returned by this data source.|
 
 >caption Map Column Types and Preview CSV Data
 
@@ -100,13 +110,13 @@ If you want to skip the further settings steps, click the `Finish` button to con
 
 |Wizard step|Description|
 |----|----|
-|1. **Configure Data Retrieval**|Setup the properties of the HTTP request which will retrieve data from the web service.|
-|2. **Configure request parameters**|Specify name, type, default value or expression, and design time value for data source parameters.|
-|3. **Configure Basic Authentication**|Specify *Username* & *password* (relevant for *Basic authentication*).|
-|4. **Configure 2-step authentication**|Specify the 2-step (Bearer) authentication settings.|
-|5. **Configure authentication parameters**|Specify name, type, default value or expression, and design time value for data source parameters (relevant for *2-Step authentication*).|
-|6. **Choose design-time data**|Specify whether to:</br>- *Use real data while designing the report*</br>- *Upload JSON file*</br>- *Use JSON inline as hard-coded data while designing the report*.|
-|7. **Preview data source results**|Preview the result set returned by this data source.|
+|1. Configure Data Retrieval|Setup the properties of the HTTP request which will retrieve data from the web service.|
+|2. Configure request parameters|Specify name, type, default value or expression, and design time value for data source parameters.|
+|3. Configure Basic Authentication|Specify *Username* & *password* (relevant for *Basic authentication*).|
+|4. Configure 2-step authentication|Specify the 2-step (Bearer) authentication settings.|
+|5. Configure authentication parameters|Specify name, type, default value or expression, and design time value for data source parameters (relevant for *2-Step authentication*).|
+|6. Choose design-time data|Specify whether to:</br>- *Use real data while designing the report*</br>- *Upload JSON file*</br>- *Use JSON inline as hard-coded data while designing the report*.|
+|7. Preview data source results|Preview the result set returned by this data source.|
 
 >caption Preview Data from the Web Service Data Source
 
@@ -116,21 +126,17 @@ If you want to skip the further settings steps, click the `Finish` button to con
 
 By clicking the `JSON Data Source` item in the **Components** tray, the [JSON Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/jsondatasource-wizard%}) appears allowing you to use a new or an existing JSON file, or directly enter inline JSON content:
 
-* Inline JSON Data
+>caption Upload a new JSON file vs Inline JSON data
 
-  ![Inline JSON Data Source ><](images/wrd-components-tray-data-sources-inline-json-data-source.png)
-
-* Upload a new JSON file
-
-  ![Upload JSON File ><](images/wrd-components-tray-data-sources-upload-json-data-source.png) 
+![Inline JSON Data Source ><](images/wrd-components-tray-data-sources-inline-vs-upload-file-json-data-source.png)
 
 >note The **Data selector** (e.g. `$.store.book[?(@.price<10)]`) is a [JSONPath](https://goessner.net/articles/JsonPath/) string which will be used to query the data.
 
 |Wizard step|Description|
 |----|----|
-|1. **Choose a JSON source**|Specify the JSON source that should be retrieved.|
-|2. **Modify your JSON file**|You can make the selected file inline and modify its content (relevant when using a JSON file in step 1).|
-|3. **Preview data source results**|Preview the result set returned by this data source.|
+|1. Choose a JSON source|Specify the JSON source that should be retrieved.|
+|2. Modify your JSON file|You can make the selected file inline and modify its content (relevant when using a JSON file in step 1).|
+|3. Preview data source results|Preview the result set returned by this data source.|
 
 ## Object Data Source
 
@@ -146,10 +152,10 @@ By clicking the `Object Data Source` item in the **Components** tray, the [Objec
 
 |Wizard step|Description|
 |----|----|
-|1. **Choose a business object**|The selected business object type's assembly-qualified name will be stored in the data source component's DataSource property.|
-|2. **Choose a data member**|The business object instance will be created using its default constructor. You have the option to specify a different constructor or a data member (method or property) that will return the data.|
-|3.||
-|4. **Preview data source results**|Preview the result set returned by this data source.|
+|1. Choose a business object|The selected business object type's assembly-qualified name will be stored in the data source component's DataSource property.|
+|2. Choose a data member|The business object instance will be created using its default constructor. You have the option to specify a different constructor or a data member (method or property) that will return the data.|
+|3. Configure data source parameters|Specify default value or expression and design-time value for data source parameters.|
+|4. Preview data source results|Preview the result set returned by this data source.|
 
 >caption Preview Data 
 

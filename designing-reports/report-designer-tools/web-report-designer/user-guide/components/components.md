@@ -32,7 +32,7 @@ Each report is constructed by [report items]({%slug telerikreporting/designing-r
 
 
 
-![Components Tray ><](images/wrd-components-tray.png)    
+![Components Tray ><](../images/wrd-components-tray.png)    
 
 
 

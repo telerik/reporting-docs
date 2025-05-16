@@ -10,7 +10,7 @@ position: 1
 
 # Styling HTML5-Based Report Viewers with ThemeBuilder
 
-ThemeBuilder is a powerful web-based tool designed to help you style Telerik and Kendo UI components effectively. It offers a user-friendly visual interface to customize colors, fonts, and various styling properties. Since the web report viewers rely on such components internally, you can use ThemeBuilder to create a cohesive theme that extends to the web report viewers in Telerik Reporting.
+ThemeBuilder is a powerful web-based tool designed to help you style Telerik and Kendo UI components effectively. It offers a user-friendly visual interface to customize colors, fonts, and various styling properties. Since the web report viewers rely on such components internally, you can use ThemeBuilder to create a cohesive theme that extends to the them.
 
 The current article applies to the HTML5-based report viewers, including:
 
@@ -48,13 +48,13 @@ Adjust predefined variables to effect global changes across colors, fonts, and o
 
 - `kendo-default-typography`: This variable configures the default typography settings for the report viewer.
 
-- `kendo-default-typography`: Configures the default typography for the report viewer, and additionally influences the icons in toolbox buttons (since they are essentially font icons).
-
 ### Customize Component Properties
 
 For more granular control, you can directly tweak the styling properties of specific components in the HTML5-based report viewers. This approach allows for precise design adjustments without altering the overall theme. For example, you can customize parameter editors, which use Kendo components like ComboBox, ListView, MultiSelect, and DatePicker, directly in ThemeBuilder. 
 
 Additionally, you may want to modify other components, including the main Toolbar of the report viewer, the modal dialogs (which are essentially Window components), or the flat base [variant](https://docs.telerik.com/themebuilder/working-with-kendo/component-variants) of the Button component, which is used to define the toolbar buttons.
+
+For more details on the properties customizations, check [Exploring the Component Properties](https://docs.telerik.com/themebuilder/building-visual-styles/component-properties).
 
 ## Using the Theme
 

@@ -23,15 +23,13 @@ To create a theme using ThemeBuilder, follow these steps:
 
 > The Native Angular Report Viewer uses SVG icons instead of font icons, so it is essential to select the correct icon type. This ensures that your changes are correctly applied in the application later on.
 
-## Customizing the Theme
-
 You can further customize your theme through one of the following approaches:
 
 ### Modify Theme Variables
 
 Adjust predefined variables to effect global changes across colors, fonts, and other styling aspects. This approach is ideal for maintaining consistency and quickly applying broad changes. Some key variables to consider include:
 
-- `kendo-color-primary`: This variable defines the primary accent color for the viewer. It influences various subcomponents, such as the export button, the zoom combo box button, and the opening button of the date input, which acts as a parameter editor for DateTime parameters, and others.
+- `kendo-color-primary`: This variable defines the primary accent color for the viewer. It influences the action buttons of the modals and the parameter editors.
 
 - `kendo-color-on-app-surface`: This variable specifies the color of the text and icons of the toolbar buttons.
 
@@ -41,9 +39,9 @@ Adjust predefined variables to effect global changes across colors, fonts, and o
 
 ### Customize Component Properties
 
-For more granular control, you can directly tweak the styling properties of specific components in the Native Angular Report Viewer. This approach allows for precise design adjustments without altering the overall theme. For example, you can customize parameter editors, which use Kendo components like ComboBox, ListView, MultiSelect, and DatePicker, directly in ThemeBuilder. 
+For more granular control, you can directly tweak the styling properties of specific components in the HTML5-based report viewers. This approach allows for precise design adjustments without altering the overall theme. For example, you can customize parameter editors, which use Kendo components like ComboBox, ListView, MultiSelect, and DatePicker, directly in ThemeBuilder. 
 
-Additionally, you may want to modify other components, including the main Toolbar of the report viewer, the modal dialogs (which are essentially Window components), the SplitButton used for exports, or the flat base [variant](https://docs.telerik.com/themebuilder/working-with-kendo/component-variants) of the Button component, which is used to define the toolbar buttons.
+Additionally, you may want to modify other components, including the main Toolbar of the report viewer, the modal dialogs (which are essentially Window components), or the flat base [variant](https://docs.telerik.com/themebuilder/working-with-kendo/component-variants) of the Button component, which is used to define the toolbar buttons.
 
 For more details on the properties customizations, check [Exploring the Component Properties](https://docs.telerik.com/themebuilder/building-visual-styles/component-properties).
 

@@ -80,40 +80,40 @@ The following steps produce an HTML page with settings similar to these in the i
 
 	````HTML
 <!--
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.core.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.data.odata.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.data.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.userevents.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.selectable.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.calendar.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.fx.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.draganddrop.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.scroller.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.virtuallist.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.popup.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.list.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.combobox.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.datepicker.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.resizable.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.dropdownlist.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.multiselect.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.splitter.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.window.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.color.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.slider.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.button.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.colorpicker.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.editor.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.listview.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.menu.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.panelbar.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.tooltip.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.treeview.min.js"></script>
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.touch.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.core.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.data.odata.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.data.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.userevents.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.selectable.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.calendar.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.fx.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.draganddrop.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.mobile.scroller.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.virtuallist.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.popup.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.list.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.combobox.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.datepicker.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.resizable.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.dropdownlist.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.multiselect.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.splitter.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.window.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.color.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.slider.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.button.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.colorpicker.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.editor.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.listview.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.menu.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.panelbar.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.tooltip.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.treeview.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.touch.min.js"></script>
 	kendo.mobile.min.js - optional, if gestures/touch support is required
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.mobile.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.mobile.min.js"></script>
 	kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
-	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.web.min.js"></script>
+	<script src="https://kendo.cdn.telerik.com/{{kendothemeversion}}/js/kendo.web.min.js"></script>
 	-->
 ````
 

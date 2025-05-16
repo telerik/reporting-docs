@@ -110,8 +110,8 @@ using Microsoft.AspNetCore.Mvc;
 
 	````HTML
 <script src="_content/Telerik.WebReportDesigner.Blazor/telerikWebReportDesignerInterop.js" defer></script>
-	@* Or this one if using the Telerik.WebReportDesigner.Blazor.Trial package *@
-	@*<script src="_content/Telerik.WebReportDesigner.Blazor.Trial/telerikWebReportDesignerInterop.js" defer></script>*@
+	@* Or this one if using the Telerik.WebReportDesigner.Blazor package *@
+	@*<script src="_content/Telerik.WebReportDesigner.Blazor/telerikWebReportDesignerInterop.js" defer></script>*@
 ````
 
 

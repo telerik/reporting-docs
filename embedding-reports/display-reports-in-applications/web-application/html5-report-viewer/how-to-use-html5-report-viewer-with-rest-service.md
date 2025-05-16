@@ -64,9 +64,9 @@ After finishing, the item template automatically does the following:
 
 ## Examples
 
-You can find the complete example setup in the Telerik Reporting installation path. For example, __C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\Html5Demo__.
+You can find the complete example setup in the Telerik Reporting installation path. For example, `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\.NET 8\Html5IntegrationDemo`.
 
-> If there are no examples in the Telerik Reporting installation path, you need to [run the setup]({%slug telerikreporting/installation%}#msi-installation) and enable the *Examples* feature.
+> If the Examples folder is missing from the Telerik Reporting installation directory, you need to [run the setup]({%slug telerikreporting/installation%}#msi-installation) and enable the **Examples** feature.
 
 ## See Also
 

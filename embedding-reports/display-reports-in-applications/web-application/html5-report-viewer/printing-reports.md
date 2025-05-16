@@ -42,8 +42,7 @@ var printMode = /(chrome)/.test(navigator.userAgent.toLowerCase())
 	: telerikReportViewer.PrintModes.FORCE_PDF_FILE;
 $("#reportViewer1")
 	.telerik_ReportViewer({
-		serviceUrl: "../api/reports/",
-		templateUrl: 'src/templates/telerikReportViewerTemplate-{{buildversion}}.html',
+		serviceUrl: "api/reports/",
 		reportSource: { report: "product catalog.trdp" },
 		printMode: printMode
 	});

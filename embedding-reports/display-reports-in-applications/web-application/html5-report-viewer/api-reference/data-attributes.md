@@ -79,7 +79,7 @@ The export command requires one additional parameter, `data-command-parameter`, 
 | __Word Document__ |DOCX|
 | __XPS Document__ |XPS|
 
-Depending on the report and the history of browsed reports some of the buttons may be disabled and others toggled. The commands automatically keep track of their state, but if custom widgets are used this state will not be displayed properly. Therefore, a `disabledButtonClass` and `checkedButtonClass` can be provided to the report viewer upon initialization - these classes will be added when the custom button is disabled or toggled, respectively.
+Depending on the report and the history of browsed reports, some of the buttons may be disabled, and others may be toggled. The commands automatically keep track of their state, but if custom widgets are used, this state will not be displayed properly. Therefore, a `disabledButtonClass` and `checkedButtonClass` can be provided to the report viewer upon initialization - these classes will be added when the custom button is disabled or toggled, respectively.
 
 ## See Also
 

@@ -29,7 +29,7 @@ You can further customize your theme through one of the following approaches:
 
 Adjust predefined variables to effect global changes across colors, fonts, and other styling aspects. This approach is ideal for maintaining consistency and quickly applying broad changes. Some key variables to consider include:
 
-- `kendo-color-primary`: This variable defines the primary accent color for the viewer. It influences the action buttons of the modals and the parameter editors.
+- `kendo-color-primary`: This variable defines the primary accent color for the viewer. It influences various subcomponents, such as the export button, the zoom combo box button, the action buttons of the modals and the parameter editors.
 
 - `kendo-color-on-app-surface`: This variable specifies the color of the text and icons of the toolbar buttons.
 

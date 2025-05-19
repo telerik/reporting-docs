@@ -41,7 +41,7 @@ If such a function exists, it is invoked onto the HTML element (that owns the da
 * __commands__ - a `telerikReportViewer.CommandSet` object that contains all commands;
 * __templates__ - an object that contains all templates loaded for the current report viewer instance. The id of the template is used as a property’s name, and the value is the template HTML content.
 
-Using this declarative approach of describing the report viewer’s layout and behavior allows users to easily tweak any parts of it by simply modifying the templates. Following the above pattern, one can create its own data role and extend the default viewer behavior.
+Using this declarative approach of describing the report viewer’s layout and behavior allows users to easily tweak any parts of it by simply modifying the templates. Following the above pattern, one can create their own data role and extend the default viewer behavior.
 
 ## See Also
 

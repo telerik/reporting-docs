@@ -39,7 +39,7 @@ $("#reportViewer1").telerik_ReportViewer({
 ````
 
 
-The button above will print the report currently displayed. Elements do not need to exist before the viewer initialization - they can be created on the fly and as soon as they have the `data-command` and `data-target-report-viewer` attributes the command can be executed.
+The button above will print the currently displayed report. Elements do not need to exist before the viewer initialization - they can be created on the fly, and as soon as they have the `data-command` and `data-target-report-viewer` attributes, the command can be executed.
 
 The following table is a list of all available commands for the `data-command` attribute:
 

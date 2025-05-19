@@ -1,7 +1,7 @@
 ---
 title: Styling Native Angular Report Viewer
 page_title: Styling the Native Angular Report Viewer with ThemeBuilder
-description: "Learn how to style your Native Angular Report Viewer using ThemeBuilder, a tool  created by Progress Telerik and designed for customizing Telerik and Kendo UI components."
+description: "Learn how to style your Native Angular Report Viewer using ThemeBuilder, a tool created by Progress Telerik and designed for customizing Telerik and Kendo UI components."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/styling-native-angular-viewer
 tags: styling,native,angular,viewer,themebuilder
 published: True

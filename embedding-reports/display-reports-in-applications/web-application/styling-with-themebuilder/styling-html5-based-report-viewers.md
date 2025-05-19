@@ -1,7 +1,7 @@
 ---
 title: Styling HTML5-Based Viewers
 page_title: Styling HTML5-Based Viewers with ThemeBuilder
-description: "Learn how to style your HTML5-based report viewers using ThemeBuilder, a tool  created by Progress Telerik and designed for customizing Telerik and Kendo UI components."
+description: "Learn how to style your HTML5-based report viewers using ThemeBuilder, a tool created by Progress Telerik and designed for customizing Telerik and Kendo UI components."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/styling-html5-viewers
 tags: styling,html5,viewer,themebuilder
 published: True

@@ -13,7 +13,7 @@ previous_url: /html5-report-viewer-customizing-providing-template
 
 The article elaborates on how to use a customized HTML template for the HTML5 Report Viewer.
 
-When you have created a custom HTML template, it can be provided to the HTML5 Report through the `templateUrl` property:
+Once you create a custom HTML template, you can provide it to the HTML5 Report through the `templateUrl` property:
 
 ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({

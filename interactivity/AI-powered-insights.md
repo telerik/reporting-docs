@@ -34,7 +34,7 @@ __AI clients__
 
 There are four available options for the `friendlyName` setting:
 
-|  |  |
+| Client Type | Friendly Name |
 | ------ | ------ |
 |Microsoft.Extensions.AI.AzureAIInference|"MicrosoftExtensionsAzureAIInference"|
 |Microsoft.Extensions.AI.OpenAI + Azure.AI.OpenAI|"MicrosoftExtensionsAzureOpenAI"|

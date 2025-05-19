@@ -20,14 +20,14 @@ table th:nth-of-type(2) {
 
 # Client Events Overview
 
-This article explains how to attach client event handlers to an WebForms wrapper of the HTML5 Report Viewer instance.
+This article explains how to attach client event handlers to an `WebForms` wrapper of the HTML5 Report Viewer instance.
 
-To attach a client event handler you have to set the appropriate ClientEvents tag as shown below:
+To attach a client event handler you have to set the proper `ClientEvents` tag as shown below:
 
 ````XML
 <telerik:ReportViewer ID="reportViewer1" runat="server">
 	<ClientEvents RenderingBegin="onRenderingBegin" />
-	...
+</telerik:ReportViewer>
 ````
 ````JavaScript
 <script>

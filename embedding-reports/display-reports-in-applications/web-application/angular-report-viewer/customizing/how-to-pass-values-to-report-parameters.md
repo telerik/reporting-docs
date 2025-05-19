@@ -26,10 +26,10 @@ This topic explains how to update the report parameters with values passed from 
 	````TypeScript
 import { Component, ViewChild } from '@angular/core';
 	import { TelerikReportViewerComponent } from '@progress/telerik-angular-report-viewer';
-	...
+
 	export class AppComponent {
 		@ViewChild('viewer1') viewer: TelerikReportViewerComponent;
-		...
+
 		onButtonClick(param: string) {
 			var rs = {
 				report: 'Invoice.trdp',
@@ -37,7 +37,6 @@ import { Component, ViewChild } from '@angular/core';
 			};
 			this.viewer.setReportSource(rs);
 		}
-		...
 	}
 ````
 
@@ -46,4 +45,3 @@ import { Component, ViewChild } from '@angular/core';
 ## See Also
 
 * [How To: Use Angular Report Viewer with Angular CLI]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-angular-cli%})
-* [How To: Use Angular Report Viewer with SystemJS]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/angular-report-viewer/how-to-use-angular-report-viewer-with-systemjs%})

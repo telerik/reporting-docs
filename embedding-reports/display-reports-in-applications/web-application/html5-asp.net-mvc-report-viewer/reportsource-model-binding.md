@@ -13,7 +13,7 @@ previous_url: /mvc-report-viewer-reportsource-model-binding
 
 The HTML5 Report Viewer comes with an MVC wrapper that does the JavaScript configuration of the report viewer, where you can type the initial settings of the viewer in `C#` or `VB.NET`. The settings include `Id`, `ServiceUrl`, `templateUrl`, client-side `ReportSource`, and more - [HTML5 Report Viewer Initialization]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}).
 
-> It is important to know that the MVC project appears as a client for the Reporting REST Service serving the HTML5 Viewer, even if the service is in the same project. The HTML5 Viewer and Reporting REST Service operates in a client-server model that is not related to the MVC architecture of the project. Modifications in reports and run-time data-bindings can be performed only by the Reporting REST Service, on the server where the Reporting REST Service is running. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
+> The MVC project appears as a client for the Reporting REST Service serving the HTML5 Viewer, even if the service is in the same project. The HTML5 Report Viewer and Reporting REST Service operates in a client-server model that is not related to the MVC architecture of the project. Modifications in reports and run-time data-bindings can be performed only by the Reporting REST Service, on the server where the Reporting REST Service is running. For more details, check [REST Service Report Source Resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
 
 ## Getting started
 
@@ -41,7 +41,7 @@ Now, in case you have a more complex scenario where the report viewer depends on
 {{source=CodeSnippets\MvcVB\Models\TemplatedReportViewerViewModel.vb region=AdvancedModelBindingViewModel}}
 
 
-Once you have the model you should create your own logic to populate it (note that the MVC View is not a suitable place for that logic). Then use the model for your view to make it strongly typed:
+Once you have the model, you can create your own logic to populate it (*note that the MVC View is not a suitable place for that logic*). Then, use the model for your view to make it strongly typed:
 
 {{source=CodeSnippets\MvcCS\Views\Home\AdvancedModelBinding.cshtml region=Example}}
 {{source=CodeSnippets\MvcVB\Views\Home\AdvancedModelBinding.vbhtml region=Example}}
@@ -49,7 +49,11 @@ Once you have the model you should create your own logic to populate it (note th
 
 ## Using custom IReportSourceResolver
 
-There are cases when the supported report sources (`Type` and `Uri`) will not be enough. Perhaps you have created a custom implementation of the [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) interface in the REST service and since it accepts a string as an argument you might also want to directly use a string as your report source. This is possible again through the `ReportSource` method. The last two overloads of the `ReportSource` method accept a string as their first argument. This means that the `ReportSource` can still be strongly typed but to a string instead of a ReportSource. This gives you the option to implement any custom logic that you need based on that string. For example, you could pass the ID of the report in the database:
+In some scenarios, the supported report sources (`Type` and `Uri`) will not be the correct option. You may have created a custom implementation of the [IReportSourceResolver](/api/telerik.reporting.services.ireportsourceresolver) interface in the REST service and since it accepts a string as an argument, you might also want to directly use a string as your report source. This is possible again through the `ReportSource` method. 
+
+The last two overloads of the `ReportSource` method accept a string as their first argument. This means that the `ReportSource` can be strongly typed but to a string instead of a `ReportSource`. This gives you the option to implement any custom logic that you need based on that string. 
+
+For example, you can pass the ID of the report in the database:
 
 {{source=CodeSnippets\MvcCS\Views\Home\CustomModelBinding.cshtml region=Example1}}
 {{source=CodeSnippets\MvcVB\Views\Home\CustomModelBinding.vbhtml region=Example1}}
@@ -67,7 +71,7 @@ The view can also be strongly typed:
 {{source=CodeSnippets\MvcVB\Views\Home\AdvancedCustomModelBinding.vbhtml region=Example}}
 
 
-Finally, on the server side, your [custom report source resolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) can implement the custom logic that will take into consideration the ID and create a report source as per your needs:
+Finally, on the server side, your [custom IReportSourceResolver]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/how-to-implement-a-custom-report-source-resolver%}) can implement the custom logic that will take into consideration the ID and create a report source as per your needs:
 
 {{source=CodeSnippets\MvcCS\Controllers\CustomResolverReportsController.cs region=ModelBindingReportResolver_Implementation}}
 {{source=CodeSnippets\MvcVB\Controllers\CustomResolverReportsController.vb region=ModelBindingReportResolver_Implementation}}

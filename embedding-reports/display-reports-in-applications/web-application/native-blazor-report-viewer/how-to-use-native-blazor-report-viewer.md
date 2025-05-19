@@ -33,7 +33,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 ## Adding the Native Blazor Report Viewer Component Manually
 
-1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ (or __Telerik.ReportViewer.BlazorNative.Trial__) package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
+1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
 1. Make sure app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET 6+ with Top Level Statements is used) file can serve static files:
 
@@ -47,28 +47,21 @@ app.UseStaticFiles();
 
 	````HTML
 <script src="_content/Telerik.UI.for.Blazor/js/telerik-blazor.js" defer></script>
-	@* Or this one if using the Telerik.UI.for.Blazor.Trial package *@
-	@* <script src="_content/Telerik.UI.for.Blazor.Trial/js/telerik-blazor.js" defer></script> *@
 
 	<script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js" defer></script>
-	@* Or this one if using the Telerik.ReportViewer.BlazorNative.Trial package *@
-	@* <script src="_content/Telerik.ReportViewer.BlazorNative.Trial/js/reporting-blazor-viewer.js" defer></script> *@
 
         @* The version of the Kendo Utils should be updated according to the version of the Kendo theme used by the Telerik UI for Blazor package. *@
         @* The version of the Kendo Theme can be seen in the release notes of the Telerik UI for Blazor version - https://www.telerik.com/support/whats-new/blazor-ui/release-history. *@
 	<link href="https://kendo.cdn.telerik.com/themes/8.2.1/utils/all.css" rel="stylesheet" />
 
 	<link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
-	@* Or this one if using the Telerik.UI.for.Blazor.Trial package *@
-	@* <link rel="stylesheet" href="_content/Telerik.UI.for.Blazor.Trial/css/kendo-theme-default/all.css" /> *@
 
 	<link href="_content/Telerik.ReportViewer.BlazorNative/css/reporting-blazor-viewer.css" rel="stylesheet" />
-	@* Or this one if using the Telerik.ReportViewer.BlazorNative.Trial package *@
-	@* <link href="_content/Telerik.ReportViewer.BlazorNative.Trial/css/reporting-blazor-viewer.css" rel="stylesheet" /> *@
+	<link href="_content/Telerik.UI.for.Blazor/css/kendo-font-icons/font-icons.css" rel="stylesheet" />
 ````
 
 
-1. Add [Telerik UI for Blazor Built-in Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
+1. Add [Telerik UI for Blazor Built-in Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes) and the [Kendo Font Icons]() to the __head__ element of the __Pages/_Layout.cshtml__ (Blazor Server) or __wwwroot/index.html__ (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
 
 	````HTML
 <link rel="stylesheet" href="https://blazor.cdn.telerik.com/blazor/{{blazoruiversion}}/kendo-theme-default/all.css" />

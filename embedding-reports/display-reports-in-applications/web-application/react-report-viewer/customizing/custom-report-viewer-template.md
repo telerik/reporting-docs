@@ -14,10 +14,9 @@ The React Report Viewer is based on the [HTML5 Report Viewer]({%slug telerikrepo
 
 ## Adding a Custom Report Viewer Template
 
-1. The [template of the viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}) can be found in the installation folder of Telerik Reporting:
-C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Html5\ReportViewer\templates
+1. The [template of the React Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/customizing/styling-and-appearance/templates-overview%}) can be found in the installation folder of Telerik Reporting - `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Html5\ReportViewer\templates`.
 
-1. Copy the file to your React application or REST service project, depending on your preferences.
+1. Copy the file to your React application `assets` folder or the REST Service project, depending on your preferences.
 
 1. Make the required changes in the file.
 
@@ -26,9 +25,9 @@ C:\Program Files (x86)\Progress\Telerik Reporting **Version** \Html5\ReportViewe
 	````JavaScript
 <TelerikReportViewer
 		ref={el => viewer = el}
-		templateUrl="telerikReportViewerTemplate-VERSION.html/"
+		templateUrl="/api/customtemplates/customTelerikReportViewerTemplate/"
 		reportSource={{
-			report: 'MyReport.trdp',
+			report: 'Report1.trdp',
 			parameters: {}
 		}}
 		>

@@ -78,7 +78,7 @@ There are four available options for the `friendlyName` setting:
 ````
 ## Extensibility
 
-* If necessary, the Reporting engine can use a custom Telerik.Reporting.AI.IClient implementation, which can be registered in the Reporting REST Service configuration:
+If necessary, the Reporting engine can use a custom Telerik.Reporting.AI.IClient implementation, which can be registered in the Reporting REST Service configuration:
 
 ````C#
 builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration

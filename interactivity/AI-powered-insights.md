@@ -32,7 +32,7 @@ The AI-powered insights in Report Preview provide comprehensive capabilities, in
 
 __AI clients__
 
-We have four available options for the `friendlyName` setting
+There are four available options for the `friendlyName` setting:
 
 |  |  |
 | ------ | ------ |

@@ -35,7 +35,7 @@ The template relies on the [Kendo UI SASS Themes](https://docs.telerik.com/kendo
 <link href="https://kendo.cdn.telerik.com/themes/{{kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />
 ````
 
-The default report viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display. For the media queries to be activated properly the browser’s viewport needs to be initialized like this:
+The default report viewer template and stylesheet depend on CSS media queries to adapt its layout according to the device and display. For the media queries to be activated properly, the browser’s viewport needs to be configured as follows:
 
 ````HTML
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />

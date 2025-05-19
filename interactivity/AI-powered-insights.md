@@ -14,7 +14,7 @@ The AI-powered insights during report preview provide comprehensive capabilities
 
 ## OpenAI Implementations
 
-* Ask AI: This functionality enables users to pose questions to the AI, facilitating interactive and dynamic responses based on the provided document context.
+* Ask AI: This window allows users to ask questions to the AI, facilitating dynamic responses based on the document context.
 
 * Output: This feature generates outputs from the AI, including summaries, highlights, and other predefined commands, enhancing the overall productivity and efficiency of the report viewer.
 

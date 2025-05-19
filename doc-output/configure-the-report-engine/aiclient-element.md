@@ -49,7 +49,7 @@ __`<add>` element__
 
 ## Example
 
-The following code example demonstrates how to configure the Reporting engine with an Azure OpenAI client that uses the `gpt-4o-mini` model. In addition, the AI functionality is restricted to using only a couple of predefined prompts for summarizing and translating the report.
+The following code example demonstrates how to configure the Reporting engine with an Azure OpenAI client that uses the GPT-4o mini model variant. In addition, the AI functionality is limited to a few predefined prompts that enable it to summarize and translate the report.
 
 XML-based configuration file:
 

@@ -1,7 +1,7 @@
 ---
 title: AIClient Element
 page_title: AIClient Element Configuration
-description: "Learn how to utilize the AIClient Element to configure the AI model used for GenAI-powered insights during report preview"
+description: "Learn how to utilize the AIClient Element to configure the AI model used for GenAI-powered insights during report preview."
 slug: telerikreporting/aiclient-element
 tags: aiclient,element, ai
 published: True

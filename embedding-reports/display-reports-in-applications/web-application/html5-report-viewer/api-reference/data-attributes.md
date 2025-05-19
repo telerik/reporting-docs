@@ -64,7 +64,7 @@ The following table is a list of all available commands for the `data-command` a
 | __telerik_ReportViewer_toggleSideMenu__ |Show or hide the side menu|
 | __telerik_ReportViewer_toggleSearchDialog__ |Show or hide the search dialog|
 
-The export command requires one additional parameter, `data-command-parameter`, which will specify the export format. The full list of all allowed `data-command-parameter` values:
+The export command requires one additional parameter, `data-command-parameter`, which will specify the export format. The full list of all allowed `data-command-parameter` values is as follows:
 
 | Label | Command Parameter |
 | ------ | ------ |

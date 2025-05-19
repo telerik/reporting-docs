@@ -28,7 +28,7 @@ The `data-` attributes allow for adding flexibility to the application since com
 <button id="printButton" data-command="telerik_ReportViewer_print" data-target-report-viewer="#reportViewer1">Print report</button>
 ````
 
-When initializing the report viewer the selector used in `data-target-report-viewer` has to be explicitly provided as an option:
+When initializing the report viewer, the selector used in `data-target-report-viewer` has to be explicitly provided as an option:
 
 ````JavaScript
 $("#reportViewer1").telerik_ReportViewer({

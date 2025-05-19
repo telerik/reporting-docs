@@ -1,6 +1,6 @@
 ---
 title: AI-Powered Insights in Report Preview
-page_title: AI-powered insights in Report Preview
+page_title: AI-Powered Insights in Report Preview
 description: "Learn how to implement a prompt UI as part of the Web report viewer"
 slug: telerikreporting/designing-reports/adding-interactivity-to-reports/ai-powered-insights
 tags: telerik, reporting, ai, 

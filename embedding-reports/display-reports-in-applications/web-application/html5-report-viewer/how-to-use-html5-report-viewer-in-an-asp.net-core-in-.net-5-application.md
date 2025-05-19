@@ -30,7 +30,7 @@ The [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/
 * `Telerik Razor Report Viewer Page {{site.suiteversion}}`
 * `Telerik HTML5 Report Viewer Page {{site.suiteversion}}`
 
-The first template should be used when the project uses [Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/razor-pages/) while the second can be used in all other scenario. The item templates allow you to quickly and easily add the HTML5 Report Viewer to the application. The wizards are the same for both item templates.
+The first template should be used when the project uses [Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/razor-pages/), while the second can be used in all other scenarios. The item templates allow you to quickly and easily add the HTML5 Report Viewer to the application. The wizards are the same for both item templates.
 
 If you wish to connect the Report Viewer to a REST service, you can follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}) documentation article.
 

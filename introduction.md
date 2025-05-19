@@ -91,7 +91,7 @@ The Report Viewers are UI components that are tailored to a specific technology.
 
 The [Telerik Reporting online demos](https://demos.telerik.com/reporting) provides a set of pre-built live demos designed to demonstrate the Telerik Reporting capabilities. The demos use the HTML5-based web report viewers.
 
-The sample reports are also available in Visual Studio and the examples contain applications for all supported platforms. To open the projects:
+If you install Telerik Reporting by using the [MSI file or the Control Panel]({%slug telerikreporting/installation%}), the sample reports will also be available as Visual Studio projects. The examples for Visual Studio contain applications for all supported platforms. To open the projects:
 
 1. Navigate to the **Start** menu.
 1. Select __Telerik__ > __Reporting__ > __Visual Studio Examples__ > __C#/VB.NET Solution__.

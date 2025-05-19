@@ -34,9 +34,9 @@ The steps to accomplish the installation of the Telerik Reporting controls and s
 
 ## Step 2: Create, Populate, and Style the Sample Report
 
-The steps to create, populate with data and style the report are fully described in the steps 2 to 5 from the article [first steps guide on designing the Telerik report]({%slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report).
+Next, create the report that you will integrate in your web application. The steps required to create, populate with data, and style the report are described in the [first steps guide on designing the Telerik report]({%slug telerikreporting/getting-started/first-steps%}#step-2-create-the-sample-report).
 
-In addition, you will only need to save the report as `DemoReport.trdp`.
+Once you have your report, save it as `DemoReport.trdp`. In the next step, you will integrate the TRDP report in the application.
 
 ## Step 3: Integrate and Display the Report
 

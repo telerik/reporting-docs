@@ -19,7 +19,7 @@ For full control, instead of using the item template, you can manually configure
 
 ## Prerequisites
 
-1. Create a sample ASP.NET Core Project targeting .NET 8 or higher. It may be an empty Web project or a Web API project.
+1. Create a sample ASP.NET Core Project targeting .NET {{site.mindotnetversion}}+ or higher. It may be an empty Web project or a Web API project.
 1. Add the required dependencies:
 
 	* `Telerik.WebReportDesigner.Services`
@@ -35,7 +35,7 @@ If you don't use NuGet packages, along with the above assemblies, you need to ad
 
 ## Add Required Settings in the `Startup.cs` file
 
->note Some of the Visual Studio template projects, like the .NET 8 Web API project, have the required settings already added by default. In the empty .NET Web projects, you may need to add manually the settings.
+>note Some of the Visual Studio template projects, like the .NET {{site.mindotnetversion}}+ Web API project, have the required settings already added by default. In the empty .NET Web projects, you may need to add manually the settings.
 
 1. The `ConfigureServices` method inside the `Startup.cs` in the project should be modified in order to enable the Web Report Designer Service functionality. Make sure the application is configured for WebAPI controllers and call the [`AddNewtonsoftJson`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.newtonsoftjsonmvcbuilderextensions.addnewtonsoftjson?view=aspnetcore-7.0) to place the __NewtonsoftJson__ serialization:
 

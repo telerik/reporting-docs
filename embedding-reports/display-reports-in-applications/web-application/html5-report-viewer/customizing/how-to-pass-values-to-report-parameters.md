@@ -69,7 +69,7 @@ To give an example we will use the [Invoice](https://demos.telerik.com/reporting
 ````
 
 
-1. Now initialize the HTML5 Report Viewer widget. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). Please note how the value from the custom UI is used to set the __OrderNumber__ report parameter initially:
+1. Now, initialize the HTML5 Report Viewer widget. We will use the minimal set of all [possible options]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/report-viewer-initialization%}). Note that the value from the custom UI is used to set the __OrderNumber__ report parameter initially:
 
 	````JavaScript
 $(document).ready(function () {

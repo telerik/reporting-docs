@@ -43,7 +43,7 @@ __`<add>` element__
 
 |   |   |
 | ------ | ------ |
-|Attributes|__text__ - The text of a predetermined AI prompt.|
+|Attributes|__text__ - The text of a predefined AI prompt.|
 |Child Elements|None|
 |Parent Element|__predefinedPrompts__|
 

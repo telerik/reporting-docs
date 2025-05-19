@@ -8,7 +8,7 @@ published: True
 position: 1
 ---
 
-# AI-powered insights Overview
+# AI-Powered Insights Overview
 
 The AI-powered insights in Report Preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands.
 

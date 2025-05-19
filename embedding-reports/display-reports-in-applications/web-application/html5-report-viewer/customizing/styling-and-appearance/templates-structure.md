@@ -34,7 +34,7 @@ The templates are recognized by well-known identifiers supplied by the `id` attr
 * __trv-search-dialog__ - provides the default template for the search dialog;
 * __trv-send-email-dialog__ - provides the default template for the send email dialog;
 
-All templates depend on the HTML5 Report Viewer and the [Kendo UI SASS Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) for the styling and appearance.
+All templates depend on the HTML5 Report Viewer and the [Kendo UI Sass Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) for the styling and appearance.
 
 > The default templates distributed with the Telerik HTML5 Report Viewer provide a base (reference) implementation of the report viewer’s content that can be modified according to the needs.
 

@@ -43,7 +43,7 @@ The commands are implemented by using a command object with three methods - for 
 
 ## Report viewer events
 
-Along with the commands the report viewer also exposes events, which are fired at different moments during the lifecycle of the report viewer. For a complete list of the events please check [telerikReportViewer Namespace, Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}). 
+Along with the commands, the report viewer also exposes events that are fired at different moments during the lifecycle of the report viewer. For a complete list of the available events, check [telerikReportViewer Namespace, Events]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/telerikreportviewer-namespace/events%}). 
 
 Each event passes the Event object as an argument and for each event the [jQuery's event.data](https://api.jquery.com/event.data/) is used and e.data.sender is set to be the report viewer. This gives you the option to check the state of the report viewer in each event through the methods exposed - for example, the view mode or the current page displayed. You can also check the state of a certain command through its `enabled()` and `checked()` (for toggle buttons) methods.
 

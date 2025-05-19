@@ -47,7 +47,7 @@ Along with the commands, the report viewer also exposes events that are fired at
 
 For each event handler, an  `Event` object is passed as an argument, and the `e.data.sender` object is set to the report viewer instance. This allows you to check the state of the report viewer through the exposed methods - for example, its view mode or the current page displayed. You can also check the state of a certain command through its `enabled()` and `checked()` (for toggle buttons) methods.
 
-Checking the command state is especially useful if you are implementing your own custom toolbar - in such case if you do not rely on [data attributes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes%}) you can attach an event handler to the `updateUi` event. Then in your event handler, you can set the states of your custom buttons by checking the states of each report viewer command.
+Checking the command state is especially useful if you are implementing your own custom toolbar. In such a case, if you do not rely on [data attributes]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/data-attributes%}), you can attach an event handler to the `updateUi` event. Then, in your event handler, you can set the states of your custom buttons by checking the states of each report viewer command.
 
 Additionally, you can change the state of the report viewer in your event handler if needed through the report viewer methods or commands. Consider the following snippet:
 

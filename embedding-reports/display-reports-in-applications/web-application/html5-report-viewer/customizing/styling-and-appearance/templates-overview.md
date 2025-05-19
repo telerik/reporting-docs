@@ -16,7 +16,7 @@ The article elaborates on the structure of the HTML template file of the HTML5 R
 The default viewer's template is divided into three areas:
 
 * Report Pages Area - responsible for displaying the report pages, viewer’s status, and error messages.
-* the Parameters Area that is responsible for displaying the editor UI for the visible report parameters;
+* Parameters Area - responsible for displaying parameter editors for the visible report parameters.
 * the Document Map Area that displays the report’s document map and allows navigation in its content;
 
 Besides these three areas, the viewer template contains top and side menus that provide the basic tools for navigating into the reports when the viewer is rendered on desktop or mobile devices.

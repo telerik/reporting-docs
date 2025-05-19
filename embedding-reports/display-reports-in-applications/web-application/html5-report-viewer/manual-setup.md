@@ -127,7 +127,7 @@ The following steps produce an HTML page with settings similar to these in the i
 ````
 
 
-1. Add the following script element at the bottom of the `<body>` element and create the HTML5 Report Viewer widget for the reportViewer1 `<div>` element that we added above:
+1. Add the following script element at the bottom of the `<body>` element and initialize the HTML5 Report Viewer widget through the reportViewer1 `<div>` element that we added above:
 
 	````JS
 <script type="text/javascript">

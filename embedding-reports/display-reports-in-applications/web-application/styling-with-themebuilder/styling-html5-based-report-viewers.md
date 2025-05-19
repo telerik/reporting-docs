@@ -10,7 +10,7 @@ position: 1
 
 # Styling HTML5-Based Report Viewers with ThemeBuilder
 
-ThemeBuilder is a powerful web-based tool designed to help you style Telerik and Kendo UI components effectively. It offers a user-friendly visual interface to customize colors, fonts, and various styling properties. Since the web report viewers rely on such components internally, you can use ThemeBuilder to create a cohesive theme that extends to the them.
+ThemeBuilder is a powerful web-based tool designed to help you style Telerik and Kendo UI components effectively. It offers a user-friendly visual interface to customize colors, fonts, and various styling properties. Since the web report viewers rely on such components internally, you can use ThemeBuilder to create a cohesive theme that extends to them.
 
 The current article applies to the HTML5-based report viewers, including:
 

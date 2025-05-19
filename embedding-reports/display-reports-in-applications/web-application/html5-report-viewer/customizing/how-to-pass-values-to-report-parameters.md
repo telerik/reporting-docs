@@ -13,7 +13,7 @@ previous_url: /html5-report-viewer-howto-custom-parameters
 
 This article explains how to use custom parameters UI to update the report parameters instead of using the report viewer's default implementation of the parameters area. 
 
-The report and all required parameters for it are packed in a `ReportSource` object. To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
+The report and all required parameters for it are packed in a `ReportSource` object. To update the report source, the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
 
 To give an example we will use the [Invoice](https://demos.telerik.com/reporting/invoice) report from our examples and will update its __OrderNumber__ parameter from a custom parameter UI.
 

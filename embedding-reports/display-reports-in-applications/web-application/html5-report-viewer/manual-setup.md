@@ -11,7 +11,7 @@ previous_url: /html5-report-viewer-embedding
 
 # Manual Setup of the HTML5 Report Viewer in Web Applications in the .NET Framework
 
-In this topic, we demonstrate how to manually add the HTML5 Report Viewer to an HTML page and to display a report. The approach that we use here allows for full control over the configuration. 
+In this article, you will learn how to manually add the HTML5 Report Viewer to an HTML page and display a report. This approach allows for full control over the configuration. 
 
 If you are looking for a less complicated approach, consider using the [Visual Studio item templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).
 

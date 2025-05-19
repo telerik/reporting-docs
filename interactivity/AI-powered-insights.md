@@ -41,6 +41,15 @@ There are four available options for the `friendlyName` setting:
 |Microsoft.Extensions.AI.Ollama|"MicrosoftExtensionsOllama"|
 |Microsoft.Extensions.AI.OpenAI|"MicrosoftExtensionsOpenAI"|
 
+Depending on which option will be used, a corresponding `Telerik.Reporting.Telerik.Reporting.AI.Microsoft.Extensions.{name}` NuGet package must be installed in the project. In other words, please install one of the following packages before continuing with the configuration:
+
+	- `Telerik.Reporting.AI.Microsoft.Extensions.AzureAIInference`
+	- `Telerik.Reporting.AI.Microsoft.Extensions.AzureOpenAI`
+	- `Telerik.Reporting.AI.Microsoft.Extensions.Ollama`
+	- `Telerik.Reporting.AI.Microsoft.Extensions.OpenAI'`
+
+Below is an example of how to configure the project for the `AzureOpenAI` option.
+
 ````JSON
 {
 	"telerikReporting": {
@@ -59,7 +68,6 @@ There are four available options for the `friendlyName` setting:
 	}
 }
 ````
-
 ````XML
  <Telerik.Reporting>
      <AIClient
@@ -76,9 +84,10 @@ There are four available options for the `friendlyName` setting:
      </AIClient>
  </Telerik.Reporting>
 ````
+
 ## Extensibility
 
-If necessary, the Reporting engine can use a custom Telerik.Reporting.AI.IClient implementation, which can be registered in the Reporting REST Service configuration:
+If necessary, the Reporting engine can use a custom `Telerik.Reporting.AI.IClient` implementation, which can be registered in the Reporting REST Service configuration:
 
 ````C#
 builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportServiceConfiguration
@@ -87,10 +96,11 @@ builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp => new ReportSe
     AIClientFactory = GetCustomAIClient,
     ...
 });
+
 static Telerik.Reporting.AI.IClient GetCustomAIClient()
 {
     return new MyCustomAIClient(...);
 }
 ````
 
-Additionally, the configured predefined prompts can be modified at runtime by overriding the "UpdateAIPrompts" method of the ReportsController class.
+ > The configured predefined prompts can be modified at runtime by overriding the `UpdateAIPrompts` method of the [ReportsController](/api/telerik.reporting.services.webapi.reportscontrollerbase) class.

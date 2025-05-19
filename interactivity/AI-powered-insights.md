@@ -93,4 +93,4 @@ static Telerik.Reporting.AI.IClient GetCustomAIClient()
 }
 ````
 
-* The configured predefined prompts can be modified at runtime by overriding the "UpdateAIPrompts" method of the ReportsController class.
+Additionally, the configured predefined prompts can be modified at runtime by overriding the "UpdateAIPrompts" method of the ReportsController class.

@@ -61,7 +61,7 @@ The following steps produce an HTML page with settings similar to these in the i
 
 	>jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
 
-1. Add references to the Kendo UI SASS styles in the `<head>` element:
+1. Add references to the Kendo UI Sass styles in the `<head>` element:
 
 	````HTML
 <link href="https://kendo.cdn.telerik.com/themes/{{kendothemeversion}}/default/default-ocean-blue.css" rel="stylesheet" />

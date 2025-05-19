@@ -11,7 +11,7 @@ previous_url: /html5-report-viewer-howto-custom-parameters
 
 # Passing Values to Report Parameters from Components Outside the HTML5 Report Viewer
 
-This topic explains how to use custom parameters UI to update the report parameters instead of using the report viewer's default implementation of the parameters area. 
+This article explains how to use custom parameters UI to update the report parameters instead of using the report viewer's default implementation of the parameters area. 
 
 The report and all required parameters for it are packed in a `ReportSource` object. To update the report source the [ReportViewer.reportSource(rs)]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/methods/reportsource(rs)%}) method is used.
 

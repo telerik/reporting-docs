@@ -17,7 +17,7 @@ The default viewer's template is divided into three areas:
 
 * Report Pages Area - responsible for displaying the report pages, viewer’s status, and error messages.
 * Parameters Area - responsible for displaying parameter editors for the visible report parameters.
-* the Document Map Area that displays the report’s document map and allows navigation in its content;
+* Document Map Area - displays the report’s document map and allows navigation in its content.
 
 Besides these three areas, the viewer template contains top and side menus that provide the basic tools for navigating into the reports when the viewer is rendered on desktop or mobile devices.
 

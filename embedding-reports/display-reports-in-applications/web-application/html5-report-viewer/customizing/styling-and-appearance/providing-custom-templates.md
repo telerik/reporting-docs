@@ -25,7 +25,7 @@ $("#reportViewer1").telerik_ReportViewer({
 });
 ````
 
-The HTML template file is an HTML page while the templates are HTML document fragments inside HTML5 __template__ elements. For example, this is how the report parameter template looks like:
+The HTML template file is essentially a page that includes HTML document fragments nested inside __template__ tags. For example, this is what the report parameter template looks like:
 
 ````HTML
     <template id="trv-parameter">

@@ -69,7 +69,7 @@ XML-based configuration file:
 			allowCustomPrompts="false">
 			<predefinedPrompts>
 				<add text="Generate an executive summary of this report."/>
-				<add text="Translate the document in German."/>
+				<add text="Translate the document into German."/>
 			</predefinedPrompts>
 		</AIClient>
 	</Telerik.Reporting>

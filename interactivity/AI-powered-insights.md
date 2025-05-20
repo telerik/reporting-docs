@@ -46,7 +46,7 @@ Depending on which option will be used, a corresponding `Telerik.Reporting.Teler
 	- `Telerik.Reporting.AI.Microsoft.Extensions.AzureAIInference`
 	- `Telerik.Reporting.AI.Microsoft.Extensions.AzureOpenAI`
 	- `Telerik.Reporting.AI.Microsoft.Extensions.Ollama`
-	- `Telerik.Reporting.AI.Microsoft.Extensions.OpenAI'`
+	- `Telerik.Reporting.AI.Microsoft.Extensions.OpenAI`
 
 Below is an example of how to configure the project for the `AzureOpenAI` option.
 

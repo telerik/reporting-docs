@@ -90,7 +90,7 @@ JSON-based configuration file:
 		"allowCustomPrompts": false,
 		"predefinedPrompts": [
 			{ "text": "Generate an executive summary of this report." },
-			{ "text": "Translate the document in German." }
+			{ "text": "Translate the document into German." }
 		]
 	}
 }

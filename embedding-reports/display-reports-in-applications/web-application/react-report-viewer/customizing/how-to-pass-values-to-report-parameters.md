@@ -51,15 +51,19 @@ export function ReportViewer() {
 		<>
 		<div id="invoiceIdSelector">
 			<label htmlFor="invoiceId">Invoices</label>
+			
 			<select defaultValue="SO51081" id="invoiceId" onChange={(e => {
-			const { viewerObject } = viewerRef.current;
-			viewerObject.reportSource({ report: viewerObject.reportSource().report, parameters: { OrderNumber: e.target.value } })
+				const { viewerObject } = viewerRef.current;
+				viewerObject.reportSource({ report: viewerObject.reportSource().report, parameters: { OrderNumber: e.target.value } })
 			})} title="Select the Invoice ID">
-			<option value="SO51081">SO51081</option>
-			<option value="SO51082">SO51082</option>
-			<option value="SO51083">SO51083</option>
+			
+				<option value="SO51081">SO51081</option>
+				<option value="SO51082">SO51082</option>
+				<option value="SO51083">SO51083</option>
+			
 			</select>
 		</div>
+		
 		<TelerikReportViewer
 			ref={viewerRef}
 			serviceUrl="https://demos.telerik.com/reporting/api/reports/"

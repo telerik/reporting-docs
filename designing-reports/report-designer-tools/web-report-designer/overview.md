@@ -19,7 +19,7 @@ Telerik Web Report Designer is an HTML5/JavaScript/CSS3 jQuery-based widget that
 
 The Web Report Designer consists of the following areas:
 
-![Highlighting the Web Report Designer's main areas and functionalities.](images/Designer/web-report-designer-dashboard.png)
+![Highlighting the Web Report Designer's main areas and functionalities.](images/Designer/wrd-sass-theming.png)
 
 * `Design surface` - shows the web design report layout. Provides tools for selecting, moving, resizing, and editing the report items.
 * `Menu area` - provides buttons for creating a new report and opening, saving, or previewing an already existing one. Also, allows switching between loaded reports and shows their saved state.
@@ -46,7 +46,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 * Web browser that supports [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher; Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.
 * [jQuery](https://jquery.com/download/) __3.3.1__ or later.
-* [Kendo UI](https://www.telerik.com/kendo-ui) __{{site.kendosubsetversion}}__ or later.
+* [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) __{{site.kendosubsetversion}}__ or later.
 * Telerik Report Viewer script. By default, it is requested from the service.
 * Web Report Designer script. By default, it is requested from the service.
 * All other scripts and styles will be provided by the Web Report Designer service when the designer widget is loaded. The list of loaded resources:
@@ -59,7 +59,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Kendo Widgets Requirements
 
-Since the Web Report Designer uses [Kendo UI](https://www.telerik.com/kendo-ui) for its template it is possible to use it even with a custom build instead of using the entire Kendo bundle. You may do this using the [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp).
+Since the Web Report Designer uses [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) for its template it is possible to use it even with a custom build instead of using the entire Kendo bundle. You may do this using the [gulp build tool](https://docs.telerik.com/kendo-ui/intro/scripts/what-you-need#using-gulp).
 
 Below you can find the list of widgets that the Web Report Designer requires in order to work properly in your web reporting application. Note that the widgets have other dependencies. The _Touch_ widget is required only for the gestures. Kendo's _MVVM_ is a set of a few Kendo classes that facilitates the process of separating the model from the view. It is used when databinding the KendoUI widgets to some model data.
 

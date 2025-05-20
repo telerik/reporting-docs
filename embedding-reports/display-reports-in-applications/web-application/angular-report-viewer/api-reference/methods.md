@@ -24,7 +24,7 @@ Each method can be called using a reference to the report viewer component.
 
 ````HTML
 <tr-viewer #viewer1 />
-...
+
 <button (click)="viewer1.refreshReport()">Refresh</button>
 ````
 

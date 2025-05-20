@@ -22,11 +22,10 @@ The following list describes the prerequisites for this tutorial:
 
 ## Using React Report Viewer in React application
 
-> All paths and url links in the described steps must be adapted according to your project setup.
 
-###Steps:
+### Steps:
 
-1. Create new React application using the [React](https://reactjs.org/docs/create-a-new-react-app.html) tutorial.
+1. Create new React application using the [Creating a React App](https://react.dev/learn/creating-a-react-app) tutorial.
 
 	````powershell
 npx create-react-app my-app-with-viewer
@@ -34,37 +33,33 @@ npx create-react-app my-app-with-viewer
 ````
 
 
-1. Install  [jQuery](https://www.npmjs.com/package/jquery) by using the following command:
-
-	````powershell
-npm install jquery
-````
-
-
-1. Install the Telerik React Report Viewer NPM package by running:
+1. Install the `@progress/telerik-react-report-viewer` NPM package by running:
 
 	````powershell
 npm install @progress/telerik-react-report-viewer
 ````
 
 
-1. Once installed, import the TelerikReportViewer in the index.js file: 
+1. Once installed, import the `TelerikReportViewer` component in the `index.js` file:
 
-	````TypeScript
+	````JavaScript
 import { TelerikReportViewer } from '@progress/telerik-react-report-viewer'
 ````
 
 
-1. Add the report viewer to the page:
+1. Add the React Report Viewer to the page:
 
 	````TypeScript
-let viewer;
-	ReactDOM.render(
-		<div>
-			<TelerikReportViewer
-				ref={ el => viewer = el }
+export function ReportViewer() {
+
+	let viewer;
+
+	return (
+	<>
+		<TelerikReportViewer
+				ref={el => viewer = el}
 				reportServer={{
-					url: 'https://mytelerikreportserver:83/',
+					url: 'https://localhost:83/',
 					username: 'myusername',
 					password: 'mypass'
 				}}
@@ -72,37 +67,29 @@ let viewer;
 					report: 'Samples/Dashboard.trdp',
 					parameters: {}
 				}}
-				viewerContainerStyle = {{
+				viewerContainerStyle={{
 					position: 'absolute',
-					left: '5px',
-					right: '5px',
-					top: '40px',
-					bottom: '5px',
-					overflow: 'hidden',
-					clear: 'both',
-					fontFamily: 'ms sans serif'
+					inset: '5px'
 				}}
 				viewMode="INTERACTIVE"
 				scaleMode="SPECIFIC"
 				scale={1.0}
-				enableAccessibility={false} />
-			<button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
-			<button onClick={ () => viewer.commands.print.exec() }>Print</button>
-		</div>,
-		document.getElementById('root')
-	);
+				enableAccessibility={false} /> 
+		<button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
+		<button onClick={ () => viewer.commands.print.exec() }>Print</button>
+	<>
+	)
+}
 ````
 
 
-1. Style the viewer using the desired Kendo UI theme (еither using [Less-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) or [Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview)): Add references to the Less-based CSS files in the `<head>` element of index.html:
+1. Style the viewer using the desired Kendo UI [Sass-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) by adding references to the Sass-based CSS files in the `<head>` element of _public/index.html_:
 
 	````HTML
-<!-- The required Less-based styles -->
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
 ````
 
-	>To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
+	>note To get the Sass-based Kendo UI themes, you can use either the pre-build CSS files, the Kendo UI CDN, or the NPM packages ([Getting the Sass-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/installation)).
 
 1. Run the application:
 

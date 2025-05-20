@@ -50,7 +50,6 @@ services.AddControllers().AddNewtonsoftJson();
 app.UseEndpoints(endpoints =>
 	{
 		endpoints.MapControllers();
-		//...
 	});
 ````
 

@@ -27,7 +27,7 @@ The Blazor Viewer is a component that can be used in Blazor applications. It is 
 
 1. Required JavaScript libraries:
 
-	+ [jQuery 3.2.1+](https://jquery.com/download/)
+	+ [jQuery 3.7.1+](https://jquery.com/download/)
 
 1. Required Stylesheets:
 

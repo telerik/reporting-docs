@@ -32,12 +32,10 @@ Each [command]({%slug telerikreporting/using-reports-in-applications/display-rep
 ````JavaScript
 let viewer;
 ReactDOM.render(
-	<div>
-		<TelerikReportViewer
-		...
-		/>
+	<>
+		<TelerikReportViewer />
 		<button onClick={ () => viewer.commands.print.exec() }>Print</button>
-	</div>
+	</>
 ````
 
 The example above creates a Print button and in the click event handler invokes report viewer __print__ command. Note that the __exec()__ method of the command needs to be called. For more information please check the [command]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/api-reference/command%}) article.

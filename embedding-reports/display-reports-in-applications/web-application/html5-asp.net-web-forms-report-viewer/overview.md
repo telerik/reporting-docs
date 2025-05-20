@@ -32,7 +32,7 @@ The WebForms viewer works like the HTML5 Viewer in a client-server pair with the
 * The HTML5 ASP.NET Web Forms Report Viewer is built on and requires [ASP.NET 4 Web Forms](https://learn.microsoft.com/en-us/aspnet/web-forms/) or a newer framework.
 * A reference to __Telerik.ReportViewer.Html5.WebForms.dll__.
 * The HTML5 ASP.NET Web Forms Report Viewer is a server-side wrapper for the [HTML5 JavaScript Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%}) and you should conform to the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}). The CSS and JS files must be loaded on the page before creating the HTML5 Viewer.
-* The WebForms wrapper is designed to request all Kendo UI CSS and JS files, including the viewer's HTML, CSS, and JS templates, from the resources of the Reporting REST Service. If you will not add changes in the default styles of the viewer, you need only a link to __jQuery of version greater than 1.9.1__.
+* The WebForms wrapper is designed to request all Kendo UI CSS and JS files, including the viewer's HTML, CSS, and JS templates, from the resources of the Reporting REST Service. If you will not add changes in the default styles of the viewer, you need only a link to __jQuery of version greater than 3.7.1__.
 
 ## Browser Support
 

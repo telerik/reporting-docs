@@ -40,12 +40,9 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1.  This tutorial uses the `Barcodes Report.trdp` report definitions file that must be located in a `Reports` folder inside the project.
 1.  Make sure that the app configuration inside the `Configure` method of the `Startup.cs` can serve static files:
-
-        ````C#
-
-    app.UseStaticFiles();
-
-`````
+	````C#
+app.UseStaticFiles();
+````
 
 
 1. Add an HTML Page for the HTML5 Report Viewer by right-clicking on *wwwroot* and __Add > New Item... > HTML Page__. Name the file __index.html__ and add the HTML5 Report Viewer's initialization. For a detailed explanation, check the HTML5 Report Viewer [Manual Setup]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/manual-setup%}) help article. The required references to jQuery and Telerik Kendo UI CSS and JS files are listed in the example below. By default, the necessary Report Viewer scripts and styles are served by the REST Service. The complete report viewer page should look like this:
@@ -95,7 +92,8 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 	  </script>
 	</body>
 	</html>
-`````
+````
+
 
 1. Set the _launchSettings.json_ `launchUrl` to the new HTML page.
 1. Finally, run the project to see the report.
@@ -106,5 +104,5 @@ A full example can be found in the installation folder of Telerik Reporting, by 
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
-- [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [YouTube video "Setting up Telerik Html5 Report Viewer with external Telerik Reporting REST Service in .NET 5"](https://www.youtube.com/watch?v=GeCUGTgZziI)

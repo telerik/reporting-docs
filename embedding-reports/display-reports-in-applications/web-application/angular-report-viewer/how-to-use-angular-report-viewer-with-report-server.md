@@ -44,13 +44,13 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 	````TypeScript
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [TelerikReportingModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
-})
+	@Component({
+		selector: 'app-root',
+		standalone: true,
+		imports: [TelerikReportingModule],
+		templateUrl: './app.component.html',
+		styleUrl: './app.component.scss'
+	})
 ````
 
 

@@ -92,7 +92,7 @@ app.UseStaticFiles();
 	  </script>
 	</body>
 	</html>
-`````
+````
 
 1. Set the _launchSettings.json_ `launchUrl` to the new HTML page.
 1. Finally, run the project to see the report.

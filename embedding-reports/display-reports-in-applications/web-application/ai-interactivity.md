@@ -3,7 +3,7 @@ title: AI Interactivity
 page_title: AI Interactivity in HTML5-based Report Viewers
 description: "Learn more about the AI functionalities available for use in the HTML5-based Report Viewers in Telerik Reporting."
 slug: telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/ai-interactivity
-tags: ai,promp,dialog,interactivity
+tags: ai,prompt,dialog,interactivity
 published: True
 position: 12
 ---

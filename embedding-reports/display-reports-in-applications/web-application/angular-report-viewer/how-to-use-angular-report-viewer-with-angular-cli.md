@@ -75,13 +75,13 @@ npm login --registry=https://registry.npmjs.org --scope=@progress
 	````TypeScript
 import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer';
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [TelerikReportingModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
-})
+	@Component({
+		selector: 'app-root',
+		standalone: true,
+		imports: [TelerikReportingModule],
+		templateUrl: './app.component.html',
+		styleUrl: './app.component.scss'
+	})
 ````
 
 
@@ -89,13 +89,13 @@ import { TelerikReportingModule } from '@progress/telerik-angular-report-viewer'
 
 	````TypeScript
 export class AppComponent {
-		viewerContainerStyle = {
-			position: 'relative',
-			width: '1000px',
-			height: '800px',
-			['font-family']: 'ms sans serif'
-		};
-	}
+	viewerContainerStyle = {
+		position: 'relative',
+		width: '1000px',
+		height: '800px',
+		['font-family']: 'ms sans serif'
+	};
+}
 ````
 
 

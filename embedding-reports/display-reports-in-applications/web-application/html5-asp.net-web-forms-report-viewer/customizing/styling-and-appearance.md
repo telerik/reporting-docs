@@ -28,7 +28,7 @@ Below is an example of how to do that:
 	<script src="/api/reports/resources/js/telerikReportViewer-kendo" /script>
 	
 	<!-- the required Kendo styles -->
-<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+	<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
 </head>
 ````
 

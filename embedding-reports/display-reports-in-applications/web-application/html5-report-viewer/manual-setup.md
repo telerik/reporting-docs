@@ -32,57 +32,52 @@ The following steps produce an HTML page with settings similar to these in the i
 
 1.  Create an HTML5 page:
 
-        ````HTML
+	````HTML
+<!DOCTYPE html>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<title>Telerik HTML5 Report Viewer</title>
+		</head>
+		<body>
+		</body>
+	</html>
+````
 
-    <!DOCTYPE html>
-
-        <html xmlns="http://www.w3.org/1999/xhtml">
-        	<head>
-        		<title>Telerik HTML5 Report Viewer</title>
-        	</head>
-        	<body>
-        	</body>
-        </html>
-
-`````
-
-	>The above DOCTYPE directive must reflect your custom requirements. You can find more details about the page settings used in this tutorial in the [Defining document compatibility](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) Microsoft article.
 
 1. Initialize the browser’s viewport in the `<head>` element:
 
 	````HTML
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-`````
+````
 
-    The viewport META tag is used to control the layout on mobile browsers.
+	The viewport `META` tag is used to control the layout on mobile browsers.
 
 1.  Add a reference to jQuery in the `<head>` element:
 
-        ````HTML
+	````HTML
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+````
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-`````
-
-	>jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
+	> jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
 
 1. Add references to the Kendo UI Sass styles in the `<head>` element:
 
 	````HTML
 <link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
-`````
+````
+
 
 1.  Add references to the HTML5 Report Viewer JavaScript file in the `<head>` element:
 
-        ````HTML
+	````HTML
+<script src="/api/reports/resources/js/telerikReportViewer"></script>
+````
 
-    <script src="/api/reports/resources/js/telerikReportViewer"></script>
-
-`````
 
 	>The report viewer JavaScript must be referenced after any other Kendo UI for jQuery widgets or bundles.
 
-	If no Kendo widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:
+	If no **Kendo** widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:
 
 	````HTML
 <!--
@@ -121,22 +116,21 @@ The following steps produce an HTML page with settings similar to these in the i
 	kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
 	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.web.min.js"></script>
 	-->
-`````
+````
+
 
 1.  Add a `<div>` element to the `<body>` element that will serve as a placeholder for the viewer’s widget. The `<div>` element's ID attribute serves as a key(Id) for the viewer object. Its content (_loading..._) will be displayed while the viewer’s content is being loaded (from the template):
 
-        ````HTML
-
-    <div id="reportViewer1">
-    		loading...
-    	</div>
-
-`````
+	````HTML
+<div id="reportViewer1">
+		loading...
+	</div>
+````
 
 
 1. Add the following script element at the bottom of the `<body>` element and initialize the HTML5 Report Viewer widget through the reportViewer1 `<div>` element that we added above:
 
-	````JS
+	````HTML
 <script type="text/javascript">
 		$("#reportViewer1")
 			.telerik_ReportViewer({
@@ -149,24 +143,24 @@ The following steps produce an HTML page with settings similar to these in the i
 				}
 			});
 	</script>
-`````
+````
 
-    >The viewer's  __reportSource__ consists of report and parameters attributes, where __report__ is the string description of the report that will be displayed, and __parameters__ is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
+
+	>The viewer's  __reportSource__ consists of report and parameters attributes, where __report__ is the string description of the report that will be displayed, and __parameters__ is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
 
 1.  Make the viewer fill the entire browser window. Add the following style to the `<head>` element:
 
-        ````HTML
+	````HTML
+<style>
+	#reportViewer1 {
+		position: absolute;
+		inset: 5px;
+	}
+</style>
+````
 
-    <style>
-    		#reportViewer1 {
-    			position: absolute;
-    			inset: 5px;
-    		}
-    	</style>
 
-`````
-
-	>The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use *position:relative* and provide width and height values.
+	> The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use *position:relative* and provide width and height values.
 
 1. The HTML page that we have just created should look like this:
 
@@ -207,10 +201,10 @@ The following steps produce an HTML page with settings similar to these in the i
 		</script>
 	</body>
 	</html>
-`````
+````
 
 1. Run the project and navigate to the page with the HTML5 Report Viewer that we have just created.
 
 ## See Also
 
-- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

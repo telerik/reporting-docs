@@ -43,10 +43,10 @@ There are four available options for the `friendlyName` setting:
 
 Depending on which option will be used, a corresponding `Telerik.Reporting.Telerik.Reporting.AI.Microsoft.Extensions.{name}` NuGet package must be installed in the project. In other words, please install one of the following packages before continuing with the configuration:
 
-	- `Telerik.Reporting.AI.Microsoft.Extensions.AzureAIInference`
-	- `Telerik.Reporting.AI.Microsoft.Extensions.AzureOpenAI`
-	- `Telerik.Reporting.AI.Microsoft.Extensions.Ollama`
-	- `Telerik.Reporting.AI.Microsoft.Extensions.OpenAI`
+- `Telerik.Reporting.AI.Microsoft.Extensions.AzureAIInference`
+- `Telerik.Reporting.AI.Microsoft.Extensions.AzureOpenAI`
+- `Telerik.Reporting.AI.Microsoft.Extensions.Ollama`
+- `Telerik.Reporting.AI.Microsoft.Extensions.OpenAI`
 
 Below is an example of how to configure the project for the `AzureOpenAI` option.
 

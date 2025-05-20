@@ -48,7 +48,7 @@ app.UseStaticFiles();
 1. Add JavaScript dependencies to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App): 
 
 	````HTML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	@* For Reports service hosted in the same project: *@
 	<script src="/api/reports/resources/js/telerikReportViewer"></script>
 	@* For Reports service hosted in another application / Report Server use absolute URI: *@

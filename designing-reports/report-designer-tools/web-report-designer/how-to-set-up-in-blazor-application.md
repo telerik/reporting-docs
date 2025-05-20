@@ -98,7 +98,7 @@ using Microsoft.AspNetCore.Mvc;
 1. Add JavaScript dependencies to the __head__ element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `App.razor` (Blazor Web App):
 
 	````HTML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js"></script>
 	<script src="/api/reportdesigner/resources/js/telerikReportViewer"></script>
 	<script src="/api/reportdesigner/designerresources/js/webReportDesigner/"></script>

@@ -36,7 +36,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Requirements:
 
-* The Web Report Designer can be integrated into any ASP.NET Web Application, both under `.NET Framework 4.5.1+` or `.NET {{site.mindotnetversion}}+`.
+* The Web Report Designer can be integrated into ASP.NET Web Applications, both under `.NET Framework 4.6.2+` or `.NET {{site.mindotnetversion}}+`.
 * The following NuGet packages are required:
 
 	+ Telerik.Reporting
@@ -45,7 +45,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 ## Prerequisites:
 
 * Web browser that supports [JavaScript EcmaScript 6](https://es6.io) : Google Chrome 77.0 or higher; Mozilla Firefox 69.0 or higher, Microsoft Edge 79 or higher.
-* [jQuery](https://jquery.com/download/) __3.3.1__ or later.
+* [jQuery](https://jquery.com/download/) __3.7.1__ or later.
 * [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) __{{site.kendosubsetversion}}__ or later.
 * Telerik Report Viewer script. By default, it is requested from the service.
 * Web Report Designer script. By default, it is requested from the service.

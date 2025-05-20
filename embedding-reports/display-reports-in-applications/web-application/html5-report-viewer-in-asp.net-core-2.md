@@ -152,7 +152,7 @@ namespace WebApplication1.Controllers
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <link href="http://cdn.kendostatic.com/2022.1.301/styles/kendo.common.min.css" rel="stylesheet" />
     <link href="http://cdn.kendostatic.com/2022.1.301/styles/kendo.blueopal.min.css" rel="stylesheet" />
     <script src="telerikReportViewer.kendo-<token>buildversion</token>"></script>

@@ -25,12 +25,10 @@ Each method can be called using a reference to the report viewer component.
 ````JavaScript
 let viewer;
 ReactDOM.render(
-	<div>
-		<TelerikReportViewer
-		...
-		/>
+	<>
+		<TelerikReportViewer />
 		<button id="refresh-button" onClick={ () => viewer.refreshReport() }>Refresh</button>
-	</div>,
+	</>,
 	document.getElementById('root')
 );
 ````

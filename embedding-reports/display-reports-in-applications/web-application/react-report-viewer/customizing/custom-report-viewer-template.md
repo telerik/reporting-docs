@@ -29,8 +29,7 @@ The React Report Viewer is based on the [HTML5 Report Viewer]({%slug telerikrepo
 		reportSource={{
 			report: 'Report1.trdp',
 			parameters: {}
-		}}
-		>
+		}} />
 ````
 
 

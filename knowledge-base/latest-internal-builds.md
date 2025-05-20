@@ -1,5 +1,5 @@
 ---
-title: Latest Internal Builds
+title: Latest Internal Builds (Preview Version)
 description: "Learn more about the Latest Internal Builds, what is their purpose in Telerik Reporting and how to download and use them."
 type: troubleshooting
 page_title: Latest Internal Builds Explained
@@ -29,11 +29,12 @@ It contains all the newest bug fixes.
 
 The purpose of the LIB is to allow the users to test the latest bug fixes. So, if you have experienced any problem with the current official distributions there is a possibility that the issue has already been addressed in the latest internal build.
 
-## How to obtain the LIB?
+## How to obtain the LIB (Preview Version)?
 
 Go to [Downloads for Progress® Telerik® Reporting](https://www.telerik.com/account/product-download?product=REPORTING) page, click on Internal Builds and look for the `.msi` containing the LIB:
 
 `Telerik_Reporting_{VERSION}.msi`
+
 
 ![Latest Internal Build Download page for Telerik Reporting with Purchase version 13.1.19.618 selected](resources/download-lib.png)
 

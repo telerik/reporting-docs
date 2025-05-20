@@ -2,7 +2,7 @@
 title: Setting Up Telerik Reporting License Key
 page_title: "Learn how to set up the Telerik Reporting License Key."
 slug: license-key
-tags: license, key, telerik, reporting
+tags: license, key, telerik, reporting, licensing
 published: True
 position: 1
 ---
@@ -12,11 +12,6 @@ position: 1
 Starting with the [2025 Q1 (19.0.25.211)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2025-q1-19-0-25-211) release, Telerik Reporting requires activation through a license key (trial or commercial). This article describes how to download or update your personal license key and use it to activate the Telerik Reporting product.
 
 An invalid license results in [errors and warnings]({%slug license-errors-and-warnings%}) during build and run-time indicators such as watermarks and banners.
-
-The implementation of the 2025 licensing requirements will occur in two phases:
-
-- Phase 1 - Starting with the 2025 Q1 release, a missing or invalid license causes [warnings during build]({%slug license-errors-and-warnings%}) and trial messages in the generated report documents. The trial distributions won't show the trial message when activated with a trial license. The commercial distributions of the product do not exhibit any functional restrictions.
-- Phase 2 - Starting with the 2025 Q2 release, there will be only one product distribution with different licenses. A missing or invalid license will result in [build errors and run-time indicators]({%slug license-errors-and-warnings%}), such as watermarks.
 
 Note that future updates of the product may restrict or disable some features when no valid license is present. You can send us feedback through the _Contact Us_ form or by [opening a support ticket](https://www.telerik.com/account/support-center/contact-us?utm_source=licensing&utm_medium=console&utm_campaign=no_references).
 
@@ -112,3 +107,5 @@ Whenever you purchase a new Telerik Reporting license or renew an existing one, 
 * [License Activation Errors and Warnings]({%slug license-errors-and-warnings%})
 * [Adding the License Key to CI Services]({%slug license-key-ci-services%}))
 * [Frequently Asked Questions about Your Telerik Reporting License Key]({%slug license-frequently-asked-questions%})
+* [Upgrading Q1 2025 Trial to Q2 2025 Licensed Version]({%slug upgrade-q1-2025-trial-to-q2-2025-purchase-license%})
+* [Licensing before 2025]({%slug telerikreporting/licensing%})

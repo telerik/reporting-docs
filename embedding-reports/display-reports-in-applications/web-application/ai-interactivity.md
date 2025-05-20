@@ -76,7 +76,7 @@ After consent is given, the prompt for asking the AI questions will appears in t
 
 	![An Image of how the Ask AI Prompt will look with enabled custom questions and two predefined ones in the HTML5-based Report Viewers](images/HTML5ReportViewer/ai-prompt.png)
 
-- **Ask AI** Rrompt Dialog with disabled custom questions and two predefined ones
+- **Ask AI** Prompt Dialog with disabled custom questions and two predefined ones
 
 	![An Image of how the Ask AI Prompt will look with disabled custom questions and two predefined ones in the HTML5-based Report Viewers](images/HTML5ReportViewer/ai-disabled-customPromt.png)
 

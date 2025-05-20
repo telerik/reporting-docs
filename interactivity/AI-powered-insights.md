@@ -12,7 +12,7 @@ position: 1
 
 The AI-powered insights during report preview provide comprehensive capabilities, including response generation, prompt creation, AI output interaction, and execution of predefined commands.
 
-## OpenAI Implementations
+## AI Features
 
 * Ask AI: This window allows users to ask questions to the AI, facilitating dynamic responses based on the document context.
 

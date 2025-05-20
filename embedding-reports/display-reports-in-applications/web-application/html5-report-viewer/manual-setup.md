@@ -11,37 +11,40 @@ previous_url: /html5-report-viewer-embedding
 
 # Manual Setup of the HTML5 Report Viewer in Web Applications in the .NET Framework
 
-In this topic, we demonstrate how to manually add the HTML5 Report Viewer to an HTML page and to display a report. The approach that we use here allows for full control over the configuration. If you are looking for a less complicated approach, consider using the [Visual Studio item templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).
+In this article, you will learn how to manually add the HTML5 Report Viewer to an HTML page and display a report. This approach allows for full control over the configuration.
+
+If you are looking for a less complicated approach, consider using the [Visual Studio item templates]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}).
 
 ## Prerequisites
 
 Before you continue, make sure that the following prerequisites are met:
 
-1. Familiarity with the HTML5 Report Viewer [System Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).
-1. A running application that hosts a Reporting REST service at address */api/reports*. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
-1. A reference from the project that hosts the Reporting REST service to the Reports Library located in the __[TelerikReporting_InstallDir]\Examples\CSharp|VB\ReportLibrary\Bin__ folder.
-1. A script with the custom Telerik Kendo UI distribution for Telerik Reporting (located in the __[TelerikReporting_InstallDir]\Html5\ReportViewer\js__ folder) or with the mainstream Kendo UI distribution downloaded locally or via the [Kendo UI CDN service](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service).
+1. Familiarity with the HTML5 Report Viewer [Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}).
+1. A running application that hosts a Reporting REST service at address _/api/reports_. For more information, see [Telerik Reporting REST Services]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/overview%}).
+1. A script with the custom [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) distribution for Telerik Reporting (located in the **[TelerikReporting_InstallDir]\Html5\ReportViewer\js** folder) or with the mainstream Kendo UI distribution downloaded locally or via the [Kendo UI CDN service](https://docs.telerik.com/kendo-ui/intro/installation/cdn-service).
+1. (Optional) If [programmatic type reports]({%slug telerikreporting/designing-reports/overview%}#programmatic-types) are used, add a reference from the project that hosts the Reporting REST service to the `Reports Library` project with the reports.
 
-	>You must load only one version of Telerik Kendo UI styles and scripts on the page. For more information see []({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#KendoWidgetsRequirements).
+   > You must load only one version of [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) styles and scripts on the page - [Kendo Widgets Requirements]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/requirements-and-browser-support%}#KendoWidgetsRequirements).
 
-## Utilizing the HTML5 Report Viewer in an HTML page
+## Utilizing the HTML5 Report Viewer
 
-The following steps produce an HTML page with settings similar to these of the local Html5Demo project installed by default under __[TelerikReporting_InstallDir]\Examples__:
+The following steps produce an HTML page with settings similar to these in the integration demo projects installed by default under `C:\Program Files (x86)\Progress\Telerik Reporting {{site.suiteversion}}\Examples\CSharp\`:
 
-> You must adapt all path references in the steps below to your project setup. For more information, refer to the [ASP.NET Web Project Paths](https://learn.microsoft.com/en-us/previous-versions/ms178116(v=vs.140)) Microsoft article.
+1.  Create an HTML5 page:
 
-1. Create an HTML5 page:
+        ````HTML
 
-	````HTML
-<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml">
-		<head>
-			<title>Telerik HTML5 Report Viewer</title>
-		</head>
-		<body>
-		</body>
-	</html>
-````
+    <!DOCTYPE html>
+
+        <html xmlns="http://www.w3.org/1999/xhtml">
+        	<head>
+        		<title>Telerik HTML5 Report Viewer</title>
+        	</head>
+        	<body>
+        	</body>
+        </html>
+
+`````
 
 	>The above DOCTYPE directive must reflect your custom requirements. You can find more details about the page settings used in this tutorial in the [Defining document compatibility](https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) Microsoft article.
 
@@ -49,34 +52,35 @@ The following steps produce an HTML page with settings similar to these of the l
 
 	````HTML
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-````
+`````
 
-	The viewport META tag is used to control the layout on mobile browsers.
+    The viewport META tag is used to control the layout on mobile browsers.
 
-1. Add a reference to jQuery in the `<head>` element:
+1.  Add a reference to jQuery in the `<head>` element:
 
-	````HTML
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-````
+        ````HTML
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+`````
 
 	>jQuery must be loaded before creating the viewer object.jQuery must be loaded only once on the page.
 
-1. Add references to the Telerik Kendo UI styles in the `<head>` element:
+1. Add references to the Kendo UI Sass styles in the `<head>` element:
 
 	````HTML
-<!-- the required Kendo styles -->
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
-````
+<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+`````
 
+1.  Add references to the HTML5 Report Viewer JavaScript file in the `<head>` element:
 
-1. Add references to the HTML5 Report Viewer JavaScript file in the `<head>` element:
+        ````HTML
 
-	````HTML
-<script src="/api/reports/resources/js/telerikReportViewer"></script>
-````
+    <script src="/api/reports/resources/js/telerikReportViewer"></script>
 
-	>The report viewer JavaScript must be referenced after any other Kendo widgets or bundles.
+`````
+
+	>The report viewer JavaScript must be referenced after any other Kendo UI for jQuery widgets or bundles.
 
 	If no Kendo widgets are utilized on the page, the report viewer will register a custom Kendo subset to enable the required Kendo widgets. The subset is served from the report service. If Kendo is used on the page or the CDN is preferred, make sure the following widgets are referenced:
 
@@ -117,55 +121,50 @@ The following steps produce an HTML page with settings similar to these of the l
 	kendo.all.min.js or kendo.web.min.js can be used as well if Kendo is used outside the report viewer
 	<script src="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.web.min.js"></script>
 	-->
-````
+`````
+
+1.  Add a `<div>` element to the `<body>` element that will serve as a placeholder for the viewer’s widget. The `<div>` element's ID attribute serves as a key(Id) for the viewer object. Its content (_loading..._) will be displayed while the viewer’s content is being loaded (from the template):
+
+        ````HTML
+
+    <div id="reportViewer1">
+    		loading...
+    	</div>
+
+`````
 
 
-1. Add a `<div>` element to the `<body>` element that will serve as a placeholder for the viewer’s widget. The `<div>` element's ID attribute serves as a key(Id) for the viewer object. Its content (*loading...*) will be displayed while the viewer’s content is being loaded (from the template):
-
-	````HTML
-<div id="reportViewer1" class="k-widget">
-		loading...
-	</div>
-````
-
-
-1. Add the following script element at the bottom of the `<body>` element and create the HTML5 Report Viewer widget for the reportViewer1 `<div>` element that we just added:
+1. Add the following script element at the bottom of the `<body>` element and initialize the HTML5 Report Viewer widget through the reportViewer1 `<div>` element that we added above:
 
 	````JS
 <script type="text/javascript">
 		$("#reportViewer1")
 			.telerik_ReportViewer({
 				serviceUrl: "/api/reports/",
-				//templateUrl: /ReportViewer/templates/telerikReportViewerTemplate-FA-{{buildversion}}.html
 				reportSource: {
-					report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
+					report: "Dashboard.trdp",
 					parameters: {
-						CultureID: "en"
+						ReportYear: 2002
 					}
 				}
 			});
 	</script>
-````
+`````
 
-	The relative paths that you use must reflect the project's structure. The default template uses TelerikWebUI icons. If you prefer a template with *FontAwesome* icons, you have to set the templateUrl option to `/ReportViewer/templates/telerikReportViewerTemplate-FA-{{site.buildversion}}.html`.
+    >The viewer's  __reportSource__ consists of report and parameters attributes, where __report__ is the string description of the report that will be displayed, and __parameters__ is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}).
 
-	>The viewer's  __reportSource__ consists of report and parameters attributes, where __report__ is the string description of the report that will be displayed, and __parameters__ is a collection of parameter keys and values that will be sent to the report. The report's string description is handled on the server by the [report source resolver used in the Reporting REST service]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/rest-service-report-source-resolver/overview%}). The above example uses the [assembly qualified name](https://learn.microsoft.com/en-us/dotnet/api/system.type.assemblyqualifiedname?view=net-7.0#System_Type_AssemblyQualifiedName) of a report's type (report created in Visual Studio Report Designer). This string description will be handled automatically by the [ReportTypeResolver](/api/Telerik.Reporting.Services.WebApi.ReportTypeResolver).
+1.  Make the viewer fill the entire browser window. Add the following style to the `<head>` element:
 
-1. Make the viewer fill the entire browser window. Add the following style to the `<head>` element:
+        ````HTML
 
-	````HTML
-<style>
-		#reportViewer1 {
-			position: absolute;
-			left: 5px;
-			right: 5px;
-			top: 5px;
-			bottom: 5px;
-			font-family: 'segoe ui', 'ms sans serif';
-			overflow: hidden;
-		}
-	</style>
-````
+    <style>
+    		#reportViewer1 {
+    			position: absolute;
+    			inset: 5px;
+    		}
+    	</style>
+
+`````
 
 	>The above CSS rule will be applied on the `<div>` element holding the viewer object. The HTML elements building the viewer object will be sized based on the size of this container `<div>` element. To make the viewer fit in another container, use *position:relative* and provide width and height values.
 
@@ -177,45 +176,41 @@ The following steps produce an HTML page with settings similar to these of the l
 	<head>
 		<title>Telerik HTML5 Report Viewer</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-		<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+
+		<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="/api/reports/resources/js/telerikReportViewer"></script>
+
 		<style>
 			#reportViewer1 {
 				position: absolute;
-				left: 5px;
-				right: 5px;
-				top: 5px;
-				bottom: 5px;
-				font-family: 'segoe ui', 'ms sans serif';
-				overflow: hidden;
+				inset: 5px;
 			}
 		</style>
 	</head>
 	<body>
-		<div id="reportViewer1" class="k-widget">
+		<div id="reportViewer1">
 			loading...
 		</div>
 		<script type="text/javascript">
-			$("#reportViewer1")
-			 .telerik_ReportViewer({
-					serviceUrl: "/api/reports/",
-					reportSource: {
-						report: "Telerik.Reporting.Examples.CSharp.ProductCatalog, CSharp.ReportLibrary",
-						parameters: {
-							CultureID: "en"
-						}
+		$("#reportViewer1")
+			.telerik_ReportViewer({
+				serviceUrl: "/api/reports/",
+				reportSource: {
+					report: "Dashboard.trdp",
+					parameters: {
+						ReportYear: 2002
 					}
-				});
+				}
+			});
 		</script>
 	</body>
 	</html>
-````
-
+`````
 
 1. Run the project and navigate to the page with the HTML5 Report Viewer that we have just created.
 
 ## See Also
 
-* [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})
+- [HTML5 Report Viewer]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/overview%})

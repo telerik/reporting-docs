@@ -57,7 +57,7 @@ function match(parameter) {
 ````
 
 
-1. The viewer is using a special Kendo subset that contains only the required widgets and the Kendo DateTimePicker widget is not part of the subset.
+1. The React Report Viewer is using a special [Kendo UI for jQuery](https://www.telerik.com/kendo-jquery-ui) subset that contains only the required widgets and the Kendo DateTimePicker widget is not part of the subset.
 For that reason, we need to load the Kendo All script. Note that currently, we need to use this special logic for loading the viewer to the fact that jQuery has
 to be loaded before Kendo All:
 
@@ -66,7 +66,7 @@ let viewer;
 	
 	function loadScript(callback) {
 		const script = document.createElement("script");
-		script.src = "https://kendo.cdn.telerik.com/2022.1.301/js/kendo.all.min.js";
+		script.src = "https://kendo.cdn.telerik.com/{{kendosubsetversion}}/js/kendo.all.min.js";
 		script.async = true;
 		script.onload = callback;
 		document.body.appendChild(script);

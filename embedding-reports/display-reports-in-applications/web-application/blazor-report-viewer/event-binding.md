@@ -15,13 +15,14 @@ The Blazor Report Viewer exposes events as properties of the `ClientEventsOption
 
 ## Bind to a report viewer event
 
-To attach an event handler to the viewer, specify the name of the event handler function in the `ClientEventsOptions` object. The function name should be fully qualified, e.g. `window.trvEventHandlers.exportBegin`, or just `trvEventHandlers.exportBegin` (the "*window* " qualifier is optional). The event handler functions should be implemented inside **wwwroot/index.html** (Blazor WebAssembly) or **Pages/\_Host.cshtml** (Blazor Server).
+To attach an event handler to the viewer, specify the name of the event handler function in the `ClientEventsOptions` object. The function name must be fully-qualified, e.g. `window.trvEventHandlers.exportBegin`, or just `trvEventHandlers.exportBegin` (the "*window* " qualifier is optional).
+
+ The event handler functions can be implemented inside the **wwwroot/index.html** (Blazor WebAssembly) or **Pages/\_Host.cshtml** (Blazor Server) file.
 
 For example, we can attach handlers to the `ExportBegin` and `ExportEnd` events of the viewer:
 
 ````CSHTML
 <ReportViewer
-...
 	ClientEvents="@(new ClientEventsOptions() {
 		ExportBegin = "trvEventHandlers.exportBegin",
 		ExportEnd = "trvEventHandlers.exportEnd"

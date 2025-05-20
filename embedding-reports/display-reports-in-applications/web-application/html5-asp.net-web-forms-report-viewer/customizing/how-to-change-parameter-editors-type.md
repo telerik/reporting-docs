@@ -19,7 +19,6 @@ The following example illustrates how to set the Parameters method to the Teleri
 
 ````XML
 <telerik:ReportViewer EnableAccessibility="false" ID="reportViewer1" runat="server">
-	...
 	<Parameters>
 		<Editors SingleSelect="ComboBox" MultiSelect="ComboBox"></Editors>
 	</Parameters>
@@ -27,7 +26,7 @@ The following example illustrates how to set the Parameters method to the Teleri
 ````
 
 
-> The Telerik Report Viewer Parameters element is optional. If it is not used, the Telerik Report Viewer will fall back to the default values.
+> The Telerik Report Viewer `Parameters` element is optional. If not used, the Telerik Report Viewer will fall back to the default values.
 
 ## See Also
 

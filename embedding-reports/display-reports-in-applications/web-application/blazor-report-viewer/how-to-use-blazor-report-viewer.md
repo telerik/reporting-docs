@@ -15,9 +15,9 @@ previous_url: /blazor-report-viewer-how-to-use
 
 ## Prerequisites
 
-* [Visual Studio 2019, version 16.4 or later](https://visualstudio.microsoft.com/vs/)
+* [Visual Studio 2019+](https://visualstudio.microsoft.com/vs/)
 
-* Existing .NET 6 and higher Blazor Server App or .NET 6 and higher hosted Blazor WebAssembly App
+* Existing .NET 8 and higher Blazor Server App or .NET 8 and higher hosted Blazor WebAssembly App
 
 * The report viewer consumes reports generated and served from a running Telerik Reporting Web Service. Such can be referenced from another application or Telerik Report Server instance, or it can be hosted within the Blazor Server application.
 
@@ -25,10 +25,10 @@ previous_url: /blazor-report-viewer-how-to-use
 
 ## Adding the Blazor Report Viewer component using an item template
 
-The Blazor Report Viewer item template allows you to quickly and easily [add the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-modern-ui-report-viewer-demo) and [embed the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-sdk-report-server-dynamic-duo) to your application.
+The Blazor Report Viewer item template allows you to quickly and [add the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-modern-ui-report-viewer-demo) and [embed the Blazor Report Viewer](https://www.telerik.com/blogs/telerik-reporting-sdk-report-server-dynamic-duo) to your application.
 
 If you wish to connect the Report Viewer to a Reporting REST service, you can analogically follow the steps outlined in the [How to Use HTML5 Report Viewer with REST Service]({%slug telerikreporting/using-reports-in-applications/display-reports-in-applications/web-application/html5-report-viewer/how-to-use-html5-report-viewer-with-rest-service%}) documentation article.
-Just make sure that you select __Blazor Report Viewer page__, instead of __HTML5 Report Viewer page__ when adding a new item to your project, and follow the steps in the __'Add new Report Viewer'__ dialog.
+Make sure that you select __Blazor Report Viewer page__, instead of __HTML5 Report Viewer page__ when adding a new item to your project, and follow the steps in the __'Add new Report Viewer'__ dialog.
 
 >note Some options differ between the item templates based on the project they are being added to. For example, the option to host a new REST Service is not available in a Blazor WebAssembly project, since it is a strictly client-side application.
 
@@ -56,17 +56,10 @@ app.UseStaticFiles();
 ````
 
 
-1. Add [Telerik Kendo UI SASS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
+1. Add a [Telerik Kendo UI SASS-Based Theme](https://docs.telerik.com/kendo-ui/styles-and-layout/sass-themes/overview) to the `head` element of the `Pages/_Host.cshtml` (Blazor Server) or `wwwroot/index.html` (Blazor WebAssembly), or `Components/App.razor` (Blazor Web App). The Razor syntax for a server application differs and you need to escape the __@__ symbol as __@@__:
 
 	````HTML
-<link rel="stylesheet" href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.default-main.min.css" />
-````
-
-	Alternatively, you can use the [Kendo UI LESS-Based Themes](https://docs.telerik.com/kendo-ui/styles-and-layout/less-themes/overview) (Kendo UI LESS-Based Themes are not compatible with Telerik UI for Blazor and should not be used together):
-
-	````HTML
-<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.common.min.css" rel="stylesheet" />
-	<link href="https://kendo.cdn.telerik.com/{{kendosubsetversion}}/styles/kendo.blueopal.min.css" rel="stylesheet" />
+<link href="https://kendo.cdn.telerik.com/themes/10.2.0/default/default-ocean-blue.css" rel="stylesheet" />
 ````
 
 
@@ -74,14 +67,12 @@ app.UseStaticFiles();
 
 	````HTML
 <script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>
-	@* Or this one if using the Telerik.ReportViewer.Blazor package *@
-	@*<script src="_content/Telerik.ReportViewer.Blazor/interop.js" defer></script>*@
 ````
 
 
-1. If using the Telerik Reporting web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
+1. When using the Telerik Reporting web service (either locally hosted or in another application) use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
 
-	>note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. Please remember to set the actual `ReportSource` along with the eventual parameters:
+	>note When referencing the Reports service from another application the `ServiceUrl` setting should be the absolute URI to the service. 
 
 	````CSHTML
 @page "/"
@@ -99,7 +90,7 @@ app.UseStaticFiles();
 				  ServiceUrl="/api/reports"
 				  ReportSource="@(new ReportSourceOptions()
 								  {
-										Report = "YOUR_REPORT_HERE.trdp"
+										Report = "SampleReport.trdp"
 								  })"
 				  Parameters="@(new ParametersOptions { Editors = new EditorsOptions { MultiSelect = EditorType.ComboBox, SingleSelect = EditorType.ComboBox } })"
 				  ScaleMode="@(ScaleMode.Specific)"
@@ -107,7 +98,7 @@ app.UseStaticFiles();
 ````
 
 
-1. If displaying reports from a Report Server instance use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`. Please remember to set the actual `ReportServer` and `ReportSource` settings:
+1. When displaying reports from a Report Server instance, use the following snippet to place the viewer component in a razor page like `Pages/Index.razor`.
 
 	````CSHTML
 @page "/"
@@ -132,10 +123,9 @@ app.UseStaticFiles();
 ````
 
 
-1. Use the rest of the parameters exposed on the Blazor viewer component to set up its appearance and behavior as desired.
-
 1. Finally, run the project to see the rendered report.
 
 
 ## See Also
+
 * [Blazor Integration with Telerik Reporting](https://docs.telerik.com/blazor-ui/integrations/reporting) documentation article.

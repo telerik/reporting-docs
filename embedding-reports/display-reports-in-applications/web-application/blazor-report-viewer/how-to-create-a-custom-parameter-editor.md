@@ -25,7 +25,7 @@ This global variable with the _match_ and _createEditor_ methods can be initiali
 
 The following example uses the **Dashboard** example report that we ship with the installation of Telerik Reporting and illustrates how to use the [Kendo DropDownList](https://demos.telerik.com/kendo-ui/dropdownlist/index) widget for a single parameter value parameter editor which also has available values:
 
-- In **\_Host.cshtml**
+- In the shared `HTML`/`CSHTML` file:
 
 ````HTML
 <!--Kendo all is needed for the DropDownList widget itself-->
@@ -78,6 +78,7 @@ The following example uses the **Dashboard** example report that we ship with th
                                   Report = "Dashboard.trdp",
                               })"
               ParameterEditors="@(new ParameterEditor[] { new ParameterEditor() { CreateEditor = "trvParameterEditors.createEditorFunction", Match = "trvParameterEditors.matchFunction" } })"
+              />
 ````
 
 ## See Also

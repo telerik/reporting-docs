@@ -9,11 +9,11 @@ position: 3
 previous_url: /telerik-reporting-rest-service-aspnetcore-net5,/embedding-reports/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/host-reports-service-in-.net-5
 ---
 
-# Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in .NET 6, .NET 8 and .NET 9 with Startup.cs
+# Hosting the Telerik Reporting REST Service in an ASP.NET Core Application in {{site.dotnetversions}} with Startup.cs
 
 This article guides you on how to host a Reports Web Service in order to expose the Reports Generation Engine to an ASP.NET Core in .NET Web Application. The configuration of the application in this tutorial is set up in the `Startup.cs` file of the project. 
 
-If you prefer to use [top level statements introduced with .NET 6](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements), refer to the article [Hosting in .NET 6+ with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
+If you prefer to use [top level statements introduced with .NET 6](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements), refer to the article [Hosting in .NET {{site.mindotnetversion}}+ with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}).
 
 The guide is separated into sections for readability reasons. Along with the steps, it elaborates on the concepts and theory behind each step.
 
@@ -28,7 +28,7 @@ In Visual Studio open the __Add New Project__ dialog and select *Telerik Reporti
 
 ![REST Service Project Configuration page from the Visual Studio project template for adding Telerik Reporting REST Service](images/rest-service-project-configuration-menu-net5.png)
 
-Set the Target Framework to .NET 6, .NET 8 or .NET 9.
+Set the Target Framework to .NET {{site.mindotnetversion}} or above.
 
 Once you have configured the rest of the options to your liking, click `Finish` and a new project, containing all the necessary files and packages to host the Telerik Reporting REST service instance, will be added to your solution.
 
@@ -41,7 +41,7 @@ First, you need to create a new ASP.NET Core project:
 1. Open __Visual Studio 2019__ or newer.
 1. From the __File__ menu, select __New > Project__.
 1. In the __Add a new Project__ dialog select __ASP.NET Core Web Application__ project template. Choose a name and location for the project and click __Next__.
-1. In the __Create a new ASP.NET Core web application__ dialog select from the drop down __.NET 6.0 (Long Term Support)__ , .NET 8 or .NET 9. Click on __Create__.
+1. In the __Create a new ASP.NET Core web application__ dialog select from the drop down __.NET {{site.mindotnetversion}}.0 (Long Term Support)__ or a higher version. Click on __Create__.
 
 ### Add Report Definitions
 
@@ -61,7 +61,7 @@ This guide applies the recommended NuGet package references approach to add the 
 1. Optionally, to enable the Office OpenXML document formats (XLSX, DOCX, and PPTX) as export options, reference the __Telerik.Reporting.OpenXmlRendering__ NuGet package.
 
 > The recommended way of adding the necessary dependencies is to use the [Progress Telerik proprietary NuGet feed]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}) and reference the dependencies as NuGet packages. This would also add the indirect dependencies to your project bringing easier dependency management. 
-Alternatively, the assemblies are available in the `\Bin\net6.0\` and  `\Bin\netstandard2.0\` folders of the Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [Microsoft.AspNetCore.Mvc.NewtonsoftJson version 5.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/) and [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/). 
+Alternatively, the assemblies are available in the `\Bin\net8.0\` and  `\Bin\netstandard2.0\` folders of the Telerik Reporting installation directory. However, this would require to manually add all indirect dependencies listed in [.NET Support - Requirements]({%slug telerikreporting/using-reports-in-applications/dot-net-core-support%}#requirements) section and also the following dependency package: [Microsoft.AspNetCore.Mvc.NewtonsoftJson version 5.0.0](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson/) and [DocumentFormat.OpenXML version 2.7.2.0 or above](https://www.nuget.org/packages/DocumentFormat.OpenXml/). 
 Note that you need the last reference only to enable the Office OpenXML document formats. The Reporting engine relies on the [GDI+ API](https://learn.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) which is available on the Windows OS. On Linux and macOS we use the [SkiaSharp](https://github.com/mono/SkiaSharp) 2D Graphics Library based on Google's [Skia](https://skia.org/) Graphics Library.
 
 ### Setup the Startup.cs file for the Reports service
@@ -174,4 +174,4 @@ app.UseCors("ReportingRestPolicy");
 
 * [Embedding Telerik Reporting in ASP.NET Core Web Reporting Applications]({%slug asp-net-core-reporting%})
 * [ASP.NET Core Web API Implementation Overview]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/overview%})
-* [Hosting in .NET 6+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})
+* [Hosting in .NET {{site.mindotnetversion}}+ with Minimal API]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%})

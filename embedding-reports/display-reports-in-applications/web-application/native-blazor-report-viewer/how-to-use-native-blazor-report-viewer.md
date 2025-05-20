@@ -15,7 +15,7 @@ The following articles will guide you on [how to use the new Native Blazor Repor
 ## Prerequisites
 
 * [Visual Studio 2019, version 16.4 or later](https://www.visualstudio.com/vs/)
-* Existing .NET 6 and higher Blazor Server App or .NET 6 and higher hosted Blazor WebAssembly App
+* Existing .NET {{site.mindotnetversion}} and higher Blazor Server App or .NET {{site.mindotnetversion}} and higher hosted Blazor WebAssembly App
 * The report viewer consumes reports generated and served from a running Reports Web Service. Such can be referenced from another application, or it can be hosted locally in a Blazor Server application
 * Blazor WebAssembly applications are executed directly on the browser UI thread. In other words, Blazor WebAssembly is strictly a client-side application and the Reports Web Service cannot be hosted in the same project. When using Blazor WebAssembly, the Reports Web Service has to be hosted in a separate project. For more information, see [Blazor WebAssembly vs. Server](https://www.telerik.com/faqs/blazor-ui/what-is-the-difference-between-blazor-webassembly-vs-server). To host the Reporting Service locally, please follow the approach from either the [Hosting the Telerik Reporting REST Service in ASP.NET Core with Top-Level Statements]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-6-with-minimal-api%}) or the [Hosting the Telerik Reporting REST Service in an ASP.NET Core Application with Startup.cs]({%slug telerikreporting/using-reports-in-applications/host-the-report-engine-remotely/telerik-reporting-rest-services/asp.net-core-web-api-implementation/how-to-host-reports-service-in-asp.net-core-in-.net-5%}) articles.
 
@@ -35,7 +35,7 @@ If you wish to connect the Report Viewer to a Report Server instance, refer to t
 
 1. Add NuGet package reference to the __Telerik.ReportViewer.BlazorNative__ package hosted on the Progress Telerik proprietary NuGet feed. Make sure you have the needed NuGet feed added to the VS setting using the article [How to add the Telerik private NuGet feed to Visual Studio]({%slug telerikreporting/using-reports-in-applications/how-to-add-the-telerik-private-nuget-feed-to-visual-studio%}).
 
-1. Make sure app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET 6+ with Top Level Statements is used) file can serve static files:
+1. Make sure app configuration inside the `Configure` method of the `Startup.cs` (or `Program.cs` if .NET {{site.mindotnetversion}}+ with Top Level Statements is used) file can serve static files:
 
 	````C#
 app.UseStaticFiles();
@@ -50,11 +50,9 @@ app.UseStaticFiles();
 
 	<script src="_content/Telerik.ReportViewer.BlazorNative/js/reporting-blazor-viewer.js" defer></script>
 
-
         @* The version of the Kendo Utils should be updated according to the version of the Kendo theme used by the Telerik UI for Blazor package. *@
         @* The version of the Kendo Theme can be seen in the release notes of the Telerik UI for Blazor version - https://www.telerik.com/support/whats-new/blazor-ui/release-history. *@
 	<link href="https://kendo.cdn.telerik.com/themes/8.2.1/utils/all.css" rel="stylesheet" />
-
 	<link rel="stylesheet" href="_content/Telerik.UI.for.Blazor/css/kendo-theme-default/all.css" />
 
 	<link href="_content/Telerik.ReportViewer.BlazorNative/css/reporting-blazor-viewer.css" rel="stylesheet" />

@@ -11,9 +11,18 @@ res_type: kb
 
 ## Environment
 
-| Version | Product |  
-| ---- | ---- |
-| Valid until Q2 2025 | Telerik Reporting | 
+<table>
+	<tbody>
+		<tr>
+			<td>Product</td>
+			<td>Progress® Telerik® Reporting</td>
+		</tr>
+		<tr>
+			<td>Version</td>
+			<td>2025 Q1 (19.0.25.313) and older</td>
+		</tr>
+	</tbody>
+</table>
 
 ## Description
 

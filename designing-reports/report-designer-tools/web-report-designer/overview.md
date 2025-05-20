@@ -36,7 +36,7 @@ The Web Report Designer uses a dedicated ASP.NET WebAPI REST service as a backen
 
 ## Requirements:
 
-* The Web Report Designer can be integrated into any ASP.NET Web Application, both under `.NET Framework 4.5.1+` or `.NET 6+`.
+* The Web Report Designer can be integrated into any ASP.NET Web Application, both under `.NET Framework 4.5.1+` or `.NET {{site.mindotnetversion}}+`.
 * The following NuGet packages are required:
 
 	+ Telerik.Reporting

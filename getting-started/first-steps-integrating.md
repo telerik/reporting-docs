@@ -40,11 +40,11 @@ Once you have your report, save it as `DemoReport.trdp`. In the next step, you w
 
 ## Step 3: Integrate and Display the Report
 
-In this final step, you'll integrate your report in an ASP.NET Core web application in .NET 6 and display the project with the HTML5 Report Viewer.
+In this final step, you'll integrate your report in an ASP.NET Core web application in .NET {{site.mindotnetversion}} and display the project with the HTML5 Report Viewer.
 
 1. Open __Visual Studio 2022__. From the __Start__ window, choose __Create a new project__.
 
-1. Select __ASP.NET Core Web App__ and name it __TelerikWebApp__. In the __Additional information__ window, select __.NET 8.0 (Long-term support)__ and leave the rest of the settings as default. Click __Create__.
+1. Select __ASP.NET Core Web App__ and name it __TelerikWebApp__. In the __Additional information__ window, select __.NET{{site.mindotnetversion}}.0 (Long-term support)__ and leave the rest of the settings as default. Click __Create__.
 
 1. Right-click the project. Select __Add__ > __New Item__ > __Telerik HTML5 Report Viewer Page [version]__. Name the file `index.html`.
 

@@ -3,7 +3,7 @@ title: TypeReferences Element
 page_title: TypeReferences Element Configuration
 description: "Learn how to set up the TypeReferences Element, allowing you to use custom user functions in the report and create ObjectDataSource components."
 slug: telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/typeReferences-element
-tags: typeReferences,element, user, function, ObjectDataSource
+tags: typeReferences, element, user, function, ObjectDataSource
 published: True
 position: 11
 ---
@@ -17,20 +17,20 @@ table th:nth-of-type(2) {
 }
 </style>
 
-# TypeReferences Element Overview
+# typeReferences Element Overview
 
 >note This element was first introduced in the [2024 Q1 (18.0.24.305)](https://www.telerik.com/support/whats-new/reporting/release-history/progress-telerik-reporting-2024-q1-(18-0-24-305)) Reporting version.
 
-Defines a collection of type references used by the Reporting Engine to resolve the custom types permitted to be used during the design and processing stages. The assemblies used by the types in the `TypeReferences` section are loaded into the application domain if the type is successfully resolved, so it's not necessary to also declare the assembly in the `assemblyReferences` section.
+Defines a collection of type references used by the Reporting Engine to resolve the custom types permitted to be used during the design and processing stages. The assemblies used by the types in TypeReferences section are loaded into application domain if the type is successfully resolved, so it's not necessary to declare the assembly also in the AssemblyReferences section.
 
 XML-based configuration file:
 
 ````XML
-<TypeReferences>
+<typeReferences>
 	<add />
 	<clear />
 	<remove />
-</TypeReferences>
+</typeReferences>
 ````
 
 JSON-based configuration file:
@@ -39,10 +39,6 @@ JSON-based configuration file:
 "TypeReferences": [
 ],
 ````
-
-The `TypeReferences` element was introduced to let you allow only specific types from restricted assemblies, i.e., assemblies not listed in the `assemblyReferences` element.
-
-If you want to allow all the types from a DLL, use the [assemblyReferences element]({%slug telerikreporting/using-reports-in-applications/export-and-configure/configure-the-report-engine/assemblyreferences-element%}). instead.
 
 ## Attributes and Elements
 
@@ -69,9 +65,9 @@ XML-based configuration file:
 		<section name="Telerik.Reporting" type="Telerik.Reporting.Configuration.ReportingConfigurationSection, Telerik.Reporting" allowLocation="true" allowDefinition="Everywhere" />
 	</configSections>
 	<Telerik.Reporting>
-		<TypeReferences>
+		<typeReferences>
 			<add typeName="MyNamespace.MyClassName" assemblyName="MyAssemblyName" publicKeyToken="my-assembly-public-key-token" />
-		</TypeReferences>
+		</typeReferences>
 	</Telerik.Reporting>
 ...
 </configuration>

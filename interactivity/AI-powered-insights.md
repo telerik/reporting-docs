@@ -27,7 +27,7 @@ The AI-powered insights during report preview provide comprehensive capabilities
 |endpoint|This setting specifies the URL of the AI service endpoint.|
 |credential|This setting specifies the authentication credentials required to access the AI service. It ensures that the AI client can securely connect to the specified endpoint.|
 |requireConsent|A boolean configuration option that determines whether users must explicitly consent to the use of AI models before the AI report insights features can be utilized within the application.|
-|allowCustomPrompts|This setting is set to false by default. If you set it to `true`, users will be allowed to ask custom prompts in addition to the predefined prompts.|
+|allowCustomPrompts|This setting is set to true by default. If you set it to `false`, users will only be able to use the predefined prompts and will not be allowed to ask custom prompts.|
 |predefinedPrompts|This setting specifies a list of predefined prompts that the AI client can use. Each prompt is defined by a text attribute, which contains the prompt's content.|
 
 __AI clients__

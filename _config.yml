@@ -228,6 +228,9 @@ navigation:
     embedding-reports/display-reports-in-applications/web-application/asp.net-web-forms-report-viewer/using-out-proc-session-state:
         position: 15
         title: "Design Considerations for Out-proc Session State"
+    embedding-reports/display-reports-in-applications/web-application/styling-with-themebuilder:
+        position: 8
+        title: "Styling with ThemeBuilder" 
     embedding-reports/display-reports-in-applications/windows-forms-application:
         position: 11
         title: "Windows Forms Application"

@@ -27,5 +27,5 @@ For a successful upgrade, these users must consider the change in the NuGet pack
 
 ## See Also
 
-* [Setting Up Telerik Reporting License Key]({%slug setting-up-license-key%})
+* [Setting Up Telerik Reporting License Key]({%slug license-key%})
 * [Licensing before 2025]({%slug telerikreporting/licensing%})

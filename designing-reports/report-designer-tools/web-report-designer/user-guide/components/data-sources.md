@@ -43,20 +43,20 @@ The **Web Report Designer** offers a **Data Sources** section inside the **Compo
         <th>Data Source</th><th>Description</th>
       </tr>
       <tr>
-        <td>[SQL Data Source](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview)</td>
+        <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview">SQL Data Source</a></td>
         <td>Enables data items to display data located in a relational database, including [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server) and Oracle databases, as well as OLE DB and ODBC data sources, using little or no code.</td>
       </tr>
       <tr>
-        <td>[CSV Data Source](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview)</td><td>Enables data items to display data located in a CSV document, including files (*.csv, *.tsv, *.txt, and others), inline string or stream.</td>
+        <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/csvdatasource-component/overview">CSV Data Source</a></td><td>Enables data items to display data located in a CSV document, including files (*.csv, *.tsv, *.txt, and others), inline string or stream.</td>
       </tr>
       <tr>
-        <td>[Web Service Data Source](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview)</td><td>Enables data items to display data located on a service in [JSON format]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})</td>
+        <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview">Web Service Data Source</a></td><td>Enables data items to display data located on a service in [JSON format]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data%})</td>
       </tr>
       <tr>
-        <td>[JSON Data Source](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component)</td><td>Enables data items to display JSON data located in a local file or saved directly into the report.</td>
+        <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component">JSON Data Source</a></td><td>Enables data items to display JSON data located in a local file or saved directly into the report.</td>
       </tr>
       <tr>
-        <td>[Object Data Source](https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview)</td>
+        <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/objectdatasource-component/overview">Object Data Source</a></td>
         <td>Provides a way to bind the Data Report Items to a middle-tier business object.</td>
       </tr>
     </table>

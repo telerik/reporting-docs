@@ -16,7 +16,11 @@ img[alt$="><"] {
 
 # Components
 
-Each report is constructed by [report items]({%slug telerikreporting/designing-reports/report-structure/overview%}) organized in different groups in the **Components** tab based on their purpose. The available items are:
+Each report is constructed by [report items]({%slug telerikreporting/designing-reports/report-structure/overview%}) organized in different groups in the **Components** tab based on their purpose. 
+
+![Components Tray ><](../images/wrd-components-tray.png)    
+
+The available items are:
 
 |Group|Report Items|
 |----|----|
@@ -32,7 +36,7 @@ Each report is constructed by [report items]({%slug telerikreporting/designing-r
 
 
 
-![Components Tray ><](../images/wrd-components-tray.png)    
+
 
 
 

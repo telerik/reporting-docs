@@ -30,7 +30,7 @@ A configuration object that includes details about version, license status, and 
 
 * Request
 
-		GET /api/reports/version HTTP/1.1
+		GET /api/reports/configuration HTTP/1.1
 
 * Response
 

@@ -23,7 +23,7 @@ The public interface for retrieving the Telerik Reporting REST Service version.
 
 | HTTP Status Code | Description |
 | ------ | ------ |
-|`200 OK`|The Version of the Telerik Reporting REST Service retrieved successfully.|
+|`200 OK`|The Version of the Telerik Reporting REST Service retrieved successfully|
 
 __Response Body__
 

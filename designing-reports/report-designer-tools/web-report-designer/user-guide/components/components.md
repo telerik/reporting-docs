@@ -25,7 +25,7 @@ The available items are:
 |Group|Report Items|
 |----|----|
 |**Report Items**|<ul><li>TextBox</li><li>HtmlTextBox</li><li>PictureBox</li><li>CheckBox</li><li>Barcode</li><li>Shape</li><li>Panel</li><li>Radial Gauge Wizard</li><li>Linear Gauge Wizard</li></ul>|
-|**Tables**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
+|[Tables]({%slug web-report-designer-user-guide-components-tables%})|<ul><li>List</li><li>Table</li><li>Crosstab</li><li>Table Wizard</li><li>Crosstab Wizard</li></ul>|
 |**Report**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
 |**Maps**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
 |**Charts**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|

@@ -2,7 +2,7 @@
 title: Web Report Designer - Components
 page_title: Web Report Designer - Structure
 description: Explore the available report components offered by the Web Report Designer.
-slug: web-report-designer-user-guide-components
+slug: user-guide/components
 tags: web, report, design, report, components
 published: True
 position: 0

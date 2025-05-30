@@ -1,8 +1,8 @@
 ---
 title: Overview
-page_title: Overview
+page_title: Overview - Web Report Designer User Guide
 description: "Explore the Web Report Designer user guide and discover how to apply the powerful features of the report designer to effortlessly craft rich dynamic reports."
-slug: telerikreporting/designing-reports/report-designer-tools/web-report-designer/user-guide/overview
+slug: user-guide/overview
 tags: overview,web,report,designer,tool,design,create,report,web
 published: True
 position: 1

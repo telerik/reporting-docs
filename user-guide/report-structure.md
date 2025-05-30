@@ -1,8 +1,8 @@
 ---
 title: Report Structure
-page_title: Report Structure
+page_title: Report Structure - Web Report Designer User Guide
 description: "Learn which elements build the structure of the reports created in the Telerik Web Report Designer and use these report elements to convey information effectively."
-slug: designing-reports/report-designer-tools/web-report-designer/user-guide/report-structure
+slug: user-guide/report-structure
 tags: telerik, reporting, report, structure, groups, sections, items
 published: True
 position: 8

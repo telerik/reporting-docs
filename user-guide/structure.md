@@ -1,8 +1,8 @@
 ---
 title: App Tour
-page_title: App Tour
+page_title: App Tour - Web Report Designer User Guide
 description: Explore the Web Report Designer's panes and discover the features it offers.
-slug: web-report-designer-user-guide-structure
+slug: user-guide/app-tour
 tags: web, report, design, tool, create, report, web, structure 
 published: True
 position: 5

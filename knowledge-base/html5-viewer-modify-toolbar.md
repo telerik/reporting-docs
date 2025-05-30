@@ -92,4 +92,4 @@ reportViewer.commands.customButton =  {
 
 ## Notes
 
-The examples in this artice outline only some of the basic modifictions which users can make to the toolbar component. Please, do not hesitate to reach out to us if you are facing difficulties with implementing more complex scenarios or have suggestions on how to improve the default toolbar experience.
+The examples in this article outline only some of the basic modifications that users can make to the toolbar component. Do not hesitate to open support tickets if you are facing difficulties with implementing more complex scenarios or have suggestions on how to improve the default toolbar experience.

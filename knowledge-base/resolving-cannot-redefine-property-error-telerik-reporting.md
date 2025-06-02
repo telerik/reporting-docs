@@ -86,9 +86,3 @@ if (!kendoExportDropDown) {
 ### Summary
 
 These modifications ensure that each report viewer instance operates independently without interference. Toolbar elements such as `pageNumberInput`, `pageCountLabel`, and export dropdown are correctly scoped within their respective viewer contexts.
-
-## See Also
-
-* [2025 Q2 19.1.25.521 Release Overview - Telerik Reporting]({%slug telerikreporting/upgrade/2025/2025-q2-19-1-25-521%})
-* [Why can't I redefine a property in a Javascript object? - Stack Overflow](https://stackoverflow.com/questions/25517989/why-cant-i-redefine-a-property-in-a-javascript-object)
-* [TypeError: Cannot redefine property: X in JavaScript [Fixed] | bobbyhadz](https://bobbyhadz.com/blog/typeerror-cannot-redefine-property-in-javascript)

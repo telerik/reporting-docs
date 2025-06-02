@@ -1,8 +1,8 @@
 ---
-title: Resolving "Cannot redefine property" Error in Telerik Reporting Version 19.1.25.521
+title: Resolving "Cannot redefine property" Error
 description: Learn how to resolve the "Cannot redefine property: __COMPONENT__" error when opening multiple report viewers in Telerik Reporting version 19.1.25.521.
 type: how-to
-page_title: Fixing Report Viewer Component Error in Telerik Reporting
+page_title: Fixing Report Viewer Component Error
 slug: resolving-cannot-redefine-property-error-telerik-reporting
 tags: telerik-reporting, component-error, report-viewer, javascript-error, configurable-property
 res_type: kb
@@ -12,16 +12,16 @@ ticketid: 1688659
 ## Environment
 
 <table>
-<tbody>
-<tr>
-<td>Product</td>
-<td>Progress® Telerik® Reporting</td>
-</tr>
-<tr>
-<td>Version</td>
-<td>19.1.25.521</td>
-</tr>
-</tbody>
+    <tbody>
+        <tr>
+            <td>Product</td>
+            <td>Progress® Telerik® Reporting</td>
+        </tr>
+        <tr>
+            <td>Version</td>
+            <td>19.1.25.521</td>
+        </tr>
+    </tbody>
 </table>
 
 ## Description
@@ -89,7 +89,6 @@ These modifications ensure that each report viewer instance operates independent
 
 ## See Also
 
-- [2025 Q2 19.1.25.521 Release Overview - Telerik Reporting](https://docs.telerik.com/reporting/upgrade/2025/2025-q2-19-1-25-521#html5-report-viewer)
-- [Why can't I redefine a property in a Javascript object? - Stack Overflow](https://stackoverflow.com/questions/25517989/why-cant-i-redefine-a-property-in-a-javascript-object)
-- [TypeError: Cannot redefine property: X in JavaScript [Fixed] | bobbyhadz](https://bobbyhadz.com/blog/typeerror-cannot-redefine-property-in-javascript)
-- [Fiddler Everywhere](https://www.telerik.com/download/fiddler-everywhere)
+* [2025 Q2 19.1.25.521 Release Overview - Telerik Reporting]({%slug telerikreporting/upgrade/2025/2025-q2-19-1-25-521%})
+* [Why can't I redefine a property in a Javascript object? - Stack Overflow](https://stackoverflow.com/questions/25517989/why-cant-i-redefine-a-property-in-a-javascript-object)
+* [TypeError: Cannot redefine property: X in JavaScript [Fixed] | bobbyhadz](https://bobbyhadz.com/blog/typeerror-cannot-redefine-property-in-javascript)

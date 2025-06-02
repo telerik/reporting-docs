@@ -1,6 +1,6 @@
 ---
 title: Resolving "Cannot redefine property" Error
-description: Learn how to resolve the "Cannot redefine property: __COMPONENT__" error when opening multiple report viewers in Telerik Reporting version 19.1.25.521.
+description: Learn how to resolve the "Cannot redefine property: __COMPONENT__" error when opening multiple report viewers in version 19.1.25.521.
 type: how-to
 page_title: Fixing Report Viewer Component Error
 slug: resolving-cannot-redefine-property-error-telerik-reporting
@@ -26,14 +26,14 @@ ticketid: 1688659
 
 ## Description
 
-When using Telerik Reporting version 19.1.25.521, the error "Cannot redefine property: __COMPONENT__" occurs when attempting to open multiple report viewers simultaneously. This issue arises due to improper scoping of toolbar elements, such as `pageNumberInput` and `pageCountLabel`, which globally target elements across all report viewers instead of scoping them to specific instances.
+When upgraded to version 19.1.25.521, the error "Cannot redefine property: __COMPONENT__" occurs when attempting to open multiple report viewers simultaneously. This issue arises due to improper scoping of toolbar elements, such as `pageNumberInput` and `pageCountLabel`, which globally target elements across all report viewers instead of scoping them to specific instances.
 
 When multiple report viewers are initialized, subsequent viewer instances can overwrite or interfere with the settings of the initial report viewer, causing unintended behavior such as improperly bound toolbar elements or disabled export functionality.
 
 This knowledge base article also answers the following questions:
-- How to resolve the 'Cannot redefine property' error in Telerik Report Viewer?
-- How to fix toolbar element initialization for multiple report viewers?
-- How to enable export functionality in multiple Telerik Reporting viewers?
+* How to resolve the 'Cannot redefine property' error in Telerik Report Viewer?
+* How to fix toolbar element initialization for multiple report viewers?
+* How to enable export functionality in multiple Telerik Reporting viewers?
 
 ## Solution
 

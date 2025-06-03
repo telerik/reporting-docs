@@ -31,6 +31,7 @@ When upgraded to version 19.1.25.521, the error "Cannot redefine property: __COM
 When multiple report viewers are initialized, subsequent viewer instances can overwrite or interfere with the settings of the initial report viewer, causing unintended behavior such as improperly bound toolbar elements or disabled export functionality.
 
 This knowledge base article also answers the following questions:
+
 * How to resolve the 'Cannot redefine property' error in Telerik Report Viewer?
 * How to fix toolbar element initialization for multiple report viewers?
 * How to enable export functionality in multiple Telerik Reporting viewers?
@@ -43,7 +44,7 @@ To resolve this issue, modify the JavaScript code to scope element selection to 
 
 Use the following updated code snippet to properly scope `pageNumberInput` and `pageCountLabel` within each report viewer:
 
-```javascript
+````javascript
 const pageNumberInputEl = $element.find(ToolBarConstants.PageNumberInputDataRoleSelector).get(0);
 if (pageNumberInputEl) {
     new PageNumberInput(pageNumberInputEl, this._options);
@@ -53,7 +54,8 @@ const pageCountLabelEl = $element.find(ToolBarConstants.PageCountLabelDataRoleSe
 if (pageCountLabelEl) {
     new PageCountLabel(pageCountLabelEl, this._options);
 }
-```
+````
+
 
 ### Fixing Export Functionality
 
@@ -61,28 +63,30 @@ Modify the code in the `Toolbar` class to ensure that export functionality works
 
 1. **Begin Load Report**
 
-Update the `beginLoadReport` event handler:
+    Update the `beginLoadReport` event handler:
 
-```javascript
+    ````javascript
 .on('beginLoadReport', () => {
-    const $element = $(this._element);
-    const kendoExportDropDown = $element.find(`#${ToolBarConstants.ExportDropdownId}`).data("kendoDropDownButton");
-    kendoExportDropDown?.enable(false);
-})
-```
+        const $element = $(this._element);
+        const kendoExportDropDown = $element.find(`#${ToolBarConstants.ExportDropdownId}`).data("kendoDropDownButton");
+        kendoExportDropDown?.enable(false);
+    })
+````
 
-2. **Update Export Dropdown Items**
 
-Update the `updateExportDropdownItems` method:
+1. **Update Export Dropdown Items**
 
-```javascript
+    Update the `updateExportDropdownItems` method:
+
+    ````javascript
 const $element = $(this._element);
-const kendoExportDropDown = $element.find(`#${ToolBarConstants.ExportDropdownId}`).data("kendoDropDownButton");
-if (!kendoExportDropDown) {
-    return;
-}
-```
+    const kendoExportDropDown = $element.find(`#${ToolBarConstants.ExportDropdownId}`).data("kendoDropDownButton");
+    if (!kendoExportDropDown) {
+        return;
+    }
+    ````
+
 
 ### Summary
 
-These modifications ensure that each report viewer instance operates independently without interference. Toolbar elements such as `pageNumberInput`, `pageCountLabel`, and export dropdown are correctly scoped within their respective viewer contexts.
+These modifications ensure that each report viewer instance operates independently without interference. Toolbar elements such as `pageNumberInput`, `pageCountLabel`, and the export dropdown are correctly scoped within their respective viewer contexts.

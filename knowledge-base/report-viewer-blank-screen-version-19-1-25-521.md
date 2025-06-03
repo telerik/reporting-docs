@@ -39,7 +39,7 @@ To resolve the issue, use an appropriate CSS selector to apply the necessary sty
 
 Replace the `.trv-report-viewer` selector with the ID of your report viewer element (e.g., `#rv1`). Update your CSS as follows:
 
-```html
+````html
 <style>
     #rv1 {
         width: 100%;
@@ -47,15 +47,15 @@ Replace the `.trv-report-viewer` selector with the ID of your report viewer elem
         padding-right: 50px;
     }
 </style>
-```
+````
 
 ### Step 2: Include a Sass-Based Kendo UI Theme
 
 Ensure that a Sass-based Kendo UI theme is referenced in your project. For example, include the Default Ocean Blue theme with the following tag:
 
-```html
+````html
     <link rel="stylesheet" href ="https://unpkg.com/@@progress/kendo-theme-default@10.2.0/dist/default-ocean-blue.css"/>
-```
+````
 
 ### Additional Workaround
 

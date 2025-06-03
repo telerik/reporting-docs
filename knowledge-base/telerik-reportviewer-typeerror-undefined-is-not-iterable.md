@@ -1,5 +1,5 @@
 ---
-title: TypeError: undefined is not iterable in Telerik ReportViewer
+title: TypeError undefined is not iterable in Telerik ReportViewer
 description: Resolving the 'TypeError: undefined is not iterable' error when previewing a report with Telerik ReportViewer.
 type: troubleshooting
 page_title: Fix TypeError undefined is not iterable in HTML5-based report viewer

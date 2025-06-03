@@ -1,6 +1,6 @@
 ---
 title: Resolving "Cannot redefine property" Error
-description: Learn how to resolve the "Cannot redefine property: __COMPONENT__" error when opening multiple report viewers in version 19.1.25.521.
+description: "Learn how to resolve the 'Cannot redefine property: __COMPONENT__' error when opening multiple report viewers in version 19.1.25.521."
 type: how-to
 page_title: Fixing Report Viewer Component Error
 slug: resolving-cannot-redefine-property-error-telerik-reporting

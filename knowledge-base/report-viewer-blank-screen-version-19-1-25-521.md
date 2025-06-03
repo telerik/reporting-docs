@@ -64,5 +64,3 @@ If you make calls to set the report source or refresh the report right after ini
 ## See Also
 
 - [Kendo UI Sass-Based Themes Overview](https://www.telerik.com/kendo-jquery-ui/documentation/styles-and-layout/sass-themes/overview)
-- [Report Viewer Ready Event API Reference](https://docs.telerik.com/reporting/embedding-reports/display-reports-in-applications/web-application/html5-report-viewer/api-reference/reportviewer/events/ready)  
-- [Progress Telerik Reporting Upgrade Overview](https://docs.telerik.com/reporting/upgrade/overview)  

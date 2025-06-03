@@ -57,10 +57,6 @@ Ensure that a Sass-based Kendo UI theme is referenced in your project. For examp
     <link rel="stylesheet" href ="https://unpkg.com/@@progress/kendo-theme-default@10.2.0/dist/default-ocean-blue.css"/>
 ````
 
-### Additional Workaround
-
-If you make calls to set the report source or refresh the report right after initializing the report viewer, a `TypeError` might occur in the browser. To resolve this issue, use the `ready` event to add such logic, as it ensures the viewer is fully initialized before making these calls. For more information on this topic, check {{ slug telerik-reportviewer-typeerror-undefined-is-not-iterable }}
-
 ## See Also
 
 - [Kendo UI Sass-Based Themes Overview](https://www.telerik.com/kendo-jquery-ui/documentation/styles-and-layout/sass-themes/overview)

@@ -1,6 +1,6 @@
 ---
 title: TypeError: undefined is not iterable in Telerik ReportViewer
-description: Resolving the "TypeError: undefined is not iterable" error when previewing a report with Telerik ReportViewer.
+description: Resolving the 'TypeError: undefined is not iterable' error when previewing a report with Telerik ReportViewer.
 type: troubleshooting
 page_title: Fix TypeError undefined is not iterable in HTML5-based report viewer
 slug: telerik-reportviewer-typeerror-undefined-is-not-iterable
@@ -39,7 +39,7 @@ This issue occurs due to a breaking change in the latest version, where the repo
 
 Use the `ready` event to ensure the report viewer is fully initialized before setting the report source. For example, in the HTML5 report viewer, this would look as follows:
 
-```javascript
+````javascript
     $("#reportViewer1")
         .telerik_ReportViewer({
             serviceUrl: "api/reports",
@@ -60,9 +60,8 @@ Use the `ready` event to ensure the report viewer is fully initialized before se
             }
         });
 }
-```
+````
 
 ## See Also
 
-- [Telerik Reporting Documentation](https://docs.telerik.com/reporting/overview)
 - [Kendo UI Themes Documentation](https://docs.telerik.com/kendo-ui/styles-and-layout/themes-overview)

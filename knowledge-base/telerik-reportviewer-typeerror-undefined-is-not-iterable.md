@@ -59,7 +59,6 @@ Use the `ready` event to ensure the report viewer is fully initialized before se
                 }
             }
         });
-}
 ````
 
 ## See Also

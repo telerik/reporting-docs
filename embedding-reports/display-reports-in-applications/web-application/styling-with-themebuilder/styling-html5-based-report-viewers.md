@@ -28,7 +28,7 @@ To create a theme using ThemeBuilder, follow these steps:
 1. Navigate to the [ThemeBuilder website](https://themebuilderapp.telerik.com/).
 1. Sign in with your Telerik account.
 1. Click **Create New Project** to open the project creation dialog.
-1. Enter a project name, choose **Font Icons** as the icon type, select a version and a base theme (e.g., Default), and click **Create New Project** to finalize your selections.
+1. Enter a project name, choose **SVG Icons** as the icon type, select a version and a base theme (e.g., Default), and click **Create New Project** to finalize your selections.
 
 > The HTML5-based report viewers use SVG icons instead of font icons, so it is essential to select the correct icon type. This ensures that your changes are correctly applied in the application later on.
 

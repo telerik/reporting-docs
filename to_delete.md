@@ -1,5 +1,5 @@
 ---
 layout: to_delete
-publish: False
+published: False
 sitemap: false
 ---

@@ -48,6 +48,10 @@ The **Web Report Designer** offers a **Data Sources** section inside the **Compo
       <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/overview">Web Service Data Source</a></td>
       <td>Enables data items to display data located on a service in <a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/webservicedatasource-component/how-to-use-jsonpath-to-filter-json-data">JSON format</a>.</td>
     </tr>
+  <tr>
+      <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/graphqldatasource-component/overview">GraphQL Data Source</a></td>
+      <td>Enables data items to retrieve data in JSON format from a GraphQL service.</td>
+    </tr>
     <tr>
       <td><a href="https://docs.telerik.com/reporting/designing-reports/connecting-to-data/data-source-components/jsondatasource-component">JSON Data Source</a></td>
       <td>Enables data items to display JSON data located in a local file or saved directly into the report.</td>
@@ -58,6 +62,12 @@ The **Web Report Designer** offers a **Data Sources** section inside the **Compo
     </tr>
   </table>
 </div>
+
+## GraphQL Data Source
+
+
+
+//TODO
 
 
 ## SQL Data Source

@@ -52,27 +52,50 @@ The **Web Report Designer** offers a **Tables** section inside the **Components*
 ## List
 
 By dragging the `List` item from the **Components** tray and dropping it onto the **Details** section of the report, you are ready to build the desired layout with report items like TextBoxes and use the already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}).
-The following short video illustrates how to add a List, bind it to an already existing SQL Data Source item and adding a TextBox report item for displaying the FirstName of the data records:
+The following short video illustrates how to add a List, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item and adding a TextBox report item for displaying the FirstName of the data records:
 
 >caption Displaying Data in a List 
 
 ![Displaying Data in a List ><](images/wrd-components-tray-tables-list.gif)     
 
- 
-
 ## Table 
 
-When added from a report designer, the Table contains three columns with a table header row and a details row for the data.
+By dragging the `Table` item from the **Components** tray and dropping it onto the **Details** section of the report, you are ready to build the desired layout with report items like TextBoxes and use the already defined [Data Sources]({%slug web-report-designer-user-guide-components-data-sources%}).
 
+When added from a report designer, the Table contains three columns with a table header row and a details row for the data:
+
+![Empty Table ><](images/wrd-components-tray-tables-table-empty.png)     
+
+The following short video illustrates how to add an empty Table report item, bind it to an already existing [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), add the necessary TextBox report items for the column headers and for the data records displaying the First/Last Names:
+
+![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-table-data-popuating-from-scratch.gif)        
 
 ## Crosstab 
 
+## Table Wizard
 
+By clicking the [Table Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard%}) item from the **Components** tray, a new tab will appear on the right-hand side of the **Web Report Designer**:
+
+>caption Table Wizard
+
+![Launching Data in a Table ><](images/wrd-components-tray-tables-table-wizard.png)      
+
+The following short video illustrates how to add a Table report item with the wizard, bind it to an already existing [Web Service Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item and arrange the desired fields for displaying the name and localized name of the data records:
+
+![Displaying Data in a Table ><](images/wrd-components-tray-tables-table-wizard-data-popuating.gif)      
+
+## Crosstab Wizard
  
+By clicking the [Crosstab Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard%}) item from the **Components** tray, a new tab will appear on the right-hand side of the **Web Report Designer**:
+
+>caption Crosstab Wizard
+
+![Launching Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard.png)      
 
 ## See Also
 
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Getting Started with the Crosstab]({%slug crosstab_item_get_started%})
+* [DataSources]({%slug web-report-designer-user-guide-components-data-sources%})
 
 

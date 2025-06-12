@@ -64,13 +64,23 @@ By dragging the `Table` item from the **Components** tray and dropping it onto t
 
 When added from a report designer, the Table contains three columns with a table header row and a details row for the data:
 
-![Empty Table ><](images/wrd-components-tray-tables-table-empty.png)     
+![Empty Table ><](images/wrd-components-tray-tables-table-empty.png)      
 
 The following short video illustrates how to add an empty Table report item, bind it to an already existing [CSV Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), add the necessary TextBox report items for the column headers and for the data records displaying the First/Last Names:
 
 ![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-table-data-popuating-from-scratch.gif)        
 
 ## Crosstab 
+
+By dragging the `Crosstab` item from the **Components** tray and dropping it onto the **Details** section of the report, you are ready to build the desired layout with the generated empty column/row groups and body parts. 
+
+When added from a report designer, the [Crosstab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) contains a column group, a row group and a body for crosstab data:
+
+![Empty Table ><](images/wrd-components-tray-tables-crosstab-empty.png)     
+
+The following short video illustrates how to add an empty Crosstab report item, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}), bind the generated empty Column/Row groups and map the necessary TextBox report items for the column/row group and for the data records displaying the total sum of Freight for the respective OrderID:
+
+![Displaying CSV Data in a Table ><](images/wrd-components-tray-tables-crosstab-data-populating-from-scratch.gif)        
 
 ## Table Wizard
 
@@ -90,7 +100,11 @@ By clicking the [Crosstab Wizard]({%slug telerikreporting/designing-reports/repo
 
 >caption Crosstab Wizard
 
-![Launching Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard.png)      
+![Launching Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard.png)  
+
+The following short video illustrates how to add a [Crosstab]({%slug telerikreporting/designing-reports/report-structure/table-crosstab-list/understanding-crosstab-areas%}) report item with the wizard, bind it to an already existing [SQL Data Source]({%slug web-report-designer-user-guide-components-data-sources%}) item populated with Northwind.Orders table and arrange the desired fields for displaying the OrderID as rows and total sum of Freight of the data records:
+
+![Displaying Data in a Crosstab ><](images/wrd-components-tray-tables-crosstab-wizard-data-popuating.gif)     
 
 ## See Also
 

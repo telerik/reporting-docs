@@ -63,13 +63,6 @@ The **Web Report Designer** offers a **Data Sources** section inside the **Compo
   </table>
 </div>
 
-## GraphQL Data Source
-
-
-
-//TODO
-
-
 ## SQL Data Source
 
 By clicking the `SQL Data Source` item in the **Components** tray, the [SQL Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/sqldatasource-wizard%}) appears allowing you to use either an *existing* connection or build a *new* one by providing a `connection string` to connect to the database and define the SQL statement or the stored procedure to retrieve the data:
@@ -122,7 +115,7 @@ By clicking the `Web Service Data Source` item in the **Components** tray, the [
 
 >caption Setup Web Service Data Source
 
-![Web Service Data ><](images/wrd-components-tray-data-sources-web-service-data-source.png)
+![Web Service Data Source ><](images/wrd-components-tray-data-sources-web-service-data-source.png)
 
 If you want to skip the further settings steps, click the `Finish` button to confirm the configured connection and close the wizard. Otherwise, you can continue with the wizard steps and apply the desired settings. Note that some of the wizard steps may be skipped according to the user's selection and settings.
 
@@ -139,7 +132,21 @@ If you want to skip the further settings steps, click the `Finish` button to con
 >caption Preview Data from the Web Service Data Source
 
 ![Preview Web Service Data ><](images/wrd-components-tray-data-sources-preview-web-service-data-source.png)
- 
+
+
+## GraphQL Data Source
+
+By clicking the `GraphQL Data Source` item in the **Components** tray, the [GraphQL Data Source configuration wizard]({%slug desktop-graphqldatasource-wizard%}) appears allowing you to create new or edit an existing [GraphQLDataSource]({%slug graphqldatasource%}) component.
+
+The wizard allows you to setup one of the options:
+* Setup the properties of the HTTP request which will retrieve data from the GraphQL service. 
+* Reference an external data file.
+* Use inline data string containing the data (required if Service URL or external data file is not set).
+
+>caption Setup GraphQL Request with Parameters
+
+![GraphQL Data Source><](images/wrd-components-tray-data-sources-graphql-data-source-http-request.png)  
+
 ## JSON Data Source 
 
 By clicking the `JSON Data Source` item in the **Components** tray, the [JSON Data Source configuration wizard]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/tools/jsondatasource-wizard%}) appears allowing you to use a new or an existing JSON file, or directly enter inline JSON content:
@@ -182,5 +189,6 @@ By clicking the `Object Data Source` item in the **Components** tray, the [Objec
 ## See Also
 
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
+* [Using Parameters with the GraphQLDataSource Component]({%slug graphqldatasource-parameters%})
 
 

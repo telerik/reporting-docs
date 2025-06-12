@@ -30,7 +30,7 @@ The available items are:
 |**Maps**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
 |**Charts**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
 |**Report Sections**|<ul><li></li><li></li><li></li><li></li><li></li><li></li></ul>|
-|[DataSources]({%slug web-report-designer-user-guide-components-data-sources%})|<ul><li>SQL Data Source</li><li>CSV Data Source</li><li>Web Service Data Source</li><li>JSON Data Source</li><li>Object Data Source</li></ul>|
+|[DataSources]({%slug web-report-designer-user-guide-components-data-sources%})|<ul><li>SQL Data Source</li><li>CSV Data Source</li><li>Web Service Data Source</li><li>GraphQL Data Source</li><li>JSON Data Source</li><li>Object Data Source</li></ul>|
 
 
 

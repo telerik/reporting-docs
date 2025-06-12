@@ -26,23 +26,23 @@ The **Web Report Designer** offers a **Tables** section inside the **Components*
       <th style="width:30%">Data Source</th><th>Description</th>
     </tr>
     <tr>
-      <td><a href="">List</a></td>
+      <td><a href="https://docs.telerik.com/reporting/report-items/table-crosstab-list/template-items#list">List</a></td>
       <td>Displays data from a set of Business Objects creating a free-form data layout. You are not limited to a grid layout, you can freely place fields inside the List.</td>
     </tr>
     <tr>
-      <td><a href="">Table</a></td>
+      <td><a href="https://docs.telerik.com/reporting/report-items/table-crosstab-list/template-items#table">Table</a></td>
       <td>Displays report data in cells that are organized into rows and columns..</td>
     </tr>
     <tr>
-      <td><a href="">Crosstab</a></td>
+      <td><a href="https://docs.telerik.com/reporting/report-items/table-crosstab-list/template-items#crosstab">Crosstab</a></td>
       <td>Displays aggregated data summaries that are grouped in rows and columns. The number of rows and columns for groups is determined by the number of unique values for each row and column groups.</td>
     </tr>
     <tr>
-      <td><a href="">Table Wizard</a></td>
+      <td><a href="https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard">Table Wizard</a></td>
       <td>The Table wizard guides you through the process of adding a Table item to a report.</td>
     </tr>
     <tr>
-      <td><a href="">Crosstab Wizard</a></td>
+      <td><a href="https://docs.telerik.com/reporting/designing-reports/report-designer-tools/web-report-designer/tools/table-crosstab-wizard">Crosstab Wizard</a></td>
       <td>The Crosstab wizard guides you through the process of adding a Crosstab item to a report.</td>
     </tr>
   </table>
@@ -111,5 +111,6 @@ The following short video illustrates how to add a [Crosstab]({%slug telerikrepo
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
 * [Getting Started with the Crosstab]({%slug crosstab_item_get_started%})
 * [DataSources]({%slug web-report-designer-user-guide-components-data-sources%})
+* [Template Variations of the Table Report Item]({%slug table_template_items%})
 
 

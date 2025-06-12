@@ -55,11 +55,15 @@ Once you add the desired Report Items, the **Properties** panel allows you to:
 
 The TextBox is used for titles, labels, and within tables. It can display both static and dynamic text, including expressions and database fields. The TextBox's flexible properties allow you to control its size and text orientation.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v0XprGTvnDk?si=k5ShFO8XfMbPGxCn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 To learn more about working with the TextBox item, see the [TextBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/textbox %}).
 
 ## HtmlTextBox Report Item
 
-The HtmlTextBox allows you to insert and display HTML-formatted text within a report. The HtmlTextBox item is ideal for scenarios where you need rich text formatting, dynamic content, or templated text in your reports. You can set its content at design time using a WYSIWYG editor, an expression editor, or dynamically from a data source.
+The HtmlTextBox allows you to insert and display HTML-formatted text within a report. The HtmlTextBox item is ideal for scenarios where you need rich text formatting, dynamic content, or templated text in your reports. You can set its content at design time using a WYSIWYG editor, an ezxpression editor, or dynamically from a data source.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7O-zB9QjkyU?si=HoHpwrcJ6ZDMwCxx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 To learn more about working with the HtmlTextBox item, see the [HtmlTextBox article in the main Telerik Reporting documentation]({%slug telerikreporting/designing-reports/report-structure/htmltextbox/overview %}).
 

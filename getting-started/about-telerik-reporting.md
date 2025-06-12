@@ -11,23 +11,23 @@ position: 0
 
 # Basic Concepts in Telerik Reporting
 
-Telerik Reporting is an <a href="https://www.telerik.com/products/reporting/embedded-reporting.aspx" target="_blank">embedded tool</a> for creating and displaying reports in a visually structured and logically grouped way. You can integrate the Telerik reports in virtually any web or desktop application regardless of the underlying framework.
+Telerik Reporting is an <a href="https://www.telerik.com/products/reporting/embedded-reporting.aspx" target="_blank">embedded tool</a> for creating and displaying reports in a visually structured and logically organized manner. You can integrate the Telerik reports in virtually any web or desktop application regardless of the underlying framework.
 
 ## Scenarios for Using Telerik Reporting
 
 Generally, you can use Telerik Reporting for two main purposes.
 
-The first case is if you want to quickly connect to some data, either from a database or a remote web service, display it in a report, and share it with someone by exporting the content in PDF, for example. In this case, you can only install the product and use some of the basic functions provided by the Telerik Report Designers.
+The first scenario is when you want to quickly connect to data, either from a database or a remote web service, display it in a report, and share it with someone by exporting the content in PDF, for example. In this case, you can simply install the product and use some of the basic functions provided by the Telerik Report Designers.
 
-However, it's more likely that you'll need the full potential of Telerik Reporting&mdash;a highly functional tool with built-in wizards and templates, which provides a great number of options for customizing your reports and for presenting data in a beautiful, convenient, and easy-to-grasp way. Apart from designing your report in one of the Report Designers, you can display it in any .NET/.NET Framework application like Blazor and ASP.NET Core; and Single Page Applications like Angular and React, and this report will run on Windows, Linux, or macOS.
+However, it is more common to use the full capabilities of Telerik Reporting&mdash;a highly functional tool with built-in wizards and templates, which provides a great number of options for customizing your reports and for presenting data in a beautiful, convenient, and easy-to-grasp way. Apart from designing your report in one of the Report Designers, you can display it in any .NET/.NET Framework application like Blazor and ASP.NET Core; and Single Page Applications like Angular and React, and this report will run on Windows, Linux, or macOS.
 
 ## Creating Reports with Report Designers
 
-A key milestone in report authoring is designing the report, which takes place in a report designer. A report designer is a tool that allows users to create and configure reports.
+A key step in report authoring is designing the report, which takes place in a report designer. A report designer is a tool that allows users to create and configure reports.
 
 ### Report Designers
 
-Telerik Reporting provides three distinct report designers to accommodate any use case:
+Telerik Reporting offers three distinct report designers, each tailored to different use cases:
 
 * [Standalone Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/overview%})
 * [Web Report Designer]({%slug telerikreporting/designing-reports/report-designer-tools/web-report-designer/overview%})
@@ -59,13 +59,14 @@ During the design stage, the report author has to configure the rules on how the
 
 The data source components are designed for specific scenarios and their purpose is to fetch data from the remote data set and deliver it to the [data item]({%slug telerikreporting/designing-reports/connecting-to-data/data-items/overview%}) that is used in the report, for example, `Table`, `Crosstab`, `Graph`, `Map`, or the report itself.
 
-* To connect to a database through the ADO.NET, ODBC, or OleDB data provider, use a `SqlDataSource` component.
+* To connect to a database through the ADO.NET, ODBC, or OleDB data providers, use a `SqlDataSource` component.
 * To get data by using an MDX query from an OLAP cube model in a multi-dimensional data set, use a `CubeDataSource` component.
-* To connect to a remote web service that returns data in a JSON format, use a `WebServiceDataSource` component.
+* To connect to a remote web service that returns JSON data, use a `WebServiceDataSource` component.
+- To connect to a GraphQL API and retrieve structured data via GraphQL queries, use a `GraphQLDataSource` component.
 * To use a collection of business objects as a data source, use an `ObjectDataSource` component.
 * To get data in CSV or JSON from a static external file, or to embed static data in the report definition, use a `CSVDataSource` or `JSONDataSource` component.
 
-There is no limitation on the number or type of data sources that you will use in a report. Usually, one data source is connected to one report item, but it's a fairly common scenario to have a `Table` and a `Graph` item which use the same data source component to provide different representations of the underlying data.
+There is no limitation on the number or type of data sources that you can use in a report. Usually, one data source is connected to one report item, but it's a fairly common scenario to have a `Table` and a `Graph` item that use the same data source component to provide different representations of the underlying data.
 
 You can control the connection information that is used by the data sources externally with the application configuration file (`app.config`, `web.config`, or `appsettings.json`) or programmatically by using the `Telerik.Reporting` API model.
 
@@ -74,22 +75,22 @@ You can control the connection information that is used by the data sources exte
 The Report Designers support the conversion of report definition types to their own type. For example:
 
 * If you have used the Web Report Designer or the Standalone Report Designer to create a `TRDX` or `TRDP` file, you can import the file into the Visual Studio Report Designer by using a dedicated [Import Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/visual-studio-report-designer/how-to-import-reports-created-with-standalone-report-designer%}).
-* The opposite process is also supported. You can convert an assembly containing `Telerik.Reporting.Report` classes into a set of `TRDX` or `TRDP` files by using the [Import Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer%}) of the Standalone Report Designer.
+* The opposite process is also supported. You can convert an assembly that contains `Telerik.Reporting.Report` classes into `TRDX` or `TRDP` files by using the [Import Wizard]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/standalone-report-designer/how-to-import-reports-created-with-the-vs-report-designer%}) of the Standalone Report Designer.
 
-When authoring reports in Visual Studio, it is recommended that you create a separate `ClassLibrary` project or use the Report Library project template to hold your reports designed in Visual Studio. This approach will facilitate the maintenance and usage of the reports in different projects.
+When authoring reports in Visual Studio, it is recommended that you create a separate `ClassLibrary` project or use the Report Library project template to hold your reports designed in Visual Studio. This approach facilitates the maintenance and usage of the reports in different projects.
 
 The Visual Studio Project provides templates and a wizard that will guide you in the process of creating reports and adding Report Viewers. These tools are available under the __Reporting__ category of the Visual Studio templates.
 
-If you choose to use the Visual Studio Report Designer and store your reports as .NET/.NET Framework classes, the most efficient way to structure your reporting solution is to first create a class library that contains your reports. Then, you can reference this class library in applications that view the reports. You can have any number of Windows or Web viewing applications that are re-using the same class library. This solution structure decouples your program logic from the report and its data.
+If you choose to use the Visual Studio Report Designer and store your reports as .NET/.NET Framework classes, the most efficient way to structure your reporting solution is to first create a class library that contains your reports. Then, you can reference this class library in applications that view the reports. You can have any number of Windows or Web viewing applications that are reusing the same class library. This solution structure decouples your program logic from the report and its data.
 
 Since the Standalone Report Designer and the Visual Studio Report Designer share a lot of common code, their [wizards]({%slug telerikreporting/designing-reports/report-designer-tools/desktop-designers/tools/report-wizards/band-report-wizard/overview%}) and dialogs look and behave the same way. The Web Report Designer, which is a JavaScript widget, preserves a lot of this behavior for consistency but upgrades it further to achieve better UX and provide higher productivity to the report authors.
 
 ## Viewing Reports with Report Viewers
 
-When the report definition is ready and the report looks the way you want, you can show it in a Telerik Report Viewer for your web, mobile, or desktop application.
+When the report definition is ready and the report looks the way you want, you can show it in a Telerik Report Viewer for your web or desktop application.
 
-Report Viewers are UI components that allow you to display a report document in the UI of the application and to interact with it. The Report Viewers cover various technologies such as Angular, React, Blazor, HTML5/JS, ASP.NET Core, WinUI, WPF, Windows Forms, and some more.
+Report Viewers are UI components that allow you to display a report document in the UI of the application and to interact with it. The Report Viewers cover various technologies such as Angular, React, Blazor, HTML5/JavaScript, ASP.NET Core, WinUI, WPF, Windows Forms, and some more.
 
 Showing a report in a Telerik Report Viewer is fairly easy, especially when you use the Telerik Reporting Item Templates that will be set up in your Visual Studio by the Telerik Reporting installer. The Item Templates provide a Wizard-like interface that handles the configuration of the Report Viewer and adds the NuGet or binary assembly references that are needed to run the Telerik Reporting engine.
 
-The Report Viewer usually needs only a Report Source that points to your report definition, and some configuration details that determine whether a remote (in web applications) or an embedded (in desktop applications) reporting engine will be used to process and render the report.
+The Report Viewer typically needs only a Report Source that points to your report definition, and some configuration details that determine whether a remote (in web applications) or an embedded (in desktop applications) reporting engine will be used to process and render the report.

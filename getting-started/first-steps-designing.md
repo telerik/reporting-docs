@@ -11,7 +11,7 @@ previous_url: /getting-started/first-steps, /first-steps
 
 # Designing Your First Telerik Report
 
-This guide targets users who need to quickly get up and running with <a href="https://www.telerik.com/products/reporting/embedded-reporting.aspx" target="_blank">Telerik Reporting</a> and design and export a report.
+This guide is intended for users who want to quickly get started with <a href="https://www.telerik.com/products/reporting/embedded-reporting.aspx" target="_blank">Telerik Reporting</a> by designing and exporting a simple report.
 
 * First, you will install Telerik Reporting from an MSI file and load the demos.
 
@@ -51,7 +51,7 @@ Let's start with the installation of the Telerik Reporting controls, services, a
 
 	![The Page for Database Setup when Installing Telerik Reporting](images/Install.PNG)
 
-1. On each subsequent dialog that the Wizard will render, click __Install__ and select __Next__ until the installation is completed.
+1. On each subsequent dialog that the Wizard displays, click __Install__ and select __Next__ until the installation is completed.
 
 ## Step 2: Create the Sample Report
 
@@ -61,13 +61,13 @@ Next, you'll need to create the report:
 
 1. Click __New__ > __Blank Report__ and choose a destination for saving the report.
 
-	Each newly created report renders the __pageHeaderSection__, __detailSection__, and __pageFooterSection__ sections. The report also provides the __Report Header__ and __Report Footer__ sections which are hidden by default.
+	Each newly created report renders the __pageHeaderSection__, __detailSection__, and __pageFooterSection__ sections. The report also provides __Report Header__ and __Report Footer__ sections, which are hidden by default.
 
 	![The Design View of a Blank Report Created in the Standalone Report Designer](images/initialview.PNG)
 
 ## Step 3: Populate the Report with Data
 
-In this step, you'll add the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) and present the fetched data into a table item.
+In this step, you'll add the [SqlDataSource component]({%slug telerikreporting/designing-reports/connecting-to-data/data-source-components/sqldatasource-component/overview%}) and display the fetched data into a table item.
 
 This guide uses the __AdventureWorks__ sample database that may be deployed optionally with the installation of Telerik Reporting examples. The data sources that will be added to the report will generate their data representations.
 
@@ -79,7 +79,7 @@ So, first, let's connect to the data and, then, you'll create the table to prese
 
 1. Click __Next__ > __Use as a shared connection__ > __Next__.
 
-1. On the screen that loads, fill in the __Select Statement__ field with the query below. The query will extract only the first 14 employees and they will be listed in ascending order according to their `id`, that is, the employee with an `id=1` will be the first one, the employee with an `id=2` will come second, and so on.
+1. On the screen that loads, enter the following query in the __Select Statement__ field:
 
 	````SQL
 SELECT
@@ -93,15 +93,19 @@ SELECT
 	ORDER BY 1 ASC
 ````
 
-1. Click __Next__ to execute the query and the __Execute Query...__ button on the next screen to preview the result. Then, click __Finish__.
+	This query retrieves the first 14 employees, ordered by their `EmployeeID` in ascending order—starting with the employee whose `EmployeeID = 1`, followed by `2`, and so on.
 
-1. In the __Properties__ pane (__Property Browser__) on the right, change the name of the data source to `tableDataSource` so you can later refer it and render its data in the report.
+1. Click __Next__ to proceed, then click __Execute Query...__ from the next screen to preview the result. After verifying the data, click __Finish__ to complete the setup.
+
+1. In the __Properties__ pane (__Property Browser__) on the right, change the name of the data source to `tableDataSource`.
 
    ![Renaming the SqlDataSource in the Telerik Standalone Report Designer](images/property-browser-pane.png)
 
+   This allows you to reference it later when binding data to report items.
+
 1. Select the __detailSection__ (the middle section of the report). From the toolbar, go to __Insert__ > __Table__ > __Table Wizard__. Under __Data Sources__, select __tableDataSource__ and click __Next__.
 
-1. On the screen that loads, select all listed data source fields and drag them to the __Table Columns__. Click __Next__.
+1. On the screen that loads, select all available data source fields and drag them into the __Table Columns__ area. Click __Next__.
 
 1. From the window that opens, select a predefined style for your table, for example, __Office__. Click __Next__ and __Finish__.
 

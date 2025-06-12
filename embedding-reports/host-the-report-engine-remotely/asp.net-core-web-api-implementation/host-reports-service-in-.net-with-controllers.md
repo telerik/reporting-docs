@@ -18,7 +18,7 @@ The guide is separated into sections for readability reasons. Along with the ste
 ## Prerequisites
 
 * [Visual Studio 2022, version 17+](https://www.visualstudio.com/vs/)
-* [NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or higher
+* [.NET {{site.mindotnetversion}} SDK](https://dotnet.microsoft.com/download/dotnet/{{site.mindotnetversion}}.0) or higher
 
 ## Using the REST Service Project Template
 
